@@ -1,0 +1,23 @@
+[
+  {
+    "id": "style_silat",
+    "copy-from": "style_silat",
+    "type": "martial_art",
+    "name": "Silat",
+    "extend": { "weapons": ["bloodscourge", "scourge_staff", "spear_pestilence"] }
+  },
+  {
+    "id": "style_fencing",
+    "copy-from": "style_fencing",
+    "type": "martial_art",
+    "name": "Fencing",
+    "extend": { "weapons": ["sun_sword", "sun_sword_on"] }
+  },
+  {
+    "id": "style_niten",
+    "copy-from": "style_niten",
+    "type": "martial_art",
+    "name": "Niten Ichi-Ryu",
+    "extend": { "weapons": ["bloodscourge", "scourge_staff"] }
+  }
+]
