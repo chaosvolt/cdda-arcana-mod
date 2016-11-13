@@ -341,7 +341,7 @@
                 { "group": "cult_sacrifice", "chance": 100, "x": 20, "y": 2 },
                 { "group": "cult_sacrifice", "chance": 100, "x": 20, "y": 5 },
                 { "group": "sanguine_ritual", "chance": 100, "x": 23, "y": 3 },
-                { "item": "arcanemap",  "chance": 75, "x": 8, "y": [6, 12] },
+                { "item": "arcanemap",  "chance": 75, "x": 8, "y": [6, 12] }
             ],
             "mapping": {
                 "C": {
