@@ -2,7 +2,8 @@
 {
   "type" : "recipe",
   "result": "essence",
-  "result_mult": 3,
+  "//": "Fairly high multiplier as all choices of component are uncommon, and a few are quest items.",
+  "result_mult": 5,
   "category": "CC_OTHER",
   "subcategory": "CSC_OTHER_MATERIALS",
   "skill_used": "magic",
@@ -15,16 +16,14 @@
     [ [ "offering_chalice", -1 ] ],
     [ [ "fire", -1 ] ]
   ],
-  "//": "If golden violin is a debug-only item, I will be saddragon. -Chaosvolt",
   "components": [
     [
       [ "vortex_stone", 1 ],
       [ "teleporter", 1 ],
       [ "petrified_eye", 1 ],
-      [ "spiral_stone", 1 ],
+      [ "spiral_stone", 3 ],
       [ "etched_skull", 1 ],
-      [ "small_relic", 1 ],
-      [ "violin_golden", 1 ]
+      [ "small_relic", 2 ]
     ]
   ]
 },{
