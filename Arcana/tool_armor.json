@@ -101,8 +101,8 @@
         "description": "A set of leather armor decorated with jade, with serpentine patterns sewn into it.  Using it will conjure a spray of acid.",
         "price": 106000,
         "material": ["wyrmskin", "leather"],
-        "weight": 1954,
-        "volume": 36,
+        "weight": 2830,
+        "volume": 44,
         "bashing": 2,
         "to_hit" : -5,
         "max_charges": 16,
@@ -112,10 +112,10 @@
         "artifact_data" : {
           "effects_activated": ["AEA_ACIDBALL"]
         },
-        "covers" : ["LEGS", "TORSO", "ARMS"],
+        "covers" : ["LEGS", "TORSO", "ARMS", "FEET"],
         "flags" : ["VARSIZE", "STURDY", "NO_SALVAGE"],
         "storage" : 8,
-        "environmental_protection" : 3,
+        "environmental_protection" : 5,
         "warmth" : 25,
         "encumbrance" : 23,
         "coverage" : 90,
