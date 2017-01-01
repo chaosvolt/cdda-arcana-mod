@@ -34,9 +34,9 @@
             "shredded",
             "tattered"
         ],
-        "acid_resist" : 36,
-        "elec_resist" : 2,
-        "fire_resist" : 2,
+        "acid_resist" : 99,
+        "elec_resist" : 0,
+        "fire_resist" : 0,
         "chip_resist" : 10,
         "density" : 6
     }
