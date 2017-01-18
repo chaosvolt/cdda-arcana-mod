@@ -239,7 +239,11 @@
   ],
   "components": [
     [ [ "silver_glyph", 1 ] ],
-    [ [ "paper", 7 ] ],
+    [
+      [ "tanbark", 3 ],
+      [ "birchbark", 3 ],
+      [ "willowbark", 3 ]
+    ],
     [ [ "essence", 1 ] ]
   ]
 },{
@@ -266,7 +270,10 @@
   ],
   "components": [
     [ [ "silver_glyph", 1 ] ],
-    [ [ "lens", 1 ] ],
+    [
+      [ "holy_symbol", 1 ],
+      [ "holy_symbol_wood", 3 ]
+    ],
     [ [ "essence", 2 ] ]
   ]
 },{
