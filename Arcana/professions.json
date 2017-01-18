@@ -139,7 +139,7 @@
                 ],
                 "entries": [
                     { "item": "bloodscourge", "ammo-item": "essence_blood", "charges": 15 },
-                    { "item": "revenant_crown", "charges": 6 },
+                    { "item": "revenant_crown", "charges": 2 },
                     { "item": "blood_athame", "container-item": "sheath" }
                 ]
             },
@@ -224,8 +224,8 @@
                 ],
                 "entries": [
                     { "item": "thunder_sigil", "ammo-item": "essence", "charges": 5 },
-                    { "item": "robe_shadow", "charges": 20 },
-                    { "item": "gauntlets_necro", "charges": 4 }
+                    { "item": "robe_shadow", "charges": 10 },
+                    { "item": "gauntlets_necro", "charges": 1 }
                 ]
             },
             "female": [
