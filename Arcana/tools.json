@@ -190,7 +190,7 @@
         "symbol" : "/",
         "material" : ["iron", "silver", "wood"],
         "techniques" : ["BRUTAL"],
-        "flags" : ["DURABLE_MELEE", "SPEAR", "NO_SALVAGE"],
+        "flags" : ["DURABLE_MELEE", "SPEAR", "NONCONDUCTIVE", "NO_SALVAGE"],
         "volume" : 5,
         "bashing" : 20,
         "cutting" : 20,
@@ -211,7 +211,7 @@
             "menu_option_text": "Hold the hammer high"
           }
         ],
-        "qualities": [["HAMMER", 1]]
+        "qualities": [["HAMMER", 2]]
     },{
         "type":"TOOL",
         "id" : "hexenhammer_active",
@@ -224,7 +224,7 @@
         "symbol" : "/",
         "material" : ["iron", "silver", "wood"],
         "techniques" : ["BRUTAL"],
-        "flags" : ["DURABLE_MELEE", "SPEAR", "LIGHT_15", "NO_SALVAGE"],
+        "flags" : ["DURABLE_MELEE", "SPEAR", "NONCONDUCTIVE", "LIGHT_15", "NO_SALVAGE"],
         "volume" : 5,
         "bashing" : 20,
         "cutting" : 20,
@@ -240,7 +240,7 @@
           "no_deactivate_msg": "\"Du nicht können halt Hammerzeit.\"",
           "do_flashbang": true
         },
-        "qualities": [["HAMMER", 1]]
+        "qualities": [["HAMMER", 2]]
   },{
         "type":"TOOL",
         "id" : "spear_pestilence",
@@ -533,9 +533,9 @@
     "max_charges": 1,
     "charges_per_use": 1,
     "ammo": "essence_blood_type",
-    "flags" : ["DURABLE_MELEE", "NO_SALVAGE"],
+    "flags" : ["DURABLE_MELEE", "BELT_CLIP", "NONCONDUCTIVE", "NO_SALVAGE"],
     "category": "weapons",
-    "qualities": [["CUT", 1], ["HAMMER", 2], ["HAMMER_FINE", 1], ["BUTCHER", 16]],
+    "qualities": [["AXE", 2], ["CUT", 1], ["HAMMER", 2], ["HAMMER_FINE", 1], ["BUTCHER", 16]],
     "use_action": [
       {
          "type": "transform",
@@ -564,7 +564,7 @@
     "initial_charges": 5,
     "turns_per_charge": 1,
     "ammo": "essence_blood_type",
-    "flags" : ["DURABLE_MELEE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD"],
+    "flags" : ["DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD"],
     "revert_to": "bloodaxe",
     "category": "weapons",
     "use_action": {

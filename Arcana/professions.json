@@ -6,16 +6,20 @@
         "description": "You were an aspiring student of a well-learned master of the mysterious arts.  Sadly, you had only just begun your apprenticeship when your master was claimed by the end of the world.",
         "points": 0,
         "items": {
-            "both": [
-                "robe",
-                "cloak",
-                "socks",
-                "bastsandals",
-                "gloves_leather",
-                "knit_scarf",
-                "makeshift_knife",
-                "book_magicfordummies"
-            ],
+            "both": {
+                "items": [
+                    "robe",
+                    "cloak",
+                    "socks",
+                    "bastsandals",
+                    "gloves_leather",
+                    "knit_scarf",
+                    "book_magicfordummies"
+                ],
+                "entries": [
+                    { "item": "makeshift_knife", "container-item": "sheath" }
+                ]
+            },
             "male": [
                 "boxer_shorts"
             ],
@@ -124,24 +128,21 @@
             }
         ],
         "items": {
-            "both": [
-                "robe",
-                "socks",
-                "boots",
-                "revenant_crown",
-                "backpack",
-                "sheath",
-                "rag",
-                "blood_athame",
-                "bloodscourge",
-                "book_bloodmagic",
-                "essence_blood",
-                "essence_blood",
-                "essence_blood",
-                "essence_blood",
-                "essence_blood",
-                "essence_blood"
-            ],
+            "both": {
+                "items": [
+                    "robe",
+                    "socks",
+                    "boots",
+                    "backpack",
+                    "rag",
+                    "book_bloodmagic"
+                ],
+                "entries": [
+                    { "item": "bloodscourge", "ammo-item": "essence_blood", "charges": 15 },
+                    { "item": "revenant_crown", "charges": 2 },
+                    { "item": "blood_athame", "container-item": "sheath" }
+                ]
+            },
             "male": [
                 "boxer_briefs"
             ],
@@ -172,35 +173,24 @@
             }
         ],
         "items": {
-            "both": [
-                "dress_shirt",
-                "gilded_aegis",
-                "pants",
-                "socks",
-                "boots_larmor",
-                "gauntlets_larmor",
-                "helmet_barbute",
-                "somen_clairvoyance",
-                "holy_symbol",
-                "backpack",
-                "hexenhammer",
-                "book_hexenhammer",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull",
-                "essence_dull"
-            ],
+            "both": {
+                "items": [
+                    "dress_shirt",
+                    "pants",
+                    "socks",
+                    "boots_larmor",
+                    "gauntlets_larmor",
+                    "helmet_barbute",
+                    "holy_symbol",
+                    "backpack",
+                    "book_hexenhammer"
+                ],
+                "entries": [
+                    { "item": "hexenhammer", "charges": 1 },
+                    { "item": "somen_clairvoyance", "charges": 12 },
+                    { "item": "gilded_aegis", "charges": 30 }
+                ]
+            },
             "male": [
                 "boxer_shorts"
             ],
@@ -223,22 +213,21 @@
             }
         ],
         "items": {
-            "both": [
-                "loincloth",
-                "robe_shadow",
-                "socks",
-                "bastsandals",
-                "gauntlets_necro",
-                "leather_pouch",
-                "thunder_sigil",
-                "offering_chalice",
-                "book_sacrifice",
-                "essence",
-                "essence",
-                "essence",
-                "essence",
-                "essence"
-            ],
+            "both": {
+                "items": [
+                    "loincloth",
+                    "socks",
+                    "bastsandals",
+                    "leather_pouch",
+                    "offering_chalice",
+                    "book_sacrifice"
+                ],
+                "entries": [
+                    { "item": "thunder_sigil", "ammo-item": "essence", "charges": 5 },
+                    { "item": "robe_shadow", "charges": 10 },
+                    { "item": "gauntlets_necro", "charges": 1 }
+                ]
+            },
             "female": [
                 "chestwrap"
             ]
@@ -261,23 +250,27 @@
             }
         ],
         "items": {
-            "both": [
-                "robe",
-                "cloak",
-                "socks",
-                "boots",
-                "gloves_leather",
-                "knit_scarf",
-                "backpack",
-                "makeshift_knife",
-                "matches",
-                "bowl_pewter",
-                "summon_kreck",
-                "silver_glyph",
-                "tallow",
-                "book_summoning",
-                "essence"
-            ],
+            "both": {
+                "items": [
+                    "robe",
+                    "cloak",
+                    "socks",
+                    "boots",
+                    "gloves_leather",
+                    "knit_scarf",
+                    "backpack",
+                    "matches",
+                    "bowl_pewter",
+                    "summon_kreck",
+                    "silver_glyph",
+                    "tallow",
+                    "book_summoning",
+                    "essence"
+                ],
+                "entries": [
+                    { "item": "makeshift_knife", "container-item": "sheath" }
+                ]
+            },
             "male": [
                 "boxer_shorts"
             ],
