@@ -10,7 +10,7 @@
         ],
         "locations" : [ "forest" ], "//":"what special locations does it spawn",
         "city_distance" : [20, -1], "//":"how far from a city it should be",
-        "city_sizes" : [4, 12], "//":"what city sizes should it spawn in",
+        "city_sizes" : [1, 12], "//":"what city sizes should it spawn in",
         "occurrences" : [1, 1], "//":"how many per overmap",
         "rotate" : false, "//":"allow rotation",
         "flags" : [ "CLASSIC" ]
@@ -24,7 +24,7 @@
         ],
         "locations" : [ "forest" ],
         "city_distance" : [0, -1],
-        "city_sizes" : [4, 12],
+        "city_sizes" : [1, 12],
         "occurrences" : [1, 1],
         "rotate" : false,
         "flags" : [ "CLASSIC" ]
@@ -46,7 +46,7 @@
         ],
         "locations" : [ "forest" ],
         "city_distance" : [20, -1],
-        "city_sizes" : [4, 12],
+        "city_sizes" : [1, 12],
         "occurrences" : [1, 1],
         "rotate" : false,
         "flags" : [ "CLASSIC" ]
@@ -66,7 +66,7 @@
         ],
         "locations" : [ "forest" ],
         "city_distance" : [20, -1],
-        "city_sizes" : [4, 12],
+        "city_sizes" : [1, 12],
         "occurrences" : [1, 1],
         "rotate" : false,
         "flags" : [ "CLASSIC" ]
