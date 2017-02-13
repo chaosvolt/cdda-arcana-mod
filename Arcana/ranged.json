@@ -85,7 +85,7 @@
     "sight_dispersion": 90,
     "durability": 6,
     "clip_size": 1,
-    "reload": 800,
+    "reload": 400,
     "ammo_effects": [ "SHOT" ],
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ]
   },
