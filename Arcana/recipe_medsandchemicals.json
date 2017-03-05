@@ -11,7 +11,6 @@
   "book_learn": [[ "book_potioncraft", 0 ]],
   "qualities":[{"id":"CHEM","level":2}],
   "tools": [
-    [ [ "book_potioncraft", -1 ] ],
     [
       [ "hotplate", 10 ],
       [ "char_smoker", 10 ],
@@ -57,7 +56,6 @@
   "book_learn": [[ "book_potioncraft", 1 ]],
   "qualities":[{"id":"CHEM","level":2}],
   "tools": [
-    [ [ "book_potioncraft", -1 ] ],
     [
       [ "hotplate", 10 ],
       [ "char_smoker", 10 ],
@@ -104,7 +102,6 @@
   "book_learn": [[ "book_potioncraft", 2 ]],
   "qualities":[{"id":"CHEM","level":2}],
   "tools": [
-    [ [ "book_potioncraft", -1 ] ],
     [
       [ "hotplate", 10 ],
       [ "char_smoker", 10 ],
@@ -153,7 +150,6 @@
   "book_learn": [[ "book_potioncraft", 3 ]],
   "qualities":[ {"id":"CHEM","level":2}],
   "tools": [
-    [ [ "book_potioncraft", -1 ] ],
     [
       [ "hotplate", 10 ],
       [ "char_smoker", 10 ],
