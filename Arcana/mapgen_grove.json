@@ -152,12 +152,12 @@
         "<": "t_slope_up",
         "=": "t_water_dp",
         "B": "t_rock_floor",
+        "O": "t_rock_floor",
         "R": "t_root_wall",
         "W": "t_wall",
         "X": "t_door_boarded",
         "Z": "t_rock_floor",
         "r": "t_rock_floor",
-        "O": "t_rock_floor",
         "~": "t_water_sh"
       },
       "furniture": {

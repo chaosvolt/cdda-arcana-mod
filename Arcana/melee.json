@@ -26,21 +26,5 @@
     "material": "paper",
     "symbol": "!",
     "color": "light_gray"
-  },
-  {
-    "id": "sword_forged",
-    "type": "GENERIC",
-    "name": "forged sword",
-    "description": "A common short sword, forged from several pieces of steel.  The pointy end is the dangerous one.",
-    "weight": 700,
-    "volume": 8,
-    "to_hit": 2,
-    "bashing": 4,
-    "cutting": 14,
-    "material": "steel",
-    "symbol": "!",
-    "color": "dark_gray",
-    "techniques": [ "WBLOCK_2" ],
-    "flags": [ "SHEATH_SWORD" ]
   }
 ]

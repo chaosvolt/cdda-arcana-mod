@@ -1,121 +1,109 @@
 [
   {
-    "type" : "item_group",
-    "id" : "NC_ARSONIST_bashing",
-    "items":[
-      ["hexenhammer", 10]
+    "id": "NC_ARSONIST_bashing",
+    "type": "item_group",
+    "items": [ [ "hexenhammer", 10 ] ]
+  },
+  {
+    "id": "NC_ARSONIST_cutting",
+    "type": "item_group",
+    "items": [
+      [ "bloodaxe", 10 ],
+      [ "sun_sword", 5 ]
     ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_ARSONIST_cutting",
-    "items":[
-      ["bloodaxe", 10],
-      ["sun_sword", 5]
+  },
+  {
+    "id": "NC_ARSONIST_stabbing",
+    "type": "item_group",
+    "items": [ [ "spear_pestilence", 5 ] ]
+  },
+  {
+    "id": "NC_ARSONIST_launcher",
+    "type": "item_group",
+    "items": [ [ "bloodscourge", 5 ] ]
+  },
+  {
+    "id": "NC_BOUNTY_HUNTER_coat",
+    "type": "item_group",
+    "items": [ [ "gilded_aegis", 5 ] ]
+  },
+  {
+    "id": "NC_BOUNTY_HUNTER_masks",
+    "type": "item_group",
+    "items": [ [ "somen_clairvoyance", 5 ] ]
+  },
+  {
+    "id": "NC_DOCTOR_misc",
+    "type": "item_group",
+    "items": [ [ "healing_potion", 5 ] ]
+  },
+  {
+    "id": "NC_EVAC_SHOPKEEP_misc",
+    "type": "item_group",
+    "items": [
+      [ "scroll_blank", 10 ],
+      [ "silver_glyph", 5 ]
     ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_ARSONIST_stabbing",
-    "items":[
-      ["spear_pestilence", 5]
+  },
+  {
+    "id": "NC_HUNTER_archery",
+    "type": "item_group",
+    "items": [ [ "ethereal_crossbow", 5 ] ]
+  },
+  {
+    "id": "NC_JUNK_SHOPKEEP_misc",
+    "type": "item_group",
+    "items": [
+      [ "scroll_blank", 10 ],
+      [ "silver_glyph", 5 ]
     ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_ARSONIST_launcher",
-    "items":[
-      ["bloodscourge", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_BOUNTY_HUNTER_coat",
-    "items":[
-      ["gilded_aegis", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_BOUNTY_HUNTER_masks",
-    "items":[
-      ["somen_clairvoyance", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_DOCTOR_misc",
-    "items":[
-      ["healing_potion", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_EVAC_SHOPKEEP_misc",
-    "items":[
-        ["scroll_blank", 10],
-        ["silver_glyph", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_HUNTER_archery",
-    "items":[
-      ["ethereal_crossbow", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_JUNK_SHOPKEEP_misc",
-    "items":[
-        ["scroll_blank", 10],
-        ["silver_glyph", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_NINJA_gloves",
-    "items":[
-      ["gauntlets_necro", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_NINJA_masks",
-    "items":[
-      ["somen_clairvoyance", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_NINJA_shirt_male",
-    "items":[
-      ["robe_shadow", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_NINJA_shirt_female",
-    "items":[
-      ["robe_shadow", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_SCAVENGER_gloves",
-    "items":[
-      ["gauntlets_necro", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_SCAVENGER_archery",
-    "items":[
-      ["ethereal_crossbow", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_THUG_gloves",
-    "items":[
-      ["gauntlets_necro", 5]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_THUG_coat",
-    "items":[
-      ["robe_shadow", 2]
-    ]
-  },{
-    "type" : "item_group",
-    "id" : "NC_THUG_bashing",
-    "items":[
-      ["hexenhammer",2],
-      ["bloodscourge",5]
+  },
+  {
+    "id": "NC_NINJA_gloves",
+    "type": "item_group",
+    "items": [ [ "gauntlets_necro", 5 ] ]
+  },
+  {
+    "id": "NC_NINJA_masks",
+    "type": "item_group",
+    "items": [ [ "somen_clairvoyance", 5 ] ]
+  },
+  {
+    "id": "NC_NINJA_shirt_male",
+    "type": "item_group",
+    "items": [ [ "robe_shadow", 5 ] ]
+  },
+  {
+    "id": "NC_NINJA_shirt_female",
+    "type": "item_group",
+    "items": [ [ "robe_shadow", 5 ] ]
+  },
+  {
+    "id": "NC_SCAVENGER_gloves",
+    "type": "item_group",
+    "items": [ [ "gauntlets_necro", 5 ] ]
+  },
+  {
+    "id": "NC_SCAVENGER_archery",
+    "type": "item_group",
+    "items": [ [ "ethereal_crossbow", 5 ] ]
+  },
+  {
+    "id": "NC_THUG_gloves",
+    "type": "item_group",
+    "items": [ [ "gauntlets_necro", 5 ] ]
+  },
+  {
+    "id": "NC_THUG_coat",
+    "type": "item_group",
+    "items": [ [ "robe_shadow", 2 ] ]
+  },
+  {
+    "id": "NC_THUG_bashing",
+    "type": "item_group",
+    "items": [
+      [ "hexenhammer", 2 ],
+      [ "bloodscourge", 5 ]
     ]
   }
 ]
