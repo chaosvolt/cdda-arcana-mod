@@ -30,5 +30,40 @@
     "bash_dmg_verb": "ripped",
     "cut_dmg_verb": "sliced",
     "//": "identical save for acid resistance"
+  },
+  {
+    "type": "material",
+    "ident": "bone",
+    "copy-from": "bone",
+    "name": "Bone",
+    "repaired_with": "bone"
+  },
+  {
+    "type": "material",
+    "ident": "chitin",
+    "copy-from": "chitin",
+    "name": "Chitin",
+    "repaired_with": "chitin_piece"
+  },
+  {
+    "type": "material",
+    "ident": "clay",
+    "copy-from": "clay",
+    "name": "Clay",
+    "repaired_with": "clay_lump"
+  },
+  {
+    "type": "material",
+    "ident": "stone",
+    "copy-from": "stone",
+    "name": "Stone",
+    "repaired_with": "rock"
+  },
+  {
+    "type": "material",
+    "ident": "wood",
+    "copy-from": "wood",
+    "name": "Wood",
+    "repaired_with": "splinter"
   }
 ]
