@@ -19,7 +19,7 @@
     "encumbrance": 15,
     "storage": 250,
     "material_thickness": 1,
-    "artifact_data": { "effects_worn": [ "AEP_CARRY_MORE", "AEP_FORCE_TELEPORT", "AEP_RADIOACTIVE", "AEP_ATTENTION" ] },
+    "artifact_data": { "effects_worn": [ "AEP_CARRY_MORE", "AEP_FORCE_TELEPORT", "AEP_ATTENTION" ] },
     "flags": [ "WAIST", "OVERSIZE" ]
   }
 ]

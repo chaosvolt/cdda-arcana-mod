@@ -1128,8 +1128,8 @@
     "max_charges": 13,
     "charges_per_use": 13,
     "artifact_data": {
-      "effects_activated": [ "AEA_MAP", "AEA_MUTATE", "AEA_ATTENTION" ],
-      "effects_wielded": [ "AEP_INT_UP", "AEP_SCHIZO" ]
+      "effects_activated": [ "AEA_MAP", "AEA_PAIN", "AEA_PAIN", "AEA_PAIN", "AEA_ATTENTION" ],
+      "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO" ]
     },
     "use_action": "ARTIFACT"
   },
