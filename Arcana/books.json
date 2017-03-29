@@ -58,6 +58,25 @@
     "fun": -2
   },
   {
+    "id": "book_bloodmagic",
+    "type": "BOOK",
+    "name": "Sanguine Codex",
+    "name_plural": "Sanguine Codices",
+    "description": "A book written in dark, brown ink that almost resembles dried blood.  It illustrates several painful-looking rituals for drawing powerful energy from the blood of living creatures.",
+    "weight": 454,
+    "volume": 4,
+    "price": 40000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "red",
+    "skill": "magic",
+    "required_level": 3,
+    "max_level": 6,
+    "intelligence": 10,
+    "time": 20,
+    "fun": -4
+  },
+  {
     "id": "book_hexenhammer",
     "type": "BOOK",
     "name": "The Cleansing Flame",
@@ -98,23 +117,23 @@
     "flags": [ "INSPIRATIONAL" ]
   },
   {
-    "id": "book_bloodmagic",
+    "id": "book_syncretism",
     "type": "BOOK",
-    "name": "Sanguine Codex",
-    "name_plural": "Sanguine Codices",
-    "description": "A book written in dark, brown ink that almost resembles dried blood.  It illustrates several painful-looking rituals for drawing powerful energy from the blood of living creatures.",
+    "name": "A Story in Shadow",
+    "name_plural": "A Story in Shadow",
+    "description": "A book discussing the histories of a few peculiar cults and religious orders, and their conflicts during the years up until shortly before the cataclysm.  It describes a number of peculiar rituals and concepts based on the philosophies of the major groups mentioned, along with musing on their respective strengths and flaws.",
     "weight": 454,
     "volume": 4,
     "price": 40000,
     "material": [ "paper" ],
     "symbol": "?",
-    "color": "red",
+    "color": "light_gray",
     "skill": "magic",
-    "required_level": 3,
-    "max_level": 6,
+    "required_level": 8,
+    "max_level": 10,
     "intelligence": 10,
-    "time": 20,
-    "fun": -4
+    "time": 45,
+    "fun": -2
   },
   {
     "id": "book_summoning",

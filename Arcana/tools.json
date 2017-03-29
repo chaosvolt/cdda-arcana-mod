@@ -1111,6 +1111,57 @@
     "flags": [ "NO_SALVAGE" ]
   },
   {
+    "id": "orb_veil",
+    "type": "TOOL",
+    "name": "orb of the veil",
+    "name_plural": "orbs of the veil",
+    "description": "A mysterious orb made of a dark, almost glassy stone.  An eye pattern is worked into it, using gold for the irises and a diamond pupil.  It is said to represent a desire to protect the old knowledge and old ways, strengthened by a yearning for further enlightenment.  With enough power, it might impart a great deal of knowledge... at a price.",
+    "weight": 2000,
+    "volume": 4,
+    "price": 10000,
+    "to_hit": -2,
+    "bashing": 6,
+    "material": [ "stone", "gold", "diamond" ],
+    "symbol": "*",
+    "color": "dark_gray",
+    "ammo": "essence_type",
+    "max_charges": 13,
+    "charges_per_use": 13,
+    "artifact_data": {
+      "effects_activated": [ "AEA_MAP", "AEA_PAIN", "AEA_PAIN", "AEA_PAIN", "AEA_ATTENTION" ],
+      "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO" ]
+    },
+    "use_action": "ARTIFACT"
+  },
+  {
+    "id": "staff_druidic",
+    "type": "TOOL",
+    "name": "druidic staff",
+    "name_plural": "druidic staves",
+    "description": "A short wooden staff decorated with engraved silver, depicting a mixture of exotic natural scenes and various holy symbols.  It is said to represent the instincts deep within the heart, tempered by restraint and reason.  Using it can repair items made of various plant or animal products and stone, but not more refined materials like metal or glass.",
+    "weight": 1310,
+    "volume": 8,
+    "price": 1000,
+    "bashing": 12,
+    "material": [ "wood", "silver" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "ammo": "essence_dull_type",
+    "max_charges": 150,
+    "charges_per_use": 1,
+    "use_action": [
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_druid",
+        "materials": [ "bone", "chitin", "clay", "cotton", "fur", "leather", "stone", "wood", "wool" ],
+        "skill": "magic",
+        "tool_quality": 20,
+        "cost_scaling": 0,
+        "move_cost": 1000
+      }
+    ]
+  },
+  {
     "id": "stormbringer",
     "type": "TOOL",
     "category": "weapons",

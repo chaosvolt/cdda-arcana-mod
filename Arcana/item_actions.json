@@ -1,7 +1,7 @@
 [
     {
         "type" : "item_action",
-        "id" : "MEDITATE",
-        "name" : "Meditate"
+        "id" : "repair_druid",
+        "name" : "Repair bone/chitin/clay/cotton/fur/leather/stone/wood/wool"
     }
 ]

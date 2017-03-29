@@ -1,5 +1,18 @@
 [
   {
+    "id": "unaligned_arcanist_books",
+    "type": "item_group",
+    "items": [
+      [ "novel_drama", 5 ],
+      [ "novel_experimental", 5 ],
+      [ "philosophy_book", 10 ],
+      [ "poetry_book", 10 ],
+      [ "book_potioncraft", 20 ],
+      [ "book_scrollcraft", 15 ],
+      [ "book_summoning", 5 ]
+    ]
+  },
+  {
     "id": "summoner_drops",
     "type": "item_group",
     "items": [
@@ -126,8 +139,8 @@
         "B": {
           "furniture": "f_bookcase",
           "items": {
-            "item": "magic_books",
-            "chance": 20
+            "item": "unaligned_arcanist_books",
+            "chance": 50
           }
         },
         "Z": {
@@ -139,10 +152,10 @@
         },
         "r": {
           "furniture": "f_rack",
-          "items": {
-            "item": "summoner_drops",
-            "chance": 40
-          }
+          "items": [
+            { "item": "magic_consumables", "chance": 50 },
+            { "item": "magic_crafting", "chance": 40 }
+          ]
         }
       },
       "terrain": {
@@ -167,6 +180,7 @@
       },
       "place_loot": [
         { "group": "summoner_casualties", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 100, "repeat": [ 2, 6 ] },
+        { "item": "book_syncretism", "x": 18, "y": 1, "chance": 40 },
         { "item": "note_grove", "x": [ 11, 15 ], "y": [ 13, 15 ], "chance": 100 },
         { "item": "arcanemap", "x": 16, "y": [ 3, 4 ], "chance": 100 }
       ],

@@ -349,6 +349,45 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
+    "result": "satchel_eternity",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "rag", 6 ] ],
+      [ [ "copper", 50 ] ],
+      [ [ "essence_dull", 120 ] ]
+    ]
+  },
+  {
+    "result": "staff_druidic",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "splinter", 8 ] ],
+      [ [ "silver_small", 20 ] ],
+      [ [ "essence_dull", 135 ] ]
+    ]
+  },
+  {
+    "result": "orb_veil",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "gold_small", 500 ] ],
+      [ [ "diamond", 1 ] ],
+      [ [ "essence_dull", 150 ] ]
+    ]
+  },
+  {
     "result": "hand_of_armok",
     "type": "uncraft",
     "skill_used": "magic",

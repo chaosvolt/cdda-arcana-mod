@@ -147,5 +147,34 @@
       [ [ "charcoal", 30 ] ],
       [ [ "essence", 7 ], [ "essence_blood", 21 ] ]
     ]
+  },
+  {
+    "result": "satchel_eternity",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "skills_required": [ "tailor", 3 ],
+    "time": 9000,
+    "book_learn": [ [ "book_syncretism", 8 ] ],
+    "using": [ [ "filament", 24 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SEW", "level": 1 }
+    ],
+    "tools": [
+      [ [ "book_syncretism", -1 ] ],
+      [ [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ],
+      [ [ "fire", -1 ], [ "toolset", 10 ] ]
+    ],
+    "components": [
+      [ [ "ragpouch", 1 ] ],
+      [ [ "copper", 50 ] ],
+      [ [ "rag", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ],
+      [ [ "vortex_stone", 1 ] ],
+      [ [ "essence", 8 ], [ "essence_blood", 24 ] ]
+    ]
   }
 ]
