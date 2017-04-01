@@ -11,6 +11,7 @@
     "time": 90000,
     "book_learn": [ [ "book_potioncraft", 0 ] ],
     "qualities": [ { "id": "CHEM", "level": 2 } ],
+    "//": "Dull essence allowed at slightly reduced efficiency, as this book can be found in Cleansing Flame sites too.",
     "tools": [
       [ [ "book_potioncraft", -1 ] ],
       [ [ "hotplate", 10 ], [ "char_smoker", 10 ], [ "toolset", 10 ], [ "fire", -1 ] ]

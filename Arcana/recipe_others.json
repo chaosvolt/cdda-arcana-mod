@@ -15,7 +15,7 @@
       [ [ "offering_chalice", -1 ] ],
       [ [ "fire", -1 ] ]
     ],
-    "components": [ [ [ "vortex_stone", 1 ], [ "teleporter", 1 ], [ "petrified_eye", 1 ], [ "spiral_stone", 3 ], [ "etched_skull", 1 ], [ "small_relic", 2 ], [ "violin_golden", 1 ] ] ],
+    "components": [ [ [ "vortex_stone", 1 ], [ "teleporter", 1 ], [ "portal", 1 ], [ "petrified_eye", 1 ], [ "spiral_stone", 3 ], [ "etched_skull", 1 ], [ "small_relic", 2 ], [ "violin_golden", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {

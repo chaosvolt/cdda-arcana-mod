@@ -17,6 +17,66 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
+    "result": "vortex_stone",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "material_limestone", 5 ] ],
+      [ [ "essence_dull", 15 ] ]
+    ]
+  },
+  {
+    "result": "petrified_eye",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "material_limestone", 30 ] ],
+      [ [ "essence_dull", 10 ] ]
+    ]
+  },
+  {
+    "result": "spiral_stone",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "material_limestone", 15 ] ],
+      [ [ "essence_dull", 5 ] ]
+    ]
+  },
+  {
+    "result": "portal",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "scrap", 2 ] ],
+      [ [ "essence_dull", 20 ] ]
+    ]
+  },
+  {
+    "result": "etched_skull",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "meal_bone", 12 ] ],
+      [ [ "essence_dull", 15 ] ]
+    ]
+  },
+  {
     "result": "essence",
     "type": "uncraft",
     "skill_used": "magic",
@@ -258,6 +318,19 @@
     ]
   },
   {
+    "result": "bloodscourge",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "splinter", 12 ] ],
+      [ [ "silver_small", 475 ] ],
+      [ [ "essence_dull", 25 ] ]
+    ]
+  },
+  {
     "result": "spear_pestilence",
     "type": "uncraft",
     "skill_used": "magic",
@@ -269,6 +342,58 @@
       [ [ "meal_chitin_piece", 8 ] ],
       [ [ "essence_dull", 60 ] ]
     ]
+  },
+  {
+    "result": "numbness_potion",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 50000,
+    "tools": [
+      [ [ "hexenhammer", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [ [ [ "essence_dull", 15 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "strength_potion",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "time": 50000,
+    "tools": [
+      [ [ "hexenhammer", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [ [ [ "essence_dull", 15 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "speed_potion",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": 50000,
+    "tools": [
+      [ [ "hexenhammer", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [ [ [ "essence_dull", 15 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "healing_potion",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": 50000,
+    "tools": [
+      [ [ "hexenhammer", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [ [ [ "essence_dull", 15 ] ] ],
+    "flags": [ "BLIND_EASY" ]
   },
   {
     "result": "scroll_sun",
