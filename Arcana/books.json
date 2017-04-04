@@ -156,23 +156,28 @@
   },
   {
     "id": "note_grove",
-    "type": "BOOK",
+    "type": "GENERIC",
     "category": "books",
     "name": "tattered note",
     "description": "An old, worn scrap of paper with writing scrawled on it.",
     "weight": 3,
+    "volume": 0,
+    "price": 0,
     "material": "paper",
     "symbol": ",",
     "color": "white",
     "snippet_category": "note_grove"
   },
+
   {
     "id": "note_sanguine",
-    "type": "BOOK",
+    "type": "GENERIC",
     "category": "books",
     "name": "blood-stained note",
     "description": "A scrap of paper marred by old, dried blood.",
     "weight": 3,
+    "volume": 0,
+    "price": 0,
     "material": "paper",
     "symbol": ",",
     "color": "white",
@@ -180,11 +185,13 @@
   },
   {
     "id": "note_chalice",
-    "type": "BOOK",
+    "type": "GENERIC",
     "category": "books",
     "name": "strange note",
     "description": "A sheet of paper, with peculiar writing on it.",
     "weight": 3,
+    "volume": 0,
+    "price": 0,
     "material": "paper",
     "symbol": ",",
     "color": "white",
@@ -192,11 +199,13 @@
   },
   {
     "id": "note_flame",
-    "type": "BOOK",
+    "type": "GENERIC",
     "category": "books",
     "name": "singed note",
     "description": "A piece of paper with writing on it, edges scorched as if it was hastily rescued from the fireplace.",
     "weight": 3,
+    "volume": 0,
+    "price": 0,
     "material": "paper",
     "symbol": ",",
     "color": "white",
@@ -204,7 +213,7 @@
   },
   {
     "id": "arcanemap",
-    "type": "BOOK",
+    "type": "GENERIC",
     "category": "books",
     "name": "strange map",
     "description": "This is a hand-drawn map of the local area.  Whoever created this has marked several places seemingly in the middle of nowhere.  Using it will mark these strange locations on your map.",
@@ -219,7 +228,7 @@
       "type": "reveal_map",
       "radius": 180,
       "terrain": [ "curious_structure", "strange_grove", "impact_site", "island_temple_1", "island_temple_2", "island_temple_3", "island_temple_4", "cabin_strange", "temple_stairs" ],
-      "message": "You add these peculiar marked locations to your map."
+      "message": "You add strange temples, curious structures, impact sites, peculiar shrines, and strange groves to your map."
     }
   }
 ]
