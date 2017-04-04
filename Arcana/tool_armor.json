@@ -88,7 +88,7 @@
       "msg": "The mask's features return to its original impassive expression.",
       "type": "transform"
     },
-    "flags": [ "SUN_GLASSES", "BLIND", "NO_SALVAGE" ]
+    "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF", "NO_SALVAGE" ]
   },
   {
     "id": "armor_wyrm",
@@ -138,7 +138,7 @@
     "coverage": 20,
     "encumbrance": 0,
     "material_thickness": 1,
-    "artifact_data": { "effects_worn": [ "AEP_STEALTH", "AEP_EXTINGUISH", "AEP_SICK" ] },
+    "artifact_data": { "effects_worn": [ "AEP_EXTINGUISH", "AEP_SICK" ] },
     "use_action": {
       "type": "consume_drug",
       "activation_message": "The diamond shimmers with malevolent red light as you feel a strange hunger, a craving for rotting meat and stagnant water...",
@@ -153,7 +153,7 @@
     "name": "mantle of shadows",
     "name_plural": "mantles of shadows",
     "//": "misc properties were mostly made by averaging the values of all possible types of robe usable to make it",
-    "description": "A loose-fitting robe of some sort, heavily altered and decorated with patches of fur, dyed in a simple dark gray.  Using it will grant invisibility, draining essence quickly.",
+    "description": "A loose-fitting robe of some sort, heavily altered and decorated with patches of fur, dyed in a simple dark gray.  Using it will grant invisibility and soften footsteps, draining essence quickly.",
     "weight": 1616,
     "volume": 19,
     "price": 21000,
@@ -204,7 +204,7 @@
     "storage": 6,
     "warmth": 20,
     "material_thickness": 2,
-    "artifact_data": { "effects_worn": [ "AEP_INVISIBLE" ] },
+    "artifact_data": { "effects_worn": [ "AEP_INVISIBLE", "AEP_STEALTH" ] },
     "use_action": {
       "target": "robe_shadow",
       "msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",

@@ -671,10 +671,26 @@
     "dodge": 2,
     "armor_bash": 0,
     "armor_cut": 0,
+    "vision_night": 25,
+    "starting_ammo": { "essence": 15 },
     "special_attacks": [
       [ "FEAR_PARALYZE", 40 ],
-      [ "SHOCKSTORM", 15 ],
-      [ "PARROT", 25 ]
+      [ "PARROT", 25 ],
+      {
+        "type": "gun",
+        "cooldown": 15,
+        "move_cost": 150,
+        "gun_type": "thunder_sigil_archon",
+        "ranges": [ [ 2, 15, "DEFAULT" ] ],
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "targeting_cost": 50,
+        "targeting_sound": "an ominous electric crackle!",
+        "targeting_volume": 25,
+        "description": "Lightning arcs from the archon's symbol of judgement!",
+        "no_ammo_sound": "a strange fizzling sound."
+      }
     ],
     "death_drops": "archon_drops",
     "death_function": [ "NORMAL" ],
