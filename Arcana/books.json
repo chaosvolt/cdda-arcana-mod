@@ -227,7 +227,7 @@
     "use_action": {
       "type": "reveal_map",
       "radius": 180,
-      "terrain": [ "curious_structure", "strange_grove", "impact_site", "island_temple_1", "island_temple_2", "island_temple_3", "island_temple_4", "cabin_strange", "temple_stairs" ],
+      "terrain": [ "curious_structure", "strange_grove", "impact_site", "island_temple_1", "island_temple_2", "island_temple_3", "island_temple_4", "cabin_strange", "standing_stones", "temple_stairs" ],
       "message": "You add strange temples, curious structures, impact sites, peculiar shrines, and strange groves to your map."
     }
   }
