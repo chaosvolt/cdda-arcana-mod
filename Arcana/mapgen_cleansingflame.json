@@ -143,27 +143,6 @@
             "item": "dresser",
             "chance": 40
           }
-        },
-        "e": {
-          "furniture": "f_fridge",
-          "items": {
-            "item": "fridge",
-            "chance": 30
-          }
-        },
-        "n": {
-          "furniture": "f_cupboard",
-          "items": {
-            "item": "cannedfood",
-            "chance": 30
-          }
-        },
-        "o": {
-          "furniture": "f_oven",
-          "items": {
-            "item": "oven",
-            "chance": 40
-          }
         }
       },
       "terrain": {
@@ -209,7 +188,11 @@
       },
       "place_loot": [
         { "item": "holy_symbol", "x": 12, "y": 9, "chance": 100 },
-        { "item": "note_flame", "x": [ 4, 20 ], "y": [ 9, 14 ], "chance": 100 }
+        { "item": "note_flame", "x": [ 4, 20 ], "y": [ 9, 14 ], "chance": 100 },
+        { "group": "fridge", "x": 6, "y": 3, "chance": 80, "repeat": [ 1, 4 ] },
+        { "group": "oven", "x": 8, "y": 4, "chance": 40, "repeat": [ 1, 2 ] },
+        { "group": "cannedfood", "x": [ 4, 5 ], "y": 3, "chance": 80, "repeat": [ 1, 3 ] },
+        { "group": "cannedfood", "x": 8, "y": 3, "chance": 80, "repeat": [ 1, 2 ] }
       ],
       "place_monsters": [
         { "monster": "GROUP_ZOMBIE", "x": [ 3, 21 ], "y": [ 8, 21 ], "density": 0.15 }
@@ -250,19 +233,12 @@
         "########################"
       ],
       "mapping": {
-        "B": {
-          "furniture": "f_bookcase",
-          "items": {
-            "item": "cleansing_flame_books",
-            "chance": 30
-          }
-        },
         "r": {
           "furniture": "f_rack",
           "items": [
             { "item": "cleansing_flame_gear", "chance": 20 },
-            { "item": "cleansing_flame_gear_magic", "chance": 10 },
-            { "item": "cleansing_flame_crafting", "chance": 10 }
+            { "item": "cleansing_flame_gear_magic", "chance": 20 },
+            { "item": "cleansing_flame_crafting", "chance": 20 }
           ]
         }
       },
@@ -291,7 +267,10 @@
       "place_loot": [
         { "group": "cleansing_flame_casualties", "x": [ 5, 19 ], "y": [ 11, 15 ], "repeat": [ 1, 7 ] },
         { "group": "add_apprentice", "x": [ 19, 20 ], "y": [ 2, 6 ], "chance": 50, "repeat": [ 1, 3 ] },
-        { "item": "arcanemap", "x": [ 19, 20 ], "y": [ 2, 6 ], "chance": 50 }
+        { "item": "arcanemap", "x": [ 19, 20 ], "y": [ 2, 6 ], "chance": 50 },
+        { "group": "cleansing_flame_books", "x": 2, "y": [ 2, 6 ], "chance": 30, "repeat": [ 1, 6 ] },
+        { "group": "cleansing_flame_books", "x": 4, "y": [ 2, 6 ], "chance": 30, "repeat": [ 1, 6 ] },
+        { "group": "cleansing_flame_books", "x": 6, "y": [ 2, 6 ], "chance": 30, "repeat": [ 1, 6 ] }
       ],
       "place_monsters": [
         { "monster": "GROUP_NETHER", "x": [ 2, 22 ], "y": [ 9, 18 ], "density": 0.15 }

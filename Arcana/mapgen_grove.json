@@ -106,10 +106,10 @@
       "fill_ter": "t_dirtfloor",
       "rows": [
         "########################",
-        "#WWWWR    R R  WRRB   W#",
-        "#R=RWZ  R      WR   R  #",
+        "#WWWWR    R R  WBRR   W#",
+        "#R=RWZ  R      WB   R  #",
         "#=~=WZ RR  R   WB  RR  #",
-        "#~~~W~RR   RW  WBBRR   #",
+        "#~~~W~RR   RW  WBRRR   #",
         "# ~ WRR  O  W  WWWR    #",
         "#   W       WR  RR   WW#",
         "#  WW  WWWWWW  WRR RR ~#",
@@ -136,26 +136,12 @@
         { "point": "trap", "id": "tr_portal", "x": 6, "y": 21 }
       ],
       "mapping": {
-        "B": {
-          "furniture": "f_bookcase",
-          "items": {
-            "item": "unaligned_arcanist_books",
-            "chance": 50
-          }
-        },
         "Z": {
           "furniture": "f_bed",
           "items": {
             "item": "bed",
             "chance": 60
           }
-        },
-        "r": {
-          "furniture": "f_rack",
-          "items": [
-            { "item": "magic_consumables", "chance": 50 },
-            { "item": "magic_crafting", "chance": 40 }
-          ]
         }
       },
       "terrain": {
@@ -182,7 +168,10 @@
         { "group": "summoner_casualties", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 100, "repeat": [ 2, 6 ] },
         { "item": "book_syncretism", "x": 18, "y": 1, "chance": 40 },
         { "item": "note_grove", "x": [ 11, 15 ], "y": [ 13, 15 ], "chance": 100 },
-        { "item": "arcanemap", "x": 16, "y": [ 3, 4 ], "chance": 100 }
+        { "item": "arcanemap", "x": 16, "y": [ 3, 4 ], "chance": 100 },
+        { "group": "unaligned_arcanist_books", "x": 16, "y": [ 1, 4 ], "chance": 50, "repeat": [ 2, 6 ] },
+        { "group": "magic_crafting", "x": 1, "y": [ 13, 15 ], "chance": 40, "repeat": [ 2, 6 ] },
+        { "group": "magic_consumables", "x": 8, "y": [ 13, 14 ], "chance": 50, "repeat": [ 2, 4 ] }
       ],
       "place_monsters": [
         { "monster": "GROUP_GROVEBASEMENT", "x": [ 2, 22 ], "y": [ 2, 22 ], "density": 0.2 }

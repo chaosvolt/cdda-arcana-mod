@@ -384,13 +384,6 @@
           "furniture": "f_bed",
           "items": [ { "item": "bed", "chance": 60 } ]
         },
-        "c": {
-          "furniture": "f_bookcase",
-          "items": {
-            "item": "chalice_cult_books",
-            "chance": 50
-          }
-        },
         "d": {
           "furniture": "f_dresser",
           "items": {
@@ -426,6 +419,7 @@
       "place_loot": [
         { "group": "chalice_cult_casualty_special", "x": 11, "y": 4 },
         { "group": "chalice_cult_casualties", "x": [ 1, 22 ], "y": [ 9, 12 ], "repeat": [ 2, 5 ] },
+        { "group": "chalice_cult_books", "x": [ 11, 12 ], "y": [ 17, 18 ], "chance": 50, "repeat": [ 4, 6 ] },
         { "group": "add_apprentice", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 50 },
         { "item": "arcanemap", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 50 }
       ],
