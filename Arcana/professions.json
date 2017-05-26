@@ -9,7 +9,6 @@
             "both": {
                 "items": [
                     "robe",
-                    "cloak",
                     "socks",
                     "bastsandals",
                     "gloves_leather",
@@ -85,7 +84,7 @@
         "items": {
             "both": [
                 "dress_shirt",
-                "blazer",
+                "peacoat",
                 "pants",
                 "socks",
                 "dress_shoes",
@@ -220,7 +219,7 @@
                     "loincloth",
                     "socks",
                     "bastsandals",
-                    "leather_pouch",
+                    "mbag",
                     "matches",
                     "offering_chalice",
                     "book_sacrifice"
@@ -255,13 +254,14 @@
         "items": {
             "both": {
                 "items": [
-                    "robe",
+                    "tunic",
                     "cloak",
                     "socks",
                     "boots",
                     "gloves_leather",
                     "knit_scarf",
                     "backpack",
+                    "q_staff",
                     "matches",
                     "bowl_pewter",
                     "summon_kreck",
