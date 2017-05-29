@@ -861,6 +861,9 @@
     "to_hit": 1,
     "bashing": 12,
     "cutting": 6,
+    "thrown_damage" : [
+        { "damage_type": "cold", "amount": 18 }
+    ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
     "color": "brown",
