@@ -273,7 +273,7 @@
     "techniques": [ "WBLOCK_1", "IMPALE" ],
     "qualities": [ [ "COOK", 1 ] ],
     "use_action": "ARTIFACT",
-    "flags": [ "SPEAR", "REACH_ATTACK", "NO_SALVAGE" ]
+    "flags": [ "SPEAR", "REACH_ATTACK", "NO_SALVAGE", "NONCONDUCTIVE" ]
   },
   {
     "id": "summon_kreck",
