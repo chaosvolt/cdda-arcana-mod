@@ -15,6 +15,6 @@
       "items": [ { "item": "sun_sword", "count": 1 } ]
     },
     "deconstruct": { "items": [ { "item": "sun_sword", "count": 1 } ] },
-    "flags": [ "TRANSPARENT" ]
+    "flags": [ "TRANSPARENT", "EASY_DECONSTRUCT" ]
   }
 ]
