@@ -102,6 +102,30 @@
         }
     },{
         "type": "effect_type",
+        "id": "cold_ward",
+        "name": ["Ward Against Cold"],
+        "desc": ["Protection against the effects of cold."],
+        "remove_message": "For a moment you feel a terrible chill in the air, as the moonstone fang's power fades.",
+        "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+        "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+        "max_duration": 1000,
+        "base_mods": {
+            "str_mod": [-1]
+        }
+    },{
+        "type": "effect_type",
+        "id": "heat_ward",
+        "name": ["Ward Against Heat"],
+        "desc": ["Protection against most effects of heat."],
+        "remove_message": "You feel a strange tingling sensation, as the jade wreath's power fades.",
+        "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
+        "blocks_effects": [ "onfire", "smoke", "hot", "blisters" ],
+        "max_duration": 1000,
+        "base_mods": {
+            "dex_mod": [-1]
+        }
+    },{
+        "type": "effect_type",
         "id": "cleric_warding",
         "name": ["Ward Against Evil"],
         "desc": ["Protects against various anomalous effects."],

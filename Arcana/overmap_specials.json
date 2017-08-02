@@ -70,5 +70,18 @@
         "occurrences" : [1, 1],
         "rotate" : false,
         "flags" : [ "CLASSIC" ]
+    },{
+        "type" : "overmap_special",
+        "id" : "Ruined Shrine",
+        "overmaps" :
+        [
+            { "point":[0,0,0], "overmap": "shrine_anomaly"}
+        ],
+        "locations" : [ "wilderness", "swamp" ],
+        "city_distance" : [0, -1],
+        "city_sizes" : [1, 12],
+        "occurrences" : [0, 3],
+        "rotate" : false,
+        "flags" : [ "CLASSIC" ]
     }
 ]

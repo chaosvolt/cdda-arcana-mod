@@ -1165,6 +1165,34 @@
     ]
   },
   {
+    "id": "moonstone_fang",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "moonstone fang",
+    "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it will call forth serpentine shadows to aid you and grant a life-draining touch, but it will sicken body and mind.  Invoking it will harden the body against cold.",
+    "weight": 160,
+    "volume": 6,
+    "price": 25000,
+    "to_hit": 2,
+    "bashing": 3,
+    "cutting": 22,
+    "material": "stone",
+    "symbol": "/",
+    "color": "dark_gray",
+    "ammo": "essence_type",
+    "max_charges": 10,
+    "charges_per_use": 10,
+    "techniques": [ "RAPID", "DEF_DISARM" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 6 ] ],
+    "artifact_data": { "effects_wielded": [ "AEP_SNAKES", "AEP_SAP_LIFE", "AEP_SICK", "AEP_SCHIZO" ] },
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
+      "effects": [ { "id": "cold_ward", "duration": 1000 } ]
+    },
+    "flags": [ "STAB", "SHEATH_KNIFE" ]
+  },
+  {
     "id": "stormbringer",
     "type": "TOOL",
     "category": "weapons",
