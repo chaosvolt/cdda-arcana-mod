@@ -1183,7 +1183,7 @@
     "max_charges": 10,
     "charges_per_use": 10,
     "techniques": [ "RAPID", "DEF_DISARM" ],
-    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 6 ] ],
+    "qualities": [ [ "BUTCHER", 6 ] ],
     "artifact_data": { "effects_wielded": [ "AEP_SNAKES", "AEP_SAP_LIFE", "AEP_SICK", "AEP_SCHIZO" ] },
     "use_action": {
       "type": "consume_drug",
