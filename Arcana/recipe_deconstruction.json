@@ -77,6 +77,42 @@
     ]
   },
   {
+    "result": "meteoric_talisman",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "scrap", 1 ] ],
+      [ [ "essence_dull", 50 ] ]
+    ]
+  },
+  {
+    "result": "jade_wreath",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "material_sand", 12 ] ],
+      [ [ "essence_dull", 50 ] ]
+    ]
+  },
+  {
+    "result": "moonstone_fang",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 50000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "material_sand", 6 ] ],
+      [ [ "essence_dull", 50 ] ]
+    ]
+  },
+  {
     "result": "essence",
     "type": "uncraft",
     "skill_used": "magic",

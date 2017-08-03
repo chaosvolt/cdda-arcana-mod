@@ -27,8 +27,7 @@
     "reload": 400,
     "ammo_effects": [ "LIGHTNING", "BOUNCE" ],
     "artifact_data": {
-      "effects_carried": [ "AEP_BAD_WEATHER" ],
-      "effects_wielded": [ "AEP_RESIST_ELECTRICITY" ]
+      "effects_carried": [ "AEP_BAD_WEATHER" ]
     },
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON" ]
   },

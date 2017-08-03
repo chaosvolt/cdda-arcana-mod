@@ -232,5 +232,15 @@
     "color": "blue",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "id": "shrine_anomaly",
+    "type": "overmap_terrain",
+    "name": "ruined shrine",
+    "sym": 83,
+    "color": "light_gray",
+    "see_cost": 5,
+    "extras": "field",
+    "flags": [ "NO_ROTATE" ]
   }
 ]
