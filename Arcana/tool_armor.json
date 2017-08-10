@@ -18,13 +18,13 @@
     "charges_per_use": 15,
     "covers": [ "TORSO", "HEAD", "ARMS", "LEGS" ],
     "coverage": 65,
-    "encumbrance": 17,
+    "encumbrance": 12,
     "warmth": 40,
     "material_thickness": 3,
     "environmental_protection": 3,
     "artifact_data": { "effects_activated": [ "AEA_PAIN", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL" ] },
     "use_action": "ARTIFACT",
-    "flags": [ "OVERSIZE", "HOOD", "OUTER", "VARSIZE", "NO_SALVAGE" ]
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "NO_SALVAGE", "WATERPROOF", "RAINPROOF ]
   },
   {
     "id": "somen_clairvoyance",
