@@ -24,7 +24,7 @@
     "environmental_protection": 3,
     "artifact_data": { "effects_activated": [ "AEA_PAIN", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL" ] },
     "use_action": "ARTIFACT",
-    "flags": [ "OVERSIZE", "HOOD", "OUTER", "NO_SALVAGE", "WATERPROOF", "RAINPROOF ]
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "NO_SALVAGE", "WATERPROOF", "RAINPROOF" ]
   },
   {
     "id": "somen_clairvoyance",
