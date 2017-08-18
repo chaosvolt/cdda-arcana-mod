@@ -17,15 +17,30 @@
     "id": "chalice_cult_gear",
     "type": "item_group",
     "items": [
-      [ "essence", 3 ],
-      [ "essence_blood", 3 ],
-      [ "offering_chalice", 2 ],
-      [ "offering_chalice_used", 2 ],
-      [ "book_sacrifice", 1 ],
-      [ "spear_pestilence", 2 ],
-      [ "robe_shadow", 1 ],
-      [ "thunder_sigil", 1 ],
-      [ "gauntlets_necro", 2 ]
+      [ "offering_chalice", 4 ],
+      [ "offering_chalice_used", 4 ],
+      [ "spear_pestilence", 3 ],
+      [ "robe_shadow", 2 ],
+      [ "thunder_sigil", 2 ],
+      [ "gauntlets_necro", 3 ],
+      [ "vortex_stone", 1 ]
+    ]
+  },
+  {
+    "id": "chalice_cult_consumables",
+    "type": "item_group",
+    "items": [
+      [ "essence", 10 ],
+      { "item": "essence_blood", "prob": 10, "count-min": 1, "count-max": 3 },
+      [ "scroll_sun", 1 ],
+      [ "scroll_moon", 2 ],
+      [ "scroll_artiface", 1 ],
+      [ "scroll_nature", 2 ],
+      [ "scroll_destruction", 3 ],
+      [ "scroll_subversion", 3 ],
+      [ "summon_flaming_eye", 1 ],
+      [ "summon_mi_go", 1 ],
+      [ "summon_flying_polyp", 1 ]
     ]
   },
   {
@@ -60,6 +75,7 @@
       { "group": "pants", "damage": [ 1, 4 ] },
       { "group": "shoes", "damage": [ 1, 4 ] },
       { "group": "chalice_cult_gear", "prob": 25 },
+      { "group": "chalice_cult_consumables", "prob": 15 },
       { "item": "corpse" }
     ]
   },
@@ -421,7 +437,9 @@
         { "group": "chalice_cult_casualties", "x": [ 1, 22 ], "y": [ 9, 12 ], "repeat": [ 2, 5 ] },
         { "group": "chalice_cult_books", "x": [ 11, 12 ], "y": [ 17, 18 ], "chance": 50, "repeat": [ 4, 6 ] },
         { "group": "add_apprentice", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 50 },
-        { "item": "arcanemap", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 50 }
+        { "item": "arcanemap", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 50 },
+        { "group": "chalice_cult_gear", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 20, "repeat": [ 1, 2 ] },
+        { "group": "chalice_cult_consumables", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 20, "repeat": [ 1, 2 ] }
       ],
       "place_monster": [
         { "monster": "mon_archon", "x": 11, "y": 11 }

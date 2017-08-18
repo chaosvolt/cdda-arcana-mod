@@ -33,7 +33,8 @@
     "id": "mon_zombie_shady",
     "copy-from": "mon_zombie_shady",
     "type": "MONSTER",
-    "death_drops": "default_essence_death_drops"
+    "death_drops": "default_essence_death_drops",
+    "//": "Semi-anomalous zeds might drop blood essence"
   },
   {
     "id": "mon_zombie_necro",

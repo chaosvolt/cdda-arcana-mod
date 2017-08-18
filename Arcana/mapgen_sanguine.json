@@ -19,13 +19,26 @@
     "id": "sanguine_cult_gear",
     "type": "item_group",
     "items": [
-      [ "essence_blood", 3 ],
-      [ "blood_athame", 4 ],
-      [ "book_bloodmagic", 1 ],
-      [ "bloodaxe", 2 ],
-      [ "bloodscourge", 1 ],
-      [ "armor_wyrm", 2 ],
-      [ "revenant_crown", 1 ]
+      [ "blood_athame", 5 ],
+      [ "bloodaxe", 3 ],
+      [ "bloodscourge", 2 ],
+      [ "armor_wyrm", 3 ],
+      [ "revenant_crown", 2 ],
+      [ "portal", 1 ]
+    ]
+  },
+  {
+    "id": "sanguine_cult_consumables",
+    "type": "item_group",
+    "items": [
+      { "item": "essence_blood", "prob": 10, "count-min": 1, "count-max": 3 },
+      [ "numbness_potion", 4 ],
+      [ "strength_potion", 1 ],
+      [ "speed_potion", 2 ],
+      [ "summon_summon_dark_wyrm", 1 ],
+      [ "summon_mi_go", 1 ],
+      [ "summon_flying_polyp", 1 ],
+      [ "summon_yugg", 1 ]
     ]
   },
   {
@@ -424,7 +437,10 @@
       "mapping": {
         "t": {
           "furniture": "f_table",
-          "items": [ { "item": "sanguine_cult_gear", "chance": 50 } ]
+          "items": [
+            { "item": "sanguine_cult_gear", "chance": 50 },
+            { "item": "sanguine_cult_consumables", "chance": 25 }
+          ]
         }
       },
       "terrain": {
@@ -504,7 +520,10 @@
       "mapping": {
         "t": {
           "furniture": "f_table",
-          "items": [ { "item": "sanguine_cult_gear", "chance": 50 } ]
+          "items": [
+            { "item": "sanguine_cult_gear", "chance": 50 },
+            { "item": "sanguine_cult_consumables", "chance": 25 }
+          ]
         }
       },
       "terrain": {
