@@ -65,7 +65,7 @@
       [ "scroll_sun", 5 ],
       [ "scroll_moon", 5 ],
       [ "scroll_artiface", 5 ],
-      { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8},
+      { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8}
     ]
   },
   {
