@@ -76,7 +76,7 @@
   {
     "id": "essence_blood",
     "type": "item_group",
-    "items": [ { "item": "essence", "prob": 100, "charges-min": 1, "charges-max": 3 } ]
+    "items": [ { "item": "essence_blood", "prob": 100, "charges-min": 1, "charges-max": 3 } ]
   },
   {
     "id": "essence_boss",
