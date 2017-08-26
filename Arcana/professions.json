@@ -41,21 +41,26 @@
             }
         ],
         "items": {
-            "both": [
-                "tank_top",
-                "duster",
-                "pants",
-                "socks",
-                "boots",
-                "gloves_fingerless",
-                "backpack",
-                "matches",
-                "chemistry_set_basic",
-                "chem_ethanol",
-                "bottle_glass",
-                "book_potioncraft",
-                "essence"
-            ],
+            "both": {
+                "items": [
+                    "tank_top",
+                    "duster",
+                    "pants",
+                    "socks",
+                    "boots",
+                    "gloves_fingerless",
+                    "backpack",
+                    "matches",
+                    "chemistry_set_basic",
+                    "chem_ethanol",
+                    "bottle_glass",
+                    "book_potioncraft",
+                    "essence"
+                ],
+                "entries": [
+                    { "item": "punch_dagger", "container-item": "sheath" }
+                ]
+            },
             "male": [
                 "briefs"
             ],
@@ -89,7 +94,9 @@
                 "socks",
                 "dress_shoes",
                 "mbag",
+                "pockknife",
                 "matches",
+                "flask_hip",
                 "candle",
                 "feather",
                 "scroll_blank",
@@ -133,9 +140,10 @@
                     "socks",
                     "boots",
                     "backpack",
+                    "waterskin",
                     "rag",
                     "matches",
-                    "bowl_pewter",
+                    "bowl_clay",
                     "book_bloodmagic"
                 ],
                 "entries": [
@@ -184,12 +192,15 @@
                     "helmet_barbute",
                     "holy_symbol",
                     "backpack",
+                    "waterskin",
+                    "matches",
                     "book_hexenhammer"
                 ],
                 "entries": [
                     { "item": "hexenhammer", "charges": 1 },
                     { "item": "somen_clairvoyance", "charges": 12 },
-                    { "item": "gilded_aegis", "charges": 30 }
+                    { "item": "gilded_aegis", "charges": 30 },
+                    { "item": "knife_hunting", "container-item": "sheath" }
                 ]
             },
             "male": [
@@ -220,6 +231,7 @@
                     "socks",
                     "bastsandals",
                     "mbag",
+                    "waterskin",
                     "matches",
                     "offering_chalice",
                     "book_sacrifice"
@@ -227,7 +239,8 @@
                 "entries": [
                     { "item": "thunder_sigil", "ammo-item": "essence", "charges": 5 },
                     { "item": "robe_shadow", "charges": 10 },
-                    { "item": "gauntlets_necro", "charges": 1 }
+                    { "item": "gauntlets_necro", "charges": 1 },
+                    { "item": "copper_knife", "container-item": "sheath" }
                 ]
             },
             "female": [
@@ -261,6 +274,7 @@
                     "gloves_leather",
                     "knit_scarf",
                     "backpack",
+                    "waterskin",
                     "q_staff",
                     "matches",
                     "bowl_pewter",

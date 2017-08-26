@@ -4,7 +4,7 @@
     "type": "GUN",
     "name": "symbol of judgement",
     "name_plural": "symbols of judgement",
-    "description": "A large golden ring decorated with a trident motif, and inlaid with silver.  For some reason you suspect this to be a perversion of some otherworldly holy symbol, from some cult worlds away.  Firing it calls forth lightning.",
+    "description": "A large golden band decorated with a trident motif, and inlaid with silver.  For some reason you suspect this to be a perversion of some otherworldly holy symbol, from some cult worlds away.  Firing it calls forth lightning.",
     "weight": 3000,
     "volume": 5,
     "price": 179500,
@@ -25,9 +25,9 @@
     "loudness": 150,
     "clip_size": 5,
     "reload": 400,
-    "ammo_effects": [ "LIGHTNING", "BOUNCE" ],
+    "ammo_effects": [ "LIGHTNING", "BOUNCE", "EMP" ],
     "artifact_data": {
-      "effects_carried": [ "AEP_BAD_WEATHER" ]
+      "effects_wielded": [ "AEP_BAD_WEATHER" ]
     },
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON" ]
   },
@@ -56,7 +56,10 @@
     "loudness": 100,
     "clip_size": 15,
     "reload": 400,
-    "modes": [ [ "DEFAULT", "auto", 3 ] ],
+    "modes": [
+      [ "DEFAULT", "single", 1 ],
+      [ "BURST", "triple", 3 ]
+    ],
     "ammo_effects": [ "FLAME", "STREAM", "INCENDIARY", "FLARE" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE" ]
@@ -85,7 +88,7 @@
     "durability": 6,
     "clip_size": 1,
     "reload": 400,
-    "ammo_effects": [ "SHOT", "LASER" ],
+    "ammo_effects": [ "WIDE", "LASER" ],
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ]
   },
   {
@@ -113,8 +116,13 @@
     "loudness": 500,
     "clip_size": 1,
     "reload": 400,
-    "ammo_effects": [ "EXPLOSIVE", "NAPALM_BIG", "TRAIL" ],
+    "ammo_effects": [ "CUSTOM_EXPLOSION", "TRAIL" ],
     "artifact_data": { "effects_wielded": [ "AEP_SAP_LIFE", "AEP_EVIL" ] },
+    "explosion" : {
+       "power": 80,
+       "distance_factor": 0.4,
+       "fire" : true
+    },
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "BUTCHER", 12 ] ],
     "flags": [ "UNARMED_WEAPON", "NEVER_JAMS", "UNBREAKABLE_MELEE", "FIRE", "LIGHT_240", "FLAMING", "PRIMITIVE_RANGED_WEAPON" ]
