@@ -1,5 +1,15 @@
 [
   {
+    "id": "mon_alpha_razorclaw",
+    "copy-from": "mon_alpha_razorclaw",
+    "type": "MONSTER",
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [ [ "essence_boss", 50 ] ],
+      "//": "50% chance of boss-level essence"
+    }
+  },
+  {
     "id": "mon_ant_queen",
     "copy-from": "mon_ant_queen",
     "type": "MONSTER",
