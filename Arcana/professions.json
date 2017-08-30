@@ -8,6 +8,7 @@
         "items": {
             "both": {
                 "items": [
+                    "tunic_rag",
                     "robe",
                     "socks",
                     "bastsandals",
@@ -136,6 +137,7 @@
         "items": {
             "both": {
                 "items": [
+                    "dress_shirt",
                     "robe",
                     "socks",
                     "boots",
@@ -153,11 +155,13 @@
                 ]
             },
             "male": [
-                "boxer_briefs"
+                "boxer_briefs",
+                "pants"
             ],
             "female": [
                 "bra",
-                "panties"
+                "panties",
+                "dress_shirt"
             ]
         },
         "flags": ["SCEN_ONLY"]
@@ -228,6 +232,7 @@
             "both": {
                 "items": [
                     "loincloth",
+                    "tunic",
                     "socks",
                     "bastsandals",
                     "mbag",
