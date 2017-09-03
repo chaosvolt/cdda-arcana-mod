@@ -88,7 +88,7 @@
       "msg": "The mask's features return to its original impassive expression.",
       "type": "transform"
     },
-    "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF", "NO_SALVAGE" ]
+    "flags": [ "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF", "NO_SALVAGE" ]
   },
   {
     "id": "armor_wyrm",
@@ -195,7 +195,7 @@
     "color": "black",
     "ammo": "essence_type",
     "max_charges": 20,
-    "turns_per_charge": 5,
+    "turns_per_charge": 10,
     "revert_to": "robe_shadow",
     "covers": [ "LEGS", "TORSO", "ARMS" ],
     "coverage": 85,
@@ -217,7 +217,7 @@
     "category": "armor",
     "name": "pair of thunder gauntlets",
     "name_plural": "pairs of thunder gauntlets",
-    "description": "A heavy set of plate gauntlets, decorated with silver around the edges of each individual plate.  Touching the bare metal sends a faint electric tingle through you.  Use them to give something a shocking surprise, if you're in melee range.",
+    "description": "A heavy set of plate gauntlets, decorated with silver around the edges of each individual plate.  Touching the bare metal sends a faint electric tingle through you.  Use them to give something a shocking surprise, either up close or with unpredictable bolts of lightning.",
     "weight": 1190,
     "volume": 6,
     "price": 46200,
@@ -235,7 +235,11 @@
     "warmth": 20,
     "material_thickness": 4,
     "environmental_protection": 1,
-    "use_action": "TAZER",
+    "artifact_data": { "effects_activated": [ "AEA_STORM" ] },
+    "use_action": [
+      "TAZER",
+      "ARTIFACT"
+     ],
     "flags": [ "VARSIZE", "STURDY", "NO_SALVAGE" ]
   },
   {
