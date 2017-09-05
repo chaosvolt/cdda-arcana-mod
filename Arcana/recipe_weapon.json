@@ -203,5 +203,28 @@
       [ [ "chitin_piece", 2 ] ],
       [ [ "essence", 4 ], [ "essence_blood", 12 ] ]
     ]
+  },
+  {
+    "result": "veilblade",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "//": "References an idea had by Noct, with some differences.",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 30000,
+    "book_learn": [ [ "book_sacrifice", 9 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [
+      [ [ "book_sacrifice", -1 ] ],
+      [ [ "book_bloodmagic", -1 ] ],
+      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ] ],
+      [ [ "holy_symbol", -1 ], [ "holy_symbol_wood", -1 ], [ "offering_chalice", -1 ], [ "thunder_sigil", -1 ] ]
+    ],
+    "components": [
+      [ [ "stormbringer", 1 ] ],
+      [ [ "salt", 100 ] ],
+      [ [ "essence_blood", 12 ] ]
+    ]
   }
 ]

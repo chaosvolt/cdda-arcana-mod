@@ -1,0 +1,1233 @@
+[
+  {
+    "id": "spell_acidarmor",
+    "type": "TOOL",
+    "name": "Magic Sign: Acid Armor",
+    "name_plural": "Magic Sign: Acid Armor",
+    "description": "A mote of energy that smells faintly of lye.  Activate it to gain temporary resistance to corrosive effects.  Direct contact with acid will still harm you.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_acidarmor_on",
+      "msg": "You activate the acid armor spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_acidarmor_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Acid Armor (active)",
+    "name_plural": "Magic Sign: Acid Armor (active)",
+    "description": "A mote of energy that smells faintly of lye.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Your body becomes hardened against lingering corrosion.",
+      "effects": [ { "id": "acid_ward", "duration": 100 } ]
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_acidspray",
+    "type": "TOOL",
+    "name": "Magic Sign: Acid Spray",
+    "name_plural": "Magic Sign: Acid Spray",
+    "description": "A mote of energy with a strange, acrid scent.  Activate it to conjure a spray of acid.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_acidspray_on",
+      "msg": "You activate the acid spray spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_acidspray_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Acid Spray (active)",
+    "name_plural": "Magic Sign: Acid Spray (active)",
+    "description": "A mote of energy with a strange, acrid scent.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_ACIDBALL", "AEA_VOMIT" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_agile",
+    "type": "TOOL",
+    "name": "Magic Sign: Agility",
+    "name_plural": "Magic Sign: Agility",
+    "description": "A mote of energy that seems to twitch and shiver.  Activate it to grant a temporary agility effect.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "yellow",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_agile_on",
+      "msg": "You activate the agility spell.  Drop the sign to dispel it early.",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_agile_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Agility (active)",
+    "name_plural": "Magic Sign: Agility (active)",
+    "description": "A mote of energy that seems to twitch and shiver.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "yellow",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 100,
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN", "AEP_DEX_UP", "AEP_SPEED_UP" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_clairvoyance",
+    "type": "TOOL",
+    "name": "Magic Sign: Clairvoyance",
+    "name_plural": "Magic Sign: Clairvoyance",
+    "description": "A mote of energy that gives you the faint feeling of being watched.  Activate it to grant a temporary clairvoyance effect.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "magenta",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_clairvoyance_on",
+      "msg": "You activate the clairvoyance spell.  Drop the sign to dispel it early.",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_clairvoyance_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Clairvoyance (active)",
+    "name_plural": "Magic Sign: Clairvoyance (active)",
+    "description": "A mote of energy that gives you the faint feeling of being watched.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "magenta",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 50,
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN", "AEP_CLAIRVOYANCE" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_confusion",
+    "type": "TOOL",
+    "name": "Magic Sign: Confuse Monsters",
+    "name_plural": "Magic Sign: Confuse Monsters",
+    "description": "A mote of energy, seemingly abuzz with whispered voices.  Activate it to confuse monsters all around you.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "magenta",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_confusion_on",
+      "msg": "You activate the confusion spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_confusion_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Confuse Monsters (active)",
+    "name_plural": "Magic Sign: Confuse Monsters (active)",
+    "description": "A mote of energy, seemingly abuzz with whispered voices.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "magenta",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_lightningfield",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Lightning",
+    "name_plural": "Magic Sign: Conjure Lightning",
+    "description": "A mote of energy abuzz with raw power.  Activate it to conjure a field of electric death from the sign itself.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "cyan",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_lightningfield_on",
+      "msg": "You activate the lightning field spell.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_lightningfield_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Lightning (active)",
+    "name_plural": "Magic Sign: Conjure Lightning (active)",
+    "description": "A mote of energy abuzz with raw power.",
+    "//": "Gains a little weight due to throwing mechanics being weird.",
+    "weight": 100,
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "cyan",
+    "initial_charges": 0,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_electricity",
+      "fields_radius": 6,
+      "fields_min_density": 2,
+      "fields_max_density": 3,
+      "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead."
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_smoke",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Smoke",
+    "name_plural": "Magic Sign: Conjure Smoke",
+    "description": "A mote of energy, giving off the smell of charred flesh.  Activate it to conjure a cloud of thick, choking smoke from the sign itself.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "red",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_smoke_on",
+      "msg": "You activate the smokescreen spell.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_smoke_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Smoke (active)",
+    "name_plural": "Magic Sign: Conjure Smoke (active)",
+    "description": "A mote of energy, giving off the smell of charred flesh.",
+    "//": "Gains a little weight due to throwing mechanics being weird.",
+    "weight": 100,
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "red",
+    "initial_charges": 0,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_smoke",
+      "fields_radius": 6,
+      "fields_min_density": 2,
+      "fields_max_density": 3,
+      "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead."
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_cloud",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Toxic Cloud",
+    "name_plural": "Magic Sign: Conjure Toxic Cloud",
+    "description": "A mote of energy that gives off a strange miasma.  Activate it to conjure a cloud of choking, toxic gas from the sign itself.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_cloud_on",
+      "msg": "You activate the toxic cloud spell.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_cloud_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Toxic Cloud (active)",
+    "name_plural": "Magic Sign: Conjure Toxic Cloud (active)",
+    "description": "A mote of energy that gives off a strange miasma.",
+    "//": "Gains a little weight due to throwing mechanics being weird.",
+    "weight": 100,
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "initial_charges": 0,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_toxic_gas",
+      "fields_radius": 6,
+      "fields_min_density": 2,
+      "fields_max_density": 3,
+      "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead."
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_daylight",
+    "type": "TOOL",
+    "name": "Magic Sign: Daylight",
+    "name_plural": "Magic Sign: Daylight",
+    "description": "A mote of energy with a distinct shine to it.  Activate it to brighten the skies.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "yellow",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_daylight_on",
+      "msg": "You activate the daylight spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_daylight_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Daylight (active)",
+    "name_plural": "Magic Sign: Daylight (active)",
+    "description": "A mote of energy with a distinct shine to it.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "yellow",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_LIGHT" ] },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_drainlife",
+    "type": "TOOL",
+    "name": "Magic Sign: Drain Life",
+    "name_plural": "Magic Sign: Drain Life",
+    "description": "A mote of energy with a strange aura of hunger.  Activate it to grant a temporary life-draining effect.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "dark_grey",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_drainlife_on",
+      "msg": "You activate the life-draining spell.  Drop the sign to dispel it early.",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_drainlife_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Drain Life (active)",
+    "name_plural": "Magic Sign: Drain Life (active)",
+    "description": "A mote of energy with a strange aura of hunger.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "dark_gray",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 100,
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN", "AEP_SAP_LIFE" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_fireball",
+    "type": "TOOL",
+    "name": "Magic Sign: Fireball",
+    "name_plural": "Magic Sign: Fireball",
+    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "red",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_fireball_on",
+      "msg": "You activate the fireball spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_fireball_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Fireball (active)",
+    "name_plural": "Magic Sign: Fireball (active)",
+    "description": "A mote of energy that seems to radiate an unearthly heat.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "red",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_FIREBALL", "AEA_PAIN" ] },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_flamearmor",
+    "type": "TOOL",
+    "name": "Magic Sign: Flame Armor",
+    "name_plural": "Magic Sign: Flame Armor",
+    "description": "A mote of energy that seems cool to the touch.  Activate it to gain temporary resistance to heat and smoke.  Direct contact with flame will still harm you.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_red",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_flamearmor_on",
+      "msg": "You activate the flame armor spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_flamearmor_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Flame Armor (active)",
+    "name_plural": "Magic Sign: Flame Armor (active)",
+    "description": "A mote of energy that seems cool to the touch.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_red",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Your body becomes innured to heat and choking smoke.",
+      "effects": [ { "id": "flame_ward", "duration": 100 } ]
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_heal",
+    "type": "TOOL",
+    "name": "Magic Sign: Healing",
+    "name_plural": "Magic Sign: Healing",
+    "description": "A mote of energy that seems almost alive, shifting and shimmering when near living beings.  Activate it to heal the body slightly.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "yellow",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_heal_on",
+      "msg": "You activate the healing spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_heal_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Healing (active)",
+    "name_plural": "Magic Sign: Healing (active)",
+    "description": "A mote of energy that seems almost alive, shifting and shimmering when near living beings.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "yellow",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_HEAL", "AEA_HEAL", "AEA_PARALYZE" ] },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_invis",
+    "type": "TOOL",
+    "name": "Magic Sign: Invisibility",
+    "name_plural": "Magic Sign: Invisibility",
+    "description": "A mote of energy, faintly transparent.  Activate it to grant a temporary invisibility effect.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_grey",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_invis_on",
+      "msg": "You activate the invisibility spell.  Drop the sign to dispel it early.",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_invis_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Invisibility (active)",
+    "name_plural": "Magic Sign: Invisibility (active)",
+    "description": "A mote of energy, faintly transparent.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 50,
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN", "AEP_INVISIBLE", "AEP_STEALTH" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_light",
+    "type": "TOOL",
+    "name": "Magic Sign: Light",
+    "name_plural": "Magic Sign: Light",
+    "description": "A mote of energy with a faint radiance to it.  Activate it to grant a temporary aura of illumination.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "yellow",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_light_on",
+      "msg": "You activate the light spell.  Drop the sign to dispel it early.",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_light_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Light (active)",
+    "name_plural": "Magic Sign: Light (active)",
+    "description": "A mote of energy with a faint radiance to it.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "yellow",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 100,
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN", "AEP_GLOW" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_elecresist",
+    "type": "TOOL",
+    "name": "Magic Sign: Lightning Ward",
+    "name_plural": "Magic Sign: Lightning Ward",
+    "description": "A mote of energy, seeming to tingle with static electricity.  Activate it to grant temporary protection against lightning.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_grey",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_elecresist_on",
+      "msg": "You activate the lightning ward spell.  Drop the sign to dispel it early.",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_elecresist_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Lightning Ward (active)",
+    "name_plural": "Magic Sign: Lightning Ward (active)",
+    "description": "A mote of energy, seeming to tingle with static electricity.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 50,
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN", "AEP_RESIST_ELECTRICITY" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_psyshield",
+    "type": "TOOL",
+    "name": "Magic Sign: Mind Ward",
+    "name_plural": "Magic Sign: Mind Ward",
+    "description": "A mote of energy that flickers and shifts according to your thoughts.  Activate it to grant temporary protection against the evil eye.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "megenta",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_psyshield_on",
+      "msg": "You activate the mind ward spell.  Drop the sign to dispel it early.",
+      "target_charges": 1,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_psyshield_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Mind Ward (active)",
+    "name_plural": "Magic Sign: Mind Ward (active)",
+    "description": "A mote of energy that flickers and shifts according to your thoughts.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "magenta",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 50,
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN", "AEP_PSYSHIELD" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_lockpick",
+    "type": "TOOL",
+    "name": "Magic Sign: Open Lock",
+    "name_plural": "Magic Sign: Open Lock",
+    "description": "A mote of energy that gives off a strange aura of artiface.  Activate it to manipulate most kinds of lock.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_lockpick_on",
+      "msg": "You activate the opening spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_lockpick_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Open Lock (active)",
+    "name_plural": "Magic Sign: Open Lock (active)",
+    "description": "A mote of energy that gives off a strange aura of artiface.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "picklock",
+      "pick_quality": 99
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_plants",
+    "type": "TOOL",
+    "name": "Magic Sign: Overgrowth",
+    "name_plural": "Magic Sign: Overgrowth",
+    "description": "A mote of energy that radiates unferrered life energy.  Activate it to bring forth the forest.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_plants_on",
+      "msg": "You activate the overgrowth spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_plants_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Overgrowth (active)",
+    "name_plural": "Magic Sign: Overgrowth (active)",
+    "description": "A mote of energy that radiates unferrered life energy.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_GROWTH" ] },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_pacify",
+    "type": "TOOL",
+    "name": "Magic Sign: Pacify Monsters",
+    "name_plural": "Magic Sign: Pacify Monsters",
+    "description": "A mote of energy that gives off a soothing aura.  Activate it to calm the minds of nearby monsters, turning them friendly.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "magenta",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_pacify_on",
+      "msg": "You activate the pacification spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_pacify_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Pacify Monsters (active)",
+    "name_plural": "Magic Sign: Pacify Monsters (active)",
+    "description": "A mote of energy that gives off a soothing aura.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "magenta",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_ENTRANCE", "AEA_ENTRANCE", "AEA_ENTRANCE" ] },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_poisonarmor",
+    "type": "TOOL",
+    "name": "Magic Sign: Poison Armor",
+    "name_plural": "Magic Sign: Poison Armor",
+    "description": "A mote of energy, with a soothing aura.  Activate it to gain temporary resistance to toxic gas and other poisons.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_poisonarmor_on",
+      "msg": "You activate the poison armor spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_poisonarmor_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Poison Armor (active)",
+    "name_plural": "Magic Sign: Poison Armor (active)",
+    "description": "A mote of energy, with a soothing aura.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "green",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Your body becomes guarded against poison gas and venom's sting.",
+      "effects": [ { "id": "poison_ward", "duration": 100 } ]
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_lightning",
+    "type": "TOOL",
+    "name": "Magic Sign: Shockstorm",
+    "name_plural": "Magic Sign: Shockstorm",
+    "description": "A mote of energy, crackling with electric death.  Activate it to conjure lightning all around you.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "cyan",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_lightning_on",
+      "msg": "You activate the lightning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_lightning_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Shockstorm (active)",
+    "name_plural": "Magic Sign: Shockstorm (active)",
+    "description": "A mote of energy, crackling with electric death.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "cyan",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_STORM" ] },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summonculus",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Homunculus",
+    "name_plural": "Magic Sign: Summon Homunculus",
+    "description": "A mote of energy with a leering face perceived inside it.  Activate it to summon a mimicry of the human form.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_summonculus_on",
+      "msg": "You activate the summoning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summonculus_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Homunculus (active)",
+    "name_plural": "Magic Sign: Summon Homunculus (active)",
+    "description": "A mote of energy with a leering face perceived inside it.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_homunculus",
+      "friendly_msg": "The humanoid construct is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the humanoid construct!",
+      "difficulty": 5,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic",
+      "skill2": "magic"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summonthing",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Horrifying Thing",
+    "name_plural": "Magic Sign: Summon Horrifying Thing",
+    "description": "A mote of energy with a writhing abomination perceived inside it.  Activate it to summon a horrifying mass of tendrils.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_summonthing_on",
+      "msg": "You activate the summoning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summonthing_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Horrifying Thing (active)",
+    "name_plural": "Magic Sign: Summon Horrifying Thing (active)",
+    "description": "A mote of energy with a writhing abomination perceived inside it.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_thing",
+      "friendly_msg": "The mass of tendrils is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the mass of tendrils!",
+      "difficulty": 7,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic",
+      "skill2": "magic"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summondog",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Skeletal Dog",
+    "name_plural": "Magic Sign: Summon Skeletal Dog",
+    "description": "A mote of energy with shifting canine shapes perceived inside it.  Activate it to summon an undead hound.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_summondog_on",
+      "msg": "You activate the summoning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summondog_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Skeletal Dog (active)",
+    "name_plural": "Magic Sign: Summon Skeletal Dog (active)",
+    "description": "A mote of energy with shifting canine shapes perceived inside it.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dog_skeleton",
+      "friendly_msg": "The animalistic revenant is at your beck and call.",
+      "hostile_msg": "Your magic fails to control to animalistic revenant!",
+      "difficulty": 1,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic",
+      "skill2": "magic"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summonskel",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Skeleton",
+    "name_plural": "Magic Sign: Summon Skeleton",
+    "description": "A mote of energy with imagery of the dead perceived inside it.  Activate it to summon the animated dead.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_summonskel_on",
+      "msg": "You activate the summoning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summonskel_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Skeleton (active)",
+    "name_plural": "Magic Sign: Summon Skeleton (active)",
+    "description": "A mote of energy with imagery of the dead perceived inside it.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_skeleton",
+      "friendly_msg": "The humanoid revenant is at your beck and call.",
+      "hostile_msg": "Your magic fails to control to humanoid revenant!",
+      "difficulty": 3,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic",
+      "skill2": "magic"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summonvortex",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Vortex",
+    "name_plural": "Magic Sign: Summon Vortex",
+    "description": "A mote of energy with swirling shapes perceived inside it.  Activate it to summon the living wind.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_summonvortex_on",
+      "msg": "You activate the summoning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_summonvortex_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Vortex (active)",
+    "name_plural": "Magic Sign: Summon Vortex (active)",
+    "description": "A mote of energy with swirling shapes perceived inside itit.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_vortex",
+      "friendly_msg": "The swirling wisp is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the swirling wisp!",
+      "difficulty": 5,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic",
+      "skill2": "magic"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_teleport",
+    "type": "TOOL",
+    "name": "Magic Sign: Teleport",
+    "name_plural": "Magic Sign: Teleport",
+    "description": "A mote of energy surrounded by slight distorsions in the air.  Activate it to teleport to a random location.  Beware the risk of teleporting right into a wall.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "magenta",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_teleport_on",
+      "msg": "You activate the teleportation spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_teleport_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Teleport (active)",
+    "name_plural": "Magic Sign: Teleport (active)",
+    "description": "A mote of energy surrounded by slight distorsions in the air.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "magenta",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_TELEPORT", "AEA_ATTENTION" ] },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_pulse",
+    "type": "TOOL",
+    "name": "Magic Sign: Wave of Destruction",
+    "name_plural": "Magic Sign: Wave of Destruction",
+    "description": "A mote of energy that gives off a hateful aura, yearning to destroy your enemies.  Activate it to conjure a wave of pure destructive energy.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "dark_grey",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "drop_action": {
+      "type": "emit_actor"
+    },
+    "use_action": {
+      "target": "spell_pulse_on",
+      "msg": "You activate the destructive spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "id": "spell_pulse_on",
+    "type": "TOOL",
+    "name": "Magic Sign: Wave of Destruction (active)",
+    "name_plural": "Magic Sign: Wave of Destruction (active)",
+    "description": "A mote of energy that gives off a hateful aura, yearning to destroy your enemies.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "dark_grey",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_PULSE", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_NOISE", "AEA_FLASH", "AEA_ATTENTION", "AEA_PAIN", "AEA_PAIN" ] },
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  }
+]
