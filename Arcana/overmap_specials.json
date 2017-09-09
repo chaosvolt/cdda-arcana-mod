@@ -10,7 +10,6 @@
         ],
         "locations" : [ "field", "forest" ], "//":"what special locations does it spawn",
         "city_distance" : [20, -1], "//":"how far from a city it should be",
-        "city_sizes" : [1, 12], "//":"what city sizes should it spawn in",
         "occurrences" : [1, 1], "//":"how many per overmap",
         "rotate" : false, "//":"allow rotation",
         "flags" : [ "CLASSIC" ]
@@ -24,7 +23,6 @@
         ],
         "locations" : [ "forest" ],
         "city_distance" : [0, -1],
-        "city_sizes" : [1, 12],
         "occurrences" : [1, 1],
         "rotate" : false,
         "flags" : [ "CLASSIC" ]
@@ -46,7 +44,6 @@
         ],
         "locations" : [ "field", "forest", "swamp" ],
         "city_distance" : [20, -1],
-        "city_sizes" : [1, 12],
         "occurrences" : [1, 1],
         "rotate" : false,
         "flags" : [ "CLASSIC" ]
@@ -66,7 +63,6 @@
         ],
         "locations" : [ "forest", "swamp" ],
         "city_distance" : [20, -1],
-        "city_sizes" : [1, 12],
         "occurrences" : [1, 1],
         "rotate" : false,
         "flags" : [ "CLASSIC" ]
@@ -78,8 +74,7 @@
             { "point":[0,0,0], "overmap": "shrine_anomaly"}
         ],
         "locations" : [ "wilderness", "swamp" ],
-        "city_distance" : [0, -1],
-        "city_sizes" : [1, 12],
+        "city_distance" : [20, -1],
         "occurrences" : [0, 3],
         "rotate" : false,
         "flags" : [ "CLASSIC" ]
