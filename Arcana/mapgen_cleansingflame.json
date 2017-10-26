@@ -134,10 +134,6 @@
         "   |-111-|     |-111-|  ",
         "                        "
       ],
-      "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 9, "y": 9 },
-        { "point": "trap", "id": "tr_brazier", "x": 15, "y": 9 }
-      ],
       "mapping": {
         "B": {
           "furniture": "f_bed",
@@ -187,7 +183,8 @@
         "o": "f_oven",
         "s": "f_sink",
         "t": "f_bathtub",
-        "v": "f_woodstove"
+        "v": "f_woodstove",
+        "u": "f_brazier"
       },
       "toilets": {
         "T": {}

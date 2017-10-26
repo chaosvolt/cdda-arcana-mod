@@ -329,12 +329,6 @@
         "          #.``.#+#b..#..",
         "          #.==.#.....+.<"
       ],
-      "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 22, "y": 18 },
-        { "point": "trap", "id": "tr_brazier", "x": 18, "y": 22 },
-        { "point": "trap", "id": "tr_brazier", "x": 20, "y": 2 },
-        { "point": "trap", "id": "tr_brazier", "x": 20, "y": 5 }
-      ],
       "mapping": {
         "B": {
           "furniture": "f_bed",
@@ -370,7 +364,8 @@
         "C": "f_bookcase",
         "D": "f_desk",
         "c": "f_chair",
-        "d": "f_dresser"
+        "d": "f_dresser",
+        "b": "f_brazier"
       },
       "place_loot": [
         { "item": "note_sanguine", "x": [ 22, 23 ], "y": [ 22, 23 ], "chance": 100 },
@@ -424,15 +419,7 @@
         "<.+.....#.==.#          "
       ],
       "set": [
-        { "point": "trap", "id": "tr_portal", "x": 0, "y": 3 },
-        { "point": "trap", "id": "tr_brazier", "x": 13, "y": 4 },
-        { "point": "trap", "id": "tr_brazier", "x": 7, "y": 10 },
-        { "point": "trap", "id": "tr_brazier", "x": 19, "y": 10 },
-        { "point": "trap", "id": "tr_brazier", "x": 13, "y": 16 },
-        { "point": "trap", "id": "tr_brazier", "x": 1, "y": 18 },
-        { "point": "trap", "id": "tr_brazier", "x": 5, "y": 22 },
-        { "point": "trap", "id": "tr_brazier", "x": 3, "y": 2 },
-        { "point": "trap", "id": "tr_brazier", "x": 3, "y": 5 }
+        { "point": "trap", "id": "tr_portal", "x": 0, "y": 3 }
       ],
       "mapping": {
         "t": {
@@ -459,7 +446,8 @@
         "~": "t_water_dp"
       },
       "furniture": {
-        "t": "f_table"
+        "t": "f_table",
+        "b": "f_brazier"
       },
       "place_loot": [
         { "group": "cult_sacrifice", "x": 13, "y": 4, "chance": 25 },
@@ -509,14 +497,6 @@
         "                        ",
         "                        "
       ],
-      "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 10, "y": 7 },
-        { "point": "trap", "id": "tr_brazier", "x": 4, "y": 13 },
-        { "point": "trap", "id": "tr_brazier", "x": 16, "y": 13 },
-        { "point": "trap", "id": "tr_brazier", "x": 10, "y": 19 },
-        { "point": "trap", "id": "tr_brazier", "x": 18, "y": 1 },
-        { "point": "trap", "id": "tr_brazier", "x": 22, "y": 5 }
-      ],
       "mapping": {
         "t": {
           "furniture": "f_table",
@@ -540,7 +520,8 @@
         "~": "t_water_dp"
       },
       "furniture": {
-        "t": "f_table"
+        "t": "f_table",
+        "b": "f_brazier"
       },
       "place_loot": [
         { "group": "cult_sacrifice", "x": 10, "y": 7, "chance": 25 },
@@ -588,10 +569,6 @@
         "                        ",
         "                        "
       ],
-      "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 5, "y": 1 },
-        { "point": "trap", "id": "tr_brazier", "x": 1, "y": 5 }
-      ],
       "mapping": {
         "B": {
           "furniture": "f_bed",
@@ -625,7 +602,8 @@
         "C": "f_bookcase",
         "D": "f_desk",
         "c": "f_chair",
-        "d": "f_dresser"
+        "d": "f_dresser",
+        "b": "f_brazier"
       },
       "place_loot": [
         { "group": "cult_sacrifice", "x": 5, "y": 1, "chance": 25 },

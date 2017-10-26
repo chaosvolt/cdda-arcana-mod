@@ -111,12 +111,6 @@
         "..........^..^..........",
         "........................"
       ],
-      "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 8, "y": 8 },
-        { "point": "trap", "id": "tr_brazier", "x": 15, "y": 8 },
-        { "point": "trap", "id": "tr_brazier", "x": 8, "y": 15 },
-        { "point": "trap", "id": "tr_brazier", "x": 15, "y": 15 }
-      ],
       "terrain": {
         " ": "t_rock_floor",
         ".": "t_dirt",
@@ -124,6 +118,9 @@
         "B": "t_rock_floor",
         "P": "t_little_column",
         "^": "t_pit_shallow"
+      },
+      "furniture": {
+        "B": "f_brazier"
       },
       "place_loot": [
         { "group": "cult_sacrifice", "x": 8, "y": 8, "chance": 100 },
@@ -389,12 +386,6 @@
         "////////########////////",
         "////////////////////////"
       ],
-      "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 9, "y": 2 },
-        { "point": "trap", "id": "tr_brazier", "x": 9, "y": 7 },
-        { "point": "trap", "id": "tr_brazier", "x": 14, "y": 2 },
-        { "point": "trap", "id": "tr_brazier", "x": 14, "y": 7 }
-      ],
       "mapping": {
         "b": {
           "furniture": "f_bed",
@@ -430,7 +421,8 @@
         "D": "f_desk",
         "b": "f_bed",
         "c": "f_bookcase",
-        "d": "f_dresser"
+        "d": "f_dresser",
+        "B": "f_brazier"
       },
       "place_loot": [
         { "group": "chalice_cult_casualty_special", "x": 11, "y": 4 },
