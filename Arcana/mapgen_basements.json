@@ -73,10 +73,6 @@
         "                        ",
         "                        "
       ],
-      "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 4, "y": 13 },
-        { "point": "trap", "id": "tr_brazier", "x": 7, "y": 13 }
-      ],
       "terrain": {
         "#": "t_rock_floor",
         "+": "t_door_c",
@@ -93,7 +89,8 @@
         "#": "f_counter",
         "]": "f_bookcase",
         "h": "f_chair",
-        "{": "f_rack"
+        "{": "f_rack",
+        "b": "f_brazier"
       },
       "place_loot": [
         { "group": "cult_sacrifice", "x": 4, "y": 13, "chance": 100 },
@@ -147,10 +144,6 @@
         "                        ",
         "                        "
       ],
-      "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 7, "y": 2 },
-        { "point": "trap", "id": "tr_brazier", "x": 15, "y": 2 }
-      ],
       "terrain": {
         "#": "t_rock_floor",
         "+": "t_door_c",
@@ -171,7 +164,8 @@
         "D": "f_dresser",
         "]": "f_bookcase",
         "p": "f_bench",
-        "{": "f_rack"
+        "{": "f_rack",
+        "b": "f_brazier"
       },
       "place_loot": [
         { "item": "holy_symbol", "x": 11, "y": 2, "chance": 90 },
@@ -222,10 +216,6 @@
         "                        ",
         "                        "
       ],
-      "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 11, "y": 18 },
-        { "point": "trap", "id": "tr_portal", "x": 11, "y": 20 }
-      ],
       "terrain": {
         "#": "t_rock_floor",
         "+": "t_door_c",
@@ -245,7 +235,8 @@
         "#": "f_counter",
         "]": "f_bookcase",
         "p": "f_bench",
-        "{": "f_rack"
+        "{": "f_rack",
+        "b": "f_brazier"
       },
       "place_loot": [
         { "item": "offering_chalice_used", "x": 11, "y": 19, "chance": 100 },
