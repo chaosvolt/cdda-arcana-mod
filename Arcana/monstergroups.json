@@ -2,11 +2,11 @@
   {
     "name": "GROUP_NETHER_LAVA",
     "type": "monstergroup",
-    "default": "mon_flying_polyp",
+    "default": "mon_shadow",
     "monsters": [
-      { "monster": "mon_flying_polyp", "freq": 25, "cost_multiplier": 0 },
-      { "monster": "mon_hunting_horror", "freq": 240, "cost_multiplier": 0 },
-      { "monster": "mon_flaming_eye", "freq": 120, "cost_multiplier": 0 }
+      { "monster": "mon_flying_polyp", "freq": 175, "cost_multiplier": 0 },
+      { "monster": "mon_hunting_horror", "freq": 250, "cost_multiplier": 0 },
+      { "monster": "mon_flaming_eye", "freq": 75, "cost_multiplier": 0 }
     ]
   },
   {
@@ -14,11 +14,9 @@
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
-      { "monster": "mon_dementia", "freq": 25, "cost_multiplier": 0 },
-      { "monster": "mon_homunculus", "freq": 75, "cost_multiplier": 0 },
-      { "monster": "mon_flesh_angel", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_homunculus", "freq": 60, "cost_multiplier": 0 },
       { "monster": "mon_flying_polyp", "freq": 120, "cost_multiplier": 0 },
-      { "monster": "mon_mi_go", "freq": 50, "cost_multiplier": 0 }
+      { "monster": "mon_mi_go", "freq": 40, "cost_multiplier": 0 }
     ]
   },
   {
@@ -26,9 +24,8 @@
     "type": "monstergroup",
     "default": "mon_vortex",
     "monsters": [
-      { "monster": "mon_vortex", "freq": 50, "cost_multiplier": 0 },
-      { "monster": "mon_flying_polyp", "freq": 75, "cost_multiplier": 0 },
-      { "monster": "mon_flaming_eye", "freq": 120, "cost_multiplier": 0 }
+      { "monster": "mon_flying_polyp", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_flaming_eye", "freq": 30, "cost_multiplier": 0 }
     ]
   },
   {
