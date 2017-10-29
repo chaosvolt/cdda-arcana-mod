@@ -41,13 +41,10 @@
         "m": "t_rock_floor",
         "_": "t_dirt"
       },
+      "furniture": {
+        "_": "f_brazier"
+      },
       "set": [
-        { "point": "trap", "id": "tr_brazier", "x": 12, "y": 6 },
-        { "point": "trap", "id": "tr_brazier", "x": 17, "y": 12 },
-
-        { "point": "trap", "id": "tr_brazier", "x": 11, "y": 17 },
-
-        { "point": "trap", "id": "tr_brazier", "x": 6, "y": 11 },
         { "point": "trap", "id": "tr_glow", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] },
         { "point": "trap", "id": "tr_hum", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] },
         { "point": "trap", "id": "tr_drain", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] }
