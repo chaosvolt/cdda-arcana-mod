@@ -4,20 +4,20 @@
     "copy-from": "style_silat",
     "type": "martial_art",
     "name": "Silat",
-    "extend": { "weapons": ["bloodscourge", "scourge_staff", "spear_pestilence"] }
+    "extend": { "weapons": ["staff_druidic", "bloodscourge", "scourge_staff", "spear_pestilence"] }
   },
   {
     "id": "style_fencing",
     "copy-from": "style_fencing",
     "type": "martial_art",
     "name": "Fencing",
-    "extend": { "weapons": ["sun_sword", "sun_sword_on"] }
+    "extend": { "weapons": ["sun_sword", "sun_sword_on", "staff_druidic"] }
   },
   {
-    "id": "style_niten",
-    "copy-from": "style_niten",
+    "id": "style_eskrima",
+    "copy-from": "style_eskrima",
     "type": "martial_art",
-    "name": "Niten Ichi-Ryu",
-    "extend": { "weapons": ["bloodscourge", "scourge_staff"] }
+    "name": "Eskrima",
+    "extend": { "weapons": ["staff_druidic"] }
   }
 ]
