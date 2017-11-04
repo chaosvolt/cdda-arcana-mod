@@ -12,7 +12,7 @@
         "city_distance" : [20, -1], "//":"how far from a city it should be",
         "occurrences" : [1, 1], "//":"how many per overmap",
         "rotate" : false, "//":"allow rotation",
-        "flags" : [ "CLASSIC" ]
+        "flags" : [ "CLASSIC", "UNIQUE" ]
     },{
         "type" : "overmap_special",
         "id" : "Strange Grove",
@@ -25,7 +25,7 @@
         "city_distance" : [0, -1],
         "occurrences" : [1, 1],
         "rotate" : false,
-        "flags" : [ "CLASSIC" ]
+        "flags" : [ "CLASSIC", "UNIQUE" ]
     },{
         "type" : "overmap_special",
         "id" : "Floating Temple",
@@ -46,7 +46,7 @@
         "city_distance" : [20, -1],
         "occurrences" : [1, 1],
         "rotate" : false,
-        "flags" : [ "CLASSIC" ]
+        "flags" : [ "CLASSIC", "UNIQUE" ]
     },{
         "type" : "overmap_special",
         "id" : "Island Temple",
@@ -65,7 +65,7 @@
         "city_distance" : [20, -1],
         "occurrences" : [1, 1],
         "rotate" : false,
-        "flags" : [ "CLASSIC" ]
+        "flags" : [ "CLASSIC", "UNIQUE" ]
     },{
         "type" : "overmap_special",
         "id" : "Ruined Shrine",

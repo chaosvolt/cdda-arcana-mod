@@ -4,7 +4,7 @@
     "copy-from": "style_silat",
     "type": "martial_art",
     "name": "Silat",
-    "extend": { "weapons": ["staff_druidic", "bloodscourge", "scourge_staff", "spear_pestilence"] }
+    "extend": { "weapons": ["blood_athame", "moonstone_fang", "staff_druidic", "bloodscourge", "scourge_staff", "spear_pestilence"] }
   },
   {
     "id": "style_fencing",
@@ -18,6 +18,6 @@
     "copy-from": "style_eskrima",
     "type": "martial_art",
     "name": "Eskrima",
-    "extend": { "weapons": ["staff_druidic"] }
+    "extend": { "weapons": ["blood_athame", "moonstone_fang", "staff_druidic"] }
   }
 ]
