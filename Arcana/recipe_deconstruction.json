@@ -617,5 +617,74 @@
     ],
     "components": [ [ [ "essence_dull", 150 ] ] ],
     "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "gilded_aegis",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 50000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "leather", 20 ] ],
+      [ [ "scrap", 40 ] ],
+      [ [ "gold_small", 200 ] ],
+      [ [ "essence_blood", 4 ] ]
+    ]
+  },
+  {
+    "result": "somen_clairvoyance",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 50000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "leather", 4 ] ],
+      [ [ "scrap", 5 ] ],
+      [ [ "copper", 30 ] ],
+      [ [ "essence_blood", 3 ] ]
+    ]
+  },
+  {
+    "result": "sun_sword",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 50000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "blade", 4 ] ],
+      [ [ "gold_small", 135 ] ],
+      [ [ "essence_blood", 5 ] ]
+    ]
+  },
+  {
+    "result": "hexenhammer",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 50000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "splinter", 8 ] ],
+      [ [ "scrap", 20 ] ],
+      [ [ "silver_small", 240 ] ],
+      [ [ "essence_blood", 3 ] ]
+    ]
+  },
+  {
+    "result": "ethereal_crossbow",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 50000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "splinter", 6 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "gold_small", 45 ] ],
+      [ [ "essence_blood", 4 ] ]
+    ]
   }
 ]
