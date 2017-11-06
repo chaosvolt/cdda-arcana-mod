@@ -1,5 +1,23 @@
 [
   {
+    "id": "mana_gem",
+    "type": "ARMOR",
+    "name": "mana gem",
+    "description" : "A strange blue stone set in a copper talisman, worn around the neck.  It is capable of storing a considerable reserve of various sorts of magical energy, but the power it gives off can sicken the body.",
+    "weight": 250,
+    "volume": 0,
+    "price": 6400,
+    "material": [ "copper", "essencemat" ],
+    "symbol": "[",
+    "color": "blue",
+    "artifact_data": { "effects_worn": [ "AEP_SICK" ] },
+    "use_action": {
+        "type": "bandolier",
+        "capacity": 200,
+        "ammo": [ "essence_type", "essence_blood_type", "essence_dull_type" ]
+    }
+  },
+  {
     "id": "satchel_eternity",
     "type": "ARMOR",
     "name": "satchel of eternity",

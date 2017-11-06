@@ -9,6 +9,7 @@
     "skills_required": [ "fabrication", 6 ],
     "time": 150000,
     "book_learn": [ [ "book_sacrifice", 8 ] ],
+    "using": [ [ "forging_standard", 3 ] ],
     "qualities": [
       { "id": "HAMMER", "level": 3 },
       { "id": "CHISEL", "level": 3 }
@@ -17,8 +18,7 @@
       [ [ "book_sacrifice", -1 ] ],
       [ [ "tongs", -1 ] ],
       [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 350 ], [ "oxy_torch", 70 ] ]
+      [ [ "swage", -1 ] ]
     ],
     "components": [
       [ [ "gold_small", 625 ] ],
@@ -37,6 +37,7 @@
     "skills_required": [ "fabrication", 5 ],
     "time": 180000,
     "book_learn": [ [ "book_bloodmagic", 3 ] ],
+    "using": [ [ "forging_standard", 2 ] ],
     "qualities": [
       { "id": "HAMMER", "level": 3 },
       { "id": "CHISEL", "level": 3 }
@@ -45,8 +46,7 @@
       [ [ "book_bloodmagic", -1 ] ],
       [ [ "tongs", -1 ] ],
       [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 350 ], [ "oxy_torch", 70 ] ]
+      [ [ "swage", -1 ] ]
     ],
     "components": [
       [ [ "silver_small", 165 ] ],

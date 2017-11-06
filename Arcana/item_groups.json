@@ -50,8 +50,8 @@
       [ "blood_athame", 20 ],
       [ "hexenhammer", 10 ],
       [ "silver_glyph", 5 ],
-      [ "essence_dull", 5 ],
-      [ "essence_blood", 10 ]
+      [ "scroll_blank", 5 ],
+      [ "mana_gem", 5 ]
     ]
   },
   {
@@ -139,6 +139,7 @@
     "id": "art",
     "type": "item_group",
     "items": [
+      [ "mana_gem", 1 ],
       [ "offering_chalice", 1 ],
       [ "sun_sword", 1 ],
       [ "revenant_crown", 1 ],
@@ -150,6 +151,7 @@
     "id": "pawn",
     "type": "item_group",
     "items": [
+      [ "mana_gem", 1 ],
       [ "offering_chalice", 1 ],
       [ "sun_sword", 1 ],
       [ "revenant_crown", 1 ],
@@ -160,6 +162,7 @@
     "id": "spider",
     "type": "item_group",
     "items": [
+      [ "mana_gem", 1 ],
       [ "thunder_sigil", 1 ],
       [ "bloodscourge", 1 ],
       [ "bloodaxe", 1 ],
@@ -186,6 +189,7 @@
     "id": "rare",
     "type": "item_group",
     "items": [
+      [ "mana_gem", 1 ],
       [ "thunder_sigil", 1 ],
       [ "bloodscourge", 2 ],
       [ "spear_pestilence", 2 ],
@@ -227,6 +231,7 @@
     "id": "antique_rare",
     "type": "item_group",
     "items": [
+      [ "mana_gem", 1 ],
       [ "thunder_sigil", 1 ],
       [ "bloodscourge", 1 ],
       [ "sun_sword", 1 ],

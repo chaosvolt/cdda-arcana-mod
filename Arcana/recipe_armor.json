@@ -1,5 +1,33 @@
 [
   {
+    "type" : "recipe",
+    "result": "mana_gem",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 3 ],
+    "time": 30000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 4 ], [ "book_bloodmagic", 3 ], [ "book_hexenhammer", 3 ], [ "book_sacrifice", 3 ], [ "book_syncretism", 2 ] ],
+    "using": [ [ "forging_standard", 1 ], [ "cordage_short", 3 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3 },
+      { "id": "CHISEL", "level": 3 }
+    ],
+    "tools": [
+      [ [ "book_bloodmagic", -1 ] ],
+      [ [ "tongs", -1 ] ],
+      [ [ "anvil", -1 ] ],
+      [ [ "swage", -1 ] ]
+    ],
+    "components": [
+      [ [ "glass_shard", 1 ] ],
+      [ [ "copper", 100 ] ],
+      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
+    ]
+  },
+  {
     "result": "gilded_aegis",
     "type": "recipe",
     "category": "CC_ARMOR",
@@ -86,6 +114,7 @@
     "skills_required": [ "fabrication", 3 ],
     "time": 15000,
     "book_learn": [ [ "book_bloodmagic", 5 ] ],
+    "using": [ [ "forging_standard", 3 ] ],
     "qualities": [
       { "id": "HAMMER", "level": 3 },
       { "id": "CHISEL", "level": 3 }
@@ -94,8 +123,7 @@
       [ [ "book_bloodmagic", -1 ] ],
       [ [ "tongs", -1 ] ],
       [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 300 ], [ "oxy_torch", 60 ] ]
+      [ [ "swage", -1 ] ]
     ],
     "components": [
       [ [ "silver_small", 600 ] ],

@@ -29,7 +29,7 @@
     "artifact_data": {
       "effects_wielded": [ "AEP_BAD_WEATHER" ]
     },
-    "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON" ]
+    "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON" ]
   },
   {
     "id": "bloodscourge",
