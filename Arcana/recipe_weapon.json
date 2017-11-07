@@ -95,7 +95,7 @@
     ],
     "components": [
       [ [ "warhammer", 1 ] ],
-      [ [ "small_relic", 1 ], [ "holy_symbol", 3 ], [ "holy_symbol_wood", 3 ] ],
+      [ [ "small_relic", 1 ], [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ],
       [ [ "silver_small", 240 ] ],
       [ [ "essence", 1 ], [ "essence_dull", 15 ] ]
     ]
@@ -157,7 +157,7 @@
     ],
     "components": [
       [ [ "crossbow", 1 ] ],
-      [ [ "holy_symbol", 1 ], [ "holy_symbol_wood", 3 ] ],
+      [ [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ],
       [ [ "gold_small", 45 ] ],
       [ [ "essence_dull", 20 ] ]
     ]
