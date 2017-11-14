@@ -21,7 +21,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 0,
-    "time": 50000,
+    "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "material_limestone", 5 ] ],
@@ -33,7 +33,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 0,
-    "time": 50000,
+    "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "material_limestone", 30 ] ],
@@ -45,7 +45,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 0,
-    "time": 50000,
+    "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "material_limestone", 15 ] ],
@@ -57,7 +57,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 0,
-    "time": 50000,
+    "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "scrap", 2 ] ],
@@ -69,7 +69,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 0,
-    "time": 50000,
+    "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "meal_bone", 12 ] ],
@@ -113,11 +113,23 @@
     ]
   },
   {
+    "result": "mana_gem",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 40000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "copper", 100 ] ],
+      [ [ "essence_dull", 45 ] ]
+    ]
+  },
+  {
     "result": "essence",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 3,
-    "time": 50000,
+    "time": 30000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 15 ] ] ],
     "flags": [ "BLIND_HARD" ]
@@ -127,7 +139,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 1,
-    "time": 50000,
+    "time": 10000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 5 ] ] ],
     "flags": [ "BLIND_HARD" ]
@@ -137,7 +149,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 4,
-    "time": 50000,
+    "time": 40000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "gold_small", 625 ] ],
@@ -149,7 +161,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 7,
-    "time": 50000,
+    "time": 70000,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
@@ -175,7 +187,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 7,
-    "time": 50000,
+    "time": 70000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "gold_small", 625 ] ],
@@ -188,7 +200,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 2,
-    "time": 50000,
+    "time": 20000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 165 ] ],
@@ -200,7 +212,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 3,
-    "time": 50000,
+    "time": 30000,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
@@ -213,7 +225,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 4,
-    "time": 50000,
+    "time": 40000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 600 ] ],
@@ -250,7 +262,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 6,
-    "time": 50000,
+    "time": 60000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 95 ] ],
@@ -262,7 +274,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 6,
-    "time": 50000,
+    "time": 60000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 95 ] ],
@@ -274,7 +286,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 7,
-    "time": 50000,
+    "time": 70000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 95 ] ],
@@ -286,7 +298,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 7,
-    "time": 50000,
+    "time": 70000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 95 ] ],
@@ -298,7 +310,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 8,
-    "time": 50000,
+    "time": 80000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 95 ] ],
@@ -310,7 +322,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 8,
-    "time": 50000,
+    "time": 80000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 95 ] ],
@@ -322,7 +334,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 9,
-    "time": 50000,
+    "time": 90000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 95 ] ],
@@ -334,7 +346,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 9,
-    "time": 50000,
+    "time": 90000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "silver_small", 95 ] ],
@@ -346,7 +358,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 4,
-    "time": 50000,
+    "time": 40000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "scrap", 12 ] ],
@@ -371,7 +383,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 6,
-    "time": 50000,
+    "time": 60000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "scrap", 10 ] ],
@@ -380,63 +392,11 @@
     ]
   },
   {
-    "result": "numbness_potion",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 0,
-    "time": 50000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [ [ [ "essence_dull", 15 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "strength_potion",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 1,
-    "time": 50000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [ [ [ "essence_dull", 15 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "speed_potion",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 2,
-    "time": 50000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [ [ [ "essence_dull", 15 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "healing_potion",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 3,
-    "time": 50000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [ [ [ "essence_dull", 15 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
     "result": "scroll_sun",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 2,
-    "time": 50000,
+    "time": 20000,
     "tools": [
       [ [ "hexenhammer", -1 ] ],
       [ [ "fire", -1 ] ]
@@ -449,7 +409,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 2,
-    "time": 50000,
+    "time": 20000,
     "tools": [
       [ [ "hexenhammer", -1 ] ],
       [ [ "fire", -1 ] ]
@@ -462,7 +422,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 3,
-    "time": 50000,
+    "time": 30000,
     "tools": [
       [ [ "hexenhammer", -1 ] ],
       [ [ "fire", -1 ] ]
@@ -475,7 +435,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 3,
-    "time": 50000,
+    "time": 30000,
     "tools": [
       [ [ "hexenhammer", -1 ] ],
       [ [ "fire", -1 ] ]
@@ -488,7 +448,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 4,
-    "time": 50000,
+    "time": 40000,
     "tools": [
       [ [ "hexenhammer", -1 ] ],
       [ [ "fire", -1 ] ]
@@ -501,7 +461,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 4,
-    "time": 50000,
+    "time": 40000,
     "tools": [
       [ [ "hexenhammer", -1 ] ],
       [ [ "fire", -1 ] ]
@@ -514,7 +474,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 7,
-    "time": 50000,
+    "time": 70000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "rag", 6 ] ],
@@ -527,7 +487,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 8,
-    "time": 50000,
+    "time": 80000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "splinter", 8 ] ],
@@ -540,7 +500,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 9,
-    "time": 50000,
+    "time": 90000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [
       [ [ "gold_small", 500 ] ],
@@ -553,7 +513,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 8,
-    "time": 100000,
+    "time": 80000,
     "tools": [
       [ [ "hexenhammer", -1 ] ],
       [ [ "book_hexenhammer", -1 ] ],
@@ -617,5 +577,74 @@
     ],
     "components": [ [ [ "essence_dull", 150 ] ] ],
     "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "gilded_aegis",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 40000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "leather", 20 ] ],
+      [ [ "scrap", 40 ] ],
+      [ [ "gold_small", 200 ] ],
+      [ [ "essence_blood", 4 ] ]
+    ]
+  },
+  {
+    "result": "somen_clairvoyance",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 50000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "leather", 4 ] ],
+      [ [ "scrap", 5 ] ],
+      [ [ "copper", 30 ] ],
+      [ [ "essence_blood", 3 ] ]
+    ]
+  },
+  {
+    "result": "sun_sword",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 50000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "blade", 4 ] ],
+      [ [ "gold_small", 135 ] ],
+      [ [ "essence_blood", 5 ] ]
+    ]
+  },
+  {
+    "result": "hexenhammer",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 40000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "splinter", 8 ] ],
+      [ [ "scrap", 20 ] ],
+      [ [ "silver_small", 240 ] ],
+      [ [ "essence_blood", 3 ] ]
+    ]
+  },
+  {
+    "result": "ethereal_crossbow",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 40000,
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "splinter", 6 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "gold_small", 45 ] ],
+      [ [ "essence_blood", 4 ] ]
+    ]
   }
 ]

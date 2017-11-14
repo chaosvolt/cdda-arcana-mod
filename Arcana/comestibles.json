@@ -81,7 +81,7 @@
     "comestible_type": "DRINK",
     "category": "drugs",
     "name": "red potion",
-    "description": "A strange reddish liquid that gives off a sweet smell.  The elixir of life, or merely a mimicry?  Drinking this will cure a number of things, but can't mend existing damage.  It can heal bleeding, cleanse wounds, stave off infection, and purge a handful of mundane diseases.",
+    "description": "A strange reddish liquid that gives off a sweet smell.  The elixir of life, or merely a mimicry?  Drinking this will cure a number of things, but can't mend existing damage.  It can heal bleeding, stave off infection, and purge some diseases including fungal infection, but it can't cleanse an infected bite that hasn't taken hold.",
     "weight": 300,
     "volume": 1,
     "price": 2900,

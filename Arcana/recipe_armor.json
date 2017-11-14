@@ -1,5 +1,32 @@
 [
   {
+    "type" : "recipe",
+    "result": "mana_gem",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 3 ],
+    "time": 30000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 4 ], [ "book_bloodmagic", 3 ], [ "book_hexenhammer", 3 ], [ "book_sacrifice", 3 ], [ "book_syncretism", 2 ] ],
+    "using": [ [ "forging_standard", 1 ], [ "cordage_short", 3 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3 },
+      { "id": "CHISEL", "level": 3 }
+    ],
+    "tools": [
+      [ [ "tongs", -1 ] ],
+      [ [ "anvil", -1 ] ],
+      [ [ "swage", -1 ] ]
+    ],
+    "components": [
+      [ [ "glass_shard", 1 ] ],
+      [ [ "copper", 100 ] ],
+      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
+    ]
+  },
+  {
     "result": "gilded_aegis",
     "type": "recipe",
     "category": "CC_ARMOR",
@@ -9,16 +36,19 @@
     "skills_required": [ "tailor", 3 ],
     "time": 30000,
     "book_learn": [ [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "filament", 18 ] ],
+    "using": [ [ "filament", 18 ], [ "steel_standard", 2 ] ],
     "qualities": [
-      { "id": "HAMMER", "level": 2 },
+      { "id": "HAMMER", "level": 3 },
       { "id": "SEW", "level": 1 }
     ],
-    "tools": [ [ [ "book_hexenhammer", -1 ] ] ],
+    "tools": [
+      [ [ "book_hexenhammer", -1 ] ],
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
     "components": [
       [ [ "cloak_leather", 1 ] ],
       [ [ "feather", 20 ] ],
-      [ [ "gold_small", 2000 ] ],
+      [ [ "gold_small", 200 ] ],
       [ [ "essence_dull", 20 ] ]
     ]
   },
@@ -32,16 +62,18 @@
     "skills_required": [ "tailor", 3 ],
     "time": 25000,
     "book_learn": [ [ "book_hexenhammer", 6 ] ],
-    "using": [ [ "filament", 9 ] ],
+    "using": [ [ "filament", 9 ], [ "steel_tiny", 1 ] ],
     "qualities": [
-      { "id": "HAMMER", "level": 2 },
+      { "id": "HAMMER", "level": 3 },
       { "id": "CUT", "level": 1 },
       { "id": "SEW", "level": 1 }
     ],
-    "tools": [ [ [ "book_hexenhammer", -1 ] ] ],
+    "tools": [
+      [ [ "book_hexenhammer", -1 ] ],
+      [ [ "surface_heat", 4, "LIST" ] ]
+    ],
     "components": [
       [ [ "leather", 4 ] ],
-      [ [ "scrap", 2 ] ],
       [ [ "copper", 30 ] ],
       [ [ "essence_dull", 15 ] ]
     ]
@@ -81,6 +113,7 @@
     "skills_required": [ "fabrication", 3 ],
     "time": 15000,
     "book_learn": [ [ "book_bloodmagic", 5 ] ],
+    "using": [ [ "forging_standard", 3 ] ],
     "qualities": [
       { "id": "HAMMER", "level": 3 },
       { "id": "CHISEL", "level": 3 }
@@ -89,8 +122,7 @@
       [ [ "book_bloodmagic", -1 ] ],
       [ [ "tongs", -1 ] ],
       [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 300 ], [ "oxy_torch", 60 ] ]
+      [ [ "swage", -1 ] ]
     ],
     "components": [
       [ [ "silver_small", 600 ] ],
@@ -108,16 +140,10 @@
     "skills_required": [ "fabrication", 3 ],
     "time": 30000,
     "book_learn": [ [ "book_sacrifice", 6 ] ],
-    "qualities": [
-      { "id": "HAMMER", "level": 3 },
-      { "id": "CHISEL", "level": 3 }
-    ],
+    "qualities": [ { "id": "HAMMER", "level": 3 } ],
     "tools": [
       [ [ "book_sacrifice", -1 ] ],
-      [ [ "tongs", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 150 ], [ "oxy_torch", 30 ] ]
+      [ [ "surface_heat", 6, "LIST" ] ]
     ],
     "components": [
       [ [ "gloves_plate", 1 ] ],
@@ -161,13 +187,13 @@
     "using": [ [ "filament", 24 ] ],
     "qualities": [
       { "id": "CUT", "level": 1 },
-      { "id": "HAMMER", "level": 2 },
+      { "id": "HAMMER", "level": 3 },
       { "id": "SEW", "level": 1 }
     ],
     "tools": [
       [ [ "book_syncretism", -1 ] ],
       [ [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ],
-      [ [ "fire", -1 ], [ "toolset", 10 ] ]
+      [ [ "surface_heat", 4, "LIST" ] ]
     ],
     "components": [
       [ [ "ragpouch", 1 ] ],
