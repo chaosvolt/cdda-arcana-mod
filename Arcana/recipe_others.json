@@ -93,11 +93,12 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_bloodmagic", 0 ] ],
     "result_mult": 3,
+    "byproducts": [ [ "thread", 3 ] ],
     "tools": [
       [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
       [ [ "fire", -1 ] ]
     ],
-    "components": [ [ [ "rag_bloody", 3 ], [ "blood", 1 ] ] ],
+    "components": [ [ [ "rag_bloody", 3 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
