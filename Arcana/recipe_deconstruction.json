@@ -157,6 +157,18 @@
     ]
   },
   {
+    "result": "offering_chalice_used",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 40000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "gold_small", 625 ] ],
+      [ [ "essence_dull", 30 ] ]
+    ]
+  },
+  {
     "result": "robe_shadow",
     "type": "uncraft",
     "skill_used": "magic",
