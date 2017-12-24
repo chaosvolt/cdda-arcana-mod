@@ -267,7 +267,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "The carvings in the stone glow red for a brief moment, and a chill passes through your spine.",
-      "effects": [ { "id": "flame_ward", "duration": 1000 } ]
+      "effects": [ { "id": "heat_ward", "duration": 1000 } ]
     },
     "flags": [ "BELTED", "ALLOWS_NATURAL_ATTACKS" ]
   },

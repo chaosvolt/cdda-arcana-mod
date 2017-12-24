@@ -133,6 +133,24 @@
         }
     },{
         "type": "effect_type",
+        "id": "acid_ward",
+        "name": ["Ward Against Corrosion"],
+        "desc": ["Protection against lingering acid effects."],
+        "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
+        "removes_effects": [ "corroding" ],
+        "blocks_effects": [ "corroding" ],
+        "max_duration": 1000
+    },{
+        "type": "effect_type",
+        "id": "poison_ward",
+        "name": ["Ward Against Poison"],
+        "desc": ["Protection against toxic gas and venom."],
+        "remove_message": "You feel a momenary weakness as the protective magic fades.",
+        "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
+        "blocks_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
+        "max_duration": 1000
+    },{
+        "type": "effect_type",
         "id": "cleric_warding",
         "name": ["Ward Against Evil"],
         "desc": ["Protects against various anomalous effects."],

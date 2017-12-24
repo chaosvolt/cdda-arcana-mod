@@ -505,7 +505,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "Your body becomes innured to heat and choking smoke.",
-      "effects": [ { "id": "flame_ward", "duration": 100 } ]
+      "effects": [ { "id": "heat_ward", "duration": 100 } ]
     },
     "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
   },
