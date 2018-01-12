@@ -2,7 +2,7 @@
 Arcana and Magic Items mod for Cataclysm: Dark Days Ahead
 Text and lore data yoinked from my old forum post for it on the CDDA forums, way back before I first PR'd it. Expect the content to be outdated, incomplete, and subject to change. :V
 
-This is a mod idea I cooked up a long time ago, first mentioned the idea over on the Drawing Board ( http://smf.cataclysmdda.com/index.php?topic=10987.0 ).
+This is a mod idea I cooked up a long time ago, first mentioned the idea over on the Drawing Board in the old defunct forums.
 
 Arcana Skill:
 * A new skill, which I'm surprised I got working. It's used as the primary crafting skill for magical items. Thanks to a PR by BevapDin, magic weapons can now use this skill.
