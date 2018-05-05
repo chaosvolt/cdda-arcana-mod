@@ -113,7 +113,7 @@
     "storage": 8,
     "warmth": 25,
     "material_thickness": 4,
-    "environmental_protection": 5,
+    "environmental_protection": 10,
     "artifact_data": { "effects_activated": [ "AEA_ACIDBALL" ] },
     "use_action": "ARTIFACT",
     "flags": [ "VARSIZE", "STURDY", "NO_SALVAGE" ]
