@@ -39,6 +39,7 @@
       [ [ "offering_chalice", -1 ] ],
       [ [ "fire", -1 ] ]
     ],
+    "components": [ [ [ "vortex_stone", 1 ], [ "vortex_shard", 10 ], [ "teleporter", 1 ], [ "portal", 1 ], [ "petrified_eye", 1 ], [ "engraved_stone", 1 ], [ "monster_tear", 5 ], [ "spiral_stone", 3 ], [ "etched_skull", 1 ], [ "small_relic", 2 ], [ "violin_golden", 1 ], [ "shadow_gem", 5 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -57,6 +58,7 @@
       [ [ "offering_chalice", -1 ] ],
       [ [ "fire", -1 ] ]
     ],
+    "components": [ [ [ "essence_blood", 3 ], [ "essence_dull", 30 ], [ "mycus_fruit", 5 ], [ "marloss_seed", 10 ], [ "marloss_gel", 1 ], [ "marloss_berry", 15 ], [ "slime_scrap", 50 ], [ "blob_gem", 10 ], [ "bone_tainted", 50 ], [ "bone_twisted", 5 ], [ "gracken_knuckles", 10 ], [ "plant_sac", 50 ], [ "tallow_tainted", 25 ], [ "chitin_piece", 50 ], [ "wyrmskin_piece", 10 ], [ "iridescent_plate", 15 ], [ "bee_sting", 30 ], [ "wasp_sting", 30 ], [ "fighter_sting", 15 ], [ "dermatik_sting", 10 ], [ "biollante_bud", 10 ], [ "triffid_queen_flower", 5 ], [ "graboid_fang", 5 ], [ "monster_fang", 15 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {

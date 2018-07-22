@@ -5,6 +5,7 @@
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_OTHER",
     "skill_used": "magic",
+    "skills_required": [ "tailor", 0 ],
     "time": 6000,
     "autolearn": true,
     "using": [ [ "filament", 20 ] ],
