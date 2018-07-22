@@ -1,5 +1,48 @@
 [
   {
+    "result": "triffid_garland",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "magic",
+    "time": 6000,
+    "autolearn": true,
+    "using": [ [ "filament", 20 ] ],
+    "components": [ [ [ "biollante_bud", 1 ], [ "triffid_queen_flower", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "amulet_exotic",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "magic",
+    "skills_required": [ "fabrication", 2 ],
+    "time": 30000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "cordage_short", 1, "LIST" ], [ "necklace", 1 ] ],
+      [ [ "vortex_shard", 1 ], [ "blob_gem", 1 ], [ "monster_tear", 1 ], [ "shadow_gem", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "brooch_iridescent",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "skills_required": [ "fabrication", 3 ],
+    "time": 60000,
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 10, "LIST" ] ] ],
+    "components": [
+      [ [ "bone", 1 ], [ "bone_human", 1 ] ],
+      [ [ "copper", 10 ], [ "silver_small", 10 ], [ "gold_small", 10 ] ],
+      [ [ "iridescent_plate", 1 ], [ "wyrmskin_piece", 1 ], [ "engraved_stone", 1 ] ]
+    ]
+  },
+  {
     "type" : "recipe",
     "result": "mana_gem",
     "category": "CC_ARMOR",
@@ -21,7 +64,7 @@
       [ [ "swage", -1 ] ]
     ],
     "components": [
-      [ [ "glass_shard", 1 ] ],
+      [ [ "glass_shard", 1 ], [ "diamond", 1 ], [ "amulet_exotic", 1 ] ],
       [ [ "copper", 100 ] ],
       [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
     ]
@@ -99,7 +142,7 @@
       [ [ "armguard_larmor", 1 ] ],
       [ [ "boots_larmor", 1 ] ],
       [ [ "brooch", 1 ] ],
-      [ [ "acid", 1 ], [ "water_acid", 2 ], [ "water_acid_weak", 4 ], [ "chem_sulphuric_acid", 2 ], [ "chem_nitric_acid", 2 ] ],
+      [ [ "wyrmskin_piece", 1 ], [ "acid", 1 ], [ "water_acid", 2 ], [ "water_acid_weak", 4 ], [ "chem_sulphuric_acid", 2 ], [ "chem_nitric_acid", 2 ] ],
       [ [ "essence_blood", 4 ] ]
     ]
   },
@@ -199,7 +242,7 @@
       [ [ "ragpouch", 1 ] ],
       [ [ "copper", 50 ] ],
       [ [ "rag", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ],
-      [ [ "vortex_stone", 1 ] ],
+      [ [ "vortex_stone", 1 ], [ "vortex_shard", 10 ] ],
       [ [ "essence", 8 ], [ "essence_blood", 24 ] ]
     ]
   }

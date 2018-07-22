@@ -23,7 +23,7 @@
     "components": [
       [ [ "gold_small", 625 ] ],
       [ [ "silver_small", 165 ] ],
-      [ [ "small_relic", 1 ], [ "holy_symbol", 3 ], [ "holy_symbol_wood", 9 ] ],
+      [ [ "charm_bone", 1 ], [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ],
       [ [ "essence", 5 ], [ "essence_blood", 15 ] ]
     ]
   },
@@ -61,6 +61,7 @@
     "type": "recipe",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_CUTTING",
+    "//": "Bone charms and exotic amulets are excluded because not earthly holy symbols",
     "skill_used": "magic",
     "difficulty": 6,
     "skills_required": [ "fabrication", 4 ],
@@ -83,6 +84,7 @@
     "type": "recipe",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_BASHING",
+    "//": "Bone charms and exotic amulets are excluded because not earthly holy symbols",
     "skill_used": "magic",
     "difficulty": 4,
     "skills_required": [ "fabrication", 4 ],
@@ -118,7 +120,7 @@
     "components": [
       [ [ "q_staff", 1 ] ],
       [ [ "silver_small", 475 ] ],
-      [ [ "bone", 7 ], [ "bone_human", 7 ], [ "bone_tainted", 14 ] ],
+      [ [ "bone_twisted", 1 ], [ "gracken_knuckles", 1 ], [ "bone", 7 ], [ "bone_human", 7 ], [ "bone_tainted", 14 ] ],
       [ [ "essence_blood", 10 ] ]
     ]
   },
@@ -145,6 +147,7 @@
     "type": "recipe",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
+    "//": "Bone charms and exotic amulets are excluded because not earthly holy symbols",
     "skill_used": "magic",
     "difficulty": 7,
     "skills_required": [ "fabrication", 1 ],
@@ -177,7 +180,7 @@
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
     "components": [
       [ [ "spear_steel", 1 ] ],
-      [ [ "bee_sting", 1 ], [ "wasp_sting", 1 ] ],
+      [ [ "bee_sting", 1 ], [ "wasp_sting", 1 ], [ "dermatik_sting", 1 ] ],
       [ [ "chitin_piece", 2 ] ],
       [ [ "essence", 4 ], [ "essence_blood", 12 ] ]
     ]
@@ -197,7 +200,7 @@
       [ [ "book_sacrifice", -1 ] ],
       [ [ "book_bloodmagic", -1 ] ],
       [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ] ],
-      [ [ "holy_symbol", -1 ], [ "holy_symbol_wood", -1 ], [ "offering_chalice", -1 ], [ "thunder_sigil", -1 ] ]
+      [ [ "small_relic", -1 ], [ "amulet_exotic", -1 ], [ "holy_symbol", -1 ], [ "charm_bone", -1 ], [ "holy_symbol_wood", -1 ], [ "offering_chalice", -1 ], [ "thunder_sigil", -1 ], [ "hexenhammer", -1 ], [ "sun_sword", -1 ] ]
     ],
     "components": [
       [ [ "stormbringer", 1 ] ],

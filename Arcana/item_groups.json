@@ -251,5 +251,65 @@
       [ "hexenhammer", 5 ],
       [ "blood_athame", 5 ]
     ]
+  },
+  {
+    "id": "dermatik_sting",
+    "type": "item_group",
+    "items": [ [ "dermatik_sting", 1 ] ]
+  },
+  {
+    "id": "graboid_fang",
+    "type": "item_group",
+    "items": [ [ "graboid_fang", 1 ] ]
+  },
+  {
+    "id": "vortex_shard",
+    "type": "item_group",
+    "items": [ [ "vortex_shard", 1 ] ]
+  },
+  {
+    "id": "blob_gem",
+    "type": "item_group",
+    "items": [ [ "blob_gem", 1 ] ]
+  },
+  {
+    "id": "monster_tear",
+    "type": "item_group",
+    "items": [ [ "monster_tear", 1 ] ]
+  },
+  {
+    "id": "shadow_gem",
+    "type": "item_group",
+    "items": [ [ "shadow_gem", 1 ] ]
+  },
+  {
+    "id": "bone_twisted",
+    "type": "item_group",
+    "items": [ [ "bone_twisted", 1 ] ]
+  },
+  {
+    "id": "gracken_knuckles",
+    "type": "item_group",
+    "items": [ [ "gracken_knuckles", 1 ] ]
+  },
+  {
+    "id": "wyrmskin_piece",
+    "type": "item_group",
+    "items": [ [ "wyrmskin_piece", 1 ] ]
+  },
+  {
+    "id": "monster_fang",
+    "type": "item_group",
+    "items": [ [ "monster_fang", 1 ] ]
+  },
+  {
+    "id": "iridescent_plate",
+    "type": "item_group",
+    "items": [ [ "iridescent_plate", 1 ] ]
+  },
+  {
+    "id": "engraved_stone",
+    "type": "item_group",
+    "items": [ [ "engraved_stone", 1 ] ]
   }
 ]

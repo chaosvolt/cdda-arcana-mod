@@ -25,8 +25,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence", 50 ] ],
-      "//": "50% chance of essence"
+      "groups": [
+        [ "graboid_fang", 90 ],
+        [ "essence", 50 ]
+      ],
+      "//": "90% chance of a graboid fang, 50% chance of essence."
     }
   },
   {
@@ -239,8 +242,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_boss", 100 ] ],
-      "//": "boss-level essence"
+      "groups": [
+        [ "blob_gem", 100 ],
+        [ "essence_boss", 100 ]
+      ],
+      "//": "Boss-level essence."
     }
   },
   {
@@ -249,8 +255,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 10 ] ],
-      "//": "10% chance of nether-level essence"
+      "groups": [
+        [ "blob_gem", 5 ],
+        [ "essence_nether", 10 ]
+      ],
+      "//": "10% chance of nether-level essence."
     }
   },
   {
@@ -270,6 +279,7 @@
     "death_drops": {
       "subtype": "collection",
       "groups": [
+        [ "monster_tear", 10 ],
         [ "essence", 15 ],
         [ "subway", 40 ],
         [ "sewer", 20 ],
@@ -286,8 +296,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence", 15 ] ],
-      "//": "15% chance of essence, not all mutants are anomalous"
+      "groups": [
+        [ "bone_twisted", 5 ],
+        [ "essence", 15 ]
+      ],
+      "//": "15% chance of essence, not all mutants are anomalous."
     }
   },
   {
@@ -316,8 +329,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence", 10 ] ],
-      "//": "10% chance of essence"
+      "groups": [
+        [ "dermatik_sting", 45 ],
+        [ "essence", 10 ]
+      ],
+      "//": "45% chance of a dermatik sting, 10% chance of essence."
     }
   },
   {
@@ -326,8 +342,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 25 ] ],
-      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly"
+      "groups": [
+        [ "wyrmskin_piece", 90 ],
+        [ "essence_nether", 25 ]
+      ],
+      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
   {
@@ -336,8 +355,12 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 25 ] ],
-      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly"
+      "groups": [
+        [ "bone_twisted", 100 ],
+        [ "engraved_stone", 10 ],
+        [ "essence_nether", 25 ]
+      ],
+      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
   {
@@ -346,8 +369,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 25 ] ],
-      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly"
+      "groups": [
+        [ "bone_twisted", 20 ],
+        [ "essence_nether", 25 ]
+      ],
+      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
   {
@@ -356,8 +382,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 25 ] ],
-      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly"
+      "groups": [
+        [ "iridescent_plate", 25 ],
+        [ "essence_nether", 25 ]
+      ],
+      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
   {
@@ -366,8 +395,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 25 ] ],
-      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly"
+      "groups": [
+        [ "bone_twisted", 75 ],
+        [ "essence_nether", 25 ]
+      ],
+      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
   {
@@ -376,8 +408,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 25 ] ],
-      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly"
+      "groups": [
+        [ "vortex_shard", 50 ],
+        [ "essence_nether", 25 ]
+      ],
+      "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
   {
@@ -387,8 +422,12 @@
     "name": "flying polyp",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 50 ] ],
-      "//": "50% chance of nether-level essence, now we've hit the really freaky stuff"
+      "groups": [
+        [ "monster_fang", 90 ],
+        [ "vortex_shard", 10 ],
+        [ "essence_nether", 50 ]
+      ],
+      "//": "50% chance of nether-level essence, now we've hit the really freaky stuff."
     }
   },
   {
@@ -398,8 +437,11 @@
     "name": "hunting horror",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 50 ] ],
-      "//": "50% chance of nether-level essence"
+      "groups": [
+        [ "monster_fang", 75 ],
+        [ "essence_nether", 50 ]
+      ],
+      "//": "50% chance of nether-level essence."
     }
   },
   {
@@ -408,8 +450,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 30 ] ],
-      "//": "30% chance of nether-level essence, least anomalous of the Lovecraft references"
+      "groups": [
+        [ "iridescent_plate", 25 ],
+        [ "essence_nether", 30 ]
+      ],
+      "//": "30% chance of nether-level essence, least anomalous of the Lovecraft references."
     }
   },
   {
@@ -418,8 +463,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 50 ] ],
-      "//": "50% chance of nether-level essence"
+      "groups": [
+        [ "iridescent_plate", 100 ],
+        [ "essence_nether", 50 ]
+      ],
+      "//": "50% chance of nether-level essence."
     }
   },
   {
@@ -428,8 +476,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 50 ] ],
-      "//": "50% chance of nether-level essence"
+      "groups": [
+        [ "blob_gem", 50 ],
+        [ "essence_nether", 50 ]
+      ],
+      "//": "50% chance of nether-level essence."
     }
   },
   {
@@ -438,7 +489,10 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 100 ] ],
+      "groups": [
+        [ "monster_tear", 75 ],
+        [ "essence_nether", 100 ]
+      ],
       "//": "100% chance of nether-level essence, oh the inhumanity!"
     }
   },
@@ -448,8 +502,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 30 ] ],
-      "//": "30% chance of nether-level essence"
+      "groups": [
+        [ "monster_fang", 5 ],
+        [ "essence_nether", 30 ]
+      ],
+      "//": "30% chance of nether-level essence."
     }
   },
   {
@@ -458,7 +515,10 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 50 ] ],
+      "groups": [
+        [ "gracken_knuckles", 5 ],
+        [ "essence_nether", 50 ]
+      ],
       "//": "50% chance of nether-level essence"
     }
   },
@@ -488,8 +548,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 10 ] ],
-      "//": "10% chance of nether-level essence"
+      "groups": [
+        [ "shadow_gem", 10 ],
+        [ "essence", 10 ]
+      ],
+      "//": "10% chance of essence."
     }
   },
   {
@@ -498,8 +561,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 50 ] ],
-      "//": "50% chance of nether-level essence"
+      "groups": [
+        [ "shadow_gem", 100 ],
+        [ "essence_nether", 50 ]
+      ],
+      "//": "50% chance of nether-level essence."
     }
   },
   {
@@ -508,8 +574,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 100 ] ],
-      "//": "100% chance of nether-level essence"
+      "groups": [
+        [ "blob_gem", 100 ],
+        [ "essence_nether", 100 ]
+      ],
+      "//": "100% chance of nether-level essence."
     }
   },
   {
@@ -518,8 +587,8 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 5 ] ],
-      "//": "5% chance of nether-level essence, presumed to be defensive entity but not entirely mindless"
+      "groups": [ [ "essence_nether", 1 ] ],
+      "//": "1% chance of essence, presumed to be defensive entity but not entirely mindless"
     }
   },
   {
@@ -528,8 +597,11 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 30 ] ],
-      "//": "30% chance of nether-level essence"
+      "groups": [
+        [ "shadow_gem", 15 ],
+        [ "essence_nether", 10 ]
+      ],
+      "//": "10% chance of nether-level essence."
     }
   },
   {
@@ -538,8 +610,12 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence_nether", 100 ] ],
-      "//": "100% chance of nether-level essence, this isn't your average friendly neighborhood blob"
+      "groups": [
+        [ "engraved_stone", 100 ],
+        [ "blob_gem", 25 ],
+        [ "essence_nether", 100 ]
+      ],
+      "//": "100% chance of nether-level essence, this isn't your average friendly neighborhood blob."
     }
   },
   {

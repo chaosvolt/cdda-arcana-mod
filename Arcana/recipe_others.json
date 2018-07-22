@@ -1,5 +1,29 @@
 [
   {
+    "result": "stinger_flute",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "skills_required": [ [ "fabrication", 3 ], [ "survival", 3 ] ],
+    "time": 60000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "dermatik_sting", 1 ], [ "fighter_sting", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "charm_bone",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "magic",
+    "time": 30000,
+    "skills_required": [ [ "fabrication", 1 ] ],
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "bone_twisted", 1 ], [ "gracken_knuckles", 1 ], [ "graboid_fang", 1 ], [ "monster_fang", 1 ] ] ]
+  },
+  {
     "result": "essence",
     "type": "recipe",
     "category": "CC_OTHER",
@@ -15,7 +39,6 @@
       [ [ "offering_chalice", -1 ] ],
       [ [ "fire", -1 ] ]
     ],
-    "components": [ [ [ "vortex_stone", 1 ], [ "teleporter", 1 ], [ "portal", 1 ], [ "petrified_eye", 1 ], [ "spiral_stone", 3 ], [ "etched_skull", 1 ], [ "small_relic", 2 ], [ "violin_golden", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -34,7 +57,6 @@
       [ [ "offering_chalice", -1 ] ],
       [ [ "fire", -1 ] ]
     ],
-    "components": [ [ [ "essence_blood", 3 ], [ "essence_dull", 30 ], [ "mycus_fruit", 5 ], [ "marloss_seed", 10 ], [ "marloss_gel", 1 ], [ "marloss_berry", 15 ], [ "slime_scrap", 50 ], [ "bone_tainted", 50 ], [ "plant_sac", 50 ], [ "tallow_tainted", 25 ], [ "chitin_piece", 50 ], [ "bee_sting", 30 ], [ "wasp_sting", 30 ], [ "fighter_sting", 15 ], [ "biollante_bud", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -60,7 +82,7 @@
     ],
     "components": [
       [ [ "gold_small", 625 ] ],
-      [ [ "holy_symbol", 1 ], [ "holy_symbol_wood", 3 ] ],
+      [ [ "small_relic", 1 ], [ "amulet_exotic", 1 ], [ "charm_bone", 1 ], [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ],
       [ [ "essence", 2 ], [ "essence_blood", 6 ] ]
     ]
   },
@@ -162,7 +184,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "tallow", 1 ], [ "tallow_tainted", 1 ] ],
+      [ [ "tallow", 4 ], [ "tallow_tainted", 4 ], [ "monster_fang", 1 ] ],
       [ [ "essence", 1 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -184,7 +206,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "tanbark", 3 ], [ "birchbark", 3 ], [ "willowbark", 3 ] ],
+      [ [ "tanbark", 3 ], [ "birchbark", 3 ], [ "willowbark", 3 ], [ "triffid_garland", 1 ] ],
       [ [ "essence", 1 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -206,7 +228,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "holy_symbol", 1 ], [ "holy_symbol_wood", 3 ] ],
+      [ [ "holy_symbol", 1 ], [ "charm_bone", 1 ], [ "holy_symbol_wood", 1 ] ],
       [ [ "essence", 2 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -228,7 +250,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "cured_pelt", 1 ], [ "cured_hide", 1 ] ],
+      [ [ "cured_pelt", 4 ], [ "cured_hide", 4 ], [ "wyrmskin_piece", 1 ], [ "iridescent_plate", 1 ] ],
       [ [ "essence", 2 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -250,7 +272,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "acid", 1 ], [ "water_acid", 2 ], [ "water_acid_weak", 4 ] ],
+      [ [ "wyrmskin_piece", 1 ], [ "graboid_fang", 1 ], [ "acid", 1 ], [ "water_acid", 2 ], [ "water_acid_weak", 4 ], [ "chem_sulphuric_acid", 2 ], [ "chem_nitric_acid", 2 ] ],
       [ [ "essence", 3 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -272,7 +294,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "seed_mushroom", 2 ], [ "seed_mushroom_magic", 2 ], [ "seed_mushroom_poison", 2 ], [ "seed_mushroom_morel", 2 ] ],
+      [ [ "seed_mushroom", 6 ], [ "seed_mushroom_magic", 6 ], [ "seed_mushroom_poison", 6 ], [ "seed_mushroom_morel", 6 ], [ "iridescent_plate", 1 ] ],
       [ [ "essence", 3 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -294,7 +316,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "mirror", 1 ] ],
+      [ [ "mirror", 1 ], [ "iridescent_plate", 1 ] ],
       [ [ "essence", 4 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -316,7 +338,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "salt_water", 4 ] ],
+      [ [ "bone_tainted", 6 ], [ "graboid_fang", 1 ], [ "monster_fang", 1 ] ],
       [ [ "essence", 4 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -338,7 +360,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "diamond", 1 ], [ "gold_small", 25 ], [ "silver_small", 50 ], [ "copper", 100 ] ],
+      [ [ "diamond", 1 ], [ "brooch", 1 ], [ "brooch_iridescent", 1 ], [ "gold_small", 25 ], [ "silver_small", 50 ], [ "copper", 100 ] ],
       [ [ "essence", 5 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -360,7 +382,7 @@
     ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "slime_scrap", 8 ] ],
+      [ [ "slime_scrap", 8 ], [ "blob_gem", 2 ] ],
       [ [ "essence", 5 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -399,7 +421,7 @@
     ],
     "components": [
       [ [ "scroll_blank", 1 ] ],
-      [ [ "copper", 8 ] ],
+      [ [ "copper", 12 ], [ "monster_tear", 1 ] ],
       [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 16 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -420,7 +442,7 @@
     ],
     "components": [
       [ [ "scroll_blank", 1 ] ],
-      [ [ "tin", 8 ] ],
+      [ [ "tin", 12 ], [ "shadow_gem", 1 ] ],
       [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 16 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -441,7 +463,7 @@
     ],
     "components": [
       [ [ "scroll_blank", 1 ] ],
-      [ [ "material_limestone", 12 ] ],
+      [ [ "material_limestone", 16 ], [ "engraved_stone", 1 ] ],
       [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 32 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -462,7 +484,7 @@
     ],
     "components": [
       [ [ "scroll_blank", 1 ] ],
-      [ [ "plant_fibre", 12 ] ],
+      [ [ "hops", 10 ], [ "bee_balm", 8 ], [ "poppy_bud", 6 ], [ "biollante_bud", 4 ], [ "triffid_queen_flower", 1 ] ],
       [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 32 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -483,7 +505,7 @@
     ],
     "components": [
       [ [ "scroll_blank", 1 ] ],
-      [ [ "chem_black_powder", 16 ] ],
+      [ [ "bone", 12 ], [ "bone_human", 6 ], [ "bone_tainted", 24 ], [ "charm_bone", 1 ] ],
       [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 47 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -504,7 +526,7 @@
     ],
     "components": [
       [ [ "scroll_blank", 1 ] ],
-      [ [ "meal_bone_tainted", 16 ] ],
+      [ [ "feather", 40 ], [ "vortex_shard", 1 ] ],
       [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 47 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -527,8 +549,9 @@
     ],
     "components": [
       [ [ "cudgel", 1 ] ],
-      [ [ "small_relic", 1 ] ],
-      [ [ "pine_bough", 4 ], [ "tanbark", 4 ], [ "birchbark", 4 ], [ "willowbark", 4 ], [ "hickory_root", 4 ] ],
+      [ [ "small_relic", 1 ], [ "amulet_exotic", 1 ] ],
+      [ [ "silver_small", 30 ] ],
+      [ [ "pine_bough", 4 ], [ "tanbark", 4 ], [ "birchbark", 4 ], [ "willowbark", 4 ], [ "hickory_root", 4 ], [ "triffid_garland", 1 ] ],
       [ [ "essence_blood", 27 ], [ "essence_dull", 135 ] ]
     ]
   },
@@ -549,7 +572,7 @@
       [ [ "surface_heat", 10, "LIST" ] ]
     ],
     "components": [
-      [ [ "petrified_eye", 1 ] ],
+      [ [ "petrified_eye", 1 ], [ "engraved_stone", 1 ] ],
       [ [ "gold_small", 500 ] ],
       [ [ "diamond", 1 ] ],
       [ [ "essence", 10 ], [ "essence_dull", 150 ] ]

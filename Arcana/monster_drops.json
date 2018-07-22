@@ -38,6 +38,7 @@
     "subtype": "collection",
     "entries": [
       { "item": "essence", "prob": 100 },
+      { "item": "engraved_stone", "prob": 50 },
       { "group": "magic_items", "prob": 25 },
       { "group": "magic_consumables", "prob": 25 },
       { "group": "magic_books", "prob": 50 },
@@ -56,6 +57,7 @@
     "subtype": "collection",
     "entries": [
       { "item": "essence", "prob": 100 },
+      { "item": "engraved_stone", "prob": 25 },
       { "group": "magic_items", "prob": 5 },
       { "group": "magic_consumables", "prob": 10 },
       { "group": "magic_tools", "prob": 10 },
