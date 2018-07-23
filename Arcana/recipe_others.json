@@ -486,7 +486,7 @@
     ],
     "components": [
       [ [ "scroll_blank", 1 ] ],
-      [ [ "hops", 10 ], [ "bee_balm", 8 ], [ "poppy_bud", 6 ], [ "biollante_bud", 4 ], [ "triffid_queen_flower", 1 ] ],
+      [ [ "raw_dandelion", 12 ], [ "hops", 10 ], [ "bee_balm", 8 ], [ "poppy_bud", 6 ], [ "biollante_bud", 4 ], [ "triffid_queen_flower", 1 ] ],
       [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 32 ] ]
     ],
     "flags": [ "BLIND_EASY" ]
@@ -578,6 +578,332 @@
       [ [ "gold_small", 500 ] ],
       [ [ "diamond", 1 ] ],
       [ [ "essence", 10 ], [ "essence_dull", 150 ] ]
+    ]
+  },
+  {
+    "result": "totem_insight",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires soaking and polishing.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "difficulty": 1,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
+    "components": [
+      [ [ "monster_tear", 1 ] ],
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 15 ] ]
+    ]
+  },
+  {
+    "result": "totem_plants",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Only requires weaving.",
+    "skills_required": [ [ "fabrication", 2 ] ],
+    "difficulty": 1,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "using": [ [ "filament", 5 ] ],
+    "qualities": [ { "id": "KNIT", "level": 1 } ],
+    "components": [
+      [ [ "triffid_queen_flower", 1 ] ],
+      [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ],
+      [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 15 ] ]
+    ]
+  },
+  {
+    "result": "totem_confusion",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "//": "Requires purification and carving.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [
+      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [
+      [ [ "dermatik_sting", 1 ] ],
+      [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 15 ] ]
+    ]
+  },
+  {
+    "result": "totem_agile",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires carving and polishing.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "difficulty": 2,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "gracken_knuckles", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
+    ]
+  },
+  {
+    "result": "totem_lightning",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Only requires polishing.",
+    "skills_required": [ [ "fabrication", 2 ] ],
+    "difficulty": 2,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "vortex_shard", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
+    ]
+  },
+  {
+    "result": "totem_strength",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires carving and polishing.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "difficulty": 2,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "monster_fang", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
+    ]
+  },
+  {
+    "result": "totem_elecresist",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires purification, carving, and polishing.",
+    "skills_required": [ [ "fabrication", 4 ] ],
+    "difficulty": 3,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "tools": [
+      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [
+      [ [ "blob_gem", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_clarity",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires purification and carving.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "difficulty": 3,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [
+      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [
+      [ [ "fighter_sting", 1 ] ],
+      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_heal",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires purification, soaking, carving, and polishing.  Hence the very high fabrication demand.",
+    "skills_required": [ [ "fabrication", 5 ] ],
+    "difficulty": 3,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
+    "tools": [
+      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [
+      [ [ "bone_twisted", 1 ] ],
+      [ [ "water", 1 ], [ "water_clean", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_flamearmor",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires purification, carving, and polishing.",
+    "skills_required": [ [ "fabrication", 4 ] ],
+    "difficulty": 4,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 3 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "tools": [
+      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [
+      [ [ "iridescent_plate", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
+    ]
+  },
+  {
+    "result": "totem_clairvoyance",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires carving and polishing.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "difficulty": 4,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 3 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [
+      [ [ "graboid_fang", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
+    ]
+  },
+  {
+    "result": "totem_invis",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires purification and polishing.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "difficulty": 4,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 3 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "tools": [
+      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [
+      [ [ "shadow_gem", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
+    ]
+  },
+  {
+    "result": "totem_cleric",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires purification and polishing.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "difficulty": 5,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 4 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "tools": [
+      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [
+      [ [ "engraved_stone", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
+    ]
+  },
+  {
+    "result": "totem_free_action",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires purification and weaving.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "difficulty": 5,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 4 ] ],
+    "using": [ [ "filament", 5 ] ],
+    "qualities": [ { "id": "KNIT", "level": 1 } ],
+    "tools": [
+      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [
+      [ [ "biollante_bud", 1 ] ],
+      [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ],
+      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
+    ]
+  },
+  {
+    "result": "totem_acidspray",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "//": "Requires purification, carving, and polishing.",
+    "skills_required": [ [ "fabrication", 4 ] ],
+    "difficulty": 5,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 4 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "tools": [
+      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
+      [ [ "fire", -1 ] ]
+    ],
+    "components": [
+      [ [ "wyrmskin_piece", 1 ] ],
+      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
+      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
     ]
   }
 ]

@@ -289,7 +289,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
-      "effects": [ { "id": "cleric_warding", "duration": 250 } ]
+      "effects": [ { "id": "cleric_warding", "duration": 1000 } ]
     },
     "flags": [ "FANCY" ]
   }
