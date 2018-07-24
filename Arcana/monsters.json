@@ -33,6 +33,19 @@
     }
   },
   {
+    "id": "mon_cockatrice",
+    "copy-from": "mon_cockatrice",
+    "type": "MONSTER",
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [
+        [ "monster_tear", 5 ],
+        [ "essence", 5 ]
+      ],
+      "//": "Mutated but not too anomalous, worth adding though."
+    }
+  },
+  {
     "id": "mon_sludge_crawler",
     "copy-from": "mon_sludge_crawler",
     "type": "MONSTER",
@@ -45,6 +58,13 @@
   {
     "id": "mon_zombie_shady",
     "copy-from": "mon_zombie_shady",
+    "type": "MONSTER",
+    "death_drops": "default_essence_death_drops",
+    "//": "Semi-anomalous zeds might drop blood essence"
+  },
+  {
+    "id": "mon_zombie_brute_ninja",
+    "copy-from": "mon_zombie_brute_ninja",
     "type": "MONSTER",
     "death_drops": "default_essence_death_drops",
     "//": "Semi-anomalous zeds might drop blood essence"
@@ -490,7 +510,7 @@
     "death_drops": {
       "subtype": "collection",
       "groups": [
-        [ "monster_tear", 75 ],
+        [ "monster_tear", 90 ],
         [ "essence_nether", 100 ]
       ],
       "//": "100% chance of nether-level essence, oh the inhumanity!"
@@ -634,7 +654,7 @@
     "id": "mon_blood_sacrifice",
     "copy-from": "mon_blood_sacrifice",
     "type": "MONSTER",
-    "death_drops": "essence_zombie_clothes"
+    "death_drops": "blood_essence_zombie_clothes"
   },
   {
     "id": "mon_flesh_angel",

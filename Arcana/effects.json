@@ -115,22 +115,34 @@
         "remove_message": "For a moment you feel a terrible chill in the air, as the moonstone fang's power fades.",
         "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
         "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
-        "max_duration": 1000,
-        "base_mods": {
-            "str_mod": [-1]
-        }
+        "max_duration": 1000
+    },{
+        "type": "effect_type",
+        "id": "free_action",
+        "name": ["Free Action"],
+        "desc": ["Protection against paralytic and other hindering effects."],
+        "remove_message": "You feel the otherworldly tension in your muscles leave your body, as the ward against paralytic effects fades.",
+        "removes_effects": [ "downed", "winded", "stunned", "dazed", "bouldering", "paralyzepoison", "webbed", "slimed", "sap", "crushed", "relax_gas", "grabbed" ],
+        "blocks_effects": [ "downed", "winded", "stunned", "dazed", "bouldering", "paralyzepoison", "webbed", "slimed", "sap", "crushed", "relax_gas", "grabbed" ],
+        "max_duration": 1000
     },{
         "type": "effect_type",
         "id": "heat_ward",
         "name": ["Ward Against Heat"],
         "desc": ["Protection against most effects of heat."],
-        "remove_message": "You feel a strange tingling sensation, as the jade wreath's power fades.",
+        "remove_message": "You feel a strange tingling sensation, as the ward against heat fades.",
         "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
         "blocks_effects": [ "onfire", "smoke", "hot", "blisters" ],
-        "max_duration": 1000,
-        "base_mods": {
-            "dex_mod": [-1]
-        }
+        "max_duration": 1000
+    },{
+        "type": "effect_type",
+        "id": "blood_clarity",
+        "name": ["Clarity of Blood"],
+        "desc": ["Protection against parasitic and corruptive threats, such as the Mycus."],
+        "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
+        "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
+        "blocks_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
+        "max_duration": 1000
     },{
         "type": "effect_type",
         "id": "acid_ward",
@@ -154,12 +166,9 @@
         "id": "cleric_warding",
         "name": ["Ward Against Evil"],
         "desc": ["Protects against various anomalous effects."],
-        "remove_message": "The ring's magical protection fades.",
+        "remove_message": "The magical protection fades.",
         "removes_effects": ["darkness", "rat", "evil", "attention", "teleglow", "amigara"],
         "blocks_effects": ["darkness", "rat", "evil", "attention", "teleglow", "amigara"],
-        "max_duration": 250,
-        "base_mods": {
-            "speed_mod": [-20]
-        }
+        "max_duration": 1000
     }
 ]

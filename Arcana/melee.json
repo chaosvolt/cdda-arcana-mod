@@ -10,7 +10,7 @@
     "id": "biollante_bud",
     "copy-from": "biollante_bud",
     "type": "GENERIC",
-    "name": "biollante_bud",
+    "name": "biollante bud",
     "description": "An unopened biollante flower, brilliant purple in color.  It may still have its sap-producing organ intact, or could be made into a trophy of some sort."
   },
   {
@@ -94,11 +94,11 @@
     "color": "magenta",
     "//": "Obtained from vortices, rarely flying polyps.",
     "name": "wind fragment",
-    "description": "A tiny, uneven piece of pink quartz.  It is unnaturally light and seems to whisper when held up to the ear.  It might be useful, or it could be made into a trophy of some sort.",
+    "description": "A small, uneven piece of pink quartz.  It is unnaturally light and seems to whisper when held up to the ear.  It might be useful, or it could be made into a trophy of some sort.",
     "price": 5000,
     "material": "stone",
     "weight": 0,
-    "volume": 0
+    "volume": 1
   },
   {
     "type": "GENERIC",
@@ -209,7 +209,7 @@
     "symbol": ",",
     "color": "pink",
     "name": "iridescent plate",
-    "description": "An iridescent piece of hardened tissue broken off from a dying monster, like a massive shed scale of shard of chitin.  It might be useful, or it could be made into a trophy of some sort.",
+    "description": "An iridescent piece of hardened tissue broken off from a dying monster, like a massive shed scale or shard of chitin.  It might be useful, or it could be made into a trophy of some sort.",
     "price": 0,
     "material": [ "flesh" ],
     "weight": 89,
