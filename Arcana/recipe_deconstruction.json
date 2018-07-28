@@ -23,10 +23,7 @@
     "difficulty": 0,
     "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "material_limestone", 5 ] ],
-      [ [ "essence_dull", 15 ] ]
-    ]
+    "components": [ [ [ "material_limestone", 5 ] ], [ [ "essence_dull", 15 ] ] ]
   },
   {
     "result": "petrified_eye",
@@ -35,10 +32,7 @@
     "difficulty": 0,
     "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "material_limestone", 30 ] ],
-      [ [ "essence_dull", 10 ] ]
-    ]
+    "components": [ [ [ "material_limestone", 30 ] ], [ [ "essence_dull", 10 ] ] ]
   },
   {
     "result": "spiral_stone",
@@ -47,10 +41,7 @@
     "difficulty": 0,
     "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "material_limestone", 15 ] ],
-      [ [ "essence_dull", 5 ] ]
-    ]
+    "components": [ [ [ "material_limestone", 15 ] ], [ [ "essence_dull", 5 ] ] ]
   },
   {
     "result": "portal",
@@ -59,10 +50,7 @@
     "difficulty": 0,
     "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "scrap", 2 ] ],
-      [ [ "essence_dull", 20 ] ]
-    ]
+    "components": [ [ [ "scrap", 2 ] ], [ [ "essence_dull", 20 ] ] ]
   },
   {
     "result": "etched_skull",
@@ -71,10 +59,7 @@
     "difficulty": 0,
     "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "meal_bone", 12 ] ],
-      [ [ "essence_dull", 15 ] ]
-    ]
+    "components": [ [ [ "meal_bone", 12 ] ], [ [ "essence_dull", 15 ] ] ]
   },
   {
     "result": "meteoric_talisman",
@@ -83,10 +68,7 @@
     "difficulty": 5,
     "time": 50000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "scrap", 1 ] ],
-      [ [ "essence_dull", 50 ] ]
-    ]
+    "components": [ [ [ "scrap", 1 ] ], [ [ "essence_dull", 50 ] ] ]
   },
   {
     "result": "jade_wreath",
@@ -95,10 +77,7 @@
     "difficulty": 5,
     "time": 50000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "material_sand", 12 ] ],
-      [ [ "essence_dull", 50 ] ]
-    ]
+    "components": [ [ [ "material_sand", 12 ] ], [ [ "essence_dull", 50 ] ] ]
   },
   {
     "result": "moonstone_fang",
@@ -107,10 +86,7 @@
     "difficulty": 0,
     "time": 50000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "material_sand", 6 ] ],
-      [ [ "essence_dull", 50 ] ]
-    ]
+    "components": [ [ [ "material_sand", 6 ] ], [ [ "essence_dull", 50 ] ] ]
   },
   {
     "result": "mana_gem",
@@ -119,10 +95,7 @@
     "difficulty": 4,
     "time": 40000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "copper", 100 ] ],
-      [ [ "essence_dull", 45 ] ]
-    ]
+    "components": [ [ [ "copper", 100 ] ], [ [ "essence_dull", 45 ] ] ]
   },
   {
     "result": "essence",
@@ -151,10 +124,7 @@
     "difficulty": 4,
     "time": 40000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "gold_small", 625 ] ],
-      [ [ "essence_dull", 30 ] ]
-    ]
+    "components": [ [ [ "gold_small", 625 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
     "result": "offering_chalice_used",
@@ -163,10 +133,7 @@
     "difficulty": 4,
     "time": 40000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "gold_small", 625 ] ],
-      [ [ "essence_dull", 30 ] ]
-    ]
+    "components": [ [ [ "gold_small", 625 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
     "result": "robe_shadow",
@@ -176,11 +143,7 @@
     "time": 70000,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "rag", 19 ] ],
-      [ [ "fur", 4 ] ],
-      [ [ "essence_dull", 105 ] ]
-    ]
+    "components": [ [ [ "rag", 19 ] ], [ [ "fur", 4 ] ], [ [ "essence_dull", 105 ] ] ]
   },
   {
     "result": "gauntlets_necro",
@@ -189,10 +152,7 @@
     "difficulty": 5,
     "time": 50000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "scrap", 6 ] ],
-      [ [ "essence_dull", 60 ] ]
-    ]
+    "components": [ [ [ "scrap", 6 ] ], [ [ "essence_dull", 60 ] ] ]
   },
   {
     "result": "thunder_sigil",
@@ -201,11 +161,7 @@
     "difficulty": 7,
     "time": 70000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "gold_small", 625 ] ],
-      [ [ "silver_small", 165 ] ],
-      [ [ "essence_dull", 75 ] ]
-    ]
+    "components": [ [ [ "gold_small", 625 ] ], [ [ "silver_small", 165 ] ], [ [ "essence_dull", 75 ] ] ]
   },
   {
     "result": "blood_athame",
@@ -214,10 +170,7 @@
     "difficulty": 2,
     "time": 20000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 165 ] ],
-      [ [ "essence_dull", 15 ] ]
-    ]
+    "components": [ [ [ "silver_small", 165 ] ], [ [ "essence_dull", 15 ] ] ]
   },
   {
     "result": "armor_wyrm",
@@ -227,10 +180,7 @@
     "time": 30000,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "leather", 42 ] ],
-      [ [ "essence_dull", 20 ] ]
-    ]
+    "components": [ [ [ "leather", 42 ] ], [ [ "essence_dull", 20 ] ] ]
   },
   {
     "result": "revenant_crown",
@@ -239,11 +189,7 @@
     "difficulty": 4,
     "time": 40000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 600 ] ],
-      [ [ "diamond", 1 ] ],
-      [ [ "essence_dull", 30 ] ]
-    ]
+    "components": [ [ [ "silver_small", 600 ] ], [ [ "diamond", 1 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
     "result": "summon_kreck",
@@ -252,10 +198,7 @@
     "difficulty": 5,
     "time": 50000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 15 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 15 ] ] ]
   },
   {
     "result": "summon_blank",
@@ -264,10 +207,7 @@
     "difficulty": 5,
     "time": 50000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 15 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 15 ] ] ]
   },
   {
     "result": "summon_flaming_eye",
@@ -276,10 +216,7 @@
     "difficulty": 6,
     "time": 60000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 30 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
     "result": "summon_hunting_horror",
@@ -288,10 +225,7 @@
     "difficulty": 6,
     "time": 60000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 30 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
     "result": "summon_dark_wyrm",
@@ -300,10 +234,7 @@
     "difficulty": 7,
     "time": 70000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 45 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 45 ] ] ]
   },
   {
     "result": "summon_mi_go",
@@ -312,10 +243,7 @@
     "difficulty": 7,
     "time": 70000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 45 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 45 ] ] ]
   },
   {
     "result": "summon_jabberwock",
@@ -324,10 +252,7 @@
     "difficulty": 8,
     "time": 80000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 60 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 60 ] ] ]
   },
   {
     "result": "summon_flying_polyp",
@@ -336,10 +261,7 @@
     "difficulty": 8,
     "time": 80000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 60 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 60 ] ] ]
   },
   {
     "result": "summon_yugg",
@@ -348,10 +270,7 @@
     "difficulty": 9,
     "time": 90000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 75 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 75 ] ] ]
   },
   {
     "result": "summon_shoggoth",
@@ -360,10 +279,7 @@
     "difficulty": 9,
     "time": 90000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "silver_small", 95 ] ],
-      [ [ "essence_dull", 75 ] ]
-    ]
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 75 ] ] ]
   },
   {
     "result": "bloodaxe",
@@ -372,10 +288,7 @@
     "difficulty": 4,
     "time": 40000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "scrap", 12 ] ],
-      [ [ "essence_dull", 25 ] ]
-    ]
+    "components": [ [ [ "scrap", 12 ] ], [ [ "essence_dull", 25 ] ] ]
   },
   {
     "result": "bloodscourge",
@@ -384,11 +297,7 @@
     "difficulty": 5,
     "time": 50000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "splinter", 12 ] ],
-      [ [ "silver_small", 475 ] ],
-      [ [ "essence_dull", 25 ] ]
-    ]
+    "components": [ [ [ "splinter", 12 ] ], [ [ "silver_small", 475 ] ], [ [ "essence_dull", 25 ] ] ]
   },
   {
     "result": "spear_pestilence",
@@ -397,11 +306,7 @@
     "difficulty": 6,
     "time": 60000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "scrap", 10 ] ],
-      [ [ "meal_chitin_piece", 8 ] ],
-      [ [ "essence_dull", 60 ] ]
-    ]
+    "components": [ [ [ "scrap", 10 ] ], [ [ "meal_chitin_piece", 8 ] ], [ [ "essence_dull", 60 ] ] ]
   },
   {
     "result": "scroll_sun",
@@ -409,10 +314,7 @@
     "skill_used": "magic",
     "difficulty": 2,
     "time": 20000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 15 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -422,10 +324,7 @@
     "skill_used": "magic",
     "difficulty": 2,
     "time": 20000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 15 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -435,10 +334,7 @@
     "skill_used": "magic",
     "difficulty": 3,
     "time": 30000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -448,10 +344,7 @@
     "skill_used": "magic",
     "difficulty": 3,
     "time": 30000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -461,10 +354,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": 40000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 45 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -474,11 +364,308 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": 40000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_insight",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 5000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 15 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_plants",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 5000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 15 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_confusion",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 5000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 15 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_agile",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "time": 10000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_lightning",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "time": 10000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_strength",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "time": 10000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_elecresist",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": 20000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_clarity",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": 20000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_heal",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": 20000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_flamearmor",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": 30000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_clairvoyance",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": 30000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_invis",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": 30000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_cleric",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 40000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_free_action",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 40000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_acidspray",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 40000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_insight",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 5000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_plants",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 5000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_confusion",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 5000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_agile",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": 10000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_lightning",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": 10000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_might",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": 10000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 45 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_elecresist",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": 20000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_clarity",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": 20000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_heal",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": 20000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_flame_armor",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": 30000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 75 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_clairvoyance",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": 30000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 75 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_invis",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": 30000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 75 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_cleric",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 40000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_free_action",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 40000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_acidspray",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 40000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -488,11 +675,7 @@
     "difficulty": 7,
     "time": 70000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "rag", 6 ] ],
-      [ [ "copper", 50 ] ],
-      [ [ "essence_dull", 120 ] ]
-    ]
+    "components": [ [ [ "rag", 6 ] ], [ [ "copper", 50 ] ], [ [ "essence_dull", 120 ] ] ]
   },
   {
     "result": "staff_druidic",
@@ -501,11 +684,7 @@
     "difficulty": 8,
     "time": 80000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "splinter", 8 ] ],
-      [ [ "silver_small", 20 ] ],
-      [ [ "essence_dull", 135 ] ]
-    ]
+    "components": [ [ [ "splinter", 8 ] ], [ [ "silver_small", 20 ] ], [ [ "essence_dull", 135 ] ] ]
   },
   {
     "result": "orb_veil",
@@ -514,11 +693,7 @@
     "difficulty": 9,
     "time": 90000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [
-      [ [ "gold_small", 500 ] ],
-      [ [ "diamond", 1 ] ],
-      [ [ "essence_dull", 150 ] ]
-    ]
+    "components": [ [ [ "gold_small", 500 ] ], [ [ "diamond", 1 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
     "result": "veilblade",
@@ -526,11 +701,7 @@
     "skill_used": "magic",
     "difficulty": 8,
     "time": 80000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "book_hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -540,11 +711,7 @@
     "skill_used": "magic",
     "difficulty": 10,
     "time": 100000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "book_hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 150 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -554,11 +721,7 @@
     "skill_used": "magic",
     "difficulty": 10,
     "time": 100000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "book_hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 150 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -568,11 +731,7 @@
     "skill_used": "magic",
     "difficulty": 10,
     "time": 100000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "book_hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 150 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -582,11 +741,7 @@
     "skill_used": "magic",
     "difficulty": 10,
     "time": 100000,
-    "tools": [
-      [ [ "hexenhammer", -1 ] ],
-      [ [ "book_hexenhammer", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 150 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -597,12 +752,7 @@
     "difficulty": 4,
     "time": 40000,
     "tools": [ [ [ "blood_athame", -1 ] ] ],
-    "components": [
-      [ [ "leather", 20 ] ],
-      [ [ "scrap", 40 ] ],
-      [ [ "gold_small", 200 ] ],
-      [ [ "essence_blood", 4 ] ]
-    ]
+    "components": [ [ [ "leather", 20 ] ], [ [ "scrap", 40 ] ], [ [ "gold_small", 200 ] ], [ [ "essence_blood", 4 ] ] ]
   },
   {
     "result": "somen_clairvoyance",
@@ -611,12 +761,7 @@
     "difficulty": 5,
     "time": 50000,
     "tools": [ [ [ "blood_athame", -1 ] ] ],
-    "components": [
-      [ [ "leather", 4 ] ],
-      [ [ "scrap", 5 ] ],
-      [ [ "copper", 30 ] ],
-      [ [ "essence_blood", 3 ] ]
-    ]
+    "components": [ [ [ "leather", 4 ] ], [ [ "scrap", 5 ] ], [ [ "copper", 30 ] ], [ [ "essence_blood", 3 ] ] ]
   },
   {
     "result": "sun_sword",
@@ -625,11 +770,7 @@
     "difficulty": 5,
     "time": 50000,
     "tools": [ [ [ "blood_athame", -1 ] ] ],
-    "components": [
-      [ [ "blade", 4 ] ],
-      [ [ "gold_small", 135 ] ],
-      [ [ "essence_blood", 5 ] ]
-    ]
+    "components": [ [ [ "blade", 4 ] ], [ [ "gold_small", 135 ] ], [ [ "essence_blood", 5 ] ] ]
   },
   {
     "result": "hexenhammer",
@@ -638,12 +779,7 @@
     "difficulty": 4,
     "time": 40000,
     "tools": [ [ [ "blood_athame", -1 ] ] ],
-    "components": [
-      [ [ "splinter", 8 ] ],
-      [ [ "scrap", 20 ] ],
-      [ [ "silver_small", 240 ] ],
-      [ [ "essence_blood", 3 ] ]
-    ]
+    "components": [ [ [ "splinter", 8 ] ], [ [ "scrap", 20 ] ], [ [ "silver_small", 240 ] ], [ [ "essence_blood", 3 ] ] ]
   },
   {
     "result": "ethereal_crossbow",
@@ -652,11 +788,6 @@
     "difficulty": 4,
     "time": 40000,
     "tools": [ [ [ "blood_athame", -1 ] ] ],
-    "components": [
-      [ [ "splinter", 6 ] ],
-      [ [ "scrap", 1 ] ],
-      [ [ "gold_small", 45 ] ],
-      [ [ "essence_blood", 4 ] ]
-    ]
+    "components": [ [ [ "splinter", 6 ] ], [ [ "scrap", 1 ] ], [ [ "gold_small", 45 ] ], [ [ "essence_blood", 4 ] ] ]
   }
 ]

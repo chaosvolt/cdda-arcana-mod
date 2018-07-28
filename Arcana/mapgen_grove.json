@@ -13,6 +13,21 @@
     ]
   },
   {
+    "id": "unaligned_arcanist_spells",
+    "type": "item_group",
+    "items": [
+      [ "scroll_spell_confusion", 1 ],
+      [ "scroll_spell_plants", 1 ],
+      [ "scroll_spell_might", 1 ],
+      [ "scroll_spell_clarity", 1 ],
+      [ "scroll_spell_heal", 1 ],
+      [ "scroll_spell_flame_armor", 1 ],
+      [ "scroll_spell_invis", 1 ],
+      [ "scroll_spell_free_action", 1 ],
+      [ "scroll_spell_acidspray", 1 ]
+    ]
+  },
+  {
     "id": "summoner_drops",
     "type": "item_group",
     "items": [
@@ -135,15 +150,7 @@
         { "point": "trap", "id": "tr_portal", "x": 4, "y": 15 },
         { "point": "trap", "id": "tr_portal", "x": 6, "y": 21 }
       ],
-      "mapping": {
-        "Z": {
-          "furniture": "f_bed",
-          "items": {
-            "item": "bed",
-            "chance": 60
-          }
-        }
-      },
+      "mapping": { "Z": { "furniture": "f_bed", "items": { "item": "bed", "chance": 60 } } },
       "terrain": {
         " ": "t_rock_floor",
         "#": "t_rock",
@@ -159,26 +166,19 @@
         "r": "t_rock_floor",
         "~": "t_water_sh"
       },
-      "furniture": {
-        "B": "f_bookcase",
-        "Z": "f_bed",
-        "r": "f_rack"
-      },
+      "furniture": { "B": "f_bookcase", "Z": "f_bed", "r": "f_rack" },
       "place_loot": [
         { "group": "summoner_casualties", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 100, "repeat": [ 2, 6 ] },
         { "item": "book_syncretism", "x": 18, "y": 1, "chance": 40 },
         { "item": "note_grove", "x": [ 11, 15 ], "y": [ 13, 15 ], "chance": 100 },
         { "item": "arcanemap", "x": 16, "y": [ 3, 4 ], "chance": 100 },
-        { "group": "unaligned_arcanist_books", "x": 16, "y": [ 1, 4 ], "chance": 50, "repeat": [ 2, 6 ] },
-        { "group": "magic_crafting", "x": 1, "y": [ 13, 15 ], "chance": 40, "repeat": [ 2, 6 ] },
-        { "group": "magic_consumables", "x": 8, "y": [ 13, 14 ], "chance": 50, "repeat": [ 2, 4 ] }
+        { "group": "unaligned_arcanist_books", "x": 16, "y": [ 1, 4 ], "chance": 50, "repeat": [ 2, 8 ] },
+        { "group": "unaligned_arcanist_spells", "x": 16, "y": [ 1, 4 ], "chance": 5, "repeat": [ 2, 5 ] },
+        { "group": "magic_crafting", "x": 1, "y": [ 13, 15 ], "chance": 40, "repeat": [ 3, 6 ] },
+        { "group": "magic_consumables", "x": 8, "y": [ 13, 14 ], "chance": 50, "repeat": [ 2, 5 ] }
       ],
-      "place_monsters": [
-        { "monster": "GROUP_GROVEBASEMENT", "x": [ 2, 22 ], "y": [ 2, 22 ], "density": 0.2 }
-      ],
-      "place_monster": [
-        { "monster": "mon_moruboru", "x": 2, "y": 8 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_GROVEBASEMENT", "x": [ 2, 22 ], "y": [ 2, 22 ], "density": 0.2 } ],
+      "place_monster": [ { "monster": "mon_moruboru", "x": 2, "y": 8 } ]
     }
   }
 ]

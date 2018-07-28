@@ -7,10 +7,7 @@
   {
     "id": "NC_ARSONIST_cutting",
     "type": "item_group",
-    "items": [
-      [ "bloodaxe", 10 ],
-      [ "sun_sword", 5 ]
-    ]
+    "items": [ [ "bloodaxe", 10 ], [ "sun_sword", 5 ] ]
   },
   {
     "id": "NC_ARSONIST_stabbing",
@@ -40,10 +37,7 @@
   {
     "id": "NC_EVAC_SHOPKEEP_misc",
     "type": "item_group",
-    "items": [
-      [ "scroll_blank", 10 ],
-      [ "silver_glyph", 5 ]
-    ]
+    "items": [ [ "scroll_blank", 10 ], [ "silver_glyph", 5 ] ]
   },
   {
     "id": "NC_HUNTER_archery",
@@ -53,10 +47,7 @@
   {
     "id": "NC_JUNK_SHOPKEEP_misc",
     "type": "item_group",
-    "items": [
-      [ "scroll_blank", 10 ],
-      [ "silver_glyph", 5 ]
-    ]
+    "items": [ [ "scroll_blank", 10 ], [ "silver_glyph", 5 ] ]
   },
   {
     "id": "NC_NINJA_gloves",
@@ -101,9 +92,6 @@
   {
     "id": "NC_THUG_bashing",
     "type": "item_group",
-    "items": [
-      [ "hexenhammer", 2 ],
-      [ "bloodscourge", 5 ]
-    ]
+    "items": [ [ "hexenhammer", 2 ], [ "bloodscourge", 5 ] ]
   }
 ]

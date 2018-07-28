@@ -1,174 +1,189 @@
 [
-    {
-        "type": "effect_type",
-        "id": "offering",
-        "name": ["Offering"],
-        "desc": ["Something is sapping the life from your body."],
-        "miss_messages": [["Your will to fight fades for a moment.", 2]],
-        "rating": "bad",
-        "pain_sizing": true,
-        "hurt_sizing": true,
-        "main_parts_only": true,
-        "base_mods": {
-            "pain_min": [5],
-            "pain_chance": [1, 1],
-            "hurt_min": [10],
-            "hurt_max": [20],
-            "hurt_chance": [1, 1]
-        }
-    },{
-        "type": "effect_type",
-        "id": "potion_numbness",
-        "name": ["Intense Numbness"],
-        "desc": ["Your body feels incredibly numb and sluggish."],
-        "remove_message": "The numbness fades.",
-        "//": "Only Mycus Adrenaline in this case can really shake off the sluggishness.",
-        "removes_effects": [ "shakes", "formication", "jetinjector", "stimpack", "adrenaline", "meth" ],
-        "blocks_effects": [ "shakes", "formication", "jetinjector", "stimpack", "adrenaline", "meth" ],
-        "max_duration": 150,
-        "base_mods": {
-            "pkill_tick": [7],
-            "pkill_min": [25],
-            "pkill_max_val": [50],
-            "speed_mod": [-15]
-        }
-    },{
-        "type": "effect_type",
-        "id": "potion_strength",
-        "name": ["Strengthed"],
-        "desc": ["You feel mighty, like you could take on the world."],
-        "remove_message": "The unnatural strength leaves your body.",
-        "max_duration": 150,
-        "base_mods": {
-            "pain_min": [1],
-            "pain_max_val": [10, 5],
-            "str_mod": [3],
-            "dex_mod": [-1],
-            "int_mod": [-1],
-            "per_mod": [-1],
-            "speed_mod": [5],
-            "stamina_min": [4]
-        }
-    },{
-        "type": "effect_type",
-        "id": "potion_speed",
-        "name": ["Speedy"],
-        "desc": ["Your heart feels like it's beating dangerously fast, you can't even think about rest."],
-        "remove_message": "Your heartbeat slows back down to a normal pace.",
-        "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
-        "removes_effects": [ "relax_gas", "lack_sleep", "sleep" ],
-        "blocks_effects": [ "relax_gas", "lack_sleep", "sleep" ],
-        "max_duration": 150,
-        "base_mods": {
-            "pain_min": [1],
-            "pain_max_val": [10, 5],
-            "str_mod": [-2],
-            "dex_mod": [2],
-            "int_mod": [-2],
-            "per_mod": [2],
-            "speed_mod": [25]
-        }
-    },{
-        "type": "effect_type",
-        "id": "potion_healing",
-        "name": ["Elixir"],
-        "desc": ["Not immortality, but it still feels nice."],
-        "remove_message": "The healing effect fades.",
-        "removes_effects": ["infected", "fungus", "bleed", "common_cold", "flu", "tetanus"],
-        "max_duration": 150,
-        "base_mods": {
-            "pkill_tick": [3],
-            "pkill_min": [5],
-            "pkill_max_val": [25],
-            "speed_mod": [-10]
-        }
-    },{
-        "//": "Dummied out for the moment, on the off chance someone ports a save with this effect active.",
-        "type": "effect_type",
-        "id": "aegiscure",
-        "name": ["Aegis Cure"],
-        "desc": ["Illness and infection shall be purged."],
-        "removes_effects": ["fungus", "tetanus", "infected", "common_cold", "flu"],
-        "base_mods": {
-            "pain_min": [10],
-            "pain_chance": [1, 1],
-            "fatigue_min": [5],
-            "fatigue_chance": [1, 1]
-        }
-    },{
-        "type": "effect_type",
-        "id": "revenant_hunger",
-        "name": ["Revenant Hunger"],
-        "desc": ["Immunity to food poisoning and parasites, increased hunger gain."],
-        "remove_message": "Your craving for rotten food subsides.",
-        "blocks_effects": ["poison", "badpoison", "foodpoison", "paralyzepoison", "bloodworms", "paincysts", "brainworms", "tapeworm"],
-        "max_duration": 100,
-        "base_mods": {
-            "hunger_min": [1],
-            "fatigue_chance": [1, 6]
-        }
-    },{
-        "type": "effect_type",
-        "id": "cold_ward",
-        "name": ["Ward Against Cold"],
-        "desc": ["Protection against the effects of cold."],
-        "remove_message": "For a moment you feel a terrible chill in the air, as the moonstone fang's power fades.",
-        "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
-        "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
-        "max_duration": 1000
-    },{
-        "type": "effect_type",
-        "id": "free_action",
-        "name": ["Free Action"],
-        "desc": ["Protection against paralytic and other hindering effects."],
-        "remove_message": "You feel the otherworldly tension in your muscles leave your body, as the ward against paralytic effects fades.",
-        "removes_effects": [ "downed", "winded", "stunned", "dazed", "bouldering", "paralyzepoison", "webbed", "slimed", "sap", "crushed", "relax_gas", "grabbed" ],
-        "blocks_effects": [ "downed", "winded", "stunned", "dazed", "bouldering", "paralyzepoison", "webbed", "slimed", "sap", "crushed", "relax_gas", "grabbed" ],
-        "max_duration": 1000
-    },{
-        "type": "effect_type",
-        "id": "heat_ward",
-        "name": ["Ward Against Heat"],
-        "desc": ["Protection against most effects of heat."],
-        "remove_message": "You feel a strange tingling sensation, as the ward against heat fades.",
-        "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
-        "blocks_effects": [ "onfire", "smoke", "hot", "blisters" ],
-        "max_duration": 1000
-    },{
-        "type": "effect_type",
-        "id": "blood_clarity",
-        "name": ["Clarity of Blood"],
-        "desc": ["Protection against parasitic and corruptive threats, such as the Mycus."],
-        "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
-        "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
-        "blocks_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
-        "max_duration": 1000
-    },{
-        "type": "effect_type",
-        "id": "acid_ward",
-        "name": ["Ward Against Corrosion"],
-        "desc": ["Protection against lingering acid effects."],
-        "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
-        "removes_effects": [ "corroding" ],
-        "blocks_effects": [ "corroding" ],
-        "max_duration": 1000
-    },{
-        "type": "effect_type",
-        "id": "poison_ward",
-        "name": ["Ward Against Poison"],
-        "desc": ["Protection against toxic gas and venom."],
-        "remove_message": "You feel a momenary weakness as the protective magic fades.",
-        "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
-        "blocks_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
-        "max_duration": 1000
-    },{
-        "type": "effect_type",
-        "id": "cleric_warding",
-        "name": ["Ward Against Evil"],
-        "desc": ["Protects against various anomalous effects."],
-        "remove_message": "The magical protection fades.",
-        "removes_effects": ["darkness", "rat", "evil", "attention", "teleglow", "amigara"],
-        "blocks_effects": ["darkness", "rat", "evil", "attention", "teleglow", "amigara"],
-        "max_duration": 1000
+  {
+    "type": "effect_type",
+    "id": "offering",
+    "name": [ "Offering" ],
+    "desc": [ "Something is sapping the life from your body." ],
+    "miss_messages": [ [ "Your will to fight fades for a moment.", 2 ] ],
+    "rating": "bad",
+    "pain_sizing": true,
+    "hurt_sizing": true,
+    "main_parts_only": true,
+    "base_mods": { "pain_min": [ 5 ], "pain_chance": [ 1, 1 ], "hurt_min": [ 10 ], "hurt_max": [ 20 ], "hurt_chance": [ 1, 1 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "potion_numbness",
+    "name": [ "Intense Numbness" ],
+    "desc": [ "Your body feels incredibly numb and sluggish." ],
+    "remove_message": "The numbness fades.",
+    "//": "Only Mycus Adrenaline in this case can really shake off the sluggishness.",
+    "removes_effects": [ "shakes", "formication", "jetinjector", "stimpack", "adrenaline", "meth" ],
+    "blocks_effects": [ "shakes", "formication", "jetinjector", "stimpack", "adrenaline", "meth" ],
+    "max_duration": 150,
+    "base_mods": { "pkill_tick": [ 7 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "potion_strength",
+    "name": [ "Strengthed" ],
+    "desc": [ "You feel mighty, like you could take on the world." ],
+    "remove_message": "The unnatural strength leaves your body.",
+    "max_duration": 150,
+    "base_mods": {
+      "pain_min": [ 1 ],
+      "pain_max_val": [ 10, 5 ],
+      "str_mod": [ 3 ],
+      "dex_mod": [ -1 ],
+      "int_mod": [ -1 ],
+      "per_mod": [ -1 ],
+      "speed_mod": [ 5 ],
+      "stamina_min": [ 4 ]
     }
+  },
+  {
+    "type": "effect_type",
+    "id": "potion_speed",
+    "name": [ "Speedy" ],
+    "desc": [ "Your heart feels like it's beating dangerously fast, you can't even think about rest." ],
+    "remove_message": "Your heartbeat slows back down to a normal pace.",
+    "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
+    "removes_effects": [ "relax_gas", "lack_sleep", "sleep" ],
+    "blocks_effects": [ "relax_gas", "lack_sleep", "sleep" ],
+    "max_duration": 150,
+    "base_mods": {
+      "pain_min": [ 1 ],
+      "pain_max_val": [ 10, 5 ],
+      "str_mod": [ -2 ],
+      "dex_mod": [ 2 ],
+      "int_mod": [ -2 ],
+      "per_mod": [ 2 ],
+      "speed_mod": [ 25 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "potion_healing",
+    "name": [ "Elixir" ],
+    "desc": [ "Not immortality, but it still feels nice." ],
+    "remove_message": "The healing effect fades.",
+    "removes_effects": [ "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
+    "max_duration": 150,
+    "base_mods": { "pkill_tick": [ 3 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10 ] }
+  },
+  {
+    "//": "Dummied out for the moment, on the off chance someone ports a save with this effect active.",
+    "type": "effect_type",
+    "id": "aegiscure",
+    "name": [ "Aegis Cure" ],
+    "desc": [ "Illness and infection shall be purged." ],
+    "removes_effects": [ "fungus", "tetanus", "infected", "common_cold", "flu" ],
+    "base_mods": { "pain_min": [ 10 ], "pain_chance": [ 1, 1 ], "fatigue_min": [ 5 ], "fatigue_chance": [ 1, 1 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "revenant_hunger",
+    "name": [ "Revenant Hunger" ],
+    "desc": [ "Immunity to food poisoning and parasites, increased hunger gain." ],
+    "remove_message": "Your craving for rotten food subsides.",
+    "blocks_effects": [ "poison", "badpoison", "foodpoison", "paralyzepoison", "bloodworms", "paincysts", "brainworms", "tapeworm" ],
+    "max_duration": 100,
+    "base_mods": { "hunger_min": [ 1 ], "fatigue_chance": [ 1, 6 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "cold_ward",
+    "name": [ "Ward Against Cold" ],
+    "desc": [ "Protection against the effects of cold." ],
+    "remove_message": "For a moment you feel a terrible chill in the air, as the moonstone fang's power fades.",
+    "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+    "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "free_action",
+    "name": [ "Free Action" ],
+    "desc": [ "Protection against paralytic and other hindering effects." ],
+    "remove_message": "You feel the otherworldly tension in your muscles leave your body, as the ward against paralytic effects fades.",
+    "removes_effects": [
+      "downed",
+      "winded",
+      "stunned",
+      "dazed",
+      "bouldering",
+      "paralyzepoison",
+      "webbed",
+      "slimed",
+      "sap",
+      "crushed",
+      "relax_gas",
+      "grabbed"
+    ],
+    "blocks_effects": [
+      "downed",
+      "winded",
+      "stunned",
+      "dazed",
+      "bouldering",
+      "paralyzepoison",
+      "webbed",
+      "slimed",
+      "sap",
+      "crushed",
+      "relax_gas",
+      "grabbed"
+    ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "heat_ward",
+    "name": [ "Ward Against Heat" ],
+    "desc": [ "Protection against most effects of heat." ],
+    "remove_message": "You feel a strange tingling sensation, as the ward against heat fades.",
+    "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
+    "blocks_effects": [ "onfire", "smoke", "hot", "blisters" ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "blood_clarity",
+    "name": [ "Clarity of Blood" ],
+    "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],
+    "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
+    "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
+    "blocks_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "acid_ward",
+    "name": [ "Ward Against Corrosion" ],
+    "desc": [ "Protection against lingering acid effects." ],
+    "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
+    "removes_effects": [ "corroding" ],
+    "blocks_effects": [ "corroding" ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "poison_ward",
+    "name": [ "Ward Against Poison" ],
+    "desc": [ "Protection against toxic gas and venom." ],
+    "remove_message": "You feel a momenary weakness as the protective magic fades.",
+    "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
+    "blocks_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
+    "max_duration": 1000
+  },
+  {
+    "type": "effect_type",
+    "id": "cleric_warding",
+    "name": [ "Ward Against Evil" ],
+    "desc": [ "Protects against various anomalous effects." ],
+    "remove_message": "The magical protection fades.",
+    "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
+    "blocks_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
+    "max_duration": 1000
+  }
 ]

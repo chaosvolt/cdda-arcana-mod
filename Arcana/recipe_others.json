@@ -34,12 +34,23 @@
     "time": 60000,
     "book_learn": [ [ "book_sacrifice", 6 ] ],
     "result_mult": 5,
-    "tools": [
-      [ [ "book_sacrifice", -1 ] ],
-      [ [ "offering_chalice", -1 ] ],
-      [ [ "fire", -1 ] ]
+    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [
+      [
+        [ "vortex_stone", 1 ],
+        [ "vortex_shard", 10 ],
+        [ "teleporter", 1 ],
+        [ "portal", 1 ],
+        [ "petrified_eye", 1 ],
+        [ "engraved_stone", 1 ],
+        [ "monster_tear", 5 ],
+        [ "spiral_stone", 3 ],
+        [ "etched_skull", 1 ],
+        [ "small_relic", 1 ],
+        [ "violin_golden", 1 ],
+        [ "shadow_gem", 5 ]
+      ]
     ],
-    "components": [ [ [ "vortex_stone", 1 ], [ "vortex_shard", 10 ], [ "teleporter", 1 ], [ "portal", 1 ], [ "petrified_eye", 1 ], [ "engraved_stone", 1 ], [ "monster_tear", 5 ], [ "spiral_stone", 3 ], [ "etched_skull", 1 ], [ "small_relic", 2 ], [ "violin_golden", 1 ], [ "shadow_gem", 5 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -48,17 +59,39 @@
     "id_suffix": "sacrifice",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
-    "//": "Twice as much dull essence required as you'd get from consecrating the expected amount of essence. Dull essence has reduced potency.",
     "skill_used": "magic",
-    "difficulty": 7,
+    "difficulty": 5,
     "time": 60000,
-    "book_learn": [ [ "book_sacrifice", 7 ] ],
-    "tools": [
-      [ [ "book_sacrifice", -1 ] ],
-      [ [ "offering_chalice", -1 ] ],
-      [ [ "fire", -1 ] ]
+    "book_learn": [ [ "book_sacrifice", 5 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [
+      [
+        [ "essence_blood", 3 ],
+        [ "essence_dull", 15 ],
+        [ "mycus_fruit", 5 ],
+        [ "marloss_seed", 10 ],
+        [ "marloss_gel", 1 ],
+        [ "marloss_berry", 15 ],
+        [ "slime_scrap", 50 ],
+        [ "blob_gem", 10 ],
+        [ "bone_tainted", 50 ],
+        [ "bone_twisted", 5 ],
+        [ "gracken_knuckles", 10 ],
+        [ "plant_sac", 50 ],
+        [ "tallow_tainted", 25 ],
+        [ "chitin_piece", 50 ],
+        [ "wyrmskin_piece", 10 ],
+        [ "iridescent_plate", 15 ],
+        [ "bee_sting", 30 ],
+        [ "wasp_sting", 30 ],
+        [ "fighter_sting", 15 ],
+        [ "dermatik_sting", 10 ],
+        [ "biollante_bud", 10 ],
+        [ "triffid_queen_flower", 5 ],
+        [ "graboid_fang", 5 ],
+        [ "monster_fang", 15 ]
+      ]
     ],
-    "components": [ [ [ "essence_blood", 3 ], [ "essence_dull", 30 ], [ "mycus_fruit", 5 ], [ "marloss_seed", 10 ], [ "marloss_gel", 1 ], [ "marloss_berry", 15 ], [ "slime_scrap", 50 ], [ "blob_gem", 10 ], [ "bone_tainted", 50 ], [ "bone_twisted", 5 ], [ "gracken_knuckles", 10 ], [ "plant_sac", 50 ], [ "tallow_tainted", 25 ], [ "chitin_piece", 50 ], [ "wyrmskin_piece", 10 ], [ "iridescent_plate", 15 ], [ "bee_sting", 30 ], [ "wasp_sting", 30 ], [ "fighter_sting", 15 ], [ "dermatik_sting", 10 ], [ "biollante_bud", 10 ], [ "triffid_queen_flower", 5 ], [ "graboid_fang", 5 ], [ "monster_fang", 15 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -71,22 +104,10 @@
     "skills_required": [ "fabrication", 5 ],
     "time": 120000,
     "book_learn": [ [ "book_sacrifice", 5 ] ],
-    "using": [ [ "forging_standard", 2 ] ],
-    "qualities": [
-      { "id": "HAMMER", "level": 3 },
-      { "id": "CHISEL", "level": 3 }
-    ],
-    "tools": [
-      [ [ "book_sacrifice", -1 ] ],
-      [ [ "tongs", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ]
-    ],
-    "components": [
-      [ [ "gold_small", 625 ] ],
-      [ [ "small_relic", 1 ], [ "amulet_exotic", 1 ], [ "charm_bone", 1 ], [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ],
-      [ [ "essence", 2 ], [ "essence_blood", 6 ] ]
-    ]
+    "using": [ [ "forging_standard", 2 ], [ "arcana_essence_any", 2 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
+    "components": [ [ [ "gold_small", 625 ] ], [ [ "arcana_holy_relic_any", 1, "LIST" ], [ "arcana_holy_symbol_any", 1, "LIST" ] ] ]
   },
   {
     "result": "offering_chalice",
@@ -100,10 +121,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_sacrifice", 0 ], [ "book_bloodmagic", 1 ] ],
     "byproducts": [ [ "essence_blood", 6 ] ],
-    "components": [
-      [ [ "offering_chalice_used", 1 ] ],
-      [ [ "ash", 3 ] ]
-    ],
+    "components": [ [ [ "offering_chalice_used", 1 ] ], [ [ "ash", 3 ] ] ],
     "flags": [ "BLIND_HARD" ]
   },
   {
@@ -117,11 +135,8 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_bloodmagic", 0 ] ],
     "result_mult": 3,
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "byproducts": [ [ "thread", 3 ] ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
     "components": [ [ [ "rag_bloody", 3 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -137,10 +152,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_bloodmagic", 0 ] ],
     "result_mult": 3,
-    "tools": [
-      [ [ "blood_athame", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "blood_athame", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -156,17 +168,8 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 4 ], [ "book_summoning", 3 ] ],
     "using": [ [ "forging_standard", 1 ] ],
-    "qualities": [
-      { "id": "HAMMER", "level": 3 },
-      { "id": "CUT", "level": 1 },
-      { "id": "CHISEL", "level": 3 }
-    ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "tongs", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ]
-    ],
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "book_summoning", -1 ] ], [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ] ]
   },
   {
@@ -179,16 +182,9 @@
     "time": 60000,
     "book_learn": [ [ "book_summoning", 6 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "silver_glyph", 1 ] ],
-      [ [ "tallow", 4 ], [ "tallow_tainted", 4 ], [ "monster_fang", 1 ] ],
-      [ [ "essence", 1 ] ]
-    ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 1 ] ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
+    "components": [ [ [ "silver_glyph", 1 ] ], [ [ "tallow", 4 ], [ "tallow_tainted", 4 ], [ "monster_fang", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -200,17 +196,10 @@
     "difficulty": 6,
     "time": 60000,
     "book_learn": [ [ "book_summoning", 6 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "silver_glyph", 1 ] ],
-      [ [ "tanbark", 3 ], [ "birchbark", 3 ], [ "willowbark", 3 ], [ "triffid_garland", 1 ] ],
-      [ [ "essence", 1 ] ]
-    ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
+    "components": [ [ [ "silver_glyph", 1 ] ], [ [ "tanbark", 3 ], [ "birchbark", 3 ], [ "willowbark", 3 ], [ "triffid_garland", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -222,17 +211,10 @@
     "difficulty": 7,
     "time": 60000,
     "book_learn": [ [ "book_summoning", 7 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_holy_symbol_any", 1 ], [ "arcana_essence_exclude_dull", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "silver_glyph", 1 ] ],
-      [ [ "holy_symbol", 1 ], [ "charm_bone", 1 ], [ "holy_symbol_wood", 1 ] ],
-      [ [ "essence", 2 ] ]
-    ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
+    "components": [ [ [ "silver_glyph", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -244,12 +226,9 @@
     "difficulty": 7,
     "time": 60000,
     "book_learn": [ [ "book_summoning", 7 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
       [ [ "cured_pelt", 4 ], [ "cured_hide", 4 ], [ "wyrmskin_piece", 1 ], [ "iridescent_plate", 1 ] ],
@@ -266,16 +245,20 @@
     "difficulty": 8,
     "time": 60000,
     "book_learn": [ [ "book_summoning", 8 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "wyrmskin_piece", 1 ], [ "graboid_fang", 1 ], [ "acid", 1 ], [ "water_acid", 2 ], [ "water_acid_weak", 4 ], [ "chem_sulphuric_acid", 2 ], [ "chem_nitric_acid", 2 ] ],
-      [ [ "essence", 3 ] ]
+      [
+        [ "wyrmskin_piece", 1 ],
+        [ "graboid_fang", 1 ],
+        [ "acid", 1 ],
+        [ "water_acid", 2 ],
+        [ "water_acid_weak", 4 ],
+        [ "chem_sulphuric_acid", 2 ],
+        [ "chem_nitric_acid", 2 ]
+      ]
     ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -288,16 +271,18 @@
     "difficulty": 8,
     "time": 60000,
     "book_learn": [ [ "book_summoning", 8 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "seed_mushroom", 6 ], [ "seed_mushroom_magic", 6 ], [ "seed_mushroom_poison", 6 ], [ "seed_mushroom_morel", 6 ], [ "iridescent_plate", 1 ] ],
-      [ [ "essence", 3 ] ]
+      [
+        [ "seed_mushroom", 6 ],
+        [ "seed_mushroom_magic", 6 ],
+        [ "seed_mushroom_poison", 6 ],
+        [ "seed_mushroom_morel", 6 ],
+        [ "iridescent_plate", 1 ]
+      ]
     ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -310,17 +295,10 @@
     "difficulty": 9,
     "time": 60000,
     "book_learn": [ [ "book_summoning", 9 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 4 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "silver_glyph", 1 ] ],
-      [ [ "mirror", 1 ], [ "iridescent_plate", 1 ] ],
-      [ [ "essence", 4 ] ]
-    ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
+    "components": [ [ [ "silver_glyph", 1 ] ], [ [ "mirror", 1 ], [ "iridescent_plate", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -332,17 +310,10 @@
     "difficulty": 9,
     "time": 60000,
     "book_learn": [ [ "book_summoning", 9 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 4 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "silver_glyph", 1 ] ],
-      [ [ "bone_tainted", 6 ], [ "graboid_fang", 1 ], [ "monster_fang", 1 ] ],
-      [ [ "essence", 4 ] ]
-    ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
+    "components": [ [ [ "silver_glyph", 1 ] ], [ [ "bone_tainted", 6 ], [ "graboid_fang", 1 ], [ "monster_fang", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -354,16 +325,19 @@
     "difficulty": 10,
     "time": 60000,
     "book_learn": [ [ "book_summoning", 10 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 5 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "diamond", 1 ], [ "brooch", 1 ], [ "brooch_iridescent", 1 ], [ "gold_small", 25 ], [ "silver_small", 50 ], [ "copper", 100 ] ],
-      [ [ "essence", 5 ] ]
+      [
+        [ "diamond", 1 ],
+        [ "brooch", 1 ],
+        [ "brooch_iridescent", 1 ],
+        [ "gold_small", 25 ],
+        [ "silver_small", 50 ],
+        [ "copper", 100 ]
+      ]
     ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -376,17 +350,10 @@
     "difficulty": 10,
     "time": 60000,
     "book_learn": [ [ "book_summoning", 10 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 5 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_summoning", -1 ] ],
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "silver_glyph", 1 ] ],
-      [ [ "slime_scrap", 8 ], [ "blob_gem", 2 ] ],
-      [ [ "essence", 5 ] ]
-    ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
+    "components": [ [ [ "silver_glyph", 1 ] ], [ [ "slime_scrap", 8 ], [ "blob_gem", 2 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -401,31 +368,20 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_scrollcraft", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [
-      [ [ "paper", 5 ] ],
-      [ [ "stick", 1 ], [ "2x4", 1 ] ]
-    ]
+    "components": [ [ [ "paper", 5 ] ], [ [ "stick", 1 ], [ "2x4", 1 ] ] ]
   },
   {
     "result": "scroll_sun",
     "type": "recipe",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_TOOLS",
-    "//": "Dull essence is permitted at slightly reduced efficency, since curious structures have this on their book list.",
     "skill_used": "magic",
     "difficulty": 3,
     "time": 20000,
     "book_learn": [ [ "book_scrollcraft", 3 ] ],
-    "tools": [
-      [ [ "book_scrollcraft", -1 ] ],
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ] ],
-      [ [ "feather", -1 ] ]
-    ],
-    "components": [
-      [ [ "scroll_blank", 1 ] ],
-      [ [ "copper", 12 ], [ "monster_tear", 1 ] ],
-      [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 16 ] ]
-    ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 1 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "copper", 12 ], [ "monster_tear", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -437,16 +393,9 @@
     "difficulty": 3,
     "time": 20000,
     "book_learn": [ [ "book_scrollcraft", 3 ] ],
-    "tools": [
-      [ [ "book_scrollcraft", -1 ] ],
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ] ],
-      [ [ "feather", -1 ] ]
-    ],
-    "components": [
-      [ [ "scroll_blank", 1 ] ],
-      [ [ "tin", 12 ], [ "shadow_gem", 1 ] ],
-      [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 16 ] ]
-    ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 1 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "tin", 12 ], [ "shadow_gem", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -458,16 +407,9 @@
     "difficulty": 4,
     "time": 20000,
     "book_learn": [ [ "book_scrollcraft", 4 ] ],
-    "tools": [
-      [ [ "book_scrollcraft", -1 ] ],
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ] ],
-      [ [ "feather", -1 ] ]
-    ],
-    "components": [
-      [ [ "scroll_blank", 1 ] ],
-      [ [ "material_limestone", 16 ], [ "engraved_stone", 1 ] ],
-      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 32 ] ]
-    ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 2 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "material_limestone", 16 ], [ "engraved_stone", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -479,15 +421,17 @@
     "difficulty": 4,
     "time": 20000,
     "book_learn": [ [ "book_scrollcraft", 4 ] ],
-    "tools": [
-      [ [ "book_scrollcraft", -1 ] ],
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ] ],
-      [ [ "feather", -1 ] ]
-    ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 2 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
     "components": [
-      [ [ "scroll_blank", 1 ] ],
-      [ [ "raw_dandelion", 12 ], [ "hops", 10 ], [ "bee_balm", 8 ], [ "poppy_bud", 6 ], [ "biollante_bud", 4 ], [ "triffid_queen_flower", 1 ] ],
-      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 32 ] ]
+      [
+        [ "raw_dandelion", 12 ],
+        [ "hops", 10 ],
+        [ "bee_balm", 8 ],
+        [ "poppy_bud", 6 ],
+        [ "biollante_bud", 4 ],
+        [ "triffid_queen_flower", 1 ]
+      ]
     ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -500,16 +444,9 @@
     "difficulty": 5,
     "time": 20000,
     "book_learn": [ [ "book_scrollcraft", 5 ] ],
-    "tools": [
-      [ [ "book_scrollcraft", -1 ] ],
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ] ],
-      [ [ "feather", -1 ] ]
-    ],
-    "components": [
-      [ [ "scroll_blank", 1 ] ],
-      [ [ "bone", 12 ], [ "bone_human", 6 ], [ "bone_tainted", 24 ], [ "charm_bone", 1 ] ],
-      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 47 ] ]
-    ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 3 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "bone", 12 ], [ "bone_human", 6 ], [ "bone_tainted", 24 ], [ "charm_bone", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -521,16 +458,9 @@
     "difficulty": 5,
     "time": 20000,
     "book_learn": [ [ "book_scrollcraft", 5 ] ],
-    "tools": [
-      [ [ "book_scrollcraft", -1 ] ],
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ] ],
-      [ [ "feather", -1 ] ]
-    ],
-    "components": [
-      [ [ "scroll_blank", 1 ] ],
-      [ [ "feather", 40 ], [ "vortex_shard", 1 ] ],
-      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 47 ] ]
-    ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 3 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "feather", 40 ], [ "vortex_shard", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -543,6 +473,7 @@
     "skills_required": [ "fabrication", 5 ],
     "time": 50000,
     "book_learn": [ [ "book_syncretism", 9 ] ],
+    "using": [ [ "arcana_holy_relic_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 } ],
     "tools": [
       [ [ "book_syncretism", -1 ] ],
@@ -551,9 +482,15 @@
     ],
     "components": [
       [ [ "cudgel", 1 ] ],
-      [ [ "small_relic", 1 ], [ "amulet_exotic", 1 ] ],
       [ [ "silver_small", 30 ] ],
-      [ [ "pine_bough", 4 ], [ "tanbark", 4 ], [ "birchbark", 4 ], [ "willowbark", 4 ], [ "hickory_root", 4 ], [ "triffid_garland", 1 ] ],
+      [
+        [ "pine_bough", 4 ],
+        [ "tanbark", 4 ],
+        [ "birchbark", 4 ],
+        [ "willowbark", 4 ],
+        [ "hickory_root", 4 ],
+        [ "triffid_garland", 1 ]
+      ],
       [ [ "essence_blood", 27 ], [ "essence_dull", 135 ] ]
     ]
   },
@@ -567,18 +504,14 @@
     "skills_required": [ "fabrication", 6 ],
     "time": 50000,
     "book_learn": [ [ "book_syncretism", 10 ] ],
+    "using": [ [ "arcana_essence_exclude_blood", 10 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 } ],
     "tools": [
       [ [ "book_syncretism", -1 ] ],
       [ [ "book_sacrifice", -1 ], [ "book_hexenhammer", -1 ] ],
       [ [ "surface_heat", 10, "LIST" ] ]
     ],
-    "components": [
-      [ [ "petrified_eye", 1 ], [ "engraved_stone", 1 ] ],
-      [ [ "gold_small", 500 ] ],
-      [ [ "diamond", 1 ] ],
-      [ [ "essence", 10 ], [ "essence_dull", 150 ] ]
-    ]
+    "components": [ [ [ "petrified_eye", 1 ], [ "engraved_stone", 1 ] ], [ [ "gold_small", 500 ] ], [ [ "diamond", 1 ] ] ]
   },
   {
     "result": "totem_insight",
@@ -592,13 +525,8 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
-    "components": [
-      [ [ "monster_tear", 1 ] ],
-      [ [ "water", 1 ], [ "water_clean", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 15 ] ]
-    ]
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_soaking_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "components": [ [ [ "monster_tear", 1 ] ] ]
   },
   {
     "result": "totem_plants",
@@ -612,13 +540,9 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
-    "using": [ [ "filament", 5 ] ],
+    "using": [ [ "filament", 5 ], [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [
-      [ [ "triffid_queen_flower", 1 ] ],
-      [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ],
-      [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 15 ] ]
-    ]
+    "components": [ [ [ "triffid_queen_flower", 1 ] ], [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ] ]
   },
   {
     "result": "totem_confusion",
@@ -632,15 +556,9 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "dermatik_sting", 1 ] ],
-      [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 15 ] ]
-    ]
+    "components": [ [ [ "dermatik_sting", 1 ] ] ]
   },
   {
     "result": "totem_agile",
@@ -654,12 +572,9 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "components": [
-      [ [ "gracken_knuckles", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
-    ]
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "gracken_knuckles", 1 ] ] ]
   },
   {
     "result": "totem_lightning",
@@ -673,12 +588,8 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 1 } ],
-    "components": [
-      [ [ "vortex_shard", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
-    ]
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "components": [ [ [ "vortex_shard", 1 ] ] ]
   },
   {
     "result": "totem_strength",
@@ -692,12 +603,9 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "components": [
-      [ [ "monster_fang", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
-    ]
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "monster_fang", 1 ] ] ]
   },
   {
     "result": "totem_elecresist",
@@ -711,16 +619,9 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "blob_gem", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
-    ],
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "blob_gem", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -735,15 +636,9 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "fighter_sting", 1 ] ],
-      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
-    ],
+    "components": [ [ [ "fighter_sting", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -758,17 +653,14 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
+    "using": [
+      [ "arcana_polishing_standard", 1 ],
+      [ "arcana_soaking_standard", 1 ],
+      [ "arcana_purification_standard", 1 ],
+      [ "arcana_essence_any", 2 ]
     ],
-    "components": [
-      [ [ "bone_twisted", 1 ] ],
-      [ [ "water", 1 ], [ "water_clean", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 2 ], [ "essence_blood", 6 ], [ "essence_dull", 30 ] ]
-    ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
+    "components": [ [ [ "bone_twisted", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -783,16 +675,9 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "iridescent_plate", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
-    ]
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "iridescent_plate", 1 ] ] ]
   },
   {
     "result": "totem_clairvoyance",
@@ -806,12 +691,9 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "components": [
-      [ [ "graboid_fang", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
-    ]
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "graboid_fang", 1 ] ] ]
   },
   {
     "result": "totem_invis",
@@ -825,16 +707,8 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 1 } ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "shadow_gem", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
-    ]
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "components": [ [ [ "shadow_gem", 1 ] ] ]
   },
   {
     "result": "totem_cleric",
@@ -848,16 +722,8 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 1 } ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "engraved_stone", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
-    ]
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "components": [ [ [ "engraved_stone", 1 ] ] ]
   },
   {
     "result": "totem_free_action",
@@ -871,17 +737,9 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
-    "using": [ [ "filament", 5 ] ],
+    "using": [ [ "filament", 5 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "biollante_bud", 1 ] ],
-      [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ],
-      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
-    ]
+    "components": [ [ [ "biollante_bud", 1 ] ], [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ] ]
   },
   {
     "result": "totem_acidspray",
@@ -895,15 +753,218 @@
     "time": 10000,
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "tools": [
-      [ [ "offering_chalice", -1 ], [ "bowl_pewter", -1 ], [ "bowl_clay", -1 ], [ "ceramic_bowl", -1 ], [ "glass_bowl", -1 ] ],
-      [ [ "fire", -1 ] ]
-    ],
-    "components": [
-      [ [ "wyrmskin_piece", 1 ] ],
-      [ [ "material_sand", 10 ], [ "salt", 20 ] ],
-      [ [ "essence", 3 ], [ "essence_blood", 9 ], [ "essence_dull", 45 ] ]
-    ]
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "wyrmskin_piece", 1 ] ] ]
+  },
+  {
+    "result": "scroll_spell_confusion",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": 20000,
+    "book_learn": [ [ "book_bloodmagic", 6 ], [ "book_syncretism", 5 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
+    "components": [ [ [ "totem_confusion", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_plants",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": 20000,
+    "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_scrollcraft", 5 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "totem_plants", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_insight",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": 20000,
+    "book_learn": [ [ "book_sacrifice", 6 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ] ],
+    "components": [ [ [ "totem_insight", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_agile",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": 20000,
+    "book_learn": [ [ "book_bloodmagic", 7 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
+    "components": [ [ [ "totem_agile", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_lightning",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": 20000,
+    "book_learn": [ [ "book_sacrifice", 7 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ] ],
+    "components": [ [ [ "totem_lightning", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_might",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": 20000,
+    "book_learn": [ [ "book_sacrifice", 7 ], [ "book_scrollcraft", 6 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "totem_strength", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_elecresist",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": 20000,
+    "book_learn": [ [ "book_bloodmagic", 8 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
+    "components": [ [ [ "totem_elecresist", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_clarity",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": 20000,
+    "book_learn": [ [ "book_bloodmagic", 8 ], [ "book_scrollcraft", 7 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "totem_clarity", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_heal",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": 20000,
+    "book_learn": [ [ "book_hexenhammer", 8 ], [ "book_syncretism", 7 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ] ],
+    "components": [ [ [ "totem_heal", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_flame_armor",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 20000,
+    "book_learn": [ [ "book_hexenhammer", 9 ], [ "book_scrollcraft", 8 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "totem_flamearmor", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_clairvoyance",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 20000,
+    "book_learn": [ [ "book_hexenhammer", 9 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ] ] ],
+    "components": [ [ [ "totem_clairvoyance", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_invis",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 20000,
+    "book_learn": [ [ "book_sacrifice", 9 ], [ "book_scrollcraft", 8 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "totem_invis", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_cleric",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 10,
+    "time": 20000,
+    "book_learn": [ [ "book_hexenhammer", 10 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ] ] ],
+    "components": [ [ [ "totem_cleric", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_free_action",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 10,
+    "time": 20000,
+    "book_learn": [ [ "book_sacrifice", 10 ], [ "book_syncretism", 9 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
+    "components": [ [ [ "totem_free_action", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_acidspray",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 10,
+    "time": 20000,
+    "book_learn": [ [ "book_bloodmagic", 10 ], [ "book_scrollcraft", 9 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_scrollcraft", -1 ] ] ],
+    "components": [ [ [ "totem_acidspray", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
   }
 ]

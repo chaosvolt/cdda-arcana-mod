@@ -41,9 +41,7 @@
         "m": "t_rock_floor",
         "_": "t_dirt"
       },
-      "furniture": {
-        "_": "f_brazier"
-      },
+      "furniture": { "_": "f_brazier" },
       "set": [
         { "point": "trap", "id": "tr_glow", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] },
         { "point": "trap", "id": "tr_hum", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] },
@@ -56,9 +54,7 @@
         { "group": "cult_sacrifice", "x": 6, "y": 11 },
         { "item": "meteoric_talisman", "x": [ 11, 12 ], "y": [ 11, 12 ] }
       ],
-      "place_monsters": [
-        { "monster": "GROUP_IMPACT_FLYING", "x": [ 6, 17 ], "y": [ 6, 17 ], "density": 0.1 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 6, 17 ], "y": [ 6, 17 ], "density": 0.1 } ]
     }
   },
   {
@@ -106,12 +102,7 @@
         "R": "t_rock_floor",
         "+": "t_door_locked"
       },
-      "furniture": {
-        "B": "f_bookcase",
-        "b": "f_bench",
-        "R": "f_rack",
-        "C": "f_coffin_o"
-      },
+      "furniture": { "B": "f_bookcase", "b": "f_bench", "R": "f_rack", "C": "f_coffin_o" },
       "place_loot": [
         { "group": "summoner_casualties", "x": 10, "y": 13, "chance": 80 },
         { "group": "summoner_casualties", "x": 13, "y": 13, "chance": 80 },
@@ -180,14 +171,8 @@
         "t": "t_carpet_green",
         "_": "t_carpet_green"
       },
-      "furniture": {
-        "b": "f_bookcase",
-        "r": "f_rack",
-        "t": "f_table"
-      },
-      "set": [
-        { "point": "trap", "id": "tr_snake", "x": [ 6, 17 ], "y": [ 6, 17 ], "repeat": [ 5, 10 ] }
-      ],
+      "furniture": { "b": "f_bookcase", "r": "f_rack", "t": "f_table" },
+      "set": [ { "point": "trap", "id": "tr_snake", "x": [ 6, 17 ], "y": [ 6, 17 ], "repeat": [ 5, 10 ] } ],
       "place_loot": [
         { "group": "unaligned_arcanist_books", "x": [ 6, 8 ], "y": 6, "chance": 40, "repeat": [ 2, 4 ] },
         { "group": "magic_items", "x": [ 15, 17 ], "y": 6, "chance": 40, "repeat": [ 2, 4 ] },
