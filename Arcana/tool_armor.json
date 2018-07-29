@@ -236,10 +236,7 @@
     "material_thickness": 4,
     "environmental_protection": 1,
     "artifact_data": { "effects_activated": [ "AEA_STORM" ] },
-    "use_action": [
-      "TAZER",
-      "ARTIFACT"
-     ],
+    "use_action": [ "TAZER", "ARTIFACT" ],
     "flags": [ "VARSIZE", "STURDY", "NO_SALVAGE" ]
   },
   {

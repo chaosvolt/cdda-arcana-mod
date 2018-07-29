@@ -3,21 +3,13 @@
     "id": "mon_alpha_razorclaw",
     "copy-from": "mon_alpha_razorclaw",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence_boss", 50 ] ],
-      "//": "50% chance of boss-level essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence_boss", 50 ] ], "//": "50% chance of boss-level essence" }
   },
   {
     "id": "mon_ant_queen",
     "copy-from": "mon_ant_queen",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence_boss", 25 ] ],
-      "//": "25% chance of boss-level essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence_boss", 25 ] ], "//": "25% chance of boss-level essence" }
   },
   {
     "id": "mon_graboid",
@@ -25,10 +17,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "graboid_fang", 90 ],
-        [ "essence", 50 ]
-      ],
+      "groups": [ [ "graboid_fang", 90 ], [ "essence", 50 ] ],
       "//": "90% chance of a graboid fang, 50% chance of essence."
     }
   },
@@ -38,10 +27,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "monster_tear", 5 ],
-        [ "essence", 5 ]
-      ],
+      "groups": [ [ "monster_tear", 5 ], [ "essence", 5 ] ],
       "//": "Mutated but not too anomalous, worth adding though."
     }
   },
@@ -97,11 +83,7 @@
     "id": "mon_jabberwock",
     "copy-from": "mon_jabberwock",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence", 10 ] ],
-      "//": "10% chance of essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 10 ] ], "//": "10% chance of essence" }
   },
   {
     "id": "mon_charred_nightmare",
@@ -114,21 +96,13 @@
     "id": "mon_triffid",
     "copy-from": "mon_triffid",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence", 10 ] ],
-      "//": "10% chance of essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 10 ] ], "//": "10% chance of essence" }
   },
   {
     "id": "mon_triffid_young",
     "copy-from": "mon_triffid_young",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence", 5 ] ],
-      "//": "5% chance of essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 5 ] ], "//": "5% chance of essence" }
   },
   {
     "id": "mon_fungal_fighter",
@@ -136,10 +110,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "fungal_sting", 80 ],
-        [ "essence", 50 ]
-      ],
+      "groups": [ [ "fungal_sting", 80 ], [ "essence", 50 ] ],
       "//": "80% chance of an item from group fungal_sting, 50% chance of essence. While triffids are only somewhat otherworldly, fungal fighters deal with an extraplanar threat, so higher odds of essence"
     }
   },
@@ -157,11 +128,7 @@
     "id": "mon_creeper_hub",
     "copy-from": "mon_creeper_hub",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence", 15 ] ],
-      "//": "15% chance of essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 15 ] ], "//": "15% chance of essence" }
   },
   {
     "id": "mon_biollante",
@@ -169,10 +136,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "biollante", 80 ],
-        [ "essence", 15 ]
-      ],
+      "groups": [ [ "biollante", 80 ], [ "essence", 15 ] ],
       "//": "80% chance of an item from group biollante, 15% chance of essence"
     }
   },
@@ -180,61 +144,37 @@
     "id": "mon_vinebeast",
     "copy-from": "mon_vinebeast",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence", 10 ] ],
-      "//": "10% chance of essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 10 ] ], "//": "10% chance of essence" }
   },
   {
     "id": "mon_triffid_heart",
     "copy-from": "mon_triffid_heart",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence_boss", 100 ] ],
-      "//": "I'm da warboss, so I drop da essence!"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence_boss", 100 ] ], "//": "I'm da warboss, so I drop da essence!" }
   },
   {
     "id": "mon_fungaloid",
     "copy-from": "mon_fungaloid",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence", 10 ] ],
-      "//": "10% chance of essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 10 ] ], "//": "10% chance of essence" }
   },
   {
     "id": "mon_fungaloid_young",
     "copy-from": "mon_fungaloid_young",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence", 5 ] ],
-      "//": "5% chance of essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 5 ] ], "//": "5% chance of essence" }
   },
   {
     "id": "mon_fungaloid_queen",
     "copy-from": "mon_fungaloid_queen",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence_boss", 100 ] ],
-      "//": "boss-level essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence_boss", 100 ] ], "//": "boss-level essence" }
   },
   {
     "id": "mon_fungaloid_seeder",
     "copy-from": "mon_fungaloid_seeder",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence_boss", 100 ] ],
-      "//": "boss-level essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence_boss", 100 ] ], "//": "boss-level essence" }
   },
   {
     "id": "mon_fungal_tendril",
@@ -250,24 +190,13 @@
     "id": "mon_fungal_blossom",
     "copy-from": "mon_fungal_blossom",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence", 25 ] ],
-      "//": "25% chance of essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 25 ] ], "//": "25% chance of essence" }
   },
   {
     "id": "mon_blob_brain",
     "copy-from": "mon_blob_brain",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [
-        [ "blob_gem", 100 ],
-        [ "essence_boss", 100 ]
-      ],
-      "//": "Boss-level essence."
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "blob_gem", 100 ], [ "essence_boss", 100 ] ], "//": "Boss-level essence." }
   },
   {
     "id": "mon_blob_large",
@@ -275,10 +204,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "blob_gem", 5 ],
-        [ "essence_nether", 10 ]
-      ],
+      "groups": [ [ "blob_gem", 5 ], [ "essence_nether", 10 ] ],
       "//": "10% chance of nether-level essence."
     }
   },
@@ -316,10 +242,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "bone_twisted", 5 ],
-        [ "essence", 15 ]
-      ],
+      "groups": [ [ "bone_twisted", 5 ], [ "essence", 15 ] ],
       "//": "15% chance of essence, not all mutants are anomalous."
     }
   },
@@ -337,11 +260,7 @@
     "id": "mon_dermatik_larva",
     "copy-from": "mon_dermatik_larva",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence", 5 ] ],
-      "//": "5% chance of essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 5 ] ], "//": "5% chance of essence" }
   },
   {
     "id": "mon_dermatik",
@@ -349,10 +268,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "dermatik_sting", 45 ],
-        [ "essence", 10 ]
-      ],
+      "groups": [ [ "dermatik_sting", 45 ], [ "essence", 10 ] ],
       "//": "45% chance of a dermatik sting, 10% chance of essence."
     }
   },
@@ -362,10 +278,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "wyrmskin_piece", 90 ],
-        [ "essence_nether", 25 ]
-      ],
+      "groups": [ [ "wyrmskin_piece", 90 ], [ "essence_nether", 25 ] ],
       "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
@@ -375,11 +288,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "bone_twisted", 100 ],
-        [ "engraved_stone", 10 ],
-        [ "essence_nether", 25 ]
-      ],
+      "groups": [ [ "bone_twisted", 100 ], [ "engraved_stone", 10 ], [ "essence_nether", 25 ] ],
       "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
@@ -389,10 +298,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "bone_twisted", 20 ],
-        [ "essence_nether", 25 ]
-      ],
+      "groups": [ [ "bone_twisted", 20 ], [ "essence_nether", 25 ] ],
       "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
@@ -402,10 +308,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "iridescent_plate", 25 ],
-        [ "essence_nether", 25 ]
-      ],
+      "groups": [ [ "iridescent_plate", 25 ], [ "essence_nether", 25 ] ],
       "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
@@ -415,10 +318,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "bone_twisted", 75 ],
-        [ "essence_nether", 25 ]
-      ],
+      "groups": [ [ "bone_twisted", 75 ], [ "essence_nether", 25 ] ],
       "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
@@ -428,10 +328,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "vortex_shard", 50 ],
-        [ "essence_nether", 25 ]
-      ],
+      "groups": [ [ "vortex_shard", 50 ], [ "essence_nether", 25 ] ],
       "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
@@ -442,11 +339,7 @@
     "name": "flying polyp",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "monster_fang", 90 ],
-        [ "vortex_shard", 10 ],
-        [ "essence_nether", 50 ]
-      ],
+      "groups": [ [ "monster_fang", 90 ], [ "vortex_shard", 10 ], [ "essence_nether", 50 ] ],
       "//": "50% chance of nether-level essence, now we've hit the really freaky stuff."
     }
   },
@@ -457,10 +350,7 @@
     "name": "hunting horror",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "monster_fang", 75 ],
-        [ "essence_nether", 50 ]
-      ],
+      "groups": [ [ "monster_fang", 75 ], [ "essence_nether", 50 ] ],
       "//": "50% chance of nether-level essence."
     }
   },
@@ -470,10 +360,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "iridescent_plate", 25 ],
-        [ "essence_nether", 30 ]
-      ],
+      "groups": [ [ "iridescent_plate", 25 ], [ "essence_nether", 30 ] ],
       "//": "30% chance of nether-level essence, least anomalous of the Lovecraft references."
     }
   },
@@ -483,10 +370,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "iridescent_plate", 100 ],
-        [ "essence_nether", 50 ]
-      ],
+      "groups": [ [ "iridescent_plate", 100 ], [ "essence_nether", 50 ] ],
       "//": "50% chance of nether-level essence."
     }
   },
@@ -496,10 +380,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "blob_gem", 50 ],
-        [ "essence_nether", 50 ]
-      ],
+      "groups": [ [ "blob_gem", 50 ], [ "essence_nether", 50 ] ],
       "//": "50% chance of nether-level essence."
     }
   },
@@ -509,10 +390,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "monster_tear", 90 ],
-        [ "essence_nether", 100 ]
-      ],
+      "groups": [ [ "monster_tear", 90 ], [ "essence_nether", 100 ] ],
       "//": "100% chance of nether-level essence, oh the inhumanity!"
     }
   },
@@ -522,10 +400,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "monster_fang", 5 ],
-        [ "essence_nether", 30 ]
-      ],
+      "groups": [ [ "monster_fang", 5 ], [ "essence_nether", 30 ] ],
       "//": "30% chance of nether-level essence."
     }
   },
@@ -535,10 +410,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "gracken_knuckles", 5 ],
-        [ "essence_nether", 50 ]
-      ],
+      "groups": [ [ "gracken_knuckles", 5 ], [ "essence_nether", 50 ] ],
       "//": "50% chance of nether-level essence"
     }
   },
@@ -546,34 +418,19 @@
     "id": "mon_blank",
     "copy-from": "mon_blank",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence_nether", 50 ] ],
-      "//": "50% chance of nether-level essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence_nether", 50 ] ], "//": "50% chance of nether-level essence" }
   },
   {
     "id": "mon_gozu",
     "copy-from": "mon_gozu",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence_nether", 50 ] ],
-      "//": "50% chance of nether-level essence"
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence_nether", 50 ] ], "//": "50% chance of nether-level essence" }
   },
   {
     "id": "mon_shadow",
     "copy-from": "mon_shadow",
     "type": "MONSTER",
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [
-        [ "shadow_gem", 10 ],
-        [ "essence", 10 ]
-      ],
-      "//": "10% chance of essence."
-    }
+    "death_drops": { "subtype": "collection", "groups": [ [ "shadow_gem", 10 ], [ "essence", 10 ] ], "//": "10% chance of essence." }
   },
   {
     "id": "mon_darkman",
@@ -581,10 +438,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "shadow_gem", 100 ],
-        [ "essence_nether", 50 ]
-      ],
+      "groups": [ [ "shadow_gem", 100 ], [ "essence_nether", 50 ] ],
       "//": "50% chance of nether-level essence."
     }
   },
@@ -594,10 +448,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "blob_gem", 100 ],
-        [ "essence_nether", 100 ]
-      ],
+      "groups": [ [ "blob_gem", 100 ], [ "essence_nether", 100 ] ],
       "//": "100% chance of nether-level essence."
     }
   },
@@ -617,10 +468,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "shadow_gem", 15 ],
-        [ "essence_nether", 10 ]
-      ],
+      "groups": [ [ "shadow_gem", 15 ], [ "essence_nether", 10 ] ],
       "//": "10% chance of nether-level essence."
     }
   },
@@ -630,11 +478,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "engraved_stone", 100 ],
-        [ "blob_gem", 25 ],
-        [ "essence_nether", 100 ]
-      ],
+      "groups": [ [ "engraved_stone", 100 ], [ "blob_gem", 25 ], [ "essence_nether", 100 ] ],
       "//": "100% chance of nether-level essence, this isn't your average friendly neighborhood blob."
     }
   },
@@ -711,13 +555,20 @@
     "vision_day": 50,
     "luminance": 200,
     "special_attacks": [ [ "FLAMETHROWER", 10 ] ],
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence_boss", 100 ] ],
-      "//": "boss-level essence"
-    },
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence_boss", 100 ] ], "//": "boss-level essence" },
     "death_function": [ "MELT" ],
-    "flags": [ "NOHEAD", "HARDTOSHOOT", "WEBWALK", "FLIES", "FIREY", "WARM", "FIREPROOF", "SEES", "PATH_AVOID_DANGER_1", "PRIORITIZE_TARGETS" ]
+    "flags": [
+      "NOHEAD",
+      "HARDTOSHOOT",
+      "WEBWALK",
+      "FLIES",
+      "FIREY",
+      "WARM",
+      "FIREPROOF",
+      "SEES",
+      "PATH_AVOID_DANGER_1",
+      "PRIORITIZE_TARGETS"
+    ]
   },
   {
     "id": "mon_moruboru",
@@ -743,16 +594,20 @@
     "armor_bash": 12,
     "armor_cut": 8,
     "emit_fields": [ "emit_toxic_leak" ],
-    "special_attacks": [
-      {
-        "type": "bite",
-        "cooldown": 5
-      },
-      [ "TENTACLE", 5 ]
-    ],
+    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "TENTACLE", 5 ] ],
     "death_drops": "plant_boss_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "HEARS", "SMELLS", "BASHES", "NOHEAD", "POISON", "NO_BREATHE", "PARALYZEVENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
+    "flags": [
+      "HEARS",
+      "SMELLS",
+      "BASHES",
+      "NOHEAD",
+      "POISON",
+      "NO_BREATHE",
+      "PARALYZEVENOM",
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS"
+    ],
     "//": "Boss-level essence and an item"
   },
   {
@@ -779,11 +634,7 @@
     "armor_bash": 0,
     "armor_cut": 0,
     "vision_night": 25,
-    "special_attacks": [
-      [ "FEAR_PARALYZE", 40 ],
-      [ "PARROT", 25 ],
-      [ "SHOCKSTORM", 15 ]
-    ],
+    "special_attacks": [ [ "FEAR_PARALYZE", 40 ], [ "PARROT", 25 ], [ "SHOCKSTORM", 15 ] ],
     "death_drops": "archon_drops",
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "BONES", "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
@@ -814,20 +665,23 @@
     "armor_cut": 8,
     "vision_day": 50,
     "vision_night": 30,
-    "special_attacks": [
-      [ "FLESH_GOLEM", 5 ],
-      {
-        "type": "bite",
-        "cooldown": 10
-      },
-      [ "FLAMETHROWER", 10 ]
-    ],
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [ [ "essence_boss", 100 ] ],
-      "//": "Nope, no dragon's blood here."
-    },
+    "special_attacks": [ [ "FLESH_GOLEM", 5 ], { "type": "bite", "cooldown": 10 }, [ "FLAMETHROWER", 10 ] ],
+    "death_drops": { "subtype": "collection", "groups": [ [ "essence_boss", 100 ] ], "//": "Nope, no dragon's blood here." },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "HEARS", "WARM", "FIREPROOF", "FLIES", "POISON", "BONES", "BLEED", "REVIVES", "NO_BREATHE", "PRIORITIZE_TARGETS" ]
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "HEARS",
+      "WARM",
+      "FIREPROOF",
+      "FLIES",
+      "POISON",
+      "BONES",
+      "BLEED",
+      "REVIVES",
+      "NO_BREATHE",
+      "PRIORITIZE_TARGETS"
+    ]
   }
 ]

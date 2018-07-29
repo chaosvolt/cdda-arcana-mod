@@ -1,0 +1,44 @@
+[
+  {
+    "abstract": "spell_base",
+    "type": "TOOL",
+    "category": "magic_signs",
+    "name": "magic sign base",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "drop_action": { "type": "emit_actor" },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "abstract": "spell_conjure_base",
+    "type": "TOOL",
+    "category": "magic_signs",
+    "name": "exploding and summoning magic sign base",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
+    "abstract": "scroll_base",
+    "type": "TOOL",
+    "name": "scroll base",
+    "weight": 415,
+    "volume": 1,
+    "price": 2000,
+    "material": [ "paper" ],
+    "symbol": "!",
+    "color": "white",
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "abstract": "totem_base",
+    "type": "TOOL",
+    "name": "magic seal base",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "price": 5000,
+    "weight": 50,
+    "volume": 1,
+    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE" ]
+  }
+]

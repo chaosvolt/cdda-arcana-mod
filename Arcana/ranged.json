@@ -26,9 +26,7 @@
     "clip_size": 5,
     "reload": 400,
     "ammo_effects": [ "LIGHTNING", "BOUNCE", "EMP" ],
-    "artifact_data": {
-      "effects_wielded": [ "AEP_BAD_WEATHER" ]
-    },
+    "artifact_data": { "effects_wielded": [ "AEP_BAD_WEATHER" ] },
     "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON" ]
   },
   {
@@ -56,10 +54,7 @@
     "loudness": 100,
     "clip_size": 15,
     "reload": 300,
-    "modes": [
-      [ "DEFAULT", "single", 1 ],
-      [ "BURST", "triple", 3 ]
-    ],
+    "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "triple", 3 ] ],
     "ammo_effects": [ "FLAME", "STREAM", "INCENDIARY", "FLARE" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE" ]

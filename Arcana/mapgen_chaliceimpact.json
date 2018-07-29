@@ -14,6 +14,17 @@
     ]
   },
   {
+    "id": "chalice_cult_spells",
+    "type": "item_group",
+    "items": [
+      [ "scroll_spell_insight", 1 ],
+      [ "scroll_spell_lightning", 1 ],
+      [ "scroll_spell_might", 1 ],
+      [ "scroll_spell_invis", 1 ],
+      [ "scroll_spell_free_action", 1 ]
+    ]
+  },
+  {
     "id": "chalice_cult_gear",
     "type": "item_group",
     "items": [
@@ -47,10 +58,7 @@
     "id": "cult_sacrifice",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [
-      { "item": "essence_blood", "prob": 25 },
-      { "item": "corpse" }
-    ]
+    "entries": [ { "item": "essence_blood", "prob": 25 }, { "item": "corpse" } ]
   },
   {
     "id": "chalice_cult_casualty_special",
@@ -119,18 +127,14 @@
         "P": "t_little_column",
         "^": "t_pit_shallow"
       },
-      "furniture": {
-        "B": "f_brazier"
-      },
+      "furniture": { "B": "f_brazier" },
       "place_loot": [
         { "group": "cult_sacrifice", "x": 8, "y": 8, "chance": 100 },
         { "group": "cult_sacrifice", "x": 15, "y": 8, "chance": 100 },
         { "group": "cult_sacrifice", "x": 8, "y": 15, "chance": 100 },
         { "group": "cult_sacrifice", "x": 15, "y": 15, "chance": 100 }
       ],
-      "place_monsters": [
-        { "monster": "GROUP_IMPACT", "x": [ 6, 17 ], "y": [ 6, 17 ], "density": 0.1 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 6, 17 ], "y": [ 6, 17 ], "density": 0.1 } ]
     }
   },
   {
@@ -169,19 +173,9 @@
         { "point": "trap", "id": "tr_glow", "x": [ 4, 10 ], "y": [ 2, 3 ], "repeat": [ 2, 6 ] },
         { "point": "trap", "id": "tr_hum", "x": [ 13, 19 ], "y": [ 20, 21 ], "repeat": [ 2, 6 ] }
       ],
-      "terrain": {
-        " ": "t_rock_floor",
-        ",": "t_floor_red",
-        "/": "t_open_air",
-        ">": "t_stairs_down",
-        "P": "t_column"
-      },
-      "place_loot": [
-        { "item": "note_chalice", "x": [ 8, 15 ], "y": [ 8, 15 ], "chance": 100 }
-      ],
-      "place_monsters": [
-        { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.15 }
-      ]
+      "terrain": { " ": "t_rock_floor", ",": "t_floor_red", "/": "t_open_air", ">": "t_stairs_down", "P": "t_column" },
+      "place_loot": [ { "item": "note_chalice", "x": [ 8, 15 ], "y": [ 8, 15 ], "chance": 100 } ],
+      "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.15 } ]
     }
   },
   {
@@ -216,16 +210,8 @@
         "////////////////////////",
         "////////////////////////"
       ],
-      "terrain": {
-        " ": "t_rock_floor",
-        "#": "t_column",
-        "+": "t_door_c",
-        "/": "t_open_air",
-        "<": "t_stairs_up"
-      },
-      "place_monsters": [
-        { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 }
-      ]
+      "terrain": { " ": "t_rock_floor", "#": "t_column", "+": "t_door_c", "/": "t_open_air", "<": "t_stairs_up" },
+      "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
     }
   },
   {
@@ -260,16 +246,8 @@
         "////////////////////////",
         "////////////////////////"
       ],
-      "terrain": {
-        " ": "t_rock_floor",
-        "#": "t_column",
-        "+": "t_door_c",
-        "/": "t_open_air",
-        "<": "t_stairs_up"
-      },
-      "place_monsters": [
-        { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 }
-      ]
+      "terrain": { " ": "t_rock_floor", "#": "t_column", "+": "t_door_c", "/": "t_open_air", "<": "t_stairs_up" },
+      "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
     }
   },
   {
@@ -304,13 +282,7 @@
         "////////////////////////",
         "////////////////////////"
       ],
-      "terrain": {
-        " ": "t_rock_floor",
-        "#": "t_rock",
-        "+": "t_door_c",
-        "/": "t_open_air",
-        ">": "t_stairs_down"
-      }
+      "terrain": { " ": "t_rock_floor", "#": "t_rock", "+": "t_door_c", "/": "t_open_air", ">": "t_stairs_down" }
     }
   },
   {
@@ -345,13 +317,7 @@
         "////////////////////////",
         "////////////////////////"
       ],
-      "terrain": {
-        " ": "t_rock_floor",
-        "#": "t_rock",
-        "+": "t_door_c",
-        "/": "t_open_air",
-        ">": "t_stairs_down"
-      }
+      "terrain": { " ": "t_rock_floor", "#": "t_rock", "+": "t_door_c", "/": "t_open_air", ">": "t_stairs_down" }
     }
   },
   {
@@ -387,17 +353,8 @@
         "////////////////////////"
       ],
       "mapping": {
-        "b": {
-          "furniture": "f_bed",
-          "items": [ { "item": "bed", "chance": 60 } ]
-        },
-        "d": {
-          "furniture": "f_dresser",
-          "items": {
-            "item": "dresser",
-            "chance": 40
-          }
-        }
+        "b": { "furniture": "f_bed", "items": [ { "item": "bed", "chance": 60 } ] },
+        "d": { "furniture": "f_dresser", "items": { "item": "dresser", "chance": 40 } }
       },
       "terrain": {
         " ": "t_rock_floor",
@@ -415,27 +372,18 @@
         "c": "t_rock_floor",
         "d": "t_rock_floor"
       },
-      "furniture": {
-        "=": "f_bench",
-        "C": "f_chair",
-        "D": "f_desk",
-        "b": "f_bed",
-        "c": "f_bookcase",
-        "d": "f_dresser",
-        "B": "f_brazier"
-      },
+      "furniture": { "=": "f_bench", "C": "f_chair", "D": "f_desk", "b": "f_bed", "c": "f_bookcase", "d": "f_dresser", "B": "f_brazier" },
       "place_loot": [
         { "group": "chalice_cult_casualty_special", "x": 11, "y": 4 },
         { "group": "chalice_cult_casualties", "x": [ 1, 22 ], "y": [ 9, 12 ], "repeat": [ 2, 5 ] },
         { "group": "chalice_cult_books", "x": [ 11, 12 ], "y": [ 17, 18 ], "chance": 50, "repeat": [ 4, 6 ] },
+        { "group": "chalice_cult_spells", "x": [ 11, 12 ], "y": [ 17, 18 ], "chance": 5, "repeat": [ 2, 5 ] },
         { "group": "add_apprentice", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 50 },
         { "item": "arcanemap", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 50 },
         { "group": "chalice_cult_gear", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 20, "repeat": [ 1, 2 ] },
         { "group": "chalice_cult_consumables", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 20, "repeat": [ 1, 2 ] }
       ],
-      "place_monster": [
-        { "monster": "mon_archon", "x": 11, "y": 11 }
-      ]
+      "place_monster": [ { "monster": "mon_archon", "x": 11, "y": 11 } ]
     }
   },
   {
@@ -471,10 +419,7 @@
         "////////////////////////",
         "////////////////////////"
       ],
-      "terrain": {
-        "#": "t_rock",
-        "/": "t_open_air"
-      }
+      "terrain": { "#": "t_rock", "/": "t_open_air" }
     }
   },
   {
@@ -509,10 +454,7 @@
         "////////////////////////",
         "////////////////////////"
       ],
-      "terrain": {
-        "#": "t_rock",
-        "/": "t_open_air"
-      }
+      "terrain": { "#": "t_rock", "/": "t_open_air" }
     }
   },
   {
@@ -547,10 +489,7 @@
         "////////########////////",
         "////////////////////////"
       ],
-      "terrain": {
-        "#": "t_rock",
-        "/": "t_open_air"
-      }
+      "terrain": { "#": "t_rock", "/": "t_open_air" }
     }
   }
 ]

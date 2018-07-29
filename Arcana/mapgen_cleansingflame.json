@@ -42,6 +42,17 @@
     ]
   },
   {
+    "id": "cleansing_flame_spells",
+    "type": "item_group",
+    "items": [
+      [ "scroll_spell_plants", 1 ],
+      [ "scroll_spell_heal", 1 ],
+      [ "scroll_spell_flame_armor", 1 ],
+      [ "scroll_spell_clairvoyance", 1 ],
+      [ "scroll_spell_cleric", 1 ]
+    ]
+  },
+  {
     "id": "cleansing_flame_gear_magic",
     "type": "item_group",
     "items": [
@@ -61,7 +72,7 @@
       [ "scroll_sun", 5 ],
       [ "scroll_moon", 5 ],
       [ "scroll_artiface", 5 ],
-      { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8}
+      { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8 }
     ]
   },
   {
@@ -131,17 +142,8 @@
         "                        "
       ],
       "mapping": {
-        "B": {
-          "furniture": "f_bed",
-          "items": [ { "item": "bed", "chance": 60 } ]
-        },
-        "d": {
-          "furniture": "f_dresser",
-          "items": {
-            "item": "dresser",
-            "chance": 40
-          }
-        }
+        "B": { "furniture": "f_bed", "items": [ { "item": "bed", "chance": 60 } ] },
+        "d": { "furniture": "f_dresser", "items": { "item": "dresser", "chance": 40 } }
       },
       "terrain": {
         " ": [ "t_grass", "t_grass", "t_grass", "t_dirt" ],
@@ -182,9 +184,7 @@
         "v": "f_woodstove",
         "u": "f_brazier"
       },
-      "toilets": {
-        "T": {}
-      },
+      "toilets": { "T": {  } },
       "place_loot": [
         { "item": "holy_symbol", "x": 12, "y": 9, "chance": 100 },
         { "item": "note_flame", "x": [ 4, 20 ], "y": [ 9, 14 ], "chance": 100 },
@@ -193,9 +193,7 @@
         { "group": "cannedfood", "x": [ 4, 5 ], "y": 3, "chance": 80, "repeat": [ 1, 3 ] },
         { "group": "cannedfood", "x": 8, "y": 3, "chance": 80, "repeat": [ 1, 2 ] }
       ],
-      "place_monsters": [
-        { "monster": "GROUP_ZOMBIE", "x": [ 3, 21 ], "y": [ 8, 21 ], "density": 0.15 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_ZOMBIE", "x": [ 3, 21 ], "y": [ 8, 21 ], "density": 0.15 } ]
     }
   },
   {
@@ -245,14 +243,7 @@
         "r": "t_rock_floor",
         "t": "t_rock_floor"
       },
-      "furniture": {
-        "B": "f_bookcase",
-        "S": "f_statue",
-        "T": "f_blade_upright",
-        "h": "f_chair",
-        "r": "f_rack",
-        "t": "f_desk"
-      },
+      "furniture": { "B": "f_bookcase", "S": "f_statue", "T": "f_blade_upright", "h": "f_chair", "r": "f_rack", "t": "f_desk" },
       "place_loot": [
         { "group": "cleansing_flame_crafting", "x": [ 2, 4 ], "y": 20, "chance": 20, "repeat": [ 2, 4 ] },
         { "group": "cleansing_flame_crafting", "x": [ 20, 22 ], "y": 20, "chance": 20, "repeat": [ 2, 4 ] },
@@ -267,11 +258,12 @@
         { "item": "arcanemap", "x": [ 19, 20 ], "y": [ 2, 6 ], "chance": 50 },
         { "group": "cleansing_flame_books", "x": 2, "y": [ 2, 6 ], "chance": 30, "repeat": [ 1, 6 ] },
         { "group": "cleansing_flame_books", "x": 4, "y": [ 2, 6 ], "chance": 30, "repeat": [ 1, 6 ] },
-        { "group": "cleansing_flame_books", "x": 6, "y": [ 2, 6 ], "chance": 30, "repeat": [ 1, 6 ] }
+        { "group": "cleansing_flame_books", "x": 6, "y": [ 2, 6 ], "chance": 30, "repeat": [ 1, 6 ] },
+        { "group": "cleansing_flame_spells", "x": 2, "y": [ 2, 6 ], "chance": 5, "repeat": [ 1, 2 ] },
+        { "group": "cleansing_flame_spells", "x": 4, "y": [ 2, 6 ], "chance": 5, "repeat": [ 1, 2 ] },
+        { "group": "cleansing_flame_spells", "x": 6, "y": [ 2, 6 ], "chance": 5, "repeat": [ 0, 1 ] }
       ],
-      "place_monsters": [
-        { "monster": "GROUP_NETHER", "x": [ 2, 22 ], "y": [ 9, 18 ], "density": 0.15 }
-      ]
+      "place_monsters": [ { "monster": "GROUP_NETHER", "x": [ 2, 22 ], "y": [ 9, 18 ], "density": 0.15 } ]
     }
   },
   {
@@ -314,28 +306,11 @@
         { "point": "trap", "id": "tr_portal", "x": 21, "y": 21 },
         { "point": "trap", "id": "tr_portal", "x": 12, "y": 11 }
       ],
-      "terrain": {
-        "#": "t_rock",
-        ".": "t_rock_floor",
-        "<": "t_stairs_up",
-        "O": "t_rock_floor",
-        "_": "t_lava"
-      },
-      "furniture": {
-        "B": "f_bookcase",
-        "h": "f_chair",
-        "r": "f_rack",
-        "t": "f_desk"
-      },
-      "place_loot": [
-        { "item": "hand_of_armok", "x": 12, "y": 4, "chance": 100 }
-      ],
-      "place_monsters": [
-        { "monster": "GROUP_NETHER_LAVA", "x": [ 2, 22 ], "y": [ 5, 17 ], "density": 0.25 }
-      ],
-      "place_monster": [
-        { "monster": "mon_spirit_of_fire", "x": 12, "y": 4 }
-      ]
+      "terrain": { "#": "t_rock", ".": "t_rock_floor", "<": "t_stairs_up", "O": "t_rock_floor", "_": "t_lava" },
+      "furniture": { "B": "f_bookcase", "h": "f_chair", "r": "f_rack", "t": "f_desk" },
+      "place_loot": [ { "item": "hand_of_armok", "x": 12, "y": 4, "chance": 100 } ],
+      "place_monsters": [ { "monster": "GROUP_NETHER_LAVA", "x": [ 2, 22 ], "y": [ 5, 17 ], "density": 0.25 } ],
+      "place_monster": [ { "monster": "mon_spirit_of_fire", "x": 12, "y": 4 } ]
     }
   }
 ]

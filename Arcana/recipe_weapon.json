@@ -9,23 +9,10 @@
     "skills_required": [ "fabrication", 6 ],
     "time": 150000,
     "book_learn": [ [ "book_sacrifice", 8 ] ],
-    "using": [ [ "forging_standard", 3 ] ],
-    "qualities": [
-      { "id": "HAMMER", "level": 3 },
-      { "id": "CHISEL", "level": 3 }
-    ],
-    "tools": [
-      [ [ "book_sacrifice", -1 ] ],
-      [ [ "tongs", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ]
-    ],
-    "components": [
-      [ [ "gold_small", 625 ] ],
-      [ [ "silver_small", 165 ] ],
-      [ [ "charm_bone", 1 ], [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ],
-      [ [ "essence", 5 ], [ "essence_blood", 15 ] ]
-    ]
+    "using": [ [ "forging_standard", 3 ], [ "arcana_holy_symbol_any", 1 ], [ "arcana_essence_exclude_dull", 5 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
+    "components": [ [ [ "gold_small", 625 ] ], [ [ "silver_small", 165 ] ] ]
   },
   {
     "result": "blood_athame",
@@ -37,23 +24,14 @@
     "skills_required": [ "fabrication", 5 ],
     "time": 180000,
     "book_learn": [ [ "book_bloodmagic", 3 ] ],
-    "using": [ [ "forging_standard", 2 ] ],
-    "qualities": [
-      { "id": "HAMMER", "level": 3 },
-      { "id": "CHISEL", "level": 3 }
-    ],
-    "tools": [
-      [ [ "book_bloodmagic", -1 ] ],
-      [ [ "tongs", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ]
-    ],
+    "using": [ [ "forging_standard", 2 ], [ "arcana_essence_any", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
     "components": [
       [ [ "silver_small", 165 ] ],
       [ [ "2x4", 1 ], [ "stick", 1 ] ],
       [ [ "fur", 2 ], [ "leather", 2 ] ],
-      [ [ "blood", 1 ], [ "rag_bloody", 3 ] ],
-      [ [ "essence", 1 ], [ "essence_blood", 3 ] ]
+      [ [ "blood", 1 ], [ "rag_bloody", 3 ] ]
     ]
   },
   {
@@ -61,45 +39,33 @@
     "type": "recipe",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_CUTTING",
-    "//": "Bone charms and exotic amulets are excluded because not earthly holy symbols",
     "skill_used": "magic",
     "difficulty": 6,
     "skills_required": [ "fabrication", 4 ],
     "time": 100000,
     "book_learn": [ [ "book_hexenhammer", 6 ] ],
+    "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 } ],
-    "tools": [
-      [ [ "book_hexenhammer", -1 ] ],
-      [ [ "surface_heat", 5, "LIST" ] ]
-    ],
-    "components": [
-      [ [ "broadsword", 1 ] ],
-      [ [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ],
-      [ [ "gold_small", 135 ] ],
-      [ [ "essence_dull", 25 ] ]
-    ]
+    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
+    "components": [ [ [ "broadsword", 1 ] ], [ [ "gold_small", 135 ] ], [ [ "essence_dull", 25 ] ] ]
   },
   {
     "result": "hexenhammer",
     "type": "recipe",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_BASHING",
-    "//": "Bone charms and exotic amulets are excluded because not earthly holy symbols",
     "skill_used": "magic",
     "difficulty": 4,
     "skills_required": [ "fabrication", 4 ],
     "time": 100000,
     "book_learn": [ [ "book_hexenhammer", 4 ] ],
+    "using": [ [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 } ],
-    "tools": [
-      [ [ "book_hexenhammer", -1 ] ],
-      [ [ "surface_heat", 4, "LIST" ] ]
-    ],
+    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
     "components": [
       [ [ "warhammer", 1 ] ],
-      [ [ "small_relic", 1 ], [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ],
-      [ [ "silver_small", 240 ] ],
-      [ [ "essence", 1 ], [ "essence_dull", 15 ] ]
+      [ [ "arcana_holy_symbol_any", 1, "LIST" ], [ "arcana_holy_relic_any", 1, "LIST" ] ],
+      [ [ "silver_small", 240 ] ]
     ]
   },
   {
@@ -113,10 +79,7 @@
     "time": 100000,
     "book_learn": [ [ "book_bloodmagic", 6 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 } ],
-    "tools": [
-      [ [ "book_bloodmagic", -1 ] ],
-      [ [ "surface_heat", 4, "LIST" ] ]
-    ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
     "components": [
       [ [ "q_staff", 1 ] ],
       [ [ "silver_small", 475 ] ],
@@ -136,34 +99,22 @@
     "book_learn": [ [ "book_bloodmagic", 5 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
-    "components": [
-      [ [ "hatchet", 1 ] ],
-      [ [ "rag_bloody", 2 ] ],
-      [ [ "essence_blood", 5 ] ]
-    ]
+    "components": [ [ [ "hatchet", 1 ] ], [ [ "rag_bloody", 2 ] ], [ [ "essence_blood", 5 ] ] ]
   },
   {
     "result": "ethereal_crossbow",
     "type": "recipe",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
-    "//": "Bone charms and exotic amulets are excluded because not earthly holy symbols",
     "skill_used": "magic",
     "difficulty": 7,
     "skills_required": [ "fabrication", 1 ],
     "time": 200000,
     "book_learn": [ [ "book_hexenhammer", 7 ] ],
+    "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 } ],
-    "tools": [
-      [ [ "book_hexenhammer", -1 ] ],
-      [ [ "surface_heat", 3, "LIST" ] ]
-    ],
-    "components": [
-      [ [ "crossbow", 1 ] ],
-      [ [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ],
-      [ [ "gold_small", 45 ] ],
-      [ [ "essence_dull", 20 ] ]
-    ]
+    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ [ [ "crossbow", 1 ] ], [ [ "gold_small", 45 ] ], [ [ "essence_dull", 20 ] ] ]
   },
   {
     "result": "spear_pestilence",
@@ -176,13 +127,13 @@
     "skills_required": [ "fabrication", 5 ],
     "time": 180000,
     "book_learn": [ [ "book_sacrifice", 7 ] ],
+    "using": [ [ "arcana_essence_exclude_dull", 4 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
     "components": [
       [ [ "spear_steel", 1 ] ],
       [ [ "bee_sting", 1 ], [ "wasp_sting", 1 ], [ "dermatik_sting", 1 ] ],
-      [ [ "chitin_piece", 2 ] ],
-      [ [ "essence", 4 ], [ "essence_blood", 12 ] ]
+      [ [ "chitin_piece", 2 ] ]
     ]
   },
   {
@@ -199,13 +150,19 @@
     "tools": [
       [ [ "book_sacrifice", -1 ] ],
       [ [ "book_bloodmagic", -1 ] ],
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ] ],
-      [ [ "small_relic", -1 ], [ "amulet_exotic", -1 ], [ "holy_symbol", -1 ], [ "charm_bone", -1 ], [ "holy_symbol_wood", -1 ], [ "offering_chalice", -1 ], [ "thunder_sigil", -1 ], [ "hexenhammer", -1 ], [ "sun_sword", -1 ] ]
+      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ], [ "fire", -1 ] ],
+      [
+        [ "holy_symbol", -1 ],
+        [ "holy_symbol_wood", -1 ],
+        [ "charm_bone", -1 ],
+        [ "small_relic", -1 ],
+        [ "amulet_exotic", -1 ],
+        [ "offering_chalice", -1 ],
+        [ "thunder_sigil", -1 ],
+        [ "hexenhammer", -1 ],
+        [ "sun_sword", -1 ]
+      ]
     ],
-    "components": [
-      [ [ "stormbringer", 1 ] ],
-      [ [ "salt", 100 ] ],
-      [ [ "essence_blood", 12 ] ]
-    ]
+    "components": [ [ [ "stormbringer", 1 ] ], [ [ "salt", 100 ] ], [ [ "essence_blood", 12 ] ] ]
   }
 ]
