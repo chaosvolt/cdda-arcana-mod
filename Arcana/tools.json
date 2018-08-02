@@ -1101,8 +1101,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_ACIDSPRAY" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "ACIDSPRAY"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_agile",
@@ -1127,8 +1130,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_AGILITY" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "AGILITY"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_clairvoyance",
@@ -1153,8 +1159,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_CLAIRVOYANCE" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "CLAIRVOYANCE"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_clarity",
@@ -1179,8 +1188,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_CLARITY" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "CLARITY"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_confusion",
@@ -1205,8 +1217,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_CONFUSE" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "CONFUSE"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_flame_armor",
@@ -1231,8 +1246,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_FLAMEARMOR" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "FLAMEARMOR"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_free_action",
@@ -1257,8 +1275,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_FREEACTION" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "FREEACTION"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_heal",
@@ -1283,8 +1304,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_HEAL" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "HEAL"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_insight",
@@ -1309,8 +1333,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_INSIGHT" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "INSIGHT"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_invis",
@@ -1335,8 +1362,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_INVIS" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "INVIS"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_elecresist",
@@ -1361,8 +1391,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_ELECRESIST" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "ELECRESIST"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_might",
@@ -1387,8 +1420,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_MIGHT" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "MIGHT"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_plants",
@@ -1413,8 +1449,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_OVERGROWTH" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "OVERGROWTH"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_lightning",
@@ -1439,8 +1478,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_LIGHTNING" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "LIGHTNING"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_spell_cleric",
@@ -1465,8 +1507,11 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": "MUTAGEN",
-    "flags": [ "NO_SALVAGE", "MUTAGEN_CLERIC" ]
+    "use_action" : {
+      "type" : "mutagen",
+      "mutation_category" : "CLERIC"
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "orb_veil",
@@ -1605,8 +1650,10 @@
     "turns_per_charge": 1,
     "revert_to": "veilblade",
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL" ],
-    "use_action": "MUT_IV",
-    "flags": [ "MUTAGEN_VEIL" ]
+    "use_action" : {
+      "type" : "mutagen_iv",
+      "mutation_category" : "VEIL"
+    }
   },
   {
     "id": "stormbringer",
