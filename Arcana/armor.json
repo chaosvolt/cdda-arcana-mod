@@ -59,7 +59,7 @@
     "name": "satchel of eternity",
     "name_plural": "satchels of eternity",
     "//": "A quarter the storage of Blazemod cargo dimensions.",
-    "description": "A small fabric pouch decorated with ornate textile imagery depicting an otherworldly abstract pattern, further adorned with copper rings and clasps.  It is said to represent the search for greater knowledge of the unknown, focused by a drive to find utility and purpose in new discoveries.  It uses the power of a vortex to create a useful storage item, but it's not a well-stabilized portal.",
+    "description": "A small fabric pouch decorated with ornate textile imagery depicting an otherworldly abstract pattern, further adorned with copper rings and clasps.  It is said to represent the search for greater knowledge of the unknown, focused by a drive to find utility and purpose in new discoveries.  It uses the power of a vortex to create a useful storage item, but the portal's instability can draw attention from Beyond.",
     "weight": 610,
     "volume": 2,
     "price": 1000,
@@ -73,7 +73,7 @@
     "encumbrance": 15,
     "storage": 250,
     "material_thickness": 1,
-    "artifact_data": { "effects_worn": [ "AEP_CARRY_MORE", "AEP_FORCE_TELEPORT", "AEP_ATTENTION" ] },
+    "artifact_data": { "effects_worn": [ "AEP_CARRY_MORE", "AEP_ATTENTION" ] },
     "flags": [ "WAIST", "OVERSIZE" ]
   },
   {
