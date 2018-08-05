@@ -4,7 +4,7 @@
     "ident": "arcanist_apprentice",
     "name": "Apprentice",
     "description": "You were an aspiring student of a well-learned master of the mysterious arts.  Sadly, you had only just begun your apprenticeship when your master was claimed by the end of the world.",
-    "points": 0,
+    "points": 1,
     "items": {
       "both": {
         "items": [ "tunic_rag", "robe", "socks", "bastsandals", "gloves_leather", "knit_scarf", "book_magicfordummies" ],
@@ -12,8 +12,7 @@
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
-    },
-    "flags": [ "SCEN_ONLY" ]
+    }
   },
   {
     "type": "profession",
@@ -65,10 +64,11 @@
         "matches",
         "flask_hip",
         "candle",
-        "feather",
+        "survival_marker",
         "scroll_blank",
         "scroll_sun",
         "book_scrollcraft",
+        "monster_tear",
         "essence"
       ],
       "male": [ "briefs" ],
@@ -85,10 +85,11 @@
     "skills": [ { "level": 3, "name": "magic" }, { "level": 1, "name": "firstaid" }, { "level": 1, "name": "stabbing" } ],
     "items": {
       "both": {
-        "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "waterskin", "rag", "matches", "bowl_clay", "book_bloodmagic" ],
+        "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "waterskin", "matches", "bowl_clay", "book_bloodmagic" ],
         "entries": [
           { "item": "bloodscourge", "ammo-item": "essence_blood", "charges": 15 },
           { "item": "revenant_crown", "charges": 2 },
+          { "item": "rag", "count": 3 },
           { "item": "blood_athame", "container-item": "sheath" }
         ]
       },
@@ -170,16 +171,17 @@
           "knit_scarf",
           "backpack",
           "waterskin",
+          "triffid_garland",
           "q_staff",
           "matches",
           "bowl_pewter",
           "summon_kreck",
           "summon_blank",
-          "tallow",
-          "book_summoning",
-          "essence"
+          "monster_fang",
+          "wyrmskin_piece",
+          "book_summoning"
         ],
-        "entries": [ { "item": "makeshift_knife", "container-item": "sheath" } ]
+        "entries": [ { "item": "makeshift_knife", "container-item": "sheath" }, { "item": "essence", "count": 5 } ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]

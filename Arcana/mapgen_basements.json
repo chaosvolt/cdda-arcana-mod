@@ -92,7 +92,8 @@
         { "item": "human_flesh", "x": 20, "y": [ 11, 13 ], "chance": 50, "repeat": [ 1, 5 ] },
         { "item": "blood_athame", "x": [ 18, 19 ], "y": 13, "chance": 75, "repeat": 1 },
         { "group": "sanguine_cult_gear", "x": 14, "y": 10, "chance": 40, "repeat": [ 2, 5 ] },
-        { "item": "essence_blood", "x": [ 5, 6 ], "y": 15, "chance": 50, "repeat": [ 5, 10 ] }
+        { "item": "essence_blood", "x": [ 5, 6 ], "y": 15, "chance": 50, "repeat": [ 5, 10 ] },
+        { "item": "note_sanguine_tenet", "x": 3, "y": [ 6, 10 ], "chance": 90 }
       ],
       "place_monster": [
         { "monster": "mon_dementia", "x": 9, "y": 7, "repeat": [ 1, 4 ] },
@@ -152,6 +153,7 @@
       "furniture": { "#": "f_counter", "B": "f_bed", "D": "f_dresser", "]": "f_bookcase", "p": "f_bench", "{": "f_rack", "b": "f_brazier" },
       "place_loot": [
         { "item": "holy_symbol", "x": 11, "y": 2, "chance": 90 },
+        { "item": "note_flame_tenet", "x": 11, "y": 2, "chance": 90 },
         { "group": "cleansing_flame_spells", "x": 11, "y": 2, "chance": 10 },
         { "group": "cleansing_flame_casualties", "x": [ 2, 20 ], "y": [ 1, 10 ], "chance": 75, "repeat": [ 2, 4 ] },
         { "group": "cleansing_flame_books", "x": 2, "y": [ 1, 5 ], "chance": 50, "repeat": [ 2, 5 ] },
@@ -216,6 +218,7 @@
       "furniture": { "#": "f_counter", "]": "f_bookcase", "p": "f_bench", "{": "f_rack", "b": "f_brazier" },
       "place_loot": [
         { "item": "offering_chalice_used", "x": 11, "y": 19, "chance": 100 },
+        { "item": "note_chalice_tenet", "x": 11, "y": 19, "chance": 90 },
         { "group": "chalice_cult_spells", "x": 11, "y": 19, "chance": 10 },
         { "group": "chalice_cult_casualties", "x": 11, "y": 13, "chance": 100 },
         { "group": "chalice_cult_casualties", "x": [ 2, 20 ], "y": [ 1, 10 ], "chance": 75, "repeat": [ 1, 3 ] },

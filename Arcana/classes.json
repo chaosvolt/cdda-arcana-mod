@@ -1,5 +1,16 @@
 [
   {
+    "abstract": "arcana_note_base",
+    "type": "GENERIC",
+    "category": "books",
+    "name": "arcana note base",
+    "weight": 3,
+    "material": [ "paper" ],
+    "symbol": ",",
+    "color": "white",
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
     "abstract": "spell_base",
     "type": "TOOL",
     "category": "magic_signs",

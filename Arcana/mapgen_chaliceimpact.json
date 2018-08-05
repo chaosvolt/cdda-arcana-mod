@@ -58,7 +58,7 @@
     "id": "cult_sacrifice",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "essence_blood", "prob": 25 }, { "item": "corpse" } ]
+    "entries": [ { "item": "essence_blood", "prob": 25 }, { "item": "bone_human", "prob": 100, "charges-min": 3, "charges-max": 9 } ]
   },
   {
     "id": "chalice_cult_casualty_special",
@@ -377,6 +377,7 @@
         { "group": "chalice_cult_casualty_special", "x": 11, "y": 4 },
         { "group": "chalice_cult_casualties", "x": [ 1, 22 ], "y": [ 9, 12 ], "repeat": [ 2, 5 ] },
         { "group": "chalice_cult_books", "x": [ 11, 12 ], "y": [ 17, 18 ], "chance": 50, "repeat": [ 4, 6 ] },
+        { "item": "note_chalice_tenet", "x": [ 11, 12 ], "y": [ 17, 18 ], "chance": 90 },
         { "group": "chalice_cult_spells", "x": [ 11, 12 ], "y": [ 17, 18 ], "chance": 5, "repeat": [ 2, 5 ] },
         { "group": "add_apprentice", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 50 },
         { "item": "arcanemap", "x": [ 11, 12 ], "y": [ 21, 21 ], "chance": 50 },
