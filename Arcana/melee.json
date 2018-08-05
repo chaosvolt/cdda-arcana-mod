@@ -181,9 +181,9 @@
     "description": "An iridescent piece of hardened tissue broken off from a dying dark wyrm, like a massive shed scale.  It might be useful, or it could be made into a trophy of some sort.",
     "price": 0,
     "material": [ "wyrmskin" ],
-    "weight": 89,
+    "weight": 120,
     "volume": 1,
-    "bashing": 1,
+    "bashing": 3,
     "to_hit": -2
   },
   {

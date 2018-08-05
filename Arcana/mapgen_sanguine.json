@@ -543,6 +543,7 @@
         { "group": "cult_sacrifice", "x": 5, "y": 1, "chance": 25 },
         { "group": "cult_sacrifice", "x": 1, "y": 5, "chance": 25 },
         { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 60, "repeat": [ 7, 14 ] },
+        { "item": "note_sanguine_tenet", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 90 },
         { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 5, "repeat": [ 1, 2 ] }
       ],
       "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 12 ], "y": [ 0, 12 ], "density": 0.15 } ]

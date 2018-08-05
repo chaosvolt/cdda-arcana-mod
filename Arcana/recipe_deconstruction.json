@@ -23,7 +23,7 @@
     "difficulty": 0,
     "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "material_limestone", 5 ] ], [ [ "essence_dull", 15 ] ] ]
+    "components": [ [ [ "material_limestone", 5 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
     "result": "petrified_eye",
@@ -32,7 +32,7 @@
     "difficulty": 0,
     "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "material_limestone", 30 ] ], [ [ "essence_dull", 10 ] ] ]
+    "components": [ [ [ "material_limestone", 30 ] ], [ [ "essence_dull", 15 ] ] ]
   },
   {
     "result": "spiral_stone",

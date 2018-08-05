@@ -187,6 +187,7 @@
       "toilets": { "T": {  } },
       "place_loot": [
         { "item": "holy_symbol", "x": 12, "y": 9, "chance": 100 },
+        { "item": "note_flame_tenet", "x": 12, "y": 9, "chance": 90 },
         { "item": "note_flame", "x": [ 4, 20 ], "y": [ 9, 14 ], "chance": 100 },
         { "group": "fridge", "x": 6, "y": 3, "chance": 80, "repeat": [ 1, 4 ] },
         { "group": "oven", "x": 8, "y": 4, "chance": 40, "repeat": [ 1, 2 ] },

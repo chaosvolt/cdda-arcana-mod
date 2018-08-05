@@ -4,7 +4,7 @@
     "name": "Seeker of the Arcane",
     "description": "You were drawn to this place in search of answers, in search of power.  Whoever or whatever once lived here, they've suffered the same fate as those in the cities.  But some remnant of their mysterious work may remain.",
     "ident": "arcane_seeker",
-    "points": 2,
+    "points": 0,
     "start_name": "Arcanist Enclave",
     "allowed_locs": [ "curious_structure", "impact_site", "island_temple", "strange_grove" ],
     "professions": [
