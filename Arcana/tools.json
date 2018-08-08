@@ -926,10 +926,10 @@
     "type": "TOOL",
     "name": "scroll of light",
     "name_plural": "scrolls of light",
-    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it.  Using it will conjure a fireball, and brighten the sky.",
+    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun diety.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
     "use_action": {
       "target": "scroll_sun_on",
-      "msg": "\"Reveal that which is unseen.\"  You unroll the scroll of light...",
+      "msg": "\"Let purity guide your hand and your heart.\"  You unroll the scroll of light...",
       "active": true,
       "type": "transform"
     }
@@ -940,10 +940,10 @@
     "type": "TOOL",
     "name": "scroll of light",
     "name_plural": "scrolls of light",
-    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it.  Using it will conjure a fireball, and brighten the sky.",
+    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun diety.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "artifact_data": { "effects_activated": [ "AEA_FIREBALL", "AEA_LIGHT" ] },
+    "artifact_data": { "effects_activated": [ "AEA_FUN", "AEA_ADRENALINE", "AEA_LIGHT" ] },
     "use_action": "ARTIFACT"
   },
   {
@@ -952,7 +952,7 @@
     "type": "TOOL",
     "name": "scroll of darkness",
     "name_plural": "scrolls of darkness",
-    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it.  Using it will darken the sky temporarily, and confound nearby enemies.",
+    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar diety.  Using it will darken the sky temporarily, and confound nearby enemies.",
     "use_action": {
       "target": "scroll_moon_on",
       "msg": "\"Do not fear the unknown.\"  You unroll the scroll of darkness...",
@@ -966,7 +966,7 @@
     "type": "TOOL",
     "name": "scroll of darkness",
     "name_plural": "scrolls of darkness",
-    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it.  Using it will darken the sky temporarily, and confound nearby enemies",
+    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar diety.  Using it will darken the sky temporarily, and confound nearby enemies",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": { "effects_activated": [ "AEA_CONFUSED", "AEA_DIM" ] },
@@ -978,7 +978,7 @@
     "type": "TOOL",
     "name": "scroll of command",
     "name_plural": "scrolls of command",
-    "description": "This is a scroll, with odd writing and images of solders standing in formation on it.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
+    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly diety of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
     "use_action": {
       "target": "scroll_artiface_on",
       "msg": "\"By order, we ascend beyond that of animals.\"  You unroll the scroll of command...",
@@ -992,22 +992,22 @@
     "type": "TOOL",
     "name": "scroll of command",
     "name_plural": "scrolls of command",
-    "description": "This is a scroll, with odd writing and images of solders standing in formation on it.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
+    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly diety of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "artifact_data": { "effects_activated": [ "AEA_ENTRANCE", "AEA_PARALYZE", "AEA_PAIN" ] },
+    "artifact_data": { "effects_activated": [ "AEA_ENTRANCE", "AEA_ENTRANCE", "AEA_PARALYZE", "AEA_PAIN" ] },
     "use_action": "ARTIFACT"
   },
   {
     "id": "scroll_nature",
     "copy-from": "scroll_base",
     "type": "TOOL",
-    "name": "scroll of overgrowth",
-    "name_plural": "scrolls of overgrowth",
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
+    "name": "scroll of regrowth",
+    "name_plural": "scrolls of regrowth",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly diety of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
     "use_action": {
       "target": "scroll_nature_on",
-      "msg": "\"Do not deny your instincts.\"  You unroll the scroll of overgrowth...",
+      "msg": "\"Do not deny your instincts.\"  You unroll the scroll of regrowth...",
       "active": true,
       "type": "transform"
     }
@@ -1016,9 +1016,9 @@
     "id": "scroll_nature_on",
     "copy-from": "scroll_base",
     "type": "TOOL",
-    "name": "scroll of overgrowth",
-    "name_plural": "scrolls of overgrowth",
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
+    "name": "scroll of regrowth",
+    "name_plural": "scrolls of regrowth",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly diety of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": {
@@ -1032,7 +1032,7 @@
     "type": "TOOL",
     "name": "scroll of sundering",
     "name_plural": "scrolls of sundering",
-    "description": "This is a scroll, with odd writing and scenes of natural disasters on it.  Using it will call forth a horrid noise, toppling nearby structures and harming creatures around you.  It might attract unwanted attention as well.",
+    "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a horrid noise, toppling nearby structures and harming creatures around you.  It might attract unwanted attention as well.",
     "use_action": {
       "target": "scroll_destruction_on",
       "msg": "\"There is an end to everything.\"  You unroll the scroll of sundering...",
@@ -1046,7 +1046,7 @@
     "type": "TOOL",
     "name": "scroll of sundering",
     "name_plural": "scrolls of sundering",
-    "description": "This is a scroll, with odd writing and scenes of natural disasters on it.  Using it will call forth a horrid noise, toppling nearby structures and harming creatures around you.  It might attract unwanted attention as well.",
+    "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a horrid noise, toppling nearby structures and harming creatures around you.  It might attract unwanted attention as well.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": { "effects_activated": [ "AEA_PULSE", "AEA_HURTALL", "AEA_ATTENTION", "AEA_SCREAM" ] },
@@ -1058,7 +1058,7 @@
     "type": "TOOL",
     "name": "scroll of discord",
     "name_plural": "scrolls of discord",
-    "description": "This is a scroll, with odd writing and peculiar swirling symbols on it.  Using it will warp the fabric of space, teleporting you at random.  The trip is a bit nauseating, and you might be followed.",
+    "description": "This is a scroll, with odd writing and peculiar swirling symbols on it, representing an otherworldly trickster god.  Using it will warp the fabric of space, teleporting you at random.  The trip is a bit nauseating, and you might be followed.",
     "use_action": {
       "target": "scroll_subversion_on",
       "msg": "\"Cast aside the veil of reality.\"  You unroll the scroll of discord...",
@@ -1072,7 +1072,7 @@
     "type": "TOOL",
     "name": "scroll of discord",
     "name_plural": "scrolls of discord",
-    "description": "This is a scroll, with odd writing and peculiar swirling symbols on it.  Using it will warp the fabric of space, teleporting you at random.  The trip is a bit nauseating, and you might be followed.",
+    "description": "This is a scroll, with odd writing and peculiar swirling symbols on it, representing an otherworldly trickster god.  Using it will warp the fabric of space, teleporting you at random.  The trip is a bit nauseating, and you might be followed.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": { "effects_activated": [ "AEA_SHADOWS", "AEA_FATIGUE", "AEA_TELEPORT", "AEA_VOMIT" ] },
