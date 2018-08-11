@@ -9,6 +9,7 @@
     "price": 1200,
     "material": [ "veggy" ],
     "symbol": "[",
+    "looks_like": "necklace",
     "color": "light_red",
     "flags": [ "FANCY" ]
   },
@@ -22,6 +23,7 @@
     "price": 10000,
     "material": [ "stone" ],
     "symbol": "[",
+    "looks_like": "holy_symbol",
     "color": "light_gray",
     "flags": [ "FANCY" ],
     "use_action": "MEDITATE"
@@ -37,6 +39,7 @@
     "price": 9000,
     "material": [ "stone" ],
     "symbol": "[",
+    "looks_like": "brooch",
     "color": "dark_gray",
     "flags": [ "FANCY" ]
   },
@@ -50,6 +53,7 @@
     "price": 6400,
     "material": [ "copper", "essencemat" ],
     "symbol": "[",
+    "looks_like": "holy_symbol",
     "color": "blue",
     "use_action": { "type": "bandolier", "capacity": 200, "ammo": [ "essence_type", "essence_blood_type", "essence_dull_type" ] }
   },
@@ -67,6 +71,7 @@
     "bashing": 1,
     "material": [ "cotton", "copper" ],
     "symbol": "[",
+    "looks_like": "leather_pouch",
     "color": "light_red",
     "covers": [ "TORSO" ],
     "coverage": 15,
@@ -86,6 +91,7 @@
     "price": 12000,
     "material": [ "hardsteel" ],
     "symbol": "[",
+    "looks_like": "brooch",
     "color": "light_gray",
     "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY", "AEP_SPEED_DOWN" ] },
     "flags": [ "FANCY" ]

@@ -5,6 +5,7 @@
     "name": "upright weapon",
     "description": "A strange sword hovering just above the ground.  The stairway underneath is blocked off by a solid barrier of light, but the sword should be easy to remove.",
     "symbol": "|",
+    "looks_like": "sun_sword_on",
     "bgcolor": [ "yellow" ],
     "move_cost_mod": -2,
     "required_str": -1,
