@@ -7,6 +7,7 @@
     "weight": 3,
     "material": [ "paper" ],
     "symbol": ",",
+    "looks_like": "survnote",
     "color": "white",
     "flags": [ "NO_SALVAGE" ]
   },
@@ -27,6 +28,7 @@
     "name": "exploding and summoning magic sign base",
     "material": [ "essencemat" ],
     "symbol": ",",
+    "looks_like": "vortex_stone",
     "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
   },
   {
@@ -38,6 +40,7 @@
     "price": 2000,
     "material": [ "paper" ],
     "symbol": "!",
+    "looks_like": "recipe_creepy",
     "color": "white",
     "flags": [ "NO_SALVAGE" ]
   },
@@ -47,6 +50,7 @@
     "name": "magic seal base",
     "material": [ "essencemat" ],
     "symbol": ",",
+    "looks_like": "petrified_eye",
     "price": 5000,
     "weight": 50,
     "volume": 1,
