@@ -22,6 +22,16 @@
     }
   },
   {
+    "id": "mon_worm",
+    "copy-from": "mon_worm",
+    "type": "MONSTER",
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [ [ "graboid_fang", 15 ], [ "essence", 25 ] ],
+      "//": "15% chance of a graboid fang, 25% chance of essence."
+    }
+  },
+  {
     "id": "mon_cockatrice",
     "copy-from": "mon_cockatrice",
     "type": "MONSTER",
@@ -278,7 +288,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "wyrmskin_piece", 90 ], [ "essence_nether", 25 ] ],
+      "groups": [ [ "wyrmskin_piece", 90 ], [ "graboid_fang", 30 ], [ "essence_nether", 25 ] ],
       "//": "Unearthed creature if the wiki is right, anomalous but not otherworldly."
     }
   },
