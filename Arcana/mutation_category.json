@@ -1,6 +1,6 @@
 [
   {
-    "id": "mutation_veil",
+    "id": "VEIL",
     "type": "mutation_category",
     "category": "VEIL",
     "threshold_mut": "THRESH_VEIL",
@@ -16,7 +16,7 @@
     "memorial_message": "Pierced the veil between worlds."
   },
   {
-    "id": "mutation_acid_spray",
+    "id": "ACIDSPRAY",
     "type": "mutation_category",
     "category": "ACIDSPRAY",
     "threshold_mut": "THRESH_ACIDSPRAY",
@@ -30,7 +30,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_agility",
+    "id": "AGILITY",
     "type": "mutation_category",
     "category": "AGILITY",
     "threshold_mut": "THRESH_AGILITY",
@@ -44,7 +44,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_clairvoyance",
+    "id": "CLAIRVOYANCE",
     "type": "mutation_category",
     "category": "CLAIRVOYANCE",
     "threshold_mut": "THRESH_CLAIRVOYANCE",
@@ -58,7 +58,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_clarity",
+    "id": "CLARITY",
     "type": "mutation_category",
     "category": "CLARITY",
     "threshold_mut": "THRESH_CLARITY",
@@ -72,7 +72,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_confuse",
+    "id": "CONFUSE",
     "type": "mutation_category",
     "category": "CONFUSE",
     "threshold_mut": "THRESH_CONFUSE",
@@ -86,7 +86,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_flame_armor",
+    "id": "FLAMEARMOR",
     "type": "mutation_category",
     "category": "FLAMEARMOR",
     "threshold_mut": "THRESH_FLAMEARMOR",
@@ -100,7 +100,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_free_action",
+    "id": "FREEACTION",
     "type": "mutation_category",
     "category": "FREEACTION",
     "threshold_mut": "THRESH_FREEACTION",
@@ -114,7 +114,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_heal",
+    "id": "HEAL",
     "type": "mutation_category",
     "category": "HEAL",
     "threshold_mut": "THRESH_HEAL",
@@ -128,7 +128,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_insight",
+    "id": "INSIGHT",
     "type": "mutation_category",
     "category": "INSIGHT",
     "threshold_mut": "THRESH_INSIGHT",
@@ -142,7 +142,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_invis",
+    "id": "INVIS",
     "type": "mutation_category",
     "category": "INVIS",
     "threshold_mut": "THRESH_INVIS",
@@ -156,7 +156,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_elecresist",
+    "id": "ELECRESIST",
     "type": "mutation_category",
     "category": "ELECRESIST",
     "threshold_mut": "THRESH_ELECRESIST",
@@ -170,7 +170,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_might",
+    "id": "MIGHT",
     "type": "mutation_category",
     "category": "MIGHT",
     "threshold_mut": "THRESH_MIGHT",
@@ -184,7 +184,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_overgrowth",
+    "id": "OVERGROWTH",
     "type": "mutation_category",
     "category": "OVERGROWTH",
     "threshold_mut": "THRESH_OVERGROWTH",
@@ -198,7 +198,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_lightning",
+    "id": "LIGHTNING",
     "type": "mutation_category",
     "category": "LIGHTNING",
     "threshold_mut": "THRESH_LIGHTNING",
@@ -212,7 +212,7 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "mutation_cleric",
+    "id": "CLERIC",
     "type": "mutation_category",
     "category": "CLERIC",
     "threshold_mut": "THRESH_CLERIC",
