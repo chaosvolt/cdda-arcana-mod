@@ -1052,11 +1052,11 @@
     "type": "TOOL",
     "name": "scroll of regrowth",
     "name_plural": "scrolls of regrowth",
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly diety of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly diety of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and massively healing you, but potentially mutating you as well.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": {
-      "effects_activated": [ "AEA_GROWTH", "AEA_MUTATE", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL" ]
+      "effects_activated": [ "AEA_GROWTH", "AEA_MUTATE", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL" ]
     },
     "use_action": "ARTIFACT"
   },
