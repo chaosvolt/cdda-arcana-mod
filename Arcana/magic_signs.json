@@ -559,15 +559,16 @@
   {
     "id": "spell_daylight",
     "copy-from": "spell_base",
+    "//": "ID retained to avoid load errors.",
     "type": "TOOL",
-    "name": "Magic Sign: Daylight",
-    "name_plural": "Magic Sign: Daylight",
-    "description": "A mote of energy with a distinct shine to it.  Activate it to brighten the skies.",
+    "name": "Magic Sign: Surge of Adrenaline",
+    "name_plural": "Magic Sign: Surge of Adrenaline",
+    "description": "A mote of energy that shivers with anticipation.  Activate it to grant a rush of energy.",
     "color": "yellow",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_daylight_on",
-      "msg": "You activate the daylight spell.",
+      "msg": "You activate the energizing spell.",
       "target_charges": 0,
       "active": true,
       "type": "transform"
@@ -576,16 +577,17 @@
   {
     "id": "spell_daylight_on",
     "copy-from": "spell_base",
+    "//": "ID retained to avoid load errors.",
     "type": "TOOL",
-    "name": "Magic Sign: Daylight (active)",
-    "name_plural": "Magic Sign: Daylight (active)",
-    "description": "A mote of energy with a distinct shine to it.",
+    "name": "Magic Sign: Surge of Adrenaline (active)",
+    "name_plural": "Magic Sign: Surge of Adrenaline (active)",
+    "description": "A mote of energy that shivers with anticipation.",
     "color": "yellow",
     "initial_charges": 0,
     "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
-    "artifact_data": { "effects_activated": [ "AEA_LIGHT" ] },
+    "artifact_data": { "effects_activated": [ "AEA_ADRENALINE" ] },
     "use_action": "ARTIFACT"
   },
   {
@@ -752,7 +754,7 @@
     "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
-    "artifact_data": { "effects_activated": [ "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_PARALYZE" ] },
+    "artifact_data": { "effects_activated": [ "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_PARALYZE" ] },
     "use_action": "ARTIFACT"
   },
   {
@@ -847,11 +849,11 @@
     "name_plural": "Magic Sign: Light (active)",
     "description": "A mote of energy with a faint radiance to it.",
     "color": "yellow",
-    "initial_charges": 300,
-    "max_charges": 300,
+    "initial_charges": 600,
+    "max_charges": 600,
     "charges_per_use": 1,
     "turns_per_charge": 1,
-    "countdown_interval": 301,
+    "countdown_interval": 601,
     "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign glowing with light dissipates." },
     "artifact_data": { "effects_carried": [ "AEP_GLOW" ] }
   },
@@ -1431,5 +1433,37 @@
       "activation_message": "A powerful surge of protective magic envelops your body.",
       "effects": [ { "id": "cleric_warding", "duration": 250 } ]
     }
+  },
+  {
+    "id": "spell_bugs",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Vermin",
+    "name_plural": "Magic Sign: Vermin",
+    "description": "A mote of energy that buzzes with the whispering of a distant swarm.  Activate it to attempt to conjure giant insects, in exchange for sickening you.",
+    "color": "green",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_bugs_on",
+      "msg": "You activate the vermin-conjuring spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_bugs_on",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Vermin (active)",
+    "name_plural": "Magic Sign: Vermin (active)",
+    "description": "A mote of energy that buzzes with the whispering of a distant swarm.",
+    "color": "green",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_BUGS", "AEA_VOMIT" ] },
+    "use_action": "ARTIFACT"
   }
 ]

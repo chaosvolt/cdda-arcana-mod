@@ -15,6 +15,7 @@
       "arcanist_magehunter",
       "arcanist_oathkeeper",
       "arcanist_summoner"
-    ]
+    ],
+    "traits": [ "SPELL_FIRE", "SPELL_CONFUSE", "SPELL_HEAL", "SPELL_LIGHT", "SPELL_SUMMONDOG" ]
   }
 ]
