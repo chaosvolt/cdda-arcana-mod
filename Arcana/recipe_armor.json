@@ -150,9 +150,8 @@
     "time": 30000,
     "book_learn": [ [ "book_sacrifice", 6 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 } ],
-    "using": [ [ "arcana_essence_exclude_dull", 4 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "surface_heat", 6, "LIST" ] ] ],
-    "components": [ [ [ "gloves_plate", 1 ] ], [ [ "silver_small", 70 ] ] ]
+    "components": [ [ [ "gloves_plate", 1 ] ], [ [ "silver_small", 70 ] ], [ [ "essence", 4 ] ] ]
   },
   {
     "result": "robe_shadow",
@@ -164,13 +163,14 @@
     "skills_required": [ "tailor", 5 ],
     "time": 80000,
     "book_learn": [ [ "book_sacrifice", 7 ] ],
-    "using": [ [ "filament", 24 ], [ "arcana_essence_exclude_dull", 7 ] ],
+    "using": [ [ "filament", 24 ] ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SEW", "level": 1 } ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
     "components": [
       [ [ "robe", 1 ], [ "cassock", 1 ], [ "kittel", 1 ], [ "thawb", 1 ], [ "kariginu", 1 ] ],
       [ [ "fur", 4 ] ],
-      [ [ "charcoal", 30 ] ]
+      [ [ "charcoal", 30 ] ],
+      [ [ "essence", 7 ] ]
     ]
   },
   {

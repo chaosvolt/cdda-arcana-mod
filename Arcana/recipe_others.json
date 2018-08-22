@@ -77,7 +77,8 @@
     "//": "Fairly high multiplier as all choices of component are uncommon, and a few are quest items.",
     "skill_used": "magic",
     "difficulty": 6,
-    "time": 60000,
+    "time": 10000,
+    "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_sacrifice", 6 ] ],
     "result_mult": 5,
     "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
@@ -107,7 +108,8 @@
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "magic",
     "difficulty": 5,
-    "time": 60000,
+    "time": 5000,
+    "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_sacrifice", 5 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [
@@ -182,7 +184,7 @@
     "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_bloodmagic", 0 ] ],
     "result_mult": 3,
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "byproducts": [ [ "thread", 3 ] ],
+    "byproducts": [ [ "rag", 3 ] ],
     "components": [ [ [ "rag_bloody", 3 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -194,7 +196,8 @@
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "magic",
     "difficulty": 1,
-    "time": 10000,
+    "time": 5000,
+    "batch_time_factors": [ 80, 4 ],
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_bloodmagic", 0 ] ],
     "result_mult": 3,
@@ -210,7 +213,8 @@
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "magic",
     "difficulty": 3,
-    "time": 10000,
+    "time": 2500,
+    "batch_time_factors": [ 80, 4 ],
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_bloodmagic", 1 ] ],
     "result_mult": 3,
@@ -859,9 +863,9 @@
     "difficulty": 6,
     "time": 20000,
     "book_learn": [ [ "book_bloodmagic", 6 ], [ "book_syncretism", 5 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
-    "components": [ [ [ "totem_confusion", 1 ] ] ],
+    "components": [ [ [ "totem_confusion", 1 ] ], [ [ "essence_blood", 3 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -873,9 +877,9 @@
     "difficulty": 6,
     "time": 20000,
     "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_scrollcraft", 5 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "totem_plants", 1 ] ] ],
+    "components": [ [ [ "totem_plants", 1 ] ], [ [ "essence_dull", 15 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -887,9 +891,9 @@
     "difficulty": 6,
     "time": 20000,
     "book_learn": [ [ "book_sacrifice", 6 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
-    "components": [ [ [ "totem_insight", 1 ] ] ],
+    "components": [ [ [ "totem_insight", 1 ] ], [ [ "essence", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -901,9 +905,9 @@
     "difficulty": 7,
     "time": 20000,
     "book_learn": [ [ "book_bloodmagic", 7 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
-    "components": [ [ [ "totem_agile", 1 ] ] ],
+    "components": [ [ [ "totem_agile", 1 ] ], [ [ "essence_blood", 3 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -915,9 +919,9 @@
     "difficulty": 7,
     "time": 20000,
     "book_learn": [ [ "book_sacrifice", 7 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
-    "components": [ [ [ "totem_lightning", 1 ] ] ],
+    "components": [ [ [ "totem_lightning", 1 ] ], [ [ "essence", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -929,9 +933,9 @@
     "difficulty": 7,
     "time": 20000,
     "book_learn": [ [ "book_sacrifice", 7 ], [ "book_scrollcraft", 6 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ], [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "totem_strength", 1 ] ] ],
+    "components": [ [ [ "totem_strength", 1 ] ], [ [ "essence", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -943,9 +947,9 @@
     "difficulty": 8,
     "time": 20000,
     "book_learn": [ [ "book_bloodmagic", 8 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
-    "components": [ [ [ "totem_elecresist", 1 ] ] ],
+    "components": [ [ [ "totem_elecresist", 1 ] ], [ [ "essence_blood", 6 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -957,9 +961,9 @@
     "difficulty": 8,
     "time": 20000,
     "book_learn": [ [ "book_bloodmagic", 8 ], [ "book_scrollcraft", 7 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "totem_clarity", 1 ] ] ],
+    "components": [ [ [ "totem_clarity", 1 ] ], [ [ "essence_blood", 6 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -971,9 +975,9 @@
     "difficulty": 8,
     "time": 20000,
     "book_learn": [ [ "book_hexenhammer", 8 ], [ "book_syncretism", 7 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ] ],
-    "components": [ [ [ "totem_heal", 1 ] ] ],
+    "components": [ [ [ "totem_heal", 1 ] ], [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -985,9 +989,9 @@
     "difficulty": 9,
     "time": 20000,
     "book_learn": [ [ "book_hexenhammer", 9 ], [ "book_scrollcraft", 8 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "totem_flamearmor", 1 ] ] ],
+    "components": [ [ [ "totem_flamearmor", 1 ] ], [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -999,9 +1003,9 @@
     "difficulty": 9,
     "time": 20000,
     "book_learn": [ [ "book_hexenhammer", 9 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ] ],
-    "components": [ [ [ "totem_clairvoyance", 1 ] ] ],
+    "components": [ [ [ "totem_clairvoyance", 1 ] ], [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1013,9 +1017,9 @@
     "difficulty": 9,
     "time": 20000,
     "book_learn": [ [ "book_sacrifice", 9 ], [ "book_scrollcraft", 8 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ], [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "totem_invis", 1 ] ] ],
+    "components": [ [ [ "totem_invis", 1 ] ], [ [ "essence", 2 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1027,9 +1031,9 @@
     "difficulty": 10,
     "time": 20000,
     "book_learn": [ [ "book_hexenhammer", 10 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ] ],
-    "components": [ [ [ "totem_cleric", 1 ] ] ],
+    "components": [ [ [ "totem_cleric", 1 ] ], [ [ "essence_dull", 45 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1041,9 +1045,9 @@
     "difficulty": 10,
     "time": 20000,
     "book_learn": [ [ "book_sacrifice", 10 ], [ "book_syncretism", 9 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
-    "components": [ [ [ "totem_free_action", 1 ] ] ],
+    "components": [ [ [ "totem_free_action", 1 ] ], [ [ "essence", 3 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1055,9 +1059,9 @@
     "difficulty": 10,
     "time": 20000,
     "book_learn": [ [ "book_bloodmagic", 10 ], [ "book_scrollcraft", 9 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "totem_acidspray", 1 ] ] ],
+    "components": [ [ [ "totem_acidspray", 1 ] ], [ [ "essence_blood", 9 ] ] ],
     "flags": [ "BLIND_EASY" ]
   }
 ]
