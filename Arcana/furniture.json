@@ -17,6 +17,8 @@
       "items": [ { "item": "sun_sword", "count": 1 } ]
     },
     "deconstruct": { "items": [ { "item": "sun_sword", "count": 1 } ] },
-    "flags": [ "TRANSPARENT", "EASY_DECONSTRUCT" ]
+    "flags": [ "TRANSPARENT", "EASY_DECONSTRUCT" ],
+    "deployed_item": "sun_sword",
+    "examine_action": "deployed_furniture"
   }
 ]
