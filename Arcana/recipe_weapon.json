@@ -143,9 +143,9 @@
     "subcategory": "CSC_WEAPON_CUTTING",
     "//": "References an idea had by Noct, with some differences.",
     "skill_used": "magic",
-    "difficulty": 9,
+    "difficulty": 8,
     "time": 30000,
-    "book_learn": [ [ "book_sacrifice", 9 ] ],
+    "book_learn": [ [ "book_sacrifice", 8 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [
       [ [ "book_sacrifice", -1 ] ],
