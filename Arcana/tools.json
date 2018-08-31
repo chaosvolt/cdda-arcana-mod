@@ -1088,7 +1088,7 @@
     "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a horrid noise, toppling nearby structures and harming creatures around you.  It might attract unwanted attention as well.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "artifact_data": { "effects_activated": [ "AEA_PULSE", "AEA_HURTALL", "AEA_ATTENTION", "AEA_SCREAM" ] },
+    "artifact_data": { "effects_activated": [ "AEA_PULSE", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_ATTENTION", "AEA_SCREAM" ] },
     "use_action": "ARTIFACT"
   },
   {

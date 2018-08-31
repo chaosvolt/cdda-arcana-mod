@@ -757,7 +757,21 @@
     "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
-    "artifact_data": { "effects_activated": [ "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_PARALYZE" ] },
+    "artifact_data": {
+      "effects_activated": [
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_PARALYZE"
+      ]
+    },
     "use_action": "ARTIFACT"
   },
   {
@@ -1390,6 +1404,23 @@
     "artifact_data": {
       "effects_activated": [
         "AEA_PULSE",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
         "AEA_HURTALL",
         "AEA_HURTALL",
         "AEA_HURTALL",
