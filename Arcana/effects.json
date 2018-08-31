@@ -95,7 +95,7 @@
     "id": "cold_ward",
     "name": [ "Ward Against Cold" ],
     "desc": [ "Protection against the effects of cold." ],
-    "remove_message": "For a moment you feel a terrible chill in the air, as the moonstone fang's power fades.",
+    "remove_message": "For a moment you feel a terrible chill in the air, as the ward against cold fades.",
     "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
     "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
     "max_duration": 1000
