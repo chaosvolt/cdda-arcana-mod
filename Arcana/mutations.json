@@ -343,7 +343,7 @@
     "id": "SPELL_FLAMEARMOR",
     "name": "Arcana: Flame Armor",
     "points": 4,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy that can protect against corrosion.  Activate to focus your power.",
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy that can protect against heat and smoke.  Activate to focus your power.",
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_SMOKE" ],
