@@ -210,5 +210,14 @@
       { "group": "jackets", "prob": 20, "damage-min": 1, "damage-max": 4 },
       { "group": "bags", "prob": 6, "damage-min": 1, "damage-max": 4 }
     ]
+  },
+  {
+    "id": "dracolich_boss_drops",
+    "type": "item_group",
+    "//": "Boss-level essence, additional drop SOON",
+    "subtype": "collection",
+    "entries": [
+      { "group": "essence_boss", "prob": 100 }
+    ]
   }
 ]

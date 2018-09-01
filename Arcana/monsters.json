@@ -681,7 +681,7 @@
     "vision_day": 50,
     "vision_night": 30,
     "special_attacks": [ [ "FLESH_GOLEM", 5 ], { "type": "bite", "cooldown": 10 }, [ "FLAMETHROWER", 10 ] ],
-    "death_drops": { "subtype": "collection", "groups": [ [ "essence_boss", 100 ] ], "//": "Nope, no dragon's blood here." },
+    "death_drops": "dracolich_boss_drops",
     "death_function": [ "NORMAL" ],
     "flags": [
       "SEES",
