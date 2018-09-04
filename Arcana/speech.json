@@ -58,5 +58,29 @@
     "speaker": "mon_archon",
     "sound": "\"This body may die, but our master is eternal.\"",
     "volume": 40
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_mi_go",
+    "sound": "\"Ecce, sanguinem magum!\"",
+    "volume": 40
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_mi_go",
+    "sound": "\"Impium profligatum!\"",
+    "volume": 40
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_mi_go",
+    "sound": "\"Subire mortem tuam...\"",
+    "volume": 30
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_mi_go",
+    "sound": "\"...sub malleo deorum!\"",
+    "volume": 50
   }
 ]
