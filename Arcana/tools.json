@@ -302,6 +302,7 @@
   {
     "id": "spear_pestilence",
     "type": "TOOL",
+    "category": "tools",
     "name": "spear of pestilence",
     "name_plural": "spears of pestilence",
     "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will attempt to summon giant insects.",
@@ -310,7 +311,7 @@
     "price": 17000,
     "to_hit": 2,
     "bashing": 5,
-    "cutting": 37,
+    "cutting": 31,
     "material": [ "steel", "wood", "chitin" ],
     "symbol": "/",
     "looks_like": "spear_steel",
@@ -322,7 +323,7 @@
     "techniques": [ "WBLOCK_1", "IMPALE" ],
     "qualities": [ [ "COOK", 1 ] ],
     "use_action": "ARTIFACT",
-    "flags": [ "SPEAR", "REACH_ATTACK", "NO_SALVAGE", "NONCONDUCTIVE" ]
+    "flags": [ "DURABLE_MELEE", "SPEAR", "REACH_ATTACK", "NO_SALVAGE", "NONCONDUCTIVE", "SHEATH_SPEAR" ]
   },
   {
     "id": "summon_kreck",
