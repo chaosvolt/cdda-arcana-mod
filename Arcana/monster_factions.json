@@ -24,7 +24,7 @@
   {
     "type": "MONSTER_FACTION",
     "name": "triffid",
-    "name": "plant",
-    "base_faction": [ "moruboru" ]
+    "base_faction": "plant",
+    "friendly": [ "moruboru" ]
   }
 ]
