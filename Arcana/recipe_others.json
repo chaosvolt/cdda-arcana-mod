@@ -1063,5 +1063,30 @@
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_scrollcraft", -1 ] ] ],
     "components": [ [ [ "totem_acidspray", 1 ] ], [ [ "essence_blood", 9 ] ] ],
     "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "draconic_heart_mutator",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "skills_required": [ "fabrication", 6 ],
+    "time": 50000,
+    "book_learn": [ [ "book_bloodmagic", 6 ] ],
+    "autolearn": [ [ "fabrication", 6 ], [ "magic", 10 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 } ],
+    "tools": [
+      [ [ "book_bloodmagic", -1 ] ],
+      [ [ "book_summoning", -1 ] ],
+      [ [ "cleric_ring", 8 ] ],
+      [ [ "stormbringer", 9 ], [ "veilblade", 3 ] ]
+    ],
+    "components": [
+      [ [ "draconic_heart", 1 ] ],
+      [ [ "silver_glyph", 1 ] ],
+      [ [ "graboid_fang", 1 ], [ "monster_fang", 3 ], [ "wyrmskin_piece", 1 ], [ "iridescent_plate", 3 ] ]
+    ]
   }
 ]

@@ -440,6 +440,44 @@
     "use_action": "ARTIFACT"
   },
   {
+    "id": "spell_fireball",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Fire",
+    "name_plural": "Magic Sign: Conjure Fire",
+    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame, which can be thrown.",
+    "color": "red",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_fireball_on",
+      "msg": "You activate the fire spell.  Throw it!",
+      "target_charges": 3,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_fireball_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Fire (active)",
+    "name_plural": "Magic Sign: Conjure Fire (active)",
+    "description": "A mote of energy that seems to radiate an unearthly heat.",
+    "color": "red",
+    "initial_charges": 0,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_fire",
+      "fields_radius": 3,
+      "fields_min_density": 2,
+      "fields_max_density": 3,
+      "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead."
+    }
+  },
+  {
     "id": "spell_lightningfield",
     "copy-from": "spell_base",
     "type": "TOOL",
@@ -554,38 +592,37 @@
     }
   },
   {
-    "id": "spell_daylight",
+    "id": "spell_dampening",
     "copy-from": "spell_base",
-    "//": "ID retained to avoid load errors.",
     "type": "TOOL",
-    "name": "Magic Sign: Surge of Adrenaline",
-    "name_plural": "Magic Sign: Surge of Adrenaline",
-    "description": "A mote of energy that shivers with anticipation.  Activate it to grant a rush of energy.",
-    "color": "yellow",
+    "name": "Magic Sign: Dampening",
+    "name_plural": "Magic Sign: Dampening",
+    "description": "A mote of energy that feels soft to the touch.  Activate it to grant an effect that will drain energy from nearby flames, and feed off radiation afflicting your body.",
+    "color": "dark_grey",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
-      "target": "spell_daylight_on",
-      "msg": "You activate the energizing spell.",
-      "target_charges": 0,
+      "target": "spell_dampening_on",
+      "msg": "You activate the absorption spell.  Drop the sign to dispel it early.",
+      "target_charges": 300,
       "active": true,
       "type": "transform"
     }
   },
   {
-    "id": "spell_daylight_on",
+    "id": "spell_dampening_on",
     "copy-from": "spell_base",
-    "//": "ID retained to avoid load errors.",
     "type": "TOOL",
-    "name": "Magic Sign: Surge of Adrenaline (active)",
-    "name_plural": "Magic Sign: Surge of Adrenaline (active)",
-    "description": "A mote of energy that shivers with anticipation.",
-    "color": "yellow",
-    "initial_charges": 0,
-    "max_charges": 1,
+    "name": "Magic Sign: Dampening(active)",
+    "name_plural": "Magic Sign: Dampening (active)",
+    "description": "A mote of energy that feels soft to the touch.",
+    "color": "dark_gray",
+    "initial_charges": 300,
+    "max_charges": 300,
     "charges_per_use": 1,
     "turns_per_charge": 1,
-    "artifact_data": { "effects_activated": [ "AEA_ADRENALINE" ] },
-    "use_action": "ARTIFACT"
+    "countdown_interval": 301,
+    "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign absorbing flame and radiation fades." },
+    "artifact_data": { "effects_carried": [ "AEP_PBLUE", "AEP_EXTINGUISH" ] }
   },
   {
     "id": "spell_drainlife",
@@ -619,44 +656,6 @@
     "countdown_interval": 101,
     "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign granting you life-draining abilities dissipates." },
     "artifact_data": { "effects_carried": [ "AEP_SAP_LIFE" ] }
-  },
-  {
-    "id": "spell_fireball",
-    "copy-from": "spell_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Conjure Fire",
-    "name_plural": "Magic Sign: Conjure Fire",
-    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame, which can be thrown.",
-    "color": "red",
-    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
-    "use_action": {
-      "target": "spell_fireball_on",
-      "msg": "You activate the fire spell.  Throw it!",
-      "target_charges": 3,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_fireball_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Conjure Fire (active)",
-    "name_plural": "Magic Sign: Conjure Fire (active)",
-    "description": "A mote of energy that seems to radiate an unearthly heat.",
-    "color": "red",
-    "initial_charges": 0,
-    "max_charges": 3,
-    "turns_per_charge": 1,
-    "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
-    "use_action": {
-      "type": "explosion",
-      "fields_type": "fd_fire",
-      "fields_radius": 3,
-      "fields_min_density": 2,
-      "fields_max_density": 3,
-      "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead."
-    }
   },
   {
     "id": "spell_flamearmor",
@@ -726,6 +725,41 @@
       "type": "consume_drug",
       "activation_message": "You feel an otherworldly tension in your muscles, as your body becomes warded against paralytic effects.",
       "effects": [ { "id": "free_action", "duration": 250 } ]
+    }
+  },
+  {
+    "id": "spell_frostarmor",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Frost Armor",
+    "name_plural": "Magic Sign: Frost Armor",
+    "description": "A mote of energy that feels abnormally warm.  Activate it to gain temporary resistance to cold.",
+    "color": "cyan",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_frostarmor_on",
+      "msg": "You activate the frost armor spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_frostarmor_on",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Frost Armor (active)",
+    "name_plural": "Magic Sign: Frost Armor (active)",
+    "description": "A mote of energy that feels abnormally warm.",
+    "color": "cyan",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Your body becomes innured to winter's chill.",
+      "effects": [ { "id": "cold_ward", "duration": 250 } ]
     }
   },
   {
@@ -1104,6 +1138,39 @@
     }
   },
   {
+    "id": "spell_shadowsnakes",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Serpentine Shield",
+    "name_plural": "Magic Sign: Serpentine Shield",
+    "description": "A mote of energy, flickering with dim light.  Activate it to grant a defensive effect that will summon shadowy serpents to aid you.",
+    "color": "dark_grey",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_shadowsnakes_on",
+      "msg": "You activate the defensive spell.  Drop the sign to dispel it early.",
+      "target_charges": 300,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_shadowsnakes_on",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Serpentine Shield (active)",
+    "name_plural": "Magic Sign: Serpentine Shield (active)",
+    "description": "A mote of energy, flickering with dim light.",
+    "color": "dark_gray",
+    "initial_charges": 300,
+    "max_charges": 300,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "countdown_interval": 301,
+    "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign granting you shadowy protection fades." },
+    "artifact_data": { "effects_carried": [ "AEP_SNAKES" ] }
+  },
+  {
     "id": "spell_lightning",
     "copy-from": "spell_base",
     "type": "TOOL",
@@ -1134,6 +1201,129 @@
     "turns_per_charge": 1,
     "artifact_data": { "effects_activated": [ "AEA_STORM" ] },
     "use_action": "ARTIFACT"
+  },
+  {
+    "id": "spell_summonwyrm",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Dark Wyrm",
+    "name_plural": "Magic Sign: Summon Dark Wyrm",
+    "description": "A mote of energy with endless coils perceived inside it.  Activate it to summon a dark wyrm, but beware that sunlight will kill it.",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_summonwyrm_on",
+      "msg": "You activate the summoning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_summonwyrm_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Dark Wyrm (active)",
+    "name_plural": "Magic Sign: Summon Dark Wyrm (active)",
+    "description": "A mote of energy with endless coils perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dark_wyrm",
+      "friendly_msg": "The massive burrowing wyrm is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the massive burrowing wyrm!",
+      "difficulty": 5,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic",
+      "skill2": "magic"
+    }
+  },
+  {
+    "id": "spell_summonfiend",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Fiend",
+    "name_plural": "Magic Sign: Summon Fiend",
+    "description": "A mote of energy with a smoldering wildfire perceived inside it.  Activate it to summon an ashen revenent.",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_summonfiend_on",
+      "msg": "You activate the summoning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_summonfiend_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Fiend (active)",
+    "name_plural": "Magic Sign: Summon Fiend (active)",
+    "description": "A mote of energy with a smoldering wildfire perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zombie_fiend",
+      "friendly_msg": "The charred undead monster is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the charred undead monster!",
+      "difficulty": 3,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic",
+      "skill2": "magic"
+    }
+  },
+  {
+    "id": "spell_summonjabberwock",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Jabberwock",
+    "name_plural": "Magic Sign: Summon Jabberwock",
+    "description": "A mote of energy with a dozen screaming faces perceived inside it.  Activate it to summon a golem woven of flesh.",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_summonjabberwock_on",
+      "msg": "You activate the summoning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_summonjabberwock_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Jabberwock (active)",
+    "name_plural": "Magic Sign: Summon Jabberwock (active)",
+    "description": "A mote of energy with a dozen screaming faces perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_jabberwock",
+      "friendly_msg": "The body of bodies is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the body of bodies!",
+      "difficulty": 7,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic",
+      "skill2": "magic"
+    }
   },
   {
     "id": "spell_summonculus",
@@ -1339,6 +1529,81 @@
       "skill1": "magic",
       "skill2": "magic"
     }
+  },
+  {
+    "id": "spell_summonyugg",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Yugg",
+    "name_plural": "Magic Sign: Summon Yugg",
+    "description": "A mote of energy with scenes of forbidden wealth perceived inside it.  Activate it to summon a worm-like abomination.",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_summonyugg_on",
+      "msg": "You activate the summoning spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_summonyugg_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Yugg  (active)",
+    "name_plural": "Magic Sign: Summon Yugg (active)",
+    "description": "A mote of energy with a scenes of forbidden wealth perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_yugg",
+      "friendly_msg": "The mutagenic worm beast is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the mutagenic worm beast!",
+      "difficulty": 9,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic",
+      "skill2": "magic"
+    }
+  },
+  {
+    "id": "spell_daylight",
+    "copy-from": "spell_base",
+    "//": "ID retained to avoid load errors.",
+    "type": "TOOL",
+    "name": "Magic Sign: Surge of Adrenaline",
+    "name_plural": "Magic Sign: Surge of Adrenaline",
+    "description": "A mote of energy that shivers with anticipation.  Activate it to grant a rush of energy.",
+    "color": "yellow",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_daylight_on",
+      "msg": "You activate the energizing spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_daylight_on",
+    "copy-from": "spell_base",
+    "//": "ID retained to avoid load errors.",
+    "type": "TOOL",
+    "name": "Magic Sign: Surge of Adrenaline (active)",
+    "name_plural": "Magic Sign: Surge of Adrenaline (active)",
+    "description": "A mote of energy that shivers with anticipation.",
+    "color": "yellow",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "artifact_data": { "effects_activated": [ "AEA_ADRENALINE" ] },
+    "use_action": "ARTIFACT"
   },
   {
     "id": "spell_teleport",

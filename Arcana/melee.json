@@ -244,5 +244,18 @@
     "material": [ "stone" ],
     "weight": 89,
     "volume": 1
+  },
+  {
+    "type": "GENERIC",
+    "id": "draconic_heart",
+    "symbol": "*",
+    "color": "red",
+    "name": "petrified heart",
+    "description": "A vibrant red chunk of petrified flesh, torn free from some scaly abominaton as it died.  It seems someone else had been trying to carve this thing from the beast's corpse before it reanimated, for whatever twisted ritual they where planning...",
+    "price": 100,
+    "material": "stone",
+    "looks_like": "spiral_stone",
+    "weight": 1500,
+    "volume": 4
   }
 ]

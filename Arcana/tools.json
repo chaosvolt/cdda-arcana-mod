@@ -1701,6 +1701,28 @@
     }
   },
   {
+    "id": "draconic_heart_mutator",
+    "type": "TOOL",
+    "name": "sacramental heart",
+    "description": "A vibrant red chunk of petrified flesh, purified and set in an ornamental mounting like a morbid brooch.  It resonates with unnatural power, as though imbued with the essence of the creature it was cut away from.  Channeling blood essence through it will start you down the path to becoming  something ...else.  Neither human nor blob-altered mutant, with all the blessings and curses that may entail.",
+    "weight": 2500,
+    "volume": 4,
+    "price": 15000,
+    "to_hit": -2,
+    "bashing": 3,
+    "material": [ "stone", "essencemat" ],
+    "symbol": "*",
+    "looks_like": "petrified_eye",
+    "color": "red",
+    "ammo": "essence_blood_type",
+    "max_charges": 10,
+    "charges_per_use": 10,
+    "use_action" : {
+      "type" : "mutagen_iv",
+      "mutation_category" : "DRAGONBLOOD"
+    }
+  },
+  {
     "id": "stormbringer",
     "type": "TOOL",
     "category": "weapons",

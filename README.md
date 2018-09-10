@@ -57,7 +57,7 @@ Trinkets, totems, and Such:
 Artifacts:
 * Certain locations offer unique items that are otherwise uncraftable. Most notably are those hidden away in the forgotten halls of arcanist groups, how have since succumbed to the cataclysm and its horrors. Two of them tie into the background of what led to their downfall, while two are tied to the monsters that infest the place.
 * In addition, hidden away one can find a few other lesser artifacts, each having their own potential uses.
-* Lastly, there's one "hidden" artifact of sorts, in a sense. By obtaining an item hidden away in a temple over the sky, one can restore its true nature and gain its power.
+* Two notable unique artifacts can be crafted, leading towards what's effectively endgame content, unlocking ways to become something more than human. By obtaining an item hidden away in a temple over the sky, one can restore its true nature and gain its power. The second meanwhile entails a shrine surrounded by water, and finising what the Sanguine Order started.
 
 Other Magic Items:
 * Using History of Alchemy an assortment of potions can be made, a mimicry of the Opus Magnum. Each step has its own use however, from numbing pain to enhancing strength.

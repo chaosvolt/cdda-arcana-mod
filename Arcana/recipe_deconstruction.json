@@ -699,8 +699,18 @@
     "result": "veilblade",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 8,
+    "difficulty": 7,
     "time": 80000,
+    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "draconic_heart_mutator",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 5000,
     "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
