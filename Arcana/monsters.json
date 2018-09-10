@@ -625,7 +625,7 @@
   {
     "id": "mon_archon",
     "type": "MONSTER",
-    "name": "archon",
+    "name": "host of the archon",
     "description": "A tall, robed figure twisted into a mockery of the human form, brandishing a strange golden talisman.  You feel an otherworldly presence about it.",
     "default_faction": "archon",
     "species": [ "MUTANT" ],

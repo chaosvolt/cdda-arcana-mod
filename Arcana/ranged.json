@@ -28,14 +28,15 @@
     "reload": 400,
     "ammo_effects": [ "LIGHTNING", "BOUNCE", "EMP" ],
     "artifact_data": { "effects_wielded": [ "AEP_BAD_WEATHER" ] },
-    "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON" ]
+    "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON" ],
+    "use_action": "MEDITATE"
   },
   {
     "id": "bloodscourge",
     "type": "GUN",
     "name": "hellfire stave",
     "name_plural": "hellfire staves",
-    "description": "A staff decorated with silver and a skull motif, capped with a strange red gem.  The metal parts feel uncomfortably warm to the touch.  Firing it projects a gout of wicked flame.",
+    "description": "A staff decorated with silver and a skull motif, capped with a strange red gem.  The metal parts feel uncomfortably warm to the touch.  Firing it projects a gout of wicked flame.  While its flames are too potent for starting controlled fires, focusing sunlight through the gem can rapidly start a blaze.",
     "weight": 2800,
     "volume": 12,
     "price": 45600,
@@ -59,6 +60,8 @@
     "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "triple", 3 ] ],
     "ammo_effects": [ "FLAME", "STREAM", "INCENDIARY", "FLARE" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
+    "//": "Explicitly not adding the firestarter flag, just in case hardcoded uses deplete charges.  The use action itself is unable to deplete charges for guns, annoyingly.",
+    "use_action": { "type": "firestarter", "moves": 25, "moves_slow": 250, "need_sunlight": true },
     "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE" ]
   },
   {
@@ -115,6 +118,7 @@
     "loudness": 500,
     "clip_size": 1,
     "reload": 200,
+    "use_action": { "type": "firestarter", "moves": 25 },
     "ammo_effects": [ "NAPALM_BIG", "TRAIL" ],
     "artifact_data": { "effects_wielded": [ "AEP_SAP_LIFE", "AEP_EVIL" ] },
     "techniques": [ "WBLOCK_1" ],

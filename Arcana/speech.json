@@ -2,6 +2,12 @@
   {
     "type": "speech",
     "speaker": "mon_archon",
+    "sound": "\"Give yourself in service to me...\"",
+    "volume": 30
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_archon",
     "sound": "\"You shall be enlightened in death.\"",
     "volume": 40
   },
@@ -14,7 +20,7 @@
   {
     "type": "speech",
     "speaker": "mon_archon",
-    "sound": "\"Master, this enemy I deliver unto you...\"",
+    "sound": "\"Yours is just one of a thousand worlds destined to burn.\"",
     "volume": 30
   },
   {
@@ -50,13 +56,25 @@
   {
     "type": "speech",
     "speaker": "mon_archon",
-    "sound": "\"Soon, I will be free!\"",
+    "sound": "\"Submit...\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_archon",
+    "sound": "\"Soon, I will claim what is rightfully mine.\"",
     "volume": 40
   },
   {
     "type": "speech",
     "speaker": "mon_archon",
-    "sound": "\"This body may die, but our master is eternal.\"",
+    "sound": "\"This body may die, but I am eternal.\"",
+    "volume": 40
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_archon",
+    "sound": "\"chanting in an unearthly language!\"",
     "volume": 40
   },
   {
