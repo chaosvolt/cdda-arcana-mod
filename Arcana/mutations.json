@@ -1212,9 +1212,12 @@
     "prereqs": [
       "SPELL_ACIDARMOR",
       "SPELL_CLARITY",
+      "SPELL_FIRE",
+      "SPELL_FLAMEARMOR",
       "SPELL_SMOKE",
       "SPELL_ELECRESIST",
       "SPELL_STRENGTH",
+      "SPELL_POISONARMOR",
       "SPELL_SUMMONFIEND",
       "SPELL_DAMPENING"
     ],
