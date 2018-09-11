@@ -913,9 +913,9 @@
     "thirst_modifier": 1.0,
     "healing_awake": 0.2,
     "healing_resting": 0.5,
-    "fatigue_modifier": -0.5,
-    "fatigue_regen_modifier": 0.5,
-    "stamina_regen_modifier": 0.5,
+    "fatigue_modifier": -0.666,
+    "fatigue_regen_modifier": 0.666,
+    "stamina_regen_modifier": 0.666,
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
     "attacks": {
       "attack_text_u": "You bathe %s in flames",
