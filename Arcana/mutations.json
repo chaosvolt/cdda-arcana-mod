@@ -889,9 +889,9 @@
     "types": [ "METABOLISM" ],
     "metabolism_modifier": 1.0,
     "thirst_modifier": 1.0,
-    "fatigue_modifier": -0.333,
-    "fatigue_regen_modifier": 0.333,
-    "stamina_regen_modifier": 0.333,
+    "fatigue_modifier": -0.5,
+    "fatigue_regen_modifier": 0.5,
+    "stamina_regen_modifier": 0.5,
     "social_modifiers": { "persuade": -25, "intimidate": 25 }
   },
   {
