@@ -67,6 +67,7 @@ Other Magic Items:
 
 Furniture Addition:
 * An upright sword, currently serves as an easily-removed barrier and a DF reference.
+* A Holy Candle, also serves as a barrier from the unholy when activated.
 
 Misc:
 * Meditate has been given an item_action definition due to the religious items with additional uses.
