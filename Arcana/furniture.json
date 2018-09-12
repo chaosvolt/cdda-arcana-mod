@@ -9,16 +9,22 @@
     "bgcolor": [ "yellow" ],
     "move_cost_mod": -2,
     "required_str": -1,
-    "bash": {
-      "str_min": 12,
-      "str_max": 40,
-      "sound": "clatter!  The sword topples over.",
-      "sound_fail": "clang!",
-      "items": [ { "item": "sun_sword", "count": 1 } ]
-    },
-    "deconstruct": { "items": [ { "item": "sun_sword", "count": 1 } ] },
-    "flags": [ "TRANSPARENT", "EASY_DECONSTRUCT" ],
+    "flags": [ "NOITEM", "TRANSPARENT" ],
     "deployed_item": "sun_sword",
+    "examine_action": "deployed_furniture"
+  },
+  {
+    "id": "f_candle_barrier",
+    "type": "furniture",
+    "name": "glowing candle",
+    "description": "A single glowing candle, radiating with strange energy and projecting a glowing barrier.  Removing the candle should dispel the barrier.",
+    "symbol": ",",
+    "looks_like": "candle_lit",
+    "bgcolor": [ "yellow" ],
+    "move_cost_mod": -2,
+    "required_str": -1,
+    "flags": [ "NOITEM", "TRANSPARENT" ],
+    "deployed_item": "candle_barrier_aftermath",
     "examine_action": "deployed_furniture"
   }
 ]

@@ -1,5 +1,13 @@
 [
   {
+    "id": "candle_barrier_aftermath",
+    "copy-from": "spell_base",
+    "type": "GENERIC",
+    "name": "candle barrier aftermath",
+    "description": "Workaround so candle barriers do not leave anything behind.  If you find one of these, it's a bug,",
+    "color": "green"
+  },
+  {
     "id": "fighter_sting",
     "copy-from": "fighter_sting",
     "type": "GENERIC",

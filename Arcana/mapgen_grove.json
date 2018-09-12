@@ -51,7 +51,7 @@
       { "group": "shoes", "damage": [ 1, 4 ] },
       { "group": "summoner_drops", "prob": 25 },
       { "group": "magic_consumables", "prob": 10 },
-      { "item": "corpse" }
+      { "item": "bone_human", "prob": 100, "charges-min": 3, "charges-max": 9 }
     ]
   },
   {
