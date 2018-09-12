@@ -16,6 +16,18 @@
       "arcanist_oathkeeper",
       "arcanist_summoner"
     ],
-    "traits": [ "SPELL_FIRE", "SPELL_CONFUSE", "SPELL_HEAL", "SPELL_LIGHT", "SPELL_SUMMONDOG" ]
+    "traits": [ "SPELL_FIRE", "SPELL_CONFUSE", "SPELL_AGILE", "SPELL_HEAL", "SPELL_DAMPENING", "SPELL_LIGHT", "SPELL_SUMMONDOG", "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "ARCANA_DRAGONCLAWS", "ARCANA_DRAGONTEETH", "ARCANA_DRAGONHORNS" ]
+  },
+  {
+    "type": "scenario",
+    "ident": "lab_chal",
+    "copy-from": "lab_chal",
+    "extend": { "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT" ] }
+  },
+  {
+    "type": "scenario",
+    "ident": "mutant",
+    "copy-from": "mutant",
+    "extend": { "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT" ] }
   }
 ]
