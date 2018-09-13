@@ -1,5 +1,29 @@
 [
   {
+    "type": "mutation_type",
+    "id": "WINGS"
+  },
+  {
+    "type": "mutation_type",
+    "id": "MOUTH"
+  },
+  {
+    "type": "mutation_type",
+    "id": "LEGS"
+  },
+  {
+    "type": "mutation_type",
+    "id": "TAILS"
+  },
+  {
+    "type": "mutation_type",
+    "id": "HEAD"
+  },
+  {
+    "type": "mutation_type",
+    "id": "HORNS"
+  },
+  {
     "type": "mutation",
     "id": "THRESH_ACIDSPRAY",
     "name": "Spellcraft Threshold",
