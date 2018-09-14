@@ -10,7 +10,7 @@
     "use_action": {
       "target": "spell_elecresist_on",
       "msg": "You conjure a lightning ward spell.  Drop the sign to dispel it early.",
-      "target_charges": 1,
+      "target_charges": 250,
       "active": true,
       "type": "transform"
     }
@@ -42,7 +42,7 @@
     "use_action": {
       "target": "spell_agile_on",
       "msg": "You conjure an agility spell.  Drop the sign to dispel it early.",
-      "target_charges": 1,
+      "target_charges": 150,
       "active": true,
       "type": "transform"
     }
@@ -74,7 +74,7 @@
     "use_action": {
       "target": "spell_strength_on",
       "msg": "You conjure a spell of might.  Drop the sign to dispel it early.",
-      "target_charges": 1,
+      "target_charges": 150,
       "active": true,
       "type": "transform"
     }
@@ -90,7 +90,7 @@
     "use_action": {
       "target": "spell_clairvoyance_on",
       "msg": "You conjure a clairvoyance spell.  Drop the sign to dispel it early.",
-      "target_charges": 1,
+      "target_charges": 100,
       "active": true,
       "type": "transform"
     }
@@ -122,7 +122,7 @@
     "use_action": {
       "target": "spell_invis_on",
       "msg": "You conjure an invisibility spell.  Drop the sign to dispel it early.",
-      "target_charges": 1,
+      "target_charges": 75,
       "active": true,
       "type": "transform"
     }
@@ -170,7 +170,7 @@
     "use_action": {
       "target": "spell_insight_on",
       "msg": "You conjure an insight spell.  Drop the sign to dispel it early.",
-      "target_charges": 1,
+      "target_charges": 150,
       "active": true,
       "type": "transform"
     }
@@ -445,13 +445,13 @@
     "type": "TOOL",
     "name": "Magic Sign: Conjure Lightning",
     "name_plural": "Magic Sign: Conjure Lightning",
-    "description": "A mote of energy abuzz with raw power.  Activate it to conjure a field of electric death from the sign itself, which can be thrown.",
+    "description": "A mote of energy abuzz with raw power.  Activate it to conjure a field of electric death from the sign itself, which should be thrown.",
     "color": "cyan",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_lightningfield_on",
       "msg": "You activate the lightning field spell.  Throw it!",
-      "target_charges": 3,
+      "target_charges": 5,
       "active": true,
       "type": "transform"
     }
@@ -465,7 +465,7 @@
     "description": "A mote of energy abuzz with raw power.",
     "color": "cyan",
     "initial_charges": 0,
-    "max_charges": 3,
+    "max_charges": 5,
     "turns_per_charge": 1,
     "thrown_damage": [ { "damage_type": "electric", "amount": 20 } ],
     "use_action": {
@@ -483,13 +483,13 @@
     "type": "TOOL",
     "name": "Magic Sign: Conjure Smoke",
     "name_plural": "Magic Sign: Conjure Smoke",
-    "description": "A mote of energy, giving off the smell of charred flesh.  Activate it to conjure a cloud of thick, choking smoke from the sign itself, which can be thrown.",
+    "description": "A mote of energy, giving off the smell of charred flesh.  Activate it to conjure a cloud of thick, choking smoke from the sign itself, which should be thrown.",
     "color": "red",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_smoke_on",
       "msg": "You activate the smokescreen spell.  Throw it!",
-      "target_charges": 3,
+      "target_charges": 5,
       "active": true,
       "type": "transform"
     }
@@ -503,7 +503,7 @@
     "description": "A mote of energy, giving off the smell of charred flesh.",
     "color": "red",
     "initial_charges": 0,
-    "max_charges": 3,
+    "max_charges": 5,
     "turns_per_charge": 1,
     "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
     "use_action": {
@@ -521,13 +521,13 @@
     "type": "TOOL",
     "name": "Magic Sign: Conjure Toxic Cloud",
     "name_plural": "Magic Sign: Conjure Toxic Cloud",
-    "description": "A mote of energy that gives off a strange miasma.  Activate it to conjure a cloud of choking, toxic gas from the sign itself, which can be thrown.",
+    "description": "A mote of energy that gives off a strange miasma.  Activate it to conjure a cloud of choking, toxic gas from the sign itself, which should be thrown.",
     "color": "green",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_cloud_on",
       "msg": "You activate the toxic cloud spell.  Throw it!",
-      "target_charges": 3,
+      "target_charges": 5,
       "active": true,
       "type": "transform"
     }
@@ -541,7 +541,7 @@
     "description": "A mote of energy that gives off a strange miasma.",
     "color": "green",
     "initial_charges": 0,
-    "max_charges": 3,
+    "max_charges": 5,
     "turns_per_charge": 1,
     "thrown_damage": [ { "damage_type": "acid", "amount": 20 } ],
     "use_action": {
@@ -626,13 +626,13 @@
     "type": "TOOL",
     "name": "Magic Sign: Conjure Fire",
     "name_plural": "Magic Sign: Conjure Fire",
-    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame, which can be thrown.",
+    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame, which should be thrown.",
     "color": "red",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_fireball_on",
       "msg": "You activate the fire spell.  Throw it!",
-      "target_charges": 3,
+      "target_charges": 5,
       "active": true,
       "type": "transform"
     }
@@ -646,7 +646,7 @@
     "description": "A mote of energy that seems to radiate an unearthly heat.",
     "color": "red",
     "initial_charges": 0,
-    "max_charges": 3,
+    "max_charges": 5,
     "turns_per_charge": 1,
     "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
     "use_action": {
@@ -853,7 +853,7 @@
     "use_action": {
       "target": "spell_light_on",
       "msg": "You activate the light spell.  Drop the sign to dispel it early.",
-      "target_charges": 300,
+      "target_charges": 600,
       "active": true,
       "type": "transform"
     }
@@ -932,9 +932,9 @@
     "name_plural": "Magic Sign: Might (active)",
     "description": "A mote of energy, resonating with an unearthly force.",
     "color": "red",
-    "initial_charges": 0,
+    "initial_charges": 150,
     "max_charges": 150,
-    "charges_per_use": 150,
+    "charges_per_use": 1,
     "turns_per_charge": 1,
     "countdown_interval": 151,
     "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign augmenting your strength dissipates." },
