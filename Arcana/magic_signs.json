@@ -440,44 +440,6 @@
     "use_action": "ARTIFACT"
   },
   {
-    "id": "spell_fireball",
-    "copy-from": "spell_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Conjure Fire",
-    "name_plural": "Magic Sign: Conjure Fire",
-    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame, which can be thrown.",
-    "color": "red",
-    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
-    "use_action": {
-      "target": "spell_fireball_on",
-      "msg": "You activate the fire spell.  Throw it!",
-      "target_charges": 3,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_fireball_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Conjure Fire (active)",
-    "name_plural": "Magic Sign: Conjure Fire (active)",
-    "description": "A mote of energy that seems to radiate an unearthly heat.",
-    "color": "red",
-    "initial_charges": 0,
-    "max_charges": 3,
-    "turns_per_charge": 1,
-    "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
-    "use_action": {
-      "type": "explosion",
-      "fields_type": "fd_fire",
-      "fields_radius": 3,
-      "fields_min_density": 2,
-      "fields_max_density": 3,
-      "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead."
-    }
-  },
-  {
     "id": "spell_lightningfield",
     "copy-from": "spell_base",
     "type": "TOOL",
@@ -656,6 +618,44 @@
     "countdown_interval": 101,
     "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign granting you life-draining abilities dissipates." },
     "artifact_data": { "effects_carried": [ "AEP_SAP_LIFE" ] }
+  },
+  {
+    "id": "spell_fireball",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Fire",
+    "name_plural": "Magic Sign: Conjure Fire",
+    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame, which should be thrown.",
+    "color": "red",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_fireball_on",
+      "msg": "You activate the fire spell.  Throw it!",
+      "target_charges": 5,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_fireball_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Conjure Fire (active)",
+    "name_plural": "Magic Sign: Conjure Fire (active)",
+    "description": "A mote of energy that seems to radiate an unearthly heat.",
+    "color": "red",
+    "initial_charges": 0,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_fire",
+      "fields_radius": 3,
+      "fields_min_density": 2,
+      "fields_max_density": 3,
+      "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead."
+    }
   },
   {
     "id": "spell_flamearmor",
