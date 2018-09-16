@@ -817,7 +817,7 @@
     "active": true,
     "cost": 175,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonwyrm", "message": "You focus a fragment of your mind into a magical sign." }
+    "spawn_item": { "type": "spell_summonyugg", "message": "You focus a fragment of your mind into a magical sign." }
   },
   {
     "type": "mutation",
@@ -833,7 +833,7 @@
     "changes_to": [ "ARCANA_DRAGONSCALES" ],
     "types": [ "SKIN" ],
     "wet_protection": [ { "part": "ARM_L", "ignored": 4 }, { "part": "ARM_R", "ignored": 4 }, { "part": "TORSO", "ignored": 10 } ],
-    "armor": [ { "parts": [ "ARM_L", "ARM_R", "TORSO" ], "cut": 2 } ]
+    "armor": [ { "parts": [ "ARM_L", "ARM_R", "TORSO" ], "bash": 1, "cut": 2 } ]
   },
   {
     "type": "mutation",
@@ -861,7 +861,7 @@
       { "part": "HAND_R", "ignored": 2 },
       { "part": "TORSO", "ignored": 20 }
     ],
-    "armor": [ { "parts": "ALL", "cut": 4 } ]
+    "armor": [ { "parts": "ALL", "bash": 2, "cut": 4, "acid": 3 } ]
   },
   {
     "type": "mutation",
