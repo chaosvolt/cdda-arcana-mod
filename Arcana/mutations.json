@@ -880,7 +880,7 @@
     "type": "mutation",
     "id": "ARCANA_INNERHEAT",
     "name": "Inner Heat",
-    "points": -1,
+    "points": 1,
     "mixed_effect": true,
     "bodytemp_modifiers": [ 250, 500 ],
     "bodytemp_sleep": 100,
@@ -890,11 +890,11 @@
     "changes_to": [ "ARCANA_INNERFIRE" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "METABOLISM" ],
-    "metabolism_modifier": 0.5,
-    "thirst_modifier": 0.5,
-    "fatigue_modifier": -0.333,
-    "fatigue_regen_modifier": 0.333,
-    "stamina_regen_modifier": 0.333
+    "metabolism_modifier": 0.333,
+    "thirst_modifier": 0.333,
+    "fatigue_modifier": -0.5,
+    "fatigue_regen_modifier": 0.5,
+    "stamina_regen_modifier": 0.5
   },
   {
     "type": "mutation",
@@ -911,11 +911,11 @@
     "changes_to": [ "ARCANA_DRAGONFIRE" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "METABOLISM" ],
-    "metabolism_modifier": 1.0,
-    "thirst_modifier": 1.0,
-    "fatigue_modifier": -0.5,
-    "fatigue_regen_modifier": 0.5,
-    "stamina_regen_modifier": 0.5,
+    "metabolism_modifier": 0.5,
+    "thirst_modifier": 0.5,
+    "fatigue_modifier": -0.666,
+    "fatigue_regen_modifier": 0.666,
+    "stamina_regen_modifier": 0.666,
     "social_modifiers": { "persuade": -25, "intimidate": 25 }
   },
   {
@@ -933,20 +933,20 @@
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "METABOLISM" ],
-    "metabolism_modifier": 1.0,
-    "thirst_modifier": 1.0,
+    "metabolism_modifier": 0.5,
+    "thirst_modifier": 0.5,
     "healing_awake": 0.2,
     "healing_resting": 0.5,
-    "fatigue_modifier": -0.666,
-    "fatigue_regen_modifier": 0.666,
-    "stamina_regen_modifier": 0.666,
+    "fatigue_modifier": -0.75,
+    "fatigue_regen_modifier": 0.75,
+    "stamina_regen_modifier": 0.75,
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
     "attacks": {
       "attack_text_u": "You bathe %s in flames",
       "attack_text_npc": "%1$s bathes %2$s in flames",
       "body_part": "MOUTH",
       "chance": 20,
-      "strength_damage": [ { "damage_type": "heat", "amount": 5 } ]
+      "strength_damage": [ { "damage_type": "heat", "amount": 2 } ]
     }
   },
   {
@@ -1004,14 +1004,6 @@
       {
         "attack_text_u": "You slash %s with your claws",
         "attack_text_npc": "%1$s slashes %2$s with their claws",
-        "body_part": "HAND_L",
-        "chance": 10,
-        "strength_damage": { "damage_type": "cut", "amount": 2 }
-      },
-      {
-        "attack_text_u": "You slash %s with your claws",
-        "attack_text_npc": "%1$s slashes %2$s with their claws",
-        "body_part": "HAND_R",
         "chance": 10,
         "strength_damage": { "damage_type": "cut", "amount": 2 }
       }
@@ -1087,14 +1079,6 @@
       {
         "attack_text_u": "You rake %s with your toe claws",
         "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "body_part": "FOOT_L",
-        "chance": 5,
-        "strength_damage": { "damage_type": "cut", "amount": 2 }
-      },
-      {
-        "attack_text_u": "You rake %s with your toe claws",
-        "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "body_part": "FOOT_R",
         "chance": 5,
         "strength_damage": { "damage_type": "cut", "amount": 2 }
       }
@@ -1123,14 +1107,6 @@
       {
         "attack_text_u": "You rake %s with your toe claws",
         "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "body_part": "FOOT_L",
-        "chance": 10,
-        "strength_damage": { "damage_type": "cut", "amount": 3 }
-      },
-      {
-        "attack_text_u": "You rake %s with your toe claws",
-        "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "body_part": "FOOT_R",
         "chance": 10,
         "strength_damage": { "damage_type": "cut", "amount": 3 }
       }
@@ -1248,7 +1224,7 @@
     "category": [ "DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_FULLESSENCE" ],
     "active": true,
-    "cost": 100,
+    "cost": 50,
     "fatigue": true,
     "hunger": true,
     "thirst": true,
@@ -1267,7 +1243,7 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "active": true,
-    "cost": 100,
+    "cost": 50,
     "fatigue": true,
     "hunger": true,
     "thirst": true,
