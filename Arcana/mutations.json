@@ -1004,7 +1004,7 @@
       {
         "attack_text_u": "You slash %s with your claws",
         "attack_text_npc": "%1$s slashes %2$s with their claws",
-        "chance": 10,
+        "chance": 20,
         "strength_damage": { "damage_type": "cut", "amount": 2 }
       }
     ]
@@ -1026,7 +1026,7 @@
       "attack_text_u": "You sink your teeth into %s",
       "attack_text_npc": "%1$s sinks their teeth into %2$s",
       "body_part": "MOUTH",
-      "chance": 15,
+      "chance": 20,
       "strength_damage": { "damage_type": "stab", "amount": 2 }
     }
   },
@@ -1052,7 +1052,7 @@
       "attack_text_u": "You savagely tear into %s with your jaws",
       "attack_text_npc": "%1$s savagely tear into %2$s with their jaws",
       "body_part": "MOUTH",
-      "chance": 20,
+      "chance": 15,
       "strength_damage": { "damage_type": "stab", "amount": 4 }
     }
   },
@@ -1079,7 +1079,7 @@
       {
         "attack_text_u": "You rake %s with your toe claws",
         "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "chance": 5,
+        "chance": 30,
         "strength_damage": { "damage_type": "cut", "amount": 2 }
       }
     ]
@@ -1107,7 +1107,7 @@
       {
         "attack_text_u": "You rake %s with your toe claws",
         "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "chance": 10,
+        "chance": 25,
         "strength_damage": { "damage_type": "cut", "amount": 3 }
       }
     ]
@@ -1132,7 +1132,7 @@
     "attacks": {
       "attack_text_u": "You whip %s with your tail",
       "attack_text_npc": "%1$s whips %2$s with their tail",
-      "chance": 15,
+      "chance": 20,
       "strength_damage": { "damage_type": "bash", "amount": 1 }
     }
   },
@@ -1155,7 +1155,7 @@
     "attacks": {
       "attack_text_u": "You lash %s with your tail",
       "attack_text_npc": "%1$s lashes %2$s with their tail",
-      "chance": 20,
+      "chance": 15,
       "strength_damage": [ { "damage_type": "stab", "amount": 2 }, { "damage_type": "bash", "amount": 1 } ]
     }
   },
@@ -1178,7 +1178,7 @@
     "attacks": {
       "attack_text_u": "You headbutt %s",
       "attack_text_npc": "%1$s headbutts %2$s",
-      "chance": 5,
+      "chance": 35,
       "strength_damage": { "damage_type": "bash", "amount": 2 }
     }
   },
