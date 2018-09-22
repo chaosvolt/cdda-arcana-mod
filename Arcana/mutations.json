@@ -203,7 +203,7 @@
     "purifiable": false,
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 75,
+    "cost": 45,
     "fatigue": true,
     "spawn_item": { "type": "spell_acidarmor", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -217,7 +217,7 @@
     "purifiable": false,
     "category": [ "VEIL", "ACIDSPRAY" ],
     "active": true,
-    "cost": 75,
+    "cost": 45,
     "fatigue": true,
     "spawn_item": { "type": "spell_acidspray", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -231,7 +231,7 @@
     "purifiable": false,
     "category": [ "VEIL", "AGILITY" ],
     "active": true,
-    "cost": 100,
+    "cost": 60,
     "fatigue": true,
     "spawn_item": { "type": "spell_agile", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -246,7 +246,7 @@
     "leads_to": [ "SPELL_PSYSHIELD" ],
     "category": [ "VEIL", "CLAIRVOYANCE" ],
     "active": true,
-    "cost": 150,
+    "cost": 90,
     "fatigue": true,
     "spawn_item": { "type": "spell_clairvoyance", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -260,7 +260,7 @@
     "purifiable": false,
     "category": [ "CLARITY", "DRAGONBLOOD" ],
     "active": true,
-    "cost": 100,
+    "cost": 60,
     "fatigue": true,
     "spawn_item": { "type": "spell_clarity", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -275,7 +275,7 @@
     "leads_to": [ "SPELL_PACIFY" ],
     "category": [ "VEIL", "CONFUSE" ],
     "active": true,
-    "cost": 75,
+    "cost": 45,
     "fatigue": true,
     "spawn_item": { "type": "spell_confusion", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -291,7 +291,7 @@
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 75,
+    "cost": 45,
     "fatigue": true,
     "spawn_item": { "type": "spell_lightningfield", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -307,7 +307,7 @@
     "leads_to": [ "SPELL_FIRE" ],
     "category": [ "VEIL", "DRAGONBLOOD" ],
     "active": true,
-    "cost": 25,
+    "cost": 15,
     "fatigue": true,
     "spawn_item": { "type": "spell_smoke", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -322,7 +322,7 @@
     "prereqs": [ "SPELL_POISONARMOR" ],
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 50,
+    "cost": 30,
     "fatigue": true,
     "spawn_item": { "type": "spell_cloud", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -339,7 +339,7 @@
     "category": [ "VEIL", "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_VEIL", "THRESH_DRAGONBLOOD" ],
     "active": true,
-    "cost": 50,
+    "cost": 30,
     "fatigue": true,
     "spawn_item": { "type": "spell_daylight", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -354,7 +354,7 @@
     "category": [ "VEIL", "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_VEIL", "THRESH_DRAGONBLOOD" ],
     "active": true,
-    "cost": 150,
+    "cost": 90,
     "fatigue": true,
     "spawn_item": { "type": "spell_drainlife", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -368,7 +368,7 @@
     "purifiable": false,
     "category": [ "VEIL", "DRAGONBLOOD" ],
     "active": true,
-    "cost": 75,
+    "cost": 45,
     "fatigue": true,
     "spawn_item": { "type": "spell_fireball", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -377,13 +377,13 @@
     "id": "SPELL_FLAMEARMOR",
     "name": "Arcana: Flame Armor",
     "points": 4,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy that can protect against corrosion.  Activate to focus your power.",
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy that can protect against heat and smoke.  Activate to focus your power.",
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_SMOKE" ],
     "category": [ "VEIL", "DRAGONBLOOD", "FLAMEARMOR" ],
     "active": true,
-    "cost": 100,
+    "cost": 60,
     "fatigue": true,
     "spawn_item": { "type": "spell_flamearmor", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -397,7 +397,7 @@
     "purifiable": false,
     "category": [ "FREEACTION" ],
     "active": true,
-    "cost": 150,
+    "cost": 90,
     "fatigue": true,
     "spawn_item": { "type": "spell_free_action", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -411,7 +411,7 @@
     "purifiable": false,
     "category": [ "HEAL" ],
     "active": true,
-    "cost": 125,
+    "cost": 75,
     "fatigue": true,
     "spawn_item": { "type": "spell_heal", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -425,7 +425,7 @@
     "purifiable": false,
     "category": [ "INSIGHT" ],
     "active": true,
-    "cost": 75,
+    "cost": 45,
     "fatigue": true,
     "spawn_item": { "type": "spell_insight", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -439,7 +439,7 @@
     "purifiable": false,
     "category": [ "VEIL", "INVIS" ],
     "active": true,
-    "cost": 150,
+    "cost": 90,
     "fatigue": true,
     "spawn_item": { "type": "spell_invis", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -453,7 +453,7 @@
     "purifiable": false,
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 50,
+    "cost": 30,
     "fatigue": true,
     "spawn_item": { "type": "spell_light", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -468,7 +468,7 @@
     "leads_to": [ "SPELL_LIGHTNINGFIELD" ],
     "category": [ "VEIL", "DRAGONBLOOD", "ELECRESIST" ],
     "active": true,
-    "cost": 125,
+    "cost": 75,
     "fatigue": true,
     "spawn_item": { "type": "spell_elecresist", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -483,7 +483,7 @@
     "leads_to": [ "SPELL_PULSE" ],
     "category": [ "VEIL", "DRAGONBLOOD", "MIGHT" ],
     "active": true,
-    "cost": 125,
+    "cost": 75,
     "fatigue": true,
     "spawn_item": { "type": "spell_strength", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -499,7 +499,7 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 125,
+    "cost": 75,
     "fatigue": true,
     "spawn_item": { "type": "spell_psyshield", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -544,7 +544,7 @@
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 100,
+    "cost": 60,
     "fatigue": true,
     "spawn_item": { "type": "spell_pacify", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -573,7 +573,7 @@
     "purifiable": false,
     "category": [ "VEIL", "LIGHTNING" ],
     "active": true,
-    "cost": 50,
+    "cost": 30,
     "fatigue": true,
     "spawn_item": { "type": "spell_lightning", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -587,7 +587,7 @@
     "purifiable": false,
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 125,
+    "cost": 75,
     "fatigue": true,
     "spawn_item": { "type": "spell_summonculus", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -602,7 +602,7 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 175,
+    "cost": 105,
     "fatigue": true,
     "spawn_item": { "type": "spell_summonthing", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -617,7 +617,7 @@
     "leads_to": [ "SPELL_SUMMONSKEL" ],
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 75,
+    "cost": 45,
     "fatigue": true,
     "spawn_item": { "type": "spell_summondog", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -632,7 +632,7 @@
     "prereqs": [ "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 100,
+    "cost": 60,
     "fatigue": true,
     "spawn_item": { "type": "spell_summonskel", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -647,7 +647,7 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 150,
+    "cost": 90,
     "fatigue": true,
     "spawn_item": { "type": "spell_summonvortex", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -662,7 +662,7 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 75,
+    "cost": 45,
     "fatigue": true,
     "spawn_item": { "type": "spell_teleport", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -679,7 +679,7 @@
     "prereqs2": [ "SPELL_DAYLIGHT" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 200,
+    "cost": 120,
     "fatigue": true,
     "spawn_item": { "type": "spell_pulse", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -693,7 +693,7 @@
     "purifiable": false,
     "category": [ "CLERIC" ],
     "active": true,
-    "cost": 125,
+    "cost": 75,
     "fatigue": true,
     "spawn_item": { "type": "spell_cleric", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -708,7 +708,7 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 125,
+    "cost": 75,
     "fatigue": true,
     "spawn_item": { "type": "spell_bugs", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -722,7 +722,7 @@
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "active": true,
-    "cost": 75,
+    "cost": 45,
     "fatigue": true,
     "spawn_item": { "type": "spell_dampening", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -737,7 +737,7 @@
     "category": [ "VEIL", "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_VEIL", "THRESH_DRAGONBLOOD" ],
     "active": true,
-    "cost": 125,
+    "cost": 75,
     "fatigue": true,
     "spawn_item": { "type": "spell_frostarmor", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -752,7 +752,7 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "active": true,
-    "cost": 150,
+    "cost": 90,
     "fatigue": true,
     "spawn_item": { "type": "spell_shadowsnakes", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -768,7 +768,7 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "active": true,
-    "cost": 125,
+    "cost": 75,
     "fatigue": true,
     "spawn_item": { "type": "spell_summonwyrm", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -783,7 +783,7 @@
     "leads_to": [ "SPELL_SUMMONJABBERWOCK" ],
     "category": [ "DRAGONBLOOD" ],
     "active": true,
-    "cost": 100,
+    "cost": 60,
     "fatigue": true,
     "spawn_item": { "type": "spell_summonfiend", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -799,7 +799,7 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "active": true,
-    "cost": 150,
+    "cost": 90,
     "fatigue": true,
     "spawn_item": { "type": "spell_summonjabberwock", "message": "You focus a fragment of your mind into a magical sign." }
   },
@@ -815,7 +815,7 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "active": true,
-    "cost": 175,
+    "cost": 105,
     "fatigue": true,
     "spawn_item": { "type": "spell_summonyugg", "message": "You focus a fragment of your mind into a magical sign." }
   },

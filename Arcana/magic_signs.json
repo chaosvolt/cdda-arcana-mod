@@ -337,7 +337,7 @@
     "turns_per_charge": 1,
     "countdown_interval": 151,
     "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign augmenting your speed dissipates." },
-    "artifact_data": { "effects_carried": [ "AEP_DEX_UP", "AEP_SPEED_UP" ] }
+    "artifact_data": { "effects_carried": [ "AEP_DEX_UP", "AEP_DEX_UP", "AEP_SPEED_UP" ] }
   },
   {
     "id": "spell_clairvoyance",
@@ -839,7 +839,7 @@
     "turns_per_charge": 1,
     "countdown_interval": 151,
     "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign augmenting your perception dissipates." },
-    "artifact_data": { "effects_carried": [ "AEP_PER_UP" ] },
+    "artifact_data": { "effects_carried": [ "AEP_PER_UP", "AEP_PER_UP" ] },
     "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE", "ZOOM" ]
   },
   {
@@ -972,7 +972,7 @@
     "turns_per_charge": 1,
     "countdown_interval": 151,
     "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign augmenting your strength dissipates." },
-    "artifact_data": { "effects_carried": [ "AEP_STR_UP" ] }
+    "artifact_data": { "effects_carried": [ "AEP_STR_UP", "AEP_STR_UP" ] }
   },
   {
     "id": "spell_psyshield",
