@@ -15,15 +15,11 @@
   },
   {
     "type": "mod_tileset",
-    "compatibility": [ "MshockXottoplus" ],
+    "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE" ],
     "tiles-new": [
       {
-        "file": "arcana_expan_xotto.png",
+        "file": "arcana_expan.png",
         "tiles": [
-          { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 1, "bg": 0 },
-          { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 2, "bg": 0 },
-          { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 3, "bg": 0 },
-          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 4, "bg": 0 },
           { "id": "overlay_mutation_ARCANA_SCALYWINGS", "fg": 5, "bg": 0 },
           { "id": "overlay_mutation_ARCANA_DRAGONWINGS", "fg": 5, "bg": 0 },
           { "id": "overlay_mutation_ARCANA_DRAGONMUZZLE", "fg": 6, "bg": 0 },
@@ -36,6 +32,36 @@
           { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 12, "bg": 0 },
           { "id": "overlay_mutation_ARCANA_DRAGONCLAWS", "fg": 13, "bg": 0 },
           { "id": "overlay_wielded_thunder_sigil", "fg": 14, "bg": 0 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus" ],
+    "tiles-new": [
+      {
+        "file": "arcana_expan.png",
+        "tiles": [
+          { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 1, "bg": 0 },
+          { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 2, "bg": 0 },
+          { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 3, "bg": 0 },
+          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 4, "bg": 0 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MSX++DEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "arcana_expan.png",
+        "tiles": [
+          { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 16, "bg": 0 },
+          { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 17, "bg": 0 },
+          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 18, "bg": 0 },
+          { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 19, "bg": 0 }
         ]
       }
     ]
