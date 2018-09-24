@@ -154,5 +154,33 @@
     "ammo_effects": [ "ACIDBOMB", "TOXICGAS" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "flags": [ "UNBREAKABLE_MELEE", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE" ]
+  },
+  {
+    "id": "monster_fire_fake",
+    "copy-from": "v29",
+    "type": "GUN",
+    "name": "monster fire weapon",
+    "description": "Used to give fire-breathing bosses in Arcana a specific degree of inaccuracy.  If you encounter one of these in the wild, it's a bug.",
+    "dispersion": 7500,
+    "sight_dispersion":1000,
+    "ranged_damage": 10,
+    "pierce": 5,
+    "range": 5,
+    "loudness": 0,
+    "ammo_effects": [ "STREAM", "INCENDIARY" ]
+  },
+  {
+    "id": "monster_lightning_fake",
+    "copy-from": "v29",
+    "type": "GUN",
+    "name": "monster lightning weapon",
+    "description": "Used to give the Host of the Archon a specific degree of inaccuracy.  If you encounter one of these in the wild, it's a bug.",
+    "dispersion": 5000,
+    "sight_dispersion": 1000,
+    "ranged_damage": 10,
+    "pierce": 10,
+    "range": 12,
+    "loudness": 50,
+    "ammo_effects": [ "LIGHTNING", "EMP" ]
   }
 ]

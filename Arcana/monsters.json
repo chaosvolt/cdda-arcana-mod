@@ -565,7 +565,23 @@
     "armor_cut": 6,
     "vision_day": 50,
     "luminance": 200,
-    "special_attacks": [ [ "FLAMETHROWER", 10 ] ],
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 10,
+        "move_cost": 500,
+        "gun_type": "monster_fire_fake",
+        "ammo_type": "generic_no_ammo",
+        "fake_str": 5,
+        "fake_dex": 4,
+        "fake_per": 6,
+        "max_ammo": 1000,
+        "ranges": [ [ 3, 5, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "Wicked flames erupt from the spirit of fire!",
+        "no_ammo_sound": "a distorted growl!"
+      }
+    ],
     "death_drops": { "subtype": "collection", "groups": [ [ "essence_boss", 100 ] ], "//": "boss-level essence" },
     "death_function": [ "MELT" ],
     "flags": [
@@ -628,7 +644,7 @@
     "name": "host of the archon",
     "description": "A tall, robed figure twisted into a mockery of the human form, brandishing a strange golden talisman.  You feel an otherworldly presence about it.",
     "default_faction": "archon",
-    "species": [ "MUTANT" ],
+    "species": [ "NETHER" ],
     "diff": 30,
     "size": "LARGE",
     "hp": 400,
@@ -645,10 +661,26 @@
     "melee_damage": [ { "damage_type": "cold", "amount": 5, "armor_multiplier": 0.1 } ],
     "melee_cut": 2,
     "dodge": 2,
-    "armor_bash": 0,
-    "armor_cut": 0,
     "vision_night": 25,
-    "special_attacks": [ [ "FEAR_PARALYZE", 40 ], [ "PARROT", 25 ], [ "SHOCKSTORM", 15 ] ],
+    "special_attacks": [
+      [ "FEAR_PARALYZE", 40 ],
+      [ "PARROT", 25 ],
+      {
+        "type": "gun",
+        "cooldown": 15,
+        "move_cost": 50,
+        "gun_type": "monster_lightning_fake",
+        "ammo_type": "generic_no_ammo",
+        "fake_str": 8,
+        "fake_dex": 7,
+        "fake_per": 9,
+        "max_ammo": 1000,
+        "ranges": [ [ 3, 12, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "A beam of lightning arcs from the host of the archon's symbol of judgement!",
+        "no_ammo_sound": "a horrific screech!"
+      }
+    ],
     "death_drops": "archon_drops",
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "BONES", "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
@@ -680,7 +712,25 @@
     "armor_cut": 8,
     "vision_day": 50,
     "vision_night": 30,
-    "special_attacks": [ [ "FLESH_GOLEM", 5 ], { "type": "bite", "cooldown": 10 }, [ "FLAMETHROWER", 10 ] ],
+    "special_attacks": [
+      [ "FLESH_GOLEM", 5 ],
+      { "type": "bite", "cooldown": 10 },
+      {
+        "type": "gun",
+        "cooldown": 10,
+        "move_cost": 500,
+        "gun_type": "monster_fire_fake",
+        "ammo_type": "generic_no_ammo",
+        "fake_str": 9,
+        "fake_dex": 3,
+        "fake_per": 5,
+        "max_ammo": 1000,
+        "ranges": [ [ 3, 5, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "Wicked flames erupt from the dracolich's mouth!",
+        "no_ammo_sound": "a howl of feral anger!"
+      }
+    ],
     "death_drops": "dracolich_boss_drops",
     "death_function": [ "NORMAL" ],
     "flags": [
