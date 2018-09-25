@@ -644,7 +644,7 @@
     "name": "host of the archon",
     "description": "A tall, robed figure twisted into a mockery of the human form, brandishing a strange golden talisman.  You feel an otherworldly presence about it.",
     "default_faction": "archon",
-    "species": [ "NETHER" ],
+    "species": [ "HORROR" ],
     "diff": 30,
     "size": "LARGE",
     "hp": 400,
@@ -656,9 +656,9 @@
     "aggression": 100,
     "morale": 100,
     "melee_skill": 9,
-    "melee_dice": 3,
+    "melee_dice": 2,
     "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "cold", "amount": 5, "armor_multiplier": 0.1 } ],
+    "melee_damage": [ { "damage_type": "cold", "amount": 4, "armor_multiplier": 0.1 } ],
     "melee_cut": 2,
     "dodge": 2,
     "vision_night": 25,
@@ -675,7 +675,7 @@
         "fake_dex": 7,
         "fake_per": 9,
         "max_ammo": 1000,
-        "ranges": [ [ 3, 12, "DEFAULT" ] ],
+        "ranges": [ [ 2, 12, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "A beam of lightning arcs from the host of the archon's symbol of judgement!",
         "no_ammo_sound": "a horrific screech!"
@@ -683,7 +683,7 @@
     ],
     "death_drops": "archon_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "BONES", "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
+    "flags": [ "ELECTRIC", "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "BONES", "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
     "//": "Here, have some chalice-specific loot"
   },
   {
