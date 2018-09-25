@@ -51,7 +51,7 @@
       { "group": "shoes", "damage": [ 1, 4 ] },
       { "group": "summoner_drops", "prob": 25 },
       { "group": "magic_consumables", "prob": 10 },
-      { "item": "bone_human", "prob": 100, "charges-min": 3, "charges-max": 9 }
+      { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
   },
   {
@@ -168,14 +168,14 @@
       },
       "furniture": { "B": "f_bookcase", "Z": "f_bed", "r": "f_rack" },
       "place_loot": [
-        { "group": "summoner_casualties", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 100, "repeat": [ 2, 6 ] },
+        { "group": "summoner_casualties", "x": [ 1, 22 ], "y": [ 1, 22 ], "repeat": 6 },
         { "item": "book_syncretism", "x": 18, "y": 1, "chance": 40 },
-        { "item": "note_grove", "x": [ 11, 15 ], "y": [ 13, 15 ], "chance": 100 },
-        { "item": "arcanemap", "x": 16, "y": [ 3, 4 ], "chance": 100 },
-        { "group": "unaligned_arcanist_books", "x": 16, "y": [ 1, 4 ], "chance": 50, "repeat": [ 2, 8 ] },
-        { "group": "unaligned_arcanist_spells", "x": 16, "y": [ 1, 4 ], "chance": 5, "repeat": [ 2, 5 ] },
-        { "group": "magic_crafting", "x": 1, "y": [ 13, 15 ], "chance": 40, "repeat": [ 3, 6 ] },
-        { "group": "magic_consumables", "x": 8, "y": [ 13, 14 ], "chance": 50, "repeat": [ 2, 5 ] }
+        { "item": "note_grove", "x": [ 11, 15 ], "y": [ 13, 15 ] },
+        { "item": "arcanemap", "x": 16, "y": [ 3, 4 ] },
+        { "group": "unaligned_arcanist_books", "x": 16, "y": [ 1, 4 ], "chance": 50, "repeat": 8 },
+        { "group": "unaligned_arcanist_spells", "x": 16, "y": [ 1, 4 ], "chance": 5, "repeat": 4 },
+        { "group": "magic_crafting", "x": 1, "y": [ 13, 15 ], "chance": 40, "repeat": 6 },
+        { "group": "magic_consumables", "x": 8, "y": [ 13, 14 ], "chance": 50, "repeat": 5 }
       ],
       "place_monsters": [ { "monster": "GROUP_GROVEBASEMENT", "x": [ 2, 22 ], "y": [ 2, 22 ], "density": 0.2 } ],
       "place_monster": [ { "monster": "mon_moruboru", "x": 2, "y": 8 } ]

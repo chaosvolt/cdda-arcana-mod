@@ -42,7 +42,7 @@
     "id": "sanguine_cult_consumables",
     "type": "item_group",
     "items": [
-      { "item": "essence_blood", "prob": 10, "count-min": 1, "count-max": 3 },
+      { "item": "essence_blood", "prob": 10, "count": [ 1, 3 ] },
       [ "numbness_potion", 4 ],
       [ "strength_potion", 1 ],
       [ "speed_potion", 2 ],
@@ -346,8 +346,8 @@
         { "group": "cult_sacrifice", "x": 20, "y": 5, "chance": 100 },
         { "group": "sanguine_ritual", "x": 23, "y": 3, "chance": 100 },
         { "item": "arcanemap", "x": 8, "y": [ 6, 12 ], "chance": 75 },
-        { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 7, 13 ], "chance": 60, "repeat": [ 7, 14 ] },
-        { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 7, 13 ], "chance": 5, "repeat": [ 1, 3 ] }
+        { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 7, 13 ], "chance": 60, "repeat": 12 },
+        { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 7, 13 ], "chance": 5 }
       ],
       "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 11, 23 ], "y": [ 11, 23 ], "density": 0.15 } ],
       "place_monster": [ { "monster": "mon_dracolich", "x": 23, "y": 4 } ]
@@ -542,9 +542,9 @@
       "place_loot": [
         { "group": "cult_sacrifice", "x": 5, "y": 1, "chance": 25 },
         { "group": "cult_sacrifice", "x": 1, "y": 5, "chance": 25 },
-        { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 60, "repeat": [ 7, 14 ] },
+        { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 60, "repeat": 12 },
         { "item": "note_sanguine_tenet", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 90 },
-        { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 5, "repeat": [ 1, 2 ] }
+        { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 5 }
       ],
       "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 12 ], "y": [ 0, 12 ], "density": 0.15 } ]
     }
