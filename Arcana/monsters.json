@@ -576,7 +576,7 @@
         "fake_dex": 4,
         "fake_per": 6,
         "max_ammo": 1000,
-        "ranges": [ [ 3, 5, "DEFAULT" ] ],
+        "ranges": [ [ 2, 5, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the spirit of fire!",
         "no_ammo_sound": "a distorted growl!"
@@ -725,7 +725,7 @@
         "fake_dex": 3,
         "fake_per": 5,
         "max_ammo": 1000,
-        "ranges": [ [ 3, 5, "DEFAULT" ] ],
+        "ranges": [ [ 2, 5, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the dracolich's mouth!",
         "no_ammo_sound": "a howl of feral anger!"
