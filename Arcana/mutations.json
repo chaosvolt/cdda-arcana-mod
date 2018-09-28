@@ -5,7 +5,11 @@
   },
   {
     "type": "mutation_type",
-    "id": "MOUTH"
+    "id": "TEETH"
+  },
+  {
+    "type": "mutation_type",
+    "id": "MUZZLE"
   },
   {
     "type": "mutation_type",
@@ -13,11 +17,7 @@
   },
   {
     "type": "mutation_type",
-    "id": "TAILS"
-  },
-  {
-    "type": "mutation_type",
-    "id": "HEAD"
+    "id": "TAIL"
   },
   {
     "type": "mutation_type",
@@ -1021,7 +1021,7 @@
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_DRAGONMUZZLE" ],
-    "types": [ "MOUTH" ],
+    "types": [ "TEETH" ],
     "attacks": {
       "attack_text_u": "You sink your teeth into %s",
       "attack_text_npc": "%1$s sinks their teeth into %2$s",
@@ -1045,7 +1045,7 @@
     "prereqs2": [ "ARCANA_DRAGONTEETH" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
-    "types": [ "MOUTH" ],
+    "types": [ "TEETH", "MUZZLE" ],
     "restricts_gear": [ "MOUTH" ],
     "social_modifiers": { "intimidate": 20 },
     "attacks": {
@@ -1125,7 +1125,7 @@
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
     "changes_to": [ "ARCANA_DRAGONTAIL" ],
     "category": [ "DRAGONBLOOD" ],
-    "types": [ "TAILS" ],
+    "types": [ "TAIL" ],
     "restricts_gear": [ "LEG_L", "LEG_R" ],
     "allow_soft_gear": true,
     "passive_mods": { "dex_mod": 2 },
@@ -1148,7 +1148,7 @@
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYTAIL" ],
     "category": [ "DRAGONBLOOD" ],
-    "types": [ "TAILS" ],
+    "types": [ "TAIL" ],
     "restricts_gear": [ "LEG_L", "LEG_R" ],
     "allow_soft_gear": true,
     "passive_mods": { "dex_mod": 2 },
@@ -1171,7 +1171,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
-    "types": [ "HEAD", "HORNS" ],
+    "types": [ "HORNS" ],
     "restricts_gear": [ "HEAD" ],
     "allow_soft_gear": true,
     "armor": [ { "parts": "HEAD", "bash": 10, "cut": 15 } ],
