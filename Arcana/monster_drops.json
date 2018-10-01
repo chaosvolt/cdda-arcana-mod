@@ -115,10 +115,10 @@
     "subtype": "collection",
     "entries": [
       { "item": "essence" },
-      { "group": "magic_items", "prob": 5 },
-      { "group": "magic_consumables", "prob": 10 },
-      { "group": "magic_tools", "prob": 15 },
-      { "group": "magic_books", "prob": 20 },
+      { "group": "magic_items", "prob": 10 },
+      { "group": "magic_consumables", "prob": 20 },
+      { "group": "magic_tools", "prob": 30 },
+      { "group": "magic_books", "prob": 40 },
       { "group": "default_zombie_clothes" },
       { "group": "default_zombie_items", "prob": 50 },
       { "item": "cash_card", "prob": 10 }
@@ -127,14 +127,14 @@
   {
     "id": "charred_zombie_death_drops",
     "type": "item_group",
-    "//": "Hax for vault wanderer group, plus 50% chance of blood essence, and tiny chance of other magical gear",
+    "//": "Hax for vault wanderer group, plus 25% chance of blood essence, and tiny chance of other magical gear",
     "subtype": "collection",
     "entries": [
-      { "group": "essence_blood", "prob": 50 },
+      { "group": "essence_blood", "prob": 25 },
       { "group": "magic_items", "prob": 1 },
-      { "group": "magic_consumables", "prob": 3 },
-      { "group": "magic_tools", "prob": 3 },
-      { "group": "magic_books", "prob": 5 },
+      { "group": "magic_consumables", "prob": 2 },
+      { "group": "magic_tools", "prob": 2 },
+      { "group": "magic_books", "prob": 3 },
       { "group": "vault_wanderer" }
     ]
   },
@@ -144,11 +144,11 @@
     "//": "You may or may not get an essence or magical loot.  Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "entries": [
-      { "group": "essence_blood", "prob": 15 },
-      { "group": "magic_items", "prob": 1 },
-      { "group": "magic_consumables", "prob": 3 },
-      { "group": "magic_tools", "prob": 3 },
-      { "group": "magic_books", "prob": 5 }
+      { "group": "essence_blood", "prob": 25 },
+      { "group": "magic_items", "prob": 5 },
+      { "group": "magic_consumables", "prob": 5 },
+      { "group": "magic_tools", "prob": 5 },
+      { "group": "magic_books", "prob": 10 }
     ]
   },
   {
