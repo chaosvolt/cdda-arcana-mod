@@ -18,6 +18,6 @@
     "copy-from": "style_eskrima",
     "type": "martial_art",
     "name": "Eskrima",
-    "extend": { "weapons": ["blood_athame", "moonstone_fang", "staff_druidic"] }
+    "extend": { "weapons": ["graboid_fang", "dermatik_sting", "monster_fang", "blood_athame", "moonstone_fang", "staff_druidic"] }
   }
 ]
