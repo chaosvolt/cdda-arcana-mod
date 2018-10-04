@@ -114,15 +114,16 @@
   {
     "id": "totem_invis",
     "copy-from": "totem_base",
+    "//": "ID retained to avoid breaking stuff.",
     "type": "TOOL",
-    "name": "Obsidian Seal: Invisibility",
-    "name_plural": "Obsidian Seal: Invisibility",
-    "description": "A piece of unnaturally dark stone, shaped into an eccentric design.  Activate it to focus your mind and create a magic sign, granting a temporary invisibility effect.",
+    "name": "Obsidian Seal: Serpentine Shield",
+    "name_plural": "Obsidian Seal: Serpentine Shield",
+    "description": "A piece of unnaturally dark stone, shaped into an eccentric design.  Activate it to focus your mind and create a magic sign, granting a temporary defensive effect that will summon shadowy serpents to aid you.",
     "color": "dark_grey",
     "use_action": {
-      "target": "spell_invis_on",
-      "msg": "You conjure an invisibility spell.  Drop the sign to dispel it early.",
-      "target_charges": 75,
+      "target": "spell_shadowsnakes_on",
+      "msg": "You conjure a defensive spell.  Drop the sign to dispel it early.",
+      "target_charges": 300,
       "active": true,
       "type": "transform"
     }

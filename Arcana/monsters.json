@@ -478,7 +478,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "shadow_gem", 15 ], [ "essence_nether", 10 ] ],
+      "groups": [ [ "essence_nether", 10 ] ],
       "//": "10% chance of nether-level essence."
     }
   },

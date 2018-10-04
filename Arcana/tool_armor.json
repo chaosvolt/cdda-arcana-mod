@@ -201,7 +201,7 @@
     "color": "black",
     "ammo": "essence_type",
     "max_charges": 20,
-    "turns_per_charge": 10,
+    "turns_per_charge": 50,
     "revert_to": "robe_shadow",
     "covers": [ "LEGS", "TORSO", "ARMS" ],
     "coverage": 85,
