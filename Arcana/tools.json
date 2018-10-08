@@ -895,24 +895,17 @@
   },
   {
     "id": "bloodaxe",
+    "copy-from": "hatchet",
     "type": "TOOL",
     "category": "weapons",
     "name": "veinreaver",
     "description": "A hatchet with its axehead stained the dull color of dried blood, making it appear rusted despite being in usable condition.  Using it will channel blood essence into a nasty explosion.",
-    "weight": 907,
-    "volume": 2,
-    "price": 2500,
-    "to_hit": 1,
-    "bashing": 12,
-    "cutting": 6,
-    "material": [ "steel", "wood" ],
     "symbol": ";",
     "looks_like": "hatchet",
     "color": "brown",
     "ammo": "essence_blood_type",
     "max_charges": 1,
     "charges_per_use": 1,
-    "qualities": [ [ "AXE", 2 ], [ "CUT", 1 ], [ "HAMMER", 2 ], [ "HAMMER_FINE", 1 ], [ "BUTCHER", 16 ] ],
     "use_action": [
       {
         "target": "bloodaxe_act",
@@ -923,25 +916,17 @@
         "type": "transform"
       }
     ],
-    "flags": [ "DURABLE_MELEE", "BELT_CLIP", "NONCONDUCTIVE", "NO_SALVAGE" ]
+    "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
     "id": "bloodaxe_act",
     "type": "TOOL",
+    "copy-from": "bloodaxe",
     "category": "weapons",
     "name": "glowing veinreaver",
     "description": "A hatchet, axehead giving off a wicked red glow.  Throwing it might be a smart idea.",
-    "weight": 907,
-    "volume": 2,
-    "price": 2500,
-    "to_hit": 1,
-    "bashing": 12,
-    "cutting": 6,
     "thrown_damage": [ { "damage_type": "cold", "amount": 18 } ],
-    "material": [ "steel", "wood" ],
-    "symbol": ";",
     "looks_like": "hatchet",
-    "color": "brown",
     "ammo": "essence_blood_type",
     "initial_charges": 5,
     "max_charges": 5,
@@ -956,9 +941,9 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "power": 1000, "distance_factor" : 0.3 }
+      "explosion": { "power": 1000, "distance_factor": 0.3 }
     },
-    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
+    "extend": { "flags": [ "LIGHT_8", "NO_UNLOAD", "NO_RELOAD" ] }
   },
   {
     "id": "scroll_sun",
