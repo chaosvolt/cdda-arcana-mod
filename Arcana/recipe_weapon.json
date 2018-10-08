@@ -47,7 +47,7 @@
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
-    "components": [ [ [ "broadsword", 1 ] ], [ [ "gold_small", 135 ] ], [ [ "essence_dull", 25 ] ] ]
+    "components": [ [ [ "broadsword", 1 ] ], [ [ "gold_small", 80 ] ], [ [ "essence_dull", 25 ] ] ]
   },
   {
     "result": "hexenhammer",
@@ -65,7 +65,7 @@
     "components": [
       [ [ "warhammer", 1 ] ],
       [ [ "arcana_holy_symbol_any", 1, "LIST" ], [ "arcana_holy_relic_any", 1, "LIST" ] ],
-      [ [ "silver_small", 240 ] ]
+      [ [ "silver_small", 120 ] ]
     ]
   },
   {

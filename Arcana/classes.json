@@ -36,6 +36,7 @@
   {
     "abstract": "scroll_base",
     "type": "TOOL",
+    "category": "tools",
     "name": "scroll base",
     "weight": 415,
     "volume": 1,
