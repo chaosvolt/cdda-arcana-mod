@@ -920,13 +920,22 @@
   },
   {
     "id": "bloodaxe_act",
+    "//": "Can't use copy-from because qualities refuse to be deleted, causing it to try and choop wood instead of exploding.",
     "type": "TOOL",
-    "copy-from": "bloodaxe",
     "category": "weapons",
     "name": "glowing veinreaver",
     "description": "A hatchet, axehead giving off a wicked red glow.  Throwing it might be a smart idea.",
+    "weight": 907,
+    "volume": 2,
+    "price": 2500,
+    "to_hit": 1,
+    "bashing": 12,
+    "cutting": 6,
     "thrown_damage": [ { "damage_type": "cold", "amount": 18 } ],
+    "material": [ "steel", "wood" ],
+    "symbol": ";",
     "looks_like": "hatchet",
+    "color": "brown",
     "ammo": "essence_blood_type",
     "initial_charges": 5,
     "max_charges": 5,
@@ -941,9 +950,9 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "power": 1000, "distance_factor": 0.3 }
+      "explosion": { "power": 1000, "distance_factor" : 0.3 }
     },
-    "extend": { "flags": [ "LIGHT_8", "NO_UNLOAD", "NO_RELOAD" ] }
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },
   {
     "id": "scroll_sun",
