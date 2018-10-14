@@ -683,7 +683,7 @@
     ],
     "death_drops": "archon_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "ELECTRIC", "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "BONES", "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
+    "flags": [ "ELECTRIC", "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "BONES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
     "//": "Here, have some chalice-specific loot"
   },
   {
