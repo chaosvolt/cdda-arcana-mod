@@ -53,6 +53,19 @@
     ]
   },
   {
+    "id": "sanguine_cult_crafting",
+    "type": "item_group",
+    "items": [
+      [ "gold_small", 10 ],
+      [ "silver_small", 25 ],
+      [ "bone_human", 25 ],
+      [ "rag_bloody", 35 ],
+      [ "scrap", 30 ],
+      [ "diamond", 5 ],
+      [ "brooch", 5 ]
+    ]
+  },
+  {
     "id": "sanguine_cult_casualties",
     "type": "item_group",
     "subtype": "collection",
@@ -346,10 +359,10 @@
         { "group": "cult_sacrifice", "x": 20, "y": 5, "chance": 100 },
         { "group": "sanguine_ritual", "x": 23, "y": 3, "chance": 100 },
         { "item": "arcanemap", "x": 8, "y": [ 6, 12 ], "chance": 75 },
-        { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 7, 13 ], "chance": 60, "repeat": 12 },
+        { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 7, 13 ], "chance": 40, "repeat": 8 },
         { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 7, 13 ], "chance": 5 }
       ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 11, 23 ], "y": [ 11, 23 ], "density": 0.15 } ],
+      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 11, 23 ], "y": [ 11, 23 ], "density": 0.1 } ],
       "place_monster": [ { "monster": "mon_dracolich", "x": 23, "y": 4 } ]
     }
   },
@@ -390,7 +403,7 @@
       "mapping": {
         "t": {
           "furniture": "f_table",
-          "items": [ { "item": "sanguine_cult_gear", "chance": 50 }, { "item": "sanguine_cult_consumables", "chance": 25 } ]
+          "items": [ { "item": "sanguine_cult_crafting", "chance": 50 } ]
         }
       },
       "terrain": {
@@ -419,7 +432,7 @@
         { "group": "cult_sacrifice", "x": 3, "y": 2, "chance": 100 },
         { "group": "cult_sacrifice", "x": 3, "y": 5, "chance": 100 }
       ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 12 ], "y": [ 11, 23 ], "density": 0.15 } ]
+      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 12 ], "y": [ 11, 23 ], "density": 0.1 } ]
     }
   },
   {
@@ -483,7 +496,7 @@
         { "group": "cult_sacrifice", "x": 18, "y": 1, "chance": 25 },
         { "group": "cult_sacrifice", "x": 22, "y": 5, "chance": 25 }
       ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 11, 23 ], "y": [ 0, 12 ], "density": 0.15 } ]
+      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 11, 23 ], "y": [ 0, 12 ], "density": 0.1 } ]
     }
   },
   {
@@ -542,11 +555,11 @@
       "place_loot": [
         { "group": "cult_sacrifice", "x": 5, "y": 1, "chance": 25 },
         { "group": "cult_sacrifice", "x": 1, "y": 5, "chance": 25 },
-        { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 60, "repeat": 12 },
+        { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 40, "repeat": 8 },
         { "item": "note_sanguine_tenet", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 90 },
         { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 5 }
       ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 12 ], "y": [ 0, 12 ], "density": 0.15 } ]
+      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 12 ], "y": [ 0, 12 ], "density": 0.1 } ]
     }
   }
 ]

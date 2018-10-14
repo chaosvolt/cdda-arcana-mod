@@ -55,6 +55,20 @@
     ]
   },
   {
+    "id": "chalice_cult_crafting",
+    "type": "item_group",
+    "items": [
+      [ "gold_small", 25 ],
+      [ "silver_small", 10 ],
+      [ "fur", 10 ],
+      [ "feather", 10 ],
+      [ "charcoal", 5 ],
+      [ "scrap", 20 ],
+      [ "bee_sting", 5 ],
+      [ "chitin_piece", 15 ]
+    ]
+  },
+  {
     "id": "cult_sacrifice",
     "type": "item_group",
     "subtype": "collection",
@@ -283,11 +297,11 @@
       ],
       "mapping": {
         "r": {
-          "items": [ { "item": "chalice_cult_gear", "chance": 40, "repeat": 2 } ],
+          "items": [ { "item": "chalice_cult_consumables", "chance": 25, "repeat": 2 }, { "item": "chalice_cult_gear", "chance": 25, "repeat": 2 } ],
           "item": [ { "item": "glass_shard", "chance": 50, "repeat": 2 } ]
         },
         "C": {
-          "items": [ { "item": "chalice_cult_consumables", "chance": 25, "repeat": 2 } ],
+          "items": [ { "item": "chalice_cult_crafting", "chance": 30, "repeat": 4 } ],
           "item": [ { "item": "glass_shard", "chance": 50, "repeat": 2 } ]
         },
         ".": { "item": [ { "item": "glass_shard", "chance": 15 } ] }

@@ -7,7 +7,7 @@
   {
     "type": "MONSTER_FACTION",
     "name": "archon",
-    "friendly": [ "nether", "cult" ]
+    "friendly": [ "nether", "cult", "vortex" ]
   },
   {
     "type": "MONSTER_FACTION",
@@ -26,5 +26,10 @@
     "name": "triffid",
     "base_faction": "plant",
     "friendly": [ "moruboru" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "vortex",
+    "friendly": [ "archon" ]
   }
 ]

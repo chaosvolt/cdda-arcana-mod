@@ -313,7 +313,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Agility",
     "name_plural": "Magic Sign: Agility",
-    "description": "A mote of energy that seems to twitch and shiver.  Activate it to grant a temporary agility effect.",
+    "description": "A mote of energy that seems to twitch and shiver.  Activate it to grant a temporary speed and agility-enhancing effect.",
     "color": "yellow",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -626,7 +626,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Conjure Fire",
     "name_plural": "Magic Sign: Conjure Fire",
-    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame, which should be thrown.",
+    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame from the sign itself, which should be thrown.",
     "color": "red",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -769,7 +769,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Healing",
     "name_plural": "Magic Sign: Healing",
-    "description": "A mote of energy that seems almost alive, shifting and shimmering when near living beings.  Activate it to heal the body slightly.",
+    "description": "A mote of energy that seems almost alive, shifting and shimmering when near living beings.  Activate it to heal the body.",
     "color": "yellow",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -815,7 +815,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Insight",
     "name_plural": "Magic Sign: Insight",
-    "description": "A mote of energy, refracting the light in curious ways.  Activate it to grant a temporary boost to perception and your ability to scout out the surrounding area.",
+    "description": "A mote of energy, refracting the light in curious ways.  Activate it to grant a temporary boost to perception, and your ability to scout out the surrounding area.",
     "color": "light_blue",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {

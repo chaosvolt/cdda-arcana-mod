@@ -79,12 +79,11 @@
     "id": "cleansing_flame_crafting",
     "type": "item_group",
     "items": [
-      [ "gold_small", 1 ],
-      [ "gold_small", 10 ],
-      [ "silver_small", 2 ],
-      [ "silver_small", 20 ],
-      [ "scrap", 15 ],
-      [ "copper", 15 ]
+      [ "gold_small", 15 ],
+      [ "silver_small", 15 ],
+      [ "feather", 15 ],
+      [ "scrap", 20 ],
+      [ "copper", 25 ]
     ]
   },
   {
@@ -207,11 +206,11 @@
       "rows": [
         "########################",
         "##......###...###......#",
-        "##B.B.B.##.....##.htth.#",
-        "##B.B.B.#.......#.htth.#",
-        "##B.B.B.+...<...+.htth.#",
-        "##B.B.B.#.......#.htth.#",
-        "##B.B.B.##.....##.htth.#",
+        "##B.B.B.##.....##..ht.B#",
+        "##B.B.B.#.......#..ht.B#",
+        "##B.B.B.+...<...+..ht.B#",
+        "##B.B.B.#.......#..ht.B#",
+        "##B.B.B.##.....##..ht.B#",
         "##......###...###......#",
         "############+###########",
         "###...................##",
@@ -246,8 +245,8 @@
       },
       "furniture": { "B": "f_bookcase", "S": "f_statue", "T": "f_blade_upright", "h": "f_chair", "r": "f_rack", "t": "f_desk" },
       "place_loot": [
-        { "group": "cleansing_flame_crafting", "x": [ 2, 4 ], "y": 20, "chance": 25, "repeat": 5 },
-        { "group": "cleansing_flame_crafting", "x": [ 20, 22 ], "y": 20, "chance": 25, "repeat": 5 },
+        { "group": "cleansing_flame_crafting", "x": [ 2, 4 ], "y": 20, "chance": 30, "repeat": 5 },
+        { "group": "cleansing_flame_crafting", "x": [ 20, 22 ], "y": 20, "chance": 30, "repeat": 5 },
         { "group": "cleansing_flame_gear_consumables", "x": [ 7, 8 ], "y": 20, "chance": 40, "repeat": 3 },
         { "group": "cleansing_flame_gear_consumables", "x": [ 16, 17 ], "y": 20, "chance": 40, "repeat": 3 },
         { "group": "cleansing_flame_gear", "x": [ 2, 8 ], "y": 22, "chance": 20, "repeat": 8 },
@@ -255,14 +254,15 @@
         { "group": "cleansing_flame_gear_magic", "x": [ 2, 8 ], "y": 22, "chance": 20, "repeat": 8 },
         { "group": "cleansing_flame_gear_magic", "x": [ 16, 22 ], "y": 22, "chance": 20, "repeat": 8 },
         { "group": "cleansing_flame_casualties", "x": [ 5, 19 ], "y": [ 11, 15 ], "repeat": 7 },
-        { "group": "add_apprentice", "x": [ 19, 20 ], "y": [ 2, 6 ], "chance": 50, "repeat": 3 },
-        { "item": "arcanemap", "x": [ 19, 20 ], "y": [ 2, 6 ], "chance": 50 },
+        { "group": "add_apprentice", "x": 20, "y": [ 2, 6 ], "chance": 50, "repeat": 3 },
+        { "item": "arcanemap", "x": 20, "y": [ 2, 6 ], "chance": 50 },
         { "group": "cleansing_flame_books", "x": 2, "y": [ 2, 6 ], "chance": 40, "repeat": 6 },
         { "group": "cleansing_flame_books", "x": 4, "y": [ 2, 6 ], "chance": 40, "repeat": 6 },
         { "group": "cleansing_flame_books", "x": 6, "y": [ 2, 6 ], "chance": 40, "repeat": 6 },
-        { "group": "cleansing_flame_spells", "x": 2, "y": [ 2, 6 ], "chance": 5, "repeat": 3 }
+        { "group": "cleansing_flame_books", "x": 22, "y": [ 2, 6 ], "chance": 40, "repeat": 6 },
+        { "group": "cleansing_flame_spells", "x": 22, "y": [ 2, 6 ], "chance": 5, "repeat": 3 }
       ],
-      "place_monsters": [ { "monster": "GROUP_NETHER", "x": [ 2, 22 ], "y": [ 9, 18 ], "density": 0.15 } ]
+      "place_monsters": [ { "monster": "GROUP_CF_BASEMENT", "x": [ 2, 22 ], "y": [ 9, 18 ], "density": 0.15 } ]
     }
   },
   {
