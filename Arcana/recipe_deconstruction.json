@@ -98,26 +98,6 @@
     "components": [ [ [ "copper", 100 ] ], [ [ "essence_dull", 45 ] ] ]
   },
   {
-    "result": "essence",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 3,
-    "time": 30000,
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 15 ] ] ],
-    "flags": [ "BLIND_HARD" ]
-  },
-  {
-    "result": "essence_blood",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 1,
-    "time": 10000,
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 5 ] ] ],
-    "flags": [ "BLIND_HARD" ]
-  },
-  {
     "result": "offering_chalice",
     "type": "uncraft",
     "skill_used": "magic",

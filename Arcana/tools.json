@@ -1317,6 +1317,48 @@
     "flags": [ "NO_SALVAGE" ]
   },
   {
+    "id": "candle_warding",
+    "type": "TOOL",
+    "name": "candle of warding",
+    "name_plural": "candle of warding",
+    "description": "A candle with translucent wax, free of any apparent impurities with a soothing aura about it.  Its ghostly blue flame can start fires using consecrated essence, but emits no light of its own.  It can also be used to place a powerful barrier, but doing so will completely consume the candle.",
+    "weight": 100,
+    "volume": 1,
+    "price": 1000,
+    "material": "essencemat",
+    "symbol": ",",
+    "color": "white",
+    "ammo": "essence_dull_type",
+    "max_charges": 20,
+    "charges_per_use": 1,
+    "//": "Intentionally not given the FIRESTARTER flag, to prevent accidentally wasting essence",
+    "use_action": [
+      { "type": "firestarter", "moves": 50 },
+      {
+        "target": "candle_warding_lit",
+        "msg": "You hold the candle aloft...",
+        "active": true,
+        "need_charges": 20,
+        "need_charges_msg": "The candle must be fully-charged to conjure a barrier.",
+        "menu_text": "Deploy barrier",
+        "type": "transform"
+      }
+    ],
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "candle_warding_lit",
+    "type": "TOOL",
+    "copy-from": "candle_warding",
+    "name": "candle of warding (lit)",
+    "name_plural": "candle of warding (lit)",
+    "description": "A candle with translucent wax, free of any apparent impurities with a soothing aura about it.  The wick burns with an unearthly blue flame.",
+    "price": 0,
+    "charges_per_use": 20,
+    "use_action": { "type": "deploy_furn", "furn_type": "f_candle_barrier" },
+    "extend": { "flags": [ "LIGHT_50", "TRADER_AVOID" ] }
+  },
+  {
     "id": "orb_veil",
     "type": "TOOL",
     "name": "orb of the veil",

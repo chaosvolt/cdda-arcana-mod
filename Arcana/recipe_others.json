@@ -70,6 +70,47 @@
     "components": [ [ [ "bone_twisted", 1 ], [ "gracken_knuckles", 1 ], [ "graboid_fang", 1 ], [ "monster_fang", 1 ] ] ]
   },
   {
+    "result": "essence_dull",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 5000,
+    "batch_time_factors": [ 80, 4 ],
+    "autolearn": true,
+    "result_mult": 5,
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+
+    "components": [
+      [
+        [ "essence_blood", 1 ]
+      ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "essence_dull",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "time": 10000,
+    "batch_time_factors": [ 80, 4 ],
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_hexenhammer", 0 ] ],
+    "result_mult": 15,
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+
+    "components": [
+      [
+        [ "essence", 1 ]
+      ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
     "result": "essence",
     "type": "recipe",
     "category": "CC_OTHER",
