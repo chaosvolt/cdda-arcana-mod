@@ -5,11 +5,12 @@
     "category": "CC_ARMOR",
     "subcategory": "CSC_ARMOR_OTHER",
     "skill_used": "magic",
-    "skills_required": [ "tailor", 0 ],
-    "time": 6000,
+    "time": 40000,
     "autolearn": true,
-    "using": [ [ "filament", 20 ] ],
-    "components": [ [ [ "biollante_bud", 1 ], [ "triffid_queen_flower", 1 ] ] ]
+    "components": [
+      [ [ "filament", 50, "LIST" ], [ "cordage_short", 1, "LIST" ] ],
+      [ [ "biollante_bud", 1 ], [ "triffid_queen_flower", 1 ] ]
+    ]
   },
   {
     "type": "recipe",
@@ -17,10 +18,8 @@
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_OTHER",
     "skill_used": "magic",
-    "skills_required": [ "fabrication", 2 ],
     "time": 30000,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
       [ [ "cordage_short", 1, "LIST" ], [ "necklace", 1 ] ],
       [ [ "vortex_shard", 1 ], [ "blob_gem", 1 ], [ "monster_tear", 1 ], [ "shadow_gem", 1 ] ]
@@ -63,7 +62,7 @@
     "using": [ [ "forging_standard", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
     "tools": [ [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
-    "components": [ [ [ "glass_shard", 1 ], [ "diamond", 1 ], [ "amulet_exotic", 1 ] ], [ [ "copper", 100 ] ] ]
+    "components": [ [ [ "glass_shard", 1 ], [ "amulet_exotic", 1 ], [ "brooch_iridescent", 1 ] ], [ [ "copper", 100 ] ] ]
   },
   {
     "result": "gilded_aegis",
@@ -93,7 +92,11 @@
     "using": [ [ "filament", 9 ], [ "steel_tiny", 2 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 }, { "id": "SEW", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
-    "components": [ [ [ "leather", 2 ], [ "fur", 2 ] ], [ [ "copper", 30 ], [ "silver_small", 30 ], [ "gold_small", 30 ] ], [ [ "essence_dull", 15 ] ] ]
+    "components": [
+      [ [ "leather", 2 ], [ "fur", 2 ] ],
+      [ [ "copper", 30 ], [ "silver_small", 30 ], [ "gold_small", 30 ] ],
+      [ [ "essence_dull", 15 ] ]
+    ]
   },
   {
     "result": "armor_wyrm",
@@ -138,7 +141,11 @@
     "using": [ [ "forging_standard", 3 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
-    "components": [ [ [ "silver_small", 600 ], [ "gold_small", 600 ] ], [ [ "diamond", 1 ], [ "engraved_stone", 1 ] ], [ [ "essence_blood", 6 ] ] ]
+    "components": [
+      [ [ "silver_small", 600 ], [ "gold_small", 600 ] ],
+      [ [ "diamond", 1 ], [ "engraved_stone", 1 ] ],
+      [ [ "essence_blood", 6 ] ]
+    ]
   },
   {
     "result": "gauntlets_necro",

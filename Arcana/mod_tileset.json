@@ -31,7 +31,11 @@
           { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 11, "bg": 0 },
           { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 12, "bg": 0 },
           { "id": "overlay_mutation_ARCANA_DRAGONCLAWS", "fg": 13, "bg": 0 },
-          { "id": "overlay_wielded_thunder_sigil", "fg": 14, "bg": 0 }
+          { "id": "overlay_wielded_thunder_sigil", "fg": 14, "bg": 0 },
+          { "id": "flame_talisman", "fg": 15, "bg": 0 },
+          { "id": "candle_warding", "fg": 21, "bg": 0 },
+          { "id": "f_candle_barrier", "fg": 21, "bg": 20 },
+          { "id": "f_candle_barrier_playermade", "fg": 22, "bg": 20 }
         ]
       }
     ]
