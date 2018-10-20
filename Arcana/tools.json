@@ -182,12 +182,7 @@
     "techniques": [ "WBLOCK_2", "VORPAL" ],
     "use_action": [
       { "type": "firestarter", "moves": 15 },
-      {
-        "menu_text": "Turn off",
-        "type": "transform",
-        "msg": "The sword's radiance fades.",
-        "target": "sun_sword"
-      }
+      { "menu_text": "Turn off", "type": "transform", "msg": "The sword's radiance fades.", "target": "sun_sword" }
     ],
     "relative": { "cutting": 5 },
     "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING" ], "techniques": [ "VORPAL" ] },
@@ -717,7 +712,7 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "power": 1000, "distance_factor" : 0.3 }
+      "explosion": { "power": 1000, "distance_factor": 0.3 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },
@@ -823,7 +818,50 @@
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": {
-      "effects_activated": [ "AEA_GROWTH", "AEA_MUTATE", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL" ]
+      "effects_activated": [
+        "AEA_GROWTH",
+        "AEA_MUTATE",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL",
+        "AEA_HEAL"
+      ]
     },
     "use_action": "ARTIFACT"
   },
@@ -850,7 +888,23 @@
     "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a horrid noise, toppling nearby structures and harming creatures around you.  It might attract unwanted attention as well.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "artifact_data": { "effects_activated": [ "AEA_PULSE", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_HURTALL", "AEA_ATTENTION", "AEA_SCREAM" ] },
+    "artifact_data": {
+      "effects_activated": [
+        "AEA_PULSE",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_HURTALL",
+        "AEA_ATTENTION",
+        "AEA_SCREAM"
+      ]
+    },
     "use_action": "ARTIFACT"
   },
   {
@@ -902,10 +956,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "ACIDSPRAY"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "ACIDSPRAY" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -931,10 +982,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "AGILITY"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "AGILITY" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -960,10 +1008,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "CLAIRVOYANCE"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "CLAIRVOYANCE" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -989,10 +1034,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "CLARITY"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "CLARITY" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1018,10 +1060,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "CONFUSE"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "CONFUSE" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1047,10 +1086,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "FLAMEARMOR"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "FLAMEARMOR" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1076,10 +1112,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "FREEACTION"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "FREEACTION" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1105,10 +1138,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "HEAL"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "HEAL" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1134,10 +1164,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "INSIGHT"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "INSIGHT" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1165,10 +1192,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "INVIS"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "INVIS" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1194,10 +1218,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "ELECRESIST"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "ELECRESIST" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1223,10 +1244,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "MIGHT"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "MIGHT" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1252,10 +1270,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "OVERGROWTH"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "OVERGROWTH" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1281,10 +1296,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "LIGHTNING"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "LIGHTNING" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1310,10 +1322,37 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action" : {
-      "type" : "mutagen",
-      "mutation_category" : "CLERIC"
-    },
+    "use_action": { "type": "mutagen", "mutation_category": "CLERIC" },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "flame_talisman",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "tools",
+    "name": "flame talisman",
+    "description": "A crude paper talisman marked with strange patterns, and annointed with a meager sacrifice.  It can be used to rapidly spark a fire, if you're desparate.",
+    "weight": 150,
+    "volume": 1,
+    "material": "paper",
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": { "type": "firestarter", "moves": 10 },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "candle_warding",
+    "type": "TOOL",
+    "name": "candle of warding",
+    "name_plural": "candle of warding",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Though its ghostly blue flame emits neither light nor heat, it can be used to place a magical barrier.  The barrier this item creates is not indestructable, but it is tough.",
+    "weight": 100,
+    "volume": 1,
+    "price": 1000,
+    "material": "essencemat",
+    "symbol": ",",
+    "color": "white",
+    "use_action": { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1436,10 +1475,7 @@
     "charges_per_use": 1,
     "turns_per_charge": 1,
     "revert_to": "veilblade",
-    "use_action" : {
-      "type" : "mutagen_iv",
-      "mutation_category" : "VEIL"
-    },
+    "use_action": { "type": "mutagen_iv", "mutation_category": "VEIL" },
     "relative": { "cutting": 60 },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
@@ -1460,10 +1496,7 @@
     "ammo": "essence_blood_type",
     "max_charges": 10,
     "charges_per_use": 10,
-    "use_action" : {
-      "type" : "mutagen_iv",
-      "mutation_category" : "DRAGONBLOOD"
-    }
+    "use_action": { "type": "mutagen_iv", "mutation_category": "DRAGONBLOOD" }
   },
   {
     "id": "stormbringer",

@@ -64,10 +64,63 @@
     "subcategory": "CSC_OTHER_OTHER",
     "skill_used": "magic",
     "time": 30000,
-    "skills_required": [ [ "fabrication", 1 ] ],
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "bone_twisted", 1 ], [ "gracken_knuckles", 1 ], [ "graboid_fang", 1 ], [ "monster_fang", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "flame_talisman",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "time": 10000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [
+        [ "essence_blood", 1 ],
+        [ "essence_dull", 5 ],
+        [ "veggy_wild", 10 ],
+        [ "cattail_stalk", 30 ],
+        [ "wild_herbs", 100 ]
+      ]
+    ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "essence_dull",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": 5000,
+    "batch_time_factors": [ 80, 4 ],
+    "autolearn": true,
+    "result_mult": 5,
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "essence_blood", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "essence_dull",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "time": 10000,
+    "batch_time_factors": [ 80, 4 ],
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_hexenhammer", 0 ] ],
+    "result_mult": 15,
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "essence", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
   },
   {
     "result": "essence",
@@ -559,6 +612,25 @@
     "using": [ [ "arcana_essence_any", 2 ], [ "arcana_polishing_standard", 1 ] ],
     "tools": [ [ [ "book_syncretism", -1 ] ] ],
     "components": [ [ [ "vortex_shard", 3 ], [ "spiral_stone", 6 ] ] ]
+  },
+  {
+    "result": "candle_warding",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 30000,
+    "book_learn": [ [ "book_syncretism", 4 ], [ "book_hexenhammer", 5 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "book_syncretism", -1 ], [ "book_hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "candle", 1 ] ],
+      [ [ "flame_talisman", 1 ] ],
+      [ [ "salt", 20 ] ],
+      [ [ "essence_blood", 2 ], [ "essence_dull", 10 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
   },
   {
     "result": "staff_druidic",
