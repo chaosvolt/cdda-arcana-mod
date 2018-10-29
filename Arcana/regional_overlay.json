@@ -1,0 +1,12 @@
+[
+   {
+      "type": "region_overlay",
+      "id": "arcana_overlay",
+      "regions": [ "all" ],
+      "city": {
+          "basements": {
+              "arcanist_basement": 150
+          }
+      }
+   }
+]

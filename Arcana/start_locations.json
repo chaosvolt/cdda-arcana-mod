@@ -24,5 +24,23 @@
     "ident": "curious_structure",
     "name": "Curious Structure",
     "target": "curious_structure"
+  },
+  {
+    "type": "start_location",
+    "ident": "arcanist_basement",
+    "name": "Arcanist Basement",
+    "target": "arcanist_basement"
+  },
+  {
+    "type": "start_location",
+    "ident": "cathedral_basement",
+    "name": "Cathedral",
+    "target": "cathedral_b_NW"
+  },
+  {
+    "type": "start_location",
+    "ident": "necropolis_basement",
+    "name": "Ruined City ...?",
+    "target": "necropolis_b_54"
   }
 ]
