@@ -206,7 +206,6 @@
     "items": {
       "both": {
         "items": [
-          "armor_wyrm",
           "duster",
           "backpack",
           "tricorne",
@@ -218,8 +217,9 @@
           "book_bloodmagic"
         ],
         "entries": [
+          { "item": "armor_wyrm", "ammo-item": "essence_blood", "charges": [ 4, 8 ] },
           { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 1 },
-          { "item": "2_shot_special", "ammo-item": "38_special", "container-item": "holster" },
+          { "item": "2_shot_special", "ammo-item": "38_special", "charges": 2, "container-item": "holster" },
           { "item": "38_special", "charges": 18, "container-item": "bandolier_pistol" },
           { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
           { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] }
@@ -263,7 +263,7 @@
         ],
         "entries": [
           { "item": "v29", "container-item": "sholster" },
-          { "item": "sun_sword", "charges": 15, "container-item": "scabbard" },
+          { "item": "sun_sword", "charges": 10, "container-item": "scabbard" },
           { "item": "UPS_off", "charges": [ 200, 400 ] }
         ]
       },
