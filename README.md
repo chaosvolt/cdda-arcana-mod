@@ -13,7 +13,7 @@ This is a mod idea I cooked up a long time ago, first mentioned the idea over on
 * Dull essence is obtained by dismantling magic items and essence using the correct tool. Used to craft and fuel certain items.
 
 ## Scenarios and Professions
-* __Seeker of The Arcane__ is the scenario added to allow players a good way to dive right into arcane content. In it you are a visitor to one of the forgotten locations where practitioners of the arcane once lived. Each has an assortment of items, monsters, a powerful enemy at the end, and a unique item to be retrieved.
+* __Seeker of The Arcane__ is a scenario added to allow players a good way to dive right into Arcana. In it you are a visitor to one of the forgotten locations where practitioners of the arcane once lived. Each has an assortment of items, monsters, a powerful enemy at the end, and a unique item to be retrieved.
 * The apprentice is a mere baseline class used as something with no special talents or point costs, but still starts with a bare minimum to get into the first level of arcana.
 * The alchemist, scribe, and summoner are mainly utility professions, designed to easily get into the basics of their chosen craft. None of them are especially combat-ready, though the summoner stands a reasonable chance with its initial stock of minions.
 * The Blood Mage, Mage Hunter, and Dark Priest each are a remnant of a given group, and each has come relatively prepared for battle. One of the __Sanguine Order__, one of the __Cleansing Flame__, and one of the __Keepers of The Oath__.
@@ -47,7 +47,7 @@ This is a mod idea I cooked up a long time ago, first mentioned the idea over on
 ## Major Items
 * Sanguine Codex can teach the reader to create items linked to the Sanguine Order. Aside from the athame itself this can include a hellfire stave that shoots fire, the veinreaver axe as an explosive weapon, the revenant crown that protects against poisons and other effects, or wyrmskin armor capable of conjuring sprays of acid.
 * The Cleansing Flame is dedicated to the items used by the mage-hunting order of the same name. While the hammer itself is both a weapon and tool there's also the incorruptible sword that can bring fire to enemies in close combat, the wraithslayer crossbow with potent bolts of piercing light, the gilded aegis for healing, or the mask of insight to gain clairvoyance and protection from the hammer's blinding flare.
-* Oaths to The Chalice focuses on the items associated with The Keepers of The Oath, in addition to its uses for the chalice itself. Items include the lightning-shooting symbol of judgement, invisibility-granting mantle of shadows, the spear of pestilence that can conjure a host of mutated vermin, and thunder gauntlets that add another option for conjuring electricity.
+* Oaths to The Chalice focuses on the items associated with The Keepers of The Oath, in addition to its uses for the chalice itself. Items include the lightning-shooting symbol of judgement, invisibility-granting mantle of shadows, the Spear of Pestilence which can conjure a host of mutated vermin, and Thunder Gauntlets that let you conjure lightning.
 
 ## Magical Items
 * Certain monsters drop specific items, as mentioned above. Initially the only use for them is to carve and craft these things into decorate items. While not very useful in and of themselves, working with trophies taken from the Beyond can enlighten those with no formal arcane skill.
