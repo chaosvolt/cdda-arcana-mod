@@ -38,31 +38,31 @@ Needed to dismantle *most* arcane items. Some unique items are even more complex
 
 ## Books
 ##### Apprentice's Notes
- Entry-level 0-to-1 skillbook. Implied to discuss magical concepts using religious metaphors. Can additionally be used to get an earlier grasp on the few recipes that are autolearned.
+> Entry-level 0-to-1 skillbook. Implied to discuss magical concepts using religious metaphors. Can additionally be used to get an earlier grasp on the few recipes that are autolearned.
 
 ##### History of Alchemy
- For crafting potions, and for getting from levels 0 to 3. A madman's interpretation of old alchemical texts, with results that would be profoundly useless without magical essence. You get a cookie if you notice the references to historical alchemical concepts, hidden underneath the stranger things the recipes involve.
+> For crafting potions, and for getting from levels 0 to 3. A madman's interpretation of old alchemical texts, with results that would be profoundly useless without magical essence. You get a cookie if you notice the references to historical alchemical concepts, hidden underneath the stranger things the recipes involve.
 
 ##### The Six Pillars 
-Levels 2-5, requires a decent intellect to understand. Used to craft disposable magic scrolls. Conceals magic lessons behind myths concerning a pantheon of otherworldly gods.
+> Levels 2-5, requires a decent intellect to understand. Used to craft disposable magic scrolls. Conceals magic lessons behind myths concerning a pantheon of otherworldly gods.
 
 ##### Sanguine Codex
-Blood magic, for levels 3-6. Allows crafting the silver athame, and producing blood essence. Second option is for extracting blood essence from a used chalice.
+> Blood magic, for levels 3-6. Allows crafting the silver athame, and producing blood essence. Second option is for extracting blood essence from a used chalice.
 
 ##### The Cleansing Flame 
-Levels 4-7. Religious book, written by an order of witch-hunters, it allows crafting a select number of sanctioned items fueled by dull essence.
+> Levels 4-7. Religious book, written by an order of witch-hunters, it allows crafting a select number of sanctioned items fueled by dull essence.
 
 ##### Oaths to the Chalice 
-Also a religious book, skill levels 5-8. Allows crafting the offering chalice, recipes for sacrificing items to obtain essence, and magic items related to The Keepers of The Oath. Also needed to extract blood essence from a used chalice.
+> Also a religious book, skill levels 5-8. Allows crafting the offering chalice, recipes for sacrificing items to obtain essence, and magic items related to The Keepers of The Oath. Also needed to extract blood essence from a used chalice.
 
 ##### To Master the Unknown 
-Levels 6-10. A book for summoning your very own pet monstrosities.
+> Levels 6-10. A book for summoning your very own pet monstrosities.
 
 ##### A Story in Shadow 
-Levels 8-10. Relatively rare book that combines some of the concepts from the three major factions. Translation: a few magic items with an assortment of useful effects.
+> Levels 8-10. Relatively rare book that combines some of the concepts from the three major factions. Translation: a few magic items with an assortment of useful effects.
 
 ##### Strange Map 
-Technically not a book but instead a mapping item, revealing most anomalous locations.
+> Technically not a book but instead a mapping item, revealing most anomalous locations.
 
 ## Tools of The Trade
 
