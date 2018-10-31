@@ -119,7 +119,7 @@ A scenario added to allow players a good way to dive right into Arcana. In it yo
 
 
 
-##The Structures and their artifacts:
+## The Structures and their artifacts:
 
 ##### Strange Grove
 *Before the major factions of arcanists had gained the power they held as the Cataclysm loomed closer, there were the patient scholars of the Beyond. They used little more than glimpses through the cracks of the Veil, and slowly advanced their studies. Then one day, they were scattered to the four winds. The decaying, overgrown structure has left little evidence of what caused their downfall, and the monsters that infest it may well be the work of the instability the Cataclysm itself has caused. But the knowledge they brought with them allowed the other orders to flourish, and began the conflicts that would rage in the shadow of the imminent apocalypse.*
