@@ -271,5 +271,19 @@
       "female": [ "sports_bra", "boy_shorts" ]
     },
     "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "ident": "arcanist_scholar",
+    "name": "Arcane Scholar",
+    "description": "You were always the studious type, collecting interesting books.  Over time your studies turned towards the eccentric and anomalous, and as the end of the world struck, you gathered nothing more than your most prized possessions.",
+    "points": 2,
+    "items": {
+      "both": {
+        "items": [ "longshirt", "jacket_light", "pants", "socks", "boots", "gloves_fingerless", "knit_scarf", "mbag", "book_potioncraft", "book_scrollcraft", "book_syncretism" ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "bra", "panties" ]
+    }
   }
 ]
