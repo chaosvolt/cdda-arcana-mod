@@ -16,7 +16,57 @@
       "arcanist_oathkeeper",
       "arcanist_summoner"
     ],
-    "traits": [ "SPELL_FIRE", "SPELL_CONFUSE", "SPELL_AGILE", "SPELL_HEAL", "SPELL_DAMPENING", "SPELL_LIGHT", "SPELL_SUMMONDOG", "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "ARCANA_DRAGONCLAWS", "ARCANA_DRAGONTEETH", "ARCANA_DRAGONHORNS" ]
+    "traits": [
+      "SPELL_FIRE",
+      "SPELL_CONFUSE",
+      "SPELL_AGILE",
+      "SPELL_HEAL",
+      "SPELL_DAMPENING",
+      "SPELL_LIGHT",
+      "SPELL_SUMMONDOG",
+      "ARCANA_SCALYPATCHES",
+      "ARCANA_INNERHEAT",
+      "ARCANA_DRAGONCLAWS",
+      "ARCANA_DRAGONTEETH",
+      "ARCANA_DRAGONHORNS"
+    ]
+  },
+  {
+    "type": "scenario",
+    "name": "Urban Awakening",
+    "description": "Some practiced the arcane in the shadows of civilization.  Either to escape the bickering of distant arcane orders, or to further their goals.  Sooner or later, you'll have to face the apocalypse raging above...",
+    "ident": "arcane_urban",
+    "points": 1,
+    "start_name": "Hidden In Plain Sight",
+    "allowed_locs": [ "arcanist_basement", "cathedral_basement", "necropolis_basement" ],
+    "professions": [
+      "unemployed",
+      "priest",
+      "shinto_priest",
+      "imam",
+      "rabbi",
+      "guru",
+      "preacher",
+      "scoundrel",
+      "detective",
+      "archaeologist",
+      "arcanist_apprentice",
+      "arcanist_scholar",
+      "arcanist_alchemist",
+      "arcanist_scribe",
+      "arcanist_shrike",
+      "arcanist_purifier"
+    ],
+    "traits": [
+      "SPELL_DAYLIGHT",
+      "SPELL_CONFUSE",
+      "SPELL_STRENGTH",
+      "SPELL_AGILE",
+      "SPELL_INSIGHT",
+      "SPELL_CLARITY",
+      "SPELL_POISONARMOR",
+      "SPELL_LOCKPICK"
+    ]
   },
   {
     "type": "scenario",

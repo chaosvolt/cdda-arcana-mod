@@ -187,5 +187,103 @@
       "female": [ "bra", "panties" ]
     },
     "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "ident": "arcanist_shrike",
+    "name": "Sanguine Shrike",
+    "description": "You were a hunter of hunters, protecting your fellow blood mages during rituals and important missions.  As the Sanguine Order crumbled, many of your brethren strayed from The Path and left the Order to rot.  Will you follow suit?",
+    "points": 7,
+    "skills": [
+      { "level": 3, "name": "magic" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "cutting" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "throw" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "duster",
+          "backpack",
+          "tricorne",
+          "socks",
+          "boots",
+          "flask_hip",
+          "ref_lighter",
+          "bowl_clay",
+          "book_bloodmagic"
+        ],
+        "entries": [
+          { "item": "armor_wyrm", "ammo-item": "essence_blood", "charges": [ 4, 8 ] },
+          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 1 },
+          { "item": "2_shot_special", "ammo-item": "38_special", "charges": 2, "container-item": "holster" },
+          { "item": "38_special", "charges": 18, "container-item": "bandolier_pistol" },
+          { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boy_shorts" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "ident": "arcanist_purifier",
+    "name": "Arcane Purifier",
+    "description": "You have embraced modern technology and mystical power alike, in your pursuit of knowledge and a way to prevent the cataclysm. Once of the Cleansing Flame, whether you went rogue or still honor their ideals, that no longer matters anymore.",
+    "points": 8,
+    "CBMs": [ "bio_lockpick", "bio_fingerhack", "bio_batteries", "bio_power_storage" ],
+    "skills": [
+      { "level": 4, "name": "magic" },
+      { "level": 1, "name": "computer" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "cutting" },
+      { "level": 2, "name": "gun" },
+      { "level": 1, "name": "pistol" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "tshirt",
+          "pants_cargo",
+          "trenchcoat",
+          "socks",
+          "boots",
+          "gloves_fingerless",
+          "knit_scarf",
+          "backpack",
+          "smart_phone",
+          "matches",
+          "bowl_clay",
+          "book_hexenhammer"
+        ],
+        "entries": [
+          { "item": "v29", "container-item": "sholster" },
+          { "item": "sun_sword", "charges": 10, "container-item": "scabbard" },
+          { "item": "UPS_off", "charges": [ 200, 400 ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boy_shorts" ]
+    },
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "ident": "arcanist_scholar",
+    "name": "Arcane Scholar",
+    "description": "You were always the studious type, collecting interesting books.  Over time your studies turned towards the eccentric and anomalous, and as the end of the world struck, you gathered nothing more than your most prized possessions.",
+    "points": 2,
+    "items": {
+      "both": {
+        "items": [ "longshirt", "jacket_light", "pants", "socks", "boots", "gloves_leather", "knit_scarf", "mbag", "book_potioncraft", "book_scrollcraft", "book_syncretism" ]
+      },
+      "male": [ "boxer_briefs" ],
+      "female": [ "bra", "panties" ]
+    }
   }
 ]

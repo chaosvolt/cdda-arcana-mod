@@ -242,5 +242,10 @@
     "see_cost": 5,
     "extras": "field",
     "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "arcanist_basement",
+    "copy-from": "generic_city_house_basement"
   }
 ]
