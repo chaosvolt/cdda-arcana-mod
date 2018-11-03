@@ -14,7 +14,7 @@
     "charges_per_use": 15,
     "artifact_data": { "effects_activated": [ "AEA_PAIN", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL" ] },
     "use_action": "ARTIFACT",
-    "relative": { "weight": 3020, "price": 7200,"material_thickness": 1, "encumbrance": 2 },
+    "relative": { "weight": 3020, "price": 7200, "material_thickness": 1, "encumbrance": 2 },
     "extend": { "flags": [ "NO_SALVAGE", "HELMET_COMPAT" ] }
   },
   {
@@ -201,6 +201,48 @@
       "effects": [ { "id": "heat_ward", "duration": 1000 } ]
     },
     "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS" ]
+  },
+  {
+    "id": "meteoric_talisman",
+    "type": "ARMOR",
+    "name": "meteoric talisman",
+    "category": "armor",
+    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  Wearing and activating it will ward against electricity, but also slow the body.",
+    "weight": 60,
+    "volume": 1,
+    "price": 12000,
+    "material": [ "hardsteel" ],
+    "symbol": "[",
+    "looks_like": "brooch",
+    "color": "light_gray",
+    "ammo": "essence_dull_type",
+    "max_charges": 20,
+    "use_action": {
+      "target": "meteoric_talisman_on",
+      "msg": "As you activate the talisman, you feel insulated in a strange manner.",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The charm against lightning needs purified essence to function.",
+      "type": "transform"
+    },
+    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY", "AEP_SPEED_DOWN" ] },
+    "flags": [ "FANCY", "NO_SALVAGE" ]
+  },
+  {
+    "id": "meteoric_talisman_on",
+    "copy-from": "meteoric_talisman",
+    "type": "ARMOR",
+    "name": "meteoric talisman (active)",
+    "name_plural": "meteoric talismans (active)",
+    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  A strange electric tingle permeates the air around it, hinting at its protective magic.",
+    "turns_per_charge": 25,
+    "revert_to": "meteoric_talisman",
+    "use_action": {
+      "target": "meteoric_talisman",
+      "msg": "The glow fades from the meteoric talisman, its protective magic fading with it.",
+      "type": "transform"
+    },
+    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY", "AEP_SPEED_DOWN" ] }
   },
   {
     "id": "cleric_ring",

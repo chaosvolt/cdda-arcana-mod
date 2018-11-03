@@ -624,39 +624,33 @@
     "id": "spell_fireball",
     "copy-from": "spell_base",
     "type": "TOOL",
-    "name": "Magic Sign: Conjure Fire",
-    "name_plural": "Magic Sign: Conjure Fire",
-    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to conjure a wicked flame from the sign itself, which should be thrown.",
+    "name": "Magic Sign: Fireball",
+    "name_plural": "Magic Sign: Fireball",
+    "description": "A mote of energy that seems to radiate an unearthly heat.  Activate it to project a fiery explosion.",
     "color": "red",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_fireball_on",
-      "msg": "You activate the fire spell.  Throw it!",
-      "target_charges": 5,
+      "msg": "You activate the fireball spell.",
+      "target_charges": 0,
       "active": true,
       "type": "transform"
     }
   },
   {
     "id": "spell_fireball_on",
-    "copy-from": "spell_conjure_base",
+    "copy-from": "spell_base",
     "type": "TOOL",
-    "name": "Magic Sign: Conjure Fire (active)",
-    "name_plural": "Magic Sign: Conjure Fire (active)",
+    "name": "Magic Sign: Fireball (active)",
+    "name_plural": "Magic Sign: Fireball (active)",
     "description": "A mote of energy that seems to radiate an unearthly heat.",
     "color": "red",
     "initial_charges": 0,
-    "max_charges": 5,
+    "max_charges": 1,
+    "charges_per_use": 1,
     "turns_per_charge": 1,
-    "thrown_damage": [ { "damage_type": "heat", "amount": 20 } ],
-    "use_action": {
-      "type": "explosion",
-      "fields_type": "fd_fire",
-      "fields_radius": 3,
-      "fields_min_density": 2,
-      "fields_max_density": 3,
-      "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead."
-    }
+    "artifact_data": { "effects_activated": [ "AEA_ACIDBALL" ] },
+    "use_action": "ARTIFACT"
   },
   {
     "id": "spell_flamearmor",
@@ -1209,7 +1203,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Dark Wyrm",
     "name_plural": "Magic Sign: Summon Dark Wyrm",
-    "description": "A mote of energy with endless coils perceived inside it.  Activate it to summon a dark wyrm, but beware that sunlight will kill it.",
+    "description": "A mote of energy with endless coils perceived inside it.  Activate it to summon a dark wyrm, but beware that sunlight will kill it.  It is somewhat difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -1250,7 +1244,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Fiend",
     "name_plural": "Magic Sign: Summon Fiend",
-    "description": "A mote of energy with a smoldering wildfire perceived inside it.  Activate it to summon an ashen revenent.",
+    "description": "A mote of energy with a smoldering wildfire perceived inside it.  Activate it to summon an ashen revenent.  It is somewhat easy to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -1291,7 +1285,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Jabberwock",
     "name_plural": "Magic Sign: Summon Jabberwock",
-    "description": "A mote of energy with a dozen screaming faces perceived inside it.  Activate it to summon a golem woven of flesh.",
+    "description": "A mote of energy with a dozen screaming faces perceived inside it.  Activate it to summon a golem woven of flesh.  It is difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -1332,7 +1326,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Homunculus",
     "name_plural": "Magic Sign: Summon Homunculus",
-    "description": "A mote of energy with a leering face perceived inside it.  Activate it to summon a mimicry of the human form.",
+    "description": "A mote of energy with a leering face perceived inside it.  Activate it to summon a mimicry of the human form.  It is somewhat difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -1373,7 +1367,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Horrifying Thing",
     "name_plural": "Magic Sign: Summon Horrifying Thing",
-    "description": "A mote of energy with a writhing abomination perceived inside it.  Activate it to summon a horrifying mass of tendrils.",
+    "description": "A mote of energy with a writhing abomination perceived inside it.  Activate it to summon a horrifying mass of tendrils.  It is difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -1414,7 +1408,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Skeletal Dog",
     "name_plural": "Magic Sign: Summon Skeletal Dog",
-    "description": "A mote of energy with shifting canine shapes perceived inside it.  Activate it to summon an undead hound.",
+    "description": "A mote of energy with shifting canine shapes perceived inside it.  Activate it to summon an undead hound.  It is easy to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -1455,7 +1449,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Skeleton",
     "name_plural": "Magic Sign: Summon Skeleton",
-    "description": "A mote of energy with imagery of the dead perceived inside it.  Activate it to summon the animated dead.",
+    "description": "A mote of energy with imagery of the dead perceived inside it.  Activate it to summon the animated dead.  It is somewhat easy to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -1496,7 +1490,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Vortex",
     "name_plural": "Magic Sign: Summon Vortex",
-    "description": "A mote of energy with swirling shapes perceived inside it.  Activate it to summon the living wind.",
+    "description": "A mote of energy with swirling shapes perceived inside it.  Activate it to summon the living wind.  It is somewhat difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -1537,7 +1531,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Yugg",
     "name_plural": "Magic Sign: Summon Yugg",
-    "description": "A mote of energy with scenes of forbidden wealth perceived inside it.  Activate it to summon a worm-like abomination.",
+    "description": "A mote of energy with scenes of forbidden wealth perceived inside it.  Activate it to summon a worm-like abomination.  It is very difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {

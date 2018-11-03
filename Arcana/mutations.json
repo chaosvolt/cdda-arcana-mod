@@ -337,9 +337,9 @@
   {
     "type": "mutation",
     "id": "SPELL_FIRE",
-    "name": "Arcana: Conjure Fire",
+    "name": "Arcana: Fireball",
     "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a wicked flame from the sign itself, and should be thrown.  Activate to focus your power, draining fatigue.",
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a wicked flame.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL", "DRAGONBLOOD" ],

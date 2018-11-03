@@ -264,7 +264,7 @@
     "copy-from": "silver_glyph",
     "name": "glyph of trickery",
     "name_plural": "glyphs of trickery",
-    "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.",
+    "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
     "use_action": {
       "target": "summon_kreck_on",
       "msg": "The glyph of trickery gives off a faint green glow.",
@@ -304,7 +304,7 @@
     "name": "glyph of the root",
     "name_plural": "glyphs of the root",
     "//": "ID retained to prevent tileset breakage, monster summoned was changed due to blank bodies being outright useless.",
-    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.",
+    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
     "use_action": {
       "target": "summon_blank_on",
       "msg": "The glyph of the root gives off a faint green glow.",
@@ -344,7 +344,7 @@
     "name": "glyph of Gehenna",
     "name_plural": "glyphs of Gehenna",
     "//": "ID retained to prevent tileset breakage, monster summoned was changed due to flaming eyes being useless if friendly.",
-    "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.",
+    "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.  It is difficult to control.",
     "use_action": {
       "target": "summon_flaming_eye_on",
       "msg": "The glyph of Gehenna gives off a faint green glow.",
@@ -384,7 +384,7 @@
     "name": "glyph of Crawling Chaos",
     "name_plural": "glyphs of Crawling Chaos",
     "//": "Explaination: In Lovecraft's work, The Crawling Chaos is one of Nyarlathotep's names, and hunting horrors are associated with him.  The success and failure messages below spell it out rather plainly.",
-    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  Using it during the day might be a bad idea.",
+    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  Using it during the day might be a bad idea.  It is difficult to control.",
     "use_action": {
       "target": "summon_hunting_horror_on",
       "msg": "The glyph of Crawling Chaos gives off a faint green glow.",
@@ -424,7 +424,7 @@
     "name": "glyph of the eye",
     "name_plural": "glyphs of the eye",
     "//": "Explaination: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
-    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  Hopefully.  Using it during the day might be a bad idea.",
+    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  Hopefully.  Using it during the day might be a bad idea.  It is difficult to control.",
     "use_action": {
       "target": "summon_dark_wyrm_on",
       "msg": "The glyph of the eye gives off a faint green glow.",
@@ -464,7 +464,7 @@
     "name": "glyph of Yuggoth",
     "name_plural": "glyphs of Yuggoth",
     "//": "Explaination: Yuggoth is a fictional planet from Lovecraft's work, stated to have been colonized by the mi-go.",
-    "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.",
+    "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.  It is difficult to control.",
     "use_action": {
       "target": "summon_mi_go_on",
       "msg": "The glyph of Yuggoth gives off a faint green glow.",
@@ -503,7 +503,7 @@
     "copy-from": "silver_glyph",
     "name": "glyph of the golem",
     "name_plural": "glyphs of the golem",
-    "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.",
+    "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.  It is very difficult to control.",
     "use_action": {
       "target": "summon_jabberwock_on",
       "msg": "The glyph of the golem gives off a faint green glow.",
@@ -543,7 +543,7 @@
     "name": "glyph of Pnakotus",
     "name_plural": "glyphs of Pnakotus",
     "//": "Explanation: In Lovecraft's works, the Pnakotic Manuscripts were associated with the city of this name, which was overrun by flying polyps in their conflict with the species that built the city.",
-    "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.",
+    "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.  It is very difficult to control.",
     "use_action": {
       "target": "summon_flying_polyp_on",
       "msg": "The glyph of anthozoa gives off a faint green glow.",
@@ -583,7 +583,7 @@
     "name": "glyph of Plouton",
     "name_plural": "glyphs of Plouton",
     "//": "Plouton, Latinized as Pluto, is another name for Hades, and reflects the association with wealth the god had by the time the name was in common use.",
-    "description": "A strange silver emblem, engraved with depictions of ancient, cthonian wealth.  Using it will call forth a yugg, and bind it to your will.  Hopefully.",
+    "description": "A strange silver emblem, engraved with depictions of ancient, cthonian wealth.  Using it will call forth a yugg, and bind it to your will.  Hopefully.  It is very difficult to control.",
     "use_action": {
       "target": "summon_yugg_on",
       "msg": "The glyph of the platyhelminthes gives off a faint green glow.",
@@ -623,7 +623,7 @@
     "name": "glyph of the Elder Things",
     "name_plural": "glyphs of the Elder Things",
     "//": "Explaination: The Elder Things in Lovecraft's work were the creators of shoggoths.",
-    "description": "A strange silver emblem, engraved with many strange eye symbols.  Using it will call forth a shoggoth, and bind it to your will.  Hopefully.",
+    "description": "A strange silver emblem, engraved with many strange eye symbols.  Using it will call forth a shoggoth, and bind it to your will.  Hopefully.  It is very difficult to control.",
     "use_action": {
       "target": "summon_shoggoth_on",
       "msg": "The glyph of the Elder Things gives off a faint green glow.",
@@ -639,7 +639,7 @@
     "copy-from": "silver_glyph",
     "name": "glyph of the Elder Things (active)",
     "name_plural": "glyphs of the Elder Things (active)",
-    "description": "A strange silver emblem, engraved with many strange eye symbols.  Using it will call forth a shoggoth, and bind it to your will.  Hopefully.",
+    "description": "A strange silver emblem, engraved with many strange eye symbols.  Using it will call forth a shoggoth, and bind it to your will.  Hopefully.  It is very difficult to control.",
     "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
@@ -1358,6 +1358,7 @@
   {
     "id": "orb_veil",
     "type": "TOOL",
+    "category": "tools",
     "name": "orb of the veil",
     "name_plural": "orbs of the veil",
     "description": "A mysterious orb made of a dark, almost glassy stone.  An eye pattern is worked into it, using gold for the irises and a diamond pupil.  It is said to represent a desire to protect the old knowledge and old ways, strengthened by a yearning for further enlightenment.  With enough power, it might impart a great deal of knowledge... at a price.",
@@ -1425,8 +1426,8 @@
     "looks_like": "small_relic",
     "color": "dark_gray",
     "ammo": "essence_type",
-    "max_charges": 10,
-    "charges_per_use": 10,
+    "max_charges": 8,
+    "charges_per_use": 8,
     "techniques": [ "RAPID", "DEF_DISARM" ],
     "qualities": [ [ "BUTCHER", 6 ] ],
     "artifact_data": { "effects_wielded": [ "AEP_SNAKES", "AEP_SAP_LIFE", "AEP_SICK", "AEP_SCHIZO" ] },
@@ -1483,7 +1484,7 @@
     "id": "draconic_heart_mutator",
     "type": "TOOL",
     "name": "sacramental heart",
-    "description": "A vibrant red chunk of petrified flesh, purified and set in an ornamental mounting like a morbid brooch.  It resonates with unnatural power, as though imbued with the essence of the creature it was cut away from.  Channeling blood essence through it will start you down the path to becoming  something ...else.  Neither human nor blob-altered mutant, a path you can't return from.",
+    "description": "A vibrant red chunk of petrified flesh, purified and set in an ornamental mounting like a morbid brooch.  It resonates with unnatural power, as though imbued with the essence of the creature it was cut away from.  Channeling blood essence through it will start you down the path to becoming  something ...else.  A path you can't return from.",
     "weight": 2500,
     "volume": 4,
     "price": 15000,

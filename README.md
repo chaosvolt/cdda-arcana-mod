@@ -22,6 +22,16 @@ A scenario added to allow players a good way to dive right into Arcana. In it yo
 
 * The *Blood Mage*, *Mage Hunter*, and *Dark Priest* each are a remnant of a given group, and each has come relatively prepared for battle. One of the __Sanguine Order__, one of the __Cleansing Flame__, and one of the __Keepers of The Oath__.
 
+##### Urban Awakening
+The second scenario added, allowing players another method of getting into the arcane, in more urban scenario. It allows an assortment of professions in the game already, Apprentice, and a few professions.
+
+* The *Arcane Researcher* stole away with a small collection of arcane books, with nothing else but the clothes on their back.
+
+* The *Sanguine Shrike* is a leftover member of the __Sanguine Order__, serving a different role compared to the *Blood Mage* from Seeker of The Arcane.
+
+* The *Arcane Purifier* represents a splinter faction among the __Cleansing Flame__, combining technology and a few basic arcane tools of the trade.
+
+
 ## Item Dismantling
 
 * The *Hammer of the Hunter* is needed to dismantle most arcane items. Some unique items are even more complex and difficult to get rid of, while a few are simpler to dispose of.

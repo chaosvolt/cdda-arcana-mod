@@ -80,20 +80,5 @@
     "material_thickness": 1,
     "artifact_data": { "effects_worn": [ "AEP_CARRY_MORE", "AEP_ATTENTION" ] },
     "flags": [ "WAIST", "OVERSIZE" ]
-  },
-  {
-    "id": "meteoric_talisman",
-    "type": "ARMOR",
-    "name": "meteoric talisman",
-    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  Wearing it will ward against electricity, but it slows the body.",
-    "weight": 60,
-    "volume": 1,
-    "price": 12000,
-    "material": [ "hardsteel" ],
-    "symbol": "[",
-    "looks_like": "brooch",
-    "color": "light_gray",
-    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY", "AEP_SPEED_DOWN" ] },
-    "flags": [ "FANCY" ]
   }
 ]

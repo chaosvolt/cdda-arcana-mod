@@ -2,6 +2,7 @@
   {
     "id": "thunder_sigil",
     "type": "GUN",
+    "category": "weapons",
     "name": "symbol of judgement",
     "name_plural": "symbols of judgement",
     "description": "A large golden band decorated with a trident motif, and inlaid with silver.  For some reason you suspect this to be a perversion of some otherworldly holy symbol, from some cult worlds away.  Firing it calls forth lightning.",
@@ -34,6 +35,7 @@
   {
     "id": "bloodscourge",
     "type": "GUN",
+    "category": "weapons",
     "name": "hellfire stave",
     "name_plural": "hellfire staves",
     "description": "A staff decorated with silver and a skull motif, capped with a strange red gem.  The metal parts feel uncomfortably warm to the touch.  Firing it projects a gout of wicked flame.  While its flames are too potent for starting controlled fires, focusing sunlight through the gem can rapidly start a blaze.",
@@ -67,6 +69,7 @@
   {
     "id": "ethereal_crossbow",
     "type": "GUN",
+    "category": "weapons",
     "name": "wraithslayer crossbow",
     "//": "Unlike the Heretic version, this one is more effective against ghostly monsters.",
     "description": "A crossbow decorated with golden symbols, seemingly lacking a bowstring.  Instead it propels bright green bolts of energy, with significant armor penetration.",
@@ -95,6 +98,7 @@
   {
     "id": "hand_of_armok",
     "type": "GUN",
+    "category": "weapons",
     "name": "demon claw",
     "description": "An ornate weapon resembling a clawed gauntlet, blades perpetually glowing red-hot.  Despite this, the weapon seems safe to wield.  Firing it will smite your enemies with wicked fire, to sate the god of blood.",
     "weight": 92,
@@ -128,6 +132,7 @@
   {
     "id": "scourge_staff",
     "type": "GUN",
+    "category": "weapons",
     "name": "bane staff",
     "name_plural": "bane staves",
     "description": "A wooden staff decorated with gold, capped with a dark blue gem.  The wood gives off a faintly acrid smell.  Firing it will produce pools of acid and toxic fumes.",
