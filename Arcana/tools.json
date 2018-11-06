@@ -1371,9 +1371,9 @@
     "symbol": "*",
     "looks_like": "diamond",
     "color": "dark_gray",
-    "ammo": "essence_type",
-    "max_charges": 13,
-    "charges_per_use": 13,
+    "ammo": "essence_pure_type",
+    "max_charges": 1,
+    "charges_per_use": 1,
     "artifact_data": {
       "effects_activated": [ "AEA_MAP", "AEA_PAIN", "AEA_PAIN", "AEA_PAIN", "AEA_ATTENTION" ],
       "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO" ]
@@ -1443,11 +1443,11 @@
     "type": "TOOL",
     "copy-from": "zweihander",
     "name": "restored ritual blade",
-    "description": "A two-handed sword richly engraved with exotic runes.  Once corrupted and now restored, it remains unsuitable for its ultimate purpose.  But it might still be capable of piercing The Veil, if used right.",
+    "description": "A two-handed sword richly engraved with exotic runes.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Fuel it by lingering near wounds in The Veil, or with crystalized essence.",
     "material": [ "superalloy", "essencemat" ],
     "color": "light_gray",
-    "ammo": "essence_type",
-    "max_charges": 20,
+    "ammo": "essence_pure_type",
+    "max_charges": 1,
     "use_action": [
       {
         "target": "veilblade_on",
@@ -1455,30 +1455,41 @@
         "target_charges": 0,
         "active": true,
         "moves": 50,
-        "need_charges": 20,
-        "need_charges_msg": "Return twenty motes of essence to The Beyond, and be rewarded.",
+        "need_charges": 1,
+        "need_charges_msg": "Return sufficient power to The Beyond, and be rewarded.",
         "menu_text": "Pierce The Veil",
         "type": "transform"
       }
     ],
     "relative": { "weight": -318, "price": 50000 },
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE" ] },
-    "delete": { "flags": [ "DURABLE_MELEE" ] }
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD" ] },
+    "delete": { "flags": [ "DURABLE_MELEE" ] },
+    "artifact_data": { "charge_type": "ARTC_PORTAL" }
   },
   {
     "id": "veilblade_on",
     "type": "TOOL",
-    "copy-from": "veilblade",
+    "category": "weapons",
+    "//": "By nesseecity, can't copy from the base items that have built-in use actions from their qualities.",
     "name": "restored ritual blade (on)",
     "name_plural": "restored ritual blades (on)",
     "description": "A two-handed sword richly engraved with exotic runes.  He From Beyond The Veil, accept this offering...",
+    "weight": 2858,
+    "volume": 13,
+    "price": 210000,
+    "to_hit": 1,
+    "bashing": 17,
+    "cutting": 100,
+    "material": [ "superalloy", "essencemat" ],
+    "symbol": "/",
+    "color": "light_gray",
     "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
     "revert_to": "veilblade",
     "use_action": { "type": "mutagen_iv", "mutation_category": "VEIL" },
-    "relative": { "cutting": 60 },
-    "delete": { "flags": [ "SHEATH_SWORD" ] }
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE" ]
   },
   {
     "id": "draconic_heart_mutator",

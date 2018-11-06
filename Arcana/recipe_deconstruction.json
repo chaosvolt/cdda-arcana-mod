@@ -1,5 +1,14 @@
 [
   {
+    "result": "essence_pure",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": 4000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 150 ] ] ]
+  },
+  {
     "result": "scroll_blank",
     "type": "uncraft",
     "difficulty": 0,
@@ -712,7 +721,7 @@
     "difficulty": 10,
     "time": 100000,
     "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 200 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -722,7 +731,7 @@
     "difficulty": 10,
     "time": 100000,
     "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 200 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -732,7 +741,7 @@
     "difficulty": 10,
     "time": 100000,
     "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 200 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {

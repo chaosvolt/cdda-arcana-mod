@@ -16,5 +16,11 @@
     "name": "dull essence",
     "default": "essence_dull",
     "type": "ammunition_type"
+  },
+  {
+    "id": "essence_pure_type",
+    "name": "crystallized essence",
+    "default": "essence_pure",
+    "type": "ammunition_type"
   }
 ]

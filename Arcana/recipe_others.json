@@ -196,6 +196,19 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
+    "result": "essence_pure",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_sacrifice", 5 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence", 10 ], [ "essence_blood", 30 ], [ "essence_dull", 150 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
     "result": "offering_chalice",
     "type": "recipe",
     "category": "CC_OTHER",
@@ -673,14 +686,18 @@
     "skills_required": [ "fabrication", 6 ],
     "time": 50000,
     "book_learn": [ [ "book_syncretism", 10 ] ],
-    "using": [ [ "arcana_essence_exclude_blood", 10 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 } ],
     "tools": [
       [ [ "book_syncretism", -1 ] ],
       [ [ "book_sacrifice", -1 ], [ "book_hexenhammer", -1 ] ],
       [ [ "surface_heat", 10, "LIST" ] ]
     ],
-    "components": [ [ [ "petrified_eye", 1 ], [ "engraved_stone", 1 ] ], [ [ "gold_small", 500 ] ], [ [ "diamond", 1 ] ] ]
+    "components": [
+      [ [ "petrified_eye", 1 ], [ "engraved_stone", 1 ] ],
+      [ [ "gold_small", 500 ] ],
+      [ [ "diamond", 1 ] ],
+      [ [ "essence_pure", 1 ], [ "essence", 10 ], [ "essence_dull", 150 ] ]
+    ]
   },
   {
     "result": "totem_insight",
