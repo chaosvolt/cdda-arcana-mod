@@ -66,7 +66,8 @@
       "SPELL_CLARITY",
       "SPELL_POISONARMOR",
       "SPELL_LOCKPICK"
-    ]
+    ],
+    "flags": [ "CITY_START" ]
   },
   {
     "type": "scenario",
