@@ -20,7 +20,10 @@
     "//": "Only Mycus Adrenaline in this case can really shake off the sluggishness.",
     "removes_effects": [ "shakes", "formication", "jetinjector", "stimpack", "adrenaline", "meth" ],
     "blocks_effects": [ "shakes", "formication", "jetinjector", "stimpack", "adrenaline", "meth" ],
-    "max_duration": 150,
+    "decay_messages": [["The numbing effect of your potion is starting to fade.", "bad"]],
+    "rating": "good",
+    "max_intensity": 15,
+    "int_dur_factor": 10,
     "base_mods": { "pkill_tick": [ 7 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15 ] }
   },
   {
@@ -29,7 +32,10 @@
     "name": [ "Strengthed" ],
     "desc": [ "You feel mighty, like you could take on the world." ],
     "remove_message": "The unnatural strength leaves your body.",
-    "max_duration": 150,
+    "decay_messages": [["The strengening effect of your potion is starting to fade.", "bad"]],
+    "rating": "good",
+    "max_intensity": 15,
+    "int_dur_factor": 10,
     "base_mods": {
       "pain_min": [ 1 ],
       "pain_max_val": [ 10, 5 ],
@@ -50,7 +56,10 @@
     "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
     "removes_effects": [ "relax_gas", "lack_sleep", "sleep" ],
     "blocks_effects": [ "relax_gas", "lack_sleep", "sleep" ],
-    "max_duration": 150,
+    "decay_messages": [["The quickening effect of your potion is starting to fade.", "bad"]],
+    "rating": "good",
+    "max_intensity": 15,
+    "int_dur_factor": 10,
     "base_mods": {
       "pain_min": [ 1 ],
       "pain_max_val": [ 10, 5 ],
@@ -68,17 +77,11 @@
     "desc": [ "Not immortality, but it still feels nice." ],
     "remove_message": "The healing effect fades.",
     "removes_effects": [ "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
-    "max_duration": 150,
+    "decay_messages": [["The soothing effect of your potion is starting to fade.", "bad"]],
+    "rating": "good",
+    "max_intensity": 15,
+    "int_dur_factor": 10,
     "base_mods": { "pkill_tick": [ 3 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10 ] }
-  },
-  {
-    "//": "Dummied out for the moment, on the off chance someone ports a save with this effect active.",
-    "type": "effect_type",
-    "id": "aegiscure",
-    "name": [ "Aegis Cure" ],
-    "desc": [ "Illness and infection shall be purged." ],
-    "removes_effects": [ "fungus", "tetanus", "infected", "common_cold", "flu" ],
-    "base_mods": { "pain_min": [ 10 ], "pain_chance": [ 1, 1 ], "fatigue_min": [ 5 ], "fatigue_chance": [ 1, 1 ] }
   },
   {
     "type": "effect_type",
@@ -87,8 +90,11 @@
     "desc": [ "Immunity to food poisoning and parasites, increased hunger gain." ],
     "remove_message": "Your craving for rotten food subsides.",
     "blocks_effects": [ "poison", "badpoison", "foodpoison", "paralyzepoison", "bloodworms", "paincysts", "brainworms", "tapeworm" ],
-    "max_duration": 100,
-    "base_mods": { "hunger_min": [ 1 ], "fatigue_chance": [ 1, 6 ] }
+    "decay_messages": [["Your craving for rotten food is starting to wane.", "bad"]],
+    "rating": "good",
+    "max_intensity": 30,
+    "int_dur_factor": 10,
+    "base_mods": { "hunger_min": [ 1 ], "hunger_change": [ 3 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 6 ] }
   },
   {
     "type": "effect_type",
@@ -98,7 +104,10 @@
     "remove_message": "For a moment you feel a terrible chill in the air, as the ward against cold fades.",
     "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
     "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
-    "max_duration": 1000
+    "decay_messages": [["Your ward against cold is waning.", "bad"]],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": 10
   },
   {
     "type": "effect_type",
@@ -134,7 +143,10 @@
       "relax_gas",
       "grabbed"
     ],
-    "max_duration": 1000
+    "decay_messages": [["Your spell of free action is waning.", "bad"]],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": 10
   },
   {
     "type": "effect_type",
@@ -144,7 +156,10 @@
     "remove_message": "You feel a strange tingling sensation, as the ward against heat fades.",
     "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
     "blocks_effects": [ "onfire", "smoke", "hot", "blisters" ],
-    "max_duration": 1000
+    "decay_messages": [["The ward against heat is waning.", "bad"]],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": 10
   },
   {
     "type": "effect_type",
@@ -154,7 +169,10 @@
     "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
     "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
     "blocks_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
-    "max_duration": 1000
+    "decay_messages": [["Your clarity of blood spell is waning.", "bad"]],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": 10
   },
   {
     "type": "effect_type",
@@ -164,7 +182,10 @@
     "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
     "removes_effects": [ "corroding" ],
     "blocks_effects": [ "corroding" ],
-    "max_duration": 1000
+    "decay_messages": [["Your ward against corrosion  is waning.", "bad"]],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": 10
   },
   {
     "type": "effect_type",
@@ -184,6 +205,52 @@
     "remove_message": "The magical protection fades.",
     "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
     "blocks_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
-    "max_duration": 1000
+    "decay_messages": [["Your ward against evil is waning.", "bad"]],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": 10
+  },
+  {
+    "type": "effect_type",
+    "id": "spell_might",
+    "name": [ "Might" ],
+    "desc": [ "The fabric of The Veil is woven into your frame  Your strength is augmented by magic." ],
+    "remove_message": "You feel weakened as your magically-induced strength leaves you.",
+    "decay_messages": [["Your spell of might is waning.", "bad"]],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": 10,
+    "base_mods": {
+      "str_mod": [ 8 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "spell_agility",
+    "name": [ "Agility" ],
+    "desc": [ "The winds of distant realms are at your back.  Your dexterity and speed are augmented by magic." ],
+    "remove_message": "You feel sluggish as your magically-induced agility leaves you.",
+    "decay_messages": [["Your spell of agility is waning.", "bad"]],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": 10,
+    "base_mods": {
+      "dex_mod": [ 8 ],
+      "speed_mod": [ 30 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "spell_insight",
+    "name": [ "Insight" ],
+    "desc": [ "The eyes of The Beyond shall guide you.  Your perception is augmented by magic." ],
+    "remove_message": "You feel deadened as your magically-induced perception leaves you.",
+    "decay_messages": [["Your spell of insight is waning.", "bad"]],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": 10,
+    "base_mods": {
+      "per_mod": [ 8 ]
+    }
   }
 ]

@@ -396,7 +396,7 @@
     "id": "SPELL_INSIGHT",
     "name": "Arcana: Insight",
     "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary boost to perception, and your ability to scout out the surrounding area.  Activate to focus your power, draining fatigue.",
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary boost to perception.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "category": [ "INSIGHT" ],

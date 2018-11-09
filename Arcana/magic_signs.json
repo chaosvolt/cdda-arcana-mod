@@ -41,8 +41,8 @@
     "color": "white",
     "use_action": {
       "target": "spell_agile_on",
-      "msg": "You conjure an agility spell.  Drop the sign to dispel it early.",
-      "target_charges": 150,
+      "msg": "You conjure an agility spell.",
+      "target_charges": 0,
       "active": true,
       "type": "transform"
     }
@@ -73,8 +73,8 @@
     "color": "white",
     "use_action": {
       "target": "spell_strength_on",
-      "msg": "You conjure a spell of might.  Drop the sign to dispel it early.",
-      "target_charges": 150,
+      "msg": "You conjure a spell of might.",
+      "target_charges": 0,
       "active": true,
       "type": "transform"
     }
@@ -166,12 +166,12 @@
     "type": "TOOL",
     "name": "Tear Seal: Insight",
     "name_plural": "Tear Seal: Insight",
-    "description": "A curiously-refractive gem carved from an unearthly blue orb.  Activate it to focus your mind and create a magic sign, granting a temporary boost to perception and your ability to scout out the surrounding area.",
+    "description": "A curiously-refractive gem carved from an unearthly blue orb.  Activate it to focus your mind and create a magic sign, granting a temporary boost to perception.",
     "color": "white",
     "use_action": {
       "target": "spell_insight_on",
-      "msg": "You conjure an insight spell.  Drop the sign to dispel it early.",
-      "target_charges": 150,
+      "msg": "You conjure an insight spell.",
+      "target_charges": 0,
       "active": true,
       "type": "transform"
     }
@@ -318,8 +318,8 @@
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_agile_on",
-      "msg": "You activate the agility spell.  Drop the sign to dispel it early.",
-      "target_charges": 150,
+      "msg": "You activate the agility spell.",
+      "target_charges": 0,
       "active": true,
       "type": "transform"
     }
@@ -332,13 +332,15 @@
     "name_plural": "Magic Sign: Agility (active)",
     "description": "A mote of energy that seems to twitch and shiver.",
     "color": "yellow",
-    "initial_charges": 150,
-    "max_charges": 150,
+    "initial_charges": 0,
+    "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
-    "countdown_interval": 151,
-    "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign augmenting your speed dissipates." },
-    "artifact_data": { "effects_carried": [ "AEP_DEX_UP", "AEP_DEX_UP", "AEP_SPEED_UP" ] }
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Your feel a powerful magical tension fill your body.",
+      "effects": [ { "id": "spell_agility", "duration": 150 } ]
+    }
   },
   {
     "id": "spell_clairvoyance",
@@ -809,13 +811,13 @@
     "type": "TOOL",
     "name": "Magic Sign: Insight",
     "name_plural": "Magic Sign: Insight",
-    "description": "A mote of energy, refracting the light in curious ways.  Activate it to grant a temporary boost to perception, and your ability to scout out the surrounding area.",
+    "description": "A mote of energy, refracting the light in curious ways.  Activate it to grant a temporary boost to perception.",
     "color": "light_blue",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_insight_on",
-      "msg": "You activate the insight spell.  Drop the sign to dispel it early.",
-      "target_charges": 150,
+      "msg": "You activate the insight spell.",
+      "target_charges": 0,
       "active": true,
       "type": "transform"
     }
@@ -828,14 +830,15 @@
     "name_plural": "Magic Sign: Insight (active)",
     "description": "A mote of energy, refracting the light in curious ways.",
     "color": "light_blue",
-    "initial_charges": 150,
-    "max_charges": 150,
+    "initial_charges": 0,
+    "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
-    "countdown_interval": 151,
-    "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign augmenting your perception dissipates." },
-    "artifact_data": { "effects_carried": [ "AEP_PER_UP", "AEP_PER_UP" ] },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE", "ZOOM" ]
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Your feel a rush of magical senses flood your mind.",
+      "effects": [ { "id": "spell_insight", "duration": 150 } ]
+    }
   },
   {
     "id": "spell_invis",
@@ -947,8 +950,8 @@
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_strength_on",
-      "msg": "You activate the spell of might.  Drop the sign to dispel it early.",
-      "target_charges": 150,
+      "msg": "You activate the spell of might.",
+      "target_charges": 0,
       "active": true,
       "type": "transform"
     }
@@ -961,13 +964,15 @@
     "name_plural": "Magic Sign: Might (active)",
     "description": "A mote of energy, resonating with an unearthly force.",
     "color": "red",
-    "initial_charges": 150,
-    "max_charges": 150,
+    "initial_charges": 0,
+    "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
-    "countdown_interval": 151,
-    "countdown_action": { "type": "consume_drug", "activation_message": "The magic sign augmenting your strength dissipates." },
-    "artifact_data": { "effects_carried": [ "AEP_STR_UP", "AEP_STR_UP" ] }
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Your feel a surge of magical energy coursing through every muscle.",
+      "effects": [ { "id": "spell_might", "duration": 150 } ]
+    }
   },
   {
     "id": "spell_psyshield",
