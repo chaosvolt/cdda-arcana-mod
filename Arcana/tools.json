@@ -1520,7 +1520,6 @@
     "color": "dark_gray",
     "ammo": "essence_blood_type",
     "max_charges": 9,
-    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL" ],
     "use_action": [
       {
         "target": "stormbringer_on",
@@ -1539,19 +1538,28 @@
   {
     "id": "stormbringer_on",
     "type": "TOOL",
-    "copy-from": "stormbringer",
+    "category": "weapons",
     "name": "cursed blade (on)",
     "name_plural": "cursed blades (on)",
-    "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly",
-    "description": "A two-handed sword, blade is made of a dark metal, engraved with exotic runes.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
+    "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
+    "description": "A two-handed sword, blade made of a dark metal, engraved with exotic runes.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
     "initial_charges": 1200,
     "max_charges": 1200,
     "turns_per_charge": 1,
     "revert_to": "stormbringer",
     "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
     "artifact_data": { "effects_wielded": [ "AEP_STR_UP", "AEP_SAP_LIFE", "AEP_EVIL", "AEP_SICK" ] },
-    "relative": { "cutting": 10 },
-    "extend": { "flags": [ "NO_UNWIELD", "NO_RELOAD", "NO_UNLOAD" ], "techniques": [ "VORPAL" ] },
-    "delete": { "flags": [ "SHEATH_SWORD" ] }
+    "weight": 3176,
+    "volume": 13,
+    "price": 160000,
+    "to_hit": 1,
+    "bashing": 17,
+    "cutting": 50,
+    "material": [ "hardsteel", "essencemat" ],
+    "symbol": "/",
+    "looks_like": "stormbringer",
+    "color": "dark_gray",
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD" ]
   }
 ]
