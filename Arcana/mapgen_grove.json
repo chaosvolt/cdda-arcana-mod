@@ -60,7 +60,6 @@
     "om_terrain": [ "strange_grove" ],
     "weight": 300,
     "object": {
-      "fill_ter": "t_floor",
       "rows": [
         "                        ",
         "   TTTTTTTTTTTTTTTTTT   ",
@@ -89,22 +88,8 @@
       ],
       "terrain": {
         " ": [ "t_grass", "t_grass", "t_grass", "t_shrub", "t_shrub", "t_tree_young", "t_dirt" ],
-        "#": "t_rock",
-        ".": "t_rock_floor",
         ">": "t_slope_down",
         "T": "t_tree"
-      },
-      "furniture": {
-        "B": "f_bed",
-        "b": "f_bench",
-        "c": "f_counter",
-        "d": "f_dresser",
-        "f": "f_fridge",
-        "n": "f_cupboard",
-        "o": "f_oven",
-        "s": "f_sink",
-        "t": "f_bathtub",
-        "v": "f_woodstove"
       },
       "place_monsters": [
         { "monster": "GROUP_TRIFFID", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 },
