@@ -136,12 +136,6 @@
       ],
       "palettes": [ "arcana_palette" ],
       "mapping": { "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice" } } },
-      "place_loot": [
-        { "group": "cult_sacrifice", "x": 8, "y": 8, "chance": 100 },
-        { "group": "cult_sacrifice", "x": 15, "y": 8, "chance": 100 },
-        { "group": "cult_sacrifice", "x": 8, "y": 15, "chance": 100 },
-        { "group": "cult_sacrifice", "x": 15, "y": 15, "chance": 100 }
-      ],
       "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 6, 17 ], "y": [ 6, 17 ], "density": 0.1 } ]
     }
   },
@@ -155,26 +149,26 @@
       "rows": [
         "           ............ ",
         "           ..         . ",
-        "  ..,,,,,,,.. ......... ",
-        " ...,,,,,,,.. .         ",
+        "  ..???????.. ......... ",
+        " ...???????.. .         ",
         " ...       .. ......... ",
-        " ,,      II..II      .. ",
-        " ,,     II....II     .. ",
-        " ,,    II......II    .. ",
-        " ,,   II........II   .. ",
-        " ,,  II..........II  .. ",
-        " ,,  I............I  .. ",
+        " ??      II..II      .. ",
+        " ??     II....II     .. ",
+        " ??    II......II    .. ",
+        " ??   II........II   .. ",
+        " ??  II..........II  .. ",
+        " ??  I............I  .. ",
         "...  I.....>>.....I  ...",
         "...  I.....>>.....I  ...",
-        " ..  I............I  ,, ",
-        " ..  II..........II  ,, ",
-        " ..   II........II   ,, ",
-        " ..    II......II    ,, ",
-        " ..     II....II     ,, ",
-        " ...     II..II      ,, ",
+        " ..  I............I  ?? ",
+        " ..  II..........II  ?? ",
+        " ..   II........II   ?? ",
+        " ..    II......II    ?? ",
+        " ..     II....II     ?? ",
+        " ...     II..II      ?? ",
         "  ........ ..       ... ",
-        "         . ..,,,,,,,... ",
-        " ......... ..,,,,,,,..  ",
+        "         . ..???????... ",
+        " ......... ..???????..  ",
         " .         ..           ",
         " ............           "
       ],
@@ -185,7 +179,7 @@
         { "point": "trap", "id": "tr_drain", "x": [ 4, 10 ], "y": [ 2, 3 ], "repeat": [ 5, 10 ] },
         { "point": "trap", "id": "tr_glow", "x": [ 1, 2 ], "y": [ 5, 10 ], "repeat": [ 4, 8 ] }
       ],
-      "terrain": { ",": "t_floor_blue" },
+      "terrain": { "?": "t_floor_blue" },
       "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.15 } ]
     }
   },
@@ -350,7 +344,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "mapping": {
-        "]": { "items": [ { "item": "chalice_cult_books", "chance": 60, "repeat": 3 } ] },
+        "]": { "items": [ { "item": "chalice_cult_books", "chance": 80, "repeat": 2 } ] },
         "d": { "item": [ { "item": "glass_shard", "chance": 50, "repeat": 2 } ] },
         "h": { "item": [ { "item": "glass_shard", "chance": 25, "repeat": 2 } ] }
       },
@@ -379,7 +373,7 @@
         "...........rr...........",
         "..p.p.p.p.arra.p.p.p.p..",
         "..p.p.p.prrrrrrp.p.p.p..",
-        "..p.p.p.prrrrrrp.p.P.p..",
+        "..p.p.p.prrrrrrp.p.p.p..",
         "..p.p.p.p.arra.p.p.p.p..",
         "...........rr...........",
         "==pppppp===++===pppppp==",
@@ -396,13 +390,13 @@
       "mapping": {
         "]": {
           "items": [
-            { "item": "chalice_cult_books", "chance": 50, "repeat": 3 },
+            { "item": "chalice_cult_books", "chance": 70, "repeat": 2 },
             { "item": "chalice_cult_spells", "chance": 5, "repeat": 2 }
           ]
         },
         "d": { "items": [ { "item": "chalice_cult_gear", "chance": 20 }, { "item": "chalice_cult_consumables", "chance": 20 } ] }
       },
-      "terrain": { "a": "t_carpet_purple", "b": "t_carpet_purple", "r": "t_carpet_purple" },
+      "terrain": { "a": "t_carpet_red", "b": "t_carpet_red" },
       "place_loot": [
         { "group": "chalice_cult_casualty_special", "x": 11, "y": 4 },
         { "item": "note_chalice", "x": [ 11, 12 ], "y": [ 4, 5 ] },
