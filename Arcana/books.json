@@ -220,6 +220,22 @@
     "snippet_category": "note_flame_tenet"
   },
   {
+    "id": "note_starry_missive",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": "old letter",
+    "description": "A weathered old piece of paper.",
+    "snippet_category": "note_starry_correspondence"
+  },
+  {
+    "id": "note_soa_mission",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": "folded note",
+    "description": "A neatly-folded note.",
+    "snippet_category": "note_soa_journal"
+  },
+  {
     "id": "arcanemap",
     "type": "GENERIC",
     "category": "books",
