@@ -33,6 +33,16 @@
     "entries": [ { "item": "essence", "count-min": 2, "count-max": 5 } ]
   },
   {
+    "id": "fire_spirit_drops",
+    "type": "item_group",
+    "//": "Ashes for flavor, and boss-level essence.",
+    "subtype": "collection",
+    "entries": [
+      { "item": "ash", "charges-min": 500, "charges-max": 1000 },
+      { "item": "essence", "count-min": 2, "count-max": 5 }
+    ]
+  },
+  {
     "id": "plant_boss_drops",
     "type": "item_group",
     "//": "You get a bane staff and essence",
