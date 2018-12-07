@@ -69,15 +69,13 @@
     "id": "mon_zombie_necro",
     "copy-from": "mon_zombie_necro",
     "type": "MONSTER",
-    "death_drops": { "subtype": "collection", "groups": [ [ "essence_blood", 100 ], [ "magic_items", 10 ], [ "magic_consumables", 20 ], [ "magic_tools", 30 ], [ "magic_books", 40 ], [ "default_zombie_death_drops", 100 ] ] },
-    "//": "Anomalous zombie, so you get an essence"
+    "death_drops": { "subtype": "collection", "groups": [ [ "strange_zombie_death_drops", 100 ], [ "default_zombie_death_drops", 100 ] ] }
   },
   {
     "id": "mon_zombie_master",
     "copy-from": "mon_zombie_master",
     "type": "MONSTER",
-    "death_drops": { "subtype": "collection", "groups": [ [ "essence_blood", 100 ], [ "magic_items", 10 ], [ "magic_consumables", 20 ], [ "magic_tools", 30 ], [ "magic_books", 40 ], [ "default_zombie_death_drops", 100 ] ] },
-    "//": "Anomalous zombie, so you get an essence"
+    "death_drops": { "subtype": "collection", "groups": [ [ "strange_zombie_death_drops", 100 ], [ "default_zombie_death_drops", 100 ] ] }
   },
   {
     "id": "mon_zombie_hollow",
@@ -85,8 +83,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "essence", 10 ] ],
-      "//": "10% chance of essence, it's been overtaken by the blob"
+      "groups": [ [ "essence_blood", 30 ] ]
     }
   },
   {
@@ -99,7 +96,7 @@
     "id": "mon_charred_nightmare",
     "copy-from": "mon_charred_nightmare",
     "type": "MONSTER",
-    "death_drops": { "subtype": "collection", "groups": [ [ "essence_blood", 25 ], [ "magic_items", 1 ], [ "magic_consumables", 2 ], [ "magic_tools", 2 ], [ "magic_books", 3 ], [ "vault_wanderer", 100 ] ] },
+    "death_drops": { "subtype": "collection", "groups": [ [ "charred_nightmare_death_drops", 100 ], [ "vault_wanderer", 100 ] ] },
     "//": "You have to tank some serious Fallout-style rads to generate anaomlous essence, so lesser wanderers don't drop any"
   },
   {
@@ -130,7 +127,7 @@
     "type": "MONSTER",
     "death_drops": {
       "subtype": "collection",
-      "groups": [ [ "biollante", 80 ], [ "essence", 25 ] ],
+      "groups": [ [ "triffid_queen_flower", 80 ], [ "essence", 25 ] ],
       "//": "25% chance of essence, only monsters with queen flag drop the boss-level essence"
     }
   },
@@ -496,13 +493,13 @@
     "id": "mon_dementia",
     "copy-from": "mon_dementia",
     "type": "MONSTER",
-    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 50 ], [ "magic_items", 1 ], [ "magic_consumables", 3 ], [ "magic_tools", 3 ], [ "magic_books", 5 ], [ "default_zombie_death_drops", 100 ] ] }
+    "death_drops": { "subtype": "collection", "groups": [ [ "dementia_death_drops", 100 ], [ "default_zombie_death_drops", 100 ] ] }
   },
   {
     "id": "mon_homunculus",
     "copy-from": "mon_homunculus",
     "type": "MONSTER",
-    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 100 ], [ "engraved_stone", 25 ], [ "magic_items", 5 ], [ "magic_consumables", 10 ], [ "magic_tools", 10 ], [ "magic_books", 15 ] ] }
+    "death_drops": { "subtype": "collection", "groups": [ [ "engraved_stone", 25 ], [ "homunculus_death_drops", 100 ] ] }
   },
   {
     "id": "mon_blood_sacrifice",
@@ -514,7 +511,7 @@
     "id": "mon_flesh_angel",
     "copy-from": "mon_flesh_angel",
     "type": "MONSTER",
-    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 100 ], [ "engraved_stone", 50 ], [ "magic_items", 25 ], [ "magic_consumables", 25 ], [ "magic_tools", 75 ], [ "magic_books", 50 ], [ "default_zombie_clothes", 100 ] ] },
+    "death_drops": { "subtype": "collection", "groups": [ [ "engraved_stone", 50 ], [ "angelic_death_drops", 100 ], [ "default_zombie_clothes", 100 ] ] },
     "//": "Assumed to be important part of the cult, so good loot"
   },
   {
@@ -531,7 +528,7 @@
     "id": "mon_shia",
     "copy-from": "mon_shia",
     "type": "MONSTER",
-    "death_drops": { "subtype": "collection", "groups": [ [ "essence", 50 ], [ "magic_items", 2 ], [ "magic_consumables", 4 ], [ "magic_tools", 6 ], [ "magic_books", 8 ], [ "shia_stuff", 100 ] ] }
+    "death_drops": { "subtype": "collection", "groups": [ [ "dementia_death_drops", 100 ], [ "shia_stuff", 100 ] ] }
   },
   {
     "id": "mon_zombie_dancer",

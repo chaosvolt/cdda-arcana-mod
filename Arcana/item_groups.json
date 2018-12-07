@@ -106,12 +106,12 @@
   {
     "id": "homebooks",
     "type": "item_group",
-    "items": [ [ "book_potioncraft", 1 ], [ "book_scrollcraft", 1 ] ]
+    "items": [ [ "book_magicfordummies", 1 ], [ "book_potioncraft", 1 ], [ "book_scrollcraft", 1 ] ]
   },
   {
     "id": "church",
     "type": "item_group",
-    "items": [ [ "hexenhammer", 1 ], [ "book_hexenhammer", 1 ] ]
+    "items": [ [ "book_hexenhammer", 1 ], [ "book_scrollcraft", 1 ] ]
   },
   {
     "id": "mansion_bookcase",
@@ -119,6 +119,16 @@
     "subtype": "collection",
     "groups": [
       [ "magic_books", 8 ]
+    ]
+  },
+  {
+    "id": "mansion_safe",
+    "type": "item_group",
+    "subtype": "collection",
+    "groups": [
+      { "group": "magic_consumables", "prob": 45 },
+      { "group": "magic_items", "prob": 30 },
+      { "group": "magic_tools", "prob": 15 }
     ]
   },
   {
@@ -150,7 +160,6 @@
     "items": [
       [ "mana_gem", 2 ],
       [ "offering_chalice", 3 ],
-      [ "sun_sword", 1 ],
       [ "revenant_crown", 3 ],
       [ "gauntlets_necro", 1 ],
       [ "thunder_sigil", 3 ],
@@ -182,91 +191,26 @@
     "id": "spider",
     "type": "item_group",
     "items": [
-      [ "mana_gem", 1 ],
-      [ "thunder_sigil", 1 ],
-      [ "bloodscourge", 1 ],
-      [ "bloodaxe", 1 ],
-      [ "hexenhammer", 1 ],
-      [ "gilded_aegis", 1 ],
-      [ "robe_shadow", 1 ],
-      [ "armor_wyrm", 1 ],
-      [ "somen_clairvoyance", 1 ],
-      [ "revenant_crown", 1 ],
-      [ "gauntlets_necro", 1 ],
-      [ "sun_sword", 1 ],
-      [ "numbness_potion", 1 ],
-      [ "strength_potion", 3 ],
-      [ "speed_potion", 3 ],
-      [ "healing_potion", 5 ],
-      [ "scroll_destruction", 2 ],
-      [ "scroll_subversion", 4 ],
-      [ "essence", 3 ],
-      [ "essence_dull", 3 ],
-      [ "essence_blood", 5 ]
+      { "group": "magic_tools", "prob": 1 },
+      { "group": "magic_items", "prob": 1 },
+      { "group": "magic_consumables", "prob": 1 },
+      { "group": "magic_books", "prob": 1 }
     ]
   },
   {
     "id": "rare",
     "type": "item_group",
     "items": [
-      [ "mana_gem", 1 ],
-      [ "thunder_sigil", 1 ],
-      [ "bloodscourge", 2 ],
-      [ "spear_pestilence", 2 ],
-      [ "bloodaxe", 1 ],
-      [ "sun_sword", 3 ],
-      [ "gilded_aegis", 2 ],
-      [ "robe_shadow", 1 ],
-      [ "armor_wyrm", 2 ],
-      [ "somen_clairvoyance", 1 ],
-      [ "revenant_crown", 1 ],
-      [ "gauntlets_necro", 1 ],
-      [ "numbness_potion", 5 ],
-      [ "strength_potion", 3 ],
-      [ "speed_potion", 3 ],
-      [ "healing_potion", 1 ],
-      [ "scroll_sun", 3 ],
-      [ "scroll_moon", 3 ],
-      [ "scroll_artiface", 2 ],
-      [ "scroll_nature", 2 ],
-      [ "scroll_destruction", 1 ],
-      [ "scroll_subversion", 1 ],
-      [ "offering_chalice", 2 ],
-      [ "offering_chalice_used", 4 ],
-      [ "blood_athame", 3 ],
-      [ "hexenhammer", 3 ],
-      [ "essence", 3 ],
-      [ "essence_dull", 3 ],
-      [ "essence_blood", 3 ],
-      [ "book_magicfordummies", 1 ],
-      [ "book_potioncraft", 1 ],
-      [ "book_scrollcraft", 1 ],
-      [ "book_hexenhammer", 1 ],
-      [ "book_sacrifice", 1 ],
-      [ "book_bloodmagic", 1 ],
-      [ "book_summoning", 1 ]
-    ]
-  },
-  {
-    "id": "antique_rare",
-    "type": "item_group",
-    "items": [
-      [ "mana_gem", 1 ],
-      [ "thunder_sigil", 1 ],
-      [ "bloodscourge", 1 ],
-      [ "sun_sword", 1 ],
-      [ "somen_clairvoyance", 1 ],
-      [ "revenant_crown", 1 ],
-      [ "gauntlets_necro", 1 ],
-      [ "offering_chalice", 1 ],
-      [ "hexenhammer", 1 ],
-      [ "blood_athame", 1 ]
+      { "group": "magic_tools", "prob": 1 },
+      { "group": "magic_items", "prob": 1 },
+      { "group": "magic_consumables", "prob": 1 },
+      { "group": "magic_books", "prob": 1 }
     ]
   },
   {
     "id": "museum_misc",
     "type": "item_group",
-    "items": [ [ "offering_chalice", 5 ], [ "hexenhammer", 5 ], [ "blood_athame", 5 ] ]
+    "items": [ [ "offering_chalice", 1 ], [ "blood_athame", 1 ] ]
   },
   {
     "id": "museum_primative",
@@ -282,6 +226,11 @@
     "id": "graboid_fang",
     "type": "item_group",
     "items": [ [ "graboid_fang", 1 ] ]
+  },
+  {
+    "id": "triffid_queen_flower",
+    "type": "item_group",
+    "items": [ [ "triffid_queen_flower", 1 ] ]
   },
   {
     "id": "vortex_shard",

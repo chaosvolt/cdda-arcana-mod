@@ -28,19 +28,6 @@
     ]
   },
   {
-    "id": "summoner_drops",
-    "type": "item_group",
-    "items": [
-      [ "silver_glyph", 10 ],
-      [ "silver_small", 10 ],
-      [ "book_summoning", 5 ],
-      [ "essence", 10 ],
-      [ "summon_kreck", 3 ],
-      [ "summon_blank", 2 ],
-      [ "summon_flaming_eye", 1 ]
-    ]
-  },
-  {
     "id": "summoner_casualties",
     "type": "item_group",
     "subtype": "collection",
@@ -49,7 +36,6 @@
       { "group": "shirts", "damage": [ 1, 4 ] },
       { "group": "pants", "damage": [ 1, 4 ] },
       { "group": "shoes", "damage": [ 1, 4 ] },
-      { "group": "summoner_drops", "prob": 25 },
       { "group": "magic_consumables", "prob": 10 },
       { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
@@ -145,7 +131,7 @@
       },
       "terrain": { "<": "t_slope_up", "R": "t_root_wall" },
       "place_loot": [
-        { "item": "book_syncretism", "x": 18, "y": 2, "chance": 40 },
+        { "item": "book_syncretism", "x": 18, "y": 2 },
         { "item": "note_grove", "x": [ 11, 15 ], "y": [ 13, 15 ] },
         { "item": "arcanemap", "x": 16, "y": [ 3, 4 ] },
         { "group": "unaligned_arcanist_spells", "x": 16, "y": [ 2, 4 ], "chance": 5, "repeat": 4 }

@@ -1,14 +1,83 @@
 [
   {
+    "id": "charred_nightmare_death_drops",
+    "type": "item_group",
+    "//": "Used by charred nightmares.  Tiny change of magic items due to sheer numbers.",
+    "subtype": "collection",
+    "entries": [
+      { "group": "essence_blood", "prob": 10 },
+      {
+        "distribution": [
+          { "group": "magic_tools", "prob": 1, "damage-min": 1, "damage-max": 4 },
+          { "group": "magic_items", "prob": 2, "damage-min": 1, "damage-max": 4 },
+          { "group": "magic_consumables", "prob": 3 },
+          { "group": "magic_books", "prob": 4 }
+        ], "prob": 1
+      }
+    ]
+  },
+  {
+    "id": "dementia_death_drops",
+    "type": "item_group",
+    "//": "Used by dementias and Shia LeBouf.  Just DO IT!",
+    "subtype": "collection",
+    "entries": [
+      { "group": "essence_blood", "prob": 50 },
+      { "group": "magic_tools", "prob": 1, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_items", "prob": 2, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_consumables", "prob": 3 },
+      { "group": "magic_books", "prob": 4 }
+    ]
+  },
+  {
+    "id": "homunculus_death_drops",
+    "type": "item_group",
+    "//": "Used by homunculi.",
+    "subtype": "collection",
+    "entries": [
+      { "group": "essence" },
+      { "group": "magic_tools", "prob": 4, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_items", "prob": 8, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_consumables", "prob": 12 },
+      { "group": "magic_books", "prob": 16 }
+    ]
+  },
+  {
+    "id": "angelic_death_drops",
+    "type": "item_group",
+    "//": "Used by flesh angels.",
+    "subtype": "collection",
+    "entries": [
+      { "group": "essence" },
+      { "group": "magic_tools", "prob": 5, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_items", "prob": 10, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_consumables", "prob": 15 },
+      { "group": "magic_books", "prob": 20 }
+    ]
+  },
+  {
+    "id": "strange_zombie_death_drops",
+    "type": "item_group",
+    "//": "Used by necromancers and masters.",
+    "subtype": "collection",
+    "entries": [
+      { "group": "essence_blood" },
+      { "group": "magic_tools", "prob": 5, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_items", "prob": 10, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_consumables", "prob": 20 },
+      { "group": "magic_books", "prob": 40 }
+    ]
+  },
+  {
     "id": "mon_zombie_survivor_death_drops",
     "type": "item_group",
     "//": "You may or may not get an essence or magical loot.  Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "entries": [
       { "group": "essence_blood", "prob": 25 },
-      { "group": "magic_items", "prob": 5 },
+      { "group": "magic_items", "prob": 2, "damage-min": 1, "damage-max": 4 },
       { "group": "magic_consumables", "prob": 5 },
-      { "group": "magic_tools", "prob": 5 },
+      { "group": "magic_tools", "prob": 1, "damage-min": 1, "damage-max": 4 },
       { "group": "magic_books", "prob": 10 }
     ]
   },
@@ -18,10 +87,10 @@
     "//": "The only being without the queen flag to drop boss-level essence, also gives high odds of magical gear.  Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "entries": [
-      { "group": "magic_items", "prob": 25 },
-      { "group": "magic_consumables", "prob": 25 },
-      { "group": "magic_books", "prob": 50 },
-      { "group": "magic_tools", "prob": 75 },
+      { "group": "magic_items", "prob": 25, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_consumables", "prob": 50 },
+      { "group": "magic_books", "prob": 75 },
+      { "group": "magic_tools", "prob": 25, "damage-min": 1, "damage-max": 4 },
       { "item": "essence", "count-min": 2, "count-max": 5 }
     ]
   },

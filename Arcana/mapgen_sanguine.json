@@ -10,9 +10,9 @@
       [ "essay_book", 2 ],
       [ "cookbook_human", 1 ],
       [ "textbook_speech", 1 ],
-      [ "book_bloodmagic", 6 ],
-      [ "book_summoning", 1 ],
-      [ "book_potioncraft", 2 ]
+      [ "book_bloodmagic", 12 ],
+      [ "book_summoning", 2 ],
+      [ "book_potioncraft", 4 ]
     ]
   },
   {
@@ -30,32 +30,37 @@
     "id": "sanguine_cult_gear",
     "type": "item_group",
     "items": [
-      [ "blood_athame", 5 ],
+      [ "blood_athame", 10 ],
       [ "bloodaxe", 3 ],
       [ "bloodscourge", 2 ],
       [ "armor_wyrm", 3 ],
-      [ "revenant_crown", 2 ],
-      [ "portal", 1 ]
+      [ "revenant_crown", 2 ]
     ]
   },
   {
     "id": "sanguine_cult_consumables",
     "type": "item_group",
     "items": [
-      { "item": "essence_blood", "prob": 10, "count": [ 1, 3 ] },
+      [ "portal", 10 ],
       [ "numbness_potion", 4 ],
-      [ "strength_potion", 1 ],
-      [ "speed_potion", 2 ],
-      [ "summon_dark_wyrm", 1 ],
-      [ "summon_mi_go", 1 ],
+      [ "strength_potion", 2 ],
+      [ "speed_potion", 3 ],
+      [ "healing_potion", 1 ],
+      [ "summon_kreck", 2 ],
+      [ "summon_blank", 2 ],
+      [ "summon_flaming_eye", 2 ],
+      [ "summon_hunting_horror", 2 ],
       [ "summon_flying_polyp", 1 ],
-      [ "summon_yugg", 1 ]
+      [ "summon_mi_go", 1 ],
+      [ "summon_yugg", 1 ],
+      [ "summon_shoggoth", 1 ]
     ]
   },
   {
     "id": "sanguine_cult_crafting",
     "type": "item_group",
     "items": [
+      { "item": "essence_blood", "prob": 30, "count": [ 1, 3 ] },
       [ "gold_small", 10 ],
       [ "silver_small", 25 ],
       [ "bone_human", 25 ],
@@ -74,7 +79,7 @@
       { "group": "shirts", "damage": [ 1, 4 ] },
       { "group": "pants", "damage": [ 1, 4 ] },
       { "group": "shoes", "damage": [ 1, 4 ] },
-      { "group": "sanguine_cult_gear", "prob": 25 },
+      { "group": "sanguine_cult_gear", "prob": 10, "damage": [ 1, 4 ] },
       { "item": "corpse" }
     ]
   },
@@ -315,8 +320,8 @@
         "<.+.....=.gg.=          "
       ],
       "palettes": [ "arcana_palette" ],
-      "mapping": { 
-        "a": { "furniture": "f_slab", "items": [ { "item": "sanguine_cult_crafting", "chance": 50 } ] },
+      "mapping": {
+        "a": { "furniture": "f_slab", "items": [ { "item": "sanguine_cult_consumables", "chance": 30, "repeat": 2 }, { "item": "sanguine_cult_gear", "chance": 10 } ] },
         "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice" } }
       },
       "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 12 ], "y": [ 11, 23 ], "density": 0.1 } ]
@@ -356,8 +361,8 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
-      "mapping": { 
-        "a": { "furniture": "f_slab", "items": [ { "item": "sanguine_cult_crafting", "chance": 50 } ] },
+      "mapping": {
+        "a": { "furniture": "f_slab", "items": [ { "item": "sanguine_cult_crafting", "chance": 50, "repeat": 3 } ] },
         "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice" } }
       },
       "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 11, 23 ], "y": [ 0, 12 ], "density": 0.1 } ]

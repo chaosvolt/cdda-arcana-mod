@@ -3,21 +3,21 @@
     "id": "cleansing_flame_books",
     "type": "item_group",
     "items": [
-      [ "essay_book", 6 ],
-      [ "poetry_book", 6 ],
-      [ "philosophy_book", 2 ],
+      [ "essay_book", 7 ],
+      [ "poetry_book", 7 ],
+      [ "philosophy_book", 3 ],
       [ "holybook_bible1", 4 ],
       [ "holybook_bible2", 3 ],
-      [ "holybook_havamal", 4 ],
-      [ "holybook_quran", 1 ],
+      [ "holybook_havamal", 7 ],
+      [ "holybook_quran", 4 ],
       [ "holybook_hadith", 1 ],
       [ "holybook_tanakh", 1 ],
-      [ "holybook_kojiki", 2 ],
+      [ "holybook_kojiki", 4 ],
       [ "holybook_tripitaka", 1 ],
       [ "holybook_sutras", 1 ],
-      [ "book_hexenhammer", 10 ],
-      [ "book_scrollcraft", 4 ],
-      [ "book_potioncraft", 3 ]
+      [ "book_hexenhammer", 20 ],
+      [ "book_scrollcraft", 8 ],
+      [ "book_potioncraft", 6 ]
     ]
   },
   {
@@ -67,18 +67,22 @@
     "id": "cleansing_flame_gear_consumables",
     "type": "item_group",
     "items": [
+      [ "numbness_potion", 5 ],
       [ "strength_potion", 10 ],
-      [ "healing_potion", 10 ],
+      [ "speed_potion", 5 ],
+      [ "healing_potion", 15 ],
       [ "scroll_sun", 5 ],
       [ "scroll_moon", 5 ],
       [ "scroll_artiface", 5 ],
-      { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8 }
+      [ "scroll_nature", 3 ],
+      [ "scroll_destruction", 2 ],
+      [ "scroll_subversion", 1 ]
     ]
   },
   {
     "id": "cleansing_flame_crafting",
     "type": "item_group",
-    "items": [ [ "gold_small", 15 ], [ "silver_small", 15 ], [ "feather", 15 ], [ "scrap", 20 ], [ "copper", 25 ] ]
+    "items": [ { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8 }, [ "gold_small", 15 ], [ "silver_small", 15 ], [ "feather", 15 ], [ "scrap", 20 ], [ "copper", 25 ] ]
   },
   {
     "id": "cleansing_flame_casualties",
@@ -90,8 +94,8 @@
       { "group": "pants", "damage": [ 1, 4 ] },
       { "group": "shoes", "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_magic", "prob": 25 },
-      { "group": "cleansing_flame_gear_consumables", "prob": 15 },
+      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
       { "item": "corpse" }
     ]
   },
@@ -186,10 +190,10 @@
         { "group": "cleansing_flame_crafting", "x": [ 20, 22 ], "y": 20, "chance": 30, "repeat": 5 },
         { "group": "cleansing_flame_gear_consumables", "x": [ 7, 8 ], "y": 20, "chance": 40, "repeat": 3 },
         { "group": "cleansing_flame_gear_consumables", "x": [ 16, 17 ], "y": 20, "chance": 40, "repeat": 3 },
-        { "group": "cleansing_flame_gear", "x": [ 2, 8 ], "y": 22, "chance": 20, "repeat": 8 },
-        { "group": "cleansing_flame_gear", "x": [ 16, 22 ], "y": 22, "chance": 20, "repeat": 8 },
-        { "group": "cleansing_flame_gear_magic", "x": [ 2, 8 ], "y": 22, "chance": 20, "repeat": 8 },
-        { "group": "cleansing_flame_gear_magic", "x": [ 16, 22 ], "y": 22, "chance": 20, "repeat": 8 },
+        { "group": "cleansing_flame_gear", "x": [ 2, 8 ], "y": 22, "chance": 25, "repeat": 3 },
+        { "group": "cleansing_flame_gear", "x": [ 16, 22 ], "y": 22, "chance": 25, "repeat": 3 },
+        { "group": "cleansing_flame_gear_magic", "x": [ 2, 8 ], "y": 22, "chance": 20, "repeat": 3 },
+        { "group": "cleansing_flame_gear_magic", "x": [ 16, 22 ], "y": 22, "chance": 20, "repeat": 3 },
         { "group": "cleansing_flame_casualties", "x": [ 5, 19 ], "y": [ 11, 15 ], "repeat": 7 },
         { "group": "add_apprentice", "x": 20, "y": [ 2, 6 ], "chance": 50, "repeat": 3 },
         { "item": "arcanemap", "x": 20, "y": [ 2, 6 ], "chance": 50 },
