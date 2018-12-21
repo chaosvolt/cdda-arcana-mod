@@ -29,6 +29,11 @@
     "dmg_adj": [ "scratched", "cut", "shredded", "tattered" ],
     "bash_dmg_verb": "ripped",
     "cut_dmg_verb": "sliced",
+    "burn_data": [
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 1, "smoke": 3, "burn": 2, "volume_per_turn": "500_ml" },
+      { "fuel": 1, "smoke": 3, "burn": 2 }
+    ],
     "//": "identical save for acid resistance"
   },
   {
@@ -43,14 +48,14 @@
     "fire_resist": 1,
     "elec_resist": 2,
     "chip_resist": 8,
+    "repaired_with": "bone",
     "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
     "bash_dmg_verb": "cracked",
     "cut_dmg_verb": "chipped",
-    "repaired_with": "bone",
     "vitamins": [ [ "calcium", 2 ] ],
     "burn_data": [
       { "fuel": 0, "smoke": 0, "burn": 0 },
-      { "fuel": 0, "smoke": 1, "burn": 1, "chance": 1 },
+      { "fuel": 0, "smoke": 1, "burn": 1, "volume_per_turn": "250_ml" },
       { "fuel": 1, "smoke": 1, "burn": 2 }
     ]
   },
@@ -70,7 +75,7 @@
     "bash_dmg_verb": "cracked",
     "cut_dmg_verb": "chipped",
     "burn_data": [
-      { "fuel": 0, "smoke": 1, "burn": 1, "chance": 5 },
+      { "fuel": 0, "smoke": 1, "burn": 1, "volume_per_turn": "1250_ml" },
       { "fuel": 1, "smoke": 3, "burn": 1 },
       { "fuel": 1, "smoke": 5, "burn": 5 }
     ]
@@ -124,9 +129,10 @@
     "bash_dmg_verb": "splintered",
     "cut_dmg_verb": "gouged",
     "burn_data": [
-      { "fuel": 1, "smoke": 1, "burn": 0.02, "chance": 5 },
-      { "fuel": 2, "smoke": 1, "burn": 0.04, "chance": 20 },
+      { "fuel": 1, "smoke": 1, "burn": 0.02, "volume_per_turn": "1250_ml" },
+      { "fuel": 2, "smoke": 1, "burn": 0.04, "volume_per_turn": "5000_ml" },
       { "fuel": 3, "smoke": 1, "burn": 0.06 }
-    ]
+    ],
+    "burn_products": [ [ "ash", 0.018 ] ]
   }
 ]
