@@ -1,0 +1,107 @@
+[
+  {
+    "id": "MISSION_HERMIT_RETRIEVE_SWORD",
+    "type": "mission_definition",
+    "name": "Retrieve The Cursed Blade",
+    "//": "Mission is supposed to completed via dialogue, not the normal route.",
+    "goal": "MGOAL_KILL_MONSTER_TYPE",
+    "difficulty": 5,
+    "value": 250000,
+    "monster_type": "debug_mon",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "impact_site",
+        "om_special": "Floating Temple",
+        "reveal_radius": 3,
+        "search_range": 180
+        "z": 0
+      }
+    },
+    "monster_kill_goal": 1,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_HERMIT_RESTORE_SWORD",
+    "dialogue": {
+      "describe": "Perhaps we shall at last atone...",
+      "offer": "This is a task not to be taken lightly, and I can understand if you deem yourself unprepared.  We had a temple once, built on flying stone, over ground marked by a fallen star.  There, our last effort to serve Him failed.  There remains a dangerous threat that broke our order, and a fallen relic.  If I could see that relic once again, tainted though it may be, I can rest in peace when my time comes.",
+      "accepted": "Thank you.  My He From Beyond The Veil guide you, or failing that whatever other gods you serve.  I will tell you where to go, but I'm afraid I can't lead you there personally.  I ask that you retrieve the cursed blade and bring it here, and then I will explain further.  Beware the unholy monsters likely to still infest the temple, and ...what remain of the high priest.",
+      "rejected": "I understand.  The threat that defiles the old temple is not to be underestimated.  If I felt I could make the journey, I would attempt it myself, even if I failed I could die knowing I did the right thing.  Seek my guidance if you change your mind.",
+      "advice": "You will likely have to kill the abomination inhabiting the body of the temple's former high priest.  I know not what weapons he may still carry, nor what unholy power the spirit possessing him commands, but be careful and expect anything.  Most likely he will have turned our own symbol of judgement on his congregation, meaning you'll have to expect lightning magic.",
+      "inquire": "Have you completed this task?",
+      "success": "Excellent.  I have no need of this item, in fact you might be better suited to use it, if you are cautious Speak with me further and I will tell you whatever you need know, and I will have a task to offer you.",
+      "success_lie": "What folly is this?",
+      "failure": "As I feared..."
+    }
+  },
+  {
+    "id": "MISSION_HERMIT_RESTORE_SWORD",
+    "type": "mission_definition",
+    "name": "Restore The Ritual Blade",
+    "//": "Mission is supposed to completed via dialogue, not the normal route.",
+    "goal": "MGOAL_KILL_MONSTER_TYPE",
+    "difficulty": 5,
+    "value": 250000,
+    "monster_type": "debug_mon",
+    "monster_kill_goal": 1,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_HERMIT_AWAKEN_POWER",
+    "dialogue": {
+      "describe": "Perhaps we shall at last atone...",
+      "offer": "I have told you some of what I know.  And that may be of use to you.  The blade may be marred by dark magic, but it can be salvaged.  You have the potential, and it may prove even more useful restored than as a sanguine-corrupted weapon.",
+      "accepted": "Wonderful.  The way forward lies within Oaths to The Chalice.  To undertake this task is to accept the responsibility that comes with it.  I will offer what advice I can, but I can't perform the purification ritual for you.  That shall be your duty.",
+      "rejected": "I understand, though I hope you have not come to favor the relic's current state for its use as a weapon.  Seek me out if you deem yourself ready.",
+      "advice": "You shall need the studies of those who have came before, certain ritual componants if I recall.  You'll also need to seek out a copy of Sanguine Codex to properly counter the sanguine curse placed on it.",
+      "inquire": "Have you performed the ritual?  Let me see it...",
+      "success": "To see this, after so long... it's hard for me to put words to this.  It'll never be restored to the glory it once held, forged in fires from Beyond as one of the divine gifts, but even this gives me hope.  Come, we have much to discuss.",
+      "success_lie": "What folly is this?",
+      "failure": "As I feared..."
+    }
+  },
+  {
+    "id": "MISSION_HERMIT_AWAKEN_POWER",
+    "type": "mission_definition",
+    "name": "",
+    "//": "Mission is supposed to completed via dialogue, not the normal route.",
+    "goal": "MGOAL_KILL_MONSTER_TYPE",
+    "difficulty": 5,
+    "value": 250000,
+    "monster_type": "debug_mon",
+    "monster_kill_goal": 1,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "",
+    "dialogue": {
+      "describe": "Perhaps we shall at last atone...",
+      "offer": ".",
+      "accepted": ".",
+      "rejected": ".",
+      "advice": ".",
+      "inquire": "",
+      "success": ".",
+      "success_lie": "What folly is this?",
+      "failure": "As I feared..."
+    }
+  },
+  {
+    "id": "MISSION_HERMIT_",
+    "type": "mission_definition",
+    "name": "",
+    "//": "Mission is supposed to completed via dialogue, not the normal route.",
+    "goal": "MGOAL_KILL_MONSTER_TYPE",
+    "difficulty": 5,
+    "value": 250000,
+    "monster_type": "debug_mon",
+    "monster_kill_goal": 1,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "",
+    "dialogue": {
+      "describe": "Perhaps we shall at last atone...",
+      "offer": ".",
+      "accepted": ".",
+      "rejected": ".",
+      "advice": ".",
+      "inquire": "",
+      "success": ".",
+      "success_lie": "What folly is this?",
+      "failure": "As I feared..."
+    }
+  },
+]
