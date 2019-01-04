@@ -181,7 +181,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_acidarmor", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_acidarmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -195,7 +198,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_acidspray", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_acidspray",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -209,7 +215,10 @@
     "active": true,
     "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_agile", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_agile",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -224,7 +233,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_clairvoyance", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_clairvoyance",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -238,7 +250,10 @@
     "active": true,
     "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_clarity", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_clarity",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -253,7 +268,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_confusion", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_confusion",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -269,7 +287,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_lightningfield", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_lightningfield",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -285,7 +306,10 @@
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_smoke", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_smoke",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -300,7 +324,10 @@
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_cloud", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_cloud",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -317,7 +344,10 @@
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_daylight", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_daylight",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -331,7 +361,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_drainlife", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_drainlife",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -345,7 +378,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_fireball", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_fireball",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -360,7 +396,10 @@
     "active": true,
     "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_flamearmor", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_flamearmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -374,7 +413,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_free_action", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_free_action",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -388,7 +430,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_heal", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_heal",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -402,7 +447,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_insight", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_insight",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -417,7 +465,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_invis", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_invis",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -431,7 +482,10 @@
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_light", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_light",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -446,7 +500,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_elecresist", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_elecresist",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -461,7 +518,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_strength", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_strength",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -477,7 +537,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_psyshield", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_psyshield",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -492,7 +555,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_lockpick", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_lockpick",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -506,7 +572,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_plants", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_plants",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -522,7 +591,10 @@
     "active": true,
     "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_pacify", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_pacify",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -537,7 +609,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_poisonarmor", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_poisonarmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -551,7 +626,10 @@
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_lightning", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_lightning",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -565,7 +643,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonculus", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonculus",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -580,7 +661,10 @@
     "active": true,
     "cost": 105,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonthing", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonthing",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -595,7 +679,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summondog", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summondog",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -610,7 +697,10 @@
     "active": true,
     "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonskel", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonskel",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -625,7 +715,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonvortex", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonvortex",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -640,7 +733,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_teleport", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_teleport",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -657,7 +753,10 @@
     "active": true,
     "cost": 120,
     "fatigue": true,
-    "spawn_item": { "type": "spell_pulse", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_pulse",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -671,7 +770,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_cleric", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_cleric",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -686,7 +788,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_bugs", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_bugs",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -700,7 +805,10 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_dampening", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_dampening",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -715,7 +823,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_frostarmor", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_frostarmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -731,7 +842,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_shadowsnakes", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_shadowsnakes",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -747,7 +861,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonwyrm", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonwyrm",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -762,7 +879,10 @@
     "active": true,
     "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonfiend", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonfiend",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -778,7 +898,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonjabberwock", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonjabberwock",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -794,7 +917,10 @@
     "active": true,
     "cost": 105,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonyugg", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonyugg",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -1234,5 +1360,45 @@
     "description": "This NPC is a wandering hermit, and this trait is used for certain dialogue checks.  This is a bug if you have this!",
     "valid": false,
     "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_CLEANSINGFLAME",
+    "name": "Cleansing Flame",
+    "points": 0,
+    "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renagade, wherever your loyalties now lie, your past may still be useful in the future.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_SANGUINE",
+    "name": "Sanguinist",
+    "points": 0,
+    "description": "You were sworn into an order known as the Sanguine Order.  Infamous and feared as you were among those who studied in secret, your past may still be useful in the future.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_CHALICE",
+    "name": "Keeper of The Oath",
+    "points": 0,
+    "description": "You were sworn into an order known as the Keepers of The Oath.  Whether or not He From Beyond The Veil still guides you, the oath you swore is eternal, and your past may still be useful in the future.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_ARCANIST",
+    "name": "Arcanist",
+    "points": 0,
+    "description": "Though you studied the Beyond, you weren't directly associated with the major groups to gain infamy among your fellow scholar.  Still, your familiarity with the arcane may prove useful someday.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
   }
 ]
