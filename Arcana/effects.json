@@ -252,5 +252,23 @@
     "base_mods": {
       "per_mod": [ 8 ]
     }
-  }
+  },
+    {
+        "type": "effect_type",
+        "id": "hermit_inquire_denied",
+        "name": ["Inquiry Denied"],
+        "desc": ["AI tag for asking The Hermit for personal information.  Used in case asked_personal_info is ever removed due to lack of use.  Intended duration 3 hours.  This is a bug if you have it."]
+    },
+    {
+        "type": "effect_type",
+        "id": "hermit_earned_trust_1",
+        "name": ["Trust 1"],
+        "desc": ["AI tag marking The Hermit as having revealed their general familiarity with the arcane.  Intended to be permanant.  This is a bug if you have it."]
+    },
+    {
+        "type": "effect_type",
+        "id": "hermit_earned_trust_2",
+        "name": ["Trust 2"],
+        "desc": ["AI tag marking The Hermit as having revealed their affiliation with the Keepers of The Oath, and opening up quests.  Intended to be permanant.  This is a bug if you have it."]
+    }
 ]
