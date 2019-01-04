@@ -281,7 +281,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_FLAMEARMOR" ],
     "leads_to": [ "SPELL_FIRE" ],
-    "category": [ "VEIL", "DRAGONBLOOD" ],
+    "category": [ "VEIL" ],
     "active": true,
     "cost": 30,
     "fatigue": true,
@@ -327,8 +327,7 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary life-draining effect.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL", "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_VEIL", "THRESH_DRAGONBLOOD" ],
+    "category": [ "VEIL" ],
     "active": true,
     "cost": 90,
     "fatigue": true,
@@ -534,7 +533,7 @@
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_CLOUD" ],
-    "category": [ "VEIL", "DRAGONBLOOD" ],
+    "category": [ "VEIL" ],
     "active": true,
     "cost": 45,
     "fatigue": true,
@@ -711,8 +710,8 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy that can protect against cold.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL", "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_VEIL", "THRESH_DRAGONBLOOD" ],
+    "category": [ "VEIL" ],
+    "threshreq": [ "THRESH_VEIL" ],
     "active": true,
     "cost": 75,
     "fatigue": true,
@@ -1226,5 +1225,14 @@
     "hunger": true,
     "thirst": true,
     "spawn_item": { "type": "essence", "message": "You channel your life force into forming a mote of otherworldly essence." }
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_HERMIT",
+    "name": "The Hermit",
+    "points": 0,
+    "description": "This NPC is a wandering hermit, and this trait is used for certain dialogue checks.  This is a bug if you have this!",
+    "valid": false,
+    "purifiable": false
   }
 ]

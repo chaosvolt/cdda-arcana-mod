@@ -4,7 +4,7 @@
     "type": "talk_topic",
     "responses": [
       {
-        "text": "I have it.",
+        "text": "Yes, I have.",
         "topic": "TALK_MISSION_SUCCESS",
         "effect": "mission_success",
         "condition": {
@@ -14,32 +14,86 @@
             { "npc_has_trait": "ARCANA_HERMIT" }
           ]
         }
+      },
+      {
+        "text": "See for yourself.",
+        "topic": "TALK_MISSION_SUCCESS",
+        "effect": "mission_success",
+        "condition": {
+          "and": [
+            { "u_has_item": "veilblade" },
+            { "u_has_mission": "MISSION_HERMIT_RESTORE_SWORD" },
+            { "npc_has_trait": "ARCANA_HERMIT" }
+          ]
+        }
+      },
+      {
+        "text": "I can feel it.  This is what you wanted me to obtain, right?",
+        "topic": "TALK_MISSION_SUCCESS",
+        "effect": "mission_success",
+        "condition": {
+          "and": [
+            {
+              "u_has_any_trait": [ "SPELL_ACIDARMOR", "SPELL_SMOKE", "SPELL_DRAINLIFE", "SPELL_POISONARMOR", "SPELL_SUMMONCULUS", "SPELL_SUMMONSKEL" ]
+            },
+            { "u_has_mission": "MISSION_HERMIT_AWAKEN_POWER" },
+            { "npc_has_trait": "ARCANA_HERMIT" }
+          ]
+        }
+      },
+      {
+        "text": "It is done.  He has chosen me, as you wished.",
+        "topic": "TALK_MISSION_SUCCESS",
+        "effect": "mission_success",
+        "condition": {
+          "and": [
+            { "u_has_any_trait": [ "THRESH_VEIL" ] },
+            { "u_has_mission": "MISSION_HERMIT_BECOME_PARAGON" },
+            { "npc_has_trait": "ARCANA_HERMIT" }
+          ]
+        }
       }
     ]
   },
   {
     "type": "talk_topic",
-    "id": "TALK_ARSONIST",
+    "id": "TALK_HERMIT",
     "dynamic_line": {
-      "u_is_wearing": "badge_marshal",
-      "yes": "That sure is a shiny badge you got there!",
-      "no": "Heh, you look important."
+      "npc_has_effect": "hermit_earned_trust",
+      "yes": {
+        "u_has_any_trait": [ "THRESH_VEIL" ],
+        "yes": "It is an honor to see you again, Chosen.  How may I help you?"
+        "no": "Welcome back.  How may I help you?"
+      },
+      "no": "Greetings, wanderer.  What brings you to this one's home?"
     },
     "responses": [
-      { "text": "I'm actually new.", "topic": "TALK_ARSONIST_NEW" },
-      { "text": "What are you doing here?", "topic": "TALK_ARSONIST_DOING" },
-      { "text": "Heard anything about the outside world?", "topic": "TALK_ARSONIST_WORLD" },
-      { "text": "Is there any way I can join your group?", "topic": "TALK_ARSONIST_JOIN" },
-      { "text": "What's with your ears?", "topic": "TALK_ARSONIST_MUTATION" },
-      { "text": "Anything I can help with?", "topic": "TALK_MISSION_LIST" },
+      { "text": "Who are you?", "topic": "TALK_HERMIT_WHO" },
+      { "text": "What are you doing here?", "topic": "TALK_HERMIT_DOING" },
+      { "text": "Heard anything about the outside world?", "topic": "TALK_HERMIT_WORLD" },
+      { "text": "Anything I can help with?", "topic": "TALK_MISSION_LIST", "condition": { "npc_has_effect": "hermit_earned_trust" } },
+      { "text": "Anything I can help with?", "topic": "TALK_HERMIT_MISSION_NONE", "condition": { "not": { "npc_has_effect": "hermit_earned_trust" } },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
   },
   {
     "type": "talk_topic",
-    "id": "TALK_ARSONIST_NEW",
-    "dynamic_line": "Guess that makes two of us.  Well, kind of.  I don't think we're open, though.  Full up as hell; it's almost a crowd downstairs.  Did you see the trader at the enterance?  There's the one to ask.",
-    "responses": [ { "text": "Sucks...", "topic": "TALK_ARSONIST" } ]
+    "id": "TALK_HERMIT_WHO",
+    "dynamic_line": {
+      "npc_has_effect": "hermit_earned_trust",
+      "yes": "I used to be a follower of He From Beyond The Veil.  Well, no, I still am.  The oath is eternal.  But one old man can only do so much.  So many of us have fallen...",
+      "no": "I've been a lot of things in the past, but now I am nothing more than a survivor as any other.  A scholar I suppose, as I've little to do but read what the old world has left behind."
+    },
+    "responses": [
+      { "text": "I see.", "topic": "TALK_HERMIT" }
+      { "text": "I see.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_MISSION_NONE",
+    "dynamic_line": "There is nothing I have urgent need of, beyond what I can manage myself.  Thank you for your concern however, young one.",
+    "responses": [ { "text": "Oh, okay.", "topic": "TALK_HERMIT" } ]
   },
   {
     "type": "talk_topic",

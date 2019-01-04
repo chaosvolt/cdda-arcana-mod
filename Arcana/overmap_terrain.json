@@ -247,5 +247,23 @@
     "type": "overmap_terrain",
     "id": "arcanist_basement",
     "copy-from": "generic_city_house_basement"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "new_anomly_1",
+    "name": "recent anomaly",
+    "sym": 46,
+    "color": "magenta",
+    "see_cost": 2,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "new_anomly_2",
+    "name": "recent anomaly",
+    "sym": 46,
+    "color": "magenta",
+    "see_cost": 2,
+    "flags": [ "NO_ROTATE" ]
   }
 ]

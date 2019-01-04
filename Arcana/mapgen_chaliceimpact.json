@@ -119,20 +119,20 @@
         "      mmmuu  uummm      ",
         "    mmmuuuu  uuuummm    ",
         "   mmuuuuu    uuuuumm   ",
-        "   muuuuu......uuuuum   ",
-        "  mmuuuu........uuuumm  ",
-        "  muuuua........auuuum  ",
-        " mmuuu............uuumm ",
-        " muuu....b....b....uuum ",
-        " muu .............. uum ",
-        "     ......<<......     ",
-        "     ......<<......     ",
-        " muu .............. uum ",
-        " muuu....b....b....uuum ",
-        " mmuuu............uuumm ",
-        "  muuuua........auuuum  ",
-        "  mmuuuu........uuuumm  ",
-        "   muuuuu......uuuuum   ",
+        "   muuuuuEEEEEEuuuuum   ",
+        "  mmuuuuEEEEEEEEuuuumm  ",
+        "  muuuuaEEEEEEEEauuuum  ",
+        " mmuuuEEEEEEEEEEEEuuumm ",
+        " muuuEEEEbEEEEbEEEEuuum ",
+        " muu EEEEEEEEEEEEEE uum ",
+        "     EEEEEE<<EEEEEE     ",
+        "     EEEEEE<<EEEEEE     ",
+        " muu EEEEEEEEEEEEEE uum ",
+        " muuuEEEEbEEEEbEEEEuuum ",
+        " mmuuuEEEEEEEEEEEEuuumm ",
+        "  muuuuaEEEEEEEEauuuum  ",
+        "  mmuuuuEEEEEEEEuuuumm  ",
+        "   muuuuuEEEEEEuuuuum   ",
         "   mmuuuuu    uuuuumm   ",
         "    mmmuuuu  uuuummm    ",
         "      mmmuu  uummm      ",
@@ -140,6 +140,7 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
+      "terrain": { "b": "t_rock_floor_no_roof" },
       "mapping": { "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice" } } },
       "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 6, 17 ], "y": [ 6, 17 ], "density": 0.1 } ]
     }
@@ -296,6 +297,9 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
+      "set": [
+        { "point": "trap", "id": "tr_portal", "x": [ 9, 11 ], "y": [ 9, 14 ], "repeat": [ 1, 2 ] }
+      ],
       "mapping": {
         "{": {
           "items": [
@@ -348,6 +352,9 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
+      "set": [
+        { "point": "trap", "id": "tr_portal", "x": [ 12, 13 ], "y": [ 11, 12 ] }
+      ],
       "mapping": {
         "]": { "items": [ { "item": "chalice_cult_books", "chance": 80, "repeat": 2 } ] },
         "d": { "item": [ { "item": "glass_shard", "chance": 50, "repeat": 2 } ] },
