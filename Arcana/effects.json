@@ -269,5 +269,37 @@
     "desc": [
       "AI tag marking The Hermit as having revealed their affiliation with the Keepers of The Oath, and opening up quests.  Intended to be permanant.  This is a bug if you have it."
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "hermit_stage_1",
+    "name": [ "Quest Stage 1" ],
+    "desc": [
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanant.  This is a bug if you have it."
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "hermit_stage_2",
+    "name": [ "Quest Stage 2" ],
+    "desc": [
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanant.  This is a bug if you have it."
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "hermit_stage_3",
+    "name": [ "Quest Stage 3" ],
+    "desc": [
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanant.  This is a bug if you have it."
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "hermit_stage_4,
+    "name": [ "Quest Stage 4" ],
+    "desc": [
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanant.  This is a bug if you have it."
+    ]
   }
 ]
