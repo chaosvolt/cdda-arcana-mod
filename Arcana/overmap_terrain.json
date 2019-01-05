@@ -250,7 +250,7 @@
   },
   {
     "type": "overmap_terrain",
-    "id": "new_anomly_1",
+    "id": "new_anomaly_1",
     "name": "recent anomaly",
     "sym": 46,
     "color": "magenta",
@@ -259,11 +259,29 @@
   },
   {
     "type": "overmap_terrain",
-    "id": "new_anomly_2",
+    "id": "new_anomaly_2",
     "name": "recent anomaly",
     "sym": 46,
     "color": "magenta",
     "see_cost": 2,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "arcana_hermitage_1",
+    "name": "cabin",
+    "sym": 67,
+    "color": "i_green",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "arcana_hermitage_2",
+    "name": "cabin",
+    "sym": 67,
+    "color": "i_green",
+    "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
   }
 ]

@@ -20,7 +20,7 @@
     "//": "Only Mycus Adrenaline in this case can really shake off the sluggishness.",
     "removes_effects": [ "shakes", "formication", "jetinjector", "stimpack", "adrenaline", "meth" ],
     "blocks_effects": [ "shakes", "formication", "jetinjector", "stimpack", "adrenaline", "meth" ],
-    "decay_messages": [["The numbing effect of your potion is starting to fade.", "bad"]],
+    "decay_messages": [ [ "The numbing effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": 10,
@@ -32,7 +32,7 @@
     "name": [ "Strengthed" ],
     "desc": [ "You feel mighty, like you could take on the world." ],
     "remove_message": "The unnatural strength leaves your body.",
-    "decay_messages": [["The strengening effect of your potion is starting to fade.", "bad"]],
+    "decay_messages": [ [ "The strengening effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": 10,
@@ -56,7 +56,7 @@
     "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
     "removes_effects": [ "relax_gas", "lack_sleep", "sleep" ],
     "blocks_effects": [ "relax_gas", "lack_sleep", "sleep" ],
-    "decay_messages": [["The quickening effect of your potion is starting to fade.", "bad"]],
+    "decay_messages": [ [ "The quickening effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": 10,
@@ -77,7 +77,7 @@
     "desc": [ "Not immortality, but it still feels nice." ],
     "remove_message": "The healing effect fades.",
     "removes_effects": [ "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
-    "decay_messages": [["The soothing effect of your potion is starting to fade.", "bad"]],
+    "decay_messages": [ [ "The soothing effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": 10,
@@ -90,7 +90,7 @@
     "desc": [ "Immunity to food poisoning and parasites, increased hunger gain." ],
     "remove_message": "Your craving for rotten food subsides.",
     "blocks_effects": [ "poison", "badpoison", "foodpoison", "paralyzepoison", "bloodworms", "paincysts", "brainworms", "tapeworm" ],
-    "decay_messages": [["Your craving for rotten food is starting to wane.", "bad"]],
+    "decay_messages": [ [ "Your craving for rotten food is starting to wane.", "bad" ] ],
     "rating": "good",
     "max_intensity": 30,
     "int_dur_factor": 10,
@@ -104,7 +104,7 @@
     "remove_message": "For a moment you feel a terrible chill in the air, as the ward against cold fades.",
     "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
     "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
-    "decay_messages": [["Your ward against cold is waning.", "bad"]],
+    "decay_messages": [ [ "Your ward against cold is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": 10
@@ -143,7 +143,7 @@
       "relax_gas",
       "grabbed"
     ],
-    "decay_messages": [["Your spell of free action is waning.", "bad"]],
+    "decay_messages": [ [ "Your spell of free action is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": 10
@@ -156,7 +156,7 @@
     "remove_message": "You feel a strange tingling sensation, as the ward against heat fades.",
     "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
     "blocks_effects": [ "onfire", "smoke", "hot", "blisters" ],
-    "decay_messages": [["The ward against heat is waning.", "bad"]],
+    "decay_messages": [ [ "The ward against heat is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": 10
@@ -169,7 +169,7 @@
     "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
     "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
     "blocks_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
-    "decay_messages": [["Your clarity of blood spell is waning.", "bad"]],
+    "decay_messages": [ [ "Your clarity of blood spell is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": 10
@@ -182,7 +182,7 @@
     "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
     "removes_effects": [ "corroding" ],
     "blocks_effects": [ "corroding" ],
-    "decay_messages": [["Your ward against corrosion  is waning.", "bad"]],
+    "decay_messages": [ [ "Your ward against corrosion  is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": 10
@@ -205,7 +205,7 @@
     "remove_message": "The magical protection fades.",
     "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
     "blocks_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
-    "decay_messages": [["Your ward against evil is waning.", "bad"]],
+    "decay_messages": [ [ "Your ward against evil is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": 10
@@ -216,13 +216,11 @@
     "name": [ "Might" ],
     "desc": [ "The fabric of The Veil is woven into your frame  Your strength is augmented by magic." ],
     "remove_message": "You feel weakened as your magically-induced strength leaves you.",
-    "decay_messages": [["Your spell of might is waning.", "bad"]],
+    "decay_messages": [ [ "Your spell of might is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": 10,
-    "base_mods": {
-      "str_mod": [ 8 ]
-    }
+    "base_mods": { "str_mod": [ 8 ] }
   },
   {
     "type": "effect_type",
@@ -230,14 +228,11 @@
     "name": [ "Agility" ],
     "desc": [ "The winds of distant realms are at your back.  Your dexterity and speed are augmented by magic." ],
     "remove_message": "You feel sluggish as your magically-induced agility leaves you.",
-    "decay_messages": [["Your spell of agility is waning.", "bad"]],
+    "decay_messages": [ [ "Your spell of agility is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": 10,
-    "base_mods": {
-      "dex_mod": [ 8 ],
-      "speed_mod": [ 30 ]
-    }
+    "base_mods": { "dex_mod": [ 8 ], "speed_mod": [ 30 ] }
   },
   {
     "type": "effect_type",
@@ -245,30 +240,34 @@
     "name": [ "Insight" ],
     "desc": [ "The eyes of The Beyond shall guide you.  Your perception is augmented by magic." ],
     "remove_message": "You feel deadened as your magically-induced perception leaves you.",
-    "decay_messages": [["Your spell of insight is waning.", "bad"]],
+    "decay_messages": [ [ "Your spell of insight is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": 10,
-    "base_mods": {
-      "per_mod": [ 8 ]
-    }
+    "base_mods": { "per_mod": [ 8 ] }
   },
-    {
-        "type": "effect_type",
-        "id": "hermit_inquire_denied",
-        "name": ["Inquiry Denied"],
-        "desc": ["AI tag for asking The Hermit for personal information.  Used in case asked_personal_info is ever removed due to lack of use.  Intended duration 3 hours.  This is a bug if you have it."]
-    },
-    {
-        "type": "effect_type",
-        "id": "hermit_earned_trust_1",
-        "name": ["Trust 1"],
-        "desc": ["AI tag marking The Hermit as having revealed their general familiarity with the arcane.  Intended to be permanant.  This is a bug if you have it."]
-    },
-    {
-        "type": "effect_type",
-        "id": "hermit_earned_trust_2",
-        "name": ["Trust 2"],
-        "desc": ["AI tag marking The Hermit as having revealed their affiliation with the Keepers of The Oath, and opening up quests.  Intended to be permanant.  This is a bug if you have it."]
-    }
+  {
+    "type": "effect_type",
+    "id": "hermit_inquire_denied",
+    "name": [ "Inquiry Denied" ],
+    "desc": [
+      "AI tag for asking The Hermit for personal information.  Used in case asked_personal_info is ever removed due to lack of use.  Intended duration 3 hours.  This is a bug if you have it."
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "hermit_earned_trust_1",
+    "name": [ "Trust 1" ],
+    "desc": [
+      "AI tag marking The Hermit as having revealed their general familiarity with the arcane.  Intended to be permanant.  This is a bug if you have it."
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "hermit_earned_trust_2",
+    "name": [ "Trust 2" ],
+    "desc": [
+      "AI tag marking The Hermit as having revealed their affiliation with the Keepers of The Oath, and opening up quests.  Intended to be permanant.  This is a bug if you have it."
+    ]
+  }
 ]

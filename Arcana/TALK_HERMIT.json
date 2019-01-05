@@ -6,50 +6,68 @@
       {
         "text": "Yes, I have.",
         "topic": "TALK_MISSION_SUCCESS",
-        "effect": "mission_success",
+        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_1", "duration": "PERMANENT" } ],
         "condition": {
           "and": [
             { "u_has_item": "stormbringer" },
             { "u_has_mission": "MISSION_HERMIT_RETRIEVE_SWORD" },
-            { "npc_has_trait": "ARCANA_HERMIT" }
+            { "npc_has_trait": "PROF_CHALICE" }
           ]
         }
       },
       {
         "text": "See for yourself.",
         "topic": "TALK_MISSION_SUCCESS",
-        "effect": "mission_success",
+        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" } ],
         "condition": {
           "and": [
             { "u_has_item": "veilblade" },
             { "u_has_mission": "MISSION_HERMIT_RESTORE_SWORD" },
-            { "npc_has_trait": "ARCANA_HERMIT" }
+            { "npc_has_trait": "PROF_CHALICE" }
           ]
         }
       },
       {
         "text": "I can feel it.  This is what you wanted me to obtain, right?",
         "topic": "TALK_MISSION_SUCCESS",
-        "effect": "mission_success",
+        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_3", "duration": "PERMANENT" } ],
         "condition": {
           "and": [
             {
-              "u_has_any_trait": [ "SPELL_ACIDARMOR", "SPELL_SMOKE", "SPELL_DRAINLIFE", "SPELL_POISONARMOR", "SPELL_SUMMONCULUS", "SPELL_SUMMONSKEL" ]
+              "u_has_any_trait": [
+                "SPELL_ACIDARMOR",
+                "SPELL_ACID2",
+                "SPELL_AGILE2",
+                "SPELL_CLAIRVOYANCE2",
+                "SPELL_CONFUSE2",
+                "SPELL_SMOKE",
+                "SPELL_CLOUD",
+                "SPELL_DRAINLIFE",
+                "SPELL_FIRE2",
+                "SPELL_FLAMEARMOR2",
+                "SPELL_LIGHT2",
+                "SPELL_ELECRESIST2",
+                "SPELL_STRENGTH2",
+                "SPELL_POISONARMOR",
+                "SPELL_LIGHTNING2",
+                "SPELL_SUMMONCULUS",
+                "SPELL_SUMMONDOG2"
+              ]
             },
             { "u_has_mission": "MISSION_HERMIT_AWAKEN_POWER" },
-            { "npc_has_trait": "ARCANA_HERMIT" }
+            { "npc_has_trait": "PROF_CHALICE" }
           ]
         }
       },
       {
         "text": "It is done.  He has chosen me, as you wished.",
         "topic": "TALK_MISSION_SUCCESS",
-        "effect": "mission_success",
+        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" } ],
         "condition": {
           "and": [
             { "u_has_any_trait": [ "THRESH_VEIL" ] },
             { "u_has_mission": "MISSION_HERMIT_BECOME_PARAGON" },
-            { "npc_has_trait": "ARCANA_HERMIT" }
+            { "npc_has_trait": "PROF_CHALICE" }
           ]
         }
       }
@@ -62,19 +80,329 @@
       "npc_has_effect": "hermit_earned_trust_1",
       "yes": {
         "u_has_any_trait": [ "THRESH_VEIL" ],
-        "yes": "It is an honor to see you again, Chosen.  How may I help you?"
+        "yes": "It is an honor to see you again, Chosen.  How may I help you?",
         "no": "Welcome back.  How may I help you?"
       },
       "no": "Greetings, wanderer.  What brings you to this one's home?"
     },
     "responses": [
+      {
+        "text": "[MISSION] Can you offer me any help with restoring the sword?",
+        "topic": "TALK_HERMIT_QUEST_HELP_1",
+        "condition": { "u_has_mission": "MISSION_HERMIT_RESTORE_SWORD" }
+      },
+      {
+        "text": "What if I would prefer to destroy this relic?",
+        "topic": "TALK_HERMIT_DISCUSS_1_DESTROY",
+        "condition": { "u_has_mission": "MISSION_HERMIT_RESTORE_SWORD" }
+      },
+      {
+        "text": "[MISSION] Can you offer advice regarding how to charge the sword?",
+        "topic": "TALK_HERMIT_QUEST_HELP_2",
+        "condition": { "u_has_mission": "MISSION_HERMIT_AWAKEN_POWER" }
+      },
+      {
+        "text": "[MISSION] How will you know what \"signs\" reveal the favor of He From Beyond The Veil?",
+        "topic": "TALK_HERMIT_QUEST_HELP_2_SIGNS",
+        "condition": { "u_has_mission": "MISSION_HERMIT_AWAKEN_POWER" }
+      },
       { "text": "Who are you?", "topic": "TALK_HERMIT_WHO" },
       { "text": "What are you doing here?", "topic": "TALK_HERMIT_DOING" },
-      { "text": "Heard anything about the outside world?", "topic": "TALK_HERMIT_WORLD" },
-      { "text": "You mentioned something I can help with?", "topic": "TALK_MISSION_LIST", "condition": { "npc_has_effect": "hermit_earned_trust_2" } },
-      { "text": "Anything I can help with?", "topic": "TALK_HERMIT_MISSION_NONE", "condition": { "not": { "npc_has_effect": "hermit_earned_trust_2" } } },
+      {
+        "text": "You mentioned you had answers first, then another task?",
+        "topic": "TALK_HERMIT_DISCUSS_1",
+        "condition": { "and": [ { "npc_has_effect": "hermit_stage_1" }, { "not": { "npc_has_effect": "hermit_stage_2" } } ] }
+      },
+      {
+        "text": "What is there to discuss, before we go further?",
+        "topic": "TALK_HERMIT_DISCUSS_2",
+        "condition": { "and": [ { "npc_has_effect": "hermit_stage_2" }, { "not": { "npc_has_effect": "hermit_stage_3" } } ] }
+      },
+      {
+        "text": "You mentioned more to talk about, and another mission?",
+        "topic": "TALK_HERMIT_DISCUSS_3",
+        "condition": { "and": [ { "npc_has_effect": "hermit_stage_3" }, { "not": { "npc_has_effect": "hermit_stage_4" } } ] }
+      },
+      {
+        "text": "So, what I can help with?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "and": [ { "npc_has_effect": "hermit_earned_trust_2" }, { "not": { "npc_has_effect": "hermit_stage_1" } } ] }
+      },
+      {
+        "text": "Anything I can help with?",
+        "topic": "TALK_HERMIT_MISSION_NONE",
+        "condition": { "not": { "npc_has_effect": "hermit_earned_trust_2" } }
+      },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUEST_HELP_1",
+    "dynamic_line": "It is best to work through this for yourself, and thus I cannot do it for you.  But I can offer advice and some degree of assistance.",
+    "responses": [
+      {
+        "text": "Do you have a copy of Oaths to The Chalice?",
+        "topic": "TALK_HERMIT_QUEST_HELP_1_CHALICE",
+        "effect": { "u_buy_item": "book_sacrifice" },
+        "condition": { "not": { "u_has_item": "book_sacrifice" } }
+      },
+      {
+        "text": "Do you have a copy of Sanguine Codex?",
+        "topic": "TALK_HERMIT_QUEST_HELP_1_SANGUINE",
+        "condition": { "not": { "u_has_item": "book_bloodmagic" } }
+      },
+      { "text": "What else will I need to do to restore the sword?", "topic": "TALK_HERMIT_QUEST_HELP_1_GENERAL" },
+      { "text": "Never mind.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUEST_HELP_1_CHALICE",
+    "dynamic_line": "Read it well, and use it well.  This is the holy word of He From Beyond The Veil, He above all earthly gods.",
+    "responses": [ { "text": "Thank you.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUEST_HELP_1_SANGUINE",
+    "dynamic_line": "I'm afraid I don't have a copy of that book on hand.  I can offer you what advise I can in finding one though.  If you encounter any of their hideouts, whether hidden away in the city or far from civlization, be extremely cautious.  The text also sometimes has a habit of finding its way into the hands of wealthy collectors, and undead of unusual nature may hint at long-dead arcanist that may still cling to their tomes.",
+    "responses": [ { "text": "I see.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUEST_HELP_1_GENERAL",
+    "dynamic_line": "You will require fire to burn the corruption from the blade, a holy symbol to restore its sanctity.  Even those of this world's faiths will suffice, even the sacred tools of the Cleansing Flame if nothing else, or the chalice we use for our rituals.  Salt for the ritual circle, and blood essence to fuel the counter-spell contained within the Sanguine Codex.  It would be best if you seek these items on your own, to better understand the gravity of your task.",
+    "responses": [ { "text": "...", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUEST_HELP_2",
+    "dynamic_line": "There are two methods.  The first is to draw upon the energy given off by a portal.  You need to be close to one, as close as you can without stepping into it.  Other than that, crystallized essence can be used as a substitute.",
+    "responses": [
+      { "text": "So that's why you mentioned an anomaly.", "topic": "TALK_HERMIT_QUEST_HELP_2_ANOMALY" },
+      { "text": "Crystallized essence?", "topic": "TALK_HERMIT_QUEST_HELP_2_ESSENCE" },
+      { "text": "I see.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUEST_HELP_2_ANOMALY",
+    "dynamic_line": "Indeed.  It's recent enough that, with the right means, one can sense such disturbances while they are fresh.  Be prepared for whatever monsters may have followed from these wounds in The Veil.",
+    "responses": [
+      {
+        "text": "As our book says.  Any otherworldly monster must be returned to its true domain, living or dead...",
+        "topic": "TALK_HERMIT",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] }
+      },
+      { "text": "I'll be ready.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUEST_HELP_2_ESSENCE",
+    "dynamic_line": "If that is what you seek, the way forward lies within Oaths to The Chalice.  It is used to fuel powerful magic, though many of the rituals needing such concentrated power have long since been lost.",
+    "responses": [ { "text": "I see.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUEST_HELP_2_SIGNS",
+    "dynamic_line": "Though certain arcane blessings have found their way into this world by other means, the ones He grants are different.  Their divine origin can be sensed, and they flow through body and soul with greater ease.  My eyes may be failing me, but some senses never dull.",
+    "responses": [ { "text": "I see.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_1",
+    "dynamic_line": "You have recovered an item of great and terrible power.  This was once a relic handed down from He From Beyond The Veil, one of seven in fact.  Only this one remains.",
+    "responses": [
+      {
+        "text": "There were seven of them?",
+        "topic": "TALK_HERMIT_DISCUSS_1_SEVEN",
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CHALICE" ] } }
+      },
+      {
+        "text": "Do you know what happened to the other six?",
+        "topic": "TALK_HERMIT_DISCUSS_1_SIX",
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE" ] }
+      },
+      { "text": "What happened to it?", "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED" },
+      { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
+      { "text": "What should we do now?", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_1_SEVEN",
+    "dynamic_line": "Indeed there were.  Seven sacrifices, seven gifts from He From Beyond The Veil... left in the care of seven high priests.  They were to use these to serve His will, to prevent the wounds in The Veil from worsening.  We failed in that.",
+    "responses": [
+      { "text": "What happpened to the other six", "topic": "TALK_HERMIT_DISCUSS_1_SIX" },
+      { "text": "What happpened to this one?", "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED" },
+      { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
+      { "text": "I see.  So what now?", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_1_SIX",
+    "dynamic_line": "A few were known to have been destroyed, others lost as this one was, though I doubt we will ever recover them.",
+    "responses": [
+      { "text": "What happpened to this one?", "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED" },
+      { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
+      { "text": "I see.  So what now?", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_1_HAPPENED",
+    "dynamic_line": "The Sanguine Order happened.  They recovered it by some means and returned it during a time of mutual need, when their order was on the brink of self-destruction.  But it was sabotaged, an attempt to undermine us for their own gain, only for the consequences to break both of our orders in the process.",
+    "responses": [
+      {
+        "text": "I'm sorry.  Is there any way to atone for this?",
+        "condition": { "u_has_any_trait": [ "PROF_SANGUINE" ] },
+        "opinion": { "trust": 1, "anger": -1 },
+        "topic": "TALK_HERMIT_DISCUSS_1_SANGUINE_1"
+      },
+      {
+        "text": "This was not my doing.  They were fools to umleash something they couldn't control.",
+        "condition": { "u_has_any_trait": [ "PROF_SANGUINE" ] },
+        "opinion": { "trust": -1, "anger": 1 },
+        "topic": "TALK_HERMIT_DISCUSS_1_SANGUINE_2"
+      },
+      {
+        "text": "Treachery like that is why the Cleansing Flame was founded, united in opposition to what those vermin did to people.",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] },
+        "topic": "TALK_HERMIT_DISCUSS_1_FLAME"
+      },
+      { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
+      { "text": "What do we do, then?", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_1_SANGUINE_1",
+    "dynamic_line": "Thank you.  You have a duty, that you have accepted by retrieving this relic.  Together we shall correct the mistakes of both our orders.",
+    "responses": [ { "text": "What do we do then?", "topic": "TALK_MISSION_LIST" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_1_SANGUINE_2",
+    "dynamic_line": "Hmmph.  You have your own responsibilities.  You must be better than they were.",
+    "responses": [
+      { "text": "What can be done then?", "topic": "TALK_MISSION_LIST" },
+      { "text": "We shall see.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_1_FLAME",
+    "dynamic_line": "This is true.  But do not let yourself be blinded by hatred.  I had known many of them, and a few sought power for less destructive reasons.  If any of them are left, they must be guided into righting the wrongs their fellows have committed.",
+    "responses": [
+      { "text": "What can be done then?", "topic": "TALK_MISSION_LIST" },
+      { "text": "We shall see.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_1_DESTROY",
+    "dynamic_line": "What?  Please, you can't!  I know that this corruption is dangerous, and it will take great effort to fix it, but it can do so much good if it is restored... I can't allow that.",
+    "responses": [
+      { "text": "We shall see.", "topic": "TALK_HERMIT" },
+      {
+        "text": "[ATTACK] My duty demands it, this is far too dangerous to risk.  Try and stop me, old man.",
+        "topic": "TALK_DONE",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] },
+        "effect": "insult_combat"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_2",
+    "dynamic_line": "That is correct.  Seeing it now, you have done a lot to restore the relic.  But I fear the damage may be permanant.  Regardless, it can still serve its purpose.",
+    "responses": [
+      { "text": "What damage remains?", "topic": "TALK_HERMIT_DISCUSS_2_DAMAGE" },
+      { "text": "What is the sword's purpose?", "topic": "TALK_HERMIT_DISCUSS_2_PURPOSE" },
+      { "text": "Tell me what I must do.", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_2_DAMAGE",
+    "dynamic_line": "In its original state, it could manipulate and control the instabilities that now linger in this realm, not just seal them.  There were many rituals this could be used, but even if this was an option, they require years of training to practice safely.  We shall have to make do with what remains of the purpose it can serve.",
+    "responses": [
+      { "text": "And what is the sword's purpose?", "topic": "TALK_HERMIT_DISCUSS_2_PURPOSE" },
+      { "text": "What shall I do, then?", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_2_PURPOSE",
+    "dynamic_line": "To mend the wounds in The Veil.  Well, to treat them at least, and ideally prevent them.  After all, as it is said, it is our duty not to revert what has been done, but to ensure we will endure.",
+    "responses": [
+      {
+        "text": "We had hoped to mend the wounds in The Veil as well as prevent any further instability.  Despite our differences, we have a common goal.",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] },
+        "topic": "TALK_HERMIT_DISCUSS_2_FLAME"
+      },
+      { "text": "Very well then.  Tell me what I am to do.", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_2_FLAME",
+    "dynamic_line": "Our duties have some overlap and offer us the means to work together, but they are not the same in all respects.  As I said, to reverse what has happened may never truly be possible.  You are free to seek that if you desire, but fulfilling the sword's purpose will serve either goal.",
+    "responses": [ { "text": "If you insist.  What am I to do?", "topic": "TALK_MISSION_LIST" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3",
+    "dynamic_line": "Indeed.  Hopefully you have seen for yourself what this relic can do, even in the poor state it's in.  With it, another can at least continue to fulfill our oath.  To do all we can to ensure this world is not cast into the abyss, and others with it.  If you believe yourself ready, I have one final thing to ask of you.",
+    "responses": [
+      {
+        "text": "Our oath?",
+        "topic": "TALK_HERMIT_DISCUSS_3_OATH",
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CHALICE" ] } }
+      },
+      { "text": "Abyss?", "topic": "TALK_HERMIT_DISCUSS_3_ABYSS" },
+      { "text": "I am ready.", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_OATH",
+    "dynamic_line": "Well, what my brethren and I have sworn.  Though you have not done so, indeed I have no such authority to allow you to take that vow, you have started down a path that, if followed to its conclusion, will serve the same purpose.  You will have something that not even every high priest has acheived.",
+    "responses": [
+      { "text": "And what did you say of the abyss?", "topic": "TALK_HERMIT_DISCUSS_3_ABYSS" },
+      { "text": "I am ready.", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_ABYSS",
+    "dynamic_line": "That is what Oaths to The Chalice warns of, that He answered our plea all those years ago, not only for our sake but that of other worlds affected by the wounds in The Veil.",
+    "responses": [
+      {
+        "text": "So you believe that is He From Beyond The Veil wants the portals closed?",
+        "topic": "TALK_HERMIT_DISCUSS_3_MOTIVE"
+      },
+      {
+        "text": "Why should we care about whatever form of Hell these monsters come from?",
+        "topic": "TALK_HERMIT_DISCUSS_3_CARE",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE" ] }
+      },
+      { "text": "I see.  I am ready.", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_MOTIVE",
+    "dynamic_line": "Perhaps.  It is hard to be certain of gods, earthly or otherwordly.  No doubt other powerful beings from Beyond have no such concern, but is it because they believe there will be no such consequences, or are they ignorant of them?  Or worse, eager to see what havoc may afflict other planes of existence?  These are questions no mortal mind can answer with certainty, only that at least one of these powers has an interest in deeds that benefit us, no matter His true intent.",
+    "responses": [ { "text": "Alright... I am ready.", "topic": "TALK_MISSION_LIST" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_CARE",
+    "dynamic_line": "I can understand why it would be hard to care.  Most of the intruders from Beyond seem as mere animals at best, and most of the others seem to desire nothing but misery and extinction for us all.  But among them all, some spirits, some gods, demons, whatever they may be, would see us survive and endure the dark days ahead of us.  Whether they act in self-interest or not, it's better to have a powerful ally than to cower in the shadows of unnameable horrors.",
+    "responses": [ { "text": "If you say so.  Guess I'm ready.", "topic": "TALK_MISSION_LIST" } ]
   },
   {
     "type": "talk_topic",
@@ -89,23 +417,19 @@
         "text": "What can you tell me of He From Beyond The Veil?",
         "topic": "TALK_HERMIT_QUERY_VEIL",
         "condition": {
-          "and": [
-            { "npc_has_effect": "hermit_earned_trust_2" },
-            { "not": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } }
-          ]
+          "and": [ { "npc_has_effect": "hermit_earned_trust_2" }, { "not": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } } ]
         }
       },
       {
         "text": "Yet humanity perseveres, and there are still those of us out there to serve His will.",
         "topic": "TALK_HERMIT_VEIL_SOLIDARITY",
-        "condition": {
-          "and": [
-            { "npc_has_effect": "hermit_earned_trust_2" },
-            { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] }
-          ]
-        }
+        "condition": { "and": [ { "npc_has_effect": "hermit_earned_trust_2" }, { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } ] }
       },
-      { "text": "A scholar?  What kinds of books do you have?", "topic": "TALK_HERMIT_SCHOLAR", "condition": { "not": { "npc_has_effect": "hermit_earned_trust_2" } } },
+      {
+        "text": "A scholar?  What kinds of books do you have?",
+        "topic": "TALK_HERMIT_SCHOLAR",
+        "condition": { "not": { "npc_has_effect": "hermit_earned_trust_2" } }
+      },
       { "text": "I see.", "topic": "TALK_HERMIT" }
     ]
   },
@@ -129,12 +453,30 @@
       "yes": "A few old arcane tests certainly, but much of what I have is still nothing more than trivial texts, holy books and novels.",
       "no": "Old religious texts, novels, other such trivial things."
     },
-    "dynamic_line": "Old religious texts, novels, other such trivial things.",
     "responses": [
-      { "text": "What about more unusual books?  Like that of the arcane?", "topic": "TALK_HERMIT_BOOK_QUERY", "condition": { "not": { "npc_has_effect": "hermit_earned_trust_1" } } },
-      { "text": "Keeping the faith alive still holds merit in these dark times, if nothing else.", "opinion": { "trust": 1, "value": 1 }, "condition": { "u_has_any_trait": [ "SPIRITUAL" ] }, "topic": "TALK_HERMIT_SPIRITUAL" },
-      { "text": "Hardly trivial, every book has some merit to it.", "opinion": { "value": 1 }, "condition": { "u_has_any_trait": [ "LOVES_BOOKS" ] }, "topic": "TALK_HERMIT_LOVES_BOOKS" },
-      { "text": "Trivial indeed, nothing worth learning that you can't learn from experience.  Suit yourself, old man.", "condition": { "u_has_any_trait": [ "HATES_BOOKS" ] }, "opinion": { "value": -1 }, "topic": "TALK_HERMIT_HATES_BOOKS" },
+      {
+        "text": "What about more unusual books?  Like that of the arcane?",
+        "topic": "TALK_HERMIT_BOOK_QUERY",
+        "condition": { "not": { "npc_has_effect": "hermit_earned_trust_1" } }
+      },
+      {
+        "text": "Keeping the faith alive still holds merit in these dark times, if nothing else.",
+        "opinion": { "trust": 1, "value": 1 },
+        "condition": { "u_has_any_trait": [ "SPIRITUAL" ] },
+        "topic": "TALK_HERMIT_SPIRITUAL"
+      },
+      {
+        "text": "Hardly trivial, every book has some merit to it.",
+        "opinion": { "value": 1 },
+        "condition": { "u_has_any_trait": [ "LOVES_BOOKS" ] },
+        "topic": "TALK_HERMIT_LOVES_BOOKS"
+      },
+      {
+        "text": "Trivial indeed, nothing worth learning that you can't learn from experience.  Suit yourself, old man.",
+        "condition": { "u_has_any_trait": [ "HATES_BOOKS" ] },
+        "opinion": { "value": -1 },
+        "topic": "TALK_HERMIT_HATES_BOOKS"
+      },
       { "text": "Oh, okay.", "topic": "TALK_HERMIT" }
     ]
   },
@@ -148,10 +490,23 @@
         "opinion": { "trust": 1, "value": 1 },
         "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
         "topic": "TALK_HERMIT_BOOK_OUST",
-        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ]
+        "effect": [
+          { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
+          { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+        ]
       },
-      { "text": "I have seen what the arcane can lead to.  Great things, but also great danger", "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE", "PROF_ARCANIST" ] }, "topic": "TALK_HERMIT_BOOK_REVEAL", "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" } },
-      { "text": "Your aura is alight with hidden magic and concealed artifacts, I can see it through my mask.", "opinion": { "fear": 1, "value": 1 }, "condition": { "or": [ { "u_is_wearing": "somen_clairvoyance" }, { "u_is_wearing": "somen_clairvoyance_on" } ] }, "topic": "TALK_HERMIT_MASK_REVEAL" },
+      {
+        "text": "I have seen what the arcane can lead to.  Great things, but also great danger.",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE", "PROF_ARCANIST" ] },
+        "topic": "TALK_HERMIT_BOOK_REVEAL",
+        "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+      },
+      {
+        "text": "Your aura is alight with hidden magic and concealed artifacts, I can see it through my mask.",
+        "opinion": { "fear": 1, "value": 1 },
+        "condition": { "or": [ { "u_is_wearing": "somen_clairvoyance" }, { "u_is_wearing": "somen_clairvoyance_on" } ] },
+        "topic": "TALK_HERMIT_MASK_REVEAL"
+      },
       {
         "text": "You seem like you might have experience in such things.",
         "condition": {
@@ -166,10 +521,7 @@
           "opinion": { "trust": 1 },
           "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
         },
-        "failure": {
-          "topic": "TALK_HERMIT_BOOK_DENIAL",
-          "effect": { "npc_add_effect": "hermit_inquire_denied", "duration": 1800 }
-        }
+        "failure": { "topic": "TALK_HERMIT_BOOK_DENIAL", "effect": { "npc_add_effect": "hermit_inquire_denied", "duration": 1800 } }
       },
       {
         "text": "You seem like you might have experience in such things.",
@@ -177,6 +529,32 @@
         "condition": {
           "and": [
             { "or": [ { "u_has_intelligence": 10 }, { "u_has_perception": 10 } ] },
+            { "npc_has_effect": "hermit_inquire_denied" }
+          ]
+        }
+      },
+      {
+        "text": "Call it a hunch.",
+        "condition": {
+          "and": [
+            { "not": { "or": [ { "u_has_intelligence": 10 }, { "u_has_perception": 10 } ] } },
+            { "not": { "npc_has_effect": "hermit_inquire_denied" } }
+          ]
+        },
+        "trial": { "type": "PERSUADE", "difficulty": 4 },
+        "success": {
+          "topic": "TALK_HERMIT_BOOK_ADMISSION",
+          "opinion": { "trust": 1 },
+          "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+        },
+        "failure": { "topic": "TALK_HERMIT_BOOK_DENIAL", "effect": { "npc_add_effect": "hermit_inquire_denied", "duration": 1800 } }
+      },
+      {
+        "text": "Call it a hunch.",
+        "topic": "TALK_HERMIT_BOOK_ASKED",
+        "condition": {
+          "and": [
+            { "not": { "or": [ { "u_has_intelligence": 10 }, { "u_has_perception": 10 } ] } },
             { "npc_has_effect": "hermit_inquire_denied" }
           ]
         }
@@ -211,14 +589,20 @@
         "text": "I'm not one of the mage hunters actually, but I've learned the usefulness of these items.",
         "topic": "TALK_HERMIT_MASK_NOT",
         "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] } },
-        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ]
+        "effect": [
+          { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
+          { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+        ]
       },
       {
         "text": "I do.  I am not your enemy, Keeper.  That is what you are, correct?",
         "topic": "TALK_HERMIT_MASK_TRUST",
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] },
         "opinion": { "trust": 1, "value": 1 },
-        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ]
+        "effect": [
+          { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
+          { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+        ]
       },
       {
         "text": "[ATTACK] My purpose is to finish what my brethren started, and destroy threats to humanity.  For your worship of a monster from Beyond, and for the wounds in The Veil your order has inflicted, I sentence you to death.",
@@ -270,8 +654,6 @@
     "dynamic_line": "You'd be surprised what you can learn with a bit of reading.  Like manners...",
     "responses": [ { "text": "...", "topic": "TALK_HERMIT" } ]
   },
-
-
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DOING",
@@ -287,44 +669,260 @@
     "responses": [
       {
         "text": "Terrible things?",
-        "topic": "TALK_HERMIT_QUERY_VEIL",
+        "topic": "TALK_HERMIT_QUERY_THINGS",
         "condition": { "npc_has_effect": "hermit_earned_trust_2" }
       },
       {
         "text": "We will still prevail.  Do not lose hope just yet.",
         "topic": "TALK_HERMIT_PREVAIL",
-        "condition": {
-          "and": [
-            { "npc_has_effect": "hermit_earned_trust_2" },
-            { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] }
-          ]
-        }
+        "condition": { "and": [ { "npc_has_effect": "hermit_earned_trust_2" }, { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } ] }
       },
       {
         "text": "There is always value in such knowledge.  Surely there is something you can teach?",
         "topic": "TALK_HERMIT_TEACH",
+        "condition": { "and": [ { "npc_has_effect": "hermit_earned_trust_1" }, { "not": { "npc_has_effect": "hermit_earned_trust_2" } } ] }
+      },
+      {
+        "text": "You seem to be hiding something.  Or from someone.  It's okay, you can trust me.",
         "condition": {
           "and": [
-            { "npc_has_effect": "hermit_earned_trust_1" },
-            { "not": { "npc_has_effect": "hermit_earned_trust_2" } }
+            { "or": [ { "u_has_intelligence": 10 }, { "u_has_perception": 10 } ] },
+            { "not": { "npc_has_effect": "hermit_inquire_denied" } },
+            { "not": { "npc_has_effect": "hermit_earned_trust_1" } }
+          ]
+        },
+        "trial": { "type": "PERSUADE", "difficulty": 3 },
+        "success": {
+          "topic": "TALK_HERMIT_DOING_ADMISSION",
+          "opinion": { "trust": 1 },
+          "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+        },
+        "failure": { "topic": "TALK_HERMIT_DOING_DENIAL", "effect": { "npc_add_effect": "hermit_inquire_denied", "duration": 1800 } }
+      },
+      {
+        "text": "You seem to be hiding something.  Or from someone.  It's okay, you can trust me.",
+        "topic": "TALK_HERMIT_DOING_ASKED",
+        "condition": {
+          "and": [
+            { "or": [ { "u_has_intelligence": 10 }, { "u_has_perception": 10 } ] },
+            { "npc_has_effect": "hermit_inquire_denied" },
+            { "not": { "npc_has_effect": "hermit_earned_trust_1" } }
           ]
         }
       },
-
-
+      {
+        "text": "Is that all you do out here?",
+        "condition": {
+          "and": [
+            { "not": { "or": [ { "u_has_intelligence": 10 }, { "u_has_perception": 10 } ] } },
+            { "not": { "npc_has_effect": "hermit_inquire_denied" } },
+            { "not": { "npc_has_effect": "hermit_earned_trust_1" } }
+          ]
+        },
+        "trial": { "type": "PERSUADE", "difficulty": 4 },
+        "success": {
+          "topic": "TALK_HERMIT_DOING_ADMISSION",
+          "opinion": { "trust": 1 },
+          "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+        },
+        "failure": { "topic": "TALK_HERMIT_DOING_DENIAL", "effect": { "npc_add_effect": "hermit_inquire_denied", "duration": 1800 } }
+      },
+      {
+        "text": "Is that all you do out here?",
+        "topic": "TALK_HERMIT_DOING_ASKED",
+        "condition": {
+          "and": [
+            { "not": { "or": [ { "u_has_intelligence": 10 }, { "u_has_perception": 10 } ] } },
+            { "npc_has_effect": "hermit_inquire_denied" },
+            { "not": { "npc_has_effect": "hermit_earned_trust_1" } }
+          ]
+        }
+      },
       { "text": "I see.", "topic": "TALK_HERMIT" }
     ]
   },
-
   {
     "type": "talk_topic",
-    "id": "TALK_HERMIT_QUERY_VEIL",
-    "dynamic_line": "There is nothing I have urgent need of, beyond what I can manage myself.  Thank you for your concern however, young one.",
+    "id": "TALK_HERMIT_QUERY_THINGS",
+    "dynamic_line": "There was a calamity that broke the back of our order.  Only a few survived and fled, and from them I heard horror stories about our sanctum alight with rifts, the high priest seized by some abomination from a failed summoning...",
+    "responses": [
+      {
+        "text": "A calamity... it was our doing, wasn't it?",
+        "topic": "TALK_HERMIT_QUERY_VEIL_SANGUINE",
+        "condition": { "u_has_any_trait": [ "PROF_SANGUINE" ] }
+      },
+      {
+        "text": "Despite our differences, this sounds like a threat to us both.",
+        "topic": "TALK_HERMIT_QUERY_VEIL_CLEANSINGFLAME",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] }
+      },
+      { "text": "What sort of abomination?", "topic": "TALK_HERMIT_ABOMINATION" },
+      { "text": "I see.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUERY_VEIL_SANGUINE",
+    "dynamic_line": "Indeed.  Your brethren sabotaged the relic retrieved for us, and it led to summoning something... else, instead of our intended communion with He From Beyond The Veil.",
+    "responses": [
+      { "text": "I'm sorry.", "topic": "TALK_HERMIT_SANGUINE_APOLOGY" },
+      { "text": "Not my problem.", "topic": "TALK_HERMIT_SANGUINE_NOT_PROBLEM", "opinion": { "value": -1 } }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_SANGUINE_APOLOGY",
+    "dynamic_line": "I appreciate your sentiment, but while we must all acknowledge when our brethren have erred, you had no had in this.  Perhaps these wrongs can be righted in time.  Thank you.",
+    "responses": [ { "text": "...", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_SANGUINE_NOT_PROBLEM",
+    "dynamic_line": "You may deny your responsibility just because you had no personal involvement, but we must be willing to accept when our fellows have sinned or been led astray.  Perhaps your precious \"Path to Power\" will lead you to do somthing productive.",
+    "responses": [ { "text": "...", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_QUERY_VEIL_CLEANSINGFLAME",
+    "dynamic_line": "Indeed it is.  This monster, which they named The Archon, might further endanger us all if it can gain a foothold in this world, and we have enough threats to humanity as it is.",
+    "responses": [ { "text": "We'll see what can be done.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_ABOMINATION",
+    "dynamic_line": "They called it The Archon.  Another powerful presence from Beyond, but what its truly is or what it desires I have no idea.  Only that its actions make it clear that it is far less benevolent than our master.",
+    "responses": [
+      {
+        "text": "Offer no intrusion upon their domain, and do not willfully consort with their power...",
+        "topic": "TALK_HERMIT_ABOMINATION_TENET",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] }
+      },
+      { "text": "I see.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_ABOMINATION_TENET",
+    "dynamic_line": "One of your tenets, hunter.  I am aware.  Though we disagree on the nature of He From Beyond The Veil and his intent, caution is always healthy so long as it is tempered by an open mind.",
     "responses": [ { "text": "Oh, okay.", "topic": "TALK_HERMIT" } ]
-  }
-
-
-
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_PREVAIL",
+    "dynamic_line": "It seems there is still cause for hope.  I may be too old to further His will, but there will always be another.  And I see that potenial in you.  Thank you.",
+    "responses": [ { "text": "It's fine.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_TEACH",
+    "dynamic_line": "Perhaps that is correct.  What do you seek this knowledge for?",
+    "responses": [
+      {
+        "text": "To teach the next generation what is proper and safe.",
+        "topic": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
+        "effect": { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] }
+      },
+      {
+        "text": "Knowledge is dangerous if in the wrong hands.",
+        "topic": "TALK_HERMIT_TEACH_REJECTION",
+        "opinion": { "trust": -1 },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME" ] }
+      },
+      {
+        "text": "Knowledge is power, but it is wasted unless passed on.",
+        "topic": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
+        "effect": { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
+        "condition": { "u_has_any_trait": [ "PROF_SANGUINE" ] }
+      },
+      {
+        "text": "To hoard knowledge is foolish.  Your trivial learning is likely to die with you.",
+        "topic": "TALK_HERMIT_TEACH_REJECTION",
+        "opinion": { "trust": -1 },
+        "condition": { "u_has_any_trait": [ "PROF_SANGUINE" ] }
+      },
+      {
+        "text": "To gaze into the Beyond is to see the potential of a thousand worlds, and learn hidden truths...",
+        "topic": "TALK_HERMIT_TEACH_ACCEPT_OATH",
+        "effect": { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE" ] }
+      },
+      {
+        "text": "I am eager to learn, if you would have me as a student.",
+        "topic": "TALK_HERMIT_TEACH_ACCEPT",
+        "effect": { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+      },
+      { "text": "Well, you know.  Because?", "topic": "TALK_HERMIT_TEACH_REJECTION", "opinion": { "trust": -1 } },
+      { "text": "Never mind.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
+    "dynamic_line": "That is a wise method of practicing caution.  For the benefit of those who will succeed us.  If you wish it then, I have more than trivial things to teach you.  We were allies on occasion, enemies on others.  Forgive the deception of this aging follower of He From Beyond The Veil, and allow us the chance to work together to correct the mistakes of old.",
+    "responses": [
+      { "text": "So be it.  We need not be enemies.", "topic": "TALK_HERMIT" },
+      { "text": "Very well then.  What I can do to help?", "topic": "TALK_MISSION_LIST" },
+      {
+        "text": "[ATTACK] So that is your true nature.  I won't stoop to working with a profligate like you.",
+        "topic": "TALK_DONE",
+        "effect": "insult_combat"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
+    "dynamic_line": "Always the practical type.  But I can appreciate the drive to put knowledge to go use, rather than be squandered.  As you wish.  I can tell from your demeaner that you are of the Sagnuine Order.  And I, of the Keepers of The Oath.  Perhaps He From Beyond The Veil will grant us both penance.",
+    "responses": [
+      { "text": "We shall see.", "topic": "TALK_HERMIT" },
+      { "text": "Then tell me what I must do.", "topic": "TALK_MISSION_LIST" },
+      {
+        "text": "[ATTACK] I need no penance from your so-called god.  I would rather your knowledge die with you than deal with the likes of him.",
+        "topic": "TALK_DONE",
+        "effect": "insult_combat"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_TEACH_ACCEPT_OATH",
+    "dynamic_line": "...but be cautious in these acts.  Let every wound in The Veil be a necessary one, or else leave no mark.  We are kin, it seems.  He From Beyond The Veil has granted us a second chance, it seems.",
+    "responses": [
+      { "text": "So it seems.", "topic": "TALK_HERMIT" },
+      { "text": "Tell me what I can do to serve Him.", "topic": "TALK_MISSION_LIST" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_TEACH_ACCEPT",
+    "dynamic_line": "Very well then.  Perhaps I have something to teach after all.  I was a follower of an order of scholars and priests, serving a benevolent deity from Beyond.  If you wish it, we will see what can be done.",
+    "responses": [ { "text": "We will see.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_TEACH_REJECTION",
+    "dynamic_line": "If that is your reasoning, then you are not yet ready.",
+    "responses": [ { "text": "...", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DOING_ADMISSION",
+    "dynamic_line": "Very well then.  I have studied a few hints of the arcane in my time, little though it might be, and given the danger it can lead to if misused, I have chosen to live a humble life rather than further pursue such things.",
+    "responses": [ { "text": "I see.  Thank you.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DOING_DENIAL",
+    "dynamic_line": "A strange thing to ask an old man in these troublesome times.  Nothing more than the usual stress of surviving out here.",
+    "responses": [ { "text": "I see.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DOING_ASKED",
+    "dynamic_line": "You already asked me about that recently.  Please, it's fine.",
+    "responses": [ { "text": "...", "topic": "TALK_HERMIT" } ]
+  },
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_MISSION_NONE",

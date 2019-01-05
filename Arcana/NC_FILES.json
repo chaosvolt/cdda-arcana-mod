@@ -1,5 +1,85 @@
 [
   {
+    "type": "npc_class",
+    "id": "NC_HERMIT",
+    "name": "Hermit",
+    "job_description": "I'm just an old man.",
+    "common": false,
+    "bonus_str": { "rng": [ -3, 0 ] },
+    "bonus_dex": { "rng": [ -2, 1 ] },
+    "bonus_int": { "rng": [ 2, 5 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "skills": [
+      { "skill": "magic", "level": 8 },
+      { "skill": "cooking", "level": 3 },
+      { "skill": "fabrication", "level": 5 },
+      { "skill": "firstaid", "level": 2 },
+      { "skill": "speech", "level": 2 },
+      { "skill": "survival", "level": 4 },
+      { "skill": "swimming", "level": 2 },
+      { "skill": "tailor", "level": 3 },
+      { "skill": "traps", "level": 1 },
+      { "skill": "archery", "level": 3 },
+      { "skill": "bashing", "level": 2 },
+      { "skill": "gun", "level": 6 },
+      { "skill": "melee", "level": 2 },
+      { "skill": "stabbing", "level": 3 }
+    ],
+    "worn_override": "NC_HERMIT_worn",
+    "carry_override": "NC_HERMIT_carry",
+    "weapon_override": "NC_HERMIT_weapon",
+    "traits": [
+      [ "PROF_CHALICE", 100 ],
+      [ "NIGHTVISION", 100 ],
+      [ "MYOPIC", 100 ],
+      [ "BADHEARING", 100 ],
+      [ "LIGHTSTEP", 100 ],
+      [ "BADKNEES", 100 ],
+      [ "SPELL_CLAIRVOYANCE2", 100 ]
+    ]
+  },
+  {
+    "id": "NC_HERMIT_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_shorts" },
+      { "item": "pants" },
+      { "item": "dress_shirt" },
+      { "item": "robe" },
+      { "item": "hat_knit" },
+      { "item": "knit_scarf" },
+      { "item": "gloves_leather" },
+      { "item": "socks" },
+      { "item": "boots_hiking" },
+      { "item": "duffelbag" },
+      { "item": "glasses_eye" },
+      { "item": "charm_bone" }
+    ]
+  },
+  {
+    "id": "NC_HERMIT_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "thunder_sigil" }
+    ]
+  },
+  {
+    "id": "NC_HERMIT_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "essence", "count": [ 10, 25 ] },
+      { "item": "arcanemap", "prob": 50 },
+      { "item": "book_sacrifice" },
+      { "item": "offering_chalice" },
+      { "group": "magic_consumables", "count": [ 4, 8 ] }
+    ]
+  },
+  {
     "id": "NC_ARSONIST_bashing",
     "type": "item_group",
     "items": [ [ "hexenhammer", 10 ] ]

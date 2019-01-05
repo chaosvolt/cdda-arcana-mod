@@ -1,0 +1,132 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "arcana_hermitage_1" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_dirt",
+      "rows": [
+        "WWWWWWWWWWWWWWWWWWWWWWWW",
+        "W%%%,,,,,,,,,,,,,,,,%%%W",
+        "W%,,,,,,,,,,,,,,,,,,,,%W",
+        "W%,|-UU----------UU-|,%W",
+        "W,,|]h__x<<|____fnCC|,,W",
+        "W,,U]___x<<|______hsU,,W",
+        "W,,U]___|--|_______oU,,W",
+        "W,,|]______x________|,,W",
+        "W,,|-------------x--|,,W",
+        "W,,|]]]]___hh_______|,,W",
+        "W,,U____________hee_U,,W",
+        "W,,U____________hee_U,,W",
+        "W,,|_hd_CC_______hh_|,,W",
+        "W,,|-UU----xx----UU-|,,W",
+        "W,,,,,,,,,,  ,,,,,,,,,,W",
+        "W%,,,,,,,,,  ,,L,,,,,,%W",
+        "W%,,,,,,,,,  ,,,,,,,,,%W",
+        "W%%%%%%%%,,  ,,%%%%%%%%W",
+        "WWWWWWWWWWWwwWWWWWWWWWWW",
+        ",                      ,",
+        ",                      ,",
+        ",                      ,",
+        ",                      ,",
+        ",,M                   ,,"
+      ],
+      "palettes": [ "arcana_palette" ],
+      "terrain": {
+        "W": "t_chainfence",
+        "w": "t_chaingate_l",
+        "L": "t_water_pump",
+        "U": "t_window_boarded",
+        "M": "t_dirt",
+        "%": "t_shrub",
+        "]": "t_floor",
+        "d": "t_floor",
+        "e": "t_floor",
+        "f": "t_floor",
+        "h": "t_floor",
+        "n": "t_floor",
+        "o": "t_floor",
+        "s": "t_floor",
+        "C": "t_floor"
+      },
+      "furniture": { "M": "f_mailbox" },
+      "place_loot": [
+        { "item": "matches", "x": 6, "y": 12 },
+        { "group": "reading_lights", "x": 6, "y": 12 },
+        { "item": "ax", "x": [ 8, 9 ], "y": 12 },
+        { "item": "selfbow", "x": [ 8, 9 ], "y": 12 }
+      ],
+      "mapping": {
+        "]": { "items": { "item": "homebooks", "chance": 80, "repeat": 3 } },
+        "f": { "items": { "item": "produce", "chance": 75, "repeat": 4 } },
+        "n": { "items": { "item": "cannedfood", "chance": 90, "repeat": 5 } },
+        "e": { "items": { "item": "tools_common", "chance": 50, "repeat": 2 } }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "arcana_hermitage_2" ],
+    "weight": 300,
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "   |-UU----------UU-|   ",
+        "   |]h__x>>|tth____&|   ",
+        "   U]___x>>|tt______U   ",
+        "   U]___|--|______h_U   ",
+        "   |]___|{_+______sC|   ",
+        "   |]___|{_|----+---|   ",
+        "   |--x----|dh______|   ",
+        "   U_______|________U   ",
+        "   U_ee____+_____BB_U   ",
+        "   |__h_vC_|___vDBBD|   ",
+        "   |-UU----------UU-|   ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [ "arcana_palette" ],
+      "terrain": {
+        "U": "t_window_boarded",
+        "]": "t_floor",
+        "{": "t_floor",
+        "&": "t_floor",
+        "d": "t_floor",
+        "e": "t_floor",
+        "h": "t_floor",
+        "n": "t_floor",
+        "o": "t_floor",
+        "s": "t_floor",
+        "t": "t_floor",
+        "v": "t_floor",
+        "B": "t_floor",
+        "C": "t_floor",
+        "D": "t_floor"
+      },
+      "place_loot": [
+        { "item": "matches", "x": 5, "y": 11 },
+        { "group": "reading_lights", "x": 5, "y": 11 },
+        { "item": "holybook_tripitaka", "x": 5, "y": 11 },
+        { "item": "cane", "x": 6, "y": 11 }
+      ],
+      "mapping": {
+        "]": { "items": { "item": "homebooks", "chance": 80, "repeat": 3 } },
+        "{": { "items": { "item": "cleaning", "chance": 75, "repeat": 3 } }
+      },
+      "place_npcs": [ { "class": "the_hermit", "x": 6, "y": 12 } ]
+    }
+  }
+]

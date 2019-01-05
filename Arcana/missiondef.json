@@ -9,13 +9,7 @@
     "value": 250000,
     "monster_type": "debug_mon",
     "start": {
-      "assign_mission_target": {
-        "om_terrain": "impact_site",
-        "om_special": "Floating Temple",
-        "reveal_radius": 3,
-        "search_range": 180
-        "z": 0
-      }
+      "assign_mission_target": { "om_terrain": "impact_site", "om_special": "Floating Temple", "reveal_radius": 3, "search_range": 180, "z": 0 }
     },
     "monster_kill_goal": 1,
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -27,7 +21,7 @@
       "rejected": "I understand.  The threat that defiles the old temple is not to be underestimated.  If I felt I could make the journey, I would attempt it myself, even if I failed I could die knowing I did the right thing.  Seek my guidance if you change your mind.",
       "advice": "You will likely have to kill the abomination inhabiting the body of the temple's former high priest.  I know not what weapons he may still carry, nor what unholy power the spirit possessing him commands, but be careful and expect anything.  Most likely he will have turned our own symbol of judgement on his congregation, meaning you'll have to expect lightning magic.",
       "inquire": "Have you completed this task?",
-      "success": "Excellent.  I have no need of this item, in fact you might be better suited to use it, if you are cautious Speak with me further and I will tell you whatever you need know, and I will have a task to offer you.",
+      "success": "Excellent.  I have no need of this item, in fact you might be better suited to use it, if you are cautious.  Speak with me further and I will tell you whatever you need know, and then I will have a task to offer you.",
       "success_lie": "What folly is this?",
       "failure": "As I feared..."
     }
@@ -51,7 +45,7 @@
       "rejected": "I understand, though I hope you have not come to favor the relic's current state for its use as a weapon.  Seek me out if you deem yourself ready.",
       "advice": "You shall need the studies of those who have came before, certain ritual components.  You'll also need to seek out a copy of Sanguine Codex to properly counter the sanguine curse placed on it.",
       "inquire": "Have you performed the ritual?  Let me see it...",
-      "success": "To see this, after so long... it's hard for me to put words to this.  It'll never be restored to the glory it once held, forged in fires from Beyond as one of the divine gifts, but even this gives me hope.  Come, we have much to discuss.",
+      "success": "To see this, after so long... it's hard for me to put words to this.  It'll never be restored to the glory it once held, forged in fires from Beyond as one of the divine gifts, but even this gives me hope.  Come, we have much to discuss, before we can continue.",
       "success_lie": "What folly is this?",
       "failure": "As I feared..."
     }
@@ -71,7 +65,7 @@
         "om_terrain_replace": "field",
         "random": true,
         "reveal_radius": 3,
-        "search_range": 180
+        "search_range": 180,
         "z": 0
       }
     },
@@ -81,11 +75,11 @@
     "dialogue": {
       "describe": "Perhaps we shall at last atone...",
       "offer": "This is a task I will leave for you to pursue on your own initiative, though I will advise you in how to pursue it if needed.  To use the awakened blade requires certain energies to be returned to The Beyond.  The method that best fulfills the relic's purpose requires you to seek out the lingering wounds in The Veil, and my fading senses have revealed one such place that may be useful.  However you choose to serve Him, your actions will serve a greater purpose.  Will you accept my guidance in this envdevour?",
-      "accepted": "May He From Beyond The Veil guide us both.  I will do what I can to direct you towards letting the relic serve its purpose.  Failing that, there are methods to sustain this power, to be found within the pages of Oaths To The Chalice.  Some of what you will see are common, trifling things.  Others are wonders only He can bestow, and they may yet serve you well.  They are what you seek.  When the time comes and you have seen the fruit of your labor, speak to me again.",
+      "accepted": "May He From Beyond The Veil guide us both.  I will do what I can to direct you towards letting the relic serve its purpose.  Failing that, there are methods to sustain this power, to be found within the pages of Oaths To The Chalice.  Some of what you will see are common, trifling things.  Others are wonders only He can bestow, and they may yet serve you well.  When the time comes and you have seen the fruit of your labor, speak to me again.",
       "rejected": "Unfortunate.  I am hopeful that you will heed the call on your own, and come to me when you are ready.  In pursuing the path laid before you, your destiny is intertwined with those who seek to ensure this world does not fall into further decay.  One way or another, your path lies before you.",
-      "advice": "You will know in time, when you have received the sign.  If you require guidance in what gifts from Beyond are proof of His favor, you need only ask.",
+      "advice": "Drawing upon a rift will require you to linger beside the portal, until the blade draws upon its power.  You will know in time, when you have received the sign.  If you require what little guidance I can offer, you need only ask.",
       "inquire": "Show me that spark within your eyes, if you have earned His favor...",
-      "success": "So it has come to pass.  I hope the task was not too troublesome for you, nor did His favor prove too difficult to grasp.  This proves it.  You are suitable to be His chosen.  Come, there is much to discuss.",
+      "success": "So it has come to pass.  I hope the task was not too troublesome for you, nor did His favor prove too difficult to grasp.  This proves it.  You are suitable to be His Chosen.  Come, there is much to discuss.  And then, I hope, something more to do...",
       "success_lie": "What folly is this?",
       "failure": "As I feared..."
     }
@@ -105,7 +99,7 @@
         "om_terrain_replace": "field",
         "random": true,
         "reveal_radius": 3,
-        "search_range": 180
+        "search_range": 180,
         "z": 0
       }
     },
