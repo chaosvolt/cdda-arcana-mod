@@ -296,7 +296,7 @@
   },
   {
     "type": "effect_type",
-    "id": "hermit_stage_4,
+    "id": "hermit_stage_4",
     "name": [ "Quest Stage 4" ],
     "desc": [
       "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanant.  This is a bug if you have it."

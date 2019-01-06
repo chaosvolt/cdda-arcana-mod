@@ -30,7 +30,7 @@
         ",                      ,",
         ",                      ,",
         ",                      ,",
-        ",,M                   ,,"
+        ",,                    ,,"
       ],
       "palettes": [ "arcana_palette" ],
       "terrain": {
@@ -38,7 +38,6 @@
         "w": "t_chaingate_l",
         "L": "t_water_pump",
         "U": "t_window_boarded",
-        "M": "t_dirt",
         "%": "t_shrub",
         "]": "t_floor",
         "d": "t_floor",
@@ -50,18 +49,19 @@
         "s": "t_floor",
         "C": "t_floor"
       },
-      "furniture": { "M": "f_mailbox" },
       "place_loot": [
         { "item": "matches", "x": 6, "y": 12 },
         { "group": "reading_lights", "x": 6, "y": 12 },
         { "item": "ax", "x": [ 8, 9 ], "y": 12 },
-        { "item": "selfbow", "x": [ 8, 9 ], "y": 12 }
+        { "item": "selfbow", "x": [ 8, 9 ], "y": 12 },
+        { "item": "arrow_field_point_fletched", "x": [ 8, 9 ], "y": 12, "repeat": [ 1, 3 ] }
       ],
       "mapping": {
         "]": { "items": { "item": "homebooks", "chance": 80, "repeat": 3 } },
-        "f": { "items": { "item": "produce", "chance": 75, "repeat": 4 } },
-        "n": { "items": { "item": "cannedfood", "chance": 90, "repeat": 5 } },
-        "e": { "items": { "item": "tools_common", "chance": 50, "repeat": 2 } }
+        "f": { "items": { "item": "forage_spring", "chance": 75, "repeat": 6 } },
+        "n": { "items": { "item": "stash_food", "chance": 90, "repeat": 5 } },
+        "e": { "items": { "item": "tools_common", "chance": 50, "repeat": 2 } },
+        "o": { "items": { "item": "oven", "chance": 50, "repeat": 3 } }
       }
     }
   },
@@ -120,11 +120,12 @@
         { "item": "matches", "x": 5, "y": 11 },
         { "group": "reading_lights", "x": 5, "y": 11 },
         { "item": "holybook_tripitaka", "x": 5, "y": 11 },
-        { "item": "cane", "x": 6, "y": 11 }
+        { "item": "cane", "x": 6, "y": 11 },
+        { "group": "stash_wood", "x": 9, "y": 12, "chance": 60, "repeat": 4 }
       ],
       "mapping": {
-        "]": { "items": { "item": "homebooks", "chance": 80, "repeat": 3 } },
-        "{": { "items": { "item": "cleaning", "chance": 75, "repeat": 3 } }
+        "]": { "items": { "item": "homebooks", "chance": 80, "repeat": 4 } },
+        "{": { "items": { "item": "cleaning", "chance": 75, "repeat": 5 } }
       },
       "place_npcs": [ { "class": "the_hermit", "x": 6, "y": 12 } ]
     }

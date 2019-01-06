@@ -6,8 +6,7 @@
     "sym": 67,
     "color": "dark_gray",
     "see_cost": 5,
-    "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "field"
   },
   {
     "id": "curious_structure_b",
@@ -16,8 +15,7 @@
     "sym": 67,
     "color": "dark_gray",
     "see_cost": 5,
-    "extras": "build",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "build"
   },
   {
     "id": "curious_structure_b2",
@@ -26,8 +24,7 @@
     "sym": 67,
     "color": "red",
     "see_cost": 5,
-    "extras": "build",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "build"
   },
   {
     "id": "strange_grove",
@@ -35,8 +32,7 @@
     "name": "strange grove",
     "sym": 84,
     "color": "i_green",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "grove_ruins",
@@ -44,8 +40,7 @@
     "name": "underground ruin",
     "sym": 84,
     "color": "green",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "impact_site",
@@ -53,8 +48,7 @@
     "name": "impact site",
     "sym": 67,
     "color": "light_red",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "impact_platforms_left",
@@ -62,8 +56,7 @@
     "name": "floating temple",
     "sym": 84,
     "color": "light_blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "impact_platforms_center",
@@ -71,8 +64,7 @@
     "name": "floating temple",
     "sym": 84,
     "color": "light_blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "impact_platforms_right",
@@ -80,8 +72,7 @@
     "name": "floating temple",
     "sym": 84,
     "color": "light_blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "impact_temple_left",
@@ -89,8 +80,7 @@
     "name": "floating temple",
     "sym": 84,
     "color": "light_blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "impact_temple_center",
@@ -98,8 +88,7 @@
     "name": "floating temple",
     "sym": 84,
     "color": "light_blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "impact_temple_right",
@@ -107,8 +96,7 @@
     "name": "floating temple",
     "sym": 84,
     "color": "light_blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "impact_roof_left",
@@ -124,8 +112,7 @@
     "sidewalk": false,
     "known_up": false,
     "known_down": false,
-    "extras": "none",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "none"
   },
   {
     "id": "impact_roof_center",
@@ -141,8 +128,7 @@
     "sidewalk": false,
     "known_up": false,
     "known_down": false,
-    "extras": "none",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "none"
   },
   {
     "id": "impact_roof_right",
@@ -158,8 +144,7 @@
     "sidewalk": false,
     "known_up": false,
     "known_down": false,
-    "extras": "none",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "none"
   },
   {
     "id": "island_temple_1",
@@ -167,8 +152,7 @@
     "name": "peculiar shrine",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "island_temple_2",
@@ -176,8 +160,7 @@
     "name": "peculiar shrine",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "island_temple_3",
@@ -185,8 +168,7 @@
     "name": "peculiar shrine",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "island_temple_4",
@@ -194,8 +176,7 @@
     "name": "peculiar shrine",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "island_temple_b_1",
@@ -203,8 +184,7 @@
     "name": "underground temple",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "island_temple_b_2",
@@ -212,8 +192,7 @@
     "name": "underground temple",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "island_temple_b_3",
@@ -221,8 +200,7 @@
     "name": "underground temple",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "island_temple_b_4",
@@ -230,8 +208,7 @@
     "name": "underground temple",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 5
   },
   {
     "id": "shrine_anomaly",
@@ -240,8 +217,7 @@
     "sym": 83,
     "color": "light_gray",
     "see_cost": 5,
-    "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "field"
   },
   {
     "type": "overmap_terrain",
@@ -254,8 +230,7 @@
     "name": "recent anomaly",
     "sym": 46,
     "color": "magenta",
-    "see_cost": 2,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 2
   },
   {
     "type": "overmap_terrain",
@@ -263,25 +238,22 @@
     "name": "recent anomaly",
     "sym": 46,
     "color": "magenta",
-    "see_cost": 2,
-    "flags": [ "NO_ROTATE" ]
+    "see_cost": 2
   },
   {
     "type": "overmap_terrain",
     "id": "arcana_hermitage_1",
-    "name": "cabin",
-    "sym": 67,
-    "color": "i_green",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "name": "odd house",
+    "sym": 118,
+    "color": "i_ltgreen",
+    "see_cost": 5
   },
   {
     "type": "overmap_terrain",
     "id": "arcana_hermitage_2",
-    "name": "cabin",
-    "sym": 67,
-    "color": "i_green",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ]
+    "name": "odd house",
+    "sym": 118,
+    "color": "i_ltgreen",
+    "see_cost": 5
   }
 ]
