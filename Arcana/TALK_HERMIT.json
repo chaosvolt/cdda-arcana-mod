@@ -1019,13 +1019,13 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DOING_DENIAL",
-    "dynamic_line": "A strange thing to ask an old man in these troublesome times.  Nothing more than the usual stress of surviving out here.",
+    "dynamic_line": "A strange thing to ask an old man in these troublesome times.  Nothing more than the usual task of surviving out here.",
     "responses": [ { "text": "I see.", "topic": "TALK_HERMIT" } ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DOING_ASKED",
-    "dynamic_line": "You already asked me about that recently.  Please, it's fine.",
+    "dynamic_line": "You already pried about personal matters quite recently.  Please, it's fine.",
     "responses": [ { "text": "...", "topic": "TALK_HERMIT" } ]
   },
   {
