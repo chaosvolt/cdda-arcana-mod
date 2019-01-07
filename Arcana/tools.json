@@ -1,5 +1,19 @@
 [
   {
+    "id": "bot_vortex",
+    "type": "TOOL",
+    "name": "Archon magic",
+    "description": "Spawns a vortex, used by the Host of the Archon.  This is a bug if you find one of these.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_vortex",
+      "place_randomly": true
+    }
+  },
+  {
     "id": "stinger_flute",
     "type": "TOOL",
     "copy-from": "bone_flute",
