@@ -141,7 +141,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "terrain": { "b": "t_rock_floor_no_roof" },
-      "mapping": { "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice" } } },
+      "mapping": { "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } } },
       "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 6, 17 ], "y": [ 6, 17 ], "density": 0.1 } ]
     }
   },
@@ -302,19 +302,16 @@
       ],
       "mapping": {
         "{": {
-          "items": [
-            { "item": "chalice_cult_consumables", "chance": 25, "repeat": 2 },
-            { "item": "chalice_cult_gear", "chance": 5, "repeat": 2 }
-          ],
-          "item": [ { "item": "glass_shard", "chance": 50, "repeat": 2 } ]
-        },
-        "C": {
-          "items": [ { "item": "chalice_cult_crafting", "chance": 30, "repeat": 4 } ],
-          "item": [ { "item": "glass_shard", "chance": 50, "repeat": 2 } ]
+          "item": [ { "item": "glass_shard", "chance": 75 } ]
         }
       },
       "terrain": { "?": [ "t_window_stained_blue", "t_rock_floor" ] },
-      "place_loot": [ { "group": "chalice_cult_casualties", "x": [ 8, 12 ], "y": [ 8, 15 ], "chance": 90 } ],
+      "place_loot": [
+        { "group": "chalice_cult_gear", "x": [ 9, 12 ], "y": 7, "chance": 5, "repeat": 8 },
+        { "group": "chalice_cult_consumables", "x": 7, "y": [ 9, 14 ], "chance": 25, "repeat": 12 },
+        { "group": "chalice_cult_crafting", "x": [ 9, 12 ], "y": 16, "chance": 30, "repeat": 8 },
+        { "group": "chalice_cult_casualties", "x": [ 8, 12 ], "y": [ 8, 15 ], "chance": 90 }
+      ],
       "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 8, 12 ], "y": [ 8, 15 ], "density": 0.1 } ]
     }
   },
@@ -356,12 +353,15 @@
         { "point": "trap", "id": "tr_portal", "x": [ 12, 13 ], "y": [ 11, 12 ] }
       ],
       "mapping": {
-        "]": { "items": [ { "item": "chalice_cult_books", "chance": 80, "repeat": 2 } ] },
-        "d": { "item": [ { "item": "glass_shard", "chance": 50, "repeat": 2 } ] },
-        "h": { "item": [ { "item": "glass_shard", "chance": 25, "repeat": 2 } ] }
+        "d": { "item": [ { "item": "glass_shard", "chance": 50 } ] },
+        "h": { "item": [ { "item": "glass_shard", "chance": 25 } ] }
       },
       "terrain": { "?": [ "t_window_stained_blue", "t_rock_floor" ] },
-      "place_loot": [ { "group": "chalice_cult_casualties", "x": 15, "y": [ 9, 14 ], "chance": 90 } ],
+      "place_loot": [
+        { "group": "chalice_cult_books", "x": [ 12, 13 ], "y": [ 8, 10 ], "chance": 75, "repeat": 12 },
+        { "group": "chalice_cult_books", "x": [ 12, 13 ], "y": [ 13, 15 ], "chance": 75, "repeat": 12 },
+        { "group": "chalice_cult_casualties", "x": 15, "y": [ 9, 14 ], "chance": 90 }
+      ],
       "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 11, 14 ], "y": [ 8, 15 ], "density": 0.05 } ]
     }
   },
@@ -399,15 +399,6 @@
         "        ========        "
       ],
       "palettes": [ "arcana_palette" ],
-      "mapping": {
-        "]": {
-          "items": [
-            { "item": "chalice_cult_books", "chance": 70, "repeat": 2 },
-            { "item": "chalice_cult_spells", "chance": 5, "repeat": 2 }
-          ]
-        },
-        "d": { "items": [ { "item": "chalice_cult_gear", "chance": 5 }, { "item": "chalice_cult_consumables", "chance": 25 } ] }
-      },
       "terrain": { "a": "t_carpet_red", "b": "t_carpet_red" },
       "place_loot": [
         { "group": "chalice_cult_casualty_special", "x": 11, "y": 4 },
@@ -416,6 +407,10 @@
         { "group": "sanguine_cult_casualties", "x": [ 0, 3 ], "y": [ 9, 12 ], "repeat": [ 1, 2 ] },
         { "group": "sanguine_cult_casualties", "x": [ 20, 23 ], "y": [ 9, 12 ], "repeat": [ 1, 2 ] },
         { "item": "note_chalice_tenet", "x": [ 11, 12 ], "y": [ 17, 18 ], "chance": 90 },
+        { "group": "chalice_cult_books", "x": [ 11, 12 ], "y": [ 16, 18 ], "chance": 50, "repeat": 12 },
+        { "group": "chalice_cult_spells", "x": [ 11, 12 ], "y": [ 16, 18 ], "chance": 5, "repeat": 3 },
+        { "group": "chalice_cult_gear", "x": [ 11, 12 ], "y": 23, "chance": 5, "repeat": 4 },
+        { "group": "chalice_cult_consumables", "x": [ 11, 12 ], "y": 22, "chance": 25, "repeat": 4 },
         { "group": "add_apprentice", "x": [ 11, 12 ], "y": 22, "chance": 50 },
         { "item": "arcanemap", "x": [ 11, 12 ], "y": 22, "chance": 50 }
       ],

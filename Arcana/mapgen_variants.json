@@ -38,10 +38,10 @@
         "a": { "furniture": "f_slab", "item": { "item": "etched_skull" } },
         "c": {
           "items": [ { "item": "dresser", "chance": 15 }, { "item": "creepy", "chance": 5 } ],
-          "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice" } }
+          "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
         },
-        "]": { "furniture": "f_bookcase", "items": { "item": "mansion_bookcase" } },
-        "{": { "furniture": "f_rack", "items": { "item": "cannedfood", "chance": 30 } }
+        "]": { "furniture": "f_bookcase", "items": { "item": "mansion_bookcase", "chance": 100 } },
+        "{": { "furniture": "f_rack", "items": { "item": "cannedfood", "chance": 50 } }
       },
       "place_loot": [ { "item": "book_magicfordummies", "x": 17, "y": 8 }, { "item": "note_starry_missive", "x": [ 2, 3 ], "y": 21 } ],
       "place_monster": [
@@ -68,11 +68,11 @@
         "#|???cc..]|#.###########",
         "#|...Ic..]x...##########",
         "#|.......]|#..B#########",
-        "#|D....AAA|#..D#########",
+        "#|D....!!!|#..D#########",
         "#|D......<|#...C########",
         "#|--------|#...C########",
         "#|hee....<|#...C########",
-        "#|hee..AAA|#..d#########",
+        "#|hee..!!!|#..d#########",
         "#|.......]|#..h#########",
         "#|...I...]x...##########",
         "#|fccchh.]|#.###########",
@@ -89,22 +89,25 @@
       "palettes": [ "arcana_palette" ],
       "terrain": {
         "?": "t_rock_floor",
-        "A": "t_railing_h"
+        "!": "t_railing_h"
       },
       "furniture": {
         "?": "f_sofa"
       },
       "mapping": {
         ".": { "item": { "item": "rock", "chance": 5 } },
-        "]": { "furniture": "f_bookcase", "items": { "item": "mansion_bookcase", "chance": 50 } },
+        "]": { "furniture": "f_bookcase", "items": { "item": "mansion_bookcase", "chance": 100 } },
         "d": {
-          "item": [ { "item": "book_magicfordummies" }, { "item": "note_soa_mission", "chance": 40, "repeat": 3 } ]
+          "item": [ { "item": "book_magicfordummies" }, { "item": "note_soa_mission" } ]
         },
         "C": {
-          "items": [ { "item": "tools_survival", "chance": 50 }, { "item": "cannedfood", "chance": 40, "repeat": 3 } ]
+          "items": [ { "item": "tools_survival", "chance": 50 } ]
         }
       },
-      "place_items": [ { "item": "alcohol", "x": [ 2, 2 ], "y": [ 14, 14 ], "chance": 90 } ],
+      "place_items": [
+        { "item": "alcohol", "x": [ 2, 2 ], "y": [ 14, 14 ], "chance": 90 },
+        { "item": "cannedfood", "x": 15, "y": [ 8, 10 ], "chance": 60, "repeat": 8 }
+      ],
       "place_monsters": [ { "monster": "GROUP_NECROPOLIS_SEWERS", "x": [ 1, 22 ], "y": [ 1, 22 ], "density": 0.1 } ]
     }
   }

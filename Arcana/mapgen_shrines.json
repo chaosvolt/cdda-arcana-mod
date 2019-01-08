@@ -35,7 +35,7 @@
       "terrain": { "b": "t_rock_floor_no_roof", "i": "t_dirt" },
       "mapping": {
         "a": { "furniture": "f_slab", "items": { "item": "magic_items", "chance": 40, "repeat": 2 } },
-        "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice" } }
+        "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
       },
       "set": [
         { "point": "trap", "id": "tr_glow", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] },
@@ -95,10 +95,11 @@
       "terrain": { "T": [ "t_rock_smooth", "t_rock_smooth", "t_dirt", "t_lava" ], "x": "t_rdoor_boarded" },
       "furniture": { "C": "f_coffin_c" },
       "mapping": {
-        "C": { "furniture": "f_coffin_c", "items": [ { "item": "summoner_casualties", "chance": 80 } ] },
-        "]": { "furniture": "f_bookcase", "items": { "item": "unaligned_arcanist_books", "chance": 40, "repeat": 2 } }
+        "C": { "furniture": "f_coffin_c", "items": [ { "item": "summoner_casualties", "chance": 80 } ] }
       },
       "place_loot": [
+        { "group": "unaligned_arcanist_books", "x": 4, "y": [ 6, 10 ], "chance": 40, "repeat": 10 },
+        { "group": "unaligned_arcanist_books", "x": 19, "y": [ 6, 10 ], "chance": 40, "repeat": 10 },
         { "item": "essence_blood", "x": [ 11, 12 ], "y": 16, "chance": 50, "repeat": [ 5, 10 ] },
         { "item": "jade_wreath", "x": [ 11, 12 ], "y": 16 }
       ],
@@ -150,15 +151,16 @@
         "e": "t_carpet_green",
         "r": "t_carpet_green"
       },
-      "mapping": { "]": { "furniture": "f_bookcase", "items": { "item": "unaligned_arcanist_books", "chance": 40, "repeat": 2 } } },
       "set": [
         { "point": "trap", "id": "tr_snake", "x": [ 6, 7 ], "y": [ 7, 16 ], "repeat": [ 3, 6 ] },
         { "point": "trap", "id": "tr_snake", "x": [ 16, 17 ], "y": [ 7, 16 ], "repeat": [ 3, 6 ] },
         { "point": "trap", "id": "tr_portal", "x": [ 1, 22 ], "y": [ 21, 23 ], "repeat": [ 0, 1 ] }
       ],
       "place_loot": [
-        { "group": "magic_items", "x": [ 15, 17 ], "y": 6, "chance": 40, "repeat": 4 },
-        { "group": "unaligned_arcanist_books", "x": [ 15, 17 ], "y": 17, "chance": 40, "repeat": 4 },
+        { "group": "unaligned_arcanist_books", "x": [ 6, 8 ], "y": 6, "chance": 50, "repeat": 6 },
+        { "group": "magic_consumables", "x": [ 15, 17 ], "y": 6, "chance": 40, "repeat": 4 },
+        { "group": "unaligned_arcanist_books", "x": [ 6, 8 ], "y": 17, "chance": 50, "repeat": 6 },
+        { "group": "magic_consumables", "x": [ 15, 17 ], "y": 17, "chance": 40, "repeat": 4 },
         { "item": "moonstone_fang", "x": [ 11, 12 ], "y": [ 11, 12 ] }
       ],
       "place_monster": [

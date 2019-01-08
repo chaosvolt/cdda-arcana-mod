@@ -184,7 +184,6 @@
       ],
       "palettes": [ "arcana_palette" ],
       "furniture": { ">": "f_blade_upright" },
-      "mapping": { "]": { "furniture": "f_bookcase", "items": { "item": "cleansing_flame_books", "chance": 75, "repeat": 3 } } },
       "place_loot": [
         { "group": "cleansing_flame_crafting", "x": [ 2, 4 ], "y": 20, "chance": 30, "repeat": 5 },
         { "group": "cleansing_flame_crafting", "x": [ 20, 22 ], "y": 20, "chance": 30, "repeat": 5 },
@@ -197,6 +196,10 @@
         { "group": "cleansing_flame_casualties", "x": [ 5, 19 ], "y": [ 11, 15 ], "repeat": 7 },
         { "group": "add_apprentice", "x": 20, "y": [ 2, 6 ], "chance": 50, "repeat": 3 },
         { "item": "arcanemap", "x": 20, "y": [ 2, 6 ], "chance": 50 },
+        { "group": "cleansing_flame_books", "x": 3, "y": [ 2, 6 ], "chance": 75, "repeat": 10 },
+        { "group": "cleansing_flame_books", "x": 5, "y": [ 2, 6 ], "chance": 75, "repeat": 10 },
+        { "group": "cleansing_flame_books", "x": 7, "y": [ 2, 6 ], "chance": 75, "repeat": 10 },
+        { "group": "cleansing_flame_books", "x": 22, "y": [ 2, 6 ], "chance": 75, "repeat": 10 },
         { "group": "cleansing_flame_spells", "x": 22, "y": [ 2, 6 ], "chance": 5, "repeat": 3 },
         { "item": "note_flame_tenet", "x": 22, "y": [ 2, 6 ], "chance": 90 }
       ],
