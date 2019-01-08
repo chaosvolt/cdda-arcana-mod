@@ -78,10 +78,11 @@
       { "point": [ 0, 0, 0 ], "overmap": "arcana_hermitage_1_north" },
       { "point": [ 0, 0, 1 ], "overmap": "arcana_hermitage_2_north" }
     ],
+    "connections": [ { "point": [ 0, 1, 0 ], "terrain": "road" } ],
     "locations": [ "wilderness" ],
-    "city_distance": [ 20, -1 ],
+    "city_distance": [ 16, -1 ],
     "city_sizes": [ 0, 20 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 90, 100 ],
     "flags": [ "CLASSIC", "UNIQUE" ]
   }
 ]

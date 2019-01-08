@@ -2,6 +2,7 @@
   {
     "type": "npc",
     "id": "the_hermit",
+    "name_unique": "Alexander Cornett",
     "name_suffix": "Hermit",
     "gender": "male",
     "class": "NC_HERMIT",
