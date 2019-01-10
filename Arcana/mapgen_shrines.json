@@ -12,18 +12,18 @@
         "#,,I,,,##########,,,I,,#",
         "#,,,,,##mmmmmmmm##,,,,,#",
         "#,,,,##mmuuuuuumm##,,,,#",
-        "#,,,##mmuu....uumm##,,,#",
-        "#,,##mmuu......uumm##,,#",
-        "#,,#mmuuI......Iuumm#,,#",
-        "#,,#muu..b....b..uum#,,#",
-        "#,,#mu............um#,,#",
-        "#,,#mu.....aa.....um#,,#",
-        "#,,#mu.....aa.....um#,,#",
-        "#,,#mu............um#,,#",
-        "#,,#muu..b....b..uum#,,#",
-        "#,,#mmuuI......Iuumm#,,#",
-        "#,,##mmuu......uumm##,,#",
-        "#,,,##mmuu....uumm##,,,#",
+        "#,,,##mmuuEEEEuumm##,,,#",
+        "#,,##mmuuEEEEEEuumm##,,#",
+        "#,,#mmuuIEEEEEEIuumm#,,#",
+        "#,,#muuEEbEEEEbEEuum#,,#",
+        "#,,#muEEEEEEEEEEEEum#,,#",
+        "#,,#muEEEEEaaEEEEEum#,,#",
+        "#,,#muEEEEEaaEEEEEum#,,#",
+        "#,,#muEEEEEEEEEEEEum#,,#",
+        "#,,#muuEEbEEEEbEEuum#,,#",
+        "#,,#mmuuIEEEEEEIuumm#,,#",
+        "#,,##mmuuEEEEEEuumm##,,#",
+        "#,,,##mmuuEEEEuumm##,,,#",
         "#,,,,##mmuuuuuumm##,,,,#",
         "#,,,,,##mmmmmmmm##,,,,,#",
         "#,,I,,,###iiii###,,,I,,#",
@@ -32,7 +32,7 @@
         ",,#############,,,,,##,,"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": { "i": "t_dirt" },
+      "terrain": { "b": "t_rock_floor_no_roof", "i": "t_dirt" },
       "mapping": {
         "a": { "furniture": "f_slab", "items": { "item": "magic_items", "chance": 40, "repeat": 2 } },
         "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
@@ -40,7 +40,8 @@
       "set": [
         { "point": "trap", "id": "tr_glow", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] },
         { "point": "trap", "id": "tr_hum", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] },
-        { "point": "trap", "id": "tr_drain", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] }
+        { "point": "trap", "id": "tr_drain", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 2, 3 ] },
+        { "point": "trap", "id": "tr_portal", "x": [ 3, 12 ], "y": [ 21, 22 ], "repeat": [ 0, 1 ] }
       ],
       "place_loot": [
         { "group": "summoner_casualties", "x": [ 20, 22 ], "y": [ 17, 19 ], "chance": 90 },
@@ -90,6 +91,7 @@
         ",,,,,,,,,,,,,,,,,,,,,,,,"
       ],
       "palettes": [ "arcana_palette" ],
+      "set": [ { "point": "trap", "id": "tr_portal", "x": [ 11, 12 ], "y": [ 0, 2 ], "repeat": [ 0, 1 ] } ],
       "terrain": { "T": [ "t_rock_smooth", "t_rock_smooth", "t_dirt", "t_lava" ], "x": "t_rdoor_boarded" },
       "furniture": { "C": "f_coffin_c" },
       "mapping": {
@@ -151,7 +153,8 @@
       },
       "set": [
         { "point": "trap", "id": "tr_snake", "x": [ 6, 7 ], "y": [ 7, 16 ], "repeat": [ 3, 6 ] },
-        { "point": "trap", "id": "tr_snake", "x": [ 16, 17 ], "y": [ 7, 16 ], "repeat": [ 3, 6 ] }
+        { "point": "trap", "id": "tr_snake", "x": [ 16, 17 ], "y": [ 7, 16 ], "repeat": [ 3, 6 ] },
+        { "point": "trap", "id": "tr_portal", "x": [ 1, 22 ], "y": [ 21, 23 ], "repeat": [ 0, 1 ] }
       ],
       "place_loot": [
         { "group": "unaligned_arcanist_books", "x": [ 6, 8 ], "y": 6, "chance": 50, "repeat": 6 },

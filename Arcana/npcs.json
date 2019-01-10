@@ -1,0 +1,15 @@
+[
+  {
+    "type": "npc",
+    "id": "the_hermit",
+    "name_unique": "Alexander Cornett",
+    "name_suffix": "Hermit",
+    "gender": "male",
+    "class": "NC_HERMIT",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_HERMIT",
+    "faction": "wasteland_scavengers",
+    "mission_offered": "MISSION_HERMIT_RETRIEVE_SWORD"
+  }
+]

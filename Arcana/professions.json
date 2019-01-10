@@ -12,7 +12,8 @@
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
-    }
+    },
+    "traits": [ "PROF_ARCANIST" ]
   },
   {
     "type": "profession",
@@ -43,6 +44,7 @@
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
     },
+    "traits": [ "PROF_ARCANIST" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -74,6 +76,7 @@
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
     },
+    "traits": [ "PROF_ARCANIST" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -96,6 +99,7 @@
       "male": [ "boxer_briefs", "pants" ],
       "female": [ "bra", "panties", "skirt" ]
     },
+    "traits": [ "PROF_SANGUINE" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -130,6 +134,7 @@
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boy_shorts" ]
     },
+    "traits": [ "PROF_CLEANSINGFLAME" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -151,6 +156,7 @@
       },
       "female": [ "chestwrap" ]
     },
+    "traits": [ "PROF_CHALICE" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -186,6 +192,7 @@
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
     },
+    "traits": [ "PROF_ARCANIST" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -205,17 +212,7 @@
     ],
     "items": {
       "both": {
-        "items": [
-          "duster",
-          "backpack",
-          "tricorne",
-          "socks",
-          "boots",
-          "flask_hip",
-          "ref_lighter",
-          "bowl_clay",
-          "book_bloodmagic"
-        ],
+        "items": [ "duster", "backpack", "tricorne", "socks", "boots", "flask_hip", "ref_lighter", "bowl_clay", "book_bloodmagic" ],
         "entries": [
           { "item": "armor_wyrm", "ammo-item": "essence_blood", "charges": [ 4, 8 ] },
           { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 1 },
@@ -228,6 +225,7 @@
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boy_shorts" ]
     },
+    "traits": [ "PROF_SANGUINE" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -270,6 +268,7 @@
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boy_shorts" ]
     },
+    "traits": [ "PROF_CLEANSINGFLAME" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -280,10 +279,23 @@
     "points": 2,
     "items": {
       "both": {
-        "items": [ "longshirt", "jacket_light", "pants", "socks", "boots", "gloves_leather", "knit_scarf", "mbag", "book_potioncraft", "book_scrollcraft", "book_syncretism" ]
+        "items": [
+          "longshirt",
+          "jacket_light",
+          "pants",
+          "socks",
+          "boots",
+          "gloves_leather",
+          "knit_scarf",
+          "mbag",
+          "book_potioncraft",
+          "book_scrollcraft",
+          "book_syncretism"
+        ]
       },
       "male": [ "boxer_briefs" ],
       "female": [ "bra", "panties" ]
-    }
+    },
+    "traits": [ "PROF_ARCANIST" ]
   }
 ]

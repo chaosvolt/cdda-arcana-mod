@@ -172,16 +172,19 @@
   {
     "type": "mutation",
     "id": "SPELL_ACIDARMOR",
-    "name": "Arcana: Acid Armor",
+    "name": "Blessing: Acid Armor",
     "points": 3,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, granting temporary resistance to corrosive effects.  Direct contact with acid will still harm you.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 45,
+    "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_acidarmor", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_acidarmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -191,11 +194,33 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can create sprays of acid.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL", "ACIDSPRAY" ],
+    "category": [ "ACIDSPRAY" ],
+    "changes_to" : [ "SPELL_ACID2" ],
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_acidspray", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_acidspray",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_ACID2",
+    "name": "Blessing: Acid Spray",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can create sprays of acid.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "VEIL" ],
+    "cancels" : [ "SPELL_ACID" ],
+    "active": true,
+    "cost": 30,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_acidspray",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -205,11 +230,33 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary speed and agility-enhancing effect.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL", "AGILITY" ],
+    "category": [ "AGILITY" ],
+    "changes_to" : [ "SPELL_AGILE2" ],
     "active": true,
     "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_agile", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_agile",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_AGILE2",
+    "name": "Blessing: Agility",
+    "points": 4,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary speed and agility-enhancing effect.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "VEIL" ],
+    "cancels" : [ "SPELL_AGILE" ],
+    "active": true,
+    "cost": 40,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_agile",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -219,12 +266,34 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary clairvoyance effect.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "leads_to": [ "SPELL_PSYSHIELD" ],
-    "category": [ "VEIL", "CLAIRVOYANCE" ],
+    "changes_to": [ "SPELL_CLAIRVOYANCE2" ],
+    "category": [ "CLAIRVOYANCE" ],
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_clairvoyance", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_clairvoyance",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CLAIRVOYANCE2",
+    "name": "Blessing: Clairvoyance",
+    "points": 6,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary clairvoyance effect.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "leads_to": [ "SPELL_PSYSHIELD" ],
+    "category": [ "VEIL" ],
+    "cancels": [ "SPELL_CLAIRVOYANCE" ],
+    "active": true,
+    "cost": 60,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_clairvoyance",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -238,7 +307,10 @@
     "active": true,
     "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_clarity", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_clarity",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -248,50 +320,78 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can confuse nearby monsters.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "leads_to": [ "SPELL_PACIFY" ],
-    "category": [ "VEIL", "CONFUSE" ],
+    "changes_to": [ "SPELL_CONFUSE2" ],
+    "category": [ "CONFUSE" ],
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_confusion", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_confusion",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CONFUSE2",
+    "name": "Blessing: Confuse Monster",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can confuse nearby monsters.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "leads_to": [ "SPELL_PACIFY" ],
+    "cancels": [ "SPELL_CONFUSE" ],
+    "category": [ "VEIL" ],
+    "active": true,
+    "cost": 30,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_confusion",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_LIGHTNINGFIELD",
-    "name": "Arcana: Conjure Lightning",
-    "points": 3,
+    "name": "Blessing: Conjure Lightning",
+    "points": 4,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a field of electric death from the sign itself, and should be thrown.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "prereqs": [ "SPELL_ELECRESIST" ],
+    "prereqs": [ "SPELL_ELECRESIST2" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 45,
+    "cost": 40,
     "fatigue": true,
-    "spawn_item": { "type": "spell_lightningfield", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_lightningfield",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_SMOKE",
-    "name": "Arcana: Conjure Smoke",
-    "points": 2,
+    "name": "Blessing: Conjure Smoke",
+    "points": 3,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a cloud of thick, choking smoke from the sign itself, and should be thrown.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "prereqs": [ "SPELL_FLAMEARMOR" ],
-    "leads_to": [ "SPELL_FIRE" ],
-    "category": [ "VEIL", "DRAGONBLOOD" ],
+    "prereqs": [ "SPELL_FLAMEARMOR2" ],
+    "leads_to": [ "SPELL_FIRE2" ],
+    "category": [ "VEIL" ],
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_smoke", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_smoke",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_CLOUD",
-    "name": "Arcana: Conjure Toxic Cloud",
-    "points": 2,
+    "name": "Blessing: Conjure Toxic Cloud",
+    "points": 3,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a cloud of choking, toxic gas from the sign itself, which should be thrown.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
@@ -300,39 +400,67 @@
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_cloud", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_cloud",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_DAYLIGHT",
-    "//": "ID retained to avoid load errors.",
+    "//": "ID retained to avoid load errors.  This upgrade is highly unlikely to happen, but just in case...",
     "name": "Arcana: Surge of Adrenaline",
     "points": 2,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can trigger an uplifting rush through the body.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "leads_to": [ "SPELL_PULSE" ],
-    "category": [ "VEIL", "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_VEIL", "THRESH_DRAGONBLOOD" ],
+    "changes_to": [ "SPELL_DAYLIGHT2" ],
+    "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_daylight", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_daylight",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_DAYLIGHT2",
+    "name": "Blessing: Surge of Adrenaline",
+    "points": 2,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can trigger an uplifting rush through the body.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "leads_to": [ "SPELL_PULSE" ],
+    "cancels": [ "SPELL_DAYLIGHT" ],
+    "category": [ "VEIL" ],
+    "threshreq": [ "THRESH_VEIL" ],
+    "active": true,
+    "cost": 20,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_daylight",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_DRAINLIFE",
-    "name": "Arcana: Drain Life",
+    "name": "Blessing: Drain Life",
     "points": 6,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary life-draining effect.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL", "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_VEIL", "THRESH_DRAGONBLOOD" ],
+    "category": [ "VEIL" ],
     "active": true,
-    "cost": 90,
+    "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_drainlife", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_drainlife",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -342,26 +470,70 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a wicked flame.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL", "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD" ],
+    "changes_to": [ "SPELL_FIRE2" ],
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_fireball", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_fireball",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_FIRE2",
+    "name": "Blessing: Fireball",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a wicked flame.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "VEIL" ],
+    "cancels": [ "SPELL_FIRE" ],
+    "active": true,
+    "cost": 45,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_fireball",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_FLAMEARMOR",
     "name": "Arcana: Flame Armor",
-    "points": 4,
+    "points": 5,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy that can grant temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "changes_to": [ "SPELL_FLAMEARMOR2" ],
+    "category": [ "DRAGONBLOOD", "FLAMEARMOR" ],
+    "active": true,
+    "cost": 75,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_flamearmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_FLAMEARMOR2",
+    "name": "Blessing: Flame Armor",
+    "points": 5,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy that can grant temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_SMOKE" ],
-    "category": [ "VEIL", "DRAGONBLOOD", "FLAMEARMOR" ],
+    "category": [ "VEIL" ],
+    "cancels": [ "SPELL_FLAMEARMOR" ],
     "active": true,
-    "cost": 60,
+    "cost": 50,
     "fatigue": true,
-    "spawn_item": { "type": "spell_flamearmor", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_flamearmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -375,7 +547,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_free_action", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_free_action",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -389,7 +564,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_heal", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_heal",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -403,22 +581,28 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_insight", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_insight",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_INVIS",
-    "name": "Arcana: Invisibility",
-    "points": 6,
+    "name": "Blessing: Invisibility",
+    "points": 7,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary invisibility effect.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 90,
+    "cost": 70,
     "fatigue": true,
-    "spawn_item": { "type": "spell_invis", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_invis",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -428,11 +612,32 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary aura of illumination.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL" ],
+    "changes_to": [ "SPELL_LIGHT2" ],
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_light", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_light",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_LIGHT2",
+    "name": "Blessing: Light",
+    "points": 2,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary aura of illumination.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "VEIL" ],
+    "cancels": [ "SPELL_LIGHT" ],
+    "active": true,
+    "cost": 20,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_light",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -442,12 +647,34 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant temporary protection against electricity.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "leads_to": [ "SPELL_LIGHTNINGFIELD" ],
-    "category": [ "VEIL", "DRAGONBLOOD", "ELECRESIST" ],
+    "changes_to": [ "SPELL_ELECRESIST2" ],
+    "category": [ "ELECRESIST" ],
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_elecresist", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_elecresist",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_ELECRESIST2",
+    "name": "Blessing: Lightning Ward",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant temporary protection against electricity.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "leads_to": [ "SPELL_LIGHTNINGFIELD" ],
+    "cancels": [ "SPELL_ELECRESIST" ],
+    "category": [ "VEIL" ],
+    "active": true,
+    "cost": 30,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_elecresist",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -457,43 +684,71 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary strength-enhancing effect.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "leads_to": [ "SPELL_PULSE" ],
-    "category": [ "VEIL", "DRAGONBLOOD", "MIGHT" ],
+    "changes_to": [ "SPELL_STRENGTH2" ],
+    "category": [ "DRAGONBLOOD", "MIGHT" ],
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_strength", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_strength",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_STRENGTH2",
+    "name": "Blessing: Might",
+    "points": 5,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary strength-enhancing effect.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "leads_to": [ "SPELL_PULSE" ],
+    "cancels": [ "SPELL_STRENGTH" ],
+    "category": [ "VEIL" ],
+    "active": true,
+    "cost": 50,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_strength",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_PSYSHIELD",
-    "name": "Arcana: Mind Ward",
+    "name": "Blessing: Mind Ward",
     "points": 5,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant temporary protection against psionic assault.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "prereqs": [ "SPELL_CLAIRVOYANCE" ],
+    "prereqs": [ "SPELL_CLAIRVOYANCE2" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 75,
+    "cost": 50,
     "fatigue": true,
-    "spawn_item": { "type": "spell_psyshield", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_psyshield",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_LOCKPICK",
-    "name": "Arcana: Open Lock",
-    "points": 3,
+    "name": "Blessing: Open Lock",
+    "points": 4,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can open locked doors.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 45,
+    "cost": 40,
     "fatigue": true,
-    "spawn_item": { "type": "spell_lockpick", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_lockpick",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -507,38 +762,47 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_plants", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_plants",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_PACIFY",
-    "name": "Arcana: Pacify Monsters",
+    "name": "Blessing: Pacify Monsters",
     "points": 4,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can turn nearby monsters friendly.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "prereqs": [ "SPELL_CONFUSE" ],
+    "prereqs": [ "SPELL_CONFUSE2" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 60,
+    "cost": 40,
     "fatigue": true,
-    "spawn_item": { "type": "spell_pacify", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_pacify",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_POISONARMOR",
-    "name": "Arcana: Poison Armor",
+    "name": "Blessing: Poison Armor",
     "points": 3,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy that can grant temporary protection from toxic gas and other poisons.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_CLOUD" ],
-    "category": [ "VEIL", "DRAGONBLOOD" ],
+    "category": [ "VEIL" ],
     "active": true,
-    "cost": 45,
+    "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_poisonarmor", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_poisonarmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -548,30 +812,55 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can create random bolts of lightning all around.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL", "LIGHTNING" ],
+    "category": [ "LIGHTNING" ],
+    "changes_to": [ "SPELL_LIGHTNING2" ],
     "active": true,
     "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_lightning", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_lightning",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_LIGHTNING2",
+    "name": "Blessing: Shockstorm",
+    "points": 2,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can create random bolts of lightning all around.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "VEIL" ],
+    "cancels": [ "SPELL_LIGHTNING" ],
+    "active": true,
+    "cost": 20,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_lightning",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_SUMMONCULUS",
-    "name": "Arcana: Summon Homunculus",
+    "name": "Blessing: Summon Homunculus",
     "points": 5,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a homunculus.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 75,
+    "cost": 50,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonculus", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonculus",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_SUMMONTHING",
-    "name": "Arcana: Summon Thing",
+    "name": "Blessing: Summon Thing",
     "points": 7,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a horrifying thing.  Activate to focus your power, draining fatigue.",
     "valid": false,
@@ -579,9 +868,12 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 105,
+    "cost": 70,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonthing", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonthing",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -591,32 +883,56 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a skeletal dog.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "leads_to": [ "SPELL_SUMMONSKEL" ],
-    "category": [ "VEIL" ],
+    "changes_to": [ "SPELL_SUMMONDOG2" ],
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summondog", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summondog",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUMMONDOG2",
+    "name": "Blessing: Summon Skeletal Dog",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a skeletal dog.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "leads_to": [ "SPELL_SUMMONSKEL" ],
+    "cancels": [ "SPELL_SUMMONDOG" ],
+    "category": [ "VEIL" ],
+    "active": true,
+    "cost": 30,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_summondog",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_SUMMONSKEL",
-    "name": "Arcana: Summon Skeleton",
+    "name": "Blessing: Summon Skeleton",
     "points": 4,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a skeleton.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "prereqs": [ "SPELL_SUMMONDOG" ],
+    "prereqs": [ "SPELL_SUMMONDOG2" ],
     "category": [ "VEIL" ],
     "active": true,
-    "cost": 60,
+    "cost": 40,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonskel", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonskel",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_SUMMONVORTEX",
-    "name": "Arcana: Summon Vortex",
+    "name": "Blessing: Summon Vortex",
     "points": 6,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a vortex.  Activate to focus your power, draining fatigue.",
     "valid": false,
@@ -624,14 +940,17 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 90,
+    "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonvortex", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonvortex",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_TELEPORT",
-    "name": "Arcana: Teleport",
+    "name": "Blessing: Teleport",
     "points": 3,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can teleport you at random.  Beware the risk of teleporting right into a wall.  Activate to focus your power, draining fatigue.",
     "valid": false,
@@ -639,26 +958,32 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 45,
+    "cost": 30,
     "fatigue": true,
-    "spawn_item": { "type": "spell_teleport", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_teleport",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_PULSE",
-    "name": "Arcana: Wave of Destruction",
-    "points": 8,
+    "name": "Blessing: Wave of Destruction",
+    "points": 10,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can create a pulse of destructive energy.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
-    "prereqs": [ "SPELL_STRENGTH" ],
-    "prereqs2": [ "SPELL_DAYLIGHT" ],
+    "prereqs": [ "SPELL_STRENGTH2" ],
+    "prereqs2": [ "SPELL_DAYLIGHT2" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 120,
+    "cost": 100,
     "fatigue": true,
-    "spawn_item": { "type": "spell_pulse", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_pulse",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -672,22 +997,28 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_cleric", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_cleric",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_BUGS",
-    "name": "Arcana: Vermin",
-    "points": 5,
+    "name": "Blessing: Vermin",
+    "points": 6,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a host of giant insects, in exchange for sickening you.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 75,
+    "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_bugs", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_bugs",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -701,22 +1032,28 @@
     "active": true,
     "cost": 45,
     "fatigue": true,
-    "spawn_item": { "type": "spell_dampening", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_dampening",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
     "id": "SPELL_FROSTARMOR",
-    "name": "Arcana: Frost Armor",
-    "points": 5,
+    "name": "Blessing: Frost Armor",
+    "points": 6,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy that can protect against cold.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL", "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_VEIL", "THRESH_DRAGONBLOOD" ],
+    "category": [ "VEIL" ],
+    "threshreq": [ "THRESH_VEIL" ],
     "active": true,
-    "cost": 75,
+    "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_frostarmor", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_frostarmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -732,7 +1069,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_shadowsnakes", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_shadowsnakes",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -748,7 +1088,10 @@
     "active": true,
     "cost": 75,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonwyrm", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonwyrm",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -763,7 +1106,10 @@
     "active": true,
     "cost": 60,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonfiend", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonfiend",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -779,7 +1125,10 @@
     "active": true,
     "cost": 90,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonjabberwock", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonjabberwock",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -795,7 +1144,10 @@
     "active": true,
     "cost": 105,
     "fatigue": true,
-    "spawn_item": { "type": "spell_summonyugg", "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory." }
+    "spawn_item": {
+      "type": "spell_summonyugg",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   },
   {
     "type": "mutation",
@@ -1226,5 +1578,45 @@
     "hunger": true,
     "thirst": true,
     "spawn_item": { "type": "essence", "message": "You channel your life force into forming a mote of otherworldly essence." }
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_CLEANSINGFLAME",
+    "name": "Cleansing Flame",
+    "points": 0,
+    "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renagade, wherever your loyalties now lie, your past may still be useful in the future.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_SANGUINE",
+    "name": "Sanguinist",
+    "points": 0,
+    "description": "You were sworn into an order known as the Sanguine Order.  Infamous and feared as you were among those who studied in secret, your past may still be useful in the future.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_CHALICE",
+    "name": "Keeper of The Oath",
+    "points": 0,
+    "description": "You were sworn into an order known as the Keepers of The Oath.  Whether or not He From Beyond The Veil still guides you, the oath you swore is eternal, and your past may still be useful in the future.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_ARCANIST",
+    "name": "Arcanist",
+    "points": 0,
+    "description": "Though you studied the Beyond, you weren't directly associated with the major groups to gain infamy among your fellow scholar.  Still, your familiarity with the arcane may prove useful someday.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
   }
 ]
