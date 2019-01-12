@@ -9,7 +9,7 @@
     "color": "cyan",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_vortex",
+      "monster_id": "mon_vortex_summoned",
       "place_randomly": true
     }
   },
@@ -301,7 +301,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_kreck",
+      "monster_id": "mon_kreck_summoned",
       "friendly_msg": "The kreck looks up at you expectantly, as if wondering what sort of shenanigans you're plotting.",
       "hostile_msg": "The kreck mimics your movements erratically, cavorting about to mock you!",
       "difficulty": 6,
@@ -341,7 +341,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_triffid",
+      "monster_id": "mon_triffid_summoned",
       "friendly_msg": "The movement of the plant creature is hard to read, but you suspect it is either friendly, or doesn't regard you as a threat.",
       "hostile_msg": "Even without words or recognizable body language, it quickly becomes apparent that the plant monster is hostile.",
       "difficulty": 6,
@@ -381,7 +381,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_flesh_angel",
+      "monster_id": "mon_flesh_angel_summoned",
       "friendly_msg": "A twisted mimicry of the divine is called forth, bound to your will.",
       "hostile_msg": "The flesh angel levels a wicked gaze upon you, ignoring your commands.",
       "difficulty": 7,
@@ -398,7 +398,7 @@
     "name": "glyph of Crawling Chaos",
     "name_plural": "glyphs of Crawling Chaos",
     "//": "Explaination: In Lovecraft's work, The Crawling Chaos is one of Nyarlathotep's names, and hunting horrors are associated with him.  The success and failure messages below spell it out rather plainly.",
-    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  Using it during the day might be a bad idea.  It is difficult to control.",
+    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  It is difficult to control.",
     "use_action": {
       "target": "summon_hunting_horror_on",
       "msg": "The glyph of Crawling Chaos gives off a faint green glow.",
@@ -414,14 +414,14 @@
     "copy-from": "silver_glyph",
     "name": "glyph of Crawling Chaos (active)",
     "name_plural": "glyphs of Crawling Chaos (active)",
-    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  Using it during the day might be a bad idea.",
+    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.",
     "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_hunting_horror",
+      "monster_id": "mon_hunting_horror_summoned",
       "friendly_msg": "The hunting horror is at your beck and call.  A gift from the Stalker among the Stars?",
       "hostile_msg": "You feel the gaze of Nyarlathotep upon you.  How foolish of you, to steal the harrier of the Faceless God!",
       "difficulty": 7,
@@ -438,7 +438,7 @@
     "name": "glyph of the eye",
     "name_plural": "glyphs of the eye",
     "//": "Explaination: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
-    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  Hopefully.  Using it during the day might be a bad idea.  It is difficult to control.",
+    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  It is difficult to control.",
     "use_action": {
       "target": "summon_dark_wyrm_on",
       "msg": "The glyph of the eye gives off a faint green glow.",
@@ -454,14 +454,14 @@
     "copy-from": "silver_glyph",
     "name": "glyph of the eye (active)",
     "name_plural": "glyphs of the eye (active)",
-    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  Hopefully.  Using it during the day might be a bad idea.",
+    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  Hopefully.",
     "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_dark_wyrm",
+      "monster_id": "mon_dark_wyrm_summoned",
       "friendly_msg": "The wyrm springs forth, seeming to regard you passively, or at least ignoring your presence.",
       "hostile_msg": "The wyrm springs forth, reacting to unfamiliar sounds and scent with a malevolent screech!",
       "difficulty": 8,
@@ -501,7 +501,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_mi_go",
+      "monster_id": "mon_mi_go_summoned",
       "friendly_msg": "You recite an incantation, and the mi-go's response is a quiet murmur in some unknown language.  It seems to be friendly.",
       "hostile_msg": "You begin to recite an incantation, only for the mi-go to parrot your words, mocking your effort to control it!",
       "difficulty": 8,
@@ -540,7 +540,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_jabberwock",
+      "monster_id": "mon_jabberwock_summoned",
       "friendly_msg": "You hear a strange burbling, the creature bound to your will.",
       "hostile_msg": "Eyes of flame meet your gaze, the creature resists your attempt to control it!",
       "difficulty": 9,
@@ -580,7 +580,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_flying_polyp",
+      "monster_id": "mon_flying_polyp_summoned",
       "friendly_msg": "The flying polyp twitches for a moment, before its movement steadies.  It seems to be friendly.",
       "hostile_msg": "The flying polyp twitches erratically, reacting to your presence with apparent hostility!",
       "difficulty": 9,
@@ -620,7 +620,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_yugg",
+      "monster_id": "mon_yugg_summoned",
       "friendly_msg": "With the riches of a dead world as an offering, you bind the yugg to serve you.  You feel like this is the opposite of how it normally works.",
       "hostile_msg": "An offering of wealth is not enough to placate a servant of Ubb.  The creature turns hostile!",
       "difficulty": 10,
@@ -660,7 +660,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_shoggoth",
+      "monster_id": "mon_shoggoth_summoned",
       "friendly_msg": "You hear a voice in your mind.  \"Tekili ...l-li?\"  Your mind exerts a strange influence upon the shoggoth.",
       "hostile_msg": "You hear a voice in your mind.  \"Tekeli-li!\"  The shoggoth resists your efforts to control it!",
       "difficulty": 10,

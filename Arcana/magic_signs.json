@@ -1208,7 +1208,7 @@
     "type": "TOOL",
     "name": "Magic Sign: Summon Dark Wyrm",
     "name_plural": "Magic Sign: Summon Dark Wyrm",
-    "description": "A mote of energy with endless coils perceived inside it.  Activate it to summon a dark wyrm, but beware that sunlight will kill it.  It is somewhat difficult to control.",
+    "description": "A mote of energy with endless coils perceived inside it.  Activate it to summon a dark wyrm.  It is somewhat difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
@@ -1233,7 +1233,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_dark_wyrm",
+      "monster_id": "mon_dark_wyrm_summoned",
       "friendly_msg": "The massive burrowing wyrm is at your beck and call.",
       "hostile_msg": "Your magic fails to control the massive burrowing wyrm!",
       "difficulty": 5,
@@ -1274,7 +1274,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_zombie_fiend",
+      "monster_id": "mon_zombie_fiend_summoned",
       "friendly_msg": "The charred undead monster is at your beck and call.",
       "hostile_msg": "Your magic fails to control the charred undead monster!",
       "difficulty": 3,
@@ -1315,7 +1315,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_jabberwock",
+      "monster_id": "mon_jabberwock_summoned",
       "friendly_msg": "The body of bodies is at your beck and call.",
       "hostile_msg": "Your magic fails to control the body of bodies!",
       "difficulty": 7,
@@ -1356,7 +1356,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_homunculus",
+      "monster_id": "mon_homunculus_summoned",
       "friendly_msg": "The humanoid construct is at your beck and call.",
       "hostile_msg": "Your magic fails to control the humanoid construct!",
       "difficulty": 5,
@@ -1397,7 +1397,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_thing",
+      "monster_id": "mon_thing_summoned",
       "friendly_msg": "The mass of tendrils is at your beck and call.",
       "hostile_msg": "Your magic fails to control the mass of tendrils!",
       "difficulty": 7,
@@ -1438,7 +1438,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_dog_skeleton",
+      "monster_id": "mon_dog_skeleton_summoned",
       "friendly_msg": "The animalistic revenant is at your beck and call.",
       "hostile_msg": "Your magic fails to control to animalistic revenant!",
       "difficulty": 1,
@@ -1479,7 +1479,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_skeleton",
+      "monster_id": "mon_skeleton_summoned",
       "friendly_msg": "The humanoid revenant is at your beck and call.",
       "hostile_msg": "Your magic fails to control to humanoid revenant!",
       "difficulty": 3,
@@ -1520,7 +1520,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_vortex",
+      "monster_id": "mon_vortex_summoned",
       "friendly_msg": "The swirling wisp is at your beck and call.",
       "hostile_msg": "Your magic fails to control the swirling wisp!",
       "difficulty": 5,
@@ -1561,7 +1561,7 @@
     "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_yugg",
+      "monster_id": "mon_yugg_summoned",
       "friendly_msg": "The mutagenic worm beast is at your beck and call.",
       "hostile_msg": "Your magic fails to control the mutagenic worm beast!",
       "difficulty": 9,

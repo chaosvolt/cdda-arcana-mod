@@ -758,5 +758,169 @@
       "NO_BREATHE",
       "PRIORITIZE_TARGETS"
     ]
+  },
+  {
+    "id": "mon_dark_wyrm_summoned",
+    "copy-from": "mon_dark_wyrm",
+    "type": "MONSTER",
+    "name": "summoned dark wyrm",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 20,
+        "damage_max_instance": [ { "damage_type": "acid", "amount": 10, "armor_multiplier": 0.25 } ]
+      }
+    ],
+    "death_function": [ "MELT" ],
+    "death_drops": {  },
+    "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
+  },
+  {
+    "id": "mon_zombie_fiend_summoned",
+    "copy-from": "mon_zombie_fiend",
+    "type": "MONSTER",
+    "name": "summoned fiend",
+    "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
+    "death_function": [ "MELT" ],
+    "death_drops": {  },
+    "upgrades": {  }
+  },
+  {
+    "id": "mon_jabberwock_summoned",
+    "copy-from": "mon_jabberwock",
+    "type": "MONSTER",
+    "name": "summoned jabberwock",
+    "death_function": [ "MELT" ],
+    "death_drops": {  },
+    "delete": { "flags": [ "BASHES", "DESTROYS" ] }
+  },
+  {
+    "id": "mon_homunculus_summoned",
+    "copy-from": "mon_homunculus",
+    "type": "MONSTER",
+    "name": "summoned homunculus",
+    "death_function": [ "MELT" ],
+    "death_drops": {  },
+    "delete": { "flags": [ "BASHES", "GROUP_BASH", "REVIVES" ] }
+  },
+  {
+    "id": "mon_thing_summoned",
+    "copy-from": "mon_thing",
+    "type": "MONSTER",
+    "name": "summoned thing",
+    "death_drops": {  },
+    "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
+  },
+  {
+    "id": "mon_dog_skeleton_summoned",
+    "copy-from": "mon_dog_skeleton",
+    "type": "MONSTER",
+    "name": "summoned skeletal dog",
+    "death_function": [ "MELT" ],
+    "death_drops": {  },
+    "delete": { "flags": [ "REVIVES" ] }
+  },
+  {
+    "id": "mon_skeleton_summoned",
+    "copy-from": "mon_skeleton",
+    "type": "MONSTER",
+    "name": "summoned skeleton",
+    "death_function": [ "MELT" ],
+    "death_drops": {  },
+    "upgrades": {  },
+    "delete": { "flags": [ "REVIVES" ] }
+  },
+  {
+    "id": "mon_vortex_summoned",
+    "copy-from": "mon_vortex",
+    "type": "MONSTER",
+    "name": "summoned vortex",
+    "death_drops": {  },
+    "melee_damage": [ { "damage_type": "cold", "amount": 5 } ],
+    "extend": { "flags": [ "ELECTRIC" ] },
+    "delete": { "flags": [ "SUNDEATH", "BASHES", "BORES" ] }
+  },
+  {
+    "id": "mon_yugg_summoned",
+    "copy-from": "mon_yugg",
+    "type": "MONSTER",
+    "name": "summoned yugg",
+    "special_attacks": [ [ "PARA_STING", 20 ] ],
+    "death_function": [ "MELT" ],
+    "death_drops": {  },
+    "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
+  },
+  {
+    "id": "mon_kreck_summoned",
+    "copy-from": "mon_kreck",
+    "type": "MONSTER",
+    "death_drops": {  },
+    "name": "summoned kreck",
+    "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
+    "delete": { "flags": [ "BASHES" ] }
+  },
+  {
+    "id": "mon_triffid_summoned",
+    "copy-from": "mon_triffid",
+    "type": "MONSTER",
+    "name": "summoned triffid",
+    "death_function": [ "MELT" ],
+    "death_drops": {  },
+    "special_attacks": [ [ "VINE", 20 ] ],
+    "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
+  },
+  {
+    "id": "mon_flesh_angel_summoned",
+    "copy-from": "mon_flesh_angel",
+    "type": "MONSTER",
+    "name": "summoned flesh angel",
+    "death_function": [ "MELT" ],
+    "death_drops": {  },
+    "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
+    "delete": { "flags": [ "REVIVES" ] }
+  },
+  {
+    "id": "mon_hunting_horror_summoned",
+    "copy-from": "mon_hunting_horror",
+    "type": "MONSTER",
+    "name": "summoned hunting horror",
+    "death_drops": {  },
+    "delete": { "flags": [ "SUNDEATH" ] }
+  },
+  {
+    "id": "mon_mi_go_summoned",
+    "copy-from": "mon_mi_go",
+    "type": "MONSTER",
+    "name": "summoned mi-go",
+    "death_function": [ "MELT" ],
+    "special_attacks": [
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }
+    ],
+    "death_drops": {  },
+    "delete": { "flags": [ "BASHES" ] }
+  },
+  {
+    "id": "mon_flying_polyp_summoned",
+    "copy-from": "mon_flying_polyp",
+    "type": "MONSTER",
+    "name": "summoned flying polyp",
+    "death_drops": {  },
+    "special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 20,
+        "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ]
+      }
+    ],
+    "delete": { "flags": [ "BASHES" ] }
+  },
+  {
+    "id": "mon_shoggoth_summoned",
+    "copy-from": "mon_shoggoth",
+    "type": "MONSTER",
+    "name": "summoned shoggoth",
+    "death_drops": {  },
+    "special_attacks": [ [ "TENTACLE", 40 ] ],
+    "delete": { "flags": [ "ABSORBS_SPLITS" ] }
   }
 ]
