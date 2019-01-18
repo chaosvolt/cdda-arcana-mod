@@ -735,12 +735,30 @@
   {
     "type": "mutation",
     "id": "SPELL_LOCKPICK",
+    "name": "Arcana: Open Lock",
+    "points": 4,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can open locked doors.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "changes_to": [ "SPELL_LOCKPICK2" ],
+    "active": true,
+    "cost": 60,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_lockpick",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_LOCKPICK2",
     "name": "Blessing: Open Lock",
     "points": 4,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can open locked doors.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
+    "cancels": [ "SPELL_LOCKPICK" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
     "cost": 40,
@@ -789,12 +807,30 @@
   {
     "type": "mutation",
     "id": "SPELL_POISONARMOR",
+    "name": "Arcana: Poison Armor",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy that can grant temporary protection from toxic gas and other poisons.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "changes_to": [ "SPELL_POISONARMOR2" ],
+    "active": true,
+    "cost": 45,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_poisonarmor",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_POISONARMOR2",
     "name": "Blessing: Poison Armor",
     "points": 3,
     "description": "Powers from beyond have granted you the power to conjure a mote of energy that can grant temporary protection from toxic gas and other poisons.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_CLOUD" ],
+    "cancels": [ "SPELL_POISONARMOR" ],
     "category": [ "VEIL" ],
     "active": true,
     "cost": 30,
