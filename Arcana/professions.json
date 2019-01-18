@@ -85,7 +85,7 @@
     "name": "Blood Mage",
     "description": "You have beheld true power, as a member of the Sanguine Order.  Power from within, as well as power from beyond.  But at what cost?",
     "points": 4,
-    "skills": [ { "level": 3, "name": "magic" }, { "level": 1, "name": "firstaid" }, { "level": 1, "name": "stabbing" } ],
+    "skills": [ { "level": 3, "name": "magic" }, { "level": 1, "name": "firstaid" }, { "level": 1, "name": "gun" }, { "level": 1, "name": "melee" }, { "level": 1, "name": "stabbing" }, { "level": 1, "name": "dodge" } ],
     "items": {
       "both": {
         "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "waterskin", "matches", "bowl_clay", "book_bloodmagic" ],
@@ -108,7 +108,7 @@
     "name": "Mage Hunter",
     "description": "You were a member of The Cleansing Flame, a religious order.  The end of all has come.  The barrier between worlds has been shattered.  The dead hunger for the living.  But you will not give in.",
     "points": 4,
-    "skills": [ { "level": 4, "name": "magic" }, { "level": 2, "name": "melee" }, { "level": 1, "name": "bashing" } ],
+    "skills": [ { "level": 4, "name": "magic" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "bashing" }, { "level": 1, "name": "dodge" } ],
     "items": {
       "both": {
         "items": [
@@ -143,7 +143,7 @@
     "name": "Dark Priest",
     "description": "He From Beyond The Veil calls to you, to your brothers and sisters.  And the faithful, those who remain at least, shall bring him into this world.",
     "points": 6,
-    "skills": [ { "level": 5, "name": "magic" } ],
+    "skills": [ { "level": 5, "name": "magic" }, { "level": 2, "name": "gun" }, { "level": 2, "name": "dodge" } ],
     "items": {
       "both": {
         "items": [ "loincloth", "tunic", "socks", "bastsandals", "mbag", "waterskin", "matches", "offering_chalice", "book_sacrifice" ],
@@ -165,7 +165,7 @@
     "name": "Summoner",
     "description": "You were a student of a master arcanist.  Not taught to merely take advantage of power from beyond, no.  Taught to draw it forth in living form, bind it to your will.  If only your master hadn't summoned more power than could be controlled.",
     "points": 6,
-    "skills": [ { "level": 6, "name": "magic" }, { "level": 5, "name": "fabrication" } ],
+    "skills": [ { "level": 6, "name": "magic" }, { "level": 5, "name": "fabrication" }, { "level": 2, "name": "dodge" } ],
     "items": {
       "both": {
         "items": [
@@ -204,11 +204,11 @@
     "skills": [
       { "level": 3, "name": "magic" },
       { "level": 2, "name": "melee" },
-      { "level": 1, "name": "cutting" },
-      { "level": 2, "name": "gun" },
-      { "level": 1, "name": "throw" },
-      { "level": 1, "name": "pistol" },
-      { "level": 1, "name": "dodge" }
+      { "level": 2, "name": "throw" },
+      { "level": 2, "name": "cutting" },
+      { "level": 2, "name": "dodge" },
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "pistol" }
     ],
     "items": {
       "both": {
@@ -233,15 +233,16 @@
     "ident": "arcanist_purifier",
     "name": "Arcane Purifier",
     "description": "You have embraced modern technology and mystical power alike, in your pursuit of knowledge and a way to prevent the cataclysm. Once of the Cleansing Flame, whether you went rogue or still honor their ideals, that no longer matters anymore.",
-    "points": 8,
+    "points": 7,
     "CBMs": [ "bio_lockpick", "bio_fingerhack", "bio_batteries", "bio_power_storage" ],
     "skills": [
       { "level": 4, "name": "magic" },
-      { "level": 1, "name": "computer" },
-      { "level": 2, "name": "melee" },
-      { "level": 1, "name": "cutting" },
       { "level": 2, "name": "gun" },
-      { "level": 1, "name": "pistol" }
+      { "level": 2, "name": "pistol" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "cutting" },
+      { "level": 1, "name": "computer" },
+      { "level": 1, "name": "electronics" }
     ],
     "items": {
       "both": {
