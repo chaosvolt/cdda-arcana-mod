@@ -19,5 +19,12 @@
     "type": "martial_art",
     "name": "Eskrima",
     "extend": { "weapons": ["graboid_fang", "dermatik_sting", "monster_fang", "blood_athame", "moonstone_fang", "staff_druidic"] }
+  },
+  {
+    "id": "style_sojutsu",
+    "copy-from": "style_sojutsu",
+    "type": "martial_art",
+    "name": "Sōjutsu",
+    "extend": { "weapons": ["spear_pestilence"] }
   }
 ]

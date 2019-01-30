@@ -62,9 +62,7 @@
     "type": "item_group",
     "subtype": "collection",
     "ammo": 100,
-    "entries": [
-      { "item": "thunder_sigil" }
-    ]
+    "entries": [ { "item": "thunder_sigil" } ]
   },
   {
     "id": "NC_HERMIT_carry",
@@ -80,34 +78,19 @@
     ]
   },
   {
-    "id": "NC_ARSONIST_bashing",
+    "id": "NC_ARSONIST_random",
     "type": "item_group",
-    "items": [ [ "hexenhammer", 10 ] ]
+    "items": [ [ "bloodscourge", 1 ] ]
   },
   {
-    "id": "NC_ARSONIST_cutting",
+    "id": "NC_ARSONIST_misc",
     "type": "item_group",
-    "items": [ [ "bloodaxe", 10 ], [ "sun_sword", 5 ] ]
-  },
-  {
-    "id": "NC_ARSONIST_stabbing",
-    "type": "item_group",
-    "items": [ [ "spear_pestilence", 5 ] ]
-  },
-  {
-    "id": "NC_ARSONIST_launcher",
-    "type": "item_group",
-    "items": [ [ "bloodscourge", 5 ] ]
+    "items": [ [ "bloodaxe", 1 ] ]
   },
   {
     "id": "NC_BOUNTY_HUNTER_coat",
     "type": "item_group",
-    "items": [ [ "gilded_aegis", 5 ] ]
-  },
-  {
-    "id": "NC_BOUNTY_HUNTER_masks",
-    "type": "item_group",
-    "items": [ [ "somen_clairvoyance", 5 ] ]
+    "items": [ [ "gilded_aegis", 1 ] ]
   },
   {
     "id": "NC_DOCTOR_misc",
@@ -122,7 +105,19 @@
   {
     "id": "NC_HUNTER_archery",
     "type": "item_group",
-    "items": [ [ "ethereal_crossbow", 5 ] ]
+    "items": [ [ "ethereal_crossbow", 1 ] ]
+  },
+  {
+    "id": "NC_HUNTER_misc",
+    "type": "item_group",
+    "items": [
+      [ "graboid_fang", 1 ],
+      [ "bone_twisted", 1 ],
+      [ "gracken_knuckles", 1 ],
+      [ "wyrmskin_piece", 1 ],
+      [ "monster_fang", 1 ],
+      [ "iridescent_plate", 1 ]
+    ]
   },
   {
     "id": "NC_JUNK_SHOPKEEP_misc",
@@ -130,48 +125,31 @@
     "items": [ [ "scroll_blank", 10 ], [ "silver_glyph", 5 ] ]
   },
   {
-    "id": "NC_NINJA_gloves",
-    "type": "item_group",
-    "items": [ [ "gauntlets_necro", 5 ] ]
-  },
-  {
-    "id": "NC_NINJA_masks",
-    "type": "item_group",
-    "items": [ [ "somen_clairvoyance", 5 ] ]
-  },
-  {
-    "id": "NC_NINJA_shirt_male",
-    "type": "item_group",
-    "items": [ [ "robe_shadow", 5 ] ]
-  },
-  {
-    "id": "NC_NINJA_shirt_female",
-    "type": "item_group",
-    "items": [ [ "robe_shadow", 5 ] ]
-  },
-  {
     "id": "NC_SCAVENGER_gloves",
     "type": "item_group",
-    "items": [ [ "gauntlets_necro", 5 ] ]
+    "items": [ [ "gauntlets_necro", 1 ] ]
   },
   {
     "id": "NC_SCAVENGER_archery",
     "type": "item_group",
-    "items": [ [ "ethereal_crossbow", 5 ] ]
+    "items": [ [ "ethereal_crossbow", 1 ] ]
   },
   {
-    "id": "NC_THUG_gloves",
+    "id": "NC_SCAVENGER_misc",
     "type": "item_group",
-    "items": [ [ "gauntlets_necro", 5 ] ]
+    "items": [
+      [ "numbness_potion", 1 ],
+      [ "healing_potion", 1 ],
+      [ "scroll_sun", 1 ],
+      [ "scroll_artiface", 1 ],
+      [ "totem_confusion", 1 ],
+      [ "totem_insight", 1 ],
+      [ "totem_plants", 1 ]
+    ]
   },
   {
-    "id": "NC_THUG_coat",
+    "id": "npc_extra",
     "type": "item_group",
-    "items": [ [ "robe_shadow", 2 ] ]
-  },
-  {
-    "id": "NC_THUG_bashing",
-    "type": "item_group",
-    "items": [ [ "hexenhammer", 2 ], [ "bloodscourge", 5 ] ]
+    "items": [ [ "triffid_garland", 1 ], [ "amulet_exotic", 1 ], [ "brooch_iridescent", 1 ] ]
   }
 ]

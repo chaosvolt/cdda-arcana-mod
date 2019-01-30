@@ -1177,5 +1177,96 @@
       [ [ "silver_glyph", 1 ] ],
       [ [ "graboid_fang", 1 ], [ "monster_fang", 3 ], [ "wyrmskin_piece", 1 ], [ "iridescent_plate", 3 ] ]
     ]
+  },
+  {
+    "result": "index_potioncraft",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": 30000,
+    "book_learn": [ [ "book_potioncraft", 3 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_scrollcraft",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 50000,
+    "book_learn": [ [ "book_scrollcraft", 5 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_bloodmagic",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": 60000,
+    "book_learn": [ [ "book_bloodmagic", 6 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_hexenhammer",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": 70000,
+    "book_learn": [ [ "book_hexenhammer", 7 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_sacrifice",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": 80000,
+    "book_learn": [ [ "book_sacrifice", 8 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_syncretism",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 90000,
+    "book_learn": [ [ "book_syncretism", 9 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_syncretism", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_summoning",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 10,
+    "time": 100000,
+    "book_learn": [ [ "book_summoning", 10 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
   }
 ]

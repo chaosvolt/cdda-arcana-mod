@@ -207,15 +207,16 @@
   {
     "type": "mutation",
     "id": "SPELL_ACID2",
-    "name": "Blessing: Acid Spray",
+    "name": "Chaos Gift: Acid Spray",
     "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can create sprays of acid.  Activate to focus your power, draining fatigue.",
+    "description": "Unknown forces have granted you the power to conjure a mote of energy, that can create sprays of acid.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "category": [ "VEIL" ],
+    "category": [ "CHIMERA" ],
     "cancels" : [ "SPELL_ACID" ],
+    "threshreq" : ["THRESH_CHIMERA"],
     "active": true,
-    "cost": 30,
+    "cost": 36,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_acidspray",
@@ -303,9 +304,29 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy that can protect against parasites and the Mycus.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
+    "changes_to": [ "SPELL_CLARITY2" ],
     "category": [ "CLARITY", "DRAGONBLOOD" ],
     "active": true,
     "cost": 60,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_clarity",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CLARITY2",
+    "name": "Raptor Gift: Clarity of Blood",
+    "points": 4,
+    "description": "Unknown forces have granted you the power to conjure a mote of energy that can protect against parasites and the Mycus.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "RAPTOR" ],
+    "cancels": [ "SPELL_CLARITY" ],
+    "threshreq": [ "THRESH_RAPTOR" ],
+    "active": true,
+    "cost": 48,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_clarity",
@@ -561,8 +582,28 @@
     "valid": false,
     "purifiable": false,
     "category": [ "HEAL" ],
+    "changes_to": [ "SPELL_HEAL2" ],
     "active": true,
     "cost": 75,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_heal",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_HEAL2",
+    "name": "Prime Gift: Healing",
+    "points": 5,
+    "description": "Unknown forces have granted you the power to conjure a mote of energy, that can heal the body.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "ALPHA" ],
+    "cancels": [ "SPELL_HEAL" ],
+    "threshreq": [ "THRESH_ALPHA" ],
+    "active": true,
+    "cost": 60,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_heal",
@@ -777,8 +818,28 @@
     "valid": false,
     "purifiable": false,
     "category": [ "OVERGROWTH" ],
+    "changes_to": [ "SPELL_PLANTS2" ],
     "active": true,
     "cost": 45,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_plants",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_PLANTS2",
+    "name": "Fey Gift: Overgrowth",
+    "points": 3,
+    "description": "Unknown forces have granted you the power to conjure a mote of energy, that can cause plants to spring up from nothingness.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "ELFA" ],
+    "cancels": [ "SPELL_PLANTS" ],
+    "threshreq": [ "THRESH_ELFA" ],
+    "active": true,
+    "cost": 36,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_plants",

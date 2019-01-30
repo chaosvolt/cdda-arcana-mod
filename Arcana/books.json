@@ -267,5 +267,82 @@
       ],
       "message": "You add strange temples, ruined shrines, curious structures, impact sites, peculiar shrines, and strange groves to your map."
     }
+  },
+  {
+    "id": "index_potioncraft",
+    "copy-from": "arcana_note_base",
+    "sub": "book_potioncraft",
+    "type": "GENERIC",
+    "name": "alchemical reference notes",
+    "name_plural": "alchemical reference notes",
+    "weight": 60,
+    "volume": "100ml",
+    "description": "An assortment of neatly-folded papers filled with esoteric chemical formulae and historical footnotes, some of which seem to be excerpts from old texts in Greek, Latin, Arabic, and even Chinese.  It details the findings and practices of an experienced alchemist, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+  },
+  {
+    "id": "index_scrollcraft",
+    "copy-from": "arcana_note_base",
+    "sub": "book_scrollcraft",
+    "type": "GENERIC",
+    "name": "scribe's reference notes",
+    "name_plural": "scribe's reference notes",
+    "weight": 60,
+    "volume": "100ml",
+    "description": "A handful of rolled up papers, filled with quotations and crude sketches of strange religious scenery.  It details the studies of an experienced scribe well-versed in knowledge disguised as exotic religious poetry, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+  },
+  {
+    "id": "index_bloodmagic",
+    "copy-from": "arcana_note_base",
+    "sub": "book_bloodmagic",
+    "type": "GENERIC",
+    "name": "sanguinist's reference notes",
+    "name_plural": "sanguinist's reference notes",
+    "weight": 60,
+    "volume": "100ml",
+    "description": "A dog-eared, ragged collection of papers, filled with outlines of morbid rituals and macabre references on matters of blood.  It details the studies of an experienced blood mage, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+  },
+  {
+    "id": "index_hexenhammer",
+    "copy-from": "arcana_note_base",
+    "sub": "book_hexenhammer",
+    "type": "GENERIC",
+    "name": "Cleansing Flame reference notes",
+    "name_plural": "Cleansing Flame reference notes",
+    "weight": 60,
+    "volume": "100ml",
+    "description": "A carefully-gathered collection of papers outlining sacred rites and vital practices, mixing various religious practices attested to a order dedicated protecting humanity from dangerous magic.  It details the studies of an experienced mage hunter, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+  },
+  {
+    "id": "index_sacrifice",
+    "copy-from": "arcana_note_base",
+    "sub": "book_sacrifice",
+    "type": "GENERIC",
+    "name": "occult reference notes",
+    "name_plural": "occult reference notes",
+    "weight": 60,
+    "volume": "100ml",
+    "description": "A carefully-preserved assortment of papers, mostly filled with hymns to an otherworldly god and other unusual quotations.  On further reading it becomes evident that each song and passage holds ritual purpose, detailing the studies of an experienced scholar of this unearthly faith, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+  },
+  {
+    "id": "index_syncretism",
+    "copy-from": "arcana_note_base",
+    "sub": "book_syncretism",
+    "type": "GENERIC",
+    "name": "arcane reference notes",
+    "name_plural": "arcane reference notes",
+    "weight": 60,
+    "volume": "100ml",
+    "description": "A mish-mash of papers filled with all manner of strange rituals seemingly from various contradictory sources. Whoever wrote this collection was a student of a well-traveled arcanist, filling their own research with essential information and reminders for the presumably well-learned author's benefit."
+  },
+  {
+    "id": "index_summoning",
+    "copy-from": "arcana_note_base",
+    "sub": "book_summoning",
+    "type": "GENERIC",
+    "name": "summoner's reference notes",
+    "name_plural": "summoner's reference notes",
+    "weight": 60,
+    "volume": "100ml",
+    "description": "A neatly-ordered collection of papers, filled with strange symbols and rambling writing.  At several points the text is interrupted by detailed sketches of disturbing otherwordly horrors.  It details the findings of an experienced summoner, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
   }
 ]
