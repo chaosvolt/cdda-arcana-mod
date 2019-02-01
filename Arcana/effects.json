@@ -3,18 +3,20 @@
     "type": "effect_type",
     "id": "offering",
     "name": [ "Offering" ],
+    "resist_effect": "talisman_warding",
     "desc": [ "Something is sapping the life from your body." ],
     "miss_messages": [ [ "Your will to fight fades for a moment.", 2 ] ],
     "rating": "bad",
     "pain_sizing": true,
     "hurt_sizing": true,
     "main_parts_only": true,
-    "base_mods": { "pain_min": [ 5 ], "pain_chance": [ 1, 1 ], "hurt_min": [ 10 ], "hurt_max": [ 20 ], "hurt_chance": [ 1, 1 ] }
+    "base_mods": { "pain_min": [ 5, 4 ], "pain_chance": [ 1, 1 ], "hurt_min": [ 10, 8 ], "hurt_max": [ 20, 15 ], "hurt_chance": [ 1, 1 ] }
   },
   {
     "type": "effect_type",
     "id": "potion_numbness",
     "name": [ "Intense Numbness" ],
+    "resist_effect": "talisman_warding",
     "desc": [ "Your body feels incredibly numb and sluggish." ],
     "remove_message": "The numbness fades.",
     "//": "Only Mycus Adrenaline in this case can really shake off the sluggishness.",
@@ -24,12 +26,13 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": 10,
-    "base_mods": { "pkill_tick": [ 7 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15 ] }
+    "base_mods": { "pkill_tick": [ 7 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15, -10 ] }
   },
   {
     "type": "effect_type",
     "id": "potion_strength",
     "name": [ "Strengthed" ],
+    "resist_effect": "talisman_warding",
     "desc": [ "You feel mighty, like you could take on the world." ],
     "remove_message": "The unnatural strength leaves your body.",
     "decay_messages": [ [ "The strengening effect of your potion is starting to fade.", "bad" ] ],
@@ -52,6 +55,7 @@
     "id": "potion_speed",
     "name": [ "Speedy" ],
     "desc": [ "Your heart feels like it's beating dangerously fast, you can't even think about rest." ],
+    "resist_effect": "talisman_warding",
     "remove_message": "Your heartbeat slows back down to a normal pace.",
     "//": "Hinders relaxing, but paralysis and similar effects are too strong to prevent.",
     "removes_effects": [ "relax_gas", "lack_sleep", "sleep" ],
@@ -74,6 +78,7 @@
     "type": "effect_type",
     "id": "potion_healing",
     "name": [ "Elixir" ],
+    "resist_effect": "talisman_warding",
     "desc": [ "Not immortality, but it still feels nice." ],
     "remove_message": "The healing effect fades.",
     "removes_effects": [ "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
@@ -81,20 +86,21 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": 10,
-    "base_mods": { "pkill_tick": [ 3 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10 ] }
+    "base_mods": { "pkill_tick": [ 3 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10, -5 ] }
   },
   {
     "type": "effect_type",
     "id": "revenant_hunger",
     "name": [ "Revenant Hunger" ],
     "desc": [ "Immunity to food poisoning and parasites, increased hunger gain." ],
+    "resist_effect": "talisman_warding",
     "remove_message": "Your craving for rotten food subsides.",
     "blocks_effects": [ "poison", "badpoison", "foodpoison", "paralyzepoison", "bloodworms", "paincysts", "brainworms", "tapeworm" ],
     "decay_messages": [ [ "Your craving for rotten food is starting to wane.", "bad" ] ],
     "rating": "good",
     "max_intensity": 30,
     "int_dur_factor": 10,
-    "base_mods": { "hunger_min": [ 1 ], "hunger_change": [ 3 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 6 ] }
+    "base_mods": { "hunger_min": [ 1 ], "hunger_change": [ 3, 6 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 6, 12 ] }
   },
   {
     "type": "effect_type",
@@ -245,6 +251,17 @@
     "max_intensity": 100,
     "int_dur_factor": 10,
     "base_mods": { "per_mod": [ 8 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "talisman_warding",
+    "name": [ "Alchemical Ward" ],
+    "desc": [ "Temporary resistance to the side effects of certain potion effects." ],
+    "remove_message": "The taliman's effect fades.",
+    "decay_messages": [ [ "The water talisman's blessing is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 3,
+    "int_dur_factor": 10
   },
   {
     "type": "effect_type",
