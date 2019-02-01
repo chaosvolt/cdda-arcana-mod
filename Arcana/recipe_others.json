@@ -81,12 +81,67 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "essence_blood", 1 ], [ "veggy_wild", 10 ], [ "cattail_stalk", 30 ], [ "wild_herbs", 100 ] ]
+    ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "water_talisman",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "pine_bough", 1 ] ],
       [
-        [ "essence_blood", 1 ],
-        [ "essence_dull", 5 ],
-        [ "veggy_wild", 10 ],
-        [ "cattail_stalk", 30 ],
-        [ "wild_herbs", 100 ]
+        [ "essence_dull", 10 ],
+        [ "fighter_sting", 1 ],
+        [ "biollante_bud", 1 ],
+        [ "graboid_fang", 1 ],
+        [ "triffid_queen_flower", 1 ],
+        [ "dermatik_sting", 1 ],
+        [ "vortex_shard", 1 ],
+        [ "blob_gem", 1 ],
+        [ "monster_tear", 1 ],
+        [ "shadow_gem", 1 ],
+        [ "bone_twisted", 1 ],
+        [ "gracken_knuckles", 1 ],
+        [ "wyrmskin_piece", 1 ],
+        [ "monster_fang", 1 ],
+        [ "iridescent_plate", 1 ],
+        [ "engraved_stone", 1 ]
+      ]
+    ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "earth_talisman",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": 30000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "material_sand", 50 ], [ "clay_lump", 5 ], [ "rock", 5 ] ],
+      [ [ "ash", 25 ], [ "withered", 5 ] ],
+      [
+        [ "essence", 1 ],
+        [ "mycus_fruit", 5 ],
+        [ "slime_scrap", 50 ],
+        [ "bone_tainted", 50 ],
+        [ "veggy_tainted", 50 ],
+        [ "tallow_tainted", 25 ]
       ]
     ],
     "flags": [ "BLIND_HARD" ]

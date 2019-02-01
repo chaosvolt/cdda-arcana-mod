@@ -45,9 +45,87 @@
       "str_max": 210,
       "sound": "crash!",
       "sound_fail": "whump.",
-      "items": [
-        { "item": "candle", "count": [ 0, 1 ] }
-      ]
+      "items": [ { "item": "candle", "count": [ 0, 1 ] } ]
     }
+  },
+  {
+    "type": "furniture",
+    "id": "f_altar_arcana",
+    "name": "stone altar",
+    "symbol": "n",
+    "looks_like": "f_slab",
+    "description": "A strange structure of flowing, living stone molded into a broad altar, surface cracking and reforming periodically.  It offers modest space to burn offerings safely, or a flat surface sufficient for more morbid rituals.",
+    "color": "dark_gray",
+    "move_cost_mod": 2,
+    "required_str": -1,
+    "crafting_pseudo_item": "boulder_anvil",
+    "flags": [
+      "INDOORS",
+      "PLACE_ITEM",
+      "FIRE_CONTAINER",
+      "SUPPRESS_SMOKE",
+      "TRANSPARENT",
+      "MOUNTABLE",
+      "SHORT",
+      "MINEABLE",
+      "FLAT_SURF"
+    ],
+    "bash": { "str_min": 10, "str_max": 20, "sound": "smash!", "sound_fail": "thump." }
+  },
+  {
+    "type": "furniture",
+    "id": "f_pozdol_arcana",
+    "name": "forest floor",
+    "description": "A thin covering of twisted, warped, yet seemingly still-fresh leaf litter from some unknown forest floor, with tangled spikes of molded stone and branches overhead.  Better than sleeping on open ground under a bare sky, at least.",
+    "symbol": ",",
+    "looks_like": "t_moss",
+    "bgcolor": "green",
+    "comfort": 2,
+    "floor_bedding_warmth": 100,
+    "move_cost_mod": 0,
+    "required_str": -1,
+    "flags": [ "FLAMMABLE_HARD", "TRANSPARENT", "INDOORS", "NOCOLLIDE" ],
+    "bash": { "str_min": 5, "str_max": 30, "sound": "smash!", "sound_fail": "whump." }
+  },
+  {
+    "type": "furniture",
+    "id": "f_spires_arcana",
+    "name": "molded stone wall",
+    "symbol": "#",
+    "looks_like": "t_root_wall",
+    "description": "A wall made of interlocked spires of shifting stone, earth, and unearthly plant roots, molding and clinging to the otherwise untouched ground the structure grows from.  Every so often the flowing stone cracks and crumbles only to mend and resolidify itself.",
+    "color": "dark_gray",
+    "move_cost_mod": -1,
+    "required_str": -1,
+    "flags": [ "NOITEM" ],
+    "bash": { "str_min": 20, "str_max": 60, "sound": "crash!", "sound_fail": "thump!" }
+  },
+  {
+    "type": "furniture",
+    "id": "f_door_arcana_c",
+    "name": "woven gate",
+    "description": "A heavy curtain of strange vines, branches, and living stone.  It moves with surprising ease at your touch, flowing to weave its structure in and out of the surrounding mass of molded earth.",
+    "looks_like": "t_door_curtain_c",
+    "symbol": "+",
+    "color": "white",
+    "move_cost_mod": -1,
+    "required_str": -1,
+    "flags": [ "FLAMMABLE_HARD", "NOITEM" ],
+    "open": "f_door_arcana_o",
+    "bash": { "str_min": 4, "str_max": 40, "sound": "smash!", "sound_fail": "whump!" }
+  },
+  {
+    "type": "furniture",
+    "id": "f_door_arcana_o",
+    "name": "open woven gate",
+    "description": "A heavy curtain of strange vines, branches, and living stone.  It moves with surprising ease at your touch, flowing to weave its structure in and out of the surrounding mass of molded earth.  It is currently doing exactly that, giving the impression of an inviting, if unusual, doorway.",
+    "looks_like": "t_door_curtain_o",
+    "symbol": ".",
+    "color": "white",
+    "move_cost_mod": 0,
+    "required_str": -1,
+    "flags": [ "FLAMMABLE_HARD", "TRANSPARENT" ],
+    "close": "f_door_arcana_c",
+    "bash": { "str_min": 4, "str_max": 40, "sound": "smash!", "sound_fail": "whump!" }
   }
 ]
