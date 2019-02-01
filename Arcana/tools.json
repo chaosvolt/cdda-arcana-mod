@@ -179,7 +179,7 @@
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
-    "tid": "sun_sword_on",
+    "id": "sun_sword_on",
     "type": "TOOL",
     "copy-from": "sun_sword",
     "category": "weapons",
