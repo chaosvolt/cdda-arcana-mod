@@ -230,7 +230,8 @@
     "name": "recent anomaly",
     "sym": 46,
     "color": "magenta",
-    "see_cost": 2
+    "see_cost": 2,
+    "flags": [ "NO_ROTATE" ]
   },
   {
     "type": "overmap_terrain",
@@ -238,7 +239,8 @@
     "name": "recent anomaly",
     "sym": 46,
     "color": "magenta",
-    "see_cost": 2
+    "see_cost": 2,
+    "flags": [ "NO_ROTATE" ]
   },
   {
     "type": "overmap_terrain",
