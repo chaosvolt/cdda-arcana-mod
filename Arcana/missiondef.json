@@ -4,14 +4,12 @@
     "type": "mission_definition",
     "name": "Retrieve The Cursed Blade",
     "//": "Mission is supposed to completed via dialogue, not the normal route.",
-    "goal": "MGOAL_KILL_MONSTER_TYPE",
+    "goal": "MGOAL_NULL",
     "difficulty": 5,
     "value": 250000,
-    "monster_type": "debug_mon",
     "start": {
       "assign_mission_target": { "om_terrain": "impact_site", "om_special": "Floating Temple", "reveal_radius": 3, "search_range": 180, "z": 0 }
     },
-    "monster_kill_goal": 1,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_RESTORE_SWORD",
     "dialogue": {
@@ -31,11 +29,9 @@
     "type": "mission_definition",
     "name": "Restore The Ritual Blade",
     "//": "Mission is supposed to completed via dialogue, not the normal route.",
-    "goal": "MGOAL_KILL_MONSTER_TYPE",
+    "goal": "MGOAL_NULL",
     "difficulty": 5,
     "value": 250000,
-    "monster_type": "debug_mon",
-    "monster_kill_goal": 1,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_AWAKEN_POWER",
     "dialogue": {
@@ -55,10 +51,9 @@
     "type": "mission_definition",
     "name": "Earn The Favor From Beyond",
     "//": "Mission is supposed to completed via dialogue, not the normal route.",
-    "goal": "MGOAL_KILL_MONSTER_TYPE",
+    "goal": "MGOAL_NULL",
     "difficulty": 5,
     "value": 250000,
-    "monster_type": "debug_mon",
     "start": {
       "assign_mission_target": {
         "om_terrain": "new_anomaly_1",
@@ -69,7 +64,6 @@
         "z": 0
       }
     },
-    "monster_kill_goal": 1,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_BECOME_PARAGON",
     "dialogue": {
@@ -89,10 +83,9 @@
     "type": "mission_definition",
     "name": "Become A Paragon Of The Veil",
     "//": "Mission is supposed to completed via dialogue, not the normal route.",
-    "goal": "MGOAL_KILL_MONSTER_TYPE",
+    "goal": "MGOAL_NULL",
     "difficulty": 5,
     "value": 250000,
-    "monster_type": "debug_mon",
     "start": {
       "assign_mission_target": {
         "om_terrain": "new_anomaly_2",
@@ -103,7 +96,6 @@
         "z": 0
       }
     },
-    "monster_kill_goal": 1,
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "Perhaps we shall at last atone...",

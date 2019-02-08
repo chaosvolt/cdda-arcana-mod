@@ -1,6 +1,66 @@
 [
   {
     "type": "mutation",
+    "id": "hermit_earned_trust_1",
+    "name": "Hermit Trust 1",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_earned_trust_2",
+    "name": "Hermit Trust 2",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_stage_1",
+    "name": "Hermit Quest Stage 1",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_stage_2",
+    "name": "Hermit Quest Stage 2",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_stage_3",
+    "name": "Hermit Quest Stage 3",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_stage_4",
+    "name": "Hermit Quest Stage 4",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
     "id": "THRESH_ACIDSPRAY",
     "name": "Spellcraft Threshold",
     "points": 0,
