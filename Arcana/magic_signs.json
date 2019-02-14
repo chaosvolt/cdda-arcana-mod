@@ -407,7 +407,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "Your feel an otherworldly sensation course through your veins.",
-      "effects": [ { "id": "blood_clariity", "duration": 250 } ]
+      "effects": [ { "id": "blood_clarity", "duration": 250 } ]
     }
   },
   {
