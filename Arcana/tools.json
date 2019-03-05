@@ -1522,7 +1522,7 @@
         "type": "transform"
       }
     ],
-    "relative": { "weight": -318, "price": 50000 },
+    "relative": { "cutting": -5, "weight": -318, "price": 50000 },
     "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] },
     "artifact_data": { "charge_type": "ARTC_PORTAL" }
@@ -1593,6 +1593,7 @@
         "type": "transform"
       }
     ],
+    "relative": { "to_hit": -1, "cutting": -5 },
     "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] }
   },
@@ -1615,7 +1616,7 @@
     "price": 160000,
     "to_hit": 1,
     "bashing": 17,
-    "cutting": 50,
+    "cutting": 40,
     "material": [ "hardsteel", "essencemat" ],
     "symbol": "/",
     "looks_like": "stormbringer",
