@@ -115,7 +115,7 @@
       },
       {
         "switch": true,
-        "text": "You mentioned more to talk about, and another mission?",
+        "text": "You mentioned more to talk about, along with this mission?",
         "topic": "TALK_HERMIT_DISCUSS_3",
         "condition": { "npc_has_trait": "hermit_stage_3" }
       },
@@ -127,7 +127,7 @@
       },
       {
         "switch": true,
-        "text": "You mentioned you had answers first, then another task?",
+        "text": "You mentioned you had answers to go with this task?",
         "topic": "TALK_HERMIT_DISCUSS_1",
         "condition": { "npc_has_trait": "hermit_stage_1" }
       },
@@ -228,7 +228,13 @@
       { "text": "Do you know what happened to the other six?", "topic": "TALK_HERMIT_DISCUSS_1_SIX" },
       { "text": "What happened to it?", "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED" },
       { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
-      { "text": "What should we do now?", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "That's all for now.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      { "switch": true, "default": true, "text": "What should we do now?", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
@@ -239,7 +245,13 @@
       { "text": "What happened to the other six", "topic": "TALK_HERMIT_DISCUSS_1_SIX" },
       { "text": "What happened to this one?", "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED" },
       { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
-      { "text": "I see.  So what now?", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "I see.  That's all for now.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      { "switch": true, "default": true, "text": "I see.  So what now?", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
@@ -249,7 +261,13 @@
     "responses": [
       { "text": "What happened to this one?", "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED" },
       { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
-      { "text": "I see.  So what now?", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "I see.  That's all for now.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      { "switch": true, "default": true, "text": "I see.  So what now?", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
@@ -275,21 +293,30 @@
         "topic": "TALK_HERMIT_DISCUSS_1_FLAME"
       },
       { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
-      { "text": "What do we do, then?", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "That's all I know to know for now.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      { "switch": true, "default": true, "text": "What do we do, then?", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_1_SANGUINE_1",
     "dynamic_line": "Thank you.  You have a duty, that you have accepted by retrieving this relic.  Together we shall correct the mistakes of both our orders.",
-    "responses": [ { "text": "What do we do then?", "topic": "TALK_MISSION_LIST" } ]
+    "responses": [
+      { "switch": true, "text": "Perhaps we shall.", "topic": "TALK_HERMIT", "condition": "has_no_available_mission" },
+      { "switch": true, "default": true, "text": "What do we do then?", "topic": "TALK_MISSION_LIST" }
+    ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_1_SANGUINE_2",
     "dynamic_line": "Hmmph.  You have your own responsibilities.  You must be better than they were.",
     "responses": [
-      { "text": "What can be done then?", "topic": "TALK_MISSION_LIST" },
+      { "text": "What can be done then?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_no_available_mission" } },
       { "text": "We shall see.", "topic": "TALK_HERMIT" }
     ]
   },
@@ -298,7 +325,7 @@
     "id": "TALK_HERMIT_DISCUSS_1_FLAME",
     "dynamic_line": "This is true.  But do not let yourself be blinded by hatred.  I had known many of them, and a few sought power for less destructive reasons.  If any of them are left, they must be guided into righting the wrongs their fellows have committed.",
     "responses": [
-      { "text": "What can be done then?", "topic": "TALK_MISSION_LIST" },
+      { "text": "What can be done then?", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_no_available_mission" } },
       { "text": "We shall see.", "topic": "TALK_HERMIT" }
     ]
   },
@@ -319,11 +346,17 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_2",
-    "dynamic_line": "That is correct.  Seeing it now, you have done a lot to restore the relic.  But I fear the damage may be permanent.  Regardless, it can still serve its purpose.",
+    "dynamic_line": "Seeing it now, you have done a lot to restore the relic.  But I fear the damage may be permanent.  Regardless, it can still serve its purpose.",
     "responses": [
       { "text": "What damage remains?", "topic": "TALK_HERMIT_DISCUSS_2_DAMAGE" },
       { "text": "What is the sword's purpose?", "topic": "TALK_HERMIT_DISCUSS_2_PURPOSE" },
-      { "text": "Tell me what I must do.", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "That's enough information for now.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      { "switch": true, "default": true, "text": "Tell me what I must do.", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
@@ -332,7 +365,13 @@
     "dynamic_line": "In its original state, it could manipulate and control the instabilities that now linger in this realm, not just seal them.  There were many rituals this could be used, but even if this was an option, they require years of training to practice safely.  We shall have to make do with what remains of the purpose it can serve.",
     "responses": [
       { "text": "And what is the sword's purpose?", "topic": "TALK_HERMIT_DISCUSS_2_PURPOSE" },
-      { "text": "What shall I do, then?", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "That's all I need for now, then.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      { "switch": true, "default": true, "text": "What shall I do, then?", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
@@ -345,19 +384,37 @@
         "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
         "topic": "TALK_HERMIT_DISCUSS_2_FLAME"
       },
-      { "text": "Very well then.  Tell me what I am to do.", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "Very well.  That's enough questions for now.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "Very well then.  Tell me what I am to do.",
+        "topic": "TALK_MISSION_LIST"
+      }
     ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_2_FLAME",
     "dynamic_line": "Our duties have some overlap and offer us the means to work together, but they are not the same in all respects.  As I said, to reverse what has happened may never truly be possible.  You are free to seek that if you desire, but fulfilling the sword's purpose will serve either goal.",
-    "responses": [ { "text": "If you insist.  What am I to do?", "topic": "TALK_MISSION_LIST" } ]
+    "responses": [
+      {
+        "text": "If you insist.  What am I to do?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "not": "has_no_available_mission" }
+      },
+      { "text": "We shall see.", "topic": "TALK_HERMIT" }
+    ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3",
-    "dynamic_line": "Indeed.  Hopefully you have seen for yourself what this relic can do, even in the poor state it's in.  With it, another can at least continue to fulfill our oath.  To do all we can to ensure this world is not cast into the abyss, and others with it.  If you believe yourself ready, I have one final thing to ask of you.",
+    "dynamic_line": "Indeed.  Hopefully you have seen for yourself what this relic can do, even in the poor state it's in.  With it, another can at least continue to fulfill our oath.  To do all we can to ensure this world is not cast into the abyss, and others with it.  If you believe yourself ready...",
     "responses": [
       {
         "text": "Our oath?",
@@ -366,7 +423,13 @@
       },
       { "text": "Why another?  Why can't you do this?", "topic": "TALK_HERMIT_DISCUSS_3_ANOTHER" },
       { "text": "Abyss?", "topic": "TALK_HERMIT_DISCUSS_3_ABYSS" },
-      { "text": "I am ready.", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "I've no further questions for now.  We'll see what I can do.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      { "switch": true, "default": true, "text": "I am ready.", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
@@ -376,7 +439,13 @@
     "responses": [
       { "text": "Why can't you do this?", "topic": "TALK_HERMIT_DISCUSS_3_ANOTHER" },
       { "text": "And what did you say of the abyss?", "topic": "TALK_HERMIT_DISCUSS_3_ABYSS" },
-      { "text": "I am ready.", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "That should be all the answers I need for now.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      { "switch": true, "default": true, "text": "I am ready.", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
@@ -384,11 +453,14 @@
     "id": "TALK_HERMIT_DISCUSS_3_ANOTHER",
     "dynamic_line": "I'm well past my prime.  Already you've proven yourself capable and worthy of His favor.  Better that I do what I can to guide you down the right path.",
     "responses": [
+      { "text": "And what did you say of the abyss?", "topic": "TALK_HERMIT_DISCUSS_3_ABYSS" },
       {
-        "text": "And what did you say of the abyss?",
-        "topic": "TALK_HERMIT_DISCUSS_3_ABYSS"
+        "switch": true,
+        "text": "Alright.  That is all for now.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
       },
-      { "text": "Alright.  I'm ready.", "topic": "TALK_MISSION_LIST" }
+      { "switch": true, "default": true, "text": "Alright.  I am ready.", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
@@ -405,20 +477,32 @@
         "topic": "TALK_HERMIT_DISCUSS_3_CARE",
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE" ] }
       },
-      { "text": "I see.  I am ready.", "topic": "TALK_MISSION_LIST" }
+      {
+        "switch": true,
+        "text": "I see.  That is all for now.",
+        "topic": "TALK_HERMIT",
+        "condition": "has_no_available_mission"
+      },
+      { "switch": true, "default": true, "text": "I see.  I am ready.", "topic": "TALK_MISSION_LIST" }
     ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3_MOTIVE",
     "dynamic_line": "Perhaps.  It is hard to be certain of gods, earthly or otherworldly.  No doubt other powerful beings from Beyond have no such concern, but is it because they believe there will be no such consequences, or are they ignorant of them?  Or worse, eager to see what havoc may afflict other planes of existence?  These are questions no mortal mind can answer with certainty, only that at least one of these powers has an interest in deeds that benefit us, no matter His true intent.",
-    "responses": [ { "text": "Alright... I am ready.", "topic": "TALK_MISSION_LIST" } ]
+    "responses": [
+      { "switch": true, "text": "Alright...", "topic": "TALK_HERMIT", "condition": "has_no_available_mission" },
+      { "switch": true, "default": true, "text": "Alright... I am ready.", "topic": "TALK_MISSION_LIST" }
+    ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3_CARE",
     "dynamic_line": "I can understand why it would be hard to care.  Most of the intruders from Beyond seem as mere animals at best, and most of the others seem to desire nothing but misery and extinction for us all.  But among them all, some spirits, some gods, demons, whatever they may be, would see us survive and endure the dark days ahead of us.  Whether they act in self-interest or not, it's better to have a powerful ally than to cower in the shadows of unnameable horrors.",
-    "responses": [ { "text": "If you say so.  Guess I'm ready.", "topic": "TALK_MISSION_LIST" } ]
+    "responses": [
+      { "switch": true, "text": "If you say so.", "topic": "TALK_HERMIT", "condition": "has_no_available_mission" },
+      { "switch": true, "default": true, "text": "If you say so.  Guess I'm ready.", "topic": "TALK_MISSION_LIST" }
+    ]
   },
   {
     "type": "talk_topic",
@@ -630,10 +714,7 @@
         "opinion": { "trust": 1, "value": 1 },
         "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
         "topic": "TALK_HERMIT_BOOK_OUST",
-        "effect": [
-          { "npc_add_trait": "hermit_earned_trust_1" },
-          { "npc_add_trait": "hermit_earned_trust_2" }
-        ]
+        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ]
       },
       {
         "text": "I have seen what the arcane can lead to.  Great things, but also great danger.",
@@ -720,10 +801,7 @@
         "topic": "TALK_HERMIT_MASK_TRUST",
         "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
         "opinion": { "trust": 1, "value": 1 },
-        "effect": [
-          { "npc_add_trait": "hermit_earned_trust_1" },
-          { "npc_add_trait": "hermit_earned_trust_2" }
-        ]
+        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ]
       },
       {
         "text": "[ATTACK] My purpose is to finish what my brethren started, and destroy threats to humanity.  For your worship of a monster from Beyond, and for the wounds in The Veil your order has inflicted, I sentence you to death.",
@@ -736,10 +814,7 @@
         "default": true,
         "text": "I'm not one of the mage hunters actually, but I've learned the usefulness of these items.",
         "topic": "TALK_HERMIT_MASK_NOT",
-        "effect": [
-          { "npc_add_trait": "hermit_earned_trust_1" },
-          { "npc_add_trait": "hermit_earned_trust_2" }
-        ]
+        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ]
       }
     ]
   },
@@ -979,8 +1054,12 @@
     "id": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
     "dynamic_line": "That is a wise method of practicing caution.  For the benefit of those who will succeed us.  If you wish it then, I have more than trivial things to teach you.  We were allies on occasion, enemies on others.  Forgive the deception of this aging follower of He From Beyond The Veil, and allow us the chance to work together to correct the mistakes of old.",
     "responses": [
+      {
+        "text": "Very well then.  What I can do to help?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "not": "has_no_available_mission" }
+      },
       { "text": "So be it.  We need not be enemies.", "topic": "TALK_HERMIT" },
-      { "text": "Very well then.  What I can do to help?", "topic": "TALK_MISSION_LIST" },
       {
         "text": "[ATTACK] So that is your true nature.  I won't stoop to working with a profligate like you.",
         "topic": "TALK_DONE",
@@ -993,8 +1072,12 @@
     "id": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
     "dynamic_line": "Always the practical type.  But I can appreciate the drive to put knowledge to go use, rather than be squandered.  As you wish.  I can tell from your demeanor that you are of the Sanguine Order.  And I, of the Keepers of The Oath.  Perhaps He From Beyond The Veil will grant us both penance.",
     "responses": [
+      {
+        "text": "Then tell me what I must do.",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "not": "has_no_available_mission" }
+      },
       { "text": "We shall see.", "topic": "TALK_HERMIT" },
-      { "text": "Then tell me what I must do.", "topic": "TALK_MISSION_LIST" },
       {
         "text": "[ATTACK] I need no penance from your so-called god.  I would rather your knowledge die with you than deal with the likes of him.",
         "topic": "TALK_DONE",
@@ -1007,8 +1090,12 @@
     "id": "TALK_HERMIT_TEACH_ACCEPT_OATH",
     "dynamic_line": "...but be cautious in these acts.  Let every wound in The Veil be a necessary one, or else leave no mark.  We are kin, it seems.  He From Beyond The Veil has granted us a second chance, it seems.",
     "responses": [
-      { "text": "So it seems.", "topic": "TALK_HERMIT" },
-      { "text": "Tell me what I can do to serve Him.", "topic": "TALK_MISSION_LIST" }
+      {
+        "text": "Tell me what I can do to serve Him.",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "not": "has_no_available_mission" }
+      },
+      { "text": "So it seems.", "topic": "TALK_HERMIT" }
     ]
   },
   {
