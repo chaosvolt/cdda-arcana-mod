@@ -785,7 +785,7 @@
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "filament", 5 ], [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [ [ [ "triffid_queen_flower", 1 ] ], [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ] ]
+    "components": [ [ [ "triffid_queen_flower", 1 ] ] ]
   },
   {
     "result": "totem_confusion",
@@ -982,7 +982,7 @@
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
     "using": [ [ "filament", 5 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [ [ [ "biollante_bud", 1 ] ], [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ] ]
+    "components": [ [ [ "biollante_bud", 1 ] ] ]
   },
   {
     "result": "totem_acidspray",
