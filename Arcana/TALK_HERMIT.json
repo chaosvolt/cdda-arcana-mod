@@ -679,6 +679,16 @@
     },
     "responses": [
       {
+        "text": "What sorts of religous books?",
+        "topic": "TALK_HERMIT_BOOK_RELIGIOUS",
+        "condition": { "not": { "npc_has_trait": "hermit_earned_trust_1" } }
+      },
+      {
+        "text": "Still interesting, either way.",
+        "topic": "TALK_HERMIT_BOOK_INTERESTING",
+        "condition": { "not": { "npc_has_trait": "hermit_earned_trust_1" } }
+      },
+      {
         "text": "What about more unusual books?  Like that of the arcane?",
         "topic": "TALK_HERMIT_BOOK_QUERY",
         "condition": { "not": { "npc_has_trait": "hermit_earned_trust_1" } }
@@ -703,6 +713,182 @@
       },
       { "text": "Oh, okay.", "topic": "TALK_HERMIT" }
     ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_RELIGIOUS",
+    "dynamic_line": "Various faiths of the old world.  I've always been more a scholar then a theologian, but some insights can be glimpsed in such writings.  Of both the old gods, and the new gods.",
+    "responses": [
+      {
+        "switch": true,
+        "text": "An understanding we both share.  I was brought up among a mix of diverse teachings, united in our goal.",
+        "topic": "TALK_HERMIT_BOOK_RELIGIOUS_CLEANSINGFLAME",
+        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+      },
+      {
+        "switch": true,
+        "text": "I see.  I was taught not to trust any power beyond ones own means.",
+        "topic": "TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE",
+        "condition": { "u_has_trait": "PROF_SANGUINE" }
+      },
+      {
+        "switch": true,
+        "text": "Understandable.  I learned the ways of one of said new gods.",
+        "topic": "TALK_HERMIT_BOOK_RELIGIOUS_CHALICE",
+        "condition": { "u_has_trait": "PROF_CHALICE" }
+      },
+      { "switch": true, "default": true, "text": "New gods?", "topic": "TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS" },
+      { "text": "Huh.  I see.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_RELGIOUS_CLEANSINGFLAME",
+    "dynamic_line": "A familiar concept.  For what purpose, I wonder...",
+    "responses": [
+      {
+        "text": "To mend the growing wounds in The Veil.",
+        "opinion": { "value": 1 },
+        "topic": "TALK_HERMIT_BOOK_RELIGIOUS_HEALER"
+      },
+      {
+        "text": "To protect humanity, so long as the Sun shines upon the Earth.",
+        "topic": "TALK_HERMIT_BOOK_RELIGIOUS_PROTECTOR"
+      },
+      {
+        "text": "To destroy dangerous magic, and dangerous users of it.",
+        "opinion": { "value": -1 },
+        "topic": "TALK_HERMIT_BOOK_RELIGIOUS_HUNTER"
+      },
+      { "text": "It's nothing.  Never mind.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_RELIGIOUS_HEALER",
+    "dynamic_line": "A worthy cause.  We share a common goal, Hunter.  That is what you are, correct?  I may have a task to offer you then, that suits both of our goals.",
+    "responses": [
+      {
+        "text": "Very well then.  We shall see...",
+        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "topic": "TALK_HERMIT"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_RELIGIOUS_PROTECTOR",
+    "dynamic_line": "So I see, Hunter.  I am familiar with your tenets, even as a follower of He From Beyond The Veil.  You knew all along, I bet.  We need not be enemies.  In fact, if you so choose, I would be willing to ask your assistance in a task of great import.",
+    "responses": [
+      {
+        "text": "We'll see what comes of this, then.",
+        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "topic": "TALK_HERMIT"
+      },
+      {
+        "text": "[ATTACK] I cannot accept this.  We may have been allies on accasion, but we were enemies as well.  This time, I will not allow you to bring any further disruption to this world.",
+        "topic": "TALK_DONE",
+        "effect": "insult_combat"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_RELIGIOUS_HUNTER",
+    "dynamic_line": "Hmmph.  Still exterminating that which you do not understand.  I know of your kind, Hunter.  Though I have long-abandoned my study of the arcane, I still remember all the damage your order did.",
+    "responses": [
+      {
+        "text": "And this is not the time for more bloodshed.  You aren't some common arcanist, that much is clear.",
+        "topic": "TALK_HERMIT_BOOK_HUNTER_PEACE"
+      },
+      {
+        "text": "We were founded in defense against the Sanguine Order.  What damage we have caused, a bunch of murderous, cannibalistic madmen have done infinitely worse.",
+        "topic": "TALK_HERMIT_BOOK_HUNTER_EXCUSES"
+      },
+      {
+        "text": "[ATTACK] I understand perfectly well.  I can see through your deceptions, and see that your \"long-abandoned\" studies are still ongoing.  I won't allow you any further chance to deceive me.",
+        "topic": "TALK_DONE",
+        "effect": "insult_combat"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_HUNTER_PEACE",
+    "dynamic_line": "I see.  I apologize then.  All I have seen, it's hard not to be wary.  Well young one, if you will tolerate an old Keeper and his ramblings, perhaps you can help with something.",
+    "responses": [
+      {
+        "text": "We shall see.",
+        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "topic": "TALK_HERMIT"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_HUNTER_EXCUSE",
+    "dynamic_line": "I have little love left for the Sanguine Order either, but such excuses do not justify all that your brethren have done.  If you seek to keep dangerous magic out of the wrong hands, I can help you with such a thing, but you won't find what you seek through senseless violence.",
+    "responses": [
+      {
+        "text": "If you insist.  Tell me what you have to offer, and we'll see where to go from there.",
+        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "topic": "TALK_HERMIT"
+      },
+      {
+        "text": "[ATTACK] I can figure it out myself.  I will not trust you to lead me further astray, Keeper.",
+        "topic": "TALK_DONE",
+        "effect": "insult_combat"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE",
+    "dynamic_line": "Hmm.  The nature of a blood mage, I suspect.  Sounds about right.  Even if you will not serve He From Beyond The Veil, there are insights to find your own use for.  And if you accept it, I have a task that will benefit us both.",
+    "responses": [
+      {
+        "text": "We'll see.",
+        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "topic": "TALK_HERMIT"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_RELIGIOUS_CHALICE",
+    "dynamic_line": "I see.  I can tell in your eyes young one, and sense it in my heart.  Another of our faithful.  If this is true, then you understand our shared mission.  I am sorry for deceiving you, but one can never be too cautious these days.  Come, we have much to discuss.",
+    "responses": [
+      {
+        "text": "Very well then.",
+        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "topic": "TALK_HERMIT"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS",
+    "dynamic_line": "Esoteric studies and such, much of it the ramblings of madmen in a world gone mad.  Every so often some glimmer of insight shines through however, and it is at least interesting to study.",
+    "responses": [
+      {
+        "text": "Perhaps you could teach me some of that insight?",
+        "effect": { "npc_add_trait": "hermit_earned_trust_1" },
+        "topic": "TALK_HERMIT_NEWGODS_INSIGHT"
+      },
+      { "text": "I see.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_NEWGODS_INSIGHT",
+    "dynamic_line": "We shall see, another time perhaps.  I have learned scattered handfuls of strange things, and maybe in time it will prove useful to another.",
+    "responses": [ { "text": "...", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_BOOK_INTERESTING",
+    "dynamic_line": "I'm glad to hear that there is still value in books, even in these dark times.  You may borrow from the shelves as you please, what little I have accumulated.",
+    "responses": [ { "text": "Thank you.", "topic": "TALK_HERMIT" } ]
   },
   {
     "type": "talk_topic",
