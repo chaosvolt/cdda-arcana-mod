@@ -465,10 +465,9 @@
     "components": [
       [ [ "silver_glyph", 1 ] ],
       [
-        [ "seed_mushroom", 6 ],
-        [ "seed_mushroom_magic", 6 ],
-        [ "seed_mushroom_poison", 6 ],
-        [ "seed_mushroom_morel", 6 ],
+        [ "seed_mushroom", 12 ],
+        [ "seed_mushroom_morel", 12 ],
+        [ "yeast", 24 ],
         [ "iridescent_plate", 1 ]
       ]
     ],
