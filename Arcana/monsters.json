@@ -423,7 +423,6 @@
     "description": "A massive animated conflagration, crackling like burning logs as it moves.",
     "default_faction": "nether",
     "species": [ "HORROR" ],
-    "diff": 50,
     "//": "Intentionally much lighter than expected.",
     "volume": "483750 ml",
     "weight": 40750,
@@ -643,6 +642,7 @@
     "copy-from": "mon_dark_wyrm",
     "type": "MONSTER",
     "name": "summoned dark wyrm",
+    "species": [ "NETHER" ],
     "special_attacks": [
       {
         "type": "bite",
@@ -652,6 +652,7 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
+    "extend": { "flags": [ "REVIVES" ] },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
   },
   {
@@ -659,6 +660,7 @@
     "copy-from": "mon_zombie_fiend",
     "type": "MONSTER",
     "name": "summoned fiend",
+    "species": [ "NETHER" ],
     "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
@@ -669,19 +671,22 @@
     "copy-from": "mon_jabberwock",
     "type": "MONSTER",
     "name": "summoned jabberwock",
+    "species": [ "NETHER" ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "delete": { "flags": [ "BASHES", "DESTROYS" ] }
+    "extend": { "flags": [ "REVIVES" ] },
+    "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
   },
   {
     "id": "mon_homunculus_summoned",
     "copy-from": "mon_homunculus",
     "type": "MONSTER",
     "name": "summoned homunculus",
+    "species": [ "NETHER" ],
     "special_attacks": [ [ "SMASH", 25 ] ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "delete": { "flags": [ "BASHES", "GROUP_BASH", "REVIVES" ] }
+    "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
     "id": "mon_thing_summoned",
@@ -689,37 +694,38 @@
     "type": "MONSTER",
     "name": "summoned thing",
     "death_drops": {  },
-    "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
+    "extend": { "flags": [ "REVIVES" ] },
+    "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
   },
   {
     "id": "mon_dog_skeleton_summoned",
     "copy-from": "mon_dog_skeleton",
     "type": "MONSTER",
     "name": "summoned skeletal dog",
+    "species": [ "NETHER" ],
     "death_function": [ "MELT" ],
-    "death_drops": {  },
-    "delete": { "flags": [ "REVIVES" ] }
+    "death_drops": {  }
   },
   {
     "id": "mon_skeleton_summoned",
     "copy-from": "mon_skeleton",
     "type": "MONSTER",
     "name": "summoned skeleton",
+    "species": [ "NETHER" ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "upgrades": {  },
-    "delete": { "flags": [ "REVIVES" ] }
+    "upgrades": {  }
   },
   {
     "id": "mon_vortex_summoned",
     "copy-from": "mon_vortex",
     "type": "MONSTER",
     "name": "summoned vortex",
+    "species": [ "NETHER" ],
     "death_drops": {  },
     "melee_skill": 4,
     "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
-    "extend": { "flags": [ "ELECTRIC" ] },
-    "delete": { "flags": [ "SUNDEATH", "BASHES", "BORES" ] }
+    "extend": { "flags": [ "ELECTRIC", "REVIVES" ] }
   },
   {
     "id": "mon_yugg_summoned",
@@ -729,6 +735,7 @@
     "special_attacks": [ [ "PARA_STING", 20 ] ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
+    "extend": { "flags": [ "REVIVES" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
   },
   {
@@ -738,6 +745,7 @@
     "death_drops": {  },
     "name": "summoned kreck",
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
+    "extend": { "flags": [ "REVIVES" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -745,9 +753,11 @@
     "copy-from": "mon_triffid",
     "type": "MONSTER",
     "name": "summoned triffid",
+    "species": [ "NETHER" ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ [ "VINE", 20 ] ],
+    "extend": { "flags": [ "REVIVES" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -755,10 +765,11 @@
     "copy-from": "mon_flesh_angel",
     "type": "MONSTER",
     "name": "summoned flesh angel",
+    "species": [ "NETHER" ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
-    "delete": { "flags": [ "REVIVES" ] }
+    "delete": { "flags": [ "ATTACKMON" ] }
   },
   {
     "id": "mon_hunting_horror_summoned",
@@ -766,6 +777,7 @@
     "type": "MONSTER",
     "name": "summoned hunting horror",
     "death_drops": {  },
+    "extend": { "flags": [ "REVIVES" ] },
     "delete": { "flags": [ "SUNDEATH" ] }
   },
   {
@@ -776,6 +788,7 @@
     "death_function": [ "MELT" ],
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": {  },
+    "extend": { "flags": [ "REVIVES" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -785,7 +798,8 @@
     "name": "summoned flying polyp",
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
-    "delete": { "flags": [ "BASHES" ] }
+    "extend": { "flags": [ "REVIVES" ] },
+    "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
   },
   {
     "id": "mon_shoggoth_summoned",
@@ -794,6 +808,7 @@
     "name": "summoned shoggoth",
     "death_drops": {  },
     "special_attacks": [ [ "TENTACLE", 40 ] ],
-    "delete": { "flags": [ "ABSORBS_SPLITS" ] }
+    "extend": { "flags": [ "REGENERATES_10" ] },
+    "delete": { "flags": [ "ABSORBS_SPLITS", "REGENERATES_50" ] }
   }
 ]

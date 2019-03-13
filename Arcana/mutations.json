@@ -1222,7 +1222,6 @@
     "purifiable": false,
     "//": "ID for INVIS retained to not break stuff.",
     "category": [ "DRAGONBLOOD", "INVIS" ],
-    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "active": true,
     "cost": 90,
     "fatigue": true,
