@@ -274,7 +274,7 @@
     "copy-from": "silver_glyph",
     "name": "glyph of trickery",
     "name_plural": "glyphs of trickery",
-    "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
+    "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.  It is easy to control.",
     "use_action": {
       "target": "summon_kreck_on",
       "msg": "The glyph of trickery gives off a faint green glow.",
@@ -300,7 +300,7 @@
       "monster_id": "mon_kreck_summoned",
       "friendly_msg": "The kreck looks up at you expectantly, as if wondering what sort of shenanigans you're plotting.",
       "hostile_msg": "The kreck mimics your movements erratically, cavorting about to mock you!",
-      "difficulty": 6,
+      "difficulty": 1,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
@@ -313,7 +313,7 @@
     "name": "glyph of the root",
     "name_plural": "glyphs of the root",
     "//": "ID retained to prevent tileset breakage, monster summoned was changed due to blank bodies being outright useless.",
-    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
+    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.  It is easy to control.",
     "use_action": {
       "target": "summon_blank_on",
       "msg": "The glyph of the root gives off a faint green glow.",
@@ -339,7 +339,7 @@
       "monster_id": "mon_triffid_summoned",
       "friendly_msg": "The movement of the plant creature is hard to read, but you suspect it is either friendly, or doesn't regard you as a threat.",
       "hostile_msg": "Even without words or recognizable body language, it quickly becomes apparent that the plant monster is hostile.",
-      "difficulty": 6,
+      "difficulty": 2,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
@@ -352,7 +352,7 @@
     "name": "glyph of Gehenna",
     "name_plural": "glyphs of Gehenna",
     "//": "ID retained to prevent tileset breakage, monster summoned was changed due to flaming eyes being useless if friendly.",
-    "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.  It is difficult to control.",
+    "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.  It is somewhat easy to control.",
     "use_action": {
       "target": "summon_flaming_eye_on",
       "msg": "The glyph of Gehenna gives off a faint green glow.",
@@ -378,7 +378,7 @@
       "monster_id": "mon_flesh_angel_summoned",
       "friendly_msg": "A twisted mimicry of the divine is called forth, bound to your will.",
       "hostile_msg": "The flesh angel levels a wicked gaze upon you, ignoring your commands.",
-      "difficulty": 7,
+      "difficulty": 3,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
@@ -391,7 +391,7 @@
     "name": "glyph of Crawling Chaos",
     "name_plural": "glyphs of Crawling Chaos",
     "//": "Explaination: In Lovecraft's work, The Crawling Chaos is one of Nyarlathotep's names, and hunting horrors are associated with him.  The success and failure messages below spell it out rather plainly.",
-    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  It is difficult to control.",
+    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  It is somewhat easy to control.",
     "use_action": {
       "target": "summon_hunting_horror_on",
       "msg": "The glyph of Crawling Chaos gives off a faint green glow.",
@@ -417,7 +417,7 @@
       "monster_id": "mon_hunting_horror_summoned",
       "friendly_msg": "The hunting horror is at your beck and call.  A gift from the Stalker among the Stars?",
       "hostile_msg": "You feel the gaze of Nyarlathotep upon you.  How foolish of you, to steal the harrier of the Faceless God!",
-      "difficulty": 7,
+      "difficulty": 4,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
@@ -430,7 +430,7 @@
     "name": "glyph of the eye",
     "name_plural": "glyphs of the eye",
     "//": "Explaination: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
-    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  It is difficult to control.",
+    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  It is somewhat difficult to control.",
     "use_action": {
       "target": "summon_dark_wyrm_on",
       "msg": "The glyph of the eye gives off a faint green glow.",
@@ -456,7 +456,7 @@
       "monster_id": "mon_dark_wyrm_summoned",
       "friendly_msg": "The wyrm springs forth, seeming to regard you passively, or at least ignoring your presence.",
       "hostile_msg": "The wyrm springs forth, reacting to unfamiliar sounds and scent with a malevolent screech!",
-      "difficulty": 8,
+      "difficulty": 5,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
@@ -469,7 +469,7 @@
     "name": "glyph of Yuggoth",
     "name_plural": "glyphs of Yuggoth",
     "//": "Explaination: Yuggoth is a fictional planet from Lovecraft's work, stated to have been colonized by the mi-go.",
-    "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.  It is difficult to control.",
+    "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
     "use_action": {
       "target": "summon_mi_go_on",
       "msg": "The glyph of Yuggoth gives off a faint green glow.",
@@ -495,7 +495,7 @@
       "monster_id": "mon_mi_go_summoned",
       "friendly_msg": "You recite an incantation, and the mi-go's response is a quiet murmur in some unknown language.  It seems to be friendly.",
       "hostile_msg": "You begin to recite an incantation, only for the mi-go to parrot your words, mocking your effort to control it!",
-      "difficulty": 8,
+      "difficulty": 6,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
@@ -507,7 +507,7 @@
     "copy-from": "silver_glyph",
     "name": "glyph of the golem",
     "name_plural": "glyphs of the golem",
-    "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.  It is very difficult to control.",
+    "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.  It is difficult to control.",
     "use_action": {
       "target": "summon_jabberwock_on",
       "msg": "The glyph of the golem gives off a faint green glow.",
@@ -533,7 +533,7 @@
       "monster_id": "mon_jabberwock_summoned",
       "friendly_msg": "You hear a strange burbling, the creature bound to your will.",
       "hostile_msg": "Eyes of flame meet your gaze, the creature resists your attempt to control it!",
-      "difficulty": 9,
+      "difficulty": 7,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
@@ -546,7 +546,7 @@
     "name": "glyph of Pnakotus",
     "name_plural": "glyphs of Pnakotus",
     "//": "Explanation: In Lovecraft's works, the Pnakotic Manuscripts were associated with the city of this name, which was overrun by flying polyps in their conflict with the species that built the city.",
-    "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.  It is very difficult to control.",
+    "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.  It is difficult to control.",
     "use_action": {
       "target": "summon_flying_polyp_on",
       "msg": "The glyph of anthozoa gives off a faint green glow.",
@@ -572,7 +572,7 @@
       "monster_id": "mon_flying_polyp_summoned",
       "friendly_msg": "The flying polyp twitches for a moment, before its movement steadies.  It seems to be friendly.",
       "hostile_msg": "The flying polyp twitches erratically, reacting to your presence with apparent hostility!",
-      "difficulty": 9,
+      "difficulty": 8,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
@@ -611,7 +611,7 @@
       "monster_id": "mon_yugg_summoned",
       "friendly_msg": "With the riches of a dead world as an offering, you bind the yugg to serve you.  You feel like this is the opposite of how it normally works.",
       "hostile_msg": "An offering of wealth is not enough to placate a servant of Ubb.  The creature turns hostile!",
-      "difficulty": 10,
+      "difficulty": 9,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
