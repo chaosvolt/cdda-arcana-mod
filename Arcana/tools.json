@@ -1595,6 +1595,7 @@
     "name_plural": "cursed blades (on)",
     "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
     "description": "A two-handed sword, blade made of a dark metal, engraved with exotic runes.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
+    "ammo": "essence_blood_type",
     "initial_charges": 1200,
     "max_charges": 1200,
     "turns_per_charge": 1,
