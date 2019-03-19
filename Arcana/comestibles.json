@@ -17,6 +17,7 @@
     "healthy": -5,
     "stim": -4,
     "fun": -5,
+    "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a strange numbness spread through your body.",
@@ -42,6 +43,7 @@
     "quench": -20,
     "healthy": -3,
     "stim": -2,
+    "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel wicked power spread through your body.",
@@ -67,6 +69,7 @@
     "quench": -15,
     "healthy": -1,
     "stim": 2,
+    "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a sudden tension spread through your body.",
@@ -92,6 +95,7 @@
     "quench": -10,
     "stim": 4,
     "fun": 5,
+    "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a pleasant warmth spread through your body.",

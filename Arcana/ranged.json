@@ -92,7 +92,7 @@
     "durability": 6,
     "clip_size": 1,
     "reload": 100,
-    "ammo_effects": [ "WIDE", "LASER" ],
+    "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ]
   },
   {
