@@ -476,7 +476,7 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a cloud of choking, toxic gas from the sign itself, which should be thrown.  Activate to focus your power, draining fatigue.",
     "valid": false,
     "purifiable": false,
-    "prereqs": [ "SPELL_POISONARMOR" ],
+    "prereqs": [ "SPELL_POISONARMOR2" ],
     "category": [ "VEIL" ],
     "active": true,
     "cost": 30,
