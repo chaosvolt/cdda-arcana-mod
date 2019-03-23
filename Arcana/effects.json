@@ -100,7 +100,7 @@
     "rating": "good",
     "max_intensity": 30,
     "int_dur_factor": 10,
-    "base_mods": { "hunger_min": [ 1 ], "hunger_change": [ 3, 6 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 6, 12 ] }
+    "base_mods": { "hunger_min": [ 1 ], "hunger_chance": [ 3, 6 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 6, 12 ] }
   },
   {
     "type": "effect_type",
