@@ -1,90 +1,85 @@
 [
   {
     "type": "snippet",
+    "category": "note",
+    "text": [
+      "\"IT'S FLOATING!  THE TEMPLE IS FLOATING!\"",
+      "\"Funny story-- on Hour One, instead of getting massacred by zombies or absorbed by fungus, I got burned to a crisp by two fucking dragonspawn.\"",
+      "\"all these demons from their many hells, there is an ORDER to it, i KNOW there is\"",
+      "\"Thanks for the magic spear, jackass!\"",
+      "\"Hey, this isn't fair!  I was only in the cult for the free robes and after-ritual donuts!  I didn't sign up for ANY of this!\"",
+      "\"I never considered myself one of religion-- yet the lightning from my hands and my Many-Tendrilled Thralls compel me to believe.\"",
+      "\"so when's cthulhu showing up?\"",
+      "\"this has gotta be a joke.  alien monsters, sure.  magical essence?  pssh.  probably just a sick prank\"",
+      "\"Dear Roger, Chappy, Allison and Tom, the cultists that showed up frantically on my doorstep and are currently using my basement for your ritual-- I hope you like molotovs.\"",
+      "\"Man.  You ever just... hung out with a summoned kreck for a while?  On the beach?  Barked about life, and Cl'hxh'dhiik?\"",
+      "\"Blood spills from my athame.  It is his blood.  Is he reborn, revitalized through my practices?  Can I ever repay him for his sacrifice?\"",
+      "\"This is NOT A REAL CHURCH\"",
+      "\"alchemy is boring if you aren't taste-testing your potions, to be honest\"",
+      "\"Ah, yes... I shall burn this smoke into smaller, dull bits of smoke!\"",
+      "\"Boy, this weather's sure been odd since I raided that mansion!\"",
+      "\"GOOD BOY MOLD-- NO CAR-EATING, NO CAR-EATING, PLEASE\"",
+      "\"do not bbuurn hhiss rrelliics\"",
+      "\"funny paper did a thing!  feeling great, but everything is tree.\""
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "many_years_old_news",
+    "text": [
+      "RURAL SLAYINGS CONTINUE: Police are looking into the latest in a series of attacks on rural religious communities, and have announced a suspected connection between attacks previously thought unrelated.  \"Rural churches, small-town mosques, even neo-pagan gatherings, all of the attacks show similar patterns.\" says a local Police Chief."
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "years_old_news",
+    "text": [
+      "GHOST TOWN BLOODBATH - VIGILANTES SUSPECTED: State Police have uncovered the remains of a clash between a suspected cult and a local gang, in a former Appalachian mining town.  \"We first suspected that it was just a drug ring in the wrong place at the wrong time.\" says the Deputy Superintendent.  \"But there are definitely signs that someone else got involved as well, and destroyed a lot of evidence afterward.\""
+    ]
+  },
+  {
+    "type": "snippet",
+    "category": "one_year_old_news",
+    "text": [
+      "STRANGE DREAMS CAUSED BY MASS PANIC: Locals across numerous small-town communities have reported \"visions\" and disturbing dreams over a three-night period last week.  Those interviewed consistently described floating buildings, occult activity, and demonic figures one affected pastor described as \"seraphic\".  Psychologists have attributed the wave of recurring dreams to mass panic, citing initial reports being confined to a single community before being reported elsewhere the following day."
+    ]
+  },
+  {
+    "type": "snippet",
     "category": "note_grove",
-    "text": [ "\"We have seen the other side.  We must master the potential it affords us.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_grove",
-    "text": [ "\"The ritual went awry.  We can't stay here.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_grove",
-    "text": [ "\"No sign of them.  Must've abandoned the place and left it to rot.  But why ...?\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_sanguine",
     "text": [
-      "\"The witch-hunters think they can stop this.  Think they can stop us.  The barrier is already crumbling, they can't undo this.\""
+      "\"We have seen the other side.  We must master the potential it affords us.\"",
+      "\"The ritual went awry.  We can't stay here.\"",
+      "\"No sign of them.  Must've abandoned the place and left it to rot.  But why ...?\""
     ]
   },
   {
     "type": "snippet",
     "category": "note_sanguine",
     "text": [
-      "\"A terrible calamity has been foreseen.  We will outlast it, adapt.  We shall rule over this new world, above the weak and undeserving.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_sanguine",
-    "text": [ "\"The summoning is almost complete.  We shall behold true power!\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_sanguine",
-    "text": [ "\"Gods above and below, what did those maniacs bring forth?  What have they DONE?\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_chalice",
-    "text": [
-      "\"Those fools actually believe a bunch of blood mages caused all this?  Tore down the barrier between worlds?  I don't know what caused it, but the others only exacerbated the problem.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_chalice",
-    "text": [ "\"We shall bring forth our master.  The old gods shall we swept away, as we cast aside the veil of reality...\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_chalice",
-    "text": [
-      "\"The ritual blade was tainted by dark magic, it drew forth something else.  Not our master, not He From Beyond The Veil.\""
+      "\"The witch-hunters think they can stop this.  Think they can stop us.  The barrier is already crumbling, they can't undo this.\"",
+      "\"A terrible calamity has been foreseen.  We will outlast it, adapt.  We shall rule over this new world, above the weak and undeserving.\"",
+      "\"The summoning is almost complete.  We shall behold true power!\"",
+      "\"Gods above and below, what did those maniacs bring forth?  What have they DONE?\""
     ]
   },
   {
     "type": "snippet",
     "category": "note_chalice",
     "text": [
+      "\"Those fools actually believe a bunch of blood mages caused all this?  Tore down the barrier between worlds?  I don't know what caused it, but the others only exacerbated the problem.\"",
+      "\"We shall bring forth our master.  The old gods shall we swept away, as we cast aside the veil of reality...\"",
+      "\"The ritual blade was tainted by dark magic, it drew forth something else.  Not our master, not He From Beyond The Veil.\"",
       "\"That THING is not our master.  Traitorous servant of the gods, six-winged spirit from the Beyond!  It's laughing at me in the back of my mind, mocking me for hiding here while the others fought and died...\""
     ]
   },
   {
     "type": "snippet",
     "category": "note_flame",
-    "text": [ "\"By cross and hammer, crescant and gate.  Of many faiths, united in purpose, against all threats from the Beyond.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_flame",
-    "text": [ "\"We fear the worst may soon happen.  But so long as the Sun shines upon the Earth, we will fight back.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_flame",
     "text": [
-      "\"I think they might be right.  The Sanguine Order didn't cause this.  Something else wore down the barrier between worlds, and they merely exploited that breach.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_flame",
-    "text": [
+      "\"By cross and hammer, crescent and gate.  Of many faiths, united in purpose, against all threats from the Beyond.\"",
+      "\"We fear the worst may soon happen.  But so long as the Sun shines upon the Earth, we will fight back.\"",
+      "\"I think they might be right.  The Sanguine Order didn't cause this.  Something else wore down the barrier between worlds, and they merely exploited that breach.\"",
       "\"We set up a blade ward to seal off the lower level.  This place is no longer safe, something ...something evil subverted our only refuge.\""
     ]
   },
@@ -92,34 +87,10 @@
     "type": "snippet",
     "category": "note_sanguine_tenet",
     "text": [
-      "\"Every day is a struggle, a constant fight to survive.  Or it can be a struggle to thrive. The weak and undeserving choose the former.  We choose the latter.  Always seek to gain, to improve, better yourself.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_sanguine_tenet",
-    "text": [
-      "\"The power from Beyond is but one resource to use to strengthen oneself.  So too is any power beyond our own means.  Commit nothing, offer neither oath nor contract.  No god, no demon, no spirit can be trusted with power over you.  No holy symbol or icon shall hold sway over those who follow The Path.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_sanguine_tenet",
-    "text": [
-      "\"Sometimes when following The Path to Power, the road narrows.  No longer can you walk side by side with your kindred.  If you rush ahead, you risk being stabbed in the back.  If you allow the others forward, they may leave you behind before the road widens once again.  Ask yourself, can you trust those you walk beside, or should you push them off the Path?\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_sanguine_tenet",
-    "text": [
-      "\"It is a part of The Struggle to adapt and thrive.  Influence both earthly and from Beyond present challenges to be overcome.  Mankind is not superior, but it is in our nature to make ourselves so.  If this means becoming something other than human, so be it.  If this means shunning such influence, so be it.  These powers are but another tool at our disposal.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_sanguine_tenet",
-    "text": [
+      "\"Every day is a struggle, a constant fight to survive.  Or it can be a struggle to thrive. The weak and undeserving choose the former.  We choose the latter.  Always seek to gain, to improve, better yourself.\"",
+      "\"The power from Beyond is but one resource to use to strengthen oneself.  So too is any power beyond our own means.  Commit nothing, offer neither oath nor contract.  No god, no demon, no spirit can be trusted with power over you.  No holy symbol or icon shall hold sway over those who follow The Path.\"",
+      "\"Sometimes when following The Path to Power, the road narrows.  No longer can you walk side by side with your kindred.  If you rush ahead, you risk being stabbed in the back.  If you allow the others forward, they may leave you behind before the road widens once again.  Ask yourself, can you trust those you walk beside, or should you push them off the Path?\"",
+      "\"It is a part of The Struggle to adapt and thrive.  Influence both earthly and from Beyond present challenges to be overcome.  Mankind is not superior, but it is in our nature to make ourselves so.  If this means becoming something other than human, so be it.  If this means shunning such influence, so be it.  These powers are but another tool at our disposal.\"",
       "\"Power demands sacrifice and struggle, and self-sacrifice is just one method.  The weak and undeserving, bested and proven inferior, are another source of sacrifice.  Even those of great power, if laid low, may serve to better the victor.  Let the blood flow and empower those who have earned it.\""
     ]
   },
@@ -127,236 +98,46 @@
     "type": "snippet",
     "category": "note_chalice_tenet",
     "text": [
-      "\"To gaze into the Beyond is to see the potential of a thousand worlds, and learn hidden truths.  But be cautious in these acts.  Let every wound in The Veil be a necessary one, or else leave no mark.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_chalice_tenet",
-    "text": [
-      "\"A wound that is opened cannot truly be reversed, only mended.  Likewise spilt blood can only be replenished.  The wound in The Veil can be mended by steady hand, but never again shall it be the same as before.  It is our duty not to revert what has been done, but to ensure we will endure.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_chalice_tenet",
-    "text": [
-      "\"Our lives, our souls, to He From Beyond The Veil.  We shall work with those who are ignorant if we must, against them if it becomes necessary.  And if must, we shall sweep away the old gods and old ways, if that is what it takes to ensure his will is carried out.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_chalice_tenet",
-    "text": [
-      "\"Through our sacrifices, we burn away what is undesirable in ourselves, and cultivate what is good.  So too shall we seek that in our other pursuits.  Those who seek to destroy evil are a part of this cycle, but their role is to leave the way clear, for those who will foster good in what remains.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_chalice_tenet",
-    "text": [
-      "\"He From Beyond The Veil carries the mantle of all that is grim yet necessary.  That he has answered our calls confirms the nature of our purpose.  No matter the cost, no matter what we must do, for the strength and safety of this world.  And in turn, of worlds beyond.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_chalice_tenet",
-    "text": [
+      "\"To gaze into the Beyond is to see the potential of a thousand worlds, and learn hidden truths.  But be cautious in these acts.  Let every wound in The Veil be a necessary one, or else leave no mark.\"",
+      "\"A wound that is opened cannot truly be reversed, only mended.  Likewise spilt blood can only be replenished.  The wound in The Veil can be mended by steady hand, but never again shall it be the same as before.  It is our duty not to revert what has been done, but to ensure we will endure.\"",
+      "\"Our lives, our souls, to He From Beyond The Veil.  We shall work with those who are ignorant if we must, against them if it becomes necessary.  And if must, we shall sweep away the old gods and old ways, if that is what it takes to ensure his will is carried out.\"",
+      "\"Through our sacrifices, we burn away what is undesirable in ourselves, and cultivate what is good.  So too shall we seek that in our other pursuits.  Those who seek to destroy evil are a part of this cycle, but their role is to leave the way clear, for those who will foster good in what remains.\"",
+      "\"He From Beyond The Veil carries the mantle of all that is grim yet necessary.  That he has answered our calls confirms the nature of our purpose.  No matter the cost, no matter what we must do, for the strength and safety of this world.  And in turn, of worlds beyond.\"",
       "\"While we seek an understanding of the Beyond, do not forget our humanity.  Even as we are strengthened by what we learn, we are not to subvert the natural order, whether of this world or of those beyond.\""
     ]
   },
   {
     "type": "snippet",
     "category": "note_flame_tenet",
-    "text": [ "\"So long as the Sun shines upon the Earth, we must never give up.  Never allow humanity to slip into extinction.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_flame_tenet",
     "text": [
-      "\"Cast aside your schisms and strife. It has ended countless groups, but it shall not end us.  We are brothers and sisters, and we shall respect the gods in equal measure, disparate though they may be.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_flame_tenet",
-    "text": [
-      "\"All powers from beyond, and all things worked from it, are a potential threat until clearly understood.  Observe in any manner that is safe, but err on the side of caution first and foremost.  If determining its nature cannot be done safely, destroy it if you must.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_flame_tenet",
-    "text": [
-      "\"Suffer no cowardice, no brigandry, no lust for vengeance.  We take from others what is too dangerous to leave in their hands, and inflict no further depredation upon them unless they are a threat to humanity itself.  If they are, be they blood mage or bandit, offer no mercy and expect none in return.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_flame_tenet",
-    "text": [
-      "\"Return the powers from Beyond to their rightful resting place, that no further damage to The Veil may occur.  Any magic we use is directed towards this end.  Do not be tempted to see what we destroy as a means of acquiring more power.  That leads to dangerous thoughts and an unholy cycle.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_flame_tenet",
-    "text": [
-      "\"Powers from Beyond seek to bring the End of All, and it is our duty to prevent this.  Offer no intrusion upon their domain, and do not willfully consort with their power.  Few can even be reasoned with.  Any otherworldly monster must be returned to its true domain, living or dead.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_flame_tenet",
-    "text": [
+      "\"So long as the Sun shines upon the Earth, we must never give up.  Never allow humanity to slip into extinction.\"",
+      "\"Cast aside your schisms and strife. It has ended countless groups, but it shall not end us.  We are brothers and sisters, and we shall respect the gods in equal measure, disparate though they may be.\"",
+      "\"All powers from beyond, and all things worked from it, are a potential threat until clearly understood.  Observe in any manner that is safe, but err on the side of caution first and foremost.  If determining its nature cannot be done safely, destroy it if you must.\"",
+      "\"Suffer no cowardice, no brigandry, no lust for vengeance.  We take from others what is too dangerous to leave in their hands, and inflict no further depredation upon them unless they are a threat to humanity itself.  If they are, be they blood mage or bandit, offer no mercy and expect none in return.\"",
+      "\"Return the powers from Beyond to their rightful resting place, that no further damage to The Veil may occur.  Any magic we use is directed towards this end.  Do not be tempted to see what we destroy as a means of acquiring more power.  That leads to dangerous thoughts and an unholy cycle.\"",
+      "\"Powers from Beyond seek to bring the End of All, and it is our duty to prevent this.  Offer no intrusion upon their domain, and do not willfully consort with their power.  Few can even be reasoned with.  Any otherworldly monster must be returned to its true domain, living or dead.\"",
       "\"Corruptive powers have inflicted grave havoc on the bodies and minds of mankind.  Their ways are many.  Some can be prevented, others are unavoidable without due caution.  Hold no malice against one corrupted by the Beyond, for the consequences are their own punishment.  And not all have entered into it willingly.\""
     ]
   },
   {
     "type": "snippet",
-    "category": "note",
-    "text": [ "\"IT'S FLOATING!  THE TEMPLE IS FLOATING!\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [
-      "\"Funny story-- on Hour One, instead of getting massacred by zombies or absorbed by fungus, I got burned to a crisp by two fucking dragonspawn.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"all these demons from their many hells, there is an ORDER to it, i KNOW there is\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"Thanks for the magic spear, jackass!\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [
-      "\"Hey, this isn't fair!  I was only in the cult for the free robes and after-ritual donuts!  I didn't sign up for ANY of this!\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [
-      "\"I never considered myself one of religion-- yet the lightning from my hands and my Many-Tendrilled Thralls compel me to believe.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"so when's cthulhu showing up?\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"this has gotta be a joke.  alien monsters, sure.  magical essence?  pssh.  probably just a sick prank\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [
-      "\"Dear Roger, Chappy, Allison and Tom, the cultists that showed up frantically on my doorstep and are currently using my basement for your ritual-- I hope you like molotovs.\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [
-      "\"Man.  You ever just... hung out with a summoned kreck for a while?  On the beach?  Barked about life, and Cl'hxh'dhiik?\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [
-      "\"Blood spills from my athame.  It is his blood.  Is he reborn, revitalized through my practices?  Can I ever repay him for his sacrifice?\""
-    ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"This is NOT A REAL CHURCH\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"alchemy is boring if you aren't taste-testing your potions, to be honest\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"Ah, yes... I shall burn this smoke into smaller, dull bits of smoke!\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"Boy, this weather's sure been odd since I raided that mansion!\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"GOOD BOY MOLD-- NO CAR-EATING, NO CAR-EATING, PLEASE\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"do not bbuurn hhiss rrelliics\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note",
-    "text": [ "\"funny paper did a thing!  feeling great, but everything is tree.\"" ]
-  },
-  {
-    "type": "snippet",
     "category": "note_starry_correspondence",
-    "text": [ "\"Brother, I hope this missive finds you in good health.  The gates are open.  But be warned, one of our own has been led astray.  They may endanger our work.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_starry_correspondence",
-    "text": [ "\"I am hopeful that this letter is received without issue.  I assure you that we are in no danger.  They grasp at shadows, blind to the truth.  We have greater threats to be vigilant about.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_starry_correspondence",
-    "text": [ "\"May the stars guide this missive to you swiftly, brother.  The path is clear, but you are correct in that we have greater things to worry about.  The puppets of Rome are aware of our existence.  We cannot be certain what allies they may still be able to send against us.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_starry_correspondence",
-    "text": [ "\"Their threats are no longer of consequence.  The time has come.  Jupiter shall devour his moons, and Mars shall be anointed by eternal flame.  Be it the servants of the blind world, the old gods, even the hunters in the darkness, we live even in death.\"" ]
+    "text": [
+      "\"Brother, I hope this missive finds you in good health.  The gates are open.  But be warned, one of our own has been led astray.  They may endanger our work.\"",
+      "\"I am hopeful that this letter is received without issue.  I assure you that we are in no danger.  They grasp at shadows, blind to the truth.  We have greater threats to be vigilant about.\"",
+      "\"May the stars guide this missive to you swiftly, brother.  The path is clear, but you are correct in that we have greater things to worry about.  The puppets of Rome are aware of our existence.  We cannot be certain what allies they may still be able to send against us.\"",
+      "\"Their threats are no longer of consequence.  The time has come.  Jupiter shall devour his moons, and Mars shall be anointed by eternal flame.  Be it the servants of the blind world, the old gods, even the hunters in the darkness, we live even in death.\""
+    ]
   },
   {
     "type": "snippet",
     "category": "note_soa_journal",
-    "text": [ "\"Initial reports seem to be wildly off the mark.  A lot more activity for a town this size, further recon will be required.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_soa_journal",
-    "text": [ "\"Frequent military and civilian traffic, lots of people coming and going.  Something strange is definitely afoot, it's hard to discern if it's within our area of expertise or not.  Continue monitoring.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_soa_journal",
-    "text": [ "\"Whatever they're up to, they aren't doing it out in the open.  Either there's C&C set up in the heart of town, or it's hidden some other way.  Observation will continue, but keep your heads down.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_soa_journal",
-    "text": [ "\"Anomalous activity confirmed.  Latest shipments coming in differ from normal deliveries, and security is being tightened.  Maintain discretion.\"" ]
-  },
-  {
-    "type": "snippet",
-    "category": "note_soa_journal",
-    "text": [ "\"Surface has sustained heavy damage,  unable to determine if enemy action or sabotage.  Recon reported a possible secondary entrance to their secured area, but the bombing might've collapsed it.\"" ]
+    "text": [
+      "\"Initial reports seem to be wildly off the mark.  A lot more activity for a town this size, further recon will be required.\"",
+      "\"Frequent military and civilian traffic, lots of people coming and going.  Something strange is definitely afoot, it's hard to discern if it's within our area of expertise or not.  Continue monitoring.\"",
+      "\"Whatever they're up to, they aren't doing it out in the open.  Either there's C&C set up in the heart of town, or it's hidden some other way.  Observation will continue, but keep your heads down.\"",
+      "\"Anomalous activity confirmed.  Latest shipments coming in differ from normal deliveries, and security is being tightened.  Maintain discretion.\"",
+      "\"Surface has sustained heavy damage,  unable to determine if enemy action or sabotage.  Recon reported a possible secondary entrance to their secured area, but the bombing might've collapsed it.\""
+    ]
   }
 ]
