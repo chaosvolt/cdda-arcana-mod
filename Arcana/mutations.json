@@ -1370,7 +1370,7 @@
     "mixed_effect": true,
     "bodytemp_modifiers": [ 250, 500 ],
     "bodytemp_sleep": 100,
-    "description": "A strange heat permeates your body, warming you up in exchange for a more active metabolism.",
+    "description": "A strange heat permeates your body, warming you up in exchange for a more active metabolism.  While you need to eat and drink more, you also find it easier to recover from physical exertion.",
     "valid": false,
     "purifiable": false,
     "changes_to": [ "ARCANA_INNERFIRE" ],
