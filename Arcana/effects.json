@@ -102,6 +102,27 @@
   },
   {
     "type": "effect_type",
+    "id": "potion_incense",
+    "name": [ "Incense" ],
+    "resist_effect": "talisman_warding",
+    "desc": [ "Your mind feels energizied, warding off fatigue." ],
+    "remove_message": "The incense's effect fades.",
+    "decay_messages": [ [ "The effects of the incense are fading.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 30,
+    "int_dur_factor": 10,
+    "base_mods": {
+      "pain_min": [ 1 ],
+      "pain_max_val": [ 4, 2 ],
+      "str_mod": [ 1 ],
+      "dex_mod": [ 1 ],
+      "int_mod": [ -1, 0 ],
+      "per_mod": [ -1, 0 ],
+      "fatigue_min": [ -1 ]
+    }
+  },
+  {
+    "type": "effect_type",
     "id": "revenant_hunger",
     "name": [ "Revenant Hunger" ],
     "desc": [ "Immunity to food poisoning and parasites, increased hunger gain." ],
