@@ -112,8 +112,6 @@
     "max_intensity": 30,
     "int_dur_factor": 10,
     "base_mods": {
-      "pain_min": [ 1 ],
-      "pain_max_val": [ 4, 2 ],
       "str_mod": [ 1 ],
       "dex_mod": [ 1 ],
       "int_mod": [ -1, 0 ],

@@ -155,7 +155,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "Wisps of smoke rapidly fade away as you light the incense, filling you with energy.",
-      "effects": [ { "id": "potion_incense", "duration": 150 } ],
+      "effects": [ { "id": "potion_incense", "duration": 100 } ],
       "charges_needed": { "fire": 1 },
       "moves": 50
     }
