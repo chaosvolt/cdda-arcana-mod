@@ -26,7 +26,7 @@
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_potioncraft", 1 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
-    "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_limestone", 1 ] ] ]
+    "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_limestone", 1 ], [ "ash", 500 ] ] ]
   },
   {
     "result": "speed_potion",
@@ -43,7 +43,7 @@
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "components": [
       [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ],
-      [ [ "material_quicklime", 1 ] ],
+      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "lead", 20 ], [ "bismuth", 25 ], [ "copper", 25 ], [ "tin", 20 ] ]
     ]
   },
@@ -62,7 +62,7 @@
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "components": [
       [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ],
-      [ [ "material_quicklime", 1 ] ],
+      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "gold_small", 10 ], [ "silver_small", 20 ] ],
       [ [ "blood", 1 ], [ "rag_bloody", 3 ] ]
     ]

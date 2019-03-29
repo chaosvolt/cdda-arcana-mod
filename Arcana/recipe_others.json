@@ -102,7 +102,7 @@
     "using": [ [ "forging_standard", 1 ], [ "arcana_essence_any", 3 ] ],
     "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
-      [ [ "lead", 175 ], [ "bismuth", 250 ], [ "copper", 250 ], [ "tin", 175 ] ],
+      [ [ "lead", 200 ], [ "bismuth", 250 ], [ "copper", 250 ], [ "tin", 200 ] ],
       [ [ "healing_potion", 1 ] ]
     ]
   },
