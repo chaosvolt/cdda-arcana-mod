@@ -62,5 +62,24 @@
       [ [ "gold_small", 10 ] ],
       [ [ "blood", 1 ], [ "rag_bloody", 3 ] ]
     ]
+  },
+  {
+    "result": "carmine_vulnerary",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "skills_required": [ "firstaid", 1 ],
+    "time": 90000,
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_potioncraft", 4 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
+    "components": [
+      [ [ "healing_potion", 1 ] ],
+      [ [ "numbness_potion", 1 ] ],
+      [ [ "rag", 3 ], [ "medical_gauze", 1 ] ],
+      [ [ "rose_hips", 1 ], [ "poppy_bud", 1 ], [ "bee_balm", 1 ], [ "triffid_queen_flower", 1 ] ]
+    ]
   }
 ]

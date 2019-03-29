@@ -103,5 +103,36 @@
       "effects": [ { "id": "potion_healing", "duration": 150 } ]
     },
     "flags": [ "EATEN_COLD" ]
+  },
+  {
+    "id": "red_black_vulnerary",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "drugs",
+    "//": "Technically carmine with purpleish-red, not black and red.  Lower base healing than water talisman, but better results with first aid skill.",
+    "name": "carmine vulnerary",
+    "name_plural": "carmine vulnerary",
+    "description": "Patches of cloth steeped in an alchemical mixture, forming a poultice that refines and focuses its effects.  It can heal injuries beyond simply staving off blood loss, and purge infected wounds before they become septic.  However, it loses its effect on deeper ailments, only staving off spores and providing some painkilling effect.",
+    "weight": 300,
+    "volume": 1,
+    "price": 2900,
+    "container": "wrapper",
+    "symbol": "!",
+    "color": "red",
+    "charges": 3,
+    "stack_size": 9,
+    "use_action": {
+      "type": "heal",
+      "limb_power": 3,
+      "head_power": 3,
+      "torso_power": 3,
+      "limb_scaling": 1.5,
+      "head_scaling": 1.5,
+      "torso_scaling": 1.5,
+      "bleed": 1.0,
+      "bite": 0.95,
+      "move_cost": 200,
+      "effects": [ { "id": "potion_vulnerary", "duration": 100 } ]
+    }
   }
 ]
