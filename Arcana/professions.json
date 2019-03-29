@@ -21,7 +21,7 @@
     "name": "Alchemist",
     "description": "You studied under a well-learned scholar, a seeker of the fabled elixir of life.  Despite the tutelage of a master alchemist, you never got any closer to finishing the great work.",
     "points": 2,
-    "skills": [ { "level": 5, "name": "cooking" } ],
+    "skills": [ { "level": 5, "name": "cooking" }, { "level": 2, "name": "firstaid" } ],
     "items": {
       "both": {
         "items": [
@@ -34,6 +34,7 @@
           "backpack",
           "matches",
           "chemistry_set_basic",
+          "red_black_vulnerary",
           "chem_ethanol",
           "bottle_glass",
           "book_potioncraft",
@@ -85,7 +86,14 @@
     "name": "Blood Mage",
     "description": "You have beheld true power, as a member of the Sanguine Order.  Power from within, as well as power from beyond.  But at what cost?",
     "points": 4,
-    "skills": [ { "level": 3, "name": "magic" }, { "level": 1, "name": "firstaid" }, { "level": 1, "name": "gun" }, { "level": 1, "name": "melee" }, { "level": 1, "name": "stabbing" }, { "level": 1, "name": "dodge" } ],
+    "skills": [
+      { "level": 3, "name": "magic" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" }
+    ],
     "items": {
       "both": {
         "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "waterskin", "matches", "bowl_clay", "book_bloodmagic" ],
@@ -108,7 +116,12 @@
     "name": "Mage Hunter",
     "description": "You were a member of The Cleansing Flame, a religious order.  The end of all has come.  The barrier between worlds has been shattered.  The dead hunger for the living.  But you will not give in.",
     "points": 4,
-    "skills": [ { "level": 4, "name": "magic" }, { "level": 2, "name": "melee" }, { "level": 2, "name": "bashing" }, { "level": 1, "name": "dodge" } ],
+    "skills": [
+      { "level": 4, "name": "magic" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "bashing" },
+      { "level": 1, "name": "dodge" }
+    ],
     "items": {
       "both": {
         "items": [
