@@ -950,7 +950,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
-    "components": [ [ [ "shadow_gem", 1 ], [ "spell_invis", 1 ] ] ]
+    "components": [ [ [ "shadow_gem", 1 ], [ "spell_shadowsnakes", 1 ] ] ]
   },
   {
     "result": "totem_cleric",
