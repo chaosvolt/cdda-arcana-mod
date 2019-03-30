@@ -37,8 +37,9 @@
           { "id": "f_candle_barrier", "fg": 21, "bg": 20 },
           { "id": "f_candle_barrier_playermade", "fg": 22, "bg": 20 },
           { "id": "water_talisman", "fg": 23, "bg": 0 },
-          { "id": "earth_talisman", "fg": 24, "bg": 0 }
-
+          { "id": "earth_talisman", "fg": 24, "bg": 0 },
+          { "id": "red_black_vulnerary", "fg": 25, "bg": 0 },
+          { "id": "yellow_white_incense", "fg": 26, "bg": 0 }
         ]
       }
     ]
