@@ -261,6 +261,9 @@
     "id": "mon_vortex",
     "copy-from": "mon_vortex",
     "type": "MONSTER",
+    "//": "FFS why are they harmless",
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
     "death_drops": "mon_vortex_death_drops"
   },
   {
@@ -570,7 +573,7 @@
     "//": "Here, have some chalice-specific loot",
     "death_drops": "mon_archon_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "ELECTRIC", "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "HARDTOSHOOT" ]
+    "flags": [ "ELECTRIC", "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "HARDTOSHOOT", "QUEEN" ]
   },
   {
     "id": "mon_dracolich",
@@ -727,7 +730,7 @@
     "death_drops": {  },
     "melee_skill": 4,
     "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
-    "extend": { "flags": [ "SEES", "ELECTRIC", "REVIVES" ] }
+    "extend": { "flags": [ "SEES", "ELECTRIC", "REGENERATES_10" ] }
   },
   {
     "id": "mon_yugg_summoned",

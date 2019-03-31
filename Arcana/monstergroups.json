@@ -14,8 +14,8 @@
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
-      { "monster": "mon_homunculus", "freq": 60, "cost_multiplier": 0 },
       { "monster": "mon_flying_polyp", "freq": 120, "cost_multiplier": 0 },
+      { "monster": "mon_homunculus", "freq": 60, "cost_multiplier": 0 },
       { "monster": "mon_mi_go", "freq": 40, "cost_multiplier": 0 }
     ]
   },
@@ -56,6 +56,18 @@
       { "monster" : "mon_gozu", "freq" : 75, "cost_multiplier" : 0 },
       { "monster" : "mon_flying_polyp", "freq" : 25, "cost_multiplier" : 0 },
       { "monster" : "mon_flaming_eye", "freq" : 25, "cost_multiplier" : 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ARCHON",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_vortex", "freq": 400, "cost_multiplier": 0 },
+      { "monster": "mon_twisted_body", "freq": 200, "cost_multiplier": 0 },
+      { "monster": "mon_crawler", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_homunculus", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_archon", "freq": 0, "cost_multiplier": 0 }
     ]
   }
 ]
