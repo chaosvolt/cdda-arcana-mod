@@ -34,6 +34,21 @@
     "memorial_message": "Gained power from the Dragonblood Sacrament."
   },
   {
+    "id": "DRAGONBLOODLESSER",
+    "type": "mutation_category",
+    "//": "This exists so that blood effigy can exclude spells.",
+    "category": "DRAGONBLOODLESSER",
+    "threshold_mut": "THRESH_DRAGONBLOODLESSER",
+    "name": "Lesser Dragonblood Effect",
+    "mutagen_fatigue": 5,
+    "mutagen_hunger": 5,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 5,
+    "mutagen_message": "You feel unearthly life flow through your body.",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned from the Sacrament."
+  },
+  {
     "id": "ACIDSPRAY",
     "type": "mutation_category",
     "category": "ACIDSPRAY",

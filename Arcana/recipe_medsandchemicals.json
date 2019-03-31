@@ -8,7 +8,7 @@
     "skill_used": "magic",
     "difficulty": 1,
     "skills_required": [ "cooking", 5 ],
-    "time": 90000,
+    "time": 60000,
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_potioncraft", 0 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
@@ -22,11 +22,11 @@
     "skill_used": "magic",
     "difficulty": 2,
     "skills_required": [ "cooking", 5 ],
-    "time": 90000,
+    "time": 60000,
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_potioncraft", 1 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
-    "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_limestone", 1 ] ] ]
+    "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_limestone", 1 ], [ "ash", 500 ] ] ]
   },
   {
     "result": "speed_potion",
@@ -41,7 +41,11 @@
     "book_learn": [ [ "book_potioncraft", 2 ] ],
     "qualities": [ { "id": "CHEM", "level": 1 } ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
-    "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_quicklime", 1 ] ], [ [ "lead", 10 ] ] ]
+    "components": [
+      [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ],
+      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
+      [ [ "lead", 20 ], [ "bismuth", 25 ], [ "copper", 25 ], [ "tin", 20 ] ]
+    ]
   },
   {
     "result": "healing_potion",
@@ -52,15 +56,77 @@
     "skill_used": "magic",
     "difficulty": 4,
     "skills_required": [ "cooking", 5 ],
-    "time": 90000,
+    "time": 60000,
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_potioncraft", 3 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "components": [
       [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ],
-      [ [ "material_quicklime", 1 ] ],
-      [ [ "gold_small", 10 ] ],
+      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
+      [ [ "gold_small", 10 ], [ "silver_small", 20 ] ],
       [ [ "blood", 1 ], [ "rag_bloody", 3 ] ]
+    ]
+  },
+  {
+    "result": "red_black_vulnerary",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "skills_required": [ "firstaid", 1 ],
+    "time": 10000,
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_potioncraft", 4 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
+    "components": [
+      [ [ "healing_potion", 1 ] ],
+      [ [ "numbness_potion", 1 ] ],
+      [ [ "rag", 3 ], [ "medical_gauze", 1 ] ],
+      [ [ "rose_hips", 1 ], [ "poppy_bud", 1 ], [ "bee_balm", 1 ], [ "triffid_queen_flower", 1 ] ]
+    ]
+  },
+  {
+    "result": "yellow_white_incense",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MEDICAL",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "skills_required": [ "cooking", 3 ],
+    "time": 30000,
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_potioncraft", 5 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "BOIL", "level": 1 } ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "water_boiling_heat", 6, "LIST" ] ] ],
+    "components": [
+      [ [ "speed_potion", 1 ] ],
+      [ [ "strength_potion", 1 ] ],
+      [ [ "charcoal", 1 ], [ "splinter", 4 ], [ "birchbark", 2 ], [ "pine_bough", 2 ] ]
+    ]
+  },
+  {
+    "result": "dragonblood_mutagen",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ "cooking", 3 ],
+    "time": 30000,
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_bloodmagic", 5 ], [ "book_syncretism", 4 ] ],
+    "using": [ [ "surface_heat", 10 ], [ "arcana_essence_exclude_dull", 1 ] ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [
+      [ [ "book_potioncraft", -1 ] ],
+      [ [ "graboid_fang", -1 ], [ "monster_fang", -1 ], [ "wyrmskin_piece", -1 ], [ "iridescent_plate", -1 ] ]
+    ],
+    "components": [
+      [ [ "salt_water", 1 ] ],
+      [ [ "blood", 1 ], [ "rag_bloody", 3 ] ],
+      [ [ "mutagen_jabberblood", 1 ], [ "slime_scrap", 2 ], [ "fat_tainted", 3 ], [ "bone_tainted", 4 ], [ "meat_tainted", 5 ] ]
     ]
   }
 ]

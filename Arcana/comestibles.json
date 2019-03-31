@@ -24,7 +24,7 @@
       "stat_adjustments": { "hunger": 25 },
       "effects": [ { "id": "potion_numbness", "duration": 150 } ]
     },
-    "flags": [ "EATEN_COLD" ]
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "strength_potion",
@@ -50,7 +50,7 @@
       "stat_adjustments": { "hunger": 20 },
       "effects": [ { "id": "potion_strength", "duration": 150 } ]
     },
-    "flags": [ "EATEN_COLD" ]
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "speed_potion",
@@ -76,7 +76,7 @@
       "stat_adjustments": { "hunger": 15 },
       "effects": [ { "id": "potion_speed", "duration": 150 } ]
     },
-    "flags": [ "EATEN_COLD" ]
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "healing_potion",
@@ -102,6 +102,83 @@
       "stat_adjustments": { "hunger": 10 },
       "effects": [ { "id": "potion_healing", "duration": 150 } ]
     },
-    "flags": [ "EATEN_COLD" ]
+    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "red_black_vulnerary",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "drugs",
+    "//": "Technically carmine with purpleish-red, not black and red.  Lower base healing than water talisman, but better results with first aid skill.",
+    "name": "carmine vulnerary",
+    "name_plural": "carmine vulnerary",
+    "description": "Patches of cloth steeped in an alchemical mixture, forming a poultice that refines and focuses its effects.  It can heal injuries beyond simply staving off blood loss, and purge infected wounds before they become septic.  However, it loses its effect on deeper ailments, only staving off spores and providing some painkilling effect.",
+    "weight": 150,
+    "volume": 1,
+    "price": 800,
+    "symbol": "!",
+    "color": "red",
+    "charges": 4,
+    "stack_size": 9,
+    "use_action": {
+      "type": "heal",
+      "limb_power": 3,
+      "head_power": 3,
+      "torso_power": 3,
+      "limb_scaling": 1.7,
+      "head_scaling": 1.7,
+      "torso_scaling": 1.7,
+      "bleed": 1.0,
+      "bite": 0.95,
+      "move_cost": 200,
+      "effects": [ { "id": "potion_vulnerary", "duration": 100 } ]
+    },
+    "flags": [ "NPC_SAFE" ]
+  },
+  {
+    "id": "yellow_white_incense",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "drugs",
+    "name": "citrine incense",
+    "name_plural": "citrine incense",
+    "//": "Citrine isn't quite white-yellow either, but jasmine incence would imply the flower rather than the color.  Last piece of advice in the description, while common sense, is only really a concern with sleep deprivation enabled.",
+    "description": "An alchemical mixture permeating a comsustable base of charcoal or resin, resulting in a peculiar sort of incense.  Lighting it will rapidly burn away the strange concoction, invigorating its user with a focused effect similiar to the potions originally used to make it.  It trades much of its effect on strength and speed for instead directly relieving fatigue through unusual means, though long-term use without rest is not reccomended.",
+    "weight": 550,
+    "volume": 1,
+    "price": 2900,
+    "symbol": "!",
+    "color": "light_gray",
+    "charges": 2,
+    "stack_size": 9,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Wisps of smoke rapidly fade away as you light the incense, filling you with energy.",
+      "effects": [ { "id": "potion_incense", "duration": 100 } ],
+      "charges_needed": { "fire": 1 },
+      "moves": 50
+    }
+  },
+  {
+    "id": "dragonblood_mutagen",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "category": "drugs",
+    "name": "blood effigy",
+    "looks_like": "blood",
+    "description": "A congealed liquid vaguely resembling blood, seemingly pulsing and stirring with a life of its own.  The work of incomplete research into exploiting an otherworldly creature, it can permanantly change the body and mind.  Without the original source of this power however, it can only go so far.",
+    "weight": 250,
+    "volume": 1,
+    "price": 100,
+    "phase": "liquid",
+    "container": "flask_glass",
+    "symbol": "~",
+    "color": "red",
+    "healthy": -6,
+    "fun": -8,
+    "charges": 4,
+    "freezing_point": -10,
+    "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOODLESSER" },
+    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   }
 ]
