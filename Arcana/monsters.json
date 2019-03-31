@@ -820,5 +820,32 @@
     "death_drops": {  },
     "extend": { "flags": [ "REGENERATES_10" ] },
     "delete": { "flags": [ "ABSORBS_SPLITS", "REGENERATES_50" ] }
+  },
+  {
+    "id": "mon_shadow_summoned",
+    "copy-from": "mon_shadow",
+    "type": "MONSTER",
+    "name": "summoned shadow",
+    "melee_cut": 2,
+    "vision_day": 5,
+    "vision_night": 50,
+    "death_drops": {  },
+    "death_function": [ "MELT" ],
+    "special_attacks": [ [ "PARROT", 0 ] ],
+    "extend": { "flags": [ "REGENERATES_IN_DARK" ] },
+    "delete": { "flags": [ "SUNDEATH" ] }
+  },
+  {
+    "id": "mon_shadow_snake_summoned",
+    "copy-from": "mon_shadow_snake",
+    "type": "MONSTER",
+    "name": "summoned shadow snake",
+    "death_drops": {  },
+    "death_function": [ "MELT" ],
+    "vision_day": 5,
+    "vision_night": 50,
+    "special_attacks": [ [ "PARROT", 0 ] ],
+    "extend": { "flags": [ "REGENERATES_IN_DARK" ] },
+    "delete": { "flags": [ "SUNDEATH" ] }
   }
 ]
