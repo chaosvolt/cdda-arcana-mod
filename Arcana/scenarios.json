@@ -6,7 +6,7 @@
     "ident": "arcane_seeker",
     "points": 0,
     "start_name": "Arcanist Enclave",
-    "allowed_locs": [ "curious_structure", "impact_site", "island_temple", "strange_grove" ],
+    "allowed_locs": [ "curious_structure", "impact_site", "island_temple", "strange_grove", "hermit_cabin" ],
     "professions": [
       "arcanist_apprentice",
       "arcanist_alchemist",

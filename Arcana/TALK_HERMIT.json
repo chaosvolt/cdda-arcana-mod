@@ -6,7 +6,7 @@
       {
         "text": "Yes, I have.",
         "topic": "TALK_MISSION_SUCCESS",
-        "effect": [ "mission_success", { "npc_add_trait": "hermit_stage_1" } ],
+        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_1", "duration": "PERMANENT" } ],
         "condition": {
           "and": [
             { "u_has_item": "stormbringer" },
@@ -18,7 +18,7 @@
       {
         "text": "See for yourself.",
         "topic": "TALK_MISSION_SUCCESS",
-        "effect": [ "mission_success", { "npc_add_trait": "hermit_stage_2" } ],
+        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" } ],
         "condition": {
           "and": [
             { "u_has_item": "veilblade" },
@@ -30,7 +30,7 @@
       {
         "text": "I can feel it.  This is what you wanted me to obtain, right?",
         "topic": "TALK_MISSION_SUCCESS",
-        "effect": [ "mission_success", { "npc_add_trait": "hermit_stage_3" } ],
+        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_3", "duration": "PERMANENT" } ],
         "condition": {
           "and": [
             {
@@ -61,7 +61,7 @@
       {
         "text": "It is done.  He has chosen me, as you wished.",
         "topic": "TALK_MISSION_SUCCESS",
-        "effect": [ "mission_success", { "npc_add_trait": "hermit_stage_4" } ],
+        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" } ],
         "condition": {
           "and": [
             { "u_has_trait": "THRESH_VEIL" },
@@ -76,7 +76,7 @@
     "type": "talk_topic",
     "id": "TALK_HERMIT",
     "dynamic_line": {
-      "npc_has_trait": "hermit_earned_trust_1",
+      "npc_has_effect": "hermit_earned_trust_1",
       "yes": {
         "u_has_trait": "THRESH_VEIL",
         "yes": "It is an honor to see you again, Chosen.  How may I help you?",
@@ -111,31 +111,31 @@
         "switch": true,
         "text": "What remains to be discussed?",
         "topic": "TALK_HERMIT_DISCUSS_4",
-        "condition": { "and": [ { "npc_has_trait": "hermit_stage_4" }, { "u_has_trait": "THRESH_VEIL" } ] }
+        "condition": { "and": [ { "npc_has_effect": "hermit_stage_4" }, { "u_has_trait": "THRESH_VEIL" } ] }
       },
       {
         "switch": true,
         "text": "You mentioned more to talk about, along with this mission?",
         "topic": "TALK_HERMIT_DISCUSS_3",
-        "condition": { "npc_has_trait": "hermit_stage_3" }
+        "condition": { "npc_has_effect": "hermit_stage_3" }
       },
       {
         "switch": true,
         "text": "What is there to discuss, before we go further?",
         "topic": "TALK_HERMIT_DISCUSS_2",
-        "condition": { "npc_has_trait": "hermit_stage_2" }
+        "condition": { "npc_has_effect": "hermit_stage_2" }
       },
       {
         "switch": true,
         "text": "You mentioned you had answers to go with this task?",
         "topic": "TALK_HERMIT_DISCUSS_1",
-        "condition": { "npc_has_trait": "hermit_stage_1" }
+        "condition": { "npc_has_effect": "hermit_stage_1" }
       },
       {
         "switch": true,
         "text": "So, what I can help with?",
         "topic": "TALK_MISSION_LIST",
-        "condition": { "npc_has_trait": "hermit_earned_trust_2" }
+        "condition": { "npc_has_effect": "hermit_earned_trust_2" }
       },
       { "switch": true, "default": true, "text": "Anything I can help with?", "topic": "TALK_HERMIT_MISSION_NONE" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
@@ -632,7 +632,7 @@
     "type": "talk_topic",
     "id": "TALK_HERMIT_WHO",
     "dynamic_line": {
-      "npc_has_trait": "hermit_earned_trust_2",
+      "npc_has_effect": "hermit_earned_trust_2",
       "yes": "I used to be a follower of He From Beyond The Veil.  Well, no, I still am.  The oath is eternal.  But one old man can only do so much.  So many of us have fallen...",
       "no": "I've been a lot of things in the past, but now I am nothing more than a survivor as any other.  A scholar I suppose, as I've little to do but read what the old world has left behind."
     },
@@ -640,13 +640,13 @@
       {
         "text": "Yet humanity perseveres, and there are still those of us out there to serve His will.",
         "topic": "TALK_HERMIT_VEIL_SOLIDARITY",
-        "condition": { "and": [ { "npc_has_trait": "hermit_earned_trust_2" }, { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } ] }
+        "condition": { "and": [ { "npc_has_effect": "hermit_earned_trust_2" }, { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } ] }
       },
       {
         "switch": true,
         "text": "What can you tell me of He From Beyond The Veil?",
         "topic": "TALK_HERMIT_QUERY_VEIL",
-        "condition": { "npc_has_trait": "hermit_earned_trust_2" }
+        "condition": { "npc_has_effect": "hermit_earned_trust_2" }
       },
       {
         "switch": true,
@@ -673,7 +673,7 @@
     "type": "talk_topic",
     "id": "TALK_HERMIT_SCHOLAR",
     "dynamic_line": {
-      "npc_has_trait": "hermit_earned_trust_1",
+      "npc_has_effect": "hermit_earned_trust_1",
       "yes": "A few old arcane tests certainly, but much of what I have is still nothing more than trivial texts, holy books and novels.",
       "no": "Old religious texts, novels, other such trivial things."
     },
@@ -681,17 +681,17 @@
       {
         "text": "What sorts of religous books?",
         "topic": "TALK_HERMIT_BOOK_RELIGIOUS",
-        "condition": { "not": { "npc_has_trait": "hermit_earned_trust_1" } }
+        "condition": { "not": { "npc_has_effect": "hermit_earned_trust_1" } }
       },
       {
         "text": "Still interesting, either way.",
         "topic": "TALK_HERMIT_BOOK_INTERESTING",
-        "condition": { "not": { "npc_has_trait": "hermit_earned_trust_1" } }
+        "condition": { "not": { "npc_has_effect": "hermit_earned_trust_1" } }
       },
       {
         "text": "What about more unusual books?  Like that of the arcane?",
         "topic": "TALK_HERMIT_BOOK_QUERY",
-        "condition": { "not": { "npc_has_trait": "hermit_earned_trust_1" } }
+        "condition": { "not": { "npc_has_effect": "hermit_earned_trust_1" } }
       },
       {
         "text": "Keeping the faith alive still holds merit in these dark times, if nothing else.",
@@ -770,7 +770,7 @@
     "responses": [
       {
         "text": "Very well then.  We shall see...",
-        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ],
         "topic": "TALK_HERMIT"
       }
     ]
@@ -782,7 +782,7 @@
     "responses": [
       {
         "text": "We'll see what comes of this, then.",
-        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ],
         "topic": "TALK_HERMIT"
       },
       {
@@ -819,7 +819,7 @@
     "responses": [
       {
         "text": "We shall see.",
-        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ],
         "topic": "TALK_HERMIT"
       }
     ]
@@ -831,7 +831,7 @@
     "responses": [
       {
         "text": "If you insist.  Tell me what you have to offer, and we'll see where to go from there.",
-        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ],
         "topic": "TALK_HERMIT"
       },
       {
@@ -848,7 +848,7 @@
     "responses": [
       {
         "text": "We'll see.",
-        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ],
         "topic": "TALK_HERMIT"
       }
     ]
@@ -860,7 +860,7 @@
     "responses": [
       {
         "text": "Very well then.",
-        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ],
+        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ],
         "topic": "TALK_HERMIT"
       }
     ]
@@ -872,7 +872,7 @@
     "responses": [
       {
         "text": "Perhaps you could teach me some of that insight?",
-        "effect": { "npc_add_trait": "hermit_earned_trust_1" },
+        "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
         "topic": "TALK_HERMIT_NEWGODS_INSIGHT"
       },
       { "text": "I see.", "topic": "TALK_HERMIT" }
@@ -900,13 +900,13 @@
         "opinion": { "trust": 1, "value": 1 },
         "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
         "topic": "TALK_HERMIT_BOOK_OUST",
-        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ]
+        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ]
       },
       {
         "text": "I have seen what the arcane can lead to.  Great things, but also great danger.",
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE", "PROF_ARCANIST" ] },
         "topic": "TALK_HERMIT_BOOK_REVEAL",
-        "effect": { "npc_add_trait": "hermit_earned_trust_1" }
+        "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
       },
       {
         "text": "Your aura is alight with hidden magic and concealed artifacts, I can see it through my mask.",
@@ -939,7 +939,7 @@
         "success": {
           "topic": "TALK_HERMIT_BOOK_ADMISSION",
           "opinion": { "trust": 1 },
-          "effect": { "npc_add_trait": "hermit_earned_trust_1" }
+          "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
         },
         "failure": { "topic": "TALK_HERMIT_BOOK_DENIAL", "effect": { "npc_add_effect": "hermit_inquire_denied", "duration": 1800 } }
       },
@@ -951,7 +951,7 @@
         "success": {
           "topic": "TALK_HERMIT_BOOK_ADMISSION",
           "opinion": { "trust": 1 },
-          "effect": { "npc_add_trait": "hermit_earned_trust_1" }
+          "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
         },
         "failure": { "topic": "TALK_HERMIT_BOOK_DENIAL", "effect": { "npc_add_effect": "hermit_inquire_denied", "duration": 1800 } }
       },
@@ -987,7 +987,7 @@
         "topic": "TALK_HERMIT_MASK_TRUST",
         "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
         "opinion": { "trust": 1, "value": 1 },
-        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ]
+        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ]
       },
       {
         "text": "[ATTACK] My purpose is to finish what my brethren started, and destroy threats to humanity.  For your worship of a monster from Beyond, and for the wounds in The Veil your order has inflicted, I sentence you to death.",
@@ -1000,7 +1000,7 @@
         "default": true,
         "text": "I'm not one of the mage hunters actually, but I've learned the usefulness of these items.",
         "topic": "TALK_HERMIT_MASK_NOT",
-        "effect": [ { "npc_add_trait": "hermit_earned_trust_1" }, { "npc_add_trait": "hermit_earned_trust_2" } ]
+        "effect": [ { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" } ]
       }
     ]
   },
@@ -1050,9 +1050,9 @@
     "type": "talk_topic",
     "id": "TALK_HERMIT_DOING",
     "dynamic_line": {
-      "npc_has_trait": "hermit_earned_trust_1",
+      "npc_has_effect": "hermit_earned_trust_1",
       "yes": {
-        "npc_has_trait": "hermit_earned_trust_2",
+        "npc_has_effect": "hermit_earned_trust_2",
         "yes": "In truth, I am in self-imposed exile.  After so many of my fellows have been hunted down, or else slaughtered by various terrible things, I have nothing left to do with my life, nor the oath I have sworn.",
         "no": "Meditation, keeping myself busy with what I've learned, that sort of thing.  Little of value in such trying times, unfortunately."
       },
@@ -1062,19 +1062,19 @@
       {
         "text": "We will still prevail.  Do not lose hope just yet.",
         "topic": "TALK_HERMIT_PREVAIL",
-        "condition": { "and": [ { "npc_has_trait": "hermit_earned_trust_2" }, { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } ] }
+        "condition": { "and": [ { "npc_has_effect": "hermit_earned_trust_2" }, { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } ] }
       },
       {
         "switch": true,
         "text": "Terrible things?",
         "topic": "TALK_HERMIT_QUERY_THINGS",
-        "condition": { "npc_has_trait": "hermit_earned_trust_2" }
+        "condition": { "npc_has_effect": "hermit_earned_trust_2" }
       },
       {
         "switch": true,
         "text": "There is always value in such knowledge.  Surely there is something you can teach?",
         "topic": "TALK_HERMIT_TEACH",
-        "condition": { "npc_has_trait": "hermit_earned_trust_1" }
+        "condition": { "npc_has_effect": "hermit_earned_trust_1" }
       },
       {
         "switch": true,
@@ -1101,7 +1101,7 @@
         "success": {
           "topic": "TALK_HERMIT_DOING_ADMISSION",
           "opinion": { "trust": 1 },
-          "effect": { "npc_add_trait": "hermit_earned_trust_1" }
+          "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
         },
         "failure": { "topic": "TALK_HERMIT_DOING_DENIAL", "effect": { "npc_add_effect": "hermit_inquire_denied", "duration": 1800 } }
       },
@@ -1113,7 +1113,7 @@
         "success": {
           "topic": "TALK_HERMIT_DOING_ADMISSION",
           "opinion": { "trust": 1 },
-          "effect": { "npc_add_trait": "hermit_earned_trust_1" }
+          "effect": { "npc_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
         },
         "failure": { "topic": "TALK_HERMIT_DOING_DENIAL", "effect": { "npc_add_effect": "hermit_inquire_denied", "duration": 1800 } }
       },
@@ -1199,7 +1199,7 @@
       {
         "text": "To teach the next generation what is proper and safe.",
         "topic": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
-        "effect": { "npc_add_trait": "hermit_earned_trust_2" },
+        "effect": { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
         "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
       },
       {
@@ -1211,7 +1211,7 @@
       {
         "text": "Knowledge is power, but it is wasted unless passed on.",
         "topic": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
-        "effect": { "npc_add_trait": "hermit_earned_trust_2" },
+        "effect": { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
         "condition": { "u_has_trait": "PROF_SANGUINE" }
       },
       {
@@ -1223,13 +1223,13 @@
       {
         "text": "To gaze into the Beyond is to see the potential of a thousand worlds, and learn hidden truths...",
         "topic": "TALK_HERMIT_TEACH_ACCEPT_OATH",
-        "effect": { "npc_add_trait": "hermit_earned_trust_2" },
+        "effect": { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
         "condition": { "u_has_trait": "PROF_CHALICE" }
       },
       {
         "text": "I am eager to learn, if you would have me as a student.",
         "topic": "TALK_HERMIT_TEACH_ACCEPT",
-        "effect": { "npc_add_trait": "hermit_earned_trust_2" }
+        "effect": { "npc_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
       },
       { "text": "Well, you know.  Because?", "topic": "TALK_HERMIT_TEACH_REJECTION", "opinion": { "trust": -1 } },
       { "text": "Never mind.", "topic": "TALK_HERMIT" }

@@ -4,7 +4,7 @@
     "id": "hermit_earned_trust_1",
     "name": "Hermit Trust 1",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -14,7 +14,7 @@
     "id": "hermit_earned_trust_2",
     "name": "Hermit Trust 2",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -24,7 +24,7 @@
     "id": "hermit_stage_1",
     "name": "Hermit Quest Stage 1",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -34,7 +34,7 @@
     "id": "hermit_stage_2",
     "name": "Hermit Quest Stage 2",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -44,7 +44,7 @@
     "id": "hermit_stage_3",
     "name": "Hermit Quest Stage 3",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -54,7 +54,7 @@
     "id": "hermit_stage_4",
     "name": "Hermit Quest Stage 4",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -1093,6 +1093,40 @@
     "fatigue": true,
     "spawn_item": {
       "type": "spell_summonskel",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUMMONSHADOWSNAKE",
+    "name": "Arcana: Summon Shadow Snake",
+    "//": "Only zero points because it's a profression-specific spell, fatigue cost is calculated as though it has a cost of 4.",
+    "points": 0,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a shadow snake.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "active": true,
+    "cost": 60,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_summonshadowsnake",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUMMONSHADOW",
+    "name": "Arcana: Summon Shadow",
+    "//": "Only zero points because it's a profression-specific spell, fatigue cost is calculated as though it has a cost of 5.",
+    "points": 0,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a shadow.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "active": true,
+    "cost": 75,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_summonshadow",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },

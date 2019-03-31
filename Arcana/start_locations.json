@@ -27,6 +27,12 @@
   },
   {
     "type": "start_location",
+    "ident": "hermit_cabin",
+    "name": "Hermit Cabin",
+    "target": "arcana_hermitage_1"
+  },
+  {
+    "type": "start_location",
     "ident": "arcanist_basement",
     "name": "Arcanist Basement",
     "target": "arcanist_basement"

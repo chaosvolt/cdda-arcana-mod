@@ -1010,32 +1010,13 @@
   {
     "id": "spell_lockpick",
     "copy-from": "spell_base",
-    "type": "TOOL",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
     "name": "Magic Sign: Open Lock",
     "name_plural": "Magic Sign: Open Lock",
     "description": "A mote of energy that gives off a strange aura of artiface.  Activate it to manipulate most kinds of lock.",
     "color": "light_gray",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
-    "use_action": {
-      "target": "spell_lockpick_on",
-      "msg": "You activate the opening spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_lockpick_on",
-    "copy-from": "spell_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Open Lock (active)",
-    "name_plural": "Magic Sign: Open Lock (active)",
-    "description": "A mote of energy that gives off a strange aura of artiface.",
-    "color": "light_gray",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
     "use_action": { "type": "picklock", "pick_quality": 99 }
   },
   {
@@ -1212,26 +1193,6 @@
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
-      "target": "spell_summonwyrm_on",
-      "msg": "You activate the summoning spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_summonwyrm_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Summon Dark Wyrm (active)",
-    "name_plural": "Magic Sign: Summon Dark Wyrm (active)",
-    "description": "A mote of energy with endless coils perceived inside it.",
-    "color": "white",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_dark_wyrm_summoned",
       "friendly_msg": "The massive burrowing wyrm is at your beck and call.",
@@ -1251,26 +1212,6 @@
     "description": "A mote of energy with a smoldering wildfire perceived inside it.  Activate it to summon an ashen revenent.  It is somewhat easy to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
-    "use_action": {
-      "target": "spell_summonfiend_on",
-      "msg": "You activate the summoning spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_summonfiend_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Summon Fiend (active)",
-    "name_plural": "Magic Sign: Summon Fiend (active)",
-    "description": "A mote of energy with a smoldering wildfire perceived inside it.",
-    "color": "white",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_zombie_fiend_summoned",
@@ -1292,26 +1233,6 @@
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
-      "target": "spell_summonjabberwock_on",
-      "msg": "You activate the summoning spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_summonjabberwock_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Summon Jabberwock (active)",
-    "name_plural": "Magic Sign: Summon Jabberwock (active)",
-    "description": "A mote of energy with a dozen screaming faces perceived inside it.",
-    "color": "white",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_jabberwock_summoned",
       "friendly_msg": "The body of bodies is at your beck and call.",
@@ -1331,26 +1252,6 @@
     "description": "A mote of energy with a leering face perceived inside it.  Activate it to summon a mimicry of the human form.  It is somewhat difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
-    "use_action": {
-      "target": "spell_summonculus_on",
-      "msg": "You activate the summoning spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_summonculus_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Summon Homunculus (active)",
-    "name_plural": "Magic Sign: Summon Homunculus (active)",
-    "description": "A mote of energy with a leering face perceived inside it.",
-    "color": "white",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_homunculus_summoned",
@@ -1372,26 +1273,6 @@
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
-      "target": "spell_summonthing_on",
-      "msg": "You activate the summoning spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_summonthing_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Summon Horrifying Thing (active)",
-    "name_plural": "Magic Sign: Summon Horrifying Thing (active)",
-    "description": "A mote of energy with a writhing abomination perceived inside it.",
-    "color": "white",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_thing_summoned",
       "friendly_msg": "The mass of tendrils is at your beck and call.",
@@ -1412,31 +1293,51 @@
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
-      "target": "spell_summondog_on",
-      "msg": "You activate the summoning spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_summondog_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Summon Skeletal Dog (active)",
-    "name_plural": "Magic Sign: Summon Skeletal Dog (active)",
-    "description": "A mote of energy with shifting canine shapes perceived inside it.",
-    "color": "white",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_dog_skeleton_summoned",
       "friendly_msg": "The animalistic revenant is at your beck and call.",
-      "hostile_msg": "Your magic fails to control to animalistic revenant!",
+      "hostile_msg": "Your magic fails to control the animalistic revenant!",
       "difficulty": 1,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summonshadowsnake",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Shadow Snake",
+    "name_plural": "Magic Sign: Summon Shadow Snake",
+    "description": "A mote of energy with writhing cloud patterns perceived inside it.  Activate it to summon a serpentine shadow.  It is somewhat easy to control.",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_shadow_snake_summoned",
+      "friendly_msg": "The serpentine shadow is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the serpentine shadow!",
+      "difficulty": 3,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summonshadow",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Shadow",
+    "name_plural": "Magic Sign: Summon Shadow",
+    "description": "A mote of energy with strange shifting clouds perceived inside it.  Activate it to summon a living shadow.  It is somewhat easy to control.",
+    "color": "white",
+    "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_shadow_summoned",
+      "friendly_msg": "The living shadow is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the living shadow!",
+      "difficulty": 4,
       "moves": 60,
       "place_randomly": true,
       "skill1": "magic"
@@ -1452,30 +1353,10 @@
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
-      "target": "spell_summonskel_on",
-      "msg": "You activate the summoning spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_summonskel_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Summon Skeleton (active)",
-    "name_plural": "Magic Sign: Summon Skeleton (active)",
-    "description": "A mote of energy with imagery of the dead perceived inside it.",
-    "color": "white",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_skeleton_summoned",
       "friendly_msg": "The humanoid revenant is at your beck and call.",
-      "hostile_msg": "Your magic fails to control to humanoid revenant!",
+      "hostile_msg": "Your magic fails to control the humanoid revenant!",
       "difficulty": 3,
       "moves": 60,
       "place_randomly": true,
@@ -1491,26 +1372,6 @@
     "description": "A mote of energy with swirling shapes perceived inside it.  Activate it to summon the living wind.  It is somewhat difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
-    "use_action": {
-      "target": "spell_summonvortex_on",
-      "msg": "You activate the summoning spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_summonvortex_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Summon Vortex (active)",
-    "name_plural": "Magic Sign: Summon Vortex (active)",
-    "description": "A mote of energy with swirling shapes perceived inside it.",
-    "color": "white",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_vortex_summoned",
@@ -1531,26 +1392,6 @@
     "description": "A mote of energy with scenes of forbidden wealth perceived inside it.  Activate it to summon a worm-like abomination.  It is very difficult to control.",
     "color": "white",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
-    "use_action": {
-      "target": "spell_summonyugg_on",
-      "msg": "You activate the summoning spell.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "spell_summonyugg_on",
-    "copy-from": "spell_conjure_base",
-    "type": "TOOL",
-    "name": "Magic Sign: Summon Yugg  (active)",
-    "name_plural": "Magic Sign: Summon Yugg (active)",
-    "description": "A mote of energy with a scenes of forbidden wealth perceived inside it.",
-    "color": "white",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_yugg_summoned",
@@ -1772,5 +1613,227 @@
     "turns_per_charge": 1,
     "artifact_data": { "effects_activated": [ "AEA_BUGS", "AEA_VOMIT" ] },
     "use_action": "ARTIFACT"
+  },
+  {
+    "id": "spell_lockpick_on",
+    "copy-from": "spell_base",
+    "//": "All magic signs from here on out have been dummied out, to eventually be removed.",
+    "type": "TOOL",
+    "name": "Magic Sign: Open Lock (active)",
+    "name_plural": "Magic Sign: Open Lock (active)",
+    "description": "A mote of energy that gives off a strange aura of artiface.",
+    "color": "light_gray",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "picklock", "pick_quality": 99 }
+  },
+  {
+    "id": "spell_summonwyrm_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Dark Wyrm (active)",
+    "name_plural": "Magic Sign: Summon Dark Wyrm (active)",
+    "description": "A mote of energy with endless coils perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dark_wyrm_summoned",
+      "friendly_msg": "The massive burrowing wyrm is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the massive burrowing wyrm!",
+      "difficulty": 5,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summonfiend_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Fiend (active)",
+    "name_plural": "Magic Sign: Summon Fiend (active)",
+    "description": "A mote of energy with a smoldering wildfire perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zombie_fiend_summoned",
+      "friendly_msg": "The charred undead monster is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the charred undead monster!",
+      "difficulty": 3,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summonjabberwock_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Jabberwock (active)",
+    "name_plural": "Magic Sign: Summon Jabberwock (active)",
+    "description": "A mote of energy with a dozen screaming faces perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_jabberwock_summoned",
+      "friendly_msg": "The body of bodies is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the body of bodies!",
+      "difficulty": 7,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summonculus_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Homunculus (active)",
+    "name_plural": "Magic Sign: Summon Homunculus (active)",
+    "description": "A mote of energy with a leering face perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_homunculus_summoned",
+      "friendly_msg": "The humanoid construct is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the humanoid construct!",
+      "difficulty": 5,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summonthing_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Horrifying Thing (active)",
+    "name_plural": "Magic Sign: Summon Horrifying Thing (active)",
+    "description": "A mote of energy with a writhing abomination perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_thing_summoned",
+      "friendly_msg": "The mass of tendrils is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the mass of tendrils!",
+      "difficulty": 7,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summondog_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Skeletal Dog (active)",
+    "name_plural": "Magic Sign: Summon Skeletal Dog (active)",
+    "description": "A mote of energy with shifting canine shapes perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dog_skeleton_summoned",
+      "friendly_msg": "The animalistic revenant is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the animalistic revenant!",
+      "difficulty": 1,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summonskel_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Skeleton (active)",
+    "name_plural": "Magic Sign: Summon Skeleton (active)",
+    "description": "A mote of energy with imagery of the dead perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_skeleton_summoned",
+      "friendly_msg": "The humanoid revenant is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the humanoid revenant!",
+      "difficulty": 3,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summonvortex_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Vortex (active)",
+    "name_plural": "Magic Sign: Summon Vortex (active)",
+    "description": "A mote of energy with swirling shapes perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_vortex_summoned",
+      "friendly_msg": "The swirling wisp is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the swirling wisp!",
+      "difficulty": 5,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "spell_summonyugg_on",
+    "copy-from": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Summon Yugg  (active)",
+    "name_plural": "Magic Sign: Summon Yugg (active)",
+    "description": "A mote of energy with a scenes of forbidden wealth perceived inside it.",
+    "color": "white",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_yugg_summoned",
+      "friendly_msg": "The mutagenic worm beast is at your beck and call.",
+      "hostile_msg": "Your magic fails to control the mutagenic worm beast!",
+      "difficulty": 9,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
   }
 ]
