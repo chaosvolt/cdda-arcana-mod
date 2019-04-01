@@ -40,10 +40,10 @@
     },
     "dialogue": {
       "describe": "If you see this, it's a bug!",
-      "offer": "I've tried think more about what I can recall from the dreams.  Seeing that last place with my own eyes brought a bit of clarity to what I remember.  There's another place that stood out, another part of the countryside I've been to with strange features that shouldn't be there.  It might be more useful to investigate than the last place, too.",
-      "accepted": "I've been in that part of the countryside before, and what I saw in the dream definitely was never there back then.  Looked a bit more dangerous but there might be something valuable to make up for it.  And if there's nothing there, fine by me.  Would mean those dreams are just that, and nothing meaningful.",
+      "offer": "I've tried to think about what I can recall from the dreams.  Seeing that last place with my own eyes brought a bit of clarity to what I remember.  There's another place that stood out, another part of the countryside I've been to with strange features that shouldn't be there.  It might be more useful to investigate than the last place, too.",
+      "accepted": "I've been in that part of the countryside before, and what I saw in the dream definitely wasn't there back then.  Looked a bit more dangerous but there might be something valuable to make up for it.  And if there's nothing there, fine by me.  Would mean those dreams are just that, and nothing meaningful.",
       "rejected": "Alright.  Talk to me if you change your mind.  Maybe that last place was a fluke, maybe it had been there all this time and I just didn't remember until now.",
-      "advice": "I saw some sort of artificial structure, otherworldly but definitely manmade.  Or made by somthing, at least.  Expect anomalous monsters, whatever other hazards if any of it's actually real.",
+      "advice": "I saw some sort of artificial structure, otherworldly but definitely manmade.  Or made by something, at least.  Expect anomalous monsters, whatever other hazards if any of it's actually real.",
       "inquire": "Any luck so far?",
       "success": "This place is giving me the creeps.  It's real alright, too damn real.  We should be careful, clean the place out if you want but might be worth seeing if anything else I can recall stands out.  Whenever you're ready.",
       "success_lie": "What madness is this?",
