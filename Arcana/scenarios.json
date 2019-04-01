@@ -6,7 +6,7 @@
     "ident": "arcane_seeker",
     "points": 0,
     "start_name": "Arcanist Enclave",
-    "allowed_locs": [ "curious_structure", "impact_site", "island_temple", "strange_grove", "hermit_cabin" ],
+    "allowed_locs": [ "curious_structure", "impact_site", "island_temple", "strange_grove" ],
     "professions": [
       "arcanist_apprentice",
       "arcanist_alchemist",
@@ -38,7 +38,7 @@
     "ident": "arcane_urban",
     "points": 1,
     "start_name": "Hidden In Plain Sight",
-    "allowed_locs": [ "arcanist_basement", "cathedral_basement", "necropolis_basement" ],
+    "allowed_locs": [ "arcanist_basement", "cathedral_basement" ],
     "professions": [
       "unemployed",
       "priest",
