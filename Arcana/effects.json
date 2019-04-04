@@ -10,7 +10,13 @@
     "pain_sizing": true,
     "hurt_sizing": true,
     "main_parts_only": true,
-    "base_mods": { "pain_min": [ 5, 4 ], "pain_chance": [ 1, 1 ], "hurt_min": [ 10, 8 ], "hurt_max": [ 20, 15 ], "hurt_chance": [ 1, 1 ] }
+    "base_mods": {
+      "pain_min": [ 5, 4 ],
+      "pain_chance": [ 1, 1 ],
+      "hurt_min": [ 10, 8 ],
+      "hurt_max": [ 20, 15 ],
+      "hurt_chance": [ 1, 1 ]
+    }
   },
   {
     "type": "effect_type",
@@ -105,19 +111,13 @@
     "id": "potion_incense",
     "name": [ "Incense" ],
     "resist_effect": "talisman_warding",
-    "desc": [ "Your mind feels energizied, warding off fatigue." ],
+    "desc": [ "Your mind feels energized, warding off fatigue." ],
     "remove_message": "The incense's effect fades.",
     "decay_messages": [ [ "The effects of the incense are fading.", "bad" ] ],
     "rating": "good",
     "max_intensity": 30,
     "int_dur_factor": 10,
-    "base_mods": {
-      "str_mod": [ 1 ],
-      "dex_mod": [ 1 ],
-      "int_mod": [ -1, 0 ],
-      "per_mod": [ -1, 0 ],
-      "fatigue_min": [ -1 ]
-    }
+    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "int_mod": [ -1, 0 ], "per_mod": [ -1, 0 ], "fatigue_min": [ -1 ] }
   },
   {
     "type": "effect_type",
@@ -296,6 +296,11 @@
   },
   {
     "type": "effect_type",
+    "id": "sent_to_hermit",
+    "//": "This marks a player as having been led to The Hermit via a quest chain, no name or description since this one is player-side.  Intended to be permanent."
+  },
+  {
+    "type": "effect_type",
     "id": "hermit_inquire_denied",
     "name": [ "Inquiry Denied" ],
     "desc": [
@@ -307,7 +312,7 @@
     "id": "hermit_earned_trust_1",
     "name": [ "Trust 1" ],
     "desc": [
-      "AI tag marking The Hermit as having revealed their general familiarity with the arcane.  Intended to be permanant.  This is a bug if you have it."
+      "AI tag marking The Hermit as having revealed their general familiarity with the arcane.  Intended to be permanent.  This is a bug if you have it."
     ]
   },
   {
@@ -315,7 +320,7 @@
     "id": "hermit_earned_trust_2",
     "name": [ "Trust 2" ],
     "desc": [
-      "AI tag marking The Hermit as having revealed their affiliation with the Keepers of The Oath, and opening up quests.  Intended to be permanant.  This is a bug if you have it."
+      "AI tag marking The Hermit as having revealed their affiliation with the Keepers of The Oath, and opening up quests.  Intended to be permanent.  This is a bug if you have it."
     ]
   },
   {
@@ -323,7 +328,7 @@
     "id": "hermit_stage_1",
     "name": [ "Quest Stage 1" ],
     "desc": [
-      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanant.  This is a bug if you have it."
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  This is a bug if you have it."
     ]
   },
   {
@@ -331,7 +336,7 @@
     "id": "hermit_stage_2",
     "name": [ "Quest Stage 2" ],
     "desc": [
-      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanant.  This is a bug if you have it."
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  This is a bug if you have it."
     ]
   },
   {
@@ -339,7 +344,7 @@
     "id": "hermit_stage_3",
     "name": [ "Quest Stage 3" ],
     "desc": [
-      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanant.  This is a bug if you have it."
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  This is a bug if you have it."
     ]
   },
   {
@@ -347,7 +352,7 @@
     "id": "hermit_stage_4",
     "name": [ "Quest Stage 4" ],
     "desc": [
-      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanant.  This is a bug if you have it."
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  This is a bug if you have it."
     ]
   }
 ]

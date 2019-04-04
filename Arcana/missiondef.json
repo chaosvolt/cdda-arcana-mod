@@ -1,5 +1,81 @@
 [
   {
+    "id": "MISSION_FIND_HERMIT_1",
+    "type": "mission_definition",
+    "name": "Reach Standing Stones",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "difficulty": 2,
+    "value": 20000,
+    "origins": [ "ORIGIN_OPENER_NPC", "ORIGIN_ANY_NPC" ],
+    "followup": "MISSION_FIND_HERMIT_2",
+    "destination": "standing_stones",
+    "start": {
+      "effect": "follow",
+      "assign_mission_target": { "om_terrain": "standing_stones", "om_special": "Standing stones", "reveal_radius": 3, "search_range": 180, "z": 0 }
+    },
+    "dialogue": {
+      "describe": "If you see this, it's a bug!",
+      "offer": "As unreal as things have gotten, I've been trying to find some sort of answer to it all.  Or if not that, at least closure.  Not long before things boiled over, I've been having strange dreams of otherworldly scenery, and now that everything's gone to hell I'm wondering if there's any meaning to it.  I know it sounds crazy, but there might be something in what I recall that we could investigate.",
+      "accepted": "Thank you.  Thing is, some of the scenery from these dreams looked familiar, and after zero day I started poring over some local maps to try and make sense of what little looked real.  One of the places I recall was hidden away in a part of the local woods I used to go camping in.  I doubt we'll find anything, but maybe it'll give me peace of mind knowing these weird dreams don't have anything to do with what happened.",
+      "rejected": "I understand.  We've got more important things to worry about than chasing half-remembered dreams that might not mean anything.  Maybe another time...",
+      "advice": "Never know what we might run into along the way, maybe the journey will be more useful than what we find there.  The dream had a vision of strange stones and dark rituals.  If any of it turns out to be real, it might be good to visit during the daytime to be safe.",
+      "inquire": "Any luck so far?",
+      "success": "I don't believe it.  The stones, that cairn in the center?  It looks just just like how it appeared in the dreams.  Maybe my mind's playing tricks on me, but I could've sworn I never ran into anything like this before.  I don't know what to make of this.  I'll continue to follow you for now, maybe we can look into this further.",
+      "success_lie": "What madness is this?",
+      "failure": "How ...?"
+    }
+  },
+  {
+    "id": "MISSION_FIND_HERMIT_2",
+    "type": "mission_definition",
+    "name": "Reach Ruined Shrine",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "difficulty": 4,
+    "value": 40000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_FIND_HERMIT_3",
+    "destination": "shrine_anomaly",
+    "start": {
+      "assign_mission_target": { "om_terrain": "shrine_anomaly", "om_special": "Ruined Shrine", "reveal_radius": 3, "search_range": 180, "z": 0 }
+    },
+    "dialogue": {
+      "describe": "If you see this, it's a bug!",
+      "offer": "I've tried to think about what I can recall from the dreams.  Seeing that last place with my own eyes brought a bit of clarity to what I remember.  There's another place that stood out, another part of the countryside I've been to with strange features that shouldn't be there.  It might be more useful to investigate than the last place, too.",
+      "accepted": "I've been in that part of the countryside before, and what I saw in the dream definitely wasn't there back then.  Looked a bit more dangerous but there might be something valuable to make up for it.  And if there's nothing there, fine by me.  Would mean those dreams are just that, and nothing meaningful.",
+      "rejected": "Alright.  Talk to me if you change your mind.  Maybe that last place was a fluke, maybe it had been there all this time and I just didn't remember until now.",
+      "advice": "I saw some sort of artificial structure, otherworldly but definitely manmade.  Or made by something, at least.  Expect anomalous monsters, whatever other hazards if any of it's actually real.",
+      "inquire": "Any luck so far?",
+      "success": "This place is giving me the creeps.  It's real alright, too damn real.  We should be careful, clean the place out if you want but might be worth seeing if anything else I can recall stands out.  Whenever you're ready.",
+      "success_lie": "What madness is this?",
+      "failure": "How ...?"
+    }
+  },
+  {
+    "id": "MISSION_FIND_HERMIT_3",
+    "type": "mission_definition",
+    "name": "Reach Odd House",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "difficulty": 3,
+    "value": 30000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "destination": "arcana_hermitage_1",
+    "start": {
+      "effect": { "u_add_effect": "sent_to_hermit", "duration": "PERMANENT" },
+      "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "om_special": "Hermit Cabin", "reveal_radius": 3, "search_range": 180, "z": 0 }
+    },
+    "dialogue": {
+      "describe": "If you see this, it's a bug!",
+      "offer": "I'm convinced there's something to this.  I tried to go over any of what I remember, bring up anything that stood out.  This isn't giving me any answers or even any closure, just more questions.  One thing stood out though.  A house of some sort, and in that dream I didn't just see images of it.  I saw someone traveling there, and a shadow of something otherworldly hanging over the place.  Thinking on what I recalled was calming, for some reason.  Maybe we'll find something?",
+      "accepted": "Alright.  I'll show you what I recall of the area, and maybe we'll find something this time.  Can't be any worse than the last place we visited.",
+      "rejected": "I understand.  But this was the one dream, out of all the weird shit I can remember, that actually felt like more than just a warning, or omen, or whatever the hell the rest have been.",
+      "advice": "It was a rural house of sort sort.  Nothing dangerous or even weird stood out in that dream.  In fact it seemed like the most mundane out of the bunch, but there was this sense of foreboding, and what happened in it was so much more vivid.",
+      "inquire": "Any luck so far?",
+      "success": "Looks like the place.  I can see signs of the house being inhabited.  The place looks so familar even though this is the first time I've ever laid eyes on it in the waking world.  Maybe the dreams were visions of the future, if so I'm guessing that one was about traveling here, not just an omen or whatever.  I'll let you decide what to do if we meet anyone here, I don't know if the other dreams will do us much good.  At least trying to make sense of them, seeing these places in person made me feel, I don't know, better.  Less uneasy.  Thank you.",
+      "success_lie": "What madness is this?",
+      "failure": "How ...?"
+    }
+  },
+  {
     "id": "MISSION_HERMIT_RETRIEVE_SWORD",
     "type": "mission_definition",
     "name": "Retrieve The Cursed Blade",
