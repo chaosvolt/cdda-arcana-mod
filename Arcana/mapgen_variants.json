@@ -110,5 +110,78 @@
       ],
       "place_monsters": [ { "monster": "GROUP_NECROPOLIS_SEWERS", "x": [ 1, 22 ], "y": [ 1, 22 ], "density": 0.1 } ]
     }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "cathedral_b_SE" ],
+    "weight": 375,
+    "object": {
+      "rows": [
+        "__+________|############",
+        "__|_s_s_s__|############",
+        "__|--------|-|##########",
+        "__E________+<|##########",
+        "__EH__HEEH_|-|---|######",
+        "______HEEH_|}___f|######",
+        "______HEEH_+____f|######",
+        "___________|____o|######",
+        "__M__M_____C____o|######",
+        "___________C____C|######",
+        "__M__M_____C____s|######",
+        "_______HHH_C____C|######",
+        "------------|-+-||######",
+        "............x___|#######",
+        "............|]]]|#######",
+        ".I...I......|-x-|#######",
+        "........#####...########",
+        "........###.......######",
+        "..I..#####{........#####",
+        ".....#####{.heee..v#####",
+        "..I..#####{..eeeh..#####",
+        "....#######...h...######",
+        "############.....#######",
+        "########################"
+      ],
+      "palettes": [ "arcana_palette" ],
+      "terrain": {
+        ".": "t_concrete",
+        "C": "t_floor",
+        "E": "t_floor",
+        "H": "t_floor",
+        "M": "t_floor",
+        "e": "t_concrete",
+        "f": "t_floor",
+        "h": "t_concrete",
+        "o": "t_floor",
+        "s": "t_floor",
+        "v": "t_concrete",
+        "}": "t_floor",
+        "{": "t_concrete",
+        "]": "t_floor"
+      },
+      "furniture": {
+        "E": "f_table",
+        "H": "f_chair",
+        "M": "f_makeshift_bed",
+        "}": "f_rack",
+        "]": "f_bookcase"
+      },
+      "items": {
+        "}": { "item": "cleaning", "chance": 70 },
+        "o": { "item": "oven", "chance": 70 },
+        "]": { "item": "mansion_bookcase", "chance": 100 },
+        "f": { "item": "fridge", "chance": 70 }
+      },
+      "place_loot": [
+        { "group": "cleansing_flame_books", "x": [ 13, 15 ], "y": [ 19, 20 ], "chance": 60, "repeat": 5 },
+        { "item": "note_flame_tenet", "x": [ 13, 15 ], "y": [ 19, 20 ] },
+        { "item": "arcanemap", "x": [ 13, 15 ], "y": [ 19, 20 ], "chance": 25 },
+        { "group": "cleansing_flame_gear_consumables", "x": 10, "y": [ 18, 20 ], "chance": 30, "repeat": 4 }
+      ],
+      "place_monster": [
+        { "monster": "mon_flesh_angel", "x": 2, "y": 19 }
+      ]
+    }
   }
 ]
