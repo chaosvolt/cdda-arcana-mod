@@ -707,6 +707,7 @@
     "subtype": "collection",
     "entries": [
       { "item": "scourge_staff", "prob": 100 },
+      { "item": "triffid_queen_flower", "prob": 100 },
       { "item": "essence", "count": [ 2, 5 ] }
     ]
   },

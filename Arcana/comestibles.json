@@ -125,9 +125,9 @@
       "limb_power": 3,
       "head_power": 3,
       "torso_power": 3,
-      "limb_scaling": 1.7,
-      "head_scaling": 1.7,
-      "torso_scaling": 1.7,
+      "limb_scaling": 2.7,
+      "head_scaling": 2.7,
+      "torso_scaling": 2.7,
       "bleed": 1.0,
       "bite": 0.95,
       "move_cost": 200,
@@ -154,7 +154,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "Wisps of smoke rapidly fade away as you light the incense, filling you with energy.",
-      "effects": [ { "id": "potion_incense", "duration": 100 } ],
+      "effects": [ { "id": "potion_incense", "duration": 150 } ],
       "charges_needed": { "fire": 1 },
       "moves": 50
     }
