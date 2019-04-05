@@ -192,7 +192,7 @@
     "revert_to": "sun_sword",
     "techniques": [ "WBLOCK_2", "VORPAL" ],
     "use_action": [
-      { "type": "firestarter", "moves": 15 },
+      { "type": "firestarter", "moves": 30 },
       { "menu_text": "Turn off", "type": "transform", "msg": "The sword's radiance fades.", "target": "sun_sword" }
     ],
     "relative": { "cutting": 5 },
@@ -1328,17 +1328,18 @@
   },
   {
     "id": "flame_talisman",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "category": "tools",
+    "type": "TOOL",
     "name": "flame talisman",
-    "description": "A crude paper talisman marked with strange patterns, and annointed with a meager sacrifice.  It can be used to rapidly spark a fire, if you're desperate.",
+    "description": "A crude paper talisman marked with strange patterns, and annointed with a meager sacrifice.  It can be used to rapidly spark a fire, if you're desparate.",
     "weight": 150,
-    "volume": 1,
+    "volume": "100 ml",
     "material": "paper",
     "symbol": ",",
     "color": "cyan",
-    "use_action": { "type": "firestarter", "moves": 10 },
+    "initial_charges": 15,
+    "max_charges": 15,
+    "charges_per_use": 1,
+    "use_action": { "type": "firestarter", "moves": 5 },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1349,7 +1350,7 @@
     "name": "water talisman",
     "description": "A crude paper talisman marked with strange patterns, and annointed with a hunter's sacrifice.  It can be used to mend minor wounds, along with providing limited resistance to certain alchemical effects.",
     "weight": 150,
-    "volume": 1,
+    "volume": "100 ml",
     "material": "paper",
     "symbol": ",",
     "color": "cyan",
@@ -1376,7 +1377,7 @@
     "name": "earth talisman",
     "description": "A crude paper talisman marked with strange patterns, and annointed with a peculiar sacrifice.  Using it will conjure and transmutate a structure of strange earth and stone, to serve as a meager shelter in times of desparation.",
     "weight": 150,
-    "volume": 1,
+    "volume": "100 ml",
     "material": "paper",
     "symbol": ",",
     "color": "cyan",
@@ -1397,15 +1398,47 @@
     "type": "TOOL",
     "name": "candle of warding",
     "name_plural": "candle of warding",
-    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Though its ghostly blue flame emits neither light nor heat, it can be used to place a magical barrier.  The barrier this item creates is not indestructable, but it is tough.",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  It can be used to place a magical barrier, or used to project a faint light.  The barrier this item creates is not indestructable, but it is tough.",
     "weight": 100,
     "volume": 1,
     "price": 1000,
     "material": "essencemat",
     "symbol": ",",
     "color": "white",
-    "use_action": { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" },
+    "use_action": [
+      {
+        "target": "candle_warding_active",
+        "msg": "The candle gives off a faint blue flame.",
+        "menu_text": "Light candle of warding",
+        "type": "transform"
+      },
+      { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
+    ],
     "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "candle_warding_active",
+    "type": "TOOL",
+    "name": "candle of warding (on)",
+    "name_plural": "candle of warding (on)",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Its wick is lit with a ghostly blue flame, projecting light without heat.  It can also be used to place a magical barrier, one that's tough but not indestructable.",
+    "looks_like": "candle_warding",
+    "weight": 100,
+    "volume": 1,
+    "price": 1000,
+    "material": "essencemat",
+    "symbol": ",",
+    "color": "white",
+    "use_action": [
+      {
+        "target": "candle_warding_active",
+        "msg": "The candle's wick is extinguished.",
+        "menu_text": "Extinguish candle of warding",
+        "type": "transform"
+      },
+      { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
+    ],
+    "flags": [ "NO_SALVAGE", "LIGHT_8" ]
   },
   {
     "id": "orb_veil",

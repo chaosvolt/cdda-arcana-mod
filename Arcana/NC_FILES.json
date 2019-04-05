@@ -47,12 +47,11 @@
       { "item": "pants" },
       { "item": "dress_shirt" },
       { "item": "robe" },
-      { "item": "hat_knit" },
       { "item": "knit_scarf" },
       { "item": "gloves_leather" },
       { "item": "socks" },
       { "item": "boots_hiking" },
-      { "item": "duffelbag" },
+      { "item": "backpack" },
       { "item": "glasses_eye" },
       { "item": "charm_bone" }
     ]
@@ -74,7 +73,7 @@
       { "item": "arcanemap", "prob": 50 },
       { "item": "book_sacrifice" },
       { "item": "offering_chalice" },
-      { "group": "magic_consumables", "count": [ 4, 8 ] }
+      { "group": "magic_consumables", "count": [ 2, 4 ] }
     ]
   },
   {
