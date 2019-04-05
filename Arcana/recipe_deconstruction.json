@@ -92,7 +92,7 @@
     "result": "moonstone_fang",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 0,
+    "difficulty": 5,
     "time": 50000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "material_sand", 6 ] ], [ [ "essence_dull", 50 ] ] ]
@@ -105,6 +105,15 @@
     "time": 40000,
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "copper", 100 ] ], [ [ "essence_dull", 45 ] ] ]
+  },
+  {
+    "result": "candle_warding",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": 30000,
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 10 ] ] ]
   },
   {
     "result": "offering_chalice",

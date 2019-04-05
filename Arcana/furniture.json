@@ -23,7 +23,7 @@
     "bgcolor": [ "blue" ],
     "move_cost_mod": -2,
     "required_str": -1,
-    "flags": [ "NOITEM", "TRANSPARENT" ],
+    "flags": [ "NOITEM", "TRANSPARENT", "USABLE_FIRE" ],
     "deployed_item": "candle_barrier_aftermath",
     "examine_action": "deployed_furniture"
   },
@@ -37,7 +37,7 @@
     "bgcolor": [ "magenta" ],
     "move_cost_mod": -2,
     "required_str": -1,
-    "flags": [ "NOITEM", "TRANSPARENT" ],
+    "flags": [ "NOITEM", "TRANSPARENT", "USABLE_FIRE" ],
     "deployed_item": "candle",
     "examine_action": "deployed_furniture",
     "bash": {

@@ -151,7 +151,7 @@
     "tools": [
       [ [ "book_sacrifice", -1 ] ],
       [ [ "book_bloodmagic", -1 ] ],
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ], [ "fire", -1 ] ],
+      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ], [ "candle_warding_active", -1 ], [ "fire", -1 ] ],
       [
         [ "holy_symbol", -1 ],
         [ "holy_symbol_wood", -1 ],
