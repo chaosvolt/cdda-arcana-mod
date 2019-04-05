@@ -87,22 +87,13 @@
         "########################"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": {
-        "?": "t_rock_floor",
-        "!": "t_railing_h"
-      },
-      "furniture": {
-        "?": "f_sofa"
-      },
+      "terrain": { "?": "t_rock_floor", "!": "t_railing_h" },
+      "furniture": { "?": "f_sofa" },
       "mapping": {
         ".": { "item": { "item": "rock", "chance": 5 } },
         "]": { "furniture": "f_bookcase", "items": { "item": "mansion_bookcase", "chance": 100 } },
-        "d": {
-          "item": [ { "item": "book_magicfordummies" }, { "item": "note_soa_mission" } ]
-        },
-        "C": {
-          "items": [ { "item": "tools_survival", "chance": 50 } ]
-        }
+        "d": { "item": [ { "item": "book_magicfordummies" }, { "item": "note_soa_mission" } ] },
+        "C": { "items": [ { "item": "tools_survival", "chance": 50 } ] }
       },
       "place_items": [
         { "item": "alcohol", "x": [ 2, 2 ], "y": [ 14, 14 ], "chance": 90 },
@@ -160,13 +151,7 @@
         "{": "t_concrete",
         "]": "t_floor"
       },
-      "furniture": {
-        "E": "f_table",
-        "H": "f_chair",
-        "M": "f_makeshift_bed",
-        "}": "f_rack",
-        "]": "f_bookcase"
-      },
+      "furniture": { "E": "f_table", "H": "f_chair", "M": "f_makeshift_bed", "}": "f_rack", "]": "f_bookcase" },
       "items": {
         "}": { "item": "cleaning", "chance": 70 },
         "o": { "item": "oven", "chance": 70 },
@@ -179,9 +164,128 @@
         { "item": "arcanemap", "x": [ 13, 15 ], "y": [ 19, 20 ], "chance": 25 },
         { "group": "cleansing_flame_gear_consumables", "x": 10, "y": [ 18, 20 ], "chance": 30, "repeat": 4 }
       ],
-      "place_monster": [
-        { "monster": "mon_flesh_angel", "x": 2, "y": 19 }
-      ]
+      "place_monster": [ { "monster": "mon_flesh_angel", "x": 2, "y": 19 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "mansion_+_dn", "mansion_+2d" ],
+    "weight": 900,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "X...........]..XCC.....X",
+        "X......]....]..XCC.....X",
+        "Xkk....].p]]]..X......KX",
+        "Xkk....]]]].]..XK....KKX",
+        "X...........p..X...KKsKX",
+        "XKK...??.......+...K1s.X",
+        "XKK...??..*....X...//sZX",
+        "X............R.X....vKZX",
+        "XXXX+XXXXXXXXXXX....11@X",
+        "Xhu...wqXllll-CXCC...g1X",
+        "X.K....gX----2CXCC.....X",
+        "+.......XF----CX.......+",
+        "+.....KKXF----$XK......+",
+        "X.....KKX-iiii-XKK.....X",
+        "Xv......X-i--i-XKK...r.X",
+        "Xnv....aXXX%%XXXXXX+XXXX",
+        "Xn.....@X*mmmm.........X",
+        "X......(X..............X",
+        "X.KK....X.........tt..*X",
+        "X.KK....+.....tt..tt..cX",
+        "Xee.ss..X.....tt......cX",
+        "Xee..KK.Xkk...tt......cX",
+        "Xee11KK.Xkk.......cccccX",
+        "XXXXXXXXXXX++XXXXXXXXXXX"
+      ],
+      "palettes": [ "mansion_palette_common", "mansion_palette_basement" ],
+      "terrain": { "$": "t_carpet_red", "C": "t_carpet_red", "i": "t_carpet_red" },
+      "furniture": { "$": "f_safe_l", "F": "f_fireplace", "i": "f_candle_barrier" },
+      "items": {
+        "(": { "item": "trash_cart", "chance": 30 },
+        ".": { "item": "clutter_basement" },
+        "D": { "item": "office", "chance": 35 },
+        "F": { "item": "cult_sacrifice", "chance": 100 },
+        "K": { "item": "crate_stack", "chance": 100 },
+        "c": { "item": "home_hw", "chance": 25 },
+        "k": { "item": "hardware_bulk", "chance": 30 },
+        "m": { "item": "plumber_gear", "chance": 40 },
+        "n": { "item": "softdrugs", "chance": 5 },
+        "q": { "item": "oven", "chance": 10 },
+        "r": { "item": "tool_common_stack", "chance": 100 },
+        "t": { "item": "home_hw", "chance": 20 },
+        "v": { "item": "a_television", "chance": 100 },
+        "z": { "item": "dresser_shabby", "chance": 100 }
+      },
+      "place_loot": [
+        { "group": "sanguine_cult_books", "x": [ 9, 12 ], "y": 9, "chance": 50, "repeat": 8 },
+        { "item": "note_sanguine_tenet", "x": 12, "y": 9 },
+        { "group": "creepy", "x": 14, "y": [ 9, 11 ], "chance": 50, "repeat": 6 },
+        { "group": "mansion_gunsafe", "x": 14, "y": 12, "chance": 100 },
+        { "group": "sanguine_cult_consumables", "x": 14, "y": 12, "chance": 50, "repeat": 3 }
+      ],
+      "place_monsters": [ { "monster": "GROUP_MANSION", "x": [ 2, 21 ], "y": [ 2, 21 ], "density": 0.1 } ],
+      "place_monster": [ { "monster": "mon_gozu", "x": 11, "y": 11 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "mansion_+_dn", "mansion_+4d" ],
+    "weight": 1000,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "X....X.KKXP=YXD--------X",
+        "X....X..KX===X&2-D-----X",
+        "X....X...X===XD-2&D---DX",
+        "X..XXXX%XXX+XX&2-D&2-2&X",
+        "X............XD-2&D---DX",
+        "X............X---D&2-2&X",
+        "X..XX%XXXXX..+----D---DX",
+        "X..X......X..X---------X",
+        "X..Xrr.rrrX..XNFN)-----X",
+        "X..XXX%XXXX..XXXXXXXX++X",
+        "X..X##-###X..X######X..X",
+        "+..X#---##X..X######X..+",
+        "+..X#---##X..X######X..+",
+        "XXXX#---##X..X######XXXX",
+        "X####---##X..X#########X",
+        "X####---##X..X#########X",
+        "X###R---R#X..X#########X",
+        "X###R---R#X..X#########X",
+        "X###R---R#X..X#########X",
+        "X###--S--#X..X#########X",
+        "X###-----#X..X#########X",
+        "X###lllll#X..X#########X",
+        "X#########X..X#########X",
+        "XXXXXXXXXXX++XXXXXXXXXXX"
+      ],
+      "palettes": [ "mansion_palette_common", "mansion_palette_basement" ],
+      "terrain": { "R": "t_carpet_red", "N": "t_carpet_red", "l": "t_carpet_red" },
+      "furniture": { "S": "f_slab" },
+      "toilets": { "P": {  } },
+      "items": {
+        ")": { "item": "harddrugs", "chance": 30 },
+        ".": { "item": "clutter_basement" },
+        "D": { "item": "vending_food", "chance": 25 },
+        "F": { "item": "fridgesnacks", "chance": 45 },
+        "K": { "item": "crate_stack", "chance": 100 },
+        "N": { "item": "vending_food", "chance": 40 },
+        "S": { "item": "cult_sacrifice", "chance": 100 },
+        "Y": { "item": "softdrugs", "chance": 20 },
+        "r": { "item": "crate_stack", "chance": 100 }
+      },
+      "place_loot": [
+        { "group": "chalice_cult_books", "x": [ 4, 8 ], "y": 21, "chance": 50, "repeat": 8 },
+        { "item": "note_chalice_tenet", "x": [ 4, 8 ], "y": 21 },
+        { "group": "antique_rare", "x": 4, "y": [ 16, 18 ], "chance": 50, "repeat": 4 },
+        { "group": "chalice_cult_consumables", "x": 8, "y": [ 16, 18 ], "chance": 50, "repeat": 4 }
+      ],
+      "place_monsters": [ { "monster": "GROUP_MANSION", "x": [ 2, 21 ], "y": [ 2, 8 ], "density": 0.1 } ],
+      "place_monster": [ { "monster": "mon_vortex", "x": [ 5, 7 ], "y": [ 11, 18 ], "repeat": [ 2, 4 ] } ]
     }
   }
 ]
