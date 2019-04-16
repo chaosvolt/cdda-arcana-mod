@@ -168,7 +168,7 @@
         "############+###########",
         "###...................##",
         "##..IIIIIIIIIIIIIIIII..#",
-        "##.II...............II.#",
+        "##.II.....AF.CK.....II.#",
         "##.I.................I.#",
         "##.I.................I.#",
         "##.I.................I.#",
@@ -201,7 +201,8 @@
         { "group": "cleansing_flame_books", "x": 7, "y": [ 2, 6 ], "chance": 75, "repeat": 10 },
         { "group": "cleansing_flame_books", "x": 22, "y": [ 2, 6 ], "chance": 75, "repeat": 10 },
         { "group": "cleansing_flame_spells", "x": 22, "y": [ 2, 6 ], "chance": 5, "repeat": 3 },
-        { "item": "note_flame_tenet", "x": 22, "y": [ 2, 6 ], "chance": 90 }
+        { "item": "note_flame_tenet", "x": 22, "y": [ 2, 6 ], "chance": 90 },
+        { "item": "candle_warding_active", "x": 13, "y": 11, "chance": 50 }
       ],
       "place_monsters": [ { "monster": "GROUP_CF_BASEMENT", "x": [ 2, 22 ], "y": [ 9, 18 ], "density": 0.15 } ]
     }

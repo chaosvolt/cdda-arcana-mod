@@ -70,7 +70,9 @@
       "MINEABLE",
       "FLAT_SURF"
     ],
-    "bash": { "str_min": 10, "str_max": 20, "sound": "smash!", "sound_fail": "thump." }
+    "bash": { "str_min": 10, "str_max": 20, "sound": "smash!", "sound_fail": "thump." },
+    "examine_action": "workbench",
+    "workbench": { "multiplier": 1.0, "mass": 100000, "volume": "100L" }
   },
   {
     "type": "furniture",
