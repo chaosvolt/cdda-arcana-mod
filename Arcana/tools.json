@@ -1431,7 +1431,7 @@
     "color": "white",
     "use_action": [
       {
-        "target": "candle_warding_active",
+        "target": "candle_warding",
         "msg": "The candle's wick is extinguished.",
         "menu_text": "Extinguish candle of warding",
         "type": "transform"
