@@ -762,8 +762,8 @@
     "species": [ "NETHER" ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "special_attacks": [ [ "VINE", 20 ] ],
-    "extend": { "flags": [ "REVIVES" ] },
+    "special_attacks": [ { "type": "bite", "cooldown": 10 } ],
+    "extend": { "flags": [ "REVIVES", "VENOM" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
