@@ -211,7 +211,7 @@
         "K": { "item": "crate_stack", "chance": 100 },
         "c": { "item": "home_hw", "chance": 25 },
         "k": { "item": "hardware_bulk", "chance": 30 },
-        "m": { "item": "plumber_gear", "chance": 40 },
+        "m": { "item": "hardware_plumbing", "chance": 40 },
         "n": { "item": "softdrugs", "chance": 5 },
         "q": { "item": "oven", "chance": 10 },
         "r": { "item": "tool_common_stack", "chance": 100 },
