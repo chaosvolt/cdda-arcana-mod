@@ -11,5 +11,19 @@
     "chat": "TALK_HERMIT",
     "faction": "wasteland_scavengers",
     "mission_offered": "MISSION_HERMIT_RETRIEVE_SWORD"
+  },
+  {
+    "type": "npc",
+    "id": "cleansing_flame_representative",
+    "//":, "Primary quest source.",
+    "name_unique": "Sofia McKinnon",
+    "name_suffix": "Thane",
+    "gender": "female",
+    "class": "NC_CF_REP",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_CF_REP",
+    "faction": "wasteland_scavengers",
+    "mission_offered": "MISSION_CF_REP_1"
   }
 ]
