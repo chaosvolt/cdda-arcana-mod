@@ -1,0 +1,47 @@
+[
+  {
+    "id": "TALK_EVAC_MERCHANT",
+    "type": "talk_topic",
+    "responses": [
+
+      {
+        "text": "Test one.  Do you know of any other settlements surviving in the region?",
+        "topic": "TALK_EVAC_MERCHANT_CF",
+        "effect": [
+          { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" },
+          { "u_add_effect": "rural_church_aware", "duration": "PERMANENT" },
+          {
+            "mapgen_update": "some_mapgen_update_id",
+            "om_terrain": "cf_church_4",
+            "om_special": "cf_rural_church",
+            "om_terrain_replace": "field",
+            "random": true,
+            "reveal_radius": 3,
+            "search_range": 180
+          }
+        ],
+        "condition": { "not": { "npc_has_effect": "rural_church_aware" } }
+      },
+      {
+        "text": "Test two.  Do you know of any other settlements surviving in the region?",
+        "topic": "TALK_EVAC_MERCHANT_CF",
+        "effect": [
+          { "u_add_effect": "rural_church_aware", "duration": "PERMANENT" },
+          {
+            "om_terrain": "cf_church_4",
+            "om_special": "cf_rural_church",
+            "reveal_radius": 3,
+            "search_range": 180
+          }
+        ],
+        "condition": { "and": [ { "not": { "u_has_effect": "rural_church_aware" } }, { "npc_has_effect": "rural_church_aware" } ] }
+      }
+    ]
+  },
+  {
+    "id": "TALK_EVAC_MERCHANT_CF",
+    "type": "talk_topic",
+    "dynamic_line": "Nep nep, beep bep.",
+    "responses": [ { "text": "No rest for the weary...", "topic": "TALK_EVAC_MERCHANT" } ]
+  }
+]

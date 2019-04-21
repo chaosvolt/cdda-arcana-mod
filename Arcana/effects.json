@@ -354,5 +354,10 @@
     "desc": [
       "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  This is a bug if you have it."
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "rural_church_aware",
+    "//": "Effect for both players and NPCs, to filter out whether the rural church has already spawned vs new players asking about the structure.  Intended to be permanant.  Do name or description since players will get it too."
   }
 ]
