@@ -29,6 +29,8 @@
     "carry_override": "NC_HERMIT_carry",
     "weapon_override": "NC_HERMIT_weapon",
     "traits": [
+      [ "SKIN_MEDIUM", 100 ],
+      [ "hair_white_short", 100 ],
       [ "PROF_CHALICE", 100 ],
       [ "NIGHTVISION", 100 ],
       [ "MYOPIC", 100 ],
