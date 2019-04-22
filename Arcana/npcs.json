@@ -15,15 +15,26 @@
   {
     "type": "npc",
     "id": "cleansing_flame_representative",
-    "//":, "Primary quest source.",
+    "//": "Primary quest source.",
     "name_unique": "Sofia McKinnon",
     "name_suffix": "Thane",
     "gender": "female",
     "class": "NC_CF_REP",
     "attitude": 0,
-    "mission": 7,
+    "mission": 3,
     "chat": "TALK_CF_REP",
     "faction": "wasteland_scavengers",
     "mission_offered": "MISSION_CF_REP_1"
+  },
+  {
+    "type": "npc",
+    "id": "mage_hunter_guard",
+    "//": "Cleansing Flame guard, generic.",
+    "name_suffix": "Mage Hunter",
+    "class": "NC_MAGE_HUNTER",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_CF_REP",
+    "faction": "wasteland_scavengers"
   }
 ]
