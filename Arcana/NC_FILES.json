@@ -281,7 +281,7 @@
           { "group": "NC_MAGE_HUNTER_carry_cutting", "prob": 50 },
           { "group": "NC_MAGE_HUNTER_carry_crossbows", "prob": 25 },
           { "group": "NC_MAGE_HUNTER_carry_wraithslayer", "prob": 25 }
-        ]
+        ], "prob": 90
       },
       { "item": "water_clean" },
       { "item": "lighter" },
