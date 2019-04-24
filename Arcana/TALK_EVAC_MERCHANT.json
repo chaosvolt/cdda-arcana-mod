@@ -40,7 +40,9 @@
   {
     "id": "TALK_EVAC_MERCHANT_CF",
     "type": "talk_topic",
-    "dynamic_line": "Not many holdouts large enough to call a settlement, but there is activity out there at least.  We have our own work on getting something set up.  There's also a small group that occasionally sends traders to visit us, seems they're holed up in some old church off the roadside.  I'll go ahead and tell you roughly where it should be.",
-    "responses": [ { "text": "Thank you.", "topic": "TALK_EVAC_MERCHANT" } ]
+    "dynamic_line": "Not many holdouts large enough to call a settlement, but there is activity out there at least.  We have our own work on getting something set up.  There's also a small group that occasionally sends traders to visit us, seems they're holed up in some old church off the roadside.  I'll go ahead and write down the directions for you.",
+    "responses": [
+    { "text": "Thank you.", "effect": { "u_buy_item": "cf_church_map" }, "topic": "TALK_EVAC_MERCHANT" }
+    ]
   }
 ]

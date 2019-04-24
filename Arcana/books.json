@@ -269,6 +269,32 @@
     }
   },
   {
+    "id": "cf_church_map",
+    "type": "GENERIC",
+    "category": "books",
+    "name": "settlement coordinates",
+    "description": "This is a hand-written set of coordindates and directions to a holdout of survivors, based out of an old church of some sort.  Using it will mark this location on your map.",
+    "weight": 30,
+    "volume": 1,
+    "price": 1000,
+    "to_hit": -1,
+    "material": "paper",
+    "symbol": ";",
+    "looks_like": "survivormap",
+    "color": "white",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 180,
+      "terrain": [
+        "cf_church_1",
+        "cf_church_2",
+        "cf_church_3",
+        "cf_church_4"
+      ],
+      "message": "You add the location of the \"rural curch\" described by the merchant to your map."
+    }
+  },
+  {
     "id": "index_potioncraft",
     "copy-from": "arcana_note_base",
     "sub": "book_potioncraft",

@@ -1,0 +1,187 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_MAGE_HUNTER",
+    "dynamic_line": {
+      "u_has_effect": "cf_mission_1",
+      "yes": [
+        "I'm glad that you're still in one piece for now.",
+        "It's good to see you alive and well.",
+        {
+          "u_has_trait": "PROF_CLEANSINGFLAME",
+          "yes": { "u_male": "Welcome back, Brother.", "no": "Welcome back, Sister." },
+          "no": "Welcome back."
+        },
+        {
+          "u_has_trait": "PROF_SANGUINE",
+          "yes": [
+            "I never thought we'd end up working together.  A welcome reprieve, I suppose.",
+            "I'm glad we aren't fighting each other for once."
+          ],
+          "no": "Thank you once again for your help here."
+        }
+      ],
+      "no": {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": [
+          "Cause no trouble, blood mage.",
+          "I have nothing to say to you, sanguinist.",
+          "I can sense the taint of blood magic even without a mask.  Why are you here?",
+          "If not for Thane McKinnon's orders, I would slay you where you stand.  What do you want?",
+          "We will tolerate your presence so long as you don't try anything, but we are watching, sanguinist."
+        ],
+        "no": [
+          "Greetings.",
+          "Hello.  You are welcome to stay if needed.",
+          "A visitor?  Speak with Thane McKinnon, she can best answer any questions you may have.",
+          "Welcome.  If you are here to trade, I'm afraid we have little to offer.",
+          {
+            "u_has_trait": "PROF_CLEANSINGFLAME",
+            "yes": {
+              "u_male": [ "Welcome, Brother.  This is our sanctum, for now.", "Greetings, Brother.  I'm glad we aren't the only ones left." ],
+              "no": [ "Welcome, Sister.  This is our sanctum, for now.", "Greetings, Sister.  I'm glad we aren't the only ones left." ]
+            },
+            "no": "Cause no trouble, and you will be welcome here."
+          }
+        ]
+      }
+    },
+    "responses": [
+      { "text": "What is this place?", "topic": "TALK_MAGE_HUNTER_WHERE" },
+      { "text": "Anything I can help with?", "topic": "TALK_MAGE_HUNTER_HELP" },
+      {
+        "text": "Who are you people, anyway?",
+        "topic": "TALK_MAGE_HUNTER_WHO",
+        "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } }
+      },
+      {
+        "text": "What remains of our order?",
+        "topic": "TALK_MAGE_HUNTER_REMAIN",
+        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+      },
+      {
+        "text": "I'm not here to fight you, hunter.",
+        "topic": "TALK_MAGE_HUNTER_SANGUINE",
+        "condition": { "and": [ { "not": { "u_has_effect": "cf_mission_1" } }, { "u_has_trait": "PROF_SANGUINE" } ] }
+      },
+      {
+        "text": "Take your attitude and shove it, mage hunter.",
+        "topic": "TALK_MAGE_HUNTER",
+        "opinion": { "value": -3, "anger": 1 },
+        "effect": [ { "u_faction_rep": -1 } ],
+        "condition": { "and": [ { "not": { "u_has_effect": "cf_mission_1" } }, { "u_has_trait": "PROF_SANGUINE" } ] }
+      },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_WHERE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "An old church, it seems.  Best place we could find for shelter.",
+      "Local parish church, hallowed ground is a good place for a sanctum, and it's a sturdy building against mundane threats.",
+      "A church.  Moved some things around to make it better shelter, a few of the others added personal touches of their own.  Of many faiths, after all...",
+      "For now, our sanctum.  Cities have become too dangerous.",
+      "Don't know much about the place itself.  Thane McKinnon could tell you more, I suspect."
+    ],
+    "responses": [ { "text": "I see.", "topic": "TALK_MAGE_HUNTER" } ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_HELP",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I have no jobs for you.",
+      "I'm afraid I have nothing you can help with.",
+      "Talk to Thane McKinnon or one of the others in charge here, they should have something you can help with.",
+      "The others here should have work if you need it.",
+      "We'll manage, but thank you.  Speak with Sofia, she might have something for you to do.",
+      {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": {
+          "u_has_effect": "cf_mission_1",
+          "yes": [
+            "A pleasant surprise surprise to hear.  I have nothing for you however, speak to the others in charge here.",
+            "You know the drill.  Speak with Thane McKinnon.",
+            "I sure hope Sofia knows what she's doing ...right.  Talk to her if you're looking for work."
+          ],
+          "no": [
+            "You?  A blood mage? Is this a trick of some kind?  If you're honest about it, speak with those in charge here.",
+            "Never thought I'd hear that from a blood mage.  Speak with Thane McKinnon.  If this is a trick of some kind, remember.  We.  Are.  Watching you.",
+            "I have nothing for you, sanguinist."
+          ]
+        },
+        "no": "I have nothing for you, sadly."
+      }
+    ],
+    "responses": [ { "text": "Oh, okay", "topic": "TALK_MAGE_HUNTER" } ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_WHO",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Hunters of otherworldly monsters.  It's the least we can do, in times like these.",
+      "Of many faiths, united in purpose.  Thane McKinnon would be better able to tell you more.",
+      "Before all this started, a gathering of different religious communities.  Before my time, I'm afraid.",
+      "Survivors, at this point.  All that matters now, so long as we don't abandon our duties in the process.",
+      "You've seen the monsters, right?  Strange events perhaps, supernatural even?  Our purpose is to do what little we can, to protect people from things like that."
+    ],
+    "responses": [ { "text": "I see.", "topic": "TALK_MAGE_HUNTER" } ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_REMAIN",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "You're the first of our brethren outside our hunting party that I've seen since this mess started.  I wish I could tell you more.",
+      "If any of us know, Thane McKinnon would.  Ask her.",
+      "I wish I knew for certain.  Sofia remains confident that others are out there, and I suppose your arrival confirms that.  Beyond that, we shall see.",
+      "There has to be.  I cannot say for certain, but by the gods we can't be all that's left..."
+    ],
+    "responses": [
+    { "text": "And do you still uphold the faith?", "topic": "TALK_MAGE_HUNTER_FAITH" },
+    { "text": "I see.", "topic": "TALK_MAGE_HUNTER" }
+    ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_FAITH",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "So long as the Sun shines upon the Earth.  We're not out of this yet.",
+      "Respect the gods in equal measure, no matter the faith I serve.  We do not stray from our purpose.",
+      "Cross and hammer, crescent and gate.  And a couple other faiths beyond those of the founders.  We still stand together.",
+      "We have not wavered.  Sofia has seen to that."
+    ],
+    "responses": [ { "text": "Good.", "topic": "TALK_MAGE_HUNTER" } ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_SANGUINE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Perhaps the situation is more dire than I first thought, if that's the case.  Speak with Thane McKinnon then.",
+      "Hmm.  Not something I was expecting.  We shall see what comes of it.",
+      "We shall see if this is true.",
+      "If this is true, then speak to one of the others in charge here.  If you have reason to be here, they will know what to do."
+    ],
+    "responses": [ { "text": "...", "topic": "TALK_MAGE_HUNTER" } ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_INSULT",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Sofia's orders are the only reason you lived long enough to make it past the front door.  I suggest you leave while you still can.",
+      "Our very founding was due to vermin like you preying upon the innocent.  You should be satisfied with being allowed to live.",
+      "If you're foolish enough to start a fight in OUR sanctum, I will be happy to send you to whatever Hell awaits you.",
+      "Go on.  Give me a reason, impium profligatum.",
+      "Prove you can be trusted, then.  Or you can slither away like the serpent you are, blood mage.",
+      "I have every reason to slay you where you stand, until you prove yourself.  If not for my orders, you would already be dead."
+    ],
+    "responses": [
+      {
+        "text": "[ATTACK] If that's the way you're going to be, then I'll send you and your misbegotten kin to meet your so-called gods.",
+        "topic": "TALK_DONE",
+        "effect": [ { "u_faction_rep": -30 }, { "insult_combat" } ],
+        "condition": { "and": [ { "not": { "u_has_effect": "cf_mission_1" } }, { "u_has_trait": "PROF_SANGUINE" } ] }
+      },
+      { "text": "...", "topic": "TALK_MAGE_HUNTER" }
+    ]
+  }
+]
