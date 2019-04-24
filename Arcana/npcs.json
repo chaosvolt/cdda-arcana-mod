@@ -23,7 +23,7 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_CF_REP",
-    "faction": "wasteland_scavengers",
+    "faction": "cleansing_flame",
     "mission_offered": "MISSION_CF_REP_1"
   },
   {
@@ -35,6 +35,6 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_MAGE_HUNTER",
-    "faction": "wasteland_scavengers"
+    "faction": "cleansing_flame"
   }
 ]

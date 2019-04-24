@@ -154,6 +154,14 @@
         { "group": "standing_stones_libation", "x": 15, "y": [ 8, 9 ], "chance": 100 },
         { "item": "note_flame_tenet", "x": 15, "y": [ 8, 9 ], "chance": 100 },
         { "group": "oven", "x": [ 1, 2 ], "y": 16, "chance": 40, "repeat": 2 }
+      ],
+      "place_npcs": [
+        { "class": "cleansing_flame_representative", "x": 9, "y": 8 },
+        { "class": "mage_hunter_guard", "x": 2, "y": 7 },
+        { "class": "mage_hunter_guard", "x": 2, "y": 10 },
+        { "class": "mage_hunter_guard", "x": 12, "y": 4 },
+        { "class": "mage_hunter_guard", "x": 10, "y": 13 },
+        { "class": "mage_hunter_guard", "x": 15, "y": 14 }
       ]
     }
   }

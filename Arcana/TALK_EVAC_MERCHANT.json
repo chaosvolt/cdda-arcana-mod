@@ -11,7 +11,7 @@
           { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" },
           { "u_add_effect": "rural_church_aware", "duration": "PERMANENT" },
           {
-            "mapgen_update": "some_mapgen_update_id",
+            "mapgen_update": "arcana_dummy",
             "om_terrain": "cf_church_4",
             "om_special": "cf_rural_church",
             "om_terrain_replace": "field",
@@ -27,6 +27,7 @@
         "effect": [
           { "u_add_effect": "rural_church_aware", "duration": "PERMANENT" },
           {
+            "mapgen_update": "arcana_dummy",
             "om_terrain": "cf_church_4",
             "om_special": "cf_rural_church",
             "reveal_radius": 3
