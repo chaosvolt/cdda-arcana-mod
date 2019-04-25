@@ -113,7 +113,7 @@
         "no": "I have nothing for you, sadly."
       }
     ],
-    "responses": [ { "text": "Oh, okay", "topic": "TALK_MAGE_HUNTER" } ]
+    "responses": [ { "text": "Oh, okay.", "topic": "TALK_MAGE_HUNTER" } ]
   },
   {
     "id": "TALK_MAGE_HUNTER_WHO",
@@ -137,8 +137,8 @@
       "There has to be.  I cannot say for certain, but by the gods we can't be all that's left..."
     ],
     "responses": [
-    { "text": "And do you still uphold the faith?", "topic": "TALK_MAGE_HUNTER_FAITH" },
-    { "text": "I see.", "topic": "TALK_MAGE_HUNTER" }
+      { "text": "And do you still uphold the faith?", "topic": "TALK_MAGE_HUNTER_FAITH" },
+      { "text": "I see.", "topic": "TALK_MAGE_HUNTER" }
     ]
   },
   {
@@ -178,7 +178,7 @@
       {
         "text": "[ATTACK] If that's the way you're going to be, then I'll send you and your misbegotten kin to meet your so-called gods.",
         "topic": "TALK_DONE",
-        "effect": [ { "u_faction_rep": -30 }, { "insult_combat" } ],
+        "effect": [ { "u_faction_rep": -30 }, "insult_combat" ],
         "condition": { "and": [ { "not": { "u_has_effect": "cf_mission_1" } }, { "u_has_trait": "PROF_SANGUINE" } ] }
       },
       { "text": "...", "topic": "TALK_MAGE_HUNTER" }

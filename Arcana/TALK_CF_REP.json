@@ -1,0 +1,35 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP",
+    "dynamic_line": {
+      "u_has_effect": "cf_mission_1",
+      "yes": "Welcome once again.  How may I help you?",
+      "no": {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": {
+          "u_has_effect": "sofia_motive_explained",
+          "yes": "Greetings.  You are welcome here, so long as you cause no trouble.",
+          "no": "Greetings.  I know you are, or were, a follower of the Path to Power.  For what purpose have you come here?"
+        },
+        "no": {
+          "u_has_trait": "PROF_CLEANSINGFLAME",
+          "yes": {
+            "u_male": "Welcome, Brother.  I knew we were not alone just yet.",
+            "no": "Welcome, Sister.  I knew we were not alone just yet."
+          },
+          "no": {
+            "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ],
+            "yes": {
+              "u_has_effect": "sofia_motive_explained",
+              "yes": "Greetings, Keeper.  I hope that we can work together.",
+              "no": "Greetings, Keeper.  The others cannot see the mark of your god upon you, as I can.  We need not be enemies, if your intentions are peaceful."
+            },
+            "no": "Welcome, traveler.  You may rest here if in need, meager though our sanctum may be."
+          }
+        }
+      }
+    },
+    "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE" } ]
+  }
+]
