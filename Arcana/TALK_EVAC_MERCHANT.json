@@ -3,7 +3,6 @@
     "id": "TALK_EVAC_MERCHANT",
     "type": "talk_topic",
     "responses": [
-
       {
         "text": "Do you know of any other settlements in the region?",
         "topic": "TALK_EVAC_MERCHANT_CF",

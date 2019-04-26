@@ -48,12 +48,12 @@
     },
     "responses": [
       { "text": "What is this place?", "topic": "TALK_MAGE_HUNTER_WHERE" },
-      { "text": "Anything I can help with?", "topic": "TALK_MAGE_HUNTER_HELP" },
       {
         "text": "Who are you people, anyway?",
         "topic": "TALK_MAGE_HUNTER_WHO",
         "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } }
       },
+      { "text": "Anything I can help with?", "topic": "TALK_MAGE_HUNTER_HELP" },
       {
         "text": "What remains of our order?",
         "topic": "TALK_MAGE_HUNTER_REMAIN",
