@@ -8,132 +8,6 @@
   {
     "type": "mapgen",
     "method": "json",
-    "nested_mapgen_id": "cf_church_upgrade_1",
-    "object": {
-      "mapgensize": [ 15, 15 ],
-      "rows": [
-        "|||||^^^^^uuuuu",
-        "|              ",
-        "|              ",
-        "|              ",
-        "|              ",
-        "^              ",
-        "^              ",
-        "^              ",
-        "^              ",
-        "^              ",
-        "u              ",
-        "u              ",
-        "u              ",
-        "u              ",
-        "u              "
-      ],
-      "terrain": {
-        "|": "t_palisade",
-        "^": "t_pit",
-        "u": "t_pit_shallow"
-      }
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "cf_church_upgrade_1",
-    "object": {
-      "mapgensize": [ 15, 15 ],
-      "rows": [
-        "uuuuu^^^^^|||||",
-        "              |",
-        "              |",
-        "              |",
-        "              |",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              u",
-        "              u",
-        "              u",
-        "              u",
-        "              u"
-      ],
-      "terrain": {
-        "|": "t_palisade",
-        "^": "t_pit",
-        "u": "t_pit_shallow"
-      }
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "cf_church_upgrade_1",
-    "object": {
-      "mapgensize": [ 21, 21 ],
-      "rows": [
-        "                    ^",
-        "                     ",
-        "                     ",
-        "                     ",
-        "                     ",
-        "                     ",
-        "u                    ",
-        "u                    ",
-        "u                    ",
-        "u                    ",
-        "u                    ",
-        "^                    ",
-        "^                    ",
-        "^                    ",
-        "^                    ",
-        "^                    ",
-        "|                    ",
-        "|                    ",
-        "|                    ",
-        "|                    ",
-        "|||||^^^      ^^uuuuu"
-      ],
-      "terrain": {
-        "|": "t_palisade",
-        "^": "t_pit",
-        "u": "t_pit_shallow"
-      }
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "cf_church_upgrade_1",
-    "object": {
-      "mapgensize": [ 15, 15 ],
-      "rows": [
-        "              u",
-        "              u",
-        "              u",
-        "              u",
-        "              u",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              |",
-        "              |",
-        "              |",
-        "              |",
-        "uuuuu^^^^^|||||"
-      ],
-      "terrain": {
-        "|": "t_palisade",
-        "^": "t_pit",
-        "u": "t_pit_shallow"
-      }
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
     "nested_mapgen_id": "cf_church_upgrade_1_a",
     "object": {
       "mapgensize": [ 20, 20 ],
@@ -172,6 +46,7 @@
         "  ",
         "##"
       ],
+      "terrain": { "#": "t_dirt" },
       "furniture": { "#": "f_sandbag_half" }
     }
   },
@@ -179,6 +54,7 @@
     "type": "mapgen",
     "method": "json",
     "nested_mapgen_id": "cf_church_upgrade_1_c",
+    "weight": 100,
     "object": {
       "mapgensize": [ 2, 2 ],
       "rows": [
