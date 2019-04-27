@@ -105,7 +105,7 @@
     "responses": [
       {
         "text": "We'll see what can be done.",
-        "effect": { "u_add_effect": "sofia_motive_explained" },
+        "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
         "topic": "TALK_CF_REP"
       }
     ]
@@ -117,7 +117,7 @@
     "responses": [
       {
         "text": "Alright.",
-        "effect": { "u_add_effect": "sofia_motive_explained" },
+        "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
         "opinion": { "value": -1 },
         "topic": "TALK_CF_REP"
       }
@@ -130,7 +130,7 @@
     "responses": [
       {
         "text": "We'll see.",
-        "effect": { "u_add_effect": "sofia_motive_explained" },
+        "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
         "opinion": { "value": 1 },
         "topic": "TALK_CF_REP"
       }
@@ -143,7 +143,7 @@
     "responses": [
       {
         "text": "Perhaps we will, then.",
-        "effect": { "u_add_effect": "sofia_motive_explained" },
+        "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
         "opinion": { "trust": 1 },
         "topic": "TALK_CF_REP"
       }
@@ -156,7 +156,7 @@
     "responses": [
       {
         "text": "Thank you.",
-        "effect": { "u_add_effect": "sofia_motive_explained" },
+        "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
         "opinion": { "value": 1, "anger": -1 },
         "topic": "TALK_CF_REP"
       }
@@ -170,7 +170,7 @@
       "yes": "And yet you came here, knowing the potential danger.  Or did you think us extinct?  Perhaps that means you can be trusted.  If your intent remains honest, we need not be enemies.  But we shall see.",
       "no": "Then hopefully this means we need not be enemies.  The gods ensured that mortal means would lead us to meet.  Remind us of our shared humanity, perhaps.  We shall see if this holds true."
     },
-    "responses": [ { "text": "We'll see.", "effect": { "u_add_effect": "sofia_motive_explained" }, "topic": "TALK_CF_REP" } ]
+    "responses": [ { "text": "We'll see.", "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" }, "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
