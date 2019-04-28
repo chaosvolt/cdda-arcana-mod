@@ -204,32 +204,32 @@
       "inquire": "How goes the hunt, and the craft?  Have you found what we seek?",
       "success": "Wonderful.  I'll have things set up shortly, and the others have been working on securing the place further.  We have much to discuss, and more jobs for you if you wish.",
       "success_lie": "What do you think you're trying to pull?",
-      "failure": "But how...",
-      "end": {
-        "effect": [ { "u_add_effect": "cf_quest_1", "duration": "PERMANENT" } ],
-        "update_mapgen": [
-          {
-            "om_terrain": "cf_church_1",
-            "om_special": "cf_rural_church",
-            "place_nested": [ { "chunks": [ "cf_church_upgrade_1_a" ], "x": 3, "y": 3 } ]
-          },
-          {
-            "om_terrain": "cf_church_2",
-            "om_special": "cf_rural_church",
-            "place_nested": [ { "chunks": [ "cf_church_upgrade_1_b" ], "x": 14, "y": 21 } ]
-          },
-          {
-            "om_terrain": "cf_church_3",
-            "om_special": "cf_rural_church",
-            "place_nested": [ { "chunks": [ "cf_church_upgrade_1_c" ], "x": 20, "y": 8 } ]
-          },
-          {
-            "om_terrain": "cf_church_4",
-            "om_special": "cf_rural_church",
-            "place_nested": [ { "chunks": [ "cf_church_upgrade_1_d" ], "x": 1, "y": 0 } ]
-          }
-        ]
-      }
+      "failure": "But how..."
+    },
+    "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_a" ], "x": 3, "y": 3 } ]
+        },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_b" ], "x": 14, "y": 21 } ]
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_c" ], "x": 21, "y": 8 } ]
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_d" ], "x": 1, "y": 0 } ]
+        }
+      ]
     }
   }
 ]

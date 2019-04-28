@@ -264,7 +264,8 @@
     "name": "field",
     "sym": ".",
     "color": "brown",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
   },
   {
     "type": "overmap_terrain",
@@ -272,7 +273,8 @@
     "name": "field",
     "sym": ".",
     "color": "brown",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
   },
   {
     "type": "overmap_terrain",
@@ -280,7 +282,8 @@
     "name": "dirt lot",
     "sym": "O",
     "color": "brown",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
   },
   {
     "id": "cf_church_4",
@@ -288,6 +291,7 @@
     "name": "rural church",
     "sym": "C",
     "color": "light_red",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
   }
 ]
