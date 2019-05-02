@@ -4,7 +4,7 @@
     "type": "monstergroup",
     "default": "mon_shadow",
     "monsters": [
-      { "monster": "mon_flying_polyp", "freq": 175, "cost_multiplier": 0 },
+      { "monster": "mon_mi_go", "freq": 175, "cost_multiplier": 0 },
       { "monster": "mon_hunting_horror", "freq": 250, "cost_multiplier": 0 },
       { "monster": "mon_flaming_eye", "freq": 75, "cost_multiplier": 0 }
     ]
@@ -14,18 +14,8 @@
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
-      { "monster": "mon_flying_polyp", "freq": 120, "cost_multiplier": 0 },
-      { "monster": "mon_homunculus", "freq": 60, "cost_multiplier": 0 },
-      { "monster": "mon_mi_go", "freq": 40, "cost_multiplier": 0 }
-    ]
-  },
-  {
-    "name": "GROUP_IMPACT_FLYING",
-    "type": "monstergroup",
-    "default": "mon_vortex",
-    "monsters": [
-      { "monster": "mon_flying_polyp", "freq": 100, "cost_multiplier": 0 },
-      { "monster": "mon_flaming_eye", "freq": 30, "cost_multiplier": 0 }
+      { "monster": "mon_homunculus", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_mi_go", "freq": 50, "cost_multiplier": 0 }
     ]
   },
   {

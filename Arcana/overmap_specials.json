@@ -5,7 +5,8 @@
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "curious_structure_north" },
       { "point": [ 0, 0, -1 ], "overmap": "curious_structure_b_north" },
-      { "point": [ 0, 0, -2 ], "overmap": "curious_structure_b2_north" }
+      { "point": [ 0, 0, -2 ], "overmap": "curious_structure_b2_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "curious_structure_roof_north" }
     ],
     "locations": [ "field", "forest" ],
     "city_distance": [ 20, -1 ],
@@ -56,7 +57,11 @@
       { "point": [ 0, 0, -1 ], "overmap": "island_temple_b_1_north" },
       { "point": [ 1, 0, -1 ], "overmap": "island_temple_b_2_north" },
       { "point": [ 0, 1, -1 ], "overmap": "island_temple_b_3_north" },
-      { "point": [ 1, 1, -1 ], "overmap": "island_temple_b_4_north" }
+      { "point": [ 1, 1, -1 ], "overmap": "island_temple_b_4_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "island_temple_roof_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "island_temple_roof_east" },
+      { "point": [ 0, 1, 1 ], "overmap": "island_temple_roof_west" },
+      { "point": [ 1, 1, 1 ], "overmap": "island_temple_roof_south" }
     ],
     "locations": [ "forest", "swamp" ],
     "city_distance": [ 20, -1 ],

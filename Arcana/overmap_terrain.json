@@ -9,6 +9,14 @@
     "extras": "field"
   },
   {
+    "id": "curious_structure_roof",
+    "type": "overmap_terrain",
+    "name": "curious structure roof",
+    "sym": 67,
+    "color": "dark_gray",
+    "see_cost": 5
+  },
+  {
     "id": "curious_structure_b",
     "type": "overmap_terrain",
     "name": "curious underground structure",
@@ -145,6 +153,14 @@
     "known_up": false,
     "known_down": false,
     "extras": "none"
+  },
+  {
+    "id": "island_temple_roof",
+    "type": "overmap_terrain",
+    "name": "peculiar shrine roof",
+    "sym": 84,
+    "color": "blue",
+    "see_cost": 5
   },
   {
     "id": "island_temple_1",

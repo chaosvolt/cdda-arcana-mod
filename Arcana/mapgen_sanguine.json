@@ -92,6 +92,42 @@
   {
     "type": "mapgen",
     "method": "json",
+    "om_terrain": [ "island_temple_roof" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                      __",
+        "                      __",
+        "                     ___",
+        "                     ___",
+        "                   _____",
+        "                   _____",
+        "                 _______",
+        "               _________",
+        "               _________"
+      ],
+      "terrain": { "_": "t_rock_floor_no_roof" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
     "om_terrain": [ "island_temple_1" ],
     "weight": 250,
     "object": {

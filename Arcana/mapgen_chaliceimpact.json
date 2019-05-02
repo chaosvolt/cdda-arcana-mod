@@ -153,30 +153,30 @@
     "object": {
       "fill_ter": "t_open_air",
       "rows": [
-        "           ............ ",
-        "           ..         . ",
-        "  ..???????.. ......... ",
-        " ...???????.. .         ",
-        " ...       .. ......... ",
-        " ??      II..II      .. ",
-        " ??     II....II     .. ",
-        " ??    II......II    .. ",
-        " ??   II........II   .. ",
-        " ??  II..........II  .. ",
-        " ??  I............I  .. ",
-        "...  I.....>>.....I  ...",
-        "...  I.....>>.....I  ...",
-        " ..  I............I  ?? ",
-        " ..  II..........II  ?? ",
-        " ..   II........II   ?? ",
-        " ..    II......II    ?? ",
-        " ..     II....II     ?? ",
-        " ...     II..II      ?? ",
-        "  ........ ..       ... ",
-        "         . ..???????... ",
-        " ......... ..???????..  ",
-        " .         ..           ",
-        " ............           "
+        "           ____________ ",
+        "           __         _ ",
+        "  __???????__ _________ ",
+        " ___???????__ _         ",
+        " ___       __ _________ ",
+        " ??      II..II      __ ",
+        " ??     II....II     __ ",
+        " ??    II......II    __ ",
+        " ??   II........II   __ ",
+        " ??  II..........II  __ ",
+        " ??  I............I  __ ",
+        "___  I.....>>.....I  ___",
+        "___  I.....>>.....I  ___",
+        " __  I............I  ?? ",
+        " __  II..........II  ?? ",
+        " __   II........II   ?? ",
+        " __    II......II    ?? ",
+        " __     II....II     ?? ",
+        " ___     II..II      ?? ",
+        "  ________ __       ___ ",
+        "         _ __???????___ ",
+        " _________ __???????__  ",
+        " _         __           ",
+        " ____________           "
       ],
       "palettes": [ "arcana_palette" ],
       "set": [
@@ -185,8 +185,8 @@
         { "point": "trap", "id": "tr_drain", "x": [ 4, 10 ], "y": [ 2, 3 ], "repeat": [ 5, 10 ] },
         { "point": "trap", "id": "tr_glow", "x": [ 1, 2 ], "y": [ 5, 10 ], "repeat": [ 4, 8 ] }
       ],
-      "terrain": { "?": "t_floor_blue" },
-      "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.15 } ]
+      "terrain": { "?": "t_floor_blue", "_": "t_rock_floor_no_roof" },
+      "place_monsters": [ { "monster": "GROUP_ARCHON", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.15 } ]
     }
   },
   {
@@ -223,7 +223,7 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_ARCHON", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
     }
   },
   {
@@ -260,7 +260,7 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_ARCHON", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
     }
   },
   {
@@ -312,7 +312,7 @@
         { "group": "chalice_cult_crafting", "x": [ 9, 12 ], "y": 16, "chance": 30, "repeat": 8 },
         { "group": "chalice_cult_casualties", "x": [ 8, 12 ], "y": [ 8, 15 ], "chance": 90 }
       ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 8, 12 ], "y": [ 8, 15 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_ARCHON", "x": [ 8, 12 ], "y": [ 8, 15 ], "density": 0.1 } ]
     }
   },
   {
@@ -362,7 +362,7 @@
         { "group": "chalice_cult_books", "x": [ 12, 13 ], "y": [ 13, 15 ], "chance": 75, "repeat": 12 },
         { "group": "chalice_cult_casualties", "x": 15, "y": [ 9, 14 ], "chance": 90 }
       ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT_FLYING", "x": [ 11, 14 ], "y": [ 8, 15 ], "density": 0.05 } ]
+      "place_monsters": [ { "monster": "GROUP_ARCHON", "x": [ 11, 14 ], "y": [ 8, 15 ], "density": 0.05 } ]
     }
   },
   {
