@@ -112,9 +112,14 @@
     "time": 200000,
     "book_learn": [ [ "book_hexenhammer", 7 ] ],
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 3, "LIST" ] ] ],
-    "components": [ [ [ "crossbow", 1 ] ], [ [ "gold_small", 45 ] ], [ [ "essence_dull", 20 ] ] ]
+    "components": [
+      [ [ "crossbow", 1 ] ],
+      [ [ "rope_6", 1 ], [ "rag", 3 ], [ "string_36", 6 ] ],
+      [ [ "gold_small", 45 ] ],
+      [ [ "essence_dull", 20 ] ]
+    ]
   },
   {
     "result": "spear_pestilence",
@@ -151,7 +156,13 @@
     "tools": [
       [ [ "book_sacrifice", -1 ] ],
       [ [ "book_bloodmagic", -1 ] ],
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ], [ "candle_warding_active", -1 ], [ "fire", -1 ] ],
+      [
+        [ "torch_lit", -1 ],
+        [ "candle_lit", -1 ],
+        [ "oil_lamp_on", -1 ],
+        [ "candle_warding_active", -1 ],
+        [ "fire", -1 ]
+      ],
       [
         [ "holy_symbol", -1 ],
         [ "holy_symbol_wood", -1 ],

@@ -1010,13 +1010,32 @@
   {
     "id": "spell_lockpick",
     "copy-from": "spell_base",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
+    "type": "TOOL",
     "name": "Magic Sign: Open Lock",
     "name_plural": "Magic Sign: Open Lock",
     "description": "A mote of energy that gives off a strange aura of artiface.  Activate it to manipulate most kinds of lock.",
     "color": "light_gray",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
+    "use_action": {
+      "target": "spell_lockpick_on",
+      "msg": "You activate the lockpicing spell.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "spell_lockpick_on",
+    "copy-from": "spell_base",
+    "type": "TOOL",
+    "name": "Magic Sign: Open Lock (active)",
+    "name_plural": "Magic Sign: Open Lock (active)",
+    "description": "A mote of energy that gives off a strange aura of artiface.",
+    "color": "light_gray",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
     "use_action": { "type": "picklock", "pick_quality": 99 }
   },
   {
@@ -1615,24 +1634,10 @@
     "use_action": "ARTIFACT"
   },
   {
-    "id": "spell_lockpick_on",
-    "copy-from": "spell_base",
-    "//": "All magic signs from here on out have been dummied out, to eventually be removed.",
-    "type": "TOOL",
-    "name": "Magic Sign: Open Lock (active)",
-    "name_plural": "Magic Sign: Open Lock (active)",
-    "description": "A mote of energy that gives off a strange aura of artiface.",
-    "color": "light_gray",
-    "initial_charges": 0,
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "picklock", "pick_quality": 99 }
-  },
-  {
     "id": "spell_summonwyrm_on",
     "copy-from": "spell_conjure_base",
     "type": "TOOL",
+    "//": "All magic signs from here on out have been dummied out, to eventually be removed.",
     "name": "Magic Sign: Summon Dark Wyrm (active)",
     "name_plural": "Magic Sign: Summon Dark Wyrm (active)",
     "description": "A mote of energy with endless coils perceived inside it.",
