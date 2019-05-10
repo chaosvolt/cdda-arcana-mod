@@ -245,7 +245,7 @@
       "assign_mission_target": { "om_terrain": "evac_center_18", "reveal_radius": 1 }
     },
     "origins": [ "ORIGIN_SECONDARY" ],
-    "followup": "MISSION_CF_REP_2",
+    "followup": "MISSION_CF_REP_3",
     "dialogue": {
       "describe": "Odin, guide my hand...",
       "offer": "This should be a simple matter, though I hope you'll find the journey tolerable.  I have occasionally visited the refugee center to trade for essential tools and supplies, but I will be needed here for the time being, and the others have been busy gathering supplies and continuing construction.  We have arrangements made for delivery of supplies, but every so often we have to send inventory of what we need and what we have to offer.  Could you simply deliver this to their merchant, and return the receipt they usually write up?",
@@ -271,6 +271,31 @@
           "place_nested": [ { "chunks": [ "cf_church_upgrade_2_b" ], "x": 3, "y": 3 } ]
         }
       ]
+    }
+  },
+  {
+    "id": "MISSION_CF_REP_3",
+    "type": "mission_definition",
+    "name": "Kill Flesh Angel",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "forest_thick", "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 5 },
+      "update_mapgen": { "place_monster": [ { "monster": "mon_flesh_angel", "x": 11, "y": 11, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_KILL_100_Z",
+    "dialogue": {
+      "describe": "Odin, guide my hand...",
+      "offer": "I have good news and bad news.  The good news is that we've made contact with a group of our brethren, and they are expected to arrive soon.  The bad news is they've reported something else has been attracted to this area by our wards, stalking the surrounding words due to the magic itself deterring it.  It may be a threat to travelers, in addition to potentially endangering our comrades while they're en route.  I would like to request you scout the area and, if need be, slay the creature.",
+      "accepted": "May Odin grant you victory in battle, should it come to that.  Any creature attracted by our defensive magic is likely to be not only otherwordly, but tied to other mystic forces.  Expect trouble.  I will permit you the assistance of one of our brethren if you deem it nessecary, but we cannot spare the forces needed for a proper hunt.",
+      "rejected": "This thing may endanger the lives of others.  I do not yet know the full extent of the threat, but we can't afford to endanger our position here.  Please, as soon as you are able, speak with me again.",
+      "advice": "It's likely to have unnatural senses of some sort, and many such creatures are able to use such abilities to enthrall or otherwise overwhelm the weak-minded.  Avoid being in its line of sight if possible, as most such threats are most potent when the user can lay eyes upon its victim.",
+      "inquire": "Has the beast been slain?",
+      "success": "I'm thankful that you returned victorious.  Hearing of it now, and the scouting reports from the others, the creature was a rare sight indeed.  A human form woven into a mockery of the divine.  I'm sorry to have endangered you facing an unknown threat.  However, thanks to you assistance the others arrived safely, a fellow founder of our order among them.  I have more tasks for you, and you may wish to speak to him as well.",
+      "success_lie": "What do you think you're trying to pull?",
+      "failure": "But how..."
     }
   }
 ]
