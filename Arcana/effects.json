@@ -364,5 +364,10 @@
     "type": "effect_type",
     "id": "cf_mission_1",
     "//": "Effect for players, marks them as being trustworthy and known to Sofia's camp.  Intended to be permanant."
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_mission_receipt",
+    "//": "Effect for both players and NPCs, changes dialogue for both the Evac Merchant and Sofia.  Intended to be permanant."
   }
 ]

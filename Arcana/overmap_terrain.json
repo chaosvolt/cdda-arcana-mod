@@ -293,5 +293,38 @@
     "color": "light_red",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cf_church_1_roof",
+    "name": "open air",
+    "sym": ".",
+    "color": "blue",
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cf_church_2_roof",
+    "name": "open air",
+    "sym": ".",
+    "color": "blue",
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cf_church_3_roof",
+    "name": "open air",
+    "sym": ".",
+    "color": "blue",
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "id": "cf_church_4_roof",
+    "type": "overmap_terrain",
+    "name": "rural church roof",
+    "sym": "C",
+    "color": "light_red",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
   }
 ]

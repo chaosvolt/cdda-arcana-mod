@@ -231,5 +231,46 @@
         }
       ]
     }
+  },
+  {
+    "id": "MISSION_CF_REP_2",
+    "type": "mission_definition",
+    "name": "Deliver Trade Arrangements",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 10000,
+    "item": "cf_rep_trade_receipt",
+    "start": {
+      "effect": [ { "u_buy_item": "cf_rep_trade_arrangement" }, { "u_buy_item": "gold_small", "count": 100 } ],
+      "assign_mission_target": { "om_terrain": "evac_center_18", "reveal_radius": 1 }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_REP_2",
+    "dialogue": {
+      "describe": "Odin, guide my hand...",
+      "offer": "This should be a simple matter, though I hope you'll find the journey tolerable.  I have occasionally visited the refugee center to trade for essential tools and supplies, but I will be needed here for the time being, and the others have been busy gathering supplies and continuing construction.  We have arrangements made for delivery of supplies, but every so often we have to send inventory of what we need and what we have to offer.  Could you simply deliver this to their merchant, and return the receipt they usually write up?",
+      "accepted": "Thank you.  The merchant requires an advance payment, usually surplus scavenged supplies or precious metals.  I'll give you what should be sufficient to complete the arrangement, part of the gold set aside for repairing some of our specialized equipment.  With your help we'll be able to focus our efforts on making this place livable, and once the trade is settled that'll give us more breathing room.  Hopefully by the time supplies start running low again, we'll have a few more of us around to take care of ourselves.",
+      "rejected": "Please, whenever you're able to speak to me again, we can't rely exclusively on scavenging for very long, as few people we have to spare for the task.",
+      "advice": "If you can talk them into accepting a lower rate for the initial payment, you can keep what's left over.  Not many people see value in gold now, but it has some uses all the same.",
+      "inquire": "Has the center agreed to our offer?  They usually provide a receipt confirming the arrangments have been made.",
+      "success": "Thank you.  We're a bit closer to having the area built up into a usable sanctum.  I just hope that there are more of us out there, that heed our call.  I'll have additional work for you as well.",
+      "success_lie": "What do you think you're trying to pull?",
+      "failure": "But how..."
+    },
+    "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_2_a" ], "x": 3, "y": 3 } ]
+        },
+        {
+          "om_terrain": "cf_church_1_roof",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_2_b" ], "x": 3, "y": 3 } ]
+        }
+      ]
+    }
   }
 ]

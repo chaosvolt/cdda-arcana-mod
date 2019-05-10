@@ -31,6 +31,17 @@
       }
     },
     "responses": [
+      {
+        "text": "[MISSION] I need another copy of the trade arrangements, please.",
+        "topic": "TALK_CF_REP_MISSION_2_COPY",
+        "condition": {
+          "and": [
+            { "not": { "u_has_item": "cf_rep_trade_arrangement" } },
+            { "u_has_mission": "MISSION_CF_REP_2" },
+            { "not": { "u_has_effect": "cf_mission_receipt" } }
+          ]
+        }
+      },
       { "text": "What is this place?", "topic": "TALK_CF_REP_WHERE" },
       { "text": "Who are you?", "topic": "TALK_CF_REP_WHO" },
       { "text": "Anything I can do to help?", "topic": "TALK_MISSION_LIST" },
@@ -84,6 +95,12 @@
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
   },
+  {
+    "id": "TALK_CF_REP_MISSION_2_COPY",
+    "type": "talk_topic",
+    "dynamic_line": "Oh, okay.  Should be easy enough to replace, since the list is a bit short.  Our needs and resources haven't changed at the moment anyway.  Here you go.",
+    "responses": [ { "text": "Thank you.", "topic": "TALK_CF_REP", "effect": { "u_buy_item": "cf_rep_trade_arrangement" } } ]
+  }
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_SANGUINE_ASK",

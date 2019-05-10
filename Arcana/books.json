@@ -344,5 +344,21 @@
     "weight": 60,
     "volume": "100ml",
     "description": "A neatly-ordered collection of papers, filled with strange symbols and rambling writing.  At several points the text is interrupted by detailed sketches of disturbing otherwordly horrors.  It details the findings of an experienced summoner, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+  },
+  {
+    "id": "cf_rep_trade_arrangement",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": "trade arrangements",
+    "name_plural": "trade arrangements",
+    "description": "A hand-written inventory of essential tools and supplies, alongside a list of various surplus items, written by Sofia."
+  },
+  {
+    "id": "cf_rep_trade_receipt",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": "receipt of trade agreement",
+    "name_plural": "receipt of trade agreement",
+    "description": "A hastily-typed printout confirming the arrangements set up between the Free Merchants and the survivors in the rural church."
   }
 ]
