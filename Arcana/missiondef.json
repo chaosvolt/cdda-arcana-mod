@@ -298,7 +298,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" } ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_1",

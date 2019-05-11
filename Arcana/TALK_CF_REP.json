@@ -45,14 +45,19 @@
       { "text": "What is this place?", "topic": "TALK_CF_REP_WHERE" },
       { "text": "Who are you?", "topic": "TALK_CF_REP_WHO" },
       {
+        "text": "What can you tell me about the others?",
+        "topic": "TALK_CF_REP_GM",
+        "condition": { "npc_has_effect": "cf_mission_3" }
+      },
+      {
         "text": "Anything I can do to help?",
         "topic": "TALK_MISSION_LIST",
-        "condition": { "not": { "npc_has_trait": "to_be_continued" } }
+        "condition": { "not": { "npc_has_effect": "cf_mission_3" } }
       },
       {
         "text": "Anything I can do to help?",
         "topic": "TALK_CF_REP_TBC",
-        "condition": { "npc_has_trait": "to_be_continued" }
+        "condition": { "npc_has_effect": "cf_mission_3" }
       },
       {
         "text": "Why didn't you attack me?",
@@ -259,7 +264,11 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_CF_LEFT",
-    "dynamic_line": "I do not know for certain.  Between trying to get anything to come in via radio, and our contact with the refugee center, I have heard nothing else so far, but I will keep searching.  We must never give up.",
+    "dynamic_line": {
+      "npc_has_effect": "cf_mission_3",
+      "yes": "Do not lose hope yet.  Already our efforts bore fruit, and more are surely out there.  If the gods will it, we will endure.",
+      "no": "I do not know for certain.  Between trying to get anything to come in via radio, and our contact with the refugee center, I have heard nothing else so far, but I will keep searching.  We must never give up."
+    },
     "responses": [ { "text": "So long as the Sun shines upon the Earth...", "topic": "TALK_CF_REP" } ]
   },
   {
@@ -273,5 +282,11 @@
     "id": "TALK_CF_REP_THANE",
     "dynamic_line": "A reminder of our history.  Before our founding, when we were a few disparate groups of various religions.  Including followers of the old gods such as myself, who used titles and ranks where now we are merely Brothers and Sisters.",
     "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "id": "TALK_CF_REP_GM",
+    "type": "talk_topic",
+    "dynamic_line": "A few others among our order, some having had contact with our fellows working closer to the cities.  Grandmaster Leone seems to be the most senior of the group, and he provided me with a lot of information I'll need to examine closely.  Might lead us to other survivors to get in touch with.  Might be a good idea to speak with him as well.",
+    "responses": [ { "text": "We'll see.", "topic": "TALK_CF_REP" } ]
   }
 ]
