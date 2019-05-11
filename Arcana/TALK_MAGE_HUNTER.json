@@ -47,6 +47,11 @@
       }
     },
     "responses": [
+      {
+        "text": "[MISSION] Sofia said I should ask one of you for help?",
+        "topic": "TALK_MAGE_HUNTER_RECRUIT",
+        "condition": { "and": [ { "u_has_mission": "MISSION_CF_REP_3" }, { "not": { "u_has_effect": "cf_mission_3_recruited" } } ] }
+      },
       { "text": "What is this place?", "topic": "TALK_MAGE_HUNTER_WHERE" },
       {
         "text": "Who are you people, anyway?",
@@ -72,6 +77,37 @@
         "condition": { "and": [ { "not": { "u_has_effect": "cf_mission_1" } }, { "u_has_trait": "PROF_SANGUINE" } ] }
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_RECRUIT",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "So long as the Sun shines upon the Earth.  I am prepared to do my duty.",
+      "So be it.  When you're ready.",
+      "Dii vult.  Let's go.",
+      "We'll manage, but thank you.  Speak with Sofia, she might have something for you to do.",
+      {
+        "u_has_trait": "PROF_CLEANSINGFLAME",
+        "yes": { "u_male": "As you see fit, Brother.", "no": "As you see fit, Sister." },
+        "no": "As you see fit."
+      },
+      {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": [
+          "I sure hope Sofia knows what she's doing... let's go then.",
+          "Alright.  Stay in my sight.",
+          "I see.  Be careful, and remember.  This thing is a threat, not something to toy around with."
+        ],
+        "no": "At your command, then."
+      }
+    ],
+    "responses": [
+      {
+        "text": "Let's go.",
+        "topic": "TALK_DONE",
+        "effect": [ { "u_add_effect": "cf_mission_3_recruited", "duration": "PERMANENT" }, "follow" ]
+      }
     ]
   },
   {

@@ -44,7 +44,16 @@
       },
       { "text": "What is this place?", "topic": "TALK_CF_REP_WHERE" },
       { "text": "Who are you?", "topic": "TALK_CF_REP_WHO" },
-      { "text": "Anything I can do to help?", "topic": "TALK_MISSION_LIST" },
+      {
+        "text": "Anything I can do to help?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "not": { "npc_has_trait": "to_be_continued" } }
+      },
+      {
+        "text": "Anything I can do to help?",
+        "topic": "TALK_CF_REP_TBC",
+        "condition": { "npc_has_trait": "to_be_continued" }
+      },
       {
         "text": "Why didn't you attack me?",
         "condition": { "and": [ { "not": { "u_has_effect": "sofia_motive_explained" } }, { "u_has_trait": "PROF_SANGUINE" } ] },
@@ -100,7 +109,7 @@
     "type": "talk_topic",
     "dynamic_line": "Oh, okay.  Should be easy enough to replace, since the list is a bit short.  Our needs and resources haven't changed at the moment anyway.  Here you go.",
     "responses": [ { "text": "Thank you.", "topic": "TALK_CF_REP", "effect": { "u_buy_item": "cf_rep_trade_arrangement" } } ]
-  }
+  },
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_SANGUINE_ASK",
@@ -187,7 +196,13 @@
       "yes": "And yet you came here, knowing the potential danger.  Or did you think us extinct?  Perhaps that means you can be trusted.  If your intent remains honest, we need not be enemies.  But we shall see.",
       "no": "Then hopefully this means we need not be enemies.  The gods ensured that mortal means would lead us to meet.  Remind us of our shared humanity, perhaps.  We shall see if this holds true."
     },
-    "responses": [ { "text": "We'll see.", "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" }, "topic": "TALK_CF_REP" } ]
+    "responses": [
+      {
+        "text": "We'll see.",
+        "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
+        "topic": "TALK_CF_REP"
+      }
+    ]
   },
   {
     "type": "talk_topic",
@@ -234,6 +249,12 @@
       { "text": "Why are you called Thane?", "topic": "TALK_CF_REP_THANE" },
       { "text": "I see.  That is all for now.", "topic": "TALK_CF_REP" }
     ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_TBC",
+    "dynamic_line": "Not at the moment.  Check back later, and I should have more for you.",
+    "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",

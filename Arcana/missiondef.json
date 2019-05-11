@@ -285,7 +285,7 @@
       "update_mapgen": { "place_monster": [ { "monster": "mon_flesh_angel", "x": 11, "y": 11, "target": true } ] }
     },
     "origins": [ "ORIGIN_SECONDARY" ],
-    "followup": "MISSION_KILL_100_Z",
+    "followup": "MISSION_CF_REP_4",
     "dialogue": {
       "describe": "Odin, guide my hand...",
       "offer": "I have good news and bad news.  The good news is that we've made contact with a group of our brethren, and they are expected to arrive soon.  The bad news is they've reported something else has been attracted to this area by our wards, stalking the surrounding words due to the magic itself deterring it.  It may be a threat to travelers, in addition to potentially endangering our comrades while they're en route.  I would like to request you scout the area and, if need be, slay the creature.",
@@ -296,6 +296,57 @@
       "success": "I'm thankful that you returned victorious.  Hearing of it now, and the scouting reports from the others, the creature was a rare sight indeed.  A human form woven into a mockery of the divine.  I'm sorry to have endangered you facing an unknown threat.  However, thanks to you assistance the others arrived safely, a fellow founder of our order among them.  I have more tasks for you, and you may wish to speak to him as well.",
       "success_lie": "What do you think you're trying to pull?",
       "failure": "But how..."
+    },
+    "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_a" ], "x": 4, "y": 4 } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "MISSION_CF_REP_4",
+    "//": "These two missions are here so that I can expand on the mission chains later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
+    }
+  },
+  {
+    "id": "MISSION_CF_GM_1",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
     }
   }
 ]

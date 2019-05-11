@@ -369,5 +369,10 @@
     "type": "effect_type",
     "id": "cf_mission_receipt",
     "//": "Effect for both players and NPCs, changes dialogue for both the Evac Merchant and Sofia.  Intended to be permanant."
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_mission_3_recruited",
+    "//": "Effect for players, indicates that they asked one of the guards to assist in a hunt.  Intended to be permanant."
   }
 ]

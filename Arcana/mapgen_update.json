@@ -160,4 +160,40 @@
       "terrain": { "|": "t_wall_log_half", "_": "t_thatch_roof" }
     }
   },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_3_a",
+    "object": {
+      "mapgensize": [ 18, 18 ],
+      "rows": [
+        "BD BD BD BD       ",
+        "B  B  B  B    hh  ",
+        "             heeh ",
+        "             heeh ",
+        "              hh  ",
+        "                  ",
+        "B  B  B  B        ",
+        "BD BD BD BD       ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  "
+      ],
+      "terrain": { "#": "t_dirt" },
+      "furniture": { "B": "f_bed", "D": "f_dresser", "e": "f_table", "h": "f_chair" },
+      "place_npcs": [
+        { "class": "cleansing_flame_grandmaster", "x": 16, "y": 5 },
+        { "class": "mage_hunter_guard", "x": 0, "y": 3 },
+        { "class": "mage_hunter_guard", "x": 14, "y": 1 },
+        { "class": "mage_hunter_guard", "x": 3, "y": 7 }
+      ]
+    }
+  }
 ]

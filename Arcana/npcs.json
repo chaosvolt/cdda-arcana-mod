@@ -21,7 +21,7 @@
     "gender": "female",
     "class": "NC_CF_REP",
     "attitude": 0,
-    "mission": 3,
+    "mission": 7,
     "chat": "TALK_CF_REP",
     "faction": "cleansing_flame",
     "mission_offered": "MISSION_CF_REP_1"
@@ -33,8 +33,22 @@
     "name_suffix": "Mage Hunter",
     "class": "NC_MAGE_HUNTER",
     "attitude": 0,
-    "mission": 3,
+    "mission": 7,
     "chat": "TALK_MAGE_HUNTER",
     "faction": "cleansing_flame"
+  },
+  {
+    "type": "npc",
+    "id": "cleansing_flame_grandmaster",
+    "//": "Secondary quest source.",
+    "name_unique": "Johnathan Leone",
+    "name_suffix": "Grandmaster",
+    "gender": "male",
+    "class": "NC_CF_GM",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_CF_GM",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_REP_1"
   }
 ]
