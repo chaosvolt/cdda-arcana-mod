@@ -1,0 +1,21 @@
+[
+  {
+    "type": "faction",
+    "id": "cleansing_flame",
+    "name": "The Cleansing Flame",
+    "likes_u": 0,
+    "respects_u": 0,
+    "known_by_u": false,
+    "size": 50,
+    "power": 100,
+    "combat_ability": 110,
+    "food_supply": 115200,
+    "wealth": 5000000,
+    "good": 1,
+    "strength": 0,
+    "sneak": 1,
+    "crime": -1,
+    "cult": 1,
+    "description": "A local syncretic religious order, from some time before the cataclysm.  Now, remnants of them are dedicated to hunting down dangerous magic and otherworldly monsters."
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_GM",
+    "dynamic_line": {
+      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "yes": { "u_male": "Greetings, Brother.  This is a sacred place.", "no": "Greetings, Sister.  This is a sacred place." },
+      "no": {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": {
+          "u_has_effect": "cf_quest_1",
+          "yes": "A pleasant surprise to see you working with us.  What do you require?",
+          "no": "You are not welcome here sanguinist.  State your intentions."
+        },
+        "no": {
+          "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ],
+          "yes": {
+            "u_has_effect": "cf_quest_1",
+            "yes": "Welcome, Keeper.  What do you require?",
+            "no": "Servant of the otherworldly, you are welcome here, so long as you cause no trouble."
+          },
+          "no": "Welcome to our sanctum."
+        }
+      }
+    },
+    "responses": [
+      { "text": "Who are you?", "topic": "TALK_CF_GM_WHO" },
+      { "text": "What can you tell me about this place?", "topic": "TALK_CF_GM_WHERE" },
+      { "text": "Anything I can do to help?", "topic": "TALK_CF_GM_TBC" },
+      {
+        "text": "Are there any others of us left?",
+        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "topic": "TALK_CF_GM_OTHERS"
+      },
+      {
+        "text": "What other arcane groups are out there?",
+        "condition": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_CLEANSINGFLAME", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL" ] },
+        "topic": "TALK_CF_GM_ARCANISTS"
+      },
+      {
+        "text": "What can you tell me about your group?",
+        "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } },
+        "topic": "TALK_CF_GM_GROUP"
+      },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_CF_GM_WHO",
+    "type": "talk_topic",
+    "dynamic_line": "My name is Jonathan Leone.  I was among the founders of our order, as was Sofia it seems.  Before the founding, I held the title of Grandmaster among the order I was once a part of.",
+    "responses": [ { "text": "Grandmaster?", "topic": "TALK_CF_GM_GRANDMASTER" }, { "text": "I see.", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "id": "TALK_CF_GM_GRANDMASTER",
+    "type": "talk_topic",
+    "dynamic_line": "Indeed.  Before the founding, we were a local religious institute under solemn vow.  I suspect the Church would frown upon our present conduct, our practices now so closely entwined with our heathen brethren.",
+    "responses": [ { "text": "I see.", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "id": "TALK_CF_GM_WHERE",
+    "type": "talk_topic",
+    "dynamic_line": "Sofia would know more of the place.  Sadly I'm not ordained to serve the role of whoever originally tended to this place, and so sacred duties fall to Thane McKinnon.",
+    "responses": [ { "text": "What are your duties then?", "topic": "TALK_CF_GM_DO" }, { "text": "Oh, okay.", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "id": "TALK_CF_GM_DO",
+    "type": "talk_topic",
+    "dynamic_line": "For now, I oversee the training and preparation of the others here, and organize scouting and supply runs.  Check with me and perhaps I'll have something for you do.",
+    "responses": [ { "text": "We'll see.", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "id": "TALK_CF_GM_OTHERS",
+    "type": "talk_topic",
+    "dynamic_line": "We are not alone out there.  I am aware of other hunting parties still hanging on, though getting a fix on their location is difficult.  I've given Sofia what information I have, she might be able to do something with it if you ask her.",
+    "responses": [ { "text": "Okay.", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "id": "TALK_CF_GM_ARCANISTS",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": "A few scattered signs of your order, despite our conflict almost wiping us both out.  The Keepers of the Oath seem to be just about extinct too, largely thanks to your fellows.  That just leaves various cults and handfuls of independent practitioners, as far as I'm aware.  I can only pray that they don't make things worse, with no one left to guide them.",
+      "no": "The Sanguine Order, as far as I've been able to discern, has been almost wiped out.  Thank the gods for that.  I've heard barely anything of the Keepers, possibly for the best given we weren't often on speaking terms with each other.  Handful of cults here and there no doubt, but I'm not aware of any others to get tangled up in the bickering and squabbling of the old days.  Likely individuals out there surely, still dabbling in potentially dangerous magic with no one to guide them."
+    },
+    "responses": [ { "text": "I see.", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "id": "TALK_CF_GM_GROUP",
+    "type": "talk_topic",
+    "dynamic_line": "To bring justice to those who would endanger humanity, if we must.  To mend the growing wound In The Veil Between Worlds, if we can.  To guard and guide so that a dangerous path may be avoided, so we shall.  So long as the Sun shines upon the Earth.  We are hunters of the wicked and otherworldly, and protectors of the innocent.  At least, we strive to be.  There weren't that many of us, and being scattered as small parties meant that not all of us adhered to proper conduct, though it never reached the point of dissension and division.",
+    "responses": [ { "text": "I see.", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_GM_TBC",
+    "dynamic_line": "Not at the moment.  Check back later, and I should have more for you.",
+    "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_GM" } ]
+  }
+]

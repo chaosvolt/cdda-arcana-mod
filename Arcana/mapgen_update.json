@@ -1,0 +1,199 @@
+[
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "arcana_dummy",
+    "method": "json",
+    "object": {  }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_1_a",
+    "object": {
+      "mapgensize": [ 20, 20 ],
+      "rows": [
+        "||||||||||||||||||||",
+        "|  |  |  |  |      |",
+        "|  |  |  |  |      |",
+        "||_||_||_||_|      |",
+        "|                  |",
+        "|                  |",
+        "||_||_||_||_|      |",
+        "|  |  |  |  |      |",
+        "|  |  |  |  |      |",
+        "|||||||||||||||__|||",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    "
+      ],
+      "terrain": { "|": "t_wall_log", "_": "t_door_frame" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_1_b",
+    "object": {
+      "mapgensize": [ 2, 2 ],
+      "rows": [
+        "  ",
+        "##"
+      ],
+      "terrain": { "#": "t_dirt" },
+      "furniture": { "#": "f_sandbag_half" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_1_c",
+    "weight": 100,
+    "object": {
+      "mapgensize": [ 2, 2 ],
+      "rows": [
+        " +",
+        " +"
+      ],
+      "terrain": {
+        "+": "t_rdoor_c"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_1_d",
+    "object": {
+      "mapgensize": [ 20, 20 ],
+      "rows": [
+        "          #      #  ",
+        "   #  ##  #+     #  ",
+        "                 ## ",
+        "                   #",
+        "                   #",
+        "                    ",
+        "                   #",
+        "                   #",
+        "                    ",
+        "                    ",
+        "                   #",
+        "                   #",
+        "                    ",
+        "                   #",
+        "                   #",
+        "                 ## ",
+        "   #  ##  #+     #  ",
+        "          #      #  ",
+        "                    ",
+        "             ##     "
+      ],
+      "terrain": { "+": "t_rdoor_c" },
+      "furniture": { "#": "f_sandbag_half" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_2_a",
+    "object": {
+      "mapgensize": [ 20, 20 ],
+      "rows": [
+        "||||||||||||||||||||",
+        "|__|__|__|__|______|",
+        "|__|__|__|__|______|",
+        "||+||+||+||+|______|",
+        "|__________________|",
+        "|__________________|",
+        "||+||+||+||+|______|",
+        "|__|__|__|__|______|",
+        "|__|__|__|__|______|",
+        "|||||||||||||||++|||",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    "
+      ],
+      "terrain": { "|": "t_wall_log", "_": "t_floor_primitive", "+": "t_door_c" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_2_a",
+    "object": {
+      "mapgensize": [ 20, 20 ],
+      "rows": [
+        "||||||||||||||||||||",
+        "|__________________|",
+        "|__________________|",
+        "|__________________|",
+        "|__________________|",
+        "|__________________|",
+        "|__________________|",
+        "|__________________|",
+        "|__________________|",
+        "||||||||||||||||||||",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    ",
+        "                    "
+      ],
+      "terrain": { "|": "t_wall_log_half", "_": "t_thatch_roof" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_3_a",
+    "object": {
+      "mapgensize": [ 18, 18 ],
+      "rows": [
+        "BD BD BD BD       ",
+        "B  B  B  B    hh  ",
+        "             heeh ",
+        "             heeh ",
+        "              hh  ",
+        "                  ",
+        "B  B  B  B        ",
+        "BD BD BD BD       ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  ",
+        "                  "
+      ],
+      "terrain": { "#": "t_dirt" },
+      "furniture": { "B": "f_bed", "D": "f_dresser", "e": "f_table", "h": "f_chair" },
+      "place_npcs": [
+        { "class": "cleansing_flame_grandmaster", "x": 16, "y": 5 },
+        { "class": "mage_hunter_guard", "x": 0, "y": 3 },
+        { "class": "mage_hunter_guard", "x": 14, "y": 1 },
+        { "class": "mage_hunter_guard", "x": 3, "y": 7 }
+      ]
+    }
+  }
+]
