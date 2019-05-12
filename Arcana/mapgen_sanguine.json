@@ -75,12 +75,9 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "underwear", "damage": [ 1, 4 ] },
-      { "group": "shirts", "damage": [ 1, 4 ] },
-      { "group": "pants", "damage": [ 1, 4 ] },
-      { "group": "shoes", "damage": [ 1, 4 ] },
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
       { "group": "sanguine_cult_gear", "prob": 10, "damage": [ 1, 4 ] },
-      { "item": "corpse" }
+      { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
   },
   {

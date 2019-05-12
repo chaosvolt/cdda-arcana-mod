@@ -1,5 +1,26 @@
 [
   {
+    "id": "chalice_cult_casualties_fresh",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
+      { "group": "chalice_cult_gear", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "chalice_cult_consumables", "prob": 25 },
+      { "item": "corpse" }
+    ]
+  },
+  {
+    "id": "sanguine_cult_casualties_fresh",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
+      { "group": "sanguine_cult_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "item": "corpse" }
+    ]
+  },
+  {
     "id": "reading_lights",
     "type": "item_group",
     "items": [
@@ -68,7 +89,7 @@
       "place_loot": [
         { "group": "cult_sacrifice", "x": 4, "y": 13, "chance": 100 },
         { "group": "cult_sacrifice", "x": 7, "y": 13, "chance": 100 },
-        { "group": "sanguine_cult_casualties", "x": 19, "y": 12, "chance": 75 },
+        { "group": "sanguine_cult_casualties_fresh", "x": 19, "y": 12, "chance": 75 },
         { "group": "sanguine_cult_books", "x": 3, "y": [ 6, 10 ], "chance": 75, "repeat": 5 },
         { "group": "sanguine_cult_spells", "x": 3, "y": [ 6, 10 ], "chance": 10 },
         { "item": "book_syncretism", "x": 3, "y": [ 6, 10 ], "chance": 5 },
@@ -174,8 +195,8 @@
         { "item": "offering_chalice_used", "x": 11, "y": 19 },
         { "item": "note_chalice_tenet", "x": 11, "y": 19, "chance": 90 },
         { "group": "chalice_cult_spells", "x": 11, "y": 19, "chance": 10 },
-        { "group": "chalice_cult_casualties", "x": 11, "y": 13, "chance": 100 },
-        { "group": "chalice_cult_casualties", "x": [ 2, 20 ], "y": [ 1, 10 ], "chance": 75, "repeat": 3 },
+        { "group": "chalice_cult_casualties_fresh", "x": 11, "y": 13, "chance": 100 },
+        { "group": "chalice_cult_casualties_fresh", "x": [ 2, 20 ], "y": [ 1, 10 ], "chance": 75, "repeat": 3 },
         { "group": "chalice_cult_books", "x": [ 10, 12 ], "y": 16, "chance": 40, "repeat": 5 },
         { "item": "book_syncretism", "x": [ 10, 12 ], "y": 16, "chance": 5 },
         { "group": "chalice_cult_books", "x": 9, "y": 13, "chance": 30, "repeat": 3 },

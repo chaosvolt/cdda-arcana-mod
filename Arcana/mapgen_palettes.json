@@ -87,8 +87,8 @@
     },
     "toilets": { "&": {  } },
     "mapping": {
-      "B": { "furniture": "f_bed", "items": [ { "item": "bed", "chance": 90, "repeat": [ 1, 2 ] } ] },
-      "D": { "furniture": "f_dresser", "items": { "item": "dresser", "chance": 85, "repeat": [ 1, 4 ] } }
+      "B": { "items": [ { "item": "bed", "chance": 90 }, { "item": "bed", "chance": 60 } ] },
+      "D": { "items": [ { "item": "clothing_outdoor_torso", "chance": 75 }, { "item": "clothing_outdoor_pants", "chance": 75 } ] }
     }
   }
 ]
