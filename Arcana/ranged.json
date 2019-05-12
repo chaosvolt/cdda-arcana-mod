@@ -184,5 +184,24 @@
     "range": 12,
     "loudness": 50,
     "ammo_effects": [ "LIGHTNING", "EMP" ]
+  },
+  {
+    "id": "mut_dragonfire",
+    "type": "GUN",
+    "name": "dragonfire",
+    "name_plural": "dragonfire",
+    "description": "Cited by dragonfire mutation, this is a pseudo item.",
+    "material": [ "essencemat" ],
+    "symbol": "(",
+    "color": "red",
+    "skill": "launcher",
+    "range": 10,
+    "ranged_damage": { "damage_type": "heat", "amount": 10 },
+    "dispersion": 300,
+    "durability": 10,
+    "loudness": 5,
+    "reload": 500,
+    "ammo_effects": [ "WIDE", "STREAM" ],
+    "flags": [ "NEVER_JAMS", "TRADER_AVOID", "INCENDIARY" ]
   }
 ]

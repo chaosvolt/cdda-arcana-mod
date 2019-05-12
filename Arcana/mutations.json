@@ -1362,6 +1362,7 @@
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "changes_to": [ "ARCANA_DRAGONSCALES" ],
     "types": [ "SKIN" ],
+    "stealth_modifier": -5,
     "wet_protection": [ { "part": "ARM_L", "ignored": 4 }, { "part": "ARM_R", "ignored": 4 }, { "part": "TORSO", "ignored": 10 } ],
     "armor": [ { "parts": [ "ARM_L", "ARM_R", "TORSO" ], "bash": 1, "cut": 2 } ]
   },
@@ -1379,6 +1380,7 @@
     "prereqs": [ "ARCANA_SCALYPATCHES" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "types": [ "SKIN" ],
+    "stealth_modifier": -20,
     "wet_protection": [
       { "part": "HEAD", "ignored": 3 },
       { "part": "LEG_L", "ignored": 10 },
@@ -1456,11 +1458,12 @@
     "mixed_effect": true,
     "bodytemp_modifiers": [ 0, 1000 ],
     "bodytemp_sleep": 500,
-    "description": "Your body has adapted further, exploiting the strange power that fuels your body.  You still need more food and water than normal, but the benefits are more pronounced.  In addition, you can conjure bursts of flame in close combat, if your mouth is uncovered.",
+    "description": "Your body has adapted further, exploiting the strange power that fuels your body.  You still need more food and water than normal, but the benefits are more pronounced.  Activate to breathe short-ranged bursts of flame.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_FIREAFFINITY" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
+    "prereqs2": [ "CARNIVORE" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "METABOLISM" ],
     "metabolism_modifier": 0.5,
@@ -1471,13 +1474,10 @@
     "fatigue_regen_modifier": 0.75,
     "stamina_regen_modifier": 0.75,
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
-    "attacks": {
-      "attack_text_u": "You bathe %s in flames",
-      "attack_text_npc": "%1$s bathes %2$s in flames",
-      "body_part": "MOUTH",
-      "chance": 20,
-      "strength_damage": [ { "damage_type": "heat", "amount": 2 } ]
-    }
+    "active": true,
+    "cost": 30,
+    "hunger": true,
+    "ranged_mutation": { "type": "mut_dragonfire", "message": "You loose a tongue of flame from your mouth." }
   },
   {
     "type": "mutation",
@@ -1512,7 +1512,7 @@
     "category": [ "DRAGONBLOOD" ],
     "encumbrance_covered": [ [ "TORSO", 5 ] ],
     "types": [ "WINGS" ],
-    "stamina_regen_modifier": 0.25,
+    "max_stamina_modifier": 1.1,
     "restricts_gear": [ "TORSO" ],
     "allow_soft_gear": true,
     "passive_mods": { "str_mod": 3 }
@@ -1594,7 +1594,7 @@
     "visibility": 5,
     "ugliness": 2,
     "mixed_effect": true,
-    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons, preventing you from wearing footwear and making it hard to walk.  On the plus side, you can kick with them rather effectively.",
+    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons, preventing you from wearing footwear and making it hard to walk, especially on rough terrain.  On the plus side, you can kick with them rather effectively.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
@@ -1605,6 +1605,8 @@
     "encumbrance_always": [ [ "LEG_L", 10 ], [ "LEG_R", 10 ], [ "FOOT_L", 10 ], [ "FOOT_R", 10 ] ],
     "restricts_gear": [ "FOOT_L", "FOOT_R" ],
     "destroys_gear": true,
+    "movecost_obstacle_modifier": 1.2,
+    "noise_modifier": 2.0,
     "attacks": [
       {
         "attack_text_u": "You rake %s with your toe claws",
@@ -1622,7 +1624,7 @@
     "visibility": 5,
     "ugliness": 2,
     "mixed_effect": true,
-    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward.",
+    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward.  Rough terrain is still a slight hindrance, but you can move a bit faster on level ground.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
@@ -1633,6 +1635,9 @@
     "passive_mods": { "dex_mod": 1 },
     "restricts_gear": [ "FOOT_L", "FOOT_R" ],
     "destroys_gear": true,
+    "movecost_obstacle_modifier": 1.1,
+    "movecost_flatground_modifier": 0.9,
+    "noise_modifier": 1.5,
     "attacks": [
       {
         "attack_text_u": "You rake %s with your toe claws",
@@ -1649,7 +1654,7 @@
     "points": 2,
     "visibility": 8,
     "ugliness": 2,
-    "description": "You have a long, thin, lizardlike tail.  It doesn't do a whole lot, but does make a serviceable whip.  Prevents wearing non-fabric pants.",
+    "description": "You have a long, thin, lizardlike tail.  It's flexible enough to help with balance a bit, and makes a serviceable whip.  Prevents wearing non-fabric pants.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
@@ -1664,7 +1669,8 @@
       "attack_text_npc": "%1$s whips %2$s with their tail",
       "chance": 20,
       "strength_damage": { "damage_type": "bash", "amount": 1 }
-    }
+    },
+    "dodge_modifier": 2
   },
   {
     "type": "mutation",
@@ -1673,7 +1679,7 @@
     "points": 3,
     "visibility": 8,
     "ugliness": 3,
-    "description": "You have a long, thin, lizardlike tail, with a few nasty-looking spikes on the end of it.  It doesn't do a whole lot, but does make a serviceable whip.  Prevents wearing non-fabric pants.",
+    "description": "You have a long, thin, lizardlike tail, with a few nasty-looking spikes on the end of it.  It doesn't help as much with balance anymore, but still makes a serviceable whip.  Prevents wearing non-fabric pants.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYTAIL" ],
@@ -1687,7 +1693,9 @@
       "attack_text_npc": "%1$s lashes %2$s with their tail",
       "chance": 15,
       "strength_damage": [ { "damage_type": "stab", "amount": 2 }, { "damage_type": "bash", "amount": 1 } ]
-    }
+    },
+    "//": "Becoming less effective at balancing is intentional, spikes aren't as substantial as Spiked Tail but still impedes dodge bonus.",
+    "dodge_modifier": 1
   },
   {
     "type": "mutation",
@@ -1748,6 +1756,7 @@
       "SPELL_SHADOWSNAKES",
       "SPELL_SUMMONFIEND"
     ],
+    "prereqs2": [ "ANIMALDISCORD" ],
     "category": [ "DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_FULLESSENCE" ],
     "active": true,
@@ -1766,7 +1775,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_BLOODESSENCE" ],
-    "prereqs2": [ "ARCANA_DRAGONFIRE" ],
+    "prereqs2": [ "CANNIBAL" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "active": true,
