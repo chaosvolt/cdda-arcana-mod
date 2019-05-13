@@ -141,6 +141,7 @@
     "traits": [
       { "group": "Appearance_cleansingflame" },
       { "group": "Mage_Hunter_starting_traits" },
+      { "group": "BG_survival_story_MAGE_HUNTER" },
       [ "PROF_CLEANSINGFLAME", 100 ]
     ]
   },

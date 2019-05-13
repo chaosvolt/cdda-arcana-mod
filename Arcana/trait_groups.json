@@ -47,5 +47,18 @@
       { "trait": "MOODSWINGS", "prob": 10 },
       { "trait": "TRIGGERHAPPY", "prob": 15 }
     ]
+  },
+  {
+    "//": "This group picks out background traits for evacuees, and also includes survivors that should have evacuated but didn't. These backgrounds are not appropriate to rural survivors nor to emergency personnel who would not have been evacuated. Most other survivors should fit.",
+    "type": "trait_group",
+    "id": "BG_survival_story_MAGE_HUNTER",
+    "subtype": "distribution",
+    "traits": [
+      { "trait": "BGSS_CF_1" },
+      { "trait": "BGSS_CF_2" },
+      { "trait": "BGSS_CF_3" },
+      { "trait": "BGSS_CF_4" },
+      { "trait": "BGSS_CF_5" }
+    ]
   }
 ]

@@ -219,5 +219,185 @@
       },
       { "text": "...", "topic": "TALK_MAGE_HUNTER" }
     ]
+  },
+  {
+    "id": "TALK_FRIEND_CONVERSATION",
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "<BGSS_intro_question>",
+        "topic": "BGSS_CF_1_STORY1",
+        "condition": { "npc_has_trait": "BGSS_CF_1" },
+        "switch": true
+      },
+      {
+        "text": "<BGSS_intro_question>",
+        "topic": "BGSS_CF_2_STORY1",
+        "condition": { "npc_has_trait": "BGSS_CF_2" },
+        "switch": true
+      },
+      {
+        "text": "<BGSS_intro_question>",
+        "topic": "BGSS_CF_3_STORY1",
+        "condition": { "npc_has_trait": "BGSS_CF_3" },
+        "switch": true
+      },
+      {
+        "text": "<BGSS_intro_question>",
+        "topic": "BGSS_CF_4_STORY1",
+        "condition": { "npc_has_trait": "BGSS_CF_4" },
+        "switch": true
+      },
+      {
+        "text": "<BGSS_intro_question>",
+        "topic": "BGSS_CF_5_STORY1",
+        "condition": { "npc_has_trait": "BGSS_CF_5" },
+        "switch": true
+      }
+    ]
+  },
+  {
+    "id": "BGSS_CF_1_STORY1",
+    "type": "talk_topic",
+    "dynamic_line": "I was with a few others.  We were traveling to a planned rendevous point to meet another hunting party, one of us had a cell phone.  Couldn't get any reception, I thought maybe it was because we were in a fairly rural area.  Right as we were arguing over why we might not be getting any signal, one of the others yells out for a mask check.",
+    "responses": [
+      { "text": "Mask check?", "topic": "BGSS_CF_1_STORY2" },
+      { "text": "What happaned?", "topic": "BGSS_CF_1_STORY3" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_1_STORY2",
+    "type": "talk_topic",
+    "dynamic_line": "Put our masks on and activate them.  We normally periodically look around through our masks while on the move anyway, to avoid being caught off guard.",
+    "responses": [
+      { "text": "What'd you see?", "topic": "BGSS_CF_1_STORY3" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_1_STORY3",
+    "type": "talk_topic",
+    "dynamic_line": "We were all nearly struck blind.  In nearly every direction, horrible light flooded in from beyond the normal limit of our masks' perception range.  Only very powerful effects can be seem from that far away through clairvoyance, and whatever caused all this could be perceived for miles away, in every single direction.",
+    "responses": [
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_2_STORY1",
+    "type": "talk_topic",
+    "dynamic_line": "The rest of my hunting party had been picked off over the past week or so.  I didn't know where else to go, but I knew there was a town not far from where I was, and possible contacts on the outskirts.",
+    "responses": [
+      { "text": "I'm guessing the town was overrun.", "topic": "BGSS_CF_2_STORY2" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_2_STORY2",
+    "type": "talk_topic",
+    "dynamic_line": "Yeah.  When I saw that, I knew.  Whatever caused this was bigger than our conflict with the Sanguine Order.  Bigger than the Keepers of The Oath, bigger than every conflict we were involved in.  Something loosed the gates of Hell itself and it consumed everything in sight...",
+    "responses": [
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_3_STORY1",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_trait": "BGSS_CF_FILTER",
+      "yes": "I was with Grandmaster Leone and a few others.  We were going to meet up with another hunting party in a local sanctum.",
+      "no": "I was with Sofia and a couple others.  She was en route here, to meet the padre and ask for shelter on the way to one of our safehouses."
+    },
+    "responses": [
+      { "text": "What'd you find when you got here?", "topic": "BGSS_CF_3_STORY2" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_3_STORY2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_trait": "BGSS_CF_FILTER",
+      "yes": "Johnathan could tell something was amiss when we were just barely in sight of the place.  No evidence of patrols, no auras radiating from masks, nothing.  We suspected they were compromised and abandoned the sanctum, so we avoided the place.  Found out the next day something big happened, not just to the sanctum but seemingly everywhere...",
+      "no": "Place was empty.  No priest, no other people, nothing.  No sign that they'd been there recently either.  We got settled in best as we could, and didn't find out the news until a couple days later.  It was so much worse than we ever remotely suspected..."
+    },
+    "responses": [
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_4_STORY1",
+    "type": "talk_topic",
+    "dynamic_line": "I was trailing reports of suspected sanguine activity with the rest of my hunting party.  Didn't end well, obviously.",
+    "responses": [
+      { "text": "What sort of sanguine activity?", "topic": "BGSS_CF_4_STORY2" },
+      { "text": "What happened?", "topic": "BGSS_CF_4_STORY3" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_4_STORY2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": "Yeshua's palms, you'd think you'd know what to expect from your kin.  Human sacrifice for arcane power.",
+      "no": "Abductions, human sacrifice, cannibalism.  All the usual gods-damned things those profligates get into."
+    },
+    "responses": [
+      { "text": "So what happened?", "topic": "BGSS_CF_4_STORY3" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_4_STORY3",
+    "type": "talk_topic",
+    "dynamic_line": "We were wrong.  Dead wrong.  We found a bunch of bodies hastily shoveled into a mass grave, but no ritual activity.  There was an Army vehicle actually, gods know what sort of strange shit they were up to.  We would've been scrambling to break contact and avoid bringing unwanted attention to our order, but any soldiers were long gone by then.",
+    "responses": [
+      { "text": "So you had some sort of masquerade thing going?", "topic": "BGSS_CF_4_STORY4" },
+      { "text": "What happened then?", "topic": "BGSS_CF_4_STORY5" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_4_STORY4",
+    "type": "talk_topic",
+    "dynamic_line": "It's not like we were that large a group, and we had a few contacts who had a vested interest in keeping us out of trouble.  No doubt they were already aware we existed, but likely saw us as just a small band of vigiliantes at most.  Which was practically what we were in the old days anyway.",
+    "responses": [
+      { "text": "So what happened then?", "topic": "BGSS_CF_4_STORY5" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_4_STORY5",
+    "type": "talk_topic",
+    "dynamic_line": "The dead didn't stay that way.  In fact our arrival stirred most of the corpses up.  Dozens of them, writhing and scrabbling over each other to crawl out of a trench barely 10 feet long and only a few feet deep.  Lost two of us before we were forced to break contact rather than try to put the poor things down.  We'd find out later on just how much worse it was everywhere else.",
+    "responses": [
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_5_STORY1",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_trait": "BGSS_CF_FILTER",
+      "yes": "I'll keep it short and simple.  It was sheer good luck that I avoided running into any hordes or major anomalies before I linked up with Johnathan.  He informed me of what happened after he realized my route took me through a fairly quiet part of the countryside.",
+      "no": "I'll keep it short and simple.  I got lucky, basically.  I was the last one left of my hunting party trying to meet up with any others.  I wasn't anywhere near the major cities or other hotspots, so I didn't find out anything was amiss until I reached this place and heard the news from Thane McKinnon herself."
+    },
+    "responses": [
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
   }
 ]

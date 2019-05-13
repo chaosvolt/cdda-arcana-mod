@@ -132,7 +132,7 @@
   {
     "type": "mapgen",
     "method": "json",
-    "nested_mapgen_id": "cf_church_upgrade_2_a",
+    "nested_mapgen_id": "cf_church_upgrade_2_b",
     "object": {
       "mapgensize": [ 20, 20 ],
       "rows": [
@@ -190,9 +190,9 @@
       "furniture": { "B": "f_bed", "D": "f_dresser", "e": "f_table", "h": "f_chair" },
       "place_npcs": [
         { "class": "cleansing_flame_grandmaster", "x": 16, "y": 5 },
-        { "class": "mage_hunter_guard", "x": 0, "y": 3 },
-        { "class": "mage_hunter_guard", "x": 14, "y": 1 },
-        { "class": "mage_hunter_guard", "x": 3, "y": 7 }
+        { "class": "mage_hunter_guard", "x": 0, "y": 3, "add_trait": "BGSS_CF_FILTER" },
+        { "class": "mage_hunter_guard", "x": 14, "y": 1, "add_trait": "BGSS_CF_FILTER" },
+        { "class": "mage_hunter_guard", "x": 3, "y": 7, "add_trait": "BGSS_CF_FILTER" }
       ]
     }
   }
