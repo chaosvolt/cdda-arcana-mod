@@ -344,8 +344,7 @@
     "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_bloodmagic", 0 ] ],
     "result_mult": 3,
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "byproducts": [ [ "rag", 3 ] ],
-    "components": [ [ [ "rag_bloody", 3 ] ] ],
+    "components": [ [ [ "rag_bloody", 3 ], [ "blood", 5 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -362,7 +361,7 @@
     "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_bloodmagic", 0 ] ],
     "result_mult": 3,
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "human_flesh", 5 ], [ "meat", 5 ] ] ],
+    "components": [ [ [ "human_flesh", 10 ], [ "meat", 20 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
