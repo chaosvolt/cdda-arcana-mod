@@ -77,13 +77,13 @@
         "text": "Here you go!",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
         "condition": { "u_has_items": { "item": "gold_small", "count": 100 } },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_sell_item": "gold_small", "count": 100 } ]
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
       },
       {
         "text": "How about 250 grams?",
         "condition": { "u_has_items": { "item": "gold_small", "count": 50 } },
         "trial": { "type": "PERSUADE", "difficulty": 10 },
-        "success": { "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL", "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_sell_item": "gold_small", "count": 50 } ] },
+        "success": { "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL", "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 50 } ] },
         "failure": { "opinion": { "value": -1 }, "topic": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL" }
       },
       {
@@ -109,7 +109,7 @@
         "text": "Here you go!",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
         "condition": { "u_has_items": { "item": "silver_small", "count": 300 } },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_sell_item": "silver_small", "count": 300 } ]
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "silver_small", "count": 300 } ]
       },
       {
         "text": "On second thought, I'll pay in gold.  Here you go.",
@@ -120,7 +120,7 @@
             { "u_has_items": { "item": "gold_small", "count": 100 } }
           ]
         },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_sell_item": "gold_small", "count": 100 } ]
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
       },
       {
         "text": "I don't have enough silver, so I'll pay via the normal method.",
@@ -131,7 +131,7 @@
             { "u_has_items": { "item": "gold_small", "count": 100 } }
           ]
         },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_sell_item": "gold_small", "count": 100 } ]
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
       },
       { "text": "Nevermind.  I'll deal with it later.", "topic": "TALK_EVAC_MERCHANT" }
     ]
@@ -151,13 +151,13 @@
         "text": "On second thought, I'll pay in gold.  Here you go.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
         "condition": { "and": [ { "u_has_cash": 25000 }, { "u_has_items": { "item": "gold_small", "count": 100 } } ] },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_sell_item": "gold_small", "count": 100 } ]
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
       },
       {
         "text": "I don't have enough in my account, so I'll pay in gold.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
         "condition": { "and": [ { "not": { "u_has_cash": 25000 } }, { "u_has_items": { "item": "gold_small", "count": 100 } } ] },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_sell_item": "gold_small", "count": 100 } ]
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
       },
       { "text": "Nevermind.  I'll deal with it later.", "topic": "TALK_EVAC_MERCHANT" }
     ]
@@ -187,7 +187,7 @@
         "text": "Okay, here you go.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
         "condition": { "u_has_items": { "item": "gold_small", "count": 100 } },
-        "effect": { "u_sell_item": "gold_small", "count": 100 }
+        "effect": { "u_consume_item": "gold_small", "count": 100 }
       },
       { "text": "Nevermind then.", "topic": "TALK_EVAC_MERCHANT" }
     ]

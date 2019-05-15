@@ -227,7 +227,22 @@
     "type": "talk_topic",
     "id": "TALK_CF_REP_HEATHEN",
     "dynamic_line": "Our order was composed of people from various religions.  Not only Abrahamic ones of various sorts, but those that would be considered pagan.  Asatruan, in my case.  Over time our practices mingled, a shared influence affecting our approach to the arcane.",
-    "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_REP" } ]
+    "responses": [
+      {
+        "text": "What do you mean, arcane?",
+        "condition": {
+          "not": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ] }
+        },
+        "topic": "TALK_CF_REP_ARCANE"
+      },
+      { "text": "...", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_ARCANE",
+    "dynamic_line": "We've taken to referring to certain supernatural events as such, and the methods some have found to exploit these effects.  Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  Given things like strange monsters being called from gods-know-where, cultists fueling rituals with blood, and the like, it's hard not to refer to such as magical, even if there is some manner of logic to it.",
+    "responses": [ { "text": "O ...kay.  I see.  I think...", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
@@ -237,7 +252,24 @@
       "yes": "An interesting question, from one of my kin.  We have not strayed from our goal of protecting the innocent against the dangers of the Beyond.",
       "no": "Before all this boiled over, who would believe us?  With the dead rising, and strange powers decaying the very fabric of reality, we can afford to be more open about our nature.  We seek to protect people from dangerous magic and otherworldly monsters.  The first signs of these threats were isolated, forbidden knowledge slipping through the cracks, minor symptoms of whatever caused this.  Now it is more than any one group can handle, I fear."
     },
-    "responses": [ { "text": "I see.", "topic": "TALK_CF_REP" } ]
+    "responses": [
+      {
+        "text": "Magic?  I'm still not sure I can believe that.",
+        "condition": {
+          "not": {
+            "u_has_any_trait": [ "PROF_ARCANIST", "PROF_CLEANSINGFLAME", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
+          }
+        },
+        "topic": "TALK_CF_REP_MAGIC"
+      },
+      { "text": "I see.", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_WHO",
+    "dynamic_line": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  But it's useful to remind us to treat even the items we're familiar with cautiously, and never make the assumption that we understand enough to make a rash mistake.",
+    "responses": [ { "text": "...", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
@@ -275,7 +307,44 @@
     "type": "talk_topic",
     "id": "TALK_CF_REP_CF_QUERY",
     "dynamic_line": "A religious order.  Of many faiths, along many paths.  We were never that large in size, mostly just a few local communities united by the depredations of a cult.  Before any of these arcane goings-on happened, but when the cracks in the Veil began to show its effects, we adapted just as the Sanguine Order did.",
-    "responses": [ { "text": "I see.", "topic": "TALK_CF_REP" } ]
+    "responses": [
+      {
+        "text": "What do you mean, arcane?",
+        "condition": {
+          "not": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ] }
+        },
+        "topic": "TALK_CF_REP_ARCANE"
+      },
+      {
+        "text": "The Veil?",
+        "condition": {
+          "not": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ] }
+        },
+        "topic": "TALK_CF_REP_VEIL"
+      },
+      {
+        "text": "And who were the Sanguine Order?",
+        "condition": { "not": { "u_has_any_trait": [ "PROF_SANGUINE", "PROF_CHALICE" ] } },
+        "topic": "TALK_CF_REP_SANGUINE_QUERY"
+      },
+      { "text": "...", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_VEIL",
+    "dynamic_line": "Our term for whatever effect seems to be linked to some of the monsters that have invaded this realm.  You may have seen these rifts or holes during your travels, or heard others report of them.  Things coming out of them?  Whatever caused them, there has to be some way to prevent things from getting worse.",
+    "responses": [ { "text": "I ...see.  Never mind.", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_SANGUINE_QUERY",
+    "dynamic_line": {
+      "u_has_trait": "THRESH_DRAGONBLOOD",
+      "yes": "I had thought from your alterations that you were familiar with them.  They were the ones that developed the practices that you yourself have benefited from.  A band of murderous cultists, even before all this started and they found ways to exploit these anomalies.",
+      "no": "A local cult that used to infest this area's rural regions, and their effects on our community led to our own group being formed.  Like us, before things boiled over there were some initial supernatural effects, and with that came ways of using it to one's benefit.  Their rituals went from simple murder to something dangerous to more than just their victims."
+    },
+    "responses": [ { "text": "...", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
