@@ -277,8 +277,8 @@
   {
     "type": "overmap_terrain",
     "id": "cf_church_1",
-    "name": "field",
-    "sym": ".",
+    "name": "back lot",
+    "sym": "O",
     "color": "brown",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
@@ -286,8 +286,8 @@
   {
     "type": "overmap_terrain",
     "id": "cf_church_2",
-    "name": "field",
-    "sym": ".",
+    "name": "back lot",
+    "sym": "O",
     "color": "brown",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]

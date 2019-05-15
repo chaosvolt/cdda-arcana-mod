@@ -241,8 +241,26 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_ARCANE",
-    "dynamic_line": "We've taken to referring to certain supernatural events as such, and the methods some have found to exploit these effects.  Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  Given things like strange monsters being called from gods-know-where, cultists fueling rituals with blood, and the like, it's hard not to refer to such as magical, even if there is some manner of logic to it.",
-    "responses": [ { "text": "O ...kay.  I see.  I think...", "topic": "TALK_CF_REP" } ]
+    "dynamic_line": {
+      "u_has_effect": "cf_sofia_notes_given",
+      "yes": "Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  There is a logic to it, and I hope if you attempt to understand it yourself you'll be cautious in your efforts.",
+      "no": "We've taken to referring to certain supernatural events as such, and the methods some have found to exploit these effects.  Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  Given things like strange monsters being called from gods-know-where, cultists fueling rituals with blood, and the like, it's hard not to refer to such as magical, even if there is some manner of logic to it.  Here.  This may help you make sense of what we've had to deal with, to some extent."
+    },
+    "responses": [
+      {
+        "text": "I see.  I think...",
+        "switch": true,
+        "topic": "TALK_CF_REP",
+        "condition": { "u_has_effect": "cf_sofia_notes_given" }
+      },
+      {
+        "text": "O ...kay.  I see.  I think...",
+        "switch": true,
+        "default": true,
+        "topic": "TALK_CF_REP",
+        "effect": [ { "u_buy_item": "book_magicfordummies" }, { "u_add_effect": "cf_sofia_notes_given", "duration": "PERMANENT" } ]
+      }
+    ]
   },
   {
     "type": "talk_topic",
@@ -267,9 +285,22 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_CF_REP_WHO",
-    "dynamic_line": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  But it's useful to remind us to treat even the items we're familiar with cautiously, and never make the assumption that we understand enough to make a rash mistake.",
-    "responses": [ { "text": "...", "topic": "TALK_CF_REP" } ]
+    "id": "TALK_CF_REP_MAGIC",
+    "dynamic_line": {
+      "u_has_effect": "cf_sofia_notes_given",
+      "yes": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  But it's useful to remind us to treat even the items we're familiar with cautiously, and never make the assumption that we understand enough to make a rash mistake.",
+      "no": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  Here.  This may prove better than trying to toy with the unknown unaided."
+    },
+    "responses": [
+      { "text": "...", "switch": true, "topic": "TALK_CF_REP", "condition": { "u_has_effect": "cf_sofia_notes_given" } },
+      {
+        "text": "Er.  Thanks, I think.",
+        "switch": true,
+        "default": true,
+        "topic": "TALK_CF_REP",
+        "effect": [ { "u_buy_item": "book_magicfordummies" }, { "u_add_effect": "cf_sofia_notes_given", "duration": "PERMANENT" } ]
+      }
+    ]
   },
   {
     "type": "talk_topic",

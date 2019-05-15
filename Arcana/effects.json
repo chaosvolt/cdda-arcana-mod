@@ -382,5 +382,10 @@
     "desc": [
       "AI tag marking that Sofia has attracted the first wave of allies to the rural church.  Intended to be permanent.  This is a bug if you have it."
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_sofia_notes_given",
+    "//": "Effect for players, indicates that Sofia has already given the player a copy of Apprentice's Notes.  Intended to be permanant."
   }
 ]
