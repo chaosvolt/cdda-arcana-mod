@@ -137,7 +137,7 @@
     ],
     "worn_override": "NC_MAGE_HUNTER_worn",
     "carry_override": "NC_MAGE_HUNTER_carry",
-    "weapon_override": "EMPTY_GROUP",
+    "weapon_override": "NC_MAGE_HUNTER_weapon",
     "traits": [
       { "group": "Appearance_cleansingflame" },
       { "group": "Mage_Hunter_starting_traits" },
@@ -261,13 +261,10 @@
     "id": "NC_MAGE_HUNTER_worn",
     "type": "item_group",
     "subtype": "collection",
+    "ammo": 100,
     "entries": [
       {
-        "distribution": [
-          { "item": "undershirt", "prob": 50 },
-          { "item": "long_undertop", "prob": 25 },
-          { "item": "under_armor", "prob": 25 }
-        ]
+        "distribution": [ { "item": "undershirt", "prob": 50 }, { "item": "long_undertop", "prob": 25 }, { "item": "under_armor", "prob": 25 } ]
       },
       {
         "distribution": [
@@ -276,18 +273,8 @@
           { "item": "under_armor_shorts", "prob": 25 }
         ]
       },
-      {
-        "distribution": [
-          { "item": "socks", "prob": 50 },
-          { "item": "socks_wool", "prob": 50 }
-        ]
-      },
-      {
-        "distribution": [
-          { "item": "pants", "prob": 75 },
-          { "item": "jeans", "prob": 25 }
-        ]
-      },
+      { "distribution": [ { "item": "socks", "prob": 50 }, { "item": "socks_wool", "prob": 50 } ] },
+      { "distribution": [ { "item": "pants", "prob": 75 }, { "item": "jeans", "prob": 25 } ] },
       {
         "distribution": [
           { "item": "dress_shirt", "prob": 50 },
@@ -305,11 +292,7 @@
         ]
       },
       {
-        "distribution": [
-          { "item": "backpack", "prob": 50 },
-          { "item": "backpack_leather", "prob": 25 },
-          { "item": "rucksack", "prob": 25 }
-        ]
+        "distribution": [ { "item": "backpack", "prob": 50 }, { "item": "backpack_leather", "prob": 25 }, { "item": "rucksack", "prob": 25 } ]
       },
       {
         "distribution": [
@@ -319,23 +302,27 @@
           { "item": "kufi", "prob": 10 },
           { "item": "eboshi", "prob": 10 },
           { "item": "kippah", "prob": 5 }
-        ], "prob": 75
+        ],
+        "prob": 75
       },
       {
         "distribution": [
           { "item": "gloves_leather", "prob": 50 },
           { "item": "gauntlets_larmor", "prob": 30 },
           { "item": "gloves_plate", "prob": 20 }
-        ], "prob": 50
+        ],
+        "prob": 50
       },
       {
         "distribution": [
-          { "item": "gilded_aegis", "prob": 50 },
+          { "item": "gilded_aegis", "prob": 25 },
+          { "item": "robe", "prob": 25 },
           { "item": "cassock", "prob": 25 },
           { "item": "cloak_leather", "prob": 10 },
           { "item": "cloak", "prob": 10 },
           { "item": "cloak_wool", "prob": 5 }
-        ], "prob": 75
+        ],
+        "prob": 75
       },
       {
         "distribution": [
@@ -344,7 +331,8 @@
           { "item": "holy_symbol_wood", "prob": 25 },
           { "item": "bead_necklace", "prob": 15 },
           { "item": "amulet_exotic", "prob": 10 }
-        ], "prob": 75
+        ],
+        "prob": 75
       },
       { "item": "somen_clairvoyance", "prob": 90 }
     ]
@@ -352,71 +340,36 @@
   {
     "id": "NC_MAGE_HUNTER_carry",
     "type": "item_group",
-    "//": "This pairs weapons with ammo as intended.",
     "subtype": "collection",
     "ammo": 100,
     "entries": [
-      {
-        "distribution": [
-          { "group": "NC_MAGE_HUNTER_carry_bashing", "prob": 100 },
-          { "group": "NC_MAGE_HUNTER_carry_cutting", "prob": 50 },
-          { "group": "NC_MAGE_HUNTER_carry_crossbows", "prob": 25 },
-          { "group": "NC_MAGE_HUNTER_carry_wraithslayer", "prob": 25 }
-        ], "prob": 90
-      },
       { "item": "water_clean" },
       { "item": "lighter" },
       { "item": "book_hexenhammer", "prob": 20 },
-      { "item": "essence_dull", "prob": 50, "charges": [ 2, 5 ] }
+      { "item": "essence_dull", "charges": [ 5, 10 ] },
+      { "item": "bolt_steel", "charges": [ 10, 15 ] }
     ]
   },
   {
     "type": "item_group",
-    "id": "NC_MAGE_HUNTER_carry_bashing",
-    "items": [
-      [ "warhammer", 25 ],
-      [ "mace", 15 ],
-      [ "morningstar", 10 ],
-      [ "hexenhammer", 50 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAGE_HUNTER_carry_cutting",
-    "items": [
-      [ "arming_sword", 15 ],
-      [ "broadsword", 10 ],
-      [ "scimitar", 10 ],
-      [ "katana", 10 ],
-      [ "jian", 5 ],
-      [ "sun_sword", 50 ]
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAGE_HUNTER_carry_crossbows",
-    "subtype": "collection",
+    "id": "NC_MAGE_HUNTER_weapon",
     "ammo": 100,
-    "entries": [
-      {
-        "distribution": [
-          { "item": "crossbow", "prob": 50 },
-          { "item": "compositecrossbow", "prob": 25 },
-          { "item": "hand_crossbow", "prob": 15 },
-          { "item": "huge_crossbow", "prob": 10 }
-        ]
-      },
-      { "item": "bolt_steel", "charges": [ 10, 20 ] }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAGE_HUNTER_carry_wraithslayer",
-    "subtype": "collection",
-    "ammo": 100,
-    "entries": [
-      { "item": "ethereal_crossbow" },
-      { "item": "essence_dull", "charges": [ 5, 15 ] }
+    "items": [
+      [ "warhammer", 10 ],
+      [ "mace", 3 ],
+      [ "morningstar", 2 ],
+      [ "hexenhammer", 15 ],
+      [ "arming_sword", 6 ],
+      [ "broadsword", 5 ],
+      [ "scimitar", 4 ],
+      [ "katana", 3 ],
+      [ "jian", 2 ],
+      [ "sun_sword", 10 ],
+      [ "crossbow", 12 ],
+      [ "compositecrossbow", 8 ],
+      [ "hand_crossbow", 3 ],
+      [ "huge_crossbow", 2 ],
+      [ "ethereal_crossbow", 25 ]
     ]
   },
   {

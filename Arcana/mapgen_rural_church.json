@@ -32,7 +32,8 @@
         ",,,,,,,,,,,,,,,,,,,,,,,,"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": { "^": "t_pit", "|": "t_wall_log_half" }
+      "terrain": { "^": "t_pit", "|": "t_wall_log_half" },
+      "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 4, 21 ], "y": [ 4, 11 ] } ]
     }
   },
   {
@@ -55,20 +56,20 @@
         ",,,,,,,,,,,,,,,,,,,,,,u,",
         ",,,,,,,,,,,,,,,,,,,,,,,,",
         ",,,,,,,,,,,,,,,,,,,,,,,,",
-        ",,,,,,,,,,,,,,,,,,,,,,,,",
-        ",,,,,,,,,,,,,,,,,,,,,,,,",
-        ",,,,,,,,,,,,,,,,,,,,,,,,",
-        ",,,,,,,,,,,mmmmmmmmmm,,,",
-        ",,,,,,,,,,,mmmmmmmmmm,,,",
-        ",,,,,,,,,,,,,,,,,,,,,,,,",
-        ",,,,,,,,,,,mmmmmmmmmm,,,",
-        ",,,,,,,,,,,mmmmmmmmmm,,,",
-        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,||||||++||||||,,,",
+        ",,,,,,,|,,,,,,,,,,,,|,,,",
+        ",,,,,,,|,mmmmmmmmmm,|,,,",
+        ",,,,,,,|,mmmmmmmmmm,|,,,",
+        ",,,,,,,|,,,,,,,,,,,,|,,,",
+        ",,,,,,,|,mmmmmmmmmm,|,,,",
+        ",,,,,,,|,mmmmmmmmmm,|,,,",
+        ",,,,,,,|,,,,,,,,,,,,|,,,",
+        ",,,,,,,||||||||||||||,,,",
         ",,,,,,,,,,,,,#,,#,,,,,,,",
         ",,,,,,,,,,,,##12##,,,,,,"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": { "^": "t_pit" }
+      "terrain": { "^": "t_pit", "|": "t_chickenwire_fence", "+": "t_chickenwire_gate_c" }
     }
   },
   {
@@ -150,6 +151,7 @@
         "=": "t_door_glass_c",
         "^": "t_pit"
       },
+      "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 0, 17 ], "y": [ 2, 15 ] } ],
       "furniture": { "{": "f_wardrobe", "l": "f_locker", "r": "f_canvas_wall", "x": "f_canvas_door" },
       "items": { "p": { "item": "bed", "chance": 25 }, "l": { "item": "gear_survival", "chance": 25 } },
       "place_loot": [
@@ -201,9 +203,7 @@
         "                        ",
         "                        "
       ],
-      "terrain": {
-        "#": "t_rock_wall_half"
-      }
+      "terrain": { "#": "t_rock_wall_half" }
     }
   },
   {
@@ -239,9 +239,7 @@
         "             #  #       ",
         "            ######      "
       ],
-      "terrain": {
-        "#": "t_rock_wall_half"
-      }
+      "terrain": { "#": "t_rock_wall_half" }
     }
   },
   {
@@ -277,10 +275,7 @@
         "                        ",
         "                        "
       ],
-      "terrain": {
-        "#": "t_rock_wall_half",
-        "_": "t_rock_floor_no_roof"
-      }
+      "terrain": { "#": "t_rock_wall_half", "_": "t_rock_floor_no_roof" }
     }
   },
   {
@@ -316,10 +311,7 @@
         "                        ",
         "                        "
       ],
-      "terrain": {
-        "#": "t_rock_wall_half",
-        "_": "t_rock_floor_no_roof"
-      }
+      "terrain": { "#": "t_rock_wall_half", "_": "t_rock_floor_no_roof" }
     }
   }
 ]

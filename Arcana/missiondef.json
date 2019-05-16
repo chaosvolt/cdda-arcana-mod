@@ -298,12 +298,30 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" } ],
+      "effect": [
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" }
+      ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_1",
           "om_special": "cf_rural_church",
-          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_a" ], "x": 4, "y": 4 } ]
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_a" ], "x": 1, "y": 1 } ]
+        },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_b" ], "x": 8, "y": 1 } ]
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_c" ], "x": 1, "y": 2 } ]
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_d" ], "x": 8, "y": 8 } ]
         }
       ]
     }
