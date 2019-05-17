@@ -89,7 +89,11 @@
         "             ##     "
       ],
       "terrain": { "+": "t_rdoor_c" },
-      "furniture": { "#": "f_sandbag_half" }
+      "furniture": { "#": "f_sandbag_half" },
+      "place_loot": [
+        { "item": "candle_warding_special", "x": 14, "y": 6, "chance": 100 },
+        { "item": "candle_warding_special", "x": 14, "y": 11, "chance": 100 }
+      ]
     }
   },
   {

@@ -217,17 +217,17 @@
         {
           "om_terrain": "cf_church_2",
           "om_special": "cf_rural_church",
-          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_b" ], "x": 14, "y": 21 } ]
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_b" ], "x": 14, "y": 22 } ]
         },
         {
           "om_terrain": "cf_church_3",
           "om_special": "cf_rural_church",
-          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_c" ], "x": 21, "y": 8 } ]
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_c" ], "x": 21, "y": 9 } ]
         },
         {
           "om_terrain": "cf_church_4",
           "om_special": "cf_rural_church",
-          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_d" ], "x": 1, "y": 0 } ]
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_1_d" ], "x": 1, "y": 1 } ]
         }
       ]
     }

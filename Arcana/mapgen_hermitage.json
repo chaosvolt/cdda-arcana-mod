@@ -117,6 +117,7 @@
         "D": "t_floor"
       },
       "furniture": { "l": "f_locker" },
+      "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "wasteland_scavengers", "x": [ 4, 19 ], "y": [ 4, 16 ] } ],
       "place_loot": [
         { "group": "homebooks", "x": 4, "y": [ 4, 8 ], "chance": 75, "repeat": 6 },
         { "group": "homebooks", "x": 4, "y": [ 14, 16 ], "chance": 60, "repeat": 4 },

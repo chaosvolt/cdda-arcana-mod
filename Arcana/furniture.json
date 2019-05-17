@@ -129,5 +129,25 @@
     "flags": [ "FLAMMABLE_HARD", "TRANSPARENT" ],
     "close": "f_door_arcana_c",
     "bash": { "str_min": 4, "str_max": 40, "sound": "smash!", "sound_fail": "whump!" }
+  },
+  {
+    "type": "furniture",
+    "id": "f_arcane_candlestick",
+    "name": "candle pedestal",
+    "description": "A short stone pedestal with an ornate candle holder firmly mounted atop it.",
+    "looks_like": "t_pedestal_wyrm",
+    "symbol": "&",
+    "color": "dark_gray",
+    "move_cost_mod": -1,
+    "coverage": 50,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "SEALED", "PLACE_ITEM" ],
+    "bash": {
+      "str_min": 100,
+      "str_max": 400,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "rock", "count": [ 2, 5 ] } ]
+    }
   }
 ]
