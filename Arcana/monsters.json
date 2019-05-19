@@ -572,7 +572,7 @@
     "//": "Here, have some chalice-specific loot",
     "death_drops": "mon_archon_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "ELECTRIC", "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "HARDTOSHOOT", "QUEEN" ]
+    "flags": [ "ELECTRIC", "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "PATH_AVOID_DANGER_2", "CAN_OPEN_DOORS", "PRIORITIZE_TARGETS", "HARDTOSHOOT", "QUEEN", "NIGHT_INVISIBILITY" ]
   },
   {
     "id": "mon_dracolich",
