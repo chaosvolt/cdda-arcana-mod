@@ -49,14 +49,16 @@
   },
   {
     "abstract": "totem_base",
-    "type": "TOOL",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
     "name": "magic seal base",
+    "category": "tools",
     "material": [ "essencemat" ],
     "symbol": ",",
     "looks_like": "petrified_eye",
     "price": 5000,
     "weight": 50,
     "volume": 1,
-    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE" ]
+    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "NO_INGEST" ]
   }
 ]
