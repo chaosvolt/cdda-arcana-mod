@@ -287,7 +287,8 @@
     "description": "You have gazed deeper into The Beyond than anyone that still lives.  It has gazed back, and found greater purpose in you.",
     "valid": false,
     "purifiable": false,
-    "threshold": true
+    "threshold": true,
+    "mana_multiplier": 1.25
   },
   {
     "type": "mutation",
@@ -1834,7 +1835,8 @@
     "fatigue": true,
     "hunger": true,
     "thirst": true,
-    "spawn_item": { "type": "essence_blood", "message": "You channel your life force into forming a mote of sanguine essence." }
+    "spawn_item": { "type": "essence_blood", "message": "You channel your life force into forming a mote of sanguine essence." },
+    "mana_regen_multiplier": 1.25
   },
   {
     "type": "mutation",
@@ -1853,7 +1855,8 @@
     "fatigue": true,
     "hunger": true,
     "thirst": true,
-    "spawn_item": { "type": "essence", "message": "You channel your life force into forming a mote of otherworldly essence." }
+    "spawn_item": { "type": "essence", "message": "You channel your life force into forming a mote of otherworldly essence." },
+    "mana_regen_multiplier": 1.5
   },
   {
     "type": "mutation",
