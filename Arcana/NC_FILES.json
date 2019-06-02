@@ -393,11 +393,6 @@
     "items": [ [ "healing_potion", 5 ] ]
   },
   {
-    "id": "NC_EVAC_SHOPKEEP_misc",
-    "type": "item_group",
-    "items": [ [ "scroll_blank", 10 ], [ "silver_glyph", 5 ] ]
-  },
-  {
     "id": "NC_HUNTER_archery",
     "type": "item_group",
     "items": [ [ "ethereal_crossbow", 1 ] ]
