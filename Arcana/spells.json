@@ -6,7 +6,7 @@
     "description": "Using this spell will annoint you with an amber halo, granting you immunity to lightning.",
     "valid_targets": [ "self" ],
     "effect": "spawn_item",
-    "effect_str": "halo_lightningward",
+    "effect_str": "halo_elecresist",
     "spell_class": "NONE",
     "energy_source": "MANA",
     "difficulty": 3,
@@ -368,6 +368,33 @@
     "max_duration": 1200,
     "duration_increment": 80,
     "damage_type": "acid"
+  },
+  {
+    "id": "halo_elecresist",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "amber halo",
+    "description": "A strange radiance permeating your body, protecting you from lightning.",
+    "color": "light_gray",
+    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY" ] }
+  },
+  {
+    "id": "halo_clairvoyance",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "ivory halo",
+    "description": "A strange radiance permeating your body, granting you sight beyond sight.",
+    "color": "magenta",
+    "artifact_data": { "effects_worn": [ "AEP_CLAIRVOYANCE" " ] }
+  },
+  {
+    "id": "halo_shadowsnakes",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "obsidian halo",
+    "description": "A strange radiance permeating your body, summoning serpentine shadows when you are harmed.",
+    "color": "dark_gray",
+    "artifact_data": { "effects_worn": [ "AEP_SNAKES" ] }
   },
   {
     "type": "effect_type",
