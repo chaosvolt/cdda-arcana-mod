@@ -973,7 +973,7 @@
         "switch": true,
         "text": "You seem like you might have experience in such things.",
         "condition": { "or": [ { "u_has_intelligence": 10 }, { "u_has_perception": 10 } ] },
-        "trial": { "type": "PERSUADE", "difficulty": 3 },
+        "trial": { "type": "PERSUADE", "difficulty": 30 },
         "success": {
           "topic": "TALK_HERMIT_BOOK_ADMISSION",
           "opinion": { "trust": 1 },
@@ -985,7 +985,7 @@
         "switch": true,
         "default": true,
         "text": "Call it a hunch.",
-        "trial": { "type": "PERSUADE", "difficulty": 4 },
+        "trial": { "type": "PERSUADE", "difficulty": 15 },
         "success": {
           "topic": "TALK_HERMIT_BOOK_ADMISSION",
           "opinion": { "trust": 1 },
@@ -1141,7 +1141,7 @@
         "switch": true,
         "text": "You seem to be hiding something.  Or from someone.  It's okay, you can trust me.",
         "condition": { "or": [ { "u_has_intelligence": 10 }, { "u_has_perception": 10 } ] },
-        "trial": { "type": "PERSUADE", "difficulty": 3 },
+        "trial": { "type": "PERSUADE", "difficulty": 30 },
         "success": {
           "topic": "TALK_HERMIT_DOING_ADMISSION",
           "opinion": { "trust": 1 },
@@ -1153,7 +1153,7 @@
         "switch": true,
         "default": true,
         "text": "Is that all you do out here?",
-        "trial": { "type": "PERSUADE", "difficulty": 4 },
+        "trial": { "type": "PERSUADE", "difficulty": 15 },
         "success": {
           "topic": "TALK_HERMIT_DOING_ADMISSION",
           "opinion": { "trust": 1 },
