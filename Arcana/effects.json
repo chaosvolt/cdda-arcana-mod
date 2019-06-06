@@ -362,6 +362,11 @@
   },
   {
     "type": "effect_type",
+    "id": "sofia_motive_explained",
+    "//": "Effect for both players and NPCs, for Sofia it filters out sanguinist and Keeper players that have explained their motivation for visiting the holdout.  Also used for Johnathan to filter out some bug-proofing dialogue."
+  },
+  {
+    "type": "effect_type",
     "id": "cf_mission_1",
     "//": "Effect for players, marks them as being trustworthy and known to Sofia's camp.  Intended to be permanant."
   },
