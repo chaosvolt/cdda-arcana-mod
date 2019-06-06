@@ -50,16 +50,6 @@
         "condition": { "npc_has_effect": "cf_mission_3" }
       },
       {
-        "text": "Anything I can do to help?",
-        "topic": "TALK_MISSION_LIST",
-        "condition": { "not": { "npc_has_effect": "cf_mission_3" } }
-      },
-      {
-        "text": "Anything I can do to help?",
-        "topic": "TALK_CF_REP_TBC",
-        "condition": { "npc_has_effect": "cf_mission_3" }
-      },
-      {
         "text": "Why didn't you attack me?",
         "condition": { "and": [ { "not": { "u_has_effect": "sofia_motive_explained" } }, { "u_has_trait": "PROF_SANGUINE" } ] },
         "topic": "TALK_CF_REP_SANGUINE_ASK"
@@ -105,6 +95,16 @@
           ]
         },
         "topic": "TALK_CF_REP_MERCHANT_MOTIVE"
+      },
+      {
+        "text": "Anything I can do to help?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "not": { "npc_has_effect": "cf_mission_3" } }
+      },
+      {
+        "text": "Anything I can do to help?",
+        "topic": "TALK_CF_REP_TBC",
+        "condition": { "npc_has_effect": "cf_mission_3" }
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]

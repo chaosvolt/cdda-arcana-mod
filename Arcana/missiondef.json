@@ -276,7 +276,7 @@
   {
     "id": "MISSION_CF_REP_3",
     "type": "mission_definition",
-    "name": "Kill Flesh Angel",
+    "name": "Kill Unknown Monster",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
     "value": 150000,
@@ -350,21 +350,34 @@
   {
     "id": "MISSION_CF_GM_1",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
+    "name": "Cleanse Strange Grove",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
     "value": 150000,
     "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": { "om_terrain": "strange_grove", "reveal_radius": 3, "z": 0 },
+      "update_mapgen": {
+        "om_terrain": "grove_ruins",
+        "om_special": "Strange Grove",
+        "place_monster": [
+          { "monster": "mon_creeper_hub", "x": 5, "y": 9, "target": true },
+          { "monster": "mon_creeper_hub", "x": 15, "y": 20, "target": true },
+          { "monster": "mon_vinebeast", "x": 4, "y": 19, "target": true },
+          { "monster": "mon_vinebeast", "x": 1, "y": 5, "target": true }
+        ]
+      }
+    },
     "dialogue": {
-      "describe": "...",
-      "offer": "...",
-      "accepted": "...",
-      "rejected": "...",
-      "advice": "...",
-      "inquire": "...",
-      "success": "...",
-      "success_lie": "...",
-      "failure": "..."
+      "describe": "Grant us strength...",
+      "offer": "During our journey we've seen scattered evidence of some hazards still afflicting certain areas, former hotspots of anomalous activity now made even more dangerous ever since holes in reality began opening up.  With the rest of us focused on rebuilding and securing the area, I would like to ask your assistance with investigating one such location.",
+      "accepted": "Thank you.  I will direct you to the location, if you've not seen it for yourself.  Decades ago the place was inhabitated, but now the place seems to just be overgrown and infested with monsters, but we're not sure just what to expect down there.  Be careful, but leave no monster alive if you can.  Dii vult.",
+      "rejected": "When you believe you are ready, talk to me again.  The longer these old places linger, ",
+      "advice": "The extent to which whatever used to be there has been overgrown is unnatural.  I would expect monsters comfortable among greenery to be the most common threat.  Beyond that, I can tell you little of the history behind that place, Sofia might know more.",
+      "inquire": "How goes the hunt?",
+      "success": "Thank you.  I'm sorry that the place was in so much worse shape than I first anticpated.  I will trust you with anything of note that you found while exploring the place, while the rest of us try to discern just what to make of this anomaly.  And if you wish, I have more for you.",
+      "success_lie": "What idiocy is this?",
+      "failure": "But how?"
     }
   }
 ]

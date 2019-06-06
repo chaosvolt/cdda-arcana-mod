@@ -26,7 +26,6 @@
     "responses": [
       { "text": "Who are you?", "topic": "TALK_CF_GM_WHO" },
       { "text": "What can you tell me about this place?", "topic": "TALK_CF_GM_WHERE" },
-      { "text": "Anything I can do to help?", "topic": "TALK_CF_GM_TBC" },
       {
         "text": "Are there any others of us left?",
         "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
@@ -42,6 +41,7 @@
         "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } },
         "topic": "TALK_CF_GM_GROUP"
       },
+      { "text": "Anything I can do to help?", "topic": "TALK_MISSION_LIST" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
   },
@@ -90,11 +90,5 @@
     "type": "talk_topic",
     "dynamic_line": "To bring justice to those who would endanger humanity, if we must.  To mend the growing wound In The Veil Between Worlds, if we can.  To guard and guide so that a dangerous path may be avoided, so we shall.  So long as the Sun shines upon the Earth.  We are hunters of the wicked and otherworldly, and protectors of the innocent.  At least, we strive to be.  There weren't that many of us, and being scattered as small parties meant that not all of us adhered to proper conduct, though it never reached the point of dissension and division.",
     "responses": [ { "text": "I see.", "topic": "TALK_CF_GM" } ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_CF_GM_TBC",
-    "dynamic_line": "Not at the moment.  Check back later, and I should have more for you.",
-    "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_GM" } ]
   }
 ]
