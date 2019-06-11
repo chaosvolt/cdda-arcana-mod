@@ -150,6 +150,7 @@
     "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders.  The air wavers around it, barely noticeable to you.",
     "turns_per_charge": 50,
     "artifact_data": { "effects_worn": [ "AEP_INVISIBLE", "AEP_STEALTH" ] },
+    "revert_to": "robe_shadow",
     "use_action": {
       "target": "robe_shadow",
       "msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
