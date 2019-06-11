@@ -730,7 +730,7 @@
     "difficulty": 10,
     "time": 100000,
     "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 200 ] ] ],
+    "components": [ [ [ "scourge_staff_leftovers", 1 ] ], [ [ "essence_dull", 200 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {

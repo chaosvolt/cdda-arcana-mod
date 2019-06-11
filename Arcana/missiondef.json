@@ -350,32 +350,27 @@
   {
     "id": "MISSION_CF_GM_1",
     "type": "mission_definition",
-    "name": "Cleanse Strange Grove",
-    "goal": "MGOAL_KILL_MONSTER",
-    "difficulty": 4,
+    "name": "Retrieve Bane Staff",
+    "//": "Mission goal is null, as there are two items you can show him to complete it.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "item": "scourge_staff",
     "value": 150000,
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
-      "assign_mission_target": { "om_terrain": "strange_grove", "reveal_radius": 3, "z": 0 },
-      "update_mapgen": {
-        "om_terrain": "grove_ruins",
-        "om_special": "Strange Grove",
-        "place_monster": [
-          { "monster": "mon_creeper_hub", "x": 5, "y": 9, "target": true },
-          { "monster": "mon_creeper_hub", "x": 15, "y": 20, "target": true },
-          { "monster": "mon_vinebeast", "x": 4, "y": 19, "target": true },
-          { "monster": "mon_vinebeast", "x": 1, "y": 5, "target": true }
-        ]
-      }
+      "effect": [
+        { "npc_add_effect": "cf_gm_mission_1", "duration": "PERMANENT" }
+      ],
+      "assign_mission_target": { "om_terrain": "strange_grove", "reveal_radius": 3, "z": 0 }
     },
     "dialogue": {
       "describe": "Grant us strength...",
-      "offer": "During our journey we've seen scattered evidence of some hazards still afflicting certain areas, former hotspots of anomalous activity now made even more dangerous ever since holes in reality began opening up.  With the rest of us focused on rebuilding and securing the area, I would like to ask your assistance with investigating one such location.",
-      "accepted": "Thank you.  I will direct you to the location, if you've not seen it for yourself.  Decades ago the place was inhabitated, but now the place seems to just be overgrown and infested with monsters, but we're not sure just what to expect down there.  Be careful, but leave no monster alive if you can.  Dii vult.",
-      "rejected": "When you believe you are ready, talk to me again.  The longer these old places linger, ",
-      "advice": "The extent to which whatever used to be there has been overgrown is unnatural.  I would expect monsters comfortable among greenery to be the most common threat.  Beyond that, I can tell you little of the history behind that place, Sofia might know more.",
+      "offer": "During our journey we've seen scattered evidence of some hazards still afflicting certain areas, former hotspots of anomalous activity now made even more dangerous, ever since holes in reality began opening up.  With the rest of us focused on rebuilding and securing the area, I would like to ask your assistance with investigating one such location, and retrieving an artifact of historical importance believed to be lost there.",
+      "accepted": "Thank you.  I will direct you to the location, if you've not seen it for yourself.  Decades ago the place was inhabitated, but now the place seems to be overgrown and infested with monsters.  Do what you must to cleanse the place.  Dii vult.",
+      "rejected": "When you believe you are ready, talk to me again.  The longer these old places linger without being dealt with, the more of a threat they may become.",
+      "advice": "The extent to which the place has overgrown is unnatural.  I would expect monsters comfortable among greenery to be the most common threat, and we have reason to believe something large has taken root there.  Beyond that, I can tell you little of the history behind that place, Sofia might know more.",
       "inquire": "How goes the hunt?",
-      "success": "Thank you.  I'm sorry that the place was in so much worse shape than I first anticpated.  I will trust you with anything of note that you found while exploring the place, while the rest of us try to discern just what to make of this anomaly.  And if you wish, I have more for you.",
+      "success": "Thank you.  That staff was associated with those who once inhabited that place, but it seems whatever anomalies caused all this corrupted it to some extent.  I will care for it, anything else you found down there you may deal with as you see fit.  The rest of us will try to discern just what to make of these anomalies.  And if you wish, I have more for you.",
       "success_lie": "What idiocy is this?",
       "failure": "But how?"
     }

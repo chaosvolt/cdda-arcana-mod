@@ -280,5 +280,31 @@
     "looks_like": "candle_warding_active",
     "color": "white",
     "flags": [ "NO_SALVAGE", "LIGHT_120" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "scourge_staff_leftovers",
+    "symbol": "*",
+    "color": "blue",
+    "name": "cracked blue stone",
+    "description": "A blue orb with an unnatural acrid smell to it, the only physical rehmnant of a particular consecrated artifact.  It could still be useful as proof of having rendered the item inert.",
+    "material": "essencemat",
+    "looks_like": "monster_tear",
+    "weight": 230,
+    "volume": 1,
+    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "TRADER_AVOID" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "hand_of_armok_leftovers",
+    "symbol": ",",
+    "color": "light_gray",
+    "name": "odd metallic claw",
+    "description": "A single curved claw-like blade, dull and annealed to the point of being useless.  The only phyiscal remhant of a particular consecrated artifact.  It could still be useful as proof of having rendered the item inert.",
+    "material": "essencemat",
+    "looks_like": "blade",
+    "weight": 400,
+    "volume": 1,
+    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "TRADER_AVOID" ]
   }
 ]
