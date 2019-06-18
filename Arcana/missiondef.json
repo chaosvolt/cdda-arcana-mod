@@ -311,7 +311,7 @@
         {
           "om_terrain": "cf_church_2",
           "om_special": "cf_rural_church",
-          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_b" ], "x": 8, "y": 1 } ]
+          "mapgen_update_id": "cf_church_upgrade_3_b"
         },
         {
           "om_terrain": "cf_church_3",
