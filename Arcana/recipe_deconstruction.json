@@ -694,16 +694,6 @@
     "components": [ [ [ "gold_small", 500 ] ], [ [ "diamond", 1 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
-    "result": "veilblade",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 7,
-    "time": "70 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 100 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
     "result": "draconic_heart_mutator",
     "type": "uncraft",
     "skill_used": "magic",
@@ -711,46 +701,6 @@
     "time": "50 m",
     "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [ [ [ "essence_dull", 100 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "hand_of_armok",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 10,
-    "time": "100 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 200 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "scourge_staff",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 10,
-    "time": "100 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
-    "components": [ [ [ "scourge_staff_leftovers", 1 ] ], [ [ "essence_dull", 200 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "stormbringer",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 10,
-    "time": "100 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 200 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "cleric_ring",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 10,
-    "time": "100 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ], [ [ "fire", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 200 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {

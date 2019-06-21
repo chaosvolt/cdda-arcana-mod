@@ -226,7 +226,6 @@
       "need_charges_msg": "The charm against lightning needs purified essence to function.",
       "type": "transform"
     },
-    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY", "AEP_SPEED_DOWN" ] },
     "flags": [ "FANCY", "NO_SALVAGE" ]
   },
   {
