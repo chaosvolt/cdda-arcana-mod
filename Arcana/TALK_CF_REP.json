@@ -42,6 +42,16 @@
           ]
         }
       },
+      {
+        "text": "[MISSION] What can you tell me about the \"stange grove\" Johathan asked me to investigate?",
+        "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1",
+        "condition": { "u_has_mission": "MISSION_CF_GM_1" }
+      },
+      {
+        "text": "[MISSION] What can you tell me about this sanctum Johnathan sent me to investigate?",
+        "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_2",
+        "condition": { "u_has_mission": "MISSION_CF_GM_2" }
+      },
       { "text": "What is this place?", "topic": "TALK_CF_REP_WHERE" },
       { "text": "Who are you?", "topic": "TALK_CF_REP_WHO" },
       {
@@ -115,6 +125,33 @@
     "dynamic_line": "Oh, okay.  Should be easy enough to replace, since the list is a bit short.  Our needs and resources haven't changed at the moment anyway.  Here you go.",
     "responses": [ { "text": "Thank you.", "topic": "TALK_CF_REP", "effect": { "u_buy_item": "cf_rep_trade_arrangement" } } ]
   },
+
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_JOHNATHAN_ADVICE_1",
+    "dynamic_line": "An old arcanist enclave, right?  I'm afraid I don't know much of practical value beyond Johnathan's own judgement on the potential threat.  But I do recall a bit about the place prior to its infestation.",
+    "responses": [
+      { "text": "What do you know about what the place used to be?", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1_1" },
+      { "text": "Know anything about what happened to it?", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1_2" },
+      { "text": "Another time, perhaps.  Thank you though.", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_JOHNATHAN_ADVICE_2",
+    "dynamic_line": {
+      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "yes": "I know about that place, yes.  The Sanctum of St. John.  Don't know if you ever had the chance to visit it before all this happened, but it was the only sanctum built by our own hand.  Only one I know of, at least.  Anything you wish to know, I will answer as best as I can recall.",
+      "no": "I know about that place, yes.  We called it the Sanctum of St. John.  As far as I am aware, it was the only refuge we constructed ourselves, rather than being sheltered by our contacts elsewhere.  What do you wish to know about it?"
+    },
+    "responses": [
+      { "text": "What can you tell me about the layout of the place?", "topic": "TALK_CF_REP_SANGUINE_MOTIVE_1" },
+      { "text": "What happened to it?", "topic": "TALK_CF_REP_SANGUINE_MOTIVE_2" },
+      { "text": "Another time, perhaps.  Thank you though.", "topic": "TALK_CF_REP" }
+    ]
+  },
+
+
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_SANGUINE_ASK",
