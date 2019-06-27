@@ -350,8 +350,13 @@
       "assign_mission_target": { "om_terrain": "strange_grove", "reveal_radius": 3, "z": 0 }
     },
     "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
       "update_mapgen": [
-        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_1_a" },
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_1_a"
+        },
         {
           "om_terrain": "cf_church_2",
           "om_special": "cf_rural_church",
@@ -390,10 +395,19 @@
     "item": "hand_of_armok",
     "value": 150000,
     "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_GM_3",
     "start": { "assign_mission_target": { "om_terrain": "curious_structure", "reveal_radius": 3, "z": 0 } },
     "end": {
+      "effect": [
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" }
+      ],
       "update_mapgen": [
-        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_2_a" },
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_2_a"
+        },
         {
           "om_terrain": "cf_church_2",
           "om_special": "cf_rural_church",
@@ -419,6 +433,68 @@
       "advice": "Bring any assistance you can, and expect all manner of abominations to have followed that thing through the wounds in The Veil.  Be prepared for infernal fire, any magic or equipment that would safeguard against flame would help.  Do as best as you can to assemble a proper hunting party, but sadly we are stretched thin as it is.",
       "inquire": "How goes the hunt?",
       "success": "Gods above and below, to think this thing caused one of our holiest places to fall to ruin.  I doubt it will be safe to reclaim that place anytime soon.  Anything you found down their is yours to use as you see fit.  I hope that those who fell holding that thing back are are peace.  Speak with me when you see fit, I have another thing to ask of you.",
+      "success_lie": "What idiocy is this?",
+      "failure": "But how?"
+    }
+  },
+  {
+    "id": "MISSION_CF_GM_3",
+    "type": "mission_definition",
+    "name": "Cleanse Sanguinist Sect",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 10,
+    "value": 300000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "bandit_camp_1",
+        "om_special": "bandit_camp",
+        "om_terrain_replace": "forest",
+        "reveal_radius": 1,
+        "range": [ 10, 50 ]
+      },
+      "update_mapgen": { "place_npcs": [ { "class": "bandit", "x": 17, "y": 9, "target": true } ] },
+      "effect": [
+        { "u_buy_item": "ruger_redhawk" },
+        { "u_buy_item": "44magnum" },
+        { "u_buy_item": "holster" },
+        { "u_buy_item": "badge_marshal" },
+        { "u_add_trait": "PROF_FED" }
+      ]
+    },
+    "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_3_a"
+        },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_1_b"
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_1_c"
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_1_d"
+        }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_GM_3",
+    "dialogue": {
+      "describe": "Grant us strength...",
+      "offer": "You've provided adequate evidence not only of the existence of a still-practicing group of sanguinists, but even better a location to search.  You know what must be done.  Their sect will likely be centralized around a local magus, prioritizing them will reduce the threat even if their underlings escape justice.  Hunt them down, when you are prepared for the task.",
+      "accepted": "God and gods willing, may you return safe and victorious.  This will be a dangerous task, and while we may be stretched thin, I will allow you to request assistance at your discretion.  We can spare at another hunter to the task.",
+      "rejected": "I understand.  Come back when you are prepared.",
+      "advice": "They will have pursued any advantage they could get their hands on.  Any weapon at their disposal, any foul magic, any corruption of body and soul.  Bring as many allies as you can muster to your cause, any weapon to suit you.",
+      "success": "Thank the gods that you've returned safely!  May this serve as a warning to any who would further endanger humanity.  I hope that you will use proper discretion in dealing with any dangerous items you retrieved from that place.  While you were gone, one of our scouting missions made contact with a small holdout of our brethren, which should ease some of the workload here.  I may have more for you, even then.",
       "success_lie": "What idiocy is this?",
       "failure": "But how?"
     }

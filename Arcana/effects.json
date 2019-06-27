@@ -382,6 +382,14 @@
   },
   {
     "type": "effect_type",
+    "id": "cf_mission_2",
+    "name": [ "Closure" ],
+    "desc": [
+      "AI tag marking that Jonathan's second mission has been completed, locking you out of the third mission until a bit of investigation has been done.  Intended to be permanent.  This is a bug if you have it."
+    ]
+  },
+  {
+    "type": "effect_type",
     "id": "cf_mission_3",
     "name": [ "Contact Made" ],
     "desc": [
@@ -392,5 +400,10 @@
     "type": "effect_type",
     "id": "cf_sofia_notes_given",
     "//": "Effect for players, indicates that Sofia has already given the player a copy of Apprentice's Notes.  Intended to be permanant."
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_sanguinists_located",
+    "//": "Effect for players, marks them as having found the sanguinist holdout.  Intended to be permanant."
   }
 ]
