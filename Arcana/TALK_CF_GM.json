@@ -43,6 +43,12 @@
       },
       {
         "text": "Anything I can do to help?",
+        "condition": { "npc_has_effect": "cf_mission_2" },
+        "switch": true,
+        "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE"
+      },
+      {
+        "text": "Anything I can do to help?",
         "condition": { "npc_has_trait": "FIX_CF_GM" },
         "switch": true,
         "topic": "TALK_MISSION_LIST"
@@ -103,6 +109,56 @@
     "dynamic_line": "To bring justice to those who would endanger humanity, if we must.  To mend the growing wound In The Veil Between Worlds, if we can.  To guard and guide so that a dangerous path may be avoided, so we shall.  So long as the Sun shines upon the Earth.  We are hunters of the wicked and otherworldly, and protectors of the innocent.  At least, we strive to be.  There weren't that many of us, and being scattered as small parties meant that not all of us adhered to proper conduct, though it never reached the point of dissension and division.",
     "responses": [ { "text": "I see.", "topic": "TALK_CF_GM" } ]
   },
+
+  {
+    "id": "TALK_CF_GM_SANGUINE_INVESTIGATE",
+    "type": "talk_topic",
+    "dynamic_line": "While I do have another job for you, there is something we will need to take care of, if you don't mind.",
+    "responses": [
+      { "text": "What is it?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_WHAT" },
+      { "text": "Maybe later.", "topic": "TALK_CF_GM" }
+    ]
+  },
+  {
+    "id": "TALK_CF_GM_SANGUINE_INVESTIGATE_WHAT",
+    "type": "talk_topic",
+    "dynamic_line": "We have a lead on another threat in the region, but this time we don't have a location.  There have been attacks on travelers across a rather broad area, that appears to be sanguine in nature.  If you can help find more information, we might be able to pinpoint their location.",
+    "responses": [
+      { "text": "Do you know who might be able to help find them?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HELP" },
+      { "text": "How do you know the attacks are \"sanguine\" then?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HOW" },
+      { "text": "I'll see if I can ask around.", "topic": "TALK_CF_GM" }
+    ]
+  },
+  {
+    "id": "TALK_CF_GM_SANGUINE_INVESTIGATE_HELP",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": "If any knowledge gleamed from your experince among them might help, please do what you can.  Otherwise, the best place to start would be the refugee center.  Some of the victims were travelers and traders likely to have been in contact with them.",
+      "no": "Some of the travelers and traders to have been attacked are likely to have been in contact with the local refugee center.  I'm hoping that they might have useful information."
+    },
+    "responses": [
+      { "text": "Do you know who might be able to help find them?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HELP" },
+      { "text": "How do you know the attacks are \"sanguine\" then?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HOW" },
+      { "text": "I'll see if I can ask around.", "topic": "TALK_CF_GM" }
+    ]
+  },
+
+  {
+    "id": "TALK_CF_GM_SANGUINE_INVESTIGATE_HOW",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": "You were one of them.  You should be able to recogonize the signs of your order's depredations.  These days there are perhaps abominations with similiar results on the unsuspecting, but these aren't the attacks of a mindless monster.  This is the work of something with human intellect, a group of such most likely.",
+      "no": "Kidnappings, use of incendiary and acidic weapons on those who offer too much resistance.  Throats slit in the dead of night.  Signs of otherwordly effects left over in areas where a struggle broke out.  More importantly, evidence that the attacks are caused by a group of human intelligence, not a lone threat and certainy not a mindless monster.  All signs of sanguinist weaponry and behavior."
+    },
+    "responses": [
+      { "text": "Do you know who might be able to help find them?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HELP" },
+      { "text": "How do you know the attacks are \"sanguine\" then?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HOW" },
+      { "text": "I see.  That's all for now, I'll see what I can do.", "topic": "TALK_CF_GM", "effect": { "u_add_effect": "cf_gm_seeking_mission_3", "duration": "PERMANENT" }, }
+    ]
+  },
+
   {
     "id": "TALK_CF_GM_DUN_GOOFED",
     "type": "talk_topic",
