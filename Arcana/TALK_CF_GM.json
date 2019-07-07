@@ -138,9 +138,30 @@
       "no": "Some of the travelers and traders to have been attacked are likely to have been in contact with the local refugee center.  I'm hoping that they might have useful information."
     },
     "responses": [
-      { "text": "Do you know who might be able to help find them?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HELP" },
-      { "text": "How do you know the attacks are \"sanguine\" then?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HOW" },
-      { "text": "I'll see if I can ask around.", "topic": "TALK_CF_GM" }
+      {
+        "text": "We might be able to determine their most likely choice of hideout.",
+        "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_NEED_MAP",
+        "switch": true,
+        "condition": { "u_has_trait": "PROF_SANGUINE" }
+        "condition": {
+          "and": [
+            { "or": [ { "u_has_intelligence": 12 }, { "u_has_perception": 12 } ] },
+            { "u_has_trait": "PROF_SANGUINE" }
+          ]
+        }
+      },
+      {
+        "text": "If I have the right information, maybe we can narrow down where they might be?",
+        "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_NEED_SANGUINE",
+        "switch": true,
+        "condition": {
+          "and": [
+            { "or": [ { "u_has_intelligence": 14 }, { "u_has_perception": 14 } ] },
+            { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CHALICE", "PROF_ARCANIST" ] }
+          ]
+        }
+      },
+      { "text": "We'll see, then.", "topic": "TALK_CF_GM", "effect": { "u_add_effect": "cf_gm_seeking_mission_3", "duration": "PERMANENT" } }
     ]
   },
 
@@ -155,7 +176,7 @@
     "responses": [
       { "text": "Do you know who might be able to help find them?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HELP" },
       { "text": "How do you know the attacks are \"sanguine\" then?", "topic": "TALK_CF_GM_SANGUINE_INVESTIGATE_HOW" },
-      { "text": "I see.  That's all for now, I'll see what I can do.", "topic": "TALK_CF_GM", "effect": { "u_add_effect": "cf_gm_seeking_mission_3", "duration": "PERMANENT" }, }
+      { "text": "I see.  That's all for now, I'll see what I can do.", "topic": "TALK_CF_GM", "effect": { "u_add_effect": "cf_gm_seeking_mission_3", "duration": "PERMANENT" } }
     ]
   },
 

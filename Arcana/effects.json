@@ -390,6 +390,11 @@
   },
   {
     "type": "effect_type",
+    "id": "cf_gm_seeking_mission_3",
+    "//": "Effect for players, indicates that Johnathan has sent the player to go pinpoint a sanguine hideout.  Intended to be permanant."
+  },
+  {
+    "type": "effect_type",
     "id": "cf_mission_3",
     "name": [ "Contact Made" ],
     "desc": [
