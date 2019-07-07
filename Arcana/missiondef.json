@@ -399,8 +399,7 @@
     "start": { "assign_mission_target": { "om_terrain": "curious_structure", "reveal_radius": 3, "z": 0 } },
     "end": {
       "effect": [
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" }
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
       ],
       "update_mapgen": [
         {
@@ -446,23 +445,17 @@
     "value": 300000,
     "start": {
       "assign_mission_target": {
-        "om_terrain": "bandit_camp_1",
-        "om_special": "bandit_camp",
+        "om_terrain": "sanguine_holdout_1",
+        "om_special": "sanguine_holdout",
         "om_terrain_replace": "forest",
-        "reveal_radius": 1,
-        "range": [ 10, 50 ]
+        "reveal_radius": 3,
+        "random": true,
+        "range": [ 10, 80 ]
       },
-      "update_mapgen": { "place_npcs": [ { "class": "bandit", "x": 17, "y": 9, "target": true } ] },
-      "effect": [
-        { "u_buy_item": "ruger_redhawk" },
-        { "u_buy_item": "44magnum" },
-        { "u_buy_item": "holster" },
-        { "u_buy_item": "badge_marshal" },
-        { "u_add_trait": "PROF_FED" }
-      ]
+      "update_mapgen": { "place_npcs": [ { "class": "bandit", "x": 17, "y": 9, "target": true } ] }
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" } ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_1",
@@ -490,7 +483,7 @@
     "followup": "MISSION_CF_GM_3",
     "dialogue": {
       "describe": "Grant us strength...",
-      "offer": "You've provided adequate evidence not only of the existence of a still-practicing group of sanguinists, but even better a location to search.  You know what must be done.  Their sect will likely be centralized around a local magus, prioritizing them will reduce the threat even if their underlings escape justice.  Hunt them down, when you are prepared for the task.",
+      "offer": "We have evidence not only of a still-practicing group of sanguinists, but moreover confirmation of their most likely hideout.  You know what must be done.  Their sect will likely be centralized around a local magus, prioritizing them will reduce the threat even if their underlings escape justice.  Hunt them down, when you are prepared for the task.",
       "accepted": "God and gods willing, may you return safe and victorious.  This will be a dangerous task, and while we may be stretched thin, I will allow you to request assistance at your discretion.  We can spare at another hunter to the task.",
       "rejected": "I understand.  Come back when you are prepared.",
       "advice": "They will have pursued any advantage they could get their hands on.  Any weapon at their disposal, any foul magic, any corruption of body and soul.  Bring as many allies as you can muster to your cause, any weapon to suit you.",

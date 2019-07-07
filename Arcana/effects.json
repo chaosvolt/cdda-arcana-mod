@@ -382,33 +382,20 @@
   },
   {
     "type": "effect_type",
-    "id": "cf_mission_2",
-    "name": [ "Closure" ],
-    "desc": [
-      "AI tag marking that Jonathan's second mission has been completed, locking you out of the third mission until a bit of investigation has been done.  Intended to be permanent.  This is a bug if you have it."
-    ]
-  },
-  {
-    "type": "effect_type",
-    "id": "cf_gm_seeking_mission_3",
-    "//": "Effect for players, indicates that Johnathan has sent the player to go pinpoint a sanguine hideout.  Intended to be permanant."
+    "id": "cf_mission_3_recruited_2",
+    "//": "Effect for players, indicates that they asked another guard to assist in a hunt.  Intended to be permanant."
   },
   {
     "type": "effect_type",
     "id": "cf_mission_3",
-    "name": [ "Contact Made" ],
+    "name": [ "Mission Marker" ],
     "desc": [
-      "AI tag marking that Sofia has attracted the first wave of allies to the rural church.  Intended to be permanent.  This is a bug if you have it."
+      "AI tag marking that Sofia has attracted the first wave of allies to the rural church.  Also used to indicate to Jonathan that their third mission has been completed.  Intended to be permanent.  This is a bug if you have it."
     ]
   },
   {
     "type": "effect_type",
     "id": "cf_sofia_notes_given",
     "//": "Effect for players, indicates that Sofia has already given the player a copy of Apprentice's Notes.  Intended to be permanant."
-  },
-  {
-    "type": "effect_type",
-    "id": "cf_sanguinists_located",
-    "//": "Effect for players, marks them as having found the sanguinist holdout.  Intended to be permanant."
   }
 ]
