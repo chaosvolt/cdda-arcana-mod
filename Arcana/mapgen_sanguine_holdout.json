@@ -1,0 +1,106 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "sanguine_holdout_1" ],
+    "weight": 100,
+    "object": {
+      "rows": [
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,PPPPPPPPPPGGGGGPPPP,,",
+        ",,,P%,,%%%%%,,,,,,!,%P,,",
+        ",,,P%,,,,,,,,,,,,,,,%P,,",
+        ",,,P%,|-www-|,,,,,,,%P,,",
+        ",,,P,,|CsfCn|EEEEE,,%P,,",
+        ",,|-w-|o....+EEEEE,,,P,,",
+        ",,|t.&|C...n|-www-|-w-|,",
+        ",,|t..+....n|D....+..{|,",
+        ",,|..s|.....+.....+..{|,",
+        ",,|-+-|.....|BB.|-||--|,",
+        ",,|.........|---|..+.>|,",
+        ",,W...hh.....]]]|..+.>|,",
+        ",,|..heeh.......|..|--|,",
+        ",,WC.heeh.......x....]|,",
+        ",,WC..hh.......C|....]|,",
+        ",,|............C|-----|,",
+        ",,W............C|.DBB.|,",
+        ",,|.............+..BB.W,",
+        ",,|-+|-W-xx-W-|-|.....W,",
+        ",,|{.|EEEEEEEE|{+.....|,",
+        ",,|--|EEEEEEEE|-|--W--|,",
+        ",,,,,EEIEEEEIEE,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,"
+      ],
+      "palettes": [ "arcana_palette" ],
+      "mapping": {
+        "]": { "items": { "item": "mansion_bookcase" } },
+        "f": { "items": [ { "item": "fridgesnacks", "chance": 30 }, { "item": "fridge", "chance": 50 } ] },
+        "n": { "items": [ { "item": "cannedfood", "chance": 50 }, { "item": "cannedfood", "chance": 25 } ] },
+        "{": { "items": { "item": "butcher_tools", "chance": 50 } }
+      },
+      "terrain": {
+        "!": "t_palisade_pulley",
+        "%": [ [ "t_shrub_peanut", 10 ], [ "t_shrub_blueberry", 15 ], [ "t_shrub_strawberry", 20 ], [ "t_shrub_blackberry", 10 ], [ "t_shrub_huckleberry", 5 ], [ "t_shrub_raspberry", 5 ], [ "t_shrub_grape", 10 ], [ "t_shrub_rose", 25 ] ],
+        "G": "t_palisade_gate",
+        "P": "t_palisade",
+        "W": "t_window_boarded",
+        "w": "t_window_domestic"
+      },
+      "place_monster": [ { "monster": "mon_zombie", "x": 8, "y": 10 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "sanguine_holdout_b1" ],
+    "weight": 100,
+    "object": {
+      "rows": [
+        "########################",
+        "##=========##==========#",
+        "##=8..8..8=##=8.=8.=8.=#",
+        "##=.......=##=..=..=..=#",
+        "##=[.aa..C=====5==5==5=#",
+        "##=[.aa..C=..+........=#",
+        "##=......v=..+........=#",
+        "#=====+====..=5==  =5==#",
+        "#=........+..=..=..=..=#",
+        "#=hee.....+..=.8=..=.8=#",
+        "#=hee..{{{=======..====#",
+        "#=.hh..====....b=..+.<=#",
+        "#=.....=..+..Z..=..+.<=#",
+        "#===+===..+..Z..=..====#",
+        "#=]...]=..=....b=..=####",
+        "#=]...]=++=======++====#",
+        "#=........=..=.......b=#",
+        "#=hh......=..+.......b=#",
+        "#=dd....]]=..=.......b=#",
+        "#====++====..===+======#",
+        "####=........=....s=####",
+        "####=........=&....=####",
+        "####================####",
+        "########################"
+      ],
+      "palettes": [ "arcana_palette" ],
+      "terrain": { "5": "t_door_bar_locked" },
+      "mapping": {
+        ".": { "items": { "item": "subway", "chance": 5 } },
+        "a": { "furniture": "f_slab", "item": { "item": "etched_skull" } },
+        "c": {
+          "items": [ { "item": "dresser", "chance": 15 }, { "item": "creepy", "chance": 5 } ],
+          "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
+        },
+        "]": { "furniture": "f_bookcase", "items": { "item": "mansion_bookcase", "chance": 100 } },
+        "{": { "furniture": "f_rack", "items": { "item": "cannedfood", "chance": 50 } }
+      },
+      "place_loot": [ { "item": "book_magicfordummies", "x": 17, "y": 8 }, { "item": "note_starry_missive", "x": [ 2, 3 ], "y": 21 } ],
+      "place_monster": [
+        { "monster": "mon_dementia", "x": 4, "y": 12, "repeat": [ 3, 6 ] },
+        { "monster": "mon_dementia", "x": 10, "y": 3, "repeat": [ 1, 4 ] },
+        { "monster": "mon_dementia", "x": 12, "y": 7 },
+        { "monster": "mon_homunculus", "x": 16, "y": 4 },
+        { "monster": "mon_flesh_angel", "x": 3, "y": 22 }
+      ]
+    }
+  }
+]
