@@ -50,5 +50,49 @@
     "chat": "TALK_CF_GM",
     "faction": "cleansing_flame",
     "mission_offered": "MISSION_CF_GM_1"
+  },
+  {
+    "type": "npc",
+    "id": "sanguine_order_apprentice_generic",
+    "//": "Sanguine Order cannon fodder, in an area you're not supposed to be in.",
+    "name_suffix": "Apprentice",
+    "class": "NC_BLOOD_MAGE_APPRENTICE",
+    "attitude": 10,
+    "mission": 7,
+    "chat": "TALK_DONE",
+    "faction": "sanguine_order_remnant"
+  },
+  {
+    "type": "npc",
+    "id": "sanguine_order_apprentice",
+    "//": "Sanguinist you can encounter topside, has some dialogue.",
+    "name_suffix": "Apprentice",
+    "class": "NC_BLOOD_MAGE_APPRENTICE",
+    "attitude": 1,
+    "mission": 7,
+    "chat": "TALK_SANGUINE_APPRENTICE",
+    "faction": "sanguine_order_remnant"
+  }
+  {
+    "type": "npc",
+    "id": "sanguine_order_shrike",
+    "//": "Oh shit, they have a shrike too.  Some dialogue if the player givess them a chance to speak up.",
+    "name_suffix": "Sanguine Shrike",
+    "class": "NC_BLOOD_MAGE_SHRIKE",
+    "attitude": 1,
+    "mission": 7,
+    "chat": "TALK_SANGUINE_APPRENTICE",
+    "faction": "sanguine_order_remnant"
+  },
+  {
+    "type": "npc",
+    "id": "sanguine_order_magus",
+    "//": "The specific person Jonathan sent you to kill, a proper magus.",
+    "name_suffix": "Blood Mage",
+    "class": "NC_BLOOD_MAGE_MAGUS",
+    "attitude": 10,
+    "mission": 7,
+    "chat": "TALK_DONE",
+    "faction": "sanguine_order_remnant"
   }
 ]
