@@ -225,7 +225,7 @@
     ],
     "items": {
       "both": {
-        "items": [ "duster", "backpack", "tricorne", "socks", "boots", "flask_hip", "ref_lighter", "bowl_clay", "book_bloodmagic" ],
+        "items": [ "duster", "backpack", "tricorne", "socks", "flask_hip", "ref_lighter", "bowl_clay", "book_bloodmagic" ],
         "entries": [
           { "item": "armor_wyrm", "ammo-item": "essence_blood", "charges": [ 4, 8 ] },
           { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 1 },
