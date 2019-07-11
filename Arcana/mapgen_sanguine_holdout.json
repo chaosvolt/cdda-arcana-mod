@@ -46,7 +46,10 @@
         "W": "t_window_boarded",
         "w": "t_window_domestic"
       },
-      "place_monster": [ { "monster": "mon_zombie", "x": 8, "y": 10 } ]
+      "place_zones": [
+        { "type": "NPC_INVESTIGATE_ONLY", "faction": "sanguine_order_remnant", "x": [ 17, 18 ], "y": [ 11, 12 ] }
+      ],
+      "place_npcs": [ { "class": "sanguine_order_apprentice", "x": 17, "y": 11 } ]
     }
   },
   {
@@ -63,7 +66,7 @@
         "##=[.aa..C=====5==5==5=#",
         "##=[.aa..C=..+........=#",
         "##=......v=..+........=#",
-        "#=====+====..=5==  =5==#",
+        "#=====+====..=5==..=5==#",
         "#=........+..=..=..=..=#",
         "#=hee.....+..=.8=..=.8=#",
         "#=hee..{{{=======..====#",
@@ -94,12 +97,27 @@
         "{": { "furniture": "f_rack", "items": { "item": "cannedfood", "chance": 50 } }
       },
       "place_loot": [ { "item": "book_magicfordummies", "x": 17, "y": 8 }, { "item": "note_starry_missive", "x": [ 2, 3 ], "y": 21 } ],
+      "place_zones": [
+        { "type": "NPC_NO_INVESTIGATE", "faction": "sanguine_order_remnant", "x": [ 13, 22 ], "y": [ 1, 4 ] },
+        { "type": "NPC_NO_INVESTIGATE", "faction": "sanguine_order_remnant", "x": [ 13, 16 ], "y": [ 7, 10 ] },
+        { "type": "NPC_NO_INVESTIGATE", "faction": "sanguine_order_remnant", "x": [ 19, 22 ], "y": [ 7, 10 ] },
+        { "type": "NPC_INVESTIGATE_ONLY", "faction": "sanguine_order_remnant", "x": [ 11, 15 ], "y": [ 11, 14 ] },
+        { "type": "NPC_INVESTIGATE_ONLY", "faction": "sanguine_order_remnant", "x": [ 3, 6 ], "y": [ 2, 6 ] }
+      ],
       "place_monster": [
-        { "monster": "mon_dementia", "x": 4, "y": 12, "repeat": [ 3, 6 ] },
-        { "monster": "mon_dementia", "x": 10, "y": 3, "repeat": [ 1, 4 ] },
-        { "monster": "mon_dementia", "x": 12, "y": 7 },
-        { "monster": "mon_homunculus", "x": 16, "y": 4 },
-        { "monster": "mon_flesh_angel", "x": 3, "y": 22 }
+        { "monster": "mon_dementia", "x": 14, "y": 3 },
+        { "monster": "mon_dementia", "x": 21, "y": 3 },
+        { "monster": "mon_dementia", "x": 22, "y": 7 },
+        { "monster": "mon_homunculus", "x": 14, "y": 8 },
+        { "monster": "mon_flesh_angel", "x": 18, "y": 2 }
+      ],
+      "place_npcs": [
+        { "class": "sanguine_order_apprentice_generic", "x": 21, "y": 18 },
+        { "class": "sanguine_order_apprentice_generic", "x": 3, "y": 17 },
+        { "class": "sanguine_order_apprentice_generic", "x": 2, "y": 9 },
+        { "class": "sanguine_order_apprentice_generic", "x": 17, "y": 20 },
+        { "class": "sanguine_order_apprentice_generic", "x": 18, "y": 6 },
+        { "class": "sanguine_order_shrike", "x": 7, "y": 5 }
       ]
     }
   }

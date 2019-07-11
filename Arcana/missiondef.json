@@ -455,7 +455,7 @@
         {
           "om_terrain": "sanguine_holdout_b1",
           "om_special": "sanguine_holdout",
-          "place_npcs": [ { "class": "bandit", "x": 10, "y": 8, "target": true } ]
+          "place_npcs": [ { "class": "sanguine_order_magus", "x": 14, "y": 12, "target": true } ]
         }
       ]
     },
