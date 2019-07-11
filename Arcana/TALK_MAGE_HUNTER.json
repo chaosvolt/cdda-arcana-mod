@@ -71,7 +71,7 @@
       },
       {
         "text": "Take your attitude and shove it, mage hunter.",
-        "topic": "TALK_MAGE_HUNTER",
+        "topic": "TALK_MAGE_HUNTER_INSULT",
         "opinion": { "value": -3, "anger": 1 },
         "effect": [ { "u_faction_rep": -1 } ],
         "condition": { "and": [ { "not": { "u_has_effect": "cf_mission_1" } }, { "u_has_trait": "PROF_SANGUINE" } ] }
