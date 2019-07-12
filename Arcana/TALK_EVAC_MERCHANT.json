@@ -62,104 +62,89 @@
     "id": "TALK_EVAC_MERCHANT_CF",
     "type": "talk_topic",
     "dynamic_line": "Not many holdouts large enough to call a settlement, but there is activity out there at least.  We have our own work on getting something set up.  There's also a small group that occasionally sends traders to visit us, seems they're holed up in some old church off the roadside.  I'll go ahead and tell you roughly where it is.",
-    "responses": [ { "text": "Thank you.", "topic": "TALK_EVAC_MERCHANT" } ]
+    "responses": [ { "text": "Thank you.  I'll be back later.", "topic": "TALK_DONE" } ]
   },
   {
     "id": "TALK_EVAC_MERCHANT_CF_MISSION",
     "type": "talk_topic",
     "dynamic_line": {
       "u_has_effect": "rural_church_aware",
-      "yes": "Interesting to see they hired you to help out.  Well then, hope they informed you of the details.  Payment's in advance, half a kilo of gold.  Nowhere near as valuable these days, but it's not completely useless, and some groups have been using it informally for barter.",
-      "no": "Huh, usually Sofia's the one to deliver their invoice.  Alright, hopefully she told you how this works.  Payment's in advance, preferably half a kilo of gold.  Nowhere near as valuable these days, but it's not completely useless, and some groups have been using it informally for barter."
+      "yes": "Interesting to see they hired you to help out.  Well then, hope they informed you of the details.  Payment's in advance, twenty of their scale coins.  Nowhere near as valuable these days, but it's not completely useless, and I trust what they bring to actually be twenty-four carat.",
+      "no": "Huh, usually Sofia's the one to deliver their invoice.  Alright, hopefully she told you how this works.  Payment's in advance, twenty of their scale coins.  Nowhere near as valuable these days, but it's not completely useless, and at least they can comfirm it's not half brass or whatever."
     },
     "responses": [
       {
         "text": "Here you go!",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "u_has_items": { "item": "gold_small", "count": 100 } },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
+        "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 20 } },
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 20 } ]
       },
       {
-        "text": "How about 250 grams?",
-        "condition": { "u_has_items": { "item": "gold_small", "count": 50 } },
+        "text": "How about 15 scales?",
+        "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 15 } },
         "trial": { "type": "PERSUADE", "difficulty": 10 },
-        "success": { "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL", "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 50 } ] },
+        "success": { "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL", "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 15 } ] },
         "failure": { "opinion": { "value": -1 }, "topic": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL" }
       },
       {
-        "text": "Would silver suffice?",
-        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_SILVER",
-        "condition": { "u_has_item": "silver_small" }
+        "text": "What about other sources of gold and silver?",
+        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_SCRAP"
       },
       { "text": "What about cash?", "topic": "TALK_EVAC_MERCHANT_CF_MISSION_CASH" },
       {
         "text": "I don't have enough on hand on the moment.  I'll deal with this later.",
         "topic": "TALK_EVAC_MERCHANT",
-        "condition": { "not": { "u_has_items": { "item": "gold_small", "count": 100 } } }
+        "condition": { "not": { "u_has_items": { "item": "CF_golden_scale", "count": 20 } } }
       },
-      { "text": "I'll deal with this later.", "topic": "TALK_EVAC_MERCHANT" }
+      { "text": "I'll deal with this later, bye for now.", "topic": "TALK_DONE" }
     ]
   },
   {
-    "id": "TALK_EVAC_MERCHANT_CF_MISSION_SILVER",
+    "id": "TALK_EVAC_MERCHANT_CF_MISSION_SCRAP",
     "type": "talk_topic",
-    "dynamic_line": "They've offered that on occasion too, but they usually send.  Will need more, closer to a kilogram.  I'll go as low as 900 grams.  Not as many practical uses for silver since it can tarnish, but it works decently for a few things.",
+    "dynamic_line": "Afraid I can't.  The main reason I'm willing to honor their deal is because those things they use are reliable.  25 grams of three-nines-fine gold, edge reeding, the works.  I doubt they have the means to make any more, but for now they're more useful for trade than any old melted jewelry.",
     "responses": [
       {
-        "text": "Here you go!",
+        "text": "Okay, here are the coins.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "u_has_items": { "item": "silver_small", "count": 300 } },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "silver_small", "count": 300 } ]
+        "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 20 } },
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 20 } ]
       },
       {
-        "text": "On second thought, I'll pay in gold.  Here you go.",
-        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": {
-          "and": [
-            { "u_has_items": { "item": "silver_small", "count": 300 } },
-            { "u_has_items": { "item": "gold_small", "count": 100 } }
-          ]
-        },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
+        "text": "Could you accept 15 instead?",
+        "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 15 } },
+        "trial": { "type": "PERSUADE", "difficulty": 10 },
+        "success": { "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL", "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 15 } ] },
+        "failure": { "opinion": { "value": -1 }, "topic": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL" }
       },
-      {
-        "text": "I don't have enough silver, so I'll pay via the normal method.",
-        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": {
-          "and": [
-            { "not": { "u_has_items": { "item": "silver_small", "count": 300 } } },
-            { "u_has_items": { "item": "gold_small", "count": 100 } }
-          ]
-        },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
-      },
-      { "text": "Nevermind.  I'll deal with it later.", "topic": "TALK_EVAC_MERCHANT" }
+      { "text": "What about cash?", "topic": "TALK_EVAC_MERCHANT_CF_MISSION_CASH" },
+      { "text": "Nevermind.  I'll come back later.", "topic": "TALK_DONE" }
     ]
   },
   {
     "id": "TALK_EVAC_MERCHANT_CF_MISSION_CASH",
     "type": "talk_topic",
-    "dynamic_line": "If you have it in your account sure.  I've accepted that group's offers mostly since they've been reliable customers and are far enough out that dealing with cash cards isn't as practical as barter.  I've been honoring their barter offer at about half what the gold would be worth back in the day.  Payment's $250 electronically.",
+    "dynamic_line": "If you have the merch, sure.  I've accepted that group's offers mostly since they've been reliable customers.  I've been honoring them at about fifty percent a Certified Note each, so that'll be 10 merch.",
     "responses": [
       {
-        "text": "[$250] You have a deal.",
+        "text": "You have a deal.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "u_has_cash": 25000 },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_spend_cash": 25000 } ]
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 10 } },
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "FMCNote", "count": 10 } ]
       },
       {
-        "text": "On second thought, I'll pay in gold.  Here you go.",
+        "text": "On second thought, I'll pay in scales.  Here you go.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "and": [ { "u_has_cash": 25000 }, { "u_has_items": { "item": "gold_small", "count": 100 } } ] },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
+        "condition": { "and": [ { "u_has_items": { "item": "FMCNote", "count": 10 } }, { "u_has_items": { "item": "CF_golden_scale", "count": 20 } } ] },
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 20 } ]
       },
       {
-        "text": "I don't have enough in my account, so I'll pay in gold.",
+        "text": "I don't have enough cash, so I'll pay in gold.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "and": [ { "not": { "u_has_cash": 25000 } }, { "u_has_items": { "item": "gold_small", "count": 100 } } ] },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "gold_small", "count": 100 } ]
+        "condition": { "and": [ { "not": { "u_has_items": { "item": "FMCNote", "count": 10 } } }, { "u_has_items": { "item": "CF_golden_scale", "count": 20 } } ] },
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 20 } ]
       },
-      { "text": "Nevermind.  I'll deal with it later.", "topic": "TALK_EVAC_MERCHANT" }
+      { "text": "Nevermind.  I'll be back later.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -168,8 +153,8 @@
     "dynamic_line": "Pleasure doing business with you.  I'll have my men set up the next caravan with the usual instructions and put together their inventory based on Sofia's recommendations.  Let me print up the receipt.",
     "responses": [
       {
-        "text": "Thank you.",
-        "topic": "TALK_EVAC_MERCHANT",
+        "text": "Thank you.  I'll bring this back to her.",
+        "topic": "TALK_DONE",
         "effect": [
           { "npc_add_effect": "cf_mission_receipt", "duration": "PERMANENT" },
           { "u_add_effect": "cf_mission_receipt", "duration": "PERMANENT" },
@@ -181,21 +166,21 @@
   {
     "id": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL",
     "type": "talk_topic",
-    "dynamic_line": "Sorry, 500 grams is as low as I can go.  Gold's not as handy now that the world's ended. I'm already honoring half its old, pre-apocalypse value.",
+    "dynamic_line": "Sorry, 20 golden scales is as low as I can.  Gold's not as handy now that the world's ended. I'm already honoring half its old value.",
     "responses": [
       {
         "text": "Okay, here you go.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "u_has_items": { "item": "gold_small", "count": 100 } },
-        "effect": { "u_consume_item": "gold_small", "count": 100 }
+        "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 20 } },
+        "effect": { "u_consume_item": "CF_golden_scale", "count": 20 }
       },
-      { "text": "Nevermind then.", "topic": "TALK_EVAC_MERCHANT" }
+      { "text": "Nevermind, I'll be back later on.", "topic": "TALK_DONE" }
     ]
   },
   {
     "id": "TALK_EVAC_MERCHANT_CF_MISSION_RECEIPT",
     "type": "talk_topic",
     "dynamic_line": "Alright.  Try not to lose this one.",
-    "responses": [ { "text": "Thanks!", "topic": "TALK_EVAC_MERCHANT", "effect": { "u_buy_item": "cf_rep_trade_receipt" } } ]
+    "responses": [ { "text": "Thank you, I'll go bring this to her.", "topic": "TALK_DONE", "effect": { "u_buy_item": "cf_rep_trade_receipt" } } ]
   }
 ]

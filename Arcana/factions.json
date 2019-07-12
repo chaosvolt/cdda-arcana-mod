@@ -11,6 +11,7 @@
     "combat_ability": 110,
     "food_supply": 115200,
     "wealth": 5000000,
+    "currency": "CF_golden_scale",
     "relations": {
       "cleansing_flame": {
         "kill on sight": false,

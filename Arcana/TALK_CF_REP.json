@@ -111,6 +111,7 @@
         },
         "topic": "TALK_CF_REP_MERCHANT_MOTIVE"
       },
+      { "text": "Do you have anything to trade?", "topic": "TALK_CF_REP_TRADE" },
       {
         "text": "Anything I can do to help?",
         "topic": "TALK_MISSION_LIST",
@@ -521,5 +522,14 @@
     "type": "talk_topic",
     "dynamic_line": "A few others among our order, some having had contact with our fellows working closer to the cities.  Grandmaster Leone seems to be the most senior of the group, and he provided me with a lot of information I'll need to examine closely.  Might lead us to other survivors to get in touch with.  Might be a good idea to speak with him as well.",
     "responses": [ { "text": "We'll see.", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_TRADE",
+    "dynamic_line": "The entrance and kitchen have a handful of things you may use if you are in need.  Beyond that we don't have much to spare, but I will offer you what I can.  We've taken to using measured blanks of gold in lieu of currency, which we used to use for repairing some of our items.  The others can vouch for the purity and weight being standardized.",
+    "responses": [
+      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_CF_REP" },
+      { "text": "It's fine, never mind.", "topic": "TALK_CF_REP" }
+    ]
   }
 ]

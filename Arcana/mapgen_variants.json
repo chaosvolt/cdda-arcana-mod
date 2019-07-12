@@ -92,7 +92,7 @@
       "mapping": {
         ".": { "item": { "item": "rock", "chance": 5 } },
         "]": { "furniture": "f_bookcase", "items": { "item": "mansion_bookcase", "chance": 100 } },
-        "d": { "item": [ { "item": "book_magicfordummies" }, { "item": "note_soa_mission" } ] },
+        "d": { "item": [ { "item": "CF_golden_scale" }, { "item": "book_magicfordummies" }, { "item": "note_soa_mission" } ] },
         "C": { "items": [ { "item": "tools_survival", "chance": 50 } ] }
       },
       "place_items": [
@@ -162,7 +162,8 @@
         { "group": "cleansing_flame_books", "x": [ 13, 15 ], "y": [ 19, 20 ], "chance": 60, "repeat": 5 },
         { "item": "note_flame_tenet", "x": [ 13, 15 ], "y": [ 19, 20 ] },
         { "item": "arcanemap", "x": [ 13, 15 ], "y": [ 19, 20 ], "chance": 25 },
-        { "group": "cleansing_flame_gear_consumables", "x": 10, "y": [ 18, 20 ], "chance": 30, "repeat": 4 }
+        { "group": "cleansing_flame_gear_consumables", "x": 10, "y": [ 18, 20 ], "chance": 30, "repeat": 4 },
+        { "item": "CF_golden_scale", "x": 10, "y": [ 18, 20 ], "chance": 25, "repeat": 3 }
       ],
       "place_monster": [ { "monster": "mon_flesh_angel", "x": 2, "y": 19 } ]
     }
