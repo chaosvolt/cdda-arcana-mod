@@ -283,28 +283,17 @@
   },
   {
     "type": "GENERIC",
-    "id": "scourge_staff_leftovers",
-    "symbol": "*",
-    "color": "blue",
-    "name": "cracked blue stone",
-    "description": "A blue orb with an unnatural acrid smell to it, the only physical rehmnant of a particular consecrated artifact.  It could still be useful as proof of having rendered the item inert.",
-    "material": "essencemat",
-    "looks_like": "monster_tear",
-    "weight": 230,
-    "volume": 1,
-    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "TRADER_AVOID" ]
-  },
-  {
-    "type": "GENERIC",
-    "id": "hand_of_armok_leftovers",
-    "symbol": ",",
-    "color": "light_gray",
-    "name": "odd metallic claw",
-    "description": "A single curved claw-like blade, dull and annealed to the point of being useless.  The only phyiscal remhant of a particular consecrated artifact.  It could still be useful as proof of having rendered the item inert.",
-    "material": "essencemat",
-    "looks_like": "blade",
-    "weight": 400,
-    "volume": 1,
-    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "TRADER_AVOID" ]
+    "id": "CF_golden_scale",
+    "name": "Golden Scale",
+    "description": "This is a small piece of soft gold, shaped like an elongated scale or feather.  Markings have been stamped on it, attesting to its exact purity and weight.  The only other mark of identity is a symbol resembling a cross, its lower half transitioning into the hammer Mjölnir.  Little more than scrap to most people, albeit scrap of a known weight and purity.",
+    "price": 2500,
+    "price_postapoc": 250,
+    "//": "Soft, meant to be dismantled when needed.  Value is derived from gold item value instead of Robofac's vastly-higher number (which seems to be coser to IRL), as faction using it still MAINLY using it for practical purposes.",
+    "weight": 25,
+    "to_hit": -3,
+    "color": "yellow",
+    "symbol": "$",
+    "material": [ "gold" ],
+    "volume": "2ml"
   }
 ]

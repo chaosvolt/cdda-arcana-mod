@@ -12,7 +12,7 @@
     "result": "scroll_blank",
     "type": "uncraft",
     "difficulty": 0,
-    "time": "0 m",
+    "time": "1 m",
     "components": [ [ [ "paper", 5 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -20,9 +20,18 @@
     "result": "silver_glyph",
     "type": "uncraft",
     "difficulty": 0,
-    "time": "0 m",
+    "time": "1 m",
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
     "components": [ [ [ "silver_small", 95 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "CF_golden_scale",
+    "type": "uncraft",
+    "difficulty": 0,
+    "time": "1 m",
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "components": [ [ [ "gold_small", 5 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
