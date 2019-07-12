@@ -481,7 +481,8 @@
         {
           "om_terrain": "cf_church_4",
           "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_GM_3_d"
+          "mapgen_update_id": "cf_church_upgrade_GM_3_d",
+          "place_npcs": [ { "class": "mage_hunter_seeker", "x": 16, "y": 5 } ]
         }
       ]
     },
