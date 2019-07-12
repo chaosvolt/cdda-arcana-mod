@@ -43,6 +43,12 @@
       },
       {
         "text": "Anything I can do to help?",
+        "condition": { "npc_has_effect": "cf_mission_3" },
+        "switch": true,
+        "topic": "TALK_CF_GM_TBC"
+      },
+      {
+        "text": "Anything I can do to help?",
         "condition": { "npc_has_trait": "FIX_CF_GM" },
         "switch": true,
         "topic": "TALK_MISSION_LIST"
@@ -56,6 +62,12 @@
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
+  },
+  {
+    "id": "TALK_CF_GM_TBC",
+    "type": "talk_topic",
+    "dynamic_line": "Not at the moment, but check back another time.  I might have something for you then.",
+    "responses": [ { "text": "Okay.", "topic": "TALK_CF_GM" } ]
   },
   {
     "id": "TALK_CF_GM_WHO",

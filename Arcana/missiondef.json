@@ -465,7 +465,8 @@
         {
           "om_terrain": "cf_church_1",
           "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_GM_3_a"
+          "mapgen_update_id": "cf_church_upgrade_GM_3_a",
+          "place_npcs": [ { "class": "mage_hunter_guard", "x": 16, "y": 11 }, { "class": "mage_hunter_guard", "x": 7, "y": 5 } ]
         },
         {
           "om_terrain": "cf_church_2",
@@ -480,12 +481,13 @@
         {
           "om_terrain": "cf_church_4",
           "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_GM_1_d"
+          "mapgen_update_id": "cf_church_upgrade_GM_1_d",
+          "place_npcs": [ { "class": "mage_hunter_seeker", "x": 16, "y": 5 } ]
         }
       ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
-    "followup": "MISSION_CF_GM_3",
+    "followup": "MISSION_CF_GM_4",
     "dialogue": {
       "describe": "Grant us strength...",
       "offer": "We have evidence not only of a still-practicing group of sanguinists, but moreover confirmation of their most likely hideout.  You know what must be done.  Their sect will likely be centralized around a local magus, prioritizing them will reduce the threat even if their underlings escape justice.  Hunt them down, when you are prepared for the task.",
@@ -497,5 +499,26 @@
       "success_lie": "What idiocy is this?",
       "failure": "But how?"
     }
-  }
+  },
+  {
+    "id": "MISSION_CF_GM_4",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
+    }
+  },
 ]
