@@ -382,10 +382,15 @@
   },
   {
     "type": "effect_type",
+    "id": "cf_mission_3_recruited_2",
+    "//": "Effect for players, indicates that they asked another guard to assist in a hunt.  Intended to be permanant."
+  },
+  {
+    "type": "effect_type",
     "id": "cf_mission_3",
-    "name": [ "Contact Made" ],
+    "name": [ "Mission Marker" ],
     "desc": [
-      "AI tag marking that Sofia has attracted the first wave of allies to the rural church.  Intended to be permanent.  This is a bug if you have it."
+      "AI tag marking that Sofia has attracted the first wave of allies to the rural church.  Also used to indicate to Jonathan that their third mission has been completed.  Intended to be permanent.  This is a bug if you have it."
     ]
   },
   {

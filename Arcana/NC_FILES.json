@@ -146,6 +146,96 @@
     ]
   },
   {
+    "type": "npc_class",
+    "id": "NC_BLOOD_MAGE_APPRENTICE",
+    "name": "Apprentice",
+    "job_description": "I aspire to follow The Path.",
+    "common": false,
+    "skills": [
+      { "skill": "magic", "level": { "rng": [ 0, 2 ] } },
+      { "skill": "firstaid", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "cutting", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "stabbing", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "unarmed", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "throw", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "rifle", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "shotgun", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "smg", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "level": { "rng": [ 0, 1 ] } },
+      { "skill": "melee", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "gun", "level": { "rng": [ 1, 3 ] } }
+    ],
+    "worn_override": "NC_BLOOD_MAGE_APPRENTICE_worn",
+    "carry_override": "NC_BLOOD_MAGE_APPRENTICE_carry",
+    "weapon_override": "NC_BLOOD_MAGE_APPRENTICE_weapon",
+    "traits": [ { "group": "Appearance_demographics" }, { "group": "Sanguine_aspirant_traits" }, [ "PROF_ARCANIST", 100 ] ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_BLOOD_MAGE_SHRIKE",
+    "name": "Sanguine Shrike",
+    "job_description": "I'm a hunter of hunters.",
+    "common": false,
+    "skills": [
+      { "skill": "magic", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "firstaid", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "fabrication", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "bashing", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "cutting", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "stabbing", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "unarmed", "level": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "rifle", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "dodge", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "melee", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "gun", "level": { "rng": [ 3, 6 ] } }
+    ],
+    "worn_override": "NC_BLOOD_MAGE_SHRIKE_worn",
+    "carry_override": "NC_BLOOD_MAGE_SHRIKE_carry",
+    "weapon_override": "NC_BLOOD_MAGE_SHRIKE_weapon",
+    "traits": [ { "group": "Appearance_demographics" }, [ "PROF_SANGUINE", 100 ] ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_BLOOD_MAGE_MAGUS",
+    "//": "Only used by a specific blood mage continuing Dragonblood research.",
+    "name": "Blood Mage",
+    "job_description": "I follow The Path.",
+    "common": false,
+    "skills": [
+      { "skill": "magic", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "firstaid", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "fabrication", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "survival", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "tailor", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "stabbing", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "unarmed", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "dodge", "level": { "rng": [ 1, 4 ] } },
+      { "skill": "melee", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "gun", "level": { "rng": [ 3, 6 ] } }
+    ],
+    "worn_override": "NC_BLOOD_MAGE_MAGUS_worn",
+    "carry_override": "NC_BLOOD_MAGE_MAGUS_carry",
+    "weapon_override": "NC_BLOOD_MAGE_MAGUS_weapon",
+    "traits": [
+      { "group": "Appearance_demographics" },
+      [ "ARCANA_SCALYPATCHES", 100 ],
+      [ "ARCANA_DRAGONTAIL", 75 ],
+      [ "ARCANA_SCALYWINGS", 50 ],
+      [ "ARCANA_INNERFIRE", 100 ],
+      [ "ARCANA_FIREAFFINITY", 50 ],
+      [ "ARCANA_DRAGONCLAWS", 50 ],
+      [ "ARCANA_DRAGONTEETH", 75 ],
+      [ "ARCANA_DRAGONHORNS", 25 ],
+      [ "PROF_SANGUINE", 100 ]
+    ]
+  },
+  {
     "id": "NC_HERMIT_worn",
     "type": "item_group",
     "subtype": "collection",
@@ -370,6 +460,163 @@
       [ "hand_crossbow", 3 ],
       [ "huge_crossbow", 2 ],
       [ "ethereal_crossbow", 25 ]
+    ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_APPRENTICE_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "distribution": [ { "item": "undershirt", "prob": 10 }, { "item": "long_undertop", "prob": 90 } ] },
+      { "distribution": [ { "item": "boxer_shorts", "prob": 10 }, { "item": "long_underpants", "prob": 90 } ] },
+      { "distribution": [ { "item": "socks", "prob": 75 }, { "item": "stockings", "prob": 25 } ] },
+      { "group": "clothing_outdoor_torso" },
+      { "group": "clothing_outdoor_pants" },
+      { "group": "clothing_outdoor_shoes" },
+      {
+        "distribution": [ { "item": "backpack", "prob": 25 }, { "item": "mbag", "prob": 50 }, { "item": "slingpack", "prob": 50 } ]
+      }
+    ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_APPRENTICE_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "water_clean" },
+      { "item": "matches" },
+      {
+        "distribution": [ { "item": "rag", "prob": 25, "count": [ 1, 3 ] }, { "item": "rag_bloody", "prob": 75, "count": [ 1, 3 ] } ],
+        "prob": 75
+      },
+      { "item": "essence_blood", "charges": [ 1, 3 ], "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BLOOD_MAGE_APPRENTICE_weapon",
+    "ammo": 100,
+    "magazine": 100,
+    "items": [
+      [ "sten", 5 ],
+      [ "surv_six_shooter", 10 ],
+      [ "surv_hand_cannon", 5 ],
+      [ "2_shot_special", 5 ],
+      [ "surv_carbine_223", 5 ],
+      [ "survivor_special_700", 10 ],
+      [ "surv_levershotgun", 10 ],
+      [ "knife_butcher", 10 ],
+      [ "machete", 10 ],
+      [ "blood_athame", 5 ],
+      [ "ax", 10 ],
+      [ "hatchet", 10 ],
+      [ "bloodaxe", 5 ]
+    ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_SHRIKE_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "distribution": [ { "item": "undershirt", "prob": 10 }, { "item": "long_undertop", "prob": 90 } ] },
+      { "distribution": [ { "item": "boxer_shorts", "prob": 10 }, { "item": "long_underpants", "prob": 90 } ] },
+      { "distribution": [ { "item": "socks", "prob": 75 }, { "item": "stockings", "prob": 25 } ] },
+      {
+        "distribution": [
+          {
+            "collection": [ { "item": "greatcoat" }, { "item": "peacoat" }, { "item": "breeches" }, { "item": "knee_high_boots" } ],
+            "prob": 25
+          },
+          {
+            "collection": [ { "item": "duster" }, { "item": "dress_shirt" }, { "item": "pants" }, { "item": "boots" } ],
+            "prob": 25
+          },
+          { "item": "armor_wyrm", "prob": 50 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "tricorne", "prob": 25 },
+          { "item": "cowboy_hat", "prob": 25 },
+          { "item": "bowhat", "prob": 15 },
+          { "item": "hat_newsboy", "prob": 10 },
+          { "item": "revenant_crown", "prob": 15 },
+          { "item": "helmet_larmor", "prob": 10 }
+        ]
+      },
+      {
+        "distribution": [ { "item": "bandana", "prob": 50 }, { "item": "keffiyeh", "prob": 25 }, { "item": "knit_scarf", "prob": 25 } ]
+      },
+      { "distribution": [ { "item": "backpack", "prob": 50 }, { "item": "backpack_leather", "prob": 50 } ] },
+      { "item": "flintlock_pouch", "charges": 14, "contents-item": "flintlock_ammo" },
+      {
+        "distribution": [ { "item": "scabbard", "contents-item": "rapier" }, { "item": "sheath", "contents-item": "blood_athame" } ],
+        "prob": 90
+      }
+    ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_SHRIKE_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "water_clean" },
+      { "item": "matches" },
+      { "item": "bandages" },
+      { "item": "essence_blood", "charges": [ 2, 5 ], "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BLOOD_MAGE_SHRIKE_weapon",
+    "ammo": 100,
+    "items": [
+      [ "pistol_flintlock", 50 ],
+      [ "carbine_flintlock", 25 ],
+      [ "rifle_flintlock", 15 ],
+      [ "carbine_flintlock_double", 10 ]
+    ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_MAGUS_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "loincloth" },
+      { "item": "tunic" },
+      { "item": "robe" },
+      { "item": "gloves_fingerless" },
+      { "item": "footrags" },
+      { "item": "bastsandals" },
+      { "item": "backpack" },
+      { "item": "sheath", "contents-item": "blood_athame" },
+      { "item": "charm_bone" }
+    ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_MAGUS_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [ { "item": "bloodscourge" } ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_MAGUS_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "water_clean" },
+      { "item": "matches" },
+      { "item": "bandages" },
+      { "item": "bowl_clay" },
+      { "item": "essence_blood", "count": [ 5, 15 ] },
+      { "item": "book_bloodmagic" },
+      { "group": "sanguine_cult_spells", "chance": 75 }
     ]
   },
   {

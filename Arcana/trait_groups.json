@@ -60,5 +60,32 @@
       { "trait": "BGSS_CF_4" },
       { "trait": "BGSS_CF_5" }
     ]
+  },
+  {
+    "type": "trait_group",
+    "id": "Sanguine_aspirant_traits",
+    "subtype": "collection",
+    "traits": [
+      {
+        "collection": [
+          { "trait": "ARCANA_SCALYPATCHES" },
+          { "distribution": [ { "trait": "ARCANA_SCALYTAIL" }, { "trait": "ARCANA_DRAGONTAIL" } ], "prob": 50 },
+          { "trait": "ARCANA_SCALYWINGS", "prob": 50 }
+        ],
+        "prob": 50
+      },
+      {
+        "distribution": [
+          { "trait": "ARCANA_INNERHEAT", "prob": 50 },
+          { "trait": "ARCANA_INNERFIRE", "prob": 25 },
+          { "collection": [ { "trait": "ARCANA_INNERFIRE" }, { "trait": "ARCANA_FIREAFFINITY" } ], "prob": 25 }
+        ],
+        "prob": 50
+      },
+      { "trait": "ARCANA_DRAGONCLAWS", "prob": 10 },
+      { "trait": "ARCANA_DRAGONTEETH", "prob": 25 },
+      { "trait": "ARCANA_DRAGONHORNS", "prob": 5 }
+    ]
   }
 ]
+

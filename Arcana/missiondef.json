@@ -276,7 +276,7 @@
   {
     "id": "MISSION_CF_REP_3",
     "type": "mission_definition",
-    "name": "Kill Flesh Angel",
+    "name": "Kill Unknown Monster",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
     "value": 150000,
@@ -308,27 +308,15 @@
           "om_special": "cf_rural_church",
           "place_nested": [ { "chunks": [ "cf_church_upgrade_3_a" ], "x": 1, "y": 1 } ]
         },
-        {
-          "om_terrain": "cf_church_2",
-          "om_special": "cf_rural_church",
-          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_b" ], "x": 8, "y": 1 } ]
-        },
-        {
-          "om_terrain": "cf_church_3",
-          "om_special": "cf_rural_church",
-          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_c" ], "x": 1, "y": 2 } ]
-        },
-        {
-          "om_terrain": "cf_church_4",
-          "om_special": "cf_rural_church",
-          "place_nested": [ { "chunks": [ "cf_church_upgrade_3_d" ], "x": 8, "y": 8 } ]
-        }
+        { "om_terrain": "cf_church_2", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_3_b" },
+        { "om_terrain": "cf_church_3", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_3_c" },
+        { "om_terrain": "cf_church_4", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_3_d" }
       ]
     }
   },
   {
     "id": "MISSION_CF_REP_4",
-    "//": "These two missions are here so that I can expand on the mission chains later on without old saves being stuck.",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
     "name": "Placeholder Mission",
     "goal": "MGOAL_KILL_MONSTER",
@@ -349,6 +337,171 @@
   },
   {
     "id": "MISSION_CF_GM_1",
+    "type": "mission_definition",
+    "name": "Retrieve Bane Staff",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "item": "scourge_staff",
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_GM_2",
+    "start": {
+      "assign_mission_target": { "om_terrain": "strange_grove", "reveal_radius": 3, "z": 0 }
+    },
+    "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_1_a"
+        },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_1_b"
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_1_c"
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_1_d"
+        }
+      ]
+    },
+    "dialogue": {
+      "describe": "Grant us strength...",
+      "offer": "During our journey we've seen scattered evidence of some hazards still afflicting certain areas, former hotspots of anomalous activity now made even more dangerous, ever since holes in reality began opening up.  With the rest of us focused on rebuilding and securing the area, I would like to ask your assistance with investigating one such location, and retrieving an artifact of historical importance believed to be lost there.",
+      "accepted": "Thank you.  I will direct you to the location, if you've not seen it for yourself.  Decades ago the place was inhabited, but now the place seems to be overgrown and infested with monsters.  Do what you must to cleanse the place.  Dii vult.",
+      "rejected": "When you believe you are ready, talk to me again.  The longer these old places linger without being dealt with, the more of a threat they may become.",
+      "advice": "The extent to which the place has overgrown is unnatural.  I would expect monsters comfortable among greenery to be the most common threat, and we have reason to believe something large has taken root there.  Beyond that, I can tell you little of the history behind that place, Sofia might know more.",
+      "inquire": "How goes the hunt?",
+      "success": "Thank you.  That staff was associated with those who once inhabited that place, but it seems whatever anomalies caused all this corrupted it to some extent.  I will care for it, anything else you found down there you may deal with as you see fit.  The rest of us will try to discern just what to make of these anomalies.  And if you wish, I have more for you.",
+      "success_lie": "What idiocy is this?",
+      "failure": "But how?"
+    }
+  },
+  {
+    "id": "MISSION_CF_GM_2",
+    "type": "mission_definition",
+    "name": "Retrieve Demon Claw",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "item": "hand_of_armok",
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_GM_3",
+    "start": { "assign_mission_target": { "om_terrain": "curious_structure", "reveal_radius": 3, "z": 0 } },
+    "end": {
+      "effect": [
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
+      ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_2_a"
+        },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_2_b"
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_2_c"
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_2_d"
+        }
+      ]
+    },
+    "dialogue": {
+      "describe": "Grant us strength...",
+      "offer": "I believe I can now trust you with a more dangerous, yet also more vital, task.  In the past we had few dedicated safehouses, most of us were hosted in the rural homes and churches of our brethren and those they could trust.  Only one place was truly built by our hand, and it suffered the same strange occurrences so many other places suffered during zero hour.  The handful of survivors to flee brought with them tales of living fire and otherworldly horror, warping the very stones underneath the sanctum.  If you believe yourself ready, I would like you to lead a hunt to cleanse it.",
+      "accepted": "By Thor and The God In Three Persons both, may you be victorious.  The evil lurking there was described as wielding a clawed weapon that warped The Veil itself with hellfire, until it was struck from its fiery grasp by a lucky strike.  They were able to seal it behind a barrier with one of our swords as the keystone, and you will need to undo the seal to confront it.  If you can retrieve that infernal weapon in your hunt, we will be able to destroy it safely.  I would commit a full hunting party if only we could spare anyone.  Dii vult!",
+      "rejected": "Understood.  This task is dangerous, and the seal they set up shouldn't be undone unless you're prepared to see it through to the end.  Speak with me when you see fit.",
+      "advice": "Bring any assistance you can, and expect all manner of abominations to have followed that thing through the wounds in The Veil.  Be prepared for infernal fire, any magic or equipment that would safeguard against flame would help.  Do as best as you can to assemble a proper hunting party, but sadly we are stretched thin as it is.",
+      "inquire": "How goes the hunt?",
+      "success": "Gods above and below, to think this thing caused one of our holiest places to fall to ruin.  I doubt it will be safe to reclaim that place anytime soon.  Anything you found down their is yours to use as you see fit.  I hope that those who fell holding that thing back are are peace.  Speak with me when you see fit, I have another thing to ask of you.",
+      "success_lie": "What idiocy is this?",
+      "failure": "But how?"
+    }
+  },
+  {
+    "id": "MISSION_CF_GM_3",
+    "type": "mission_definition",
+    "name": "Cleanse Sanguinist Sect",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 10,
+    "value": 300000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "sanguine_holdout_1",
+        "om_special": "sanguine_holdout",
+        "om_terrain_replace": "forest",
+        "reveal_radius": 3,
+        "random": true,
+        "range": [ 10, 80 ]
+      },
+      "update_mapgen": [
+        {
+          "om_terrain": "sanguine_holdout_b1",
+          "om_special": "sanguine_holdout",
+          "place_npcs": [ { "class": "sanguine_order_magus", "x": 14, "y": 12, "target": true, "add_trait": "MUTE" } ]
+        }
+      ]
+    },
+    "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" } ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_3_a",
+          "place_npcs": [ { "class": "mage_hunter_guard", "x": 16, "y": 11 }, { "class": "mage_hunter_guard", "x": 7, "y": 5 } ]
+        },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_3_b"
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_3_c"
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_3_d"
+        }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_GM_4",
+    "dialogue": {
+      "describe": "Grant us strength...",
+      "offer": "We have evidence not only of a still-practicing group of sanguinists, but moreover confirmation of their most likely hideout.  You know what must be done.  Their sect will likely be centralized around a local magus, prioritizing them will reduce the threat even if their underlings escape justice.  Hunt them down, when you are prepared for the task.",
+      "accepted": "God and gods willing, may you return safe and victorious.  This will be a dangerous task, and while we may be stretched thin, I will allow you to request assistance at your discretion.  We can spare at another hunter to the task.",
+      "rejected": "I understand.  Come back when you are prepared.",
+      "advice": "They will have pursued any advantage they could get their hands on.  Any weapon at their disposal, any foul magic, any corruption of body and soul.  Bring as many allies as you can muster to your cause, any weapon to suit you.",
+      "inquire": "Have they been dealt with?",
+      "success": "Thank the gods that you've returned safely!  May this serve as a warning to any who would further endanger humanity.  I hope that you will use proper discretion in dealing with any dangerous items you retrieved from that place.  While you were gone, one of our scouting missions made contact with a small holdout of our brethren, which should ease some of the workload here.  I may have more for you, even then.",
+      "success_lie": "What idiocy is this?",
+      "failure": "But how?"
+    }
+  },
+  {
+    "id": "MISSION_CF_GM_4",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
     "name": "Placeholder Mission",
     "goal": "MGOAL_KILL_MONSTER",
