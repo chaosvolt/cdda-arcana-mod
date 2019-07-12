@@ -471,18 +471,17 @@
         {
           "om_terrain": "cf_church_2",
           "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_GM_1_b"
+          "mapgen_update_id": "cf_church_upgrade_GM_3_b"
         },
         {
           "om_terrain": "cf_church_3",
           "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_GM_1_c"
+          "mapgen_update_id": "cf_church_upgrade_GM_3_c"
         },
         {
           "om_terrain": "cf_church_4",
           "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_GM_1_d",
-          "place_npcs": [ { "class": "mage_hunter_seeker", "x": 16, "y": 5 } ]
+          "mapgen_update_id": "cf_church_upgrade_GM_3_d"
         }
       ]
     },

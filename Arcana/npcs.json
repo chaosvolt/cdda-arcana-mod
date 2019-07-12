@@ -53,19 +53,6 @@
   },
   {
     "type": "npc",
-    "id": "mage_hunter_seeker",
-    "//": "Minor merchant.",
-    "name_unique": "Matthew Desai",
-    "name_suffix": "Seeker",
-    "gender": "male",
-    "class": "NC_CF_SEEKER",
-    "attitude": 0,
-    "mission": 7,
-    "chat": "TALK_CF_SEEKER",
-    "faction": "cleansing_flame"
-  },
-  {
-    "type": "npc",
     "id": "sanguine_order_apprentice_generic",
     "//": "Sanguine Order cannon fodder, in an area you're not supposed to be in.",
     "name_suffix": "Apprentice",
