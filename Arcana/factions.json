@@ -11,6 +11,25 @@
     "combat_ability": 110,
     "food_supply": 115200,
     "wealth": 5000000,
+    "relations": {
+      "cleansing_flame": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": {
+        "kill on sight": false,
+        "watch your back": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "knows your voice": true
+      },
+      "sanguine_order_remnant": { "kill on sight": true, "knows your voice": true }
+    },
     "good": 1,
     "strength": 0,
     "sneak": 1,
@@ -30,6 +49,19 @@
     "combat_ability": 100,
     "food_supply": 85000,
     "wealth": 300000,
+    "relations": {
+      "sanguine_order_remnant": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": { "knows your voice": true },
+      "cleansing_flame": { "kill on sight": true, "knows your voice": true }
+    },
     "good": -1,
     "strength": 0,
     "sneak": 1,

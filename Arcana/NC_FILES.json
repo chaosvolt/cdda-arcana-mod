@@ -590,7 +590,7 @@
       { "item": "tunic" },
       { "item": "robe" },
       { "item": "gloves_fingerless" },
-      { "item": "footwraps" },
+      { "item": "footrags" },
       { "item": "bastsandals" },
       { "item": "backpack" },
       { "item": "sheath", "contents-item": "blood_athame" },
@@ -615,7 +615,8 @@
       { "item": "bandages" },
       { "item": "bowl_clay" },
       { "item": "essence_blood", "count": [ 5, 15 ] },
-      { "item": "book_bloodmagic" }
+      { "item": "book_bloodmagic" },
+      { "group": "sanguine_cult_spells", "chance": 75 }
     ]
   },
   {

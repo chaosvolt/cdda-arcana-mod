@@ -72,7 +72,7 @@
     "mission": 7,
     "chat": "TALK_SANGUINE_APPRENTICE",
     "faction": "sanguine_order_remnant"
-  }
+  },
   {
     "type": "npc",
     "id": "sanguine_order_shrike",
@@ -81,7 +81,7 @@
     "class": "NC_BLOOD_MAGE_SHRIKE",
     "attitude": 1,
     "mission": 7,
-    "chat": "TALK_SANGUINE_SHRIKE",
+    "chat": "TALK_BLOOD_MAGE_SHRIKE_ROGUE",
     "faction": "sanguine_order_remnant"
   },
   {
