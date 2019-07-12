@@ -117,6 +117,11 @@
     "items": [ [ "book_hexenhammer", 1 ], [ "book_scrollcraft", 1 ] ]
   },
   {
+    "id": "religious_books",
+    "type": "item_group",
+    "items": [ [ "book_hexenhammer", 1 ], [ "book_scrollcraft", 1 ], [ "book_sacrifice", 1 ] ]
+  },
+  {
     "id": "mansion_bookcase",
     "type": "item_group",
     "subtype": "collection",
