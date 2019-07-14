@@ -654,7 +654,7 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "SEES", "REVIVES" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1" ] },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
   },
   {
@@ -666,6 +666,7 @@
     "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
+    "extend": { "flags": [ "REGENERATES_1" ] },
     "delete": { "upgrades": { "half_life": 8, "into": "mon_zombie_brute" } }
   },
   {
@@ -676,7 +677,7 @@
     "species": [ "NETHER" ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REVIVES" ] },
+    "extend": { "flags": [ "REGENERATES_1" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
   },
   {
@@ -688,6 +689,7 @@
     "special_attacks": [ [ "SMASH", 25 ] ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
+    "extend": { "flags": [ "REGENERATES_1" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -697,7 +699,7 @@
     "name": "summoned thing",
     "death_drops": {  },
     "special_attacks": [ [ "RANGED_PULL", 20 ], [ "LUNGE", 10 ] ],
-    "extend": { "flags": [ "SEES", "REVIVES" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
   },
   {
@@ -707,7 +709,8 @@
     "name": "summoned skeletal dog",
     "species": [ "NETHER" ],
     "death_function": [ "MELT" ],
-    "death_drops": {  }
+    "death_drops": {  },
+    "extend": { "flags": [ "REGENERATES_1" ] }
   },
   {
     "id": "mon_skeleton_summoned",
@@ -718,6 +721,7 @@
     "attack_effs": [ { "id": "stunned", "duration": 5, "chance": 30 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
+    "extend": { "flags": [ "REGENERATES_1" ] },
     "delete": { "upgrades": { "half_life": 15, "into": "mon_skeleton_hulk" } }
   },
   {
@@ -739,7 +743,7 @@
     "special_attacks": [ [ "PARA_STING", 20 ] ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REVIVES" ] },
+    "extend": { "flags": [ "REGENERATES_1" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
   },
   {
@@ -751,7 +755,7 @@
     "death_drops": {  },
     "name": "summoned kreck",
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
-    "extend": { "flags": [ "REVIVES" ] },
+    "extend": { "flags": [ "REGENERATES_1" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -763,7 +767,7 @@
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 10 } ],
-    "extend": { "flags": [ "REVIVES", "VENOM" ] },
+    "extend": { "flags": [ "REGENERATES_1", "VENOM" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -775,6 +779,7 @@
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
+    "extend": { "flags": [ "REGENERATES_1" ] },
     "delete": { "flags": [ "ATTACKMON" ] }
   },
   {
@@ -785,7 +790,7 @@
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
-    "extend": { "flags": [ "REVIVES" ] },
+    "extend": { "flags": [ "REGENERATES_1" ] },
     "delete": { "flags": [ "SUNDEATH" ] }
   },
   {
@@ -796,7 +801,7 @@
     "death_function": [ "MELT" ],
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": {  },
-    "extend": { "flags": [ "REVIVES" ] },
+    "extend": { "flags": [ "REGENERATES_1" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -808,7 +813,7 @@
     "vision_night": 50,
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
-    "extend": { "flags": [ "SEES", "REVIVES" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1" ] },
     "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
   },
   {
@@ -825,14 +830,15 @@
     "copy-from": "mon_shadow",
     "type": "MONSTER",
     "name": "summoned shadow",
+    "melee_dice_sides": 4,
     "melee_cut": 2,
-    "vision_day": 5,
+    "vision_day": 2,
     "vision_night": 50,
     "death_drops": {  },
     "death_function": [ "MELT" ],
     "special_attacks": [ [ "PARROT", 0 ] ],
     "extend": { "flags": [ "REGENERATES_IN_DARK" ] },
-    "delete": { "flags": [ "SUNDEATH" ] }
+    "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS" ] }
   },
   {
     "id": "mon_shadow_snake_summoned",
@@ -841,10 +847,10 @@
     "name": "summoned shadow snake",
     "death_drops": {  },
     "death_function": [ "MELT" ],
-    "vision_day": 5,
+    "vision_day": 2,
     "vision_night": 50,
     "special_attacks": [ [ "PARROT", 0 ] ],
     "extend": { "flags": [ "REGENERATES_IN_DARK" ] },
-    "delete": { "flags": [ "SUNDEATH" ] }
+    "delete": { "flags": [ "SUNDEATH", "SMELLS" ] }
   }
 ]
