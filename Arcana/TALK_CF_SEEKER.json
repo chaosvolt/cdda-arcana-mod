@@ -40,10 +40,10 @@
     "id": "TALK_CF_SEEKER_WHO",
     "type": "talk_topic",
     "dynamic_line": "Little more than a scholar of our holy words, name's Matthew.  My father had been among the founders as Sofia and Jonathan were, and passed the title of his old order down to me.",
-    "responses": [ { "text": "What old order?", "topic": "TALK_CF_SEEKER_ORDER" }, { "text": "I see.", "topic": "TALK_CF_GM" } ]
+    "responses": [ { "text": "What old order?", "topic": "TALK_CF_SEEKER_ORDER" }, { "text": "I see.", "topic": "TALK_CF_SEEKER" } ]
   },
   {
-    "id": "TALK_CF_GM_ORDER",
+    "id": "TALK_CF_SEEKER_ORDER",
     "type": "talk_topic",
     "dynamic_line": "A collection of scholars and theologians.  Jonathan's group and Sofia's own preceded mine, and a fourth followed.  From there we gathered others, of an even greater range of faiths, few as we were in the end.",
     "responses": [
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "id": "TALK_CF_GM_FAITHS",
+    "id": "TALK_CF_SEEKER_FAITHS",
     "type": "talk_topic",
     "dynamic_line": "The Grandmaster's kin came from a self-styled knightly order, Catholic in origin.  Sofia's, a fellowship of neo-pagans.  My own, predominantly Muslim.  And the fourth was pagan of another sort, if any of them remain and find this place, perhaps they'll be able to tell you more.",
     "responses": [
@@ -65,7 +65,7 @@
     ]
   },
   {
-    "id": "TALK_CF_GM_SPIRITUAL",
+    "id": "TALK_CF_SEEKER_SPIRITUAL",
     "type": "talk_topic",
     "dynamic_line": {
       "u_has_trait": "PROF_CLEANSINGFLAME",
