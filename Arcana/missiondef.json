@@ -186,6 +186,47 @@
     }
   },
   {
+    "id": "MISSION_CF_DEACON_1",
+    "type": "mission_definition",
+    "name": "Check On Rural Church",
+    "//": "Mission is supposed to completed via dialogue, not the normal route.",
+    "goal": "MGOAL_NULL",
+    "difficulty": 2,
+    "value": 10000,
+    "start": {
+      "effect": [
+        { "u_add_effect": "already_asked_deacon", "duration": "PERMANENT" }
+      ],
+      "assign_mission_target": {
+        "om_terrain": "cf_church_4",
+        "om_special": "cf_rural_church",
+        "om_terrain_replace": "field",
+        "reveal_radius": 3,
+        "random": true,
+        "cant_see": true,
+        "range": [ 10, 90 ]
+      }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Here's hoping it goes well...",
+      "offer": "As much as I'd like to return to check on the people shelthering at the church, I've been caught up in helping out here.  If you could pay them a visit, ask to speak with Sofia McKinnon.  Could you send her my regards, and my apologies for having been delayed in returning?",
+      "accepted": "Thank you.  No doubt she will have work for you as well, if you ask her about it.  If your travels take you back here, please keep me informed.  I don't have much I can offer as a reward, but I'll do what I can.  Godspeed.",
+      "rejected": "I understand.  There is much to be done even here.  Still, I suspect I'll be busy here for much longer than I expected, so if you get the chance please see me about it.  I don't have much to offer in return, but I'll scrounge up what I can.",
+      "advice": "It's a rural church along the side of the road.  The survivors there should be able to help you if needed.  I'm afraid I don't know much else about the group, as Father Alexander was the one that knew them personally.",
+      "inquire": "Have you any news?",
+      "success": "Thank you.  It's a relief to hear back from them.  I may be here a while longer, these people need all the help they can get, and Sofia's group can take care of themselves well enough.  I know this isn't much, but please have this.",
+      "success_lie": "What are you trying to pull?",
+      "failure": "How in God's name did you fail at this?"
+    },
+    "end": {
+      "effect": [
+        { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" },
+        { "u_buy_item": "FCNote", "count": 2 }
+      ]
+    }
+  },
+  {
     "id": "MISSION_CF_REP_1",
     "type": "mission_definition",
     "name": "Find or Make Bone Charm",
@@ -449,7 +490,8 @@
         "om_terrain_replace": "forest",
         "reveal_radius": 3,
         "random": true,
-        "range": [ 10, 80 ]
+        "cant_see": true,
+        "range": [ 10, 90 ]
       },
       "update_mapgen": [
         {

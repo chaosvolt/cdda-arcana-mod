@@ -14,6 +14,19 @@
   },
   {
     "type": "npc",
+    "id": "cf_deacon",
+    "//": "Provides plot hook to visit the rural church.",
+    "name_suffix": "Deacon",
+    "gender": "male",
+    "class": "NC_CF_DEACON",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_CF_DEACON",
+    "faction": "free_merchants",
+    "mission_offered": "MISSION_CF_DEACON_1"
+  },
+  {
+    "type": "npc",
     "id": "cleansing_flame_representative",
     "//": "Primary quest source.",
     "name_unique": "Sofia McKinnon",

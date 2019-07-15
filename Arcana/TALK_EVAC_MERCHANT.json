@@ -61,7 +61,7 @@
   {
     "id": "TALK_EVAC_MERCHANT_CF",
     "type": "talk_topic",
-    "dynamic_line": "Not many holdouts large enough to call a settlement, but there is activity out there at least.  We have our own work on getting something set up.  There's also a small group that occasionally sends traders to visit us, seems they're holed up in some old church off the roadside.  I'll go ahead and tell you roughly where it is.",
+    "dynamic_line": "Not many holdouts large enough to call a settlement, but there is activity out there at least.  We have our own work on getting something set up.  There's also a small group that occasionally sends traders to visit us, they're holed up in some old rural church.  I'll mark it on your map as best as I can.  The church's deacon stops by here fairly often though, should be out in the hallway.  Talk to him and he might be able to tell you more.",
     "responses": [ { "text": "Thank you.  I'll be back later.", "topic": "TALK_DONE" } ]
   },
   {

@@ -145,6 +145,16 @@
   },
   {
     "type": "mutation",
+    "id": "CF_DEACON",
+    "name": "Deacon Marker",
+    "points": 0,
+    "description": "This trait marks The Deacon, used for certain dialogue checks to keep things working right.  Seeing this is probably a bug.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
     "id": "BGSS_CF_FILTER",
     "name": "Background Story Filter",
     "points": 0,

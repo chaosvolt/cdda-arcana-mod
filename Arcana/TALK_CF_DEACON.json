@@ -1,0 +1,143 @@
+[
+  {
+    "id": "TALK_MISSION_INQUIRE",
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "I heard from Sofia, they're still taking care of themselves for now.",
+        "topic": "TALK_MISSION_SUCCESS",
+        "effect": "mission_success",
+        "condition": {
+          "and": [
+            { "u_has_effect": "sofia_deacon_message" },
+            { "u_has_mission": "MISSION_CF_DEACON_1" },
+            { "npc_has_trait": "CF_DEACON" }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_DEACON",
+    "dynamic_line": { "u_is_wearing": "badge_marshal", "yes": "Hello, Marshal.  How may I help you?", "no": "Hello.  How may I help you?" },
+    "responses": [
+      { "text": "Who are you?", "topic": "TALK_CF_DEACON_WHO" },
+      { "text": "What do you do here?", "topic": "TALK_CF_DEACON_DO" },
+      {
+        "text": "I spoke with Sofia.  They're doing alright, so far.",
+        "condition": {
+          "and": [
+            { "u_has_effect": "sofia_deacon_message" },
+            { "not": { "u_has_mission": "MISSION_CF_DEACON_1" } },
+            { "not": { "npc_has_effect": "rural_church_aware" } }
+          ]
+        },
+        "topic": "TALK_CF_DEACON_MISSION_BACKDOOR"
+      },
+      {
+        "text": "Just passing through.  Need help with anything?",
+        "condition": { "not": { "u_has_effect": "already_asked_deacon" } },
+        "topic": "TALK_CF_DEACON_HELP"
+      },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_CF_DEACON_WHO",
+    "type": "talk_topic",
+    "dynamic_line": "A deacon from a local parish church.  The priest unfortunately left sometime before all this started and I've never heard from him since.  I fear the worst may have happened, but as it is there is already so much to tend to.",
+    "responses": [
+      { "text": "What is there to tend to?", "topic": "TALK_CF_DEACON_DO" },
+      { "text": "I see.", "topic": "TALK_CF_DEACON" }
+    ]
+  },
+  {
+    "id": "TALK_CF_DEACON_DO",
+    "type": "talk_topic",
+    "dynamic_line": "Many of the people here are struggling to get by and survive, and there is little that one man can do to help that.  What I can do however is help keep their spirits up, tend to the dead and dying best as I'm able as well.  I am at their service as best as I am able, no matter their faith.",
+    "responses": [
+      {
+        "text": "Need help with anything?",
+        "condition": { "not": { "u_has_effect": "already_asked_deacon" } },
+        "topic": "TALK_CF_DEACON_HELP"
+      },
+      { "text": "Oh, okay.", "topic": "TALK_CF_DEACON" }
+    ]
+  },
+  {
+    "id": "TALK_CF_DEACON_HELP",
+    "type": "talk_topic",
+    "dynamic_line": {
+
+      "npc_has_effect": "rural_church_aware",
+      "yes": "No doubt the others here have ample work to be done.  As for myself, I'll manage.  I feel a bit bad having left the parish unattended though.  There's a group of survivors who knew Father Alexander currently sheltering there, and they likely will be have work to be done too.  I could direct you there if you'd like, in case you wish to visit them yourself.",
+      "no": {
+        "u_has_effect": "already_asked_deacon",
+        "yes": "I just hope they're alright.  As far as I can tell they can take care of themselves, but in times like this you never know what might happen.",
+        "no": "No doubt the others here have ample work to be done.  As for myself, I'll manage.  I feel a bit bad having left the parish unattended though.  There's a group of survivors who knew Father Alexander currently sheltering there, and while I'm confident they can take care of themselves, I'm still worried about them."
+      }
+    },
+    "responses": [
+      {
+        "text": "Okay, go ahead.",
+        "condition": {
+          "and": [
+            { "npc_has_effect": "rural_church_aware" },
+            { "not": { "u_has_effect": "already_asked_deacon" } }
+          ]
+        },
+        "switch": true,
+        "effect": [
+          { "u_add_effect": "already_asked_deacon", "duration": "PERMANENT" },
+          { "mapgen_update": "arcana_dummy", "om_terrain": "cf_church_4", "om_special": "cf_rural_church", "reveal_radius": 3 }
+        ],
+        "topic": "TALK_CF_DEACON_DESCRIBE"
+      },
+      {
+        "text": "Perhaps I could check on them for you?",
+        "condition": {
+          "and": [
+            "has_no_available_mission",
+            { "not": { "u_has_effect": "already_asked_deacon" } }
+          ]
+        },
+        "switch": true,
+        "effect": [
+          { "u_add_effect": "already_asked_deacon", "duration": "PERMANENT" },
+          { "mapgen_update": "arcana_dummy", "om_terrain": "cf_church_4", "om_special": "cf_rural_church", "reveal_radius": 3 }
+        ],
+        "topic": "TALK_CF_DEACON_DESCRIBE"
+      },
+      {
+        "text": "Any way I could do to help with that?",
+        "condition": { "not": { "u_has_effect": "already_asked_deacon" } },
+        "switch": true,
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "I see.", "topic": "TALK_CF_DEACON" }
+    ]
+  },
+  {
+    "id": "TALK_CF_DEACON_DESCRIBE",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "rural_church_aware",
+      "yes": "It's a rural church off the side of the road.  I'll mark it on your map as best as I can, though you'll have to reach it yourself.  Look for a woman there by the name of Sofia McKinnon, she should have work for you if you wish to help them out.",
+      "no": "I haven't been able to check back with them in a while, and I know they need all the help they can get.  If you can take the time to pay them a visit, speak with Sofia.  She leads the group of survivors sheltering there, and she may have work for you.  I'll go ahead and mark it on your map as best as I can, but you'll need to find it on your own."
+    },
+    "responses": [ { "text": "We'll see, then.", "topic": "TALK_CF_DEACON" } ]
+  },
+  {
+    "id": "TALK_CF_DEACON_MISSION_BACKDOOR",
+    "type": "talk_topic",
+    "dynamic_line": "Thank you.  I'm hopeful they'll be able to take care of themselves, for now I plan to stay here and help out as best as I can.  I know this isn't much, but here.  It's the least I could do.",
+    "responses": [
+      {
+        "text": "Thank you!",
+        "effect": [ { "u_buy_item": "FMCNote", "count": 2 }, { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" } ],
+        "topic": "TALK_CF_DEACON"
+      }
+    ]
+  }
+]
