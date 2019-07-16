@@ -222,7 +222,9 @@
       "furniture": { ">": "f_blade_upright" },
       "place_loot": [
         { "group": "cleansing_flame_crafting", "x": [ 2, 4 ], "y": 20, "chance": 30, "repeat": 5 },
+        { "item": "CF_golden_scale", "x": [ 2, 4 ], "y": 20, "chance": 25, "repeat": 3 },
         { "group": "cleansing_flame_crafting", "x": [ 20, 22 ], "y": 20, "chance": 30, "repeat": 5 },
+        { "item": "CF_golden_scale", "x": [ 20, 22 ], "y": 20, "chance": 25, "repeat": 3 },
         { "group": "cleansing_flame_gear_consumables", "x": [ 7, 8 ], "y": 20, "chance": 40, "repeat": 3 },
         { "group": "cleansing_flame_gear_consumables", "x": [ 16, 17 ], "y": 20, "chance": 40, "repeat": 3 },
         { "group": "cleansing_flame_gear", "x": [ 2, 8 ], "y": 22, "chance": 25, "repeat": 3 },

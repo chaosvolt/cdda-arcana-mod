@@ -342,5 +342,21 @@
     "color": "light_red",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sanguine_holdout_1",
+    "name": "cabin",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sanguine_holdout_b1",
+    "name": "cabin basement",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": 5
   }
 ]

@@ -8,14 +8,14 @@
       "no": {
         "u_has_trait": "PROF_SANGUINE",
         "yes": {
-          "u_has_effect": "cf_quest_1",
+          "u_has_effect": "cf_mission_1",
           "yes": "A pleasant surprise to see you working with us.  What do you require?",
           "no": "You are not welcome here sanguinist.  State your intentions."
         },
         "no": {
           "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ],
           "yes": {
-            "u_has_effect": "cf_quest_1",
+            "u_has_effect": "cf_mission_1",
             "yes": "Welcome, Keeper.  What do you require?",
             "no": "Servant of the otherworldly, you are welcome here, so long as you cause no trouble."
           },
@@ -26,7 +26,6 @@
     "responses": [
       { "text": "Who are you?", "topic": "TALK_CF_GM_WHO" },
       { "text": "What can you tell me about this place?", "topic": "TALK_CF_GM_WHERE" },
-      { "text": "Anything I can do to help?", "topic": "TALK_CF_GM_TBC" },
       {
         "text": "Are there any others of us left?",
         "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
@@ -42,8 +41,33 @@
         "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } },
         "topic": "TALK_CF_GM_GROUP"
       },
+      {
+        "text": "Anything I can do to help?",
+        "condition": { "npc_has_effect": "cf_mission_3" },
+        "switch": true,
+        "topic": "TALK_CF_GM_TBC"
+      },
+      {
+        "text": "Anything I can do to help?",
+        "condition": { "npc_has_trait": "FIX_CF_GM" },
+        "switch": true,
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Anything I can do to help?",
+        "//": "Effect reused since this is all just to patch up my mistake.",
+        "condition": { "not": { "npc_has_effect": "sofia_motive_explained" } },
+        "switch": true,
+        "topic": "TALK_CF_GM_DUN_GOOFED"
+      },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
+  },
+  {
+    "id": "TALK_CF_GM_TBC",
+    "type": "talk_topic",
+    "dynamic_line": "Not at the moment, but check back another time.  I might have something for you then.",
+    "responses": [ { "text": "Okay.", "topic": "TALK_CF_GM" } ]
   },
   {
     "id": "TALK_CF_GM_WHO",
@@ -92,9 +116,15 @@
     "responses": [ { "text": "I see.", "topic": "TALK_CF_GM" } ]
   },
   {
+    "id": "TALK_CF_GM_DUN_GOOFED",
     "type": "talk_topic",
-    "id": "TALK_CF_GM_TBC",
-    "dynamic_line": "Not at the moment.  Check back later, and I should have more for you.",
-    "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_GM" } ]
+    "dynamic_line": "(( Unfortunately, due to a mistake on the part of the mod author, old versions of this NPC were set to start with Sofia's first mission instead of the inaccessible dummy mission created for them.  This was supposed to allow old saves to be able to immediately make use of the new mission chain being added, but bungling it means versions from old saves cannot correctly grab the new mission chain.  This message is here to inform the player why their old version of this NPC still lacks accessible missions. ))",
+    "responses": [
+      {
+        "text": "Oof.",
+        "effect": { "npc_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
+        "topic": "TALK_CF_GM"
+      }
+    ]
   }
 ]

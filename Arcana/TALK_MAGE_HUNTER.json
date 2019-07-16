@@ -52,6 +52,11 @@
         "topic": "TALK_MAGE_HUNTER_RECRUIT",
         "condition": { "and": [ { "u_has_mission": "MISSION_CF_REP_3" }, { "not": { "u_has_effect": "cf_mission_3_recruited" } } ] }
       },
+      {
+        "text": "[MISSION] Johnathan said I should ask one of you for help?",
+        "topic": "TALK_MAGE_HUNTER_RECRUIT_2",
+        "condition": { "and": [ { "u_has_mission": "MISSION_CF_GM_3" }, { "not": { "u_has_effect": "cf_mission_3_recruited_2" } } ] }
+      },
       { "text": "What is this place?", "topic": "TALK_MAGE_HUNTER_WHERE" },
       {
         "text": "Who are you people, anyway?",
@@ -71,7 +76,7 @@
       },
       {
         "text": "Take your attitude and shove it, mage hunter.",
-        "topic": "TALK_MAGE_HUNTER",
+        "topic": "TALK_MAGE_HUNTER_INSULT",
         "opinion": { "value": -3, "anger": 1 },
         "effect": [ { "u_faction_rep": -1 } ],
         "condition": { "and": [ { "not": { "u_has_effect": "cf_mission_1" } }, { "u_has_trait": "PROF_SANGUINE" } ] }
@@ -107,6 +112,36 @@
         "text": "Let's go.",
         "topic": "TALK_DONE",
         "effect": [ { "u_add_effect": "cf_mission_3_recruited", "duration": "PERMANENT" }, "follow" ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_RECRUIT_2",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "So long as the Sun shines upon the Earth.  I am prepared to do my duty.",
+      "When you're ready.",
+      "Dii vult.  Lead the way.",
+      {
+        "u_has_trait": "PROF_CLEANSINGFLAME",
+        "yes": { "u_male": "As you see fit, Brother.", "no": "As you see fit, Sister." },
+        "no": "As you see fit."
+      },
+      {
+        "u_has_trait": "PROF_SANGUINE",
+        "yes": [
+          "If the Grandmaster trusts your judgement, so be it.",
+          "Alright.  Stay in my sight.",
+          "I see.  You know full well how dangerous these sanguinists can be, be on guard."
+        ],
+        "no": "May the blood mages find justice, under the hammer of the gods."
+      }
+    ],
+    "responses": [
+      {
+        "text": "Let's go.",
+        "topic": "TALK_DONE",
+        "effect": [ { "u_add_effect": "cf_mission_3_recruited_2", "duration": "PERMANENT" }, "follow" ]
       }
     ]
   },

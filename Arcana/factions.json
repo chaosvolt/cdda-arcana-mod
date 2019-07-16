@@ -11,11 +11,63 @@
     "combat_ability": 110,
     "food_supply": 115200,
     "wealth": 5000000,
+    "currency": "CF_golden_scale",
+    "relations": {
+      "cleansing_flame": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": {
+        "kill on sight": false,
+        "watch your back": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "knows your voice": true
+      },
+      "sanguine_order_remnant": { "kill on sight": true, "knows your voice": true }
+    },
     "good": 1,
     "strength": 0,
     "sneak": 1,
     "crime": -1,
     "cult": 1,
     "description": "A local syncretic religious order, from some time before the cataclysm.  Now, remnants of them are dedicated to hunting down dangerous magic and otherworldly monsters."
+  },
+  {
+    "type": "faction",
+    "id": "sanguine_order_remnant",
+    "name": "Sanguine Remnant",
+    "likes_u": -5,
+    "respects_u": -5,
+    "known_by_u": false,
+    "size": 7,
+    "power": 100,
+    "combat_ability": 100,
+    "food_supply": 85000,
+    "wealth": 300000,
+    "relations": {
+      "sanguine_order_remnant": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": { "knows your voice": true },
+      "cleansing_flame": { "kill on sight": true, "knows your voice": true }
+    },
+    "good": -1,
+    "strength": 0,
+    "sneak": 1,
+    "crime": 1,
+    "cult": -1,
+    "description": "The broken leftovers of a bloodthirsty pseudo-cult, from before the cataclysm.  The remainder still pursue the studies that led them down their murderous path, gleaming what little they can from past failures."
   }
 ]

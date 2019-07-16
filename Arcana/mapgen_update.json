@@ -189,7 +189,7 @@
       "terrain": { "|": "t_palisade", "^": "t_pit", "u": "t_pit_shallow" },
       "furniture": { "B": "f_bed", "D": "f_dresser", "e": "f_table", "h": "f_chair" },
       "place_npcs": [
-        { "class": "cleansing_flame_grandmaster", "x": 19, "y": 8 },
+        { "class": "cleansing_flame_grandmaster", "x": 19, "y": 8, "add_trait": "FIX_CF_GM" },
         { "class": "mage_hunter_guard", "x": 3, "y": 6, "add_trait": "BGSS_CF_FILTER" },
         { "class": "mage_hunter_guard", "x": 17, "y": 4, "add_trait": "BGSS_CF_FILTER" },
         { "class": "mage_hunter_guard", "x": 6, "y": 10, "add_trait": "BGSS_CF_FILTER" }
@@ -199,85 +199,262 @@
   {
     "type": "mapgen",
     "method": "json",
-    "nested_mapgen_id": "cf_church_upgrade_3_b",
+    "update_mapgen_id": "cf_church_upgrade_3_b",
     "object": {
-      "mapgensize": [ 15, 15 ],
-      "rows": [
-        "uuuuu^^^^^|||||",
-        "              |",
-        "              |",
-        "              |",
-        "              |",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              u",
-        "              u",
-        "              u",
-        "              u",
-        "              u"
-      ],
-      "terrain": { "|": "t_palisade", "^": "t_pit", "u": "t_pit_shallow" }
+      "set": [
+        { "line": "terrain", "id": "t_palisade", "x": 22, "x2": 22, "y": 1, "y2": 5 },
+        { "line": "terrain", "id": "t_palisade", "x": 18, "x2": 21, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit", "x": 22, "x2": 22, "y": 6, "y2": 10 },
+        { "line": "terrain", "id": "t_pit", "x": 13, "x2": 17, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 22, "x2": 22, "y": 11, "y2": 15 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 8, "x2": 12, "y": 1, "y2": 1 }
+      ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
-    "nested_mapgen_id": "cf_church_upgrade_3_c",
+    "update_mapgen_id": "cf_church_upgrade_3_c",
     "object": {
-      "mapgensize": [ 21, 21 ],
-      "rows": [
-        "                     ",
-        "                     ",
-        "                     ",
-        "                     ",
-        "                     ",
-        "                     ",
-        "u                    ",
-        "u                    ",
-        "u                    ",
-        "u                    ",
-        "u                    ",
-        "^                    ",
-        "^                    ",
-        "^                    ",
-        "^                    ",
-        "^                    ",
-        "|                    ",
-        "|                    ",
-        "|                    ",
-        "|                    ",
-        "|||||      ^^^^^uuuuu"
-      ],
-      "terrain": { "|": "t_palisade", "^": "t_pit", "u": "t_pit_shallow" }
+      "set": [
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 1, "y": 18, "y2": 21 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 5, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit", "x": 1, "x2": 1, "y": 13, "y2": 17 },
+        { "line": "terrain", "id": "t_pit", "x": 6, "x2": 8, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit", "x": 15, "x2": 16, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 1, "x2": 1, "y": 8, "y2": 12 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 17, "x2": 21, "y": 22, "y2": 22 }
+      ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
-    "nested_mapgen_id": "cf_church_upgrade_3_d",
+    "update_mapgen_id": "cf_church_upgrade_3_d",
     "object": {
-      "mapgensize": [ 15, 15 ],
-      "rows": [
-        "              u",
-        "              u",
-        "              u",
-        "              u",
-        "              u",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              ^",
-        "              |",
-        "              |",
-        "              |",
-        "              |",
-        "uuuuu^^^^^|||||"
-      ],
-      "terrain": { "|": "t_palisade", "^": "t_pit", "u": "t_pit_shallow" }
+      "set": [
+        { "line": "terrain", "id": "t_palisade", "x": 22, "x2": 22, "y": 18, "y2": 21 },
+        { "line": "terrain", "id": "t_palisade", "x": 18, "x2": 22, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit", "x": 22, "x2": 22, "y": 13, "y2": 17 },
+        { "line": "terrain", "id": "t_pit", "x": 13, "x2": 17, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 22, "x2": 22, "y": 8, "y2": 12 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 8, "x2": 12, "y": 22, "y2": 22 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_1_a",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_post", "x": 0, "x2": 0, "y": 0, "y2": 4 },
+        { "line": "terrain", "id": "t_fence_post", "x": 1, "x2": 4, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 1, "y": 1, "y2": 10 },
+        { "line": "terrain", "id": "t_palisade", "x": 2, "x2": 10, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit", "x": 1, "x2": 1, "y": 11, "y2": 15 },
+        { "line": "terrain", "id": "t_pit", "x": 11, "x2": 15, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 1, "x2": 1, "y": 16, "y2": 20 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 16, "x2": 20, "y": 1, "y2": 1 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_1_b",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_post", "x": 23, "x2": 23, "y": 0, "y2": 4 },
+        { "line": "terrain", "id": "t_fence_post", "x": 18, "x2": 22, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_palisade", "x": 22, "x2": 22, "y": 1, "y2": 10 },
+        { "line": "terrain", "id": "t_palisade", "x": 13, "x2": 21, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit", "x": 22, "x2": 22, "y": 11, "y2": 15 },
+        { "line": "terrain", "id": "t_pit", "x": 8, "x2": 12, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 22, "x2": 22, "y": 16, "y2": 20 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 3, "x2": 7, "y": 1, "y2": 1 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_1_c",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_post", "x": 0, "x2": 0, "y": 19, "y2": 22 },
+        { "line": "terrain", "id": "t_fence_post", "x": 0, "x2": 4, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 1, "y": 13, "y2": 21 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 8, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_palisade", "x": 15, "x2": 16, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit", "x": 1, "x2": 1, "y": 8, "y2": 12 },
+        { "line": "terrain", "id": "t_pit", "x": 17, "x2": 21, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 1, "x2": 1, "y": 3, "y2": 7 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 22, "x2": 23, "y": 22, "y2": 22 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_1_d",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_post", "x": 23, "x2": 23, "y": 19, "y2": 22 },
+        { "line": "terrain", "id": "t_fence_post", "x": 19, "x2": 23, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_palisade", "x": 22, "x2": 22, "y": 13, "y2": 21 },
+        { "line": "terrain", "id": "t_palisade", "x": 13, "x2": 22, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit", "x": 22, "x2": 22, "y": 8, "y2": 12 },
+        { "line": "terrain", "id": "t_pit", "x": 8, "x2": 12, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 22, "x2": 22, "y": 3, "y2": 7 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 3, "x2": 7, "y": 22, "y2": 22 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_2_a",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_barbed", "x": 0, "x2": 0, "y": 0, "y2": 4 },
+        { "line": "terrain", "id": "t_fence_barbed", "x": 1, "x2": 4, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_fence_post", "x": 0, "x2": 0, "y": 5, "y2": 9 },
+        { "line": "terrain", "id": "t_fence_post", "x": 5, "x2": 9, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 1, "y": 1, "y2": 15 },
+        { "line": "terrain", "id": "t_palisade", "x": 2, "x2": 15, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit", "x": 1, "x2": 1, "y": 16, "y2": 20 },
+        { "line": "terrain", "id": "t_pit", "x": 16, "x2": 20, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 1, "x2": 1, "y": 21, "y2": 23 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 21, "x2": 23, "y": 1, "y2": 1 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_2_b",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_barbed", "x": 23, "x2": 23, "y": 0, "y2": 4 },
+        { "line": "terrain", "id": "t_fence_barbed", "x": 18, "x2": 22, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_fence_post", "x": 23, "x2": 23, "y": 5, "y2": 9 },
+        { "line": "terrain", "id": "t_fence_post", "x": 13, "x2": 17, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_palisade", "x": 22, "x2": 22, "y": 1, "y2": 15 },
+        { "line": "terrain", "id": "t_palisade", "x": 8, "x2": 21, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit", "x": 22, "x2": 22, "y": 16, "y2": 20 },
+        { "line": "terrain", "id": "t_pit", "x": 3, "x2": 7, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 22, "x2": 22, "y": 21, "y2": 23 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 0, "x2": 2, "y": 1, "y2": 1 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_2_c",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_barbed", "x": 0, "x2": 0, "y": 19, "y2": 22 },
+        { "line": "terrain", "id": "t_fence_barbed", "x": 0, "x2": 4, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_fence_post", "x": 0, "x2": 0, "y": 13, "y2": 18 },
+        { "line": "terrain", "id": "t_fence_post", "x": 5, "x2": 5, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_fence_post", "x": 15, "x2": 18, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 1, "y": 8, "y2": 21 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 8, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_palisade", "x": 15, "x2": 21, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit", "x": 1, "x2": 1, "y": 3, "y2": 7 },
+        { "line": "terrain", "id": "t_pit", "x": 22, "x2": 23, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 1, "x2": 1, "y": 0, "y2": 2 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_2_d",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_barbed", "x": 23, "x2": 23, "y": 19, "y2": 22 },
+        { "line": "terrain", "id": "t_fence_barbed", "x": 19, "x2": 23, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_fence_post", "x": 23, "x2": 23, "y": 14, "y2": 18 },
+        { "line": "terrain", "id": "t_fence_post", "x": 14, "x2": 18, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_palisade", "x": 22, "x2": 22, "y": 8, "y2": 21 },
+        { "line": "terrain", "id": "t_palisade", "x": 8, "x2": 22, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit", "x": 22, "x2": 22, "y": 3, "y2": 7 },
+        { "line": "terrain", "id": "t_pit", "x": 3, "x2": 7, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 22, "x2": 22, "y": 0, "y2": 2 },
+        { "line": "terrain", "id": "t_pit_shallow", "x": 0, "x2": 2, "y": 22, "y2": 22 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_3_a",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_barbed", "x": 0, "x2": 0, "y": 0, "y2": 9 },
+        { "line": "terrain", "id": "t_fence_barbed", "x": 1, "x2": 9, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_fence_post", "x": 0, "x2": 0, "y": 10, "y2": 14 },
+        { "line": "terrain", "id": "t_fence_post", "x": 10, "x2": 14, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 1, "y": 1, "y2": 20 },
+        { "line": "terrain", "id": "t_palisade", "x": 2, "x2": 20, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit", "x": 1, "x2": 1, "y": 21, "y2": 23 },
+        { "line": "terrain", "id": "t_pit", "x": 21, "x2": 23, "y": 1, "y2": 1 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_3_b",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_barbed", "x": 23, "x2": 23, "y": 0, "y2": 9 },
+        { "line": "terrain", "id": "t_fence_barbed", "x": 13, "x2": 22, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_fence_post", "x": 23, "x2": 23, "y": 10, "y2": 14 },
+        { "line": "terrain", "id": "t_fence_post", "x": 8, "x2": 12, "y": 0, "y2": 0 },
+        { "line": "terrain", "id": "t_palisade", "x": 22, "x2": 22, "y": 1, "y2": 20 },
+        { "line": "terrain", "id": "t_palisade", "x": 3, "x2": 21, "y": 1, "y2": 1 },
+        { "line": "terrain", "id": "t_pit", "x": 22, "x2": 22, "y": 21, "y2": 23 },
+        { "line": "terrain", "id": "t_pit", "x": 0, "x2": 2, "y": 1, "y2": 1 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_3_c",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_barbed", "x": 0, "x2": 0, "y": 13, "y2": 22 },
+        { "line": "terrain", "id": "t_fence_barbed", "x": 0, "x2": 8, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_fence_barbed", "x": 15, "x2": 18, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_fence_post", "x": 0, "x2": 0, "y": 8, "y2": 12 },
+        { "line": "terrain", "id": "t_fence_post", "x": 19, "x2": 23, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 1, "y": 3, "y2": 21 },
+        { "line": "terrain", "id": "t_palisade", "x": 1, "x2": 8, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_palisade", "x": 15, "x2": 23, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit", "x": 1, "x2": 1, "y": 0, "y2": 2 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_GM_3_d",
+    "object": {
+      "set": [
+        { "line": "terrain", "id": "t_fence_barbed", "x": 23, "x2": 23, "y": 14, "y2": 22 },
+        { "line": "terrain", "id": "t_fence_barbed", "x": 14, "x2": 23, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_fence_post", "x": 23, "x2": 23, "y": 9, "y2": 13 },
+        { "line": "terrain", "id": "t_fence_post", "x": 9, "x2": 13, "y": 23, "y2": 23 },
+        { "line": "terrain", "id": "t_palisade", "x": 22, "x2": 22, "y": 3, "y2": 21 },
+        { "line": "terrain", "id": "t_palisade", "x": 3, "x2": 22, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_pit", "x": 22, "x2": 22, "y": 0, "y2": 2 },
+        { "line": "terrain", "id": "t_pit", "x": 0, "x2": 2, "y": 22, "y2": 22 }
+      ]
     }
   }
 ]
