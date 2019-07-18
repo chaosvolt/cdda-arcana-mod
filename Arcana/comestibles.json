@@ -22,7 +22,7 @@
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a strange numbness spread through your body.",
       "stat_adjustments": { "hunger": 25 },
-      "effects": [ { "id": "potion_numbness", "duration": 150 } ]
+      "effects": [ { "id": "potion_numbness", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
   },
@@ -48,7 +48,7 @@
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel wicked power spread through your body.",
       "stat_adjustments": { "hunger": 20 },
-      "effects": [ { "id": "potion_strength", "duration": 150 } ]
+      "effects": [ { "id": "potion_strength", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
   },
@@ -74,7 +74,7 @@
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a sudden tension spread through your body.",
       "stat_adjustments": { "hunger": 15 },
-      "effects": [ { "id": "potion_speed", "duration": 150 } ]
+      "effects": [ { "id": "potion_speed", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
   },
@@ -100,7 +100,7 @@
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a pleasant warmth spread through your body.",
       "stat_adjustments": { "hunger": 10 },
-      "effects": [ { "id": "potion_healing", "duration": 150 } ]
+      "effects": [ { "id": "potion_healing", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
@@ -131,7 +131,7 @@
       "bleed": 1.0,
       "bite": 0.95,
       "move_cost": 200,
-      "effects": [ { "id": "potion_vulnerary", "duration": 100 } ]
+      "effects": [ { "id": "potion_vulnerary", "duration": 300 } ]
     },
     "flags": [ "NPC_SAFE" ]
   },
@@ -154,7 +154,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "Wisps of smoke rapidly fade away as you light the incense, filling you with energy.",
-      "effects": [ { "id": "potion_incense", "duration": 150 } ],
+      "effects": [ { "id": "potion_incense", "duration": 900 } ],
       "charges_needed": { "fire": 1 },
       "moves": 50
     }
