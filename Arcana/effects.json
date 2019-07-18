@@ -31,7 +31,7 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "pkill_tick": [ 7 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15, -10 ] }
+    "base_mods": { "pkill_tick": [ 40 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15, -10 ] }
   },
   {
     "type": "effect_type",
@@ -45,6 +45,7 @@
     "max_intensity": 15,
     "int_dur_factor": "1 m",
     "base_mods": {
+      "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
       "pain_max_val": [ 10, 5 ],
       "str_mod": [ 3 ],
@@ -52,7 +53,8 @@
       "int_mod": [ -1 ],
       "per_mod": [ -1 ],
       "speed_mod": [ 5 ],
-      "stamina_min": [ 4 ]
+      "stamina_min": [ 40 ],
+      "stamina_chance": [ 6, 12 ]
     }
   },
   {
@@ -69,6 +71,7 @@
     "max_intensity": 15,
     "int_dur_factor": "1 m",
     "base_mods": {
+      "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
       "pain_max_val": [ 10, 5 ],
       "str_mod": [ -2 ],
@@ -90,7 +93,7 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "pkill_tick": [ 3 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10, -5 ] }
+    "base_mods": { "pkill_tick": [ 18 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10, -5 ] }
   },
   {
     "type": "effect_type",
@@ -104,7 +107,7 @@
     "rating": "good",
     "max_intensity": 10,
     "int_dur_factor": "1 m",
-    "base_mods": { "pkill_tick": [ 5 ], "pkill_min": [ 5 ], "pkill_max_val": [ 30 ], "speed_mod": [ -12, -6 ] }
+    "base_mods": { "pkill_tick": [ 30 ], "pkill_min": [ 5 ], "pkill_max_val": [ 30 ], "speed_mod": [ -12, -6 ] }
   },
   {
     "type": "effect_type",
@@ -117,13 +120,13 @@
     "rating": "good",
     "max_intensity": 30,
     "int_dur_factor": "1 m",
-    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "int_mod": [ -1, 0 ], "per_mod": [ -1, 0 ], "fatigue_min": [ -1 ] }
+    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "int_mod": [ -1, 0 ], "per_mod": [ -1, 0 ], "fatigue_min": [ -1 ], "fatigue_tick": [ 6 ] }
   },
   {
     "type": "effect_type",
     "id": "revenant_hunger",
     "name": [ "Revenant Hunger" ],
-    "desc": [ "Immunity to food poisoning and parasites, increased hunger gain." ],
+    "desc": [ "Immunity to food poisoning and parasites, increased hunger gain.  Does not purge pre-existing conditions." ],
     "resist_effect": "talisman_warding",
     "remove_message": "Your craving for rotten food subsides.",
     "blocks_effects": [ "poison", "badpoison", "foodpoison", "paralyzepoison", "bloodworms", "paincysts", "brainworms", "tapeworm" ],
@@ -140,7 +143,6 @@
     "desc": [ "Protection against the effects of cold." ],
     "remove_message": "For a moment you feel a terrible chill in the air, as the ward against cold fades.",
     "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
-    "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
     "decay_messages": [ [ "Your ward against cold is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
@@ -166,20 +168,6 @@
       "relax_gas",
       "grabbed"
     ],
-    "blocks_effects": [
-      "downed",
-      "winded",
-      "stunned",
-      "dazed",
-      "bouldering",
-      "paralyzepoison",
-      "webbed",
-      "slimed",
-      "sap",
-      "crushed",
-      "relax_gas",
-      "grabbed"
-    ],
     "decay_messages": [ [ "Your spell of free action is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
@@ -192,7 +180,6 @@
     "desc": [ "Protection against most effects of heat." ],
     "remove_message": "You feel a strange tingling sensation, as the ward against heat fades.",
     "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
-    "blocks_effects": [ "onfire", "smoke", "hot", "blisters" ],
     "decay_messages": [ [ "The ward against heat is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
@@ -205,7 +192,6 @@
     "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],
     "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
     "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
-    "blocks_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
     "decay_messages": [ [ "Your clarity of blood spell is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
@@ -218,7 +204,6 @@
     "desc": [ "Protection against lingering acid effects." ],
     "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
     "removes_effects": [ "corroding" ],
-    "blocks_effects": [ "corroding" ],
     "decay_messages": [ [ "Your ward against corrosion  is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
@@ -231,7 +216,6 @@
     "desc": [ "Protection against toxic gas and venom." ],
     "remove_message": "You feel a momenary weakness as the protective magic fades.",
     "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
-    "blocks_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
     "max_duration": 1000,
     "int_dur_factor": "1 m"
   },
@@ -242,7 +226,6 @@
     "desc": [ "Protects against various anomalous effects." ],
     "remove_message": "The magical protection fades.",
     "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
-    "blocks_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
     "decay_messages": [ [ "Your ward against evil is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
