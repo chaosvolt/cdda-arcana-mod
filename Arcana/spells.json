@@ -149,8 +149,8 @@
     "max_range": 24,
     "range_increment": 1.2,
     "min_aoe": 1,
-    "max_aoe": 4,
-    "aoe_increment": 0.2,
+    "max_aoe": 5,
+    "aoe_increment": 0.4,
     "max_level": 10,
     "difficulty": 0,
     "base_casting_time": 160,
@@ -160,8 +160,6 @@
     "base_energy_cost": 40,
     "final_energy_cost": 32,
     "energy_increment": -0.8,
-    "min_duration": 200,
-    "max_duration": 600,
     "duration_increment": 40,
     "damage_type": "heat",
     "field_id": "fd_fire",
@@ -695,8 +693,6 @@
     "max_range": 10,
     "range_increment": 0.5
   },
-
-
   {
     "id": "arcana_fire_dragonblood",
     "type": "SPELL",
@@ -716,8 +712,8 @@
     "max_range": 20,
     "range_increment": 0.6,
     "min_aoe": 2,
-    "max_aoe": 3,
-    "aoe_increment": 0.1,
+    "max_aoe": 4,
+    "aoe_increment": 0.2,
     "max_level": 10,
     "difficulty": 0,
     "base_casting_time": 140,
@@ -727,16 +723,56 @@
     "base_energy_cost": 16,
     "final_energy_cost": 14,
     "energy_increment": -0.2,
-    "min_duration": 200,
-    "max_duration": 600,
     "duration_increment": 40,
     "damage_type": "heat",
-    "field_id": "fd_flame_burst",
+    "field_id": "fd_fire",
     "field_chance": 3,
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.1
+  },
+  {
+    "id": "arcana_fire_dragonblood2",
+    "type": "SPELL",
+    "name": "Infernal Flame Aftermath: Flame Burst",
+    "description": "This exists to add a chance of lingering anomalous fire after Infernal Flame impacts.",
+    "effect": "target_attack",
+    "valid_targets": [ "hostile", "ground" ],
+    "min_range": 14,
+    "max_range": 20,
+    "range_increment": 0.6,
+    "min_aoe": 2,
+    "max_aoe": 4,
+    "aoe_increment": 0.2,
+    "max_level": 10,
+    "difficulty": 0,
+    "field_id": "fd_flame_burst",
+    "field_chance": 5,
+    "min_field_intensity": 1,
+    "max_field_intensity": 3,
+    "field_intensity_increment": 0.2,
+    "field_intensity_variance": 0.1
+  },
+  {
+    "id": "arcana_fire_dragonblood3",
+    "type": "SPELL",
+    "name": "Infernal Flame Aftermath: Corruption",
+    "description": "This exists only to add destruction of natural terrain to Infernal Flame.",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "effect_str": "arcana_fire_dragonblood3",
+    "difficulty": 0,
+    "max_level": 10,
+    "min_damage": 4,
+    "max_damage": 2,
+    "damage_increment": -0.2,
+    "min_aoe": 2,
+    "max_aoe": 4,
+    "aoe_increment": 0.2,
+    "min_range": 14,
+    "max_range": 20,
+    "range_increment": 0.6
   },
   {
     "id": "arcana_clarity_dragonblood",
@@ -788,10 +824,6 @@
     "duration_increment": 3000,
     "energy_source": "HP"
   },
-
-
-
-
   {
     "type": "ter_furn_transform",
     "id": "arcana_plants",
@@ -888,6 +920,50 @@
       }
     ]
   },
+  {
+    "type": "ter_furn_transform",
+    "id": "arcana_fire_dragonblood3",
+    "fail_message": "Nothing remains to be marked by flame.",
+    "terrain": [
+      {
+        "result": "t_grass_dead",
+        "valid_terrain": [ "t_moss", "t_grass", "t_grass_long", "t_grass_tall", "t_grass_white", "t_grass_golf" ],
+        "message": "The grass withers and dies."
+      },
+      {
+        "result": "t_dirt",
+        "valid_terrain": [ "t_underbrush", "t_underbrush_harvested_spring", "t_underbrush_harvested_summer", "t_underbrush_harvested_autumn", "t_underbrush_harvested_winter", "t_shrub", "t_shrub_peanut", "t_shrub_peanut_harvested", "t_shrub_blueberry", "t_shrub_blueberry_harvested", "t_shrub_strawberry", "t_shrub_strawberry_harvested", "t_shrub_blackberry", "t_shrub_blackberry_harvested", "t_shrub_huckleberry", "t_shrub_huckleberry_harvested", "t_shrub_raspberry", "t_shrub_raspberry_harvested", "t_shrub_grape", "t_shrub_grape_harvested", "t_shrub_hydrangea", "t_shrub_hydrangea_harvested", "t_shrub_lilac", "t_shrub_lilac_harvested", "t_tree_young" ],
+        "message": "The plants crumble to ash."
+      },
+      {
+        "result": "t_dirt",
+        "//", "Reliable fungus killer, but you're not getting your terrain back.",
+        "valid_terrain": [ "t_marloss", "t_fungus", "t_fungus_floor_in", "t_fungus_floor_sup", "t_fungus_floor_out", "t_fungus_wall", "t_fungus_wall_transformed", "t_fungus_mound", "t_shrub_fungal", "t_tree_fungal", "t_tree_fungal_young", "t_marloss_tree", "", "", "", "", "", "", "", "" ],
+        "message": "The fungal corruption erupts into a shower of blue embers!"
+      },
+      {
+        "result": "t_tree_dead",
+        "valid_terrain": [ "t_tree_walnut", "t_tree_walnut_harvested", "t_tree_chestnut", "t_tree_chestnut_harvested", "t_tree_beech", "t_tree_beech_harvested", "t_tree_hazelnut", "t_tree_hazelnut_harvested", "t_tree", "t_tree_harvested", "t_tree_cottonwood", "t_tree_elm", "t_tree_apple", "t_tree_apple_harvested", "t_tree_pear", "t_tree_pear_harvested", "t_tree_coffee", "t_tree_coffee_harvested", "t_tree_cherry", "t_tree_cherry_harvested", "t_tree_juniper", "t_tree_juniper_harvested", "t_tree_peach", "t_tree_peach_harvested", "t_tree_apricot", "t_tree_apricot_harvested", "t_tree_plum", "t_tree_plum_harvested", "t_tree_mulberry", "t_tree_mulberry_harvested", "t_tree_elderberry", "t_tree_elderberry_harvested", "", "", "", "" ],
+        "message": "Leaves and bark wither, crumbling to wind-blown ash."
+      },
+      {
+        "result": "t_tree_deadpine",
+        "valid_terrain": [ "t_tree_pine" ],
+        "message": "Resinous boughs smoulder and fall away in clumps."
+      },
+      {
+        "result": "t_tree_birch_harvested",
+        "valid_terrain": [ "t_tree_birch" ],
+        "message": "Charred bark peels and sloughs off."
+      },
+      {
+        "result": "t_tree_willow_harvested",
+        "valid_terrain": [ "t_tree_willow" ],
+        "message": "Leaves wilt and bark burns with an acrid scent."
+      }
+    ]
+  },
+
   {
     "id": "halo_elecresist",
     "copy-from": "spell_base",
