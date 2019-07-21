@@ -907,7 +907,7 @@
       },
       {
         "result": "f_egg_sacke",
-        "valid_furniture": [ "f_egg_sackbw", "f_egg_sackcs", "f_egg_sackws", "f_alien_zapper", "f_alien_scar", "f_alien_table" ],
+        "valid_furniture": [ "f_egg_sackbw", "f_egg_sackcs", "f_egg_sackws" ],
         "message": "The egg sacks swell and burst from the unearthly heat!"
       }
       {
