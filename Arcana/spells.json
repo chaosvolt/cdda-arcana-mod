@@ -1,5 +1,65 @@
 [
   {
+    "id": "arcana_agile_veil",
+    "type": "SPELL",
+    "name": "Arcane Blessing: Agility",
+    "description": "Using this spell will grant a short-term speed and agility-enhancing effect.  It can be used on yourself or an ally.",
+    "valid_targets": [ "self", "ally" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
+    "effect": "target_attack",
+    "effect_str": "spell_agility",
+    "min_range": 0,
+    "max_range": 20,
+    "range_increment": 1,
+    "energy_source": "STAMINA",
+    "difficulty": 0,
+    "max_level": 10,
+    "base_casting_time": 200,
+    "final_casting_time": 150,
+    "casting_time_increment": -5,
+    "base_energy_cost": 50,
+    "final_energy_cost": 40,
+    "energy_increment": -1,
+    "min_duration": 30000,
+    "max_duration": 90000,
+    "duration_increment": 6000
+  },
+  {
+    "id": "arcana_capacitance2",
+    "type": "SPELL",
+    "name": "Aftermath: Capacitance Rads",
+    "description": "This exists to make Capacitance irradiate the user.",
+    "valid_targets": [ "self" ],
+    "effect_str": "irradiated",
+    "max_level": 10,
+    "min_range": 0,
+    "max_range": 0,
+    "effect": "target_attack",
+    "difficulty": 0,
+    "min_duration": 30000,
+    "max_duration": 60000,
+    "duration_increment": 3000
+  },
+  {
+    "id": "arcana_drainlife_dragonblood2",
+    "type": "SPELL",
+    "name": "Aftermath: Drain Life Fatigue",
+    "description": "This exists to potentially give Dragonblood's version of Drain Life a corruptive side effect on the area.",
+    "effect": "target_attack",
+    "valid_targets": [ "self" ],
+    "min_aoe": 3,
+    "max_aoe": 9,
+    "aoe_increment": 0.3,
+    "max_level": 10,
+    "difficulty": 0,
+    "field_id": "fd_fatigue",
+    "field_chance": 25,
+    "min_field_intensity": 1,
+    "max_field_intensity": 3,
+    "field_intensity_increment": 0.2,
+    "field_intensity_variance": 0.1
+  },
+  {
     "id": "arcana_flamearmor_dragonblood2",
     "type": "SPELL",
     "name": "Aftermath: Elemental Sign Coldness",
@@ -110,10 +170,36 @@
     "duration_increment": 6000
   },
   {
+    "id": "arcana_capacitance",
+    "type": "SPELL",
+    "//": "Note, remember this is considered a level-5 spell, until a mutation exists to use as a reference for its point cost, and later on until difficulty is assigned after arcana becomes the caster skill.",
+    "name": "Magic Sign: Capacitance",
+    "description": "Using this spell will channel your energy into artifice within the body, restoring bionic energy at the cost of fatigue.  It can lead to other side effects as well.",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
+    "extra_effects": [
+      { "id": "arcana_capacitance", "hit_self": true, "max_level": 10 }
+    ],
+    "min_damage": 60,
+    "max_damage": 120,
+    "damage_increment": 6,
+    "base_energy_cost": 60,
+    "final_energy_cost": 48,
+    "energy_increment": -1.2,
+    "max_level": 10,
+    "effect": "recover_energy",
+    "effect_str": "BIONIC",
+    "energy_source": "FATIGUE",
+    "difficulty": 0,
+    "base_casting_time": 240,
+    "final_casting_time": 180,
+    "casting_time_increment": -6
+  },
+  {
     "id": "arcana_clairvoyance",
     "type": "SPELL",
     "name": "Magic Sign: Clairvoyance",
-    "description": "Using this spell will annoint you with an ivory halo, granting you immunity to lightning.",
+    "description": "Using this spell will anoint you with an ivory halo, granting you immunity to lightning.",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
     "effect": "spawn_item",
@@ -258,7 +344,7 @@
     "id": "arcana_dampening",
     "type": "SPELL",
     "name": "Magic Sign: Dampening",
-    "description": "Using this spell will annoint you with a coral halo, granting a temporary effect that will sap energy from fires, and draw radiation from your body.",
+    "description": "Using this spell will anoint you with a coral halo, granting a temporary effect that will sap energy from fires, and draw radiation from your body.",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
     "effect": "spawn_item",
@@ -382,7 +468,7 @@
     "id": "arcana_light",
     "type": "SPELL",
     "name": "Magic Sign: Light",
-    "description": "Using this spell will annoint you with a crystal halo, illuminating your surroundings while the effect is active.",
+    "description": "Using this spell will anoint you with a crystal halo, illuminating your surroundings while the effect is active.",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
     "effect": "spawn_item",
@@ -404,7 +490,7 @@
     "id": "arcana_elecresist",
     "type": "SPELL",
     "name": "Magic Sign: Lightning Ward",
-    "description": "Using this spell will annoint you with an amber halo, granting you immunity to lightning.",
+    "description": "Using this spell will anoint you with an amber halo, granting you immunity to lightning.",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
     "effect": "spawn_item",
@@ -504,7 +590,7 @@
     "id": "arcana_shadowsnakes",
     "type": "SPELL",
     "name": "Magic Sign: Serpentine Shield",
-    "description": "Using this spell will annoint you with an obsidian halo, granting a temporary defensive effect that will summon shadowy serpents to aid you.",
+    "description": "Using this spell will anoint you with an obsidian halo, granting a temporary defensive effect that will summon shadowy serpents to aid you.",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
     "effect": "spawn_item",
@@ -689,10 +775,35 @@
     "duration_increment": 12000
   },
   {
+    "id": "arcana_drainlife_dragonblood",
+    "type": "SPELL",
+    "name": "Sanguine Mark: Drain Life",
+    "description": "Using this spell will anoint you with a horned halo, granting a life-draining effect to your attacks.  Use it well, lest the price be greater than the reward.",
+    "valid_targets": [ "self" ],
+    "extra_effects": [
+      { "id": "arcana_drainlife_dragonblood2", "hit_self": true, "max_level": 10 }
+    ],
+    "flags": [ "SOMATIC" ],
+    "effect": "spawn_item",
+    "effect_str": "halo_drainlife",
+    "energy_source": "HP",
+    "difficulty": 0,
+    "max_level": 10,
+    "base_casting_time": 245,
+    "final_casting_time": 224,
+    "casting_time_increment": -2.1,
+    "base_energy_cost": 28,
+    "final_energy_cost": 21,
+    "energy_increment": -0.7,
+    "min_duration": 24000,
+    "max_duration": 48000,
+    "duration_increment": 2400
+  },
+  {
     "id": "arcana_flamearmor_dragonblood",
     "type": "SPELL",
     "name": "Sanguine Mark: Elemental Sign",
-    "description": "Using this spell will grant temporary resistance to overheating, along with sapping heat from all around you.  Direct contact with flame will still cause harm, however.  It can only be used on yourself.",
+    "description": "Using this spell will grant temporary resistance to heat and smoke, along with sapping heat from all around you.  Direct contact with flame will still cause harm, however.  It can only be used on yourself.",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC" ],
     "extra_effects": [
@@ -719,7 +830,7 @@
     "id": "arcana_fire_dragonblood",
     "type": "SPELL",
     "name": "Sanguine Mark: Infernal Flame",
-    "description": "Using this spell will conjure an eruption of hellfire at the location targeted, inflicting horrific burns and leaving a permanant scar upon the land.",
+    "description": "Using this spell will conjure an eruption of hellfire at the location targeted, inflicting horrific burns and leaving a permanent scar upon the land.",
     "effect": "target_attack",
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "LOUD", "SOMATIC" ],
@@ -786,7 +897,7 @@
     "id": "arcana_clarity_dragonblood",
     "type": "SPELL",
     "name": "Sanguine Mark: Revenant Blood",
-    "description": "Using this spell will grant protection against all pestilance infesting food and water, and purge the influence of the Mycus.  The body will burn through its reserves faster, however.  It can only be used on yourself.",
+    "description": "Using this spell will grant protection against all pestilence infesting food and water, and purge the influence of the Mycus.  The body will burn through its reserves faster, however.  It can only be used on yourself.",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC" ],
     "effect": "target_attack",
@@ -807,10 +918,82 @@
     "duration_increment": 6000
   },
   {
+    "id": "arcana_summonwyrm_dragonblood",
+    "type": "SPELL",
+    "name": "Sanguine Mark: Summon Dark Wyrm",
+    "description": "Using this spell will summon a dark wyrm.  Although it will be permanent, whether it will obey you is completely up to chance.",
+    "valid_targets": [ "ground" ],
+    "flags": [ "SOMATIC", "PERMANENT", "HOSTILE_50" ],
+    "effect": "summon",
+    "effect_str": "mon_dark_wyrm_summoned",
+    "energy_source": "HP",
+    "difficulty": 0,
+    "max_level": 10,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 4,
+    "max_range": 7,
+    "range_increment": 0.3,
+    "base_casting_time": 210,
+    "final_casting_time": 192,
+    "casting_time_increment": -1.8,
+    "base_energy_cost": 24,
+    "final_energy_cost": 18,
+    "energy_increment": -0.6
+  },
+  {
+    "id": "arcana_summonfiend_dragonblood",
+    "type": "SPELL",
+    "name": "Sanguine Mark: Summon Fiend",
+    "description": "Using this spell will summon an ashen revenant.  Although it will be permanent, whether it will obey you is completely up to chance.",
+    "valid_targets": [ "ground" ],
+    "flags": [ "SOMATIC", "PERMANENT", "HOSTILE_50" ],
+    "effect": "summon",
+    "effect_str": "mon_zombie_fiend_summoned",
+    "energy_source": "HP",
+    "difficulty": 0,
+    "max_level": 10,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 4,
+    "max_range": 7,
+    "range_increment": 0.3,
+    "base_casting_time": 175,
+    "final_casting_time": 160,
+    "casting_time_increment": -1.5,
+    "base_energy_cost": 20,
+    "final_energy_cost": 15,
+    "energy_increment": -0.5
+  },
+  {
+    "id": "arcana_summonjabberwock_dragonblood",
+    "type": "SPELL",
+    "name": "Sanguine Mark: Summon Jabberwock",
+    "description": "Using this spell will summon a golem woven of flesh.  Although it will be permanent, whether it will obey you is completely up to chance.",
+    "valid_targets": [ "ground" ],
+    "flags": [ "SOMATIC", "PERMANENT", "HOSTILE_50" ],
+    "effect": "summon",
+    "effect_str": "mon_jabberwock_summoned",
+    "energy_source": "HP",
+    "difficulty": 0,
+    "max_level": 10,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 4,
+    "max_range": 7,
+    "range_increment": 0.3,
+    "base_casting_time": 245,
+    "final_casting_time": 224,
+    "casting_time_increment": -2.1,
+    "base_energy_cost": 28,
+    "final_energy_cost": 21,
+    "energy_increment": -0.7
+  },
+  {
     "id": "arcana_dampening_dragonblood",
     "type": "SPELL",
     "name": "Sanguine Mark: Suppression",
-    "description": "Using this spell will annoint you with a coral halo, granting a temporary effect that will sap energy from fires, and draw radiation from your body.   Moreover, it will dull the fire within you, reducing how quickly it taxes your body.",
+    "description": "Using this spell will anoint you with a coral halo, granting a temporary effect that will sap energy from fires, and draw radiation from your body.   Moreover, it will dull the fire within you, reducing how quickly it taxes your body.",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC" ],
     "extra_effects": [
@@ -882,6 +1065,22 @@
         "valid_terrain": [ "t_moss", "t_grass", "t_grass_long", "t_grass_tall", "t_grass_white", "t_grass_golf" ]
       },
       {
+        "result": "t_dirt",
+        "valid_flags": [ "SHRUB" ]
+      },
+      {
+        "result": "t_dirt",
+        "valid_flags": [ "TREE" ]
+      },
+      {
+        "result": "t_dirt",
+        "//", "Reliable fungus killer, but you're not getting your terrain back.",
+        "valid_flags": [ "FUNGUS" ],
+        "message": "The fungal corruption erupts into a shower of blue embers!"
+      }
+    ],
+    "furniture": [
+      {
         "result": "f_null",
         "valid_furniture": [ "f_datura", "f_cattails", "f_lily", "f_lotus" ]
       },
@@ -890,39 +1089,18 @@
         "valid_flags": [ "FLOWER" ]
       },
       {
-        "result": "t_dirt",
-        "valid_flags": [ "SHRUB" ]
-      },
-      {
-        "result": "f_ash",
-        "valid_flags": [ "SHRUB" ]
-      },
-      {
-        "result": "t_dirt",
-        "valid_flags": [ "TREE" ]
-      },
-      {
-        "result": "f_ash",
-        "valid_flags": [ "TREE" ]
-      },
-      {
         "result": "f_egg_sacke",
         "valid_furniture": [ "f_egg_sackbw", "f_egg_sackcs", "f_egg_sackws" ],
         "message": "The egg sacks swell and burst from the unearthly heat!"
-      }
+      },
       {
-        "result": "t_dirt",
-        "//", "Reliable fungus killer, but you're not getting your terrain back.",
+        "result": "f_null",
         "valid_flags": [ "FUNGUS" ],
         "message": "The fungal corruption erupts into a shower of blue embers!"
       },
       {
-        "result": "f_ash",
-        "valid_flags": [ "FUNGUS" ]
-      },
-      {
         "result": "f_null",
-        "//", "Partial effect on mi-go terraforming, only the more recgonizably alive projections are vulnerable.",
+        "//", "Partial effect on mi-go terraforming, only the more recognizably alive projections are vulnerable.",
         "valid_furniture": [ "f_alien_tendril", "f_alien_anemone", "f_alien_gasper", "f_alien_zapper", "f_alien_scar", "f_alien_table" ],
         "message": "The unnatural outgrowths are cauterized bare, in a spray of green sparks!"
       }
@@ -1014,5 +1192,5 @@
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "base_mods": { "hunger_min": [ -1 ], "hunger_tick": [ 300 ], "thirst_min": [ -1 ], "thirst_tick": [ 300 ], "health_min": [ -1 ], "health_tick": [ 600 ], "stamina_min": [ -1 ], "stamina_tick": [ 10 ] }
-  },
+  }
 ]
