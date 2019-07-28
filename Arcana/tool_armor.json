@@ -57,7 +57,7 @@
     "name_plural": "masks of insight (on)",
     "//": "It seems you need around 6 to protect against flashes",
     "description": "A mask faced with iron and decorated with other metal, depicting the face of some unknown divine figure.  The face depicted on the mask seems more menacing than it did previously.",
-    "turns_per_charge": 50,
+    "turns_per_charge": 300,
     "revert_to": "somen_clairvoyance",
     "material_thickness": 2,
     "environmental_protection": 6,
@@ -148,7 +148,7 @@
     "name": "mantle of shadows (on)",
     "name_plural": "mantles of shadows (on)",
     "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders.  The air wavers around it, barely noticeable to you.",
-    "turns_per_charge": 50,
+    "turns_per_charge": 300,
     "artifact_data": { "effects_worn": [ "AEP_INVISIBLE", "AEP_STEALTH" ] },
     "revert_to": "robe_shadow",
     "use_action": {
@@ -199,7 +199,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "The carvings in the stone glow red for a brief moment, and a chill passes through your spine.",
-      "effects": [ { "id": "heat_ward", "duration": 1000 } ]
+      "effects": [ { "id": "heat_ward", "duration": 6000 } ]
     },
     "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS" ]
   },
@@ -235,7 +235,7 @@
     "name": "meteoric talisman (active)",
     "name_plural": "meteoric talismans (active)",
     "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  A strange electric tingle permeates the air around it, hinting at its protective magic.",
-    "turns_per_charge": 25,
+    "turns_per_charge": 150,
     "revert_to": "meteoric_talisman",
     "use_action": {
       "target": "meteoric_talisman",
@@ -260,7 +260,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
-      "effects": [ { "id": "cleric_warding", "duration": 1000 } ]
+      "effects": [ { "id": "cleric_warding", "duration": 6000 } ]
     },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   }

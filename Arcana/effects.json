@@ -30,8 +30,8 @@
     "decay_messages": [ [ "The numbing effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
-    "int_dur_factor": 10,
-    "base_mods": { "pkill_tick": [ 7 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15, -10 ] }
+    "int_dur_factor": "1 m",
+    "base_mods": { "pkill_tick": [ 40 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15, -10 ] }
   },
   {
     "type": "effect_type",
@@ -43,8 +43,9 @@
     "decay_messages": [ [ "The strengening effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
-    "int_dur_factor": 10,
+    "int_dur_factor": "1 m",
     "base_mods": {
+      "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
       "pain_max_val": [ 10, 5 ],
       "str_mod": [ 3 ],
@@ -52,7 +53,8 @@
       "int_mod": [ -1 ],
       "per_mod": [ -1 ],
       "speed_mod": [ 5 ],
-      "stamina_min": [ 4 ]
+      "stamina_min": [ 40 ],
+      "stamina_chance": [ 6, 12 ]
     }
   },
   {
@@ -67,8 +69,9 @@
     "decay_messages": [ [ "The quickening effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
-    "int_dur_factor": 10,
+    "int_dur_factor": "1 m",
     "base_mods": {
+      "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
       "pain_max_val": [ 10, 5 ],
       "str_mod": [ -2 ],
@@ -89,8 +92,8 @@
     "decay_messages": [ [ "The soothing effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
-    "int_dur_factor": 10,
-    "base_mods": { "pkill_tick": [ 3 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10, -5 ] }
+    "int_dur_factor": "1 m",
+    "base_mods": { "pkill_tick": [ 18 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10, -5 ] }
   },
   {
     "type": "effect_type",
@@ -102,9 +105,9 @@
     "removes_effects": [ "spores" ],
     "decay_messages": [ [ "The after-effects of the vulnerary are fading.", "bad" ] ],
     "rating": "good",
-    "max_intensity": 5,
-    "int_dur_factor": 10,
-    "base_mods": { "pkill_tick": [ 5 ], "pkill_min": [ 5 ], "pkill_max_val": [ 30 ], "speed_mod": [ -12, -6 ] }
+    "max_intensity": 10,
+    "int_dur_factor": "1 m",
+    "base_mods": { "pkill_tick": [ 30 ], "pkill_min": [ 5 ], "pkill_max_val": [ 30 ], "speed_mod": [ -12, -6 ] }
   },
   {
     "type": "effect_type",
@@ -116,22 +119,22 @@
     "decay_messages": [ [ "The effects of the incense are fading.", "bad" ] ],
     "rating": "good",
     "max_intensity": 30,
-    "int_dur_factor": 10,
-    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "int_mod": [ -1, 0 ], "per_mod": [ -1, 0 ], "fatigue_min": [ -1 ] }
+    "int_dur_factor": "1 m",
+    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "int_mod": [ -1, 0 ], "per_mod": [ -1, 0 ], "fatigue_min": [ -1 ], "fatigue_tick": [ 6 ] }
   },
   {
     "type": "effect_type",
     "id": "revenant_hunger",
     "name": [ "Revenant Hunger" ],
-    "desc": [ "Immunity to food poisoning and parasites, increased hunger gain." ],
+    "desc": [ "Immunity to food poisoning and parasites, increased hunger gain.  Does not purge pre-existing conditions." ],
     "resist_effect": "talisman_warding",
     "remove_message": "Your craving for rotten food subsides.",
     "blocks_effects": [ "poison", "badpoison", "foodpoison", "paralyzepoison", "bloodworms", "paincysts", "brainworms", "tapeworm" ],
     "decay_messages": [ [ "Your craving for rotten food is starting to wane.", "bad" ] ],
     "rating": "good",
     "max_intensity": 30,
-    "int_dur_factor": 10,
-    "base_mods": { "hunger_min": [ 1 ], "hunger_chance": [ 3, 6 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 6, 12 ] }
+    "int_dur_factor": "1 m",
+    "base_mods": { "hunger_min": [ 1 ], "hunger_chance": [ 18, 36 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 36, 72 ] }
   },
   {
     "type": "effect_type",
@@ -140,11 +143,10 @@
     "desc": [ "Protection against the effects of cold." ],
     "remove_message": "For a moment you feel a terrible chill in the air, as the ward against cold fades.",
     "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
-    "blocks_effects": [ "cold", "frostbite", "frostbite_recovery" ],
     "decay_messages": [ [ "Your ward against cold is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": 10
+    "int_dur_factor": "1 m"
   },
   {
     "type": "effect_type",
@@ -166,24 +168,10 @@
       "relax_gas",
       "grabbed"
     ],
-    "blocks_effects": [
-      "downed",
-      "winded",
-      "stunned",
-      "dazed",
-      "bouldering",
-      "paralyzepoison",
-      "webbed",
-      "slimed",
-      "sap",
-      "crushed",
-      "relax_gas",
-      "grabbed"
-    ],
     "decay_messages": [ [ "Your spell of free action is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": 10
+    "int_dur_factor": "1 m"
   },
   {
     "type": "effect_type",
@@ -192,11 +180,10 @@
     "desc": [ "Protection against most effects of heat." ],
     "remove_message": "You feel a strange tingling sensation, as the ward against heat fades.",
     "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
-    "blocks_effects": [ "onfire", "smoke", "hot", "blisters" ],
     "decay_messages": [ [ "The ward against heat is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": 10
+    "int_dur_factor": "1 m"
   },
   {
     "type": "effect_type",
@@ -205,11 +192,10 @@
     "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],
     "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
     "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
-    "blocks_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
     "decay_messages": [ [ "Your clarity of blood spell is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": 10
+    "int_dur_factor": "1 m"
   },
   {
     "type": "effect_type",
@@ -218,11 +204,10 @@
     "desc": [ "Protection against lingering acid effects." ],
     "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
     "removes_effects": [ "corroding" ],
-    "blocks_effects": [ "corroding" ],
     "decay_messages": [ [ "Your ward against corrosion  is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": 10
+    "int_dur_factor": "1 m"
   },
   {
     "type": "effect_type",
@@ -231,8 +216,8 @@
     "desc": [ "Protection against toxic gas and venom." ],
     "remove_message": "You feel a momenary weakness as the protective magic fades.",
     "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
-    "blocks_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
-    "max_duration": 1000
+    "max_duration": 1000,
+    "int_dur_factor": "1 m"
   },
   {
     "type": "effect_type",
@@ -241,11 +226,10 @@
     "desc": [ "Protects against various anomalous effects." ],
     "remove_message": "The magical protection fades.",
     "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
-    "blocks_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
     "decay_messages": [ [ "Your ward against evil is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": 10
+    "int_dur_factor": "1 m"
   },
   {
     "type": "effect_type",
@@ -256,7 +240,7 @@
     "decay_messages": [ [ "Your spell of might is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": 10,
+    "int_dur_factor": "1 m",
     "base_mods": { "str_mod": [ 8 ] }
   },
   {
@@ -268,7 +252,7 @@
     "decay_messages": [ [ "Your spell of agility is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": 10,
+    "int_dur_factor": "1 m",
     "base_mods": { "dex_mod": [ 8 ], "speed_mod": [ 30 ] }
   },
   {
@@ -280,7 +264,7 @@
     "decay_messages": [ [ "Your spell of insight is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": 10,
+    "int_dur_factor": "1 m",
     "base_mods": { "per_mod": [ 8 ] }
   },
   {
@@ -291,8 +275,8 @@
     "remove_message": "The taliman's effect fades.",
     "decay_messages": [ [ "The water talisman's blessing is waning.", "bad" ] ],
     "rating": "good",
-    "max_intensity": 3,
-    "int_dur_factor": 10
+    "max_intensity": 30,
+    "int_dur_factor": "1 m"
   },
   {
     "type": "effect_type",
