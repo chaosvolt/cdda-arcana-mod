@@ -9,7 +9,7 @@
     "price": 1200,
     "material": [ "veggy" ],
     "symbol": "[",
-    "looks_like": "necklace",
+    "looks_like": "silver_necklace",
     "color": "light_red",
     "flags": [ "FANCY" ]
   },
@@ -39,7 +39,7 @@
     "price": 9000,
     "material": [ "stone" ],
     "symbol": "[",
-    "looks_like": "brooch",
+    "looks_like": "jade_brooch",
     "color": "dark_gray",
     "flags": [ "FANCY" ]
   },
