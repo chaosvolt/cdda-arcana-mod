@@ -214,7 +214,7 @@
     "price": 12000,
     "material": [ "hardsteel" ],
     "symbol": "[",
-    "looks_like": "brooch",
+    "looks_like": "jade_brooch",
     "color": "light_gray",
     "ammo": "essence_dull_type",
     "max_charges": 20,
@@ -247,7 +247,7 @@
   {
     "id": "cleric_ring",
     "type": "TOOL_ARMOR",
-    "copy-from": "ring",
+    "copy-from": "gold_ring",
     "name": "ring of the fallen angel",
     "name_plural": "rings of the fallen angel",
     "description": "A simple silver ring, adorned with a small red gem and a wing motif.  Using it cures several anomalous ailments, and provides protection from such effects for a while.",

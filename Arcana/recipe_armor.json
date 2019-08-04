@@ -21,7 +21,7 @@
     "time": "30 m",
     "autolearn": true,
     "components": [
-      [ [ "cordage_short", 1, "LIST" ], [ "necklace", 1 ] ],
+      [ [ "cordage_short", 1, "LIST" ], [ "silver_necklace", 1 ] ],
       [ [ "vortex_shard", 1 ], [ "blob_gem", 1 ], [ "monster_tear", 1 ], [ "shadow_gem", 1 ] ]
     ]
   },
@@ -116,7 +116,7 @@
       [ [ "armguard_larmor", 1 ] ],
       [ [ "boots_larmor", 1 ] ],
       [ [ "leather", 4 ], [ "fur", 4 ] ],
-      [ [ "brooch", 1 ], [ "brooch_iridescent", 1 ] ],
+      [ [ "jade_brooch", 1 ], [ "brooch_iridescent", 1 ] ],
       [
         [ "wyrmskin_piece", 1 ],
         [ "acid", 1 ],
