@@ -1,5 +1,16 @@
 [
   {
+    "id": "fd_veil_darkness",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "shroud of darkness", "sym": "*", "color": "dark_gray", "transparent": false }
+    ],
+    "priority": 9,
+    "half_life": "15 minutes",
+    "phase": "plasma",
+    "display_field": true
+  },
+  {
     "id": "arcana_agile_veil",
     "type": "SPELL",
     "name": "Arcane Blessing: Agility",
@@ -455,7 +466,7 @@
     "final_energy_cost": 32,
     "energy_increment": -0.8,
     "duration_increment": 40,
-    "damage_type": "heat",
+    "damage_type": "fire",
     "field_id": "fd_fire",
     "field_chance": 2,
     "min_field_intensity": 1,
@@ -983,8 +994,7 @@
     "base_energy_cost": 16,
     "final_energy_cost": 12,
     "energy_increment": -0.4,
-    "duration_increment": 40,
-    "damage_type": "heat",
+    "damage_type": "fire",
     "field_id": "fd_fire",
     "field_chance": 3,
     "min_field_intensity": 1,
@@ -1197,7 +1207,7 @@
       },
       {
         "result": "t_dirt",
-        "//", "Reliable fungus killer, but you're not getting your terrain back.",
+        "//": "Reliable fungus killer, but you're not getting your terrain back.",
         "valid_flags": [ "FUNGUS" ],
         "message": "The fungal corruption erupts into a shower of blue embers!"
       }
@@ -1223,7 +1233,7 @@
       },
       {
         "result": "f_null",
-        "//", "Partial effect on mi-go terraforming, only the more recognizably alive projections are vulnerable.",
+        "//": "Partial effect on mi-go terraforming, only the more recognizably alive projections are vulnerable.",
         "valid_furniture": [ "f_alien_tendril", "f_alien_anemone", "f_alien_gasper", "f_alien_zapper", "f_alien_scar", "f_alien_table" ],
         "message": "The unnatural outgrowths are cauterized bare, in a spray of green sparks!"
       }
@@ -1315,16 +1325,5 @@
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "base_mods": { "hunger_min": [ -1 ], "hunger_tick": [ 300 ], "thirst_min": [ -1 ], "thirst_tick": [ 300 ], "health_min": [ -1 ], "health_tick": [ 600 ], "stamina_min": [ -1 ], "stamina_tick": [ 10 ] }
-  },
-  {
-    "id": "fd_veil_darkness",
-    "type": "field_type",
-    "intensity_levels": [
-      { "name": "shroud of darkness", "sym": "*", "color": "dark_gray", "transparent": false }
-    ],
-    "priority": 9,
-    "half_life": "15 minutes",
-    "phase": "plasma",
-    "display_field": true
   }
 ]
