@@ -1,5 +1,50 @@
 [
   {
+    "id": "halo_elecresist",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "amber halo",
+    "description": "A strange radiance permeating your body, protecting you from lightning.",
+    "color": "light_gray",
+    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY" ] }
+  },
+  {
+    "id": "halo_clairvoyance",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "ivory halo",
+    "description": "A strange radiance permeating your body, granting you sight beyond sight.",
+    "color": "magenta",
+    "artifact_data": { "effects_worn": [ "AEP_CLAIRVOYANCE" ] }
+  },
+  {
+    "id": "halo_shadowsnakes",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "obsidian halo",
+    "description": "A strange radiance permeating your body, summoning serpentine shadows when you are harmed.",
+    "color": "dark_gray",
+    "artifact_data": { "effects_worn": [ "AEP_SNAKES" ] }
+  },
+  {
+    "id": "halo_dampening",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "coral halo",
+    "description": "A strange radiance permeating your body, dulling the effects of flame and radiation.",
+    "color": "light_gray",
+    "artifact_data": { "effects_worn": [ "AEP_PBLUE", "AEP_EXTINGUISH" ] }
+  },
+  {
+    "id": "halo_light",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "crystal halo",
+    "description": "A strange radiance permeating your body, giving off a soft glow.",
+    "color": "white",
+    "artifact_data": { "effects_worn": [ "AEP_GLOW" ] }
+  },
+  {
     "id": "gilded_aegis",
     "type": "TOOL_ARMOR",
     "copy-from": "cloak_leather",
