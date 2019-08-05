@@ -1,0 +1,138 @@
+[
+  {
+    "type": "mutation",
+    "id": "hermit_earned_trust_1",
+    "name": "Hermit Trust 1",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_earned_trust_2",
+    "name": "Hermit Trust 2",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_stage_1",
+    "name": "Hermit Quest Stage 1",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_stage_2",
+    "name": "Hermit Quest Stage 2",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_stage_3",
+    "name": "Hermit Quest Stage 3",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "hermit_stage_4",
+    "name": "Hermit Quest Stage 4",
+    "points": 0,
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_ACID2",
+    "name": "Chaos Gift: Acid Spray",
+    "points": 3,
+    "description": "Unknown forces have granted you the power to conjure a mote of energy, that can create sprays of acid.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "CHIMERA" ],
+    "cancels": [ "SPELL_ACID" ],
+    "threshreq": [ "THRESH_CHIMERA" ],
+    "active": true,
+    "cost": 36,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_acidspray",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CLARITY2",
+    "name": "Raptor Gift: Clarity of Blood",
+    "points": 4,
+    "description": "Unknown forces have granted you the power to conjure a mote of energy that can protect against parasites and the Mycus.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "RAPTOR" ],
+    "cancels": [ "SPELL_CLARITY" ],
+    "threshreq": [ "THRESH_RAPTOR" ],
+    "active": true,
+    "cost": 48,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_clarity",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_HEAL2",
+    "name": "Prime Gift: Healing",
+    "points": 5,
+    "description": "Unknown forces have granted you the power to conjure a mote of energy, that can heal the body.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "ALPHA" ],
+    "cancels": [ "SPELL_HEAL" ],
+    "threshreq": [ "THRESH_ALPHA" ],
+    "active": true,
+    "cost": 60,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_heal",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_PLANTS2",
+    "name": "Fey Gift: Overgrowth",
+    "points": 3,
+    "description": "Unknown forces have granted you the power to conjure a mote of energy, that can cause plants to spring up from nothingness.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "ELFA" ],
+    "cancels": [ "SPELL_PLANTS" ],
+    "threshreq": [ "THRESH_ELFA" ],
+    "active": true,
+    "cost": 36,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_plants",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  }
+]

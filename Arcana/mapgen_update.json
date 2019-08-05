@@ -1,5 +1,61 @@
 [
   {
+    "type": "ter_furn_transform",
+    "id": "arcana_plants",
+    "fail_message": "Life fails to take hold in this place.",
+    "terrain": [
+      {
+        "result": [ [ "t_grass_tall", 50 ], [ "t_underbrush", 24 ], [ "t_marloss", 1 ], [ "t_tree_birch", 20 ], [ "t_tree_cherry", 5 ] ],
+        "valid_flags": [ "DIGGABLE", "FLAT" ],
+        "message": "Plant life grows wild over the ground."
+      },
+      {
+        "result": [ [ "t_grass", 3 ], [ "t_grass_long", 1 ] ],
+        "valid_flags": [ "FLAT", "ROAD" ],
+        "message": "The ground shifts and crumbles, grass growing from the cracks."
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "arcana_fire_dragonblood3",
+    "fail_message": "Nothing remains to be marked by flame.",
+    "terrain": [
+      {
+        "result": "t_grass_dead",
+        "valid_terrain": [ "t_moss", "t_grass", "t_grass_long", "t_grass_tall", "t_grass_white", "t_grass_golf" ]
+      },
+      { "result": "t_dirt", "valid_flags": [ "SHRUB" ] },
+      { "result": "t_dirt", "valid_flags": [ "TREE" ] },
+      {
+        "result": "t_dirt",
+        "//": "Reliable fungus killer, but you're not getting your terrain back.",
+        "valid_flags": [ "FUNGUS" ],
+        "message": "The fungal corruption erupts into a shower of blue embers!"
+      }
+    ],
+    "furniture": [
+      { "result": "f_null", "valid_furniture": [ "f_datura", "f_cattails", "f_lily", "f_lotus" ] },
+      { "result": "f_null", "valid_flags": [ "FLOWER" ] },
+      {
+        "result": "f_egg_sacke",
+        "valid_furniture": [ "f_egg_sackbw", "f_egg_sackcs", "f_egg_sackws" ],
+        "message": "The egg sacks swell and burst from the unearthly heat!"
+      },
+      {
+        "result": "f_null",
+        "valid_flags": [ "FUNGUS" ],
+        "message": "The fungal corruption erupts into a shower of blue embers!"
+      },
+      {
+        "result": "f_null",
+        "//": "Partial effect on mi-go terraforming, only the more recognizably alive projections are vulnerable.",
+        "valid_furniture": [ "f_alien_tendril", "f_alien_anemone", "f_alien_gasper", "f_alien_zapper", "f_alien_scar", "f_alien_table" ],
+        "message": "The unnatural outgrowths are cauterized bare, in a spray of green sparks!"
+      }
+    ]
+  },
+  {
     "type": "mapgen",
     "update_mapgen_id": "arcana_dummy",
     "method": "json",

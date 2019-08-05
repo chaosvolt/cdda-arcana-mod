@@ -1,0 +1,13 @@
+[
+  {
+    "id": "fd_veil_darkness",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "shroud of darkness", "sym": "*", "color": "dark_gray", "transparent": false }
+    ],
+    "priority": 9,
+    "half_life": "15 minutes",
+    "phase": "plasma",
+    "display_field": true
+  }
+]

@@ -1,181 +1,24 @@
 [
   {
-    "id": "fd_veil_darkness",
-    "type": "field_type",
-    "intensity_levels": [
-      { "name": "shroud of darkness", "sym": "*", "color": "dark_gray", "transparent": false }
-    ],
-    "priority": 9,
-    "half_life": "15 minutes",
-    "phase": "plasma",
-    "display_field": true
-  },
-  {
-    "id": "arcana_agile_veil",
+    "id": "arcana_aftermath_capacitance_zap",
     "type": "SPELL",
-    "name": "Arcane Blessing: Agility",
-    "description": "Using this spell will grant a temporary speed and agility-enhancing effect.  It can be used on yourself or an ally.",
-    "valid_targets": [ "self", "ally" ],
-    "flags": [ "CONCENTRATE", "NO_LEGS" ],
-    "effect": "target_attack",
-    "effect_str": "spell_agility",
-    "min_range": 0,
-    "max_range": 15,
-    "range_increment": 0.75,
-    "energy_source": "STAMINA",
-    "difficulty": 4,
-    "max_level": 20,
-    "base_casting_time": 250,
-    "final_casting_time": 125,
-    "casting_time_increment": -6.25,
-    "base_energy_cost": 3000,
-    "final_energy_cost": 1500,
-    "energy_increment": -75,
-    "min_duration": 18000,
-    "max_duration": 108000,
-    "duration_increment": 9000
-  },
-  {
-    "id": "arcana_clairvoyance_veil",
-    "type": "SPELL",
-    "name": "Arcane Blessing: Clairvoyance",
-    "description": "Using this spell will anoint you with an ivory halo, granting you sight beyond sight.",
+    "name": "Aftermath: Capacitance Zap",
+    "description": "This exists to make Capacitance zap the user.",
     "valid_targets": [ "self" ],
-    "flags": [ "CONCENTRATE", "NO_LEGS" ],
-    "effect": "spawn_item",
-    "effect_str": "halo_clairvoyance",
-    "energy_source": "STAMINA",
-    "difficulty": 6,
-    "max_level": 20,
-    "base_casting_time": 350,
-    "final_casting_time": 175,
-    "casting_time_increment": -8.75,
-    "base_energy_cost": 4200,
-    "final_energy_cost": 2100,
-    "energy_increment": -105,
-    "min_duration": 12000,
-    "max_duration": 108000,
-    "duration_increment": 4800
-  },
-  {
-    "id": "arcana_confusion_veil",
-    "type": "SPELL",
-    "name": "Arcane Blessing: Confuse Monster",
-    "description": "Using this spell will stun all hostiles in the area around you.",
-    "effect": "target_attack",
-    "valid_targets": [ "hostile", "ground" ],
-    "flags": [ "CONCENTRATE", "NO_LEGS" ],
-    "effect_str": "stunned",
-    "min_aoe": 4,
-    "max_aoe": 30,
-    "aoe_increment": 1.3,
-    "max_level": 20,
-    "difficulty": 3,
-    "energy_source": "STAMINA",
-    "base_casting_time": 200,
-    "final_casting_time": 100,
-    "casting_time_increment": -5,
-    "base_energy_cost": 2400,
-    "final_energy_cost": 1200,
-    "energy_increment": -60,
-    "min_duration": 300,
-    "max_duration": 2500,
-    "duration_increment": 110
-  },
-  {
-    "id": "arcana_shadowfield_veil",
-    "type": "SPELL",
-    "name": "Magic Sign: Conjure Shadow Field",
-    "description": "Using this spell will envelop the targeted area in lingering darkness, in addition to inflicting minor damage on enemies caught in the initial effect.",
-    "effect": "target_attack",
-    "valid_targets": [ "hostile", "ground" ],
-    "flags": [ "CONCENTRATE", "NO_LEGS" ],
-    "effect_str": "blind",
-    "min_damage": 3,
-    "max_damage": 18,
-    "damage_increment": 0.75,
-    "min_range": 6,
-    "max_range": 24,
-    "range_increment": 0.9,
-    "min_aoe": 3,
-    "max_aoe": 9,
-    "aoe_increment": 0.3,
-    "max_level": 20,
-    "difficulty": 3,
-    "base_casting_time": 200,
-    "final_casting_time": 100,
-    "casting_time_increment": -5,
-    "energy_source": "STAMINA",
-    "base_energy_cost": 2400,
-    "final_energy_cost": 1200,
-    "energy_increment": -60,
-    "min_duration": 1200,
-    "max_duration": 12000,
-    "duration_increment": 540,
-    "damage_type": "cold",
-    "field_id": "fd_veil_darkness",
-    "field_chance": 1,
-    "min_field_intensity": 1,
-    "max_field_intensity": 3,
-    "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
-  },
-  {
-    "id": "arcana_lightningcone_veil",
-    "type": "SPELL",
-    "name": "Arcane Blessing: Radiant Burst",
-    "description": "Using this spell will blast a cone-shaped area with a crackling burst of energy, striking enemies blind with divine lightning.",
-    "effect": "cone_attack",
-    "valid_targets": [ "hostile", "ground" ],
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
-    "effect_str": "blind",
-    "min_damage": 20,
-    "max_damage": 120,
-    "damage_increment": 5,
-    "min_range": 6,
-    "max_range": 36,
-    "range_increment": 1.5,
-    "min_aoe": 25,
-    "max_aoe": 75,
-    "aoe_increment": 2.5,
-    "max_level": 20,
-    "difficulty": 4,
-    "base_casting_time": 250,
-    "final_casting_time": 125,
-    "casting_time_increment": -6.25,
-    "energy_source": "FATIGUE",
-    "base_energy_cost": 3000,
-    "final_energy_cost": 1500,
-    "energy_increment": -75,
-    "min_duration": 500,
-    "max_duration": 3000,
-    "duration_increment": 125,
-    "damage_type": "electric",
-    "field_id": "fd_electricity",
-    "field_chance": 2,
-    "min_field_intensity": 1,
-    "max_field_intensity": 3,
-    "field_intensity_increment": 0.1,
-    "field_intensity_variance": 0.1
-  },
-  {
-    "id": "arcana_capacitance2",
-    "type": "SPELL",
-    "name": "Aftermath: Capacitance Rads",
-    "description": "This exists to make Capacitance irradiate the user.",
-    "valid_targets": [ "self" ],
-    "effect_str": "irradiated",
+    "effect_str": "zapped",
     "max_level": 10,
     "min_range": 0,
     "max_range": 0,
     "effect": "target_attack",
     "difficulty": 0,
-    "min_duration": 30000,
-    "max_duration": 60000,
-    "duration_increment": 3000
+    "min_duration": 4000,
+    "max_duration": 4000,
+    "min_damage": 5,
+    "max_damage": 5,
+    "damage_type": "electric"
   },
   {
-    "id": "arcana_drainlife_dragonblood2",
+    "id": "arcana_aftermath_drain_life_fatigue",
     "type": "SPELL",
     "name": "Aftermath: Drain Life Fatigue",
     "description": "This exists to potentially give Dragonblood's version of Drain Life a corruptive side effect on the area.",
@@ -194,7 +37,7 @@
     "field_intensity_variance": 0.1
   },
   {
-    "id": "arcana_flamearmor_dragonblood2",
+    "id": "arcana_aftermath_elemental_coldness",
     "type": "SPELL",
     "name": "Aftermath: Elemental Sign Coldness",
     "description": "This exists to give Elemental Sign cold damage and sap temperature from the area.",
@@ -221,7 +64,27 @@
     "field_intensity_variance": 0.1
   },
   {
-    "id": "arcana_fire_dragonblood2",
+    "id": "arcana_aftermath_infernal_flame_corruption",
+    "type": "SPELL",
+    "name": "Aftermath: Infernal Flame Corruption",
+    "description": "This exists only to add destruction of natural terrain to Infernal Flame.",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "effect_str": "arcana_fire_dragonblood3",
+    "difficulty": 0,
+    "max_level": 10,
+    "min_damage": 4,
+    "max_damage": 2,
+    "damage_increment": -0.2,
+    "min_aoe": 2,
+    "max_aoe": 4,
+    "aoe_increment": 0.2,
+    "min_range": 14,
+    "max_range": 20,
+    "range_increment": 0.6
+  },
+  {
+    "id": "arcana_aftermath_infernal_flame_field",
     "type": "SPELL",
     "name": "Aftermath: Infernal Flame Field",
     "description": "This exists to add a chance of lingering anomalous fire after Infernal Flame impacts.",
@@ -243,27 +106,7 @@
     "field_intensity_variance": 0.1
   },
   {
-    "id": "arcana_fire_dragonblood2",
-    "type": "SPELL",
-    "name": "Aftermath: Infernal Flame Corruption",
-    "description": "This exists only to add destruction of natural terrain to Infernal Flame.",
-    "valid_targets": [ "ground" ],
-    "effect": "ter_transform",
-    "effect_str": "arcana_fire_dragonblood3",
-    "difficulty": 0,
-    "max_level": 10,
-    "min_damage": 4,
-    "max_damage": 2,
-    "damage_increment": -0.2,
-    "min_aoe": 2,
-    "max_aoe": 4,
-    "aoe_increment": 0.2,
-    "min_range": 14,
-    "max_range": 20,
-    "range_increment": 0.6
-  },
-  {
-    "id": "arcana_dampening_dragonblood2",
+    "id": "arcana_aftermath_suppression_buff",
     "type": "SPELL",
     "name": "Aftermath: Suppression Buff",
     "description": "This exists to grant the long-term status effect to Suppression.",
@@ -279,7 +122,155 @@
     "duration_increment": 36000
   },
   {
-    "id": "arcana_agile",
+    "id": "arcana_blessing_agility",
+    "type": "SPELL",
+    "name": "Arcane Blessing: Agility",
+    "description": "Using this spell will grant a temporary speed and agility-enhancing effect.  It can be used on yourself or an ally.",
+    "valid_targets": [ "self", "ally" ],
+    "flags": [ "CONCENTRATE", "NO_LEGS" ],
+    "effect": "target_attack",
+    "effect_str": "spell_agility",
+    "min_range": 0,
+    "max_range": 15,
+    "range_increment": 0.75,
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "max_level": 20,
+    "base_casting_time": 250,
+    "final_casting_time": 125,
+    "casting_time_increment": -6.25,
+    "base_energy_cost": 300,
+    "final_energy_cost": 150,
+    "energy_increment": -7.5,
+    "min_duration": 18000,
+    "max_duration": 108000,
+    "duration_increment": 9000
+  },
+  {
+    "id": "arcana_blessing_clairvoyance",
+    "type": "SPELL",
+    "name": "Arcane Blessing: Clairvoyance",
+    "description": "Using this spell will anoint you with an ivory halo, granting you sight beyond sight.",
+    "valid_targets": [ "self" ],
+    "flags": [ "CONCENTRATE", "NO_LEGS" ],
+    "effect": "spawn_item",
+    "effect_str": "halo_clairvoyance",
+    "energy_source": "MANA",
+    "difficulty": 6,
+    "max_level": 20,
+    "base_casting_time": 350,
+    "final_casting_time": 175,
+    "casting_time_increment": -8.75,
+    "base_energy_cost": 420,
+    "final_energy_cost": 210,
+    "energy_increment": -10.5,
+    "min_duration": 12000,
+    "max_duration": 108000,
+    "duration_increment": 4800
+  },
+  {
+    "id": "arcana_blessing_confuse_monster",
+    "type": "SPELL",
+    "name": "Arcane Blessing: Confuse Monster",
+    "description": "Using this spell will stun all hostiles in the area around you.",
+    "effect": "target_attack",
+    "valid_targets": [ "hostile", "ground" ],
+    "flags": [ "CONCENTRATE", "NO_LEGS" ],
+    "effect_str": "stunned",
+    "min_aoe": 4,
+    "max_aoe": 30,
+    "aoe_increment": 1.3,
+    "max_level": 20,
+    "difficulty": 3,
+    "energy_source": "MANA",
+    "base_casting_time": 200,
+    "final_casting_time": 100,
+    "casting_time_increment": -5,
+    "base_energy_cost": 240,
+    "final_energy_cost": 120,
+    "energy_increment": -6,
+    "min_duration": 300,
+    "max_duration": 2500,
+    "duration_increment": 110
+  },
+  {
+    "id": "arcana_blessing_conjure_shadow_field",
+    "type": "SPELL",
+    "name": "Arcane Blessing: Conjure Shadow Field",
+    "description": "Using this spell will envelop the targeted area in lingering darkness, in addition to inflicting minor damage on enemies caught in the initial effect.",
+    "effect": "target_attack",
+    "valid_targets": [ "hostile", "ground" ],
+    "flags": [ "CONCENTRATE", "NO_LEGS" ],
+    "effect_str": "blind",
+    "min_damage": 3,
+    "max_damage": 18,
+    "damage_increment": 0.75,
+    "min_range": 6,
+    "max_range": 24,
+    "range_increment": 0.9,
+    "min_aoe": 3,
+    "max_aoe": 9,
+    "aoe_increment": 0.3,
+    "max_level": 20,
+    "difficulty": 3,
+    "base_casting_time": 200,
+    "final_casting_time": 100,
+    "casting_time_increment": -5,
+    "energy_source": "MANA",
+    "base_energy_cost": 240,
+    "final_energy_cost": 120,
+    "energy_increment": -6,
+    "min_duration": 1200,
+    "max_duration": 12000,
+    "duration_increment": 540,
+    "damage_type": "cold",
+    "field_id": "fd_veil_darkness",
+    "field_chance": 1,
+    "min_field_intensity": 1,
+    "max_field_intensity": 3,
+    "field_intensity_increment": 0.2,
+    "field_intensity_variance": 0.1
+  },
+  {
+    "id": "arcana_blessing_radiant_burst",
+    "type": "SPELL",
+    "name": "Arcane Blessing: Radiant Burst",
+    "description": "Using this spell will blast a cone-shaped area with a crackling burst of energy, striking enemies blind with divine lightning.",
+    "effect": "cone_attack",
+    "valid_targets": [ "hostile", "ground" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
+    "effect_str": "blind",
+    "min_damage": 20,
+    "max_damage": 120,
+    "damage_increment": 5,
+    "min_range": 6,
+    "max_range": 36,
+    "range_increment": 1.5,
+    "min_aoe": 25,
+    "max_aoe": 75,
+    "aoe_increment": 2.5,
+    "max_level": 20,
+    "difficulty": 4,
+    "base_casting_time": 250,
+    "final_casting_time": 125,
+    "casting_time_increment": -6.25,
+    "energy_source": "MANA",
+    "base_energy_cost": 300,
+    "final_energy_cost": 150,
+    "energy_increment": -7.5,
+    "min_duration": 500,
+    "max_duration": 3000,
+    "duration_increment": 125,
+    "damage_type": "electric",
+    "field_id": "fd_electricity",
+    "field_chance": 2,
+    "min_field_intensity": 1,
+    "max_field_intensity": 3,
+    "field_intensity_increment": 0.1,
+    "field_intensity_variance": 0.1
+  },
+  {
+    "id": "arcana_magic_agility",
     "type": "SPELL",
     "name": "Magic Sign: Agility",
     "description": "Using this spell will grant a temporary speed and agility-enhancing effect.  It can be used on yourself or an ally.",
@@ -304,15 +295,15 @@
     "duration_increment": 6000
   },
   {
-    "id": "arcana_capacitance",
+    "id": "arcana_magic_capacitance",
     "type": "SPELL",
     "//": "Note, remember this is considered a level-5 spell, until a mutation exists to use as a reference for its point cost, and later on until difficulty is assigned after arcana becomes the caster skill.",
     "name": "Magic Sign: Capacitance",
-    "description": "Using this spell will channel your energy into artifice within the body, restoring bionic energy at the cost of fatigue.  It can lead to other side effects as well.",
+    "description": "Using this spell will channel your energy into artifice within the body, restoring bionic energy at the cost of fatigue.  Doing so will shock yourself, however.",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
     "extra_effects": [
-      { "id": "arcana_capacitance", "hit_self": true, "max_level": 10 }
+      { "id": "arcana_aftermath_capacitance_zap", "hit_self": true, "max_level": 10 }
     ],
     "min_damage": 60,
     "max_damage": 120,
@@ -330,7 +321,7 @@
     "casting_time_increment": -6
   },
   {
-    "id": "arcana_clairvoyance",
+    "id": "arcana_magic_clairvoyance",
     "type": "SPELL",
     "name": "Magic Sign: Clairvoyance",
     "description": "Using this spell will anoint you with an ivory halo, granting you sight beyond sight.",
@@ -352,7 +343,7 @@
     "duration_increment": 7200
   },
   {
-    "id": "arcana_clarity",
+    "id": "arcana_magic_clarity_blood",
     "type": "SPELL",
     "name": "Magic Sign: Clarity of Blood",
     "description": "Using this spell will grant protection against parasites and the Mycus.  It can be used on yourself or an ally.",
@@ -377,7 +368,7 @@
     "duration_increment": 12000
   },
   {
-    "id": "arcana_confusion",
+    "id": "arcana_magic_confuse_monster",
     "type": "SPELL",
     "name": "Magic Sign: Confuse Monster",
     "description": "Using this spell will stun all hostiles in the area around you.",
@@ -402,7 +393,7 @@
     "duration_increment": 150
   },
   {
-    "id": "arcana_acidspray",
+    "id": "arcana_magic_conjure_acid",
     "type": "SPELL",
     "name": "Magic Sign: Conjure Acid",
     "description": "Using this spell will conjure a splash of acid at the point targeted.",
@@ -440,7 +431,7 @@
     "field_intensity_variance": 0.1
   },
   {
-    "id": "arcana_fire",
+    "id": "arcana_magic_conjure_flame",
     "type": "SPELL",
     "name": "Magic Sign: Conjure Flame",
     "description": "Using this spell will conjure an eruption of flames at the location targeted.",
@@ -475,7 +466,7 @@
     "field_intensity_variance": 0.1
   },
   {
-    "id": "arcana_dampening",
+    "id": "arcana_magic_dampening",
     "type": "SPELL",
     "name": "Magic Sign: Dampening",
     "description": "Using this spell will anoint you with a coral halo, granting a temporary effect that will sap energy from fires, and draw radiation from your body.",
@@ -497,7 +488,7 @@
     "duration_increment": 12000
   },
   {
-    "id": "arcana_flamearmor",
+    "id": "arcana_magic_flame_armor",
     "type": "SPELL",
     "name": "Magic Sign: Flame Armor",
     "description": "Using this spell will grant temporary resistance to heat and smoke.  Direct contact with flame will still cause harm, however.  It can be used on yourself or an ally.",
@@ -522,7 +513,7 @@
     "duration_increment": 12000
   },
   {
-    "id": "arcana_free_action",
+    "id": "arcana_magic_free_action",
     "type": "SPELL",
     "name": "Magic Sign: Free Action",
     "description": "Using this spell will grant protection against paralytic effects and other hindrances.  It can be used on yourself or an ally.",
@@ -547,7 +538,7 @@
     "duration_increment": 12000
   },
   {
-    "id": "arcana_heal",
+    "id": "arcana_magic_healing",
     "type": "SPELL",
     "name": "Magic Sign: Healing",
     "description": "Using this spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.  It can be used on yourself or an ally.",
@@ -574,7 +565,7 @@
     "energy_source": "FATIGUE"
   },
   {
-    "id": "arcana_insight",
+    "id": "arcana_magic_insight",
     "type": "SPELL",
     "name": "Magic Sign: Insight",
     "description": "Using this spell will grant a temporary boost to perception.  It can be used on yourself or an ally.",
@@ -599,7 +590,7 @@
     "duration_increment": 6000
   },
   {
-    "id": "arcana_light",
+    "id": "arcana_magic_light",
     "type": "SPELL",
     "name": "Magic Sign: Light",
     "description": "Using this spell will anoint you with a crystal halo, illuminating your surroundings while the effect is active.",
@@ -621,7 +612,7 @@
     "duration_increment": 24000
   },
   {
-    "id": "arcana_elecresist",
+    "id": "arcana_magic_lightning_ward",
     "type": "SPELL",
     "name": "Magic Sign: Lightning Ward",
     "description": "Using this spell will anoint you with an amber halo, granting you immunity to lightning.",
@@ -643,7 +634,7 @@
     "duration_increment": 12000
   },
   {
-    "id": "arcana_strength",
+    "id": "arcana_magic_might",
     "type": "SPELL",
     "name": "Magic Sign: Might",
     "description": "Using this spell will grant a temporary boost to strength.  It can be used on yourself or an ally.",
@@ -668,7 +659,29 @@
     "duration_increment": 6000
   },
   {
-    "id": "arcana_plants",
+    "id": "arcana_magic_open_lock",
+    "type": "SPELL",
+    "name": "Magic Sign: Open Lock",
+    "description": "Using this spell will conjure a mote of artifice that can be used to open locked doors.",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
+    "effect": "spawn_item",
+    "effect_str": "spell_lockpick",
+    "energy_source": "FATIGUE",
+    "difficulty": 0,
+    "max_level": 10,
+    "base_casting_time": 280,
+    "final_casting_time": 210,
+    "casting_time_increment": -7,
+    "base_energy_cost": 70,
+    "final_energy_cost": 56,
+    "energy_increment": -1.4,
+    "min_duration": 18000,
+    "max_duration": 90000,
+    "duration_increment": 7200
+  },
+  {
+    "id": "arcana_magic_overgrowth",
     "type": "SPELL",
     "name": "Magic Sign: Overgrowth",
     "description": "Using this spell will conjure an eruption of the living forest, at the location you target.",
@@ -696,7 +709,7 @@
     "energy_increment": -0.8
   },
   {
-    "id": "arcana_poisonarmor",
+    "id": "arcana_magic_poison_armor",
     "type": "SPELL",
     "name": "Magic Sign: Poison Armor",
     "description": "Using this spell will grant a blessing that protects against toxic gas and other forms of poison.  It can be used on yourself or an ally.",
@@ -721,7 +734,7 @@
     "duration_increment": 12000
   },
   {
-    "id": "arcana_shadowsnakes",
+    "id": "arcana_magic_serpentine_shield",
     "type": "SPELL",
     "name": "Magic Sign: Serpentine Shield",
     "description": "Using this spell will anoint you with an obsidian halo, granting a temporary defensive effect that will summon shadowy serpents to aid you.",
@@ -743,7 +756,7 @@
     "duration_increment": 12000
   },
   {
-    "id": "arcana_lightning",
+    "id": "arcana_magic_shockstorm",
     "type": "SPELL",
     "name": "Magic Sign: Shockstorm",
     "description": "Using this spell will call forth lightning all around you, harming any hostiles that are close enough.",
@@ -778,7 +791,7 @@
     "field_intensity_variance": 0.1
   },
   {
-    "id": "arcana_summondog",
+    "id": "arcana_magic_summon_skeletal_dog",
     "type": "SPELL",
     "name": "Magic Sign: Summon Skeletal Dog",
     "description": "Using this spell will summon an animalistic revenant, which will be loyal but not permanent.",
@@ -805,7 +818,7 @@
     "duration_increment": 432000
   },
   {
-    "id": "arcana_summonshadow",
+    "id": "arcana_magic_summon_shadow",
     "type": "SPELL",
     "name": "Magic Sign: Summon Shadow",
     "description": "Using this spell will summon a living shadow, which will be loyal but not permanent.",
@@ -832,7 +845,7 @@
     "duration_increment": 432000
   },
   {
-    "id": "arcana_summonshadowsnake",
+    "id": "arcana_summon_shadow_snake",
     "type": "SPELL",
     "name": "Magic Sign: Summon Shadow Snake",
     "description": "Using this spell will summon a living shadow in serpentine form, which will be loyal but not permanent.",
@@ -859,7 +872,7 @@
     "duration_increment": 432000
   },
   {
-    "id": "arcana_adrenaline",
+    "id": "arcana_magic_surge_adrenaline",
     "type": "SPELL",
     "name": "Magic Sign: Surge of Adrenaline",
     "description": "Using this spell will provoke a rush of adrenaline for urgent situations, albeit with the same drawbacks afterward.  It can be used on yourself or an ally.",
@@ -884,7 +897,7 @@
     "energy_source": "FATIGUE"
   },
   {
-    "id": "arcana_cleric",
+    "id": "arcana_magic_ward_against_evil",
     "type": "SPELL",
     "name": "Magic Sign: Ward Against Evil",
     "description": "Using this spell will grant a blessing that protects against certain anomalous threats.  It can be used on yourself or an ally.",
@@ -909,13 +922,13 @@
     "duration_increment": 12000
   },
   {
-    "id": "arcana_drainlife_dragonblood",
+    "id": "arcana_mark_drain_life",
     "type": "SPELL",
     "name": "Sanguine Mark: Drain Life",
     "description": "Using this spell will anoint you with a horned halo, granting a life-draining effect to your attacks.  Use it well, lest the price be greater than the reward.",
     "valid_targets": [ "self" ],
     "extra_effects": [
-      { "id": "arcana_drainlife_dragonblood2", "hit_self": true, "max_level": 10 }
+      { "id": "arcana_aftermath_drain_life_fatigue", "hit_self": true, "max_level": 10 }
     ],
     "flags": [ "SOMATIC" ],
     "effect": "spawn_item",
@@ -934,14 +947,14 @@
     "duration_increment": 2400
   },
   {
-    "id": "arcana_flamearmor_dragonblood",
+    "id": "arcana_mark_elemental_sign",
     "type": "SPELL",
     "name": "Sanguine Mark: Elemental Sign",
     "description": "Using this spell will grant temporary resistance to heat and smoke, along with sapping heat from all around you.  Direct contact with flame will still cause harm, however.  It can only be used on yourself.",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC" ],
     "extra_effects": [
-      { "id": "arcana_flamearmor_dragonblood2", "hit_self": false, "max_level": 10 }
+      { "id": "arcana_aftermath_elemental_coldness", "hit_self": false, "max_level": 10 }
     ],
     "effect": "target_attack",
     "effect_str": "heat_ward",
@@ -961,7 +974,7 @@
     "duration_increment": 6000
   },
   {
-    "id": "arcana_fire_dragonblood",
+    "id": "arcana_mark_infernal_flame",
     "type": "SPELL",
     "name": "Sanguine Mark: Infernal Flame",
     "description": "Using this spell will conjure an eruption of hellfire at the location targeted, inflicting horrific burns and leaving a permanent scar upon the land.",
@@ -969,8 +982,8 @@
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "LOUD", "SOMATIC" ],
     "extra_effects": [
-      { "id": "arcana_fire_dragonblood2", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_fire_dragonblood3", "hit_self": false, "max_level": 10 }
+      { "id": "arcana_aftermath_infernal_flame_corruption", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_infernal_flame_field", "hit_self": false, "max_level": 10 }
     ],
     "min_damage": 14,
     "max_damage": 20,
@@ -1003,7 +1016,7 @@
     "field_intensity_variance": 0.1
   },
   {
-    "id": "arcana_strength_dragonblood",
+    "id": "arcana_mark_might",
     "type": "SPELL",
     "name": "Sanguine Mark: Might",
     "description": "Using this spell will grant a temporary boost to strength.  It can only be used on yourself.",
@@ -1027,7 +1040,7 @@
     "duration_increment": 2000
   },
   {
-    "id": "arcana_clarity_dragonblood",
+    "id": "arcana_mark_revenant_blood",
     "type": "SPELL",
     "name": "Sanguine Mark: Revenant Blood",
     "description": "Using this spell will grant protection against all pestilence infesting food and water, and purge the influence of the Mycus.  The body will burn through its reserves faster, however.  It can only be used on yourself.",
@@ -1051,10 +1064,10 @@
     "duration_increment": 6000
   },
   {
-    "id": "arcana_summonwyrm_dragonblood",
+    "id": "arcana_mark_summon_dark_wyrm",
     "type": "SPELL",
     "name": "Sanguine Mark: Summon Dark Wyrm",
-    "description": "Using this spell will summon a dark wyrm.  Although it will be permanent, whether it will obey you is completely up to chance.",
+    "description": "Using this spell will summon a dark wyrm.  Although it will be permanent at maximum power, whether it will obey you is completely up to chance.",
     "valid_targets": [ "ground" ],
     "flags": [ "SOMATIC", "PERMANENT", "HOSTILE_50" ],
     "effect": "summon",
@@ -1075,10 +1088,10 @@
     "energy_increment": -0.6
   },
   {
-    "id": "arcana_summonfiend_dragonblood",
+    "id": "arcana_mark_summon_fiend",
     "type": "SPELL",
     "name": "Sanguine Mark: Summon Fiend",
-    "description": "Using this spell will summon an ashen revenant.  Although it will be permanent, whether it will obey you is completely up to chance.",
+    "description": "Using this spell will summon an ashen revenant.  Although it will be permanent at maximum power, whether it will obey you is completely up to chance.",
     "valid_targets": [ "ground" ],
     "flags": [ "SOMATIC", "PERMANENT", "HOSTILE_50" ],
     "effect": "summon",
@@ -1099,10 +1112,10 @@
     "energy_increment": -0.5
   },
   {
-    "id": "arcana_summonjabberwock_dragonblood",
+    "id": "arcana_mark_summon_jabberwock",
     "type": "SPELL",
     "name": "Sanguine Mark: Summon Jabberwock",
-    "description": "Using this spell will summon a golem woven of flesh.  Although it will be permanent, whether it will obey you is completely up to chance.",
+    "description": "Using this spell will summon a golem woven of flesh.  Although it will be permanent at maximum power, whether it will obey you is completely up to chance.",
     "valid_targets": [ "ground" ],
     "flags": [ "SOMATIC", "PERMANENT", "HOSTILE_50" ],
     "effect": "summon",
@@ -1123,14 +1136,14 @@
     "energy_increment": -0.7
   },
   {
-    "id": "arcana_dampening_dragonblood",
+    "id": "arcana_mark_suppression",
     "type": "SPELL",
     "name": "Sanguine Mark: Suppression",
     "description": "Using this spell will anoint you with a coral halo, granting a temporary effect that will sap energy from fires, and draw radiation from your body.   Moreover, it will dull the fire within you, reducing how quickly it taxes your body.",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC" ],
     "extra_effects": [
-      { "id": "arcana_dampening_dragonblood2", "hit_self": true, "max_level": 10 }
+      { "id": "arcana_aftermath_suppression_buff", "hit_self": true, "max_level": 10 }
     ],
     "effect": "spawn_item",
     "effect_str": "halo_dampening",
@@ -1148,7 +1161,7 @@
     "duration_increment": 8000
   },
   {
-    "id": "arcana_adrenaline_dragonblood",
+    "id": "arcana_mark_surge_adrenaline",
     "type": "SPELL",
     "name": "Sanguine Mark: Surge of Adrenaline",
     "description": "Using this spell will provoke a rush of adrenaline for urgent situations, albeit with the same drawbacks afterward.  It can only be used on yourself.",
@@ -1170,160 +1183,5 @@
     "max_duration": 150000,
     "duration_increment": 3000,
     "energy_source": "HP"
-  },
-  {
-    "type": "ter_furn_transform",
-    "id": "arcana_plants",
-    "fail_message": "Life fails to take hold in this place.",
-    "terrain": [
-      {
-        "result": [ [ "t_grass_tall", 50 ], [ "t_underbrush", 24 ], [ "t_marloss", 1 ], [ "t_tree_birch", 20 ], [ "t_tree_cherry", 5 ] ],
-        "valid_flags": [ "DIGGABLE", "FLAT" ],
-        "message": "Plant life grows wild over the ground."
-      },
-      {
-        "result": [ [ "t_grass", 3 ], [ "t_grass_long", 1 ] ],
-        "valid_flags": [ "FLAT", "ROAD" ],
-        "message": "The ground shifts and crumbles, grass growing from the cracks."
-      }
-    ]
-  },
-  {
-    "type": "ter_furn_transform",
-    "id": "arcana_fire_dragonblood3",
-    "fail_message": "Nothing remains to be marked by flame.",
-    "terrain": [
-      {
-        "result": "t_grass_dead",
-        "valid_terrain": [ "t_moss", "t_grass", "t_grass_long", "t_grass_tall", "t_grass_white", "t_grass_golf" ]
-      },
-      {
-        "result": "t_dirt",
-        "valid_flags": [ "SHRUB" ]
-      },
-      {
-        "result": "t_dirt",
-        "valid_flags": [ "TREE" ]
-      },
-      {
-        "result": "t_dirt",
-        "//": "Reliable fungus killer, but you're not getting your terrain back.",
-        "valid_flags": [ "FUNGUS" ],
-        "message": "The fungal corruption erupts into a shower of blue embers!"
-      }
-    ],
-    "furniture": [
-      {
-        "result": "f_null",
-        "valid_furniture": [ "f_datura", "f_cattails", "f_lily", "f_lotus" ]
-      },
-      {
-        "result": "f_null",
-        "valid_flags": [ "FLOWER" ]
-      },
-      {
-        "result": "f_egg_sacke",
-        "valid_furniture": [ "f_egg_sackbw", "f_egg_sackcs", "f_egg_sackws" ],
-        "message": "The egg sacks swell and burst from the unearthly heat!"
-      },
-      {
-        "result": "f_null",
-        "valid_flags": [ "FUNGUS" ],
-        "message": "The fungal corruption erupts into a shower of blue embers!"
-      },
-      {
-        "result": "f_null",
-        "//": "Partial effect on mi-go terraforming, only the more recognizably alive projections are vulnerable.",
-        "valid_furniture": [ "f_alien_tendril", "f_alien_anemone", "f_alien_gasper", "f_alien_zapper", "f_alien_scar", "f_alien_table" ],
-        "message": "The unnatural outgrowths are cauterized bare, in a spray of green sparks!"
-      }
-    ]
-  },
-  {
-    "id": "halo_elecresist",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "amber halo",
-    "description": "A strange radiance permeating your body, protecting you from lightning.",
-    "color": "light_gray",
-    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY" ] }
-  },
-  {
-    "id": "halo_clairvoyance",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "ivory halo",
-    "description": "A strange radiance permeating your body, granting you sight beyond sight.",
-    "color": "magenta",
-    "artifact_data": { "effects_worn": [ "AEP_CLAIRVOYANCE" ] }
-  },
-  {
-    "id": "halo_shadowsnakes",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "obsidian halo",
-    "description": "A strange radiance permeating your body, summoning serpentine shadows when you are harmed.",
-    "color": "dark_gray",
-    "artifact_data": { "effects_worn": [ "AEP_SNAKES" ] }
-  },
-  {
-    "id": "halo_dampening",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "coral halo",
-    "description": "A strange radiance permeating your body, dulling the effects of flame and radiation.",
-    "color": "light_gray",
-    "artifact_data": { "effects_worn": [ "AEP_PBLUE", "AEP_EXTINGUISH" ] }
-  },
-  {
-    "id": "halo_light",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "crystal halo",
-    "description": "A strange radiance permeating your body, giving off a soft glow.",
-    "color": "white",
-    "artifact_data": { "effects_worn": [ "AEP_GLOW" ] }
-  },
-  {
-    "type": "effect_type",
-    "id": "dragonblood_clarity",
-    "name": [ "Revenant Blood" ],
-    "desc": [ "Immunity to food poisoning, parasites, and fungus.  Increased hunger and thirst gain." ],
-    "resist_effect": "talisman_warding",
-    "remove_message": "The protective effect of your sanguine mark fades, leaving a momentary itch in your veins.",
-    "blocks_effects": [ "nausea", "poison", "badpoison", "foodpoison", "bloodworms", "paincysts", "brainworms", "tapeworm", "spores", "fungus" ],
-    "decay_messages": [ [ "The protective magic flowing through your blood is starting to wane.", "bad" ] ],
-    "rating": "good",
-    "max_intensity": 20,
-    "int_dur_factor": "1 m",
-    "base_mods": { "hunger_min": [ 1 ], "hunger_chance": [ 18, 36 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 36, 12 ], "health_min": [ 1 ], "health_chance": [ 6 ] }
-  },
-  {
-    "type": "effect_type",
-    "id": "arcane_healing_side_effects",
-    "resist_effect": "talisman_warding",
-    "removes_effects": [ "bleed" ],
-    "max_duration": "1 s",
-    "base_mods": {
-      "health_min": [ -5 ],
-      "health_chance": [ 1, 2 ],
-      "pain_min": [ 5 ],
-      "pain_chance": [ 10, 20 ],
-      "vomit_chance": [ 100, 200 ]
-    }
-  },
-  {
-    "type": "effect_type",
-    "id": "arcana_suppression",
-    "name": [ "Suppressed Fire" ],
-    "desc": [ "Reduces hunger and thirst gain, hinders stamina regen." ],
-    "resist_effect": "talisman_warding",
-    "remove_message": "The warmth within your body flares up as the suppression effect fades.",
-    "blocks_effects": [ "nausea", "poison", "badpoison", "foodpoison", "bloodworms", "paincysts", "brainworms", "tapeworm", "spores", "fungus" ],
-    "decay_messages": [ [ "The magic suppressing your inner fire is waning.", "bad" ] ],
-    "rating": "good",
-    "max_intensity": 120,
-    "int_dur_factor": "1 m",
-    "base_mods": { "hunger_min": [ -1 ], "hunger_tick": [ 300 ], "thirst_min": [ -1 ], "thirst_tick": [ 300 ], "health_min": [ -1 ], "health_tick": [ 600 ], "stamina_min": [ -1 ], "stamina_tick": [ 10 ] }
   }
 ]
