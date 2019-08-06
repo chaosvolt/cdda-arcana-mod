@@ -297,7 +297,6 @@
   {
     "id": "arcana_magic_capacitance",
     "type": "SPELL",
-    "//": "Note, remember this is considered a level-5 spell, until a mutation exists to use as a reference for its point cost, and later on until difficulty is assigned after arcana becomes the caster skill.",
     "name": "Magic Sign: Capacitance",
     "description": "Using this spell will channel your energy into artifice within the body, restoring bionic energy at the cost of fatigue.  Doing so will shock yourself, however.",
     "valid_targets": [ "self" ],
