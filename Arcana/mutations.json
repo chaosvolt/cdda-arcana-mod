@@ -1615,6 +1615,6 @@
     "purifiable": false,
     "profession": true,
     "//": "Internal math note: treat value of Summon Shadow as 5, and Summon Shadow Snake as 4.",
-    "spells_learned": [ [ "arcana_magic_summon_shadow", 1 ], [ "arcana_summon_shadow_snake", 1 ] ]
+    "spells_learned": [ [ "arcana_magic_summon_shadow", 1 ], [ "arcana_magic_summon_shadow_snake", 1 ] ]
   }
 ]
