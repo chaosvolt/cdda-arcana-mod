@@ -45,6 +45,15 @@
     "artifact_data": { "effects_worn": [ "AEP_GLOW" ] }
   },
   {
+    "id": "halo_drainlife",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "horned halo",
+    "description": "A strange radiance permeating your body, granting you a life-draining touch.",
+    "color": "dark_gray",
+    "artifact_data": { "effects_worn": [ "AEP_SAP_LIFE" ] }
+  },
+  {
     "id": "gilded_aegis",
     "type": "TOOL_ARMOR",
     "copy-from": "cloak_leather",

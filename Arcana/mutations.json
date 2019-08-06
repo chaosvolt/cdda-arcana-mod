@@ -303,7 +303,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "AGILITY" ],
-    "spells_learned": [ [ "arcana_magic_agility", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_agility", 1 ] ]
   },
   {
     "type": "mutation",
@@ -314,7 +314,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "CLAIRVOYANCE" ],
-    "spells_learned": [ [ "arcana_magic_clairvoyance", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_clairvoyance", 1 ] ]
   },
   {
     "type": "mutation",
@@ -325,7 +325,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "CLARITY" ],
-    "spells_learned": [ [ "arcana_magic_clarity_blood", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_clarity_blood", 1 ] ]
   },
   {
     "type": "mutation",
@@ -336,7 +336,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "CONFUSE" ],
-    "spells_learned": [ [ "arcana_magic_confuse_monster", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_confuse_monster", 1 ] ]
   },
   {
     "type": "mutation",
@@ -347,7 +347,17 @@
     "valid": false,
     "purifiable": false,
     "category": [ "ACIDSPRAY" ],
-    "spells_learned": [ [ "arcana_magic_conjure_acid", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_conjure_acid", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_DAMPENING",
+    "name": "Magic Sign: Dampening",
+    "points": 2,
+    "description": "Powers from beyond have granted you the power to stave off radiation, and extinguish flames in your wake.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_dampening", 1 ] ]
   },
   {
     "type": "mutation",
@@ -357,7 +367,7 @@
     "description": "Powers from beyond have granted you the power to conjure a burst of flame, where you command.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "spells_learned": [ [ "arcana_magic_conjure_flame", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_conjure_flame", 1 ] ]
   },
   {
     "type": "mutation",
@@ -368,7 +378,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "FLAMEARMOR" ],
-    "spells_learned": [ [ "arcana_magic_flame_armor", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_flame_armor", 1 ] ]
   },
   {
     "type": "mutation",
@@ -379,7 +389,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "FREEACTION" ],
-    "spells_learned": [ [ "arcana_magic_free_action", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_free_action", 1 ] ]
   },
   {
     "type": "mutation",
@@ -390,7 +400,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "HEAL" ],
-    "spells_learned": [ [ "arcana_magic_healing", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_healing", 1 ] ]
   },
   {
     "type": "mutation",
@@ -401,7 +411,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "INSIGHT" ],
-    "spells_learned": [ [ "arcana_magic_insight", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_insight", 1 ] ]
   },
   {
     "type": "mutation",
@@ -411,7 +421,7 @@
     "description": "Powers from beyond have granted you the power to conjure a temporary aura of illumination.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "spells_learned": [ [ "arcana_magic_light", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_light", 1 ] ]
   },
   {
     "type": "mutation",
@@ -422,7 +432,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "ELECRESIST" ],
-    "spells_learned": [ [ "arcana_magic_lightning_ward", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_lightning_ward", 1 ] ]
   },
   {
     "type": "mutation",
@@ -433,7 +443,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "MIGHT" ],
-    "spells_learned": [ [ "arcana_magic_might", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_might", 1 ] ]
   },
   {
     "type": "mutation",
@@ -443,7 +453,7 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can be used to open locked doors.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "spells_learned": [ [ "arcana_magic_open_lock", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_open_lock", 1 ] ]
   },
   {
     "type": "mutation",
@@ -454,7 +464,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "OVERGROWTH" ],
-    "spells_learned": [ [ "arcana_magic_overgrowth", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_overgrowth", 1 ] ]
   },
   {
     "type": "mutation",
@@ -464,7 +474,7 @@
     "description": "Powers from beyond have granted you power, that can offer temporary protection from toxic gas and other poisons.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "spells_learned": [ [ "arcana_magic_poison_armor", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_poison_armor", 1 ] ]
   },
   {
     "type": "mutation",
@@ -476,7 +486,7 @@
     "purifiable": false,
     "//": "ID for INVIS retained to not break stuff.",
     "category": [ "INVIS" ],
-    "spells_learned": [ [ "arcana_magic_serpentine_shield", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_serpentine_shield", 1 ] ]
   },
   {
     "type": "mutation",
@@ -487,7 +497,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "LIGHTNING" ],
-    "spells_learned": [ [ "arcana_magic_shockstorm", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_shockstorm", 1 ] ]
   },
   {
     "type": "mutation",
@@ -497,7 +507,7 @@
     "description": "Powers from beyond have granted you the power to summon a skeletal dog.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
   },
   {
     "type": "mutation",
@@ -508,7 +518,7 @@
     "description": "Powers from beyond have granted you the power to provoke an uplifting rush through the body.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "spells_learned": [ [ "arcana_magic_surge_adrenaline", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_surge_adrenaline", 1 ] ]
   },
   {
     "type": "mutation",
@@ -519,128 +529,75 @@
     "valid": false,
     "purifiable": false,
     "category": [ "CLERIC" ],
-    "spells_learned": [ [ "arcana_magic_ward_against_evil", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_ward_against_evil", 1 ] ]
   },
   {
     "type": "mutation",
-    "id": "SPELL_DRAIN_DRAGONBLOOD",
-    "name": "Sanguine Mark: Drain Life",
-    "points": 2,
-    "description": "Inhuman power has granted you the ability to feed off the energy of enemies, yielding a temporary life-draining effect.  Caution should be used, as the price is blood as well.  (( Remember to bind the \"spellcasting\" key! ))",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_drain_life", 0 ] ]
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_FLAMEARMOR_DRAGONBLOOD",
-    "name": "Sanguine Mark: Elemental Sign",
-    "points": 5,
-    "description": "Inhuman power has granted you the ability to safeguard against heat and smoke.  Direct contact with flame will still harm you.  (( Remember to bind the \"spellcasting\" key! ))",
-    "valid": false,
-    "purifiable": false,
-    "prereqs": [ "ARCANA_FIREAFFINITY" ],
-    "category": [ "DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_elemental_sign", 0 ] ]
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_FIRE_DRAGONBLOOD",
-    "name": "Sanguine Mark: Infernal Flame",
-    "points": 3,
-    "description": "Inhuman power has granted you the ability to conjure a burst of unholy flame, marking the land where you command.  (( Remember to bind the \"spellcasting\" key! ))",
+    "//": "Note: value of Elemental Sign is 5, and value of Suppression is 2.",
+    "id": "SPELL_EMBERS_DRAGONBLOOD",
+    "name": "Mark of Embers",
+    "points": 7,
+    "description": "Inhuman power has granted you the ability to manipulate your elemental nature, including guarding further against heat as well as suppressing your inner fire.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
+    "prereqs2": [ "ARCANA_FIREAFFINITY" ],
     "category": [ "DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_infernal_flame", 0 ] ]
+    "spells_learned": [ [ "arcana_mark_elemental_sign", 1 ], [ "arcana_mark_suppression", 1 ] ]
   },
   {
     "type": "mutation",
-    "id": "SPELL_STRENGTH_DRAGONBLOOD",
-    "name": "Sanguine Mark: Might",
-    "points": 5,
-    "description": "Inhuman power has granted you the ability to provide a temporary strength-enhancing effect.  (( Remember to bind the \"spellcasting\" key! ))",
+    "//": "Note: value of Might is 5, and value of Revenant Blood is 4.",
+    "id": "SPELL_INSTINCT_DRAGONBLOOD",
+    "name": "Mark of Instinct",
+    "points": 9,
+    "description": "Inhuman power has granted you the abilities pertaining to your inhuman nature, including a strength-enhancing spell, along with the ability to guard against parasites or other hazards.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "leads_to": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_might", 0 ] ]
+    "spells_learned": [ [ "arcana_mark_might", 1 ], [ "arcana_mark_revenant_blood", 1 ] ]
   },
   {
     "type": "mutation",
-    "id": "SPELL_CLARITY_DRAGONBLOOD",
-    "name": "Sanguine Mark: Revenant Blood",
-    "points": 4,
-    "description": "Inhuman power has granted you the ability to guard yourself against The Mycus and other parasites, along with protecting against rotten meat and stagnant water.  (( Remember to bind the \"spellcasting\" key! ))",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_revenant_blood", 0 ] ]
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_SUMMONWYRM",
-    "name": "Sanguine Mark: Summon Dark Wyrm",
-    "points": 5,
-    "description": "Inhuman power has granted you the ability to summon a dark wyrm.  (( Remember to bind the \"spellcasting\" key! ))",
-    "valid": false,
-    "purifiable": false,
-    "prereqs": [ "SPELL_SUMMONFIEND" ],
-    "category": [ "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_summon_dark_wyrm", 0 ] ]
-  },
-  {
-    "type": "mutation",
+    "//": "ID retained to reduce redundancy and avoid load errors.  Note: value of Infernal Flame is 3, and value of Summon Fiend is 4.",
     "id": "SPELL_SUMMONFIEND",
-    "name": "Sanguine Mark: Summon Fiend",
-    "points": 4,
-    "description": "Inhuman power has granted you the ability to summon a fiend.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name": "Mark of Hellfire",
+    "points": 7,
+    "description": "Inhuman power has granted you unnatural abilities, the power to conjure unholy flames and the power to summon ashen undead.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "leads_to": [ "SPELL_SUMMONJABBERWOCK", "SPELL_SUMMONWYRM" ],
+    "leads_to": [ "SPELL_SUMMONWYRM" ],
     "category": [ "DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_rsummon_fiend", 0 ] ]
+    "spells_learned": [ [ "arcana_mark_infernal_flame", 1 ], [ "arcana_mark_summon_fiend", 1 ] ]
   },
   {
     "type": "mutation",
-    "id": "SPELL_SUMMONJABBERWOCK",
-    "name": "Sanguine Mark: Summon Jabberwock",
-    "points": 6,
-    "description": "Inhuman power has granted you the ability to summon a jabberwock.  (( Remember to bind the \"spellcasting\" key! ))",
+    "//": "ID retained to reduce redundancy and avoid load errors.  Note: value of Summon Dark Wyrm is 5, and value of Summon Jabberwock is 6",
+    "id": "SPELL_SUMMONWYRM",
+    "name": "Mark of The Beyond",
+    "points": 11,
+    "description": "Inhuman power has granted you unnatural abilities, allowing you to summon strange creatures woven from the Beyond.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONFIEND" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_summon_jabberwock", 0 ] ]
+    "spells_learned": [ [ "arcana_mark_summon_dark_wyrm", 1 ], [ "arcana_mark_summon_jabberwock", 1 ] ]
   },
   {
     "type": "mutation",
-    "id": "SPELL_DAMPENING",
-    "name": "Sanguine Mark: Suppression",
-    "points": 2,
-    "description": "Inhuman power has granted you the ability to stave of radiation and flame, along with dulling the side effects of your biology.  (( Remember to bind the \"spellcasting\" key! ))",
+    "//": "Note: Value of Drain Life is 2, and value of Surge of Adrenaline is also 2.",
+    "id": "SPELL_HUNT_DRAGONBLOOD",
+    "name": "Mark of The Hunt",
+    "points": 4,
+    "description": "Inhuman power has granted you abilities to further hone your lethality, in the form of life-draining magic and the ability to spark a surge of adrenaline at will.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
-    "category": [ "DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_suppression", 0 ] ]
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_SURGE_ADRENALINE_DRAGONBLOOD",
-    "name": "Sanguine Mark: Surge of Adrenaline",
-    "points": 2,
-    "description": "Inhuman power has granted you the ability to provoke an uplifting rush through the body.  (( Remember to bind the \"spellcasting\" key! ))",
-    "valid": false,
-    "purifiable": false,
-    "prereqs": [ "SPELL_STRENGTH_DRAGONBLOOD" ],
+    "prereqs": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_surge_adrenaline", 0 ] ]
+    "spells_learned": [ [ "arcana_mark_drain_life", 1 ], [ "arcana_mark_surge_adrenaline", 1 ] ]
   },
   {
     "type": "mutation",
@@ -1219,7 +1176,6 @@
     "description": "Your body feels abnormally comfortable around heat and flame, letting you tolerate its heat for longer, and reducing damage from fire.",
     "valid": false,
     "purifiable": false,
-    "leads_to": [ "SPELL_FLAMEARMOR_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "prereqs": [ "ARCANA_INNERFIRE" ],
     "armor": [ { "parts": "ALL", "heat": 10 } ]
@@ -1256,7 +1212,6 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERHEAT" ],
-    "leads_to": [ "SPELL_FIRE_DRAGONBLOOD", "SPELL_DAMPENING" ],
     "changes_to": [ "ARCANA_DRAGONFIRE" ],
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "METABOLISM" ],
@@ -1282,7 +1237,6 @@
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "prereqs2": [ "CARNIVORE" ],
     "category": [ "DRAGONBLOOD" ],
-    "leads_to": [ "SPELL_FIRE_DRAGONBLOOD", "SPELL_DAMPENING" ],
     "types": [ "METABOLISM" ],
     "metabolism_modifier": 1.25,
     "thirst_modifier": 1.25,
@@ -1564,12 +1518,9 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [
-      "SPELL_FLAMEARMOR_DRAGONBLOOD",
-      "SPELL_FIRE_DRAGONBLOOD",
-      "SPELL_STRENGTH_DRAGONBLOOD",
-      "SPELL_CLARITY_DRAGONBLOOD",
+      "SPELL_EMBERS_DRAGONBLOOD",
       "SPELL_SUMMONFIEND",
-      "SPELL_DAMPENING"
+      "SPELL_INSTINCT_DRAGONBLOOD"
     ],
     "prereqs2": [ "ANIMALDISCORD" ],
     "category": [ "DRAGONBLOOD" ],
@@ -1622,7 +1573,7 @@
     "purifiable": false,
     "profession": true,
     "//": "Internal math note: treat value of Capacitance as 5.",
-    "spells_learned": [ [ "arcana_magic_capacitance", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_capacitance", 1 ] ]
   },
   {
     "type": "mutation",
@@ -1664,6 +1615,6 @@
     "purifiable": false,
     "profession": true,
     "//": "Internal math note: treat value of Summon Shadow as 5, and Summon Shadow Snake as 4.",
-    "spells_learned": [ [ "arcana_magic_summon_shadow", 0 ], [ "arcana_summon_shadow_snake", 0 ] ]
+    "spells_learned": [ [ "arcana_magic_summon_shadow", 1 ], [ "arcana_summon_shadow_snake", 1 ] ]
   }
 ]

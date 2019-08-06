@@ -292,7 +292,8 @@
     "energy_increment": -1,
     "min_duration": 30000,
     "max_duration": 90000,
-    "duration_increment": 6000
+    "duration_increment": 6000,
+    "spell_class": "SPELL_AGILE"
   },
   {
     "id": "arcana_magic_capacitance",
@@ -301,9 +302,7 @@
     "description": "Using this spell will channel your energy into artifice within the body, restoring bionic energy at the cost of fatigue.  Doing so will shock yourself, however.",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
-    "extra_effects": [
-      { "id": "arcana_aftermath_capacitance_zap", "hit_self": true, "max_level": 10 }
-    ],
+    "extra_effects": [ { "id": "arcana_aftermath_capacitance_zap", "hit_self": true, "max_level": 10 } ],
     "min_damage": 60,
     "max_damage": 120,
     "damage_increment": 6,
@@ -317,7 +316,8 @@
     "difficulty": 0,
     "base_casting_time": 240,
     "final_casting_time": 180,
-    "casting_time_increment": -6
+    "casting_time_increment": -6,
+    "spell_class": "PROF_CLEANSINGFLAME2"
   },
   {
     "id": "arcana_magic_clairvoyance",
@@ -339,7 +339,8 @@
     "energy_increment": -1.4,
     "min_duration": 18000,
     "max_duration": 90000,
-    "duration_increment": 7200
+    "duration_increment": 7200,
+    "spell_class": "SPELL_CLAIRVOYANCE"
   },
   {
     "id": "arcana_magic_clarity_blood",
@@ -364,7 +365,8 @@
     "energy_increment": -1,
     "min_duration": 30000,
     "max_duration": 150000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "spell_class": "SPELL_CLARITY"
   },
   {
     "id": "arcana_magic_confuse_monster",
@@ -389,7 +391,8 @@
     "energy_increment": -0.8,
     "min_duration": 500,
     "max_duration": 2000,
-    "duration_increment": 150
+    "duration_increment": 150,
+    "spell_class": "SPELL_CONFUSE"
   },
   {
     "id": "arcana_magic_conjure_acid",
@@ -427,7 +430,8 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.1,
+    "spell_class": "SPELL_ACID"
   },
   {
     "id": "arcana_magic_conjure_flame",
@@ -462,7 +466,8 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.1,
+    "spell_class": "SPELL_FIRE"
   },
   {
     "id": "arcana_magic_dampening",
@@ -484,7 +489,8 @@
     "energy_increment": -0.6,
     "min_duration": 60000,
     "max_duration": 180000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "spell_class": "SPELL_DAMPENING"
   },
   {
     "id": "arcana_magic_flame_armor",
@@ -509,7 +515,8 @@
     "energy_increment": -1.2,
     "min_duration": 30000,
     "max_duration": 150000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "spell_class": "SPELL_FLAMEARMOR"
   },
   {
     "id": "arcana_magic_free_action",
@@ -534,7 +541,8 @@
     "energy_increment": -1.4,
     "min_duration": 30000,
     "max_duration": 150000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "spell_class": "SPELL_FREEACTION"
   },
   {
     "id": "arcana_magic_healing",
@@ -561,7 +569,8 @@
     "difficulty": 0,
     "min_duration": 100,
     "max_duration": 100,
-    "energy_source": "FATIGUE"
+    "energy_source": "FATIGUE",
+    "spell_class": "SPELL_HEAL"
   },
   {
     "id": "arcana_magic_insight",
@@ -586,7 +595,8 @@
     "energy_increment": -0.8,
     "min_duration": 30000,
     "max_duration": 90000,
-    "duration_increment": 6000
+    "duration_increment": 6000,
+    "spell_class": "SPELL_INSIGHT"
   },
   {
     "id": "arcana_magic_light",
@@ -608,7 +618,8 @@
     "energy_increment": -0.6,
     "min_duration": 120000,
     "max_duration": 360000,
-    "duration_increment": 24000
+    "duration_increment": 24000,
+    "spell_class": "SPELL_LIGHT"
   },
   {
     "id": "arcana_magic_lightning_ward",
@@ -630,7 +641,8 @@
     "energy_increment": -0.8,
     "min_duration": 30000,
     "max_duration": 150000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "spell_class": "SPELL_ELECRESIST"
   },
   {
     "id": "arcana_magic_might",
@@ -655,7 +667,8 @@
     "energy_increment": -1.2,
     "min_duration": 30000,
     "max_duration": 90000,
-    "duration_increment": 6000
+    "duration_increment": 6000,
+    "spell_class": "SPELL_STRENGTH"
   },
   {
     "id": "arcana_magic_open_lock",
@@ -677,7 +690,8 @@
     "energy_increment": -1.4,
     "min_duration": 18000,
     "max_duration": 90000,
-    "duration_increment": 7200
+    "duration_increment": 7200,
+    "spell_class": "SPELL_LOCKPICK"
   },
   {
     "id": "arcana_magic_overgrowth",
@@ -705,7 +719,8 @@
     "casting_time_increment": -4,
     "base_energy_cost": 40,
     "final_energy_cost": 32,
-    "energy_increment": -0.8
+    "energy_increment": -0.8,
+    "spell_class": "SPELL_PLANTS"
   },
   {
     "id": "arcana_magic_poison_armor",
@@ -730,7 +745,8 @@
     "energy_increment": -1.2,
     "min_duration": 30000,
     "max_duration": 150000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "spell_class": "SPELL_POISONARMOR"
   },
   {
     "id": "arcana_magic_serpentine_shield",
@@ -752,7 +768,8 @@
     "energy_increment": -1.4,
     "min_duration": 60000,
     "max_duration": 180000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "spell_class": "SPELL_SHADOWSNAKES"
   },
   {
     "id": "arcana_magic_shockstorm",
@@ -787,7 +804,8 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.1,
+    "spell_class": "SPELL_LIGHTNING"
   },
   {
     "id": "arcana_magic_summon_skeletal_dog",
@@ -814,7 +832,8 @@
     "energy_increment": -0.8,
     "min_duration": 2160000,
     "max_duration": 6480000,
-    "duration_increment": 432000
+    "duration_increment": 432000,
+    "spell_class": "SPELL_SUMMONDOG"
   },
   {
     "id": "arcana_magic_summon_shadow",
@@ -841,7 +860,8 @@
     "energy_increment": -1.2,
     "min_duration": 2160000,
     "max_duration": 6480000,
-    "duration_increment": 432000
+    "duration_increment": 432000,
+    "spell_class": "PROF_ARCANIST2"
   },
   {
     "id": "arcana_summon_shadow_snake",
@@ -868,7 +888,8 @@
     "energy_increment": -1,
     "min_duration": 2160000,
     "max_duration": 6480000,
-    "duration_increment": 432000
+    "duration_increment": 432000,
+    "spell_class": "PROF_ARCANIST2"
   },
   {
     "id": "arcana_magic_surge_adrenaline",
@@ -893,7 +914,8 @@
     "min_duration": 90000,
     "max_duration": 180000,
     "duration_increment": 9000,
-    "energy_source": "FATIGUE"
+    "energy_source": "FATIGUE",
+    "spell_class": "SPELL_DAYLIGHT"
   },
   {
     "id": "arcana_magic_ward_against_evil",
@@ -918,7 +940,8 @@
     "energy_increment": -1.2,
     "min_duration": 30000,
     "max_duration": 150000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "spell_class": "SPELL_CLERIC"
   },
   {
     "id": "arcana_mark_drain_life",
@@ -926,9 +949,7 @@
     "name": "Sanguine Mark: Drain Life",
     "description": "Using this spell will anoint you with a horned halo, granting a life-draining effect to your attacks.  Use it well, lest the price be greater than the reward.",
     "valid_targets": [ "self" ],
-    "extra_effects": [
-      { "id": "arcana_aftermath_drain_life_fatigue", "hit_self": true, "max_level": 10 }
-    ],
+    "extra_effects": [ { "id": "arcana_aftermath_drain_life_fatigue", "hit_self": true, "max_level": 10 } ],
     "flags": [ "SOMATIC" ],
     "effect": "spawn_item",
     "effect_str": "halo_drainlife",
@@ -943,7 +964,8 @@
     "energy_increment": -0.7,
     "min_duration": 24000,
     "max_duration": 48000,
-    "duration_increment": 2400
+    "duration_increment": 2400,
+    "spell_class": "SPELL_HUNT_DRAGONBLOOD"
   },
   {
     "id": "arcana_mark_elemental_sign",
@@ -952,9 +974,7 @@
     "description": "Using this spell will grant temporary resistance to heat and smoke, along with sapping heat from all around you.  Direct contact with flame will still cause harm, however.  It can only be used on yourself.",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC" ],
-    "extra_effects": [
-      { "id": "arcana_aftermath_elemental_coldness", "hit_self": false, "max_level": 10 }
-    ],
+    "extra_effects": [ { "id": "arcana_aftermath_elemental_coldness", "hit_self": false, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "heat_ward",
     "min_range": 0,
@@ -970,7 +990,8 @@
     "energy_increment": -0.6,
     "min_duration": 60000,
     "max_duration": 120000,
-    "duration_increment": 6000
+    "duration_increment": 6000,
+    "spell_class": "SPELL_EMBERS_DRAGONBLOOD"
   },
   {
     "id": "arcana_mark_infernal_flame",
@@ -1012,7 +1033,8 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.1,
+    "spell_class": "SPELL_SUMMONFIEND"
   },
   {
     "id": "arcana_mark_might",
@@ -1036,7 +1058,8 @@
     "energy_increment": -0.6,
     "min_duration": 40000,
     "max_duration": 60000,
-    "duration_increment": 2000
+    "duration_increment": 2000,
+    "spell_class": "SPELL_INSTINCT_DRAGONBLOOD"
   },
   {
     "id": "arcana_mark_revenant_blood",
@@ -1060,7 +1083,8 @@
     "energy_increment": -0.5,
     "min_duration": 60000,
     "max_duration": 120000,
-    "duration_increment": 6000
+    "duration_increment": 6000,
+    "spell_class": "SPELL_INSTINCT_DRAGONBLOOD"
   },
   {
     "id": "arcana_mark_summon_dark_wyrm",
@@ -1084,7 +1108,8 @@
     "casting_time_increment": -1.8,
     "base_energy_cost": 24,
     "final_energy_cost": 18,
-    "energy_increment": -0.6
+    "energy_increment": -0.6,
+    "spell_class": "SPELL_SUMMONWYRM"
   },
   {
     "id": "arcana_mark_summon_fiend",
@@ -1108,7 +1133,8 @@
     "casting_time_increment": -1.5,
     "base_energy_cost": 20,
     "final_energy_cost": 15,
-    "energy_increment": -0.5
+    "energy_increment": -0.5,
+    "spell_class": "SPELL_SUMMONFIEND"
   },
   {
     "id": "arcana_mark_summon_jabberwock",
@@ -1132,7 +1158,8 @@
     "casting_time_increment": -2.1,
     "base_energy_cost": 28,
     "final_energy_cost": 21,
-    "energy_increment": -0.7
+    "energy_increment": -0.7,
+    "spell_class": "SPELL_SUMMONWYRM"
   },
   {
     "id": "arcana_mark_suppression",
@@ -1141,9 +1168,7 @@
     "description": "Using this spell will anoint you with a coral halo, granting a temporary effect that will sap energy from fires, and draw radiation from your body.   Moreover, it will dull the fire within you, reducing how quickly it taxes your body.",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC" ],
-    "extra_effects": [
-      { "id": "arcana_aftermath_suppression_buff", "hit_self": true, "max_level": 10 }
-    ],
+    "extra_effects": [ { "id": "arcana_aftermath_suppression_buff", "hit_self": true, "max_level": 10 } ],
     "effect": "spawn_item",
     "effect_str": "halo_dampening",
     "energy_source": "HP",
@@ -1157,7 +1182,8 @@
     "energy_increment": -0.3,
     "min_duration": 80000,
     "max_duration": 160000,
-    "duration_increment": 8000
+    "duration_increment": 8000,
+    "spell_class": "SPELL_EMBERS_DRAGONBLOOD"
   },
   {
     "id": "arcana_mark_surge_adrenaline",
@@ -1181,6 +1207,7 @@
     "min_duration": 120000,
     "max_duration": 150000,
     "duration_increment": 3000,
-    "energy_source": "HP"
+    "energy_source": "HP",
+    "spell_class": "SPELL_HUNT_DRAGONBLOOD"
   }
 ]
