@@ -705,8 +705,8 @@
     "energy_source": "FATIGUE",
     "difficulty": 0,
     "max_level": 10,
-    "min_damage": 3,
-    "max_damage": 1,
+    "min_damage": 4,
+    "max_damage": 2,
     "damage_increment": -0.2,
     "min_aoe": 2,
     "max_aoe": 10,
@@ -864,7 +864,7 @@
     "spell_class": "PROF_ARCANIST2"
   },
   {
-    "id": "arcana_summon_shadow_snake",
+    "id": "arcana_magic_summon_shadow_snake",
     "type": "SPELL",
     "name": "Magic Sign: Summon Shadow Snake",
     "description": "Using this spell will summon a living shadow in serpentine form, which will be loyal but not permanent.",
