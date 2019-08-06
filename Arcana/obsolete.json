@@ -134,5 +134,58 @@
       "type": "spell_plants",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUMMONSHADOWSNAKE",
+    "name": "Arcana: Summon Shadow Snake",
+    "//": "Only zero points because it's a profession-specific spell, fatigue cost is calculated as though it has a cost of 4.",
+    "points": 0,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a shadow snake.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "active": true,
+    "cost": 60,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_summonshadowsnake",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUMMONSHADOW",
+    "name": "Arcana: Summon Shadow",
+    "//": "Only zero points because it's a profession-specific spell, fatigue cost is calculated as though it has a cost of 5.",
+    "points": 0,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a shadow.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "active": true,
+    "cost": 75,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_summonshadow",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUMMONYUGG",
+    "name": "Arcana: Summon Yugg",
+    "points": 7,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a yugg.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [ "SPELL_SUMMONWYRM" ],
+    "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
+    "active": true,
+    "cost": 105,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_summonyugg",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
   }
 ]

@@ -205,7 +205,7 @@
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
     },
-    "traits": [ "PROF_ARCANIST", "SPELL_SUMMONSHADOW", "SPELL_SUMMONSHADOWSNAKE" ],
+    "traits": [ "PROF_ARCANIST2" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -306,7 +306,7 @@
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boy_shorts" ]
     },
-    "traits": [ "PROF_CLEANSINGFLAME" ],
+    "traits": [ "PROF_CLEANSINGFLAME2" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
