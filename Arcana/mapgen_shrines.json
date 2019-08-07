@@ -107,7 +107,7 @@
         { "monster": "mon_dementia", "x": [ 8, 15 ], "y": [ 5, 10 ], "repeat": [ 3, 6 ] },
         { "monster": "mon_blood_sacrifice", "x": 10, "y": 10 },
         { "monster": "mon_blood_sacrifice", "x": 13, "y": 10 },
-        { "monster": "mon_shoggoth", "x": 11, "y": 15, "chance": 100 }
+        { "monster": "mon_shoggoth_summoned", "x": 11, "y": 15, "chance": 100 }
       ]
     }
   },
