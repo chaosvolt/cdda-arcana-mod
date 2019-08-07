@@ -1109,6 +1109,9 @@
     "base_energy_cost": 24,
     "final_energy_cost": 18,
     "energy_increment": -0.6,
+    "min_duration": 2880000,
+    "max_duration": 5760000,
+    "duration_increment": 288000,
     "spell_class": "SPELL_SUMMONWYRM"
   },
   {
@@ -1134,6 +1137,9 @@
     "base_energy_cost": 20,
     "final_energy_cost": 15,
     "energy_increment": -0.5,
+    "min_duration": 2880000,
+    "max_duration": 5760000,
+    "duration_increment": 288000,
     "spell_class": "SPELL_SUMMONFIEND"
   },
   {
@@ -1159,6 +1165,9 @@
     "base_energy_cost": 28,
     "final_energy_cost": 21,
     "energy_increment": -0.7,
+    "min_duration": 2880000,
+    "max_duration": 5760000,
+    "duration_increment": 288000,
     "spell_class": "SPELL_SUMMONWYRM"
   },
   {

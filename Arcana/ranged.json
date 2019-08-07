@@ -3,8 +3,8 @@
     "id": "thunder_sigil",
     "type": "GUN",
     "category": "weapons",
-    "name": "symbol of judgement",
-    "name_plural": "symbols of judgement",
+    "name": "symbol of judgment",
+    "name_plural": "symbols of judgment",
     "description": "A large golden band decorated with a trident motif, and inlaid with silver.  For some reason you suspect this to be a perversion of some otherworldly holy symbol, from some cult worlds away.  Firing it calls forth lightning.",
     "weight": 3000,
     "volume": 5,
@@ -28,7 +28,7 @@
     "reload": 400,
     "ammo_effects": [ "LIGHTNING", "BOUNCE", "EMP" ],
     "artifact_data": { "effects_wielded": [ "AEP_BAD_WEATHER" ] },
-    "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON" ],
+    "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
     "use_action": "MEDITATE"
   },
   {
@@ -62,7 +62,7 @@
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "//": "Explicitly not adding the firestarter flag, just in case hardcoded uses deplete charges.  The use action itself is unable to deplete charges for guns, annoyingly.",
     "use_action": { "type": "firestarter", "moves": 25, "moves_slow": 250, "need_sunlight": true },
-    "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE" ]
+    "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "ethereal_crossbow",
@@ -155,7 +155,7 @@
     "reload": 200,
     "ammo_effects": [ "ACIDBOMB", "TOXICGAS" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE" ]
+    "flags": [ "UNBREAKABLE_MELEE", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "monster_fire_fake",

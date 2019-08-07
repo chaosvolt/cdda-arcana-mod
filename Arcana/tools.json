@@ -62,6 +62,7 @@
     "symbol": ";",
     "looks_like": "small_relic",
     "color": "yellow",
+    "flags": [ "MAGIC_FOCUS" ],
     "use_action": [
       "MEDITATE",
       {
@@ -267,7 +268,7 @@
     "artifact_data": { "effects_activated": [ "AEA_BUGS" ] },
     "use_action": "ARTIFACT",
     "relative": { "weight": 540, "bashing": 2, "price": 1000 },
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
   },
   {
     "id": "summon_kreck",
@@ -766,7 +767,21 @@
     "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar diety.  Using it will darken the sky temporarily, and confound nearby enemies",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "artifact_data": { "effects_activated": [ "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_DIM" ] },
+    "artifact_data": {
+      "effects_activated": [
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_DIM"
+      ]
+    },
     "use_action": "ARTIFACT"
   },
   {
@@ -1462,7 +1477,8 @@
       "effects_activated": [ "AEA_MAP", "AEA_PAIN", "AEA_PAIN", "AEA_PAIN", "AEA_ATTENTION" ],
       "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO" ]
     },
-    "use_action": "ARTIFACT"
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "staff_druidic",
@@ -1491,7 +1507,8 @@
         "cost_scaling": 0,
         "move_cost": 1000
       }
-    ]
+    ],
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "moonstone_fang",
@@ -1546,7 +1563,7 @@
       }
     ],
     "relative": { "cutting": -5, "weight": -318, "price": 50000 },
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD" ] },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD", "MAGIC_FOCUS" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] },
     "artifact_data": { "charge_type": "ARTC_PORTAL" }
   },
@@ -1573,7 +1590,7 @@
     "revert_to": "veilblade",
     "use_action": { "type": "mutagen_iv", "mutation_category": "VEIL" },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE" ]
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "draconic_heart_mutator",
