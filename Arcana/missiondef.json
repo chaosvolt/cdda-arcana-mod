@@ -222,7 +222,7 @@
     "end": {
       "effect": [
         { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" },
-        { "u_buy_item": "FCNote", "count": 2 }
+        { "u_buy_item": "FMCNote", "count": 2 }
       ]
     }
   },
