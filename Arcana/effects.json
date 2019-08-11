@@ -322,6 +322,12 @@
   },
   {
     "type": "effect_type",
+    "id": "arcana_aegis_mending",
+    "blocks_effects": [ "bleed" ],
+    "rating": "good"
+  },
+  {
+    "type": "effect_type",
     "id": "sent_to_hermit",
     "//": "This marks a player as having been led to The Hermit via a quest chain, no name or description since this one is player-side.  Intended to be permanent."
   },

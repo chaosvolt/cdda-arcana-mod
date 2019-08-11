@@ -714,7 +714,7 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "power": 1000, "distance_factor": 0.3 }
+      "explosion": { "power": 1250, "distance_factor": 0.45 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },
@@ -724,7 +724,7 @@
     "type": "TOOL",
     "name": "scroll of light",
     "name_plural": "scrolls of light",
-    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun diety.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
+    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
     "use_action": {
       "target": "scroll_sun_on",
       "msg": "\"Let purity guide your hand and your heart.\"  You unroll the scroll of light...",
@@ -738,7 +738,7 @@
     "type": "TOOL",
     "name": "scroll of light",
     "name_plural": "scrolls of light",
-    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun diety.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
+    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": { "effects_activated": [ "AEA_FUN", "AEA_ADRENALINE", "AEA_LIGHT" ] },
@@ -750,7 +750,7 @@
     "type": "TOOL",
     "name": "scroll of darkness",
     "name_plural": "scrolls of darkness",
-    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar diety.  Using it will darken the sky temporarily, and confound nearby enemies.",
+    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will darken the sky temporarily, and confound nearby enemies.",
     "use_action": {
       "target": "scroll_moon_on",
       "msg": "\"Do not fear the unknown.\"  You unroll the scroll of darkness...",
@@ -764,7 +764,7 @@
     "type": "TOOL",
     "name": "scroll of darkness",
     "name_plural": "scrolls of darkness",
-    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar diety.  Using it will darken the sky temporarily, and confound nearby enemies",
+    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will darken the sky temporarily, and confound nearby enemies.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": {
@@ -790,7 +790,7 @@
     "type": "TOOL",
     "name": "scroll of command",
     "name_plural": "scrolls of command",
-    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly diety of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
+    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
     "use_action": {
       "target": "scroll_artiface_on",
       "msg": "\"By order, we ascend beyond that of animals.\"  You unroll the scroll of command...",
@@ -804,7 +804,7 @@
     "type": "TOOL",
     "name": "scroll of command",
     "name_plural": "scrolls of command",
-    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly diety of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
+    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": { "effects_activated": [ "AEA_ENTRANCE", "AEA_ENTRANCE", "AEA_PARALYZE", "AEA_PAIN" ] },
@@ -816,7 +816,7 @@
     "type": "TOOL",
     "name": "scroll of regrowth",
     "name_plural": "scrolls of regrowth",
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly diety of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
     "use_action": {
       "target": "scroll_nature_on",
       "msg": "\"Do not deny your instincts.\"  You unroll the scroll of regrowth...",
@@ -830,7 +830,7 @@
     "type": "TOOL",
     "name": "scroll of regrowth",
     "name_plural": "scrolls of regrowth",
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly diety of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and massively healing you, but potentially mutating you as well.",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and massively healing you, but potentially mutating you as well.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": {
