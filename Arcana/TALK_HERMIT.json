@@ -321,7 +321,7 @@
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUEST_HELP_1_ILLITERATE",
     "dynamic_line": {
-      "u_has_any_trait": [ "PROF_ARCANIST", "PROF_CLEANSINGFLAME", "PROF_SANGUINE", "PROF_CHALICE" ],
+      "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_CHALICE" ],
       "yes": "I'm astounded that you've made it this far in your studies.  What am I going to do with you?  If this is the destined fate He has set us on, it seems I'll need to guide you through this.  Speak with me when you're ready, and I suppose I'll see what can be done.",
       "no": "He From Beyond The Veil, grant me strength ...if strange fortune has set us on this path, then I suppose we must see it through.  Speak with me when you're ready, and I'll see what I can do."
     },
@@ -370,7 +370,7 @@
         "switch": true,
         "text": "As our book says.  Any otherworldly monster must be returned to its true domain, living or dead...",
         "topic": "TALK_HERMIT",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
       },
       { "switch": true, "default": true, "text": "I'll be ready.", "topic": "TALK_HERMIT" }
     ]
@@ -461,7 +461,7 @@
       },
       {
         "text": "Treachery like that is why the Cleansing Flame was founded, united in opposition to what those vermin did to people.",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "topic": "TALK_HERMIT_DISCUSS_1_FLAME"
       },
       { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
@@ -510,7 +510,7 @@
       {
         "text": "[ATTACK] My duty demands it, this is far too dangerous to risk.  Try and stop me, old man.",
         "topic": "TALK_DONE",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "effect": "insult_combat"
       }
     ]
@@ -553,7 +553,7 @@
     "responses": [
       {
         "text": "We had hoped to mend the wounds in The Veil as well as prevent any further instability.  Despite our differences, we have a common goal.",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "topic": "TALK_HERMIT_DISCUSS_2_FLAME"
       },
       {
@@ -647,7 +647,7 @@
       {
         "text": "Why should we care about whatever form of Hell these monsters come from?",
         "topic": "TALK_HERMIT_DISCUSS_3_CARE",
-        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE" ] }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE" ] }
       },
       {
         "switch": true,
@@ -684,7 +684,7 @@
       {
         "text": "I worry for what my brethren will think...",
         "topic": "TALK_HERMIT_DISCUSS_4_FLAME",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
       },
       {
         "text": "How amusing it is, a blood mage as one of your order's Chosen.",
@@ -762,7 +762,7 @@
       {
         "text": "You learned the hard way, not to trust the Sanguine Order.",
         "topic": "TALK_HERMIT_DISCUSS_4_BETRAYAL_FLAME",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
       },
       {
         "text": "And our actions doomed us both.",
@@ -895,7 +895,7 @@
         "switch": true,
         "text": "An understanding we both share.  I was brought up among a mix of diverse teachings, united in our goal.",
         "topic": "TALK_HERMIT_BOOK_RELIGIOUS_CLEANSINGFLAME",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
       },
       {
         "switch": true,
@@ -1097,7 +1097,7 @@
       },
       {
         "text": "I have seen what the arcane can lead to.  Great things, but also great danger.",
-        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE", "PROF_ARCANIST" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_ARCANIST", "PROF_ARCANIST2" ] },
         "topic": "TALK_HERMIT_BOOK_REVEAL",
         "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
       },
@@ -1175,7 +1175,7 @@
         "switch": true,
         "text": "I do.  I am not your enemy, Keeper.  That is what you are, correct?",
         "topic": "TALK_HERMIT_MASK_TRUST",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "opinion": { "trust": 1, "value": 1 },
         "effect": [
           { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
@@ -1185,7 +1185,7 @@
       {
         "text": "[ATTACK] My purpose is to finish what my brethren started, and destroy threats to humanity.  For your worship of a monster from Beyond, and for the wounds in The Veil your order has inflicted, I sentence you to death.",
         "topic": "TALK_DONE",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "effect": "insult_combat"
       },
       {
@@ -1326,7 +1326,7 @@
       {
         "text": "Despite our differences, this sounds like a threat to us both.",
         "topic": "TALK_HERMIT_QUERY_VEIL_CLEANSINGFLAME",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
       },
       { "text": "What sort of abomination?", "topic": "TALK_HERMIT_ABOMINATION" },
       { "text": "I see.", "topic": "TALK_HERMIT" }
@@ -1367,7 +1367,7 @@
       {
         "text": "Offer no intrusion upon their domain, and do not willfully consort with their power...",
         "topic": "TALK_HERMIT_ABOMINATION_TENET",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
       },
       { "text": "I see.", "topic": "TALK_HERMIT" }
     ]
@@ -1393,13 +1393,13 @@
         "text": "To teach the next generation what is proper and safe.",
         "topic": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
         "effect": { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
       },
       {
         "text": "Knowledge is dangerous if in the wrong hands.",
         "topic": "TALK_HERMIT_TEACH_REJECTION",
         "opinion": { "trust": -1 },
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
       },
       {
         "text": "Knowledge is power, but it is wasted unless passed on.",

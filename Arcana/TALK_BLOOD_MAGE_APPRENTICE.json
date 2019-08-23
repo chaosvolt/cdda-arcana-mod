@@ -6,12 +6,12 @@
     "responses": [
       {
         "text": "Who are you?",
-        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE" ] } },
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE" ] } },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_GET_OUT"
       },
       {
         "text": "What can you tell me about this place?",
-        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE" ] } },
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE" ] } },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_GET_OUT"
       },
       {
@@ -21,7 +21,7 @@
       },
       {
         "text": "Ecce, sanguinem magum!  Impium profligatum!",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "trial": { "type": "INTIMIDATE", "difficulty": 75 },
         "success": { "topic": "TALK_BLOOD_MAGE_APPRENTICE_INTIMIDATE", "opinion": { "anger": 1, "fear": 2 } },
         "failure": { "topic": "TALK_DONE", "opinion": { "anger": 1 }, "effect": [ { "u_faction_rep": -30 }, "insult_combat" ] }
@@ -29,7 +29,7 @@
       { "text": "[ATTACK] I'm here to kill you.", "effect": "insult_combat", "topic": "TALK_DONE" },
       {
         "text": "Er, I'll just be going.",
-        "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } },
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_NICE_TRY"
       }
     ]
@@ -40,17 +40,17 @@
     "dynamic_line": "You must be either lost or crazy.  This place isn't safe, and you're not welcome here.  Leave, and forget this place even exists.",
     "responses": [
       {
-        "text": "I am a servent of He From Beyond The Veil.  We are not enemies.",
+        "text": "I am a servant of He From Beyond The Veil.  We are not enemies.",
         "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
       },
       {
         "text": "You would not welcome a student of the arcane?",
-        "condition": { "u_has_trait": "PROF_ARCANIST" },
+        "condition": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2" ] },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_MISTAKE"
       },
       {
-        "text": "I can see you dabble in what I have already acheived.",
+        "text": "I can see you dabble in what I have already achieved.",
         "condition": { "u_has_trait": "THRESH_DRAGONBLOOD" },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD"
       },
@@ -199,7 +199,7 @@
         "switch": true
       },
       {
-        "text": "Your master has erred in judgement.  They are not worthy of being followed.",
+        "text": "Your master has erred in judgment.  They are not worthy of being followed.",
         "switch": true,
         "default": true,
         "trial": { "type": "PERSUADE", "difficulty": 50 },
@@ -207,7 +207,7 @@
         "failure": { "topic": "TALK_BLOOD_MAGE_APPRENTICE_NOPE" }
       },
       {
-        "text": "[ATTACK] Then die, defending your misguised fool of a master.",
+        "text": "[ATTACK] Then die, defending your misguided fool of a master.",
         "topic": "TALK_DONE",
         "effect": "insult_combat"
       }
@@ -225,7 +225,7 @@
         "opinion": { "trust": 2, "fear": -1, "value": 1, "anger": -3 }
       },
       {
-        "text": "[ATTACK] No.  You will face the same judgement as your master.",
+        "text": "[ATTACK] No.  You will face the same judgment as your master.",
         "topic": "TALK_DONE",
         "effect": "flee"
       }
@@ -255,13 +255,13 @@
     "dynamic_line": "You don't just barge in here and expect to walk out without explaining yourself.  Why should I let you leave?",
     "responses": [
       {
-        "text": "I am a servent of He From Beyond The Veil.  There is no need for quarrel.",
+        "text": "I am a servant of He From Beyond The Veil.  There is no need for quarrel.",
         "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
       },
       {
         "text": "I am just a student of the arcane, seeking further knowledge.  I'll leave peacefully, honest.",
-        "condition": { "u_has_trait": "PROF_ARCANIST" },
+        "condition": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2" ] },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_MISTAKE"
       },
       {
@@ -307,7 +307,7 @@
   {
     "id": "BGSS_BLOOD_MAGE_1_STORY1",
     "type": "talk_topic",
-    "dynamic_line": "I hadn't been in the Order for very long when one of the magi had everyone gathered up.  We were in this other place at the time with a couple others, and at the time I thought she was preparing another lesson.",
+    "dynamic_line": "I hadn't been in the Order for very long when one of the magi had everyone gathered up.  We were in this other place at the time with a couple others, and initially I thought she was preparing another lesson.",
     "responses": [
       { "text": "Magi?", "topic": "BGSS_BLOOD_MAGE_1_STORY2" },
       { "text": "What happened?", "topic": "BGSS_CF_1_STORY3" },

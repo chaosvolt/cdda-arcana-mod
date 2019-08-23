@@ -8,7 +8,7 @@
         "I'm glad that you're still in one piece for now.",
         "It's good to see you alive and well.",
         {
-          "u_has_trait": "PROF_CLEANSINGFLAME",
+          "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
           "yes": { "u_male": "Welcome back, Brother.", "no": "Welcome back, Sister." },
           "no": "Welcome back."
         },
@@ -22,28 +22,47 @@
         }
       ],
       "no": {
-        "u_has_trait": "PROF_SANGUINE",
+        "u_has_effect": "cf_hunter_motive",
         "yes": [
-          "Cause no trouble, blood mage.",
-          "I have nothing to say to you, sanguinist.",
-          "I can sense the taint of blood magic even without a mask.  Why are you here?",
-          "If not for Thane McKinnon's orders, I would slay you where you stand.  What do you want?",
-          "We will tolerate your presence so long as you don't try anything, but we are watching, sanguinist."
+          "Greetings once again.",
+          "You are welcome here, so long as you cause no trouble.",
+          "It would be best if you speak with Thane McKinnon first and foremost.",
+          "You are welcome here, so long as you cause no trouble."
         ],
-        "no": [
-          "Greetings.",
-          "Hello.  You are welcome to stay if needed.",
-          "A visitor?  Speak with Thane McKinnon, she can best answer any questions you may have.",
-          "Welcome.  If you are here to trade, I'm afraid we have little to offer.",
-          {
-            "u_has_trait": "PROF_CLEANSINGFLAME",
-            "yes": {
-              "u_male": [ "Welcome, Brother.  This is our sanctum, for now.", "Greetings, Brother.  I'm glad we aren't the only ones left." ],
-              "no": [ "Welcome, Sister.  This is our sanctum, for now.", "Greetings, Sister.  I'm glad we aren't the only ones left." ]
-            },
-            "no": "Cause no trouble, and you will be welcome here."
+        "no": {
+          "u_has_any_trait": [ "PROF_SANGUINE", "THRESH_DRAGONBLOOD" ],
+          "yes": [
+            "Cause no trouble, blood mage.",
+            "I have nothing to say to you, sanguinist.",
+            "I can sense the taint of blood magic even without a mask.  Why are you here?",
+            "If not for Thane McKinnon's orders, I would slay you where you stand.  What do you want?",
+            "We will tolerate your presence so long as you don't try anything, but we are watching, sanguinist."
+          ],
+          "no": {
+            "u_has_any_trait": [ "PROF_ARCANIST2", "THRESH_VEIL" ],
+            "yes": [
+              "There's something off about you.  Cause no trouble here...",
+              "I'm watching you.  What are you here for?",
+              "If not for Sofia's orders, I would have to search you for any dangerous magic.  Don't make me regret that.",
+              "I can sense dangerous magic about you.  Tread lightly, this is sacred ground.",
+              "Something about you makes me uneasy..."
+            ],
+            "no": [
+              "Greetings.",
+              "Hello.  You are welcome to stay if needed.",
+              "A visitor?  Speak with Thane McKinnon, she can best answer any questions you may have.",
+              "Welcome.  If you are here to trade, I'm afraid we have little to offer.",
+              {
+                "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
+                "yes": {
+                  "u_male": [ "Welcome, Brother.  This is our sanctum, for now.", "Greetings, Brother.  I'm glad we aren't the only ones left." ],
+                  "no": [ "Welcome, Sister.  This is our sanctum, for now.", "Greetings, Sister.  I'm glad we aren't the only ones left." ]
+                },
+                "no": "Cause no trouble, and you will be welcome here."
+              }
+            ]
           }
-        ]
+        }
       }
     },
     "responses": [
@@ -61,13 +80,25 @@
       {
         "text": "Who are you people, anyway?",
         "topic": "TALK_MAGE_HUNTER_WHO",
-        "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } }
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } }
       },
       { "text": "Anything I can help with?", "topic": "TALK_MAGE_HUNTER_HELP" },
       {
         "text": "What remains of our order?",
         "topic": "TALK_MAGE_HUNTER_REMAIN",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" }
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
+      },
+      {
+        "text": "I'm not here to cause trouble.  Why such hostility?",
+        "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY",
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "cf_mission_1" } },
+            { "not": { "u_has_effect": "cf_hunter_motive" } },
+            { "not": { "u_has_trait": "PROF_SANGUINE" } },
+            { "u_has_any_trait": [ "THRESH_DRAGONBLOOD", "PROF_ARCANIST2", "THRESH_VEIL" ] }
+          ]
+        }
       },
       {
         "text": "I'm not here to fight you, hunter.",
@@ -130,7 +161,7 @@
       {
         "u_has_trait": "PROF_SANGUINE",
         "yes": [
-          "If the Grandmaster trusts your judgement, so be it.",
+          "If the Grandmaster trusts your judgment, so be it.",
           "Alright.  Stay in my sight.",
           "I see.  You know full well how dangerous these sanguinists can be, be on guard."
         ],
@@ -222,6 +253,136 @@
       "We have not wavered.  Sofia has seen to that."
     ],
     "responses": [ { "text": "Good.", "topic": "TALK_MAGE_HUNTER" } ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_OTHERWORLDLY",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_trait": "THRESH_DRAGONBLOOD",
+      "yes": [
+        "Your body bears the scars of blood magic.  Why should I trust your intentions?",
+        "Then tell me, why you've been afflicted by something that only powerful blood magic can produce.",
+        "You bear the mark of magic that we've only ever seen in association with the Sanguine Order.  Explain yourself."
+      ],
+      "no": [
+        "The magic I sense pervading you is not of this world.  What is it?",
+        "My apologies.  I can sense some manner of strange power about you, which is rarely a good sign.  Would you please explain the cause of this?",
+        "There is a touch of the otherworldly about you.  We have seen countless reasons to be wary of such things.  What is the cause?"
+      ]
+    },
+    "responses": [
+      {
+        "text": "I'm not one of them, I can assure you.",
+        "condition": { "u_has_trait": "THRESH_DRAGONBLOOD" },
+        "switch": true,
+        "effect": { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" },
+        "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_DRAGONBLOOD"
+      },
+      {
+        "text": "I have been chosen by He From Beyond The Veil.",
+        "condition": { "u_has_trait": "THRESH_VEIL" },
+        "effect": { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" },
+        "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_VEIL"
+      },
+      {
+        "text": "I was a student of an arcanist, trained in the art of summoning.",
+        "condition": { "u_has_trait": "PROF_ARCANIST2" },
+        "switch": true,
+        "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_ARCANIST"
+      },
+      {
+        "text": "I don't need to explain anything to you.",
+        "opinion": { "value": -1, "trust": -1 },
+        "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_SECRETS"
+      }
+    ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_DRAGONBLOOD",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I am willing to trust you on this.  We are taking a great risk here, and I hope that Sofia's judgment is correct...",
+      "Your alterations tell a tale of dangerous magic.  But I can sense that you lack the taint that pervades members of the Sanguine Order.  Cause no trouble, and you will be welcome here.",
+      "I know not how you became like this, but as our tenets teach, \"Hold no malice against one corrupted by the Beyond, for the consequences are their own punishment.\"  You are welcome here as long as you do not prove our lenience misguided."
+    ],
+    "responses": [ { "text": "Understood.", "topic": "TALK_MAGE_HUNTER" } ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_VEIL",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I see.  I hold no ill will against you, regardless of our past clashes with those of your faith.  You're still human.  \"Cast aside your schisms and strife\" as the tenet goes.",
+      "Understood.  I will trust that your master will guide you down the correct path.  Speak with Thane McKinnon when you get the chance, she may know what to do.  Godspeed.",
+      "You play with dangerous power, Keeper.  Even if you weren't a part of their order before, you're effectively one now.  Regardless, better that than a sanguinist.  We are not enemies, here.  Peace be upon you.",
+      "That would explain it.  I have my reservations about the one you serve, but so long as you cause no harm, we have bigger things to worry about.  You are welcome here, whether you are a Keeper or not.  May the gods guide us both."
+    ],
+    "responses": [ { "text": "Thank you.", "topic": "TALK_MAGE_HUNTER" } ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_ARCANIST",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "That explains it.  Normally I would ask that you turn in any items related to your profession, as they are very dangerous in the wrong hands.  Sofia has requested that we hold off on searches without her approval.",
+      "Such magic can be very dangerous if misused, and it has a lingering impact on its practitioners.  It would be wise not to hoard the tools of such a trade, but I cannot force you to turn in such contraband.  Not without Sofia's, at least."
+    ],
+    "responses": [
+      { "text": "If I have anything of that sort, would you accept it?", "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND" },
+      {
+        "text": "I see.  I'll speak with her then.",
+        "effect": { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" },
+        "topic": "TALK_MAGE_HUNTER"
+      }
+    ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I would appreciate such a gesture.  The common tools of the trade are dangerous, but I would recommend seeing Sofia about exchanging such items.  What I will accept, if you'll allow it, would be copies of the common summoner's tome.  To Master The Unknown.  If you have a copy of it to surrender, I will compensate you as best as I can.",
+      "If you are willing to part with a summoner's tome, so be it.  The summoning glyphs themselves are better handled by someone more experienced like Sofia, but I will repay you for a copy of To Master The Unknown.",
+      "Speak to Sofia if you seek to trust any conjurers' relics to someone else's care, but I can accept the book itself if you have one on hand.  Since this is a voluntary surrender, I will compensate you as best as I can."
+    ],
+    "responses": [
+      {
+        "text": "Okay, here you go.",
+        "condition": { "u_has_item": "book_summoning" },
+        "effect": { "u_consume_item": "book_summoning" },
+        "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_SURRENDER"
+      },
+      {
+        "text": "It's fine.  I should speak to Sofia about it.",
+        "effect": { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" },
+        "topic": "TALK_MAGE_HUNTER"
+      }
+    ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_SURRENDER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Thank you.  These coins are used by Sofia and others of our order for trade with outsiders that work with us.  If there is anything she can provide then speak to her.  I'm afraid this is all I can spare, but it should help.",
+      "I'm afraid I only have enough to compensate for one of these books, so I pray that you'll trust Sofia with any others you find.",
+      "Here you are.  I will deal with this per Thane McKinnon's advice, forgive me if she orders it destroyed.  This should be fair pay for what it would've been worth, before all this started."
+    ],
+    "responses": [
+      {
+        "text": "Okay.",
+        "effect": [ { "u_buy_item": "CF_golden_scale", "count": 20 }, { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" } ],
+        "topic": "TALK_MAGE_HUNTER"
+      }
+    ]
+  },
+  {
+    "id": "TALK_MAGE_HUNTER_OTHERWORLDLY_SECRETS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Keep your gods-damned secrets then.  With that attitude you'll take them to the grave one of these days.",
+      "Trust must be earned.  You will not be welcome here if you attempt to deceive us.",
+      "I are being lenient by not having you searched for dangerous artifacts.  Do not test my patience.",
+      "I would slay you where you stand if not for Sofia's orders.  Either answer to her, or leave.  While you still can.",
+      "We are watching you.  Step out of line and I will put you down personally."
+    ],
+    "responses": [ { "text": "...", "topic": "TALK_MAGE_HUNTER" } ]
   },
   {
     "id": "TALK_MAGE_HUNTER_SANGUINE",
@@ -316,10 +477,7 @@
     "id": "BGSS_CF_1_STORY3",
     "type": "talk_topic",
     "dynamic_line": "We were all nearly struck blind.  In nearly every direction, horrible light flooded in from beyond the normal limit of our masks' perception range.  Only very powerful effects can be seem from that far away through clairvoyance, and whatever caused all this could be perceived for miles away, in every single direction.",
-    "responses": [
-      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
-      { "text": "<end_talking>", "topic": "TALK_DONE" }
-    ]
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
     "id": "BGSS_CF_2_STORY1",
@@ -335,10 +493,7 @@
     "id": "BGSS_CF_2_STORY2",
     "type": "talk_topic",
     "dynamic_line": "Yeah.  When I saw that, I knew.  Whatever caused this was bigger than our conflict with the Sanguine Order.  Bigger than the Keepers of The Oath, bigger than every conflict we were involved in.  Something loosed the gates of Hell itself and it consumed everything in sight...",
-    "responses": [
-      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
-      { "text": "<end_talking>", "topic": "TALK_DONE" }
-    ]
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
     "id": "BGSS_CF_3_STORY1",
@@ -362,10 +517,7 @@
       "yes": "Johnathan could tell something was amiss when we were just barely in sight of the place.  No evidence of patrols, no auras radiating from masks, nothing.  We suspected they were compromised and abandoned the sanctum, so we avoided the place.  Found out the next day something big happened, not just to the sanctum but seemingly everywhere...",
       "no": "Place was empty.  No priest, no other people, nothing.  No sign that they'd been there recently either.  We got settled in best as we could, and didn't find out the news until a couple days later.  It was so much worse than we ever remotely suspected..."
     },
-    "responses": [
-      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
-      { "text": "<end_talking>", "topic": "TALK_DONE" }
-    ]
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
     "id": "BGSS_CF_4_STORY1",
@@ -417,10 +569,7 @@
     "id": "BGSS_CF_4_STORY5",
     "type": "talk_topic",
     "dynamic_line": "The dead didn't stay that way.  In fact our arrival stirred most of the corpses up.  Dozens of them, writhing and scrabbling over each other to crawl out of a trench barely 10 feet long and only a few feet deep.  Lost two of us before we were forced to break contact rather than try to put the poor things down.  We'd find out later on just how much worse it was everywhere else.",
-    "responses": [
-      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
-      { "text": "<end_talking>", "topic": "TALK_DONE" }
-    ]
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
     "id": "BGSS_CF_5_STORY1",
@@ -430,9 +579,6 @@
       "yes": "I'll keep it short and simple.  It was sheer good luck that I avoided running into any hordes or major anomalies before I linked up with Johnathan.  He informed me of what happened after he realized my route took me through a fairly quiet part of the countryside.",
       "no": "I'll keep it short and simple.  I got lucky, basically.  I was the last one left of my hunting party trying to meet up with any others.  I wasn't anywhere near the major cities or other hotspots, so I didn't find out anything was amiss until I reached this place and heard the news from Thane McKinnon herself."
     },
-    "responses": [
-      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
-      { "text": "<end_talking>", "topic": "TALK_DONE" }
-    ]
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   }
 ]

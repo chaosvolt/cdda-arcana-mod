@@ -6,7 +6,7 @@
       "u_has_trait": "PROF_SANGUINE",
       "yes": "Well, aren't you a little troublemaker?  The magus here is a bit uppity about would-be rivals barging in to make a mess of things.  What are you here for?",
       "no": {
-        "u_has_trait": "PROF_CLEANSINGFLAME",
+        "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
         "yes": "...hunter.",
         "no": "You shouldn't be here, meddling in things beyond your understanding.  Might get yourself hurt."
       }
@@ -14,18 +14,18 @@
     "responses": [
       {
         "text": "[MISSION] I'm here to put a stop to this.",
-        "condition": { "and": [ { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } }, { "u_has_mission": "MISSION_CF_GM_3" } ] },
+        "condition": { "and": [ { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } }, { "u_has_mission": "MISSION_CF_GM_3" } ] },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_ITS_TIME_TO_STOP"
       },
       {
         "text": "...lanius.",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2"  ] },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LANIUS",
         "opinion": { "value": 1 }
       },
       {
         "text": "[ATTACK] Ecce, sanguinem magum...",
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "effect": "insult_combat",
         "topic": "TALK_DONE",
         "opinion": { "value": -1 }
@@ -37,17 +37,17 @@
       },
       {
         "text": "Who are you?",
-        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE" ] } },
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE" ] } },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHO"
       },
       {
         "text": "What can you tell me about this place?",
-        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE" ] } },
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE" ] } },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHERE"
       },
       {
         "text": "I'll just be going...",
-        "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } },
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } },
         "trial": { "type": "PERSUADE", "difficulty": 5 },
         "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LEAVE", "opinion": { "value": -2 } },
         "failure": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_NICE_TRY", "opinion": { "value": -4 } }
@@ -158,10 +158,9 @@
     "type": "talk_topic",
     "dynamic_line": "A hunter of hunters.  As you've surely seen, the others can't quite keep themselves from falling to pieces, often literally.",
     "responses": [
-      { "text": "Oh.  I see.", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_MISGUIDED" },
+      { "text": "Oh.  I see.", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE" },
       {
         "text": "I'll just be going...",
-        "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } },
         "trial": { "type": "PERSUADE", "difficulty": 5 },
         "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LEAVE", "opinion": { "value": -2, "fear": -1 } },
         "failure": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_NICE_TRY", "opinion": { "value": -4, "fear": -2 } }
@@ -194,14 +193,12 @@
     "responses": [
       {
         "text": "Who are you?",
-        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_SANGUINE" ] } },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHO"
       },
       { "text": "Never mind...", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE" },
       { "text": "[ATTACK] Fuck off.", "topic": "TALK_DONE", "effect": "insult_combat" },
       {
         "text": "I'll just be going...",
-        "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" }, "opinion": { "anger": 1 } },
         "trial": { "type": "PERSUADE", "difficulty": 5 },
         "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LEAVE", "opinion": { "value": -2, "fear": -1 } },
         "failure": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_NICE_TRY", "opinion": { "value": -4, "fear": -2 } }

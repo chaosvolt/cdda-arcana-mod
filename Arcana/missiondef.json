@@ -194,9 +194,7 @@
     "difficulty": 2,
     "value": 10000,
     "start": {
-      "effect": [
-        { "u_add_effect": "already_asked_deacon", "duration": "PERMANENT" }
-      ],
+      "effect": [ { "u_add_effect": "already_asked_deacon", "duration": "PERMANENT" } ],
       "assign_mission_target": {
         "om_terrain": "cf_church_4",
         "om_special": "cf_rural_church",
@@ -220,10 +218,7 @@
       "failure": "How in God's name did you fail at this?"
     },
     "end": {
-      "effect": [
-        { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" },
-        { "u_buy_item": "FMCNote", "count": 2 }
-      ]
+      "effect": [ { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" }, { "u_buy_item": "FMCNote", "count": 2 } ]
     }
   },
   {
@@ -248,7 +243,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 4 } ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_1",
@@ -279,7 +274,7 @@
     "name": "Deliver Trade Arrangements",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,
-    "value": 10000,
+    "value": 12500,
     "item": "cf_rep_trade_receipt",
     "start": {
       "effect": [ { "u_buy_item": "cf_rep_trade_arrangement" }, { "u_buy_item": "CF_golden_scale", "count": 20 } ],
@@ -293,13 +288,13 @@
       "accepted": "Thank you.  The merchant requires an advance payment, usually surplus scavenged supplies or precious metals.  This should be sufficient to complete the arrangement, we use these to set aside measured amounts of material for repairing our equipment.  With your help we'll be able to focus our efforts on making this place livable, and once the trade is settled that'll give us more breathing room.  Hopefully by the time supplies start running low again, we'll have a few more of us around to take care of ourselves.",
       "rejected": "Please, whenever you're able to speak to me again, we can't rely exclusively on scavenging for very long, as few people we have to spare for the task.",
       "advice": "If you can talk them into accepting a lower rate for the initial payment, you can keep what's left over.  Not many people see value in gold now, but it has some uses all the same.  The repair blanks we use are stamped with a known weight and purity, which is better than any random scrap.",
-      "inquire": "Has the center agreed to our offer?  They usually provide a receipt confirming the arrangments have been made.",
-      "success": "Thank you.  We're a bit closer to having the area built up into a usable sanctum.  I just hope that there are more of us out there, that heed our call.  I'll have additional work for you as well.",
+      "inquire": "Has the center agreed to our offer?  They usually provide a receipt confirming the arrangements have been made.",
+      "success": "Thank you.  We're a bit closer to having the area built up into a usable sanctum.  I just hope that there are more of us out there, that heed our call.  I can spare a bit more for your trouble, as well.  I'll have additional work for you as well.",
       "success_lie": "What do you think you're trying to pull?",
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 5 } ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_1",
@@ -320,7 +315,7 @@
     "name": "Kill Unknown Monster",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
-    "value": 150000,
+    "value": 20000,
     "start": {
       "assign_mission_target": { "om_terrain": "forest_thick", "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 5 },
       "update_mapgen": { "place_monster": [ { "monster": "mon_flesh_angel", "x": 11, "y": 11, "target": true } ] }
@@ -341,7 +336,8 @@
     "end": {
       "effect": [
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" }
+        { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
+        { "u_buy_item": "CF_golden_scale", "count": 8 }
       ],
       "update_mapgen": [
         {
@@ -383,20 +379,14 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "item": "scourge_staff",
-    "value": 150000,
+    "value": 20000,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_2",
-    "start": {
-      "assign_mission_target": { "om_terrain": "strange_grove", "reveal_radius": 3, "z": 0 }
-    },
+    "start": { "assign_mission_target": { "om_terrain": "strange_grove", "reveal_radius": 3, "z": 0 } },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
-        {
-          "om_terrain": "cf_church_1",
-          "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_GM_1_a"
-        },
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_1_a" },
         {
           "om_terrain": "cf_church_2",
           "om_special": "cf_rural_church",
@@ -433,20 +423,14 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "item": "hand_of_armok",
-    "value": 150000,
+    "value": 30000,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_3",
     "start": { "assign_mission_target": { "om_terrain": "curious_structure", "reveal_radius": 3, "z": 0 } },
     "end": {
-      "effect": [
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
-      ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
       "update_mapgen": [
-        {
-          "om_terrain": "cf_church_1",
-          "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_GM_2_a"
-        },
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_2_a" },
         {
           "om_terrain": "cf_church_2",
           "om_special": "cf_rural_church",
@@ -482,7 +466,7 @@
     "name": "Cleanse Sanguinist Sect",
     "goal": "MGOAL_ASSASSINATE",
     "difficulty": 10,
-    "value": 300000,
+    "value": 30000,
     "start": {
       "assign_mission_target": {
         "om_terrain": "sanguine_holdout_1",
@@ -502,7 +486,11 @@
       ]
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" } ],
+      "effect": [
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
+        { "u_buy_item": "CF_golden_scale", "count": 12 }
+      ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_1",

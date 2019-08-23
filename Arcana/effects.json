@@ -429,6 +429,11 @@
   },
   {
     "type": "effect_type",
+    "id": "cf_hunter_motive",
+    "//": "Effect for players, marks certain professions as having explained to the mage hunter guards why their mere presence gives them the heebie-jeebies.  Intended to be permanent."
+  },
+  {
+    "type": "effect_type",
     "id": "cf_mission_1",
     "//": "Effect for players, marks them as being trustworthy and known to Sofia's camp.  Intended to be permanent."
   },

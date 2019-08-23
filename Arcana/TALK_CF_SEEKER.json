@@ -3,7 +3,7 @@
     "type": "talk_topic",
     "id": "TALK_CF_SEEKER",
     "dynamic_line": {
-      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
       "yes": { "u_male": "Welcome, Brother.  May you find peace here.", "no": "Welcome, Sister.  May you find peace here." },
       "no": {
         "u_has_trait": "PROF_SANGUINE",
@@ -68,7 +68,7 @@
     "id": "TALK_CF_SEEKER_SPIRITUAL",
     "type": "talk_topic",
     "dynamic_line": {
-      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
       "yes": "\"Cast aside your schisms and strife. It has ended countless groups, but it shall not end us.  We are brothers and sisters, and we shall respect the gods in equal measure, disparate though they may be.\"  We are more than simply people of the book together with heathens, we are brethren.  Our duties demand it.",
       "no": "Correct, but the circumstances that warranted our joining were quite severe.  Over the years, the others have worked hard to keep us focused on our goal of protecting others.  As one of our tenets states, \"we are brothers and sisters, and we shall respect the gods in equal measure, disparate though they may be.\"  If that is what it takes in these trying times, so be it."
     },

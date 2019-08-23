@@ -3,10 +3,10 @@
     "type": "talk_topic",
     "id": "TALK_CF_GM",
     "dynamic_line": {
-      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
       "yes": { "u_male": "Greetings, Brother.  This is a sacred place.", "no": "Greetings, Sister.  This is a sacred place." },
       "no": {
-        "u_has_trait": "PROF_SANGUINE",
+        "u_has_any_trait": [ "PROF_SANGUINE", "THRESH_DRAGONBLOOD" ],
         "yes": {
           "u_has_effect": "cf_mission_1",
           "yes": "A pleasant surprise to see you working with us.  What do you require?",
@@ -19,7 +19,15 @@
             "yes": "Welcome, Keeper.  What do you require?",
             "no": "Servant of the otherworldly, you are welcome here, so long as you cause no trouble."
           },
-          "no": "Welcome to our sanctum."
+          "no": {
+            "u_has_trait": "PROF_ARCANIST2",
+            "yes": {
+              "u_has_effect": "cf_mission_1",
+              "yes": "Welcome back.  What do you need?",
+              "no": "I can sense the touch of the otherworldly about you.  For what purpose are you here?"
+            },
+            "no": "Welcome to our sanctum."
+          }
         }
       }
     },
@@ -33,12 +41,22 @@
       },
       {
         "text": "What other arcane groups are out there?",
-        "condition": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_CLEANSINGFLAME", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": {
+          "u_has_any_trait": [
+            "PROF_ARCANIST",
+            "PROF_ARCANIST2",
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2",
+            "PROF_SANGUINE",
+            "PROF_CHALICE",
+            "THRESH_VEIL"
+          ]
+        },
         "topic": "TALK_CF_GM_ARCANISTS"
       },
       {
         "text": "What can you tell me about your group?",
-        "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } },
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } },
         "topic": "TALK_CF_GM_GROUP"
       },
       {
@@ -102,6 +120,7 @@
   {
     "id": "TALK_CF_GM_ARCANISTS",
     "type": "talk_topic",
+    "//": "It can be presumed that Johnathan can sense the difference between a member of the Sanguine Order and a non-Order Dragonblood, so only refers to them as sanguinists in the generic sense.",
     "dynamic_line": {
       "u_has_trait": "PROF_SANGUINE",
       "yes": "A few scattered signs of your order, despite our conflict almost wiping us both out.  The Keepers of the Oath seem to be just about extinct too, largely thanks to your fellows.  That just leaves various cults and handfuls of independent practitioners, as far as I'm aware.  I can only pray that they don't make things worse, with no one left to guide them.",

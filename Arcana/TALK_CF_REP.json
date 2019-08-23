@@ -13,7 +13,7 @@
           "no": "Greetings.  I know you are, or were, a follower of the Path to Power.  For what purpose have you come here?"
         },
         "no": {
-          "u_has_trait": "PROF_CLEANSINGFLAME",
+          "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
           "yes": {
             "u_male": "Welcome, Brother.  I knew we were not alone just yet.",
             "no": "Welcome, Sister.  I knew we were not alone just yet."
@@ -176,7 +176,7 @@
     "type": "talk_topic",
     "id": "TALK_CF_REP_JOHNATHAN_ADVICE_2",
     "dynamic_line": {
-      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
       "yes": "I know about that place, yes.  The Sanctum of St. John.  Don't know if you ever had the chance to visit it before all this happened, but it was the only sanctum built by our own hand.  Only one I know of, at least.  Anything you wish to know, I will answer as best as I can recall.",
       "no": "I know about that place, yes.  We called it the Sanctum of St. John.  As far as I am aware, it was the only refuge we constructed ourselves, rather than being sheltered by our contacts elsewhere.  What do you wish to know about it?"
     },
@@ -219,7 +219,7 @@
     "type": "talk_topic",
     "id": "TALK_CF_REP_JOHNATHAN_ADVICE_3",
     "dynamic_line": {
-      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
       "yes": "You know your duty.  \"If they are a threat to humanity, be they blood mage or bandit, offer no mercy and expect none in return.\"  Those among the Order who are willing to abandon their ways, or even merely offer truce to us, are vanishingly rare.  They are continuing their studies, continuing to prey upon the innocent to fuel their practices.  May Odin grant you victory in battle.",
       "no": {
         "u_has_trait": "PROF_SANGUINE",
@@ -231,7 +231,7 @@
       {
         "text": "\"Dii supra et infra, dōnēs nobis virtus.\"  I'll deal with them.",
         "switch": true,
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "topic": "TALK_CF_REP"
       },
       {
@@ -350,7 +350,7 @@
     "responses": [
       {
         "text": "What did you mean by heathen?",
-        "condition": { "not": { "u_has_trait": "PROF_CLEANSINGFLAME" } },
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } },
         "topic": "TALK_CF_REP_HEATHEN"
       },
       { "text": "And what cause would that be?", "topic": "TALK_CF_REP_CAUSE" },
@@ -365,7 +365,9 @@
       {
         "text": "What do you mean, arcane?",
         "condition": {
-          "not": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ] }
+          "not": {
+            "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
+          }
         },
         "topic": "TALK_CF_REP_ARCANE"
       },
@@ -400,7 +402,7 @@
     "type": "talk_topic",
     "id": "TALK_CF_REP_CAUSE",
     "dynamic_line": {
-      "u_has_trait": "PROF_CLEANSINGFLAME",
+      "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
       "yes": "An interesting question, from one of my kin.  We have not strayed from our goal of protecting the innocent against the dangers of the Beyond.",
       "no": "Before all this boiled over, who would believe us?  With the dead rising, and strange powers decaying the very fabric of reality, we can afford to be more open about our nature.  We seek to protect people from dangerous magic and otherworldly monsters.  The first signs of these threats were isolated, forbidden knowledge slipping through the cracks, minor symptoms of whatever caused this.  Now it is more than any one group can handle, I fear."
     },
@@ -409,7 +411,16 @@
         "text": "Magic?  I'm still not sure I can believe that.",
         "condition": {
           "not": {
-            "u_has_any_trait": [ "PROF_ARCANIST", "PROF_CLEANSINGFLAME", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
+            "u_has_any_trait": [
+              "PROF_ARCANIST",
+              "PROF_ARCANIST2",
+              "PROF_CLEANSINGFLAME",
+              "PROF_CLEANSINGFLAME2",
+              "PROF_SANGUINE",
+              "PROF_CHALICE",
+              "THRESH_VEIL",
+              "THRESH_DRAGONBLOOD"
+            ]
           }
         },
         "topic": "TALK_CF_REP_MAGIC"
@@ -444,7 +455,7 @@
       {
         "text": "Is this all that's left of us?",
         "switch": true,
-        "condition": { "u_has_trait": "PROF_CLEANSINGFLAME" },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "topic": "TALK_CF_REP_CF_LEFT"
       },
       { "text": "The Cleansing Flame?", "switch": true, "default": true, "topic": "TALK_CF_REP_CF_QUERY" },
@@ -476,14 +487,18 @@
       {
         "text": "What do you mean, arcane?",
         "condition": {
-          "not": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ] }
+          "not": {
+            "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
+          }
         },
         "topic": "TALK_CF_REP_ARCANE"
       },
       {
         "text": "The Veil?",
         "condition": {
-          "not": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ] }
+          "not": {
+            "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
+          }
         },
         "topic": "TALK_CF_REP_VEIL"
       },
