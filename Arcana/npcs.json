@@ -16,6 +16,7 @@
     "type": "npc",
     "id": "cf_deacon",
     "//": "Provides plot hook to visit the rural church.",
+    "name_unique": "Dorian Vance",
     "name_suffix": "Deacon",
     "gender": "male",
     "class": "NC_CF_DEACON",
