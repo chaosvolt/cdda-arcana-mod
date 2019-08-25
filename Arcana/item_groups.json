@@ -289,5 +289,13 @@
     "id": "engraved_stone",
     "type": "item_group",
     "items": [ [ "engraved_stone", 1 ] ]
+  },
+  {
+    "id": "NC_EVAC_SHOPKEEP_misc",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "CF_golden_scale", "count-min": 10, "count-max": 20, "prob": 20 }
+    ]
   }
 ]

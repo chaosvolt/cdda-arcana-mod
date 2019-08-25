@@ -82,7 +82,7 @@
   {
     "id": "cleansing_flame_crafting",
     "type": "item_group",
-    "items": [ { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8 }, [ "gold_small", 15 ], [ "silver_small", 15 ], [ "feather", 15 ], [ "scrap", 20 ], [ "copper", 25 ] ]
+    "items": [ { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8 }, [ "gold_small", 5 ], [ "silver_small", 15 ], [ "feather", 15 ], [ "scrap", 20 ], [ "copper", 25 ] ]
   },
   {
     "id": "cleansing_flame_casualties",

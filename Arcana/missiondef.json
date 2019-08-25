@@ -208,7 +208,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "Here's hoping it goes well...",
-      "offer": "As much as I'd like to return to check on the people shelthering at the church, I've been caught up in helping out here.  If you could pay them a visit, ask to speak with Sofia McKinnon.  Could you send her my regards, and my apologies for having been delayed in returning?",
+      "offer": "As much as I'd like to return to check on the people sheltering at the church, I've been caught up in helping out here.  If you could pay them a visit, ask to speak with Sofia McKinnon.  Could you send her my regards, and my apologies for having been delayed in returning?",
       "accepted": "Thank you.  No doubt she will have work for you as well, if you ask her about it.  If your travels take you back here, please keep me informed.  I don't have much I can offer as a reward, but I'll do what I can.  Godspeed.",
       "rejected": "I understand.  There is much to be done even here.  Still, I suspect I'll be busy here for much longer than I expected, so if you get the chance please see me about it.  I don't have much to offer in return, but I'll scrounge up what I can.",
       "advice": "It's a rural church along the side of the road.  The survivors there should be able to help you if needed.  I'm afraid I don't know much else about the group, as Father Alexander was the one that knew them personally.",
@@ -218,7 +218,7 @@
       "failure": "How in God's name did you fail at this?"
     },
     "end": {
-      "effect": [ { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" }, { "u_buy_item": "FMCNote", "count": 2 } ]
+      "effect": [ { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" }, { "u_buy_item": "FMCNote", "count": 5 } ]
     }
   },
   {
@@ -243,7 +243,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 4 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 2 } ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_1",
@@ -337,7 +337,7 @@
       "effect": [
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
-        { "u_buy_item": "CF_golden_scale", "count": 8 }
+        { "u_buy_item": "CF_golden_scale", "count": 6 }
       ],
       "update_mapgen": [
         {

@@ -70,7 +70,7 @@
     "dynamic_line": {
       "u_has_effect": "rural_church_aware",
       "yes": "Interesting to see they hired you to help out.  Well then, hope they informed you of the details.  Payment's in advance, twenty of their scale coins.  Nowhere near as valuable these days, but it's not completely useless, and I trust what they bring to actually be twenty-four carat.",
-      "no": "Huh, usually Sofia's the one to deliver their invoice.  Alright, hopefully she told you how this works.  Payment's in advance, twenty of their scale coins.  Nowhere near as valuable these days, but it's not completely useless, and at least they can comfirm it's not half brass or whatever."
+      "no": "Huh, usually Sofia's the one to deliver their invoice.  Alright, hopefully she told you how this works.  Payment's in advance, twenty of their scale coins.  Nowhere near as valuable these days, but it's not completely useless, and at least they can confirm it's not half brass or whatever."
     },
     "responses": [
       {
@@ -124,24 +124,24 @@
   {
     "id": "TALK_EVAC_MERCHANT_CF_MISSION_CASH",
     "type": "talk_topic",
-    "dynamic_line": "If you have the merch, sure.  I've accepted that group's offers mostly since they've been reliable customers.  I've been honoring them at about fifty percent a Certified Note each, so that'll be 10 merch.",
+    "dynamic_line": "If you have the cash, sure.  I've accepted that group's offers mostly since they've been reliable customers.  I've been honoring their deals pretty close to what they figure it at, so 175 Merch should cover it.",
     "responses": [
       {
         "text": "You have a deal.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "u_has_items": { "item": "FMCNote", "count": 10 } },
-        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "FMCNote", "count": 10 } ]
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 175 } },
+        "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "FMCNote", "count": 175 } ]
       },
       {
         "text": "On second thought, I'll pay in scales.  Here you go.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "and": [ { "u_has_items": { "item": "FMCNote", "count": 10 } }, { "u_has_items": { "item": "CF_golden_scale", "count": 20 } } ] },
+        "condition": { "and": [ { "u_has_items": { "item": "FMCNote", "count": 175 } }, { "u_has_items": { "item": "CF_golden_scale", "count": 20 } } ] },
         "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 20 } ]
       },
       {
         "text": "I don't have enough cash, so I'll pay in gold.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "and": [ { "not": { "u_has_items": { "item": "FMCNote", "count": 10 } } }, { "u_has_items": { "item": "CF_golden_scale", "count": 20 } } ] },
+        "condition": { "and": [ { "not": { "u_has_items": { "item": "FMCNote", "count": 175 } } }, { "u_has_items": { "item": "CF_golden_scale", "count": 20 } } ] },
         "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 20 } ]
       },
       { "text": "Nevermind.  I'll be back later.", "topic": "TALK_DONE" }
@@ -166,7 +166,7 @@
   {
     "id": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL",
     "type": "talk_topic",
-    "dynamic_line": "Sorry, 20 golden scales is as low as I can.  Gold's not as handy now that the world's ended. I'm already honoring half its old value.",
+    "dynamic_line": "Sorry, 20 golden scales is as low as I can.  Gold's not as handy now that the world's ended. I'm already taking their offer just about at face value.",
     "responses": [
       {
         "text": "Okay, here you go.",
