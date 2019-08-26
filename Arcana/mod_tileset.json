@@ -33,10 +33,6 @@
           { "id": "overlay_mutation_ARCANA_DRAGONCLAWS", "fg": 13, "bg": 0 },
           { "id": "overlay_wielded_thunder_sigil", "fg": 14, "bg": 0 },
           { "id": "flame_talisman", "fg": 15, "bg": 0 },
-          { "id": "candle_warding", "fg": 22, "bg": 0 },
-          { "id": "candle_warding_active", "fg": 21, "bg": 0 },
-          { "id": "f_candle_barrier", "fg": 21, "bg": 20 },
-          { "id": "f_candle_barrier_playermade", "fg": 22, "bg": 20 },
           { "id": "water_talisman", "fg": 23, "bg": 0 },
           { "id": "earth_talisman", "fg": 24, "bg": 0 },
           { "id": "red_black_vulnerary", "fg": 25, "bg": 0 },
@@ -56,7 +52,11 @@
           { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 1, "bg": 0 },
           { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 2, "bg": 0 },
           { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 3, "bg": 0 },
-          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 4, "bg": 0 }
+          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 4, "bg": 0 },
+          { "id": "candle_warding", "fg": 22, "bg": 0 },
+          { "id": "candle_warding_active", "fg": 21, "bg": 0 },
+          { "id": "f_candle_barrier", "fg": 21, "bg": 20 },
+          { "id": "f_candle_barrier_playermade", "fg": 22, "bg": 20 }
         ]
       }
     ]
