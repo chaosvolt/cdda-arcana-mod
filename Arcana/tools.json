@@ -1413,13 +1413,14 @@
     "type": "TOOL",
     "name": "candle of warding",
     "name_plural": "candle of warding",
-    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  It can be used to place a magical barrier, or used to project a faint light.  The barrier this item creates is not indestructable, but it is tough.",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  It can be used to place a magical barrier, or used to project a faint light.  The barrier this item creates is not indestructible, but it is tough.",
     "weight": 100,
     "volume": 1,
     "price": 1000,
     "material": "essencemat",
     "symbol": ",",
     "color": "white",
+    "looks_like": "candle",
     "use_action": [
       {
         "target": "candle_warding_active",
