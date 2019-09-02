@@ -56,6 +56,17 @@
     ]
   },
   {
+    "type": "ter_furn_transform",
+    "id": "arcana_pulse",
+    "fail_message": "The ground weathers the blast unscathed.",
+    "terrain": [
+      { "result": "t_dirt", "valid_flags": [ "BLOCK_WIND", "INDOORS" ] }
+    ],
+    "furniture": [
+      { "result": "f_null", "valid_flags": [ "BLOCK_WIND", "INDOORS" ] }
+    ]
+  },
+  {
     "type": "mapgen",
     "update_mapgen_id": "arcana_dummy",
     "method": "json",
