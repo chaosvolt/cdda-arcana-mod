@@ -587,10 +587,10 @@
   },
   {
     "type": "mutation",
-    "//": "Note: Value of Drain Life is 2, and value of Surge of Adrenaline is also 2.",
+    "//": "Note: Value of Drain Life is 6, and value of Surge of Adrenaline is also 2.",
     "id": "SPELL_HUNT_DRAGONBLOOD",
     "name": "Mark of The Hunt",
-    "points": 4,
+    "points": 8,
     "description": "Inhuman power has granted you abilities to further hone your lethality, in the form of life-draining magic and the ability to spark a surge of adrenaline at will.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,

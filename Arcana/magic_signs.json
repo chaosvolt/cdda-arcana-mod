@@ -67,7 +67,8 @@
     "name_plural": "Indigo Seal: Free Action",
     "description": "A small ornament of vibrant purple petals.  Activate it to focus your mind and create a magic sign, granting protection against paralytic effects and other hindrances.  This will expend the item entirely.",
     "color": "magenta",
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_free_action", "no_fail": true, "level": 10 }  },
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_free_action", "no_fail": true, "level": 10 }
+  },
   {
     "id": "totem_invis",
     "copy-from": "totem_base",
