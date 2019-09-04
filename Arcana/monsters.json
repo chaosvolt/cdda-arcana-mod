@@ -645,6 +645,7 @@
     "type": "MONSTER",
     "name": "summoned dark wyrm",
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "special_attacks": [
       {
         "type": "bite",
@@ -654,7 +655,7 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "SEES", "REGENERATES_1" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
   },
   {
@@ -664,9 +665,10 @@
     "name": "summoned fiend",
     "species": [ "NETHER" ],
     "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "upgrades": { "half_life": 8, "into": "mon_zombie_brute" } }
   },
   {
@@ -675,9 +677,10 @@
     "type": "MONSTER",
     "name": "summoned jabberwock",
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
   },
   {
@@ -686,10 +689,11 @@
     "type": "MONSTER",
     "name": "summoned homunculus",
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "special_attacks": [ [ "SMASH", 25 ] ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -697,9 +701,10 @@
     "copy-from": "mon_thing",
     "type": "MONSTER",
     "name": "summoned thing",
+    "path_settings": { "max_dist": 10 },
     "death_drops": {  },
     "special_attacks": [ [ "RANGED_PULL", 20 ], [ "LUNGE", 10 ] ],
-    "extend": { "flags": [ "SEES", "REGENERATES_1" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
   },
   {
@@ -708,9 +713,10 @@
     "type": "MONSTER",
     "name": "summoned skeletal dog",
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] }
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
   },
   {
     "id": "mon_skeleton_summoned",
@@ -718,10 +724,13 @@
     "type": "MONSTER",
     "name": "summoned skeleton",
     "species": [ "NETHER" ],
+    "hp": 50,
+    "speed": 80,
+    "path_settings": { "max_dist": 10 },
     "attack_effs": [ { "id": "stunned", "duration": 5, "chance": 30 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "upgrades": { "half_life": 15, "into": "mon_skeleton_hulk" } }
   },
   {
@@ -730,20 +739,22 @@
     "type": "MONSTER",
     "name": "summoned vortex",
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_drops": {  },
     "melee_skill": 4,
     "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
-    "extend": { "flags": [ "SEES", "ELECTRIC", "REGENERATES_10" ] }
+    "extend": { "flags": [ "SEES", "ELECTRIC", "REGENERATES_10", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
   },
   {
     "id": "mon_yugg_summoned",
     "copy-from": "mon_yugg",
     "type": "MONSTER",
     "name": "summoned yugg",
+    "path_settings": { "max_dist": 10 },
     "special_attacks": [ [ "PARA_STING", 20 ] ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
   },
   {
@@ -755,7 +766,7 @@
     "death_drops": {  },
     "name": "summoned kreck",
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -764,10 +775,11 @@
     "type": "MONSTER",
     "name": "summoned triffid",
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 10 } ],
-    "extend": { "flags": [ "REGENERATES_1", "VENOM" ] },
+    "extend": { "flags": [ "REGENERATES_1", "VENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -776,10 +788,11 @@
     "type": "MONSTER",
     "name": "summoned flesh angel",
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "ATTACKMON" ] }
   },
   {
@@ -787,10 +800,11 @@
     "copy-from": "mon_hunting_horror",
     "type": "MONSTER",
     "name": "summoned hunting horror",
+    "path_settings": { "max_dist": 10 },
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH" ] }
   },
   {
@@ -798,6 +812,7 @@
     "copy-from": "mon_mi_go",
     "type": "MONSTER",
     "name": "summoned mi-go",
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": {  },
@@ -809,11 +824,12 @@
     "copy-from": "mon_flying_polyp",
     "type": "MONSTER",
     "name": "summoned flying polyp",
+    "path_settings": { "max_dist": 10 },
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
-    "extend": { "flags": [ "SEES", "REGENERATES_1" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
   },
   {
@@ -821,8 +837,9 @@
     "copy-from": "mon_shoggoth",
     "type": "MONSTER",
     "name": "summoned shoggoth",
+    "path_settings": { "max_dist": 10 },
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_10" ] },
+    "extend": { "flags": [ "REGENERATES_10", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "ABSORBS_SPLITS", "REGENERATES_50" ] }
   },
   {
@@ -834,10 +851,11 @@
     "melee_cut": 2,
     "vision_day": 2,
     "vision_night": 50,
+    "path_settings": { "max_dist": 10 },
     "death_drops": {  },
     "death_function": [ "MELT" ],
-    "special_attacks": [ [ "PARROT", 0 ] ],
-    "extend": { "flags": [ "REGENERATES_IN_DARK" ] },
+    "special_attacks": [ [ "PARROT", 900 ] ],
+    "extend": { "flags": [ "REGENERATES_IN_DARK", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS" ] }
   },
   {
@@ -849,8 +867,9 @@
     "death_function": [ "MELT" ],
     "vision_day": 2,
     "vision_night": 50,
-    "special_attacks": [ [ "PARROT", 0 ] ],
-    "extend": { "flags": [ "REGENERATES_IN_DARK" ] },
+    "path_settings": { "max_dist": 10 },
+    "special_attacks": [ [ "PARROT", 900 ] ],
+    "extend": { "flags": [ "REGENERATES_IN_DARK", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "SMELLS" ] }
   }
 ]
