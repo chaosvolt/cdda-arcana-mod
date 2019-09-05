@@ -831,7 +831,7 @@
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
     "effect": "target_attack",
-    "effect_str": "cleric_warding",
+    "effect_str": "poison_ward",
     "min_range": 1,
     "max_range": 10,
     "range_increment": 0.9,
