@@ -67,6 +67,14 @@
     ]
   },
   {
+    "type": "ter_furn_transform",
+    "id": "arcana_barrier",
+    "fail_message": "The barrier flickers out of existence.",
+    "furniture": [
+      { "result": "f_force_barrier", "valid_furniture": [ "f_null" ] }
+    ]
+  },
+  {
     "type": "mapgen",
     "update_mapgen_id": "arcana_dummy",
     "method": "json",

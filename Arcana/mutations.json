@@ -638,10 +638,11 @@
   },
   {
     "type": "mutation",
+    "//": "ID retained, effect changed as teleport is of more limited use."
     "id": "SPELL_TELEPORT",
     "name": "Sign of Alteration IV",
     "points": 3,
-    "description": "\"If you are faced with insurmountable obstacles, there will always be a path around it.\"\nUnknowable forces have given you a fourth gift, that can allow you to teleport away at random.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "\"If your enemy seeks escape or refuge, you will learn to halt them.\"\nUnknowable forces have given you a fourth gift, that can allow you to conjure barriers of light.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_LOCKPICK2" ],

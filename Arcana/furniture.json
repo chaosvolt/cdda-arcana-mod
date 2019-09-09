@@ -152,5 +152,20 @@
       "sound_fail": "whump!",
       "items": [ { "item": "rock", "count": [ 2, 5 ] } ]
     }
+  },
+  {
+    "id": "f_force_barrier",
+    "type": "furniture",
+    "name": "shimmering barrier",
+    "description": "A strange wavering distortiion in the air, offering the faintest hint of illumination.  It hardens into a crackling wall of light when struck, but a gentle touch could dismiss it...",
+    "symbol": "#",
+    "looks_like": "t_reinforced_glass",
+    "bgcolor": [ "blue" ],
+    "move_cost_mod": -2,
+    "light_emitted": 1,
+    "required_str": -1,
+    "flags": [ "NOITEM", "TRANSPARENT" ],
+    "deployed_item": "candle_barrier_aftermath",
+    "examine_action": "deployed_furniture"
   }
 ]
