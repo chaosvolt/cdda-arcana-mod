@@ -40,16 +40,6 @@
     "flags": [ "ONLY_ONE" ]
   },
   {
-    "id": "halo_light",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "crystal halo",
-    "description": "A strange radiance permeating your body, giving off a soft glow.",
-    "color": "white",
-    "artifact_data": { "effects_worn": [ "AEP_GLOW" ] },
-    "flags": [ "ONLY_ONE" ]
-  },
-  {
     "id": "halo_drainlife",
     "copy-from": "spell_base",
     "type": "TOOL_ARMOR",
@@ -58,72 +48,6 @@
     "color": "dark_gray",
     "artifact_data": { "effects_worn": [ "AEP_SAP_LIFE" ] },
     "flags": [ "ONLY_ONE" ]
-  },
-  {
-    "id": "halo_invis",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "jade halo",
-    "description": "A strange radiance permeating your body, granting you invisibility.",
-    "color": "green",
-    "artifact_data": { "effects_worn": [ "AEP_INVISIBLE", "AEP_STEALTH" ] },
-    "flags": [ "ONLY_ONE" ]
-  },
-  {
-    "id": "arcana_barrier_acid",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "shimmering aura",
-    "description": "A strange aura enveloping you completely.  It will protect you from contact with acid, but other physical harm can disrupt the barrier.",
-    "color": "green",
-    "material": [ "essencemat_acid" ],
-    "covers": [ "HEAD", "MOUTH", "EYES", "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
-    "coverage": 100,
-    "material_thickness": 1,
-    "environmental_protection": 1,
-    "flags": [
-      "AURA",
-      "SEMITANGIBLE",
-      "STURDY",
-      "ONLY_ONE"
-    ]
-  },
-  {
-    "id": "arcana_barrier_fire",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "soothing aura",
-    "description": "A strange aura enveloping you completely.  It will grant you protection from flame, but other physical harm can disrupt it.",
-    "color": "light_red",
-    "material": [ "essencemat_fire" ],
-    "covers": [ "HEAD", "MOUTH", "EYES", "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
-    "coverage": 100,
-    "material_thickness": 1,
-    "environmental_protection": 1,
-    "flags": [
-      "AURA",
-      "SEMITANGIBLE",
-      "STURDY"
-    ]
-  },
-  {
-    "id": "arcana_barrier_protection",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "radiant aura",
-    "description": "A strange aura enveloping you completely.  It will guard the body against physical harm and protect against assaults on the mind, but does not protect against anything else.",
-    "color": "white",
-    "material": [ "essencemat_damage" ],
-    "artifact_data": { "effects_worn": [ "AEP_PSYSHIELD" ] },
-    "covers": [ "HEAD", "MOUTH", "EYES", "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
-    "coverage": 100,
-    "material_thickness": 3,
-    "environmental_protection": 1,
-    "flags": [
-      "AURA",
-      "SEMITANGIBLE",
-      "STURDY"
-    ]
   },
   {
     "id": "gilded_aegis",

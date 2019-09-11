@@ -181,5 +181,15 @@
     "description": "Inhuman power has granted you the ability to summon a jabberwock.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false
+  },
+  {
+    "id": "halo_light",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "crystal halo",
+    "description": "A strange radiance permeating your body, giving off a soft glow.",
+    "color": "white",
+    "artifact_data": { "effects_worn": [ "AEP_GLOW" ] },
+    "flags": [ "ONLY_ONE" ]
   }
 ]

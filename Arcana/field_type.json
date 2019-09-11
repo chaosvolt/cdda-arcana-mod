@@ -9,5 +9,24 @@
     "half_life": "15 minutes",
     "phase": "plasma",
     "display_field": true
+  },
+  {
+    "id": "fd_veil_light",
+    "type": "field_type",
+    "legacy_enum_id": 10,
+    "intensity_levels": [
+      {
+        "light_emitted": 1
+      },
+      {
+        "light_emitted": 5
+      },
+      {
+        "light_emitted": 10
+      }
+    ],
+    "half_life": "30 minutes",
+    "phase": "plasma",
+    "display_field": false
   }
 ]

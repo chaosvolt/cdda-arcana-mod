@@ -187,6 +187,19 @@
   },
   {
     "type": "effect_type",
+    "id": "heat_ward_true",
+    "name": [ "Ward Against Flame" ],
+    "desc": [ "Complete immunity to fire, and to related side effects." ],
+    "remove_message": "You feel a strange tingling sensation, as the ward against flame fades.",
+    "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
+    "decay_messages": [ [ "The ward against flame is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": "1 m",
+    "flags": [ "EFFECT_HEAT_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
     "id": "blood_clarity",
     "name": [ "Clarity of Blood" ],
     "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],
@@ -201,13 +214,26 @@
     "type": "effect_type",
     "id": "acid_ward",
     "name": [ "Ward Against Corrosion" ],
-    "desc": [ "Protection against lingering acid effects." ],
+    "desc": [ "Protection against lingering acid effects.  Direct contact will still harm you." ],
     "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
     "removes_effects": [ "corroding" ],
-    "decay_messages": [ [ "Your ward against corrosion  is waning.", "bad" ] ],
+    "decay_messages": [ [ "Your ward against corrosion is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": "1 m"
+  },
+  {
+    "type": "effect_type",
+    "id": "acid_ward_true",
+    "name": [ "Ward Against Acid" ],
+    "desc": [ "Complete immunity to acid damage, in addition to its aftereffects." ],
+    "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
+    "removes_effects": [ "corroding" ],
+    "decay_messages": [ [ "Your ward against acid is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 30,
+    "int_dur_factor": "1 m",
+    "flags": [ "EFFECT_ACID_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -230,6 +256,20 @@
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": "1 m"
+  },
+  {
+    "type": "effect_type",
+    "id": "cleric_warding_true",
+    "name": [ "Holy Ward" ],
+    "desc": [ "Heavy resistance to physical damage, protection from anomalous effects." ],
+    "remove_message": "The magical protection enveloping your body flickers and fades.",
+    "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
+    "decay_messages": [ [ "Your holy ward is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 30,
+    "int_dur_factor": "1 m",
+    "//": "Replace with resistances when implemented, physical immunities are way more OP than elemental immunities.",
+    "flags": [ "EFFECT_BASH_IMMUNE", "EFFECT_CUT_IMMUNE", "EFFECT_STAB_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -325,6 +365,34 @@
     "id": "arcana_aegis_mending",
     "blocks_effects": [ "bleed" ],
     "rating": "good"
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_invis",
+    "name": [ "Illusion Cloak" ],
+    "desc": [ "Light seems to warp around you in an unnatural manner, rendering you invisible and protecting against various perception-related hazards." ],
+    "remove_message": "The shroud of illusion magic around you fades.",
+    "//": "Immunity to blindness in general is the only way to make an effect reliably protect against flashbangs, so best justification is to counter things that mess with vision as a whole."
+    "removes_effects": [ "glowy_led", "laserlocked", "was_laserlocked", "glowing", "attention", "haslight", "glare", "snow_glare", "blind", "darkness", "no_sight", "visuals", "hallu" ],
+    "decay_messages": [ [ "The illusions enveloping you are starting to fade.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 18,
+    "int_dur_factor": "1 m",
+    "base_mods": { "per_mod": [ -2 ] },
+    "flags": [ "EFFECT_INVISIBLE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "lightning_ward_true",
+    "name": [ "Ward Against Lightning" ],
+    "desc": [ "Complete immunity to lightning." ],
+    "remove_message": "You feel an electric tingle as your protective magic fades.",
+    "removes_effects": [ "zapped" ],
+    "decay_messages": [ [ "The ward against lightning is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": "1 m",
+    "flags": [ "ELECTRIC_IMMUNE" ]
   },
   {
     "type": "effect_type",
