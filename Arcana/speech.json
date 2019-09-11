@@ -100,5 +100,65 @@
     "speaker": "mon_mi_go",
     "sound": "\"...sub malleo deorum!\"",
     "volume": 50
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_summoned",
+    "sound": "a faint, indistinct whisper.",
+    "volume": 3
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_summoned",
+    "sound": "quiet, otherworldly humming.",
+    "volume": 3
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_summoned",
+    "sound": "a soft buzzing noise.",
+    "volume": 3
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_summoned",
+    "sound": "an almost inaudible flap of wings.",
+    "volume": 3
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_summoned",
+    "sound": "\"Interloper...\"",
+    "volume": 4
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_snake_summoned",
+    "sound": "a faint, indistinct murmur.",
+    "volume": 3
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_snake_summoned",
+    "sound": "quiet, otherworldly voices.",
+    "volume": 3
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_snake_summoned",
+    "sound": "a faint hissing noise.",
+    "volume": 3
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_snake_summoned",
+    "sound": "an almost inaudible scraping sound.",
+    "volume": 3
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_shadow_snake_summoned",
+    "sound": "\"Cast aside...\"",
+    "volume": 4
   }
 ]

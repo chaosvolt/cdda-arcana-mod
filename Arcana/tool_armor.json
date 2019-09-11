@@ -126,6 +126,7 @@
     "name": "wyrmskin armor",
     "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it and various straps added.  Using it will conjure a spray of acid.",
     "material": [ "wyrmskin", "leather" ],
+    "covers": [ "LEGS", "TORSO", "ARMS", "FEET" ],
     "color": "green",
     "ammo": "essence_blood_type",
     "max_charges": 16,
@@ -135,7 +136,7 @@
     "environmental_protection": 10,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0 },
     "relative": { "weight": 722, "volume": 6, "price": 80000 },
-    "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS" ], "covers": [ "FEET" ] },
+    "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS" ] },
     "delete": { "flags": [ "VARSIZE" ] }
   },
   {
