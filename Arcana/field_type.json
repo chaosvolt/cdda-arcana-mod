@@ -3,26 +3,29 @@
     "id": "fd_veil_darkness",
     "type": "field_type",
     "intensity_levels": [
-      { "name": "shroud of darkness", "sym": "*", "color": "dark_gray", "transparent": false }
+      { "name": "shroud of darkness", "sym": "*", "color": "dark_gray", "transparent": false, "translucency": 25 },
+      { "translucency": 50 },
+      { "translucency": 0 }
     ],
     "priority": 9,
     "half_life": "15 minutes",
     "phase": "plasma",
-    "display_field": true
+    "display_field": true,
+    "display_items": false
   },
   {
     "id": "fd_veil_light",
     "type": "field_type",
-    "legacy_enum_id": 10,
     "intensity_levels": [
       {
-        "light_emitted": 1
-      },
-      {
-        "light_emitted": 5
-      },
-      {
+        "name": "strange light",
         "light_emitted": 10
+      },
+      {
+        "light_emitted": 20
+      },
+      {
+        "light_emitted": 30
       }
     ],
     "half_life": "30 minutes",

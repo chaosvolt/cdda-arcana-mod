@@ -372,7 +372,7 @@
     "name": [ "Illusion Cloak" ],
     "desc": [ "Light seems to warp around you in an unnatural manner, rendering you invisible and protecting against various perception-related hazards." ],
     "remove_message": "The shroud of illusion magic around you fades.",
-    "//": "Immunity to blindness in general is the only way to make an effect reliably protect against flashbangs, so best justification is to counter things that mess with vision as a whole."
+    "//": "Immunity to blindness in general is the only way to make an effect reliably protect against flashbangs, so best justification is to counter things that mess with vision as a whole.",
     "removes_effects": [ "glowy_led", "laserlocked", "was_laserlocked", "glowing", "attention", "haslight", "glare", "snow_glare", "blind", "darkness", "no_sight", "visuals", "hallu" ],
     "decay_messages": [ [ "The illusions enveloping you are starting to fade.", "bad" ] ],
     "rating": "good",
