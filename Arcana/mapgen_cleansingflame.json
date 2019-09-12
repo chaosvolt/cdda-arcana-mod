@@ -93,7 +93,34 @@
       { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "item": "corpse" }
+      { "group": "cf_corpse_combatants" }
+    ]
+  },
+  {
+    "id": "cf_corpse_combatants",
+    "//": "Various adult corpses, excluding versions that imply anything human was responsible.",
+    "type": "item_group",
+    "items": [
+      [ "corpse", 25 ],
+      [ "corpse_bloody", 25 ],
+      [ "corpse_generic_male", 15 ],
+      [ "corpse_generic_female", 10 ],
+      [ "corpse_painful", 10 ],
+      [ "corpse_halved_upper", 10 ],
+      [ "corpse_half_beheaded", 5 ]
+    ]
+  },
+  {
+    "id": "cleansing_flame_casualties_inferno",
+    "//": "For the bodies in the lowest level, likely killed by the spirit of fire.",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
+      { "item": "rmi2_corpse" }
     ]
   },
   {
@@ -286,7 +313,7 @@
         { "point": "trap", "id": "tr_portal", "x": 12, "y": 11 }
       ],
       "place_loot": [
-        { "group": "cleansing_flame_casualties", "x": [ 10, 14 ], "y": [ 8, 12 ], "chance": 75, "repeat": 3 },
+        { "group": "cleansing_flame_casualties_inferno", "x": [ 10, 14 ], "y": [ 8, 12 ], "chance": 75, "repeat": 3 },
         { "item": "hand_of_armok", "x": 12, "y": 4 }
       ],
       "place_monsters": [ { "monster": "GROUP_NETHER_LAVA", "x": [ 2, 22 ], "y": [ 5, 17 ], "density": 0.25 } ],

@@ -108,7 +108,7 @@
         "a": { "items": [ { "item": "butcher_tools", "chance": 50 } ] },
         "b": { "items": { "item": "cult_sacrifice", "chance": 100 } }
       },
-      "place_loot": [ { "item": "corpse", "x": [ 5, 6 ], "y": [ 4, 5 ], "chance": 50, "repeat": 2 } ],
+      "place_loot": [ { "item": "corpse_bloody", "x": [ 5, 6 ], "y": [ 4, 5 ], "chance": 50, "repeat": 2 } ],
       "place_zones": [
         { "type": "NPC_NO_INVESTIGATE", "faction": "sanguine_order_remnant", "x": [ 13, 22 ], "y": [ 1, 4 ] },
         { "type": "NPC_NO_INVESTIGATE", "faction": "sanguine_order_remnant", "x": [ 13, 16 ], "y": [ 7, 10 ] },

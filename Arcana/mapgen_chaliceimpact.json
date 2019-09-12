@@ -86,7 +86,7 @@
     "entries": [
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
       { "item": "stormbringer", "container-item": "bscabbard" },
-      { "item": "corpse" }
+      { "item": "bone_human", "count": [ 3, 9 ] }
     ]
   },
   {

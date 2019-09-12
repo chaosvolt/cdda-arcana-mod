@@ -7,7 +7,7 @@
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
       { "group": "chalice_cult_gear", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "chalice_cult_consumables", "prob": 25 },
-      { "item": "corpse" }
+      { "group": "arcanist_corpses_adult_random" }
     ]
   },
   {
@@ -17,7 +17,38 @@
     "entries": [
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
       { "group": "sanguine_cult_gear", "prob": 10, "damage": [ 1, 4 ] },
-      { "item": "corpse" }
+      { "group": "arcanist_corpses_adult_random" }
+    ]
+  },
+  {
+    "id": "cleansing_flame_casualties_basement",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
+      { "group": "arcanist_corpses_adult_random" }
+    ]
+  },
+  {
+    "id": "arcanist_corpses_adult_random",
+    "//": "Various adult corpses, no restriction on how they died.",
+    "type": "item_group",
+    "items": [
+      [ "corpse", 25 ],
+      [ "corpse_bloody", 15 ],
+      [ "corpse_generic_male", 10 ],
+      [ "corpse_generic_female", 10 ],
+      [ "rmi2_corpse", 5 ],
+      [ "corpse_oldwoman_jewelry", 5 ],
+      [ "corpse_painful", 5 ],
+      [ "corpse_scorched", 5 ],
+      [ "corpse_stabbed", 5 ],
+      [ "corpse_gunned", 5 ],
+      [ "corpse_halved_upper", 5 ],
+      [ "corpse_half_beheaded", 5 ]
     ]
   },
   {
@@ -146,7 +177,7 @@
         { "item": "holy_symbol", "x": 11, "y": 2, "chance": 90 },
         { "item": "note_flame_tenet", "x": 11, "y": 2, "chance": 90 },
         { "group": "cleansing_flame_spells", "x": 11, "y": 2, "chance": 10 },
-        { "group": "cleansing_flame_casualties", "x": [ 2, 20 ], "y": [ 1, 10 ], "chance": 50, "repeat": 4 },
+        { "group": "cleansing_flame_casualties_basement", "x": [ 2, 20 ], "y": [ 1, 10 ], "chance": 50, "repeat": 4 },
         { "group": "cleansing_flame_books", "x": 2, "y": [ 1, 5 ], "chance": 50, "repeat": 5 },
         { "group": "cleansing_flame_books", "x": 20, "y": [ 1, 5 ], "chance": 50, "repeat": 5 },
         { "item": "book_syncretism", "x": 20, "y": [ 1, 5 ], "chance": 5 },
