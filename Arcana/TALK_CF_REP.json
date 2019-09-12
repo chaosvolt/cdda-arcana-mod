@@ -122,7 +122,7 @@
         "topic": "TALK_CF_REP_TBC",
         "condition": { "npc_has_effect": "cf_mission_3" }
       },
-      { "text": "Well, bye.", "topic": "TALK_DONE" }
+      { "text": "Well, bye.", "topic": "TALK_DONE", "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" } }
     ]
   },
   {
