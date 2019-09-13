@@ -12,7 +12,8 @@
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_potioncraft", 0 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
-    "components": [ [ [ "fat_tainted", 4 ], [ "bone_tainted", 1 ] ] ]
+    "components": [ [ [ "fat_tainted", 4 ], [ "bone_tainted", 1 ] ] ],
+    "flags": [ "ALLOW_ROTTEN" ]
   },
   {
     "result": "strength_potion",
@@ -26,7 +27,8 @@
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_potioncraft", 1 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
-    "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_limestone", 1 ], [ "ash", 500 ] ] ]
+    "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_limestone", 1 ], [ "ash", 500 ] ] ],
+    "flags": [ "ALLOW_ROTTEN" ]
   },
   {
     "result": "speed_potion",
@@ -45,7 +47,8 @@
       [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "lead", 20 ], [ "bismuth", 25 ], [ "copper", 25 ], [ "tin", 20 ] ]
-    ]
+    ],
+    "flags": [ "ALLOW_ROTTEN" ]
   },
   {
     "result": "healing_potion",
@@ -65,7 +68,8 @@
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "gold_small", 10 ], [ "silver_small", 20 ] ],
       [ [ "blood", 1 ], [ "rag_bloody", 3 ] ]
-    ]
+    ],
+    "flags": [ "ALLOW_ROTTEN" ]
   },
   {
     "result": "red_black_vulnerary",
@@ -85,7 +89,8 @@
       [ [ "numbness_potion", 1 ] ],
       [ [ "rag", 3 ], [ "medical_gauze", 1 ] ],
       [ [ "rose_hips", 1 ], [ "poppy_bud", 1 ], [ "bee_balm", 1 ], [ "triffid_queen_flower", 1 ] ]
-    ]
+    ],
+    "flags": [ "ALLOW_ROTTEN" ]
   },
   {
     "result": "yellow_white_incense",
@@ -126,7 +131,14 @@
     "components": [
       [ [ "salt_water", 1 ] ],
       [ [ "blood", 1 ], [ "rag_bloody", 3 ] ],
-      [ [ "mutagen_jabberblood", 1 ], [ "slime_scrap", 2 ], [ "fat_tainted", 3 ], [ "bone_tainted", 4 ], [ "meat_tainted", 5 ] ]
-    ]
+      [
+        [ "mutagen_jabberblood", 1 ],
+        [ "slime_scrap", 2 ],
+        [ "fat_tainted", 3 ],
+        [ "bone_tainted", 4 ],
+        [ "meat_tainted", 5 ]
+      ]
+    ],
+    "flags": [ "ALLOW_ROTTEN" ]
   }
 ]
