@@ -2,10 +2,10 @@
   {
     "name": "GROUP_NETHER_LAVA",
     "type": "monstergroup",
-    "default": "mon_shadow",
+    "default": "mon_shadow_summoned",
     "monsters": [
-      { "monster": "mon_mi_go", "freq": 175, "cost_multiplier": 0 },
       { "monster": "mon_hunting_horror", "freq": 250, "cost_multiplier": 0 },
+      { "monster": "mon_gozu", "freq": 175, "cost_multiplier": 0 },
       { "monster": "mon_flaming_eye", "freq": 75, "cost_multiplier": 0 }
     ]
   },
@@ -38,8 +38,8 @@
     "type": "monstergroup",
     "default": "mon_blank",
     "monsters": [
-      { "monster": "mon_shadow", "freq": 200, "cost_multiplier": 0 },
-      { "monster": "mon_shadow_snake", "freq": 150, "cost_multiplier": 0 },
+      { "monster": "mon_shadow_summoned", "freq": 200, "cost_multiplier": 0 },
+      { "monster": "mon_shadow_snake_summoned", "freq": 150, "cost_multiplier": 0 },
       { "monster" : "mon_hunting_horror", "freq" : 200, "cost_multiplier" : 0 },
       { "monster" : "mon_mi_go", "freq" : 150, "cost_multiplier" : 0 },
       { "monster" : "mon_gracke", "freq" : 75, "cost_multiplier" : 0 },

@@ -317,7 +317,7 @@
         { "item": "hand_of_armok", "x": 12, "y": 4 }
       ],
       "place_monsters": [ { "monster": "GROUP_NETHER_LAVA", "x": [ 2, 22 ], "y": [ 5, 17 ], "density": 0.25 } ],
-      "place_monster": [ { "monster": "mon_spirit_of_fire", "x": 12, "y": 3 } ]
+      "place_monster": [ { "monster": "mon_spirit_of_fire", "x": [ 10, 14 ], "y": 3 } ]
     }
   }
 ]
