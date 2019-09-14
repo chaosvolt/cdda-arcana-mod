@@ -49,7 +49,7 @@
         ",,TT                TT,,",
         ",TT                  TT,",
         ",T                    T,",
-        ",T                    T,",
+        ",T        ,           T,",
         ",T      T  TT  T      T,",
         ",T     TT      TT     T,",
         ",T    TT  #..#  TT    T,",
@@ -59,17 +59,22 @@
         ",T       ##>>##       T,",
         ",T    TT  ####  TT    T,",
         ",T     TT      TT     T,",
-        ",T      T  TT  T      T,",
+        ",T  ,   T  TT  T      T,",
         ",T                    T,",
         ",T                    T,",
         ",T                    T,",
-        ",T                    T,",
+        ",T               ,    T,",
         ",TT                  TT,",
         ",,TT                TT,,",
         ",,,TTTTTTTT  TTTTTTTT,,,",
         ",,,,,,,,,,,,,,,,,,,,,,,,"
       ],
       "palettes": [ "arcana_palette" ],
+      "set": [
+        { "point": "trap", "id": "tr_portal", "x": 9, "y": 5 },
+        { "point": "trap", "id": "tr_portal", "x": 4, "y": 15 },
+        { "point": "trap", "id": "tr_portal", "x": 16, "y": 19 }
+      ],
       "terrain": {
         " ": [ "t_grass", "t_grass", "t_grass", "t_shrub", "t_underbrush", "t_tree_young", "t_dirt" ],
         ">": "t_slope_down",
@@ -114,11 +119,6 @@
         "########################"
       ],
       "palettes": [ "arcana_palette" ],
-      "set": [
-        { "point": "trap", "id": "tr_portal", "x": 9, "y": 5 },
-        { "point": "trap", "id": "tr_portal", "x": 4, "y": 15 },
-        { "point": "trap", "id": "tr_portal", "x": 6, "y": 21 }
-      ],
       "mapping": {
         ".": { "items": [ { "item": "summoner_casualties", "chance": 5 } ] }
       },

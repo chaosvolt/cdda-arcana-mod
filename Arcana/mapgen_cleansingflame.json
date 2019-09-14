@@ -247,6 +247,9 @@
       ],
       "palettes": [ "arcana_palette" ],
       "furniture": { ">": "f_blade_upright" },
+      "set": [
+        { "point": "trap", "id": "tr_portal", "x": 12, "y": 14 }
+      ],
       "place_loot": [
         { "group": "cleansing_flame_crafting", "x": [ 2, 4 ], "y": 20, "chance": 30, "repeat": 5 },
         { "item": "CF_golden_scale", "x": [ 2, 4 ], "y": 20, "chance": 25, "repeat": 3 },
@@ -305,13 +308,6 @@
         "########################"
       ],
       "palettes": [ "arcana_palette" ],
-      "set": [
-        { "point": "trap", "id": "tr_portal", "x": 5, "y": 2 },
-        { "point": "trap", "id": "tr_portal", "x": 19, "y": 2 },
-        { "point": "trap", "id": "tr_portal", "x": 3, "y": 21 },
-        { "point": "trap", "id": "tr_portal", "x": 21, "y": 21 },
-        { "point": "trap", "id": "tr_portal", "x": 12, "y": 11 }
-      ],
       "place_loot": [
         { "group": "cleansing_flame_casualties_inferno", "x": [ 10, 14 ], "y": [ 8, 12 ], "chance": 75, "repeat": 3 },
         { "item": "hand_of_armok", "x": 12, "y": 4 }
