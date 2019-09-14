@@ -419,6 +419,13 @@
     "death_drops": "mon_zombie_nullfield_death_drops"
   },
   {
+    "id": "mon_hound_tindalos",
+    "copy-from": "mon_hound_tindalos",
+    "//": "Only the real ones will drop essence, not afterimages.",
+    "type": "MONSTER",
+    "death_drops": "mon_hound_tindalos_death_drops"
+  },
+  {
     "id": "mon_spirit_of_fire",
     "type": "MONSTER",
     "name": "spirit of fire",

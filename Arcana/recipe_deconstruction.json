@@ -80,6 +80,15 @@
     "components": [ [ [ "meal_bone", 12 ] ], [ [ "essence_dull", 15 ] ] ]
   },
   {
+    "result": "tindalos_whistle",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 6 ] ], [ [ "essence_dull", 50 ] ] ]
+  },
+  {
     "result": "meteoric_talisman",
     "type": "uncraft",
     "skill_used": "magic",
