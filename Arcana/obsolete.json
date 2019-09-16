@@ -180,13 +180,16 @@
     "points": 6,
     "description": "(( This mutation has been depreciated, and will no longer show up naturally. It will still work as it originally did for the sake of old characters. ))",
     "valid": false,
-    "purifiable": false,
-    "active": true,
-    "cost": 90,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_summonjabberwock",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
+    "purifiable": false
+  },
+  {
+    "id": "halo_light",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "crystal halo",
+    "description": "A strange radiance permeating your body, giving off a soft glow.",
+    "color": "white",
+    "artifact_data": { "effects_worn": [ "AEP_GLOW" ] },
+    "flags": [ "ONLY_ONE" ]
   }
 ]

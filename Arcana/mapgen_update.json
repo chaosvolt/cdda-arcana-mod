@@ -36,7 +36,7 @@
     ],
     "furniture": [
       { "result": "f_null", "valid_furniture": [ "f_datura", "f_cattails", "f_lily", "f_lotus" ] },
-      { "result": "f_null", "valid_flags": [ "FLOWER" ] },
+      { "result": "f_null", "valid_flags": [ "FLOWER", "PLANT" ] },
       {
         "result": "f_egg_sacke",
         "valid_furniture": [ "f_egg_sackbw", "f_egg_sackcs", "f_egg_sackws" ],
@@ -52,6 +52,85 @@
         "//": "Partial effect on mi-go terraforming, only the more recognizably alive projections are vulnerable.",
         "valid_furniture": [ "f_alien_tendril", "f_alien_anemone", "f_alien_gasper", "f_alien_zapper", "f_alien_scar", "f_alien_table" ],
         "message": "The unnatural outgrowths are cauterized bare, in a spray of green sparks!"
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "arcana_pulse",
+    "fail_message": "The ground weathers the blast unscathed.",
+    "terrain": [ { "result": "t_dirt", "valid_flags": [ "BLOCK_WIND", "INDOORS" ] } ],
+    "furniture": [ { "result": "f_null", "valid_flags": [ "BLOCK_WIND", "INDOORS" ] } ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "arcana_barrier",
+    "fail_message": "The barrier flickers out of existence.",
+    "furniture": [ { "result": "f_force_barrier", "valid_furniture": [ "f_null" ] } ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "arcana_consecrate",
+    "fail_message": "Reality fails to impose itself on this place.",
+    "terrain": [
+      {
+        "result": "t_rock_smooth",
+        "valid_terrain": [
+          "t_wall_resin",
+          "t_wall_resin_cage",
+          "t_fault",
+          "t_pedestal_wyrm",
+          "t_pedestal_temple",
+          "t_paper",
+          "t_root_wall",
+          "t_wax"
+        ]
+      },
+      {
+        "result": "t_rock_floor_no_roof",
+        "valid_terrain": [
+          "t_floor_resin",
+          "t_platform_resin",
+          "t_resin_hole_c",
+          "t_resin_hole_o",
+          "t_resin_hole",
+          "t_floor_red",
+          "t_floor_green",
+          "t_floor_blue",
+          "t_rock_red",
+          "t_rock_green",
+          "t_rock_blue",
+          "t_switch_rg",
+          "t_switch_gb",
+          "t_switch_rb",
+          "t_switch_even",
+          "t_lava",
+          "t_vat",
+          "t_slime"
+        ]
+      },
+      { "result": "t_open_air", "valid_terrain": [ "t_resin_roof" ] },
+      { "result": "t_rock_floor_no_roof", "valid_flags": [ "FUNGUS" ] }
+    ],
+    "furniture": [
+      { "result": "f_null", "valid_flags": [ "FUNGUS" ] },
+      {
+        "result": "f_null",
+        "valid_furniture": [
+          "f_alien_tendril",
+          "f_alien_anemone",
+          "f_alien_gasper",
+          "f_alien_zapper",
+          "f_alien_scar",
+          "f_alien_pod",
+          "f_alien_pod_organ",
+          "f_alien_table",
+          "f_mutpoppy",
+          "f_egg_sackbw",
+          "f_egg_sackcs",
+          "f_egg_sackws",
+          "f_egg_sacke"
+        ]
       }
     ]
   },

@@ -6,7 +6,8 @@
     "name": "amber halo",
     "description": "A strange radiance permeating your body, protecting you from lightning.",
     "color": "light_gray",
-    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY" ] }
+    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY" ] },
+    "flags": [ "ONLY_ONE" ]
   },
   {
     "id": "halo_clairvoyance",
@@ -15,7 +16,8 @@
     "name": "ivory halo",
     "description": "A strange radiance permeating your body, granting you sight beyond sight.",
     "color": "magenta",
-    "artifact_data": { "effects_worn": [ "AEP_CLAIRVOYANCE" ] }
+    "artifact_data": { "effects_worn": [ "AEP_CLAIRVOYANCE" ] },
+    "flags": [ "ONLY_ONE" ]
   },
   {
     "id": "halo_shadowsnakes",
@@ -24,7 +26,8 @@
     "name": "obsidian halo",
     "description": "A strange radiance permeating your body, summoning serpentine shadows when you are harmed.",
     "color": "dark_gray",
-    "artifact_data": { "effects_worn": [ "AEP_SNAKES" ] }
+    "artifact_data": { "effects_worn": [ "AEP_SNAKES" ] },
+    "flags": [ "ONLY_ONE" ]
   },
   {
     "id": "halo_dampening",
@@ -33,16 +36,8 @@
     "name": "coral halo",
     "description": "A strange radiance permeating your body, dulling the effects of flame and radiation.",
     "color": "light_gray",
-    "artifact_data": { "effects_worn": [ "AEP_PBLUE", "AEP_EXTINGUISH" ] }
-  },
-  {
-    "id": "halo_light",
-    "copy-from": "spell_base",
-    "type": "TOOL_ARMOR",
-    "name": "crystal halo",
-    "description": "A strange radiance permeating your body, giving off a soft glow.",
-    "color": "white",
-    "artifact_data": { "effects_worn": [ "AEP_GLOW" ] }
+    "artifact_data": { "effects_worn": [ "AEP_PBLUE", "AEP_EXTINGUISH" ] },
+    "flags": [ "ONLY_ONE" ]
   },
   {
     "id": "halo_drainlife",
@@ -51,7 +46,8 @@
     "name": "horned halo",
     "description": "A strange radiance permeating your body, granting you a life-draining touch.",
     "color": "dark_gray",
-    "artifact_data": { "effects_worn": [ "AEP_SAP_LIFE" ] }
+    "artifact_data": { "effects_worn": [ "AEP_SAP_LIFE" ] },
+    "flags": [ "ONLY_ONE" ]
   },
   {
     "id": "gilded_aegis",

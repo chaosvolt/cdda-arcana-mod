@@ -898,5 +898,15 @@
     "special_attacks": [ [ "PARROT", 900 ] ],
     "extend": { "flags": [ "REGENERATES_IN_DARK", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "SMELLS" ] }
+  },
+  {
+    "id": "mon_centipede_giant_summoned",
+    "copy-from": "mon_centipede_giant",
+    "type": "MONSTER",
+    "name": "summoned giant centipede",
+    "path_settings": { "max_dist": 10 },
+    "death_drops": {  },
+    "death_function": [ "MELT" ],
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
   }
 ]
