@@ -33,26 +33,7 @@
         "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_3", "duration": "PERMANENT" } ],
         "condition": {
           "and": [
-            {
-              "u_has_any_trait": [
-                "SPELL_ACIDARMOR",
-                "SPELL_AGILE2",
-                "SPELL_CLAIRVOYANCE2",
-                "SPELL_CONFUSE2",
-                "SPELL_SMOKE",
-                "SPELL_CLOUD",
-                "SPELL_DRAINLIFE",
-                "SPELL_FIRE2",
-                "SPELL_FLAMEARMOR2",
-                "SPELL_LIGHT2",
-                "SPELL_ELECRESIST2",
-                "SPELL_STRENGTH2",
-                "SPELL_POISONARMOR",
-                "SPELL_LIGHTNING2",
-                "SPELL_SUMMONCULUS",
-                "SPELL_SUMMONDOG2"
-              ]
-            },
+            { "u_has_trait_flag": "explorer_of_the_veil" },
             { "u_has_mission": "MISSION_HERMIT_AWAKEN_POWER" },
             { "npc_has_trait": "PROF_CHALICE" }
           ]
