@@ -538,7 +538,7 @@
     "id": "arcana_blessing_holy_ward",
     "type": "SPELL",
     "name": "Arcane Blessing: Holy Ward",
-    "description": "Using this spell will create an aura protecting against direct physical harm, and provide a deeper protection against various anomalous hazards.  It can be used on yourself or an ally.",
+    "description": "Using this spell will create an aura protecting against blades, and guard against various anomalous hazards.  It can be used on yourself or an ally.",
     "message": "You feel the threads of reality pulled taut, as a powerful protective spell is channeled through you.",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "CONCENTRATE", "NO_LEGS" ],
