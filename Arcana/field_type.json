@@ -31,5 +31,23 @@
     "half_life": "30 minutes",
     "phase": "plasma",
     "display_field": false
+  },
+  {
+    "id": "fd_archon_rift",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "wavering shadows",
+        "translucency": 50,
+        "monster_spawn_chance": 500,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 1,
+        "monster_spawn_group": "GROUP_ARCHON",
+        "convection_temperature_mod": -100
+      }
+    ],
+    "half_life": "30 minutes",
+    "phase": "plasma",
+    "display_field": false
   }
 ]

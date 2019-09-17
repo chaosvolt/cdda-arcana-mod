@@ -574,8 +574,14 @@
         "max_ammo": 1000,
         "ranges": [ [ 2, 12, "DEFAULT" ] ],
         "require_targeting_player": false,
-        "description": "A beam of lightning arcs from the host of the archon's symbol of judgement!",
+        "description": "A beam of lightning arcs from the host of the archon's symbol of judgment!",
         "no_ammo_sound": "a horrific screech!"
+      },
+      {
+        "type": "spell",
+        "spell_id": "arcana_monster_archon_gaze",
+        "cooldown": 10,
+        "monster_message": "You briefly sense the otherworldly presence controlling the host, as it glares at %3$s."
       }
     ],
     "//": "Here, have some chalice-specific loot",
