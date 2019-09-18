@@ -31,7 +31,7 @@
           "socks",
           "boots",
           "gloves_fingerless",
-          "backpack",
+          "mbag",
           "matches",
           "chemistry_set_basic",
           "red_black_vulnerary",
@@ -159,7 +159,7 @@
     "skills": [ { "level": 5, "name": "magic" }, { "level": 2, "name": "gun" }, { "level": 2, "name": "dodge" } ],
     "items": {
       "both": {
-        "items": [ "loincloth", "tunic", "socks", "bastsandals", "mbag", "waterskin", "matches", "offering_chalice", "book_sacrifice" ],
+        "items": [ "loincloth", "tunic", "socks", "bastsandals", "backpack", "waterskin", "matches", "offering_chalice", "book_sacrifice" ],
         "entries": [
           { "item": "thunder_sigil", "ammo-item": "essence", "charges": 5 },
           { "item": "robe_shadow", "charges": 10 },
