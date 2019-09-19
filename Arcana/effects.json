@@ -554,6 +554,58 @@
   },
   {
     "type": "effect_type",
+    "id": "blood_athame_side_effects",
+    "resist_effect": "talisman_warding",
+    "//": "This won't kill you, but the health and stat penalties will make you wish it did later on down the line.",
+    "name": [
+      "",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia"
+    ],
+    "desc": [
+      "",
+      "your muscles have been feeling more fatigued lately, and you feel faintly queasy on the inside.  Maybe overusing that athame did something to you...",
+      "The weakness in your body has worsened, and you've been having hunger pangs.  It seems blood magic has consequences if overused.",
+      "Your body feels sluggish and drained, and it seems to be getting worse the more you rely on blood magic.  Relying on it less might help ease your suffering.",
+      "It feels like your body is struggling to sustain itself, as your overuse of the athame's magic has taken its toll on you.  It might be a good idea to stop using that damn thing for a while..."
+    ],
+    "rating": "bad",
+    "max_intensity": 12,
+    "max_effective_intensity": 6,
+    "int_dur_factor": "5 d",
+    "base_mods": {
+      "health_min": [ 1 ],
+      "health_tick": [ 3960 ],
+      "str_mod": [ 0.5 ],
+      "hunger_min": [ 1 ],
+      "hunger_chance": [ -40 ],
+      "hunger_chance_bot": [ 100 ],
+      "hunger_tick": [ 300 ],
+      "dex_mod": [ -0.75 ],
+      "thirst_min": [ 1 ],
+      "thirst_chance": [ -160 ],
+      "thirst_chance_bot": [ 100 ],
+      "thirst_tick": [ 300 ]
+    },
+    "scaling_mods": {
+      "fatigue_tick": [ -360, -300 ],
+      "str_mod": [ -0.75, -0.6 ],
+      "hunger_chance": [ 20, 15 ],
+      "dex_mod": [ -0.75, -0.6 ],
+      "thirst_chance": [ 40, 35 ]
+    }
+  },
+  {
+    "type": "effect_type",
     "id": "sent_to_hermit",
     "//": "This marks a player as having been led to The Hermit via a quest chain, no name or description since this one is player-side.  Intended to be permanent."
   },
