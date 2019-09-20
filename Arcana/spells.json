@@ -1086,6 +1086,46 @@
     "field_intensity_variance": 0.1
   },
   {
+    "id": "arcana_item_athame_sanguine_art",
+    "type": "SPELL",
+    "name": "Sanguine Art",
+    "description": "Inflicts bleeding and other side effects.",
+    "message": "You work a ritual to draw power from your own blood, instinct guiding your hand as you trace patterns across your skin with the dull blade.  As you work the last rune, the only one to actually break the skin, wounds open elsewhere on your body!",
+    "valid_targets": [ "self" ],
+    "extra_effects": [ { "id": "arcana_item_athame_sanguine_art_corruption", "hit_self": true }, { "id": "arcana_item_generate_blood_essence", "hit_self": true } ],
+    "affected_body_parts": [ "TORSO" ],
+    "effect_str": "bleed",
+    "effect": "target_attack",
+    "base_casting_time": 60000,
+    "final_casting_time": 60000,
+    "energy_source": "HP",
+    "base_energy_cost": 3,
+    "final_energy_cost": 3,
+    "min_duration": 300,
+    "max_duration": 300
+  },
+  {
+    "id": "arcana_item_athame_sanguine_art_corruption",
+    "type": "SPELL",
+    "name": "Sanguine Art Corruption",
+    "description": "This inflicts the more insidious effects of the athame.  That's 2 entire days of side-effect buildup per use, by the way.",
+    "valid_targets": [ "self" ],
+    "effect_str": "blood_athame_side_effects",
+    "effect": "target_attack",
+    "min_duration": 17280000,
+    "max_duration": 17280000
+  },
+  {
+    "id": "arcana_item_generate_blood_essence",
+    "type": "SPELL",
+    "name": "Generate Blood Essence",
+    "description": "This is used by blood magic items to produce blood essence.",
+    "valid_targets": [ "self" ],
+    "flags": [ "PERMANENT" ],
+    "effect_str": "essence_blood",
+    "effect": "spawn_item"
+  },
+  {
     "id": "arcana_item_gilded_aegis_healing",
     "type": "SPELL",
     "name": "Aegis Mending",
@@ -1110,6 +1150,26 @@
     "max_damage": -15,
     "effect": "recover_energy",
     "effect_str": "PAIN"
+  },
+  {
+    "id": "arcana_item_sparks",
+    "type": "SPELL",
+    "name": "Spark Flame",
+    "description": "Spark a small fire nearby.",
+    "message": "Embers fly from your fingertips, stoking magical flames as they fall to the ground.",
+    "effect": "target_attack",
+    "valid_targets": [ "ground" ],
+    "min_range": 2,
+    "max_range": 2,
+    "base_casting_time": 80,
+    "final_casting_time": 80,
+    "energy_source": "FATIGUE",
+    "base_energy_cost": 20,
+    "final_energy_cost": 20,
+    "field_id": "fd_fire",
+    "field_chance": 1,
+    "min_field_intensity": 1,
+    "max_field_intensity": 1
   },
   {
     "id": "arcana_item_thunder_gauntlets_taze",
