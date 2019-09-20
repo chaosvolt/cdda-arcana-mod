@@ -52,7 +52,7 @@
     "id": "offering_chalice",
     "type": "TOOL",
     "name": "offering chalice",
-    "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  It is filled with a thick black liquid that you seem unable to pour out.  You get the feeling that trying to drink it would be a bad idea, but it might be important for ritual purposes.",
+    "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  It is filled with a thick black liquid that you seem unable to pour out.  Using it will allow you to perform a ritual that can convert your own life force into blood essence, at a price...",
     "weight": 2500,
     "volume": 4,
     "price": 161300,
@@ -65,37 +65,8 @@
     "flags": [ "MAGIC_FOCUS" ],
     "use_action": [
       "MEDITATE",
-      {
-        "target": "offering_chalice_active",
-        "msg": "You raise the chalice to your lips...",
-        "active": true,
-        "menu_text": "Drink from the chalice",
-        "type": "transform"
-      }
+      { "type": "cast_spell", "spell_id": "arcana_item_chalice_offering", "no_fail": true, "level": 0 }
     ]
-  },
-  {
-    "id": "offering_chalice_active",
-    "type": "TOOL",
-    "copy-from": "offering_chalice",
-    "name": "offering chalice",
-    "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  Maybe you shouldn't be trying to drink from this...",
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "offering_chalice_used",
-    "use_action": {
-      "type": "consume_drug",
-      "activation_message": "As you drink from the chalice, you feel your breath being drawn from your lungs!",
-      "effects": [ { "id": "offering", "duration": 1 } ]
-    }
-  },
-  {
-    "id": "offering_chalice_used",
-    "type": "TOOL",
-    "copy-from": "offering_chalice",
-    "name": "drained offering chalice",
-    "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  It appears to be empty, but you get the feeling that something remains within it.  If you knew the right ritual, whatever was drawn into it could be extracted.",
-    "use_action": "MEDITATE"
   },
   {
     "id": "blood_athame",
@@ -103,7 +74,7 @@
     "//": "By necessity can't yet define this to use copy-from, as qualities will break it.",
     "category": "weapons",
     "name": "silver athame",
-    "description": "An ornate silver dagger, seemingly made for ritual purposes.  It seems sharper than silver has any right to be, and might be used for blood magic.",
+    "description": "An ornate silver dagger, seemingly made for ritual purposes.  It seems sharper than silver has any right to be.  It can be used to perform a ritual converting your life force into blood essence, at a price...",
     "weight": 1302,
     "volume": 3,
     "price": 23500,
@@ -117,43 +88,9 @@
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 15 ] ],
     "use_action": [
-      {
-        "target": "blood_athame_active",
-        "msg": "The edge of the athame looks too dull to break the skin, yet some strange urge leads you to test this...",
-        "active": true,
-        "menu_text": "Test the blade's sharpness",
-        "type": "transform"
-      }
+      { "type": "cast_spell", "spell_id": "arcana_item_athame_sanguine_art", "no_fail": true, "level": 0 }
     ],
-    "flags": [ "STAB", "SHEATH_KNIFE" ]
-  },
-  {
-    "id": "blood_athame_active",
-    "type": "TOOL",
-    "//": "By necessity can't yet define this to use copy-from, as qualities will break it.",
-    "category": "weapons",
-    "name": "silver athame",
-    "description": "An ornate silver dagger, seemingly made for ritual purposes.  This seems like a stupid idea...",
-    "weight": 1302,
-    "volume": 3,
-    "price": 23500,
-    "to_hit": 1,
-    "bashing": 3,
-    "cutting": 16,
-    "material": "silver",
-    "symbol": "/",
-    "looks_like": "knife_butcher",
-    "color": "red",
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "blood_athame",
-    "techniques": "RAPID",
-    "use_action": {
-      "type": "consume_drug",
-      "activation_message": "Upon drawing the blade across your palm, wounds open elsewhere on your body!",
-      "effects": [ { "id": "bleed", "duration": 300, "bp": "TORSO" } ]
-    },
-    "flags": [ "STAB", "SHEATH_KNIFE" ]
+    "flags": [ "STAB", "SHEATH_KNIFE", "USE_PLAYER_ENERGY" ]
   },
   {
     "id": "sun_sword",

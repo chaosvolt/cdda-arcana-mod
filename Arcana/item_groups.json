@@ -64,7 +64,6 @@
     "type": "item_group",
     "items": [
       [ "offering_chalice", 25 ],
-      [ "offering_chalice_used", 30 ],
       [ "blood_athame", 20 ],
       [ "hexenhammer", 10 ],
       [ "silver_glyph", 5 ],
@@ -142,12 +141,12 @@
   {
     "id": "cop_evidence",
     "type": "item_group",
-    "items": [ [ "offering_chalice_used", 1 ], [ "blood_athame", 1 ] ]
+    "items": [ [ "offering_chalice", 1 ], [ "blood_athame", 1 ] ]
   },
   {
     "id": "creepy",
     "type": "item_group",
-    "items": [ [ "offering_chalice_used", 5 ], [ "blood_athame", 5 ], [ "dragonblood_mutagen", 1 ] ]
+    "items": [ [ "offering_chalice", 5 ], [ "blood_athame", 5 ], [ "dragonblood_mutagen", 1 ] ]
   },
   {
     "id": "vault",

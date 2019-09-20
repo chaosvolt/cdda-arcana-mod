@@ -191,5 +191,84 @@
     "color": "white",
     "artifact_data": { "effects_worn": [ "AEP_GLOW" ] },
     "flags": [ "ONLY_ONE" ]
+  },
+  {
+    "id": "offering_chalice_active",
+    "type": "TOOL",
+    "copy-from": "offering_chalice",
+    "name": "offering chalice",
+    "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  Maybe you shouldn't be trying to drink from this...",
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "offering_chalice_used",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "As you drink from the chalice, you feel your breath being drawn from your lungs!",
+      "effects": [ { "id": "offering", "duration": 1 } ]
+    }
+  },
+  {
+    "id": "offering_chalice_used",
+    "type": "TOOL",
+    "copy-from": "offering_chalice",
+    "name": "drained offering chalice",
+    "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  It appears to be empty, but you get the feeling that something remains within it.  If you knew the right ritual, whatever was drawn into it could be extracted.",
+    "use_action": "MEDITATE"
+  },
+  {
+    "result": "offering_chalice",
+    "type": "recipe",
+    "id_suffix": "restore",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": "15 m",
+    "obsolete": true,
+    "byproducts": [ [ "essence_blood", 6 ] ],
+    "components": [ [ [ "offering_chalice_used", 1 ] ], [ [ "ash", 3 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "essence_blood",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": "10 m",
+    "obsolete": true,
+    "result_mult": 3,
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "rag_bloody", 3 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "blood_athame_active",
+    "type": "TOOL",
+    "//": "By necessity can't yet define this to use copy-from, as qualities will break it.",
+    "category": "weapons",
+    "name": "silver athame",
+    "description": "An ornate silver dagger, seemingly made for ritual purposes.  This seems like a stupid idea...",
+    "weight": 1302,
+    "volume": 3,
+    "price": 23500,
+    "to_hit": 1,
+    "bashing": 3,
+    "cutting": 16,
+    "material": "silver",
+    "symbol": "/",
+    "looks_like": "knife_butcher",
+    "color": "red",
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "blood_athame",
+    "techniques": "RAPID",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "Upon drawing the blade across your palm, wounds open elsewhere on your body!",
+      "effects": [ { "id": "bleed", "duration": 300, "bp": "TORSO" } ]
+    },
+    "flags": [ "STAB", "SHEATH_KNIFE" ]
   }
 ]
