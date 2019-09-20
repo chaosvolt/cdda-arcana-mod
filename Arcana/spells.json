@@ -1089,10 +1089,13 @@
     "id": "arcana_item_athame_sanguine_art",
     "type": "SPELL",
     "name": "Sanguine Art",
-    "description": "Inflicts bleeding and other side effects.",
+    "description": "Prepares a ritual to turn part of your life force into a usable form of essence.  Doing so will take 10 minutes, inflicting blood loss on you at the end, as well as potential consequences if overused...",
     "message": "You work a ritual to draw power from your own blood, instinct guiding your hand as you trace patterns across your skin with the dull blade.  As you work the last rune, the only one to actually break the skin, wounds open elsewhere on your body!",
-    "valid_targets": [ "self" ],
-    "extra_effects": [ { "id": "arcana_item_athame_sanguine_art_corruption", "hit_self": true }, { "id": "arcana_item_generate_blood_essence", "hit_self": true } ],
+    "valid_targets": [ "self", "ground" ],
+    "extra_effects": [
+      { "id": "arcana_item_athame_sanguine_art_corruption", "hit_self": true },
+      { "id": "arcana_item_generate_blood_essence", "hit_self": true }
+    ],
     "affected_body_parts": [ "TORSO" ],
     "effect_str": "bleed",
     "effect": "target_attack",
@@ -1111,6 +1114,50 @@
     "description": "This inflicts the more insidious effects of the athame.  That's 2 entire days of side-effect buildup per use, by the way.",
     "valid_targets": [ "self" ],
     "effect_str": "blood_athame_side_effects",
+    "effect": "target_attack",
+    "min_duration": 17280000,
+    "max_duration": 17280000
+  },
+  {
+    "id": "arcana_item_chalice_offering",
+    "type": "SPELL",
+    "name": "Offering to The Beyond",
+    "description": "Prepares a ritual to turn part of your life force into a usable form of essence.  Doing so will take 15 minutes, inflicting harm upon your body you at the end, as well as dire consequences if overused...",
+    "message": "You work a ritual to draw power from your own breath, drawn by instinct to whisper words in an unfamiliar language.  The verses complete, you raise the chalice as if to drink from it, only for your breath to be drawn from your lungs!",
+    "valid_targets": [ "self", "ground" ],
+    "extra_effects": [
+      { "id": "arcana_item_chalice_offering_winding", "hit_self": true },
+      { "id": "arcana_item_chalice_offering_corruption", "hit_self": true },
+      { "id": "arcana_item_generate_blood_essence", "hit_self": true },
+      { "id": "arcana_item_generate_blood_essence", "hit_self": true },
+      { "id": "arcana_item_generate_blood_essence", "hit_self": true }
+    ],
+    "affected_body_parts": [ "TORSO" ],
+    "effect": "target_attack",
+    "damage_type": "cold",
+    "min_damage": 10,
+    "max_damage": 10,
+    "base_casting_time": 90000,
+    "final_casting_time": 90000
+  },
+  {
+    "id": "arcana_item_chalice_offering_winding",
+    "type": "SPELL",
+    "name": "Offering to The Beyond Windedness",
+    "description": "This is so that the chalice ritual actually knocks the wind out of you.",
+    "valid_targets": [ "self" ],
+    "min_damage": -8000,
+    "max_damage": -8000,
+    "effect": "recover_energy",
+    "effect_str": "STAMINA"
+  },
+  {
+    "id": "arcana_item_chalice_offering_corruption",
+    "type": "SPELL",
+    "name": "Offering to The Beyond Corruption",
+    "description": "This inflicts the more insidious effects of the chalice.  That's 2 entire days of side-effect buildup per use, by the way.",
+    "valid_targets": [ "self" ],
+    "effect_str": "chalice_offering_side_effects",
     "effect": "target_attack",
     "min_duration": 17280000,
     "max_duration": 17280000
