@@ -2,7 +2,7 @@
   {
     "id": "arcana_aftermath_capacitance_zap",
     "type": "SPELL",
-    "name": "Aftermath: Capacitance Zap",
+    "name": "Capacitance Zap",
     "description": "This exists to make Capacitance zap the user.",
     "valid_targets": [ "self" ],
     "effect_str": "zapped",
@@ -17,7 +17,7 @@
   {
     "id": "arcana_aftermath_conjure_miasma_fungicide",
     "type": "SPELL",
-    "name": "Aftermath: Conjure Miasma Fungicide",
+    "name": "Conjure Miasma Fungicide",
     "description": "This adds a decent chance of spawning fungicidal gas as well.",
     "effect": "target_attack",
     "valid_targets": [ "hostile", "ground" ],
@@ -38,7 +38,7 @@
   {
     "id": "arcana_aftermath_conjure_miasma_nuke",
     "type": "SPELL",
-    "name": "Aftermath: Conjure Miasma Nukage",
+    "name": "Conjure Miasma Nukage",
     "description": "This adds a small chance of spawning radioactive gas as well.",
     "effect": "target_attack",
     "valid_targets": [ "hostile", "ground" ],
@@ -59,7 +59,7 @@
   {
     "id": "arcana_aftermath_conjure_miasma_tear",
     "type": "SPELL",
-    "name": "Aftermath: Conjure Miasma Tear Gas",
+    "name": "Conjure Miasma Tear Gas",
     "description": "This adds a chance of spawning tear gas as well.",
     "effect": "target_attack",
     "valid_targets": [ "hostile", "ground" ],
@@ -80,7 +80,7 @@
   {
     "id": "arcana_aftermath_corrosion_barrier_effect",
     "type": "SPELL",
-    "name": "Aftermath: Corrosion Barrier Effect",
+    "name": "Corrosion Barrier Effect",
     "description": "This is used to grant the Acid Armor effect to Corrosion Barrier.",
     "valid_targets": [ "self" ],
     "effect": "target_attack",
@@ -93,7 +93,7 @@
   {
     "id": "arcana_aftermath_drain_life_fatigue",
     "type": "SPELL",
-    "name": "Aftermath: Drain Life Fatigue",
+    "name": "Drain Life Fatigue",
     "description": "This exists to potentially give Dragonblood's version of Drain Life a corruptive side effect on the area.",
     "effect": "target_attack",
     "valid_targets": [ "self" ],
@@ -111,7 +111,7 @@
   {
     "id": "arcana_aftermath_elemental_coldness",
     "type": "SPELL",
-    "name": "Aftermath: Elemental Sign Coldness",
+    "name": "Elemental Sign Coldness",
     "description": "This exists to give Elemental Sign cold damage and sap temperature from the area.",
     "effect": "target_attack",
     "valid_targets": [ "hostile", "ground" ],
@@ -137,7 +137,7 @@
   {
     "id": "arcana_aftermath_flame_barrier_effect",
     "type": "SPELL",
-    "name": "Aftermath: Flame Barrier Effect",
+    "name": "Flame Barrier Effect",
     "description": "This is used to grant the Flame Armor effect to Flame Barrier.",
     "valid_targets": [ "self" ],
     "effect": "target_attack",
@@ -150,7 +150,7 @@
   {
     "id": "arcana_aftermath_infernal_flame_corruption",
     "type": "SPELL",
-    "name": "Aftermath: Infernal Flame Corruption",
+    "name": "Infernal Flame Corruption",
     "description": "This exists only to add destruction of natural terrain to Infernal Flame.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
@@ -169,7 +169,7 @@
   {
     "id": "arcana_aftermath_infernal_flame_field",
     "type": "SPELL",
-    "name": "Aftermath: Infernal Flame Field",
+    "name": "Infernal Flame Field",
     "description": "This exists to add a chance of lingering anomalous fire after Infernal Flame impacts.",
     "effect": "target_attack",
     "valid_targets": [ "hostile", "ground" ],
@@ -190,7 +190,7 @@
   {
     "id": "arcana_aftermath_radiant_barrier_effect",
     "type": "SPELL",
-    "name": "Aftermath: Radiant Barrier Effect",
+    "name": "Radiant Barrier Effect",
     "description": "This is used to grant the Ward Against Evil effect to Radiant Barrier.",
     "valid_targets": [ "self" ],
     "effect": "target_attack",
@@ -203,7 +203,7 @@
   {
     "id": "arcana_aftermath_suppression_buff",
     "type": "SPELL",
-    "name": "Aftermath: Suppression Buff",
+    "name": "Suppression Buff",
     "description": "This exists to grant the long-term status effect to Suppression.",
     "valid_targets": [ "self" ],
     "effect_str": "arcana_suppression",
@@ -216,7 +216,7 @@
   {
     "id": "arcana_aftermath_wave_destruction_pulse",
     "type": "SPELL",
-    "name": "Aftermath: Wave of Destruction Pulse",
+    "name": "Wave of Destruction Pulse",
     "description": "This adds a dirty hack to delete sufficiently solid terrain.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
@@ -232,7 +232,7 @@
   {
     "id": "arcana_blessing_agility",
     "type": "SPELL",
-    "name": "Arcane Blessing: Agility",
+    "name": "<color_light_blue>Agility</color>",
     "description": "Using this spell will grant a temporary speed and agility-enhancing effect.  It can be used on yourself or an ally.",
     "message": "Time seems to slow for a moment, as you channel a rush of energy.",
     "valid_targets": [ "self", "ally" ],
@@ -258,7 +258,7 @@
   {
     "id": "arcana_blessing_clairvoyance",
     "type": "SPELL",
-    "name": "Arcane Blessing: Clairvoyance",
+    "name": "<color_light_blue>Clairvoyance</color>",
     "description": "Using this spell will anoint you with an ivory halo, granting you sight beyond sight.",
     "message": "A shimmering aura permeates you, opening your eyes to hidden truths.",
     "valid_targets": [ "self" ],
@@ -281,7 +281,7 @@
   {
     "id": "arcana_blessing_confuse_monster",
     "type": "SPELL",
-    "name": "Arcane Blessing: Confuse Monster",
+    "name": "<color_light_blue>Confuse Monster</color>",
     "description": "Using this spell will stun all hostiles in the area around you.",
     "message": "A faint distortion in the air ripples out all around, and you sense an unearthly force exerting its will.",
     "effect": "target_attack",
@@ -307,7 +307,7 @@
   {
     "id": "arcana_blessing_conjure_miasma",
     "type": "SPELL",
-    "name": "Arcane Blessing: Conjure Miasma",
+    "name": "<color_light_blue>Conjure Miasma</color>",
     "description": "Using this spell will engulf the targeted area in a swirling miasma of various poisonous vapors, afflicting many forms of harm.",
     "message": "A rush of unnatural wind swirls at your command, bringing forth myriad poisonous gales with it.",
     "effect": "target_attack",
@@ -347,7 +347,7 @@
   {
     "id": "arcana_blessing_conjure_lightburst",
     "type": "SPELL",
-    "name": "Arcane Blessing: Conjure Lightburst",
+    "name": "<color_light_blue>Conjure Lightburst</color>",
     "description": "Using this spell will conjure a flood of magical illumination at the targeted area.",
     "message": "Flickering candle-flames of light scatter across the ground at your guidance, before a lingering glow permeates that area.",
     "effect": "target_attack",
@@ -378,7 +378,7 @@
   {
     "id": "arcana_blessing_conjure_shadow_field",
     "type": "SPELL",
-    "name": "Arcane Blessing: Conjure Shadow Field",
+    "name": "<color_light_blue>Conjure Shadow Field</color>",
     "description": "Using this spell will envelop the targeted area in lingering darkness, in addition to inflicting blindness on enemies caught in the initial effect.",
     "message": "Wisps of inky, living shadow emerge from the ground, engulfing the area as you will it.",
     "effect": "target_attack",
@@ -413,7 +413,7 @@
   {
     "id": "arcana_blessing_consecrate",
     "type": "SPELL",
-    "name": "Arcane Blessing: Consecrate",
+    "name": "<color_light_blue>Consecrate</color>",
     "description": "Using this spell will alter the terrain, driving off various signs of otherworldly corruption afflicting the land.",
     "message": "You channel the will of He From Beyond The Veil, to bring order to this unearthly intrusion.",
     "valid_targets": [ "ground" ],
@@ -439,7 +439,7 @@
   {
     "id": "arcana_blessing_divine_storm",
     "type": "SPELL",
-    "name": "Arcane Blessing: Divine Storm",
+    "name": "<color_light_blue>Divine Storm</color>",
     "description": "Using this spell will call forth a storm of unearthly lightning all around you, smiting and striking foes blind.",
     "message": "A ring of strange blue light encircles you, before pale bolts of lightning surge out in every direction.",
     "effect": "target_attack",
@@ -475,7 +475,7 @@
   {
     "id": "arcana_blessing_drain_life",
     "type": "SPELL",
-    "name": "Arcane Blessing: Drain Life",
+    "name": "<color_light_blue>Drain Life</color>",
     "description": "Using this spell will anoint you with a horned halo, granting you a life-draining effect.",
     "message": "A shimmering aura permeates you, sparking a yearning for battle and the death of your enemies.",
     "valid_targets": [ "self" ],
@@ -498,7 +498,7 @@
   {
     "id": "arcana_blessing_holy_flare",
     "type": "SPELL",
-    "name": "Arcane Blessing: Holy Flare",
+    "name": "<color_light_blue>Holy Flare</color>",
     "description": "Using this spell will conjure an eruption of otherworldly flames at the location targeted, that will leave the terrain unharmed.",
     "message": "A spark of radiant golden flame erupts from out of thin air, by your command.",
     "effect": "target_attack",
@@ -537,7 +537,7 @@
   {
     "id": "arcana_blessing_holy_ward",
     "type": "SPELL",
-    "name": "Arcane Blessing: Holy Ward",
+    "name": "<color_light_blue>Holy Ward</color>",
     "description": "Using this spell will create an aura protecting against blades, and guard against various anomalous hazards.  It can be used on yourself or an ally.",
     "message": "You feel the threads of reality pulled taut, as a powerful protective spell is channeled through you.",
     "valid_targets": [ "self", "ally" ],
@@ -560,7 +560,7 @@
   {
     "id": "arcana_blessing_illusion_cloak",
     "type": "SPELL",
-    "name": "Arcane Blessing: Illusion Cloak",
+    "name": "<color_light_blue>Illusion Cloak</color>",
     "description": "Using this spell will cloak you or an ally in illusions, hiding them from sight and protecting against various things that may alter perception.  It will hinder one's natural perception, however.",
     "message": "You channel a shimmering aura, that fades into swirling illusory shadows.",
     "valid_targets": [ "self", "ally" ],
@@ -586,7 +586,7 @@
   {
     "id": "arcana_blessing_might",
     "type": "SPELL",
-    "name": "Arcane Blessing: Might",
+    "name": "<color_light_blue>Might</color>",
     "description": "Using this spell will grant a temporary boost to strength.  It can be used on yourself or an ally.",
     "message": "You feel raw strength channeled through you, surging forth at your command.",
     "valid_targets": [ "self", "ally" ],
@@ -612,7 +612,7 @@
   {
     "id": "arcana_blessing_open_lock",
     "type": "SPELL",
-    "name": "Arcane Blessing: Open Lock",
+    "name": "<color_light_blue>Open Lock</color>",
     "description": "Using this spell will conjure a mote of artifice that can be used to open locked doors.",
     "message": "You focus, and a shimmering ball of energy appears in your hands.",
     "valid_targets": [ "self" ],
@@ -636,7 +636,7 @@
     "id": "arcana_blessing_pacify_monsters",
     "type": "SPELL",
     "//": "Cheap dirty hack will be replaced when this is charm monster is eventually implemented.",
-    "name": "Arcane Blessing: Pacify Monsters",
+    "name": "<color_light_blue>Pacify Monsters</color>",
     "description": "Using this spell will conjure a mote of calm, that can be used to momentarily sway nearby creatures to your side.",
     "message": "You focus, and a shimmering ball of energy appears in your hands.",
     "valid_targets": [ "self" ],
@@ -659,7 +659,7 @@
   {
     "id": "arcana_blessing_radiant_burst",
     "type": "SPELL",
-    "name": "Arcane Blessing: Radiant Burst",
+    "name": "<color_light_blue>Radiant Burst</color>",
     "description": "Using this spell will blast a cone-shaped area with a crackling burst of energy, striking enemies blind with divine lightning.",
     "message": "Unearthly trails of lightning arc outward, bathing a swath ahead of you in an eerie glow.",
     "effect": "cone_attack",
@@ -698,7 +698,7 @@
   {
     "id": "arcana_blessing_summon_giant_centipedes",
     "type": "SPELL",
-    "name": "Arcane Blessing: Summon Giant Centipedes",
+    "name": "<color_light_blue>Summon Giant Centipedes</color>",
     "description": "Using this spell will summon mutated vermin, which will be a permanent presence when this spell is at full proficiency.",
     "message": "You focus, imagery of false omens being averted lingering in your mind, as unnatural vermin slither into existence.",
     "valid_targets": [ "ground" ],
@@ -729,7 +729,7 @@
   {
     "id": "arcana_blessing_summon_homunculus",
     "type": "SPELL",
-    "name": "Arcane Blessing: Summon Homunculus",
+    "name": "<color_light_blue>Summon Homunculus</color>",
     "description": "Using this spell will summon a mimicry of the human form, which will be a permanent presence when this spell is at full proficiency.",
     "message": "You focus, imagery of false omens lingering in your mind as a living construct is called to serve you.",
     "valid_targets": [ "ground" ],
@@ -757,7 +757,7 @@
   {
     "id": "arcana_blessing_summon_skeletal_dog",
     "type": "SPELL",
-    "name": "Arcane Blessing: Summon Skeletal Dogs",
+    "name": "<color_light_blue>Summon Skeletal Dogs</color>",
     "description": "Using this spell will summon a number of animalistic revenants, which will be a permanent presence when this spell is at full proficiency.",
     "message": "You focus, imagery of a dead world lingering in your mind as an undead hunting pack surges forth.",
     "valid_targets": [ "ground" ],
@@ -788,7 +788,7 @@
   {
     "id": "arcana_blessing_summon_skeleton",
     "type": "SPELL",
-    "name": "Arcane Blessing: Summon Skeleton",
+    "name": "<color_light_blue>Summon Skeleton</color>",
     "description": "Using this spell will summon a humanoid revenant, which will be a permanent presence when this spell is at full proficiency.",
     "message": "You focus, imagery of humanity's extinction lingering in your mind as an undead servant appears before you.",
     "valid_targets": [ "ground" ],
@@ -816,7 +816,7 @@
   {
     "id": "arcana_blessing_summon_thing",
     "type": "SPELL",
-    "name": "Arcane Blessing: Summon Thing",
+    "name": "<color_light_blue>Summon Thing</color>",
     "description": "Using this spell will summon a tentacled abomination, which will be a permanent presence when this spell is at full proficiency.",
     "message": "You focus, imagery of the horrors your enemies embody lingering in your mind, as a writhing mass of tendrils wavers into existence.",
     "valid_targets": [ "ground" ],
@@ -844,7 +844,7 @@
   {
     "id": "arcana_blessing_summon_vortices",
     "type": "SPELL",
-    "name": "Arcane Blessing: Summon Vortices",
+    "name": "<color_light_blue>Summon Vortices</color>",
     "description": "Using this spell will summon swirling beings from Beyond, which will be a permanent presence when this spell is at full proficiency.",
     "message": "You focus, imagery of uncertain, distant futures lingering in your mind, as the living wind heeds your call.",
     "valid_targets": [ "ground" ],
@@ -875,7 +875,7 @@
   {
     "id": "arcana_blessing_surge_adrenaline",
     "type": "SPELL",
-    "name": "Arcane Blessing: Surge of Adrenaline",
+    "name": "<color_light_blue>Surge of Adrenaline</color>",
     "description": "Using this spell will provoke a rush of adrenaline for urgent situations, albeit with the same drawbacks afterward.  It can be used on yourself or an ally.",
     "message": "You channel an uplifting rush of energy, to prime the body for a fight.",
     "valid_targets": [ "self", "ally" ],
@@ -901,7 +901,7 @@
   {
     "id": "arcana_blessing_wall_force",
     "type": "SPELL",
-    "name": "Arcane Blessing: Wall of Force",
+    "name": "<color_light_blue>Wall of Force</color>",
     "description": "Using this spell will conjure a magical barrier where you target it, which can be used to trap enemies if placed carefully.",
     "message": "A flickering flame marks the ground for a moment, before an impenetrable barrier envelops it.",
     "valid_targets": [ "ground" ],
@@ -927,7 +927,7 @@
   {
     "id": "arcana_blessing_ward_acid",
     "type": "SPELL",
-    "name": "Arcane Blessing: Ward Against Acid",
+    "name": "<color_light_blue>Ward Against Acid</color>",
     "description": "Using this spell will grant a blessing that completely protects against acid, even direct contact.  It can be used on yourself or an ally.",
     "message": "You channel a shimmering aura, and the air passing through carries a faintly bitter scent to it.",
     "valid_targets": [ "self", "ally" ],
@@ -953,7 +953,7 @@
   {
     "id": "arcana_blessing_ward_cold",
     "type": "SPELL",
-    "name": "Arcane Blessing: Ward Against Cold",
+    "name": "<color_light_blue>Ward Against Cold</color>",
     "description": "Using this spell will protect against the cold, and all its side effects.  It can be used on yourself or an ally.",
     "message": "You channel a protective aura, the air gaining a soothing warmth to it.",
     "valid_targets": [ "self", "ally" ],
@@ -976,7 +976,7 @@
   {
     "id": "arcana_blessing_ward_flame",
     "type": "SPELL",
-    "name": "Arcane Blessing: Ward Against Flame",
+    "name": "<color_light_blue>Ward Against Flame</color>",
     "description": "Using this spell will completely protect against fire, as well as the side effects caused by heat and smoke.  It can be used on yourself or an ally.",
     "message": "You channel a protective aura, the air seeming chilled by your actions.",
     "valid_targets": [ "self", "ally" ],
@@ -999,7 +999,7 @@
   {
     "id": "arcana_blessing_ward_lightning",
     "type": "SPELL",
-    "name": "Arcane Blessing: Ward Against Lightning",
+    "name": "<color_light_blue>Ward Against Lightning</color>",
     "description": "Using this spell will grant a blessing that completely protects against lightning.  It can be used on yourself or on an ally.",
     "message": "You channel a soothing, insulating aura.",
     "valid_targets": [ "self" ],
@@ -1025,7 +1025,7 @@
   {
     "id": "arcana_blessing_ward_poison",
     "type": "SPELL",
-    "name": "Arcane Blessing: Ward Against Poison",
+    "name": "<color_light_blue>Ward Against Poison</color>",
     "description": "Using this spell will grant a blessing that protects against toxic gas and other forms of poison.  It can be used on yourself or an ally.",
     "message": "You channel energy, spreading a revitalizing glow by your will.",
     "valid_targets": [ "self", "ally" ],
@@ -1051,7 +1051,7 @@
   {
     "id": "arcana_blessing_wave_destruction",
     "type": "SPELL",
-    "name": "Arcane Blessing: Wave of Destruction",
+    "name": "<color_light_blue>Wave of Destruction</color>",
     "description": "Using this spell will unleash a devastating, destructive blast of force, scouring the very land itself.",
     "message": "The very air wavers as an otherworldly roar resounds, blasting everything around you with the lightning of an unnatural storm.",
     "effect": "target_attack",
@@ -1121,7 +1121,7 @@
   {
     "id": "arcana_item_chalice_offering",
     "type": "SPELL",
-    "name": "Offering to The Beyond",
+    "name": "Offering",
     "description": "Prepares a ritual to turn part of your life force into a usable form of essence.  Doing so will take 15 minutes, inflicting harm upon your body you at the end, as well as dire consequences if overused...",
     "message": "You work a ritual to draw power from your own breath, drawn by instinct to whisper words in an unfamiliar language.  The verses complete, you raise the chalice as if to drink from it, only for your breath to be drawn from your lungs!",
     "valid_targets": [ "self", "ground" ],
@@ -1143,7 +1143,7 @@
   {
     "id": "arcana_item_chalice_offering_winding",
     "type": "SPELL",
-    "name": "Offering to The Beyond Windedness",
+    "name": "Offering Windedness",
     "description": "This is so that the chalice ritual actually knocks the wind out of you.",
     "valid_targets": [ "self" ],
     "min_damage": -8000,
@@ -1154,7 +1154,7 @@
   {
     "id": "arcana_item_chalice_offering_corruption",
     "type": "SPELL",
-    "name": "Offering to The Beyond Corruption",
+    "name": "Offering Corruption",
     "description": "This inflicts the more insidious effects of the chalice.  That's 2 entire days of side-effect buildup per use, by the way.",
     "valid_targets": [ "self" ],
     "effect_str": "chalice_offering_side_effects",
@@ -1278,7 +1278,7 @@
   {
     "id": "arcana_magic_agility",
     "type": "SPELL",
-    "name": "Magic Sign: Agility",
+    "name": "<color_cyan>Agility</color>",
     "description": "Using this spell will grant a temporary speed and agility-enhancing effect.  It can be used on yourself or an ally.",
     "message": "\"Ethereal winds, guide my passage...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1305,7 +1305,7 @@
   {
     "id": "arcana_magic_capacitance",
     "type": "SPELL",
-    "name": "Magic Sign: Capacitance",
+    "name": "<color_cyan>Capacitance</color>",
     "description": "Using this spell will channel your energy into artifice within the body, restoring bionic energy at the cost of fatigue.  Doing so will shock yourself, however.",
     "message": "\"Dōnēs nobis virtus...\"  You cast %s!",
     "valid_targets": [ "self" ],
@@ -1330,7 +1330,7 @@
   {
     "id": "arcana_magic_clairvoyance",
     "type": "SPELL",
-    "name": "Magic Sign: Clairvoyance",
+    "name": "<color_cyan>Clairvoyance</color>",
     "description": "Using this spell will anoint you with an ivory halo, granting you sight beyond sight.",
     "message": "\"Show me what eyes could never glimpse...\"  You cast %s!",
     "valid_targets": [ "self" ],
@@ -1354,7 +1354,7 @@
   {
     "id": "arcana_magic_clarity_blood",
     "type": "SPELL",
-    "name": "Magic Sign: Clarity of Blood",
+    "name": "<color_cyan>Clarity of Blood</color>",
     "description": "Using this spell will grant protection against parasites and the Mycus.  It can be used on yourself or an ally.",
     "message": "\"You are many, but I am more than all of you...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1381,7 +1381,7 @@
   {
     "id": "arcana_magic_confuse_monster",
     "type": "SPELL",
-    "name": "Magic Sign: Confuse Monster",
+    "name": "<color_cyan>Confuse Monster</color>",
     "description": "Using this spell will stun all hostiles in the area around you.",
     "message": "\"No blade may mark me, if the hand cannot strike true...\"  You cast %s!",
     "effect": "target_attack",
@@ -1408,7 +1408,7 @@
   {
     "id": "arcana_magic_conjure_acid",
     "type": "SPELL",
-    "name": "Magic Sign: Conjure Acid",
+    "name": "<color_cyan>Conjure Acid</color>",
     "description": "Using this spell will conjure a splash of acid at the point targeted.",
     "message": "\"Let it be as time itself, eroding all in its path...\"  You cast %s!",
     "effect": "target_attack",
@@ -1448,7 +1448,7 @@
   {
     "id": "arcana_magic_conjure_flame",
     "type": "SPELL",
-    "name": "Magic Sign: Conjure Flame",
+    "name": "<color_cyan>Conjure Flame</color>",
     "description": "Using this spell will conjure an eruption of flames at the location targeted.",
     "message": "\"Let this be your pyre...\"  You cast %s!",
     "effect": "target_attack",
@@ -1485,7 +1485,7 @@
   {
     "id": "arcana_magic_dampening",
     "type": "SPELL",
-    "name": "Magic Sign: Dampening",
+    "name": "<color_cyan>Dampening</color>",
     "description": "Using this spell will anoint you with a coral halo, granting a temporary effect that will sap energy from fires, and draw radiation from your body.",
     "message": "\"Let the flames part, as vermin fleeing before me...\"  You cast %s!",
     "valid_targets": [ "self" ],
@@ -1509,7 +1509,7 @@
   {
     "id": "arcana_magic_flame_armor",
     "type": "SPELL",
-    "name": "Magic Sign: Flame Armor",
+    "name": "<color_cyan>Flame Armor</color>",
     "description": "Using this spell will grant temporary resistance to heat and smoke.  Direct contact with flame will still cause harm, however.  It can be used on yourself or an ally.",
     "message": "\"The steel does not fear the flame that tempers it...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1536,7 +1536,7 @@
   {
     "id": "arcana_magic_free_action",
     "type": "SPELL",
-    "name": "Magic Sign: Free Action",
+    "name": "<color_cyan>Free Action</color>",
     "description": "Using this spell will grant protection against paralytic effects and other hindrances.  It can be used on yourself or an ally.",
     "message": "\"Let there be no fetter that can bind me...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1563,7 +1563,7 @@
   {
     "id": "arcana_magic_healing",
     "type": "SPELL",
-    "name": "Magic Sign: Healing",
+    "name": "<color_cyan>Healing</color>",
     "description": "Using this spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.  It can be used on yourself or an ally.",
     "message": "\"We shall not yet fall into extinction...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1592,7 +1592,7 @@
   {
     "id": "arcana_magic_insight",
     "type": "SPELL",
-    "name": "Magic Sign: Insight",
+    "name": "<color_cyan>Insight</color>",
     "description": "Using this spell will grant a temporary boost to perception.  It can be used on yourself or an ally.",
     "message": "\"All is known to one who watches and listens with patience...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1619,7 +1619,7 @@
   {
     "id": "arcana_magic_light",
     "type": "SPELL",
-    "name": "Magic Sign: Light",
+    "name": "<color_cyan>Light</color>",
     "description": "Using this spell will conjure a field of magical light, lingering in the area around you.",
     "message": "\"The smallest candle flame brings hope until the dawn...\"  You cast %s!",
     "valid_targets": [ "self" ],
@@ -1648,7 +1648,7 @@
   {
     "id": "arcana_magic_lightning_ward",
     "type": "SPELL",
-    "name": "Magic Sign: Lightning Ward",
+    "name": "<color_cyan>Lightning Ward</color>",
     "description": "Using this spell will anoint you with an amber halo, granting you immunity to lightning.",
     "message": "\"One foot after the other, always grounded...\"  You cast %s!",
     "valid_targets": [ "self" ],
@@ -1672,7 +1672,7 @@
   {
     "id": "arcana_magic_might",
     "type": "SPELL",
-    "name": "Magic Sign: Might",
+    "name": "<color_cyan>Might</color>",
     "description": "Using this spell will grant a temporary boost to strength.  It can be used on yourself or an ally.",
     "message": "\"Let it be a glorious battle...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1699,7 +1699,7 @@
   {
     "id": "arcana_magic_open_lock",
     "type": "SPELL",
-    "name": "Magic Sign: Open Lock",
+    "name": "<color_cyan>Open Lock</color>",
     "description": "Using this spell will conjure a mote of artifice that can be used to open locked doors.",
     "message": "\"That which is made by man can always be undone by human hands...\"  You cast %s!",
     "valid_targets": [ "self" ],
@@ -1723,7 +1723,7 @@
   {
     "id": "arcana_magic_overgrowth",
     "type": "SPELL",
-    "name": "Magic Sign: Overgrowth",
+    "name": "<color_cyan>Overgrowth</color>",
     "description": "Using this spell will conjure an eruption of the living forest, at the location you target.",
     "message": "\"We shall prosper, no matter how barren the ground...\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -1753,7 +1753,7 @@
   {
     "id": "arcana_magic_poison_armor",
     "type": "SPELL",
-    "name": "Magic Sign: Poison Armor",
+    "name": "<color_cyan>Poison Armor</color>",
     "description": "Using this spell will grant a blessing that protects against toxic gas and other forms of poison.  It can be used on yourself or an ally.",
     "message": "\"I fear no venom, whether it be by word or blade...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1780,7 +1780,7 @@
   {
     "id": "arcana_magic_serpentine_shield",
     "type": "SPELL",
-    "name": "Magic Sign: Serpentine Shield",
+    "name": "<color_cyan>Serpentine Shield</color>",
     "description": "Using this spell will anoint you with an obsidian halo, granting a temporary defensive effect that will summon shadowy serpents to aid you.",
     "message": "\"Fear not the darkness, but those who lure you into it...\"  You cast %s!",
     "valid_targets": [ "self" ],
@@ -1804,7 +1804,7 @@
   {
     "id": "arcana_magic_shockstorm",
     "type": "SPELL",
-    "name": "Magic Sign: Shockstorm",
+    "name": "<color_cyan>Shockstorm</color>",
     "description": "Using this spell will call forth lightning all around you, harming any hostiles that are close enough.",
     "message": "\"Let it be a thunder to split the heavens and earth...\"  You cast %s!",
     "effect": "target_attack",
@@ -1841,7 +1841,7 @@
   {
     "id": "arcana_magic_summon_skeletal_dog",
     "type": "SPELL",
-    "name": "Magic Sign: Summon Skeletal Dog",
+    "name": "<color_cyan>Summon Skeletal Dog</color>",
     "description": "Using this spell will summon an animalistic revenant, which will be loyal but not permanent.",
     "message": "\"Loyal unto death, and even beyond...\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -1870,7 +1870,7 @@
   {
     "id": "arcana_magic_summon_shadow",
     "type": "SPELL",
-    "name": "Magic Sign: Summon Shadow",
+    "name": "<color_cyan>Summon Shadow</color>",
     "description": "Using this spell will summon a living shadow, which will be loyal but not permanent.",
     "message": "\"Neherit, otira atvess...\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -1899,7 +1899,7 @@
   {
     "id": "arcana_magic_summon_shadow_snake",
     "type": "SPELL",
-    "name": "Magic Sign: Summon Shadow Snake",
+    "name": "<color_cyan>Summon Shadow Snake</color>",
     "description": "Using this spell will summon a living shadow in serpentine form, which will be loyal but not permanent.",
     "message": "\"Neherit, ievona karoh...\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -1928,7 +1928,7 @@
   {
     "id": "arcana_magic_surge_adrenaline",
     "type": "SPELL",
-    "name": "Magic Sign: Surge of Adrenaline",
+    "name": "<color_cyan>Surge of Adrenaline</color>",
     "description": "Using this spell will provoke a rush of adrenaline for urgent situations, albeit with the same drawbacks afterward.  It can be used on yourself or an ally.",
     "message": "\"The battle is not over yet...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1955,7 +1955,7 @@
   {
     "id": "arcana_magic_ward_against_evil",
     "type": "SPELL",
-    "name": "Magic Sign: Ward Against Evil",
+    "name": "<color_cyan>Ward Against Evil</color>",
     "description": "Using this spell will grant a blessing that protects against certain anomalous threats.  It can be used on yourself or an ally.",
     "message": "\"The wicked falter before the vigilant...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1982,7 +1982,7 @@
   {
     "id": "arcana_mark_drain_life",
     "type": "SPELL",
-    "name": "Sanguine Mark: Drain Life",
+    "name": "<color_red>Drain Life</color>",
     "description": "Using this spell will anoint you with a horned halo, granting a life-draining effect to your attacks.  Use it well, lest the price be greater than the reward.",
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_aftermath_drain_life_fatigue", "hit_self": true, "max_level": 10 } ],
@@ -2007,7 +2007,7 @@
   {
     "id": "arcana_mark_elemental_sign",
     "type": "SPELL",
-    "name": "Sanguine Mark: Elemental Sign",
+    "name": "<color_red>Elemental Sign</color>",
     "description": "Using this spell will grant temporary resistance to heat and smoke, along with sapping heat from all around you.  Direct contact with flame will still cause harm, however.  It can only be used on yourself.",
     "message": "With a gesture, your inner fire flares up.  %s!",
     "valid_targets": [ "self" ],
@@ -2034,7 +2034,7 @@
   {
     "id": "arcana_mark_infernal_flame",
     "type": "SPELL",
-    "name": "Sanguine Mark: Infernal Flame",
+    "name": "<color_red>Infernal Flame</color>",
     "description": "Using this spell will conjure an eruption of hellfire at the location targeted, inflicting horrific burns and leaving a permanent scar upon the land.",
     "message": "With a wave of the hand, fire leaps from the ground itself.  %s!",
     "effect": "target_attack",
@@ -2078,7 +2078,7 @@
   {
     "id": "arcana_mark_might",
     "type": "SPELL",
-    "name": "Sanguine Mark: Might",
+    "name": "<color_red>Might</color>",
     "description": "Using this spell will grant a temporary boost to strength.  It can only be used on yourself.",
     "message": "A lust for battle surges through you as you complete the ritual gesture.  %s!",
     "valid_targets": [ "self" ],
@@ -2104,7 +2104,7 @@
   {
     "id": "arcana_mark_revenant_blood",
     "type": "SPELL",
-    "name": "Sanguine Mark: Revenant Blood",
+    "name": "<color_red>Revenant Blood</color>",
     "description": "Using this spell will grant protection against all pestilence infesting food and water, and purge the influence of the Mycus.  The body will burn through its reserves faster, however.  It can only be used on yourself.",
     "message": "With a sign, you feel your blood burning with magical power.  %s!",
     "valid_targets": [ "self" ],
@@ -2130,7 +2130,7 @@
   {
     "id": "arcana_mark_summon_dark_wyrm",
     "type": "SPELL",
-    "name": "Sanguine Mark: Summon Dark Wyrm",
+    "name": "<color_red>Summon Dark Wyrm</color>",
     "description": "Using this spell will summon a dark wyrm.  Although it will be permanent at maximum power, whether it will obey you is completely up to chance.",
     "message": "Your gesture causes the ground to shift and flow, a pitch-black form slithering out of the earth itself.  %s!",
     "valid_targets": [ "ground" ],
@@ -2159,7 +2159,7 @@
   {
     "id": "arcana_mark_summon_fiend",
     "type": "SPELL",
-    "name": "Sanguine Mark: Summon Fiend",
+    "name": "<color_red>Summon Fiend</color>",
     "description": "Using this spell will summon an ashen revenant.  Although it will be permanent at maximum power, whether it will obey you is completely up to chance.",
     "message": "With a hand sign, a plume of living flame erupts from the ground, solidifying into a scorched humanoid form.  %s!",
     "valid_targets": [ "ground" ],
@@ -2188,7 +2188,7 @@
   {
     "id": "arcana_mark_summon_jabberwock",
     "type": "SPELL",
-    "name": "Sanguine Mark: Summon Jabberwock",
+    "name": "<color_red>Summon Jabberwock</color>",
     "description": "Using this spell will summon a golem woven of flesh.  Although it will be permanent at maximum power, whether it will obey you is completely up to chance.",
     "message": "The ground warps at your command, a host of rotting bodies emerging from the disturbance, forms fusing together into an abomination.  %s!",
     "valid_targets": [ "ground" ],
@@ -2217,7 +2217,7 @@
   {
     "id": "arcana_mark_suppression",
     "type": "SPELL",
-    "name": "Sanguine Mark: Suppression",
+    "name": "<color_red>Suppression</color>",
     "description": "Using this spell will anoint you with a coral halo, granting a temporary effect that will sap energy from fires, and draw radiation from your body.   Moreover, it will dull the fire within you, reducing how quickly it taxes your body.",
     "message": "You raise your hand, and the odd warmth within your body seems to burn less intensely.  %s!",
     "valid_targets": [ "self" ],
@@ -2242,7 +2242,7 @@
   {
     "id": "arcana_mark_surge_adrenaline",
     "type": "SPELL",
-    "name": "Sanguine Mark: Surge of Adrenaline",
+    "name": "<color_red>Surge of Adrenaline</color>",
     "description": "Using this spell will provoke a rush of adrenaline for urgent situations, albeit with the same drawbacks afterward.  It can only be used on yourself.",
     "message": "Your gesture provokes a rush of instinct, urging you to kill.  %s!",
     "valid_targets": [ "self" ],
