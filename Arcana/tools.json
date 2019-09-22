@@ -217,6 +217,7 @@
         "msg": "\"Ave martello!\" The hammer gives off a golden light.",
         "target_charges": 0,
         "active": true,
+        "need_wielding": true,
         "need_charges": 1,
         "need_charges_msg": "Dull essence shall make the hammer shine.",
         "menu_text": "Hold the hammer high",
@@ -676,6 +677,7 @@
         "msg": "You draw upon the axe's energy, and the axehead glows a bright red!",
         "target_charges": 5,
         "active": true,
+        "need_wielding": true,
         "menu_text": "Activate explosive rune",
         "type": "transform"
       }
@@ -1556,6 +1558,7 @@
         "msg": "Strange glowing runes fill the air as you channel magical power through the blade.",
         "target_charges": 0,
         "active": true,
+        "need_wielding": true,
         "moves": 50,
         "need_charges": 1,
         "need_charges_msg": "Return sufficient power to The Beyond, and be rewarded.",
@@ -1625,9 +1628,10 @@
     "use_action": [
       {
         "target": "stormbringer_on",
-        "msg": "The runes on the blade glow for a moment, and you feel a strange bloodlust overtake you.",
+        "msg": "The runes on the blade glow for a moment, the leather wrap of the hilt contorting into winding tendrils that envelop your hand!  You feel a strange bloodlust overtake you!",
         "target_charges": 1200,
         "active": true,
+        "need_wielding": true,
         "need_charges": 9,
         "need_charges_msg": "Nine motes of blood shall awaken the blade.",
         "menu_text": "Awaken the dark blade",
