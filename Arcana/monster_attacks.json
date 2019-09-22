@@ -2,7 +2,7 @@
   {
     "id": "arcana_monster_archon_gaze",
     "type": "SPELL",
-    "name": "Gaze of The Six-Winged Servant",
+    "name": "Archon's Gaze",
     "description": "This is a monster spell, used by the host of the archon.",
     "effect": "target_attack",
     "valid_targets": [ "hostile" ],
