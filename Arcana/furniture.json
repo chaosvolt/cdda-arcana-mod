@@ -157,7 +157,7 @@
     "id": "f_force_barrier",
     "type": "furniture",
     "name": "shimmering barrier",
-    "description": "A strange wavering distortiion in the air, offering the faintest hint of illumination.  It hardens into a crackling wall of light when struck, but a gentle touch could dismiss it...",
+    "description": "A strange wavering distortion in the air, offering the faintest hint of illumination.  It hardens into a crackling wall of light when struck, but a gentle touch could dismiss it...",
     "symbol": "#",
     "looks_like": "t_reinforced_glass",
     "bgcolor": [ "blue" ],
@@ -166,6 +166,12 @@
     "required_str": -1,
     "flags": [ "NOITEM", "TRANSPARENT" ],
     "deployed_item": "candle_barrier_aftermath",
-    "examine_action": "deployed_furniture"
+    "examine_action": "deployed_furniture",
+    "bash": {
+      "str_min": 100,
+      "str_max": 400,
+      "sound": "crash!",
+      "sound_fail": "whump!"
+    }
   }
 ]

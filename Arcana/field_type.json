@@ -16,16 +16,17 @@
   {
     "id": "fd_veil_light",
     "type": "field_type",
+    "//": "Light is just enough to make the tile it's in fully bright, seems the redundancy is needed to enable intensities, which is the main way that the spell can scale up effective duration.",
     "intensity_levels": [
       {
         "name": "strange light",
         "light_emitted": 10
       },
       {
-        "light_emitted": 20
+        "light_emitted": 10
       },
       {
-        "light_emitted": 30
+        "light_emitted": 10
       }
     ],
     "half_life": "30 minutes",
