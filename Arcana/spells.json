@@ -1140,10 +1140,12 @@
   {
     "id": "arcana_item_athame_sanguine_art",
     "type": "SPELL",
+    "//": "Todo: add a difficulty of 1 and remove no-failure from the item's action, if it turns out that skill reasonably reduces an unleveled spell's failure rate to be feasible, when spell skill is no longer hardcoded.",
     "name": "Sanguine Art",
     "description": "Prepares a ritual to turn part of your life force into a usable form of essence.  Doing so will take 10 minutes, inflicting blood loss on you at the end, as well as potential consequences if overused...",
     "message": "You work a ritual to draw power from your own blood, instinct guiding your hand as you trace patterns across your skin with the dull blade.  As you work the last rune, the only one to actually break the skin, wounds open elsewhere on your body!",
-    "valid_targets": [ "self", "ground" ],
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ],
     "extra_effects": [
       { "id": "arcana_item_athame_sanguine_art_corruption", "hit_self": true },
       { "id": "arcana_item_generate_blood_essence", "hit_self": true }
@@ -1156,8 +1158,8 @@
     "energy_source": "HP",
     "base_energy_cost": 3,
     "final_energy_cost": 3,
-    "min_duration": 300,
-    "max_duration": 300
+    "min_duration": 30000,
+    "max_duration": 30000
   },
   {
     "id": "arcana_item_athame_sanguine_art_corruption",
@@ -1173,10 +1175,12 @@
   {
     "id": "arcana_item_chalice_offering",
     "type": "SPELL",
+    "//": "Todo: add a difficulty of 3 and remove no-failure from the item's action, if it turns out that skill reasonably reduces an unleveled spell's failure rate to be feasible, when spell skill is no longer hardcoded.",
     "name": "Offering",
     "description": "Prepares a ritual to turn part of your life force into a usable form of essence.  Doing so will take 15 minutes, inflicting harm upon your body you at the end, as well as dire consequences if overused...",
     "message": "You work a ritual to draw power from your own breath, drawn by instinct to whisper words in an unfamiliar language.  The verses complete, you raise the chalice as if to drink from it, only for your breath to be drawn from your lungs!",
-    "valid_targets": [ "self", "ground" ],
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
     "extra_effects": [
       { "id": "arcana_item_chalice_offering_winding", "hit_self": true },
       { "id": "arcana_item_chalice_offering_corruption", "hit_self": true },
@@ -1198,8 +1202,8 @@
     "name": "Offering Windedness",
     "description": "This is so that the chalice ritual actually knocks the wind out of you.",
     "valid_targets": [ "self" ],
-    "min_damage": -8000,
-    "max_damage": -8000,
+    "min_damage": -10000,
+    "max_damage": -10000,
     "effect": "recover_energy",
     "effect_str": "STAMINA"
   },

@@ -313,36 +313,6 @@
     "components": [ [ [ "gold_small", 625 ] ], [ [ "arcana_holy_relic_any", 1, "LIST" ], [ "arcana_holy_symbol_any", 1, "LIST" ] ] ]
   },
   {
-    "result": "offering_chalice",
-    "type": "recipe",
-    "id_suffix": "restore",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_TOOLS",
-    "skill_used": "magic",
-    "difficulty": 2,
-    "time": "1 m",
-    "autolearn": true,
-    "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_sacrifice", 0 ], [ "book_bloodmagic", 1 ] ],
-    "byproducts": [ [ "essence_blood", 6 ] ],
-    "components": [ [ [ "offering_chalice_used", 1 ] ], [ [ "ash", 3 ] ] ],
-    "flags": [ "BLIND_HARD" ]
-  },
-  {
-    "result": "essence_blood",
-    "type": "recipe",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_MATERIALS",
-    "skill_used": "magic",
-    "difficulty": 2,
-    "time": "10 m",
-    "autolearn": true,
-    "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_bloodmagic", 0 ] ],
-    "result_mult": 3,
-    "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "rag_bloody", 3 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
     "result": "essence_blood",
     "type": "recipe",
     "id_suffix": "human sacrifice",
