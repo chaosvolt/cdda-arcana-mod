@@ -1193,7 +1193,7 @@
     "damage_type": "cold",
     "min_damage": 10,
     "max_damage": 10,
-    "base_casting_time": 10000,
+    "base_casting_time": 90000,
     "final_casting_time": 90000
   },
   {
