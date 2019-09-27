@@ -98,7 +98,7 @@
       "both": {
         "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "waterskin", "matches", "bowl_clay", "book_bloodmagic" ],
         "entries": [
-          { "item": "bloodscourge", "ammo-item": "essence_blood", "charges": 15 },
+          { "item": "bloodscourge", "ammo-item": "essence_blood", "charges": 15, "custom-flags": [ "auto_wield" ] },
           { "item": "revenant_crown", "charges": 2 },
           { "item": "rag", "count": 3 },
           { "item": "blood_athame", "container-item": "sheath" }
@@ -138,7 +138,7 @@
           "book_hexenhammer"
         ],
         "entries": [
-          { "item": "hexenhammer", "charges": 1 },
+          { "item": "hexenhammer", "charges": 1, "custom-flags": [ "auto_wield" ] },
           { "item": "somen_clairvoyance", "charges": 12 },
           { "item": "gilded_aegis", "charges": 30 },
           { "item": "knife_hunting", "container-item": "sheath" }
@@ -159,9 +159,19 @@
     "skills": [ { "level": 5, "name": "magic" }, { "level": 2, "name": "gun" }, { "level": 2, "name": "dodge" } ],
     "items": {
       "both": {
-        "items": [ "loincloth", "tunic", "socks", "bastsandals", "backpack", "waterskin", "matches", "offering_chalice", "book_sacrifice" ],
+        "items": [
+          "loincloth",
+          "tunic",
+          "socks",
+          "bastsandals",
+          "backpack",
+          "waterskin",
+          "matches",
+          "offering_chalice",
+          "book_sacrifice"
+        ],
         "entries": [
-          { "item": "thunder_sigil", "ammo-item": "essence", "charges": 5 },
+          { "item": "thunder_sigil", "ammo-item": "essence", "charges": 5, "custom-flags": [ "auto_wield" ] },
           { "item": "robe_shadow", "charges": 10 },
           { "item": "gauntlets_necro", "charges": 1 },
           { "item": "copper_knife", "container-item": "sheath" }
@@ -191,7 +201,6 @@
           "backpack",
           "waterskin",
           "triffid_garland",
-          "q_staff",
           "matches",
           "bowl_pewter",
           "summon_kreck",
@@ -200,7 +209,11 @@
           "wyrmskin_piece",
           "book_summoning"
         ],
-        "entries": [ { "item": "makeshift_knife", "container-item": "sheath" }, { "item": "essence", "count": 5 } ]
+        "entries": [
+          { "item": "makeshift_knife", "container-item": "sheath" },
+          { "item": "essence", "count": 5 },
+          { "item": "q_staff", "custom-flags": [ "auto_wield" ] }
+        ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -244,7 +257,7 @@
         ],
         "entries": [
           { "item": "armor_wyrm", "ammo-item": "essence_blood", "charges": [ 4, 8 ] },
-          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 1 },
+          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 1, "custom-flags": [ "auto_wield" ] },
           {
             "item": "carbine_flintlock_double",
             "ammo-item": "flintlock_ammo",
