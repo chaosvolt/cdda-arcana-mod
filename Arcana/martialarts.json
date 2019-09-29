@@ -1,30 +1,67 @@
 [
   {
+    "id": "style_aikido",
+    "copy-from": "style_aikido",
+    "type": "martial_art",
+    "name": "Aikido",
+    "extend": { "weapons": [ "hand_of_armok" ] }
+  },
+  {
+    "id": "style_judo",
+    "copy-from": "style_judo",
+    "type": "martial_art",
+    "name": "Judo",
+    "extend": { "weapons": [ "hand_of_armok" ] }
+  },
+  {
     "id": "style_silat",
     "copy-from": "style_silat",
     "type": "martial_art",
     "name": "Silat",
-    "extend": { "weapons": ["blood_athame", "moonstone_fang", "staff_druidic", "bloodscourge", "scourge_staff", "spear_pestilence"] }
+    "extend": {
+      "weapons": [ "blood_athame", "moonstone_fang", "staff_druidic", "bloodscourge", "scourge_staff", "spear_pestilence" ]
+    }
+  },
+  {
+    "id": "style_krav_maga",
+    "copy-from": "style_krav_maga",
+    "type": "martial_art",
+    "name": "Krav Maga",
+    "extend": { "weapons": [ "blood_athame", "moonstone_fang", "staff_druidic" ] }
   },
   {
     "id": "style_fencing",
     "copy-from": "style_fencing",
     "type": "martial_art",
     "name": "Fencing",
-    "extend": { "weapons": ["sun_sword", "sun_sword_on", "staff_druidic"] }
+    "extend": { "weapons": [ "sun_sword", "sun_sword_on", "staff_druidic" ] }
+  },
+  {
+    "id": "style_swordsmanship",
+    "copy-from": "style_swordsmanship",
+    "type": "martial_art",
+    "name": "Medieval Swordsmanship",
+    "extend": { "weapons": [ "sun_sword", "sun_sword_on", "veilblade", "veilblade_on", "stormbringer", "stormbringer_on" ] }
+  },
+  {
+    "id": "style_ninjutsu",
+    "copy-from": "style_ninjutsu",
+    "type": "martial_art",
+    "name": "Ninjutsu",
+    "extend": { "weapons": [ "sun_sword", "sun_sword_on", "blood_athame", "moonstone_fang", "bloodscourge", "scourge_staff" ] }
   },
   {
     "id": "style_eskrima",
     "copy-from": "style_eskrima",
     "type": "martial_art",
     "name": "Eskrima",
-    "extend": { "weapons": ["graboid_fang", "dermatik_sting", "monster_fang", "blood_athame", "moonstone_fang", "staff_druidic"] }
+    "extend": { "weapons": [ "graboid_fang", "dermatik_sting", "monster_fang", "blood_athame", "moonstone_fang", "staff_druidic" ] }
   },
   {
     "id": "style_sojutsu",
     "copy-from": "style_sojutsu",
     "type": "martial_art",
     "name": "Sōjutsu",
-    "extend": { "weapons": ["spear_pestilence"] }
+    "extend": { "weapons": [ "spear_pestilence" ] }
   }
 ]

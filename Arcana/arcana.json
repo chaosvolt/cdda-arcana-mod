@@ -1,5 +1,13 @@
 [
   {
+    "type": "skill",
+    "ident": "magic",
+    "name": "arcana",
+    "description": "Your knowledge of strange, anomalous powers from far-off worlds.  While certain artifacts are beyond mortal understanding, this skill can be used for creating and using a few odd devices, some with lethal applications.",
+    "tags": [ "combat_skill" ],
+    "display_category": "display_interaction"
+  },
+  {
     "type": "material",
     "ident": "essencemat",
     "name": "Magical Essence",
@@ -13,13 +21,5 @@
     "dmg_adj": [ "lightly damaged", "damaged", "very damaged", "thoroughly damaged" ],
     "bash_dmg_verb": "damaged",
     "cut_dmg_verb": "damaged"
-  },
-  {
-    "type": "skill",
-    "ident": "magic",
-    "name": "arcana",
-    "description": "Your knowledge of strange, anomalous powers from far-off worlds.  While certain artifacts are beyond mortal understanding, this skill can be used for creating and using a few odd devices, some with lethal applications.",
-    "tags": [ "combat_skill" ],
-    "display_category": "display_interaction"
   }
 ]

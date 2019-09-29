@@ -889,6 +889,180 @@
     "use_action": "ARTIFACT"
   },
   {
+    "id": "spell_lockpick",
+    "//": "ID retained since it's still useful.",
+    "copy-from": "spell_base",
+    "type": "COMESTIBLE",
+    "name": "mote of artifice",
+    "name_plural": "motes of artifice",
+    "description": "A small, ethereal pinprick of energy barely the size of a marble.  It seems to waver in and out of existence with a perfectly regular pattern.  Using it can manipulate any mundane lock, to silently open the way.",
+    "color": "light_gray",
+    "stack_size": 1,
+    "use_action": { "type": "picklock", "pick_quality": 99 }
+  },
+  {
+    "id": "spell_lockpick_lesser",
+    "copy-from": "spell_base",
+    "type": "COMESTIBLE",
+    "name": "mote of artifice",
+    "name_plural": "motes of artifice",
+    "description": "A small, ethereal pinprick of energy barely the size of a marble.  It seems to waver in and out of existence with a perfectly regular pattern.  Using it can manipulate any mundane lock, to silently open the way.",
+    "color": "light_gray",
+    "stack_size": 1,
+    "use_action": { "type": "picklock", "pick_quality": 5 }
+  },
+  {
+    "id": "totem_elecresist",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Amber Seal: Lightning Ward",
+    "name_plural": "Amber Seal: Lightning Ward",
+    "description": "A small chunk of carved otherworldly amber.  Activate it to focus your mind and create a magic sign, granting protection against lightning.  This will expend the item entirely.",
+    "color": "light_grey",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_lightning_ward", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_cleric",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Angelic Seal: Ward Against Evil",
+    "name_plural": "Angelic Seal: Ward Against Evil",
+    "description": "An small winged figurine, carved from a strange iridescent stone.  Activate it to focus your mind and create a magic sign, granting protection against various anomalous effects.  This will expend the item entirely.",
+    "color": "light_green",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_ward_against_evil", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_agile",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Bone Seal: Agility",
+    "name_plural": "Bone Seal: Agility",
+    "description": "A small set of dice carved from otherworldly bones.  Activate it to focus your mind and create a magic sign, granting a temporary agility effect.  This will expend the item entirely.",
+    "color": "white",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_agility", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_confusion",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Chitinous Seal: Confuse Monsters",
+    "name_plural": "Chitinous Seal: Confuse Monsters",
+    "description": "A small token carved from a wicked stinger.  Activate it to focus your mind and create a magic sign, confusing monsters all around you.  This will expend the item entirely.",
+    "color": "dark_gray",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_confuse_monster", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_strength",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Dagger Seal: Might",
+    "name_plural": "Dagger Seal: Might",
+    "description": "A miniature dagger carved from strange ivory.  Activate it to focus your mind and create a magic sign, granting a temporary boost to strength.  This will expend the item entirely.",
+    "color": "white",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_might", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_clairvoyance",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Eternity Seal: Clairvoyance",
+    "name_plural": "Eternity Seal: Clairvoyance",
+    "description": "A small cabochon of dark, shimmering ivory.  Activate it to focus your mind and create a magic sign, granting a temporary clairvoyance effect.  This will expend the item entirely.",
+    "color": "light_grey",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_clairvoyance", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_free_action",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Indigo Seal: Free Action",
+    "name_plural": "Indigo Seal: Free Action",
+    "description": "A small ornament of vibrant purple petals.  Activate it to focus your mind and create a magic sign, granting protection against paralytic effects and other hindrances.  This will expend the item entirely.",
+    "color": "magenta",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_free_action", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_invis",
+    "copy-from": "totem_base",
+    "//": "ID retained to avoid breaking stuff.",
+    "type": "COMESTIBLE",
+    "name": "Obsidian Seal: Serpentine Shield",
+    "name_plural": "Obsidian Seal: Serpentine Shield",
+    "description": "A piece of unnaturally dark stone, shaped into an eccentric design.  Activate it to focus your mind and create a magic sign, granting a temporary defensive effect that will summon shadowy serpents to aid you.  This will expend the item entirely.",
+    "color": "dark_grey",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_serpentine_shield", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_plants",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Scarlet Seal: Overgrowth",
+    "name_plural": "Scarlet Seal: Overgrowth",
+    "description": "A small ornament of woven petals, an otherworldly vibrant red in hue.  Activate it to focus your mind and create a magic sign, and bring forth the forest.  This will expend the item entirely.",
+    "color": "red",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_overgrowth", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_flamearmor",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Starstone Seal: Flame Armor",
+    "name_plural": "Starstone Seal: Flame Armor",
+    "description": "A shimmering disc carved from a seemingly meteoric material.  Activate it to focus your mind and create a magic sign, gaining temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  This will expend the item entirely.",
+    "color": "dark_gray",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_flame_armor", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_insight",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Tear Seal: Insight",
+    "name_plural": "Tear Seal: Insight",
+    "description": "A curiously-refractive gem carved from an unearthly blue orb.  Activate it to focus your mind and create a magic sign, granting a temporary boost to perception.  This will expend the item entirely.",
+    "color": "white",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_insight", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_clarity",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Thorn Seal: Clarity of Blood",
+    "name_plural": "Thorn Seal: Clarity of Blood",
+    "description": "A sharp needle carved from a monstrous thorn.  Activate it to focus your mind and create a magic sign, granting protection against parasites and the Mycus.  This will expend the item entirely.",
+    "color": "magenta",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_clarity_blood", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_lightning",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Thunder Seal: Shockstorm",
+    "name_plural": "Thunder Seal: Shockstorm",
+    "description": "A small sliver of strange crystal, flickering as though distant storms rage within.  Activate it to focus your mind and create a magic sign, conjuring lightning all around you.  This will expend the item entirely.",
+    "color": "pink",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_shockstorm", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_heal",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Woven Seal: Healing",
+    "name_plural": "Woven Seal: Healing",
+    "description": "A tangled knot of flowing, molded bone.  Activate it to focus your mind and create a magic sign, and heal the body slightly.  This will expend the item entirely.",
+    "color": "white",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_healing", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_acidspray",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Wyrm Seal: Acid Spray",
+    "name_plural": "Wyrm Seal: Acid Spray",
+    "description": "A carved scale of acrid-smelling, otherworldly flesh.  Activate it to focus your mind and create a magic sign, conjuring a spray of acid.  This will expend the item entirely.",
+    "color": "blue",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_conjure_acid", "no_fail": true, "level": 10 }
+  },
+  {
     "id": "scroll_spell_acidspray",
     "copy-from": "scroll_base",
     "type": "TOOL",
@@ -1441,7 +1615,7 @@
       {
         "type": "repair_item",
         "item_action_type": "repair_fabric",
-        "materials": [ "bone", "chitin", "clay", "cotton", "fur", "leather", "stone", "wood", "wool" ],
+        "materials": [ "bone", "chitin", "acidchitin", "clay", "cotton", "fur", "leather", "gutskin", "stone", "wood", "wool" ],
         "skill": "magic",
         "tool_quality": 20,
         "cost_scaling": 0,

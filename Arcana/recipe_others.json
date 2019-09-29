@@ -766,7 +766,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_soaking_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "components": [ [ [ "monster_tear", 1 ], [ "spell_insight", 1 ] ] ]
+    "components": [ [ [ "monster_tear", 1 ] ] ]
   },
   {
     "result": "totem_plants",
@@ -782,7 +782,7 @@
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "filament", 5 ], [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [ [ [ "triffid_queen_flower", 1 ], [ "spell_plants", 1 ] ] ]
+    "components": [ [ [ "triffid_queen_flower", 1 ] ] ]
   },
   {
     "result": "totem_confusion",
@@ -798,7 +798,7 @@
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "dermatik_sting", 1 ], [ "spell_confusion", 1 ] ] ]
+    "components": [ [ [ "dermatik_sting", 1 ] ] ]
   },
   {
     "result": "totem_agile",
@@ -814,7 +814,7 @@
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "gracken_knuckles", 1 ], [ "spell_agile", 1 ] ] ]
+    "components": [ [ [ "gracken_knuckles", 1 ] ] ]
   },
   {
     "result": "totem_lightning",
@@ -829,7 +829,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 2 ] ],
-    "components": [ [ [ "vortex_shard", 1 ], [ "spell_lightning", 1 ] ] ]
+    "components": [ [ [ "vortex_shard", 1 ] ] ]
   },
   {
     "result": "totem_strength",
@@ -845,7 +845,7 @@
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "monster_fang", 1 ], [ "spell_strength", 1 ] ] ]
+    "components": [ [ [ "monster_fang", 1 ] ] ]
   },
   {
     "result": "totem_elecresist",
@@ -861,7 +861,7 @@
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "blob_gem", 1 ], [ "spell_elecresist", 1 ] ] ],
+    "components": [ [ [ "blob_gem", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -878,7 +878,7 @@
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
     "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "fighter_sting", 1 ], [ "spell_clarity", 1 ] ] ],
+    "components": [ [ [ "fighter_sting", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -900,7 +900,7 @@
       [ "arcana_essence_any", 2 ]
     ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
-    "components": [ [ [ "bone_twisted", 1 ], [ "spell_heal", 1 ] ] ],
+    "components": [ [ [ "bone_twisted", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -917,7 +917,7 @@
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "iridescent_plate", 1 ], [ "spell_flamearmor", 1 ] ] ]
+    "components": [ [ [ "iridescent_plate", 1 ] ] ]
   },
   {
     "result": "totem_clairvoyance",
@@ -933,7 +933,7 @@
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "graboid_fang", 1 ], [ "spell_clairvoyance", 1 ] ] ]
+    "components": [ [ [ "graboid_fang", 1 ] ] ]
   },
   {
     "result": "totem_invis",
@@ -948,7 +948,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
-    "components": [ [ [ "shadow_gem", 1 ], [ "spell_shadowsnakes", 1 ] ] ]
+    "components": [ [ [ "shadow_gem", 1 ] ] ]
   },
   {
     "result": "totem_cleric",
@@ -963,7 +963,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
-    "components": [ [ [ "engraved_stone", 1 ], [ "spell_cleric", 1 ] ] ]
+    "components": [ [ [ "engraved_stone", 1 ] ] ]
   },
   {
     "result": "totem_free_action",
@@ -979,7 +979,7 @@
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
     "using": [ [ "filament", 5 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [ [ [ "biollante_bud", 1 ], [ "spell_free_action", 1 ] ] ]
+    "components": [ [ [ "biollante_bud", 1 ] ] ]
   },
   {
     "result": "totem_acidspray",
@@ -995,7 +995,7 @@
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "wyrmskin_piece", 1 ], [ "spell_acidspray", 1 ] ] ]
+    "components": [ [ [ "wyrmskin_piece", 1 ] ] ]
   },
   {
     "result": "scroll_spell_confusion",

@@ -23,53 +23,12 @@
   },
   {
     "type": "material",
-    "ident": "bone",
-    "name": "Bone",
-    "density": 7,
-    "edible": true,
-    "bash_resist": 2,
-    "cut_resist": 3,
-    "acid_resist": 7,
-    "fire_resist": 1,
-    "elec_resist": 2,
-    "chip_resist": 8,
-    "repaired_with": "bone",
-    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
-    "bash_dmg_verb": "cracked",
-    "cut_dmg_verb": "chipped",
-    "vitamins": [ [ "calcium", 2 ] ],
-    "burn_data": [
-      { "fuel": 0, "smoke": 0, "burn": 0 },
-      { "fuel": 0, "smoke": 1, "burn": 1, "volume_per_turn": "250_ml" },
-      { "fuel": 1, "smoke": 1, "burn": 2 }
-    ]
-  },
-  {
-    "type": "material",
-    "ident": "chitin",
-    "name": "Chitin",
-    "density": 10,
-    "bash_resist": 3,
-    "cut_resist": 4,
-    "acid_resist": 6,
-    "fire_resist": 2,
-    "elec_resist": 2,
-    "chip_resist": 10,
-    "repaired_with": "chitin_piece",
-    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
-    "bash_dmg_verb": "cracked",
-    "cut_dmg_verb": "chipped",
-    "burn_data": [
-      { "fuel": 0, "smoke": 1, "burn": 1, "volume_per_turn": "1250_ml" },
-      { "fuel": 1, "smoke": 3, "burn": 1 },
-      { "fuel": 1, "smoke": 5, "burn": 5 }
-    ]
-  },
-  {
-    "type": "material",
     "ident": "clay",
     "name": "Clay",
     "density": 8,
+    "specific_heat_liquid": 1,
+    "specific_heat_solid": 1,
+    "latent_heat": 333,
     "bash_resist": 2,
     "cut_resist": 3,
     "acid_resist": 6,
@@ -79,13 +38,17 @@
     "repaired_with": "clay_lump",
     "dmg_adj": [ "chipped", "scratched", "cracked", "shattered" ],
     "bash_dmg_verb": "cracked",
-    "cut_dmg_verb": "cut"
+    "cut_dmg_verb": "cut",
+    "burn_products": [ [ "ceramic_shard", 1 ] ]
   },
   {
     "type": "material",
     "ident": "stone",
     "name": "Stone",
     "density": 17,
+    "specific_heat_liquid": 0.82,
+    "specific_heat_solid": 0.45,
+    "latent_heat": 273,
     "bash_resist": 6,
     "cut_resist": 6,
     "acid_resist": 8,
@@ -95,29 +58,7 @@
     "repaired_with": "rock",
     "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
     "bash_dmg_verb": "cracked",
-    "cut_dmg_verb": "chipped"
-  },
-  {
-    "type": "material",
-    "ident": "wood",
-    "name": "Wood",
-    "density": 4,
-    "bash_resist": 3,
-    "cut_resist": 2,
-    "acid_resist": 4,
-    "fire_resist": 1,
-    "elec_resist": 2,
-    "chip_resist": 10,
-    "repaired_with": "splinter",
-    "salvaged_into": "splinter",
-    "dmg_adj": [ "scratched", "chipped", "cracked", "splintered" ],
-    "bash_dmg_verb": "splintered",
-    "cut_dmg_verb": "gouged",
-    "burn_data": [
-      { "fuel": 1, "smoke": 1, "burn": 0.02, "volume_per_turn": "1250_ml" },
-      { "fuel": 2, "smoke": 1, "burn": 0.04, "volume_per_turn": "5000_ml" },
-      { "fuel": 3, "smoke": 1, "burn": 0.06 }
-    ],
-    "burn_products": [ [ "ash", 0.018 ] ]
+    "cut_dmg_verb": "chipped",
+    "burn_products": [ [ "pebble", 1 ] ]
   }
 ]
