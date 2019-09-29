@@ -1676,7 +1676,7 @@
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
     "effect": "spawn_item",
-    "effect_str": "spell_lockpick",
+    "effect_str": "spell_lockpick_lesser",
     "energy_source": "FATIGUE",
     "difficulty": 0,
     "max_level": 10,
