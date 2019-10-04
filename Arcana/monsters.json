@@ -761,7 +761,7 @@
     "type": "MONSTER",
     "name": "summoned vortex",
     "categories": [ "CLASSIC" ],
-    "species": [ "NETHER" ],
+    "species": [ "NETHER", "UNKNOWN" ],
     "path_settings": { "max_dist": 10 },
     "death_drops": {  },
     "melee_skill": 4,

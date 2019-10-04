@@ -268,11 +268,14 @@
     "id": "THRESH_VEIL",
     "name": "Paragon of The Veil",
     "points": 1,
-    "description": "You have gazed deeper into The Beyond than anyone that still lives.  It has gazed back, and found greater purpose in you.",
+    "description": "You have gazed deeper into The Beyond than anyone that still lives.  It has gazed back, and found greater purpose in you.  The living wind it calls its herald, and you its knight under oath.  You will unable to mutate beyond your current state by mundane means, as this would tie you to intruders that must be cast out...",
     "valid": false,
     "purifiable": false,
     "threshold": true,
-    "mana_multiplier": 1.25
+    "//": "The good news, you regen mana faster and vortices are friendly.  The bad news, HFBTV doesn't want you getting any more dependant on the blob (or worse, the Mycus) than you already are.",
+    "mana_regen_multiplier": 1.25,
+    "ignored_by": [ "UNKNOWN" ],
+    "allowed_category": [ "VEIL", "ACIDSPRAY", "AGILITY", "CLAIRVOYANCE", "CLARITY", "CONFUSE", "FLAMEARMOR", "FREEACTION", "HEAL", "INSIGHT", "INVIS", "ELECRESIST", "MIGHT", "OVERGROWTH", "LIGHTNING", "CLERIC" ]
   },
   {
     "type": "mutation",
