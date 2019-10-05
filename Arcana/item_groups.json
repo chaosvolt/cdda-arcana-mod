@@ -296,5 +296,26 @@
     "items": [
       { "item": "CF_golden_scale", "count-min": 10, "count-max": 20, "prob": 20 }
     ]
+  },
+  {
+    "id": "arcana_hunt_random",
+    "type": "item_group",
+    "items": [
+      [ "fighter_sting", 5 ],
+      [ "biollante_bud", 5 ],
+      [ "graboid_fang", 5 ],
+      [ "triffid_queen_flower", 5 ],
+      [ "dermatik_sting", 10 ],
+      [ "vortex_shard", 5 ],
+      [ "blob_gem", 15 ],
+      [ "monster_tear", 10 ],
+      [ "shadow_gem", 5 ],
+      [ "bone_twisted", 10 ],
+      [ "gracken_knuckles", 5 ],
+      [ "wyrmskin_piece", 5 ],
+      [ "monster_fang", 15 ],
+      [ "iridescent_plate", 15 ],
+      [ "engraved_stone", 10 ]
+    ]
   }
 ]
