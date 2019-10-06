@@ -150,13 +150,13 @@
         ",~~;;;;;;;;;;;~~~~,,,|d_",
         ",~~;;;;;;;;;~~~~~~,|-|h_",
         "~~~;;;;;;;;;~~~~,,,|____",
-        "~~;;;;;;;;;;~~,,,|-|_|-+",
+        "~~;;;;;;;;;;~~,,,|-|_|-x",
         "~~;;;;;;;;;;~~,|+|dh_|__",
-        ",gggggggggggg,,|_____+_>"
+        ",gggggggggggg,,|_____x_>"
       ],
       "palettes": [ "arcana_palette" ],
       "mapping": { "h": { "furniture": "f_chair", "items": { "item": "sanguine_cult_casualties", "chance": 30 } } },
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 14 ], "y": [ 0, 14 ], "density": 0.1 } ]
     }
   },
   {
@@ -187,13 +187,13 @@
         "_d|,,,~~~~;;;;;;;;;;;~~,",
         "_h|-|,~~~~~~;;;;;;;;;~~,",
         "____|,,,~~~~;;;;;;;;;~~~",
-        "+-|_|-|,,,~~;;;;;;;;;;~~",
+        "x-|_|-|,,,~~;;;;;;;;;;~~",
         "__|_hd|+|,~~;;;;;;;;;;~~",
-        ">_+_____|,,gggggggggggg,"
+        ">_x_____|,,gggggggggggg,"
       ],
       "palettes": [ "arcana_palette" ],
       "mapping": { "h": { "furniture": "f_chair", "items": { "item": "sanguine_cult_casualties", "chance": 30 } } },
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 9, 23 ], "y": [ 0, 14 ], "density": 0.1 } ]
     }
   },
   {
@@ -204,9 +204,9 @@
     "object": {
       "fill_ter": "t_dirt",
       "rows": [
-        ",gggggggggggg,,|_____+.>",
+        ",gggggggggggg,,|_____x.>",
         "~~;;;;;;;;;;~~,|+|dh_|__",
-        "~~;;;;;;;;;;~~,,,|-|_|-+",
+        "~~;;;;;;;;;;~~,,,|-|_|-x",
         "~~;;;;;;;;;;~~~~,,,|____",
         "~~~;;;;;;;;;~~~~~~,|-|h_",
         ",~~;;;;;;;;;;;~~~~,,,|d_",
@@ -231,7 +231,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "mapping": { "h": { "furniture": "f_chair", "items": { "item": "sanguine_cult_casualties", "chance": 30 } } },
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 14 ], "y": [ 9, 23 ], "density": 0.1 } ]
     }
   },
   {
@@ -241,9 +241,9 @@
     "weight": 250,
     "object": {
       "rows": [
-        ">_+_____|,,gggggggggggg,",
+        ">_x_____|,,gggggggggggg,",
         "__|_hd|+|,~~;;;;;;;;;;~~",
-        "+-|_|-|,,,~~;;;;;;;;;;~~",
+        "x-|_|-|,,,~~;;;;;;;;;;~~",
         "____|,,,~~~~;;;;;;;;;;~~",
         "_h|-|,~~~~~~;;;;;;;;;~~~",
         "_d|,,,~~~~;;;;;;;;;;;~~,",
@@ -268,7 +268,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "mapping": { "h": { "furniture": "f_chair", "items": { "item": "sanguine_cult_casualties", "chance": 30 } } },
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 9, 23 ], "y": [ 9, 23 ], "density": 0.1 } ]
     }
   },
   {
@@ -289,22 +289,23 @@
         "    =B..dh.]]..B=   ===+",
         "   ==D..dh.]]..D==    =i",
         "   =B...dh.]]...B=    =.",
-        "   =D...dh.]]...D======x",
+        "   =D...dh.]]...D======X",
         "   =B...dh.]]...B=......",
         "   ==D..dh.]]...==.~~~~g",
-        "    =B..dh.]]...+..~~~~g",
+        "    =B..dh.]]...X..~~~~g",
         "    ===.......===.~~~...",
         "      =BD.....=...~~~.==",
-        "      ===BDB=+=.~~~~..+.",
+        "      ===BDB=X=.~~~~..X.",
         "        =====...~~~~.==.",
         "          =...~~~~...=b.",
         "          =.~~~~~~.===..",
         "          =.~~~~...=....",
-        "          =.~~...===.==+",
-        "          =.~~.=+=b..=..",
-        "          =.gg.=.....+.<"
+        "          =.~~...===.==X",
+        "          =.~~.=X=b..=..",
+        "          =.gg.=.....X.<"
       ],
       "palettes": [ "arcana_palette" ],
+      "terrain": { "~": "t_water_sh_underground", "g": "t_floor_blue" },
       "mapping": {
         "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
       },
@@ -315,7 +316,7 @@
         { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 7, 13 ], "chance": 50, "repeat": 15 },
         { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 7, 13 ], "chance": 5 }
       ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 11, 23 ], "y": [ 11, 23 ], "density": 0.1 } ],
+      "place_monsters": [ { "monster": "GROUP_SANGUINE_BASEMENT", "x": [ 11, 18 ], "y": [ 11, 18 ], "density": 0.1 } ],
       "place_monster": [ { "monster": "mon_dracolich", "x": 23, "y": 4 } ]
     }
   },
@@ -337,22 +338,23 @@
         "+===   =a.........a=    ",
         "i=    ==...IgggI...==   ",
         ".=    =....g~~~g...8=   ",
-        "x======b...g~;~g.Z.a=   ",
+        "X======b...g~;~g.Z.a=   ",
         "......=....g~~~g...[=   ",
         "g~~~~.==...IgggI...==   ",
-        "g~~~~..+..........a=    ",
+        "g~~~~..X..........a=    ",
         "...~~~.===.......===    ",
         "==.~~~...=......a=      ",
-        ".+..~~~~.=+=.b.===      ",
+        ".X..~~~~.=X=.b.===      ",
         ".==.~~~~...=====        ",
         ".b=...~~~~...=          ",
         "..===.~~~~~~.=          ",
         "....=...~~~~.=          ",
-        "+==.===...~~.=          ",
-        "..=..b=+=.~~.=          ",
-        "<.+.....=.gg.=          "
+        "X==.===...~~.=          ",
+        "..=..b=X=.~~.=          ",
+        "<.X.....=.gg.=          "
       ],
       "palettes": [ "arcana_palette" ],
+      "terrain": { "~": "t_water_sh_underground", ";": "t_water_dp_underground", "g": "t_floor_blue" },
       "set": [
         { "point": "trap", "id": "tr_portal", "x": [ 12, 14 ], "y": [ 9, 11 ] }
       ],
@@ -360,7 +362,7 @@
         "a": { "furniture": "f_slab", "items": [ { "item": "sanguine_cult_consumables", "chance": 60 }, { "item": "sanguine_cult_gear", "chance": 10 } ] },
         "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
       },
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 12 ], "y": [ 11, 23 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_SANGUINE_BASEMENT", "x": [ 5, 12 ], "y": [ 11, 18 ], "density": 0.1 } ]
     }
   },
   {
@@ -371,17 +373,17 @@
     "object": {
       "fill_ter": "t_rock",
       "rows": [
-        "          =.gg.=.....+.<",
-        "          =.~~.=+=b..=..",
-        "          =.~~...===.==+",
+        "          =.gg.=.....X.<",
+        "          =.~~.=X=b..=..",
+        "          =.~~...===.==X",
         "          =.~~~~...=....",
         "          =.~~~~~~.===..",
         "          =...~~~~...=b.",
         "        =====...~~~~.==.",
-        "      ===.b.=+=.~~~~..+.",
+        "      ===.b.=X=.~~~~..X.",
         "      =a......=...~~~.==",
         "    ===.......===.~~~...",
-        "    =a..........+..~~~~g",
+        "    =a..........X..~~~~g",
         "   ==...IgggI...==.~~~~g",
         "   =[...g~~~g....=......",
         "   =a.Z.g~;~g...b=======",
@@ -397,6 +399,7 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
+      "terrain": { "~": "t_water_sh_underground", ";": "t_water_dp_underground", "g": "t_floor_blue" },
       "set": [
         { "point": "trap", "id": "tr_portal", "x": [ 12, 14 ], "y": [ 9, 11 ] }
       ],
@@ -404,7 +407,7 @@
         "a": { "furniture": "f_slab", "items": [ { "item": "sanguine_cult_crafting", "chance": 75 } ] },
         "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
       },
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 11, 23 ], "y": [ 0, 12 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_SANGUINE_BASEMENT", "x": [ 11, 18 ], "y": [ 5, 12 ], "density": 0.1 } ]
     }
   },
   {
@@ -415,17 +418,17 @@
     "object": {
       "fill_ter": "t_rock",
       "rows": [
-        "<.+.....=.gg.=          ",
-        "..=..b=+=.~~.=          ",
-        "+==.===...~~.=          ",
+        "<.X.....=.gg.=          ",
+        "..=..b=X=.~~.=          ",
+        "X==.===...~~.=          ",
         "....=...~~~~.=          ",
         "..===.~~~~~~.=          ",
         ".b=...~~~~...=          ",
         ".==.~~~~...=====        ",
-        ".+..~~~~.=+=BDB===      ",
+        ".X..~~~~.=X=BDB===      ",
         "==.~~~...=.....DB=      ",
         "...~~~.===.......===    ",
-        "g~~~~..+...]].hd..B=    ",
+        "g~~~~..X...]].hd..B=    ",
         "g~~~~.==...]].hd..D==   ",
         "......=B...]].hd...B=   ",
         "=======D...]].hd...D=   ",
@@ -441,6 +444,7 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
+      "terrain": { "~": "t_water_sh_underground", "g": "t_floor_blue" },
       "mapping": {
         "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
       },
@@ -449,7 +453,7 @@
         { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 50, "repeat": 15 },
         { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 5 }
       ],
-      "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 0, 12 ], "y": [ 0, 12 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_SANGUINE_BASEMENT", "x": [ 5, 12 ], "y": [ 5, 12 ], "density": 0.1 } ]
     }
   }
 ]

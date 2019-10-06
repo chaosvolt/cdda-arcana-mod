@@ -14,6 +14,17 @@
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
+      { "monster": "mon_gracke", "freq": 150, "cost_multiplier": 0 },
+      { "monster": "mon_homunculus", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_mi_go", "freq": 50, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_SANGUINE_BASEMENT",
+    "type": "monstergroup",
+    "default": "mon_dementia",
+    "monsters": [
+      { "monster": "mon_blank", "freq": 150, "cost_multiplier": 0 },
       { "monster": "mon_homunculus", "freq": 100, "cost_multiplier": 0 },
       { "monster": "mon_mi_go", "freq": 50, "cost_multiplier": 0 }
     ]
