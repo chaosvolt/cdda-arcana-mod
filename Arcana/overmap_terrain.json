@@ -276,6 +276,14 @@
   },
   {
     "type": "overmap_terrain",
+    "id": "arcana_hermitage_roof",
+    "name": "odd house roof",
+    "sym": 118,
+    "color": "i_ltgreen",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
     "id": "cf_church_1",
     "name": "back lot",
     "sym": "O",

@@ -82,7 +82,8 @@
     "id": "Hermit Cabin",
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "arcana_hermitage_1_north" },
-      { "point": [ 0, 0, 1 ], "overmap": "arcana_hermitage_2_north" }
+      { "point": [ 0, 0, 1 ], "overmap": "arcana_hermitage_2_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "arcana_hermitage_roof_north" }
     ],
     "connections": [ { "point": [ 0, 1, 0 ], "terrain": "road" } ],
     "locations": [ "wilderness" ],

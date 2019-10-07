@@ -8,7 +8,6 @@
     "known_by_u": false,
     "size": 50,
     "power": 100,
-    "combat_ability": 110,
     "food_supply": 115200,
     "wealth": 5000000,
     "currency": "CF_golden_scale",
@@ -31,12 +30,41 @@
       },
       "sanguine_order_remnant": { "kill on sight": true, "knows your voice": true }
     },
-    "good": 1,
-    "strength": 0,
-    "sneak": 1,
-    "crime": -1,
-    "cult": 1,
     "description": "A local syncretic religious order, from some time before the cataclysm.  Now, remnants of them are dedicated to hunting down dangerous magic and otherworldly monsters."
+  },
+  {
+    "type": "faction",
+    "id": "keeper_remnant",
+    "name": "Lone Hermit",
+    "likes_u": 0,
+    "respects_u": 0,
+    "known_by_u": false,
+    "size": 1,
+    "power": 100,
+    "food_supply": 20000,
+    "wealth": 30000,
+    "lone_wolf_faction": true,
+    "relations": {
+      "keeper_remnant": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": {
+        "kill on sight": false,
+        "watch your back": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "knows your voice": true
+      },
+      "cleansing_flame": { "knows your voice": true },
+      "sanguine_order_remnant": { "knows your voice": true }
+    },
+    "description": "A lone survivor, who seems to only be interested in living a quiet life away from the ruins of the old world.  Something seems off about him, though..."
   },
   {
     "type": "faction",
@@ -47,7 +75,6 @@
     "known_by_u": false,
     "size": 7,
     "power": 100,
-    "combat_ability": 100,
     "food_supply": 85000,
     "wealth": 300000,
     "relations": {
@@ -63,11 +90,6 @@
       "your_followers": { "knows your voice": true },
       "cleansing_flame": { "kill on sight": true, "knows your voice": true }
     },
-    "good": -1,
-    "strength": 0,
-    "sneak": 1,
-    "crime": 1,
-    "cult": -1,
     "description": "The broken leftovers of a bloodthirsty pseudo-cult, from before the cataclysm.  The remainder still pursue the studies that led them down their murderous path, gleaming what little they can from past failures."
   }
 ]
