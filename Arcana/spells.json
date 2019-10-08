@@ -1222,6 +1222,85 @@
     "effect_str": "PAIN"
   },
   {
+    "id": "arcana_item_scroll_moon",
+    "type": "SPELL",
+    "name": "Divine Scroll: Moon",
+    "description": "Overwhelming darkness, both in field and even form, blinds monsters.",
+    "message": "A shadowy mist spreads out in all directions, wisps of living dark trailing upwards to blot out everything in its wake!",
+    "flags": [ "SILENT", "IGNORE_WALLS" ],
+    "valid_targets": [ "ground" ],
+    "extra_effects": [
+      { "id": "arcana_item_scroll_moon_blind", "hit_self": false },
+      { "id": "arcana_item_scroll_moon_event", "hit_self": false }
+    ],
+    "effect": "target_attack",
+    "min_aoe": 30,
+    "max_aoe": 30,
+    "field_id": "fd_veil_darkness",
+    "field_chance": 1,
+    "min_field_intensity": 2,
+    "max_field_intensity": 2,
+    "field_intensity_variance": 0.1
+  },
+  {
+    "id": "arcana_item_scroll_moon_blind",
+    "type": "SPELL",
+    "name": "Divine Scroll: Moon Blinding Effect",
+    "description": "This blinds all targets in the area for a random amount of time.",
+    "effect": "target_attack",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DURATION" ],
+    "effect_str": "blind",
+    "min_aoe": 30,
+    "max_aoe": 30,
+    "min_duration": 500,
+    "max_duration": 5000
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_item_scroll_moon_event",
+    "name": "Divine Scroll: Moon Event",
+    "description": "This adds 30 minutes of darkness.",
+    "valid_targets": [ "self" ],
+    "effect": "timed_event",
+    "effect_str": "dim",
+    "min_duration": 180000,
+    "max_duration": 180000
+  },
+  {
+    "id": "arcana_item_scroll_sun",
+    "type": "SPELL",
+    "name": "Divine Scroll: Sun",
+    "description": "Massive wave of light, sunlight event, adrenaline and morale.",
+    "message": "A brilliant radiance envelops your surroundings, piercing the heavens as a surge of power flows through your body!",
+    "flags": [ "SILENT", "IGNORE_WALLS" ],
+    "valid_targets": [ "ground" ],
+    "extra_effects": [
+      { "id": "arcana_item_scroll_sun_event", "hit_self": false },
+      { "id": "AEA_ADRENALINE", "hit_self": false },
+      { "id": "AEA_FUN", "hit_self": false }
+    ],
+    "effect": "target_attack",
+    "min_aoe": 30,
+    "max_aoe": 30,
+    "field_id": "fd_veil_light",
+    "field_chance": 1,
+    "min_field_intensity": 3,
+    "max_field_intensity": 3,
+    "field_intensity_variance": 0.1
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_item_scroll_sun_event",
+    "name": "Divine Scroll: Sun Event",
+    "description": "This adds 30 minutes of sunlight.",
+    "valid_targets": [ "self" ],
+    "effect": "timed_event",
+    "effect_str": "artifact_light",
+    "min_duration": 180000,
+    "max_duration": 180000
+  },
+  {
     "id": "arcana_item_sparks",
     "type": "SPELL",
     "name": "Spark Flame",
