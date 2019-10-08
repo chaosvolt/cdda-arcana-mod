@@ -270,7 +270,17 @@
     "name": [ "Holy Ward" ],
     "desc": [ "Heavy resistance to bladed weapons, protection from anomalous effects." ],
     "remove_message": "The magical protection enveloping your body flickers and fades.",
-    "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara", "archon_gaze_effect", "chalice_offering_side_effects", "blood_athame_side_effects" ],
+    "removes_effects": [
+      "darkness",
+      "rat",
+      "evil",
+      "attention",
+      "teleglow",
+      "amigara",
+      "archon_gaze_effect",
+      "chalice_offering_side_effects",
+      "blood_athame_side_effects"
+    ],
     "decay_messages": [ [ "Your holy ward is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 30,
@@ -610,7 +620,7 @@
     "//": "Explicitly punish Mycus players who will be immune to mutation, that's what you get for channeling a rival interloper's nature magic.",
     "resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ],
     "blocks_effects": [ "blind", "deaf", "infected", "bite", "bleed", "poison", "badpoison", "spores", "fungus" ],
-    "rating": "good"
+    "rating": "good",
     "base_mods": {
       "rad_min": [ -25, 25 ],
       "fatigue_min": [ 0, 50 ],
