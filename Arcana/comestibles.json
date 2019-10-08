@@ -187,7 +187,7 @@
     "type": "COMESTIBLE",
     "name": "divine scroll of light",
     "name_plural": "divine scrolls of light",
-    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
+    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and slow time momentarily, along with conjuring brilliant light.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_sun", "no_fail": true, "level": 0 }
   },
   {
@@ -196,7 +196,7 @@
     "type": "COMESTIBLE",
     "name": "divine scroll of darkness",
     "name_plural": "divine scrolls of darkness",
-    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will darken the sky temporarily, and confound nearby enemies.",
+    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will shroud the area in darkness, striking enemies blind temporarily.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_moon", "no_fail": true, "level": 0 }
   },
   {
@@ -205,7 +205,7 @@
     "type": "COMESTIBLE",
     "name": "divine scroll of command",
     "name_plural": "divine scrolls of command",
-    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind creatures to your will temporarily, at the expense of pain and momentary paralysis.",
+    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind creatures to your will temporarily.  The sudden impact of projecting your mind outwards will painfully stun you, however.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_artifice", "no_fail": true, "level": 0 }
   },
   {
@@ -214,7 +214,7 @@
     "type": "COMESTIBLE",
     "name": "divine scroll of regrowth",
     "name_plural": "divine scrolls of regrowth",
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will conjure a powerful healing spell, along with causing life to grow wild over the area.  However, using it risks mutating in abnormal ways.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_nature", "no_fail": true, "level": 0 }
   },
   {
@@ -223,7 +223,7 @@
     "type": "COMESTIBLE",
     "name": "divine scroll of sundering",
     "name_plural": "divine scrolls of sundering",
-    "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a horrid noise, toppling nearby structures and harming creatures around you.  It might attract unwanted attention as well.",
+    "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a thunderous boom, toppling structures and harming creatures all around.  This will not only risk burning the area to the ground, but also attract otherworldly attention.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_destruction", "no_fail": true, "level": 0 }
   },
   {
@@ -232,7 +232,7 @@
     "type": "COMESTIBLE",
     "name": "divine scroll of discord",
     "name_plural": "divine scrolls of discord",
-    "description": "This is a scroll, with odd writing and peculiar swirling symbols on it, representing an otherworldly trickster god.  Using it will warp the fabric of space, teleporting you at random.  The trip is a bit nauseating, and you might be followed.",
+    "description": "This is a scroll, with odd writing and peculiar swirling symbols on it, representing an otherworldly trickster god.  Using it will teleport you away, leaving unearthly hazards where you once were.  While you will always arrive at your destination safely, you might suffer other consequences.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_subversion", "no_fail": true, "level": 0 }
   }
 ]
