@@ -597,12 +597,27 @@
       "thirst_tick": [ 300 ]
     },
     "scaling_mods": {
-      "fatigue_tick": [ -360, -300 ],
+      "health_tick": [ -360, -300 ],
       "str_mod": [ -0.75, -0.6 ],
       "hunger_chance": [ 20, 15 ],
       "dex_mod": [ -0.75, -0.6 ],
       "thirst_chance": [ 40, 35 ]
     }
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_scroll_nature_effect",
+    "//": "Explicitly punish Mycus players who will be immune to mutation, that's what you get for channeling a rival interloper's nature magic.",
+    "resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ],
+    "blocks_effects": [ "blind", "deaf", "infected", "bite", "bleed", "poison", "badpoison", "spores", "fungus" ],
+    "rating": "good"
+    "base_mods": {
+      "rad_min": [ -25, 25 ],
+      "fatigue_min": [ 0, 50 ],
+      "health_min": [ 0, -10 ],
+      "pain_min": [ 0, 10 ],
+      "hunger_min": [ 0, 25 ]
+    },
   },
   {
     "type": "effect_type",
