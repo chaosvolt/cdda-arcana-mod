@@ -1222,6 +1222,22 @@
     "effect_str": "PAIN"
   },
   {
+    "type": "SPELL",
+    "id": "arcana_item_scroll_moon",
+    "name": "Divine Scroll: Artifice",
+    "description": "Attempts to pacify monsters for a moderate duration, paralyzes user and inflicts pain.",
+    "effect": "charm_monster",
+    "message": "A wave of energy radiates outwards, fragments of otherworldly perspectives flooding your mind in the process!",
+    "min_damage": 100,
+    "max_damage": 300,
+    "min_duration": 6000,
+    "max_duration": 12000,
+    "min_aoe": 30,
+    "max_aoe": 30,
+    "valid_targets": [ "self", "hostile" ],
+    "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION" ]
+  },
+  {
     "id": "arcana_item_scroll_moon",
     "type": "SPELL",
     "name": "Divine Scroll: Moon",
@@ -1253,7 +1269,7 @@
     "effect_str": "blind",
     "min_aoe": 30,
     "max_aoe": 30,
-    "min_duration": 500,
+    "min_duration": 2500,
     "max_duration": 5000
   },
   {
@@ -1277,8 +1293,8 @@
     "valid_targets": [ "ground" ],
     "extra_effects": [
       { "id": "arcana_item_scroll_sun_event", "hit_self": false },
-      { "id": "AEA_ADRENALINE", "hit_self": false },
-      { "id": "AEA_FUN", "hit_self": false }
+      { "id": "arcana_item_scroll_sun_adrenaline", "hit_self": false },
+      { "id": "arcana_item_scroll_sun_timewarp", "hit_self": false }
     ],
     "effect": "target_attack",
     "min_aoe": 30,
@@ -1291,14 +1307,39 @@
   },
   {
     "type": "SPELL",
+    "id": "arcana_item_scroll_sun_adrenaline",
+    "name": "Divine Scroll: Sun Adrenaline",
+    "description": "Uses this instead of Artifact Adrenaline mainly to suppress the message, also changes duration range.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "effect": "target_attack",
+    "effect_str": "adrenaline",
+    "flags": [ "RANDOM_DURATION" ],
+    "min_duration": 90000,
+    "max_duration": 120000
+  },
+  {
+    "type": "SPELL",
     "id": "arcana_item_scroll_sun_event",
     "name": "Divine Scroll: Sun Event",
     "description": "This adds 30 minutes of sunlight.",
     "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
     "effect": "timed_event",
     "effect_str": "artifact_light",
     "min_duration": 180000,
     "max_duration": 180000
+  },
+  {
+    "id": "arcana_item_scroll_sun_timewarp",
+    "type": "SPELL",
+    "name": "Divine Scroll: Sun Timewarp",
+    "description": "Oh hey, what's with divine magics combining adrenaline with timestop...",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
+    "effect": "mod_moves",
+    "min_damage": 600,
+    "max_damage": 1200
   },
   {
     "id": "arcana_item_sparks",
