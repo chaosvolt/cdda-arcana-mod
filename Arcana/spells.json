@@ -667,7 +667,7 @@
     "aoe_increment": 0.2,
     "min_duration": 1000,
     "max_duration": 15000,
-    "duration_increment": 700
+    "duration_increment": 700,
     "base_casting_time": 250,
     "final_casting_time": 125,
     "casting_time_increment": -6.25,
@@ -1230,13 +1230,14 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_artifice",
-    "name": "Divine Scroll: Artifice",
+    "name": "Call to Order",
     "description": "Attempts to pacify monsters for a moderate duration, paralyzes user and inflicts pain.",
     "effect": "charm_monster",
     "message": "\"By order, we ascend beyond that of animals.\"  A wave of energy radiates outwards, fragments of otherworldly perspectives flooding your mind in the process!",
     "extra_effects": [
-      { "id": "arcana_item_scroll_artifice_pain", "hit_self": false },
-      { "id": "arcana_item_scroll_artifice_paralyze", "hit_self": false }
+      { "id": "arcana_item_scroll_artifice_pain", "hit_self": true },
+      { "id": "arcana_item_scroll_artifice_paralyze", "hit_self": true },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "min_damage": 100,
     "max_damage": 300,
@@ -1255,10 +1256,9 @@
     "valid_targets": [ "self" ],
     "effect": "recover_energy",
     "effect_str": "PAIN",
-    "base_casting_time": 100,
     "flags": [ "RANDOM_DAMAGE", "SILENT" ],
-    "min_damage": -8,
-    "max_damage": -12
+    "min_damage": -15,
+    "max_damage": -20
   },
   {
     "id": "arcana_item_scroll_artifice_paralyze",
@@ -1274,15 +1274,16 @@
   {
     "id": "arcana_item_scroll_destruction",
     "type": "SPELL",
-    "name": "Divine Scroll: Destruction",
+    "name": "Cry of Hatred",
     "description": "Similar effects to Wave of Destruction, though with different side effects.",
     "message": "\"There is an end to all things.\"  A horrible cacophony resounds, rising to a thunderous boom that blasts your surroundings!",
     "effect": "target_attack",
     "extra_effects": [
-      { "id": "arcana_item_scroll_destruction_attention", "hit_self": false },
+      { "id": "arcana_item_scroll_destruction_attention", "hit_self": true },
       { "id": "arcana_item_scroll_destruction_cold", "hit_self": false },
       { "id": "arcana_item_scroll_destruction_pulse", "hit_self": false },
-      { "id": "AEA_SCREAM", "hit_self": false }
+      { "id": "AEA_SCREAM", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DAMAGE", "RANDOM_DURATION" ],
@@ -1340,16 +1341,29 @@
     "max_aoe": 24
   },
   {
+    "id": "arcana_item_scroll_leftover",
+    "type": "SPELL",
+    "name": "Scroll: Leftovers",
+    "description": "This exists to make magic scrolls leave a blank scroll when used up, obsoleting the previous hack of making the item transform to exploit revert_to.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "PERMANENT" ],
+    "effect": "spawn_item",
+    "effect_str": "scroll_blank",
+    "min_duration": 1,
+    "max_duration": 1
+  },
+  {
     "id": "arcana_item_scroll_moon",
     "type": "SPELL",
-    "name": "Divine Scroll: Moon",
-    "description": "Overwhelming darkness, both in field and even form, blinds monsters.",
+    "name": "Sightless Sanctuary",
+    "description": "Overwhelming darkness, both in field and event form, blinds monsters.",
     "message": "\"Do not fear the unknown.\"  A shadowy mist spreads out in all directions, wisps of living dark trailing upwards to blot out everything in its wake!",
     "flags": [ "SILENT", "IGNORE_WALLS" ],
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "extra_effects": [
       { "id": "arcana_item_scroll_moon_blind", "hit_self": false },
-      { "id": "arcana_item_scroll_moon_event", "hit_self": false }
+      { "id": "arcana_item_scroll_moon_event", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "effect": "target_attack",
     "min_aoe": 24,
@@ -1388,13 +1402,14 @@
   {
     "id": "arcana_item_scroll_nature",
     "type": "SPELL",
-    "name": "Divine Scroll: Nature",
+    "name": "Chaotic Mending",
     "description": "Massive dose of unpredictable healing, widespread application of Overgrowth, risk of mutation.",
     "message": "\"Do not deny your instincts.\"  Life flows through your body, radiating out in a burst of chaotic energy!",
     "valid_targets": [ "self" ],
     "extra_effects": [
       { "id": "arcana_item_scroll_nature_plants", "hit_self": false },
-      { "id": "arcana_item_scroll_nature_wonder", "hit_self": false }
+      { "id": "arcana_item_scroll_nature_wonder", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "flags": [ "SILENT", "RANDOM_DAMAGE" ],
     "effect_str": "arcana_scroll_nature_effect",
@@ -1424,8 +1439,9 @@
     "name": "Divine Scroll: Nature Wonder",
     "description": "Randomizes what mutation spell the scroll rolls for.",
     "valid_targets": [ "self" ],
+    "message": "",
     "effect": "none",
-    "flags": [ "WONDER" ],
+    "flags": [ "WONDER", "SILENT" ],
     "min_damage": 1,
     "max_damage": 1,
     "extra_effects": [ { "id": "arcana_item_scroll_nature_mutate_dragonblood" }, { "id": "arcana_item_scroll_nature_mutate_plant" } ]
@@ -1437,6 +1453,7 @@
     "effect": "mutate",
     "effect_str": "DRAGONBLOODLESSER",
     "description": "Comparable to Artifact Mutate, except mimics effect of blood effigy.",
+    "message": "",
     "min_damage": 3333,
     "max_damage": 3333,
     "flags": [ "SILENT" ],
@@ -1449,6 +1466,7 @@
     "effect": "mutate",
     "effect_str": "PLANT",
     "description": "Comparable to Artifact Mutate, except focused on Plant category.",
+    "message": "",
     "min_damage": 3333,
     "max_damage": 3333,
     "flags": [ "SILENT" ],
@@ -1457,14 +1475,15 @@
   {
     "id": "arcana_item_scroll_subversion",
     "type": "SPELL",
-    "name": "Divine Scroll: Subversion",
+    "name": "Elusive Gateway",
     "description": "Teleports you away, leaving a mess of nasty shit behind you.  Uses a lot of Archon-specific effects, but that's mainly because they're more useful for what this spell should do, the entity the scroll is dedicated to probably isn't the Archon.",
     "message": "\"Cast aside the veil of reality.\"  You feel yanked in a non-existent direction!",
     "effect": "target_attack",
     "extra_effects": [
       { "id": "arcana_item_scroll_subversion_shadows", "hit_self": false },
       { "id": "AEA_FATIGUE", "hit_self": false },
-      { "id": "arcana_item_scroll_destruction_teleport", "hit_self": false }
+      { "id": "arcana_item_scroll_subversion_teleport", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DURATION" ],
@@ -1482,7 +1501,7 @@
     "type": "SPELL",
     "id": "arcana_item_scroll_subversion_shadows",
     "name": "Divine Scroll: Subversion Shadows",
-    "description": "Neherit, otira atvess...",
+    "description": "Neherit, otira atvess...except, not really.",
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_shadow_summoned",
@@ -1496,16 +1515,14 @@
   },
   {
     "type": "SPELL",
-    "id": "arcana_item_scroll_destruction_teleport",
+    "id": "arcana_item_scroll_subversion_teleport",
     "name": "Divine Scroll: Subversion Teleport",
     "description": "Yeets you rather far away.  The one benefit is it's a safe teleport.  Effect is last to hopefully ensure you leave the other side effects behind.",
     "effect": "teleport_random",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ],
-    "min_range": 12,
-    "max_range": 12,
-    "min_aoe": 24,
-    "max_aoe": 24
+    "min_range": 20,
+    "max_range": 40
   },
   {
     "id": "arcana_item_scroll_sun",
@@ -1518,7 +1535,8 @@
     "extra_effects": [
       { "id": "arcana_item_scroll_sun_event", "hit_self": false },
       { "id": "arcana_item_scroll_sun_adrenaline", "hit_self": false },
-      { "id": "arcana_item_scroll_sun_timewarp", "hit_self": false }
+      { "id": "arcana_item_scroll_sun_timewarp", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "effect": "target_attack",
     "min_aoe": 24,
@@ -1535,10 +1553,9 @@
     "name": "Divine Scroll: Sun Adrenaline",
     "description": "Uses this instead of Artifact Adrenaline mainly to suppress the message, also changes duration range.",
     "valid_targets": [ "self" ],
-    "flags": [ "SILENT" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
     "effect": "target_attack",
     "effect_str": "adrenaline",
-    "flags": [ "RANDOM_DURATION" ],
     "min_duration": 90000,
     "max_duration": 120000
   },

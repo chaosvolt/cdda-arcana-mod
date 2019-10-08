@@ -180,5 +180,59 @@
     "freezing_point": -10,
     "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOODLESSER" },
     "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "scroll_sun",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of light",
+    "name_plural": "divine scrolls of light",
+    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_sun", "no_fail": true, "level": 0, "need_wielding": true }
+  },
+  {
+    "id": "scroll_moon",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of darkness",
+    "name_plural": "divine scrolls of darkness",
+    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will darken the sky temporarily, and confound nearby enemies.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_moon", "no_fail": true, "level": 0, "need_wielding": true }
+  },
+  {
+    "id": "scroll_artiface",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of command",
+    "name_plural": "divine scrolls of command",
+    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind creatures to your will temporarily, at the expense of pain and momentary paralysis.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_artifice", "no_fail": true, "level": 0, "need_wielding": true }
+  },
+  {
+    "id": "scroll_nature",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of regrowth",
+    "name_plural": "divine scrolls of regrowth",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_nature", "no_fail": true, "level": 0, "need_wielding": true }
+  },
+  {
+    "id": "scroll_destruction",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of sundering",
+    "name_plural": "divine scrolls of sundering",
+    "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a horrid noise, toppling nearby structures and harming creatures around you.  It might attract unwanted attention as well.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_destruction", "no_fail": true, "level": 0, "need_wielding": true }
+  },
+  {
+    "id": "scroll_subversion",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of discord",
+    "name_plural": "divine scrolls of discord",
+    "description": "This is a scroll, with odd writing and peculiar swirling symbols on it, representing an otherworldly trickster god.  Using it will warp the fabric of space, teleporting you at random.  The trip is a bit nauseating, and you might be followed.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_subversion", "no_fail": true, "level": 0, "need_wielding": true }
   }
 ]
