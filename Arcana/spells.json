@@ -1458,7 +1458,7 @@
     "id": "arcana_item_scroll_subversion",
     "type": "SPELL",
     "name": "Divine Scroll: Subversion",
-    "description": "Teleports you away, leaving a mess of nasty shit behind you.  Strongly implies that this particular Six Pillar interloper is specifically The Archon.",
+    "description": "Teleports you away, leaving a mess of nasty shit behind you.  Uses a lot of Archon-specific effects, but that's mainly because they're more useful for what this spell should do, the entity the scroll is dedicated to probably isn't the Archon.",
     "message": "\"Cast aside the veil of reality.\"  You feel yanked in a non-existent direction!",
     "effect": "target_attack",
     "extra_effects": [

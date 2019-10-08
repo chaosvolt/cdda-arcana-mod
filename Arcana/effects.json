@@ -617,7 +617,7 @@
       "health_min": [ 0, -10 ],
       "pain_min": [ 0, 10 ],
       "hunger_min": [ 0, 25 ]
-    },
+    }
   },
   {
     "type": "effect_type",
