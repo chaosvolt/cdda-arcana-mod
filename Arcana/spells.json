@@ -1448,7 +1448,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_nature_mutate_dragonblood",
-    "name": "Divine Scroll: Nature Mutation (Lesser Dragonblood)",
+    "name": "Divine Scroll: Nature Mutation 1",
     "effect": "mutate",
     "effect_str": "DRAGONBLOODLESSER",
     "description": "Comparable to Artifact Mutate, except mimics effect of blood effigy.",
@@ -1461,7 +1461,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_nature_mutate_plant",
-    "name": "Divine Scroll: Nature Mutation (Plant)",
+    "name": "Divine Scroll: Nature Mutation 2",
     "effect": "mutate",
     "effect_str": "PLANT",
     "description": "Comparable to Artifact Mutate, except focused on Plant category.",
@@ -2037,7 +2037,7 @@
     "id": "arcana_magic_lightning_ward",
     "type": "SPELL",
     "name": "Sign: Lightning Ward",
-    "description": "Magic Sign\nUsing this spell will anoint you with an amber halo, granting you immunity to lightning.",
+    "description": "Magic Sign\nUsing this spell will anoint you with an amber halo, granting you resistance to lightning.",
     "message": "\"One foot after the other, always grounded...\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
@@ -2654,5 +2654,71 @@
     "duration_increment": 3000,
     "energy_source": "HP",
     "spell_class": "SPELL_HUNT_DRAGONBLOOD"
+  },
+  {
+    "id": "arcana_react_bane_staff_venom",
+    "type": "SPELL",
+    "name": "React: Venom",
+    "description": "Inflicts a bit of biological damage and poison.",
+    "message": "",
+    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_DURATION" ],
+    "valid_targets": [ "hostile" ],
+    "effect_str": "poison",
+    "min_range": 1,
+    "max_range": 1,
+    "effect": "target_attack",
+    "min_duration": 500,
+    "max_duration": 1500,
+    "min_damage": 2,
+    "max_damage": 5,
+    "damage_type": "bio"
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_react_nothing",
+    "name": "React: Nothing",
+    "description": "Dirty hack to add RNG to react effects.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "message": "",
+    "effect": "target_attack"
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_react_symbol_judgment_wonder",
+    "name": "React: Judgment",
+    "description": "Roll for zot!",
+    "valid_targets": [ "hostile" ],
+    "message": "",
+    "effect": "none",
+    "flags": [ "WONDER", "SILENT" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "extra_effects": [
+      { "id": "arcana_react_nothing" },
+      { "id": "arcana_react_nothing" },
+      { "id": "arcana_react_nothing" },
+      { "id": "arcana_react_nothing" },
+      { "id": "arcana_react_symbol_judgment_zap" }
+    ]
+  },
+  {
+    "id": "arcana_react_symbol_judgment_zap",
+    "type": "SPELL",
+    "name": "React: Electric Sting",
+    "description": "Zaps someone in melee.",
+    "message": "",
+    "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION" ],
+    "valid_targets": [ "hostile" ],
+    "effect_str": "zapped",
+    "sound_description": "a quiet electric crackle",
+    "min_range": 1,
+    "max_range": 1,
+    "effect": "target_attack",
+    "min_duration": 100,
+    "max_duration": 500,
+    "min_damage": 1,
+    "max_damage": 3,
+    "damage_type": "electric"
   }
 ]
