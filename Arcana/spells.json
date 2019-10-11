@@ -2674,6 +2674,34 @@
     "damage_type": "bio"
   },
   {
+    "id": "arcana_react_moonstone_fang_bite",
+    "type": "SPELL",
+    "name": "React: Lunar Fang",
+    "description": "Fixes a small dose of bonus damage, tacks on some free healing.",
+    "message": "",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
+    "extra_effects": [ { "id": "arcana_react_moonstone_fang_lifedrain", "hit_self": true } ],
+    "min_range": 1,
+    "max_range": 1,
+    "effect": "target_attack",
+    "min_damage": 1,
+    "max_damage": 2,
+    "damage_type": "cold"
+  },
+  {
+    "id": "arcana_react_moonstone_fang_lifedrain",
+    "type": "SPELL",
+    "name": "React: Lesser Drain Life",
+    "message": "",
+    "description": "You get one HP.  That's it.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "min_damage": -1,
+    "max_damage": -1,
+    "effect": "target_attack"
+  },
+  {
     "type": "SPELL",
     "id": "arcana_react_nothing",
     "name": "React: Nothing",
