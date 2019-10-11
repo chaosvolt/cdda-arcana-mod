@@ -4,9 +4,19 @@
     "copy-from": "spell_base",
     "type": "TOOL_ARMOR",
     "name": "amber halo",
-    "description": "A strange radiance permeating your body, protecting you from lightning.",
+    "description": "A strange radiance permeating your body.  It will protect against electrical arcs, but only partially protect you against contact with electrified enemies.",
     "color": "light_gray",
-    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY" ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_ELEC", "add": -5 }
+          ]
+        }
+      ]
+    },
     "flags": [ "ONLY_ONE" ]
   },
   {
@@ -105,13 +115,24 @@
     "copy-from": "somen_clairvoyance",
     "name": "mask of insight (on)",
     "name_plural": "masks of insight (on)",
-    "//": "It seems you need around 6 to protect against flashes",
     "description": "A mask faced with iron and decorated with other metal, depicting the face of some unknown divine figure.  The face depicted on the mask seems more menacing than it did previously.",
     "turns_per_charge": 300,
     "revert_to": "somen_clairvoyance",
     "material_thickness": 2,
     "environmental_protection": 6,
     "artifact_data": { "effects_worn": [ "AEP_CLAIRVOYANCE_PLUS" ] },
+    "//": "Clairvoyance in combat makes it slightly easier to read incoming attacks, ideally in the future this effect will factor into a combative style instead of benefiting untrained users.",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "BONUS_DODGE", "add": 1 }
+          ]
+        }
+      ]
+    },
     "qualities": [ [ "GLARE", 2 ] ],
     "use_action": {
       "target": "somen_clairvoyance",
@@ -255,7 +276,7 @@
   },
   {
     "id": "meteoric_talisman",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "name": "meteoric talisman",
     "category": "armor",
     "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  Wearing and activating it will ward against electricity, but also slow the body.",
@@ -267,6 +288,7 @@
     "looks_like": "jade_brooch",
     "color": "light_gray",
     "ammo": "essence_dull_type",
+    "initial_charges": 0,
     "max_charges": 20,
     "use_action": {
       "target": "meteoric_talisman_on",
@@ -282,10 +304,10 @@
   {
     "id": "meteoric_talisman_on",
     "copy-from": "meteoric_talisman",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "name": "meteoric talisman (active)",
     "name_plural": "meteoric talismans (active)",
-    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  A strange electric tingle permeates the air around it, hinting at its protective magic.",
+    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  A strange electric tingle permeates the air around it, hinting at its protective magic.  It will resist most contact with electricity, though powerful jolts may still harm you.",
     "turns_per_charge": 150,
     "revert_to": "meteoric_talisman",
     "use_action": {
@@ -293,7 +315,18 @@
       "msg": "The glow fades from the meteoric talisman, its protective magic fading with it.",
       "type": "transform"
     },
-    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY", "AEP_SPEED_DOWN" ] }
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_ELEC", "add": -10 },
+            { "value": "SPEED", "add": -20 }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "cleric_ring",
