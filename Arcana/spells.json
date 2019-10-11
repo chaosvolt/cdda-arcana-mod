@@ -1689,6 +1689,7 @@
   },
   {
     "id": "arcana_magic_capacitance",
+    "//": "Internal math note: treat value of Capacitance as 5.",
     "type": "SPELL",
     "name": "Sign: Capacitance",
     "description": "Magic Sign\nUsing this spell will channel your energy into artifice within the body, restoring bionic energy at the cost of fatigue.  Doing so will shock yourself, however.",
@@ -1709,8 +1710,7 @@
     "difficulty": 0,
     "base_casting_time": 240,
     "final_casting_time": 180,
-    "casting_time_increment": -6,
-    "spell_class": "PROF_CLEANSINGFLAME2"
+    "casting_time_increment": -6
   },
   {
     "id": "arcana_magic_clairvoyance",
@@ -2260,6 +2260,7 @@
     "id": "arcana_magic_summon_shadow",
     "type": "SPELL",
     "name": "Sign: Summon Shadow",
+    "//": "Internal math note: treat value of Summon Shadow as 5.",
     "description": "Magic Sign\nUsing this spell will summon a living shadow, which will be loyal but not permanent.",
     "message": "\"Neherit, otira atvess...\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -2282,13 +2283,13 @@
     "energy_increment": -1.2,
     "min_duration": 2160000,
     "max_duration": 6480000,
-    "duration_increment": 432000,
-    "spell_class": "PROF_ARCANIST2"
+    "duration_increment": 432000
   },
   {
     "id": "arcana_magic_summon_shadow_snake",
     "type": "SPELL",
     "name": "Sign: Summon Shadow Snake",
+    "//": "Internal math note: treat value of Summon Shadow Snake as 4.",
     "description": "Magic Sign\nUsing this spell will summon a living shadow in serpentine form, which will be loyal but not permanent.",
     "message": "\"Neherit, ievona karoh...\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -2311,8 +2312,7 @@
     "energy_increment": -1,
     "min_duration": 2160000,
     "max_duration": 6480000,
-    "duration_increment": 432000,
-    "spell_class": "PROF_ARCANIST2"
+    "duration_increment": 432000
   },
   {
     "id": "arcana_magic_surge_adrenaline",

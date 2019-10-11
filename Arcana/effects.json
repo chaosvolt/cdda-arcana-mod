@@ -292,27 +292,25 @@
     "type": "effect_type",
     "id": "spell_might",
     "name": [ "Might" ],
-    "desc": [ "The fabric of The Veil is woven into your frame  Your strength is augmented by magic." ],
+    "desc": [ "The fabric of The Veil is woven into your frame.  Your strength is augmented by magic." ],
     "remove_message": "You feel weakened as your magically-induced strength leaves you.",
     "decay_messages": [ [ "Your spell of might is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "max_effective_intensity": 8,
     "int_dur_factor": "1 m",
-    "scaling_mods": { "str_mod": [ 1 ] }
+    "base_mods": { "str_mod": [ 8 ] }
   },
   {
     "type": "effect_type",
     "id": "spell_agility",
-    "name": [ "Agility" ],
+    "name": [ "Agility", "Agility", "Agility", "Agility", "Agility", "Agility", "Agility", "Agility" ],
     "desc": [ "The winds of distant realms are at your back.  Your dexterity and speed are augmented by magic." ],
     "remove_message": "You feel sluggish as your magically-induced agility leaves you.",
     "decay_messages": [ [ "Your spell of agility is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "max_effective_intensity": 8,
     "int_dur_factor": "1 m",
-    "scaling_mods": { "dex_mod": [ 1 ], "speed_mod": [ 5 ] }
+    "base_mods": { "dex_mod": [ 8 ], "speed_mod": [ 40 ] }
   },
   {
     "type": "effect_type",
@@ -323,9 +321,8 @@
     "decay_messages": [ [ "Your spell of insight is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "max_effective_intensity": 8,
     "int_dur_factor": "1 m",
-    "scaling_mods": { "per_mod": [ 1 ] }
+    "scaling_mods": { "per_mod": [ 8 ] }
   },
   {
     "type": "effect_type",

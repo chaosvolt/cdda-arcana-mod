@@ -187,6 +187,7 @@
     "ident": "arcanist_summoner",
     "name": "Summoner",
     "description": "You were a student of a master arcanist.  Not taught to merely take advantage of power from beyond, no.  Taught to draw it forth in living form, bind it to your will.  If only your master hadn't summoned more power than could be controlled.",
+    "spells": [ { "id": "arcana_magic_summon_shadow", "level": 1 }, { "id": "arcana_magic_summon_shadow_snake", "level": 1 } ],
     "points": 6,
     "skills": [ { "level": 6, "name": "magic" }, { "level": 5, "name": "fabrication" }, { "level": 2, "name": "dodge" } ],
     "items": {
@@ -280,6 +281,7 @@
     "ident": "arcanist_purifier",
     "name": "Arcane Purifier",
     "description": "You have embraced modern technology and mystical power alike, in your pursuit of knowledge and a way to prevent the cataclysm.  Once of the Cleansing Flame, whether you went rogue or still honor their ideals, that no longer matters anymore.",
+    "spells": [ { "id": "arcana_magic_capacitance", "level": 1 } ],
     "points": 8,
     "CBMs": [ "bio_lockpick", "bio_fingerhack", "bio_ups", "bio_batteries", "bio_metabolics", "bio_power_storage_mkII" ],
     "skills": [

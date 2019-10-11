@@ -1089,9 +1089,9 @@
     "skill_used": "magic",
     "difficulty": 8,
     "time": "20 m",
-    "book_learn": [ [ "book_bloodmagic", 8 ] ],
+    "book_learn": [ [ "book_sacrifice", 8 ] ],
     "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
-    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ] ],
     "components": [ [ [ "totem_elecresist", 1 ] ], [ [ "essence_blood", 6 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1159,9 +1159,9 @@
     "skill_used": "magic",
     "difficulty": 9,
     "time": "20 m",
-    "book_learn": [ [ "book_sacrifice", 9 ], [ "book_scrollcraft", 8 ] ],
+    "book_learn": [ [ "book_bloodmagic", 9 ], [ "book_scrollcraft", 8 ] ],
     "using": [ [ "arcana_scrollwriting_standard", 1 ] ],
-    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_scrollcraft", -1 ] ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_scrollcraft", -1 ] ] ],
     "components": [ [ [ "totem_invis", 1 ] ], [ [ "essence", 2 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
