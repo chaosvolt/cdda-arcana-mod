@@ -1096,7 +1096,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
-    "changes_to": [ "ARCANA_DRAGONSCALES", "PROF_CHALICE" ],
+    "changes_to": [ "ARCANA_DRAGONSCALES" ],
     "types": [ "SKIN" ],
     "stealth_modifier": -5,
     "wet_protection": [ { "part": "ARM_L", "ignored": 4 }, { "part": "ARM_R", "ignored": 4 }, { "part": "TORSO", "ignored": 10 } ],
@@ -1155,7 +1155,7 @@
     "description": "A strange heat permeates your body, warming you up in exchange for a more active metabolism.  While you need to eat and drink more, you also find it easier to recover from physical exertion and mend wounds.",
     "valid": false,
     "purifiable": false,
-    "changes_to": [ "ARCANA_INNERFIRE", "PROF_CHALICE" ],
+    "changes_to": [ "ARCANA_INNERFIRE" ],
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "METABOLISM" ],
     "metabolism_modifier": 0.5,
@@ -1265,7 +1265,6 @@
     "purifiable": false,
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
-    "changes_to": [ "PROF_CHALICE" ],
     "encumbrance_always": [ [ "HAND_L", 5 ], [ "HAND_R", 5 ] ],
     "encumbrance_covered": [ [ "HAND_L", 5 ], [ "HAND_R", 5 ] ],
     "attacks": [
@@ -1288,7 +1287,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
-    "changes_to": [ "ARCANA_DRAGONMUZZLE", "PROF_CHALICE" ],
+    "changes_to": [ "ARCANA_DRAGONMUZZLE" ],
     "types": [ "TEETH" ],
     "attacks": {
       "attack_text_u": "You sink your teeth into %s",
@@ -1449,7 +1448,6 @@
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "HORNS" ],
     "restricts_gear": [ "HEAD" ],
-    "changes_to": [ "PROF_CHALICE" ],
     "allow_soft_gear": true,
     "armor": [ { "parts": "HEAD", "bash": 5, "cut": 10 } ],
     "attacks": {
@@ -1523,9 +1521,7 @@
     "description": "You were sworn into an order known as the Keepers of The Oath.  Whether or not He From Beyond The Veil still guides you, the oath you swore is eternal, and your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
-    "profession": true,
-    "//": "This prevents keepers from picking Dragonblood mutations, which tie them to The Beyond in ways forbidden by He From Beyond The Veil.",
-    "cancels": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "ARCANA_DRAGONCLAWS", "ARCANA_DRAGONTEETH", "ARCANA_DRAGONHORNS" ]
+    "profession": true
   },
   {
     "type": "mutation",
