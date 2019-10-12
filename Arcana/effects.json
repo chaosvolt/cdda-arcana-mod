@@ -423,6 +423,16 @@
   },
   {
     "type": "effect_type",
+    "id": "sword_mending",
+    "blocks_effects": [ "bleed" ],
+    "rating": "good",
+    "base_mods": {
+      "pain_min": [ -5 ],
+      "stamina_min": [ 500 ]
+    }
+  },
+  {
+    "type": "effect_type",
     "id": "arcana_invis",
     "name": [ "Illusion Cloak" ],
     "desc": [

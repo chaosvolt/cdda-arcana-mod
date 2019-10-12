@@ -2674,20 +2674,45 @@
     "damage_type": "bio"
   },
   {
+    "type": "SPELL",
+    "id": "arcana_react_cursed_sword_shell",
+    "name": "React: Cursed Shell",
+    "description": "This exists only to trigger on-self effects from an on-hit action.",
+    "valid_targets": [ "hostile" ],
+    "message": "",
+    "min_range": 1,
+    "max_range": 1,
+    "effect": "target_attack",
+    "flags": [ "SILENT" ],
+    "extra_effects": [
+      { "id": "arcana_react_cursed_sword_mending", "hit_self": true }
+    ]
+  },
+  {
+    "id": "arcana_react_cursed_sword_mending",
+    "type": "SPELL",
+    "name": "React: Cursed Mending",
+    "message": "",
+    "description": "Bleeding is for the weak.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "min_duration": 500,
+    "max_duration": 1000,
+    "effect": "target_attack",
+    "effect_str": "sword_mending"
+  },
+  {
     "id": "arcana_react_moonstone_fang_bite",
     "type": "SPELL",
     "name": "React: Lunar Fang",
     "description": "Fixes a small dose of bonus damage, tacks on some free healing.",
     "message": "",
     "valid_targets": [ "hostile" ],
-    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
+    "flags": [ "SILENT" ],
     "extra_effects": [ { "id": "arcana_react_moonstone_fang_lifedrain", "hit_self": true } ],
     "min_range": 1,
     "max_range": 1,
-    "effect": "target_attack",
-    "min_damage": 1,
-    "max_damage": 2,
-    "damage_type": "cold"
+    "effect": "target_attack"
   },
   {
     "id": "arcana_react_moonstone_fang_lifedrain",
