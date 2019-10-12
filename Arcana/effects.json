@@ -424,8 +424,9 @@
   {
     "type": "effect_type",
     "id": "sword_mending",
-    "blocks_effects": [ "bleed" ],
+    "blocks_effects": [ "bleed", "winded" ],
     "rating": "good",
+    "max_duration": "15 s",
     "base_mods": {
       "pain_min": [ -5 ],
       "stamina_min": [ 500 ]
