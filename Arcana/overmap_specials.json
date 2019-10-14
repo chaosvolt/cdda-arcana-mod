@@ -10,6 +10,7 @@
     ],
     "locations": [ "field", "forest" ],
     "city_distance": [ 20, -1 ],
+    "city_sizes": [ 0, 12 ],
     "occurrences": [ 1, 1 ],
     "flags": [ "CLASSIC", "UNIQUE" ]
   },
@@ -22,6 +23,7 @@
     ],
     "locations": [ "forest" ],
     "city_distance": [ 0, -1 ],
+    "city_sizes": [ 0, 12 ],
     "occurrences": [ 1, 1 ],
     "flags": [ "CLASSIC", "UNIQUE" ]
   },
@@ -42,6 +44,7 @@
     ],
     "locations": [ "field", "forest", "swamp" ],
     "city_distance": [ 20, -1 ],
+    "city_sizes": [ 0, 12 ],
     "occurrences": [ 1, 1 ],
     "flags": [ "CLASSIC", "UNIQUE" ],
     "spawns": { "group": "GROUP_ARCHON", "population": [ 100, 300 ], "radius": [ 20, 40 ] }
@@ -65,6 +68,7 @@
     ],
     "locations": [ "forest", "swamp" ],
     "city_distance": [ 20, -1 ],
+    "city_sizes": [ 0, 12 ],
     "occurrences": [ 1, 1 ],
     "flags": [ "CLASSIC", "UNIQUE" ]
   },
@@ -88,7 +92,7 @@
     "connections": [ { "point": [ 0, 1, 0 ], "terrain": "road" } ],
     "locations": [ "wilderness" ],
     "city_distance": [ 16, -1 ],
-    "city_sizes": [ 0, 20 ],
+    "city_sizes": [ 0, 12 ],
     "occurrences": [ 90, 100 ],
     "flags": [ "CLASSIC", "UNIQUE" ]
   },

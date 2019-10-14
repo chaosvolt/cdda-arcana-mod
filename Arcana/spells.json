@@ -2689,6 +2689,19 @@
     ]
   },
   {
+    "id": "arcana_react_mantle_escape",
+    "type": "SPELL",
+    "name": "React: Mantle Elusiveness",
+    "message": "",
+    "description": "Bravely run away.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "min_duration": 100,
+    "max_duration": 300,
+    "effect": "target_attack",
+    "effect_str": "mantle_escape_effect"
+  },
+  {
     "id": "arcana_react_cursed_sword_mending",
     "type": "SPELL",
     "name": "React: Cursed Mending",

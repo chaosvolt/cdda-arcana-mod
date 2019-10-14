@@ -434,6 +434,15 @@
   },
   {
     "type": "effect_type",
+    "id": "mantle_escape_effect",
+    "rating": "good",
+    "max_intensity": 5,
+    "int_dur_factor": "2 s",
+    "base_mods": { "speed_mod": [ 5 ] },
+    "scaling_mods": { "speed_mod": [ 5 ] }
+  },
+  {
+    "type": "effect_type",
     "id": "arcana_invis",
     "name": [ "Illusion Cloak" ],
     "desc": [
