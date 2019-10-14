@@ -495,7 +495,7 @@
     "id": "SPELL_SHADOWSNAKES",
     "name": "Magic Sign: Serpentine Shield",
     "points": 6,
-    "description": "Powers from beyond have granted you power, a defensive effect that will summon shadowy snakes when yolu are injured.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "Powers from beyond have granted you power, a defensive effect that will summon shadowy snakes when you are injured.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "//": "ID for INVIS retained to not break stuff.",
