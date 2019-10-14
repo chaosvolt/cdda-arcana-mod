@@ -1526,7 +1526,7 @@
   {
     "id": "arcana_item_scroll_sun",
     "type": "SPELL",
-    "name": "Divine Scroll: Sun",
+    "name": "Solar Blessing",
     "description": "Massive wave of light, sunlight event, adrenaline and morale.",
     "message": "\"Let purity guide your hand and your heart.\"  A brilliant radiance envelops your surroundings, piercing the heavens as a surge of power flows through your body!",
     "flags": [ "SILENT", "IGNORE_WALLS" ],
