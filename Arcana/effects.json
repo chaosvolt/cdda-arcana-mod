@@ -31,29 +31,29 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "pkill_tick": [ 40 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15, -10 ] }
+    "base_mods": { "pain_tick": [ 25 ], "pain_min": [ -15 ], "speed_mod": [ -25, -15 ] }
   },
   {
     "type": "effect_type",
     "id": "potion_strength",
-    "name": [ "Strengthed" ],
+    "name": [ "Strengthened" ],
     "resist_effect": "talisman_warding",
     "desc": [ "You feel mighty, like you could take on the world." ],
     "remove_message": "The unnatural strength leaves your body.",
-    "decay_messages": [ [ "The strengening effect of your potion is starting to fade.", "bad" ] ],
+    "decay_messages": [ [ "The strengthening effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
     "base_mods": {
       "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
-      "pain_max_val": [ 10, 5 ],
-      "str_mod": [ 3 ],
+      "pain_max_val": [ 20, 10 ],
+      "str_mod": [ 5 ],
       "dex_mod": [ -1 ],
       "int_mod": [ -1 ],
       "per_mod": [ -1 ],
       "speed_mod": [ 5 ],
-      "stamina_min": [ 40 ],
+      "stamina_min": [ -250 ],
       "stamina_chance": [ 6, 12 ]
     }
   },
@@ -73,12 +73,12 @@
     "base_mods": {
       "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
-      "pain_max_val": [ 10, 5 ],
+      "pain_max_val": [ 15, 10 ],
       "str_mod": [ -2 ],
       "dex_mod": [ 2 ],
       "int_mod": [ -2 ],
       "per_mod": [ 2 ],
-      "speed_mod": [ 25 ]
+      "speed_mod": [ 50 ]
     }
   },
   {
@@ -93,7 +93,7 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "pkill_tick": [ 18 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10, -5 ] }
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 5 ], "pain_tick": [ 25 ], "pkill_min": [ 5 ], "speed_mod": [ -10, -5 ] }
   },
   {
     "type": "effect_type",
@@ -107,7 +107,7 @@
     "rating": "good",
     "max_intensity": 10,
     "int_dur_factor": "1 m",
-    "base_mods": { "pkill_tick": [ 30 ], "pkill_min": [ 5 ], "pkill_max_val": [ 30 ], "speed_mod": [ -12, -6 ] }
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 15 ], "pain_tick": [ 50 ], "pain_min": [ -10 ], "speed_mod": [ -15, -10 ] }
   },
   {
     "type": "effect_type",
@@ -427,10 +427,7 @@
     "blocks_effects": [ "bleed", "winded" ],
     "rating": "good",
     "max_duration": "15 s",
-    "base_mods": {
-      "pain_min": [ -5 ],
-      "stamina_min": [ 500 ]
-    }
+    "base_mods": { "pain_min": [ -5 ], "stamina_min": [ 500 ] }
   },
   {
     "type": "effect_type",
@@ -581,14 +578,7 @@
     "id": "blood_athame_side_effects",
     "resist_effect": "talisman_warding",
     "//": "This won't kill you, but the health and stat penalties will make you wish it did later on down the line.",
-    "name": [
-      "",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia"
-    ],
+    "name": [ "", "Strange Anemia", "Strange Anemia", "Strange Anemia", "Strange Anemia", "Strange Anemia" ],
     "desc": [
       "",
       "Your muscles have been feeling more fatigued lately, and you feel faintly queasy on the inside.  Maybe overusing that athame did something to you...",
