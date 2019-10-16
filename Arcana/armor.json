@@ -58,7 +58,7 @@
     "use_action": {
       "type": "bandolier",
       "capacity": 200,
-      "ammo": [ "essence_type", "essence_blood_type", "essence_dull_type", "essence_pure" ],
+      "ammo": [ "essence_type", "essence_blood_type", "essence_dull_type", "essence_pure_type" ],
       "draw_cost": 10
     }
   },

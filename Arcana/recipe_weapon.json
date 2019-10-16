@@ -9,9 +9,8 @@
     "skills_required": [ "fabrication", 6 ],
     "time": "150 m",
     "book_learn": [ [ "book_sacrifice", 8 ] ],
-    "using": [ [ "forging_standard", 3 ], [ "arcana_holy_symbol_any", 1 ], [ "arcana_essence_exclude_dull", 5 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
+    "using": [ [ "forging_standard", 3 ], [ "bronzesmithing_tools", 1 ], [ "arcana_holy_symbol_any", 1 ], [ "arcana_essence_exclude_dull", 5 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ] ],
     "components": [ [ [ "gold_small", 625 ] ], [ [ "silver_small", 165 ] ] ]
   },
   {
@@ -24,9 +23,8 @@
     "skills_required": [ "fabrication", 5 ],
     "time": "180 m",
     "book_learn": [ [ "book_bloodmagic", 3 ] ],
-    "using": [ [ "forging_standard", 2 ], [ "arcana_essence_any", 1 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
+    "using": [ [ "forging_standard", 2 ], [ "bronzesmithing_tools", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
     "components": [
       [ [ "silver_small", 400 ] ],
       [ [ "2x4", 1 ], [ "stick", 1 ] ],
@@ -45,9 +43,9 @@
     "time": "80 m",
     "book_learn": [ [ "book_hexenhammer", 6 ] ],
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
-    "components": [ [ [ "broadsword", 1 ] ], [ [ "gold_small", 80 ] ], [ [ "essence_dull", 25 ] ] ]
+    "components": [ [ [ "broadsword", 1 ], [ "arming_sword", 1 ] ], [ [ "gold_small", 80 ], [ "CF_golden_scale", 16 ] ], [ [ "essence_dull", 25 ] ] ]
   },
   {
     "result": "hexenhammer",
@@ -60,7 +58,7 @@
     "time": "70 m",
     "book_learn": [ [ "book_hexenhammer", 4 ] ],
     "using": [ [ "arcana_essence_any", 1 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
     "components": [
       [ [ "warhammer", 1 ] ],
@@ -78,7 +76,7 @@
     "skills_required": [ "fabrication", 5 ],
     "time": "90 m",
     "book_learn": [ [ "book_bloodmagic", 6 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
     "components": [
       [ [ "q_staff", 1 ] ],
@@ -97,7 +95,7 @@
     "skills_required": [ "fabrication", 1 ],
     "time": "20 m",
     "book_learn": [ [ "book_bloodmagic", 5 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
     "components": [ [ [ "hatchet", 1 ] ], [ [ "rag_bloody", 2 ] ], [ [ "essence_blood", 5 ] ] ]
   },
@@ -112,12 +110,12 @@
     "time": "80 m",
     "book_learn": [ [ "book_hexenhammer", 7 ] ],
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 } ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 }, { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 3, "LIST" ] ] ],
     "components": [
       [ [ "crossbow", 1 ] ],
       [ [ "rope_6", 1 ], [ "rag", 3 ], [ "string_36", 6 ] ],
-      [ [ "gold_small", 45 ] ],
+      [ [ "gold_small", 45 ], [ "CF_golden_scale", 9 ] ],
       [ [ "essence_dull", 20 ] ]
     ]
   },
@@ -136,7 +134,7 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
     "components": [
-      [ [ "spear_steel", 1 ] ],
+      [ [ "spear_steel", 1 ], [ "qiang", 1 ] ],
       [ [ "bee_sting", 1 ], [ "wasp_sting", 1 ], [ "dermatik_sting", 1 ] ],
       [ [ "chitin_piece", 2 ] ]
     ]

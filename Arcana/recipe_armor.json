@@ -59,9 +59,7 @@
       [ "book_sacrifice", 3 ],
       [ "book_syncretism", 2 ]
     ],
-    "using": [ [ "forging_standard", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [ [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
+    "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
     "components": [ [ [ "glass_shard", 1 ], [ "amulet_exotic", 1 ], [ "brooch_iridescent", 1 ] ], [ [ "copper", 100 ] ] ]
   },
   {
@@ -75,9 +73,9 @@
     "time": "30 m",
     "book_learn": [ [ "book_hexenhammer", 5 ] ],
     "using": [ [ "filament", 18 ], [ "steel_standard", 2 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "SEW", "level": 1 } ],
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
-    "components": [ [ [ "cloak_leather", 1 ] ], [ [ "feather", 20 ] ], [ [ "gold_small", 200 ] ], [ [ "essence_dull", 20 ] ] ]
+    "components": [ [ [ "cloak_leather", 1 ] ], [ [ "gold_small", 200 ], [ "CF_golden_scale", 40 ] ], [ [ "essence_dull", 20 ] ] ]
   },
   {
     "result": "somen_clairvoyance",
@@ -90,11 +88,12 @@
     "time": "25 m",
     "book_learn": [ [ "book_hexenhammer", 6 ] ],
     "using": [ [ "filament", 9 ], [ "steel_tiny", 2 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 }, { "id": "SEW", "level": 1 } ],
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
     "components": [
+      [ [ "steel_chunk", 2 ], [ "scrap", 10 ], [ "scrap_bronze", 2 ] ],
       [ [ "leather", 2 ], [ "fur", 2 ] ],
-      [ [ "copper", 30 ], [ "silver_small", 30 ], [ "gold_small", 30 ] ],
+      [ [ "copper", 30 ], [ "silver_small", 30 ], [ "gold_small", 30 ], [ "CF_golden_scale", 6 ] ],
       [ [ "essence_dull", 15 ] ]
     ]
   },
@@ -122,6 +121,8 @@
         [ "acid", 1 ],
         [ "chem_sulphuric_acid", 1 ],
         [ "chem_nitric_acid", 1 ],
+        [ "chem_muriatic_acid", 1 ],
+        [ "chem_acetic_acid", 1 ],
         [ "water_acid", 2 ],
         [ "water_acid_weak", 4 ]
       ],
@@ -138,9 +139,8 @@
     "skills_required": [ "fabrication", 3 ],
     "time": "15 m",
     "book_learn": [ [ "book_bloodmagic", 5 ] ],
-    "using": [ [ "forging_standard", 3 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "tongs", -1 ] ], [ [ "anvil", -1 ] ], [ [ "swage", -1 ] ] ],
+    "using": [ [ "forging_standard", 3 ], [ "bronzesmithing_tools", 1 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
     "components": [
       [ [ "silver_small", 600 ], [ "gold_small", 600 ] ],
       [ [ "diamond", 1 ], [ "engraved_stone", 1 ] ],
@@ -157,7 +157,7 @@
     "skills_required": [ "fabrication", 3 ],
     "time": "30 m",
     "book_learn": [ [ "book_sacrifice", 6 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "surface_heat", 6, "LIST" ] ] ],
     "components": [ [ [ "gloves_plate", 1 ] ], [ [ "silver_small", 70 ] ], [ [ "essence", 4 ] ] ]
   },
@@ -192,7 +192,7 @@
     "time": "45 m",
     "book_learn": [ [ "book_syncretism", 8 ] ],
     "using": [ [ "filament", 24 ], [ "arcana_essence_exclude_dull", 8 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 3 }, { "id": "SEW", "level": 1 } ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 2 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [
       [ [ "book_syncretism", -1 ] ],
       [ [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ],
