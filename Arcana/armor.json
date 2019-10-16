@@ -47,15 +47,20 @@
     "id": "mana_gem",
     "type": "ARMOR",
     "name": "essence gem",
-    "description": "A strange blue stone set in a copper talisman, worn around the neck.  It is capable of storing a considerable reserve of various sorts of magical energy.",
+    "description": "A strange blue stone set in a copper talisman, worn around the neck.  It is capable of storing a considerable reserve of various sorts of magical energy, and can be used to reload magical weapons more quickly if worn.",
     "weight": 250,
-    "volume": 0,
+    "volume": "50 ml",
     "price": 6400,
     "material": [ "copper", "essencemat" ],
     "symbol": "[",
     "looks_like": "holy_symbol",
     "color": "blue",
-    "use_action": { "type": "bandolier", "capacity": 200, "ammo": [ "essence_type", "essence_blood_type", "essence_dull_type" ] }
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 200,
+      "ammo": [ "essence_type", "essence_blood_type", "essence_dull_type", "essence_pure" ],
+      "draw_cost": 10
+    }
   },
   {
     "id": "satchel_eternity",
