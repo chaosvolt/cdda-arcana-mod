@@ -47,14 +47,18 @@
     "base_mods": {
       "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
+      "pain_tick": [ 25 ],
       "pain_max_val": [ 20, 10 ],
       "str_mod": [ 5 ],
       "dex_mod": [ -1 ],
       "int_mod": [ -1 ],
       "per_mod": [ -1 ],
       "speed_mod": [ 5 ],
-      "stamina_min": [ -250 ],
-      "stamina_chance": [ 6, 12 ]
+      "stamina_min": [ 50 ],
+      "stamina_chance": [ 6 ],
+      "fatigue_min": [ 1 ],
+      "fatigue_tick": [ 300 ],
+      "fatigue_chance": [ 6, 12 ]
     }
   },
   {
@@ -73,12 +77,18 @@
     "base_mods": {
       "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
+      "pain_tick": [ 25 ],
       "pain_max_val": [ 15, 10 ],
       "str_mod": [ -2 ],
       "dex_mod": [ 2 ],
       "int_mod": [ -2 ],
       "per_mod": [ 2 ],
-      "speed_mod": [ 50 ]
+      "speed_mod": [ 50 ],
+      "stamina_min": [ -25 ],
+      "stamina_tick": [ 30 ],
+      "stamina_chance": [ 6, 12 ],
+      "fatigue_min": [ -1 ],
+      "fatigue_chance": [ 12 ]
     }
   },
   {
@@ -93,7 +103,7 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "health_min": [ 1 ], "health_chance": [ 5 ], "pain_tick": [ 25 ], "pkill_min": [ 5 ], "speed_mod": [ -10, -5 ] }
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 5 ], "pain_tick": [ 25 ], "pain_min": [ -5 ], "speed_mod": [ -10, -5 ] }
   },
   {
     "type": "effect_type",
