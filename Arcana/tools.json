@@ -63,10 +63,7 @@
     "looks_like": "small_relic",
     "color": "yellow",
     "flags": [ "MAGIC_FOCUS" ],
-    "use_action": [
-      "MEDITATE",
-      { "type": "cast_spell", "spell_id": "arcana_item_chalice_offering", "no_fail": true, "level": 0 }
-    ]
+    "use_action": [ "MEDITATE", { "type": "cast_spell", "spell_id": "arcana_item_chalice_offering", "no_fail": true, "level": 0 } ]
   },
   {
     "id": "blood_athame",
@@ -87,22 +84,28 @@
     "color": "red",
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 15 ] ],
-    "use_action": [
-      { "type": "cast_spell", "spell_id": "arcana_item_athame_sanguine_art", "no_fail": true, "level": 0 }
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_athame_sanguine_art", "no_fail": true, "level": 0 } ],
     "flags": [ "STAB", "SHEATH_KNIFE", "USE_PLAYER_ENERGY" ]
   },
   {
     "id": "sun_sword",
     "type": "TOOL",
-    "category": "weapons",
-    "copy-from": "broadsword",
     "name": "incorruptible sword",
-    "//": "Stats were changed from resembling the medieval mod's arming sword to that of the broadsword, due to changing the recipe to start with a finished weapon.",
-    "description": "This is some sort of broadsword, decorated with a golden cross motif on the blade.  When powered by consecrated magical essence, it has the power to cut through darkness itself.",
+    "//": "Stats are a blend of the available swords you can use to make it, same deal as the mantle of shadows.",
+    "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  When powered by consecrated magical essence, it has the power to cut through darkness itself.",
+    "weight": "1360 g",
+    "volume": "2 L",
+    "price": 123300,
+    "to_hit": 2,
+    "bashing": 10,
+    "cutting": 32,
     "material": [ "steel", "gold" ],
+    "symbol": "/",
+    "looks_like": "arming_sword",
+    "color": "yellow",
     "ammo": "essence_dull_type",
     "max_charges": 10,
+    "techniques": [ "WBLOCK_2" ],
     "use_action": [
       {
         "target": "sun_sword_on",
@@ -114,8 +117,7 @@
         "type": "transform"
       }
     ],
-    "relative": { "weight": 400, "bashing": 2, "price": 23300 },
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE" ]
   },
   {
     "id": "sun_sword_on",
@@ -125,7 +127,7 @@
     "name": "incorruptible sword (on)",
     "name_plural": "incorruptible swords (on)",
     "//": "Weapons normally come with the vorpal flag, not the technique.  But gaining the technique through normal means likely breaks with transforming weapons.",
-    "description": "This is some sort of broadsword, decorated with a golden cross motif on the blade.  The blade is giving off an intense white light, and searing heat.",
+    "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  The blade is giving off an intense white light, and searing heat.",
     "turns_per_charge": 900,
     "revert_to": "sun_sword",
     "techniques": [ "WBLOCK_2", "VORPAL" ],
@@ -134,7 +136,7 @@
       { "menu_text": "Turn off", "type": "transform", "msg": "The sword's radiance fades.", "target": "sun_sword" }
     ],
     "relative": { "cutting": 5 },
-    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING" ], "techniques": [ "VORPAL" ] },
+    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
   {
@@ -1418,13 +1420,7 @@
     "qualities": [ [ "BUTCHER", 6 ] ],
     "artifact_data": { "effects_wielded": [ "AEP_SNAKES", "AEP_SICK", "AEP_SCHIZO" ] },
     "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [ { "id": "arcana_react_moonstone_fang_bite" } ]
-        }
-      ]
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_moonstone_fang_bite" } ] } ]
     },
     "use_action": {
       "type": "consume_drug",
@@ -1549,13 +1545,7 @@
     "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
     "artifact_data": { "effects_wielded": [ "AEP_STR_UP", "AEP_SAP_LIFE", "AEP_EVIL", "AEP_SICK" ] },
     "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ]
-        }
-      ]
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ] } ]
     },
     "weight": 3176,
     "volume": 13,

@@ -45,7 +45,7 @@
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
-    "components": [ [ [ "broadsword", 1 ], [ "arming_sword", 1 ] ], [ [ "gold_small", 80 ], [ "CF_golden_scale", 16 ] ], [ [ "essence_dull", 25 ] ] ]
+    "components": [ [ [ "broadsword", 1 ], [ "arming_sword", 1 ], [ "jian", 1 ] ], [ [ "gold_small", 80 ], [ "CF_golden_scale", 16 ] ], [ [ "essence_dull", 25 ] ] ]
   },
   {
     "result": "hexenhammer",
