@@ -705,6 +705,19 @@
   },
   {
     "type": "effect_type",
+    "id": "hermit_stage_failure",
+    "name": [ "Quest Stage Failure" ],
+    "desc": [
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  This is a bug if you have it."
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "hermit_stage_3_backdoor",
+    "//": "Effect for players, confirms that the hermit has given this specific player the restored ritual blade, beginning the backdoor quest.  Intended to be permanent."
+  },
+  {
+    "type": "effect_type",
     "id": "hermit_stage_4",
     "name": [ "Quest Stage 4" ],
     "desc": [
