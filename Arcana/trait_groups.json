@@ -49,7 +49,7 @@
     ]
   },
   {
-    "//": "This group picks out background traits for evacuees, and also includes survivors that should have evacuated but didn't. These backgrounds are not appropriate to rural survivors nor to emergency personnel who would not have been evacuated. Most other survivors should fit.",
+    "//": "This group picks out background traits for mage hunters, due to being able to potentially recruit a couple during missions.  A few of these have some modifiers that change the story a bit depending on if that NPC was one of the initial spawns, or if they arrived with the second group to rendezvous at the holdout.",
     "type": "trait_group",
     "id": "BG_survival_story_MAGE_HUNTER",
     "subtype": "distribution",
