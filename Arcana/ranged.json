@@ -28,15 +28,6 @@
     "reload": 400,
     "ammo_effects": [ "LIGHTNING", "BOUNCE", "EMP" ],
     "artifact_data": { "effects_wielded": [ "AEP_BAD_WEATHER" ] },
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ]
-        }
-      ]
-    },
     "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
     "use_action": "MEDITATE"
   },
@@ -161,15 +152,6 @@
     "loudness": 75,
     "clip_size": 4,
     "reload": 200,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [ { "id": "arcana_react_bane_staff_venom" } ]
-        }
-      ]
-    },
     "ammo_effects": [ "ACIDBOMB", "TOXICGAS" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "flags": [ "UNBREAKABLE_MELEE", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE", "MAGIC_FOCUS" ]
