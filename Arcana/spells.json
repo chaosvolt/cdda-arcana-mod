@@ -2667,17 +2667,14 @@
     "name": "React: Venom",
     "description": "Inflicts a bit of biological damage and poison.",
     "message": "",
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "RANDOM_DURATION" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
     "valid_targets": [ "hostile" ],
     "effect_str": "poison",
     "min_range": 1,
     "max_range": 1,
     "effect": "target_attack",
     "min_duration": 500,
-    "max_duration": 1500,
-    "min_damage": 2,
-    "max_damage": 5,
-    "damage_type": "bio"
+    "max_duration": 1500
   },
   {
     "type": "SPELL",
@@ -2695,19 +2692,6 @@
     ]
   },
   {
-    "id": "arcana_react_mantle_escape",
-    "type": "SPELL",
-    "name": "React: Mantle Elusiveness",
-    "message": "",
-    "description": "Bravely run away.",
-    "valid_targets": [ "self" ],
-    "flags": [ "SILENT", "RANDOM_DURATION" ],
-    "min_duration": 100,
-    "max_duration": 300,
-    "effect": "target_attack",
-    "effect_str": "mantle_escape_effect"
-  },
-  {
     "id": "arcana_react_cursed_sword_mending",
     "type": "SPELL",
     "name": "React: Cursed Mending",
@@ -2721,29 +2705,17 @@
     "effect_str": "sword_mending"
   },
   {
-    "id": "arcana_react_moonstone_fang_bite",
+    "id": "arcana_react_mantle_escape",
     "type": "SPELL",
-    "name": "React: Lunar Fang",
-    "description": "Fixes a small dose of bonus damage, tacks on some free healing.",
+    "name": "React: Mantle Elusiveness",
     "message": "",
-    "valid_targets": [ "hostile" ],
-    "flags": [ "SILENT" ],
-    "extra_effects": [ { "id": "arcana_react_moonstone_fang_lifedrain", "hit_self": true } ],
-    "min_range": 1,
-    "max_range": 1,
-    "effect": "target_attack"
-  },
-  {
-    "id": "arcana_react_moonstone_fang_lifedrain",
-    "type": "SPELL",
-    "name": "React: Lesser Drain Life",
-    "message": "",
-    "description": "You get one HP.  That's it.",
+    "description": "Bravely run away.",
     "valid_targets": [ "self" ],
-    "flags": [ "SILENT" ],
-    "min_damage": -1,
-    "max_damage": -1,
-    "effect": "target_attack"
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "min_duration": 200,
+    "max_duration": 500,
+    "effect": "target_attack",
+    "effect_str": "mantle_escape_effect"
   },
   {
     "type": "SPELL",
@@ -2780,17 +2752,13 @@
     "name": "React: Electric Sting",
     "description": "Zaps someone in melee.",
     "message": "",
-    "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
     "valid_targets": [ "hostile" ],
     "effect_str": "zapped",
-    "sound_description": "a quiet electric crackle",
     "min_range": 1,
     "max_range": 1,
     "effect": "target_attack",
     "min_duration": 100,
-    "max_duration": 500,
-    "min_damage": 1,
-    "max_damage": 3,
-    "damage_type": "electric"
+    "max_duration": 500
   }
 ]

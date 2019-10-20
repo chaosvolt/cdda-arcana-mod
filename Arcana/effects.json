@@ -444,7 +444,7 @@
     "id": "mantle_escape_effect",
     "rating": "good",
     "max_intensity": 5,
-    "int_dur_factor": "2 s",
+    "int_dur_factor": "1 s",
     "base_mods": { "speed_mod": [ 5 ] },
     "scaling_mods": { "speed_mod": [ 5 ] }
   },

@@ -161,6 +161,15 @@
     "name_plural": "mantles of shadows (on)",
     "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders.  The air wavers around it, barely noticeable to you.",
     "turns_per_charge": 300,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_me_effect": [ { "id": "arcana_react_mantle_escape" } ]
+        }
+      ]
+    },
     "artifact_data": { "effects_worn": [ "AEP_INVISIBLE", "AEP_STEALTH" ] },
     "revert_to": "robe_shadow",
     "use_action": {
