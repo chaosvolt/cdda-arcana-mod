@@ -1,5 +1,65 @@
 [
   {
+    "id": "halo_elecresist",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": "amber halo",
+    "description": "A strange radiance permeating your body.  It will protect against electrical arcs, but only partially protect you against contact with electrified enemies.",
+    "color": "light_gray",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_ELEC", "add": -5 }
+          ]
+        }
+      ]
+    },
+    "flags": [ "ONLY_ONE" ]
+  },
+  {
+    "id": "halo_clairvoyance",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": "ivory halo",
+    "description": "A strange radiance permeating your body, granting you sight beyond sight.",
+    "color": "magenta",
+    "artifact_data": { "effects_worn": [ "AEP_CLAIRVOYANCE" ] },
+    "flags": [ "ONLY_ONE" ]
+  },
+  {
+    "id": "halo_shadowsnakes",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": "obsidian halo",
+    "description": "A strange radiance permeating your body, summoning serpentine shadows when you are harmed.",
+    "color": "dark_gray",
+    "artifact_data": { "effects_worn": [ "AEP_SNAKES" ] },
+    "flags": [ "ONLY_ONE" ]
+  },
+  {
+    "id": "halo_dampening",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": "coral halo",
+    "description": "A strange radiance permeating your body, dulling the effects of flame and radiation.",
+    "color": "light_gray",
+    "artifact_data": { "effects_worn": [ "AEP_PBLUE", "AEP_EXTINGUISH" ] },
+    "flags": [ "ONLY_ONE" ]
+  },
+  {
+    "id": "halo_drainlife",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": "horned halo",
+    "description": "A strange radiance permeating your body, granting you a life-draining touch.",
+    "color": "dark_gray",
+    "artifact_data": { "effects_worn": [ "AEP_SAP_LIFE" ] },
+    "flags": [ "ONLY_ONE" ]
+  },
+  {
     "id": "triffid_garland",
     "type": "ARMOR",
     "name": "triffid garland",

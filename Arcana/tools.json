@@ -663,29 +663,6 @@
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },
   {
-    "id": "spell_lockpick",
-    "//": "ID retained since it's still useful.",
-    "copy-from": "spell_base",
-    "type": "COMESTIBLE",
-    "name": "mote of artifice",
-    "name_plural": "motes of artifice",
-    "description": "A small, ethereal pinprick of energy barely the size of a marble.  It seems to waver in and out of existence with a perfectly regular pattern.  Using it can manipulate any mundane lock, to silently open the way.",
-    "color": "light_gray",
-    "stack_size": 1,
-    "use_action": { "type": "picklock", "pick_quality": 99 }
-  },
-  {
-    "id": "spell_lockpick_lesser",
-    "copy-from": "spell_base",
-    "type": "COMESTIBLE",
-    "name": "mote of artifice",
-    "name_plural": "motes of artifice",
-    "description": "A small, ethereal pinprick of energy barely the size of a marble.  It seems to waver in and out of existence with a perfectly regular pattern.  Using it can manipulate any mundane lock, to silently open the way.",
-    "color": "light_gray",
-    "stack_size": 1,
-    "use_action": { "type": "picklock", "pick_quality": 5 }
-  },
-  {
     "id": "totem_elecresist",
     "copy-from": "totem_base",
     "type": "COMESTIBLE",
