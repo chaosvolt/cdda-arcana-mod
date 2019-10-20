@@ -95,6 +95,9 @@
     "start": {
       "assign_mission_target": { "om_terrain": "impact_site", "om_special": "Floating Temple", "reveal_radius": 3, "search_range": 180, "z": 0 }
     },
+    "end": {
+      "effect": [ { "npc_add_effect": "hermit_stage_1", "duration": "PERMANENT" } ]
+    },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_RESTORE_SWORD",
     "dialogue": {
@@ -118,6 +121,9 @@
     "goal_condition": { "u_has_item": "veilblade" },
     "difficulty": 5,
     "value": 250000,
+    "end": {
+      "effect": [ { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" } ]
+    },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_AWAKEN_POWER",
     "dialogue": {
@@ -152,7 +158,7 @@
       }
     },
     "end": {
-      "effect": [ { "npc_add_effect": "hermit_stage_3", "duration": "PERMANENT" }, { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" } ]
+      "effect": [ { "npc_add_effect": "hermit_stage_3", "duration": "PERMANENT" } ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_BECOME_PARAGON",
@@ -188,7 +194,7 @@
       }
     },
     "end": {
-      "effect": [ { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" } ]
+      "effect": [ { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" } ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
