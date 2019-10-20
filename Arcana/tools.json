@@ -1419,10 +1419,7 @@
     "charges_per_use": 8,
     "techniques": [ "RAPID", "DEF_DISARM" ],
     "qualities": [ [ "BUTCHER", 6 ] ],
-    "artifact_data": { "effects_wielded": [ "AEP_SNAKES", "AEP_SICK", "AEP_SCHIZO" ] },
-    "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_moonstone_fang_bite" } ] } ]
-    },
+    "artifact_data": { "effects_wielded": [ "AEP_SNAKES", "AEP_SICK", "AEP_SCHIZO", "AEP_SAP_LIFE" ] },
     "use_action": {
       "type": "consume_drug",
       "activation_message": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
@@ -1545,9 +1542,6 @@
     "revert_to": "stormbringer",
     "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
     "artifact_data": { "effects_wielded": [ "AEP_STR_UP", "AEP_SAP_LIFE", "AEP_EVIL", "AEP_SICK" ] },
-    "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ] } ]
-    },
     "weight": 3176,
     "volume": 13,
     "price": 160000,
