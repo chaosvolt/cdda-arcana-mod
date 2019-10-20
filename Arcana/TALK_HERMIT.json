@@ -4,52 +4,18 @@
     "type": "talk_topic",
     "responses": [
       {
-        "text": "Yes, I have.",
-        "topic": "TALK_MISSION_SUCCESS",
-        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_1", "duration": "PERMANENT" } ],
+        "text": "It doesn't feel like it's working.  What am I doing wrong?",
         "condition": {
           "and": [
-            { "or": [ { "u_has_item": "stormbringer" }, { "u_has_item": "veilblade" } ] },
-            { "u_has_mission": "MISSION_HERMIT_RETRIEVE_SWORD" },
-            { "npc_has_trait": "PROF_CHALICE" }
-          ]
-        }
-      },
-      {
-        "text": "See for yourself.",
-        "topic": "TALK_MISSION_SUCCESS",
-        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" } ],
-        "condition": {
-          "and": [
-            { "u_has_item": "veilblade" },
-            { "u_has_mission": "MISSION_HERMIT_RESTORE_SWORD" },
-            { "npc_has_trait": "PROF_CHALICE" }
-          ]
-        }
-      },
-      {
-        "text": "I can feel it.  This is what you wanted me to obtain, right?",
-        "topic": "TALK_MISSION_SUCCESS",
-        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_3", "duration": "PERMANENT" } ],
-        "condition": {
-          "and": [
-            { "u_has_trait_flag": "explorer_of_the_veil" },
-            { "u_has_mission": "MISSION_HERMIT_AWAKEN_POWER" },
-            { "npc_has_trait": "PROF_CHALICE" }
-          ]
-        }
-      },
-      {
-        "text": "It is done.  He has chosen me, as you wished.",
-        "topic": "TALK_MISSION_SUCCESS",
-        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" } ],
-        "condition": {
-          "and": [
-            { "u_has_trait": "THRESH_VEIL" },
+            { "not": { "u_has_trait": "THRESH_VEIL" } },
+            { "u_has_trait_flag": "MUTATION_THRESHOLD" },
             { "u_has_mission": "MISSION_HERMIT_BECOME_PARAGON" },
             { "npc_has_trait": "PROF_CHALICE" }
           ]
-        }
+        },
+        "topic": "TALK_MISSION_FAILURE",
+        "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
+        "opinion": { "trust": -1, "value": -1, "anger": 1 }
       }
     ]
   },
@@ -82,6 +48,57 @@
             { "npc_has_effect": "hermit_stage_4" },
             { "u_has_effect": "hermit_earned_trust_2" },
             { "u_has_trait": "THRESH_VEIL" }
+          ]
+        }
+      },
+      {
+        "switch": true,
+        "text": "I have seen His blessings, and know what you have sought.",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_COMPLETE",
+        "condition": { "u_has_trait": "THRESH_VEIL" }
+      },
+      {
+        "switch": true,
+        "text": "Is there anything I can do to help?",
+        "topic": "TALK_HERMIT_DISCUSS_3_FAIL_FAVOR",
+        "condition": {
+          "and": [
+            { "not": { "u_has_trait": "THRESH_VEIL" } },
+            { "u_has_trait_flag": "MUTATION_THRESHOLD" },
+            { "npc_has_effect": "hermit_stage_failure" },
+            { "u_has_effect": "hermit_earned_trust_2" }
+          ]
+        }
+      },
+      {
+        "switch": true,
+        "text": "What I can do to help?",
+        "topic": "TALK_MISSION_LIST",
+        "condition": {
+          "and": [
+            "has_no_available_mission",
+            { "not": "has_assigned_mission" },
+            { "u_has_effect": "hermit_earned_trust_2" }
+          ]
+        }
+      },
+      {
+        "switch": true,
+        "text": "So, what can I do to help?",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR",
+        "condition": { "and": [ { "npc_has_effect": "hermit_stage_failure" }, { "u_has_effect": "hermit_earned_trust_2" } ] }
+      },
+      {
+        "switch": true,
+        "text": "You mentioned more to talk about, along with this mission?",
+        "topic": "TALK_HERMIT_DISCUSS_3_FAIL",
+        "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_trait": "THRESH_VEIL" } },
+            { "u_has_trait_flag": "MUTATION_THRESHOLD" },
+            { "npc_has_effect": "hermit_stage_3" },
+            { "u_has_effect": "hermit_earned_trust_2" }
           ]
         }
       },
@@ -160,7 +177,7 @@
         "no": {
           "npc_has_effect": "hermit_has_salt",
           "yes": "Now then, with the circle prepared and the foundation laid for the ritual, we will need essence to fuel it.  It must, specifically, be blood essence.  The sanguinists designed their corruptive ritual to rely on that drawn from the life of others, and only power of similar nature can break this curse.  Twelve motes of blood shall fuel the ritual.",
-          "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to annoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond The Veil, the words of power that elude your grasp. We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
+          "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to anoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond The Veil, the words of power that elude your grasp. We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
         }
       }
     },
@@ -249,17 +266,16 @@
       "no": "Veiled King, grant us insight.  Grant us your blessing, guard and guide us.  These wayward souls, and your wayward gift to us, let these be in service to you once more.  \"No matter the cost, no matter what we must do, for the strength and safety of this world.  And in turn, of worlds beyond.\"  It is finished."
     },
     "responses": [
-      {
-        "text": "Okay.",
-        "switch": true,
-        "condition": { "npc_has_effect": "hermit_stage_2" },
-        "topic": "TALK_DONE"
-      },
+      { "text": "Okay.", "switch": true, "condition": { "npc_has_effect": "hermit_stage_2" }, "topic": "TALK_DONE" },
       {
         "text": "Alright.",
         "switch": true,
         "default": true,
-        "effect": [ "mission_success", { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" }, { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" } ],
+        "effect": [
+          "mission_success",
+          { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" },
+          { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" }
+        ],
         "topic": "TALK_MISSION_SUCCESS"
       }
     ]
@@ -566,6 +582,374 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_FAIL",
+    "dynamic_line": "I would ask you to pursue this task further, but there is a complication.  You are aware that certain influences, certain powers, can leave their mark on the body, correct?",
+    "responses": [
+      {
+        "text": "While we seek an understanding of the Beyond, do not forget our humanity...",
+        "topic": "TALK_HERMIT_DISCUSS_3_FAIL_TENET",
+        "opinion": { "anger": 1, "value": -1 },
+        "condition": { "u_has_trait": "PROF_CHALICE" }
+      },
+      {
+        "text": "I think I understand...",
+        "opinion": { "anger": -1 },
+        "topic": "TALK_HERMIT_DISCUSS_3_FAIL_UNDERSTAND"
+      },
+      { "text": "What do you mean?", "topic": "TALK_HERMIT_DISCUSS_3_FAIL_EXPLAIN" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_FAIL_TENET",
+    "dynamic_line": "You would quote the very tenet you failed to uphold?  I can tell, plain as the look in your eyes, that you've abandoned your humanity.  There is a reason we forbid this.  To uphold His oath will put us on a path of conflict, a war for the whole of our world, with our enemies will be many.",
+    "responses": [
+      { "text": "It is His will, that we remain free of mutation?", "topic": "TALK_HERMIT_DISCUSS_3_FAIL_MUTATION" },
+      { "text": "Is there any way I can regain His favor?", "topic": "TALK_HERMIT_DISCUSS_3_FAIL_FAVOR" },
+      { "text": "I'm sorry.  I'll be leaving...", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_FAIL_MUTATION",
+    "dynamic_line": "It is not that your form has strayed from the natural path.  It is the fact that these influences make your body dependent on forces that do not belong in this world.  If you are bound to the enemy, then there is a risk that your life will depend on their continued influence on this world.  We will never be able to truly reverse the damage that has been done, but mending our world might be a grave risk to those too closely tied to the Beyond.",
+    "responses": [
+      {
+        "text": "I do not fear dying, if it means the rest of us don't go extinct.",
+        "topic": "TALK_HERMIT_DISCUSS_3_FAIL_UNAFRAID"
+      },
+      { "text": "Is there any way I can make up for this?", "topic": "TALK_HERMIT_DISCUSS_3_FAIL_FAVOR" },
+      { "text": "I see.  I won't trouble you further.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_FAIL_UNAFRAID",
+    "dynamic_line": "I admire your commitment.  But you have already wavered, strayed from what is proper.  This is out of my hands, and out of yours.",
+    "responses": [
+      { "text": "Is there anything we can do?", "topic": "TALK_HERMIT_DISCUSS_3_FAIL_FAVOR" },
+      { "text": "That is all, then.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_FAIL_FAVOR",
+    "dynamic_line": {
+      "npc_has_item": "veilblade",
+      "yes": "Seek another, foster the survival of humanity wherever you see a chance to help others.  In time, another will come to take up the sword.  Fate has led one to me, I will await another chance to correct our mistakes until my final breath.  Gives me something to keep these old bones from giving out another moment longer, I suppose...",
+      "no": "You have still proven yourself trustworthy to come this far, and even to seek my advice even after being led astray.  The sword can still serve its purpose, and I suspect He will still reward you for it.  Every channeling will be a sin offering, penance for faltering.  You will still be fit to gain some benefit from it, but there are other options as well."
+    },
+    "responses": [
+      {
+        "text": "Other options?",
+        "condition": { "not": { "npc_has_item": "veilblade" } },
+        "topic": "TALK_HERMIT_DISCUSS_3_FAIL_OPTIONS"
+      },
+      { "text": "I see.  I'll do what I can, then.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_FAIL_OPTIONS",
+    "dynamic_line": "There are others, perhaps in time they will come here.  If you were to go forth, foster our faith, we may yet be able to find someone suitable.  I will reward you as best as I can, if you are willing to leave the blade in my care.",
+    "responses": [
+      {
+        "text": "Very well then.  Here you go.",
+        "condition": { "u_has_item": "veilblade" },
+        "effect": [ { "u_sell_item": "veilblade" }, { "u_lose_effect": "hermit_stage_3_backdoor" } ],
+        "topic": "TALK_HERMIT"
+      },
+      {
+        "text": "I don't have it at the moment, but I can bring it back to you another time.",
+        "condition": { "not": { "u_has_item": "veilblade" } },
+        "topic": "TALK_HERMIT"
+      },
+      { "text": "I will find another solution.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_FAIL_UNDERSTAND",
+    "dynamic_line": "I hope that you truly do.  If you sought to serve Him while you are so thoroughly tethered to the Beyond, it may well be the death of you.",
+    "responses": [
+      { "text": "I'll do whatever it takes, even if it's risky.", "topic": "TALK_HERMIT_DISCUSS_3_FAIL_UNAFRAID" },
+      { "text": "What can I do to make up for this?", "topic": "TALK_HERMIT_DISCUSS_3_FAIL_FAVOR" },
+      { "text": "I'll just be going, then...", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_FAIL_EXPLAIN",
+    "dynamic_line": "Simple, young one.  The intrusions upon this world have threatened us all, inflicted us with influences that may never truly be erased.  The more you are tied to these powers however, the less suitable you are to serve as His Chosen.",
+    "responses": [
+      {
+        "text": "It is His will, that we remain free of mutation?",
+        "topic": "TALK_HERMIT_DISCUSS_3_FAIL_MUTATION",
+        "switch": true,
+        "condition": { "u_has_trait": "PROF_CHALICE" }
+      },
+      {
+        "text": "So your god doesn't accept mutants?",
+        "switch": true,
+        "default": true,
+        "topic": "TALK_HERMIT_DISCUSS_3_FAIL_MUTATION"
+      },
+      { "text": "Is there anything I can do to fix this?", "topic": "TALK_HERMIT_DISCUSS_3_FAIL_FAVOR" },
+      { "text": "I'll just be going, then...", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR",
+    "dynamic_line": {
+      "u_has_item": "veilblade",
+      "yes": "I am glad that you are prepared to help me with this.  The relic you now possess represents the legacy of those who have come before you.  I fear I am not long for this world, but you still have a chance.  I will guide you as best as I can.",
+      "no": {
+        "u_has_effect": "hermit_stage_3_backdoor",
+        "yes": "I am glad that you are prepared to help me with this.  The relic you now possess represents the legacy of those who have come before you.  I fear I am not long for this world, but you still have a chance.  I will guide you as best as I can.",
+        "no": {
+          "npc_has_item": "veilblade",
+          "yes": "There was another who sought to help me, but ultimately could not finish the life's work of my order.  They entrusted this relic to me, the last of our holy weapons as far as I am aware.  It may help you, if you are willing to take good care of it.",
+          "no": "I am thankful for your offer.  There was another who came by here, once.  I guided them as best as I could, to help me with some unfinished business before I can allow myself to rest, but we have failed once more.  There was a sword, one of our order's holy weapons.  A greatsword with sacred runes engraved along the blade.  If you ever find it again, I will fill you in on what this unfinished business entails."
+        }
+      }
+    },
+    "responses": [
+      {
+        "switch": true,
+        "text": "Tell me what needs to be done with this sword.",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_SWORD",
+        "condition": { "or": [ { "u_has_item": "veilblade" }, { "u_has_effect": "hermit_stage_3_backdoor" } ] }
+      },
+      {
+        "text": "This is very dangerous magic under your care.  Are you certain this is wise?",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WISE",
+        "condition": { "and": [ { "npc_has_item": "veilblade" }, { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } ] }
+      },
+      {
+        "text": "You are asking me to join your cult, Keeper.",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_CULT",
+        "condition": { "and": [ { "npc_has_item": "veilblade" }, { "u_has_trait": "PROF_SANGUINE" } ] }
+      },
+      {
+        "switch": true,
+        "text": "I accept.  What needs to be done?",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_OFFER",
+        "effect": [
+          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
+          { "npc_remove_item_with": "veilblade" }
+        ],
+        "condition": { "npc_has_item": "veilblade" }
+      },
+      {
+        "text": "Your order's work?  What was that?",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK",
+        "condition": { "and": [ { "npc_has_item": "veilblade" }, { "not": { "u_has_trait": "PROF_CHALICE" } } ] }
+      },
+      {
+        "text": "So there is hope for us yet.  Anything else?",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE",
+        "condition": { "and": [ { "npc_has_item": "veilblade" }, { "u_has_any_trait": [ "PROF_CHALICE" ] } ] }
+      },
+      {
+        "switch": true,
+        "default": true,
+        "text": "Unfinished business?",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_BUSINESS"
+      },
+      { "text": "I will need time to think about this.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_SWORD",
+    "dynamic_line": "It has the power to draw upon the energy lingering in holes in reality, the portals that remain.  The damage has already been done, but this is one step that may enable us to regain some degree of control, and ensure the continued existence of our world, not to mention the survival of humanity.  Use the power that this act grants you, and you will see for yourself what follows.  You will know when the full fruit of this effort has been rewarded, seek me out when this has occurred.",
+    "responses": [
+      {
+        "text": "Gods and demons enslaving us are what caused this mess, you old fool.",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_GODLESS",
+        "opinion": { "anger": 1, "value": -1 },
+        "condition": { "u_has_trait": "PROF_SANGUINE" }
+      },
+      {
+        "switch": true,
+        "text": "We will not fail.  As is His will.",
+        "topic": "TALK_HERMIT",
+        "condition": { "u_has_trait": "PROF_CHALICE" }
+      },
+      {
+        "text": "This power is dangerous.  Why should we trust that salvation lay with yet another interloper?",
+        "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_DANGER",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
+      },
+      {
+        "switch": true,
+        "text": "I still have my concerns, but we shall see what can be done.",
+        "topic": "TALK_HERMIT",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
+      },
+      { "switch": true, "default": true, "text": "I'll see what I can do.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_GODLESS",
+    "dynamic_line": "You are mistaken.  Human hands brought this upon our world.  I know that your order's practice did not spark this, despite the Cleansing Flame's accusations.  But some manmade cause inflicted this, and we need all the help we can get.  After what your order did to my brethren, I am still willing to trust you, but you need to trust me as well.",
+    "responses": [
+      { "text": "I'll consider it...", "topic": "TALK_HERMIT" },
+      { "text": "[ATTACK] No.", "topic": "TALK_DONE", "effect": "insult_combat" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_DANGER",
+    "dynamic_line": "You are faithful to all the gods, young one.  You will see that this relic, if used with care, is safe now that the damage to it has been healed.  We are not enemies, Hunter.  I will trust you to do the right thing.",
+    "responses": [
+      { "text": "We shall see then, Keeper.", "topic": "TALK_HERMIT" },
+      {
+        "text": "[ATTACK] I cannot allow this to continue.  It must be destroyed.",
+        "topic": "TALK_DONE",
+        "effect": "insult_combat"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WISE",
+    "dynamic_line": "You can surely discern a dangerous artifact, experienced as you are.  But do not forgot, I am well-versed in the ways of our order as well.  This weapon had suffered damage at the hands of the Sanguine Order, but it has been cleansed.  I know also that you are reluctant to use this for its intended purpose, but please.  I am willing to trust you with it, as I know you will do the right thing.",
+    "responses": [
+      {
+        "text": "Very well then, Keeper.  We shall see what will come of this.",
+        "effect": [
+          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
+          { "npc_remove_item_with": "veilblade" }
+        ],
+        "topic": "TALK_HERMIT"
+      },
+      {
+        "text": "[ATTACK] I do not know if this relic can be consecrated properly, but I would rather it be destroyed than risk causing further disruption.",
+        "topic": "TALK_DONE",
+        "effect": "insult_combat"
+      },
+      {
+        "text": "I'm not certain if this is the right way, Keeper.  I will need time to think.",
+        "topic": "TALK_HERMIT"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_CULT",
+    "dynamic_line": "I am asking you to do the right thing.  What is it your order says?  \"No holy symbol or icon shall hold sway over those who follow The Path.\"  This is your choice to make, and yours alone.  If you accept this, you will have the means to survive that you seek, and you'll be able to do some good with this old relic.",
+    "responses": [
+      {
+        "text": "These powers are but another tool at our disposal, we also say.  Fine, I'll play along.",
+        "effect": [
+          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
+          { "npc_remove_item_with": "veilblade" }
+        ],
+        "topic": "TALK_HERMIT"
+      },
+      {
+        "text": "[ATTACK] You are a slave to this thing.  Better you join the rest of your cult in death.",
+        "topic": "TALK_DONE",
+        "effect": "insult_combat"
+      },
+      { "text": "I'll consider it.  Not right now.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_OFFER",
+    "dynamic_line": "Thank you.  Keep this relic safe in the meantime.  As you travel, you will find the portals left over from when this all started.  Stand before them with the relic in your possession, and soon you will see what must be done.  In time, all will be answered.  Speak with me if you need any further advice.",
+    "responses": [ { "text": "I'll see what I can do.", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK",
+    "dynamic_line": "We sought to do what little we could to salve the wounds in The Veil that still fester.  The Cleansing Flame, another group experienced with the Beyond, had their own methods.  Flawed ones, but not without merit.  In time, if you accept this blade and seek out the portals left behind, you will find the answers you seek.  It may not be enough to save humanity.  But it's one way to help, among many.",
+    "responses": [
+      {
+        "text": "Okay.  I accept.",
+        "effect": [
+          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
+          { "npc_remove_item_with": "veilblade" }
+        ],
+        "topic": "TALK_HERMIT"
+      },
+      { "text": "I need time to think about this.", "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE",
+    "dynamic_line": "There is always hope, young one.  As the mage hunters would put it, so long as the Sun shines upon the Earth.  I entrust you with the last of the seven relics.  May He From Beyond The Veil guard and guide you, that you be anointed His Chosen.",
+    "responses": [
+      {
+        "text": "Thank you.",
+        "effect": [
+          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
+          { "npc_remove_item_with": "veilblade" }
+        ],
+        "topic": "TALK_HERMIT"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_BUSINESS",
+    "dynamic_line": "We have struggled so long, through so much death and pain, hoping first to stave off this apocalypse, then to ensure the survival of this world despite countless tears in the fabric of reality.  Let others ensure that humanity carries on, we had our own way to secure this world's future.  But now, it's slipped out of my grasp once more.  It was only through seeing one of my order's holy relics, restored to its former glory, that I had been able to find the strength to carry on.  We shall see if we get another chance...",
+    "responses": [
+      {
+        "text": "\"No matter the cost, no matter what we must do, for the strength and safety of this world.  And in turn, of worlds beyond.\"  We will persevere.",
+        "switch": true,
+        "topic": "TALK_HERMIT",
+        "condition": { "u_has_trait": "PROF_CHALICE" }
+      },
+      {
+        "text": "I don't know what will come of this, Keeper, but it is admirable that you still hold on.  We are not extinct just yet, relic or no relic.",
+        "switch": true,
+        "topic": "TALK_HERMIT",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
+      },
+      { "text": "I'll see what I can do.", "switch": true, "default": true, "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_COMPLETE",
+    "dynamic_line": {
+      "u_has_effect": "hermit_earned_trust_2",
+      "yes": {
+        "npc_has_effect": "hermit_stage_failure",
+        "yes": "So you have succeeded while I, and others, have failed.  I continued to hold on to hope, and now at last I see it bear fruit.  No doubt you will have questions, speak with me when you're ready and I will answer them as best as I am able.",
+        "no": "I'm impressed, young one.  He From Beyond The Veil has sought to bring us hope in these dark times.  To see such a thing, after all that has come to pass, is a relief to my old heart.  Come, we will have much to discuss."
+      },
+      "no": {
+        "npc_has_effect": "hermit_stage_failure",
+        "yes": "So that is why you are here.  Another sought to finish His work, and I failed them.  But here you are, Chosen by He From Beyond The Veil, guided here to continue our work?  I am in your debt.  I will answer what questions you may have, best as I am able.",
+        "no": "What?  Such strange fate, that would guide you here.  I had feared that I was the last of my order, that there was no hope left for us.  Fate has seen me proven wrong, it seems.  Well then, if you have questions, speak to me when you're ready."
+      }
+    },
+    "responses": [
+      {
+        "text": "We shall see.",
+        "topic": "TALK_HERMIT",
+        "effect": [
+          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
+          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
+          { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3",
     "dynamic_line": "Indeed.  Hopefully you have seen for yourself what this relic can do, even in the poor state it's in.  With it, another can at least continue to fulfill our oath.  To do all we can to ensure this world is not cast into the abyss, and others with it.  If you believe yourself ready...",
     "responses": [
@@ -588,7 +972,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3_OATH",
-    "dynamic_line": "Well, what my brethren and I have sworn.  Though you have not done so, indeed I have no such authority to allow you to take that vow, you have started down a path that, if followed to its conclusion, will serve the same purpose.  You will have something that not even every high priest has achieved.",
+    "dynamic_line": "Well, what my brethren and I have sworn.  While I have no authority to administer the holy vows, you have started down a path that, if followed to its conclusion, will serve the same purpose.  You will have something that very few of us have ever achieved.",
     "responses": [
       { "text": "Why can't you do this?", "topic": "TALK_HERMIT_DISCUSS_3_ANOTHER" },
       { "text": "And what did you say of the abyss?", "topic": "TALK_HERMIT_DISCUSS_3_ABYSS" },
@@ -604,7 +988,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3_ANOTHER",
-    "dynamic_line": "I'm well past my prime.  Already you've proven yourself capable and worthy of His favor.  Better that I do what I can to guide you down the right path.",
+    "dynamic_line": "I'm well past my prime.  You've already proven yourself capable and worthy of His favor.  Better that I do what I can, to guide you down the right path.",
     "responses": [
       { "text": "And what did you say of the abyss?", "topic": "TALK_HERMIT_DISCUSS_3_ABYSS" },
       {
@@ -619,10 +1003,10 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3_ABYSS",
-    "dynamic_line": "That is what Oaths to The Chalice warns of, that He answered our plea all those years ago, not only for our sake but that of other worlds affected by the wounds in The Veil.",
+    "dynamic_line": "That is what Oaths to The Chalice warns of, why He answered our plea all those years ago.  Not just for our sake, but that of other worlds affected by the wounds in The Veil.",
     "responses": [
       {
-        "text": "So you believe that is He From Beyond The Veil wants the portals closed?",
+        "text": "So you believe that He From Beyond The Veil wants the portals closed?",
         "topic": "TALK_HERMIT_DISCUSS_3_MOTIVE"
       },
       {
@@ -692,7 +1076,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_4_FLAME",
-    "dynamic_line": "We are not enemies, at least no longer.  Though some may wish to destroy the relic, what reason would they have?  As your holy book declares, if it is unsafe to study, then destroy it.  But you have seen quite well what it does, and can assure its safety.",
+    "dynamic_line": "We are not enemies, at least no longer.  Though some may wish to destroy the relic, what reason would they have?  As your holy book declares, if it is unsafe to study, then destroy it.  But you have seen quite well what it does, and can confirm it is safe.",
     "responses": [
       { "text": "True.  I have another thing to ask about.", "topic": "TALK_HERMIT_DISCUSS_4" },
       { "text": "True.  That is all for now.", "topic": "TALK_HERMIT" }
@@ -709,8 +1093,8 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_HERMIT_DISCUSS_4_DREAM",
-    "dynamic_line": "The other Chosen wrote about hearing His will, described mention of receiving divine inspiration through dream and omen.  This was one of the other advantages of the relics, being able to follow His commands, without needing sacrfice and ritual to sustain communion with Him.  I fear that if they are muddled unclear, that may be another consequence of the Sanguine Order's work done on the relic.  Even then, so long as you do what you're able to, I am hopeful that He will be pleased.",
+    "id": "TALK_HERMIT_DISCUSS_4_DREAMS",
+    "dynamic_line": "The other Chosen wrote about hearing His will, described mention of receiving divine inspiration through dream and omen.  This was one of the other advantages of the relics, being able to follow His commands, without needing sacrifice and ritual to sustain communion with Him.  If they are muddled and unclear, that may be another consequence of the Sanguine Order's work on the relic.  Even then, so long as you do what you're able to, I am hopeful that He will be pleased.",
     "responses": [
       { "text": "Aside from closing portals, what else might serve Him?", "topic": "TALK_HERMIT_DISCUSS_4_SERVICE" },
       { "text": "I have another thing to ask about.", "topic": "TALK_HERMIT_DISCUSS_4" },
@@ -775,7 +1159,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_4_SURVIVAL",
-    "dynamic_line": "Survival of humanity will depend on all those who still live.  Their are countless threats to overcome.  It may be that humanity thrives and adapts even if we do not pursue our duty.  It may also be that the fabric of The Veil remains endangered no matter what we do.  But His will is that we do what little can be done to ensure those who survive have every advantage that can be given to them.  Your duty as His Chosen still does some good for this world, even if the most dire consequences never come to pass.",
+    "dynamic_line": "Survival of humanity will depend on all those who still live.  There are countless threats to overcome.  It may be that humanity thrives and adapts even if we do not pursue our duty.  It may also be that the fabric of The Veil remains endangered no matter what we do.  But His will is that we seek to ensure those who survive have every advantage possible.  Your duty as His Chosen still does good for this world, even if these dire consequences never come to pass.",
     "responses": [
       { "text": "Alright.  I have another thing to ask about.", "topic": "TALK_HERMIT_DISCUSS_4" },
       { "text": "So be it.  That is all for now.", "topic": "TALK_HERMIT" }
@@ -945,7 +1329,7 @@
         "topic": "TALK_HERMIT"
       },
       {
-        "text": "[ATTACK] I cannot accept this.  We may have been allies on accasion, but we were enemies as well.  This time, I will not allow you to bring any further disruption to this world.",
+        "text": "[ATTACK] I cannot accept this.  We may have been allies on occasion, but we were enemies as well.  This time, I will not allow you to bring any further disruption to this world.",
         "topic": "TALK_DONE",
         "effect": "insult_combat"
       }
@@ -1078,7 +1462,9 @@
       },
       {
         "text": "I have seen what the arcane can lead to.  Great things, but also great danger.",
-        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_ARCANIST", "PROF_ARCANIST2" ] },
+        "condition": {
+          "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_ARCANIST", "PROF_ARCANIST2" ]
+        },
         "topic": "TALK_HERMIT_BOOK_REVEAL",
         "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
       },
