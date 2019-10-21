@@ -63,5 +63,107 @@
     "type": "martial_art",
     "name": "Sōjutsu",
     "extend": { "weapons": [ "spear_pestilence" ] }
+  },
+  {
+    "type": "martial_art",
+    "id": "style_cleansingflame",
+    "name": "Via Gladium et Malleo",
+    "description": "The style of combatives developed by an arcane order, dedicated to fighting in defense of humanity.  Focuses on preserving momentum and fighting multiple opponents, using their fury in different ways depending on their weapon of choice.",
+    "initiate": [ "You whisper a prayer to the gods, and ready your weapon in a fluid stance.  Dii vult!", "%s whispers something, entering a fluid stance." ],
+    "learn_difficulty": 6,
+    "primary_skill": "magic",
+    "strictly_melee": true,
+    "onattack_buffs": [
+      {
+        "id": "buff_cleansingflame_onattack",
+        "name": "Righteous Momentum",
+        "description": "Your own fury hastens that of your weapon.\n+1 Accuracy, +1 Block attempts, +1 Dodge attempts, +10 speed.\nLasts 2 turns.  Stacks 4 times.",
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "melee", "level": 3 } ],
+        "buff_duration": 2,
+        "max_stacks": 4,
+        "bonus_blocks": 1,
+        "bonus_blocks": 1,
+        "flat_bonuses": [ [ "hit", 1 ], [ "speed", 10 ] ]
+      }
+    ],
+    "onkill_buffs": [
+      {
+        "id": "buff_cleansingflame_onkill1",
+        "name": "Regain Composure (Hammer)",
+        "description": "Mortal blows drain the momentum you've built up.\n-1.5 Accuracy, -15 speed, +1.0 Dodge skill.\nLasts 2 turns.  Stacks 4 times.",
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "melee", "level": 3 } ],
+        "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
+        "buff_duration": 2,
+        "max_stacks": 4,
+        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -1.5 ], [ "speed", -15 ] ]
+      },
+      {
+        "id": "buff_cleansingflame_onkill2",
+        "name": "Regain Composure (Sword)",
+        "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, -15 speed, +1 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "melee", "level": 3 } ],
+        "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
+        "buff_duration": 2,
+        "max_stacks": 4,
+        "flat_bonuses": [ [ "block", 1 ], [ "hit", -1.5 ], [ "speed", -15 ] ]
+      }
+    ],
+    "ondodge_buffs": [
+      {
+        "id": "buff_cleansingflame_ondodge",
+        "name": "Elusive Step (Hammer)",
+        "description": "With sure footing, no blade may mark you.\n+3 armor.\nLasts 2 turns.  Stacks 4 times.",
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "melee", "level": 4 }, { "name": "magic", "level": 3 } ],
+        "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
+        "buff_duration": 2,
+        "max_stacks": 4,
+        "flat_bonuses": [ [ "armor", "bash", 3 ], [ "armor", "cut", 3 ], [ "armor", "stab", 3 ] ]
+      }
+    ],
+    "onblock_buffs": [
+      {
+        "id": "buff_cleansingflame_onblock",
+        "name": "Serene Defense (Sword)",
+        "description": "Their every exertion reveals their weakness.\n+3 armor penetration.\nLasts 2 turns.  Stacks 4 times.",
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "melee", "level": 4 }, { "name": "magic", "level": 3 } ],
+        "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
+        "buff_duration": 2,
+        "max_stacks": 3,
+        "flat_bonuses": [ [ "armor", "cut", 3 ] ]
+      }
+    ],
+    "techniques": [
+      "tec_cleansingflame_interial_sweep",
+      "tec_cleansingflame_sundering_strike",
+      "tec_cleansingflame_hunters_wrath",
+      "tec_cleansingflame_shadowcutter"
+    ],
+    "//": "morningstar_inferior isn't permitted because it's so light that it falls under the minimum bashing damage used to screen for which type of weapon you're using.  Same reason 2-by-swords and other makeshift swords aren't allowed, their cutting damage is too low.",
+    "weapons": [
+      "hexenhammer",
+      "hexenhammer_active",
+      "warhammer",
+      "mace",
+      "mace_inferior",
+      "morningstar",
+      "shillelagh",
+      "shillelagh_weighted",
+      "sun_sword",
+      "sun_sword_on",
+      "broadsword",
+      "broadsword_inferior",
+      "broadfire_off",
+      "broadfire_on",
+      "arming_sword",
+      "arming_sword_inferior",
+      "jian",
+      "jian_inferior",
+      "sword_xiphos"
+    ]
   }
 ]

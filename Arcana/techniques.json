@@ -1,0 +1,59 @@
+[
+  {
+    "type": "technique",
+    "id": "tec_cleansingflame_interial_sweep",
+    "name": "Inertial Sweep",
+    "messages": [ "You drive your weapon's momentum into a sweeping strike at %s", "<npcname> delivers a sweeping strike to %s" ],
+    "skill_requirements": [ { "name": "melee", "level": 5 } ],
+    "melee_allowed": true,
+    "req_buffs": [ "buff_cleansingflame_onattack" ],
+    "crit_ok": true,
+    "weighting": 2,
+    "stunned_target": true,
+    "down_dur": 2,
+    "mult_bonuses": [ [ "movecost", 0.8 ] ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_cleansingflame_sundering_strike",
+    "name": "Sundering Strike",
+    "messages": [ "You channel your momentum into a disarming blow towards %s", "<npcname> delivers a disarming blow to %s" ],
+    "skill_requirements": [ { "name": "melee", "level": 6 } ],
+    "melee_allowed": true,
+    "req_buffs": [ "buff_cleansingflame_onattack" ],
+    "crit_ok": true,
+    "weighting": 3,
+    "stunned_target": true,
+    "disarms": true,
+    "mult_bonuses": [ [ "movecost", 0.8 ] ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_cleansingflame_hunters_wrath",
+    "name": "Hunter's Wrath",
+    "skill_requirements": [ { "name": "melee", "level": 7 }, { "name": "magic", "level": 5 } ],
+    "weapon_damage_requirements": [ { "type": "bash", "min": 22 }, { "type": "stab", "min": 20 } ],
+    "melee_allowed": true,
+    "req_buffs": [ "buff_cleansingflame_onattack" ],
+    "crit_tec": true,
+    "knockback_dist": 3,
+    "knockback_follow": 1,
+    "powerful_knockback": true,
+    "mult_bonuses": [ [ "damage", "bash", 1.25 ] ],
+    "messages": [ "Your hammer slams into %s with unnatural force", "<npcname>'s hammer slams into %s with unnatural force" ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_cleansingflame_shadowcutter",
+    "name": "Shadowcutter",
+    "skill_requirements": [ { "name": "melee", "level": 7 }, { "name": "magic", "level": 5 } ],
+    "weapon_damage_requirements": [ { "type": "cut", "min": 37 } ],
+    "melee_allowed": true,
+    "req_buffs": [ "buff_cleansingflame_onattack" ],
+    "crit_tec": true,
+    "aoe": "wide",
+    "knockback_dist": 1,
+    "powerful_knockback": true,
+    "messages": [ "Your holy blade hews through %s with a fiery roar", "<npcname>'s holy blade hews through %s with a fiery roar" ]
+  }
+]
