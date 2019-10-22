@@ -73,6 +73,30 @@
     "learn_difficulty": 6,
     "primary_skill": "magic",
     "strictly_melee": true,
+    "onmove_buffs": [
+      {
+        "id": "buff_cleansingflame_onmove1",
+        "name": "Hunter's Advance (Hammer)",
+        "description": "Every step brings confidence.\n+1.0 Dodge skill.\nLasts 3 turns.",
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "melee", "level": 2 }, { "name": "magic", "level": 4 } ],
+        "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
+        "buff_duration": 3,
+        "max_stacks": 1,
+        "flat_bonuses": [ [ "dodge", 1.0 ] ]
+      },
+      {
+        "id": "buff_cleansingflame_onmove2",
+        "name": "Hunter's Advance (Sword)",
+        "description": "Every step brings confidence.\n+1.0 damage blocked.\nLasts 3 turns.",
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "melee", "level": 2 }, { "name": "magic", "level": 4 } ],
+        "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
+        "buff_duration": 3,
+        "max_stacks": 1,
+        "flat_bonuses": [ [ "block", 1 ] ]
+      }
+    ],
     "onattack_buffs": [
       {
         "id": "buff_cleansingflame_onattack",
@@ -87,61 +111,59 @@
         "flat_bonuses": [ [ "hit", 1 ], [ "speed", 10 ] ]
       }
     ],
+    "onhit_buffs": [
+      {
+        "id": "buff_cleansingflame_onhit1",
+        "name": "Prudence (Hammer)",
+        "description": "With cautious ferocity, no blade may mark you.\n+2 armor.\nLasts 2 turns.  Stacks 4 times.",
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "melee", "level": 4 }, { "name": "magic", "level": 3 } ],
+        "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
+        "buff_duration": 2,
+        "max_stacks": 4,
+        "flat_bonuses": [ [ "armor", "bash", 2 ], [ "armor", "cut", 2 ], [ "armor", "stab", 2 ] ]
+      },
+      {
+        "id": "buff_cleansingflame_onhit2",
+        "name": "Pursuit (Sword)",
+        "description": "Every strike only further illuminates their weakness.\n+2 armor penetration.\nLasts 2 turns.  Stacks 4 times.",
+        "melee_allowed": true,
+        "skill_requirements": [ { "name": "melee", "level": 4 }, { "name": "magic", "level": 3 } ],
+        "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
+        "buff_duration": 2,
+        "max_stacks": 3,
+        "flat_bonuses": [ [ "arpen", "cut", 2 ] ]
+      }
+    ],
     "onkill_buffs": [
       {
         "id": "buff_cleansingflame_onkill1",
         "name": "Regain Composure (Hammer)",
-        "description": "Mortal blows drain the momentum you've built up.\n-1.5 Accuracy, -15 speed, +1.0 Dodge skill.\nLasts 2 turns.  Stacks 4 times.",
+        "description": "Mortal blows drain the momentum you've built up.\n-2 Accuracy, -15 speed, +1.0 Dodge skill.\nLasts 2 turns.  Stacks 3 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
         "buff_duration": 2,
-        "max_stacks": 4,
-        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -1.5 ], [ "speed", -15 ] ]
+        "max_stacks": 3,
+        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -2 ], [ "speed", -15 ] ]
       },
       {
         "id": "buff_cleansingflame_onkill2",
         "name": "Regain Composure (Sword)",
-        "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, -15 speed, +1 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
+        "description": "Mortal blows drain the momentum you've built up.\n-2 Accuracy, -15 speed, +1 damage blocked.\nLasts 2 turns.  Stacks 3 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
-        "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
-        "buff_duration": 2,
-        "max_stacks": 4,
-        "flat_bonuses": [ [ "block", 1 ], [ "hit", -1.5 ], [ "speed", -15 ] ]
-      }
-    ],
-    "ondodge_buffs": [
-      {
-        "id": "buff_cleansingflame_ondodge",
-        "name": "Elusive Step (Hammer)",
-        "description": "With sure footing, no blade may mark you.\n+3 armor.\nLasts 2 turns.  Stacks 4 times.",
-        "melee_allowed": true,
-        "skill_requirements": [ { "name": "melee", "level": 4 }, { "name": "magic", "level": 3 } ],
-        "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
-        "buff_duration": 2,
-        "max_stacks": 4,
-        "flat_bonuses": [ [ "armor", "bash", 3 ], [ "armor", "cut", 3 ], [ "armor", "stab", 3 ] ]
-      }
-    ],
-    "onblock_buffs": [
-      {
-        "id": "buff_cleansingflame_onblock",
-        "name": "Serene Defense (Sword)",
-        "description": "Their every exertion reveals their weakness.\n+3 armor penetration.\nLasts 2 turns.  Stacks 4 times.",
-        "melee_allowed": true,
-        "skill_requirements": [ { "name": "melee", "level": 4 }, { "name": "magic", "level": 3 } ],
-        "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
+        "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
         "buff_duration": 2,
         "max_stacks": 3,
-        "flat_bonuses": [ [ "armor", "cut", 3 ] ]
+        "flat_bonuses": [ [ "block", 1 ], [ "hit", -2 ], [ "speed", -20 ] ]
       }
     ],
     "techniques": [
       "tec_cleansingflame_interial_sweep",
       "tec_cleansingflame_sundering_strike",
-      "tec_cleansingflame_hunters_wrath",
-      "tec_cleansingflame_shadowcutter"
+      "tec_cleansingflame_illusory_counter",
+      "tec_cleansingflame_lightning_riposte"
     ],
     "//": "morningstar_inferior isn't permitted because it's so light that it falls under the minimum bashing damage used to screen for which type of weapon you're using.  Same reason 2-by-swords and other makeshift swords aren't allowed, their cutting damage is too low.",
     "weapons": [
@@ -162,8 +184,7 @@
       "arming_sword",
       "arming_sword_inferior",
       "jian",
-      "jian_inferior",
-      "sword_xiphos"
+      "jian_inferior"
     ]
   }
 ]
