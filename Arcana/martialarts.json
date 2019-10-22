@@ -145,7 +145,7 @@
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -2 ], [ "speed", -10 ] ]
+        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -2 ], [ "movecost", 10 ] ]
       },
       {
         "id": "buff_cleansingflame_onkill2",
@@ -156,7 +156,7 @@
         "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "block", 5 ], [ "hit", -2 ], [ "speed", -10 ] ]
+        "flat_bonuses": [ [ "block", 5 ], [ "hit", -2 ], [ "movecost", 10 ] ]
       }
     ],
     "techniques": [
