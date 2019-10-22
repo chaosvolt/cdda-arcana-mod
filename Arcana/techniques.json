@@ -37,7 +37,7 @@
     "req_buffs": [ "buff_cleansingflame_onmove1" ],
     "dodge_counter": true,
     "crit_ok": true,
-    "stun_dur": 2,
+    "stun_dur": 1,
     "mult_bonuses": [ [ "movecost", 0.0 ] ]
   },
   {
@@ -50,7 +50,7 @@
     "req_buffs": [ "buff_cleansingflame_onmove2" ],
     "block_counter": true,
     "crit_ok": true,
-    "stun_dur": 2,
+    "stun_dur": 1,
     "mult_bonuses": [ [ "movecost", 0.0 ] ]
   }
 ]

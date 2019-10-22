@@ -89,14 +89,14 @@
       {
         "id": "buff_cleansingflame_onmove2",
         "name": "Hunter's Advance (Sword)",
-        "description": "Every step brings confidence.\n+1.0 damage blocked, +2 Block attempts.\nLasts 2 turns.",
+        "description": "Every step brings confidence.\n+5 damage blocked, +2 Block attempts.\nLasts 2 turns.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 2 }, { "name": "magic", "level": 4 } ],
         "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
         "buff_duration": 2,
         "max_stacks": 1,
         "bonus_blocks": 2,
-        "flat_bonuses": [ [ "block", 1 ] ]
+        "flat_bonuses": [ [ "block", 5 ] ]
       }
     ],
     "onattack_buffs": [
@@ -106,7 +106,7 @@
         "description": "Your own fury hastens that of your weapon.\n+1 Accuracy, -5 move cost.\nLasts 1 turn.  Stacks 4 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
-        "buff_duration": 1,
+        "buff_duration": 2,
         "max_stacks": 4,
         "flat_bonuses": [ [ "hit", 1 ], [ "movecost", -5.0 ] ]
       }
@@ -126,37 +126,37 @@
       {
         "id": "buff_cleansingflame_onhit2",
         "name": "Pursuit (Sword)",
-        "description": "Every strike only further illuminates their weakness.\n+1 armor penetration.\nLasts 2 turns.  Stacks 4 times.",
+        "description": "Every strike only further illuminates their weakness.\n+3 armor penetration.\nLasts 2 turns.  Stacks 4 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 4 }, { "name": "magic", "level": 3 } ],
         "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
         "buff_duration": 2,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "arpen", "cut", 1 ] ]
+        "flat_bonuses": [ [ "arpen", "cut", 3 ] ]
       }
     ],
     "onkill_buffs": [
       {
         "id": "buff_cleansingflame_onkill1",
         "name": "Regain Composure (Hammer)",
-        "description": "Mortal blows drain the momentum you've built up.\n-2 Accuracy, +10 move cost, +1.0 Dodge skill.\nLasts 2 turns.  Stacks 4 times.",
+        "description": "Mortal blows drain the momentum you've built up.\n-2 Accuracy, +10 move cost, +1.0 Dodge skill.\nLasts 3 turns.  Stacks 4 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
-        "buff_duration": 2,
+        "buff_duration": 3,
         "max_stacks": 4,
         "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -2 ], [ "speed", -10 ] ]
       },
       {
         "id": "buff_cleansingflame_onkill2",
         "name": "Regain Composure (Sword)",
-        "description": "Mortal blows drain the momentum you've built up.\n-2 Accuracy, +10 move cost, +1 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
+        "description": "Mortal blows drain the momentum you've built up.\n-2 Accuracy, +10 move cost, +5 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
         "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
-        "buff_duration": 2,
+        "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "block", 1 ], [ "hit", -2 ], [ "speed", -10 ] ]
+        "flat_bonuses": [ [ "block", 5 ], [ "hit", -2 ], [ "speed", -10 ] ]
       }
     ],
     "techniques": [
