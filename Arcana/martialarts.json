@@ -78,7 +78,7 @@
         "name": "Hunter's Advance (Hammer)",
         "description": "Every step brings confidence.\n+1.0 Dodge skill, +2 Dodge attempts.\nLasts 2 turns.",
         "melee_allowed": true,
-        "skill_requirements": [ { "name": "melee", "level": 2 }, { "name": "magic", "level": 4 } ],
+        "skill_requirements": [ { "name": "bashing", "level": 2 }, { "name": "magic", "level": 4 } ],
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
         "buff_duration": 2,
         "max_stacks": 1,
@@ -90,7 +90,7 @@
         "name": "Hunter's Advance (Sword)",
         "description": "Every step brings confidence.\n+5 damage blocked, +2 Block attempts.\nLasts 2 turns.",
         "melee_allowed": true,
-        "skill_requirements": [ { "name": "melee", "level": 2 }, { "name": "magic", "level": 4 } ],
+        "skill_requirements": [ { "name": "cutting", "level": 2 }, { "name": "magic", "level": 4 } ],
         "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
         "buff_duration": 2,
         "max_stacks": 1,
@@ -127,7 +127,7 @@
         "name": "Prudence (Hammer)",
         "description": "With cautious ferocity, no blade may mark you.\n+1 armor.\nLasts 2 turns.  Stacks 4 times.",
         "melee_allowed": true,
-        "skill_requirements": [ { "name": "melee", "level": 4 }, { "name": "magic", "level": 3 } ],
+        "skill_requirements": [ { "name": "bashing", "level": 4 }, { "name": "magic", "level": 3 } ],
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
         "buff_duration": 2,
         "max_stacks": 4,
@@ -138,7 +138,7 @@
         "name": "Pursuit (Sword)",
         "description": "Every strike only further illuminates their weakness.\n+3 armor penetration.\nLasts 2 turns.  Stacks 4 times.",
         "melee_allowed": true,
-        "skill_requirements": [ { "name": "melee", "level": 4 }, { "name": "magic", "level": 3 } ],
+        "skill_requirements": [ { "name": "cutting", "level": 4 }, { "name": "magic", "level": 3 } ],
         "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
         "buff_duration": 2,
         "max_stacks": 4,
@@ -149,24 +149,24 @@
       {
         "id": "buff_cleansingflame_onkill1",
         "name": "Regain Composure (Hammer)",
-        "description": "Mortal blows drain the momentum you've built up.\n-2 Accuracy, +10 move cost, +1.0 Dodge skill.\nLasts 3 turns.  Stacks 4 times.",
+        "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, +3 move cost, +1.0 Dodge skill.\nLasts 3 turns.  Stacks 4 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -2 ], [ "movecost", 10 ] ]
+        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -1 ], [ "movecost", 3.0 ] ]
       },
       {
         "id": "buff_cleansingflame_onkill2",
         "name": "Regain Composure (Sword)",
-        "description": "Mortal blows drain the momentum you've built up.\n-2 Accuracy, +10 move cost, +5 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
+        "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, +3 move cost, +5 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
         "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "block", 5 ], [ "hit", -2 ], [ "movecost", 10 ] ]
+        "flat_bonuses": [ [ "block", 5 ], [ "hit", -1 ], [ "movecost", 3.0 ] ]
       }
     ],
     "techniques": [
@@ -174,7 +174,8 @@
       "tec_cleansingflame_sundering_strike",
       "tec_cleansingflame_illusory_counter",
       "tec_cleansingflame_lightning_riposte",
-      "tec_cleansingflame_shifting_takedown"
+      "tec_cleansingflame_shifting_takedown",
+      "tec_cleansingflame_break"
     ],
     "//": "morningstar_inferior isn't permitted because it's so light that it falls under the minimum bashing damage used to screen for which type of weapon you're using.  Same reason 2-by-swords and other makeshift swords aren't allowed, their cutting damage is too low.",
     "weapons": [
