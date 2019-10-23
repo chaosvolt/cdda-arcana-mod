@@ -68,11 +68,10 @@
     "type": "martial_art",
     "id": "style_cleansingflame",
     "name": "Via Gladium et Malleo",
-    "description": "The style of combatives developed by an arcane order, dedicated to fighting in defense of humanity.  Focuses on preserving momentum and fighting multiple opponents, using their fury in different ways depending on their weapon of choice.",
-    "initiate": [ "You whisper a prayer to the gods, and ready your weapon in a fluid stance.  Dii vult!", "%s whispers something, entering a fluid stance." ],
+    "description": "The style of combatives developed by an arcane order, dedicated to fighting in defense of humanity.  Focuses on preserving momentum and fighting multiple opponents, using their fury in different ways depending on their weapon of choice.  The full extent of the style requires proper armament, and arcane experience.",
+    "initiate": [ "You whisper a prayer to the gods, and ready yourself in a fluid stance.  Dii vult!", "%s whispers something, entering a fluid stance." ],
     "learn_difficulty": 6,
     "primary_skill": "magic",
-    "strictly_melee": true,
     "onmove_buffs": [
       {
         "id": "buff_cleansingflame_onmove1",
@@ -97,6 +96,17 @@
         "max_stacks": 1,
         "bonus_blocks": 2,
         "flat_bonuses": [ [ "block", 5 ] ]
+      },
+      {
+        "id": "buff_cleansingflame_onmove3",
+        "name": "Hunter's Advance (Unarmed)",
+        "description": "Every step brings confidence.\n+1.0 Dodge skill, +2 Dodge attempts.\nLasts 2 turns.",
+        "unarmed_allowed": true,
+        "skill_requirements": [ { "name": "unarmed", "level": 2 }, { "name": "magic", "level": 4 } ],
+        "buff_duration": 2,
+        "max_stacks": 1,
+        "bonus_dodges": 2,
+        "flat_bonuses": [ [ "dodge", 1.0 ] ]
       }
     ],
     "onattack_buffs": [
@@ -163,7 +173,8 @@
       "tec_cleansingflame_interial_sweep",
       "tec_cleansingflame_sundering_strike",
       "tec_cleansingflame_illusory_counter",
-      "tec_cleansingflame_lightning_riposte"
+      "tec_cleansingflame_lightning_riposte",
+      "tec_cleansingflame_shifting_takedown"
     ],
     "//": "morningstar_inferior isn't permitted because it's so light that it falls under the minimum bashing damage used to screen for which type of weapon you're using.  Same reason 2-by-swords and other makeshift swords aren't allowed, their cutting damage is too low.",
     "weapons": [
