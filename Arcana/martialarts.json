@@ -91,7 +91,7 @@
         "description": "Every step brings confidence.\n+5 damage blocked, +2 Block attempts.\nLasts 2 turns.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "cutting", "level": 2 }, { "name": "magic", "level": 4 } ],
-        "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
+        "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
         "buff_duration": 2,
         "max_stacks": 1,
         "bonus_blocks": 2,
@@ -139,7 +139,7 @@
         "description": "Every strike only further illuminates their weakness.\n+3 armor penetration.\nLasts 2 turns.  Stacks 4 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "cutting", "level": 4 }, { "name": "magic", "level": 3 } ],
-        "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
+        "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
         "buff_duration": 2,
         "max_stacks": 4,
         "flat_bonuses": [ [ "arpen", "cut", 3 ] ]
@@ -163,7 +163,7 @@
         "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, +3 move cost, +5 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
-        "weapon_damage_requirements": [ { "type": "cut", "min": 21 } ],
+        "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
         "buff_duration": 3,
         "max_stacks": 4,
         "flat_bonuses": [ [ "block", 5 ], [ "hit", -1 ], [ "movecost", 3.0 ] ]
@@ -196,7 +196,10 @@
       "arming_sword",
       "arming_sword_inferior",
       "jian",
-      "jian_inferior"
+      "jian_inferior",
+      "scimitar",
+      "scimitar_inferior",
+      "sword_xiphos"
     ]
   }
 ]
