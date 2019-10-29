@@ -1,23 +1,5 @@
 [
   {
-    "id": "TALK_MISSION_INQUIRE",
-    "type": "talk_topic",
-    "responses": [
-      {
-        "text": "I heard from Sofia, they're still taking care of themselves for now.",
-        "topic": "TALK_MISSION_SUCCESS",
-        "effect": "mission_success",
-        "condition": {
-          "and": [
-            { "u_has_effect": "sofia_deacon_message" },
-            { "u_has_mission": "MISSION_CF_DEACON_1" },
-            { "npc_has_trait": "CF_DEACON" }
-          ]
-        }
-      }
-    ]
-  },
-  {
     "type": "talk_topic",
     "id": "TALK_CF_DEACON",
     "dynamic_line": { "u_is_wearing": "badge_marshal", "yes": "Hello, Marshal.  How may I help you?", "no": "Hello.  How may I help you?" },
