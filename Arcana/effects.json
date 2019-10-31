@@ -326,13 +326,16 @@
     "type": "effect_type",
     "id": "spell_insight",
     "name": [ "Insight" ],
-    "desc": [ "The eyes of The Beyond shall guide you.  Your perception is augmented by magic." ],
+    "desc": [
+      "The eyes of The Beyond shall guide you.  Your perception is augmented by magic, and you can see clearly in darkness."
+    ],
     "remove_message": "You feel deadened as your magically-induced perception leaves you.",
     "decay_messages": [ [ "Your spell of insight is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": "1 m",
-    "scaling_mods": { "per_mod": [ 8 ] }
+    "scaling_mods": { "per_mod": [ 8 ] },
+    "flags": [ "EFFECT_NIGHT_VISION" ]
   },
   {
     "type": "effect_type",
