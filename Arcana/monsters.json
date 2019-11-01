@@ -884,8 +884,9 @@
     "type": "MONSTER",
     "name": "summoned shadow",
     "categories": [ "CLASSIC" ],
+    "speed": 80,
     "melee_dice_sides": 4,
-    "melee_cut": 2,
+    "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.1 } ],
     "vision_day": 2,
     "vision_night": 50,
     "path_settings": { "max_dist": 10 },
@@ -893,7 +894,7 @@
     "death_function": [ "MELT" ],
     "special_attacks": [ [ "PARROT", 900 ] ],
     "extend": { "flags": [ "REGENERATES_IN_DARK", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
-    "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS" ] }
+    "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN" ] }
   },
   {
     "id": "mon_shadow_snake_summoned",
@@ -901,8 +902,10 @@
     "type": "MONSTER",
     "name": "summoned shadow snake",
     "categories": [ "CLASSIC" ],
+    "speed": 85,
     "death_drops": {  },
     "death_function": [ "MELT" ],
+    "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.1 } ],
     "vision_day": 2,
     "vision_night": 50,
     "path_settings": { "max_dist": 10 },
