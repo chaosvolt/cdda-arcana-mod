@@ -179,6 +179,39 @@
     "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
+    "type": "recipe",
+    "result": "air_talisman",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 3 ], [ "book_sacrifice", 3 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [
+        [ "meat_offal", 1, "LIST" ],
+        [ "brain", 4 ],
+        [ "stomach", 2 ],
+        [ "hstomach", 2 ],
+        [ "stomach_large", 1 ],
+        [ "hstomach_large", 1 ],
+        [ "flesh_golem_heart", 2 ],
+        [ "jabberwock_heart", 1 ]
+      ],
+      [
+        [ "arcana_essence_any", 2, "LIST" ],
+        [ "platinum_small", 25 ],
+        [ "gold_small", 50 ],
+        [ "silver_small", 100 ],
+        [ "copper", 200 ]
+      ]
+    ],
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
+  },
+  {
     "result": "essence_dull",
     "type": "recipe",
     "category": "CC_OTHER",
