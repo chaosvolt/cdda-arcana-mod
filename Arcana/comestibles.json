@@ -329,7 +329,7 @@
     "comestible_type": "MED",
     "category": "tools",
     "name": "air talisman",
-    "description": "A crude paper talisman marked with strange patterns, and anointed with a pure sacrifice.  Using it will anoint a friendly monster of your choosing, to bind summoned monsters as familiars and allow it to be used for more advanced purposes.  It will bind the creature for 200 days.  Using it on NPCs or already tamed monsters will be a waste.",
+    "description": "A crude paper talisman marked with strange patterns, anointed with a pure sacrifice.  Using it will bind a nearby summoned monster as a familiar, if they aren't hostile, allowing them to be used for more complex work.  It will bind the affect creature for 200 days.  Using it on NPCs or already tamed monsters will be a waste.",
     "weight": 150,
     "volume": "100 ml",
     "material": "paper",
