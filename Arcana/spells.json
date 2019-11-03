@@ -1608,6 +1608,24 @@
     "max_field_intensity": 1
   },
   {
+    "id": "arcana_item_pet",
+    "type": "SPELL",
+    "name": "Familiar Pact",
+    "description": "Binds friendly monsters to you, making it serve as a pet if it isn't already fully tamed.",
+    "message": "Faint wisps of mist fly from the talisman, to bring enlightenment through a bond with your own mind.",
+    "effect": "target_attack",
+    "valid_targets": [ "ally" ],
+    "flags": [ "SILENT" ],
+    "effect_str": "pet",
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "base_casting_time": 5,
+    "final_casting_time": 5,
+    "//": "200 days, since the permanent spell flag doesn't seem to actually work for this.",
+    "min_duration": 1728000000,
+    "max_duration": 1728000000
+  },
+  {
     "id": "arcana_item_thunder_gauntlets_taze",
     "type": "SPELL",
     "name": "Hand of Thunder",
