@@ -814,5 +814,11 @@
     "id": "npc_extra",
     "type": "item_group",
     "items": [ [ "triffid_garland", 1 ], [ "amulet_exotic", 1 ], [ "brooch_iridescent", 1 ] ]
+  },
+  {
+    "id": "NC_EVAC_SHOPKEEP_misc",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "CF_golden_scale", "count-min": 5, "count-max": 30, "prob": 20 } ]
   }
 ]

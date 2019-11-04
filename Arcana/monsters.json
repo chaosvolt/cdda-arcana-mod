@@ -84,6 +84,18 @@
     "death_drops": "mon_zombie_hollow_death_drops"
   },
   {
+    "id": "mon_fleshy_shambler",
+    "copy-from": "mon_fleshy_shambler",
+    "type": "MONSTER",
+    "death_drops": "mon_fleshy_shambler_death_drops"
+  },
+  {
+    "id": "mon_flesh_golem",
+    "copy-from": "mon_flesh_golem",
+    "type": "MONSTER",
+    "death_drops": "mon_flesh_golem_death_drops"
+  },
+  {
     "id": "mon_jabberwock",
     "copy-from": "mon_jabberwock",
     "type": "MONSTER",
@@ -424,6 +436,24 @@
     "//": "Only the real ones will drop essence, not afterimages.",
     "type": "MONSTER",
     "death_drops": "mon_hound_tindalos_death_drops"
+  },
+  {
+    "id": "mon_devourer",
+    "copy-from": "mon_devourer",
+    "type": "MONSTER",
+    "death_drops": "mon_devourer_death_drops"
+  },
+  {
+    "id": "mon_skeleton_electric",
+    "copy-from": "mon_skeleton_electric",
+    "type": "MONSTER",
+    "death_drops": "mon_skeleton_electric_death_drops"
+  },
+  {
+    "id": "mon_skeleton_brute",
+    "copy-from": "mon_skeleton_brute",
+    "type": "MONSTER",
+    "death_drops": "mon_skeleton_brute_death_drops"
   },
   {
     "id": "mon_spirit_of_fire",
