@@ -253,9 +253,10 @@
     "difficulty": 6,
     "time": "10 m",
     "batch_time_factors": [ 80, 4 ],
-    "book_learn": [ [ "book_sacrifice", 6 ] ],
+    "book_learn": [ [ "book_sacrifice", 6 ], [ "book_syncretism", 7 ] ],
+    "autolearn": [ [ "magic", 8 ] ],
     "result_mult": 5,
-    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [
       [
         [ "vortex_stone", 1 ],
@@ -284,8 +285,9 @@
     "difficulty": 5,
     "time": "5 m",
     "batch_time_factors": [ 80, 4 ],
-    "book_learn": [ [ "book_sacrifice", 5 ] ],
-    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
+    "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 6 ] ],
+    "autolearn": [ [ "magic", 7 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
     "components": [
       [
         [ "essence_blood", 3 ],
@@ -325,9 +327,9 @@
     "difficulty": 7,
     "time": "15 m",
     "batch_time_factors": [ 80, 4 ],
-    "book_learn": [ [ "book_sacrifice", 5 ] ],
+    "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 5 ] ],
     "using": [ [ "arcana_essence_any", 10 ] ],
-    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -339,9 +341,9 @@
     "difficulty": 5,
     "skills_required": [ "fabrication", 5 ],
     "time": "120 m",
-    "book_learn": [ [ "book_sacrifice", 5 ] ],
+    "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "forging_standard", 2 ], [ "arcana_essence_any", 2 ], [ "bronzesmithing_tools", 1 ] ],
-    "tools": [ [ [ "book_sacrifice", -1 ] ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
     "components": [ [ [ "gold_small", 625 ] ], [ [ "arcana_holy_relic_any", 1, "LIST" ], [ "arcana_holy_symbol_any", 1, "LIST" ] ] ]
   },
   {
