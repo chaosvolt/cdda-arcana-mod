@@ -260,6 +260,9 @@
       "type": "reveal_map",
       "radius": 180,
       "terrain": [
+        "hiway",
+        "road",
+        "bridge",
         "curious_structure",
         "strange_grove",
         "impact_site",

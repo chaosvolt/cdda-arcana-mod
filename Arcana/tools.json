@@ -1206,73 +1206,6 @@
     "flags": [ "NO_SALVAGE" ]
   },
   {
-    "id": "flame_talisman",
-    "type": "TOOL",
-    "name": "flame talisman",
-    "description": "A crude paper talisman marked with strange patterns, and anointed with a meager sacrifice.  It can be used to rapidly spark a fire, if you're desperate.",
-    "weight": 150,
-    "volume": "100 ml",
-    "material": "paper",
-    "symbol": ",",
-    "color": "cyan",
-    "initial_charges": 15,
-    "max_charges": 15,
-    "charges_per_use": 1,
-    "use_action": { "type": "firestarter", "moves": 5 },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "water_talisman",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "category": "tools",
-    "name": "water talisman",
-    "description": "A crude paper talisman marked with strange patterns, and anointed with a hunter's sacrifice.  It can be used to mend minor wounds, along with providing limited resistance to certain alchemical effects.",
-    "weight": 150,
-    "volume": "100 ml",
-    "material": "paper",
-    "symbol": ",",
-    "color": "cyan",
-    "use_action": {
-      "type": "heal",
-      "limb_power": 5,
-      "head_power": 5,
-      "torso_power": 5,
-      "limb_scaling": 1.0,
-      "head_scaling": 1.0,
-      "torso_scaling": 1.0,
-      "bleed": 0.5,
-      "bite": 0.5,
-      "move_cost": 25,
-      "effects": [ { "id": "talisman_warding", "duration": 600 } ]
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "earth_talisman",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "category": "tools",
-    "name": "earth talisman",
-    "description": "A crude paper talisman marked with strange patterns, and anointed with a peculiar sacrifice.  Using it will conjure and transmutate a structure of strange earth and stone, to serve as a meager shelter in times of desperation.",
-    "weight": 150,
-    "volume": "100 ml",
-    "material": "paper",
-    "symbol": ",",
-    "color": "cyan",
-    "use_action": {
-      "type": "deploy_tent",
-      "radius": 2,
-      "broken_type": "candle_barrier_aftermath",
-      "wall": "f_spires_arcana",
-      "floor": "f_pozdol_arcana",
-      "floor_center": "f_altar_arcana",
-      "door_opened": "f_door_arcana_o",
-      "door_closed": "f_door_arcana_c"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
     "id": "candle_warding",
     "type": "TOOL",
     "name": "candle of warding",
@@ -1325,7 +1258,7 @@
     "category": "tools",
     "name": "orb of the veil",
     "name_plural": "orbs of the veil",
-    "description": "A mysterious orb made of a dark, almost glassy stone.  An eye pattern is worked into it, using gold for the irises and a diamond pupil.  It is said to represent a desire to protect the old knowledge and old ways, strengthened by a yearning for further enlightenment.  With enough power, it might impart a great deal of knowledge... at a price.",
+    "description": "A mysterious orb made of a dark, almost glassy stone.  An eye pattern is worked into it, using gold for the irises and a diamond pupil.  It is said to represent a desire to protect the old knowledge and old ways, strengthened by a yearning for further enlightenment.  Using it will show you a vision of the surrounding area, along with other random side effects, along with attracting unwanted attention from Beyond...",
     "weight": 2000,
     "volume": 4,
     "price": 10000,
@@ -1338,11 +1271,10 @@
     "ammo": "essence_pure_type",
     "max_charges": 1,
     "charges_per_use": 1,
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_orb_veil_mapping", "no_fail": true, "level": 0 } ],
     "artifact_data": {
-      "effects_activated": [ "AEA_MAP", "AEA_PAIN", "AEA_PAIN", "AEA_PAIN", "AEA_ATTENTION" ],
-      "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO" ]
+      "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO", "AEP_CLAIRVOYANCE" ]
     },
-    "use_action": "ARTIFACT",
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {

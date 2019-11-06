@@ -43,7 +43,7 @@
         }
       },
       {
-        "text": "[MISSION] What can you tell me about the \"stange grove\" Johathan asked me to investigate?",
+        "text": "[MISSION] What can you tell me about the \"strange grove\" Johnathan asked me to investigate?",
         "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1",
         "condition": { "u_has_mission": "MISSION_CF_GM_1" }
       },
@@ -53,9 +53,20 @@
         "condition": { "u_has_mission": "MISSION_CF_GM_2" }
       },
       {
-        "text": "[MISSION] What can you tell me about these sanguinists that Jonathan has asked me to deal with?",
+        "text": "[MISSION] What can you tell me about these sanguinists that Johnathan has asked me to deal with?",
         "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_3",
         "condition": { "u_has_mission": "MISSION_CF_GM_3" }
+      },
+      {
+        "text": "[MISSION] The deacon at the refugee center asked me to check up on you.",
+        "topic": "TALK_CF_REP_DEACON_MISSION",
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "sofia_deacon_message" } },
+            { "not": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL", "PROF_SANGUINE" ] } },
+            { "u_has_mission": "MISSION_CF_DEACON_1" }
+          ]
+        }
       },
       { "text": "What is this place?", "topic": "TALK_CF_REP_WHERE" },
       { "text": "Who are you?", "topic": "TALK_CF_REP_WHO" },
@@ -111,6 +122,17 @@
         },
         "topic": "TALK_CF_REP_MERCHANT_MOTIVE"
       },
+      {
+        "text": "I was sent by the deacon at the refugee center, to check up on you.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "sofia_motive_explained" } },
+            { "u_has_mission": "MISSION_CF_DEACON_1" },
+            { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL", "PROF_SANGUINE" ] }
+          ]
+        },
+        "topic": "TALK_CF_REP_DEACON_MOTIVE"
+      },
       { "text": "Do you have anything to trade?", "topic": "TALK_CF_REP_TRADE" },
       {
         "text": "Anything I can do to help?",
@@ -130,6 +152,14 @@
     "type": "talk_topic",
     "dynamic_line": "Oh, okay.  Should be easy enough to replace, since the list is a bit short.  Our needs and resources haven't changed at the moment anyway.  Here you go.",
     "responses": [ { "text": "Thank you.", "topic": "TALK_CF_REP", "effect": { "u_buy_item": "cf_rep_trade_arrangement" } } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_DEACON_MISSION",
+    "dynamic_line": "I see.  I'm glad that he's doing alright over there.  If you get the chance to stop by, be sure to tell him we're doing okay.  Should put his mind at ease, as I'm sure he's needed over there.",
+    "responses": [
+      { "text": "Alright.", "topic": "TALK_CF_REP", "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" } }
+    ]
   },
   {
     "type": "talk_topic",
@@ -338,6 +368,31 @@
     "responses": [
       {
         "text": "We'll see.",
+        "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
+        "topic": "TALK_CF_REP"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_DEACON_MOTIVE",
+    "dynamic_line": {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": "That young man knows nothing of our history.  I fear he may be too trusting, to have asked for your assistance.  I will give you the benefit of the doubt for now, but if I find that you've harmed him, I will slay you myself.  Understood?",
+      "no": "The deacon of this church does not know of our nature, unlike the priest who would normally be attending this place.  If you get the opportunity to visit him again, I'm sure he'll be relieved to know that we're still holding on."
+    },
+    "responses": [
+      {
+        "text": "...",
+        "switch": true,
+        "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
+        "condition": { "u_has_trait": "PROF_SANGUINE" },
+        "topic": "TALK_CF_REP"
+      },
+      {
+        "text": "I see.",
+        "switch": true,
+        "default": true,
         "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
         "topic": "TALK_CF_REP"
       }

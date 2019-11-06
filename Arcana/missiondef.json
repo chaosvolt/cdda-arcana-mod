@@ -213,10 +213,11 @@
     "id": "MISSION_CF_DEACON_1",
     "type": "mission_definition",
     "name": "Check On Rural Church",
-    "//": "Mission is supposed to completed via dialogue, not the normal route.",
-    "goal": "MGOAL_NULL",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_effect": "sofia_deacon_message" },
     "difficulty": 2,
     "value": 10000,
+    "has_generic_rewards": false,
     "start": {
       "effect": [ { "u_add_effect": "already_asked_deacon", "duration": "PERMANENT" } ],
       "assign_mission_target": {

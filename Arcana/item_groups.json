@@ -135,7 +135,8 @@
     "groups": [
       { "group": "magic_consumables", "prob": 45 },
       { "group": "magic_items", "prob": 30 },
-      { "group": "magic_tools", "prob": 15 }
+      { "group": "magic_tools", "prob": 15 },
+      { "item": "arcanemap", "prob": 25 }
     ]
   },
   {
@@ -152,6 +153,7 @@
     "id": "vault",
     "type": "item_group",
     "items": [
+      [ "arcanemap", 10 ],
       [ "offering_chalice", 1 ],
       [ "blood_athame", 1 ],
       [ "mana_gem", 1 ],
@@ -198,6 +200,7 @@
     "id": "spider",
     "type": "item_group",
     "items": [
+      [ "arcanemap", 5 ],
       { "group": "magic_tools", "prob": 1 },
       { "group": "magic_items", "prob": 1 },
       { "group": "magic_consumables", "prob": 1 },

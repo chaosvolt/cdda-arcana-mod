@@ -6,7 +6,7 @@
     "sym": 67,
     "color": "dark_gray",
     "see_cost": 5,
-    "extras": "field"
+    "flags": [ "RISK_HIGH" ]
   },
   {
     "id": "curious_structure_roof",
@@ -22,8 +22,7 @@
     "name": "curious underground structure",
     "sym": 67,
     "color": "dark_gray",
-    "see_cost": 5,
-    "extras": "build"
+    "see_cost": 5
   },
   {
     "id": "curious_structure_b2",
@@ -31,8 +30,7 @@
     "name": "eerie cavern",
     "sym": 67,
     "color": "red",
-    "see_cost": 5,
-    "extras": "build"
+    "see_cost": 5
   },
   {
     "id": "strange_grove",
@@ -40,7 +38,8 @@
     "name": "strange grove",
     "sym": 84,
     "color": "i_green",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
   },
   {
     "id": "grove_ruins",
@@ -56,7 +55,8 @@
     "name": "impact site",
     "sym": 67,
     "color": "light_red",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
   },
   {
     "id": "impact_platforms_left",
@@ -168,7 +168,8 @@
     "name": "peculiar shrine",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
   },
   {
     "id": "island_temple_2",
@@ -176,7 +177,8 @@
     "name": "peculiar shrine",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
   },
   {
     "id": "island_temple_3",
@@ -184,7 +186,8 @@
     "name": "peculiar shrine",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
   },
   {
     "id": "island_temple_4",
@@ -192,7 +195,8 @@
     "name": "peculiar shrine",
     "sym": 84,
     "color": "blue",
-    "see_cost": 5
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
   },
   {
     "id": "island_temple_b_1",
@@ -233,7 +237,7 @@
     "sym": 83,
     "color": "light_gray",
     "see_cost": 5,
-    "extras": "field"
+    "flags": [ "RISK_HIGH" ]
   },
   {
     "type": "overmap_terrain",
@@ -247,7 +251,7 @@
     "sym": 46,
     "color": "magenta",
     "see_cost": 2,
-    "flags": [ "NO_ROTATE" ]
+    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
   {
     "type": "overmap_terrain",
@@ -256,7 +260,7 @@
     "sym": 46,
     "color": "magenta",
     "see_cost": 2,
-    "flags": [ "NO_ROTATE" ]
+    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
   {
     "type": "overmap_terrain",

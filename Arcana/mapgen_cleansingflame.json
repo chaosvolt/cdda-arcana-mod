@@ -82,7 +82,14 @@
   {
     "id": "cleansing_flame_crafting",
     "type": "item_group",
-    "items": [ { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8 }, [ "gold_small", 5 ], [ "silver_small", 15 ], [ "feather", 15 ], [ "scrap", 20 ], [ "copper", 25 ] ]
+    "items": [
+      { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8 },
+      [ "gold_small", 5 ],
+      [ "silver_small", 15 ],
+      [ "feather", 15 ],
+      [ "scrap", 20 ],
+      [ "copper", 25 ]
+    ]
   },
   {
     "id": "cleansing_flame_casualties",
@@ -198,11 +205,7 @@
         ",,,,,,,,###++###,,,,,,,,"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": {
-        "B": "t_floor",
-        "D": "t_floor",
-        "p": "t_floor"
-      },
+      "terrain": { "B": "t_floor", "D": "t_floor", "p": "t_floor" },
       "place_loot": [
         { "item": "holy_symbol", "x": 11, "y": 9, "chance": 100 },
         { "item": "note_flame", "x": 12, "y": 9, "chance": 100 },
@@ -234,22 +237,20 @@
         "##.==....=======....==.#",
         "##.=......AF.CK......=.#",
         "##.=..I...........I..=.#",
-        "##.=..I...........I..=.#",
-        "##.=.................=.#",
-        "##.==.......S.......==.#",
-        "##..===...#...#...===..#",
-        "###......###X###......##",
-        "#####++#####.#####++####",
-        "##{{{..{{##...##{{..{{{#",
-        "##.......##.>.##.......#",
-        "##{{{{{{{##...##{{{{{{{#",
+        "##.=..I....~~~....I..=.#",
+        "##.=.......~S~.......=.#",
+        "##.==......~~~......==.#",
+        "##..===...........===..#",
+        "###.......##X##.......##",
+        "#####++####...####++####",
+        "##{{{..{{#.....#{{..{{{#",
+        "##.......#..>..#.......#",
+        "##{{{{{{{#.....#{{{{{{{#",
         "########################"
       ],
       "palettes": [ "arcana_palette" ],
       "furniture": { ">": "f_blade_upright" },
-      "set": [
-        { "point": "trap", "id": "tr_portal", "x": 12, "y": 14 }
-      ],
+      "set": [ { "point": "trap", "id": "tr_portal", "x": 12, "y": 14 } ],
       "place_loot": [
         { "group": "cleansing_flame_crafting", "x": [ 2, 4 ], "y": 20, "chance": 30, "repeat": 5 },
         { "item": "CF_golden_scale", "x": [ 2, 4 ], "y": 20, "chance": 25, "repeat": 3 },

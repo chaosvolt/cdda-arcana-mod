@@ -9,7 +9,12 @@
     "skills_required": [ "fabrication", 6 ],
     "time": "150 m",
     "book_learn": [ [ "book_sacrifice", 8 ] ],
-    "using": [ [ "forging_standard", 3 ], [ "bronzesmithing_tools", 1 ], [ "arcana_holy_symbol_any", 1 ], [ "arcana_essence_exclude_dull", 5 ] ],
+    "using": [
+      [ "forging_standard", 3 ],
+      [ "bronzesmithing_tools", 1 ],
+      [ "arcana_holy_symbol_any", 1 ],
+      [ "arcana_essence_exclude_dull", 5 ]
+    ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
     "components": [ [ [ "gold_small", 625 ] ], [ [ "silver_small", 165 ] ] ]
   },
@@ -22,9 +27,9 @@
     "difficulty": 3,
     "skills_required": [ "fabrication", 5 ],
     "time": "180 m",
-    "book_learn": [ [ "book_bloodmagic", 3 ] ],
+    "book_learn": [ [ "book_bloodmagic", 3 ], [ "book_syncretism", 4 ] ],
     "using": [ [ "forging_standard", 2 ], [ "bronzesmithing_tools", 1 ], [ "arcana_essence_any", 1 ] ],
-    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
     "components": [
       [ [ "silver_small", 400 ] ],
       [ [ "2x4", 1 ], [ "stick", 1 ] ],
@@ -45,7 +50,11 @@
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
-    "components": [ [ [ "broadsword", 1 ], [ "arming_sword", 1 ], [ "jian", 1 ] ], [ [ "gold_small", 80 ], [ "CF_golden_scale", 16 ] ], [ [ "essence_dull", 25 ] ] ]
+    "components": [
+      [ [ "broadsword", 1 ], [ "arming_sword", 1 ], [ "jian", 1 ] ],
+      [ [ "gold_small", 80 ], [ "CF_golden_scale", 16 ] ],
+      [ [ "essence_dull", 25 ] ]
+    ]
   },
   {
     "result": "hexenhammer",
@@ -56,10 +65,10 @@
     "difficulty": 4,
     "skills_required": [ "fabrication", 4 ],
     "time": "70 m",
-    "book_learn": [ [ "book_hexenhammer", 4 ] ],
+    "book_learn": [ [ "book_hexenhammer", 4 ], [ "book_syncretism", 5 ] ],
     "using": [ [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
-    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
     "components": [
       [ [ "warhammer", 1 ] ],
       [ [ "arcana_holy_symbol_any", 1, "LIST" ], [ "arcana_holy_relic_any", 1, "LIST" ] ],

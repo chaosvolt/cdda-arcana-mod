@@ -1235,6 +1235,148 @@
   },
   {
     "type": "SPELL",
+    "id": "arcana_item_orb_veil_mapping",
+    "name": "Gaze Into Greater Horizons",
+    "description": "Knowledge is power, but power comes at a price...",
+    "effect": "map",
+    "valid_targets": [ "self" ],
+    "extra_effects": [
+      { "id": "arcana_item_orb_veil_attention", "hit_self": true },
+      { "id": "arcana_item_scroll_artifice_pain", "hit_self": true },
+      { "id": "arcana_item_orb_veil_wonder", "hit_self": true }
+    ],
+    "message": "You look deep into the orb, and see a vision of the surrounding area hidden among headache-inducing geometries.",
+    "min_aoe": 24,
+    "max_aoe": 24,
+    "base_casting_time": 100
+  },
+  {
+    "id": "arcana_item_orb_veil_attention",
+    "type": "SPELL",
+    "name": "Orb Attention",
+    "description": "Applies nether attention, lower duration because the orb comes with a host of othe random side effects.",
+    "message": "",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "effect": "target_attack",
+    "effect_str": "attention",
+    "min_duration": 90000,
+    "max_duration": 270000
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_item_orb_veil_wonder",
+    "name": "Orb Random Effects",
+    "description": "Random side effects to using the orb of the veil.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "effect": "none",
+    "flags": [ "WONDER", "SILENT" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "extra_effects": [
+      { "id": "arcana_item_orb_veil_wonder_archon" },
+      { "id": "arcana_item_orb_veil_wonder_blind" },
+      { "id": "arcana_item_orb_veil_wonder_citrine" },
+      { "id": "arcana_item_orb_veil_wonder_hallu" },
+      { "id": "arcana_item_orb_veil_wonder_insight" },
+      { "id": "arcana_item_orb_veil_wonder_stunned" },
+      { "id": "arcana_item_orb_veil_wonder_ward" }
+    ]
+  },
+  {
+    "id": "arcana_item_orb_veil_wonder_archon",
+    "type": "SPELL",
+    "name": "Orb: Archon Effect",
+    "description": "Applies a decent dose of the archon's gaze effect.",
+    "message": "You saw something looking back at you, far more intently than the other things out there...",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "effect": "target_attack",
+    "effect_str": "archon_gaze_effect",
+    "min_duration": 90000,
+    "max_duration": 270000
+  },
+  {
+    "id": "arcana_item_orb_veil_wonder_blind",
+    "type": "SPELL",
+    "name": "Orb: Blindness",
+    "description": "Blinds you for for a modest duration.",
+    "message": "You see a blinding white light among the strange visions within.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "effect": "target_attack",
+    "effect_str": "blind",
+    "min_duration": 100,
+    "max_duration": 3000
+  },
+  {
+    "id": "arcana_item_orb_veil_wonder_citrine",
+    "type": "SPELL",
+    "name": "Orb: Incense",
+    "description": "Grants a random duration of citrine incense's effect.",
+    "message": "Wisps of enervating essence accompany the visions, seeming far more real than the hallucinations...",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "effect": "target_attack",
+    "effect_str": "potion_incense",
+    "min_duration": 30000,
+    "max_duration": 90000
+  },
+  {
+    "id": "arcana_item_orb_veil_wonder_hallu",
+    "type": "SPELL",
+    "name": "Orb: Hallucinations",
+    "description": "Grants a random duration of hallucinations.",
+    "message": "Even after you look away from the orb, the visions linger in the back of your mind...",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "effect": "target_attack",
+    "effect_str": "visuals",
+    "min_duration": 30000,
+    "max_duration": 90000
+  },
+  {
+    "id": "arcana_item_orb_veil_wonder_insight",
+    "type": "SPELL",
+    "name": "Orb: Insight",
+    "description": "Grants a random duration of the Insight spell effect.",
+    "message": "A glimpse of otherworldly insight floods your mind.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "effect": "target_attack",
+    "effect_str": "spell_insight",
+    "min_duration": 30000,
+    "max_duration": 90000
+  },
+  {
+    "id": "arcana_item_orb_veil_wonder_stunned",
+    "type": "SPELL",
+    "name": "Orb: Stun",
+    "description": "Stuns for for a short duration.",
+    "message": "The visions within the orb leave you reeling for a moment.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "effect": "target_attack",
+    "effect_str": "stunned",
+    "min_duration": 100,
+    "max_duration": 3000
+  },
+  {
+    "id": "arcana_item_orb_veil_wonder_ward",
+    "type": "SPELL",
+    "name": "Orb: Ward",
+    "description": "Grants a random duration of Ward Against Evil.",
+    "message": "You see a vision of something watching over you, among the strange sights within the orb.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "effect": "target_attack",
+    "effect_str": "cleric_warding",
+    "min_duration": 30000,
+    "max_duration": 90000
+  },
+  {
+    "type": "SPELL",
     "id": "arcana_item_scroll_artifice",
     "name": "Call to Order",
     "description": "Attempts to pacify monsters for a moderate duration, paralyzes user and inflicts pain.",
@@ -1258,7 +1400,7 @@
     "type": "SPELL",
     "id": "arcana_item_scroll_artifice_pain",
     "name": "Divine Scroll: Artifice Pain",
-    "description": "Used instead of Artifact Pain to suppress the mesasage and make the range more narrow.",
+    "description": "Used instead of Artifact Pain to suppress the message and make the range more narrow.",
     "valid_targets": [ "self" ],
     "effect": "recover_energy",
     "effect_str": "PAIN",
@@ -1606,6 +1748,24 @@
     "field_chance": 1,
     "min_field_intensity": 1,
     "max_field_intensity": 1
+  },
+  {
+    "id": "arcana_item_pet",
+    "type": "SPELL",
+    "name": "Familiar Pact",
+    "description": "Binds friendly monsters to you, making it serve as a pet if it isn't already fully tamed.",
+    "message": "Faint wisps of mist fly from the talisman, to bring enlightenment through a bond with your own mind.",
+    "effect": "target_attack",
+    "valid_targets": [ "ally" ],
+    "flags": [ "SILENT" ],
+    "effect_str": "pet",
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "base_casting_time": 5,
+    "final_casting_time": 5,
+    "//": "200 days, since the permanent spell flag doesn't seem to actually work for this.",
+    "min_duration": 1728000000,
+    "max_duration": 1728000000
   },
   {
     "id": "arcana_item_thunder_gauntlets_taze",
@@ -2687,9 +2847,7 @@
     "max_range": 1,
     "effect": "target_attack",
     "flags": [ "SILENT" ],
-    "extra_effects": [
-      { "id": "arcana_react_cursed_sword_mending", "hit_self": true }
-    ]
+    "extra_effects": [ { "id": "arcana_react_cursed_sword_mending", "hit_self": true } ]
   },
   {
     "id": "arcana_react_cursed_sword_mending",
