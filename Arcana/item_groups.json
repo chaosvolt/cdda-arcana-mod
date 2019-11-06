@@ -113,7 +113,7 @@
   {
     "id": "church",
     "type": "item_group",
-    "items": [ [ "book_hexenhammer", 1 ], [ "book_scrollcraft", 1 ] ]
+    "items": [ [ "book_hexenhammer", 1 ], [ "book_scrollcraft", 1 ], [ "manual_cleansingflame", 1 ] ]
   },
   {
     "id": "religious_books",
@@ -127,6 +127,11 @@
     "groups": [
       [ "magic_books", 8 ]
     ]
+  },
+  {
+    "id": "rare_martial_arts_books",
+    "type": "item_group",
+    "items": [ [ "manual_cleansingflame", 1 ] ]
   },
   {
     "id": "mansion_safe",
