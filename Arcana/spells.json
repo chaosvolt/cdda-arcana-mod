@@ -45,7 +45,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_aftermath_conjure_miasma_nuke",
@@ -67,7 +67,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_aftermath_conjure_miasma_tear",
@@ -89,7 +89,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_aftermath_drain_life_fatigue",
@@ -108,13 +108,13 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_sign_elemental_burst_water",
     "type": "SPELL",
     "name": "Elemental Burst Water",
-    "description": "Applies cold damage, chills the air, and slows down victims.",
+    "description": "Applies cold damage, creates fog, and slows down victims.",
     "message": "",
     "effect": "cone_attack",
     "valid_targets": [ "hostile", "ground" ],
@@ -123,23 +123,23 @@
     "min_damage": 10,
     "max_damage": 30,
     "damage_increment": 2,
-    "min_range": 12,
-    "max_range": 24,
-    "range_increment": 1.5,
-    "min_aoe": 25,
-    "max_aoe": 50,
-    "aoe_increment": 2.5,
+    "min_range": 8,
+    "max_range": 16,
+    "range_increment": 0.8,
+    "min_aoe": 10,
+    "max_aoe": 20,
+    "aoe_increment": 1,
     "max_level": 10,
     "min_duration": 600,
     "max_duration": 1200,
     "duration_increment": 60,
     "damage_type": "cold",
-    "field_id": "fd_cold_air3",
-    "field_chance": 1,
+    "field_id": "fd_fog",
+    "field_chance": 3,
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.5
   },
   {
     "id": "arcana_sign_elemental_burst_fire",
@@ -154,23 +154,23 @@
     "min_damage": 10,
     "max_damage": 30,
     "damage_increment": 2,
-    "min_range": 12,
-    "max_range": 24,
-    "range_increment": 1.5,
-    "min_aoe": 25,
-    "max_aoe": 50,
-    "aoe_increment": 2.5,
+    "min_range": 8,
+    "max_range": 16,
+    "range_increment": 0.8,
+    "min_aoe": 10,
+    "max_aoe": 20,
+    "aoe_increment": 1,
     "max_level": 10,
     "min_duration": 600,
     "max_duration": 1200,
     "duration_increment": 60,
-    "damage_type": "heat",
+    "damage_type": "fire",
     "field_id": "fd_fire",
-    "field_chance": 1,
+    "field_chance": 3,
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.5
   },
   {
     "id": "arcana_sign_elemental_burst_wind",
@@ -185,23 +185,23 @@
     "min_damage": 10,
     "max_damage": 30,
     "damage_increment": 2,
-    "min_range": 12,
-    "max_range": 24,
-    "range_increment": 1.5,
-    "min_aoe": 25,
-    "max_aoe": 50,
-    "aoe_increment": 2.5,
+    "min_range": 8,
+    "max_range": 16,
+    "range_increment": 0.8,
+    "min_aoe": 10,
+    "max_aoe": 20,
+    "aoe_increment": 1,
     "max_level": 10,
     "min_duration": 600,
     "max_duration": 1200,
     "duration_increment": 60,
     "damage_type": "electric",
     "field_id": "fd_electricity",
-    "field_chance": 1,
+    "field_chance": 3,
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.5
   },
   {
     "id": "arcana_sign_elemental_burst_earth",
@@ -216,23 +216,23 @@
     "min_damage": 10,
     "max_damage": 30,
     "damage_increment": 2,
-    "min_range": 12,
-    "max_range": 24,
-    "range_increment": 1.5,
-    "min_aoe": 25,
-    "max_aoe": 50,
-    "aoe_increment": 2.5,
+    "min_range": 8,
+    "max_range": 16,
+    "range_increment": 0.8,
+    "min_aoe": 10,
+    "max_aoe": 20,
+    "aoe_increment": 1,
     "max_level": 10,
     "min_duration": 600,
     "max_duration": 1200,
     "duration_increment": 60,
     "damage_type": "acid",
     "field_id": "fd_acid",
-    "field_chance": 1,
+    "field_chance": 3,
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.5
   },
   {
     "id": "arcana_aftermath_elemental_coldness",
@@ -255,7 +255,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_aftermath_elemental_stun",
@@ -312,7 +312,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_aftermath_sundering_quake_boulders",
@@ -493,7 +493,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_blessing_conjure_lightburst",
@@ -524,7 +524,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.1,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_blessing_conjure_shadow_field",
@@ -559,7 +559,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.1,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_blessing_consecrate",
@@ -625,7 +625,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_blessing_drain_life",
@@ -685,7 +685,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1,
+    "field_intensity_variance": 0.25,
     "min_duration": 300,
     "max_duration": 2500,
     "duration_increment": 110
@@ -857,7 +857,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.1,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_blessing_summon_giant_centipedes",
@@ -1252,7 +1252,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_item_athame_sanguine_art",
@@ -1932,7 +1932,7 @@
     "field_chance": 1,
     "min_field_intensity": 2,
     "max_field_intensity": 2,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_item_thunder_gauntlets_lifedrain",
@@ -1967,7 +1967,7 @@
     "field_chance": 1,
     "min_field_intensity": 3,
     "max_field_intensity": 3,
-    "field_intensity_variance": 0.1
+    "field_intensity_variance": 0.25
   },
   {
     "id": "arcana_magic_agility",
@@ -2138,7 +2138,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1,
+    "field_intensity_variance": 0.25,
     "spell_class": "SPELL_ACID"
   },
   {
@@ -2176,7 +2176,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1,
+    "field_intensity_variance": 0.25,
     "spell_class": "SPELL_FIRE"
   },
   {
@@ -2230,9 +2230,9 @@
     "spell_class": "SPELL_DAMPENING"
   },
   {
-    "id": "arcana_sign_elemental_burst",
+    "id": "arcana_magic_elemental_burst",
     "type": "SPELL",
-    "name": "Blessing: Elemental Burst",
+    "name": "Sign: Elemental Burst",
     "description": "Magic Sign\nUsing this spell will blast a cone-shaped area with a random elemental effect.",
     "message": "\"I am that which resides in all living things, the order hidden within chaos...\"  You cast %s!",
     "effect": "cone_attack",
@@ -2244,12 +2244,14 @@
     ],
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "WONDER" ],
-    "min_range": 12,
-    "max_range": 24,
-    "range_increment": 1.5,
-    "min_aoe": 25,
-    "max_aoe": 50,
-    "aoe_increment": 2.5,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 8,
+    "max_range": 16,
+    "range_increment": 0.8,
+    "min_aoe": 10,
+    "max_aoe": 20,
+    "aoe_increment": 1,
     "max_level": 10,
     "base_casting_time": 320,
     "final_casting_time": 240,
@@ -2309,9 +2311,6 @@
     "base_energy_cost": 60,
     "final_energy_cost": 48,
     "energy_increment": -1.2,
-    "min_duration": 18000,
-    "max_duration": 180000,
-    "duration_increment": 8100,
     "min_duration": 30000,
     "max_duration": 150000,
     "duration_increment": 12000,
@@ -2426,7 +2425,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1,
+    "field_intensity_variance": 0.25,
     "spell_class": "SPELL_LIGHT"
   },
   {
@@ -2620,7 +2619,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1,
+    "field_intensity_variance": 0.25,
     "spell_class": "SPELL_LIGHTNING"
   },
   {
@@ -2887,7 +2886,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.1,
+    "field_intensity_variance": 0.25,
     "spell_class": "SPELL_SUMMONFIEND"
   },
   {
