@@ -370,5 +370,14 @@
     "name": "receipt of trade agreement",
     "name_plural": "receipt of trade agreement",
     "description": "A hastily-typed printout confirming the arrangements set up between the Free Merchants and the survivors in the rural church."
+  },
+  {
+    "id": "manual_cleansingflame",
+    "copy-from": "book_martial",
+    "type": "GENERIC",
+    "name": "The Path of Sword and Hammer",
+    "name_plural": "The Path of Sword and Hammer",
+    "description": "A handwritten copy of a codex detailing the methods of fighting used by an eccentric order, hunters of the wicked and otherworldly.",
+    "book_data": { "martial_art": "style_cleansingflame" }
   }
 ]
