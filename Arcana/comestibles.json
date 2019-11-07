@@ -337,5 +337,59 @@
     "color": "cyan",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_pet", "no_fail": true, "level": 0 },
     "flags": [ "NO_SALVAGE", "NO_INGEST" ]
+  },
+  {
+    "id": "scroll_spell_sun",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (consecrate)",
+    "name_plural": "pattern scroll (consecrate)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_consecrate", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_moon",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (frost armor)",
+    "name_plural": "pattern scroll (frost armor)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will protect against the cold, and all its side effects.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_frost_armor", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_artiface",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (sundering quake)",
+    "name_plural": "pattern scroll (sundering quake)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring down structures and bury them in rubble, though creatures will be left unharmed.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_sundering_quake", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_nature",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (elemental burst)",
+    "name_plural": "pattern scroll (elemental burst)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_elemental_burst", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_destruction",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (summon centipedes)",
+    "name_plural": "pattern scroll (summon centipedes)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_summon_giant_centipedes", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_subversion",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (eclipse)",
+    "name_plural": "pattern scroll (eclipse)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring forth monsters and darkness, in exchange for a temporary boost of raw power with which to stalk the night.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_eclipse", "no_fail": true, "level": 0 }
   }
 ]

@@ -814,38 +814,12 @@
     "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_conjure_acid", "no_fail": true, "level": 10 }
   },
   {
-    "id": "scroll_spell_acidspray",
-    "copy-from": "scroll_base",
-    "type": "TOOL",
-    "name": "pattern scroll (acid spray)",
-    "name_plural": "pattern scrolls (acid spray)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
-    "use_action": {
-      "target": "scroll_spell_acidspray_on",
-      "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_acidspray_on",
-    "copy-from": "scroll_base",
-    "type": "TOOL",
-    "name": "pattern scroll (acid spray)",
-    "name_plural": "spellcrafts scroll (acid spray)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
-    "turns_per_charge": 1,
-    "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "ACIDSPRAY", "is_strong": true },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
     "id": "scroll_spell_agile",
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (agility)",
     "name_plural": "pattern scrolls (agility)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary speed and agility-enhancing effect.\"",
     "use_action": {
       "target": "scroll_spell_agile_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -858,8 +832,8 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (agility)",
-    "name_plural": "spellcrafts scroll (agility)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (agility)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "AGILITY", "is_strong": true },
@@ -871,7 +845,7 @@
     "type": "TOOL",
     "name": "pattern scroll (clairvoyance)",
     "name_plural": "pattern scrolls (clairvoyance)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an ivory halo, granting you sight beyond sight.\"",
     "use_action": {
       "target": "scroll_spell_clairvoyance_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -884,8 +858,8 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (clairvoyance)",
-    "name_plural": "spellcrafts scroll (clairvoyance)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (clairvoyance)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "CLAIRVOYANCE", "is_strong": true },
@@ -897,7 +871,7 @@
     "type": "TOOL",
     "name": "pattern scroll (clarity of blood)",
     "name_plural": "pattern scrolls (clarity of blood)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against parasites and the Mycus.\"",
     "use_action": {
       "target": "scroll_spell_clarity_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -910,8 +884,8 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (clarity of blood)",
-    "name_plural": "spellcrafts scroll (clarity of blood)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (clarity of blood)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "CLARITY", "is_strong": true },
@@ -923,7 +897,7 @@
     "type": "TOOL",
     "name": "pattern scroll (confuse monsters)",
     "name_plural": "pattern scrolls (confuse monster)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will stun all hostiles in the area around you.\"",
     "use_action": {
       "target": "scroll_spell_confusion_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -936,11 +910,37 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (confuse monsters)",
-    "name_plural": "spellcrafts scroll (confuse monsters)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (confuse monsters)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "CONFUSE", "is_strong": true },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "scroll_spell_acidspray",
+    "copy-from": "scroll_base",
+    "type": "TOOL",
+    "name": "pattern scroll (conjure acid)",
+    "name_plural": "pattern scrolls (conjure acid)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted.\"",
+    "use_action": {
+      "target": "scroll_spell_acidspray_on",
+      "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "scroll_spell_acidspray_on",
+    "copy-from": "scroll_base",
+    "type": "TOOL",
+    "name": "pattern scroll (acid spray)",
+    "name_plural": "pattern scrolls (acid spray)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "turns_per_charge": 1,
+    "revert_to": "scroll_blank",
+    "use_action": { "type": "mutagen", "mutation_category": "ACIDSPRAY", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -949,7 +949,7 @@
     "type": "TOOL",
     "name": "pattern scroll (flame armor)",
     "name_plural": "pattern scrolls (flame armor)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
     "use_action": {
       "target": "scroll_spell_flame_armor_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -962,8 +962,8 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (flame armor)",
-    "name_plural": "spellcrafts scroll (flame armor)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (flame armor)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "FLAMEARMOR", "is_strong": true },
@@ -975,7 +975,7 @@
     "type": "TOOL",
     "name": "pattern scroll (free action)",
     "name_plural": "pattern scrolls (free action)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against paralytic effects and other hindrances.\"",
     "use_action": {
       "target": "scroll_spell_free_action_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -988,8 +988,8 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (free action)",
-    "name_plural": "spellcrafts scroll (free action)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (free action)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "FREEACTION", "is_strong": true },
@@ -1001,7 +1001,7 @@
     "type": "TOOL",
     "name": "pattern scroll (healing)",
     "name_plural": "pattern scrolls (healing)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
     "use_action": {
       "target": "scroll_spell_heal_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1014,8 +1014,8 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (healing)",
-    "name_plural": "spellcrafts scroll (healing)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (healing)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "HEAL", "is_strong": true },
@@ -1027,7 +1027,7 @@
     "type": "TOOL",
     "name": "pattern scroll (insight)",
     "name_plural": "pattern scrolls (insight)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to perception.\"",
     "use_action": {
       "target": "scroll_spell_insight_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1040,11 +1040,89 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (insight)",
-    "name_plural": "spellcrafts scroll (insight)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (insight)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "INSIGHT", "is_strong": true },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "scroll_spell_elecresist",
+    "copy-from": "scroll_base",
+    "type": "TOOL",
+    "name": "pattern scroll (lightning ward)",
+    "name_plural": "pattern scrolls (lightning ward)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an amber halo, granting you resistance to lightning.\"",
+    "use_action": {
+      "target": "scroll_spell_elecresist_on",
+      "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "scroll_spell_elecresist_on",
+    "copy-from": "scroll_base",
+    "type": "TOOL",
+    "name": "pattern scroll (lightning ward)",
+    "name_plural": "pattern scrolls (lightning ward)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "turns_per_charge": 1,
+    "revert_to": "scroll_blank",
+    "use_action": { "type": "mutagen", "mutation_category": "ELECRESIST", "is_strong": true },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "scroll_spell_might",
+    "copy-from": "scroll_base",
+    "type": "TOOL",
+    "name": "pattern scroll (might)",
+    "name_plural": "pattern scrolls (might)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to strength.\"",
+    "use_action": {
+      "target": "scroll_spell_might_on",
+      "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "scroll_spell_might_on",
+    "copy-from": "scroll_base",
+    "type": "TOOL",
+    "name": "pattern scroll (might)",
+    "name_plural": "pattern scrolls (might)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "turns_per_charge": 1,
+    "revert_to": "scroll_blank",
+    "use_action": { "type": "mutagen", "mutation_category": "MIGHT", "is_strong": true },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "scroll_spell_plants",
+    "copy-from": "scroll_base",
+    "type": "TOOL",
+    "name": "pattern scroll (overgrowth)",
+    "name_plural": "pattern scrolls (overgrowth)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
+    "use_action": {
+      "target": "scroll_spell_plants_on",
+      "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
+      "active": true,
+      "type": "transform"
+    }
+  },
+  {
+    "id": "scroll_spell_plants_on",
+    "copy-from": "scroll_base",
+    "type": "TOOL",
+    "name": "pattern scroll (overgrowth)",
+    "name_plural": "pattern scrolls (overgrowth)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "turns_per_charge": 1,
+    "revert_to": "scroll_blank",
+    "use_action": { "type": "mutagen", "mutation_category": "OVERGROWTH", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1054,7 +1132,7 @@
     "type": "TOOL",
     "name": "pattern scroll (serpentine shield)",
     "name_plural": "pattern scrolls (serpentine shield)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will summon shadowy serpents to aid you.\"",
     "use_action": {
       "target": "scroll_spell_invis_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1068,89 +1146,11 @@
     "//": "ID retained to avoid breaking stuff.",
     "type": "TOOL",
     "name": "pattern scroll (serpentine shield)",
-    "name_plural": "spellcrafts scroll (serpentine shield)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (serpentine shield)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "INVIS", "is_strong": true },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "scroll_spell_elecresist",
-    "copy-from": "scroll_base",
-    "type": "TOOL",
-    "name": "pattern scroll (lightning ward)",
-    "name_plural": "pattern scrolls (lightning ward)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
-    "use_action": {
-      "target": "scroll_spell_elecresist_on",
-      "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_elecresist_on",
-    "copy-from": "scroll_base",
-    "type": "TOOL",
-    "name": "pattern scroll (lightning ward)",
-    "name_plural": "spellcrafts scroll (lightning ward)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
-    "turns_per_charge": 1,
-    "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "ELECRESIST", "is_strong": true },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "scroll_spell_might",
-    "copy-from": "scroll_base",
-    "type": "TOOL",
-    "name": "pattern scroll (might)",
-    "name_plural": "pattern scrolls (might)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
-    "use_action": {
-      "target": "scroll_spell_might_on",
-      "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_might_on",
-    "copy-from": "scroll_base",
-    "type": "TOOL",
-    "name": "pattern scroll (might)",
-    "name_plural": "spellcrafts scroll (might)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
-    "turns_per_charge": 1,
-    "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "MIGHT", "is_strong": true },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "scroll_spell_plants",
-    "copy-from": "scroll_base",
-    "type": "TOOL",
-    "name": "pattern scroll (overgrowth)",
-    "name_plural": "pattern scrolls (overgrowth)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
-    "use_action": {
-      "target": "scroll_spell_plants_on",
-      "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_plants_on",
-    "copy-from": "scroll_base",
-    "type": "TOOL",
-    "name": "pattern scroll (overgrowth)",
-    "name_plural": "spellcrafts scroll (overgrowth)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
-    "turns_per_charge": 1,
-    "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "OVERGROWTH", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1159,7 +1159,7 @@
     "type": "TOOL",
     "name": "pattern scroll (shockstorm)",
     "name_plural": "pattern scrolls (shockstorm)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, harming any hostiles that are close enough.\"",
     "use_action": {
       "target": "scroll_spell_lightning_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1172,8 +1172,8 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (shockstorm)",
-    "name_plural": "spellcrafts scroll (shockstorm)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (shockstorm)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "LIGHTNING", "is_strong": true },
@@ -1185,7 +1185,7 @@
     "type": "TOOL",
     "name": "pattern scroll (ward against evil)",
     "name_plural": "pattern scrolls (ward against evil)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
     "use_action": {
       "target": "scroll_spell_cleric_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1198,8 +1198,8 @@
     "copy-from": "scroll_base",
     "type": "TOOL",
     "name": "pattern scroll (ward against evil)",
-    "name_plural": "spellcrafts scroll (ward against evil)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
+    "name_plural": "pattern scrolls (ward against evil)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "CLERIC", "is_strong": true },
