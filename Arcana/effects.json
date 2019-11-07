@@ -167,6 +167,19 @@
   },
   {
     "type": "effect_type",
+    "id": "cold_ward_true",
+    "name": [ "Greater Ward Against Cold" ],
+    "desc": [ "Protection against the effects of cold, and any sources of direct damage." ],
+    "remove_message": "For a moment you feel a terrible chill in the air, as the greater ward against cold fades.",
+    "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+    "decay_messages": [ [ "Your greater ward against cold is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": "1 m",
+    "flags": [ "EFFECT_COLD_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
     "id": "free_action",
     "name": [ "Free Action" ],
     "desc": [ "Protection against paralytic and other hindering effects." ],
