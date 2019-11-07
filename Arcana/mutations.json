@@ -337,7 +337,7 @@
     "id": "SPELL_CONFUSE",
     "name": "Magic Sign: Confuse Monster",
     "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can confuse nearby monsters.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "Powers from beyond have granted you a power that can confuse nearby monsters.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "category": [ "CONFUSE" ],
@@ -354,6 +354,18 @@
     "purifiable": false,
     "category": [ "ACIDSPRAY" ],
     "spells_learned": [ [ "arcana_magic_conjure_acid", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CONSECRATE_LESSER",
+    "name": "Magic Sign: Consecrate",
+    "points": 8,
+    "description": "Powers from beyond have granted you the power to subvert otherworldly influences on the environment, within your immediate surroundings.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "CONFUSE" ],
+    "changes_to": [ "SPELL_CONSECRATE" ],
+    "spells_learned": [ [ "arcana_magic_consecrate", 1 ] ]
   },
   {
     "type": "mutation",
@@ -378,6 +390,16 @@
   },
   {
     "type": "mutation",
+    "id": "SPELL_ELEMENTALBURST",
+    "name": "Magic Sign: Elemental Burst",
+    "points": 7,
+    "description": "Powers from beyond have granted you the power to conjure chaotic magic, blasting foes with elemental force.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_elemental_burst", 1 ] ]
+  },
+  {
+    "type": "mutation",
     "id": "SPELL_FLAMEARMOR",
     "name": "Magic Sign: Flame Armor",
     "points": 5,
@@ -387,6 +409,17 @@
     "category": [ "FLAMEARMOR" ],
     "changes_to": [ "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_flame_armor", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_FROSTARMOR_LESSER",
+    "name": "Magic Sign: Frost Armor",
+    "points": 5,
+    "description": "Powers from beyond have granted you power, that can grant temporary resistance to the cold.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "changes_to": [ "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
+    "spells_learned": [ [ "arcana_magic_frost_armor", 1 ] ]
   },
   {
     "type": "mutation",
@@ -525,6 +558,16 @@
     "purifiable": false,
     "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUNDERINGQUAKE",
+    "name": "Magic Sign: Sundering Quake",
+    "points": 4,
+    "description": "Powers from beyond have granted you the power to topple structures, and bury them in rubble.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_sundering_quake", 1 ] ]
   },
   {
     "type": "mutation",
@@ -711,7 +754,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_PACIFY" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK", "SPELL_CONSECRATE_LESSER" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_consecrate", 1 ] ],

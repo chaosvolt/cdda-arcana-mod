@@ -2203,7 +2203,7 @@
     "base_energy_cost": 90,
     "final_energy_cost": 72,
     "energy_increment": -1.8,
-    "spell_class": "SPELL_CONSECRATE"
+    "spell_class": "SPELL_CONSECRATE_LESSER"
   },
   {
     "id": "arcana_magic_dampening",
@@ -2294,13 +2294,12 @@
     "type": "SPELL",
     "name": "Sign: Frost Armor",
     "description": "Magic Sign\nUsing this spell will protect against the cold, and all its side effects.  It can be used on yourself or an ally.",
-    "message": "\"I am that which protects, offering mercy against bitter winds...\"  You cast %s!",
+    "message": "\"I am that which protects, offering mercy in troubled times...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
     "effect": "target_attack",
     "effect_str": "cold_ward",
     "energy_source": "FATIGUE",
-    "//difficulty": 5,
     "min_range": 1,
     "max_range": 10,
     "range_increment": 0.9,
@@ -2314,7 +2313,7 @@
     "min_duration": 30000,
     "max_duration": 150000,
     "duration_increment": 12000,
-    "spell_class": "SPELL_FROSTARMOR"
+    "spell_class": "SPELL_FROSTARMOR_LESSER"
   },
   {
     "id": "arcana_magic_free_action",
