@@ -31,7 +31,8 @@
       "SPELL_LIGHT",
       "SPELL_SHADOWSNAKES",
       "SPELL_STRENGTH",
-      "SPELL_SUMMONDOG"
+      "SPELL_SUMMONDOG",
+      "MARTIAL_ARTS_CF"
     ]
   },
   {
@@ -70,7 +71,8 @@
       "SPELL_LIGHT",
       "SPELL_LOCKPICK",
       "SPELL_POISONARMOR",
-      "SPELL_STRENGTH"
+      "SPELL_STRENGTH",
+      "MARTIAL_ARTS_CF"
     ],
     "flags": [ "CITY_START", "LONE_START" ]
   },

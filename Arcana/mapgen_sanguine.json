@@ -3,16 +3,18 @@
     "id": "sanguine_cult_books",
     "type": "item_group",
     "items": [
-      [ "plays_book", 4 ],
-      [ "poetry_book", 4 ],
-      [ "philosophy_book", 2 ],
-      [ "novel_drama", 1 ],
-      [ "essay_book", 2 ],
-      [ "cookbook_human", 1 ],
-      [ "textbook_speech", 1 ],
-      [ "book_bloodmagic", 12 ],
-      [ "book_summoning", 2 ],
-      [ "book_potioncraft", 4 ]
+      [ "poetry_book", 10 ],
+      [ "novel_drama", 10 ],
+      [ "essay_book", 10 ],
+      [ "plays_book", 5 ],
+      [ "philosophy_book", 5 ],
+      [ "cookbook_human", 5 ],
+      [ "textbook_speech", 5 ],
+      [ "book_bloodmagic", 25 ],
+      [ "book_potioncraft", 15 ],
+      [ "book_summoning", 10 ],
+      [ "manual_silat", 3 ],
+      [ "manual_dragon", 2 ]
     ]
   },
   {

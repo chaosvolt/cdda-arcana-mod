@@ -140,6 +140,7 @@
       [ "SKIN_MEDIUM", 100 ],
       [ "hair_black_medium", 100 ],
       [ "PROF_CLEANSINGFLAME", 100 ],
+      [ "MARTIAL_ARTS_CF", 100 ],
       [ "SPIRITUAL", 100 ],
       [ "TERRIFYING", 100 ],
       [ "TRIGGERHAPPY", 100 ],
@@ -207,7 +208,8 @@
       { "group": "Appearance_cleansingflame" },
       { "group": "Mage_Hunter_starting_traits" },
       { "group": "BG_survival_story_MAGE_HUNTER" },
-      [ "PROF_CLEANSINGFLAME", 100 ]
+      [ "PROF_CLEANSINGFLAME", 100 ],
+      [ "MARTIAL_ARTS_CF", 25 ]
     ]
   },
   {

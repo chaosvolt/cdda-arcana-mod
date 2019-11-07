@@ -3,14 +3,15 @@
     "id": "chalice_cult_books",
     "type": "item_group",
     "items": [
-      [ "essay_book", 6 ],
-      [ "poetry_book", 6 ],
-      [ "plays_book", 3 ],
-      [ "philosophy_book", 2 ],
-      [ "novel_experimental", 1 ],
-      [ "book_sacrifice", 14 ],
-      [ "book_summoning", 2 ],
-      [ "book_scrollcraft", 4 ]
+      [ "essay_book", 10 ],
+      [ "poetry_book", 10 ],
+      [ "plays_book", 10 ],
+      [ "philosophy_book", 10 ],
+      [ "novel_experimental", 10 ],
+      [ "book_sacrifice", 25 ],
+      [ "book_summoning", 10 ],
+      [ "book_scrollcraft", 10 ],
+      [ "manual_sojutsu", 5 ]
     ]
   },
   {

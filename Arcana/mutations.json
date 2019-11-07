@@ -108,10 +108,21 @@
     "id": "FIX_CF_GM",
     "name": "Fix Jonathan",
     "points": 0,
-    "description": "This trait ensures that old versions of this NPC, on being able to access the mission chain, only versions citing the correct starter mission will be able to offer missions.  The old versions cited the wrong initial mission, turning what was supposed to be a clever compatability feature into a terrible mistake.",
+    "description": "This trait ensures that old versions of this NPC, on being able to access the mission chain, only versions citing the correct starter mission will be able to offer missions.  The old versions cited the wrong initial mission, turning what was supposed to be a clever compatibility feature into a terrible mistake.",
     "player_display": false,
     "valid": false,
     "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "MARTIAL_ARTS_CF",
+    "name": "Path of Sword and Hammer",
+    "points": 3,
+    "description": "You have been trained in Via Gladium et Malleo, a weapon art focused on preserving momentum and fighting multiple opponents, using your fury in different ways depending on your weapon of choice.",
+    "starting_trait": true,
+    "initial_ma_styles": [ "style_cleansingflame" ],
+    "changes_to": [ "PROF_SANGUINE", "PROF_CHALICE" ],
+    "valid": false
   },
   {
     "type": "mutation",
@@ -1575,8 +1586,8 @@
     "valid": false,
     "purifiable": false,
     "profession": true,
-    "//": "This prevents blood mages from picking a spell considered potentially too altruistic in nature.",
-    "cancels": [ "SPELL_HEAL" ]
+    "//": "This prevents blood mages from picking a spell considered potentially too altruistic in nature, or from choosing a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
+    "cancels": [ "SPELL_HEAL", "MARTIAL_ARTS_CF" ]
   },
   {
     "type": "mutation",
@@ -1586,7 +1597,9 @@
     "description": "You were sworn into an order known as the Keepers of The Oath.  Whether or not He From Beyond The Veil still guides you, the oath you swore is eternal, and your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
-    "profession": true
+    "profession": true,
+    "//": "This prevents dark priests from picking a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
+    "cancels": [ "MARTIAL_ARTS_CF" ]
   },
   {
     "type": "mutation",
