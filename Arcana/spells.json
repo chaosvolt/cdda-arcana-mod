@@ -111,6 +111,164 @@
     "field_intensity_variance": 0.25
   },
   {
+    "type": "SPELL",
+    "id": "arcana_aftermath_eclipse_darkness",
+    "name": "Eclipse Darkness",
+    "description": "Up to 3 hours of darkness.",
+    "valid_targets": [ "self" ],
+    "effect": "timed_event",
+    "effect_str": "dim",
+    "max_level": 10,
+    "min_duration": 540000,
+    "max_duration": 1080000,
+    "duration_increment": 54000
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_aftermath_eclipse_fatigue",
+    "name": "Eclipse Fatigue",
+    "description": "Basically the artifact effect, except it will show up just about anywhere in the reality bubble.  Expect anything...",
+    "valid_targets": [ "ground", "self", "ally", "hostile" ],
+    "effect": "target_attack",
+    "field_id": "fd_fatigue",
+    "field_chance": 2,
+    "min_field_intensity": 2,
+    "max_field_intensity": 2,
+    "field_intensity_variance": 0.5,
+    "min_range": 60,
+    "max_range": 60,
+    "flags": [ "RANDOM_TARGET" ]
+  },
+  {
+    "id": "arcana_aftermath_eclipse_halo",
+    "type": "SPELL",
+    "name": "Eclipse Halo",
+    "description": "Adds a standard lifedrain halo.",
+    "valid_targets": [ "self" ],
+    "effect": "spawn_item",
+    "effect_str": "halo_lifedrain",
+    "max_level": 10,
+    "min_duration": 180000,
+    "max_duration": 360000,
+    "duration_increment": 18000
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_aftermath_eclipse_wonder",
+    "name": "Eclipse Wonder",
+    "description": "Summons 1d5 legit nether monsters.  Unlike most summon spells, these are 100% fresh interlopers from Beyond.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "effect": "none",
+    "flags": [ "WONDER", "SILENT", "RANDOM_DAMAGE" ],
+    "min_damage": 1,
+    "max_damage": 5,
+    "extra_effects": [
+      { "id": "arcana_aftermath_eclipse_wonder_gracke" },
+      { "id": "arcana_aftermath_eclipse_wonder_gelatin" },
+      { "id": "arcana_aftermath_eclipse_wonder_kreck" },
+      { "id": "arcana_aftermath_eclipse_wonder_mi_go" },
+      { "id": "arcana_aftermath_eclipse_wonder_flaming_eye" },
+      { "id": "arcana_aftermath_eclipse_wonder_flying_polyp" }
+    ]
+  },
+  {
+    "id": "arcana_aftermath_eclipse_wonder_gracke",
+    "type": "SPELL",
+    "name": "Eclipse Gracken",
+    "description": "An interloper!",
+    "valid_targets": [ "ground" ],
+    "flags": [ "PERMANENT", "RANDOM_TARGET" ],
+    "effect": "summon",
+    "effect_str": "mon_gracke",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_duration": 1000
+    "max_duration": 1000
+  },
+  {
+    "id": "arcana_aftermath_eclipse_wonder_gelatin",
+    "type": "SPELL",
+    "name": "Eclipse Amoebic Mold",
+    "description": "Blobby interloper!",
+    "valid_targets": [ "ground" ],
+    "flags": [ "PERMANENT", "RANDOM_TARGET" ],
+    "effect": "summon",
+    "effect_str": "mon_gelatin",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_duration": 1000
+    "max_duration": 1000
+  },
+  {
+    "id": "arcana_aftermath_eclipse_wonder_kreck",
+    "type": "SPELL",
+    "name": "Eclipse Kreck",
+    "description": "Smol interloper!",
+    "valid_targets": [ "ground" ],
+    "flags": [ "PERMANENT", "RANDOM_TARGET" ],
+    "effect": "summon",
+    "effect_str": "mon_kreck",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_duration": 1000
+    "max_duration": 1000
+  },
+  {
+    "id": "arcana_aftermath_eclipse_wonder_mi_go",
+    "type": "SPELL",
+    "name": "Eclipse Mi-go",
+    "description": "Intruso, no tu amigo.",
+    "valid_targets": [ "ground" ],
+    "flags": [ "PERMANENT", "RANDOM_TARGET" ],
+    "effect": "summon",
+    "effect_str": "mon_mi_go",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_duration": 1000
+    "max_duration": 1000
+  },
+  {
+    "id": "arcana_aftermath_eclipse_wonder_flaming_eye",
+    "type": "SPELL",
+    "name": "Eclipse Flaming Eye",
+    "description": "Also an interloper, and probably the most !!FUN!! kind.",
+    "valid_targets": [ "ground" ],
+    "flags": [ "PERMANENT", "RANDOM_TARGET" ],
+    "effect": "summon",
+    "effect_str": "mon_flaming_eye",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_duration": 1000
+    "max_duration": 1000
+  },
+  {
+    "id": "arcana_aftermath_eclipse_wonder_flying_polyp",
+    "type": "SPELL",
+    "name": "Eclipse Flying Polyp",
+    "description": "Watch it probably roll this effect five times in a row...",
+    "valid_targets": [ "ground" ],
+    "flags": [ "PERMANENT", "RANDOM_TARGET" ],
+    "effect": "summon",
+    "effect_str": "mon_flying_polyp",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_duration": 1000
+    "max_duration": 1000
+  },
+  {
     "id": "arcana_sign_elemental_burst_water",
     "type": "SPELL",
     "name": "Elemental Burst Water",
@@ -2203,7 +2361,7 @@
     "base_energy_cost": 90,
     "final_energy_cost": 72,
     "energy_increment": -1.8,
-    "spell_class": "SPELL_CONSECRATE_LESSER"
+    "spell_class": "SPELL_CONSECRATELESSER"
   },
   {
     "id": "arcana_magic_dampening",
@@ -2228,6 +2386,34 @@
     "max_duration": 180000,
     "duration_increment": 12000,
     "spell_class": "SPELL_DAMPENING"
+  },
+  {
+    "id": "arcana_magic_eclipse",
+    "type": "SPELL",
+    "name": "Sign: Eclipse",
+    "description": "Magic Sign\nUsing this spell will inflict a shallow wound in The Veil, bringing forth monsters and darkness in exchange for a temporary boost of raw power with which to stalk the night.",
+    "message": "\"I am that which stands defiant, the finite made infinite...\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
+    "effect": "target_attack",
+    "effect_str": "spell_eclipse",
+    "extra_effects": [
+      { "id": "arcana_aftermath_eclipse_darkness", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_eclipse_wonder", "hit_self": false },
+      { "id": "arcana_aftermath_eclipse_fatigue", "hit_self": false }
+    ],
+    "energy_source": "FATIGUE",
+    "max_level": 10,
+    "base_casting_time": 400,
+    "final_casting_time": 300,
+    "casting_time_increment": -10,
+    "base_energy_cost": 100,
+    "final_energy_cost": 80,
+    "energy_increment": -2,
+    "min_duration": 270000,
+    "max_duration": 540000,
+    "duration_increment": 27000,
+    "spell_class": "SPELL_ECLIPSE"
   },
   {
     "id": "arcana_magic_elemental_burst",
@@ -2313,7 +2499,7 @@
     "min_duration": 30000,
     "max_duration": 150000,
     "duration_increment": 12000,
-    "spell_class": "SPELL_FROSTARMOR_LESSER"
+    "spell_class": "SPELL_FROSTARMORLESSER"
   },
   {
     "id": "arcana_magic_free_action",
@@ -2649,6 +2835,37 @@
     "final_energy_cost": 40,
     "energy_increment": -1,
     "spell_class": "SPELL_SUNDERINGQUAKE"
+  },
+  {
+    "id": "arcana_magic_summon_giant_centipedes",
+    "type": "SPELL",
+    "name": "Sign: Summon Centipedes",
+    "description": "Magic Sign\nUsing this spell will summon mutated vermin, which will be loyal but not permanent.",
+    "message": "\"I am that which is grim yet necessary, for there is no life without death...\"  You cast %s!",
+    "valid_targets": [ "ground" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL" ],
+    "effect": "summon",
+    "effect_str": "mon_centipede_giant_summoned",
+    "energy_source": "FATIGUE",
+    "max_level": 10,
+    "min_damage": 1,
+    "max_damage": 3,
+    "damage_increment": 0.2,
+    "min_range": 3,
+    "max_range": 8,
+    "range_increment": 0.5,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "base_casting_time": 280,
+    "final_casting_time": 210,
+    "casting_time_increment": -7,
+    "base_energy_cost": 70,
+    "final_energy_cost": 56,
+    "energy_increment": -1.4,
+    "min_duration": 2160000,
+    "max_duration": 6480000,
+    "duration_increment": 432000,
+    "spell_class": "SPELL_BUGSLESSER"
   },
   {
     "id": "arcana_magic_summon_skeletal_dog",

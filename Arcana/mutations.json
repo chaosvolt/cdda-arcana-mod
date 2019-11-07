@@ -357,7 +357,7 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_CONSECRATE_LESSER",
+    "id": "SPELL_CONSECRATELESSER",
     "name": "Magic Sign: Consecrate",
     "points": 8,
     "description": "Powers from beyond have granted you the power to subvert otherworldly influences on the environment, within your immediate surroundings.  (( Remember to bind the \"spellcasting\" key! ))",
@@ -390,6 +390,17 @@
   },
   {
     "type": "mutation",
+    "id": "SPELL_ECLIPSE",
+    "name": "Magic Sign: Eclipse",
+    "points": 9,
+    "description": "Powers from beyond have granted you the power to bring forth wicked omens, gaining a temporary surge of power in exchange for permanent scars upon the land.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
+    "spells_learned": [ [ "arcana_magic_eclipse", 1 ] ]
+  },
+  {
+    "type": "mutation",
     "id": "SPELL_ELEMENTALBURST",
     "name": "Magic Sign: Elemental Burst",
     "points": 7,
@@ -412,7 +423,7 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_FROSTARMOR_LESSER",
+    "id": "SPELL_FROSTARMORLESSER",
     "name": "Magic Sign: Frost Armor",
     "points": 5,
     "description": "Powers from beyond have granted you power, that can grant temporary resistance to the cold.  (( Remember to bind the \"spellcasting\" key! ))",
@@ -547,6 +558,17 @@
     "category": [ "LIGHTNING" ],
     "changes_to": [ "SPELL_LIGHTNING2", "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "spells_learned": [ [ "arcana_magic_shockstorm", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_BUGSLESSER",
+    "name": "Magic Sign: Summon Centipedes",
+    "points": 6,
+    "description": "Powers from beyond have granted you the power to summon scuttling abominations.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
+    "spells_learned": [ [ "arcana_magic_summon_giant_centipedes", 1 ] ]
   },
   {
     "type": "mutation",
@@ -754,7 +776,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_PACIFY" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK", "SPELL_CONSECRATE_LESSER" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK", "SPELL_CONSECRATELESSER" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_consecrate", 1 ] ],
@@ -1015,7 +1037,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_FLAMEARMOR2" ],
     "changes_to": [ "SPELL_PSYSHIELD" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_FROSTARMORLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_cold", 1 ] ],
@@ -1030,7 +1052,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_FROSTARMOR" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_CLERIC" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_CLERIC", "SPELL_FROSTARMORLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_holy_ward", 1 ] ],
@@ -1107,7 +1129,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONTHING" ],
     "changes_to": [ "SPELL_SUMMONVORTEX" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_giant_centipedes", 1 ] ],
@@ -1122,7 +1144,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_BUGS" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_vortices", 1 ] ],
@@ -1530,7 +1552,7 @@
     "purifiable": false,
     "profession": true,
     "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
-    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_CLARITY" ]
+    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER", "SPELL_CLARITY", "SPELL_ECLIPSE" ]
   },
   {
     "type": "mutation",
@@ -1542,7 +1564,7 @@
     "purifiable": false,
     "profession": true,
     "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
-    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_CLARITY" ]
+    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER", "SPELL_CLARITY", "SPELL_ECLIPSE" ]
   },
   {
     "type": "mutation",
