@@ -334,7 +334,7 @@
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": "1 m",
-    "scaling_mods": { "per_mod": [ 8 ] },
+    "base_mods": { "per_mod": [ 8 ] },
     "flags": [ "EFFECT_NIGHT_VISION" ]
   },
   {
