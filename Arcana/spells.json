@@ -3300,12 +3300,12 @@
     "id": "arcana_pattern_consecrate",
     "name": "Pattern: Consecrate",
     "effect": "mutate",
-    "effect_str": "SPELL_CONSECRATELESSER",
+    "effect_str": "CONSECRATELESSER",
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, resembling rays of light shrouded in wings...",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "SILENT" ],
     "valid_targets": [ "self" ]
   },
   {
@@ -3313,12 +3313,12 @@
     "id": "arcana_pattern_frost_armor",
     "name": "Pattern: Frost Armor",
     "effect": "mutate",
-    "effect_str": "SPELL_FROSTARMORLESSER",
+    "effect_str": "FROSTARMORLESSER",
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, constellations of alien skies...",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "SILENT" ],
     "valid_targets": [ "self" ]
   },
   {
@@ -3326,12 +3326,12 @@
     "id": "arcana_pattern_eclipse",
     "name": "Pattern: Eclipse",
     "effect": "mutate",
-    "effect_str": "SPELL_ECLIPSE",
+    "effect_str": "ECLIPSE",
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, symbols fading into incomprehensible motifs...",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "SILENT" ],
     "valid_targets": [ "self" ]
   },
   {
@@ -3339,12 +3339,12 @@
     "id": "arcana_pattern_elemental_burst",
     "name": "Pattern: Elemental Burst",
     "effect": "mutate",
-    "effect_str": "SPELL_ELEMENTALBURST",
+    "effect_str": "ELEMENTALBURST",
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, stirring strange instinctive responses in the back of your mind...",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "SILENT" ],
     "valid_targets": [ "self" ]
   },
   {
@@ -3352,12 +3352,12 @@
     "id": "arcana_pattern_summon_giant_centipedes",
     "name": "Pattern: Summon Centipedes",
     "effect": "mutate",
-    "effect_str": "SPELL_BUGSLESSER",
+    "effect_str": "BUGSLESSER",
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, strange linear patterns giving way to more organic motifs...",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "SILENT" ],
     "valid_targets": [ "self" ]
   },
   {
@@ -3365,12 +3365,12 @@
     "id": "arcana_pattern_sundering_quake",
     "name": "Pattern: Sundering Quake",
     "effect": "mutate",
-    "effect_str": "SPELL_SUNDERINGQUAKE",
+    "effect_str": "SUNDERINGQUAKE",
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms...",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "SILENT" ],
     "valid_targets": [ "self" ]
   },
   {

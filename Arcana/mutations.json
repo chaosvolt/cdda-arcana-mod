@@ -126,20 +126,20 @@
   },
   {
     "type": "mutation",
-    "id": "THRESH_ACIDSPRAY",
-    "name": "Spellcraft Threshold",
+    "id": "THRESH_AGILITY",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
   },
   {
     "type": "mutation",
-    "id": "THRESH_AGILITY",
-    "name": "Spellcraft Threshold",
+    "id": "THRESH_BUGSLESSER",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -147,9 +147,9 @@
   {
     "type": "mutation",
     "id": "THRESH_CLAIRVOYANCE",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -157,9 +157,19 @@
   {
     "type": "mutation",
     "id": "THRESH_CLARITY",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_CONSECRATELESSER",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -167,9 +177,39 @@
   {
     "type": "mutation",
     "id": "THRESH_CONFUSE",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_ACIDSPRAY",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_ECLIPSE",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_ELEMENTALBURST",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -177,9 +217,19 @@
   {
     "type": "mutation",
     "id": "THRESH_FLAMEARMOR",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_FROSTARMORLESSER",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -187,9 +237,9 @@
   {
     "type": "mutation",
     "id": "THRESH_FREEACTION",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -197,9 +247,9 @@
   {
     "type": "mutation",
     "id": "THRESH_HEAL",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -207,9 +257,9 @@
   {
     "type": "mutation",
     "id": "THRESH_INSIGHT",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -217,9 +267,9 @@
   {
     "type": "mutation",
     "id": "THRESH_INVIS",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -227,9 +277,9 @@
   {
     "type": "mutation",
     "id": "THRESH_ELECRESIST",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -237,9 +287,9 @@
   {
     "type": "mutation",
     "id": "THRESH_MIGHT",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -247,9 +297,9 @@
   {
     "type": "mutation",
     "id": "THRESH_OVERGROWTH",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -257,9 +307,19 @@
   {
     "type": "mutation",
     "id": "THRESH_LIGHTNING",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_SUNDERINGQUAKE",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -267,9 +327,9 @@
   {
     "type": "mutation",
     "id": "THRESH_CLERIC",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -374,7 +434,7 @@
     "description": "Powers from beyond have granted you the power to subvert otherworldly influences on the environment, within your immediate surroundings.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "CONFUSE" ],
+    "category": [ "CONSECRATELESSER" ],
     "changes_to": [ "SPELL_CONSECRATE" ],
     "spells_learned": [ [ "arcana_magic_consecrate", 1 ] ]
   },

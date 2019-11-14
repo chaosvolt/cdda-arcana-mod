@@ -49,20 +49,6 @@
     "memorial_message": "Learned from the Sacrament."
   },
   {
-    "id": "ACIDSPRAY",
-    "type": "mutation_category",
-    "category": "ACIDSPRAY",
-    "threshold_mut": "THRESH_ACIDSPRAY",
-    "name": "Learned Acid Spray",
-    "mutagen_fatigue": 0,
-    "mutagen_hunger": 0,
-    "mutagen_pain": 0,
-    "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, dizzying orbital diagrams almost resembling a model of some complex chemical compound...",
-    "iv_message": "If you can read this, this is probably a bug.",
-    "memorial_message": "Learned a spell."
-  },
-  {
     "id": "AGILITY",
     "type": "mutation_category",
     "category": "AGILITY",
@@ -115,6 +101,48 @@
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
     "mutagen_message": "You gaze deep into the patterns on the scroll, a ring of unearthly calligraphy giving way to inhuman imagery...",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned a spell."
+  },
+  {
+    "id": "CONSECRATELESSER",
+    "type": "mutation_category",
+    "category": "CONSECRATELESSER",
+    "threshold_mut": "THRESH_CONSECRATELESSER",
+    "name": "Learned Consecrate",
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+    "mutagen_message": "If you can read this, this is probably a bug.",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned a spell."
+  },
+  {
+    "id": "ECLIPSE",
+    "type": "mutation_category",
+    "category": "ECLIPSE",
+    "threshold_mut": "THRESH_ECLIPSE",
+    "name": "Learned Eclipse",
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+    "mutagen_message": "If you can read this, this is probably a bug.",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned a spell."
+  },
+  {
+    "id": "ELEMENTALBURST",
+    "type": "mutation_category",
+    "category": "ELEMENTALBURST",
+    "threshold_mut": "THRESH_ELEMENTALBURST",
+    "name": "Learned Elemental Burst",
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -175,20 +203,6 @@
     "memorial_message": "Learned a spell."
   },
   {
-    "id": "INVIS",
-    "type": "mutation_category",
-    "category": "INVIS",
-    "threshold_mut": "THRESH_INVIS",
-    "name": "Learned Serpentine Shield",
-    "mutagen_fatigue": 0,
-    "mutagen_hunger": 0,
-    "mutagen_pain": 0,
-    "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, coiled serpentine lines winding into endless ouroboros motifs...",
-    "iv_message": "If you can read this, this is probably a bug.",
-    "memorial_message": "Learned a spell."
-  },
-  {
     "id": "ELECRESIST",
     "type": "mutation_category",
     "category": "ELECRESIST",
@@ -231,6 +245,20 @@
     "memorial_message": "Learned a spell."
   },
   {
+    "id": "INVIS",
+    "type": "mutation_category",
+    "category": "INVIS",
+    "threshold_mut": "THRESH_INVIS",
+    "name": "Learned Serpentine Shield",
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+    "mutagen_message": "You gaze deep into the patterns on the scroll, coiled serpentine lines winding into endless ouroboros motifs...",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned a spell."
+  },
+  {
     "id": "LIGHTNING",
     "type": "mutation_category",
     "category": "LIGHTNING",
@@ -241,6 +269,34 @@
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
     "mutagen_message": "You gaze deep into the patterns on the scroll, irregular jagged artwork folding in on itself...",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned a spell."
+  },
+  {
+    "id": "BUGSLESSER",
+    "type": "mutation_category",
+    "category": "BUGSLESSER",
+    "threshold_mut": "THRESH_BUGSLESSER",
+    "name": "Learned Summon Centipedes",
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+    "mutagen_message": "If you can read this, this is probably a bug.",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned a spell."
+  },
+  {
+    "id": "SUNDERINGQUAKE",
+    "type": "mutation_category",
+    "category": "SUNDERINGQUAKE",
+    "threshold_mut": "THRESH_SUNDERINGQUAKE",
+    "name": "Learned Sundering Quake",
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
