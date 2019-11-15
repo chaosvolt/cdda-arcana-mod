@@ -3301,6 +3301,9 @@
     "name": "Pattern: Consecrate",
     "effect": "mutate",
     "effect_str": "CONSECRATELESSER",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, resembling rays of light shrouded in wings...",
     "min_damage": 10000,
@@ -3314,6 +3317,9 @@
     "name": "Pattern: Frost Armor",
     "effect": "mutate",
     "effect_str": "FROSTARMORLESSER",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, constellations of alien skies...",
     "min_damage": 10000,
@@ -3327,6 +3333,9 @@
     "name": "Pattern: Eclipse",
     "effect": "mutate",
     "effect_str": "ECLIPSE",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, symbols fading into incomprehensible motifs...",
     "min_damage": 10000,
@@ -3340,6 +3349,9 @@
     "name": "Pattern: Elemental Burst",
     "effect": "mutate",
     "effect_str": "ELEMENTALBURST",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, stirring strange instinctive responses in the back of your mind...",
     "min_damage": 10000,
@@ -3353,6 +3365,9 @@
     "name": "Pattern: Summon Centipedes",
     "effect": "mutate",
     "effect_str": "BUGSLESSER",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, strange linear patterns giving way to more organic motifs...",
     "min_damage": 10000,
@@ -3366,6 +3381,9 @@
     "name": "Pattern: Sundering Quake",
     "effect": "mutate",
     "effect_str": "SUNDERINGQUAKE",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms...",
     "min_damage": 10000,
