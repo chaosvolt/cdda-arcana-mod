@@ -135,6 +135,24 @@
     ]
   },
   {
+    "type": "ter_furn_transform",
+    "id": "arcana_sundering_quake",
+    "fail_message": "The earth remains still.",
+    "terrain": [
+      {
+        "result": [ [ "t_dirt", 50 ], [ "t_dirtmound", 50 ], [ "t_pit_shallow", 1 ] ],
+        "valid_flags": [ "DIGGABLE", "FLAT" ],
+        "message": "The ground shifts."
+      }
+     ],
+    "furniture": [
+      {
+        "result": [ [ "f_null", 50 ], [ "f_rubble_rock", 20 ], [ "f_boulder_small", 20 ], [ "f_boulder_medium", 5 ], [ "f_boulder_large", 5 ] ],
+        "valid_furniture": [ "f_null" ]
+      }
+    ]
+  },
+  {
     "type": "mapgen",
     "update_mapgen_id": "arcana_dummy",
     "method": "json",

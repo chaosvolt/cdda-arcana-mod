@@ -167,6 +167,19 @@
   },
   {
     "type": "effect_type",
+    "id": "cold_ward_true",
+    "name": [ "Greater Ward Against Cold" ],
+    "desc": [ "Protection against the effects of cold, and any sources of direct damage." ],
+    "remove_message": "For a moment you feel a terrible chill in the air, as the greater ward against cold fades.",
+    "removes_effects": [ "cold", "frostbite", "frostbite_recovery" ],
+    "decay_messages": [ [ "Your greater ward against cold is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": "1 m",
+    "flags": [ "EFFECT_COLD_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
     "id": "free_action",
     "name": [ "Free Action" ],
     "desc": [ "Protection against paralytic and other hindering effects." ],
@@ -336,6 +349,30 @@
     "int_dur_factor": "1 m",
     "base_mods": { "per_mod": [ 8 ] },
     "flags": [ "EFFECT_NIGHT_VISION" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "spell_eclipse",
+    "name": [ "Eclipse" ],
+    "desc": [
+      "Unholy power fuels you, strengthening your body with an unnatural adrenaline surge."
+    ],
+    "remove_message": "You feel numb, hit with the sheer weight of the unnatural magic fading.",
+    "decay_messages": [ [ "The blessing of the eclipse is waning.", "bad" ] ],
+    "blocks_effects": [ "bleed", "winded", "lack_sleep", "sleep" ],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": "1 m",
+    "base_mods": {
+      "pain_tick": [ 10 ],
+      "pain_min": [ -5 ],
+      "int_mod": [ -4 ],
+      "per_mod": [ 4 ],
+      "speed_mod": [ 30 ],
+      "stamina_min": [ 100 ],
+      "fatigue_min": [ 1 ],
+      "fatigue_tick": [ 300 ]
+    }
   },
   {
     "type": "effect_type",

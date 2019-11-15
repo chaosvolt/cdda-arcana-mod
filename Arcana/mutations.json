@@ -126,20 +126,20 @@
   },
   {
     "type": "mutation",
-    "id": "THRESH_ACIDSPRAY",
-    "name": "Spellcraft Threshold",
+    "id": "THRESH_AGILITY",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
   },
   {
     "type": "mutation",
-    "id": "THRESH_AGILITY",
-    "name": "Spellcraft Threshold",
+    "id": "THRESH_BUGSLESSER",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -147,9 +147,9 @@
   {
     "type": "mutation",
     "id": "THRESH_CLAIRVOYANCE",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -157,9 +157,19 @@
   {
     "type": "mutation",
     "id": "THRESH_CLARITY",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_CONSECRATELESSER",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -167,9 +177,39 @@
   {
     "type": "mutation",
     "id": "THRESH_CONFUSE",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_ACIDSPRAY",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_ECLIPSE",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_ELEMENTALBURST",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -177,9 +217,19 @@
   {
     "type": "mutation",
     "id": "THRESH_FLAMEARMOR",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_FROSTARMORLESSER",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -187,9 +237,9 @@
   {
     "type": "mutation",
     "id": "THRESH_FREEACTION",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -197,9 +247,9 @@
   {
     "type": "mutation",
     "id": "THRESH_HEAL",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -207,9 +257,9 @@
   {
     "type": "mutation",
     "id": "THRESH_INSIGHT",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -217,9 +267,9 @@
   {
     "type": "mutation",
     "id": "THRESH_INVIS",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -227,9 +277,9 @@
   {
     "type": "mutation",
     "id": "THRESH_ELECRESIST",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -237,9 +287,9 @@
   {
     "type": "mutation",
     "id": "THRESH_MIGHT",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -247,9 +297,9 @@
   {
     "type": "mutation",
     "id": "THRESH_OVERGROWTH",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -257,9 +307,19 @@
   {
     "type": "mutation",
     "id": "THRESH_LIGHTNING",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_SUNDERINGQUAKE",
+    "name": "Fake Threshold",
+    "points": 0,
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -267,9 +327,9 @@
   {
     "type": "mutation",
     "id": "THRESH_CLERIC",
-    "name": "Spellcraft Threshold",
+    "name": "Fake Threshold",
     "points": 0,
-    "description": "This exists only because mutation categories for spellcraft scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
+    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -283,10 +343,10 @@
     "valid": false,
     "purifiable": false,
     "threshold": true,
-    "//": "The good news, you regen mana faster and vortices are friendly.  The bad news, HFBTV doesn't want you getting any more dependant on the blob (or worse, the Mycus) than you already are.",
+    "//": "The good news, you regen mana faster and vortices are friendly.  The bad news, HFBTV doesn't want you getting any more dependent on the blob (or worse, the Mycus) than you already are.  Side note, the sheer volume of one-note categories I have to define to make all this work annoys me to no end.",
     "mana_regen_multiplier": 1.25,
     "ignored_by": [ "UNKNOWN" ],
-    "allowed_category": [ "VEIL", "ACIDSPRAY", "AGILITY", "CLAIRVOYANCE", "CLARITY", "CONFUSE", "FLAMEARMOR", "FREEACTION", "HEAL", "INSIGHT", "INVIS", "ELECRESIST", "MIGHT", "OVERGROWTH", "LIGHTNING", "CLERIC" ]
+    "allowed_category": [ "VEIL", "ACIDSPRAY", "AGILITY", "CLAIRVOYANCE", "CLARITY", "CONFUSE", "FLAMEARMOR", "FREEACTION", "HEAL", "INSIGHT", "INVIS", "ELECRESIST", "MIGHT", "OVERGROWTH", "LIGHTNING", "CLERIC", "CONSECRATELESSER", "FROSTARMORLESSER", "SUNDERINGQUAKE", "ELEMENTALBURST", "BUGSLESSER", "ECLIPSE" ]
   },
   {
     "type": "mutation",
@@ -348,7 +408,7 @@
     "id": "SPELL_CONFUSE",
     "name": "Magic Sign: Confuse Monster",
     "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can confuse nearby monsters.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "Powers from beyond have granted you a power that can confuse nearby monsters.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "category": [ "CONFUSE" ],
@@ -365,6 +425,18 @@
     "purifiable": false,
     "category": [ "ACIDSPRAY" ],
     "spells_learned": [ [ "arcana_magic_conjure_acid", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CONSECRATELESSER",
+    "name": "Magic Sign: Consecrate",
+    "points": 8,
+    "description": "Powers from beyond have granted you the power to subvert otherworldly influences on the environment, within your immediate surroundings.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "CONSECRATELESSER" ],
+    "changes_to": [ "SPELL_CONSECRATE" ],
+    "spells_learned": [ [ "arcana_magic_consecrate", 1 ] ]
   },
   {
     "type": "mutation",
@@ -389,6 +461,29 @@
   },
   {
     "type": "mutation",
+    "id": "SPELL_ECLIPSE",
+    "name": "Magic Sign: Eclipse",
+    "points": 9,
+    "description": "Powers from beyond have granted you the power to bring forth wicked omens, gaining a temporary surge of power in exchange for permanent scars upon the land.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "ECLIPSE" ],
+    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
+    "spells_learned": [ [ "arcana_magic_eclipse", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_ELEMENTALBURST",
+    "name": "Magic Sign: Elemental Burst",
+    "points": 7,
+    "description": "Powers from beyond have granted you the power to conjure chaotic magic, blasting foes with elemental force.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "ELEMENTALBURST" ],
+    "spells_learned": [ [ "arcana_magic_elemental_burst", 1 ] ]
+  },
+  {
+    "type": "mutation",
     "id": "SPELL_FLAMEARMOR",
     "name": "Magic Sign: Flame Armor",
     "points": 5,
@@ -398,6 +493,18 @@
     "category": [ "FLAMEARMOR" ],
     "changes_to": [ "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_flame_armor", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_FROSTARMORLESSER",
+    "name": "Magic Sign: Frost Armor",
+    "points": 5,
+    "description": "Powers from beyond have granted you power, that can grant temporary resistance to the cold.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "FROSTARMORLESSER" ],
+    "changes_to": [ "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
+    "spells_learned": [ [ "arcana_magic_frost_armor", 1 ] ]
   },
   {
     "type": "mutation",
@@ -528,6 +635,18 @@
   },
   {
     "type": "mutation",
+    "id": "SPELL_BUGSLESSER",
+    "name": "Magic Sign: Summon Centipedes",
+    "points": 6,
+    "description": "Powers from beyond have granted you the power to summon scuttling abominations.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "BUGSLESSER" ],
+    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
+    "spells_learned": [ [ "arcana_magic_summon_giant_centipedes", 1 ] ]
+  },
+  {
+    "type": "mutation",
     "id": "SPELL_SUMMONDOG",
     "name": "Magic Sign: Summon Skeletal Dog",
     "points": 3,
@@ -536,6 +655,17 @@
     "purifiable": false,
     "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUNDERINGQUAKE",
+    "name": "Magic Sign: Sundering Quake",
+    "points": 4,
+    "description": "Powers from beyond have granted you the power to topple structures, and bury them in rubble.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "SUNDERINGQUAKE" ],
+    "spells_learned": [ [ "arcana_magic_sundering_quake", 1 ] ]
   },
   {
     "type": "mutation",
@@ -722,7 +852,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_PACIFY" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK", "SPELL_CONSECRATELESSER" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_consecrate", 1 ] ],
@@ -983,7 +1113,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_FLAMEARMOR2" ],
     "changes_to": [ "SPELL_PSYSHIELD" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_FROSTARMORLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_cold", 1 ] ],
@@ -998,7 +1128,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_FROSTARMOR" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_CLERIC" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_CLERIC", "SPELL_FROSTARMORLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_holy_ward", 1 ] ],
@@ -1075,7 +1205,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONTHING" ],
     "changes_to": [ "SPELL_SUMMONVORTEX" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_giant_centipedes", 1 ] ],
@@ -1090,7 +1220,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_BUGS" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_vortices", 1 ] ],
@@ -1501,7 +1631,7 @@
     "purifiable": false,
     "profession": true,
     "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
-    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_CLARITY" ]
+    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER", "SPELL_CLARITY", "SPELL_ECLIPSE" ]
   },
   {
     "type": "mutation",
@@ -1513,7 +1643,7 @@
     "purifiable": false,
     "profession": true,
     "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
-    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_CLARITY" ]
+    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER", "SPELL_CLARITY", "SPELL_ECLIPSE" ]
   },
   {
     "type": "mutation",
