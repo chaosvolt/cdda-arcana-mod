@@ -58,7 +58,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, endless spirals weaving through each other...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -72,7 +72,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, an overlapping web of exotic eye motifs...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -86,7 +86,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, an alchemical circle with seemingly impossible geometries...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -100,7 +100,21 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, a ring of unearthly calligraphy giving way to inhuman imagery...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned a spell."
+  },
+  {
+    "id": "ACIDSPRAY",
+    "type": "mutation_category",
+    "category": "ACIDSPRAY",
+    "threshold_mut": "THRESH_ACIDSPRAY",
+    "name": "Learned Conjure Acid",
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -156,7 +170,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, strange designs that waver like dancing flames...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -170,7 +184,21 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, intricate lines giving a three-dimensional impression...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned a spell."
+  },
+  {
+    "id": "FROSTARMORLESSER",
+    "type": "mutation_category",
+    "category": "FROSTARMORLESSER",
+    "threshold_mut": "THRESH_FROSTARMORLESSER",
+    "name": "Learned Frost Armor",
+    "mutagen_fatigue": 0,
+    "mutagen_hunger": 0,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 0,
+    "mutagen_message": "If you can read this, this is probably a bug",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -184,7 +212,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, complex anatomical imagery mingled with unearthly diagrams...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -198,7 +226,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, peculiar symbols blending in with scenery of surreal perspectives...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -212,7 +240,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, endless linear paths that intersect and bend in ways defying the laws of geometry...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -226,7 +254,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, a maze of patterns bleeding into vague impressions of otherworldly animals...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -240,7 +268,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, weaving in and all throughout itself like ever-shifting ivy...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -254,7 +282,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, coiled serpentine lines winding into endless ouroboros motifs...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -268,7 +296,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, irregular jagged artwork folding in on itself...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   },
@@ -310,7 +338,7 @@
     "mutagen_hunger": 0,
     "mutagen_pain": 0,
     "mutagen_thirst": 0,
-    "mutagen_message": "You gaze deep into the patterns on the scroll, endless symbols and charts blending in with otherworldly iconography...",
+    "mutagen_message": "If you can read this, this is probably a bug.",
     "iv_message": "If you can read this, this is probably a bug.",
     "memorial_message": "Learned a spell."
   }

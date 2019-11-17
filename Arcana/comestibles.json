@@ -343,7 +343,7 @@
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
     "name": "pattern scroll (consecrate)",
-    "name_plural": "pattern scroll (consecrate)",
+    "name_plural": "pattern scrolls (consecrate)",
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_consecrate", "no_fail": true, "level": 0 }
   },
@@ -352,7 +352,7 @@
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
     "name": "pattern scroll (frost armor)",
-    "name_plural": "pattern scroll (frost armor)",
+    "name_plural": "pattern scrolls (frost armor)",
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will protect against the cold, and all its side effects.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_frost_armor", "no_fail": true, "level": 0 }
   },
@@ -361,7 +361,7 @@
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
     "name": "pattern scroll (sundering quake)",
-    "name_plural": "pattern scroll (sundering quake)",
+    "name_plural": "pattern scrolls (sundering quake)",
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring down structures and bury them in rubble, though creatures will be left unharmed.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_sundering_quake", "no_fail": true, "level": 0 }
   },
@@ -370,7 +370,7 @@
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
     "name": "pattern scroll (elemental burst)",
-    "name_plural": "pattern scroll (elemental burst)",
+    "name_plural": "pattern scrolls (elemental burst)",
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_elemental_burst", "no_fail": true, "level": 0 }
   },
@@ -379,7 +379,7 @@
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
     "name": "pattern scroll (summon centipedes)",
-    "name_plural": "pattern scroll (summon centipedes)",
+    "name_plural": "pattern scrolls (summon centipedes)",
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_summon_giant_centipedes", "no_fail": true, "level": 0 }
   },
@@ -388,8 +388,145 @@
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
     "name": "pattern scroll (eclipse)",
-    "name_plural": "pattern scroll (eclipse)",
+    "name_plural": "pattern scrolls (eclipse)",
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring forth monsters and darkness, in exchange for a temporary boost of raw power with which to stalk the night.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_eclipse", "no_fail": true, "level": 0 }
+  },
+
+  {
+    "id": "scroll_spell_agile",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (agility)",
+    "name_plural": "pattern scrolls (agility)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary speed and agility-enhancing effect.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_agility", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_clairvoyance",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (clairvoyance)",
+    "name_plural": "pattern scrolls (clairvoyance)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an ivory halo, granting you sight beyond sight.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clairvoyance", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_clarity",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (clarity of blood)",
+    "name_plural": "pattern scrolls (clarity of blood)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against parasites and the Mycus.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clarity_blood", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_confusion",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (confuse monsters)",
+    "name_plural": "pattern scrolls (confuse monsters)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will stun all hostiles in the area around you.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_confuse_monster", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_acidspray",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (conjure acid)",
+    "name_plural": "pattern scrolls (conjure acid)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_conjure_acid", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_flame_armor",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (flame armor)",
+    "name_plural": "pattern scrolls (flame armor)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_flame_armor", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_free_action",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (free action)",
+    "name_plural": "pattern scrolls (free action)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against paralytic effects and other hindrances.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_free_action", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_heal",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (healing)",
+    "name_plural": "pattern scrolls (healing)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_healing", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_insight",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (insight)",
+    "name_plural": "pattern scrolls (insight)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to perception.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_insight", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_elecresist",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (lightning ward)",
+    "name_plural": "pattern scrolls (lightning ward)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an amber halo, granting you resistance to lightning.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_lightning_ward", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_might",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (might)",
+    "name_plural": "pattern scrolls (might)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to strength.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_might", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_plants",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (overgrowth)",
+    "name_plural": "pattern scrolls (overgrowth)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_overgrowth", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_invis",
+    "copy-from": "scroll_magic_base",
+    "//": "ID retained to avoid breaking stuff.",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (serpentine shield)",
+    "name_plural": "pattern scrolls (serpentine shield)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will summon shadowy serpents to aid you.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_serpentine_shield", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_lightning",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (shockstorm)",
+    "name_plural": "pattern scrolls (shockstorm)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, harming any hostiles that are close enough.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_shockstorm", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_cleric",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "pattern scroll (ward against evil)",
+    "name_plural": "pattern scrolls (ward against evil)",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_ward_against_evil", "no_fail": true, "level": 0 }
   }
 ]

@@ -589,7 +589,7 @@
   {
     "id": "arcana_blessing_confuse_monster",
     "type": "SPELL",
-    "name": "Blessing: Confuse Monster",
+    "name": "Blessing: Confuse Monsters",
     "description": "Arcane Blessing\nUsing this spell will stun all hostiles in the area around you.",
     "message": "A faint distortion in the air ripples out all around, and you sense an unearthly force exerting its will.",
     "effect": "target_attack",
@@ -3297,6 +3297,86 @@
   },
   {
     "type": "SPELL",
+    "id": "arcana_pattern_agility",
+    "name": "Pattern: Agility",
+    "effect": "mutate",
+    "effect_str": "AGILITY",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, endless spirals weaving through each other...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_clairvoyance",
+    "name": "Pattern: Clairvoyance",
+    "effect": "mutate",
+    "effect_str": "CLAIRVOYANCE",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, an overlapping web of exotic eye motifs...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_clarity_blood",
+    "name": "Pattern: Clarity of Blood",
+    "effect": "mutate",
+    "effect_str": "CLARITY",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, an alchemical circle with seemingly impossible geometries...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_confuse_monster",
+    "name": "Pattern: Confuse Monsters",
+    "effect": "mutate",
+    "effect_str": "CONFUSE",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, a ring of unearthly calligraphy giving way to inhuman imagery...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_conjure_acid",
+    "name": "Pattern: Conjure Acid",
+    "effect": "mutate",
+    "effect_str": "ACIDSPRAY",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, dizzying orbital diagrams almost resembling a model of some complex chemical compound...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
     "id": "arcana_pattern_consecrate",
     "name": "Pattern: Consecrate",
     "effect": "mutate",
@@ -3306,22 +3386,6 @@
     ],
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, resembling rays of light shrouded in wings...",
-    "min_damage": 10000,
-    "max_damage": 10000,
-    "flags": [ "SILENT" ],
-    "valid_targets": [ "self" ]
-  },
-  {
-    "type": "SPELL",
-    "id": "arcana_pattern_frost_armor",
-    "name": "Pattern: Frost Armor",
-    "effect": "mutate",
-    "effect_str": "FROSTARMORLESSER",
-    "extra_effects": [
-      { "id": "arcana_item_scroll_leftover", "hit_self": false }
-    ],
-    "description": "This grants a specific spell mutation.",
-    "message": "You gaze deep into the strange patterns, constellations of alien skies...",
     "min_damage": 10000,
     "max_damage": 10000,
     "flags": [ "SILENT" ],
@@ -3361,6 +3425,166 @@
   },
   {
     "type": "SPELL",
+    "id": "arcana_pattern_flame_armor",
+    "name": "Pattern: Flame Armor",
+    "effect": "mutate",
+    "effect_str": "FLAMEARMOR",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, strange designs that waver like dancing flames...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_free_action",
+    "name": "Pattern: Free Action",
+    "effect": "mutate",
+    "effect_str": "FREEACTION",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, intricate lines giving a three-dimensional impression...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_frost_armor",
+    "name": "Pattern: Frost Armor",
+    "effect": "mutate",
+    "effect_str": "FROSTARMORLESSER",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, constellations of alien skies...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_healing",
+    "name": "Pattern: Healing",
+    "effect": "mutate",
+    "effect_str": "HEAL",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, complex anatomical imagery mingled with unearthly diagrams...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_insight",
+    "name": "Pattern: Insight",
+    "effect": "mutate",
+    "effect_str": "INSIGHT",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, peculiar symbols blending in with scenery of surreal perspectives...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_lightning_ward",
+    "name": "Pattern: Lightning Ward",
+    "effect": "mutate",
+    "effect_str": "ELECRESIST",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns,  endless linear paths intersecting and bending in ways defying the laws of geometry...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_might",
+    "name": "Pattern: Might",
+    "effect": "mutate",
+    "effect_str": "MIGHT",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, a maze of patterns bleeding into vague impressions of otherworldly animals...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_overgrowth",
+    "name": "Pattern: Overgrowth",
+    "effect": "mutate",
+    "effect_str": "OVERGROWTH",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, weaving in and all throughout itself like ever-shifting ivy...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_serpentine_shield",
+    "name": "Pattern: Serpentine Shield",
+    "effect": "mutate",
+    "effect_str": "INVIS",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, coiled serpentine lines winding into endless ouroboros motifs...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_shockstorm",
+    "name": "Pattern: Shockstorm",
+    "effect": "mutate",
+    "effect_str": "LIGHTNING",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, irregular jagged artwork folding in on itself...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
     "id": "arcana_pattern_summon_giant_centipedes",
     "name": "Pattern: Summon Centipedes",
     "effect": "mutate",
@@ -3386,6 +3610,22 @@
     ],
     "description": "This grants a specific spell mutation.",
     "message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms...",
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "flags": [ "SILENT" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_pattern_ward_against_evil",
+    "name": "Pattern: Ward Against Evil",
+    "effect": "mutate",
+    "effect_str": "CLERIC",
+    "extra_effects": [
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+    ],
+    "description": "This grants a specific spell mutation.",
+    "message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography...",
     "min_damage": 10000,
     "max_damage": 10000,
     "flags": [ "SILENT" ],
