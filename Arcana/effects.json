@@ -352,6 +352,20 @@
   },
   {
     "type": "effect_type",
+    "id": "spell_revelation",
+    "name": [ "Revelation" ],
+    "desc": [
+      "A flood of strange awareness has filled your mind.  Your intelligence has been temporarily augmented by magic, aiding spellcasting and crafting."
+    ],
+    "remove_message": "Things are starting to return to normal.",
+    "decay_messages": [ [ "Your spell of revelation is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": "1 m",
+    "base_mods": { "int_mod": [ 8 ] }
+  },
+  {
+    "type": "effect_type",
     "id": "spell_eclipse",
     "name": [ "Eclipse" ],
     "desc": [
