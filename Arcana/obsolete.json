@@ -2214,5 +2214,25 @@
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "CLERIC", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "halo_elecresist",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": "amber halo",
+    "description": "A strange radiance permeating your body.  It will protect against electrical arcs, but only partially protect you against contact with electrified enemies.",
+    "color": "light_gray",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_ELEC", "add": -5 }
+          ]
+        }
+      ]
+    },
+    "flags": [ "ONLY_ONE" ]
   }
 ]

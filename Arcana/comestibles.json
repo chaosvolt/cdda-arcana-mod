@@ -480,7 +480,7 @@
     "type": "COMESTIBLE",
     "name": "pattern scroll (lightning ward)",
     "name_plural": "pattern scrolls (lightning ward)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an amber halo, granting you resistance to lightning.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_lightning_ward", "no_fail": true, "level": 0 }
   },
   {

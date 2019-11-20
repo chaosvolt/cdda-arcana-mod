@@ -36,7 +36,6 @@
       ]
     },
     "ammo_effects": [ "LIGHTNING", "EMP" ],
-    "artifact_data": { "effects_wielded": [ "AEP_BAD_WEATHER" ] },
     "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
     "use_action": "MEDITATE"
   },

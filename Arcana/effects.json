@@ -535,16 +535,33 @@
   },
   {
     "type": "effect_type",
-    "id": "lightning_ward_true",
+    "id": "lightning_ward",
     "name": [ "Ward Against Lightning" ],
-    "desc": [ "Complete immunity to lightning." ],
+    "desc": [ "Complete immunity to lightning, reduced speed." ],
     "remove_message": "You feel an electric tingle as your protective magic fades.",
     "removes_effects": [ "zapped" ],
     "decay_messages": [ [ "The ward against lightning is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": "1 m",
-    "flags": [ "ELECTRIC_IMMUNE" ]
+    "base_mods": {
+      "dex_mod": [ -1 ],
+      "speed_mod": [ -10 ]
+    },
+    "flags": [ "EFFECT_ELECTRIC_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "lightning_ward_true",
+    "name": [ "Greater Ward Against Lightning" ],
+    "desc": [ "Complete immunity to lightnings." ],
+    "remove_message": "You feel an electric tingle as your protective magic fades.",
+    "removes_effects": [ "zapped" ],
+    "decay_messages": [ [ "The greater ward against lightning is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": "1 m",
+    "flags": [ "EFFECT_ELECTRIC_IMMUNE" ]
   },
   {
     "type": "effect_type",

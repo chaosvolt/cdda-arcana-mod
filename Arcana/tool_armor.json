@@ -264,18 +264,7 @@
       "msg": "The glow fades from the meteoric talisman, its protective magic fading with it.",
       "type": "transform"
     },
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [
-            { "value": "ARMOR_ELEC", "add": -10 },
-            { "value": "SPEED", "add": -20 }
-          ]
-        }
-      ]
-    }
+    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY", "AEP_SPEED_DOWN", "AEP_BAD_WEATHER" ] }
   },
   {
     "id": "cleric_ring",
