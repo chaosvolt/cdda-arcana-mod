@@ -2234,5 +2234,30 @@
       ]
     },
     "flags": [ "ONLY_ONE" ]
+  },
+  {
+    "id": "DRAGONBLOODLESSER",
+    "type": "mutation_category",
+    "//": "This exists so that blood effigy can exclude spells.",
+    "category": "DRAGONBLOODLESSER",
+    "threshold_mut": "THRESH_DRAGONBLOODLESSER",
+    "name": "Lesser Dragonblood Effect",
+    "mutagen_fatigue": 5,
+    "mutagen_hunger": 5,
+    "mutagen_pain": 0,
+    "mutagen_thirst": 5,
+    "mutagen_message": "You feel unearthly life flow through your body.",
+    "iv_message": "If you can read this, this is probably a bug.",
+    "memorial_message": "Learned from the Sacrament."
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_DRAGONBLOODLESSER",
+    "name": "Lesser Dragonblood",
+    "points": 0,
+    "description": "This exists only because blood effigy is supposed to give Dragonblood mutations without granting spells.  This is a bug if you have it.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
   }
 ]

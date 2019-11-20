@@ -22,7 +22,7 @@
       "stat_adjustments": { "hunger": 25 },
       "effects": [ { "id": "potion_numbness", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "strength_potion",
@@ -47,7 +47,7 @@
       "stat_adjustments": { "hunger": 20 },
       "effects": [ { "id": "potion_strength", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "speed_potion",
@@ -72,7 +72,7 @@
       "stat_adjustments": { "hunger": 15 },
       "effects": [ { "id": "potion_speed", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
+    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "healing_potion",
@@ -97,7 +97,7 @@
       "stat_adjustments": { "hunger": 10 },
       "effects": [ { "id": "potion_healing", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
+    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "red_black_vulnerary",
@@ -173,8 +173,8 @@
     "fun": -8,
     "charges": 4,
     "freezing_point": -10,
-    "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOODLESSER" },
-    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
+    "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOOD" },
+    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "scroll_sun",
