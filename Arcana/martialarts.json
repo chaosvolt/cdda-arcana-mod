@@ -149,24 +149,24 @@
       {
         "id": "buff_cleansingflame_onkill1",
         "name": "Regain Composure (Hammer)",
-        "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, +3 move cost, +1.0 Dodge skill.\nLasts 3 turns.  Stacks 4 times.",
+        "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, +5 move cost, +1.0 Dodge skill.\nLasts 3 turns.  Stacks 4 times.",
         "melee_allowed": true,
         "min_melee": 3,
         "min_bashing_damage": 20,
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -1 ], [ "movecost", 3.0 ] ]
+        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -1 ], [ "movecost", 5.0 ] ]
       },
       {
         "id": "buff_cleansingflame_onkill2",
         "name": "Regain Composure (Sword)",
-        "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, +3 move cost, +5 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
+        "description": "Mortal blows drain the momentum you've built up.\n-1 Accuracy, +5 move cost, +5 damage blocked.\nLasts 2 turns.  Stacks 4 times.",
         "melee_allowed": true,
         "min_melee": 3,
         "min_cutting_damage": 20,
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "block", 5 ], [ "hit", -1 ], [ "movecost", 3.0 ] ]
+        "flat_bonuses": [ [ "block", 5 ], [ "hit", -1 ], [ "movecost", 5.0 ] ]
       }
     ],
     "techniques": [
