@@ -33,7 +33,7 @@
     "dynamic_line": "I know not of what you ask.  I merely gather the bones to hear their song.  There are perhaps other verses to gather, but they can lead one astray.",
     "responses": [
       {
-        "text": "There is much I can teach, as recompense for the lesson you have taught me.  It is my master's wish that I spread His word.",
+        "text": "There is much I can teach, as recompense for the lesson you have taught me.  My master wishes that I spread His word.",
         "condition": { "u_has_trait": "THRESH_VEIL" },
         "switch": true,
         "topic": "TALK_BONE_SEER_POWER_CHALICE"
@@ -51,7 +51,7 @@
         "topic": "TALK_BONE_SEER_POWER_SANGUINE"
       },
       {
-        "text": "Look at me.  You have surely seen mutants before, but there is something deeper than that at work.  Power from beyond this world made me this way.",
+        "text": "Look at me.  You have surely seen mutants before, but there is something deeper than that here.  Power from beyond this world made me this way.",
         "condition": { "u_has_trait": "THRESH_DRAGONBLOOD" },
         "topic": "TALK_BONE_SEER_POWER_DRAGONBLOOD"
       },
@@ -92,7 +92,7 @@
     "dynamic_line": "Is that so?  I'm listening, then.",
     "responses": [
       {
-        "text": "What do you make of this?  It's a fang broken off from a monster that doesn't belong in this world, made of otherworldly crystal.",
+        "text": "What do you make of this?  It's a fang from a monster that doesn't belong in this world, made of otherworldly crystal.",
         "condition": { "u_has_item": "graboid_fang" },
         "topic": "TALK_BONE_SEER_POWER_OFFER_GRABOID_FANG"
       },
@@ -198,7 +198,7 @@
     "id": "TALK_BONE_SEER_POWER_MYRIAD",
     "dynamic_line": "Of that, I am sure even though I do not know their names.  But they are all beholden to the cycles that we are trapped in.",
     "responses": [
-      { "text": "I could show you something you might be able to learn from.", "topic": "TALK_BONE_SEER_POWER_POTENTIAL" },
+      { "text": "I could show you something you might be able to learn from.", "topic": "TALK_BONE_SEER_POWER_OFFER" },
       { "text": "Perhaps you're right.  We'll see, in time.", "topic": "TALK_BONE_SEER" }
     ]
   },
@@ -207,7 +207,7 @@
     "id": "TALK_BONE_SEER_POWER_CLEANSINGFLAME",
     "dynamic_line": "This is more than ritual.  You have heard the songs, haven't you?  What more do you need?",
     "responses": [
-      { "text": "I could show you something that might explain what I speak of.", "topic": "TALK_BONE_SEER_POWER_POTENTIAL" },
+      { "text": "I could show you something that might explain what I speak of.", "topic": "TALK_BONE_SEER_POWER_OFFER" },
       { "text": "Nevermind.  There's no point in arguing over it.", "topic": "TALK_DONE" }
     ]
   },
@@ -218,7 +218,7 @@
     "responses": [
       {
         "text": "There is something I could show you, that makes the power of your so-called song look like child's play.",
-        "topic": "TALK_BONE_SEER_POWER_POTENTIAL"
+        "topic": "TALK_BONE_SEER_POWER_OFFER"
       },
       {
         "text": "I have no time to spare for disproving your delusions.  I've nothing more to say to you.",
@@ -232,12 +232,12 @@
     "dynamic_line": "Whatever form your flesh takes, underneath your power is the same as it always has been.  As it always shall be.  No matter which face you bear, whose name you answer to, the bones are of the same substance.  From now, until this cycle is broken.",
     "responses": [
       {
-        "text": "I don't think my bones are the same as they were, given how different they are now, along with everything else.",
+        "text": "I don't think my bones are the same as they were, as different as they are now, along with everything else.",
         "topic": "TALK_BONE_SEER_POWER_DRAGONBLOOD_SMARTASS"
       },
       {
         "text": "But, there is something more to this.  I could show you.",
-        "topic": "TALK_BONE_SEER_POWER_POTENTIAL"
+        "topic": "TALK_BONE_SEER_POWER_OFFER"
       },
       {
         "text": "You know nothing of true power.  I have no interest in trying to talk you out of your folly.",
@@ -252,7 +252,7 @@
     "responses": [
       {
         "text": "Fine then.  But maybe I still have something that would prove my point.",
-        "topic": "TALK_BONE_SEER_POWER_POTENTIAL"
+        "topic": "TALK_BONE_SEER_POWER_OFFER"
       },
       { "text": "...", "topic": "TALK_BONE_SEER" }
     ]
@@ -262,7 +262,7 @@
     "id": "TALK_BONE_SEER_POWER_GENERAL",
     "dynamic_line": "Perhaps this is true.  But underneath the pollution that undeath brings, the bones still speak their songs.  It is harder for the inexperienced to decipher them, but their nature is fundamentally changed.  I'm curious though, what lesson do you think remains unlearned?",
     "responses": [
-      { "text": "I might have something that would explain things better.", "topic": "TALK_BONE_SEER_POWER_POTENTIAL" },
+      { "text": "I might have something that would explain things better.", "topic": "TALK_BONE_SEER_POWER_OFFER" },
       { "text": "Another time perhaps, I will need to think on this.", "topic": "TALK_BONE_SEER" }
     ]
   },
@@ -331,7 +331,7 @@
     "responses": [
       { "text": "You will find nothing but misery, pursuing this madness.  I will not stop you.", "topic": "TALK_DONE" },
       {
-        "text": "[ATTACK] I cannot allow you to continue pursuing this.  If there is any truth to your delusion, it will only bring more suffering.",
+        "text": "[ATTACK] I cannot allow you to continue this.  If there is any truth to your delusions, it will only bring more suffering.",
         "effect": "insult_combat",
         "topic": "TALK_DONE"
       }
