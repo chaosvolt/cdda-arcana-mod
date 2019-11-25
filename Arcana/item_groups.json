@@ -93,17 +93,17 @@
   {
     "id": "essence_blood",
     "type": "item_group",
-    "items": [ { "item": "essence_blood", "prob": 100, "count": [1, 3] } ]
+    "items": [ { "item": "essence_blood", "prob": 100, "count": [ 1, 3 ] } ]
   },
   {
     "id": "essence_boss",
     "type": "item_group",
-    "items": [ { "item": "essence", "prob": 100, "count": [2, 5] } ]
+    "items": [ { "item": "essence", "prob": 100, "count": [ 2, 5 ] } ]
   },
   {
     "id": "essence_nether",
     "type": "item_group",
-    "items": [ { "item": "essence", "prob": 100, "count": [1, 3] } ]
+    "items": [ { "item": "essence", "prob": 100, "count": [ 1, 3 ] } ]
   },
   {
     "id": "homebooks",
@@ -124,9 +124,7 @@
     "id": "mansion_bookcase",
     "type": "item_group",
     "subtype": "collection",
-    "groups": [
-      [ "magic_books", 8 ]
-    ]
+    "groups": [ [ "magic_books", 8 ] ]
   },
   {
     "id": "rare_martial_arts_books",
@@ -301,9 +299,7 @@
     "id": "NC_EVAC_SHOPKEEP_misc",
     "type": "item_group",
     "subtype": "collection",
-    "items": [
-      { "item": "CF_golden_scale", "count-min": 10, "count-max": 20, "prob": 20 }
-    ]
+    "items": [ { "item": "CF_golden_scale", "count-min": 10, "count-max": 20, "prob": 20 } ]
   },
   {
     "id": "arcana_hunt_random",
@@ -325,5 +321,16 @@
       [ "iridescent_plate", 15 ],
       [ "engraved_stone", 10 ]
     ]
+  },
+  {
+    "type": "item_group",
+    "id": "magic_shop_books",
+    "//": "Additions to magic shop itemgroups are for automatic compatibility with Magiclysm.  General assumption is only the non-faction books were traded around enough for the non-arcanist magical community to start collecting samples.  Todo: remember magic_CBM itemgroup for when magitech is added to arcana.",
+    "items": [ [ "book_potioncraft", 25 ], [ "book_scrollcraft", 15 ], [ "book_summoning", 10 ], [ "book_syncretism", 5 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "magic_shop_books",
+    "items": [ [ "numbness_potion", 10 ], [ "strength_potion", 10 ], [ "speed_potion", 5 ], [ "healing_potion", 5 ] ]
   }
 ]
