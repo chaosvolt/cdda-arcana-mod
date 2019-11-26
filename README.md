@@ -8,8 +8,9 @@ This is a mod idea I cooked up a long time ago, first mentioned the idea over on
 
 ## Essence
 *  Regular *essence* drops from slaying several different sorts of anomalous creatures, the more otherworldly the better. Main use is for creating most enchanted items. Certain magical items are also fueled by this.
-* *Blood essence* is drained from non-anomalous beings, using anomalous means. Main use is ammo for the one magical ranged weapon available, and as a less efficient alternative to essence for crafting. Some magic weapons are fueled by this. Certain monsters, generally undead that are earthly but anomalous, also drop this instead of normal essence.
-* *Dull essence* is obtained by dismantling magic items and essence using the correct tools. Used to craft and fuel certain items.
+* *Blood essence* is drained from non-anomalous beings, using anomalous means. Some magical ranged weapons and items are fueled by this, and it can be used as a less powerful alternative to essence. Certain monsters, generally undead that are earthly but anomalous, also drop this instead of normal essence.
+* *Dull essence* is obtained by dismantling magic items and essence using the correct tools. Used to craft and fuel certain items, generally specific to the *Cleansing Flame*.
+* *Crystallized essence* is something you'll have to craft yourself, used for a handful of specialized, high-yield purposes...
 
 ## Scenarios and Professions
 
@@ -38,6 +39,13 @@ The second scenario added, allowing players another method of getting into the a
 
 * *Cleansing Flame* items can be taken apart for *blood essence* using the tools of the __Sanguine Order__.
 
+## Stories Lost in Darkness: NPCs and Missions
+
+In addition to discovering items and other hints as to what happened in the margins of society, in the days prior to and just after the Cataclysm, the player can uncover remnants of these near-extinct factions here and there. Some may be willing to work together with you, while others may be only one more threat to deal with.
+
+In contact with the *Refugee Center*, a small holdout of the *Cleansing Flame* has established shelter in what was once a rural church. By seeking out the right people you can be led into contact with them, enabling missions to assist in their survival. And, perhaps, seeking out other allies along with getting a better understanding of what went on between these warring factions, along with a chance to finish unfinished business.
+
+In addition, though the *Keepers of The Oath* had been driven nearly to extinction, at least one final member of their faith remains. Having since given up hope, it may be possible to encourage them to guide you along a path that may help humanity's chances of surviving. At least, that's what their order believes. Whether there's any truth to it is something no survivor of the cataclysm itself will be around to see, given the long-term machinations of those __Beyond__...
 
 ## Monster Tweaks
 * A wide range of monsters have been edited to allow obtaining essence or blood essence. A few can also drop magic items.
@@ -66,10 +74,13 @@ The second scenario added, allowing players another method of getting into the a
 * Levels 6-10. A book for summoning your very own pet monstrosities.
 
 ##### A Story in Shadow 
-* Levels 8-10. Relatively rare book that combines some of the concepts from the three major factions. Translation: a few magic items with an assortment of useful effects.
+* Levels 4-9. Relatively rare book that combines some of the concepts from the three major factions. Translation: a few magic items with an assortment of useful effects.
 
 ##### Strange Map 
 * Technically not a book but instead a mapping item, revealing most anomalous locations.
+
+##### The Path of Sword And Hammer
+* A rare book, rather than teaching magic it instead teaches a martial art, combining understanding of the arcane with cold steel.
 
 ## Tools of The Trade
 
@@ -103,14 +114,15 @@ The second scenario added, allowing players another method of getting into the a
 * Certain monsters drop specific items, as mentioned above. Initially the only use for them is to carve and craft these things into decorate items. While not very useful in and of themselves, working with trophies taken from the __Beyond__ can enlighten those with no formal arcane skill.
 * With the base items themselves and a little arcana skill, magic seals can be crafted. These entail a little essence and some extra effort put in preparing the item, turning it into essentially a single-use spell. For all the items usable, each has a specific effect thematically linked to it.
 * At higher levels, and with the right books, magic seals can be woven into an effect bound to a scroll, allowing the user a shot at learning the corresponding ability permanently. Doing so doesn't always succeed.
+* Fire. Water. Earth, and Air. While study of the __Beyond__ unlocks abilities of often inhuman nature, a desperate novice arcanist can use their newfound experience for more earthy, primitive purposes. Using these essences, or the closest available effigy in times of desperation, one can work the most basic of miracles.
 
 ## Artifacts
 * Certain locations offer unique items that are otherwise uncraftable. Most notably are those hidden away in the forgotten halls of arcanist groups, how have since succumbed to the cataclysm and its horrors. Two of them tie into the background of what led to their downfall, while two are tied to the monsters that infest the place.
 * In addition, hidden away one can find a few other lesser artifacts, each having their own potential uses.
-* Two notable unique artifacts can be crafted, leading towards what's effectively endgame content, unlocking ways to become something more than human. By obtaining an item hidden away in a temple over the sky, one can restore its true nature and gain its power. The second meanwhile entails a shrine surrounded by water, and finising what the *Sanguine Order* started.
+* Two notable unique artifacts can be crafted, leading towards what's effectively endgame content, unlocking ways to become something more than human. By obtaining an item hidden away in a temple over the sky, one can restore its true nature and gain its power. The second meanwhile entails a shrine surrounded by water, and finishing what the *Sanguine Order* started.
 
 ## Other Magic Items
-* Using *History of Alchemy* an assortment of potions can be made, a mimicry of the Opus Magnum. Each step has its own use however, from numbing pain to enhancing strength.
+* Using *History of Alchemy* an assortment of potions can be made, a mimicry of the Opus Magnum. Each step has its own use however, from numbing pain to enhancing strength. Later on, combinations of previous potions can be used to make items with more specific effects.
 * Scrolls with an array of magical effects can be made using *The Six Pillars*. Each has a specific effect, though many are a double-edged sword in some way.
 * *To Master The Unknown* allows binding summoning magic into silver glyphs, to summon an assortment of monsters of various strengths. Beware the consequences of the summoning attempt failing, though.
 * With *A Story in Shadow* a few extra items are available. The *Druidic Stave* can be used to mend a selection of materials, including some that are otherwise not repairable. The *Orb of the Veil* is a tool that can enhance the mind and scry the surrounding terrain, while the *Satchel of Eternity* harnesses the power of the __Beyond__ for more mundane utility.
