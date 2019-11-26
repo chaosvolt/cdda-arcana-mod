@@ -880,9 +880,7 @@
     "max_charges": 1,
     "charges_per_use": 1,
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_orb_veil_mapping", "no_fail": true, "level": 0 } ],
-    "artifact_data": {
-      "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO", "AEP_CLAIRVOYANCE" ]
-    },
+    "artifact_data": { "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO", "AEP_CLAIRVOYANCE" ] },
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {

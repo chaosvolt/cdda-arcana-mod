@@ -31,13 +31,7 @@
   {
     "id": "sanguine_cult_gear",
     "type": "item_group",
-    "items": [
-      [ "blood_athame", 10 ],
-      [ "bloodaxe", 3 ],
-      [ "bloodscourge", 2 ],
-      [ "armor_wyrm", 3 ],
-      [ "revenant_crown", 2 ]
-    ]
+    "items": [ [ "blood_athame", 10 ], [ "bloodaxe", 3 ], [ "bloodscourge", 2 ], [ "armor_wyrm", 3 ], [ "revenant_crown", 2 ] ]
   },
   {
     "id": "sanguine_cult_consumables",
@@ -308,9 +302,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "terrain": { "~": "t_water_sh_underground", "g": "t_floor_blue" },
-      "mapping": {
-        "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
-      },
+      "mapping": { "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } } },
       "place_loot": [
         { "item": "note_sanguine", "x": [ 22, 23 ], "y": [ 22, 23 ], "chance": 100 },
         { "group": "sanguine_ritual", "x": 23, "y": 3, "chance": 100 },
@@ -357,11 +349,12 @@
       ],
       "palettes": [ "arcana_palette" ],
       "terrain": { "~": "t_water_sh_underground", ";": "t_water_dp_underground", "g": "t_floor_blue" },
-      "set": [
-        { "point": "trap", "id": "tr_portal", "x": [ 12, 14 ], "y": [ 9, 11 ] }
-      ],
+      "set": [ { "point": "trap", "id": "tr_portal", "x": [ 12, 14 ], "y": [ 9, 11 ] } ],
       "mapping": {
-        "a": { "furniture": "f_slab", "items": [ { "item": "sanguine_cult_consumables", "chance": 60 }, { "item": "sanguine_cult_gear", "chance": 10 } ] },
+        "a": {
+          "furniture": "f_slab",
+          "items": [ { "item": "sanguine_cult_consumables", "chance": 60 }, { "item": "sanguine_cult_gear", "chance": 10 } ]
+        },
         "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
       },
       "place_monsters": [ { "monster": "GROUP_SANGUINE_BASEMENT", "x": [ 5, 12 ], "y": [ 11, 18 ], "density": 0.1 } ]
@@ -402,9 +395,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "terrain": { "~": "t_water_sh_underground", ";": "t_water_dp_underground", "g": "t_floor_blue" },
-      "set": [
-        { "point": "trap", "id": "tr_portal", "x": [ 12, 14 ], "y": [ 9, 11 ] }
-      ],
+      "set": [ { "point": "trap", "id": "tr_portal", "x": [ 12, 14 ], "y": [ 9, 11 ] } ],
       "mapping": {
         "a": { "furniture": "f_slab", "items": [ { "item": "sanguine_cult_crafting", "chance": 75 } ] },
         "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
@@ -447,9 +438,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "terrain": { "~": "t_water_sh_underground", "g": "t_floor_blue" },
-      "mapping": {
-        "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
-      },
+      "mapping": { "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } } },
       "place_loot": [
         { "item": "note_sanguine_tenet", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 90 },
         { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 50, "repeat": 15 },

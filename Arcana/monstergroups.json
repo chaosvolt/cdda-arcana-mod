@@ -51,12 +51,12 @@
     "monsters": [
       { "monster": "mon_shadow_summoned", "freq": 200, "cost_multiplier": 0 },
       { "monster": "mon_shadow_snake_summoned", "freq": 150, "cost_multiplier": 0 },
-      { "monster" : "mon_hunting_horror", "freq" : 200, "cost_multiplier" : 0 },
-      { "monster" : "mon_kreck", "freq" : 150, "cost_multiplier" : 0 },
-      { "monster" : "mon_gracke", "freq" : 75, "cost_multiplier" : 0 },
-      { "monster" : "mon_gozu", "freq" : 75, "cost_multiplier" : 0 },
-      { "monster" : "mon_flying_polyp", "freq" : 25, "cost_multiplier" : 0 },
-      { "monster" : "mon_flaming_eye", "freq" : 25, "cost_multiplier" : 0 }
+      { "monster": "mon_hunting_horror", "freq": 200, "cost_multiplier": 0 },
+      { "monster": "mon_kreck", "freq": 150, "cost_multiplier": 0 },
+      { "monster": "mon_gracke", "freq": 75, "cost_multiplier": 0 },
+      { "monster": "mon_gozu", "freq": 75, "cost_multiplier": 0 },
+      { "monster": "mon_flying_polyp", "freq": 25, "cost_multiplier": 0 },
+      { "monster": "mon_flaming_eye", "freq": 25, "cost_multiplier": 0 }
     ]
   },
   {

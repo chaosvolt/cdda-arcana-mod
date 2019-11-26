@@ -88,7 +88,12 @@
     "time": "25 m",
     "book_learn": [ [ "book_hexenhammer", 6 ] ],
     "using": [ [ "filament", 9 ], [ "steel_tiny", 2 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3 },
+      { "id": "CUT", "level": 1 },
+      { "id": "SEW", "level": 1 },
+      { "id": "ANVIL", "level": 1 }
+    ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
     "components": [
       [ [ "steel_chunk", 2 ], [ "scrap", 10 ], [ "scrap_bronze", 2 ] ],
@@ -192,7 +197,12 @@
     "time": "45 m",
     "book_learn": [ [ "book_syncretism", 8 ] ],
     "using": [ [ "filament", 24 ], [ "arcana_essence_exclude_dull", 8 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 2 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SEW", "level": 1 },
+      { "id": "ANVIL", "level": 1 }
+    ],
     "tools": [
       [ [ "book_syncretism", -1 ] ],
       [ [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ],

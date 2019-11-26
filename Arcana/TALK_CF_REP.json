@@ -144,7 +144,11 @@
         "topic": "TALK_CF_REP_TBC",
         "condition": { "npc_has_effect": "cf_mission_3" }
       },
-      { "text": "Well, bye.", "topic": "TALK_DONE", "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" } }
+      {
+        "text": "Well, bye.",
+        "topic": "TALK_DONE",
+        "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" }
+      }
     ]
   },
   {
@@ -158,7 +162,11 @@
     "id": "TALK_CF_REP_DEACON_MISSION",
     "dynamic_line": "I see.  I'm glad that he's doing alright over there.  If you get the chance to stop by, be sure to tell him we're doing okay.  Should put his mind at ease, as I'm sure he's needed over there.",
     "responses": [
-      { "text": "Alright.", "topic": "TALK_CF_REP", "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" } }
+      {
+        "text": "Alright.",
+        "topic": "TALK_CF_REP",
+        "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" }
+      }
     ]
   },
   {

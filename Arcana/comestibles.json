@@ -392,7 +392,6 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring forth monsters and darkness, in exchange for a temporary boost of raw power with which to stalk the night.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_eclipse", "no_fail": true, "level": 0 }
   },
-
   {
     "id": "scroll_spell_agile",
     "copy-from": "scroll_magic_base",

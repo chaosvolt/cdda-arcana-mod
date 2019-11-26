@@ -346,7 +346,30 @@
     "//": "The good news, you regen mana faster and vortices are friendly.  The bad news, HFBTV doesn't want you getting any more dependent on the blob (or worse, the Mycus) than you already are.  Side note, the sheer volume of one-note categories I have to define to make all this work annoys me to no end.",
     "mana_regen_multiplier": 1.25,
     "ignored_by": [ "UNKNOWN" ],
-    "allowed_category": [ "VEIL", "ACIDSPRAY", "AGILITY", "CLAIRVOYANCE", "CLARITY", "CONFUSE", "FLAMEARMOR", "FREEACTION", "HEAL", "INSIGHT", "INVIS", "ELECRESIST", "MIGHT", "OVERGROWTH", "LIGHTNING", "CLERIC", "CONSECRATELESSER", "FROSTARMORLESSER", "SUNDERINGQUAKE", "ELEMENTALBURST", "BUGSLESSER", "ECLIPSE" ]
+    "allowed_category": [
+      "VEIL",
+      "ACIDSPRAY",
+      "AGILITY",
+      "CLAIRVOYANCE",
+      "CLARITY",
+      "CONFUSE",
+      "FLAMEARMOR",
+      "FREEACTION",
+      "HEAL",
+      "INSIGHT",
+      "INVIS",
+      "ELECRESIST",
+      "MIGHT",
+      "OVERGROWTH",
+      "LIGHTNING",
+      "CLERIC",
+      "CONSECRATELESSER",
+      "FROSTARMORLESSER",
+      "SUNDERINGQUAKE",
+      "ELEMENTALBURST",
+      "BUGSLESSER",
+      "ECLIPSE"
+    ]
   },
   {
     "type": "mutation",
@@ -643,7 +666,16 @@
     "description": "Powers from beyond have granted you the power to summon a skeletal dog.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
+    "changes_to": [
+      "PROF_CLEANSINGFLAME",
+      "PROF_CLEANSINGFLAME2",
+      "SPELL_SUMMONDOG2",
+      "SPELL_SUMMONSKEL",
+      "SPELL_SUMMONCULUS",
+      "SPELL_SUMMONTHING",
+      "SPELL_BUGS",
+      "SPELL_SUMMONVORTEX"
+    ],
     "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
   },
   {
@@ -692,7 +724,14 @@
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
     "prereqs2": [ "ARCANA_FIREAFFINITY" ],
-    "changes_to": [ "SPELL_ACIDARMOR", "SPELL_POISONARMOR2", "SPELL_ELECRESIST2", "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
+    "changes_to": [
+      "SPELL_ACIDARMOR",
+      "SPELL_POISONARMOR2",
+      "SPELL_ELECRESIST2",
+      "SPELL_FLAMEARMOR2",
+      "SPELL_FROSTARMOR",
+      "SPELL_PSYSHIELD"
+    ],
     "category": [ "DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_elemental_sign", 1 ], [ "arcana_mark_suppression", 1 ] ]
   },
@@ -1118,7 +1157,14 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_FROSTARMOR" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_CLERIC", "SPELL_FROSTARMORLESSER" ],
+    "cancels": [
+      "SPELL_EMBERS_DRAGONBLOOD",
+      "SPELL_POISONARMOR",
+      "SPELL_ELECRESIST",
+      "SPELL_FLAMEARMOR",
+      "SPELL_CLERIC",
+      "SPELL_FROSTARMORLESSER"
+    ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_holy_ward", 1 ] ],

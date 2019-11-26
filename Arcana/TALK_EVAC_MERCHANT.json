@@ -83,13 +83,13 @@
         "text": "How about 15 scales?",
         "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 15 } },
         "trial": { "type": "PERSUADE", "difficulty": 10 },
-        "success": { "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL", "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 15 } ] },
+        "success": {
+          "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
+          "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 15 } ]
+        },
         "failure": { "opinion": { "value": -1 }, "topic": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL" }
       },
-      {
-        "text": "What about other sources of gold and silver?",
-        "topic": "TALK_EVAC_MERCHANT_CF_MISSION_SCRAP"
-      },
+      { "text": "What about other sources of gold and silver?", "topic": "TALK_EVAC_MERCHANT_CF_MISSION_SCRAP" },
       { "text": "What about cash?", "topic": "TALK_EVAC_MERCHANT_CF_MISSION_CASH" },
       {
         "text": "I don't have enough on hand on the moment.  I'll deal with this later.",
@@ -114,7 +114,10 @@
         "text": "Could you accept 15 instead?",
         "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 15 } },
         "trial": { "type": "PERSUADE", "difficulty": 10 },
-        "success": { "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL", "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 15 } ] },
+        "success": {
+          "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
+          "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 15 } ]
+        },
         "failure": { "opinion": { "value": -1 }, "topic": "TALK_EVAC_MERCHANT_CF_MISSION_NODEAL" }
       },
       { "text": "What about cash?", "topic": "TALK_EVAC_MERCHANT_CF_MISSION_CASH" },
@@ -135,13 +138,23 @@
       {
         "text": "On second thought, I'll pay in scales.  Here you go.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "and": [ { "u_has_items": { "item": "FMCNote", "count": 175 } }, { "u_has_items": { "item": "CF_golden_scale", "count": 20 } } ] },
+        "condition": {
+          "and": [
+            { "u_has_items": { "item": "FMCNote", "count": 175 } },
+            { "u_has_items": { "item": "CF_golden_scale", "count": 20 } }
+          ]
+        },
         "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 20 } ]
       },
       {
         "text": "I don't have enough cash, so I'll pay in gold.",
         "topic": "TALK_EVAC_MERCHANT_CF_MISSION_DEAL",
-        "condition": { "and": [ { "not": { "u_has_items": { "item": "FMCNote", "count": 175 } } }, { "u_has_items": { "item": "CF_golden_scale", "count": 20 } } ] },
+        "condition": {
+          "and": [
+            { "not": { "u_has_items": { "item": "FMCNote", "count": 175 } } },
+            { "u_has_items": { "item": "CF_golden_scale", "count": 20 } }
+          ]
+        },
         "effect": [ { "u_consume_item": "cf_rep_trade_arrangement" }, { "u_consume_item": "CF_golden_scale", "count": 20 } ]
       },
       { "text": "Nevermind.  I'll be back later.", "topic": "TALK_DONE" }
@@ -181,6 +194,12 @@
     "id": "TALK_EVAC_MERCHANT_CF_MISSION_RECEIPT",
     "type": "talk_topic",
     "dynamic_line": "Alright.  Try not to lose this one.",
-    "responses": [ { "text": "Thank you, I'll go bring this to her.", "topic": "TALK_DONE", "effect": { "u_buy_item": "cf_rep_trade_receipt" } } ]
+    "responses": [
+      {
+        "text": "Thank you, I'll go bring this to her.",
+        "topic": "TALK_DONE",
+        "effect": { "u_buy_item": "cf_rep_trade_receipt" }
+      }
+    ]
   }
 ]

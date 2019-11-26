@@ -51,7 +51,6 @@
     "id": "TALK_CF_DEACON_HELP",
     "type": "talk_topic",
     "dynamic_line": {
-
       "npc_has_effect": "rural_church_aware",
       "yes": "No doubt the others here have ample work to be done.  As for myself, I'll manage.  I feel a bit bad having left the parish unattended though.  There's a group of survivors who knew Father Alexander currently sheltering there, and they likely will be have work to be done too.  I could direct you there if you'd like, in case you wish to visit them yourself.",
       "no": {
@@ -63,31 +62,31 @@
     "responses": [
       {
         "text": "Okay, go ahead.",
-        "condition": {
-          "and": [
-            { "npc_has_effect": "rural_church_aware" },
-            { "not": { "u_has_effect": "already_asked_deacon" } }
-          ]
-        },
+        "condition": { "and": [ { "npc_has_effect": "rural_church_aware" }, { "not": { "u_has_effect": "already_asked_deacon" } } ] },
         "switch": true,
         "effect": [
           { "u_add_effect": "already_asked_deacon", "duration": "PERMANENT" },
-          { "mapgen_update": "arcana_dummy", "om_terrain": "cf_church_4", "om_special": "cf_rural_church", "reveal_radius": 3 }
+          {
+            "mapgen_update": "arcana_dummy",
+            "om_terrain": "cf_church_4",
+            "om_special": "cf_rural_church",
+            "reveal_radius": 3
+          }
         ],
         "topic": "TALK_CF_DEACON_DESCRIBE"
       },
       {
         "text": "Perhaps I could check on them for you?",
-        "condition": {
-          "and": [
-            "has_no_available_mission",
-            { "not": { "u_has_effect": "already_asked_deacon" } }
-          ]
-        },
+        "condition": { "and": [ "has_no_available_mission", { "not": { "u_has_effect": "already_asked_deacon" } } ] },
         "switch": true,
         "effect": [
           { "u_add_effect": "already_asked_deacon", "duration": "PERMANENT" },
-          { "mapgen_update": "arcana_dummy", "om_terrain": "cf_church_4", "om_special": "cf_rural_church", "reveal_radius": 3 }
+          {
+            "mapgen_update": "arcana_dummy",
+            "om_terrain": "cf_church_4",
+            "om_special": "cf_rural_church",
+            "reveal_radius": 3
+          }
         ],
         "topic": "TALK_CF_DEACON_DESCRIBE"
       },

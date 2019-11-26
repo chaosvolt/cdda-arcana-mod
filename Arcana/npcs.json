@@ -103,7 +103,7 @@
   {
     "type": "npc",
     "id": "sanguine_order_shrike",
-    "//": "Oh shit, they have a shrike too.  Some dialogue if the player givess them a chance to speak up.",
+    "//": "Oh shit, they have a shrike too.  Some dialogue if the player gives them a chance to speak up.",
     "name_suffix": "Sanguine Shrike",
     "class": "NC_BLOOD_MAGE_SHRIKE",
     "attitude": 1,

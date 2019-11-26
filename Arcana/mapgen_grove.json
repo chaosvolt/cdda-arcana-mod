@@ -119,9 +119,7 @@
         "########################"
       ],
       "palettes": [ "arcana_palette" ],
-      "mapping": {
-        ".": { "items": [ { "item": "summoner_casualties", "chance": 5 } ] }
-      },
+      "mapping": { ".": { "items": [ { "item": "summoner_casualties", "chance": 5 } ] } },
       "terrain": { "<": "t_slope_up", "R": "t_root_wall" },
       "place_loot": [
         { "item": "book_syncretism", "x": 16, "y": 2 },

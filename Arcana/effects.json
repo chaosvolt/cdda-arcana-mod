@@ -368,9 +368,7 @@
     "type": "effect_type",
     "id": "spell_eclipse",
     "name": [ "Eclipse" ],
-    "desc": [
-      "Unholy power fuels you, strengthening your body with an unnatural adrenaline surge."
-    ],
+    "desc": [ "Unholy power fuels you, strengthening your body with an unnatural adrenaline surge." ],
     "remove_message": "You feel numb, hit with the sheer weight of the unnatural magic fading.",
     "decay_messages": [ [ "The blessing of the eclipse is waning.", "bad" ] ],
     "blocks_effects": [ "bleed", "winded", "lack_sleep", "sleep" ],
@@ -544,10 +542,7 @@
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": "1 m",
-    "base_mods": {
-      "dex_mod": [ -1 ],
-      "speed_mod": [ -10 ]
-    },
+    "base_mods": { "dex_mod": [ -1 ], "speed_mod": [ -10 ] },
     "flags": [ "EFFECT_ELECTRIC_IMMUNE" ]
   },
   {

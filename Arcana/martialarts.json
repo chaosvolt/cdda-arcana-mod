@@ -69,7 +69,10 @@
     "id": "style_cleansingflame",
     "name": "Via Gladium et Malleo",
     "description": "The style of combatives developed by an arcane order, dedicated to fighting in defense of humanity.  Focuses on preserving momentum and fighting multiple opponents, using their fury in different ways depending on their weapon of choice.  The full extent of the style requires proper armament.",
-    "initiate": [ "You whisper a prayer to the gods, and ready yourself in a fluid stance.  Dii vult!", "%s whispers something, entering a fluid stance." ],
+    "initiate": [
+      "You whisper a prayer to the gods, and ready yourself in a fluid stance.  Dii vult!",
+      "%s whispers something, entering a fluid stance."
+    ],
     "learn_difficulty": 6,
     "primary_skill": "magic",
     "onmove_buffs": [

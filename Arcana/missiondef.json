@@ -84,20 +84,13 @@
     "name": "Retrieve The Cursed Blade",
     "description": "Obtain the cursed sword from the floating temple, and show it to the hermit.  The fallen relic may still be of use.",
     "goal": "MGOAL_CONDITION",
-    "goal_condition": {
-      "or": [
-        { "u_has_item": "stormbringer" },
-        { "u_has_item": "veilblade" }
-      ]
-    },
+    "goal_condition": { "or": [ { "u_has_item": "stormbringer" }, { "u_has_item": "veilblade" } ] },
     "difficulty": 5,
     "value": 250000,
     "start": {
       "assign_mission_target": { "om_terrain": "impact_site", "om_special": "Floating Temple", "reveal_radius": 3, "search_range": 180, "z": 0 }
     },
-    "end": {
-      "effect": [ { "npc_add_effect": "hermit_stage_1", "duration": "PERMANENT" } ]
-    },
+    "end": { "effect": [ { "npc_add_effect": "hermit_stage_1", "duration": "PERMANENT" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_RESTORE_SWORD",
     "dialogue": {
@@ -121,9 +114,7 @@
     "goal_condition": { "u_has_item": "veilblade" },
     "difficulty": 5,
     "value": 250000,
-    "end": {
-      "effect": [ { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" } ]
-    },
+    "end": { "effect": [ { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_AWAKEN_POWER",
     "dialogue": {
@@ -157,9 +148,7 @@
         "z": 0
       }
     },
-    "end": {
-      "effect": [ { "npc_add_effect": "hermit_stage_3", "duration": "PERMANENT" } ]
-    },
+    "end": { "effect": [ { "npc_add_effect": "hermit_stage_3", "duration": "PERMANENT" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_BECOME_PARAGON",
     "dialogue": {
@@ -193,9 +182,7 @@
         "z": 0
       }
     },
-    "end": {
-      "effect": [ { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" } ]
-    },
+    "end": { "effect": [ { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "Perhaps we shall at last atone...",

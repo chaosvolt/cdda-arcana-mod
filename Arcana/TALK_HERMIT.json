@@ -75,11 +75,7 @@
         "text": "What I can do to help?",
         "topic": "TALK_MISSION_LIST",
         "condition": {
-          "and": [
-            "has_no_available_mission",
-            { "not": "has_assigned_mission" },
-            { "u_has_effect": "hermit_earned_trust_2" }
-          ]
+          "and": [ "has_no_available_mission", { "not": "has_assigned_mission" }, { "u_has_effect": "hermit_earned_trust_2" } ]
         }
       },
       {

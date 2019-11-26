@@ -292,14 +292,8 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
-      "set": [
-        { "point": "trap", "id": "tr_portal", "x": [ 9, 11 ], "y": [ 9, 14 ], "repeat": [ 1, 2 ] }
-      ],
-      "mapping": {
-        "{": {
-          "item": [ { "item": "glass_shard", "chance": 75 } ]
-        }
-      },
+      "set": [ { "point": "trap", "id": "tr_portal", "x": [ 9, 11 ], "y": [ 9, 14 ], "repeat": [ 1, 2 ] } ],
+      "mapping": { "{": { "item": [ { "item": "glass_shard", "chance": 75 } ] } },
       "terrain": { "?": [ "t_window_stained_blue", "t_rock_floor" ] },
       "place_loot": [
         { "group": "chalice_cult_gear", "x": [ 9, 12 ], "y": 7, "chance": 5, "repeat": 8 },
@@ -344,9 +338,7 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
-      "set": [
-        { "point": "trap", "id": "tr_portal", "x": [ 12, 13 ], "y": [ 11, 12 ] }
-      ],
+      "set": [ { "point": "trap", "id": "tr_portal", "x": [ 12, 13 ], "y": [ 11, 12 ] } ],
       "mapping": {
         "d": { "item": [ { "item": "glass_shard", "chance": 50 } ] },
         "h": { "item": [ { "item": "glass_shard", "chance": 25 } ] }

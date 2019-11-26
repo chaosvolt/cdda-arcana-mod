@@ -171,9 +171,7 @@
         "                        "
       ],
       "palettes": [ "roof_palette" ],
-      "terrain": {
-        "9": "t_flat_roof"
-      },
+      "terrain": { "9": "t_flat_roof" },
       "furniture": { "9": "f_solar_unit" }
     }
   }

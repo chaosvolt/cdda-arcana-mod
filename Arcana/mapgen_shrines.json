@@ -94,9 +94,7 @@
       "set": [ { "point": "trap", "id": "tr_portal", "x": [ 11, 12 ], "y": [ 0, 2 ], "repeat": [ 0, 1 ] } ],
       "terrain": { "T": [ "t_rock_smooth", "t_rock_smooth", "t_dirt", "t_lava" ], "x": "t_rdoor_boarded" },
       "furniture": { "C": "f_coffin_c" },
-      "mapping": {
-        "C": { "furniture": "f_coffin_c", "items": [ { "item": "summoner_casualties", "chance": 80 } ] }
-      },
+      "mapping": { "C": { "furniture": "f_coffin_c", "items": [ { "item": "summoner_casualties", "chance": 80 } ] } },
       "place_loot": [
         { "group": "unaligned_arcanist_books", "x": 4, "y": [ 6, 10 ], "chance": 40, "repeat": 10 },
         { "group": "unaligned_arcanist_books", "x": 19, "y": [ 6, 10 ], "chance": 40, "repeat": 10 },

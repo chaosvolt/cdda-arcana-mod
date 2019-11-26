@@ -14,12 +14,17 @@
     "responses": [
       {
         "text": "[MISSION] I'm here to put a stop to this.",
-        "condition": { "and": [ { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } }, { "u_has_mission": "MISSION_CF_GM_3" } ] },
+        "condition": {
+          "and": [
+            { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } },
+            { "u_has_mission": "MISSION_CF_GM_3" }
+          ]
+        },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_ITS_TIME_TO_STOP"
       },
       {
         "text": "...lanius.",
-        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2"  ] },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LANIUS",
         "opinion": { "value": 1 }
       },
@@ -191,10 +196,7 @@
     "type": "talk_topic",
     "dynamic_line": "I can tell you this much: you shouldn't be down here.  Any more questions?",
     "responses": [
-      {
-        "text": "Who are you?",
-        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHO"
-      },
+      { "text": "Who are you?", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHO" },
       { "text": "Never mind...", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE" },
       { "text": "[ATTACK] Fuck off.", "topic": "TALK_DONE", "effect": "insult_combat" },
       {
@@ -220,9 +222,9 @@
   {
     "id": "BGSS_BLOOD_MAGE_2_STORY1",
     "type": "talk_topic",
-    "dynamic_line": "I was on a hunt.  Not much to say about that, just another mage hunter making trouble.",
+    "dynamic_line": "I was on a hunt.  Not much to say about that, just another mage hunter making trouble.  Didn't get to finish my business with them.",
     "responses": [
-      { "text": "What happened?", "topic": "BGSS_CF_1_STORY3" },
+      { "text": "What happened?", "topic": "BGSS_CF_1_STORY2" },
       { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
       { "text": "<end_talking>", "topic": "TALK_DONE" }
     ]

@@ -63,12 +63,7 @@
     "worn_override": "NC_CF_DEACON_worn",
     "carry_override": "NC_CF_DEACON_carry",
     "weapon_override": "EMPTY_GROUP",
-    "traits": [
-      { "group": "Appearance_demographics" },
-      [ "CF_DEACON", 100 ],
-      [ "SPIRITUAL", 100 ],
-      [ "PACIFIST", 100 ]
-    ]
+    "traits": [ { "group": "Appearance_demographics" }, [ "CF_DEACON", 100 ], [ "SPIRITUAL", 100 ], [ "PACIFIST", 100 ] ]
   },
   {
     "type": "npc_class",
