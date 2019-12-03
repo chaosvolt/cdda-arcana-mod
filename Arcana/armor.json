@@ -51,6 +51,15 @@
     "symbol": "[",
     "looks_like": "silver_necklace",
     "color": "light_red",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "REGEN_MANA", "multiply": 0.025 }, { "value": "MAX_MANA", "multiply": 0.025 } ]
+        }
+      ]
+    },
     "flags": [ "FANCY" ]
   },
   {
@@ -66,6 +75,15 @@
     "looks_like": "holy_symbol",
     "color": "light_gray",
     "flags": [ "FANCY" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "REGEN_MANA", "multiply": 0.025 }, { "value": "MAX_MANA", "multiply": 0.025 } ]
+        }
+      ]
+    },
     "use_action": "MEDITATE"
   },
   {
@@ -81,6 +99,15 @@
     "symbol": "[",
     "looks_like": "jade_brooch",
     "color": "dark_gray",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "REGEN_MANA", "multiply": 0.025 }, { "value": "MAX_MANA", "multiply": 0.025 } ]
+        }
+      ]
+    },
     "flags": [ "FANCY" ]
   },
   {
@@ -95,6 +122,15 @@
     "symbol": "[",
     "looks_like": "holy_symbol",
     "color": "blue",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "REGEN_MANA", "multiply": 0.1 }, { "value": "MAX_MANA", "multiply": 0.01 } ]
+        }
+      ]
+    },
     "use_action": {
       "type": "bandolier",
       "capacity": 200,

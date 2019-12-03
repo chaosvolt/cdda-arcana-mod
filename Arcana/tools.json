@@ -63,6 +63,9 @@
     "looks_like": "small_relic",
     "color": "yellow",
     "flags": [ "MAGIC_FOCUS" ],
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.25 } ] } ]
+    },
     "use_action": [ "MEDITATE", { "type": "cast_spell", "spell_id": "arcana_item_chalice_offering", "no_fail": true, "level": 0 } ]
   },
   {
@@ -879,6 +882,9 @@
     "ammo": "essence_pure_type",
     "max_charges": 1,
     "charges_per_use": 1,
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.25 } ] } ]
+    },
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_orb_veil_mapping", "no_fail": true, "level": 0 } ],
     "artifact_data": { "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO", "AEP_CLAIRVOYANCE" ] },
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
@@ -966,6 +972,9 @@
         "type": "transform"
       }
     ],
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.5 } ] } ]
+    },
     "relative": { "cutting": -5, "weight": -318, "price": 50000 },
     "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD", "MAGIC_FOCUS" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] },
@@ -993,6 +1002,9 @@
     "turns_per_charge": 1,
     "revert_to": "veilblade",
     "use_action": { "type": "mutagen_iv", "mutation_category": "VEIL" },
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.5 } ] } ]
+    },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
     "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
