@@ -894,7 +894,7 @@
     "type": "TOOL",
     "name": "druidic staff",
     "name_plural": "druidic staves",
-    "description": "A short wooden staff decorated with engraved silver, depicting a mixture of exotic natural scenes and various holy symbols.  It is said to represent the instincts deep within the heart, tempered by restraint and reason.  Using it can repair items made of various plant or animal products and stone, but not more refined materials like metal or glass.",
+    "description": "A short wooden staff decorated with engraved silver, depicting a mixture of exotic natural scenes and various holy symbols.  It is said to represent the instincts deep within the heart, tempered by restraint and reason.  Using it can repair and fortify items made of various plant or animal products and stone, but not more refined materials like metal or glass.",
     "weight": 1310,
     "volume": 8,
     "price": 1000,
@@ -904,7 +904,7 @@
     "looks_like": "cudgel",
     "color": "light_gray",
     "ammo": "essence_dull_type",
-    "max_charges": 150,
+    "max_charges": 300,
     "charges_per_use": 1,
     "use_action": [
       {
@@ -915,6 +915,12 @@
         "tool_quality": 20,
         "cost_scaling": 0,
         "move_cost": 1000
+      },
+      {
+        "type": "sew_advanced",
+        "materials": [ "bone", "chitin", "acidchitin", "clay", "cotton", "fur", "leather", "gutskin", "stone", "wood", "wool" ],
+        "skill": "tailor",
+        "clothing_mods": [ "arcana_acidchitin_weave", "arcana_bone_weave", "arcana_chitin_weave", "arcana_clay_weave", "arcana_stone_weave", "arcana_wood_weave" ]
       }
     ],
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]

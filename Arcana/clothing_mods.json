@@ -1,0 +1,79 @@
+[
+  {
+    "type": "clothing_mod",
+    "id": "arcana_acidchitin_weave",
+    "flag": "arcana_acidchitin_weave",
+    "item": "acidchitin_piece",
+    "implement_prompt": "Weave with biosilicified chitin",
+    "destroy_prompt": "Dispel biosilicified chitin weave",
+    "mod_value": [
+      { "type": "bash", "value": 0.5, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "cut", "value": 0.75, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "acid", "value": 0.5, "round_up": true, "proportion": [ "thickness", "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "arcana_bone_weave",
+    "flag": "arcana_bone_weave",
+    "item": "bone",
+    "implement_prompt": "Weave with bone",
+    "destroy_prompt": "Dispel bone weave",
+    "mod_value": [
+      { "type": "bash", "value": 0.5, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "cut", "value": 0.75, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "encumbrance", "value": -0.25, "round_up": true, "proportion": [ "thickness", "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "arcana_chitin_weave",
+    "flag": "arcana_chitin_weave",
+    "item": "chitin_piece",
+    "implement_prompt": "Weave with chitin",
+    "destroy_prompt": "Dispel chitin weave",
+    "mod_value": [
+      { "type": "bash", "value": 0.75, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "cut", "value": 0.75, "round_up": true, "proportion": [ "thickness", "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "arcana_clay_weave",
+    "flag": "arcana_clay_weave",
+    "item": "clay_lump",
+    "implement_prompt": "Weave with clay",
+    "destroy_prompt": "Dispel clay weave",
+    "mod_value": [
+      { "type": "bash", "value": 0.25, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "cut", "value": 0.75, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "fire", "value": 0.5, "round_up": true, "proportion": [ "thickness", "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "arcana_stone_weave",
+    "flag": "arcana_stone_weave",
+    "item": "rock",
+    "implement_prompt": "Weave with stone",
+    "destroy_prompt": "Dispel stone weave",
+    "mod_value": [
+      { "type": "bash", "value": 0.5, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "cut", "value": 0.75, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "fire", "value": 0.25, "round_up": true, "proportion": [ "thickness", "coverage" ] }
+    ]
+  },
+  {
+    "type": "clothing_mod",
+    "id": "arcana_wood_weave",
+    "flag": "arcana_wood_weave",
+    "item": "stick",
+    "implement_prompt": "Weave with wood",
+    "destroy_prompt": "Dispel wood weave",
+    "mod_value": [
+      { "type": "bash", "value": 0.5, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "cut", "value": 0.25, "round_up": true, "proportion": [ "thickness", "coverage" ] },
+      { "type": "encumbrance", "value": -0.5, "round_up": true, "proportion": [ "thickness", "coverage" ] }
+    ]
+  }
+]
