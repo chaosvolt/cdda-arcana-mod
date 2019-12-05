@@ -97,6 +97,27 @@
     "field_intensity_variance": 0.5
   },
   {
+    "id": "arcana_aftermath_conjure_shadow_field_blindness",
+    "type": "SPELL",
+    "name": "Aftermath: Shadow Blindness",
+    "description": "This inflicts momentary blindness on targets caught in it.",
+    "message": "",
+    "effect": "target_attack",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "IGNORE_WALLS", "SILENT" ],
+    "effect_str": "blind",
+    "min_range": 6,
+    "max_range": 24,
+    "range_increment": 0.9,
+    "min_aoe": 2,
+    "max_aoe": 8,
+    "aoe_increment": 0.3,
+    "max_level": 20,
+    "min_duration": 1200,
+    "max_duration": 12000,
+    "duration_increment": 540
+  },
+  {
     "id": "arcana_aftermath_drain_life_fatigue",
     "type": "SPELL",
     "name": "Drain Life Fatigue",
@@ -700,12 +721,13 @@
     "base_energy_cost": 180,
     "final_energy_cost": 90,
     "energy_increment": -4.5,
+    "min_duration": 60000,
+    "max_duration": 240000,
+    "duration_increment": 9000,
     "field_id": "fd_veil_light",
     "field_chance": 1,
     "min_field_intensity": 1,
-    "max_field_intensity": 3,
-    "field_intensity_increment": 0.1,
-    "field_intensity_variance": 0.5
+    "max_field_intensity": 1
   },
   {
     "id": "arcana_blessing_conjure_shadow_field",
@@ -714,6 +736,9 @@
     "description": "Arcane Blessing\nUsing this spell will envelop the targeted area in lingering darkness, in addition to inflicting blindness on enemies caught in the initial effect.",
     "message": "Wisps of inky, living shadow emerge from the ground, engulfing the area as you will it.",
     "effect": "target_attack",
+    "extra_effects": [
+      { "id": "arcana_aftermath_conjure_shadow_field_blindness", "hit_self": false, "max_level": 20 }
+    ],
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "CONCENTRATE", "NO_LEGS", "IGNORE_WALLS", "SILENT" ],
     "effect_str": "blind",
@@ -732,9 +757,9 @@
     "base_energy_cost": 240,
     "final_energy_cost": 120,
     "energy_increment": -6,
-    "min_duration": 1200,
-    "max_duration": 12000,
-    "duration_increment": 540,
+    "min_duration": 60000,
+    "max_duration": 240000,
+    "duration_increment": 9000,
     "field_id": "fd_veil_darkness",
     "field_chance": 1,
     "min_field_intensity": 1,
@@ -1983,7 +2008,9 @@
     "field_id": "fd_veil_darkness",
     "field_chance": 1,
     "min_field_intensity": 1,
-    "max_field_intensity": 1
+    "max_field_intensity": 1,
+    "min_duration": 180000,
+    "max_duration": 180000
   },
   {
     "id": "arcana_item_scroll_moon_blind",
@@ -2107,7 +2134,7 @@
     "min_duration": 6000,
     "max_duration": 30000,
     "field_id": "fd_archon_rift",
-    "field_chance": 4,
+    "field_chance": 3,
     "min_field_intensity": 3,
     "max_field_intensity": 3
   },
@@ -2157,10 +2184,12 @@
     "effect": "target_attack",
     "min_aoe": 24,
     "max_aoe": 24,
+    "min_duration": 180000,
+    "max_duration": 180000,
     "field_id": "fd_veil_light",
     "field_chance": 1,
     "min_field_intensity": 3,
-    "max_field_intensity": 3
+    "max_field_intensity": 1
   },
   {
     "type": "SPELL",
@@ -2780,12 +2809,13 @@
     "base_energy_cost": 30,
     "final_energy_cost": 24,
     "energy_increment": -0.6,
+    "min_duration": 90000,
+    "max_duration": 180000,
+    "duration_increment": 9000,
     "field_id": "fd_veil_light",
     "field_chance": 2,
     "min_field_intensity": 1,
-    "max_field_intensity": 3,
-    "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.5,
+    "max_field_intensity": 1,
     "spell_class": "SPELL_LIGHT"
   },
   {

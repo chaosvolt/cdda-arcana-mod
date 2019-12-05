@@ -8,7 +8,7 @@
       { "translucency": 0 }
     ],
     "priority": 9,
-    "half_life": "15 minutes",
+    "half_life": "1 seconds",
     "phase": "plasma",
     "display_field": true,
     "display_items": false
@@ -16,9 +16,9 @@
   {
     "id": "fd_veil_light",
     "type": "field_type",
-    "//": "Light is just enough to make the tile it's in fully bright, seems the redundancy is needed to enable intensities, which is the main way that the spell can scale up effective duration.",
-    "intensity_levels": [ { "name": "strange light", "light_emitted": 10 }, { "light_emitted": 10 }, { "light_emitted": 10 } ],
-    "half_life": "30 minutes",
+    "//": "Light is just enough to make the tile it's in fully bright.",
+    "intensity_levels": [ { "name": "strange light", "light_emitted": 10 } ],
+    "half_life": "1 seconds",
     "phase": "plasma",
     "display_field": false
   },
@@ -36,7 +36,7 @@
         "convection_temperature_mod": -100
       }
     ],
-    "half_life": "30 minutes",
+    "half_life": "1 seconds",
     "phase": "plasma",
     "display_field": false
   }
