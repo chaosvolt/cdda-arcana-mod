@@ -29,7 +29,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ] } ]
     },
-    "ammo_effects": [ "LIGHTNING", "EMP" ],
+    "ammo_effects": [ "LIGHTNING", "EMP", "PARALYZEPOISON" ],
     "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
     "use_action": "MEDITATE"
   },
@@ -203,7 +203,7 @@
     "pierce": 10,
     "range": 12,
     "loudness": 50,
-    "ammo_effects": [ "LIGHTNING", "EMP" ]
+    "ammo_effects": [ "LIGHTNING", "EMP", "PARALYZEPOISON" ]
   },
   {
     "id": "mut_dragonfire",

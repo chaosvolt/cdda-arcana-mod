@@ -781,10 +781,12 @@
     "name": "summoned skeletal dog",
     "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "speed": 150,
+    "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] }
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] }
   },
   {
     "id": "mon_skeleton_summoned",
@@ -842,11 +844,13 @@
     "type": "MONSTER",
     "name": "summoned kreck",
     "categories": [ "CLASSIC" ],
+    "mountable_weight_ratio": 0.9,
+    "speed": 150,
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -855,12 +859,24 @@
     "type": "MONSTER",
     "name": "summoned triffid",
     "categories": [ "CLASSIC" ],
+    "mountable_weight_ratio": 0.9,
+    "speed": 125,
     "species": [ "NETHER" ],
     "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "special_attacks": [ { "type": "bite", "cooldown": 10 } ],
-    "extend": { "flags": [ "REGENERATES_1", "VENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "starting_ammo": { "barb_paralysis": 100 },
+    "special_attacks": [
+      { "type": "bite", "cooldown": 10 },
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "gun_type": "barb_launcher",
+        "ranges": [ [ 2, 12, "DEFAULT" ] ],
+        "description": "The summoned triffid spits a dart!"
+      }
+    ],
+    "extend": { "flags": [ "REGENERATES_1", "VENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -896,11 +912,12 @@
     "type": "MONSTER",
     "name": "summoned mi-go",
     "categories": [ "CLASSIC" ],
+    "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -923,9 +940,11 @@
     "type": "MONSTER",
     "name": "summoned shoggoth",
     "categories": [ "CLASSIC" ],
+    "mountable_weight_ratio": 0.9,
+    "speed": 200,
     "path_settings": { "max_dist": 10 },
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_10", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "REGENERATES_10", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "ABSORBS_SPLITS", "REGENERATES_50" ] }
   },
   {
@@ -934,6 +953,7 @@
     "type": "MONSTER",
     "name": "summoned shadow",
     "categories": [ "CLASSIC" ],
+    "mountable_weight_ratio": 0.9,
     "speed": 80,
     "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.1 } ],
