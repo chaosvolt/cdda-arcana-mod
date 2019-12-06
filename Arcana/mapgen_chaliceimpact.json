@@ -29,8 +29,7 @@
     "id": "chalice_cult_gear",
     "type": "item_group",
     "items": [
-      [ "offering_chalice", 4 ],
-      [ "offering_chalice_used", 4 ],
+      [ "offering_chalice", 8 ],
       [ "spear_pestilence", 3 ],
       [ "robe_shadow", 2 ],
       [ "thunder_sigil", 2 ],

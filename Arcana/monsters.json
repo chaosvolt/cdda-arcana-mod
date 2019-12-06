@@ -832,7 +832,14 @@
     "mountable_weight_ratio": 0.9,
     "speed": 150,
     "path_settings": { "max_dist": 10 },
-    "special_attacks": [ [ "PARA_STING", 20 ] ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_id": "arcana_monster_dart_yugg",
+        "cooldown": 20,
+        "monster_message": "The summoned yugg fires a dart at %3$s!"
+      }
+    ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
@@ -865,15 +872,13 @@
     "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "starting_ammo": { "barb_paralysis": 100 },
     "special_attacks": [
       { "type": "bite", "cooldown": 10 },
       {
-        "type": "gun",
+        "type": "spell",
+        "spell_id": "arcana_monster_dart_triffid",
         "cooldown": 5,
-        "gun_type": "barb_launcher",
-        "ranges": [ [ 2, 12, "DEFAULT" ] ],
-        "description": "The summoned triffid spits a dart!"
+        "monster_message": "The summoned triffid fires a dart at %3$s!"
       }
     ],
     "extend": { "flags": [ "REGENERATES_1", "VENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },

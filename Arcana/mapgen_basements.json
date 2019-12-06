@@ -224,7 +224,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "place_loot": [
-        { "item": "offering_chalice_used", "x": 11, "y": 19 },
+        { "item": "offering_chalice", "x": 11, "y": 19 },
         { "item": "note_chalice_tenet", "x": 11, "y": 19, "chance": 90 },
         { "group": "chalice_cult_spells", "x": 11, "y": 19, "chance": 10 },
         { "group": "chalice_cult_casualties_fresh", "x": 11, "y": 13, "chance": 100 },
