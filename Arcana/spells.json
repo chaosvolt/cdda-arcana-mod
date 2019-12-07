@@ -1859,6 +1859,40 @@
     "max_duration": 240000
   },
   {
+    "id": "arcana_item_pestilence",
+    "type": "SPELL",
+    "name": "Pestilence Summons",
+    "description": "Mutated vermin come to your aid.",
+    "message": "Vermin slither out from the earth at your feet, heeding your call.",
+    "extra_effects": [
+      { "id": "arcana_item_pestilence_aftereffect", "hit_self": false }
+    ],
+    "valid_targets": [ "ground" ],
+    "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION", "SILENT" ],
+    "effect": "summon",
+    "effect_str": "mon_centipede_giant_summoned",
+    "min_damage": 1,
+    "max_damage": 3,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "min_duration": 4320000,
+    "max_duration": 8640000
+  },
+  {
+    "id": "arcana_item_pestilence_aftereffect",
+    "type": "SPELL",
+    "name": "Pestilence Aftermath",
+    "description": "Destruction of natural terrain around you.",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "message": "",
+    "effect_str": "arcana_fire_dragonblood3",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_aoe": 6,
+    "max_aoe": 6
+  },
+  {
     "type": "SPELL",
     "id": "arcana_item_scroll_artifice",
     "name": "Call to Order",
@@ -3860,6 +3894,38 @@
     "flags": [ "SILENT" ],
     "message": "",
     "effect": "target_attack"
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_react_spear_pestilence_wonder",
+    "name": "React: Pestilence",
+    "description": "Chance of inflicting paralytic poison.",
+    "valid_targets": [ "hostile" ],
+    "message": "",
+    "effect": "none",
+    "flags": [ "WONDER", "SILENT" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "extra_effects": [
+      { "id": "arcana_react_nothing" },
+      { "id": "arcana_react_nothing" },
+      { "id": "arcana_react_spear_pestilence_poison" }
+    ]
+  },
+  {
+    "id": "arcana_react_spear_pestilence_poison",
+    "type": "SPELL",
+    "name": "React: Paralysis",
+    "description": "The actual poison effect.",
+    "message": "",
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "valid_targets": [ "hostile" ],
+    "effect_str": "paralyzepoison",
+    "min_range": 1,
+    "max_range": 1,
+    "effect": "target_attack",
+    "min_duration": 1000,
+    "max_duration": 2000
   },
   {
     "type": "SPELL",

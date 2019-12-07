@@ -132,15 +132,15 @@
     "name_plural": "incorruptible swords (on)",
     "//": "Weapons normally come with the vorpal flag, not the technique.  But gaining the technique through normal means likely breaks with transforming weapons.",
     "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  The blade is giving off an intense white light, and searing heat.",
-    "turns_per_charge": 900,
+    "turns_per_charge": 300,
     "revert_to": "sun_sword",
-    "techniques": [ "WBLOCK_2", "VORPAL" ],
+    "techniques": [ "WBLOCK_2", "tec_weapon_incorruptible_slash" ],
     "use_action": [
       { "type": "firestarter", "moves": 30 },
       { "menu_text": "Turn off", "type": "transform", "msg": "The sword's radiance fades.", "target": "sun_sword" }
     ],
-    "relative": { "cutting": 5 },
-    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING" ] },
+    "relative": { "cutting": 3 },
+    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
   {
@@ -204,13 +204,13 @@
     "category": "tools",
     "name": "spear of pestilence",
     "name_plural": "spears of pestilence",
-    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will attempt to summon giant insects.",
+    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will temporarily summon mutant vermin to aid you, and wielding it makes movement easier.",
     "material": [ "steel", "wood", "chitin" ],
     "ammo": "essence_type",
     "max_charges": 9,
-    "charges_per_use": 3,
-    "artifact_data": { "effects_activated": [ "AEA_BUGS" ] },
-    "use_action": "ARTIFACT",
+    "charges_per_use": 1,
+    "relic_data": { "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "add": -25 } ], "hit_you_effect": [ { "id": "arcana_react_spear_pestilence_wonder" } ] } ] },
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 },
     "relative": { "weight": 540, "bashing": 2, "price": 1000 },
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
   },
@@ -983,7 +983,7 @@
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.5 } ] } ]
     },
     "relative": { "cutting": -5, "weight": -318, "price": 50000 },
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD", "MAGIC_FOCUS" ] },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD", "MAGIC_FOCUS", "NONCONDUCTIVE" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] },
     "artifact_data": { "charge_type": "ARTC_PORTAL" }
   },

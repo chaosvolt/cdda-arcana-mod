@@ -79,5 +79,21 @@
     "stun_dur": 1,
     "down_dur": 1,
     "mult_bonuses": [ [ "movecost", 0.0 ] ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_weapon_incorruptible_slash",
+    "name": "Flame Strike",
+    "min_unarmed": 0,
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "flat_bonuses": [ [ "damage", "heat", 30 ] ],
+    "crit_tec": true,
+    "weighting": -25,
+    "messages": [
+      "Your blade sears through %s with a brilliant glow",
+      "<npcname>'s blade sears through %s with a brilliant glow"
+    ],
+    "description": "+30 fire damage, crit only"
   }
 ]
