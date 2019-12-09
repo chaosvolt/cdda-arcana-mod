@@ -191,7 +191,7 @@
     "material": [ "iron", "cotton", "copper" ],
     "color": "light_red",
     "ammo": "essence_dull_type",
-    "max_charges": 30,
+    "max_charges": 90,
     "use_action": [
       {
         "target": "jade_hauberk_on",
@@ -218,7 +218,7 @@
     "covers": [ "HEAD", "EYES", "MOUTH", "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
     "coverage": 100,
     "environmental_protection": 15,
-    "turns_per_charge": 30,
+    "turns_per_charge": 20,
     "revert_to": "jade_hauberk",
     "use_action": {
       "target": "jade_hauberk",
