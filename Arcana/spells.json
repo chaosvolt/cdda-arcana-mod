@@ -1588,6 +1588,38 @@
     "effect_str": "PAIN"
   },
   {
+    "id": "arcana_item_jade_hauberk_healing",
+    "type": "SPELL",
+    "name": "Hauberk Mending",
+    "description": "Weaker healing than gilded aegis, but less pain.",
+    "message": "Your armor's mantle shimmers with an odd light, sending the dull ache of healing magic through your body.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "extra_effects": [ { "id": "arcana_item_jade_hauberk_pain", "hit_self": true } ],
+    "effect_str": "arcana_aegis_mending",
+    "min_damage": -8,
+    "max_damage": -8,
+    "effect": "target_attack",
+    "min_duration": 100,
+    "max_duration": 100,
+    "energy_source": "FATIGUE",
+    "base_energy_cost": 20,
+    "final_energy_cost": 20
+  },
+  {
+    "id": "arcana_item_jade_hauberk_pain",
+    "type": "SPELL",
+    "name": "Hauberk Pain Side Effect",
+    "description": "Still stings a bit.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT" ],
+    "min_damage": -4,
+    "max_damage": -4,
+    "effect": "recover_energy",
+    "effect_str": "PAIN"
+  },
+  {
     "type": "SPELL",
     "id": "arcana_item_orb_veil_mapping",
     "name": "Gaze Into Greater Horizons",
