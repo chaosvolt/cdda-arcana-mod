@@ -966,7 +966,7 @@
     "regenerates": 5,
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
-    "delete": { "flags": [ "ABSORBS_SPLITS",  ] }
+    "delete": { "flags": [ "ABSORBS_SPLITS" ] }
   },
   {
     "id": "mon_shadow_summoned",
@@ -985,7 +985,7 @@
     "death_drops": {  },
     "death_function": [ "MELT" ],
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ ="PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN", "ELECTRIC" ] }
   },
   {
