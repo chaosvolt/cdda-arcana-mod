@@ -188,8 +188,9 @@
     "copy-from": "chainmail_hauberk",
     "name": "jade hauberk",
     "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  It can be used to project a powerful protective barrier, or to channel a weaker version of the aegis' healing magic.  The latter ability drains fatigue rather than consuming essence.",
-    "material": [ "iron", "cotton", "copper" ],
+    "material": [ "iron", "copper", "leather", "cotton" ],
     "color": "light_red",
+    "environmental_protection": 1,
     "ammo": "essence_dull_type",
     "max_charges": 90,
     "use_action": [
@@ -226,7 +227,7 @@
       "type": "transform"
     },
     "qualities": [ [ "GLARE", 1 ] ],
-    "extend": { "flags": [ "NO_REPAIR", "SEMITANGIBLE", "AURA", "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "CUT_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE" ] }
+    "extend": { "flags": [ "NO_REPAIR", "SEMITANGIBLE", "AURA", "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "CUT_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "CLIMATE_CONTROL" ] }
   },
   {
     "id": "jade_wreath",

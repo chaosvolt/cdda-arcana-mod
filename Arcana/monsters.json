@@ -488,6 +488,7 @@
     "vision_day": 50,
     "luminance": 200,
     "harvest": "exempt",
+    "regenerates": 1,
     "special_attacks": [
       {
         "type": "gun",
@@ -508,7 +509,6 @@
     "death_drops": "mon_spirit_of_fire_death_drops",
     "death_function": [ "MELT" ],
     "flags": [
-      "REGENERATES_1",
       "NOHEAD",
       "HARDTOSHOOT",
       "WEBWALK",
@@ -703,6 +703,7 @@
     "mountable_weight_ratio": 0.9,
     "speed": 180,
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "special_attacks": [
       {
         "type": "bite",
@@ -712,7 +713,7 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
   },
   {
@@ -724,9 +725,10 @@
     "species": [ "NETHER" ],
     "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "upgrades": { "half_life": 8, "into": "mon_zombie_brute" } }
   },
   {
@@ -740,9 +742,10 @@
     "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
   },
   {
@@ -754,9 +757,10 @@
     "species": [ "NETHER" ],
     "path_settings": { "max_dist": 10 },
     "special_attacks": [ [ "SMASH", 25 ] ],
+    "regenerates": 1,
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -769,9 +773,10 @@
     "speed": 200,
     "categories": [ "CLASSIC" ],
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "death_drops": {  },
     "special_attacks": [ [ "RANGED_PULL", 20 ], [ "LUNGE", 10 ] ],
-    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
   },
   {
@@ -784,9 +789,10 @@
     "speed": 150,
     "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] }
   },
   {
     "id": "mon_skeleton_summoned",
@@ -798,10 +804,11 @@
     "hp": 50,
     "speed": 80,
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "attack_effs": [ { "id": "stunned", "duration": 5, "chance": 30 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "upgrades": { "half_life": 15, "into": "mon_skeleton_hulk" } }
   },
   {
@@ -819,7 +826,8 @@
     "vision_night": 2,
     "luminance": 60,
     "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
-    "extend": { "flags": [ "SEES", "ELECTRIC", "REGENERATES_10", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "regenerates": 10,
+    "extend": { "flags": [ "SEES", "ELECTRIC", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "STUMBLES" ] }
   },
   {
@@ -832,6 +840,7 @@
     "mountable_weight_ratio": 0.9,
     "speed": 150,
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "special_attacks": [
       {
         "type": "spell",
@@ -842,7 +851,7 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
   },
   {
@@ -857,7 +866,8 @@
     "vision_night": 50,
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] },
+    "regenerates": 1,
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -870,6 +880,7 @@
     "speed": 125,
     "species": [ "NETHER" ],
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [
@@ -881,7 +892,7 @@
         "monster_message": "The summoned triffid fires a dart at %3$s!"
       }
     ],
-    "extend": { "flags": [ "REGENERATES_1", "VENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
+    "extend": { "flags": [ "VENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -892,10 +903,11 @@
     "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "ATTACKMON" ] }
   },
   {
@@ -905,10 +917,11 @@
     "name": "summoned hunting horror",
     "categories": [ "CLASSIC" ],
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH" ] }
   },
   {
@@ -919,10 +932,11 @@
     "categories": [ "CLASSIC" ],
     "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "death_function": [ "MELT" ],
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PET_HARNESSABLE" ] },
+    "extend": { "flags": [ "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -932,11 +946,12 @@
     "name": "summoned flying polyp",
     "categories": [ "CLASSIC" ],
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
-    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
   },
   {
@@ -948,9 +963,10 @@
     "mountable_weight_ratio": 0.9,
     "speed": 200,
     "path_settings": { "max_dist": 10 },
+    "regenerates": 5,
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_10", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
-    "delete": { "flags": [ "ABSORBS_SPLITS", "REGENERATES_50" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
+    "delete": { "flags": [ "ABSORBS_SPLITS",  ] }
   },
   {
     "id": "mon_shadow_summoned",
@@ -965,10 +981,11 @@
     "vision_day": 2,
     "vision_night": 50,
     "path_settings": { "max_dist": 10 },
+    "regenerates_in_dark": true,
     "death_drops": {  },
     "death_function": [ "MELT" ],
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "REGENERATES_IN_DARK", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ ="PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN", "ELECTRIC" ] }
   },
   {
@@ -984,8 +1001,9 @@
     "vision_day": 2,
     "vision_night": 50,
     "path_settings": { "max_dist": 10 },
+    "regenerates_in_dark": true,
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "REGENERATES_IN_DARK", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "SMELLS" ] }
   },
   {
@@ -994,8 +1012,9 @@
     "type": "MONSTER",
     "name": "summoned giant centipede",
     "path_settings": { "max_dist": 10 },
+    "regenerates": 1,
     "death_drops": {  },
     "death_function": [ "MELT" ],
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
   }
 ]
