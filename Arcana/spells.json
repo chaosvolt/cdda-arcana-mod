@@ -3962,6 +3962,23 @@
   },
   {
     "type": "SPELL",
+    "id": "arcana_react_scourge_moonstone_wonder",
+    "name": "React: Moonstone Wonder",
+    "description": "One in three chance of triggering life drain bonus effects.",
+    "valid_targets": [ "hostile" ],
+    "message": "",
+    "effect": "none",
+    "flags": [ "WONDER", "SILENT" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "extra_effects": [
+      { "id": "arcana_react_nothing" },
+      { "id": "arcana_react_nothing" },
+      { "id": "arcana_react_cursed_sword_shell" }
+    ]
+  },
+  {
+    "type": "SPELL",
     "id": "arcana_react_nothing",
     "name": "React: Nothing",
     "description": "Dirty hack to add RNG to react effects.",

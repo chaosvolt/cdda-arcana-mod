@@ -19,7 +19,7 @@
     "type": "martial_art",
     "name": "Silat",
     "extend": {
-      "weapons": [ "blood_athame", "moonstone_fang", "staff_druidic", "bloodscourge", "scourge_staff", "spear_pestilence" ]
+      "weapons": [ "blood_athame", "moonstone_fang", "staff_druidic", "verge_meteoric", "bloodscourge", "scourge_staff", "spear_pestilence" ]
     }
   },
   {
@@ -27,14 +27,14 @@
     "copy-from": "style_krav_maga",
     "type": "martial_art",
     "name": "Krav Maga",
-    "extend": { "weapons": [ "blood_athame", "moonstone_fang", "staff_druidic" ] }
+    "extend": { "weapons": [ "blood_athame", "moonstone_fang", "staff_druidic", "verge_meteoric" ] }
   },
   {
     "id": "style_fencing",
     "copy-from": "style_fencing",
     "type": "martial_art",
     "name": "Fencing",
-    "extend": { "weapons": [ "sun_sword", "sun_sword_on", "staff_druidic" ] }
+    "extend": { "weapons": [ "sun_sword", "sun_sword_on", "staff_druidic", "verge_meteoric" ] }
   },
   {
     "id": "style_swordsmanship",
@@ -55,7 +55,7 @@
     "copy-from": "style_eskrima",
     "type": "martial_art",
     "name": "Eskrima",
-    "extend": { "weapons": [ "graboid_fang", "dermatik_sting", "monster_fang", "blood_athame", "moonstone_fang", "staff_druidic" ] }
+    "extend": { "weapons": [ "graboid_fang", "dermatik_sting", "monster_fang", "blood_athame", "moonstone_fang", "staff_druidic", "verge_meteoric" ] }
   },
   {
     "id": "style_sojutsu",

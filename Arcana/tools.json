@@ -941,7 +941,7 @@
     "material": [ "hardsteel", "gold" ],
     "symbol": "/",
     "looks_like": "i_staff",
-    "color": "dark_gray",
+    "color": "yellow",
     "ammo": "essence_type",
     "max_charges": 10,
     "charges_per_use": 2,
@@ -951,6 +951,61 @@
     },
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_meteoric_verge_bolt", "no_fail": true, "need_wielding": true, "level": 0 },
     "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS" ]
+  },
+  {
+    "id": "scourge_moonstone",
+    "type": "TOOL",
+    "category": "weapons",
+    "symbol": "/",
+    "looks_like": "bullwhip",
+    "color": "dark_gray",
+    "name": "moonstone scourge",
+    "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  While relatively effective as a weapon, fueling it with blood essence will restore its life-draining properties, and make it a much more deadly weapon.",
+    "weight": "3500 g",
+    "volume": "2 L",
+    "price": 28500,
+    "material": [ "leather", "stone", "silver" ],
+    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE" ],
+    "techniques": [ "WHIP_DISARM" ],
+    "bashing": 3,
+    "cutting": 21,
+    "ammo": "essence_blood_type",
+    "max_charges": 24,
+    "use_action": [
+      {
+        "target": "scourge_moonstone_on",
+        "msg": "A wicked resonance flows through the whip, and the spikes of moonstone gain a blood-red luster.",
+        "active": true,
+        "need_wielding": true,
+        "need_charges": 1,
+        "need_charges_msg": "The lash hungers for blood.",
+        "type": "transform"
+      }
+    ]
+  },
+  {
+    "id": "scourge_moonstone_on",
+    "copy-from": "scourge_moonstone",
+    "type": "GENERIC",
+    "name": "moonstone scourge (on)",
+    "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  The stone blades reflect with an eerie red luster, and it seems far more nimble in the hand.",
+    "//": "Turns out that modifying attack speed via relic data doesn't work right for transforming items, so weight-based hacks it is!",
+    "weight": "35 g",
+    "to_hit": 2,
+    "turns_per_charge": 25,
+    "revert_to": "scourge_moonstone",
+    "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
+    "artifact_data": { "effects_wielded": [ "AEP_SAP_LIFE" ] },
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_scourge_moonstone_wonder" } ] } ]
+    },
+    "use_action": [
+      {
+        "target": "scourge_moonstone",
+        "msg": "The wicked energy flowing through the whip fades.",
+        "type": "transform"
+      }
+    ]
   },
   {
     "id": "moonstone_fang",
@@ -963,7 +1018,7 @@
     "price": 25000,
     "to_hit": 2,
     "bashing": 3,
-    "cutting": 22,
+    "cutting": 18,
     "material": "stone",
     "symbol": "/",
     "looks_like": "small_relic",
@@ -1039,7 +1094,7 @@
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.5 } ] } ]
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS" ]
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE" ]
   },
   {
     "id": "draconic_heart_mutator",
