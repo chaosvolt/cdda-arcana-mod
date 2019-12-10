@@ -149,6 +149,39 @@
     ]
   },
   {
+    "result": "verge_meteoric",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "skills_required": [ "fabrication", 6 ],
+    "time": "80 m",
+    "book_learn": [ [ "book_sacrifice", 8 ], [ "book_syncretism", 7 ] ],
+    "using": [ [ "forging_standard", 3 ], [ "bronzesmithing_tools", 1 ], [ "arcana_essence_any", 8 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
+    "components": [ [ [ "cudgel", 1 ] ], [ [ "thunder_sigil", 1 ] ], [ [ "meteoric_talisman", 1 ] ] ]
+  },
+  {
+    "result": "scourge_moonstone",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "skills_required": [ "fabrication", 6 ],
+    "time": "100 m",
+    "book_learn": [ [ "book_sacrifice", 9 ], [ "book_syncretism", 8 ] ],
+    "using": [
+      [ "sewing_standard", 80 ],
+      [ "forging_standard", 2 ],
+      [ "bronzesmithing_tools", 1 ],
+      [ "arcana_essence_exclude_dull", 9 ]
+    ],
+    "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
+    "components": [ [ [ "bullwhip", 1 ] ], [ [ "blood_athame", 1 ] ], [ [ "moonstone_fang", 1 ] ] ]
+  },
+  {
     "result": "veilblade",
     "type": "recipe",
     "category": "CC_WEAPON",
