@@ -207,7 +207,7 @@
       },
       { "type": "cast_spell", "spell_id": "arcana_item_jade_hauberk_healing", "no_fail": true, "level": 0, "need_worn": true }
     ],
-    "relative": { "weight": 3020, "price": 7200, "material_thickness": 1 },
+    "relative": { "weight": 3020, "price": 55000, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE", "USE_PLAYER_ENERGY", "ELECTRIC_IMMUNE", "RAINPROOF" ] }
   },
   {

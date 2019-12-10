@@ -927,6 +927,32 @@
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
+    "id": "verge_meteoric",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "meteoric verge",
+    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Holding it attracts storms and hardens the body against electricity, and using it will allow you to smite enemies with lightning.",
+    "weight": 3935,
+    "to_hit": 1,
+    "volume": 10,
+    "price": 192500,
+    "bashing": 16,
+    "cutting": 4,
+    "material": [ "hardsteel", "gold" ],
+    "symbol": "/",
+    "looks_like": "i_staff",
+    "color": "dark_gray",
+    "ammo": "essence_type",
+    "max_charges": 10,
+    "charges_per_use": 2,
+    "artifact_data": { "effects_wielded": [ "AEP_RESIST_ELECTRICITY", "AEP_BAD_WEATHER" ] },
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ] } ]
+    },
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_meteoric_verge_bolt", "no_fail": true, "need_wielding": true, "level": 0 },
+    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS" ]
+  },
+  {
     "id": "moonstone_fang",
     "type": "TOOL",
     "category": "weapons",
