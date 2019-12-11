@@ -183,7 +183,7 @@
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
-    "id": "jade_hauberk",
+    "id": "hauberk_jade",
     "type": "TOOL_ARMOR",
     "copy-from": "chainmail_hauberk",
     "name": "jade hauberk",
@@ -196,7 +196,7 @@
     "max_charges": 90,
     "use_action": [
       {
-        "target": "jade_hauberk_on",
+        "target": "hauberk_jade_on",
         "msg": "A brilliant radiance pierces through the mantle from the gorget, until your body is shrouded in a strange glow.",
         "active": true,
         "need_worn": true,
@@ -207,21 +207,21 @@
       },
       { "type": "cast_spell", "spell_id": "arcana_item_jade_hauberk_healing", "no_fail": true, "level": 0, "need_worn": true }
     ],
-    "relative": { "weight": 3020, "price": 7200, "material_thickness": 1 },
+    "relative": { "weight": 3020, "price": 55000, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE", "USE_PLAYER_ENERGY", "ELECTRIC_IMMUNE", "RAINPROOF" ] }
   },
   {
-    "id": "jade_hauberk_on",
+    "id": "hauberk_jade_on",
     "type": "TOOL_ARMOR",
-    "copy-from": "jade_hauberk",
+    "copy-from": "hauberk_jade",
     "name": "jade hauberk (on)",
     "name_plural": "jade hauberks (on)",
     "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  An aura of protective magic is radiating from it, granting immunity to fire and blade, along with resistance to other environmental hazards.",
     "environmental_protection": 10,
     "turns_per_charge": 20,
-    "revert_to": "jade_hauberk",
+    "revert_to": "hauberk_jade",
     "use_action": {
-      "target": "jade_hauberk",
+      "target": "hauberk_jade",
       "msg": "The glow emanating from your jade hauberk fades.",
       "type": "transform"
     },

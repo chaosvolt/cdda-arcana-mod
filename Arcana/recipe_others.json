@@ -783,7 +783,7 @@
       [ [ "petrified_eye", 1 ], [ "engraved_stone", 1 ] ],
       [ [ "gold_small", 500 ] ],
       [ [ "diamond", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "essence", 10 ], [ "essence_dull", 150 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_blood", 10, "LIST" ] ]
     ]
   },
   {

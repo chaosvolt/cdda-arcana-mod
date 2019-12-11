@@ -15,8 +15,8 @@
   {
     "type": "recipe",
     "result": "amulet_exotic",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_OTHER",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
     "skill_used": "magic",
     "time": "30 m",
     "autolearn": true,
@@ -28,8 +28,8 @@
   {
     "type": "recipe",
     "result": "brooch_iridescent",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_TOOLS",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
     "skill_used": "magic",
     "skills_required": [ "fabrication", 3 ],
     "time": "60 m",
@@ -210,9 +210,33 @@
     ],
     "components": [
       [ [ "ragpouch", 1 ] ],
-      [ [ "copper", 50 ] ],
+      [ [ "copper", 50 ], [ "scrap_copper", 2 ] ],
       [ [ "rag", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ],
       [ [ "water_talisman", 1 ], [ "vortex_stone", 1 ], [ "vortex_shard", 10 ] ]
+    ]
+  },
+  {
+    "result": "hauberk_jade",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "magic",
+    "difficulty": 10,
+    "skills_required": [ "fabrication", 7 ],
+    "time": "90 m",
+    "book_learn": [ [ "book_hexenhammer", 10 ], [ "book_syncretism", 9 ] ],
+    "using": [
+      [ "sewing_standard", 120 ],
+      [ "forging_standard", 6 ],
+      [ "bronzesmithing_tools", 1 ]
+    ],
+    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ] ],
+    "components": [
+      [ [ "chainmail_hauberk", 1 ] ],
+      [ [ "gilded_aegis", 1 ] ],
+      [ [ "copper", 300 ], [ "scrap_copper", 12 ] ],
+      [ [ "jade_wreath", 1 ] ],
+      [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_blood", 10, "LIST" ] ]
     ]
   }
 ]
