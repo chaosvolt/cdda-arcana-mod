@@ -46,6 +46,7 @@
       "female": [ "bra", "panties" ]
     },
     "traits": [ "PROF_ARCANIST" ],
+    "forbidden_traits": [ "ILLITERATE" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -78,6 +79,7 @@
       "female": [ "bra", "panties" ]
     },
     "traits": [ "PROF_ARCANIST" ],
+    "forbidden_traits": [ "ILLITERATE" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -108,6 +110,7 @@
       "female": [ "bra", "panties", "skirt" ]
     },
     "traits": [ "PROF_SANGUINE" ],
+    "forbidden_traits": [ "ILLITERATE", "SPIRITUAL", "PACIFIST", "SPELL_HEAL", "MARTIAL_ARTS_CF" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -148,6 +151,7 @@
       "female": [ "sports_bra", "boy_shorts" ]
     },
     "traits": [ "PROF_CLEANSINGFLAME" ],
+    "forbidden_traits": [ "ILLITERATE", "PACIFIST", "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "ARCANA_DRAGONCLAWS", "ARCANA_DRAGONTEETH", "ARCANA_DRAGONHORNS", "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -180,6 +184,7 @@
       "female": [ "chestwrap" ]
     },
     "traits": [ "PROF_CHALICE" ],
+    "forbidden_traits": [ "ILLITERATE", "PACIFIST", "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "ARCANA_DRAGONCLAWS", "ARCANA_DRAGONTEETH", "ARCANA_DRAGONHORNS", "SPELL_SHADOWSNAKES", "MARTIAL_ARTS_CF" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -222,6 +227,7 @@
       "female": [ "bra", "panties" ]
     },
     "traits": [ "PROF_ARCANIST2" ],
+    "forbidden_traits": [ "ILLITERATE" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -276,6 +282,7 @@
       "female": [ "sports_bra", "boy_shorts" ]
     },
     "traits": [ "PROF_SANGUINE" ],
+    "forbidden_traits": [ "ILLITERATE", "PACIFIST", "MARTIAL_ARTS_CF" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -323,7 +330,7 @@
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boy_shorts" ]
     },
-    "traits": [ "PROF_CLEANSINGFLAME2" ],
+    "traits": [ "ILLITERATE", "PACIFIST", "PROF_CLEANSINGFLAME2" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -351,6 +358,7 @@
       "male": [ "boxer_briefs" ],
       "female": [ "bra", "panties" ]
     },
-    "traits": [ "PROF_ARCANIST" ]
+    "traits": [ "PROF_ARCANIST" ],
+    "forbidden_traits": [ "ILLITERATE", "HATES_BOOKS" ]
   }
 ]

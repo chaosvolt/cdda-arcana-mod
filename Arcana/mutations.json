@@ -121,7 +121,6 @@
     "description": "You have been trained in Via Gladium et Malleo, a weapon art focused on preserving momentum and fighting multiple opponents, using your fury in different ways depending on your weapon of choice.",
     "starting_trait": true,
     "initial_ma_styles": [ "style_cleansingflame" ],
-    "changes_to": [ "PROF_SANGUINE", "PROF_CHALICE" ],
     "valid": false
   },
   {
@@ -481,7 +480,6 @@
     "valid": false,
     "purifiable": false,
     "category": [ "ECLIPSE" ],
-    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
     "spells_learned": [ [ "arcana_magic_eclipse", 1 ] ]
   },
   {
@@ -539,7 +537,6 @@
     "valid": false,
     "purifiable": false,
     "category": [ "HEAL" ],
-    "changes_to": [ "PROF_SANGUINE" ],
     "spells_learned": [ [ "arcana_magic_healing", 1 ] ]
   },
   {
@@ -631,7 +628,6 @@
     "purifiable": false,
     "//": "ID for INVIS retained to not break stuff.",
     "category": [ "INVIS" ],
-    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
     "spells_learned": [ [ "arcana_magic_serpentine_shield", 1 ] ]
   },
   {
@@ -655,7 +651,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "BUGSLESSER" ],
-    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
+    "changes_to": [ "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_magic_summon_giant_centipedes", 1 ] ]
   },
   {
@@ -666,16 +662,7 @@
     "description": "Powers from beyond have granted you the power to summon a skeletal dog.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "changes_to": [
-      "PROF_CLEANSINGFLAME",
-      "PROF_CLEANSINGFLAME2",
-      "SPELL_SUMMONDOG2",
-      "SPELL_SUMMONSKEL",
-      "SPELL_SUMMONCULUS",
-      "SPELL_SUMMONTHING",
-      "SPELL_BUGS",
-      "SPELL_SUMMONVORTEX"
-    ],
+    "changes_to": [ "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
   },
   {
@@ -1677,9 +1664,7 @@
     "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renagade, wherever your loyalties now lie, your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
-    "profession": true,
-    "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
-    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER", "SPELL_CLARITY", "SPELL_ECLIPSE" ]
+    "profession": true
   },
   {
     "type": "mutation",
@@ -1689,9 +1674,7 @@
     "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renagade, wherever your loyalties now lie, your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
-    "profession": true,
-    "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
-    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER", "SPELL_CLARITY", "SPELL_ECLIPSE" ]
+    "profession": true
   },
   {
     "type": "mutation",
@@ -1701,9 +1684,7 @@
     "description": "You were sworn into an order known as the Sanguine Order.  Infamous and feared as you were among those who studied in secret, your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
-    "profession": true,
-    "//": "This prevents blood mages from picking a spell considered potentially too altruistic in nature, or from choosing a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
-    "cancels": [ "SPELL_HEAL", "MARTIAL_ARTS_CF" ]
+    "profession": true
   },
   {
     "type": "mutation",
@@ -1713,9 +1694,7 @@
     "description": "You were sworn into an order known as the Keepers of The Oath.  Whether or not He From Beyond The Veil still guides you, the oath you swore is eternal, and your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
-    "profession": true,
-    "//": "This prevents dark priests from picking a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
-    "cancels": [ "MARTIAL_ARTS_CF" ]
+    "profession": true
   },
   {
     "type": "mutation",
