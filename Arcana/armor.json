@@ -159,7 +159,20 @@
     "encumbrance": 15,
     "storage": 250,
     "material_thickness": 1,
-    "artifact_data": { "effects_worn": [ "AEP_CARRY_MORE", "AEP_ATTENTION" ] },
+    "weight_capacity_modifier": 2,
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "arcana_react_satchel_effect" } ] } ]
+    },
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Store magic focus",
+      "holster_msg": "You store your %s",
+      "multi": 4,
+      "min_volume": "1 ml",
+      "max_volume": "5 L",
+      "draw_cost": 0,
+      "flags": [ "MAGIC_FOCUS" ]
+    },
     "flags": [ "WAIST", "OVERSIZE" ]
   }
 ]
