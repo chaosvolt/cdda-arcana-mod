@@ -93,6 +93,7 @@
   {
     "id": "sun_sword",
     "type": "TOOL",
+    "category": "weapons",
     "name": "incorruptible sword",
     "//": "Stats are a blend of the available swords you can use to make it, same deal as the mantle of shadows.",
     "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  When powered by consecrated magical essence, it has the power to cut through darkness itself.",
@@ -146,6 +147,7 @@
   {
     "id": "hexenhammer",
     "type": "TOOL",
+    "category": "weapons",
     "copy-from": "warhammer",
     "name": "hammer of the hunter",
     "name_plural": "hammers of the hunter",
@@ -173,6 +175,7 @@
   {
     "id": "hexenhammer_active",
     "type": "TOOL",
+    "category": "weapons",
     "//": "Just in case hammering gets an inbuilt quality, no copy-from.",
     "name": "glowing hammer of the hunter",
     "name_plural": "glowing hammers of the hunter",
@@ -201,7 +204,7 @@
     "id": "spear_pestilence",
     "type": "TOOL",
     "copy-from": "spear_steel",
-    "category": "tools",
+    "category": "weapons",
     "name": "spear of pestilence",
     "name_plural": "spears of pestilence",
     "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will temporarily summon mutant vermin to aid you, and wielding it makes movement easier.",
