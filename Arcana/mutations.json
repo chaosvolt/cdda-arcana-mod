@@ -119,7 +119,6 @@
     "name": "Path of Sword and Hammer",
     "points": 3,
     "description": "You have been trained in Via Gladium et Malleo, a weapon art focused on preserving momentum and fighting multiple opponents, using your fury in different ways depending on your weapon of choice.",
-    "starting_trait": true,
     "initial_ma_styles": [ "style_cleansingflame" ],
     "changes_to": [ "PROF_SANGUINE", "PROF_CHALICE" ],
     "valid": false
