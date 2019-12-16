@@ -561,6 +561,10 @@
         { "line": "terrain", "id": "t_palisade", "x": 2, "x2": 20, "y": 1, "y2": 1 },
         { "line": "terrain", "id": "t_pit", "x": 1, "x2": 1, "y": 21, "y2": 23 },
         { "line": "terrain", "id": "t_pit", "x": 21, "x2": 23, "y": 1, "y2": 1 }
+      ],
+      "place_npcs": [
+        { "class": "mage_hunter_guard", "x": 16, "y": 11 },
+        { "class": "mage_hunter_guard", "x": 7, "y": 5 }
       ]
     }
   },
@@ -613,7 +617,8 @@
         { "line": "terrain", "id": "t_palisade", "x": 3, "x2": 22, "y": 22, "y2": 22 },
         { "line": "terrain", "id": "t_pit", "x": 22, "x2": 22, "y": 0, "y2": 2 },
         { "line": "terrain", "id": "t_pit", "x": 0, "x2": 2, "y": 22, "y2": 22 }
-      ]
+      ],
+      "place_npcs": [ { "class": "mage_hunter_seeker", "x": 16, "y": 6 } ]
     }
   }
 ]
