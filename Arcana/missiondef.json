@@ -344,7 +344,7 @@
     "dialogue": {
       "describe": "Odin, guide my hand...",
       "offer": "I have good news and bad news.  The good news is that we've made contact with a group of our brethren, and they are expected to arrive soon.  The bad news is they've reported something else has been attracted to this area by our wards, stalking the surrounding words due to the magic itself deterring it.  It may be a threat to travelers, in addition to potentially endangering our comrades while they're en route.  I would like to request you scout the area and, if need be, slay the creature.",
-      "accepted": "May Odin grant you victory in battle, should it come to that.  Any creature attracted by our defensive magic is likely to be not only otherwordly, but tied to other mystic forces.  Expect trouble.  I will permit you the assistance of one of our brethren if you deem it necessary, but we cannot spare the forces needed for a proper hunt.",
+      "accepted": "May Odin grant you victory in battle, should it come to that.  Any creature attracted by our defensive magic is likely to be not only otherworldly, but tied to other mystic forces.  Expect trouble.  I will permit you the assistance of one of our brethren if you deem it necessary, but we cannot spare the forces needed for a proper hunt.",
       "rejected": "This thing may endanger the lives of others.  I do not yet know the full extent of the threat, but we can't afford to endanger our position here.  Please, as soon as you are able, speak with me again.",
       "advice": "It's likely to have unnatural senses of some sort, and many such creatures are able to use such abilities to enthrall or otherwise overwhelm the weak-minded.  Avoid being in its line of sight if possible, as most such threats are most potent when the user can lay eyes upon its victim.",
       "inquire": "Has the beast been slain?",
@@ -372,6 +372,32 @@
   },
   {
     "id": "MISSION_CF_REP_4",
+    "type": "mission_definition",
+    "name": "Secure Allies For Sofia",
+    "description": "Arrange for additional allies to join Sofia's group at the rural church.  Most merchant at the refugee center, and possibly other places, might be worth talking to for assistance.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
+    "difficulty": 3,
+    "value": 20000,
+    "has_generic_rewards": false,
+    "start": { "effect": [ { "u_add_var": "sofia_mission_4", "type": "mission", "context": "rural_church", "value": "yes" } ] },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_REP_5",
+    "dialogue": {
+      "describe": "Odin, guide my hand...",
+      "offer": "As much work as we've put into securing this place, in time we will need much more than mere shelter.  My hope is to not only preserve the knowledge we've accumulated over the years, but use it to help others.  But for that, we need to work closely with outsiders.  We need more than just intermittent trading with the center's merchant, if we are to attract others to our cause.  Would you be able to help us with this?",
+      "accepted": "Thank you.  Your best bet is to see if there is anyone at the center, or any other communities they are in contact with, who are in need of work.  If we can arrange for merchants or workers to set up here, this gives us another point of contact to attract recruits and foster alliances.",
+      "rejected": "I see.  This is hardly as dire a matter as hunting monsters, but if you change your mind, it would be a great boon to us in the long run.",
+      "advice": "The different merchants and other people in charge of the center might have some assistance they can offer.  It will likely depend on what they seek, but any merchants or soldiers of fortune will provide us a contact to further secure our future.",
+      "inquire": "Has your search gone well?",
+      "success": "Excellent!  We've already been working hard to further build up this sanctum to be a bit more livable, and your arrangement with the others have already provided much-needed labor to help put the finishing touches on the meeting hall.  I'm hopeful that they will be a great help to us, and that working together will make it easier to further ally ourselves with other survivors out there.",
+      "success_lie": "What do you think you're trying to pull?",
+      "failure": "But how..."
+    },
+    "end": { "effect": [ { "u_buy_item": "CF_golden_scale", "count": 6 } ] }
+  },
+  {
+    "id": "MISSION_CF_REP_5",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
     "name": "Placeholder Mission",
@@ -517,11 +543,7 @@
         { "u_buy_item": "CF_golden_scale", "count": 12 }
       ],
       "update_mapgen": [
-        {
-          "om_terrain": "cf_church_1",
-          "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_GM_3_a"
-        },
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_3_a" },
         {
           "om_terrain": "cf_church_2",
           "om_special": "cf_rural_church",
