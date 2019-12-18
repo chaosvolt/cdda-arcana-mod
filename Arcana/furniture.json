@@ -74,8 +74,7 @@
       "FLAT_SURF"
     ],
     "bash": { "str_min": 10, "str_max": 20, "sound": "smash!", "sound_fail": "thump." },
-    "examine_action": "workbench",
-    "workbench": { "multiplier": 1.0, "mass": 100000, "volume": "100L" }
+    "examine_action": "fireplace"
   },
   {
     "type": "furniture",
@@ -86,7 +85,7 @@
     "looks_like": "t_moss",
     "bgcolor": "green",
     "comfort": 2,
-    "floor_bedding_warmth": 100,
+    "floor_bedding_warmth": 200,
     "move_cost_mod": 0,
     "required_str": -1,
     "flags": [ "FLAMMABLE_HARD", "TRANSPARENT", "INDOORS", "NOCOLLIDE" ],
@@ -102,7 +101,7 @@
     "color": "dark_gray",
     "move_cost_mod": -1,
     "required_str": -1,
-    "flags": [ "NOITEM" ],
+    "flags": [ "NOITEM", "BLOCK_WIND" ],
     "bash": { "str_min": 20, "str_max": 60, "sound": "crash!", "sound_fail": "thump!" }
   },
   {
@@ -115,7 +114,7 @@
     "color": "white",
     "move_cost_mod": -1,
     "required_str": -1,
-    "flags": [ "FLAMMABLE_HARD", "NOITEM" ],
+    "flags": [ "FLAMMABLE_HARD", "NOITEM", "BLOCK_WIND" ],
     "open": "f_door_arcana_o",
     "bash": { "str_min": 4, "str_max": 40, "sound": "smash!", "sound_fail": "whump!" }
   },
