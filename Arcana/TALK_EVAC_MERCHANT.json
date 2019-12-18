@@ -55,6 +55,16 @@
             { "npc_has_effect": "cf_mission_receipt" }
           ]
         }
+      },
+      {
+        "text": "[MISSION] Sofia asked that I recruit traders or other assistance.  Do you know of anyone who might be looking for work?",
+        "topic": "TALK_EVAC_MERCHANT_CF_REP_MISSION_4",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" } },
+            { "u_has_mission": "MISSION_CF_REP_4" }
+          ]
+        }
       }
     ]
   },
@@ -201,5 +211,18 @@
         "effect": { "u_buy_item": "cf_rep_trade_receipt" }
       }
     ]
+  },
+  {
+    "id": "TALK_EVAC_MERCHANT_CF_REP_MISSION_4",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "tacoma_started",
+      "type": "knowledge",
+      "context": "flag",
+      "value": "yes",
+      "yes": "Well, guess they're doing rather well for themselves if our arrangement isn't enough anymore.  The Old Guard representative might know a bit, anyone else dealing in trade here could too.  You can also try the ranch, with people heading there looking for work, they might be willing to try their fortunes some place with more security.  My caravan runners have told me plenty enough to suspect Ms. McKinnon's group can hold their own.",
+      "no": "Well, guess they're doing rather well for themselves if our arrangement isn't enough anymore.  The Old Guard representative might know a bit, anyone else dealing in trade here could too.  People aren't very eager to go out and risk getting killed, but they might be convinced if they saw that it was safe.  I've heard enough from my caravans to suggest that Ms. McKinnon's group can take care of themselves, at least."
+    },
+    "responses": [ { "text": "Thank you.  I'll see what I can do.", "topic": "TALK_DONE" } ]
   }
 ]

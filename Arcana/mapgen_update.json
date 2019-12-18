@@ -404,6 +404,65 @@
   {
     "type": "mapgen",
     "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_4_a",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "||||||||||||",
+        "|   |  |   |",
+        "|   _  _   |",
+        "|   _  _   |",
+        "|   |  |   |",
+        "|||||  |||||",
+        "|          |",
+        "|          |",
+        "|          |",
+        "|          |",
+        "            ",
+        "            "
+      ],
+      "terrain": { "|": "t_wall_log", "_": "t_door_frame" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_4_b",
+    "object": {
+      "mapgensize": [ 15, 15 ],
+      "rows": [
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|          |   ",
+        "|||||__|||||   "
+      ],
+      "terrain": { "|": "t_wall_log", "_": "t_door_frame" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_4_c",
+    "object": {
+      "set": [
+        { "point": "terrain", "id": "t_covered_well", "x": 20, "y": 3 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
     "update_mapgen_id": "cf_church_upgrade_GM_1_a",
     "object": {
       "set": [

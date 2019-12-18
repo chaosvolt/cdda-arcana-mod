@@ -380,7 +380,26 @@
     "difficulty": 3,
     "value": 20000,
     "has_generic_rewards": false,
-    "start": { "effect": [ { "u_add_var": "sofia_mission_4", "type": "mission", "context": "rural_church", "value": "yes" } ] },
+    "start": {
+      "effect": [ { "u_add_var": "sofia_mission_4", "type": "mission", "context": "rural_church", "value": "yes" } ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_4_a" ], "x": 3, "y": 14 } ]
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_4_b" ], "x": 3, "y": 0 } ]
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_4_c"
+        }
+      ]
+    },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_REP_5",
     "dialogue": {

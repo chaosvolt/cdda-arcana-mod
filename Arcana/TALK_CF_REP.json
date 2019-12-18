@@ -136,13 +136,7 @@
       { "text": "Do you have anything to trade?", "topic": "TALK_CF_REP_TRADE" },
       {
         "text": "Anything I can do to help?",
-        "topic": "TALK_MISSION_LIST",
-        "condition": { "not": { "npc_has_effect": "cf_mission_3" } }
-      },
-      {
-        "text": "Anything I can do to help?",
-        "topic": "TALK_CF_REP_TBC",
-        "condition": { "npc_has_effect": "cf_mission_3" }
+        "topic": "TALK_MISSION_LIST"
       },
       {
         "text": "Well, bye.",
@@ -172,7 +166,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_JOHNATHAN_ADVICE_1",
-    "dynamic_line": "An old arcanist enclave, right?  I'm afraid I don't know much of practical value beyond Johnathan's own judgement on the potential threat.  But I do recall a bit about the place prior to its infestation.",
+    "dynamic_line": "An old arcanist enclave, right?  I'm afraid I don't know much of practical value beyond Johnathan's own judgment on the potential threat.  But I do recall a bit about the place prior to its infestation.",
     "responses": [
       { "text": "What do you know about what the place used to be?", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1_1" },
       { "text": "Know anything about what happened to the place?", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1_2" },
