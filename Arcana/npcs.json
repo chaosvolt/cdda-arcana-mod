@@ -121,5 +121,49 @@
     "mission": 7,
     "chat": "TALK_DONE",
     "faction": "sanguine_order_remnant"
+  },
+  {
+    "type": "npc",
+    "id": "mage_hunter_auxillery_guard_1",
+    "//": "Recruited guard, generic classless version.  Used by the Wasteland Scavengers option.",
+    "name_suffix": "Scavenger",
+    "class": "NC_NONE",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_GUARD",
+    "faction": "cleansing_flame"
+  },
+  {
+    "type": "npc",
+    "id": "mage_hunter_auxillery_guard_2",
+    "//": "Recruited guard, generic soldier version.  Used by the Old Guard option.",
+    "name_suffix": "Soldier",
+    "class": "NC_SOLDIER",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_GUARD",
+    "faction": "cleansing_flame"
+  },
+  {
+    "type": "npc",
+    "id": "mage_hunter_auxillery_guard_3",
+    "//": "Recruited guard, generic cowboy version.  Used by the broker and crop overseer options.",
+    "name_suffix": "Guard",
+    "class": "NC_COWBOY",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_GUARD",
+    "faction": "cleansing_flame"
+  },
+  {
+    "type": "npc",
+    "id": "mage_hunter_auxillery_guard_4",
+    "//": "Recruited guard, generic scavenger version.  Used by the scavenger merc and scavenger boss options.",
+    "name_suffix": "Mercenary",
+    "class": "NC_SCAVENGER",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_GUARD",
+    "faction": "cleansing_flame"
   }
 ]

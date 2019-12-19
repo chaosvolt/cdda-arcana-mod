@@ -386,7 +386,7 @@
         {
           "om_terrain": "cf_church_1",
           "om_special": "cf_rural_church",
-          "place_nested": [ { "chunks": [ "cf_church_upgrade_4_a" ], "x": 3, "y": 14 } ]
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_4_a" ], "x": 3, "y": 16 } ]
         },
         {
           "om_terrain": "cf_church_3",
