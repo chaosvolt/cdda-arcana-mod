@@ -68,7 +68,6 @@
         "flask_hip",
         "candle",
         "survival_marker",
-        "scroll_blank",
         "scroll_sun",
         "book_scrollcraft",
         "monster_tear",
@@ -345,7 +344,9 @@
           "mbag",
           "book_potioncraft",
           "book_scrollcraft",
-          "book_syncretism"
+          "book_syncretism",
+          "pockknife",
+          "matches"
         ]
       },
       "male": [ "boxer_briefs" ],
