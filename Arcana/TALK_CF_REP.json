@@ -133,11 +133,15 @@
         },
         "topic": "TALK_CF_REP_DEACON_MOTIVE"
       },
-      { "text": "Do you have anything to trade?", "topic": "TALK_CF_REP_TRADE" },
       {
-        "text": "Anything I can do to help?",
-        "topic": "TALK_MISSION_LIST"
+        "text": "Do you have anything to trade?",
+        "effect": "start_trade",
+        "condition": { "u_has_effect": "cf_sofia_traded" },
+        "switch": true,
+        "topic": "TALK_CF_REP"
       },
+      { "text": "Do you have anything to trade?", "switch": true, "default": true, "topic": "TALK_CF_REP_TRADE" },
+      { "text": "Anything I can do to help?", "topic": "TALK_MISSION_LIST" },
       {
         "text": "Well, bye.",
         "topic": "TALK_DONE",
@@ -599,7 +603,11 @@
     "id": "TALK_CF_REP_TRADE",
     "dynamic_line": "The entrance and kitchen have a handful of things you may use if you are in need.  Beyond that we don't have much to spare, but I will offer you what I can.  We've taken to using measured blanks of gold in lieu of currency, which we used to use for repairing some of our items.  The others can vouch for the purity and weight being standardized.",
     "responses": [
-      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_CF_REP" },
+      {
+        "text": "Let's trade then.",
+        "effect": [ { "u_add_effect": "cf_sofia_traded", "duration": "PERMANENT" }, "start_trade" ],
+        "topic": "TALK_CF_REP"
+      },
       { "text": "It's fine, never mind.", "topic": "TALK_CF_REP" }
     ]
   }

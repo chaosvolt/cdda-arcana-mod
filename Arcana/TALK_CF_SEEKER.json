@@ -33,7 +33,7 @@
         "condition": { "u_has_effect": "cf_seeker_traded" },
         "topic": "TALK_CF_SEEKER"
       },
-      { "text": "Well, bye", "topic": "TALK_DONE" }
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
   },
   {

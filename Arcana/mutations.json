@@ -115,6 +115,16 @@
   },
   {
     "type": "mutation",
+    "id": "CF_AUX_MARKER_1",
+    "name": "Auxiliary Marker 1",
+    "points": 0,
+    "description": "This is used to designate that the NPCs spawned with this are from the Old Guard resolution for Sofia's fourth mission.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
     "id": "MARTIAL_ARTS_CF",
     "name": "Path of Sword and Hammer",
     "points": 3,
