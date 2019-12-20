@@ -1,0 +1,24 @@
+[
+  {
+    "id": "TALK_EVAC_HUNTER_DO",
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know of anyone who could help with that?",
+        "topic": "TALK_FREE_MERCHANT_STOCKS_CF_REP_MISSION_4",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" } },
+            { "u_has_mission": "MISSION_CF_REP_4" }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "TALK_EVAC_HUNTER_LIFE",
+    "type": "talk_topic",
+    "dynamic_line": "You're talking to the wrong person for that.  If you're hitting up hunters and scavengers for work, best person to talk to would be the broker.  They arrange the contracts and such, should be in that room over there.",
+    "responses": [ { "text": "…", "topic": "TALK_DONE" } ]
+  }
+]
