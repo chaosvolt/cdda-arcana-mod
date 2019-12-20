@@ -57,7 +57,7 @@
         }
       },
       {
-        "text": "[MISSION] Sofia asked that I recruit traders or other assistance.  Do you know of anyone who might be looking for work?",
+        "text": "[MISSION] Sofia asked me to recruit traders or other assistance.  Do you know of anyone who might be looking for work?",
         "topic": "TALK_EVAC_MERCHANT_CF_REP_MISSION_4",
         "condition": {
           "and": [
