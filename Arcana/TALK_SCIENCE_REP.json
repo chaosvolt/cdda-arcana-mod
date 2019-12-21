@@ -2,7 +2,7 @@
   {
     "id": "TALK_SCIENCE_REP",
     "type": "talk_topic",
-    "dynamic_line": { "u_has_any_trait": [ "PROF_FED" ], "yes": "Marshal...", "no": "Citizen..." },
+    "dynamic_line": { "u_has_any_trait": [ "PROF_FED" ], "yes": "Marshal…", "no": "Citizen…" },
     "responses": [
       {
         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know of anyone who could help with that?",

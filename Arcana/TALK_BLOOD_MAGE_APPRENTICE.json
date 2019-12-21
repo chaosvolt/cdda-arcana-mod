@@ -82,7 +82,7 @@
     "id": "TALK_BLOOD_MAGE_APPRENTICE_MISTAKE",
     "type": "talk_topic",
     "dynamic_line": "Actually, my masters might find you useful, as a sacrifice if nothing else.  Die!",
-    "responses": [ { "text": "...", "topic": "TALK_DONE", "effect": "insult_combat" } ]
+    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": "insult_combat" } ]
   },
   {
     "id": "TALK_BLOOD_MAGE_APPRENTICE_DRAGONBLOOD",
@@ -101,7 +101,7 @@
         "success": { "topic": "TALK_DONE", "opinion": { "fear": 2 }, "effect": "flee" },
         "failure": { "topic": "TALK_DONE", "opinion": { "anger": 1 }, "effect": [ { "u_faction_rep": -30 }, "insult_combat" ] }
       },
-      { "text": "...", "topic": "TALK_DONE", "effect": "insult_combat" }
+      { "text": "…", "topic": "TALK_DONE", "effect": "insult_combat" }
     ]
   },
   {
@@ -235,12 +235,12 @@
     "id": "TALK_BLOOD_MAGE_APPRENTICE_NOPE",
     "type": "talk_topic",
     "dynamic_line": "And you think you're any more fit to rule in this dying world?  \"Even those of great power, if laid low, may serve to better the victor.\"  Die!",
-    "responses": [ { "text": "...", "topic": "TALK_DONE", "effect": "insult_combat" } ]
+    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": "insult_combat" } ]
   },
   {
     "id": "TALK_BLOOD_MAGE_APPRENTICE_INTIMIDATE",
     "type": "talk_topic",
-    "dynamic_line": "What?  Oh shit...  no, not you!  Leave us alone, hunter!",
+    "dynamic_line": "What?  Oh shit…  no, not you!  Leave us alone, hunter!",
     "responses": [
       {
         "text": "[ATTACK] Subire mortem tuam, sub malleo deorum!",
@@ -282,14 +282,14 @@
     "id": "TALK_BLOOD_MAGE_APPRENTICE_BEGONE",
     "type": "talk_topic",
     "dynamic_line": "Forget you ever saw anything here.  Before I change my mind.",
-    "responses": [ { "text": "...", "topic": "TALK_DONE", "effect": "player_leaving", "opinion": { "fear": -1, "value": -1 } } ]
+    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": "player_leaving", "opinion": { "fear": -1, "value": -1 } } ]
   },
   {
     "id": "TALK_BLOOD_MAGE_APPRENTICE_PATHETIC",
     "type": "talk_topic",
     "dynamic_line": "Really?  How pathetic.  Your very presence endangers what we're working on.  I can't let you leave alive.",
     "responses": [
-      { "text": "...", "topic": "TALK_DONE", "effect": "insult_combat", "opinion": { "fear": -5, "value": -5, "anger": 3 } }
+      { "text": "…", "topic": "TALK_DONE", "effect": "insult_combat", "opinion": { "fear": -5, "value": -5, "anger": 3 } }
     ]
   },
   {
@@ -318,7 +318,7 @@
   {
     "id": "BGSS_BLOOD_MAGE_1_STORY2",
     "type": "talk_topic",
-    "dynamic_line": "There were a few, yeah.  The higher-rank blood mages, basically.  This was before the one at the hideout split off from the others, and led us into trying to scrounge up some old research.  Things were tense back then, but at least I felt like I could trust those higher up in rank to reward fair study...",
+    "dynamic_line": "There were a few, yeah.  The higher-rank blood mages, basically.  This was before the one at the hideout split off from the others, and led us into trying to scrounge up some old research.  Things were tense back then, but at least I felt like I could trust those higher up in rank to reward fair study…",
     "responses": [
       { "text": "So what happened?", "topic": "BGSS_CF_1_STORY3" },
       { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
@@ -338,7 +338,7 @@
   {
     "id": "BGSS_BLOOD_MAGE_1_STORY4",
     "type": "talk_topic",
-    "dynamic_line": "At first it was just the same shit, only thing that seemed strange was talking about it like it had already happened.  Before they'd be all vague, talking about portents and omens of doom, but it wasn't until we moved on to the next hideout that most of us at the bottom of the totem pole figured out something went down...",
+    "dynamic_line": "At first it was just the same shit, only thing that seemed strange was talking about it like it had already happened.  Before they'd be all vague, talking about portents and omens of doom, but it wasn't until we moved on to the next hideout that most of us at the bottom of the totem pole figured out something went down…",
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   }
 ]

@@ -7,7 +7,7 @@
       "yes": "Well, aren't you a little troublemaker?  The magus here is a bit uppity about would-be rivals barging in to make a mess of things.  What are you here for?",
       "no": {
         "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
-        "yes": "...hunter.",
+        "yes": "…hunter.",
         "no": "You shouldn't be here, meddling in things beyond your understanding.  Might get yourself hurt."
       }
     },
@@ -23,13 +23,13 @@
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_ITS_TIME_TO_STOP"
       },
       {
-        "text": "...lanius.",
+        "text": "…lanius.",
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LANIUS",
         "opinion": { "value": 1 }
       },
       {
-        "text": "[ATTACK] Ecce, sanguinem magum...",
+        "text": "[ATTACK] Ecce, sanguinem magum…",
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "effect": "insult_combat",
         "topic": "TALK_DONE",
@@ -51,7 +51,7 @@
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHERE"
       },
       {
-        "text": "I'll just be going...",
+        "text": "I'll just be going…",
         "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } },
         "trial": { "type": "PERSUADE", "difficulty": 5 },
         "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LEAVE", "opinion": { "value": -2 } },
@@ -63,13 +63,13 @@
     "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_ITS_TIME_TO_STOP",
     "type": "talk_topic",
     "dynamic_line": "And I'm here to put a stop to you putting a stop to this.  Funny how that works out.",
-    "responses": [ { "text": "...", "topic": "TALK_DONE", "effect": "insult_combat" } ]
+    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": "insult_combat" } ]
   },
   {
     "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LANIUS",
     "type": "talk_topic",
     "dynamic_line": "Fight and die well, hunter.",
-    "responses": [ { "text": "...", "topic": "TALK_DONE", "effect": "insult_combat" } ]
+    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": "insult_combat" } ]
   },
   {
     "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_MAGUS",
@@ -156,7 +156,7 @@
         "no": "I'm plenty measured in my practice, and I think you'd look better with a bit of said backstabbing."
       }
     },
-    "responses": [ { "text": "...", "topic": "TALK_DONE", "effect": "insult_combat" } ]
+    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": "insult_combat" } ]
   },
   {
     "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHO",
@@ -165,7 +165,7 @@
     "responses": [
       { "text": "Oh.  I see.", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE" },
       {
-        "text": "I'll just be going...",
+        "text": "I'll just be going…",
         "trial": { "type": "PERSUADE", "difficulty": 5 },
         "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LEAVE", "opinion": { "value": -2, "fear": -1 } },
         "failure": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_NICE_TRY", "opinion": { "value": -4, "fear": -2 } }
@@ -189,7 +189,7 @@
     "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_NICE_TRY",
     "type": "talk_topic",
     "dynamic_line": "Go ahead and try, interloper.  You'll only die tired.  Let the hunt begin.",
-    "responses": [ { "text": "...", "topic": "TALK_DONE", "effect": "insult_combat" } ]
+    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": "insult_combat" } ]
   },
   {
     "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHERE",
@@ -197,10 +197,10 @@
     "dynamic_line": "I can tell you this much: you shouldn't be down here.  Any more questions?",
     "responses": [
       { "text": "Who are you?", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_WHO" },
-      { "text": "Never mind...", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE" },
+      { "text": "Never mind…", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE" },
       { "text": "[ATTACK] Fuck off.", "topic": "TALK_DONE", "effect": "insult_combat" },
       {
-        "text": "I'll just be going...",
+        "text": "I'll just be going…",
         "trial": { "type": "PERSUADE", "difficulty": 5 },
         "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LEAVE", "opinion": { "value": -2, "fear": -1 } },
         "failure": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_NICE_TRY", "opinion": { "value": -4, "fear": -2 } }
