@@ -130,7 +130,7 @@
     "class": "NC_NONE",
     "attitude": 0,
     "mission": 7,
-    "chat": "TALK_GUARD",
+    "chat": "TALK_GUARD_CF_AUX",
     "faction": "cleansing_flame"
   },
   {
@@ -141,7 +141,7 @@
     "class": "NC_SOLDIER",
     "attitude": 0,
     "mission": 7,
-    "chat": "TALK_GUARD",
+    "chat": "TALK_GUARD_CF_AUX",
     "faction": "cleansing_flame"
   },
   {
@@ -152,7 +152,7 @@
     "class": "NC_COWBOY",
     "attitude": 0,
     "mission": 7,
-    "chat": "TALK_GUARD",
+    "chat": "TALK_GUARD_CF_AUX",
     "faction": "cleansing_flame"
   },
   {
@@ -163,7 +163,7 @@
     "class": "NC_SCAVENGER",
     "attitude": 0,
     "mission": 7,
-    "chat": "TALK_GUARD",
+    "chat": "TALK_GUARD_CF_AUX",
     "faction": "cleansing_flame"
   }
 ]
