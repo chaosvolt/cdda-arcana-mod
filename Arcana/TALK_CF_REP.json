@@ -68,6 +68,16 @@
           ]
         }
       },
+      {
+        "text": "So, how are things working out with the new arrivals so far?",
+        "topic": "TALK_CF_REP_MISSION_4_OPINION",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "sofia_opinon_given", "type": "flag", "context": "knowledge", "value": "yes" } },
+            { "u_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" }
+          ]
+        }
+      },
       { "text": "What is this place?", "topic": "TALK_CF_REP_WHERE" },
       { "text": "Who are you?", "topic": "TALK_CF_REP_WHO" },
       {
@@ -141,7 +151,16 @@
         "topic": "TALK_CF_REP"
       },
       { "text": "Do you have anything to trade?", "switch": true, "default": true, "topic": "TALK_CF_REP_TRADE" },
-      { "text": "Anything I can do to help?", "topic": "TALK_MISSION_LIST" },
+      {
+        "text": "Anything I can do to help?",
+        "condition": { "not": { "npc_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" } },
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Anything I can do to help?",
+        "condition": { "npc_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        "topic": "TALK_CF_REP_TBC"
+      },
       {
         "text": "Well, bye.",
         "topic": "TALK_DONE",
@@ -399,6 +418,18 @@
         "switch": true,
         "default": true,
         "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
+        "topic": "TALK_CF_REP"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_MISSION_4_OPINION",
+    "dynamic_line": "They've been helpful so far.  Supplies are coming in and going out, slowly but surely.  And they seem to be getting along well enough with the others, we might eventually gain recruits thanks to your efforts.",
+    "responses": [
+      {
+        "text": "That's good to hear.",
+        "effect": { "u_add_var": "sofia_opinon_given", "type": "flag", "context": "knowledge", "value": "yes" },
         "topic": "TALK_CF_REP"
       }
     ]

@@ -468,7 +468,18 @@
     "type": "mapgen",
     "method": "json",
     "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_1",
-    "object": { "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ] }
+    "object": {
+      "set": [
+        { "line": "furniture", "id": "f_crate_o", "x": 4, "x2": 6, "y": 17, "y2": 17 },
+        { "line": "furniture", "id": "f_workbench", "x": 4, "x2": 4, "y": 19, "y2": 20 }
+      ],
+      "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ],
+      "place_loot": [
+        { "group": "wood_workshop", "x": [ 4, 6 ], "y": 17, "chance": 50, "repeat": 5 },
+        { "group": "tools_common", "x": 4, "y": [ 19, 20 ], "chance": 50, "repeat": 3 }
+      ],
+      "place_npcs": [ { "class": "cf_auxillery_guard_1", "x": 5, "y": 19 } ]
+    }
   },
   {
     "type": "mapgen",
@@ -476,18 +487,26 @@
     "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_2",
     "object": {
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
-      "place_npcs": [
-        { "class": "cf_auxillery_guard_1", "x": 10, "y": 8 },
-        { "class": "cf_auxillery_guard_1", "x": 4, "y": 12 },
-        { "class": "cf_auxillery_guard_1", "x": 13, "y": 15 }
-      ]
+      "place_npcs": [ { "class": "cf_auxillery_guard_1", "x": 4, "y": 12 }, { "class": "cf_auxillery_guard_2", "x": 13, "y": 15 } ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
     "update_mapgen_id": "arcana_cf_4_old_guard_1",
-    "object": { "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ] }
+    "object": {
+      "set": [
+        { "line": "furniture", "id": "f_locker", "x": 4, "x2": 4, "y": 17, "y2": 20 },
+        { "point": "furniture", "id": "f_rack", "x": 6, "y": 20 }
+      ],
+      "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ],
+      "place_loot": [
+        { "group": "swat_gear", "x": 4, "y": [ 17, 20 ], "chance": 30, "repeat": 6 },
+        { "group": "tools_gunsmith", "x": 6, "y": 20, "chance": 30, "repeat": 3 }
+      ],
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 6 ], "y": [ 17, 20 ] } ],
+      "place_npcs": [ { "class": "cf_auxillery_guard_2", "x": 5, "y": 18, "add_trait": "CF_AUX_MARKER_1" } ]
+    }
   },
   {
     "type": "mapgen",
@@ -496,7 +515,6 @@
     "object": {
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
       "place_npcs": [
-        { "class": "cf_auxillery_guard_2", "x": 10, "y": 8, "add_trait": "CF_AUX_MARKER_1" },
         { "class": "cf_auxillery_guard_2", "x": 4, "y": 12, "add_trait": "CF_AUX_MARKER_1" },
         { "class": "cf_auxillery_guard_2", "x": 13, "y": 15, "add_trait": "CF_AUX_MARKER_1" }
       ]
@@ -506,7 +524,19 @@
     "type": "mapgen",
     "method": "json",
     "update_mapgen_id": "arcana_cf_4_free_merchants_1",
-    "object": { "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ] }
+    "object": {
+      "set": [
+        { "line": "furniture", "id": "f_rack", "x": 4, "x2": 6, "y": 20, "y2": 20 },
+        { "line": "furniture", "id": "f_counter", "x": 4, "x2": 5, "y": 17, "y2": 17 }
+      ],
+      "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ],
+      "place_loot": [
+        { "group": "preserved_food", "x": [ 4, 6 ], "y": 20, "chance": 40, "repeat": 8 },
+        { "group": "tools_hunting", "x": [ 4, 5 ], "y": 17, "chance": 50, "repeat": 4 }
+      ],
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 6 ], "y": [ 17, 20 ] } ],
+      "place_npcs": [ { "class": "cf_auxillery_guard_3", "x": 5, "y": 18, "add_trait": "CF_AUX_MARKER_2" } ]
+    }
   },
   {
     "type": "mapgen",
@@ -515,7 +545,6 @@
     "object": {
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
       "place_npcs": [
-        { "class": "cf_auxillery_guard_3", "x": 10, "y": 8, "add_trait": "CF_AUX_MARKER_2" },
         { "class": "cf_auxillery_guard_3", "x": 4, "y": 12, "add_trait": "CF_AUX_MARKER_2" },
         { "class": "cf_auxillery_guard_3", "x": 13, "y": 15, "add_trait": "CF_AUX_MARKER_2" }
       ]
@@ -631,6 +660,67 @@
         "||||||||||||     "
       ],
       "terrain": { "|": "t_wall_log_half", "_": "t_thatch_roof" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_4_h",
+    "object": {
+      "mapgensize": [ 10, 10 ],
+      "rows": [
+        "        BB",
+        "         D",
+        "         D",
+        "        BB",
+        "          ",
+        "BB      BB",
+        "D        D",
+        "          ",
+        "          ",
+        "          "
+      ],
+      "terrain": { ".": "t_floor" },
+      "furniture": { "B": "f_bed", "D": "f_dresser" },
+      "mapping": {
+        "B": { "items": [ { "item": "bed", "chance": 50 } ] },
+        "D": { "items": [ { "item": "clothing_outdoor_torso", "chance": 50 }, { "item": "clothing_outdoor_pants", "chance": 50 } ] }
+      },
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 0, 6 ], "y": [ 0, 9 ] } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "cf_church_upgrade_4_i",
+    "object": {
+      "mapgensize": [ 14, 14 ],
+      "rows": [
+        "D        D    ",
+        "BB      BB    ",
+        "              ",
+        "Cvs    nnn    ",
+        "              ",
+        "              ",
+        "   htth       ",
+        "   htth       ",
+        "   htth       ",
+        "   htth       ",
+        "   htth       ",
+        "   htth       ",
+        "   htth       ",
+        "   htth       "
+      ],
+      "terrain": { ".": "t_floor" },
+      "furniture": { "B": "f_bed", "C": "f_counter", "D": "f_dresser", "n": "f_cupboard", "s": "f_sink", "v": "f_woodstove" },
+      "mapping": {
+        "B": { "items": [ { "item": "bed", "chance": 50 } ] },
+        "C": { "items": [ { "item": "oven", "chance": 50 }, { "item": "oven", "chance": 25 } ] },
+        "D": { "items": [ { "item": "clothing_outdoor_torso", "chance": 50 }, { "item": "clothing_outdoor_pants", "chance": 50 } ] },
+        "n": { "items": [ { "item": "preserved_food", "chance": 60 }, { "item": "preserved_food", "chance": 60 }, { "item": "preserved_food", "chance": 60 }, { "item": "alcohol_bottled_canned", "chance": 30 }, { "item": "alcohol_bottled_canned", "chance": 30 } ] },
+        "B": { "items": [ { "item": "standing_stones_libation", "chance": 5 } ] }
+      },
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 0, 1 ], "y": [ 0, 9 ] } ]
     }
   },
   {

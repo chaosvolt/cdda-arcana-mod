@@ -374,7 +374,7 @@
     "id": "MISSION_CF_REP_4",
     "type": "mission_definition",
     "name": "Secure Allies For Sofia",
-    "description": "Arrange for additional allies to join Sofia's group at the rural church.  Most merchant at the refugee center, and possibly other places, might be worth talking to for assistance.",
+    "description": "Arrange for additional allies to join Sofia's group at the rural church.  Most merchants at the refugee center, and possibly other places, might be worth talking to for assistance.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
     "difficulty": 3,
@@ -413,7 +413,26 @@
       "success_lie": "What do you think you're trying to pull?",
       "failure": "But how..."
     },
-    "end": { "effect": [ { "u_buy_item": "CF_golden_scale", "count": 6 } ] }
+    "end": {
+      "effect": [
+        { "u_add_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "npc_add_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_buy_item": "CF_golden_scale", "count": 8 }
+      ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_4_h" ], "x": 4, "y": 17 } ]
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_4_i" ], "x": 4, "y": 0 } ]
+        }
+      ]
+    }
   },
   {
     "id": "MISSION_CF_REP_5",

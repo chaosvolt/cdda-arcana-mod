@@ -91,6 +91,7 @@
         "text": "Thank you.  There's something else I wanted to talk about, before I leave.",
         "effect": [
           { "u_add_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
+          { "u_add_var": "old_guard_presence", "type": "knowledge", "context": "rural_church", "value": "yes" },
           { "mapgen_update": "arcana_cf_4_old_guard_1", "om_terrain": "cf_church_1", "om_special": "cf_rural_church" },
           { "mapgen_update": "arcana_cf_4_old_guard_2", "om_terrain": "cf_church_3", "om_special": "cf_rural_church" },
           { "mapgen_update": "arcana_cf_4_roof_1", "om_terrain": "cf_church_1_roof", "om_special": "cf_rural_church" },
@@ -102,6 +103,7 @@
         "text": "Thank you.  I should go check on them, goodbye for now.",
         "effect": [
           { "u_add_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
+          { "u_add_var": "old_guard_presence", "type": "knowledge", "context": "rural_church", "value": "yes" },
           { "mapgen_update": "arcana_cf_4_old_guard_1", "om_terrain": "cf_church_1", "om_special": "cf_rural_church" },
           { "mapgen_update": "arcana_cf_4_old_guard_2", "om_terrain": "cf_church_3", "om_special": "cf_rural_church" },
           { "mapgen_update": "arcana_cf_4_roof_1", "om_terrain": "cf_church_1_roof", "om_special": "cf_rural_church" },
