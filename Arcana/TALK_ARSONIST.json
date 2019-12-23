@@ -9,6 +9,9 @@
         "condition": {
           "and": [
             { "not": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" } },
+            {
+              "not": { "npc_has_var": "sofia_refugee_convinced", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
             { "u_has_mission": "MISSION_CF_REP_4" }
           ]
         }
@@ -78,14 +81,20 @@
       },
       {
         "text": "Thanks!  I might talk to someone else to help get word out.",
-        "effect": { "u_add_var": "sofia_ally_seeking_2", "type": "mission", "context": "flag", "value": "yes" },
+        "effect": [
+          { "u_add_var": "sofia_ally_seeking_2", "type": "mission", "context": "flag", "value": "yes" },
+          { "npc_add_var": "sofia_refugee_convinced", "type": "mission", "context": "rural_church", "value": "yes" }
+        ],
         "condition": { "u_has_var": "sofia_ally_seeking_1", "type": "mission", "context": "flag", "value": "yes" },
         "switch": true,
         "topic": "TALK_DONE"
       },
       {
         "text": "Thanks!  I'll see if talking to a couple other people will help.",
-        "effect": { "u_add_var": "sofia_ally_seeking_1", "type": "mission", "context": "flag", "value": "yes" },
+        "effect": [
+          { "u_add_var": "sofia_ally_seeking_1", "type": "mission", "context": "flag", "value": "yes" },
+          { "npc_add_var": "sofia_refugee_convinced", "type": "mission", "context": "rural_church", "value": "yes" }
+        ],
         "switch": true,
         "default": true,
         "topic": "TALK_DONE"

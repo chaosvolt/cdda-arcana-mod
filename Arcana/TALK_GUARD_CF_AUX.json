@@ -1,6 +1,6 @@
 [
   {
-    "id": "TALK_GUARD",
+    "id": "TALK_GUARD_CF_AUX",
     "type": "talk_topic",
     "dynamic_line": {
       "npc_has_trait": "CF_AUX_MARKER_2",
