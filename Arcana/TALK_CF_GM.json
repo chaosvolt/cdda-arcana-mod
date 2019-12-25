@@ -47,7 +47,7 @@
         "topic": "TALK_CF_GM_MISSION_4_OPINION",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "johnathan_opinon_given", "type": "flag", "context": "knowledge", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" } },
             { "u_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" }
           ]
         }
@@ -122,7 +122,7 @@
     "responses": [
       {
         "text": "I see...",
-        "effect": { "u_add_var": "johnathan_opinon_given", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "johnathan_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" },
         "topic": "TALK_CF_GM"
       }
     ]

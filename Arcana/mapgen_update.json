@@ -487,7 +487,7 @@
     "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_2",
     "object": {
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
-      "place_npcs": [ { "class": "cf_auxillery_guard_1", "x": 4, "y": 12 }, { "class": "cf_auxillery_guard_1", "x": 13, "y": 15 } ]
+      "place_npcs": [ { "class": "cf_auxillery_guard_1", "x": 4, "y": 10 }, { "class": "cf_auxillery_guard_1", "x": 10, "y": 13 } ]
     }
   },
   {
@@ -515,8 +515,8 @@
     "object": {
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
       "place_npcs": [
-        { "class": "cf_auxillery_guard_2", "x": 4, "y": 12, "add_trait": "CF_AUX_MARKER_1" },
-        { "class": "cf_auxillery_guard_2", "x": 13, "y": 15, "add_trait": "CF_AUX_MARKER_1" }
+        { "class": "cf_auxillery_guard_2", "x": 4, "y": 10, "add_trait": "CF_AUX_MARKER_1" },
+        { "class": "cf_auxillery_guard_2", "x": 10, "y": 13, "add_trait": "CF_AUX_MARKER_1" }
       ]
     }
   },
@@ -545,8 +545,8 @@
     "object": {
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
       "place_npcs": [
-        { "class": "cf_auxillery_guard_3", "x": 4, "y": 12, "add_trait": "CF_AUX_MARKER_2" },
-        { "class": "cf_auxillery_guard_3", "x": 13, "y": 15, "add_trait": "CF_AUX_MARKER_2" }
+        { "class": "cf_auxillery_guard_3", "x": 4, "y": 10, "add_trait": "CF_AUX_MARKER_2" },
+        { "class": "cf_auxillery_guard_3", "x": 10, "y": 13, "add_trait": "CF_AUX_MARKER_2" }
       ]
     }
   },
@@ -699,9 +699,9 @@
         "D        D    ",
         "BB      BB    ",
         "              ",
-        "Cvs    nnn    ",
-        "              ",
-        "              ",
+        "C        n    ",
+        "v        n    ",
+        "s   FF   n    ",
         "   htth       ",
         "   htth       ",
         "   htth       ",
@@ -716,6 +716,7 @@
         "B": "f_bed",
         "C": "f_counter",
         "D": "f_dresser",
+        "F": "f_fireplace",
         "h": "f_chair",
         "n": "f_cupboard",
         "t": "f_table",

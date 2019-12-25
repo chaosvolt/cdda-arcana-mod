@@ -393,11 +393,7 @@
           "om_special": "cf_rural_church",
           "place_nested": [ { "chunks": [ "cf_church_upgrade_4_b" ], "x": 3, "y": 0 } ]
         },
-        {
-          "om_terrain": "cf_church_3",
-          "om_special": "cf_rural_church",
-          "mapgen_update_id": "cf_church_upgrade_4_c"
-        }
+        { "om_terrain": "cf_church_3", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_4_c" }
       ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -615,7 +611,67 @@
   },
   {
     "id": "MISSION_CF_GM_4",
-    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "//": "This mission is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
+    }
+  },
+  {
+    "id": "MISSION_CF_AUX_A",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
+    }
+  },
+  {
+    "id": "MISSION_CF_AUX_B",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
+    }
+  },
+  {
+    "id": "MISSION_CF_AUX_C",
     "type": "mission_definition",
     "name": "Placeholder Mission",
     "goal": "MGOAL_KILL_MONSTER",

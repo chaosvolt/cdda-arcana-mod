@@ -174,8 +174,9 @@
     "class": "NC_TRADER",
     "attitude": 0,
     "mission": 3,
-    "chat": "TALK_GUARD_CF_AUX",
-    "faction": "cleansing_flame"
+    "chat": "TALK_MERCHANT_CF_AUX",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_AUX_A"
   },
   {
     "type": "npc",
@@ -185,8 +186,9 @@
     "class": "NC_TRADER",
     "attitude": 0,
     "mission": 3,
-    "chat": "TALK_GUARD_CF_AUX",
-    "faction": "cleansing_flame"
+    "chat": "TALK_MERCHANT_CF_AUX",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_AUX_B"
   },
   {
     "type": "npc",
@@ -196,7 +198,8 @@
     "class": "NC_DOCTOR",
     "attitude": 0,
     "mission": 3,
-    "chat": "TALK_GUARD_CF_AUX",
-    "faction": "cleansing_flame"
+    "chat": "TALK_MERCHANT_CF_AUX",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_AUX_C"
   }
 ]

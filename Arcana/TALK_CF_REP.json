@@ -73,7 +73,7 @@
         "topic": "TALK_CF_REP_MISSION_4_OPINION",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_opinon_given", "type": "flag", "context": "knowledge", "value": "yes" } },
+            { "not": { "u_has_var": "sofia_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" } },
             { "u_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" }
           ]
         }
@@ -429,7 +429,7 @@
     "responses": [
       {
         "text": "That's good to hear.",
-        "effect": { "u_add_var": "sofia_opinon_given", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "sofia_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" },
         "topic": "TALK_CF_REP"
       }
     ]
