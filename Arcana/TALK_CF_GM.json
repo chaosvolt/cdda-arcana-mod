@@ -32,6 +32,26 @@
       }
     },
     "responses": [
+      {
+        "text": "[MISSION] Sofia asked that I recruit traders or other assistance at the center.  Any advice for that?",
+        "topic": "TALK_CF_GM_ADVICE_1",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" } },
+            { "u_has_mission": "MISSION_CF_REP_4" }
+          ]
+        }
+      },
+      {
+        "text": "So, how are things working out with the new arrivals so far?",
+        "topic": "TALK_CF_GM_MISSION_4_OPINION",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "johnathan_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" } },
+            { "u_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" }
+          ]
+        }
+      },
       { "text": "Who are you?", "topic": "TALK_CF_GM_WHO" },
       { "text": "What can you tell me about this place?", "topic": "TALK_CF_GM_WHERE" },
       {
@@ -82,6 +102,32 @@
     ]
   },
   {
+    "type": "talk_topic",
+    "id": "TALK_CF_GM_ADVICE_1",
+    "dynamic_line": "I've never been to the center myself, so I'm not sure what to suggest.  More hands to help build and hunt would be nice, though I suppose a source of trade would be useful, to keep our supplies well stocked.  I'll trust you to use your discretion.",
+    "responses": [ { "text": "I see.  That's all then.", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_GM_MISSION_4_OPINION",
+    "//": "Unlike Sofia, Johnathan does not trust the Old Guard if you've picked that particular resolution for Sofia's fourth mission.",
+    "dynamic_line": {
+      "u_has_var": "old_guard_presence",
+      "type": "knowledge",
+      "context": "rural_church",
+      "value": "yes",
+      "yes": "They're hard-working, but they know more than they let on.  At least, whoever sent them.  Be careful what you say around them.  They are here for a reason, and I'm concerned that it endanger our purpose.",
+      "no": "I have my concerns, but they seem to be trustworthy.  Not well-versed in the arcane, but if need be we can teach them our ways.  Other than that, they seem to mostly just help with day-to-day tasks."
+    },
+    "responses": [
+      {
+        "text": "I see...",
+        "effect": { "u_add_var": "johnathan_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" },
+        "topic": "TALK_CF_GM"
+      }
+    ]
+  },
+  {
     "id": "TALK_CF_GM_TBC",
     "type": "talk_topic",
     "dynamic_line": "Not at the moment, but check back another time.  I might have something for you then.",
@@ -90,7 +136,7 @@
   {
     "id": "TALK_CF_GM_WHO",
     "type": "talk_topic",
-    "dynamic_line": "My name is Jonathan Leone.  I was among the founders of our order, as was Sofia it seems.  Before the founding, I held the title of Grandmaster among the order I was once a part of.",
+    "dynamic_line": "My name is Johnathan Leone.  I was among the founders of our order, as was Sofia it seems.  Before the founding, I held the title of Grandmaster among the order I was once a part of.",
     "responses": [ { "text": "Grandmaster?", "topic": "TALK_CF_GM_GRANDMASTER" }, { "text": "I see.", "topic": "TALK_CF_GM" } ]
   },
   {

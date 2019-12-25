@@ -33,7 +33,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "terrain": { "^": "t_pit", "|": "t_wall_log_half" },
-      "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 4, 21 ], "y": [ 4, 11 ] } ]
+      "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 4, 23 ], "y": [ 4, 23 ] } ]
     }
   },
   {
@@ -69,7 +69,8 @@
         ",,,,,,,,,,,,,#,,#,,,,,,,"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": { "^": "t_pit", "|": "t_chickenwire_fence", "+": "t_chickenwire_gate_c" }
+      "terrain": { "^": "t_pit", "|": "t_chickenwire_fence", "+": "t_chickenwire_gate_c" },
+      "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 0, 19 ], "y": [ 4, 23 ] } ]
     }
   },
   {
@@ -106,7 +107,8 @@
       ],
       "palettes": [ "arcana_palette" ],
       "terrain": { "^": "t_pit" },
-      "place_loot": [ { "group": "cannedfood", "x": 23, "y": 15, "chance": 60, "repeat": 5 } ]
+      "place_loot": [ { "group": "cannedfood", "x": 23, "y": 15, "chance": 60, "repeat": 5 } ],
+      "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 4, 23 ], "y": [ 0, 19 ] } ]
     }
   },
   {
@@ -153,8 +155,9 @@
         "^": "t_pit"
       },
       "furniture": { "{": "f_wardrobe", "I": "f_arcane_candlestick", "l": "f_locker", "r": "f_canvas_wall", "x": "f_canvas_door" },
-      "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 0, 17 ], "y": [ 3, 16 ] } ],
-      "items": { "p": { "item": "bed", "chance": 25 }, "l": { "item": "gear_survival", "chance": 25 } },
+      "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 0, 19 ], "y": [ 0, 19 ] } ],
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 16 ], "y": [ 0, 18 ] } ],
+      "items": { "p": { "item": "bed", "chance": 25 }, "l": [ { "item": "gear_survival", "chance": 25 }, { "item": "gear_survival", "chance": 25 } ] },
       "place_loot": [
         { "group": "cleansing_flame_books", "x": 18, "y": [ 9, 10 ], "chance": 50, "repeat": 5 },
         { "group": "standing_stones_libation", "x": 15, "y": [ 9, 10 ], "chance": 100 },

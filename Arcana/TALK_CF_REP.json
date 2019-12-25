@@ -68,6 +68,16 @@
           ]
         }
       },
+      {
+        "text": "So, how are things working out with the new arrivals so far?",
+        "topic": "TALK_CF_REP_MISSION_4_OPINION",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "sofia_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" } },
+            { "u_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" }
+          ]
+        }
+      },
       { "text": "What is this place?", "topic": "TALK_CF_REP_WHERE" },
       { "text": "Who are you?", "topic": "TALK_CF_REP_WHO" },
       {
@@ -133,16 +143,23 @@
         },
         "topic": "TALK_CF_REP_DEACON_MOTIVE"
       },
-      { "text": "Do you have anything to trade?", "topic": "TALK_CF_REP_TRADE" },
+      {
+        "text": "Do you have anything to trade?",
+        "effect": "start_trade",
+        "condition": { "u_has_effect": "cf_sofia_traded" },
+        "switch": true,
+        "topic": "TALK_CF_REP"
+      },
+      { "text": "Do you have anything to trade?", "switch": true, "default": true, "topic": "TALK_CF_REP_TRADE" },
       {
         "text": "Anything I can do to help?",
-        "topic": "TALK_MISSION_LIST",
-        "condition": { "not": { "npc_has_effect": "cf_mission_3" } }
+        "condition": { "not": { "npc_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" } },
+        "topic": "TALK_MISSION_LIST"
       },
       {
         "text": "Anything I can do to help?",
-        "topic": "TALK_CF_REP_TBC",
-        "condition": { "npc_has_effect": "cf_mission_3" }
+        "condition": { "npc_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        "topic": "TALK_CF_REP_TBC"
       },
       {
         "text": "Well, bye.",
@@ -172,7 +189,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_JOHNATHAN_ADVICE_1",
-    "dynamic_line": "An old arcanist enclave, right?  I'm afraid I don't know much of practical value beyond Johnathan's own judgement on the potential threat.  But I do recall a bit about the place prior to its infestation.",
+    "dynamic_line": "An old arcanist enclave, right?  I'm afraid I don't know much of practical value beyond Johnathan's own judgment on the potential threat.  But I do recall a bit about the place prior to its infestation.",
     "responses": [
       { "text": "What do you know about what the place used to be?", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1_1" },
       { "text": "Know anything about what happened to the place?", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1_2" },
@@ -227,7 +244,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_JOHNATHAN_ADVICE_2_1",
-    "dynamic_line": "Like any proper sanctum, there's a main room just beyond the entrance, and common rooms for the benefit of any people sheltered there.  Workspaces, archives, armories and the like will be downstairs, and they're likely to be infested by abominations given what what others have mentioned.  The main room there will be divided into hallways by the stone supports and walls, you might be able to use them to keep any monsters down there bunched up.  As for what's beyond that, I...",
+    "dynamic_line": "Like any proper sanctum, there's a main room just beyond the entrance, and common rooms for the benefit of any people sheltered there.  Workspaces, archives, armories and the like will be downstairs, and they're likely to be infested by abominations given what what others have mentioned.  The main room there will be divided into hallways by the stone supports and walls, you might be able to use them to keep any monsters down there bunched up.  As for what's beyond that, I…",
     "responses": [
       { "text": "Yes?  What's wrong?", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_2_3" },
       { "text": "Maybe it would be better to ask about something else.", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1" },
@@ -246,7 +263,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_JOHNATHAN_ADVICE_2_2",
-    "dynamic_line": "When all this started, many places suffered anomalies and hazards of various sorts.  The mere nature of our work down there, dismantling dangerous objects recovered on hunts, evidently allowed such things to happen even there, despite all our efforts to be cautious.  The hunters there held off what came crawling out from Beyond as best as they could, but they couldn't... I'm sorry.  It's unavoidable in our line of work, but we lost so many down there, that day.  Whatever fate the gods mandate for them, I hope they are at peace.",
+    "dynamic_line": "When all this started, many places suffered anomalies and hazards of various sorts.  The mere nature of our work down there, dismantling dangerous objects recovered on hunts, evidently allowed such things to happen even there, despite all our efforts to be cautious.  The hunters there held off what came crawling out from Beyond as best as they could, but they couldn't… I'm sorry.  It's unavoidable in our line of work, but we lost so many down there, that day.  Whatever fate the gods mandate for them, I hope they are at peace.",
     "responses": [
       { "text": "Maybe it would be better to ask about something else.", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1" },
       { "text": "That's all for now.", "topic": "TALK_CF_REP" }
@@ -278,7 +295,7 @@
         "topic": "TALK_CF_REP"
       },
       {
-        "text": "So be it.  \"No matter the cost, no matter what we must do, for the strength and safety of this world...\"",
+        "text": "So be it.  \"No matter the cost, no matter what we must do, for the strength and safety of this world…\"",
         "switch": true,
         "condition": { "u_has_trait": "PROF_CHALICE" },
         "topic": "TALK_CF_REP"
@@ -390,7 +407,7 @@
     },
     "responses": [
       {
-        "text": "...",
+        "text": "…",
         "switch": true,
         "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
         "condition": { "u_has_trait": "PROF_SANGUINE" },
@@ -401,6 +418,18 @@
         "switch": true,
         "default": true,
         "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
+        "topic": "TALK_CF_REP"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_MISSION_4_OPINION",
+    "dynamic_line": "They've been helpful so far.  Supplies are coming in and going out, slowly but surely.  And they seem to be getting along well enough with the others, we might eventually gain recruits thanks to your efforts.",
+    "responses": [
+      {
+        "text": "That's good to hear.",
+        "effect": { "u_add_var": "sofia_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" },
         "topic": "TALK_CF_REP"
       }
     ]
@@ -433,7 +462,7 @@
         },
         "topic": "TALK_CF_REP_ARCANE"
       },
-      { "text": "...", "topic": "TALK_CF_REP" }
+      { "text": "…", "topic": "TALK_CF_REP" }
     ]
   },
   {
@@ -446,13 +475,13 @@
     },
     "responses": [
       {
-        "text": "I see.  I think...",
+        "text": "I see.  I think…",
         "switch": true,
         "topic": "TALK_CF_REP",
         "condition": { "u_has_effect": "cf_sofia_notes_given" }
       },
       {
-        "text": "O ...kay.  I see.  I think...",
+        "text": "O …kay.  I see.  I think…",
         "switch": true,
         "default": true,
         "topic": "TALK_CF_REP",
@@ -499,7 +528,7 @@
       "no": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  Here.  This may prove better than trying to toy with the unknown unaided."
     },
     "responses": [
-      { "text": "...", "switch": true, "topic": "TALK_CF_REP", "condition": { "u_has_effect": "cf_sofia_notes_given" } },
+      { "text": "…", "switch": true, "topic": "TALK_CF_REP", "condition": { "u_has_effect": "cf_sofia_notes_given" } },
       {
         "text": "Er.  Thanks, I think.",
         "switch": true,
@@ -539,7 +568,7 @@
       "yes": "Do not lose hope yet.  Already our efforts bore fruit, and more are surely out there.  If the gods will it, we will endure.",
       "no": "I do not know for certain.  Between trying to get anything to come in via radio, and our contact with the refugee center, I have heard nothing else so far, but I will keep searching.  We must never give up."
     },
-    "responses": [ { "text": "So long as the Sun shines upon the Earth...", "topic": "TALK_CF_REP" } ]
+    "responses": [ { "text": "So long as the Sun shines upon the Earth…", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
@@ -569,14 +598,14 @@
         "condition": { "not": { "u_has_any_trait": [ "PROF_SANGUINE", "PROF_CHALICE" ] } },
         "topic": "TALK_CF_REP_SANGUINE_QUERY"
       },
-      { "text": "...", "topic": "TALK_CF_REP" }
+      { "text": "…", "topic": "TALK_CF_REP" }
     ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_VEIL",
     "dynamic_line": "Our term for whatever effect seems to be linked to some of the monsters that have invaded this realm.  You may have seen these rifts or holes during your travels, or heard others report of them.  Things coming out of them?  Whatever caused them, there has to be some way to prevent things from getting worse.",
-    "responses": [ { "text": "I ...see.  Never mind.", "topic": "TALK_CF_REP" } ]
+    "responses": [ { "text": "I …see.  Never mind.", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
@@ -586,7 +615,7 @@
       "yes": "I had thought from your alterations that you were familiar with them.  They were the ones that developed the practices that you yourself have benefited from.  A band of murderous cultists, even before all this started and they found ways to exploit these anomalies.",
       "no": "A local cult that used to infest this area's rural regions, and their effects on our community led to our own group being formed.  Like us, before things boiled over there were some initial supernatural effects, and with that came ways of using it to one's benefit.  Their rituals went from simple murder to something dangerous to more than just their victims."
     },
-    "responses": [ { "text": "...", "topic": "TALK_CF_REP" } ]
+    "responses": [ { "text": "…", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
@@ -605,7 +634,11 @@
     "id": "TALK_CF_REP_TRADE",
     "dynamic_line": "The entrance and kitchen have a handful of things you may use if you are in need.  Beyond that we don't have much to spare, but I will offer you what I can.  We've taken to using measured blanks of gold in lieu of currency, which we used to use for repairing some of our items.  The others can vouch for the purity and weight being standardized.",
     "responses": [
-      { "text": "Let's trade then.", "effect": "start_trade", "topic": "TALK_CF_REP" },
+      {
+        "text": "Let's trade then.",
+        "effect": [ { "u_add_effect": "cf_sofia_traded", "duration": "PERMANENT" }, "start_trade" ],
+        "topic": "TALK_CF_REP"
+      },
       { "text": "It's fine, never mind.", "topic": "TALK_CF_REP" }
     ]
   }
