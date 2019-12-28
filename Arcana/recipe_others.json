@@ -1250,9 +1250,9 @@
     "difficulty": 5,
     "time": "20 m",
     "book_learn": [ [ "book_scrollcraft", 5 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
-    "components": [ [ [ "scroll_sun", 1 ] ] ],
+    "components": [ [ [ "scroll_sun", 1 ] ], [ [ "totem_heal", 1 ], [ "totem_cleric", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1264,9 +1264,9 @@
     "difficulty": 5,
     "time": "20 m",
     "book_learn": [ [ "book_scrollcraft", 5 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
-    "components": [ [ [ "scroll_moon", 1 ] ] ],
+    "components": [ [ [ "scroll_moon", 1 ] ], [ [ "totem_flamearmor", 1 ], [ "totem_elecresist", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1278,9 +1278,9 @@
     "difficulty": 6,
     "time": "20 m",
     "book_learn": [ [ "book_scrollcraft", 6 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
-    "components": [ [ [ "scroll_artiface", 1 ] ] ],
+    "components": [ [ [ "scroll_artiface", 1 ] ], [ [ "totem_strength", 1 ], [ "totem_plants", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1292,9 +1292,9 @@
     "difficulty": 6,
     "time": "20 m",
     "book_learn": [ [ "book_scrollcraft", 6 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
-    "components": [ [ [ "scroll_nature", 1 ] ] ],
+    "components": [ [ [ "scroll_nature", 1 ] ], [ [ "totem_lightning", 1 ], [ "totem_acidspray", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1306,9 +1306,9 @@
     "difficulty": 7,
     "time": "20 m",
     "book_learn": [ [ "book_scrollcraft", 7 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
-    "components": [ [ [ "scroll_destruction", 1 ] ] ],
+    "components": [ [ [ "scroll_destruction", 1 ] ], [ [ "totem_clarity", 1 ], [ "totem_confusion", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1320,9 +1320,9 @@
     "difficulty": 7,
     "time": "20 m",
     "book_learn": [ [ "book_scrollcraft", 7 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
-    "components": [ [ [ "scroll_subversion", 1 ] ] ],
+    "components": [ [ [ "scroll_subversion", 1 ] ], [ [ "totem_invis", 1 ], [ "totem_insight", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {

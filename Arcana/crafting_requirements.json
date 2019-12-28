@@ -86,6 +86,15 @@
     "components": [ [ [ "scroll_blank", 1 ] ] ]
   },
   {
+    "id": "arcana_scrollwriting_rewrite",
+    "type": "requirement",
+    "//": "This is used for recipes where an existing magical scroll is altered.",
+    "tools": [
+      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ], [ "candle_warding_active", -1 ], [ "fire", -1 ] ],
+      [ [ "survival_marker", -1 ], [ "feather", -1 ] ]
+    ]
+  },
+  {
     "id": "arcana_soaking_standard",
     "type": "requirement",
     "//": "A container plus some water, for certain items.",
