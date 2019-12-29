@@ -626,7 +626,7 @@
     "name": "Magic Sign: Dampening",
     "name_plural": "Magic Sign: Dampening",
     "description": "A mote of energy that feels soft to the touch.  Activate it to grant an effect that will drain energy from nearby flames, and feed off radiation afflicting your body.",
-    "color": "dark_grey",
+    "color": "dark_gray",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_dampening_on",
@@ -659,7 +659,7 @@
     "name": "Magic Sign: Drain Life",
     "name_plural": "Magic Sign: Drain Life",
     "description": "A mote of energy with a strange aura of hunger.  Activate it to grant a temporary life-draining effect.",
-    "color": "dark_grey",
+    "color": "dark_gray",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_drainlife_on",
@@ -910,7 +910,7 @@
     "name": "Magic Sign: Invisibility",
     "name_plural": "Magic Sign: Invisibility",
     "description": "A mote of energy, faintly transparent.  Activate it to grant a temporary invisibility effect.",
-    "color": "light_grey",
+    "color": "light_gray",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_invis_on",
@@ -976,7 +976,7 @@
     "name": "Magic Sign: Lightning Ward",
     "name_plural": "Magic Sign: Lightning Ward",
     "description": "A mote of energy, seeming to tingle with static electricity.  Activate it to grant temporary protection against lightning.",
-    "color": "light_grey",
+    "color": "light_gray",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_elecresist_on",
@@ -1044,7 +1044,7 @@
     "name": "Magic Sign: Mind Ward",
     "name_plural": "Magic Sign: Mind Ward",
     "description": "A mote of energy that flickers and shifts according to your thoughts.  Activate it to grant temporary protection against the evil eye.",
-    "color": "megenta",
+    "color": "magenta",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_psyshield_on",
@@ -1190,7 +1190,7 @@
     "name": "Magic Sign: Serpentine Shield",
     "name_plural": "Magic Sign: Serpentine Shield",
     "description": "A mote of energy, flickering with dim light.  Activate it to grant a defensive effect that will summon shadowy serpents to aid you.",
-    "color": "dark_grey",
+    "color": "dark_gray",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_shadowsnakes_on",
@@ -1541,7 +1541,7 @@
     "name": "Magic Sign: Wave of Destruction",
     "name_plural": "Magic Sign: Wave of Destruction",
     "description": "A mote of energy that gives off a hateful aura, yearning to destroy your enemies.  Activate it to conjure a wave of pure destructive energy.",
-    "color": "dark_grey",
+    "color": "dark_gray",
     "artifact_data": { "effects_carried": [ "AEP_INT_DOWN" ] },
     "use_action": {
       "target": "spell_pulse_on",
@@ -1558,7 +1558,7 @@
     "name": "Magic Sign: Wave of Destruction (active)",
     "name_plural": "Magic Sign: Wave of Destruction (active)",
     "description": "A mote of energy that gives off a hateful aura, yearning to destroy your enemies.",
-    "color": "dark_grey",
+    "color": "dark_gray",
     "initial_charges": 0,
     "max_charges": 1,
     "charges_per_use": 1,
