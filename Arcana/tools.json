@@ -676,7 +676,7 @@
     "name": "Amber Seal: Lightning Ward",
     "name_plural": "Amber Seal: Lightning Ward",
     "description": "A small chunk of carved otherworldly amber.  Activate it to focus your mind and create a magic sign, granting protection against lightning.  This will expend the item entirely.",
-    "color": "light_grey",
+    "color": "light_gray",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_lightning_ward", "no_fail": true, "level": 10 }
   },
   {
@@ -726,7 +726,7 @@
     "name": "Eternity Seal: Clairvoyance",
     "name_plural": "Eternity Seal: Clairvoyance",
     "description": "A small cabochon of dark, shimmering ivory.  Activate it to focus your mind and create a magic sign, granting a temporary clairvoyance effect.  This will expend the item entirely.",
-    "color": "light_grey",
+    "color": "light_gray",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_clairvoyance", "no_fail": true, "level": 10 }
   },
   {
@@ -747,7 +747,7 @@
     "name": "Obsidian Seal: Serpentine Shield",
     "name_plural": "Obsidian Seal: Serpentine Shield",
     "description": "A piece of unnaturally dark stone, shaped into an eccentric design.  Activate it to focus your mind and create a magic sign, granting a temporary defensive effect that will summon shadowy serpents to aid you.  This will expend the item entirely.",
-    "color": "dark_grey",
+    "color": "dark_gray",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_serpentine_shield", "no_fail": true, "level": 10 }
   },
   {
