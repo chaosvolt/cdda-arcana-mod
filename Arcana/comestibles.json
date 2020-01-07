@@ -329,7 +329,7 @@
     "comestible_type": "MED",
     "category": "tools",
     "name": "air talisman",
-    "description": "A crude paper talisman marked with strange patterns, anointed with a pure sacrifice.  Using it will bind nearby summoned monsters as familiars, if they aren't hostile, allowing them to be used for more complex work.  It will bind affect creatures for 200 days.  Using it on NPCs or already tamed monsters will be a waste.",
+    "description": "A crude paper talisman marked with strange patterns, anointed with a pure sacrifice.  Using it will bind nearby summoned monsters as familiars, if they aren't hostile, allowing them to be used for more complex work.  It will bind affect creatures for 200 days.  Using it on NPCs, already tamed monsters, or creatures not from The Beyond will be a waste.",
     "weight": 150,
     "volume": "100 ml",
     "material": "paper",
@@ -344,15 +344,15 @@
     "type": "COMESTIBLE",
     "name": "pattern scroll (consecrate)",
     "name_plural": "pattern scrolls (consecrate)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_consecrate", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_moon",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (frost armor)",
-    "name_plural": "pattern scrolls (frost armor)",
+    "name": "pattern scroll (cold ward)",
+    "name_plural": "pattern scrolls (cold ward)",
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will protect against the cold, and all its side effects.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_frost_armor", "no_fail": true, "level": 0 }
   },
@@ -441,8 +441,8 @@
     "id": "scroll_spell_flame_armor",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (flame armor)",
-    "name_plural": "pattern scrolls (flame armor)",
+    "name": "pattern scroll (heat ward)",
+    "name_plural": "pattern scrolls (heat ward)",
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_flame_armor", "no_fail": true, "level": 0 }
   },

@@ -764,11 +764,11 @@
     "id": "totem_flamearmor",
     "copy-from": "totem_base",
     "type": "COMESTIBLE",
-    "name": "Starstone Seal: Flame Armor",
-    "name_plural": "Starstone Seal: Flame Armor",
+    "name": "Starstone Seal: Heat Ward",
+    "name_plural": "Starstone Seal: Heat Ward",
     "description": "A shimmering disc carved from a seemingly meteoric material.  Activate it to focus your mind and create a magic sign, gaining temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  This will expend the item entirely.",
     "color": "dark_gray",
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_flame_armor", "no_fail": true, "level": 10 }
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_heat_ward", "no_fail": true, "level": 10 }
   },
   {
     "id": "totem_insight",

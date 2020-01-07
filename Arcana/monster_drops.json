@@ -155,6 +155,12 @@
   },
   {
     "type": "item_group",
+    "id": "mon_triffid_flower_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "triffid_queen_flower", "prob": 40 }, { "item": "essence", "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
     "id": "mon_triffid_queen_death_drops",
     "subtype": "collection",
     "entries": [ { "item": "triffid_queen_flower", "prob": 80 }, { "item": "essence", "prob": 25 } ]
@@ -764,5 +770,35 @@
     "id": "mon_kanazuchibo_death_drops",
     "subtype": "collection",
     "entries": [ { "item": "essence_dull", "count": [ 5, 10 ], "prob": 30 }, { "item": "engraved_stone", "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_leech_blossom_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "essence", "count": [ 2, 5 ] } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_leech_stalk_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "essence", "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_leech_pod_cluster_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "essence", "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_leech_root_runner_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "essence", "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_leech_root_drone_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "essence", "prob": 5 } ]
   }
 ]

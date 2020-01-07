@@ -517,26 +517,26 @@
   {
     "type": "mutation",
     "id": "SPELL_FLAMEARMOR",
-    "name": "Magic Sign: Flame Armor",
+    "name": "Magic Sign: Heat Ward",
     "points": 5,
     "description": "Powers from beyond have granted you power, that can grant temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "category": [ "FLAMEARMOR" ],
     "changes_to": [ "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
-    "spells_learned": [ [ "arcana_magic_flame_armor", 1 ] ]
+    "spells_learned": [ [ "arcana_magic_heat_ward", 1 ] ]
   },
   {
     "type": "mutation",
     "id": "SPELL_FROSTARMORLESSER",
-    "name": "Magic Sign: Frost Armor",
+    "name": "Magic Sign: Cold Ward",
     "points": 5,
     "description": "Powers from beyond have granted you power, that can grant temporary resistance to the cold.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "category": [ "FROSTARMORLESSER" ],
     "changes_to": [ "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
-    "spells_learned": [ [ "arcana_magic_frost_armor", 1 ] ]
+    "spells_learned": [ [ "arcana_magic_cold_ward", 1 ] ]
   },
   {
     "type": "mutation",

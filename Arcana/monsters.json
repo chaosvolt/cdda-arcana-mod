@@ -126,6 +126,12 @@
     "death_drops": "mon_fungal_fighter_death_drops"
   },
   {
+    "id": "mon_triffid_flower",
+    "copy-from": "mon_triffid_flower",
+    "type": "MONSTER",
+    "death_drops": "mon_triffid_flower_death_drops"
+  },
+  {
     "id": "mon_triffid_queen",
     "copy-from": "mon_triffid_queen",
     "type": "MONSTER",
@@ -458,6 +464,36 @@
     "copy-from": "mon_skeleton_brute",
     "type": "MONSTER",
     "death_drops": "mon_skeleton_brute_death_drops"
+  },
+  {
+    "id": "mon_leech_blossom",
+    "copy-from": "mon_leech_blossom",
+    "type": "MONSTER",
+    "death_drops": "mon_leech_blossom_death_drops"
+  },
+  {
+    "id": "mon_leech_stalk",
+    "copy-from": "mon_leech_stalk",
+    "type": "MONSTER",
+    "death_drops": "mon_leech_stalk_death_drops"
+  },
+  {
+    "id": "mon_leech_pod_cluster",
+    "copy-from": "mon_leech_pod_cluster",
+    "type": "MONSTER",
+    "death_drops": "mon_leech_pod_cluster_death_drops"
+  },
+  {
+    "id": "mon_leech_root_runner",
+    "copy-from": "mon_leech_root_runner",
+    "type": "MONSTER",
+    "death_drops": "mon_leech_root_runner_death_drops"
+  },
+  {
+    "id": "mon_leech_root_drone",
+    "copy-from": "mon_leech_root_drone",
+    "type": "MONSTER",
+    "death_drops": "mon_leech_root_drone_death_drops"
   },
   {
     "id": "mon_spirit_of_fire",
