@@ -547,7 +547,7 @@
     "id": "MISSION_CF_GM_3",
     "type": "mission_definition",
     "name": "Cleanse Sanguinist Sect",
-    "description": "Optionally recruit one of the church's guards to assist",
+    "description": "Kill the blood mage in charge of a local Sanguine Order sect.  Optionally recruit one of the church's guards to assist.",
     "goal": "MGOAL_ASSASSINATE",
     "difficulty": 10,
     "value": 30000,
@@ -633,61 +633,89 @@
   {
     "id": "MISSION_CF_AUX_A",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
-    "goal": "MGOAL_KILL_MONSTER",
-    "difficulty": 4,
-    "value": 150000,
+    "name": "Bring 5 Blank Scrolls",
+    "description": "Find or make 5 blank scrolls for the scavengers operating out of the rural church.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 2,
+    "item": "scroll_blank",
+    "count": 5,
+    "value": 12500,
     "origins": [ "ORIGIN_SECONDARY" ],
+    "has_generic_rewards": false,
+    "end": {
+      "effect": [ { "u_buy_item": "CF_golden_scale", "count": 5 } ],
+      "update_mapgen": [ { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_aux_a" } ]
+    },
     "dialogue": {
-      "describe": "...",
-      "offer": "...",
-      "accepted": "...",
-      "rejected": "...",
-      "advice": "...",
-      "inquire": "...",
-      "success": "...",
-      "success_lie": "...",
-      "failure": "..."
+      "describe": "Seeing this is probably a bug.",
+      "offer": "Some of the scavenger team has taken an interest in the sort of strange stuff the locals here deal with.  I talked it out with Ms. McKinnon and she said she can help with teaching, and we've decided to focus on scrolls.  They provide us with a relatively reusable way to deal with trouble while on a scouting run.  If you can get about five blanks for us, we'll be able to figure things out from there.",
+      "accepted": "Thanks.  They seem to know their stuff well enough to assist in teaching us the basics, so once we have some blank scrolls we'll be able to make a couple of the safer ones for our scouts to use.",
+      "rejected": "Alright.  Come see me if you change your mind.",
+      "advice": "They mentioned that the book that teaches you how to use these items is called The Six Pillars.  If you can't find any suitable scrolls out there, that book might be useful for getting the specifications needed to make one.",
+      "inquire": "Any luck so far?",
+      "success": "Thank you, and here's enough of these Scales to hopefully make up for the hassle.  Least I can do.  According to Sofia, they turn blank after you activate the effects put into them.  So we'll be able to make these last a while, as long as the scavengers aren't too rough on the paper.",
+      "success_lie": "Seeing this is probably a bug.",
+      "failure": "Seeing this is probably a bug."
     }
   },
   {
     "id": "MISSION_CF_AUX_B",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
-    "goal": "MGOAL_KILL_MONSTER",
-    "difficulty": 4,
-    "value": 150000,
+    "name": "Bring Wraithslayer Crossbow",
+    "description": "Find or make a wraithslayer crossbow for the scavengers operating out of the rural church.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 3,
+    "item": "ethereal_crossbow",
+    "value": 50000,
     "origins": [ "ORIGIN_SECONDARY" ],
+    "has_generic_rewards": false,
+    "end": {
+      "effect": [ { "u_buy_item": "CF_golden_scale", "count": 20 } ],
+      "update_mapgen": [
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_aux_b_1" },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_aux_b_2"
+        }
+      ]
+    },
     "dialogue": {
-      "describe": "...",
-      "offer": "...",
-      "accepted": "...",
-      "rejected": "...",
-      "advice": "...",
-      "inquire": "...",
-      "success": "...",
-      "success_lie": "...",
-      "failure": "..."
+      "describe": "Seeing this is probably a bug.",
+      "offer": "Welp, some of the boys here have been getting interested in the mystical stuff these fellas are preaching, but personally I'm most interested in one of them magic stringless crossbows they take a liking to.  Ammo for it's real portable, they seem to have plenty of it, and it goes through tough hide like nothing I've ever seen before.  I don't know if they have one to spare, but if you can get your hands on one, I'll pay up as well as I can for it.",
+      "accepted": "Alright then.  I don't think they'd look too kindly on us diving right into carrying these things around, but I'll talk it out with them later on.  Just don't want to bother them too much about it, you know?",
+      "rejected": "Hell, you change your mind just come see me, y'hear?",
+      "advice": "Figure they have some way to make those things, if you can't get your hands on one...",
+      "inquire": "Any luck?",
+      "success": "Damn this thing looks fancy, I hope this is enough for your trouble.  Actually hell, the boys and I just took in a decent haul not long ago, I I can do one better than just paying you.  I'll have a cut of the last hunt laid out on the table in the main room laid out for you.",
+      "success_lie": "Seeing this is probably a bug.",
+      "failure": "Seeing this is probably a bug."
     }
   },
   {
     "id": "MISSION_CF_AUX_C",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
-    "goal": "MGOAL_KILL_MONSTER",
-    "difficulty": 4,
-    "value": 150000,
+    "name": "Bring a copy of History of Alchemy",
+    "description": "Find a copy of History of Alchemy for the Old Guard doctor stationed at the rural church.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 3,
+    "item": "book_potioncraft",
+    "value": 25000,
     "origins": [ "ORIGIN_SECONDARY" ],
+    "end": {
+      "effect": [ { "u_buy_item": "CF_golden_scale", "count": 10 }, { "u_buy_item": "rx12_injector" } ],
+      "update_mapgen": [ { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_aux_c" } ]
+    },
     "dialogue": {
-      "describe": "...",
-      "offer": "...",
-      "accepted": "...",
-      "rejected": "...",
-      "advice": "...",
-      "inquire": "...",
-      "success": "...",
-      "success_lie": "...",
-      "failure": "..."
+      "describe": "Seeing this is probably a bug.",
+      "offer": "I need to do something discreet for me, if you could.  The locals here are still a bit reluctant to work with us, and I can understand why.  Personally, I just want to go about my duties here as best as I'm able, and I think the best way to keep my superiors from causing trouble would be if I provided them with information that'd give them good reason to work with this place, instead of working against them.  I have something in mind that'd kill two birds with one stone, as it were.  If you can provide me with a copy of their medical text, History of Alchemy, I'll be able to better treat people here, not to mention it'll give me a bargaining chip to keep things a bit more civil between the locals and my superiors.",
+      "accepted": "Excellent.  I know this is a bit of an odd task, but it will do a lot to ease my mind.  Not to mention, as anomalous as all this is, having the opportunity to better understand what I've gotten myself into would be appreciated.",
+      "rejected": "Please reconsider, I'll do what I can to repay you if you're able to handle this for me.",
+      "advice": "You can see if they have a book to spare, but do try not to be overly obvious about it...",
+      "inquire": "Do you have it yet?",
+      "success": "Thank you.  I've already been in contact with my CO and they're interested in getting more intel as well.  I'm still a little concerned, but I feel a bit more confident that they aren't going to do anything rash.  As promised, fair payment and a little something extra.  This is an RX-12 stimulant delivery module.  You might find it useful for emergencies.  Came in with the latest gear shipment.",
+      "success_lie": "Seeing this is probably a bug.",
+      "failure": "Seeing this is probably a bug."
     }
   }
 ]

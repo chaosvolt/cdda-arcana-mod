@@ -475,9 +475,10 @@
       ],
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ],
       "place_loot": [
-        { "group": "wood_workshop", "x": [ 4, 6 ], "y": 17, "chance": 50, "repeat": 5 },
-        { "group": "tools_common", "x": 4, "y": [ 19, 20 ], "chance": 50, "repeat": 3 }
+        { "group": "wood_workshop", "x": [ 4, 6 ], "y": 17, "chance": 50, "repeat": 10 },
+        { "group": "tools_common", "x": 4, "y": [ 19, 20 ], "chance": 50, "repeat": 5 }
       ],
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 6 ], "y": [ 17, 20 ] } ],
       "place_npcs": [ { "class": "cf_auxillery_merchant_1", "x": 5, "y": 19 } ]
     }
   },
@@ -501,11 +502,11 @@
       ],
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ],
       "place_loot": [
-        { "group": "swat_gear", "x": 4, "y": [ 17, 20 ], "chance": 30, "repeat": 6 },
-        { "group": "tools_gunsmith", "x": 6, "y": 20, "chance": 30, "repeat": 3 }
+        { "group": "swat_gear", "x": 4, "y": [ 17, 20 ], "chance": 50, "repeat": 10 },
+        { "group": "tools_gunsmith", "x": 6, "y": 20, "chance": 50, "repeat": 5 }
       ],
       "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 6 ], "y": [ 17, 20 ] } ],
-      "place_npcs": [ { "class": "cf_auxillery_merchant_2", "x": 5, "y": 18, "add_trait": "CF_AUX_MARKER_1" } ]
+      "place_npcs": [ { "class": "cf_auxillery_merchant_3", "x": 5, "y": 18, "add_trait": "CF_AUX_MARKER_1" } ]
     }
   },
   {
@@ -531,11 +532,11 @@
       ],
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ],
       "place_loot": [
-        { "group": "preserved_food", "x": [ 4, 6 ], "y": 20, "chance": 40, "repeat": 8 },
-        { "group": "tools_hunting", "x": [ 4, 5 ], "y": 17, "chance": 50, "repeat": 4 }
+        { "group": "preserved_food", "x": [ 4, 6 ], "y": 20, "chance": 50, "repeat": 10 },
+        { "group": "tools_hunting", "x": [ 4, 5 ], "y": 17, "chance": 50, "repeat": 5 }
       ],
       "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 6 ], "y": [ 17, 20 ] } ],
-      "place_npcs": [ { "class": "cf_auxillery_merchant_3", "x": 5, "y": 18, "add_trait": "CF_AUX_MARKER_2" } ]
+      "place_npcs": [ { "class": "cf_auxillery_merchant_2", "x": 5, "y": 18, "add_trait": "CF_AUX_MARKER_2" } ]
     }
   },
   {
@@ -739,6 +740,47 @@
         "t": { "items": [ { "item": "standing_stones_libation", "chance": 5 } ] }
       },
       "faction_owner": [ { "id": "cleansing_flame", "x": [ 0, 1 ], "y": [ 0, 9 ] } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_aux_a",
+    "object": {
+      "place_loot": [
+        { "group": "wood_workshop", "x": [ 4, 6 ], "y": 17, "chance": 50, "repeat": 10 },
+        { "group": "cleansing_flame_crafting", "x": 4, "y": [ 19, 20 ], "chance": 50, "repeat": 10 }
+      ],
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 6 ], "y": [ 17, 20 ] } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_aux_b_1",
+    "object": {
+      "place_loot": [ { "group": "rural_church_hunter_haul", "x": [ 4, 6 ], "y": 20, "chance": 75, "repeat": 10 } ],
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 6 ], "y": [ 17, 20 ] } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_aux_b_2",
+    "object": {
+      "place_loot": [ { "group": "rural_church_hunter_haul", "x": [ 8, 9 ], "y": [ 12, 13 ], "chance": 75, "repeat": 5 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_aux_c",
+    "object": {
+      "place_loot": [
+        { "group": "drugs_soldier", "x": 4, "y": [ 17, 20 ], "chance": 50, "repeat": 10 },
+        { "group": "tools_medical", "x": 6, "y": 20, "chance": 50, "repeat": 5 }
+      ],
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 6 ], "y": [ 17, 20 ] } ]
     }
   },
   {

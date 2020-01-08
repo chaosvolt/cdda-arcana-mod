@@ -330,7 +330,25 @@
   },
   {
     "type": "item_group",
-    "id": "magic_shop_books",
+    "id": "magic_shop_potions",
     "items": [ [ "numbness_potion", 10 ], [ "strength_potion", 10 ], [ "speed_potion", 5 ], [ "healing_potion", 5 ] ]
+  },
+  {
+    "id": "rural_church_hunter_haul",
+    "type": "item_group",
+    "items": [
+      { "item": "meat_pickled", "prob": 25, "charges": 2, "container-item": "jar_glass_sealed" },
+      { "item": "meat_smoked", "prob": 10, "charges": 2, "container-item": "wrapper" },
+      { "item": "jerky", "prob": 10, "charges": 4, "container-item": "wrapper" },
+      { "item": "sausage", "prob": 10, "charges": 2, "container-item": "wrapper" },
+      { "item": "sausage_wasteland", "prob": 10, "charges": 2, "container-item": "wrapper" },
+      { "item": "cracklins", "prob": 5, "charges": 8, "container-item": "wrapper" },
+      { "item": "tallow", "prob": 5, "charges": 2, "container-item": "wrapper" },
+      { "item": "lard", "prob": 5, "charges": 2, "container-item": "wrapper" },
+      { "item": "cured_pelt", "prob": 10, "charges": [ 1, 5 ] },
+      { "item": "cured_hide", "prob": 10, "charges": [ 1, 5 ] },
+      { "item": "bone", "prob": 5, "charges": [ 1, 5 ] },
+      { "item": "broth_bone", "prob": 5, "charges": 2, "container-item": "jar_glass_sealed" }
+    ]
   }
 ]

@@ -26,6 +26,7 @@
       { "text": "Who are you?", "topic": "TALK_MERCHANT_CF_AUX_WHO" },
       { "text": "What do you do around here?", "topic": "TALK_MERCHANT_CF_AUX_DO" },
       { "text": "Got anything to trade?", "effect": "start_trade", "topic": "TALK_MERCHANT_CF_AUX" },
+      { "text": "Can I do anything to help?", "topic": "TALK_MISSION_LIST" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
   },
