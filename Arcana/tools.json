@@ -128,6 +128,7 @@
     "id": "sun_sword_on",
     "type": "TOOL",
     "copy-from": "sun_sword",
+    "repairs_like": "sun_sword",
     "category": "weapons",
     "name": "incorruptible sword (on)",
     "name_plural": "incorruptible swords (on)",
@@ -854,6 +855,7 @@
     "volume": 1,
     "price": 1000,
     "material": "essencemat",
+    "repairs_like": "candle_warding",
     "symbol": ",",
     "color": "white",
     "use_action": [
@@ -989,6 +991,7 @@
   {
     "id": "scourge_moonstone_on",
     "copy-from": "scourge_moonstone",
+    "repairs_like": "scourge_moonstone",
     "type": "GENERIC",
     "name": "moonstone scourge (on)",
     "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  The stone blades reflect with an eerie red luster, and it seems far more nimble in the hand.",
@@ -1025,6 +1028,7 @@
     "material": "stone",
     "symbol": "/",
     "looks_like": "small_relic",
+    "repairs_like": "blood_athame",
     "color": "dark_gray",
     "ammo": "essence_type",
     "max_charges": 8,
@@ -1169,6 +1173,7 @@
     "material": [ "hardsteel", "essencemat" ],
     "symbol": "/",
     "looks_like": "stormbringer",
+    "repairs_like": "stormbringer",
     "color": "dark_gray",
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ] } ]

@@ -19,7 +19,6 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a strange numbness spread through your body.",
-      "stat_adjustments": { "hunger": 25 },
       "effects": [ { "id": "potion_numbness", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
@@ -44,7 +43,6 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel wicked power spread through your body.",
-      "stat_adjustments": { "hunger": 20 },
       "effects": [ { "id": "potion_strength", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
@@ -69,7 +67,6 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a sudden tension spread through your body.",
-      "stat_adjustments": { "hunger": 15 },
       "effects": [ { "id": "potion_speed", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
@@ -91,12 +88,7 @@
     "healthy": 4,
     "fun": 4,
     "freezing_point": -150,
-    "use_action": {
-      "type": "consume_drug",
-      "activation_message": "You drink the potion and feel a pleasant warmth spread through your body.",
-      "stat_adjustments": { "hunger": 10 },
-      "effects": [ { "id": "potion_healing", "duration": 900 } ]
-    },
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_red_potion_healing", "no_fail": true, "level": 0 },
     "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {

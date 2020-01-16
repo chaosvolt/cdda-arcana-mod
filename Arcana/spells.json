@@ -1834,6 +1834,19 @@
     "final_energy_cost": 20
   },
   {
+    "id": "arcana_item_jade_hauberk_pain",
+    "type": "SPELL",
+    "name": "Hauberk Pain Side Effect",
+    "description": "Still stings a bit.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT" ],
+    "min_damage": -4,
+    "max_damage": -4,
+    "effect": "recover_energy",
+    "effect_str": "PAIN"
+  },
+  {
     "id": "arcana_item_meteoric_verge_bolt",
     "type": "SPELL",
     "name": "Bolt From Beyond",
@@ -1873,19 +1886,6 @@
     "max_aoe": 9,
     "min_range": 30,
     "max_range": 30
-  },
-  {
-    "id": "arcana_item_jade_hauberk_pain",
-    "type": "SPELL",
-    "name": "Hauberk Pain Side Effect",
-    "description": "Still stings a bit.",
-    "valid_targets": [ "self" ],
-    "message": "",
-    "flags": [ "SILENT" ],
-    "min_damage": -4,
-    "max_damage": -4,
-    "effect": "recover_energy",
-    "effect_str": "PAIN"
   },
   {
     "type": "SPELL",
@@ -2189,6 +2189,21 @@
     "max_damage": 1,
     "min_aoe": 6,
     "max_aoe": 6
+  },
+  {
+    "id": "arcana_item_red_potion_healing",
+    "type": "SPELL",
+    "name": "Opus Magnum",
+    "description": "Minor healing, and the restorative power of a healing potion.",
+    "message": "You drink the potion and feel a pleasant warmth spread through your body.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
+    "effect_str": "potion_healing",
+    "min_damage": -4,
+    "max_damage": -8,
+    "effect": "target_attack",
+    "min_duration": 90000,
+    "max_duration": 90000
   },
   {
     "type": "SPELL",
