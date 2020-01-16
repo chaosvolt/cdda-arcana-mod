@@ -276,8 +276,8 @@
           { "item": "flintlock_pouch", "contents-group": "bandolier_flintlock_shrike" },
           { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
           { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "bottle_plastic_small", "ammo-item": "vinegar", "charges": 16 },
-          { "item": "bottle_plastic_small", "ammo-item": "lamp_oil", "charges": 250 }
+          { "item": "vinegar", "container-item": "bottle_plastic_small" },
+          { "item": "lamp_oil", "container-item": "bottle_plastic_small" }
         ]
       },
       "male": [ "boxer_shorts" ],
