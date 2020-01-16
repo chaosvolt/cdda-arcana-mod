@@ -267,9 +267,11 @@
             "charges": 2,
             "container-item": "XL_holster"
           },
-          { "item": "flintlock_ammo", "charges": 14, "container-item": "flintlock_pouch" },
+          { "item": "flintlock_pouch" , "ammo-item": "flintlock_ammo", "charges": 14 },
           { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] }
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "bottle_plastic_small", "ammo-item": "vinegar", "charges": 16 },
+          { "item": "bottle_plastic_small", "ammo-item": "lamp_oil", "charges": 250 }
         ]
       },
       "male": [ "boxer_shorts" ],
