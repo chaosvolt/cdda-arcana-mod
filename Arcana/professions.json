@@ -1,5 +1,11 @@
 [
   {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandolier_flintlock_shrike",
+    "entries": [ { "item": "flintlock_ammo", "charges": 14 } ]
+  },
+  {
     "type": "profession",
     "ident": "arcanist_apprentice",
     "name": "Apprentice",
@@ -267,7 +273,7 @@
             "charges": 2,
             "container-item": "XL_holster"
           },
-          { "item": "flintlock_pouch" , "ammo-item": "flintlock_ammo", "charges": 14 },
+          { "item": "flintlock_pouch", "contents-group": "bandolier_flintlock_shrike" },
           { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
           { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
           { "item": "bottle_plastic_small", "ammo-item": "vinegar", "charges": 16 },
