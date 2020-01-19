@@ -52,7 +52,7 @@
     "id": "offering_chalice",
     "type": "TOOL",
     "name": "offering chalice",
-    "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  It is filled with a thick black liquid that you seem unable to pour out.  Using it will allow you to perform a ritual that can convert your own life force into blood essence, at a price...",
+    "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  It is filled with a thick black liquid that you seem unable to pour out.  Using it will allow you to perform a ritual that can convert your own life force into blood essence.  Doing so will take 15 minutes, inflicting harm upon your body at the end, as well as dire consequences if overused...",
     "weight": 2500,
     "volume": 4,
     "price": 161300,
@@ -62,11 +62,20 @@
     "symbol": ";",
     "looks_like": "small_relic",
     "color": "yellow",
-    "flags": [ "MAGIC_FOCUS" ],
+    "flags": [ "MAGIC_FOCUS", "USE_PLAYER_ENERGY" ],
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.25 } ] } ]
     },
-    "use_action": [ "MEDITATE", { "type": "cast_spell", "spell_id": "arcana_item_chalice_offering", "no_fail": true, "level": 0 } ]
+    "use_action": [
+      "MEDITATE",
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_chalice_offering",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ]
   },
   {
     "id": "blood_athame",
@@ -74,7 +83,7 @@
     "//": "By necessity can't yet define this to use copy-from, as qualities will break it.",
     "category": "weapons",
     "name": "silver athame",
-    "description": "An ornate silver dagger, seemingly made for ritual purposes.  It seems sharper than silver has any right to be.  It can be used to perform a ritual converting your life force into blood essence, at a price...",
+    "description": "An ornate silver dagger, seemingly made for ritual purposes.  It seems sharper than silver has any right to be.  It can be used to perform a ritual converting your life force into blood essence.  Doing so will take 5 minutes, inflicting blood loss and damage at the end, as well as potential consequences if overused...",
     "weight": 1302,
     "volume": 3,
     "price": 23500,
@@ -87,7 +96,15 @@
     "color": "red",
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 15 ] ],
-    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_athame_sanguine_art", "no_fail": true, "level": 0 } ],
+    "use_action": [
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_athame_sanguine_art",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
     "flags": [ "STAB", "SHEATH_KNIFE", "USE_PLAYER_ENERGY" ]
   },
   {
@@ -213,7 +230,16 @@
     "ammo": "essence_type",
     "max_charges": 9,
     "charges_per_use": 1,
-    "relic_data": { "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "add": -25 } ], "hit_you_effect": [ { "id": "arcana_react_spear_pestilence_wonder" } ] } ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MOVE_COST", "add": -25 } ],
+          "hit_you_effect": [ { "id": "arcana_react_spear_pestilence_wonder" } ]
+        }
+      ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 },
     "relative": { "weight": 540, "bashing": 2, "price": 1000 },
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
@@ -926,7 +952,14 @@
         "type": "sew_advanced",
         "materials": [ "bone", "chitin", "acidchitin", "clay", "cotton", "fur", "leather", "gutskin", "stone", "wood", "wool" ],
         "skill": "tailor",
-        "clothing_mods": [ "arcana_acidchitin_weave", "arcana_bone_weave", "arcana_chitin_weave", "arcana_clay_weave", "arcana_stone_weave", "arcana_wood_weave" ]
+        "clothing_mods": [
+          "arcana_acidchitin_weave",
+          "arcana_bone_weave",
+          "arcana_chitin_weave",
+          "arcana_clay_weave",
+          "arcana_stone_weave",
+          "arcana_wood_weave"
+        ]
       }
     ],
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
@@ -954,7 +987,13 @@
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ] } ]
     },
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_meteoric_verge_bolt", "no_fail": true, "need_wielding": true, "level": 0 },
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_meteoric_verge_bolt",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    },
     "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
@@ -1005,13 +1044,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_scourge_moonstone_wonder" } ] } ]
     },
-    "use_action": [
-      {
-        "target": "scourge_moonstone",
-        "msg": "The wicked energy flowing through the whip fades.",
-        "type": "transform"
-      }
-    ]
+    "use_action": [ { "target": "scourge_moonstone", "msg": "The wicked energy flowing through the whip fades.", "type": "transform" } ]
   },
   {
     "id": "moonstone_fang",
