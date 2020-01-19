@@ -37,7 +37,9 @@
           { "id": "earth_talisman", "fg": 24, "bg": 0 },
           { "id": "red_black_vulnerary", "fg": 25, "bg": 0 },
           { "id": "yellow_white_incense", "fg": 26, "bg": 0 },
-          { "id": "CF_golden_scale", "fg": 27, "bg": 0 }
+          { "id": "CF_golden_scale", "fg": 27, "bg": 0 },
+          { "id": "mon_archon", "fg": 27, "bg": 0 },
+          { "id": "corpse_mon_archon", "fg": 27, "bg": 0 }
         ]
       }
     ]
@@ -72,6 +74,20 @@
           { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 18, "bg": 0 },
           { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 19, "bg": 0 }
         ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "arcana_expan_80x64.png",
+        "sprite_width": 80,
+        "sprite_height": 64,
+        "sprite_offset_x": -20,
+        "sprite_offset_y": -32,
+        "tiles": [ { "id": "mon_dracolich", "fg": 1, "bg": 0 }, { "id": "corpse_mon_dracolich", "fg": 2, "bg": 0 } ]
       }
     ]
   }
