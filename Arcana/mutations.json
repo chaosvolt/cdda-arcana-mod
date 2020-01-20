@@ -364,7 +364,9 @@
     "threshold": true,
     "//": "The good news, you regen mana faster and vortices are friendly.  The bad news, HFBTV doesn't want you getting any more dependent on the blob (or worse, the Mycus) than you already are.  Side note, the sheer volume of one-note categories I have to define to make all this work annoys me to no end.",
     "mana_regen_multiplier": 1.25,
-    "ignored_by": [ "UNKNOWN" ],
+    "craft_skill_bonus": [ [ "magic", 2 ] ],
+    "ignored_by": [ "ARCANA_SUMMONED", "UNKNOWN" ],
+    "anger_relations": [ [ "NETHER", 20 ], [ "FUNGUS", 10 ] ],
     "allowed_category": [
       "VEIL",
       "ACIDSPRAY",
@@ -1283,6 +1285,18 @@
   },
   {
     "type": "mutation",
+    "id": "CANNIBAL",
+    "copy-from": "CANNIBAL",
+    "extend": { "category": [ "DRAGONBLOOD" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "CARNIVORE",
+    "copy-from": "CARNIVORE",
+    "extend": { "category": [ "DRAGONBLOOD" ] }
+  },
+  {
+    "type": "mutation",
     "id": "ARCANA_SCALYPATCHES",
     "name": "Scaly Patches",
     "points": 1,
@@ -1385,7 +1399,6 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERHEAT" ],
-    "prereqs2": [ "ANIMALDISCORD" ],
     "changes_to": [ "ARCANA_DRAGONFIRE" ],
     "leads_to": [ "ARCANA_FIREAFFINITY", "ARCANA_TOXINIMMUNE" ],
     "category": [ "DRAGONBLOOD" ],
@@ -1409,8 +1422,8 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERFIRE" ],
-    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "prereqs2": [ "CARNIVORE" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "METABOLISM" ],
     "metabolism_modifier": 1.25,
@@ -1471,21 +1484,14 @@
     "points": 2,
     "visibility": 3,
     "ugliness": 2,
-    "description": "You have sharply curved claws on the ends of your fingers, allowing you to make an extra attack when conditions favor it.  However, they do get in the way a bit, especially if you are wearing gloves.",
+    "description": "You have sharply curved claws on the ends of your fingers, making your unarmed attacks more dangerous.  However, they do get in the way a bit, especially if you are wearing gloves.",
     "valid": false,
     "purifiable": false,
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
     "encumbrance_always": [ [ "HAND_L", 5 ], [ "HAND_R", 5 ] ],
     "encumbrance_covered": [ [ "HAND_L", 5 ], [ "HAND_R", 5 ] ],
-    "attacks": [
-      {
-        "attack_text_u": "You slash %s with your claws",
-        "attack_text_npc": "%1$s slashes %2$s with their claws",
-        "chance": 20,
-        "strength_damage": { "damage_type": "cut", "amount": 2 }
-      }
-    ]
+    "rand_cut_bonus": { "min": 2, "max": 6 }
   },
   {
     "type": "mutation",
@@ -1687,6 +1693,27 @@
     "encumbrance_always": [ [ "TORSO", 5 ] ],
     "encumbrance_covered": [ [ "TORSO", 5 ] ],
     "armor": [ { "parts": "TORSO", "bash": 5, "cut": 15 } ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_INSTINCT",
+    "name": "Savage Instinct",
+    "points": 8,
+    "mixed_effect": true,
+    "description": "Your very mindset has been permanently altered, marked by predatory drives unlike anything that belongs in this world.  Killing has become second nature to you now, but mundane wildlife seem to pick up on your unnatural nature.  You also find it harder to focus on certain crafting tasks, though at least your wits are still intact.",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [ "ARCANA_DRAGONFIRE" ],
+    "prereqs2": [ "ARCANA_PLATES" ],
+    "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
+    "social_modifiers": { "intimidate": 20 },
+    "craft_skill_bonus": [ [ "computer", -2 ], [ "electronics", -2 ], [ "mechanics", -2 ], [ "tailor", -2 ] ],
+    "reading_speed_multiplier": 1.25,
+    "scent_intensity": 1200,
+    "scent_type": "sc_dragonblood",
+    "anger_relations": [ [ "DRAGON", -10 ], [ "FUNGUS", 25 ], [ "MAMMAL", 15 ], [ "BIRD", 15 ], [ "REPTILE", 15 ] ],
+    "flags": [ "PRED4" ]
   },
   {
     "type": "mutation",
