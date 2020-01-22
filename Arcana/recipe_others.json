@@ -782,7 +782,7 @@
     "components": [
       [ [ "petrified_eye", 1 ], [ "engraved_stone", 1 ] ],
       [ [ "gold_small", 500 ] ],
-      [ [ "diamond", 1 ] ],
+      [ [ "pearl", 1 ], [ "opal", 1 ], [ "diamond", 1 ], [ "vortex_shard", 1 ], [ "engraved_stone", 1 ] ],
       [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_blood", 10, "LIST" ] ]
     ]
   },

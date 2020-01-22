@@ -60,7 +60,17 @@
       [ "book_syncretism", 2 ]
     ],
     "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
-    "components": [ [ [ "glass_shard", 1 ], [ "amulet_exotic", 1 ], [ "brooch_iridescent", 1 ] ], [ [ "copper", 100 ] ] ]
+    "components": [
+      [
+        [ "amethyst", 1 ],
+        [ "aquamarine", 1 ],
+        [ "blue_topaz", 1 ],
+        [ "sapphire", 1 ],
+        [ "monster_tear", 1 ],
+        [ "blob_gem", 1 ]
+      ],
+      [ [ "copper", 100 ], [ "silver_small", 100 ], [ "gold_small", 100 ] ]
+    ]
   },
   {
     "result": "gilded_aegis",
@@ -120,9 +130,16 @@
       [ [ "armguard_larmor", 1 ] ],
       [ [ "boots_larmor", 1 ] ],
       [ [ "leather", 4 ], [ "fur", 4 ] ],
-      [ [ "jade_brooch", 1 ], [ "brooch_iridescent", 1 ] ],
       [
-        [ "wyrmskin_piece", 1 ],
+        [ "alexandrite", 1 ],
+        [ "peridot", 1 ],
+        [ "citrine", 1 ],
+        [ "emerald", 1 ],
+        [ "jade_brooch", 1 ],
+        [ "iridescent_plate", 1 ],
+        [ "wyrmskin_piece", 1 ]
+      ],
+      [
         [ "acid", 1 ],
         [ "chem_sulphuric_acid", 1 ],
         [ "chem_nitric_acid", 1 ],
@@ -148,7 +165,7 @@
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
     "components": [
       [ [ "silver_small", 600 ], [ "gold_small", 600 ] ],
-      [ [ "diamond", 1 ], [ "engraved_stone", 1 ] ],
+      [ [ "pearl", 1 ], [ "opal", 1 ], [ "diamond", 1 ], [ "vortex_shard", 1 ], [ "engraved_stone", 1 ] ],
       [ [ "essence_blood", 6 ] ]
     ]
   },
@@ -225,11 +242,7 @@
     "skills_required": [ "fabrication", 7 ],
     "time": "90 m",
     "book_learn": [ [ "book_hexenhammer", 10 ], [ "book_syncretism", 9 ] ],
-    "using": [
-      [ "sewing_standard", 120 ],
-      [ "forging_standard", 6 ],
-      [ "bronzesmithing_tools", 1 ]
-    ],
+    "using": [ [ "sewing_standard", 120 ], [ "forging_standard", 6 ], [ "bronzesmithing_tools", 1 ] ],
     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ] ],
     "components": [
       [ [ "chainmail_hauberk", 1 ] ],
