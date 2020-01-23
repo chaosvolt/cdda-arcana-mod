@@ -140,7 +140,6 @@
     "points": 3,
     "description": "You have been trained in Via Gladium et Malleo, a weapon art focused on preserving momentum and fighting multiple opponents, using your fury in different ways depending on your weapon of choice.",
     "initial_ma_styles": [ "style_cleansingflame" ],
-    "changes_to": [ "PROF_SANGUINE", "PROF_CHALICE" ],
     "valid": false
   },
   {
@@ -502,7 +501,6 @@
     "valid": false,
     "purifiable": false,
     "category": [ "ECLIPSE" ],
-    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
     "spells_learned": [ [ "arcana_magic_eclipse", 1 ] ]
   },
   {
@@ -560,7 +558,6 @@
     "valid": false,
     "purifiable": false,
     "category": [ "HEAL" ],
-    "changes_to": [ "PROF_SANGUINE" ],
     "spells_learned": [ [ "arcana_magic_healing", 1 ] ]
   },
   {
@@ -652,7 +649,6 @@
     "purifiable": false,
     "//": "ID for INVIS retained to not break stuff.",
     "category": [ "INVIS" ],
-    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
     "spells_learned": [ [ "arcana_magic_serpentine_shield", 1 ] ]
   },
   {
@@ -676,7 +672,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "BUGSLESSER" ],
-    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
+    "changes_to": [ "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_magic_summon_giant_centipedes", 1 ] ]
   },
   {
@@ -687,16 +683,7 @@
     "description": "Powers from beyond have granted you the power to summon a skeletal dog.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "changes_to": [
-      "PROF_CLEANSINGFLAME",
-      "PROF_CLEANSINGFLAME2",
-      "SPELL_SUMMONDOG2",
-      "SPELL_SUMMONSKEL",
-      "SPELL_SUMMONCULUS",
-      "SPELL_SUMMONTHING",
-      "SPELL_BUGS",
-      "SPELL_SUMMONVORTEX"
-    ],
+    "changes_to": [ "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
   },
   {
@@ -841,7 +828,7 @@
     "changes_to": [ "SPELL_LOCKPICK2" ],
     "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT" ],
     "category": [ "VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_conjure_lightburst", 1 ] ],
+    "spells_learned": [ [ "arcana_blessing_conjure_shadow_field", 1 ], [ "arcana_blessing_conjure_lightburst", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -857,7 +844,11 @@
     "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_open_lock", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_conjure_shadow_field", 1 ],
+      [ "arcana_blessing_conjure_lightburst", 1 ],
+      [ "arcana_blessing_open_lock", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -874,7 +865,12 @@
     "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_wall_force", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_conjure_shadow_field", 1 ],
+      [ "arcana_blessing_conjure_lightburst", 1 ],
+      [ "arcana_blessing_open_lock", 1 ],
+      [ "arcana_blessing_wall_force", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -890,7 +886,13 @@
     "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_pacify_monsters", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_conjure_shadow_field", 1 ],
+      [ "arcana_blessing_conjure_lightburst", 1 ],
+      [ "arcana_blessing_open_lock", 1 ],
+      [ "arcana_blessing_wall_force", 1 ],
+      [ "arcana_blessing_pacify_monsters", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -905,7 +907,14 @@
     "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK", "SPELL_CONSECRATELESSER" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_consecrate", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_conjure_shadow_field", 1 ],
+      [ "arcana_blessing_conjure_lightburst", 1 ],
+      [ "arcana_blessing_open_lock", 1 ],
+      [ "arcana_blessing_wall_force", 1 ],
+      [ "arcana_blessing_pacify_monsters", 1 ],
+      [ "arcana_blessing_consecrate", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -934,7 +943,7 @@
     "changes_to": [ "SPELL_AGILE2" ],
     "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE" ],
     "category": [ "VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_clairvoyance", 1 ] ],
+    "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -950,7 +959,7 @@
     "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_agility", 1 ] ],
+    "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ], [ "arcana_blessing_agility", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -966,7 +975,12 @@
     "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_surge_adrenaline", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_might", 1 ],
+      [ "arcana_blessing_clairvoyance", 1 ],
+      [ "arcana_blessing_agility", 1 ],
+      [ "arcana_blessing_surge_adrenaline", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -982,7 +996,13 @@
     "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_drain_life", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_might", 1 ],
+      [ "arcana_blessing_clairvoyance", 1 ],
+      [ "arcana_blessing_agility", 1 ],
+      [ "arcana_blessing_surge_adrenaline", 1 ],
+      [ "arcana_blessing_drain_life", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -997,7 +1017,14 @@
     "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_illusion_cloak", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_might", 1 ],
+      [ "arcana_blessing_clairvoyance", 1 ],
+      [ "arcana_blessing_agility", 1 ],
+      [ "arcana_blessing_surge_adrenaline", 1 ],
+      [ "arcana_blessing_drain_life", 1 ],
+      [ "arcana_blessing_illusion_cloak", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1026,7 +1053,7 @@
     "changes_to": [ "SPELL_LIGHTNING2" ],
     "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE" ],
     "category": [ "VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_conjure_miasma", 1 ] ],
+    "spells_learned": [ [ "arcana_blessing_confuse_monster", 1 ], [ "arcana_blessing_conjure_miasma", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1042,7 +1069,11 @@
     "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_divine_storm", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_confuse_monster", 1 ],
+      [ "arcana_blessing_conjure_miasma", 1 ],
+      [ "arcana_blessing_divine_storm", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1058,7 +1089,12 @@
     "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING", "SPELL_FIRE" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_holy_flare", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_confuse_monster", 1 ],
+      [ "arcana_blessing_conjure_miasma", 1 ],
+      [ "arcana_blessing_divine_storm", 1 ],
+      [ "arcana_blessing_holy_flare", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1074,7 +1110,13 @@
     "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING", "SPELL_FIRE" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_radiant_burst", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_confuse_monster", 1 ],
+      [ "arcana_blessing_conjure_miasma", 1 ],
+      [ "arcana_blessing_divine_storm", 1 ],
+      [ "arcana_blessing_holy_flare", 1 ],
+      [ "arcana_blessing_radiant_burst", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1089,7 +1131,14 @@
     "prereqs": [ "SPELL_LIGHTNINGFIELD" ],
     "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING", "SPELL_FIRE" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_wave_destruction", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_confuse_monster", 1 ],
+      [ "arcana_blessing_conjure_miasma", 1 ],
+      [ "arcana_blessing_divine_storm", 1 ],
+      [ "arcana_blessing_holy_flare", 1 ],
+      [ "arcana_blessing_radiant_burst", 1 ],
+      [ "arcana_blessing_wave_destruction", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1118,7 +1167,7 @@
     "changes_to": [ "SPELL_ELECRESIST2" ],
     "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR" ],
     "category": [ "VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_ward_poison", 1 ] ],
+    "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1134,7 +1183,7 @@
     "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_ward_lightning", 1 ] ],
+    "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ], [ "arcana_blessing_ward_lightning", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1150,7 +1199,12 @@
     "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_ward_flame", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_ward_acid", 1 ],
+      [ "arcana_blessing_ward_poison", 1 ],
+      [ "arcana_blessing_ward_lightning", 1 ],
+      [ "arcana_blessing_ward_flame", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1166,7 +1220,13 @@
     "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_FROSTARMORLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_ward_cold", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_ward_acid", 1 ],
+      [ "arcana_blessing_ward_poison", 1 ],
+      [ "arcana_blessing_ward_lightning", 1 ],
+      [ "arcana_blessing_ward_flame", 1 ],
+      [ "arcana_blessing_ward_cold", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1188,7 +1248,14 @@
     ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_holy_ward", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_ward_acid", 1 ],
+      [ "arcana_blessing_ward_poison", 1 ],
+      [ "arcana_blessing_ward_lightning", 1 ],
+      [ "arcana_blessing_ward_flame", 1 ],
+      [ "arcana_blessing_ward_cold", 1 ],
+      [ "arcana_blessing_holy_ward", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1217,7 +1284,7 @@
     "changes_to": [ "SPELL_SUMMONCULUS" ],
     "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_summon_skeleton", 1 ] ],
+    "spells_learned": [ [ "arcana_blessing_summon_skeletal_dog", 1 ], [ "arcana_blessing_summon_skeleton", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1233,7 +1300,11 @@
     "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_summon_homunculus", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_summon_skeletal_dog", 1 ],
+      [ "arcana_blessing_summon_skeleton", 1 ],
+      [ "arcana_blessing_summon_homunculus", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1249,7 +1320,12 @@
     "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_summon_thing", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_summon_skeletal_dog", 1 ],
+      [ "arcana_blessing_summon_skeleton", 1 ],
+      [ "arcana_blessing_summon_homunculus", 1 ],
+      [ "arcana_blessing_summon_thing", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1265,7 +1341,13 @@
     "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_summon_giant_centipedes", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_summon_skeletal_dog", 1 ],
+      [ "arcana_blessing_summon_skeleton", 1 ],
+      [ "arcana_blessing_summon_homunculus", 1 ],
+      [ "arcana_blessing_summon_thing", 1 ],
+      [ "arcana_blessing_summon_giant_centipedes", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1280,7 +1362,14 @@
     "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "spells_learned": [ [ "arcana_blessing_summon_vortices", 1 ] ],
+    "spells_learned": [
+      [ "arcana_blessing_summon_skeletal_dog", 1 ],
+      [ "arcana_blessing_summon_skeleton", 1 ],
+      [ "arcana_blessing_summon_homunculus", 1 ],
+      [ "arcana_blessing_summon_thing", 1 ],
+      [ "arcana_blessing_summon_giant_centipedes", 1 ],
+      [ "arcana_blessing_summon_vortices", 1 ]
+    ],
     "flags": [ "explorer_of_the_veil" ]
   },
   {
@@ -1720,24 +1809,50 @@
     "id": "PROF_CLEANSINGFLAME",
     "name": "Cleansing Flame",
     "points": 0,
-    "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renagade, wherever your loyalties now lie, your past may still be useful in the future.",
+    "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renegade, wherever your loyalties now lie, your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
     "profession": true,
     "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
-    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER", "SPELL_CLARITY", "SPELL_ECLIPSE" ]
+    "cancels": [
+      "ILLITERATE",
+      "PACIFIST",
+      "SPELL_SHADOWSNAKES",
+      "SPELL_SUMMONDOG",
+      "SPELL_BUGSLESSER",
+      "SPELL_CLARITY",
+      "SPELL_ECLIPSE",
+      "ARCANA_SCALYPATCHES",
+      "ARCANA_INNERHEAT",
+      "ARCANA_DRAGONCLAWS",
+      "ARCANA_DRAGONTEETH",
+      "ARCANA_DRAGONHORNS"
+    ]
   },
   {
     "type": "mutation",
     "id": "PROF_CLEANSINGFLAME2",
     "name": "Cleansing Flame",
     "points": 0,
-    "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renagade, wherever your loyalties now lie, your past may still be useful in the future.",
+    "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renegade, wherever your loyalties now lie, your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
     "profession": true,
     "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
-    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER", "SPELL_CLARITY", "SPELL_ECLIPSE" ]
+    "cancels": [
+      "ILLITERATE",
+      "PACIFIST",
+      "SPELL_SHADOWSNAKES",
+      "SPELL_SUMMONDOG",
+      "SPELL_BUGSLESSER",
+      "SPELL_CLARITY",
+      "SPELL_ECLIPSE",
+      "ARCANA_SCALYPATCHES",
+      "ARCANA_INNERHEAT",
+      "ARCANA_DRAGONCLAWS",
+      "ARCANA_DRAGONTEETH",
+      "ARCANA_DRAGONHORNS"
+    ]
   },
   {
     "type": "mutation",
@@ -1749,7 +1864,7 @@
     "purifiable": false,
     "profession": true,
     "//": "This prevents blood mages from picking a spell considered potentially too altruistic in nature, or from choosing a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
-    "cancels": [ "SPELL_HEAL", "MARTIAL_ARTS_CF" ]
+    "cancels": [ "ILLITERATE", "SPIRITUAL", "PACIFIST", "SPELL_HEAL", "MARTIAL_ARTS_CF" ]
   },
   {
     "type": "mutation",
@@ -1760,8 +1875,17 @@
     "valid": false,
     "purifiable": false,
     "profession": true,
-    "//": "This prevents dark priests from picking a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
-    "cancels": [ "MARTIAL_ARTS_CF" ]
+    "//": "This prevents dark priests from picking a faction-specific martial art, nor to taint their bodies with strange magic.  Non-faction arcanists are still allowed to pick it.",
+    "cancels": [
+      "ILLITERATE",
+      "PACIFIST",
+      "MARTIAL_ARTS_CF",
+      "ARCANA_SCALYPATCHES",
+      "ARCANA_INNERHEAT",
+      "ARCANA_DRAGONCLAWS",
+      "ARCANA_DRAGONTEETH",
+      "ARCANA_DRAGONHORNS"
+    ]
   },
   {
     "type": "mutation",
@@ -1771,7 +1895,8 @@
     "description": "Though you studied the Beyond, you weren't directly associated with the major groups to gain infamy among your fellow scholars.  Still, your familiarity with the arcane may prove useful someday.",
     "valid": false,
     "purifiable": false,
-    "profession": true
+    "profession": true,
+    "cancels": [ "ILLITERATE" ]
   },
   {
     "type": "mutation",
@@ -1781,6 +1906,7 @@
     "description": "Though you studied the Beyond, you weren't directly associated with the major groups to gain infamy among your fellow scholars.  Still, your familiarity with the arcane may prove useful someday.",
     "valid": false,
     "purifiable": false,
-    "profession": true
+    "profession": true,
+    "cancels": [ "ILLITERATE" ]
   }
 ]

@@ -314,35 +314,83 @@
   {
     "type": "effect_type",
     "id": "spell_might",
-    "name": [ "Might", "Might [2]", "Might [3]", "Might [4]", "Might [5]", "Might [6]", "Might [7]", "Might [8+]" ],
+    "name": [
+      "Might",
+      "Might [2]",
+      "Might [3]",
+      "Might [4]",
+      "Might [5]",
+      "Might [6]",
+      "Might [7]",
+      "Might [8]",
+      "Might [9]",
+      "Might [10]",
+      "Might [11]",
+      "Might [12]",
+      "Might [13]",
+      "Might [14]",
+      "Might [15+]"
+    ],
     "desc": [ "The fabric of The Veil is woven into your frame.  Your strength is augmented by magic." ],
     "remove_message": "You feel weakened as your magically-induced strength leaves you.",
     "decay_messages": [ [ "Your spell of might is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "100 m",
-    "max_intensity": 8,
+    "max_intensity": 15,
     "int_dur_factor": "1 m",
     "base_mods": { "str_mod": [ 1 ] },
-    "scaling_mods": { "str_mod": [ 1 ] }
+    "scaling_mods": { "str_mod": [ 0.5 ] }
   },
   {
     "type": "effect_type",
     "id": "spell_agility",
-    "name": [ "Agility", "Agility [2]", "Agility [3]", "Agility [4]", "Agility [5]", "Agility [6]", "Agility [7]", "Agility [8+]" ],
+    "name": [
+      "Agility",
+      "Agility [2]",
+      "Agility [3]",
+      "Agility [4]",
+      "Agility [5]",
+      "Agility [6]",
+      "Agility [7]",
+      "Agility [8]",
+      "Agility [9]",
+      "Agility [10]",
+      "Agility [11]",
+      "Agility [12]",
+      "Agility [13]",
+      "Agility [14]",
+      "Agility [15+]"
+    ],
     "desc": [ "The winds of distant realms are at your back.  Your dexterity and speed are augmented by magic." ],
     "remove_message": "You feel sluggish as your magically-induced agility leaves you.",
     "decay_messages": [ [ "Your spell of agility is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "100 m",
-    "max_intensity": 8,
+    "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "dex_mod": [ 1 ], "speed_mod": [ 5 ] },
-    "scaling_mods": { "dex_mod": [ 1 ], "speed_mod": [ 5 ] }
+    "base_mods": { "dex_mod": [ 1 ], "speed_mod": [ 3 ] },
+    "scaling_mods": { "dex_mod": [ 0.5 ], "speed_mod": [ 3 ] }
   },
   {
     "type": "effect_type",
     "id": "spell_insight",
-    "name": [ "Insight", "Insight [2]", "Insight [3]", "Insight [4]", "Insight [5]", "Insight [6]", "Insight [7]", "Insight [8+]" ],
+    "name": [
+      "Insight",
+      "Insight [2]",
+      "Insight [3]",
+      "Insight [4]",
+      "Insight [5]",
+      "Insight [6]",
+      "Insight [7]",
+      "Insight [8]",
+      "Insight [9]",
+      "Insight [10]",
+      "Insight [11]",
+      "Insight [12]",
+      "Insight [13]",
+      "Insight [14]",
+      "Insight [15+]"
+    ],
     "desc": [
       "The eyes of The Beyond shall guide you.  Your perception is augmented by magic, and you can see clearly in darkness."
     ],
@@ -350,10 +398,10 @@
     "decay_messages": [ [ "Your spell of insight is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "100 m",
-    "max_intensity": 8,
+    "max_intensity": 15,
     "int_dur_factor": "1 m",
     "base_mods": { "per_mod": [ 1 ] },
-    "scaling_mods": { "per_mod": [ 1 ] },
+    "scaling_mods": { "per_mod": [ 0.5 ] },
     "flags": [ "EFFECT_NIGHT_VISION" ]
   },
   {
@@ -854,7 +902,6 @@
     "id": "cf_sofia_notes_given",
     "//": "Effect for players, indicates that Sofia has already given the player a copy of Apprentice's Notes.  Intended to be permanent."
   },
-
   {
     "type": "effect_type",
     "id": "cf_sofia_traded",
