@@ -347,5 +347,22 @@
     "sym": "C",
     "color": "i_green",
     "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "house_arcana",
+    "name": "house",
+    "copy-from": "generic_city_building",
+    "color": "light_green",
+    "see_cost": 2,
+    "flags": [ "SIDEWALK", "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "house_arcana_roof",
+    "name": "house",
+    "copy-from": "generic_city_building",
+    "color": "light_green",
+    "see_cost": 2
   }
 ]

@@ -2,7 +2,6 @@
   {
     "id": "LIGHTNING_JUDGMENT",
     "type": "ammo_effect",
-    "trail": { "field_type": "fd_electricity", "intensity_min": 2, "intensity_max": 3 },
     "aoe": {
       "field_type": "fd_electricity",
       "intensity_min": 1,
@@ -13,6 +12,7 @@
       "check_sees": true,
       "check_sees_radius": 3
     },
+    "trail": { "field_type": "fd_electricity", "intensity_min": 2, "intensity_max": 3, "chance": 100 },
     "do_emp_blast": true
   },
   {
