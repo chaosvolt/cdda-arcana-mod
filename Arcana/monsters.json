@@ -540,6 +540,12 @@
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the spirit of fire!",
         "no_ammo_sound": "a distorted growl!"
+      },
+      {
+        "type": "spell",
+        "spell_id": "arcana_monster_fire_radiance",
+        "cooldown": 10,
+        "monster_message": "Oppressive heat radiates from the spirit of fire."
       }
     ],
     "death_drops": "mon_spirit_of_fire_death_drops",
@@ -554,6 +560,7 @@
       "FIREPROOF",
       "SEES",
       "PATH_AVOID_DANGER_1",
+      "STUN_IMMUNE",
       "PRIORITIZE_TARGETS"
     ]
   },
