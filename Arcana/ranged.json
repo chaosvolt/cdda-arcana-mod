@@ -29,7 +29,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ] } ]
     },
-    "ammo_effects": [ "LIGHTNING", "EMP", "PARALYZEPOISON" ],
+    "ammo_effects": [ "LIGHTNING_JUDGMENT" ],
     "flags": [ "STAB", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
     "use_action": "MEDITATE"
   },
@@ -131,7 +131,7 @@
     "clip_size": 1,
     "reload": 200,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
-    "ammo_effects": [ "NAPALM" ],
+    "ammo_effects": [ "NAPALM", "FIRE_CORRUPTION" ],
     "artifact_data": { "effects_wielded": [ "AEP_SAP_LIFE", "AEP_EVIL", "AEP_GLOW" ] },
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "BUTCHER", 12 ] ],

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "LIGHTNING_JUDGMENT",
+    "type": "ammo_effect",
+    "aoe": {
+      "field_type": "fd_electricity",
+      "intensity_min": 1,
+      "intensity_max": 3,
+      "radius": 5,
+      "chance": 25,
+      "check_passable": true,
+      "check_sees": true,
+      "check_sees_radius": 3
+    },
+    "trail": { "field_type": "fd_electricity", "intensity_min": 2, "intensity_max": 3, "chance": 100 },
+    "do_emp_blast": true
+  },
+  {
+    "id": "FIRE_CORRUPTION",
+    "type": "ammo_effect",
+    "aoe": {
+      "field_type": "fd_flame_burst",
+      "intensity_min": 1,
+      "intensity_max": 3,
+      "radius": 3,
+      "chance": 1,
+      "check_passable": true,
+      "check_sees": true,
+      "check_sees_radius": 3
+    }
+  }
+]
