@@ -969,7 +969,7 @@
     "vision_night": 50,
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
-    "delete": { "flags": [ "SUNDEATH" ] }
+    "delete": { "flags": [ "SUNDEATH", "HIT_AND_RUN" ] }
   },
   {
     "id": "mon_mi_go_summoned",
