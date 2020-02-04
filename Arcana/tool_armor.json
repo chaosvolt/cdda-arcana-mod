@@ -14,7 +14,7 @@
     "charges_per_use": 15,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_gilded_aegis_healing", "no_fail": true, "level": 0, "need_worn": true },
     "relative": { "weight": 3020, "price": 7200, "material_thickness": 3, "encumbrance": 9 },
-    "extend": { "flags": [ "NO_SALVAGE", "HELMET_COMPAT" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "HELMET_COMPAT", "FANCY" ] }
   },
   {
     "id": "somen_clairvoyance",
@@ -88,7 +88,7 @@
     "environmental_protection": 10,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true },
     "relative": { "weight": 722, "volume": 6, "price": 80000 },
-    "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS" ] },
+    "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "FANCY" ] },
     "delete": { "flags": [ "VARSIZE" ] }
   },
   {
