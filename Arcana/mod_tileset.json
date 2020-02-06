@@ -39,7 +39,9 @@
           { "id": "yellow_white_incense", "fg": 26, "bg": 0 },
           { "id": "CF_golden_scale", "fg": 27, "bg": 0 },
           { "id": "mon_archon", "fg": 28, "bg": 0 },
-          { "id": "corpse_mon_archon", "fg": 29, "bg": 0 }
+          { "id": "corpse_mon_archon", "fg": 29, "bg": 0 },
+          { "id": "overlay_wielded_stinger_flute", "fg": 30, "bg": 0 },
+          { "id": "overlay_wielded_offering_chalice", "fg": 31, "bg": 0 }
         ]
       }
     ]
