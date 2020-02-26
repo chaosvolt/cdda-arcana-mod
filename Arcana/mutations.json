@@ -144,216 +144,6 @@
   },
   {
     "type": "mutation",
-    "id": "THRESH_AGILITY",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_BUGSLESSER",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_CLAIRVOYANCE",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_CLARITY",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_CONSECRATELESSER",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_CONFUSE",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_ACIDSPRAY",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_ECLIPSE",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_ELEMENTALBURST",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_FLAMEARMOR",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_FROSTARMORLESSER",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_FREEACTION",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_HEAL",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_INSIGHT",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_INVIS",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_ELECRESIST",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_MIGHT",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_OVERGROWTH",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_LIGHTNING",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_SUNDERINGQUAKE",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
-    "id": "THRESH_CLERIC",
-    "name": "Fake Threshold",
-    "points": 0,
-    "description": "This exists only because mutation categories for pattern scrolls throw out errors without a matching threshold.  This is a bug if you have it.",
-    "valid": false,
-    "purifiable": false,
-    "threshold": true
-  },
-  {
-    "type": "mutation",
     "id": "THRESH_VEIL",
     "name": "Paragon of The Veil",
     "points": 1,
@@ -361,35 +151,12 @@
     "valid": false,
     "purifiable": false,
     "threshold": true,
-    "//": "The good news, you regen mana faster and vortices are friendly.  The bad news, HFBTV doesn't want you getting any more dependent on the blob (or worse, the Mycus) than you already are.  Side note, the sheer volume of one-note categories I have to define to make all this work annoys me to no end.",
+    "//": "The good news, you regen mana faster and vortices are friendly.  The bad news, HFBTV doesn't want you getting any more dependent on the blob (or worse, the Mycus) than you already are.",
     "mana_regen_multiplier": 1.25,
     "craft_skill_bonus": [ [ "magic", 2 ] ],
     "ignored_by": [ "ARCANA_SUMMONED", "UNKNOWN" ],
     "anger_relations": [ [ "NETHER", 20 ], [ "FUNGUS", 10 ] ],
-    "allowed_category": [
-      "VEIL",
-      "ACIDSPRAY",
-      "AGILITY",
-      "CLAIRVOYANCE",
-      "CLARITY",
-      "CONFUSE",
-      "FLAMEARMOR",
-      "FREEACTION",
-      "HEAL",
-      "INSIGHT",
-      "INVIS",
-      "ELECRESIST",
-      "MIGHT",
-      "OVERGROWTH",
-      "LIGHTNING",
-      "CLERIC",
-      "CONSECRATELESSER",
-      "FROSTARMORLESSER",
-      "SUNDERINGQUAKE",
-      "ELEMENTALBURST",
-      "BUGSLESSER",
-      "ECLIPSE"
-    ]
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -409,8 +176,6 @@
     "description": "Powers from beyond have granted you power, that can grant a temporary speed and agility-enhancing effect.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "AGILITY" ],
-    "changes_to": [ "SPELL_AGILE2", "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "spells_learned": [ [ "arcana_magic_agility", 1 ] ]
   },
   {
@@ -421,8 +186,6 @@
     "description": "Powers from beyond have granted you power, that can grant sight beyond sight temporarily.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "CLAIRVOYANCE" ],
-    "changes_to": [ "SPELL_CLAIRVOYANCE2", "SPELL_AGILE2", "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "spells_learned": [ [ "arcana_magic_clairvoyance", 1 ] ]
   },
   {
@@ -433,7 +196,6 @@
     "description": "Powers from beyond have granted you a power that can protect against parasites and the Mycus.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "CLARITY" ],
     "spells_learned": [ [ "arcana_magic_clarity_blood", 1 ] ]
   },
   {
@@ -444,8 +206,6 @@
     "description": "Powers from beyond have granted you a power that can confuse nearby monsters.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "CONFUSE" ],
-    "changes_to": [ "SPELL_CONFUSE2", "SPELL_CLOUD", "SPELL_LIGHTNING2", "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "spells_learned": [ [ "arcana_magic_confuse_monster", 1 ] ]
   },
   {
@@ -456,7 +216,6 @@
     "description": "Powers from beyond have granted you the power to conjure sprays of acid.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "ACIDSPRAY" ],
     "spells_learned": [ [ "arcana_magic_conjure_acid", 1 ] ]
   },
   {
@@ -467,8 +226,6 @@
     "description": "Powers from beyond have granted you the power to subvert otherworldly influences on the environment, within your immediate surroundings.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "CONSECRATELESSER" ],
-    "changes_to": [ "SPELL_CONSECRATE" ],
     "spells_learned": [ [ "arcana_magic_consecrate", 1 ] ]
   },
   {
@@ -489,7 +246,6 @@
     "description": "Powers from beyond have granted you the power to conjure a burst of flame, where you command.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "changes_to": [ "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "spells_learned": [ [ "arcana_magic_conjure_flame", 1 ] ]
   },
   {
@@ -500,7 +256,6 @@
     "description": "Powers from beyond have granted you the power to bring forth wicked omens, gaining a temporary surge of power in exchange for permanent scars upon the land.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "ECLIPSE" ],
     "spells_learned": [ [ "arcana_magic_eclipse", 1 ] ]
   },
   {
@@ -511,7 +266,6 @@
     "description": "Powers from beyond have granted you the power to conjure chaotic magic, blasting foes with elemental force.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "ELEMENTALBURST" ],
     "spells_learned": [ [ "arcana_magic_elemental_burst", 1 ] ]
   },
   {
@@ -522,8 +276,6 @@
     "description": "Powers from beyond have granted you power, that can grant temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "FLAMEARMOR" ],
-    "changes_to": [ "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_heat_ward", 1 ] ]
   },
   {
@@ -534,8 +286,6 @@
     "description": "Powers from beyond have granted you power, that can grant temporary resistance to the cold.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "FROSTARMORLESSER" ],
-    "changes_to": [ "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_cold_ward", 1 ] ]
   },
   {
@@ -546,7 +296,6 @@
     "description": "Powers from beyond have granted you power, that can protect against paralytic effects and other hindrances.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "FREEACTION" ],
     "spells_learned": [ [ "arcana_magic_free_action", 1 ] ]
   },
   {
@@ -557,7 +306,6 @@
     "description": "Powers from beyond have granted you the power to heal the body, though overuse may have consequences.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "HEAL" ],
     "spells_learned": [ [ "arcana_magic_healing", 1 ] ]
   },
   {
@@ -568,7 +316,6 @@
     "description": "Powers from beyond have granted you power, that can grant a temporary boost to perception.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "INSIGHT" ],
     "spells_learned": [ [ "arcana_magic_insight", 1 ] ]
   },
   {
@@ -579,7 +326,6 @@
     "description": "Powers from beyond have granted you the power to conjure a temporary aura of illumination.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "changes_to": [ "SPELL_LIGHT2", "SPELL_LOCKPICK2", "SPELL_TELEPORT", "SPELL_PACIFY", "SPELL_CONSECRATE" ],
     "spells_learned": [ [ "arcana_magic_light", 1 ] ]
   },
   {
@@ -590,8 +336,6 @@
     "description": "Powers from beyond have granted you power, that can grant temporary protection against electricity.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "ELECRESIST" ],
-    "changes_to": [ "SPELL_ELECRESIST2", "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_lightning_ward", 1 ] ]
   },
   {
@@ -602,8 +346,6 @@
     "description": "Powers from beyond have granted you power, that can provide a temporary strength-enhancing effect.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "MIGHT" ],
-    "changes_to": [ "SPELL_STRENGTH2", "SPELL_CLAIRVOYANCE2", "SPELL_AGILE2", "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "spells_learned": [ [ "arcana_magic_might", 1 ] ]
   },
   {
@@ -614,7 +356,6 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can be used to open locked doors.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "changes_to": [ "SPELL_LOCKPICK2", "SPELL_TELEPORT", "SPELL_PACIFY", "SPELL_CONSECRATE" ],
     "spells_learned": [ [ "arcana_magic_open_lock", 1 ] ]
   },
   {
@@ -625,7 +366,6 @@
     "description": "Powers from beyond have granted you the power to cause plants to spring up from nothingness.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "OVERGROWTH" ],
     "spells_learned": [ [ "arcana_magic_overgrowth", 1 ] ]
   },
   {
@@ -636,7 +376,6 @@
     "description": "Powers from beyond have granted you power, that can offer temporary protection from toxic gas and other poisons.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "changes_to": [ "SPELL_POISONARMOR2", "SPELL_ELECRESIST2", "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_poison_armor", 1 ] ]
   },
   {
@@ -647,8 +386,6 @@
     "description": "Powers from beyond have granted you power, a defensive effect that will summon shadowy snakes when you are injured.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "//": "ID for INVIS retained to not break stuff.",
-    "category": [ "INVIS" ],
     "spells_learned": [ [ "arcana_magic_serpentine_shield", 1 ] ]
   },
   {
@@ -659,8 +396,6 @@
     "description": "Powers from beyond have granted you the power to create a shockwave of lightning around you.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "LIGHTNING" ],
-    "changes_to": [ "SPELL_LIGHTNING2", "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "spells_learned": [ [ "arcana_magic_shockstorm", 1 ] ]
   },
   {
@@ -671,8 +406,6 @@
     "description": "Powers from beyond have granted you the power to summon scuttling abominations.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "BUGSLESSER" ],
-    "changes_to": [ "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_magic_summon_giant_centipedes", 1 ] ]
   },
   {
@@ -683,7 +416,6 @@
     "description": "Powers from beyond have granted you the power to summon a skeletal dog.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "changes_to": [ "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
   },
   {
@@ -694,7 +426,6 @@
     "description": "Powers from beyond have granted you the power to topple structures, and bury them in rubble.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "SUNDERINGQUAKE" ],
     "spells_learned": [ [ "arcana_magic_sundering_quake", 1 ] ]
   },
   {
@@ -706,7 +437,6 @@
     "description": "Powers from beyond have granted you the power to provoke an uplifting rush through the body.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "changes_to": [ "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "spells_learned": [ [ "arcana_magic_surge_adrenaline", 1 ] ]
   },
   {
@@ -717,8 +447,6 @@
     "description": "Powers from beyond have granted you power, that can offer temporary protection against various anomalous effects.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "category": [ "CLERIC" ],
-    "changes_to": [ "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_ward_against_evil", 1 ] ]
   },
   {
@@ -826,7 +554,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SMOKE" ],
     "changes_to": [ "SPELL_LOCKPICK2" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_conjure_shadow_field", 1 ], [ "arcana_blessing_conjure_lightburst", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -841,7 +569,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_LIGHT2" ],
     "changes_to": [ "SPELL_TELEPORT" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -862,7 +590,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_LOCKPICK2" ],
     "changes_to": [ "SPELL_PACIFY" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -883,7 +611,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_TELEPORT" ],
     "changes_to": [ "SPELL_CONSECRATE" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "spells_learned": [
@@ -904,7 +632,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_PACIFY" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK", "SPELL_CONSECRATELESSER" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "spells_learned": [
@@ -926,7 +654,7 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_CLAIRVOYANCE2" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -941,7 +669,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_STRENGTH2" ],
     "changes_to": [ "SPELL_AGILE2" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -956,7 +684,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_CLAIRVOYANCE2" ],
     "changes_to": [ "SPELL_DAYLIGHT2" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ], [ "arcana_blessing_agility", 1 ] ],
@@ -972,7 +700,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_AGILE2" ],
     "changes_to": [ "SPELL_DRAINLIFE" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -993,7 +721,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_DAYLIGHT2" ],
     "changes_to": [ "SPELL_INVIS" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1014,7 +742,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_DRAINLIFE" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1036,7 +764,7 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_CLOUD" ],
-    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE" ],
+    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_confuse_monster", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -1051,7 +779,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_CONFUSE2" ],
     "changes_to": [ "SPELL_LIGHTNING2" ],
-    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE" ],
+    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_confuse_monster", 1 ], [ "arcana_blessing_conjure_miasma", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -1066,7 +794,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_CLOUD" ],
     "changes_to": [ "SPELL_FIRE2" ],
-    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING" ],
+    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1086,7 +814,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_LIGHTNING2" ],
     "changes_to": [ "SPELL_LIGHTNINGFIELD" ],
-    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING", "SPELL_FIRE" ],
+    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1107,7 +835,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_FIRE2" ],
     "changes_to": [ "SPELL_PULSE" ],
-    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING", "SPELL_FIRE" ],
+    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1129,7 +857,7 @@
     "purifiable": false,
     "category": [ "VEIL" ],
     "prereqs": [ "SPELL_LIGHTNINGFIELD" ],
-    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING", "SPELL_FIRE" ],
+    "cancels": [ "SPELL_SUMMONFIEND" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
       [ "arcana_blessing_confuse_monster", 1 ],
@@ -1165,7 +893,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_ACIDARMOR" ],
     "changes_to": [ "SPELL_ELECRESIST2" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -1180,7 +908,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_POISONARMOR2" ],
     "changes_to": [ "SPELL_FLAMEARMOR2" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ], [ "arcana_blessing_ward_lightning", 1 ] ],
@@ -1196,7 +924,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_ELECRESIST2" ],
     "changes_to": [ "SPELL_FROSTARMOR" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1217,7 +945,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_FLAMEARMOR2" ],
     "changes_to": [ "SPELL_PSYSHIELD" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_FROSTARMORLESSER" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1238,14 +966,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_FROSTARMOR" ],
-    "cancels": [
-      "SPELL_EMBERS_DRAGONBLOOD",
-      "SPELL_POISONARMOR",
-      "SPELL_ELECRESIST",
-      "SPELL_FLAMEARMOR",
-      "SPELL_CLERIC",
-      "SPELL_FROSTARMORLESSER"
-    ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1267,7 +988,7 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_SUMMONSKEL" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
+    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_skeletal_dog", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -1282,7 +1003,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONDOG2" ],
     "changes_to": [ "SPELL_SUMMONCULUS" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
+    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_skeletal_dog", 1 ], [ "arcana_blessing_summon_skeleton", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -1297,7 +1018,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONSKEL" ],
     "changes_to": [ "SPELL_SUMMONTHING" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
+    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1317,7 +1038,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONCULUS" ],
     "changes_to": [ "SPELL_BUGS" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
+    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1338,7 +1059,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONTHING" ],
     "changes_to": [ "SPELL_SUMMONVORTEX" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER" ],
+    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -1359,7 +1080,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_BUGS" ],
-    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG", "SPELL_BUGSLESSER" ],
+    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
