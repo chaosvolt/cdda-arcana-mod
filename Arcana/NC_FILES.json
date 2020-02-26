@@ -32,11 +32,21 @@
       [ "SKIN_MEDIUM", 100 ],
       [ "hair_white_short", 100 ],
       [ "PROF_CHALICE", 100 ],
+      [ "SPELL_STRENGTH", 100 ],
+      [ "SPELL_SHADOWSNAKES", 100 ],
+      [ "SPELL_STRENGTH2", 100 ],
+      [ "SPELL_CLAIRVOYANCE2", 100 ],
       [ "NIGHTVISION", 100 ],
       [ "MYOPIC", 100 ],
       [ "BADHEARING", 100 ],
       [ "LIGHTSTEP", 100 ],
       [ "BADKNEES", 100 ]
+    ],
+    "spells": [
+      { "id": "arcana_magic_insight", "level": 5 },
+      { "id": "arcana_magic_serpentine_shield", "level": 2 },
+      { "id": "arcana_blessing_clairvoyance", "level": 4 },
+      { "id": "arcana_blessing_might", "level": 2 }
     ]
   },
   {
@@ -93,8 +103,16 @@
       [ "SKIN_LIGHT", 100 ],
       [ "hair_blond_long", 100 ],
       [ "PROF_CLEANSINGFLAME", 100 ],
+      [ "SPELL_HEAL", 100 ],
+      [ "SPELL_FLAMEARMOR", 100 ],
+      [ "SPELL_CLERIC", 100 ],
       [ "NONADDICTIVE", 100 ],
       [ "SPIRITUAL", 100 ]
+    ],
+    "spells": [
+      { "id": "arcana_magic_healing", "level": 3 },
+      { "id": "arcana_magic_heat_ward", "level": 5 },
+      { "id": "arcana_magic_ward_against_evil", "level": 6 }
     ]
   },
   {
@@ -130,10 +148,18 @@
       [ "hair_black_medium", 100 ],
       [ "PROF_CLEANSINGFLAME", 100 ],
       [ "MARTIAL_ARTS_CF", 100 ],
+      [ "SPELL_DAYLIGHT", 100 ],
+      [ "SPELL_LIGHT", 100 ],
+      [ "SPELL_CONSECRATELESSER", 100 ],
       [ "SPIRITUAL", 100 ],
       [ "TERRIFYING", 100 ],
       [ "TRIGGERHAPPY", 100 ],
       [ "TRUTHTELLER", 100 ]
+    ],
+    "spells": [
+      { "id": "arcana_magic_surge_adrenaline", "level": 5 },
+      { "id": "arcana_magic_light", "level": 2 },
+      { "id": "arcana_magic_consecrate", "level": 4 }
     ]
   },
   {
@@ -163,10 +189,18 @@
     "traits": [
       { "group": "Appearance_cleansingflame" },
       [ "PROF_CLEANSINGFLAME", 100 ],
+      [ "SPELL_AGILE", 100 ],
+      [ "SPELL_LOCKPICK", 100 ],
+      [ "SPELL_PLANTS", 100 ],
       [ "SPIRITUAL", 100 ],
       [ "PACIFIST", 100 ],
       [ "FASTREADER", 100 ],
       [ "GOODMEMORY", 100 ]
+    ],
+    "spells": [
+      { "id": "arcana_magic_agility", "level": 7 },
+      { "id": "arcana_magic_open_lock", "level": 5 },
+      { "id": "arcana_magic_overgrowth", "level": 3 }
     ]
   },
   {
@@ -251,7 +285,20 @@
     "worn_override": "NC_BLOOD_MAGE_SHRIKE_worn",
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_misc",
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_weapon",
-    "traits": [ { "group": "Appearance_demographics" }, [ "PROF_SANGUINE", 100 ] ]
+    "traits": [
+      { "group": "Appearance_demographics" },
+      [ "PROF_SANGUINE", 100 ],
+      [ "SPELL_CLARITY", 100 ],
+      [ "SPELL_CONFUSE", 100 ],
+      [ "SPELL_ACID", 100 ],
+      [ "SPELL_FREEACTION", 100 ]
+    ],
+    "spells": [
+      { "id": "arcana_magic_clarity_blood", "level": 4 },
+      { "id": "arcana_magic_confuse_monster", "level": 5 },
+      { "id": "arcana_magic_conjure_acid", "level": 2 },
+      { "id": "arcana_magic_healing", "level": 4 }
+    ]
   },
   {
     "type": "npc_class",
