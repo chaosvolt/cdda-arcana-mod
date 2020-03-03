@@ -115,7 +115,7 @@
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "essence_blood", 1 ], [ "veggy_wild", 10 ], [ "cattail_stalk", 30 ], [ "wild_herbs", 100 ] ]
     ],
-    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -150,7 +150,7 @@
         [ "engraved_stone", 1 ]
       ]
     ],
-    "flags": [ "BLIND_HARD" ]
+    "flags": [ "BLIND_EASY" ]
   },
   {
     "type": "recipe",
@@ -176,7 +176,7 @@
         [ "tallow_tainted", 25 ]
       ]
     ],
-    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -209,7 +209,7 @@
         [ "copper", 200 ]
       ]
     ],
-    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
   {
     "result": "essence_dull",
