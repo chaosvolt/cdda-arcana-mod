@@ -543,7 +543,7 @@
       },
       {
         "type": "spell",
-        "spell_id": "arcana_monster_fire_radiance",
+        "spell_data": { "id": "arcana_monster_fire_radiance" },
         "cooldown": 10,
         "monster_message": "Oppressive heat radiates from the spirit of fire."
       }
@@ -647,7 +647,7 @@
       },
       {
         "type": "spell",
-        "spell_id": "arcana_monster_archon_gaze",
+        "spell_data": { "id": "arcana_monster_archon_gaze" },
         "cooldown": 10,
         "monster_message": "You briefly sense the otherworldly presence controlling the host, as it glares at %3$s."
       }
@@ -889,7 +889,7 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_id": "arcana_monster_dart_yugg",
+        "spell_data": { "id": "arcana_monster_dart_yugg" },
         "cooldown": 20,
         "monster_message": "The summoned yugg fires a dart at %3$s!"
       }
@@ -933,7 +933,7 @@
       { "type": "bite", "cooldown": 10 },
       {
         "type": "spell",
-        "spell_id": "arcana_monster_dart_triffid",
+        "spell_data": { "id": "arcana_monster_dart_triffid" },
         "cooldown": 5,
         "monster_message": "The summoned triffid fires a dart at %3$s!"
       }
