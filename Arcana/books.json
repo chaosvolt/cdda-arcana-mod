@@ -17,7 +17,7 @@
     "required_level": 0,
     "max_level": 1,
     "intelligence": 8,
-    "time": 10,
+    "time": "10 m",
     "fun": -1
   },
   {
@@ -37,7 +37,7 @@
     "required_level": 0,
     "max_level": 3,
     "intelligence": 9,
-    "time": 10,
+    "time": "10 m",
     "fun": 0
   },
   {
@@ -59,7 +59,7 @@
     "required_level": 2,
     "max_level": 5,
     "intelligence": 11,
-    "time": 40,
+    "time": "40 m",
     "fun": -2,
     "flags": [ "INSPIRATIONAL" ]
   },
@@ -81,7 +81,7 @@
     "required_level": 3,
     "max_level": 6,
     "intelligence": 10,
-    "time": 20,
+    "time": "20 m",
     "fun": -4
   },
   {
@@ -102,7 +102,7 @@
     "required_level": 4,
     "max_level": 7,
     "intelligence": 9,
-    "time": 20,
+    "time": "20 m",
     "fun": -1,
     "flags": [ "INSPIRATIONAL" ]
   },
@@ -124,7 +124,7 @@
     "required_level": 5,
     "max_level": 8,
     "intelligence": 10,
-    "time": 30,
+    "time": "30 m",
     "fun": -3,
     "flags": [ "INSPIRATIONAL" ]
   },
@@ -146,7 +146,7 @@
     "required_level": 4,
     "max_level": 9,
     "intelligence": 10,
-    "time": 45,
+    "time": "45 m",
     "fun": -2
   },
   {
@@ -167,7 +167,7 @@
     "required_level": 6,
     "max_level": 10,
     "intelligence": 11,
-    "time": 45,
+    "time": "45 m",
     "fun": -3
   },
   {
