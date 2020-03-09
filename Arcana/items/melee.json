@@ -27,8 +27,8 @@
     "category": "other",
     "name": "silver glyph",
     "description": "A silver emblem resembling a 16-pointed star in a circle.  You feel as though it could be a powerful arcane device, but there is no magic in it.  Yet.",
-    "weight": 285,
-    "volume": 1,
+    "weight": "285 g",
+    "volume": "250 ml",
     "price": 8400,
     "price_postapoc": 840,
     "to_hit": -3,
@@ -44,8 +44,8 @@
     "category": "other",
     "name": "blank scroll",
     "description": "A simple sheet of paper, with wooden rollers to support it.  You feel as if it was meant to have ancient, eldritch text written on it.  But sadly, it's blank.",
-    "weight": 415,
-    "volume": 1,
+    "weight": "415 g",
+    "volume": "250 ml",
     "price": 2000,
     "material": "paper",
     "symbol": "!",
@@ -59,14 +59,14 @@
     "//": "Obtained from graboids, rarely from dark wyrms.",
     "name": "crystalline fang",
     "description": "A short spike of grainy, dark ivory broken off from the maw of a massive wormlike creature.  Makes a poor melee weapon, or could be made into a trophy of some sort.",
-    "weight": 650,
+    "weight": "650 g",
     "to_hit": -1,
     "color": "light_gray",
     "symbol": ",",
     "looks_like": "spike",
     "material": [ "bone" ],
     "techniques": [ "PRECISE" ],
-    "volume": 2,
+    "volume": "500 ml",
     "cutting": 10,
     "flags": [ "SPEAR", "SHEATH_KNIFE" ],
     "price": 1000
@@ -82,25 +82,25 @@
     "description": "A vibrant scarlet flower fallen from a triffid queen, still in bloom.  It could be made into a trophy of some sort.",
     "price": 0,
     "material": "veggy",
-    "weight": 60,
-    "volume": 1,
+    "weight": "60 g",
+    "volume": "250 ml",
     "to_hit": -3
   },
   {
     "type": "GENERIC",
     "id": "dermatik_sting",
     "category": "other",
-    "//": "ID retained for compatability reasons",
+    "//": "ID retained for compatibility reasons",
     "name": "barbed stinger",
     "description": "An eight-inch barbed stinger, from some manner of monstrous creature.  Makes a mediocre melee weapon, or could be made into a trophy of some sort.",
-    "weight": 570,
+    "weight": "570 g",
     "to_hit": -1,
     "color": "dark_gray",
     "symbol": ",",
     "looks_like": "wasp_sting",
     "material": [ "flesh" ],
     "techniques": [ "PRECISE", "DEF_DISARM" ],
-    "volume": 1,
+    "volume": "250 ml",
     "cutting": 10,
     "flags": [ "SPEAR", "MESSY" ],
     "price": 1000
@@ -117,8 +117,7 @@
     "price": 5000,
     "material": "stone",
     "looks_like": "material_limestone",
-    "weight": 0,
-    "volume": 1
+    "volume": "250 ml"
   },
   {
     "type": "GENERIC",
@@ -133,8 +132,8 @@
     "price": 100,
     "material": "stone",
     "looks_like": "material_limestone",
-    "weight": 714,
-    "volume": 1
+    "weight": "714 g",
+    "volume": "250 ml"
   },
   {
     "type": "GENERIC",
@@ -148,8 +147,8 @@
     "price": 500,
     "material": "stone",
     "looks_like": "material_limestone",
-    "weight": 230,
-    "volume": 1
+    "weight": "230 g",
+    "volume": "250 ml"
   },
   {
     "type": "GENERIC",
@@ -163,8 +162,8 @@
     "price": 2000,
     "material": "stone",
     "looks_like": "material_limestone",
-    "weight": 100,
-    "volume": 1
+    "weight": "100 g",
+    "volume": "250 ml"
   },
   {
     "type": "GENERIC",
@@ -172,18 +171,17 @@
     "category": "other",
     "name": "twisted bones",
     "name_plural": "twisted bones",
-    "weight": 225,
+    "weight": "225 g",
     "color": "white",
     "symbol": "%",
     "looks_like": "bone_human",
     "//": "Obtained from amigara horrors, twisted bodies. More rarely from crawlers, things.",
     "description": "A mangled spike of woven, fused-together bones.  It might be useful, or it could be made into a trophy of some sort.",
     "to_hit": -1,
-    "price": 0,
     "cutting": 8,
     "flags": [ "SPEAR" ],
     "material": [ "bone", "hflesh" ],
-    "volume": 1
+    "volume": "250 ml"
   },
   {
     "type": "GENERIC",
@@ -198,8 +196,8 @@
     "description": "A few splintered chunks of finger bones from some sort of monstrous creature, torn away and stripped of flesh from the force of its unnatural death throes.  It might be useful, or it could be made into a trophy of some sort.",
     "price": 2000,
     "material": "bone",
-    "weight": 225,
-    "volume": 1
+    "weight": "225 g",
+    "volume": "250 ml"
   },
   {
     "type": "GENERIC",
@@ -213,8 +211,8 @@
     "description": "An iridescent piece of hardened tissue broken off from a dying wyrm of some sort, like a massive shed scale.  It might be useful, or it could be made into a trophy of some sort.",
     "price": 0,
     "material": [ "wyrmskin" ],
-    "weight": 120,
-    "volume": 1,
+    "weight": "120 g",
+    "volume": "250 ml",
     "bashing": 3,
     "to_hit": -2
   },
@@ -225,13 +223,13 @@
     "//": "Obtained from hunting horrors, flying polyps.  Rarely from krecks.",
     "name": "monstrous fang",
     "description": "A long, curved spike of unnatural ivory, that feels lighter in the hand than it should.  Makes a poor melee weapon, or could be made into a trophy of some sort.",
-    "weight": 650,
+    "weight": "650 g",
     "color": "dark_gray",
     "symbol": ",",
     "looks_like": "spike",
     "material": [ "bone" ],
     "techniques": [ "PRECISE", "RAPID" ],
-    "volume": 2,
+    "volume": "500 ml",
     "cutting": 8,
     "flags": [ "SPEAR", "SHEATH_KNIFE" ],
     "price": 1000
@@ -246,10 +244,9 @@
     "color": "pink",
     "name": "iridescent plate",
     "description": "An iridescent piece of hardened tissue broken off from a dying monster, like a massive shed scale or shard of chitin.  It might be useful, or it could be made into a trophy of some sort.",
-    "price": 0,
     "material": [ "flesh" ],
-    "weight": 89,
-    "volume": 1,
+    "weight": "89 g",
+    "volume": "250 ml",
     "bashing": 1,
     "to_hit": -2
   },
@@ -265,8 +262,8 @@
     "description": "A large round stone resembling an eye, with a bright green appearance.  Half of it is engraved with unfamiliar-looking runes, revealing a darker iridescent material under the surface.  It might be useful, or it could be made into a trophy of some sort.",
     "price": 2000,
     "material": [ "stone" ],
-    "weight": 89,
-    "volume": 1
+    "weight": "89 g",
+    "volume": "250 ml"
   },
   {
     "type": "GENERIC",
@@ -279,8 +276,8 @@
     "price": 100,
     "material": "stone",
     "looks_like": "spiral_stone",
-    "weight": 1500,
-    "volume": 4
+    "weight": "1500 g",
+    "volume": "1 L"
   },
   {
     "id": "candle_warding_special",
@@ -288,9 +285,8 @@
     "category": "other",
     "name": "shimmering candle",
     "description": "A simple candle, burning endlessly with unearthly flame.  It gives off a faintly soothing sensation yet no warmth, casting an brilliant glow throughout the room.  It seems to be firmly fixed in place by some unknown force.",
-    "weight": 100,
-    "volume": 1,
-    "price": 0,
+    "weight": "100 g",
+    "volume": "250 ml",
     "material": "essencemat",
     "symbol": ",",
     "looks_like": "candle_warding_active",
@@ -305,7 +301,7 @@
     "//": "Soft, meant to be dismantled when needed.  Faction attitude toward how its used plus little authority to back the currency up magnify how devalued it is compared to lower-carat Robofac coins.",
     "price": 120000,
     "price_postapoc": 2500,
-    "weight": 25,
+    "weight": "25 g",
     "to_hit": -3,
     "color": "yellow",
     "symbol": "$",
