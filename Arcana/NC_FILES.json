@@ -259,7 +259,12 @@
     "worn_override": "NC_BLOOD_MAGE_APPRENTICE_worn",
     "carry_override": "NC_BLOOD_MAGE_APPRENTICE_misc",
     "weapon_override": "NC_BLOOD_MAGE_APPRENTICE_weapon",
-    "traits": [ { "group": "Appearance_demographics" }, { "group": "Sanguine_aspirant_traits" }, [ "PROF_ARCANIST", 100 ] ]
+    "traits": [
+      { "group": "Appearance_demographics" },
+      { "group": "Sanguine_aspirant_traits" },
+      [ "BGSS_BLOOD_MAGE_1", 100 ],
+      [ "PROF_ARCANIST", 100 ]
+    ]
   },
   {
     "type": "npc_class",
@@ -287,6 +292,7 @@
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_weapon",
     "traits": [
       { "group": "Appearance_demographics" },
+      [ "BGSS_BLOOD_MAGE_2", 100 ],
       [ "PROF_SANGUINE", 100 ],
       [ "SPELL_CLARITY", 100 ],
       [ "SPELL_CONFUSE", 100 ],
@@ -355,11 +361,9 @@
     ]
   },
   {
-    "id": "NC_HERMIT_weapon",
     "type": "item_group",
-    "subtype": "collection",
-    "ammo": 100,
-    "entries": [ { "item": "thunder_sigil" } ]
+    "id": "NC_HERMIT_weapon",
+    "items": [ [ "q_staff", 30 ], [ "i_staff", 20 ], [ "spear_steel", 40 ], [ "qiang", 10 ] ]
   },
   {
     "id": "NC_HERMIT_misc",

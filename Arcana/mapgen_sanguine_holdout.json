@@ -98,7 +98,7 @@
         "########################"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": { "5": "t_door_bar_locked" },
+      "terrain": { "5": "t_door_metal_pickable" },
       "mapping": {
         "]": { "items": [ { "item": "sanguine_cult_books", "chance": 60 }, { "item": "sanguine_cult_books", "chance": 30 } ] },
         "{": {

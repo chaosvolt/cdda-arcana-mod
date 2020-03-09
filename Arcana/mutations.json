@@ -1520,7 +1520,7 @@
     "reading_speed_multiplier": 1.25,
     "scent_intensity": 1200,
     "scent_type": "sc_dragonblood",
-    "anger_relations": [ [ "DRAGON", -10 ], [ "FUNGUS", 25 ], [ "MAMMAL", 15 ], [ "BIRD", 15 ], [ "REPTILE", 15 ] ],
+    "anger_relations": [ [ "DRAGON", -100 ], [ "FUNGUS", 25 ], [ "MAMMAL", 15 ], [ "BIRD", 15 ], [ "REPTILE", 15 ] ],
     "flags": [ "PRED4" ]
   },
   {

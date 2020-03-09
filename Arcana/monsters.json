@@ -871,7 +871,7 @@
     "luminance": 60,
     "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
     "regenerates": 10,
-    "extend": { "flags": [ "SEES", "ELECTRIC", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "STUMBLES" ] }
   },
   {

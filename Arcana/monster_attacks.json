@@ -6,6 +6,7 @@
     "description": "This is a monster spell, used by the host of the archon.",
     "message": "",
     "effect": "target_attack",
+    "extra_effects": [ { "id": "arcana_monster_archon_sundering" } ],
     "valid_targets": [ "hostile" ],
     "flags": [ "RANDOM_DURATION", "SILENT" ],
     "min_range": 8,
@@ -19,6 +20,23 @@
     "field_chance": 1,
     "min_field_intensity": 1,
     "max_field_intensity": 1
+  },
+  {
+    "id": "arcana_monster_archon_sundering",
+    "type": "SPELL",
+    "name": "Archon's Sundering",
+    "description": "This adds an effect that eliminates vortices faced with the archon's gaze.",
+    "message": "",
+    "effect": "target_attack",
+    "valid_targets": [ "hostile" ],
+    "targeted_monster_ids": [ "mon_vortex", "mon_vortex_summoned" ],
+    "flags": [ "SILENT" ],
+    "min_damage": 100,
+    "max_damage": 100,
+    "min_range": 8,
+    "max_range": 8,
+    "min_aoe": 2,
+    "max_aoe": 2
   },
   {
     "id": "arcana_monster_dart_triffid",
