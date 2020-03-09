@@ -1,0 +1,1217 @@
+[
+  {
+    "id": "bot_vortex",
+    "//": "ID retained to avoid any weirdness.",
+    "type": "TOOL",
+    "name": "Archon magic",
+    "description": "Spawns a shadow, used by the Host of the Archon.  This is a bug if you find one of these.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": { "type": "place_monster", "monster_id": "mon_shadow_summoned", "place_randomly": true }
+  },
+  {
+    "id": "stinger_flute",
+    "type": "TOOL",
+    "copy-from": "bone_flute",
+    "name": "stinger flute",
+    "name_plural": "stinger flutes",
+    "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Should be safe to put up to your mouth, probably.",
+    "material": "flesh",
+    "color": "light_gray",
+    "use_action": {
+      "type": "musical_instrument",
+      "volume": 12,
+      "fun": -6,
+      "fun_bonus": 2,
+      "speed_penalty": 10,
+      "description_frequency": 20,
+      "player_descriptions": [
+        "You play a little tune on your flute.",
+        "You play an eerie piece on your flute.",
+        "You play a piece on your flute that sounds downright otherworldly.",
+        "Your flute resounds with the piping of a terrible swarm."
+      ]
+    }
+  },
+  {
+    "id": "charm_bone",
+    "type": "GENERIC",
+    "name": "bone charm",
+    "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.",
+    "weight": 38,
+    "volume": 0,
+    "price": 500,
+    "material": [ "bone" ],
+    "symbol": ",",
+    "looks_like": "small_relic",
+    "color": "white",
+    "use_action": "MEDITATE"
+  },
+  {
+    "id": "offering_chalice",
+    "type": "TOOL",
+    "name": "offering chalice",
+    "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  It is filled with a thick black liquid that you seem unable to pour out.  Using it will allow you to perform a ritual that can convert your own life force into blood essence.  Doing so will take 15 minutes, inflicting harm upon your body at the end, as well as dire consequences if overused...",
+    "weight": 2500,
+    "volume": 4,
+    "price": 161300,
+    "to_hit": -1,
+    "bashing": 6,
+    "material": "gold",
+    "symbol": ";",
+    "looks_like": "small_relic",
+    "color": "yellow",
+    "flags": [ "MAGIC_FOCUS", "USE_PLAYER_ENERGY" ],
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.25 } ] } ]
+    },
+    "use_action": [
+      "MEDITATE",
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_chalice_offering",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ]
+  },
+  {
+    "id": "blood_athame",
+    "type": "TOOL",
+    "//": "By necessity can't yet define this to use copy-from, as qualities will break it.",
+    "category": "weapons",
+    "name": "silver athame",
+    "description": "An ornate silver dagger, seemingly made for ritual purposes.  It seems sharper than silver has any right to be.  It can be used to perform a ritual converting your life force into blood essence.  Doing so will take 5 minutes, inflicting blood loss and damage at the end, as well as potential consequences if overused...",
+    "weight": 1302,
+    "volume": 3,
+    "price": 23500,
+    "to_hit": 1,
+    "bashing": 3,
+    "cutting": 16,
+    "material": "silver",
+    "symbol": "/",
+    "looks_like": "knife_butcher",
+    "color": "red",
+    "techniques": [ "WBLOCK_1", "RAPID" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 15 ] ],
+    "use_action": [
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_athame_sanguine_art",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
+    "flags": [ "STAB", "SHEATH_KNIFE", "USE_PLAYER_ENERGY" ]
+  },
+  {
+    "id": "sun_sword",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "incorruptible sword",
+    "//": "Stats are a blend of the available swords you can use to make it, same deal as the mantle of shadows.",
+    "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  When powered by consecrated magical essence, it has the power to cut through darkness itself.",
+    "weight": "1360 g",
+    "volume": "2 L",
+    "price": 123300,
+    "to_hit": 2,
+    "bashing": 10,
+    "cutting": 32,
+    "material": [ "steel", "gold" ],
+    "symbol": "/",
+    "looks_like": "arming_sword",
+    "color": "yellow",
+    "ammo": "essence_dull_type",
+    "max_charges": 10,
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "techniques": [ "WBLOCK_2" ],
+    "use_action": [
+      {
+        "target": "sun_sword_on",
+        "msg": "The blade gives off a brilliant glow as you invoke its power!",
+        "active": true,
+        "need_charges": 1,
+        "need_charges_msg": "The sword needs energy to serve its purpose.",
+        "menu_text": "Awaken the holy blade",
+        "type": "transform"
+      }
+    ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE" ]
+  },
+  {
+    "id": "sun_sword_on",
+    "type": "TOOL",
+    "copy-from": "sun_sword",
+    "repairs_like": "sun_sword",
+    "category": "weapons",
+    "name": "incorruptible sword (on)",
+    "name_plural": "incorruptible swords (on)",
+    "//": "Weapons normally come with the vorpal flag, not the technique.  But gaining the technique through normal means likely breaks with transforming weapons.",
+    "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  The blade is giving off an intense white light, and searing heat.",
+    "turns_per_charge": 300,
+    "revert_to": "sun_sword",
+    "techniques": [ "WBLOCK_2", "tec_weapon_incorruptible_slash" ],
+    "use_action": [
+      { "type": "firestarter", "moves": 30 },
+      { "menu_text": "Turn off", "type": "transform", "msg": "The sword's radiance fades.", "target": "sun_sword" }
+    ],
+    "relative": { "cutting": 3 },
+    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
+    "delete": { "flags": [ "SHEATH_SWORD" ] }
+  },
+  {
+    "id": "hexenhammer",
+    "type": "TOOL",
+    "category": "weapons",
+    "copy-from": "warhammer",
+    "name": "hammer of the hunter",
+    "name_plural": "hammers of the hunter",
+    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  Using it will channel consecrated essence into a stunning flash, though using it is a double-edged sword.",
+    "material": [ "iron", "silver", "wood" ],
+    "ammo": "essence_dull_type",
+    "max_charges": 1,
+    "use_action": [
+      "MEDITATE",
+      {
+        "target": "hexenhammer_active",
+        "msg": "\"Ave martello!\" The hammer gives off a golden light.",
+        "target_charges": 0,
+        "active": true,
+        "need_wielding": true,
+        "need_charges": 1,
+        "need_charges_msg": "Dull essence shall make the hammer shine.",
+        "menu_text": "Hold the hammer high",
+        "type": "transform"
+      }
+    ],
+    "relative": { "weight": 360, "bashing": 2, "price": 12000 },
+    "extend": { "flags": [ "NO_SALVAGE" ] }
+  },
+  {
+    "id": "hexenhammer_active",
+    "type": "TOOL",
+    "category": "weapons",
+    "//": "Just in case hammering gets an inbuilt quality, no copy-from.",
+    "name": "glowing hammer of the hunter",
+    "name_plural": "glowing hammers of the hunter",
+    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  It is giving off a bright golden glow, soon to be brighter still.",
+    "weight": 1337,
+    "volume": 5,
+    "price": 52000,
+    "to_hit": 1,
+    "bashing": 20,
+    "cutting": 20,
+    "material": [ "iron", "silver", "wood" ],
+    "symbol": "/",
+    "looks_like": "warhammer",
+    "color": "light_gray",
+    "ammo": "essence_dull_type",
+    "initial_charges": 0,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "hexenhammer",
+    "techniques": [ "BRUTAL" ],
+    "use_action": { "type": "explosion", "do_flashbang": true, "no_deactivate_msg": "\"Du nicht kÃ¶nnen halt Hammerzeit.\"" },
+    "flags": [ "DURABLE_MELEE", "SPEAR", "NONCONDUCTIVE", "LIGHT_15", "NO_SALVAGE" ]
+  },
+  {
+    "id": "spear_pestilence",
+    "type": "TOOL",
+    "copy-from": "spear_steel",
+    "category": "weapons",
+    "name": "spear of pestilence",
+    "name_plural": "spears of pestilence",
+    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will temporarily summon mutant vermin to aid you, and wielding it makes movement easier.",
+    "material": [ "steel", "wood", "chitin" ],
+    "ammo": "essence_type",
+    "max_charges": 9,
+    "charges_per_use": 1,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MOVE_COST", "add": -25 } ],
+          "hit_you_effect": [ { "id": "arcana_react_spear_pestilence_wonder" } ]
+        }
+      ]
+    },
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 },
+    "relative": { "weight": 540, "bashing": 2, "price": 1000 },
+    "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
+  },
+  {
+    "id": "summon_kreck",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of trickery",
+    "name_plural": "glyphs of trickery",
+    "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.  It is easy to control.",
+    "use_action": {
+      "target": "summon_kreck_on",
+      "msg": "The glyph of trickery gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_kreck_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of trickery (active)",
+    "name_plural": "glyphs of trickery (active)",
+    "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_kreck_summoned",
+      "friendly_msg": "The kreck looks up at you expectantly, as if wondering what sort of shenanigans you're plotting.",
+      "hostile_msg": "The kreck mimics your movements erratically, cavorting about to mock you!",
+      "difficulty": 1,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "summon_blank",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of the root",
+    "name_plural": "glyphs of the root",
+    "//": "ID retained to prevent tileset breakage, monster summoned was changed due to blank bodies being outright useless.",
+    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.  It is easy to control.",
+    "use_action": {
+      "target": "summon_blank_on",
+      "msg": "The glyph of the root gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_blank_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of the root (active)",
+    "name_plural": "glyphs of the root (active)",
+    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_triffid_summoned",
+      "friendly_msg": "The movement of the plant creature is hard to read, but you suspect it is either friendly, or doesn't regard you as a threat.",
+      "hostile_msg": "Even without words or recognizable body language, it quickly becomes apparent that the plant monster is hostile.",
+      "difficulty": 2,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "summon_flaming_eye",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Gehenna",
+    "name_plural": "glyphs of Gehenna",
+    "//": "ID retained to prevent tileset breakage, monster summoned was changed due to flaming eyes being useless if friendly.",
+    "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.  It is somewhat easy to control.",
+    "use_action": {
+      "target": "summon_flaming_eye_on",
+      "msg": "The glyph of Gehenna gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_flaming_eye_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Gehenna (active)",
+    "name_plural": "glyphs of Gehenna (active)",
+    "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_flesh_angel_summoned",
+      "friendly_msg": "A twisted mimicry of the divine is called forth, bound to your will.",
+      "hostile_msg": "The flesh angel levels a wicked gaze upon you, ignoring your commands.",
+      "difficulty": 3,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "summon_hunting_horror",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Crawling Chaos",
+    "name_plural": "glyphs of Crawling Chaos",
+    "//": "Explaination: In Lovecraft's work, The Crawling Chaos is one of Nyarlathotep's names, and hunting horrors are associated with him.  The success and failure messages below spell it out rather plainly.",
+    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  It is somewhat easy to control.",
+    "use_action": {
+      "target": "summon_hunting_horror_on",
+      "msg": "The glyph of Crawling Chaos gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_hunting_horror_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Crawling Chaos (active)",
+    "name_plural": "glyphs of Crawling Chaos (active)",
+    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_hunting_horror_summoned",
+      "friendly_msg": "The hunting horror is at your beck and call.  A gift from the Stalker among the Stars?",
+      "hostile_msg": "You feel the gaze of Nyarlathotep upon you.  How foolish of you, to steal the harrier of the Faceless God!",
+      "difficulty": 4,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "summon_dark_wyrm",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of the eye",
+    "name_plural": "glyphs of the eye",
+    "//": "Explaination: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
+    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  It is somewhat difficult to control.",
+    "use_action": {
+      "target": "summon_dark_wyrm_on",
+      "msg": "The glyph of the eye gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_dark_wyrm_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of the eye (active)",
+    "name_plural": "glyphs of the eye (active)",
+    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  Hopefully.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dark_wyrm_summoned",
+      "friendly_msg": "The wyrm springs forth, seeming to regard you passively, or at least ignoring your presence.",
+      "hostile_msg": "The wyrm springs forth, reacting to unfamiliar sounds and scent with a malevolent screech!",
+      "difficulty": 5,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "summon_mi_go",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Yuggoth",
+    "name_plural": "glyphs of Yuggoth",
+    "//": "Explaination: Yuggoth is a fictional planet from Lovecraft's work, stated to have been colonized by the mi-go.",
+    "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
+    "use_action": {
+      "target": "summon_mi_go_on",
+      "msg": "The glyph of Yuggoth gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_mi_go_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Yuggoth (active)",
+    "name_plural": "glyphs of Yuggoth (active)",
+    "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mi_go_summoned",
+      "friendly_msg": "You recite an incantation, and the mi-go's response is a quiet murmur in some unknown language.  It seems to be friendly.",
+      "hostile_msg": "You begin to recite an incantation, only for the mi-go to parrot your words, mocking your effort to control it!",
+      "difficulty": 6,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "summon_jabberwock",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of the golem",
+    "name_plural": "glyphs of the golem",
+    "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.  It is difficult to control.",
+    "use_action": {
+      "target": "summon_jabberwock_on",
+      "msg": "The glyph of the golem gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_jabberwock_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of the golem (active)",
+    "name_plural": "glyphs of the golem (active)",
+    "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_jabberwock_summoned",
+      "friendly_msg": "You hear a strange burbling, the creature bound to your will.",
+      "hostile_msg": "Eyes of flame meet your gaze, the creature resists your attempt to control it!",
+      "difficulty": 7,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "summon_flying_polyp",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Pnakotus",
+    "name_plural": "glyphs of Pnakotus",
+    "//": "Explanation: In Lovecraft's works, the Pnakotic Manuscripts were associated with the city of this name, which was overrun by flying polyps in their conflict with the species that built the city.",
+    "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.  It is difficult to control.",
+    "use_action": {
+      "target": "summon_flying_polyp_on",
+      "msg": "The glyph of Pnakotus gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_flying_polyp_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Pnakotus (active)",
+    "name_plural": "glyphs of Pnakotus (active)",
+    "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_flying_polyp_summoned",
+      "friendly_msg": "The flying polyp twitches for a moment, before its movement steadies.  It seems to be friendly.",
+      "hostile_msg": "The flying polyp twitches erratically, reacting to your presence with apparent hostility!",
+      "difficulty": 8,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "summon_yugg",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Plouton",
+    "name_plural": "glyphs of Plouton",
+    "//": "Plouton, Latinized as Pluto, is another name for Hades, and reflects the association with wealth the god had by the time the name was in common use.",
+    "description": "A strange silver emblem, engraved with depictions of ancient, cthonian wealth.  Using it will call forth a yugg, and bind it to your will.  Hopefully.  It is very difficult to control.",
+    "use_action": {
+      "target": "summon_yugg_on",
+      "msg": "The glyph of Plouton gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_yugg_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of Plouton (active)",
+    "name_plural": "glyphs of Plouton (active)",
+    "description": "A strange silver emblem, engraved with depictions of ancient, cthonian wealth.  Using it will call forth a yugg, and bind it to your will.  Hopefully.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_yugg_summoned",
+      "friendly_msg": "With the riches of a dead world as an offering, you bind the yugg to serve you.  You feel like this is the opposite of how it normally works.",
+      "hostile_msg": "An offering of wealth is not enough to placate a servant of Ubb.  The creature turns hostile!",
+      "difficulty": 9,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "summon_shoggoth",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of the Elder Things",
+    "name_plural": "glyphs of the Elder Things",
+    "//": "Explaination: The Elder Things in Lovecraft's work were the creators of shoggoths.",
+    "description": "A strange silver emblem, engraved with many strange eye symbols.  Using it will call forth a shoggoth, and bind it to your will.  Hopefully.  It is very difficult to control.",
+    "use_action": {
+      "target": "summon_shoggoth_on",
+      "msg": "The glyph of the Elder Things gives off a faint green glow.",
+      "target_charges": 0,
+      "active": true,
+      "type": "transform"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "summon_shoggoth_on",
+    "type": "TOOL",
+    "copy-from": "silver_glyph",
+    "name": "glyph of the Elder Things (active)",
+    "name_plural": "glyphs of the Elder Things (active)",
+    "description": "A strange silver emblem, engraved with many strange eye symbols.  Using it will call forth a shoggoth, and bind it to your will.  Hopefully.  It is very difficult to control.",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "silver_glyph",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_shoggoth_summoned",
+      "friendly_msg": "You hear a voice in your mind.  \"Tekili ...l-li?\"  Your mind exerts a strange influence upon the shoggoth.",
+      "hostile_msg": "You hear a voice in your mind.  \"Tekeli-li!\"  The shoggoth resists your efforts to control it!",
+      "difficulty": 10,
+      "moves": 60,
+      "place_randomly": true,
+      "skill1": "magic"
+    }
+  },
+  {
+    "id": "bloodaxe",
+    "copy-from": "hatchet",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "veinreaver",
+    "description": "A hatchet with its axehead lightened a bit, stained the dull color of dried blood.  Using it will channel blood essence into a nasty explosion.",
+    "symbol": ";",
+    "color": "brown",
+    "ammo": "essence_blood_type",
+    "max_charges": 1,
+    "volume": "750 ml",
+    "relative": { "bashing": -2, "weight": -200, "price": 50000 },
+    "use_action": [
+      {
+        "target": "bloodaxe_act",
+        "msg": "You draw upon the axe's energy, and the axehead glows a bright red!",
+        "target_charges": 5,
+        "need_charges": 1,
+        "need_charges_msg": "The axe requires blood essence to invoke this power.",
+        "active": true,
+        "need_wielding": true,
+        "menu_text": "Activate explosive rune",
+        "type": "transform"
+      }
+    ],
+    "extend": { "flags": [ "NO_SALVAGE" ] }
+  },
+  {
+    "id": "bloodaxe_act",
+    "//": "Can't use copy-from because qualities refuse to be deleted, causing it to try and choop wood instead of exploding.",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "glowing veinreaver",
+    "description": "A modified hatchet, the axehead giving off a wicked red glow.  Throwing it might be a smart idea.",
+    "weight": 707,
+    "volume": "750 ml",
+    "price": 2500,
+    "to_hit": 1,
+    "bashing": 10,
+    "cutting": 7,
+    "thrown_damage": [ { "damage_type": "cold", "amount": 18 } ],
+    "material": [ "steel", "wood" ],
+    "symbol": ";",
+    "looks_like": "hatchet",
+    "color": "brown",
+    "ammo": "essence_blood_type",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "revert_to": "bloodaxe",
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_blood",
+      "fields_radius": 3,
+      "fields_min_density": 3,
+      "fields_max_density": 3,
+      "sound_volume": 1,
+      "sound_msg": "Drip.",
+      "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
+      "explosion": { "power": 1250, "distance_factor": 0.45 }
+    },
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
+    "id": "totem_elecresist",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Amber Seal: Lightning Ward",
+    "name_plural": "Amber Seal: Lightning Ward",
+    "description": "A small chunk of carved otherworldly amber.  Activate it to focus your mind and create a magic sign, granting protection against lightning.  This will expend the item entirely.",
+    "color": "light_gray",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_lightning_ward", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_cleric",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Angelic Seal: Ward Against Evil",
+    "name_plural": "Angelic Seal: Ward Against Evil",
+    "description": "An small winged figurine, carved from a strange iridescent stone.  Activate it to focus your mind and create a magic sign, granting protection against various anomalous effects.  This will expend the item entirely.",
+    "color": "light_green",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_ward_against_evil", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_agile",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Bone Seal: Agility",
+    "name_plural": "Bone Seal: Agility",
+    "description": "A small set of dice carved from otherworldly bones.  Activate it to focus your mind and create a magic sign, granting a temporary agility effect.  This will expend the item entirely.",
+    "color": "white",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_agility", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_confusion",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Chitinous Seal: Confuse Monsters",
+    "name_plural": "Chitinous Seal: Confuse Monsters",
+    "description": "A small token carved from a wicked stinger.  Activate it to focus your mind and create a magic sign, confusing monsters all around you.  This will expend the item entirely.",
+    "color": "dark_gray",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_confuse_monster", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_strength",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Dagger Seal: Might",
+    "name_plural": "Dagger Seal: Might",
+    "description": "A miniature dagger carved from strange ivory.  Activate it to focus your mind and create a magic sign, granting a temporary boost to strength.  This will expend the item entirely.",
+    "color": "white",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_might", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_clairvoyance",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Eternity Seal: Clairvoyance",
+    "name_plural": "Eternity Seal: Clairvoyance",
+    "description": "A small cabochon of dark, shimmering ivory.  Activate it to focus your mind and create a magic sign, granting a temporary clairvoyance effect.  This will expend the item entirely.",
+    "color": "light_gray",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_clairvoyance", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_free_action",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Indigo Seal: Free Action",
+    "name_plural": "Indigo Seal: Free Action",
+    "description": "A small ornament of vibrant purple petals.  Activate it to focus your mind and create a magic sign, granting protection against paralytic effects and other hindrances.  This will expend the item entirely.",
+    "color": "magenta",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_free_action", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_invis",
+    "copy-from": "totem_base",
+    "//": "ID retained to avoid breaking stuff.",
+    "type": "COMESTIBLE",
+    "name": "Obsidian Seal: Serpentine Shield",
+    "name_plural": "Obsidian Seal: Serpentine Shield",
+    "description": "A piece of unnaturally dark stone, shaped into an eccentric design.  Activate it to focus your mind and create a magic sign, granting a temporary defensive effect that will summon shadowy serpents to aid you.  This will expend the item entirely.",
+    "color": "dark_gray",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_serpentine_shield", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_plants",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Scarlet Seal: Overgrowth",
+    "name_plural": "Scarlet Seal: Overgrowth",
+    "description": "A small ornament of woven petals, an otherworldly vibrant red in hue.  Activate it to focus your mind and create a magic sign, and bring forth the forest.  This will expend the item entirely.",
+    "color": "red",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_overgrowth", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_flamearmor",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Starstone Seal: Heat Ward",
+    "name_plural": "Starstone Seal: Heat Ward",
+    "description": "A shimmering disc carved from a seemingly meteoric material.  Activate it to focus your mind and create a magic sign, gaining temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  This will expend the item entirely.",
+    "color": "dark_gray",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_heat_ward", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_insight",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Tear Seal: Insight",
+    "name_plural": "Tear Seal: Insight",
+    "description": "A curiously-refractive gem carved from an unearthly blue orb.  Activate it to focus your mind and create a magic sign, granting a temporary boost to perception.  This will expend the item entirely.",
+    "color": "white",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_insight", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_clarity",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Thorn Seal: Clarity of Blood",
+    "name_plural": "Thorn Seal: Clarity of Blood",
+    "description": "A sharp needle carved from a monstrous thorn.  Activate it to focus your mind and create a magic sign, granting protection against parasites and the Mycus.  This will expend the item entirely.",
+    "color": "magenta",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_clarity_blood", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_lightning",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Thunder Seal: Shockstorm",
+    "name_plural": "Thunder Seal: Shockstorm",
+    "description": "A small sliver of strange crystal, flickering as though distant storms rage within.  Activate it to focus your mind and create a magic sign, conjuring lightning all around you.  This will expend the item entirely.",
+    "color": "pink",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_shockstorm", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_heal",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Woven Seal: Healing",
+    "name_plural": "Woven Seal: Healing",
+    "description": "A tangled knot of flowing, molded bone.  Activate it to focus your mind and create a magic sign, and heal the body slightly.  This will expend the item entirely.",
+    "color": "white",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_healing", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "totem_acidspray",
+    "copy-from": "totem_base",
+    "type": "COMESTIBLE",
+    "name": "Wyrm Seal: Acid Spray",
+    "name_plural": "Wyrm Seal: Acid Spray",
+    "description": "A carved scale of acrid-smelling, otherworldly flesh.  Activate it to focus your mind and create a magic sign, conjuring a spray of acid.  This will expend the item entirely.",
+    "color": "blue",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_conjure_acid", "no_fail": true, "level": 10 }
+  },
+  {
+    "id": "candle_warding",
+    "type": "TOOL",
+    "name": "candle of warding",
+    "name_plural": "candle of warding",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  It can be used to place a magical barrier, or used to project a faint light.  The barrier this item creates is not indestructible, but it is tough.",
+    "weight": 100,
+    "volume": 1,
+    "price": 1000,
+    "material": "essencemat",
+    "symbol": ",",
+    "color": "white",
+    "looks_like": "candle",
+    "use_action": [
+      {
+        "target": "candle_warding_active",
+        "msg": "The candle gives off a faint blue flame.",
+        "menu_text": "Light candle of warding",
+        "type": "transform"
+      },
+      { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
+    ],
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "candle_warding_active",
+    "type": "TOOL",
+    "name": "candle of warding (on)",
+    "name_plural": "candle of warding (on)",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Its wick is lit with a ghostly blue flame, projecting light without heat.  It can also be used to place a magical barrier, one that's tough but not indestructible.",
+    "weight": 100,
+    "volume": 1,
+    "price": 1000,
+    "material": "essencemat",
+    "repairs_like": "candle_warding",
+    "symbol": ",",
+    "color": "white",
+    "use_action": [
+      {
+        "target": "candle_warding",
+        "msg": "The candle's wick is extinguished.",
+        "menu_text": "Extinguish candle of warding",
+        "type": "transform"
+      },
+      { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
+    ],
+    "flags": [ "NO_SALVAGE", "LIGHT_12" ]
+  },
+  {
+    "id": "orb_veil",
+    "type": "TOOL",
+    "category": "tools",
+    "name": "orb of the veil",
+    "name_plural": "orbs of the veil",
+    "description": "A mysterious orb made of a dark, almost glassy stone.  An eye pattern is worked into it, using gold for the irises and a diamond pupil.  It is said to represent a desire to protect the old knowledge and old ways, strengthened by a yearning for further enlightenment.  Using it will show you a vision of the surrounding area, along with other random side effects, along with attracting unwanted attention from Beyond...",
+    "weight": 2000,
+    "volume": 4,
+    "price": 10000,
+    "to_hit": -2,
+    "bashing": 6,
+    "material": [ "stone", "gold", "diamond" ],
+    "symbol": "*",
+    "looks_like": "diamond",
+    "color": "dark_gray",
+    "ammo": "essence_pure_type",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.25 } ] } ]
+    },
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_orb_veil_mapping", "no_fail": true, "level": 0 } ],
+    "artifact_data": { "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO", "AEP_CLAIRVOYANCE" ] },
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
+  },
+  {
+    "id": "staff_druidic",
+    "type": "TOOL",
+    "name": "druidic staff",
+    "name_plural": "druidic staves",
+    "description": "A short wooden staff decorated with engraved silver, depicting a mixture of exotic natural scenes and various holy symbols.  It is said to represent the instincts deep within the heart, tempered by restraint and reason.  Using it can repair and fortify items made of various plant or animal products and stone, but not more refined materials like metal or glass.",
+    "weight": 1310,
+    "volume": 8,
+    "price": 1000,
+    "bashing": 12,
+    "material": [ "wood", "silver" ],
+    "symbol": "/",
+    "looks_like": "cudgel",
+    "color": "light_gray",
+    "ammo": "essence_dull_type",
+    "max_charges": 300,
+    "charges_per_use": 1,
+    "use_action": [
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_metal",
+        "materials": [ "bone", "chitin", "acidchitin", "clay", "cotton", "fur", "leather", "gutskin", "stone", "wood", "wool" ],
+        "skill": "magic",
+        "tool_quality": 20,
+        "cost_scaling": 0,
+        "move_cost": 1000
+      },
+      {
+        "type": "sew_advanced",
+        "materials": [ "bone", "chitin", "acidchitin", "clay", "cotton", "fur", "leather", "gutskin", "stone", "wood", "wool" ],
+        "skill": "tailor",
+        "clothing_mods": [
+          "arcana_acidchitin_weave",
+          "arcana_bone_weave",
+          "arcana_chitin_weave",
+          "arcana_clay_weave",
+          "arcana_stone_weave",
+          "arcana_wood_weave"
+        ]
+      }
+    ],
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
+  },
+  {
+    "id": "verge_meteoric",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "meteoric verge",
+    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Holding it attracts storms and hardens the body against electricity, and using it will allow you to smite enemies with lightning.",
+    "weight": 3935,
+    "to_hit": 1,
+    "volume": 10,
+    "price": 192500,
+    "bashing": 16,
+    "cutting": 4,
+    "material": [ "hardsteel", "gold" ],
+    "symbol": "/",
+    "looks_like": "i_staff",
+    "color": "yellow",
+    "ammo": "essence_type",
+    "max_charges": 10,
+    "charges_per_use": 2,
+    "artifact_data": { "effects_wielded": [ "AEP_RESIST_ELECTRICITY", "AEP_BAD_WEATHER" ] },
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ] } ]
+    },
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_meteoric_verge_bolt",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
+    },
+    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS" ]
+  },
+  {
+    "id": "scourge_moonstone",
+    "type": "TOOL",
+    "category": "weapons",
+    "symbol": "/",
+    "looks_like": "bullwhip",
+    "color": "dark_gray",
+    "name": "moonstone scourge",
+    "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  While relatively effective as a weapon, fueling it with blood essence will restore its life-draining properties, and make it a much more deadly weapon.",
+    "weight": "3500 g",
+    "volume": "2 L",
+    "price": 28500,
+    "material": [ "leather", "stone", "silver" ],
+    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE" ],
+    "techniques": [ "WHIP_DISARM" ],
+    "bashing": 3,
+    "cutting": 21,
+    "ammo": "essence_blood_type",
+    "max_charges": 24,
+    "use_action": [
+      {
+        "target": "scourge_moonstone_on",
+        "msg": "A wicked resonance flows through the whip, and the spikes of moonstone gain a blood-red luster.",
+        "active": true,
+        "need_wielding": true,
+        "need_charges": 1,
+        "need_charges_msg": "The lash hungers for blood.",
+        "type": "transform"
+      }
+    ]
+  },
+  {
+    "id": "scourge_moonstone_on",
+    "copy-from": "scourge_moonstone",
+    "repairs_like": "scourge_moonstone",
+    "type": "GENERIC",
+    "name": "moonstone scourge (on)",
+    "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  The stone blades reflect with an eerie red luster, and it seems far more nimble in the hand.",
+    "//": "Turns out that modifying attack speed via relic data doesn't work right for transforming items, so weight-based hacks it is!",
+    "weight": "35 g",
+    "to_hit": 2,
+    "turns_per_charge": 25,
+    "revert_to": "scourge_moonstone",
+    "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
+    "artifact_data": { "effects_wielded": [ "AEP_SAP_LIFE" ] },
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_scourge_moonstone_wonder" } ] } ]
+    },
+    "use_action": [ { "target": "scourge_moonstone", "msg": "The wicked energy flowing through the whip fades.", "type": "transform" } ]
+  },
+  {
+    "id": "moonstone_fang",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "moonstone fang",
+    "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it will call forth serpentine shadows to aid you and grant a life-draining touch, but it will sicken body and mind.  Invoking it will harden the body against cold.",
+    "weight": 160,
+    "volume": 6,
+    "price": 25000,
+    "to_hit": 2,
+    "bashing": 3,
+    "cutting": 18,
+    "material": "stone",
+    "symbol": "/",
+    "looks_like": "small_relic",
+    "repairs_like": "blood_athame",
+    "color": "dark_gray",
+    "ammo": "essence_type",
+    "max_charges": 8,
+    "charges_per_use": 8,
+    "techniques": [ "RAPID", "DEF_DISARM" ],
+    "qualities": [ [ "BUTCHER", 6 ] ],
+    "artifact_data": { "effects_wielded": [ "AEP_SNAKES", "AEP_SICK", "AEP_SCHIZO", "AEP_SAP_LIFE" ] },
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
+      "effects": [ { "id": "cold_ward", "duration": 6000 } ]
+    },
+    "flags": [ "STAB", "SHEATH_KNIFE" ]
+  },
+  {
+    "id": "veilblade",
+    "type": "TOOL",
+    "copy-from": "zweihander",
+    "name": "restored ritual blade",
+    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Fuel it by lingering near wounds in The Veil, or with crystallized essence.",
+    "material": [ "superalloy", "essencemat" ],
+    "color": "light_gray",
+    "ammo": "essence_pure_type",
+    "max_charges": 1,
+    "use_action": [
+      {
+        "target": "veilblade_on",
+        "msg": "Strange glowing runes fill the air as you channel magical power through the blade.",
+        "target_charges": 0,
+        "active": true,
+        "need_wielding": true,
+        "moves": 50,
+        "need_charges": 1,
+        "need_charges_msg": "Return sufficient power to The Beyond, and be rewarded.",
+        "menu_text": "Pierce The Veil",
+        "type": "transform"
+      }
+    ],
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.5 } ] } ]
+    },
+    "relative": { "cutting": -5, "weight": -318, "price": 50000 },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD", "MAGIC_FOCUS", "NONCONDUCTIVE" ] },
+    "delete": { "flags": [ "DURABLE_MELEE" ] },
+    "artifact_data": { "charge_type": "ARTC_PORTAL" }
+  },
+  {
+    "id": "veilblade_on",
+    "type": "TOOL",
+    "category": "weapons",
+    "//": "By necessity, can't copy from the base items that have built-in use actions from their qualities.",
+    "name": "restored ritual blade (on)",
+    "name_plural": "restored ritual blades (on)",
+    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  He From Beyond The Veil, accept this offering...",
+    "weight": 2858,
+    "volume": 13,
+    "price": 210000,
+    "to_hit": 1,
+    "bashing": 17,
+    "cutting": 100,
+    "material": [ "superalloy", "essencemat" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "revert_to": "veilblade",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "VEIL" },
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.5 } ] } ]
+    },
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE" ]
+  },
+  {
+    "id": "draconic_heart_mutator",
+    "type": "TOOL",
+    "name": "sacramental heart",
+    "description": "A vibrant red chunk of petrified flesh, purified and set in an ornamental mounting like a morbid brooch.  It resonates with unnatural power, as though imbued with the essence of the creature it was cut away from.  Channeling blood essence through it will start you down the path to becoming something ...else.  A path you can't return from.",
+    "weight": 2500,
+    "volume": 4,
+    "price": 15000,
+    "to_hit": -2,
+    "bashing": 3,
+    "material": [ "stone", "essencemat" ],
+    "symbol": "*",
+    "looks_like": "petrified_eye",
+    "color": "red",
+    "ammo": "essence_blood_type",
+    "max_charges": 10,
+    "charges_per_use": 10,
+    "use_action": { "type": "mutagen_iv", "mutation_category": "DRAGONBLOOD" }
+  },
+  {
+    "id": "stormbringer",
+    "type": "TOOL",
+    "copy-from": "zweihander",
+    "name": "cursed blade",
+    "description": "A two-handed sword made of a dark metal.  It is engraved with unfamiliar symbols, and a single phrase in a script you can actually read: \"neherit asheiri\"  Activating it will grant the wielder a powerful life-draining weapon, but you won't be able to let go of it until it runs out of energy.",
+    "material": [ "hardsteel", "essencemat" ],
+    "color": "dark_gray",
+    "ammo": "essence_blood_type",
+    "max_charges": 9,
+    "use_action": [
+      {
+        "target": "stormbringer_on",
+        "msg": "The runes on the blade glow for a moment, the leather wrap of the hilt contorting into winding tendrils that envelop your hand!  You feel a strange bloodlust overtake you!",
+        "target_charges": 30,
+        "active": true,
+        "need_wielding": true,
+        "need_charges": 9,
+        "need_charges_msg": "Nine motes of blood shall awaken the blade.",
+        "menu_text": "Awaken the dark blade",
+        "type": "transform"
+      }
+    ],
+    "relative": { "to_hit": -1, "cutting": -5 },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE" ] },
+    "delete": { "flags": [ "DURABLE_MELEE" ] }
+  },
+  {
+    "id": "stormbringer_on",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "cursed blade (on)",
+    "name_plural": "cursed blades (on)",
+    "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
+    "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
+    "ammo": "essence_blood_type",
+    "initial_charges": 30,
+    "max_charges": 30,
+    "turns_per_charge": 60,
+    "revert_to": "stormbringer",
+    "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
+    "artifact_data": { "effects_wielded": [ "AEP_STR_UP", "AEP_SAP_LIFE", "AEP_EVIL", "AEP_SICK" ] },
+    "weight": 3176,
+    "volume": 13,
+    "price": 160000,
+    "to_hit": 1,
+    "bashing": 17,
+    "cutting": 40,
+    "material": [ "hardsteel", "essencemat" ],
+    "symbol": "/",
+    "looks_like": "stormbringer",
+    "repairs_like": "stormbringer",
+    "color": "dark_gray",
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ] } ]
+    },
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD" ]
+  }
+]

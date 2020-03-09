@@ -1,0 +1,96 @@
+[
+  {
+    "type": "overlay_order",
+    "overlay_ordering": [
+      { "id": [ "ARCANA_SCALYWINGS", "ARCANA_DRAGONWINGS" ], "order": 500 },
+      { "id": [ "ARCANA_PLATES" ], "order": 2000 },
+      { "id": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ], "order": 1500 },
+      { "id": [ "ARCANA_DRAGONCLAWS" ], "order": 3000 },
+      { "id": [ "ARCANA_SCALYTAIL", "ARCANA_DRAGONTAIL" ], "order": 3500 },
+      { "id": [ "ARCANA_SCALYLEGS", "ARCANA_DRAGONLEGS" ], "order": 4500 },
+      { "id": [ "ARCANA_DRAGONHORNS" ], "order": 6000 },
+      { "id": [ "ARCANA_DRAGONMUZZLE" ], "order": 7000 },
+      { "id": [ "ARCANA_DRAGONTEETH" ], "order": 7500 }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset/arcana_expan.png",
+        "tiles": [
+          { "id": "overlay_mutation_ARCANA_SCALYWINGS", "fg": 5, "bg": 0 },
+          { "id": "overlay_mutation_ARCANA_DRAGONWINGS", "fg": 5, "bg": 0 },
+          { "id": "overlay_mutation_ARCANA_DRAGONMUZZLE", "fg": 6, "bg": 0 },
+          { "id": "overlay_mutation_ARCANA_SCALYLEGS", "fg": 7, "bg": 0 },
+          { "id": "overlay_mutation_ARCANA_DRAGONLEGS", "fg": 7, "bg": 0 },
+          { "id": "overlay_mutation_ARCANA_SCALYTAIL", "fg": 8, "bg": 0 },
+          { "id": "overlay_mutation_ARCANA_DRAGONTAIL", "fg": 9, "bg": 0 },
+          { "id": "overlay_mutation_ARCANA_DRAGONHORNS", "fg": 10, "bg": 0 },
+          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 11, "bg": 0 },
+          { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 12, "bg": 0 },
+          { "id": "overlay_mutation_ARCANA_DRAGONCLAWS", "fg": 13, "bg": 0 },
+          { "id": "overlay_wielded_thunder_sigil", "fg": 14, "bg": 0 },
+          { "id": "flame_talisman", "fg": 15, "bg": 0 },
+          { "id": "water_talisman", "fg": 23, "bg": 0 },
+          { "id": "earth_talisman", "fg": 24, "bg": 0 },
+          { "id": "red_black_vulnerary", "fg": 25, "bg": 0 },
+          { "id": "yellow_white_incense", "fg": 26, "bg": 0 },
+          { "id": "CF_golden_scale", "fg": 27, "bg": 0 },
+          { "id": "mon_archon", "fg": 28, "bg": 0 },
+          { "id": "corpse_mon_archon", "fg": 29, "bg": 0 },
+          { "id": "overlay_wielded_stinger_flute", "fg": 30, "bg": 0 },
+          { "id": "overlay_wielded_offering_chalice", "fg": 31, "bg": 0 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus" ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset/arcana_expan.png",
+        "tiles": [
+          { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 1, "bg": 0 },
+          { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 2, "bg": 0 },
+          { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 3, "bg": 0 },
+          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 4, "bg": 0 },
+          { "id": "candle_warding_active", "fg": 21, "bg": 0 },
+          { "id": "f_candle_barrier", "fg": 21, "bg": 20 },
+          { "id": "f_candle_barrier_playermade", "fg": 22, "bg": 20 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset/arcana_expan.png",
+        "tiles": [
+          { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 16, "bg": 0 },
+          { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 17, "bg": 0 },
+          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 18, "bg": 0 },
+          { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 19, "bg": 0 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset/arcana_expan_80x64.png",
+        "sprite_width": 80,
+        "sprite_height": 64,
+        "sprite_offset_x": -20,
+        "sprite_offset_y": -32,
+        "tiles": [ { "id": "mon_dracolich", "fg": 1, "bg": 0 }, { "id": "corpse_mon_dracolich", "fg": 2, "bg": 0 } ]
+      }
+    ]
+  }
+]

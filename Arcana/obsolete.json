@@ -523,6 +523,17 @@
     }
   },
   {
+    "abstract": "spell_conjure_base",
+    "type": "TOOL",
+    "name": "exploding and summoning magic sign base",
+    "material": [ "essencemat" ],
+    "//": "Gains a little weight due to throwing mechanics being weird.",
+    "weight": 100,
+    "symbol": ",",
+    "looks_like": "vortex_stone",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+  },
+  {
     "id": "spell_lightningfield_on",
     "copy-from": "spell_conjure_base",
     "type": "TOOL",
