@@ -1,0 +1,179 @@
+[
+  {
+    "id": "cleansing_flame_books",
+    "type": "item_group",
+    "//": "25% mundane books, 25% non-magical religious books , 45% arcane books, 5% martial arts manuals.",
+    "items": [
+      [ "poetry_book", 10 ],
+      [ "philosophy_book", 10 ],
+      [ "essay_book", 5 ],
+      [ "holybook_bible1", 2 ],
+      [ "holybook_bible2", 3 ],
+      [ "holybook_havamal", 5 ],
+      [ "holybook_quran", 3 ],
+      [ "holybook_hadith", 2 ],
+      [ "holybook_kojiki", 5 ],
+      [ "holybook_tanakh", 3 ],
+      [ "holybook_tripitaka", 1 ],
+      [ "holybook_sutras", 1 ],
+      [ "book_hexenhammer", 25 ],
+      [ "book_scrollcraft", 10 ],
+      [ "book_potioncraft", 10 ],
+      [ "manual_cleansingflame", 3 ],
+      [ "manual_fencing", 1 ],
+      [ "manual_aikido", 1 ]
+    ]
+  },
+  {
+    "id": "cleansing_flame_gear",
+    "type": "item_group",
+    "items": [
+      [ "warhammer", 15 ],
+      [ "mace", 10 ],
+      [ "morningstar", 10 ],
+      [ "broadsword", 5 ],
+      [ "zweihander", 5 ],
+      [ "crossbow", 15 ],
+      [ "bolt_steel", 15 ],
+      [ "helmet_barbute", 5 ],
+      [ "helmet_plate", 5 ],
+      [ "chainmail_suit", 10 ],
+      [ "armor_plate", 5 ],
+      [ "armor_lightplate", 5 ],
+      [ "boots_plate", 5 ],
+      [ "gloves_plate", 5 ],
+      [ "holy_symbol", 25 ]
+    ]
+  },
+  {
+    "id": "cleansing_flame_spells",
+    "type": "item_group",
+    "items": [
+      [ "scroll_spell_plants", 1 ],
+      [ "scroll_spell_heal", 1 ],
+      [ "scroll_spell_flame_armor", 1 ],
+      [ "scroll_spell_clairvoyance", 1 ],
+      [ "scroll_spell_cleric", 1 ]
+    ]
+  },
+  {
+    "id": "cleansing_flame_gear_magic",
+    "type": "item_group",
+    "items": [
+      [ "sun_sword", 5 ],
+      [ "ethereal_crossbow", 5 ],
+      [ "gilded_aegis", 5 ],
+      [ "somen_clairvoyance", 5 ],
+      [ "hexenhammer", 10 ]
+    ]
+  },
+  {
+    "id": "cleansing_flame_gear_consumables",
+    "type": "item_group",
+    "items": [
+      [ "numbness_potion", 5 ],
+      [ "strength_potion", 10 ],
+      [ "speed_potion", 5 ],
+      [ "healing_potion", 15 ],
+      [ "scroll_sun", 5 ],
+      [ "scroll_moon", 5 ],
+      [ "scroll_artiface", 5 ],
+      [ "scroll_nature", 3 ],
+      [ "scroll_destruction", 2 ],
+      [ "scroll_subversion", 1 ]
+    ]
+  },
+  {
+    "id": "cleansing_flame_crafting",
+    "type": "item_group",
+    "items": [
+      { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8 },
+      [ "gold_small", 5 ],
+      [ "silver_small", 15 ],
+      [ "feather", 15 ],
+      [ "scrap", 20 ],
+      [ "copper", 25 ]
+    ]
+  },
+  {
+    "id": "cleansing_flame_casualties",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
+      { "group": "cf_corpse_combatants" }
+    ]
+  },
+  {
+    "id": "cleansing_flame_casualty_specific",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
+      { "item": "corpse_gunned" }
+    ]
+  },
+  {
+    "id": "cf_corpse_combatants",
+    "//": "Various adult corpses, excluding versions that imply anything human was responsible.",
+    "type": "item_group",
+    "items": [
+      [ "corpse", 25 ],
+      [ "corpse_bloody", 25 ],
+      [ "corpse_generic_male", 15 ],
+      [ "corpse_generic_female", 10 ],
+      [ "corpse_painful", 10 ],
+      [ "corpse_halved_upper", 10 ],
+      [ "corpse_half_beheaded", 5 ]
+    ]
+  },
+  {
+    "id": "cleansing_flame_casualties_inferno",
+    "//": "For the bodies in the lowest level, likely killed by the spirit of fire.",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
+      { "item": "rmi2_corpse" }
+    ]
+  },
+  {
+    "id": "cleansing_flame_casualties_basement",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
+      { "group": "arcanist_corpses_adult_random" }
+    ]
+  },
+  {
+    "id": "rural_church_hunter_haul",
+    "type": "item_group",
+    "items": [
+      { "item": "meat_pickled", "prob": 25, "charges": 2, "container-item": "jar_glass_sealed" },
+      { "item": "meat_smoked", "prob": 10, "charges": 2, "container-item": "wrapper" },
+      { "item": "jerky", "prob": 10, "charges": 4, "container-item": "wrapper" },
+      { "item": "sausage", "prob": 10, "charges": 2, "container-item": "wrapper" },
+      { "item": "sausage_wasteland", "prob": 10, "charges": 2, "container-item": "wrapper" },
+      { "item": "cracklins", "prob": 5, "charges": 8, "container-item": "wrapper" },
+      { "item": "tallow", "prob": 5, "charges": 2, "container-item": "wrapper" },
+      { "item": "lard", "prob": 5, "charges": 2, "container-item": "wrapper" },
+      { "item": "cured_pelt", "prob": 10, "charges": [ 1, 5 ] },
+      { "item": "cured_hide", "prob": 10, "charges": [ 1, 5 ] },
+      { "item": "bone", "prob": 5, "charges": [ 1, 5 ] },
+      { "item": "broth_bone", "prob": 5, "charges": 2, "container-item": "jar_glass_sealed" }
+    ]
+  }
+]

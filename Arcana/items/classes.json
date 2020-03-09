@@ -14,23 +14,10 @@
   {
     "abstract": "spell_base",
     "type": "TOOL",
-    "category": "magic_signs",
     "name": "magic sign base",
     "material": [ "essencemat" ],
     "symbol": ",",
     "drop_action": { "type": "emit_actor" },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
-  },
-  {
-    "abstract": "spell_conjure_base",
-    "type": "TOOL",
-    "category": "magic_signs",
-    "name": "exploding and summoning magic sign base",
-    "material": [ "essencemat" ],
-    "//": "Gains a little weight due to throwing mechanics being weird.",
-    "weight": 100,
-    "symbol": ",",
-    "looks_like": "vortex_stone",
     "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
   },
   {

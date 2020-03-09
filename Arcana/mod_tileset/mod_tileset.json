@@ -18,7 +18,7 @@
     "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
     "tiles-new": [
       {
-        "file": "arcana_expan.png",
+        "file": "mod_tileset/arcana_expan.png",
         "tiles": [
           { "id": "overlay_mutation_ARCANA_SCALYWINGS", "fg": 5, "bg": 0 },
           { "id": "overlay_mutation_ARCANA_DRAGONWINGS", "fg": 5, "bg": 0 },
@@ -51,7 +51,7 @@
     "compatibility": [ "MshockXottoplus" ],
     "tiles-new": [
       {
-        "file": "arcana_expan.png",
+        "file": "mod_tileset/arcana_expan.png",
         "tiles": [
           { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 1, "bg": 0 },
           { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 2, "bg": 0 },
@@ -69,7 +69,7 @@
     "compatibility": [ "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
     "tiles-new": [
       {
-        "file": "arcana_expan.png",
+        "file": "mod_tileset/arcana_expan.png",
         "tiles": [
           { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 16, "bg": 0 },
           { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 17, "bg": 0 },
@@ -84,7 +84,7 @@
     "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
     "tiles-new": [
       {
-        "file": "arcana_expan_80x64.png",
+        "file": "mod_tileset/arcana_expan_80x64.png",
         "sprite_width": 80,
         "sprite_height": 64,
         "sprite_offset_x": -20,

@@ -1,43 +1,5 @@
 [
   {
-    "id": "unaligned_arcanist_books",
-    "type": "item_group",
-    "items": [
-      [ "novel_drama", 10 ],
-      [ "novel_experimental", 15 ],
-      [ "philosophy_book", 15 ],
-      [ "poetry_book", 10 ],
-      [ "book_potioncraft", 25 ],
-      [ "book_scrollcraft", 15 ],
-      [ "book_summoning", 10 ]
-    ]
-  },
-  {
-    "id": "unaligned_arcanist_spells",
-    "type": "item_group",
-    "items": [
-      [ "scroll_spell_confusion", 1 ],
-      [ "scroll_spell_plants", 1 ],
-      [ "scroll_spell_might", 1 ],
-      [ "scroll_spell_clarity", 1 ],
-      [ "scroll_spell_heal", 1 ],
-      [ "scroll_spell_flame_armor", 1 ],
-      [ "scroll_spell_invis", 1 ],
-      [ "scroll_spell_free_action", 1 ],
-      [ "scroll_spell_acidspray", 1 ]
-    ]
-  },
-  {
-    "id": "summoner_casualties",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "magic_consumables", "prob": 25 },
-      { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
-    ]
-  },
-  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "strange_grove" ],

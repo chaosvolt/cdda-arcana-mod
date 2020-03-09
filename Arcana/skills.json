@@ -9,20 +9,5 @@
     "companion_survival_rank_factor": 1,
     "display_category": "display_interaction",
     "companion_skill_practice": [ { "skill": "hunting", "weight": 1 }, { "skill": "combat", "weight": 1 } ]
-  },
-  {
-    "type": "material",
-    "ident": "essencemat",
-    "name": "Magical Essence",
-    "density": 1,
-    "bash_resist": 20,
-    "cut_resist": 20,
-    "acid_resist": 99,
-    "fire_resist": 99,
-    "elec_resist": 99,
-    "chip_resist": 99,
-    "dmg_adj": [ "lightly damaged", "damaged", "very damaged", "thoroughly damaged" ],
-    "bash_dmg_verb": "damaged",
-    "cut_dmg_verb": "damaged"
   }
 ]

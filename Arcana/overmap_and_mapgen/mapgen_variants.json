@@ -1,27 +1,5 @@
 [
   {
-    "id": "summoner_casualties_fresh",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "magic_consumables", "prob": 10 },
-      { "item": "corpse_painful" }
-    ]
-  },
-  {
-    "id": "cleansing_flame_casualty_specific",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "item": "corpse_gunned" }
-    ]
-  },
-  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "cabin_strange_b" ],
