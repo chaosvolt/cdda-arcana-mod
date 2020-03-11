@@ -494,6 +494,33 @@
   {
     "type": "mapgen",
     "method": "json",
+    "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_1b",
+    "object": {
+      "set": [
+        { "line": "furniture", "id": "f_rack", "x": 4, "x2": 6, "y": 17, "y2": 17 },
+        { "line": "furniture", "id": "f_workbench", "x": 4, "x2": 4, "y": 19, "y2": 20 }
+      ],
+      "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ],
+      "place_loot": [
+        { "group": "ammo_reloaded", "x": [ 4, 6 ], "y": 17, "chance": 75, "repeat": 10 },
+        { "group": "guns_milspec", "x": 4, "y": [ 19, 20 ], "chance": 75, "repeat": 5 }
+      ],
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 6 ], "y": [ 17, 20 ] } ],
+      "place_npcs": [ { "class": "cf_auxillery_merchant_1", "x": 5, "y": 19, "add_trait": "CF_AUX_MARKER_3" } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "arcana_cf_4_wasteland_scavengers_2b",
+    "object": {
+      "place_nested": [ { "chunks": [ "cf_church_upgrade_4_e" ], "x": 4, "y": 0 } ],
+      "place_npcs": [ { "class": "cf_auxillery_guard_4", "x": 4, "y": 10, "add_trait": "CF_AUX_MARKER_3" }, { "class": "cf_auxillery_guard_4", "x": 10, "y": 13, "add_trait": "CF_AUX_MARKER_3" } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
     "update_mapgen_id": "arcana_cf_4_old_guard_1",
     "object": {
       "set": [

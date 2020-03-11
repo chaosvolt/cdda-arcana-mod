@@ -2,7 +2,6 @@
   {
     "id": "TALK_MERCHANT_CF_AUX",
     "type": "talk_topic",
-    "//": "To do: make missions accessible, more importantly need to flesh out dialog for if the NPC is the Old Guard variant, making their ",
     "dynamic_line": {
       "npc_has_trait": "CF_AUX_MARKER_1",
       "yes": {
@@ -26,7 +25,24 @@
       { "text": "Who are you?", "topic": "TALK_MERCHANT_CF_AUX_WHO" },
       { "text": "What do you do around here?", "topic": "TALK_MERCHANT_CF_AUX_DO" },
       { "text": "Got anything to trade?", "effect": "start_trade", "topic": "TALK_MERCHANT_CF_AUX" },
-      { "text": "Can I do anything to help?", "topic": "TALK_MISSION_LIST" },
+      {
+        "text": "Can I do anything to help?",
+        "switch": true,
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" } },
+            { "npc_has_trait": "CF_AUX_MARKER_3" }
+          ]
+        },
+        "effect": { "u_add_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" },
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Can I do anything to help?",
+        "switch": true,
+        "default": true,
+        "topic": "TALK_MISSION_LIST"
+      },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
   },
@@ -39,7 +55,11 @@
       "no": {
         "npc_has_trait": "CF_AUX_MARKER_2",
         "yes": "Strange folk, but I don't mind.  They're friendly at least, and know the area fairly well.  Makes hunting in the area a lot less stressful.",
-        "no": "They have my men working fairly hard to keep the place in good working order, that's for sure.  But they work pretty damn hard right along with us.  Odd choice of equipment on them I suppose, but it seems to do well enough."
+        "no": {
+          "npc_has_trait": "CF_AUX_MARKER_3",
+          "yes": "They've got fight in 'em, I can tell that much.  Not the mercenary type or like raiders either, more like the crusadin' type.  Better at drinkin' than I figured them to be, at least.",
+          "no": "They have my men working fairly hard to keep the place in good working order, that's for sure.  But they work pretty damn hard right along with us.  Odd choice of equipment on them I suppose, but it seems to do well enough."
+        }
       }
     },
     "responses": [
@@ -68,7 +88,11 @@
       "no": {
         "npc_has_trait": "CF_AUX_MARKER_2",
         "yes": "Just a local hunter.  Outdoors experience came in handy when it all went to shit, so I guess there's that.",
-        "no": "These days, just a scavenger I guess.  Don't have any family left that I know of, so not like my old life doing odd jobs matters much.  Rather not talk about it."
+        "no": {
+          "npc_has_trait": "CF_AUX_MARKER_3",
+          "yes": "Used to be a soldier, 'bout a decade ago.  Rest of my boys probably would've turned raider if I hadn't been around to knock some sense into 'em.  Now we make a living cleaning up the mess the guys still in service weren't able to unfuck.",
+          "no": "These days, just a scavenger I guess.  Don't have any family left that I know of, so not like my old life doing odd jobs matters much.  Rather not talk about it."
+        }
       }
     },
     "responses": [ { "text": "Oh, okay.", "topic": "TALK_MERCHANT_CF_AUX" } ]
@@ -82,12 +106,54 @@
       "no": {
         "npc_has_trait": "CF_AUX_MARKER_2",
         "yes": "I arrange hunts and scavenging runs mainly, along with keeping the other folks sent here running around, staying busy.  If you need something, I can offer you a good deal from our cut of the hunt.",
-        "no": "Mostly just help out around, organize the scavenging runs and manage trade.  Lot of stuff we bring in either goes to the locals or back to the center, but I can make do."
+        "no": {
+          "npc_has_trait": "CF_AUX_MARKER_3",
+          "yes": "Mostly help run extra security for the patrols, though these guys don't really need much help with that.  Shoot monsters, get ammo out of the deal, use that to shoot more monsters… cycle of life ain't it?  Or the cycle of death.  Can sell you some if ya want.",
+          "no": "Mostly just help out around, organize the scavenging runs and manage trade.  Lot of stuff we bring in either goes to the locals or back to the center, but I can make do."
+        }
       }
     },
     "responses": [
       { "text": "Let's trade, then.", "effect": "start_trade", "topic": "TALK_MERCHANT_CF_AUX" },
       { "text": "I see.", "topic": "TALK_MERCHANT_CF_AUX" }
+    ]
+  },
+  {
+    "id": "TALK_MERCHANT_CF_AUX_BOUNTY_INTRO",
+    "type": "talk_topic",
+    "dynamic_line": "Far as steady jobs go, not much.  I got bounties on behalf of the people running this place, however.  Not like shooting people in the face kinda bounties, more monster-hunting and other stuff like that.  Interested?",
+    "responses": [
+      { "text": "What sort of bounties are on offer?", "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK" },
+      { "text": "Perhaps another time.", "topic": "TALK_MERCHANT_CF_AUX" }
+    ]
+  },
+  {
+    "id": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK",
+    "type": "talk_topic",
+    "dynamic_line": "That \"Grandmaster\" guy had me look into running two different kinds of bounty to offer.  First off, if you have any of those weird pieces certain critters drop, I can arrange for a payment of a Scale each.  Twisted bones, amorphous amber, that sort of thing.  Second, they have a bounty on certain books.  Eldritch lore kinda stuff.",
+    "repeat_responses": {
+      "for_item": [
+        "jerky",
+        "meat_smoked",
+        "fish_smoked",
+        "dry_veggy",
+        "dry_fruit",
+        "cooking_oil",
+        "cooking_oil2",
+        "cornmeal",
+        "flour",
+        "fruit_wine",
+        "beer",
+        "sugar",
+        "salt",
+        "vinegar"
+      ],
+      "response": { "text": "Delivering <topic_item>.", "topic": "TALK_DELIVER_ASK" }
+    },
+    "responses": [
+      { "text": "What sort of bounties are on offer?", "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK" },
+      { "text": "What books are they asking for?", "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS" },
+      { "text": "Maybe later.", "topic": "TALK_MERCHANT_CF_AUX" }
     ]
   }
 ]
