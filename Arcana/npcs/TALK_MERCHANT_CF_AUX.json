@@ -9,7 +9,7 @@
         "yes": "Welcome, Marshal.  What can I do for you?",
         "no": "Welcome, what can I do for you?"
       },
-      "no": { "npc_has_trait": "CF_AUX_MARKER_2", "yes": "Howdy, what can I get for you?", "no": "Hi.  Anything you need?" }
+      "no": { "npc_has_trait": "CF_AUX_MARKER_2", "yes": "Howdy, what can I get for you?", "no": "Anything you need?" }
     },
     "responses": [
       {
@@ -35,14 +35,9 @@
           ]
         },
         "effect": { "u_add_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" },
-        "topic": "TALK_MISSION_LIST"
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_INTRO"
       },
-      {
-        "text": "Can I do anything to help?",
-        "switch": true,
-        "default": true,
-        "topic": "TALK_MISSION_LIST"
-      },
+      { "text": "Can I do anything to help?", "switch": true, "default": true, "topic": "TALK_MISSION_LIST" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
   },
@@ -122,6 +117,7 @@
     "id": "TALK_MERCHANT_CF_AUX_BOUNTY_INTRO",
     "type": "talk_topic",
     "dynamic_line": "Far as steady jobs go, not much.  I got bounties on behalf of the people running this place, however.  Not like shooting people in the face kinda bounties, more monster-hunting and other stuff like that.  Interested?",
+    "speaker_effect": { "effect": { "u_add_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" } },
     "responses": [
       { "text": "What sort of bounties are on offer?", "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK" },
       { "text": "Perhaps another time.", "topic": "TALK_MERCHANT_CF_AUX" }
@@ -131,29 +127,200 @@
     "id": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK",
     "type": "talk_topic",
     "dynamic_line": "That \"Grandmaster\" guy had me look into running two different kinds of bounty to offer.  First off, if you have any of those weird pieces certain critters drop, I can arrange for a payment of a Scale each.  Twisted bones, amorphous amber, that sort of thing.  Second, they have a bounty on certain books.  Eldritch lore kinda stuff.",
-    "repeat_responses": {
-      "for_item": [
-        "jerky",
-        "meat_smoked",
-        "fish_smoked",
-        "dry_veggy",
-        "dry_fruit",
-        "cooking_oil",
-        "cooking_oil2",
-        "cornmeal",
-        "flour",
-        "fruit_wine",
-        "beer",
-        "sugar",
-        "salt",
-        "vinegar"
-      ],
-      "response": { "text": "Delivering <topic_item>.", "topic": "TALK_DELIVER_ASK" }
-    },
+    "//": "Needing to actually remove the items, rather than handing them over to potentially be bought back, means using explicitly responses rather than bulk_trade.",
     "responses": [
-      { "text": "What sort of bounties are on offer?", "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK" },
-      { "text": "What books are they asking for?", "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS" },
-      { "text": "Maybe later.", "topic": "TALK_MERCHANT_CF_AUX" }
+      {
+        "text": "Turning in a fungal fighter sting.",
+        "condition": { "u_has_item": "fighter_sting" },
+        "effect": { "u_consume_item": "fighter_sting" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in a biollante bud.",
+        "condition": { "u_has_item": "biollante_bud" },
+        "effect": { "u_consume_item": "biollante_bud" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in a crystalline fang.",
+        "condition": { "u_has_item": "graboid_fang" },
+        "effect": { "u_consume_item": "graboid_fang" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in a triffid queen flower.",
+        "condition": { "u_has_item": "triffid_queen_flower" },
+        "effect": { "u_consume_item": "triffid_queen_flower" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in a barbed stinger.",
+        "condition": { "u_has_item": "dermatik_sting" },
+        "effect": { "u_consume_item": "dermatik_sting" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in a wind fragment.",
+        "condition": { "u_has_item": "vortex_shard" },
+        "effect": { "u_consume_item": "vortex_shard" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in amorphous amber.",
+        "condition": { "u_has_item": "blob_gem" },
+        "effect": { "u_consume_item": "blob_gem" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in a crystallized tear.",
+        "condition": { "u_has_item": "monster_tear" },
+        "effect": { "u_consume_item": "monster_tear" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in a shadow gem.",
+        "condition": { "u_has_item": "shadow_gem" },
+        "effect": { "u_consume_item": "shadow_gem" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in twisted bones.",
+        "condition": { "u_has_item": "bone_twisted" },
+        "effect": { "u_consume_item": "bone_twisted" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in cracked knucklebones.",
+        "condition": { "u_has_item": "gracken_knuckles" },
+        "effect": { "u_consume_item": "gracken_knuckles" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in a wyrmskin fragment.",
+        "condition": { "u_has_item": "wyrmskin_piece" },
+        "effect": { "u_consume_item": "wyrmskin_piece" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in a monstrous fang.",
+        "condition": { "u_has_item": "monster_fang" },
+        "effect": { "u_consume_item": "monster_fang" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in an iridescent plate.",
+        "condition": { "u_has_item": "iridescent_plate" },
+        "effect": { "u_consume_item": "iridescent_plate" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "Turning in an engraved stone.",
+        "condition": { "u_has_item": "engraved_stone" },
+        "effect": { "u_consume_item": "engraved_stone" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
+      },
+      {
+        "text": "What books are they asking for?",
+        "condition": { "npc_has_effect": "cf_merc_recent_book_bounty" },
+        "switch": true,
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS"
+      },
+      {
+        "text": "What books are they asking for?",
+        "switch": true,
+        "default": true,
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS"
+      },
+      { "text": "Maybe later, I have something else to ask about.", "topic": "TALK_MERCHANT_CF_AUX" },
+      { "text": "Maybe later.  Bye for now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN",
+    "type": "talk_topic",
+    "dynamic_line": "Here you go, then.  One Golden Scale, and I'll have this sent to the boss.  Anything else?",
+    "speaker_effect": { "effect": { "u_buy_item": "CF_golden_scale", "count": 1 } },
+    "responses": [
+      { "text": "I'd like to ask about another bounty.", "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK" },
+      { "text": "I have something else to ask about.", "topic": "TALK_MERCHANT_CF_AUX" },
+      { "text": "Thanks, see you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS",
+    "type": "talk_topic",
+    "dynamic_line": "Only got a couple on their wishlist, paying out a good sum for each one.  One's called Sanguine Codex, another's Oaths to The Chalice, and then there's To Master The Unknown.  What do ya got?",
+    "responses": [
+      {
+        "text": "Sanguine Codex?  They just want to have it burnt, don't they?",
+        "condition": { "u_has_trait": "PROF_SANGUINE" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_SANGUINE"
+      },
+      {
+        "text": "For what purpose are they after Oaths to The Chalice?",
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE"
+      },
+      {
+        "text": "I can hand over a copy of Sanguine Codex.",
+        "condition": { "u_has_item": "book_bloodmagic" },
+        "effect": [ { "u_consume_item": "book_bloodmagic" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+      },
+      {
+        "text": "I can hand over a copy of Oaths to The Chalice.",
+        "condition": { "u_has_item": "book_sacrifice" },
+        "effect": [ { "u_consume_item": "book_sacrifice" }, { "u_buy_item": "CF_golden_scale", "count": 16 } ],
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+      },
+      {
+        "text": "I can hand over a copy of To Master The Unknown.",
+        "condition": { "u_has_item": "book_summoning" },
+        "effect": [ { "u_consume_item": "book_summoning" }, { "u_buy_item": "CF_golden_scale", "count": 20 } ],
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+      },
+      { "text": "Nevermind, maybe another time.", "topic": "TALK_MERCHANT_CF_AUX" },
+      { "text": "Nevermind, that should be all for now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_SANGUINE",
+    "type": "talk_topic",
+    "dynamic_line": "I have no idea.  That Johnathan boy seemed the book-burning type, but when we arranged the deal the other lady was keeping a close eye on him.  Had me promise to hand 'em over to someone else she was workin' with, instead of him.  We have a deal or not?",
+    "responses": [
+      {
+        "text": "Alright, fine.  I have one here.",
+        "condition": { "u_has_item": "book_bloodmagic" },
+        "effect": [ { "u_consume_item": "book_bloodmagic" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+      },
+      { "text": "We'll see, maybe another time.", "topic": "TALK_MERCHANT_CF_AUX" },
+      { "text": "No thanks, that's all for now I guess.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE",
+    "type": "talk_topic",
+    "dynamic_line": "Hell if I know.  Some kind cult book, that Ms. McKinnon lady was making sure I'd turn them in to someone working for her instead of the Grandmaster.  Guessin' she doesn't trust him not to go burning them.",
+    "responses": [
+      {
+        "text": "Very well then.  I'll trust you to handle this with care.",
+        "condition": { "u_has_item": "book_sacrifice" },
+        "effect": [ { "u_consume_item": "book_sacrifice" }, { "u_buy_item": "CF_golden_scale", "count": 16 } ],
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2"
+      },
+      { "text": "We'll see, maybe another time.", "topic": "TALK_MERCHANT_CF_AUX" },
+      { "text": "No thanks, that's all for now I guess.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN2",
+    "type": "talk_topic",
+    "dynamic_line": "Pleasure doin' business with ya, I'll be careful about getting this sent over to Sofia.  Anything else?",
+    "responses": [
+      { "text": "I'd like to ask about another bounty.", "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK" },
+      { "text": "I have something else to ask about.", "topic": "TALK_MERCHANT_CF_AUX" },
+      { "text": "Thanks, see you later.", "topic": "TALK_DONE" }
     ]
   }
 ]

@@ -717,5 +717,42 @@
       "success_lie": "Seeing this is probably a bug.",
       "failure": "Seeing this is probably a bug."
     }
+  },
+  {
+    "id": "MISSION_CF_AUX_D",
+    "type": "mission_definition",
+    "name": "Find a triffid queen flower",
+    "description": "Obtain a red flower associated with otherworldly plant monsters, and return it to the farmhand.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 15000,
+    "has_generic_rewards": false,
+    "item": "triffid_queen_flower",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "new_anomaly_t",
+        "om_terrain_replace": "field",
+        "random": true,
+        "reveal_radius": 3,
+        "search_range": 180,
+        "z": 0
+      }
+    },
+    "dialogue": {
+      "describe": "Seeing this is probably a bug...",
+      "offer": "Not long after I got here I took an interest in the sorts of things the locals collected.  Truth is, early on when shit hit the fan I picked up a few books and some other experience with all this strangeness.  Not much, but enough to keep me another day away from dying.  I used to help tend to crops, these new experiences and some of the weird creatures I've seen gave me an idea for something that might improve crop yields.  Interested?",
+      "accepted": "Alright.  Truth is, it's a bit dangerous hunting those monsters out there.  The big walking plants, making nests burrowed underground.  When I went to Ms. McKinnon with the idea she said she'd keep an eye out for any leads.  I'll give you directions to a local hotspot she got wind of from her scouts.  If you visit it, keep an eye out for the ones with bright red flowers, that can raise hell growing plants like wildfire.  I need the flower itself.",
+      "rejected": "Well alright, come back anytime if you change your mind.  I doubt it'll be a massive improvement to the logistics of things here or at the commune, but it's worth looking into.",
+      "advice": "Most of those things are venomous and right nasty to get tangled up in.  Just be mindful about burning them out, I don't want to risk harming what you're there for.",
+      "inquire": "Any luck?",
+      "success": "Alright.  Sofia's skeptical that I can make a large-scale breakthrough with this.  I can use what I've learned, and a little help from her, to liven up the compound here and grow a few things, but it seems it'll take a lot of energy plus burn out whatever force is still present in these petals.  They have away to weave its effects into someone's very being so they don't need to hunt monsters, but that just makes it drain energy out of whoever uses it instead.  Still, thank you for the help, should have the finishing touches ready right quick.",
+      "success_lie": "Seeing this is probably a bug.",
+      "failure": "Seeing this is probably a bug."
+    },
+    "end": {
+      "effect": [ { "u_buy_item": "CF_golden_scale", "count": 6 } ],
+      "update_mapgen": [ { "om_terrain": "cf_church_3", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_aux_d" } ]
+    }
   }
 ]

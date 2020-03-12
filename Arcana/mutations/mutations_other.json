@@ -246,5 +246,15 @@
     "player_display": false,
     "valid": false,
     "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "CF_AUX_MARKER_3",
+    "name": { "str": "Auxiliary Marker 3" },
+    "points": 0,
+    "description": "This is used to designate that the NPCs spawned with this are from the Scavenger Mercenary resolution for Sofia's fourth mission.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
   }
 ]
