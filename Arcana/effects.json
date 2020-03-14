@@ -485,16 +485,27 @@
   },
   {
     "type": "effect_type",
+    "id": "arcane_healing_staunch",
+    "removes_effects": [ "bleed" ],
+    "max_duration": "1 s"
+  },
+  {
+    "type": "effect_type",
     "id": "arcane_healing_side_effects",
     "resist_effect": "talisman_warding",
-    "removes_effects": [ "bleed" ],
-    "max_duration": "1 s",
+    "max_intensity": 6,
+    "int_dur_factor": "12 h",
     "base_mods": {
-      "health_min": [ -5 ],
-      "health_chance": [ 1, 2 ],
-      "pain_min": [ 5 ],
-      "pain_chance": [ 10, 20 ],
-      "vomit_chance": [ 100, 200 ]
+      "health_min": [ -1 ],
+      "health_tick": [ 1800 ],
+      "stamina_min": [ -5 ],
+      "stamina_tick": [ 10 ]
+    },
+    "scaling_mods": {
+      "health_min": [ -1 ],
+      "health_tick": [ -100 ],
+      "stamina_min": [ -5 ],
+      "stamina_tick": [ -1 ]
     }
   },
   {
@@ -527,8 +538,8 @@
       "thirst_tick": [ 300 ],
       "health_min": [ -1 ],
       "health_tick": [ 600 ],
-      "stamina_min": [ -1 ],
-      "stamina_tick": [ 10 ]
+      "stamina_min": [ -5 ],
+      "stamina_tick": [ 5 ]
     }
   },
   {
