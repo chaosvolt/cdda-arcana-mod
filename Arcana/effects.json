@@ -628,9 +628,6 @@
     "base_mods": {
       "int_mod": [ -1.5 ],
       "per_mod": [ -1.5 ],
-      "sleep_min": [ 5, 4 ],
-      "sleep_max": [ 25, 20 ],
-      "sleep_chance": [ 1300 ],
       "vomit_chance": [ 800 ],
       "health_min": [ -6, -5 ],
       "health_chance": [ 400 ],
@@ -640,8 +637,7 @@
     "scaling_mods": {
       "int_mod": [ -0.75, -0.6 ],
       "per_mod": [ -0.75, -0.6 ],
-      "speed_mod": [ -5, -4 ],
-      "sleep_chance": [ -180, -175 ],
+      "speed_mod": [ -4, -3 ],
       "vomit_chance": [ -120, -115 ],
       "health_chance": [ -40, -35 ],
       "rad_chance": [ -100, -95 ]
