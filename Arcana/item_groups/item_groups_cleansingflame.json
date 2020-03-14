@@ -159,6 +159,31 @@
     ]
   },
   {
+    "id": "rural_church_alchemy_stock",
+    "type": "item_group",
+    "items": [
+      [ "numbness_potion", 15 ],
+      [ "strength_potion", 15 ],
+      [ "speed_potion", 10 ],
+      [ "healing_potion", 10 ],
+      [ "red_black_vulnerary", 5 ],
+      [ "yellow_white_incense", 5 ]
+    ]
+  },
+  {
+    "id": "rural_church_farmhand_research",
+    "type": "item_group",
+    "items": [
+      { "group": "cleansing_flame_gear_consumables", "prob": 15 },
+      [ "scroll_blank", 5 ],
+      [ "flame_talisman", 5 ],
+      [ "water_talisman", 10 ],
+      [ "earth_talisman", 10 ],
+      [ "air_talisman", 5 ],
+      [ "totem_plants", 1 ]
+    ]
+  },
+  {
     "id": "rural_church_hunter_haul",
     "type": "item_group",
     "items": [
