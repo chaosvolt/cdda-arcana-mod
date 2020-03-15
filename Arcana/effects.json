@@ -485,6 +485,14 @@
   },
   {
     "type": "effect_type",
+    "id": "dragonbreath_side_effects",
+    "max_duration": "1 s",
+    "base_mods": {
+      "hunger_min": [ 30 ]
+    }
+  },
+  {
+    "type": "effect_type",
     "id": "arcane_healing_staunch",
     "removes_effects": [ "bleed" ],
     "max_duration": "1 s"
