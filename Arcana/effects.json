@@ -510,6 +510,24 @@
   },
   {
     "type": "effect_type",
+    "id": "arcane_pulse_side_effects",
+    "max_intensity": 6,
+    "int_dur_factor": "12 h",
+    "base_mods": {
+      "int_mod": [ -1 ],
+      "vomit_chance": [ 2000, 2400 ],
+      "pain_min": [ 5, 3 ],
+      "pain_chance": [ 1000, 1200 ]
+    },
+    "scaling_mods": {
+      "int_mod": [ -1.25 ],
+      "vomit_chance": [ -200, -240 ],
+      "stamina_min": [ -5 ],
+      "pain_chance": [ 100, 120 ]
+    }
+  },
+  {
+    "type": "effect_type",
     "id": "arcana_suppression",
     "name": [ "Suppressed Fire" ],
     "desc": [ "Reduces hunger and thirst gain, hinders stamina regen." ],
