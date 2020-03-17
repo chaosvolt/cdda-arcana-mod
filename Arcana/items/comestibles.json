@@ -21,7 +21,7 @@
       "activation_message": "You drink the potion and feel a strange numbness spread through your body.",
       "effects": [ { "id": "potion_numbness", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "strength_potion",
@@ -45,7 +45,7 @@
       "activation_message": "You drink the potion and feel wicked power spread through your body.",
       "effects": [ { "id": "potion_strength", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "speed_potion",
@@ -69,7 +69,7 @@
       "activation_message": "You drink the potion and feel a sudden tension spread through your body.",
       "effects": [ { "id": "potion_speed", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "healing_potion",
@@ -89,7 +89,7 @@
     "fun": 4,
     "freezing_point": -150,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_red_potion_healing", "no_fail": true, "level": 0 },
-    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "red_black_vulnerary",
@@ -119,7 +119,7 @@
       "move_cost": 200,
       "effects": [ { "id": "potion_vulnerary", "duration": 300 } ]
     },
-    "flags": [ "NPC_SAFE" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "yellow_white_incense",
@@ -142,7 +142,8 @@
       "effects": [ { "id": "potion_incense", "duration": 900 } ],
       "charges_needed": { "fire": 1 },
       "moves": 50
-    }
+    },
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "dragonblood_mutagen",
@@ -164,7 +165,7 @@
     "charges": 4,
     "freezing_point": -10,
     "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOOD" },
-    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "scroll_sun",

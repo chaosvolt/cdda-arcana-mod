@@ -12,8 +12,7 @@
     "mana_regen_multiplier": 1.25,
     "craft_skill_bonus": [ [ "magic", 2 ] ],
     "ignored_by": [ "ARCANA_SUMMONED", "UNKNOWN" ],
-    "anger_relations": [ [ "NETHER", 20 ], [ "FUNGUS", 10 ] ],
-    "allowed_category": [ "VEIL" ]
+    "anger_relations": [ [ "NETHER", 20 ], [ "FUNGUS", 10 ] ]
   },
   {
     "type": "mutation",
@@ -25,10 +24,10 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_LIGHT2" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_conjure_shadow_field", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -40,10 +39,10 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SMOKE" ],
     "changes_to": [ "SPELL_LOCKPICK2" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_conjure_shadow_field", 1 ], [ "arcana_blessing_conjure_lightburst", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -55,7 +54,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_LIGHT2" ],
     "changes_to": [ "SPELL_TELEPORT" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -63,7 +61,8 @@
       [ "arcana_blessing_conjure_lightburst", 1 ],
       [ "arcana_blessing_open_lock", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -76,7 +75,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_LOCKPICK2" ],
     "changes_to": [ "SPELL_PACIFY" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -85,7 +83,8 @@
       [ "arcana_blessing_open_lock", 1 ],
       [ "arcana_blessing_wall_force", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -97,7 +96,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_TELEPORT" ],
     "changes_to": [ "SPELL_CONSECRATE" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "spells_learned": [
@@ -107,7 +105,8 @@
       [ "arcana_blessing_wall_force", 1 ],
       [ "arcana_blessing_pacify_monsters", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -118,7 +117,6 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_PACIFY" ],
-    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "spells_learned": [
@@ -129,7 +127,8 @@
       [ "arcana_blessing_pacify_monsters", 1 ],
       [ "arcana_blessing_consecrate", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -140,10 +139,10 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_CLAIRVOYANCE2" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -155,10 +154,10 @@
     "purifiable": false,
     "prereqs": [ "SPELL_STRENGTH2" ],
     "changes_to": [ "SPELL_AGILE2" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -170,11 +169,11 @@
     "purifiable": false,
     "prereqs": [ "SPELL_CLAIRVOYANCE2" ],
     "changes_to": [ "SPELL_DAYLIGHT2" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ], [ "arcana_blessing_agility", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -186,7 +185,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_AGILE2" ],
     "changes_to": [ "SPELL_DRAINLIFE" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -195,7 +193,8 @@
       [ "arcana_blessing_agility", 1 ],
       [ "arcana_blessing_surge_adrenaline", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -207,7 +206,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_DAYLIGHT2" ],
     "changes_to": [ "SPELL_INVIS" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -217,7 +215,8 @@
       [ "arcana_blessing_surge_adrenaline", 1 ],
       [ "arcana_blessing_drain_life", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -228,7 +227,6 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_DRAINLIFE" ],
-    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -239,7 +237,8 @@
       [ "arcana_blessing_drain_life", 1 ],
       [ "arcana_blessing_illusion_cloak", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -250,10 +249,10 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_CLOUD" ],
-    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_confuse_monster", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -265,10 +264,10 @@
     "purifiable": false,
     "prereqs": [ "SPELL_CONFUSE2" ],
     "changes_to": [ "SPELL_LIGHTNING2" ],
-    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_confuse_monster", 1 ], [ "arcana_blessing_conjure_miasma", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -280,7 +279,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_CLOUD" ],
     "changes_to": [ "SPELL_FIRE2" ],
-    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -288,7 +286,8 @@
       [ "arcana_blessing_conjure_miasma", 1 ],
       [ "arcana_blessing_divine_storm", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -300,7 +299,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_LIGHTNING2" ],
     "changes_to": [ "SPELL_LIGHTNINGFIELD" ],
-    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -309,7 +307,8 @@
       [ "arcana_blessing_divine_storm", 1 ],
       [ "arcana_blessing_holy_flare", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -321,7 +320,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_FIRE2" ],
     "changes_to": [ "SPELL_PULSE" ],
-    "cancels": [ "SPELL_SUMMONFIEND" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -331,7 +329,8 @@
       [ "arcana_blessing_holy_flare", 1 ],
       [ "arcana_blessing_radiant_burst", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -343,7 +342,6 @@
     "purifiable": false,
     "category": [ "VEIL" ],
     "prereqs": [ "SPELL_LIGHTNINGFIELD" ],
-    "cancels": [ "SPELL_SUMMONFIEND" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
       [ "arcana_blessing_confuse_monster", 1 ],
@@ -353,7 +351,8 @@
       [ "arcana_blessing_radiant_burst", 1 ],
       [ "arcana_blessing_wave_destruction", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -364,10 +363,10 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_POISONARMOR2" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -379,10 +378,10 @@
     "purifiable": false,
     "prereqs": [ "SPELL_ACIDARMOR" ],
     "changes_to": [ "SPELL_ELECRESIST2" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -394,11 +393,11 @@
     "purifiable": false,
     "prereqs": [ "SPELL_POISONARMOR2" ],
     "changes_to": [ "SPELL_FLAMEARMOR2" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ], [ "arcana_blessing_ward_lightning", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -410,7 +409,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_ELECRESIST2" ],
     "changes_to": [ "SPELL_FROSTARMOR" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -419,7 +417,8 @@
       [ "arcana_blessing_ward_lightning", 1 ],
       [ "arcana_blessing_ward_flame", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -431,7 +430,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_FLAMEARMOR2" ],
     "changes_to": [ "SPELL_PSYSHIELD" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -441,7 +439,8 @@
       [ "arcana_blessing_ward_flame", 1 ],
       [ "arcana_blessing_ward_cold", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -452,7 +451,6 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_FROSTARMOR" ],
-    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -463,7 +461,8 @@
       [ "arcana_blessing_ward_cold", 1 ],
       [ "arcana_blessing_holy_ward", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -474,10 +473,10 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_SUMMONSKEL" ],
-    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_skeletal_dog", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -489,10 +488,10 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONDOG2" ],
     "changes_to": [ "SPELL_SUMMONCULUS" ],
-    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_skeletal_dog", 1 ], [ "arcana_blessing_summon_skeleton", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -504,7 +503,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONSKEL" ],
     "changes_to": [ "SPELL_SUMMONTHING" ],
-    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -512,7 +510,8 @@
       [ "arcana_blessing_summon_skeleton", 1 ],
       [ "arcana_blessing_summon_homunculus", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -524,7 +523,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONCULUS" ],
     "changes_to": [ "SPELL_BUGS" ],
-    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -533,7 +531,8 @@
       [ "arcana_blessing_summon_homunculus", 1 ],
       [ "arcana_blessing_summon_thing", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -545,7 +544,6 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONTHING" ],
     "changes_to": [ "SPELL_SUMMONVORTEX" ],
-    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -555,7 +553,8 @@
       [ "arcana_blessing_summon_thing", 1 ],
       [ "arcana_blessing_summon_giant_centipedes", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   },
   {
     "type": "mutation",
@@ -566,7 +565,6 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_BUGS" ],
-    "cancels": [ "SPELL_SUMMONWYRM" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [
@@ -577,6 +575,7 @@
       [ "arcana_blessing_summon_giant_centipedes", 1 ],
       [ "arcana_blessing_summon_vortices", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ]
+    "flags": [ "explorer_of_the_veil" ],
+    "allowed_category": [ "VEIL" ]
   }
 ]

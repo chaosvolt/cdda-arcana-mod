@@ -203,7 +203,7 @@
       ],
       "palettes": [ "mansion_palette_common", "mansion_palette_basement" ],
       "terrain": { "$": "t_carpet_red", "C": "t_carpet_red", "i": "t_carpet_red" },
-      "furniture": { "$": "f_safe_l", "F": "f_fireplace", "i": "f_candle_barrier" },
+      "furniture": { "$": "f_safe_l", "F": "f_fireplace", "i": "f_candle_barrier_playermade" },
       "items": {
         "(": { "item": "trash_cart", "chance": 30 },
         ".": { "item": "clutter_basement" },
