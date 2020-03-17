@@ -16,6 +16,20 @@
         "topic": "TALK_MISSION_FAILURE",
         "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
         "opinion": { "trust": -1, "value": -1, "anger": 1 }
+      },
+      {
+        "text": "It doesn't feel like it's working.  What am I doing wrong?",
+        "condition": {
+          "and": [
+            { "not": { "u_has_trait": "THRESH_VEIL" } },
+            { "u_has_trait_flag": "MUTATION_THRESHOLD" },
+            { "u_has_mission": "MISSION_HERMIT_AWAKEN_POWER" },
+            { "npc_has_trait": "PROF_CHALICE" }
+          ]
+        },
+        "topic": "TALK_MISSION_FAILURE",
+        "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
+        "opinion": { "trust": -1, "value": -1, "anger": 1 }
       }
     ]
   },

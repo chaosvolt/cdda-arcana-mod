@@ -19,7 +19,8 @@
     "description": "Power by any means.  The Sanguine Order believed the Dragonblood Sacrament would make them powerful enough to survive the cataclysm, to rule over man and monster alike.  That you have survived this long just might prove them right.",
     "valid": false,
     "purifiable": false,
-    "threshold": true
+    "threshold": true,
+    "allowed_category": [ "DRAGONBLOOD" ]
   },
   {
     "type": "mutation",
@@ -30,17 +31,9 @@
     "description": "Inhuman power has granted you the ability to manipulate your elemental nature, including guarding further against heat as well as suppressing your inner fire.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
-    "prereqs2": [ "ARCANA_FIREAFFINITY" ],
-    "changes_to": [
-      "SPELL_ACIDARMOR",
-      "SPELL_POISONARMOR2",
-      "SPELL_ELECRESIST2",
-      "SPELL_FLAMEARMOR2",
-      "SPELL_FROSTARMOR",
-      "SPELL_PSYSHIELD"
-    ],
+    "prereqs": [ "ARCANA_FIREAFFINITY" ],
     "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_elemental_sign", 1 ], [ "arcana_mark_suppression", 1 ] ]
   },
   {
@@ -52,9 +45,10 @@
     "description": "Inhuman power has granted you the abilities pertaining to your inhuman nature, including a strength-enhancing spell, along with the ability to guard against parasites or other hazards.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "prereqs": [ "ARCANA_TOXINIMMUNE" ],
     "leads_to": [ "SPELL_HUNT_DRAGONBLOOD" ],
-    "changes_to": [ "SPELL_STRENGTH2", "SPELL_CLAIRVOYANCE2", "SPELL_AGILE2", "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_might", 1 ], [ "arcana_mark_revenant_blood", 1 ] ]
   },
   {
@@ -66,9 +60,10 @@
     "description": "Inhuman power has granted you unnatural abilities, the power to conjure unholy flames and the power to summon ashen undead.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "prereqs": [ "ARCANA_DRAGONFIRE" ],
     "leads_to": [ "SPELL_SUMMONWYRM" ],
-    "changes_to": [ "SPELL_CONFUSE2", "SPELL_CLOUD", "SPELL_LIGHTNING2", "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_infernal_flame", 1 ], [ "arcana_mark_summon_fiend", 1 ] ]
   },
   {
@@ -83,7 +78,6 @@
     "prereqs": [ "SPELL_SUMMONFIEND" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "changes_to": [ "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_mark_summon_dark_wyrm", 1 ], [ "arcana_mark_summon_jabberwock", 1 ] ]
   },
   {
@@ -98,7 +92,6 @@
     "prereqs": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "changes_to": [ "SPELL_SMOKE", "SPELL_LIGHT2", "SPELL_LOCKPICK2", "SPELL_TELEPORT", "SPELL_PACIFY", "SPELL_CONSECRATE" ],
     "spells_learned": [ [ "arcana_mark_drain_life", 1 ], [ "arcana_mark_surge_adrenaline", 1 ] ]
   },
   {
