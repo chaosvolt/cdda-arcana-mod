@@ -485,16 +485,63 @@
   },
   {
     "type": "effect_type",
-    "id": "arcane_healing_side_effects",
-    "resist_effect": "talisman_warding",
-    "removes_effects": [ "bleed" ],
+    "id": "dragonbreath_side_effects",
     "max_duration": "1 s",
     "base_mods": {
-      "health_min": [ -5 ],
-      "health_chance": [ 1, 2 ],
-      "pain_min": [ 5 ],
-      "pain_chance": [ 10, 20 ],
-      "vomit_chance": [ 100, 200 ]
+      "hunger_min": [ 30 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "arcane_healing_staunch",
+    "removes_effects": [ "bleed" ],
+    "max_duration": "1 s"
+  },
+  {
+    "type": "effect_type",
+    "id": "arcane_healing_side_effects",
+    "resist_effect": "talisman_warding",
+    "name": [ "Healing Fatigue", "Healing Overexertion", "Healing Overexertion", "Healing Overexertion", "Healing Overexertion", "Healing Overexertion" ],
+    "desc": [
+      "Drawing upon power from Beyond to heal the body can overtax body and mind.  The effects don't feel very severe now, but it might be best to recover unless it's an emergency.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult."
+    ],
+    "max_intensity": 6,
+    "int_dur_factor": "12 h",
+    "base_mods": {
+      "health_min": [ -1 ],
+      "health_tick": [ 1800, 2000 ],
+      "stamina_min": [ -5 ],
+      "stamina_tick": [ 10, 12 ]
+    },
+    "scaling_mods": {
+      "health_min": [ -1, -0.8 ],
+      "stamina_min": [ -5 ],
+      "stamina_tick": [ -1, -0.8 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "arcane_pulse_side_effects",
+    "name": [ "Wave of Destruction Burnout" ],
+    "desc": [ "Human minds and bodies were not made to be a conduit for such destructive energy.  Overuse won't kill you, but will make it harder to focus on spellcasting." ],
+    "max_intensity": 6,
+    "int_dur_factor": "12 h",
+    "base_mods": {
+      "int_mod": [ -1 ],
+      "vomit_chance": [ 2000, 2400 ],
+      "pain_min": [ 5, 3 ],
+      "pain_chance": [ 1000, 1200 ]
+    },
+    "scaling_mods": {
+      "int_mod": [ -1.25 ],
+      "vomit_chance": [ -200, -240 ],
+      "stamina_min": [ -5 ],
+      "pain_chance": [ 100, 120 ]
     }
   },
   {
@@ -527,8 +574,8 @@
       "thirst_tick": [ 300 ],
       "health_min": [ -1 ],
       "health_tick": [ 600 ],
-      "stamina_min": [ -1 ],
-      "stamina_tick": [ 10 ]
+      "stamina_min": [ -5 ],
+      "stamina_tick": [ 5 ]
     }
   },
   {

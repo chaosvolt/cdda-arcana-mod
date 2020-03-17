@@ -53,10 +53,10 @@
   },
   {
     "type": "mutation",
-    "//": "ID retained to reduce redundancy and avoid load errors.  Note: value of Infernal Flame is 3, and value of Summon Fiend is 4.",
+    "//": "ID retained to reduce redundancy and avoid load errors.  Note: value of Infernal Flame is 2, and value of Summon Fiend is 4.",
     "id": "SPELL_SUMMONFIEND",
     "name": { "str": "Mark of Hellfire" },
-    "points": 7,
+    "points": 6,
     "description": "Inhuman power has granted you unnatural abilities, the power to conjure unholy flames and the power to summon ashen undead.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
