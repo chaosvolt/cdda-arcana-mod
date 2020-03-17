@@ -501,24 +501,34 @@
     "type": "effect_type",
     "id": "arcane_healing_side_effects",
     "resist_effect": "talisman_warding",
+    "name": [ "Healing Fatigue", "Healing Overexertion", "Healing Overexertion", "Healing Overexertion", "Healing Overexertion", "Healing Overexertion" ],
+    "desc": [
+      "Drawing upon power from Beyond to heal the body can overtax body and mind.  The effects don't feel very severe now, but it might be best to recover unless it's an emergency.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
+      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult."
+    ],
     "max_intensity": 6,
     "int_dur_factor": "12 h",
     "base_mods": {
       "health_min": [ -1 ],
-      "health_tick": [ 1800 ],
+      "health_tick": [ 1800, 2000 ],
       "stamina_min": [ -5 ],
-      "stamina_tick": [ 10 ]
+      "stamina_tick": [ 10, 12 ]
     },
     "scaling_mods": {
-      "health_min": [ -1 ],
-      "health_tick": [ -100 ],
+      "health_min": [ -1, -0.8 ],
       "stamina_min": [ -5 ],
-      "stamina_tick": [ -1 ]
+      "stamina_tick": [ -1, -0.8 ]
     }
   },
   {
     "type": "effect_type",
     "id": "arcane_pulse_side_effects",
+    "name": [ "Wave of Destruction Burnout" ],
+    "desc": [ "Human minds and bodies were not made to be a conduit for such destructive energy.  Overuse won't kill you, but will make it harder to focus on spellcasting." ],
     "max_intensity": 6,
     "int_dur_factor": "12 h",
     "base_mods": {
