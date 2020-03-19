@@ -80,7 +80,13 @@
         [ "chemistry_set", -1 ],
         [ "chemistry_set_basic", -1 ]
       ],
-      [ [ "fire", -1 ] ]
+      [
+        [ "torch_lit", -1 ],
+        [ "candle_lit", -1 ],
+        [ "oil_lamp_on", -1 ],
+        [ "candle_warding_active", -1 ],
+        [ "fire", -1 ]
+      ]
     ]
   },
   {

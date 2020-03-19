@@ -255,8 +255,9 @@
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_sacrifice", 6 ], [ "book_syncretism", 7 ] ],
     "autolearn": [ [ "magic", 8 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "result_mult": 5,
-    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
     "components": [
       [
         [ "vortex_stone", 1 ],
@@ -287,7 +288,8 @@
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 6 ] ],
     "autolearn": [ [ "magic", 7 ] ],
-    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ], [ [ "offering_chalice", -1 ] ] ],
     "components": [
       [
         [ "essence_blood", 3 ],
@@ -328,8 +330,8 @@
     "time": "15 m",
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 5 ] ],
-    "using": [ [ "arcana_essence_any", 10 ] ],
-    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ], [ [ "offering_chalice", -1 ] ], [ [ "fire", -1 ] ] ],
+    "using": [ [ "arcana_essence_any", 10 ], [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -380,7 +382,8 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_bloodmagic", 1 ] ],
     "result_mult": 3,
-    "tools": [ [ [ "blood_athame", -1 ] ], [ [ "fire", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
     "components": [ [ [ "essence", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },

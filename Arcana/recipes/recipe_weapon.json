@@ -268,17 +268,10 @@
     "time": "30 m",
     "book_learn": [ [ "book_sacrifice", 8 ] ],
     "autolearn": [ [ "magic", 10 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [
-      [ [ "book_sacrifice", -1 ] ],
-      [ [ "book_bloodmagic", -1 ] ],
-      [
-        [ "torch_lit", -1 ],
-        [ "candle_lit", -1 ],
-        [ "oil_lamp_on", -1 ],
-        [ "candle_warding_active", -1 ],
-        [ "fire", -1 ]
-      ],
+      [ [ "book_sacrifice", -1 ], [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ],
       [
         [ "holy_symbol", -1 ],
         [ "holy_symbol_wood", -1 ],
