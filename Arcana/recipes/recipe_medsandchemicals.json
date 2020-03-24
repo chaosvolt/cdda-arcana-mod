@@ -13,6 +13,7 @@
     "book_learn": [ [ "book_potioncraft", 0 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "components": [ [ [ "fat_tainted", 4 ], [ "bone_tainted", 1 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },
   {
@@ -28,6 +29,7 @@
     "book_learn": [ [ "book_potioncraft", 1 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_limestone", 1 ], [ "ash", 500 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },
   {
@@ -48,6 +50,7 @@
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "lead", 20 ], [ "bismuth", 25 ], [ "copper", 25 ], [ "tin", 20 ] ]
     ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },
   {
@@ -69,6 +72,7 @@
       [ [ "gold_small", 10 ], [ "silver_small", 20 ] ],
       [ [ "blood", 1 ], [ "rag_bloody", 3 ] ]
     ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },
   {
@@ -90,6 +94,7 @@
       [ [ "rag", 3 ], [ "medical_gauze", 1 ] ],
       [ [ "rose_hips", 1 ], [ "poppy_bud", 1 ], [ "bee_balm", 1 ], [ "triffid_queen_flower", 1 ] ]
     ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },
   {
@@ -109,7 +114,8 @@
       [ [ "speed_potion", 1 ] ],
       [ [ "strength_potion", 1 ] ],
       [ [ "charcoal", 1 ], [ "splinter", 4 ], [ "birchbark", 2 ], [ "pine_bough", 2 ] ]
-    ]
+    ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
   {
     "result": "dragonblood_mutagen",
@@ -139,6 +145,7 @@
         [ "meat_tainted", 5 ]
       ]
     ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   }
 ]

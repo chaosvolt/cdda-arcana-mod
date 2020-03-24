@@ -33,7 +33,7 @@
     "symbol": "!",
     "looks_like": "recipe_creepy",
     "color": "white",
-    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   },
   {
     "abstract": "totem_base",
@@ -47,6 +47,6 @@
     "price": 5000,
     "weight": "50 g",
     "volume": "250 ml",
-    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   }
 ]

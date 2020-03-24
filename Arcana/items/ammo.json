@@ -10,8 +10,7 @@
     "color": "blue",
     "count": 1,
     "ammo_type": "essence_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
-    "flags": [ "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ]
   },
   {
     "id": "essence_blood",
@@ -24,8 +23,7 @@
     "color": "red",
     "count": 1,
     "ammo_type": "essence_blood_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
-    "flags": [ "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ]
   },
   {
     "id": "essence_dull",
@@ -38,8 +36,7 @@
     "color": "dark_gray",
     "count": 1,
     "ammo_type": "essence_dull_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
-    "flags": [ "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ]
   },
   {
     "id": "essence_pure",
@@ -53,7 +50,6 @@
     "color": "cyan",
     "count": 1,
     "ammo_type": "essence_pure_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
-    "flags": [ "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ]
   }
 ]
