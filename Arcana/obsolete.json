@@ -1,5 +1,19 @@
 [
   {
+    "abstract": "scroll_base",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "scroll base" },
+    "weight": "415 g",
+    "volume": "250 ml",
+    "price": 2000,
+    "material": [ "paper" ],
+    "symbol": "!",
+    "looks_like": "recipe_creepy",
+    "color": "white",
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
     "type": "mutation",
     "id": "hermit_earned_trust_1",
     "name": "Hermit Trust 1",

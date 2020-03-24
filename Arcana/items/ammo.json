@@ -10,7 +10,8 @@
     "color": "blue",
     "count": 1,
     "ammo_type": "essence_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ]
+    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
+    "flags": [ "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "essence_blood",
@@ -23,21 +24,22 @@
     "color": "red",
     "count": 1,
     "ammo_type": "essence_blood_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ]
+    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
+    "flags": [ "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "essence_dull",
     "type": "AMMO",
     "category": "other",
     "name": { "str": "dull essence", "str_pl": "dull essence" },
-
     "description": "A dark, powdery bit of strange essence, formed from destructively \"consecrating\" a magic item.",
     "material": "essencemat",
     "symbol": "=",
     "color": "dark_gray",
     "count": 1,
     "ammo_type": "essence_dull_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ]
+    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
+    "flags": [ "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   },
   {
     "id": "essence_pure",
@@ -51,6 +53,7 @@
     "color": "cyan",
     "count": 1,
     "ammo_type": "essence_pure_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ]
+    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
+    "flags": [ "NO_INGEST", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
   }
 ]
