@@ -32,21 +32,11 @@
       [ "SKIN_MEDIUM", 100 ],
       [ "hair_white_short", 100 ],
       [ "PROF_CHALICE", 100 ],
-      [ "SPELL_STRENGTH", 100 ],
-      [ "SPELL_SHADOWSNAKES", 100 ],
-      [ "SPELL_STRENGTH2", 100 ],
-      [ "SPELL_CLAIRVOYANCE2", 100 ],
       [ "NIGHTVISION", 100 ],
       [ "MYOPIC", 100 ],
       [ "BADHEARING", 100 ],
       [ "LIGHTSTEP", 100 ],
       [ "BADKNEES", 100 ]
-    ],
-    "spells": [
-      { "id": "arcana_magic_insight", "level": 5 },
-      { "id": "arcana_magic_serpentine_shield", "level": 2 },
-      { "id": "arcana_blessing_clairvoyance", "level": 4 },
-      { "id": "arcana_blessing_might", "level": 2 }
     ]
   },
   {
