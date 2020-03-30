@@ -345,7 +345,7 @@
       { "item": "gloves_leather" },
       { "item": "socks" },
       { "item": "boots_hiking" },
-      { "item": "backpack" },
+      { "item": "satchel_eternity", "contents-item": "offering_mission_notes" },
       { "item": "glasses_eye" },
       { "item": "charm_bone" }
     ]
