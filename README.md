@@ -1,7 +1,9 @@
 # Arcana and Magic Items mod for Cataclysm: Dark Days Ahead
-Text and lore data yoinked from my old forum post for it on the CDDA forums, way back before I first PR'd it. Expect the content to be outdated, incomplete, and subject to change. :V 
+Arcana and Magic Items mod, formerly an in-repo mod during 0.C Experimental, and now maintained as a third-party repository by its author. Continually updating and expanding on its mechanics, expect regular updates.
 
-This is a mod idea I cooked up a long time ago, first mentioned the idea over on the Drawing Board in the old defunct forums.
+Note that the key for spellcasting is not bound by default in CDDA, and must be set by the user. I would personally suggest `]` as a good unused key, owing to its position near the bionics and mutation keys. Launcher users are advised to update this mod via deleting and re-installing in the launcher's mods section after updating their game, as the `update game` function does not touch third-party mods.
+
+Focused principally on magical items as the name implies (the mod predating the current spell mechanics), with proper spells being a valuable, powerful tool that demands hunting monsters and learning of the Beyond moreso than simple scavenging. Magic is a primal, recently-developed resource tied to otherworldly monsters and unearthly phenomena, with those who came before leaving an impression on the region that can be uncovered through exploration, or via pursuing missions and interactions involving the handful of survivors still around by the time of the Cataclysm.
 
 ## Arcana
 * A new skill, which I'm surprised I got working. It's used as the primary crafting skill for magical items. Thanks to a PR by BevapDin, magic weapons can now use this skill.
