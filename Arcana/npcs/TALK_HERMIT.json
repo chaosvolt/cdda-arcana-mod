@@ -47,6 +47,15 @@
     },
     "responses": [
       {
+        "text": "[MISSION] I was sent here on behalf of the Cleansing Flame.  I was informed that you know of the Keepers?",
+        "topic": "TALK_HERMIT_CF_REP_MISSION",
+        "effect": [
+          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
+          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+        ]
+        "condition": { "u_has_mission": "MISSION_HERMIT_BECOME_PARAGON" }
+      },
+      {
         "text": "Strange dreams and visions led me here.",
         "topic": "TALK_HERMIT_SENT_DREAM",
         "condition": { "and": [ { "not": { "u_has_effect": "hermit_trust_1" } }, { "u_has_effect": "sent_to_hermit" } ] }
@@ -161,6 +170,30 @@
       },
       { "switch": true, "default": true, "text": "Anything I can help with?", "topic": "TALK_HERMIT_MISSION_NONE" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_CF_REP_MISSION",
+    "dynamic_line": {
+      "u_has_trait": "THRESH_VEIL",
+      "yes": "So you, Chosen, have allied with the hunters.  The oath may be immortal, but I am hardly fit to be called a servant of He From Beyond The Veil, not anymore.  What can you tell me of their intentions?",
+      "no": "I was not expecting they would find me so easily.  My days as a Keeper are long gone, I have nothing left in my name but old books and what nature offers us all.  For what purpose do they hunt an old man?"
+    },
+    "speaker_effect": { "condition": { "not": { "npc_has_item": "book_sacrifice" } }, "effect": { "npc_class_change": "NC_HERMIT" } },
+    "responses": [
+      {
+        "switch": true,
+        "text": "They seek the ",
+        "topic": "TALK_HERMIT_CF_REP_MISSION_CHOSEN",
+        "condition": { "u_has_trait": "THRESH_VEIL" }
+      },
+      {
+        "switch": true,
+        "text": "I am ",
+        "topic": "TALK_HERMIT_CF_REP_MISSION_CHALICE",
+        "condition": { "u_has_trait": "PROF_CHALICE" }
+      },
     ]
   },
   {

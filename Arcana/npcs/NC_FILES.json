@@ -364,8 +364,7 @@
       { "item": "arcanemap", "prob": 50 },
       { "item": "book_sacrifice" },
       { "item": "offering_chalice" },
-      { "group": "magic_consumables", "count": [ 2, 4 ] },
-      { "item": "offering_mission_notes" }
+      { "group": "magic_consumables", "count": [ 2, 4 ] }
     ]
   },
   {
