@@ -33,7 +33,7 @@
         "monster_spawn_count": 1,
         "monster_spawn_radius": 1,
         "monster_spawn_group": "GROUP_ARCHON",
-        "convection_temperature_mod": -100
+        "convection_temperature_mod": -75
       }
     ],
     "half_life": "1 seconds",

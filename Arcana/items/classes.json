@@ -3,8 +3,8 @@
     "abstract": "arcana_note_base",
     "type": "GENERIC",
     "category": "books",
-    "name": "arcana note base",
-    "weight": 3,
+    "name": { "str": "arcana note base" },
+    "weight": "3 g",
     "material": [ "paper" ],
     "symbol": ",",
     "looks_like": "survnote",
@@ -14,53 +14,39 @@
   {
     "abstract": "spell_base",
     "type": "TOOL",
-    "name": "magic sign base",
+    "name": { "str": "magic sign base" },
     "material": [ "essencemat" ],
     "symbol": ",",
     "drop_action": { "type": "emit_actor" },
     "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
   },
   {
-    "abstract": "scroll_base",
-    "type": "TOOL",
-    "category": "tools",
-    "name": "scroll base",
-    "weight": 415,
-    "volume": 1,
-    "price": 2000,
-    "material": [ "paper" ],
-    "symbol": "!",
-    "looks_like": "recipe_creepy",
-    "color": "white",
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
     "abstract": "scroll_magic_base",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "category": "tools",
-    "name": "scroll base",
-    "weight": 415,
-    "volume": 1,
+    "name": { "str": "scroll base" },
+    "weight": "415 g",
+    "volume": "250 ml",
     "price": 2000,
     "material": [ "paper" ],
     "symbol": "!",
     "looks_like": "recipe_creepy",
     "color": "white",
-    "flags": [ "NO_SALVAGE", "NO_INGEST" ]
+    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   },
   {
     "abstract": "totem_base",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
-    "name": "magic seal base",
+    "name": { "str": "magic seal base" },
     "category": "tools",
     "material": [ "essencemat" ],
     "symbol": ",",
     "looks_like": "petrified_eye",
     "price": 5000,
-    "weight": 50,
-    "volume": 1,
-    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "NO_INGEST" ]
+    "weight": "50 g",
+    "volume": "250 ml",
+    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   }
 ]

@@ -80,7 +80,15 @@
         [ "chemistry_set", -1 ],
         [ "chemistry_set_basic", -1 ]
       ],
-      [ [ "fire", -1 ] ]
+      [
+        [ "ref_lighter_on", -1 ],
+        [ "torch_lit", -1 ],
+        [ "candle_lit", -1 ],
+        [ "gasoline_lantern_on", -1 ],
+        [ "oil_lamp_on", -1 ],
+        [ "candle_warding_active", -1 ],
+        [ "fire", -1 ]
+      ]
     ]
   },
   {
@@ -88,7 +96,15 @@
     "type": "requirement",
     "//": "Tools and components for writing scrolls, old-school style.  No ink is used, hence no consuming charcoal markers.",
     "tools": [
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ], [ "candle_warding_active", -1 ], [ "fire", -1 ] ],
+      [
+        [ "ref_lighter_on", -1 ],
+        [ "torch_lit", -1 ],
+        [ "candle_lit", -1 ],
+        [ "gasoline_lantern_on", -1 ],
+        [ "oil_lamp_on", -1 ],
+        [ "candle_warding_active", -1 ],
+        [ "fire", -1 ]
+      ],
       [ [ "survival_marker", -1 ], [ "feather", -1 ] ]
     ],
     "components": [ [ [ "scroll_blank", 1 ] ] ]
@@ -98,7 +114,15 @@
     "type": "requirement",
     "//": "This is used for recipes where an existing magical scroll is altered.",
     "tools": [
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ], [ "candle_warding_active", -1 ], [ "fire", -1 ] ],
+      [
+        [ "ref_lighter_on", -1 ],
+        [ "torch_lit", -1 ],
+        [ "candle_lit", -1 ],
+        [ "gasoline_lantern_on", -1 ],
+        [ "oil_lamp_on", -1 ],
+        [ "candle_warding_active", -1 ],
+        [ "fire", -1 ]
+      ],
       [ [ "survival_marker", -1 ], [ "feather", -1 ] ]
     ]
   },
@@ -114,7 +138,15 @@
     "type": "requirement",
     "//": "Tools and components for writing down essential elements of an arcane book for tool use.  No ink is used, hence no consuming charcoal markers.",
     "tools": [
-      [ [ "torch_lit", -1 ], [ "candle_lit", -1 ], [ "oil_lamp_on", -1 ], [ "candle_warding_active", -1 ], [ "fire", -1 ] ],
+      [
+        [ "ref_lighter_on", -1 ],
+        [ "torch_lit", -1 ],
+        [ "candle_lit", -1 ],
+        [ "gasoline_lantern_on", -1 ],
+        [ "oil_lamp_on", -1 ],
+        [ "candle_warding_active", -1 ],
+        [ "fire", -1 ]
+      ],
       [ [ "survival_marker", -1 ], [ "feather", -1 ] ]
     ],
     "components": [ [ [ "paper", 20 ] ], [ [ "arcana_essence_any", 1, "LIST" ] ] ]

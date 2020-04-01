@@ -14,68 +14,63 @@
   {
     "type": "mutation",
     "id": "THRESH_DRAGONBLOOD",
-    "name": "Dragonblood",
+    "name": { "str": "Dragonblood" },
     "points": 1,
     "description": "Power by any means.  The Sanguine Order believed the Dragonblood Sacrament would make them powerful enough to survive the cataclysm, to rule over man and monster alike.  That you have survived this long just might prove them right.",
     "valid": false,
     "purifiable": false,
-    "threshold": true
+    "threshold": true,
+    "allowed_category": [ "DRAGONBLOOD" ]
   },
   {
     "type": "mutation",
     "//": "Note: value of Elemental Sign is 5, and value of Suppression is 2.",
     "id": "SPELL_EMBERS_DRAGONBLOOD",
-    "name": "Mark of Embers",
+    "name": { "str": "Mark of Embers" },
     "points": 7,
     "description": "Inhuman power has granted you the ability to manipulate your elemental nature, including guarding further against heat as well as suppressing your inner fire.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
-    "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
-    "prereqs2": [ "ARCANA_FIREAFFINITY" ],
-    "changes_to": [
-      "SPELL_ACIDARMOR",
-      "SPELL_POISONARMOR2",
-      "SPELL_ELECRESIST2",
-      "SPELL_FLAMEARMOR2",
-      "SPELL_FROSTARMOR",
-      "SPELL_PSYSHIELD"
-    ],
+    "prereqs": [ "ARCANA_FIREAFFINITY" ],
     "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_elemental_sign", 1 ], [ "arcana_mark_suppression", 1 ] ]
   },
   {
     "type": "mutation",
     "//": "Note: value of Might is 5, and value of Revenant Blood is 4.",
     "id": "SPELL_INSTINCT_DRAGONBLOOD",
-    "name": "Mark of Instinct",
+    "name": { "str": "Mark of Instinct" },
     "points": 9,
     "description": "Inhuman power has granted you the abilities pertaining to your inhuman nature, including a strength-enhancing spell, along with the ability to guard against parasites or other hazards.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "prereqs": [ "ARCANA_TOXINIMMUNE" ],
     "leads_to": [ "SPELL_HUNT_DRAGONBLOOD" ],
-    "changes_to": [ "SPELL_STRENGTH2", "SPELL_CLAIRVOYANCE2", "SPELL_AGILE2", "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_might", 1 ], [ "arcana_mark_revenant_blood", 1 ] ]
   },
   {
     "type": "mutation",
-    "//": "ID retained to reduce redundancy and avoid load errors.  Note: value of Infernal Flame is 3, and value of Summon Fiend is 4.",
+    "//": "ID retained to reduce redundancy and avoid load errors.  Note: value of Infernal Flame is 2, and value of Summon Fiend is 4.",
     "id": "SPELL_SUMMONFIEND",
-    "name": "Mark of Hellfire",
-    "points": 7,
+    "name": { "str": "Mark of Hellfire" },
+    "points": 6,
     "description": "Inhuman power has granted you unnatural abilities, the power to conjure unholy flames and the power to summon ashen undead.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "prereqs": [ "ARCANA_DRAGONFIRE" ],
     "leads_to": [ "SPELL_SUMMONWYRM" ],
-    "changes_to": [ "SPELL_CONFUSE2", "SPELL_CLOUD", "SPELL_LIGHTNING2", "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_infernal_flame", 1 ], [ "arcana_mark_summon_fiend", 1 ] ]
   },
   {
     "type": "mutation",
     "//": "ID retained to reduce redundancy and avoid load errors.  Note: value of Summon Dark Wyrm is 5, and value of Summon Jabberwock is 6",
     "id": "SPELL_SUMMONWYRM",
-    "name": "Mark of The Beyond",
+    "name": { "str": "Mark of The Beyond" },
     "points": 11,
     "description": "Inhuman power has granted you unnatural abilities, allowing you to summon strange creatures woven from the Beyond.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
@@ -83,14 +78,13 @@
     "prereqs": [ "SPELL_SUMMONFIEND" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "changes_to": [ "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_mark_summon_dark_wyrm", 1 ], [ "arcana_mark_summon_jabberwock", 1 ] ]
   },
   {
     "type": "mutation",
     "//": "Note: Value of Drain Life is 6, and value of Surge of Adrenaline is also 2.",
     "id": "SPELL_HUNT_DRAGONBLOOD",
-    "name": "Mark of The Hunt",
+    "name": { "str": "Mark of The Hunt" },
     "points": 8,
     "description": "Inhuman power has granted you abilities to further hone your lethality, in the form of life-draining magic and the ability to spark a surge of adrenaline at will.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
@@ -98,13 +92,12 @@
     "prereqs": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "changes_to": [ "SPELL_SMOKE", "SPELL_LIGHT2", "SPELL_LOCKPICK2", "SPELL_TELEPORT", "SPELL_PACIFY", "SPELL_CONSECRATE" ],
     "spells_learned": [ [ "arcana_mark_drain_life", 1 ], [ "arcana_mark_surge_adrenaline", 1 ] ]
   },
   {
     "type": "mutation",
     "id": "ARCANA_SCALYPATCHES",
-    "name": "Scaly Patches",
+    "name": { "str": "Scaly Patches" },
     "points": 1,
     "visibility": 5,
     "ugliness": 3,
@@ -121,7 +114,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONSCALES",
-    "name": "Draconic Scales",
+    "name": { "str": "Draconic Scales" },
     "points": 2,
     "visibility": 10,
     "ugliness": 3,
@@ -150,7 +143,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_FIREAFFINITY",
-    "name": "Elemental Affinity",
+    "name": { "str": "Elemental Affinity" },
     "points": 4,
     "bodytemp_modifiers": [ -2500, 0 ],
     "description": "Your body feels abnormally comfortable around heat and flame, letting you tolerate its heat for longer, and reducing damage from fire.",
@@ -164,7 +157,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_TOXINIMMUNE",
-    "name": "Metabolic Resilience",
+    "name": { "str": "Metabolic Resilience" },
     "points": 5,
     "description": "Your body has adapted to prey upon the new life that infests this world.  It's not powerful enough to deal with undead flesh, but mutated meat is more tolerable to your system.  Albeit, not to your palette.",
     "valid": false,
@@ -176,7 +169,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_INNERHEAT",
-    "name": "Inner Heat",
+    "name": { "str": "Inner Heat" },
     "points": 1,
     "mixed_effect": true,
     "bodytemp_modifiers": [ 100, 125 ],
@@ -196,7 +189,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_INNERFIRE",
-    "name": "Inner Fire",
+    "name": { "str": "Inner Fire" },
     "points": 2,
     "mixed_effect": true,
     "bodytemp_modifiers": [ 125, 250 ],
@@ -219,7 +212,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONFIRE",
-    "name": "Dragonfire",
+    "name": { "str": "Dragonfire" },
     "points": 5,
     "mixed_effect": true,
     "bodytemp_modifiers": [ 0, 500 ],
@@ -246,7 +239,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_SCALYWINGS",
-    "name": "Scaly Wings",
+    "name": { "str": "Scaly Wings" },
     "points": -1,
     "visibility": 4,
     "ugliness": 2,
@@ -265,7 +258,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONWINGS",
-    "name": "Draconic Wings",
+    "name": { "str": "Draconic Wings" },
     "points": 1,
     "visibility": 4,
     "ugliness": 2,
@@ -285,7 +278,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONCLAWS",
-    "name": "Curved Claws",
+    "name": { "str": "Curved Claws" },
     "points": 2,
     "visibility": 3,
     "ugliness": 2,
@@ -301,7 +294,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONTEETH",
-    "name": "Pointed Teeth",
+    "name": { "str": "Pointed Teeth" },
     "points": 2,
     "visibility": 2,
     "ugliness": 3,
@@ -322,7 +315,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONMUZZLE",
-    "name": "Draconic Muzzle",
+    "name": { "str": "Draconic Muzzle" },
     "points": -2,
     "visibility": 5,
     "ugliness": 4,
@@ -348,7 +341,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_SCALYLEGS",
-    "name": "Scaly Hind Limbs",
+    "name": { "str": "Scaly Hind Limbs" },
     "points": -2,
     "visibility": 5,
     "ugliness": 2,
@@ -380,7 +373,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONLEGS",
-    "name": "Draconic Hind Limbs",
+    "name": { "str": "Draconic Hind Limbs" },
     "points": 1,
     "visibility": 5,
     "ugliness": 2,
@@ -411,7 +404,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_SCALYTAIL",
-    "name": "Scaly Tail",
+    "name": { "str": "Scaly Tail" },
     "points": 2,
     "visibility": 8,
     "ugliness": 2,
@@ -435,7 +428,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONTAIL",
-    "name": "Draconic Tail",
+    "name": { "str": "Draconic Tail" },
     "points": 3,
     "visibility": 8,
     "ugliness": 3,
@@ -459,7 +452,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_DRAGONHORNS",
-    "name": "Swept-Back Horns",
+    "name": { "str": "Swept-Back Horns" },
     "points": 3,
     "visibility": 6,
     "ugliness": 1,
@@ -482,7 +475,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_PLATES",
-    "name": "Draconic Plating",
+    "name": { "str": "Draconic Plating" },
     "points": 6,
     "visibility": 8,
     "ugliness": 3,
@@ -501,7 +494,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_INSTINCT",
-    "name": "Savage Instinct",
+    "name": { "str": "Savage Instinct" },
     "points": 8,
     "mixed_effect": true,
     "description": "Your very mindset has been permanently altered, marked by predatory drives unlike anything that belongs in this world.  Killing has become second nature to you now, but mundane wildlife seem to pick up on your unnatural nature.  You also find it harder to focus on certain crafting tasks, though at least your wits are still intact.",

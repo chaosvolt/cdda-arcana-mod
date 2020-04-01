@@ -241,6 +241,24 @@
   },
   {
     "type": "overmap_terrain",
+    "id": "new_anomaly_t",
+    "name": "strange pond",
+    "sym": ".",
+    "color": "blue",
+    "see_cost": 2,
+    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "new_anomaly_w",
+    "name": "unknown rock formation",
+    "sym": ".",
+    "color": "light_gray",
+    "see_cost": 2,
+    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
     "id": "arcana_hermitage_1",
     "name": "odd house",
     "sym": "v",

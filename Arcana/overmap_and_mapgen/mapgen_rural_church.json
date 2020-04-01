@@ -58,18 +58,23 @@
         ",,,,,,,,,,,,,,,,,,,,,,,,",
         ",,,,,,,||||||++||||||,,,",
         ",,,,,,,|,,,,,,,,,,,,|,,,",
-        ",,,,,,,|,mmmmmmmmmm,|,,,",
-        ",,,,,,,|,mmmmmmmmmm,|,,,",
+        ",,,,,,,|,MMMMMMMMMM,|,,,",
+        ",,,,,,,|,MMMMMMMMMM,|,,,",
         ",,,,,,,|,,,,,,,,,,,,|,,,",
-        ",,,,,,,|,mmmmmmmmmm,|,,,",
-        ",,,,,,,|,mmmmmmmmmm,|,,,",
+        ",,,,,,,|,nnnnnnnnnn,|,,,",
+        ",,,,,,,|,NNNNNNNNNN,|,,,",
         ",,,,,,,|,,,,,,,,,,,,|,,,",
         ",,,,,,,||||||||||||||,,,",
         ",,,,,,,,,,,,,,,,,,,,,,,,",
         ",,,,,,,,,,,,,#,,#,,,,,,,"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": { "^": "t_pit", "|": "t_chickenwire_fence", "+": "t_chickenwire_gate_c" },
+      "terrain": { "^": "t_pit", "|": "t_chickenwire_fence", "+": "t_chickenwire_gate_c", "M": "t_dirt", "N": "t_dirt", "n": "t_dirt" },
+      "sealed_item": {
+        "M": { "item": { "item": "seed_buckwheat" }, "furniture": "f_plant_seedling" },
+        "n": { "item": { "item": "seed_canola" }, "furniture": "f_plant_seedling" },
+        "N": { "item": { "item": "seed_thyme" }, "furniture": "f_plant_seedling" }
+      },
       "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 0, 19 ], "y": [ 4, 23 ] } ]
     }
   },
@@ -97,7 +102,7 @@
         ",u,,,,,,,,,,,,,,,,,,,,##",
         ",u,,,,,,,,,,,,,,,,,,,,#n",
         ",u,,,,,,,,,,,,,,,,,,,,#.",
-        ",u,,,,,,,,,,,,,,,,,,,,#b",
+        ",u,,,,,,,,,,,,,,,,,,,,#.",
         ",^,,,,,,,,,,,,,,,,,,,,##",
         ",^,,,,,,,,,,,,,,,,,,,,,,",
         ",^,,,,,,,,,,,,,,,,,,,,,,",
@@ -136,7 +141,7 @@
         "#..#p.p.p.p.p.RRRR.1,,u,",
         "#+##p.p.p.p.p....#2#,,u,",
         "...#3##21##3#.ppp#,,,,u,",
-        ".CC#,##,,##,+....3,,,,u,",
+        "bCC#,##,,##,+....3,,,,u,",
         "####,,,,,,,,#pppp#,,,,^,",
         ",,,,,,,,,,,,##21##,,,,^,",
         ",,,,,,,,,,,,,#,,#,,,,,^,",
@@ -157,7 +162,10 @@
       "furniture": { "{": "f_wardrobe", "I": "f_arcane_candlestick", "l": "f_locker", "r": "f_canvas_wall", "x": "f_canvas_door" },
       "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "cleansing_flame", "x": [ 0, 19 ], "y": [ 0, 19 ] } ],
       "faction_owner": [ { "id": "cleansing_flame", "x": [ 4, 16 ], "y": [ 0, 18 ] } ],
-      "items": { "p": { "item": "bed", "chance": 25 }, "l": [ { "item": "gear_survival", "chance": 25 }, { "item": "gear_survival", "chance": 25 } ] },
+      "items": {
+        "p": { "item": "bed", "chance": 25 },
+        "l": [ { "item": "gear_survival", "chance": 25 }, { "item": "gear_survival", "chance": 25 } ]
+      },
       "place_loot": [
         { "group": "cleansing_flame_books", "x": 18, "y": [ 9, 10 ], "chance": 50, "repeat": 5 },
         { "group": "standing_stones_libation", "x": 15, "y": [ 9, 10 ], "chance": 100 },
@@ -279,7 +287,7 @@
         "                        ",
         "                        "
       ],
-      "terrain": { "#": "t_rock_wall_half", "_": "t_rock_floor_no_roof" }
+      "terrain": { "#": "t_rock_wall_half", "_": "t_rock_roof" }
     }
   },
   {
@@ -315,7 +323,7 @@
         "                        ",
         "                        "
       ],
-      "terrain": { "#": "t_rock_wall_half", "_": "t_rock_floor_no_roof" }
+      "terrain": { "#": "t_rock_wall_half", "_": "t_rock_roof" }
     }
   }
 ]

@@ -2,7 +2,7 @@
   {
     "type": "mutation",
     "id": "MARTIAL_ARTS_CF",
-    "name": "Path of Sword and Hammer",
+    "name": { "str": "Path of Sword and Hammer" },
     "points": 3,
     "description": "You have been trained in Via Gladium et Malleo, a weapon art focused on preserving momentum and fighting multiple opponents, using your fury in different ways depending on your weapon of choice.",
     "initial_ma_styles": [ "style_cleansingflame" ],
@@ -11,7 +11,7 @@
   {
     "type": "mutation",
     "id": "PROF_CLEANSINGFLAME",
-    "name": "Cleansing Flame",
+    "name": { "str": "Cleansing Flame" },
     "points": 0,
     "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renegade, wherever your loyalties now lie, your past may still be useful in the future.",
     "valid": false,
@@ -36,7 +36,7 @@
   {
     "type": "mutation",
     "id": "PROF_CLEANSINGFLAME2",
-    "name": "Cleansing Flame",
+    "name": { "str": "Cleansing Flame" },
     "points": 0,
     "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renegade, wherever your loyalties now lie, your past may still be useful in the future.",
     "valid": false,
@@ -61,7 +61,7 @@
   {
     "type": "mutation",
     "id": "PROF_SANGUINE",
-    "name": "Sanguinist",
+    "name": { "str": "Sanguinist" },
     "points": 0,
     "description": "You were sworn into an order known as the Sanguine Order.  Infamous and feared as you were among those who studied in secret, your past may still be useful in the future.",
     "valid": false,
@@ -73,7 +73,7 @@
   {
     "type": "mutation",
     "id": "PROF_CHALICE",
-    "name": "Keeper of The Oath",
+    "name": { "str": "Keeper of The Oath" },
     "points": 0,
     "description": "You were sworn into an order known as the Keepers of The Oath.  Whether or not He From Beyond The Veil still guides you, the oath you swore is eternal, and your past may still be useful in the future.",
     "valid": false,
@@ -94,7 +94,7 @@
   {
     "type": "mutation",
     "id": "PROF_ARCANIST",
-    "name": "Arcanist",
+    "name": { "str": "Arcanist" },
     "points": 0,
     "description": "Though you studied the Beyond, you weren't directly associated with the major groups to gain infamy among your fellow scholars.  Still, your familiarity with the arcane may prove useful someday.",
     "valid": false,
@@ -105,7 +105,7 @@
   {
     "type": "mutation",
     "id": "PROF_ARCANIST2",
-    "name": "Arcanist",
+    "name": { "str": "Arcanist" },
     "points": 0,
     "description": "Though you studied the Beyond, you weren't directly associated with the major groups to gain infamy among your fellow scholars.  Still, your familiarity with the arcane may prove useful someday.",
     "valid": false,
@@ -116,7 +116,7 @@
   {
     "type": "mutation",
     "id": "BGSS_CF_1",
-    "name": "Survivor Story",
+    "name": { "str": "Survivor Story" },
     "points": 0,
     "description": "This NPC could tell you about how they survived the cataclysm",
     "player_display": false,
@@ -128,7 +128,7 @@
   {
     "type": "mutation",
     "id": "BGSS_CF_2",
-    "name": "Survivor Story",
+    "name": { "str": "Survivor Story" },
     "points": 0,
     "description": "This NPC could tell you about how they survived the cataclysm",
     "player_display": false,
@@ -140,7 +140,7 @@
   {
     "type": "mutation",
     "id": "BGSS_CF_3",
-    "name": "Survivor Story",
+    "name": { "str": "Survivor Story" },
     "points": 0,
     "description": "This NPC could tell you about how they survived the cataclysm",
     "player_display": false,
@@ -152,7 +152,7 @@
   {
     "type": "mutation",
     "id": "BGSS_CF_4",
-    "name": "Survivor Story",
+    "name": { "str": "Survivor Story" },
     "points": 0,
     "description": "This NPC could tell you about how they survived the cataclysm",
     "player_display": false,
@@ -164,7 +164,7 @@
   {
     "type": "mutation",
     "id": "BGSS_CF_5",
-    "name": "Survivor Story",
+    "name": { "str": "Survivor Story" },
     "points": 0,
     "description": "This NPC could tell you about how they survived the cataclysm",
     "player_display": false,
@@ -176,7 +176,7 @@
   {
     "type": "mutation",
     "id": "BGSS_BLOOD_MAGE_1",
-    "name": "Survivor Story",
+    "name": { "str": "Survivor Story" },
     "points": 0,
     "description": "This NPC could tell you about how they survived the cataclysm",
     "player_display": false,
@@ -188,7 +188,7 @@
   {
     "type": "mutation",
     "id": "BGSS_BLOOD_MAGE_2",
-    "name": "Survivor Story",
+    "name": { "str": "Survivor Story" },
     "points": 0,
     "description": "This NPC could tell you about how they survived the cataclysm",
     "player_display": false,
@@ -200,7 +200,7 @@
   {
     "type": "mutation",
     "id": "CF_DEACON",
-    "name": "Deacon Marker",
+    "name": { "str": "Deacon Marker" },
     "points": 0,
     "description": "This trait marks The Deacon, used for certain dialog checks to keep things working right.  Seeing this is probably a bug.",
     "player_display": false,
@@ -210,7 +210,7 @@
   {
     "type": "mutation",
     "id": "BGSS_CF_FILTER",
-    "name": "Background Story Filter",
+    "name": { "str": "Background Story Filter" },
     "points": 0,
     "description": "This exists so that mage hunter NPCs spawned after Sofia's mission, if they end up recruited in the future and generate certain background stories, will refer to linking up with Johnathan instead of Sofia.",
     "player_display": false,
@@ -220,7 +220,7 @@
   {
     "type": "mutation",
     "id": "FIX_CF_GM",
-    "name": "Fix Jonathan",
+    "name": { "str": "Fix Jonathan" },
     "points": 0,
     "description": "This trait ensures that old versions of this NPC, on being able to access the mission chain, only versions citing the correct starter mission will be able to offer missions.  The old versions cited the wrong initial mission, turning what was supposed to be a clever compatibility feature into a terrible mistake.",
     "player_display": false,
@@ -230,7 +230,7 @@
   {
     "type": "mutation",
     "id": "CF_AUX_MARKER_1",
-    "name": "Auxiliary Marker 1",
+    "name": { "str": "Auxiliary Marker 1" },
     "points": 0,
     "description": "This is used to designate that the NPCs spawned with this are from the Old Guard resolution for Sofia's fourth mission.",
     "player_display": false,
@@ -240,9 +240,19 @@
   {
     "type": "mutation",
     "id": "CF_AUX_MARKER_2",
-    "name": "Auxiliary Marker 2",
+    "name": { "str": "Auxiliary Marker 2" },
     "points": 0,
     "description": "This is used to designate that the NPCs spawned with this are from the Free Merchants resolution for Sofia's fourth mission.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "CF_AUX_MARKER_3",
+    "name": { "str": "Auxiliary Marker 3" },
+    "points": 0,
+    "description": "This is used to designate that the NPCs spawned with this are from the Scavenger Mercenary resolution for Sofia's fourth mission.",
     "player_display": false,
     "valid": false,
     "purifiable": false

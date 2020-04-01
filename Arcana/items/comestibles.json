@@ -4,10 +4,10 @@
     "type": "COMESTIBLE",
     "comestible_type": "DRINK",
     "category": "drugs",
-    "name": "black potion",
+    "name": { "str": "black potion", "str_pl": "black potion" },
     "description": "A strange black liquid that smells like death itself.  The first step towards creating the elixir of life, allegedly.  Drinking this will numb the body greatly, but leave you a bit sluggish.",
-    "weight": 300,
-    "volume": 1,
+    "weight": "300 g",
+    "volume": "250 ml",
     "price": 300,
     "phase": "liquid",
     "container": "bottle_glass",
@@ -21,17 +21,17 @@
       "activation_message": "You drink the potion and feel a strange numbness spread through your body.",
       "effects": [ { "id": "potion_numbness", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "strength_potion",
     "type": "COMESTIBLE",
     "comestible_type": "DRINK",
     "category": "drugs",
-    "name": "white potion",
+    "name": { "str": "white potion", "str_pl": "white potion" },
     "description": "A strange white liquid with a scent that makes your nose itch.  The second step towards creating the elixir of life, allegedly.  Drinking this will strengthen the body, at the cost of minor pain and other side effects.",
-    "weight": 300,
-    "volume": 1,
+    "weight": "300 g",
+    "volume": "250 ml",
     "price": 400,
     "phase": "liquid",
     "container": "bottle_glass",
@@ -45,17 +45,17 @@
       "activation_message": "You drink the potion and feel wicked power spread through your body.",
       "effects": [ { "id": "potion_strength", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "speed_potion",
     "type": "COMESTIBLE",
     "comestible_type": "DRINK",
     "category": "drugs",
-    "name": "yellow potion",
+    "name": { "str": "yellow potion", "str_pl": "yellow potion" },
     "description": "A strange yellow liquid with an intoxicating smell to it.  The third step towards creating the elixir of life, allegedly.  Drinking this will enhance your speed and dexterity, but it won't be a pleasant experience.",
-    "weight": 300,
-    "volume": 1,
+    "weight": "300 g",
+    "volume": "250 ml",
     "price": 700,
     "phase": "liquid",
     "container": "bottle_glass",
@@ -69,17 +69,17 @@
       "activation_message": "You drink the potion and feel a sudden tension spread through your body.",
       "effects": [ { "id": "potion_speed", "duration": 900 } ]
     },
-    "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "healing_potion",
     "type": "COMESTIBLE",
     "comestible_type": "DRINK",
     "category": "drugs",
-    "name": "red potion",
+    "name": { "str": "red potion", "str_pl": "red potion" },
     "description": "A strange reddish liquid that gives off a sweet smell.  The elixir of life, or merely a mimicry?  Drinking this will cure a number of things, but can't mend existing damage.  It can heal bleeding, stave off infection, and purge some diseases including fungal infection, but it can't cleanse an infected bite that hasn't taken hold.",
-    "weight": 300,
-    "volume": 1,
+    "weight": "300 g",
+    "volume": "250 ml",
     "price": 2900,
     "phase": "liquid",
     "container": "bottle_glass",
@@ -89,7 +89,7 @@
     "fun": 4,
     "freezing_point": -150,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_red_potion_healing", "no_fail": true, "level": 0 },
-    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "red_black_vulnerary",
@@ -97,11 +97,10 @@
     "comestible_type": "MED",
     "category": "drugs",
     "//": "Technically carmine with purpleish-red, not black and red.  Lower base healing than water talisman, but better results with first aid skill.",
-    "name": "carmine vulnerary",
-    "name_plural": "carmine vulnerary",
+    "name": { "str": "carmine vulnerary", "str_pl": "carmine vulnerary" },
     "description": "Patches of cloth steeped in an alchemical mixture, forming a poultice that refines and focuses its effects.  It can heal injuries beyond simply staving off blood loss, and purge infected wounds before they become septic.  However, it loses its effect on deeper ailments, only staving off spores and providing some painkilling effect.",
-    "weight": 150,
-    "volume": 1,
+    "weight": "150 g",
+    "volume": "250 ml",
     "price": 800,
     "symbol": "!",
     "color": "red",
@@ -120,19 +119,18 @@
       "move_cost": 200,
       "effects": [ { "id": "potion_vulnerary", "duration": 300 } ]
     },
-    "flags": [ "NPC_SAFE" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "yellow_white_incense",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "category": "drugs",
-    "name": "citrine incense",
-    "name_plural": "citrine incense",
+    "name": { "str": "citrine incense", "str_pl": "citrine incense" },
     "//": "Citrine isn't quite white-yellow either, but jasmine incense would imply the flower rather than the color.  Last piece of advice in the description, while common sense, is only really a concern with sleep deprivation enabled.",
     "description": "An alchemical mixture permeating a combustible base of charcoal or resin, resulting in a peculiar sort of incense.  Lighting it will rapidly burn away the strange concoction, invigorating its user with a focused effect similar to the potions originally used to make it.  It trades much of its effect on strength and speed for instead directly relieving fatigue through unusual means, though long-term use without rest is not recommended.",
-    "weight": 550,
-    "volume": 1,
+    "weight": "550 g",
+    "volume": "250 ml",
     "price": 2900,
     "symbol": "!",
     "color": "light_gray",
@@ -144,18 +142,19 @@
       "effects": [ { "id": "potion_incense", "duration": 900 } ],
       "charges_needed": { "fire": 1 },
       "moves": 50
-    }
+    },
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "dragonblood_mutagen",
     "type": "COMESTIBLE",
     "comestible_type": "DRINK",
     "category": "drugs",
-    "name": "blood effigy",
+    "name": { "str": "blood effigy", "str_pl": "blood effigy" },
     "looks_like": "blood",
     "description": "A congealed liquid vaguely resembling blood, seemingly pulsing and stirring with a life of its own.  The work of incomplete research into exploiting an otherworldly creature, it can permanently change the body and mind.  Without the original source of this power however, it can only go so far.",
-    "weight": 250,
-    "volume": 1,
+    "weight": "250 g",
+    "volume": "250 ml",
     "price": 100,
     "phase": "liquid",
     "container": "flask_glass",
@@ -166,14 +165,13 @@
     "charges": 4,
     "freezing_point": -10,
     "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOOD" },
-    "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE", "NO_CRAFT_INHERIT" ]
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "scroll_sun",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "divine scroll of light",
-    "name_plural": "divine scrolls of light",
+    "name": { "str": "divine scroll of light", "str_pl": "divine scrolls of light" },
     "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and slow time momentarily, along with conjuring brilliant light.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_sun", "no_fail": true, "level": 0 }
   },
@@ -181,8 +179,7 @@
     "id": "scroll_moon",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "divine scroll of darkness",
-    "name_plural": "divine scrolls of darkness",
+    "name": { "str": "divine scroll of darkness", "str_pl": "divine scrolls of darkness" },
     "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will shroud the area in darkness, striking enemies blind temporarily.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_moon", "no_fail": true, "level": 0 }
   },
@@ -190,8 +187,7 @@
     "id": "scroll_artiface",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "divine scroll of command",
-    "name_plural": "divine scrolls of command",
+    "name": { "str": "divine scroll of command", "str_pl": "divine scrolls of command" },
     "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind creatures to your will temporarily.  The sudden impact of projecting your mind outwards will painfully stun you, however.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_artifice", "no_fail": true, "level": 0 }
   },
@@ -199,8 +195,7 @@
     "id": "scroll_nature",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "divine scroll of regrowth",
-    "name_plural": "divine scrolls of regrowth",
+    "name": { "str": "divine scroll of regrowth", "str_pl": "divine scrolls of regrowth" },
     "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will conjure a powerful healing spell, along with causing life to grow wild over the area.  However, using it risks mutating in abnormal ways.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_nature", "no_fail": true, "level": 0 }
   },
@@ -208,8 +203,7 @@
     "id": "scroll_destruction",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "divine scroll of sundering",
-    "name_plural": "divine scrolls of sundering",
+    "name": { "str": "divine scroll of sundering", "str_pl": "divine scrolls of sundering" },
     "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a thunderous boom, toppling structures and harming creatures all around.  This will not only risk burning the area to the ground, but also attract otherworldly attention.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_destruction", "no_fail": true, "level": 0 }
   },
@@ -217,8 +211,7 @@
     "id": "scroll_subversion",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "divine scroll of discord",
-    "name_plural": "divine scrolls of discord",
+    "name": { "str": "divine scroll of discord", "str_pl": "divine scrolls of discord" },
     "description": "This is a scroll, with odd writing and peculiar swirling symbols on it, representing an otherworldly trickster god.  Using it will teleport you away, leaving unearthly hazards where you once were.  While you will always arrive at your destination safely, you might suffer other consequences.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_subversion", "no_fail": true, "level": 0 }
   },
@@ -227,8 +220,7 @@
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "category": "tools",
-    "name": "mote of artifice",
-    "name_plural": "motes of artifice",
+    "name": { "str": "mote of artifice", "str_pl": "motes of artifice" },
     "description": "A small, ethereal pinprick of energy barely the size of a marble.  It seems to waver in and out of existence with a perfectly regular pattern.  Using it can manipulate any mundane lock, to silently open the way.",
     "material": [ "essencemat" ],
     "symbol": ",",
@@ -243,8 +235,7 @@
     "//": "ID retained since it's still useful.",
     "copy-from": "spell_lockpick_lesser",
     "type": "COMESTIBLE",
-    "name": "mote of greater artifice",
-    "name_plural": "motes of greater artifice",
+    "name": { "str": "mote of greater artifice", "str_pl": "motes of greater artifice" },
     "use_action": { "type": "picklock", "pick_quality": 99 }
   },
   {
@@ -252,9 +243,10 @@
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "category": "tools",
-    "name": "flame talisman",
+    "name": { "str": "flame talisman" },
     "description": "A crude paper talisman marked with strange patterns, and anointed with a meager sacrifice.  It can be used to rapidly spark a fire, if you're desperate.",
-    "weight": 150,
+    "price": 200,
+    "weight": "150 g",
     "volume": "100 ml",
     "material": "paper",
     "symbol": ",",
@@ -262,16 +254,17 @@
     "charges": 10,
     "charges_per_use": 1,
     "use_action": { "type": "firestarter", "moves": 5 },
-    "flags": [ "NO_SALVAGE", "NO_INGEST", "FIRESTARTER" ]
+    "flags": [ "NO_SALVAGE", "NO_INGEST", "FIRESTARTER", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "water_talisman",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "category": "tools",
-    "name": "water talisman",
+    "name": { "str": "water talisman" },
     "description": "A crude paper talisman marked with strange patterns, and anointed with a hunter's sacrifice.  It can be used to mend minor wounds, along with providing limited resistance to certain alchemical effects.",
-    "weight": 150,
+    "price": 600,
+    "weight": "150 g",
     "volume": "100 ml",
     "material": "paper",
     "symbol": ",",
@@ -289,16 +282,17 @@
       "move_cost": 25,
       "effects": [ { "id": "talisman_warding", "duration": 600 } ]
     },
-    "flags": [ "NO_SALVAGE", "NO_INGEST" ]
+    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "earth_talisman",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "category": "tools",
-    "name": "earth talisman",
+    "name": { "str": "earth talisman" },
     "description": "A crude paper talisman marked with strange patterns, and anointed with a peculiar sacrifice.  Using it will conjure and transmutate a structure of strange earth and stone, to serve as a meager shelter in times of desperation.",
-    "weight": 150,
+    "price": 1200,
+    "weight": "150 g",
     "volume": "100 ml",
     "material": "paper",
     "symbol": ",",
@@ -313,29 +307,29 @@
       "door_opened": "f_door_arcana_o",
       "door_closed": "f_door_arcana_c"
     },
-    "flags": [ "NO_SALVAGE", "NO_INGEST" ]
+    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "air_talisman",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "category": "tools",
-    "name": "air talisman",
+    "name": { "str": "air talisman" },
     "description": "A crude paper talisman marked with strange patterns, anointed with a pure sacrifice.  Using it will bind nearby summoned monsters as familiars, if they aren't hostile, allowing them to be used for more complex work.  It will bind affect creatures for 200 days.  Using it on NPCs, already tamed monsters, or creatures not from The Beyond will be a waste.",
-    "weight": 150,
+    "price": 3000,
+    "weight": "150 g",
     "volume": "100 ml",
     "material": "paper",
     "symbol": ",",
     "color": "cyan",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_pet", "no_fail": true, "level": 0 },
-    "flags": [ "NO_SALVAGE", "NO_INGEST" ]
+    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "scroll_spell_sun",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (consecrate)",
-    "name_plural": "pattern scrolls (consecrate)",
+    "name": { "str": "pattern scroll (consecrate)", "str_pl": "pattern scrolls (consecrate)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_consecrate", "no_fail": true, "level": 0 }
   },
@@ -343,8 +337,7 @@
     "id": "scroll_spell_moon",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (cold ward)",
-    "name_plural": "pattern scrolls (cold ward)",
+    "name": { "str": "pattern scroll (ward against cold)", "str_pl": "pattern scrolls (ward against cold)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will protect against the cold, and all its side effects.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_frost_armor", "no_fail": true, "level": 0 }
   },
@@ -352,8 +345,7 @@
     "id": "scroll_spell_artiface",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (sundering quake)",
-    "name_plural": "pattern scrolls (sundering quake)",
+    "name": { "str": "pattern scroll (sundering quake)", "str_pl": "pattern scrolls (sundering quake)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring down structures and bury them in rubble, though creatures will be left unharmed.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_sundering_quake", "no_fail": true, "level": 0 }
   },
@@ -361,17 +353,15 @@
     "id": "scroll_spell_nature",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (elemental burst)",
-    "name_plural": "pattern scrolls (elemental burst)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect.\"",
+    "name": { "str": "pattern scroll (elemental burst)", "str_pl": "pattern scrolls (elemental burst)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect, with double damage for enemies caught in the center.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_elemental_burst", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_destruction",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (summon centipedes)",
-    "name_plural": "pattern scrolls (summon centipedes)",
+    "name": { "str": "pattern scroll (summon centipedes)", "str_pl": "pattern scrolls (summon centipedes)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_summon_giant_centipedes", "no_fail": true, "level": 0 }
   },
@@ -379,8 +369,7 @@
     "id": "scroll_spell_subversion",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (eclipse)",
-    "name_plural": "pattern scrolls (eclipse)",
+    "name": { "str": "pattern scroll (eclipse)", "str_pl": "pattern scrolls (eclipse)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring forth monsters and darkness, in exchange for a temporary boost of raw power with which to stalk the night.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_eclipse", "no_fail": true, "level": 0 }
   },
@@ -388,8 +377,7 @@
     "id": "scroll_spell_agile",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (agility)",
-    "name_plural": "pattern scrolls (agility)",
+    "name": { "str": "pattern scroll (agility)", "str_pl": "pattern scrolls (agility)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary speed and agility-enhancing effect.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_agility", "no_fail": true, "level": 0 }
   },
@@ -397,8 +385,7 @@
     "id": "scroll_spell_clairvoyance",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (clairvoyance)",
-    "name_plural": "pattern scrolls (clairvoyance)",
+    "name": { "str": "pattern scroll (clairvoyance)", "str_pl": "pattern scrolls (clairvoyance)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an ivory halo, granting you sight beyond sight.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clairvoyance", "no_fail": true, "level": 0 }
   },
@@ -406,8 +393,7 @@
     "id": "scroll_spell_clarity",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (clarity of blood)",
-    "name_plural": "pattern scrolls (clarity of blood)",
+    "name": { "str": "pattern scroll (clarity of blood)", "str_pl": "pattern scrolls (clarity of blood)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against parasites and the Mycus.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clarity_blood", "no_fail": true, "level": 0 }
   },
@@ -415,8 +401,7 @@
     "id": "scroll_spell_confusion",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (confuse monsters)",
-    "name_plural": "pattern scrolls (confuse monsters)",
+    "name": { "str": "pattern scroll (confuse monsters)", "str_pl": "pattern scrolls (confuse monsters)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will stun all hostiles in the area around you.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_confuse_monster", "no_fail": true, "level": 0 }
   },
@@ -424,17 +409,15 @@
     "id": "scroll_spell_acidspray",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (conjure acid)",
-    "name_plural": "pattern scrolls (conjure acid)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted.\"",
+    "name": { "str": "pattern scroll (conjure acid)", "str_pl": "pattern scrolls (conjure acid)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_conjure_acid", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_flame_armor",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (heat ward)",
-    "name_plural": "pattern scrolls (heat ward)",
+    "name": { "str": "pattern scroll (ward against heat)", "str_pl": "pattern scrolls (ward against heat)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_flame_armor", "no_fail": true, "level": 0 }
   },
@@ -442,8 +425,7 @@
     "id": "scroll_spell_free_action",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (free action)",
-    "name_plural": "pattern scrolls (free action)",
+    "name": { "str": "pattern scroll (free action)", "str_pl": "pattern scrolls (free action)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against paralytic effects and other hindrances.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_free_action", "no_fail": true, "level": 0 }
   },
@@ -451,8 +433,7 @@
     "id": "scroll_spell_heal",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (healing)",
-    "name_plural": "pattern scrolls (healing)",
+    "name": { "str": "pattern scroll (healing)", "str_pl": "pattern scrolls (healing)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_healing", "no_fail": true, "level": 0 }
   },
@@ -460,8 +441,7 @@
     "id": "scroll_spell_insight",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (insight)",
-    "name_plural": "pattern scrolls (insight)",
+    "name": { "str": "pattern scroll (insight)", "str_pl": "pattern scrolls (insight)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to perception.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_insight", "no_fail": true, "level": 0 }
   },
@@ -469,8 +449,7 @@
     "id": "scroll_spell_elecresist",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (lightning ward)",
-    "name_plural": "pattern scrolls (lightning ward)",
+    "name": { "str": "pattern scroll (lightning ward)", "str_pl": "pattern scrolls (lightning ward)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_lightning_ward", "no_fail": true, "level": 0 }
   },
@@ -478,8 +457,7 @@
     "id": "scroll_spell_might",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (might)",
-    "name_plural": "pattern scrolls (might)",
+    "name": { "str": "pattern scroll (might)", "str_pl": "pattern scrolls (might)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to strength.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_might", "no_fail": true, "level": 0 }
   },
@@ -487,8 +465,7 @@
     "id": "scroll_spell_plants",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (overgrowth)",
-    "name_plural": "pattern scrolls (overgrowth)",
+    "name": { "str": "pattern scroll (overgrowth)", "str_pl": "pattern scrolls (overgrowth)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_overgrowth", "no_fail": true, "level": 0 }
   },
@@ -497,8 +474,7 @@
     "copy-from": "scroll_magic_base",
     "//": "ID retained to avoid breaking stuff.",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (serpentine shield)",
-    "name_plural": "pattern scrolls (serpentine shield)",
+    "name": { "str": "pattern scroll (serpentine shield)", "str_pl": "pattern scrolls (serpentine shield)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will summon shadowy serpents to aid you.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_serpentine_shield", "no_fail": true, "level": 0 }
   },
@@ -506,8 +482,7 @@
     "id": "scroll_spell_lightning",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (shockstorm)",
-    "name_plural": "pattern scrolls (shockstorm)",
+    "name": { "str": "pattern scroll (shockstorm)", "str_pl": "pattern scrolls (shockstorm)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, harming any hostiles that are close enough.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_shockstorm", "no_fail": true, "level": 0 }
   },
@@ -515,8 +490,7 @@
     "id": "scroll_spell_cleric",
     "copy-from": "scroll_magic_base",
     "type": "COMESTIBLE",
-    "name": "pattern scroll (ward against evil)",
-    "name_plural": "pattern scrolls (ward against evil)",
+    "name": { "str": "pattern scroll (ward against evil)", "str_pl": "pattern scrolls (ward against evil)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_ward_against_evil", "no_fail": true, "level": 0 }
   }

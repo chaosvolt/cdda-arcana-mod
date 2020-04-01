@@ -2,7 +2,7 @@
   {
     "type": "skill",
     "ident": "magic",
-    "name": "arcana",
+    "name": { "str": "arcana" },
     "description": "Your knowledge of strange, anomalous powers from far-off worlds.  While certain artifacts are beyond mortal understanding, this skill can be used for creating and using a few odd devices, some with lethal applications.",
     "tags": [ "combat_skill" ],
     "time_to_attack": { "min_time": 30, "base_time": 100, "time_reduction_per_level": 7 },

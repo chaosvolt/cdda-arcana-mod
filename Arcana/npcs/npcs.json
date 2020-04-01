@@ -201,5 +201,40 @@
     "chat": "TALK_MERCHANT_CF_AUX",
     "faction": "cleansing_flame",
     "mission_offered": "MISSION_CF_AUX_C"
+  },
+  {
+    "type": "npc",
+    "id": "cf_auxillery_merchant_4",
+    "//": "Recruited merchant, mercenary version.  Used by the Scavenger Merc option.",
+    "name_suffix": "Mercenary Leader",
+    "class": "NC_SCAVENGER_MERC",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_MERCHANT_CF_AUX",
+    "faction": "cleansing_flame"
+  },
+  {
+    "type": "npc",
+    "id": "cf_auxillery_merchant_5",
+    "//": "Recruited merchant.  Functionally same as classless version, but with a different mission.",
+    "name_suffix": "Farmhand",
+    "class": "NC_TRADER",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_MERCHANT_CF_AUX",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_AUX_D"
+  },
+  {
+    "type": "npc",
+    "id": "cf_auxillery_merchant_6",
+    "//": "Recruited merchant, junk shopkeep.  Unlocked by advanced Tacoma Commune option.",
+    "name_suffix": "Junk Dealer",
+    "class": "NC_JUNK_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_MERCHANT_CF_AUX",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_AUX_E"
   }
 ]
