@@ -3,14 +3,108 @@
     "id": "TALK_MERCHANT_CF_AUX",
     "type": "talk_topic",
     "dynamic_line": {
-      "npc_has_trait": "CF_AUX_MARKER_1",
+      "npc_has_trait": "CF_AUX_MARKER_3",
       "yes": {
         "u_is_wearing": "badge_marshal",
         "yes": "Welcome, Marshal.  What can I do for you?",
         "no": "Welcome, what can I do for you?"
       },
-      "no": { "npc_has_trait": "CF_AUX_MARKER_2", "yes": "Howdy, what can I get for you?", "no": "Anything you need?" }
+      "no": {
+        "npc_has_any_trait": [ "CF_AUX_MARKER_4", "CF_AUX_MARKER_5" ],
+        "yes": "Howdy, what can I get for you?",
+        "no": "Anything you need?"
+      }
     },
+    "speaker_effect": [
+      {
+        "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_1" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
+        "effect": [
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          {
+            "mapgen_update": "cf_church_merchant_restock_1",
+            "om_terrain": "cf_church_1",
+            "om_special": "cf_rural_church"
+          }
+        ]
+      },
+      {
+        "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_2" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
+        "effect": [
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          {
+            "mapgen_update": "cf_church_merchant_restock_2",
+            "om_terrain": "cf_church_1",
+            "om_special": "cf_rural_church"
+          }
+        ]
+      },
+      {
+        "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_3" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
+        "effect": [
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          {
+            "mapgen_update": "cf_church_merchant_restock_3",
+            "om_terrain": "cf_church_1",
+            "om_special": "cf_rural_church"
+          }
+        ]
+      },
+      {
+        "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_4" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
+        "effect": [
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          {
+            "mapgen_update": "cf_church_merchant_restock_4",
+            "om_terrain": "cf_church_1",
+            "om_special": "cf_rural_church"
+          }
+        ]
+      },
+      {
+        "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_5" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
+        "effect": [
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          {
+            "mapgen_update": "cf_church_merchant_restock_5",
+            "om_terrain": "cf_church_1",
+            "om_special": "cf_rural_church"
+          }
+        ]
+      },
+      {
+        "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_6" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
+        "effect": [
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          {
+            "mapgen_update": "cf_church_merchant_restock_6",
+            "om_terrain": "cf_church_3",
+            "om_special": "cf_rural_church"
+          }
+        ]
+      },
+      {
+        "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_7" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
+        "effect": [
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          {
+            "mapgen_update": "cf_church_merchant_restock_7",
+            "om_terrain": "cf_church_1",
+            "om_special": "cf_rural_church"
+          }
+        ]
+      },
+      {
+        "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_8" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
+        "effect": [
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          {
+            "mapgen_update": "cf_church_merchant_restock_8",
+            "om_terrain": "cf_church_3",
+            "om_special": "cf_rural_church"
+          }
+        ]
+      }
+    ],
     "responses": [
       {
         "text": "So, how are you getting along with the others here?",
@@ -31,7 +125,7 @@
         "condition": {
           "and": [
             { "not": { "u_has_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" } },
-            { "npc_has_trait": "CF_AUX_MARKER_3" }
+            { "npc_has_any_trait": [ "CF_AUX_MARKER_2", "CF_AUX_MARKER_7" ] }
           ]
         },
         "effect": { "u_add_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" },
@@ -45,13 +139,13 @@
     "id": "TALK_MERCHANT_CF_AUX_SITUATION",
     "type": "talk_topic",
     "dynamic_line": {
-      "npc_has_trait": "CF_AUX_MARKER_1",
+      "npc_has_trait": "CF_AUX_MARKER_3",
       "yes": "I'll be honest, I'm not sure what to make of this place.  My superiors seem to have their own concerns, too.  Top brass knows something I don't, and that worries me.  Just keep this between you and me, okay?",
       "no": {
-        "npc_has_trait": "CF_AUX_MARKER_2",
+        "npc_has_any_trait": [ "CF_AUX_MARKER_4", "CF_AUX_MARKER_5" ],
         "yes": "Strange folk, but I don't mind.  They're friendly at least, and know the area fairly well.  Makes hunting in the area a lot less stressful.",
         "no": {
-          "npc_has_trait": "CF_AUX_MARKER_3",
+          "npc_has_any_trait": [ "CF_AUX_MARKER_2", "CF_AUX_MARKER_7" ],
           "yes": "They've got fight in 'em, I can tell that much.  Not the mercenary type or like raiders either, more like the crusadin' type.  Better at drinkin' than I figured them to be, at least.",
           "no": "They have my men working fairly hard to keep the place in good working order, that's for sure.  But they work pretty damn hard right along with us.  Odd choice of equipment on them I suppose, but it seems to do well enough."
         }
@@ -60,7 +154,7 @@
     "responses": [
       {
         "text": "Alright…",
-        "condition": { "npc_has_trait": "CF_AUX_MARKER_1" },
+        "condition": { "npc_has_trait": "CF_AUX_MARKER_3" },
         "switch": true,
         "effect": { "u_add_var": "cf_aux_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" },
         "topic": "TALK_MERCHANT_CF_AUX"
@@ -78,13 +172,13 @@
     "id": "TALK_MERCHANT_CF_AUX_WHO",
     "type": "talk_topic",
     "dynamic_line": {
-      "npc_has_trait": "CF_AUX_MARKER_1",
+      "npc_has_trait": "CF_AUX_MARKER_3",
       "yes": "Just a doctor that got called up into providing medical assistance for 'Old Guard' operations.",
       "no": {
-        "npc_has_trait": "CF_AUX_MARKER_2",
+        "npc_has_any_trait": [ "CF_AUX_MARKER_4", "CF_AUX_MARKER_5" ],
         "yes": "Just a local hunter.  Outdoors experience came in handy when it all went to shit, so I guess there's that.",
         "no": {
-          "npc_has_trait": "CF_AUX_MARKER_3",
+          "npc_has_any_trait": [ "CF_AUX_MARKER_2", "CF_AUX_MARKER_7" ],
           "yes": "Used to be a soldier, 'bout a decade ago.  Rest of my boys probably would've turned raider if I hadn't been around to knock some sense into 'em.  Now we make a living cleaning up the mess the guys still in service weren't able to unfuck.",
           "no": "These days, just a scavenger I guess.  Don't have any family left that I know of, so not like my old life doing odd jobs matters much.  Rather not talk about it."
         }
@@ -96,13 +190,13 @@
     "id": "TALK_MERCHANT_CF_AUX_DO",
     "type": "talk_topic",
     "dynamic_line": {
-      "npc_has_trait": "CF_AUX_MARKER_1",
+      "npc_has_trait": "CF_AUX_MARKER_3",
       "yes": "For now, I help keep people in good health and manage the arrangement between my superiors and the locals here.  I can arrange for trade from our supply shipments if you need me to.",
       "no": {
-        "npc_has_trait": "CF_AUX_MARKER_2",
+        "npc_has_any_trait": [ "CF_AUX_MARKER_4", "CF_AUX_MARKER_5" ],
         "yes": "I arrange hunts and scavenging runs mainly, along with keeping the other folks sent here running around, staying busy.  If you need something, I can offer you a good deal from our cut of the hunt.",
         "no": {
-          "npc_has_trait": "CF_AUX_MARKER_3",
+          "npc_has_any_trait": [ "CF_AUX_MARKER_2", "CF_AUX_MARKER_7" ],
           "yes": "Mostly help run extra security for the patrols, though these guys don't really need much help with that.  Shoot monsters, get ammo out of the deal, use that to shoot more monsters… cycle of life ain't it?  Or the cycle of death.  Can sell you some if ya want.",
           "no": "Mostly just help out around, organize the scavenging runs and manage trade.  Lot of stuff we bring in either goes to the locals or back to the center, but I can make do."
         }

@@ -298,6 +298,7 @@
     "//": "Soft, meant to be dismantled when needed.  Faction attitude toward how its used plus little authority to back the currency up magnify how devalued it is compared to lower-carat Robofac coins.",
     "price": 120000,
     "price_postapoc": 2500,
+    "stackable": true,
     "weight": "25 g",
     "to_hit": -3,
     "color": "yellow",

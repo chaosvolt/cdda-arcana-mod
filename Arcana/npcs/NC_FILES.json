@@ -333,6 +333,93 @@
     ]
   },
   {
+    "type": "npc_class",
+    "id": "NC_CF_AUX_MAGE",
+    "name": "Arcanist",
+    "job_description": "I'm a scholar of the Beyond.",
+    "common": false,
+    "bonus_str": { "rng": [ -1, 1 ] },
+    "bonus_dex": { "rng": [ -1, 2 ] },
+    "bonus_int": { "rng": [ 3, 4 ] },
+    "bonus_per": { "rng": [ 0, 2 ] },
+    "skills": [
+      { "skill": "magic", "level": { "rng": [ 4, 6 ] } },
+      { "skill": "cooking", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "fabrication", "level": { "rng": [ 4, 5 ] } },
+      { "skill": "firstaid", "level": { "rng": [ 2, 4 ] } },
+      { "skill": "speech", "level": { "rng": [ 0, 5 ] } },
+      { "skill": "barter", "level": { "rng": [ 0, 5 ] } },
+      { "skill": "survival", "level": { "rng": [ 2, 4 ] } },
+      { "skill": "tailor", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "driving", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "mechanics", "level": { "rng": [ 1, 4 ] } },
+      { "skill": "dodge", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "gun", "level": { "rng": [ 2, 5 ] } }
+    ],
+    "worn_override": "NC_CF_AUX_MAGE_worn",
+    "carry_override": "NC_CF_AUX_MAGE_misc",
+    "weapon_override": "EMPTY_GROUP",
+    "traits": [ { "group": "Appearance_demographics" }, [ "PROF_ARCANIST", 100 ] ],
+    "spells": [ { "id": "arcana_magic_conjure_flame", "level": 6 }, { "id": "arcana_magic_dampening", "level": 3 } ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_CF_AUX_MERC",
+    "name": "Gunslinger",
+    "job_description": "I'm a hired gun.",
+    "common": false,
+    "bonus_str": { "rng": [ -2, 3 ] },
+    "bonus_dex": { "rng": [ -1, 1 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ 1, 4 ] },
+    "skills": [
+      { "skill": "magic", "level": { "rng": [ 0, 2 ] } },
+      { "skill": "cooking", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "fabrication", "level": { "rng": [ 2, 4 ] } },
+      { "skill": "firstaid", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "level": { "rng": [ 4, 7 ] } },
+      { "skill": "tailor", "level": { "rng": [ 0, 2 ] } },
+      { "skill": "driving", "level": { "rng": [ 2, 5 ] } },
+      { "skill": "mechanics", "level": { "rng": [ 2, 4 ] } },
+      { "skill": "dodge", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "gun", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "rifle", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "pistol", "level": { "rng": [ 2, 4 ] } },
+      { "skill": "melee", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "unarmed", "level": { "rng": [ 1, 3 ] } },
+      { "skill": "traps", "level": { "rng": [ 2, 4 ] } }
+    ],
+    "worn_override": "NC_CF_AUX_MERC_worn",
+    "carry_override": "NC_CF_AUX_MERC_misc",
+    "weapon_override": "NC_CF_AUX_MERC_weapon",
+    "traits": [
+      [ "SKIN_MEDIUM", 100 ],
+      [ "hair_gray_medium", 100 ],
+      [ "BGSS_Gung_Ho_1", 100 ],
+      [ "OUTDOORSMAN", 100 ],
+      [ "PSYCHOPATH", 75 ],
+      [ "PAINRESIST", 75 ],
+      [ "PAINREC3", 50 ],
+      [ "NIGHTVISION", 50 ],
+      [ "THICKSKIN", 50 ],
+      [ "INFIMMUNE", 50 ],
+      [ "FASTHEALER2", 25 ],
+      [ "TOUGH3", 25 ],
+      [ "TOXICFLESH", 25 ],
+      [ "HYPEROPIC", 100 ],
+      [ "BADTEMPER", 75 ],
+      [ "BADHEARING", 75 ],
+      [ "TRIGGERHAPPY", 50 ],
+      [ "ANTIJUNK", 50 ],
+      [ "BADKNEES", 50 ],
+      [ "BADBACK", 50 ],
+      [ "BADCARDIO", 25 ],
+      [ "FORGETFUL", 25 ],
+      [ "COLDBLOOD", 25 ]
+    ]
+  },
+  {
     "id": "NC_HERMIT_worn",
     "type": "item_group",
     "subtype": "collection",
@@ -422,13 +509,13 @@
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "CF_golden_scale", "count": [ 5, 10 ] },
-      { "item": "essence_dull", "count": [ 5, 15 ] },
+      { "item": "CF_golden_scale", "count": [ 30, 60 ] },
+      { "item": "essence_dull", "count": [ 15, 30 ] },
       { "item": "holybook_havamal" },
       { "item": "book_hexenhammer" },
       { "item": "water_clean" },
       { "item": "lighter" },
-      { "group": "drugs_heal_simple", "count": [ 3, 5 ] },
+      { "group": "rural_church_medical_items", "count": [ 3, 5 ] },
       { "group": "cleansing_flame_crafting", "count": [ 3, 5 ] }
     ]
   },
@@ -460,13 +547,13 @@
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "CF_golden_scale", "count": [ 5, 10 ] },
+      { "item": "CF_golden_scale", "count": [ 30, 60 ] },
       { "item": "essence_dull", "count": [ 5, 15 ] },
       { "item": "book_hexenhammer" },
       { "item": "holybook_bible2" },
       { "item": "water_clean" },
       { "item": "lighter" },
-      { "group": "drugs_heal_simple", "count": [ 3, 5 ] },
+      { "group": "rural_church_medical_items", "count": [ 3, 5 ] },
       { "group": "cleansing_flame_crafting", "count": [ 3, 5 ] }
     ]
   },
@@ -490,7 +577,7 @@
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "CF_golden_scale", "count": [ 10, 20 ] },
+      { "item": "CF_golden_scale", "count": [ 30, 60 ] },
       { "item": "essence_dull", "count": [ 10, 30 ] },
       { "group": "cleansing_flame_books", "count": [ 3, 5 ] },
       { "group": "mansion_books", "count": [ 2, 4 ] },
@@ -767,6 +854,75 @@
     ]
   },
   {
+    "id": "NC_CF_AUX_MAGE_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bra" },
+      { "item": "panties" },
+      { "item": "pants" },
+      { "item": "dress_shirt" },
+      { "item": "robe" },
+      { "item": "keffiyeh" },
+      { "item": "gloves_fingerless" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "backpack" },
+      { "item": "mana_gem" }
+    ]
+  },
+  {
+    "id": "NC_CF_AUX_MAGE_misc",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "CF_golden_scale", "count": [ 30, 60 ] },
+      { "item": "water_clean" },
+      { "item": "lighter" },
+      { "group": "gear_survival", "count": [ 3, 6 ] },
+      { "group": "magic_crafting", "count": [ 3, 6 ] },
+      { "group": "unaligned_arcanist_books", "count": [ 3, 5 ] },
+      { "group": "unaligned_arcanist_spells", "prob": 25, "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CF_AUX_MERC_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_shorts" },
+      { "item": "socks" },
+      { "item": "kevlar" },
+      { "item": "dress_shirt" },
+      { "item": "jeans" },
+      { "item": "leather_pouch" },
+      { "item": "bandana" },
+      { "item": "sheath", "contents-item": "knife_hunting" },
+      { "item": "colt_saa", "ammo-item": "reloaded_45colt_jhp", "charges": 6, "container-item": "holster" },
+      { "item": "duster" },
+      { "item": "cowboy_hat" },
+      { "item": "boots" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CF_AUX_MERC_weapon",
+    "subtype": "collection",
+    "entries": [ { "item": "1895sbl", "ammo-item": "reloaded_4570_pen", "charges": 7, "contents-item": "shoulder_strap" } ]
+  },
+  {
+    "id": "NC_CF_AUX_MERC_misc",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "water_clean" },
+      { "item": "matches" },
+      { "item": "bandages" },
+      { "item": "reloaded_45colt_jhp", "charges": [ 40, 60 ] },
+      { "item": "reloaded_4570_pen", "charges": [ 30, 50 ] }
+    ]
+  },
+  {
     "id": "NC_ARSONIST_random",
     "type": "item_group",
     "items": [ [ "bloodscourge", 1 ] ]
@@ -840,6 +996,9 @@
     "id": "NC_EVAC_SHOPKEEP_misc",
     "type": "item_group",
     "subtype": "collection",
-    "items": [ { "item": "CF_golden_scale", "count-min": 5, "count-max": 30, "prob": 20 } ]
+    "items": [
+      { "item": "CF_golden_scale", "count": [ 10, 60 ], "prob": 30 },
+      { "group": "cleansing_flame_gear_consumables", "count": [ 1, 3 ], "prob": 10 }
+    ]
   }
 ]

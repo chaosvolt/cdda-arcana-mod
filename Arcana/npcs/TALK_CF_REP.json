@@ -30,6 +30,17 @@
         }
       }
     },
+    "speaker_effect": {
+      "condition": { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } },
+      "effect": [
+        { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+        {
+          "mapgen_update": "cf_church_sofia_restock",
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church"
+        }
+      ]
+    },
     "responses": [
       {
         "text": "[MISSION] I need another copy of the trade arrangements, please.",
@@ -153,12 +164,12 @@
       { "text": "Do you have anything to trade?", "switch": true, "default": true, "topic": "TALK_CF_REP_TRADE" },
       {
         "text": "Anything I can do to help?",
-        "condition": { "not": { "npc_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" } },
+        "condition": { "not": { "npc_has_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" } },
         "topic": "TALK_MISSION_LIST"
       },
       {
         "text": "Anything I can do to help?",
-        "condition": { "npc_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        "condition": { "npc_has_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" },
         "topic": "TALK_CF_REP_TBC"
       },
       {

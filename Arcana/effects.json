@@ -954,5 +954,13 @@
     "type": "effect_type",
     "id": "cf_seeker_traded",
     "//": "Effect for players, populates Matthew's initial menu with the trade option.  Intended to be permanent."
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_aux_merchant_restocked",
+    "name": [ "Recently restocked" ],
+    "desc": [
+      "AI tag marking an NPC as having triggered their merchant restock effect recently.  Intended duration 1 week.  This is a bug if you have it."
+    ]
   }
 ]

@@ -236,5 +236,31 @@
     "chat": "TALK_MERCHANT_CF_AUX",
     "faction": "cleansing_flame",
     "mission_offered": "MISSION_CF_AUX_E"
+  },
+  {
+    "type": "npc",
+    "id": "cf_auxillery_mage",
+    "//": "Optional recruit, flavor dialogue and might teach you some things.",
+    "name_unique": "Celine Frias",
+    "name_suffix": "Arcanist",
+    "gender": "female",
+    "class": "NC_CF_AUX_MAGE",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_CF_AUX_MAGE",
+    "faction": "cleansing_flame"
+  },
+  {
+    "type": "npc",
+    "id": "cf_auxillery_mercenary",
+    "//": "Optional recruit, source of banter and can be hired as a mercenary.",
+    "name_unique": "Abraham McClain",
+    "name_suffix": "Gunslinger",
+    "gender": "male",
+    "class": "NC_CF_AUX_MERC",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_CF_AUX_MERC",
+    "faction": "cleansing_flame"
   }
 ]

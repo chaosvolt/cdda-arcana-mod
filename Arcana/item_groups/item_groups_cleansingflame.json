@@ -200,5 +200,51 @@
       { "item": "bone", "prob": 5, "charges": [ 1, 5 ] },
       { "item": "broth_bone", "prob": 5, "charges": 2, "container-item": "jar_glass_sealed" }
     ]
+  },
+  {
+    "id": "rural_church_medical_items",
+    "type": "item_group",
+    "//": "Assorted makeshift healing items, not counting potions.",
+    "items": [
+      { "item": "cattail_jelly", "prob": 10, "charges": 21, "container-item": "bottle_glass" },
+      { "item": "thyme_oil", "prob": 20, "charges": 3, "container-item": "bottle_glass" },
+      { "item": "mugwort_oil", "prob": 5, "charges": 3, "container-item": "bottle_glass" },
+      { "item": "tea_bark", "prob": 5, "charges": 3, "container-item": "bottle_glass" },
+      [ "bandages_makeshift", 30 ],
+      [ "bandages_makeshift_boiled", 15 ],
+      [ "water_talisman", 5 ],
+      [ "poppy_pain", 5 ]
+    ]
+  },
+  {
+    "id": "rural_church_start_scales",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "CF_golden_scale", "charges": [ 40, 80 ] } ]
+  },
+  {
+    "id": "rural_church_restock_scales",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "CF_golden_scale", "charges": [ 10, 20 ] } ]
+  },
+  {
+    "id": "rural_church_restock_essence",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "essence_dull", "charges": [ 15, 30 ] } ]
+  },
+  {
+    "id": "rural_church_celine_research",
+    "type": "item_group",
+    "items": [
+      [ "scroll_blank", 10 ],
+      [ "mana_gem", 5 ],
+      { "group": "arcana_totem_random", "prob": 5 },
+      [ "flame_talisman", 10 ],
+      [ "water_talisman", 10 ],
+      [ "earth_talisman", 5 ],
+      [ "air_talisman", 5 ]
+    ]
   }
 ]

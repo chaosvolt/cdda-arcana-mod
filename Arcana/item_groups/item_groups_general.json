@@ -136,6 +136,27 @@
     ]
   },
   {
+    "id": "arcana_totem_random",
+    "type": "item_group",
+    "items": [
+      [ "totem_insight", 4 ],
+      [ "totem_plants", 4 ],
+      [ "totem_confusion", 4 ],
+      [ "totem_agile", 4 ],
+      [ "totem_lightning", 4 ],
+      [ "totem_strength", 4 ],
+      [ "totem_elecresist", 3 ],
+      [ "totem_clarity", 3 ],
+      [ "totem_heal", 3 ],
+      [ "totem_flamearmor", 3 ],
+      [ "totem_clairvoyance", 3 ],
+      [ "totem_invis", 3 ],
+      [ "totem_cleric", 2 ],
+      [ "totem_free_action", 2 ],
+      [ "totem_acidspray", 2 ]
+    ]
+  },
+  {
     "id": "magic_tools",
     "type": "item_group",
     "items": [
