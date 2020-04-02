@@ -86,7 +86,9 @@
         "buff_duration": 2,
         "max_stacks": 1,
         "bonus_dodges": 2,
-        "flat_bonuses": [ [ "dodge", 1.0 ] ]
+        "flat_bonuses": [
+		{ "stat": "dodge", "scale": 1.0 } 
+		]
       },
       {
         "id": "buff_cleansingflame_onmove2",
@@ -98,7 +100,9 @@
         "buff_duration": 2,
         "max_stacks": 1,
         "bonus_blocks": 2,
-        "flat_bonuses": [ [ "block", 5 ] ]
+        "flat_bonuses": [
+		{ "stat": "block", "scale": 5 }
+		]
       },
       {
         "id": "buff_cleansingflame_onmove3",
@@ -109,7 +113,9 @@
         "buff_duration": 2,
         "max_stacks": 1,
         "bonus_dodges": 2,
-        "flat_bonuses": [ [ "dodge", 1.0 ] ]
+        "flat_bonuses": [
+		{ "stat": "dodge", "scale": 1.0 }
+		]
       }
     ],
     "onattack_buffs": [
@@ -121,7 +127,10 @@
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
         "buff_duration": 2,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "hit", 1 ], [ "movecost", -5.0 ] ]
+        "flat_bonuses": [
+		{ "stat": "hit", "scale": 1 },
+		{ "stat": "movecost", "scale": -5.0 }
+		]
       }
     ],
     "onhit_buffs": [
@@ -134,7 +143,11 @@
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
         "buff_duration": 2,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "armor", "bash", 1 ], [ "armor", "cut", 1 ], [ "armor", "stab", 1 ] ]
+        "flat_bonuses": [
+		{ "stat": "armor", "type": "bash", "scale": 1 },
+		{ "stat": "armor", "type": "cut", "scale": 1 },
+		{ "stat": "armor", "type": "stab", "scale": 1 }
+		]
       },
       {
         "id": "buff_cleansingflame_onhit2",
@@ -145,7 +158,9 @@
         "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
         "buff_duration": 2,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "arpen", "cut", 3 ] ]
+        "flat_bonuses": [
+		{ "stat": "arpen", "type": "cut", "scale": 3 }
+		]
       }
     ],
     "onkill_buffs": [
@@ -158,7 +173,11 @@
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "dodge", 1.0 ], [ "hit", -1 ], [ "movecost", 5.0 ] ]
+        "flat_bonuses": [
+		{ "stat": "dodge", "scale": 1.0 },
+		{ "stat": "hit", "scale": -1 },
+		{ "stat": "movecost", "scale": 5.0 }
+		]
       },
       {
         "id": "buff_cleansingflame_onkill2",
@@ -169,7 +188,11 @@
         "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [ [ "block", 5 ], [ "hit", -1 ], [ "movecost", 5.0 ] ]
+        "flat_bonuses": [
+		{ "stat": "block", "scale": 5 },
+		{ "stat": "hit", "scale": -1 },
+		{ "stat": "movecost", "scale": 5.0 }
+		]
       }
     ],
     "techniques": [
