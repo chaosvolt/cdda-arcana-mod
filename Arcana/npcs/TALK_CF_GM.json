@@ -43,6 +43,11 @@
         }
       },
       {
+        "text": "[MISSION] Sofia asked me to investigate a lead on a remnant of the Keepers.  She said you knew more about that?",
+        "topic": "TALK_CF_GM_ADVICE_2",
+        "condition": { "u_has_mission": "MISSION_CF_REP_4" }
+      },
+      {
         "text": "So, how are things working out with the new arrivals so far?",
         "topic": "TALK_CF_GM_MISSION_4_OPINION",
         "condition": {
@@ -106,6 +111,16 @@
     "id": "TALK_CF_GM_ADVICE_1",
     "dynamic_line": "I've never been to the center myself, so I'm not sure what to suggest.  More hands to help build and hunt would be nice, though I suppose a source of trade would be useful, to keep our supplies well stocked.  I'll trust you to use your discretion.",
     "responses": [ { "text": "I see.  That's all then.", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_GM_ADVICE_2",
+    "dynamic_line": {
+      "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ],
+      "yes": "I tracked their movements for some time intermittently, along with keeping tabs on other leads.  No sign of person contact with the remainder of the Keepers, but they were overtly been involved in anomalous activity within the past month prior to the beginning of all this.  I will trust you to retrieve any intel as you see fit given your connection to their order, but do exercise caution.",
+      "no": "I tracked their movements for some time intermittently, along with keeping tabs on other leads.  No sign of person contact with the remainder of the Keepers, but they were overtly been involved in anomalous activity within the past month prior to the beginning of all this.  Keep your guard up, and deal with them as needed if they seem unlikely to cooperate.  We can't afford to let this intel slip out of our grasp."
+    },
+    "responses": [ { "text": "…", "topic": "TALK_CF_GM" } ]
   },
   {
     "type": "talk_topic",

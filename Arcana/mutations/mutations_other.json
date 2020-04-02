@@ -232,7 +232,7 @@
     "id": "CF_AUX_MARKER_1",
     "name": { "str": "Auxiliary Marker 1" },
     "points": 0,
-    "description": "This is used to designate that the NPCs spawned with this are from the Old Guard resolution for Sofia's fourth mission.",
+    "description": "This is used to distinguish between different merchants, in Sofia's fourth mission.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -242,7 +242,7 @@
     "id": "CF_AUX_MARKER_2",
     "name": { "str": "Auxiliary Marker 2" },
     "points": 0,
-    "description": "This is used to designate that the NPCs spawned with this are from the Free Merchants resolution for Sofia's fourth mission.",
+    "description": "This is used to distinguish between different merchants, in Sofia's fourth mission.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -252,7 +252,57 @@
     "id": "CF_AUX_MARKER_3",
     "name": { "str": "Auxiliary Marker 3" },
     "points": 0,
-    "description": "This is used to designate that the NPCs spawned with this are from the Scavenger Mercenary resolution for Sofia's fourth mission.",
+    "description": "This is used to distinguish between different merchants, in Sofia's fourth mission.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "CF_AUX_MARKER_4",
+    "name": { "str": "Auxiliary Marker 4" },
+    "points": 0,
+    "description": "This is used to distinguish between different merchants, in Sofia's fourth mission.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "CF_AUX_MARKER_5",
+    "name": { "str": "Auxiliary Marker 5" },
+    "points": 0,
+    "description": "This is used to distinguish between different merchants, in Sofia's fourth mission.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "CF_AUX_MARKER_6",
+    "name": { "str": "Auxiliary Marker 6" },
+    "points": 0,
+    "description": "This is used to distinguish between different merchants, in Sofia's fourth mission.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "CF_AUX_MARKER_7",
+    "name": { "str": "Auxiliary Marker 7" },
+    "points": 0,
+    "description": "This is used to distinguish between different merchants, in Sofia's fourth mission.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "CF_AUX_MARKER_8",
+    "name": { "str": "Auxiliary Marker 8" },
+    "points": 0,
+    "description": "This is used to distinguish between different merchants, in Sofia's fourth mission.",
     "player_display": false,
     "valid": false,
     "purifiable": false

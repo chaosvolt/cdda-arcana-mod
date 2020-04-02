@@ -437,6 +437,54 @@
   },
   {
     "id": "MISSION_CF_REP_5",
+    "type": "mission_definition",
+    "name": "Bring back research from the Keepers of The Oath",
+    "description": "Find a suspected remnant of the Keepers, who may have research and intel to bring back to Sofia.  Sofia advised that the information being sought might be preserved on something more durable than a book.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 4,
+    "value": 30000,
+    "has_generic_rewards": false,
+    "item": "offering_mission_notes",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_REP_6",
+    "start": {
+      "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "reveal_radius": 1 },
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_5" ], "x": 2, "y": 3 } ]
+        }
+      ]
+    },
+    "dialogue": {
+      "describe": "Odin, guide my hand...",
+      "offer": "Now that we have a few more helping hands around here, we can dedicate more time to following up on some leads Johnathan's notes have provided us.  They point to evidence of a survivor among the Keepers of The Oath, who had close contact with members of their high priesthood.  I would like you to find out anything you can from them, any research or assistance they may be able to provide.",
+      "accepted": "Thank you, I'll show you where he is suspected to be.  My main interest is in any research notes that may have survived, anything beyond the regular content of their holy text.  Knowing the Keepers, any new research will likely first be preserved in a format more permanent than paper.  If they still have any other contacts, any other assistance they can offer, see what can be done.  Now is the time to make amends and fight together, I hope.",
+      "rejected": "I see.  Well, if you'd like, just ask me when you're ready.  I worry that we may lose this lead before long.",
+      "advice": "I don't know for certain how this person will react to being asked to provide information to the Cleansing Flame.  Johnathan might be able to provide more information, but I suspect he would rather see the Keepers extinguished.  As for what to look for, they used to preserve sacred tenets and writing in stone carvings, clay tablets, or such for posterity before they started hand-copying and printing their works.  Even more traditionalist than us in some ways, otherworldly god or not…",
+      "inquire": "Have you found what we seek?",
+      "success": "Thank you.  I hope that things went well in your pursuit of this knowledge, without undue violence.  This is a peculiar thing indeed, but it will enable some valuable research.  It seems to primarily concern some of the more dangerous interlopers threatening what's left of humanity, I'm hopeful this will bear fruit.",
+      "success_lie": "What do you think you're trying to pull?",
+      "failure": "But how..."
+    },
+    "end": {
+      "effect": [
+        { "npc_add_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_buy_item": "CF_golden_scale", "count": 12 }
+      ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_6" ], "x": 2, "y": 3 } ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "MISSION_CF_REP_6",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
     "name": "Placeholder Mission",
@@ -759,7 +807,11 @@
       "effect": [ { "u_buy_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_aux_d_1" },
-        { "om_terrain": "cf_church_3", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_aux_d_2" }
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_aux_d_2"
+        }
       ]
     }
   },
@@ -775,13 +827,7 @@
     "item": "triffid_queen_flower",
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
-      "assign_mission_target": {
-        "om_terrain": "new_anomaly_w",
-        "om_terrain_replace": "field",
-        "random": true,
-        "cant_see": true,
-        "range": [ 20, 60 ]
-      },
+      "assign_mission_target": { "om_terrain": "new_anomaly_w", "om_terrain_replace": "field", "random": true, "cant_see": true, "range": [ 20, 60 ] },
       "update_mapgen": [
         {
           "om_terrain": "new_anomaly_w",
@@ -804,7 +850,11 @@
       "effect": [ { "u_buy_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_aux_e_1" },
-        { "om_terrain": "cf_church_3", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_aux_e_2" }
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_aux_e_2"
+        }
       ]
     }
   }

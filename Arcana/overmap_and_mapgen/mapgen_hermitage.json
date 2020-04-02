@@ -129,9 +129,9 @@
         { "group": "drugs_heal_simple", "x": 19, "y": 8, "chance": 75, "repeat": 2 },
         { "group": "magic_consumables", "x": 13, "y": [ 9, 10 ], "chance": 75, "repeat": 2 },
         { "group": "cleaning", "x": 14, "y": [ 9, 10 ], "chance": 60, "repeat": 4 },
-        { "item": "matches", "x": 10, "y": 12 },
-        { "group": "reading_lights", "x": 10, "y": 12 },
-        { "item": "holybook_tripitaka", "x": 10, "y": 12 },
+        { "item": "matches", "x": 11, "y": 12 },
+        { "group": "reading_lights", "x": 11, "y": 12 },
+        { "item": "holybook_tripitaka", "x": 11, "y": 12 },
         { "item": "cane", "x": 11, "y": 12 },
         { "group": "stash_wood", "x": 11, "y": 14, "chance": 60, "repeat": 4 }
       ],
