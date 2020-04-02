@@ -3,12 +3,12 @@
     "type": "region_overlay",
     "id": "arcana_overlay",
     "regions": [ "all" ],
-    "city": { "houses": { "house_arcana": 50 }, "basements": { "arcanist_basement": 150 } }
+    "city": { "houses": { "house_arcana": 200 } }
   },
   {
     "type": "city_building",
-    "id": "house_01",
+    "id": "house_arcana",
     "locations": [ "land" ],
-    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "house_01_north" }, { "point": [ 0, 0, 1 ], "overmap": "house_01_roof_north" } ]
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "house_arcana_north" }, { "point": [ 0, 0, 1 ], "overmap": "house_arcana_roof_north" }, { "point": [ 0, 0, -1 ], "overmap": "arcanist_basement_north" } ]
   }
 ]
