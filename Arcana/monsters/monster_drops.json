@@ -554,7 +554,55 @@
         ],
         "prob": 10
       },
+      { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_static_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      {
+        "distribution": [
+          { "item": "vortex_shard", "prob": 50 },
+          { "item": "blob_gem", "prob": 50 }
+        ],
+        "prob": 5
+      },
       { "item": "essence_blood", "prob": 10, "count": [ 1, 3 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_electric_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      {
+        "distribution": [
+          { "item": "vortex_shard", "prob": 50 },
+          { "item": "blob_gem", "prob": 50 }
+        ],
+        "prob": 10
+      },
+      { "item": "essence_blood", "prob": 25, "count": [ 1, 3 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_brute_shocker_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      {
+        "distribution": [
+          { "item": "vortex_shard", "prob": 50 },
+          { "item": "blob_gem", "prob": 50 }
+        ],
+        "prob": 10
+      },
+      { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] }
     ]
   },
   {
@@ -571,7 +619,7 @@
         ],
         "prob": 10
       },
-      { "item": "essence_blood", "prob": 10, "count": [ 1, 3 ] }
+      { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] }
     ]
   },
   {
@@ -583,7 +631,7 @@
       { "item": "gracken_knuckles", "prob": 75 },
       { "item": "bone_twisted", "prob": 50 },
       { "item": "iridescent_plate", "prob": 25 },
-      { "item": "essence_blood", "prob": 10, "count": [ 1, 3 ] }
+      { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] }
     ]
   },
   {

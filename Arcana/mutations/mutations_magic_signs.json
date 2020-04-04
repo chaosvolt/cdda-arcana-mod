@@ -184,7 +184,7 @@
     "id": "SPELL_LOCKPICK",
     "name": { "str": "Magic Sign: Open Lock" },
     "points": 4,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can be used to open locked doors.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "Powers from beyond have granted you the power to open locks and barricades of various sorts.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "spells_learned": [ [ "arcana_magic_open_lock", 1 ] ]

@@ -433,6 +433,24 @@
     "death_drops": "mon_skeleton_hulk_death_drops"
   },
   {
+    "id": "mon_zombie_static",
+    "copy-from": "mon_zombie_static",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_static_death_drops"
+  },
+  {
+    "id": "mon_zombie_electric",
+    "copy-from": "mon_zombie_electric",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_electric_death_drops"
+  },
+  {
+    "id": "mon_zombie_brute_shocker",
+    "copy-from": "mon_zombie_brute_shocker",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_brute_shocker_death_drops"
+  },
+  {
     "id": "mon_zombie_nullfield",
     "copy-from": "mon_zombie_nullfield",
     "type": "MONSTER",

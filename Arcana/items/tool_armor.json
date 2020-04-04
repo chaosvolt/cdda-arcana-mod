@@ -74,7 +74,7 @@
     "type": "TOOL_ARMOR",
     "copy-from": "armor_blarmor",
     "name": { "str": "wyrmskin armor", "str_pl": "sets of wyrmskin armor" },
-    "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it and various straps added.  Using it will conjure a spray of acid.",
+    "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it and various straps added.  Using it will conjure a long-lasting spray of acid.",
     "material": [ "wyrmskin", "leather" ],
     "covers": [ "LEGS", "TORSO", "ARMS", "FEET" ],
     "color": "green",

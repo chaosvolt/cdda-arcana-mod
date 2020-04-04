@@ -19,9 +19,9 @@
     "base_energy_cost": 28,
     "final_energy_cost": 21,
     "energy_increment": -1.4,
-    "min_duration": 24000,
-    "max_duration": 48000,
-    "duration_increment": 4800,
+    "min_duration": 108000,
+    "max_duration": 180000,
+    "duration_increment": 14400,
     "spell_class": "SPELL_HUNT_DRAGONBLOOD"
   },
   {
@@ -46,9 +46,9 @@
     "base_energy_cost": 24,
     "final_energy_cost": 18,
     "energy_increment": -1.2,
-    "min_duration": 60000,
-    "max_duration": 120000,
-    "duration_increment": 12000,
+    "min_duration": 45000,
+    "max_duration": 75000,
+    "duration_increment": 6000,
     "spell_class": "SPELL_EMBERS_DRAGONBLOOD"
   },
   {
@@ -65,7 +65,8 @@
     "extra_effects": [
       { "id": "arcana_aftermath_infernal_flame_side_effects", "hit_self": true },
       { "id": "arcana_aftermath_infernal_flame_corruption", "hit_self": false, "max_level": 5 },
-      { "id": "arcana_aftermath_infernal_flame_field", "hit_self": false, "max_level": 5 }
+      { "id": "arcana_aftermath_infernal_flame_field", "hit_self": false, "max_level": 5 },
+      { "id": "arcana_aftermath_infernal_flame_noise", "hit_self": false, "max_level": 5 }
     ],
     "min_damage": 14,
     "max_damage": 72,
@@ -118,9 +119,9 @@
     "base_energy_cost": 24,
     "final_energy_cost": 18,
     "energy_increment": -1.2,
-    "min_duration": 40000,
-    "max_duration": 60000,
-    "duration_increment": 4000,
+    "min_duration": 90000,
+    "max_duration": 150000,
+    "duration_increment": 12000,
     "spell_class": "SPELL_INSTINCT_DRAGONBLOOD"
   },
   {
@@ -144,9 +145,9 @@
     "base_energy_cost": 20,
     "final_energy_cost": 15,
     "energy_increment": -1,
-    "min_duration": 60000,
-    "max_duration": 120000,
-    "duration_increment": 12000,
+    "min_duration": 36000,
+    "max_duration": 60000,
+    "duration_increment": 4800,
     "spell_class": "SPELL_INSTINCT_DRAGONBLOOD"
   },
   {
@@ -173,9 +174,9 @@
     "base_energy_cost": 24,
     "final_energy_cost": 18,
     "energy_increment": -1.2,
-    "min_duration": 2880000,
-    "max_duration": 5760000,
-    "duration_increment": 576000,
+    "min_duration": 900000,
+    "max_duration": 5400000,
+    "duration_increment": 900000,
     "spell_class": "SPELL_SUMMONWYRM"
   },
   {
@@ -202,9 +203,9 @@
     "base_energy_cost": 20,
     "final_energy_cost": 15,
     "energy_increment": -1,
-    "min_duration": 2880000,
-    "max_duration": 5760000,
-    "duration_increment": 576000,
+    "min_duration": 720000,
+    "max_duration": 4320000,
+    "duration_increment": 720000,
     "spell_class": "SPELL_SUMMONFIEND"
   },
   {
@@ -231,9 +232,9 @@
     "base_energy_cost": 28,
     "final_energy_cost": 21,
     "energy_increment": -1.4,
-    "min_duration": 2880000,
-    "max_duration": 5760000,
-    "duration_increment": 576000,
+    "min_duration": 1080000,
+    "max_duration": 6480000,
+    "duration_increment": 1080000,
     "spell_class": "SPELL_SUMMONWYRM"
   },
   {
@@ -256,9 +257,9 @@
     "base_energy_cost": 12,
     "final_energy_cost": 9,
     "energy_increment": -0.6,
-    "min_duration": 80000,
-    "max_duration": 160000,
-    "duration_increment": 16000,
+    "min_duration": 36000,
+    "max_duration": 60000,
+    "duration_increment": 4800,
     "spell_class": "SPELL_EMBERS_DRAGONBLOOD"
   },
   {
@@ -281,9 +282,9 @@
     "final_energy_cost": 9,
     "energy_increment": -0.6,
     "difficulty": 0,
-    "min_duration": 120000,
-    "max_duration": 150000,
-    "duration_increment": 6000,
+    "min_duration": 36000,
+    "max_duration": 60000,
+    "duration_increment": 4800,
     "energy_source": "HP",
     "spell_class": "SPELL_HUNT_DRAGONBLOOD"
   }

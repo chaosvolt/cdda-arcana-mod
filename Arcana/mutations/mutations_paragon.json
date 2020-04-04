@@ -49,7 +49,7 @@
     "id": "SPELL_LOCKPICK2",
     "name": { "str": "Sign of Alteration III" },
     "points": 3,
-    "description": "\"You will move unbidden, no artifice will obstruct one who follows my command.\"\nUnknowable forces have given you a third gift, that can manipulate locked doors.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "\"You will move unbidden, no artifice will obstruct one who follows my command.\"\nUnknowable forces have given you a third gift, that can open locks and barricades.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_LIGHT2" ],
