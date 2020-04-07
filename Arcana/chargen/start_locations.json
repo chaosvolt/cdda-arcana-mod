@@ -1,52 +1,40 @@
 [
   {
     "type": "start_location",
-    "ident": "strange_grove",
+    "id": "strange_grove",
     "name": "Strange Grove",
-    "target": "strange_grove",
+    "terrain": [ "strange_grove" ],
     "flags": [ "ALLOW_OUTSIDE" ]
   },
   {
     "type": "start_location",
-    "ident": "island_temple",
+    "id": "island_temple",
     "name": "Island Temple",
-    "target": "island_temple_1"
+    "terrain": [ "island_temple_1" ]
   },
   {
     "type": "start_location",
-    "ident": "impact_site",
+    "id": "impact_site",
     "name": "Impact Site",
-    "target": "impact_site",
+    "terrain": [ "impact_site" ],
     "flags": [ "ALLOW_OUTSIDE" ]
   },
   {
     "type": "start_location",
-    "ident": "curious_structure",
+    "id": "curious_structure",
     "name": "Curious Structure",
-    "target": "curious_structure"
+    "terrain": [ "curious_structure" ]
   },
   {
     "type": "start_location",
-    "ident": "hermit_cabin",
-    "name": "Hermit Cabin",
-    "target": "arcana_hermitage_1"
-  },
-  {
-    "type": "start_location",
-    "ident": "arcanist_basement",
+    "id": "arcanist_basement",
     "name": "Arcanist Basement",
-    "target": "arcanist_basement"
+    "terrain": [ "arcanist_basement" ]
   },
   {
     "type": "start_location",
-    "ident": "cathedral_basement",
+    "id": "cathedral_basement",
     "name": "Cathedral",
-    "target": "cathedral_b_NW"
-  },
-  {
-    "type": "start_location",
-    "ident": "necropolis_basement",
-    "name": "Ruined City ...?",
-    "target": "necropolis_b_54"
+    "terrain": [ "cathedral_b_NW" ]
   }
 ]
