@@ -59,6 +59,9 @@
     "ammo_effects": [ "FLAME", "STREAM", "INCENDIARY", "FLARE" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_bloodscourge_wonder" } ] } ]
+    },
     "flags": [
       "NEVER_JAMS",
       "DURABLE_MELEE",

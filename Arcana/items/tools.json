@@ -639,11 +639,14 @@
         "type": "transform"
       }
     ],
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_blood_axe_wonder" } ] } ]
+    },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
     "id": "bloodaxe_act",
-    "//": "Can't use copy-from because qualities refuse to be deleted, causing it to try and choop wood instead of exploding.",
+    "//": "Can't use copy-from because qualities refuse to be deleted, causing it to try and chop wood instead of exploding.",
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "glowing veinreaver" },
