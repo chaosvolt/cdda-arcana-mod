@@ -28,7 +28,6 @@
     "name": { "str": "scroll base" },
     "weight": "415 g",
     "volume": "250 ml",
-    "price": 2000,
     "material": [ "paper" ],
     "symbol": "!",
     "looks_like": "recipe_creepy",
@@ -44,7 +43,6 @@
     "material": [ "essencemat" ],
     "symbol": ",",
     "looks_like": "petrified_eye",
-    "price": 5000,
     "weight": "50 g",
     "volume": "250 ml",
     "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
