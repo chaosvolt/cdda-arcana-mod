@@ -72,7 +72,7 @@
     "type": "TOOL_ARMOR",
     "copy-from": "armor_blarmor",
     "name": { "str": "wyrmskin armor", "str_pl": "sets of wyrmskin armor" },
-    "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it and various straps added.  Using it will conjure a long-lasting spray of acid.",
+    "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it, various adjustable straps added, and a small axe ring sheath.  Using it will conjure a long-lasting spray of acid.",
     "material": [ "wyrmskin", "leather" ],
     "covers": [ "LEGS", "TORSO", "ARMS", "FEET" ],
     "color": "green",
@@ -81,6 +81,17 @@
     "charges_per_use": 4,
     "encumbrance": 10,
     "environmental_protection": 10,
+    "pocket_data": [
+      { "pocket_type": "CONTAINER", "max_contains_volume": "500 ml", "max_contains_weight": "2 kg", "moves": 80 },
+      { "pocket_type": "CONTAINER", "max_contains_volume": "500 ml", "max_contains_weight": "2 kg", "moves": 80 },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "1 kg",
+        "moves": 10,
+        "flag_restriction": [ "MAGIC_FOCUS" ]
+      }
+    ],
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true },
     "relative": { "weight": "722 g", "volume": "1500 ml", "price": 80000 },
     "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "FANCY" ] },
@@ -120,20 +131,36 @@
     "category": "armor",
     "name": { "str": "mantle of shadows", "str_pl": "mantles of shadows" },
     "//": "misc properties were mostly made by averaging the values of all possible types of robe usable to make it",
-    "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders, dyed in a simple dark gray.  Using it will grant invisibility and soften footsteps, draining essence quickly.",
+    "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders, dyed in a simple dark gray, with a few well-hidden pouches and a stout sash for a belt.  Using it will grant invisibility and soften footsteps, draining essence quickly.",
     "color": "dark_gray",
     "ammo": "essence_type",
     "max_charges": 20,
-    "use_action": {
-      "target": "robe_shadow_on",
-      "msg": "The robe's fabric darkens to a rich shade of black, cloaking your surroundings in a flickering illusion.",
-      "active": true,
-      "need_worn": true,
-      "need_charges": 1,
-      "need_charges_msg": "The mantle requires essence to bring forth the night.",
-      "type": "transform"
-    },
-    "relative": { "weight": 616, "volume": -1, "price": 16000, "coverage": 5, "encumbrance": -5, "storage": -6, "material_thickness": 1 },
+    "pocket_data": [
+      { "pocket_type": "CONTAINER", "max_contains_volume": "1500 ml", "max_contains_weight": "5 kg", "moves": 180 },
+      { "pocket_type": "CONTAINER", "max_contains_volume": "1500 ml", "max_contains_weight": "5 kg", "moves": 180 },
+      { "pocket_type": "CONTAINER", "max_contains_volume": "500 ml", "max_contains_weight": "2 kg", "moves": 120 },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "2 L",
+        "max_contains_weight": "4 kg",
+        "moves": 10,
+        "flag_restriction": [ "BELT_CLIP" ]
+      }
+    ],
+    "use_action": [
+      { "type": "holster", "holster_prompt": "Hang what from sash?", "holster_msg": "You store your %s" },
+      {
+        "target": "robe_shadow_on",
+        "msg": "The robe's fabric darkens to a rich shade of black, cloaking your surroundings in a flickering illusion.",
+        "active": true,
+        "need_worn": true,
+        "need_charges": 1,
+        "need_charges_msg": "The mantle requires essence to bring forth the night.",
+        "menu_text": "Activate illusory shroud",
+        "type": "transform"
+      }
+    ],
+    "relative": { "weight": 616, "volume": -1, "price": 16000, "coverage": 5, "encumbrance": -5, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
@@ -150,11 +177,15 @@
     },
     "artifact_data": { "effects_worn": [ "AEP_INVISIBLE", "AEP_STEALTH" ] },
     "revert_to": "robe_shadow",
-    "use_action": {
-      "target": "robe_shadow",
-      "msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
-      "type": "transform"
-    }
+    "revert_msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
+    "use_action": [
+      { "type": "holster", "holster_prompt": "Hang what from sash?", "holster_msg": "You store your %s" },
+      {
+        "target": "robe_shadow",
+        "msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
+        "type": "transform"
+      }
+    ]
   },
   {
     "id": "gauntlets_necro",

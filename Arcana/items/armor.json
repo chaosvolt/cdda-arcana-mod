@@ -130,19 +130,23 @@
         }
       ]
     },
-    "use_action": {
-      "type": "bandolier",
-      "capacity": 200,
-      "ammo": [ "essence_type", "essence_blood_type", "essence_dull_type", "essence_pure_type" ],
-      "draw_cost": 10
-    }
+    "pocket_data": [
+      {
+        "ammo_restriction": {
+          "essence_pure_type": 20,
+          "essence_type": 200,
+          "essence_blood_type": 600,
+          "essence_dull_type": 3000
+        },
+        "moves": 10
+      }
+    ]
   },
   {
     "id": "satchel_eternity",
     "type": "ARMOR",
     "name": { "str": "satchel of eternity", "str_pl": "satchels of eternity" },
-    "//": "A quarter the storage of Blazemod cargo dimensions.",
-    "description": "A small fabric pouch decorated with ornate textile imagery depicting an otherworldly abstract pattern, further adorned with copper rings and clasps.  It is said to represent the search for greater knowledge of the unknown, focused by a drive to find utility and purpose in new discoveries.  It uses the power of a vortex to create a useful storage item, but the portal's instability can draw attention from Beyond.",
+    "description": "A small fabric pouch decorated with ornate textile imagery depicting an otherworldly abstract pattern, further adorned with copper rings and clasps.  It is said to represent the search for greater knowledge of the unknown, focused by a drive to find utility and purpose in new discoveries.  It uses the power of a vortex to store a great volume of items that can be easily accessed, but the portal's instability can draw attention from Beyond.  You can also use it to set aside certain items for even faster access, if it serves as a magical focus.",
     "weight": "610 g",
     "volume": "500 ml",
     "price": 1000,
@@ -161,16 +165,38 @@
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "arcana_react_satchel_effect" } ] } ]
     },
-    "use_action": {
-      "type": "holster",
-      "holster_prompt": "Store magic focus",
-      "holster_msg": "You store your %s",
-      "multi": 4,
-      "min_volume": "1 ml",
-      "max_volume": "5 L",
-      "draw_cost": 0,
-      "flags": [ "MAGIC_FOCUS" ]
-    },
+    "pocket_data": [
+      { "pocket_type": "CONTAINER", "max_contains_volume": "75 L", "max_contains_weight": "500 kg", "moves": 80 },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "25 kg",
+        "moves": 0,
+        "flag_restriction": [ "MAGIC_FOCUS" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "25 kg",
+        "moves": 0,
+        "flag_restriction": [ "MAGIC_FOCUS" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "25 kg",
+        "moves": 0,
+        "flag_restriction": [ "MAGIC_FOCUS" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "25 kg",
+        "moves": 0,
+        "flag_restriction": [ "MAGIC_FOCUS" ]
+      }
+    ],
+    "use_action": { "type": "holster", "holster_prompt": "Store what magical focus?", "holster_msg": "You store your %s" },
     "flags": [ "WAIST", "OVERSIZE" ]
   }
 ]
