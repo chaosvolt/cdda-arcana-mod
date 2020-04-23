@@ -204,7 +204,20 @@
     "pierce": 10,
     "range": 12,
     "loudness": 50,
-    "ammo_effects": [ "LIGHTNING", "EMP", "PARALYZEPOISON" ]
+    "ammo_effects": [ "LIGHTNING_JUDGMENT" ]
+  },
+  {
+    "id": "monster_laser_fake",
+    "copy-from": "v29",
+    "type": "GUN",
+    "name": { "str": "monster laser weapon" },
+    "description": "Used to give the Seraphic Shade a specific degree of inaccuracy.  If you encounter one of these in the wild, it's a bug.",
+    "dispersion": 5000,
+    "sight_dispersion": 1000,
+    "ranged_damage": { "damage_type": "cold", "amount": 12 },
+    "range": 15,
+    "loudness": 0,
+    "ammo_effects": [ "LASER", "BLINDS_EYES" ]
   },
   {
     "id": "mut_dragonfire",

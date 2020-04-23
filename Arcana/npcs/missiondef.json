@@ -215,7 +215,8 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "range": [ 10, 90 ]
+        "search_range": 90,
+        "min_distance": 10
       }
     },
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -613,7 +614,8 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "range": [ 10, 90 ]
+        "search_range": 90,
+        "min_distance": 10
       },
       "update_mapgen": [
         {
@@ -663,24 +665,161 @@
     }
   },
   {
-    "id": "MISSION_CF_GM_4",
-    "//": "This mission is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "id": "MISSION_CF_GM_4_PRELUDE",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
-    "goal": "MGOAL_KILL_MONSTER",
-    "difficulty": 4,
-    "value": 150000,
+    "name": "Investigate survivor camp",
+    "description": "Search the last known encampment of a group of survivors, who have recently encountered anomalous activity.  Bring back any unusual items found there, that may prove useful to identifying and locating the origin of this threat.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "or": [ { "u_has_item": "arcana_dream_journal" }, { "u_has_item": "arcana_strange_crystal" } ] },
+    "difficulty": 3,
+    "value": 10000,
+    "has_generic_rewards": false,
+    "start": {
+      "effect": [ { "u_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" } ],
+      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 3, "random": true, "cant_see": true, "search_range": 50, "min_distance": 20 },
+      "update_mapgen": {
+        "set": [
+          { "square": "terrain", "id": "t_region_groundcover_forest", "x": 4, "x2": 19, "y": 4, "y2": 19 },
+          { "square": "terrain", "id": "t_region_groundcover_barren", "x": 8, "x2": 15, "y": 8, "y2": 15 },
+          { "square": "furniture", "id": "f_null", "x": 8, "x2": 15, "y": 8, "y2": 15 },
+          { "line": "terrain", "id": "t_grave_new", "x": 11, "x2": 12, "y": 7, "y2": 7 },
+          { "point": "furniture", "id": "f_brazier", "x": 12, "y": 11 },
+          { "point": "furniture", "id": "f_plastic_groundsheet", "x": 14, "y": 12 },
+          { "point": "furniture", "id": "f_tourist_table", "x": 14, "y": 10 },
+          { "point": "trap", "id": "tr_rollmat", "x": 12, "y": 9 },
+          { "point": "trap", "id": "tr_rollmat", "x": 10, "y": 10 },
+          { "point": "trap", "id": "tr_rollmat", "x": 10, "y": 12 },
+          { "point": "trap", "id": "tr_rollmat", "x": 12, "y": 13 }
+        ],
+        "place_loot": [
+          { "group": "trash_forest", "x": [ 1, 22 ], "y": [ 1, 2 ], "repeat": 2, "chance": 75 },
+          { "group": "cannedfood", "x": 14, "y": 10, "repeat": 5, "chance": 50 },
+          { "group": "drugs_heal_simple", "x": 14, "y": 10, "repeat": 5, "chance": 50 },
+          { "group": "weapons", "x": 14, "y": 12, "repeat": 2, "chance": 25 },
+          { "group": "guns_survival", "x": 14, "y": 12, "repeat": 2, "chance": 25 },
+          { "group": "ammo_reloaded", "x": 14, "y": 12, "repeat": 5, "chance": 50 },
+          { "item": "shovel", "x": 14, "y": 12, "chance": 80 },
+          { "group": "remains_soldier", "x": 10, "y": 16, "chance": 100 },
+          { "item": "223_casing", "x": [ 10, 15 ], "y": [ 13, 15 ], "repeat": 10, "chance": 50 },
+          { "group": "map_extra_drugdeal", "x": 11, "y": 7, "chance": 100 },
+          { "group": "map_extra_college_camping", "x": 12, "y": 7, "chance": 100 },
+          { "item": "arcana_strange_crystal", "x": 11, "y": 7, "chance": 100 },
+          { "group": "bed", "x": 10, "y": 10, "chance": 75 },
+          { "item": "arcana_dream_journal", "x": 10, "y": 10, "chance": 100 },
+          { "group": "bed", "x": 10, "y": 12, "chance": 75 },
+          { "group": "bed", "x": 12, "y": 9, "chance": 75 },
+          { "group": "bed", "x": 12, "y": 13, "chance": 75 }
+        ],
+        "place_monster": [
+          { "monster": "mon_shadow_summoned", "x": [ 1, 22 ], "y": [ 1, 22 ], "repeat": [ 2, 4 ] },
+          { "monster": "mon_hunting_horror_summoned", "x": 12, "y": 12 }
+        ],
+        "place_vehicles": [ { "vehicle": "motorcycle", "x": 11, "y": 16, "rotation": 90, "fuel": 500, "status": 1, "chance": 100 } ],
+        "place_fields": [
+          { "x": [ 10, 11 ], "y": [ 15, 16 ], "field": "fd_blood", "intensity": 1 },
+          { "x": [ 10, 11 ], "y": [ 15, 16 ], "field": "fd_blood", "intensity": 1 },
+          { "x": [ 10, 11 ], "y": [ 15, 16 ], "field": "fd_blood", "intensity": 1 },
+          { "x": [ 9, 10 ], "y": [ 16, 17 ], "field": "fd_blood", "intensity": 1 }
+        ]
+      }
+    },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
-      "describe": "...",
-      "offer": "...",
-      "accepted": "...",
-      "rejected": "...",
-      "advice": "...",
-      "inquire": "...",
-      "success": "...",
-      "success_lie": "...",
-      "failure": "..."
+      "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialouge.",
+      "offer": "Seeing this is probably a bug.",
+      "accepted": "Seeing this is probably a bug.",
+      "rejected": "Seeing this is probably a bug.",
+      "advice": "Seeing this is probably a bug.",
+      "inquire": "Have you found anything?",
+      "success": "Alright, let me see.  This might help, but I don't think I can do much with this just yet.  Keep that for now and bring it to Sofia, see if she can figure anything else out.  I'll do what I can to review the other intel I have regarding the attacks.  Narrowing down the area plus getting a better feel for what we're up against should let us pinpoint the cause.",
+      "success_lie": "Seeing this is probably a bug.",
+      "failure": "Seeing this is probably a bug."
+    },
+    "end": {
+      "effect": [
+        { "u_add_var": "johnathan_prelude_penultimate", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
+      ]
+    }
+  },
+  {
+    "id": "MISSION_CF_GM_4",
+    "type": "mission_definition",
+    "name": "Cleanse The Anomaly",
+    "description": "Seek out an anomalous structure that has recently forced its way into our world.  Kill whatever abomination lies at its heart.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 8,
+    "value": 300000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "arcana_structure_anomalous_entrance",
+        "om_special": "arcana_anomaly_resurgence",
+        "om_terrain_replace": "field",
+        "reveal_radius": 5,
+        "random": true,
+        "cant_see": true,
+        "search_range": 90,
+        "min_distance": 20
+      },
+      "update_mapgen": [
+        {
+          "om_terrain": "arcana_structure_anomalous_finale",
+          "om_special": "arcana_anomaly_resurgence",
+          "place_monster": [ { "monster": "mon_seraphic_shade", "x": 20, "y": 5, "target": true } ]
+        },
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_4_a" },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_4_b"
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_4_c"
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_4_d"
+        }
+      ]
+    },
+    "dialogue": {
+      "describe": "Grant us strength...",
+      "offer": "The time has come.  We have discussed the nature of this anomaly, confirmed the source.  There is something there, subtle but becoming more detectable by the day.  Whatever disruption lies within, it must be cleansed.  I trust you with this task, if you accept it.",
+      "accepted": "God and gods willing, return safe and sound.  I will once more authorize you to request the aid of one of our hunters if you require it.  Furthermore, if you did not already seek their aid last time, you may still do so.  We can afford that much at least, for a mission this important.",
+      "rejected": "We're stretched thin as it is, please return as soon as you're able to accept this task.  I worry that things will only worsen if this threat is left unchecked.",
+      "advice": "Reports suggest it is a warped, ruined remnant of some unholy alien structure, similar to what those chitinous abominations build.  I have no doubt that there are greater anomalies and hazards within.  Exercise extreme caution, bring any firepower as well as physical and magical protection that you can obtain.",
+      "inquire": "Have you destroyed the threat?",
+      "success": "Good.  Seeing you walk in here alive, I could almost sense that the deed was done.  I do not know the cause of this, nor what the future holds.  Only that we have bought ourselves much-needed time, to pursue any research that might prevent further catastrophes in the future.  There are no further tasks I can offer you, nor any greater reward I can spare.  We, perhaps all of humanity in the long term, are in your debt.",
+      "success_lie": "What idiocy is this?",
+      "failure": "But how?"
+    },
+    "end": {
+      "effect": [
+        { "npc_add_var": "johnathan_mission_finale", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
+      ],
+      "update_mapgen": [
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_5_a" },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_5_b"
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_5_c"
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_5_d"
+        }
+      ]
     }
   },
   {
@@ -789,7 +928,8 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "range": [ 20, 60 ]
+        "search_range": 90,
+        "min_distance": 10
       }
     },
     "dialogue": {

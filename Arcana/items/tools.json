@@ -11,6 +11,27 @@
     "use_action": { "type": "place_monster", "monster_id": "mon_shadow_summoned", "place_randomly": true }
   },
   {
+    "id": "bot_shadows_fake",
+    "//": "ID retained to avoid any weirdness.",
+    "type": "TOOL",
+    "name": { "str": "Archon magic" },
+    "description": "Spawns a fake shadow, used by the Seraphic Shade.  This is a bug if you find one of these.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": { "type": "place_monster", "monster_id": "mon_shadow_summoned_fake", "place_randomly": true }
+  },
+  {
+    "id": "bot_seraphic_mimic",
+    "type": "TOOL",
+    "name": { "str": "Archon mimic" },
+    "description": "Spawns a copy of the seraphic shade.  This is a bug if you find one of these.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": { "type": "place_monster", "monster_id": "mon_seraphic_shade_fake", "place_randomly": true }
+  },
+  {
     "id": "stinger_flute",
     "type": "TOOL",
     "copy-from": "bone_flute",

@@ -4,6 +4,21 @@
     "type": "talk_topic",
     "responses": [
       {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_RANCH_SCAVENGER_1_GM_PRELUDE"
+      },
+      {
         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
         "topic": "TALK_RANCH_SCAVENGER_1_CF_REP_MISSION_4",
         "condition": {
@@ -14,6 +29,11 @@
         }
       }
     ]
+  },
+  {
+    "id": "TALK_RANCH_SCAVENGER_1_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": "One of my scouting parties saw movement consistent with some of the strange creatures we've intermittently heard rumors about, the more recent attacks that have hit a few travelers in the area.  I'll send off the information on what happened and where, I guess."
   },
   {
     "type": "talk_topic",

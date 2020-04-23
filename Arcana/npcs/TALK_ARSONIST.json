@@ -1,6 +1,32 @@
 [
   {
     "type": "talk_topic",
+    "id": "TALK_ARSONIST",
+    "responses": [
+      {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_ARSONIST_GM_PRELUDE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_ARSONIST_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": "A while back I ran into something like that myself, actually.  Was in the evening, a few strange creatures showed up while I was starting a controlled burn of an abandoned block.  Came out of the shadows and it seemed like the shadows followed them.  I cut down the street and it seems the firelight either scared them off or distracted them."
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_ARSONIST_WORLD_OPTIMISTIC",
     "responses": [
       {

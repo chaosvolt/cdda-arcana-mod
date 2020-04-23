@@ -1,6 +1,16 @@
 [
   {
     "type": "mutation",
+    "id": "THRESH_SERAPHIC_SIDE_EFFECTS",
+    "name": { "str": "Dummy Mutation Threshold" },
+    "description": "This only exists to ensure that the seraphic shade's mental scarring ability behaves sanely.",
+    "points": 0,
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
     "id": "MARTIAL_ARTS_CF",
     "name": { "str": "Path of Sword and Hammer" },
     "points": 3,

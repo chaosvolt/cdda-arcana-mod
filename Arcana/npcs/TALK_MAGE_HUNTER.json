@@ -67,14 +67,26 @@
     },
     "responses": [
       {
-        "text": "[MISSION] Sofia said I should ask one of you for help?",
-        "topic": "TALK_MAGE_HUNTER_RECRUIT",
-        "condition": { "and": [ { "u_has_mission": "MISSION_CF_REP_3" }, { "not": { "u_has_effect": "cf_mission_3_recruited" } } ] }
+        "text": "[MISSION] Johnathan said I should ask one of you for help?",
+        "topic": "TALK_MAGE_HUNTER_RECRUIT_2",
+        "effect": { "u_add_effect": "cf_mission_3_recruited_3", "duration": "PERMANENT" },
+        "condition": { "and": [ { "u_has_mission": "MISSION_CF_GM_4" }, { "not": { "u_has_effect": "cf_mission_3_recruited_3" } } ] }
       },
       {
         "text": "[MISSION] Johnathan said I should ask one of you for help?",
         "topic": "TALK_MAGE_HUNTER_RECRUIT_2",
-        "condition": { "and": [ { "u_has_mission": "MISSION_CF_GM_3" }, { "not": { "u_has_effect": "cf_mission_3_recruited_2" } } ] }
+        "effect": { "u_add_effect": "cf_mission_3_recruited_2", "duration": "PERMANENT" },
+        "condition": {
+          "and": [
+            { "or": [ { "u_has_mission": "MISSION_CF_GM_3" }, { "u_has_mission": "MISSION_CF_GM_4" } ] },
+            { "not": { "u_has_effect": "cf_mission_3_recruited_2" } }
+          ]
+        }
+      },
+      {
+        "text": "[MISSION] Sofia said I should ask one of you for help?",
+        "topic": "TALK_MAGE_HUNTER_RECRUIT",
+        "condition": { "and": [ { "u_has_mission": "MISSION_CF_REP_3" }, { "not": { "u_has_effect": "cf_mission_3_recruited" } } ] }
       },
       { "text": "What is this place?", "topic": "TALK_MAGE_HUNTER_WHERE" },
       {
@@ -163,18 +175,20 @@
         "yes": [
           "If the Grandmaster trusts your judgment, so be it.",
           "Alright.  Stay in my sight.",
-          "I see.  You know full well how dangerous these sanguinists can be, be on guard."
+          {
+            "u_has_mission": "MISSION_CF_GM_3",
+            "yes": "I see.  You know full well how dangerous these sanguinists can be, be on your guard.",
+            "no": "I see.  I hope you are prepared for this, be on your guard."
+          }
         ],
-        "no": "May the blood mages find justice, under the hammer of the gods."
+        "no": {
+          "u_has_mission": "MISSION_CF_GM_3",
+          "yes": "May the blood mages find justice, under the hammer of the gods.",
+          "no": "May we find peace, through bringing light into unholy darkness."
+        }
       }
     ],
-    "responses": [
-      {
-        "text": "Let's go.",
-        "topic": "TALK_DONE",
-        "effect": [ { "u_add_effect": "cf_mission_3_recruited_2", "duration": "PERMANENT" }, "follow" ]
-      }
-    ]
+    "responses": [ { "text": "Let's go.", "topic": "TALK_DONE", "effect": "follow" } ]
   },
   {
     "id": "TALK_MAGE_HUNTER_WHERE",

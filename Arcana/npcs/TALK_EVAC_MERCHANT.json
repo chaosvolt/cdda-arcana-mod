@@ -4,6 +4,21 @@
     "type": "talk_topic",
     "responses": [
       {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_EVAC_MERCHANT_GM_PRELUDE"
+      },
+      {
         "text": "Do you know of any other settlements in the region?",
         "topic": "TALK_EVAC_MERCHANT_CF",
         "effect": [
@@ -67,6 +82,18 @@
         }
       }
     ]
+  },
+  {
+    "id": "TALK_EVAC_MERCHANT_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "tacoma_started",
+      "type": "knowledge",
+      "context": "flag",
+      "value": "yes",
+      "yes": "So you're investigating the recent rash of attacks we've had.  This is more scattered and a lot weirder than the last rash of bandits I heard your boys went after.  Most recent assault was on a caravan running supplies to the commune.  It was in the daytime so they had no trouble, got a good look.  Bunch of strange living shadows or something.  Might be worth checking with the people in the ranch, too.",
+      "no": "So you're investigating the recent rash of attacks we've had.  This is more scattered and a lot weirder than the last rash of bandits I heard your boys went after.  Most recent assault was on a scavenger party sent out to bring supplies back for us.  It was almost dawn, they lost a couple boys before losing the attacks once thesun was high enough.  Give them hell, if you can get to the bottom of this."
+    }
   },
   {
     "id": "TALK_EVAC_MERCHANT_CF",

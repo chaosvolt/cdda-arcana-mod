@@ -4,6 +4,21 @@
     "type": "talk_topic",
     "responses": [
       {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_RANCH_CROP_OVERSEER_GM_PRELUDE"
+      },
+      {
         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
         "topic": "TALK_RANCH_CROP_OVERSEER_CF_REP_MISSION_4",
         "condition": {
@@ -14,6 +29,11 @@
         }
       }
     ]
+  },
+  {
+    "id": "TALK_RANCH_CROP_OVERSEER_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": "One of the traders stopped by telling stories like that, mentioned an old town a few days travel down the road.  He said not to travel through the outer edges of the residential section at night, mentioned some strange goings-on there.  Personally I don't believe it's anything more than the usual freaks, but he was convinced it was something else.  Hope that's what you're looking for."
   },
   {
     "type": "talk_topic",
