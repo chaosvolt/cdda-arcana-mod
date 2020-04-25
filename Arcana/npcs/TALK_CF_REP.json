@@ -198,13 +198,7 @@
       { "text": "Do you have anything to trade?", "switch": true, "default": true, "topic": "TALK_CF_REP_TRADE" },
       {
         "text": "Anything I can do to help?",
-        "condition": { "not": { "npc_has_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" } },
         "topic": "TALK_MISSION_LIST"
-      },
-      {
-        "text": "Anything I can do to help?",
-        "condition": { "npc_has_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" },
-        "topic": "TALK_CF_REP_TBC"
       },
       {
         "text": "Well, bye.",

@@ -351,7 +351,23 @@
   },
   {
     "type": "overmap_terrain",
+    "id": "sanguine_holdout_roof",
+    "name": "cabin roof",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
     "id": "sanguine_holdout_1",
+    "name": "cabin",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sanguine_holdout_2",
     "name": "cabin",
     "sym": "C",
     "color": "i_green",

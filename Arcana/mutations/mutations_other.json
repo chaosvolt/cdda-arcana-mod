@@ -239,6 +239,16 @@
   },
   {
     "type": "mutation",
+    "id": "SHRIKE_MISSION_MARKER",
+    "name": { "str": "Shrike Mission Marker" },
+    "points": 0,
+    "description": "This trait singles out a specific Sanguine Shrike NPC as the focus of a mission, altering their dialogue.",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false
+  },
+  {
+    "type": "mutation",
     "id": "CF_AUX_MARKER_1",
     "name": { "str": "Auxiliary Marker 1" },
     "points": 0,

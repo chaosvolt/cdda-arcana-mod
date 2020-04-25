@@ -488,6 +488,53 @@
     "id": "MISSION_CF_REP_6",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
+    "name": "Secure Research From The Renegade Sanguine Shrikes",
+    "description": "Find a suspected splinter faction of the Sanguine Order, who may have research and intel to bring back to Sofia.  Bring back any unique research they have.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 4,
+    "value": 35000,
+    "has_generic_rewards": false,
+    "item": "sanguine_mission_notes",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_REP_6",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "sanguine_holdout_2",
+        "om_special": "sanguine_holdout_shrikes",
+        "om_terrain_replace": "forest",
+        "reveal_radius": 3,
+        "random": true,
+        "cant_see": true,
+        "search_range": 90,
+        "min_distance": 20
+      },
+      "update_mapgen": [
+      ]
+    },
+    "dialogue": {
+      "describe": "Odin, guide my hand...",
+      "offer": "This one might be a bit more risky.  Johnathan's intel confirmed suspicion of a schism within the Sanguine Order, specifically among their shrikes.  They were the hunters of hunters, the biggest threat to us whenever we engaged in a raid on their hideouts.  We've isolated the location of one renegade element acting inconsistent with other such splinter groups.  I'd like you to investigate, and secure any research they might have acquired.  Even if it proves unsafe for us to use, better to prevent it from falling into the wrong hands.",
+      "accepted": "Thank you.  Be careful, they seem to have actively engaged in hostilities against regular sanguinist sects, but we don't know how divergent they are.  They might still be hostile to us.  Attempt to talk them into cooperating peacefully if you can, but expect a fight.",
+      "rejected": "If you change your mind, see me about it.  I'm reluctant to deal with sanguinists given we don't know if they're still engaged in hostilities, but securing whatever they found will be useful to us.",
+      "advice": "Be careful.  They'll likely know you're coming before you even see them, be prepared for a confrontation, or worse an ambush.",
+      "inquire": "What have you found?",
+      "success": "I'll be careful with this.  Some of it may benefit our own research, but the general rule of thumb is to avoid extensive work with any developments that require blood magic or dimensional alteration to function.  I hope that I didn't put you in too great a danger sending you after them.",
+      "success_lie": "What do you think you're trying to pull?",
+      "failure": "But how..."
+    },
+    "end": {
+      "effect": [
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_buy_item": "CF_golden_scale", "count": 14 }
+      ],
+      "update_mapgen": [
+      ]
+    }
+  },
+  {
+    "id": "MISSION_CF_REP_7",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
     "name": "Placeholder Mission",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
@@ -749,7 +796,7 @@
     "description": "Seek out an anomalous structure that has recently forced its way into our world.  Kill whatever abomination lies at its heart.",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 8,
-    "value": 300000,
+    "value": 50000,
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
       "assign_mission_target": {
@@ -800,7 +847,8 @@
     "end": {
       "effect": [
         { "npc_add_var": "johnathan_mission_finale", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_buy_item": "CF_golden_scale", "count": 20 }
       ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_5_a" },

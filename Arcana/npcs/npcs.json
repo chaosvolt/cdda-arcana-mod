@@ -113,6 +113,30 @@
   },
   {
     "type": "npc",
+    "id": "sanguine_order_shrike_renegade",
+    "//": "Generic rogue member of the Sanguine Order, not immediately hostile.",
+    "name_suffix": "Sanguine Shrike",
+    "class": "NC_BLOOD_MAGE_SHRIKE_GENERIC",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER",
+    "faction": "sanguine_shrike_splinter"
+  },
+  {
+    "type": "npc",
+    "id": "sanguine_order_shrike_huntmaster",
+    "//": "Rogue member of the Sanguine Order, quest target.",
+    "name_unique": "Elena Crowell",
+    "name_suffix": "Huntmaster",
+    "gender": "female",
+    "class": "NC_BLOOD_MAGE_SHRIKE_HUNTMASTER",
+    "attitude": 1,
+    "mission": 7,
+    "chat": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER",
+    "faction": "sanguine_shrike_splinter"
+  },
+  {
+    "type": "npc",
     "id": "sanguine_order_magus",
     "//": "The specific person Jonathan sent you to kill, a proper magus.",
     "name_suffix": "Blood Mage",
