@@ -329,5 +329,21 @@
     "weight": "200 g",
     "volume": "500 ml",
     "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "arcana_radio_relay_beacon",
+    "symbol": ",",
+    "looks_like": "radio_repeater_mod",
+    "color": "light_gray",
+    "name": { "str": "relay beacon" },
+    "category": "spare_parts",
+    "description": "A rugged metal case containing a transceiver adapted from surplus military equipment, a set of connectors designed to hook up to a radio terminal, and a tracking device.  Somewhat makeshift in appearance, it seems to have been purpose-built for some specialized task.",
+    "material": "steel",
+    "weight": "21000 g",
+    "volume": "2 L",
+    "bashing": 4,
+    "to_hit": 1,
+    "flags": [ "TRADER_AVOID" ]
   }
 ]

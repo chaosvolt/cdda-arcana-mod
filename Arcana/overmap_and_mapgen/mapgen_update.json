@@ -1468,6 +1468,53 @@
   {
     "type": "mapgen",
     "method": "json",
+    "update_mapgen_id": "arcana_radio_station",
+    "object": {
+      "set": [
+        { "square": "furniture", "id": "f_null", "x": 19, "x2": 21, "y": 2, "y2": 3 },
+        { "point": "terrain", "id": "t_window_boarded", "x": 20, "y": 4 },
+        { "point": "terrain", "id": "t_door_boarded", "x": 18, "y": 3 },
+        { "line": "furniture", "id": "f_null", "x": 7, "x2": 9, "y": 17, "y2": 17 },
+        { "line": "terrain", "id": "t_door_boarded", "x": 2, "x2": 2, "y": 16, "y2": 17 },
+        { "square": "furniture", "id": "f_null", "x": 4, "x2": 5, "y": 20, "y2": 21 },
+        { "square": "furniture", "id": "f_null", "x": 7, "x2": 8, "y": 20, "y2": 21 },
+        { "square": "furniture", "id": "f_null", "x": 10, "x2": 11, "y": 20, "y2": 21 },
+        { "line": "terrain", "id": "t_window_boarded", "x": 4, "x2": 6, "y": 22, "y2": 22 },
+        { "line": "terrain", "id": "t_window_boarded", "x": 10, "x2": 12, "y": 22, "y2": 22 },
+        { "point": "furniture", "id": "f_null", "x": 20, "y": 17 },
+        { "point": "terrain", "id": "t_window_boarded", "x": 20, "y": 19 },
+        { "square": "furniture", "id": "f_null", "x": 3, "x2": 4, "y": 14, "y2": 14 },
+        { "point": "terrain", "id": "t_window_boarded", "x": 2, "y": 13 },
+        { "point": "furniture", "id": "f_null", "x": 8, "y": 7 },
+        { "point": "terrain", "id": "t_window_boarded", "x": 9, "y": 6 },
+        { "square": "furniture", "id": "f_null", "x": 5, "x2": 7, "y": 4, "y2": 5 },
+        { "point": "terrain", "id": "t_rdoor_b", "x": 9, "y": 4 },
+        { "line": "terrain", "id": "t_dirt", "x": 13, "x2": 15, "y": 1, "y2": 1 },
+        { "point": "terrain", "id": "t_dirt", "x": 14, "y": 11 },
+        { "square": "furniture", "id": "f_null", "x": 12, "x2": 14, "y": 12, "y2": 14 },
+        { "point": "terrain", "id": "f_floor", "x": 14, "y": 13 },
+        { "point": "terrain", "id": "t_dirt", "x": 15, "y": 13 },
+        { "point": "furniture", "id": "f_null", "x": 17, "y": 13 }
+      ],
+      "place_loot": [
+        { "item": "wire", "x": [ 12, 16 ], "y": [ 2, 3 ], "chance": 50, "repeat": 10 },
+        { "item": "pipe", "x": [ 12, 16 ], "y": [ 2, 3 ], "chance": 50, "repeat": 5 },
+        { "item": "scrap", "x": [ 12, 16 ], "y": [ 2, 3 ], "chance": 50, "repeat": 10 },
+        { "item": "splinter", "x": [ 12, 14 ], "y": [ 12, 14 ], "chance": 50, "repeat": 30 },
+        { "item": "e_scrap", "x": [ 12, 14 ], "y": [ 12, 14 ], "chance": 50, "repeat": 5 },
+        { "item": "scrap", "x": [ 12, 14 ], "y": [ 12, 14 ], "chance": 50, "repeat": 10 },
+        { "item": "glass_shard", "x": [ 16, 17 ], "y": [ 12, 14 ], "chance": 50, "repeat": 30 },
+        { "item": "splinter", "x": [ 17, 19 ], "y": 14, "chance": 50, "repeat": 10 },
+        { "item": "45_casing", "x": [ 20, 21 ], "y": [ 12, 14 ], "chance": 90, "repeat": 4 },
+        { "group": "arcane_purifier_radio_casualty", "x": 21, "y": 13 },
+        { "item": "broken_eyebot", "x": 10, "y": 4 },
+        { "item": "arcana_radio_relay_beacon", "x": 18, "y": 12 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
     "update_mapgen_id": "cf_church_upgrade_GM_1_a",
     "object": {
       "set": [

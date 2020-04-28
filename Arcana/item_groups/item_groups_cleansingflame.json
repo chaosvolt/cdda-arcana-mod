@@ -159,6 +159,17 @@
     ]
   },
   {
+    "id": "arcane_purifier_radio_casualty",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_zombie_scientist_death_drops" },
+      { "item": "somen_clairvoyance", "damage": [ 1, 4 ] },
+      { "item": "m1911", "charges": [ 0, 3 ], "damage": [ 0, 2 ] },
+      { "item": "corpse_halved_upper" }
+    ]
+  },
+  {
     "id": "rural_church_alchemy_stock",
     "type": "item_group",
     "items": [

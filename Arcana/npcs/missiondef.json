@@ -488,7 +488,7 @@
     "id": "MISSION_CF_REP_6",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
-    "name": "Secure Research From The Renegade Sanguine Shrikes",
+    "name": "Secure Research From The Renegade Shrikes",
     "description": "Find a suspected splinter faction of the Sanguine Order, who may have research and intel to bring back to Sofia.  Bring back any unique research they have.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 4,
@@ -496,7 +496,7 @@
     "has_generic_rewards": false,
     "item": "sanguine_mission_notes",
     "origins": [ "ORIGIN_SECONDARY" ],
-    "followup": "MISSION_CF_REP_6",
+    "followup": "MISSION_CF_REP_7",
     "start": {
       "assign_mission_target": {
         "om_terrain": "sanguine_holdout_2",
@@ -553,23 +553,34 @@
   },
   {
     "id": "MISSION_CF_REP_7",
-    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
-    "goal": "MGOAL_KILL_MONSTER",
-    "difficulty": 4,
-    "value": 150000,
+    "name": "Bring Back Relay Beacon",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 35000,
+    "has_generic_rewards": false,
+    "item": "arcana_radio_relay_beacon",
     "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "station_radio_1",
+        "reveal_radius": 3,
+        "cant_see": true
+      },
+      "update_mapgen": [
+        { "mapgen_update_id": "arcana_radio_station" }
+      ]
+    },
     "dialogue": {
-      "describe": "...",
-      "offer": "...",
-      "accepted": "...",
-      "rejected": "...",
-      "advice": "...",
-      "inquire": "...",
-      "success": "...",
-      "success_lie": "...",
-      "failure": "..."
+      "describe": "Odin, guide my hand...",
+      "offer": "We've been working on finishing up some improvements to our outpost here.  One I've been looking into is improving our radio, to help get in touch with others.  Not long ago we received a brief burst of radio chatter that will lead us to a chance at killing two birds with one stone.  One of our contacts from before the apocalypse had evidently secured a radio transmitter and established contact, before something knocked out the signal.  I'd like you to investigate.",
+      "accepted": "Thank you.  They'd secured a radio station in one of the old towns, I'd advise caution.  They confirmed the use of what they called a relay beacon to make use of the station's transmitter.  It not only contains what they used to get their signal across to us, but a tracker that whoever else they're working with can use to get in touch with us.  Return with that and we should be able to re-establish contact.",
+      "rejected": "Please, speak with me if you change your mind.  We don't know who else they might be in contact with, nor whether they might move on before we can get in touch with them.",
+      "advice": "Be prepared for a fight.  They mentioned being followed by something, and that's going to be in addition to the usual abominations that infest the cities.",
+      "inquire": "Have you found it?",
+      "success": "Thank you.  This should provide the finishing touches.  I'll get to work immediately, I know the rest of them were already looking for us.  They should be here shortly, now that we have the means to extend our signal as well as a signal they can track.  That should be everything we need for now.",
+      "success_lie": "What do you think you're trying to pull?",
+      "failure": "But how..."
     }
   },
   {
@@ -1064,6 +1075,48 @@
           "mapgen_update_id": "cf_church_upgrade_aux_e_2"
         }
       ]
+    }
+  },
+  {
+    "id": "MISSION_CF_PURIFIER_1",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
+    }
+  },
+  {
+    "id": "MISSION_CF_SCIENTIST_1",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
     }
   }
 ]
