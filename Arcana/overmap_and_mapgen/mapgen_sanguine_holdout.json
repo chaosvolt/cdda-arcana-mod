@@ -162,14 +162,14 @@
         ",,|-------+-|.....|.tt|,",
         ",,|nnsfo....|-+-|--+--|,",
         ",,|.............|...DB|,",
-        ",,WC...hh.......|....BW,",
-        ",,WC..heeh......+.....|,",
-        ",,WC..heeh......|-----|,",
-        ",,WC...hh.......+.dh.]|,",
+        ",,W{..hh........|....BW,",
+        ",,W{.heeh.......+.....|,",
+        ",,W{.heeh.......|-----|,",
+        ",,W{..hh........+.dh.]|,",
         ",,|.............|.d..]W,",
         ",,|.............|....]W,",
-        ",,|..|-W-xx-W-|-|].B..W,",
-        ",,|ee|EEEEEEEE|{+].BD.|,",
+        ",,|..|-W-xx-W-|-|]....W,",
+        ",,|ee|EEEEEEEE|D+].BB.|,",
         ",,|--|EEEEEEEE|--|----|,",
         ",,,,,EEIEEEEIEE,,,,,,,,,",
         ",,,,,,,,,,,,,,,,,,,,,,,,"
@@ -179,7 +179,7 @@
         "]": {
           "items": [ { "item": "mansion_books" }, { "item": "mansion_books", "chance": 50 }, { "item": "mansion_books", "chance": 25 } ]
         },
-        "C": {
+        "{": {
           "items": [
             { "item": "antique_guns", "chance": 50 },
             { "item": "antique_ammo", "chance": 50 },
@@ -190,8 +190,7 @@
           ]
         },
         "f": { "items": [ { "item": "fridgesnacks", "chance": 30 }, { "item": "fridge", "chance": 50 } ] },
-        "n": { "items": [ { "item": "cannedfood", "chance": 50 }, { "item": "cannedfood", "chance": 25 } ] },
-        "{": { "items": { "item": "butcher_tools", "chance": 50 } }
+        "n": { "items": [ { "item": "cannedfood", "chance": 50 }, { "item": "cannedfood", "chance": 25 } ] }
       },
       "place_loot": [ { "group": "sanguine_cult_consumables", "x": 7, "y": 5 }, { "item": "sanguine_mission_notes", "x": 7, "y": 5 } ],
       "faction_owner": [ { "id": "sanguine_shrike_splinter", "x": [ 3, 21 ], "y": [ 5, 20 ] } ],
@@ -217,7 +216,7 @@
       },
       "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "sanguine_order_remnant", "x": [ 3, 21 ], "y": [ 5, 20 ] } ],
       "place_npcs": [
-        { "class": "sanguine_order_shrike_huntmaster", "x": 6, "y": 14, "add_trait": "SHRIKE_MISSION_MARKER" },
+        { "class": "sanguine_order_shrike_huntmaster", "x": 5, "y": 14, "add_trait": "SHRIKE_MISSION_MARKER" },
         { "class": "sanguine_order_shrike_renegade", "x": 7, "y": 6 },
         { "class": "sanguine_order_shrike_renegade", "x": 19, "y": 16 }
       ]

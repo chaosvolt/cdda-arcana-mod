@@ -45,7 +45,12 @@
       {
         "text": "[MISSION] Sofia asked me to investigate a lead on a remnant of the Keepers.  She said you knew more about that?",
         "topic": "TALK_CF_GM_ADVICE_2",
-        "condition": { "u_has_mission": "MISSION_CF_REP_4" }
+        "condition": { "u_has_mission": "MISSION_CF_REP_5" }
+      },
+      {
+        "text": "[MISSION] Sofia asked me to investigate a lead on a band of renegade Sanguine Shrikes.  Do you have any advice?",
+        "topic": "TALK_CF_GM_ADVICE_3",
+        "condition": { "u_has_mission": "MISSION_CF_REP_6" }
       },
       {
         "text": "So, how are things working out with the new arrivals so far?",
@@ -137,6 +142,16 @@
       "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ],
       "yes": "I tracked their movements for some time intermittently, along with keeping tabs on other leads.  No sign of person contact with the remainder of the Keepers, but they were overtly been involved in anomalous activity within the past month prior to the beginning of all this.  I will trust you to retrieve any intel as you see fit given your connection to their order, but do exercise caution.",
       "no": "I tracked their movements for some time intermittently, along with keeping tabs on other leads.  No sign of person contact with the remainder of the Keepers, but they were overtly been involved in anomalous activity within the past month prior to the beginning of all this.  Keep your guard up, and deal with them as needed if they seem unlikely to cooperate.  We can't afford to let this intel slip out of our grasp."
+    },
+    "responses": [ { "text": "…", "topic": "TALK_CF_GM" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_GM_ADVICE_3",
+    "dynamic_line": {
+      "u_has_any_trait": [ "PROF_SANGUINE" ],
+      "yes": "You should know how dangerous the Shrikes are, sanguinist.  I doubt you'll be able to just walk in and charm them into giving us what we need, but you're welcome to try.  Personally I'd suggest you err on the side of caution.",
+      "no": "You can't be serious.  What, is she asking you to just walk in and make friends with them?  They're sanguinists, worse they're the ones trained to fight us.  They'll be expecting you, I'm certain.  If you insist on trying to handle this peacefully, you had better be ready for things to turn into an ambush if things go sour."
     },
     "responses": [ { "text": "…", "topic": "TALK_CF_GM" } ]
   },

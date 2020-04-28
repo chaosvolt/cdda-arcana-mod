@@ -322,11 +322,7 @@
     "worn_override": "NC_BLOOD_MAGE_SHRIKE_worn",
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_misc",
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_weapon",
-    "traits": [
-      { "group": "Appearance_demographics" },
-      { "group": "Arcanist_starting_traits" },
-      [ "PROF_SANGUINE", 100 ]
-    ]
+    "traits": [ { "group": "Appearance_demographics" }, { "group": "Arcanist_starting_traits" }, [ "PROF_SANGUINE", 100 ] ]
   },
   {
     "type": "npc_class",
@@ -358,6 +354,41 @@
       [ "hair_black_long", 100 ],
       [ "SKIN_MEDIUM", 100 ],
       [ "PROF_SANGUINE", 100 ]
+    ]
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_BLOOD_MAGE_SHRIKE_MERCHANT",
+    "name": "Shrike",
+    "job_description": "I'm just here to survive.",
+    "common": false,
+    "skills": [
+      { "skill": "magic", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "barter", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "fabrication", "level": { "rng": [ 2, 4 ] } },
+      { "skill": "survival", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "bashing", "level": { "rng": [ 2, 4 ] } },
+      { "skill": "cutting", "level": { "rng": [ 4, 7 ] } },
+      { "skill": "stabbing", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "unarmed", "level": { "rng": [ 2, 4 ] } },
+      { "skill": "archery", "level": { "rng": [ 2, 4 ] } },
+      { "skill": "dodge", "level": { "rng": [ 3, 6 ] } },
+      { "skill": "melee", "level": { "rng": [ 4, 7 ] } },
+      { "skill": "gun", "level": { "rng": [ 2, 4 ] } }
+    ],
+    "worn_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_worn",
+    "carry_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_misc",
+    "weapon_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_weapon",
+    "traits": [
+      { "group": "Appearance_demographics" },
+      { "group": "Arcanist_starting_traits" },
+      [ "hair_black_short", 100 ],
+      [ "SKIN_LIGHT", 100 ],
+      [ "PROF_SANGUINE", 100 ],
+      [ "PSYCHOPATH", 100 ],
+      [ "TERRIFYING", 100 ],
+      [ "BADTEMPER", 100 ],
+      [ "DEFT", 100 ]
     ]
   },
   {
@@ -911,6 +942,38 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [ { "item": "butterfly_swords" } ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_shorts" },
+      { "item": "socks" },
+      { "item": "armor_wyrm" },
+      { "item": "cloak" },
+      { "item": "gloves_plate" },
+      { "item": "helmet_nasal" },
+      { "item": "backpack" }
+    ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "zweihander" } ]
+  },
+  {
+    "id": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_misc",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "CF_golden_scale", "count": [ 15, 30 ] },
+      { "item": "matches" },
+      { "group": "stash_food", "count": [ 2, 4 ] },
+      { "group": "rural_church_medical_items", "count": [ 1, 3 ] },
+      { "item": "essence_blood", "charges": [ 5, 10 ] }
+    ]
   },
   {
     "id": "NC_BLOOD_MAGE_MAGUS_worn",

@@ -811,6 +811,11 @@
   },
   {
     "type": "effect_type",
+    "id": "shrike_inquire_denied",
+    "//": "This marks a player as having asking Elena for intel and failed the roll, no name or description since this one is player-side.  Intended duration 3 hours."
+  },
+  {
+    "type": "effect_type",
     "id": "hermit_earned_trust_1",
     "//": "This marks a player as having talked The Hermit into revealing general familiarity with the arcane.  Intended to be permanent."
   },

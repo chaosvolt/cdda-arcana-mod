@@ -96,7 +96,7 @@
     "dialogue": {
       "describe": "Perhaps we shall at last atone...",
       "offer": "This is a task not to be taken lightly, and I can understand if you deem yourself unprepared.  We had a temple once, built on flying stone, over ground marked by a fallen star.  There, our last effort to serve Him failed.  There remains a dangerous threat that broke our order, and a fallen relic.  If I could see that relic once again, tainted though it may be, I can rest in peace when my time comes.",
-      "accepted": "Thank you.  My He From Beyond The Veil guide you, or failing that whatever other gods you serve.  I will tell you where to go, but I'm afraid I can't lead you there personally.  I ask that you retrieve the cursed blade and bring it here, and then I will explain further.  Beware the unholy monsters likely to still infest the temple, and ...what remains of the high priest.",
+      "accepted": "Thank you.  May He From Beyond The Veil guide you, or failing that whatever other gods you serve.  I will tell you where to go, but I'm afraid I can't lead you there personally.  I ask that you retrieve the cursed blade and bring it here, and then I will explain further.  Beware the unholy monsters likely to still infest the temple, and ...what remains of the high priest.",
       "rejected": "I understand.  The threat that defiles the old temple is not to be underestimated.  If I felt I could make the journey, I would attempt it myself, even if I failed I could die knowing I did the right thing.  Seek my guidance if you change your mind.",
       "advice": "You will likely have to kill the abomination inhabiting the body of the temple's former high priest.  I know not what weapons he may still carry, nor what unholy power the spirit possessing him commands, but be careful and expect anything.  Most likely he will have turned our own symbol of judgment on his congregation, meaning you'll have to expect lightning magic.",
       "inquire": "Have you completed this task?",
@@ -509,6 +509,16 @@
         "min_distance": 20
       },
       "update_mapgen": [
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_7_a" ], "x": 3, "y": 4 } ]
+        },
+        {
+          "om_terrain": "cf_church_2_roof",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_7_b" ], "x": 2, "y": 3 } ]
+        }
       ]
     },
     "dialogue": {
@@ -517,7 +527,7 @@
       "accepted": "Thank you.  Be careful, they seem to have actively engaged in hostilities against regular sanguinist sects, but we don't know how divergent they are.  They might still be hostile to us.  Attempt to talk them into cooperating peacefully if you can, but expect a fight.",
       "rejected": "If you change your mind, see me about it.  I'm reluctant to deal with sanguinists given we don't know if they're still engaged in hostilities, but securing whatever they found will be useful to us.",
       "advice": "Be careful.  They'll likely know you're coming before you even see them, be prepared for a confrontation, or worse an ambush.",
-      "inquire": "What have you found?",
+      "inquire": "Do you have it?",
       "success": "I'll be careful with this.  Some of it may benefit our own research, but the general rule of thumb is to avoid extensive work with any developments that require blood magic or dimensional alteration to function.  I hope that I didn't put you in too great a danger sending you after them.",
       "success_lie": "What do you think you're trying to pull?",
       "failure": "But how..."
@@ -528,6 +538,16 @@
         { "u_buy_item": "CF_golden_scale", "count": 14 }
       ],
       "update_mapgen": [
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_8_a" ], "x": 8, "y": 4 } ]
+        },
+        {
+          "om_terrain": "cf_church_2_roof",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_8_b"
+        }
       ]
     }
   },

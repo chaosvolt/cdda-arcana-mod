@@ -46,7 +46,7 @@
       { "text": "Who are you?", "topic": "TALK_CF_DEACON_WHO" },
       { "text": "What do you do here?", "topic": "TALK_CF_DEACON_DO" },
       {
-        "text": "Just passing through.  Need help with anything?",
+        "text": "Need help with anything?",
         "condition": { "not": { "u_has_effect": "already_asked_deacon" } },
         "topic": "TALK_CF_DEACON_HELP"
       },

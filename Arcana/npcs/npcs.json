@@ -131,9 +131,22 @@
     "gender": "female",
     "class": "NC_BLOOD_MAGE_SHRIKE_HUNTMASTER",
     "attitude": 1,
-    "mission": 7,
+    "mission": 3,
     "chat": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER",
     "faction": "sanguine_shrike_splinter"
+  },
+  {
+    "type": "npc",
+    "id": "cf_shrike_merchant",
+    "//": "Former Sanguine Shrike, optional merchant and dialogue source.",
+    "name_unique": "Horace Blackwell",
+    "name_suffix": "Shrike",
+    "gender": "male",
+    "class": "NC_BLOOD_MAGE_SHRIKE_MERCHANT",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_SHRIKE_MERCHANT",
+    "faction": "cleansing_flame"
   },
   {
     "type": "npc",
