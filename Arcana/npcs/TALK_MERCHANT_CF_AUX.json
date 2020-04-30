@@ -19,7 +19,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_1" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_1",
             "om_terrain": "cf_church_1",
@@ -30,7 +30,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_2" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_2",
             "om_terrain": "cf_church_1",
@@ -41,7 +41,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_3" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_3",
             "om_terrain": "cf_church_1",
@@ -52,7 +52,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_4" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_4",
             "om_terrain": "cf_church_1",
@@ -63,7 +63,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_5" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_5",
             "om_terrain": "cf_church_1",
@@ -74,7 +74,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_6" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_6",
             "om_terrain": "cf_church_3",
@@ -85,7 +85,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_7" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_7",
             "om_terrain": "cf_church_1",
@@ -96,7 +96,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_8" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_8",
             "om_terrain": "cf_church_3",

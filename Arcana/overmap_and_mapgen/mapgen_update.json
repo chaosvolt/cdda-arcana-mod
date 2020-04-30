@@ -1415,7 +1415,7 @@
         { "group": "rural_church_restock_scales", "x": [ 9, 10 ], "y": 4 }
       ],
       "faction_owner": [ { "id": "cleansing_flame", "x": [ 9, 10 ], "y": 4 } ],
-      "place_npcs": [ { "class": "cf_shrike_merchant", "x": 11, "y": 5 } ]
+      "place_npcs": [ { "class": "cf_shrike_merchant", "x": 9, "y": 5 } ]
     }
   },
   {
@@ -1468,6 +1468,41 @@
   {
     "type": "mapgen",
     "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_9_a",
+    "object": {
+      "set": [
+        { "square": "terrain", "id": "t_rock_floor_no_roof", "x": 18, "x2": 23, "y": 16, "y2": 21 },
+        { "point": "terrain", "id": "t_drystone_wall_half", "x": 18, "y": 16 },
+        { "point": "terrain", "id": "t_drystone_wall_half", "x": 18, "y": 21 },
+        { "point": "furniture", "id": "f_arcane_candlestick", "x": 20, "y": 17 },
+        { "point": "furniture", "id": "f_arcane_candlestick", "x": 20, "y": 20 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_9_b",
+    "object": {
+      "set": [
+        { "square": "terrain", "id": "t_rock_floor_no_roof", "x": 0, "x2": 3, "y": 16, "y2": 21 },
+        { "point": "terrain", "id": "t_drystone_wall_half", "x": 3, "y": 16 },
+        { "point": "terrain", "id": "t_drystone_wall_half", "x": 3, "y": 21 },
+        { "point": "furniture", "id": "f_arcane_candlestick", "x": 1, "y": 17 },
+        { "point": "furniture", "id": "f_arcane_candlestick", "x": 1, "y": 20 },
+        { "point": "furniture", "id": "f_kiln_empty", "x": 3, "y": 4 },
+        { "point": "furniture", "id": "f_workbench", "x": 4, "y": 4 },
+        { "point": "furniture", "id": "f_anvil", "x": 5, "y": 4 },
+        { "point": "furniture", "id": "f_forge", "x": 6, "y": 4 },
+        { "line": "furniture", "id": "f_rack_wood", "x": 3, "x2": 3, "y": 6, "y2": 8 },
+        { "point": "furniture", "id": "f_rack_wood", "x": 6, "y": 8 },
+        { "line": "furniture", "id": "f_counter", "x": 4, "x2": 5, "y": 9, "y2": 9 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
     "update_mapgen_id": "arcana_radio_station",
     "object": {
       "set": [
@@ -1488,28 +1523,88 @@
         { "point": "furniture", "id": "f_null", "x": 8, "y": 7 },
         { "point": "terrain", "id": "t_window_boarded", "x": 9, "y": 6 },
         { "square": "furniture", "id": "f_null", "x": 5, "x2": 7, "y": 4, "y2": 5 },
-        { "point": "terrain", "id": "t_rdoor_b", "x": 9, "y": 4 },
+        { "point": "terrain", "id": "t_rdoor_c", "x": 9, "y": 4 },
         { "line": "terrain", "id": "t_dirt", "x": 13, "x2": 15, "y": 1, "y2": 1 },
-        { "point": "terrain", "id": "t_dirt", "x": 14, "y": 11 },
-        { "square": "furniture", "id": "f_null", "x": 12, "x2": 14, "y": 12, "y2": 14 },
-        { "point": "terrain", "id": "f_floor", "x": 14, "y": 13 },
-        { "point": "terrain", "id": "t_dirt", "x": 15, "y": 13 },
+        { "point": "terrain", "id": "t_brick_wall_halfway", "x": 12, "y": 11 },
+        { "line": "terrain", "id": "t_dirt", "x": 13, "x2": 14, "y": 11, "y2": 11 },
+        { "square": "furniture", "id": "f_null", "x": 12, "x2": 14, "y": 8, "y2": 14 },
+        { "point": "terrain", "id": "t_floor", "x": 14, "y": 13 },
+        { "line": "terrain", "id": "t_window_frame", "x": 15, "x2": 15, "y": 12, "y2": 14 },
+        { "line": "terrain", "id": "t_window_empty", "x": 15, "x2": 15, "y": 13, "y2": 14 },
+        { "line": "terrain", "id": "t_door_frame", "x": 15, "x2": 15, "y": 14, "y2": 14 },
         { "point": "furniture", "id": "f_null", "x": 17, "y": 13 }
       ],
       "place_loot": [
         { "item": "wire", "x": [ 12, 16 ], "y": [ 2, 3 ], "chance": 50, "repeat": 10 },
         { "item": "pipe", "x": [ 12, 16 ], "y": [ 2, 3 ], "chance": 50, "repeat": 5 },
         { "item": "scrap", "x": [ 12, 16 ], "y": [ 2, 3 ], "chance": 50, "repeat": 10 },
+        { "item": "pipe", "x": [ 12, 16 ], "y": [ 6, 10 ], "chance": 50, "repeat": 10 },
+        { "item": "scrap", "x": [ 12, 16 ], "y": [ 6, 10 ], "chance": 50, "repeat": 30 },
         { "item": "splinter", "x": [ 12, 14 ], "y": [ 12, 14 ], "chance": 50, "repeat": 30 },
         { "item": "e_scrap", "x": [ 12, 14 ], "y": [ 12, 14 ], "chance": 50, "repeat": 5 },
         { "item": "scrap", "x": [ 12, 14 ], "y": [ 12, 14 ], "chance": 50, "repeat": 10 },
-        { "item": "glass_shard", "x": [ 16, 17 ], "y": [ 12, 14 ], "chance": 50, "repeat": 30 },
+        { "item": "rock", "x": [ 12, 14 ], "y": [ 12, 14 ], "chance": 50, "repeat": 20 },
+        { "item": "brick", "x": [ 12, 14 ], "y": [ 12, 14 ], "chance": 50, "repeat": 10 },
+        { "item": "glass_shard", "x": [ 16, 17 ], "y": [ 12, 14 ], "chance": 50, "repeat": 40 },
+        { "item": "splinter", "x": [ 16, 17 ], "y": [ 12, 14 ], "chance": 50, "repeat": 10 },
         { "item": "splinter", "x": [ 17, 19 ], "y": 14, "chance": 50, "repeat": 10 },
         { "item": "45_casing", "x": [ 20, 21 ], "y": [ 12, 14 ], "chance": 90, "repeat": 4 },
         { "group": "arcane_purifier_radio_casualty", "x": 21, "y": 13 },
-        { "item": "broken_eyebot", "x": 10, "y": 4 },
+        { "item": "broken_eyebot", "x": 10, "y": 5 },
         { "item": "arcana_radio_relay_beacon", "x": 18, "y": 12 }
+      ],
+      "place_fields": [
+        { "x": 21, "y": 13, "field": "fd_blood", "intensity": 3 },
+        { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_blood", "intensity": 1 },
+        { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_blood", "intensity": 1 },
+        { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_blood", "intensity": 1 },
+        { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_blood", "intensity": 1 },
+        { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_blood", "intensity": 1 },
+        { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_blood", "intensity": 1 },
+        { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_gibs_flesh", "intensity": 1 },
+        { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_gibs_flesh", "intensity": 1 },
+        { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_gibs_flesh", "intensity": 1 }
+      ],
+      "place_monster": [
+        { "monster": "mon_jabberwock", "x": 20, "y": 12 }
       ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_10_a",
+    "object": {
+      "set": [
+        { "point": "terrain", "id": "t_drystone_wall", "x": 18, "y": 16 },
+        { "point": "terrain", "id": "t_drystone_wall", "x": 18, "y": 21 }
+      ],
+      "place_loot": [
+        { "item": "candle_warding_special", "x": 20, "y": 17 },
+        { "item": "candle_warding_special", "x": 20, "y": 20 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "cf_church_upgrade_10_b",
+    "object": {
+      "set": [
+        { "point": "terrain", "id": "t_drystone_wall", "x": 3, "y": 16 },
+        { "point": "terrain", "id": "t_drystone_wall", "x": 3, "y": 21 }
+      ],
+      "place_loot": [
+        { "item": "candle_warding_special", "x": 1, "y": 17 },
+        { "item": "candle_warding_special", "x": 1, "y": 20 },
+        { "group": "rural_church_restock_scales", "x": 3, "y": 6 },
+        { "group": "tools_science", "x": 3, "y": [ 6, 8 ], "chance": 50, "repeat": 5 },
+        { "group": "supplies_reagents_lab", "x": 3, "y": [ 6, 8 ], "chance": 50, "repeat": 5 },
+        { "group": "bionics", "x": 3, "y": [ 6, 8 ], "chance": 25, "repeat": 5 },
+        { "group": "metal_workshop", "x": 6, "y": 8, "chance": 75, "repeat": 10 }
+      ],
+      "faction_owner": [ { "id": "cleansing_flame", "x": 3, "y": [ 6, 8 ] }, { "id": "cleansing_flame", "x": 6, "y": 8 } ],
+      "place_npcs": [ { "class": "cleansing_flame_purifier_merchant", "x": 5, "y": 8 }, { "class": "cleansing_flame_purifier_rep", "x": 12, "y": 5, "add_trait": "FIX_CF_GM" } ]
     }
   },
   {

@@ -431,12 +431,6 @@
     ]
   },
   {
-    "id": "TALK_CF_GM_TBC",
-    "type": "talk_topic",
-    "dynamic_line": "Not at the moment, but check back another time.  I might have something for you then.",
-    "responses": [ { "text": "Okay.", "topic": "TALK_CF_GM" } ]
-  },
-  {
     "id": "TALK_CF_GM_WHO",
     "type": "talk_topic",
     "dynamic_line": "My name is Johnathan Leone.  I was among the founders of our order, as was Sofia it seems.  Before the founding, I held the title of Grandmaster among the order I was once a part of.",

@@ -80,6 +80,32 @@
   },
   {
     "type": "npc",
+    "id": "cleansing_flame_purifier_rep",
+    "//": "Future mission source.",
+    "name_unique": "Nicholas Hartman",
+    "name_suffix": "Arcane Purifier",
+    "gender": "male",
+    "class": "NC_DOCTOR",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_CF_PURIFIER",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_PURIFIER_1"
+  },
+  {
+    "type": "npc",
+    "id": "cleansing_flame_purifier_merchant",
+    "//": "Minor merchant.",
+    "name_suffix": "Arcane Purifier",
+    "class": "NC_SCIENTIST",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_CF_PURIFIER",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_PURIFIER_2"
+  },
+  {
+    "type": "npc",
     "id": "sanguine_order_apprentice_generic",
     "//": "Sanguine Order cannon fodder, in an area you're not supposed to be in.",
     "name_suffix": "Apprentice",

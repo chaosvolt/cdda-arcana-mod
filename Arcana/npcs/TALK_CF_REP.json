@@ -33,7 +33,7 @@
     "speaker_effect": {
       "condition": { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } },
       "effect": [
-        { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+        { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
         { "mapgen_update": "cf_church_sofia_restock", "om_terrain": "cf_church_4", "om_special": "cf_rural_church" }
       ]
     },
@@ -645,12 +645,6 @@
       { "text": "Why are you called Thane?", "topic": "TALK_CF_REP_THANE" },
       { "text": "I see.  That is all for now.", "topic": "TALK_CF_REP" }
     ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_CF_REP_TBC",
-    "dynamic_line": "Not at the moment.  Check back later, and I should have more for you.",
-    "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",

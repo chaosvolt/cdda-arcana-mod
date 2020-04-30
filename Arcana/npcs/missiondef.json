@@ -291,7 +291,7 @@
     "description": "Deliver the trade arrangements to the merchant at the refugee center, along with the Golden Scales provided for the deal.  Return to Sofia with the receipt that will be provided.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,
-    "value": 12500,
+    "value": 10000,
     "has_generic_rewards": false,
     "item": "cf_rep_trade_receipt",
     "start": {
@@ -312,7 +312,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 5 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 4 } ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_1",
@@ -334,7 +334,7 @@
     "description": "Hunt down a monster of unknown nature nearby.  Optionally recruit one of the church's guards to assist.",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
-    "value": 20000,
+    "value": 15000,
     "has_generic_rewards": false,
     "start": {
       "assign_mission_target": { "om_terrain": "forest_thick", "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 5 },
@@ -443,7 +443,7 @@
     "description": "Find a suspected remnant of the Keepers, who may have research and intel to bring back to Sofia.  Sofia advised that the information being sought might be preserved on something more durable than a book.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 4,
-    "value": 30000,
+    "value": 25000,
     "has_generic_rewards": false,
     "item": "offering_mission_notes",
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -473,7 +473,7 @@
       "effect": [
         { "npc_add_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_buy_item": "CF_golden_scale", "count": 12 }
+        { "u_buy_item": "CF_golden_scale", "count": 10 }
       ],
       "update_mapgen": [
         {
@@ -492,7 +492,7 @@
     "description": "Find a suspected splinter faction of the Sanguine Order, who may have research and intel to bring back to Sofia.  Bring back any unique research they have.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 4,
-    "value": 35000,
+    "value": 30000,
     "has_generic_rewards": false,
     "item": "sanguine_mission_notes",
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -533,10 +533,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_buy_item": "CF_golden_scale", "count": 14 }
-      ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_2",
@@ -555,6 +552,7 @@
     "id": "MISSION_CF_REP_7",
     "type": "mission_definition",
     "name": "Bring Back Relay Beacon",
+    "description": "Retrieve a radio relay beacon from a radio station recently secured by a contact allied with the Cleansing Flame.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "value": 35000,
@@ -562,13 +560,11 @@
     "item": "arcana_radio_relay_beacon",
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
-      "assign_mission_target": {
-        "om_terrain": "station_radio_1",
-        "reveal_radius": 3,
-        "cant_see": true
-      },
+      "assign_mission_target": { "om_terrain": "station_radio_1", "reveal_radius": 3, "cant_see": true },
       "update_mapgen": [
-        { "mapgen_update_id": "arcana_radio_station" }
+        { "mapgen_update_id": "arcana_radio_station" },
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_9_a" },
+        { "om_terrain": "cf_church_2", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_9_b" }
       ]
     },
     "dialogue": {
@@ -581,6 +577,13 @@
       "success": "Thank you.  This should provide the finishing touches.  I'll get to work immediately, I know the rest of them were already looking for us.  They should be here shortly, now that we have the means to extend our signal as well as a signal they can track.  That should be everything we need for now.",
       "success_lie": "What do you think you're trying to pull?",
       "failure": "But how..."
+    },
+    "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 14 } ],
+      "update_mapgen": [
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_10_a" },
+        { "om_terrain": "cf_church_2", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_10_b" }
+      ]
     }
   },
   {
@@ -591,13 +594,13 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "item": "scourge_staff",
-    "value": 20000,
+    "value": 15000,
     "has_generic_rewards": false,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_2",
     "start": { "assign_mission_target": { "om_terrain": "strange_grove", "reveal_radius": 3, "z": 0 } },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 8 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 6 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_1_a" },
         {
@@ -637,13 +640,13 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "item": "hand_of_armok",
-    "value": 30000,
+    "value": 20000,
     "has_generic_rewards": false,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_3",
     "start": { "assign_mission_target": { "om_terrain": "curious_structure", "reveal_radius": 3, "z": 0 } },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_2_a" },
         {
@@ -682,7 +685,7 @@
     "description": "Kill the blood mage in charge of a local Sanguine Order sect.  Optionally recruit one of the church's guards to assist.",
     "goal": "MGOAL_ASSASSINATE",
     "difficulty": 10,
-    "value": 30000,
+    "value": 25000,
     "has_generic_rewards": false,
     "start": {
       "assign_mission_target": {
@@ -707,7 +710,7 @@
       "effect": [
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
-        { "u_buy_item": "CF_golden_scale", "count": 12 }
+        { "u_buy_item": "CF_golden_scale", "count": 10 }
       ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_3_a" },
@@ -846,7 +849,11 @@
           "om_special": "arcana_anomaly_resurgence",
           "place_monster": [ { "monster": "mon_seraphic_shade", "x": 20, "y": 5, "target": true } ]
         },
-        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_4_a" },
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_4_a"
+        },
         {
           "om_terrain": "cf_church_2",
           "om_special": "cf_rural_church",
@@ -1079,6 +1086,27 @@
   },
   {
     "id": "MISSION_CF_PURIFIER_1",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
+    }
+  },
+  {
+    "id": "MISSION_CF_PURIFIER_2",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
     "name": "Placeholder Mission",
