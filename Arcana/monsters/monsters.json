@@ -1216,12 +1216,7 @@
         "fake_per": 9,
         "max_ammo": 1000,
         "ranges": [ [ 2, 15, "DEFAULT" ] ],
-        "require_targeting_player": true,
-        "require_targeting_npc": true,
-        "require_targeting_monster": true,
-        "targeting_cost": 100,
-        "targeting_sound": "an ominous hum!",
-        "targeting_volume": 50,
+        "require_targeting_player": false,
         "description": "A radiant beam of otherworldly energy lances out from the seraphic shade's body!",
         "no_ammo_sound": "a horrific screech!"
       },
