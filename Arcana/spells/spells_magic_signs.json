@@ -25,8 +25,7 @@
     "energy_increment": -1,
     "min_duration": 48000,
     "max_duration": 144000,
-    "duration_increment": 9600,
-    "spell_class": "SPELL_AGILE"
+    "duration_increment": 9600
   },
   {
     "id": "arcana_magic_capacitance",
@@ -77,8 +76,7 @@
     "energy_increment": -1.4,
     "min_duration": 72000,
     "max_duration": 216000,
-    "duration_increment": 14400,
-    "spell_class": "SPELL_CLAIRVOYANCE"
+    "duration_increment": 14400
   },
   {
     "id": "arcana_magic_clarity_blood",
@@ -106,8 +104,7 @@
     "energy_increment": -1,
     "min_duration": 24000,
     "max_duration": 72000,
-    "duration_increment": 4800,
-    "spell_class": "SPELL_CLARITY"
+    "duration_increment": 4800
   },
   {
     "id": "arcana_magic_cold_ward",
@@ -135,8 +132,7 @@
     "energy_increment": -1.2,
     "min_duration": 30000,
     "max_duration": 90000,
-    "duration_increment": 6000,
-    "spell_class": "SPELL_FROSTARMORLESSER"
+    "duration_increment": 6000
   },
   {
     "id": "arcana_magic_confuse_monster",
@@ -165,8 +161,7 @@
     "energy_increment": -0.8,
     "min_duration": 600,
     "max_duration": 2400,
-    "duration_increment": 180,
-    "spell_class": "SPELL_CONFUSE"
+    "duration_increment": 180
   },
   {
     "id": "arcana_magic_conjure_acid",
@@ -211,8 +206,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.5,
-    "spell_class": "SPELL_ACID"
+    "field_intensity_variance": 0.5
   },
   {
     "id": "arcana_magic_conjure_flame",
@@ -287,8 +281,7 @@
     "casting_time_increment": -9,
     "base_energy_cost": 90,
     "final_energy_cost": 72,
-    "energy_increment": -1.8,
-    "spell_class": "SPELL_CONSECRATELESSER"
+    "energy_increment": -1.8
   },
   {
     "id": "arcana_magic_dampening",
@@ -344,8 +337,7 @@
     "energy_increment": -2,
     "min_duration": 120000,
     "max_duration": 360000,
-    "duration_increment": 24000,
-    "spell_class": "SPELL_ECLIPSE"
+    "duration_increment": 24000
   },
   {
     "id": "arcana_magic_elemental_burst",
@@ -379,8 +371,7 @@
     "energy_source": "FATIGUE",
     "base_energy_cost": 80,
     "final_energy_cost": 64,
-    "energy_increment": -1.6,
-    "spell_class": "SPELL_ELEMENTALBURST"
+    "energy_increment": -1.6
   },
   {
     "id": "arcana_magic_free_action",
@@ -408,8 +399,7 @@
     "energy_increment": -1.4,
     "min_duration": 72000,
     "max_duration": 216000,
-    "duration_increment": 14400,
-    "spell_class": "SPELL_FREEACTION"
+    "duration_increment": 14400
   },
   {
     "id": "arcana_magic_healing",
@@ -440,8 +430,7 @@
     "skill": "magic",
     "min_duration": 100,
     "max_duration": 100,
-    "energy_source": "FATIGUE",
-    "spell_class": "SPELL_HEAL"
+    "energy_source": "FATIGUE"
   },
   {
     "id": "arcana_magic_heat_ward",
@@ -469,8 +458,7 @@
     "energy_increment": -1.2,
     "min_duration": 30000,
     "max_duration": 90000,
-    "duration_increment": 6000,
-    "spell_class": "SPELL_FLAMEARMOR"
+    "duration_increment": 6000
   },
   {
     "id": "arcana_magic_insight",
@@ -498,8 +486,7 @@
     "energy_increment": -0.8,
     "min_duration": 36000,
     "max_duration": 108000,
-    "duration_increment": 7200,
-    "spell_class": "SPELL_INSIGHT"
+    "duration_increment": 7200
   },
   {
     "id": "arcana_magic_light",
@@ -559,8 +546,7 @@
     "energy_increment": -1,
     "min_duration": 24000,
     "max_duration": 72000,
-    "duration_increment": 4800,
-    "spell_class": "SPELL_ELECRESIST"
+    "duration_increment": 4800
   },
   {
     "id": "arcana_magic_might",
@@ -588,8 +574,7 @@
     "energy_increment": -1.2,
     "min_duration": 60000,
     "max_duration": 180000,
-    "duration_increment": 12000,
-    "spell_class": "SPELL_STRENGTH"
+    "duration_increment": 12000
   },
   {
     "id": "arcana_magic_open_lock",
@@ -650,8 +635,7 @@
     "casting_time_increment": -4,
     "base_energy_cost": 40,
     "final_energy_cost": 32,
-    "energy_increment": -0.8,
-    "spell_class": "SPELL_PLANTS"
+    "energy_increment": -0.8
   },
   {
     "id": "arcana_magic_poison_armor",
@@ -705,8 +689,7 @@
     "energy_increment": -1.4,
     "min_duration": 72000,
     "max_duration": 216000,
-    "duration_increment": 14400,
-    "spell_class": "SPELL_SHADOWSNAKES"
+    "duration_increment": 14400
   },
   {
     "id": "arcana_magic_shockstorm",
@@ -751,8 +734,7 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.5,
-    "spell_class": "SPELL_LIGHTNING"
+    "field_intensity_variance": 0.5
   },
   {
     "id": "arcana_magic_sundering_quake",
@@ -786,8 +768,7 @@
     "casting_time_increment": -5,
     "base_energy_cost": 50,
     "final_energy_cost": 40,
-    "energy_increment": -1,
-    "spell_class": "SPELL_SUNDERINGQUAKE"
+    "energy_increment": -1
   },
   {
     "id": "arcana_magic_summon_giant_centipedes",
@@ -820,8 +801,7 @@
     "energy_increment": -1.4,
     "min_duration": 900000,
     "max_duration": 7200000,
-    "duration_increment": 630000,
-    "spell_class": "SPELL_BUGSLESSER"
+    "duration_increment": 630000
   },
   {
     "id": "arcana_magic_summon_skeletal_dog",
@@ -969,7 +949,6 @@
     "energy_increment": -1.2,
     "min_duration": 30000,
     "max_duration": 90000,
-    "duration_increment": 6000,
-    "spell_class": "SPELL_CLERIC"
+    "duration_increment": 6000
   }
 ]
