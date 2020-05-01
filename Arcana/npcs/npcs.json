@@ -80,6 +80,32 @@
   },
   {
     "type": "npc",
+    "id": "cleansing_flame_purifier_rep",
+    "//": "Future mission source.",
+    "name_unique": "Nicholas Hartman",
+    "name_suffix": "Arcane Purifier",
+    "gender": "male",
+    "class": "NC_DOCTOR",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_CF_PURIFIER",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_PURIFIER_1"
+  },
+  {
+    "type": "npc",
+    "id": "cleansing_flame_purifier_merchant",
+    "//": "Minor merchant.",
+    "name_suffix": "Arcane Purifier",
+    "class": "NC_SCIENTIST",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_CF_PURIFIER",
+    "faction": "cleansing_flame",
+    "mission_offered": "MISSION_CF_PURIFIER_2"
+  },
+  {
+    "type": "npc",
     "id": "sanguine_order_apprentice_generic",
     "//": "Sanguine Order cannon fodder, in an area you're not supposed to be in.",
     "name_suffix": "Apprentice",
@@ -110,6 +136,43 @@
     "mission": 7,
     "chat": "TALK_BLOOD_MAGE_SHRIKE_ROGUE",
     "faction": "sanguine_order_remnant"
+  },
+  {
+    "type": "npc",
+    "id": "sanguine_order_shrike_renegade",
+    "//": "Generic rogue member of the Sanguine Order, not immediately hostile.",
+    "name_suffix": "Sanguine Shrike",
+    "class": "NC_BLOOD_MAGE_SHRIKE_GENERIC",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER",
+    "faction": "sanguine_shrike_splinter"
+  },
+  {
+    "type": "npc",
+    "id": "sanguine_order_shrike_huntmaster",
+    "//": "Rogue member of the Sanguine Order, quest target.",
+    "name_unique": "Elena Crowell",
+    "name_suffix": "Huntmaster",
+    "gender": "female",
+    "class": "NC_BLOOD_MAGE_SHRIKE_HUNTMASTER",
+    "attitude": 1,
+    "mission": 3,
+    "chat": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER",
+    "faction": "sanguine_shrike_splinter"
+  },
+  {
+    "type": "npc",
+    "id": "cf_shrike_merchant",
+    "//": "Former Sanguine Shrike, optional merchant and dialogue source.",
+    "name_unique": "Horace Blackwell",
+    "name_suffix": "Shrike",
+    "gender": "male",
+    "class": "NC_BLOOD_MAGE_SHRIKE_MERCHANT",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_SHRIKE_MERCHANT",
+    "faction": "cleansing_flame"
   },
   {
     "type": "npc",

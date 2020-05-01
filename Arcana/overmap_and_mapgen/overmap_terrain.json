@@ -351,7 +351,23 @@
   },
   {
     "type": "overmap_terrain",
+    "id": "sanguine_holdout_roof",
+    "name": "cabin roof",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
     "id": "sanguine_holdout_1",
+    "name": "cabin",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sanguine_holdout_2",
     "name": "cabin",
     "sym": "C",
     "color": "i_green",
@@ -381,5 +397,58 @@
     "copy-from": "generic_city_building",
     "color": "light_green",
     "see_cost": 2
+  },
+  {
+    "id": "arcana_field_anomalous_buffer",
+    "type": "overmap_terrain",
+    "name": "field",
+    "sym": ".",
+    "color": "brown",
+    "see_cost": 2,
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "id": "arcana_structure_anomalous_roof",
+    "type": "overmap_terrain",
+    "name": "unidentified anomalous structure roof",
+    "sym": "T",
+    "color": "i_light_gray",
+    "see_cost": 5
+  },
+  {
+    "id": "arcana_structure_anomalous_surface",
+    "type": "overmap_terrain",
+    "name": "unidentified anomalous structure",
+    "sym": "T",
+    "color": "i_light_gray",
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "id": "arcana_structure_anomalous_entrance",
+    "type": "overmap_terrain",
+    "name": "unidentified anomalous structure",
+    "sym": "T",
+    "color": "i_light_gray",
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "id": "arcana_structure_anomalous_underground",
+    "type": "overmap_terrain",
+    "name": "unidentified anomalous structure",
+    "sym": "T",
+    "color": "i_light_gray",
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "id": "arcana_structure_anomalous_finale",
+    "type": "overmap_terrain",
+    "name": "unidentified anomalous structure",
+    "sym": "T",
+    "color": "i_light_gray",
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
   }
 ]

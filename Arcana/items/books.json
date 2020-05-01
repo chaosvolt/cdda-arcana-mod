@@ -389,5 +389,35 @@
     "name": { "str": "inscribed clay tablet" },
     "description": "A small clay tablet, inscribed with discourses on otherworldly matters in eccentric writing.  Much of it is near-illegible and pertains more to philosophy than any practical matters, but the right person might be able to gleam something useful out of it.",
     "flags": [ "NO_SALVAGE", "TRADER_AVOID", "MAGIC_FOCUS" ]
+  },
+  {
+    "id": "arcana_dream_journal",
+    "type": "BOOK",
+    "name": { "str": "rambling journal" },
+    "description": "A small paperback notebook, filled with journal entries from some unfortunate former survivor.  Most of the entries form a dream journal instead of recounting whatever actually happened that day, and several entries are dated such that they aren't even in order.  Most of it seems like rambling nonsense, but maybe someone can interpret it.",
+    "weight": "340 g",
+    "volume": "750 ml",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "light_gray",
+    "intelligence": 12,
+    "time": "30 m",
+    "fun": -1,
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "sanguine_mission_notes",
+    "type": "BOOK",
+    "name": { "str": "Compendium Sacramenti Sanguinei" },
+    "description": "A leather-bound notebook, its contents containing notes and sketches both hand-written, seemingly by at least two different people, and what seems to be woodblock-print copies from some other work of literature.  Morbid as its subject matter is, various fragments of events and rituals summarized and expounded upon, to actually glean anything useful out of its pages would require extensive research from someone well-versed in the anomalous activities detailed within.",
+    "weight": "454 g",
+    "volume": "1 L",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "light_gray",
+    "intelligence": 14,
+    "time": "45 m",
+    "fun": -2,
+    "flags": [ "TRADER_AVOID" ]
   }
 ]

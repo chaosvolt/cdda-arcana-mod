@@ -1,18 +1,6 @@
 [
   {
     "type": "mutation",
-    "id": "CANNIBAL",
-    "copy-from": "CANNIBAL",
-    "extend": { "category": [ "DRAGONBLOOD" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "CARNIVORE",
-    "copy-from": "CARNIVORE",
-    "extend": { "category": [ "DRAGONBLOOD" ] }
-  },
-  {
-    "type": "mutation",
     "id": "THRESH_DRAGONBLOOD",
     "name": { "str": "Dragonblood" },
     "points": 1,

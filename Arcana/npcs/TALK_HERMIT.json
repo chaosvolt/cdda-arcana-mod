@@ -47,6 +47,22 @@
     },
     "responses": [
       {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_effect": "hermit_earned_trust_2" },
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_HERMIT_GM_PRELUDE"
+      },
+      {
         "text": "I would like for you to go ahead and attempt to send allies to the rural church.",
         "topic": "TALK_HERMIT_UNDEFER",
         "condition": { "u_has_var": "spawned_tablet_fallback", "type": "flag", "context": "hermit", "value": "yes" },
@@ -184,6 +200,25 @@
       },
       { "switch": true, "default": true, "text": "Anything I can help with?", "topic": "TALK_HERMIT_MISSION_NONE" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_HERMIT_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_effect": "hermit_stage_4",
+      "yes": "So this is why you have sought me out.  These are dark times, and strange events loom upon the horizon.  I am aware of one source that matches what you likely seek, but that one has seen conquest.  I have sensed, faintly, the presence of another.  The same force which intruded once before has begun to secure a second foothold upon this realm, one of many intruders from Beyond.  Relay this to whoever sent you, and beware the threat that awaits at the heart of this infestation.",
+      "no": "So this is why you have sought me out.  These are dark times, and strange events loom upon the horizon.  I am aware of one source that matches what you likely seek, but there is another.  It is faint, a presence that grows and takes root in this world, a firmer grip with each passing day.  The same force that established a trifling foothold among many other interlopers, has taken root anew.  Relay this to whoever sent you, but pursue this threat with caution."
+    },
+    "responses": [
+      {
+        "text": "Thank you.  I'll report back to them, then.",
+        "effect": [
+          { "u_add_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" },
+          { "npc_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+        ],
+        "topic": "TALK_DONE"
+      }
     ]
   },
   {
@@ -1561,7 +1596,7 @@
     "id": "TALK_HERMIT_SCHOLAR",
     "dynamic_line": {
       "u_has_effect": "hermit_earned_trust_1",
-      "yes": "A few old arcane tests certainly, but much of what I have is still nothing more than trivial texts, holy books and novels.",
+      "yes": "A few old arcane texts certainly, but much of what I have is still nothing more than trivial texts, holy books and novels.",
       "no": "Old religious texts, novels, other such trivial things.  Was a bit of collector, in my youth."
     },
     "responses": [
@@ -1576,7 +1611,7 @@
         "condition": { "not": { "u_has_effect": "hermit_earned_trust_1" } }
       },
       {
-        "text": "What about more unusual books?  Like that of the arcane?",
+        "text": "What about more exotic books?",
         "topic": "TALK_HERMIT_BOOK_QUERY",
         "condition": { "not": { "u_has_effect": "hermit_earned_trust_1" } }
       },

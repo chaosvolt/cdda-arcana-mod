@@ -91,5 +91,32 @@
       "cleansing_flame": { "kill on sight": true, "knows your voice": true }
     },
     "description": "The broken leftovers of a bloodthirsty pseudo-cult, from before the cataclysm.  The remainder still pursue the studies that led them down their murderous path, gleaming what little they can from past failures."
+  },
+  {
+    "type": "faction",
+    "id": "sanguine_shrike_splinter",
+    "name": "Sanguine Shrike Splinter Cell",
+    "likes_u": -1,
+    "respects_u": -1,
+    "known_by_u": false,
+    "size": 5,
+    "power": 100,
+    "food_supply": 20000,
+    "wealth": 30000,
+    "relations": {
+      "sanguine_shrike_splinter": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": { "knows your voice": true },
+      "sanguine_order_remnant": { "kill on sight": true, "knows your voice": true },
+      "cleansing_flame": { "knows your voice": true }
+    },
+    "description": "A handful of survivors who served as the elite \"hunters of hunters\" for a now-broken murderous cult.  Acting contrary to the norm for their order, their motives are unclear."
   }
 ]

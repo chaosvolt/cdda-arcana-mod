@@ -96,7 +96,7 @@
     "dialogue": {
       "describe": "Perhaps we shall at last atone...",
       "offer": "This is a task not to be taken lightly, and I can understand if you deem yourself unprepared.  We had a temple once, built on flying stone, over ground marked by a fallen star.  There, our last effort to serve Him failed.  There remains a dangerous threat that broke our order, and a fallen relic.  If I could see that relic once again, tainted though it may be, I can rest in peace when my time comes.",
-      "accepted": "Thank you.  My He From Beyond The Veil guide you, or failing that whatever other gods you serve.  I will tell you where to go, but I'm afraid I can't lead you there personally.  I ask that you retrieve the cursed blade and bring it here, and then I will explain further.  Beware the unholy monsters likely to still infest the temple, and ...what remains of the high priest.",
+      "accepted": "Thank you.  May He From Beyond The Veil guide you, or failing that whatever other gods you serve.  I will tell you where to go, but I'm afraid I can't lead you there personally.  I ask that you retrieve the cursed blade and bring it here, and then I will explain further.  Beware the unholy monsters likely to still infest the temple, and ...what remains of the high priest.",
       "rejected": "I understand.  The threat that defiles the old temple is not to be underestimated.  If I felt I could make the journey, I would attempt it myself, even if I failed I could die knowing I did the right thing.  Seek my guidance if you change your mind.",
       "advice": "You will likely have to kill the abomination inhabiting the body of the temple's former high priest.  I know not what weapons he may still carry, nor what unholy power the spirit possessing him commands, but be careful and expect anything.  Most likely he will have turned our own symbol of judgment on his congregation, meaning you'll have to expect lightning magic.",
       "inquire": "Have you completed this task?",
@@ -215,7 +215,8 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "range": [ 10, 90 ]
+        "search_range": 90,
+        "min_distance": 10
       }
     },
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -290,7 +291,7 @@
     "description": "Deliver the trade arrangements to the merchant at the refugee center, along with the Golden Scales provided for the deal.  Return to Sofia with the receipt that will be provided.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,
-    "value": 12500,
+    "value": 10000,
     "has_generic_rewards": false,
     "item": "cf_rep_trade_receipt",
     "start": {
@@ -311,7 +312,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 5 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 4 } ],
       "update_mapgen": [
         {
           "om_terrain": "cf_church_1",
@@ -333,7 +334,7 @@
     "description": "Hunt down a monster of unknown nature nearby.  Optionally recruit one of the church's guards to assist.",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
-    "value": 20000,
+    "value": 15000,
     "has_generic_rewards": false,
     "start": {
       "assign_mission_target": { "om_terrain": "forest_thick", "reveal_radius": 1, "random": true, "search_range": 20, "min_distance": 5 },
@@ -442,7 +443,7 @@
     "description": "Find a suspected remnant of the Keepers, who may have research and intel to bring back to Sofia.  Sofia advised that the information being sought might be preserved on something more durable than a book.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 4,
-    "value": 30000,
+    "value": 25000,
     "has_generic_rewards": false,
     "item": "offering_mission_notes",
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -472,7 +473,7 @@
       "effect": [
         { "npc_add_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_buy_item": "CF_golden_scale", "count": 12 }
+        { "u_buy_item": "CF_golden_scale", "count": 10 }
       ],
       "update_mapgen": [
         {
@@ -487,21 +488,102 @@
     "id": "MISSION_CF_REP_6",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
-    "goal": "MGOAL_KILL_MONSTER",
+    "name": "Secure Research From The Renegade Shrikes",
+    "description": "Find a suspected splinter faction of the Sanguine Order, who may have research and intel to bring back to Sofia.  Bring back any unique research they have.",
+    "goal": "MGOAL_FIND_ITEM",
     "difficulty": 4,
-    "value": 150000,
+    "value": 30000,
+    "has_generic_rewards": false,
+    "item": "sanguine_mission_notes",
     "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CF_REP_7",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "sanguine_holdout_2",
+        "om_special": "sanguine_holdout_shrikes",
+        "om_terrain_replace": "forest",
+        "reveal_radius": 3,
+        "random": true,
+        "cant_see": true,
+        "search_range": 90,
+        "min_distance": 20
+      },
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_7_a" ], "x": 3, "y": 4 } ]
+        },
+        {
+          "om_terrain": "cf_church_2_roof",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_7_b" ], "x": 2, "y": 3 } ]
+        }
+      ]
+    },
     "dialogue": {
-      "describe": "...",
-      "offer": "...",
-      "accepted": "...",
-      "rejected": "...",
-      "advice": "...",
-      "inquire": "...",
-      "success": "...",
-      "success_lie": "...",
-      "failure": "..."
+      "describe": "Odin, guide my hand...",
+      "offer": "This one might be a bit more risky.  Johnathan's intel confirmed suspicion of a schism within the Sanguine Order, specifically among their shrikes.  They were the hunters of hunters, the biggest threat to us whenever we engaged in a raid on their hideouts.  We've isolated the location of one renegade element acting inconsistent with other such splinter groups.  I'd like you to investigate, and secure any research they might have acquired.  Even if it proves unsafe for us to use, better to prevent it from falling into the wrong hands.",
+      "accepted": "Thank you.  Be careful, they seem to have actively engaged in hostilities against regular sanguinist sects, but we don't know how divergent they are.  They might still be hostile to us.  Attempt to talk them into cooperating peacefully if you can, but expect a fight.",
+      "rejected": "If you change your mind, see me about it.  I'm reluctant to deal with sanguinists given we don't know if they're still engaged in hostilities, but securing whatever they found will be useful to us.",
+      "advice": "Be careful.  They'll likely know you're coming before you even see them, be prepared for a confrontation, or worse an ambush.",
+      "inquire": "Do you have it?",
+      "success": "I'll be careful with this.  Some of it may benefit our own research, but the general rule of thumb is to avoid extensive work with any developments that require blood magic or dimensional alteration to function.  I hope that I didn't put you in too great a danger sending you after them.",
+      "success_lie": "What do you think you're trying to pull?",
+      "failure": "But how..."
+    },
+    "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
+      "update_mapgen": [
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "place_nested": [ { "chunks": [ "cf_church_upgrade_8_a" ], "x": 8, "y": 4 } ]
+        },
+        {
+          "om_terrain": "cf_church_2_roof",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_8_b"
+        }
+      ]
+    }
+  },
+  {
+    "id": "MISSION_CF_REP_7",
+    "type": "mission_definition",
+    "name": "Bring Back Relay Beacon",
+    "description": "Retrieve a radio relay beacon from a radio station recently secured by a contact allied with the Cleansing Flame.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 35000,
+    "has_generic_rewards": false,
+    "item": "arcana_radio_relay_beacon",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": { "om_terrain": "station_radio_1", "reveal_radius": 3, "cant_see": true },
+      "update_mapgen": [
+        { "mapgen_update_id": "arcana_radio_station" },
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_9_a" },
+        { "om_terrain": "cf_church_2", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_9_b" }
+      ]
+    },
+    "dialogue": {
+      "describe": "Odin, guide my hand...",
+      "offer": "We've been working on finishing up some improvements to our outpost here.  One I've been looking into is improving our radio, to help get in touch with others.  Not long ago we received a brief burst of radio chatter that will lead us to a chance at killing two birds with one stone.  One of our contacts from before the apocalypse had evidently secured a radio transmitter and established contact, before something knocked out the signal.  I'd like you to investigate.",
+      "accepted": "Thank you.  They'd secured a radio station in one of the old towns, I'd advise caution.  They confirmed the use of what they called a relay beacon to make use of the station's transmitter.  It not only contains what they used to get their signal across to us, but a tracker that whoever else they're working with can use to get in touch with us.  Return with that and we should be able to re-establish contact.",
+      "rejected": "Please, speak with me if you change your mind.  We don't know who else they might be in contact with, nor whether they might move on before we can get in touch with them.",
+      "advice": "Be prepared for a fight.  They mentioned being followed by something, and that's going to be in addition to the usual abominations that infest the cities.",
+      "inquire": "Have you found it?",
+      "success": "Thank you.  This should provide the finishing touches.  I'll get to work immediately, I know the rest of them were already looking for us.  They should be here shortly, now that we have the means to extend our signal as well as a signal they can track.  That should be everything we need for now.",
+      "success_lie": "What do you think you're trying to pull?",
+      "failure": "But how..."
+    },
+    "end": {
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 14 } ],
+      "update_mapgen": [
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_10_a" },
+        { "om_terrain": "cf_church_2", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_10_b" }
+      ]
     }
   },
   {
@@ -512,13 +594,13 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "item": "scourge_staff",
-    "value": 20000,
+    "value": 15000,
     "has_generic_rewards": false,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_2",
     "start": { "assign_mission_target": { "om_terrain": "strange_grove", "reveal_radius": 3, "z": 0 } },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 8 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 6 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_1_a" },
         {
@@ -558,13 +640,13 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
     "item": "hand_of_armok",
-    "value": 30000,
+    "value": 20000,
     "has_generic_rewards": false,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_3",
     "start": { "assign_mission_target": { "om_terrain": "curious_structure", "reveal_radius": 3, "z": 0 } },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_2_a" },
         {
@@ -603,7 +685,7 @@
     "description": "Kill the blood mage in charge of a local Sanguine Order sect.  Optionally recruit one of the church's guards to assist.",
     "goal": "MGOAL_ASSASSINATE",
     "difficulty": 10,
-    "value": 30000,
+    "value": 25000,
     "has_generic_rewards": false,
     "start": {
       "assign_mission_target": {
@@ -613,7 +695,8 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "range": [ 10, 90 ]
+        "search_range": 90,
+        "min_distance": 10
       },
       "update_mapgen": [
         {
@@ -627,7 +710,7 @@
       "effect": [
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
-        { "u_buy_item": "CF_golden_scale", "count": 12 }
+        { "u_buy_item": "CF_golden_scale", "count": 10 }
       ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_3_a" },
@@ -663,24 +746,166 @@
     }
   },
   {
-    "id": "MISSION_CF_GM_4",
-    "//": "This mission is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "id": "MISSION_CF_GM_4_PRELUDE",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
-    "goal": "MGOAL_KILL_MONSTER",
-    "difficulty": 4,
-    "value": 150000,
+    "name": "Investigate survivor camp",
+    "description": "Search the last known encampment of a group of survivors, who have recently encountered anomalous activity.  Bring back any unusual items found there, that may prove useful to identifying and locating the origin of this threat.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "or": [ { "u_has_item": "arcana_dream_journal" }, { "u_has_item": "arcana_strange_crystal" } ] },
+    "difficulty": 3,
+    "value": 10000,
+    "has_generic_rewards": false,
+    "start": {
+      "effect": [ { "u_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" } ],
+      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 3, "random": true, "cant_see": true, "search_range": 50, "min_distance": 20 },
+      "update_mapgen": {
+        "set": [
+          { "square": "terrain", "id": "t_region_groundcover_forest", "x": 4, "x2": 19, "y": 4, "y2": 19 },
+          { "square": "terrain", "id": "t_region_groundcover_barren", "x": 8, "x2": 15, "y": 8, "y2": 15 },
+          { "square": "furniture", "id": "f_null", "x": 8, "x2": 15, "y": 8, "y2": 15 },
+          { "line": "terrain", "id": "t_grave_new", "x": 11, "x2": 12, "y": 7, "y2": 7 },
+          { "point": "furniture", "id": "f_brazier", "x": 12, "y": 11 },
+          { "point": "furniture", "id": "f_plastic_groundsheet", "x": 14, "y": 12 },
+          { "point": "furniture", "id": "f_tourist_table", "x": 14, "y": 10 },
+          { "point": "trap", "id": "tr_rollmat", "x": 12, "y": 9 },
+          { "point": "trap", "id": "tr_rollmat", "x": 10, "y": 10 },
+          { "point": "trap", "id": "tr_rollmat", "x": 10, "y": 12 },
+          { "point": "trap", "id": "tr_rollmat", "x": 12, "y": 13 }
+        ],
+        "place_loot": [
+          { "group": "trash_forest", "x": [ 1, 22 ], "y": [ 1, 2 ], "repeat": 2, "chance": 75 },
+          { "group": "cannedfood", "x": 14, "y": 10, "repeat": 5, "chance": 50 },
+          { "group": "drugs_heal_simple", "x": 14, "y": 10, "repeat": 5, "chance": 50 },
+          { "group": "weapons", "x": 14, "y": 12, "repeat": 2, "chance": 25 },
+          { "group": "guns_survival", "x": 14, "y": 12, "repeat": 2, "chance": 25 },
+          { "group": "ammo_reloaded", "x": 14, "y": 12, "repeat": 5, "chance": 50 },
+          { "item": "shovel", "x": 14, "y": 12, "chance": 80 },
+          { "group": "remains_soldier", "x": 10, "y": 16, "chance": 100 },
+          { "item": "223_casing", "x": [ 10, 15 ], "y": [ 13, 15 ], "repeat": 10, "chance": 50 },
+          { "group": "map_extra_drugdeal", "x": 11, "y": 7, "chance": 100 },
+          { "group": "map_extra_college_camping", "x": 12, "y": 7, "chance": 100 },
+          { "item": "arcana_strange_crystal", "x": 11, "y": 7, "chance": 100 },
+          { "group": "bed", "x": 10, "y": 10, "chance": 75 },
+          { "item": "arcana_dream_journal", "x": 10, "y": 10, "chance": 100 },
+          { "group": "bed", "x": 10, "y": 12, "chance": 75 },
+          { "group": "bed", "x": 12, "y": 9, "chance": 75 },
+          { "group": "bed", "x": 12, "y": 13, "chance": 75 }
+        ],
+        "place_monster": [
+          { "monster": "mon_shadow_summoned", "x": [ 1, 22 ], "y": [ 1, 22 ], "repeat": [ 2, 4 ] },
+          { "monster": "mon_hunting_horror_summoned", "x": 12, "y": 12 }
+        ],
+        "place_vehicles": [ { "vehicle": "motorcycle", "x": 11, "y": 16, "rotation": 90, "fuel": 500, "status": 1, "chance": 100 } ],
+        "place_fields": [
+          { "x": [ 10, 11 ], "y": [ 15, 16 ], "field": "fd_blood", "intensity": 1 },
+          { "x": [ 10, 11 ], "y": [ 15, 16 ], "field": "fd_blood", "intensity": 1 },
+          { "x": [ 10, 11 ], "y": [ 15, 16 ], "field": "fd_blood", "intensity": 1 },
+          { "x": [ 9, 10 ], "y": [ 16, 17 ], "field": "fd_blood", "intensity": 1 }
+        ]
+      }
+    },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
-      "describe": "...",
-      "offer": "...",
-      "accepted": "...",
-      "rejected": "...",
-      "advice": "...",
-      "inquire": "...",
-      "success": "...",
-      "success_lie": "...",
-      "failure": "..."
+      "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialouge.",
+      "offer": "Seeing this is probably a bug.",
+      "accepted": "Seeing this is probably a bug.",
+      "rejected": "Seeing this is probably a bug.",
+      "advice": "Seeing this is probably a bug.",
+      "inquire": "Have you found anything?",
+      "success": "Alright, let me see.  This might help, but I don't think I can do much with this just yet.  Keep that for now and bring it to Sofia, see if she can figure anything else out.  I'll do what I can to review the other intel I have regarding the attacks.  Narrowing down the area plus getting a better feel for what we're up against should let us pinpoint the cause.",
+      "success_lie": "Seeing this is probably a bug.",
+      "failure": "Seeing this is probably a bug."
+    },
+    "end": {
+      "effect": [
+        { "u_add_var": "johnathan_prelude_penultimate", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
+      ]
+    }
+  },
+  {
+    "id": "MISSION_CF_GM_4",
+    "type": "mission_definition",
+    "name": "Cleanse The Anomaly",
+    "description": "Seek out an anomalous structure that has recently forced its way into our world.  Kill whatever abomination lies at its heart.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 8,
+    "value": 50000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "arcana_structure_anomalous_entrance",
+        "om_special": "arcana_anomaly_resurgence",
+        "om_terrain_replace": "field",
+        "reveal_radius": 5,
+        "random": true,
+        "cant_see": true,
+        "search_range": 90,
+        "min_distance": 20
+      },
+      "update_mapgen": [
+        {
+          "om_terrain": "arcana_structure_anomalous_finale",
+          "om_special": "arcana_anomaly_resurgence",
+          "place_monster": [ { "monster": "mon_seraphic_shade", "x": 20, "y": 5, "target": true } ]
+        },
+        {
+          "om_terrain": "cf_church_1",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_4_a"
+        },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_4_b"
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_4_c"
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_4_d"
+        }
+      ]
+    },
+    "dialogue": {
+      "describe": "Grant us strength...",
+      "offer": "The time has come.  We have discussed the nature of this anomaly, confirmed the source.  There is something there, subtle but becoming more detectable by the day.  Whatever disruption lies within, it must be cleansed.  I trust you with this task, if you accept it.",
+      "accepted": "God and gods willing, return safe and sound.  I will once more authorize you to request the aid of one of our hunters if you require it.  Furthermore, if you did not already seek their aid last time, you may still do so.  We can afford that much at least, for a mission this important.",
+      "rejected": "We're stretched thin as it is, please return as soon as you're able to accept this task.  I worry that things will only worsen if this threat is left unchecked.",
+      "advice": "Reports suggest it is a warped, ruined remnant of some unholy alien structure, similar to what those chitinous abominations build.  I have no doubt that there are greater anomalies and hazards within.  Exercise extreme caution, bring any firepower as well as physical and magical protection that you can obtain.",
+      "inquire": "Have you destroyed the threat?",
+      "success": "Good.  Seeing you walk in here alive, I could almost sense that the deed was done.  I do not know the cause of this, nor what the future holds.  Only that we have bought ourselves much-needed time, to pursue any research that might prevent further catastrophes in the future.  There are no further tasks I can offer you, nor any greater reward I can spare.  We, perhaps all of humanity in the long term, are in your debt.",
+      "success_lie": "What idiocy is this?",
+      "failure": "But how?"
+    },
+    "end": {
+      "effect": [
+        { "npc_add_var": "johnathan_mission_finale", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_buy_item": "CF_golden_scale", "count": 20 }
+      ],
+      "update_mapgen": [
+        { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_GM_5_a" },
+        {
+          "om_terrain": "cf_church_2",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_5_b"
+        },
+        {
+          "om_terrain": "cf_church_3",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_5_c"
+        },
+        {
+          "om_terrain": "cf_church_4",
+          "om_special": "cf_rural_church",
+          "mapgen_update_id": "cf_church_upgrade_GM_5_d"
+        }
+      ]
     }
   },
   {
@@ -789,7 +1014,8 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "range": [ 20, 60 ]
+        "search_range": 90,
+        "min_distance": 10
       }
     },
     "dialogue": {
@@ -856,6 +1082,69 @@
           "mapgen_update_id": "cf_church_upgrade_aux_e_2"
         }
       ]
+    }
+  },
+  {
+    "id": "MISSION_CF_PURIFIER_1",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
+    }
+  },
+  {
+    "id": "MISSION_CF_PURIFIER_2",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
+    }
+  },
+  {
+    "id": "MISSION_CF_SCIENTIST_1",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": "Placeholder Mission",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
     }
   }
 ]

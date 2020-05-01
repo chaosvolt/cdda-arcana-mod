@@ -4,6 +4,21 @@
     "type": "talk_topic",
     "responses": [
       {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_SCAVENGER_MERC_GM_PRELUDE"
+      },
+      {
         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
         "topic": "TALK_SCAVENGER_MERC_CF_REP_MISSION_4",
         "condition": {
@@ -14,6 +29,11 @@
         }
       }
     ]
+  },
+  {
+    "id": "TALK_SCAVENGER_MERC_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": "I've heard a bit, got intel on one in fact.  Old associate of mine came back telling tall tales of weird shadow monsters, coming out of the woodwork in this one raider hideout they were clearing.  He saw one of those things catch the guy on point, wrung his neck till his head popped off.  Then one of the others hit the dirt and lit up the whole freakshow with the 240."
   },
   {
     "id": "TALK_SCAVENGER_MERC_CF_REP_MISSION_4",
@@ -88,9 +108,7 @@
     "id": "TALK_SCAVENGER_MERC_CF_REP_MISSION_4_END",
     "type": "talk_topic",
     "dynamic_line": "Think I got it from here then.  That it?",
-    "responses": [
-      { "text": "I should go check on things over there, actually.", "topic": "TALK_DONE" }
-    ]
+    "responses": [ { "text": "I should go check on things over there, actually.", "topic": "TALK_DONE" } ]
   },
   {
     "id": "TALK_SCAVENGER_MERC_CF_REP_MISSION_4_MERCH",

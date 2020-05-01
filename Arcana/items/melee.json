@@ -315,5 +315,35 @@
     "symbol": "$",
     "material": [ "gold" ],
     "volume": "2ml"
+  },
+  {
+    "type": "GENERIC",
+    "id": "arcana_strange_crystal",
+    "category": "other",
+    "symbol": "*",
+    "color": "dark_gray",
+    "name": { "str": "strange crystalline talisman" },
+    "description": "A large, pitch-black gem, polished and cut into an unusual eccentric shape revealing strange silvery swirls within each facet.  It's set into a twisted cage of thin metal wires, made out of a dull gray metal.  The stone itself is unusually cold to the touch.  Whatever it is, it might be useful to someone who can figure out what it's supposed to do.",
+    "material": [ "stone", "superalloy", "essencemat" ],
+    "looks_like": "amulet_exotic",
+    "weight": "200 g",
+    "volume": "500 ml",
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "arcana_radio_relay_beacon",
+    "symbol": ",",
+    "looks_like": "radio_repeater_mod",
+    "color": "light_gray",
+    "name": { "str": "relay beacon" },
+    "category": "spare_parts",
+    "description": "A rugged metal case containing a transceiver adapted from surplus military equipment, a set of connectors designed to hook up to a radio terminal, and a tracking device.  Somewhat makeshift in appearance, it seems to have been purpose-built for some specialized task.",
+    "material": "steel",
+    "weight": "21000 g",
+    "volume": "2 L",
+    "bashing": 4,
+    "to_hit": 1,
+    "flags": [ "TRADER_AVOID" ]
   }
 ]

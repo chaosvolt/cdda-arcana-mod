@@ -10,11 +10,26 @@
     "speaker_effect": {
       "condition": { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } },
       "effect": [
-        { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+        { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
         { "mapgen_update": "cf_church_celine_restock", "om_terrain": "cf_church_1", "om_special": "cf_rural_church" }
       ]
     },
     "responses": [
+      {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_CF_AUX_MAGE_GM_PRELUDE"
+      },
       { "text": "Who are you?", "topic": "TALK_CF_AUX_MAGE_WHO" },
       { "text": "What can you tell me about this place?", "topic": "TALK_CF_AUX_MAGE_WHERE" },
       { "text": "What do you do here?", "topic": "TALK_CF_AUX_MAGE_DO" },
@@ -30,6 +45,26 @@
         "topic": "TALK_TRAIN"
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_CF_AUX_MAGE_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": "I myself don't know anything about that, actually.  However, the contact your friend Sofia sent you to speak with, responsible for our meeting.  He might be able to help as well.",
+    "responses": [
+      {
+        "text": "We'll see, then.",
+        "effect": [
+          { "npc_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+          {
+            "u_add_var": "johnathan_prelude_hermit_idea",
+            "type": "mission",
+            "context": "rural_church",
+            "value": "yes"
+          }
+        ],
+        "topic": "TALK_CF_AUX_MAGE"
+      }
     ]
   },
   {

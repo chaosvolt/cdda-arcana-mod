@@ -70,5 +70,15 @@
       { "monster": "mon_vortex_summoned", "freq": 50, "cost_multiplier": 0 },
       { "monster": "mon_archon", "freq": 0, "cost_multiplier": 0 }
     ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ARCHON_RESURGENCE",
+    "default": "mon_shadow_summoned",
+    "monsters": [
+      { "monster": "mon_shadow_snake_summoned", "freq": 400, "cost_multiplier": 0 },
+      { "monster": "mon_hunting_horror_summoned", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_seraphic_shade", "freq": 0, "cost_multiplier": 0 }
+    ]
   }
 ]
