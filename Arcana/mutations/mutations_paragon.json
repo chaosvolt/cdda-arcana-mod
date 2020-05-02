@@ -12,7 +12,31 @@
     "mana_regen_multiplier": 1.25,
     "craft_skill_bonus": [ [ "magic", 2 ] ],
     "ignored_by": [ "ARCANA_SUMMONED", "UNKNOWN" ],
-    "anger_relations": [ [ "NETHER", 20 ], [ "FUNGUS", 10 ] ]
+    "anger_relations": [ [ "NETHER", 20 ], [ "FUNGUS", 10 ] ],
+    "allowed_category": [
+      "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
+      "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
+      "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
+      "ARCANA_ECLIPSE",
+      "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
+      "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
+      "ARCANA_HEAL",
+      "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
+      "ARCANA_PLANTS",
+      "ARCANA_SHADOWSNAKES",
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
+    ]
   },
   {
     "type": "mutation",
@@ -30,16 +54,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -58,16 +93,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -88,20 +134,7 @@
       [ "arcana_blessing_conjure_lightburst", 1 ],
       [ "arcana_blessing_open_lock", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -123,20 +156,7 @@
       [ "arcana_blessing_open_lock", 1 ],
       [ "arcana_blessing_wall_force", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -158,20 +178,7 @@
       [ "arcana_blessing_wall_force", 1 ],
       [ "arcana_blessing_pacify_monsters", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -193,20 +200,7 @@
       [ "arcana_blessing_pacify_monsters", 1 ],
       [ "arcana_blessing_consecrate", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -223,16 +217,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -251,16 +256,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -277,20 +293,7 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ], [ "arcana_blessing_agility", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -311,20 +314,7 @@
       [ "arcana_blessing_agility", 1 ],
       [ "arcana_blessing_surge_adrenaline", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -346,20 +336,7 @@
       [ "arcana_blessing_surge_adrenaline", 1 ],
       [ "arcana_blessing_drain_life", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -381,20 +358,7 @@
       [ "arcana_blessing_drain_life", 1 ],
       [ "arcana_blessing_illusion_cloak", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -411,16 +375,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -439,16 +414,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -469,20 +455,7 @@
       [ "arcana_blessing_conjure_miasma", 1 ],
       [ "arcana_blessing_divine_storm", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -503,20 +476,7 @@
       [ "arcana_blessing_divine_storm", 1 ],
       [ "arcana_blessing_holy_flare", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -538,20 +498,7 @@
       [ "arcana_blessing_holy_flare", 1 ],
       [ "arcana_blessing_radiant_burst", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -573,20 +520,7 @@
       [ "arcana_blessing_radiant_burst", 1 ],
       [ "arcana_blessing_wave_destruction", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -603,16 +537,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -631,16 +576,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -657,20 +613,7 @@
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ], [ "arcana_blessing_ward_lightning", 1 ] ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -691,20 +634,7 @@
       [ "arcana_blessing_ward_lightning", 1 ],
       [ "arcana_blessing_ward_flame", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -726,20 +656,7 @@
       [ "arcana_blessing_ward_flame", 1 ],
       [ "arcana_blessing_ward_cold", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -761,20 +678,7 @@
       [ "arcana_blessing_ward_cold", 1 ],
       [ "arcana_blessing_holy_ward", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -791,16 +695,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -819,16 +734,27 @@
     "flags": [ "explorer_of_the_veil" ],
     "allowed_category": [
       "VEIL",
+      "ARCANA_AGILE",
+      "ARCANA_CLAIRVOYANCE",
       "ARCANA_CLARITY",
+      "ARCANA_CONFUSE",
       "ARCANA_ACID",
+      "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
+      "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
+      "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
+      "ARCANA_LIGHTNING",
+      "ARCANA_BUGSLESSER",
+      "ARCANA_SUNDERINGQUAKE",
+      "ARCANA_CLERIC"
     ]
   },
   {
@@ -849,20 +775,7 @@
       [ "arcana_blessing_summon_skeleton", 1 ],
       [ "arcana_blessing_summon_homunculus", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -883,20 +796,7 @@
       [ "arcana_blessing_summon_homunculus", 1 ],
       [ "arcana_blessing_summon_thing", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -918,20 +818,7 @@
       [ "arcana_blessing_summon_thing", 1 ],
       [ "arcana_blessing_summon_giant_centipedes", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   },
   {
     "type": "mutation",
@@ -953,19 +840,6 @@
       [ "arcana_blessing_summon_giant_centipedes", 1 ],
       [ "arcana_blessing_summon_vortices", 1 ]
     ],
-    "flags": [ "explorer_of_the_veil" ],
-    "allowed_category": [
-      "VEIL",
-      "ARCANA_CLARITY",
-      "ARCANA_ACID",
-      "ARCANA_ECLIPSE",
-      "ARCANA_ELEMENTALBURST",
-      "ARCANA_FREEACTION",
-      "ARCANA_HEAL",
-      "ARCANA_INSIGHT",
-      "ARCANA_PLANTS",
-      "ARCANA_SHADOWSNAKES",
-      "ARCANA_SUNDERINGQUAKE"
-    ]
+    "flags": [ "explorer_of_the_veil" ]
   }
 ]

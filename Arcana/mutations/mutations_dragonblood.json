@@ -12,16 +12,19 @@
       "DRAGONBLOOD",
       "ARCANA_AGILE",
       "ARCANA_CLAIRVOYANCE",
+      "ARCANA_CLARITY",
       "ARCANA_CONFUSE",
       "ARCANA_ACID",
       "ARCANA_CONSECRATELESSER",
       "ARCANA_ECLIPSE",
       "ARCANA_ELEMENTALBURST",
+      "ARCANA_FLAMEARMOR",
       "ARCANA_FREEACTION",
       "ARCANA_FROSTARMORLESSER",
       "ARCANA_HEAL",
       "ARCANA_INSIGHT",
       "ARCANA_ELECRESIST",
+      "ARCANA_STRENGTH",
       "ARCANA_PLANTS",
       "ARCANA_SHADOWSNAKES",
       "ARCANA_LIGHTNING",
@@ -60,7 +63,12 @@
     "prereqs2": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_elemental_sign", 1 ], [ "arcana_mark_suppression", 1 ], [ "arcana_mark_infernal_flame", 1 ], [ "arcana_mark_summon_fiend", 1 ] ]
+    "spells_learned": [
+      [ "arcana_mark_elemental_sign", 1 ],
+      [ "arcana_mark_suppression", 1 ],
+      [ "arcana_mark_infernal_flame", 1 ],
+      [ "arcana_mark_summon_fiend", 1 ]
+    ]
   },
   {
     "type": "mutation",
@@ -90,7 +98,12 @@
     "prereqs": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_might", 1 ], [ "arcana_mark_revenant_blood", 1 ], [ "arcana_mark_drain_life", 1 ], [ "arcana_mark_surge_adrenaline", 1 ] ]
+    "spells_learned": [
+      [ "arcana_mark_might", 1 ],
+      [ "arcana_mark_revenant_blood", 1 ],
+      [ "arcana_mark_drain_life", 1 ],
+      [ "arcana_mark_surge_adrenaline", 1 ]
+    ]
   },
   {
     "type": "mutation",
@@ -121,7 +134,12 @@
     "prereqs": [ "SPELL_SUMMONWYRM" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_summon_dark_wyrm", 1 ], [ "arcana_mark_summon_jabberwock", 1 ], [ "arcana_mark_destructive_absorption", 1 ], [ "arcana_mark_malevolent_gaze", 1 ] ]
+    "spells_learned": [
+      [ "arcana_mark_summon_dark_wyrm", 1 ],
+      [ "arcana_mark_summon_jabberwock", 1 ],
+      [ "arcana_mark_destructive_absorption", 1 ],
+      [ "arcana_mark_malevolent_gaze", 1 ]
+    ]
   },
   {
     "type": "mutation",
