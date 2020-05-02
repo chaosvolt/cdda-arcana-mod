@@ -28,5 +28,25 @@
       "check_sees": true,
       "check_sees_radius": 3
     }
+  },
+  {
+    "id": "AMMO_ARCANA_FIRE_EFFECT",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_plasma", "intensity_min": 1, "intensity_max": 3, "size": 1, "radius": 0, "chance": 40 }
+  },
+  {
+    "id": "AMMO_ARCANA_WATER_EFFECT",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_fog", "intensity_min": 1, "intensity_max": 3, "size": 1, "radius": 0, "chance": 60 }
+  },
+  {
+    "id": "AMMO_ARCANA_EARTH_EFFECT",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_acid", "intensity_min": 1, "intensity_max": 3, "size": 1, "radius": 0, "chance": 80 }
+  },
+  {
+    "id": "AMMO_ARCANA_AIR_EFFECT",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_electricity", "intensity_min": 1, "intensity_max": 3, "size": 1, "radius": 0, "chance": 100 }
   }
 ]
