@@ -87,7 +87,7 @@
     "id": "cleansing_flame_crafting",
     "type": "item_group",
     "items": [
-      { "item": "essence_dull", "prob": 30, "count-min": 3, "count-max": 8 },
+      { "item": "essence_dull", "prob": 30, "count-min": 6, "count-max": 16 },
       [ "gold_small", 5 ],
       [ "silver_small", 15 ],
       [ "feather", 15 ],
@@ -269,7 +269,7 @@
     "id": "rural_church_restock_essence",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "essence_dull", "charges": [ 15, 30 ] } ]
+    "entries": [ { "item": "essence_dull", "charges": [ 30, 60 ] } ]
   },
   {
     "id": "rural_church_celine_research",

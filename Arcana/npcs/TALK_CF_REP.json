@@ -546,15 +546,38 @@
     "dynamic_line": "Our order was composed of people from various religions.  Not only Abrahamic ones of various sorts, but those that would be considered pagan.  Asatruan, in my case.  Over time our practices mingled, a shared influence affecting our approach to the arcane.",
     "responses": [
       {
-        "text": "What do you mean, arcane?",
+        "text": "And what approach is that?",
         "condition": {
-          "not": {
-            "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
-          }
+          "or": [
+            { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ] },
+            { "u_has_skill": { "skill": "magic", "level": 1 } }
+          ]
         },
-        "topic": "TALK_CF_REP_ARCANE"
+        "switch": true,
+        "topic": "TALK_CF_REP_ARCANE_2"
+      },
+      {
+        "text": "What do you mean, arcane?",
+        "switch": true,
+        "default": true,
+        "topic": "TALK_CF_REP_ARCANE_2"
       },
       { "text": "…", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_ARCANE_2",
+    "dynamic_line": {
+      "u_has_effect": "cf_sofia_notes_given",
+      "yes": "There are many approaches to handling these forces.  Some have chosen recklessness, as though it is a drug to be abused.  Others, superstitious faith and worship of powers that do not belong in our world.  We seek to study these anomalies cautiously, and keep others safe from more dangerous artifacts if we must.  The acolyte I took those notes from, the ones I gave you, learned the importance of caution the hard way, and did not live to benefit from that experience.  That is why we have resorted to extreme measures to deal with dangerous relics in the past.",
+      "no": "There are many approaches to handling these forces.  Some have chosen recklessness, as though it is a drug to be abused.  Others, superstitious faith and worship of powers that do not belong in our world.  We seek to study these anomalies cautiously, and keep others safe from more dangerous artifacts if we must.  If it means containment, or destruction, so be it.  I prefer instead to teach others how to handle such safely, for caution is a lesson many learn the hard way, and few survive such experiences."
+    },
+    "responses": [
+      {
+        "text": "Alright…",
+        "topic": "TALK_CF_REP"
+      }
     ]
   },
   {

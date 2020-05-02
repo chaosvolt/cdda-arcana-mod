@@ -5,13 +5,13 @@
     "//": "Combined tool and component set for combining blacksmithing with transmutation, except for forging_standard.",
     "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
     "tools": [ [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "candle_warding_active", -1 ] ] ],
-    "components": [ [ [ "earth_talisman", 1 ] ], [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 15 ] ] ]
+    "components": [ [ [ "earth_talisman", 1 ] ], [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 30 ] ] ]
   },
   {
     "id": "arcana_essence_any",
     "type": "requirement",
     "//": "Any type of magical essence.",
-    "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 15 ] ] ]
+    "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 30 ] ] ]
   },
   {
     "id": "arcana_essence_exclude_dull",
@@ -23,7 +23,7 @@
     "id": "arcana_essence_exclude_blood",
     "type": "requirement",
     "//": "Normal or dull essence only, for things the local sanguinists would turn their noses at.",
-    "components": [ [ [ "essence", 1 ], [ "essence_dull", 15 ] ] ]
+    "components": [ [ [ "essence", 1 ], [ "essence_dull", 30 ] ] ]
   },
   {
     "id": "arcana_holy_relic_any",
