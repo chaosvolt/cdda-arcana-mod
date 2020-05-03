@@ -9,7 +9,7 @@
     "symbol": "6",
     "color": "dark_gray",
     "move_cost": 0,
-    "flags": [ "TRANSPARENT", "NOITEM", "COLLAPSES", "THIN_OBSTACLE" ],
+    "flags": [ "TRANSPARENT", "NOITEM", "THIN_OBSTACLE" ],
     "examine_action": "controls_gate"
   },
   {
@@ -23,7 +23,7 @@
     "move_cost": 0,
     "coverage": 100,
     "roof": "t_flat_roof",
-    "//": "The fact it doesn't block wind, which you couldn't even notice given it spawns underground",
+    "//": "The fact it doesn't block wind, which you couldn't even notice given it spawns underground, is important for something.",
     "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL" ],
     "connects_to": "WALL"
   },
