@@ -33,12 +33,8 @@
     "speaker_effect": {
       "condition": { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } },
       "effect": [
-        { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
-        {
-          "mapgen_update": "cf_church_sofia_restock",
-          "om_terrain": "cf_church_4",
-          "om_special": "cf_rural_church"
-        }
+        { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
+        { "mapgen_update": "cf_church_sofia_restock", "om_terrain": "cf_church_4", "om_special": "cf_rural_church" }
       ]
     },
     "responses": [
@@ -76,6 +72,44 @@
             { "not": { "u_has_effect": "sofia_deacon_message" } },
             { "not": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL", "PROF_SANGUINE" ] } },
             { "u_has_mission": "MISSION_CF_DEACON_1" }
+          ]
+        }
+      },
+      {
+        "text": "Johnathan sent me to investigate an anomaly, I found this journal.  Can you interpret it?",
+        "topic": "TALK_CF_REP_PRELUDE_JOURNAL",
+        "condition": {
+          "and": [
+            { "u_has_item": "arcana_dream_journal" },
+            { "u_has_var": "johnathan_prelude_penultimate", "type": "mission", "context": "rural_church", "value": "yes" }
+          ]
+        },
+        "effect": [
+          { "u_consume_item": "arcana_dream_journal" }
+        ]
+      },
+      {
+        "text": "Johnathan sent me to investigate an anomaly, I found a strange gem there.  What do you make of it?",
+        "topic": "TALK_CF_REP_PRELUDE_GEM",
+        "condition": {
+          "and": [
+            { "u_has_item": "arcana_strange_crystal" },
+            { "u_has_var": "johnathan_prelude_penultimate", "type": "mission", "context": "rural_church", "value": "yes" }
+          ]
+        },
+        "effect": [
+          { "u_consume_item": "arcana_strange_crystal" }
+        ]
+      },
+      {
+        "text": "Johnathan asked me about an anomaly he's investigating, and suggested I ask for information from other people.  Who should I ask?",
+        "topic": "TALK_CF_REP_JOHNATHAN_PRELUDE",
+        "condition": {
+          "and": [
+            { "not": { "u_has_mission": "MISSION_CF_GM_4_PRELUDE" } },
+            { "not": { "u_has_var": "johnathan_prelude_penultimate", "type": "mission", "context": "rural_church", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_ended", "type": "mission", "context": "rural_church", "value": "yes" } },
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
           ]
         }
       },
@@ -164,13 +198,7 @@
       { "text": "Do you have anything to trade?", "switch": true, "default": true, "topic": "TALK_CF_REP_TRADE" },
       {
         "text": "Anything I can do to help?",
-        "condition": { "not": { "npc_has_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" } },
         "topic": "TALK_MISSION_LIST"
-      },
-      {
-        "text": "Anything I can do to help?",
-        "condition": { "npc_has_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" },
-        "topic": "TALK_CF_REP_TBC"
       },
       {
         "text": "Well, bye.",
@@ -312,6 +340,59 @@
         "topic": "TALK_CF_REP"
       },
       { "text": "Understood.  Thank you.", "switch": true, "default": true, "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_JOHNATHAN_PRELUDE",
+    "dynamic_line": {
+      "u_has_var": "sofia_opinion_given",
+      "type": "flag",
+      "context": "knowledge",
+      "value": "yes",
+      "yes": "Ask the merchant contacts here before you leave, you might be able to get a bit out information out of them first.  Then check with the refugee center.  We've tracked area anomalies like this before, just get more info on where these attacks have taken place and we should be able to figure things out from here.",
+      "no": "I'd primarily suggest the refugee center, as they may be able to help provide more information.  What we need is simply confirming specific locations of where attacks have taken place.  We can handle it from there, afterward."
+    },
+    "responses": [ { "text": "Okay, thanks.", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "id": "TALK_CF_REP_PRELUDE_JOURNAL",
+    "type": "talk_topic",
+    "dynamic_line": "Let me take a look at this.  Looks like the entries describe a series of strange events and dreams experienced ever since passing through the anomalous region.  Lot of rambling, bit out of order too.  Like they skipped a few pages then filled in the blanks with later entries… but, I think I see roughly how things went down.",
+    "responses": [ { "text": "Anything useful?", "topic": "TALK_CF_REP_PRELUDE_JOURNAL_2" } ]
+  },
+  {
+    "id": "TALK_CF_REP_PRELUDE_JOURNAL_2",
+    "type": "talk_topic",
+    "dynamic_line": "A few of their early entries, the first few days into the journey, references nearby landmarks.  The last one before things go off the rails mentions a recently-built otherworldly structure in their path, and I can confirm which location that is.  Given the description suggests something anomalous happened there more recently, it's possible that the source of this took up residence there.  Go talk to Johnathan, tell him we have what we need.",
+    "speaker_effect": [
+      {
+        "effect": [ { "u_add_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" } ]
+      }
+    ],
+    "responses": [
+      { "text": "Thank you.  One more thing before I go.", "topic": "TALK_CF_REP" },
+      { "text": "Thank you.  Bye for now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_CF_REP_PRELUDE_GEM",
+    "type": "talk_topic",
+    "dynamic_line": "That looks like an artifact made from a shadow gem.  The alterations made to it aren't human, that much is clear.  It's burnt-out too, but I can figure out what it did when it activated.  In fact, given what we know this likely caused the secondary attack at their campsite.  Let me get a mask from one of the others.",
+    "responses": [ { "text": "Okay…", "topic": "TALK_CF_REP_PRELUDE_GEM_2" } ]
+  },
+  {
+    "id": "TALK_CF_REP_PRELUDE_GEM_2",
+    "type": "talk_topic",
+    "dynamic_line": "It still has some lingering aftereffects.  Like a trail of energy burnt into what remains of its enchantments, essentially pointing in the direction of the source as of the moment it activated.  That'd be no good to us just standing here, but we know the rough area of the anomalous region, and we know where it was when it activated.  Go tell Johnathan we have what we need to pinpoint the source.",
+    "speaker_effect": [
+      {
+        "effect": [ { "u_add_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" } ]
+      }
+    ],
+    "responses": [
+      { "text": "Thank you.  One more thing before I go.", "topic": "TALK_CF_REP" },
+      { "text": "Thank you.  Bye for now.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -465,15 +546,38 @@
     "dynamic_line": "Our order was composed of people from various religions.  Not only Abrahamic ones of various sorts, but those that would be considered pagan.  Asatruan, in my case.  Over time our practices mingled, a shared influence affecting our approach to the arcane.",
     "responses": [
       {
-        "text": "What do you mean, arcane?",
+        "text": "And what approach is that?",
         "condition": {
-          "not": {
-            "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
-          }
+          "or": [
+            { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ] },
+            { "u_has_skill": { "skill": "magic", "level": 1 } }
+          ]
         },
-        "topic": "TALK_CF_REP_ARCANE"
+        "switch": true,
+        "topic": "TALK_CF_REP_ARCANE_2"
+      },
+      {
+        "text": "What do you mean, arcane?",
+        "switch": true,
+        "default": true,
+        "topic": "TALK_CF_REP_ARCANE_2"
       },
       { "text": "…", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_ARCANE_2",
+    "dynamic_line": {
+      "u_has_effect": "cf_sofia_notes_given",
+      "yes": "There are many approaches to handling these forces.  Some have chosen recklessness, as though it is a drug to be abused.  Others, superstitious faith and worship of powers that do not belong in our world.  We seek to study these anomalies cautiously, and keep others safe from more dangerous artifacts if we must.  The acolyte I took those notes from, the ones I gave you, learned the importance of caution the hard way, and did not live to benefit from that experience.  That is why we have resorted to extreme measures to deal with dangerous relics in the past.",
+      "no": "There are many approaches to handling these forces.  Some have chosen recklessness, as though it is a drug to be abused.  Others, superstitious faith and worship of powers that do not belong in our world.  We seek to study these anomalies cautiously, and keep others safe from more dangerous artifacts if we must.  If it means containment, or destruction, so be it.  I prefer instead to teach others how to handle such safely, for caution is a lesson many learn the hard way, and few survive such experiences."
+    },
+    "responses": [
+      {
+        "text": "Alright…",
+        "topic": "TALK_CF_REP"
+      }
     ]
   },
   {
@@ -564,12 +668,6 @@
       { "text": "Why are you called Thane?", "topic": "TALK_CF_REP_THANE" },
       { "text": "I see.  That is all for now.", "topic": "TALK_CF_REP" }
     ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_CF_REP_TBC",
-    "dynamic_line": "Not at the moment.  Check back later, and I should have more for you.",
-    "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",

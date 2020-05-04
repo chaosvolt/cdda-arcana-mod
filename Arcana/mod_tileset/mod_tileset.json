@@ -41,7 +41,11 @@
           { "id": "mon_archon", "fg": 28, "bg": 0 },
           { "id": "corpse_mon_archon", "fg": 29, "bg": 0 },
           { "id": "overlay_wielded_stinger_flute", "fg": 30, "bg": 0 },
-          { "id": "overlay_wielded_offering_chalice", "fg": 31, "bg": 0 }
+          { "id": "overlay_wielded_offering_chalice", "fg": 31, "bg": 0 },
+          { "id": "air_talisman", "fg": 32, "bg": 0 },
+          { "id": "tr_archon_shadow_trap", "fg": 33, "bg": 0 },
+          { "id": "tr_archon_hallu_trap", "fg": 34, "bg": 0 },
+          { "id": "tr_archon_chill_trap", "fg": 35, "bg": 0 }
         ]
       }
     ]
@@ -89,7 +93,7 @@
         "sprite_height": 64,
         "sprite_offset_x": -20,
         "sprite_offset_y": -32,
-        "tiles": [ { "id": "mon_dracolich", "fg": 1, "bg": 0 }, { "id": "corpse_mon_dracolich", "fg": 2, "bg": 0 } ]
+        "tiles": [ { "id": "mon_seraphic_shade", "fg": 0 }, { "id": "mon_seraphic_shade_fake", "fg": 0 }, { "id": "mon_dracolich", "fg": 1 }, { "id": "corpse_mon_dracolich", "fg": 2 } ]
       }
     ]
   }

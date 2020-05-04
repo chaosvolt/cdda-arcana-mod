@@ -13,9 +13,9 @@
     ]
   },
   {
-    "//": "More narrow mix of starting traits, mostly excludes traits that would've consigned someone to non-combatant roles, and a few flavor things.  Spiritual has a boosted chance.",
+    "//": "More narrow mix of starting traits, mostly excludes traits that would've consigned someone to non-combatant roles, and a few flavor things.",
     "type": "trait_group",
-    "id": "Mage_Hunter_starting_traits",
+    "id": "Arcanist_starting_traits",
     "subtype": "collection",
     "traits": [
       { "group": "trait_group_NONADDICTIVE", "prob": 10 },
@@ -39,7 +39,6 @@
       { "trait": "POISRESIST", "prob": 10 },
       { "trait": "QUICK", "prob": 10 },
       { "trait": "ROBUST", "prob": 10 },
-      { "trait": "SPIRITUAL", "prob": 75 },
       { "trait": "TERRIFYING", "prob": 15 },
       { "trait": "HEAVYSLEEPER", "prob": 10 },
       { "trait": "LACTOSE", "prob": 10 },
@@ -66,6 +65,11 @@
     "id": "Sanguine_aspirant_traits",
     "subtype": "collection",
     "traits": [
+      { "group": "trait_group_FLEET", "prob": 15 },
+      { "group": "trait_group_GOODHEARING", "prob": 10 },
+      { "group": "trait_group_GOODCARDIO", "prob": 10 },
+      { "group": "trait_group_LIGHTSTEP", "prob": 10 },
+      { "group": "trait_group_TOUGH", "prob": 20 },
       {
         "collection": [
           { "trait": "ARCANA_SCALYPATCHES" },

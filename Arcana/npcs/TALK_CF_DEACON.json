@@ -5,6 +5,21 @@
     "dynamic_line": { "u_is_wearing": "badge_marshal", "yes": "Hello, Marshal.  How may I help you?", "no": "Hello.  How may I help you?" },
     "responses": [
       {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_CF_DEACON_GM_PRELUDE"
+      },
+      {
         "text": "[MISSION] I spoke with Sofia.  They're doing alright, so far.",
         "condition": {
           "and": [
@@ -31,12 +46,17 @@
       { "text": "Who are you?", "topic": "TALK_CF_DEACON_WHO" },
       { "text": "What do you do here?", "topic": "TALK_CF_DEACON_DO" },
       {
-        "text": "Just passing through.  Need help with anything?",
+        "text": "Need help with anything?",
         "condition": { "not": { "u_has_effect": "already_asked_deacon" } },
         "topic": "TALK_CF_DEACON_HELP"
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
+  },
+  {
+    "id": "TALK_CF_DEACON_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": "I assume that Sofia or one of her compatriots has asked you to look into this matter.  I recently had to administer the Viaticum to an gravely injured man, the only survivor of an attack a few miles down the road.  They were in too much shock to recount what happened, but I recognized the signs of deep frostbite around the neck and chest, even through his armor, and severe fractures without lacerations or bruises.  Consistent with the other attacks, at night within the same wide range as the others."
   },
   {
     "id": "TALK_CF_DEACON_MISSION_CF_4",

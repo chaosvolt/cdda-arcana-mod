@@ -72,7 +72,7 @@
       [ "diamond", 1 ],
       { "item": "essence", "prob": 25, "count": [ 1, 3 ] },
       { "item": "essence_blood", "prob": 25, "count": [ 2, 6 ] },
-      { "item": "essence_dull", "prob": 25, "count": [ 4, 8 ] }
+      { "item": "essence_dull", "prob": 25, "count": [ 8, 16 ] }
     ]
   },
   {

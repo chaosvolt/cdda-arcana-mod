@@ -99,7 +99,7 @@
     "using": [ [ "filament", 18 ], [ "steel_standard", 2 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
-    "components": [ [ [ "cloak_leather", 1 ] ], [ [ "gold_small", 200 ], [ "CF_golden_scale", 40 ] ], [ [ "essence_dull", 20 ] ] ]
+    "components": [ [ [ "cloak_leather", 1 ] ], [ [ "gold_small", 200 ], [ "CF_golden_scale", 40 ] ], [ [ "essence_dull", 40 ] ] ]
   },
   {
     "result": "somen_clairvoyance",
@@ -123,7 +123,7 @@
       [ [ "steel_chunk", 2 ], [ "scrap", 10 ], [ "scrap_bronze", 2 ] ],
       [ [ "leather", 2 ], [ "fur", 2 ] ],
       [ [ "copper", 30 ], [ "silver_small", 30 ], [ "gold_small", 30 ], [ "CF_golden_scale", 6 ] ],
-      [ [ "essence_dull", 15 ] ]
+      [ [ "essence_dull", 30 ] ]
     ]
   },
   {

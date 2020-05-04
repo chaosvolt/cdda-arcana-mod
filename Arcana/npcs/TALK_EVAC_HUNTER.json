@@ -1,5 +1,31 @@
 [
   {
+    "type": "talk_topic",
+    "id": "TALK_EVAC_HUNTER",
+    "responses": [
+      {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_EVAC_HUNTER_GM_PRELUDE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_EVAC_HUNTER_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": "Lost half a hunting party a few days ago, along the edge of one of the old towns.  Thought nothing of it at first, but now that you mention it things sounded fishy.  Guess I'll lay out how things went down, see if that helps whatever you're trying to do."
+  },
+  {
     "id": "TALK_EVAC_HUNTER_DO",
     "type": "talk_topic",
     "responses": [

@@ -26,12 +26,8 @@
     "speaker_effect": {
       "condition": { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } },
       "effect": [
-        { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
-        {
-          "mapgen_update": "cf_church_matthew_restock",
-          "om_terrain": "cf_church_4",
-          "om_special": "cf_rural_church"
-        }
+        { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
+        { "mapgen_update": "cf_church_matthew_restock", "om_terrain": "cf_church_4", "om_special": "cf_rural_church" }
       ]
     },
     "responses": [

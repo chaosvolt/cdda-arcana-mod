@@ -3,20 +3,36 @@
     "id": "TALK_CF_AUX_MERC",
     "type": "talk_topic",
     "dynamic_line": {
-       "u_is_wearing": "badge_marshal",
-       "yes": "Howdy, marshal.",
-       "no": {
-          "u_male": true,
-          "yes": "Howdy, sir.",
-          "no": "Howdy, ma'am."
-       }
+      "u_is_wearing": "badge_marshal",
+      "yes": "Howdy, marshal.",
+      "no": { "u_male": true, "yes": "Howdy, sir.", "no": "Howdy, ma'am." }
     },
     "responses": [
+      {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_CF_AUX_MERC_GM_PRELUDE"
+      },
       { "text": "Who are you?", "topic": "TALK_CF_AUX_MERC_WHO" },
       { "text": "Any tips for surviving?", "topic": "TALK_CF_AUX_MERC_TIPS" },
       { "text": "Are you… dressed up like a cowboy?", "topic": "TALK_CF_AUX_MERC_YEEHAW" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
+  },
+  {
+    "id": "TALK_CF_AUX_MERC_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": "I heard what y'all are up to.  Ran into one what these fellas are lookin' for myself last patrol, picked off one and left the other chasin' squirrels.  I'll tell the padre here what I've found out, you just keep askin' around.  Take care now."
   },
   {
     "id": "TALK_CF_AUX_MERC_WHO",
@@ -53,21 +69,16 @@
     "id": "TALK_CF_AUX_MERC_HIRE",
     "type": "talk_topic",
     "dynamic_line": {
-       "u_is_wearing": "badge_marshal",
-       "yes": "Well now marshal, I'd be willing to serve as a deputy for half my going rate. 125 Golden Scales, the stuff they use here, should cover my expenses.  After that, lead and I'll follow.",
-       "no": "250 of the Golden Scales they use here will cover my expenses.  So long as there's places to explore and loot to find, should be fine by me."
+      "u_is_wearing": "badge_marshal",
+      "yes": "Well now marshal, I'd be willing to serve as a deputy for half my going rate. 125 Golden Scales, the stuff they use here, should cover my expenses.  After that, lead and I'll follow.",
+      "no": "250 of the Golden Scales they use here will cover my expenses.  So long as there's places to explore and loot to find, should be fine by me."
     },
     "responses": [
       {
         "text": "[GS125] You have a deal.",
         "topic": "TALK_CF_AUX_MERC_HIRE_SUCCESS",
         "switch": true,
-        "condition": {
-          "and": [
-            { "u_is_wearing": "badge_marshal" },
-            { "u_has_items": { "item": "CF_golden_scale", "count": 125 } }
-          ]
-        },
+        "condition": { "and": [ { "u_is_wearing": "badge_marshal" }, { "u_has_items": { "item": "CF_golden_scale", "count": 125 } } ] },
         "effect": { "u_consume_item": "CF_golden_scale", "count": 125 }
       },
       {
@@ -103,7 +114,6 @@
       { "text": "Well, thanks for the info.  Bye!", "topic": "TALK_DONE" }
     ]
   },
-
   {
     "id": "TALK_CF_AUX_MERC_TIPS",
     "type": "talk_topic",
@@ -134,8 +144,6 @@
     "id": "TALK_CF_AUX_MERC_YEEHAW",
     "type": "talk_topic",
     "dynamic_line": "Yep.  Used to be a ranch hand, and it's still practical for wandering the wastes.  Unholy abominations don't care so much about fancy plate carriers, and anything that'll stop a rifle bullet slows you down.",
-    "responses": [
-      { "text": "…", "topic": "TALK_CF_AUX_MERC" }
-    ]
+    "responses": [ { "text": "…", "topic": "TALK_CF_AUX_MERC" } ]
   }
 ]

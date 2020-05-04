@@ -37,7 +37,6 @@
     "id": "sanguine_cult_consumables",
     "type": "item_group",
     "items": [
-      [ "portal", 10 ],
       [ "numbness_potion", 4 ],
       [ "strength_potion", 2 ],
       [ "speed_potion", 3 ],
@@ -49,7 +48,8 @@
       [ "summon_flying_polyp", 1 ],
       [ "summon_mi_go", 1 ],
       [ "summon_yugg", 1 ],
-      [ "summon_shoggoth", 1 ]
+      [ "summon_shoggoth", 1 ],
+      [ "portal", 1 ]
     ]
   },
   {

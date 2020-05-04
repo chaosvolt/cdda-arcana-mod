@@ -1,5 +1,39 @@
 [
   {
+    "id": "arcana_mark_destructive_absorption",
+    "type": "SPELL",
+    "name": "Mark: Destructive Absorption",
+    "description": "Sanguine Mark\nUsing this spell will drain energy from your surroundings, creating a void in reality with disruptive effects on a single target.  Machines and some otherworldly creatures will be immune to this attack, but the side effects of channeling that energy will still affect you, fueling your inner fire.  Beware the risk of tearing the fabric of reality.",
+    "message": "With a strange gesture, the fabric of the Veil warps and decays.  %s!",
+    "effect": "target_attack",
+    "valid_targets": [ "ally", "hostile" ],
+    "flags": [ "SILENT", "SOMATIC", "NO_HANDS" ],
+    "extra_effects": [
+      { "id": "arcana_aftermath_destructive_absorption_side_effects", "hit_self": true, "max_level": 5 }
+    ],
+    "min_damage": 70,
+    "max_damage": 360,
+    "damage_increment": 58,
+    "min_range": 3,
+    "max_range": 6,
+    "range_increment": 0.6,
+    "skill": "magic",
+    "max_level": 5,
+    "//": "Spell rank is 10, sanguine marks use zero difficulty",
+    "base_casting_time": 385,
+    "final_casting_time": 352,
+    "casting_time_increment": -6.6,
+    "energy_source": "HP",
+    "base_energy_cost": 44,
+    "final_energy_cost": 33,
+    "energy_increment": -2.2,
+    "damage_type": "cold",
+    "field_id": "fd_fatigue",
+    "field_chance": 20,
+    "min_field_intensity": 1,
+    "max_field_intensity": 1
+  },
+  {
     "id": "arcana_mark_drain_life",
     "type": "SPELL",
     "name": "Mark: Drain Life",
@@ -12,6 +46,7 @@
     "effect_str": "halo_drainlife",
     "energy_source": "HP",
     "//": "Spell rank is 6, sanguine marks use zero difficulty",
+    "skill": "magic",
     "max_level": 5,
     "base_casting_time": 245,
     "final_casting_time": 224,
@@ -21,22 +56,22 @@
     "energy_increment": -1.4,
     "min_duration": 108000,
     "max_duration": 180000,
-    "duration_increment": 14400,
-    "spell_class": "SPELL_HUNT_DRAGONBLOOD"
+    "duration_increment": 14400
   },
   {
     "id": "arcana_mark_elemental_sign",
     "type": "SPELL",
     "name": "Mark: Elemental Sign",
-    "description": "Sanguine Mark\nUsing this spell will grant temporary resistance to heat and smoke, and sap heat from all around you.  Direct contact with flame will still cause harm.",
+    "description": "Sanguine Mark\nUsing this spell will grant complete immunity to fire, and sap heat from all around you.",
     "message": "With a gesture, your inner fire flares up.  %s!",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC", "NO_HANDS" ],
     "extra_effects": [ { "id": "arcana_aftermath_elemental_coldness", "hit_self": false, "max_level": 5 }, { "id": "arcana_aftermath_elemental_stun", "hit_self": false, "max_level": 5 } ],
     "effect": "target_attack",
-    "effect_str": "heat_ward",
+    "effect_str": "heat_ward_true",
     "energy_source": "HP",
     "//": "Spell rank is 5, sanguine marks use zero difficulty",
+    "skill": "magic",
     "max_level": 5,
     "base_casting_time": 210,
     "final_casting_time": 192,
@@ -46,20 +81,18 @@
     "energy_increment": -1.2,
     "min_duration": 45000,
     "max_duration": 75000,
-    "duration_increment": 6000,
-    "spell_class": "SPELL_EMBERS_DRAGONBLOOD"
+    "duration_increment": 6000
   },
   {
     "id": "arcana_mark_infernal_flame",
     "//": "ID retaining for compatibility, and because the name change won't visibly affect spelllist order.",
     "type": "SPELL",
     "name": "Mark: Infernal Breath",
-    "description": "Sanguine Mark\nUsing this spell will channel your inner fire into a devastating blast, inflicting horrific burns and leaving a permanent scar upon the land.  Be careful using it around allies, and note that this will consume calories as with firing mundane dragonfire.",
+    "description": "Sanguine Mark\nUsing this spell will channel your inner fire into a devastating blast, inflicting horrific burns and leaving a permanent scar upon the land.  Be careful using it around allies, and note that this will consume calories as with firing mundane dragonfire, and risks damaging the fabric of reality.",
     "message": "A bolt of flame leaps from your mouth, shaped into unholy fire with a wave of the hand.  %s!",
     "effect": "line_attack",
-    "sound_description": "an unholy roar of flames",
     "valid_targets": [ "ally", "hostile", "ground" ],
-    "flags": [ "LOUD", "SOMATIC", "NO_HANDS" ],
+    "flags": [ "SILENT", "SOMATIC", "NO_HANDS" ],
     "extra_effects": [
       { "id": "arcana_aftermath_infernal_flame_side_effects", "hit_self": true },
       { "id": "arcana_aftermath_infernal_flame_corruption", "hit_self": false, "max_level": 5 },
@@ -80,6 +113,7 @@
     "max_aoe": 2,
     "max_level": 5,
     "//": "Spell rank is 2, sanguine marks use zero difficulty",
+    "skill": "magic",
     "base_casting_time": 140,
     "final_casting_time": 128,
     "casting_time_increment": -2.4,
@@ -93,8 +127,36 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.4,
-    "field_intensity_variance": 0.5,
-    "spell_class": "SPELL_SUMMONFIEND"
+    "field_intensity_variance": 0.5
+  },
+  {
+    "id": "arcana_mark_malevolent_gaze",
+    "type": "SPELL",
+    "name": "Mark: Malevolent Gaze",
+    "description": "Sanguine Mark\nUsing this spell will strike a single target with a powerful temporal effect, It won't deal any damage, but it will freeze your prey in place momentarily, leaving them slowed for a while afterward.",
+    "message": "Your pupils briefly narrow into thin slits as you focus your hatred.  %s!",
+    "effect": "mod_moves",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT", "SOMATIC", "NO_HANDS" ],
+    "extra_effects": [
+      { "id": "arcana_aftermath_malevolent_gaze_slowdown", "hit_self": false, "max_level": 5 }
+    ],
+    "min_damage": -1500,
+    "max_damage": -3000,
+    "damage_increment": -300,
+    "min_range": 5,
+    "max_range": 10,
+    "range_increment": 1,
+    "max_level": 5,
+    "//": "Spell rank is 5, sanguine marks use zero difficulty",
+    "skill": "magic",
+    "base_casting_time": 210,
+    "final_casting_time": 192,
+    "casting_time_increment": -3.6,
+    "energy_source": "HP",
+    "base_energy_cost": 24,
+    "final_energy_cost": 18,
+    "energy_increment": -1.2
   },
   {
     "id": "arcana_mark_might",
@@ -108,6 +170,7 @@
     "effect_str": "spell_might",
     "energy_source": "HP",
     "//": "Spell rank is 5, sanguine marks use zero difficulty",
+    "skill": "magic",
     "max_level": 5,
     "base_casting_time": 210,
     "final_casting_time": 192,
@@ -117,8 +180,7 @@
     "energy_increment": -1.2,
     "min_duration": 90000,
     "max_duration": 150000,
-    "duration_increment": 12000,
-    "spell_class": "SPELL_INSTINCT_DRAGONBLOOD"
+    "duration_increment": 12000
   },
   {
     "id": "arcana_mark_revenant_blood",
@@ -132,6 +194,7 @@
     "effect_str": "dragonblood_clarity",
     "energy_source": "HP",
     "//": "Spell rank is 4, sanguine marks use zero difficulty",
+    "skill": "magic",
     "max_level": 5,
     "base_casting_time": 175,
     "final_casting_time": 160,
@@ -141,8 +204,7 @@
     "energy_increment": -1,
     "min_duration": 36000,
     "max_duration": 60000,
-    "duration_increment": 4800,
-    "spell_class": "SPELL_INSTINCT_DRAGONBLOOD"
+    "duration_increment": 4800
   },
   {
     "id": "arcana_mark_summon_dark_wyrm",
@@ -156,6 +218,7 @@
     "effect_str": "mon_dark_wyrm_summoned",
     "energy_source": "HP",
     "//": "Spell rank is 5, sanguine marks use zero difficulty",
+    "skill": "magic",
     "max_level": 5,
     "min_damage": 1,
     "max_damage": 1,
@@ -170,8 +233,7 @@
     "energy_increment": -1.2,
     "min_duration": 900000,
     "max_duration": 5400000,
-    "duration_increment": 900000,
-    "spell_class": "SPELL_SUMMONWYRM"
+    "duration_increment": 900000
   },
   {
     "id": "arcana_mark_summon_fiend",
@@ -185,6 +247,7 @@
     "effect_str": "mon_zombie_fiend_summoned",
     "energy_source": "HP",
     "//": "Spell rank is 4, sanguine marks use zero difficulty",
+    "skill": "magic",
     "max_level": 5,
     "min_damage": 1,
     "max_damage": 1,
@@ -199,8 +262,7 @@
     "energy_increment": -1,
     "min_duration": 720000,
     "max_duration": 4320000,
-    "duration_increment": 720000,
-    "spell_class": "SPELL_SUMMONFIEND"
+    "duration_increment": 720000
   },
   {
     "id": "arcana_mark_summon_jabberwock",
@@ -214,6 +276,7 @@
     "effect_str": "mon_jabberwock_summoned",
     "energy_source": "HP",
     "//": "Spell rank is 6, sanguine marks use zero difficulty",
+    "skill": "magic",
     "max_level": 5,
     "min_damage": 1,
     "max_damage": 1,
@@ -228,8 +291,7 @@
     "energy_increment": -1.4,
     "min_duration": 1080000,
     "max_duration": 6480000,
-    "duration_increment": 1080000,
-    "spell_class": "SPELL_SUMMONWYRM"
+    "duration_increment": 1080000
   },
   {
     "id": "arcana_mark_suppression",
@@ -244,6 +306,7 @@
     "effect_str": "halo_dampening",
     "energy_source": "HP",
     "//": "Spell rank is 2, sanguine marks use zero difficulty",
+    "skill": "magic",
     "max_level": 5,
     "base_casting_time": 105,
     "final_casting_time": 96,
@@ -253,8 +316,7 @@
     "energy_increment": -0.6,
     "min_duration": 36000,
     "max_duration": 60000,
-    "duration_increment": 4800,
-    "spell_class": "SPELL_EMBERS_DRAGONBLOOD"
+    "duration_increment": 4800
   },
   {
     "id": "arcana_mark_surge_adrenaline",
@@ -274,10 +336,10 @@
     "final_energy_cost": 9,
     "energy_increment": -0.6,
     "//": "Spell rank is 2, sanguine marks use zero difficulty",
+    "skill": "magic",
     "min_duration": 36000,
     "max_duration": 60000,
     "duration_increment": 4800,
-    "energy_source": "HP",
-    "spell_class": "SPELL_HUNT_DRAGONBLOOD"
+    "energy_source": "HP"
   }
 ]

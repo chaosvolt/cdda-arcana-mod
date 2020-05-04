@@ -69,13 +69,15 @@
     "id": "mon_zombie_necro",
     "copy-from": "mon_zombie_necro",
     "type": "MONSTER",
-    "death_drops": "mon_zombie_necro_death_drops"
+    "death_drops": "mon_zombie_necro_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ] }
   },
   {
     "id": "mon_zombie_master",
     "copy-from": "mon_zombie_master",
     "type": "MONSTER",
-    "death_drops": "mon_zombie_master_death_drops"
+    "death_drops": "mon_zombie_master_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ] }
   },
   {
     "id": "mon_zombie_hollow",
@@ -87,19 +89,22 @@
     "id": "mon_fleshy_shambler",
     "copy-from": "mon_fleshy_shambler",
     "type": "MONSTER",
-    "death_drops": "mon_fleshy_shambler_death_drops"
+    "death_drops": "mon_fleshy_shambler_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_flesh_golem",
     "copy-from": "mon_flesh_golem",
     "type": "MONSTER",
-    "death_drops": "mon_flesh_golem_death_drops"
+    "death_drops": "mon_flesh_golem_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_jabberwock",
     "copy-from": "mon_jabberwock",
     "type": "MONSTER",
-    "death_drops": "mon_jabberwock_death_drops"
+    "death_drops": "mon_jabberwock_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_charred_nightmare",
@@ -219,19 +224,22 @@
     "id": "mon_one_eye",
     "copy-from": "mon_one_eye",
     "type": "MONSTER",
-    "death_drops": "mon_one_eye_death_drops"
+    "death_drops": "mon_one_eye_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_crawler",
     "copy-from": "mon_crawler",
     "type": "MONSTER",
-    "death_drops": "mon_crawler_death_drops"
+    "death_drops": "mon_crawler_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_rat_king",
     "copy-from": "mon_rat_king",
     "type": "MONSTER",
-    "death_drops": "mon_rat_king_death_drops"
+    "death_drops": "mon_rat_king_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_dermatik_larva",
@@ -249,164 +257,241 @@
     "id": "mon_dark_wyrm",
     "copy-from": "mon_dark_wyrm",
     "type": "MONSTER",
-    "death_drops": "mon_dark_wyrm_death_drops"
+    "death_drops": "mon_dark_wyrm_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_amigara_horror",
     "copy-from": "mon_amigara_horror",
     "type": "MONSTER",
-    "death_drops": "mon_amigara_horror_death_drops"
+    "death_drops": "mon_amigara_horror_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_dog_thing",
+    "copy-from": "mon_dog_thing",
+    "type": "MONSTER",
+    "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_headless_dog_thing",
+    "copy-from": "mon_headless_dog_thing",
+    "type": "MONSTER",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_thing",
     "copy-from": "mon_thing",
     "type": "MONSTER",
-    "death_drops": "mon_thing_death_drops"
+    "death_drops": "mon_thing_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_human_snail",
     "copy-from": "mon_human_snail",
     "type": "MONSTER",
-    "death_drops": "mon_human_snail_death_drops"
+    "death_drops": "mon_human_snail_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_twisted_body",
     "copy-from": "mon_twisted_body",
     "type": "MONSTER",
-    "death_drops": "mon_twisted_body_death_drops"
+    "death_drops": "mon_twisted_body_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_vortex",
     "copy-from": "mon_vortex",
     "type": "MONSTER",
     "//": "FFS why are they harmless",
-    "melee_dice": 1,
-    "melee_dice_sides": 4,
-    "death_drops": "mon_vortex_death_drops"
+    "melee_damage": [ { "damage_type": "cold", "amount": 4, "armor_multiplier": 0.75 } ],
+    "death_drops": "mon_vortex_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_flying_polyp",
     "copy-from": "mon_flying_polyp",
     "type": "MONSTER",
-    "death_drops": "mon_flying_polyp_death_drops"
+    "death_drops": "mon_flying_polyp_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_hunting_horror",
     "copy-from": "mon_hunting_horror",
+    "melee_damage": [ { "damage_type": "cold", "amount": 4, "armor_multiplier": 0.75 } ],
+    "melee_cut": 4,
     "type": "MONSTER",
-    "death_drops": "mon_hunting_horror_death_drops"
+    "death_drops": "mon_hunting_horror_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_mi_go",
     "copy-from": "mon_mi_go",
     "type": "MONSTER",
-    "death_drops": "mon_mi_go_death_drops"
+    "death_drops": "mon_mi_go_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_mi_go_slaver",
+    "copy-from": "mon_mi_go_slaver",
+    "type": "MONSTER",
+    "death_drops": "mon_mi_go_slaver_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_mi_go_surgeon",
+    "copy-from": "mon_mi_go_surgeon",
+    "type": "MONSTER",
+    "death_drops": "mon_mi_go_surgeon_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_mi_go_guard",
+    "copy-from": "mon_mi_go_guard",
+    "type": "MONSTER",
+    "death_drops": "mon_mi_go_guard_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_mi_go_myrmidon",
+    "copy-from": "mon_mi_go_myrmidon",
+    "type": "MONSTER",
+    "death_drops": "mon_mi_go_myrmidon_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_mi_go_scout",
+    "copy-from": "mon_mi_go_scout",
+    "type": "MONSTER",
+    "death_drops": "mon_mi_go_scout_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_yugg",
     "copy-from": "mon_yugg",
     "type": "MONSTER",
-    "death_drops": "mon_yugg_death_drops"
+    "death_drops": "mon_yugg_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_gelatin",
     "copy-from": "mon_gelatin",
     "type": "MONSTER",
-    "death_drops": "mon_gelatin_death_drops"
+    "death_drops": "mon_gelatin_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_flaming_eye",
     "copy-from": "mon_flaming_eye",
     "type": "MONSTER",
-    "death_drops": "mon_flaming_eye_death_drops"
+    "death_drops": "mon_flaming_eye_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_kreck",
     "copy-from": "mon_kreck",
     "type": "MONSTER",
-    "death_drops": "mon_kreck_death_drops"
+    "death_drops": "mon_kreck_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_gracke",
     "copy-from": "mon_gracke",
     "type": "MONSTER",
-    "death_drops": "mon_gracke_death_drops"
+    "death_drops": "mon_gracke_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_blank",
     "copy-from": "mon_blank",
     "type": "MONSTER",
-    "death_drops": "mon_blank_death_drops"
+    "death_drops": "mon_blank_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_gozu",
     "copy-from": "mon_gozu",
     "type": "MONSTER",
-    "death_drops": "mon_gozu_death_drops"
+    "death_drops": "mon_gozu_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_shadow",
     "copy-from": "mon_shadow",
     "type": "MONSTER",
+    "melee_dice_sides": 1,
     "melee_damage": [ { "damage_type": "cold", "amount": 1, "armor_multiplier": 0.75 } ],
-    "death_drops": "mon_shadow_death_drops"
+    "death_drops": "mon_shadow_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_darkman",
     "copy-from": "mon_darkman",
     "type": "MONSTER",
     "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.75 } ],
+    "melee_cut": 1,
     "special_attacks": [ [ "DARKMAN", 30 ], [ "scratch", 15 ] ],
-    "death_drops": "mon_darkman_death_drops"
+    "death_drops": "mon_darkman_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_breather_hub",
     "copy-from": "mon_breather_hub",
     "type": "MONSTER",
-    "death_drops": "mon_breather_hub_death_drops"
+    "death_drops": "mon_breather_hub_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_breather",
     "copy-from": "mon_breather",
     "type": "MONSTER",
-    "death_drops": "mon_breather_death_drops"
+    "death_drops": "mon_breather_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_shadow_snake",
     "copy-from": "mon_shadow_snake",
     "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.75 } ],
+    "melee_cut": 2,
     "type": "MONSTER",
-    "death_drops": "mon_shadow_snake_death_drops"
+    "death_drops": "mon_shadow_snake_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_shoggoth",
     "copy-from": "mon_shoggoth",
     "type": "MONSTER",
-    "death_drops": "mon_shoggoth_death_drops"
+    "death_drops": "mon_shoggoth_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_dementia",
     "copy-from": "mon_dementia",
     "type": "MONSTER",
-    "death_drops": "mon_dementia_death_drops"
+    "death_drops": "mon_dementia_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_homunculus",
     "copy-from": "mon_homunculus",
     "type": "MONSTER",
-    "death_drops": "mon_homunculus_death_drops"
+    "death_drops": "mon_homunculus_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_blood_sacrifice",
     "copy-from": "mon_blood_sacrifice",
     "type": "MONSTER",
-    "death_drops": "mon_blood_sacrifice_death_drops"
+    "death_drops": "mon_blood_sacrifice_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_flesh_angel",
     "copy-from": "mon_flesh_angel",
     "type": "MONSTER",
-    "death_drops": "mon_flesh_angel_death_drops"
+    "death_drops": "mon_flesh_angel_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_player_blob",
@@ -461,7 +546,14 @@
     "copy-from": "mon_hound_tindalos",
     "//": "Only the real ones will drop essence, not afterimages.",
     "type": "MONSTER",
-    "death_drops": "mon_hound_tindalos_death_drops"
+    "death_drops": "mon_hound_tindalos_death_drops",
+    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_hound_tindalos_afterimage",
+    "copy-from": "mon_hound_tindalos_afterimage",
+    "type": "MONSTER",
+    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_devourer",
@@ -568,6 +660,7 @@
     ],
     "death_drops": "mon_spirit_of_fire_death_drops",
     "death_function": [ "MELT" ],
+    "//": "It's coldproof due to being a demon, moreso than because it's made of fire.",
     "flags": [
       "NOHEAD",
       "HARDTOSHOOT",
@@ -576,6 +669,7 @@
       "FIREY",
       "WARM",
       "FIREPROOF",
+      "COLDPROOF",
       "SEES",
       "PATH_AVOID_DANGER_1",
       "STUN_IMMUNE",
@@ -639,8 +733,8 @@
     "morale": 100,
     "melee_skill": 9,
     "melee_dice": 2,
-    "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "cold", "amount": 4, "armor_multiplier": 0.1 } ],
+    "melee_dice_sides": 2,
+    "melee_damage": [ { "damage_type": "cold", "amount": 5, "armor_multiplier": 0.1 } ],
     "melee_cut": 2,
     "dodge": 3,
     "armor_bash": 6,
@@ -687,6 +781,7 @@
       "WARM",
       "HUMAN",
       "PATH_AVOID_DANGER_2",
+      "COLDPROOF",
       "CAN_OPEN_DOORS",
       "PRIORITIZE_TARGETS",
       "HARDTOSHOOT",
@@ -898,7 +993,7 @@
     "luminance": 60,
     "armor_stab": 8,
     "armor_bullet": 8,
-    "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
+    "melee_damage": [ { "damage_type": "cold", "amount": 10, "armor_multiplier": 0.75 } ],
     "regenerates": 10,
     "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "STUMBLES" ] }
@@ -992,6 +1087,9 @@
     "name": { "str": "summoned hunting horror" },
     "categories": [ "CLASSIC" ],
     "species": [ "ARCANA_SUMMONED" ],
+    "melee_dice_sides": 6,
+    "melee_cut": 3,
+    "melee_damage": [ { "damage_type": "cold", "amount": 9, "armor_multiplier": 0.1 } ],
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
     "vision_day": 50,
@@ -999,7 +1097,7 @@
     "armor_stab": 10,
     "armor_bullet": 10,
     "death_drops": {  },
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "ELECTRIC" ] },
     "delete": { "flags": [ "SUNDEATH", "HIT_AND_RUN" ] }
   },
   {
@@ -1058,7 +1156,8 @@
     "species": [ "ARCANA_SUMMONED" ],
     "mountable_weight_ratio": 0.9,
     "speed": 80,
-    "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.1 } ],
+    "melee_dice_sides": 1,
+    "melee_damage": [ { "damage_type": "cold", "amount": 3, "armor_multiplier": 0.1 } ],
     "dodge": 3,
     "armor_cut": 3,
     "armor_stab": 8,
@@ -1074,16 +1173,58 @@
     "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN", "ELECTRIC" ] }
   },
   {
+    "id": "mon_shadow_summoned_fake",
+    "looks_like": "mon_shadow_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned shadow" },
+    "description": "This is an animate shadow.  Looking like nothing more than an errant patch of normal shadow, it draws your attention by the way it moves subtly and whispers softly in the back of your mind.  Strange intrusive thoughts accompany the quiet murmur, awakening your most horrific memories and fears.",
+    "default_faction": "nether",
+    "categories": [ "CLASSIC" ],
+    "species": [ "HALLUCINATION" ],
+    "diff": 2,
+    "volume": "750 ml",
+    "weight": "1 kg",
+    "hp": 1,
+    "speed": 80,
+    "symbol": "A",
+    "color": "dark_gray",
+    "aggression": 100,
+    "morale": 100,
+    "armor_cut": 3,
+    "vision_night": 50,
+    "path_settings": { "max_dist": 10 },
+    "harvest": "exempt",
+    "special_attacks": [ [ "DISAPPEAR", 200 ] ],
+    "death_function": [ "DISAPPEAR" ],
+    "flags": [
+      "PACIFIST",
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "SEES",
+      "NOHEAD",
+      "HARDTOSHOOT",
+      "WEBWALK",
+      "FLIES",
+      "PLASTIC",
+      "ACIDPROOF",
+      "NO_BREATHE",
+      "NOGIB"
+    ]
+  },
+  {
     "id": "mon_shadow_snake_summoned",
     "copy-from": "mon_shadow_snake",
     "type": "MONSTER",
     "name": { "str": "summoned shadow snake" },
+    "description": "This is an animate shadow in the form of a long and sinuous snake.  Translucent and dark, it weaves silently through the air, wriggling and flexing as it moves.",
     "categories": [ "CLASSIC" ],
     "species": [ "ARCANA_SUMMONED" ],
     "speed": 85,
     "death_drops": {  },
     "death_function": [ "MELT" ],
-    "melee_damage": [ { "damage_type": "cold", "amount": 3, "armor_multiplier": 0.1 } ],
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+    "melee_damage": [ { "damage_type": "cold", "amount": 6, "armor_multiplier": 0.1 } ],
     "armor_stab": 8,
     "armor_bullet": 8,
     "vision_day": 2,
@@ -1091,8 +1232,32 @@
     "path_settings": { "max_dist": 10 },
     "regenerates_in_dark": true,
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "SMELLS" ] }
+  },
+  {
+    "id": "mon_shadow_snake_summoned_fake",
+    "looks_like": "mon_shadow_snake_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned shadow snake" },
+    "description": "This is an animate shadow in the form of a long and sinuous snake.  Translucent and dark, it weaves silently through the air, wriggling and flexing as it moves.",
+    "default_faction": "nether",
+    "bodytype": "snake",
+    "categories": [ "CLASSIC" ],
+    "species": [ "HALLUCINATION" ],
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 1,
+    "speed": 85,
+    "material": [ "flesh" ],
+    "symbol": "s",
+    "color": "dark_gray",
+    "aggression": 100,
+    "morale": 100,
+    "harvest": "exempt",
+    "special_attacks": [ [ "DISAPPEAR", 200 ] ],
+    "death_function": [ "DISAPPEAR" ],
+    "flags": [ "PACIFIST", "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "SEES", "WARM", "SWIMS", "PLASTIC", "NOGIB" ]
   },
   {
     "id": "mon_centipede_giant_summoned",
@@ -1106,5 +1271,134 @@
     "death_drops": {  },
     "death_function": [ "MELT" ],
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
+  },
+  {
+    "id": "mon_seraphic_shade",
+    "type": "MONSTER",
+    "name": { "str": "seraphic shade" },
+    "description": "A tall living shadow with a humanoid silhouette.  Six projections of shifting darkness disrupt its outline, giving the impression of a six-winged figure.  An outright tangible aura of malevolence radiates from it.",
+    "default_faction": "archon",
+    "categories": [ "CLASSIC" ],
+    "species": [ "NETHER" ],
+    "volume": "77500 ml",
+    "weight": "81500 g",
+    "diff": 50,
+    "hp": 800,
+    "speed": 80,
+    "symbol": "H",
+    "looks_like": "mon_darkman",
+    "color": "blue",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "cold", "amount": 9, "armor_multiplier": 0.1 } ],
+    "melee_cut": 1,
+    "dodge": 4,
+    "armor_bash": 12,
+    "armor_cut": 6,
+    "armor_stab": 8,
+    "armor_bullet": 16,
+    "armor_fire": 24,
+    "armor_acid": 24,
+    "vision_day": 50,
+    "vision_night": 50,
+    "luminance": 1,
+    "harvest": "exempt",
+    "starting_ammo": { "bot_vortex": 5, "bot_shadows_fake": 5, "bot_seraphic_mimic": 10 },
+    "regenerates_in_dark": true,
+    "regen_morale": true,
+    "special_attacks": [
+      [ "FEAR_PARALYZE", 50 ],
+      [ "GRENADIER_ELITE", 20 ],
+      [ "PARROT", 40 ],
+      {
+        "type": "gun",
+        "cooldown": 25,
+        "move_cost": 50,
+        "gun_type": "monster_laser_fake",
+        "ammo_type": "generic_no_ammo",
+        "fake_str": 8,
+        "fake_dex": 7,
+        "fake_per": 9,
+        "max_ammo": 1000,
+        "ranges": [ [ 2, 15, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "A radiant beam of otherworldly energy lances out from the seraphic shade's body!",
+        "no_ammo_sound": "a horrific screech!"
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "arcana_monster_archon_gaze_improved" },
+        "cooldown": 25,
+        "monster_message": "You briefly sense the seraphic shade's otherworldly presence, as it glares at %3$s."
+      }
+    ],
+    "death_drops": "mon_seraphic_shade_death_drops",
+    "death_function": [ "MELT" ],
+    "flags": [
+      "PATH_AVOID_DANGER_2",
+      "CAN_OPEN_DOORS",
+      "PRIORITIZE_TARGETS",
+      "SEES",
+      "FLIES",
+      "HARDTOSHOOT",
+      "STUN_IMMUNE",
+      "STUMBLES",
+      "BLEED",
+      "PUSH_MON",
+      "NO_BREATHE",
+      "NOHEAD",
+      "COLDPROOF",
+      "QUEEN"
+    ]
+  },
+  {
+    "id": "mon_seraphic_shade_fake",
+    "type": "MONSTER",
+    "name": { "str": "seraphic shade" },
+    "description": "A wavering living shadow with a humanoid silhouette.  Six translucent, shadowy projections disrupt its outline, giving the impression of a six-winged figure.  A faint aura of malevolence radiates from it.",
+    "default_faction": "archon",
+    "categories": [ "CLASSIC" ],
+    "species": [ "NETHER" ],
+    "volume": "77500 ml",
+    "weight": "81500 g",
+    "diff": 50,
+    "hp": 1,
+    "speed": 80,
+    "symbol": "H",
+    "looks_like": "mon_seraphic_shade",
+    "color": "blue",
+    "aggression": 100,
+    "morale": 100,
+    "dodge": 4,
+    "armor_bash": 12,
+    "armor_cut": 6,
+    "armor_stab": 8,
+    "armor_bullet": 16,
+    "armor_fire": 24,
+    "armor_acid": 24,
+    "vision_day": 50,
+    "vision_night": 50,
+    "luminance": 1,
+    "harvest": "exempt",
+    "special_attacks": [
+      [ "FEAR_PARALYZE", 100 ],
+      [ "PARROT", 80 ]
+    ],
+    "death_function": [ "MELT" ],
+    "flags": [
+      "PACIFIST",
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "SEES",
+      "FLIES",
+      "HARDTOSHOOT",
+      "STUMBLES",
+      "BLEED",
+      "NO_BREATHE",
+      "NOHEAD"
+    ]
   }
 ]

@@ -19,7 +19,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_1" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_1",
             "om_terrain": "cf_church_1",
@@ -30,7 +30,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_2" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_2",
             "om_terrain": "cf_church_1",
@@ -41,7 +41,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_3" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_3",
             "om_terrain": "cf_church_1",
@@ -52,7 +52,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_4" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_4",
             "om_terrain": "cf_church_1",
@@ -63,7 +63,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_5" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_5",
             "om_terrain": "cf_church_1",
@@ -74,7 +74,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_6" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_6",
             "om_terrain": "cf_church_3",
@@ -85,7 +85,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_7" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_7",
             "om_terrain": "cf_church_1",
@@ -96,7 +96,7 @@
       {
         "condition": { "and": [ { "npc_has_trait": "CF_AUX_MARKER_8" }, { "not": { "npc_has_effect": "cf_aux_merchant_restocked" } } ] },
         "effect": [
-          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 604800 },
+          { "npc_add_effect": "cf_aux_merchant_restocked", "duration": 2592000 },
           {
             "mapgen_update": "cf_church_merchant_restock_8",
             "om_terrain": "cf_church_3",
@@ -106,6 +106,21 @@
       }
     ],
     "responses": [
+      {
+        "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
+        "condition": {
+          "and": [
+            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
+            {
+              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            },
+            {
+              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_MERCHANT_CF_AUX_GM_PRELUDE"
+      },
       {
         "text": "So, how are you getting along with the others here?",
         "condition": {
@@ -134,6 +149,23 @@
       { "text": "Can I do anything to help?", "switch": true, "default": true, "topic": "TALK_MISSION_LIST" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
+  },
+  {
+    "id": "TALK_MERCHANT_CF_AUX_GM_PRELUDE",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_trait": "CF_AUX_MARKER_3",
+      "yes": "A skirmish fitting the description of what your comrades are after came up on comm chatter the other day.  No casualties, just mention of strange shadowy X-rays wandering out in the shade of an old bombed-out building.  Send that information to Mr. Leone when you're able, he might prefer to hear it from you instead of us.",
+      "no": {
+        "npc_has_any_trait": [ "CF_AUX_MARKER_4", "CF_AUX_MARKER_5" ],
+        "yes": "Something just like what your boys are looking for recently spooked some gamer we were tracking, earlier today.  I didn't pay it no mind when it it happened, but that was a damn fool mistake o' mine to not bring it up sooner.  Y'all are takin' this seriously, here's what we know of the encounter and where it happened along our game trails.  Keep an eye on things and pass it on t' the Grandmaster, will ya?",
+        "no": {
+          "npc_has_any_trait": [ "CF_AUX_MARKER_2", "CF_AUX_MARKER_7" ],
+          "yes": "Ran across what looked a skirmish during a recent patrol.  Mess o' bandits put down by something, probably the night before we found the bodies.  Had time to pick the poor bastards clean of supplies an' gear, whatever did that to 'em wasn't a shambler nor a gunfight.  I'll pass word up the chain of command for ya.  Try not gt' et killed chasin' what did that.",
+          "no": "Traveling merchant stopped by a couple days ago, we had a chat and exchanged a few goods.  He mentioned going the long way around some old neck of the woods on the way over here, said he saw movement in the shadows, and with what's going on recently that sounds exactly like what the Grandmaster's looking for.  I didn't think anything of it the other day, I'll pass word on to Johnathan for you.  Keep up the good work."
+        }
+      }
+    }
   },
   {
     "id": "TALK_MERCHANT_CF_AUX_SITUATION",

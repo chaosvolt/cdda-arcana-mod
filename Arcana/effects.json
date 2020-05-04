@@ -309,7 +309,7 @@
     "max_intensity": 30,
     "int_dur_factor": "1 m",
     "//": "Replace with resistances when implemented, physical immunities are way more OP than elemental immunities.",
-    "flags": [ "EFFECT_CUT_IMMUNE", "EFFECT_STAB_IMMUNE", "EFFECT_BULLET_IMMUNE" ]
+    "flags": [ "EFFECT_CUT_IMMUNE", "EFFECT_STAB_IMMUNE", "EFFECT_BULLET_IMMUNE", "EFFECT_COLD_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -489,6 +489,30 @@
     "max_duration": "1 s",
     "base_mods": {
       "hunger_min": [ 30 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "destructive_absorption_side_effects",
+    "name": [ "Absorption Aftereffects" ],
+    "desc": [ "Reduces hunger and thirst, at the expense of stamina and fatigue." ],
+    "max_duration": "3 m",
+    "base_mods": {
+      "hunger_min": [ -1 ],
+      "hunger_chance": [ 90 ],
+      "hunger_chance_bot": [ 100 ],
+      "thirst_min": [ -1 ],
+      "thirst_chance": [ 60 ],
+      "thirst_chance_bot": [ 100 ],
+      "stamina_min": [ -100 ],
+      "stamina_chance": [ 90 ],
+      "stamina_chance_bot": [ 100 ],
+      "fatigue_min": [ 1 ],
+      "fatigue_chance": [ 60 ],
+      "fatigue_chance_bot": [ 100 ],
+      "health_min": [ 1 ],
+      "health_chance": [ 30 ],
+      "health_chance_bot": [ 100 ]
     }
   },
   {
@@ -811,6 +835,11 @@
   },
   {
     "type": "effect_type",
+    "id": "shrike_inquire_denied",
+    "//": "This marks a player as having asking Elena for intel and failed the roll, no name or description since this one is player-side.  Intended duration 3 hours."
+  },
+  {
+    "type": "effect_type",
     "id": "hermit_earned_trust_1",
     "//": "This marks a player as having talked The Hermit into revealing general familiarity with the arcane.  Intended to be permanent."
   },
@@ -930,6 +959,11 @@
   {
     "type": "effect_type",
     "id": "cf_mission_3_recruited_2",
+    "//": "Effect for players, indicates that they asked another guard to assist in a hunt.  Intended to be permanent."
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_mission_3_recruited_3",
     "//": "Effect for players, indicates that they asked another guard to assist in a hunt.  Intended to be permanent."
   },
   {

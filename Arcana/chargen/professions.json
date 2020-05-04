@@ -145,8 +145,8 @@
         ],
         "entries": [
           { "item": "hexenhammer", "charges": 1, "custom-flags": [ "auto_wield" ] },
-          { "item": "somen_clairvoyance", "charges": 12 },
-          { "item": "gilded_aegis", "charges": 30 },
+          { "item": "somen_clairvoyance", "charges": 24 },
+          { "item": "gilded_aegis", "charges": 60 },
           { "item": "knife_hunting", "container-item": "sheath" }
         ]
       },
@@ -324,7 +324,7 @@
         ],
         "entries": [
           { "item": "v29", "container-item": "sholster" },
-          { "item": "sun_sword", "charges": 10, "container-item": "scabbard" },
+          { "item": "sun_sword", "charges": 20, "container-item": "scabbard" },
           { "item": "medium_battery_cell", "charges": 500 }
         ]
       },
