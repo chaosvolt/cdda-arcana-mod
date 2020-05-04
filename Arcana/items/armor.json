@@ -133,9 +133,9 @@
     "pocket_data": [
       {
         "ammo_restriction": {
-          "essence_pure_type": 20,
-          "essence_type": 200,
-          "essence_blood_type": 600,
+          "essence_pure_type": 10,
+          "essence_type": 100,
+          "essence_blood_type": 300,
           "essence_dull_type": 3000
         },
         "moves": 10
@@ -159,7 +159,6 @@
     "covers": [ "TORSO" ],
     "coverage": 15,
     "encumbrance": 15,
-    "storage": 250,
     "material_thickness": 1,
     "weight_capacity_modifier": 2,
     "relic_data": {
@@ -168,31 +167,31 @@
     "pocket_data": [
       { "pocket_type": "CONTAINER", "max_contains_volume": "75 L", "max_contains_weight": "500 kg", "moves": 80 },
       {
-        "pocket_type": "CONTAINER",
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 0,
+        "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       },
       {
-        "pocket_type": "CONTAINER",
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 0,
+        "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       },
       {
-        "pocket_type": "CONTAINER",
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 0,
+        "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       },
       {
-        "pocket_type": "CONTAINER",
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 0,
+        "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       }
     ],
