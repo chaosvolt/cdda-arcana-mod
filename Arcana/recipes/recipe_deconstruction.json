@@ -38,55 +38,73 @@
     "result": "vortex_stone",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 0,
+    "difficulty": 4,
     "time": "5 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "material_limestone", 5 ] ], [ [ "essence_dull", 60 ] ] ]
+    "components": [ [ [ "material_limestone", 5 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
     "result": "petrified_eye",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 0,
+    "difficulty": 4,
     "time": "5 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "material_limestone", 30 ] ], [ [ "essence_dull", 30 ] ] ]
+    "components": [ [ [ "material_limestone", 30 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
     "result": "spiral_stone",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 0,
+    "difficulty": 4,
     "time": "5 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "material_limestone", 15 ] ], [ [ "essence_dull", 10 ] ] ]
+    "components": [ [ [ "material_limestone", 15 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
     "result": "portal",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 0,
+    "difficulty": 4,
     "time": "5 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 2 ] ], [ [ "essence_dull", 40 ] ] ]
+    "components": [ [ [ "scrap", 2 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
     "result": "etched_skull",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 0,
+    "difficulty": 4,
     "time": "5 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "meal_bone", 12 ] ], [ [ "essence_dull", 30 ] ] ]
+    "components": [ [ [ "meal_bone", 12 ] ], [ [ "essence_dull", 150 ] ] ]
+  },
+  {
+    "result": "violin_golden",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "50 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "gold_small", 2500 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
     "result": "tindalos_whistle",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 5,
+    "difficulty": 4,
     "time": "50 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "silver_small", 6 ] ], [ [ "essence_dull", 100 ] ] ]
+    "components": [ [ [ "silver_small", 6 ] ], [ [ "essence_dull", 150 ] ] ]
+  },
+  {
+    "result": "alien_pod_resin",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "5 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "resin_chunk", 80 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
     "result": "meteoric_talisman",

@@ -1,5 +1,24 @@
 [
   {
+    "id": "tindalos_whistle",
+    "copy-from": "tindalos_whistle",
+    "type": "TOOL",
+    "name": { "str": "Whistle of Tindalos", "str_pl": "Whistles of Tindalos" },
+    "description": "This is a small whistle, resembling a dog whistle if not for the unusual markings and exotic material it's made out of.  The strange sound it makes is clearly not meant to call canines, or anything native to this dimension for that matter.",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "charges_per_use": 1
+  },
+  {
+    "id": "portal",
+    "copy-from": "portal",
+    "type": "TOOL",
+    "name": { "str": "portal generator" },
+    "initial_charges": 2,
+    "max_charges": 2,
+    "charges_per_use": 1
+  },
+  {
     "id": "bot_vortex",
     "//": "ID retained to avoid any weirdness.",
     "type": "TOOL",
