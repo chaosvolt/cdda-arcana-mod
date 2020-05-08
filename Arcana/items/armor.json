@@ -163,7 +163,7 @@
     "coverage": 15,
     "encumbrance": 15,
     "material_thickness": 1,
-    "weight_capacity_modifier": 2,
+    "weight_capacity_modifier": "75 kg",
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "arcana_react_satchel_effect" } ] } ]
     },
