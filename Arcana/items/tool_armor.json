@@ -269,7 +269,6 @@
     "repairs_like": "revenant_crown",
     "color": "green",
     "ammo": "essence_blood_type",
-    "//": "Slightly more efficient in essence-equivalent than fang, as heat resistance is less comprehensive.",
     "max_charges": 20,
     "charges_per_use": 20,
     "covers": [ "HEAD" ],

@@ -463,7 +463,7 @@
     "type": "TOOL",
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of the eye", "str_pl": "glyphs of the eye" },
-    "//": "Explaination: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
+    "//": "Explanation: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
     "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  It is somewhat difficult to control.",
     "price": 150000,
     "price_postapoc": 5000,
