@@ -348,6 +348,15 @@
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
+    "result": "dimensional_warp_trap",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": "90 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 300 ] ], [ [ "silver_small", 95 ] ] ]
+  },
+  {
     "result": "bloodaxe",
     "type": "uncraft",
     "skill_used": "magic",

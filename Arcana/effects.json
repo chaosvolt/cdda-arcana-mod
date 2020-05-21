@@ -702,7 +702,7 @@
       "vomit_chance": [ 800 ],
       "health_min": [ -6, -5 ],
       "health_chance": [ 400 ],
-      "rad_min": [ -10, -8 ],
+      "rad_min": [ 5, 4 ],
       "rad_chance": [ 1000 ]
     },
     "scaling_mods": {

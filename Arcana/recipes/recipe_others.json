@@ -602,6 +602,21 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
+    "result": "dimensional_warp_trap",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 10,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "120 m",
+    "book_learn": [ [ "book_summoning", 10 ] ],
+    "using": [ [ "blacksmithing_standard", 3 ] ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
+    "components": [ [ [ "silver_glyph", 1 ] ], [ [ "essence_pure", 1 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
+  },
+  {
     "result": "scroll_blank",
     "type": "recipe",
     "category": "CC_OTHER",

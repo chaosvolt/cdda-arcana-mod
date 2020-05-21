@@ -23,6 +23,7 @@
     "dispersion": 200,
     "durability": 10,
     "loudness": 150,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 5 } } ],
     "clip_size": 5,
     "reload": 400,
     "relic_data": {
@@ -55,6 +56,7 @@
     "dispersion": 250,
     "durability": 10,
     "loudness": 100,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 15 } } ],
     "clip_size": 15,
     "reload": 300,
     "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "triple", 3 ] ],
@@ -97,6 +99,7 @@
     "ranged_damage": { "damage_type": "true", "amount": 40, "armor_penetration": 50 },
     "dispersion": 150,
     "durability": 6,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 20 } } ],
     "clip_size": 20,
     "reload": 75,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
@@ -128,6 +131,7 @@
     "dispersion": 200,
     "durability": 10,
     "loudness": 500,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_pure_type": 1 } } ],
     "clip_size": 1,
     "reload": 200,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
@@ -169,6 +173,7 @@
     "dispersion": 250,
     "durability": 10,
     "loudness": 75,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 4 } } ],
     "clip_size": 4,
     "reload": 200,
     "relic_data": {
@@ -221,7 +226,7 @@
   {
     "id": "mut_dragonfire",
     "type": "GUN",
-    "name": { "str": "dragonfire", "str_pl": "" },
+    "name": { "str": "dragonfire", "str_pl": "dragonfire" },
     "description": "Cited by dragonfire mutation, this is a pseudo item.",
     "material": [ "essencemat" ],
     "symbol": "(",
