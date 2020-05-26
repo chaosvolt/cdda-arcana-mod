@@ -1166,7 +1166,7 @@
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.5 } ] } ]
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "NO_UNLOAD" ],
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "NO_UNLOAD", "SHEATH_SWORD" ],
     "artifact_data": { "charge_type": "ARTC_PORTAL", "effects_wielded": [ "AEP_INT_UP" ] }
   },
   {
