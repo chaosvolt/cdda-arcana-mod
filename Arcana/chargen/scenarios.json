@@ -55,15 +55,31 @@
       "arcanist_shrike",
       "arcanist_purifier"
     ],
-    "traits": [
-      "SPELL_DAMPENING",
-      "SPELL_DAYLIGHT",
-      "SPELL_LIGHT",
-      "SPELL_LOCKPICK",
-      "SPELL_POISONARMOR",
-      "MARTIAL_ARTS_CF"
-    ],
+    "traits": [ "SPELL_DAMPENING", "SPELL_DAYLIGHT", "SPELL_LIGHT", "SPELL_LOCKPICK", "SPELL_POISONARMOR", "MARTIAL_ARTS_CF" ],
     "flags": [ "CITY_START", "LONE_START" ]
+  },
+  {
+    "type": "scenario",
+    "ident": "surrounded",
+    "copy-from": "surrounded",
+    "add_professions": true,
+    "extend": { "professions": [ "arcanist_alchemist", "arcanist_scribe", "arcanist_shrike", "arcanist_purifier" ] }
+  },
+  {
+    "type": "scenario",
+    "ident": "isolationist",
+    "copy-from": "isolationist",
+    "add_professions": true,
+    "extend": {
+      "professions": [
+        "arcanist_alchemist",
+        "arcanist_scribe",
+        "arcanist_bloodmage",
+        "arcanist_magehunter",
+        "arcanist_oathkeeper",
+        "arcanist_summoner"
+      ]
+    }
   },
   {
     "type": "scenario",
@@ -81,12 +97,38 @@
     "type": "scenario",
     "ident": "ambushed",
     "copy-from": "ambushed",
-    "extend": { "professions": [ "arcanist_shrike", "arcanist_purifier" ] }
+    "extend": {
+      "professions": [ "arcanist_bloodmage", "arcanist_magehunter", "arcanist_oathkeeper", "arcanist_shrike", "arcanist_purifier" ]
+    }
   },
   {
     "type": "scenario",
     "ident": "summer_advanced_start",
     "copy-from": "summer_advanced_start",
-    "extend": { "professions": [ "arcanist_shrike", "arcanist_purifier" ] }
+    "extend": {
+      "professions": [ "arcanist_bloodmage", "arcanist_magehunter", "arcanist_oathkeeper", "arcanist_shrike", "arcanist_purifier" ]
+    }
+  },
+  {
+    "type": "scenario",
+    "ident": "wilderness",
+    "copy-from": "wilderness",
+    "add_professions": true,
+    "extend": {
+      "professions": [
+        "arcanist_alchemist",
+        "arcanist_scribe",
+        "arcanist_bloodmage",
+        "arcanist_magehunter",
+        "arcanist_oathkeeper",
+        "arcanist_summoner"
+      ]
+    }
+  },
+  {
+    "type": "scenario",
+    "ident": "cyberpunk",
+    "copy-from": "cyberpunk",
+    "extend": { "professions": [ "arcanist_purifier" ] }
   }
 ]

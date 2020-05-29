@@ -114,7 +114,7 @@
     "goal_condition": { "u_has_item": "veilblade" },
     "difficulty": 5,
     "value": 250000,
-    "end": { "effect": [ { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" } ] },
+    "end": { "effect": [ { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" }, { "u_add_effect": "hermit_stage_2", "duration": "PERMANENT" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_AWAKEN_POWER",
     "dialogue": {
@@ -355,6 +355,7 @@
     },
     "end": {
       "effect": [
+        { "u_add_effect": "cf_mission_sofia_3", "duration": "PERMANENT" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
         { "u_buy_item": "CF_golden_scale", "count": 6 }
@@ -579,7 +580,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 14 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_add_effect": "cf_mission_sofia_7", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 14 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_10_a" },
         { "om_terrain": "cf_church_2", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_10_b" }
@@ -709,6 +710,7 @@
     "end": {
       "effect": [
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_johnathan_3", "duration": "PERMANENT" },
         { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
         { "u_buy_item": "CF_golden_scale", "count": 10 }
       ],

@@ -882,10 +882,7 @@
   {
     "type": "effect_type",
     "id": "hermit_stage_2",
-    "name": [ "Quest Stage 2" ],
-    "desc": [
-      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  This is a bug if you have it."
-    ]
+    "\\": "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  Also given to players for achievement tracking purposes."
   },
   {
     "type": "effect_type",
@@ -973,6 +970,21 @@
     "desc": [
       "AI tag marking that Sofia has attracted the first wave of allies to the rural church.  Also used to indicate to Jonathan that their third mission has been completed.  Intended to be permanent.  This is a bug if you have it."
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_mission_sofia_3",
+    "//": "Effect for players, tracks having completed Sofia's third mission for achievement tracking.  Intended to be permanent."
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_mission_johnathan_3",
+    "//": "Effect for players, tracks having completed Johnathan's third mission for achievement tracking.  Intended to be permanent."
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_mission_sofia_7",
+    "//": "Effect for players, tracks having completed Sofia's final mission for achievement tracking.  Intended to be permanent."
   },
   {
     "type": "effect_type",
