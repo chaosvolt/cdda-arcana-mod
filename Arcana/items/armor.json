@@ -132,17 +132,12 @@
         }
       ]
     },
-    "pocket_data": [
-      {
-        "ammo_restriction": {
-          "essence_pure_type": 10,
-          "essence_type": 100,
-          "essence_blood_type": 300,
-          "essence_dull_type": 3000
-        },
-        "moves": 10
-      }
-    ]
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 200,
+      "ammo": [ "essence_type", "essence_blood_type", "essence_dull_type", "essence_pure_type" ],
+      "draw_cost": 10
+    }
   },
   {
     "id": "satchel_eternity",
@@ -162,43 +157,22 @@
     "covers": [ "TORSO" ],
     "coverage": 15,
     "encumbrance": 15,
+    "storage": 250,
     "material_thickness": 1,
-    "weight_capacity_modifier": "75 kg",
+    "weight_capacity_modifier": 2,
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "arcana_react_satchel_effect" } ] } ]
     },
-    "pocket_data": [
-      { "pocket_type": "CONTAINER", "max_contains_volume": "75 L", "max_contains_weight": "500 kg", "moves": 80 },
-      {
-        "max_contains_volume": "5 L",
-        "max_contains_weight": "25 kg",
-        "moves": 0,
-        "holster": true,
-        "flag_restriction": [ "MAGIC_FOCUS" ]
-      },
-      {
-        "max_contains_volume": "5 L",
-        "max_contains_weight": "25 kg",
-        "moves": 0,
-        "holster": true,
-        "flag_restriction": [ "MAGIC_FOCUS" ]
-      },
-      {
-        "max_contains_volume": "5 L",
-        "max_contains_weight": "25 kg",
-        "moves": 0,
-        "holster": true,
-        "flag_restriction": [ "MAGIC_FOCUS" ]
-      },
-      {
-        "max_contains_volume": "5 L",
-        "max_contains_weight": "25 kg",
-        "moves": 0,
-        "holster": true,
-        "flag_restriction": [ "MAGIC_FOCUS" ]
-      }
-    ],
-    "use_action": { "type": "holster", "holster_prompt": "Store what magical focus?", "holster_msg": "You store your %s" },
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Store magic focus",
+      "holster_msg": "You store your %s",
+      "multi": 4,
+      "min_volume": "1 ml",
+      "max_volume": "5 L",
+      "draw_cost": 0,
+      "flags": [ "MAGIC_FOCUS" ]
+    },
     "flags": [ "WAIST", "OVERSIZE" ]
   }
 ]

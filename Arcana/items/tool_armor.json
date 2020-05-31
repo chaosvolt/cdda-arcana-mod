@@ -11,7 +11,6 @@
     "price": 70000,
     "price_postapoc": 8000,
     "color": "yellow",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 60 } } ],
     "max_charges": 60,
     "charges_per_use": 20,
     "ammo": "essence_dull_type",
@@ -33,7 +32,6 @@
     "symbol": "[",
     "looks_like": "mask_bal",
     "color": "light_red",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 24 } } ],
     "max_charges": 24,
     "ammo": "essence_dull_type",
     "covers": [ "EYES", "MOUTH" ],
@@ -89,11 +87,6 @@
     "ammo": "essence_blood_type",
     "encumbrance": 10,
     "environmental_protection": 10,
-    "pocket_data": [
-      { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 16 } },
-      { "pocket_type": "CONTAINER", "max_contains_volume": "500 ml", "max_contains_weight": "2 kg", "moves": 80 },
-      { "pocket_type": "CONTAINER", "max_contains_volume": "500 ml", "max_contains_weight": "2 kg", "moves": 80 }
-    ],
     "use_action": [
       { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true }
     ],
@@ -116,7 +109,6 @@
     "symbol": "[",
     "looks_like": "crown_golden",
     "color": "yellow",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 6 } } ],
     "max_charges": 6,
     "charges_per_use": 2,
     "ammo": "essence_blood_type",
@@ -143,12 +135,6 @@
     "color": "dark_gray",
     "max_charges": 20,
     "ammo": "essence_type",
-    "pocket_data": [
-      { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 20 } },
-      { "pocket_type": "CONTAINER", "max_contains_volume": "1500 ml", "max_contains_weight": "5 kg", "moves": 180 },
-      { "pocket_type": "CONTAINER", "max_contains_volume": "1500 ml", "max_contains_weight": "5 kg", "moves": 180 },
-      { "pocket_type": "CONTAINER", "max_contains_volume": "500 ml", "max_contains_weight": "2 kg", "moves": 120 }
-    ],
     "use_action": [
       {
         "target": "robe_shadow_on",
@@ -161,7 +147,7 @@
         "type": "transform"
       }
     ],
-    "relative": { "weight": 616, "volume": -1, "price": 16000, "coverage": 5, "encumbrance": -5, "material_thickness": 1 },
+    "relative": { "weight": 616, "volume": -1, "price": 16000, "coverage": 5, "encumbrance": -5, "storage": -6, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
@@ -196,7 +182,6 @@
     "price": 60000,
     "price_postapoc": 5000,
     "material": [ "iron", "leather", "silver" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 4 } } ],
     "max_charges": 4,
     "charges_per_use": 1,
     "ammo": "essence_type",
@@ -221,7 +206,6 @@
     "color": "light_red",
     "coverage": 100,
     "environmental_protection": 1,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 120 } } ],
     "max_charges": 120,
     "ammo": "essence_dull_type",
     "use_action": [
@@ -275,7 +259,6 @@
     "looks_like": "crown_golden",
     "repairs_like": "revenant_crown",
     "color": "green",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 20 } } ],
     "max_charges": 20,
     "charges_per_use": 20,
     "ammo": "essence_blood_type",
@@ -305,7 +288,6 @@
     "looks_like": "jade_brooch",
     "repairs_like": "mana_gem",
     "color": "light_gray",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 50 } } ],
     "max_charges": 50,
     "ammo": "essence_dull_type",
     "use_action": {
@@ -346,7 +328,6 @@
     "price_postapoc": 15000,
     "material": [ "silver", "essencemat" ],
     "color": "white",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 8 } } ],
     "max_charges": 8,
     "charges_per_use": 8,
     "ammo": "essence_type",
