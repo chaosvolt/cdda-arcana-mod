@@ -7,7 +7,7 @@
     "//": "Achievement is fully hidden until you reveal it.",
     "hidden_by": [ "achievement_arcana_npc_alexander" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_npc_alexander", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_npc_alexander", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -32,7 +32,7 @@
     "//": "Achievement is fully hidden until you reveal it.",
     "hidden_by": [ "achievement_arcana_mission_deacon" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_mission_deacon", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_mission_deacon", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -56,7 +56,7 @@
     "description": "Make contact with a survivor in an old roadside church.",
     "hidden_by": [ "achievement_arcana_npc_johnathan" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_npc_sofia", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_npc_sofia", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -80,7 +80,7 @@
     "description": "Complete missions for Sofia, attracting allies to her cause.",
     "hidden_by": [ "achievement_arcana_npc_sofia" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_npc_johnathan", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_npc_johnathan", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -104,7 +104,7 @@
     "description": "Complete missions for Johnathan, leading to further reinforcements.",
     "hidden_by": [ "achievement_arcana_npc_johnathan" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_npc_matthew", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_npc_matthew", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -128,7 +128,7 @@
     "description": "Complete Sofia's missions, bringing various allies to her cause.",
     "hidden_by": [ "achievement_arcana_npc_johnathan" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_npc_nicholas", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_npc_nicholas", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -152,7 +152,7 @@
     "description": "Restore a forgotten relic of a nearly-extinguished faith.",
     "hidden_by": [ "achievement_arcana_npc_alexander" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_mission_sword", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_mission_sword", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -170,6 +170,106 @@
   },
 
   {
+    "id": "achievement_arcana_location_curious_structure",
+    "type": "achievement",
+    "name": "<color_cyan>(Arcana)</color> Sacred Ground",
+    "description": "Enter a curious structure, a fallen sanctum of unknown purpose.",
+    "//": "Achievement is fully hidden until you reveal it.",
+    "hidden_by": [ "achievement_arcana_location_curious_structure" ],
+    "requirements": [
+      { "event_statistic": "num_avatar_arcana_location_curious_structure", "is": ">=", "target": 1, "visible": "never" }
+    ]
+  },
+  {
+    "id": "num_avatar_arcana_location_curious_structure",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_arcana_location_curious_structure"
+  },
+  {
+    "id": "avatar_arcana_location_curious_structure",
+    "type": "event_transformation",
+    "event_type": "avatar_enters_omt",
+    "value_constraints": { "oter_id": { "equals": [ "oter_id", "curious_structure" ] } },
+    "drop_fields": [ "oter_id" ]
+  },
+
+  {
+    "id": "achievement_arcana_location_strange_grove",
+    "type": "achievement",
+    "name": "<color_cyan>(Arcana)</color> Barrows Of Pine And Birch",
+    "description": "Enter a strange grove, where secrets lay buried among the trees.",
+    "//": "Achievement is fully hidden until you reveal it.",
+    "hidden_by": [ "achievement_arcana_location_strange_grove" ],
+    "requirements": [
+      { "event_statistic": "num_avatar_arcana_location_strange_grove", "is": ">=", "target": 1, "visible": "never" }
+    ]
+  },
+  {
+    "id": "num_avatar_arcana_location_strange_grove",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_arcana_location_strange_grove"
+  },
+  {
+    "id": "avatar_arcana_location_strange_grove",
+    "type": "event_transformation",
+    "event_type": "avatar_enters_omt",
+    "value_constraints": { "oter_id": { "equals": [ "oter_id", "strange_grove" ] } },
+    "drop_fields": [ "oter_id" ]
+  },
+
+  {
+    "id": "achievement_arcana_location_impact_site",
+    "type": "achievement",
+    "name": "<color_cyan>(Arcana)</color> Omen Along Fallen Stars",
+    "description": "Enter an impact site, over which a strange floating temple awaits.",
+    "//": "Achievement is fully hidden until you reveal it.",
+    "hidden_by": [ "achievement_arcana_location_impact_site" ],
+    "requirements": [
+      { "event_statistic": "num_avatar_arcana_location_impact_site", "is": ">=", "target": 1, "visible": "never" }
+    ]
+  },
+  {
+    "id": "num_avatar_arcana_location_impact_site",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_arcana_location_impact_site"
+  },
+  {
+    "id": "avatar_arcana_location_impact_site",
+    "type": "event_transformation",
+    "event_type": "avatar_enters_omt",
+    "value_constraints": { "oter_id": { "equals": [ "oter_id", "impact_site" ] } },
+    "drop_fields": [ "oter_id" ]
+  },
+
+  {
+    "id": "achievement_arcana_location_island_temple_1",
+    "type": "achievement",
+    "name": "<color_cyan>(Arcana)</color> Blood And Bone",
+    "description": "Enter a peculiar shrine, where stagnant water hides wicked deeds.",
+    "//": "Achievement is fully hidden until you reveal it.",
+    "hidden_by": [ "achievement_arcana_location_island_temple_1" ],
+    "requirements": [
+      { "event_statistic": "num_avatar_arcana_location_island_temple_1", "is": ">=", "target": 1, "visible": "never" }
+    ]
+  },
+  {
+    "id": "num_avatar_arcana_location_island_temple_1",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_arcana_location_island_temple_1"
+  },
+  {
+    "id": "avatar_arcana_location_island_temple_1",
+    "type": "event_transformation",
+    "event_type": "avatar_enters_omt",
+    "value_constraints": { "oter_id": { "equals": [ "oter_id", "island_temple_1" ] } },
+    "drop_fields": [ "oter_id" ]
+  },
+
+  {
     "id": "achievement_arcana_monkill_spirit_of_fire",
     "type": "achievement",
     "name": "<color_cyan>(Arcana)</color> Never Too Deep",
@@ -177,7 +277,7 @@
     "//": "Achievement is fully hidden until you reveal it.",
     "hidden_by": [ "achievement_arcana_monkill_spirit_of_fire" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_monkill_spirit_of_fire", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_monkill_spirit_of_fire", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -202,7 +302,7 @@
     "//": "Achievement is fully hidden until you reveal it.",
     "hidden_by": [ "achievement_arcana_monkill_moruboru" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_monkill_moruboru", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_monkill_moruboru", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -227,7 +327,7 @@
     "//": "Achievement is fully hidden until you reveal it.",
     "hidden_by": [ "achievement_arcana_monkill_archon" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_monkill_archon", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_monkill_archon", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -252,7 +352,7 @@
     "//": "Achievement is fully hidden until you reveal it.",
     "hidden_by": [ "achievement_arcana_monkill_dracolich" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_monkill_dracolich", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_monkill_dracolich", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -276,7 +376,7 @@
     "description": "Complete Johnathan's Missions, hunting the enemies of humanity.",
     "hidden_by": [ "achievement_arcana_npc_matthew" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_monkill_seraphic_shade", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_monkill_seraphic_shade", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -300,7 +400,7 @@
     "description": "Offer power to He From Beyond The Veil, and be rewarded.",
     "hidden_by": [ "achievement_arcana_mission_sword" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_mutation_paragon", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_mutation_paragon", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {
@@ -324,7 +424,7 @@
     "description": "Pursue The Path using a heart ripped out of a winged abomination.",
     "hidden_by": [ "achievement_arcana_monkill_dracolich" ],
     "requirements": [
-      { "event_statistic": "num_avatar_arcana_mutation_dragonblood", "is": ">=", "target": 1 }
+      { "event_statistic": "num_avatar_arcana_mutation_dragonblood", "is": ">=", "target": 1, "visible": "never" }
     ]
   },
   {

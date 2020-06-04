@@ -54,9 +54,9 @@
     "id": "Island Temple",
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "island_temple_1_north" },
-      { "point": [ 1, 0, 0 ], "overmap": "island_temple_2_north" },
-      { "point": [ 0, 1, 0 ], "overmap": "island_temple_3_north" },
-      { "point": [ 1, 1, 0 ], "overmap": "island_temple_4_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "island_temple_1_east" },
+      { "point": [ 0, 1, 0 ], "overmap": "island_temple_1_west" },
+      { "point": [ 1, 1, 0 ], "overmap": "island_temple_1_south" },
       { "point": [ 0, 0, -1 ], "overmap": "island_temple_b_1_north" },
       { "point": [ 1, 0, -1 ], "overmap": "island_temple_b_2_north" },
       { "point": [ 0, 1, -1 ], "overmap": "island_temple_b_3_north" },
