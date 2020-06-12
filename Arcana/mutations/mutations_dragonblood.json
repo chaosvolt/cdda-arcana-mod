@@ -355,7 +355,7 @@
     "attacks": {
       "attack_text_u": "You sink your teeth into %s",
       "attack_text_npc": "%1$s sinks their teeth into %2$s",
-      "body_part": "MOUTH",
+      "body_part": "mouth",
       "chance": 20,
       "strength_damage": { "damage_type": "stab", "amount": 2 }
     }
@@ -376,12 +376,12 @@
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "TEETH", "MUZZLE", "facial_hair" ],
-    "restricts_gear": [ "MOUTH" ],
+    "restricts_gear": [ "mouth" ],
     "social_modifiers": { "intimidate": 20 },
     "attacks": {
       "attack_text_u": "You savagely tear into %s with your jaws",
       "attack_text_npc": "%1$s savagely tear into %2$s with their jaws",
-      "body_part": "MOUTH",
+      "body_part": "mouth",
       "chance": 15,
       "strength_damage": { "damage_type": "stab", "amount": 4 }
     }
