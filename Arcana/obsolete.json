@@ -173,5 +173,31 @@
       "mapping": { "h": { "furniture": "f_chair", "items": { "item": "sanguine_cult_casualties", "chance": 30 } } },
       "place_monsters": [ { "monster": "GROUP_IMPACT", "x": [ 9, 23 ], "y": [ 9, 23 ], "density": 0.1 } ]
     }
+  },
+  {
+    "id": "spell_lockpick_lesser",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "tools",
+    "name": { "str": "mote of artifice", "str_pl": "motes of artifice" },
+    "description": "A small, ethereal pinprick of energy barely the size of a marble.  It seems to waver in and out of existence with a perfectly regular pattern.  Using it can manipulate any mundane lock, to silently open the way.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "stack_size": 1,
+	"qualities": [ [ "LOCKPICK", 5 ] ],
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE", "NO_INGEST" ],
+    "use_action": "PICK_LOCK",
+    "drop_action": { "type": "emit_actor" }
+  },
+  {
+    "id": "spell_lockpick",
+    "//": "ID retained since it's still useful.",
+    "copy-from": "spell_lockpick_lesser",
+    "type": "COMESTIBLE",
+    "name": { "str": "mote of greater artifice", "str_pl": "motes of greater artifice" },
+	"qualities": [ [ "LOCKPICK", 99 ] ],
+	"flags": [ "PERFECT_LOCKPICK" ],
+    "use_action": "PICK_LOCK"
   }
 ]
