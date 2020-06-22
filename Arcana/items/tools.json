@@ -289,6 +289,7 @@
       "difficulty": 1,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
@@ -330,6 +331,7 @@
       "difficulty": 2,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
@@ -371,6 +373,7 @@
       "difficulty": 3,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
@@ -412,6 +415,7 @@
       "difficulty": 4,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
@@ -453,6 +457,7 @@
       "difficulty": 5,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
@@ -494,6 +499,7 @@
       "difficulty": 6,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
@@ -534,6 +540,7 @@
       "difficulty": 7,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
@@ -575,6 +582,7 @@
       "difficulty": 8,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
@@ -616,6 +624,7 @@
       "difficulty": 9,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
@@ -657,6 +666,7 @@
       "difficulty": 10,
       "moves": 60,
       "place_randomly": true,
+      "is_pet": true,
       "skill1": "magic"
     }
   },
