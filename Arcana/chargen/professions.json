@@ -14,7 +14,7 @@
     "items": {
       "both": {
         "items": [ "tunic_rag", "robe", "socks", "bastsandals", "gloves_leather", "knit_scarf", "book_magicfordummies" ],
-        "entries": [ { "item": "makeshift_knife", "container-item": "sheath" } ]
+        "entries": [ { "item": "makeshift_knife", "container-item": "sheath" }, { "group": "charged_matches" } ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -27,7 +27,7 @@
     "name": "Alchemist",
     "description": "You studied under a well-learned scholar, a seeker of the fabled elixir of life.  Despite the tutelage of a master alchemist, you never got any closer to finishing the great work.",
     "points": 2,
-    "skills": [ { "level": 5, "name": "cooking" }, { "level": 2, "name": "firstaid" } ],
+    "skills": [ { "level": 5, "name": "chemistry" }, { "level": 2, "name": "cooking" }, { "level": 1, "name": "firstaid" } ],
     "items": {
       "both": {
         "items": [
@@ -38,7 +38,6 @@
           "boots",
           "gloves_fingerless",
           "mbag",
-          "matches",
           "chemistry_set_basic",
           "red_black_vulnerary",
           "chem_ethanol",
@@ -46,7 +45,7 @@
           "book_potioncraft",
           "essence"
         ],
-        "entries": [ { "item": "punch_dagger", "container-item": "sheath" } ]
+        "entries": [ { "item": "punch_dagger", "container-item": "sheath" }, { "group": "charged_matches" } ]
       },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
@@ -62,24 +61,26 @@
     "points": 2,
     "skills": [ { "level": 2, "name": "magic" }, { "level": 2, "name": "fabrication" } ],
     "items": {
-      "both": [
-        "dress_shirt",
-        "peacoat",
-        "pants",
-        "socks",
-        "dress_shoes",
-        "mbag",
-        "pockknife",
-        "matches",
-        "flask_hip",
-        "candle",
-        "survival_marker",
-        "scroll_blank",
-        "scroll_sun",
-        "book_scrollcraft",
-        "monster_tear",
-        "essence"
-      ],
+      "both": {
+        "items": [
+          "dress_shirt",
+          "peacoat",
+          "pants",
+          "socks",
+          "dress_shoes",
+          "mbag",
+          "pockknife",
+          "flask_hip",
+          "candle",
+          "survival_marker",
+          "scroll_blank",
+          "scroll_sun",
+          "book_scrollcraft",
+          "monster_tear",
+          "essence"
+        ],
+        "entries": [ { "group": "charged_matches" } ]
+      },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
     },
@@ -102,12 +103,12 @@
     ],
     "items": {
       "both": {
-        "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "waterskin", "matches", "bowl_clay", "book_bloodmagic" ],
+        "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "waterskin", "bowl_clay", "book_bloodmagic" ],
         "entries": [
           { "item": "bloodscourge", "ammo-item": "essence_blood", "charges": 15, "custom-flags": [ "auto_wield" ] },
           { "item": "revenant_crown", "charges": 2 },
-          { "item": "rag", "count": 3 },
-          { "item": "blood_athame", "container-item": "sheath" }
+          { "item": "blood_athame", "container-item": "sheath" },
+          { "group": "charged_matches" }
         ]
       },
       "male": [ "boxer_briefs", "pants" ],
@@ -140,14 +141,14 @@
           "holy_symbol",
           "backpack",
           "waterskin",
-          "matches",
           "book_hexenhammer"
         ],
         "entries": [
           { "item": "hexenhammer", "charges": 1, "custom-flags": [ "auto_wield" ] },
           { "item": "somen_clairvoyance", "charges": 24 },
           { "item": "gilded_aegis", "charges": 60 },
-          { "item": "knife_hunting", "container-item": "sheath" }
+          { "item": "knife_hunting", "container-item": "sheath" },
+          { "group": "charged_matches" }
         ]
       },
       "male": [ "boxer_shorts" ],
@@ -165,22 +166,13 @@
     "skills": [ { "level": 5, "name": "magic" }, { "level": 2, "name": "gun" }, { "level": 2, "name": "dodge" } ],
     "items": {
       "both": {
-        "items": [
-          "loincloth",
-          "tunic",
-          "socks",
-          "bastsandals",
-          "backpack",
-          "waterskin",
-          "matches",
-          "offering_chalice",
-          "book_sacrifice"
-        ],
+        "items": [ "loincloth", "tunic", "socks", "bastsandals", "backpack", "waterskin", "offering_chalice", "book_sacrifice" ],
         "entries": [
           { "item": "thunder_sigil", "ammo-item": "essence", "charges": 5, "custom-flags": [ "auto_wield" ] },
           { "item": "robe_shadow", "charges": 10 },
           { "item": "gauntlets_necro", "charges": 1 },
-          { "item": "copper_knife", "container-item": "sheath" }
+          { "item": "copper_knife", "container-item": "sheath" },
+          { "group": "charged_matches" }
         ]
       },
       "female": [ "chestwrap" ]
@@ -208,7 +200,6 @@
           "backpack",
           "waterskin",
           "triffid_garland",
-          "matches",
           "bowl_pewter",
           "rope_makeshift_6",
           "air_talisman",
@@ -221,7 +212,8 @@
         "entries": [
           { "item": "makeshift_knife", "container-item": "sheath" },
           { "item": "essence", "count": 5 },
-          { "item": "q_staff", "custom-flags": [ "auto_wield" ] }
+          { "item": "q_staff", "custom-flags": [ "auto_wield" ] },
+          { "group": "charged_matches" }
         ]
       },
       "male": [ "boxer_shorts" ],
@@ -258,7 +250,6 @@
           "keffiyeh",
           "socks",
           "flask_hip",
-          "ref_lighter",
           "pipe_cleaner",
           "screwdriver",
           "bowl_clay",
@@ -277,7 +268,8 @@
           { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
           { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
           { "item": "vinegar", "container-item": "bottle_plastic_small" },
-          { "item": "lamp_oil", "container-item": "bottle_plastic_small" }
+          { "item": "lamp_oil", "container-item": "bottle_plastic_small" },
+          { "group": "charged_ref_lighter" }
         ]
       },
       "male": [ "boxer_shorts" ],
@@ -304,7 +296,7 @@
       { "level": 2, "name": "melee" },
       { "level": 1, "name": "cutting" },
       { "level": 1, "name": "survival" },
-      { "level": 1, "name": "mechanics" }
+      { "level": 1, "name": "lockpick" }
     ],
     "items": {
       "both": {
@@ -317,15 +309,15 @@
           "gloves_fingerless",
           "knit_scarf",
           "slingpack",
-          "smart_phone",
-          "matches",
           "bowl_clay",
           "book_hexenhammer"
         ],
         "entries": [
           { "item": "v29", "container-item": "sholster" },
           { "item": "sun_sword", "charges": 20, "container-item": "scabbard" },
-          { "item": "medium_battery_cell", "charges": 500 }
+          { "item": "medium_battery_cell", "charges": 500 },
+          { "group": "charged_matches" },
+          { "group": "charged_smart_phone" }
         ]
       },
       "male": [ "boxer_shorts" ],
@@ -354,9 +346,9 @@
           "book_potioncraft",
           "book_scrollcraft",
           "book_syncretism",
-          "pockknife",
-          "matches"
-        ]
+          "pockknife"
+        ],
+        "entries": [ { "group": "charged_matches" } ]
       },
       "male": [ "boxer_briefs" ],
       "female": [ "bra", "panties" ]
