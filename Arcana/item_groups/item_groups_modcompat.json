@@ -7,7 +7,53 @@
   },
   {
     "type": "item_group",
-    "id": "magic_shop_potions",
-    "items": [ [ "numbness_potion", 10 ], [ "strength_potion", 10 ], [ "speed_potion", 5 ], [ "healing_potion", 5 ] ]
+    "id": "potions_common",
+    "items": [ [ "numbness_potion", 25 ], [ "strength_potion", 20 ], [ "speed_potion", 15 ], [ "healing_potion", 10 ] ]
+  },
+  {
+    "id": "alchemy_items",
+    "type": "item_group",
+    "items": [ [ "book_potioncraft", 5 ], { "group": "arcana_hunt_random", "prob": 10 } ]
+  },
+  {
+    "id": "magic_recipe_basic",
+    "type": "item_group",
+    "items": [ [ "book_potioncraft", 25 ], [ "book_scrollcraft", 15 ] ]
+  },
+  {
+    "id": "magic_recipe_advanced",
+    "type": "item_group",
+    "items": [ [ "book_summoning", 10 ], [ "book_syncretism", 5 ] ]
+  },
+  {
+    "id": "spell_scroll_tier_0",
+    "type": "item_group",
+    "items": [
+      [ "scroll_spell_lightning", 10 ],
+      [ "scroll_spell_confusion", 10 ],
+      [ "scroll_spell_acidspray", 10 ],
+      [ "scroll_spell_insight", 10 ],
+      [ "scroll_spell_plants", 10 ]
+    ]
+  },
+  {
+    "id": "spell_scroll_tier_1",
+    "type": "item_group",
+    "items": [ [ "scroll_spell_agile", 10 ], [ "scroll_spell_clarity", 10 ], [ "scroll_spell_elecresist", 10 ] ]
+  },
+  {
+    "id": "spell_scroll_tier_2",
+    "type": "item_group",
+    "items": [
+      [ "scroll_spell_heal", 10 ],
+      [ "scroll_spell_flame_armor", 10 ],
+      [ "scroll_spell_might", 10 ],
+      [ "scroll_spell_cleric", 10 ]
+    ]
+  },
+  {
+    "id": "spell_scroll_tier_3",
+    "type": "item_group",
+    "items": [ [ "scroll_spell_clairvoyance", 10 ], [ "scroll_spell_free_action", 10 ], [ "scroll_spell_invis", 10 ] ]
   }
 ]

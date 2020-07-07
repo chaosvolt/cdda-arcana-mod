@@ -1,9 +1,18 @@
 [
   {
     "type": "item_group",
+    "id": "mon_razorclaw_death_drops",
+    "subtype": "collection",
+    "entries": [ { "distribution": [ { "item": "iron_thorn", "prob": 25 }, { "item": "iridescent_plate", "prob": 75 } ], "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
     "id": "mon_alpha_razorclaw_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "count": [ 2, 5 ] } ]
+    "entries": [
+      { "distribution": [ { "item": "iron_thorn", "prob": 25 }, { "item": "iridescent_plate", "prob": 75 } ] },
+      { "item": "essence", "count": [ 2, 5 ] }
+    ]
   },
   {
     "type": "item_group",
@@ -13,9 +22,21 @@
   },
   {
     "type": "item_group",
+    "id": "mon_ant_acid_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "wyrmskin_piece", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_ant_acid_soldier_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "wyrmskin_piece", "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
     "id": "mon_ant_acid_queen_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "count": [ 2, 5 ], "prob": 25 } ]
+    "entries": [ { "item": "wyrmskin_piece" }, { "item": "essence", "count": [ 2, 5 ], "prob": 25 } ]
   },
   {
     "type": "item_group",
@@ -56,7 +77,17 @@
     "id": "mon_zombie_thorn_death_drops",
     "//": "Adds to existing group",
     "subtype": "collection",
-    "entries": [ { "item": "triffid_queen_flower", "prob": 20 }, { "item": "essence_blood", "count": [ 1, 3 ], "prob": 25 } ]
+    "entries": [
+      {
+        "distribution": [
+          { "item": "iron_thorn", "prob": 10 },
+          { "item": "inflorescent_root", "prob": 10 },
+          { "item": "triffid_queen_flower", "prob": 80 }
+        ],
+        "prob": 20
+      },
+      { "item": "essence_blood", "count": [ 1, 3 ], "prob": 25 }
+    ]
   },
   {
     "type": "item_group",
@@ -139,19 +170,39 @@
     "type": "item_group",
     "id": "mon_triffid_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "prob": 10 } ]
+    "entries": [
+      {
+        "distribution": [
+          { "item": "iron_thorn", "prob": 40 },
+          { "item": "inflorescent_root", "prob": 30 },
+          { "item": "triffid_queen_flower", "prob": 30 }
+        ],
+        "prob": 25
+      },
+      { "item": "essence", "prob": 10 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_triffid_young_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "prob": 5 } ]
+    "entries": [
+      {
+        "distribution": [
+          { "item": "iron_thorn", "prob": 40 },
+          { "item": "inflorescent_root", "prob": 30 },
+          { "item": "triffid_queen_flower", "prob": 30 }
+        ],
+        "prob": 10
+      },
+      { "item": "essence", "prob": 5 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_fungal_fighter_death_drops",
     "subtype": "collection",
-    "entries": [ { "group": "fungal_sting", "prob": 85 }, { "item": "essence", "prob": 50 } ]
+    "entries": [ { "group": "fungal_sting", "prob": 85 }, { "item": "iron_thorn" }, { "item": "essence", "prob": 50 } ]
   },
   {
     "type": "item_group",
@@ -163,31 +214,50 @@
     "type": "item_group",
     "id": "mon_triffid_queen_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "triffid_queen_flower", "prob": 80 }, { "item": "essence", "prob": 25 } ]
+    "entries": [ { "item": "triffid_queen_flower" }, { "item": "essence", "prob": 25 } ]
   },
   {
     "type": "item_group",
     "id": "mon_creeper_hub_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "prob": 15 } ]
+    "entries": [ { "item": "inflorescent_root", "prob": 50 }, { "item": "essence", "prob": 15 } ]
   },
   {
     "type": "item_group",
     "id": "mon_biollante_death_drops",
     "subtype": "collection",
-    "entries": [ { "group": "biollante", "prob": 80 }, { "item": "essence", "prob": 15 } ]
+    "entries": [ { "item": "inflorescent_root" }, { "group": "biollante", "prob": 80 }, { "item": "essence", "prob": 15 } ]
   },
   {
     "type": "item_group",
     "id": "mon_vinebeast_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "prob": 10 } ]
+    "entries": [
+      {
+        "distribution": [
+          { "item": "iron_thorn", "prob": 40 },
+          { "item": "inflorescent_root", "prob": 30 },
+          { "item": "triffid_queen_flower", "prob": 30 }
+        ],
+        "prob": 40
+      },
+      { "item": "essence", "prob": 10 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_triffid_heart_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "count": [ 2, 5 ] } ]
+    "entries": [
+      {
+        "distribution": [
+          { "item": "iron_thorn", "prob": 40 },
+          { "item": "inflorescent_root", "prob": 30 },
+          { "item": "triffid_queen_flower", "prob": 30 }
+        ]
+      },
+      { "item": "essence", "count": [ 2, 5 ] }
+    ]
   },
   {
     "type": "item_group",
@@ -211,19 +281,31 @@
     "type": "item_group",
     "id": "mon_fungaloid_seeder_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "count": [ 2, 5 ] } ]
+    "entries": [
+      { "distribution": [ { "item": "inflorescent_root", "prob": 50 }, { "item": "triffid_queen_flower", "prob": 50 } ] },
+      { "item": "essence", "count": [ 2, 5 ] }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_fungal_tendril_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "dermatik_sting", "prob": 10 }, { "item": "essence", "prob": 5 } ]
+    "entries": [
+      { "distribution": [ { "item": "dermatik_sting", "prob": 90 }, { "item": "iron_thorn", "prob": 10 } ], "prob": 10 },
+      { "item": "essence", "prob": 5 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_fungaloid_blossom_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "prob": 25 } ]
+    "entries": [
+      {
+        "distribution": [ { "item": "inflorescent_root", "prob": 50 }, { "item": "triffid_queen_flower", "prob": 50 } ],
+        "prob": 10
+      },
+      { "item": "essence", "prob": 25 }
+    ]
   },
   {
     "type": "item_group",
@@ -269,6 +351,18 @@
     "id": "mon_rat_king_death_drops",
     "subtype": "collection",
     "entries": [ { "item": "bone_twisted", "prob": 50 }, { "item": "essence", "prob": 75 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_bee_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "dermatik_sting", "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_wasp_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "dermatik_sting", "prob": 10 } ]
   },
   {
     "type": "item_group",
@@ -546,6 +640,54 @@
   },
   {
     "type": "item_group",
+    "id": "mon_zombie_child_scorched_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "iridescent_plate", "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_scorched_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "iridescent_plate", "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_fiend_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "iridescent_plate", "prob": 25 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_wretched_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      {
+        "distribution": [ { "item": "wyrmskin_piece", "prob": 75 }, { "item": "iron_thorn", "prob": 25 } ],
+        "prob": 5
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_acidic_death_drops",
+    "subtype": "collection",
+    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "wyrmskin_piece", "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_spitter_death_drops",
+    "subtype": "collection",
+    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "wyrmskin_piece", "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_corrosive_death_drops",
+    "subtype": "collection",
+    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "wyrmskin_piece", "prob": 25 } ]
+  },
+  {
+    "type": "item_group",
     "id": "mon_skeleton_electric_death_drops",
     "subtype": "collection",
     "entries": [
@@ -569,13 +711,7 @@
     "subtype": "collection",
     "entries": [
       { "group": "default_zombie_death_drops" },
-      {
-        "distribution": [
-          { "item": "vortex_shard", "prob": 50 },
-          { "item": "blob_gem", "prob": 50 }
-        ],
-        "prob": 5
-      },
+      { "distribution": [ { "item": "vortex_shard", "prob": 50 }, { "item": "blob_gem", "prob": 50 } ], "prob": 5 },
       { "item": "essence_blood", "prob": 10, "count": [ 1, 3 ] }
     ]
   },
@@ -585,13 +721,7 @@
     "subtype": "collection",
     "entries": [
       { "group": "default_zombie_death_drops" },
-      {
-        "distribution": [
-          { "item": "vortex_shard", "prob": 50 },
-          { "item": "blob_gem", "prob": 50 }
-        ],
-        "prob": 10
-      },
+      { "distribution": [ { "item": "vortex_shard", "prob": 50 }, { "item": "blob_gem", "prob": 50 } ], "prob": 10 },
       { "item": "essence_blood", "prob": 25, "count": [ 1, 3 ] }
     ]
   },
@@ -601,13 +731,7 @@
     "subtype": "collection",
     "entries": [
       { "group": "default_zombie_death_drops" },
-      {
-        "distribution": [
-          { "item": "vortex_shard", "prob": 50 },
-          { "item": "blob_gem", "prob": 50 }
-        ],
-        "prob": 10
-      },
+      { "distribution": [ { "item": "vortex_shard", "prob": 50 }, { "item": "blob_gem", "prob": 50 } ], "prob": 10 },
       { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] }
     ]
   },
@@ -705,7 +829,10 @@
     "type": "item_group",
     "//": "Boss-level essence added to standard marloss gel drops, plus a stinger.  Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
-    "entries": [ { "item": "dermatik_sting" }, { "item": "essence", "count": [ 2, 5 ] } ]
+    "entries": [
+      { "distribution": [ { "item": "dermatik_sting", "prob": 90 }, { "item": "iron_thorn", "prob": 10 } ] },
+      { "item": "essence", "count": [ 2, 5 ] }
+    ]
   },
   {
     "id": "mon_spirit_of_fire_death_drops",
@@ -829,31 +956,70 @@
     "type": "item_group",
     "id": "mon_leech_blossom_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "count": [ 2, 5 ] } ]
+    "entries": [
+      { "distribution": [ { "item": "inflorescent_root", "prob": 75 }, { "item": "triffid_queen_flower", "prob": 25 } ] },
+      { "distribution": [ { "item": "vortex_shard", "prob": 75 }, { "item": "blob_gem", "prob": 25 } ] },
+      { "item": "essence", "count": [ 2, 5 ] }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_leech_stalk_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "prob": 10 } ]
+    "entries": [
+      {
+        "distribution": [ { "item": "inflorescent_root", "prob": 75 }, { "item": "triffid_queen_flower", "prob": 25 } ],
+        "prob": 10
+      },
+      { "distribution": [ { "item": "vortex_shard", "prob": 75 }, { "item": "blob_gem", "prob": 25 } ], "prob": 10 },
+      { "item": "essence", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_leech_radio_death_drops",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [ { "item": "inflorescent_root", "prob": 75 }, { "item": "triffid_queen_flower", "prob": 25 } ],
+        "prob": 10
+      },
+      { "distribution": [ { "item": "vortex_shard", "prob": 75 }, { "item": "blob_gem", "prob": 25 } ], "prob": 10 },
+      { "item": "essence", "prob": 15 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_leech_pod_cluster_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "prob": 10 } ]
+    "entries": [
+      {
+        "distribution": [ { "item": "inflorescent_root", "prob": 75 }, { "item": "triffid_queen_flower", "prob": 25 } ],
+        "prob": 5
+      },
+      { "distribution": [ { "item": "vortex_shard", "prob": 75 }, { "item": "blob_gem", "prob": 25 } ], "prob": 5 },
+      { "item": "essence", "prob": 10 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_leech_root_runner_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "prob": 10 } ]
+    "entries": [
+      { "item": "inflorescent_root", "prob": 5 },
+      { "distribution": [ { "item": "vortex_shard", "prob": 75 }, { "item": "blob_gem", "prob": 25 } ], "prob": 5 },
+      { "item": "essence", "prob": 10 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_leech_root_drone_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence", "prob": 5 } ]
+    "entries": [
+      { "item": "inflorescent_root", "prob": 2 },
+      { "distribution": [ { "item": "vortex_shard", "prob": 75 }, { "item": "blob_gem", "prob": 25 } ], "prob": 2 },
+      { "item": "essence", "prob": 5 }
+    ]
   },
   {
     "id": "mon_seraphic_shade_death_drops",
@@ -865,6 +1031,91 @@
       { "item": "essence_pure", "count": [ 1, 3 ] },
       { "item": "engraved_stone" },
       { "item": "shadow_gem" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_exodii_worker_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "robots", "prob": 80 },
+      { "item": "iron_thorn", "prob": 10 },
+      {
+        "distribution": [
+          { "item": "vortex_shard", "prob": 45 },
+          { "item": "blob_gem", "prob": 45 },
+          { "item": "iridescent_plate", "prob": 10 }
+        ],
+        "prob": 5
+      },
+      { "item": "essence", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_exodii_quad_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "robots", "prob": 80 },
+      { "item": "iron_thorn", "prob": 20 },
+      {
+        "distribution": [
+          { "item": "vortex_shard", "prob": 45 },
+          { "item": "blob_gem", "prob": 45 },
+          { "item": "iridescent_plate", "prob": 10 }
+        ],
+        "prob": 10
+      },
+      { "item": "essence", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zomborg_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "robots", "prob": 80 },
+      {
+        "distribution": [
+          { "item": "iron_thorn", "prob": 40 },
+          { "item": "gracken_knuckles", "prob": 30 },
+          { "item": "bone_twisted", "prob": 30 }
+        ],
+        "prob": 10
+      },
+      {
+        "distribution": [
+          { "item": "vortex_shard", "prob": 35 },
+          { "item": "blob_gem", "prob": 35 },
+          { "item": "iridescent_plate", "prob": 15 },
+          { "item": "wyrmskin_piece", "prob": 15 }
+        ],
+        "prob": 5
+      },
+      { "item": "essence_blood", "count": [ 1, 3 ], "prob": 25 }
+    ]
+  },
+  {
+    "id": "skeltal_drops",
+    "//": "This is done because we can access the itemgroup despite it not existing in vanilla, but can't override the monster because it only exists in Crazy Cataclysm.",
+    "type": "item_group",
+    "items": [ { "group": "skeltal_drops_override", "prob": 1000 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "skeltal_drops_override",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "milk", "prob": 9 }, { "item": "trumpet", "prob": 1 } ] },
+      {
+        "distribution": [
+          { "item": "gracken_knuckles", "prob": 50 },
+          { "item": "bone_twisted", "prob": 25 },
+          { "item": "monster_fang", "prob": 15 },
+          { "item": "graboid_fang", "prob": 10 }
+        ]
+      },
+      { "item": "essence_blood", "count": [ 6, 15 ] }
     ]
   }
 ]

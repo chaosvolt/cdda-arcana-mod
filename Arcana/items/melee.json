@@ -8,25 +8,6 @@
     "color": "green"
   },
   {
-    "id": "fighter_sting",
-    "copy-from": "fighter_sting",
-    "type": "GENERIC",
-    "name": { "str": "fungal fighter sting" },
-    "//": "All monsterparts are explicitly post-cataclysm, and only really valuable for what can be made out of them.",
-    "price": 0,
-    "price_postapoc": 500,
-    "description": "A short dart from a fungal fighter.  Makes a poor melee weapon, or could carved into a trophy of some sort."
-  },
-  {
-    "id": "biollante_bud",
-    "copy-from": "biollante_bud",
-    "type": "GENERIC",
-    "name": { "str": "biollante bud" },
-    "price": 0,
-    "price_postapoc": 500,
-    "description": "An unopened biollante flower, brilliant purple in color.  It may still have its sap-producing organ intact, or could be made into a trophy of some sort."
-  },
-  {
     "id": "silver_glyph",
     "type": "GENERIC",
     "category": "other",
@@ -79,18 +60,48 @@
   },
   {
     "type": "GENERIC",
+    "id": "inflorescent_root",
+    "category": "other",
+    "symbol": ",",
+    "looks_like": "biollante_bud",
+    "color": "magenta",
+    "name": { "str": "inflorescent root" },
+    "description": "A twisted cluster of otherworldly roots, covered in small outgrowths blooming into faint indigo flowers.  It might be useful, or it could be made into a trophy of some sort.",
+    "price_postapoc": 500,
+    "material": "veggy",
+    "weight": "120 g",
+    "volume": "250 ml"
+  },
+  {
+    "type": "GENERIC",
     "id": "triffid_queen_flower",
     "category": "other",
     "symbol": ",",
     "looks_like": "poppy_bud",
     "color": "red",
     "name": { "str": "scarlet flower" },
-    "description": "A vibrant flower fallen from some otherworldly fauna, still in bloom.  It could be made into a trophy of some sort.",
+    "description": "A vibrant flower fallen from some otherworldly fauna, still in bloom.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
     "material": "veggy",
     "weight": "60 g",
+    "volume": "250 ml"
+  },
+  {
+    "type": "GENERIC",
+    "id": "iron_thorn",
+    "category": "other",
+    "name": { "str": "iron thorn" },
+    "description": "A curved, seven-inch spike resembling some sort of thorn or talon, with an otherworldly metallic shimmer to it.  Makes a mediocre melee weapon, or could be made into a trophy of some sort.",
+    "weight": "860 g",
+    "color": "dark_gray",
+    "symbol": ",",
+    "looks_like": "fighter_sting",
+    "material": [ "iron" ],
+    "techniques": [ "PRECISE", "WBLOCK_1" ],
     "volume": "250 ml",
-    "to_hit": -3
+    "cutting": 10,
+    "flags": [ "SPEAR" ],
+    "price_postapoc": 500
   },
   {
     "type": "GENERIC",
@@ -206,13 +217,13 @@
   {
     "type": "GENERIC",
     "id": "wyrmskin_piece",
+    "//": "ID retained for compatibility reasons.",
     "category": "other",
     "symbol": ",",
     "looks_like": "chitin_piece",
     "color": "blue",
-    "//": "Obtained from dark wyrms of course.",
-    "name": { "str": "wyrmskin fragment" },
-    "description": "An iridescent piece of hardened tissue broken off from a dying wyrm of some sort, like a massive shed scale.  It might be useful, or it could be made into a trophy of some sort.",
+    "name": { "str": "acrid fragment" },
+    "description": "An discolored, leathery piece of hardened tissue broken off from an otherworldly monster, like a massive shed scale.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
     "material": [ "wyrmskin" ],
     "weight": "120 g",

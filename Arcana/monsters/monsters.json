@@ -1,5 +1,11 @@
 [
   {
+    "id": "mon_razorclaw",
+    "copy-from": "mon_razorclaw",
+    "type": "MONSTER",
+    "death_drops": "mon_razorclaw_death_drops"
+  },
+  {
     "id": "mon_alpha_razorclaw",
     "copy-from": "mon_alpha_razorclaw",
     "type": "MONSTER",
@@ -10,6 +16,18 @@
     "copy-from": "mon_ant_queen",
     "type": "MONSTER",
     "death_drops": "mon_ant_queen_death_drops"
+  },
+  {
+    "id": "mon_ant_acid",
+    "copy-from": "mon_ant_acid",
+    "type": "MONSTER",
+    "death_drops": "mon_ant_acid_death_drops"
+  },
+  {
+    "id": "mon_ant_acid_soldier",
+    "copy-from": "mon_ant_acid_soldier",
+    "type": "MONSTER",
+    "death_drops": "mon_ant_acid_soldier_death_drops"
   },
   {
     "id": "mon_ant_acid_queen",
@@ -240,6 +258,18 @@
     "type": "MONSTER",
     "death_drops": "mon_rat_king_death_drops",
     "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_bee",
+    "copy-from": "mon_bee",
+    "type": "MONSTER",
+    "death_drops": "mon_bee_death_drops"
+  },
+  {
+    "id": "mon_wasp",
+    "copy-from": "mon_wasp",
+    "type": "MONSTER",
+    "death_drops": "mon_wasp_death_drops"
   },
   {
     "id": "mon_dermatik_larva",
@@ -518,6 +548,48 @@
     "death_drops": "mon_skeleton_hulk_death_drops"
   },
   {
+    "id": "mon_zombie_child_scorched",
+    "copy-from": "mon_zombie_child_scorched",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_child_scorched_death_drops"
+  },
+  {
+    "id": "mon_zombie_scorched",
+    "copy-from": "mon_zombie_scorched",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_scorched_death_drops"
+  },
+  {
+    "id": "mon_zombie_fiend",
+    "copy-from": "mon_zombie_fiend",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_fiend_death_drops"
+  },
+  {
+    "id": "mon_zombie_wretched",
+    "copy-from": "mon_zombie_wretched",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_wretched_death_drops"
+  },
+  {
+    "id": "mon_zombie_acidic",
+    "copy-from": "mon_zombie_acidic",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_acidic_death_drops"
+  },
+  {
+    "id": "mon_zombie_spitter",
+    "copy-from": "mon_zombie_spitter",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_spitter_death_drops"
+  },
+  {
+    "id": "mon_zombie_corrosive",
+    "copy-from": "mon_zombie_corrosive",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_corrosive_death_drops"
+  },
+  {
     "id": "mon_zombie_static",
     "copy-from": "mon_zombie_static",
     "type": "MONSTER",
@@ -586,6 +658,12 @@
     "death_drops": "mon_leech_stalk_death_drops"
   },
   {
+    "id": "mon_leech_radio",
+    "copy-from": "mon_leech_radio",
+    "type": "MONSTER",
+    "death_drops": "mon_leech_radio_death_drops"
+  },
+  {
     "id": "mon_leech_pod_cluster",
     "copy-from": "mon_leech_pod_cluster",
     "type": "MONSTER",
@@ -602,6 +680,24 @@
     "copy-from": "mon_leech_root_drone",
     "type": "MONSTER",
     "death_drops": "mon_leech_root_drone_death_drops"
+  },
+  {
+    "id": "mon_exodii_worker",
+    "copy-from": "mon_exodii_worker",
+    "type": "MONSTER",
+    "death_drops": "mon_exodii_worker_death_drops"
+  },
+  {
+    "id": "mon_exodii_quad",
+    "copy-from": "mon_exodii_quad",
+    "type": "MONSTER",
+    "death_drops": "mon_exodii_quad_death_drops"
+  },
+  {
+    "id": "mon_zomborg",
+    "copy-from": "mon_zomborg",
+    "type": "MONSTER",
+    "death_drops": "mon_zomborg_death_drops"
   },
   {
     "id": "mon_spirit_of_fire",
@@ -1382,10 +1478,7 @@
     "vision_night": 50,
     "luminance": 1,
     "harvest": "exempt",
-    "special_attacks": [
-      [ "FEAR_PARALYZE", 100 ],
-      [ "PARROT", 80 ]
-    ],
+    "special_attacks": [ [ "FEAR_PARALYZE", 100 ], [ "PARROT", 80 ] ],
     "death_function": [ "MELT" ],
     "flags": [
       "PACIFIST",

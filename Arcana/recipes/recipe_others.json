@@ -55,7 +55,7 @@
     "time": "60 m",
     "autolearn": true,
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "dermatik_sting", 1 ], [ "fighter_sting", 1 ] ] ]
+    "components": [ [ [ "dermatik_sting", 1 ], [ "iron_thorn", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -134,8 +134,8 @@
       [ [ "pine_bough", 1 ] ],
       [
         [ "essence_dull", 20 ],
-        [ "fighter_sting", 1 ],
-        [ "biollante_bud", 1 ],
+        [ "iron_thorn", 1 ],
+        [ "inflorescent_root", 1 ],
         [ "graboid_fang", 1 ],
         [ "triffid_queen_flower", 1 ],
         [ "dermatik_sting", 1 ],
@@ -312,8 +312,8 @@
         [ "bone_tainted", 120 ],
         [ "stick_fiber", 360 ],
         [ "chitin_piece", 360 ],
-        [ "fighter_sting", 1 ],
-        [ "biollante_bud", 1 ],
+        [ "iron_thorn", 1 ],
+        [ "inflorescent_root", 1 ],
         [ "graboid_fang", 1 ],
         [ "triffid_queen_flower", 1 ],
         [ "dermatik_sting", 1 ],
@@ -693,7 +693,7 @@
         [ "bee_balm", 8 ],
         [ "poppy_bud", 6 ],
         [ "rose_hips", 4 ],
-        [ "biollante_bud", 2 ],
+        [ "inflorescent_root", 1 ],
         [ "triffid_queen_flower", 1 ]
       ]
     ],
@@ -949,7 +949,7 @@
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
     "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "fighter_sting", 1 ] ] ],
+    "components": [ [ [ "iron_thorn", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1075,7 +1075,7 @@
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
     "using": [ [ "filament", 5 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [ [ [ "biollante_bud", 1 ] ] ],
+    "components": [ [ [ "inflorescent_root", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
   {
