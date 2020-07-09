@@ -657,8 +657,7 @@
     "message": "\"By order, we ascend beyond that of animals.\"  A wave of energy radiates outwards, fragments of otherworldly perspectives flooding your mind in the process!",
     "extra_effects": [
       { "id": "arcana_item_scroll_artifice_pain", "hit_self": true },
-      { "id": "arcana_item_scroll_artifice_paralyze", "hit_self": true },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+      { "id": "arcana_item_scroll_artifice_paralyze", "hit_self": true }
     ],
     "min_damage": 100,
     "max_damage": 300,
@@ -706,8 +705,7 @@
       { "id": "arcana_item_scroll_destruction_noise", "hit_self": true },
       { "id": "arcana_item_scroll_destruction_attention", "hit_self": true },
       { "id": "arcana_item_scroll_destruction_cold", "hit_self": false },
-      { "id": "arcana_item_scroll_destruction_pulse", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+      { "id": "arcana_item_scroll_destruction_pulse", "hit_self": false }
     ],
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
@@ -838,8 +836,7 @@
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "extra_effects": [
       { "id": "arcana_item_scroll_moon_blind", "hit_self": false },
-      { "id": "arcana_item_scroll_moon_event", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+      { "id": "arcana_item_scroll_moon_event", "hit_self": false }
     ],
     "effect": "target_attack",
     "min_aoe": 24,
@@ -888,8 +885,7 @@
     "valid_targets": [ "self" ],
     "extra_effects": [
       { "id": "arcana_item_scroll_nature_plants", "hit_self": false },
-      { "id": "arcana_item_scroll_nature_wonder", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+      { "id": "arcana_item_scroll_nature_wonder", "hit_self": false }
     ],
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
     "effect_str": "arcana_scroll_nature_effect",
@@ -963,8 +959,7 @@
     "extra_effects": [
       { "id": "arcana_item_scroll_subversion_shadows", "hit_self": false },
       { "id": "AEA_FATIGUE", "hit_self": false },
-      { "id": "arcana_item_scroll_subversion_teleport", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+      { "id": "arcana_item_scroll_subversion_teleport", "hit_self": false }
     ],
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
@@ -1018,8 +1013,7 @@
     "extra_effects": [
       { "id": "arcana_item_scroll_sun_event", "hit_self": false },
       { "id": "arcana_item_scroll_sun_adrenaline", "hit_self": false },
-      { "id": "arcana_item_scroll_sun_timewarp", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false }
+      { "id": "arcana_item_scroll_sun_timewarp", "hit_self": false }
     ],
     "effect": "target_attack",
     "min_aoe": 24,
