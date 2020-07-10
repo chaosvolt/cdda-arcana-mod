@@ -234,11 +234,21 @@
     "name": [ "Clarity of Blood" ],
     "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],
     "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
+    "resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ],
     "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
     "decay_messages": [ [ "Your clarity of blood spell is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "int_dur_factor": "1 m"
+    "int_dur_factor": "1 m",
+    "base_mods": {
+      "hurt_min": [ 0, 1 ],
+      "hurt_tick": [ 0, 60 ],
+      "stamina_min": [ 0, -150 ],
+      "health_min": [ 0, -10 ],
+      "health_tick": [ 0, 30 ],
+      "pain_min": [ 0, 1 ],
+      "pain_tick": [ 0, 5 ]
+    }
   },
   {
     "type": "effect_type",

@@ -6,14 +6,21 @@
     "terrain": [
       {
         "result": [ [ "t_grass_tall", 50 ], [ "t_underbrush", 24 ], [ "t_marloss", 1 ], [ "t_tree_birch", 20 ], [ "t_tree_cherry", 5 ] ],
-        "valid_flags": [ "DIGGABLE", "FLAT" ],
+        "valid_flags": [ "DIGGABLE" ],
         "message": "Plant life grows wild over the ground."
       },
       {
         "result": [ [ "t_grass", 3 ], [ "t_grass_long", 1 ] ],
-        "valid_flags": [ "FLAT", "ROAD" ],
+        "valid_flags": [ "ROAD" ],
         "message": "The ground shifts and crumbles, grass growing from the cracks."
       }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "arcana_pestilence",
+    "terrain": [
+      { "result": [ [ "t_dirt", 75 ], [ "t_dirt_mound", 25 ] ], "valid_flags": [ "FLAT", "SHRUB" ] }
     ]
   },
   {
