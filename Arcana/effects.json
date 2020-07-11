@@ -98,7 +98,7 @@
     "resist_effect": "talisman_warding",
     "desc": [ "Not immortality, but it still feels nice." ],
     "remove_message": "The healing effect fades.",
-    "removes_effects": [ "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
+    "removes_effects": [ "infected", "fungus", "bleed", "common_cold", "flu", "tetanus", "redcells_anemia", "hypovolemia" ],
     "decay_messages": [ [ "The soothing effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
@@ -435,7 +435,7 @@
     "desc": [ "Unholy power fuels you, strengthening your body with an unnatural adrenaline surge." ],
     "remove_message": "You feel numb, hit with the sheer weight of the unnatural magic fading.",
     "decay_messages": [ [ "The blessing of the eclipse is waning.", "bad" ] ],
-    "blocks_effects": [ "bleed", "winded", "lack_sleep", "sleep" ],
+    "blocks_effects": [ "bleed", "winded", "lack_sleep", "sleep", "redcells_anemia", "hypovolemia" ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": "1 m",
@@ -528,7 +528,7 @@
   {
     "type": "effect_type",
     "id": "arcane_healing_staunch",
-    "removes_effects": [ "bleed" ],
+    "removes_effects": [ "bleed", "redcells_anemia", "hypovolemia" ],
     "max_duration": "1 s"
   },
   {
@@ -615,13 +615,13 @@
   {
     "type": "effect_type",
     "id": "arcana_aegis_mending",
-    "blocks_effects": [ "bleed" ],
+    "blocks_effects": [ "bleed", "redcells_anemia", "hypovolemia" ],
     "rating": "good"
   },
   {
     "type": "effect_type",
     "id": "sword_mending",
-    "blocks_effects": [ "bleed", "winded" ],
+    "blocks_effects": [ "bleed", "winded", "redcells_anemia", "hypovolemia" ],
     "rating": "good",
     "max_duration": "15 s",
     "base_mods": { "pain_min": [ -5 ], "stamina_min": [ 500 ] }
@@ -823,7 +823,7 @@
     "id": "arcana_scroll_nature_effect",
     "//": "Explicitly punish Mycus players who will be immune to mutation, that's what you get for channeling a rival interloper's nature magic.",
     "resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ],
-    "blocks_effects": [ "blind", "deaf", "infected", "bite", "bleed", "poison", "badpoison", "spores", "fungus" ],
+    "blocks_effects": [ "blind", "deaf", "infected", "bite", "bleed", "poison", "badpoison", "spores", "fungus", "redcells_anemia", "hypovolemia" ],
     "rating": "good",
     "base_mods": {
       "rad_min": [ -25, 25 ],

@@ -231,7 +231,8 @@
     "thirst_modifier": 0.5,
     "healing_awake": 1.0,
     "healing_resting": 0.5,
-    "stamina_regen_modifier": 0.5
+    "stamina_regen_modifier": 0.5,
+    "vitamin_rates": [ [ "blood", 1 ], [ "redcells", 1 ] ]
   },
   {
     "type": "mutation",
@@ -254,7 +255,8 @@
     "healing_awake": 2.0,
     "healing_resting": 1.0,
     "stamina_regen_modifier": 0.666,
-    "social_modifiers": { "persuade": -25, "intimidate": 25 }
+    "social_modifiers": { "persuade": -25, "intimidate": 25 },
+    "vitamin_rates": [ [ "blood", 2 ], [ "redcells", 2 ] ]
   },
   {
     "type": "mutation",
@@ -281,7 +283,8 @@
     "active": true,
     "cost": 30,
     "hunger": true,
-    "ranged_mutation": { "type": "mut_dragonfire", "message": "You loose a tongue of flame from your mouth." }
+    "ranged_mutation": { "type": "mut_dragonfire", "message": "You loose a tongue of flame from your mouth." },
+    "vitamin_rates": [ [ "blood", 3 ], [ "redcells", 3 ] ]
   },
   {
     "type": "mutation",
