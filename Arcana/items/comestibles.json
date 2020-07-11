@@ -96,7 +96,8 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a pleasant warmth spread through your body.",
-      "effects": [ { "id": "potion_healing", "duration": 900 } ]
+      "effects": [ { "id": "potion_healing", "duration": 900 } ],
+      "vitamins": [ [ "blood", 2500 ], [ "redcells", 2500 ] ]
     },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
@@ -124,7 +125,7 @@
       "limb_scaling": 2.7,
       "head_scaling": 2.7,
       "torso_scaling": 2.7,
-      "bleed": 1.0,
+      "bleed": 30,
       "bite": 0.95,
       "move_cost": 200,
       "effects": [ { "id": "potion_vulnerary", "duration": 300 } ]
@@ -219,7 +220,7 @@
       "limb_scaling": 1.0,
       "head_scaling": 1.0,
       "torso_scaling": 1.0,
-      "bleed": 0.5,
+      "bleed": 15,
       "bite": 0.5,
       "move_cost": 25,
       "effects": [ { "id": "talisman_warding", "duration": 600 } ]

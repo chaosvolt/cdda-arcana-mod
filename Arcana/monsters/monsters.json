@@ -946,7 +946,6 @@
       "FIREPROOF",
       "FLIES",
       "POISON",
-      "BLEED",
       "REVIVES",
       "NO_BREATHE",
       "PRIORITIZE_TARGETS"
@@ -1441,7 +1440,6 @@
       "HARDTOSHOOT",
       "STUN_IMMUNE",
       "STUMBLES",
-      "BLEED",
       "PUSH_MON",
       "NO_BREATHE",
       "NOHEAD",
@@ -1488,7 +1486,6 @@
       "FLIES",
       "HARDTOSHOOT",
       "STUMBLES",
-      "BLEED",
       "NO_BREATHE",
       "NOHEAD"
     ]
