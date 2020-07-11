@@ -199,5 +199,27 @@
 	"qualities": [ [ "LOCKPICK", 99 ] ],
 	"flags": [ "PERFECT_LOCKPICK" ],
     "use_action": "PICK_LOCK"
+  },
+  {
+    "type": "GENERIC",
+    "id": "ash_clump",
+    "symbol": ",",
+    "color": "dark_gray",
+    "name": { "str": "ash clump" },
+    "looks_like": "charcoal",
+    "category": "other",
+    "description": "A small lump of charred ash, all that's left of a magic seal after expending its energy.  Useful if you need a handful of ashes, at least.",
+    "material": [ "powder_nonflam" ],
+    "weight": "50 g",
+    "volume": "82 ml",
+    "use_action": [ "DISASSEMBLE" ]
+  },
+  {
+    "result": "ash_clump",
+    "type": "uncraft",
+    "difficulty": 0,
+    "time": "1 s",
+    "components": [ [ [ "ash", 50 ] ] ],
+    "flags": [ "BLIND_EASY" ]
   }
 ]
