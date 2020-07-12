@@ -280,7 +280,7 @@
     "id": "poison_ward",
     "name": [ "Ward Against Poison" ],
     "desc": [ "Protection against toxic gas and venom." ],
-    "remove_message": "You feel a momenary weakness as the protective magic fades.",
+    "remove_message": "You feel a momentary weakness as the protective magic fades.",
     "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas" ],
     "max_duration": 1000,
     "int_dur_factor": "1 m"
@@ -291,7 +291,7 @@
     "name": [ "Ward Against Evil" ],
     "desc": [ "Protects against various anomalous effects." ],
     "remove_message": "The magical protection fades.",
-    "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
+    "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara", "taint", "tindrift" ],
     "decay_messages": [ [ "Your ward against evil is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
@@ -310,6 +310,8 @@
       "attention",
       "teleglow",
       "amigara",
+      "taint",
+      "tindrift",
       "archon_gaze_effect",
       "chalice_offering_side_effects",
       "blood_athame_side_effects"
@@ -643,7 +645,7 @@
       "Light seems to warp around you in an unnatural manner, rendering you invisible and protecting against various perception-related hazards."
     ],
     "remove_message": "The shroud of illusion magic around you fades.",
-    "//": "Immunity to blindness in general is the only way to make an effect reliably protect against flashbangs, so best justification is to counter things that mess with vision as a whole.  Does NOT protect against Glimpse of The Beyond, just because the host can't see you doesn't mean the archon can't...",
+    "//": "Immunity to blindness in general is the only way to make an effect reliably protect against flashbangs, so best justification is to counter things that mess with vision as a whole.  Does NOT protect against Glimpse of The Beyond, just because the host can't see you doesn't mean the archon can't…",
     "removes_effects": [
       "glowy_led",
       "laserlocked",
@@ -657,7 +659,8 @@
       "darkness",
       "no_sight",
       "visuals",
-      "hallu"
+      "hallu",
+      "taint"
     ],
     "decay_messages": [ [ "The illusions enveloping you are starting to fade.", "bad" ] ],
     "rating": "good",
@@ -699,8 +702,8 @@
     "//": "Regular Ward Against Evil will only protect you a bit, you need Holy Ward to actually stop the effect.  This will be relevant once I add an encounter you can access after restoring the ritual blade.",
     "resist_effect": "cleric_warding",
     "name": [ "Glimpse of The Beyond" ],
-    "desc": [ "You caught the attention of something that doesn't belong in this world..." ],
-    "apply_message": "You feel cold inside...",
+    "desc": [ "You caught the attention of something that doesn't belong in this world…" ],
+    "apply_message": "You feel cold inside…",
     "remove_message": "You feel a faint sense of relief wash over you.",
     "miss_messages": [ [ "Afterimages on the edge of your vision distract you.", 10 ] ],
     "rating": "bad",
@@ -747,12 +750,12 @@
     "desc": [
       "",
       "You've been feeling more weary lately, and it's getting hard to think straight.  Overuse of the chalice seems to have an effect on you.",
-      "It's starting to get harder to focus on your surroundings.  Maybe using your own life force to fuel the chalice is a bad idea....",
+      "It's starting to get harder to focus on your surroundings.  Maybe using your own life force to fuel the chalice is a bad idea….",
       "Even when you aren't exhausted, you find it hard to stay awake.  This is going to be the death of you if you keep overusing that damn chalice!",
       "You feel an odd sensation in the back of your head, an ethereal ache you can't quite explain.  It's like your very existence is crumbling away.",
       "You feel an odd sensation in the back of your head, an ethereal ache you can't quite explain.  It's like your very existence is crumbling away.",
       "You feel an odd sensation in the back of your head, an ethereal ache you can't quite explain.  It's like your very existence is crumbling away.",
-      "Your very essence is nothing more than fuel for the pyre..."
+      "Your very essence is nothing more than fuel for the pyre…"
     ],
     "rating": "bad",
     "max_intensity": 7,
@@ -788,11 +791,11 @@
     "name": [ "", "Strange Anemia", "Strange Anemia", "Strange Anemia", "Strange Anemia", "Strange Anemia" ],
     "desc": [
       "",
-      "Your muscles have been feeling more fatigued lately, and you feel faintly queasy on the inside.  Maybe overusing that athame did something to you...",
+      "Your muscles have been feeling more fatigued lately, and you feel faintly queasy on the inside.  Maybe overusing that athame did something to you…",
       "The weakness in your body has worsened, and you've been having hunger pangs.  It seems blood magic has consequences if overused.",
       "Your body feels sluggish and drained, and it seems to be getting worse the more you rely on blood magic.  Relying on it less might help ease your suffering.",
-      "It feels like your body is struggling to sustain itself, as your overuse of the athame's magic has taken its toll on you.  It might be a good idea to stop using that damn thing for a while...",
-      "It feels like your body is struggling to sustain itself, as your overuse of the athame's magic has taken its toll on you.  It might be a good idea to stop using that damn thing for a while..."
+      "It feels like your body is struggling to sustain itself, as your overuse of the athame's magic has taken its toll on you.  It might be a good idea to stop using that damn thing for a while…",
+      "It feels like your body is struggling to sustain itself, as your overuse of the athame's magic has taken its toll on you.  It might be a good idea to stop using that damn thing for a while…"
     ],
     "rating": "bad",
     "max_intensity": 6,

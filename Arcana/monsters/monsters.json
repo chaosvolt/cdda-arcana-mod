@@ -840,6 +840,7 @@
     "harvest": "human",
     "starting_ammo": { "bot_vortex": 6 },
     "special_attacks": [
+      [ "STARE", 50 ],
       [ "FEAR_PARALYZE", 40 ],
       [ "GRENADIER_ELITE", 15 ],
       [ "PARROT", 25 ],
@@ -1404,6 +1405,7 @@
     "regenerates_in_dark": true,
     "regen_morale": true,
     "special_attacks": [
+      [ "STARE", 75 ],
       [ "FEAR_PARALYZE", 50 ],
       [ "GRENADIER_ELITE", 20 ],
       [ "PARROT", 40 ],
@@ -1476,7 +1478,7 @@
     "vision_night": 50,
     "luminance": 1,
     "harvest": "exempt",
-    "special_attacks": [ [ "FEAR_PARALYZE", 100 ], [ "PARROT", 80 ] ],
+    "special_attacks": [ [ "STARE", 250 ], [ "FEAR_PARALYZE", 100 ], [ "PARROT", 80 ] ],
     "death_function": [ "MELT" ],
     "flags": [
       "PACIFIST",
