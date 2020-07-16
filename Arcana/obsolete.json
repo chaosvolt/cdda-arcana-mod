@@ -221,5 +221,57 @@
     "time": "1 s",
     "components": [ [ [ "ash", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "num_avatar_arcana_location_curious_structure",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_arcana_location_curious_structure"
+  },
+  {
+    "id": "avatar_arcana_location_curious_structure",
+    "type": "event_transformation",
+    "event_type": "avatar_enters_omt",
+    "value_constraints": { "oter_id": { "equals": [ "oter_id", "curious_structure" ] } },
+    "drop_fields": [ "oter_id" ]
+  },
+  {
+    "id": "num_avatar_arcana_location_strange_grove",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_arcana_location_strange_grove"
+  },
+  {
+    "id": "avatar_arcana_location_strange_grove",
+    "type": "event_transformation",
+    "event_type": "avatar_enters_omt",
+    "value_constraints": { "oter_id": { "equals": [ "oter_id", "strange_grove" ] } },
+    "drop_fields": [ "oter_id" ]
+  },
+  {
+    "id": "num_avatar_arcana_location_impact_site",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_arcana_location_impact_site"
+  },
+  {
+    "id": "avatar_arcana_location_impact_site",
+    "type": "event_transformation",
+    "event_type": "avatar_enters_omt",
+    "value_constraints": { "oter_id": { "equals": [ "oter_id", "impact_site" ] } },
+    "drop_fields": [ "oter_id" ]
+  },
+  {
+    "id": "num_avatar_arcana_location_island_temple_1",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_arcana_location_island_temple_1"
+  },
+  {
+    "id": "avatar_arcana_location_island_temple_1",
+    "type": "event_transformation",
+    "event_type": "avatar_enters_omt",
+    "value_constraints": { "oter_id": { "equals": [ "oter_id", "island_temple_1" ] } },
+    "drop_fields": [ "oter_id" ]
   }
 ]
