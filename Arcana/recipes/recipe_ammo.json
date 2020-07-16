@@ -151,7 +151,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "arrow_arcana_unpowered", 5 ] ], [ [ "earth_talisman", 1 ] ] ]
+    "components": [ [ [ "arrow_arcana_unpowered", 5 ] ], [ [ "air_talisman", 1 ] ] ]
   },
   {
     "type": "recipe",
