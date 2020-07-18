@@ -41,7 +41,7 @@
     "copy-from": "style_swordsmanship",
     "type": "martial_art",
     "name": "Medieval Swordsmanship",
-    "extend": { "weapons": [ "sun_sword", "sun_sword_on", "veilblade", "veilblade_on", "stormbringer", "stormbringer_on" ] }
+    "extend": { "weapons": [ "sun_sword", "sun_sword_on", "veilblade", "stormbringer" ] }
   },
   {
     "id": "style_ninjutsu",
@@ -206,7 +206,6 @@
     "//": "morningstar_inferior isn't permitted because it's so light that it falls under the minimum bashing damage used to screen for which type of weapon you're using.  Same reason 2-by-swords and other makeshift swords aren't allowed, their cutting damage is too low.",
     "weapons": [
       "hexenhammer",
-      "hexenhammer_active",
       "warhammer",
       "mace",
       "mace_inferior",

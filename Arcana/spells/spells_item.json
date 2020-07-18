@@ -228,6 +228,19 @@
     "effect_str": "PAIN"
   },
   {
+    "id": "arcana_item_mantle_shadow",
+    "type": "SPELL",
+    "name": "Illusory Shroud",
+    "description": "Grants the user the illusion cloak effect.",
+    "message": "The robe's fabric darkens to a rich shade of black, cloaking your surroundings in a flickering illusion.",
+    "effect": "target_attack",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "effect_str": "arcana_invis_lesser",
+    "min_duration": 30000,
+    "max_duration": 30000
+  },
+  {
     "id": "arcana_item_meteoric_verge_bolt",
     "type": "SPELL",
     "name": "Bolt From Beyond",
@@ -237,7 +250,8 @@
     "extra_effects": [
       { "id": "arcana_item_meteoric_verge_spike", "hit_self": false },
       { "id": "arcana_item_meteoric_verge_pulse", "hit_self": false },
-      { "id": "arcana_item_meteoric_verge_noise", "hit_self": false }
+      { "id": "arcana_item_meteoric_verge_noise", "hit_self": false },
+      { "id": "arcana_item_meteoric_verge_buff", "hit_self": true }
     ],
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "IGNORE_WALLS", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS", "SILENT" ],
@@ -327,6 +341,19 @@
     "max_range": 50,
     "valid_targets": [ "ground" ],
     "effect": "noise"
+  },
+  {
+    "id": "arcana_item_meteoric_verge_buff",
+    "type": "SPELL",
+    "name": "Verge Buff",
+    "description": "Grants brief lightning immunity to the user and any nearby allies.",
+    "message": "",
+    "effect": "target_attack",
+    "effect_str": "lightning_ward_true",
+    "valid_targets": [ "self", "ally" ],
+    "flags": [ "IGNORE_WALLS", "RANDOM_DURATION", "SILENT" ],
+    "min_duration": 500,
+    "max_duration": 1000
   },
   {
     "type": "SPELL",
@@ -632,21 +659,6 @@
     "max_damage": 4,
     "min_aoe": 6,
     "max_aoe": 6
-  },
-  {
-    "id": "arcana_item_red_potion_healing",
-    "type": "SPELL",
-    "name": "Opus Magnum",
-    "description": "Minor healing, and the restorative power of a healing potion.",
-    "message": "You drink the potion and feel a pleasant warmth spread through your body.",
-    "valid_targets": [ "self" ],
-    "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
-    "effect_str": "potion_healing",
-    "min_damage": -4,
-    "max_damage": -8,
-    "effect": "target_attack",
-    "min_duration": 90000,
-    "max_duration": 90000
   },
   {
     "type": "SPELL",
@@ -1064,6 +1076,19 @@
     "max_damage": 1600
   },
   {
+    "id": "arcana_item_somen_clairvoyance",
+    "type": "SPELL",
+    "name": "Hunter's True Sight",
+    "description": "This is needed to make it grant the proper effects of the mask of insight.",
+    "valid_targets": [ "self" ],
+    "message": "The mask briefly contorts into a fearsome visage, the eyeholes seeming to glow as a strange perception replaces your natural vision.",
+    "flags": [ "NO_HANDS", "NO_LEGS" ],
+    "effect": "spawn_item",
+    "effect_str": "halo_insight",
+    "min_duration": 40000,
+    "max_duration": 40000
+  },
+  {
     "id": "arcana_item_sparks",
     "type": "SPELL",
     "name": "Spark Flame",
@@ -1083,6 +1108,33 @@
     "field_chance": 1,
     "min_field_intensity": 1,
     "max_field_intensity": 1
+  },
+  {
+    "id": "arcana_item_stormbringer",
+    "type": "SPELL",
+    "name": "Surge of Bloodlust",
+    "description": "This is needed to make it grant the proper effects of the cursed blade.",
+    "valid_targets": [ "self" ],
+    "message": "The runes on the blade glow for a moment, a strange bloodlust overtaking you!",
+    "flags": [ "NO_HANDS", "NO_LEGS" ],
+    "extra_effects": [ { "id": "arcana_item_stormbringer_2", "hit_self": true } ],
+    "effect": "spawn_item",
+    "effect_str": "halo_berserk",
+    "min_duration": 720000,
+    "max_duration": 720000
+  },
+  {
+    "id": "arcana_item_stormbringer_2",
+    "type": "SPELL",
+    "name": "Surge of Bloodlust Health Debuff",
+    "description": "Minor healing, and the restorative power of a healing potion.",
+    "message": "",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "effect_str": "stormbringer_debuff",
+    "effect": "target_attack",
+    "min_duration": 100,
+    "max_duration": 100
   },
   {
     "id": "arcana_item_pet",

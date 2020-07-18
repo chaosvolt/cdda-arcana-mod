@@ -301,7 +301,7 @@
     "type": "effect_type",
     "id": "cleric_warding_true",
     "name": [ "Holy Ward" ],
-    "desc": [ "Heavy resistance to bladed weapons, protection from anomalous effects." ],
+    "desc": [ "Immunity to blade and bullet, protection from anomalous effects." ],
     "remove_message": "The magical protection enveloping your body flickers and fades.",
     "removes_effects": [
       "darkness",
@@ -623,10 +623,17 @@
   {
     "type": "effect_type",
     "id": "sword_mending",
-    "blocks_effects": [ "bleed", "winded", "redcells_anemia", "hypovolemia" ],
+    "removes_effects": [ "bleed", "winded", "redcells_anemia", "hypovolemia" ],
     "rating": "good",
     "max_duration": "15 s",
     "base_mods": { "pain_min": [ -5 ], "stamina_min": [ 500 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "stormbringer_debuff",
+    "removes_effects": [ "bleed", "winded", "redcells_anemia", "hypovolemia" ],
+    "max_duration": "1 s",
+    "base_mods": { "pain_min": [ -5 ], "stamina_min": [ 500 ], "health_min": [ 60 ] }
   },
   {
     "type": "effect_type",
@@ -667,6 +674,29 @@
     "max_intensity": 18,
     "int_dur_factor": "1 m",
     "base_mods": { "per_mod": [ -2 ] },
+    "flags": [ "EFFECT_INVISIBLE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_invis_lesser",
+    "name": [ "Lesser Illusion Cloak" ],
+    "desc": [
+      "Light seems to warp around you in an unnatural manner, rendering you invisible."
+    ],
+    "remove_message": "The shroud of illusion magic around you fades.",
+    "removes_effects": [
+      "glowy_led",
+      "laserlocked",
+      "was_laserlocked",
+      "glowing",
+      "attention",
+      "haslight",
+      "taint"
+    ],
+    "decay_messages": [ [ "The illusions enveloping you are starting to fade.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 5,
+    "int_dur_factor": "1 m",
     "flags": [ "EFFECT_INVISIBLE" ]
   },
   {
@@ -834,6 +864,39 @@
       "health_min": [ 0, -10 ],
       "pain_min": [ 0, 10 ],
       "hunger_min": [ 0, 25 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_evil_mimic",
+    "resist_effect": "talisman_warding",
+    "apply_message": "You feel an evil presence…",
+    "rating": "bad",
+    "max_intensity": 25,
+    "int_dur_factor": "4 h",
+    "base_mods": {
+      "str_mod": [ 2 ],
+      "dex_mod": [ 1 ],
+      "int_mod": [ -1 ],
+      "per_mod": [ -1 ],
+      "fatigue_tick": [ 1800 ],
+      "fatigue_chance": [ 6, 12 ]
+    },
+    "scaling_mods": {
+      "str_mod": [ -0.24 ],
+      "dex_mod": [ -0.2 ],
+      "int_mod": [ -0.24 ],
+      "per_mod": [ -0.2 ],
+      "stamina_min": [ 25 ],
+      "fatigue_min": [ 0.25 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_moonstone_touch",
+    "max_duration": "4 s",
+    "base_mods": {
+      "health_min": [ 1 ]
     }
   },
   {

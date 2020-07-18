@@ -38,7 +38,7 @@
     "id": "SPELL_EMBERS_DRAGONBLOOD",
     "name": { "str": "Mark of Embers" },
     "points": 5,
-    "description": "Inhuman power has granted you the ability to manipulate your elemental nature, including guarding further against heat as well as suppressing your inner fire.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "Inhuman power has granted you the ability to manipulate your elemental nature and your surroundings, from protection against flame to warping space.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "player_display": false,
@@ -47,7 +47,7 @@
     "category": [ "DRAGONBLOOD" ],
     "changes_to": [ "SPELL_SUMMONFIEND" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_elemental_sign", 1 ], [ "arcana_mark_suppression", 1 ] ]
+    "spells_learned": [ [ "arcana_mark_elemental_sign", 1 ], [ "arcana_mark_displacing_slash", 1 ] ]
   },
   {
     "type": "mutation",
