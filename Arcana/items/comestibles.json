@@ -81,7 +81,7 @@
     "comestible_type": "DRINK",
     "category": "drugs",
     "name": { "str": "red potion", "str_pl": "red potion" },
-    "description": "A strange reddish liquid that gives off a sweet smell.  The elixir of life, or merely a mimicry?  Drinking this will cure a number of things, but can't mend existing damage.  It can heal bleeding, stave off infection, and purge some diseases including fungal infection, but it can't cleanse an infected bite that hasn't taken hold.",
+    "description": "A strange reddish liquid that gives off a sweet smell.  The elixir of life, or merely a mimicry?  Drinking this will cure a number of ailments, and heal a bit of damage.  It can heal bleeding, stave off infection, and purge some diseases including fungal infection, but it can't cleanse an infected bite that hasn't taken hold.",
     "weight": "300 g",
     "volume": "250 ml",
     "price": 5000,
@@ -97,7 +97,15 @@
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a pleasant warmth spread through your body.",
       "effects": [ { "id": "potion_healing", "duration": 900 } ],
-      "vitamins": [ [ "blood", 2500 ], [ "redcells", 2500 ] ]
+      "vitamins": [ [ "blood", 2500 ], [ "redcells", 2500 ] ],
+      "damage_over_time": [
+        {
+          "damage_type": "true",
+          "duration": "1 s",
+          "amount": -5,
+          "bodyparts": [ "torso", "head", "arm_l", "leg_l", "arm_r", "leg_r" ]
+        }
+      ]
     },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
