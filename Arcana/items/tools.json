@@ -1926,10 +1926,10 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER", "SCHIZOPHRENIC" ],
+          "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER" ],
           "values": [
-            { "value": "INTELLIGENCE", "add": 4 },
-            { "value": "PERCEPTION", "add": 2 },
+            { "value": "INTELLIGENCE", "add": 2 },
+            { "value": "PERCEPTION", "add": 1 },
             { "value": "REGEN_MANA", "multiply": 0.25 }
           ]
         }
@@ -2136,7 +2136,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
+          "values": [ { "value": "INTELLIGENCE", "add": 2 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
         }
       ]
     },
