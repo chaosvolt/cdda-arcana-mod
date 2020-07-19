@@ -1,32 +1,71 @@
 [
   {
+    "id": "halo_insight",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": { "str": "shimmering glare" },
+    "description": "A strange aura of otherworldly insight, granting sight beyond sight in exchange for your natural vision.",
+    "color": "magenta",
+    "environmental_protection": 6,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "ARCANA_MASK_INSIGHT_EFFECT" ],
+          "values": [ { "value": "BONUS_DODGE", "add": 2 } ]
+        }
+      ]
+    },
+    "flags": [ "ONLY_ONE", "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF", "AURA", "NO_TAKEOFF" ],
+    "covers": [ "EYES" ]
+  },
+  {
+    "id": "halo_berserk",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": { "str": "malevolent aura" },
+    "description": "A lingering sense of ill omen pervading your very being, offering a surge of energy with every strike.",
+    "color": "magenta",
+    "environmental_protection": 6,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": [ "ARCANA_BERSERK_EFFECT" ],
+          "values": [
+            { "value": "STRENGTH", "add": 2 },
+            { "value": "DEXTERITY", "add": 1 }
+          ],
+          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
+          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
+        }
+      ]
+    },
+    "flags": [ "ONLY_ONE", "NO_TAKEOFF" ]
+  },
+  {
     "id": "halo_clairvoyance",
     "copy-from": "spell_base",
     "type": "ARMOR",
     "name": { "str": "ivory halo" },
     "description": "A strange radiance permeating your body, granting you sight beyond sight.",
     "color": "magenta",
-    "artifact_data": { "effects_worn": [ "AEP_CLAIRVOYANCE" ] },
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER" ] } ] },
     "flags": [ "ONLY_ONE" ]
   },
   {
     "id": "halo_shadowsnakes",
+    "//": "ID retained for simplicity.",
     "copy-from": "spell_base",
     "type": "ARMOR",
     "name": { "str": "obsidian halo" },
-    "description": "A strange radiance permeating your body, summoning serpentine shadows when you are harmed.",
+    "description": "A strange radiance permeating your body, blinding attackers with otherworldly magic.",
     "color": "dark_gray",
-    "artifact_data": { "effects_worn": [ "AEP_SNAKES" ] },
-    "flags": [ "ONLY_ONE" ]
-  },
-  {
-    "id": "halo_dampening",
-    "copy-from": "spell_base",
-    "type": "ARMOR",
-    "name": { "str": "coral halo" },
-    "description": "A strange radiance permeating your body, dulling the effects of flame and radiation.",
-    "color": "light_gray",
-    "artifact_data": { "effects_worn": [ "AEP_PBLUE", "AEP_EXTINGUISH" ] },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "arcana_react_shadowy_shield" } ] } ]
+    },
     "flags": [ "ONLY_ONE" ]
   },
   {
@@ -36,7 +75,9 @@
     "name": { "str": "horned halo" },
     "description": "A strange radiance permeating your body, granting you a life-draining touch.",
     "color": "dark_gray",
-    "artifact_data": { "effects_worn": [ "AEP_SAP_LIFE" ] },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ]
+    },
     "flags": [ "ONLY_ONE" ]
   },
   {
@@ -134,12 +175,7 @@
     },
     "pocket_data": [
       {
-        "ammo_restriction": {
-          "essence_pure_type": 10,
-          "essence_type": 100,
-          "essence_blood_type": 300,
-          "essence_dull_type": 3000
-        },
+        "ammo_restriction": { "essence_pure_type": 10, "essence_type": 100, "essence_blood_type": 300, "essence_dull_type": 3000 },
         "moves": 10
       }
     ]

@@ -136,10 +136,20 @@
     "reload": 200,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
     "ammo_effects": [ "NAPALM", "FIRE_CORRUPTION" ],
-    "artifact_data": { "effects_wielded": [ "AEP_SAP_LIFE", "AEP_EVIL", "AEP_GLOW" ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 3 } ],
+          "intermittent_activation": { "effects": [ { "frequency": "25 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
+        }
+      ]
+    },
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "BUTCHER", 12 ] ],
     "flags": [
+      "LIGHT_45",
       "UNARMED_WEAPON",
       "NEVER_JAMS",
       "UNBREAKABLE_MELEE",

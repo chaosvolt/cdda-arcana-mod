@@ -536,5 +536,35 @@
     "player_display": false,
     "valid": false,
     "purifiable": false
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_MASK_INSIGHT_EFFECT",
+    "name": { "str": "Hunter's True Sight" },
+    "points": 99,
+    "valid": false,
+    "description": "Your eyes have been temporarily opened to the true sight, granting clairvoyance within a modest range until the magic causing it wears off.",
+    "player_display": false,
+    "flags": [ "CLAIRVOYANCE_PLUS" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_CLAIRVOYANCE_LESSER",
+    "name": { "str": "Clairvoyance" },
+    "points": 99,
+    "valid": false,
+    "description": "You have been temporarily gifted with sight beyond sight, granted limite clairvoyance until the magic causing it wears off.",
+    "player_display": false,
+    "flags": [ "CLAIRVOYANCE" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_BERSERK_EFFECT",
+    "name": { "str": "Surge of Bloodlust" },
+    "points": 99,
+    "valid": false,
+    "description": "A yearning for battle temporarily lingers in your mind, making the hunt easier until the source wears off.",
+    "player_display": false,
+    "flags": [ "PRED4" ]
   }
 ]

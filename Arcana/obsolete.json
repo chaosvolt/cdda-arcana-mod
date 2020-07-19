@@ -28,8 +28,7 @@
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.5 } ] } ]
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE" ],
-    "artifact_data": { "effects_wielded": [ "AEP_INT_UP" ] }
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE" ]
   },
   {
     "id": "hexenhammer_active",
@@ -273,5 +272,122 @@
     "event_type": "avatar_enters_omt",
     "value_constraints": { "oter_id": { "equals": [ "oter_id", "island_temple_1" ] } },
     "drop_fields": [ "oter_id" ]
+  },
+  {
+    "id": "arcana_mark_suppression",
+    "type": "SPELL",
+    "name": "Mark: Suppression",
+    "description": "Sanguine Mark\nUsing this spell will anoint you with an obsidian halo, striking blind all who attack you.   It will also dull the fire within you, slowing your metabolism.",
+    "message": "You raise your hand, and the odd warmth within your body seems to burn less intensely.  %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "SOMATIC", "NO_HANDS", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_suppression_buff", "hit_self": true, "max_level": 5 } ],
+    "effect": "spawn_item",
+    "effect_str": "halo_dampening",
+    "energy_source": "HP",
+    "difficulty": 20,
+    "skill": "magic",
+    "max_level": 5,
+    "base_casting_time": 105,
+    "final_casting_time": 96,
+    "casting_time_increment": -1.8,
+    "base_energy_cost": 12,
+    "final_energy_cost": 9,
+    "energy_increment": -0.6,
+    "min_duration": 36000,
+    "max_duration": 60000,
+    "duration_increment": 4800
+  },
+  {
+    "id": "halo_dampening",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": { "str": "coral halo" },
+    "description": "A strange radiance permeating your body, dulling the effects of flame and radiation.",
+    "color": "light_gray",
+    "flags": [ "ONLY_ONE" ]
+  },
+  {
+    "id": "somen_clairvoyance_on",
+    "type": "TOOL_ARMOR",
+    "copy-from": "somen_clairvoyance",
+    "repairs_like": "somen_clairvoyance",
+    "name": { "str": "mask of insight (on)", "str_pl": "masks of insight (on)" },
+    "description": "A mask faced with iron and decorated with other metal, depicting the face of some unknown divine figure.  The face depicted on the mask seems more menacing than it did previously.",
+    "turns_per_charge": 100,
+    "revert_to": "somen_clairvoyance",
+    "material_thickness": 3,
+    "environmental_protection": 6,
+    "qualities": [ [ "GLARE", 2 ] ],
+    "use_action": {
+      "target": "somen_clairvoyance",
+      "msg": "The mask's features return to its original impassive expression.",
+      "type": "transform"
+    },
+    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF" ] }
+  },
+  {
+    "id": "robe_shadow_on",
+    "copy-from": "robe_shadow",
+    "repairs_like": "robe_shadow",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "name": { "str": "mantle of shadows (on)", "str_pl": "mantles of shadows (on" },
+    "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders.  The air wavers around it, barely noticeable to you.",
+    "turns_per_charge": 300,
+    "revert_to": "robe_shadow",
+    "revert_msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
+    "use_action": [
+      {
+        "target": "robe_shadow",
+        "msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
+        "type": "transform"
+      }
+    ]
+  },
+  {
+    "id": "meteoric_talisman_on",
+    "copy-from": "meteoric_talisman",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "meteoric talisman (active)", "str_pl": "meteoric talismans (active)" },
+    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  A strange electric tingle permeates the air around it, hinting at its protective magic.  It grants immunity to lightning.",
+    "turns_per_charge": 30,
+    "revert_to": "meteoric_talisman",
+    "use_action": {
+      "target": "meteoric_talisman",
+      "msg": "The glow fades from the meteoric talisman, its protective magic fading with it.",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "stormbringer_on",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "cursed blade (on)", "str_pl": "cursed blades (on)" },
+    "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
+    "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
+    "max_charges": 9,
+    "turns_per_charge": 200,
+    "ammo": "essence_blood_type",
+    "revert_to": "stormbringer",
+    "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
+    "weight": "3176 g",
+    "volume": "3250 ml",
+    "price": 4500000,
+    "price_postapoc": 12000,
+    "to_hit": 1,
+    "bashing": 17,
+    "cutting": 40,
+    "material": [ "hardsteel", "essencemat" ],
+    "symbol": "/",
+    "looks_like": "stormbringer",
+    "repairs_like": "stormbringer",
+    "color": "dark_gray",
+    "relic_data": {
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ] } ]
+    },
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD" ]
   }
 ]

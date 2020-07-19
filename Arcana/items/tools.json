@@ -1235,8 +1235,8 @@
     "copy-from": "totem_base",
     "//": "ID retained to avoid breaking stuff.",
     "type": "TOOL",
-    "name": { "str": "Obsidian Seal: Serpentine Shield", "str_pl": "Obsidian Seals: Serpentine Shield" },
-    "description": "A piece of unnaturally dark stone, shaped into an eccentric design.  Activate it to focus your mind and create a magic sign, granting a temporary defensive effect that will summon shadowy serpents to aid you.  This will expend the item entirely.",
+    "name": { "str": "Obsidian Seal: Shadowy Shield", "str_pl": "Obsidian Seals: Shadowy Shield" },
+    "description": "A piece of unnaturally dark stone, shaped into an eccentric design.  Activate it to focus your mind and create a magic sign, granting a temporary defensive effect that will lash out at attackers with living shadows.  This will expend the item entirely.",
     "price_postapoc": 4000,
     "color": "dark_gray",
     "use_action": {
@@ -1251,7 +1251,7 @@
     "id": "totem_invis_on",
     "copy-from": "totem_invis",
     "type": "TOOL",
-    "name": { "str": "Obsidian Seal: Serpentine Shield (active)", "str_pl": "Obsidian Seals: Serpentine Shield (active)" },
+    "name": { "str": "Obsidian Seal: Shadowy Shield (active)", "str_pl": "Obsidian Seals: Shadowy Shield (active)" },
     "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
@@ -1757,8 +1757,8 @@
     "copy-from": "scroll_magic_base",
     "//": "ID retained to avoid breaking stuff.",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (serpentine shield)", "str_pl": "pattern scrolls (serpentine shield)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will summon shadowy serpents to aid you.\"",
+    "name": { "str": "pattern scroll (shadowy shield)", "str_pl": "pattern scrolls (shadowy shield)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike your attackers blind.\"",
     "price": 300000,
     "price_postapoc": 8000,
     "use_action": {
@@ -1773,7 +1773,7 @@
     "id": "scroll_spell_invis_on",
     "copy-from": "scroll_spell_invis",
     "type": "TOOL",
-    "name": { "str": "active pattern scroll (serpentine shield)", "str_pl": "active pattern scrolls (serpentine shield)" },
+    "name": { "str": "active pattern scroll (shadowy shield)", "str_pl": "active pattern scrolls (shadowy shield)" },
     "max_charges": 1,
     "charges_per_use": 1,
     "turns_per_charge": 1,
@@ -1922,10 +1922,20 @@
     "charges_per_use": 1,
     "ammo": "essence_pure_type",
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.25 } ] } ]
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER" ],
+          "values": [
+            { "value": "INTELLIGENCE", "add": 2 },
+            { "value": "PERCEPTION", "add": 1 },
+            { "value": "REGEN_MANA", "multiply": 0.25 }
+          ]
+        }
+      ]
     },
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_orb_veil_mapping", "no_fail": true, "level": 0 } ],
-    "artifact_data": { "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO", "AEP_CLAIRVOYANCE" ] },
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
@@ -1977,7 +1987,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "meteoric verge" },
-    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Holding it attracts storms and hardens the body against electricity, and using it will allow you to smite enemies with lightning.",
+    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.",
     "weight": "3935 g",
     "to_hit": 1,
     "volume": "2500 ml",
@@ -1993,7 +2003,6 @@
     "max_charges": 10,
     "charges_per_use": 2,
     "ammo": "essence_type",
-    "artifact_data": { "effects_wielded": [ "AEP_RESIST_ELECTRICITY", "AEP_BAD_WEATHER" ] },
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ] } ]
     },
@@ -2051,9 +2060,8 @@
     "turns_per_charge": 25,
     "revert_to": "scourge_moonstone",
     "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
-    "artifact_data": { "effects_wielded": [ "AEP_SAP_LIFE" ] },
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_scourge_moonstone_wonder" } ] } ]
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ]
     },
     "use_action": [ { "target": "scourge_moonstone", "msg": "The wicked energy flowing through the whip fades.", "type": "transform" } ]
   },
@@ -2062,7 +2070,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "moonstone fang" },
-    "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it will call forth serpentine shadows to aid you and grant a life-draining touch, but it will sicken body and mind.  Invoking it will harden the body against cold.",
+    "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it grant a minor life-draining touch and potentially blind attackers with magic, but it will sicken body and mind.  Invoking it will harden the body against cold.",
     "weight": "160 g",
     "volume": "1500 ml",
     "//": "And the third shrine item, also post-cata only.",
@@ -2077,15 +2085,25 @@
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 8 } } ],
     "max_charges": 8,
-    "charges_per_use": 8,
+    "charges_per_use": 1,
     "ammo": "essence_type",
     "techniques": [ "RAPID", "DEF_DISARM" ],
     "qualities": [ [ "BUTCHER", 6 ] ],
-    "artifact_data": { "effects_wielded": [ "AEP_SNAKES", "AEP_SICK", "AEP_SCHIZO", "AEP_SAP_LIFE" ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ],
+          "hit_me_effect": [ { "id": "arcana_react_shadowy_shield", "once_in": 5 } ],
+          "intermittent_activation": { "effects": [ { "frequency": "5 minutes", "spell_effects": [ { "id": "arcana_react_moonstone_touch" } ] } ] }
+        }
+      ]
+    },
     "use_action": {
       "type": "consume_drug",
       "activation_message": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
-      "effects": [ { "id": "cold_ward", "duration": 6000 } ]
+      "effects": [ { "id": "cold_ward_true", "duration": 300 } ]
     },
     "flags": [ "STAB", "SHEATH_KNIFE" ]
   },
@@ -2095,7 +2113,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "restored ritual blade" },
-    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Fuel it by lingering near wounds in The Veil, as it is capable of collapsing portals.  It can also be fueled with crystallized essence.  Using it will grant great gifts, but set you down a path you can't return from.",
+    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Fueling it with crystalled essence will grant great gifts, but set you down a path you can't return from.",
     "weight": "2858 g",
     "volume": "3250 ml",
     "longest_length": "1500 mm",
@@ -2114,11 +2132,16 @@
     "ammo": "essence_pure_type",
     "use_action": { "type": "mutagen_iv", "mutation_category": "VEIL" },
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.5 } ] } ]
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "INTELLIGENCE", "add": 2 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
+        }
+      ]
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "NO_UNLOAD", "SHEATH_SWORD" ],
-    "artifact_data": { "charge_type": "ARTC_PORTAL", "effects_wielded": [ "AEP_INT_UP" ] }
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "NO_UNLOAD", "SHEATH_SWORD" ]
   },
   {
     "id": "draconic_heart_mutator",
@@ -2147,7 +2170,7 @@
     "type": "TOOL",
     "copy-from": "zweihander",
     "name": { "str": "cursed blade" },
-    "description": "A two-handed sword made of a dark metal.  It is engraved with unfamiliar symbols, and a single phrase in a script you can actually read: \"neherit asheiri\"  Activating it will grant the wielder a powerful life-draining weapon, but you won't be able to let go of it until it runs out of energy.",
+    "description": "A two-handed sword made of a dark metal.  It is engraved with unfamiliar symbols, and a single phrase in a script you can actually read: \"neherit asheiri\"  Activating it will grant the wielder a burst of powerful, corruptive, addictive life-draining magic.",
     "material": [ "hardsteel", "essencemat" ],
     "//": "In this case being cursed basically halves its pre-cataclysm value, as it's no longer useful for what the Keepers used it for, and the Sanguine Order's appropriation of it had a very specific focus.",
     "price": 4500000,
@@ -2155,56 +2178,14 @@
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
     "max_charges": 9,
+    "charges_per_use": 9,
     "ammo": "essence_blood_type",
-    "use_action": [
-      {
-        "target": "stormbringer_on",
-        "msg": "The runes on the blade glow for a moment, the leather wrap of the hilt contorting into winding tendrils that envelop your hand!  You feel a strange bloodlust overtake you!",
-        "active": true,
-        "need_wielding": true,
-        "need_charges": 9,
-        "need_charges_msg": "Nine motes of blood shall awaken the blade.",
-        "menu_text": "Awaken the dark blade",
-        "type": "transform"
-      }
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_stormbringer", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ] } ]
     },
     "relative": { "to_hit": -1, "cutting": -5 },
     "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE" ] },
-    "delete": { "flags": [ "DURABLE_MELEE" ] }
-  },
-  {
-    "id": "stormbringer_on",
-    "type": "TOOL",
-    "category": "weapons",
-    "name": { "str": "cursed blade (on)", "str_pl": "cursed blades (on)" },
-    "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
-    "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
-    "max_charges": 9,
-    "turns_per_charge": 200,
-    "ammo": "essence_blood_type",
-    "revert_to": "stormbringer",
-    "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
-    "artifact_data": { "effects_wielded": [ "AEP_STR_UP", "AEP_SAP_LIFE", "AEP_EVIL", "AEP_SICK" ] },
-    "weight": "3176 g",
-    "volume": "3250 ml",
-    "price": 4500000,
-    "price_postapoc": 12000,
-    "to_hit": 1,
-    "bashing": 17,
-    "cutting": 40,
-    "material": [ "hardsteel", "essencemat" ],
-    "symbol": "/",
-    "looks_like": "stormbringer",
-    "repairs_like": "stormbringer",
-    "color": "dark_gray",
-    "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ] } ]
-    },
-    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD" ]
+    "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
   }
 ]
