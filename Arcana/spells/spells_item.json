@@ -465,13 +465,29 @@
     "id": "arcana_item_orb_veil_wonder_hallu",
     "type": "SPELL",
     "name": "Orb: Hallucinations",
-    "description": "Grants a random duration of hallucinations.",
+    "description": "Grants hallucinations.",
     "message": "Even after you look away from the orb, the visions linger in the back of your mind...",
     "valid_targets": [ "self" ],
-    "flags": [ "SILENT", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "extra_effects": [
+      { "id": "arcana_item_orb_veil_wonder_hallu2" }
+    ],
     "effect": "target_attack",
     "effect_str": "visuals",
-    "min_duration": 30000,
+    "min_duration": 90000,
+    "max_duration": 90000
+  },
+  {
+    "id": "arcana_item_orb_veil_wonder_hallu2",
+    "type": "SPELL",
+    "name": "Orb: Hallucinations 2",
+    "description": "Second hallucination effect.",
+    "message": "",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "effect": "target_attack",
+    "effect_str": "hallu",
+    "min_duration": 90000,
     "max_duration": 90000
   },
   {

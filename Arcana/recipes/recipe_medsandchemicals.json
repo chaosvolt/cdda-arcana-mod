@@ -1,9 +1,41 @@
 [
   {
+    "result": "silver_small",
+    "type": "recipe",
+    "id_suffix": "magical",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ [ "fabrication", 4 ], [ "cooking", 5 ] ],
+    "book_learn": [ [ "book_potioncraft", 5 ] ],
+    "time": "30 m",
+    "batch_time_factors": [ 50, 2 ],
+    "using": [ [ "forging_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "components": [ [ [ "lead", 100 ], [ "bismuth", 150 ], [ "copper", 150 ], [ "tin", 100 ] ], [ [ "healing_potion", 1 ] ] ]
+  },
+  {
+    "result": "gold_small",
+    "type": "recipe",
+    "id_suffix": "magical",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ [ "fabrication", 4 ], [ "cooking", 5 ] ],
+    "book_learn": [ [ "book_potioncraft", 5 ] ],
+    "time": "30 m",
+    "batch_time_factors": [ 50, 2 ],
+    "using": [ [ "forging_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "components": [ [ [ "lead", 200 ], [ "bismuth", 250 ], [ "copper", 250 ], [ "tin", 200 ] ], [ [ "healing_potion", 1 ] ] ]
+  },
+  {
     "result": "numbness_potion",
     "type": "recipe",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_OTHER",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
     "//": "Denatured alcohol?  Yep, these recipes would all be nasty to drink if magic wasn't involved.",
     "skill_used": "magic",
     "difficulty": 1,
@@ -19,8 +51,8 @@
   {
     "result": "strength_potion",
     "type": "recipe",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_OTHER",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
     "skill_used": "magic",
     "difficulty": 2,
     "skills_required": [ "chemistry", 5 ],
@@ -35,8 +67,8 @@
   {
     "result": "speed_potion",
     "type": "recipe",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_OTHER",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
     "skill_used": "magic",
     "difficulty": 3,
     "skills_required": [ "chemistry", 5 ],
@@ -56,8 +88,8 @@
   {
     "result": "healing_potion",
     "type": "recipe",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_OTHER",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
     "//": "Ethanol and caustic lime, if you had pearl ash you'd get alkahest. Not a universal solvent, but a good glass cleaner.",
     "skill_used": "magic",
     "difficulty": 4,
@@ -78,8 +110,8 @@
   {
     "result": "red_black_vulnerary",
     "type": "recipe",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_MEDICAL",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
     "skill_used": "magic",
     "difficulty": 3,
     "skills_required": [ "firstaid", 1 ],
@@ -100,8 +132,8 @@
   {
     "result": "yellow_white_incense",
     "type": "recipe",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_MEDICAL",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
     "skill_used": "magic",
     "difficulty": 4,
     "skills_required": [ "chemistry", 3 ],
@@ -120,8 +152,8 @@
   {
     "result": "dragonblood_mutagen",
     "type": "recipe",
-    "category": "CC_CHEM",
-    "subcategory": "CSC_CHEM_MUTAGEN",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
     "skill_used": "magic",
     "difficulty": 5,
     "skills_required": [ "chemistry", 3 ],
@@ -146,6 +178,6 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "ALLOW_ROTTEN" ]
+    "flags": [ "ALLOW_ROTTEN", "SECRET" ]
   }
 ]

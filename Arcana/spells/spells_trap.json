@@ -95,13 +95,29 @@
     "name": "Trap: Hallu",
     "description": "Brain pain.",
     "valid_targets": [ "self", "ally", "hostile" ],
-    "flags": [ "RANDOM_DURATION", "LOUD" ],
+    "flags": [ "LOUD" ],
     "sound_description": "\"Cast aside the veil of reality...\"",
-    "min_duration": 30000,
+    "min_duration": 60000,
     "max_duration": 60000,
     "sound_type": "speech",
     "effect": "target_attack",
-    "effect_str": "visuals"
+    "effect_str": "visuals",
+    "extra_effects": [
+      { "id": "arcana_trap_archon_hallu2" }
+    ]
+  },
+  {
+    "id": "arcana_trap_archon_hallu2",
+    "type": "SPELL",
+    "name": "Trap: Hallu 2",
+    "description": "More brain pain.",
+    "valid_targets": [ "self", "ally", "hostile" ],
+    "flags": [ "SILENT" ],
+    "sound_description": "",
+    "min_duration": 60000,
+    "max_duration": 60000,
+    "effect": "target_attack",
+    "effect_str": "hallu"
   },
   {
     "id": "arcana_trap_archon_chill",

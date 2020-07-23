@@ -17,7 +17,7 @@
     "ammo": "essence_dull_type",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_gilded_aegis_healing", "no_fail": true, "level": 0, "need_worn": true },
     "relative": { "weight": 3020, "price": 7200, "material_thickness": 3, "encumbrance": 9 },
-    "extend": { "flags": [ "NO_SALVAGE", "HELMET_COMPAT", "FANCY" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "HELMET_COMPAT", "FANCY", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
     "id": "somen_clairvoyance",
@@ -46,7 +46,7 @@
     "use_action": [
       { "type": "cast_spell", "spell_id": "arcana_item_somen_clairvoyance", "no_fail": true, "level": 0, "need_worn": true }
     ],
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "armor_wyrm",
@@ -71,7 +71,7 @@
     ],
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true } ],
     "relative": { "weight": "722 g", "volume": "1500 ml", "price": 80000 },
-    "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "FANCY" ] },
+    "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "FANCY", "TRADER_KEEP_EQUIPPED" ] },
     "delete": { "flags": [ "VARSIZE" ] }
   },
   {
@@ -101,7 +101,7 @@
       "activation_message": "The gem shimmers with malevolent red light as you feel a strange hunger, a craving for rotting meat and stagnant water...",
       "effects": [ { "id": "revenant_hunger", "duration": 300 } ]
     },
-    "flags": [ "BELTED", "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS" ]
+    "flags": [ "BELTED", "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "robe_shadow",
@@ -125,7 +125,7 @@
     ],
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_mantle_shadow", "no_fail": true, "level": 0, "need_worn": true },
     "relative": { "weight": 616, "volume": -1, "price": 16000, "coverage": 5, "encumbrance": -5, "material_thickness": 1 },
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
     "id": "gauntlets_necro",
@@ -148,7 +148,7 @@
       "need_worn": true
     },
     "relative": { "weight": 210, "price": 6200, "material_thickness": 1 },
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
     "id": "hauberk_jade",
@@ -184,7 +184,7 @@
       }
     ],
     "relative": { "weight": 3020, "price": 55000, "material_thickness": 1 },
-    "extend": { "flags": [ "NO_SALVAGE", "USE_PLAYER_ENERGY", "ELECTRIC_IMMUNE", "RAINPROOF" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "USE_PLAYER_ENERGY", "ELECTRIC_IMMUNE", "RAINPROOF", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
     "id": "hauberk_jade_on",
@@ -232,7 +232,7 @@
       "activation_message": "The carvings in the stone glow red for a brief moment, and a chill passes through your spine.",
       "effects": [ { "id": "heat_ward_true", "duration": 300 } ]
     },
-    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS" ]
+    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "meteoric_talisman",
@@ -257,7 +257,7 @@
       "activation_message": "As you activate the talisman, you feel insulated in a strange manner.",
       "effects": [ { "id": "lightning_ward_true", "duration": 300 } ]
     },
-    "flags": [ "FANCY", "NO_SALVAGE" ]
+    "flags": [ "FANCY", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "cleric_ring",
@@ -280,6 +280,6 @@
       "activation_message": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
       "effects": [ { "id": "cleric_warding_true", "duration": 300 } ]
     },
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "PSYSHIELD_PARTIAL" ] }
   }
 ]

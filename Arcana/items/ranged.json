@@ -30,7 +30,7 @@
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ] } ]
     },
     "ammo_effects": [ "LIGHTNING_JUDGMENT" ],
-    "flags": [ "STAB", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
+    "flags": [ "STAB", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ],
     "use_action": "MEDITATE"
   },
   {
@@ -73,7 +73,8 @@
       "NONCONDUCTIVE",
       "NO_SALVAGE",
       "MAGIC_FOCUS",
-      "USE_PLAYER_ENERGY"
+      "USE_PLAYER_ENERGY",
+      "TRADER_KEEP_EQUIPPED"
     ]
   },
   {
@@ -103,7 +104,7 @@
     "clip_size": 20,
     "reload": 75,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
-    "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "BELTED" ],
+    "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "BELTED", "TRADER_KEEP_EQUIPPED" ],
     "armor_data": { "covers": [ "TORSO" ], "coverage": 5, "material_thickness": 1, "encumbrance": 15 }
   },
   {
@@ -156,7 +157,8 @@
       "FIRE",
       "FLAMING",
       "PRIMITIVE_RANGED_WEAPON",
-      "USE_PLAYER_ENERGY"
+      "USE_PLAYER_ENERGY",
+      "TRADER_KEEP_EQUIPPED"
     ]
   },
   {
@@ -191,7 +193,7 @@
     },
     "ammo_effects": [ "ACIDBOMB", "TOXICGAS" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE", "MAGIC_FOCUS" ]
+    "flags": [ "UNBREAKABLE_MELEE", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "monster_fire_fake",

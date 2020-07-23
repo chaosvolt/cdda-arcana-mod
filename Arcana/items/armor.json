@@ -235,6 +235,6 @@
       }
     ],
     "use_action": { "type": "holster", "holster_prompt": "Store what magical focus?", "holster_msg": "You store your %s" },
-    "flags": [ "WAIST", "OVERSIZE" ]
+    "flags": [ "WAIST", "OVERSIZE", "TRADER_KEEP_EQUIPPED" ]
   }
 ]

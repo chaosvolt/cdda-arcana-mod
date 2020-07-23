@@ -184,7 +184,7 @@
         "type": "transform"
       }
     ],
-    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "sun_sword_on",
@@ -250,7 +250,7 @@
     },
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 },
     "relative": { "weight": 540, "bashing": 2 },
-    "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
     "id": "scroll_sun",
@@ -1008,7 +1008,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_blood_axe_wonder" } ] } ]
     },
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
     "id": "bloodaxe_act",
@@ -1936,7 +1936,7 @@
       ]
     },
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_orb_veil_mapping", "no_fail": true, "level": 0 } ],
-    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "staff_druidic",
@@ -1980,7 +1980,7 @@
         ]
       }
     ],
-    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "verge_meteoric",
@@ -2013,7 +2013,7 @@
       "need_wielding": true,
       "level": 0
     },
-    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS" ]
+    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "scourge_moonstone",
@@ -2028,7 +2028,7 @@
     "volume": "2 L",
     "price_postapoc": 15000,
     "material": [ "leather", "stone", "silver" ],
-    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE" ],
+    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ],
     "techniques": [ "WHIP_DISARM" ],
     "bashing": 3,
     "cutting": 21,
@@ -2105,7 +2105,7 @@
       "activation_message": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
       "effects": [ { "id": "cold_ward_true", "duration": 300 } ]
     },
-    "flags": [ "STAB", "SHEATH_KNIFE" ]
+    "flags": [ "STAB", "SHEATH_KNIFE", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "veilblade",
@@ -2141,7 +2141,7 @@
       ]
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "NO_UNLOAD", "SHEATH_SWORD" ]
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "NO_UNLOAD", "SHEATH_SWORD", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "draconic_heart_mutator",
@@ -2185,7 +2185,7 @@
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ] } ]
     },
     "relative": { "to_hit": -1, "cutting": -5 },
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE" ] },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
   }
 ]

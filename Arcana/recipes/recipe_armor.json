@@ -2,8 +2,8 @@
   {
     "result": "gloves_plate",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_HANDS",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "fabrication",
     "difficulty": 5,
     "time": "5 h 15 m",
@@ -16,8 +16,8 @@
   {
     "result": "triffid_garland",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_OTHER",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "time": "40 m",
     "autolearn": true,
@@ -29,8 +29,8 @@
   {
     "type": "recipe",
     "result": "amulet_exotic",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_OTHER",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "time": "30 m",
     "autolearn": true,
@@ -42,8 +42,8 @@
   {
     "type": "recipe",
     "result": "brooch_iridescent",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_OTHER",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "skills_required": [ "fabrication", 3 ],
     "time": "60 m",
@@ -59,8 +59,8 @@
   {
     "type": "recipe",
     "result": "mana_gem",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_OTHER",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "difficulty": 5,
     "skills_required": [ "fabrication", 3 ],
@@ -89,8 +89,8 @@
   {
     "result": "gilded_aegis",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_SUIT",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "difficulty": 5,
     "skills_required": [ "tailor", 3 ],
@@ -99,13 +99,14 @@
     "using": [ [ "filament", 18 ], [ "steel_standard", 2 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
-    "components": [ [ [ "cloak_leather", 1 ] ], [ [ "gold_small", 200 ], [ "CF_golden_scale", 40 ] ], [ [ "essence_dull", 40 ] ] ]
+    "components": [ [ [ "cloak_leather", 1 ] ], [ [ "gold_small", 200 ], [ "CF_golden_scale", 40 ] ], [ [ "essence_dull", 40 ] ] ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "somen_clairvoyance",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_HEAD",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "difficulty": 6,
     "skills_required": [ "tailor", 3 ],
@@ -124,13 +125,14 @@
       [ [ "leather", 2 ], [ "fur", 2 ] ],
       [ [ "copper", 30 ], [ "silver_small", 30 ], [ "gold_small", 30 ], [ "CF_golden_scale", 6 ] ],
       [ [ "essence_dull", 30 ] ]
-    ]
+    ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "armor_wyrm",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_SUIT",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "difficulty": 4,
     "skills_required": [ "tailor", 3 ],
@@ -163,13 +165,14 @@
         [ "water_acid_weak", 4 ]
       ],
       [ [ "essence_blood", 4 ] ]
-    ]
+    ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "revenant_crown",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_HEAD",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "difficulty": 5,
     "skills_required": [ "fabrication", 3 ],
@@ -181,13 +184,14 @@
       [ [ "silver_small", 600 ], [ "gold_small", 600 ] ],
       [ [ "pearl", 1 ], [ "opal", 1 ], [ "diamond", 1 ], [ "vortex_shard", 1 ], [ "engraved_stone", 1 ] ],
       [ [ "essence_blood", 6 ] ]
-    ]
+    ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "gauntlets_necro",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_HANDS",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "difficulty": 6,
     "skills_required": [ "fabrication", 3 ],
@@ -195,13 +199,14 @@
     "book_learn": [ [ "book_sacrifice", 6 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "surface_heat", 6, "LIST" ] ] ],
-    "components": [ [ [ "gloves_plate", 1 ] ], [ [ "silver_small", 70 ] ], [ [ "essence", 4 ] ] ]
+    "components": [ [ [ "gloves_plate", 1 ] ], [ [ "silver_small", 70 ] ], [ [ "essence", 4 ] ] ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "robe_shadow",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_SUIT",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "difficulty": 7,
     "skills_required": [ "tailor", 5 ],
@@ -215,13 +220,14 @@
       [ [ "fur", 4 ], [ "feather", 400 ] ],
       [ [ "charcoal", 30 ] ],
       [ [ "essence", 7 ] ]
-    ]
+    ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "satchel_eternity",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_STORAGE",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "difficulty": 8,
     "skills_required": [ "tailor", 3 ],
@@ -244,13 +250,14 @@
       [ [ "copper", 50 ], [ "scrap_copper", 2 ] ],
       [ [ "rag", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ],
       [ [ "water_talisman", 1 ], [ "vortex_stone", 1 ], [ "vortex_shard", 10 ] ]
-    ]
+    ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "hauberk_jade",
     "type": "recipe",
-    "category": "CC_ARMOR",
-    "subcategory": "CSC_ARMOR_SUIT",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
     "difficulty": 10,
     "skills_required": [ "fabrication", 7 ],
@@ -264,6 +271,7 @@
       [ [ "copper", 300 ], [ "scrap_copper", 12 ] ],
       [ [ "jade_wreath", 1 ] ],
       [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_blood", 10, "LIST" ] ]
-    ]
+    ],
+    "flags": [ "SECRET" ]
   }
 ]
