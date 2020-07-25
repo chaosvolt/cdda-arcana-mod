@@ -553,10 +553,35 @@
   },
   {
     "id": "mon_homunculus",
-    "copy-from": "mon_homunculus",
+    "//": "Formerly a vanilla monster that never actually spawned anywhere, they got the axe instead of ever actually getting a place to spawn in.",
     "type": "MONSTER",
+    "name": { "str": "homunculus", "str_pl": "homunculi" },
+    "description": "A pale hairless man with an impressive athletic physique.  Its lidless eyes are totally black, and seeping with blood.",
+    "default_faction": "cult",
+    "bodytype": "human",
+    "species": [ "ZOMBIE" ],
+    "categories": [ "CLASSIC" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 120,
+    "speed": 110,
+    "material": [ "flesh" ],
+    "symbol": "h",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 3,
+    "melee_dice_sides": 12,
+    "melee_cut": 4,
+    "dodge": 6,
+    "armor_bash": 4,
+    "armor_cut": 2,
+    "armor_bullet": 2,
+    "harvest": "human",
     "death_drops": "mon_homunculus_death_drops",
-    "extend": { "categories": [ "CLASSIC" ] }
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "HUMAN", "REVIVES", "CLIMBS", "FILTHY" ]
   },
   {
     "id": "mon_blood_sacrifice",
@@ -567,10 +592,34 @@
   },
   {
     "id": "mon_flesh_angel",
-    "copy-from": "mon_flesh_angel",
+    "//": "Formerly a vanilla monster that never actually spawned anywhere, they got the axe instead of ever actually getting a place to spawn in.",
     "type": "MONSTER",
+    "name": { "str": "flesh angel" },
+    "description": "A tall and slender man lacking skin and any normalcy of countenance.  Wings of muscle curl forth from its back and a third eye dominates the forehead.",
+    "default_faction": "cult",
+    "bodytype": "angel",
+    "species": [ "ZOMBIE" ],
+    "categories": [ "CLASSIC" ],
+    "diff": 5,
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 200,
+    "speed": 120,
+    "material": [ "flesh" ],
+    "symbol": "H",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 9,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "melee_cut": 0,
+    "dodge": 2,
+    "harvest": "zombie",
+    "special_attacks": [ [ "FEAR_PARALYZE", 0 ], { "type": "bite", "cooldown": 5 } ],
     "death_drops": "mon_flesh_angel_death_drops",
-    "extend": { "categories": [ "CLASSIC" ] }
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "HARDTOSHOOT", "FLIES", "HUMAN", "POISON", "REVIVES", "FILTHY" ]
   },
   {
     "id": "mon_player_blob",
@@ -724,7 +773,6 @@
     "type": "MONSTER",
     "death_drops": "mon_zombie_scissorlimbs_death_drops"
   },
-
   {
     "id": "mon_zombie_hanging_innards",
     "copy-from": "mon_zombie_hanging_innards",
@@ -1312,8 +1360,7 @@
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
-    "delete": { "flags": [ "ATTACKMON" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
   },
   {
     "id": "mon_hunting_horror_summoned",
