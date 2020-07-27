@@ -70,6 +70,28 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
+    "result": "essence_blood",
+    "type": "recipe",
+    "id_suffix": "alchemy",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_AMMO",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "skills_required": [ [ "chemistry", 6 ] ],
+    "time": "1 m",
+    "batch_time_factors": [ 95, 5 ],
+    "book_learn": [ [ "book_potioncraft", 5 ], [ "book_bloodmagic", 4 ] ],
+    "qualities": [ { "id": "CHEM", "level": 3 }, { "id": "DISTILL", "level": 1 } ],
+    "tools": [ [ [ "electrolysis_kit", 80 ] ] ],
+    "components": [
+      [ [ "blood", 1 ] ],
+      [ [ "salt", 10 ] ],
+      [ [ "material_quicklime", 5 ] ]
+    ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "SECRET" ]
+  },
+  {
     "result": "essence",
     "type": "recipe",
     "id_suffix": "sacrifice",

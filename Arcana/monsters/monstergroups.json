@@ -16,7 +16,8 @@
     "monsters": [
       { "monster": "mon_gracke", "freq": 150, "cost_multiplier": 0 },
       { "monster": "mon_homunculus", "freq": 100, "cost_multiplier": 0 },
-      { "monster": "mon_mi_go", "freq": 50, "cost_multiplier": 0 }
+      { "monster": "mon_mi_go", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_flesh_angel", "freq": 25, "cost_multiplier": 0 }
     ]
   },
   {
