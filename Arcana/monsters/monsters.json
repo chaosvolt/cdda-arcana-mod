@@ -1474,14 +1474,11 @@
     "morale": 100,
     "armor_cut": 3,
     "vision_night": 50,
-    "path_settings": { "max_dist": 10 },
     "harvest": "exempt",
     "special_attacks": [ [ "DISAPPEAR", 200 ] ],
     "death_function": [ "DISAPPEAR" ],
     "flags": [
       "PACIFIST",
-      "PATH_AVOID_DANGER_2",
-      "PRIORITIZE_TARGETS",
       "SEES",
       "NOHEAD",
       "HARDTOSHOOT",
@@ -1539,7 +1536,7 @@
     "harvest": "exempt",
     "special_attacks": [ [ "DISAPPEAR", 200 ] ],
     "death_function": [ "DISAPPEAR" ],
-    "flags": [ "PACIFIST", "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "SEES", "WARM", "SWIMS", "PLASTIC", "NOGIB" ]
+    "flags": [ "PACIFIST", "FLIES", "SEES", "WARM", "SWIMS", "PLASTIC", "NOGIB" ]
   },
   {
     "id": "mon_centipede_giant_summoned",

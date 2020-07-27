@@ -202,8 +202,8 @@
     "type": "ter_furn_transform",
     "id": "arcana_pulse",
     "fail_message": "The ground weathers the blast unscathed.",
-    "terrain": [ { "result": "t_dirt", "valid_flags": [ "BLOCK_WIND" ] } ],
-    "furniture": [ { "result": "f_null", "valid_flags": [ "BLOCK_WIND" ] } ]
+    "terrain": [ { "result": "t_dirt", "valid_flags": [ "BLOCK_WIND", "WALL" ] } ],
+    "furniture": [ { "result": "f_null", "valid_flags": [ "BLOCK_WIND", "WALL" ] } ]
   },
   {
     "type": "ter_furn_transform",
