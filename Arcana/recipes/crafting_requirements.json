@@ -3,9 +3,9 @@
     "id": "arcana_forging_tools_standard",
     "type": "requirement",
     "//": "Combined tool and component set for combining blacksmithing with transmutation, except for forging_standard.",
-    "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [ [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "candle_warding_active", -1 ] ] ],
-    "components": [ [ [ "earth_talisman", 1 ] ], [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 30 ] ] ]
+    "qualities": [ { "id": "ANVIL", "level": 2 }, { "id": "HAMMER", "level": 2 }, { "id": "CHISEL", "level": 2 } ],
+    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "candle_warding_active", -1 ] ] ],
+    "components": [ [ [ "earth_talisman", 1 ] ] ]
   },
   {
     "id": "arcana_essence_any",

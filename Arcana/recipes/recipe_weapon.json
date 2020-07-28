@@ -10,9 +10,14 @@
     "skills_required": [ "fabrication", 7 ],
     "time": "6 h",
     "book_learn": [ [ "book_hexenhammer", 7 ] ],
-    "using": [ [ "forging_standard", 6 ], [ "steel_standard", 3 ], [ "arcana_forging_tools_standard", 1 ] ],
+    "using": [
+      [ "forging_standard", 6 ],
+      [ "steel_standard", 3 ],
+      [ "arcana_forging_tools_standard", 1 ],
+      [ "arcana_essence_any", 1 ]
+    ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fur", 1 ], [ "leather", 1 ] ] ],
-    "flags": [ "BLIND_HARD" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
     "type": "recipe",
@@ -25,9 +30,14 @@
     "skills_required": [ "fabrication", 7 ],
     "time": "5 h 15 m",
     "book_learn": [ [ "book_hexenhammer", 7 ] ],
-    "using": [ [ "forging_standard", 6 ], [ "steel_standard", 3 ], [ "arcana_forging_tools_standard", 1 ] ],
+    "using": [
+      [ "forging_standard", 6 ],
+      [ "steel_standard", 3 ],
+      [ "arcana_forging_tools_standard", 1 ],
+      [ "arcana_essence_any", 1 ]
+    ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fur", 1 ], [ "leather", 1 ] ] ],
-    "flags": [ "BLIND_HARD" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
     "type": "recipe",
@@ -40,9 +50,14 @@
     "skills_required": [ "fabrication", 7 ],
     "time": "6 h",
     "book_learn": [ [ "book_hexenhammer", 7 ] ],
-    "using": [ [ "forging_standard", 6 ], [ "steel_standard", 3 ], [ "arcana_forging_tools_standard", 1 ] ],
+    "using": [
+      [ "forging_standard", 6 ],
+      [ "steel_standard", 3 ],
+      [ "arcana_forging_tools_standard", 1 ],
+      [ "arcana_essence_any", 1 ]
+    ],
     "components": [ [ [ "filament", 100, "LIST" ] ], [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fur", 1 ], [ "leather", 1 ] ] ],
-    "flags": [ "BLIND_HARD" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
     "type": "recipe",
@@ -55,9 +70,14 @@
     "skills_required": [ "fabrication", 6 ],
     "time": "6 h",
     "book_learn": [ [ "book_hexenhammer", 6 ] ],
-    "using": [ [ "forging_standard", 4 ], [ "steel_standard", 2 ], [ "arcana_forging_tools_standard", 1 ] ],
+    "using": [
+      [ "forging_standard", 4 ],
+      [ "steel_standard", 2 ],
+      [ "arcana_forging_tools_standard", 1 ],
+      [ "arcana_essence_any", 1 ]
+    ],
     "components": [ [ [ "scrap", 24 ] ], [ [ "2x4", 1 ], [ "stick", 2 ] ] ],
-    "flags": [ "BLIND_HARD" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
     "type": "recipe",
@@ -70,9 +90,14 @@
     "skills_required": [ "fabrication", 6 ],
     "time": "5 h 45 m",
     "book_learn": [ [ "book_sacrifice", 6 ] ],
-    "using": [ [ "forging_standard", 2 ], [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ] ],
+    "using": [
+      [ "forging_standard", 2 ],
+      [ "steel_standard", 1 ],
+      [ "arcana_forging_tools_standard", 1 ],
+      [ "arcana_essence_any", 1 ]
+    ],
     "components": [ [ [ "filament", 100, "LIST" ] ], [ [ "stick_long", 1 ] ], [ [ "fur", 2 ], [ "leather", 2 ] ] ],
-    "flags": [ "BLIND_HARD" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
     "result": "thunder_sigil",
