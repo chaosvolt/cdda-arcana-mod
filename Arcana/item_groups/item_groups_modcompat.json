@@ -55,5 +55,35 @@
     "id": "spell_scroll_tier_3",
     "type": "item_group",
     "items": [ [ "scroll_spell_clairvoyance", 10 ], [ "scroll_spell_free_action", 10 ], [ "scroll_spell_invis", 10 ] ]
+  },
+  {
+    "id": "technomancer_items",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ [ "thermic_essence_cutter", 5 ] ]
+  },
+  {
+    "id": "magic_CBM",
+    "//": "Weights are expected to generally make Arcana CBMs show up half the time.",
+    "type": "item_group",
+    "items": [
+      [ "bio_electrothermal_arc_projector", 1 ],
+      [ "bio_rift_focus_projector", 1 ],
+      [ "bio_essence_surge_cell", 3 ],
+      [ "bio_temporal_stimulation", 2 ],
+      [ "bio_life_sign_suppression", 3 ]
+    ]
+  },
+  {
+    "id": "bionics_failed_bio",
+    "//": "Weights follow the same conventions as defined in Cata++ for this itemgroup.",
+    "type": "item_group",
+    "items": [ [ "bio_temporal_stimulation", 1 ] ]
+  },
+  {
+    "id": "bionics_apophis",
+    "//": "Weights follow the same conventions as defined in Cata++ for this itemgroup.",
+    "type": "item_group",
+    "items": [ [ "bio_temporal_stimulation", 1 ], [ "bio_life_sign_suppression", 1 ] ]
   }
 ]
