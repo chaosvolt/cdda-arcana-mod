@@ -17,7 +17,7 @@
         }
       ]
     },
-    "flags": [ "ONLY_ONE", "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF", "AURA", "NO_TAKEOFF" ],
+    "extend": { "flags": [ "ONLY_ONE", "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF", "AURA", "NO_TAKEOFF" ] },
     "covers": [ "EYES" ]
   },
   {
@@ -43,7 +43,7 @@
         }
       ]
     },
-    "flags": [ "ONLY_ONE", "NO_TAKEOFF" ]
+    "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
   },
   {
     "id": "halo_clairvoyance",
@@ -53,7 +53,7 @@
     "description": "A strange radiance permeating your body, granting you sight beyond sight.",
     "color": "magenta",
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER" ] } ] },
-    "flags": [ "ONLY_ONE" ]
+    "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
   },
   {
     "id": "halo_shadowsnakes",
@@ -66,7 +66,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "arcana_react_shadowy_shield" } ] } ]
     },
-    "flags": [ "ONLY_ONE" ]
+    "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
   },
   {
     "id": "halo_drainlife",
@@ -78,7 +78,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ]
     },
-    "flags": [ "ONLY_ONE" ]
+    "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
   },
   {
     "id": "triffid_garland",

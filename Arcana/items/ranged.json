@@ -292,7 +292,8 @@
     "ranged_damage": { "damage_type": "heat", "amount": 10, "armor_penetration": 5 },
     "range": 5,
     "loudness": 0,
-    "ammo_effects": [ "STREAM", "INCENDIARY" ]
+    "ammo_effects": [ "STREAM", "INCENDIARY" ],
+    "flags": [ "ZERO_WEIGHT" ]
   },
   {
     "id": "monster_lightning_fake",
@@ -306,7 +307,8 @@
     "pierce": 10,
     "range": 12,
     "loudness": 50,
-    "ammo_effects": [ "LIGHTNING_JUDGMENT" ]
+    "ammo_effects": [ "LIGHTNING_JUDGMENT" ],
+    "flags": [ "ZERO_WEIGHT" ]
   },
   {
     "id": "monster_laser_fake",
@@ -319,7 +321,8 @@
     "ranged_damage": { "damage_type": "cold", "amount": 12 },
     "range": 15,
     "loudness": 0,
-    "ammo_effects": [ "LASER", "BLINDS_EYES" ]
+    "ammo_effects": [ "LASER", "BLINDS_EYES" ],
+    "flags": [ "ZERO_WEIGHT" ]
   },
   {
     "id": "mut_dragonfire",
@@ -336,8 +339,8 @@
     "durability": 10,
     "loudness": 5,
     "reload": 500,
-    "ammo_effects": [ "WIDE", "STREAM" ],
-    "flags": [ "NEVER_JAMS", "TRADER_AVOID", "INCENDIARY" ]
+    "ammo_effects": [ "WIDE", "STREAM", "INCENDIARY" ],
+    "flags": [ "NEVER_JAMS", "TRADER_AVOID", "ZERO_WEIGHT" ]
   },
   {
     "id": "bio_electrothermal_arc_projector_gun",
@@ -345,6 +348,7 @@
     "name": { "str": "electrothermal arc projector" },
     "description": "this a pseudo item",
     "volume": "3 L",
+    "weight": "3 kg",
     "material": [ "steel", "plastic" ],
     "symbol": "(",
     "looks_like": "v29",
@@ -364,6 +368,7 @@
     "name": { "str": "rift focus projector" },
     "description": "this a pseudo item",
     "volume": "3 L",
+    "weight": "3 kg",
     "material": [ "steel", "plastic" ],
     "symbol": "(",
     "looks_like": "v29",
