@@ -27,7 +27,8 @@
     "material": [ "essencemat" ],
     "symbol": ",",
     "color": "cyan",
-    "use_action": { "type": "place_monster", "monster_id": "mon_shadow_summoned", "place_randomly": true }
+    "use_action": { "type": "place_monster", "monster_id": "mon_shadow_summoned", "place_randomly": true },
+    "flags": [ "ZERO_WEIGHT" ]
   },
   {
     "id": "bot_shadows_fake",
@@ -38,7 +39,8 @@
     "material": [ "essencemat" ],
     "symbol": ",",
     "color": "cyan",
-    "use_action": { "type": "place_monster", "monster_id": "mon_shadow_summoned_fake", "place_randomly": true }
+    "use_action": { "type": "place_monster", "monster_id": "mon_shadow_summoned_fake", "place_randomly": true },
+    "flags": [ "ZERO_WEIGHT" ]
   },
   {
     "id": "bot_seraphic_mimic",
@@ -48,7 +50,8 @@
     "material": [ "essencemat" ],
     "symbol": ",",
     "color": "cyan",
-    "use_action": { "type": "place_monster", "monster_id": "mon_seraphic_shade_fake", "place_randomly": true }
+    "use_action": { "type": "place_monster", "monster_id": "mon_seraphic_shade_fake", "place_randomly": true },
+    "flags": [ "ZERO_WEIGHT" ]
   },
   {
     "id": "stinger_flute",
