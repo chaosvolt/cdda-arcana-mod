@@ -152,7 +152,7 @@
   {
     "id": "science",
     "type": "item_group",
-    "items": [ { "group": "arcana_hunt_random", "prob": 10 }, [ "tindalos_whistle", 1 ], [ "spatial_displacer", 1 ] ]
+    "items": [ { "group": "lab_misc_anomalous_items", "prob": 5 }, { "group": "arcana_hunt_random", "prob": 10 }, [ "tindalos_whistle", 1 ], [ "spatial_displacer", 1 ] ]
   },
   {
     "id": "teleport",

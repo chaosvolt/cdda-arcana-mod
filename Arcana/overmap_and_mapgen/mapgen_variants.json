@@ -1393,21 +1393,78 @@
         },
         "c": {
           "items": [
-            { "item": "supplies_electronics", "chance": 30 },
-            { "item": "supplies_mechanics", "chance": 30 },
-            { "item": "arcana_hunt_random", "chance": 10 },
-            { "item": "lab_magitech_general", "chance": 5 }
+            { "item": "supplies_electronics", "chance": 50 },
+            { "item": "supplies_mechanics", "chance": 50 },
+            { "item": "arcana_hunt_random", "chance": 25 },
+            { "item": "lab_magitech_general", "chance": 10 }
           ]
         },
         "r": {
           "items": [
             { "item": "tools_science", "chance": 50 },
-            { "item": "tools_electronics", "chance": 25 },
-            { "item": "tools_robotics", "chance": 25 }
+            { "item": "tools_electronics", "chance": 50 },
+            { "item": "tools_robotics", "chance": 50 }
           ]
         },
         "h": { "item": [ { "item": "coat_lab", "chance": 10 } ] }
       }
+    }
+  },
+  {
+    "//": "9x9 workstation with sealed storage for magic stuff.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "lab_room_9x9_rare",
+    "object": {
+      "mapgensize": [ 9, 9 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        ".........",
+        ".|||||||.",
+        ".|.rrrr|.",
+        ".L..y..|.",
+        ".|...tt|.",
+        ".||ggg||.",
+        "...xcc...",
+        "....h....",
+        "........."
+      ],
+      "palettes": [ "lab_palette" ],
+      "terrain": { "y": "t_thconc_floor_olight" },
+      "mapping": {
+        "c": {
+          "items": [ { "item": "office", "chance": 50 }, { "item": "textbooks", "chance": 25 }, { "item": "science", "chance": 10 } ]
+        },
+        "r": {
+          "item": [ { "item": "recipe_lab_arcana", "chance": 10 } ],
+          "items": [
+            { "item": "lab_misc_anomalous_items", "chance": 90 },
+            { "item": "magic_books", "chance": 25 },
+            { "item": "arcana_hunt_random", "chance": 50 },
+            { "item": "lab_magitech_general", "chance": 25 }
+          ]
+        },
+        "t": {
+          "item": [ { "item": "bag_body_bag", "chance": 50 } ],
+          "items": [ { "item": "dissection", "chance": 50 }, { "item": "dissection", "chance": 25 } ]
+        }
+      },
+      "place_monster": [
+        {
+          "monster": [
+            "mon_zombie_thorny",
+            "mon_zombie_brute_ninja",
+            "mon_homunculus",
+            "mon_flesh_angel",
+            "mon_zombie_master",
+            "mon_zombie_necro",
+            "mon_zombie_necro_boomer"
+          ],
+          "x": [ 3, 4 ],
+          "y": [ 3, 4 ],
+          "chance": 90
+        }
+      ]
     }
   }
 ]

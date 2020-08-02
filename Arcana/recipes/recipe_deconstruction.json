@@ -107,6 +107,69 @@
     "components": [ [ [ "resin_chunk", 80 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
+    "result": "cyborg_matrix",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "4 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 15 ] ], [ [ "plastic_chunk", 15 ] ], [ [ "essence_dull", 5 ] ] ]
+  },
+  {
+    "result": "exodii_computer",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "4 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 10 ] ], [ [ "plastic_chunk", 20 ] ], [ [ "essence_dull", 5 ] ] ]
+  },
+  {
+    "result": "exodii_module",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "4 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "essence_dull", 5 ] ] ]
+  },
+  {
+    "result": "exodii_sensor",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "4 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 2 ] ], [ [ "plastic_chunk", 1 ] ], [ [ "essence_dull", 5 ] ] ]
+  },
+  {
+    "result": "exodii_motor",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "4 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "essence_dull", 5 ] ] ]
+  },
+  {
+    "result": "exodii_scanner_dish",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "4 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "essence_dull", 5 ] ] ]
+  },
+  {
+    "result": "exodii_portalizer",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "4 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "shadow_gem", 1 ] ], [ [ "essence_dull", 5 ] ] ]
+  },
+  {
     "result": "meteoric_talisman",
     "type": "uncraft",
     "skill_used": "magic",
