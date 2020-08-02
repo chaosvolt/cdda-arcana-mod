@@ -80,7 +80,7 @@
     "skills_required": [ [ "chemistry", 6 ] ],
     "time": "1 m",
     "batch_time_factors": [ 95, 5 ],
-    "book_learn": [ [ "book_potioncraft", 5 ], [ "book_bloodmagic", 4 ] ],
+    "book_learn": [ [ "book_potioncraft", 5 ], [ "book_bloodmagic", 4 ], [ "recipe_lab_arcana", 4 ] ],
     "qualities": [ { "id": "CHEM", "level": 3 }, { "id": "DISTILL", "level": 1 } ],
     "tools": [ [ [ "electrolysis_kit", 80 ] ] ],
     "components": [

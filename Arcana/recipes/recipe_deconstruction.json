@@ -803,6 +803,202 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
+    "result": "arcane_accelerator_railgun",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "silver_small", 50 ] ],
+      [ [ "scrap", 2 ] ],
+      [ [ "copper", 10 ] ],
+      [ [ "e_scrap", 4 ] ],
+      [ [ "essence_dull", 320 ] ]
+    ]
+  },
+  {
+    "result": "arcane_accelerator_plasma",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "silver_small", 50 ] ],
+      [ [ "scrap", 3 ] ],
+      [ [ "copper", 90 ] ],
+      [ [ "e_scrap", 3 ] ],
+      [ [ "essence_dull", 320 ] ]
+    ]
+  },
+  {
+    "result": "arcane_accelerator_nuke",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "silver_small", 50 ] ],
+      [ [ "scrap", 8 ] ],
+      [ [ "copper", 10 ] ],
+      [ [ "e_scrap", 5 ] ],
+      [ [ "glass_shard", 1 ] ],
+      [ [ "lead", 50 ] ],
+      [ [ "essence_dull", 320 ] ]
+    ]
+  },
+  {
+    "result": "rift_focus_cannon",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "scrap", 100 ] ],
+      [ [ "e_scrap", 15 ] ],
+      [ [ "copper", 100 ] ],
+      [ [ "glass_shard", 2 ] ],
+      [ [ "plastic_chunk", 8 ] ],
+      [ [ "gold_small", 100 ] ],
+      [ [ "silver_small", 95 ] ],
+      [ [ "essence_dull", 320 ] ]
+    ]
+  },
+  {
+    "result": "bio_rift_focus_projector",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "burnt_out_bionic", 1 ] ],
+      [ [ "scrap", 15 ] ],
+      [ [ "copper", 60 ] ],
+      [ [ "gold_small", 100 ] ],
+      [ [ "silver_small", 95 ] ],
+      [ [ "essence_dull", 150 ] ]
+    ]
+  },
+  {
+    "result": "electrothermal_arc_cannon",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "scrap", 60 ] ],
+      [ [ "copper", 340 ] ],
+      [ [ "e_scrap", 15 ] ],
+      [ [ "plastic_chunk", 6 ] ],
+      [ [ "essence_dull", 190 ] ]
+    ]
+  },
+  {
+    "result": "bio_electrothermal_arc_projector",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "burnt_out_bionic", 1 ] ], [ [ "scrap", 15 ] ], [ [ "copper", 110 ] ], [ [ "essence_dull", 160 ] ] ]
+  },
+  {
+    "result": "distortion_amp_motor_item",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 45 ] ], [ [ "e_scrap", 6 ] ], [ [ "copper", 30 ] ], [ [ "essence_dull", 340 ] ] ]
+  },
+  {
+    "result": "essence_surge_generator_item",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 35 ] ], [ [ "e_scrap", 2 ] ], [ [ "copper", 170 ] ], [ [ "essence_dull", 410 ] ] ]
+  },
+  {
+    "result": "bio_essence_surge_cell",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "burnt_out_bionic", 1 ] ], [ [ "scrap", 15 ] ], [ [ "copper", 210 ] ], [ [ "essence_dull", 110 ] ] ]
+  },
+  {
+    "result": "coalescent_converter",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "scrap", 65 ] ],
+      [ [ "e_scrap", 4 ] ],
+      [ [ "copper", 230 ] ],
+      [ [ "gold_small", 625 ] ],
+      [ [ "essence_dull", 510 ] ]
+    ]
+  },
+  {
+    "result": "bio_temporal_stimulation",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "burnt_out_bionic", 1 ] ], [ [ "scrap", 15 ] ], [ [ "copper", 60 ] ], [ [ "essence_dull", 160 ] ] ]
+  },
+  {
+    "result": "bio_temporal_stimulation",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": "80 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "burnt_out_bionic", 1 ] ],
+      [ [ "scrap", 15 ] ],
+      [ [ "copper", 60 ] ],
+      [ [ "silver_small", 400 ] ],
+      [ [ "essence_dull", 170 ] ]
+    ]
+  },
+  {
+    "result": "thermic_essence_cutter",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "scrap", 5 ] ],
+      [ [ "e_scrap", 4 ] ],
+      [ [ "copper", 180 ] ],
+      [ [ "plastic_chunk", 1 ] ],
+      [ [ "glass_shard", 1 ] ],
+      [ [ "essence_dull", 30 ] ]
+    ]
+  },
+  {
+    "result": "spatial_displacer",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": "80 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 36 ] ], [ [ "copper", 75 ] ], [ [ "e_scrap", 7 ] ], [ [ "essence_dull", 310 ] ] ]
+  },
+  {
     "result": "gilded_aegis",
     "type": "uncraft",
     "skill_used": "magic",

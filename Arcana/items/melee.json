@@ -134,7 +134,8 @@
     "price_postapoc": 500,
     "material": "stone",
     "looks_like": "material_limestone",
-    "volume": "250 ml"
+    "volume": "250 ml",
+    "flags": [ "ZERO_WEIGHT" ]
   },
   {
     "type": "GENERIC",

@@ -64,7 +64,8 @@
       [ "ethereal_crossbow", 5 ],
       [ "gilded_aegis", 5 ],
       [ "somen_clairvoyance", 5 ],
-      [ "hexenhammer", 10 ]
+      [ "hexenhammer", 10 ],
+      [ "thermic_essence_cutter", 1 ]
     ]
   },
   {
@@ -159,6 +160,27 @@
     ]
   },
   {
+    "id": "arcane_purifier_generic_casualty",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          {
+            "collection": [
+              { "item": "UPS_off", "prob": 50, "charges-min": 1, "charges-max": 200, "damage": [ 0, 2 ] },
+              { "group": "guns_energy", "prob": 50, "damage": [ 0, 2 ] }
+            ],
+            "prob": 20
+          },
+          { "group": "guns_pistol_common", "prob": 40, "damage": [ 0, 2 ] },
+          { "group": "guns_rifle_common", "prob": 40, "damage": [ 0, 2 ] }
+        ]
+      },
+      { "group": "cleansing_flame_casualties_basement" }
+    ]
+  },
+  {
     "id": "arcane_purifier_radio_casualty",
     "type": "item_group",
     "subtype": "collection",
@@ -166,12 +188,22 @@
       {
         "distribution": [
           {
-            "collection": [ { "group": "male_underwear", "damage": [ 1, 4 ] }, { "item": "dress_shirt", "damage": [ 1, 4 ] }, { "item": "pants", "damage": [ 1, 4 ] }, { "item": "dress_shoes", "damage": [ 1, 4 ] } ],
+            "collection": [
+              { "group": "male_underwear", "damage": [ 1, 4 ] },
+              { "item": "dress_shirt", "damage": [ 1, 4 ] },
+              { "item": "pants", "damage": [ 1, 4 ] },
+              { "item": "dress_shoes", "damage": [ 1, 4 ] }
+            ],
             "prob": 50
           },
           {
-            "collection": [ { "group": "female_underwear", "damage": [ 1, 4 ] }, { "item": "dress_shirt", "damage": [ 1, 4 ] }, { "item": "skirt", "damage": [ 1, 4 ] }, { "item": "dress_shoes", "damage": [ 1, 4 ] } ],
-            "prob": 50 
+            "collection": [
+              { "group": "female_underwear", "damage": [ 1, 4 ] },
+              { "item": "dress_shirt", "damage": [ 1, 4 ] },
+              { "item": "skirt", "damage": [ 1, 4 ] },
+              { "item": "dress_shoes", "damage": [ 1, 4 ] }
+            ],
+            "prob": 50
           }
         ]
       },

@@ -566,5 +566,16 @@
     "description": "A yearning for battle temporarily lingers in your mind, making the hunt easier until the source wears off.",
     "player_display": false,
     "flags": [ "PRED4" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_LIFE_SIGN_SUPPRESSION",
+    "name": { "str": "Life Sign Suppression" },
+    "points": 99,
+    "valid": false,
+    "player_display": false,
+    "description": "Undead are currently unable to detect you, increased aggression from natural wildlife.",
+    "ignored_by": [ "ZOMBIE" ],
+    "anger_relations": [ [ "ZOMBIE", -95 ], [ "MAMMAL", 25 ], [ "BIRD", 25 ] ]
   }
 ]

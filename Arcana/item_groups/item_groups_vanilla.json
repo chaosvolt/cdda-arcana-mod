@@ -152,22 +152,23 @@
   {
     "id": "science",
     "type": "item_group",
-    "items": [ { "group": "arcana_hunt_random", "prob": 10 }, [ "tindalos_whistle", 1 ] ]
+    "items": [ { "group": "arcana_hunt_random", "prob": 10 }, [ "tindalos_whistle", 1 ], [ "spatial_displacer", 1 ] ]
   },
   {
     "id": "teleport",
     "type": "item_group",
-    "items": [ [ "tindalos_whistle", 5 ] ]
+    "items": [ [ "tindalos_whistle", 5 ], [ "recipe_lab_arcana", 7 ] ]
   },
   {
     "id": "rare",
     "type": "item_group",
     "items": [
-      { "group": "magic_tools", "prob": 1 },
+      { "group": "magic_books", "prob": 5 },
+      { "group": "magic_consumables", "prob": 2 },
+      { "group": "magic_tools", "prob": 2 },
       { "group": "magic_items", "prob": 1 },
-      { "group": "magic_consumables", "prob": 1 },
-      { "group": "magic_books", "prob": 1 },
-      [ "tindalos_whistle", 10 ]
+      [ "tindalos_whistle", 10 ],
+      [ "spatial_displacer", 5 ]
     ]
   },
   {
@@ -179,5 +180,58 @@
     "id": "museum_primative",
     "type": "item_group",
     "items": [ [ "totem_cleric", 1 ], [ "totem_agile", 1 ], [ "totem_strength", 1 ], [ "totem_invis", 1 ] ]
+  },
+  {
+    "id": "tools_robotics",
+    "type": "item_group",
+    "items": [ [ "recipe_lab_arcana", 2 ] ]
+  },
+  {
+    "id": "guns_energy",
+    "type": "item_group",
+    "items": [
+      [ "electrothermal_arc_cannon", 3 ],
+      [ "rift_focus_cannon", 2 ]
+    ]
+  },
+  {
+    "id": "gunmod_energy",
+    "type": "item_group",
+    "items": [
+      [ "arcane_accelerator_railgun", 5 ],
+      [ "arcane_accelerator_plasma", 3 ],
+      [ "arcane_accelerator_nuke", 2 ]
+    ]
+  },
+  {
+    "id": "bionics",
+    "type": "item_group",
+    "items": [
+      [ "bio_electrothermal_arc_projector", 1 ],
+      [ "bio_rift_focus_projector", 1 ],
+      [ "bio_essence_surge_cell", 1 ],
+      [ "bio_temporal_stimulation", 1 ],
+      [ "bio_life_sign_suppression", 1 ]
+    ]
+  },
+  {
+    "id": "bionics_op",
+    "type": "item_group",
+    "items": [ [ "bio_electrothermal_arc_projector", 1 ], [ "bio_rift_focus_projector", 1 ], [ "bio_temporal_stimulation", 2 ] ]
+  },
+  {
+    "id": "bionics_op2_off",
+    "type": "item_group",
+    "items": [ [ "bio_electrothermal_arc_projector", 3 ], [ "bio_rift_focus_projector", 2 ] ]
+  },
+  {
+    "id": "bionics_op2_def",
+    "type": "item_group",
+    "items": [ [ "bio_life_sign_suppression", 5 ] ]
+  },
+  {
+    "id": "bionics_op2_utl",
+    "type": "item_group",
+    "items": [ [ "bio_temporal_stimulation", 4 ], [ "bio_essence_surge_cell", 1 ] ]
   }
 ]

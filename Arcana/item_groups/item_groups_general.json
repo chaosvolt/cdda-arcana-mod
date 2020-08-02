@@ -90,7 +90,8 @@
       [ "robe_shadow", 5 ],
       [ "somen_clairvoyance", 5 ],
       [ "revenant_crown", 10 ],
-      [ "gauntlets_necro", 15 ]
+      [ "gauntlets_necro", 15 ],
+      [ "thermic_essence_cutter", 1 ]
     ]
   },
   {
@@ -320,6 +321,63 @@
       [ "monster_fang", 15 ],
       [ "iridescent_plate", 15 ],
       [ "engraved_stone", 10 ]
+    ]
+  },
+  {
+    "id": "lab_magitech_general",
+    "//": "Mishmash of tools, books, and supplies that might be used for anomalous research, including some finished products.",
+    "type": "item_group",
+    "items": [
+      [ "recipe_lab_arcana", 5 ],
+      [ "recipe_lab_elec", 3 ],
+      [ "recipe_mil_augs", 2 ],
+      { "group": "tools_science", "prob": 15 },
+      { "group": "tools_gunsmith", "prob": 10 },
+      { "group": "magic_crafting", "prob": 10 },
+      { "group": "supplies_electronics", "prob": 15 },
+      { "group": "lab_magitech_weaponry", "prob": 2 },
+      { "group": "lab_magitech_bionics", "prob": 3 },
+      { "group": "lab_magitech_other", "prob": 5 },
+      { "group": "magic_books", "prob": 5 },
+      { "group": "supplies_mechanics", "prob": 10 },
+      { "group": "arcana_hunt_random", "prob": 10 },
+      { "group": "magic_tools", "prob": 5 }
+    ]
+  },
+  {
+    "id": "lab_magitech_weaponry",
+    "//": "Weapons and gunmods that rely on magitech.",
+    "type": "item_group",
+    "items": [
+      [ "electrothermal_arc_cannon", 50 ],
+      [ "bio_electrothermal_arc_projector", 25 ],
+      [ "arcane_accelerator_railgun", 10 ],
+      [ "arcane_accelerator_plasma", 10 ],
+      [ "arcane_accelerator_nuke", 5 ]
+    ]
+  },
+  {
+    "id": "lab_magitech_bionics",
+    "//": "Arcana-only magitech CBMs.",
+    "type": "item_group",
+    "items": [
+      [ "bio_electrothermal_arc_projector", 25 ],
+      [ "bio_rift_focus_projector", 10 ],
+      [ "bio_essence_surge_cell", 30 ],
+      [ "bio_temporal_stimulation", 25 ],
+      [ "bio_life_sign_suppression", 10 ]
+    ]
+  },
+  {
+    "id": "lab_magitech_other",
+    "//": "Misc tools and vehiclepart items involving magitech.",
+    "type": "item_group",
+    "items": [
+      [ "distortion_amp_motor_item", 20 ],
+      [ "essence_surge_generator_item", 35 ],
+      [ "coalescent_converter", 5 ],
+      [ "thermic_essence_cutter", 35 ],
+      [ "spatial_displacer", 5 ]
     ]
   }
 ]

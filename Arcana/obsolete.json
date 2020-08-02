@@ -185,7 +185,7 @@
     "color": "light_gray",
     "stack_size": 1,
 	"qualities": [ [ "LOCKPICK", 5 ] ],
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE", "NO_INGEST" ],
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE", "NO_INGEST", "ZERO_WEIGHT" ],
     "use_action": "PICK_LOCK",
     "drop_action": { "type": "emit_actor" }
   },
@@ -196,7 +196,7 @@
     "type": "COMESTIBLE",
     "name": { "str": "mote of greater artifice", "str_pl": "motes of greater artifice" },
 	"qualities": [ [ "LOCKPICK", 99 ] ],
-	"flags": [ "PERFECT_LOCKPICK" ],
+    "extend": { "flags": [ "PERFECT_LOCKPICK" ] },
     "use_action": "PICK_LOCK"
   },
   {
@@ -305,7 +305,7 @@
     "name": { "str": "coral halo" },
     "description": "A strange radiance permeating your body, dulling the effects of flame and radiation.",
     "color": "light_gray",
-    "flags": [ "ONLY_ONE" ]
+    "extend": { "flags": [ "ONLY_ONE"] }
   },
   {
     "id": "somen_clairvoyance_on",

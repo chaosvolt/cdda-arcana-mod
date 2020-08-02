@@ -93,7 +93,7 @@
         ".": { "item": { "item": "rock", "chance": 5 } },
         "]": { "furniture": "f_bookcase", "items": { "item": "mansion_bookcase", "chance": 100 } },
         "d": { "item": [ { "item": "CF_golden_scale" }, { "item": "book_magicfordummies" }, { "item": "note_soa_mission" } ] },
-        "C": { "items": [ { "item": "tools_survival", "chance": 50 } ] }
+        "C": { "items": [ { "item": "tools_survival", "chance": 50 }, { "item": "tools_robotics", "chance": 50 } ] }
       },
       "place_items": [
         { "item": "alcohol", "x": [ 2, 2 ], "y": [ 14, 14 ], "chance": 90 },
@@ -1206,6 +1206,208 @@
         { "group": "cleansing_flame_casualty_specific", "x": [ 17, 18 ], "y": [ 7, 8 ], "chance": 75 }
       ],
       "place_monsters": [ { "monster": "GROUP_ZOMBIE", "x": [ 2, 21 ], "y": [ 2, 21 ] } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "microlab_sub_station" ],
+    "weight": 125,
+    "object": {
+      "fill_ter": "t_concrete",
+      "rows": [
+        "##|                  |X#",
+        "##|^                 |_#",
+        "##|^ hhhh  YY   hhhh |_#",
+        "##|^                 |_#",
+        "##|^ hhhh       hhhh |_#",
+        "##|^                 |_#",
+        "##|^          |^^^^^^|_#",
+        "##||(((((|    ||||||||_#",
+        "###|l h  ( YY |######__#",
+        "###|l    ( YY |###_____#",
+        "###|l    (    |##_____##",
+        "###||2||||    |#_____###",
+        "###|     |    |##___####",
+        "###|   hd|G55||#########",
+        "###|  ddd|   ^|#########",
+        "###||5(((|   ^|||||||###",
+        "###|B          VV ^^|###",
+        "###|B      YY      ?|###",
+        "###|B dddd YY    t ?|###",
+        "###|B d hd         ?|###",
+        "###|B          t? ^^|###",
+        "###||||||||  ||||||||###",
+        "##########|22|##########",
+        "##########|  |##########"
+      ],
+      "palettes": [ "microlab" ],
+      "terrain": { "G": "t_card_science", "X": "t_secretdoor_metal_c", "_": "t_rock_floor" },
+      "items": {
+        "l": [ { "item": "guns_milspec", "chance": 10 }, { "item": "ammo_milspec", "chance": 70 } ],
+        "t": { "item": "magazines", "chance": 90 },
+        "_": { "item": "mine_storage", "chance": 10 }
+      },
+      "place_loot": [
+        { "group": "arcane_purifier_generic_casualty", "x": [ 17, 18 ], "y": [ 11, 12 ] },
+        { "group": "arcane_purifier_generic_casualty", "x": [ 20, 21 ], "y": [ 9, 10 ] }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ [ "microlab_generic" ] ],
+    "method": "json",
+    "object": {
+      "fill_ter": "t_strconc_floor",
+      "rows": [
+        "     |    |  2    | ccc ",
+        " c c |6hh6|  |UUUU| RRR ",
+        " cYc ||||||  ||||||     ",
+        " i i 2            2   dd",
+        "     2            2    h",
+        "||||||||||||||||||||||||",
+        " |rY     dd66dd   ___r|c",
+        "F|r      h  h    _____| ",
+        "F|r              _____| ",
+        " |r              _____|c",
+        "2||      h   h    ___|||",
+        " ^|c    ttt  ttth   c|  ",
+        " ^|c   httt  ttt    c|  ",
+        "2|||||            |||||2",
+        " c|BB|Y          Y|  |  ",
+        "  2  ||22||55|||2||  2  ",
+        " h|b |    |  (dh l|  2  ",
+        "rr|b |OOOO|  (dY l|  |cc",
+        "|||  ||||||55||||||  |||",
+        "  2                  |c ",
+        "  2                  |6h",
+        "  |||||||||  |||||||||  ",
+        "   tt|ccd6|22|dh c|Fc   ",
+        "    h|  h |  |d  c|     "
+      ],
+      "palettes": [ "microlab" ],
+      "terrain": { "_": "t_rock_floor" },
+      "items": {
+        "l": [ { "item": "guns_milspec", "chance": 10 }, { "item": "ammo_milspec", "chance": 70 } ],
+        "_": { "item": "wreckage", "chance": 15 }
+      },
+      "place_loot": [
+        { "group": "remains_human_generic", "x": [ 18, 19 ], "y": [ 7, 9 ] },
+        { "group": "teleport", "x": [ 8, 10 ], "y": [ 11, 12 ], "chance": 25, "repeat": 10 },
+        { "group": "teleport", "x": [ 13, 15 ], "y": [ 11, 12 ], "chance": 25, "repeat": 10 },
+        { "group": "lab_magitech_general", "x": 2, "y": [ 6, 9 ], "chance": 50, "repeat": 10 }
+      ],
+      "place_monster": [
+        { "monster": "mon_zombie_labsecurity", "x": 15, "y": 16 },
+        { "group": "GROUP_NETHER_PORTAL", "x": [ 18, 19 ], "y": [ 7, 9 ], "repeat": [ 1, 3 ] }
+      ]
+    }
+  },
+  {
+    "method": "json",
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        ".......|//////5|........",
+        ".......|-=====-|........",
+        ".......|//////5|........",
+        ".......|///////|........",
+        ".......||/////||........",
+        "........|/////|.........",
+        "........|/////|.........",
+        "......|-|/////||........",
+        "------|////////|........",
+        "///////////////|........",
+        "///////////////|........",
+        "///////////G///|........",
+        "///////////////|........",
+        "///////////////|........",
+        "------|////////|........",
+        "......|-uuu-==-|........",
+        ".......|r     ||------|.",
+        "-------|r    L|G ]]]N_|.",
+        "000__0N|r    L|     h6|.",
+        "   __ c|r     |       |.",
+        "$      |      +     nn|.",
+        "$ c6c  +    h | zzz nn|.",
+        "   h   |Gccckk|-------|.",
+        "uuuu-=-||-----|........."
+      ],
+      "palettes": [ "necropolis_b2" ],
+      "terrain": { "]": "t_metal_floor" },
+      "furniture": { "]": "f_displaycase" },
+      "place_loot": [
+        { "item": "recipe_lab_arcana", "x": [ 12, 12 ], "y": 22, "chance": 90 },
+        { "group": "tools_science", "x": 8, "y": [ 16, 19 ], "chance": 40, "repeat": 10 },
+        { "group": "tools_gunsmith", "x": 13, "y": [ 17, 18 ], "chance": 50, "repeat": 5 },
+        { "group": "guns_energy", "x": [ 9, 11 ], "y": 22, "chance": 50 },
+        { "group": "magic_crafting", "x": [ 9, 11 ], "y": 22, "chance": 40, "repeat": 5 },
+        { "group": "arcana_hunt_random", "x": [ 9, 11 ], "y": 22, "chance": 35, "repeat": 3 },
+        { "group": "cult_sacrifice", "x": [ 20, 21 ], "y": [ 20, 21 ] },
+        { "group": "dissection", "x": [ 20, 21 ], "y": [ 20, 21 ], "repeat": 4 },
+        { "group": "supplies_electronics", "x": [ 16, 18 ], "y": 21, "chance": 30, "repeat": 10 },
+        { "group": "supplies_mechanics", "x": [ 16, 18 ], "y": 21, "chance": 30, "repeat": 10 },
+        { "item": "recipe_mil_augs", "x": [ 17, 19 ], "y": 17, "chance": 25 },
+        { "group": "bionics_mil", "x": [ 17, 19 ], "y": 17, "chance": 50, "repeat": 6 },
+        { "group": "lab_magitech_bionics", "x": [ 17, 19 ], "y": 17, "chance": 50 }
+      ],
+      "place_monsters": [
+        { "monster": "GROUP_NECROPOLIS_VAULT2", "x": [ 1, 22 ], "y": [ 1, 16 ], "density": 0.05 },
+        { "monster": "GROUP_NECROPOLIS_VAULT2", "x": [ 1, 22 ], "y": [ 1, 16 ], "density": 0.25 }
+      ],
+      "place_monster": [
+        { "monster": "mon_secubot", "x": 9, "y": 16 },
+        { "monster": "mon_secubot", "x": 12, "y": 21 },
+        { "monster": "mon_zombie_bio_op", "x": 18, "y": 19 },
+        { "monster": "mon_charred_nightmare", "x": 16, "y": 18 },
+        { "monster": "mon_charred_nightmare", "x": 15, "y": 20 },
+        { "monster": "mon_charred_nightmare", "x": 19, "y": 21 }
+      ]
+    },
+    "om_terrain": [ [ "necropolis_c_63" ] ],
+    "type": "mapgen",
+    "weight": 500
+  },
+  {
+    "//": "7x7 workstation with chance of magitech-related materials.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "lab_room_7x7_rare",
+    "object": {
+      "mapgensize": [ 7, 7 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        ".xcccx.",
+        ".h...h.",
+        ".......",
+        "..rrr..",
+        ".......",
+        ".dh.hd.",
+        ".dcccd."
+      ],
+      "palettes": [ "lab_palette" ],
+      "mapping": {
+        "d": {
+          "items": [ { "item": "office", "chance": 50 }, { "item": "textbooks", "chance": 25 }, { "item": "science", "chance": 10 } ]
+        },
+        "c": {
+          "items": [
+            { "item": "supplies_electronics", "chance": 30 },
+            { "item": "supplies_mechanics", "chance": 30 },
+            { "item": "arcana_hunt_random", "chance": 10 },
+            { "item": "lab_magitech_general", "chance": 5 }
+          ]
+        },
+        "r": {
+          "items": [
+            { "item": "tools_science", "chance": 50 },
+            { "item": "tools_electronics", "chance": 25 },
+            { "item": "tools_robotics", "chance": 25 }
+          ]
+        },
+        "h": { "item": [ { "item": "coat_lab", "chance": 10 } ] }
+      }
     }
   }
 ]
