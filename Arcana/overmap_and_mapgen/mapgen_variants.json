@@ -1368,5 +1368,46 @@
     "om_terrain": [ [ "necropolis_c_63" ] ],
     "type": "mapgen",
     "weight": 500
+  },
+  {
+    "//": "7x7 workstation with chance of magitech-related materials.",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "lab_room_7x7_rare",
+    "object": {
+      "mapgensize": [ 7, 7 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        ".xcccx.",
+        ".h...h.",
+        ".......",
+        "..rrr..",
+        ".......",
+        ".dh.hd.",
+        ".dcccd."
+      ],
+      "palettes": [ "lab_palette" ],
+      "mapping": {
+        "d": {
+          "items": [ { "item": "office", "chance": 50 }, { "item": "textbooks", "chance": 25 }, { "item": "science", "chance": 10 } ]
+        },
+        "c": {
+          "items": [
+            { "item": "supplies_electronics", "chance": 30 },
+            { "item": "supplies_mechanics", "chance": 30 },
+            { "item": "arcana_hunt_random", "chance": 10 },
+            { "item": "lab_magitech_general", "chance": 5 }
+          ]
+        },
+        "r": {
+          "items": [
+            { "item": "tools_science", "chance": 50 },
+            { "item": "tools_electronics", "chance": 25 },
+            { "item": "tools_robotics", "chance": 25 }
+          ]
+        },
+        "h": { "item": [ { "item": "coat_lab", "chance": 10 } ] }
+      }
+    }
   }
 ]
