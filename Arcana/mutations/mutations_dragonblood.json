@@ -193,7 +193,7 @@
     "name": { "str": "Elemental Affinity" },
     "points": 4,
     "bodytemp_modifiers": [ -2500, 0 ],
-    "description": "Your body feels abnormally comfortable around heat and flame, letting you tolerate its heat for longer, and reducing damage from fire.",
+    "description": "Your body feels abnormally comfortable around heat and flame, letting you tolerate its heat for longer, and reducing direct damage from fire.  You will no longer suffer any speed penalty from heat exhaustion, though the other side effects of heatstroke will still affect you.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
