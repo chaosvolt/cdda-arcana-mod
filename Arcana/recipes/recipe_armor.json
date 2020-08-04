@@ -160,15 +160,7 @@
         [ "iridescent_plate", 1 ],
         [ "wyrmskin_piece", 1 ]
       ],
-      [
-        [ "acid", 1 ],
-        [ "chem_sulphuric_acid", 1 ],
-        [ "chem_nitric_acid", 1 ],
-        [ "chem_muriatic_acid", 1 ],
-        [ "chem_acetic_acid", 1 ],
-        [ "water_acid", 2 ],
-        [ "water_acid_weak", 4 ]
-      ],
+      [ [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 1, "LIST" ] ],
       [ [ "essence_blood", 4 ] ]
     ],
     "flags": [ "SECRET" ]

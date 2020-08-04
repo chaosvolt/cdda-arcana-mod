@@ -199,6 +199,7 @@
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
     "prereqs2": [ "CANNIBAL" ],
+    "enchantments": [ "ENCH_DRAGONBLOOD_ELEMENTAL_AFFINITY" ],
     "armor": [ { "parts": "ALL", "heat": 6 } ]
   },
   {

@@ -16,5 +16,11 @@
     "condition": "ALWAYS",
     "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ],
     "values": [ { "value": "REGEN_HP", "multiply": -1.0 }, { "value": "SOCIAL_PERSUADE", "multiply": -0.5 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "ENCH_DRAGONBLOOD_ELEMENTAL_AFFINITY",
+    "condition": "ALWAYS",
+    "ench_effects": [ { "effect": "heat_ward_dragonblood", "intensity": 1 } ]
   }
 ]
