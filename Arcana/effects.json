@@ -231,7 +231,10 @@
   },
   {
     "type": "effect_type",
+    "id": "heat_ward_dragonblood",
     "name": [ "Elemental Affinity" ],
+    "desc": [ "Immunity to heatstroke.  High temperatures will still leave you sluggish, and extreme heat will still cause blistering." ],
+    "removes_effects": [ "hot" ]
   },
   {
     "type": "effect_type",
