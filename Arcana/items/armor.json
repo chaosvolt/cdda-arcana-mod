@@ -18,7 +18,7 @@
       ]
     },
     "extend": { "flags": [ "ONLY_ONE", "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF", "AURA", "NO_TAKEOFF" ] },
-    "covers": [ "EYES" ]
+    "covers": [ "eyes" ]
   },
   {
     "id": "halo_berserk",
@@ -195,7 +195,7 @@
     "symbol": "[",
     "looks_like": "leather_pouch",
     "color": "light_red",
-    "covers": [ "TORSO" ],
+    "covers": [ "torso" ],
     "coverage": 15,
     "encumbrance": 15,
     "material_thickness": 1,
