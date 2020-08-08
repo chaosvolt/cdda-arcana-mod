@@ -257,5 +257,13 @@
     "id": "bionics_op2_utl",
     "type": "item_group",
     "items": [ [ "bio_temporal_stimulation", 4 ], [ "bio_essence_surge_cell", 1 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "roof_holdout",
+    "items": [
+      { "group": "magic_books", "prob": 5 },
+      { "group": "arcana_hunt_random", "prob": 15 }
+    ]
   }
 ]
