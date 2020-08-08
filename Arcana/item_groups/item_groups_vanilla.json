@@ -36,6 +36,30 @@
     "items": [ [ "manual_cleansingflame", 1 ] ]
   },
   {
+    "id": "SUS_chemistry_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "book_potioncraft", "prob": 5 }
+    ]
+  },
+  {
+    "id": "SUS_book_nonf_hard_spirit",
+    "type": "item_group",
+    "entries": [
+      { "item": "book_hexenhammer", "prob": 2 },
+      { "item": "book_scrollcraft", "prob": 2 },
+      { "item": "book_sacrifice", "prob": 1 }
+    ]
+  },
+  {
+    "id": "SUS_book_nonf_soft_occult",
+    "type": "item_group",
+    "entries": [
+      { "group": "magic_books", "prob": 1 }
+    ]
+  },
+  {
     "id": "mansion_safe",
     "type": "item_group",
     "subtype": "collection",
