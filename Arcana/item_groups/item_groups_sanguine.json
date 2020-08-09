@@ -60,7 +60,8 @@
       [ "gold_small", 10 ],
       [ "silver_small", 25 ],
       [ "bone_human", 25 ],
-      [ "rag_bloody", 35 ],
+      [ "rag", 15 ],
+      [ "vacutainer", 20 ],
       [ "scrap", 30 ],
       [ "diamond", 5 ],
       [ "jade_brooch", 5 ]
@@ -72,7 +73,9 @@
     "subtype": "collection",
     "entries": [
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "sanguine_cult_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "sanguine_cult_gear", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "sanguine_cult_consumables", "prob": 25 },
+      { "group": "sanguine_cult_crafting", "prob": 25 },
       { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
   },
@@ -82,7 +85,9 @@
     "subtype": "collection",
     "entries": [
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "sanguine_cult_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "sanguine_cult_gear", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "sanguine_cult_consumables", "prob": 25 },
+      { "group": "sanguine_cult_crafting", "prob": 25 },
       { "group": "arcanist_corpses_adult_random" }
     ]
   },

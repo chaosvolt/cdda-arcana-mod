@@ -91,6 +91,7 @@
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
       { "group": "chalice_cult_gear", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "chalice_cult_consumables", "prob": 25 },
+      { "group": "chalice_cult_crafting", "prob": 25 },
       { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
   },
@@ -102,6 +103,7 @@
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
       { "group": "chalice_cult_gear", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "chalice_cult_consumables", "prob": 25 },
+      { "group": "chalice_cult_crafting", "prob": 25 },
       { "group": "arcanist_corpses_adult_random" }
     ]
   }
