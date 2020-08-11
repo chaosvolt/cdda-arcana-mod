@@ -434,6 +434,11 @@
     "id": "TALK_FRIEND_CONVERSATION",
     "type": "talk_topic",
     "responses": [
+      { "text": "<CWH_intro_question>", "topic": "BGSS_CF_1_IDEAS1", "condition": { "npc_has_trait": "BGSS_CF_1" } },
+      { "text": "<CWH_intro_question>", "topic": "BGSS_CF_2_IDEAS1", "condition": { "npc_has_trait": "BGSS_CF_2" } },
+      { "text": "<CWH_intro_question>", "topic": "BGSS_CF_3_IDEAS1", "condition": { "npc_has_trait": "BGSS_CF_3" } },
+      { "text": "<CWH_intro_question>", "topic": "BGSS_CF_4_IDEAS1", "condition": { "npc_has_trait": "BGSS_CF_4" } },
+      { "text": "<CWH_intro_question>", "topic": "BGSS_CF_5_IDEAS1", "condition": { "npc_has_trait": "BGSS_CF_5" } },
       {
         "text": "<BGSS_intro_question>",
         "topic": "BGSS_CF_1_STORY1",
@@ -467,9 +472,29 @@
     ]
   },
   {
+    "id": "BGSS_CF_1_IDEAS1",
+    "type": "talk_topic",
+    "dynamic_line": "The prevailing theory at first was that the Sanguine Order or Keepers of The Oath were to blame somehow, but many of us started to doubt that.  Especially with the reports coming in from the Purifiers, our contacts who dealth more closely with civilization.",
+    "responses": [
+      { "text": "What kind of reports?", "topic": "BGSS_CF_1_IDEAS2" },
+      { "text": "<done_conversation_section>", "topic": "TALK_NONE" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_1_IDEAS2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_trait": "PROF_CLEANSINGFLAME2",
+      "yes": "I'm not sure how much of that intel you've been privy to, but you surely saw it more closely than I did.  A contaminant with its origins in the cities, that's likely to blame for the initial wave of deaths.  Likely from Beyond The Veil, as the abominations are, but other than reasonable evidence the cause wasn't arcane in origin, we have nothing but guesswork to go on.",
+      "no": "There was something in the water, all manner of madness and death, all preceding the overt intrusions into our world.  We suspect even those early signs were otherworldly in origin, something that started in the cities.  We've reasonably ruled out the root cause being supernatural, but that just means we have no experience to go off of.  I wish I had anything more than guesswork to offer."
+    },
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_NONE" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
+  },
+  {
     "id": "BGSS_CF_1_STORY1",
     "type": "talk_topic",
-    "dynamic_line": "I was with a few others.  We were traveling to a planned rendevous point to meet another hunting party, one of us had a cell phone.  Couldn't get any reception, I thought maybe it was because we were in a fairly rural area.  Right as we were arguing over why we might not be getting any signal, one of the others yells out for a mask check.",
+    "dynamic_line": "I was with a few others.  We were traveling to a planned rendezvous point to meet another hunting party, one of us had a cell phone.  Couldn't get any reception, I thought maybe it was because we were in a fairly rural area.  Right as we were arguing over why we might not be getting any signal, one of the others yells out for a mask check.",
     "responses": [
       { "text": "Mask check?", "topic": "BGSS_CF_1_STORY2" },
       { "text": "What happaned?", "topic": "BGSS_CF_1_STORY3" },
@@ -494,6 +519,22 @@
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
+    "id": "BGSS_CF_2_IDEAS1",
+    "type": "talk_topic",
+    "dynamic_line": "I was blindsided by it like the rest.  When I saw what had happened to the cities, I knew all our suspicions of worrying phenomena paled in comparison.",
+    "responses": [
+      { "text": "Any guesses?", "topic": "BGSS_CF_2_IDEAS2" },
+      { "text": "<done_conversation_section>", "topic": "TALK_NONE" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_2_IDEAS2",
+    "type": "talk_topic",
+    "dynamic_line": "A war.  That's the only thing that comes to mind.  There were signs of more than just the usual collateral damage.  Maybe WWIII just barely started happening, and the nuclear blasts weakened The Veil further.  Large enough spikes of energy can interact with anomalies, so it's possible at least.  Not like we can test it, though.",
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_NONE" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
+  },
+  {
     "id": "BGSS_CF_2_STORY1",
     "type": "talk_topic",
     "dynamic_line": "The rest of my hunting party had been picked off over the past week or so.  I didn't know where else to go, but I knew there was a town not far from where I was, and possible contacts on the outskirts.",
@@ -510,6 +551,22 @@
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
+    "id": "BGSS_CF_3_IDEAS1",
+    "type": "talk_topic",
+    "dynamic_line": "There was a growing instability in The Veil, and that's what caused these horrors to come spilling out into our world.  Whatever it was, it did more damage than the sanguinists and keepers combined.  Everything before, though…",
+    "responses": [
+      { "text": "What about the stuff that happened beforehand?", "topic": "BGSS_CF_2_IDEAS2" },
+      { "text": "<done_conversation_section>", "topic": "TALK_NONE" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_CF_3_IDEAS2",
+    "type": "talk_topic",
+    "dynamic_line": "To be honest, I'm not convinced that the rioting and pollution are related to that.  Most of the others suspect the undead might be connected to the latter, but I'm not sure of that either.  My personal hot take on this is that it was a personal storm of disasters, all of which made the anomalies themselves not only worse, but made it harder to prevent.",
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_NONE" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
+  },
+  {
     "id": "BGSS_CF_3_STORY1",
     "type": "talk_topic",
     "dynamic_line": {
@@ -518,7 +575,7 @@
       "no": "I was with Sofia and a couple others.  She was en route here, to meet the padre and ask for shelter on the way to one of our safehouses."
     },
     "responses": [
-      { "text": "What'd you find when you got here?", "topic": "BGSS_CF_3_STORY2" },
+      { "text": "What'd you find when you arrived?", "topic": "BGSS_CF_3_STORY2" },
       { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
       { "text": "<end_talking>", "topic": "TALK_DONE" }
     ]
@@ -532,6 +589,12 @@
       "no": "Place was empty.  No priest, no other people, nothing.  No sign that they'd been there recently either.  We got settled in best as we could, and didn't find out the news until a couple days later.  It was so much worse than we ever remotely suspected…"
     },
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "BGSS_CF_4_IDEAS1",
+    "type": "talk_topic",
+    "dynamic_line": "I can't tell you anything useful.  The people I was with spent a good solid month or two prior to the Apocalypse on a mission.  We ended up getting tunnel vision, I guess you could say…",
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_NONE" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
     "id": "BGSS_CF_4_STORY1",
@@ -584,6 +647,16 @@
     "type": "talk_topic",
     "dynamic_line": "The dead didn't stay that way.  In fact our arrival stirred most of the corpses up.  Dozens of them, writhing and scrabbling over each other to crawl out of a trench barely 10 feet long and only a few feet deep.  Lost two of us before we were forced to break contact rather than try to put the poor things down.  We'd find out later on just how much worse it was everywhere else.",
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "BGSS_CF_5_IDEAS1",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "npc_has_trait": "BGSS_CF_FILTER",
+      "yes": "I'm ashamed to admit, if not for Johnathan I wouldn't have learned anything had happened.  I knew a bit of rumors, riots and other concerning things, but nothing firsthand.  Personally I'm still half-convinced the Sanguine Order was somehow involved, but it's not worth pointing fingers anymore.  I'd rather focus on the task at hand, for now.",
+      "no": "I heard a few rumors.  All the usual, but nothing concrete.  I was too focused on survival.  Personally I wonder if the Keepers of The Oath somehow opened the gates to Hell or something, but I don't care anymore.  I'm just glad to be alive, and even moreso to not face this alone.  I'd rather focus on the task at hand, for now."
+    },
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_NONE" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
     "id": "BGSS_CF_5_STORY1",

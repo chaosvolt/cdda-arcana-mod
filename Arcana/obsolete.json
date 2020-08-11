@@ -184,7 +184,7 @@
     "symbol": ",",
     "color": "light_gray",
     "stack_size": 1,
-	"qualities": [ [ "LOCKPICK", 5 ] ],
+    "qualities": [ [ "LOCKPICK", 5 ] ],
     "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE", "NO_INGEST", "ZERO_WEIGHT" ],
     "use_action": "PICK_LOCK",
     "drop_action": { "type": "emit_actor" }
@@ -195,7 +195,7 @@
     "copy-from": "spell_lockpick_lesser",
     "type": "COMESTIBLE",
     "name": { "str": "mote of greater artifice", "str_pl": "motes of greater artifice" },
-	"qualities": [ [ "LOCKPICK", 99 ] ],
+    "qualities": [ [ "LOCKPICK", 99 ] ],
     "extend": { "flags": [ "PERFECT_LOCKPICK" ] },
     "use_action": "PICK_LOCK"
   },
@@ -305,7 +305,7 @@
     "name": { "str": "coral halo" },
     "description": "A strange radiance permeating your body, dulling the effects of flame and radiation.",
     "color": "light_gray",
-    "extend": { "flags": [ "ONLY_ONE"] }
+    "extend": { "flags": [ "ONLY_ONE" ] }
   },
   {
     "id": "somen_clairvoyance_on",
@@ -389,5 +389,425 @@
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
     "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
+    "id": "scroll_sun_on",
+    "copy-from": "scroll_sun",
+    "type": "TOOL",
+    "name": { "str": "divine scroll of light (active)", "str_pl": "divine scrolls of light (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_sun", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_moon_on",
+    "copy-from": "scroll_moon",
+    "type": "TOOL",
+    "name": { "str": "divine scroll of darkness (active)", "str_pl": "divine scrolls of darkness (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_moon", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_artiface_on",
+    "copy-from": "scroll_artiface",
+    "type": "TOOL",
+    "name": { "str": "divine scroll of command (active)", "str_pl": "divine scrolls of command (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_artifice", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_nature_on",
+    "copy-from": "scroll_nature",
+    "type": "TOOL",
+    "name": { "str": "divine scroll of regrowth (active)", "str_pl": "divine scrolls of regrowth (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_nature", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_destruction_on",
+    "copy-from": "scroll_destruction",
+    "type": "TOOL",
+    "name": { "str": "divine scroll of sundering (active)", "str_pl": "divine scrolls of sundering (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_destruction", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_subversion_on",
+    "copy-from": "scroll_subversion",
+    "type": "TOOL",
+    "name": { "str": "divine scroll of discord (active)", "str_pl": "divine scrolls of discord (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_subversion", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_sun_on",
+    "copy-from": "scroll_spell_sun",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (consecrate)", "str_pl": "pattern scrolls (consecrate)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_consecrate", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_moon_on",
+    "copy-from": "scroll_spell_moon",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (ward against cold)", "str_pl": "active pattern scrolls (ward against cold)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_frost_armor", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_artiface_on",
+    "copy-from": "scroll_spell_artiface",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (sundering quake)", "str_pl": "active pattern scrolls (sundering quake)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_sundering_quake", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_nature_on",
+    "copy-from": "scroll_spell_nature",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (elemental burst)", "str_pl": "active pattern scrolls (elemental burst)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_elemental_burst", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_destruction_on",
+    "copy-from": "scroll_spell_destruction",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (summon centipedes)", "str_pl": "active pattern scrolls (summon centipedes)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_summon_giant_centipedes", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_subversion_on",
+    "copy-from": "scroll_spell_subversion",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (eclipse)", "str_pl": "active pattern scrolls (eclipse)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_eclipse", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "totem_elecresist_on",
+    "copy-from": "totem_elecresist",
+    "type": "TOOL",
+    "name": { "str": "Amber Seal: Lightning Ward (active)", "str_pl": "Amber Seals: Lightning Ward (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_lightning_ward", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_cleric_on",
+    "copy-from": "totem_cleric",
+    "type": "TOOL",
+    "name": { "str": "Angelic Seal: Ward Against Evil (active)", "str_pl": "Angelic Seals: Ward Against Evil (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_ward_against_evil", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_agile_on",
+    "copy-from": "totem_agile",
+    "type": "TOOL",
+    "name": { "str": "Bone Seal: Agility (active)", "str_pl": "Bone Seals: Agility (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_agility", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_confusion_on",
+    "copy-from": "totem_confusion",
+    "type": "TOOL",
+    "name": { "str": "Chitinous Seal: Confuse Monsters (active)", "str_pl": "Chitinous Seals: Confuse Monsters (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_confuse_monster", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_strength_on",
+    "copy-from": "totem_strength",
+    "type": "TOOL",
+    "name": { "str": "Dagger Seal: Might (active)", "str_pl": "Dagger Seals: Might (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_might", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_clairvoyance_on",
+    "copy-from": "totem_clairvoyance",
+    "type": "TOOL",
+    "name": { "str": "Eternity Seal: Clairvoyance (active)", "str_pl": "Eternity Seals: Clairvoyance (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_clairvoyance", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_free_action_on",
+    "copy-from": "totem_free_action",
+    "type": "TOOL",
+    "name": { "str": "Indigo Seal: Free Action (active)", "str_pl": "Indigo Seals: Free Action (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_free_action", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_invis_on",
+    "copy-from": "totem_invis",
+    "type": "TOOL",
+    "name": { "str": "Obsidian Seal: Shadowy Shield (active)", "str_pl": "Obsidian Seals: Shadowy Shield (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_serpentine_shield", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_plants_on",
+    "copy-from": "totem_plants",
+    "type": "TOOL",
+    "name": { "str": "Scarlet Seal: Overgrowth (active)", "str_pl": "Scarlet Seals: Overgrowth (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_overgrowth", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_flamearmor_on",
+    "copy-from": "totem_flamearmor",
+    "type": "TOOL",
+    "name": { "str": "Starstone Seal: Ward Against Heat (active)", "str_pl": "Starstone Seals: Ward Against Heat (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_heat_ward", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_insight_on",
+    "copy-from": "totem_insight",
+    "type": "TOOL",
+    "name": { "str": "Tear Seal: Insight (active)", "str_pl": "Tear Seals: Insight (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_insight", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_clarity_on",
+    "copy-from": "totem_clarity",
+    "type": "TOOL",
+    "name": { "str": "Thorn Seal: Clarity of Blood (active)", "str_pl": "Thorn Seals: Clarity of Blood (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_clarity_blood", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_lightning_on",
+    "copy-from": "totem_lightning",
+    "type": "TOOL",
+    "name": { "str": "Thunder Seal: Shockstorm (active)", "str_pl": "Thunder Seals: Shockstorm (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_shockstorm", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_heal_on",
+    "copy-from": "totem_heal",
+    "type": "TOOL",
+    "name": { "str": "Woven Seal: Healing (active)", "str_pl": "Woven Seals: Healing (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_healing", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "totem_acidspray_on",
+    "copy-from": "totem_acidspray",
+    "type": "TOOL",
+    "name": { "str": "Wyrm Seal: Acid Spray (active)", "str_pl": "Wyrm Seals: Acid Spray (active)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_conjure_acid", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "scroll_spell_agile_on",
+    "copy-from": "scroll_spell_agile",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (agility)", "str_pl": "active pattern scrolls (agility)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_agility", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_clairvoyance_on",
+    "copy-from": "scroll_spell_clairvoyance",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (clairvoyance)", "str_pl": "active pattern scrolls (clairvoyance)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clairvoyance", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_clarity_on",
+    "copy-from": "scroll_spell_clarity",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (clarity of blood)", "str_pl": "active pattern scrolls (clarity of blood)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clarity_blood", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_confusion_on",
+    "copy-from": "scroll_spell_confusion",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (confuse monsters)", "str_pl": "active pattern scrolls (confuse monsters)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_confuse_monster", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_acidspray_on",
+    "copy-from": "scroll_spell_acidspray",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (conjure acid)", "str_pl": "active pattern scrolls (conjure acid)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_conjure_acid", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_flame_armor_on",
+    "copy-from": "scroll_spell_flame_armor",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (ward against heat)", "str_pl": "active pattern scrolls (ward against heat)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_flame_armor", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_free_action_on",
+    "copy-from": "scroll_spell_free_action",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (free action)", "str_pl": "active pattern scrolls (free action)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_free_action", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_heal_on",
+    "copy-from": "scroll_spell_heal",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (healing)", "str_pl": "active pattern scrolls (healing)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_healing", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_insight_on",
+    "copy-from": "scroll_spell_insight",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (insight)", "str_pl": "active pattern scrolls (insight)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_insight", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_elecresist_on",
+    "copy-from": "scroll_spell_elecresist",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (lightning ward)", "str_pl": "active pattern scrolls (lightning ward)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_lightning_ward", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_might_on",
+    "copy-from": "scroll_spell_might",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (might)", "str_pl": "active pattern scrolls (might)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_might", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_plants_on",
+    "copy-from": "scroll_spell_plants",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (overgrowth)", "str_pl": "active pattern scrolls (overgrowth)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_overgrowth", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_invis_on",
+    "copy-from": "scroll_spell_invis",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (shadowy shield)", "str_pl": "active pattern scrolls (shadowy shield)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_serpentine_shield", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_lightning_on",
+    "copy-from": "scroll_spell_lightning",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (shockstorm)", "str_pl": "active pattern scrolls (shockstorm)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_shockstorm", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_cleric_on",
+    "copy-from": "scroll_spell_cleric",
+    "type": "TOOL",
+    "name": { "str": "active pattern scroll (ward against evil)", "str_pl": "pattern scrolls (ward against evil)" },
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "turns_per_charge": 1,
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_ward_against_evil", "no_fail": true, "level": 0 }
   }
 ]

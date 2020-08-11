@@ -212,12 +212,33 @@
     "type": "talk_topic",
     "responses": [
       {
+        "text": "<CWH_intro_question>",
+        "topic": "BGSS_BLOOD_MAGE_2_IDEAS1",
+        "condition": { "npc_has_trait": "BGSS_BLOOD_MAGE_2" }
+      },
+      {
         "text": "<BGSS_intro_question>",
         "topic": "BGSS_BLOOD_MAGE_2_STORY1",
         "condition": { "npc_has_trait": "BGSS_BLOOD_MAGE_2" },
         "switch": true
       }
     ]
+  },
+  {
+    "id": "BGSS_BLOOD_MAGE_2_IDEAS1",
+    "type": "talk_topic",
+    "dynamic_line": "It wasn't anything supernatural, that much we're certain.  The Order had its suspicions that trouble was brewing, and we've been preparing for decades.  All the better to adapt and survive.  Still caught us a bit off-guard all the same, you don't just wake up one day and say \"today is the day it finally happens\" or anything like that.",
+    "responses": [
+      { "text": "Your order predicted this?", "topic": "BGSS_BLOOD_MAGE_2_IDEAS2" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_BLOOD_MAGE_2_IDEAS2",
+    "type": "talk_topic",
+    "dynamic_line": "Short answer?  No.  The elder magi had been at this since before any of us came to truly understand The Path, before the first cracks in The Veil let a little light slip through.  I don't know for sure what caused it, and I don't care.  We just lasted long enough for the preparations to finally pay off.  World's gotta end eventually after all, and we got to be there to watch.",
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
     "id": "BGSS_BLOOD_MAGE_2_STORY1",

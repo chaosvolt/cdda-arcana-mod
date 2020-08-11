@@ -269,7 +269,10 @@
     "description": "Flashbang on user, blinding anyone nearby.",
     "valid_targets": [ "ally", "hostile", "ground", "self" ],
     "message": "\"Ave martello!\"  The hammer gives off a golden light, that rises to a blinding flare and resounding bang!",
-    "extra_effects": [ { "id": "arcana_item_hammerzeit_attack", "hit_self": false }, { "id": "arcana_item_hammerzeit_dazzle", "hit_self": false } ],
+    "extra_effects": [
+      { "id": "arcana_item_hammerzeit_attack", "hit_self": false },
+      { "id": "arcana_item_hammerzeit_dazzle", "hit_self": false }
+    ],
     "effect": "flashbang",
     "flags": [ "NO_HANDS", "NO_LEGS" ],
     "min_damage": 40,
@@ -601,9 +604,7 @@
     "message": "Even after you look away from the orb, the visions linger in the back of your mind...",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "extra_effects": [
-      { "id": "arcana_item_orb_veil_wonder_hallu2" }
-    ],
+    "extra_effects": [ { "id": "arcana_item_orb_veil_wonder_hallu2" } ],
     "effect": "target_attack",
     "effect_str": "visuals",
     "min_duration": 90000,
@@ -817,7 +818,8 @@
     "message": "\"By order, we ascend beyond that of animals.\"  A wave of energy radiates outwards, fragments of otherworldly perspectives flooding your mind in the process!",
     "extra_effects": [
       { "id": "arcana_item_scroll_artifice_pain", "hit_self": true },
-      { "id": "arcana_item_scroll_artifice_paralyze", "hit_self": true }
+      { "id": "arcana_item_scroll_artifice_paralyze", "hit_self": true },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "min_damage": 100,
     "max_damage": 300,
@@ -865,7 +867,8 @@
       { "id": "arcana_item_scroll_destruction_noise", "hit_self": true },
       { "id": "arcana_item_scroll_destruction_attention", "hit_self": true },
       { "id": "arcana_item_scroll_destruction_cold", "hit_self": false },
-      { "id": "arcana_item_scroll_destruction_pulse", "hit_self": false }
+      { "id": "arcana_item_scroll_destruction_pulse", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
@@ -996,7 +999,8 @@
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "extra_effects": [
       { "id": "arcana_item_scroll_moon_blind", "hit_self": false },
-      { "id": "arcana_item_scroll_moon_event", "hit_self": false }
+      { "id": "arcana_item_scroll_moon_event", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "effect": "target_attack",
     "min_aoe": 24,
@@ -1045,7 +1049,8 @@
     "valid_targets": [ "self" ],
     "extra_effects": [
       { "id": "arcana_item_scroll_nature_plants", "hit_self": false },
-      { "id": "arcana_item_scroll_nature_wonder", "hit_self": false }
+      { "id": "arcana_item_scroll_nature_wonder", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
     "effect_str": "arcana_scroll_nature_effect",
@@ -1119,7 +1124,8 @@
     "extra_effects": [
       { "id": "arcana_item_scroll_subversion_shadows", "hit_self": false },
       { "id": "AEA_FATIGUE", "hit_self": false },
-      { "id": "arcana_item_scroll_subversion_teleport", "hit_self": false }
+      { "id": "arcana_item_scroll_subversion_teleport", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
@@ -1173,7 +1179,8 @@
     "extra_effects": [
       { "id": "arcana_item_scroll_sun_event", "hit_self": false },
       { "id": "arcana_item_scroll_sun_adrenaline", "hit_self": false },
-      { "id": "arcana_item_scroll_sun_timewarp", "hit_self": false }
+      { "id": "arcana_item_scroll_sun_timewarp", "hit_self": false },
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "effect": "target_attack",
     "min_aoe": 24,
@@ -1426,8 +1433,9 @@
     "type": "SPELL",
     "name": "Familiar Pact",
     "description": "Binds friendly summoned monsters to you, making it serve as a pet if it isn't already fully tamed.",
-    "message": "Faint wisps of mist fly from the talisman, to bring enlightenment through a bond with your own mind.",
+    "message": "Faint wisps of mist fly from the talisman, to bring enlightenment through a bond with your own mind, and guard them against hazards.",
     "effect": "target_attack",
+    "extra_effects": [ { "id": "arcana_item_pet_buff", "hit_self": false } ],
     "valid_targets": [ "ally" ],
     "targeted_monster_ids": [
       "mon_dark_wyrm_summoned",
@@ -1459,6 +1467,44 @@
     "//": "200 days, since the permanent spell flag doesn't seem to actually work for this.",
     "min_duration": 1728000000,
     "max_duration": 1728000000
+  },
+  {
+    "id": "arcana_item_pet_buff",
+    "type": "SPELL",
+    "name": "Familiar Pact Buff Effect",
+    "description": "Binds friendly summoned monsters to you, making it serve as a pet if it isn't already fully tamed.",
+    "message": "",
+    "effect": "target_attack",
+    "valid_targets": [ "ally" ],
+    "targeted_monster_ids": [
+      "mon_dark_wyrm_summoned",
+      "mon_zombie_fiend_summoned",
+      "mon_jabberwock_summoned",
+      "mon_homunculus_summoned",
+      "mon_thing_summoned",
+      "mon_dog_skeleton_summoned",
+      "mon_skeleton_summoned",
+      "mon_vortex_summoned",
+      "mon_yugg_summoned",
+      "mon_kreck_summoned",
+      "mon_triffid_summoned",
+      "mon_flesh_angel_summoned",
+      "mon_hunting_horror_summoned",
+      "mon_mi_go_summoned",
+      "mon_flying_polyp_summoned",
+      "mon_shoggoth_summoned",
+      "mon_shadow_summoned",
+      "mon_shadow_snake_summoned",
+      "mon_centipede_giant_summoned"
+    ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "effect_str": "talisman_pet_buff",
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "base_casting_time": 5,
+    "final_casting_time": 5,
+    "min_duration": 8640000,
+    "max_duration": 8640000
   },
   {
     "id": "arcana_item_thunder_gauntlets_taze",

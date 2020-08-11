@@ -474,6 +474,19 @@
   },
   {
     "type": "effect_type",
+    "id": "talisman_pet_buff",
+    "name": [ "Warded" ],
+    "removes_effects": [ "bleed", "infected", "bite", "stunned", "downed", "poison", "badpoison", "smoke", "boomered", "glowing", "taint", "visuals" ],
+    "blocks_effects": [ "bleed", "infected", "bite", "stunned", "downed", "poison", "badpoison", "smoke", "boomered", "glowing", "taint", "visuals" ],
+    "flags": [
+      "EFFECT_ELECTRIC_IMMUNE",
+      "EFFECT_ACID_IMMUNE",
+      "EFFECT_COLD_IMMUNE",
+      "EFFECT_BIO_IMMUNE"
+    ]
+  },
+  {
+    "type": "effect_type",
     "id": "dragonblood_clarity",
     "name": [ "Revenant Blood" ],
     "desc": [ "Immunity to food poisoning, parasites, and fungus.  Increased hunger and thirst gain." ],
