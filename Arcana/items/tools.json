@@ -263,23 +263,10 @@
     "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and slow time momentarily, along with conjuring brilliant light.",
     "price": 12000,
     "price_postapoc": 4000,
-    "use_action": {
-      "target": "scroll_sun_on",
-      "msg": "You unroll the divine scroll of light…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_sun_on",
-    "copy-from": "scroll_sun",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of light (active)", "str_pl": "divine scrolls of light (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_sun", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of light…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_sun", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_moon",
@@ -289,23 +276,10 @@
     "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will shroud the area in darkness, striking enemies blind temporarily.",
     "price": 12000,
     "price_postapoc": 4000,
-    "use_action": {
-      "target": "scroll_moon_on",
-      "msg": "You unroll the divine scroll of darkness…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_moon_on",
-    "copy-from": "scroll_moon",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of darkness (active)", "str_pl": "divine scrolls of darkness (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_moon", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of darkness…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_moon", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_artiface",
@@ -315,23 +289,10 @@
     "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind creatures to your will temporarily.  The sudden impact of projecting your mind outwards will painfully stun you, however.",
     "price": 14000,
     "price_postapoc": 5000,
-    "use_action": {
-      "target": "scroll_artiface_on",
-      "msg": "You unroll the divine scroll of command…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_artiface_on",
-    "copy-from": "scroll_artiface",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of command (active)", "str_pl": "divine scrolls of command (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_artifice", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of command…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_artifice", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_nature",
@@ -341,23 +302,10 @@
     "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will conjure a powerful healing spell, along with causing life to grow wild over the area.  However, using it risks mutating in abnormal ways.",
     "price": 14000,
     "price_postapoc": 5000,
-    "use_action": {
-      "target": "scroll_nature_on",
-      "msg": "You unroll the divine scroll of regrowth…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_nature_on",
-    "copy-from": "scroll_nature",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of regrowth (active)", "str_pl": "divine scrolls of regrowth (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_nature", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of regrowth…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_nature", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_destruction",
@@ -367,23 +315,10 @@
     "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a thunderous boom, toppling structures and harming creatures all around.  This will not only risk burning the area to the ground, but also attract otherworldly attention.",
     "price": 16000,
     "price_postapoc": 6000,
-    "use_action": {
-      "target": "scroll_destruction_on",
-      "msg": "You unroll the divine scroll of sundering…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_destruction_on",
-    "copy-from": "scroll_destruction",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of sundering (active)", "str_pl": "divine scrolls of sundering (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_destruction", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of sundering…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_destruction", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_subversion",
@@ -393,23 +328,10 @@
     "description": "This is a scroll, with odd writing and peculiar swirling symbols on it, representing an otherworldly trickster god.  Using it will teleport you away, leaving unearthly hazards where you once were.  While you will always arrive at your destination safely, you might suffer other consequences.",
     "price": 16000,
     "price_postapoc": 6000,
-    "use_action": {
-      "target": "scroll_subversion_on",
-      "msg": "You unroll the divine scroll of discord…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_subversion_on",
-    "copy-from": "scroll_subversion",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of discord (active)", "str_pl": "divine scrolls of discord (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_subversion", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of discord…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_subversion", "no_fail": true, "level": 0 }
   },
   {
     "id": "summon_kreck",
@@ -837,23 +759,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
     "//": "Pattern scrolls were extremely rare pre-cataclysm as spell development was in its infancy, but now they're all quite useful in various ways.  Divine pattern scrolls especially were almost non-existent.",
     "price_postapoc": 12000,
-    "use_action": {
-      "target": "scroll_spell_sun_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_sun_on",
-    "copy-from": "scroll_spell_sun",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (consecrate)", "str_pl": "pattern scrolls (consecrate)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_consecrate", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_consecrate", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_moon",
@@ -862,23 +771,10 @@
     "name": { "str": "pattern scroll (ward against cold)", "str_pl": "pattern scrolls (ward against cold)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will protect against the cold, and all its side effects.\"",
     "price_postapoc": 9000,
-    "use_action": {
-      "target": "scroll_spell_moon_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_moon_on",
-    "copy-from": "scroll_spell_moon",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (ward against cold)", "str_pl": "active pattern scrolls (ward against cold)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_frost_armor", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_frost_armor", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_artiface",
@@ -887,23 +783,10 @@
     "name": { "str": "pattern scroll (sundering quake)", "str_pl": "pattern scrolls (sundering quake)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring down structures and bury them in rubble, though creatures will be left unharmed.\"",
     "price_postapoc": 10000,
-    "use_action": {
-      "target": "scroll_spell_artiface_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_artiface_on",
-    "copy-from": "scroll_spell_artiface",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (sundering quake)", "str_pl": "active pattern scrolls (sundering quake)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_sundering_quake", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_sundering_quake", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_nature",
@@ -912,23 +795,10 @@
     "name": { "str": "pattern scroll (elemental burst)", "str_pl": "pattern scrolls (elemental burst)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect, with double damage for enemies caught in the center.\"",
     "price_postapoc": 10000,
-    "use_action": {
-      "target": "scroll_spell_nature_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_nature_on",
-    "copy-from": "scroll_spell_nature",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (elemental burst)", "str_pl": "active pattern scrolls (elemental burst)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_elemental_burst", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_elemental_burst", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_destruction",
@@ -937,23 +807,10 @@
     "name": { "str": "pattern scroll (summon centipedes)", "str_pl": "pattern scrolls (summon centipedes)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
     "price_postapoc": 8000,
-    "use_action": {
-      "target": "scroll_spell_destruction_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_destruction_on",
-    "copy-from": "scroll_spell_destruction",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (summon centipedes)", "str_pl": "active pattern scrolls (summon centipedes)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_summon_giant_centipedes", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_summon_giant_centipedes", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_subversion",
@@ -962,23 +819,10 @@
     "name": { "str": "pattern scroll (eclipse)", "str_pl": "pattern scrolls (eclipse)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring forth monsters and darkness, in exchange for a temporary boost of raw power with which to stalk the night.\"",
     "price_postapoc": 12000,
-    "use_action": {
-      "target": "scroll_spell_subversion_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_subversion_on",
-    "copy-from": "scroll_spell_subversion",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (eclipse)", "str_pl": "active pattern scrolls (eclipse)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_eclipse", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_eclipse", "no_fail": true, "level": 0 }
   },
   {
     "id": "bloodaxe",
@@ -1059,23 +903,10 @@
     "//": "Magic seals are all explicitly a post-cataclysm development, as this path towards development of natural magic did not exist without more monsters to study.",
     "price_postapoc": 4500,
     "color": "light_gray",
-    "use_action": {
-      "target": "totem_elecresist_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_elecresist_on",
-    "copy-from": "totem_elecresist",
-    "type": "TOOL",
-    "name": { "str": "Amber Seal: Lightning Ward (active)", "str_pl": "Amber Seals: Lightning Ward (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_lightning_ward", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_lightning_ward", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_cleric",
@@ -1085,23 +916,10 @@
     "description": "An small winged figurine, carved from a strange iridescent stone.  Activate it to focus your mind and create a magic sign, granting protection against various anomalous effects.  This will expend the item entirely.",
     "price_postapoc": 4500,
     "color": "light_green",
-    "use_action": {
-      "target": "totem_cleric_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_cleric_on",
-    "copy-from": "totem_cleric",
-    "type": "TOOL",
-    "name": { "str": "Angelic Seal: Ward Against Evil (active)", "str_pl": "Angelic Seals: Ward Against Evil (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_ward_against_evil", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_ward_against_evil", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_agile",
@@ -1111,23 +929,10 @@
     "description": "A small set of dice carved from otherworldly bones.  Activate it to focus your mind and create a magic sign, granting a temporary agility effect.  This will expend the item entirely.",
     "price_postapoc": 5500,
     "color": "white",
-    "use_action": {
-      "target": "totem_agile_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_agile_on",
-    "copy-from": "totem_agile",
-    "type": "TOOL",
-    "name": { "str": "Bone Seal: Agility (active)", "str_pl": "Bone Seals: Agility (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_agility", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_agility", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_confusion",
@@ -1137,23 +942,10 @@
     "description": "A small token carved from a wicked stinger.  Activate it to focus your mind and create a magic sign, confusing monsters all around you.  This will expend the item entirely.",
     "price_postapoc": 3500,
     "color": "dark_gray",
-    "use_action": {
-      "target": "totem_confusion_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_confusion_on",
-    "copy-from": "totem_confusion",
-    "type": "TOOL",
-    "name": { "str": "Chitinous Seal: Confuse Monsters (active)", "str_pl": "Chitinous Seals: Confuse Monsters (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_confuse_monster", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_confuse_monster", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_strength",
@@ -1163,23 +955,10 @@
     "description": "A miniature dagger carved from strange ivory.  Activate it to focus your mind and create a magic sign, granting a temporary boost to strength.  This will expend the item entirely.",
     "price_postapoc": 5500,
     "color": "white",
-    "use_action": {
-      "target": "totem_strength_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_strength_on",
-    "copy-from": "totem_strength",
-    "type": "TOOL",
-    "name": { "str": "Dagger Seal: Might (active)", "str_pl": "Dagger Seals: Might (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_might", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_might", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_clairvoyance",
@@ -1189,23 +968,10 @@
     "description": "A small cabochon of dark, shimmering ivory.  Activate it to focus your mind and create a magic sign, granting a temporary clairvoyance effect.  This will expend the item entirely.",
     "price_postapoc": 4500,
     "color": "light_gray",
-    "use_action": {
-      "target": "totem_clairvoyance_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_clairvoyance_on",
-    "copy-from": "totem_clairvoyance",
-    "type": "TOOL",
-    "name": { "str": "Eternity Seal: Clairvoyance (active)", "str_pl": "Eternity Seals: Clairvoyance (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_clairvoyance", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_clairvoyance", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_free_action",
@@ -1215,23 +981,10 @@
     "description": "A small ornament of vibrant purple petals.  Activate it to focus your mind and create a magic sign, granting protection against paralytic effects and other hindrances.  This will expend the item entirely.",
     "price_postapoc": 4500,
     "color": "magenta",
-    "use_action": {
-      "target": "totem_free_action_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_free_action_on",
-    "copy-from": "totem_free_action",
-    "type": "TOOL",
-    "name": { "str": "Indigo Seal: Free Action (active)", "str_pl": "Indigo Seals: Free Action (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_free_action", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_free_action", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_invis",
@@ -1242,23 +995,10 @@
     "description": "A piece of unnaturally dark stone, shaped into an eccentric design.  Activate it to focus your mind and create a magic sign, granting a temporary defensive effect that will lash out at attackers with living shadows.  This will expend the item entirely.",
     "price_postapoc": 4000,
     "color": "dark_gray",
-    "use_action": {
-      "target": "totem_invis_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_invis_on",
-    "copy-from": "totem_invis",
-    "type": "TOOL",
-    "name": { "str": "Obsidian Seal: Shadowy Shield (active)", "str_pl": "Obsidian Seals: Shadowy Shield (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_serpentine_shield", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_serpentine_shield", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_plants",
@@ -1268,23 +1008,10 @@
     "description": "A small ornament of woven petals, an otherworldly vibrant red in hue.  Activate it to focus your mind and create a magic sign, and bring forth the forest.  This will expend the item entirely.",
     "price_postapoc": 4000,
     "color": "red",
-    "use_action": {
-      "target": "totem_plants_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_plants_on",
-    "copy-from": "totem_plants",
-    "type": "TOOL",
-    "name": { "str": "Scarlet Seal: Overgrowth (active)", "str_pl": "Scarlet Seals: Overgrowth (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_overgrowth", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_overgrowth", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_flamearmor",
@@ -1294,23 +1021,10 @@
     "description": "A shimmering disc carved from a seemingly meteoric material.  Activate it to focus your mind and create a magic sign, gaining temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  This will expend the item entirely.",
     "price_postapoc": 4500,
     "color": "dark_gray",
-    "use_action": {
-      "target": "totem_flamearmor_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_flamearmor_on",
-    "copy-from": "totem_flamearmor",
-    "type": "TOOL",
-    "name": { "str": "Starstone Seal: Ward Against Heat (active)", "str_pl": "Starstone Seals: Ward Against Heat (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_heat_ward", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_heat_ward", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_insight",
@@ -1320,23 +1034,10 @@
     "description": "A curiously-refractive gem carved from an unearthly blue orb.  Activate it to focus your mind and create a magic sign, granting a temporary boost to perception.  This will expend the item entirely.",
     "price_postapoc": 5500,
     "color": "white",
-    "use_action": {
-      "target": "totem_insight_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_insight_on",
-    "copy-from": "totem_insight",
-    "type": "TOOL",
-    "name": { "str": "Tear Seal: Insight (active)", "str_pl": "Tear Seals: Insight (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_insight", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_insight", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_clarity",
@@ -1346,23 +1047,10 @@
     "description": "A sharp needle carved from a monstrous thorn.  Activate it to focus your mind and create a magic sign, granting protection against parasites and the Mycus.  This will expend the item entirely.",
     "price_postapoc": 4500,
     "color": "magenta",
-    "use_action": {
-      "target": "totem_clarity_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_clarity_on",
-    "copy-from": "totem_clarity",
-    "type": "TOOL",
-    "name": { "str": "Thorn Seal: Clarity of Blood (active)", "str_pl": "Thorn Seals: Clarity of Blood (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_clarity_blood", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_clarity_blood", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_lightning",
@@ -1372,23 +1060,10 @@
     "description": "A small sliver of strange crystal, flickering as though distant storms rage within.  Activate it to focus your mind and create a magic sign, conjuring lightning all around you.  This will expend the item entirely.",
     "price_postapoc": 5000,
     "color": "pink",
-    "use_action": {
-      "target": "totem_lightning_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_lightning_on",
-    "copy-from": "totem_lightning",
-    "type": "TOOL",
-    "name": { "str": "Thunder Seal: Shockstorm (active)", "str_pl": "Thunder Seals: Shockstorm (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_shockstorm", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_shockstorm", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_heal",
@@ -1398,23 +1073,10 @@
     "description": "A tangled knot of flowing, molded bone.  Activate it to focus your mind and create a magic sign, and heal the body slightly.  This will expend the item entirely.",
     "price_postapoc": 6000,
     "color": "white",
-    "use_action": {
-      "target": "totem_heal_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_heal_on",
-    "copy-from": "totem_heal",
-    "type": "TOOL",
-    "name": { "str": "Woven Seal: Healing (active)", "str_pl": "Woven Seals: Healing (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_healing", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_healing", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_acidspray",
@@ -1424,23 +1086,10 @@
     "description": "A carved scale of acrid-smelling, otherworldly flesh.  Activate it to focus your mind and create a magic sign, conjuring a spray of acid.  This will expend the item entirely.",
     "price_postapoc": 5000,
     "color": "blue",
-    "use_action": {
-      "target": "totem_acidspray_on",
-      "msg": "The magic seal flickers and radiates with energy.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "totem_acidspray_on",
-    "copy-from": "totem_acidspray",
-    "type": "TOOL",
-    "name": { "str": "Wyrm Seal: Acid Spray (active)", "str_pl": "Wyrm Seals: Acid Spray (active)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_magic_conjure_acid", "no_fail": true, "level": 5 }
+    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_conjure_acid", "no_fail": true, "level": 5 }
   },
   {
     "id": "scroll_spell_agile",
@@ -1451,23 +1100,10 @@
     "//": "Unlike divine pattern scrolls, basic pattern scrolls were rare but at least existed pre-cataclysm.",
     "price": 300000,
     "price_postapoc": 11000,
-    "use_action": {
-      "target": "scroll_spell_agile_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_agile_on",
-    "copy-from": "scroll_spell_agile",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (agility)", "str_pl": "active pattern scrolls (agility)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_agility", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_agility", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_clairvoyance",
@@ -1477,23 +1113,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an ivory halo, granting you sight beyond sight.\"",
     "price": 300000,
     "price_postapoc": 9000,
-    "use_action": {
-      "target": "scroll_spell_clairvoyance_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_clairvoyance_on",
-    "copy-from": "scroll_spell_clairvoyance",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (clairvoyance)", "str_pl": "active pattern scrolls (clairvoyance)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clairvoyance", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clairvoyance", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_clarity",
@@ -1503,23 +1126,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against parasites and the Mycus.\"",
     "price": 300000,
     "price_postapoc": 9000,
-    "use_action": {
-      "target": "scroll_spell_clarity_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_clarity_on",
-    "copy-from": "scroll_spell_clarity",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (clarity of blood)", "str_pl": "active pattern scrolls (clarity of blood)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clarity_blood", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clarity_blood", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_confusion",
@@ -1529,23 +1139,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will stun all hostiles in the area around you.\"",
     "price": 300000,
     "price_postapoc": 7000,
-    "use_action": {
-      "target": "scroll_spell_confusion_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_confusion_on",
-    "copy-from": "scroll_spell_confusion",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (confuse monsters)", "str_pl": "active pattern scrolls (confuse monsters)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_confuse_monster", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_confuse_monster", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_acidspray",
@@ -1555,23 +1152,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
     "price": 300000,
     "price_postapoc": 10000,
-    "use_action": {
-      "target": "scroll_spell_acidspray_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_acidspray_on",
-    "copy-from": "scroll_spell_acidspray",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (conjure acid)", "str_pl": "active pattern scrolls (conjure acid)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_conjure_acid", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_conjure_acid", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_flame_armor",
@@ -1581,23 +1165,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
     "price": 300000,
     "price_postapoc": 9000,
-    "use_action": {
-      "target": "scroll_spell_flame_armor_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_flame_armor_on",
-    "copy-from": "scroll_spell_flame_armor",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (ward against heat)", "str_pl": "active pattern scrolls (ward against heat)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_flame_armor", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_flame_armor", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_free_action",
@@ -1607,23 +1178,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against paralytic effects and other hindrances.\"",
     "price": 300000,
     "price_postapoc": 9000,
-    "use_action": {
-      "target": "scroll_spell_free_action_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_free_action_on",
-    "copy-from": "scroll_spell_free_action",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (free action)", "str_pl": "active pattern scrolls (free action)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_free_action", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_free_action", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_heal",
@@ -1633,23 +1191,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
     "price": 300000,
     "price_postapoc": 12000,
-    "use_action": {
-      "target": "scroll_spell_heal_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_heal_on",
-    "copy-from": "scroll_spell_heal",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (healing)", "str_pl": "active pattern scrolls (healing)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_healing", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_healing", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_insight",
@@ -1659,23 +1204,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to perception.\"",
     "price": 300000,
     "price_postapoc": 11000,
-    "use_action": {
-      "target": "scroll_spell_insight_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_insight_on",
-    "copy-from": "scroll_spell_insight",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (insight)", "str_pl": "active pattern scrolls (insight)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_insight", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_insight", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_elecresist",
@@ -1685,23 +1217,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
     "price": 300000,
     "price_postapoc": 9000,
-    "use_action": {
-      "target": "scroll_spell_elecresist_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_elecresist_on",
-    "copy-from": "scroll_spell_elecresist",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (lightning ward)", "str_pl": "active pattern scrolls (lightning ward)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_lightning_ward", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_lightning_ward", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_might",
@@ -1711,23 +1230,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to strength.\"",
     "price": 300000,
     "price_postapoc": 11000,
-    "use_action": {
-      "target": "scroll_spell_might_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_might_on",
-    "copy-from": "scroll_spell_might",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (might)", "str_pl": "active pattern scrolls (might)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_might", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_might", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_plants",
@@ -1737,23 +1243,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
     "price": 300000,
     "price_postapoc": 8000,
-    "use_action": {
-      "target": "scroll_spell_plants_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_plants_on",
-    "copy-from": "scroll_spell_plants",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (overgrowth)", "str_pl": "active pattern scrolls (overgrowth)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_overgrowth", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_overgrowth", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_invis",
@@ -1764,23 +1257,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike your attackers blind.\"",
     "price": 300000,
     "price_postapoc": 8000,
-    "use_action": {
-      "target": "scroll_spell_invis_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_invis_on",
-    "copy-from": "scroll_spell_invis",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (shadowy shield)", "str_pl": "active pattern scrolls (shadowy shield)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_serpentine_shield", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_serpentine_shield", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_lightning",
@@ -1790,23 +1270,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, harming any hostiles that are close enough.\"",
     "price": 300000,
     "price_postapoc": 10000,
-    "use_action": {
-      "target": "scroll_spell_lightning_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_lightning_on",
-    "copy-from": "scroll_spell_lightning",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (shockstorm)", "str_pl": "active pattern scrolls (shockstorm)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_shockstorm", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_shockstorm", "no_fail": true, "level": 0 }
   },
   {
     "id": "scroll_spell_cleric",
@@ -1816,23 +1283,10 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  This has a chance of failure, but repeated use will steadily improve the associated Magic Sign, and make casting them less taxing.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
     "price": 300000,
     "price_postapoc": 9000,
-    "use_action": {
-      "target": "scroll_spell_cleric_on",
-      "msg": "You unroll the pattern scroll…",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    }
-  },
-  {
-    "id": "scroll_spell_cleric_on",
-    "copy-from": "scroll_spell_cleric",
-    "type": "TOOL",
-    "name": { "str": "active pattern scroll (ward against evil)", "str_pl": "pattern scrolls (ward against evil)" },
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_ward_against_evil", "no_fail": true, "level": 0 }
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_ward_against_evil", "no_fail": true, "level": 0 }
   },
   {
     "id": "candle_warding",
@@ -1931,8 +1385,8 @@
           "condition": "ALWAYS",
           "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER" ],
           "values": [
-            { "value": "INTELLIGENCE", "add": 2 },
-            { "value": "PERCEPTION", "add": 1 },
+            { "value": "INTELLIGENCE", "add": 4 },
+            { "value": "PERCEPTION", "add": 2 },
             { "value": "REGEN_MANA", "multiply": 0.25 }
           ]
         }
@@ -2216,7 +1670,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "values": [ { "value": "INTELLIGENCE", "add": 2 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
+          "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
         }
       ]
     },
