@@ -155,8 +155,8 @@
     "changes_to": [ "ARCANA_DRAGONSCALES" ],
     "types": [ "SKIN" ],
     "stealth_modifier": -5,
-    "wet_protection": [ { "part": "arm_l", "ignored": 4 }, { "part": "arm_r", "ignored": 4 }, { "part": "torso", "ignored": 10 } ],
-    "armor": [ { "parts": [ "arm_l", "arm_r", "torso" ], "cut": 2, "stab": 1 } ]
+    "wet_protection": [ { "part": "ARM_L", "ignored": 4 }, { "part": "ARM_R", "ignored": 4 }, { "part": "TORSO", "ignored": 10 } ],
+    "armor": [ { "parts": [ "ARM_L", "ARM_R", "TORSO" ], "cut": 2, "stab": 1 } ]
   },
   {
     "type": "mutation",
@@ -174,16 +174,16 @@
     "types": [ "SKIN" ],
     "stealth_modifier": -20,
     "wet_protection": [
-      { "part": "head", "ignored": 3 },
-      { "part": "leg_l", "ignored": 10 },
-      { "part": "leg_r", "ignored": 10 },
-      { "part": "foot_l", "ignored": 3 },
-      { "part": "foot_r", "ignored": 3 },
-      { "part": "arm_l", "ignored": 9 },
-      { "part": "arm_r", "ignored": 9 },
-      { "part": "hand_l", "ignored": 2 },
-      { "part": "hand_r", "ignored": 2 },
-      { "part": "torso", "ignored": 20 }
+      { "part": "HEAD", "ignored": 3 },
+      { "part": "LEG_L", "ignored": 10 },
+      { "part": "LEG_R", "ignored": 10 },
+      { "part": "FOOT_L", "ignored": 3 },
+      { "part": "FOOT_R", "ignored": 3 },
+      { "part": "ARM_L", "ignored": 9 },
+      { "part": "ARM_R", "ignored": 9 },
+      { "part": "HAND_L", "ignored": 2 },
+      { "part": "HAND_R", "ignored": 2 },
+      { "part": "TORSO", "ignored": 20 }
     ],
     "armor": [ { "parts": "ALL", "bash": 1, "cut": 4, "stab": 2, "bullet": 1, "acid": 3 } ]
   },
@@ -299,11 +299,11 @@
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
     "changes_to": [ "ARCANA_DRAGONWINGS" ],
-    "encumbrance_always": [ [ "torso", 5 ] ],
-    "encumbrance_covered": [ [ "torso", 5 ] ],
+    "encumbrance_always": [ [ "TORSO", 5 ] ],
+    "encumbrance_covered": [ [ "TORSO", 5 ] ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "WINGS" ],
-    "restricts_gear": [ "torso" ],
+    "restricts_gear": [ "TORSO" ],
     "allow_soft_gear": true
   },
   {
@@ -319,10 +319,10 @@
     "prereqs": [ "ARCANA_SCALYWINGS" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
-    "encumbrance_covered": [ [ "torso", 5 ] ],
+    "encumbrance_covered": [ [ "TORSO", 5 ] ],
     "types": [ "WINGS" ],
     "max_stamina_modifier": 1.1,
-    "restricts_gear": [ "torso" ],
+    "restricts_gear": [ "TORSO" ],
     "allow_soft_gear": true,
     "passive_mods": { "str_mod": 3 }
   },
@@ -339,8 +339,8 @@
     "butchering_quality": 6,
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
-    "encumbrance_always": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
-    "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
+    "encumbrance_always": [ [ "HAND_L", 5 ], [ "HAND_R", 5 ] ],
+    "encumbrance_covered": [ [ "HAND_L", 5 ], [ "HAND_R", 5 ] ],
     "rand_cut_bonus": { "min": 2, "max": 6 }
   },
   {
@@ -359,7 +359,7 @@
     "attacks": {
       "attack_text_u": "You sink your teeth into %s",
       "attack_text_npc": "%1$s sinks their teeth into %2$s",
-      "body_part": "mouth",
+      "body_part": "MOUTH",
       "chance": 20,
       "strength_damage": { "damage_type": "stab", "amount": 2 }
     }
@@ -380,12 +380,12 @@
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "TEETH", "MUZZLE", "facial_hair" ],
-    "restricts_gear": [ "mouth" ],
+    "restricts_gear": [ "MOUTH" ],
     "social_modifiers": { "intimidate": 20 },
     "attacks": {
       "attack_text_u": "You savagely tear into %s with your jaws",
       "attack_text_npc": "%1$s savagely tear into %2$s with their jaws",
-      "body_part": "mouth",
+      "body_part": "MOUTH",
       "chance": 15,
       "strength_damage": { "damage_type": "stab", "amount": 4 }
     }
@@ -406,9 +406,9 @@
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_DRAGONLEGS" ],
     "types": [ "LEGS" ],
-    "encumbrance_always": [ [ "leg_l", 10 ], [ "leg_r", 10 ], [ "foot_l", 10 ], [ "foot_r", 10 ] ],
-    "encumbrance_covered": [ [ "leg_l", 10 ], [ "leg_r", 10 ], [ "foot_l", 10 ], [ "foot_r", 10 ] ],
-    "restricts_gear": [ "foot_l", "foot_r" ],
+    "encumbrance_always": [ [ "LEG_L", 10 ], [ "LEG_R", 10 ], [ "FOOT_L", 10 ], [ "FOOT_R", 10 ] ],
+    "encumbrance_covered": [ [ "LEG_L", 10 ], [ "LEG_R", 10 ], [ "FOOT_L", 10 ], [ "FOOT_R", 10 ] ],
+    "restricts_gear": [ "FOOT_L", "FOOT_R" ],
     "destroys_gear": true,
     "movecost_obstacle_modifier": 1.3,
     "movecost_flatground_modifier": 0.9,
@@ -437,9 +437,9 @@
     "prereqs": [ "ARCANA_SCALYLEGS" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "types": [ "LEGS" ],
-    "encumbrance_always": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "foot_l", 5 ], [ "foot_r", 5 ] ],
-    "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "foot_l", 5 ], [ "foot_r", 5 ] ],
-    "restricts_gear": [ "foot_l", "foot_r" ],
+    "encumbrance_always": [ [ "LEG_L", 5 ], [ "LEG_R", 5 ], [ "FOOT_L", 5 ], [ "FOOT_R", 5 ] ],
+    "encumbrance_covered": [ [ "LEG_L", 5 ], [ "LEG_R", 5 ], [ "FOOT_L", 5 ], [ "FOOT_R", 5 ] ],
+    "restricts_gear": [ "FOOT_L", "FOOT_R" ],
     "destroys_gear": true,
     "movecost_obstacle_modifier": 1.2,
     "movecost_flatground_modifier": 0.8,
@@ -467,7 +467,7 @@
     "changes_to": [ "ARCANA_DRAGONTAIL" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "TAIL" ],
-    "restricts_gear": [ "leg_l", "leg_r" ],
+    "restricts_gear": [ "LEG_L", "LEG_R" ],
     "allow_soft_gear": true,
     "attacks": {
       "attack_text_u": "You whip %s with your tail",
@@ -490,7 +490,7 @@
     "prereqs": [ "ARCANA_SCALYTAIL" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "TAIL" ],
-    "restricts_gear": [ "leg_l", "leg_r" ],
+    "restricts_gear": [ "LEG_L", "LEG_R" ],
     "allow_soft_gear": true,
     "attacks": {
       "attack_text_u": "You lash %s with your tail",
@@ -514,9 +514,9 @@
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "types": [ "HORNS" ],
-    "restricts_gear": [ "head" ],
+    "restricts_gear": [ "HEAD" ],
     "allow_soft_gear": true,
-    "armor": [ { "parts": "head", "bash": 7, "cut": 9, "stab": 5, "bullet": 3 } ],
+    "armor": [ { "parts": "HEAD", "bash": 7, "cut": 9, "stab": 5, "bullet": 3 } ],
     "attacks": {
       "attack_text_u": "You headbutt %s",
       "attack_text_npc": "%1$s headbutts %2$s",
@@ -539,9 +539,9 @@
     "prereqs2": [ "ARCANA_DRAGONLEGS" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "wet_protection": [ { "part": "torso", "ignored": 15 } ],
-    "encumbrance_always": [ [ "torso", 5 ] ],
-    "armor": [ { "parts": "torso", "bash": 5, "cut": 15, "stab": 10, "bullet": 5 } ]
+    "wet_protection": [ { "part": "TORSO", "ignored": 15 } ],
+    "encumbrance_always": [ [ "TORSO", 5 ] ],
+    "armor": [ { "parts": "TORSO", "bash": 5, "cut": 15, "stab": 10, "bullet": 5 } ]
   },
   {
     "type": "mutation",

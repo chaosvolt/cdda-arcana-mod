@@ -18,7 +18,7 @@
       ]
     },
     "extend": { "flags": [ "ONLY_ONE", "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF", "AURA", "NO_TAKEOFF" ] },
-    "covers": [ "eyes" ]
+    "covers": [ "EYES" ]
   },
   {
     "id": "halo_berserk",
@@ -34,10 +34,7 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
-          "values": [
-            { "value": "STRENGTH", "add": 4 },
-            { "value": "DEXTERITY", "add": 2 }
-          ],
+          "values": [ { "value": "STRENGTH", "add": 2 }, { "value": "DEXTERITY", "add": 1 } ],
           "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
           "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
         }
@@ -195,7 +192,7 @@
     "symbol": "[",
     "looks_like": "leather_pouch",
     "color": "light_red",
-    "covers": [ "torso" ],
+    "covers": [ "TORSO" ],
     "coverage": 15,
     "encumbrance": 15,
     "material_thickness": 1,

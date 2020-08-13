@@ -1477,18 +1477,7 @@
     "harvest": "exempt",
     "special_attacks": [ [ "DISAPPEAR", 200 ] ],
     "death_function": [ "DISAPPEAR" ],
-    "flags": [
-      "PACIFIST",
-      "SEES",
-      "NOHEAD",
-      "HARDTOSHOOT",
-      "WEBWALK",
-      "FLIES",
-      "PLASTIC",
-      "ACIDPROOF",
-      "NO_BREATHE",
-      "NOGIB"
-    ]
+    "flags": [ "PACIFIST", "SEES", "NOHEAD", "HARDTOSHOOT", "WEBWALK", "FLIES", "PLASTIC", "ACIDPROOF", "NO_BREATHE", "NOGIB" ]
   },
   {
     "id": "mon_shadow_snake_summoned",

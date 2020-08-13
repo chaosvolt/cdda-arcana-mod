@@ -93,7 +93,12 @@
         "sprite_height": 64,
         "sprite_offset_x": -20,
         "sprite_offset_y": -32,
-        "tiles": [ { "id": "mon_seraphic_shade", "fg": 0 }, { "id": "mon_seraphic_shade_fake", "fg": 0 }, { "id": "mon_dracolich", "fg": 1 }, { "id": "corpse_mon_dracolich", "fg": 2 } ]
+        "tiles": [
+          { "id": "mon_seraphic_shade", "fg": 0 },
+          { "id": "mon_seraphic_shade_fake", "fg": 0 },
+          { "id": "mon_dracolich", "fg": 1 },
+          { "id": "corpse_mon_dracolich", "fg": 2 }
+        ]
       }
     ]
   }

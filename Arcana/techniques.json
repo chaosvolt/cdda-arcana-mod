@@ -11,9 +11,7 @@
     "weighting": 2,
     "stunned_target": true,
     "down_dur": 2,
-    "mult_bonuses": [
-	{ "stat": "movecost", "scale": 0.8 }
-	]
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.8 } ]
   },
   {
     "type": "technique",
@@ -27,9 +25,7 @@
     "weighting": 3,
     "stunned_target": true,
     "disarms": true,
-    "mult_bonuses": [
-	{ "stat": "movecost", "scale": 0.8 }
-	]
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.8 } ]
   },
   {
     "type": "technique",
@@ -54,9 +50,7 @@
     "dodge_counter": true,
     "crit_ok": true,
     "stun_dur": 1,
-    "mult_bonuses": [
-	{ "stat": "movecost", "scale": 0.0 }
-	]
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ]
   },
   {
     "type": "technique",
@@ -70,9 +64,7 @@
     "block_counter": true,
     "crit_ok": true,
     "stun_dur": 1,
-    "mult_bonuses": [
-	{ "stat": "movecost", "scale": 0.0 }
-	]
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ]
   },
   {
     "type": "technique",
@@ -86,9 +78,7 @@
     "crit_ok": true,
     "stun_dur": 1,
     "down_dur": 1,
-    "mult_bonuses": [
-	{ "stat": "movecost", "scale": 0.0 }
-	]
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ]
   },
   {
     "type": "technique",
@@ -96,15 +86,10 @@
     "name": "Flame Strike",
     "unarmed_allowed": true,
     "melee_allowed": true,
-    "flat_bonuses": [
-	{ "stat": "damage", "type": "heat", "scale": 30 }
-	],
+    "flat_bonuses": [ { "stat": "damage", "type": "heat", "scale": 30 } ],
     "crit_tec": true,
     "weighting": -25,
-    "messages": [
-      "Your blade sears through %s with a brilliant glow",
-      "<npcname>'s blade sears through %s with a brilliant glow"
-    ],
+    "messages": [ "Your blade sears through %s with a brilliant glow", "<npcname>'s blade sears through %s with a brilliant glow" ],
     "description": "+30 fire damage, crit only"
   }
 ]

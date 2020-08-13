@@ -2,7 +2,7 @@
   {
     "id": "MISSION_FIND_HERMIT_1",
     "type": "mission_definition",
-    "name": "Reach Standing Stones",
+    "name": { "str": "Reach Standing Stones" },
     "description": "Lead your companion to an area in the forest, suspected of being host to supernatural activity.",
     "goal": "MGOAL_GO_TO_TYPE",
     "difficulty": 2,
@@ -29,7 +29,7 @@
   {
     "id": "MISSION_FIND_HERMIT_2",
     "type": "mission_definition",
-    "name": "Reach Ruined Shrine",
+    "name": { "str": "Reach Ruined Shrine" },
     "description": "Lead your companion to the suspected location of a ruined shrine, that allegedly didn't exist before the cataclysm...",
     "goal": "MGOAL_GO_TO_TYPE",
     "difficulty": 4,
@@ -55,7 +55,7 @@
   {
     "id": "MISSION_FIND_HERMIT_3",
     "type": "mission_definition",
-    "name": "Reach Odd House",
+    "name": { "str": "Reach Odd House" },
     "description": "Lead your companion to a rural house suspected to be inhabited by someone.  There might be something to those weird dreams after all...",
     "goal": "MGOAL_GO_TO_TYPE",
     "difficulty": 3,
@@ -81,7 +81,7 @@
   {
     "id": "MISSION_HERMIT_RETRIEVE_SWORD",
     "type": "mission_definition",
-    "name": "Retrieve The Cursed Blade",
+    "name": { "str": "Retrieve The Cursed Blade" },
     "description": "Obtain the cursed sword from the floating temple, and show it to the hermit.  The fallen relic may still be of use.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": { "or": [ { "u_has_item": "stormbringer" }, { "u_has_item": "veilblade" } ] },
@@ -108,13 +108,18 @@
   {
     "id": "MISSION_HERMIT_RESTORE_SWORD",
     "type": "mission_definition",
-    "name": "Restore The Ritual Blade",
+    "name": { "str": "Restore The Ritual Blade" },
     "description": "Learn the purification ritual from Oaths to The Chalice, restore the ritual sword to a usable condition, then show it to the hermit.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": { "u_has_item": "veilblade" },
     "difficulty": 5,
     "value": 250000,
-    "end": { "effect": [ { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" }, { "u_add_effect": "hermit_stage_2", "duration": "PERMANENT" } ] },
+    "end": {
+      "effect": [
+        { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" },
+        { "u_add_effect": "hermit_stage_2", "duration": "PERMANENT" }
+      ]
+    },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_AWAKEN_POWER",
     "dialogue": {
@@ -132,7 +137,7 @@
   {
     "id": "MISSION_HERMIT_AWAKEN_POWER",
     "type": "mission_definition",
-    "name": "Earn The Favor From Beyond",
+    "name": { "str": "Earn The Favor From Beyond" },
     "description": "Fuel the restored ritual blade by charging it from a portal, offer the power to Hy From Beyond The Veil, then return to the hermit after being awarded with any of His blessings.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": { "u_has_trait_flag": "explorer_of_the_veil" },
@@ -166,7 +171,7 @@
   {
     "id": "MISSION_HERMIT_BECOME_PARAGON",
     "type": "mission_definition",
-    "name": "Become A Paragon Of The Veil",
+    "name": { "str": "Become A Paragon Of The Veil" },
     "description": "Continue to seek out portals or otherwise channeling power through the restored ritual blade, until receiving a clear sign of He From Beyond The Veil's favor.  Excessive mutation, becoming too strongly tied to things from Beyond, might endanger this goal.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": { "u_has_trait": "THRESH_VEIL" },
@@ -199,7 +204,7 @@
   {
     "id": "MISSION_CF_DEACON_1",
     "type": "mission_definition",
-    "name": "Check On Rural Church",
+    "name": { "str": "Check On Rural Church" },
     "description": "Visit the rural church and speak with Sofia McKinnon.  Return to Dorian with the news.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": { "u_has_effect": "sofia_deacon_message" },
@@ -238,7 +243,7 @@
   {
     "id": "MISSION_CF_REP_1",
     "type": "mission_definition",
-    "name": "Find or Make Bone Charm",
+    "name": { "str": "Find or Make Bone Charm" },
     "description": "Obtain or craft a bone charm, a makeshift holy symbol carved from the body parts of certain otherworldly monsters, then bring it to Sofia.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,
@@ -287,7 +292,7 @@
   {
     "id": "MISSION_CF_REP_2",
     "type": "mission_definition",
-    "name": "Deliver Trade Arrangements",
+    "name": { "str": "Deliver Trade Arrangements" },
     "description": "Deliver the trade arrangements to the merchant at the refugee center, along with the Golden Scales provided for the deal.  Return to Sofia with the receipt that will be provided.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,
@@ -330,7 +335,7 @@
   {
     "id": "MISSION_CF_REP_3",
     "type": "mission_definition",
-    "name": "Kill Unknown Monster",
+    "name": { "str": "Kill Unknown Monster" },
     "description": "Hunt down a monster of unknown nature nearby.  Optionally recruit one of the church's guards to assist.",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
@@ -375,7 +380,7 @@
   {
     "id": "MISSION_CF_REP_4",
     "type": "mission_definition",
-    "name": "Secure Allies For Sofia",
+    "name": { "str": "Secure Allies For Sofia" },
     "description": "Arrange for additional allies to join Sofia's group at the rural church.  Most merchants at the refugee center, and possibly other places, might be worth talking to for assistance.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
@@ -440,7 +445,7 @@
   {
     "id": "MISSION_CF_REP_5",
     "type": "mission_definition",
-    "name": "Bring back research from the Keepers of The Oath",
+    "name": { "str": "Bring back research from the Keepers of The Oath" },
     "description": "Find a suspected remnant of the Keepers, who may have research and intel to bring back to Sofia.  Sofia advised that the information being sought might be preserved on something more durable than a book.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 4,
@@ -489,7 +494,7 @@
     "id": "MISSION_CF_REP_6",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
-    "name": "Secure Research From The Renegade Shrikes",
+    "name": { "str": "Secure Research From The Renegade Shrikes" },
     "description": "Find a suspected splinter faction of the Sanguine Order, who may have research and intel to bring back to Sofia.  Bring back any unique research they have.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 4,
@@ -552,7 +557,7 @@
   {
     "id": "MISSION_CF_REP_7",
     "type": "mission_definition",
-    "name": "Bring Back Relay Beacon",
+    "name": { "str": "Bring Back Relay Beacon" },
     "description": "Retrieve a radio relay beacon from a radio station recently secured by a contact allied with the Cleansing Flame.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
@@ -580,7 +585,11 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_add_effect": "cf_mission_sofia_7", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 14 } ],
+      "effect": [
+        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_sofia_7", "duration": "PERMANENT" },
+        { "u_buy_item": "CF_golden_scale", "count": 14 }
+      ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_10_a" },
         { "om_terrain": "cf_church_2", "om_special": "cf_rural_church", "mapgen_update_id": "cf_church_upgrade_10_b" }
@@ -590,7 +599,7 @@
   {
     "id": "MISSION_CF_GM_1",
     "type": "mission_definition",
-    "name": "Retrieve Bane Staff",
+    "name": { "str": "Retrieve Bane Staff" },
     "description": "Retrieve the bane staff from the strange grove, and bring it to Johnathan.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
@@ -636,7 +645,7 @@
   {
     "id": "MISSION_CF_GM_2",
     "type": "mission_definition",
-    "name": "Retrieve Demon Claw",
+    "name": { "str": "Retrieve Demon Claw" },
     "description": "Retrieve the demon claw from the curious structure, and bring it to Johnathan.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
@@ -682,7 +691,7 @@
   {
     "id": "MISSION_CF_GM_3",
     "type": "mission_definition",
-    "name": "Cleanse Sanguinist Sect",
+    "name": { "str": "Cleanse Sanguinist Sect" },
     "description": "Kill the blood mage in charge of a local Sanguine Order sect.  Optionally recruit one of the church's guards to assist.",
     "goal": "MGOAL_ASSASSINATE",
     "difficulty": 10,
@@ -750,7 +759,7 @@
   {
     "id": "MISSION_CF_GM_4_PRELUDE",
     "type": "mission_definition",
-    "name": "Investigate survivor camp",
+    "name": { "str": "Investigate survivor camp" },
     "description": "Search the last known encampment of a group of survivors, who have recently encountered anomalous activity.  Bring back any unusual items found there, that may prove useful to identifying and locating the origin of this threat.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": { "or": [ { "u_has_item": "arcana_dream_journal" }, { "u_has_item": "arcana_strange_crystal" } ] },
@@ -828,7 +837,7 @@
   {
     "id": "MISSION_CF_GM_4",
     "type": "mission_definition",
-    "name": "Cleanse The Anomaly",
+    "name": { "str": "Cleanse The Anomaly" },
     "description": "Seek out an anomalous structure that has recently forced its way into our world.  Kill whatever abomination lies at its heart.",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 8,
@@ -913,7 +922,7 @@
   {
     "id": "MISSION_CF_AUX_A",
     "type": "mission_definition",
-    "name": "Bring 5 Blank Scrolls",
+    "name": { "str": "Bring 5 Blank Scrolls" },
     "description": "Find or make 5 blank scrolls for the scavengers operating out of the rural church.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 2,
@@ -941,7 +950,7 @@
   {
     "id": "MISSION_CF_AUX_B",
     "type": "mission_definition",
-    "name": "Bring Wraithslayer Crossbow",
+    "name": { "str": "Bring Wraithslayer Crossbow" },
     "description": "Find or make a wraithslayer crossbow for the scavengers operating out of the rural church.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 3,
@@ -975,7 +984,7 @@
   {
     "id": "MISSION_CF_AUX_C",
     "type": "mission_definition",
-    "name": "Bring a copy of History of Alchemy",
+    "name": { "str": "Bring a copy of History of Alchemy" },
     "description": "Find a copy of History of Alchemy for the Old Guard doctor stationed at the rural church.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 3,
@@ -1001,7 +1010,7 @@
   {
     "id": "MISSION_CF_AUX_D",
     "type": "mission_definition",
-    "name": "Find a triffid queen flower",
+    "name": { "str": "Find a triffid queen flower" },
     "description": "Obtain a red flower associated with otherworldly plant monsters, and return it to the farmhand.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,
@@ -1046,7 +1055,7 @@
   {
     "id": "MISSION_CF_AUX_E",
     "type": "mission_definition",
-    "name": "Investigate anomalous ambush",
+    "name": { "str": "Investigate anomalous ambush" },
     "description": "Put down the cause of a recent attack on a caravan, then report back to the shopkeep.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,
@@ -1090,7 +1099,7 @@
     "id": "MISSION_CF_PURIFIER_1",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
+    "name": { "str": "Placeholder Mission" },
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
     "value": 150000,
@@ -1111,7 +1120,7 @@
     "id": "MISSION_CF_PURIFIER_2",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
+    "name": { "str": "Placeholder Mission" },
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
     "value": 150000,
@@ -1132,7 +1141,7 @@
     "id": "MISSION_CF_SCIENTIST_1",
     "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
     "type": "mission_definition",
-    "name": "Placeholder Mission",
+    "name": { "str": "Placeholder Mission" },
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 4,
     "value": 150000,

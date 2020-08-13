@@ -3,7 +3,7 @@
     "id": "arcana_item_athame_sanguine_art",
     "type": "SPELL",
     "//": "Todo: add a difficulty of 1 and remove no-failure from the item's action, if it turns out that skill reasonably reduces an unleveled spell's failure rate to be feasible, when spell skill is no longer hardcoded.",
-    "name": "Sanguine Art",
+    "name": { "str": "Sanguine Art" },
     "description": "Prepares a ritual to turn part of your life force into a usable form of essence.  Doing so will take 5 minutes, inflicting blood loss and damage at the end, as well as potential consequences if overused...",
     "message": "You work a ritual to draw power from your own blood, instinct guiding your hand as you trace patterns across your skin with the dull blade.  As you work the last rune, the only one to actually break the skin, wounds open elsewhere on your body!",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
@@ -28,7 +28,7 @@
   {
     "id": "arcana_item_athame_sanguine_art_corruption",
     "type": "SPELL",
-    "name": "Sanguine Art Corruption",
+    "name": { "str": "Sanguine Art Corruption" },
     "description": "This inflicts the more insidious effects of the athame.  That's 2 entire days of side-effect buildup per use, by the way.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -42,7 +42,7 @@
     "id": "arcana_item_chalice_offering",
     "type": "SPELL",
     "//": "Todo: add a difficulty of 3 and remove no-failure from the item's action, if it turns out that skill reasonably reduces an unleveled spell's failure rate to be feasible, when spell skill is no longer hardcoded.",
-    "name": "Offering",
+    "name": { "str": "Offering" },
     "description": "Prepares a ritual to turn part of your life force into a usable form of essence.  Doing so will take 15 minutes, inflicting harm upon your body at the end, as well as dire consequences if overused...",
     "message": "You work a ritual to draw power from your own breath, drawn by instinct to whisper words in an unfamiliar language.  The verses complete, you raise the chalice as if to drink from it, only for your breath to be drawn from your lungs!",
     "valid_targets": [ "self" ],
@@ -67,7 +67,7 @@
   {
     "id": "arcana_item_chalice_offering_winding",
     "type": "SPELL",
-    "name": "Offering Windedness",
+    "name": { "str": "Offering Windedness" },
     "description": "This is so that the chalice ritual actually knocks the wind out of you.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -80,7 +80,7 @@
   {
     "id": "arcana_item_chalice_offering_corruption",
     "type": "SPELL",
-    "name": "Offering Corruption",
+    "name": { "str": "Offering Corruption" },
     "description": "This inflicts the more insidious effects of the chalice.  That's 2 entire days of side-effect buildup per use, by the way.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -93,7 +93,7 @@
   {
     "id": "arcana_item_coalescent_conversion",
     "type": "SPELL",
-    "name": "Coalescent Conversion",
+    "name": { "str": "Coalescent Conversion" },
     "description": "This exists to make magic scrolls leave a blank scroll when used up, obsoleting the previous hack of making the item transform to exploit revert_to.",
     "valid_targets": [ "self" ],
     "message": "The air wavers as sparks leap from the device, a thunderclap resounding as energy is pulled from the fabric of reality, solidifying into a crystalline sliver.\nGlowing white-hot for the first split-second of its existence, the thin shard of condensed essence rapidly cools down to something safe to handle.",
@@ -138,7 +138,7 @@
   {
     "id": "arcana_item_coalescent_conversion_side_effects",
     "type": "SPELL",
-    "name": "Coalescent Conversion Side Effects",
+    "name": { "str": "Coalescent Conversion Side Effects" },
     "description": "Zaps the user briefly, creates hot air.",
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
@@ -156,7 +156,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_coalescent_conversion_wonder",
-    "name": "Coalescent Conversion Wonder",
+    "name": { "str": "Coalescent Conversion Wonder" },
     "description": "Some risk of a few Fun consequences.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -189,7 +189,7 @@
   {
     "id": "arcana_item_coalescent_conversion_wonder_archon",
     "type": "SPELL",
-    "name": "Coalescent Conversion Archon Rift",
+    "name": { "str": "Coalescent Conversion Archon Rift" },
     "description": "Creates an archon rift nearby.",
     "valid_targets": [ "ground" ],
     "message": "You feel a slight chill despite the heat given off by the newly-created crystal…",
@@ -207,7 +207,7 @@
   {
     "id": "arcana_item_coalescent_conversion_wonder_tindalos",
     "type": "SPELL",
-    "name": "Coalescent Conversion Tindalos Rift",
+    "name": { "str": "Coalescent Conversion Tindalos Rift" },
     "description": "Creates a tindalos rift nearby.",
     "valid_targets": [ "ground" ],
     "message": "You feel as though something is stalking you, some unseen watcher giving off a sense of otherworldly killing intent.",
@@ -225,7 +225,7 @@
   {
     "id": "arcana_item_generate_blood_essence",
     "type": "SPELL",
-    "name": "Generate Blood Essence",
+    "name": { "str": "Generate Blood Essence" },
     "description": "This is used by blood magic items to produce blood essence.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -236,7 +236,7 @@
   {
     "id": "arcana_item_gilded_aegis_healing",
     "type": "SPELL",
-    "name": "Aegis Mending",
+    "name": { "str": "Aegis Mending" },
     "description": "Forces the body to heal itself, but also hurts quite a bit.",
     "message": "Your cloak shimmers with odd light, and a painful jolt of healing power surges through you!",
     "valid_targets": [ "self" ],
@@ -252,7 +252,7 @@
   {
     "id": "arcana_item_gilded_aegis_pain",
     "type": "SPELL",
-    "name": "Aegis Pain Side Effect",
+    "name": { "str": "Aegis Pain Side Effect" },
     "description": "Take your medicine, Hunter.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -283,7 +283,7 @@
   {
     "id": "arcana_item_hammerzeit_attack",
     "type": "SPELL",
-    "name": "Hammer Secondary Effect",
+    "name": { "str": "Hammer Secondary Effect" },
     "description": "Mild damage and dazing for every vanilla monster with SUNDEATH, and every summoned monster based off such creatures.",
     "message": "",
     "effect": "target_attack",
@@ -315,7 +315,7 @@
   {
     "id": "arcana_item_hammerzeit_dazzle",
     "type": "SPELL",
-    "name": "Hammer Blindness",
+    "name": { "str": "Hammer Blindness" },
     "description": "This is a hack for the flashbang effect not affecting NPCs.",
     "message": "",
     "effect": "target_attack",
@@ -333,7 +333,7 @@
   {
     "id": "arcana_item_jade_hauberk_healing",
     "type": "SPELL",
-    "name": "Hauberk Mending",
+    "name": { "str": "Hauberk Mending" },
     "description": "Weaker healing than gilded aegis, but less pain.",
     "message": "Your armor's mantle shimmers with an odd light, sending the dull ache of healing magic through your body.",
     "valid_targets": [ "self" ],
@@ -352,7 +352,7 @@
   {
     "id": "arcana_item_jade_hauberk_pain",
     "type": "SPELL",
-    "name": "Hauberk Pain Side Effect",
+    "name": { "str": "Hauberk Pain Side Effect" },
     "description": "Still stings a bit.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -365,7 +365,7 @@
   {
     "id": "arcana_item_mantle_shadow",
     "type": "SPELL",
-    "name": "Illusory Shroud",
+    "name": { "str": "Illusory Shroud" },
     "description": "Grants the user the illusion cloak effect.",
     "message": "The robe's fabric darkens to a rich shade of black, cloaking your surroundings in a flickering illusion.",
     "effect": "target_attack",
@@ -378,7 +378,7 @@
   {
     "id": "arcana_item_meteoric_verge_bolt",
     "type": "SPELL",
-    "name": "Bolt From Beyond",
+    "name": { "str": "Bolt From Beyond" },
     "description": "Blasts everything in AoE with lightning.",
     "message": "A surge of energy strikes the ground as you raise the verge, resounding with a thunderous blast!",
     "effect": "target_attack",
@@ -408,7 +408,7 @@
   {
     "id": "arcana_item_meteoric_verge_spike",
     "type": "SPELL",
-    "name": "Verge Spike",
+    "name": { "str": "Verge Spike" },
     "description": "Double damage in epicenter.",
     "message": "",
     "effect": "target_attack",
@@ -428,7 +428,7 @@
   {
     "id": "arcana_item_meteoric_verge_pulse",
     "type": "SPELL",
-    "name": "Verge Pulse",
+    "name": { "str": "Verge Pulse" },
     "description": "This adds the terrain damage.",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "message": "",
@@ -445,7 +445,7 @@
   {
     "id": "arcana_item_meteoric_verge_pulse_extra",
     "type": "SPELL",
-    "name": "Verge Pulse Extra",
+    "name": { "str": "Verge Pulse Extra" },
     "description": "Dirty hack to work around bugs in magic code.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
@@ -480,7 +480,7 @@
   {
     "id": "arcana_item_meteoric_verge_buff",
     "type": "SPELL",
-    "name": "Verge Buff",
+    "name": { "str": "Verge Buff" },
     "description": "Grants brief lightning immunity to the user and any nearby allies.",
     "message": "",
     "effect": "target_attack",
@@ -493,7 +493,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_orb_veil_mapping",
-    "name": "Gaze Into Greater Horizons",
+    "name": { "str": "Gaze Into Greater Horizons" },
     "description": "Knowledge is power, but power comes at a price...",
     "effect": "map",
     "valid_targets": [ "self" ],
@@ -512,7 +512,7 @@
   {
     "id": "arcana_item_orb_veil_revelation",
     "type": "SPELL",
-    "name": "Orb: Revelation",
+    "name": { "str": "Orb: Revelation" },
     "description": "Grants a random duration of the Revelation spell effect.",
     "message": "A surge of strange visions flood your mind...",
     "valid_targets": [ "self" ],
@@ -525,7 +525,7 @@
   {
     "id": "arcana_item_orb_veil_attention",
     "type": "SPELL",
-    "name": "Orb Attention",
+    "name": { "str": "Orb Attention" },
     "description": "Applies nether attention, lower duration because the orb comes with a host of random side effects.",
     "message": "",
     "valid_targets": [ "self" ],
@@ -538,7 +538,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_orb_veil_wonder",
-    "name": "Orb Random Effects",
+    "name": { "str": "Orb Random Effects" },
     "description": "Random side effects to using the orb of the veil.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -560,7 +560,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_archon",
     "type": "SPELL",
-    "name": "Orb: Archon Effect",
+    "name": { "str": "Orb: Archon Effect" },
     "description": "Applies a decent dose of the archon's gaze effect.",
     "message": "You saw something looking back at you, far more intently than the other things out there...",
     "valid_targets": [ "self" ],
@@ -573,7 +573,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_blind",
     "type": "SPELL",
-    "name": "Orb: Blindness",
+    "name": { "str": "Orb: Blindness" },
     "description": "Blinds you for for a modest duration.",
     "message": "You see a blinding white light among the strange visions within.",
     "valid_targets": [ "self" ],
@@ -586,7 +586,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_citrine",
     "type": "SPELL",
-    "name": "Orb: Incense",
+    "name": { "str": "Orb: Incense" },
     "description": "Grants a random duration of citrine incense's effect.",
     "message": "Wisps of enervating essence accompany the visions, seeming far more real than the hallucinations...",
     "valid_targets": [ "self" ],
@@ -599,7 +599,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_hallu",
     "type": "SPELL",
-    "name": "Orb: Hallucinations",
+    "name": { "str": "Orb: Hallucinations" },
     "description": "Grants hallucinations.",
     "message": "Even after you look away from the orb, the visions linger in the back of your mind...",
     "valid_targets": [ "self" ],
@@ -613,7 +613,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_hallu2",
     "type": "SPELL",
-    "name": "Orb: Hallucinations 2",
+    "name": { "str": "Orb: Hallucinations 2" },
     "description": "Second hallucination effect.",
     "message": "",
     "valid_targets": [ "self" ],
@@ -626,7 +626,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_insight",
     "type": "SPELL",
-    "name": "Orb: Insight",
+    "name": { "str": "Orb: Insight" },
     "description": "Grants a random duration of the Insight spell effect.",
     "message": "A glimpse of otherworldly insight floods your mind.",
     "valid_targets": [ "self" ],
@@ -639,7 +639,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_stunned",
     "type": "SPELL",
-    "name": "Orb: Stun",
+    "name": { "str": "Orb: Stun" },
     "description": "Stuns for for a short duration.",
     "message": "The visions within the orb leave you reeling for a moment.",
     "valid_targets": [ "self" ],
@@ -652,7 +652,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_ward",
     "type": "SPELL",
-    "name": "Orb: Ward",
+    "name": { "str": "Orb: Ward" },
     "description": "Grants a random duration of Ward Against Evil.",
     "message": "You see a vision of something watching over you, among the strange sights within the orb.",
     "valid_targets": [ "self" ],
@@ -665,7 +665,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_orb_veil_wonder_2",
-    "name": "Orb Random Summon",
+    "name": { "str": "Orb Random Summon" },
     "description": "Wonder-ception, this summons a random monster.",
     "valid_targets": [ "self" ],
     "message": "For some reason, the visions in the orb seem a lot more real than they should...",
@@ -684,7 +684,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_2_krecks",
     "type": "SPELL",
-    "name": "Orb Summon: Krecks",
+    "name": { "str": "Orb Summon: Krecks" },
     "description": "Somewhere out there are critters that shouldn't be real, but are...",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -703,7 +703,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_2_fiend",
     "type": "SPELL",
-    "name": "Orb Summon: Fiend",
+    "name": { "str": "Orb Summon: Fiend" },
     "description": "Somewhere out there is a critter that shouldn't be real, but is...",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -722,7 +722,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_2_shadows",
     "type": "SPELL",
-    "name": "Orb Summon: Shadows",
+    "name": { "str": "Orb Summon: Shadows" },
     "description": "Somewhere out there are critters that shouldn't be real, but are...",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -741,7 +741,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_2_angel",
     "type": "SPELL",
-    "name": "Orb Summon: Angel",
+    "name": { "str": "Orb Summon: Angel" },
     "description": "Somewhere out there is a critter that shouldn't be real, but is...",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -760,7 +760,7 @@
   {
     "id": "arcana_item_orb_veil_wonder_2_vortices",
     "type": "SPELL",
-    "name": "Orb Summon: Vortices",
+    "name": { "str": "Orb Summon: Vortices" },
     "description": "Somewhere out there are critters that shouldn't be real, but are...",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -779,7 +779,7 @@
   {
     "id": "arcana_item_pestilence",
     "type": "SPELL",
-    "name": "Pestilence Summons",
+    "name": { "str": "Pestilence Summons" },
     "description": "Mutated vermin come to your aid.",
     "message": "Vermin slither out from the earth at your feet, heeding your call.",
     "extra_effects": [ { "id": "arcana_item_pestilence_aftereffect", "hit_self": false } ],
@@ -797,7 +797,7 @@
   {
     "id": "arcana_item_pestilence_aftereffect",
     "type": "SPELL",
-    "name": "Pestilence Aftermath",
+    "name": { "str": "Pestilence Aftermath" },
     "description": "Destruction of terrain around you.",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS" ],
@@ -812,7 +812,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_artifice",
-    "name": "Call to Order",
+    "name": { "str": "Call to Order" },
     "description": "Attempts to pacify monsters for a moderate duration, paralyzes user and inflicts pain.",
     "effect": "charm_monster",
     "message": "\"By order, we ascend beyond that of animals.\"  A wave of energy radiates outwards, fragments of otherworldly perspectives flooding your mind in the process!",
@@ -833,7 +833,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_artifice_pain",
-    "name": "Divine Scroll: Artifice Pain",
+    "name": { "str": "Divine Scroll: Artifice Pain" },
     "description": "Used instead of Artifact Pain to suppress the message and make the range more narrow.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -846,7 +846,7 @@
   {
     "id": "arcana_item_scroll_artifice_paralyze",
     "type": "SPELL",
-    "name": "Divine Scroll: Artifice Paralysis",
+    "name": { "str": "Divine Scroll: Artifice Paralysis" },
     "description": "This gives scrolls of command a brief brain-zap, longer than normal artifact paralysis.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -858,7 +858,7 @@
   {
     "id": "arcana_item_scroll_destruction",
     "type": "SPELL",
-    "name": "Cry of Hatred",
+    "name": { "str": "Cry of Hatred" },
     "description": "Similar effects to Wave of Destruction, though with different side effects.",
     "message": "\"There is an end to all things.\"  A horrible cacophony resounds, rising to a thunderous boom that blasts your surroundings with flame!",
     "effect": "target_attack",
@@ -888,7 +888,7 @@
   {
     "id": "arcana_item_scroll_destruction_spike",
     "type": "SPELL",
-    "name": "Divine Scroll: Destruction Spike",
+    "name": { "str": "Divine Scroll: Destruction Spike" },
     "description": "Increases damage in epicenter.",
     "message": "",
     "effect": "target_attack",
@@ -919,7 +919,7 @@
   {
     "id": "arcana_item_scroll_destruction_attention",
     "type": "SPELL",
-    "name": "Divine Scroll: Destruction Attention",
+    "name": { "str": "Divine Scroll: Destruction Attention" },
     "description": "This is used instead of Artifact Attention to suppress the message and narrow the duration range.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -932,7 +932,7 @@
   {
     "id": "arcana_item_scroll_destruction_cold",
     "type": "SPELL",
-    "name": "Divine Scroll: Destruction Coldness",
+    "name": { "str": "Divine Scroll: Destruction Coldness" },
     "description": "This adds a chill to the air, inflicted by scrolls of sundering.",
     "effect": "target_attack",
     "message": "",
@@ -948,7 +948,7 @@
   {
     "id": "arcana_item_scroll_destruction_pulse",
     "type": "SPELL",
-    "name": "Divine Scroll: Destruction Pulse",
+    "name": { "str": "Divine Scroll: Destruction Pulse" },
     "description": "This adds a highly-random pulse effect to the scroll.",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "extra_effects": [ { "id": "arcana_item_scroll_destruction_pulse_extra", "hit_self": false } ],
@@ -963,7 +963,7 @@
   {
     "id": "arcana_item_scroll_destruction_pulse_extra",
     "type": "SPELL",
-    "name": "Divine Scroll: Destruction Pulse Extra",
+    "name": { "str": "Divine Scroll: Destruction Pulse Extra" },
     "description": "Dirty hack to work around bugs in magic code.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
@@ -979,7 +979,7 @@
   {
     "id": "arcana_item_scroll_leftover",
     "type": "SPELL",
-    "name": "Scroll: Leftovers",
+    "name": { "str": "Scroll: Leftovers" },
     "description": "This exists to make magic scrolls leave a blank scroll when used up, obsoleting the previous hack of making the item transform to exploit revert_to.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -992,7 +992,7 @@
   {
     "id": "arcana_item_scroll_moon",
     "type": "SPELL",
-    "name": "Sightless Sanctuary",
+    "name": { "str": "Sightless Sanctuary" },
     "description": "Overwhelming darkness, both in field and event form, blinds monsters.",
     "message": "\"Do not fear the unknown.\"  A shadowy mist spreads out in all directions, wisps of living dark trailing upwards to blot out everything in its wake!",
     "flags": [ "SILENT", "IGNORE_WALLS", "NO_HANDS", "NO_LEGS" ],
@@ -1015,7 +1015,7 @@
   {
     "id": "arcana_item_scroll_moon_blind",
     "type": "SPELL",
-    "name": "Divine Scroll: Moon Blinding Effect",
+    "name": { "str": "Divine Scroll: Moon Blinding Effect" },
     "description": "This blinds all targets in the area for a random amount of time.",
     "effect": "target_attack",
     "message": "",
@@ -1030,7 +1030,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_moon_event",
-    "name": "Divine Scroll: Moon Event",
+    "name": { "str": "Divine Scroll: Moon Event" },
     "description": "This adds 30 minutes of darkness.",
     "message": "",
     "valid_targets": [ "self" ],
@@ -1043,7 +1043,7 @@
   {
     "id": "arcana_item_scroll_nature",
     "type": "SPELL",
-    "name": "Chaotic Mending",
+    "name": { "str": "Chaotic Mending" },
     "description": "Massive dose of unpredictable healing, widespread application of Overgrowth, risk of mutation.",
     "message": "\"Do not deny your instincts.\"  Life flows through your body, radiating out in a burst of chaotic energy!",
     "valid_targets": [ "self" ],
@@ -1063,7 +1063,7 @@
   {
     "id": "arcana_item_scroll_nature_plants",
     "type": "SPELL",
-    "name": "Divine Scroll: Nature Plant Effect",
+    "name": { "str": "Divine Scroll: Nature Plant Effect" },
     "description": "Basically just a beefier version of Overgrowth.",
     "message": "",
     "valid_targets": [ "ground" ],
@@ -1078,7 +1078,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_nature_wonder",
-    "name": "Divine Scroll: Nature Wonder",
+    "name": { "str": "Divine Scroll: Nature Wonder" },
     "description": "Randomizes what mutation spell the scroll rolls for.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1091,7 +1091,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_nature_mutate_dragonblood",
-    "name": "Divine Scroll: Nature Mutation 1",
+    "name": { "str": "Divine Scroll: Nature Mutation 1" },
     "effect": "mutate",
     "effect_str": "DRAGONBLOOD",
     "description": "Comparable to Artifact Mutate, except mimics effect of blood effigy.",
@@ -1104,7 +1104,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_nature_mutate_plant",
-    "name": "Divine Scroll: Nature Mutation 2",
+    "name": { "str": "Divine Scroll: Nature Mutation 2" },
     "effect": "mutate",
     "effect_str": "PLANT",
     "description": "Comparable to Artifact Mutate, except focused on Plant category.",
@@ -1117,7 +1117,7 @@
   {
     "id": "arcana_item_scroll_subversion",
     "type": "SPELL",
-    "name": "Elusive Gateway",
+    "name": { "str": "Elusive Gateway" },
     "description": "Teleports you away, leaving a mess of nasty shit behind you.  Uses a lot of Archon-specific effects, but that's mainly because they're more useful for what this spell should do, the entity the scroll is dedicated to probably isn't the Archon.",
     "message": "\"Cast aside the veil of reality.\"  You feel yanked in a non-existent direction!",
     "effect": "target_attack",
@@ -1142,7 +1142,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_subversion_shadows",
-    "name": "Divine Scroll: Subversion Shadows",
+    "name": { "str": "Divine Scroll: Subversion Shadows" },
     "description": "Neherit, otira atvess...except, not really.",
     "message": "",
     "valid_targets": [ "ground" ],
@@ -1159,7 +1159,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_subversion_teleport",
-    "name": "Divine Scroll: Subversion Teleport",
+    "name": { "str": "Divine Scroll: Subversion Teleport" },
     "description": "Yeets you rather far away.  The one benefit is it's a safe teleport.  Effect is last to hopefully ensure you leave the other side effects behind.",
     "message": "",
     "effect": "teleport_random",
@@ -1171,7 +1171,7 @@
   {
     "id": "arcana_item_scroll_sun",
     "type": "SPELL",
-    "name": "Solar Blessing",
+    "name": { "str": "Solar Blessing" },
     "description": "Massive wave of light, sunlight event, adrenaline and morale.",
     "message": "\"Let purity guide your hand and your heart.\"  A brilliant radiance envelops your surroundings, piercing the heavens as a surge of power flows through your body!",
     "flags": [ "SILENT", "IGNORE_WALLS", "NO_HANDS", "NO_LEGS" ],
@@ -1195,7 +1195,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_sun_adrenaline",
-    "name": "Divine Scroll: Sun Adrenaline",
+    "name": { "str": "Divine Scroll: Sun Adrenaline" },
     "description": "Uses this instead of Artifact Adrenaline mainly to suppress the message, also changes duration range.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1208,7 +1208,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_sun_event",
-    "name": "Divine Scroll: Sun Event",
+    "name": { "str": "Divine Scroll: Sun Event" },
     "description": "This adds 30 minutes of sunlight.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1221,7 +1221,7 @@
   {
     "id": "arcana_item_scroll_sun_timewarp",
     "type": "SPELL",
-    "name": "Divine Scroll: Sun Timewarp",
+    "name": { "str": "Divine Scroll: Sun Timewarp" },
     "description": "Oh hey, what's with divine magics combining adrenaline with timestop...",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1233,7 +1233,7 @@
   {
     "id": "arcana_item_somen_clairvoyance",
     "type": "SPELL",
-    "name": "Hunter's True Sight",
+    "name": { "str": "Hunter's True Sight" },
     "description": "This is needed to make it grant the proper effects of the mask of insight.",
     "valid_targets": [ "self" ],
     "message": "The mask briefly contorts into a fearsome visage, the eyeholes seeming to glow as a strange perception replaces your natural vision.",
@@ -1246,7 +1246,7 @@
   {
     "id": "arcana_item_spatial_displacement",
     "type": "SPELL",
-    "name": "Spatial Displacement",
+    "name": { "str": "Spatial Displacement" },
     "description": "Controlled teleport, with some risk of side effects.",
     "message": "You feel yanked in a non-existent direction!",
     "effect": "ter_transform",
@@ -1265,7 +1265,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_spatial_displacement_wonder",
-    "name": "Spatial Displacement Wonder",
+    "name": { "str": "Spatial Displacement Wonder" },
     "description": "Random side effects to balance controlled teleportation.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1299,7 +1299,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_spatial_displacement_wonder_taint",
-    "name": "Spatial Displacement Touched Mind",
+    "name": { "str": "Spatial Displacement Touched Mind" },
     "description": "Hyperspace Is A Scary Place.",
     "valid_targets": [ "self" ],
     "message": "You saw something out there during the brief trip through the in-between, visions lingering in the back of your mind…",
@@ -1312,7 +1312,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_spatial_displacement_wonder_archon",
-    "name": "Spatial Displacement Glimpse of The Beyond",
+    "name": { "str": "Spatial Displacement Glimpse of The Beyond" },
     "description": "They're watching you.",
     "valid_targets": [ "self" ],
     "message": "You saw something out there in the in-between… and it saw you, leaving you disoriented and numb!",
@@ -1325,7 +1325,7 @@
   {
     "type": "SPELL",
     "id": "arcana_item_spatial_displacement_wonder_blind",
-    "name": "Spatial Displacement Paralysis",
+    "name": { "str": "Spatial Displacement Paralysis" },
     "description": "Brief touch of blindness.",
     "valid_targets": [ "self" ],
     "message": "Your vision goes black as you emerge from the teleport, blinded by the otherwordly haze of the in-between!",
@@ -1338,7 +1338,7 @@
   {
     "id": "arcana_item_spatial_displacement_wonder_paralyze",
     "type": "SPELL",
-    "name": "Spatial Displacement Paralysis",
+    "name": { "str": "Spatial Displacement Paralysis" },
     "description": "Brain go zappy.",
     "valid_targets": [ "self" ],
     "message": "You're left reeling for a moment as you emerge from the teleport!",
@@ -1350,7 +1350,7 @@
   {
     "id": "arcana_item_spatial_displacement_summon",
     "type": "SPELL",
-    "name": "Spatial Summon",
+    "name": { "str": "Spatial Summon" },
     "description": "This summons a critter afterward, enabling SWAP_POS hijinks.",
     "message": "",
     "effect": "summon",
@@ -1368,7 +1368,7 @@
   {
     "id": "arcana_item_spatial_displacement_swap",
     "type": "SPELL",
-    "name": "Spatial Swap",
+    "name": { "str": "Spatial Swap" },
     "description": "And this does the actual switching.",
     "message": "",
     "effect": "target_attack",
@@ -1383,7 +1383,7 @@
   {
     "id": "arcana_item_sparks",
     "type": "SPELL",
-    "name": "Spark Flame",
+    "name": { "str": "Spark Flame" },
     "description": "Spark a small fire nearby.",
     "message": "Embers fly from your fingertips, stoking magical flames as they fall to the ground.",
     "effect": "target_attack",
@@ -1404,7 +1404,7 @@
   {
     "id": "arcana_item_stormbringer",
     "type": "SPELL",
-    "name": "Surge of Bloodlust",
+    "name": { "str": "Surge of Bloodlust" },
     "description": "This is needed to make it grant the proper effects of the cursed blade.",
     "valid_targets": [ "self" ],
     "message": "The runes on the blade glow for a moment, a strange bloodlust overtaking you!",
@@ -1418,7 +1418,7 @@
   {
     "id": "arcana_item_stormbringer_2",
     "type": "SPELL",
-    "name": "Surge of Bloodlust Health Debuff",
+    "name": { "str": "Surge of Bloodlust Health Debuff" },
     "description": "Minor healing, and the restorative power of a healing potion.",
     "message": "",
     "valid_targets": [ "self" ],
@@ -1431,7 +1431,7 @@
   {
     "id": "arcana_item_pet",
     "type": "SPELL",
-    "name": "Familiar Pact",
+    "name": { "str": "Familiar Pact" },
     "description": "Binds friendly summoned monsters to you, making it serve as a pet if it isn't already fully tamed.",
     "message": "Faint wisps of mist fly from the talisman, to bring enlightenment through a bond with your own mind, and guard them against hazards.",
     "effect": "target_attack",
@@ -1469,47 +1469,47 @@
     "max_duration": 1728000000
   },
   {
-    "id": "arcana_item_pet_buff",
-    "type": "SPELL",
-    "name": "Familiar Pact Buff Effect",
-    "description": "Binds friendly summoned monsters to you, making it serve as a pet if it isn't already fully tamed.",
-    "message": "",
-    "effect": "target_attack",
-    "valid_targets": [ "ally" ],
-    "targeted_monster_ids": [
-      "mon_dark_wyrm_summoned",
-      "mon_zombie_fiend_summoned",
-      "mon_jabberwock_summoned",
-      "mon_homunculus_summoned",
-      "mon_thing_summoned",
-      "mon_dog_skeleton_summoned",
-      "mon_skeleton_summoned",
-      "mon_vortex_summoned",
-      "mon_yugg_summoned",
-      "mon_kreck_summoned",
-      "mon_triffid_summoned",
-      "mon_flesh_angel_summoned",
-      "mon_hunting_horror_summoned",
-      "mon_mi_go_summoned",
-      "mon_flying_polyp_summoned",
-      "mon_shoggoth_summoned",
-      "mon_shadow_summoned",
-      "mon_shadow_snake_summoned",
-      "mon_centipede_giant_summoned"
-    ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "effect_str": "talisman_pet_buff",
-    "min_aoe": 5,
-    "max_aoe": 5,
-    "base_casting_time": 5,
-    "final_casting_time": 5,
-    "min_duration": 8640000,
-    "max_duration": 8640000
-  },
+  "id": "arcana_item_pet_buff",
+  "type": "SPELL",
+  "name": "Familiar Pact Buff Effect",
+  "description": "Binds friendly summoned monsters to you, making it serve as a pet if it isn't already fully tamed.",
+  "message": "",
+  "effect": "target_attack",
+  "valid_targets": [ "ally" ],
+  "targeted_monster_ids": [
+    "mon_dark_wyrm_summoned",
+    "mon_zombie_fiend_summoned",
+    "mon_jabberwock_summoned",
+    "mon_homunculus_summoned",
+    "mon_thing_summoned",
+    "mon_dog_skeleton_summoned",
+    "mon_skeleton_summoned",
+    "mon_vortex_summoned",
+    "mon_yugg_summoned",
+    "mon_kreck_summoned",
+    "mon_triffid_summoned",
+    "mon_flesh_angel_summoned",
+    "mon_hunting_horror_summoned",
+    "mon_mi_go_summoned",
+    "mon_flying_polyp_summoned",
+    "mon_shoggoth_summoned",
+    "mon_shadow_summoned",
+    "mon_shadow_snake_summoned",
+    "mon_centipede_giant_summoned"
+  ],
+  "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+  "effect_str": "talisman_pet_buff",
+  "min_aoe": 5,
+  "max_aoe": 5,
+  "base_casting_time": 5,
+  "final_casting_time": 5,
+  "min_duration": 8640000,
+  "max_duration": 8640000
+},
   {
     "id": "arcana_item_thunder_gauntlets_taze",
     "type": "SPELL",
-    "name": "Hand of Thunder",
+    "name": { "str": "Hand of Thunder" },
     "description": "A short-ranged jolt, doing minor damage and stunning the target.",
     "message": "A bolt of blood-red lightning arcs from your fingertips, fading to a natural coloration as it courses through your victim!",
     "valid_targets": [ "hostile" ],
@@ -1534,7 +1534,7 @@
   {
     "id": "arcana_item_thunder_gauntlets_lifedrain",
     "type": "SPELL",
-    "name": "Gauntlet Lifedrain",
+    "name": { "str": "Gauntlet Lifedrain" },
     "description": "Oh, now the reference in the item ID makes sense!",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1546,7 +1546,7 @@
   {
     "id": "arcana_item_wyrmskin_acid",
     "type": "SPELL",
-    "name": "Wyrm's Venom",
+    "name": { "str": "Wyrm's Venom" },
     "description": "A low-level acid spell, with greater focus on ground effect.",
     "message": "Flowing venom slithers over the surface of your armor, until an acrid spray lashes out and soaks the ground!",
     "effect": "cone_attack",

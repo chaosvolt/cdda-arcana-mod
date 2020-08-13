@@ -124,7 +124,13 @@
       [ [ "healing_potion", 1 ] ],
       [ [ "numbness_potion", 1 ] ],
       [ [ "rag", 3 ], [ "medical_gauze", 1 ] ],
-      [ [ "rose_hips", 1 ], [ "poppy_bud", 1 ], [ "bee_balm", 1 ], [ "inflorescent_root", 1 ], [ "triffid_queen_flower", 1 ] ]
+      [
+        [ "rose_hips", 1 ],
+        [ "poppy_bud", 1 ],
+        [ "bee_balm", 1 ],
+        [ "inflorescent_root", 1 ],
+        [ "triffid_queen_flower", 1 ]
+      ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]

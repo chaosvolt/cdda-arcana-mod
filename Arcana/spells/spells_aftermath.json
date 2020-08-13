@@ -2,7 +2,7 @@
   {
     "id": "arcana_aftermath_capacitance_stun",
     "type": "SPELL",
-    "name": "Capacitance Stun",
+    "name": { "str": "Capacitance Stun" },
     "description": "This exists to make Capacitance sap moves from the user.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -14,7 +14,7 @@
   {
     "id": "arcana_aftermath_capacitance_zap",
     "type": "SPELL",
-    "name": "Capacitance Zap",
+    "name": { "str": "Capacitance Zap" },
     "description": "This exists to make Capacitance zap the user.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -30,7 +30,7 @@
   {
     "id": "arcana_aftermath_conjure_acid_spike",
     "type": "SPELL",
-    "name": "Conjure Acid Spike",
+    "name": { "str": "Conjure Acid Spike" },
     "description": "Half the missing damage, more focused AoE.",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "message": "",
@@ -72,7 +72,7 @@
   {
     "id": "arcana_aftermath_conjure_flame_bash",
     "type": "SPELL",
-    "name": "Conjure Flame Bash",
+    "name": { "str": "Conjure Flame Bash" },
     "description": "Damages terrain in range.",
     "extra_effects": [ { "id": "arcana_aftermath_conjure_flame_bash_extra", "hit_self": false, "max_level": 10 } ],
     "valid_targets": [ "ground" ],
@@ -93,7 +93,7 @@
   {
     "id": "arcana_aftermath_conjure_flame_bash_extra",
     "type": "SPELL",
-    "name": "Conjure Flame Bash Extra",
+    "name": { "str": "Conjure Flame Bash Extra" },
     "description": "Dirty hack to work around bugs in magic code.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
@@ -114,7 +114,7 @@
   {
     "id": "arcana_aftermath_conjure_flame_spike",
     "type": "SPELL",
-    "name": "Conjure Flame Spike",
+    "name": { "str": "Conjure Flame Spike" },
     "description": "Double damage for anything caught in the center.",
     "message": "",
     "effect": "target_attack",
@@ -156,7 +156,7 @@
   {
     "id": "arcana_aftermath_conjure_miasma_fungicide",
     "type": "SPELL",
-    "name": "Conjure Miasma Fungicide",
+    "name": { "str": "Conjure Miasma Fungicide" },
     "description": "This adds a decent chance of spawning fungicidal gas as well.",
     "effect": "target_attack",
     "flags": [ "SILENT", "IGNORE_WALLS" ],
@@ -182,7 +182,7 @@
   {
     "id": "arcana_aftermath_conjure_miasma_nuke",
     "type": "SPELL",
-    "name": "Conjure Miasma Nukage",
+    "name": { "str": "Conjure Miasma Nukage" },
     "description": "This adds a small chance of spawning radioactive gas as well.",
     "effect": "target_attack",
     "flags": [ "SILENT", "IGNORE_WALLS" ],
@@ -208,7 +208,7 @@
   {
     "id": "arcana_aftermath_conjure_miasma_tear",
     "type": "SPELL",
-    "name": "Conjure Miasma Tear Gas",
+    "name": { "str": "Conjure Miasma Tear Gas" },
     "description": "This adds a chance of spawning tear gas as well.",
     "effect": "target_attack",
     "flags": [ "SILENT", "IGNORE_WALLS" ],
@@ -255,7 +255,7 @@
   {
     "id": "arcana_aftermath_conjure_shadow_field_blindness",
     "type": "SPELL",
-    "name": "Aftermath: Shadow Blindness",
+    "name": { "str": "Aftermath: Shadow Blindness" },
     "description": "This inflicts momentary blindness on targets caught in it.",
     "message": "",
     "effect": "target_attack",
@@ -276,7 +276,7 @@
   {
     "id": "arcana_aftermath_consecrate_dispel_summons",
     "type": "SPELL",
-    "name": "Aftermath: Consecrate Dispel Summons",
+    "name": { "str": "Aftermath: Consecrate Dispel Summons" },
     "description": "Increasingly massive damage to any hostile summoned monsters in the area of effect.",
     "message": "",
     "valid_targets": [ "hostile" ],
@@ -324,7 +324,7 @@
   {
     "id": "arcana_aftermath_consecrate_daze_intruders",
     "type": "SPELL",
-    "name": "Aftermath: Consecrate Daze Intruders",
+    "name": { "str": "Aftermath: Consecrate Daze Intruders" },
     "description": "Dazes specific nether monsters.",
     "message": "",
     "valid_targets": [ "hostile" ],
@@ -425,7 +425,7 @@
   {
     "id": "arcana_aftermath_consecrate_lesser",
     "type": "SPELL",
-    "name": "Aftermath: Consecrate Lesser Effect",
+    "name": { "str": "Aftermath: Consecrate Lesser Effect" },
     "description": "Weaker version of the sub-spell, with a narrower range of valid targets.  Most bosses, and many tougher monsters, are excluded.",
     "message": "",
     "valid_targets": [ "hostile" ],
@@ -518,7 +518,7 @@
   {
     "id": "arcana_magic_dampening_aoe",
     "type": "SPELL",
-    "name": "Aftermath: Displacement AoE",
+    "name": { "str": "Aftermath: Displacement AoE" },
     "description": "This adds the extra fog around your surroundings.",
     "message": "",
     "valid_targets": [ "hostile", "ground" ],
@@ -544,7 +544,7 @@
   {
     "id": "arcana_aftermath_displacing_slash_aoe",
     "type": "SPELL",
-    "name": "Aftermath: Displacing Slash AoE",
+    "name": { "str": "Aftermath: Displacing Slash AoE" },
     "description": "This adds the extra damage and field effect around your surroundings.",
     "message": "",
     "valid_targets": [ "hostile", "ally", "ground" ],
@@ -574,7 +574,7 @@
   {
     "id": "arcana_aftermath_divine_storm_blast",
     "type": "SPELL",
-    "name": "Divine Storm",
+    "name": { "str": "Divine Storm" },
     "description": "This jolts surrounding areas for spikes of additional damage.",
     "message": "",
     "effect": "cone_attack",
@@ -622,7 +622,7 @@
   {
     "id": "arcana_aftermath_destructive_absorption_side_effects",
     "type": "SPELL",
-    "name": "Destructive Absorption Side Effects",
+    "name": { "str": "Destructive Absorption Side Effects" },
     "description": "This exists to make Destructive Absorption give you bonus nutrition and other side effects.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -636,7 +636,7 @@
   {
     "id": "arcana_aftermath_drain_life_fatigue",
     "type": "SPELL",
-    "name": "Drain Life Fatigue",
+    "name": { "str": "Drain Life Fatigue" },
     "description": "This exists to potentially give Dragonblood's version of Drain Life a corruptive side effect on the area.",
     "effect": "target_attack",
     "flags": [ "SILENT" ],
@@ -652,7 +652,7 @@
   {
     "type": "SPELL",
     "id": "arcana_aftermath_eclipse_darkness",
-    "name": "Eclipse Darkness",
+    "name": { "str": "Eclipse Darkness" },
     "description": "Up to 3 hours of darkness.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -666,7 +666,7 @@
   {
     "type": "SPELL",
     "id": "arcana_aftermath_eclipse_fatigue",
-    "name": "Eclipse Fatigue",
+    "name": { "str": "Eclipse Fatigue" },
     "description": "Basically the artifact effect, except it will show up just about anywhere in the reality bubble.  Expect anything...",
     "valid_targets": [ "ground", "self", "ally", "hostile" ],
     "effect": "target_attack",
@@ -683,7 +683,7 @@
   {
     "id": "arcana_aftermath_eclipse_halo",
     "type": "SPELL",
-    "name": "Eclipse Halo",
+    "name": { "str": "Eclipse Halo" },
     "description": "Adds a standard lifedrain halo.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -697,7 +697,7 @@
   {
     "type": "SPELL",
     "id": "arcana_aftermath_eclipse_wonder",
-    "name": "Eclipse Wonder",
+    "name": { "str": "Eclipse Wonder" },
     "description": "Summons 1d5 legit nether monsters.  Unlike most summon spells, these are 100% fresh interlopers from Beyond.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -717,7 +717,7 @@
   {
     "id": "arcana_aftermath_eclipse_wonder_gracke",
     "type": "SPELL",
-    "name": "Eclipse Gracken",
+    "name": { "str": "Eclipse Gracken" },
     "description": "An interloper!",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -734,7 +734,7 @@
   {
     "id": "arcana_aftermath_eclipse_wonder_gelatin",
     "type": "SPELL",
-    "name": "Eclipse Amoebic Mold",
+    "name": { "str": "Eclipse Amoebic Mold" },
     "description": "Blobby interloper!",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -751,7 +751,7 @@
   {
     "id": "arcana_aftermath_eclipse_wonder_kreck",
     "type": "SPELL",
-    "name": "Eclipse Kreck",
+    "name": { "str": "Eclipse Kreck" },
     "description": "Smol interloper!",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -768,7 +768,7 @@
   {
     "id": "arcana_aftermath_eclipse_wonder_mi_go",
     "type": "SPELL",
-    "name": "Eclipse Mi-go",
+    "name": { "str": "Eclipse Mi-go" },
     "description": "Intruso, no tu amigo.",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -785,7 +785,7 @@
   {
     "id": "arcana_aftermath_eclipse_wonder_flaming_eye",
     "type": "SPELL",
-    "name": "Eclipse Flaming Eye",
+    "name": { "str": "Eclipse Flaming Eye" },
     "description": "Also an interloper, and probably the most !!FUN!! kind.",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -802,7 +802,7 @@
   {
     "id": "arcana_aftermath_eclipse_wonder_flying_polyp",
     "type": "SPELL",
-    "name": "Eclipse Flying Polyp",
+    "name": { "str": "Eclipse Flying Polyp" },
     "description": "Watch it probably roll this effect five times in a row...",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -819,7 +819,7 @@
   {
     "id": "arcana_magic_elemental_burst_line",
     "type": "SPELL",
-    "name": "Elemental Burst Line",
+    "name": { "str": "Elemental Burst Line" },
     "description": "This splits the damage to make it harder to murder every single thing caught in the AoE.",
     "message": "",
     "effect": "cone_attack",
@@ -838,7 +838,7 @@
   {
     "id": "arcana_magic_elemental_burst_wonder",
     "type": "SPELL",
-    "name": "Elemental Burst Wonder",
+    "name": { "str": "Elemental Burst Wonder" },
     "description": "This chooses which set of side effects to use.",
     "message": "",
     "effect": "cone_attack",
@@ -863,7 +863,7 @@
   {
     "id": "arcana_aftermath_elemental_burst_water",
     "type": "SPELL",
-    "name": "Elemental Burst Water",
+    "name": { "str": "Elemental Burst Water" },
     "description": "Creates fog and slows down victims.",
     "message": "",
     "effect": "cone_attack",
@@ -891,7 +891,7 @@
   {
     "id": "arcana_aftermath_elemental_burst_fire",
     "type": "SPELL",
-    "name": "Elemental Burst Fire",
+    "name": { "str": "Elemental Burst Fire" },
     "description": "Creates fire, horrible burning because no longer directly using heat damage.",
     "message": "",
     "effect": "cone_attack",
@@ -919,7 +919,7 @@
   {
     "id": "arcana_aftermath_elemental_burst_wind",
     "type": "SPELL",
-    "name": "Elemental Burst Wind",
+    "name": { "str": "Elemental Burst Wind" },
     "description": "Creates lightning and zaps victims.",
     "message": "",
     "effect": "cone_attack",
@@ -947,7 +947,7 @@
   {
     "id": "arcana_aftermath_elemental_burst_earth",
     "type": "SPELL",
-    "name": "Elemental Burst Earth",
+    "name": { "str": "Elemental Burst Earth" },
     "description": "Creates acid and corrodes victims.",
     "message": "",
     "effect": "cone_attack",
@@ -1047,7 +1047,7 @@
   {
     "id": "arcana_aftermath_elemental_coldness",
     "type": "SPELL",
-    "name": "Elemental Sign Coldness",
+    "name": { "str": "Elemental Sign Coldness" },
     "description": "This exists to make Elemental Sign sap temperature from the area.",
     "effect": "target_attack",
     "message": "",
@@ -1065,7 +1065,7 @@
   {
     "id": "arcana_aftermath_elemental_stun",
     "type": "SPELL",
-    "name": "Elemental Sign Stun",
+    "name": { "str": "Elemental Sign Stun" },
     "description": "This exists to give Elemental Sign freeze enemies briefly.",
     "effect": "mod_moves",
     "message": "",
@@ -1082,7 +1082,7 @@
   {
     "id": "arcana_aftermath_healing_side_effects",
     "type": "SPELL",
-    "name": "Healing Side Effects",
+    "name": { "str": "Healing Side Effects" },
     "description": "This exists to grant the long-term side effects of Healing.",
     "valid_targets": [ "self", "ally" ],
     "message": "",
@@ -1099,7 +1099,7 @@
   {
     "id": "arcana_aftermath_holy_flare_spike",
     "type": "SPELL",
-    "name": "Holy Flare Spike",
+    "name": { "str": "Holy Flare Spike" },
     "description": "Increases the damage of anything in the center of Holy Flare.",
     "message": "",
     "effect": "target_attack",
@@ -1145,7 +1145,7 @@
   {
     "id": "arcana_aftermath_infernal_flame_corruption",
     "type": "SPELL",
-    "name": "Infernal Breath Corruption",
+    "name": { "str": "Infernal Breath Corruption" },
     "description": "This exists only to add destruction of natural terrain to Infernal Flame.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
@@ -1162,7 +1162,7 @@
   {
     "id": "arcana_aftermath_infernal_flame_field",
     "type": "SPELL",
-    "name": "Infernal Breath Field",
+    "name": { "str": "Infernal Breath Field" },
     "description": "This exists to add a chance of lingering anomalous fire after Infernal Breath impacts.",
     "effect": "line_attack",
     "message": "",
@@ -1202,7 +1202,7 @@
   {
     "id": "arcana_aftermath_infernal_flame_side_effects",
     "type": "SPELL",
-    "name": "Infernal Breath Side Effects",
+    "name": { "str": "Infernal Breath Side Effects" },
     "description": "This exists to make Infernal Breath drain hunger.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1215,7 +1215,7 @@
   {
     "id": "arcana_aftermath_malevolent_gaze_slowdown",
     "type": "SPELL",
-    "name": "Malevolent Gaze Slowdown",
+    "name": { "str": "Malevolent Gaze Slowdown" },
     "description": "This exists to add some extra slowdown to the target.",
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -1233,7 +1233,7 @@
   {
     "id": "arcana_aftermath_capacitance_zap",
     "type": "SPELL",
-    "name": "Capacitance Zap",
+    "name": { "str": "Capacitance Zap" },
     "description": "This exists to make Capacitance zap the user.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1249,7 +1249,7 @@
   {
     "id": "arcana_aftermath_radiant_burst_line",
     "type": "SPELL",
-    "name": "Radiant Burst Cone",
+    "name": { "str": "Radiant Burst Cone" },
     "description": "This adds a narrow of lightning to Radiant Burst.",
     "message": "",
     "effect": "cone_attack",
@@ -1295,7 +1295,7 @@
   {
     "id": "arcana_aftermath_shockstorm_line",
     "type": "SPELL",
-    "name": "Shockstorm Line",
+    "name": { "str": "Shockstorm Line" },
     "description": "Random lightning bolts.",
     "valid_targets": [ "ground" ],
     "flags": [ "RANDOM_TARGET", "SILENT" ],
@@ -1335,7 +1335,7 @@
   {
     "id": "arcana_aftermath_sundering_quake_boulders",
     "type": "SPELL",
-    "name": "Sundering Quake Boulders",
+    "name": { "str": "Sundering Quake Boulders" },
     "description": "This exists to add rubble and other changes to Sundering Quake.",
     "valid_targets": [ "ground" ],
     "message": "",
@@ -1355,7 +1355,7 @@
   {
     "id": "arcana_aftermath_sundering_quake_extra",
     "type": "SPELL",
-    "name": "Sundering Quake Extra",
+    "name": { "str": "Sundering Quake Extra" },
     "description": "Dirty hack to work around bugs in magic code.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
@@ -1376,7 +1376,7 @@
   {
     "id": "arcana_aftermath_suppression_buff",
     "type": "SPELL",
-    "name": "Suppression Buff",
+    "name": { "str": "Suppression Buff" },
     "description": "This exists to grant the long-term status effect to Suppression.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1391,7 +1391,7 @@
   {
     "id": "arcana_aftermath_surge_adrenaline_timewarp",
     "type": "SPELL",
-    "name": "Surging Force Timewarp",
+    "name": { "str": "Surging Force Timewarp" },
     "description": "Za warudo!  This exists to make Surging Force give you a free moves.",
     "valid_targets": [ "self", "ally" ],
     "message": "",
@@ -1408,7 +1408,7 @@
   {
     "id": "arcana_aftermath_wave_destruction_pulse",
     "type": "SPELL",
-    "name": "Wave of Destruction Pulse",
+    "name": { "str": "Wave of Destruction Pulse" },
     "description": "This adds the actual effect of yeeting terrain in range.",
     "valid_targets": [ "hostile", "ground" ],
     "extra_effects": [ { "id": "arcana_aftermath_wave_destruction_pulse_extra", "hit_self": false, "max_level": 10 } ],
@@ -1425,7 +1425,7 @@
   {
     "id": "arcana_aftermath_wave_destruction_pulse_extra",
     "type": "SPELL",
-    "name": "Wave of Destruction Pulse Extra",
+    "name": { "str": "Wave of Destruction Pulse Extra" },
     "description": "Dirty hack to work around bugs in magic code.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
@@ -1443,7 +1443,7 @@
   {
     "id": "arcana_aftermath_wave_destruction_side_effects",
     "type": "SPELL",
-    "name": "Wave of Destruction Side Effects",
+    "name": { "str": "Wave of Destruction Side Effects" },
     "description": "This exists to grant long-term side effects to Wave of Destruction.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1457,7 +1457,7 @@
   {
     "id": "arcana_aftermath_wave_destruction_spike",
     "type": "SPELL",
-    "name": "Wave of Destruction Spike",
+    "name": { "str": "Wave of Destruction Spike" },
     "description": "This splits of the AoE into beefy and stupid beefy depending on distance.",
     "message": "",
     "effect": "target_attack",
