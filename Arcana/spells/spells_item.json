@@ -1471,7 +1471,7 @@
   {
     "id": "arcana_item_pet_buff",
     "type": "SPELL",
-    "name": "Familiar Pact Buff Effect",
+    "name": { "str": "Familiar Pact Buff Effect" },
     "description": "Binds friendly summoned monsters to you, making it serve as a pet if it isn't already fully tamed.",
     "message": "",
     "effect": "target_attack",
