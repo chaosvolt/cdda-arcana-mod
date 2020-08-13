@@ -266,7 +266,7 @@
     "price": 5000,
     "price_postapoc": 1000,
     "to_hit": -1,
-    "material": "paper",
+    "material": [ "paper" ],
     "symbol": ";",
     "looks_like": "survivormap",
     "color": "white",

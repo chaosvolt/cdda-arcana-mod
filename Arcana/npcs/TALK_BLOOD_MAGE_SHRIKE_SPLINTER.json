@@ -132,12 +132,7 @@
       },
       {
         "text": "I am more than just a hunter, now.  I understand the importance of working together, using any means necessary, to ensure humanity's survival.  Will you aid us with this?",
-        "condition": {
-          "and": [
-            { "u_has_trait": "THRESH_VEIL" },
-            { "u_has_effect": "shrike_inquire_denied" }
-          ]
-        },
+        "condition": { "and": [ { "u_has_trait": "THRESH_VEIL" }, { "u_has_effect": "shrike_inquire_denied" } ] },
         "switch": true,
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
         "opinion": { "anger": 2 }
@@ -175,10 +170,7 @@
           "effect": [ { "u_faction_rep": -30 }, "insult_combat" ]
         }
       },
-      {
-        "text": "Nevermind…",
-        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
-      }
+      { "text": "Nevermind…", "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER" }
     ]
   },
   {
@@ -212,12 +204,7 @@
     "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
     "type": "talk_topic",
     "dynamic_line": "You are impatient.  If you continue pressing this issue, we will lose our patience in this matter as well.",
-    "responses": [
-      {
-        "text": "…",
-        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
-      }
-    ]
+    "responses": [ { "text": "…", "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER" } ]
   },
   {
     "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BASIC_SUCCESS",
@@ -333,12 +320,7 @@
       },
       {
         "text": "We are not enemies.  We can work together, combine our knowledge to survive.",
-        "condition": {
-          "and": [
-            { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
-            { "u_has_effect": "shrike_inquire_denied" }
-          ]
-        },
+        "condition": { "and": [ { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] }, { "u_has_effect": "shrike_inquire_denied" } ] },
         "switch": true,
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
         "opinion": { "anger": 1 }
@@ -372,10 +354,7 @@
         "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_DEFIANT", "opinion": { "value": 1 } },
         "failure": { "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH", "opinion": { "value": -1, "fear": -1 } }
       },
-      {
-        "text": "Nevermind…",
-        "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
-      }
+      { "text": "Nevermind…", "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER" }
     ]
   },
   {

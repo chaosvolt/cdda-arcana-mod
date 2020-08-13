@@ -2,7 +2,7 @@
   {
     "id": "arcana_monster_archon_gaze_improved",
     "type": "SPELL",
-    "name": "Greater Archon's Gaze",
+    "name": { "str": "Greater Archon's Gaze" },
     "description": "This is a monster spell, used by the seraphic shade.",
     "message": "",
     "effect": "target_attack",
@@ -24,7 +24,7 @@
   {
     "type": "SPELL",
     "id": "arcana_monster_archon_mutation",
-    "name": "Archon Mutagenic Effect",
+    "name": { "str": "Archon Mutagenic Effect" },
     "effect": "mutate",
     "effect_str": "SERAPHIC_SIDE_EFFECTS",
     "description": "Psychiatric after-effects.",
@@ -37,7 +37,7 @@
   {
     "id": "arcana_monster_archon_gaze",
     "type": "SPELL",
-    "name": "Archon's Gaze",
+    "name": { "str": "Archon's Gaze" },
     "description": "This is a monster spell, used by the host of the archon.",
     "message": "",
     "effect": "target_attack",
@@ -59,7 +59,7 @@
   {
     "id": "arcana_monster_archon_sundering",
     "type": "SPELL",
-    "name": "Archon's Sundering",
+    "name": { "str": "Archon's Sundering" },
     "description": "This adds an effect that eliminates vortices faced with the archon's gaze.",
     "message": "",
     "effect": "target_attack",
@@ -76,7 +76,7 @@
   {
     "id": "arcana_monster_dart_triffid",
     "type": "SPELL",
-    "name": "Paralytic Dart",
+    "name": { "str": "Paralytic Dart" },
     "description": "This is a monster spell, used by summoned triffids.",
     "message": "",
     "effect": "projectile_attack",
@@ -94,7 +94,7 @@
   {
     "id": "arcana_monster_dart_yugg",
     "type": "SPELL",
-    "name": "Greater Paralytic Dart",
+    "name": { "str": "Greater Paralytic Dart" },
     "description": "This is a monster spell, used by summoned yuggs.",
     "message": "",
     "effect": "projectile_attack",
@@ -112,7 +112,7 @@
   {
     "id": "arcana_monster_fire_radiance",
     "type": "SPELL",
-    "name": "Hellfire Aura",
+    "name": { "str": "Hellfire Aura" },
     "description": "This is a monster spell, used by the spirit of fire.",
     "message": "",
     "effect": "target_attack",

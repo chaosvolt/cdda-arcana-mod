@@ -19,7 +19,7 @@
     "price_postapoc": 800,
     "to_hit": -3,
     "bashing": 1,
-    "material": "silver",
+    "material": [ "silver" ],
     "symbol": ",",
     "looks_like": "jade_brooch",
     "color": "light_gray"
@@ -34,7 +34,7 @@
     "volume": "250 ml",
     "price": 2000,
     "price_postapoc": 200,
-    "material": "paper",
+    "material": [ "paper" ],
     "symbol": "!",
     "looks_like": "recipe_creepy",
     "color": "light_gray"
@@ -68,7 +68,7 @@
     "name": { "str": "inflorescent root" },
     "description": "A twisted cluster of otherworldly roots, covered in small outgrowths blooming into faint indigo flowers.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
-    "material": "veggy",
+    "material": [ "veggy" ],
     "weight": "120 g",
     "volume": "250 ml"
   },
@@ -82,7 +82,7 @@
     "name": { "str": "scarlet flower" },
     "description": "A vibrant flower fallen from some otherworldly fauna, still in bloom.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
-    "material": "veggy",
+    "material": [ "veggy" ],
     "weight": "60 g",
     "volume": "250 ml"
   },
@@ -132,7 +132,7 @@
     "name": { "str": "wind fragment" },
     "description": "A small, uneven piece of pink quartz.  It is unnaturally light and seems to whisper when held up to the ear.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
-    "material": "stone",
+    "material": [ "stone" ],
     "looks_like": "material_limestone",
     "volume": "250 ml",
     "flags": [ "ZERO_WEIGHT" ]
@@ -147,7 +147,7 @@
     "name": { "str": "amorphous amber", "str_pl": "pieces of amorphous amber" },
     "description": "A dense chunk of solidified ooze, vaguely resembling unnaturally-dark amber.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
-    "material": "stone",
+    "material": [ "stone" ],
     "looks_like": "material_limestone",
     "weight": "714 g",
     "volume": "250 ml"
@@ -162,7 +162,7 @@
     "//": "Obtained from flaming eyes, rarely from cyclopeans.",
     "description": "A smooth orb of glassy stone, an unearthly deep blue in color.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
-    "material": "stone",
+    "material": [ "stone" ],
     "looks_like": "material_limestone",
     "weight": "230 g",
     "volume": "250 ml"
@@ -177,7 +177,7 @@
     "name": { "str": "shadow gem" },
     "description": "A rough gem resembling an unfinished diamond, black with flecks of silvery gray.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
-    "material": "stone",
+    "material": [ "stone" ],
     "looks_like": "material_limestone",
     "weight": "100 g",
     "volume": "250 ml"
@@ -211,7 +211,7 @@
     "name": { "str": "cracked knucklebones", "str_pl": "cracked knucklebones" },
     "description": "A few splintered chunks of finger bones from some sort of monstrous creature, torn away and stripped of flesh from the force of its unnatural death throes.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
-    "material": "bone",
+    "material": [ "bone" ],
     "weight": "225 g",
     "volume": "250 ml"
   },
@@ -293,7 +293,7 @@
     "//": "The fact it has a pre-cata pricing is effectively a plot spoiler, but yes it was basically the primary focus of on major sect of the Sanguine Order.  Extremely valuable to a decent number of people who are now extremely dead.",
     "price": 8000000,
     "price_postapoc": 7500,
-    "material": "stone",
+    "material": [ "stone" ],
     "looks_like": "spiral_stone",
     "weight": "1500 g",
     "volume": "1 L"
@@ -306,7 +306,7 @@
     "description": "A simple candle, burning endlessly with unearthly flame.  It gives off a faintly soothing sensation yet no warmth, casting an brilliant glow throughout the room.  It seems to be firmly fixed in place by some unknown force.",
     "weight": "100 g",
     "volume": "250 ml",
-    "material": "essencemat",
+    "material": [ "essencemat" ],
     "symbol": ",",
     "looks_like": "candle_warding_active",
     "color": "white",
@@ -326,7 +326,7 @@
     "color": "yellow",
     "symbol": "$",
     "material": [ "gold" ],
-    "volume": "2ml"
+    "volume": "2 ml"
   },
   {
     "type": "GENERIC",
@@ -351,7 +351,7 @@
     "name": { "str": "relay beacon" },
     "category": "spare_parts",
     "description": "A rugged metal case containing a transceiver adapted from surplus military equipment, a set of connectors designed to hook up to a radio terminal, and a tracking device.  Somewhat makeshift in appearance, it seems to have been purpose-built for some specialized task.",
-    "material": "steel",
+    "material": [ "steel" ],
     "weight": "21000 g",
     "volume": "2 L",
     "bashing": 4,

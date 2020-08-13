@@ -2,15 +2,13 @@
   {
     "id": "arcana_mark_destructive_absorption",
     "type": "SPELL",
-    "name": "Mark: Destructive Absorption",
+    "name": { "str": "Mark: Destructive Absorption" },
     "description": "Sanguine Mark\nUsing this spell will drain energy from your surroundings, creating a void in reality with disruptive effects on a single target.  Machines and some otherworldly creatures will be immune to this attack, but the side effects of channeling that energy will still affect you, fueling your inner fire.  Beware the risk of tearing the fabric of reality.",
     "message": "With a strange gesture, the fabric of the Veil warps and decays.  %s!",
     "effect": "target_attack",
     "valid_targets": [ "ally", "hostile" ],
     "flags": [ "SILENT", "SOMATIC", "NO_HANDS", "NO_FAIL" ],
-    "extra_effects": [
-      { "id": "arcana_aftermath_destructive_absorption_side_effects", "hit_self": true, "max_level": 5 }
-    ],
+    "extra_effects": [ { "id": "arcana_aftermath_destructive_absorption_side_effects", "hit_self": true, "max_level": 5 } ],
     "min_damage": 70,
     "max_damage": 360,
     "damage_increment": 58,
@@ -36,14 +34,12 @@
   {
     "id": "arcana_mark_displacing_slash",
     "type": "SPELL",
-    "name": "Sign: Displacing Slash",
+    "name": { "str": "Sign: Displacing Slash" },
     "description": "Magic Sign\nUsing this spell will swap your position with a hostile target of your choosing.  While it won't directly damage your chosen target, anything caught in the bloody swath around where you emerge will be severely injured.",
     "message": "You lunge forward, arm outstretched toward your target.  %s!",
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "SOMATIC", "NO_HANDS", "NO_FAIL", "SWAP_POS" ],
-    "extra_effects": [
-      { "id": "arcana_aftermath_displacing_slash_aoe", "hit_self": false, "max_level": 5 }
-    ],
+    "extra_effects": [ { "id": "arcana_aftermath_displacing_slash_aoe", "hit_self": false, "max_level": 5 } ],
     "effect": "target_attack",
     "effect_str": "downed",
     "energy_source": "HP",
@@ -72,7 +68,7 @@
   {
     "id": "arcana_mark_drain_life",
     "type": "SPELL",
-    "name": "Mark: Drain Life",
+    "name": { "str": "Mark: Drain Life" },
     "description": "Sanguine Mark\nUsing this spell will anoint you with a horned halo, granting a life-draining effect.  The cost may be greater than the reward.",
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_aftermath_drain_life_fatigue", "hit_self": false } ],
@@ -97,12 +93,15 @@
   {
     "id": "arcana_mark_elemental_sign",
     "type": "SPELL",
-    "name": "Mark: Elemental Sign",
+    "name": { "str": "Mark: Elemental Sign" },
     "description": "Sanguine Mark\nUsing this spell will grant complete immunity to fire, and sap heat from all around you.",
     "message": "With a gesture, your inner fire flares up.  %s!",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC", "NO_HANDS", "NO_FAIL" ],
-    "extra_effects": [ { "id": "arcana_aftermath_elemental_coldness", "hit_self": false, "max_level": 5 }, { "id": "arcana_aftermath_elemental_stun", "hit_self": false, "max_level": 5 } ],
+    "extra_effects": [
+      { "id": "arcana_aftermath_elemental_coldness", "hit_self": false, "max_level": 5 },
+      { "id": "arcana_aftermath_elemental_stun", "hit_self": false, "max_level": 5 }
+    ],
     "effect": "target_attack",
     "effect_str": "heat_ward_true",
     "energy_source": "HP",
@@ -122,7 +121,7 @@
   {
     "id": "arcana_mark_infernal_flame",
     "type": "SPELL",
-    "name": "Mark: Infernal Breath",
+    "name": { "str": "Mark: Infernal Breath" },
     "description": "Sanguine Mark\nUsing this spell will channel your inner fire into a devastating blast, inflicting horrific burns and leaving a permanent scar upon the land.  Be careful using it around allies, and note that this will consume calories as with firing mundane dragonfire, and risks damaging the fabric of reality.",
     "message": "A bolt of flame leaps from your mouth, shaped into unholy fire with a wave of the hand.  %s!",
     "effect": "line_attack",
@@ -167,15 +166,13 @@
   {
     "id": "arcana_mark_malevolent_gaze",
     "type": "SPELL",
-    "name": "Mark: Malevolent Gaze",
+    "name": { "str": "Mark: Malevolent Gaze" },
     "description": "Sanguine Mark\nUsing this spell will strike a single target with a powerful temporal effect, It won't deal any damage, but it will freeze your prey in place momentarily, leaving them slowed for a while afterward.",
     "message": "Your pupils briefly narrow into thin slits as you focus your hatred.  %s!",
     "effect": "mod_moves",
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "SOMATIC", "NO_HANDS", "NO_FAIL" ],
-    "extra_effects": [
-      { "id": "arcana_aftermath_malevolent_gaze_slowdown", "hit_self": false, "max_level": 5 }
-    ],
+    "extra_effects": [ { "id": "arcana_aftermath_malevolent_gaze_slowdown", "hit_self": false, "max_level": 5 } ],
     "min_damage": -1500,
     "max_damage": -3000,
     "damage_increment": -300,
@@ -196,7 +193,7 @@
   {
     "id": "arcana_mark_might",
     "type": "SPELL",
-    "name": "Mark: Might",
+    "name": { "str": "Mark: Might" },
     "description": "Sanguine Mark\nUsing this spell will grant a temporary boost to strength.  It can only be used on yourself.",
     "message": "A lust for battle surges through you as you complete the ritual gesture.  %s!",
     "valid_targets": [ "self" ],
@@ -220,7 +217,7 @@
   {
     "id": "arcana_mark_revenant_blood",
     "type": "SPELL",
-    "name": "Mark: Revenant Blood",
+    "name": { "str": "Mark: Revenant Blood" },
     "description": "Sanguine Mark\nUsing this spell will grant protection against pestilence in food and water, and against the Mycus.  The body will burn through its reserves faster however.",
     "message": "With a sign, you feel your blood burning with magical power.  %s!",
     "valid_targets": [ "self" ],
@@ -244,7 +241,7 @@
   {
     "id": "arcana_mark_summon_dark_wyrm",
     "type": "SPELL",
-    "name": "Mark: Summon Dark Wyrm",
+    "name": { "str": "Mark: Summon Dark Wyrm" },
     "description": "Sanguine Mark\nUsing this spell will summon a dark wyrm.  Although it will be permanent at maximum power, whether it will obey you is completely up to chance.",
     "message": "Your gesture causes the ground to shift and flow, a pitch-black form slithering out of the earth itself.  %s!",
     "valid_targets": [ "ground" ],
@@ -273,7 +270,7 @@
   {
     "id": "arcana_mark_summon_fiend",
     "type": "SPELL",
-    "name": "Mark: Summon Fiend",
+    "name": { "str": "Mark: Summon Fiend" },
     "description": "Sanguine Mark\nUsing this spell will summon an ashen revenant.  Although it will be permanent at maximum power, whether it will obey you is completely up to chance.",
     "message": "With a hand sign, a plume of living flame erupts from the ground, solidifying into a scorched humanoid form.  %s!",
     "valid_targets": [ "ground" ],
@@ -302,7 +299,7 @@
   {
     "id": "arcana_mark_summon_jabberwock",
     "type": "SPELL",
-    "name": "Mark: Summon Jabberwock",
+    "name": { "str": "Mark: Summon Jabberwock" },
     "description": "Sanguine Mark\nUsing this spell will summon a golem woven of flesh.  Although it will be permanent at maximum power, whether it will obey you is completely up to chance.",
     "message": "The ground warps at your command, a host of rotting bodies emerging from the disturbance, forms fusing together into an abomination.  %s!",
     "valid_targets": [ "ground" ],
@@ -331,7 +328,7 @@
   {
     "id": "arcana_mark_surge_adrenaline",
     "type": "SPELL",
-    "name": "Mark: Surge of Adrenaline",
+    "name": { "str": "Mark: Surge of Adrenaline" },
     "description": "Sanguine Mark\nUsing this spell will provoke a rush of adrenaline for urgent situations, albeit with the same drawbacks afterward.  It can only be used on yourself.",
     "message": "Your gesture provokes a rush of instinct, urging you to kill.  %s!",
     "valid_targets": [ "self" ],

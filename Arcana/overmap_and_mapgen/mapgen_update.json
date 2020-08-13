@@ -19,9 +19,7 @@
   {
     "type": "ter_furn_transform",
     "id": "arcana_pestilence",
-    "terrain": [
-      { "result": [ [ "t_dirt", 75 ], [ "t_dirt_mound", 25 ] ], "valid_flags": [ "FLAT", "SHRUB" ] }
-    ]
+    "terrain": [ { "result": [ [ "t_dirt", 75 ], [ "t_dirt_mound", 25 ] ], "valid_flags": [ "FLAT", "SHRUB" ] } ]
   },
   {
     "type": "ter_furn_transform",
@@ -1572,9 +1570,7 @@
         { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_gibs_flesh", "intensity": 1 },
         { "x": [ 20, 21 ], "y": [ 12, 14 ], "field": "fd_gibs_flesh", "intensity": 1 }
       ],
-      "place_monster": [
-        { "monster": "mon_jabberwock", "x": 20, "y": 12 }
-      ]
+      "place_monster": [ { "monster": "mon_jabberwock", "x": 20, "y": 12 } ]
     }
   },
   {
@@ -1586,10 +1582,7 @@
         { "point": "terrain", "id": "t_drystone_wall", "x": 18, "y": 16 },
         { "point": "terrain", "id": "t_drystone_wall", "x": 18, "y": 21 }
       ],
-      "place_loot": [
-        { "item": "candle_warding_special", "x": 20, "y": 17 },
-        { "item": "candle_warding_special", "x": 20, "y": 20 }
-      ]
+      "place_loot": [ { "item": "candle_warding_special", "x": 20, "y": 17 }, { "item": "candle_warding_special", "x": 20, "y": 20 } ]
     }
   },
   {
@@ -1611,7 +1604,10 @@
         { "group": "metal_workshop", "x": 6, "y": 8, "chance": 75, "repeat": 10 }
       ],
       "faction_owner": [ { "id": "cleansing_flame", "x": 3, "y": [ 6, 8 ] }, { "id": "cleansing_flame", "x": 6, "y": 8 } ],
-      "place_npcs": [ { "class": "cleansing_flame_purifier_merchant", "x": 5, "y": 8 }, { "class": "cleansing_flame_purifier_rep", "x": 12, "y": 5, "add_trait": "FIX_CF_GM" } ]
+      "place_npcs": [
+        { "class": "cleansing_flame_purifier_merchant", "x": 5, "y": 8 },
+        { "class": "cleansing_flame_purifier_rep", "x": 12, "y": 5, "add_trait": "FIX_CF_GM" }
+      ]
     }
   },
   {

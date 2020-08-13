@@ -185,7 +185,16 @@
       { "part": "hand_r", "ignored": 2 },
       { "part": "torso", "ignored": 20 }
     ],
-    "armor": [ { "parts": "ALL", "bash": 1, "cut": 4, "stab": 2, "bullet": 1, "acid": 3 } ]
+    "armor": [
+      {
+        "parts": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "mouth", "eyes" ],
+        "bash": 1,
+        "cut": 4,
+        "stab": 2,
+        "bullet": 1,
+        "acid": 3
+      }
+    ]
   },
   {
     "type": "mutation",
@@ -200,7 +209,12 @@
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
     "prereqs2": [ "CANNIBAL" ],
     "enchantments": [ "ENCH_DRAGONBLOOD_ELEMENTAL_AFFINITY" ],
-    "armor": [ { "parts": "ALL", "heat": 6 } ]
+    "armor": [
+      {
+        "parts": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "mouth", "eyes" ],
+        "heat": 6
+      }
+    ]
   },
   {
     "type": "mutation",

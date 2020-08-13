@@ -34,10 +34,7 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
-          "values": [
-            { "value": "STRENGTH", "add": 4 },
-            { "value": "DEXTERITY", "add": 2 }
-          ],
+          "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
           "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
           "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
         }

@@ -19,7 +19,15 @@
     "type": "martial_art",
     "name": "Silat",
     "extend": {
-      "weapons": [ "blood_athame", "moonstone_fang", "staff_druidic", "verge_meteoric", "bloodscourge", "scourge_staff", "spear_pestilence" ]
+      "weapons": [
+        "blood_athame",
+        "moonstone_fang",
+        "staff_druidic",
+        "verge_meteoric",
+        "bloodscourge",
+        "scourge_staff",
+        "spear_pestilence"
+      ]
     }
   },
   {
@@ -55,7 +63,17 @@
     "copy-from": "style_eskrima",
     "type": "martial_art",
     "name": "Eskrima",
-    "extend": { "weapons": [ "graboid_fang", "dermatik_sting", "monster_fang", "blood_athame", "moonstone_fang", "staff_druidic", "verge_meteoric" ] }
+    "extend": {
+      "weapons": [
+        "graboid_fang",
+        "dermatik_sting",
+        "monster_fang",
+        "blood_athame",
+        "moonstone_fang",
+        "staff_druidic",
+        "verge_meteoric"
+      ]
+    }
   },
   {
     "id": "style_sojutsu",
@@ -86,9 +104,7 @@
         "buff_duration": 2,
         "max_stacks": 1,
         "bonus_dodges": 2,
-        "flat_bonuses": [
-		{ "stat": "dodge", "scale": 1.0 } 
-		]
+        "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ]
       },
       {
         "id": "buff_cleansingflame_onmove2",
@@ -100,9 +116,7 @@
         "buff_duration": 2,
         "max_stacks": 1,
         "bonus_blocks": 2,
-        "flat_bonuses": [
-		{ "stat": "block", "scale": 5 }
-		]
+        "flat_bonuses": [ { "stat": "block", "scale": 5 } ]
       },
       {
         "id": "buff_cleansingflame_onmove3",
@@ -113,9 +127,7 @@
         "buff_duration": 2,
         "max_stacks": 1,
         "bonus_dodges": 2,
-        "flat_bonuses": [
-		{ "stat": "dodge", "scale": 1.0 }
-		]
+        "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ]
       }
     ],
     "onattack_buffs": [
@@ -127,10 +139,7 @@
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
         "buff_duration": 2,
         "max_stacks": 4,
-        "flat_bonuses": [
-		{ "stat": "hit", "scale": 1 },
-		{ "stat": "movecost", "scale": -5.0 }
-		]
+        "flat_bonuses": [ { "stat": "hit", "scale": 1 }, { "stat": "movecost", "scale": -5.0 } ]
       }
     ],
     "onhit_buffs": [
@@ -144,10 +153,10 @@
         "buff_duration": 2,
         "max_stacks": 4,
         "flat_bonuses": [
-		{ "stat": "armor", "type": "bash", "scale": 1 },
-		{ "stat": "armor", "type": "cut", "scale": 1 },
-		{ "stat": "armor", "type": "stab", "scale": 1 }
-		]
+          { "stat": "armor", "type": "bash", "scale": 1 },
+          { "stat": "armor", "type": "cut", "scale": 1 },
+          { "stat": "armor", "type": "stab", "scale": 1 }
+        ]
       },
       {
         "id": "buff_cleansingflame_onhit2",
@@ -158,9 +167,7 @@
         "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
         "buff_duration": 2,
         "max_stacks": 4,
-        "flat_bonuses": [
-		{ "stat": "arpen", "type": "cut", "scale": 3 }
-		]
+        "flat_bonuses": [ { "stat": "arpen", "type": "cut", "scale": 3 } ]
       }
     ],
     "onkill_buffs": [
@@ -173,11 +180,7 @@
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [
-		{ "stat": "dodge", "scale": 1.0 },
-		{ "stat": "hit", "scale": -1 },
-		{ "stat": "movecost", "scale": 5.0 }
-		]
+        "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 }, { "stat": "hit", "scale": -1 }, { "stat": "movecost", "scale": 5.0 } ]
       },
       {
         "id": "buff_cleansingflame_onkill2",
@@ -188,11 +191,7 @@
         "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
         "buff_duration": 3,
         "max_stacks": 4,
-        "flat_bonuses": [
-		{ "stat": "block", "scale": 5 },
-		{ "stat": "hit", "scale": -1 },
-		{ "stat": "movecost", "scale": 5.0 }
-		]
+        "flat_bonuses": [ { "stat": "block", "scale": 5 }, { "stat": "hit", "scale": -1 }, { "stat": "movecost", "scale": 5.0 } ]
       }
     ],
     "techniques": [

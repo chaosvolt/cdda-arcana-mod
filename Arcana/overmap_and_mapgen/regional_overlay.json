@@ -9,6 +9,10 @@
     "type": "city_building",
     "id": "house_arcana",
     "locations": [ "land" ],
-    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "house_arcana_north" }, { "point": [ 0, 0, 1 ], "overmap": "house_arcana_roof_north" }, { "point": [ 0, 0, -1 ], "overmap": "arcanist_basement_north" } ]
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "house_arcana_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "house_arcana_roof_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "arcanist_basement_north" }
+    ]
   }
 ]

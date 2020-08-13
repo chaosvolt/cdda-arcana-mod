@@ -276,7 +276,7 @@
   {
     "id": "arcana_mark_suppression",
     "type": "SPELL",
-    "name": "Mark: Suppression",
+    "name": { "str": "Mark: Suppression" },
     "description": "Sanguine Mark\nUsing this spell will anoint you with an obsidian halo, striking blind all who attack you.   It will also dull the fire within you, slowing your metabolism.",
     "message": "You raise your hand, and the odd warmth within your body seems to burn less intensely.  %s!",
     "valid_targets": [ "self" ],

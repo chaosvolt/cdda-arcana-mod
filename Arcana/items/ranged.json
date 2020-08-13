@@ -193,7 +193,15 @@
     },
     "ammo_effects": [ "ACIDBOMB", "TOXICGAS" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "NEVER_JAMS",
+      "PRIMITIVE_RANGED_WEAPON",
+      "NONCONDUCTIVE",
+      "NO_SALVAGE",
+      "MAGIC_FOCUS",
+      "TRADER_KEEP_EQUIPPED"
+    ]
   },
   {
     "id": "electrothermal_arc_cannon",

@@ -2,7 +2,7 @@
   {
     "id": "arcana_react_bane_staff_venom",
     "type": "SPELL",
-    "name": "React: Venom",
+    "name": { "str": "React: Venom" },
     "description": "Inflicts a bit of biological damage and poison.",
     "message": "Sickening venom flows from your staff as you strike.",
     "flags": [ "RANDOM_DURATION" ],
@@ -17,7 +17,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_blood_axe_wonder",
-    "name": "React: Reaving",
+    "name": { "str": "React: Reaving" },
     "description": "Chance of inflicting bleeding on hit.",
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -46,7 +46,7 @@
   {
     "id": "arcana_react_blood_axe_bleed",
     "type": "SPELL",
-    "name": "React: Reaving Effect",
+    "name": { "str": "React: Reaving Effect" },
     "description": "And the actual blood loss.",
     "message": "",
     "valid_targets": [ "hostile" ],
@@ -66,7 +66,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_bloodscourge_wonder",
-    "name": "React: Immolate",
+    "name": { "str": "React: Immolate" },
     "description": "Chance of lighting target on fire.",
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -90,7 +90,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_evil_mimic",
-    "name": "React: Addicted To The Power",
+    "name": { "str": "React: Addicted To The Power" },
     "description": "This adds a random duration of an effect that mimics evil but technically isn't.",
     "flags": [ "SILENT", "RANDOM_DURATION" ],
     "message": "",
@@ -103,7 +103,7 @@
   {
     "id": "arcana_react_bloodscourge_fire",
     "type": "SPELL",
-    "name": "React: Immolate Effect",
+    "name": { "str": "React: Immolate Effect" },
     "description": "This commits the burnening.",
     "message": "",
     "valid_targets": [ "hostile" ],
@@ -116,7 +116,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_cursed_sword_shell",
-    "name": "React: Cursed Shell",
+    "name": { "str": "React: Cursed Shell" },
     "description": "This exists only to trigger on-self effects from an on-hit action.",
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -129,7 +129,7 @@
   {
     "id": "arcana_react_cursed_sword_mending",
     "type": "SPELL",
-    "name": "React: Cursed Mending",
+    "name": { "str": "React: Cursed Mending" },
     "message": "",
     "description": "Bleeding is for the weak.",
     "valid_targets": [ "self" ],
@@ -142,7 +142,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_drain_life",
-    "name": "React: Drain Life Shell",
+    "name": { "str": "React: Drain Life Shell" },
     "description": "This exists only to trigger on-self effects from an on-hit action.",
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -155,7 +155,7 @@
   {
     "id": "arcana_react_drain_life_2",
     "type": "SPELL",
-    "name": "React: Drain Life Effect",
+    "name": { "str": "React: Drain Life Effect" },
     "description": "This creates the effect that heals the caster.",
     "message": "",
     "valid_targets": [ "self" ],
@@ -170,7 +170,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_drain_life_improved",
-    "name": "React: Improved Drain Life Shell",
+    "name": { "str": "React: Improved Drain Life Shell" },
     "description": "This exists only to trigger on-self effects from an on-hit action.",
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -183,7 +183,7 @@
   {
     "id": "arcana_react_drain_life_improved_2",
     "type": "SPELL",
-    "name": "React: Drain Life Effect",
+    "name": { "str": "React: Drain Life Effect" },
     "description": "This creates the effect that heals the caster.",
     "message": "",
     "valid_targets": [ "self" ],
@@ -198,7 +198,7 @@
   {
     "id": "arcana_react_mantle_escape",
     "type": "SPELL",
-    "name": "React: Mantle Elusiveness",
+    "name": { "str": "React: Mantle Elusiveness" },
     "message": "",
     "description": "Bravely run away.",
     "valid_targets": [ "self" ],
@@ -211,7 +211,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_satchel_effect",
-    "name": "React: Satchel Instability",
+    "name": { "str": "React: Satchel Instability" },
     "description": "Chance of various possible effects.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -245,7 +245,7 @@
   {
     "id": "arcana_react_satchel_attention",
     "type": "SPELL",
-    "name": "React: Satchel Attention",
+    "name": { "str": "React: Satchel Attention" },
     "description": "Small amount of nether attention.",
     "message": "You feel like something is watching you...",
     "valid_targets": [ "self" ],
@@ -258,7 +258,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_satchel_teleport",
-    "name": "React: Satchel Teleport",
+    "name": { "str": "React: Satchel Teleport" },
     "description": "Get yote.  Safe, but comes with teleglow.",
     "extra_effects": [ { "id": "arcana_react_satchel_teleglow" } ],
     "message": "You feel yanked in a non-existent direction!",
@@ -270,7 +270,7 @@
   {
     "id": "arcana_react_satchel_teleglow",
     "type": "SPELL",
-    "name": "React: Satchel Teleglow",
+    "name": { "str": "React: Satchel Teleglow" },
     "description": "Small amount of teleglow.",
     "message": "",
     "valid_targets": [ "self" ],
@@ -283,7 +283,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_moonstone_touch",
-    "name": "React: Moonstone Touch",
+    "name": { "str": "React: Moonstone Touch" },
     "description": "One in three chance of triggering life drain bonus effects.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -296,7 +296,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_moonstone_touch",
-    "name": "React: Moonstone Touch",
+    "name": { "str": "React: Moonstone Touch" },
     "description": "Little bit of madness.",
     "flags": [ "SILENT", "RANDOM_DURATION" ],
     "message": "",
@@ -310,7 +310,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_moonstone_touch_2",
-    "name": "React: Moonstone Touch 2",
+    "name": { "str": "React: Moonstone Touch 2" },
     "description": "And some sickness to go with the madness.",
     "flags": [ "SILENT", "RANDOM_DURATION" ],
     "message": "",
@@ -323,7 +323,7 @@
   {
     "id": "arcana_react_shadowy_shield",
     "type": "SPELL",
-    "name": "Shadowy Shield Effect",
+    "name": { "str": "Shadowy Shield Effect" },
     "description": "This creates the effect that strikes your attackers blind.",
     "message": "Wavering shadows lash out at your attacker!",
     "valid_targets": [ "hostile", "ground" ],
@@ -347,7 +347,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_nothing",
-    "name": "React: Nothing",
+    "name": { "str": "React: Nothing" },
     "description": "Dirty hack to add RNG to react effects.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ],
@@ -357,7 +357,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_spear_pestilence_wonder",
-    "name": "React: Pestilence",
+    "name": { "str": "React: Pestilence" },
     "description": "Chance of inflicting paralytic poison.",
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -370,7 +370,7 @@
   {
     "id": "arcana_react_spear_pestilence_poison",
     "type": "SPELL",
-    "name": "React: Paralysis",
+    "name": { "str": "React: Paralysis" },
     "description": "The actual poison effect.",
     "message": "The air around your spear wavers with ethereal force.",
     "flags": [ "RANDOM_DURATION" ],
@@ -385,7 +385,7 @@
   {
     "type": "SPELL",
     "id": "arcana_react_symbol_judgment_wonder",
-    "name": "React: Judgment",
+    "name": { "str": "React: Judgment" },
     "description": "Roll for zot!",
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -404,7 +404,7 @@
   {
     "id": "arcana_react_symbol_judgment_zap",
     "type": "SPELL",
-    "name": "React: Electric Sting",
+    "name": { "str": "React: Electric Sting" },
     "description": "Zaps someone in melee.",
     "message": "Sparks jump from your weapon.",
     "flags": [ "SILENT", "RANDOM_DURATION" ],

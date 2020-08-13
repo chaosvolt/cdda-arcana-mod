@@ -2,7 +2,7 @@
   {
     "type": "SPELL",
     "id": "arcana_trap_archon_shadows",
-    "name": "Trap: Shadowy Wonder",
+    "name": { "str": "Trap: Shadowy Wonder" },
     "description": "Real or fake?  You'll have to find out yourself!",
     "valid_targets": [ "hostile" ],
     "message": "",
@@ -20,7 +20,7 @@
   {
     "id": "arcana_trap_archon_shadows_1",
     "type": "SPELL",
-    "name": "Trap: Summoned Shadows",
+    "name": { "str": "Trap: Summoned Shadows" },
     "description": "This creates the real deal.",
     "valid_targets": [ "ground" ],
     "flags": [ "HOSTILE_SUMMON", "RANDOM_DAMAGE", "RANDOM_DURATION", "LOUD" ],
@@ -38,7 +38,7 @@
   {
     "id": "arcana_trap_archon_shadows_2",
     "type": "SPELL",
-    "name": "Trap: Summoned Shadows",
+    "name": { "str": "Trap: Summoned Shadows" },
     "description": "Fake shadow monsters.",
     "valid_targets": [ "ground" ],
     "flags": [ "HOSTILE_SUMMON", "RANDOM_DAMAGE", "RANDOM_DURATION", "LOUD" ],
@@ -56,7 +56,7 @@
   {
     "id": "arcana_trap_archon_shadows_3",
     "type": "SPELL",
-    "name": "Trap: Summoned Shadow Snakes",
+    "name": { "str": "Trap: Summoned Shadow Snakes" },
     "description": "This creates the real deal.",
     "valid_targets": [ "ground" ],
     "flags": [ "HOSTILE_SUMMON", "RANDOM_DAMAGE", "RANDOM_DURATION", "LOUD" ],
@@ -74,7 +74,7 @@
   {
     "id": "arcana_trap_archon_shadows_4",
     "type": "SPELL",
-    "name": "Trap: Fake Shadow Snakes",
+    "name": { "str": "Trap: Fake Shadow Snakes" },
     "description": "The snek is fek.",
     "valid_targets": [ "ground" ],
     "flags": [ "HOSTILE_SUMMON", "RANDOM_DAMAGE", "RANDOM_DURATION", "LOUD" ],
@@ -92,7 +92,7 @@
   {
     "id": "arcana_trap_archon_hallu",
     "type": "SPELL",
-    "name": "Trap: Hallu",
+    "name": { "str": "Trap: Hallu" },
     "description": "Brain pain.",
     "valid_targets": [ "self", "ally", "hostile" ],
     "flags": [ "LOUD" ],
@@ -102,14 +102,12 @@
     "sound_type": "speech",
     "effect": "target_attack",
     "effect_str": "visuals",
-    "extra_effects": [
-      { "id": "arcana_trap_archon_hallu2" }
-    ]
+    "extra_effects": [ { "id": "arcana_trap_archon_hallu2" } ]
   },
   {
     "id": "arcana_trap_archon_hallu2",
     "type": "SPELL",
-    "name": "Trap: Hallu 2",
+    "name": { "str": "Trap: Hallu 2" },
     "description": "More brain pain.",
     "valid_targets": [ "self", "ally", "hostile" ],
     "flags": [ "SILENT" ],
@@ -122,7 +120,7 @@
   {
     "id": "arcana_trap_archon_chill",
     "type": "SPELL",
-    "name": "Trap: Chill",
+    "name": { "str": "Trap: Chill" },
     "description": "Real damn cold.",
     "valid_targets": [ "ground" ],
     "flags": [ "RANDOM_DURATION", "LOUD" ],
