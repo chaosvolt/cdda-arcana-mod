@@ -103,7 +103,7 @@
           "damage_type": "true",
           "duration": "1 s",
           "amount": -5,
-          "bodyparts": [ "TORSO", "HEAD", "ARM_L", "LEG_L", "ARM_R", "LEG_R" ]
+          "bodyparts": [ "torso", "head", "arm_l", "leg_l", "arm_r", "leg_r" ]
         }
       ]
     },
