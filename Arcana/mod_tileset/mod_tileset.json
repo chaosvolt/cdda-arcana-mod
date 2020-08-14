@@ -15,77 +15,62 @@
   },
   {
     "type": "mod_tileset",
-    "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
+    "compatibility": [ "UNDEAD_PEOPLE", "UNDEAD_PEOPLE_BASE" ],
     "tiles-new": [
       {
         "file": "mod_tileset/arcana_expan.png",
         "tiles": [
-          { "id": "overlay_mutation_ARCANA_SCALYWINGS", "fg": 5, "bg": 0 },
-          { "id": "overlay_mutation_ARCANA_DRAGONWINGS", "fg": 5, "bg": 0 },
-          { "id": "overlay_mutation_ARCANA_DRAGONMUZZLE", "fg": 6, "bg": 0 },
-          { "id": "overlay_mutation_ARCANA_SCALYLEGS", "fg": 7, "bg": 0 },
-          { "id": "overlay_mutation_ARCANA_DRAGONLEGS", "fg": 7, "bg": 0 },
-          { "id": "overlay_mutation_ARCANA_SCALYTAIL", "fg": 8, "bg": 0 },
-          { "id": "overlay_mutation_ARCANA_DRAGONTAIL", "fg": 9, "bg": 0 },
-          { "id": "overlay_mutation_ARCANA_DRAGONHORNS", "fg": 10, "bg": 0 },
-          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 11, "bg": 0 },
-          { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 12, "bg": 0 },
-          { "id": "overlay_mutation_ARCANA_DRAGONCLAWS", "fg": 13, "bg": 0 },
-          { "id": "overlay_wielded_thunder_sigil", "fg": 14, "bg": 0 },
-          { "id": "flame_talisman", "fg": 15, "bg": 0 },
-          { "id": "water_talisman", "fg": 23, "bg": 0 },
-          { "id": "earth_talisman", "fg": 24, "bg": 0 },
-          { "id": "red_black_vulnerary", "fg": 25, "bg": 0 },
-          { "id": "yellow_white_incense", "fg": 26, "bg": 0 },
-          { "id": "CF_golden_scale", "fg": 27, "bg": 0 },
-          { "id": "mon_archon", "fg": 28, "bg": 0 },
-          { "id": "corpse_mon_archon", "fg": 29, "bg": 0 },
-          { "id": "overlay_wielded_stinger_flute", "fg": 30, "bg": 0 },
-          { "id": "overlay_wielded_offering_chalice", "fg": 31, "bg": 0 },
-          { "id": "air_talisman", "fg": 32, "bg": 0 },
-          { "id": "tr_archon_shadow_trap", "fg": 33, "bg": 0 },
-          { "id": "tr_archon_hallu_trap", "fg": 34, "bg": 0 },
-          { "id": "tr_archon_chill_trap", "fg": 35, "bg": 0 }
+
+          { "id": "f_altar_arcana", "fg": 1 },
+          { "id": "f_arcane_candlestick", "fg": 2 },
+          { "id": "f_blade_upright", "fg": 3 },
+          { "id": "candle_warding_special", "fg": 4 },
+          { "id": "overlay_mutation_ARCANA_SCALYWINGS", "fg": 5 },
+          { "id": "overlay_mutation_ARCANA_DRAGONWINGS", "fg": 5 },
+          { "id": "overlay_mutation_ARCANA_DRAGONMUZZLE", "fg": 6 },
+          { "id": "overlay_mutation_ARCANA_SCALYLEGS", "fg": 7 },
+          { "id": "overlay_mutation_ARCANA_DRAGONLEGS", "fg": 7 },
+          { "id": "overlay_mutation_ARCANA_SCALYTAIL", "fg": 8 },
+          { "id": "overlay_mutation_ARCANA_DRAGONTAIL", "fg": 9 },
+          { "id": "overlay_mutation_ARCANA_DRAGONHORNS", "fg": 10 },
+          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 11 },
+          { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 12 },
+          { "id": "overlay_mutation_ARCANA_DRAGONCLAWS", "fg": 13 },
+          { "id": "overlay_wielded_thunder_sigil", "fg": 14 },
+          { "id": "flame_talisman", "fg": 15 },
+          { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 16 },
+          { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 17 },
+          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 18 },
+          { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 19 },
+          { "id": "scroll_magic_base", "fg": 20 },
+          { "id": "candle_warding_active", "fg": 21 },
+          { "id": "f_candle_barrier", "fg": 21 },
+          { "id": "f_candle_barrier_playermade", "fg": 22 },
+          { "id": "water_talisman", "fg": 23 },
+          { "id": "earth_talisman", "fg": 24 },
+          { "id": "red_black_vulnerary", "fg": 25 },
+          { "id": "yellow_white_incense", "fg": 26 },
+          { "id": "CF_golden_scale", "fg": 27 },
+          { "id": "mon_archon", "fg": 28 },
+          { "id": "corpse_mon_archon", "fg": 29 },
+          { "id": "overlay_wielded_stinger_flute", "fg": 30 },
+          { "id": "overlay_wielded_offering_chalice", "fg": 31 },
+          { "id": "air_talisman", "fg": 32 },
+          { "id": "tr_archon_shadow_trap", "fg": 33 },
+          { "id": "tr_archon_hallu_trap", "fg": 34 },
+          { "id": "tr_archon_chill_trap", "fg": 35 },
+          { "id": "essence", "fg": 36 },
+          { "id": "essence_blood", "fg": 37 },
+          { "id": "essence_dull", "fg": 38 },
+          { "id": "essence_pure", "fg": 39 },
+          { "id": "totem_base", "fg": 40 }
         ]
       }
     ]
   },
   {
     "type": "mod_tileset",
-    "compatibility": [ "MshockXottoplus" ],
-    "tiles-new": [
-      {
-        "file": "mod_tileset/arcana_expan.png",
-        "tiles": [
-          { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 1, "bg": 0 },
-          { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 2, "bg": 0 },
-          { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 3, "bg": 0 },
-          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 4, "bg": 0 },
-          { "id": "candle_warding_active", "fg": 21, "bg": 0 },
-          { "id": "f_candle_barrier", "fg": 21, "bg": 20 },
-          { "id": "f_candle_barrier_playermade", "fg": 22, "bg": 20 }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "mod_tileset",
-    "compatibility": [ "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
-    "tiles-new": [
-      {
-        "file": "mod_tileset/arcana_expan.png",
-        "tiles": [
-          { "id": "overlay_female_mutation_ARCANA_SCALYPATCHES", "fg": 16, "bg": 0 },
-          { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 17, "bg": 0 },
-          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 18, "bg": 0 },
-          { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 19, "bg": 0 }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "mod_tileset",
-    "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
+    "compatibility": [ "UNDEAD_PEOPLE", "UNDEAD_PEOPLE_BASE" ],
     "tiles-new": [
       {
         "file": "mod_tileset/arcana_expan_80x64.png",
