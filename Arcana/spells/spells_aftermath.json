@@ -130,7 +130,7 @@
     "max_aoe": 2,
     "aoe_increment": 0.2,
     "max_level": 10,
-    "damage_type": "fire"
+    "damage_type": "heat"
   },
   {
     "type": "SPELL",
@@ -1116,7 +1116,7 @@
     "max_aoe": 2,
     "aoe_increment": 0.1,
     "max_level": 20,
-    "damage_type": "fire",
+    "damage_type": "heat",
     "min_duration": 200,
     "max_duration": 2000,
     "duration_increment": 90

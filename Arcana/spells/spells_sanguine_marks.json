@@ -155,7 +155,7 @@
     "base_energy_cost": 12,
     "final_energy_cost": 9,
     "energy_increment": -0.6,
-    "damage_type": "fire",
+    "damage_type": "heat",
     "field_id": "fd_fire",
     "field_chance": 3,
     "min_field_intensity": 1,
