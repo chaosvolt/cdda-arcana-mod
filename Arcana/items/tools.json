@@ -247,7 +247,14 @@
           "has": "WIELD",
           "condition": "ALWAYS",
           "values": [ { "value": "MOVE_COST", "add": -25 } ],
-          "hit_you_effect": [ { "id": "arcana_react_spear_pestilence_wonder" } ]
+          "hit_you_effect": [
+            {
+              "id": "arcana_react_spear_pestilence_poison",
+              "once_in": 3,
+              "message": "The air around your spear wavers with ethereal force.",
+              "npc_message": "The air around %1$s wavers with ethereal force."
+            }
+          ]
         }
       ]
     },
@@ -312,7 +319,7 @@
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
     "name": { "str": "divine scroll of sundering", "str_pl": "divine scrolls of sundering" },
-    "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a thunderous boom, toppling structures and harming creatures all around.  This will not only risk burning the area to the ground, but also attract otherworldly attention.",
+    "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a thunderous boom, toppling structures and harming creatures all around, at the cost of attracting otherworldly attention.",
     "price": 16000,
     "price_postapoc": 6000,
     "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of sundering…" },
@@ -852,9 +859,6 @@
         "type": "transform"
       }
     ],
-    "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_blood_axe_wonder" } ] } ]
-    },
     "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
@@ -1538,7 +1542,20 @@
     "charges_per_use": 2,
     "ammo": "essence_type",
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ] } ]
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "arcana_react_symbol_judgment_zap",
+              "once_in": 3,
+              "message": "Sparks leap from your weapon.",
+              "npc_message": "Sparks leap from %1$s's weapon."
+            }
+          ]
+        }
+      ]
     },
     "use_action": {
       "type": "cast_spell",
@@ -1557,7 +1574,7 @@
     "looks_like": "bullwhip",
     "color": "dark_gray",
     "name": { "str": "moonstone scourge" },
-    "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  While relatively effective as a weapon, fueling it with blood essence will restore its life-draining properties, and make it a much more deadly weapon.",
+    "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  While relatively effective as a weapon, fueling it with blood essence make it much more deadly.",
     "weight": "3500 g",
     "volume": "2 L",
     "price_postapoc": 15000,
@@ -1594,9 +1611,6 @@
     "turns_per_charge": 25,
     "revert_to": "scourge_moonstone",
     "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
-    "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ]
-    },
     "use_action": [ { "target": "scourge_moonstone", "msg": "The wicked energy flowing through the whip fades.", "type": "transform" } ]
   },
   {
@@ -1629,7 +1643,14 @@
           "has": "WIELD",
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ],
-          "hit_me_effect": [ { "id": "arcana_react_shadowy_shield", "once_in": 5 } ],
+          "hit_me_effect": [
+            {
+              "id": "arcana_react_shadowy_shield",
+              "once_in": 5,
+              "message": "Wisps of shadow lash out at %2$s",
+              "npc_message": "Wisps of shadow jump from %1$s to %2$s."
+            }
+          ],
           "intermittent_activation": { "effects": [ { "frequency": "5 minutes", "spell_effects": [ { "id": "arcana_react_moonstone_touch" } ] } ] }
         }
       ]
@@ -1723,9 +1744,6 @@
     "charges_per_use": 9,
     "ammo": "essence_blood_type",
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_stormbringer", "no_fail": true, "need_wielding": true, "level": 0 } ],
-    "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_cursed_sword_shell" } ] } ]
-    },
     "relative": { "to_hit": -1, "cutting": -5 },
     "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }

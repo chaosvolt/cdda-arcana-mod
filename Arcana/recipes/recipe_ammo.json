@@ -83,11 +83,7 @@
     "book_learn": [ [ "book_potioncraft", 5 ], [ "book_bloodmagic", 4 ], [ "recipe_lab_arcana", 4 ] ],
     "qualities": [ { "id": "CHEM", "level": 3 }, { "id": "DISTILL", "level": 1 } ],
     "tools": [ [ [ "electrolysis_kit", 80 ] ] ],
-    "components": [
-      [ [ "blood", 1 ] ],
-      [ [ "salt", 10 ] ],
-      [ [ "material_quicklime", 5 ] ]
-    ],
+    "components": [ [ [ "blood", 1 ] ], [ [ "salt", 10 ] ], [ [ "material_quicklime", 5 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "SECRET" ]
   },
@@ -180,8 +176,48 @@
     "time": "10 m",
     "batch_time_factors": [ 95, 5 ],
     "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 5 ] ],
+    "autolearn": true,
     "using": [ [ "arcana_essence_any", 10 ], [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "essence_pure",
+    "id_suffix": "artifacts",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_AMMO",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "10 m",
+    "batch_time_factors": [ 95, 5 ],
+    "book_learn": [ [ "book_sacrifice", 6 ], [ "book_syncretism", 6 ], [ "book_summoning", 6 ] ],
+    "autolearn": true,
+    "result_mult": 3,
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ], [ "book_summoning", -1 ] ] ],
+    "components": [
+      [
+        [ "art_sphere", 1 ],
+        [ "art_rod", 1 ],
+        [ "art_teardrop", 1 ],
+        [ "art_lamp", 1 ],
+        [ "art_snake", 1 ],
+        [ "art_disc", 1 ],
+        [ "art_beads", 1 ],
+        [ "art_napkin", 1 ],
+        [ "art_urchin", 1 ],
+        [ "art_jelly", 1 ],
+        [ "art_spiral", 1 ],
+        [ "art_pin", 1 ],
+        [ "art_tube", 1 ],
+        [ "art_pyramid", 1 ],
+        [ "art_crystal", 1 ],
+        [ "art_knot", 1 ],
+        [ "art_crescent", 1 ]
+      ]
+    ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },

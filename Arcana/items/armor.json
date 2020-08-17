@@ -61,7 +61,19 @@
     "description": "A strange radiance permeating your body, blinding attackers with otherworldly magic.",
     "color": "dark_gray",
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "arcana_react_shadowy_shield" } ] } ]
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_me_effect": [
+            {
+              "id": "arcana_react_shadowy_shield",
+              "message": "Wisps of shadow lash out at %2$s",
+              "npc_message": "Wisps of shadow jump from %1$s to %2$s."
+            }
+          ]
+        }
+      ]
     },
     "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
   },
@@ -196,16 +208,45 @@
     "coverage": 15,
     "encumbrance": 15,
     "material_thickness": 1,
-    "weight_capacity_modifier": "75 kg",
     "relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "arcana_react_satchel_effect" } ] } ]
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "hit_me_effect": [
+            {
+              "id": "arcana_react_satchel_attention",
+              "hit_self": true,
+              "once_in": 20,
+              "message": "You feel like something is watching you...",
+              "npc_message": "A strange aura of malice seems to briefly surround %1$s."
+            },
+            {
+              "id": "arcana_react_satchel_teleport",
+              "hit_self": true,
+              "once_in": 20,
+              "message": "You feel yanked in a non-existent direction!",
+              "npc_message": "%1$s suddenly vanishes!"
+            }
+          ]
+        }
+      ]
     },
     "pocket_data": [
-      { "pocket_type": "CONTAINER", "max_contains_volume": "75 L", "max_contains_weight": "500 kg", "moves": 80 },
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": true,
+        "spoil_multiplier": 0.9,
+        "weight_multiplier": 0.25,
+        "max_contains_volume": "75 L",
+        "max_contains_weight": "150 kg",
+        "moves": 80
+      },
       {
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 0,
+        "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       },
@@ -213,6 +254,7 @@
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 0,
+        "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       },
@@ -220,6 +262,7 @@
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 0,
+        "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       },
@@ -227,11 +270,12 @@
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 0,
+        "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       }
     ],
     "use_action": { "type": "holster", "holster_prompt": "Store what magical focus?", "holster_msg": "You store your %s" },
-    "flags": [ "WAIST", "OVERSIZE", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [ "WAIST", "OVERSIZE", "TRADER_KEEP_EQUIPPED", "TARDIS" ]
   }
 ]

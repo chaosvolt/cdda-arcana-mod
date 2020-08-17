@@ -27,7 +27,20 @@
     "clip_size": 5,
     "reload": 400,
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ] } ]
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "arcana_react_symbol_judgment_zap",
+              "once_in": 5,
+              "message": "Sparks leap from your weapon.",
+              "npc_message": "Sparks leap from %1$s's weapon."
+            }
+          ]
+        }
+      ]
     },
     "ammo_effects": [ "LIGHTNING_JUDGMENT" ],
     "flags": [ "STAB", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ],
@@ -64,7 +77,20 @@
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_bloodscourge_wonder" } ] } ]
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "arcana_react_bloodscourge_fire",
+              "once_in": 3,
+              "message": "The air around %2$s wavers with unearthly heat in the wake of your strike!",
+              "npc_message": "%2$s suddenly bursts into flames as %1$s swings at them!"
+            }
+          ]
+        }
+      ]
     },
     "flags": [
       "NEVER_JAMS",
@@ -189,7 +215,19 @@
     "clip_size": 4,
     "reload": 200,
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_bane_staff_venom" } ] } ]
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "arcana_react_bane_staff_venom",
+              "message": "Sickening venom flows from your staff as you strike.",
+              "npc_message": "Sickening venom flows from %1$s's staff as they strike."
+            }
+          ]
+        }
+      ]
     },
     "ammo_effects": [ "ACIDBOMB", "TOXICGAS" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
