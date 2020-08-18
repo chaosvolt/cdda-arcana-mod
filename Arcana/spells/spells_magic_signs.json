@@ -357,6 +357,7 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
     "min_damage": 21,
     "max_damage": 133,
+    "damage_type": "true",
     "damage_increment": 11.2,
     "min_range": 8,
     "max_range": 16,
