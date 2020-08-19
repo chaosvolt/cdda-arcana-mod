@@ -1605,5 +1605,116 @@
       ],
       "place_monster": [ { "monster": [ "mon_zombie_electric", "mon_zombie_scientist" ], "x": [ 17, 19 ], "y": [ 16, 17 ] } ]
     }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "lab_finale_1level" ],
+    "weight": 100,
+    "object": {
+      "rotation": [ 0, 3 ],
+      "fill_ter": "t_thconc_floor",
+      "rows": [
+        "........................",
+        "........................",
+        "...|---------|-GG---|...",
+        "...|www8778..|Y...bl|...",
+        "...|1........L....bl|...",
+        "...|1..^^^...L...|--|...",
+        "...|2w^^aA4..|6..G.~|...",
+        "..||-==ooo==-|--|---||..",
+        "..|..c_____cc.33|....|..",
+        "..|5.._____.....|dd..G..",
+        "..|4h..___..cc..gdh..|..",
+        "..|3........cc..gx..c|..",
+        "..|3........cc..gx..c|..",
+        "..|.........cc..gdh..|..",
+        "..|.h...h.......|dd..|..",
+        "..|cccccccc.....|....|..",
+        "..|--------|-GG-|-LL-|..",
+        "...........|....gd...|..",
+        "...........G....gdhYl|..",
+        "...........G....gx..l|..",
+        "...........|bbbb|----|..",
+        "...........|----|.......",
+        "........................",
+        "........................"
+      ],
+      "set": [
+        { "square": "radiation", "amount": 1000, "x": 4, "y": 3, "x2": 12, "y2": 6 },
+        { "square": "radiation", "amount": 100, "x": 6, "y": 7, "x2": 10, "y2": 10 }
+      ],
+      "palettes": [ "lab_palette", "lab_loot_research" ],
+      "terrain": {
+        "_": "t_rock_floor",
+        "=": "t_reb_cage",
+        "7": "t_switchgear_s",
+        "8": "t_current_trans",
+        "Y": "t_thconc_floor_olight",
+        "o": "t_pit"
+      },
+      "furniture": {
+        "~": "f_shower",
+        "1": "f_generator_broken",
+        "2": "f_capacitor",
+        "3": "f_machinery_light",
+        "4": "f_control_station",
+        "5": "f_machinery_electronic",
+        "A": "f_compact_ASRG",
+        "a": "f_wreckage",
+        "b": "f_bench",
+        "w": "f_ground_cable",
+        "r": "f_reactor_meltdown"
+      },
+      "computers": {
+        "6": {
+          "name": "Tertiary Power Access",
+          "access_denied": "ERROR!  Access denied!  Unauthorized access will be met with lethal force!",
+          "security": 2,
+          "options": [ { "name": "UNLOCK REACTOR ROOM", "action": "unlock", "security": 4 } ],
+          "failures": [ { "action": "damage" }, { "action": "secubots" } ]
+        }
+      },
+      "mapping": {
+        "^": { "item": [ { "item": "rock", "count": [ 1, 4 ] } ] },
+        "a": {
+          "item": [
+            { "item": "scrap", "count": [ 4, 16 ] },
+            { "item": "steel_chunk", "count": [ 1, 6 ] },
+            { "item": "plutonium", "count": [ 0, 3 ] },
+            { "item": "lead", "charges": [ 12, 18 ] }
+          ]
+        }
+      },
+      "place_loot": [
+        { "group": "decontamination_room", "x": 19, "y": 3, "chance": 100 },
+        { "group": "decontamination_room", "x": 19, "y": 4, "chance": 100 },
+        { "group": "swat_gear", "x": 20, "y": [ 18, 19 ], "chance": 50, "repeat": 5 },
+        { "item": "scrap", "x": [ 7, 9 ], "y": [ 8, 9 ], "chance": 50, "repeat": 15 },
+        { "item": "e_scrap", "x": [ 7, 9 ], "y": [ 8, 9 ], "chance": 50, "repeat": 4 },
+        { "item": "copper", "x": [ 7, 9 ], "y": [ 8, 9 ], "chance": 50, "repeat": 2 },
+        { "item": "gold_small", "x": [ 7, 9 ], "y": [ 8, 9 ], "chance": 50, "repeat": 2 },
+        { "item": "essence_dull", "x": [ 7, 9 ], "y": [ 8, 9 ], "chance": 50, "repeat": 100 },
+        { "item": "splinter", "x": [ 4, 14 ], "y": [ 9, 14 ], "chance": 50, "repeat": 25 },
+        { "item": "scrap", "x": [ 4, 14 ], "y": [ 9, 14 ], "chance": 50, "repeat": 15 },
+        { "item": "bone_human", "x": [ 4, 14 ], "y": [ 9, 14 ], "chance": 50, "repeat": 10 },
+        { "group": "arcana_hunt_random", "x": [ 12, 13 ], "y": [ 10, 13 ], "chance": 25, "repeat": 5 },
+        { "group": "magic_books", "x": [ 12, 13 ], "y": [ 10, 13 ], "chance": 25, "repeat": 5 },
+        { "group": "lab_magitech_other", "x": [ 12, 13 ], "y": [ 10, 13 ], "chance": 25, "repeat": 5 },
+        { "group": "lab_misc_anomalous_items", "x": [ 12, 13 ], "y": [ 10, 13 ], "chance": 50, "repeat": 5 },
+        { "group": "tools_science", "x": [ 3, 10 ], "y": 15, "chance": 50, "repeat": 5 },
+        { "group": "tools_mechanic", "x": [ 3, 10 ], "y": 15, "chance": 25, "repeat": 5 },
+        { "group": "magic_crafting", "x": [ 3, 10 ], "y": 15, "chance": 50, "repeat": 5 },
+        { "group": "supplies_mechanics", "x": [ 3, 10 ], "y": 15, "chance": 50, "repeat": 5 },
+        { "item": "recipe_lab_arcana", "x": 20, "y": 11, "chance": 100 },
+        { "item": "id_science", "x": 20, "y": 12, "chance": 100 }
+      ],
+      "place_fields": [ { "x": 8, "y": 8, "field": "fd_fatigue", "intensity": 1 } ],
+      "place_monster": [
+        { "monster": "mon_secubot", "x": 18, "y": 18 },
+        { "monster": "mon_science_bot", "x": 19, "y": 13 },
+        { "monster": "mon_hazmatbot", "x": 7, "y": 4 }
+      ]
+    }
   }
 ]
