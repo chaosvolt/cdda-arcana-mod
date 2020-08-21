@@ -36,7 +36,7 @@
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
           "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
-          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
+          "//intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
         }
       ]
     },
@@ -100,7 +100,7 @@
     "price_postapoc": 120,
     "material": [ "veggy" ],
     "symbol": "[",
-    "looks_like": "silver_necklace",
+    "looks_like": "holy_symbol_wood",
     "color": "light_red",
     "relic_data": {
       "passive_effects": [
@@ -123,7 +123,7 @@
     "price_postapoc": 150,
     "material": [ "stone" ],
     "symbol": "[",
-    "looks_like": "holy_symbol",
+    "looks_like": "aquamarine_silver_pendant_necklace",
     "color": "light_gray",
     "flags": [ "FANCY" ],
     "relic_data": {
@@ -171,7 +171,7 @@
     "price": 3000,
     "material": [ "copper", "essencemat" ],
     "symbol": "[",
-    "looks_like": "holy_symbol",
+    "looks_like": "copper_locket",
     "color": "blue",
     "relic_data": {
       "passive_effects": [

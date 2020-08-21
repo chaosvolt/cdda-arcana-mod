@@ -22,5 +22,11 @@
     "id": "ENCH_DRAGONBLOOD_ELEMENTAL_AFFINITY",
     "condition": "ALWAYS",
     "ench_effects": [ { "effect": "heat_ward_dragonblood", "intensity": 1 } ]
+  },
+  {
+    "type": "enchantment",
+    "id": "ENCH_DRAGONBLOOD_DRACONIC_WINGS",
+    "condition": "ALWAYS",
+    "ench_effects": [ { "effect": "feather_fall_dragonblood", "intensity": 1 } ]
   }
 ]

@@ -1326,6 +1326,7 @@
     "price": 8000,
     "price_postapoc": 4000,
     "material": [ "essencemat" ],
+    "looks_like": "candle_lit",
     "repairs_like": "candle_warding",
     "symbol": ",",
     "color": "white",
@@ -1450,6 +1451,7 @@
     "description": "A device modified from an exotic compact reactor, inverting its original function entirely.  Using a large surge of power by from any battery able to hold enough charge, it can generate crystallized essence.  The process is rather inefficient, and poses a high risk of damaging the fabric of reality.",
     "weight": "11 kg",
     "color": "light_cyan",
+    "looks_like": "portal",
     "symbol": ":",
     "material": [ "steel" ],
     "flags": [ "ALLOWS_REMOTE_USE" ],
@@ -1490,6 +1492,7 @@
     "price": 60000,
     "price_postapoc": 1500,
     "material": [ "copper" ],
+    "looks_like": "copper_knife",
     "symbol": ";",
     "color": "red",
     "ammo": [ "essence_dull_type" ],
@@ -1501,7 +1504,6 @@
   },
   {
     "id": "spatial_displacer",
-    "looks_like": "portal",
     "type": "TOOL",
     "name": { "str": "spatial displacer" },
     "description": "A cutting-edge piece of dimensional science, heavily modified to incorporate refinements from Beyond.  Using it will teleport you to a targeted location, a vast improvement over the uncertainty of previous devices, even destroying any obstacles that would make emergence unsafe.  However, using it might unwanted attention from things that do not belong in this world…",
@@ -1512,6 +1514,7 @@
     "to_hit": -1,
     "bashing": 4,
     "material": [ "steel" ],
+    "looks_like": "teleporter",
     "symbol": ";",
     "color": "magenta",
     "ammo": [ "essence_type" ],
@@ -1571,7 +1574,7 @@
     "type": "TOOL",
     "category": "weapons",
     "symbol": "/",
-    "looks_like": "bullwhip",
+    "looks_like": "bullwhip_razor",
     "color": "dark_gray",
     "name": { "str": "moonstone scourge" },
     "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  While relatively effective as a weapon, fueling it with blood essence make it much more deadly.",
@@ -1651,7 +1654,7 @@
               "npc_message": "Wisps of shadow jump from %1$s to %2$s."
             }
           ],
-          "intermittent_activation": { "effects": [ { "frequency": "5 minutes", "spell_effects": [ { "id": "arcana_react_moonstone_touch" } ] } ] }
+          "//intermittent_activation": { "effects": [ { "frequency": "5 minutes", "spell_effects": [ { "id": "arcana_react_moonstone_touch" } ] } ] }
         }
       ]
     },

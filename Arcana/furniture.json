@@ -96,7 +96,7 @@
     "id": "f_spires_arcana",
     "name": "molded stone wall",
     "symbol": "#",
-    "looks_like": "t_root_wall",
+    "looks_like": "t_drystone_wall",
     "description": "A wall made of interlocked spires of shifting stone, earth, and unearthly plant roots, molding and clinging to the otherwise untouched ground the structure grows from.  Every so often the flowing stone cracks and crumbles only to mend and resolidify itself.",
     "color": "dark_gray",
     "move_cost_mod": -1,

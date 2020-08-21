@@ -238,6 +238,13 @@
   },
   {
     "type": "effect_type",
+    "id": "feather_fall_dragonblood",
+    "name": [ "Draconic Wings" ],
+    "desc": [ "Immunity to fall damage." ],
+    "flags": [ "EFFECT_FEATHER_FALL" ]
+  },
+  {
+    "type": "effect_type",
     "id": "blood_clarity",
     "name": [ "Clarity of Blood" ],
     "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],

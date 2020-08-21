@@ -133,7 +133,7 @@
     "description": "A small, uneven piece of pink quartz.  It is unnaturally light and seems to whisper when held up to the ear.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
     "material": [ "stone" ],
-    "looks_like": "material_limestone",
+    "looks_like": "tourmaline",
     "volume": "250 ml",
     "flags": [ "ZERO_WEIGHT" ]
   },
@@ -148,7 +148,7 @@
     "description": "A dense chunk of solidified ooze, vaguely resembling unnaturally-dark amber.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
     "material": [ "stone" ],
-    "looks_like": "material_limestone",
+    "looks_like": "aquamarine",
     "weight": "714 g",
     "volume": "250 ml"
   },
@@ -163,7 +163,7 @@
     "description": "A smooth orb of glassy stone, an unearthly deep blue in color.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": 500,
     "material": [ "stone" ],
-    "looks_like": "material_limestone",
+    "looks_like": "sapphire",
     "weight": "230 g",
     "volume": "250 ml"
   },
@@ -294,7 +294,7 @@
     "price": 8000000,
     "price_postapoc": 7500,
     "material": [ "stone" ],
-    "looks_like": "spiral_stone",
+    "looks_like": "flesh_golem_heart",
     "weight": "1500 g",
     "volume": "1 L"
   },
@@ -324,6 +324,7 @@
     "weight": "25 g",
     "to_hit": -3,
     "color": "yellow",
+    "looks_like": "RobofacCoin",
     "symbol": "$",
     "material": [ "gold" ],
     "volume": "2 ml"

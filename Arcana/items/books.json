@@ -175,6 +175,7 @@
     "price_postapoc": 2000,
     "material": [ "paper" ],
     "symbol": "?",
+    "looks_like": "recipe_lab_elec",
     "color": "light_green",
     "skill": "magic",
     "required_level": 5,
@@ -392,6 +393,7 @@
     "description": "A handwritten copy of a codex detailing the methods of fighting used by an eccentric order, hunters of the wicked and otherworldly.",
     "price": 200000,
     "price_postapoc": 20000,
+    "looks_like": "manual_swordsmanship",
     "book_data": { "martial_art": "style_cleansingflame" }
   },
   {
@@ -417,6 +419,7 @@
     "weight": "340 g",
     "volume": "750 ml",
     "material": [ "paper" ],
+    "looks_like": "priest_diary",
     "symbol": "?",
     "color": "light_gray",
     "intelligence": 12,
@@ -432,6 +435,7 @@
     "weight": "454 g",
     "volume": "1 L",
     "material": [ "paper" ],
+    "looks_like": "priest_diary",
     "symbol": "?",
     "color": "light_gray",
     "intelligence": 14,

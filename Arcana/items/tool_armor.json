@@ -87,7 +87,7 @@
     "to_hit": -1,
     "material": [ "silver", "diamond" ],
     "symbol": "[",
-    "looks_like": "crown_golden",
+    "looks_like": "crown_silver",
     "color": "yellow",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 6 } } ],
     "max_charges": 6,
@@ -262,7 +262,7 @@
   {
     "id": "cleric_ring",
     "type": "TOOL_ARMOR",
-    "copy-from": "gold_ring",
+    "copy-from": "ruby_silver_ring",
     "repairs_like": "orb_veil",
     "name": { "str": "ring of the fallen angel", "str_pl": "rings of the fallen angel" },
     "description": "A simple silver ring, adorned with a small red gem and a wing motif.  Using it channels an extremely powerful protective spell, guarding against many forms of physical and supernatural harm.",

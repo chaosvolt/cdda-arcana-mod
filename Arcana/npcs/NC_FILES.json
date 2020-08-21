@@ -731,8 +731,8 @@
       {
         "distribution": [
           { "item": "chainmail_hood", "prob": 50 },
-          { "item": "helmet_barbute", "prob": 20 },
-          { "item": "helmet_galea", "prob": 5 },
+          { "item": "helmet_galea", "prob": 15 },
+          { "item": "helmet_nasal", "prob": 10 },
           { "item": "kufi", "prob": 10 },
           { "item": "eboshi", "prob": 10 },
           { "item": "kippah", "prob": 5 }

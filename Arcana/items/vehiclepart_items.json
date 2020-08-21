@@ -18,6 +18,7 @@
   {
     "type": "TOOL",
     "id": "essence_surge_generator_item",
+    "looks_like": "alternator_truck",
     "name": { "str": "essence surge generator" },
     "description": "A compact device built using otherworldly mechanisms to convert essence into power, greatly increasing its output if integrated into a vehicle.  Reliable and safe to use at least, even if generating electricity with the power of The Veil might be prohibitively expensive for most purposes.",
     "weight": "10 kg",

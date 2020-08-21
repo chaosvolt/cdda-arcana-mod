@@ -1089,7 +1089,7 @@
     "speed": 140,
     "material": [ "flesh" ],
     "symbol": "D",
-    "looks_like": "mon_dragon",
+    "looks_like": "mon_dragon_dummy",
     "color": "dark_gray",
     "aggression": 75,
     "morale": 500,
