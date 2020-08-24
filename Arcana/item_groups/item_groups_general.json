@@ -24,7 +24,7 @@
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 25 },
       { "group": "magic_crafting", "prob": 25 },
-      { "item": "corpse_painful" }
+      { "item": "corpse_painful", "damage": 4 }
     ]
   },
   {

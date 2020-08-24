@@ -144,6 +144,8 @@
       "palettes": [ "arcana_palette" ],
       "terrain": {
         " ": [ "t_dirt", "t_dirt", "t_grass", "t_shrub", "t_water_sh", "t_swater_sh" ],
+        "~": "t_water_sh",
+        ";": "t_water_dp",
         "#": "t_rock_wall",
         "x": "t_door_locked",
         "e": "t_carpet_green",

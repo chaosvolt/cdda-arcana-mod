@@ -106,7 +106,7 @@
       { "group": "cleansing_flame_gear_magic", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_consumables", "prob": 25 },
       { "group": "cleansing_flame_crafting", "prob": 25 },
-      { "group": "cf_corpse_combatants" }
+      { "group": "cf_corpse_combatants", "damage": 4 }
     ]
   },
   {
@@ -119,7 +119,7 @@
       { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_consumables", "prob": 25 },
       { "group": "cleansing_flame_crafting", "prob": 25 },
-      { "item": "corpse_gunned" }
+      { "item": "corpse_gunned", "damage": 4 }
     ]
   },
   {
@@ -146,7 +146,7 @@
       { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "item": "rmi2_corpse" }
+      { "item": "rmi2_corpse", "damage": 4 }
     ]
   },
   {
@@ -158,7 +158,7 @@
       { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "group": "arcanist_corpses_adult_random" }
+      { "group": "arcanist_corpses_adult_random", "damage": 4 }
     ]
   },
   {
@@ -179,7 +179,7 @@
           { "group": "guns_rifle_common", "prob": 40, "damage": [ 0, 2 ] }
         ]
       },
-      { "group": "cleansing_flame_casualties_basement" }
+      { "group": "cleansing_flame_casualties_basement", "damage": 4 }
     ]
   },
   {
@@ -226,7 +226,7 @@
       { "item": "id_science", "prob": 5 },
       { "item": "CF_golden_scale", "charges": [ 1, 5 ] },
       { "item": "m1911", "charges": [ 0, 3 ], "damage": [ 0, 2 ] },
-      { "item": "corpse_halved_upper" }
+      { "item": "corpse_halved_upper", "damage": 4 }
     ]
   },
   {

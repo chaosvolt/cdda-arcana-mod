@@ -79,7 +79,8 @@
     "subtype": "collection",
     "entries": [
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "item": "stormbringer", "container-item": "bscabbard" },
+      { "item": "stormbringer" },
+      { "item": "bscabbard" },
       { "item": "bone_human", "count": [ 3, 9 ] }
     ]
   },
@@ -104,7 +105,7 @@
       { "group": "chalice_cult_gear", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "chalice_cult_consumables", "prob": 25 },
       { "group": "chalice_cult_crafting", "prob": 25 },
-      { "group": "arcanist_corpses_adult_random" }
+      { "group": "arcanist_corpses_adult_random", "damage": 4 }
     ]
   }
 ]

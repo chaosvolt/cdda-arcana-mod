@@ -88,7 +88,7 @@
       { "group": "sanguine_cult_gear", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "sanguine_cult_consumables", "prob": 25 },
       { "group": "sanguine_cult_crafting", "prob": 25 },
-      { "group": "arcanist_corpses_adult_random" }
+      { "group": "arcanist_corpses_adult_random", "damage": 4 }
     ]
   },
   {
