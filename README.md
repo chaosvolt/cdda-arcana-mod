@@ -134,7 +134,6 @@ In addition, though the *Keepers of The Oath* had been driven nearly to extincti
 * The *Candle of Warding*, also serves as a barrier from the unholy when activated, which can be crafted.
 
 ## Misc
-* *Meditate* has been given an ``item_action`` definition due to the religious items with additional uses.
 * Added some overrides to make new monsters mutually friendly to both factions of monster that spawn in its area.
 
 
