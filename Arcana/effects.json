@@ -827,6 +827,8 @@
     "//": "This will EVENTUALLY kill you if you max out the effects, unless you're abusing magical healing.",
     "base_mods": {
       "fatigue_min": [ 1 ],
+      "fatigue_chance": [ 30 ],
+      "fatigue_chance_bot": [ 100 ],
       "fatigue_tick": [ 1000 ],
       "int_mod": [ -0.25 ],
       "sleep_min": [ 10 ],
@@ -840,6 +842,7 @@
       "hurt_tick": [ 3600 ]
     },
     "scaling_mods": {
+      "fatigue_chance": [ 10, 8 ],
       "fatigue_tick": [ -100, -80 ],
       "int_mod": [ -0.75, -0.6 ],
       "per_mod": [ -0.75, -0.6 ],
