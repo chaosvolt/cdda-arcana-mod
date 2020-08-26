@@ -917,7 +917,7 @@
     "min_damage": 25,
     "max_damage": 200,
     "damage_increment": 8.75,
-    "damage_type": "true",
+    "damage_type": "pure",
     "min_aoe": 8,
     "max_aoe": 24,
     "aoe_increment": 1.4,

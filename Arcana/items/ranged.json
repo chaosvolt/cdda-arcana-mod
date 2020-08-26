@@ -123,7 +123,7 @@
     "ammo": "essence_dull_type",
     "skill": "magic",
     "range": 15,
-    "ranged_damage": { "damage_type": "true", "amount": 40, "armor_penetration": 50 },
+    "ranged_damage": { "damage_type": "pure", "amount": 40, "armor_penetration": 50 },
     "dispersion": 150,
     "durability": 6,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 20 } } ],

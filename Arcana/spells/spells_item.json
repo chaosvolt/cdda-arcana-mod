@@ -22,7 +22,7 @@
     "final_energy_cost": 20,
     "min_damage": 1,
     "max_damage": 3,
-    "damage_type": "true",
+    "damage_type": "pure",
     "min_duration": 30000,
     "max_duration": 30000
   },
@@ -59,7 +59,7 @@
     "effect": "target_attack",
     "min_damage": 8,
     "max_damage": 10,
-    "damage_type": "true",
+    "damage_type": "pure",
     "base_casting_time": 90000,
     "final_casting_time": 90000,
     "energy_source": "FATIGUE",
