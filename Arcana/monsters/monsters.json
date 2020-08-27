@@ -987,12 +987,14 @@
     "armor_cut": 8,
     "armor_stab": 6,
     "armor_bullet": 6,
+    "vision_day": 20,
+    "vision_night": 20,
     "emit_fields": [ "emit_toxic_leak" ],
     "harvest": "moruboru_harvest",
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "TENTACLE", 5 ] ],
     "death_drops": "mon_moruboru_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "HEARS", "SMELLS", "NOHEAD", "POISON", "NO_BREATHE", "PARALYZEVENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
+    "flags": [ "SEES", "SMELLS", "NOHEAD", "POISON", "NO_BREATHE", "PARALYZEVENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
     "//": "Boss-level essence and an item"
   },
   {
