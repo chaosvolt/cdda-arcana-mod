@@ -3,8 +3,8 @@
     "type": "overlay_order",
     "overlay_ordering": [
       { "id": [ "ARCANA_SCALYWINGS", "ARCANA_DRAGONWINGS" ], "order": 500 },
-      { "id": [ "ARCANA_PLATES" ], "order": 2000 },
       { "id": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ], "order": 1500 },
+      { "id": [ "ARCANA_PLATES" ], "order": 2000 },
       { "id": [ "ARCANA_DRAGONCLAWS" ], "order": 3000 },
       { "id": [ "ARCANA_SCALYTAIL", "ARCANA_DRAGONTAIL" ], "order": 3500 },
       { "id": [ "ARCANA_SCALYLEGS", "ARCANA_DRAGONLEGS" ], "order": 4500 },
@@ -180,7 +180,20 @@
           { "id": "overlay_wielded_orb_veil", "fg": 15 },
           { "id": "overlay_wielded_staff_druidic", "fg": 16 },
           { "id": "overlay_wielded_verge_meteoric", "fg": 17 },
-          { "id": "mon_archon", "fg": 18 }
+          { "id": "mon_archon", "fg": 18 },
+          { "id": [ "mon_seraphic_shade", "mon_seraphic_shade_fake" ], "fg": 19 },
+          { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 20 },
+          { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 21 },
+          { "id": [ "overlay_male_mutation_ARCANA_SCALYWINGS", "overlay_male_mutation_ARCANA_DRAGONWINGS" ], "fg": 22 },
+          { "id": [ "overlay_female_mutation_ARCANA_SCALYWINGS", "overlay_female_mutation_ARCANA_DRAGONWINGS" ], "fg": 23 },
+          { "id": [ "overlay_male_mutation_ARCANA_SCALYTAIL", "overlay_male_mutation_ARCANA_DRAGONTAIL" ], "fg": 24 },
+          { "id": [ "overlay_female_mutation_ARCANA_SCALYTAIL", "overlay_female_mutation_ARCANA_DRAGONTAIL" ], "fg": 25 },
+          { "id": "overlay_male_mutation_ARCANA_DRAGONMUZZLE", "fg": 26 },
+          { "id": "overlay_female_mutation_ARCANA_DRAGONMUZZLE", "fg": 27 },
+          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 28 },
+          { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 29 },
+          { "id": "overlay_male_mutation_ARCANA_DRAGONHORNS", "fg": 30 },
+          { "id": "overlay_female_mutation_ARCANA_DRAGONHORNS", "fg": 31 }
         ]
       }
     ]
