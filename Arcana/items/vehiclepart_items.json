@@ -4,7 +4,7 @@
     "id": "distortion_amp_motor_item",
     "looks_like": "motor",
     "name": { "str": "distortion amplifier motor" },
-    "description": "A powerful electric motor relying on a spatial distortion, amplifying electrical current.  Multiple can be installed for escalating power demands.  While unnaturally efficient, its anomalous nature makes it impossible to attach an alternator to it.  Once installed, operation will risk errant electrical discharge, and any impact that destroys it will release a highly destructive blast.",
+    "description": "A powerful electric motor relying on a spatial distortion, amplifying electrical current.  Multiple can be installed for escalating power demands.  While unnaturally efficient, its anomalous nature makes it impossible to attach an alternator to it.  Once installed, operation will risk errant electrical discharge.",
     "weight": "10 kg",
     "color": "light_cyan",
     "symbol": ",",
