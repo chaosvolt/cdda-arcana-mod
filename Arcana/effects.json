@@ -496,7 +496,7 @@
     "type": "effect_type",
     "id": "dragonblood_clarity",
     "name": [ "Revenant Blood" ],
-    "desc": [ "Immunity to food poisoning, parasites, and fungus.  Increased hunger and thirst gain." ],
+    "desc": [ "Immunity to food poisoning, parasites, and fungus.  Increased hunger and thirst gain, with positive metabolic effects." ],
     "resist_effect": "talisman_warding",
     "remove_message": "The protective effect of your sanguine mark fades, leaving a momentary itch in your veins.",
     "remove_effects": [
@@ -520,10 +520,13 @@
     "base_mods": {
       "hunger_min": [ 1 ],
       "hunger_chance": [ 18, 36 ],
+      "thirst_min": [ 1 ],
+      "thirst_chance": [ 18, 36 ],
       "fatigue_min": [ 1 ],
       "fatigue_chance": [ 36, 12 ],
-      "health_min": [ -1 ],
-      "health_chance": [ 6 ]
+      "stamina_min": [ 100 ],
+      "health_min": [ 1 ],
+      "health_chance": [ 12 ]
     }
   },
   {

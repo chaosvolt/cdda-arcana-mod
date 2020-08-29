@@ -245,8 +245,8 @@
       { "group": "essence_blood", "prob": 10 },
       {
         "distribution": [
-          { "group": "magic_tools", "prob": 1, "damage-min": 1, "damage-max": 4 },
-          { "group": "magic_items", "prob": 2, "damage-min": 1, "damage-max": 4 },
+          { "group": "magic_tools", "prob": 1, "damage": [ 1, 4 ] },
+          { "group": "magic_items", "prob": 2, "damage": [ 1, 4 ] },
           { "group": "magic_consumables", "prob": 3 },
           { "group": "magic_books", "prob": 4 }
         ],
@@ -658,8 +658,8 @@
     "entries": [
       { "group": "default_zombie_death_drops" },
       { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] },
-      { "group": "magic_tools", "prob": 1, "damage-min": 1, "damage-max": 4 },
-      { "group": "magic_items", "prob": 2, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_tools", "prob": 1, "damage": [ 1, 4 ] },
+      { "group": "magic_items", "prob": 2, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 3 },
       { "group": "magic_books", "prob": 25 }
     ]
@@ -669,10 +669,12 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
+      { "group": "loincloth", "damage": [ 1, 4 ] },
+      { "item": "leather", "damage": [ 1, 4 ], "count": [ 1, 4 ] },
       { "item": "engraved_stone", "prob": 25 },
       { "item": "essence" },
-      { "group": "magic_tools", "prob": 4, "damage-min": 1, "damage-max": 4 },
-      { "group": "magic_items", "prob": 8, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_tools", "prob": 4, "damage": [ 1, 4 ] },
+      { "group": "magic_items", "prob": 8, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 12 },
       { "group": "magic_books", "prob": 16 }
     ]
@@ -695,8 +697,8 @@
       { "group": "default_zombie_clothes" },
       { "item": "engraved_stone", "prob": 50 },
       { "group": "essence" },
-      { "group": "magic_tools", "prob": 5, "damage-min": 1, "damage-max": 4 },
-      { "group": "magic_items", "prob": 10, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_tools", "prob": 5, "damage": [ 1, 4 ] },
+      { "group": "magic_items", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 15 },
       { "group": "magic_books", "prob": 20 }
     ]
@@ -714,8 +716,8 @@
     "entries": [
       { "group": "shia_stuff", "prob": 1 },
       { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] },
-      { "group": "magic_tools", "prob": 1, "damage-min": 1, "damage-max": 4 },
-      { "group": "magic_items", "prob": 2, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_tools", "prob": 1, "damage": [ 1, 4 ] },
+      { "group": "magic_items", "prob": 2, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 3 },
       { "group": "magic_books", "prob": 4 }
     ]
@@ -868,8 +870,8 @@
     "subtype": "collection",
     "entries": [
       { "item": "essence_blood", "count": [ 1, 3 ] },
-      { "group": "magic_tools", "prob": 5, "damage-min": 1, "damage-max": 4 },
-      { "group": "magic_items", "prob": 10, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_tools", "prob": 5, "damage": [ 1, 4 ] },
+      { "group": "magic_items", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 20 },
       { "group": "magic_books", "prob": 80 }
     ]
@@ -881,9 +883,9 @@
     "subtype": "collection",
     "entries": [
       { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] },
-      { "group": "magic_items", "prob": 3, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_items", "prob": 3, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 5 },
-      { "group": "magic_tools", "prob": 1, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_tools", "prob": 1, "damage": [ 1, 4 ] },
       { "group": "magic_books", "prob": 15 }
     ]
   },
@@ -900,10 +902,10 @@
     "//": "The only being without the queen flag to drop boss-level essence, also gives high odds of magical gear.  Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "entries": [
-      { "group": "magic_items", "prob": 25, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_items", "prob": 25, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 50 },
       { "group": "magic_books", "prob": 75 },
-      { "group": "magic_tools", "prob": 25, "damage-min": 1, "damage-max": 4 },
+      { "group": "magic_tools", "prob": 25, "damage": [ 1, 4 ] },
       { "item": "essence", "count": [ 2, 5 ] }
     ]
   },
@@ -942,11 +944,11 @@
       { "item": "thunder_sigil" },
       { "item": "book_sacrifice", "prob": 50 },
       { "item": "offering_chalice", "prob": 25 },
-      { "group": "pants", "damage-min": 1, "damage-max": 4 },
-      { "group": "shirts", "damage-min": 1, "damage-max": 4 },
-      { "group": "shoes", "damage-min": 1, "damage-max": 4 },
-      { "group": "jackets", "prob": 20, "damage-min": 1, "damage-max": 4 },
-      { "group": "bags", "prob": 6, "damage-min": 1, "damage-max": 4 }
+      { "group": "pants", "damage": [ 1, 4 ] },
+      { "group": "shirts", "damage": [ 1, 4 ] },
+      { "group": "shoes", "damage": [ 1, 4 ] },
+      { "group": "jackets", "prob": 20, "damage": [ 1, 4 ] },
+      { "group": "bags", "prob": 6, "damage": [ 1, 4 ] }
     ]
   },
   {

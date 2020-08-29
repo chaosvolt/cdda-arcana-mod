@@ -193,7 +193,9 @@
           { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 28 },
           { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 29 },
           { "id": "overlay_male_mutation_ARCANA_DRAGONHORNS", "fg": 30 },
-          { "id": "overlay_female_mutation_ARCANA_DRAGONHORNS", "fg": 31 }
+          { "id": "overlay_female_mutation_ARCANA_DRAGONHORNS", "fg": 31 },
+          { "id": "mon_flesh_angel", "fg": 32 },
+          { "id": "mon_homunculus", "fg": 33 }
         ]
       }
     ]

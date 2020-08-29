@@ -218,7 +218,7 @@
     "id": "arcana_mark_revenant_blood",
     "type": "SPELL",
     "name": { "str": "Mark: Revenant Blood" },
-    "description": "Sanguine Mark\nUsing this spell will grant protection against pestilence in food and water, and against the Mycus.  The body will burn through its reserves faster however.",
+    "description": "Sanguine Mark\nUsing this spell will make your inner fire burn hotter, increasing stamina in addition protecting against pestilence in food and water, as well as burning out fungal influences.  The body will burn through its reserves faster however.",
     "message": "With a sign, you feel your blood burning with magical power.  %s!",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC", "NO_HANDS", "NO_FAIL" ],
