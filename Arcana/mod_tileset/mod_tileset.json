@@ -212,7 +212,8 @@
         "sprite_offset_y": -32,
         "tiles": [
           { "id": "mon_moruboru", "fg": 0 },
-          { "id": "mon_spirit_of_fire", "fg": 1 }
+          { "id": "mon_spirit_of_fire", "fg": 1 },
+          { "id": "mon_dracolich", "fg": 2 }
         ]
       }
     ]
