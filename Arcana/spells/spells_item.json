@@ -1404,33 +1404,6 @@
     "max_field_intensity": 1
   },
   {
-    "id": "arcana_item_stormbringer",
-    "type": "SPELL",
-    "name": { "str": "Surge of Bloodlust" },
-    "description": "This is needed to make it grant the proper effects of the cursed blade.",
-    "valid_targets": [ "self" ],
-    "message": "The runes on the blade glow for a moment, a strange bloodlust overtaking you!",
-    "flags": [ "NO_HANDS", "NO_LEGS" ],
-    "extra_effects": [ { "id": "arcana_item_stormbringer_2", "hit_self": true } ],
-    "effect": "spawn_item",
-    "effect_str": "halo_berserk",
-    "min_duration": 720000,
-    "max_duration": 720000
-  },
-  {
-    "id": "arcana_item_stormbringer_2",
-    "type": "SPELL",
-    "name": { "str": "Surge of Bloodlust Health Debuff" },
-    "description": "Minor healing, and the restorative power of a healing potion.",
-    "message": "",
-    "valid_targets": [ "self" ],
-    "flags": [ "SILENT" ],
-    "effect_str": "stormbringer_debuff",
-    "effect": "target_attack",
-    "min_duration": 100,
-    "max_duration": 100
-  },
-  {
     "id": "arcana_item_pet",
     "type": "SPELL",
     "name": { "str": "Familiar Pact" },

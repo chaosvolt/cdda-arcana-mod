@@ -1736,7 +1736,7 @@
     "type": "TOOL",
     "copy-from": "zweihander",
     "name": { "str": "cursed blade" },
-    "description": "A two-handed sword made of a dark metal.  It is engraved with unfamiliar symbols, and a single phrase in a script you can actually read: \"neherit asheiri\"  Activating it will grant the wielder a burst of powerful, corruptive, addictive life-draining magic.",
+    "description": "A two-handed sword made of a dark metal.  It is engraved with unfamiliar symbols, and a single phrase in a script you can actually read: \"neherit asheiri\"  Activating it will grant the wielder a burst of powerful, corruptive, addictive life-draining magic, but you'll be unable to let go of it until the effect wears off.",
     "material": [ "hardsteel", "essencemat" ],
     "//": "In this case being cursed basically halves its pre-cataclysm value, as it's no longer useful for what the Keepers used it for, and the Sanguine Order's appropriation of it had a very specific focus.",
     "price": 4500000,
@@ -1744,11 +1744,73 @@
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
     "max_charges": 9,
-    "charges_per_use": 9,
     "ammo": "essence_blood_type",
-    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_stormbringer", "no_fail": true, "need_wielding": true, "level": 0 } ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ACTIVE",
+          "mutations": [ "ARCANA_BERSERK_EFFECT" ],
+          "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
+          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
+          "//intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
+        }
+      ]
+    },
+    "use_action": [
+      {
+        "target": "stormbringer_on",
+        "msg": "The runes on the blade glow for a moment, the leather wrap of the hilt contorting into winding tendrils that envelop your hand!  You feel a strange bloodlust overtake you!",
+        "active": true,
+        "need_wielding": true,
+        "need_charges": 9,
+        "need_charges_msg": "Nine motes of blood shall awaken the blade.",
+        "menu_text": "Awaken the dark blade",
+        "type": "transform"
+      }
+    ],
     "relative": { "to_hit": -1, "cutting": -5 },
     "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
+  },
+  {
+    "id": "stormbringer_on",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "cursed blade (on)", "str_pl": "cursed blades (on)" },
+    "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
+    "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
+    "max_charges": 9,
+    "turns_per_charge": 800,
+    "ammo": "essence_blood_type",
+    "revert_to": "stormbringer",
+    "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
+    "weight": "3176 g",
+    "volume": "3250 ml",
+    "price": 4500000,
+    "price_postapoc": 12000,
+    "to_hit": 1,
+    "bashing": 17,
+    "cutting": 40,
+    "material": [ "hardsteel", "essencemat" ],
+    "symbol": "/",
+    "looks_like": "stormbringer",
+    "repairs_like": "stormbringer",
+    "color": "dark_gray",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ACTIVE",
+          "mutations": [ "ARCANA_BERSERK_EFFECT" ],
+          "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
+          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
+          "//intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
+        }
+      ]
+    },
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD", "TRADER_KEEP_EQUIPPED" ]
   }
 ]

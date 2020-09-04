@@ -1,48 +1,5 @@
 [
   {
-    "id": "halo_insight",
-    "copy-from": "spell_base",
-    "type": "ARMOR",
-    "name": { "str": "shimmering glare" },
-    "description": "A strange aura of otherworldly insight, granting sight beyond sight in exchange for your natural vision.",
-    "color": "magenta",
-    "environmental_protection": 6,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "mutations": [ "ARCANA_MASK_INSIGHT_EFFECT" ],
-          "values": [ { "value": "BONUS_DODGE", "add": 2 } ]
-        }
-      ]
-    },
-    "extend": { "flags": [ "ONLY_ONE", "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF", "AURA", "NO_TAKEOFF" ] },
-    "covers": [ "eyes" ]
-  },
-  {
-    "id": "halo_berserk",
-    "copy-from": "spell_base",
-    "type": "ARMOR",
-    "name": { "str": "malevolent aura" },
-    "description": "A lingering sense of ill omen pervading your very being, offering a surge of energy with every strike.",
-    "color": "magenta",
-    "environmental_protection": 6,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "mutations": [ "ARCANA_BERSERK_EFFECT" ],
-          "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
-          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
-          "//intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
-        }
-      ]
-    },
-    "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
-  },
-  {
     "id": "halo_clairvoyance",
     "copy-from": "spell_base",
     "type": "ARMOR",

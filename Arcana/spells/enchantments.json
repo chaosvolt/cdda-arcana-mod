@@ -2,7 +2,7 @@
   {
     "type": "enchantment",
     "id": "ENCH_CBM_TEMPORAL_STIMULATION",
-    "condition": "ALWAYS",
+    "condition": "ACTIVE",
     "mutations": [ "ARCANA_TEMPORAL_STIMULATION" ],
     "values": [
       { "value": "SPEED", "multiply": 0.5 },
@@ -13,7 +13,7 @@
   {
     "type": "enchantment",
     "id": "ENCH_CBM_LIFE_SIGN_SUPPRESSION",
-    "condition": "ALWAYS",
+    "condition": "ACTIVE",
     "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ],
     "values": [ { "value": "REGEN_HP", "multiply": -1.0 }, { "value": "SOCIAL_PERSUADE", "multiply": -0.5 } ]
   },

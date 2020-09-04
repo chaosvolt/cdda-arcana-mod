@@ -666,13 +666,6 @@
   },
   {
     "type": "effect_type",
-    "id": "stormbringer_debuff",
-    "removes_effects": [ "bleed", "winded", "redcells_anemia", "hypovolemia" ],
-    "max_duration": "1 s",
-    "base_mods": { "pain_min": [ -5 ], "stamina_min": [ 500 ], "health_min": [ 60 ] }
-  },
-  {
-    "type": "effect_type",
     "id": "mantle_escape_effect",
     "rating": "good",
     "max_intensity": 5,
