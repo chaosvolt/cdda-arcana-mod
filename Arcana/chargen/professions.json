@@ -106,7 +106,7 @@
         "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "waterskin", "bowl_clay", "book_bloodmagic" ],
         "entries": [
           { "item": "bloodscourge", "ammo-item": "essence_blood", "charges": 15, "custom-flags": [ "auto_wield" ] },
-          { "item": "revenant_crown", "charges": 2 },
+          { "item": "revenant_crown", "charges": 6 },
           { "item": "blood_athame", "container-item": "sheath" },
           { "group": "charged_matches" }
         ]
@@ -144,7 +144,7 @@
           "book_hexenhammer"
         ],
         "entries": [
-          { "item": "hexenhammer", "charges": 1, "custom-flags": [ "auto_wield" ] },
+          { "item": "hexenhammer", "charges": 3, "custom-flags": [ "auto_wield" ] },
           { "item": "somen_clairvoyance", "charges": 24 },
           { "item": "gilded_aegis", "charges": 60 },
           { "item": "knife_hunting", "container-item": "sheath" },
@@ -170,7 +170,7 @@
         "entries": [
           { "item": "thunder_sigil", "ammo-item": "essence", "charges": 5, "custom-flags": [ "auto_wield" ] },
           { "item": "robe_shadow", "charges": 10 },
-          { "item": "gauntlets_necro", "charges": 1 },
+          { "item": "gauntlets_necro", "charges": 4 },
           { "item": "copper_knife", "container-item": "sheath" },
           { "group": "charged_matches" }
         ]
@@ -211,7 +211,7 @@
         ],
         "entries": [
           { "item": "makeshift_knife", "container-item": "sheath" },
-          { "item": "essence", "count": 5 },
+          { "item": "essence", "count": 10 },
           { "item": "q_staff", "custom-flags": [ "auto_wield" ] },
           { "group": "charged_matches" }
         ]
@@ -257,7 +257,7 @@
         ],
         "entries": [
           { "item": "armor_wyrm", "ammo-item": "essence_blood", "charges": [ 4, 8 ] },
-          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 1, "custom-flags": [ "auto_wield" ] },
+          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 3, "custom-flags": [ "auto_wield" ] },
           {
             "item": "carbine_flintlock_double",
             "ammo-item": "flintlock_ammo",
