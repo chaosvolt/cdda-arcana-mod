@@ -1541,7 +1541,7 @@
     "death_drops": {  },
     "death_function": [ "MELT" ],
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
-    "delete": { "upgrades": "upgrades": { "half_life": 21, "into": "mon_centipede_mega" } }
+    "delete": { "upgrades": { "half_life": 21, "into": "mon_centipede_mega" } }
   },
   {
     "id": "mon_seraphic_shade",
