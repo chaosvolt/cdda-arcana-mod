@@ -89,7 +89,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 6,
     "effects": [ "RECOVER_50" ]
   },
   {
@@ -112,7 +111,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 6,
     "effects": [ "RECOVER_50" ]
   },
   {
@@ -136,7 +134,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 3,
     "effects": [ "RECOVER_40", "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT", "NO_EMBED" ]
   },
   {
@@ -159,7 +156,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 4,
     "effects": [ "RECOVER_40", "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT", "NO_EMBED" ]
   },
   {
@@ -183,7 +179,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 4,
     "effects": [ "RECOVER_30", "BEANBAG", "AMMO_ARCANA_WATER_EFFECT", "NO_EMBED" ]
   },
   {
@@ -206,7 +201,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 5,
     "effects": [ "RECOVER_30", "BEANBAG", "AMMO_ARCANA_WATER_EFFECT", "NO_EMBED" ]
   },
   {
@@ -230,7 +224,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 5,
     "effects": [ "RECOVER_20", "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT", "NO_EMBED" ]
   },
   {
@@ -253,7 +246,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 6,
     "effects": [ "RECOVER_20", "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT", "NO_EMBED" ]
   },
   {
@@ -277,7 +269,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 6,
     "effects": [ "RECOVER_10", "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT", "NO_EMBED" ]
   },
   {
@@ -300,7 +291,6 @@
     "loudness": 0,
     "count": 5,
     "show_stats": true,
-    "critical_multiplier": 7,
     "effects": [ "RECOVER_10", "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT", "NO_EMBED" ]
   }
 ]
