@@ -24,7 +24,8 @@
     "energy_increment": -1,
     "min_duration": 48000,
     "max_duration": 144000,
-    "duration_increment": 9600
+    "duration_increment": 9600,
+    "spell_class": "SPELL_AGILE"
   },
   {
     "id": "arcana_magic_capacitance",
@@ -76,7 +77,8 @@
     "energy_increment": -1.4,
     "min_duration": 72000,
     "max_duration": 216000,
-    "duration_increment": 14400
+    "duration_increment": 14400,
+    "spell_class": "SPELL_CLAIRVOYANCE"
   },
   {
     "id": "arcana_magic_clarity_blood",
@@ -103,7 +105,8 @@
     "energy_increment": -1,
     "min_duration": 24000,
     "max_duration": 72000,
-    "duration_increment": 4800
+    "duration_increment": 4800,
+    "spell_class": "SPELL_CLARITY"
   },
   {
     "id": "arcana_magic_cold_ward",
@@ -158,7 +161,8 @@
     "energy_increment": -0.8,
     "min_duration": 600,
     "max_duration": 2400,
-    "duration_increment": 180
+    "duration_increment": 180,
+    "spell_class": "SPELL_CONFUSE"
   },
   {
     "id": "arcana_magic_conjure_acid",
@@ -430,7 +434,8 @@
     "skill": "magic",
     "min_duration": 100,
     "max_duration": 100,
-    "energy_source": "FATIGUE"
+    "energy_source": "FATIGUE",
+    "spell_class": "SPELL_HEAL"
   },
   {
     "id": "arcana_magic_heat_ward",
@@ -484,7 +489,8 @@
     "energy_increment": -0.8,
     "min_duration": 36000,
     "max_duration": 108000,
-    "duration_increment": 7200
+    "duration_increment": 7200,
+    "spell_class": "SPELL_INSIGHT"
   },
   {
     "id": "arcana_magic_light",
@@ -569,7 +575,8 @@
     "energy_increment": -1.2,
     "min_duration": 60000,
     "max_duration": 180000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "spell_class": "SPELL_STRENGTH"
   },
   {
     "id": "arcana_magic_open_lock",
@@ -598,7 +605,8 @@
     "casting_time_increment": -5,
     "base_energy_cost": 50,
     "final_energy_cost": 40,
-    "energy_increment": -1
+    "energy_increment": -1,
+    "spell_class": "SPELL_LOCKPICK"
   },
   {
     "id": "arcana_magic_overgrowth",
@@ -681,7 +689,8 @@
     "energy_increment": -1.4,
     "min_duration": 36000,
     "max_duration": 108000,
-    "duration_increment": 7200
+    "duration_increment": 7200,
+    "spell_class": "SPELL_SHADOWSNAKES"
   },
   {
     "id": "arcana_magic_shockstorm",
@@ -933,6 +942,7 @@
     "energy_increment": -1.2,
     "min_duration": 30000,
     "max_duration": 90000,
-    "duration_increment": 6000
+    "duration_increment": 6000,
+    "spell_class": "SPELL_CLERIC"
   }
 ]
