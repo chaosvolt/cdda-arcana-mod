@@ -30,7 +30,7 @@
     "id": "arcana_blessing_clairvoyance",
     "type": "SPELL",
     "name": { "str": "Blessing: Clairvoyance" },
-    "description": "Arcane Blessing\nUsing this spell will anoint you with an ivory halo, granting you sight beyond sight.",
+    "description": "Arcane Blessing\nUsing this spell will gift you with clairvoyance, granting sight beyond sight.",
     "message": "A shimmering aura permeates you, opening your eyes to hidden truths.",
     "valid_targets": [ "self" ],
     "flags": [ "CONCENTRATE", "NO_LEGS", "NO_FAIL" ],

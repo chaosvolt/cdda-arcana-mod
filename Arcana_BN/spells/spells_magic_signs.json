@@ -59,7 +59,7 @@
     "id": "arcana_magic_clairvoyance",
     "type": "SPELL",
     "name": { "str": "Sign: Clairvoyance" },
-    "description": "Magic Sign\nUsing this spell will anoint you with an ivory halo, granting you sight beyond sight.",
+    "description": "Magic Sign\nUsing this spell will gift you with clairvoyance, granting sight beyond sight.",
     "message": "\"Show me what eyes could never glimpse...\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
