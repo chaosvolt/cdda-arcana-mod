@@ -1,6 +1,18 @@
 [
   {
     "type": "effect_type",
+    "id": "triffid_garland_buff",
+    "name": [ "Verdant Boost" ],
+    "desc": [ "Your body's natural stamina and pain recovery is enhanced." ],
+    "remove_message": "The garland's recovery effect fades.",
+    "decay_messages": [ [ "The effect of the verdant triffid garland is starting to fade.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 15,
+    "int_dur_factor": "1 m",
+    "base_mods": { "pain_min": [ -1 ], "stamina_min": [ 20 ], "h_mod_min": [ 1 ] }
+  },
+  {
+    "type": "effect_type",
     "id": "potion_numbness",
     "name": [ "Intense Numbness" ],
     "resist_effect": "talisman_warding",

@@ -107,6 +107,24 @@
     "components": [ [ [ "resin_chunk", 80 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
+    "result": "charm_bone_empowered",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": "30 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ]
+  },
+  {
+    "result": "triffid_garland_empowered",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": "30 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 70 ] ] ]
+  },
+  {
     "result": "meteoric_talisman",
     "type": "uncraft",
     "skill_used": "magic",

@@ -886,6 +886,19 @@
   },
   {
     "type": "SPELL",
+    "id": "arcana_item_triffid_garland_empowered",
+    "name": { "str": "Verdant Boost" },
+    "description": "Grants the recovery effect to the user.",
+    "valid_targets": [ "self" ],
+    "message": "A surge of energy flows through you from the garland!",
+    "effect": "target_attack",
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
+    "effect_str": "triffid_garland_buff",
+    "min_duration": 84000,
+    "max_duration": 84000
+  },
+  {
+    "type": "SPELL",
     "id": "arcana_item_scroll_artifice",
     "name": { "str": "Call to Order" },
     "description": "Attempts to pacify monsters for a moderate duration, paralyzes user and inflicts pain.",

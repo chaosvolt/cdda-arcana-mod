@@ -59,15 +59,6 @@
     "symbol": "[",
     "looks_like": "holy_symbol_wood",
     "color": "light_red",
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [ { "value": "REGEN_MANA", "multiply": 0.025 }, { "value": "MAX_MANA", "multiply": 0.025 } ]
-        }
-      ]
-    },
     "flags": [ "FANCY" ]
   },
   {
@@ -83,15 +74,6 @@
     "looks_like": "aquamarine_silver_pendant_necklace",
     "color": "light_gray",
     "flags": [ "FANCY" ],
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [ { "value": "REGEN_MANA", "multiply": 0.025 }, { "value": "MAX_MANA", "multiply": 0.025 } ]
-        }
-      ]
-    },
     "use_action": "MEDITATE"
   },
   {
@@ -106,15 +88,6 @@
     "symbol": "[",
     "looks_like": "jade_brooch",
     "color": "dark_gray",
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [ { "value": "REGEN_MANA", "multiply": 0.025 }, { "value": "MAX_MANA", "multiply": 0.025 } ]
-        }
-      ]
-    },
     "flags": [ "FANCY" ]
   },
   {
@@ -135,7 +108,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "REGEN_MANA", "multiply": 0.1 }, { "value": "MAX_MANA", "multiply": 0.01 } ]
+          "values": [ { "value": "REGEN_MANA", "multiply": 0.1 }, { "value": "MAX_MANA", "multiply": 0.1 } ]
         }
       ]
     },
