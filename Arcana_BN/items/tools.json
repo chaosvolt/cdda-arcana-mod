@@ -90,6 +90,25 @@
     "use_action": "MEDITATE"
   },
   {
+    "id": "charm_bone_empowered",
+    "copy-from": "charm_bone",
+    "type": "TOOL",
+    "name": { "str": "sanctified bone charm" },
+    "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any nearby enemies.  It will take a long time to recharge after each use, and activating it also fatigues the user.",
+    "price_postapoc": 2000,
+    "max_charges": 100,
+    "charges_per_use": 100,
+    "flags": [ "MAGIC_FOCUS" ],
+    "artifact_data": { "charge_type": "ARTC_TIME" },
+    "use_action": {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_charm_bone_empowered",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+    }
+  },
+  {
     "id": "offering_chalice",
     "type": "TOOL",
     "name": { "str": "offering chalice" },
