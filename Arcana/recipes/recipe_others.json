@@ -211,7 +211,7 @@
       [ [ "earth_talisman", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "FULL_MAGAZINE" ]
   },
   {
     "result": "offering_chalice",

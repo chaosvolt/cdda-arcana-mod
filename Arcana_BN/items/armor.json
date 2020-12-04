@@ -37,6 +37,25 @@
     "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
   },
   {
+    "id": "halo_amulet_effect",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": { "str": "amulet aura" },
+    "description": "A strange radiance permeating your body, enhancing your movement and reflexes.",
+    "color": "white",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MOVE_COST", "multiply": -0.9 }, { "value": "BONUS_DODGE", "add": 10 } ],
+          "ench_effects": [ { "effect": "halo_amulet_effect", "intensity": 1 } ]
+        }
+      ]
+    },
+    "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
+  },
+  {
     "id": "triffid_garland",
     "type": "ARMOR",
     "name": { "str": "triffid garland" },

@@ -285,6 +285,35 @@
     "max_duration": 400
   },
   {
+    "type": "SPELL",
+    "id": "arcana_item_amulet_exotic_empowered",
+    "name": { "str": "Elusive Enhancement" },
+    "description": "Spawns the item needed to make the effects work.",
+    "valid_targets": [ "self" ],
+    "message": "A jolt of energy arcs through your body from the amulet!",
+    "effect": "spawn_item",
+    "shape": "blast",
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
+    "effect_str": "halo_amulet_effect",
+    "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_fatigue", "hit_self": true } ],
+    "min_duration": 84000,
+    "max_duration": 84000
+  },
+  {
+    "id": "arcana_item_amulet_exotic_empowered_fatigue",
+    "type": "SPELL",
+    "name": { "str": "Elusive Enhancement Fatigue" },
+    "description": "And this makes it cost as much fatigue as it would cost if this were a Magic Sign at SL 5.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "min_damage": -72,
+    "max_damage": -72,
+    "effect": "recover_energy",
+    "shape": "blast",
+    "effect_str": "FATIGUE"
+  },
+  {
     "id": "arcana_item_generate_blood_essence",
     "type": "SPELL",
     "name": { "str": "Generate Blood Essence" },
@@ -894,8 +923,23 @@
     "effect": "target_attack",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "triffid_garland_buff",
+    "extra_effects": [ { "id": "arcana_item_triffid_garland_empowered_fatigue", "hit_self": true } ],
     "min_duration": 84000,
     "max_duration": 84000
+  },
+  {
+    "id": "arcana_item_triffid_garland_empowered_fatigue",
+    "type": "SPELL",
+    "name": { "str": "Verdant Boost" },
+    "description": "And this makes it cost as much fatigue as it would cost if this were a Magic Sign at SL 5.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "min_damage": -56,
+    "max_damage": -56,
+    "effect": "recover_energy",
+    "shape": "blast",
+    "effect_str": "FATIGUE"
   },
   {
     "type": "SPELL",

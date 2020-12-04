@@ -209,6 +209,16 @@
     "components": [ [ [ "essence_dull", 70 ] ] ]
   },
   {
+    "result": "amulet_exotic_empowered",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ] ]
+  },
+  {
     "result": "meteoric_talisman",
     "type": "uncraft",
     "skill_used": "magic",
