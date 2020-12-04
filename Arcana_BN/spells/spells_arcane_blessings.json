@@ -58,7 +58,7 @@
     "description": "Arcane Blessing\nUsing this spell will blast a cone-shaped area with psychic force, damaging and stunning hostiles caught in it.",
     "message": "A faint distortion in the air ripples out before you, and you sense an unearthly force exerting its will.",
     "effect": "cone_attack",
-    "valid_targets": [ "hostile" ],
+    "valid_targets": [ "hostile", "ground" ],
     "flags": [ "CONCENTRATE", "NO_LEGS", "IGNORE_WALLS", "SILENT", "NO_FAIL" ],
     "effect_str": "stunned",
     "min_damage": 15,
