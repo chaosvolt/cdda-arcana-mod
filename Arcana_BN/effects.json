@@ -1,6 +1,24 @@
 [
   {
     "type": "effect_type",
+    "id": "triffid_garland_buff",
+    "name": [ "Verdant Boost" ],
+    "desc": [ "Your body's natural stamina and pain recovery is enhanced." ],
+    "remove_message": "The garland's recovery effect fades.",
+    "decay_messages": [ [ "The effect of the verdant triffid garland is starting to fade.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 15,
+    "int_dur_factor": "1 m",
+    "base_mods": { "pain_min": [ -1 ], "stamina_min": [ 20 ], "health_min": [ 1 ], "h_mod_min": [ 1 ], "rad_min": [ -1 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "halo_flute_effect",
+    "//": "Effectively combines some of the perks of Free Action and yellow potion.",
+    "removes_effects": [ "downed", "bouldering", "grabbed", "lack_sleep", "sleep_deprived" ]
+  },
+  {
+    "type": "effect_type",
     "id": "potion_numbness",
     "name": [ "Intense Numbness" ],
     "resist_effect": "talisman_warding",
@@ -84,7 +102,15 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "health_min": [ 1 ], "health_chance": [ 5 ], "pain_tick": [ 25 ], "pain_min": [ -5 ], "speed_mod": [ -10, -5 ] }
+    "base_mods": {
+      "health_min": [ 1 ],
+      "health_chance": [ 5 ],
+      "h_mod_min": [ 1 ],
+      "h_mod_chance": [ 5 ],
+      "pain_tick": [ 25 ],
+      "pain_min": [ -5 ],
+      "speed_mod": [ -10, -5 ]
+    }
   },
   {
     "type": "effect_type",
@@ -98,7 +124,15 @@
     "rating": "good",
     "max_intensity": 10,
     "int_dur_factor": "1 m",
-    "base_mods": { "health_min": [ 1 ], "health_chance": [ 15 ], "pain_tick": [ 50 ], "pain_min": [ -10 ], "speed_mod": [ -15, -10 ] }
+    "base_mods": {
+      "health_min": [ 1 ],
+      "health_chance": [ 15 ],
+      "h_mod_min": [ 1 ],
+      "h_mod_chance": [ 15 ],
+      "pain_tick": [ 50 ],
+      "pain_min": [ -10 ],
+      "speed_mod": [ -15, -10 ]
+    }
   },
   {
     "type": "effect_type",
@@ -249,6 +283,8 @@
       "stamina_min": [ 0, -150 ],
       "health_min": [ 0, -10 ],
       "health_tick": [ 0, 30 ],
+      "h_mod_min": [ 0, -10 ],
+      "h_mod_tick": [ 0, 30 ],
       "pain_min": [ 0, 1 ],
       "pain_tick": [ 0, 5 ]
     }
@@ -507,7 +543,9 @@
       "fatigue_chance": [ 36, 12 ],
       "stamina_min": [ 100 ],
       "health_min": [ 1 ],
-      "health_chance": [ 12 ]
+      "health_chance": [ 12 ],
+      "h_mod_min": [ 1 ],
+      "h_mod_chance": [ 12 ]
     }
   },
   {
@@ -537,7 +575,10 @@
       "fatigue_chance_bot": [ 100 ],
       "health_min": [ 1 ],
       "health_chance": [ 30 ],
-      "health_chance_bot": [ 100 ]
+      "health_chance_bot": [ 100 ],
+      "h_mod_min": [ 1 ],
+      "h_mod_chance": [ 30 ],
+      "h_mod_chance_bot": [ 100 ]
     }
   },
   {
@@ -568,7 +609,14 @@
     ],
     "max_intensity": 6,
     "int_dur_factor": "12 h",
-    "base_mods": { "health_min": [ -1 ], "health_tick": [ 1800, 2000 ], "stamina_min": [ -5 ], "stamina_tick": [ 10, 12 ] },
+    "base_mods": {
+      "health_min": [ -1 ],
+      "health_tick": [ 1800, 2000 ],
+      "h_mod_min": [ -1 ],
+      "h_mod_tick": [ 1800, 2000 ],
+      "stamina_min": [ -5 ],
+      "stamina_tick": [ 10, 12 ]
+    },
     "scaling_mods": { "health_min": [ -1, -0.8 ], "stamina_min": [ -5 ], "stamina_tick": [ -1, -0.8 ] }
   },
   {
@@ -615,6 +663,8 @@
       "thirst_tick": [ 300 ],
       "health_min": [ -1 ],
       "health_tick": [ 600 ],
+      "h_mod_min": [ -1 ],
+      "h_mod_tick": [ 600 ],
       "stamina_min": [ -5 ],
       "stamina_tick": [ 5 ]
     }
@@ -723,6 +773,8 @@
       "vomit_chance": [ 800 ],
       "health_min": [ -6, -5 ],
       "health_chance": [ 400 ],
+      "h_mod_min": [ -6, -5 ],
+      "h_mod_chance": [ 400 ],
       "rad_min": [ 5, 4 ],
       "rad_chance": [ 1000 ]
     },
@@ -732,6 +784,7 @@
       "speed_mod": [ -4, -3 ],
       "vomit_chance": [ -120, -115 ],
       "health_chance": [ -40, -35 ],
+      "h_mod_chance": [ -40, -35 ],
       "rad_chance": [ -100, -95 ]
     }
   },
@@ -816,6 +869,8 @@
     "base_mods": {
       "health_min": [ 1 ],
       "health_tick": [ 3600 ],
+      "h_mod_min": [ 1 ],
+      "h_mod_tick": [ 3600 ],
       "hunger_min": [ 1 ],
       "hunger_chance": [ -20 ],
       "hunger_chance_bot": [ 100 ],
@@ -828,6 +883,7 @@
     },
     "scaling_mods": {
       "health_tick": [ -360, -300 ],
+      "h_mod_tick": [ -360, -300 ],
       "str_mod": [ -0.75, -0.6 ],
       "hunger_chance": [ 20, 15 ],
       "dex_mod": [ -0.75, -0.6 ],
@@ -845,6 +901,7 @@
       "rad_min": [ -25, 25 ],
       "fatigue_min": [ 0, 50 ],
       "health_min": [ 0, -10 ],
+      "h_mod_min": [ 0, -10 ],
       "pain_min": [ 0, 10 ],
       "hunger_min": [ 0, 25 ]
     }
