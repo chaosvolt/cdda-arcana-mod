@@ -13,7 +13,7 @@
   },
   {
     "type": "effect_type",
-    "id": "halo_amulet_effect",
+    "id": "halo_flute_effect",
     "//": "Effectively combines some of the perks of Free Action and yellow potion.",
     "removes_effects": [ "downed", "bouldering", "grabbed", "lack_sleep", "sleep_deprived" ]
   },

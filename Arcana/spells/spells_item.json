@@ -305,22 +305,22 @@
   {
     "type": "SPELL",
     "id": "arcana_item_amulet_exotic_empowered",
-    "name": { "str": "Elusive Enhancement" },
+    "name": { "str": "Hidden Aura" },
     "description": "Spawns the item needed to make the effects work.",
     "valid_targets": [ "self" ],
-    "message": "A jolt of energy arcs through your body from the amulet!",
+    "message": "A strange pulse from the amulet courses through your body!",
     "effect": "spawn_item",
     "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "halo_amulet_effect",
     "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_fatigue", "hit_self": true } ],
-    "min_duration": 84000,
-    "max_duration": 84000
+    "min_duration": 90000,
+    "max_duration": 90000
   },
   {
     "id": "arcana_item_amulet_exotic_empowered_fatigue",
     "type": "SPELL",
-    "name": { "str": "Elusive Enhancement Fatigue" },
+    "name": { "str": "Hidden Aura Fatigue" },
     "description": "And this makes it cost as much fatigue as it would cost if this were a Magic Sign at SL 5.",
     "valid_targets": [ "self" ],
     "message": "",
@@ -1596,6 +1596,35 @@
     "field_chance": 1,
     "min_field_intensity": 1,
     "max_field_intensity": 1
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_item_stinger_flute_empowered",
+    "name": { "str": "Elusive Enhancement" },
+    "description": "Spawns the item needed to make the effects work.",
+    "valid_targets": [ "self" ],
+    "message": "A jolt of energy arcs through your body from the flute!",
+    "effect": "spawn_item",
+    "shape": "blast",
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
+    "effect_str": "halo_flute_effect",
+    "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_fatigue", "hit_self": true } ],
+    "min_duration": 96000,
+    "max_duration": 96000
+  },
+  {
+    "id": "arcana_item_stinger_flute_empowered_fatigue",
+    "type": "SPELL",
+    "name": { "str": "Elusive Enhancement Fatigue" },
+    "description": "And this makes it cost as much fatigue as it would cost if this were a Magic Sign at SL 5.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "min_damage": -80,
+    "max_damage": -80,
+    "effect": "recover_energy",
+    "shape": "blast",
+    "effect_str": "FATIGUE"
   },
   {
     "id": "arcana_item_pet",

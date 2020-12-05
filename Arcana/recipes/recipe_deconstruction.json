@@ -199,6 +199,16 @@
     "components": [ [ [ "essence_dull", 60 ] ] ]
   },
   {
+    "result": "stinger_flute_empowered",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ]
+  },
+  {
     "result": "triffid_garland_empowered",
     "type": "uncraft",
     "skill_used": "magic",

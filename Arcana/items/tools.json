@@ -115,6 +115,28 @@
     }
   },
   {
+    "id": "stinger_flute_empowered",
+    "copy-from": "stinger_flute",
+    "type": "TOOL",
+    "name": { "str": "quickened stinger flute" },
+    "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will greatly reduce movecosts and enhance evasion.  Stamina and attack speed are unaffected, however.  It will take a long time to recharge after each use, and activating it also fatigues the user.",
+    "price_postapoc": 2500,
+    "initial_charges": 100,
+    "max_charges": 100,
+    "charges_per_use": 100,
+    "ammo": "primitive_magic_item_ammo_type",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 100 } } ],
+    "flags": [ "MAGIC_FOCUS", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
+    "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
+    "use_action": {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_stinger_flute_empowered",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+    }
+  },
+  {
     "id": "offering_chalice",
     "type": "TOOL",
     "name": { "str": "offering chalice" },
