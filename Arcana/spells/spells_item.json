@@ -42,6 +42,35 @@
     "max_duration": 17280000
   },
   {
+    "type": "SPELL",
+    "id": "arcana_item_brooch_iridescent_empowered",
+    "name": { "str": "Guard And Guide" },
+    "description": "Grants the recovery effect to the user.",
+    "valid_targets": [ "self" ],
+    "message": "A burst of protective magic radiates from the brooch!",
+    "effect": "spawn_item",
+    "shape": "blast",
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
+    "effect_str": "halo_brooch_effect",
+    "extra_effects": [ { "id": "arcana_item_brooch_iridescent_empowered_fatigue", "hit_self": true } ],
+    "min_duration": 108000,
+    "max_duration": 108000
+  },
+  {
+    "id": "arcana_item_brooch_iridescent_empowered_fatigue",
+    "type": "SPELL",
+    "name": { "str": "Guard And Guide Fatigue" },
+    "description": "And this makes it cost as much fatigue as it would cost if this were a Magic Sign at SL 5.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "min_damage": -88,
+    "max_damage": -88,
+    "effect": "recover_energy",
+    "shape": "blast",
+    "effect_str": "FATIGUE"
+  },
+  {
     "id": "arcana_item_chalice_offering",
     "type": "SPELL",
     "//": "Todo: add a difficulty of 3 and remove no-failure from the item's action, if it turns out that skill reasonably reduces an unleveled spell's failure rate to be feasible, when spell skill is no longer hardcoded.",

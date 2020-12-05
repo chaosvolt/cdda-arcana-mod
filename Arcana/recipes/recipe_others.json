@@ -211,7 +211,7 @@
       [ [ "earth_talisman", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "FULL_MAGAZINE" ]
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -232,7 +232,7 @@
       [ [ "air_talisman", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "FULL_MAGAZINE" ]
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
   {
     "result": "offering_chalice",

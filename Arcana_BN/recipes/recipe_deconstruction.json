@@ -120,7 +120,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 4,
-    "time": "30 m",
+    "time": "40 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 100 ] ] ]
   },
@@ -138,9 +138,18 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 4,
-    "time": "30 m",
+    "time": "40 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 90 ] ] ]
+  },
+  {
+    "result": "brooch_iridescent_empowered",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ] ]
   },
   {
     "result": "meteoric_talisman",

@@ -75,6 +75,33 @@
     "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
   },
   {
+    "id": "halo_brooch_effect",
+    "copy-from": "spell_base",
+    "type": "ARMOR",
+    "name": { "str": "guardian aura" },
+    "description": "A strange radiance permeating your body, adding to your defenses.",
+    "color": "white",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_ACID", "multiply": -0.5 },
+            { "value": "ARMOR_BASH", "multiply": -0.5 },
+            { "value": "ARMOR_BIO", "multiply": -0.5 },
+            { "value": "ARMOR_COLD", "multiply": -0.5 },
+            { "value": "ARMOR_CUT", "multiply": -0.5 },
+            { "value": "ARMOR_ELEC", "multiply": -0.5 },
+            { "value": "ARMOR_HEAT", "multiply": -0.5 },
+            { "value": "ARMOR_STAB", "multiply": -0.5 }
+          ]
+        }
+      ]
+    },
+    "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
+  },
+  {
     "id": "triffid_garland",
     "type": "ARMOR",
     "name": { "str": "triffid garland" },
