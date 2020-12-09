@@ -107,6 +107,50 @@
     "components": [ [ [ "resin_chunk", 80 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
+    "result": "flame_talisman",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 0,
+    "time": "5 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 10 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "water_talisman",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "time": "10 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 20 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "earth_talisman",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": "20 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "air_talisman",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": "30 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
     "result": "charm_bone_empowered",
     "type": "uncraft",
     "skill_used": "magic",
