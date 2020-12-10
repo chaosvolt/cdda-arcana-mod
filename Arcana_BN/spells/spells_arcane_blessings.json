@@ -493,7 +493,7 @@
     "type": "SPELL",
     "name": { "str": "Blessing: Radiant Burst" },
     "description": "Arcane Blessing\nUsing this spell will blast a cone-shaped area with a crackling burst of energy, striking enemies blind with divine lightning.  Anything in the center line will take double damage.",
-    "message": "Arcane Blessing\nUnearthly trails of lightning arc outward, bathing a swath ahead of you in an eerie glow.",
+    "message": "Unearthly trails of lightning arc outward, bathing a swath ahead of you in an eerie glow.",
     "effect": "cone_attack",
     "valid_targets": [ "hostile", "ground" ],
     "extra_effects": [
