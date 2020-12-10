@@ -156,9 +156,9 @@
     "base_energy_cost": 180,
     "final_energy_cost": 90,
     "energy_increment": -4.5,
-    "min_duration": 240000,
-    "max_duration": 2640000,
-    "duration_increment": 120000,
+    "min_duration": 96000,
+    "max_duration": 720000,
+    "duration_increment": 31200,
     "field_id": "fd_veil_light",
     "field_chance": 1,
     "min_field_intensity": 1,
@@ -190,9 +190,9 @@
     "base_energy_cost": 240,
     "final_energy_cost": 120,
     "energy_increment": -6,
-    "min_duration": 360000,
-    "max_duration": 3960000,
-    "duration_increment": 180000,
+    "min_duration": 144000,
+    "max_duration": 1080000,
+    "duration_increment": 46800,
     "field_id": "fd_veil_darkness",
     "field_chance": 1,
     "min_field_intensity": 1,
@@ -560,9 +560,9 @@
     "base_energy_cost": 420,
     "final_energy_cost": 210,
     "energy_increment": -10.5,
-    "min_duration": 720000,
-    "max_duration": 7920000,
-    "duration_increment": 360000
+    "min_duration": 288000,
+    "max_duration": 2160000,
+    "duration_increment": 93600
   },
   {
     "id": "arcana_blessing_summon_homunculus",
@@ -589,9 +589,9 @@
     "base_energy_cost": 360,
     "final_energy_cost": 180,
     "energy_increment": -9,
-    "min_duration": 600000,
-    "max_duration": 6600000,
-    "duration_increment": 300000
+    "min_duration": 240000,
+    "max_duration": 1800000,
+    "duration_increment": 78000
   },
   {
     "id": "arcana_blessing_summon_skeletal_dog",
@@ -621,9 +621,9 @@
     "base_energy_cost": 300,
     "final_energy_cost": 150,
     "energy_increment": -7.5,
-    "min_duration": 480000,
-    "max_duration": 5280000,
-    "duration_increment": 240000
+    "min_duration": 192000,
+    "max_duration": 1440000,
+    "duration_increment": 62400
   },
   {
     "id": "arcana_blessing_summon_skeleton",
@@ -650,9 +650,9 @@
     "base_energy_cost": 300,
     "final_energy_cost": 150,
     "energy_increment": -7.5,
-    "min_duration": 480000,
-    "max_duration": 5280000,
-    "duration_increment": 240000
+    "min_duration": 192000,
+    "max_duration": 1440000,
+    "duration_increment": 62400
   },
   {
     "id": "arcana_blessing_summon_thing",
@@ -679,9 +679,9 @@
     "base_energy_cost": 360,
     "final_energy_cost": 180,
     "energy_increment": -9,
-    "min_duration": 600000,
-    "max_duration": 6600000,
-    "duration_increment": 300000
+    "min_duration": 240000,
+    "max_duration": 1800000,
+    "duration_increment": 78000
   },
   {
     "id": "arcana_blessing_summon_vortices",
@@ -711,9 +711,9 @@
     "base_energy_cost": 420,
     "final_energy_cost": 210,
     "energy_increment": -10.5,
-    "min_duration": 720000,
-    "max_duration": 7920000,
-    "duration_increment": 360000
+    "min_duration": 288000,
+    "max_duration": 2160000,
+    "duration_increment": 93600
   },
   {
     "id": "arcana_blessing_surge_adrenaline",

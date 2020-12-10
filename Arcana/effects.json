@@ -660,8 +660,20 @@
     ],
     "max_intensity": 6,
     "int_dur_factor": "12 h",
-    "base_mods": { "int_mod": [ -1 ], "vomit_chance": [ 2000, 2400 ], "pain_min": [ 4, 2 ], "pain_chance": [ 1500, 1750 ] },
-    "scaling_mods": { "int_mod": [ -1.25, -1 ], "vomit_chance": [ -200, -150 ], "stamina_min": [ -5 ], "pain_chance": [ -200, -150 ] }
+    "base_mods": {
+      "int_mod": [ -1 ],
+      "stamina_min": [ -5 ],
+      "pain_chance": [ 1500, 2000 ],
+      "vomit_chance": [ 2000, 2500 ],
+      "vomit_tick": [ 60, 120 ]
+    },
+    "scaling_mods": {
+      "int_mod": [ -1.25, -1 ],
+      "stamina_min": [ -2, -1 ],
+      "pain_min": [ 1, 0.5 ],
+      "pain_chance": [ -200, 100 ],
+      "vomit_chance": [ -200, -100 ]
+    }
   },
   {
     "type": "effect_type",
