@@ -657,8 +657,8 @@
     ],
     "message": "You look deep into the orb, and see a vision of the surrounding area hidden among headache-inducing geometries.",
     "flags": [ "NO_HANDS", "NO_LEGS" ],
-    "min_aoe": 24,
-    "max_aoe": 24,
+    "min_aoe": 30,
+    "max_aoe": 30,
     "base_casting_time": 100
   },
   {
@@ -672,8 +672,8 @@
     "effect": "attack",
     "shape": "blast",
     "effect_str": "spell_revelation",
-    "min_duration": 30000,
-    "max_duration": 90000
+    "min_duration": 600000,
+    "max_duration": 600000
   },
   {
     "id": "arcana_item_orb_veil_attention",
