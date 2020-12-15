@@ -1733,6 +1733,7 @@
     "name": { "str": "Recrystallize" },
     "description": "Dirty hack for being unable to unload the sword since it uses ARTC_PORTAL.",
     "valid_targets": [ "self" ],
+    "message": "You channel the energy in the blade, reforming a sliver of crystallized essence from it.",
     "flags": [ "SILENT", "PERMANENT", "NO_HANDS", "NO_LEGS" ],
     "effect": "spawn_item",
     "effect_str": "essence_pure",
