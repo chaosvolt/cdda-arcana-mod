@@ -1699,7 +1699,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "restored ritual blade" },
-    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Linger next to a portal to fuel it, or use crystallized essence.  It will grant great gifts, but set you down a path you can't return from.",
+    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Linger next to a portal to fuel it, or use crystallized essence.  It will grant great gifts, but set you down a path you can't return from.  (( Use the \"Inject\" option to offer power to the Beyond, \"Cast Spell\" will recrystallize essence from charges. ))",
     "weight": "2267 g",
     "volume": "3 L",
     "//": "Arguably it being restored instead of untainted means it should count as a post-cata item, but the original was pre-cata.",
@@ -1714,7 +1714,16 @@
     "max_charges": 10,
     "charges_per_use": 1,
     "ammo": "essence_pure_type",
-    "use_action": { "type": "mutagen_iv", "mutation_category": "VEIL" },
+    "use_action": [
+      { "type": "mutagen_iv", "mutation_category": "VEIL" },
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_veilblade_recrystallize",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
     "artifact_data": { "charge_type": "ARTC_PORTAL" },
     "relic_data": {
       "passive_effects": [

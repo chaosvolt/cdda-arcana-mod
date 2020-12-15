@@ -99,7 +99,6 @@
     "batch_time_factors": [ 95, 5 ],
     "book_learn": [ [ "book_sacrifice", 2 ], [ "book_syncretism", 3 ], [ "book_scrollcraft", 3 ] ],
     "autolearn": true,
-    "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "offering_chalice", -1 ] ] ],
     "components": [
       [
@@ -178,7 +177,6 @@
     "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 5 ] ],
     "autolearn": true,
     "using": [ [ "arcana_essence_any", 10 ], [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },

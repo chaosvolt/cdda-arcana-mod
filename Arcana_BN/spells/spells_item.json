@@ -502,6 +502,19 @@
     "effect_str": "PAIN"
   },
   {
+    "id": "arcana_item_mana_potion",
+    "type": "SPELL",
+    "name": { "str": "Mana Boost" },
+    "description": "Restores 1200 mana.",
+    "valid_targets": [ "self" ],
+    "message": "You drink the potion and feel magical energy flowing through you.",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "min_damage": 1200,
+    "max_damage": 1200,
+    "effect": "recover_energy",
+    "effect_str": "MANA"
+  },
+  {
     "id": "arcana_item_mantle_shadow",
     "type": "SPELL",
     "name": { "str": "Illusory Shroud" },
@@ -1713,6 +1726,18 @@
     "min_damage": -6,
     "max_damage": -10,
     "effect": "target_attack"
+  },
+  {
+    "id": "arcana_item_veilblade_recrystallize",
+    "type": "SPELL",
+    "name": { "str": "Recrystallize" },
+    "description": "Dirty hack for being unable to unload the sword since it uses ARTC_PORTAL.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "PERMANENT", "NO_HANDS", "NO_LEGS" ],
+    "effect": "spawn_item",
+    "effect_str": "essence_pure",
+    "min_duration": 1,
+    "max_duration": 1
   },
   {
     "id": "arcana_item_wyrmskin_acid",
