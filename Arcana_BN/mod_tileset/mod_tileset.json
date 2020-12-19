@@ -15,7 +15,7 @@
   },
   {
     "type": "mod_tileset",
-    "compatibility": [ "UltimateCataclysm", "UltimateCataclysmDemo" ],
+    "compatibility": [ "UltimateCataclysm" ],
     "tiles-new": [
       {
         "file": "mod_tileset/arcana_expan_ultica_small.png",
@@ -125,7 +125,7 @@
   },
   {
     "type": "mod_tileset",
-    "compatibility": [ "UltimateCataclysm", "UltimateCataclysmDemo" ],
+    "compatibility": [ "UltimateCataclysm" ],
     "tiles-new": [
       {
         "file": "mod_tileset/arcana_expan_ultica_normal.png",
@@ -149,7 +149,7 @@
   },
   {
     "type": "mod_tileset",
-    "compatibility": [ "UltimateCataclysm", "UltimateCataclysmDemo" ],
+    "compatibility": [ "UltimateCataclysm" ],
     "tiles-new": [
       {
         "file": "mod_tileset/arcana_expan_ultica_tall.png",
@@ -222,7 +222,7 @@
   },
   {
     "type": "mod_tileset",
-    "compatibility": [ "UltimateCataclysm", "UltimateCataclysmDemo" ],
+    "compatibility": [ "UltimateCataclysm" ],
     "tiles-new": [
       {
         "file": "mod_tileset/arcana_expan_ultica_large.png",

@@ -72,7 +72,7 @@
     "charges_per_use": 20,
     "ammo": "essence_dull_type",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_gilded_aegis_healing", "no_fail": true, "level": 0, "need_worn": true },
-    "relative": { "weight": 3020, "price": 7200, "material_thickness": 3, "encumbrance": 9 },
+    "relative": { "weight": 3020, "material_thickness": 3, "encumbrance": 9 },
     "extend": { "flags": [ "NO_SALVAGE", "HELMET_COMPAT", "FANCY" ] }
   },
   {
@@ -155,7 +155,7 @@
     "storage": 0,
     "environmental_protection": 10,
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true } ],
-    "relative": { "weight": "722 g", "volume": "1500 ml", "price": 80000 },
+    "relative": { "weight": "722 g", "volume": "1500 ml" },
     "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "FANCY" ] },
     "delete": { "flags": [ "VARSIZE" ] }
   },
@@ -218,7 +218,7 @@
         "type": "transform"
       }
     ],
-    "relative": { "weight": 616, "volume": -1, "price": 16000, "material_thickness": 1 },
+    "relative": { "weight": 616, "volume": -1, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
@@ -260,7 +260,7 @@
       "level": 0,
       "need_worn": true
     },
-    "relative": { "weight": 210, "price": 6200, "material_thickness": 1 },
+    "relative": { "weight": 210, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {

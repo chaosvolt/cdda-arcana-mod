@@ -257,7 +257,7 @@
     "charges_per_use": 3,
     "ammo": "essence_dull_type",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_hammerzeit", "no_fail": true, "need_wielding": true, "level": 0 },
-    "relative": { "weight": "360 g", "bashing": 2, "price": 12000 },
+    "relative": { "weight": "360 g", "bashing": 2 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
@@ -410,7 +410,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -452,7 +452,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -494,7 +494,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -536,7 +536,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -578,7 +578,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -620,7 +620,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -661,7 +661,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -703,7 +703,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -745,7 +745,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -787,7 +787,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true,
-      "skill1": "magic"
+      "skills": [ "magic" ]
     }
   },
   {
@@ -878,7 +878,7 @@
     "ammo": "essence_blood_type",
     "weight": "707 g",
     "volume": "750 ml",
-    "relative": { "bashing": -2, "weight": "-200 g" },
+    "relative": { "bashing": -2 },
     "use_action": [
       {
         "target": "bloodaxe_act",
@@ -920,8 +920,8 @@
       "type": "explosion",
       "fields_type": "fd_blood",
       "fields_radius": 3,
-      "fields_min_density": 3,
-      "fields_max_density": 3,
+      "fields_min_intensity": 3,
+      "fields_max_intensity": 3,
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
@@ -1609,6 +1609,7 @@
     "cutting": 21,
     "max_charges": 24,
     "ammo": "essence_blood_type",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 24 } } ],
     "relic_data": {
       "passive_effects": [
         {
@@ -1634,7 +1635,7 @@
     "id": "scourge_moonstone_on",
     "copy-from": "scourge_moonstone",
     "repairs_like": "scourge_moonstone",
-    "type": "GENERIC",
+    "type": "TOOL",
     "name": { "str": "moonstone scourge (on)", "str_pl": "moonstone scourges (on)" },
     "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  The stone blades reflect with an eerie red luster, and it seems far more nimble in the hand.",
     "//": "Turns out that modifying attack speed via relic data doesn't work right for transforming items, so weight-based hacks it is!",
