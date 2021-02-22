@@ -3,7 +3,7 @@
     "type": "scenario",
     "name": "Seeker of the Arcane",
     "description": "You were drawn to this place in search of answers, in search of power.  Whoever or whatever once lived here, they've suffered the same fate as those in the cities.  But some remnant of their mysterious work may remain.",
-    "ident": "arcane_seeker",
+    "id": "arcane_seeker",
     "points": 0,
     "start_name": "Arcanist Enclave",
     "allowed_locs": [ "curious_structure", "impact_site", "island_temple", "strange_grove" ],
@@ -39,7 +39,7 @@
     "type": "scenario",
     "name": "Urban Awakening",
     "description": "Some practiced the arcane in the shadows of civilization.  Either to escape the bickering of distant arcane orders, or to further their goals.  Sooner or later, you'll have to face the apocalypse raging above...",
-    "ident": "arcane_urban",
+    "id": "arcane_urban",
     "points": 1,
     "start_name": "Hidden In Plain Sight",
     "allowed_locs": [ "arcanist_basement", "cathedral_basement" ],
@@ -78,14 +78,14 @@
   },
   {
     "type": "scenario",
-    "ident": "surrounded",
+    "id": "surrounded",
     "copy-from": "surrounded",
     "add_professions": true,
     "extend": { "professions": [ "arcanist_alchemist", "arcanist_scribe", "arcanist_shrike", "arcanist_purifier" ] }
   },
   {
     "type": "scenario",
-    "ident": "isolationist",
+    "id": "isolationist",
     "copy-from": "isolationist",
     "add_professions": true,
     "extend": {
@@ -101,19 +101,19 @@
   },
   {
     "type": "scenario",
-    "ident": "lab_chal",
+    "id": "lab_chal",
     "copy-from": "lab_chal",
     "extend": { "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT" ] }
   },
   {
     "type": "scenario",
-    "ident": "mutant",
+    "id": "mutant",
     "copy-from": "mutant",
     "extend": { "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT" ] }
   },
   {
     "type": "scenario",
-    "ident": "ambushed",
+    "id": "ambushed",
     "copy-from": "ambushed",
     "extend": {
       "professions": [ "arcanist_bloodmage", "arcanist_magehunter", "arcanist_oathkeeper", "arcanist_shrike", "arcanist_purifier" ]
@@ -121,7 +121,7 @@
   },
   {
     "type": "scenario",
-    "ident": "summer_advanced_start",
+    "id": "summer_advanced_start",
     "copy-from": "summer_advanced_start",
     "extend": {
       "professions": [ "arcanist_bloodmage", "arcanist_magehunter", "arcanist_oathkeeper", "arcanist_shrike", "arcanist_purifier" ]
@@ -129,7 +129,7 @@
   },
   {
     "type": "scenario",
-    "ident": "wilderness",
+    "id": "wilderness",
     "copy-from": "wilderness",
     "add_professions": true,
     "extend": {
@@ -145,7 +145,7 @@
   },
   {
     "type": "scenario",
-    "ident": "cyberpunk",
+    "id": "cyberpunk",
     "copy-from": "cyberpunk",
     "extend": { "professions": [ "arcanist_purifier" ] }
   }

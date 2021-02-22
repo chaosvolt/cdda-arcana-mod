@@ -7,7 +7,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_apprentice",
+    "id": "arcanist_apprentice",
     "name": "Apprentice",
     "description": "You were an aspiring student of a well-learned master of the mysterious arts.  Sadly, you had only just begun your apprenticeship when your master was claimed by the end of the world.",
     "points": 1,
@@ -23,7 +23,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_alchemist",
+    "id": "arcanist_alchemist",
     "name": "Alchemist",
     "description": "You studied under a well-learned scholar, a seeker of the fabled elixir of life.  Despite the tutelage of a master alchemist, you never got any closer to finishing the great work.",
     "points": 2,
@@ -56,7 +56,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_scribe",
+    "id": "arcanist_scribe",
     "name": "Scribe",
     "description": "You were a well-read scholar, learning the basics of giving true power to the written word.  You dreamt of great archives holding forbidden knowledge, but all you have seen lately is a ruined world.",
     "points": 2,
@@ -90,7 +90,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_bloodmage",
+    "id": "arcanist_bloodmage",
     "name": "Blood Mage",
     "description": "You have beheld true power, as a member of the Sanguine Order.  Power from within, as well as power from beyond.  But at what cost?",
     "points": 4,
@@ -119,7 +119,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_magehunter",
+    "id": "arcanist_magehunter",
     "name": "Mage Hunter",
     "description": "You were a member of The Cleansing Flame, a religious order.  The end of all has come.  The barrier between worlds has been shattered.  The dead hunger for the living.  But you will not give in.",
     "points": 4,
@@ -159,7 +159,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_oathkeeper",
+    "id": "arcanist_oathkeeper",
     "name": "Dark Priest",
     "description": "He From Beyond The Veil calls to you, to your brothers and sisters.  And the faithful, those who remain at least, shall bring him into this world.",
     "points": 6,
@@ -191,7 +191,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_summoner",
+    "id": "arcanist_summoner",
     "name": "Summoner",
     "description": "You were a student of a master arcanist.  Not taught to merely take advantage of power from beyond, no.  Taught to draw it forth in living form, bind it to your will.  If only your master hadn't summoned more power than could be controlled.",
     "spells": [ { "id": "arcana_magic_summon_shadow", "level": 1 }, { "id": "arcana_magic_summon_shadow_snake", "level": 1 } ],
@@ -233,7 +233,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_shrike",
+    "id": "arcanist_shrike",
     "name": "Sanguine Shrike",
     "description": "You were a hunter of hunters, protecting your fellow blood mages during rituals and important missions.  As the Sanguine Order crumbled, many of your brethren strayed from The Path and left the Order to rot.  Will you follow suit?",
     "points": 8,
@@ -289,7 +289,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_purifier",
+    "id": "arcanist_purifier",
     "name": "Arcane Purifier",
     "description": "You have embraced modern technology and mystical power alike, in your pursuit of knowledge and a way to prevent the cataclysm.  Once of the Cleansing Flame, whether you went rogue or still honor their ideals, that no longer matters anymore.",
     "spells": [ { "id": "arcana_magic_capacitance", "level": 1 } ],
@@ -337,7 +337,7 @@
   },
   {
     "type": "profession",
-    "ident": "arcanist_scholar",
+    "id": "arcanist_scholar",
     "name": "Arcane Scholar",
     "description": "You were always the studious type, collecting interesting books.  Over time your studies turned towards the eccentric and anomalous, and as the end of the world struck, you gathered nothing more than your most prized possessions.",
     "points": 2,

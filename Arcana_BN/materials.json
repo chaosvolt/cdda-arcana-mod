@@ -1,7 +1,7 @@
 [
   {
     "type": "material",
-    "ident": "essencemat",
+    "id": "essencemat",
     "name": "Magical Essence",
     "density": 1,
     "bash_resist": 20,
@@ -16,7 +16,7 @@
   },
   {
     "type": "material",
-    "ident": "wyrmskin",
+    "id": "wyrmskin",
     "name": "Wyrmskin",
     "density": 6,
     "specific_heat_liquid": 1.5,
@@ -43,7 +43,7 @@
   },
   {
     "type": "material",
-    "ident": "clay",
+    "id": "clay",
     "name": "Clay",
     "density": 8,
     "specific_heat_liquid": 1,
@@ -63,7 +63,7 @@
   },
   {
     "type": "material",
-    "ident": "stone",
+    "id": "stone",
     "name": "Stone",
     "density": 17,
     "specific_heat_liquid": 0.82,
