@@ -224,6 +224,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERHEAT" ],
+    "prereqs2": [ "CARNIVORE" ],
     "changes_to": [ "ARCANA_DRAGONFIRE" ],
     "leads_to": [ "ARCANA_FIREAFFINITY", "ARCANA_TOXINIMMUNE" ],
     "category": [ "DRAGONBLOOD" ],
