@@ -333,7 +333,7 @@
       }
     ],
     "relative": { "weight": 3020, "price": 55000, "material_thickness": 1, "encumbrance": 5 },
-    "extend": { "flags": [ "NO_SALVAGE", "USE_PLAYER_ENERGY", "ELECTRIC_IMMUNE", "RAINPROOF", "TRADER_KEEP_EQUIPPED" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "ELECTRIC_IMMUNE", "RAINPROOF", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
     "id": "hauberk_jade_on",
