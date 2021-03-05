@@ -10,8 +10,8 @@
     "difficulty": 4,
     "time": "45 m",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 1 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "using": [ [ "blacksmithing_standard", 1 ], [ "surface_heat", 2 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_dull", 25 ] ],
@@ -32,8 +32,8 @@
     "difficulty": 4,
     "time": "1 h",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 1 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "using": [ [ "blacksmithing_standard", 3 ], [ "surface_heat", 6 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_dull", 75 ] ],
@@ -54,8 +54,8 @@
     "difficulty": 4,
     "time": "1 h 20 m",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 1 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "using": [ [ "blacksmithing_standard", 12 ], [ "surface_heat", 24 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_dull", 300 ] ],
@@ -76,8 +76,8 @@
     "difficulty": 4,
     "time": "1 h 45 m",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 1 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "using": [ [ "blacksmithing_standard", 25 ], [ "surface_heat", 50 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_dull", 625 ] ],
