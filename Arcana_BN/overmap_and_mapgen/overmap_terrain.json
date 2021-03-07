@@ -441,5 +441,13 @@
     "color": "i_light_gray",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "s_gas_arcana_bandit",
+    "copy-from": "generic_city_building",
+    "name": "gas station",
+    "color": "light_blue",
+    "flags": [ "RISK_HIGH" ]
   }
 ]

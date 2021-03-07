@@ -441,5 +441,26 @@
     "time": "45 m",
     "fun": -2,
     "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "arcana_mech_shem",
+    "type": "BOOK",
+    "name": { "str": "Z-07 Engraved Plate" },
+    "description": "A warped sheet of exotic metal, covered in esoteric engravings.  The patterns depicted on it resemble astrological imagery and alchemical formulas, with fragments of legible writing encircling the outer edge of the design.  On closer inspection, parts of the engraving appear to resemble technical drawings and schematics for the very machine it was torn from, either for some ritual purpose that helped give it life, or for some unknown research purpose.  Someone skilled in otherworldly knowledge might be able to glean something useful from this.",
+    "weight": "10800 g",
+    "volume": "3 L",
+    "price": 120000,
+    "price_postapoc": 1500,
+    "material": [ "superalloy", "essencemat" ],
+    "symbol": "?",
+    "looks_like": "alloy_plate",
+    "color": "light_gray",
+    "skill": "magic",
+    "required_level": 9,
+    "max_level": 10,
+    "intelligence": 16,
+    "time": "45 m",
+    "fun": -2,
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
   }
 ]
