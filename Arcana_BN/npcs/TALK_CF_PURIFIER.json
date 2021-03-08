@@ -43,8 +43,25 @@
         "text": "Do you have anything to trade?",
         "effect": "start_trade",
         "condition": { "not": { "npc_has_trait": "FIX_CF_GM" } },
-        "switch": true,
         "topic": "TALK_CF_PURIFIER"
+      },
+      {
+        "text": "I'm ready, what do you need?",
+        "condition": { "npc_has_var": "nicholas_mission_2_ready", "type": "mission", "context": "rural_church", "value": "yes" },
+        "switch": true,
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "So, what's next?",
+        "condition": { "npc_has_var": "nicholas_mission_1_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        "switch": true,
+        "topic": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_1"
+      },
+      {
+        "text": "Anything I can do to help?",
+        "condition": { "npc_has_trait": "FIX_CF_GM" },
+        "switch": true,
+        "topic": "TALK_MISSION_LIST"
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
@@ -96,5 +113,46 @@
       "no": "I haven't been here in a long time.  Before I became a member of the Cleansing Flame, might've been a teenager in fact.  To be honest, I recall a distinct lack of palisades back then.  But, I bet the padre was the same guy Sofia had an agreement with, letting us use this place.  Though I guess the deacon back at the center is technically in charge now."
     },
     "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_PURIFIER" } ]
+  },
+  {
+    "id": "TALK_CF_PURIFIER_MISSION_END_1",
+    "type": "talk_topic",
+    "dynamic_line": "I'm still trying to make sense of all the information you brought in, but I have a possible lead.  I might need your help to get more information to help put everything together.",
+    "responses": [
+      { "text": "What kind of lead?", "topic": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_1" },
+      { "text": "Where can I get that information?", "topic": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_2" },
+      { "text": "Tell me what I need to do.", "topic": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_3" },
+      { "text": "Let me get back to you on that.", "topic": "TALK_CF_PURIFIER" }
+    ]
+  },
+  {
+    "id": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_1",
+    "type": "talk_topic",
+    "dynamic_line": "The notes concern an attempt to track down something called Project Kairos.  Some sort of portal research that persisted a bit longer after things boiled over, when most of the other labs had already fallen apart.  That data contained information on the last couple supply movements during and after Zero Day, science facilities suspected to be connected to this project, other clues here and there.  But we haven't pinpointed the location.",
+    "responses": [
+      { "text": "How do we find it then?", "topic": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_2" },
+      { "text": "Any way I can help?", "topic": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_3" },
+      { "text": "I need to think it over.", "topic": "TALK_CF_PURIFIER" }
+    ]
+  },
+  {
+    "id": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_2",
+    "type": "talk_topic",
+    "dynamic_line": "That's what I'm thinking you could help with.  There has to be someone who knows more about this, or failing that, where we could find more information.",
+    "responses": [
+      { "text": "Worth a shot.", "topic": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_3" },
+      { "text": "Maybe later.", "topic": "TALK_CF_PURIFIER" }
+    ]
+  },
+  {
+    "id": "TALK_CF_PURIFIERTALK_CF_PURIFIER_MISSION_END_1_3",
+    "type": "talk_topic",
+    "dynamic_line": "I'm just about then getting a summary of the project, known locations of supply shipments, and what little else we know copied.  Talk to me when you're ready and I just might have an idea for how we can get what we need.",
+    "speaker_effect": [
+      {
+        "effect": [ { "npc_add_var": "nicholas_mission_2_ready", "type": "mission", "context": "rural_church", "value": "yes" } ]
+      }
+    ],
+    "responses": [ { "text": "We'll see then.", "topic": "TALK_CF_PURIFIER" } ]
   }
 ]
