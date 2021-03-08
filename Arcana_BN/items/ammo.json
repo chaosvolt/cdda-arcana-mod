@@ -301,7 +301,7 @@
     "description": "A handloaded shotgun shell, loaded with silver pellets and blessed with salt.  The addition of consecrated essence enhances its impact and turns each pellet into a mote of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
     "price": 0,
     "price_postapoc": 900,
-    "damage": { "damage_type": "heat", "amount": 45 },
+    "damage": { "damage_type": "heat", "amount": 45, "armor_penetration": 10 },
     "extend": { "effects": [ "INCENDIARY", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
@@ -313,7 +313,7 @@
     "//": "Likely rare to non-existent before the cataclysm.",
     "price": 0,
     "price_postapoc": 1500,
-    "damage": { "damage_type": "heat", "amount": 45 },
+    "damage": { "damage_type": "heat", "amount": 45, "armor_penetration": 10 },
     "extend": { "effects": [ "INCENDIARY", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
@@ -324,7 +324,7 @@
     "description": "A prepared blunderbuss shot, loaded with silver scraps and blessed with salt.  The addition of consecrated essence enhances its impact and turns each pellet into a mote of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
     "price": 0,
     "price_postapoc": 100,
-    "damage": { "damage_type": "heat", "amount": 60 },
+    "damage": { "damage_type": "heat", "amount": 60, "armor_penetration": 10 },
     "extend": { "effects": [ "INCENDIARY", "ARCANA_DAZZLE_SHOT" ] }
   }
 ]
