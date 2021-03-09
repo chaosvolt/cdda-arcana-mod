@@ -70,6 +70,18 @@
     "flags": [ "ZERO_WEIGHT" ]
   },
   {
+    "id": "essence_fake",
+    "type": "AMMO",
+    "name": { "str_sp": "displacement surge power" },
+    "description": "Seeing this is a bug.",
+    "material": [ "essencemat" ],
+    "flags": [ "PSEUDO", "PERPETUAL" ],
+    "symbol": "?",
+    "color": "cyan",
+    "count": 1,
+    "ammo_type": "essence_fake_type"
+  },
+  {
     "type": "AMMO",
     "id": "arrow_arcana_unpowered",
     "name": { "str": "exotic arrow" },
