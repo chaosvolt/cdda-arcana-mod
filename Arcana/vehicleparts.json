@@ -104,8 +104,9 @@
     "damage_modifier": 60,
     "durability": 200,
     "description": "An exotic reactor designed to be charged with essence, broken down in a reaction that increases its potential output.  Unnaturally efficient and reliable, though limited by how precious a fuel source such otherworldly energies are.",
-    "power": 250,
+    "power": 100,
     "epower": 120000,
+    "energy_consumption": 120000,
     "fuel_type": "essence",
     "item": "essence_surge_generator_item",
     "location": "fuel_source",
@@ -126,8 +127,7 @@
         "using": [ [ "welding_standard", 5 ] ]
       }
     },
-    "flags": [ "REACTOR", "EMITTER" ],
-    "emissions": [ "emit_electroanomaly_vehicle" ],
+    "flags": [ "REACTOR" ],
     "breaks_into": [
       { "item": "scrap", "count": [ 1, 4 ] },
       { "item": "steel_chunk", "count": [ 1, 3 ] },
