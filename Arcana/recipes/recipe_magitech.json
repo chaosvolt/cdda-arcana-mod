@@ -333,6 +333,29 @@
     "flags": [ "SECRET" ]
   },
   {
+    "result": "displacement_surge_generator_item",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "skills_required": [ [ "electronics", 7 ], [ "fabrication", 6 ] ],
+    "difficulty": 8,
+    "time": "30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "recipe_lab_arcana", 8 ], [ "recipe_lab_elec", 9 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "essence_surge_generator_item", 1 ] ],
+      [ [ "teleporter", 1 ], [ "portal", 1 ], [ "bio_teleport", 1 ], [ "bio_probability_travel", 1 ] ],
+      [ [ "shadow_gem", 1 ] ],
+      [ [ "gold_small", 100 ] ],
+      [ [ "silver_glyph", 1 ] ],
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
     "type": "recipe",
     "result": "bio_essence_surge_cell",
     "category": "CC_ARCANA",

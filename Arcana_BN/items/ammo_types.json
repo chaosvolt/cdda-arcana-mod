@@ -22,5 +22,11 @@
     "name": "crystallized essence",
     "default": "essence_pure",
     "type": "ammunition_type"
+  },
+  {
+    "id": "essence_fake_type",
+    "name": "displace surge power",
+    "default": "essence_fake",
+    "type": "ammunition_type"
   }
 ]
