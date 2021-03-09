@@ -512,7 +512,7 @@
     "using": [ [ "surface_heat", 25 ] ],
     "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "CHEM", "level": 2 } ],
     "components": [
-      [ [ "essence_pure", 5 ], [ "arcana_essence_any", 50, "LIST" ] ],
+      [ [ "essence_pure", 10 ], [ "arcana_essence_any", 100, "LIST" ] ],
       [ [ "salt", 300 ] ],
       [ [ "copper", 180 ] ],
       [ [ "lye_powder", 120 ] ],

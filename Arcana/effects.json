@@ -1010,32 +1010,27 @@
     "id": "arcana_mech_laser_immunities",
     "name": [ "Environmental Shielding" ],
     "desc": [
-      "A barrier projected by your mech is currently providing immunity to acid, fire, toxic gas, and various other hazards.  Also shields you from being blinded and negates falling damage."
+      "A barrier projected by your mech is currently providing resistance to acid and fire, plus immunity to toxic gas.  Also shields you from being blinded, and negates falling damage."
     ],
-    "//": "Protects against blindness since flares can dazzle targets, feather fall effect since mech is supposed to be able to fly.  Some effects of Free Action, Clarity of Blood, and Ward Against Poison.  All effects of Ward Against Fire, Ward Against Acid, and Ward Against Cold.",
+    "//": "Protects against blindness since flares can dazzle targets, feather fall effect since mech is supposed to be able to fly.  Some effects of Free Action, Clarity of Blood, Ward Against Poison, Ward Against Fire, and Ward Against Acid.",
     "blocks_effects": [
       "blind",
       "downed",
-      "dazed",
-      "webbed",
       "slimed",
       "sap",
       "relax_gas",
       "grabbed",
       "onfire",
       "smoke",
-      "hot",
-      "blisters",
-      "hot_speed",
-      "cold",
-      "frostbite",
-      "frostbite_recovery",
+      "corroding",
       "spores",
       "stung",
+      "poison",
+      "badpoison",
       "teargas",
       "migo_atmosphere"
     ],
-    "flags": [ "EFFECT_FEATHER_FALL", "EFFECT_HEAT_IMMUNE", "EFFECT_ACID_IMMUNE", "EFFECT_COLD_IMMUNE" ]
+    "flags": [ "EFFECT_FEATHER_FALL", "EFFECT_COLD_IMMUNE" ]
   },
   {
     "type": "effect_type",

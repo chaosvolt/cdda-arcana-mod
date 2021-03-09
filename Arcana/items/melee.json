@@ -364,6 +364,20 @@
     "flags": [ "WATCH", "NO_SALVAGE", "TRADER_AVOID" ]
   },
   {
+    "id": "cf_purifier_project_data",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "Project Kairos intel printout" },
+    "description": "A printed list of local research facilities, also listing various shipments of goods that had been sent to and from the locations on the list.  Someone more familiar with classified military or laboratory projects might be able to use this information, to figure out which location is which."
+  },
+  {
+    "id": "arcane_purifier_intel_2",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "Priority Site Shipping Manifest - CLASSIFIED" },
+    "description": "A detailed list of shipments to various scientific and military installations in the area, concerning equipment being sent to and from various locations and what was being shipped.  Quite a lot of the items listed involve strange terminology and esoteric codenames.  Should be perfect for figuring out what places were being sent anomalous materials, in the right hands."
+  },
+  {
     "type": "GENERIC",
     "id": "broken_mech_arcana",
     "name": { "str": "broken anomaly recon mech" },
