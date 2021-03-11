@@ -844,7 +844,7 @@
       "rejected": "Hell, you change your mind just come see me, y'hear?",
       "advice": "Figure they have some way to make those things, if you can't get your hands on one...",
       "inquire": "Any luck?",
-      "success": "Damn this thing looks fancy, I hope this is enough for your trouble.  Actually hell, the boys and I just took in a decent haul not long ago, I I can do one better than just paying you.  I'll have a cut of the last hunt laid out on the table in the main room laid out for you.",
+      "success": "Damn this thing looks fancy, I hope this is enough for your trouble.  Actually hell, the boys and I just took in a decent haul not long ago, I can do one better than just paying you.  I'll have a cut of the last hunt laid out on the table in the main room laid out for you.",
       "success_lie": "Seeing this is probably a bug.",
       "failure": "Seeing this is probably a bug."
     }
@@ -904,7 +904,7 @@
       "rejected": "Well alright, come back anytime if you change your mind.  I doubt it'll be a massive improvement to the logistics of things here or at the commune, but it's worth looking into.",
       "advice": "Most of those things are venomous and right nasty to get tangled up in.  Just be mindful about burning them out, I don't want to risk harming what you're there for.",
       "inquire": "Any luck?",
-      "success": "Alright.  Sofia's skeptical that I can make a large-scale breakthrough with this.  I can use what I've learned, and a little help from her, to liven up the compound here and grow a few things, but it seems it'll take a lot of energy plus burn out whatever force is still present in these petals.  They have away to weave its effects into someone's very being so they don't need to hunt monsters, but that just makes it drain energy out of whoever uses it instead.  Still, thank you for the help, should have the finishing touches ready right quick.",
+      "success": "Alright.  Sofia's skeptical that I can make a large-scale breakthrough with this.  I can use what I've learned, and a little help from her, to liven up the compound here and grow a few things, but it seems it'll take a lot of energy plus burn out whatever force is still present in these petals.  They have a way to weave its effects into someone's very being so they don't need to hunt monsters, but that just makes it drain energy out of whoever uses it instead.  Still, thank you for the help, should have the finishing touches ready right quick.",
       "success_lie": "Seeing this is probably a bug.",
       "failure": "Seeing this is probably a bug."
     },
@@ -921,11 +921,10 @@
     "type": "mission_definition",
     "name": { "str": "Investigate anomalous ambush" },
     "description": "Put down the cause of a recent attack on a caravan, then report back to the shopkeep.",
-    "goal": "MGOAL_FIND_ITEM",
+    "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 1,
     "value": 15000,
     "has_generic_rewards": false,
-    "item": "triffid_queen_flower",
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
       "assign_mission_target": {
@@ -945,7 +944,7 @@
     },
     "dialogue": {
       "describe": "Seeing this is probably a bug.",
-      "offer": "I've been working on getting some equipment set up here, to expand the kinds of things we can make.  I have a guy bringing in supplies and we can get it set up ourselves.  Problem is, I had to get in touch with a new transport team because the last one up and vanished.  Word from the other scavengers gave me an estimate what happened, and it doesn't sound good.  I'd like you to go scope it out, and put down whoever or whatever you find.",
+      "offer": "I've been working on getting some equipment set up here, to expand the kinds of things we can make.  I have a guy bringing in supplies and we can get it set up ourselves.  Problem is, I had to get in touch with a new transport team because the last one up and vanished.  Word from the other scavengers gave me an estimate of what happened, and it doesn't sound good.  I'd like you to go scope it out, and put down whoever or whatever caused this.",
       "accepted": "Thanks.  You can keep anything from the caravan you can salvage, I'm more interested in taking care of whatever ambushed them.",
       "rejected": "Alright.  I want you to come see me if you change your mind, though.",
       "advice": "I don't know what to expect out there, intel suggests some kinda rock formation that wasn't on the local route maps, might be a hideout, staging area, lair or who knows what.  Could be some kinda anomaly.",
@@ -1036,6 +1035,34 @@
         { "u_buy_item": "CF_golden_scale", "count": 15 }
       ]
     }
+  },
+  {
+    "id": "MISSION_CF_PURIFIER_1_INTERLUDE_1",
+    "type": "mission_definition",
+    "name": { "str": "Investigate Laboratory Server Room" },
+    "description": "Investigate a science lab and retrieve the intel Nicholas is looking for from their server room.  Bring the shipping manifest back to Nicholas and arrange for information on medical shipments to be sent back to the Old Guard doctor, then check back with the refugee center.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_var": "nicholas_info_sent", "type": "mission", "context": "rural_church", "value": "yes" },
+    "difficulty": 5,
+    "has_generic_rewards": false,
+    "value": 10000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": { "om_terrain": "lab_bunker_arcana", "om_special": "Arcana Minilab", "reveal_radius": 3, "search_range": 180, "z": 0 },
+      "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } ]
+    },
+    "dialogue": {
+      "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
+      "offer": "Seeing this is probably a bug.",
+      "accepted": "Seeing this is probably a bug.",
+      "rejected": "Seeing this is probably a bug.",
+      "advice": "Seeing this is probably a bug.",
+      "inquire": "How did it work out?",
+      "success": "That's good.  I've been going over the information your contact sent us, some of these sites have items we desperately need.  I'll leave the matter of this \"Project Kairos\" for your contact to deal with, I trust they can handle whatever it is they're looking for.  Here's something for your trouble, the least I can do after you helped arrange this.",
+      "success_lie": "Seeing this is probably a bug.",
+      "failure": "Seeing this is probably a bug."
+    },
+    "end": { "effect": [ { "u_buy_item": "FMCNote", "count": 20 } ] }
   },
   {
     "id": "MISSION_CF_PURIFIER_1_3",
