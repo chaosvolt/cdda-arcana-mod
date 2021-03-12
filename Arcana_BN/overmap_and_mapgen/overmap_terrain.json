@@ -449,5 +449,21 @@
     "name": "gas station",
     "color": "light_blue",
     "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "microlab_arcana_surface",
+    "copy-from": "microlab_generic_surface",
+    "name": "science lab loading bay",
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "microlab_arcana_server_room",
+    "name": "science lab server room",
+    "sym": "S",
+    "color": "light_blue",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   }
 ]

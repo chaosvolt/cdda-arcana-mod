@@ -1048,7 +1048,7 @@
     "value": 10000,
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
-      "assign_mission_target": { "om_terrain": "lab_bunker_arcana", "om_special": "Arcana Minilab", "reveal_radius": 3, "search_range": 180, "z": 0 },
+      "assign_mission_target": { "om_terrain": "microlab_arcana_surface", "om_special": "4x4_microlab_arcana", "om_terrain_replace": "field", "reveal_radius": 3, "search_range": 180, "z": 0 },
       "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } ]
     },
     "dialogue": {
