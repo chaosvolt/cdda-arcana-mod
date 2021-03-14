@@ -1057,12 +1057,40 @@
       "accepted": "Seeing this is probably a bug.",
       "rejected": "Seeing this is probably a bug.",
       "advice": "Seeing this is probably a bug.",
-      "inquire": "How did it work out?",
+      "inquire": "Did you find what you're looking for?",
       "success": "That's good.  I've been going over the information your contact sent us, some of these sites have items we desperately need.  I'll leave the matter of this \"Project Kairos\" for your contact to deal with, I trust they can handle whatever it is they're looking for.  Here's something for your trouble, the least I can do after you helped arrange this.",
       "success_lie": "Seeing this is probably a bug.",
       "failure": "Seeing this is probably a bug."
     },
     "end": { "effect": [ { "u_buy_item": "FMCNote", "count": 20 } ] }
+  },
+  {
+    "id": "MISSION_CF_PURIFIER_1_INTERLUDE_2",
+    "type": "mission_definition",
+    "name": { "str": "Investigate Lost Scavenger Team" },
+    "description": "Investigate the last known location of a group of survivors, suspected to have found documents of the information Nicholas is looking for.  After bringing the information back to Nicholas, you may return to bring back news of what happened to the scavengers.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_var": "nicholas_info_sent", "type": "mission", "context": "rural_church", "value": "yes" },
+    "difficulty": 5,
+    "has_generic_rewards": false,
+    "value": 10000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": { "om_terrain": "arcana_cave_caravan", "om_special": "Cave_arcana_caravan", "om_terrain_replace": "field", "reveal_radius": 3, "search_range": 180, "z": 0 },
+      "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } ]
+    },
+    "dialogue": {
+      "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
+      "offer": "Seeing this is probably a bug.",
+      "accepted": "Seeing this is probably a bug.",
+      "rejected": "Seeing this is probably a bug.",
+      "advice": "Seeing this is probably a bug.",
+      "inquire": "Did you find them?",
+      "success": "I'm guessing it was too late for them.  I did hear from Sofia's people however, we now have a much better understanding of what places might be valuable sources of supplies, and which are best avoided.  This will save lives in the long run.  I know it's not much given the risk you went through, but here.",
+      "success_lie": "Seeing this is probably a bug.",
+      "failure": "Seeing this is probably a bug."
+    },
+    "end": { "effect": [ { "u_buy_item": "FMCNote", "count": 15 } ] }
   },
   {
     "id": "MISSION_CF_PURIFIER_1_3",
