@@ -514,7 +514,6 @@
     "name": "science lab loading bay",
     "sym": "L",
     "color": "white",
-    "spawns": { "group": "GROUP_LAB_SURFACE", "population": [ 8, 25 ], "chance": 50 },
     "see_cost": 5,
     "mondensity": 2,
     "flags": [ "RISK_HIGH" ]
@@ -524,5 +523,36 @@
     "id": "lab_arcane_1_6",
     "copy-from": "lab_arcane_1_5",
     "name": "science lab entrance"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_1",
+    "copy-from": "lab_arcane_1_5",
+    "name": "science lab - Sector One"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_2",
+    "copy-from": "lab_arcane_2_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_3",
+    "copy-from": "lab_arcane_2_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_4",
+    "copy-from": "lab_arcane_2_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_5",
+    "copy-from": "lab_arcane_2_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_6",
+    "copy-from": "lab_arcane_2_1"
   }
 ]
