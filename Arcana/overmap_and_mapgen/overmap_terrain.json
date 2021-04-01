@@ -483,5 +483,76 @@
     "color": "brown",
     "see_cost": 2,
     "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_1_1",
+    "name": "parking lot",
+    "sym": "O",
+    "color": "dark_gray",
+    "see_cost": 1,
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_1_2",
+    "copy-from": "lab_arcane_1_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_1_3",
+    "copy-from": "lab_arcane_1_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_1_4",
+    "copy-from": "lab_arcane_1_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_1_5",
+    "name": "science lab loading bay",
+    "sym": "L",
+    "color": "white",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_1_6",
+    "copy-from": "lab_arcane_1_5",
+    "name": "science lab entrance"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_1",
+    "copy-from": "lab_arcane_1_5",
+    "name": "science lab - Sector One"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_2",
+    "copy-from": "lab_arcane_2_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_3",
+    "copy-from": "lab_arcane_2_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_4",
+    "copy-from": "lab_arcane_2_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_5",
+    "copy-from": "lab_arcane_2_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_2_6",
+    "copy-from": "lab_arcane_2_1"
   }
 ]
