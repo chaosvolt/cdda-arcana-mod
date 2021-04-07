@@ -585,5 +585,36 @@
     "type": "overmap_terrain",
     "id": "lab_arcane_3_6",
     "copy-from": "lab_arcane_3_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_4_1",
+    "copy-from": "lab_arcane_2_1",
+    "name": "science lab - Sector Three"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_4_2",
+    "copy-from": "lab_arcane_4_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_4_3",
+    "copy-from": "lab_arcane_4_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_4_4",
+    "copy-from": "lab_arcane_4_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_4_5",
+    "copy-from": "lab_arcane_4_1"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "lab_arcane_4_6",
+    "copy-from": "lab_arcane_4_1"
   }
 ]

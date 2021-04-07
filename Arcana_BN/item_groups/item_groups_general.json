@@ -336,9 +336,10 @@
       { "group": "tools_science", "prob": 15 },
       { "group": "tools_gunsmith", "prob": 5 },
       { "group": "magic_crafting", "prob": 10 },
-      { "group": "supplies_electronics", "prob": 15 },
+      { "group": "supplies_electronics", "prob": 10 },
       { "group": "tools_mechanic", "prob": 5 },
-      { "group": "lab_misc_anomalous_items", "prob": 2 },
+      { "group": "lab_misc_anomalous_items", "prob": 5 },
+      { "group": "lab_magitech_weaponry", "prob": 2 },
       { "group": "lab_magitech_bionics", "prob": 3 },
       { "group": "lab_magitech_other", "prob": 5 },
       { "group": "magic_books", "prob": 5 },
@@ -378,7 +379,7 @@
     "type": "item_group",
     "items": [
       [ "electrothermal_arc_cannon", 50 ],
-      [ "bio_electrothermal_arc_projector", 25 ],
+      [ "rift_focus_cannon", 25 ],
       [ "arcane_accelerator_railgun", 10 ],
       [ "arcane_accelerator_plasma", 10 ],
       [ "arcane_accelerator_nuke", 5 ]
