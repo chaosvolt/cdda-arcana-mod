@@ -443,6 +443,46 @@
     "flags": [ "TRADER_AVOID" ]
   },
   {
+    "id": "note_arcane_lab_surface",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "laboratory note" },
+    "description": "A hastily-scribbled note.",
+    "snippet_category": "arcane_lab_note_surface"
+  },
+  {
+    "id": "note_arcane_lab_sector_one",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "laboratory note" },
+    "description": "A hastily-scribbled note.",
+    "snippet_category": "arcane_lab_note_sector_one"
+  },
+  {
+    "id": "note_arcane_lab_sector_two",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "laboratory note" },
+    "description": "A hastily-scribbled note.",
+    "snippet_category": "arcane_lab_note_sector_two"
+  },
+  {
+    "id": "note_arcane_lab_sector_three",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "laboratory note" },
+    "description": "A hastily-scribbled note.",
+    "snippet_category": "arcane_lab_note_sector_three"
+  },
+  {
+    "id": "note_arcane_lab_finale",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "laboratory note" },
+    "description": "A hastily-scribbled note.",
+    "snippet_category": "arcane_lab_note_finale"
+  },
+  {
     "id": "arcana_mech_shem",
     "type": "BOOK",
     "name": { "str": "Z-07 Engraved Plate" },

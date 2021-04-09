@@ -2167,7 +2167,7 @@
         ".....................",
         ".....3...............",
         ".....................",
-        "..........~.!!.......",
+        "..........~..........",
         " ................  ..",
         " ................  ..",
         "  ...............  ..",
@@ -2185,9 +2185,14 @@
         "                     "
       ],
       "terrain": { ".": "t_strconc_floor", "~": "t_strconc_floor", "3": "t_strconc_floor" },
-      "furniture": { "!": "f_null" },
       "traps": { "3": "tr_null", "~": "tr_null" },
       "place_loot": [
+        { "item": "dimensional_focus_lens", "x": 10, "y": 5 },
+        { "item": "scrap", "x": [ 8, 12 ], "y": [ 1, 3 ], "repeat": [ 8, 16 ] },
+        { "item": "sheet_metal", "x": [ 8, 12 ], "y": [ 1, 3 ], "repeat": [ 5, 10 ] },
+        { "item": "alloy_sheet", "x": [ 8, 12 ], "y": [ 1, 3 ], "repeat": [ 12, 18 ] },
+        { "item": "large_lcd_screen", "x": [ 8, 12 ], "y": [ 7, 8 ] },
+        { "item": "e_scrap", "x": [ 8, 12 ], "y": [ 7, 8 ], "repeat": [ 10, 16 ] },
         { "item": "wire", "x": [ 1, 8 ], "y": [ 1, 9 ], "repeat": 3 },
         { "item": "pipe", "x": [ 1, 8 ], "y": [ 1, 9 ], "repeat": 3 },
         { "item": "chain", "x": [ 1, 8 ], "y": [ 1, 9 ], "chance": 20, "repeat": 3 },
@@ -2208,10 +2213,7 @@
         { "item": "small_lcd_screen", "x": [ 12, 18 ], "y": [ 1, 9 ], "chance": 40, "repeat": 3 },
         { "item": "amplifier", "x": [ 12, 18 ], "y": [ 1, 9 ], "chance": 40, "repeat": 3 },
         { "item": "plastic_chunk", "x": [ 12, 18 ], "y": [ 1, 9 ], "repeat": [ 6, 24 ] },
-        { "item": "scrap", "x": [ 12, 18 ], "y": [ 1, 9 ], "repeat": [ 9, 24 ] },
-        { "item": "2x4", "x": [ 12, 18 ], "y": [ 1, 9 ], "repeat": [ 3, 7 ] },
-        { "item": "splinter", "x": [ 12, 18 ], "y": [ 1, 9 ], "repeat": [ 1, 2 ] },
-        { "item": "wood_panel", "x": [ 12, 18 ], "y": [ 1, 9 ], "chance": 50 }
+        { "item": "scrap", "x": [ 12, 18 ], "y": [ 1, 9 ], "repeat": [ 9, 24 ] }
       ]
     }
   }

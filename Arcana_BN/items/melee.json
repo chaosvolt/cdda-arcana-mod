@@ -379,6 +379,22 @@
   },
   {
     "type": "GENERIC",
+    "id": "dimensional_focus_lens",
+    "looks_like": "portal",
+    "name": { "str": "dimensional focus lens", "str_pl": "dimensional focus lenses" },
+    "description": "A peculiar device clearly of otherworldly origin, at least in part.  Concentric rings of exotic metal frame a small orb of something resembling pitch-black stone, each ring made up of segments engraved with exotic technical markings.  Whatever its purpose once was, it seems to be all that remains of the portal research that went on in this cursed place.  Someone more knowledgeable in the arcane might find this incredibly useful.",
+    "weight": "7 kg",
+    "color": "light_cyan",
+    "price": 2000000,
+    "price_postapoc": 0,
+    "symbol": ",",
+    "material": [ "superalloy", "essencemat" ],
+    "volume": "5 L",
+    "category": "other",
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "type": "GENERIC",
     "id": "broken_mech_arcana",
     "name": { "str": "broken anomaly recon mech" },
     "description": "This is a prototype recon mech, once more a ruined mess of machinery.  Salvaging it for parts might enable remaking it once again.",
