@@ -61,6 +61,12 @@
         "topic": "TALK_CF_PURIFIER_INTERLUDE_MISSION"
       },
       {
+        "text": "So now what?",
+        "condition": { "npc_has_var": "nicholas_mission_3_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        "switch": true,
+        "topic": "TALK_CF_PURIFIER_MISSION_END_3"
+      },
+      {
         "text": "What's next?",
         "condition": { "npc_has_var": "nicholas_mission_3_ready", "type": "mission", "context": "rural_church", "value": "yes" },
         "switch": true,
@@ -183,6 +189,36 @@
     "responses": [
       { "text": "Thanks!  Before I go…", "topic": "MISSION_CF_PURIFIER" },
       { "text": "Thanks, I'll be back later!", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_CF_PURIFIER_MISSION_END_3_1",
+    "type": "talk_topic",
+    "dynamic_line": "It's a very rare assembly of rare components, and it's been heavily used.  It's marked, in a sense, by its repeated use in breaching the Veil.  Together with the research obtained for Sofia, we can put it to good use.",
+    "responses": [
+      { "text": "From the hermit, and the shrikes?", "topic": "TALK_CF_PURIFIER_MISSION_END_3_2" },
+      { "text": "What use would that be?", "topic": "TALK_CF_PURIFIER_MISSION_END_3_3" },
+      { "text": "I'll check back later.", "topic": "TALK_CF_PURIFIER" }
+    ]
+  },
+  {
+    "id": "TALK_CF_PURIFIER_MISSION_END_3_2",
+    "type": "talk_topic",
+    "dynamic_line": "Yes, all the information that was brought from Sofia.  The Keepers provided a valuable understanding of the principles their dimension-sealing relics operated on.  And the remnants of the Sanguine Order, despite all the evils they've done, have learned many lessons on manipulating energies of the Beyond, mostly the hard way.  Together with this component, we can hopefully manufacture a dimension-sealing device of our own.",
+    "responses": [
+      { "text": "What can you tell me about that component?", "topic": "TALK_CF_PURIFIER_MISSION_END_3_1" },
+      { "text": "What use would that be?", "topic": "TALK_CF_PURIFIER_MISSION_END_3_3" },
+      { "text": "I'll check back later.", "topic": "TALK_CF_PURIFIER" }
+    ]
+  },
+  {
+    "id": "TALK_CF_PURIFIER_MISSION_END_3_3",
+    "type": "talk_topic",
+    "dynamic_line": "I'm working on a device that can use the same basic concept of manipulating and containing a rift that Project Kairos was involved in, together with Keeper and Sanguinist knowledge of how to manipulate the Veil.  Once it's ready, we'll have a device that can seal breaches and stabilize the fabric of the Veil, one area at a time.  It's not much, but it'll help.",
+    "responses": [
+      { "text": "What can you tell me about that component?", "topic": "TALK_CF_PURIFIER_MISSION_END_3_1" },
+      { "text": "How did the Keepers and Sanguine Order contribute?", "topic": "TALK_CF_PURIFIER_MISSION_END_3_2" },
+      { "text": "I'll check back later.", "topic": "TALK_CF_PURIFIER" }
     ]
   },
   {
