@@ -6,7 +6,7 @@
     "description": "Earn the trust of an old survivor.",
     "//": "Achievement is fully hidden until you reveal it.",
     "hidden_by": [ "achievement_arcana_npc_alexander" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_alexander", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_alexander", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_npc_alexander",
@@ -28,7 +28,7 @@
     "description": "Learn of another settlement surviving out there.",
     "//": "Achievement is fully hidden until you reveal it.",
     "hidden_by": [ "achievement_arcana_mission_deacon" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_mission_deacon", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_mission_deacon", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_mission_deacon",
@@ -49,7 +49,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> The Priestess" },
     "description": "Make contact with a survivor in an old roadside church.",
     "hidden_by": [ "achievement_arcana_npc_johnathan" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_sofia", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_sofia", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_npc_sofia",
@@ -70,7 +70,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> The Knight-Errant" },
     "description": "Complete missions for Sofia, attracting allies to her cause.",
     "hidden_by": [ "achievement_arcana_npc_sofia" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_johnathan", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_johnathan", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_npc_johnathan",
@@ -91,7 +91,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> The Scholar" },
     "description": "Complete missions for Johnathan, leading to further reinforcements.",
     "hidden_by": [ "achievement_arcana_npc_johnathan" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_matthew", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_matthew", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_npc_matthew",
@@ -112,7 +112,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> The Artificers" },
     "description": "Complete Sofia's missions, bringing various allies to her cause.",
     "hidden_by": [ "achievement_arcana_npc_johnathan" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_nicholas", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_npc_nicholas", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_npc_nicholas",
@@ -133,7 +133,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> A Lost Dream, Rekindled" },
     "description": "Restore a forgotten relic of a nearly-extinguished faith.",
     "hidden_by": [ "achievement_arcana_npc_alexander" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_mission_sword", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_mission_sword", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_mission_sword",
@@ -154,7 +154,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> Never Too Deep" },
     "description": "Purge the land of a demon lurking beneath sacred ground.",
     "hidden_by": [ "achievement_arcana_monkill_spirit_of_fire" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_spirit_of_fire", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_spirit_of_fire", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_monkill_spirit_of_fire",
@@ -175,7 +175,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> Wild Rose" },
     "description": "Slay the beast that stalks an abandoned grove.",
     "hidden_by": [ "achievement_arcana_monkill_moruboru" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_moruboru", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_moruboru", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_monkill_moruboru",
@@ -196,7 +196,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> May He Forge Your Chains" },
     "description": "Kill a possessed priest, hidden away in a temple on floating stone.",
     "hidden_by": [ "achievement_arcana_monkill_archon" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_archon", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_archon", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_monkill_archon",
@@ -217,7 +217,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> Dragon Re-Slayer" },
     "description": "Put down an infested creature, dragged from the Beyond to a lost temple.",
     "hidden_by": [ "achievement_arcana_monkill_dracolich" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_dracolich", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_dracolich", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_monkill_dracolich",
@@ -238,7 +238,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> So Long As The Sun Shines" },
     "description": "Complete Johnathan's Missions, hunting the enemies of humanity.",
     "hidden_by": [ "achievement_arcana_npc_matthew" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_seraphic_shade", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_seraphic_shade", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_monkill_seraphic_shade",
@@ -259,7 +259,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> Anointed" },
     "description": "Offer power to He From Beyond The Veil, and be rewarded.",
     "hidden_by": [ "achievement_arcana_mission_sword" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_mutation_paragon", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_mutation_paragon", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_mutation_paragon",
@@ -280,7 +280,7 @@
     "name": { "str": "<color_cyan>(Arcana)</color> Sacramentum Sanguinem" },
     "description": "Pursue The Path using a heart ripped out of a winged abomination.",
     "hidden_by": [ "achievement_arcana_monkill_dracolich" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_mutation_dragonblood", "is": ">=", "target": 1, "visible": "never" } ]
+    "requirements": [ { "event_statistic": "num_avatar_arcana_mutation_dragonblood", "is": ">=", "target": 1 } ]
   },
   {
     "id": "num_avatar_arcana_mutation_dragonblood",

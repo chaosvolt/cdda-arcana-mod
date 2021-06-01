@@ -318,7 +318,6 @@
     "valid_targets": [ "self" ],
     "message": "A strange pulse from the amulet courses through your body!",
     "effect": "spawn_item",
-    "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "halo_amulet_effect",
     "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_fatigue", "hit_self": true } ],
@@ -336,7 +335,6 @@
     "min_damage": -72,
     "max_damage": -72,
     "effect": "recover_energy",
-    "shape": "blast",
     "effect_str": "FATIGUE"
   },
   {
@@ -1064,7 +1062,6 @@
     "min_damage": -56,
     "max_damage": -56,
     "effect": "recover_energy",
-    "shape": "blast",
     "effect_str": "FATIGUE"
   },
   {
@@ -1657,7 +1654,6 @@
     "valid_targets": [ "self" ],
     "message": "A jolt of energy arcs through your body from the flute!",
     "effect": "spawn_item",
-    "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "halo_flute_effect",
     "extra_effects": [ { "id": "arcana_item_stinger_flute_empowered_fatigue", "hit_self": true } ],
@@ -1675,7 +1671,6 @@
     "min_damage": -80,
     "max_damage": -80,
     "effect": "recover_energy",
-    "shape": "blast",
     "effect_str": "FATIGUE"
   },
   {

@@ -1632,7 +1632,6 @@
     "cutting": 21,
     "max_charges": 24,
     "ammo": "essence_blood_type",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 24 } } ],
     "relic_data": {
       "passive_effects": [
         {
