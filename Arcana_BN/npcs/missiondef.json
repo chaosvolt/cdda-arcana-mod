@@ -63,7 +63,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "destination": "arcana_hermitage_1",
     "start": {
-      "effect": { "u_add_effect": "sent_to_hermit", "duration": "PERMANENT" },
+      "effect": { "u_add_effect": "sent_to_hermit" },
       "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "om_special": "Hermit Cabin", "reveal_radius": 3, "search_range": 180, "z": 0 }
     },
     "dialogue": {
@@ -90,7 +90,7 @@
     "start": {
       "assign_mission_target": { "om_terrain": "impact_site", "om_special": "Floating Temple", "reveal_radius": 3, "search_range": 180, "z": 0 }
     },
-    "end": { "effect": [ { "npc_add_effect": "hermit_stage_1", "duration": "PERMANENT" } ] },
+    "end": { "effect": [ { "npc_add_effect": "hermit_stage_1" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_RESTORE_SWORD",
     "dialogue": {
@@ -116,8 +116,8 @@
     "value": 250000,
     "end": {
       "effect": [
-        { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" },
-        { "u_add_effect": "hermit_stage_2", "duration": "PERMANENT" }
+        { "npc_add_effect": "hermit_stage_2" },
+        { "u_add_effect": "hermit_stage_2" }
       ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -153,7 +153,7 @@
         "z": 0
       }
     },
-    "end": { "effect": [ { "npc_add_effect": "hermit_stage_3", "duration": "PERMANENT" } ] },
+    "end": { "effect": [ { "npc_add_effect": "hermit_stage_3" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_BECOME_PARAGON",
     "dialogue": {
@@ -187,7 +187,7 @@
         "z": 0
       }
     },
-    "end": { "effect": [ { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" } ] },
+    "end": { "effect": [ { "npc_add_effect": "hermit_stage_4" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "Perhaps we shall at last atone...",
@@ -212,7 +212,7 @@
     "value": 10000,
     "has_generic_rewards": false,
     "start": {
-      "effect": [ { "u_add_effect": "already_asked_deacon", "duration": "PERMANENT" } ],
+      "effect": [ { "u_add_effect": "already_asked_deacon" } ],
       "assign_mission_target": {
         "om_terrain": "cf_church_4",
         "om_special": "cf_rural_church",
@@ -237,7 +237,7 @@
       "failure": "How in God's name did you fail at this?"
     },
     "end": {
-      "effect": [ { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" }, { "u_buy_item": "FMCNote", "count": 5 } ]
+      "effect": [ { "npc_add_effect": "rural_church_aware" }, { "u_buy_item": "FMCNote", "count": 5 } ]
     }
   },
   {
@@ -264,7 +264,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 2 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1" }, { "u_buy_item": "CF_golden_scale", "count": 2 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "place_nested": [ { "chunks": [ "cf_church_upgrade_1_a" ], "x": 3, "y": 3 } ] },
         {
@@ -304,7 +304,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 4 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1" }, { "u_buy_item": "CF_golden_scale", "count": 4 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "place_nested": [ { "chunks": [ "cf_church_upgrade_2_a" ], "x": 3, "y": 3 } ] },
         {
@@ -343,9 +343,9 @@
     },
     "end": {
       "effect": [
-        { "u_add_effect": "cf_mission_sofia_3", "duration": "PERMANENT" },
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_sofia_3" },
+        { "u_add_effect": "cf_mission_1" },
+        { "npc_add_effect": "cf_mission_3" },
         { "u_buy_item": "CF_golden_scale", "count": 6 }
       ],
       "update_mapgen": [
@@ -390,7 +390,7 @@
       "effect": [
         { "u_add_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "npc_add_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_1" },
         { "u_buy_item": "CF_golden_scale", "count": 8 }
       ],
       "update_mapgen": [
@@ -430,7 +430,7 @@
     "end": {
       "effect": [
         { "npc_add_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_1" },
         { "u_buy_item": "CF_golden_scale", "count": 10 }
       ],
       "update_mapgen": [ { "om_terrain": "cf_church_2", "place_nested": [ { "chunks": [ "cf_church_upgrade_6" ], "x": 2, "y": 3 } ] } ]
@@ -479,7 +479,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_2", "place_nested": [ { "chunks": [ "cf_church_upgrade_8_a" ], "x": 8, "y": 4 } ] },
         { "om_terrain": "cf_church_2_roof", "mapgen_update_id": "cf_church_upgrade_8_b" }
@@ -518,8 +518,8 @@
     },
     "end": {
       "effect": [
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_add_effect": "cf_mission_sofia_7", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_1" },
+        { "u_add_effect": "cf_mission_sofia_7" },
         { "u_buy_item": "CF_golden_scale", "count": 14 }
       ],
       "update_mapgen": [
@@ -544,7 +544,7 @@
       "assign_mission_target": { "om_terrain": "strange_grove", "om_special": "Strange Grove", "reveal_radius": 3, "z": 0 }
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 6 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1" }, { "u_buy_item": "CF_golden_scale", "count": 6 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_GM_1_a" },
         { "om_terrain": "cf_church_2", "mapgen_update_id": "cf_church_upgrade_GM_1_b" },
@@ -580,7 +580,7 @@
       "assign_mission_target": { "om_terrain": "curious_structure", "om_special": "Curious Structure", "reveal_radius": 3, "z": 0 }
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 8 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1" }, { "u_buy_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_GM_2_a" },
         { "om_terrain": "cf_church_2", "mapgen_update_id": "cf_church_upgrade_GM_2_b" },
@@ -629,9 +629,9 @@
     },
     "end": {
       "effect": [
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_add_effect": "cf_mission_johnathan_3", "duration": "PERMANENT" },
-        { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_1" },
+        { "u_add_effect": "cf_mission_johnathan_3" },
+        { "npc_add_effect": "cf_mission_3" },
         { "u_buy_item": "CF_golden_scale", "count": 10 }
       ],
       "update_mapgen": [
@@ -729,7 +729,7 @@
     "end": {
       "effect": [
         { "u_add_var": "johnathan_prelude_penultimate", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
+        { "u_add_effect": "cf_mission_1" }
       ]
     }
   },
@@ -779,7 +779,7 @@
     "end": {
       "effect": [
         { "npc_add_var": "johnathan_mission_finale", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_1" },
         { "u_buy_item": "CF_golden_scale", "count": 20 }
       ],
       "update_mapgen": [
@@ -998,7 +998,7 @@
     "end": {
       "effect": [
         { "npc_add_var": "nicholas_mission_1_end", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_1" },
         { "u_buy_item": "CF_golden_scale", "count": 10 }
       ]
     }
@@ -1030,7 +1030,7 @@
     "end": {
       "effect": [
         { "npc_add_var": "nicholas_mission_2_end", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_1" },
         { "u_buy_item": "CF_golden_scale", "count": 15 }
       ]
     }
@@ -1142,7 +1142,7 @@
     "end": {
       "effect": [
         { "npc_add_var": "nicholas_mission_3_end", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_mission_1" },
         { "u_buy_item": "CF_golden_scale", "count": 20 }
       ]
     }

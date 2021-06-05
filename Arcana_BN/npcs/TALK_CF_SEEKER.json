@@ -101,7 +101,7 @@
       },
       {
         "text": "Let's trade then.",
-        "effect": [ { "u_add_effect": "cf_seeker_traded", "duration": "PERMANENT" }, "start_trade" ],
+        "effect": [ { "u_add_effect": "cf_seeker_traded" }, "start_trade" ],
         "switch": true,
         "default": true,
         "topic": "TALK_CF_SEEKER"

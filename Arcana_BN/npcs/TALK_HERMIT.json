@@ -14,7 +14,7 @@
           ]
         },
         "topic": "TALK_MISSION_FAILURE",
-        "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
+        "effect": { "npc_add_effect": "hermit_stage_failure" },
         "opinion": { "trust": -1, "value": -1, "anger": 1 }
       },
       {
@@ -28,7 +28,7 @@
           ]
         },
         "topic": "TALK_MISSION_FAILURE",
-        "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
+        "effect": { "npc_add_effect": "hermit_stage_failure" },
         "opinion": { "trust": -1, "value": -1, "anger": 1 }
       }
     ]
@@ -146,7 +146,7 @@
         "switch": true,
         "text": "You mentioned more to talk about, along with this mission?",
         "topic": "TALK_HERMIT_DISCUSS_3_FAIL",
-        "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
+        "effect": { "npc_add_effect": "hermit_stage_failure" },
         "condition": {
           "and": [
             { "not": { "u_has_trait": "THRESH_VEIL" } },
@@ -328,12 +328,12 @@
     "responses": [
       {
         "text": "Can you tell me if any other Keepers still live?  They seek knowledge and allies.",
-        "effect": { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" },
+        "effect": { "npc_add_effect": "hermit_stage_4" },
         "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES"
       },
       {
         "text": "Do you have any research of your own they may benefit from, concerning the Beyond?",
-        "effect": { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" },
+        "effect": { "npc_add_effect": "hermit_stage_4" },
         "topic": "TALK_HERMIT_CF_REP_MISSION_KNOWLEDGE"
       }
     ]
@@ -372,7 +372,7 @@
         "success": {
           "topic": "TALK_HERMIT_CF_REP_MISSION_INTIMIDATE",
           "opinion": { "fear": 1, "trust": -1 },
-          "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+          "effect": { "u_add_effect": "hermit_earned_trust_1" }
         },
         "failure": { "topic": "TALK_DONE", "opinion": { "anger": 1, "value": -1 }, "effect": "insult_combat" }
       }
@@ -449,8 +449,8 @@
       {
         "effect": [
           { "u_add_var": "sofia_mission_5_ready", "type": "flag", "context": "hermit", "value": "yes" },
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ]
       }
     ],
@@ -478,8 +478,8 @@
       {
         "effect": [
           { "u_add_var": "sofia_mission_5_ready", "type": "flag", "context": "hermit", "value": "yes" },
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ]
       }
     ],
@@ -539,8 +539,8 @@
       {
         "effect": [
           { "u_add_var": "sofia_mission_5_ready", "type": "flag", "context": "hermit", "value": "yes" },
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ]
       }
     ],
@@ -556,7 +556,7 @@
     "responses": [
       {
         "text": "…",
-        "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "hermit_earned_trust_1" },
         "topic": "TALK_HERMIT"
       }
     ]
@@ -596,7 +596,7 @@
         "switch": true,
         "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
         "condition": { "and": [ { "npc_has_effect": "hermit_has_blood_essence" }, { "u_has_item": "book_bloodmagic" } ] },
-        "effect": [ { "npc_add_effect": "hermit_has_sanguine_codex", "duration": "PERMANENT" }, { "u_consume_item": "book_bloodmagic" } ]
+        "effect": [ { "npc_add_effect": "hermit_has_sanguine_codex" }, { "u_consume_item": "book_bloodmagic" } ]
       },
       {
         "text": "I don't have the book you need.  I'll be back later.",
@@ -610,7 +610,7 @@
         "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
         "condition": { "and": [ { "npc_has_effect": "hermit_has_salt" }, { "u_has_items": { "item": "essence_blood", "count": 12 } } ] },
         "effect": [
-          { "npc_add_effect": "hermit_has_blood_essence", "duration": "PERMANENT" },
+          { "npc_add_effect": "hermit_has_blood_essence" },
           { "u_consume_item": "essence_blood", "count": 12 }
         ]
       },
@@ -625,7 +625,7 @@
         "switch": true,
         "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
         "condition": { "u_has_items": { "item": "salt", "count": 100 } },
-        "effect": [ { "npc_add_effect": "hermit_has_salt", "duration": "PERMANENT" }, { "u_consume_item": "salt", "count": 100 } ]
+        "effect": [ { "npc_add_effect": "hermit_has_salt" }, { "u_consume_item": "salt", "count": 100 } ]
       },
       {
         "text": "I don't have enough salt to make a circle.  I'll be back later.",
@@ -669,7 +669,7 @@
         "default": true,
         "effect": [
           "mission_success",
-          { "npc_add_effect": "hermit_stage_2", "duration": "PERMANENT" },
+          { "npc_add_effect": "hermit_stage_2" },
           { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" }
         ],
         "topic": "TALK_MISSION_SUCCESS"
@@ -721,7 +721,7 @@
     "responses": [
       {
         "text": "Sorry…",
-        "effect": { "u_add_effect": "hermit_quest_backdoor", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "hermit_quest_backdoor" },
         "topic": "TALK_HERMIT"
       }
     ]
@@ -1132,7 +1132,7 @@
         "text": "I accept.  What needs to be done?",
         "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_OFFER",
         "effect": [
-          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_add_effect": "hermit_stage_3_backdoor" },
           { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
           { "npc_remove_item_with": "veilblade" }
         ],
@@ -1218,7 +1218,7 @@
       {
         "text": "Very well then, Keeper.  We shall see what will come of this.",
         "effect": [
-          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_add_effect": "hermit_stage_3_backdoor" },
           { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
           { "npc_remove_item_with": "veilblade" }
         ],
@@ -1243,7 +1243,7 @@
       {
         "text": "These powers are but another tool at our disposal, we also say.  Fine, I'll play along.",
         "effect": [
-          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_add_effect": "hermit_stage_3_backdoor" },
           { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
           { "npc_remove_item_with": "veilblade" }
         ],
@@ -1271,7 +1271,7 @@
       {
         "text": "Okay.  I accept.",
         "effect": [
-          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_add_effect": "hermit_stage_3_backdoor" },
           { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
           { "npc_remove_item_with": "veilblade" }
         ],
@@ -1288,7 +1288,7 @@
       {
         "text": "Thank you.",
         "effect": [
-          { "u_add_effect": "hermit_stage_3_backdoor", "duration": "PERMANENT" },
+          { "u_add_effect": "hermit_stage_3_backdoor" },
           { "u_buy_item": "essence_pure", "count": 0, "container": "veilblade" },
           { "npc_remove_item_with": "veilblade" }
         ],
@@ -1337,9 +1337,9 @@
         "text": "We shall see.",
         "topic": "TALK_HERMIT",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
-          { "npc_add_effect": "hermit_stage_4", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" },
+          { "npc_add_effect": "hermit_stage_4" }
         ]
       }
     ]
@@ -1704,8 +1704,8 @@
       {
         "text": "Very well then.  We shall see…",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ],
         "topic": "TALK_HERMIT"
       }
@@ -1719,8 +1719,8 @@
       {
         "text": "We'll see what comes of this, then.",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ],
         "topic": "TALK_HERMIT"
       },
@@ -1759,8 +1759,8 @@
       {
         "text": "We shall see.",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ],
         "topic": "TALK_HERMIT"
       }
@@ -1774,8 +1774,8 @@
       {
         "text": "If you insist.  Tell me what you have to offer, and we'll see where to go from there.",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ],
         "topic": "TALK_HERMIT"
       },
@@ -1794,8 +1794,8 @@
       {
         "text": "We'll see.",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ],
         "topic": "TALK_HERMIT"
       }
@@ -1809,8 +1809,8 @@
       {
         "text": "Very well then.",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ],
         "topic": "TALK_HERMIT"
       }
@@ -1823,7 +1823,7 @@
     "responses": [
       {
         "text": "Perhaps you could teach me some of that insight?",
-        "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "hermit_earned_trust_1" },
         "topic": "TALK_HERMIT_NEWGODS_INSIGHT"
       },
       { "text": "I see.", "topic": "TALK_HERMIT" }
@@ -1852,8 +1852,8 @@
         "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
         "topic": "TALK_HERMIT_BOOK_OUST",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ]
       },
       {
@@ -1862,7 +1862,7 @@
           "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_ARCANIST", "PROF_ARCANIST2" ]
         },
         "topic": "TALK_HERMIT_BOOK_REVEAL",
-        "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+        "effect": { "u_add_effect": "hermit_earned_trust_1" }
       },
       {
         "text": "Your aura is alight with hidden magic and concealed artifacts, I can see it through my mask.",
@@ -1892,7 +1892,7 @@
         "success": {
           "topic": "TALK_HERMIT_BOOK_ADMISSION",
           "opinion": { "trust": 1 },
-          "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+          "effect": { "u_add_effect": "hermit_earned_trust_1" }
         },
         "failure": { "topic": "TALK_HERMIT_BOOK_DENIAL", "effect": { "u_add_effect": "hermit_inquire_denied", "duration": 10800 } }
       },
@@ -1904,7 +1904,7 @@
         "success": {
           "topic": "TALK_HERMIT_BOOK_ADMISSION",
           "opinion": { "trust": 1 },
-          "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+          "effect": { "u_add_effect": "hermit_earned_trust_1" }
         },
         "failure": { "topic": "TALK_HERMIT_BOOK_DENIAL", "effect": { "u_add_effect": "hermit_inquire_denied", "duration": 10800 } }
       },
@@ -1941,8 +1941,8 @@
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "opinion": { "trust": 1, "value": 1 },
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ]
       },
       {
@@ -1957,8 +1957,8 @@
         "text": "I'm not one of the mage hunters actually, but I've learned the usefulness of these items.",
         "topic": "TALK_HERMIT_MASK_NOT",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ]
       }
     ]
@@ -2057,7 +2057,7 @@
         "success": {
           "topic": "TALK_HERMIT_DOING_ADMISSION",
           "opinion": { "trust": 1 },
-          "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+          "effect": { "u_add_effect": "hermit_earned_trust_1" }
         },
         "failure": { "topic": "TALK_HERMIT_DOING_DENIAL", "effect": { "u_add_effect": "hermit_inquire_denied", "duration": 10800 } }
       },
@@ -2069,7 +2069,7 @@
         "success": {
           "topic": "TALK_HERMIT_DOING_ADMISSION",
           "opinion": { "trust": 1 },
-          "effect": { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" }
+          "effect": { "u_add_effect": "hermit_earned_trust_1" }
         },
         "failure": { "topic": "TALK_HERMIT_DOING_DENIAL", "effect": { "u_add_effect": "hermit_inquire_denied", "duration": 10800 } }
       },
@@ -2155,7 +2155,7 @@
       {
         "text": "To teach the next generation what is proper and safe.",
         "topic": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
-        "effect": { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "hermit_earned_trust_2" },
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
       },
       {
@@ -2167,7 +2167,7 @@
       {
         "text": "Knowledge is power, but it is wasted unless passed on.",
         "topic": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
-        "effect": { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "hermit_earned_trust_2" },
         "condition": { "u_has_trait": "PROF_SANGUINE" }
       },
       {
@@ -2179,13 +2179,13 @@
       {
         "text": "To gaze into the Beyond is to see the potential of a thousand worlds, and learn hidden truths…",
         "topic": "TALK_HERMIT_TEACH_ACCEPT_OATH",
-        "effect": { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "hermit_earned_trust_2" },
         "condition": { "u_has_trait": "PROF_CHALICE" }
       },
       {
         "text": "I am eager to learn, if you would have me as a student.",
         "topic": "TALK_HERMIT_TEACH_ACCEPT",
-        "effect": { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+        "effect": { "u_add_effect": "hermit_earned_trust_2" }
       },
       { "text": "Well, you know.  Because?", "topic": "TALK_HERMIT_TEACH_REJECTION", "opinion": { "trust": -1 } },
       { "text": "Never mind.", "topic": "TALK_HERMIT" }

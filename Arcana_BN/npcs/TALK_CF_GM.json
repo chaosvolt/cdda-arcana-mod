@@ -403,7 +403,7 @@
         "effect": [
           { "u_add_var": "johnathan_prelude_ended", "type": "mission", "context": "rural_church", "value": "yes" },
           { "npc_add_var": "johnathan_prelude_ended", "type": "mission", "context": "rural_church", "value": "yes" },
-          { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
+          { "u_add_effect": "cf_mission_1" }
         ],
         "topic": "TALK_DONE"
       }
@@ -507,7 +507,7 @@
     "responses": [
       {
         "text": "Oof.",
-        "effect": { "npc_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
+        "effect": { "npc_add_effect": "sofia_motive_explained" },
         "topic": "TALK_CF_GM"
       }
     ]

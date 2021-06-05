@@ -32,8 +32,8 @@
         "text": "Do you know of any other settlements in the region?",
         "topic": "TALK_EVAC_MERCHANT_CF",
         "effect": [
-          { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" },
-          { "u_add_effect": "rural_church_aware", "duration": "PERMANENT" }
+          { "npc_add_effect": "rural_church_aware" },
+          { "u_add_effect": "rural_church_aware" }
         ],
         "condition": { "not": { "npc_has_effect": "rural_church_aware" } }
       },
@@ -41,7 +41,7 @@
         "text": "Do you know of any other settlements in the region?",
         "topic": "TALK_EVAC_MERCHANT_CF",
         "effect": [
-          { "u_add_effect": "rural_church_aware", "duration": "PERMANENT" },
+          { "u_add_effect": "rural_church_aware" },
           {
             "mapgen_update": "arcana_dummy",
             "om_terrain": "cf_church_4",
@@ -269,8 +269,8 @@
         "text": "Thank you.  I'll bring this back to her.",
         "topic": "TALK_DONE",
         "effect": [
-          { "npc_add_effect": "cf_mission_receipt", "duration": "PERMANENT" },
-          { "u_add_effect": "cf_mission_receipt", "duration": "PERMANENT" },
+          { "npc_add_effect": "cf_mission_receipt" },
+          { "u_add_effect": "cf_mission_receipt" },
           { "u_buy_item": "cf_rep_trade_receipt" }
         ]
       }

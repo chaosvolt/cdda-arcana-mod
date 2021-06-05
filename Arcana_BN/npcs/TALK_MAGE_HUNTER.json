@@ -69,13 +69,13 @@
       {
         "text": "[MISSION] Johnathan said I should ask one of you for help?",
         "topic": "TALK_MAGE_HUNTER_RECRUIT_2",
-        "effect": { "u_add_effect": "cf_mission_3_recruited_3", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "cf_mission_3_recruited_3" },
         "condition": { "and": [ { "u_has_mission": "MISSION_CF_GM_4" }, { "not": { "u_has_effect": "cf_mission_3_recruited_3" } } ] }
       },
       {
         "text": "[MISSION] Johnathan said I should ask one of you for help?",
         "topic": "TALK_MAGE_HUNTER_RECRUIT_2",
-        "effect": { "u_add_effect": "cf_mission_3_recruited_2", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "cf_mission_3_recruited_2" },
         "condition": {
           "and": [
             { "or": [ { "u_has_mission": "MISSION_CF_GM_3" }, { "u_has_mission": "MISSION_CF_GM_4" } ] },
@@ -154,7 +154,7 @@
       {
         "text": "Let's go.",
         "topic": "TALK_DONE",
-        "effect": [ { "u_add_effect": "cf_mission_3_recruited", "duration": "PERMANENT" }, "follow" ]
+        "effect": [ { "u_add_effect": "cf_mission_3_recruited" }, "follow" ]
       }
     ]
   },
@@ -289,13 +289,13 @@
         "text": "I'm not one of them, I can assure you.",
         "condition": { "u_has_trait": "THRESH_DRAGONBLOOD" },
         "switch": true,
-        "effect": { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "cf_hunter_motive" },
         "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_DRAGONBLOOD"
       },
       {
         "text": "I have been chosen by He From Beyond The Veil.",
         "condition": { "u_has_trait": "THRESH_VEIL" },
-        "effect": { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "cf_hunter_motive" },
         "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_VEIL"
       },
       {
@@ -343,7 +343,7 @@
       { "text": "If I have anything of that sort, would you accept it?", "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_CONTRABAND" },
       {
         "text": "I see.  I'll speak with her then.",
-        "effect": { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "cf_hunter_motive" },
         "topic": "TALK_MAGE_HUNTER"
       }
     ]
@@ -365,7 +365,7 @@
       },
       {
         "text": "It's fine.  I should speak to Sofia about it.",
-        "effect": { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" },
+        "effect": { "u_add_effect": "cf_hunter_motive" },
         "topic": "TALK_MAGE_HUNTER"
       }
     ]
@@ -381,7 +381,7 @@
     "responses": [
       {
         "text": "Okay.",
-        "effect": [ { "u_buy_item": "CF_golden_scale", "count": 20 }, { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" } ],
+        "effect": [ { "u_buy_item": "CF_golden_scale", "count": 20 }, { "u_add_effect": "cf_hunter_motive" } ],
         "topic": "TALK_MAGE_HUNTER"
       }
     ]
