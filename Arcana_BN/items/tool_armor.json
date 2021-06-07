@@ -263,26 +263,20 @@
     "relative": { "weight": 210, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
-
-
-
-
-
-
   {
     "id": "cyclopean_mirror",
     "type": "TOOL_ARMOR",
     "name": { "str": "cyclopean mirror" },
     "category": "armor",
-    "description": "An ornate round shield, designed to resemble an archaic bronze or silver mirror.  Natural scenery appears to be engraved into it, and light reflected from it projects a completely different, otherworldly pattern.  When fueled by essence, it can project a barrier that provides less phyiscal defense, but protects against various environmental hazards.",
+    "description": "An ornate round mirror in an archaic style.  Natural scenery appears to be engraved into it, and light reflected from it projects a completely different, otherworldly pattern.  It is capable of moving on its own, blocking melee attacks like a small shield when equipped.  When fueled by essence, it projects a barrier that provides less phyiscal defense, but protects against electricity and radiation, along with partial resistance to psychic influence and extreme temperatures.",
     "weight": "5 kg",
     "volume": "4 L",
     "price": 90000,
     "price_postapoc": 9000,
     "bashing": 8,
-    "covers": [ "ARM_EITHER", "HAND_EITHER" ],
-    "coverage": 90,
-    "encumbrance": 15,
+    "covers": [ "TORSO" ],
+    "coverage": 40,
+    "encumbrance": 5,
     "material": [ "iron" ],
     "symbol": "[",
     "looks_like": "shield_round",
@@ -304,7 +298,7 @@
       }
     ],
     "techniques": [ "WBLOCK_2" ],
-    "flags": [ "STURDY", "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "FANCY", "NO_SALVAGE" ]
+    "flags": [ "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "STURDY", "BLOCK_WHILE_WORN", "NO_SALVAGE", "AURA", "ONLY_ONE", "POWERARMOR_COMPATIBLE" ]
   },
   {
     "id": "cyclopean_mirror_on",
@@ -312,37 +306,16 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "cyclopean mirror (on)" },
     "category": "armor",
-    "description": "An ornate round shield, designed to resemble an archaic bronze or silver mirror.  It has shifted into a brightly-glowing",
-    "weight": "5 kg",
+    "description": "An ornate round mirror in an archaic style.  Natural scenery appears to be engraved into it, and light reflected from it projects a completely different, otherworldly pattern.  It has shifted into a brightly-glowing barrier that protects the user from electricity and radiation, along with partial protection from psychic influence, some resistance to extreme temperatures, and minor environmental protection.  The barrier's phyiscal protection is half that of the mirror itself, but protects your body fully.",
     "volume": "4 L",
     "covers": [ "HEAD", "EYES", "MOUTH", "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
     "coverage": 100,
-    "encumbrance": 15,
-    "material": [ "essencemat" ],
-    "use_action": [
-      {
-        "target": "cyclopean_mirror_on",
-        "msg": "The mirror fades out of reality, as a faint protective aura envelops you.",
-        "active": true,
-        "need_worn": true,
-        "need_charges": 1,
-        "need_charges_msg": "The mirror needs essence to function.",
-        "menu_text": "Activate protective aura",
-        "type": "transform"
-      }
-    ],
-    "relative": { "weight": -5000, "material_thickness": -2, "bashing": -8 },
-    "extend": { "flags": [ "AURA", "CLIMATE_CONTROL", "LIGHT_60", "NO_TAKEOFF", "PSYSHIELD_PARTIAL", "RAD_PROOF", "RAINPROOF", "SEMITANGIBLE", "SUN_GLASSES", "SWIM_GOGGLES", "TRADER_AVOID", "WATERPROOF", "ZERO_WEIGHT" ] },
-    "delete": { "flags": [ "STURDY", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "FANCY" ] }
+    "turns_per_charge": 600,
+    "use_action": { "target": "cyclopean_mirror", "msg": "The protective glow vanishes as the mirror rematerializes.", "type": "transform" },
+    "relative": { "weight": -5000, "material_thickness": -2, "bashing": -8, "environmental_protection": 12, "encumbrance": -5 },
+    "extend": { "flags": [ "CLIMATE_CONTROL", "LIGHT_60", "NO_TAKEOFF", "PSYSHIELD_PARTIAL", "RAD_PROOF", "RAINPROOF", "SEMITANGIBLE", "SUN_GLASSES", "SWIM_GOGGLES", "TRADER_AVOID", "WATERPROOF", "ZERO_WEIGHT", "ELECTRIC_IMMUNE" ] },
+    "delete": { "flags": [ "BLOCK_WHILE_WORN" ] }
   },
-
-
-
-
-
-
-
-
   {
     "id": "hauberk_jade",
     "type": "TOOL_ARMOR",

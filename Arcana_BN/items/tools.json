@@ -904,9 +904,9 @@
     "volume": "750 ml",
     "price": 40000,
     "price_postapoc": 6000,
-    "to_hit": 1,
-    "bashing": 10,
-    "cutting": 7,
+    "bashing": 15,
+    "cutting": 28,
+    "to_hit": -2,
     "thrown_damage": [ { "damage_type": "cold", "amount": 18 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
@@ -928,6 +928,32 @@
       "explosion": { "power": 1500, "distance_factor": 0.45 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
+    "id": "lichhook",
+    "copy-from": "khopesh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "lichhook" },
+    "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.",
+    "price": 72000,
+    "price_postapoc": 4500,
+    "bashing": 9,
+    "cutting": 29,
+    "max_charges": 8,
+    "charges_per_use": 2,
+    "ammo": "essence_blood_type",
+    "relative": { "weight": 230 },
+    "use_action": [
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_lichhook",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
+    "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ] }
   },
   {
     "id": "totem_elecresist",
