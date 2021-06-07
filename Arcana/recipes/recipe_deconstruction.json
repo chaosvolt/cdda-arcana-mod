@@ -1210,6 +1210,22 @@
     ]
   },
   {
+    "result": "offering_chalice_coalescent",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "gold_small", 625 ] ],
+      [ [ "scrap", 25 ] ],
+      [ [ "e_scrap", 4 ] ],
+      [ [ "copper", 50 ] ],
+      [ [ "essence_dull", 140 ] ]
+    ]
+  },
+  {
     "result": "bio_temporal_stimulation",
     "type": "uncraft",
     "skill_used": "magic",

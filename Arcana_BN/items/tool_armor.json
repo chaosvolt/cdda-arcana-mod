@@ -263,6 +263,86 @@
     "relative": { "weight": 210, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
+
+
+
+
+
+
+  {
+    "id": "cyclopean_mirror",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "cyclopean mirror" },
+    "category": "armor",
+    "description": "An ornate round shield, designed to resemble an archaic bronze or silver mirror.  Natural scenery appears to be engraved into it, and light reflected from it projects a completely different, otherworldly pattern.  When fueled by essence, it can project a barrier that provides less phyiscal defense, but protects against various environmental hazards.",
+    "weight": "5 kg",
+    "volume": "4 L",
+    "price": 90000,
+    "price_postapoc": 9000,
+    "bashing": 8,
+    "covers": [ "ARM_EITHER", "HAND_EITHER" ],
+    "coverage": 90,
+    "encumbrance": 15,
+    "material": [ "iron" ],
+    "symbol": "[",
+    "looks_like": "shield_round",
+    "color": "light_gray",
+    "max_charges": 25,
+    "charges_per_use": 1,
+    "ammo": "essence_type",
+    "material_thickness": 4,
+    "use_action": [
+      {
+        "target": "cyclopean_mirror_on",
+        "msg": "The mirror fades out of reality, as a faint protective aura envelops you.",
+        "active": true,
+        "need_worn": true,
+        "need_charges": 1,
+        "need_charges_msg": "The mirror needs essence to function.",
+        "menu_text": "Activate protective aura",
+        "type": "transform"
+      }
+    ],
+    "techniques": [ "WBLOCK_2" ],
+    "flags": [ "STURDY", "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "FANCY", "NO_SALVAGE" ]
+  },
+  {
+    "id": "cyclopean_mirror_on",
+    "copy-from": "cyclopean_mirror",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "cyclopean mirror (on)" },
+    "category": "armor",
+    "description": "An ornate round shield, designed to resemble an archaic bronze or silver mirror.  It has shifted into a brightly-glowing",
+    "weight": "5 kg",
+    "volume": "4 L",
+    "covers": [ "HEAD", "EYES", "MOUTH", "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "coverage": 100,
+    "encumbrance": 15,
+    "material": [ "essencemat" ],
+    "use_action": [
+      {
+        "target": "cyclopean_mirror_on",
+        "msg": "The mirror fades out of reality, as a faint protective aura envelops you.",
+        "active": true,
+        "need_worn": true,
+        "need_charges": 1,
+        "need_charges_msg": "The mirror needs essence to function.",
+        "menu_text": "Activate protective aura",
+        "type": "transform"
+      }
+    ],
+    "relative": { "weight": -5000, "material_thickness": -2, "bashing": -8 },
+    "extend": { "flags": [ "AURA", "CLIMATE_CONTROL", "LIGHT_60", "NO_TAKEOFF", "PSYSHIELD_PARTIAL", "RAD_PROOF", "RAINPROOF", "SEMITANGIBLE", "SUN_GLASSES", "SWIM_GOGGLES", "TRADER_AVOID", "WATERPROOF", "ZERO_WEIGHT" ] },
+    "delete": { "flags": [ "STURDY", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "FANCY" ] }
+  },
+
+
+
+
+
+
+
+
   {
     "id": "hauberk_jade",
     "type": "TOOL_ARMOR",

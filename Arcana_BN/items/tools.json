@@ -1507,6 +1507,23 @@
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_coalescent_conversion", "no_fail": true, "level": 0 } ]
   },
   {
+    "type": "TOOL",
+    "id": "offering_chalice_coalescent",
+    "name": { "str": "coalescent chalice" },
+    "description": "An exotic golden chalice, reinforced by an ornate lattice of steel and curious electronics.  A swirling, inky blackness resides inside it, resisting any attempt to pour it out.  Using it will focus your energy into it through a powerful ritual, converting it into crystallized essence.  Doing so will take 15 minutes and greatly exhaust you.  Overuse comes with the risk of lethal side effects.",
+    "weight": "3 kg",
+    "color": "yellow",
+    "looks_like": "offering_chalice",
+    "symbol": ":",
+    "material": [ "gold", "steel" ],
+    "flags": [ "ALLOWS_REMOTE_USE", "USE_PLAYER_ENERGY" ],
+    "volume": "2 L",
+    "bashing": 3,
+    "price": 320000,
+    "price_postapoc": 3500,
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_coalescent_offering", "no_fail": true, "level": 0 } ]
+  },
+  {
     "id": "thermic_essence_cutter",
     "type": "TOOL",
     "name": { "str": "thermic essence cutter" },
