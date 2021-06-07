@@ -1817,7 +1817,7 @@
     "message": "Faint wisps of mist fly from the talisman, to bring enlightenment through a bond with your own mind, and guard them against hazards.",
     "effect": "attack",
     "shape": "blast",
-    "extra_effects": [ { "id": "arcana_item_pet_buff", "hit_self": false } ],
+    "extra_effects": [ { "id": "arcana_item_pet_buff", "hit_self": false }, { "id": "arcana_item_pet_heal", "hit_self": false } ],
     "valid_targets": [ "ally" ],
     "targeted_monster_ids": [
       "mon_dark_wyrm_summoned",
@@ -1888,6 +1888,23 @@
     "final_casting_time": 5,
     "min_duration": 8640000,
     "max_duration": 8640000
+  },
+  {
+    "id": "arcana_item_pet_heal",
+    "type": "SPELL",
+    "name": { "str": "Familiar Pact Healing" },
+    "description": "Heals any ally in range, even if it isn't a summoned monster.",
+    "message": "",
+    "effect": "attack",
+    "shape": "blast",
+    "valid_targets": [ "ally" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "min_damage": -15,
+    "max_damage": -20,
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "base_casting_time": 5,
+    "final_casting_time": 5
   },
   {
     "id": "arcana_item_thunder_gauntlets_taze",
