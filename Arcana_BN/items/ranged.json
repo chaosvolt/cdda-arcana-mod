@@ -9,9 +9,8 @@
     "volume": "1250 ml",
     "price": 150000,
     "price_postapoc": 10000,
-    "to_hit": -2,
-    "bashing": 12,
-    "cutting": 1,
+    "bashing": 8,
+    "cutting": 10,
     "material": [ "gold", "silver" ],
     "symbol": ",",
     "looks_like": "gold_bracelet",
@@ -42,7 +41,7 @@
       ]
     },
     "ammo_effects": [ "LIGHTNING", "LIGHTNING_JUDGMENT" ],
-    "flags": [ "STAB", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
+    "flags": [ "STAB", "DURABLE_MELEE", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
     "use_action": "MEDITATE"
   },
   {

@@ -470,7 +470,7 @@
     "difficulty": 5,
     "time": "50 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "bronze_scrap", 5 ] ], [ [ "silver_small", 60 ] ], [ [ "essence_dull", 100 ] ] ]
+    "components": [ [ [ "scrap_bronze", 5 ] ], [ [ "silver_small", 60 ] ], [ [ "essence_dull", 100 ] ] ]
   },
   {
     "result": "bloodscourge",

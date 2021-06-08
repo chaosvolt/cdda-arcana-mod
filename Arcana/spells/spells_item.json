@@ -625,7 +625,7 @@
     "max_duration": 48000,
     "min_damage": 30,
     "max_damage": 50,
-    "damage_type": "bio",
+    "damage_type": "biological",
     "field_id": "fd_gibs_flesh",
     "field_chance": 1,
     "min_field_intensity": 3,
