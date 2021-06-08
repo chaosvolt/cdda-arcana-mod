@@ -227,7 +227,7 @@
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
     "components": [
-      [ [ "khopesh", 1 ], [ "khopesh", 1 ] ],
+      [ [ "khopesh", 1 ], [ "dao", 1 ] ],
       [ [ "silver_small", 60 ] ],
       [ [ "bone_twisted", 1 ], [ "gracken_knuckles", 1 ] ],
       [ [ "essence_blood", 8 ] ]

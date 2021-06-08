@@ -234,9 +234,6 @@
     "components": [ [ [ "hatchet", 1 ] ], [ [ "fur", 2 ], [ "leather", 2 ], [ "rag_bloody", 2 ] ], [ [ "essence_blood", 5 ] ] ],
     "flags": [ "SECRET" ]
   },
-
-
-
   {
     "result": "lichhook",
     "type": "recipe",
@@ -252,15 +249,13 @@
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
     "components": [
-      [ [ "khopesh", 1 ], [ "khopesh", 1 ] ],
+      [ [ "khopesh", 1 ], [ "dao", 1 ] ],
       [ [ "silver_small", 60 ] ],
       [ [ "bone_twisted", 1 ], [ "gracken_knuckles", 1 ] ],
       [ [ "essence_blood", 8 ] ]
     ],
     "flags": [ "SECRET" ]
   },
-
-
   {
     "result": "ethereal_crossbow",
     "type": "recipe",
