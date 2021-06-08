@@ -904,9 +904,9 @@
     "volume": "750 ml",
     "price": 40000,
     "price_postapoc": 6000,
-    "to_hit": 1,
-    "bashing": 10,
-    "cutting": 7,
+    "bashing": 15,
+    "cutting": 28,
+    "to_hit": -2,
     "thrown_damage": [ { "damage_type": "cold", "amount": 18 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
@@ -928,6 +928,32 @@
       "explosion": { "power": 1500, "distance_factor": 0.45 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
+    "id": "lichhook",
+    "copy-from": "khopesh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "lichhook" },
+    "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.",
+    "price": 72000,
+    "price_postapoc": 4500,
+    "bashing": 9,
+    "cutting": 29,
+    "max_charges": 8,
+    "charges_per_use": 2,
+    "ammo": "essence_blood_type",
+    "relative": { "weight": 230 },
+    "use_action": [
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_lichhook",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
+    "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ] }
   },
   {
     "id": "totem_elecresist",
@@ -1505,6 +1531,23 @@
     ],
     "magazine_well": 20,
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_coalescent_conversion", "no_fail": true, "level": 0 } ]
+  },
+  {
+    "type": "TOOL",
+    "id": "offering_chalice_coalescent",
+    "name": { "str": "coalescent chalice" },
+    "description": "An exotic golden chalice, reinforced by an ornate lattice of steel and curious electronics.  A swirling, inky blackness resides inside it, resisting any attempt to pour it out.  Using it will focus your energy into it through a powerful ritual, converting it into crystallized essence.  Doing so will take 15 minutes and greatly exhaust you.  Overuse comes with the risk of lethal side effects.",
+    "weight": "3 kg",
+    "color": "yellow",
+    "looks_like": "offering_chalice",
+    "symbol": ":",
+    "material": [ "gold", "steel" ],
+    "flags": [ "ALLOWS_REMOTE_USE", "USE_PLAYER_ENERGY" ],
+    "volume": "2 L",
+    "bashing": 3,
+    "price": 320000,
+    "price_postapoc": 3500,
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_coalescent_offering", "no_fail": true, "level": 0 } ]
   },
   {
     "id": "thermic_essence_cutter",

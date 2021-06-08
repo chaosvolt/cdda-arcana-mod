@@ -214,6 +214,27 @@
     "flags": [ "SECRET" ]
   },
   {
+    "result": "lichhook",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_WEAPON",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 4 ],
+    "time": "80 m",
+    "book_learn": [ [ "book_bloodmagic", 6 ] ],
+    "using": [ [ "arcana_holy_symbol_any", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
+    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
+    "components": [
+      [ [ "khopesh", 1 ], [ "dao", 1 ] ],
+      [ [ "silver_small", 60 ] ],
+      [ [ "bone_twisted", 1 ], [ "gracken_knuckles", 1 ] ],
+      [ [ "essence_blood", 8 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
     "result": "ethereal_crossbow",
     "type": "recipe",
     "category": "CC_ARCANA",
