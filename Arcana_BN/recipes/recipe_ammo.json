@@ -46,7 +46,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_bloodmagic", 0 ], [ "book_syncretism", 1 ], [ "book_scrollcraft", 1 ] ],
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "human_flesh", 5 ], [ "mutant_human_flesh", 10 ], [ "meat", 15 ] ] ],
+    "components": [ [ [ "human_flesh", 5 ], [ "mutant_human_flesh", 10 ], [ "meat", 15 ], [ "mutant_meat", 20 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
