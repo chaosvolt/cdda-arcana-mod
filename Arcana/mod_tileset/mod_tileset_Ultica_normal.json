@@ -1,7 +1,7 @@
 [
   {
     "type": "mod_tileset",
-    "compatibility": [ "UltimateCataclysm" ],
+    "compatibility": [ "UltimateCataclysm", "UltimateCataclysmDemo" ],
     "tiles-new": [
       {
         "file": "mod_tileset/arcana_expan_ultica_normal.png",
