@@ -23,7 +23,7 @@
     "durability": 10,
     "loudness": 150,
     "clip_size": 5,
-    "reload": 400,
+    "reload": 80,
     "relic_data": {
       "passive_effects": [
         {
@@ -68,7 +68,7 @@
     "durability": 10,
     "loudness": 100,
     "clip_size": 15,
-    "reload": 300,
+    "reload": 20,
     "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "triple", 3 ] ],
     "ammo_effects": [ "FLAME", "STREAM", "INCENDIARY", "FLARE" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
@@ -123,7 +123,7 @@
     "dispersion": 150,
     "durability": 6,
     "clip_size": 20,
-    "reload": 75,
+    "reload": 3,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
     "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "BELTED" ],
     "armor_data": { "covers": [ "TORSO" ], "coverage": 5, "material_thickness": 1, "encumbrance": 15 }
@@ -199,7 +199,7 @@
     "durability": 10,
     "loudness": 75,
     "clip_size": 4,
-    "reload": 200,
+    "reload": 50,
     "relic_data": {
       "passive_effects": [
         {

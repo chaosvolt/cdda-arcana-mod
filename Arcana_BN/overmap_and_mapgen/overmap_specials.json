@@ -180,7 +180,7 @@
     "city_sizes": [ 1, 20 ],
     "//": "Has to be spawned in by a mission, to avoid bugs.",
     "occurrences": [ 0, 0 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ],
+    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE", "ELECTRIC_GRID" ],
     "rotate": false
   },
   {

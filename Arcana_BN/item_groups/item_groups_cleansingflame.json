@@ -339,5 +339,11 @@
       { "item": "CF_golden_scale", "charges": [ 2, 6 ] },
       { "item": "arcane_purifier_intel" }
     ]
+  },
+  {
+    "id": "arcana_purifying_shot_group",
+    "type": "item_group",
+    "//": "Used for shopkeepers at the rural church who sell ammo.",
+    "items": [ [ "reloaded_shot_00_arcana", 7 ], [ "flintlock_shot_arcana", 2 ], [ "blun_shot_arcana", 1 ] ]
   }
 ]
