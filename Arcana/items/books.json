@@ -241,6 +241,30 @@
     "snippet_category": "note_flame_tenet"
   },
   {
+    "id": "note_sanguine_hint",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "blood-stained note" },
+    "description": "An scrap of paper marred by old, dried blood.",
+    "snippet_category": "note_sanguine_hint"
+  },
+  {
+    "id": "note_chalice_hint",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "strange note" },
+    "description": "A sheet of paper, with peculiar writing on it.",
+    "snippet_category": "note_chalice_hint"
+  },
+  {
+    "id": "note_flame_hint",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "singed note" },
+    "description": "A piece of paper with writing on it, edges scorched as if it was hastily rescued from the fireplace.",
+    "snippet_category": "note_flame_hint"
+  },
+  {
     "id": "note_starry_missive",
     "copy-from": "arcana_note_base",
     "type": "GENERIC",
@@ -289,7 +313,7 @@
         "shrine_anomaly_2",
         "shrine_anomaly_3"
       ],
-      "message": "You add strange temples, ruined shrines, curious structures, impact sites, peculiar shrines, and strange groves to your map."
+      "message": "You add strange temples, ruined shrines, curious structures, impact sites, sanguine ruins, and strange groves to your map."
     }
   },
   {
