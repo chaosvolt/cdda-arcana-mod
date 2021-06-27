@@ -33,27 +33,19 @@
     "id": "mansion_books",
     "type": "item_group",
     "subtype": "distribution",
-    "entries": [
-      { "item": "book_magicfordummies", "prob": 5 },
-      { "item": "book_potioncraft", "prob": 3 },
-      { "item": "book_scrollcraft", "prob": 2 }
-    ]
+    "entries": [ { "group": "magic_books", "prob": 15 } ]
   },
   {
     "id": "mansion_bookcase",
     "type": "item_group",
     "subtype": "collection",
-    "groups": [ [ "magic_books", 8 ] ]
+    "groups": [ [ "magic_books", 15 ] ]
   },
   {
     "id": "exotic_books",
     "type": "item_group",
     "subtype": "distribution",
-    "entries": [
-      { "item": "book_hexenhammer", "prob": 5 },
-      { "item": "book_scrollcraft", "prob": 5 },
-      { "item": "book_sacrifice", "prob": 2 }
-    ]
+    "entries": [ { "group": "magic_books", "prob": 15 } ]
   },
   {
     "id": "rare_martial_arts_books",
@@ -330,7 +322,7 @@
   },
   {
     "type": "item_group",
-    "id": "reloaded_shot_00_arcana",
+    "id": "ammo_shotgun_modern_handloads",
     "subtype": "distribution",
     "entries": [ { "item": "reloaded_shot_00_arcana", "prob": 25 } ]
   }
