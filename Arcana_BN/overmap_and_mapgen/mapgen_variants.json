@@ -1877,13 +1877,13 @@
         "..|.........cc..gdh..|..",
         "..|.h...h.......|dd..|..",
         "..|cccccccc.....|....|..",
-        "..|--------|-GG-|-LL-|..",
-        "...........|....gd...|..",
-        "...........G....gdhYl|..",
-        "...........G....gx..l|..",
-        "...........|bbbb|----|..",
-        "...........|----|.......",
-        "........................",
+        ".||--------|-GG-|-LL-|..",
+        ".|.....L..{|b...gd...|..",
+        ".|.90..|{{{|b...gdhYl|..",
+        ".|.....|---|b...gx..l|..",
+        ".|c..|g|...|b...|----|..",
+        ".|ch.G.G...|-GG-|.......",
+        ".|-----|................",
         "........................"
       ],
       "set": [
@@ -1892,6 +1892,7 @@
       ],
       "palettes": [ "lab_palette", "lab_loot_research" ],
       "terrain": {
+        "{": "t_thconc_floor",
         "_": "t_rock_floor",
         "=": "t_reb_cage",
         "1": "t_generator_broken",
@@ -1901,12 +1902,14 @@
         "5": "t_machinery_electronic",
         "7": "t_switchgear_s",
         "8": "t_current_trans",
+        "9": "t_thconc_floor",
+        "0": "t_thconc_floor",
         "A": "t_plut_generator",
         "Y": "t_thconc_floor_olight",
         "a": "t_concrete",
         "o": "t_pit"
       },
-      "furniture": { "~": "f_shower", "a": "f_wreckage", "b": "f_bench" },
+      "furniture": { "{": "f_locker", "~": "f_shower", "9": "f_autodoc", "0": "f_autodoc_couch", "a": "f_wreckage", "b": "f_bench" },
       "computers": {
         "6": {
           "name": "Tertiary Power Access",
@@ -1917,6 +1920,9 @@
         }
       },
       "mapping": {
+        "{": {
+          "items": [ { "item": "bionics", "chance": 50, "repeat": 2 }, { "item": "lab_magitech_bionics", "chance": 25, "repeat": 2 } ]
+        },
         "^": { "item": [ { "item": "rock", "count": [ 1, 4 ] } ] },
         "a": {
           "item": [

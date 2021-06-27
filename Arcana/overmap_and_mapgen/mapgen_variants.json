@@ -1928,13 +1928,13 @@
         "..|.........cc..gdh..|..",
         "..|.h...h.......|dd..|..",
         "..|cccccccc.....|....|..",
-        "..|--------|-GG-|-LL-|..",
-        "...........|....gd...|..",
-        "...........G....gdhYl|..",
-        "...........G....gx..l|..",
-        "...........|bbbb|----|..",
-        "...........|----|.......",
-        "........................",
+        ".||--------|-GG-|-LL-|..",
+        ".|.....L..{|b...gd...|..",
+        ".|.90..|{{{|b...gdhYl|..",
+        ".|.....|---|b...gx..l|..",
+        ".|c..|g|...|b...|----|..",
+        ".|ch.G.G...|-GG-|.......",
+        ".|-----|................",
         "........................"
       ],
       "set": [
@@ -1943,20 +1943,26 @@
       ],
       "palettes": [ "lab_palette", "lab_loot_research" ],
       "terrain": {
+        "{": "t_thconc_floor",
         "_": "t_rock_floor",
         "=": "t_reb_cage",
         "7": "t_switchgear_s",
         "8": "t_current_trans",
+        "9": "t_thconc_floor",
+        "0": "t_thconc_floor",
         "Y": "t_thconc_floor_olight",
         "o": "t_pit"
       },
       "furniture": {
+        "{": "f_locker",
         "~": "f_shower",
         "1": "f_generator_broken",
         "2": "f_capacitor",
         "3": "f_machinery_light",
         "4": "f_control_station",
         "5": "f_machinery_electronic",
+        "9": "f_autodoc",
+        "0": "f_autodoc_couch",
         "A": "f_compact_ASRG",
         "a": "f_wreckage",
         "b": "f_bench",
@@ -1973,6 +1979,9 @@
         }
       },
       "mapping": {
+        "{": {
+          "items": [ { "item": "bionics", "chance": 50, "repeat": 2 }, { "item": "lab_magitech_bionics", "chance": 25, "repeat": 2 } ]
+        },
         "^": { "item": [ { "item": "rock", "count": [ 1, 4 ] } ] },
         "a": {
           "item": [
