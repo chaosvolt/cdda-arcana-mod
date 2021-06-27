@@ -198,13 +198,15 @@
     "id": "unaligned_arcanist_books",
     "type": "item_group",
     "items": [
-      [ "novel_drama", 10 ],
-      [ "novel_experimental", 15 ],
+      [ "novel_drama", 5 ],
+      [ "novel_experimental", 5 ],
       [ "philosophy_book", 15 ],
       [ "poetry_book", 10 ],
       [ "book_potioncraft", 25 ],
       [ "book_scrollcraft", 15 ],
-      [ "book_summoning", 10 ]
+      [ "book_summoning", 10 ],
+      [ "book_magicfordummies", 5 ],
+      [ "book_syncretism", 10 ]
     ]
   },
   {
