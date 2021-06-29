@@ -9,7 +9,22 @@
           { "id": "f_blade_upright", "fg": 0 },
           {
             "id": "f_candle_barrier",
-            "fg": 8,
+            "fg": 1,
+            "bg": 1,
+            "rotates": false,
+            "multitile": true,
+            "additional_tiles": [
+              { "id": "center", "fg": 3, "bg": 1 },
+              { "id": "corner", "fg": 4, "bg": 1 },
+              { "id": "edge", "fg": 5, "bg": 1 },
+              { "id": "end_piece", "fg": 6, "bg": 1 },
+              { "id": "t_connection", "fg": 7, "bg": 1 },
+              { "id": "unconnected", "fg": 8, "bg": 1 }
+            ]
+          },
+          {
+            "id": "f_candle_barrier_playermade",
+            "fg": 2,
             "bg": 2,
             "rotates": false,
             "multitile": true,
@@ -22,21 +37,6 @@
               { "id": "unconnected", "fg": 8, "bg": 2 }
             ]
           },
-          {
-            "id": "f_candle_barrier_playermade",
-            "fg": 8,
-            "bg": 3,
-            "rotates": false,
-            "multitile": true,
-            "additional_tiles": [
-              { "id": "center", "fg": 3, "bg": 3 },
-              { "id": "corner", "fg": 4, "bg": 3 },
-              { "id": "edge", "fg": 5, "bg": 3 },
-              { "id": "end_piece", "fg": 6, "bg": 3 },
-              { "id": "t_connection", "fg": 7, "bg": 3 },
-              { "id": "unconnected", "fg": 8, "bg": 3 }
-            ]
-          },
           { "id": "f_altar_arcana", "fg": 9 },
           { "id": "f_pozdol_arcana", "fg": 10 },
           {
@@ -45,12 +45,12 @@
             "rotates": false,
             "multitile": true,
             "additional_tiles": [
-              { "id": "center", "fg": 11 },
-              { "id": "corner", "fg": 12 },
+              { "id": "center", "fg": 223 },
+              { "id": "corner", "fg": 11 },
               { "id": "edge", "fg": 12 },
               { "id": "end_piece", "fg": 13 },
-              { "id": "t_connection", "fg": 13 },
-              { "id": "unconnected", "fg": 13 }
+              { "id": "t_connection", "fg": 224 },
+              { "id": "unconnected", "fg": 225 }
             ]
           },
           { "id": "f_door_arcana_c", "fg": 14 },
