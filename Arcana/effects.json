@@ -3,12 +3,11 @@
     "type": "effect_type",
     "id": "magic_sign_exertion",
     "name": [ "Magic Sign Exertion" ],
-    "desc": [ "Overuse of Magic Signs will steadily wear down your stamina, and eventually cause fatigue." ],
+    "desc": [ "Overuse of Magic Signs increases fatigue gain." ],
     "resist_effects": [ "potion_incense" ],
-    "max_intensity": 480,
+    "max_duration": "8 h",
     "int_dur_factor": "1 m",
-    "base_mods": { "stamina_min": [ -3, -1.5 ], "fatigue_min": [ 1, 0 ], "fatigue_tick": [ 600 ], "fatigue_chance_bot": [ 100 ] },
-    "scaling_mods": { "stamina_min": [ -0.02, -0.01 ], "fatigue_chance": [ 0.2 ] }
+    "base_mods": { "fatigue_min": [ 1 ], "fatigue_tick": [ 300, 600 ] }
   },
   {
     "type": "effect_type",
