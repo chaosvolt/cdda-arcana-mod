@@ -7,6 +7,7 @@
     "message": "\"Ethereal winds, guide my passage...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "spell_agility",
     "min_range": 1,
@@ -37,7 +38,8 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
     "extra_effects": [
       { "id": "arcana_aftermath_capacitance_zap", "hit_self": true, "max_level": 10 },
-      { "id": "arcana_aftermath_capacitance_stun", "hit_self": true, "max_level": 10 }
+      { "id": "arcana_aftermath_capacitance_stun", "hit_self": true, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_5", "hit_self": true, "max_level": 10 }
     ],
     "min_damage": 150,
     "max_damage": 240,
@@ -63,6 +65,7 @@
     "message": "\"Show me what eyes could never glimpse...\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_6", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "arcana_clairvoyance_plus",
     "energy_source": "STAMINA",
@@ -88,6 +91,7 @@
     "message": "\"You are many, but I am more than all of you...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "blood_clarity",
     "min_range": 1,
@@ -116,6 +120,7 @@
     "message": "\"I am that which protects, offering mercy in troubled times...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_5", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "cold_ward",
     "energy_source": "STAMINA",
@@ -144,6 +149,7 @@
     "effect": "target_attack",
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_3", "hit_self": true, "max_level": 10 } ],
     "effect_str": "stunned",
     "sound_description": "a faint rush of air",
     "min_aoe": 5,
@@ -173,7 +179,8 @@
     "effect": "target_attack",
     "extra_effects": [
       { "id": "arcana_aftermath_conjure_acid_spike", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_aftermath_conjure_acid_noise", "hit_self": false, "max_level": 10 }
+      { "id": "arcana_aftermath_conjure_acid_noise", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_3", "hit_self": true, "max_level": 10 }
     ],
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
@@ -217,7 +224,8 @@
     "extra_effects": [
       { "id": "arcana_aftermath_conjure_flame_spike", "hit_self": false, "max_level": 10 },
       { "id": "arcana_aftermath_conjure_flame_bash", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_aftermath_conjure_flame_noise", "hit_self": false, "max_level": 10 }
+      { "id": "arcana_aftermath_conjure_flame_noise", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_3", "hit_self": true, "max_level": 10 }
     ],
     "effect": "target_attack",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
@@ -260,7 +268,10 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
     "effect": "ter_transform",
     "effect_str": "arcana_consecrate",
-    "extra_effects": [ { "id": "arcana_aftermath_consecrate_lesser", "hit_self": false, "max_level": 10 } ],
+    "extra_effects": [
+      { "id": "arcana_aftermath_consecrate_lesser", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_6", "hit_self": true, "max_level": 10 }
+    ],
     "energy_source": "STAMINA",
     "max_level": 10,
     "difficulty": 60,
@@ -290,7 +301,10 @@
     "message": "\"If it is known, it can be attained...\"  You cast %s!",
     "valid_targets": [ "hostile" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL", "SWAP_POS" ],
-    "extra_effects": [ { "id": "arcana_magic_dampening_aoe", "hit_self": false, "max_level": 10 } ],
+    "extra_effects": [
+      { "id": "arcana_magic_dampening_aoe", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_3", "hit_self": true, "max_level": 10 }
+    ],
     "effect": "target_attack",
     "effect_str": "dazed",
     "energy_source": "STAMINA",
@@ -330,7 +344,8 @@
     "extra_effects": [
       { "id": "arcana_aftermath_eclipse_darkness", "hit_self": false, "max_level": 10 },
       { "id": "arcana_aftermath_eclipse_wonder", "hit_self": false },
-      { "id": "arcana_aftermath_eclipse_fatigue", "hit_self": false }
+      { "id": "arcana_aftermath_eclipse_fatigue", "hit_self": false },
+      { "id": "arcana_aftermath_magic_sign_exertion_9", "hit_self": true, "max_level": 10 }
     ],
     "energy_source": "STAMINA",
     "max_level": 10,
@@ -355,7 +370,8 @@
     "effect": "cone_attack",
     "extra_effects": [
       { "id": "arcana_magic_elemental_burst_line", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_magic_elemental_burst_wonder", "hit_self": false, "max_level": 10 }
+      { "id": "arcana_magic_elemental_burst_wonder", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_7", "hit_self": true, "max_level": 10 }
     ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
@@ -387,6 +403,7 @@
     "message": "\"Let there be no fetter that can bind me...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_6", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "free_action",
     "min_range": 1,
@@ -415,7 +432,10 @@
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
     "effect_str": "arcane_healing_staunch",
-    "extra_effects": [ { "id": "arcana_aftermath_healing_side_effects", "max_level": 10 } ],
+    "extra_effects": [
+      { "id": "arcana_aftermath_healing_side_effects", "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_5", "hit_self": true, "max_level": 10 }
+    ],
     "min_damage": -8,
     "max_damage": -24,
     "damage_increment": -1.6,
@@ -445,6 +465,7 @@
     "message": "\"The steel does not fear the flame that tempers it...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_5", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "heat_ward",
     "min_range": 1,
@@ -472,6 +493,7 @@
     "message": "\"All is known to one who watches and listens with patience...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_3", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "spell_insight",
     "min_range": 1,
@@ -501,7 +523,10 @@
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL", "SILENT" ],
     "effect": "target_attack",
-    "extra_effects": [ { "id": "arcana_aftermath_light_searing", "hit_self": false, "max_level": 10 } ],
+    "extra_effects": [
+      { "id": "arcana_aftermath_light_searing", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_2", "hit_self": true, "max_level": 10 }
+    ],
     "energy_source": "STAMINA",
     "min_aoe": 4,
     "max_aoe": 8,
@@ -532,6 +557,7 @@
     "message": "\"One foot after the other, always grounded...\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "lightning_ward",
     "min_range": 1,
@@ -559,6 +585,7 @@
     "message": "\"Let it be a glorious battle...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_5", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "spell_might",
     "min_range": 1,
@@ -587,6 +614,7 @@
     "message": "\"That which is made by man can always be undone by human hands...\"  You cast %s!",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 } ],
     "effect": "ter_transform",
     "effect_str": "arcana_open_lock",
     "energy_source": "STAMINA",
@@ -617,6 +645,7 @@
     "message": "\"We shall prosper, no matter how barren the ground...\"  You cast %s!",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_3", "hit_self": true, "max_level": 10 } ],
     "effect": "ter_transform",
     "effect_str": "arcana_plants",
     "energy_source": "STAMINA",
@@ -647,6 +676,7 @@
     "message": "\"I fear no venom, whether it be by word or blade...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_3", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "poison_ward",
     "min_range": 1,
@@ -676,6 +706,7 @@
     "message": "\"Fear not the darkness, but those who lure you into it...\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_6", "hit_self": true, "max_level": 10 } ],
     "effect": "spawn_item",
     "effect_str": "halo_shadowsnakes",
     "energy_source": "STAMINA",
@@ -705,7 +736,8 @@
       { "id": "arcana_aftermath_shockstorm_line", "hit_self": false, "max_level": 10 },
       { "id": "arcana_aftermath_shockstorm_line", "hit_self": false, "max_level": 10 },
       { "id": "arcana_aftermath_shockstorm_line", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_aftermath_shockstorm_noise", "hit_self": false, "max_level": 10 }
+      { "id": "arcana_aftermath_shockstorm_noise", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_2", "hit_self": true, "max_level": 10 }
     ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
@@ -746,7 +778,8 @@
     "effect": "bash",
     "extra_effects": [
       { "id": "arcana_aftermath_sundering_quake_extra", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_aftermath_sundering_quake_boulders", "hit_self": false, "max_level": 10 }
+      { "id": "arcana_aftermath_sundering_quake_boulders", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 }
     ],
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
@@ -778,6 +811,7 @@
     "message": "\"I am that which is grim yet necessary, for there is no life without death...\"  You cast %s!",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_6", "hit_self": true, "max_level": 10 } ],
     "effect": "summon",
     "effect_str": "mon_centipede_giant_summoned",
     "energy_source": "STAMINA",
@@ -810,6 +844,7 @@
     "message": "\"Loyal unto death, and even beyond...\"  You cast %s!",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_3", "hit_self": true, "max_level": 10 } ],
     "effect": "summon",
     "effect_str": "mon_dog_skeleton_summoned",
     "energy_source": "STAMINA",
@@ -840,6 +875,7 @@
     "message": "\"Neherit, otira atvess...\"  You cast %s!",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_5", "hit_self": true, "max_level": 10 } ],
     "effect": "summon",
     "effect_str": "mon_shadow_summoned",
     "energy_source": "STAMINA",
@@ -870,6 +906,7 @@
     "message": "\"Tvakaros, ievona karoh...\"  You cast %s!",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_6", "hit_self": true, "max_level": 10 } ],
     "effect": "summon",
     "effect_str": "mon_vortex_summoned",
     "energy_source": "STAMINA",
@@ -899,6 +936,7 @@
     "message": "\"The battle is not over yet...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_2", "hit_self": true, "max_level": 10 } ],
     "effect_str": "adrenaline",
     "max_level": 10,
     "min_range": 1,
@@ -927,6 +965,7 @@
     "message": "\"The wicked falter before the vigilant...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_5", "hit_self": true, "max_level": 10 } ],
     "effect": "target_attack",
     "effect_str": "cleric_warding",
     "min_range": 1,
