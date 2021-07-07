@@ -249,7 +249,6 @@
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 3, "LIST" ] ] ],
     "components": [
       [ [ "crossbow", 1 ] ],
-      [ [ "rope_6", 1 ], [ "rag", 3 ], [ "string_36", 6 ] ],
       [ [ "gold_small", 45 ], [ "CF_golden_scale", 9 ] ],
       [ [ "essence_dull", 40 ] ]
     ],
