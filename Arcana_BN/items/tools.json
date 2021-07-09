@@ -104,7 +104,6 @@
         "type": "cast_spell",
         "spell_id": "arcana_item_charm_bone_empowered",
         "no_fail": true,
-        "need_wielding": true,
         "level": 0
     }
   },
@@ -123,7 +122,6 @@
         "type": "cast_spell",
         "spell_id": "arcana_item_stinger_flute_empowered",
         "no_fail": true,
-        "need_wielding": true,
         "level": 0
     }
   },

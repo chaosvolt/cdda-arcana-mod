@@ -12,8 +12,8 @@
     "volume": "6 L",
     "bashing": 4,
     "category": "veh_parts",
-    "price": 800000,
-    "price_postapoc": 7000
+    "price": "8000 USD",
+    "price_postapoc": "70 USD"
   },
   {
     "type": "TOOL",
@@ -29,8 +29,8 @@
     "volume": "6 L",
     "bashing": 4,
     "category": "veh_parts",
-    "price": 800000,
-    "price_postapoc": 7000,
+    "price": "8000 USD",
+    "price_postapoc": "70 USD",
     "ammo": [ "essence_type" ],
     "max_charges": 1000
   },
@@ -47,7 +47,7 @@
     "volume": "7 L",
     "bashing": 4,
     "category": "veh_parts",
-    "price": 900000,
-    "price_postapoc": 7500
+    "price": "9000 USD",
+    "price_postapoc": "75 USD"
   }
 ]

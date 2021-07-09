@@ -14,7 +14,6 @@
       "type": "cast_spell",
       "spell_id": "arcana_item_triffid_garland_empowered",
       "no_fail": true,
-      "need_worn": true,
       "level": 0
     }
   },
@@ -33,7 +32,6 @@
       "type": "cast_spell",
       "spell_id": "arcana_item_amulet_exotic_empowered",
       "no_fail": true,
-      "need_worn": true,
       "level": 0
     }
   },
@@ -52,7 +50,6 @@
       "type": "cast_spell",
       "spell_id": "arcana_item_brooch_iridescent_empowered",
       "no_fail": true,
-      "need_worn": true,
       "level": 0
     }
   },
