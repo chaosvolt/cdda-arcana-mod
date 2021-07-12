@@ -8,7 +8,7 @@
     "apply_message": "You feel a slight sense of exertion from casting the spell.",
     "remove_message": "The exertion of spellcasting fades from your mind.",
     "rating": "bad",
-    "max_duration": "8 h",
+    "max_intensity": 480,
     "int_dur_factor": "1 m",
     "base_mods": { "fatigue_min": [ 1 ], "fatigue_tick": [ 300, 600 ] }
   },
