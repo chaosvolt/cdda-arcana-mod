@@ -639,6 +639,31 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
+    "result": "transmutation_crucible",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_OTHER",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "80 m",
+    "book_learn": [ [ "book_hexenhammer", 7 ], [ "book_bloodmagic", 7 ], [ "book_sacrifice", 7 ], [ "book_syncretism", 6 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 }, { "id": "CHEM", "level": 1 } ],
+    "using": [ [ "surface_heat", 100 ], [ "arcana_essence_any", 3 ] ],
+    "tools": [
+      [ [ "book_hexenhammer", -1 ], [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ],
+      [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ],
+      [ [ "candle_warding_active", -1 ] ]
+    ],
+    "components": [
+      [ [ "clay_lump", 5 ], [ "rock", 5 ], [ "ceramic_shard", 5 ] ],
+      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
+      [ [ "platinum_small", 25 ], [ "gold_small", 50 ], [ "silver_small", 100 ], [ "copper", 200 ] ],
+      [ [ "earth_talisman", 1 ] ]
+    ],
+    "flags": [ "BLIND_EASY", "SECRET" ]
+  },
+  {
     "result": "orb_veil",
     "type": "recipe",
     "category": "CC_ARCANA",
