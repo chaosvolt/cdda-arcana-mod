@@ -265,7 +265,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "cyclopean mirror" },
     "category": "armor",
-    "description": "An ornate round mirror in an archaic style.  Natural scenery appears to be engraved into it, and light reflected from it projects a completely different, otherworldly pattern.  It is capable of moving on its own, blocking melee attacks like a small shield when equipped.  When fueled by essence, it projects a barrier that provides less phyiscal defense, but protects against electricity and radiation, along with partial resistance to psychic influence and extreme temperatures.",
+    "description": "An ornate round mirror in an archaic style.  Natural scenery appears to be engraved into it, and light reflected from it projects a completely different, otherworldly pattern.  It is capable of moving on its own, blocking melee attacks like a small shield when equipped.  When fueled by essence, it projects a barrier that provides less physical defense, but protects against electricity and radiation, along with partial resistance to psychic influence and extreme temperatures.",
     "weight": "5 kg",
     "volume": "4 L",
     "price": 90000,
@@ -273,7 +273,6 @@
     "bashing": 8,
     "covers": [ "TORSO" ],
     "coverage": 40,
-    "encumbrance": 5,
     "material": [ "iron" ],
     "symbol": "[",
     "looks_like": "shield_round",
@@ -301,6 +300,7 @@
       "STURDY",
       "BLOCK_WHILE_WORN",
       "NO_SALVAGE",
+      "SEMITANGIBLE",
       "AURA",
       "ONLY_ONE",
       "POWERARMOR_COMPATIBLE"
@@ -312,7 +312,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "cyclopean mirror (on)" },
     "category": "armor",
-    "description": "An ornate round mirror in an archaic style.  Natural scenery appears to be engraved into it, and light reflected from it projects a completely different, otherworldly pattern.  It has shifted into a brightly-glowing barrier that protects the user from electricity and radiation, along with partial protection from psychic influence, some resistance to extreme temperatures, and minor environmental protection.  The barrier's phyiscal protection is half that of the mirror itself, but protects your body fully.",
+    "description": "An ornate round mirror in an archaic style.  Natural scenery appears to be engraved into it, and light reflected from it projects a completely different, otherworldly pattern.  It has shifted into a brightly-glowing barrier that protects the user from electricity and radiation, along with partial protection from psychic influence, some resistance to extreme temperatures, and minor environmental protection.  The barrier's physical protection is half that of the mirror itself, but protects your body fully.",
     "volume": "4 L",
     "covers": [ "HEAD", "EYES", "MOUTH", "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
     "coverage": 100,
@@ -322,7 +322,7 @@
       "msg": "The protective glow vanishes as the mirror rematerializes.",
       "type": "transform"
     },
-    "relative": { "weight": -5000, "material_thickness": -2, "bashing": -8, "environmental_protection": 12, "encumbrance": -5 },
+    "relative": { "weight": -5000, "material_thickness": -2, "bashing": -8, "environmental_protection": 12 },
     "extend": {
       "flags": [
         "CLIMATE_CONTROL",
@@ -331,7 +331,6 @@
         "PSYSHIELD_PARTIAL",
         "RAD_PROOF",
         "RAINPROOF",
-        "SEMITANGIBLE",
         "SUN_GLASSES",
         "SWIM_GOGGLES",
         "TRADER_AVOID",
