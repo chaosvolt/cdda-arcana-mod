@@ -138,6 +138,7 @@
         [ "bone_tainted", 50 ],
         [ "stick_fiber", 100 ],
         [ "chitin_piece", 100 ],
+        [ "royal_jelly", 1 ],
         [ "iron_thorn", 1 ],
         [ "inflorescent_root", 1 ],
         [ "graboid_fang", 1 ],
@@ -185,7 +186,6 @@
         [ "violin_golden", 1 ],
         [ "alien_pod_resin", 3 ],
         [ "jabberwock_heart", 3 ],
-        [ "royal_jelly", 2 ],
         [ "panacea", 1 ]
       ]
     ],

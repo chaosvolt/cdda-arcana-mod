@@ -206,11 +206,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
-    "components": [
-      [ [ "charm_bone", 1 ] ],
-      [ [ "flame_talisman", 1 ] ],
-      [ [ "earth_talisman", 1 ] ]
-    ],
+    "components": [ [ [ "charm_bone", 1 ] ], [ [ "flame_talisman", 1 ] ], [ [ "earth_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
@@ -226,11 +222,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
-    "components": [
-      [ [ "stinger_flute", 1 ] ],
-      [ [ "water_talisman", 1 ] ],
-      [ [ "air_talisman", 1 ] ]
-    ],
+    "components": [ [ [ "stinger_flute", 1 ] ], [ [ "water_talisman", 1 ] ], [ [ "air_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
@@ -351,7 +343,7 @@
       [ [ "silver_glyph", 1 ] ],
       [
         [ "wyrmskin_piece", 1 ],
-        [ "graboid_fang", 1 ], 
+        [ "graboid_fang", 1 ],
         [ "acid", 4 ],
         [ "chem_sulphuric_acid", 4 ],
         [ "chem_nitric_acid", 4 ],
@@ -497,7 +489,7 @@
     "book_learn": [ [ "book_scrollcraft", 3 ] ],
     "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "copper", 12 ], [ "monster_tear", 1 ] ] ],
+    "components": [ [ [ "gold_small", 6 ], [ "copper", 12 ], [ "monster_tear", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -512,7 +504,7 @@
     "book_learn": [ [ "book_scrollcraft", 3 ] ],
     "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "tin", 12 ], [ "shadow_gem", 1 ] ] ],
+    "components": [ [ [ "silver_small", 6 ], [ "tin", 12 ], [ "shadow_gem", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -527,7 +519,7 @@
     "book_learn": [ [ "book_scrollcraft", 4 ] ],
     "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 2 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "material_limestone", 16 ], [ "engraved_stone", 1 ] ] ],
+    "components": [ [ [ "material_limestone", 16 ], [ "material_quicklime", 16 ], [ "engraved_stone", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -582,7 +574,7 @@
     "book_learn": [ [ "book_scrollcraft", 5 ] ],
     "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 3 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "feather", 40 ], [ "vortex_shard", 1 ] ] ],
+    "components": [ [ [ "feather", 40 ], [ "spiral_stone", 1 ], [ "vortex_shard", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -597,7 +589,7 @@
     "skills_required": [ "fabrication", 4 ],
     "time": "50 m",
     "book_learn": [ [ "book_syncretism", 6 ] ],
-    "using": [ [ "arcana_essence_any", 1 ], [ "arcana_polishing_standard", 1 ] ],
+    "using": [ [ "arcana_essence_any", 5 ], [ "arcana_polishing_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_syncretism", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
     "components": [ [ [ "engraved_stone", 1 ] ], [ [ "monster_tear", 4 ] ] ]
@@ -613,9 +605,9 @@
     "skills_required": [ "fabrication", 5 ],
     "time": "50 m",
     "book_learn": [ [ "book_syncretism", 7 ] ],
-    "using": [ [ "arcana_essence_any", 2 ], [ "arcana_polishing_standard", 1 ] ],
+    "using": [ [ "arcana_essence_any", 5 ], [ "arcana_polishing_standard", 1 ] ],
     "tools": [ [ [ "book_syncretism", -1 ] ] ],
-    "components": [ [ [ "vortex_shard", 3 ], [ "spiral_stone", 6 ] ] ]
+    "components": [ [ [ "vortex_shard", 1 ] ], [ [ "spiral_stone", 1 ], [ "rock", 6 ] ] ]
   },
   {
     "result": "candle_warding",
