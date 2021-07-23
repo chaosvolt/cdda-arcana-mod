@@ -78,7 +78,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "mapping": { ".": { "items": [ { "item": "summoner_casualties", "chance": 5 } ] } },
-      "terrain": { "|": "t_concrete_wall", "<": "t_slope_up", "R": "t_root_wall" },
+      "terrain": { "|": "t_concrete_wall", "<": "t_slope_up", "R": "t_root_wall_arcana" },
       "place_loot": [
         { "item": "book_syncretism", "x": 16, "y": 2 },
         { "item": "note_grove", "x": [ 11, 15 ], "y": [ 13, 15 ] },
