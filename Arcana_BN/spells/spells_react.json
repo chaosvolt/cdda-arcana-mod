@@ -107,8 +107,8 @@
     "message": "You feel yanked in a non-existent direction!",
     "effect": "teleport_random",
     "valid_targets": [ "self" ],
-    "min_range": 10,
-    "max_range": 20
+    "min_range": 3,
+    "max_range": 6
   },
   {
     "id": "arcana_react_satchel_teleglow",
