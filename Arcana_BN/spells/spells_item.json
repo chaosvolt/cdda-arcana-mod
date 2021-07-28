@@ -529,7 +529,11 @@
     "description": "Ensnares and poisons a single target.",
     "message": "Venomous tendrils erupt from the ground by your command, to ensnare and infest your enemy!",
     "valid_targets": [ "hostile" ],
-    "extra_effects": [ { "id": "arcana_item_lichhook_freeze", "hit_self": false }, { "id": "arcana_item_lichhook_slow", "hit_self": false }, { "id": "arcana_item_lichhook_poison", "hit_self": false } ],
+    "extra_effects": [
+      { "id": "arcana_item_lichhook_freeze", "hit_self": false },
+      { "id": "arcana_item_lichhook_slow", "hit_self": false },
+      { "id": "arcana_item_lichhook_poison", "hit_self": false }
+    ],
     "effect_str": "badpoison",
     "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS", "SILENT" ],
     "min_range": 3,
