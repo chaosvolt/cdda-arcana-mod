@@ -404,7 +404,8 @@
           { "id": "overlay_mutation_ARCANA_DRAGONTAIL", "fg": 219 },
           { "id": "overlay_mutation_ARCANA_DRAGONHORNS", "fg": 220 },
           { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 221 },
-          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 222 }
+          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 222 },
+          { "id": "tr_arcana_item_hexenhammer", "fg": 226 }
         ],
         "sprite_width": 32,
         "sprite_height": 32
