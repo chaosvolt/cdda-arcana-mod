@@ -1837,8 +1837,8 @@
       {
         "text": "Very well then.  We shall see…",
         "effect": [
-          { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
-          { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" }
+          { "u_add_effect": "hermit_earned_trust_1" },
+          { "u_add_effect": "hermit_earned_trust_2" }
         ],
         "topic": "TALK_HERMIT"
       }

@@ -456,12 +456,6 @@
     "responses": [ { "text": "Alright.  Thank you.", "topic": "TALK_CF_REP" } ]
   },
   {
-    "id": "TALK_CF_REP_PRELUDE_CAMP",
-    "type": "talk_topic",
-    "dynamic_line": "I heard about that incident.  Gods, if I recall they lost three people there.  They'd buried two who had succumbed to previous injuries, before something attacked them.  The third stayed behind to buy the others time to escape with their lives.",
-    "responses": [ { "text": "That's all for now.", "topic": "TALK_CF_REP_PRELUDE_GEM_2" } ]
-  },
-  {
     "type": "talk_topic",
     "id": "TALK_CF_REP_SANGUINE_ASK",
     "dynamic_line": "You had to have known what you were walking into.  Either you are here to make peace, or else there is a trick at play here.  If so, know that we are watching.  Now please, for what purpose have you come here?",
@@ -599,7 +593,7 @@
       },
       {
         "text": "I'm not sure how it'd help protect this place.",
-        "condition": { "or": [ { "u_has_any_trait": "cf_sofia_notes_given" }, { "u_has_skill": { "skill": "magic", "level": 1 } } ] },
+        "condition": { "or": [ { "u_has_effect": "cf_sofia_notes_given" }, { "u_has_skill": { "skill": "magic", "level": 1 } } ] },
         "switch": true,
         "topic": "TALK_CF_REP_MISSION_1_HOW"
       },
