@@ -134,6 +134,11 @@
         "condition": { "u_has_mission": "MISSION_CF_PURIFIER_1_3" }
       },
       {
+        "text": "[MISSION] About this \"bone charm\" you asked me to make…",
+        "topic": "TALK_CF_REP_MISSION_1",
+        "condition": { "u_has_mission": "MISSION_CF_REP_1" }
+      },
+      {
         "text": "So, how are things working out with the new arrivals so far?",
         "topic": "TALK_CF_REP_MISSION_4_OPINION",
         "condition": {

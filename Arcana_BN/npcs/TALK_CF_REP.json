@@ -134,6 +134,11 @@
         "condition": { "u_has_mission": "MISSION_CF_PURIFIER_1_3" }
       },
       {
+        "text": "[MISSION] About this \"bone charm\" you asked me to make…",
+        "topic": "TALK_CF_REP_MISSION_1",
+        "condition": { "u_has_mission": "MISSION_CF_REP_1" }
+      },
+      {
         "text": "So, how are things working out with the new arrivals so far?",
         "topic": "TALK_CF_REP_MISSION_4_OPINION",
         "condition": {
@@ -255,6 +260,28 @@
         "topic": "TALK_DONE",
         "effect": { "u_add_effect": "sofia_deacon_message" }
       }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_MISSION_1",
+    "dynamic_line": "What do you wish to know?  As I said, I can explain why we need one if you wish.  I can also try to help advise you on what creatures might be useful to hunt for the materials needed to make one.",
+    "responses": [
+      { "text": "It's a protective spell, I'm guessing?", "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_CHALICE", "THRESH_VEIL" ] }, "switch": true, "topic": "TALK_CF_REP_MISSION_1_HOW_KNOWN" },
+      { "text": "What sort of ritual does this entail?", "condition": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "THRESH_DRAGONBLOOD" ] }, "switch": true, "topic": "TALK_CF_REP_MISSION_1_HOW_ARCANIST" },
+      { "text": "I'm not sure how it'd help protect this place.",
+        "condition": {
+          "or": [
+            {
+              "u_has_any_trait": "cf_sofia_notes_given"
+            },
+            { "u_has_skill": { "skill": "magic", "level": 1 } }
+          ]
+        },
+        "switch": true, "topic": "TALK_CF_REP_MISSION_1_HOW" },
+      { "text": "This just seems like a very strange request.", "switch": true, "default": true, "topic": "TALK_CF_REP_MISSION_1_WHY" },
+      { "text": "Where would I find the materials needed to make one of these things?", "topic": "TALK_CF_REP_MISSION_1_WHERE" },
+      { "text": "Never mind, I'll figure it out.", "topic": "TALK_CF_REP" }
     ]
   },
   {
