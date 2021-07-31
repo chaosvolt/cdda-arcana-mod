@@ -111,7 +111,7 @@
       [ "arcana_essence_exclude_dull", 5 ]
     ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
-    "components": [ [ [ "gold_small", 625 ] ], [ [ "silver_small", 165 ] ] ],
+    "components": [ [ [ "gold_small", 300 ] ], [ [ "silver_small", 100 ] ] ],
     "flags": [ "SECRET" ]
   },
   {

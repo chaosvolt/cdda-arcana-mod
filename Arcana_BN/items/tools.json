@@ -1578,6 +1578,7 @@
   {
     "type": "TOOL",
     "id": "offering_chalice_coalescent",
+    "sub": "offering_chalice",
     "name": { "str": "coalescent chalice" },
     "description": "An exotic golden chalice, reinforced by an ornate lattice of steel and curious electronics.  A swirling, inky blackness resides inside it, resisting any attempt to pour it out.  Using it will focus your energy into it through a powerful ritual, converting it into crystallized essence.  Doing so will take 15 minutes and greatly exhaust you.  Overuse comes with the risk of lethal side effects.",
     "weight": "3 kg",
