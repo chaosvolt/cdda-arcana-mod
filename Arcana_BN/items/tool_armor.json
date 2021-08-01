@@ -327,6 +327,7 @@
     "covers": [ "HEAD", "EYES", "MOUTH", "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
     "coverage": 100,
     "turns_per_charge": 600,
+    "revert_to": "cyclopean_mirror",
     "use_action": {
       "target": "cyclopean_mirror",
       "msg": "The protective glow vanishes as the mirror rematerializes.",
