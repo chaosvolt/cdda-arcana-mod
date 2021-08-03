@@ -13,6 +13,11 @@
     },
     "responses": [
       {
+        "text": "\"The moonlit sky anoints the worthy, who seek The Path home.\"",
+        "condition": { "u_has_var": "horace_password_known", "type": "flag", "context": "shrike", "value": "yes" },
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_PASSWORD"
+      },
+      {
         "text": "[MISSION] I'm here to put a stop to this.",
         "condition": {
           "and": [
@@ -59,6 +64,35 @@
       }
     ]
   },
+
+
+
+
+  {
+    "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_PASSWORD",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_trait": "PROF_SANGUINE",
+      "yes": "Haven't heard that since the old days, before the portals and shamblers.  You don't look familiar though, one of Elena's bunch maybe?",
+      "no": {
+        "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
+        "yes": "Well that's the last thing I expected one of you hunters to say.  So, who bled out to give you that pass phrase?",
+        "no": "Alright, you've got my attention.  You had to hear that from somebody, who sent you?"
+      }
+    },
+    "responses": [
+      {
+        "text": "The other shrikes have entrusted us with important information.  We need not be enemies, lanius.",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
+        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LANIUS"
+      },
+      { "text": "One of Elena's shrikes said to tell you that.", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_PASSWORD_ELENA" },
+      { "text": "[ATTACK] …", "topic": "TALK_DONE", "effect": "insult_combat" }
+    ]
+  },
+
+
+
   {
     "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_ITS_TIME_TO_STOP",
     "type": "talk_topic",
