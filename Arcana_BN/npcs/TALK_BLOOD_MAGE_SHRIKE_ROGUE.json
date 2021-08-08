@@ -90,7 +90,34 @@
       { "text": "[ATTACK] …", "topic": "TALK_DONE", "effect": "insult_combat" }
     ]
   },
-
+  {
+    "id": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LANIUS",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_trait": "THRESH_DRAGONBLOOD",
+      "yes": "Well, seems you've put that information to good use yourself.  Or however you ended up completing the Dragonblood Sacrament.  What are you trying to accomplish here, hunter?",
+      "no": "Well there's a surprise.  Wonder which of you has gone astray, their bunch or yours?  Why would you come here to talk of making allies, when you're clearly here on a hunt?"
+    },
+    "responses": [
+      {
+        "text": "Is it not according to your nature, to use what you have learned to protect others?  The people here are on a path of self-destruction, we could be working together to protect all of humanity.",
+        "condition": { "u_has_trait": "THRESH_DRAGONBLOOD" },
+        "switch": true,
+        "trial": { "type": "PERSUADE", "difficulty": 40 },
+        "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE", "opinion": { "trust": 1 } },
+        "failure": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE", "opinion": { "anger": 1, "trust": -1 } }
+      },
+      {
+        "text": ".",
+        "switch": true,
+        "default": true,
+        "trial": { "type": "PERSUADE", "difficulty": 20 },
+        "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_CONVINCE" },
+        "failure": { "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_FAILURE", "opinion": { "anger": 1, "trust": -3, "value": -2 } }
+      },
+      { "text": "[ATTACK] Forget it.  Just shut up and die.", "topic": "TALK_DONE", "effect": "insult_combat" }
+    ]
+  },
 
 
   {
