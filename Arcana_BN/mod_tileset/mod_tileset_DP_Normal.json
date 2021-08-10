@@ -404,7 +404,17 @@
           { "id": "overlay_mutation_ARCANA_DRAGONTAIL", "fg": 219 },
           { "id": "overlay_mutation_ARCANA_DRAGONHORNS", "fg": 220 },
           { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 221 },
-          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 222 }
+          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 222 },
+          {
+            "id": [
+              "tr_arcana_item_hexenhammer",
+              "tr_arcana_item_armor_wyrm",
+              "tr_arcana_item_lightning",
+              "tr_arcana_item_spear_pestilence",
+              "tr_arcana_item_lichhook"
+            ],
+            "fg": 226
+          }
         ],
         "sprite_width": 32,
         "sprite_height": 32

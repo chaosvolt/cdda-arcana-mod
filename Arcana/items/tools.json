@@ -62,7 +62,7 @@
     "material": [ "flesh" ],
     "color": "light_gray",
     "//": "As noted with wearable trinkets made from monsterparts, these are post-cata only.",
-    "price_postapoc": 250,
+    "price_postapoc": "250 cent",
     "use_action": {
       "type": "musical_instrument",
       "volume": 12,
@@ -85,7 +85,7 @@
     "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.",
     "weight": "38 g",
     "volume": "50 ml",
-    "price_postapoc": 200,
+    "price_postapoc": "2 USD",
     "material": [ "bone" ],
     "symbol": ",",
     "looks_like": "small_relic",
@@ -99,10 +99,9 @@
     "name": { "str": "sanctified bone charm" },
     "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any creatures within 8 tiles, including allies if you're not careful.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 6 uses, each use takes 25 charges.",
     "price_postapoc": "20 USD",
-    "max_charges": 150,
     "charges_per_use": 25,
     "ammo": "primitive_magic_item_ammo_type",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 600 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 150 } } ],
     "flags": [ "MAGIC_FOCUS", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_charm_bone_empowered", "no_fail": true, "level": 0 }
@@ -114,10 +113,9 @@
     "name": { "str": "quickened stinger flute" },
     "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will greatly reduce movecosts and enhance evasion.  Stamina and attack speed are unaffected, however.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 6 uses, each use takes 25 charges.",
     "price_postapoc": "25 USD",
-    "max_charges": 150,
     "charges_per_use": 25,
     "ammo": "primitive_magic_item_ammo_type",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 600 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 150 } } ],
     "flags": [ "MAGIC_FOCUS", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_stinger_flute_empowered", "no_fail": true, "level": 0 }
@@ -204,7 +202,6 @@
     "looks_like": "arming_sword",
     "color": "yellow",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 20 } } ],
-    "max_charges": 20,
     "ammo": "essence_dull_type",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
     "techniques": [ "WBLOCK_2" ],
@@ -247,15 +244,30 @@
     "category": "weapons",
     "copy-from": "warhammer",
     "name": { "str": "hammer of the hunter", "str_pl": "hammers of the hunter" },
-    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  Using it will channel consecrated essence into a stunning flash.  Though using it is a double-edged sword, it will have further effects on creatures of darkness.",
+    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  It can be used to channel consecrated essence into a stunning flash, or place a rune that will release its stunning effect if something steps into it.  Though using it is a double-edged sword, it will have further effects on creatures of darkness.",
     "price": "800 USD",
     "price_postapoc": "45 USD",
     "material": [ "iron", "silver", "wood" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 3 } } ],
-    "max_charges": 3,
     "charges_per_use": 3,
     "ammo": "essence_dull_type",
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_hammerzeit", "no_fail": true, "need_wielding": true, "level": 0 },
+    "use_action": [
+      {
+        "type": "place_trap",
+        "allow_underwater": true,
+        "trap": "tr_arcana_item_hexenhammer",
+        "moves": 90,
+        "practice": 2,
+        "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_hammerzeit",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
     "relative": { "weight": "360 g", "bashing": 2 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
@@ -265,12 +277,11 @@
     "copy-from": "spear_steel",
     "category": "weapons",
     "name": { "str": "spear of pestilence", "str_pl": "spears of pestilence" },
-    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will temporarily summon mutant vermin to aid you, and wielding it makes movement easier.",
+    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will temporarily summon mutant vermin to aid you, and wielding it makes movement easier.  It can also be used to place a rune that will summon said vermin when something steps on it.",
     "price": "1200 USD",
     "price_postapoc": "35 USD",
     "material": [ "steel", "wood", "chitin" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 9 } } ],
-    "max_charges": 9,
     "charges_per_use": 1,
     "ammo": "essence_type",
     "relic_data": {
@@ -290,7 +301,23 @@
         }
       ]
     },
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 },
+    "use_action": [
+      {
+        "type": "place_trap",
+        "allow_underwater": true,
+        "trap": "tr_arcana_item_spear_pestilence",
+        "moves": 90,
+        "practice": 0,
+        "done_message": "You focus a fragment of the spear's energy into a spell trap, waiting to be unleashed."
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_pestilence",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
     "relative": { "weight": 540, "bashing": 2 },
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ] }
   },
@@ -875,7 +902,6 @@
     "symbol": ";",
     "color": "brown",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 3 } } ],
-    "max_charges": 3,
     "ammo": "essence_blood_type",
     "weight": "707 g",
     "volume": "750 ml",
@@ -915,7 +941,6 @@
     "symbol": ";",
     "looks_like": "hatchet",
     "color": "brown",
-    "max_charges": 3,
     "turns_per_charge": 1,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 3 } } ],
     "ammo": "essence_blood_type",
@@ -939,18 +964,27 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "lichhook" },
-    "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.",
+    "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.  It can also place a rune that will trigger the same effect over a small area when something steps into it.",
     "longest_side": "70 cm",
     "price": "720 USD",
     "price_postapoc": "45 USD",
     "bashing": 9,
     "cutting": 29,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 8 } } ],
-    "max_charges": 8,
     "charges_per_use": 2,
     "ammo": "essence_blood_type",
     "relative": { "weight": 230 },
-    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 } ],
+    "use_action": [
+      {
+        "type": "place_trap",
+        "allow_underwater": true,
+        "trap": "tr_arcana_item_lichhook",
+        "moves": 90,
+        "practice": 0,
+        "done_message": "You focus a fragment of the lichhook's energy into a spell trap, waiting to be unleashed."
+      },
+      { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 }
+    ],
     "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ] }
   },
   {
@@ -1403,8 +1437,8 @@
     "description": "A small container made out of a polished, glassy material resembling stone.  A shimmer of precious metal occasionally appears within the surface, as though its internal structure flowed like liquid.  Deploying it will create a temporary workspace of shifting earth, providing a hard surface usable as an anvil as well as shifting stones that can assist in metalworking and alchemy.  It can be examined afterward to reclaim it.\n\nWhen deployed it provides the following:\n* Level 3 anvil quality.\n* Level 2 boiling quality.\n* Level 2 chemical making quality.\n* Level 1 containing quality.\n* Level 1 food cooking quality.\n* Level 2 clean surface quality.\n* Additionally serves as a crucible.",
     "weight": "1700 g",
     "volume": "1500 ml",
-    "price": 600000,
-    "price_postapoc": 2500,
+    "price": "6000 USD",
+    "price_postapoc": "25 USD",
     "to_hit": -2,
     "bashing": 10,
     "material": [ "stone", "essencemat" ],
@@ -1460,7 +1494,6 @@
     "looks_like": "diamond",
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_pure_type": 1 } } ],
-    "max_charges": 1,
     "charges_per_use": 1,
     "ammo": "essence_pure_type",
     "relic_data": {
@@ -1496,7 +1529,6 @@
     "looks_like": "cudgel",
     "color": "light_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 300 } } ],
-    "max_charges": 300,
     "charges_per_use": 1,
     "ammo": "essence_dull_type",
     "use_action": [
@@ -1559,6 +1591,7 @@
   {
     "type": "TOOL",
     "id": "offering_chalice_coalescent",
+    "sub": "offering_chalice",
     "name": { "str": "coalescent chalice" },
     "description": "An exotic golden chalice, reinforced by an ornate lattice of steel and curious electronics.  A swirling, inky blackness resides inside it, resisting any attempt to pour it out.  Using it will focus your energy into it through a powerful ritual, converting it into crystallized essence.  Doing so will take 15 minutes and greatly exhaust you.  Overuse comes with the risk of lethal side effects.",
     "weight": "3 kg",
@@ -1588,7 +1621,6 @@
     "symbol": ";",
     "color": "red",
     "ammo": [ "essence_dull_type" ],
-    "max_charges": 300,
     "charges_per_use": 2,
     "use_action": [ "OXYTORCH" ],
     "flags": [ "ALLOWS_REMOTE_USE" ],
@@ -1610,7 +1642,6 @@
     "symbol": ";",
     "color": "magenta",
     "ammo": [ "essence_type" ],
-    "max_charges": 20,
     "charges_per_use": 1,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "essence_type": 20 }, "rigid": true } ],
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_spatial_displacement", "no_fail": true, "level": 0 } ]
@@ -1643,7 +1674,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "meteoric verge" },
-    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.",
+    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.  It can also be used to place a rune that will blast an area with lightning if something steps on it.",
     "weight": "3935 g",
     "to_hit": 1,
     "volume": "2500 ml",
@@ -1657,7 +1688,6 @@
     "looks_like": "i_staff",
     "color": "yellow",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 10 } } ],
-    "max_charges": 10,
     "charges_per_use": 2,
     "ammo": "essence_type",
     "relic_data": {
@@ -1676,13 +1706,23 @@
         }
       ]
     },
-    "use_action": {
-      "type": "cast_spell",
-      "spell_id": "arcana_item_meteoric_verge_bolt",
-      "no_fail": true,
-      "need_wielding": true,
-      "level": 0
-    },
+    "use_action": [
+      {
+        "type": "place_trap",
+        "allow_underwater": true,
+        "trap": "tr_arcana_item_lightning",
+        "moves": 90,
+        "practice": 0,
+        "done_message": "You focus a fragment of the verge's energy into a spell trap, waiting to be unleashed."
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_meteoric_verge_bolt",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
     "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ]
   },
   {
@@ -1703,7 +1743,6 @@
     "bashing": 3,
     "cutting": 21,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 24 } } ],
-    "max_charges": 24,
     "ammo": "essence_blood_type",
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ACTIVE", "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ] } ]
@@ -1755,7 +1794,6 @@
     "repairs_like": "blood_athame",
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 8 } } ],
-    "max_charges": 8,
     "charges_per_use": 1,
     "ammo": "essence_type",
     "techniques": [ "RAPID", "DEF_DISARM" ],
@@ -1805,7 +1843,6 @@
     "symbol": "/",
     "color": "light_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_pure_type": 10 } } ],
-    "max_charges": 10,
     "charges_per_use": 1,
     "ammo": "essence_pure_type",
     "use_action": { "type": "mutagen_iv", "mutation_category": "VEIL" },
@@ -1838,7 +1875,6 @@
     "looks_like": "petrified_eye",
     "color": "red",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 10 } } ],
-    "max_charges": 10,
     "charges_per_use": 10,
     "ammo": "essence_blood_type",
     "use_action": { "type": "mutagen_iv", "mutation_category": "DRAGONBLOOD" }
@@ -1858,7 +1894,6 @@
     "price_postapoc": "120 USD",
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
-    "max_charges": 9,
     "ammo": "essence_blood_type",
     "relic_data": {
       "passive_effects": [
@@ -1896,7 +1931,6 @@
     "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
     "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
-    "max_charges": 9,
     "turns_per_charge": 800,
     "ammo": "essence_blood_type",
     "revert_to": "stormbringer",
