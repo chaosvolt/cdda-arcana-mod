@@ -286,7 +286,7 @@
     "repairs_like": "robe_shadow",
     "type": "TOOL_ARMOR",
     "category": "armor",
-    "name": { "str": "mantle of shadows (on)", "str_pl": "mantles of shadows (on" },
+    "name": { "str": "mantle of shadows (on)", "str_pl": "mantles of shadows (on)" },
     "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders.  The air wavers around it, barely noticeable to you.",
     "turns_per_charge": 300,
     "revert_to": "robe_shadow",
@@ -342,8 +342,8 @@
     "flags": [ "OVERSIZE", "OUTER", "NO_SALVAGE" ]
   },
   {
-    "id": "robe_shadow_on",
-    "copy-from": "robe_shadow",
+    "id": "robe_shadow_xl_on",
+    "copy-from": "robe_shadow_xl",
     "repairs_like": "robe_shadow",
     "type": "TOOL_ARMOR",
     "category": "armor",
@@ -405,7 +405,7 @@
     "price_postapoc": "50 USD",
     "material": [ "iron", "leather", "silver" ],
     "coverage": 75,
-    "encumbrance": 15,
+    "encumbrance": 10,
     "warmth": 15,
     "max_charges": 4,
     "charges_per_use": 1,

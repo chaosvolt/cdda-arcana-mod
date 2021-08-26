@@ -266,6 +266,7 @@
   },
   {
     "id": "lucern_hexenhammer",
+    "sub": "hexenhammer",
     "type": "TOOL",
     "category": "weapons",
     "copy-from": "lucern_hammer",
@@ -297,7 +298,7 @@
     "//": "Designed to be compatible with Via Gladium et Malleo, so the silver decoration is on the other end to shift the center of balance.  No damage bonus from the extra weight, but also no 0.7x melee damage from POLEARM flag.",
     "relative": { "weight": "360 g", "to_hit": 1 },
     "extend": { "flags": [ "NO_SALVAGE" ] },
-    "extend": { "flags": [ "ALWAYS_TWOHAND", "POLEARM" ] }
+    "delete": { "flags": [ "ALWAYS_TWOHAND", "POLEARM" ] }
   },
   {
     "id": "spear_pestilence",

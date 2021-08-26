@@ -553,13 +553,7 @@
     "type": "talk_topic",
     "id": "TALK_HERMIT_SENT_DREAM",
     "dynamic_line": "How very peculiar.  Rarely does a dream offer any meaningful omen.  I can offer you little advice, other than to be cautious when following strange visions.  A lesson some who study the things haunting this world learn the hard way.",
-    "responses": [
-      {
-        "text": "…",
-        "effect": { "u_add_effect": "hermit_earned_trust_1" },
-        "topic": "TALK_HERMIT"
-      }
-    ]
+    "responses": [ { "text": "…", "effect": { "u_add_effect": "hermit_earned_trust_1" }, "topic": "TALK_HERMIT" } ]
   },
   {
     "type": "talk_topic",
@@ -609,10 +603,7 @@
         "switch": true,
         "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
         "condition": { "and": [ { "npc_has_effect": "hermit_has_salt" }, { "u_has_items": { "item": "essence_blood", "count": 12 } } ] },
-        "effect": [
-          { "npc_add_effect": "hermit_has_blood_essence" },
-          { "u_consume_item": "essence_blood", "count": 12 }
-        ]
+        "effect": [ { "npc_add_effect": "hermit_has_blood_essence" }, { "u_consume_item": "essence_blood", "count": 12 } ]
       },
       {
         "text": "I don't have what is needed.  I'll be back later.",
@@ -718,13 +709,7 @@
       "yes": "I'm astounded that you've made it this far in your studies.  What am I going to do with you?  If this is the destined fate He has set us on, it seems I'll need to guide you through this.  Speak with me when you're ready, and I suppose I'll see what can be done.",
       "no": "He From Beyond The Veil, grant me strength …if strange fortune has set us on this path, then I suppose we must see it through.  Speak with me when you're ready, and I'll see what I can do."
     },
-    "responses": [
-      {
-        "text": "Sorry…",
-        "effect": { "u_add_effect": "hermit_quest_backdoor" },
-        "topic": "TALK_HERMIT"
-      }
-    ]
+    "responses": [ { "text": "Sorry…", "effect": { "u_add_effect": "hermit_quest_backdoor" }, "topic": "TALK_HERMIT" } ]
   },
   {
     "type": "talk_topic",
@@ -862,12 +847,7 @@
       },
       {
         "text": "I may have followed the same path as them, but I was not one of them.",
-        "condition": {
-          "and": [
-            { "not": { "u_has_trait": "PROF_SANGUINE" } },
-            { "u_has_trait": "THRESH_DRAGONBLOOD" }
-          ]
-        },
+        "condition": { "and": [ { "not": { "u_has_trait": "PROF_SANGUINE" } }, { "u_has_trait": "THRESH_DRAGONBLOOD" } ] },
         "topic": "TALK_HERMIT_DISCUSS_1_DRAGONBLOOD"
       },
       {
@@ -926,7 +906,11 @@
     "id": "TALK_HERMIT_DISCUSS_1_DESTROY",
     "dynamic_line": "What?  Please, you can't!  I know that this corruption is dangerous, and it will take great effort to fix it, but it can do so much good if it is restored… I can't allow that.",
     "responses": [
-      { "text": "Fine.  Tell me what I need to do to fix it.", "topic": "TALK_MISSION_LIST", "condition": { "not": "has_no_available_mission" } },
+      {
+        "text": "Fine.  Tell me what I need to do to fix it.",
+        "topic": "TALK_MISSION_LIST",
+        "condition": { "not": "has_no_available_mission" }
+      },
       { "text": "We shall see.", "topic": "TALK_HERMIT" },
       {
         "text": "[ATTACK] My duty demands it, this is far too dangerous to risk.  Try and stop me, old man.",
@@ -1485,10 +1469,7 @@
         "topic": "TALK_HERMIT_DISCUSS_4_DREAMS"
       },
       { "text": "What remains of the Keepers of The Oath?", "topic": "TALK_HERMIT_DISCUSS_4_KEEPERS" },
-      {
-        "text": "Why did the blood mages betray you, anyway?",
-        "topic": "TALK_HERMIT_DISCUSS_4_BETRAYAL"
-      },
+      { "text": "Why did the blood mages betray you, anyway?", "topic": "TALK_HERMIT_DISCUSS_4_BETRAYAL" },
       {
         "text": "Will sealing these portals really ensure humanity's survival?",
         "topic": "TALK_HERMIT_DISCUSS_4_SURVIVAL"
@@ -1724,10 +1705,7 @@
         "opinion": { "value": -1 },
         "topic": "TALK_HERMIT_BOOK_RELIGIOUS_HUNTER"
       },
-      {
-        "text": "I'm just a survivor, these days.",
-        "topic": "TALK_HERMIT_BOOK_RELIGIOUS_SURVIVOR"
-      },
+      { "text": "I'm just a survivor, these days.", "topic": "TALK_HERMIT_BOOK_RELIGIOUS_SURVIVOR" },
       { "text": "It's nothing.  Never mind.", "topic": "TALK_HERMIT" }
     ]
   },
@@ -1738,10 +1716,7 @@
     "responses": [
       {
         "text": "Very well then.  We shall see…",
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ],
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ],
         "topic": "TALK_HERMIT"
       }
     ]
@@ -1753,10 +1728,7 @@
     "responses": [
       {
         "text": "We'll see what comes of this, then.",
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ],
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ],
         "topic": "TALK_HERMIT"
       },
       {
@@ -1793,10 +1765,7 @@
     "responses": [
       {
         "text": "We shall see.",
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ],
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ],
         "topic": "TALK_HERMIT"
       }
     ]
@@ -1808,10 +1777,7 @@
     "responses": [
       {
         "text": "If you insist.  Tell me what you have to offer, and we'll see where to go from there.",
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ],
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ],
         "topic": "TALK_HERMIT"
       },
       {
@@ -1832,10 +1798,7 @@
     "responses": [
       {
         "text": "Very well then.  We shall see…",
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ],
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ],
         "topic": "TALK_HERMIT"
       }
     ]
@@ -1847,10 +1810,7 @@
     "responses": [
       {
         "text": "We'll see.",
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ],
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ],
         "topic": "TALK_HERMIT"
       }
     ]
@@ -1862,10 +1822,7 @@
     "responses": [
       {
         "text": "Very well then.",
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ],
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ],
         "topic": "TALK_HERMIT"
       }
     ]
@@ -1905,15 +1862,19 @@
         "opinion": { "trust": 1, "value": 1 },
         "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
         "topic": "TALK_HERMIT_BOOK_OUST",
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ]
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ]
       },
       {
         "text": "I have seen what the arcane can lead to.  Great things, but also great danger.",
         "condition": {
-          "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_ARCANIST", "PROF_ARCANIST2", "THRESH_DRAGONBLOOD" ]
+          "u_has_any_trait": [
+            "PROF_CLEANSINGFLAME",
+            "PROF_CLEANSINGFLAME2",
+            "PROF_SANGUINE",
+            "PROF_ARCANIST",
+            "PROF_ARCANIST2",
+            "THRESH_DRAGONBLOOD"
+          ]
         },
         "topic": "TALK_HERMIT_BOOK_REVEAL",
         "effect": { "u_add_effect": "hermit_earned_trust_1" }
@@ -1921,7 +1882,14 @@
       {
         "text": "Your aura is alight with hidden magic and concealed artifacts, I can see it through my mask.",
         "opinion": { "fear": 1, "value": 1 },
-        "condition": { "or": [ { "u_is_wearing": "somen_clairvoyance" }, { "u_is_wearing": "somen_clairvoyance_on" } ] },
+        "condition": {
+          "or": [
+            { "u_is_wearing": "somen_clairvoyance" },
+            { "u_is_wearing": "somen_clairvoyance_on" },
+            { "u_is_wearing": "somen_clairvoyance_xl" },
+            { "u_is_wearing": "somen_clairvoyance_xl_on" }
+          ]
+        },
         "topic": "TALK_HERMIT_MASK_REVEAL"
       },
       {
@@ -1994,10 +1962,7 @@
         "topic": "TALK_HERMIT_MASK_TRUST",
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "opinion": { "trust": 1, "value": 1 },
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ]
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ]
       },
       {
         "text": "[ATTACK] My purpose is to finish what my brethren started, and destroy threats to humanity.  For your worship of a monster from Beyond, and for the wounds in The Veil your order has inflicted, I sentence you to death.",
@@ -2010,10 +1975,7 @@
         "default": true,
         "text": "I'm not one of the mage hunters actually, but I've learned the usefulness of these items.",
         "topic": "TALK_HERMIT_MASK_NOT",
-        "effect": [
-          { "u_add_effect": "hermit_earned_trust_1" },
-          { "u_add_effect": "hermit_earned_trust_2" }
-        ]
+        "effect": [ { "u_add_effect": "hermit_earned_trust_1" }, { "u_add_effect": "hermit_earned_trust_2" } ]
       }
     ]
   },
