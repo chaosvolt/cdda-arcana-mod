@@ -571,7 +571,7 @@
     "max_aoe": 6,
     "min_duration": 750,
     "max_duration": 2000,
-    "damage_type": "fire"
+    "damage_type": "heat"
   },
   {
     "id": "arcana_item_hammerzeit_greater_attack_2",
@@ -602,7 +602,7 @@
     "max_damage": 40,
     "min_aoe": 6,
     "max_aoe": 6,
-    "damage_type": "fire"
+    "damage_type": "heat"
   },
   {
     "id": "arcana_item_immolate",

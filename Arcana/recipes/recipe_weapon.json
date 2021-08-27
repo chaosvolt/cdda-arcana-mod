@@ -69,6 +69,23 @@
   },
   {
     "type": "recipe",
+    "result": "lucern_hammer",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_WEAPON",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "3 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_hexenhammer", 6 ] ],
+    "using": [ [ "steel_standard", 3 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "components": [ [ [ "stick_long", 1 ] ], [ [ "fur", 2 ], [ "leather", 2 ] ] ],
+    "flags": [ "BLIND_EASY", "SECRET" ]
+  },
+  {
+    "type": "recipe",
     "result": "qiang",
     "id_suffix": "arcana",
     "category": "CC_ARCANA",
@@ -168,6 +185,27 @@
       [ [ "warhammer", 1 ] ],
       [ [ "arcana_holy_symbol_any", 1, "LIST" ], [ "arcana_holy_relic_any", 1, "LIST" ] ],
       [ [ "silver_small", 120 ] ],
+      [ [ "essence_dull", 20 ], [ "water_talisman", 1 ] ]
+    ]
+  },
+  {
+    "result": "lucern_hexenhammer",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_WEAPON",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "80 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_syncretism", 5 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
+    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
+    "components": [
+      [ [ "lucern_hammer", 1 ] ],
+      [ [ "arcana_holy_symbol_any", 1, "LIST" ], [ "arcana_holy_relic_any", 1, "LIST" ] ],
+      [ [ "silver_small", 150 ] ],
       [ [ "essence_dull", 20 ], [ "water_talisman", 1 ] ]
     ]
   },
