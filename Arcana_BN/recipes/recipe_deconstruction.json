@@ -1425,5 +1425,23 @@
     "time": "40 m",
     "tools": [ [ [ "blood_athame", -1 ] ] ],
     "components": [ [ [ "splinter", 6 ] ], [ [ "scrap", 1 ] ], [ [ "gold_small", 45 ] ], [ [ "essence_blood", 4 ] ] ]
+  },
+  {
+    "result": "ethereal_hand_crossbow",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [ [ [ "splinter", 3 ] ], [ [ "scrap", 4 ] ], [ [ "gold_small", 30 ] ], [ [ "essence_blood", 4 ] ] ]
+  },
+  {
+    "result": "ethereal_huge_crossbow",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [ [ [ "splinter", 24 ] ], [ [ "scrap", 20 ] ], [ [ "gold_small", 60 ] ], [ [ "essence_blood", 4 ] ] ]
   }
 ]
