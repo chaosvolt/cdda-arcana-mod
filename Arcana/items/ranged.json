@@ -167,7 +167,7 @@
     "clip_size": 20,
     "reload": 75,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
-    "flags": [ NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
+    "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
     "ammo_to_fire": 20,
     "valid_mod_locations": [
       [ "grip", 1 ],
