@@ -1,7 +1,7 @@
 [
   {
     "type": "mod_tileset",
-    "compatibility": [ "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
+    "compatibility": [ "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE", "MshockXottoplus" ],
     "tiles-new": [
       {
         "file": "mod_tileset/arcana_expan_dp_normal.png",
@@ -166,8 +166,8 @@
           { "id": "overlay_wielded_thunder_sigil", "fg": 93 },
           { "id": "bloodscourge", "fg": 94 },
           { "id": "overlay_wielded_bloodscourge", "fg": 95 },
-          { "id": "ethereal_crossbow", "fg": 96 },
-          { "id": "overlay_wielded_ethereal_crossbow", "fg": 97 },
+          { "id": [ "ethereal_crossbow", "ethereal_huge_crossbow" ], "fg": 96 },
+          { "id": [ "overlay_wielded_ethereal_crossbow", "overlay_wielded_ethereal_huge_crossbow" ], "fg": 97 },
           { "id": "hand_of_armok", "fg": 98 },
           { "id": "overlay_wielded_hand_of_armok", "fg": 99 },
           { "id": "scourge_staff", "fg": 100 },
@@ -186,8 +186,8 @@
           { "id": "overlay_worn_robe_shadow", "fg": 113 },
           { "id": "robe_shadow_on", "fg": 114 },
           { "id": "overlay_worn_robe_shadow_on", "fg": 115 },
-          { "id": "gauntlets_necro", "fg": 116 },
-          { "id": "overlay_worn_gauntlets_necro", "fg": 117 },
+          { "id": [ "gauntlets_necro", "gauntlets_necro_xl" ], "fg": 116 },
+          { "id": [ "overlay_worn_gauntlets_necro", "overlay_worn_gauntlets_necro_xl" ], "fg": 117 },
           { "id": "cyclopean_mirror", "fg": 118 },
           { "id": "overlay_worn_cyclopean_mirror", "fg": 119 },
           { "id": "overlay_female_worn_cyclopean_mirror_on", "fg": 120 },
@@ -414,7 +414,15 @@
               "tr_arcana_item_lichhook"
             ],
             "fg": 226
-          }
+          },
+          { "id": "somen_clairvoyanc_xl", "fg": 227 },
+          { "id": "overlay_worn_somen_clairvoyance_xl", "fg": 228 },
+          { "id": "overlay_worn_somen_clairvoyance_xl_on", "fg": 229 },
+          { "id": [ "robe_shadow_xl", "robe_shadow_xl_on" ], "fg": 230 },
+          { "id": "overlay_worn_robe_shadow_xl", "fg": 231 },
+          { "id": "overlay_worn_robe_shadow_xl_on", "fg": 232 },
+          { "id": "ethereal_hand_crossbow", "fg": 233 },
+          { "id": "overlay_wielded_ethereal_hand_crossbow", "fg": 234 }
         ],
         "sprite_width": 32,
         "sprite_height": 32
