@@ -300,7 +300,16 @@
     "description": "You have embraced modern technology and mystical power alike, in your pursuit of knowledge and a way to prevent the cataclysm.  Once of the Cleansing Flame, whether you went rogue or still honor their ideals, that no longer matters anymore.",
     "spells": [ { "id": "arcana_magic_capacitance", "level": 1 } ],
     "points": 8,
-    "CBMs": [ "bio_lockpick", "bio_fingerhack", "bio_ups", "bio_flashlight", "bio_tools", "bio_batteries", "bio_watch", "bio_power_storage_mkII" ],
+    "CBMs": [
+      "bio_lockpick",
+      "bio_fingerhack",
+      "bio_ups",
+      "bio_flashlight",
+      "bio_tools",
+      "bio_batteries",
+      "bio_watch",
+      "bio_power_storage_mkII"
+    ],
     "skills": [
       { "level": 4, "name": "magic" },
       { "level": 3, "name": "cooking" },
@@ -347,8 +356,21 @@
     "name": "Arcane Operator",
     "description": "Your mission was simple, assure the arcane stayed hidden from everyday life. You were augmented, trained and armed to find arcane artifacts, prevent their missuse and silence anyone who would threatened your mission.  Once of the Cleansing Flame, whether you went rogue or still honor their ideals, you went your own path seeking the tools to aid in your path. You found them and now you must use them to survive.",
     "spells": [ { "id": "arcana_magic_capacitance", "level": 1 } ],
-	"points": 12,
-    "CBMs": [ "bio_targeting", "bio_cqb", "bio_shotgun", "bio_blade", "bio_shock", "bio_carbon", "bio_adrenaline", "bio_night_vision", "bio_lockpick", "bio_fingerhack", "bio_ups", "bio_metabolics", "bio_power_storage_mkII"
+    "points": 12,
+    "CBMs": [
+      "bio_targeting",
+      "bio_cqb",
+      "bio_shotgun",
+      "bio_blade",
+      "bio_shock",
+      "bio_carbon",
+      "bio_adrenaline",
+      "bio_night_vision",
+      "bio_lockpick",
+      "bio_fingerhack",
+      "bio_ups",
+      "bio_metabolics",
+      "bio_power_storage_mkII"
     ],
     "skills": [
       { "level": 4, "name": "magic" },
@@ -364,7 +386,7 @@
     ],
     "items": {
       "both": {
-        "items": [ 
+        "items": [
           "knit_scarf",
           "longshirt",
           "gloves_fingerless",
