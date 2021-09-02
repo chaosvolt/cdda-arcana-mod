@@ -800,7 +800,7 @@
     "type": "SPELL",
     "id": "arcana_aftermath_eclipse_darkness",
     "name": { "str": "Eclipse Darkness" },
-    "description": "Up to 3 hours of darkness.",
+    "description": "Up to 7 and a half hours of darkness.",
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "timed_event",
