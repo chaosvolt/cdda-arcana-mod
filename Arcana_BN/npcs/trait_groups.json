@@ -23,7 +23,6 @@
       { "group": "trait_group_ANIMALEMPATH", "prob": 10 },
       { "group": "trait_group_FLEET", "prob": 15 },
       { "group": "trait_group_GOODHEARING", "prob": 10 },
-      { "group": "trait_group_GOODMEMORY", "prob": 10 },
       { "group": "trait_group_WAKEFUL", "prob": 10 },
       { "group": "trait_group_OPTIMISTIC", "prob": 10 },
       { "group": "trait_group_MARTIAL_ARTS", "prob": 20 },
@@ -43,8 +42,7 @@
       { "trait": "HEAVYSLEEPER", "prob": 10 },
       { "trait": "LACTOSE", "prob": 10 },
       { "trait": "VEGETARIAN", "prob": 15 },
-      { "trait": "MOODSWINGS", "prob": 10 },
-      { "trait": "TRIGGERHAPPY", "prob": 15 }
+      { "trait": "MOODSWINGS", "prob": 10 }
     ]
   },
   {
