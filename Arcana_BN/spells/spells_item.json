@@ -11,7 +11,7 @@
       { "id": "arcana_item_athame_sanguine_art_corruption", "hit_self": true },
       { "id": "arcana_item_generate_blood_essence", "hit_self": true }
     ],
-    "affected_body_parts": [ "TORSO" ],
+    "affected_body_parts": [ "torso" ],
     "effect_str": "bleed",
     "effect": "target_attack",
     "base_casting_time": 60000,
@@ -80,7 +80,7 @@
       { "id": "arcana_item_generate_blood_essence", "hit_self": true },
       { "id": "arcana_item_generate_blood_essence", "hit_self": true }
     ],
-    "affected_body_parts": [ "TORSO" ],
+    "affected_body_parts": [ "torso" ],
     "effect": "target_attack",
     "min_damage": 8,
     "max_damage": 10,

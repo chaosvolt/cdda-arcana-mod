@@ -212,7 +212,7 @@
     "symbol": "[",
     "looks_like": "leather_pouch",
     "color": "light_red",
-    "covers": [ "TORSO" ],
+    "covers": [ "torso" ],
     "coverage": 15,
     "encumbrance": 15,
     "storage": 250,
