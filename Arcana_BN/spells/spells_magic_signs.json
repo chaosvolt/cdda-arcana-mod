@@ -444,9 +444,9 @@
       { "id": "arcana_aftermath_healing_side_effects", "max_level": 10 },
       { "id": "arcana_aftermath_magic_sign_exertion_5", "hit_self": true, "max_level": 10 }
     ],
-    "min_damage": -8,
-    "max_damage": -24,
-    "damage_increment": -1.6,
+    "min_damage": -5,
+    "max_damage": -32,
+    "damage_increment": -2.7,
     "max_level": 10,
     "min_range": 1,
     "max_range": 10,
