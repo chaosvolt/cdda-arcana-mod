@@ -5,8 +5,23 @@
     "fail_message": "Life fails to take hold in this place.",
     "terrain": [
       {
-        "result": [ [ "t_grass_tall", 50 ], [ "t_underbrush", 24 ], [ "t_marloss", 1 ], [ "t_tree_birch", 20 ], [ "t_tree_cherry", 5 ] ],
-        "valid_flags": [ "DIGGABLE" ],
+        "result": [
+          [ "t_grass", 20 ],
+          [ "t_grass_long", 10 ],
+          [ "t_grass_tall", 5 ],
+          [ "t_underbrush", 10 ],
+          [ "t_shrub_rose", 5 ],
+          [ "t_marloss", 1 ],
+          [ "t_shrub", 4 ],
+          [ "t_tree_young", 10 ],
+          [ "t_tree", 10 ],
+          [ "t_tree_pine", 5 ],
+          [ "t_tree_blackjack", 5 ],
+          [ "t_tree_willow", 5 ],
+          [ "t_tree_birch", 5 ],
+          [ "t_tree_cherry", 5 ]
+        ],
+        "valid_flags": [ "DIGGABLE", "TREE", "YOUNG", "FUNGUS", "SHRUB" ],
         "message": "Plant life grows wild over the ground."
       },
       {
@@ -14,7 +29,8 @@
         "valid_flags": [ "ROAD" ],
         "message": "The ground shifts and crumbles, grass growing from the cracks."
       }
-    ]
+    ],
+    "furniture": [ { "result": "f_null", "valid_flags": [ "MOUNTABLE", "BLOCK_WIND", "ORGANIC", "FUNGUS" ] } ]
   },
   {
     "type": "ter_furn_transform",
@@ -239,6 +255,7 @@
         "valid_terrain": [
           "t_floor_resin",
           "t_platform_resin",
+          "t_resin_roof",
           "t_resin_hole_c",
           "t_resin_hole_o",
           "t_resin_hole",
@@ -257,7 +274,6 @@
           "t_slime"
         ]
       },
-      { "result": "t_open_air", "valid_terrain": [ "t_resin_roof" ] },
       { "result": "t_rock_floor_no_roof", "valid_flags": [ "FUNGUS" ] }
     ],
     "furniture": [
@@ -273,6 +289,7 @@
           "f_alien_scar",
           "f_alien_pod",
           "f_alien_pod_organ",
+          "f_alien_pod_resin",
           "f_alien_table",
           "f_mutpoppy",
           "f_egg_sackbw",
@@ -289,23 +306,22 @@
     "fail_message": "The earth remains still.",
     "terrain": [
       {
-        "result": [ [ "t_dirt", 50 ], [ "t_dirtmound", 50 ], [ "t_pit_shallow", 1 ] ],
+        "result": [
+          [ "t_dirt", 15 ],
+          [ "t_rock_floor_no_roof", 10 ],
+          [ "t_pit_shallow", 15 ],
+          [ "t_dirtmound", 10 ],
+          [ "t_railroad_rubble", 10 ],
+          [ "t_clay", 10 ],
+          [ "t_sand", 5 ],
+          [ "t_drystone_wall_half", 15 ],
+          [ "t_drystone_wall", 10 ]
+        ],
         "valid_flags": [ "DIGGABLE", "FLAT" ],
         "message": "The ground shifts."
       }
     ],
-    "furniture": [
-      {
-        "result": [
-          [ "f_null", 50 ],
-          [ "f_rubble_rock", 20 ],
-          [ "f_boulder_small", 20 ],
-          [ "f_boulder_medium", 5 ],
-          [ "f_boulder_large", 5 ]
-        ],
-        "valid_furniture": [ "f_null" ]
-      }
-    ]
+    "furniture": [ { "result": "f_null", "valid_flags": [ "MOUNTABLE", "BLOCK_WIND" ] } ]
   },
   {
     "type": "mapgen",
