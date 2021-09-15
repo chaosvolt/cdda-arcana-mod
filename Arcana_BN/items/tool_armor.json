@@ -526,6 +526,18 @@
     "environmental_protection": 1,
     "max_charges": 120,
     "ammo": "essence_dull_type",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ACTIVE",
+          "values": [
+            { "value": "ARMOR_HEAT", "multiply": -1.0 },
+            { "value": "ARMOR_STAB", "multiply": -1.0 }
+          ]
+        }
+      ]
+    },
     "use_action": [
       {
         "target": "hauberk_jade_on",
