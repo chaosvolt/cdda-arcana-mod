@@ -1975,6 +1975,17 @@
     "looks_like": "stormbringer",
     "repairs_like": "stormbringer",
     "color": "dark_gray",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ACTIVE",
+          "mutations": [ "ARCANA_BERSERK_EFFECT" ],
+          "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
+          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ]
+        }
+      ]
+    },
     "artifact_data": { "effects_wielded": [ "AEP_EVIL" ] },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
     "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD" ]
