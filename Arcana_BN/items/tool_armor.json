@@ -531,10 +531,7 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "values": [
-            { "value": "ARMOR_HEAT", "multiply": -1.0 },
-            { "value": "ARMOR_STAB", "multiply": -1.0 }
-          ]
+          "values": [ { "value": "ARMOR_HEAT", "multiply": -1.0 }, { "value": "ARMOR_STAB", "multiply": -1.0 } ]
         }
       ]
     },
@@ -602,24 +599,21 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "values": [
-            { "value": "ARMOR_HEAT", "multiply": -1.0 }
-          ],
+          "values": [ { "value": "ARMOR_HEAT", "multiply": -1.0 } ],
           "ench_effects": [ { "effect": "heat_ward_true", "intensity": 1 } ]
         }
       ]
     },
-    "use_action": 
-      {
-        "target": "jade_wreath_on",
-        "msg": "The carvings in the stone glow red for a brief moment, and a chill passes through your spine.",
-        "active": true,
-        "need_worn": true,
-        "need_charges": 1,
-        "need_charges_msg": "Fuel the wreath with essence of blood.",
-        "menu_text": "Activate ward against flame",
-        "type": "transform"
-      },
+    "use_action": {
+      "target": "jade_wreath_on",
+      "msg": "The carvings in the stone glow red for a brief moment, and a chill passes through your spine.",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "Fuel the wreath with essence of blood.",
+      "menu_text": "Activate ward against flame",
+      "type": "transform"
+    },
     "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS" ]
   },
   {
@@ -650,25 +644,18 @@
     "color": "light_gray",
     "max_charges": 60,
     "ammo": "essence_dull_type",
-    "use_action": 
-      {
-        "target": "meteoric_talisman_on",
-        "msg": "As you activate the talisman, you feel insulated in a strange manner.",
-        "active": true,
-        "need_worn": true,
-        "need_charges": 1,
-        "need_charges_msg": "The talisman requires dull essence.",
-        "menu_text": "Activate lightning ward",
-        "type": "transform"
-      },
+    "use_action": {
+      "target": "meteoric_talisman_on",
+      "msg": "As you activate the talisman, you feel insulated in a strange manner.",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "The talisman requires dull essence.",
+      "menu_text": "Activate lightning ward",
+      "type": "transform"
+    },
     "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ACTIVE",
-          "ench_effects": [ { "effect": "lightning_ward_true", "intensity": 1 } ]
-        }
-      ]
+      "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "lightning_ward_true", "intensity": 1 } ] } ]
     },
     "flags": [ "FANCY", "NO_SALVAGE" ]
   },
@@ -681,7 +668,11 @@
     "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  It is currently activate, insulating you against electrical attacks.",
     "turns_per_charge": 10,
     "revert_to": "meteoric_talisman",
-    "use_action": { "target": "meteoric_talisman", "msg": "The insulated feeling fades as the talisman deactivates.", "type": "transform" },
+    "use_action": {
+      "target": "meteoric_talisman",
+      "msg": "The insulated feeling fades as the talisman deactivates.",
+      "type": "transform"
+    },
     "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF" ] }
   },
   {
@@ -699,25 +690,18 @@
     "max_charges": 9,
     "ammo": "essence_type",
     "artifact_data": { "effects_worn": [ "AEP_PSYSHIELD" ] },
-    "use_action": 
-      {
-        "target": "cleric_ring_on",
-        "msg": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
-        "active": true,
-        "need_worn": true,
-        "need_charges": 1,
-        "need_charges_msg": "Provide essence, and the fallen angel shall spread its wings.",
-        "menu_text": "Activate holy ward",
-        "type": "transform"
-      },
+    "use_action": {
+      "target": "cleric_ring_on",
+      "msg": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "Provide essence, and the fallen angel shall spread its wings.",
+      "menu_text": "Activate holy ward",
+      "type": "transform"
+    },
     "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ACTIVE",
-          "ench_effects": [ { "effect": "cleric_warding_true", "intensity": 1 } ]
-        }
-      ]
+      "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "cleric_warding_true", "intensity": 1 } ] } ]
     },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
