@@ -313,7 +313,7 @@
     "copy-from": "spear_steel",
     "category": "weapons",
     "name": { "str": "spear of pestilence", "str_pl": "spears of pestilence" },
-    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will temporarily summon mutant vermin to aid you, and wielding it makes movement easier.  It can also be used to place a rune that will summon said vermin when something steps on it.",
+    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will blast nearby enemies with frost and temporarily summon mutant vermin to aid you, while wielding it makes movement easier.  It can also be used to place a rune focused purely on summoning vermin when something steps on it.",
     "price": "1200 USD",
     "price_postapoc": "35 USD",
     "material": [ "steel", "wood", "chitin" ],
