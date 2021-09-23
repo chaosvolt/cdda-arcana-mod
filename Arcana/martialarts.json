@@ -64,7 +64,16 @@
     "type": "martial_art",
     "name": { "str": "Ninjutsu" },
     "extend": {
-      "weapons": [ "sun_sword", "sun_sword_on", "blood_athame", "lichhook", "moonstone_fang", "bloodscourge", "scourge_staff" ]
+      "weapons": [
+        "hand_of_armok",
+        "sun_sword",
+        "sun_sword_on",
+        "blood_athame",
+        "lichhook",
+        "moonstone_fang",
+        "bloodscourge",
+        "scourge_staff"
+      ]
     }
   },
   {
