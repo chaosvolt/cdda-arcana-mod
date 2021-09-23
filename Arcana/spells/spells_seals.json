@@ -1,6 +1,6 @@
 [
   {
-    "id": "arcana_magic_agility",
+    "id": "arcana_seal_agility",
     "//": "Magic Seals are comparable to their related Magic Signs cast at level 5, with no stamina cost or spellcasting exertion.  They always use the maximum casting time, and any damage or duration is randomly between its level-5 value and the spell's max.",
     "type": "SPELL",
     "name": { "str": "Seal: Agility" },
@@ -22,7 +22,7 @@
     "max_duration": 144000
   },
   {
-    "id": "arcana_magic_clairvoyance",
+    "id": "arcana_seal_clairvoyance",
     "type": "SPELL",
     "name": { "str": "Seal: Clairvoyance" },
     "description": "Magic Seal\nUsing this spell will gift you with clairvoyance, granting sight beyond sight.",
@@ -40,7 +40,7 @@
     "max_duration": 216000
   },
   {
-    "id": "arcana_magic_clarity_blood",
+    "id": "arcana_seal_clarity_blood",
     "type": "SPELL",
     "name": { "str": "Seal: Clarity of Blood" },
     "description": "Magic Seal\nUsing this spell will grant protection against parasites and the Mycus.  It can be used on yourself or an ally.",
@@ -61,7 +61,7 @@
     "max_duration": 72000
   },
   {
-    "id": "arcana_magic_confuse_monster",
+    "id": "arcana_seal_confuse_monster",
     "type": "SPELL",
     "name": { "str": "Seal: Confuse Monster" },
     "description": "Magic Seal\nUsing this spell will stun all hostiles in the area around you.",
@@ -83,7 +83,7 @@
     "max_duration": 5400
   },
   {
-    "id": "arcana_magic_conjure_acid",
+    "id": "arcana_seal_conjure_acid",
     "type": "SPELL",
     "name": { "str": "Seal: Conjure Acid" },
     "description": "Magic Seal\nUsing this spell will conjure a splash of acid at the point targeted, and strike the very center for double damage.  Potentially dangerous to allies as well.",
@@ -121,7 +121,7 @@
     "field_intensity_variance": 0.5
   },
   {
-    "id": "arcana_magic_free_action",
+    "id": "arcana_seal_free_action",
     "type": "SPELL",
     "name": { "str": "Seal: Free Action" },
     "description": "Magic Seal\nUsing this spell will grant protection against paralytic effects, grabs, and other hindrances, along with freezing time briefly to allow an escape.  It can be used on yourself or an ally.",
@@ -143,7 +143,7 @@
     "max_duration": 108000
   },
   {
-    "id": "arcana_magic_healing",
+    "id": "arcana_seal_healing",
     "type": "SPELL",
     "name": { "str": "Seal: Healing" },
     "description": "Magic Seal\nUsing this spell will staunch bleeding and mend wounds.  It can be used on yourself or an ally.",
@@ -166,7 +166,7 @@
     "max_duration": 100
   },
   {
-    "id": "arcana_magic_heat_ward",
+    "id": "arcana_seal_heat_ward",
     "type": "SPELL",
     "name": { "str": "Seal: Heat Ward" },
     "description": "Magic Seal\nUsing this spell will grant temporary resistance to heat and smoke.  Direct contact with flame will still cause harm, however.  It can be used on yourself or an ally.",
@@ -187,7 +187,7 @@
     "max_duration": 90000
   },
   {
-    "id": "arcana_magic_insight",
+    "id": "arcana_seal_insight",
     "type": "SPELL",
     "name": { "str": "Seal: Insight" },
     "description": "Magic Seal\nUsing this spell will grant a temporary boost to perception.  It can be used on yourself or an ally.",
@@ -208,7 +208,7 @@
     "max_duration": 108000
   },
   {
-    "id": "arcana_magic_lightning_ward",
+    "id": "arcana_seal_lightning_ward",
     "type": "SPELL",
     "name": { "str": "Seal: Lightning Ward" },
     "description": "Magic Seal\nUsing this spell will grant a blessing that completely protects against lightning, at the expense of slowing you down a bit.  It can be cast on yourself or an ally.",
@@ -229,7 +229,7 @@
     "max_duration": 72000
   },
   {
-    "id": "arcana_magic_might",
+    "id": "arcana_seal_might",
     "type": "SPELL",
     "name": { "str": "Seal: Might" },
     "description": "Magic Seal\nUsing this spell will grant a temporary boost to strength.  It can be used on yourself or an ally.",
@@ -250,7 +250,7 @@
     "max_duration": 180000
   },
   {
-    "id": "arcana_magic_overgrowth",
+    "id": "arcana_seal_overgrowth",
     "type": "SPELL",
     "name": { "str": "Seal: Overgrowth" },
     "description": "Magic Seal\nUsing this spell will conjure an eruption of the living forest, at the location you target.  It will destroy most furniture in the affected area and disrupt terrain.",
@@ -274,7 +274,7 @@
     "final_casting_time": 80
   },
   {
-    "id": "arcana_magic_serpentine_shield",
+    "id": "arcana_seal_serpentine_shield",
     "//": "ID retained to avoid breaking saves.",
     "type": "SPELL",
     "name": { "str": "Seal: Shadowy Shield" },
@@ -293,7 +293,7 @@
     "max_duration": 108000
   },
   {
-    "id": "arcana_magic_shockstorm",
+    "id": "arcana_seal_shockstorm",
     "type": "SPELL",
     "name": { "str": "Seal: Shockstorm" },
     "description": "Magic Seal\nUsing this spell will call forth lightning all around you, harming anyone close enough.  Beware using it around allies.",
@@ -331,7 +331,7 @@
     "field_intensity_variance": 0.5
   },
   {
-    "id": "arcana_magic_ward_against_evil",
+    "id": "arcana_seal_ward_against_evil",
     "type": "SPELL",
     "name": { "str": "Seal: Ward Against Evil" },
     "description": "Magic Seal\nUsing this spell will grant a blessing that protects against certain anomalous threats.  It can be used on yourself or an ally.",
