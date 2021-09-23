@@ -114,12 +114,7 @@
     "goal_condition": { "u_has_item": "veilblade" },
     "difficulty": 5,
     "value": 250000,
-    "end": {
-      "effect": [
-        { "npc_add_effect": "hermit_stage_2" },
-        { "u_add_effect": "hermit_stage_2" }
-      ]
-    },
+    "end": { "effect": [ { "npc_add_effect": "hermit_stage_2" }, { "u_add_effect": "hermit_stage_2" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_HERMIT_AWAKEN_POWER",
     "dialogue": {
@@ -236,9 +231,7 @@
       "success_lie": "What are you trying to pull?",
       "failure": "How in God's name did you fail at this?"
     },
-    "end": {
-      "effect": [ { "npc_add_effect": "rural_church_aware" }, { "u_buy_item": "FMCNote", "count": 5 } ]
-    }
+    "end": { "effect": [ { "npc_add_effect": "rural_church_aware" }, { "u_buy_item": "FMCNote", "count": 5 } ] }
   },
   {
     "id": "MISSION_CF_REP_1",
@@ -498,7 +491,7 @@
     "item": "arcana_radio_relay_beacon",
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
-      "assign_mission_target": { "om_terrain": "station_radio_1", "reveal_radius": 3, "cant_see": true },
+      "assign_mission_target": { "om_terrain": "station_radio_1", "reveal_radius": 3 },
       "update_mapgen": [
         { "mapgen_update_id": "arcana_radio_station" },
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_9_a" },
@@ -667,7 +660,7 @@
     "has_generic_rewards": false,
     "start": {
       "effect": [ { "u_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" } ],
-      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 3, "random": true, "cant_see": true, "search_range": 50, "min_distance": 20 },
+      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 3, "random": true, "search_range": 50, "min_distance": 20 },
       "update_mapgen": {
         "set": [
           { "square": "terrain", "id": "t_region_groundcover_forest", "x": 4, "x2": 19, "y": 4, "y2": 19 },
@@ -750,7 +743,6 @@
         "om_terrain_replace": "field",
         "reveal_radius": 5,
         "random": true,
-        "cant_see": true,
         "search_range": 90,
         "min_distance": 20
       },
@@ -891,7 +883,6 @@
         "om_terrain_replace": "field",
         "reveal_radius": 3,
         "random": true,
-        "cant_see": true,
         "search_range": 90,
         "min_distance": 10
       }
@@ -926,14 +917,7 @@
     "has_generic_rewards": false,
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
-      "assign_mission_target": {
-        "om_terrain": "new_anomaly_w",
-        "om_terrain_replace": "field",
-        "random": true,
-        "cant_see": true,
-        "search_range": 60,
-        "min_distance": 10
-      },
+      "assign_mission_target": { "om_terrain": "new_anomaly_w", "om_terrain_replace": "field", "random": true, "search_range": 60, "min_distance": 10 },
       "update_mapgen": [
         {
           "om_terrain": "new_anomaly_w",
