@@ -51,7 +51,7 @@
     "id": "rare_martial_arts_books",
     "type": "item_group",
     "subtype": "distribution",
-    "entries": [ { "item": "manual_cleansingflame", "prob": 1 } ]
+    "entries": [ { "item": "manual_cleansingflame", "prob": 1 }, { "item": "manual_shrike", "prob": 1 } ]
   },
   {
     "id": "SUS_chemistry_bookcase",
