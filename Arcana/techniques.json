@@ -79,6 +79,53 @@
   },
   {
     "type": "technique",
+    "id": "tec_shrike_crit",
+    "name": "Harrying Blow",
+    "messages": [ "You stagger %s with your strike", "<npcname> staggers %s with their strike" ],
+    "skill_requirements": [ { "name": "melee", "level": 3 } ],
+    "melee_allowed": true,
+    "unarmed_allowed": true,
+    "unarmed_weapons_allowed": false,
+    "req_buffs": [ "buff_shrike_onattack1" ],
+    "crit_tec": true,
+    "stun_dur": 2
+  },
+  {
+    "type": "technique",
+    "id": "tec_shrike_counter",
+    "name": "Deflection",
+    "messages": [ "You deflect the strike and send %s to the ground with their momentum", "<npcname> blocks and floors %s" ],
+    "skill_requirements": [ { "name": "melee", "level": 5 } ],
+    "melee_allowed": true,
+    "block_counter": true,
+    "unarmed_allowed": true,
+    "unarmed_weapons_allowed": false,
+    "crit_ok": true,
+    "down_dur": 2,
+    "stun_dur": 2,
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_shrike_finisher",
+    "name": "Sundering Talons",
+    "messages": [ "You lash out at %s with a vicious strike", "<npcname> lashes out at %s with a vicious strike" ],
+    "skill_requirements": [ { "name": "melee", "level": 5 }, { "name": "magic", "level": 4 } ],
+    "melee_allowed": true,
+    "unarmed_allowed": true,
+    "unarmed_weapons_allowed": false,
+    "req_buffs": [ "buff_shrike_oncrit" ],
+    "stunned_target": true,
+    "crit_ok": true,
+    "weighting": 3,
+    "flat_bonuses": [
+      { "stat": "arpen", "type": "cut", "scaling-stat": "dex", "scale": 1.0 },
+      { "stat": "arpen", "type": "stab", "scaling-stat": "dex", "scale": 1.0 }
+    ],
+    "mult_bonuses": [ { "stat": "damage", "type": "cut", "scale": 1.5 }, { "stat": "damage", "type": "stab", "scale": 1.5 } ]
+  },
+  {
+    "type": "technique",
     "id": "tec_weapon_incorruptible_slash",
     "name": "Flame Strike",
     "unarmed_allowed": true,
