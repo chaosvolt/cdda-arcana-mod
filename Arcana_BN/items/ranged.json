@@ -41,7 +41,7 @@
       ]
     },
     "ammo_effects": [ "LIGHTNING", "LIGHTNING_JUDGMENT" ],
-    "flags": [ "STAB", "DURABLE_MELEE", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
+    "flags": [ "STAB", "UNARMED_WEAPON", "DURABLE_MELEE", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
     "use_action": "MEDITATE"
   },
   {
@@ -152,11 +152,7 @@
     "reload": 3,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
     "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
-    "valid_mod_locations": [
-      [ "grip", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ]
-    ]
+    "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ] ]
   },
   {
     "id": "ethereal_huge_crossbow",
