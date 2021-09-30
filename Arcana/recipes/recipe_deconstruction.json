@@ -284,16 +284,6 @@
     "components": [ [ [ "silver_small", 6 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
-    "result": "alien_pod_resin",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "40 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "resin_chunk", 80 ] ], [ [ "essence_dull", 30 ] ] ]
-  },
-  {
     "result": "cyborg_matrix",
     "type": "uncraft",
     "skill_used": "magic",

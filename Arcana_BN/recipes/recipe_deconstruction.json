@@ -257,15 +257,6 @@
     "components": [ [ [ "silver_small", 6 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
-    "result": "alien_pod_resin",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "40 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "resin_chunk", 80 ] ], [ [ "essence_dull", 30 ] ] ]
-  },
-  {
     "result": "flame_talisman",
     "type": "uncraft",
     "skill_used": "magic",
