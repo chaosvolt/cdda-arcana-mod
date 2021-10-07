@@ -382,7 +382,7 @@
     "reversible": true,
     "using": [ [ "shot_forming", 1 ], [ "ammo_shot", 1 ] ],
     "components": [
-      [ [ "gunpowder", 6 ], [ "gunpowder_pistol", 6 ], [ "gunpowder_shotgun", 6 ] ],
+      [ [ "gunpowder", 6 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
       [ [ "essence_dull", 5 ] ]
     ]
@@ -428,7 +428,7 @@
     ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
     "components": [
-      [ [ "gunpowder", 16 ], [ "chem_black_powder", 24 ] ],
+      [ [ "gunpowder", 16 ], [ "chem_black_powder", 24 ], [ "chem_match_head_powder", 24 ] ],
       [ [ "silver_small", 16 ], [ "platinum_small", 10 ] ],
       [ [ "essence_dull", 8 ] ],
       [ [ "paper", 1 ], [ "aluminum_foil", 1 ] ]
