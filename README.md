@@ -44,7 +44,7 @@ The second scenario added, allowing players another method of getting into the a
 
 * The *Sanguine Shrike* is a leftover member of the __Sanguine Order__, serving a different role compared to the *Blood Mage* from Seeker of The Arcane.
 
-* The *Arcane Purifier* represents a splinter faction among the __Cleansing Flame__, combining technology and a few basic arcane tools of the trade.
+* The *Arcane Purifier* and *Arcane Operative* represent the urban contacts and splinter factions among the __Cleansing Flame__, combining technology and a few basic arcane tools of the trade.
 
 
 ## Item Dismantling
@@ -67,7 +67,7 @@ In addition, though the *Keepers of The Oath* had been driven nearly to extincti
 
 ## Books
 ##### Apprentice's Notes
-* Entry-level 0-to-1 skillbook. Implied to discuss magical concepts using religious metaphors. Can additionally be used to get an earlier grasp on the few recipes that are autolearned.
+* Entry-level 0-to-2 skillbook. Implied to discuss magical concepts using religious metaphors. Can additionally be used to get an earlier grasp on the few recipes that are autolearned.
 
 ##### History of Alchemy
 * For crafting potions, and for getting from levels 0 to 3. A madman's interpretation of old alchemical texts, with results that would be profoundly useless without magical essence. You get a cookie if you notice the references to historical alchemical concepts, hidden underneath the stranger things the recipes involve.
@@ -76,13 +76,13 @@ In addition, though the *Keepers of The Oath* had been driven nearly to extincti
 * Levels 2-5, requires a decent intellect to understand. Used to craft disposable magic scrolls. Conceals magic lessons behind myths concerning a pantheon of otherworldly gods.
 
 ##### Sanguine Codex
-* Blood magic, for levels 3-6. Allows crafting the silver athame, and producing blood essence. Second option is for extracting blood essence from a used chalice.
+* Blood magic, for levels 2-7. Allows crafting the silver athame, and producing blood essence, and making the various items used the __Sanguine Order__.
 
 ##### The Cleansing Flame 
-* Levels 4-7. Religious book, written by an order of witch-hunters, it allows crafting a select number of sanctioned items fueled by dull essence.
+* Levels 3-8. Religious book, written by an order of witch-hunters, it allows crafting a select number of sanctioned items fueled by dull essence.
 
 ##### Oaths to the Chalice 
-* Also a religious book, skill levels 5-8. Allows crafting the offering chalice, recipes for sacrificing items to obtain essence, and magic items related to __The Keepers of The Oath__. Also needed to extract blood essence from a used chalice.
+* Also a religious book, skill levels 4-9. Allows crafting the offering chalice, recipes for sacrificing items to obtain essence, and magic items related to __The Keepers of The Oath__. Also needed to extract blood essence from a used chalice.
 
 ##### To Master the Unknown 
 * Levels 6-10. A book for summoning your very own pet monstrosities.
@@ -90,11 +90,30 @@ In addition, though the *Keepers of The Oath* had been driven nearly to extincti
 ##### A Story in Shadow 
 * Levels 4-9. Relatively rare book that combines some of the concepts from the three major factions. Translation: a few magic items with an assortment of useful effects.
 
+##### Lab Journal-Quinn
+* Levels 5-8. The end result of rare research combining cutting-edge science with a glimpse of the unknown and anomalous, providing acess to many recipes involving magitech.
+
 ##### Strange Map 
 * Technically not a book but instead a mapping item, revealing most anomalous locations.
 
 ##### The Path of Sword And Hammer
 * A rare book, rather than teaching magic it instead teaches a martial art, combining understanding of the arcane with cold steel.
+
+##### The Path of Scourging Claws
+* Another, alternative martial art that directs arcane knowledge to enhance claws and bladed weapons.
+
+##### Z-07 Engraved Plate
+* Technically a book, a late-game one tied to a mission at that. If you do make it that far along, it may prove useful.
+
+## Spellcasting
+
+One might happen to find scrolls of various sorts, or see hints of their recipes as your learn more about the arcane. If one hunts down monsters of otherworldly sort, you'll find various parts torn from their bodies, at first glance just exotic keepsakes to carve into morbid trophies. But with the right knowledge, each fragment carries anomalous properties associated with the __Beyond__ that can be exploited. At first just a single-use surge of power, later those tokens of power can be used to create *pattern scrolls.*
+
+Activating these scrolls will grant the user the ability to cast the spell associated with the monsterpart used to make it. Such spells are reasonably potent at low level, designed so that it's properly feasible to level them up via casting, and putting in the effort will be well-rewarded. Very few of them are traditional offensive spells, instead most are tools, focused towards surmounting a specific obstacle or filling a certain niche. These fatigue body and mind rather than consuming mana, expending a burst of stamina at first, with a prolonged exertion wearing down fatigue to discourage overuse.
+
+Some of these pattern scrolls can even be found, though rarely and only in places where arcanists once practiced. Arcana favors craftable sources of spells, rewarding effort and risk rather than simply happening upon a spellbook via good RNG. Some of these pattern scrolls are even crafted in a more unusual manner, via taking a different type of scroll that serves a different purpose, and altering the magic it represents into something new, unknown until after the Cataclysm.
+
+Later in the game, a well-prepared player can explore two competing paths can lead to entirely different forms of magic to learn. By restoring a lost relic, one can earn a varied skillset of powerful spells that properly draw on mana, geared towards surviving and furthering the goals of their new benefactor. Alternatively, one can complete a half-finished transhumanist experiment, gaining powerful mutations and learning spells that cast from HP, each of which is geared towards the combat-oriented role their mutations will nudge them towards.
 
 ## Tools of The Trade
 
@@ -124,7 +143,7 @@ In addition, though the *Keepers of The Oath* had been driven nearly to extincti
 ##### Oaths to The Chalice 
 * Focuses on the items associated with The __Keepers of The Oath__, in addition to its uses for the chalice itself. Items include the lightning-shooting *Symbol of Judgement*, invisibility-granting *Mantle of Shadows*, the *Spear of Pestilence* which can conjure a host of mutated vermin, and *Thunder Gauntlets* that let you conjure lightning.
 
-## Magical Items
+## Other Magical Items
 * Certain monsters drop specific items, as mentioned above. Initially the only use for them is to carve and craft these things into decorate items. While not very useful in and of themselves, working with trophies taken from the __Beyond__ can enlighten those with no formal arcane skill.
 * With the base items themselves and a little arcana skill, magic seals can be crafted. These entail a little essence and some extra effort put in preparing the item, turning it into essentially a single-use spell. For all the items usable, each has a specific effect thematically linked to it.
 * At higher levels, and with the right books, magic seals can be woven into an effect bound to a scroll, allowing the user a shot at learning the corresponding ability permanently. Doing so doesn't always succeed.
@@ -157,9 +176,9 @@ In addition, though the *Keepers of The Oath* had been driven nearly to extincti
 ## The Structures and their artifacts:
 
 ##### Strange Grove
-*Before the major factions of arcanists had gained the power they held as the Cataclysm loomed closer, there were the patient scholars of the Beyond. They used little more than glimpses through the cracks of the Veil, and slowly advanced their studies. Then one day, they were scattered to the four winds. The decaying, overgrown structure has left little evidence of what caused their downfall, and the monsters that infest it may well be the work of the instability the Cataclysm itself has caused. But the knowledge they brought with them allowed the other orders to flourish, and began the conflicts that would rage in the shadow of the imminent apocalypse.*
+*Before the major factions of arcanists had gained the power they held as the Cataclysm loomed closer, there were the patient scholars of the Beyond. They used little more than glimpses through the cracks of the Veil, and slowly advanced their studies. Then one day, they were scattered to the four winds. The decaying, overgrown structure has left little evidence of what caused their downfall, and the monsters that infest it may well be the work of the instability the Cataclysm itself has caused. Some may have even returned to it at one point, picking through the ruin and leaving behind their own hidden knowledge. But the knowledge they brought with them allowed the other orders to flourish, and began the conflicts that would rage in the shadow of the imminent apocalypse.*
 
-##### Peculiar Shrine
+##### Saguine Ruin
 *This was the sanctum of the Sanguine Order, where their most morbid rituals were practiced. There they sought the blood of humans, monsters, anything they could exploit to gain greater power and mastery over the arcane. Sometime before the cataclysm, they prepared their greatest ritual yet. They hunted for copies of a Summoner's Tome, comparing differences and gleaning info. They also stole away a sacred ring from some forgotten craftsman, forced to use it even though they shun service to any God or Demon. With it, they called upon a creature of great power from beyond the realms, to best it and use its power for their own. When it came through the portal, it was twisted and warped. An undead mockery of what they sought, it broke the back of the Sanguine Order by fire and claw.*
 
 ##### Impact Site
