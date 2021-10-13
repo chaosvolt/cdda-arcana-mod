@@ -96,7 +96,8 @@
       "NONCONDUCTIVE",
       "NO_SALVAGE",
       "MAGIC_FOCUS",
-      "USE_PLAYER_ENERGY"
+      "USE_PLAYER_ENERGY",
+      "PYROMANIAC_WEAPON"
     ]
   },
   {
@@ -225,7 +226,8 @@
       "FIRE",
       "FLAMING",
       "PRIMITIVE_RANGED_WEAPON",
-      "USE_PLAYER_ENERGY"
+      "USE_PLAYER_ENERGY",
+      "PYROMANIAC_WEAPON"
     ]
   },
   {
@@ -308,7 +310,7 @@
       [ "underbarrel", 1 ]
     ],
     "ammo_effects": [ "PLASMA", "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE", "BOUNCE" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE" ]
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE", "PYROMANIAC_WEAPON" ]
   },
   {
     "id": "rift_focus_cannon",
@@ -440,7 +442,7 @@
     "durability": 10,
     "loudness": 9,
     "ammo_effects": [ "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE_SMALL", "BOUNCE" ],
-    "flags": [ "NEVER_JAMS", "TRADER_AVOID", "USES_BIONIC_POWER" ]
+    "flags": [ "NEVER_JAMS", "TRADER_AVOID", "USES_BIONIC_POWER", "PYROMANIAC_WEAPON" ]
   },
   {
     "id": "bio_rift_focus_projector_gun",

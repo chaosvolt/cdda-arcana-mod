@@ -51,7 +51,7 @@
     "ups_charges_modifier": 200,
     "ammo_effects": [ "AMMO_ANOMALY_PLASMA" ],
     "min_skills": [ [ "weapon", 4 ], [ "fabrication", 6 ], [ "electronics", 5 ], [ "magic", 7 ] ],
-    "flags": [ "INSTALL_DIFFICULT", "IRREMOVABLE", "MAGIC_FOCUS" ]
+    "flags": [ "INSTALL_DIFFICULT", "IRREMOVABLE", "MAGIC_FOCUS", "PYROMANIAC_WEAPON" ]
   },
   {
     "id": "arcane_accelerator_nuke",
