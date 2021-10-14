@@ -50,11 +50,13 @@
     "price": "700 USD",
     "price_postapoc": "80 USD",
     "color": "yellow",
+    "encumbrance": 12,
+    "coverage": 100,
     "max_charges": 60,
     "charges_per_use": 20,
     "ammo": "essence_dull_type",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_gilded_aegis_healing", "no_fail": true, "level": 0, "need_worn": true },
-    "relative": { "weight": 3020, "material_thickness": 3, "encumbrance": 9 },
+    "relative": { "weight": 3020, "material_thickness": 3 },
     "extend": { "flags": [ "NO_SALVAGE", "HELMET_COMPAT", "FANCY" ] }
   },
   {
@@ -76,7 +78,7 @@
     "ammo": "essence_dull_type",
     "covers": [ "eyes", "mouth" ],
     "coverage": 100,
-    "encumbrance": 10,
+    "encumbrance": 8,
     "warmth": 10,
     "material_thickness": 3,
     "environmental_protection": 1,
@@ -139,7 +141,7 @@
     "ammo": "essence_dull_type",
     "covers": [ "eyes" ],
     "coverage": 100,
-    "encumbrance": 10,
+    "encumbrance": 8,
     "material_thickness": 3,
     "environmental_protection": 1,
     "relic_data": {
@@ -194,7 +196,8 @@
     "max_charges": 16,
     "charges_per_use": 4,
     "ammo": "essence_blood_type",
-    "encumbrance": 10,
+    "coverage": 90,
+    "encumbrance": 9,
     "storage": 0,
     "environmental_protection": 10,
     "use_action": [
@@ -256,8 +259,9 @@
     "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders, dyed in a simple dark gray.  Activating it will grant invisibility, constantly draining essence while in use.",
     "price": "900 USD",
     "price_postapoc": "70 USD",
-    "encumbrance": 12,
-    "max_encumbrance": 12,
+    "coverage": 85,
+    "encumbrance": 8,
+    "max_encumbrance": 8,
     "color": "dark_gray",
     "max_charges": 20,
     "charges_per_use": 1,
@@ -277,7 +281,7 @@
         "type": "transform"
       }
     ],
-    "relative": { "weight": 616, "volume": -1, "material_thickness": 1 },
+    "relative": { "weight": 616, "volume": -1, "material_thickness": 2 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
@@ -317,10 +321,10 @@
     "repairs_like": "robe_shadow",
     "color": "dark_gray",
     "covers": [ "torso" ],
-    "coverage": 80,
-    "encumbrance": 12,
+    "coverage": 85,
+    "encumbrance": 8,
     "warmth": 20,
-    "material_thickness": 3,
+    "material_thickness": 4,
     "max_charges": 20,
     "charges_per_use": 1,
     "ammo": "essence_type",
