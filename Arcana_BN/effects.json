@@ -400,7 +400,7 @@
     "name": [ "Ward Against Evil" ],
     "desc": [ "Protects against various anomalous effects." ],
     "remove_message": "The magical protection fades.",
-    "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara" ],
+    "removes_effects": [ "darkness", "rat", "evil", "arcana_evil_mimic", "attention", "teleglow", "amigara" ],
     "decay_messages": [ [ "Your ward against evil is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "120 m",
@@ -416,6 +416,7 @@
       "darkness",
       "rat",
       "evil",
+      "arcana_evil_mimic",
       "attention",
       "teleglow",
       "amigara",
@@ -1016,6 +1017,36 @@
     "id": "arcana_clairvoyance_hidden",
     "//": "This version is used by the orb of the veil.",
     "flags": [ "EFFECT_CLAIRVOYANCE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_evil_mimic",
+    "apply_message": "You feel an evil presence…",
+    "rating": "bad",
+    "max_intensity": 25,
+    "int_dur_factor": "4 h",
+    "base_mods": {
+      "str_mod": [ 2 ],
+      "dex_mod": [ 1 ],
+      "int_mod": [ -1 ],
+      "per_mod": [ -1 ],
+      "fatigue_tick": [ 1800 ],
+      "fatigue_chance": [ 6, 12 ]
+    },
+    "scaling_mods": {
+      "str_mod": [ -0.24 ],
+      "dex_mod": [ -0.2 ],
+      "int_mod": [ -0.24 ],
+      "per_mod": [ -0.2 ],
+      "stamina_min": [ 25 ],
+      "fatigue_min": [ 0.25 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_moonstone_touch",
+    "max_duration": "4 s",
+    "base_mods": { "health_min": [ 1 ], "h_mod_min": [ 1 ] }
   },
   {
     "type": "effect_type",

@@ -1815,7 +1815,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "moonstone fang" },
-    "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it grant a minor life-draining touch and potentially blind attackers with magic, but it will sicken body and mind.  Activating it will additionally harden the body against cold, draining essence over time.",
+    "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it grant a minor life-draining touch and potentially blind attackers with magic, but it can sicken body and mind.  Activating it will additionally harden the body against cold, draining essence over time.",
     "weight": "160 g",
     "volume": "1500 ml",
     "longest_side": "30 cm",
@@ -1838,7 +1838,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ],
+          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 }, { "id": "arcana_react_moonstone_touch", "once_in": 10 } ],
           "hit_me_effect": [
             {
               "id": "arcana_react_shadowy_shield",
@@ -1959,7 +1959,7 @@
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
           "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
-          "//intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
+          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
         }
       ]
     },
@@ -2012,7 +2012,7 @@
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
           "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
-          "//intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
+          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
         }
       ]
     },

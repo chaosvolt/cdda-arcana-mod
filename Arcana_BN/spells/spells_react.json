@@ -16,6 +16,20 @@
     "max_duration": 1500
   },
   {
+    "type": "SPELL",
+    "id": "arcana_react_evil_mimic",
+    "name": { "str": "React: Addicted To The Power" },
+    "description": "This adds a random duration of an effect that mimics evil but technically isn't.",
+    "sprite": "fd_veil_light",
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "message": "",
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "effect_str": "arcana_evil_mimic",
+    "min_duration": 150000,
+    "max_duration": 210000
+  },
+  {
     "id": "arcana_react_bloodscourge_fire",
     "type": "SPELL",
     "name": { "str": "React: Immolate Effect" },
@@ -131,6 +145,35 @@
     "effect_str": "teleglow",
     "min_duration": 12000,
     "max_duration": 24000
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_react_moonstone_touch",
+    "name": { "str": "React: Moonstone Touch" },
+    "description": "Little bit of madness.",
+    "sprite": "fd_veil_light",
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "message": "",
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "effect_str": "hallu",
+    "extra_effects": [ { "id": "arcana_react_moonstone_touch_2" } ],
+    "min_duration": 15000,
+    "max_duration": 45000
+  },
+  {
+    "type": "SPELL",
+    "id": "arcana_react_moonstone_touch_2",
+    "name": { "str": "React: Moonstone Touch 2" },
+    "description": "And some sickness to go with the madness.",
+    "sprite": "fd_veil_light",
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "message": "",
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "effect_str": "arcana_moonstone_touch",
+    "min_duration": 200,
+    "max_duration": 400
   },
   {
     "id": "arcana_react_shadowy_shield",

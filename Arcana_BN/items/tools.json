@@ -1818,13 +1818,12 @@
     "ammo": "essence_type",
     "techniques": [ "RAPID", "DEF_DISARM" ],
     "qualities": [ [ "BUTCHER", 6 ] ],
-    "artifact_data": { "effects_wielded": [ "AEP_SICK", "AEP_SCHIZO" ] },
     "relic_data": {
       "passive_effects": [
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ],
+          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 }, { "id": "arcana_react_moonstone_touch", "once_in": 10 } ],
           "hit_me_effect": [
             {
               "id": "arcana_react_shadowy_shield",
@@ -1952,7 +1951,8 @@
           "condition": "ACTIVE",
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
-          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ]
+          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
+          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
         }
       ]
     },
@@ -2003,11 +2003,11 @@
           "condition": "ACTIVE",
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
-          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ]
+          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
+          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
         }
       ]
     },
-    "artifact_data": { "effects_wielded": [ "AEP_EVIL" ] },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
     "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD" ]
   }
