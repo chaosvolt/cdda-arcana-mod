@@ -8,9 +8,9 @@
     "apply_message": "You feel a slight sense of exertion from casting the spell.",
     "remove_message": "The exertion of spellcasting fades from your mind.",
     "rating": "bad",
-    "max_duration": "8 h",
+    "max_duration": "24 h",
     "int_dur_factor": "1 m",
-    "base_mods": { "fatigue_min": [ 1 ], "fatigue_tick": [ 300, 600 ] }
+    "base_mods": { "fatigue_min": [ 1 ], "fatigue_tick": [ 150, 300 ] }
   },
   {
     "type": "effect_type",
@@ -682,7 +682,8 @@
       "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult."
     ],
     "max_intensity": 6,
-    "int_dur_factor": "12 h",
+    "max_duration": "24 h",
+    "int_dur_factor": "2 h",
     "base_mods": {
       "health_min": [ -1 ],
       "health_tick": [ 1800, 2000 ],
