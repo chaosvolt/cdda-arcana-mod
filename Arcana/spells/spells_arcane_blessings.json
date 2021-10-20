@@ -543,7 +543,7 @@
     "energy_source": "MANA",
     "base_energy_cost": 540,
     "final_energy_cost": 270,
-    "energy_increment": -13.5
+    "energy_increment": -13.5,
     "min_duration": 8000,
     "max_duration": 40000,
     "duration_increment": 1600,
@@ -760,7 +760,6 @@
     "range_increment": 0.75,
     "effect": "attack",
     "shape": "blast",
-    "range_increment": 0.3,
     "base_casting_time": 250,
     "final_casting_time": 125,
     "casting_time_increment": -6.25,
