@@ -704,7 +704,8 @@
       "Human minds and bodies were not made to be a conduit for such destructive energy.  Overuse won't kill you, but will make it harder to focus on spellcasting."
     ],
     "max_intensity": 6,
-    "int_dur_factor": "12 h",
+    "max_duration": "24 h",
+    "int_dur_factor": "2 h",
     "base_mods": {
       "int_mod": [ -1 ],
       "stamina_min": [ -5 ],
