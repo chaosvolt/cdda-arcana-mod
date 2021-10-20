@@ -799,16 +799,16 @@
     "effect_str": "downed",
     "damage_type": "cut",
     "max_level": 5,
-    "min_damage": 28,
-    "max_damage": 144,
-    "damage_increment": 23.2,
+    "min_damage": 40,
+    "max_damage": 100,
+    "damage_increment": 12,
     "min_range": 2,
     "max_range": 4,
     "range_increment": 0.4,
     "min_aoe": 360,
     "max_aoe": 360,
-    "min_duration": 1600,
-    "max_duration": 6400,
+    "min_duration": 3200,
+    "max_duration": 8000,
     "duration_increment": 960,
     "field_id": "fd_blood",
     "field_chance": 2,
@@ -893,9 +893,9 @@
     "flags": [ "SILENT" ],
     "effect_str": "destructive_absorption_side_effects",
     "effect": "target_attack",
-    "min_duration": 3000,
-    "max_duration": 6000,
-    "duration_increment": 600
+    "min_duration": 20000,
+    "max_duration": 50000,
+    "duration_increment": 6000
   },
   {
     "id": "arcana_aftermath_drain_life_fatigue",
@@ -1450,25 +1450,10 @@
     "field_id": "fd_cold_air1",
     "field_chance": 1,
     "min_field_intensity": 1,
-    "max_field_intensity": 1
-  },
-  {
-    "id": "arcana_aftermath_elemental_stun",
-    "type": "SPELL",
-    "name": { "str": "Elemental Sign Stun" },
-    "description": "This exists to give Elemental Sign freeze enemies briefly.",
-    "sprite": "fd_fog",
-    "effect": "mod_moves",
-    "message": "",
-    "flags": [ "SILENT" ],
-    "valid_targets": [ "ally", "hostile", "ground" ],
-    "min_damage": -1500,
-    "max_damage": -3000,
-    "damage_increment": -300,
-    "min_aoe": 5,
-    "max_aoe": 10,
-    "aoe_increment": 1,
-    "max_level": 5
+    "max_field_intensity": 1,
+    "min_duration": 30000,
+    "max_duration": 150000,
+    "duration_increment": 24000
   },
   {
     "id": "arcana_aftermath_healing_side_effects",
@@ -1608,8 +1593,9 @@
     "flags": [ "SILENT" ],
     "effect_str": "dragonbreath_side_effects",
     "effect": "target_attack",
-    "min_duration": 100,
-    "max_duration": 100
+    "min_duration": 3200,
+    "max_duration": 1600,
+    "duration_increment": -320
   },
   {
     "id": "arcana_aftermath_magic_sign_exertion_2",
@@ -1754,9 +1740,9 @@
     "max_range": 10,
     "range_increment": 1,
     "max_level": 5,
-    "min_duration": 45000,
-    "max_duration": 75000,
-    "duration_increment": 6000
+    "min_duration": 10000,
+    "max_duration": 25000,
+    "duration_increment": 3000
   },
   {
     "id": "arcana_aftermath_open_lock_spike",
