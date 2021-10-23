@@ -9,8 +9,9 @@
     "remove_message": "The exertion of spellcasting fades from your mind.",
     "rating": "bad",
     "max_duration": "24 h",
+    "max_intensity": 1440,
     "int_dur_factor": "1 m",
-    "base_mods": { "fatigue_min": [ 1 ], "fatigue_tick": [ 150, 300 ] }
+    "base_mods": { "fatigue_min": [ 1 ], "fatigue_tick": [ 250, 500 ] }
   },
   {
     "type": "effect_type",
