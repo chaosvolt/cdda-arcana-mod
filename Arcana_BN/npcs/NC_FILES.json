@@ -603,7 +603,7 @@
       { "item": "water_clean" },
       { "item": "matches" },
       { "item": "pockknife" },
-      { "group": "charged_cell_phone" }
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "cell_phone" }
     ]
   },
   {
