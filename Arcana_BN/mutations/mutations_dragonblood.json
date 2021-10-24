@@ -237,7 +237,7 @@
     "mixed_effect": true,
     "bodytemp_modifiers": [ 0, 1500 ],
     "bodytemp_sleep": 750,
-    "description": "Your body has adapted further, exploiting the strange power that fuels your body.  You still need more food and water than normal, but the benefits are more pronounced relative to the drawbacks.  Activate to breathe short-ranged bursts of flame.",
+    "description": "Your body has adapted further, exploiting the strange power that fuels your body.  You still need more food and water than normal, but the benefits are more pronounced relative to the drawbacks.  Activate to breathe powerful short-ranged bursts of flame.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERFIRE" ],
@@ -252,7 +252,7 @@
     "stamina_regen_modifier": 0.75,
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
     "active": true,
-    "cost": 30,
+    "cost": 60,
     "hunger": true,
     "ranged_mutation": { "type": "mut_dragonfire", "message": "You loose a tongue of flame from your mouth." }
   },
