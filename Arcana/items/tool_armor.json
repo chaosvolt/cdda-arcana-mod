@@ -53,12 +53,12 @@
     "price": "700 USD",
     "price_postapoc": "80 USD",
     "color": "yellow",
-    "material_thickness": 5,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 60 } } ],
     "charges_per_use": 20,
     "ammo": "essence_dull_type",
+    "material_thickness": 5,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_gilded_aegis_healing", "no_fail": true, "level": 0, "need_worn": true },
-    "relative": { "weight": 3020, "material_thickness": 3 },
+    "relative": { "weight": 3020 },
     "extend": { "flags": [ "NO_SALVAGE", "HELMET_COMPAT", "FANCY", "TRADER_KEEP_EQUIPPED" ] },
     "armor": [ { "encumbrance": 12, "coverage": 100, "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ] } ]
   },
@@ -258,6 +258,8 @@
     "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders, dyed in a simple dark gray.  Activating it will grant invisibility, constantly draining essence while in use.",
     "price": "900 USD",
     "price_postapoc": "70 USD",
+    "material": [ "cotton" ],
+    "material_thickness": 3,
     "color": "dark_gray",
     "charges_per_use": 1,
     "ammo": "essence_type",
@@ -275,7 +277,7 @@
         "type": "transform"
       }
     ],
-    "relative": { "weight": 616, "volume": -1, "material_thickness": 2 },
+    "relative": { "weight": 616, "volume": -1 },
     "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
     "armor": [ { "covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r" ], "coverage": 85, "encumbrance": [ 8, 8 ] } ]
   },
@@ -387,7 +389,8 @@
         "need_worn": true
       }
     ],
-    "relative": { "weight": 210, "material_thickness": 1 },
+    "material_thickness": 5,
+    "relative": { "weight": 210 },
     "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
@@ -422,7 +425,8 @@
         "need_worn": true
       }
     ],
-    "relative": { "weight": 120, "material_thickness": 1 },
+    "material_thickness": 5,
+    "relative": { "weight": 120 },
     "extend": { "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "OUTER" ] },
     "armor": [ { "encumbrance": 75, "coverage": 10, "covers": [ "hand_l", "hand_r" ] } ]
   },
@@ -469,6 +473,7 @@
       "ONLY_ONE",
       "POWERARMOR_COMPATIBLE"
     ],
+    "armor_data": { "material": [ "iron" ], "armor": [ { "encumbrance": 10, "coverage": 5, "covers": [ "torso" ] } ] },
     "armor": [ { "coverage": 40, "covers": [ "torso" ] } ]
   },
   {
@@ -478,6 +483,7 @@
     "name": { "str": "cyclopean mirror (on)" },
     "category": "armor",
     "description": "An ornate round mirror in an archaic style.  It has shifted into a brightly-glowing barrier that protects the user from electricity and radiation, along with partial protection from psychic influence, some resistance to extreme temperatures, and minor environmental protection.  The barrier's physical protection is half that of the mirror itself, but protects your body fully.",
+    "material": [ "iron" ],
     "turns_per_charge": 600,
     "revert_to": "cyclopean_mirror",
     "use_action": {
@@ -485,7 +491,9 @@
       "msg": "The protective glow vanishes as the mirror rematerializes.",
       "type": "transform"
     },
-    "relative": { "weight": -500, "material_thickness": -2, "bashing": -8, "environmental_protection": 12 },
+    "material_thickness": 2,
+    "environmental_protection": 12,
+    "relative": { "weight": -500, "bashing": -8 },
     "extend": {
       "flags": [
         "CLIMATE_CONTROL",
@@ -556,7 +564,8 @@
         "need_worn": true
       }
     ],
-    "relative": { "weight": "3020 g", "price": "550 USD", "material_thickness": 1 },
+    "material_thickness": 7,
+    "relative": { "weight": "3020 g", "price": "550 USD" },
     "extend": { "flags": [ "NO_SALVAGE", "ELECTRIC_IMMUNE", "RAINPROOF", "TRADER_KEEP_EQUIPPED" ] },
     "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ] } ]
   },
