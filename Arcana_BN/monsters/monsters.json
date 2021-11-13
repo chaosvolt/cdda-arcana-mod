@@ -1693,7 +1693,6 @@
     "vision_night": 50,
     "regenerates": 1,
     "path_settings": { "max_dist": 10 },
-    "revert_to_itype": "broken_mech_arcana_boss",
     "special_attacks": [
       [ "STARE", 100 ],
       {
