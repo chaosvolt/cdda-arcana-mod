@@ -610,7 +610,7 @@
         "encumbrance": 20,
         "coverage": 100,
         "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
-        "material": [ "iron", "copper", "leather", "iron" ],
+        "material": [ "iron", "copper", "leather", "cotton" ],
         "material_thickness": 7,
         "environmental_protection": 1
       }
