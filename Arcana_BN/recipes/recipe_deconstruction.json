@@ -1327,6 +1327,7 @@
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 7,
+    "skills_required": [ [ "electronics", 5 ] ],
     "time": "70 m",
     "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "CHEM", "level": 2 } ],
     "components": [ [ [ "essence_surge_generator_item", 1 ] ], [ [ "copper", 180 ] ], [ [ "wire", 2 ] ], [ [ "amplifier", 2 ] ] ]
