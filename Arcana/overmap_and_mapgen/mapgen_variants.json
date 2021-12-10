@@ -2,7 +2,7 @@
   {
     "type": "mapgen",
     "method": "json",
-    "om_terrain": [ "mansion_+_dn", "mansion_+2d" ],
+    "om_terrain": [ "mansion_+2d" ],
     "weight": 900,
     "object": {
       "fill_ter": "t_rock_floor",
@@ -65,7 +65,7 @@
   {
     "type": "mapgen",
     "method": "json",
-    "om_terrain": [ "mansion_+_dn", "mansion_+4d" ],
+    "om_terrain": [ "mansion_+4d" ],
     "weight": 1000,
     "object": {
       "fill_ter": "t_rock_floor",
