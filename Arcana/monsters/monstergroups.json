@@ -17,6 +17,7 @@
       { "monster": "mon_homunculus", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_mi_go", "weight": 50, "cost_multiplier": 0 },
       { "monster": "mon_flesh_angel", "weight": 25, "cost_multiplier": 0 },
+      { "monster": "mon_feral_arcanist", "weight": 15, "cost_multiplier": 0 },
       { "monster": "mon_dementia", "weight": 675 }
     ]
   },
@@ -27,6 +28,7 @@
       { "monster": "mon_blank", "weight": 150, "cost_multiplier": 0 },
       { "monster": "mon_homunculus", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_mi_go", "weight": 50, "cost_multiplier": 0 },
+      { "monster": "mon_feral_arcanist", "weight": 15, "cost_multiplier": 0 },
       { "monster": "mon_dementia", "weight": 700 }
     ]
   },
@@ -111,5 +113,19 @@
     "auto_total": true,
     "is_animal": true,
     "monsters": [ { "monster": "mon_fleshy_shambler", "weight": 25, "cost_multiplier": 10 } ]
+  },  
+  {
+    "name": "GROUP_ZOMBIE",
+    "type": "monstergroup",
+    "override": false,
+    "auto_total": true,
+    "monsters": [ { "monster": "mon_feral_arcanist", "weight": 15, "cost_multiplier": 0 } ]
+  }, 
+  {
+    "name": "GROUP_VANILLA",
+    "type": "monstergroup",
+    "override": false,
+    "auto_total": true,
+    "monsters": [ { "monster": "mon_feral_arcanist", "weight": 15, "cost_multiplier": 0 } ]
   }
 ]
