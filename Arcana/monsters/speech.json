@@ -208,5 +208,41 @@
     "speaker": "mon_seraphic_shade_fake",
     "sound": "\"Vathalos, arovesk…\"",
     "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_feral_summoner",
+    "sound": "\"Neherit, otira atvess…\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_feral_summoner",
+    "sound": "\"Tvakaros, ievona karoh…\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_feral_summoner",
+    "sound": "\"Get out of my head!\"",
+    "volume": 30
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_feral_summoner",
+    "sound": "\"Why are they always watching?\"",
+    "volume": 25
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_feral_summoner",
+    "sound": "\"Shadows, reflections of shadows…\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_feral_summoner",
+    "sound": "incoherent, terrified raving!",
+    "volume": 30
   }
 ]

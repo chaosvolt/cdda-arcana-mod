@@ -1734,5 +1734,59 @@
       "PRIORITIZE_TARGETS",
       "PATH_AVOID_DANGER_2"
     ]
+  },
+  {
+    "id": "mon_feral_summoner",
+    "type": "MONSTER",
+    "name": { "str": "maddened wanderer" },
+    "description": "Torn robes cover a shuffling human form, still breathing despite its zombie-like unsteadiness.  Gripped by raving madness, a strange aura gathers around it as it clutches a tarnished silver talisman.",
+    "default_faction": "cult",
+    "looks_like": "mon_dementia",
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 80,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "magenta",
+    "aggression": 30,
+    "morale": 100,
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 3,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "armor_stab": 2,
+    "dodge": 1,
+    "harvest": "human",
+    "vision_day": 30,
+    "vision_night": 3,
+    "path_settings": { "max_dist": 30 },
+    "diff": 1,
+    "special_attacks": [
+      [ "PARROT", 15 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "arcana_monster_summoner" },
+        "cooldown": 30,
+        "monster_message": "The air chills as the maddened wanderer raises its talisman!"
+      }
+    ],
+    "death_drops": "mon_feral_summoner_death_drops",
+    "zombify_into": "mon_zombie_shady",
+    "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT" ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS",
+      "PATH_AVOID_DANGER_2"
+    ]
   }
 ]
