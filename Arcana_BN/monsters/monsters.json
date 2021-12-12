@@ -1796,7 +1796,6 @@
     "name": { "str": "maddened hunter" },
     "description": "A cloak of metal scales obscures this humanoid figure, heavy breaths revealing it to still be among the living.  Gripped by raving madness, bloodshot eyes glower from under a metal mask, as it clutches a strange crossbow in its hands.",
     "melee_skill": 6,
-    "melee_dice": 2,
     "melee_dice_sides": 6,
     "armor_bash": 12,
     "armor_cut": 12,
@@ -1821,5 +1820,38 @@
       }
     ],
     "death_drops": "mon_feral_magehunter_death_drops"
+  },
+  {
+    "id": "mon_feral_keeper",
+    "copy-from": "mon_feral_summoner",
+    "type": "MONSTER",
+    "name": { "str": "maddened keeper" },
+    "description": "Dark .",
+    "melee_dice": 1,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "stab", "amount": 6 } ],
+    "armor_bash": 4,
+    "armor_cut": 4,
+    "armor_stab": 4,
+    "dodge": 3,
+    "special_attacks": [
+      [ "PARROT", 5 ],
+      {
+        "type": "gun",
+        "cooldown": 15,
+        "move_cost": 50,
+        "gun_type": "monster_lightning_fake",
+        "ammo_type": "generic_no_ammo",
+        "fake_str": 6,
+        "fake_dex": 6,
+        "fake_per": 9,
+        "max_ammo": 1000,
+        "ranges": [ [ 2, 25, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "Lightning arcs from the maddened keeper's symbol of judgment!",
+        "no_ammo_sound": "a cry of anger!"
+      }
+    ],
+    "death_drops": "mon_feral_keeper_death_drops"
   }
 ]
