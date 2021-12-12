@@ -412,7 +412,25 @@
     "dispersion": 7500,
     "sight_dispersion": 1000,
     "ranged_damage": { "damage_type": "heat", "amount": 10, "armor_penetration": 5 }
-  },
+  }, 
+  {
+    "id": "monster_fire_limit_fake",
+    "type": "GUN",
+    "copy-from": "fake_item",
+    "name": { "str": "monster limited fire weapon" },
+    "description": "Used to give fire-using enemies in Arcana a specific degree of inaccuracy, with limited shots and range.  If you encounter one of these in the wild, it's a bug.",
+    "ammo_effects": [ "NEVER_MISFIRES", "STREAM", "INCENDIARY" ],
+    "flags": [ "NEVER_JAMS" ],
+    "skill": "pistol",
+    "durability": 10,
+    "range": 1,
+    "dispersion": 7500,
+    "sight_dispersion": 1000,
+    "ammo": "essence_blood_type",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 4 } } ],
+    "clip_size": 4,
+    "ranged_damage": { "damage_type": "heat", "amount": 15, "armor_penetration": 5 }
+  }, 
   {
     "id": "monster_lightning_fake",
     "type": "GUN",
