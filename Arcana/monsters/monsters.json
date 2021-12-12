@@ -967,12 +967,10 @@
         "cooldown": 10,
         "move_cost": 500,
         "gun_type": "monster_fire_fake",
-        "ammo_type": "generic_no_ammo",
         "fake_str": 5,
         "fake_dex": 4,
         "fake_per": 6,
-        "max_ammo": 1000,
-        "ranges": [ [ 2, 5, "DEFAULT" ] ],
+        "ranges": [ [ 2, 7, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the spirit of fire!",
         "no_ammo_sound": "a distorted growl!"
@@ -1081,12 +1079,10 @@
         "cooldown": 15,
         "move_cost": 50,
         "gun_type": "monster_lightning_fake",
-        "ammo_type": "generic_no_ammo",
         "fake_str": 8,
         "fake_dex": 7,
         "fake_per": 9,
-        "max_ammo": 1000,
-        "ranges": [ [ 2, 12, "DEFAULT" ] ],
+        "ranges": [ [ 2, 25, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "A beam of lightning arcs from the host of the archon's symbol of judgment!",
         "no_ammo_sound": "a horrific screech!"
@@ -1156,12 +1152,10 @@
         "cooldown": 10,
         "move_cost": 500,
         "gun_type": "monster_fire_fake",
-        "ammo_type": "generic_no_ammo",
         "fake_str": 9,
         "fake_dex": 3,
         "fake_per": 5,
-        "max_ammo": 1000,
-        "ranges": [ [ 2, 5, "DEFAULT" ] ],
+        "ranges": [ [ 2, 7, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the dracolich's mouth!",
         "no_ammo_sound": "a howl of feral anger!"
@@ -1638,12 +1632,10 @@
         "cooldown": 25,
         "move_cost": 50,
         "gun_type": "monster_laser_fake",
-        "ammo_type": "generic_no_ammo",
         "fake_str": 8,
         "fake_dex": 7,
         "fake_per": 9,
-        "max_ammo": 1000,
-        "ranges": [ [ 2, 15, "DEFAULT" ] ],
+        "ranges": [ [ 2, 20, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "A radiant beam of otherworldly energy lances out from the seraphic shade's body!",
         "no_ammo_sound": "a horrific screech!"
@@ -1812,11 +1804,9 @@
         "cooldown": 5,
         "move_cost": 75,
         "gun_type": "monster_laser_fake",
-        "ammo_type": "generic_no_ammo",
         "fake_str": 4,
         "fake_dex": 4,
         "fake_per": 4,
-        "max_ammo": 1000,
         "ranges": [ [ 2, 15, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "The Autonomous Anomaly Recon Mech fires a radiant beam of otherworldly energy!",
@@ -1864,8 +1854,8 @@
     "color": "magenta",
     "aggression": 30,
     "morale": 100,
-    "melee_skill": 3,
-    "melee_dice": 1,
+    "melee_skill": 4,
+    "melee_dice": 2,
     "melee_dice_sides": 3,
     "armor_bash": 2,
     "armor_cut": 2,
@@ -1878,11 +1868,11 @@
     "path_settings": { "max_dist": 30, "allow_open_doors": true, "avoid_traps": true, "avoid_sharp": true },
     "diff": 1,
     "special_attacks": [
-      [ "PARROT", 15 ],
+      [ "PARROT", 5 ],
       {
         "type": "spell",
         "spell_data": { "id": "arcana_monster_summoner" },
-        "cooldown": 30,
+        "cooldown": 15,
         "monster_message": "The air chills as the maddened wanderer raises its talisman!"
       }
     ],
@@ -1900,5 +1890,37 @@
       "CAN_OPEN_DOORS",
       "PATH_AVOID_DANGER_2"
     ]
+  },
+  {
+    "id": "mon_feral_magehunter",
+    "copy-from": "mon_feral_summoner",
+    "type": "MONSTER",
+    "name": { "str": "maddened hunter" },
+    "description": "A cloak of metal scales obscures this humanoid figure, heavy breaths revealing it to still be among the living.  Gripped by raving madness, bloodshot eyes glower from under a metal mask, as it clutches a strange crossbow in its hands.",
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "armor_bash": 12,
+    "armor_cut": 12,
+    "armor_bullet": 9,
+    "armor_stab": 12,
+    "dodge": 2,
+    "special_attacks": [
+      [ "PARROT", 5 ],
+      {
+        "type": "gun",
+        "cooldown": 15,
+        "move_cost": 50,
+        "gun_type": "monster_crossbow_fake",
+        "fake_str": 10,
+        "fake_dex": 6,
+        "fake_per": 9,
+        "ranges": [ [ 2, 12, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "A bolt of light lances from the maddened hunter's crossbow!",
+        "no_ammo_sound": "a cry of anger!"
+      }
+    ],
+    "death_drops": "mon_feral_magehunter_death_drops"
   }
 ]

@@ -103,25 +103,25 @@
   },
   {
     "type": "speech",
-    "speaker": "mon_mi_go",
+    "speaker": [ "mon_mi_go", "mon_mi_go_slaver", "mon_mi_go_myrmidon", "mon_feral_magehunter" ],
     "sound": "\"Ecce, sanguinem magum!\"",
     "volume": 40
   },
   {
     "type": "speech",
-    "speaker": "mon_mi_go",
+    "speaker": [ "mon_mi_go", "mon_mi_go_slaver", "mon_mi_go_myrmidon", "mon_feral_magehunter" ],
     "sound": "\"Impium profligatum!\"",
     "volume": 40
   },
   {
     "type": "speech",
-    "speaker": "mon_mi_go",
+    "speaker": [ "mon_mi_go", "mon_mi_go_slaver", "mon_mi_go_myrmidon", "mon_feral_magehunter" ],
     "sound": "\"Subire mortem tuam…\"",
     "volume": 30
   },
   {
     "type": "speech",
-    "speaker": "mon_mi_go",
+    "speaker": [ "mon_mi_go", "mon_mi_go_slaver", "mon_mi_go_myrmidon", "mon_feral_magehunter" ],
     "sound": "\"…sub malleo deorum!\"",
     "volume": 50
   },
@@ -199,13 +199,13 @@
   },
   {
     "type": "speech",
-    "speaker": "mon_seraphic_shade_fake",
+    "speaker": [ "mon_seraphic_shade_fake", "mon_feral_summoner" ],
     "sound": "\"Nerhes ashon, varath…\"",
     "volume": 20
   },
   {
     "type": "speech",
-    "speaker": "mon_seraphic_shade_fake",
+    "speaker": [ "mon_seraphic_shade_fake", "mon_feral_summoner" ],
     "sound": "\"Vathalos, arovesk…\"",
     "volume": 20
   },
@@ -223,13 +223,13 @@
   },
   {
     "type": "speech",
-    "speaker": "mon_feral_summoner",
+    "speaker": [ "mon_feral_summoner", "mon_feral_magehunter" ],
     "sound": "\"Get out of my head!\"",
     "volume": 30
   },
   {
     "type": "speech",
-    "speaker": "mon_feral_summoner",
+    "speaker": [ "mon_feral_summoner", "mon_feral_magehunter" ],
     "sound": "\"Why are they always watching?\"",
     "volume": 25
   },
@@ -241,7 +241,13 @@
   },
   {
     "type": "speech",
-    "speaker": "mon_feral_summoner",
+    "speaker": "mon_feral_magehunter",
+    "sound": "\"Why have the gods forsaken us?\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": [ "mon_feral_summoner", "mon_feral_magehunter" ],
     "sound": "incoherent, terrified raving!",
     "volume": 30
   }
