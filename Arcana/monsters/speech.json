@@ -97,7 +97,7 @@
   },
   {
     "type": "speech",
-    "speaker": [ "mon_archon", "mon_seraphic_shade" ],
+    "speaker": [ "mon_archon", "mon_seraphic_shade", "mon_feral_keeper" ],
     "sound": "chanting in an unearthly language!",
     "volume": 40
   },
@@ -223,13 +223,13 @@
   },
   {
     "type": "speech",
-    "speaker": [ "mon_feral_summoner", "mon_feral_magehunter" ],
+    "speaker": [ "mon_feral_summoner", "mon_feral_magehunter", "mon_feral_keeper" ],
     "sound": "\"Get out of my head!\"",
     "volume": 30
   },
   {
     "type": "speech",
-    "speaker": [ "mon_feral_summoner", "mon_feral_magehunter" ],
+    "speaker": [ "mon_feral_summoner", "mon_feral_magehunter", "mon_feral_keeper" ],
     "sound": "\"Why are they always watching?\"",
     "volume": 25
   },
@@ -247,7 +247,25 @@
   },
   {
     "type": "speech",
-    "speaker": [ "mon_feral_summoner", "mon_feral_magehunter" ],
+    "speaker": "mon_feral_keeper",
+    "sound": "\"Shrouded King, guard and guide me…\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_feral_keeper",
+    "sound": "\"Betrayed us, He betrayed us, left us to die!\"",
+    "volume": 30
+  },
+  {
+    "type": "speech",
+    "speaker": "mon_feral_keeper",
+    "sound": "\"Let this be a necessary wound in The Veil…\"",
+    "volume": 20
+  },
+  {
+    "type": "speech",
+    "speaker": [ "mon_feral_summoner", "mon_feral_magehunter", "mon_feral_keeper" ],
     "sound": "incoherent, terrified raving!",
     "volume": 30
   }

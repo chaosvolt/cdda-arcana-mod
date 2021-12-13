@@ -430,19 +430,19 @@
     "ranged_damage": { "damage_type": "electric", "amount": 20, "armor_penetration": 10 }
   },
   {
-    "id": "monster_crossbow_fake",
+    "id": "monster_hammer_fake",
     "type": "GUN",
     "copy-from": "fake_item",
-    "name": { "str": "monster wraithslayer" },
-    "description": "Used to give the maddened hunters a weaker, less accurate version of the wraithslayer.  If you encounter one of these in the wild, it's a bug.",
-    "ammo_effects": [ "NEVER_MISFIRES", "LASER" ],
+    "name": { "str": "monster flashbang" },
+    "description": "Used to give the maddened hunters a telegraphed flashbang effect.  If you encounter one of these in the wild, it's a bug.",
+    "ammo_effects": [ "NEVER_MISFIRES", "FLASHBANG" ],
     "flags": [ "NEVER_JAMS" ],
     "skill": "pistol",
     "durability": 10,
-    "range": 12,
+    "range": 0,
     "dispersion": 5000,
     "sight_dispersion": 1000,
-    "ranged_damage": { "damage_type": "stab", "amount": 15, "armor_penetration": 15 }
+    "ranged_damage": { "damage_type": "heat", "amount": 0 }
   },
   {
     "id": "monster_laser_fake",

@@ -1896,9 +1896,10 @@
     "copy-from": "mon_feral_summoner",
     "type": "MONSTER",
     "name": { "str": "maddened hunter" },
-    "description": "A cloak of metal scales obscures this humanoid figure, heavy breaths revealing it to still be among the living.  Gripped by raving madness, bloodshot eyes glower from under a metal mask, as it clutches a strange crossbow in its hands.",
+    "description": "A cloak of metal scales obscures this humanoid figure, heavy breaths revealing it to still be among the living.  Gripped by raving madness, bloodshot eyes glower from under a metal mask, as it grasps a silver-decorated war hammer.",
     "melee_skill": 6,
-    "melee_dice_sides": 6,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
     "armor_bash": 12,
     "armor_cut": 12,
     "armor_bullet": 9,
@@ -1908,18 +1909,56 @@
       [ "PARROT", 5 ],
       {
         "type": "gun",
-        "cooldown": 15,
-        "move_cost": 50,
-        "gun_type": "monster_crossbow_fake",
+        "cooldown": 5,
+        "move_cost": 100,
+        "gun_type": "monster_hammer_fake",
         "fake_str": 10,
         "fake_dex": 6,
         "fake_per": 9,
-        "ranges": [ [ 2, 12, "DEFAULT" ] ],
-        "require_targeting_player": false,
-        "description": "A bolt of light lances from the maddened hunter's crossbow!",
+        "ranges": [ [ 2, 7, "DEFAULT" ] ],
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "laser_lock": true,
+        "targeting_cost": 100,
+        "targeting_sound": "\"Ave martello!\"  The maddened hunter raises its hammer high!",
+        "targeting_volume": 30,
+        "description": "The maddened hunter's hammer gives off a blinding flash!",
         "no_ammo_sound": "a cry of anger!"
       }
     ],
-    "death_drops": "mon_feral_magehunter_death_drops"
+    "death_drops": "mon_feral_magehunter_death_drops",
+    "extend": { "flags": [ "STUN_IMMUNE" ] }
+  },
+  {
+    "id": "mon_feral_keeper",
+    "copy-from": "mon_feral_summoner",
+    "type": "MONSTER",
+    "name": { "str": "maddened keeper" },
+    "description": "Dark robes and a heavy fur mantle conceal a human figure, still breathing despite looking to be on the edge of death.  Gripped by raving madness, it desperately clutches a golden talisman that crackles with electricity.",
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "stab", "amount": 6 } ],
+    "armor_bash": 4,
+    "armor_cut": 4,
+    "armor_stab": 4,
+    "armor_bullet": 3,
+    "dodge": 3,
+    "special_attacks": [
+      [ "PARROT", 5 ],
+      {
+        "type": "gun",
+        "cooldown": 15,
+        "move_cost": 50,
+        "gun_type": "monster_lightning_fake",
+        "fake_str": 6,
+        "fake_dex": 6,
+        "fake_per": 9,
+        "ranges": [ [ 2, 25, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "Lightning arcs from the maddened keeper's symbol of judgment!",
+        "no_ammo_sound": "a cry of anger!"
+      }
+    ],
+    "death_drops": "mon_feral_keeper_death_drops"
   }
 ]

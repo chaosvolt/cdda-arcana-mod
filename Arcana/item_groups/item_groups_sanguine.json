@@ -11,6 +11,25 @@
       [ "textbook_speech", 5 ],
       [ "book_bloodmagic", 25 ],
       [ "book_potioncraft", 15 ],
+      [ "book_summoning", 8 ],
+      [ "book_magicfordummies", 3 ],
+      [ "manual_shrike", 10 ],
+      [ "manual_silat", 2 ],
+      [ "manual_dragon", 2 ]
+    ]
+  },
+  {
+    "id": "sanguine_cult_books_postapoc",
+    "type": "item_group",
+    "items": [
+      [ "poetry_book", 3 ],
+      [ "novel_drama", 12 ],
+      [ "essay_book", 5 ],
+      [ "philosophy_book", 5 ],
+      [ "cookbook_human", 5 ],
+      [ "textbook_speech", 5 ],
+      [ "book_bloodmagic", 25 ],
+      [ "book_potioncraft", 15 ],
       [ "book_summoning", 10 ],
       [ "book_magicfordummies", 3 ],
       [ "book_syncretism", 2 ],

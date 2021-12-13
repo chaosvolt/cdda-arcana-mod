@@ -1649,11 +1649,18 @@
     "subtype": "collection",
     "entries": [
       {
-        "distribution": [ { "item": "cloak", "prob": 25, "damage": [ 1, 4 ] }, { "item": "cloak_wool", "prob": 25, "damage": [ 1, 4 ] }, { "item": "robe", "prob": 50, "damage": [ 1, 4 ] } ],
+        "distribution": [
+          { "item": "cloak", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "cloak_wool", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "robe", "prob": 50, "damage": [ 1, 4 ] }
+        ],
         "prob": 75
       },
       {
-        "distribution": [ { "item": "amulet_exotic", "prob": 75, "damage": [ 1, 4 ] }, { "item": "amulet_exotic_empowered", "prob": 25, "damage": [ 1, 4 ] } ],
+        "distribution": [
+          { "item": "amulet_exotic", "prob": 75, "damage": [ 1, 4 ] },
+          { "item": "amulet_exotic_empowered", "prob": 25, "damage": [ 1, 4 ] }
+        ],
         "prob": 50
       },
       { "group": "shirts_unisex", "damage": [ 1, 4 ] },
@@ -1689,11 +1696,20 @@
     "subtype": "collection",
     "entries": [
       {
-        "distribution": [ { "item": "cloak_leather", "prob": 25, "damage": [ 1, 4 ] }, { "item": "gilded_aegis", "prob": 75, "damage": [ 1, 4 ] } ],
+        "distribution": [
+          {
+            "collection": [ { "item": "cloak_leather", "damage": [ 1, 4 ] }, { "item": "scrap", "count": [ 1, 4 ] } ],
+            "prob": 25
+          },
+          { "item": "gilded_aegis", "prob": 75, "damage": [ 1, 4 ] }
+        ],
         "prob": 75
       },
       {
-        "distribution": [ { "item": "somen_clairvoyance", "prob": 75, "damage": [ 1, 4 ] }, { "item": "somen_clairvoyance_xl", "prob": 25, "damage": [ 1, 4 ] } ],
+        "distribution": [
+          { "item": "somen_clairvoyance", "prob": 75, "damage": [ 1, 4 ] },
+          { "item": "somen_clairvoyance_xl", "prob": 25, "damage": [ 1, 4 ] }
+        ],
         "prob": 50
       },
       { "group": "shirts_unisex", "damage": [ 1, 4 ] },
@@ -1711,12 +1727,50 @@
       { "group": "cleansing_flame_books_postapoc", "prob": 25 },
       {
         "distribution": [
-          { "item": "ethereal_crossbow", "prob": 75, "damage": [ 1, 4 ] },
-          { "item": "ethereal_hand_crossbow", "prob": 20, "damage": [ 1, 4 ] },
-          { "item": "ethereal_huge_crossbow", "prob": 5, "damage": [ 1, 4 ] }
+          { "item": "hexenhammer", "prob": 75, "damage": [ 1, 4 ] },
+          { "item": "lucern_hexenhammer", "prob": 25, "damage": [ 1, 4 ] }
         ],
         "prob": 75
       }
+    ]
+  },
+  {
+    "id": "mon_feral_keeper_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          {
+            "collection": [ { "item": "robe", "damage": [ 1, 4 ] }, { "item": "fur", "count": [ 1, 4 ] } ],
+            "prob": 25
+          },
+          { "item": "robe_shadow", "prob": 50, "damage": [ 1, 4 ] },
+          { "item": "robe_shadow_xl", "prob": 25, "damage": [ 1, 4 ] }
+        ],
+        "prob": 75
+      },
+      {
+        "distribution": [
+          { "item": "gauntlets_necro", "prob": 75, "damage": [ 1, 4 ] },
+          { "item": "gauntlets_necro_xl", "prob": 25, "damage": [ 1, 4 ] }
+        ],
+        "prob": 50
+      },
+      { "group": "shirts_unisex", "damage": [ 1, 4 ] },
+      { "group": "clothing_outdoor_pants", "damage": [ 1, 4 ] },
+      { "group": "clothing_outdoor_shoes", "damage": [ 1, 4 ] },
+      { "group": "underwear", "damage": [ 1, 4 ] },
+      { "group": "bags", "damage": [ 1, 4 ] },
+      {
+        "distribution": [ { "item": "essence", "prob": 75 }, { "item": "essence_blood", "prob": 25, "count": [ 1, 3 ] } ],
+        "prob": 50
+      },
+      { "item": "offering_chalice", "prob": 25 },
+      { "group": "chalice_cult_books_postapoc", "prob": 75 },
+      { "group": "chalice_cult_books_postapoc", "prob": 50 },
+      { "group": "chalice_cult_books_postapoc", "prob": 25 },
+      { "item": "thunder_sigil", "prob": 75, "damage": [ 1, 4 ] }
     ]
   }
 ]
