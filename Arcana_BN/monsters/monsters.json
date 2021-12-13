@@ -1849,8 +1849,8 @@
         "gun_type": "monster_lightning_fake",
         "ammo_type": "generic_no_ammo",
         "fake_str": 6,
-        "fake_dex": 6,
-        "fake_per": 9,
+        "fake_dex": 7,
+        "fake_per": 8,
         "max_ammo": 1000,
         "ranges": [ [ 2, 25, "DEFAULT" ] ],
         "require_targeting_player": false,
@@ -1859,5 +1859,37 @@
       }
     ],
     "death_drops": "mon_feral_keeper_death_drops"
+  },
+  {
+    "id": "mon_feral_sanguinist",
+    "copy-from": "mon_feral_summoner",
+    "type": "MONSTER",
+    "name": { "str": "maddened sanguinist" },
+    "description": "Clad in well-worn leather armor, this wretch is still alive and breathing despite its unsteady gait and bloodshot gaze.  Gripped by raving madness, flames dance around the gem-adorned staff it uses as a walking stick.",
+    "melee_skill": 6,
+    "melee_dice_sides": 8,
+    "armor_bash": 10,
+    "armor_cut": 10,
+    "armor_stab": 10,
+    "dodge": 2,
+    "special_attacks": [
+      [ "PARROT", 5 ],
+      {
+        "type": "gun",
+        "cooldown": 15,
+        "move_cost": 50,
+        "gun_type": "monster_fire_fake",
+        "ammo_type": "generic_no_ammo",
+        "fake_str": 9,
+        "fake_dex": 10,
+        "fake_per": 7,
+        "max_ammo": 1000,
+        "ranges": [ [ 2, 7, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "Flames erupt from the maddened sanguinist's hellfire staff!",
+        "no_ammo_sound": "a cry of anger!"
+      }
+    ],
+    "death_drops": "mon_feral_sanguinist_death_drops"
   }
 ]

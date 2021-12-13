@@ -1653,8 +1653,7 @@
           { "item": "cloak", "prob": 25, "damage": [ 1, 4 ] },
           { "item": "cloak_wool", "prob": 25, "damage": [ 1, 4 ] },
           { "item": "robe", "prob": 50, "damage": [ 1, 4 ] }
-        ],
-        "prob": 75
+        ]
       },
       {
         "distribution": [
@@ -1667,6 +1666,7 @@
       { "group": "clothing_outdoor_pants", "damage": [ 1, 4 ] },
       { "group": "clothing_outdoor_shoes", "damage": [ 1, 4 ] },
       { "group": "underwear", "damage": [ 1, 4 ] },
+      { "group": "socks_unisex", "damage": [ 1, 4 ] },
       { "group": "bags", "damage": [ 1, 4 ] },
       {
         "distribution": [
@@ -1699,11 +1699,10 @@
         "distribution": [
           {
             "collection": [ { "item": "cloak_leather", "damage": [ 1, 4 ] }, { "item": "scrap", "count": [ 1, 4 ] } ],
-            "prob": 25
+            "prob": 50
           },
-          { "item": "gilded_aegis", "prob": 75, "damage": [ 1, 4 ] }
-        ],
-        "prob": 75
+          { "item": "gilded_aegis", "prob": 50, "damage": [ 1, 4 ] }
+        ]
       },
       {
         "distribution": [
@@ -1716,6 +1715,7 @@
       { "group": "clothing_outdoor_pants", "damage": [ 1, 4 ] },
       { "group": "clothing_outdoor_shoes", "damage": [ 1, 4 ] },
       { "group": "underwear", "damage": [ 1, 4 ] },
+      { "group": "socks_unisex", "damage": [ 1, 4 ] },
       { "group": "bags", "damage": [ 1, 4 ] },
       {
         "distribution": [ { "item": "essence", "prob": 25 }, { "item": "essence_dull", "prob": 75, "count": [ 5, 15 ] } ],
@@ -1741,14 +1741,10 @@
     "entries": [
       {
         "distribution": [
-          {
-            "collection": [ { "item": "robe", "damage": [ 1, 4 ] }, { "item": "fur", "count": [ 1, 4 ] } ],
-            "prob": 25
-          },
-          { "item": "robe_shadow", "prob": 50, "damage": [ 1, 4 ] },
-          { "item": "robe_shadow_xl", "prob": 25, "damage": [ 1, 4 ] }
-        ],
-        "prob": 75
+          { "collection": [ { "item": "robe", "damage": [ 1, 4 ] }, { "item": "fur", "count": [ 1, 4 ] } ], "prob": 50 },
+          { "item": "robe_shadow", "prob": 20, "damage": [ 1, 4 ] },
+          { "item": "robe_shadow_xl", "prob": 5, "damage": [ 1, 4 ] }
+        ]
       },
       {
         "distribution": [
@@ -1761,6 +1757,7 @@
       { "group": "clothing_outdoor_pants", "damage": [ 1, 4 ] },
       { "group": "clothing_outdoor_shoes", "damage": [ 1, 4 ] },
       { "group": "underwear", "damage": [ 1, 4 ] },
+      { "group": "socks_unisex", "damage": [ 1, 4 ] },
       { "group": "bags", "damage": [ 1, 4 ] },
       {
         "distribution": [ { "item": "essence", "prob": 75 }, { "item": "essence_blood", "prob": 25, "count": [ 1, 3 ] } ],
@@ -1771,6 +1768,40 @@
       { "group": "chalice_cult_books_postapoc", "prob": 50 },
       { "group": "chalice_cult_books_postapoc", "prob": 25 },
       { "item": "thunder_sigil", "prob": 75, "damage": [ 1, 4 ] }
+    ]
+  },
+  {
+    "id": "mon_feral_sanguinist_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          {
+            "collection": [
+              { "item": "armor_larmor", "damage": [ 1, 4 ] },
+              { "item": "armguard_larmor", "prob": 75, "damage": [ 1, 4 ] },
+              { "item": "boots_larmor", "prob": 50, "damage": [ 1, 4 ] },
+              { "item": "leather", "count": [ 1, 4 ] }
+            ],
+            "prob": 50
+          },
+          { "item": "armor_wyrm", "prob": 50, "damage": [ 1, 4 ] }
+        ]
+      },
+      { "item": "revenant_crown", "prob": 50, "damage": [ 1, 4 ] },
+      { "group": "underwear", "damage": [ 1, 4 ] },
+      { "group": "socks_unisex", "damage": [ 1, 4 ] },
+      { "group": "bags", "damage": [ 1, 4 ] },
+      {
+        "distribution": [ { "item": "essence", "prob": 25 }, { "item": "essence_blood", "prob": 75, "count": [ 1, 3 ] } ],
+        "prob": 50
+      },
+      { "item": "blood_athame", "prob": 25 },
+      { "group": "sanguine_cult_books_postapoc", "prob": 75 },
+      { "group": "sanguine_cult_books_postapoc", "prob": 50 },
+      { "group": "sanguine_cult_books_postapoc", "prob": 25 },
+      { "item": "bloodscourge", "prob": 75, "damage": [ 1, 4 ] }
     ]
   }
 ]
