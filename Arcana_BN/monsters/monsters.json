@@ -1801,6 +1801,7 @@
     "armor_cut": 12,
     "armor_stab": 12,
     "dodge": 2,
+    "diff": 2,
     "special_attacks": [
       [ "PARROT", 5 ],
       {
@@ -1840,6 +1841,7 @@
     "armor_cut": 4,
     "armor_stab": 4,
     "dodge": 3,
+    "diff": 3,
     "special_attacks": [
       [ "PARROT", 5 ],
       {
@@ -1872,6 +1874,7 @@
     "armor_cut": 10,
     "armor_stab": 10,
     "dodge": 2,
+    "diff": 3,
     "special_attacks": [
       [ "PARROT", 5 ],
       {
