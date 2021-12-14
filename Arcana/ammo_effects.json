@@ -16,6 +16,12 @@
     "do_emp_blast": true
   },
   {
+    "id": "LIGHTNING_JUDGMENT_LESSER",
+    "type": "ammo_effect",
+    "trail": { "field_type": "fd_electricity", "intensity_min": 2, "intensity_max": 3, "chance": 100 },
+    "do_emp_blast": true
+  },
+  {
     "id": "FIRE_CORRUPTION",
     "type": "ammo_effect",
     "aoe": {
