@@ -68,7 +68,7 @@
     "message": "",
     "valid_targets": [ "self" ],
     "effect": "target_attack",
-    "effect_str": "sword_mending",
+    "effect_str": "drain_life_mending",
     "min_damage": -1,
     "max_damage": -3,
     "flags": [ "RANDOM_DURATION", "RANDOM_DAMAGE", "SILENT" ],
