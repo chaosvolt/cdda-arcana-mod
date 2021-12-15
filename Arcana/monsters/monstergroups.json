@@ -77,12 +77,12 @@
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
-      { "monster": "mon_gracke", "freq": 150, "cost_multiplier": 0 },
-      { "monster": "mon_gozu", "freq": 50, "cost_multiplier": 0 },
-      { "monster": "mon_flesh_angel", "freq": 25, "cost_multiplier": 0 },
-      { "monster": "mon_feral_summoner", "freq": 10, "cost_multiplier": 0, "starts": 336 },
-      { "monster": "mon_feral_magehunter", "freq": 15, "cost_multiplier": 0, "starts": 504 },
-      { "monster": "mon_dementia", "weight": 750 }
+      { "monster": "mon_gracke", "freq": 275, "cost_multiplier": 0 },
+      { "monster": "mon_gozu", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_flesh_angel", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_feral_summoner", "freq": 25, "cost_multiplier": 0, "starts": 336 },
+      { "monster": "mon_feral_magehunter", "freq": 50, "cost_multiplier": 0, "starts": 504 },
+      { "monster": "mon_dementia", "weight": 500 }
     ]
   },
   {
@@ -90,12 +90,12 @@
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
-      { "monster": "mon_kreck", "freq": 100, "cost_multiplier": 0 },
-      { "monster": "mon_homunculus", "freq": 75, "cost_multiplier": 0 },
-      { "monster": "mon_hunting_horror", "freq": 50, "cost_multiplier": 0 },
-      { "monster": "mon_feral_summoner", "freq": 10, "cost_multiplier": 0, "starts": 336 },
-      { "monster": "mon_feral_sanguinist", "freq": 15, "cost_multiplier": 0, "starts": 504 },
-      { "monster": "mon_dementia", "weight": 750 }
+      { "monster": "mon_kreck", "freq": 175, "cost_multiplier": 0 },
+      { "monster": "mon_homunculus", "freq": 150, "cost_multiplier": 0 },
+      { "monster": "mon_hunting_horror", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_feral_summoner", "freq": 25, "cost_multiplier": 0, "starts": 336 },
+      { "monster": "mon_feral_sanguinist", "freq": 50, "cost_multiplier": 0, "starts": 504 },
+      { "monster": "mon_dementia", "weight": 500 }
     ]
   },
   {
@@ -103,13 +103,13 @@
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
-      { "monster": "mon_homunculus", "freq": 100, "cost_multiplier": 0 },
-      { "monster": "mon_flaming_eye", "freq": 50, "cost_multiplier": 0 },
-      { "monster": "mon_flying_polyp", "freq": 50, "cost_multiplier": 0 },
-      { "monster": "mon_flesh_angel", "freq": 25, "cost_multiplier": 0 },
-      { "monster": "mon_feral_summoner", "freq": 10, "cost_multiplier": 0, "starts": 336 },
-      { "monster": "mon_feral_keeper", "freq": 15, "cost_multiplier": 0, "starts": 504 },
-      { "monster": "mon_dementia", "weight": 750 }
+      { "monster": "mon_homunculus", "freq": 200, "cost_multiplier": 0 },
+      { "monster": "mon_flaming_eye", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_flying_polyp", "freq": 25, "cost_multiplier": 0 },
+      { "monster": "mon_flesh_angel", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_feral_summoner", "freq": 25, "cost_multiplier": 0, "starts": 336 },
+      { "monster": "mon_feral_keeper", "freq": 50, "cost_multiplier": 0, "starts": 504 },
+      { "monster": "mon_dementia", "weight": 500 }
     ]
   },
   {
