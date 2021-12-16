@@ -64,11 +64,15 @@
           { "id": "overlay_male_worn_somen_clairvoyance_on", "fg": 38 },
           { "id": "overlay_wielded_hexenhammer", "fg": 39 },
           { "id": [ "overlay_female_worn_robe_shadow", "overlay_female_worn_robe_shadow_on" ], "fg": 40 },
-          { "id": [ "overlay_male_worn_robe_shadow", "overlay_male_worn_robe_shadow_on" ], "fg": 41 }
+          { "id": [ "overlay_male_worn_robe_shadow", "overlay_male_worn_robe_shadow_on" ], "fg": 41 },
+          { "id": "mon_feral_summoner", "fg": 42 },
+          { "id": "mon_feral_magehunter", "fg": 43 },
+          { "id": "mon_feral_keeper", "fg": 44 },
+          { "id": "mon_feral_sanguinist", "fg": 45 }
         ],
         "sprite_width": 32,
-        "sprite_height": 64,
-        "sprite_offset_y": -32
+        "sprite_height": 48,
+        "sprite_offset_y": -16
       }
     ]
   }
