@@ -415,14 +415,23 @@
             ],
             "fg": 226
           },
-          { "id": "somen_clairvoyanc_xl", "fg": 227 },
+          { "id": [ "somen_clairvoyance_xl", "somen_clairvoyance_xl_on" ], "fg": 227 },
           { "id": "overlay_worn_somen_clairvoyance_xl", "fg": 228 },
           { "id": "overlay_worn_somen_clairvoyance_xl_on", "fg": 229 },
           { "id": [ "robe_shadow_xl", "robe_shadow_xl_on" ], "fg": 230 },
           { "id": "overlay_worn_robe_shadow_xl", "fg": 231 },
           { "id": "overlay_worn_robe_shadow_xl_on", "fg": 232 },
           { "id": "ethereal_hand_crossbow", "fg": 233 },
-          { "id": "overlay_wielded_ethereal_hand_crossbow", "fg": 234 }
+          { "id": "overlay_wielded_ethereal_hand_crossbow", "fg": 234 },
+          { "id": "fd_veil_light", "fg": 235 },
+          { "id": "mon_feral_summoner", "fg": 236 },
+          { "id": "mon_feral_magehunter", "fg": 237 },
+          { "id": "mon_feral_keeper", "fg": 238 },
+          { "id": "mon_feral_sanguinist", "fg": 239 },
+          {
+            "id": [ "corpse_mon_feral_summoner", "corpse_mon_feral_magehunter", "corpse_mon_feral_keeper", "corpse_mon_feral_sanguinist" ],
+            "fg": 240
+          }
         ],
         "sprite_width": 32,
         "sprite_height": 32

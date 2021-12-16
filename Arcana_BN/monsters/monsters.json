@@ -1751,7 +1751,7 @@
     "material": [ "flesh" ],
     "symbol": "@",
     "color": "magenta",
-    "aggression": 30,
+    "aggression": -10,
     "morale": 100,
     "melee_skill": 4,
     "melee_dice": 2,
@@ -1761,8 +1761,8 @@
     "armor_stab": 2,
     "dodge": 1,
     "harvest": "human",
-    "vision_day": 30,
-    "vision_night": 3,
+    "vision_day": 40,
+    "vision_night": 20,
     "path_settings": { "max_dist": 30 },
     "diff": 1,
     "special_attacks": [
@@ -1775,7 +1775,8 @@
       }
     ],
     "death_drops": "mon_feral_summoner_death_drops",
-    "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT" ],
+    "anger_triggers": [ "FRIEND_DIED", "PLAYER_CLOSE" ],
+    "fear_triggers": [ "HURT" ],
     "flags": [
       "SEES",
       "HEARS",
@@ -1794,6 +1795,7 @@
     "type": "MONSTER",
     "name": { "str": "maddened hunter" },
     "description": "A cloak of metal scales obscures this humanoid figure, heavy breaths revealing it to still be among the living.  Gripped by raving madness, bloodshot eyes glower from under a metal mask, as it grasps a silver-decorated war hammer.",
+    "aggression": 5,
     "melee_skill": 6,
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
@@ -1827,6 +1829,8 @@
       }
     ],
     "death_drops": "mon_feral_magehunter_death_drops",
+    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "FIRE", "HURT" ],
+    "fear_triggers": [  ],
     "extend": { "flags": [ "STUN_IMMUNE" ] }
   },
   {
@@ -1835,6 +1839,7 @@
     "type": "MONSTER",
     "name": { "str": "maddened keeper" },
     "description": "Dark robes and a heavy fur mantle conceal a human figure, still breathing despite looking to be on the edge of death.  Gripped by raving madness, it desperately clutches a golden talisman that crackles with electricity.",
+    "aggression": -5,
     "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "stab", "amount": 6 } ],
     "armor_bash": 4,
@@ -1846,8 +1851,8 @@
       [ "PARROT", 5 ],
       {
         "type": "gun",
-        "cooldown": 15,
-        "move_cost": 50,
+        "cooldown": 5,
+        "move_cost": 100,
         "gun_type": "monster_lightning_fake",
         "ammo_type": "generic_no_ammo",
         "fake_str": 6,
@@ -1855,12 +1860,19 @@
         "fake_per": 8,
         "max_ammo": 1000,
         "ranges": [ [ 2, 25, "DEFAULT" ] ],
-        "require_targeting_player": false,
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "laser_lock": true,
+        "targeting_cost": 100,
+        "targeting_sound": "\"May He forge your chains!\"  The maddened keeper raises its symbol of judgment!",
+        "targeting_volume": 30,
         "description": "Lightning arcs from the maddened keeper's symbol of judgment!",
         "no_ammo_sound": "a cry of anger!"
       }
     ],
-    "death_drops": "mon_feral_keeper_death_drops"
+    "death_drops": "mon_feral_keeper_death_drops",
+    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "STALK" ]
   },
   {
     "id": "mon_feral_sanguinist",
@@ -1868,6 +1880,7 @@
     "type": "MONSTER",
     "name": { "str": "maddened sanguinist" },
     "description": "Clad in well-worn leather armor, this wretch is still alive and breathing despite its unsteady gait and bloodshot gaze.  Gripped by raving madness, flames dance around the gem-adorned staff it uses as a walking stick.",
+    "aggression": 10,
     "melee_skill": 6,
     "melee_dice_sides": 8,
     "armor_bash": 10,
@@ -1879,8 +1892,8 @@
       [ "PARROT", 5 ],
       {
         "type": "gun",
-        "cooldown": 15,
-        "move_cost": 50,
+        "cooldown": 5,
+        "move_cost": 100,
         "gun_type": "monster_fire_fake",
         "ammo_type": "generic_no_ammo",
         "fake_str": 9,
@@ -1888,12 +1901,19 @@
         "fake_per": 7,
         "max_ammo": 1000,
         "ranges": [ [ 2, 7, "DEFAULT" ] ],
-        "require_targeting_player": false,
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "laser_lock": true,
+        "targeting_cost": 100,
+        "targeting_sound": "\"Burn!\"  The maddened sanguinist levels its hellfire staff!",
+        "targeting_volume": 30,
         "description": "Flames erupt from the maddened sanguinist's hellfire staff!",
         "no_ammo_sound": "a cry of anger!"
       }
     ],
     "death_drops": "mon_feral_sanguinist_death_drops",
+    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "extend": { "flags": [ "ACIDPROOF" ] }
   }
 ]
