@@ -423,7 +423,15 @@
           { "id": "overlay_worn_robe_shadow_xl_on", "fg": 232 },
           { "id": "ethereal_hand_crossbow", "fg": 233 },
           { "id": "overlay_wielded_ethereal_hand_crossbow", "fg": 234 },
-          { "id": "fd_veil_light", "fg": 235 }
+          { "id": "fd_veil_light", "fg": 235 },
+          { "id": "mon_feral_summoner", "fg": 236 },
+          { "id": "mon_feral_magehunter", "fg": 237 },
+          { "id": "mon_feral_keeper", "fg": 238 },
+          { "id": "mon_feral_sanguinist", "fg": 239 },
+          {
+            "id": [ "corpse_mon_feral_summoner", "corpse_mon_feral_magehunter", "corpse_mon_feral_keeper", "corpse_mon_feral_sanguinist" ],
+            "fg": 240
+          }
         ],
         "sprite_width": 32,
         "sprite_height": 32
