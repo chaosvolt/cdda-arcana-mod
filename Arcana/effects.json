@@ -466,9 +466,7 @@
   {
     "type": "effect_type",
     "id": "spell_might",
-    "name": [
-      "Might"
-    ],
+    "name": [ "Might" ],
     "desc": [ "The fabric of The Veil is woven into your frame.  Your strength is augmented by magic." ],
     "remove_message": "You feel weakened as your magically-induced strength leaves you.",
     "decay_messages": [ [ "Your spell of might is waning.", "bad" ] ],
@@ -482,9 +480,7 @@
   {
     "type": "effect_type",
     "id": "spell_agility",
-    "name": [
-      "Agility"
-    ],
+    "name": [ "Agility" ],
     "desc": [ "The winds of distant realms are at your back.  Your dexterity and speed are augmented by magic." ],
     "remove_message": "You feel sluggish as your magically-induced agility leaves you.",
     "decay_messages": [ [ "Your spell of agility is waning.", "bad" ] ],
@@ -498,9 +494,7 @@
   {
     "type": "effect_type",
     "id": "spell_insight",
-    "name": [
-      "Insight"
-    ],
+    "name": [ "Insight" ],
     "desc": [
       "The eyes of The Beyond shall guide you.  Your perception is augmented by magic, and you can see clearly in darkness."
     ],
@@ -613,6 +607,8 @@
       "poison",
       "badpoison",
       "foodpoison",
+      "dermatik",
+      "formication",
       "bloodworms",
       "paincysts",
       "brainworms",
@@ -1070,9 +1066,7 @@
   {
     "type": "effect_type",
     "id": "adrenaline_arcana",
-    "name": [
-      "Killing Surge"
-    ],
+    "name": [ "Killing Surge" ],
     "desc": [ "You feel a rush of otherworldly adrenaline." ],
     "remove_message": "The otherworldly adrenaline running through you fades.",
     "decay_messages": [ [ "You can feel the unnatural surge of adrenaline waning.", "bad" ] ],

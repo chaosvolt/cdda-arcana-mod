@@ -327,10 +327,10 @@
     "type": "effect_type",
     "id": "blood_clarity",
     "name": [ "Clarity of Blood" ],
-    "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],
+    "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus or mutagenic toxins." ],
     "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
     "resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ],
-    "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
+    "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts", "mutating" ],
     "decay_messages": [ [ "Your clarity of blood spell is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "120 m",
@@ -560,7 +560,7 @@
     "id": "dragonblood_clarity",
     "name": [ "Revenant Blood" ],
     "desc": [
-      "Immunity to food poisoning, parasites, and fungus.  Increased hunger and thirst gain, with positive metabolic effects."
+      "Immunity to food poisoning, parasites, fungus, and mutagenic toxins.  Increased hunger and thirst gain, with positive metabolic effects."
     ],
     "resist_effects": [ "talisman_warding" ],
     "remove_message": "The protective effect of your sanguine mark fades, leaving a momentary itch in your veins.",
@@ -569,13 +569,16 @@
       "poison",
       "badpoison",
       "foodpoison",
+      "dermatik",
+      "formication",
       "bloodworms",
       "paincysts",
       "brainworms",
       "tapeworm",
       "spores",
       "fungus",
-      "bloated"
+      "bloated",
+      "mutating"
     ],
     "decay_messages": [ [ "The protective magic flowing through your blood is starting to wane.", "bad" ] ],
     "rating": "good",
@@ -1037,9 +1040,7 @@
   {
     "type": "effect_type",
     "id": "adrenaline_arcana",
-    "name": [
-      "Killing Surge"
-    ],
+    "name": [ "Killing Surge" ],
     "desc": [ "You feel a rush of otherworldly adrenaline." ],
     "remove_message": "The otherworldly adrenaline running through you fades.",
     "decay_messages": [ [ "You can feel the unnatural surge of adrenaline waning.", "bad" ] ],
