@@ -216,7 +216,7 @@
     "healthy": -6,
     "fun": -8,
     "freezing_point": -10,
-    "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOOD" },
+    "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOOD", "is_strong": true },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
