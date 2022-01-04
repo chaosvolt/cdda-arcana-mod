@@ -126,7 +126,7 @@
     "resist_effects": [ "talisman_warding" ],
     "desc": [ "Not immortality, but it still feels nice." ],
     "remove_message": "The healing effect fades.",
-    "removes_effects": [ "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
+    "removes_effects": [ "poison", "badpoison", "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
     "decay_messages": [ [ "The soothing effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_duration": "30 m",
@@ -943,7 +943,7 @@
     "id": "arcana_scroll_nature_effect",
     "//": "Explicitly punish Mycus players who will be immune to mutation, that's what you get for channeling a rival interloper's nature magic.",
     "resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ],
-    "blocks_effects": [ "blind", "deaf", "infected", "bite", "bleed", "poison", "badpoison", "spores", "fungus" ],
+    "removes_effects": [ "blind", "deaf", "infected", "bite", "bleed", "poison", "badpoison", "spores", "fungus" ],
     "rating": "good",
     "base_mods": {
       "rad_min": [ -25, 25 ],
