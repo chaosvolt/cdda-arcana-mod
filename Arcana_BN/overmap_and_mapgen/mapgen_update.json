@@ -245,15 +245,7 @@
     "terrain": [
       {
         "result": "t_rock_smooth",
-        "valid_terrain": [
-          "t_wall_resin",
-          "t_fault",
-          "t_pedestal_wyrm",
-          "t_pedestal_temple",
-          "t_paper",
-          "t_root_wall",
-          "t_wax"
-        ]
+        "valid_terrain": [ "t_wall_resin", "t_fault", "t_pedestal_wyrm", "t_pedestal_temple", "t_paper", "t_root_wall", "t_wax" ]
       },
       {
         "result": "t_rock_floor_no_roof",
@@ -1128,8 +1120,7 @@
       "mapping": {
         "B": { "items": [ { "item": "bed", "chance": 50 } ] },
         "D": { "items": [ { "item": "clothing_outdoor_torso", "chance": 50 }, { "item": "clothing_outdoor_pants", "chance": 50 } ] }
-      },
-      "faction_owner": [ { "id": "cleansing_flame", "x": [ 0, 6 ], "y": [ 0, 9 ] } ]
+      }
     }
   },
   {
@@ -1180,8 +1171,7 @@
           ]
         },
         "t": { "items": [ { "item": "standing_stones_libation", "chance": 5 } ] }
-      },
-      "faction_owner": [ { "id": "cleansing_flame", "x": [ 0, 1 ], "y": [ 0, 9 ] } ]
+      }
     }
   },
   {
