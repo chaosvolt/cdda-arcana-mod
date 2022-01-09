@@ -61,7 +61,7 @@ Notes on the properties listed for each type of spell:
 Property | At Minimum Level | At Max Level
 --- | --- | ---
 Energy Cost | 500 stamina * ( Spell Rank + 1 ) | 250 stamina * ( Spell Rank + 1 )
-Spell Exertion | 500 sec * ( Spell Rank + 1 ) | 250 sec * ( Spell Rank + 1 )
+Spell Exertion | 50 sec * ( Spell Rank + 1 ) | 25 sec * ( Spell Rank + 1 )
 Casting Time | 0.4 sec * ( Spell Rank + 1 ) | 0.2 sec * ( Spell Rank + 1 )
 Total Damage | 20 per Spell Rank | 40 per Spell Rank
 Duration, Protective Buffs | 2 min per Spell Rank | 4 min per Spell Rank
@@ -74,9 +74,9 @@ Magic Signs are the most readily-available type of spell in Arcana and Magic Ite
 
 The way their stats scale up is considered the baseline the other two types of spell are compared to, with reasonable minimum minimum stats that grow to double when leveled to maximum. All Magic Signs have a maximum spell level of 10, in between Arcane Blessings and Sanguine Marks.
 
-One complication to consider: Stamina is a very short-term resource, recovering far faster than mana or HP. Because of this, casting Magic Signs also inflicts a secondary cost on the user. Magic Sign Exertion is a status effect that gradually increases fatigue, at a rate of 1 every 250 seconds (slowed down to 1 every 500 seconds if under certain other status effects).
+One complication to consider: Stamina is a very short-term resource, recovering far faster than mana or HP. Because of this, casting Magic Signs also inflicts a secondary cost on the user. Magic Sign Exertion is a status effect that steadily increases fatigue, at a rate of 1 every 25 seconds.
 
-Magic Signs give out this status effect for a number of seconds exactly equaling its current stamina cost. To summarize the math on that, because 1 fatigue is assumed to equal 5 mana, the net effect is that casting Magic Signs also costs 20% of its energy cost in fatigue, in terms of how much mana both resource costs equate to.
+Magic Signs give out this status effect for a number of seconds exactly equaling 10% its current stamina cost. It can also be seen as a number of seconds equaling how much mana that amount of stamina is worth, if 10 stamina is assumed to equal 1 mana. Because 1 fatigue is assumed to equal 5 mana, the net effect is that casting Magic Signs also costs 20% of its energy cost in fatigue, in terms of how much mana both resource costs equate to.
 
 ### Arcane Blessings
 
