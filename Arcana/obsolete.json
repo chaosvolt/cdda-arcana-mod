@@ -1215,31 +1215,37 @@
   {
     "id": "arcana_acidchitin_weave",
     "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR" ],
     "info": "This gear has been altered by druidic magic, increasing its <good>protection</good> as well as <good>acid resistance</good>."
   },
   {
     "id": "arcana_bone_weave",
     "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR" ],
     "info": "This gear has been altered by druidic magic, increasing its <good>protection</good> as well as reducing its <good>encumbrance</good>."
   },
   {
     "id": "arcana_chitin_weave",
     "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR" ],
     "info": "This gear has been altered by druidic magic, increasing its <good>protection</good>."
   },
   {
     "id": "arcana_clay_weave",
     "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR" ],
     "info": "This gear has been altered by druidic magic, increasing its <good>protection</good> as well as its <good>fire resistance</good>."
   },
   {
     "id": "arcana_stone_weave",
     "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR" ],
     "info": "This gear has been altered by druidic magic, increasing its <good>protection</good> as well as its <good>fire resistance</good>."
   },
   {
     "id": "arcana_wood_weave",
     "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR" ],
     "info": "This gear has been altered by druidic magic, increasing its <good>protection</good> as well as reducing its <good>encumbrance</good>."
   },
   {
@@ -1255,42 +1261,5 @@
     "looks_like": "candle_warding_active",
     "color": "white",
     "flags": [ "NO_SALVAGE", "LIGHT_120" ]
-  },
-  {
-    "type": "effect_type",
-    "id": "arcana_suppression",
-    "name": [ "Suppressed Fire" ],
-    "desc": [ "Reduces hunger and thirst gain, hinders stamina regen." ],
-    "resist_effects": [ "talisman_warding" ],
-    "remove_message": "The warmth within your body flares up as the suppression effect fades.",
-    "blocks_effects": [
-      "nausea",
-      "poison",
-      "badpoison",
-      "foodpoison",
-      "bloodworms",
-      "paincysts",
-      "brainworms",
-      "tapeworm",
-      "spores",
-      "fungus"
-    ],
-    "decay_messages": [ [ "The magic suppressing your inner fire is waning.", "bad" ] ],
-    "rating": "good",
-    "max_duration": "120 m",
-    "max_intensity": 120,
-    "int_dur_factor": "1 m",
-    "base_mods": {
-      "hunger_min": [ -1 ],
-      "hunger_tick": [ 300 ],
-      "thirst_min": [ -1 ],
-      "thirst_tick": [ 300 ],
-      "health_min": [ -1 ],
-      "health_tick": [ 600 ],
-      "h_mod_min": [ -1 ],
-      "h_mod_tick": [ 600 ],
-      "stamina_min": [ -5 ],
-      "stamina_tick": [ 5 ]
-    }
   }
 ]

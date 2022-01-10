@@ -220,7 +220,7 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "search_range": 180,
+        "search_range": 90,
         "min_distance": 10
       }
     },
@@ -237,7 +237,7 @@
       "failure": "How in God's name did you fail at this?"
     },
     "end": {
-      "effect": [ { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" }, { "u_spawn_item": "FMCNote", "count": 5 } ]
+      "effect": [ { "npc_add_effect": "rural_church_aware", "duration": "PERMANENT" }, { "u_buy_item": "FMCNote", "count": 5 } ]
     }
   },
   {
@@ -254,7 +254,7 @@
     "followup": "MISSION_CF_REP_2",
     "dialogue": {
       "describe": "Odin, guide my hand...",
-      "offer": "We have been working on fortifying this location, and trying to regain contact with any others of our other.  But mundane methods alone may not be sufficient.  I ask that you obtain something known as a bone charm, carved from the bones of some of the more otherworldly creatures now infesting the world.  If you wish, I will explain what purpose this serves.",
+      "offer": "We have been working on fortifying this location, and trying to regain contact with any others of our other.  But mundane methods alone may not be sufficient.  There are protective spells that would not only augment our defense, but serve as the mark of our sanctum to those experienced in our ways.  For this I will need a specific ritual component, known as a bone charm.",
       "accepted": "Thank you.  I know it's a strange request, as is asking that you make it yourself.  But I feel that adding your own personal touch to it may prove a useful learning experience, as every talisman worked from the bones of otherworldly beasts reflects the nature of its maker.",
       "rejected": "I understand that this may seem like a trivial thing, and an odd request.  But this ritual is more important to us than you realize.",
       "advice": "There are many monsters whose bones, ivory, and such carry the mark of the otherworldly upon them.  The impish creatures known as \"krecks\" among survivors would be easy prey, and so-called \"grackens\" should be an even safer hunt.  Or you could seek out beasts such as flying polyps or hunting horrors.",
@@ -264,7 +264,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_spawn_item": "CF_golden_scale", "count": 2 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 2 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "place_nested": [ { "chunks": [ "cf_church_upgrade_1_a" ], "x": 3, "y": 3 } ] },
         {
@@ -287,7 +287,7 @@
     "has_generic_rewards": false,
     "item": "cf_rep_trade_receipt",
     "start": {
-      "effect": [ { "u_spawn_item": "cf_rep_trade_arrangement" }, { "u_spawn_item": "CF_golden_scale", "count": 20 } ],
+      "effect": [ { "u_buy_item": "cf_rep_trade_arrangement" }, { "u_buy_item": "CF_golden_scale", "count": 20 } ],
       "assign_mission_target": { "om_terrain": "evac_center_18", "reveal_radius": 1 }
     },
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -304,7 +304,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_spawn_item": "CF_golden_scale", "count": 4 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 4 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "place_nested": [ { "chunks": [ "cf_church_upgrade_2_a" ], "x": 3, "y": 3 } ] },
         {
@@ -346,7 +346,7 @@
         { "u_add_effect": "cf_mission_sofia_3", "duration": "PERMANENT" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
-        { "u_spawn_item": "CF_golden_scale", "count": 6 }
+        { "u_buy_item": "CF_golden_scale", "count": 6 }
       ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "place_nested": [ { "chunks": [ "cf_church_upgrade_3_a" ], "x": 1, "y": 1 } ] },
@@ -391,7 +391,7 @@
         { "u_add_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "npc_add_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_spawn_item": "CF_golden_scale", "count": 8 }
+        { "u_buy_item": "CF_golden_scale", "count": 8 }
       ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "place_nested": [ { "chunks": [ "cf_church_upgrade_4_h" ], "x": 4, "y": 17 } ] },
@@ -431,7 +431,7 @@
       "effect": [
         { "npc_add_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_spawn_item": "CF_golden_scale", "count": 10 }
+        { "u_buy_item": "CF_golden_scale", "count": 10 }
       ],
       "update_mapgen": [ { "om_terrain": "cf_church_2", "place_nested": [ { "chunks": [ "cf_church_upgrade_6" ], "x": 2, "y": 3 } ] } ]
     }
@@ -456,7 +456,7 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "search_range": 180,
+        "search_range": 90,
         "min_distance": 20
       },
       "update_mapgen": [
@@ -479,7 +479,7 @@
       "failure": "But how..."
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_spawn_item": "CF_golden_scale", "count": 12 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 12 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_2", "place_nested": [ { "chunks": [ "cf_church_upgrade_8_a" ], "x": 8, "y": 4 } ] },
         { "om_terrain": "cf_church_2_roof", "mapgen_update_id": "cf_church_upgrade_8_b" }
@@ -498,7 +498,7 @@
     "item": "arcana_radio_relay_beacon",
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
-      "assign_mission_target": { "om_terrain": "station_radio_1", "reveal_radius": 3 },
+      "assign_mission_target": { "om_terrain": "station_radio_1", "reveal_radius": 3, "cant_see": true },
       "update_mapgen": [
         { "mapgen_update_id": "arcana_radio_station" },
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_9_a" },
@@ -520,7 +520,7 @@
       "effect": [
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "u_add_effect": "cf_mission_sofia_7", "duration": "PERMANENT" },
-        { "u_spawn_item": "CF_golden_scale", "count": 14 }
+        { "u_buy_item": "CF_golden_scale", "count": 14 }
       ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_10_a" },
@@ -544,7 +544,7 @@
       "assign_mission_target": { "om_terrain": "strange_grove", "om_special": "Curious Structure", "reveal_radius": 3, "z": 0 }
     },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_spawn_item": "CF_golden_scale", "count": 6 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 6 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_GM_1_a" },
         { "om_terrain": "cf_church_2", "mapgen_update_id": "cf_church_upgrade_GM_1_b" },
@@ -555,7 +555,7 @@
     "dialogue": {
       "describe": "Grant us strength...",
       "offer": "During our journey we've seen scattered evidence of some hazards still afflicting certain areas, former hotspots of anomalous activity now made even more dangerous, ever since holes in reality began opening up.  With the rest of us focused on rebuilding and securing the area, I would like to ask your assistance with investigating one such location, and retrieving an artifact of historical importance believed to be lost there.",
-      "accepted": "Thank you.  I will direct you to the location, if you've not seen it for yourself.  Decades ago the place was inhabited, but now the place seems to be overgrown and infested with monsters.  Do what you must to cleanse the place, and retrieve what the texts called a bane staff.  Dii vult.",
+      "accepted": "Thank you.  I will direct you to the location, if you've not seen it for yourself.  Decades ago the place was inhabited, but now the place seems to be overgrown and infested with monsters.  Do what you must to cleanse the place.  Dii vult.",
       "rejected": "When you believe you are ready, talk to me again.  The longer these old places linger without being dealt with, the more of a threat they may become.",
       "advice": "The extent to which the place has overgrown is unnatural.  I would expect monsters comfortable among greenery to be the most common threat, and we have reason to believe something large has taken root there.  Beyond that, I can tell you little of the history behind that place, Sofia might know more.",
       "inquire": "How goes the hunt?",
@@ -578,7 +578,7 @@
     "followup": "MISSION_CF_GM_3",
     "start": { "assign_mission_target": { "om_terrain": "curious_structure", "reveal_radius": 3, "z": 0 } },
     "end": {
-      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_spawn_item": "CF_golden_scale", "count": 8 } ],
+      "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_buy_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_GM_2_a" },
         { "om_terrain": "cf_church_2", "mapgen_update_id": "cf_church_upgrade_GM_2_b" },
@@ -588,7 +588,7 @@
     },
     "dialogue": {
       "describe": "Grant us strength...",
-      "offer": "I believe I can now trust you with a more dangerous, yet also more vital, task.  In the past we had few dedicated safehouses, most of us were hosted in the rural homes and churches of our brethren and those they could trust.  Only one place was truly built by our hand, and it suffered the same strange occurrences so many other places suffered during zero hour.  The handful of survivors to flee brought with them tales of living fire and otherworldly horror, warping the very stones underneath the sanctum.  If you believe yourself ready, I would like you to lead a hunt to cleanse it, and take the demon's claws as proof of the hunt.",
+      "offer": "I believe I can now trust you with a more dangerous, yet also more vital, task.  In the past we had few dedicated safehouses, most of us were hosted in the rural homes and churches of our brethren and those they could trust.  Only one place was truly built by our hand, and it suffered the same strange occurrences so many other places suffered during zero hour.  The handful of survivors to flee brought with them tales of living fire and otherworldly horror, warping the very stones underneath the sanctum.  If you believe yourself ready, I would like you to lead a hunt to cleanse it.",
       "accepted": "By Thor and The God In Three Persons both, may you be victorious.  The evil lurking there was described as wielding a clawed weapon that warped The Veil itself with hellfire, until it was struck from its fiery grasp by a lucky strike.  They were able to seal it behind a barrier with one of our swords as the keystone, and you will need to undo the seal to confront it.  If you can retrieve that infernal weapon in your hunt, we will be able to destroy it safely.  I would commit a full hunting party if only we could spare anyone.  Dii vult!",
       "rejected": "Understood.  This task is dangerous, and the seal they set up shouldn't be undone unless you're prepared to see it through to the end.  Speak with me when you see fit.",
       "advice": "Bring any assistance you can, and expect all manner of abominations to have followed that thing through the wounds in The Veil.  Be prepared for infernal fire, any magic or equipment that would safeguard against flame would help.  Do as best as you can to assemble a proper hunting party, but sadly we are stretched thin as it is.",
@@ -615,7 +615,7 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "search_range": 180,
+        "search_range": 90,
         "min_distance": 10
       },
       "update_mapgen": [
@@ -630,7 +630,7 @@
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "u_add_effect": "cf_mission_johnathan_3", "duration": "PERMANENT" },
         { "npc_add_effect": "cf_mission_3", "duration": "PERMANENT" },
-        { "u_spawn_item": "CF_golden_scale", "count": 10 }
+        { "u_buy_item": "CF_golden_scale", "count": 10 }
       ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_GM_3_a" },
@@ -665,7 +665,7 @@
     "has_generic_rewards": false,
     "start": {
       "effect": [ { "u_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" } ],
-      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 3, "random": true, "search_range": 50, "min_distance": 20 },
+      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 3, "random": true, "cant_see": true, "search_range": 50, "min_distance": 20 },
       "update_mapgen": {
         "set": [
           { "square": "terrain", "id": "t_region_groundcover_forest", "x": 4, "x2": 19, "y": 4, "y2": 19 },
@@ -748,7 +748,8 @@
         "om_terrain_replace": "field",
         "reveal_radius": 5,
         "random": true,
-        "search_range": 180,
+        "cant_see": true,
+        "search_range": 90,
         "min_distance": 20
       },
       "update_mapgen": [
@@ -777,7 +778,7 @@
       "effect": [
         { "npc_add_var": "johnathan_mission_finale", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_spawn_item": "CF_golden_scale", "count": 20 }
+        { "u_buy_item": "CF_golden_scale", "count": 20 }
       ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_GM_5_a" },
@@ -800,7 +801,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "has_generic_rewards": false,
     "end": {
-      "effect": [ { "u_spawn_item": "CF_golden_scale", "count": 5 } ],
+      "effect": [ { "u_buy_item": "CF_golden_scale", "count": 5 } ],
       "update_mapgen": [ { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_aux_a" } ]
     },
     "dialogue": {
@@ -827,7 +828,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "has_generic_rewards": false,
     "end": {
-      "effect": [ { "u_spawn_item": "CF_golden_scale", "count": 20 } ],
+      "effect": [ { "u_buy_item": "CF_golden_scale", "count": 20 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_aux_b_1" },
         { "om_terrain": "cf_church_3", "mapgen_update_id": "cf_church_upgrade_aux_b_2" }
@@ -856,7 +857,7 @@
     "value": 25000,
     "origins": [ "ORIGIN_SECONDARY" ],
     "end": {
-      "effect": [ { "u_spawn_item": "CF_golden_scale", "count": 10 }, { "u_spawn_item": "rx12_injector" } ],
+      "effect": [ { "u_buy_item": "CF_golden_scale", "count": 10 }, { "u_buy_item": "rx12_injector" } ],
       "update_mapgen": [ { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_aux_c" } ]
     },
     "dialogue": {
@@ -888,6 +889,7 @@
         "om_terrain_replace": "field",
         "reveal_radius": 3,
         "random": true,
+        "cant_see": true,
         "search_range": 90,
         "min_distance": 10
       }
@@ -904,7 +906,7 @@
       "failure": "Seeing this is probably a bug."
     },
     "end": {
-      "effect": [ { "u_spawn_item": "CF_golden_scale", "count": 8 } ],
+      "effect": [ { "u_buy_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_aux_d_1" },
         { "om_terrain": "cf_church_3", "mapgen_update_id": "cf_church_upgrade_aux_d_2" }
@@ -922,7 +924,14 @@
     "has_generic_rewards": false,
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
-      "assign_mission_target": { "om_terrain": "new_anomaly_w", "om_terrain_replace": "field", "random": true, "search_range": 60, "min_distance": 10 },
+      "assign_mission_target": {
+        "om_terrain": "new_anomaly_w",
+        "om_terrain_replace": "field",
+        "random": true,
+        "cant_see": true,
+        "search_range": 60,
+        "min_distance": 10
+      },
       "update_mapgen": [
         {
           "om_terrain": "new_anomaly_w",
@@ -942,7 +951,7 @@
       "failure": "Seeing this is probably a bug."
     },
     "end": {
-      "effect": [ { "u_spawn_item": "CF_golden_scale", "count": 8 } ],
+      "effect": [ { "u_buy_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_aux_e_1" },
         { "om_terrain": "cf_church_3", "mapgen_update_id": "cf_church_upgrade_aux_e_2" }
@@ -988,7 +997,7 @@
       "effect": [
         { "npc_add_var": "nicholas_mission_1_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_spawn_item": "CF_golden_scale", "count": 10 }
+        { "u_buy_item": "CF_golden_scale", "count": 10 }
       ]
     }
   },
@@ -1004,7 +1013,7 @@
     "item": "arcane_purifier_intel_2",
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_PURIFIER_1_3",
-    "start": { "effect": [ { "u_spawn_item": "cf_purifier_project_data" } ] },
+    "start": { "effect": [ { "u_buy_item": "cf_purifier_project_data" } ] },
     "dialogue": {
       "describe": "Seeing this is probably a bug.",
       "offer": "I'd like for you to find anyone else you think might be familiar with the military's experiments, the research labs, that sort of thing.  People who might be able to help us get a definite location out of what little information we have to go on.",
@@ -1020,7 +1029,7 @@
       "effect": [
         { "npc_add_var": "nicholas_mission_2_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_spawn_item": "CF_golden_scale", "count": 15 }
+        { "u_buy_item": "CF_golden_scale", "count": 15 }
       ]
     }
   },
@@ -1057,7 +1066,7 @@
       "success_lie": "Seeing this is probably a bug.",
       "failure": "Seeing this is probably a bug."
     },
-    "end": { "effect": [ { "u_spawn_item": "FMCNote", "count": 20 } ] }
+    "end": { "effect": [ { "u_buy_item": "FMCNote", "count": 20 } ] }
   },
   {
     "id": "MISSION_CF_PURIFIER_1_INTERLUDE_2",
@@ -1092,7 +1101,7 @@
       "success_lie": "Seeing this is probably a bug.",
       "failure": "Seeing this is probably a bug."
     },
-    "end": { "effect": [ { "u_spawn_item": "FMCNote", "count": 15 } ] }
+    "end": { "effect": [ { "u_buy_item": "FMCNote", "count": 15 } ] }
   },
   {
     "id": "MISSION_CF_PURIFIER_1_3",
@@ -1113,7 +1122,7 @@
         "reveal_radius": 3,
         "random": true,
         "cant_see": true,
-        "search_range": 180,
+        "search_range": 90,
         "min_distance": 10
       }
     },
@@ -1132,7 +1141,7 @@
       "effect": [
         { "npc_add_var": "nicholas_mission_3_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
-        { "u_spawn_item": "CF_golden_scale", "count": 20 }
+        { "u_buy_item": "CF_golden_scale", "count": 20 }
       ]
     }
   },

@@ -5,7 +5,6 @@
     "name": "curious structure",
     "sym": "C",
     "color": "i_light_red",
-    "looks_like": "church",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -15,7 +14,6 @@
     "name": "curious structure roof",
     "sym": "C",
     "color": "i_light_red",
-    "looks_like": "church_roof",
     "see_cost": 5
   },
   {
@@ -24,7 +22,6 @@
     "name": "curious underground structure",
     "sym": "C",
     "color": "dark_gray",
-    "looks_like": "basement",
     "see_cost": 5
   },
   {
@@ -33,7 +30,6 @@
     "name": "eerie cavern",
     "sym": "C",
     "color": "red",
-    "looks_like": "cave_underground",
     "see_cost": 5
   },
   {
@@ -42,7 +38,6 @@
     "name": "strange grove",
     "sym": "T",
     "color": "i_light_green",
-    "looks_like": "triffid_grove",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -52,7 +47,6 @@
     "name": "underground ruin",
     "sym": "T",
     "color": "i_green",
-    "looks_like": "triffid_roots",
     "see_cost": 5
   },
   {
@@ -61,7 +55,6 @@
     "name": "impact site",
     "sym": "O",
     "color": "i_light_red",
-    "looks_like": "crater",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -71,7 +64,6 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -80,7 +72,6 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -89,7 +80,6 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -98,7 +88,6 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -107,7 +96,6 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -116,7 +104,6 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -125,7 +112,6 @@
     "name": "floating temple roof",
     "sym": "T",
     "color": "i_light_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -134,7 +120,6 @@
     "name": "floating temple roof",
     "sym": "T",
     "color": "i_light_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -143,7 +128,6 @@
     "name": "floating temple roof",
     "sym": "T",
     "color": "i_light_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -152,7 +136,6 @@
     "name": "sanguine ruin roof",
     "sym": "T",
     "color": "i_blue",
-    "looks_like": "temple",
     "see_cost": 5
   },
   {
@@ -161,7 +144,6 @@
     "name": "sanguine ruin",
     "sym": "T",
     "color": "i_blue",
-    "looks_like": "temple",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -171,7 +153,6 @@
     "name": "underground ruin",
     "sym": "T",
     "color": "dark_gray",
-    "looks_like": "temple_finale",
     "see_cost": 5
   },
   {
@@ -180,7 +161,6 @@
     "name": "underground ruin",
     "sym": "T",
     "color": "dark_gray",
-    "looks_like": "temple_finale",
     "see_cost": 5
   },
   {
@@ -189,7 +169,6 @@
     "name": "underground ruin",
     "sym": "T",
     "color": "dark_gray",
-    "looks_like": "temple_finale",
     "see_cost": 5
   },
   {
@@ -198,7 +177,6 @@
     "name": "underground ruin",
     "sym": "T",
     "color": "dark_gray",
-    "looks_like": "temple_finale",
     "see_cost": 5
   },
   {
@@ -207,7 +185,6 @@
     "name": "ruined shrine",
     "sym": "S",
     "color": "i_light_gray",
-    "looks_like": "standing_stones",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -217,7 +194,6 @@
     "name": "ruined shrine",
     "sym": "F",
     "color": "i_light_gray",
-    "looks_like": "standing_stones",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -227,7 +203,6 @@
     "name": "ruined shrine",
     "sym": "@",
     "color": "i_light_gray",
-    "looks_like": "standing_stones",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -242,7 +217,6 @@
     "name": "recent anomaly",
     "sym": ".",
     "color": "brown_magenta",
-    "looks_like": "rift",
     "see_cost": 2,
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
@@ -252,7 +226,6 @@
     "name": "recent anomaly",
     "sym": ".",
     "color": "brown_magenta",
-    "looks_like": "rift",
     "see_cost": 2,
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
@@ -262,7 +235,6 @@
     "name": "strange pond",
     "sym": ".",
     "color": "blue",
-    "looks_like": "pond_field",
     "see_cost": 2,
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
@@ -272,7 +244,6 @@
     "name": "unknown rock formation",
     "sym": ".",
     "color": "light_gray",
-    "looks_like": "standing_stones",
     "see_cost": 2,
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
@@ -282,7 +253,6 @@
     "name": "odd house",
     "sym": "v",
     "color": "i_light_green",
-    "looks_like": "rural_house1",
     "see_cost": 5
   },
   {
@@ -291,7 +261,6 @@
     "name": "odd house",
     "sym": "^",
     "color": "i_light_green",
-    "looks_like": "rural_house1",
     "see_cost": 5
   },
   {
@@ -300,7 +269,6 @@
     "name": "odd house roof",
     "sym": "^",
     "color": "i_light_green",
-    "looks_like": "rural_house1_roof",
     "see_cost": 5
   },
   {
@@ -309,7 +277,6 @@
     "name": "back lot",
     "sym": "O",
     "color": "brown",
-    "looks_like": "farm_lot_M",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
   },
@@ -319,7 +286,6 @@
     "name": "back lot",
     "sym": "O",
     "color": "brown",
-    "looks_like": "farm_lot_M",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
   },
@@ -329,7 +295,6 @@
     "name": "dirt lot",
     "sym": "O",
     "color": "brown",
-    "looks_like": "farm_lot_M",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
   },
@@ -339,7 +304,6 @@
     "name": "rural church",
     "sym": "C",
     "color": "light_red",
-    "looks_like": "church",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
   },
@@ -349,7 +313,6 @@
     "name": "open air",
     "sym": ".",
     "color": "blue",
-    "looks_like": "open_air",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -358,7 +321,6 @@
     "name": "open air",
     "sym": ".",
     "color": "blue",
-    "looks_like": "open_air",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -367,7 +329,6 @@
     "name": "open air",
     "sym": ".",
     "color": "blue",
-    "looks_like": "open_air",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -376,7 +337,6 @@
     "name": "rural church roof",
     "sym": "C",
     "color": "light_red",
-    "looks_like": "church_roof",
     "see_cost": 5,
     "flags": [ "NO_ROTATE" ]
   },
@@ -386,7 +346,6 @@
     "name": "cabin roof",
     "sym": "C",
     "color": "i_green",
-    "looks_like": "cabin_strange_roof",
     "see_cost": 5
   },
   {
@@ -395,7 +354,6 @@
     "name": "cabin",
     "sym": "C",
     "color": "i_green",
-    "looks_like": "cabin_strange",
     "see_cost": 5
   },
   {
@@ -404,7 +362,6 @@
     "name": "cabin",
     "sym": "C",
     "color": "i_green",
-    "looks_like": "cabin_strange",
     "see_cost": 5
   },
   {
@@ -413,7 +370,6 @@
     "name": "cabin basement",
     "sym": "C",
     "color": "i_green",
-    "looks_like": "cabin_strange_b",
     "see_cost": 5
   },
   {
@@ -422,17 +378,15 @@
     "name": "house",
     "copy-from": "generic_city_building",
     "color": "light_green",
-    "looks_like": "house",
     "see_cost": 2,
     "flags": [ "SIDEWALK", "RISK_HIGH" ]
   },
   {
     "type": "overmap_terrain",
     "id": "house_arcana_roof",
-    "name": "house roof",
+    "name": "house",
     "copy-from": "generic_city_building",
     "color": "light_green",
-    "looks_like": "house_roof",
     "see_cost": 2
   },
   {
@@ -441,7 +395,6 @@
     "name": "field",
     "sym": ".",
     "color": "brown",
-    "looks_like": "field",
     "see_cost": 2,
     "flags": [ "RISK_HIGH" ]
   },
@@ -450,7 +403,6 @@
     "type": "overmap_terrain",
     "name": "unidentified anomalous structure roof",
     "sym": "T",
-    "looks_like": "open_air",
     "color": "i_light_gray",
     "see_cost": 5
   },
@@ -460,7 +412,6 @@
     "name": "unidentified anomalous structure",
     "sym": "T",
     "color": "i_light_gray",
-    "looks_like": "standing_stones",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -470,7 +421,6 @@
     "name": "unidentified anomalous structure",
     "sym": "T",
     "color": "i_light_gray",
-    "looks_like": "standing_stones",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -480,7 +430,6 @@
     "name": "unidentified anomalous structure",
     "sym": "T",
     "color": "i_light_gray",
-    "looks_like": "cave_underground",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -490,7 +439,6 @@
     "name": "unidentified anomalous structure",
     "sym": "T",
     "color": "i_light_gray",
-    "looks_like": "cave_underground",
     "see_cost": 5,
     "flags": [ "RISK_HIGH" ]
   },
@@ -500,7 +448,6 @@
     "copy-from": "generic_city_building",
     "name": "gas station",
     "color": "light_blue",
-    "looks_like": "house_roof",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -508,7 +455,6 @@
     "id": "microlab_arcana_surface",
     "copy-from": "microlab_generic_surface",
     "name": "science lab loading bay",
-    "looks_like": "microlab_generic_surface",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -517,7 +463,6 @@
     "name": "science lab server room",
     "sym": "S",
     "color": "light_blue",
-    "looks_like": "microlab_generic",
     "see_cost": 5,
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
@@ -527,7 +472,6 @@
     "name": "cave",
     "sym": "C",
     "color": "brown",
-    "looks_like": "cave",
     "see_cost": 2,
     "flags": [ "RISK_HIGH" ]
   },
@@ -537,7 +481,6 @@
     "name": "cave",
     "sym": "C",
     "color": "brown",
-    "looks_like": "cave_underground",
     "see_cost": 2,
     "flags": [ "RISK_HIGH" ]
   },
@@ -547,7 +490,6 @@
     "name": "parking lot",
     "sym": "O",
     "color": "dark_gray",
-    "looks_like": "s_lot",
     "see_cost": 1,
     "flags": [ "RISK_HIGH" ]
   },
@@ -572,7 +514,6 @@
     "name": "science lab loading bay",
     "sym": "L",
     "color": "white",
-    "looks_like": "lab",
     "see_cost": 5,
     "mondensity": 2,
     "flags": [ "RISK_HIGH" ]

@@ -1,7 +1,7 @@
 [
   {
     "type": "mod_tileset",
-    "compatibility": [ "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE", "MshockXottoplus" ],
+    "compatibility": [ "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE" ],
     "tiles-new": [
       {
         "file": "mod_tileset/arcana_expan_dp_normal.png",
@@ -166,8 +166,8 @@
           { "id": "overlay_wielded_thunder_sigil", "fg": 93 },
           { "id": "bloodscourge", "fg": 94 },
           { "id": "overlay_wielded_bloodscourge", "fg": 95 },
-          { "id": [ "ethereal_crossbow", "ethereal_huge_crossbow" ], "fg": 96 },
-          { "id": [ "overlay_wielded_ethereal_crossbow", "overlay_wielded_ethereal_huge_crossbow" ], "fg": 97 },
+          { "id": "ethereal_crossbow", "fg": 96 },
+          { "id": "overlay_wielded_ethereal_crossbow", "fg": 97 },
           { "id": "hand_of_armok", "fg": 98 },
           { "id": "overlay_wielded_hand_of_armok", "fg": 99 },
           { "id": "scourge_staff", "fg": 100 },
@@ -186,8 +186,8 @@
           { "id": "overlay_worn_robe_shadow", "fg": 113 },
           { "id": "robe_shadow_on", "fg": 114 },
           { "id": "overlay_worn_robe_shadow_on", "fg": 115 },
-          { "id": [ "gauntlets_necro", "gauntlets_necro_xl" ], "fg": 116 },
-          { "id": [ "overlay_worn_gauntlets_necro", "overlay_worn_gauntlets_necro_xl" ], "fg": 117 },
+          { "id": "gauntlets_necro", "fg": 116 },
+          { "id": "overlay_worn_gauntlets_necro", "fg": 117 },
           { "id": "cyclopean_mirror", "fg": 118 },
           { "id": "overlay_worn_cyclopean_mirror", "fg": 119 },
           { "id": "overlay_female_worn_cyclopean_mirror_on", "fg": 120 },
@@ -396,7 +396,7 @@
           { "id": "overlay_male_mutation_ARCANA_SCALYPATCHES", "fg": 211 },
           { "id": "overlay_female_mutation_ARCANA_DRAGONSCALES", "fg": 212 },
           { "id": "overlay_male_mutation_ARCANA_DRAGONSCALES", "fg": 213 },
-          { "id": [ "overlay_mutation_ARCANA_SCALYWINGS", "overlay_mutation_ARCANA_DRAGONWINGS" ], "fg": 214 },
+          { "id": [ "ARCANA_SCALYWINGS", "overlay_mutation_ARCANA_DRAGONWINGS" ], "fg": 214 },
           { "id": "overlay_mutation_ARCANA_DRAGONCLAWS", "fg": 215 },
           { "id": "overlay_mutation_ARCANA_DRAGONMUZZLE", "fg": 216 },
           { "id": [ "overlay_mutation_ARCANA_SCALYLEGS", "overlay_mutation_ARCANA_DRAGONLEGS" ], "fg": 217 },
@@ -404,34 +404,7 @@
           { "id": "overlay_mutation_ARCANA_DRAGONTAIL", "fg": 219 },
           { "id": "overlay_mutation_ARCANA_DRAGONHORNS", "fg": 220 },
           { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 221 },
-          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 222 },
-          {
-            "id": [
-              "tr_arcana_item_hexenhammer",
-              "tr_arcana_item_armor_wyrm",
-              "tr_arcana_item_lightning",
-              "tr_arcana_item_spear_pestilence",
-              "tr_arcana_item_lichhook"
-            ],
-            "fg": 226
-          },
-          { "id": [ "somen_clairvoyance_xl", "somen_clairvoyance_xl_on" ], "fg": 227 },
-          { "id": "overlay_worn_somen_clairvoyance_xl", "fg": 228 },
-          { "id": "overlay_worn_somen_clairvoyance_xl_on", "fg": 229 },
-          { "id": [ "robe_shadow_xl", "robe_shadow_xl_on" ], "fg": 230 },
-          { "id": "overlay_worn_robe_shadow_xl", "fg": 231 },
-          { "id": "overlay_worn_robe_shadow_xl_on", "fg": 232 },
-          { "id": "ethereal_hand_crossbow", "fg": 233 },
-          { "id": "overlay_wielded_ethereal_hand_crossbow", "fg": 234 },
-          { "id": "fd_veil_light", "fg": 235 },
-          { "id": "mon_feral_summoner", "fg": 236 },
-          { "id": "mon_feral_magehunter", "fg": 237 },
-          { "id": "mon_feral_keeper", "fg": 238 },
-          { "id": "mon_feral_sanguinist", "fg": 239 },
-          {
-            "id": [ "corpse_mon_feral_summoner", "corpse_mon_feral_magehunter", "corpse_mon_feral_keeper", "corpse_mon_feral_sanguinist" ],
-            "fg": 240
-          }
+          { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 222 }
         ],
         "sprite_width": 32,
         "sprite_height": 32

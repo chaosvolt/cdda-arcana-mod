@@ -60,13 +60,7 @@
     "type": "item_group",
     "id": "mon_sludge_crawler_death_drops",
     "subtype": "collection",
-    "entries": [
-      { "item": "essence_blood", "count": [ 1, 3 ] },
-      {
-        "distribution": [ { "item": "wyrmskin_piece", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ],
-        "prob": 75
-      }
-    ]
+    "entries": [ { "item": "essence_blood", "prob": 10, "count": [ 1, 3 ] } ]
   },
   {
     "type": "item_group",
@@ -83,26 +77,6 @@
     "id": "mon_zougar_shady_death_drops",
     "subtype": "collection",
     "entries": [ { "item": "shadow_gem", "prob": 10 }, { "item": "essence_blood", "count": [ 1, 3 ], "prob": 25 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "mon_zombie_pupa_decoy_shady_death_drops",
-    "subtype": "collection",
-    "entries": [
-      { "group": "default_zombie_death_drops" },
-      { "item": "shadow_gem", "prob": 15 },
-      { "item": "essence_blood", "count": [ 1, 3 ], "prob": 30 }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "mon_zombie_pupa_shady_death_drops",
-    "subtype": "collection",
-    "entries": [
-      { "group": "default_zombie_death_drops" },
-      { "item": "shadow_gem", "prob": 15 },
-      { "item": "essence_blood", "count": [ 1, 3 ], "prob": 30 }
-    ]
   },
   {
     "type": "item_group",
@@ -173,6 +147,12 @@
   },
   {
     "type": "item_group",
+    "id": "mon_zombie_brainless_death_drops",
+    "subtype": "collection",
+    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "monster_tear", "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
     "id": "mon_zombie_ears_death_drops",
     "subtype": "collection",
     "entries": [ { "group": "default_zombie_death_drops" }, { "item": "monster_tear", "prob": 10 } ]
@@ -185,13 +165,27 @@
   },
   {
     "type": "item_group",
-    "id": "mon_zombie_regenerating_death_drops",
+    "id": "mon_zombie_child_scorched_death_drops",
     "subtype": "collection",
-    "entries": [
-      { "group": "default_zombie_death_drops" },
-      { "item": "bone_twisted", "prob": 10 },
-      { "item": "essence_blood", "count": [ 1, 3 ], "prob": 10 }
-    ]
+    "entries": [ { "item": "iridescent_plate", "prob": 5 }, { "item": "essence_blood", "count": [ 1, 3 ], "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_scorched_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "iridescent_plate", "prob": 10 }, { "item": "essence_blood", "count": [ 1, 3 ], "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_fiend_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "iridescent_plate", "prob": 15 }, { "item": "essence_blood", "count": [ 1, 3 ], "prob": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_fiend_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "iridescent_plate", "prob": 15 }, { "item": "essence_blood", "count": [ 1, 3 ], "prob": 15 } ]
   },
   {
     "type": "item_group",
@@ -254,7 +248,7 @@
           { "group": "magic_tools", "prob": 1, "damage": [ 1, 4 ] },
           { "group": "magic_items", "prob": 2, "damage": [ 1, 4 ] },
           { "group": "magic_consumables", "prob": 3 },
-          { "group": "magic_books_postapoc", "prob": 4 }
+          { "group": "magic_books", "prob": 4 }
         ],
         "prob": 1
       }
@@ -809,23 +803,21 @@
   },
   {
     "type": "item_group",
+    "id": "mon_zombie_acidic_death_drops",
+    "subtype": "collection",
+    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "wyrmskin_piece", "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
     "id": "mon_zombie_spitter_death_drops",
     "subtype": "collection",
-    "entries": [
-      { "group": "default_zombie_death_drops" },
-      { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] },
-      { "item": "wyrmskin_piece", "prob": 10 }
-    ]
+    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "wyrmskin_piece", "prob": 10 } ]
   },
   {
     "type": "item_group",
     "id": "mon_zombie_corrosive_death_drops",
     "subtype": "collection",
-    "entries": [
-      { "group": "default_zombie_death_drops" },
-      { "item": "essence_blood", "prob": 50, "count": [ 1, 3 ] },
-      { "item": "wyrmskin_piece", "prob": 25 }
-    ]
+    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "wyrmskin_piece", "prob": 25 } ]
   },
   {
     "type": "item_group",
@@ -1025,11 +1017,10 @@
     "subtype": "collection",
     "entries": [
       { "item": "essence_blood", "count": [ 1, 3 ] },
-      { "item": "shadow_gem", "prob": 25 },
       { "group": "magic_tools", "prob": 5, "damage": [ 1, 4 ] },
       { "group": "magic_items", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 20 },
-      { "group": "magic_books_postapoc", "prob": 80 }
+      { "group": "magic_books", "prob": 80 }
     ]
   },
   {
@@ -1042,7 +1033,7 @@
       { "group": "magic_items", "prob": 3, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 5 },
       { "group": "magic_tools", "prob": 1, "damage": [ 1, 4 ] },
-      { "group": "magic_books_postapoc", "prob": 15 }
+      { "group": "magic_books", "prob": 15 }
     ]
   },
   {
@@ -1060,7 +1051,7 @@
     "entries": [
       { "group": "magic_items", "prob": 25, "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 50 },
-      { "group": "magic_books_postapoc", "prob": 75 },
+      { "group": "magic_books", "prob": 75 },
       { "group": "magic_tools", "prob": 25, "damage": [ 1, 4 ] },
       { "item": "essence_blood", "count": [ 6, 15 ] }
     ]
@@ -1100,15 +1091,11 @@
       { "item": "thunder_sigil" },
       { "item": "book_sacrifice", "prob": 50 },
       { "item": "offering_chalice", "prob": 25 },
-      {
-        "distribution": [ { "item": "robe", "prob": 50, "damage": [ 1, 4 ] }, { "item": "robe_shadow", "prob": 50, "damage": [ 1, 4 ] } ]
-      },
-      { "group": "shirts_unisex", "damage": [ 1, 4 ] },
-      { "group": "clothing_outdoor_pants", "damage": [ 1, 4 ] },
-      { "group": "clothing_outdoor_shoes", "damage": [ 1, 4 ] },
-      { "group": "underwear", "damage": [ 1, 4 ] },
-      { "group": "socks_unisex", "damage": [ 1, 4 ] },
-      { "group": "bags", "damage": [ 1, 4 ] }
+      { "group": "pants", "damage": [ 1, 4 ] },
+      { "group": "shirts", "damage": [ 1, 4 ] },
+      { "group": "shoes", "damage": [ 1, 4 ] },
+      { "group": "jackets", "prob": 20, "damage": [ 1, 4 ] },
+      { "group": "bags", "prob": 6, "damage": [ 1, 4 ] }
     ]
   },
   {
@@ -1133,8 +1120,8 @@
       { "group": "default_zombie_death_drops" },
       { "group": "default_zombie_death_drops" },
       { "group": "default_zombie_death_drops" },
-      { "group": "arcana_hunt_random", "prob": 10 },
-      { "item": "essence_blood", "count": [ 1, 3 ], "prob": 25 }
+      { "group": "arcana_hunt_random", "prob": 5 },
+      { "item": "essence_blood", "count": [ 1, 3 ], "prob": 10 }
     ]
   },
   {
@@ -1427,18 +1414,6 @@
     ]
   },
   {
-    "type": "item_group",
-    "id": "exodii_sniper_drone_death_drops",
-    "subtype": "collection",
-    "entries": [ { "group": "robots", "prob": 80 }, { "item": "iron_thorn", "prob": 10 }, { "item": "essence", "prob": 25 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "mon_exodii_turret_death_drops",
-    "subtype": "collection",
-    "entries": [ { "group": "robots", "prob": 80 }, { "item": "iron_thorn", "prob": 10 }, { "item": "essence", "prob": 25 } ]
-  },
-  {
     "id": "skeltal_drops",
     "//": "This is done because we can access the itemgroup despite it not existing in vanilla, but can't override the monster because it only exists in Crazy Cataclysm.",
     "type": "item_group",
@@ -1642,166 +1617,5 @@
     "id": "wild_bio_tool_smg",
     "subtype": "collection",
     "entries": [ { "item": "essence_blood", "count": [ 1, 3 ], "prob": 25 } ]
-  },
-  {
-    "id": "mon_feral_summoner_death_drops",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      {
-        "distribution": [
-          { "item": "cloak", "prob": 25, "damage": [ 1, 4 ] },
-          { "item": "cloak_wool", "prob": 25, "damage": [ 1, 4 ] },
-          { "item": "robe", "prob": 50, "damage": [ 1, 4 ] }
-        ]
-      },
-      {
-        "distribution": [
-          { "item": "amulet_exotic", "prob": 75, "damage": [ 1, 4 ] },
-          { "item": "amulet_exotic_empowered", "prob": 25, "damage": [ 1, 4 ] }
-        ],
-        "prob": 50
-      },
-      { "group": "shirts_unisex", "damage": [ 1, 4 ] },
-      { "group": "clothing_outdoor_pants", "damage": [ 1, 4 ] },
-      { "group": "clothing_outdoor_shoes", "damage": [ 1, 4 ] },
-      { "group": "underwear", "damage": [ 1, 4 ] },
-      { "group": "socks_unisex", "damage": [ 1, 4 ] },
-      { "group": "bags", "damage": [ 1, 4 ] },
-      {
-        "distribution": [
-          { "item": "essence", "prob": 40 },
-          { "item": "essence_blood", "prob": 30, "count": [ 1, 3 ] },
-          { "item": "essence_dull", "prob": 30, "count": [ 5, 15 ] }
-        ],
-        "prob": 50
-      },
-      {
-        "distribution": [
-          { "item": "shadow_gem", "prob": 50 },
-          { "item": "monster_fang", "prob": 20 },
-          { "item": "engraved_stone", "prob": 10 }
-        ],
-        "prob": 25
-      },
-      { "group": "unaligned_arcanist_books_postapoc", "prob": 75 },
-      { "group": "unaligned_arcanist_books_postapoc", "prob": 50 },
-      { "group": "unaligned_arcanist_books_postapoc", "prob": 25 },
-      { "item": "silver_glyph", "prob": 75, "damage": [ 1, 4 ] }
-    ]
-  },
-  {
-    "id": "mon_feral_magehunter_death_drops",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      {
-        "distribution": [
-          {
-            "collection": [ { "item": "cloak_leather", "damage": [ 1, 4 ] }, { "item": "scrap", "count": [ 1, 4 ] } ],
-            "prob": 50
-          },
-          { "item": "gilded_aegis", "prob": 50, "damage": [ 1, 4 ] }
-        ]
-      },
-      {
-        "distribution": [
-          { "item": "somen_clairvoyance", "prob": 75, "damage": [ 1, 4 ] },
-          { "item": "somen_clairvoyance_xl", "prob": 25, "damage": [ 1, 4 ] }
-        ],
-        "prob": 50
-      },
-      { "group": "shirts_unisex", "damage": [ 1, 4 ] },
-      { "group": "clothing_outdoor_pants", "damage": [ 1, 4 ] },
-      { "group": "clothing_outdoor_shoes", "damage": [ 1, 4 ] },
-      { "group": "underwear", "damage": [ 1, 4 ] },
-      { "group": "socks_unisex", "damage": [ 1, 4 ] },
-      { "group": "bags", "damage": [ 1, 4 ] },
-      {
-        "distribution": [ { "item": "essence", "prob": 25 }, { "item": "essence_dull", "prob": 75, "count": [ 5, 15 ] } ],
-        "prob": 50
-      },
-      { "item": "CF_golden_scale", "prob": 25, "count": [ 2, 5 ] },
-      { "group": "cleansing_flame_books_postapoc", "prob": 75 },
-      { "group": "cleansing_flame_books_postapoc", "prob": 50 },
-      { "group": "cleansing_flame_books_postapoc", "prob": 25 },
-      {
-        "distribution": [
-          { "item": "hexenhammer", "prob": 75, "damage": [ 1, 4 ] },
-          { "item": "lucern_hexenhammer", "prob": 25, "damage": [ 1, 4 ] }
-        ],
-        "prob": 75
-      }
-    ]
-  },
-  {
-    "id": "mon_feral_keeper_death_drops",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      {
-        "distribution": [
-          { "collection": [ { "item": "robe", "damage": [ 1, 4 ] }, { "item": "fur", "count": [ 1, 4 ] } ], "prob": 50 },
-          { "item": "robe_shadow", "prob": 20, "damage": [ 1, 4 ] },
-          { "item": "robe_shadow_xl", "prob": 5, "damage": [ 1, 4 ] }
-        ]
-      },
-      {
-        "distribution": [
-          { "item": "gauntlets_necro", "prob": 75, "damage": [ 1, 4 ] },
-          { "item": "gauntlets_necro_xl", "prob": 25, "damage": [ 1, 4 ] }
-        ],
-        "prob": 50
-      },
-      { "group": "shirts_unisex", "damage": [ 1, 4 ] },
-      { "group": "clothing_outdoor_pants", "damage": [ 1, 4 ] },
-      { "group": "clothing_outdoor_shoes", "damage": [ 1, 4 ] },
-      { "group": "underwear", "damage": [ 1, 4 ] },
-      { "group": "socks_unisex", "damage": [ 1, 4 ] },
-      { "group": "bags", "damage": [ 1, 4 ] },
-      {
-        "distribution": [ { "item": "essence", "prob": 75 }, { "item": "essence_blood", "prob": 25, "count": [ 1, 3 ] } ],
-        "prob": 50
-      },
-      { "item": "offering_chalice", "prob": 25 },
-      { "group": "chalice_cult_books_postapoc", "prob": 75 },
-      { "group": "chalice_cult_books_postapoc", "prob": 50 },
-      { "group": "chalice_cult_books_postapoc", "prob": 25 },
-      { "item": "thunder_sigil", "prob": 75, "damage": [ 1, 4 ] }
-    ]
-  },
-  {
-    "id": "mon_feral_sanguinist_death_drops",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      {
-        "distribution": [
-          {
-            "collection": [
-              { "item": "armor_larmor", "damage": [ 1, 4 ] },
-              { "item": "armguard_larmor", "prob": 75, "damage": [ 1, 4 ] },
-              { "item": "boots_larmor", "prob": 50, "damage": [ 1, 4 ] },
-              { "item": "leather", "count": [ 1, 4 ] }
-            ],
-            "prob": 50
-          },
-          { "item": "armor_wyrm", "prob": 50, "damage": [ 1, 4 ] }
-        ]
-      },
-      { "item": "revenant_crown", "prob": 50, "damage": [ 1, 4 ] },
-      { "group": "underwear", "damage": [ 1, 4 ] },
-      { "group": "socks_unisex", "damage": [ 1, 4 ] },
-      { "group": "bags", "damage": [ 1, 4 ] },
-      {
-        "distribution": [ { "item": "essence", "prob": 25 }, { "item": "essence_blood", "prob": 75, "count": [ 1, 3 ] } ],
-        "prob": 50
-      },
-      { "item": "blood_athame", "prob": 25 },
-      { "group": "sanguine_cult_books_postapoc", "prob": 75 },
-      { "group": "sanguine_cult_books_postapoc", "prob": 50 },
-      { "group": "sanguine_cult_books_postapoc", "prob": 25 },
-      { "item": "bloodscourge", "prob": 75, "damage": [ 1, 4 ] }
-    ]
   }
 ]

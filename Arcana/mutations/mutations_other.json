@@ -14,17 +14,8 @@
     "id": "MARTIAL_ARTS_CF",
     "name": { "str": "Path of Sword and Hammer" },
     "points": 3,
-    "description": "Whether by upbringing among hunters of the otherworldly, or by good fortune and dedication during your wanderings, you have learned Via Gladium et Malleo.  A weapon art focused on preserving momentum and fighting multiple opponents, using your fury in different ways depending on your weapon of choice.  Bladed weapons favor parries and armor penetration, while bludgeons favor evasion and protection.",
+    "description": "Whether by upbringing among hunters of the otherworldly, or by good fortune and dedication during your wanderings, you have learned Via Gladium et Malleo.  A weapon art focused on preserving momentum and fighting multiple opponents, using your fury in different ways depending on your weapon of choice.",
     "initial_ma_styles": [ "style_cleansingflame" ],
-    "valid": false
-  },
-  {
-    "type": "mutation",
-    "id": "MARTIAL_ARTS_SANGUINE",
-    "name": { "str": "Path of Scourging Claws" },
-    "points": 3,
-    "description": "Whether from a background among followers of The Path to Power, or by seeking out any advantage to survive, you have learned Shrike's Talons.  A martial art focused around various cutting weapons or mutant claws, favoring aggression over defense.  Strength and dexterity will make this style more effective, but less skilled or weaker users may struggle with it.",
-    "initial_ma_styles": [ "style_shrike" ],
     "valid": false
   },
   {
@@ -42,7 +33,6 @@
       "PACIFIST",
       "SPELL_SHADOWSNAKES",
       "SPELL_SUMMONDOG",
-      "MARTIAL_ARTS_SANGUINE",
       "ARCANA_SCALYPATCHES",
       "ARCANA_INNERHEAT",
       "ARCANA_DRAGONCLAWS",
@@ -64,7 +54,6 @@
       "ILLITERATE",
       "PACIFIST",
       "SPELL_CLARITY",
-      "MARTIAL_ARTS_SANGUINE",
       "ARCANA_SCALYPATCHES",
       "ARCANA_INNERHEAT",
       "ARCANA_DRAGONCLAWS",
@@ -98,7 +87,6 @@
       "ILLITERATE",
       "PACIFIST",
       "MARTIAL_ARTS_CF",
-      "MARTIAL_ARTS_SANGUINE",
       "ARCANA_SCALYPATCHES",
       "ARCANA_INNERHEAT",
       "ARCANA_DRAGONCLAWS",

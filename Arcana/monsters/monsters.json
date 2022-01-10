@@ -78,18 +78,6 @@
     "death_drops": "mon_zombie_brute_ninja_death_drops"
   },
   {
-    "id": "mon_zombie_pupa_decoy_shady",
-    "copy-from": "mon_zombie_pupa_decoy_shady",
-    "type": "MONSTER",
-    "death_drops": "mon_zombie_pupa_decoy_shady_death_drops"
-  },
-  {
-    "id": "mon_zombie_pupa_shady",
-    "copy-from": "mon_zombie_pupa_shady",
-    "type": "MONSTER",
-    "death_drops": "mon_zombie_pupa_shady_death_drops"
-  },
-  {
     "id": "mon_zombie_biter",
     "copy-from": "mon_zombie_biter",
     "type": "MONSTER",
@@ -112,6 +100,12 @@
     "copy-from": "mon_zombie_mancroc",
     "type": "MONSTER",
     "death_drops": "mon_zombie_mancroc_death_drops"
+  },
+  {
+    "id": "mon_zombie_brainless",
+    "copy-from": "mon_zombie_brainless",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_brainless_death_drops"
   },
   {
     "id": "mon_zombie_ears",
@@ -589,6 +583,7 @@
     "armor_bullet": 2,
     "harvest": "human",
     "death_drops": "mon_homunculus_death_drops",
+    "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "HUMAN", "REVIVES", "CLIMBS", "FILTHY" ]
   },
   {
@@ -626,6 +621,7 @@
     "harvest": "zombie",
     "special_attacks": [ [ "FEAR_PARALYZE", 15 ], { "type": "bite", "cooldown": 5 } ],
     "death_drops": "mon_flesh_angel_death_drops",
+    "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "HARDTOSHOOT", "FLIES", "HUMAN", "POISON", "REVIVES", "FILTHY" ]
   },
   {
@@ -695,22 +691,40 @@
     "death_drops": "mon_spider_fungus_death_drops"
   },
   {
+    "id": "mon_zombie_child_scorched",
+    "copy-from": "mon_zombie_child_scorched",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_child_scorched_death_drops"
+  },
+  {
+    "id": "mon_zombie_scorched",
+    "copy-from": "mon_zombie_scorched",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_scorched_death_drops"
+  },
+  {
+    "id": "mon_zombie_fiend",
+    "copy-from": "mon_zombie_fiend",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_fiend_death_drops"
+  },
+  {
     "id": "mon_zombie_smoker",
     "copy-from": "mon_zombie_smoker",
     "type": "MONSTER",
     "death_drops": "mon_zombie_smoker_death_drops"
   },
   {
-    "id": "mon_zombie_regenerating",
-    "copy-from": "mon_zombie_regenerating",
-    "type": "MONSTER",
-    "death_drops": "mon_zombie_regenerating_death_drops"
-  },
-  {
     "id": "mon_zombie_wretched",
     "copy-from": "mon_zombie_wretched",
     "type": "MONSTER",
     "death_drops": "mon_zombie_wretched_death_drops"
+  },
+  {
+    "id": "mon_zombie_acidic",
+    "copy-from": "mon_zombie_acidic",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_acidic_death_drops"
   },
   {
     "id": "mon_zombear_acidic",
@@ -889,18 +903,6 @@
     "death_drops": "mon_zomborg_death_drops"
   },
   {
-    "id": "exodii_sniper_drone",
-    "copy-from": "exodii_sniper_drone",
-    "type": "MONSTER",
-    "death_drops": "exodii_sniper_drone_death_drops"
-  },
-  {
-    "id": "mon_exodii_turret",
-    "copy-from": "mon_exodii_turret",
-    "type": "MONSTER",
-    "death_drops": "mon_exodii_turret_death_drops"
-  },
-  {
     "id": "mon_zombie_soldier_blackops_1",
     "copy-from": "mon_zombie_soldier_blackops_1",
     "type": "MONSTER",
@@ -967,10 +969,12 @@
         "cooldown": 10,
         "move_cost": 500,
         "gun_type": "monster_fire_fake",
+        "ammo_type": "generic_no_ammo",
         "fake_str": 5,
         "fake_dex": 4,
         "fake_per": 6,
-        "ranges": [ [ 2, 7, "DEFAULT" ] ],
+        "max_ammo": 1000,
+        "ranges": [ [ 2, 5, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the spirit of fire!",
         "no_ammo_sound": "a distorted growl!"
@@ -983,7 +987,7 @@
       }
     ],
     "death_drops": "mon_spirit_of_fire_death_drops",
-    "death_function": { "message": "The %s's body crumbles to ash.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "//": "It's coldproof due to being a demon, moreso than because it's made of fire.",
     "flags": [
       "NOHEAD",
@@ -1034,6 +1038,7 @@
     "harvest": "moruboru_harvest",
     "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "TENTACLE", 5 ] ],
     "death_drops": "mon_moruboru_death_drops",
+    "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "SMELLS", "NOHEAD", "POISON", "NO_BREATHE", "PARALYZEVENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
     "//": "Boss-level essence and an item"
   },
@@ -1079,10 +1084,12 @@
         "cooldown": 15,
         "move_cost": 50,
         "gun_type": "monster_lightning_fake",
+        "ammo_type": "generic_no_ammo",
         "fake_str": 8,
         "fake_dex": 7,
         "fake_per": 9,
-        "ranges": [ [ 2, 25, "DEFAULT" ] ],
+        "max_ammo": 1000,
+        "ranges": [ [ 2, 12, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "A beam of lightning arcs from the host of the archon's symbol of judgment!",
         "no_ammo_sound": "a horrific screech!"
@@ -1096,6 +1103,7 @@
     ],
     "//": "Here, have some chalice-specific loot",
     "death_drops": "mon_archon_death_drops",
+    "death_function": [ "NORMAL" ],
     "flags": [
       "ELECTRIC",
       "SEES",
@@ -1152,16 +1160,19 @@
         "cooldown": 10,
         "move_cost": 500,
         "gun_type": "monster_fire_fake",
+        "ammo_type": "generic_no_ammo",
         "fake_str": 9,
         "fake_dex": 3,
         "fake_per": 5,
-        "ranges": [ [ 2, 7, "DEFAULT" ] ],
+        "max_ammo": 1000,
+        "ranges": [ [ 2, 5, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the dracolich's mouth!",
         "no_ammo_sound": "a howl of feral anger!"
       }
     ],
     "death_drops": "mon_dracolich_death_drops",
+    "death_function": [ "NORMAL" ],
     "flags": [
       "SEES",
       "SMELLS",
@@ -1195,7 +1206,7 @@
         "damage_max_instance": [ { "damage_type": "acid", "amount": 10, "armor_multiplier": 0.25 } ]
       }
     ],
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
@@ -1211,7 +1222,7 @@
     "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "upgrades": { "half_life": 8, "into": "mon_zombie_brute" } }
@@ -1228,7 +1239,7 @@
     "species": [ "ARCANA_SUMMONED" ],
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
@@ -1244,7 +1255,7 @@
     "path_settings": { "max_dist": 10 },
     "special_attacks": [ [ "SMASH", 25 ] ],
     "regenerates": 1,
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
@@ -1277,7 +1288,7 @@
     "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] }
   },
@@ -1294,7 +1305,7 @@
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
     "attack_effs": [ { "id": "stunned", "duration": 5, "chance": 30 } ],
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "upgrades": { "half_life": 15, "into": "mon_skeleton_hulk" } }
@@ -1342,7 +1353,7 @@
         "monster_message": "The summoned yugg fires a dart at %3$s!"
       }
     ],
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
@@ -1375,7 +1386,7 @@
     "species": [ "ARCANA_SUMMONED" ],
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [
       { "type": "bite", "cooldown": 10 },
@@ -1400,7 +1411,7 @@
     "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
@@ -1436,7 +1447,7 @@
     "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": {  },
     "extend": { "flags": [ "PET_HARNESSABLE" ] },
@@ -1472,7 +1483,7 @@
     "regenerates": 5,
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
-    "special_attacks": [ { "id": "slam", "cooldown": 25, "damage_max_instance": [ { "damage_type": "acid", "amount": 35 } ] } ]
+    "delete": { "flags": [ "ABSORBS_SPLITS" ] }
   },
   {
     "id": "mon_shadow_summoned",
@@ -1492,7 +1503,7 @@
     "path_settings": { "max_dist": 10 },
     "regenerates_in_dark": true,
     "death_drops": {  },
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "special_attacks": [ [ "PARROT", 900 ] ],
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
     "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN", "ELECTRIC" ] }
@@ -1519,7 +1530,7 @@
     "vision_night": 50,
     "harvest": "exempt",
     "special_attacks": [ [ "DISAPPEAR", 200 ] ],
-    "death_function": { "message": "The %s wavers and fades away, a mere illusion.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "DISAPPEAR" ],
     "flags": [ "PACIFIST", "SEES", "NOHEAD", "HARDTOSHOOT", "WEBWALK", "FLIES", "PLASTIC", "ACIDPROOF", "NO_BREATHE", "NOGIB" ]
   },
   {
@@ -1532,7 +1543,7 @@
     "species": [ "ARCANA_SUMMONED" ],
     "speed": 85,
     "death_drops": {  },
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "melee_dice_sides": 2,
     "melee_cut": 0,
     "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.1 } ],
@@ -1567,7 +1578,7 @@
     "morale": 100,
     "harvest": "exempt",
     "special_attacks": [ [ "DISAPPEAR", 200 ] ],
-    "death_function": { "message": "The %s wavers and fades away, a mere illusion.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "DISAPPEAR" ],
     "flags": [ "PACIFIST", "FLIES", "SEES", "WARM", "SWIMS", "PLASTIC", "NOGIB" ]
   },
   {
@@ -1581,7 +1592,7 @@
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
     "death_drops": {  },
-    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "upgrades": { "half_life": 21, "into": "mon_centipede_mega" } }
   },
@@ -1632,10 +1643,12 @@
         "cooldown": 25,
         "move_cost": 50,
         "gun_type": "monster_laser_fake",
+        "ammo_type": "generic_no_ammo",
         "fake_str": 8,
         "fake_dex": 7,
         "fake_per": 9,
-        "ranges": [ [ 2, 20, "DEFAULT" ] ],
+        "max_ammo": 1000,
+        "ranges": [ [ 2, 15, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "A radiant beam of otherworldly energy lances out from the seraphic shade's body!",
         "no_ammo_sound": "a horrific screech!"
@@ -1648,7 +1661,7 @@
       }
     ],
     "death_drops": "mon_seraphic_shade_death_drops",
-    "death_function": { "message": "The %s's body evaporates.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "flags": [
       "PATH_AVOID_DANGER_2",
       "CAN_OPEN_DOORS",
@@ -1695,7 +1708,7 @@
     "luminance": 1,
     "harvest": "exempt",
     "special_attacks": [ [ "STARE", 250 ], [ "FEAR_PARALYZE", 100 ], [ "PARROT", 80 ] ],
-    "death_function": { "message": "The %s's wavers and vanishes, dispelling the illusion.", "corpse_type": "NO_CORPSE" },
+    "death_function": [ "MELT" ],
     "flags": [
       "PACIFIST",
       "PATH_AVOID_DANGER_2",
@@ -1743,7 +1756,8 @@
     "regenerates": 1,
     "mech_battery": "arcana_mech_power_cell",
     "mech_weapon": "arcana_mech_laser",
-    "death_function": { "corpse_type": "BROKEN" },
+    "revert_to_itype": "broken_mech_arcana",
+    "death_function": [ "BROKEN" ],
     "flags": [
       "SEES",
       "MECH_RECON_VISION",
@@ -1804,9 +1818,11 @@
         "cooldown": 5,
         "move_cost": 75,
         "gun_type": "monster_laser_fake",
+        "ammo_type": "generic_no_ammo",
         "fake_str": 4,
         "fake_dex": 4,
         "fake_per": 4,
+        "max_ammo": 1000,
         "ranges": [ [ 2, 15, "DEFAULT" ] ],
         "require_targeting_player": false,
         "description": "The Autonomous Anomaly Recon Mech fires a radiant beam of otherworldly energy!",
@@ -1819,7 +1835,7 @@
         "monster_message": "The Autonomous Anomaly Recon Mech launches a ghostly blue flare, illuminating %3$s with ethereal light!"
       }
     ],
-    "death_function": { "corpse_type": "BROKEN" },
+    "death_function": [ "BROKEN" ],
     "death_drops": "mon_mech_arcana_boss_death_drops",
     "flags": [
       "SEES",
@@ -1835,175 +1851,5 @@
       "PRIORITIZE_TARGETS",
       "PATH_AVOID_DANGER_2"
     ]
-  },
-  {
-    "id": "mon_feral_summoner",
-    "type": "MONSTER",
-    "name": { "str": "maddened wanderer" },
-    "description": "Torn robes cover a shuffling human form, still breathing despite its zombie-like unsteadiness.  Gripped by raving madness, a strange aura gathers around it as it clutches a tarnished silver talisman.",
-    "default_faction": "cult",
-    "looks_like": "mon_dementia",
-    "bodytype": "human",
-    "species": [ "HUMAN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
-    "hp": 80,
-    "speed": 100,
-    "material": [ "flesh" ],
-    "symbol": "@",
-    "color": "magenta",
-    "aggression": -10,
-    "morale": 100,
-    "melee_skill": 4,
-    "melee_dice": 2,
-    "melee_dice_sides": 3,
-    "armor_bash": 2,
-    "armor_cut": 2,
-    "armor_bullet": 2,
-    "armor_stab": 2,
-    "dodge": 1,
-    "harvest": "human",
-    "vision_day": 40,
-    "vision_night": 20,
-    "path_settings": { "max_dist": 30, "allow_open_doors": true, "avoid_traps": true, "avoid_sharp": true },
-    "diff": 1,
-    "special_attacks": [
-      [ "PARROT", 5 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "arcana_monster_summoner" },
-        "cooldown": 15,
-        "monster_message": "The air chills as the maddened wanderer raises its talisman!"
-      }
-    ],
-    "death_drops": "mon_feral_summoner_death_drops",
-    "zombify_into": "mon_zombie_shady",
-    "anger_triggers": [ "FRIEND_DIED", "PLAYER_CLOSE" ],
-    "fear_triggers": [ "HURT" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "HUMAN", "CAN_OPEN_DOORS", "PATH_AVOID_DANGER_2" ]
-  },
-  {
-    "id": "mon_feral_magehunter",
-    "copy-from": "mon_feral_summoner",
-    "type": "MONSTER",
-    "name": { "str": "maddened hunter" },
-    "description": "A cloak of metal scales obscures this humanoid figure, heavy breaths revealing it to still be among the living.  Gripped by raving madness, bloodshot eyes glower from under a metal mask, as it grasps a silver-decorated war hammer.",
-    "aggression": 5,
-    "melee_skill": 6,
-    "melee_dice_sides": 8,
-    "melee_damage": [ { "damage_type": "stab", "amount": 8 } ],
-    "armor_bash": 12,
-    "armor_cut": 12,
-    "armor_bullet": 9,
-    "armor_stab": 12,
-    "dodge": 2,
-    "diff": 2,
-    "special_attacks": [
-      [ "PARROT", 5 ],
-      {
-        "type": "gun",
-        "cooldown": 5,
-        "move_cost": 100,
-        "gun_type": "monster_hammer_fake",
-        "fake_str": 10,
-        "fake_dex": 6,
-        "fake_per": 9,
-        "ranges": [ [ 2, 7, "DEFAULT" ] ],
-        "require_targeting_player": true,
-        "require_targeting_npc": true,
-        "require_targeting_monster": true,
-        "laser_lock": true,
-        "targeting_cost": 100,
-        "targeting_sound": "\"Ave martello!\"  The maddened hunter raises its hammer high!",
-        "targeting_volume": 30,
-        "description": "The maddened hunter's hammer gives off a blinding flash!",
-        "no_ammo_sound": "a cry of anger!"
-      }
-    ],
-    "death_drops": "mon_feral_magehunter_death_drops",
-    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "FIRE", "HURT" ],
-    "fear_triggers": [  ],
-    "extend": { "flags": [ "STUN_IMMUNE" ] }
-  },
-  {
-    "id": "mon_feral_keeper",
-    "copy-from": "mon_feral_summoner",
-    "type": "MONSTER",
-    "name": { "str": "maddened keeper" },
-    "description": "Dark robes and a heavy fur mantle conceal a human figure, still breathing despite looking to be on the edge of death.  Gripped by raving madness, it desperately clutches a golden talisman that crackles with electricity.",
-    "aggression": -5,
-    "melee_dice_sides": 4,
-    "melee_damage": [ { "damage_type": "stab", "amount": 6 } ],
-    "armor_bash": 4,
-    "armor_cut": 4,
-    "armor_stab": 4,
-    "armor_bullet": 3,
-    "dodge": 3,
-    "diff": 3,
-    "special_attacks": [
-      [ "PARROT", 5 ],
-      {
-        "type": "gun",
-        "cooldown": 5,
-        "move_cost": 100,
-        "gun_type": "monster_lightning_fake",
-        "fake_str": 6,
-        "fake_dex": 7,
-        "fake_per": 8,
-        "ranges": [ [ 2, 25, "DEFAULT" ] ],
-        "require_targeting_player": true,
-        "require_targeting_npc": true,
-        "require_targeting_monster": true,
-        "laser_lock": true,
-        "targeting_cost": 100,
-        "targeting_sound": "\"May He forge your chains!\"  The maddened keeper raises its symbol of judgment!",
-        "targeting_volume": 30,
-        "description": "Lightning arcs from the maddened keeper's symbol of judgment!",
-        "no_ammo_sound": "a cry of anger!"
-      }
-    ],
-    "death_drops": "mon_feral_keeper_death_drops",
-    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "STALK" ]
-  },
-  {
-    "id": "mon_feral_sanguinist",
-    "copy-from": "mon_feral_summoner",
-    "type": "MONSTER",
-    "name": { "str": "maddened sanguinist" },
-    "description": "Clad in well-worn leather armor, this wretch is still alive and breathing despite its unsteady gait and bloodshot gaze.  Gripped by raving madness, flames dance around the gem-adorned staff it uses as a walking stick.",
-    "aggression": 10,
-    "melee_skill": 6,
-    "melee_dice_sides": 8,
-    "armor_bash": 10,
-    "armor_cut": 10,
-    "armor_stab": 10,
-    "armor_bullet": 7,
-    "dodge": 2,
-    "diff": 3,
-    "special_attacks": [
-      [ "PARROT", 5 ],
-      {
-        "type": "gun",
-        "cooldown": 5,
-        "move_cost": 100,
-        "gun_type": "monster_fire_fake",
-        "fake_str": 9,
-        "fake_dex": 10,
-        "fake_per": 7,
-        "ranges": [ [ 2, 7, "DEFAULT" ] ],
-        "require_targeting_player": true,
-        "require_targeting_npc": true,
-        "require_targeting_monster": true,
-        "laser_lock": true,
-        "targeting_cost": 100,
-        "targeting_sound": "\"Burn!\"  The maddened sanguinist levels its hellfire staff!",
-        "targeting_volume": 30,
-        "description": "Flames erupt from the maddened sanguinist's hellfire staff!",
-        "no_ammo_sound": "a cry of anger!"
-      }
-    ],
-    "death_drops": "mon_feral_sanguinist_death_drops",
-    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
-    "extend": { "flags": [ "ACIDPROOF" ] }
   }
 ]

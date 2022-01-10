@@ -5,23 +5,8 @@
     "fail_message": "Life fails to take hold in this place.",
     "terrain": [
       {
-        "result": [
-          [ "t_grass", 20 ],
-          [ "t_grass_long", 10 ],
-          [ "t_grass_tall", 5 ],
-          [ "t_underbrush", 10 ],
-          [ "t_shrub_rose", 5 ],
-          [ "t_marloss", 1 ],
-          [ "t_shrub", 4 ],
-          [ "t_tree_young", 10 ],
-          [ "t_tree", 10 ],
-          [ "t_tree_pine", 5 ],
-          [ "t_tree_blackjack", 5 ],
-          [ "t_tree_willow", 5 ],
-          [ "t_tree_birch", 5 ],
-          [ "t_tree_cherry", 5 ]
-        ],
-        "valid_flags": [ "DIGGABLE", "TREE", "YOUNG", "FUNGUS", "SHRUB" ],
+        "result": [ [ "t_grass_tall", 50 ], [ "t_underbrush", 24 ], [ "t_marloss", 1 ], [ "t_tree_birch", 20 ], [ "t_tree_cherry", 5 ] ],
+        "valid_flags": [ "DIGGABLE" ],
         "message": "Plant life grows wild over the ground."
       },
       {
@@ -29,20 +14,12 @@
         "valid_flags": [ "ROAD" ],
         "message": "The ground shifts and crumbles, grass growing from the cracks."
       }
-    ],
-    "furniture": [ { "result": "f_null", "valid_flags": [ "MOUNTABLE", "BLOCK_WIND", "ORGANIC", "FUNGUS" ] } ]
+    ]
   },
   {
     "type": "ter_furn_transform",
     "id": "arcana_pestilence",
-    "terrain": [
-      {
-        "result": [ [ "t_dirt", 75 ], [ "t_dirtmound", 25 ] ],
-        "valid_terrain": [ "t_moss", "t_grass", "t_grass_long", "t_grass_tall", "t_grass_white", "t_grass_golf", "t_grass_dead" ]
-      },
-      { "result": [ [ "t_dirt", 75 ], [ "t_dirtmound", 25 ] ], "valid_flags": [ "SHRUB" ] },
-      { "result": [ [ "t_dirt", 75 ], [ "t_dirtmound", 25 ] ], "valid_flags": [ "TREE" ] }
-    ]
+    "terrain": [ { "result": [ [ "t_dirt", 75 ], [ "t_dirt_mound", 25 ] ], "valid_flags": [ "FLAT", "SHRUB" ] } ]
   },
   {
     "type": "ter_furn_transform",
@@ -143,12 +120,12 @@
       },
       {
         "result": "t_rock_floor_no_roof",
-        "valid_terrain": [ "t_portcullis" ],
+        "valid_terrain": [ "t_door_metal_locked", "t_portcullis" ],
         "message": "The steel barrier crumbles into nothingness."
       },
       {
         "result": "t_door_metal_o",
-        "valid_terrain": [ "t_door_metal_locked", "t_door_metal_pickable" ],
+        "valid_terrain": [ "t_door_metal_pickable" ],
         "message": "The door swings open silently."
       },
       { "result": "t_door_bar_o", "valid_terrain": [ "t_door_bar_locked" ], "message": "The bars swing open." },
@@ -176,7 +153,6 @@
       {
         "result": "t_window_empty",
         "valid_terrain": [
-          "t_window_boarded",
           "t_window_boarded_noglass",
           "t_window_boarded_noglass",
           "t_window_reinforced",
@@ -186,17 +162,12 @@
           "t_window_bars",
           "t_window_bars_alarm"
         ],
-        "message": "The obstructions across the window decay and crumble away, the glass disintegrating soon afterward."
+        "message": "The boards across the window decay and crumble away, the glass disintegrating soon afterward."
       },
       {
         "result": "t_manhole",
         "valid_terrain": [ "t_manhole_cover" ],
         "message": "The manhole cover rusts and decays away, falling into the hole."
-      },
-      {
-        "result": "t_floor_resin",
-        "valid_terrain": [ "t_wall_resin_cage" ],
-        "message": "The resin cage crumbles away."
       },
       { "result": "t_dirt", "valid_flags": [ "LOCKED" ], "message": "The obstacle crumbles to dust." }
     ],
@@ -229,8 +200,8 @@
     "type": "ter_furn_transform",
     "id": "arcana_pulse",
     "fail_message": "The ground weathers the blast unscathed.",
-    "terrain": [ { "result": "t_dirt", "valid_flags": [ "DOOR", "BLOCK_WIND", "WALL", "TREE" ] } ],
-    "furniture": [ { "result": "f_null", "valid_flags": [ "PERMEABLE", "MINEABLE", "BLOCK_WIND" ] } ]
+    "terrain": [ { "result": "t_dirt", "valid_flags": [ "BLOCK_WIND", "WALL" ] } ],
+    "furniture": [ { "result": "f_null", "valid_flags": [ "BLOCK_WIND", "WALL" ] } ]
   },
   {
     "type": "ter_furn_transform",
@@ -246,9 +217,8 @@
       {
         "result": "t_rock_smooth",
         "valid_terrain": [
-          "t_triffid_bark_wall",
-          "t_triffid_wood_wall",
           "t_wall_resin",
+          "t_wall_resin_cage",
           "t_fault",
           "t_pedestal_wyrm",
           "t_pedestal_temple",
@@ -260,20 +230,11 @@
       {
         "result": "t_rock_floor_no_roof",
         "valid_terrain": [
-          "t_bark_wall_chipped",
-          "t_bark_wall_broken",
-          "t_barkfloor",
-          "t_triffid_leaves",
-          "t_root_floor",
-          "t_bramble_door_c",
-          "t_bramble_door_o",
           "t_floor_resin",
           "t_platform_resin",
-          "t_resin_roof",
           "t_resin_hole_c",
           "t_resin_hole_o",
           "t_resin_hole",
-          "t_wall_resin_cage",
           "t_floor_red",
           "t_floor_green",
           "t_floor_blue",
@@ -289,8 +250,7 @@
           "t_slime"
         ]
       },
-      { "result": "t_slope_down", "valid_terrain": [ "t_triffid_slope_down" ] },
-      { "result": "t_slope_up", "valid_terrain": [ "t_triffid_slope_up" ] },
+      { "result": "t_open_air", "valid_terrain": [ "t_resin_roof" ] },
       { "result": "t_rock_floor_no_roof", "valid_flags": [ "FUNGUS" ] }
     ],
     "furniture": [
@@ -298,9 +258,6 @@
       {
         "result": "f_null",
         "valid_furniture": [
-          "f_glowingbulb",
-          "f_brambles",
-          "f_midden",
           "f_alien_tendril",
           "f_alien_anemone",
           "f_alien_gasper",
@@ -309,9 +266,6 @@
           "f_alien_scar",
           "f_alien_pod",
           "f_alien_pod_organ",
-          "f_alien_pod_resin",
-          "f_crystalline_flower",
-          "f_fog_breather",
           "f_alien_table",
           "f_mutpoppy",
           "f_egg_sackbw",
@@ -328,22 +282,23 @@
     "fail_message": "The earth remains still.",
     "terrain": [
       {
-        "result": [
-          [ "t_dirt", 15 ],
-          [ "t_rock_floor_no_roof", 10 ],
-          [ "t_pit_shallow", 15 ],
-          [ "t_dirtmound", 10 ],
-          [ "t_railroad_rubble", 10 ],
-          [ "t_clay", 10 ],
-          [ "t_sand", 5 ],
-          [ "t_drystone_wall_half", 15 ],
-          [ "t_drystone_wall", 10 ]
-        ],
+        "result": [ [ "t_dirt", 50 ], [ "t_dirtmound", 50 ], [ "t_pit_shallow", 1 ] ],
         "valid_flags": [ "DIGGABLE", "FLAT" ],
         "message": "The ground shifts."
       }
     ],
-    "furniture": [ { "result": "f_null", "valid_flags": [ "MOUNTABLE", "BLOCK_WIND" ] } ]
+    "furniture": [
+      {
+        "result": [
+          [ "f_null", 50 ],
+          [ "f_rubble_rock", 20 ],
+          [ "f_boulder_small", 20 ],
+          [ "f_boulder_medium", 5 ],
+          [ "f_boulder_large", 5 ]
+        ],
+        "valid_furniture": [ "f_null" ]
+      }
+    ]
   },
   {
     "type": "mapgen",
@@ -387,7 +342,7 @@
       "place_loot": [
         { "group": "rural_church_restock_scales", "x": 18, "y": 7 },
         { "group": "rural_church_restock_essence", "x": 18, "y": [ 6, 7 ], "chance": 75 },
-        { "group": "magic_books_postapoc", "x": 18, "y": [ 6, 7 ], "chance": 5 },
+        { "group": "magic_books", "x": 18, "y": [ 6, 7 ], "chance": 5 },
         { "group": "magic_crafting", "x": 18, "y": [ 6, 7 ], "chance": 25, "repeat": 3 },
         { "group": "rural_church_celine_research", "x": 18, "y": [ 6, 7 ], "chance": 25 }
       ],
@@ -1144,7 +1099,8 @@
       "mapping": {
         "B": { "items": [ { "item": "bed", "chance": 50 } ] },
         "D": { "items": [ { "item": "clothing_outdoor_torso", "chance": 50 }, { "item": "clothing_outdoor_pants", "chance": 50 } ] }
-      }
+      },
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 0, 6 ], "y": [ 0, 9 ] } ]
     }
   },
   {
@@ -1195,7 +1151,8 @@
           ]
         },
         "t": { "items": [ { "item": "standing_stones_libation", "chance": 5 } ] }
-      }
+      },
+      "faction_owner": [ { "id": "cleansing_flame", "x": [ 0, 1 ], "y": [ 0, 9 ] } ]
     }
   },
   {
@@ -1308,11 +1265,8 @@
   {
     "type": "mapgen",
     "method": "json",
-    "update_mapgen_id": "arcana_hermit_tablet_unlock",
-    "object": {
-      "set": [ { "point": "furniture", "id": "f_safe_o", "x": 11, "y": 9 } ],
-      "faction_owner": [ { "id": "your_followers", "x": 11, "y": 9 } ]
-    }
+    "update_mapgen_id": "arcana_hermit_tablet_fallback",
+    "object": { "place_loot": [ { "item": "offering_mission_notes", "x": 10, "y": 12 } ] }
   },
   {
     "type": "mapgen",
@@ -1875,7 +1829,7 @@
         { "line": "terrain", "id": "t_pit", "x": 0, "x2": 2, "y": 22, "y2": 22 }
       ],
       "place_npcs": [ { "class": "mage_hunter_seeker", "x": 16, "y": 11 } ],
-      "place_loot": [ { "group": "cleansing_flame_books_postapoc", "x": 18, "y": [ 9, 10 ], "chance": 50, "repeat": 10 } ],
+      "place_loot": [ { "group": "cleansing_flame_books", "x": 18, "y": [ 9, 10 ], "chance": 50, "repeat": 10 } ],
       "faction_owner": [ { "id": "cleansing_flame", "x": 18, "y": [ 9, 10 ] } ]
     }
   },

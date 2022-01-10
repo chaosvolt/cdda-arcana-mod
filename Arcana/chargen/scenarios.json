@@ -32,7 +32,6 @@
       "SPELL_FIRE",
       "SPELL_DAMPENING",
       "SPELL_SUMMONDOG",
-      "MARTIAL_ARTS_SANGUINE",
       "MARTIAL_ARTS_CF"
     ]
   },
@@ -60,8 +59,7 @@
       "arcanist_alchemist",
       "arcanist_scribe",
       "arcanist_shrike",
-      "arcanist_purifier",
-      "arcanist_operator"
+      "arcanist_purifier"
     ],
     "traits": [
       "SPELL_CLAIRVOYANCE",
@@ -74,7 +72,6 @@
       "SPELL_DAYLIGHT",
       "SPELL_LOCKPICK",
       "SPELL_POISONARMOR",
-      "MARTIAL_ARTS_SANGUINE",
       "MARTIAL_ARTS_CF"
     ],
     "flags": [ "CITY_START", "LONE_START" ]
@@ -85,8 +82,8 @@
     "copy-from": "surrounded",
     "add_professions": true,
     "extend": {
-      "professions": [ "arcanist_alchemist", "arcanist_scribe", "arcanist_shrike", "arcanist_purifier", "arcanist_operator" ],
-      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
+      "professions": [ "arcanist_alchemist", "arcanist_scribe", "arcanist_shrike", "arcanist_purifier" ],
+      "traits": [ "MARTIAL_ARTS_CF" ]
     }
   },
   {
@@ -103,7 +100,7 @@
         "arcanist_oathkeeper",
         "arcanist_summoner"
       ],
-      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
+      "traits": [ "MARTIAL_ARTS_CF" ]
     }
   },
   {
@@ -123,15 +120,8 @@
     "id": "ambushed",
     "copy-from": "ambushed",
     "extend": {
-      "professions": [
-        "arcanist_bloodmage",
-        "arcanist_magehunter",
-        "arcanist_oathkeeper",
-        "arcanist_shrike",
-        "arcanist_purifier",
-        "arcanist_operator"
-      ],
-      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
+      "professions": [ "arcanist_bloodmage", "arcanist_magehunter", "arcanist_oathkeeper", "arcanist_shrike", "arcanist_purifier" ],
+      "traits": [ "MARTIAL_ARTS_CF" ]
     }
   },
   {
@@ -139,15 +129,8 @@
     "id": "summer_advanced_start",
     "copy-from": "summer_advanced_start",
     "extend": {
-      "professions": [
-        "arcanist_bloodmage",
-        "arcanist_magehunter",
-        "arcanist_oathkeeper",
-        "arcanist_shrike",
-        "arcanist_purifier",
-        "arcanist_operator"
-      ],
-      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
+      "professions": [ "arcanist_bloodmage", "arcanist_magehunter", "arcanist_oathkeeper", "arcanist_shrike", "arcanist_purifier" ],
+      "traits": [ "MARTIAL_ARTS_CF" ]
     }
   },
   {
@@ -164,16 +147,13 @@
         "arcanist_oathkeeper",
         "arcanist_summoner"
       ],
-      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
+      "traits": [ "MARTIAL_ARTS_CF" ]
     }
   },
   {
     "type": "scenario",
     "id": "cyberpunk",
     "copy-from": "cyberpunk",
-    "extend": {
-      "professions": [ "arcanist_purifier", "arcanist_operator" ],
-      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
-    }
+    "extend": { "professions": [ "arcanist_purifier" ], "traits": [ "MARTIAL_ARTS_CF" ] }
   }
 ]

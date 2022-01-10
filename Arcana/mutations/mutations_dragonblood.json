@@ -117,8 +117,8 @@
     "id": "ARCANA_SCALYPATCHES",
     "name": { "str": "Scaly Patches" },
     "points": 1,
-    "visibility": 2,
-    "ugliness": 1,
+    "visibility": 5,
+    "ugliness": 3,
     "description": "Part of your torso and arms have become covered in flexible scales, providing limited protection there.",
     "valid": false,
     "purifiable": false,
@@ -196,8 +196,7 @@
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
-    "vitamin_rates": [ [ "mutant_toxin", 1 ] ],
-    "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0.75 ] ] ] ]
+    "vitamin_rates": [ [ "mutant_toxin", 1 ] ]
   },
   {
     "type": "mutation",
@@ -205,7 +204,7 @@
     "name": { "str": "Inner Heat" },
     "points": 1,
     "mixed_effect": true,
-    "bodytemp_modifiers": [ 125, 500 ],
+    "bodytemp_modifiers": [ 100, 125 ],
     "bodytemp_sleep": 125,
     "description": "A strange heat permeates your body, warming you up in exchange for a more active metabolism.  While you need to eat and drink more, you also find it easier to recover from physical exertion and mend wounds.",
     "valid": false,
@@ -228,7 +227,7 @@
     "name": { "str": "Inner Fire" },
     "points": 2,
     "mixed_effect": true,
-    "bodytemp_modifiers": [ 250, 1000 ],
+    "bodytemp_modifiers": [ 125, 250 ],
     "bodytemp_sleep": 250,
     "description": "That strange warmth deep within your body has grown more intense, and its effects have become more pronounced.  While you still need to eat and drink more, your stamina and healing have adapted in turn.  A strange glow can also be faintly seen in the back of your throat, lending an unnatural aura of menace to your every word.",
     "valid": false,
@@ -254,8 +253,8 @@
     "name": { "str": "Dragonfire" },
     "points": 5,
     "mixed_effect": true,
-    "bodytemp_modifiers": [ 0, 1500 ],
-    "bodytemp_sleep": 750,
+    "bodytemp_modifiers": [ 0, 500 ],
+    "bodytemp_sleep": 500,
     "description": "Your body has adapted further, exploiting the strange power that fuels your body.  You still need more food and water than normal, but the benefits are more pronounced relative to the drawbacks.  Activate to breathe short-ranged bursts of flame.",
     "valid": false,
     "purifiable": false,
@@ -272,7 +271,7 @@
     "stamina_regen_modifier": 0.75,
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
     "active": true,
-    "cost": 60,
+    "cost": 30,
     "hunger": true,
     "ranged_mutation": { "type": "mut_dragonfire", "message": "You loose a tongue of flame from your mouth." },
     "vitamin_rates": [ [ "blood", 5 ], [ "redcells", 5 ] ]
@@ -285,7 +284,7 @@
     "mixed_effect": true,
     "visibility": 4,
     "ugliness": 2,
-    "description": "You have a pair of large, scale-covered wings.  Your body is too heavy to be able to fly, they mostly just get in the way, preventing you from wearing any torso gear not made of fabric.  Your back muscles are however slightly improved by this growth, letting you carry a bit more weight and increasing stamina a bit.",
+    "description": "You have a pair of large, scale-covered wings.  Your body is too heavy to be able to fly, they mostly just get in the way, preventing you from wearing any torso gear not made of fabric.  Your back muscles are however slightly improved by this growth, letting you carry a bit more weight.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
@@ -294,7 +293,6 @@
     "encumbrance_covered": [ [ "torso", 5 ] ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "WINGS" ],
-    "cardio_multiplier": 1.1,
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
     "dodge_modifier": -1,
@@ -317,7 +315,7 @@
     "encumbrance_covered": [ [ "torso", 5 ] ],
     "types": [ "WINGS" ],
     "enchantments": [ "ENCH_DRAGONBLOOD_DRACONIC_WINGS" ],
-    "cardio_multiplier": 1.2,
+    "max_stamina_modifier": 1.2,
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
     "weight_capacity_modifier": 1.25
@@ -329,12 +327,13 @@
     "points": 2,
     "visibility": 3,
     "ugliness": 2,
-    "description": "You have sharply curved claws on the ends of your fingers, making your unarmed attacks more dangerous.  However, they do get in the way a bit if you are wearing gloves.",
+    "description": "You have sharply curved claws on the ends of your fingers, making your unarmed attacks more dangerous.  However, they do get in the way a bit, especially if you are wearing gloves.",
     "valid": false,
     "purifiable": false,
-    "butchering_quality": 9,
+    "butchering_quality": 6,
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
+    "encumbrance_always": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
     "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
     "rand_cut_bonus": { "min": 2, "max": 6 }
   },
@@ -344,7 +343,7 @@
     "name": { "str": "Pointed Teeth" },
     "points": 2,
     "visibility": 2,
-    "ugliness": 2,
+    "ugliness": 3,
     "description": "Your teeth have changed into an assortment of pointed mimicries of human teeth, allowing you to make an extra attack when conditions favor it.",
     "valid": false,
     "purifiable": false,
@@ -355,7 +354,7 @@
       "attack_text_u": "You sink your teeth into %s",
       "attack_text_npc": "%1$s sinks their teeth into %2$s",
       "body_part": "mouth",
-      "chance": 30,
+      "chance": 20,
       "strength_damage": { "damage_type": "stab", "amount": 2 }
     }
   },
@@ -364,8 +363,8 @@
     "id": "ARCANA_DRAGONMUZZLE",
     "name": { "str": "Draconic Muzzle" },
     "points": -2,
-    "visibility": 4,
-    "ugliness": 3,
+    "visibility": 5,
+    "ugliness": 4,
     "mixed_effect": true,
     "description": "Your jaw and nose have extended into a somewhat long snout, pointed yet fairly broad.  It lends itself to biting in combat and looks impressive, but prevents you from wearing mouthgear.",
     "valid": false,
@@ -381,7 +380,7 @@
       "attack_text_u": "You savagely tear into %s with your jaws",
       "attack_text_npc": "%1$s savagely tear into %2$s with their jaws",
       "body_part": "mouth",
-      "chance": 30,
+      "chance": 15,
       "strength_damage": { "damage_type": "stab", "amount": 4 }
     }
   },
@@ -390,7 +389,7 @@
     "id": "ARCANA_SCALYLEGS",
     "name": { "str": "Scaly Hind Limbs" },
     "points": -2,
-    "visibility": 4,
+    "visibility": 5,
     "ugliness": 2,
     "mixed_effect": true,
     "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons, preventing you from wearing footwear and making it hard to walk, especially on rough terrain.  It's even worse if you try to wear anything over them.  On the plus side, you can kick with them rather effectively.",
@@ -404,6 +403,7 @@
     "encumbrance_always": [ [ "leg_l", 10 ], [ "leg_r", 10 ], [ "foot_l", 10 ], [ "foot_r", 10 ] ],
     "encumbrance_covered": [ [ "leg_l", 10 ], [ "leg_r", 10 ], [ "foot_l", 10 ], [ "foot_r", 10 ] ],
     "restricts_gear": [ "foot_l", "foot_r" ],
+    "destroys_gear": true,
     "movecost_obstacle_modifier": 1.3,
     "movecost_flatground_modifier": 0.9,
     "noise_modifier": 2.0,
@@ -411,7 +411,7 @@
       {
         "attack_text_u": "You rake %s with your toe claws",
         "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "chance": 40,
+        "chance": 30,
         "strength_damage": { "damage_type": "cut", "amount": 2 }
       }
     ]
@@ -421,7 +421,7 @@
     "id": "ARCANA_DRAGONLEGS",
     "name": { "str": "Draconic Hind Limbs" },
     "points": 1,
-    "visibility": 4,
+    "visibility": 5,
     "ugliness": 2,
     "mixed_effect": true,
     "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward.  Rough terrain is still a hindrance and they're better left uncovered, but you can move a bit faster on level ground.",
@@ -434,6 +434,7 @@
     "encumbrance_always": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "foot_l", 5 ], [ "foot_r", 5 ] ],
     "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "foot_l", 5 ], [ "foot_r", 5 ] ],
     "restricts_gear": [ "foot_l", "foot_r" ],
+    "destroys_gear": true,
     "movecost_obstacle_modifier": 1.2,
     "movecost_flatground_modifier": 0.8,
     "noise_modifier": 1.5,
@@ -441,7 +442,7 @@
       {
         "attack_text_u": "You rake %s with your toe claws",
         "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "chance": 40,
+        "chance": 25,
         "strength_damage": { "damage_type": "cut", "amount": 3 }
       }
     ]
@@ -451,7 +452,7 @@
     "id": "ARCANA_SCALYTAIL",
     "name": { "str": "Scaly Tail" },
     "points": 2,
-    "visibility": 6,
+    "visibility": 8,
     "ugliness": 2,
     "description": "You have a long, thin, lizardlike tail.  It's flexible enough to help with balance a bit, and makes a serviceable whip.  Prevents wearing non-fabric pants.",
     "valid": false,
@@ -475,8 +476,8 @@
     "id": "ARCANA_DRAGONTAIL",
     "name": { "str": "Draconic Tail" },
     "points": 3,
-    "visibility": 6,
-    "ugliness": 2,
+    "visibility": 8,
+    "ugliness": 3,
     "description": "You have a long, thin, lizardlike tail, with a few nasty-looking spikes on the end of it.  It doesn't help as much with balance anymore, but still makes a serviceable whip.  Prevents wearing non-fabric pants.",
     "valid": false,
     "purifiable": false,
@@ -488,7 +489,7 @@
     "attacks": {
       "attack_text_u": "You lash %s with your tail",
       "attack_text_npc": "%1$s lashes %2$s with their tail",
-      "chance": 20,
+      "chance": 15,
       "strength_damage": [ { "damage_type": "stab", "amount": 2 }, { "damage_type": "bash", "amount": 1 } ]
     },
     "//": "Becoming less effective at balancing is intentional, spikes aren't as substantial as Spiked Tail but still impedes dodge bonus.",
@@ -499,7 +500,7 @@
     "id": "ARCANA_DRAGONHORNS",
     "name": { "str": "Swept-Back Horns" },
     "points": 3,
-    "visibility": 3,
+    "visibility": 6,
     "ugliness": 1,
     "mixed_effect": true,
     "description": "You have a pair of relatively short horns, sweeping and pointing backwards.  While they don't make very good weapons, and prevent you from wearing any headwear not made of fabric, they tend to get in the way of attacks aimed at your head.",
@@ -513,7 +514,7 @@
     "attacks": {
       "attack_text_u": "You headbutt %s",
       "attack_text_npc": "%1$s headbutts %2$s",
-      "chance": 40,
+      "chance": 35,
       "strength_damage": { "damage_type": "bash", "amount": 2 }
     }
   },
@@ -522,7 +523,7 @@
     "id": "ARCANA_PLATES",
     "name": { "str": "Draconic Plating" },
     "points": 6,
-    "visibility": 6,
+    "visibility": 8,
     "ugliness": 3,
     "mixed_effect": true,
     "description": "You have grown thick, overlapping plates like scutes along part of your body, serving as sturdy natural armor.  Reduces wet effects a bit.",

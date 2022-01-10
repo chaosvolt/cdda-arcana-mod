@@ -51,7 +51,7 @@
     "id": "rare_martial_arts_books",
     "type": "item_group",
     "subtype": "distribution",
-    "entries": [ { "item": "manual_cleansingflame", "prob": 1 }, { "item": "manual_shrike", "prob": 1 } ]
+    "entries": [ { "item": "manual_cleansingflame", "prob": 1 } ]
   },
   {
     "id": "SUS_chemistry_bookcase",
@@ -106,9 +106,7 @@
       [ "hexenhammer", 5 ],
       [ "offering_chalice", 5 ],
       [ "blood_athame", 5 ],
-      [ "mana_gem", 2 ],
-      [ "mana_gem_blood", 2 ],
-      [ "mana_gem_dull", 1 ],
+      [ "mana_gem", 5 ],
       [ "totem_elecresist", 1 ],
       [ "totem_clairvoyance", 1 ],
       [ "totem_insight", 1 ],
@@ -120,9 +118,7 @@
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
-      { "item": "mana_gem", "prob": 1 },
-      { "item": "mana_gem_blood", "prob": 1 },
-      { "item": "mana_gem_dull", "prob": 1 },
+      { "item": "mana_gem", "prob": 3 },
       { "item": "offering_chalice", "prob": 2 },
       { "item": "blood_athame", "prob": 2 },
       { "item": "revenant_crown", "prob": 1 },
@@ -136,9 +132,7 @@
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
-      { "item": "mana_gem", "prob": 1 },
-      { "item": "mana_gem_blood", "prob": 1 },
-      { "item": "mana_gem_dull", "prob": 1 },
+      { "item": "mana_gem", "prob": 2 },
       { "item": "offering_chalice", "prob": 3 },
       { "item": "revenant_crown", "prob": 3 },
       { "item": "gauntlets_necro", "prob": 1 },
@@ -165,9 +159,7 @@
     "id": "jewelry_safe",
     "type": "item_group",
     "items": [
-      [ "mana_gem", 10 ],
-      [ "mana_gem_blood", 10 ],
-      [ "mana_gem_dull", 5 ],
+      [ "mana_gem", 25 ],
       [ "totem_elecresist", 10 ],
       [ "totem_clairvoyance", 10 ],
       [ "totem_insight", 10 ],
@@ -177,7 +169,7 @@
   {
     "id": "pawn",
     "type": "item_group",
-    "items": [ [ "mana_gem", 1 ], [ "mana_gem_blood", 1 ], [ "mana_gem_dull", 1 ], [ "offering_chalice", 1 ], [ "blood_athame", 1 ] ]
+    "items": [ [ "mana_gem", 1 ], [ "offering_chalice", 1 ], [ "blood_athame", 1 ], { "group": "magic_books", "prob": 5 } ]
   },
   {
     "id": "my_precious",
@@ -198,13 +190,13 @@
       { "group": "magic_tools", "prob": 1 },
       { "group": "magic_items", "prob": 1 },
       { "group": "magic_consumables", "prob": 1 },
-      { "group": "magic_books_postapoc", "prob": 1 }
+      { "group": "magic_books", "prob": 1 }
     ]
   },
   {
     "id": "drugdealer",
     "type": "item_group",
-    "items": [ { "group": "magic_books_postapoc", "prob": 5 } ]
+    "items": [ { "group": "magic_books", "prob": 5 } ]
   },
   {
     "id": "science",
@@ -226,7 +218,7 @@
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
-      { "group": "magic_books_postapoc", "prob": 5 },
+      { "group": "magic_books", "prob": 5 },
       { "group": "magic_consumables", "prob": 2 },
       { "group": "magic_tools", "prob": 2 },
       { "group": "magic_items", "prob": 1 },
@@ -293,22 +285,22 @@
   {
     "type": "item_group",
     "id": "roof_holdout",
-    "items": [ { "group": "magic_books_postapoc", "prob": 5 }, { "group": "arcana_hunt_random", "prob": 15 } ]
+    "items": [ { "group": "magic_books", "prob": 5 }, { "group": "arcana_hunt_random", "prob": 15 } ]
   },
   {
     "type": "item_group",
     "id": "flt_loot_rare",
-    "items": [ { "group": "magic_books_postapoc", "prob": 5 }, { "group": "arcana_hunt_random", "prob": 10 } ]
+    "items": [ { "group": "magic_books", "prob": 5 }, { "group": "arcana_hunt_random", "prob": 10 } ]
   },
   {
     "type": "item_group",
     "id": "oa_ig_sb_rare",
-    "items": [ { "group": "magic_books_postapoc", "prob": 10 }, { "group": "arcana_hunt_random", "prob": 15 } ]
+    "items": [ { "group": "magic_books", "prob": 10 }, { "group": "arcana_hunt_random", "prob": 15 } ]
   },
   {
     "type": "item_group",
     "id": "sc_loot_rare",
-    "items": [ { "group": "magic_books_postapoc", "prob": 15 }, { "group": "arcana_hunt_random", "prob": 20 } ]
+    "items": [ { "group": "magic_books", "prob": 15 }, { "group": "arcana_hunt_random", "prob": 20 } ]
   },
   {
     "id": "standing_stones_accident",
