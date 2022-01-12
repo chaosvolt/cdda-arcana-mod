@@ -33,7 +33,7 @@
       ],
       "palettes": [ "arcana_palette" ],
       "set": [ { "point": "trap", "id": "tr_portal", "x": [ 9, 13 ], "y": [ 9, 13 ], "repeat": 2 } ],
-      "place_monsters": [ { "monster": "GROUP_NETHER", "x": [ 3, 20 ], "y": [ 3, 20 ], "density": 0.15 } ]
+      "place_monsters": [ { "monster": "GROUP_NETHER_PORTAL", "x": [ 3, 20 ], "y": [ 3, 20 ], "density": 0.15 } ]
     }
   },
   {
@@ -71,7 +71,7 @@
       "palettes": [ "arcana_palette" ],
       "terrain": { "~": "t_water_sh" },
       "set": [ { "point": "trap", "id": "tr_portal", "x": [ 9, 13 ], "y": [ 9, 13 ], "repeat": [ 3, 5 ] } ],
-      "place_monsters": [ { "monster": "GROUP_NETHER", "x": [ 3, 20 ], "y": [ 3, 20 ], "density": 0.2 } ]
+      "place_monsters": [ { "monster": "GROUP_NETHER_PORTAL", "x": [ 3, 20 ], "y": [ 3, 20 ], "density": 0.2 } ]
     }
   },
   {
