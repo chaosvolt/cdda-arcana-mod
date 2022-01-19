@@ -481,7 +481,7 @@
     "sprite": "fd_dazzling",
     "message": "\"We shall not yet fall into extinction...\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL", "SILENT" ],
     "effect_str": "arcane_healing_staunch",
     "extra_effects": [
       { "id": "arcana_aftermath_healing_side_effects", "max_level": 10 },
