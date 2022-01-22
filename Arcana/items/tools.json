@@ -476,7 +476,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "power": 600, "distance_factor": 0.25 }
+      "explosion": { "power": 600, "distance_factor": 0.2 }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -521,7 +521,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "power": 750, "distance_factor": 0.25 }
+      "explosion": { "power": 750, "distance_factor": 0.2 }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -566,7 +566,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "power": 900, "distance_factor": 0.25 }
+      "explosion": { "power": 900, "distance_factor": 0.2 }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -611,7 +611,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "power": 1350, "distance_factor": 0.25 }
+      "explosion": { "power": 1350, "distance_factor": 0.2 }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
