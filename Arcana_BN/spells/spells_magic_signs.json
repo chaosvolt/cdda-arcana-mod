@@ -279,7 +279,7 @@
     "sprite": "fd_dazzling",
     "message": "\"I am that which reveals the wicked, and scourges them with flame...\"  You cast %s!",
     "valid_targets": [ "ground" ],
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL", "IGNORE_WALLS" ],
     "effect": "ter_transform",
     "effect_str": "arcana_consecrate",
     "extra_effects": [
@@ -670,7 +670,7 @@
     "sprite": "fd_veil_light",
     "message": "\"That which is made by man can always be undone by human hands...\"  You cast %s!",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL", "IGNORE_WALLS" ],
     "extra_effects": [
       { "id": "arcana_aftermath_open_lock_spike", "max_level": 10 },
       { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 }
@@ -706,7 +706,7 @@
     "sprite": "fd_veil_light",
     "message": "\"We shall prosper, no matter how barren the ground...\"  You cast %s!",
     "valid_targets": [ "ground" ],
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL", "IGNORE_WALLS" ],
     "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_3", "hit_self": true, "max_level": 10 } ],
     "effect": "ter_transform",
     "effect_str": "arcana_plants",

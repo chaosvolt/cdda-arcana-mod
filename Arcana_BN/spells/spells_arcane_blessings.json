@@ -454,7 +454,7 @@
     "sprite": "fd_veil_light",
     "message": "You focus, strange influence on the land exerted by your will.",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
-    "flags": [ "CONCENTRATE", "NO_HANDS", "NO_LEGS", "NO_FAIL" ],
+    "flags": [ "CONCENTRATE", "NO_HANDS", "NO_LEGS", "NO_FAIL", "IGNORE_WALLS" ],
     "effect": "ter_transform",
     "effect_str": "arcana_open_lock",
     "energy_source": "MANA",
