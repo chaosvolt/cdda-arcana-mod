@@ -213,7 +213,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the blood effigy.",
-      "vitamins": [ [ "arcana_mutagen_dragonblood", 450, 550 ] ]
+      "vitamins": [ [ "arcana_mutagen_dragonblood", 450, 550 ], [ "mutagen", 125 ] ]
     },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
@@ -326,7 +326,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You absorb the energy within the ritual offering.",
-      "vitamins": [ [ "arcana_mutagen_veil", 900, 1100 ] ]
+      "vitamins": [ [ "arcana_mutagen_veil", 900, 1100 ], [ "mutagen", 125 ] ]
     }
   },
   {
@@ -344,7 +344,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You absorb the energy within the Dragonblood offering.",
-      "vitamins": [ [ "arcana_mutagen_dragonblood", 900, 1100 ] ]
+      "vitamins": [ [ "arcana_mutagen_dragonblood", 900, 1100 ], [ "mutagen", 125 ] ]
     }
   }
 ]
