@@ -1994,7 +1994,7 @@
     "looks_like": "small_relic",
     "repairs_like": "blood_athame",
     "color": "dark_gray",
-    "max_charges": 8,
+    "max_charges": 10,
     "ammo": "essence_type",
     "techniques": [ "RAPID", "DEF_DISARM" ],
     "qualities": [ [ "BUTCHER", 6 ] ],

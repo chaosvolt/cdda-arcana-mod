@@ -520,7 +520,7 @@
     "color": "light_red",
     "coverage": 100,
     "environmental_protection": 1,
-    "max_charges": 120,
+    "max_charges": 240,
     "ammo": "essence_dull_type",
     "relic_data": {
       "passive_effects": [
@@ -637,7 +637,7 @@
     "looks_like": "jade_brooch",
     "repairs_like": "mana_gem",
     "color": "light_gray",
-    "max_charges": 60,
+    "max_charges": 300,
     "ammo": "essence_dull_type",
     "use_action": {
       "target": "meteoric_talisman_on",
@@ -682,7 +682,7 @@
     "price_postapoc": "150 USD",
     "material": [ "silver", "essencemat" ],
     "color": "white",
-    "max_charges": 9,
+    "max_charges": 10,
     "ammo": "essence_type",
     "artifact_data": { "effects_worn": [ "AEP_PSYSHIELD" ] },
     "use_action": {

@@ -2009,7 +2009,7 @@
     "looks_like": "small_relic",
     "repairs_like": "blood_athame",
     "color": "dark_gray",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 8 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 10 } } ],
     "ammo": "essence_type",
     "techniques": [ "RAPID", "DEF_DISARM" ],
     "qualities": [ [ "BUTCHER", 6 ] ],
