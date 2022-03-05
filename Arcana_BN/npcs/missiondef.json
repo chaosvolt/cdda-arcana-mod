@@ -281,7 +281,7 @@
     "item": "cf_rep_trade_receipt",
     "start": {
       "effect": [ { "u_buy_item": "cf_rep_trade_arrangement" }, { "u_buy_item": "CF_golden_scale", "count": 20 } ],
-      "assign_mission_target": { "om_terrain": "evac_center_18", "reveal_radius": 1 }
+      "assign_mission_target": { "om_terrain": "evac_center_18", "om_special": "evac_center", "reveal_radius": 1 }
     },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_REP_3",
@@ -406,7 +406,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_REP_6",
     "start": {
-      "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "reveal_radius": 1 },
+      "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "om_special": "Hermit Cabin", "reveal_radius": 1 },
       "update_mapgen": [ { "om_terrain": "cf_church_2", "place_nested": [ { "chunks": [ "cf_church_upgrade_5" ], "x": 2, "y": 3 } ] } ]
     },
     "dialogue": {
