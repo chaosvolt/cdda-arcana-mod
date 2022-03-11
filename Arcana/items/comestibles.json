@@ -270,8 +270,7 @@
   },
   {
     "id": "earth_talisman",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
+    "type": "TOOL",
     "category": "other",
     "name": { "str": "earth talisman" },
     "description": "A crude paper talisman marked with strange patterns, and anointed with a peculiar sacrifice.  Using it will conjure and transmutate a structure of strange earth and stone, to serve as a meager shelter in times of desperation.",
@@ -292,7 +291,7 @@
       "door_opened": "f_door_arcana_o",
       "door_closed": "f_door_arcana_c"
     },
-    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "air_talisman",
