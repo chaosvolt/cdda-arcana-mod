@@ -241,7 +241,7 @@
     "material_thickness": 1,
     "use_action": {
       "type": "consume_drug",
-      "activation_message": "The gem shimmers with malevolent red light as you feel a strange hunger, a craving for rotting meat and stagnant water...",
+      "activation_message": "The gem shimmers with malevolent red light as you feel a strange hunger, a craving for rotting meat and stagnant water…",
       "effects": [ { "id": "revenant_hunger", "duration": 1800 } ]
     },
     "flags": [ "BELTED", "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS" ]
