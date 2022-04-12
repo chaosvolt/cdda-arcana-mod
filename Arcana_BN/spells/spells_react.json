@@ -111,7 +111,7 @@
     "name": { "str": "React: Satchel Attention" },
     "description": "Small amount of nether attention.",
     "sprite": "fd_veil_light",
-    "message": "You feel like something is watching you...",
+    "message": "You feel like something is watching you…",
     "valid_targets": [ "self" ],
     "flags": [ "RANDOM_DURATION" ],
     "effect": "target_attack",
