@@ -186,6 +186,7 @@
     "id": "sun_sword",
     "type": "TOOL",
     "category": "weapons",
+    "copy-from": "arming_sword",
     "name": { "str": "incorruptible sword" },
     "//": "Stats are a blend of the available swords you can use to make it, same deal as the mantle of shadows.",
     "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  When powered by consecrated magical essence, it has the power to cut through darkness itself.",
@@ -305,7 +306,7 @@
     "//": "Designed to be compatible with Via Gladium et Malleo, so the silver decoration is on the other end to shift the center of balance.  No damage bonus from the extra weight, but also no 0.7x melee damage from POLEARM flag.",
     "relative": { "weight": "450 g", "to_hit": 1 },
     "extend": { "flags": [ "NO_SALVAGE" ] },
-    "delete": { "flags": [ "ALWAYS_TWOHAND", "POLEARM" ] }
+    "delete": { "flags": [ "ALWAYS_TWOHAND", "POLEARM" ], "weapon_category": [ "POLEARMS" ] }
   },
   {
     "id": "spear_pestilence",
@@ -2062,6 +2063,7 @@
   {
     "id": "veilblade",
     "looks_like": "zweihander",
+    "copy-from": "zweihander",
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "restored ritual blade" },
@@ -2205,6 +2207,7 @@
       ]
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD", "TRADER_KEEP_EQUIPPED" ],
+    "weapon_category": [ "MEDIEVAL_SWORDS", "GREAT_SWORDS" ]
   }
 ]
