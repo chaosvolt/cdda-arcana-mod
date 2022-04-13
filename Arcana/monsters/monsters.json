@@ -931,6 +931,54 @@
     "death_drops": "mon_zpider_mass_death_drops"
   },
   {
+    "id": "mon_unseen_hunter",
+    "copy-from": "mon_unseen_hunter",
+    "type": "MONSTER",
+    "death_drops": "mon_unseen_hunter_death_drops"
+  },
+  {
+    "id": "mon_shifting_mass",
+    "copy-from": "mon_shifting_mass",
+    "type": "MONSTER",
+    "death_drops": "mon_shifting_mass_death_drops"
+  },
+  {
+    "id": "mon_impossible_shape",
+    "copy-from": "mon_impossible_shape",
+    "type": "MONSTER",
+    "death_drops": "mon_impossible_shape_death_drops"
+  },
+  {
+    "id": "mon_absence",
+    "copy-from": "mon_absence",
+    "type": "MONSTER",
+    "death_drops": "mon_absence_death_drops"
+  },
+  {
+    "id": "mon_giant_appendage",
+    "copy-from": "mon_giant_appendage",
+    "type": "MONSTER",
+    "death_drops": "mon_giant_appendage_death_drops"
+  },
+  {
+    "id": "mon_memory",
+    "copy-from": "mon_memory",
+    "type": "MONSTER",
+    "death_drops": "mon_memory_death_drops"
+  },
+  {
+    "id": "mon_swarm_structure",
+    "copy-from": "mon_swarm_structure",
+    "type": "MONSTER",
+    "death_drops": "mon_swarm_structure_death_drops"
+  },
+  {
+    "id": "mon_twisting_blade",
+    "copy-from": "mon_twisting_blade",
+    "type": "MONSTER",
+    "death_drops": "mon_twisting_blade_death_drops"
+  },
+  {
     "id": "mon_spirit_of_fire",
     "type": "MONSTER",
     "name": { "str": "spirit of fire", "str_pl": "spirits of fire" },

@@ -8,8 +8,7 @@ Focused principally on magical items as the name implies (the mod predating the 
 If you are using Dark Days Ahead, place the included Arcana folder in your data/mods folder. If you are using the Bright Nights fork, use the Arcana_BN folder instead. In either case it is recommended that, if updating the mod, to delete the older version of the folder rather than just dumping the new one onto the old one.
 
 Stuff the BN version has that the DDA version lacks:
-* Due to retaining artifact effects, evil artifacts work even though `intermittent_activation` is busted.
-* The restored ritual blade actually works with portals due to retaining `ARTC_PORTAL`.
+* Mod interactions involving itemgroups work right in BN version due to retaining old itemgroup behavior.
 * Cleric ring has real psy resistance due to retaining `AEP_PSYSHIELD`.
 
 Stuff the DDA version has that the BN version lacks:

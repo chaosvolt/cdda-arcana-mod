@@ -1,6 +1,13 @@
 [
   {
     "type": "ter_furn_transform",
+    "id": "arcana_veilblade",
+    "furniture": [ { "result": [ "f_null" ], "valid_furniture": [ "f_absence" ], "message": "The living emptiness wavers and crumbles." } ],
+    "field": [ { "result": [ "fd_null" ], "valid_field": [ "fd_fatigue" ], "message": "The fabric of reality around you weaves itself back together." } ],
+    "trap": [ { "result": [ "tr_portal_crystallized" ], "valid_trap": [ "tr_portal" ], "message": "The portal flickers and collapses into a floating sliver of energy!" } ]
+  },
+  {
+    "type": "ter_furn_transform",
     "id": "arcana_plants",
     "terrain": [
       {
