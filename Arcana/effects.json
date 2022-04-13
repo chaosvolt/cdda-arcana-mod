@@ -4,21 +4,27 @@
     "id": "arcana_dragonblood_blood_effigy_effect",
     "max_duration": "10 s",
     "name": [ "Blood Effigy" ],
-    "desc": [ "This is just used for Arcana mutagenic effects.  If you see this, that likely means DDA has bugged out in some way again." ]
+    "desc": [
+      "This is just used for Arcana mutagenic effects.  If you see this, that likely means DDA has bugged out in some way again."
+    ]
   },
   {
     "type": "effect_type",
     "id": "arcana_dragonblood_sacramental_heart_effect",
     "max_duration": "10 s",
     "name": [ "Sacramental Heart" ],
-    "desc": [ "This is just used for Arcana mutagenic effects.  If you see this, that likely means DDA has bugged out in some way again." ]
+    "desc": [
+      "This is just used for Arcana mutagenic effects.  If you see this, that likely means DDA has bugged out in some way again."
+    ]
   },
   {
     "type": "effect_type",
     "id": "arcana_paragon_veilblade_effect",
     "max_duration": "10 s",
     "name": [ "Ritual Blade" ],
-    "desc": [ "This is just used for Arcana mutagenic effects.  If you see this, that likely means DDA has bugged out in some way again." ]
+    "desc": [
+      "This is just used for Arcana mutagenic effects.  If you see this, that likely means DDA has bugged out in some way again."
+    ]
   },
   {
     "type": "effect_type",
@@ -1116,6 +1122,14 @@
     "int_dur_factor": "1 m",
     "removes_effects": [ "winded" ],
     "base_mods": { "speed_mod": [ 25 ], "str_mod": [ 2 ], "dex_mod": [ 2 ], "per_mod": [ 1 ], "stamina_min": [ 5 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_veilblade_halt_portal_storms",
+    "name": [ "Ethereal Guidance" ],
+    "desc": [
+      "Should you master the secrets of this blade, wielding it will force portal storms to burn out earlier than normal.  Only the worthy will be offered protection."
+    ]
   },
   {
     "type": "effect_type",

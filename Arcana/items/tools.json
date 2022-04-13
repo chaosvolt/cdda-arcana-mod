@@ -2067,7 +2067,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "restored ritual blade" },
-    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Fueling it with crystallized essence will grant great gifts, but set you down a path you can't return from.",
+    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Linger near a portal to collapse it into a form you can harvest crystallized essence from.  It will grant great gifts, but set you down a path you can't return from.",
     "weight": "2267 g",
     "volume": "3 L",
     "longest_side": "140 cm",
@@ -2093,7 +2093,9 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
+          "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "REGEN_MANA", "multiply": 0.5 } ],
+          "ench_effects": [ { "effect": "arcana_veilblade_halt_portal_storms", "intensity": 1 } ],
+          "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "arcana_react_veilblade" } ] } ] }
         }
       ]
     },
