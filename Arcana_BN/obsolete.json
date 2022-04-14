@@ -1298,5 +1298,11 @@
       "stamina_min": [ -5 ],
       "stamina_tick": [ 5 ]
     }
+  },
+  {
+    "type": "effect_type",
+    "id": "dragonbreath_side_effects",
+    "max_duration": "60 m",
+    "base_mods": { "hunger_min": [ 2 ] }
   }
 ]

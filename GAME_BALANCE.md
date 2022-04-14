@@ -102,9 +102,10 @@ While Magic Signs have a primary cost that is much quicker to regenerate, Arcane
 Property | At Minimum Level | At Max Level
 --- | --- | ---
 Energy Cost | 4 HP * ( Spell Rank + 1 ) | 2 HP * ( Spell Rank + 1 )
+Spell Exertion | 40 sec * ( Spell Rank + 1 ) | 20 sec * ( Spell Rank + 1 )
 Casting Time | 0.3 sec * ( Spell Rank + 1 ) | 0.15 sec * ( Spell Rank + 1 )
 Total Damage | 20 per Spell Rank | 50 per Spell Rank
-Duration, Protective Buffs | 2 per Spell Rank | 5 per Spell Rank
+Duration, Protective Buffs | 2 min per Spell Rank | 5 min per Spell Rank
 Duration, Other Buffs | 6 min per Spell Rank | 15 min per Spell Rank
 Duration, Debuffs | 20 sec per Spell Rank | 50 sec per Spell Rank
 Duration, DoT/Paralysis | 8 sec per Spell Rank | 20 per Spell Rank
@@ -117,3 +118,7 @@ Sanguine Marks use what is effectively the best possible scaling of both Magic S
 HP obviously is a much more important resource than mana or fatigue, and to some extent moreso than stamina as well. It tends to be slower to recover than any of those, though less so with good First Aid skill and medical supplies, healing traits, etc. The available spells are generally geared towards playing towards the strengths Dragonblood has, with its healing rate increase making it more feasible to cast Sanguine Marks more often over a prolonged period of time.
 
 Like Arcane Blessings, Sanguine Marks tend to have secondary effects that differentiate them from comparable Magic Signs. While this often makes them more interesting and offer different options than Magic Signs, this often includes side effects and drawbacks that add a counterbalance to how Dragonblood is already well-suited for HP-casting, and how the positives for each spell tend to compliment the playstyle that mutation category is suited for.
+
+However, since there are many effects in Arcana that can make HP recovery trivial, that makes HP a resource that is normally a long-term resource resource like mana, but it can become a short-term resource in the right situations. As with Magic Signs, to discourage overuse Sanguine Marks inflict a debuff that steadily increases hunger, to the same extent that Magic Sign Exertion increases fatigue.
+
+This effect is granted at a rate equal to 10 seconds per 1 HP consumed. Just as one can interpret Magic Sign Exertion giving a number of seconds equal to how much mana its stamina cost is worth, amounting to paying 20% of the stamina cost in fatigue, so too do you effectively pay 20% of the HP cost in hunger gained, if one assumes that 1 unit of hunger (roughly 8.7 kcal) also equals 5 mana.
