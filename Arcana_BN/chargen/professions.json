@@ -165,7 +165,7 @@
   },
   {
     "type": "profession",
-    "id": "arcanist_oathkeeper",
+    "id": "arcanist_dark_priest",
     "name": "Dark Priest",
     "description": "He From Beyond The Veil calls to you, to your brothers and sisters.  And the faithful, those who remain at least, shall bring him into this world.",
     "points": 6,
@@ -410,6 +410,57 @@
       "female": [ "bra", "panties" ]
     },
     "traits": [ "PROF_CLEANSINGFLAME2" ],
+    "flags": [ "SCEN_ONLY" ]
+  },
+  {
+    "type": "profession",
+    "id": "arcanist_mendicant",
+    "name": "Keeper Mendicant",
+    "description": "When your order crumbled, and the world fell into darkness soon thereafter, you were driven to wander in your struggle to survive.  But your oath is immortal, and when the stars are right you will find a way to serve the Shrouded King once more.",
+    "points": 10,
+    "spells": [ { "id": "arcana_magic_temporal_aura", "level": 1 } ],
+    "skills": [
+      { "level": 2, "name": "fabrication" },
+      { "level": 3, "name": "tailor" },
+      { "level": 2, "name": "cooking" },
+      { "level": 5, "name": "magic" },
+      { "level": 2, "name": "gun" },
+      { "level": 3, "name": "melee" },
+      { "level": 2, "name": "stabbing" },
+      { "level": 3, "name": "dodge" },
+      { "level": 3, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "loincloth",
+          "armor_plarmor",
+          "robe",
+          "footrags",
+          "boots_larmor",
+          "gloves_wraps",
+          "gauntlets_larmor",
+          "helmet_larmor",
+          "patchwork_scarf",
+          "leather_pouch",
+          "charm_bone",
+          "waterskin",
+          "flint_steel",
+          "candle",
+          "sewing_kit",
+          "bowl_clay",
+          "book_sacrifice"
+        ],
+        "entries": [
+          { "item": "spear_pestilence", "ammo-item": "essence", "charges": 9, "container-item": "spearsling" },
+          { "item": "cyclopean_mirror", "charges": 25 },
+          { "item": "salt", "container-item": "bag_canvas_small", "charges": 100 },
+          { "item": "copper_knife", "container-item": "sheath" }
+        ]
+      },
+      "female": [ "chestwrap" ]
+    },
+    "traits": [ "PROF_CHALICE" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {

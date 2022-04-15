@@ -2149,6 +2149,24 @@
     "range_increment": 0.75
   },
   {
+    "id": "arcana_aftermath_temporal_aura_blindness",
+    "type": "SPELL",
+    "name": { "str": "Aftermath: Temporal Aura Blindness" },
+    "description": "This inflicts momentary blindness on targets caught in it.",
+    "message": "",
+    "effect": "attack",
+    "shape": "blast",
+    "valid_targets": [ "ally", "hostile", "ground" ],
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
+    "effect_str": "blind",
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "max_level": 10,
+    "min_duration": 8000,
+    "max_duration": 16000,
+    "duration_increment": 800
+  },
+  {
     "id": "arcana_aftermath_wave_destruction_pulse",
     "type": "SPELL",
     "name": { "str": "Wave of Destruction Pulse" },
