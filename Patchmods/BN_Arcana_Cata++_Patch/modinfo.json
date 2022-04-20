@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "Arcana_Cata++_Patch",
+    "name": "Arcana/Cata++ Patchmod",
+    "authors": [ "Chaosvolt", "Noctifer" ],
+    "description": "Optional patch mod that allows content in Arcana and Cataclysm++ interact with each other.",
+    "version": "BN version, update 4/17/2022",
+    "category": "misc_additions",
+    "dependencies": [ "dda", "Arcana", "Cata++" ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "bionics_failed_bio",
+    "copy-from": "bionics_failed_bio",
+    "//": "Weights follow the same conventions as defined in Cata++ for this itemgroup.",
+    "type": "item_group",
+    "extend": { "items": [ [ "bio_temporal_stimulation", 1 ] ] }
+  },
+  {
+    "id": "bionics_apophis",
+    "copy-from": "bionics_apophis",
+    "//": "Weights follow the same conventions as defined in Cata++ for this itemgroup.",
+    "type": "item_group",
+    "extend": { "items": [ [ "bio_temporal_stimulation", 1 ], [ "bio_life_sign_suppression", 1 ] ] }
+  }
+]
