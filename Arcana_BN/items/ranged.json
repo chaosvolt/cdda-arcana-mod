@@ -519,6 +519,7 @@
             { "value": "ARMOR_BASH", "add": -24 },
             { "value": "ARMOR_CUT", "add": -32 },
             { "value": "ARMOR_STAB", "add": -32 },
+            { "value": "ARMOR_BULLET", "add": -32 },
             { "value": "ARMOR_HEAT", "add": -16 },
             { "value": "ARMOR_ACID", "add": -16 }
           ],

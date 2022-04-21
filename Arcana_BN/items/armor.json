@@ -15,7 +15,8 @@
             { "value": "STRENGTH", "add": 10 },
             { "value": "ARMOR_BASH", "add": -20 },
             { "value": "ARMOR_CUT", "add": -20 },
-            { "value": "ARMOR_STAB", "add": -20 }
+            { "value": "ARMOR_STAB", "add": -20 },
+            { "value": "ARMOR_BULLET", "add": -20 }
           ]
         }
       ]
@@ -117,7 +118,8 @@
             { "value": "ARMOR_CUT", "multiply": -0.5 },
             { "value": "ARMOR_ELEC", "multiply": -0.5 },
             { "value": "ARMOR_HEAT", "multiply": -0.5 },
-            { "value": "ARMOR_STAB", "multiply": -0.5 }
+            { "value": "ARMOR_STAB", "multiply": -0.5 },
+            { "value": "ARMOR_BULLET", "multiply": -0.5 }
           ]
         }
       ]

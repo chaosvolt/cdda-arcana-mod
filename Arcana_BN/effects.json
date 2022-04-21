@@ -495,7 +495,7 @@
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "//": "Replace with resistances when implemented, physical immunities are way more OP than elemental immunities.",
-    "flags": [ "EFFECT_CUT_IMMUNE", "EFFECT_STAB_IMMUNE", "EFFECT_COLD_IMMUNE" ]
+    "flags": [ "EFFECT_CUT_IMMUNE", "EFFECT_STAB_IMMUNE", "EFFECT_BULLET_IMMUNE", "EFFECT_COLD_IMMUNE" ]
   },
   {
     "type": "effect_type",

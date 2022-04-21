@@ -469,6 +469,7 @@
             { "value": "ARMOR_BASH", "add": -10 },
             { "value": "ARMOR_CUT", "add": -10 },
             { "value": "ARMOR_STAB", "add": -10 },
+            { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "ARMOR_HEAT", "multiply": -0.5 },
             { "value": "ARMOR_COLD", "multiply": -0.5 },
             { "value": "ARMOR_ACID", "multiply": -0.5 }
@@ -534,7 +535,11 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "values": [ { "value": "ARMOR_HEAT", "multiply": -1.0 }, { "value": "ARMOR_STAB", "multiply": -1.0 } ]
+          "values": [
+            { "value": "ARMOR_HEAT", "multiply": -1.0 },
+            { "value": "ARMOR_STAB", "multiply": -1.0 },
+            { "value": "ARMOR_BULLET", "multiply": -1.0 }
+          ]
         }
       ]
     },
@@ -572,7 +577,18 @@
     "revert_to": "hauberk_jade",
     "use_action": { "target": "hauberk_jade", "msg": "The glow emanating from your jade hauberk fades.", "type": "transform" },
     "qualities": [ [ "GLARE", 1 ] ],
-    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "CUT_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "CLIMATE_CONTROL" ] }
+    "extend": {
+      "flags": [
+        "GAS_PROOF",
+        "RAD_PROOF",
+        "SUN_GLASSES",
+        "CUT_IMMUNE",
+        "STAB_IMMUNE",
+        "BULLET_IMMUNE",
+        "HEAT_IMMUNE",
+        "CLIMATE_CONTROL"
+      ]
+    }
   },
   {
     "id": "jade_wreath",

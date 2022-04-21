@@ -8,7 +8,8 @@
     "destroy_prompt": "Dispel birchbark weave",
     "mod_value": [
       { "type": "bash", "value": 0.75, "round_up": true, "proportion": [ "thickness" ] },
-      { "type": "cut", "value": 0.75, "round_up": true, "proportion": [ "thickness" ] }
+      { "type": "cut", "value": 0.75, "round_up": true, "proportion": [ "thickness" ] },
+      { "type": "bullet", "value": 0.75, "round_up": true, "proportion": [ "thickness" ] }
     ]
   },
   {
