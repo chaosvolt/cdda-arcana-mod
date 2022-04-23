@@ -85,5 +85,12 @@
     "//": "Weights follow the same conventions as defined in Cata++ for this itemgroup.",
     "type": "item_group",
     "items": [ [ "bio_temporal_stimulation", 1 ], [ "bio_life_sign_suppression", 1 ] ]
+  },
+  {
+    "id": "afs_weapons_rare",
+    "type": "item_group",
+    "items": [
+      { "group": "lab_magitech_weaponry", "prob": 5 }
+    ]
   }
 ]
