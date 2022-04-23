@@ -80,14 +80,14 @@
     "subtype": "collection",
     "entries": [
       { "distribution": [ { "item": "engraved_stone", "prob": 50 }, { "item": "monster_tear", "prob": 50 } ], "prob": 10 },
-      { "item": "essence_dull", "prob": 25, "count": [ 5, 15 ] }
+      { "item": "essence_dull", "prob": 25, "count": [ 10, 20 ] }
     ]
   },
   {
     "type": "item_group",
     "id": "mon_plasticgolem_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "monster_tear", "prob": 10 }, { "item": "essence_dull", "prob": 25, "count": [ 5, 15 ] } ]
+    "entries": [ { "item": "monster_tear", "prob": 10 }, { "item": "essence_dull", "prob": 25, "count": [ 10, 20 ] } ]
   },
   {
     "type": "item_group",
@@ -95,7 +95,7 @@
     "subtype": "collection",
     "entries": [
       { "distribution": [ { "item": "engraved_stone", "prob": 50 }, { "item": "monster_tear", "prob": 50 } ], "prob": 10 },
-      { "item": "essence_dull", "prob": 25, "count": [ 5, 15 ] }
+      { "item": "essence_dull", "prob": 25, "count": [ 10, 20 ] }
     ]
   },
   {
@@ -104,14 +104,14 @@
     "subtype": "collection",
     "entries": [
       { "distribution": [ { "item": "iron_thorn", "prob": 50 }, { "item": "monster_tear", "prob": 50 } ], "prob": 10 },
-      { "item": "essence_dull", "prob": 25, "count": [ 5, 15 ] }
+      { "item": "essence_dull", "prob": 25, "count": [ 10, 20 ] }
     ]
   },
   {
     "type": "item_group",
     "id": "mon_owlbear_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 1, 3 ] } ]
+    "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] } ]
   },
   {
     "type": "item_group",
@@ -132,7 +132,7 @@
     "type": "item_group",
     "id": "mon_owlbear_cub_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "essence_blood", "prob": 10, "count": [ 1, 3 ] } ]
+    "entries": [ { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] } ]
   },
   {
     "type": "item_group",
@@ -140,7 +140,7 @@
     "subtype": "collection",
     "entries": [
       { "distribution": [ { "item": "iridescent_plate", "prob": 50 }, { "item": "wyrmskin_piece", "prob": 50 } ], "prob": 10 },
-      { "item": "essence_blood", "prob": 25, "count": [ 1, 3 ] }
+      { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }
     ]
   },
   {
@@ -149,7 +149,7 @@
     "subtype": "collection",
     "entries": [
       { "distribution": [ { "item": "monster_fang", "prob": 25 }, { "item": "bone_twisted", "prob": 75 } ], "prob": 10 },
-      { "item": "essence_blood", "prob": 25, "count": [ 1, 3 ] }
+      { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }
     ]
   },
   {

@@ -112,5 +112,111 @@
     "copy-from": "mon_lemure",
     "type": "MONSTER",
     "death_drops": "mon_lemure_death_drops"
+  },
+
+
+
+
+  {
+    "id": "mon_forgeborn",
+    "copy-from": "mon_forgeborn",
+    "type": "MONSTER",
+    "death_drops": "mon_forgeborn_death_drops"
+  },
+  {
+    "id": "mon_forgemaster3",
+    "copy-from": "mon_forgemaster3",
+    "type": "MONSTER",
+    "death_drops": "mon_forgemaster3_death_drops"
+  },
+  {
+    "id": "mon_forgedemons",
+    "copy-from": "mon_forgedemons",
+    "type": "MONSTER",
+    "death_drops": "mon_forgedemons_death_drops"
+  },
+  {
+    "id": "mon_forgehounds",
+    "copy-from": "mon_forgehounds",
+    "type": "MONSTER",
+    "death_drops": "mon_forgehounds_death_drops"
+  },
+  {
+    "id": "mon_troll_goblin_tamed",
+    "copy-from": "mon_troll_goblin_tamed",
+    "type": "MONSTER",
+    "death_drops": "mon_troll_goblin_tamed_death_drops"
+  },
+  {
+    "id": "mon_yulecat",
+    "copy-from": "mon_yulecat",
+    "type": "MONSTER",
+    "death_drops": "mon_yulecat_death_drops"
+  },
+  {
+    "id": "mon_yulecat_cub",
+    "copy-from": "mon_yulecat_cub",
+    "type": "MONSTER",
+    "death_drops": "mon_yulecat_cub_death_drops"
+  },
+  {
+    "id": "mon_winter_wolf",
+    "copy-from": "mon_winter_wolf",
+    "type": "MONSTER",
+    "death_drops": "mon_winter_wolf_death_drops"
+  },
+  {
+    "id": "mon_loup_garou",
+    "copy-from": "mon_loup_garou",
+    "type": "MONSTER",
+    "death_drops": "mon_loup_garou_death_drops"
+  },
+  {
+    "id": "mon_balrog",
+    "copy-from": "mon_balrog",
+    "type": "MONSTER",
+    "death_drops": "mon_balrog_death_drops"
+  },
+  {
+    "id": "mon_ogre",
+    "copy-from": "mon_ogre",
+    "type": "MONSTER",
+    "death_drops": "mon_ogre_death_drops"
+  },
+  {
+    "id": "mon_were_zolf",
+    "copy-from": "mon_were_zolf",
+    "type": "MONSTER",
+    "death_drops": "mon_were_zolf_death_drops"
+  },
+  {
+    "id": "mon_owlbear_zombie",
+    "copy-from": "mon_owlbear_zombie",
+    "type": "MONSTER",
+    "death_drops": "mon_owlbear_zombie_death_drops"
+  },
+  {
+    "id": "mon_owlbear_zombie_brute",
+    "copy-from": "mon_owlbear_zombie_brute",
+    "type": "MONSTER",
+    "death_drops": "mon_owlbear_zombie_brute_death_drops"
+  },
+  {
+    "id": "mon_troll_zombie",
+    "copy-from": "mon_troll_zombie",
+    "type": "MONSTER",
+    "death_drops": "mon_troll_zombie_death_drops"
+  },
+  {
+    "id": "mon_yulecat_zombie",
+    "copy-from": "mon_yulecat_zombie",
+    "type": "MONSTER",
+    "death_drops": "mon_yulecat_zombie_death_drops"
+  },
+  {
+    "id": "mon_yulecat_zombie_brute",
+    "copy-from": "mon_yulecat_zombie_brute",
+    "type": "MONSTER",
+    "death_drops": "mon_yulecat_zombie_brute_death_drops"
   }
 ]
