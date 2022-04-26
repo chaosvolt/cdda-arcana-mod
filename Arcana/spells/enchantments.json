@@ -35,7 +35,7 @@
     "type": "enchantment",
     "id": "ENCH_DRAGONBLOOD_KNOCKDOWN",
     "condition": "ALWAYS",
-    "hit_me_effect": [
+    "hit_you_effect": [
       {
         "id": "arcana_react_dragonblood_knockdown",
         "hit_self": false,

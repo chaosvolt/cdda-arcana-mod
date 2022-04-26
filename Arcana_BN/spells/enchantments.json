@@ -35,13 +35,13 @@
     "type": "enchantment",
     "id": "ENCH_DRAGONBLOOD_KNOCKDOWN",
     "condition": "ALWAYS",
-    "hit_me_effect": [
+    "hit_you_effect": [
       {
         "id": "arcana_react_dragonblood_knockdown",
         "hit_self": false,
         "once_in": 20,
-        "message": "The force of your strike floors %2$s's!",
-        "npc_message": "The force of %1$s's strike floors %2$s's!"
+        "message": "The force of your strike floors %2$s!",
+        "npc_message": "The force of %1$s's strike floors %2$s!"
       }
     ]
   }
