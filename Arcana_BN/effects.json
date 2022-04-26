@@ -371,6 +371,11 @@
   },
   {
     "type": "effect_type",
+    "id": "food_protect_dragonblood",
+    "blocks_effects": [ "tapeworm", "bloodworms", "brainworms", "paincysts", "foodpoison" ]
+  },
+  {
+    "type": "effect_type",
     "id": "blood_clarity",
     "name": [ "Clarity of Blood" ],
     "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus or mutagenic toxins." ],
@@ -605,14 +610,13 @@
     "type": "effect_type",
     "id": "dragonblood_clarity",
     "name": [ "Revenant Blood" ],
-    "desc": [ "Immunity to poison, food poisoning, parasites, fungus, and mutagenic toxins." ],
-    "resist_effects": [ "talisman_warding" ],
+    "desc": [ "Immunity to poisons, radiation, and fungus." ],
     "remove_message": "The protective effect of your sanguine mark fades, leaving a momentary itch in your veins.",
+    "//": "Food poisoning and food parasites are already covered by Metabolic Adaptability.",
     "removes_effects": [
       "stung",
       "poison",
       "badpoison",
-      "foodpoison",
       "paralyzepoison",
       "teargas",
       "migo_atmosphere",
@@ -621,10 +625,6 @@
       "fungus",
       "dermatik",
       "formication",
-      "tapeworm",
-      "bloodworms",
-      "brainworms",
-      "paincysts",
       "mutating"
     ],
     "decay_messages": [ [ "The protective magic flowing through your blood is starting to wane.", "bad" ] ],
