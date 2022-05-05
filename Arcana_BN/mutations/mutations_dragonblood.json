@@ -183,6 +183,7 @@
     "description": "Your body has adapted to prey upon the new life that infests this world.  It's not powerful enough to deal with undead flesh, but mutated meat is more tolerable to your system.  Albeit, not to your palate.",
     "valid": false,
     "purifiable": false,
+    "changes_to": [ "ARCANA_TOXINIMMUNE_2" ],
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
     "vitamin_rates": [ [ "mutant_toxin", 1 ] ],
