@@ -181,7 +181,7 @@
   },
   {
     "type": "item_group",
-    "id": "mon_forgemaster3",
+    "id": "mon_forgemaster3_death_drops",
     "subtype": "collection",
     "entries": [
       { "item": "gracken_knuckles", "prob": 90 },
