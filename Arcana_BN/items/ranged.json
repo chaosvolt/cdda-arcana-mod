@@ -125,7 +125,7 @@
     "clip_size": 20,
     "reload": 3,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
-    "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
+    "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "CROSSBOW" ],
     "valid_mod_locations": [ [ "sling", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ] ]
   },
   {
@@ -152,7 +152,7 @@
     "clip_size": 20,
     "reload": 3,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
-    "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
+    "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "CROSSBOW" ],
     "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ] ]
   },
   {
@@ -180,7 +180,7 @@
     "clip_size": 50,
     "reload": 6,
     "ammo_effects": [ "WIDE", "LASER", "LARGE_BEANBAG", "BLINDS_EYES" ],
-    "flags": [ "FIRE_50", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
+    "flags": [ "FIRE_50", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "CROSSBOW" ],
     "valid_mod_locations": [ [ "sling", 1 ] ]
   },
   {
