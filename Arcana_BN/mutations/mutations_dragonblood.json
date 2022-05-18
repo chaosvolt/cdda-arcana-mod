@@ -426,7 +426,7 @@
     "visibility": 4,
     "ugliness": 2,
     "mixed_effect": true,
-    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward and making footwear unnecessary.  Rough terrain is still a hindrance and they're better left uncovered, but you can move a bit faster on level ground.",
+    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward.  Rough terrain is still a hindrance and they're better left uncovered, but you can move a bit faster on level ground.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
@@ -445,8 +445,7 @@
         "chance": 40,
         "strength_damage": { "damage_type": "cut", "amount": 3 }
       }
-    ],
-    "flags": [ "BAREFOOT_OK" ]
+    ]
   },
   {
     "type": "mutation",
