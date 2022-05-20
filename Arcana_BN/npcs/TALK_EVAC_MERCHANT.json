@@ -274,8 +274,8 @@
         "text": "Thank you.  I'll bring this back to her.",
         "topic": "TALK_DONE",
         "effect": [
-          { "npc_add_effect": "cf_mission_receipt", "duration": "PERMANENT" },
-          { "u_add_effect": "cf_mission_receipt", "duration": "PERMANENT" },
+          { "npc_add_effect": "cf_mission_receipt" },
+          { "u_add_effect": "cf_mission_receipt" },
           { "u_buy_item": "cf_rep_trade_receipt" }
         ]
       }
