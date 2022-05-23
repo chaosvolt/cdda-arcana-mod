@@ -1119,7 +1119,7 @@
       "rejected": "Please return to me if you change your mind.  We are on the edge of a breakthrough, and this might give us the means to massively improve our changes of survival.",
       "advice": "There's no way they haven't been overrun by now.  If you've ever explored those old facilities you'll know there's a high risk of the place crawling with undead.  Who knows what other anomalies may be there, too?  Be on your guard.",
       "inquire": "Have you found it?",
-      "success": "It's just as I thought.  The culmination of several different research facilities, a project to bring these pieces together, and a very faint aura to it.  They did a lot of testing with the machinery they built, didn't they?  That helps us too.  I'm sorry, this a lot for me to take in and analyze, but we can discuss the importance of what you found later if you wish.",
+      "success": "It's just as I thought.  The culmination of several different research facilities, a project to bring these pieces together, and a very faint aura to it.  They did a lot of testing with the machinery they built, didn't they?  That helps us too.  This a lot for me to take in and analyze, give me about three days and I should have some results you might be interested in taking a look at.  In the meantime, if you have any questions I'll see what I can answer.",
       "success_lie": "Seeing this is probably a bug.",
       "failure": "Seeing this is probably a bug."
     },
@@ -1127,6 +1127,7 @@
       "effect": [
         { "npc_add_var": "nicholas_mission_3_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1" },
+        { "u_add_effect": "cf_purifier_making_item", "duration": 259200 },
         { "u_buy_item": "CF_golden_scale", "count": 20 }
       ]
     }
