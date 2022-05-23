@@ -228,6 +228,7 @@
       {
         "text": "I'll give it a try then.",
         "effect": [
+          { "u_add_var": "nicholas_final_completed", "type": "mission", "context": "rural_church", "value": "yes" },
           { "npc_add_var": "nicholas_final_completed", "type": "mission", "context": "rural_church", "value": "yes" },
           { "u_buy_item": "essence_pure", "count": 0, "container": "divine_sealing_charm" }
         ],
