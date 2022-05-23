@@ -356,7 +356,7 @@
     "id": "arcana_item_divine_seal",
     "name": { "str": "Divine Seal" },
     "description": "Powerful AoE healing, also acts like Consecrate and transforms dead plant life.",
-    "sprite": "fd_dazzling",
+    "sprite": "fd_veil_light",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "message": "Dimensional energy pulses through the charm, radiating outwards in a wave of holy light!",
     "extra_effects": [
@@ -376,7 +376,7 @@
     "id": "arcana_item_divine_seal_heal_aoe",
     "name": { "str": "Divine Seal Healing" },
     "description": "This adds the healing effect for allies, half the expected effectiveness.",
-    "sprite": "fd_veil_light",
+    "sprite": "fd_dazzling",
     "valid_targets": [ "ally" ],
     "message": "",
     "extra_effects": [ { "id": "arcana_item_divine_seal_heal_spike", "hit_self": true } ],

@@ -1077,7 +1077,7 @@
     "max_duration": "30 m",
     "max_intensity": 30,
     "int_dur_factor": "1 m",
-    "removes_effects": [ "poison", "badpoison", "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
+    "removes_effects": [ "poison", "badpoison", "bite", "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
     "base_mods": {
       "stamina_min": [ 25 ],
       "pain_min": [ -1 ],
