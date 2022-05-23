@@ -1360,5 +1360,10 @@
     "desc": [
       "AI tag marking Nicholas as busy tinkering with your quest reward.  Intended duration 3 days.  This is a bug if you have it."
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_purifier_kairos",
+    "//": "This marks a player as having completed Nicholas' final mission and received the item made afterward, used mainly for achievement tracking.  Intended to be permanent."
   }
 ]
