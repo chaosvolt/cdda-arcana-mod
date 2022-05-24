@@ -214,7 +214,6 @@
         "om_terrain_replace": "field",
         "reveal_radius": 3,
         "random": true,
-        "cant_see": true,
         "search_range": 180,
         "min_distance": 10
       }
@@ -281,7 +280,7 @@
     "item": "cf_rep_trade_receipt",
     "start": {
       "effect": [ { "u_buy_item": "cf_rep_trade_arrangement" }, { "u_buy_item": "CF_golden_scale", "count": 20 } ],
-      "assign_mission_target": { "om_terrain": "evac_center_18", "om_special": "evac_center", "reveal_radius": 1 }
+      "assign_mission_target": { "om_terrain": "evac_center_18", "om_special": "evac_center", "must_see": true, "reveal_radius": 1 }
     },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_REP_3",
@@ -448,7 +447,6 @@
         "om_terrain_replace": "forest",
         "reveal_radius": 3,
         "random": true,
-        "cant_see": true,
         "search_range": 180,
         "min_distance": 20
       },
@@ -609,7 +607,6 @@
         "om_terrain_replace": "forest",
         "reveal_radius": 3,
         "random": true,
-        "cant_see": true,
         "search_range": 180,
         "min_distance": 10
       },
@@ -963,7 +960,6 @@
         "om_terrain_replace": "field",
         "reveal_radius": 3,
         "random": true,
-        "cant_see": true,
         "search_range": 180,
         "min_distance": 15
       }
@@ -1107,7 +1103,6 @@
         "om_terrain_replace": "field",
         "reveal_radius": 3,
         "random": true,
-        "cant_see": true,
         "search_range": 180,
         "min_distance": 10
       }
