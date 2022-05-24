@@ -1353,11 +1353,17 @@
     "categories": [ "CLASSIC" ],
     "species": [ "ARCANA_SUMMONED" ],
     "mountable_weight_ratio": 0.9,
+    "dodge": 3,
+    "armor_bash": 3,
+    "armor_cut": 3,
+    "armor_stab": 5,
+    "armor_bullet": 5,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
+    "special_when_hit": [ "ZAPBACK", 50 ],
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
   },
   {
