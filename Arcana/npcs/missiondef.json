@@ -574,7 +574,9 @@
     "has_generic_rewards": false,
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_3",
-    "start": { "assign_mission_target": { "om_terrain": "curious_structure", "om_special": "Curious Structure", "reveal_radius": 3, "z": 0 } },
+    "start": {
+      "assign_mission_target": { "om_terrain": "curious_structure", "om_special": "Curious Structure", "reveal_radius": 3, "z": 0 }
+    },
     "end": {
       "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_spawn_item": "CF_golden_scale", "count": 8 } ],
       "update_mapgen": [
@@ -1114,12 +1116,12 @@
     },
     "dialogue": {
       "describe": "Seeing this is probably a bug.",
-      "offer": "A large volume, the bulk of anomalous items on these shipping records, eventually found their way to a single site.  That's what we're after, and I've also figured out what we're after.  One of the earlier shipments on record mentions something called a dimensional focus lens.  Given what we know of the project and what they were trying to accomplish, that's the component we need to acquire to use their findings to further our own work.  Will you help us?",
+      "offer": "A large volume, the bulk of anomalous items on these shipping records, eventually found their way to a single site.  That's what we're after, and I've also figured out exactly what we need.  One of the earlier shipments on record mentions something called a dimensional focus lens.  Given what we know of the project and what they were trying to accomplish, that's the component we need to acquire to use their findings to further our own work.  Will you help us?",
       "accepted": "Thank you.  I'll give you directions to your objective.  Whatever device the component was used for, it'll likely be well-secured, unless there's been a containment breach or some other disaster.  Take apart any anomalous machinery you find down there, we don't know if it will have been used for a portable device, or a machine that'll have to be scrapped to recover the component.",
       "rejected": "Please return to me if you change your mind.  We are on the edge of a breakthrough, and this might give us the means to massively improve our changes of survival.",
       "advice": "There's no way they haven't been overrun by now.  If you've ever explored those old facilities you'll know there's a high risk of the place crawling with undead.  Who knows what other anomalies may be there, too?  Be on your guard.",
       "inquire": "Have you found it?",
-      "success": "It's just as I thought.  The culmination of several different research facilities, a project to bring these pieces together, and a very faint aura to it.  They did a lot of testing with the machinery they built, didn't they?  That helps us too.  I'm sorry, this a lot for me to take in and analyze, but we can discuss the importance of what you found later if you wish.",
+      "success": "It's just as I thought.  The culmination of several different research facilities, a project to bring these pieces together, and a very faint aura to it.  They did a lot of testing with the machinery they built, didn't they?  That helps us too.  This a lot for me to take in and analyze, give me about three days and I should have some results you might be interested in taking a look at.  In the meantime, if you have any questions I'll see what I can answer.",
       "success_lie": "Seeing this is probably a bug.",
       "failure": "Seeing this is probably a bug."
     },
@@ -1127,6 +1129,7 @@
       "effect": [
         { "npc_add_var": "nicholas_mission_3_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
+        { "u_add_effect": "cf_purifier_making_item", "duration": 259200 },
         { "u_spawn_item": "CF_golden_scale", "count": 20 }
       ]
     }
