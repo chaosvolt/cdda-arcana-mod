@@ -298,7 +298,7 @@
   {
     "id": "TALK_CF_PURIFIER_MISSION_END_2_1",
     "type": "talk_topic",
-    "dynamic_line": "They were constructing a facility of some sort to test portal manipulation.  All these materials are going towards devising a way to seal portals remotely and increase dimensional stability.  I don't know if they succeeded or not, but we might be able to use their progress together with our own research.",
+    "dynamic_line": "They were constructing a facility of some sort to test portal manipulation.  All these materials were going towards devising a way to seal portals remotely and increase dimensional stability.  I don't know if they succeeded or not, but we might be able to use their progress together with our own research.",
     "responses": [
       { "text": "What research would that be?", "topic": "TALK_CF_PURIFIER_MISSION_END_2_4" },
       { "text": "What are we looking for?", "topic": "TALK_CF_PURIFIER_MISSION_END_2_3" },
@@ -360,7 +360,7 @@
   {
     "id": "TALK_CF_PURIFIER_MISSION_END_1_2",
     "type": "talk_topic",
-    "dynamic_line": "That's what I'm thinking you could help with.  There has to be someone who knows more about this, or failing that, where we could find more information.",
+    "dynamic_line": "That's what I'm hoping you could help with.  There has to be someone who knows more about this, or failing that, where we could find more information.",
     "responses": [
       { "text": "Worth a shot.", "topic": "TALK_CF_PURIFIER_MISSION_END_1_3" },
       { "text": "Maybe later.", "topic": "TALK_CF_PURIFIER" }
@@ -369,7 +369,7 @@
   {
     "id": "TALK_CF_PURIFIER_MISSION_END_1_3",
     "type": "talk_topic",
-    "dynamic_line": "I'm just about then getting a summary of the project, known locations of supply shipments, and what little else we know copied.  Talk to me when you're ready and I just might have an idea for how we can get what we need.",
+    "dynamic_line": "I'm just about done getting a summary of the project, known locations of supply shipments, and what little else we know copied.  Talk to me when you're ready and I just might have an idea for how we can get what we need.",
     "speaker_effect": [
       {
         "effect": [ { "npc_add_var": "nicholas_mission_2_ready", "type": "mission", "context": "rural_church", "value": "yes" } ]
