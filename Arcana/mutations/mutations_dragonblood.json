@@ -454,7 +454,6 @@
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_SCALYLEGS" ],
-    "prereqs2": [ "TOUGH_FEET" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "types": [ "LEGS" ],
     "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "foot_l", 5 ], [ "foot_r", 5 ] ],
