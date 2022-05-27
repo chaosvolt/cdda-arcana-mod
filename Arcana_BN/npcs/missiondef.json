@@ -1122,7 +1122,7 @@
       "effect": [
         { "npc_add_var": "nicholas_mission_3_end", "type": "mission", "context": "rural_church", "value": "yes" },
         { "u_add_effect": "cf_mission_1" },
-        { "u_add_effect": "cf_purifier_making_item", "duration": 259200 },
+        { "npc_add_effect": "cf_purifier_making_item", "duration": 259200 },
         { "u_buy_item": "CF_golden_scale", "count": 20 }
       ]
     }

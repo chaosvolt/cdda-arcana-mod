@@ -409,7 +409,7 @@
         " |||||||||....|      |CCC..C|..eeee.cW...|..........#OO.....OOOO|||++|  ",
         " |.lllll.|....|      |CCC..C|..eeee.cW...|||||||||||||||||+|||||| |..|  ",
         " |.......|..||||||   |.....C|.......cW......................|     |..|  ",
-        " |.bbbbb.|..|.>>.|   ||====||.......cW......................|    ||..|| ",
+        " |.bbbbb.|..|.<<.|   ||====||.......cW......................|    ||..|| ",
         " |.......+..|....|   |&.....|..eeee..|......................|    |Y..Y| ",
         " |.......+..||XX|||  |..ff..=..eeee.f||+|||W||||||||||||||+|||   ||..|| ",
         " |.bbbbb.|.......b|  |..ff..=.......f|...W6..|         |Y...Y|    |..|  ",
@@ -829,7 +829,7 @@
         { "item": "note_arcane_lab_sector_three", "x": 25, "y": 24 },
         { "item": "note_arcane_lab_sector_three", "x": 38, "y": [ 26, 28 ] },
         { "item": "note_arcane_lab_sector_three", "x": 38, "y": [ 40, 41 ] },
-        { "item": "note_arcane_lab_sector_three", "x": [ 53, 54 ], "y": 34 },
+        { "item": "note_arcane_lab_sector_three", "x": [ 53, 54 ], "y": 33 },
         { "item": "note_arcane_lab_sector_three", "x": [ 62, 63 ], "y": 40 },
         { "item": "note_arcane_lab_sector_three", "x": 61, "y": [ 42, 43 ] },
         { "item": "note_arcane_lab_finale", "x": 65, "y": [ 29, 36 ] }
