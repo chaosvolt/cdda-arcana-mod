@@ -1,27 +1,39 @@
 [
   {
+    "id": "encylopedias_rare",
+    "copy-from": "encylopedias_rare",
+    "type": "item_group",
+    "extend": { "items": [ { "item": "encyclopedia_arcana", "prob": 1 } ] }
+  },
+  {
+    "id": "encylopedias_survalist",
+    "copy-from": "encylopedias_survalist",
+    "type": "item_group",
+    "extend": { "items": [ { "item": "encyclopedia_arcana", "prob": 1 } ] }
+  },
+  {
     "id": "chalice_cult_books",
     "copy-from": "chalice_cult_books",
     "type": "item_group",
-    "extend": { "items": [ { "group": "encylopedias_rare", "prob": 5 } ] }
+    "extend": { "items": [ { "group": "encylopedias_survalist", "prob": 5 } ] }
   },
   {
     "id": "cleansing_flame_books",
     "copy-from": "cleansing_flame_books",
     "type": "item_group",
-    "extend": { "items": [ { "group": "encylopedias_rare", "prob": 5 } ] }
+    "extend": { "items": [ { "group": "encylopedias_survalist", "prob": 5 } ] }
   },
   {
     "id": "sanguine_cult_books",
     "copy-from": "sanguine_cult_books",
     "type": "item_group",
-    "extend": { "items": [ { "group": "encylopedias_rare", "prob": 3 }, [ "manual_mut_com", 2 ] ] }
+    "extend": { "items": [ { "group": "encylopedias_survalist", "prob": 3 }, [ "manual_mut_com", 2 ] ] }
   },
   {
     "id": "unaligned_arcanist_books",
     "copy-from": "unaligned_arcanist_books",
     "type": "item_group",
-    "extend": { "items": [ { "group": "encylopedias_rare", "prob": 5 } ] }
+    "extend": { "items": [ { "group": "encylopedias_survalist", "prob": 5 } ] }
   },
   {
     "id": "reading_lights",
