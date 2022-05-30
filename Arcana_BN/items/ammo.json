@@ -304,7 +304,7 @@
   },
   {
     "id": "reloaded_shot_00_arcana",
-    "copy-from": "reloaded_shot_00",
+    "copy-from": "shot_00",
     "type": "AMMO",
     "name": { "str": "purifying 00 shot" },
     "description": "A handloaded shotgun shell, loaded with silver pellets and blessed with salt.  The addition of consecrated essence enhances its impact and turns each pellet into a mote of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
