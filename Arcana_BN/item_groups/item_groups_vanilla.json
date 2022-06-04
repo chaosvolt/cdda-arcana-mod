@@ -98,10 +98,11 @@
     "items": [ [ "offering_chalice", 5 ], [ "blood_athame", 5 ], [ "dragonblood_mutagen", 1 ] ]
   },
   {
-    "id": "vault",
+    "id": "vault_good",
     "type": "item_group",
     "items": [
       { "group": "magic_books", "prob": 25 },
+      { "group": "autodoc_installation_magitech", "prob": 10 },
       [ "arcanemap", 10 ],
       [ "hexenhammer", 5 ],
       [ "offering_chalice", 5 ],
@@ -210,6 +211,7 @@
     "id": "science",
     "type": "item_group",
     "items": [
+      { "group": "autodoc_installation_magitech", "prob": 5 },
       { "group": "lab_misc_anomalous_items", "prob": 5 },
       { "group": "arcana_hunt_random", "prob": 10 },
       [ "tindalos_whistle", 1 ],
@@ -333,5 +335,23 @@
     "id": "ammo_shotgun_modern_handloads",
     "subtype": "distribution",
     "entries": [ { "item": "reloaded_shot_00_arcana", "prob": 25 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "autodoc_installation_programs",
+    "subtype": "distribution",
+    "entries": [ { "group": "autodoc_installation_magitech" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_bank_vault",
+    "subtype": "distribution",
+    "entries": [ { "group": "lab_magitech_bionics", "prob": 25 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "dissection",
+    "subtype": "distribution",
+    "entries": [ { "group": "autodoc_installation_magitech", "prob": 5 } ]
   }
 ]
