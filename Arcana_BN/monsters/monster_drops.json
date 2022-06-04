@@ -90,9 +90,9 @@
           { "item": "inflorescent_root", "prob": 10 },
           { "item": "triffid_queen_flower", "prob": 80 }
         ],
-        "prob": 20
+        "prob": 25
       },
-      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 }
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 }
     ]
   },
   {
@@ -109,25 +109,65 @@
     "type": "item_group",
     "id": "mon_zombie_biter_death_drops",
     "subtype": "collection",
-    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "monster_fang", "prob": 5 } ]
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      {
+        "distribution": [ { "item": "monster_fang", "prob": 75 }, { "item": "graboid_fang", "prob": 25 } ],
+        "prob": 10
+      },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_zombie_hunter_death_drops",
     "subtype": "collection",
-    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "monster_fang", "prob": 5 } ]
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      {
+        "distribution": [
+          { "item": "monster_fang", "prob": 75 },
+          { "item": "graboid_fang", "prob": 10 },
+          { "item": "gracken_knuckles", "prob": 15 }
+        ],
+        "prob": 10
+      },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_zombie_predator_death_drops",
     "subtype": "collection",
-    "entries": [ { "group": "default_zombie_death_drops" }, { "item": "monster_fang", "prob": 10 } ]
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      {
+        "distribution": [
+          { "item": "monster_fang", "prob": 75 },
+          { "item": "graboid_fang", "prob": 10 },
+          { "item": "gracken_knuckles", "prob": 15 }
+        ],
+        "prob": 25
+      },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mon_zombie_mancroc_death_drops",
     "subtype": "collection",
-    "entries": [ { "group": "mon_zombie_swimmer_death_drops" }, { "item": "monster_fang", "prob": 10 } ]
+    "entries": [
+      { "group": "mon_zombie_swimmer_death_drops" },
+      {
+        "distribution": [
+          { "item": "monster_fang", "prob": 50 },
+          { "item": "graboid_fang", "prob": 25 },
+          { "item": "monster_tear", "prob": 25 }
+        ],
+        "prob": 10
+      },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 }
+    ]
   },
   {
     "type": "item_group",
@@ -145,7 +185,7 @@
     "type": "item_group",
     "id": "mon_zombie_smoker_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "iridescent_plate", "prob": 25 }, { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 } ]
+    "entries": [ { "item": "iridescent_plate", "prob": 10 }, { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 } ]
   },
   {
     "type": "item_group",
@@ -661,7 +701,7 @@
     "entries": [
       { "group": "default_zombie_death_drops" },
       { "item": "essence_blood", "prob": 50, "count": [ 2, 4 ] },
-      { "group": "arcana_hunt_random", "prob": 5 },
+      { "group": "arcana_hunt_random", "prob": 10 },
       {
         "distribution": [
           { "group": "magic_tools", "prob": 50, "damage": [ 1, 4 ] },
@@ -830,7 +870,7 @@
           { "item": "bone_twisted", "prob": 40 },
           { "item": "iridescent_plate", "prob": 10 }
         ],
-        "prob": 10
+        "prob": 25
       },
       { "item": "essence_blood", "prob": 50, "count": [ 2, 4 ] }
     ]
@@ -841,10 +881,15 @@
     "subtype": "collection",
     "entries": [
       { "group": "mon_zombie_hulk_death_drops" },
-      { "item": "gracken_knuckles", "prob": 75 },
-      { "item": "bone_twisted", "prob": 50 },
-      { "item": "iridescent_plate", "prob": 25 },
-      { "item": "essence_blood", "prob": 50, "count": [ 2, 4 ] }
+      {
+        "distribution": [
+          { "item": "gracken_knuckles", "prob": 50 },
+          { "item": "bone_twisted", "prob": 40 },
+          { "item": "iridescent_plate", "prob": 10 }
+        ],
+        "prob": 50
+      },
+      { "item": "essence_blood", "count": [ 2, 4 ] }
     ]
   },
   {
@@ -1279,12 +1324,6 @@
       { "item": "essence_dull", "count": [ 0, 410 ] },
       { "item": "essence_pure", "count": [ 0, 5 ] }
     ]
-  },
-  {
-    "type": "item_group",
-    "id": "mon_zombie_medical_death_drops",
-    "subtype": "collection",
-    "entries": [ { "item": "iron_thorn", "prob": 10 } ]
   },
   {
     "id": "mon_feral_summoner_death_drops",
