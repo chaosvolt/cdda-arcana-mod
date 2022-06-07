@@ -572,7 +572,7 @@
     "visibility": 10,
     "ugliness": 2,
     "mixed_effect": true,
-    "description": "Your mind and body have been permanently altered, making you unlike anything that belongs in this world.  Your strikes carry unnatural force with them.  Killing has become second nature to you now, but mundane wildlife will react more aggressively, and you also find it harder to focus on certain crafting tasks.",
+    "description": "Your mind and body have been permanently altered, making you unlike anything that belongs in this world.  Your size now equals that of a large creature, and your strikes carry unnatural force with them.  Killing has become second nature to you now, but mundane wildlife will react more aggressively, and you also find it harder to focus on certain crafting tasks.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_DRAGONFIRE" ],
@@ -589,6 +589,7 @@
     "weight_capacity_modifier": 1.05,
     "hp_adjustment": 25,
     "movecost_obstacle_modifier": 1.1,
-    "flags": [ "PRED4" ]
+    "flags": [ "PRED4" ],
+    "body_size": "LARGE"
   }
 ]
