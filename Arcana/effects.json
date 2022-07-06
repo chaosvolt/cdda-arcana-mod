@@ -1027,7 +1027,7 @@
       "thirst_min": [ 1 ],
       "thirst_chance": [ -120 ],
       "thirst_chance_bot": [ 100 ],
-      "thirst_tick": [ 300 ]
+      "thirst_tick": [ 600 ]
     },
     "scaling_mods": {
       "health_tick": [ -360, -300 ],
