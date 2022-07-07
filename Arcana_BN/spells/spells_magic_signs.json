@@ -905,9 +905,9 @@
     "base_energy_cost": 3500,
     "final_energy_cost": 1750,
     "energy_increment": -175,
-    "min_duration": 1080000,
-    "max_duration": 2160000,
-    "duration_increment": 108000
+    "min_duration": 720000,
+    "max_duration": 1440000,
+    "duration_increment": 72000
   },
   {
     "id": "arcana_magic_summon_skeletal_dog",
@@ -936,9 +936,9 @@
     "base_energy_cost": 2000,
     "final_energy_cost": 1000,
     "energy_increment": -100,
-    "min_duration": 540000,
-    "max_duration": 1080000,
-    "duration_increment": 54000,
+    "min_duration": 360000,
+    "max_duration": 720000,
+    "duration_increment": 36000,
     "spell_class": "SPELL_SUMMONDOG"
   },
   {
@@ -968,9 +968,9 @@
     "base_energy_cost": 3000,
     "final_energy_cost": 1500,
     "energy_increment": -150,
-    "min_duration": 900000,
-    "max_duration": 1800000,
-    "duration_increment": 90000
+    "min_duration": 600000,
+    "max_duration": 1200000,
+    "duration_increment": 60000
   },
   {
     "id": "arcana_magic_summon_shadow_snake",
@@ -1000,9 +1000,9 @@
     "base_energy_cost": 3500,
     "final_energy_cost": 1750,
     "energy_increment": -175,
-    "min_duration": 1080000,
-    "max_duration": 2160000,
-    "duration_increment": 108000
+    "min_duration": 720000,
+    "max_duration": 1440000,
+    "duration_increment": 72000
   },
   {
     "id": "arcana_magic_surge_adrenaline",
@@ -1036,33 +1036,30 @@
   },
   {
     "id": "arcana_magic_temporal_aura",
+    "//": "ID retained for save compatibility",
     "type": "SPELL",
-    "name": { "str": "Sign: Temporal Aura" },
-    "description": "Magic Sign\nUsing this spell will strike any nearby enemies (or allies) with a temporal effect.  Rather than dealing damage, it will freeze them in place momentarily, and leave them temporarily blinded.",
+    "name": { "str": "Sign: Transcendent Aura" },
+    "description": "Magic Sign\nUsing this spell will shroud you with a faded halo, which will make you undetectable to various otherworldly creatures, in exchange for being easier to spot by most other creatures.",
     "sprite": "fd_dazzling",
     "message": "\"Guard and guide me, out of the clutches of the wicked…\"  You cast %s!",
-    "extra_effects": [
-      { "id": "arcana_aftermath_temporal_aura_blindness", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 }
-    ],
-    "effect": "mod_moves",
-    "valid_targets": [ "ally", "hostile", "ground" ],
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
-    "min_damage": -3200,
-    "max_damage": -6400,
-    "damage_increment": -320,
-    "min_aoe": 2,
-    "max_aoe": 2,
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_8", "hit_self": true, "max_level": 10 } ],
+    "effect": "spawn_item",
+    "effect_str": "halo_fadedaura",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL", "NO_PROJECTILE" ],
     "max_level": 10,
-    "difficulty": 40,
+    "difficulty": 80,
     "skill": "magic",
-    "base_casting_time": 200,
-    "final_casting_time": 100,
-    "casting_time_increment": -10,
+    "min_duration": 96000,
+    "max_duration": 192000,
+    "duration_increment": 9600,
+    "base_casting_time": 360,
+    "final_casting_time": 180,
+    "casting_time_increment": -18,
     "energy_source": "STAMINA",
-    "base_energy_cost": 2500,
-    "final_energy_cost": 1250,
-    "energy_increment": -125
+    "base_energy_cost": 4500,
+    "final_energy_cost": 2250,
+    "energy_increment": -225
   },
   {
     "id": "arcana_magic_ward_against_evil",
