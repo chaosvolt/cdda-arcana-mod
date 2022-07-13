@@ -1039,7 +1039,7 @@
     "//": "ID retained for save compatibility",
     "type": "SPELL",
     "name": { "str": "Sign: Transcendent Aura" },
-    "description": "Magic Sign\nUsing this spell will shroud you with a faded halo, which will make you undetectable to various otherworldly creatures, in exchange for being easier to spot by most other creatures.",
+    "description": "Magic Sign\nUsing this spell will shroud you with a faded halo, which will make you undetectable to otherworldly creatures (Nether creatures, fungus, triffids, etc), in exchange for being easier to spot by any other creatures.",
     "sprite": "fd_dazzling",
     "message": "\"Guard and guide me, out of the clutches of the wicked…\"  You cast %s!",
     "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_8", "hit_self": true, "max_level": 10 } ],
