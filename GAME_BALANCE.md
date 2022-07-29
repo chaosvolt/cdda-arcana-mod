@@ -66,9 +66,9 @@ Casting Time | 0.4 sec * ( Spell Rank + 1 ) | 0.2 sec * ( Spell Rank + 1 )
 Total Damage | 20 per Spell Rank | 40 per Spell Rank
 Duration, Protective Buffs | 2 min per Spell Rank | 4 min per Spell Rank
 Duration, Other Buffs | 6 min per Spell Rank | 12 min per Spell Rank
-Duration, Debuffs | 20 sec per Spell Rank | 40 sec per Spell Rank
-Duration, DoT/Paralysis | 8 sec sec per Spell Rank | 16 sec per Spell Rank
-Summoning Duration | 30 min per Spell Rank | 60 min per Spell Rank
+Duration, Debuffs | 6 sec per Spell Rank | 12 sec per Spell Rank
+Duration, DoT/Paralysis | 2 sec sec per Spell Rank | 4 sec per Spell Rank
+Summoning Duration | 20 min per Spell Rank | 40 min per Spell Rank
 
 Magic Signs are the most readily-available type of spell in Arcana and Magic Items mod. Their resource consumed is stamina, making them usable repeatedly over a sustained period of time, but harder to use in the middle of a fight. Per unit conversions specified below, it consumes the equivalent of `50 mana * ( Spell Rank + 1 )` at minimum level, and equivalent to `25 mana * ( Spell Rank + 1 )` at max level.
 
@@ -87,9 +87,9 @@ Casting Time | 0.5 sec * ( Spell Rank + 1 ) | 0.25 sec * ( Spell Rank + 1 )
 Total Damage | 10 per Spell Rank | 50 per Spell Rank
 Duration, Protective Buffs | 1 min per Spell Rank | 5 min per Spell Rank
 Duration, Other Buffs | 3 min per Spell Rank | 15 min per Spell Rank
-Duration, Debuffs | 10 sec per Spell Rank | 50 sec per Spell Rank
-Duration, DoT/Paralysis | 4 sec per Spell Rank | 20 sec per Spell Rank
-Summoning Duration | 15 min per Spell Rank | 75 min per Spell Rank
+Duration, Debuffs | 3 sec per Spell Rank | 15 sec per Spell Rank
+Duration, DoT/Paralysis | 1 sec sec per Spell Rank | 5 sec per Spell Rank
+Summoning Duration | 10 min per Spell Rank | 50 min per Spell Rank
 
 Arcane Blessings are a type of spell associated with the Paragon of The Veil threshold, a late-game option for players. It consumes mana, and is the only form of magic in Arcana to do so. Spell costs are slightly higher than Magic Signs in terms of how much mana the stamina costs equate to, but lack the secondary cost the Magic Sign Exertion induces.
 
@@ -107,9 +107,9 @@ Casting Time | 0.3 sec * ( Spell Rank + 1 ) | 0.15 sec * ( Spell Rank + 1 )
 Total Damage | 20 per Spell Rank | 50 per Spell Rank
 Duration, Protective Buffs | 2 min per Spell Rank | 5 min per Spell Rank
 Duration, Other Buffs | 6 min per Spell Rank | 15 min per Spell Rank
-Duration, Debuffs | 20 sec per Spell Rank | 50 sec per Spell Rank
-Duration, DoT/Paralysis | 8 sec per Spell Rank | 20 per Spell Rank
-Summoning Duration | 30 min per Spell Rank | 75 min per Spell Rank
+Duration, Debuffs | 6 sec per Spell Rank | 15 sec per Spell Rank
+Duration, DoT/Paralysis | 2 sec sec per Spell Rank | 5 sec per Spell Rank
+Summoning Duration | 20 min per Spell Rank | 50 min per Spell Rank
 
 Sanguine Marks are associated with the Dragonblood mutation category, a competing late-game option for players. Its casting resource is HP, which is slower to recover and thus potentially costly despite the fairly low amounts involved. In terms of energy equivalence, its cost equals `40 mana * ( Spell Rank + 1 )` at minimum level, and `20 mana * ( Spell Rank + 1 )` at max level.
 
