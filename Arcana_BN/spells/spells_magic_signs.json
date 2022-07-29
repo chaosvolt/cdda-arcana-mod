@@ -1046,7 +1046,7 @@
     "effect": "spawn_item",
     "effect_str": "halo_fadedaura",
     "valid_targets": [ "self" ],
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL", "NO_PROJECTILE" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
     "max_level": 10,
     "difficulty": 80,
     "skill": "magic",
