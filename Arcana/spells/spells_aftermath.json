@@ -868,9 +868,9 @@
     "range_increment": 0.4,
     "min_aoe": 360,
     "max_aoe": 360,
-    "min_duration": 3200,
-    "max_duration": 8000,
-    "duration_increment": 960,
+    "min_duration": 2400,
+    "max_duration": 6000,
+    "duration_increment": 720,
     "field_id": "fd_blood",
     "field_chance": 2,
     "min_field_intensity": 1,
@@ -1512,9 +1512,9 @@
     "field_chance": 2,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
-    "min_duration": 4000,
-    "max_duration": 10000,
-    "duration_increment": 1200
+    "min_duration": 1000,
+    "max_duration": 2500,
+    "duration_increment": 300
   },
   {
     "id": "arcana_aftermath_elemental_field_effect",
@@ -1804,9 +1804,9 @@
     "max_range": 10,
     "range_increment": 1,
     "max_level": 5,
-    "min_duration": 10000,
-    "max_duration": 25000,
-    "duration_increment": 3000
+    "min_duration": 3000,
+    "max_duration": 7500,
+    "duration_increment": 900
   },
   {
     "id": "arcana_aftermath_open_lock_spike",
