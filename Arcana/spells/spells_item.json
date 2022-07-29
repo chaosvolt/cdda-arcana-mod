@@ -893,7 +893,11 @@
     "message": "An otherworldly plume of blue flame arcs out from an emitter on the mech's shoulder, casting an eerie glow over the area!",
     "effect": "attack",
     "shape": "blast",
-    "extra_effects": [ { "id": "arcana_item_mech_flare_fatigue" }, { "id": "arcana_item_mech_flare_spike" }, { "id": "arcana_item_mech_flare_dazzle" } ],
+    "extra_effects": [
+      { "id": "arcana_item_mech_flare_fatigue" },
+      { "id": "arcana_item_mech_flare_spike" },
+      { "id": "arcana_item_mech_flare_dazzle" }
+    ],
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "RANDOM_DURATION", "SILENT" ],
     "min_damage": 40,
