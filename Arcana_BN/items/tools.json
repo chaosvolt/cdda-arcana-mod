@@ -1634,9 +1634,10 @@
         "menu_text": "Extinguish candle of warding",
         "type": "transform"
       },
+      { "type": "firestarter", "moves": 100 },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
-    "flags": [ "NO_SALVAGE", "LIGHT_12" ]
+    "flags": [ "NO_SALVAGE", "LIGHT_12", "FIRESTARTER" ]
   },
   {
     "id": "transmutation_crucible",
