@@ -216,7 +216,8 @@
         "need_charges": 1,
         "need_charges_msg": "The sword needs energy to serve its purpose.",
         "menu_text": "Awaken the holy blade",
-        "type": "transform"
+        "type": "transform",
+        "ammo_scale": 0
       }
     ],
     "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ]
@@ -235,7 +236,13 @@
     "techniques": [ "WBLOCK_2", "tec_weapon_incorruptible_slash" ],
     "use_action": [
       { "type": "firestarter", "moves": 30 },
-      { "menu_text": "Turn off", "type": "transform", "msg": "The sword's radiance fades.", "target": "sun_sword" }
+      {
+        "menu_text": "Turn off",
+        "type": "transform",
+        "msg": "The sword's radiance fades.",
+        "target": "sun_sword",
+        "ammo_scale": 0
+      }
     ],
     "relative": { "cutting": 3 },
     "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
@@ -457,7 +464,8 @@
       "target_charges": 3,
       "active": true,
       "menu_text": "Arm",
-      "type": "transform"
+      "type": "transform",
+      "ammo_scale": 0
     },
     "flags": [ "BOMB", "ACT_ON_RANGED_HIT" ]
   },
@@ -502,7 +510,8 @@
       "target_charges": 3,
       "active": true,
       "menu_text": "Arm",
-      "type": "transform"
+      "type": "transform",
+      "ammo_scale": 0
     },
     "flags": [ "BOMB", "ACT_ON_RANGED_HIT" ]
   },
@@ -547,7 +556,8 @@
       "target_charges": 3,
       "active": true,
       "menu_text": "Arm",
-      "type": "transform"
+      "type": "transform",
+      "ammo_scale": 0
     },
     "flags": [ "BOMB", "ACT_ON_RANGED_HIT" ]
   },
@@ -592,7 +602,8 @@
       "target_charges": 3,
       "active": true,
       "menu_text": "Arm",
-      "type": "transform"
+      "type": "transform",
+      "ammo_scale": 0
     },
     "flags": [ "BOMB", "ACT_ON_RANGED_HIT" ]
   },
@@ -1135,7 +1146,8 @@
         "active": true,
         "need_wielding": true,
         "menu_text": "Activate explosive rune",
-        "type": "transform"
+        "type": "transform",
+        "ammo_scale": 0
       }
     ],
     "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] }
@@ -1618,7 +1630,8 @@
         "target": "candle_warding_active",
         "msg": "The candle gives off a faint blue flame.",
         "menu_text": "Light candle of warding",
-        "type": "transform"
+        "type": "transform",
+        "ammo_scale": 0
       },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
@@ -1643,9 +1656,10 @@
         "target": "candle_warding",
         "msg": "The candle's wick is extinguished.",
         "menu_text": "Extinguish candle of warding",
-        "type": "transform"
+        "type": "transform",
+        "ammo_scale": 0
       },
-	  { "type": "firestarter", "moves": 100 },
+      { "type": "firestarter", "moves": 100 },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
     "flags": [ "NO_SALVAGE", "LIGHT_12", "FIRESTARTER" ]
@@ -2002,7 +2016,8 @@
         "need_wielding": true,
         "need_charges": 1,
         "need_charges_msg": "The lash hungers for blood.",
-        "type": "transform"
+        "type": "transform",
+        "ammo_scale": 0
       }
     ]
   },
@@ -2019,7 +2034,14 @@
     "turns_per_charge": 25,
     "revert_to": "scourge_moonstone",
     "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
-    "use_action": [ { "target": "scourge_moonstone", "msg": "The wicked energy flowing through the whip fades.", "type": "transform" } ]
+    "use_action": [
+      {
+        "target": "scourge_moonstone",
+        "msg": "The wicked energy flowing through the whip fades.",
+        "type": "transform",
+        "ammo_scale": 0
+      }
+    ]
   },
   {
     "id": "moonstone_fang",
@@ -2075,7 +2097,8 @@
       "need_charges": 1,
       "need_charges_msg": "Essence shall draw out the fang's protective magic.",
       "menu_text": "Activate ward against cold",
-      "type": "transform"
+      "type": "transform",
+      "ammo_scale": 0
     },
     "flags": [ "STAB", "SHEATH_KNIFE", "TRADER_KEEP_EQUIPPED" ]
   },
@@ -2091,7 +2114,8 @@
     "use_action": {
       "target": "moonstone_fang",
       "msg": "The fang's unnatural glow fades, its protective magic with it.",
-      "type": "transform"
+      "type": "transform",
+      "ammo_scale": 0
     },
     "extend": { "flags": [ "TRADER_AVOID", "NO_UNWIELD" ] }
   },
@@ -2200,7 +2224,8 @@
         "need_charges": 9,
         "need_charges_msg": "Nine motes of blood shall awaken the blade.",
         "menu_text": "Awaken the dark blade",
-        "type": "transform"
+        "type": "transform",
+        "ammo_scale": 0
       }
     ],
     "relative": { "to_hit": -1, "cutting": -5 },
