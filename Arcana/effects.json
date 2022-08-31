@@ -79,6 +79,7 @@
   {
     "type": "effect_type",
     "id": "temporal_stimulation_effect",
+    "name": [ "Temporal Stimulation" ],
     "//": "This adds the stamina and fatigue effects to TS.  And the speed boost, because speed enchantments can't be trusted to work.",
     "base_mods": {
       "speed_mod": [ 100 ],
