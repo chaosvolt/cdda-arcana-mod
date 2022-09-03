@@ -462,7 +462,7 @@
     "use_action": [
       {
         "target": "cyclopean_mirror_on",
-        "msg": "he mirror glows and reveals its otherworldly reflection, as a faint protective aura envelops you.",
+        "msg": "The mirror glows and reveals its otherworldly reflection, as a faint protective aura envelops you.",
         "active": true,
         "need_worn": true,
         "need_charges": 1,
@@ -516,6 +516,7 @@
     "revert_to": "cyclopean_mirror",
     "use_action": {
       "target": "cyclopean_mirror",
+      "menu_text": "Turn off protective aura",
       "msg": "The protective glow vanishes as the mirror deactivates.",
       "type": "transform",
       "ammo_scale": 0
