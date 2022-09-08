@@ -64,7 +64,7 @@
     "durability": 150,
     "epower": 0,
     "power": 200000,
-    "energy_consumption": 100000,
+    "energy_consumption": "100 kJ",
     "breaks_into": [
       { "item": "scrap", "count": [ 1, 4 ] },
       { "item": "steel_chunk", "count": [ 1, 3 ] },

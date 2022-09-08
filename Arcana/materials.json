@@ -16,35 +16,35 @@
     "dmg_adj": [ "lightly damaged", "damaged", "very damaged", "thoroughly damaged" ],
     "bash_dmg_verb": "damaged",
     "cut_dmg_verb": "damaged",
-    "fuel_data": { "energy": 1 }
+    "fuel_data": { "energy": "1000 kJ" }
   },
   {
     "type": "material",
     "id": "arcana_fuel_essence",
     "copy-from": "essencemat",
     "name": "Essence",
-    "fuel_data": { "energy": 120 }
+    "fuel_data": { "energy": "120000 kJ" }
   },
   {
     "type": "material",
     "id": "arcana_fuel_essence_blood",
     "copy-from": "essencemat",
     "name": "Blood Essence",
-    "fuel_data": { "energy": 40 }
+    "fuel_data": { "energy": "40000 kJ" }
   },
   {
     "type": "material",
     "id": "arcana_fuel_essence_dull",
     "copy-from": "essencemat",
     "name": "Dull Essence",
-    "fuel_data": { "energy": 4 }
+    "fuel_data": { "energy": "4000 kJ" }
   },
   {
     "type": "material",
     "id": "arcana_fuel_essence_pure",
     "copy-from": "essencemat",
     "name": "Crystallized Essence",
-    "fuel_data": { "energy": 1200 }
+    "fuel_data": { "energy": "1200000 kJ" }
   },
   {
     "type": "material",
