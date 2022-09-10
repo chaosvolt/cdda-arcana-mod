@@ -496,7 +496,7 @@
     "difficulty": 9,
     "skills_required": [ "fabrication", 6 ],
     "time": "100 m",
-    "book_learn": [ [ "book_sacrifice", 9 ], [ "book_syncretism", 8 ] ],
+    "book_learn": [ [ "book_bloodmagic", 9 ], [ "book_syncretism", 8 ] ],
     "using": [
       [ "sewing_standard", 80 ],
       [ "forging_standard", 2 ],

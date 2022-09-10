@@ -97,7 +97,8 @@
       "NO_SALVAGE",
       "MAGIC_FOCUS",
       "USE_PLAYER_ENERGY",
-      "PYROMANIAC_WEAPON"
+      "PYROMANIAC_WEAPON",
+      "SHEATH_SPEAR"
     ]
   },
   {
@@ -280,7 +281,15 @@
     },
     "ammo_effects": [ "ACIDBOMB", "TOXICGAS" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE", "MAGIC_FOCUS" ]
+    "flags": [
+      "UNBREAKABLE_MELEE",
+      "NEVER_JAMS",
+      "PRIMITIVE_RANGED_WEAPON",
+      "NONCONDUCTIVE",
+      "NO_SALVAGE",
+      "MAGIC_FOCUS",
+      "SHEATH_SPEAR"
+    ]
   },
   {
     "id": "electrothermal_arc_cannon",

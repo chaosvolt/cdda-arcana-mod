@@ -1809,7 +1809,7 @@
         "clothing_mods": [ "arcana_birchbark_weave", "arcana_tanbark_weave", "arcana_willowbark_weave" ]
       }
     ],
-    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "SHEATH_SPEAR" ]
   },
   {
     "type": "TOOL",
@@ -1984,7 +1984,7 @@
         "level": 0
       }
     ],
-    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "SHEATH_SPEAR" ]
   },
   {
     "id": "scourge_moonstone",
