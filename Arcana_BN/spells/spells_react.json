@@ -258,5 +258,21 @@
     "effect": "target_attack",
     "min_duration": 100,
     "max_duration": 500
+  },
+  {
+    "id": "arcana_react_shrike_misericorde_chill",
+    "type": "SPELL",
+    "name": { "str": "React: Cold Mercy" },
+    "sprite": "fd_fog",
+    "description": "Cold effect on melee.",
+    "message": "An unearthly chill radiates from your weapon.",
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "valid_targets": [ "hostile" ],
+    "effect_str": "arcana_lingering_chill",
+    "min_range": 1,
+    "max_range": 1,
+    "effect": "target_attack",
+    "min_duration": 500,
+    "max_duration": 1000
   }
 ]

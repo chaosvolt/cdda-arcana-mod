@@ -660,6 +660,24 @@
     "components": [ [ [ "scrap", 12 ] ], [ [ "essence_dull", 50 ] ] ]
   },
   {
+    "result": "shrike_misericorde",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 10 ] ], [ [ "silver_small", 500 ] ], [ [ "essence_dull", 120 ] ] ]
+  },
+  {
+    "result": "shrike_misericorde_folded",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 10 ] ], [ [ "silver_small", 500 ] ], [ [ "essence_dull", 120 ] ] ]
+  },
+  {
     "result": "lichhook",
     "type": "uncraft",
     "skill_used": "magic",
