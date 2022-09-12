@@ -93,6 +93,7 @@
     "items": [
       [ "thunder_sigil", 5 ],
       [ "bloodscourge", 5 ],
+      [ "lichhook", 5 ],
       [ "bloodaxe", 15 ],
       [ "spear_pestilence", 10 ],
       [ "sun_sword", 10 ],
@@ -103,6 +104,7 @@
       [ "somen_clairvoyance", 5 ],
       [ "revenant_crown", 10 ],
       [ "gauntlets_necro", 15 ],
+      [ "shrike_misericorde", 1 ],
       [ "thermic_essence_cutter", 1 ]
     ]
   },
@@ -394,6 +396,23 @@
       { "item": "AID_bio_essence_surge_cell", "prob": 20 },
       { "item": "AID_bio_temporal_stimulation", "prob": 20 },
       { "item": "AID_bio_life_sign_suppression", "prob": 20 }
+    ]
+  },
+  {
+    "id": "vault_magic_item_stash",
+    "type": "item_group",
+    "items": [
+      [ "arcanemap", 10 ],
+      [ "hexenhammer", 5 ],
+      [ "offering_chalice", 5 ],
+      [ "blood_athame", 5 ],
+      [ "mana_gem", 2 ],
+      [ "mana_gem_blood", 2 ],
+      [ "mana_gem_dull", 1 ],
+      [ "totem_elecresist", 1 ],
+      [ "totem_clairvoyance", 1 ],
+      [ "totem_insight", 1 ],
+      [ "totem_lightning", 1 ]
     ]
   }
 ]

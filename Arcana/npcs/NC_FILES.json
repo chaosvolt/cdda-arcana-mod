@@ -938,10 +938,11 @@
     "id": "NC_BLOOD_MAGE_SHRIKE_weapon",
     "ammo": 100,
     "items": [
-      [ "pistol_flintlock", 50 ],
+      [ "pistol_flintlock", 40 ],
       [ "carbine_flintlock", 25 ],
       [ "rifle_flintlock", 15 ],
-      [ "carbine_flintlock_double", 10 ]
+      [ "carbine_flintlock_double", 10 ],
+      [ "shrike_misericorde_folded", 10 ]
     ]
   },
   {
