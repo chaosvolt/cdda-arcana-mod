@@ -153,7 +153,8 @@
       "menu_text": "Unfold into blade mode",
       "type": "transform",
       "target": "shrike_misericorde",
-      "msg": "The weapon splinters and unfurls, reforming into its blade form."
+      "msg": "The weapon splinters and unfurls, reforming into its blade form.",
+      "need_wielding": true
     }
   },
   {

@@ -1209,7 +1209,8 @@
       "menu_text": "Fold into pistol mode",
       "type": "transform",
       "target": "shrike_misericorde_folded",
-      "msg": "The weapon splinters and compacts, reforming into its pistol form."
+      "msg": "The weapon splinters and compacts, reforming into its pistol form.",
+      "need_wielding": true
     }
   },
   {
