@@ -64,7 +64,7 @@
     ],
     "immunity_data": { "traits": [ "ARCANA_DRAGONFIRE" ] },
     "priority": 8,
-    "half_life": "1 seconds",
+    "half_life": "10 seconds",
     "phase": "gas",
     "display_items": false,
     "display_field": true,

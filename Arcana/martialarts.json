@@ -42,7 +42,7 @@
     "copy-from": "style_fencing",
     "type": "martial_art",
     "name": { "str": "Fencing" },
-    "extend": { "weapons": [ "sun_sword", "sun_sword_on", "staff_druidic", "verge_meteoric" ] }
+    "extend": { "weapons": [ "sun_sword", "sun_sword_on", "shrike_misericorde", "staff_druidic", "verge_meteoric" ] }
   },
   {
     "id": "style_swordsmanship",
@@ -387,6 +387,8 @@
       "crash_axe",
       "hatchet",
       "lichhook",
+      "shrike_misericorde",
+      "shrike_misericorde_folded",
       "sword_bayonet",
       "sword_bayonet_mod",
       "makeshift_machete",
