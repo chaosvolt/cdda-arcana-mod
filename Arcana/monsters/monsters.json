@@ -457,6 +457,7 @@
     ],
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "death_drops": {  },
+    "revert_to_itype": "summon_yugg_bound",
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
   },
@@ -492,6 +493,7 @@
     "regenerates": 1,
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "death_drops": {  },
+    "revert_to_itype": "summon_triffid_bound",
     "special_attacks": [
       { "type": "bite", "cooldown": 10 },
       {
@@ -544,6 +546,7 @@
     "armor_stab": 10,
     "armor_bullet": 10,
     "death_drops": {  },
+    "revert_to_itype": "summon_hunting_horror_bound",
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "ELECTRIC", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "SUNDEATH", "HIT_AND_RUN" ] }
   },
@@ -560,6 +563,7 @@
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": {  },
+    "revert_to_itype": "summon_mi_go_bound",
     "extend": { "flags": [ "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
@@ -576,6 +580,7 @@
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
+    "revert_to_itype": "summon_flying_polyp_bound",
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
     "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
@@ -593,6 +598,7 @@
     "path_settings": { "max_dist": 10 },
     "regenerates": 5,
     "death_drops": {  },
+    "revert_to_itype": "summon_shoggoth_bound",
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "special_attacks": [ { "id": "slam", "cooldown": 25, "damage_max_instance": [ { "damage_type": "acid", "amount": 35 } ] } ]
   },
@@ -1128,5 +1134,33 @@
     "death_drops": "mon_feral_sanguinist_death_drops",
     "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "extend": { "flags": [ "ACIDPROOF" ] }
+  },
+  {
+    "id": "mon_kreck_summoned_glyph",
+    "copy-from": "mon_kreck_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned kreck" },
+    "revert_to_itype": "summon_kreck_bound"
+  },
+  {
+    "id": "mon_flesh_angel_summoned_glyph",
+    "copy-from": "mon_flesh_angel_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned flesh angel" },
+    "revert_to_itype": "summon_flesh_angel_bound"
+  },
+  {
+    "id": "mon_dark_wyrm_summoned_glyph",
+    "copy-from": "mon_dark_wyrm_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned dark wyrm" },
+    "revert_to_itype": "summon_dark_wyrm_bound"
+  },
+  {
+    "id": "mon_jabberwock_summoned_glyph",
+    "copy-from": "mon_jabberwock_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned jabberwock" },
+    "revert_to_itype": "summon_jabberwock_bound"
   }
 ]
