@@ -641,7 +641,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_kreck_summoned_bound",
+      "monster_id": "mon_kreck_summoned_glyph",
       "friendly_msg": "The kreck looks up at you expectantly, as if wondering what sort of shenanigans you're plotting.",
       "hostile_msg": "The kreck mimics your movements erratically, cavorting about to mock you!",
       "difficulty": 1,
@@ -725,7 +725,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_flesh_angel_summoned_bound",
+      "monster_id": "mon_flesh_angel_summoned_glyph",
       "friendly_msg": "A twisted mimicry of the divine is called forth, bound to your will.",
       "hostile_msg": "The flesh angel levels a wicked gaze upon you, ignoring your commands.",
       "difficulty": 3,
@@ -809,7 +809,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_dark_wyrm_summoned_bound",
+      "monster_id": "mon_dark_wyrm_summoned_glyph",
       "friendly_msg": "The wyrm springs forth, seeming to regard you passively, or at least ignoring your presence.",
       "hostile_msg": "The wyrm springs forth, reacting to unfamiliar sounds and scent with a malevolent screech!",
       "difficulty": 5,
@@ -892,7 +892,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_jabberwock_summoned_bound",
+      "monster_id": "mon_jabberwock_summoned_glyph",
       "friendly_msg": "You hear a strange burbling, the creature bound to your will.",
       "hostile_msg": "Eyes of flame meet your gaze, the creature resists your attempt to control it!",
       "difficulty": 7,
@@ -1038,7 +1038,7 @@
     "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_kreck_summoned_bound",
+      "monster_id": "mon_kreck_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned kreck, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
@@ -1074,7 +1074,7 @@
     "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_flesh_angel_summoned_bound",
+      "monster_id": "mon_flesh_angel_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned flesh angel, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
@@ -1110,7 +1110,7 @@
     "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_dark_wyrm_summoned_bound",
+      "monster_id": "mon_dark_wyrm_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned dark wyrm, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
@@ -1146,7 +1146,7 @@
     "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_jabberwock_summoned_bound",
+      "monster_id": "mon_jabberwock_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned jabberwock, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
