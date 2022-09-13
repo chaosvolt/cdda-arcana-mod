@@ -1,11 +1,5 @@
 [
   {
-    "id": "encylopedias_rare",
-    "copy-from": "encylopedias_rare",
-    "type": "item_group",
-    "extend": { "items": [ { "item": "encyclopedia_arcana", "prob": 1 } ] }
-  },
-  {
     "id": "encylopedias_survalist",
     "copy-from": "encylopedias_survalist",
     "type": "item_group",
