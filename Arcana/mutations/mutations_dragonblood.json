@@ -361,7 +361,8 @@
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
     "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
-    "rand_cut_bonus": { "min": 2, "max": 6 }
+    "cut_dmg_bonus": 7,
+    "flags": [ "UNARMED_BONUS" ]
   },
   {
     "type": "mutation",
