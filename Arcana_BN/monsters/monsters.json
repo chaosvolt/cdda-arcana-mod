@@ -451,6 +451,7 @@
     "armor_bullet": 8,
     "melee_damage": [ { "damage_type": "cold", "amount": 10, "armor_multiplier": 0.75 } ],
     "regenerates": 10,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
     "delete": { "flags": [ "STUMBLES" ] }
   },
@@ -619,6 +620,7 @@
     "vision_night": 40,
     "path_settings": { "max_dist": 10 },
     "regenerates": 5,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "ABSORBS_SPLITS" ] },
