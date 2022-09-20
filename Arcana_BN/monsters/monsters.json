@@ -31,7 +31,7 @@
     "luminance": 200,
     "harvest": "exempt",
     "regenerates": 1,
-    "regeneration_modifiers": [ { "effect": "arcana_lingering_chill", "base_mod": -1.0 } ],
+    "regeneration_modifiers": [ { "effect": "arcana_lingering_chill", "base_mod": -1.0 }, { "effect": "dazed", "base_mod": -1.0 } ],
     "special_attacks": [
       {
         "id": "slam",
@@ -305,6 +305,7 @@
     "vision_night": 30,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "special_attacks": [
       {
         "type": "bite",
@@ -330,6 +331,7 @@
     "vision_night": 10,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
@@ -348,6 +350,7 @@
     "species": [ "ARCANA_SUMMONED" ],
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
@@ -365,6 +368,7 @@
     "path_settings": { "max_dist": 10 },
     "special_attacks": [ [ "SMASH", 25 ] ],
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
@@ -384,6 +388,7 @@
     "species": [ "ARCANA_SUMMONED" ],
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_drops": {  },
     "special_attacks": [ [ "RANGED_PULL", 20 ], [ "LUNGE", 10 ] ],
     "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
@@ -401,6 +406,7 @@
     "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] }
@@ -418,6 +424,7 @@
     "vision_night": 10,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "attack_effs": [ { "id": "stunned", "duration": 5, "chance": 30 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
@@ -460,6 +467,7 @@
     "vision_night": 40,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "special_attacks": [
       {
         "type": "spell",
@@ -487,6 +495,7 @@
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
@@ -503,6 +512,7 @@
     "species": [ "ARCANA_SUMMONED" ],
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [
@@ -533,6 +543,7 @@
     "armor_bullet": 5,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
@@ -552,6 +563,7 @@
     "melee_damage": [ { "damage_type": "cold", "amount": 9, "armor_multiplier": 0.1 } ],
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "vision_day": 50,
     "vision_night": 50,
     "armor_stab": 10,
@@ -570,6 +582,7 @@
     "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": {  },
@@ -586,6 +599,7 @@
     "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10 },
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
@@ -718,6 +732,7 @@
     "vision_day": 30,
     "vision_night": 10,
     "regenerates": 1,
+    "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_drops": {  },
     "death_function": [ "MELT" ],
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
@@ -757,7 +772,10 @@
     "luminance": 1,
     "harvest": "exempt",
     "starting_ammo": { "bot_vortex": 5, "bot_shadows_fake": 5, "bot_seraphic_mimic": 10 },
-    "regeneration_modifiers": [ { "effect": "onfire", "base_mod": -0.5, "scaling_mod": -0.25 } ],
+    "regeneration_modifiers": [
+      { "effect": "onfire", "base_mod": -0.5, "scaling_mod": -0.25 },
+      { "effect": "dazed", "base_mod": -0.25, "scaling_mod": -0.125 }
+    ],
     "regenerates_in_dark": true,
     "regen_morale": true,
     "special_attacks": [
