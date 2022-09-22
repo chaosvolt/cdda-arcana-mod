@@ -504,6 +504,17 @@
     "components": [ [ [ "leather", 20 ] ], [ [ "silver_small", 400 ] ], [ [ "material_sand", 6 ] ], [ [ "essence_dull", 400 ] ] ]
   },
   {
+    "result": "armor_wyrm_berserker",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": "80 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "leather", 42 ] ], [ [ "scrap", 44 ] ], [ [ "essence_dull", 440 ] ] ]
+  },
+  {
     "result": "hauberk_jade",
     "type": "uncraft",
     "skill_used": "magic",
