@@ -573,5 +573,50 @@
     "components": [ [ [ "scroll_subversion", 1 ] ], [ [ "totem_invis", 1 ], [ "totem_insight", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "SECRET" ]
+  },
+  {
+    "result": "scroll_spell_phase_shield",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_SPELLS",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "20 m",
+    "book_learn": [ [ "book_scrollcraft", 5 ], [ "book_hexenhammer", 6 ] ],
+    "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ], [ "book_hexenhammer", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
+    "components": [ [ [ "scroll_sun", 1 ] ], [ [ "scroll_moon", 1 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_EASY", "SECRET" ]
+  },
+  {
+    "result": "scroll_spell_earthweaving",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_SPELLS",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "20 m",
+    "book_learn": [ [ "book_scrollcraft", 6 ], [ "book_bloodmagic", 7 ] ],
+    "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ], [ "book_bloodmagic", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
+    "components": [ [ [ "scroll_artiface", 1 ] ], [ [ "scroll_nature", 1 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_EASY", "SECRET" ]
+  },
+  {
+    "result": "scroll_spell_dark_lance",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_SPELLS",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "20 m",
+    "book_learn": [ [ "book_scrollcraft", 7 ], [ "book_sacrifice", 8 ] ],
+    "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ], [ "book_sacrifice", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
+    "components": [ [ [ "scroll_destruction", 1 ] ], [ [ "scroll_subversion", 1 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_EASY", "SECRET" ]
   }
 ]
