@@ -653,7 +653,6 @@
     "using": [ [ "surface_heat", 100 ], [ "arcana_essence_any", 3 ] ],
     "tools": [
       [ [ "book_hexenhammer", -1 ], [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ],
-      [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ],
       [ [ "candle_warding_active", -1 ] ]
     ],
     "components": [

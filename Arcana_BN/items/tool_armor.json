@@ -2,6 +2,7 @@
   {
     "id": "triffid_garland_empowered",
     "copy-from": "triffid_garland",
+    "sub": "triffid_garland",
     "type": "TOOL_ARMOR",
     "name": { "str": "verdant triffid garland" },
     "description": "A wreath of brightly-colored flowers from another world, worn around the neck.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will grant a burst of renewed stamina, recovering pain and speeding up the body's natural healing.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 20 hours to charge.",
@@ -16,6 +17,7 @@
   {
     "id": "amulet_exotic_empowered",
     "copy-from": "amulet_exotic",
+    "sub": "amulet_exotic",
     "type": "TOOL_ARMOR",
     "name": { "str": "shrouded exotic amulet" },
     "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you undetectable to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
@@ -30,6 +32,7 @@
   {
     "id": "brooch_iridescent_empowered",
     "copy-from": "brooch_iridescent",
+    "sub": "brooch_iridescent",
     "type": "TOOL_ARMOR",
     "name": { "str": "bolstered iridescent brooch" },
     "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will double any armor or damage resistance you have.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 36 hours to charge.",
