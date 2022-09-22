@@ -614,8 +614,6 @@
       "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "CLIMATE_CONTROL" ]
     }
   },
-
-
   {
     "id": "armor_wyrm_berserker",
     "type": "TOOL_ARMOR",
@@ -671,7 +669,9 @@
         "ammo_scale": 0
       }
     ],
-    "armor": [ { "encumbrance": 20, "coverage": 95, "covers": [ "head", "eyes", "mouth", "torso", "arms", "hands", "legs", "feet" ] } ]
+    "armor": [
+      { "encumbrance": 20, "coverage": 95, "covers": [ "head", "eyes", "mouth", "torso", "arms", "hands", "legs", "feet" ] }
+    ]
   },
   {
     "id": "armor_wyrm_berserker_on",
@@ -685,9 +685,6 @@
     "revert_to": "armor_wyrm_berserker",
     "use_action": { "target": "armor_wyrm_berserker", "msg": "The armor's unnatural aura fades.", "type": "transform", "ammo_scale": 0 }
   },
-
-
-
   {
     "id": "jade_wreath",
     "type": "TOOL_ARMOR",

@@ -1810,6 +1810,7 @@
     "skill_used": "magic",
     "difficulty": 5,
     "time": "50 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "blood_athame", -1 ] ] ],
     "components": [ [ [ "splinter", 24 ] ], [ [ "scrap", 20 ] ], [ [ "gold_small", 60 ] ], [ [ "essence_blood", 4 ] ] ]
   }

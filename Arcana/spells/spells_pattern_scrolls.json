@@ -89,7 +89,6 @@
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
-
   {
     "type": "SPELL",
     "id": "arcana_pattern_dark_lance",
@@ -122,8 +121,6 @@
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
-
-
   {
     "type": "SPELL",
     "id": "arcana_pattern_eclipse",
