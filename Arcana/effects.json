@@ -825,6 +825,27 @@
   },
   {
     "type": "effect_type",
+    "id": "arcana_wyrm_berserker_decay",
+    "name": [ "Abyssal Aura" ],
+    "desc": [ "Constant pain recovery, in exchange for increased needs gain and steady healthiness decline." ],
+    "rating": "good",
+    "base_mods": {
+      "pain_min": [ -1 ],
+      "pain_tick": [ 30 ],
+      "health_min": [ -1 ],
+      "health_tick": [ 60 ],
+      "h_mod_min": [ -1 ],
+      "h_mod_tick": [ 60 ],
+      "hunger_min": [ 1 ],
+      "hunger_tick": [ 300 ],
+      "thirst_min": [ 1 ],
+      "thirst_tick": [ 300 ],
+      "fatigue_min": [ 1 ],
+      "fatigue_tick": [ 300 ]
+    }
+  },
+  {
+    "type": "effect_type",
     "id": "arcana_invis",
     "name": [ "Illusion Cloak" ],
     "desc": [

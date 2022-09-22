@@ -293,5 +293,43 @@
     "shape": "blast",
     "min_duration": 500,
     "max_duration": 1000
+  },
+  {
+    "id": "arcana_react_phase_shield",
+    "type": "SPELL",
+    "name": { "str": "Phase Shield Effect" },
+    "description": "This pushes your attackers away.",
+    "message": "",
+    "effect_filter": [ "hostile" ],
+    "valid_targets": [ "hostile", "ground" ],
+    "effect": "area_push",
+    "shape": "blast",
+    "flags": [ "SILENT" ],
+    "extra_effects": [
+      { "id": "arcana_react_phase_shield_2", "hit_self": false },
+      { "id": "arcana_react_phase_shield_2", "hit_self": false },
+      { "id": "arcana_react_phase_shield_2", "hit_self": false },
+      { "id": "arcana_react_phase_shield_2", "hit_self": false }
+    ],
+    "min_range": 5,
+    "max_range": 5,
+    "min_aoe": 10,
+    "max_aoe": 10
+  },
+  {
+    "id": "arcana_react_phase_shield_2",
+    "type": "SPELL",
+    "name": { "str": "Phase Shield Effect 2" },
+    "description": "More pushing!",
+    "message": "",
+    "effect_filter": [ "hostile" ],
+    "valid_targets": [ "self", "ally", "hostile", "ground" ],
+    "effect": "area_push",
+    "shape": "blast",
+    "flags": [ "SILENT" ],
+    "min_range": 5,
+    "max_range": 5,
+    "min_aoe": 10,
+    "max_aoe": 10
   }
 ]

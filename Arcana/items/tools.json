@@ -1050,6 +1050,42 @@
     }
   },
   {
+    "id": "scroll_spell_phase_shield",
+    "copy-from": "scroll_magic_base",
+    "type": "TOOL",
+    "name": { "str": "Pattern Scroll (Phase Shield)", "str_pl": "Pattern Scrolls (Phase Shield)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
+    "price_postapoc": "100 USD",
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_phase_shield", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_earthweaving",
+    "copy-from": "scroll_magic_base",
+    "type": "TOOL",
+    "name": { "str": "Pattern Scroll (Earthweaving)", "str_pl": "Pattern Scrolls (Earthweaving)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
+    "price_postapoc": "100 USD",
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_earthweaving", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_dark_lance",
+    "copy-from": "scroll_magic_base",
+    "type": "TOOL",
+    "name": { "str": "Pattern Scroll (Dark Lance)", "str_pl": "Pattern Scrolls (Dark Lance)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path and inflicting double damage at close range.  Machines and some otherworldly creatures will be immune.\"",
+    "price_postapoc": "100 USD",
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_dark_lance", "no_fail": true, "level": 0 }
+  },
+  {
     "id": "scroll_spell_sun",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",

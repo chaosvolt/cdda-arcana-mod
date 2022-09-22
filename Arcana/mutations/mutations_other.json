@@ -384,5 +384,31 @@
     "ignored_by": [ "NETHER", "MIGO", "SLIME", "FUNGUS", "LEECH_PLANT", "PLANT", "HORROR", "ABERRATION", "UNKNOWN" ],
     "anger_relations": [ [ "NETHER", -95 ], [ "MIGO", -95 ], [ "SLIME", -95 ], [ "FUNGUS", -95 ], [ "LEECH_PLANT", -95 ], [ "PLANT", -95 ], [ "HORROR", -95 ], [ "ABERRATION", -95 ], [ "UNKNOWN", -95 ] ],
     "stealth_modifier": -45
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_BERSERK_ARMOR_EFFECT",
+    "name": { "str": "Abyssal Aura" },
+    "points": 99,
+    "valid": false,
+    "description": "The armor's effects seem to greatly aid in swift strikes and a speedy recovery.",
+    "player_display": false,
+    "attackcost_modifier": 0.8,
+    "dodge_modifier": 3,
+    "mending_modifier": 2500.0,
+    "stealth_modifier": -10,
+    "anger_relations": [
+      [ "NETHER", 10 ],
+      [ "BLOB", 10 ],
+      [ "HORROR", 10 ],
+      [ "ABERRATION", 10 ],
+      [ "FUNGUS", 10 ],
+      [ "LEECH_PLANT", 10 ],
+      [ "MUTANT", 10 ],
+      [ "MAMMAL", 15 ],
+      [ "BIRD", 15 ],
+      [ "REPTILE", 15 ]
+    ],
+    "social_modifiers": { "persuade": -25, "intimidate": 25 }
   }
 ]
