@@ -582,12 +582,12 @@
           "has": "WIELD",
           "condition": "ALWAYS",
           "values": [
-            { "value": "ARMOR_BASH", "add": -24 },
-            { "value": "ARMOR_CUT", "add": -32 },
-            { "value": "ARMOR_STAB", "add": -32 },
-            { "value": "ARMOR_BULLET", "add": -32 },
-            { "value": "ARMOR_HEAT", "add": -16 },
-            { "value": "ARMOR_ACID", "add": -16 }
+            { "value": "ARMOR_BASH", "add": -25 },
+            { "value": "ARMOR_CUT", "add": -35 },
+            { "value": "ARMOR_STAB", "add": -30 },
+            { "value": "ARMOR_BULLET", "add": -40 },
+            { "value": "ARMOR_HEAT", "add": -20 },
+            { "value": "ARMOR_ACID", "add": -20 }
           ],
           "ench_effects": [ { "effect": "arcana_mech_laser_immunities", "intensity": 1 } ]
         }
