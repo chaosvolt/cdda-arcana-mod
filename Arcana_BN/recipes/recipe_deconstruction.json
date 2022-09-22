@@ -1082,6 +1082,105 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
+    "result": "scroll_spell_moon",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 140 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_sun",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 140 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_destruction",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_nature",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 140 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_artiface",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": "80 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_subversion",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": "90 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 200 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_earthweaving",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_dark_lance",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 210 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_phase_shield",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
     "result": "satchel_eternity",
     "type": "uncraft",
     "skill_used": "magic",

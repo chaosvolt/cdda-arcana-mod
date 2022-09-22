@@ -125,7 +125,7 @@
     "type": "mutation",
     "id": "SPELL_EARTHWEAVING",
     "name": { "str": "Magic Sign: Earthweaving" },
-    "points": 1,
+    "points": 2,
     "description": "Study of the beyond have granted you the power to shape walls of earth and stone when targetting  the right terrain.  (( Remember to bind the \"spellcasting\" key! ))",
     "player_display": false,
     "valid": false,
