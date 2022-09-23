@@ -629,11 +629,11 @@
     "symbol": "[",
     "looks_like": "armor_wyrm",
     "color": "light_gray",
-    "covers": [ "head", "eyes", "mouth", "torso", "arms", "hands", "legs", "feet" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 30 } } ],
     "ammo": "essence_blood_type",
     "warmth": 20,
-    "material_thickness": 4,
+    "//": "Increased to be more on par with BN version's armor values.",
+    "material_thickness": 5,
     "environmental_protection": 8,
     "flags": [ "OUTER", "STURDY", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
@@ -647,7 +647,7 @@
             {
               "id": "arcana_react_satchel_attention",
               "hit_self": true,
-              "once_in": 25,
+              "once_in": 20,
               "message": "You feel like something is watching you…",
               "npc_message": "A strange aura of malice seems to briefly surround %1$s."
             }
@@ -670,7 +670,7 @@
       }
     ],
     "armor": [
-      { "encumbrance": 20, "coverage": 95, "covers": [ "head", "eyes", "mouth", "torso", "arms", "hands", "legs", "feet" ] }
+      { "encumbrance": 20, "coverage": 95, "covers": [ "head", "eyes", "mouth", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r" ] }
     ]
   },
   {

@@ -746,10 +746,11 @@
     "type": "effect_type",
     "id": "arcana_wyrm_berserker_decay",
     "name": [ "Abyssal Aura" ],
-    "desc": [ "Constant pain recovery, in exchange for increased needs gain and steady healthiness decline." ],
+    "desc": [ "Constant pain and stamina recovery, in exchange for increased needs gain and steady healthiness decline." ],
     "base_mods": {
       "pain_min": [ -1 ],
       "pain_tick": [ 30 ],
+      "stamina_min": [ 30 ],
       "health_min": [ -1 ],
       "health_tick": [ 125 ],
       "h_mod_min": [ -1 ],
