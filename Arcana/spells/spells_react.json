@@ -323,7 +323,7 @@
     "description": "More pushing!",
     "message": "",
     "effect_filter": [ "hostile" ],
-    "valid_targets": [ "self", "ally", "hostile", "ground" ],
+    "valid_targets": [ "hostile", "ground" ],
     "effect": "area_push",
     "shape": "blast",
     "flags": [ "SILENT" ],
