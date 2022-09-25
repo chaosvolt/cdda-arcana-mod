@@ -274,17 +274,17 @@
         [ "citrine", 1 ],
         [ "emerald", 1 ],
         [ "jade_brooch", 1 ],
-        [ "iridescent_plate", 1 ],
-        [ "wyrmskin_piece", 1 ]
+        [ "iridescent_plate", 1 ]
       ],
       [
-        [ "acid", 1 ],
-        [ "chem_sulphuric_acid", 1 ],
-        [ "chem_nitric_acid", 1 ],
-        [ "chem_muriatic_acid", 1 ],
-        [ "chem_acetic_acid", 1 ],
-        [ "water_acid", 2 ],
-        [ "water_acid_weak", 4 ]
+        [ "wyrmskin_piece", 1 ],
+        [ "acid", 2 ],
+        [ "chem_sulphuric_acid", 2 ],
+        [ "chem_nitric_acid", 2 ],
+        [ "chem_muriatic_acid", 2 ],
+        [ "chem_acetic_acid", 2 ],
+        [ "water_acid", 4 ],
+        [ "water_acid_weak", 8 ]
       ],
       [ [ "essence_blood", 4 ] ]
     ],
