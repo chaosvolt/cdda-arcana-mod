@@ -46,7 +46,18 @@
       },
       {
         "result": "t_rock_floor_no_roof",
-        "valid_terrain": [ "t_rock" ],
+        "valid_terrain": [
+          "t_rock",
+          "t_rock_wall",
+          "t_rock_wall_half",
+          "t_rock_smooth",
+          "t_rock_red",
+          "t_rock_green",
+          "t_rock_blue",
+          "t_drystone_wall",
+          "t_drystone_wall_half",
+          "t_fault"
+        ],
         "message": "The stone crumbles and evaporates."
       }
     ]
