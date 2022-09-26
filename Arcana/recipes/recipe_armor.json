@@ -495,12 +495,7 @@
     "time": "5 h",
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 9 ], [ "book_syncretism", 8 ] ],
-    "using": [
-      [ "sewing_standard", 30 ],
-      [ "steel_standard", 10 ],
-      [ "arcana_forging_tools_standard", 1 ],
-      [ "arcana_essence_any", 1 ]
-    ],
+    "using": [ [ "sewing_standard", 30 ], [ "steel_standard", 10 ], [ "arcana_forging_tools_standard", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5, "fail_multiplier": 1.5 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
     "components": [
