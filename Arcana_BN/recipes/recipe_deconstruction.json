@@ -400,7 +400,7 @@
     "time": "80 m",
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "leather", 42 ] ], [ [ "scrap", 44 ] ], [ [ "essence_dull", 440 ] ] ]
+    "components": [ [ [ "leather", 42 ] ], [ [ "scrap", 44 ] ], [ [ "essence_dull", 340 ] ] ]
   },
   {
     "result": "hauberk_jade",

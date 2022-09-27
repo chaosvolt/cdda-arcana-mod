@@ -71,13 +71,13 @@
     "id": "arcana_holy_relic_any",
     "type": "requirement",
     "//": "Selection of more ornate holy symbols.",
-    "components": [ [ [ "small_relic", 1 ], [ "amulet_exotic", 1 ] ] ]
+    "components": [ [ [ "small_relic", 1 ], [ "amulet_exotic_empowered", 1 ], [ "charm_bone_empowered", 1 ] ] ]
   },
   {
     "id": "arcana_holy_symbol_any",
     "type": "requirement",
     "//": "Selection of basic holy symbols.",
-    "components": [ [ [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ], [ "charm_bone", 1 ] ] ]
+    "components": [ [ [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ], [ "amulet_exotic", 1 ], [ "charm_bone", 1 ] ] ]
   },
   {
     "id": "arcana_polishing_standard",

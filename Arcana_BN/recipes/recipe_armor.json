@@ -462,7 +462,7 @@
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
     "components": [
       [ [ "armor_wyrm", 1 ] ],
-      [ [ "cleric_ring", 1 ] ],
+      [ [ "arcana_holy_relic_any", 1, "LIST" ] ],
       [ [ "dragonblood_mutagen", 1 ] ],
       [ [ "material_shrd_limestone", 3 ], [ "material_limestone", 30 ] ],
       [ [ "charcoal", 30 ], [ "coal_lump", 30 ] ],
