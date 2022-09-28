@@ -321,6 +321,7 @@
     "cardio_multiplier": 1.1,
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
+    "allowed_items": [ "BELTED" ],
     "dodge_modifier": -1,
     "passive_mods": { "str_mod": 2, "dex_mod": -1 },
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_WINGS" ]
@@ -345,6 +346,7 @@
     "cardio_multiplier": 1.2,
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
+    "allowed_items": [ "BELTED" ],
     "passive_mods": { "str_mod": 5, "dex_mod": -2 }
   },
   {
