@@ -600,10 +600,10 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "30 m",
-    "book_learn": [ [ "book_syncretism", 4 ], [ "book_hexenhammer", 5 ] ],
+    "book_learn": [ [ "book_syncretism", 4 ], [ "book_hexenhammer", 5 ], [ "book_bloodmagic", 5 ], [ "book_sacrifice", 5 ] ],
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "qualities": [ { "id": "CONTAIN", "level": 1 } ],
-    "tools": [ [ [ "book_syncretism", -1 ], [ "book_hexenhammer", -1 ] ] ],
+    "tools": [ [ [ "book_syncretism", -1 ], [ "book_hexenhammer", -1 ], [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ] ],
     "components": [
       [ [ "wax", 1 ], [ "any_tallow", 4, "LIST" ], [ "edible_lard", 1, "LIST" ] ],
       [ [ "cordage_short", 1, "LIST" ] ],
