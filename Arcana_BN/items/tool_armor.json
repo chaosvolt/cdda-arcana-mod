@@ -624,7 +624,7 @@
     "warmth": 20,
     "material_thickness": 4,
     "environmental_protection": 8,
-    "flags": [ "OUTER", "STURDY", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS" ],
+    "flags": [ "OUTER", "STURDY", "NO_SALVAGE", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {

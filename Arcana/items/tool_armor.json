@@ -635,7 +635,7 @@
     "//": "Increased to be more on par with BN version's armor values.",
     "material_thickness": 5,
     "environmental_protection": 8,
-    "flags": [ "OUTER", "STURDY", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS" ],
+    "flags": [ "OUTER", "STURDY", "NO_SALVAGE", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS" ],
     "relic_data": {
       "passive_effects": [
         {
