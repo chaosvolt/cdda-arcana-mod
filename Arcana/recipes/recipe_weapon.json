@@ -1,7 +1,7 @@
 [
   {
     "type": "recipe",
-    "result": "arming_sword",
+    "result": "qt_arming_sword",
     "id_suffix": "arcana",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_WEAPON",
@@ -18,7 +18,7 @@
   },
   {
     "type": "recipe",
-    "result": "broadsword",
+    "result": "qt_broadsword",
     "id_suffix": "arcana",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_WEAPON",
@@ -35,7 +35,7 @@
   },
   {
     "type": "recipe",
-    "result": "jian",
+    "result": "qt_jian",
     "id_suffix": "arcana",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_WEAPON",
@@ -297,7 +297,7 @@
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
     "components": [
-      [ [ "broadsword", 1 ], [ "arming_sword", 1 ], [ "jian", 1 ] ],
+      [ [ "qt_broadsword", 1 ], [ "qt_arming_sword", 1 ], [ "qt_jian", 1 ] ],
       [ [ "gold_small", 80 ], [ "CF_golden_scale", 16 ] ],
       [ [ "essence_dull", 100 ] ]
     ],
