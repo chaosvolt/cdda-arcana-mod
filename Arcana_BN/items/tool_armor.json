@@ -2,6 +2,7 @@
   {
     "id": "triffid_garland_empowered",
     "copy-from": "triffid_garland",
+    "sub": "triffid_garland",
     "type": "TOOL_ARMOR",
     "name": { "str": "verdant triffid garland" },
     "description": "A wreath of brightly-colored flowers from another world, worn around the neck.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will grant a burst of renewed stamina, recovering pain and speeding up the body's natural healing.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 20 hours to charge.",
@@ -16,6 +17,7 @@
   {
     "id": "amulet_exotic_empowered",
     "copy-from": "amulet_exotic",
+    "sub": "amulet_exotic",
     "type": "TOOL_ARMOR",
     "name": { "str": "shrouded exotic amulet" },
     "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you undetectable to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
@@ -30,6 +32,7 @@
   {
     "id": "brooch_iridescent_empowered",
     "copy-from": "brooch_iridescent",
+    "sub": "brooch_iridescent",
     "type": "TOOL_ARMOR",
     "name": { "str": "bolstered iridescent brooch" },
     "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will double any armor or damage resistance you have.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 36 hours to charge.",
@@ -597,6 +600,75 @@
         "CLIMATE_CONTROL"
       ]
     }
+  },
+  {
+    "id": "armor_wyrm_berserker",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "abyssal armor" },
+    "description": "What was once a modified suit of leather armor, now radically altered with heavy steel and unnatural magic made from desecrating a holy relic.  Fully covering the body with plates that shift to accommodate the user's form, just wearing it makes the user look inhuman.  Fueling it with blood essence will suppress pain and rapidly stabilize broken limbs, along with increasing the user's attack speed and reflexes.  However, its use will tax fatigue and healthiness over time, along with attracting attention both mundane and otherworldly.",
+    "weight": "5 kg",
+    "volume": "15 L",
+    "price": "900 USD",
+    "price_postapoc": "60 USD",
+    "to_hit": -5,
+    "bashing": 8,
+    "material": [ "hardsteel", "wyrmskin" ],
+    "symbol": "[",
+    "looks_like": "armor_wyrm",
+    "color": "light_gray",
+    "covers": [ "head", "eyes", "mouth", "torso", "arms", "hands", "legs", "feet" ],
+    "max_charges": 30,
+    "ammo": "essence_blood_type",
+    "coverage": 95,
+    "encumbrance": 20,
+    "warmth": 20,
+    "material_thickness": 4,
+    "environmental_protection": 8,
+    "flags": [ "OUTER", "STURDY", "NO_SALVAGE", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ACTIVE",
+          "mutations": [ "ARCANA_BERSERK_ARMOR_EFFECT" ],
+          "values": [ { "value": "INTELLIGENCE", "add": -2 }, { "value": "PERCEPTION", "add": -2 }, { "value": "BONUS_DODGE", "add": 1 } ],
+          "hit_me_effect": [
+            {
+              "id": "arcana_react_satchel_attention",
+              "hit_self": true,
+              "once_in": 20,
+              "message": "You feel like something is watching you…",
+              "npc_message": "A strange aura of malice seems to briefly surround %1$s."
+            }
+          ],
+          "ench_effects": [ { "effect": "arcana_wyrm_berserker_decay", "intensity": 1 } ]
+        }
+      ]
+    },
+    "use_action": [
+      {
+        "target": "armor_wyrm_berserker_on",
+        "msg": "The plates of your armor shift and contort into an even more bestial form, a strange sense of power flowing through you!",
+        "active": true,
+        "need_worn": true,
+        "need_charges": 1,
+        "need_charges_msg": "Blood essence shall awaken the beast.",
+        "menu_text": "Activate abyssal armor",
+        "type": "transform"
+      }
+    ]
+  },
+  {
+    "id": "armor_wyrm_berserker_on",
+    "copy-from": "armor_wyrm_berserker",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "abyssal armor (on)", "str_pl": "abyssal armors (on)" },
+    "description": "What was once a modified suit of leather armor, now radically altered with heavy armor and unnatural magic made from desecrating a holy relic.  It feels like it has a will of its own with how easy it is to move in this, currently helping to stave off pain and set broken limbs, along with increasing attack speed and reflexes.  A sickening aura wearing down on body and mind can also be felt, along with the feeling of being watched.",
+    "extend": { "flags": [ "NO_TAKEOFF", "TRADER_AVOID", "SPLINT" ] },
+    "encumbrance": 10,
+    "turns_per_charge": 100,
+    "revert_to": "armor_wyrm_berserker",
+    "use_action": { "target": "armor_wyrm_berserker", "msg": "The armor's unnatural aura fades.", "type": "transform" }
   },
   {
     "id": "jade_wreath",

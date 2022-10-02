@@ -18,6 +18,12 @@
     "type": "scenario",
     "id": "house_fight_scenario",
     "copy-from": "house_fight_scenario",
-    "extend": { "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT" ] }
+    "extend": { "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "SPELL_SHADOWSNAKES", "SPELL_AGILE", "SPELL_DAYLIGHT" ] }
+  },
+  {
+    "type": "scenario",
+    "id": "experiment_soldier_start",
+    "copy-from": "experiment_soldier_start",
+    "extend": { "professions": [ "arcanist_purifier", "arcanist_operator" ] }
   }
 ]

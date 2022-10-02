@@ -34,6 +34,36 @@
   },
   {
     "type": "ter_furn_transform",
+    "id": "arcana_earthweaving",
+    "fail_message": "Your spell fails to grasp the earth.",
+    "terrain": [
+      { "result": "t_root_wall", "valid_flags": [ "DIGGABLE" ], "message": "Soft earth shifts and forms a barrier." },
+      { "result": "t_dirt", "valid_terrain": [ "t_root_wall" ], "message": "The root wall decays and crumbles." },
+      {
+        "result": "t_rock",
+        "valid_terrain": [ "t_rock_floor_no_roof", "t_rock_floor" ],
+        "message": "Solid stone forms over bare flooring."
+      },
+      {
+        "result": "t_rock_floor_no_roof",
+        "valid_terrain": [
+          "t_rock",
+          "t_rock_wall",
+          "t_rock_wall_half",
+          "t_rock_smooth",
+          "t_rock_red",
+          "t_rock_green",
+          "t_rock_blue",
+          "t_drystone_wall",
+          "t_drystone_wall_half",
+          "t_fault"
+        ],
+        "message": "The stone crumbles and evaporates."
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
     "id": "arcana_pestilence",
     "terrain": [
       {

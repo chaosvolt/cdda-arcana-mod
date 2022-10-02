@@ -177,10 +177,23 @@
     "unarmed_allowed": true,
     "melee_allowed": true,
     "flat_bonuses": [ { "stat": "damage", "type": "heat", "scale": 30 } ],
-    "crit_tec": true,
+    "crit_ok": true,
     "weighting": -25,
     "messages": [ "Your blade sears through %s with a brilliant glow", "<npcname>'s blade sears through %s with a brilliant glow" ],
     "description": "+30 fire damage, crit only",
+    "attack_vectors": [ "WEAPON" ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_weapon_stormbringer_slash",
+    "name": "Shadow Cleave",
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "flat_bonuses": [ { "stat": "damage", "type": "cold", "scale": 40 } ],
+    "crit_ok": true,
+    "weighting": -30,
+    "messages": [ "The runes on your blade shimmer as you hack into %s", "<npcname>'s blade shimmers as they hack into %s" ],
+    "description": "+40 cold damage, crit only",
     "attack_vectors": [ "WEAPON" ]
   }
 ]

@@ -99,8 +99,11 @@
     "sprite": "fd_veil_light",
     "valid_targets": [ "hostile" ],
     "message": "",
+    "effect_str": "arcana_lingering_chill",
     "min_range": 1,
     "max_range": 1,
+    "min_duration": 1000,
+    "max_duration": 2000,
     "effect": "target_attack",
     "flags": [ "SILENT" ],
     "extra_effects": [ { "id": "arcana_react_drain_life_improved_2", "hit_self": true } ]
@@ -274,5 +277,43 @@
     "effect": "target_attack",
     "min_duration": 500,
     "max_duration": 1000
+  },
+  {
+    "id": "arcana_react_phase_shield",
+    "type": "SPELL",
+    "name": { "str": "Phase Shield Effect" },
+    "description": "This pushes your attackers away.",
+    "sprite": "fd_smoke",
+    "message": "",
+    "effect_filter": [ "hostile" ],
+    "valid_targets": [ "hostile", "ground" ],
+    "effect": "area_push",
+    "flags": [ "SILENT" ],
+    "extra_effects": [
+      { "id": "arcana_react_phase_shield_2", "hit_self": false },
+      { "id": "arcana_react_phase_shield_2", "hit_self": false },
+      { "id": "arcana_react_phase_shield_2", "hit_self": false },
+      { "id": "arcana_react_phase_shield_2", "hit_self": false }
+    ],
+    "min_range": 5,
+    "max_range": 5,
+    "min_aoe": 10,
+    "max_aoe": 10
+  },
+  {
+    "id": "arcana_react_phase_shield_2",
+    "type": "SPELL",
+    "name": { "str": "Phase Shield Effect 2" },
+    "description": "More pushing!",
+    "sprite": "fd_veil_light",
+    "message": "",
+    "effect_filter": [ "hostile" ],
+    "valid_targets": [ "self", "ally", "hostile", "ground" ],
+    "effect": "area_push",
+    "flags": [ "SILENT" ],
+    "min_range": 5,
+    "max_range": 5,
+    "min_aoe": 10,
+    "max_aoe": 10
   }
 ]

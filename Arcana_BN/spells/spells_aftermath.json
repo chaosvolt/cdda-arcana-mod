@@ -786,6 +786,24 @@
     "duration_increment": 360
   },
   {
+    "id": "arcana_aftermath_dark_lance_spike",
+    "type": "SPELL",
+    "name": { "str": "Dark Lance Spike" },
+    "description": "This adds the bonus damage at close range.",
+    "sprite": "fd_fog",
+    "message": "",
+    "effect": "line_attack",
+    "valid_targets": [ "ally", "hostile", "ground" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
+    "min_damage": 50,
+    "max_damage": 100,
+    "damage_increment": 5,
+    "min_range": 3,
+    "max_range": 3,
+    "max_level": 10,
+    "damage_type": "cold"
+  },
+  {
     "id": "arcana_magic_dampening_aoe",
     "type": "SPELL",
     "name": { "str": "Aftermath: Displacement AoE" },
