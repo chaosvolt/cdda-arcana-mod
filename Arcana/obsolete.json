@@ -1402,5 +1402,23 @@
     "min_duration": 8000,
     "max_duration": 16000,
     "duration_increment": 800
+  },
+  {
+    "type": "recipe",
+    "result": "arming_sword",
+    "id_suffix": "arcana",
+    "obsolete": true
+  },
+  {
+    "type": "recipe",
+    "result": "broadsword",
+    "id_suffix": "arcana",
+    "obsolete": true
+  },
+  {
+    "type": "recipe",
+    "result": "jian",
+    "id_suffix": "arcana",
+    "obsolete": true
   }
 ]

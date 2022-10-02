@@ -745,8 +745,8 @@
     "shape": "blast",
     "effect_str": "FATIGUE",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": 24,
-    "max_damage": 24
+    "min_damage": 60,
+    "max_damage": 60
   },
   {
     "id": "arcana_item_jade_hauberk_healing",

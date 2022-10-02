@@ -95,6 +95,7 @@
   {
     "id": "charm_bone_empowered",
     "copy-from": "charm_bone",
+    "sub": "charm_bone",
     "type": "TOOL",
     "name": { "str": "sanctified bone charm" },
     "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any creatures within 8 tiles, including allies if you're not careful.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 16 hours to charge.",
@@ -110,6 +111,7 @@
   {
     "id": "stinger_flute_empowered",
     "copy-from": "stinger_flute",
+    "sub": "stinger_flute",
     "type": "TOOL",
     "name": { "str": "quickened stinger flute" },
     "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will greatly reduce movecosts and enhance evasion.  Stamina and attack speed are unaffected, however.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 6 uses, each use takes 32 hours to charge.",
@@ -244,7 +246,7 @@
         "ammo_scale": 0
       }
     ],
-    "relative": { "cutting": 3 },
+    "relative": { "cutting": 5 },
     "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
@@ -1228,6 +1230,42 @@
     "flags": [ "NO_SALVAGE", "TRADER_AVOID", "SINGLE_USE" ]
   },
   {
+    "id": "scroll_spell_phase_shield",
+    "copy-from": "scroll_magic_base",
+    "type": "TOOL",
+    "name": { "str": "Pattern Scroll (Phase Shield)", "str_pl": "Pattern Scrolls (Phase Shield)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
+    "price_postapoc": "100 USD",
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_phase_shield", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_earthweaving",
+    "copy-from": "scroll_magic_base",
+    "type": "TOOL",
+    "name": { "str": "Pattern Scroll (Earthweaving)", "str_pl": "Pattern Scrolls (Earthweaving)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
+    "price_postapoc": "100 USD",
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_earthweaving", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_spell_dark_lance",
+    "copy-from": "scroll_magic_base",
+    "type": "TOOL",
+    "name": { "str": "Pattern Scroll (Dark Lance)", "str_pl": "Pattern Scrolls (Dark Lance)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path and inflicting double damage at close range.  Machines and some otherworldly creatures will be immune.\"",
+    "price_postapoc": "100 USD",
+    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
+    "countdown_interval": 1,
+    "countdown_destroy": true,
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_dark_lance", "no_fail": true, "level": 0 }
+  },
+  {
     "id": "scroll_spell_sun",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
@@ -2006,6 +2044,7 @@
           "cotton",
           "fur",
           "leather",
+          "wyrmskin",
           "gutskin",
           "stone",
           "wood",
@@ -2028,6 +2067,7 @@
           "dry_plant",
           "fur",
           "leather",
+          "wyrmskin",
           "gutskin",
           "stone",
           "wood",
@@ -2362,8 +2402,8 @@
     "price": "90000 USD",
     "price_postapoc": "150 USD",
     "to_hit": 2,
-    "bashing": 18,
-    "cutting": 34,
+    "bashing": 15,
+    "cutting": 35,
     "material": [ "steel", "essencemat" ],
     "symbol": "/",
     "color": "light_gray",
@@ -2427,6 +2467,9 @@
     "longest_side": "140 cm",
     "price": "45000 USD",
     "price_postapoc": "120 USD",
+    "to_hit": 2,
+    "bashing": 15,
+    "cutting": 35,
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
     "ammo": "essence_blood_type",
@@ -2456,7 +2499,6 @@
         "ammo_scale": 0
       }
     ],
-    "relative": { "to_hit": -1, "cutting": -5 },
     "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
   },
@@ -2477,9 +2519,9 @@
     "longest_side": "140 cm",
     "price": "45000 USD",
     "price_postapoc": "120 USD",
-    "to_hit": 1,
-    "bashing": 17,
-    "cutting": 40,
+    "to_hit": 2,
+    "bashing": 15,
+    "cutting": 45,
     "material": [ "steel", "essencemat" ],
     "symbol": "/",
     "looks_like": "stormbringer",
@@ -2498,7 +2540,7 @@
         }
       ]
     },
-    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "tec_weapon_stormbringer_slash" ],
     "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD", "TRADER_KEEP_EQUIPPED" ],
     "weapon_category": [ "MEDIEVAL_SWORDS", "GREAT_SWORDS" ]
   }
