@@ -822,22 +822,20 @@
     "duration_increment": 360
   },
   {
-    "id": "arcana_aftermath_dark_lance_spike",
+    "id": "arcana_aftermath_dark_lance_side_effect",
     "type": "SPELL",
-    "name": { "str": "Dark Lance Spike" },
-    "description": "This adds the bonus damage at close range.",
+    "name": { "str": "Dark Lance Side Effect" },
+    "description": "This adds nether attention at the same rate as the exertion side effect.",
+    "valid_targets": [ "self" ],
     "message": "",
+    "flags": [ "SILENT" ],
+    "effect_str": "attention",
     "effect": "attack",
-    "shape": "line",
-    "valid_targets": [ "ally", "hostile", "ground" ],
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
-    "min_damage": 50,
-    "max_damage": 100,
-    "damage_increment": 5,
-    "min_range": 3,
-    "max_range": 3,
+    "shape": "blast",
     "max_level": 10,
-    "damage_type": "cold"
+    "min_duration": 30000,
+    "max_duration": 10000,
+    "duration_increment": -1500
   },
   {
     "id": "arcana_magic_dampening_aoe",

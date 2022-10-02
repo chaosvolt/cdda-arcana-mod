@@ -13,6 +13,7 @@
       { "id": "arcana_aftermath_destructive_absorption_side_effects", "hit_self": true, "max_level": 5 },
       { "id": "arcana_aftermath_sanguine_mark_burnout_10", "hit_self": true, "max_level": 5 }
     ],
+    "//": "Full damage with no spike effect, for single-target and line spells.",
     "min_damage": 200,
     "max_damage": 500,
     "damage_increment": 60,
@@ -147,6 +148,7 @@
       { "id": "arcana_aftermath_infernal_flame_noise", "hit_self": false, "max_level": 5 },
       { "id": "arcana_aftermath_sanguine_mark_burnout_7", "hit_self": true, "max_level": 5 }
     ],
+    "//": "Full damage with no spike effect, for single-target and line spells.",
     "min_damage": 140,
     "max_damage": 350,
     "damage_increment": 42,
