@@ -404,6 +404,7 @@
     "flags": [ "SILENT" ],
     "effect": "mod_moves",
     "shape": "blast",
+    "extra_effects": [ { "id": "arcana_aftermath_timestop_indicator", "hit_self": true } ],
     "max_level": 10,
     "min_damage": 600,
     "max_damage": 1200,
@@ -2167,6 +2168,7 @@
     "flags": [ "SILENT" ],
     "effect": "mod_moves",
     "shape": "blast",
+    "extra_effects": [ { "id": "arcana_aftermath_timestop_indicator", "hit_self": true } ],
     "max_level": 20,
     "//": "Balanced as DoT/paralysis despite being a buff, since it's effectively paralysis for everything else.",
     "min_damage": 400,
@@ -2175,6 +2177,20 @@
     "min_range": 0,
     "max_range": 15,
     "range_increment": 0.75
+  },
+  {
+    "id": "arcana_aftermath_timestop_indicator",
+    "type": "SPELL",
+    "name": { "str": "Aftermath: Timestop Indicator" },
+    "description": "This is used so that any spell that grants bonus moves will hint at the effect's beginning and end.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT" ],
+    "effect_str": "arcana_timestop_indicator",
+    "effect": "attack",
+    "shape": "blast",
+    "min_duration": 100,
+    "max_duration": 100
   },
   {
     "id": "arcana_aftermath_wave_destruction_pulse",

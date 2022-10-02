@@ -78,6 +78,16 @@
   },
   {
     "type": "effect_type",
+    "id": "arcana_timestop_indicator",
+    "name": [ "Time Stands Still" ],
+    "desc": [ "A spell has given you bonus moves for the moment." ],
+    "apply_message": "Time stands still…",
+    "remove_message": "The flow of time resumes.",
+    "rating": "good",
+    "max_duration": "1 s"
+  },
+  {
+    "type": "effect_type",
     "id": "temporal_stimulation_effect",
     "name": [ "Temporal Stimulation" ],
     "//": "This adds the stamina and fatigue effects to TS.  And the speed boost, because speed enchantments can't be trusted to work.",
