@@ -787,7 +787,7 @@
     "description": "This adds the bonus damage at close range.",
     "sprite": "fd_fog",
     "message": "",
-    "effect": "line_attack",
+    "effect": "cone_attack",
     "valid_targets": [ "ally", "hostile", "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
     "min_damage": 50,
@@ -795,6 +795,8 @@
     "damage_increment": 5,
     "min_range": 3,
     "max_range": 3,
+    "min_aoe": 1,
+    "max_aoe": 1,
     "max_level": 10,
     "damage_type": "cold"
   },
