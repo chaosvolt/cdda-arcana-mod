@@ -930,9 +930,9 @@
     "flags": [ "SILENT" ],
     "effect_str": "destructive_absorption_side_effects",
     "effect": "target_attack",
-    "min_duration": 20000,
-    "max_duration": 50000,
-    "duration_increment": 6000
+    "min_duration": 2000,
+    "max_duration": 5000,
+    "duration_increment": 600
   },
   {
     "id": "arcana_aftermath_drain_life_fatigue",

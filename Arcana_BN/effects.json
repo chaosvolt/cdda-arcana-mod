@@ -649,18 +649,12 @@
     "type": "effect_type",
     "id": "destructive_absorption_side_effects",
     "name": [ "Absorption Aftereffects" ],
-    "desc": [ "Recovers stamina and healthiness, steady fatigue recovery." ],
-    "max_duration": "30 m",
-    "max_intensity": 30,
-    "int_dur_factor": "1 m",
+    "desc": [ "Rapidly recovers stamina, increases healthiness." ],
+    "max_duration": "10 m",
     "base_mods": {
-      "stamina_min": [ 25 ],
-      "fatigue_min": [ 1 ],
-      "fatigue_tick": [ 25 ],
+      "stamina_min": [ 200 ],
       "health_min": [ 1 ],
-      "health_tick": [ 10 ],
-      "h_mod_min": [ 1 ],
-      "h_mod_tick": [ 10 ]
+      "h_mod_min": [ 1 ]
     }
   },
   {

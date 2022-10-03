@@ -971,9 +971,9 @@
     "effect_str": "destructive_absorption_side_effects",
     "effect": "attack",
     "shape": "blast",
-    "min_duration": 8000,
-    "max_duration": 20000,
-    "duration_increment": 2400
+    "min_duration": 2000,
+    "max_duration": 5000,
+    "duration_increment": 600
   },
   {
     "id": "arcana_aftermath_drain_life_fatigue",
