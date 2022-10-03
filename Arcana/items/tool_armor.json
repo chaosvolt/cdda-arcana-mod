@@ -547,12 +547,12 @@
     "type": "TOOL_ARMOR",
     "copy-from": "qt_chainmail_hauberk",
     "name": { "str": "jade hauberk" },
-    "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  Activating it will grant immunity to fire, blade, and bullet, along with resistance to other environmental hazards.",
+    "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  The copper conducts electric shocks around you, providing passive immunity to lightning.  Activating it will grant immunity to fire and blade, reduce ballistic damage to one-tenth what you would normally take, and give resistance to other environmental hazards.",
     "//": "Requires an item that did not exist pre-cataclysm to make.",
     "price_postapoc": "150 USD",
     "material": [ "iron", "copper", "leather", "cotton" ],
     "color": "light_red",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 240 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 300 } } ],
     "relic_data": {
       "passive_effects": [
         {
@@ -561,7 +561,7 @@
           "values": [
             { "value": "ARMOR_HEAT", "multiply": -1.0 },
             { "value": "ARMOR_STAB", "multiply": -1.0 },
-            { "value": "ARMOR_BULLET", "multiply": -1.0 }
+            { "value": "ARMOR_BULLET", "multiply": -0.9 }
           ]
         }
       ]
@@ -599,7 +599,7 @@
     "copy-from": "hauberk_jade",
     "repairs_like": "hauberk_jade",
     "name": { "str": "jade hauberk (on)", "str_pl": "jade hauberks (on)" },
-    "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  An aura of protective magic is radiating from it, granting immunity to fire, blade, and bullet, along with resistance to other environmental hazards.",
+    "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  In addition to protecting against lightning, an aura of protective magic is radiating from it, granting immunity to fire and blade, reducing ballistic damage to one-tenth what you would normally take, and giving resistance to other environmental hazards.",
     "environmental_protection": 10,
     "turns_per_charge": 10,
     "revert_to": "hauberk_jade",
@@ -670,7 +670,11 @@
       }
     ],
     "armor": [
-      { "encumbrance": 20, "coverage": 95, "covers": [ "head", "eyes", "mouth", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r" ] }
+      {
+        "encumbrance": 20,
+        "coverage": 95,
+        "covers": [ "head", "eyes", "mouth", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r" ]
+      }
     ]
   },
   {
