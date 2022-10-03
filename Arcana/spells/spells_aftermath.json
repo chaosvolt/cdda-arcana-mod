@@ -404,6 +404,7 @@
     "flags": [ "SILENT" ],
     "effect": "mod_moves",
     "shape": "blast",
+    "extra_effects": [ { "id": "arcana_aftermath_timestop_indicator", "hit_self": true } ],
     "max_level": 10,
     "min_damage": 600,
     "max_damage": 1200,
@@ -827,22 +828,20 @@
     "duration_increment": 360
   },
   {
-    "id": "arcana_aftermath_dark_lance_spike",
+    "id": "arcana_aftermath_dark_lance_side_effect",
     "type": "SPELL",
-    "name": { "str": "Dark Lance Spike" },
-    "description": "This adds the bonus damage at close range.",
+    "name": { "str": "Dark Lance Side Effect" },
+    "description": "This adds nether attention at the same rate as the exertion side effect.",
+    "valid_targets": [ "self" ],
     "message": "",
+    "flags": [ "SILENT" ],
+    "effect_str": "attention",
     "effect": "attack",
-    "shape": "line",
-    "valid_targets": [ "ally", "hostile", "ground" ],
-    "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "SILENT", "NO_FAIL" ],
-    "min_damage": 50,
-    "max_damage": 100,
-    "damage_increment": 5,
-    "min_range": 3,
-    "max_range": 3,
+    "shape": "blast",
     "max_level": 10,
-    "damage_type": "cold"
+    "min_duration": 30000,
+    "max_duration": 10000,
+    "duration_increment": -1500
   },
   {
     "id": "arcana_magic_dampening_aoe",
@@ -978,9 +977,9 @@
     "effect_str": "destructive_absorption_side_effects",
     "effect": "attack",
     "shape": "blast",
-    "min_duration": 8000,
-    "max_duration": 20000,
-    "duration_increment": 2400
+    "min_duration": 2000,
+    "max_duration": 5000,
+    "duration_increment": 600
   },
   {
     "id": "arcana_aftermath_drain_life_fatigue",
@@ -2173,6 +2172,7 @@
     "flags": [ "SILENT" ],
     "effect": "mod_moves",
     "shape": "blast",
+    "extra_effects": [ { "id": "arcana_aftermath_timestop_indicator", "hit_self": true } ],
     "max_level": 20,
     "//": "Balanced as DoT/paralysis despite being a buff, since it's effectively paralysis for everything else.",
     "min_damage": 400,
@@ -2181,6 +2181,20 @@
     "min_range": 0,
     "max_range": 15,
     "range_increment": 0.75
+  },
+  {
+    "id": "arcana_aftermath_timestop_indicator",
+    "type": "SPELL",
+    "name": { "str": "Aftermath: Timestop Indicator" },
+    "description": "This is used so that any spell that grants bonus moves will hint at the effect's beginning and end.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT" ],
+    "effect_str": "arcana_timestop_indicator",
+    "effect": "attack",
+    "shape": "blast",
+    "min_duration": 100,
+    "max_duration": 100
   },
   {
     "id": "arcana_aftermath_wave_destruction_pulse",

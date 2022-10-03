@@ -1868,6 +1868,7 @@
     "message": "",
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
     "effect": "mod_moves",
+    "extra_effects": [ { "id": "arcana_aftermath_timestop_indicator", "hit_self": true } ],
     "min_damage": 400,
     "max_damage": 1200
   },
