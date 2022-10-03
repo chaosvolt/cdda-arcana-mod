@@ -39,7 +39,7 @@ The exact cost of any given spell is affected by other factors such as what sort
 
 Every spell in the mod has what's known internally as a *Spell Rank*. This is an arbitrary measure of how powerful the spell is intended to be relative to other spells. While the number itself is selected based off what feels proper for the spell's intended role, its uses are more consistent, used to mathematically determine properties such as energy cost, damage, etc.
 
-You can see Spell Rank present in every spell, as the spell's difficulty rating is always ten times that number. For Magic Signs, a type of spell generally tied to a specific trait, the point cost of the associated mutation will also directly equal its Spell Rank. Difficulty is so elevated to increase the experience points per cast to a reasonable amount, with the `NO_FAIL` spell flag used to make it have no impact on failure rate (spell failure also being unused in Arcana due to the tedium added by it).
+You can see Spell Rank present in every spell, as the spell's difficulty rating is always ten times that number. For Magic Signs, a type of spell generally tied to a specific trait, the point cost of the associated mutation will generally be half the spell's Spell Rank, rounded up if needed. Difficulty is so elevated to increase the experience points per cast to a reasonable amount, with the `NO_FAIL` spell flag used to make it have no impact on failure rate (spell failure also being unused in Arcana due to the tedium added by it).
 
 The three different types of spells in Arcana have different multipliers that use Spell Rank, and different degrees to which they scale up from level zero up to their maximum spell level. Spells in Arcana are generally mid to late game content, requiring effort to obtain unless you spent points to start with them (and that's only an option in scenarios specific to Arcana, or certain professions).
 
@@ -47,11 +47,11 @@ Spells tend to be fairly powerful relative to other magic mods as a consequence,
 
 Notes on the properties listed for each type of spell:
 * Energy Cost is self-explanatory, how much of its primary casting resource it consumes per cast. This will always be halved at maximum level, regardless of the type of spell.
-* Spell Exertion is a secondary effect specific to Magic Signs. Basically it adds a secondary fatigue cost, as stamina-costing is otherwise something players could spam with impunity. It's explained further below. The amount of Magic Sign Exertion given per cast will always be consistent relative to the spell's stamina cost, so it will be halved at max level.
+* Spell Exertion is a secondary effect used by Magic Signs and Sanguine Marks. Basically it adds a secondary resource cost, as stamina-costing is otherwise something players could spam with impunity, and in the case of Sanguine Marks some characters can potentially render HP-casting trivial too. It's explained further below. The amount of Magic Sign Exertion or Draconic Exertion given per cast will always be consistent relative to the spell's energy cost, so it will be halved at max level.
 * Casting Time is how long it takes to cast the spell in moves (effectively centiseconds). This will always be halved at max level.
 * Total Damage concerns how much damage offensive spells deal. Most attack spells in Arcana are AoE rather than single-target. To counterbalance this, the listed damage will be half what the math below says it'd be, with a secondary effect of that spell dealing the other half of the expected damage to a single target, a smaller area, a thin line in the center of a cone, etc. This is also used for Magic Sign: Healing and Magic Sign: Capacitance, two spells that restore a given resource (HP and bionic power).
 * Protective Buffs concern any status effect given by a spell designed to block certain damage types or negate status effects, concerning a range of fairly powerful and useful defensive spells. These are generally short-term buffs meant to whether a hazard briefly or tackle a particularly threatening enemy.
-* Duration for other buffs are longer, and cover various other positive status effects that provide primarily a stat increase or some utility purpose.
+* Durations for other buffs are longer, and cover various other positive status effects that provide primarily a stat increase or some utility purpose.
 * Debuff durations concern most status effects intended to affect monsters and hostile NPCs, rendering them less effective for a modest length of time.
 * Short-term debuffs primarily include effects that directly deal constant damage to their target, like On Fire or Corroding. This also includes mod_moves spell effects, typically used to paralyze targets. Spell effects that give the caster free turns, i.e. a timestop effect, also use this method of duration scaling despite not being a debuff.
 * Duration for summoned monsters is generally much longer than other durations, but never permanent. This also covers spell effects designed to create fields as their primary purpose rather than as a side effect, like Magic Sign: Light.
@@ -70,9 +70,9 @@ Duration, Debuffs | 6 sec per Spell Rank | 12 sec per Spell Rank
 Duration, DoT/Paralysis | 2 sec sec per Spell Rank | 4 sec per Spell Rank
 Summoning Duration | 20 min per Spell Rank | 40 min per Spell Rank
 
-Magic Signs are the most readily-available type of spell in Arcana and Magic Items mod. Their resource consumed is stamina, making them usable repeatedly over a sustained period of time, but harder to use in the middle of a fight. Per unit conversions specified below, it consumes the equivalent of `50 mana * ( Spell Rank + 1 )` at minimum level, and equivalent to `25 mana * ( Spell Rank + 1 )` at max level.
+Magic Signs are the most readily-available type of spell in Arcana and Magic Items mod. Their resource consumed is stamina, making them usable repeatedly over a sustained period of time, but harder to use in the middle of a fight. Per unit conversions specified above, it consumes the equivalent of `50 mana * ( Spell Rank + 1 )` at minimum level, and equivalent to `25 mana * ( Spell Rank + 1 )` at max level.
 
-The way their stats scale up is considered the baseline the other two types of spell are compared to, with reasonable minimum minimum stats that grow to double when leveled to maximum. All Magic Signs have a maximum spell level of 10, in between Arcane Blessings and Sanguine Marks.
+The way their stats scale up is considered the baseline the other two types of spell are compared to, with reasonable minimum stats that grow to double when leveled to maximum. All Magic Signs have a maximum spell level of 10, in between Arcane Blessings and Sanguine Marks.
 
 One complication to consider: Stamina is a very short-term resource, recovering far faster than mana or HP. Because of this, casting Magic Signs also inflicts a secondary cost on the user. Magic Sign Exertion is a status effect that steadily increases fatigue, at a rate of 1 every 25 seconds.
 
@@ -93,7 +93,7 @@ Summoning Duration | 10 min per Spell Rank | 50 min per Spell Rank
 
 Arcane Blessings are a type of spell associated with the Paragon of The Veil threshold, a late-game option for players. It consumes mana, and is the only form of magic in Arcana to do so. Spell costs are slightly higher than Magic Signs in terms of how much mana the stamina costs equate to, but lack the secondary cost the Magic Sign Exertion induces.
 
-The stats at minimum level are half that of equivalent Magic Signs, but scale up to become 25% more effective in exchange. Their maximum level is 20, making them slower to level up than Magic Signs.
+The stats at minimum level are half that of equivalent Magic Signs, but in exchange scale up to become 25% more effective at maximum level. Their maximum level is 20, making them slower to level up than Magic Signs.
 
 While Magic Signs have a primary cost that is much quicker to regenerate, Arcane Blessings can benefit from various ways to increase mana capacity and regeneration, and lack any physical side effects from casting. Their slower scaling is also rewarded, not just by being more effective at max level but also via most Arcane Blessings having some side benefit that gives it an advantage over its closest equivalent Magic Sign.
 
