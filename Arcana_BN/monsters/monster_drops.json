@@ -662,7 +662,8 @@
     "type": "item_group",
     "id": "mon_shadow_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "shadow_gem", "prob": 1 }, { "item": "essence", "prob": 1 } ]
+    "//": "Elevated in BN version because disappear special attack no longer triggers drops.",
+    "entries": [ { "item": "shadow_gem", "prob": 10 }, { "item": "essence", "prob": 5 } ]
   },
   {
     "type": "item_group",
@@ -686,7 +687,8 @@
     "type": "item_group",
     "id": "mon_shadow_snake_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "shadow_gem", "prob": 1 }, { "item": "essence", "prob": 1 } ]
+    "//": "Elevated in BN version because disappear special attack no longer triggers drops.",
+    "entries": [ { "item": "shadow_gem", "prob": 10 }, { "item": "essence", "prob": 5 } ]
   },
   {
     "type": "item_group",
