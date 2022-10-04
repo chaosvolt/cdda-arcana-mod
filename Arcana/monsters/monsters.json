@@ -435,14 +435,14 @@
     "melee_dice": 1,
     "melee_dice_sides": 4,
     "vision_day": 25,
-    "vision_night": 2,
+    "vision_night": 5,
     "luminance": 60,
     "armor_stab": 8,
     "armor_bullet": 8,
-    "melee_damage": [ { "damage_type": "cold", "amount": 10, "armor_multiplier": 0.75 } ],
+    "melee_damage": [ { "damage_type": "electric", "amount": 10, "armor_multiplier": 0.75 } ],
     "regenerates": 10,
     "regeneration_modifiers": [ [ "dazed", -10 ] ],
-    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
     "delete": { "flags": [ "STUMBLES" ] }
   },
   {
