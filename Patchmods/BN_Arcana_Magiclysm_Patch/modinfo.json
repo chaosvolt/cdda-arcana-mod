@@ -5,7 +5,7 @@
     "name": "Arcana/Magiclysm Patchmod",
     "authors": [ "Chaosvolt" ],
     "description": "Optional patch mod that allows content in Arcana and Magiclysm to interact with each other.",
-    "version": "BN version, update 6/6/2022",
+    "version": "BN version, update 10/4/2022",
     "category": "misc_additions",
     "dependencies": [ "dda", "Arcana", "magiclysm" ]
   }
