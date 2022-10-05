@@ -359,12 +359,8 @@
     "id": "mon_vortex",
     "copy-from": "mon_vortex",
     "type": "MONSTER",
-    "//": "FFS why are they harmless",
-    "melee_dice": 1,
-    "melee_dice_sides": 2,
-    "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.75 } ],
     "death_drops": "mon_vortex_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_flying_polyp",
