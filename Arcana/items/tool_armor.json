@@ -488,7 +488,9 @@
             { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "ARMOR_HEAT", "multiply": -0.5 },
             { "value": "ARMOR_COLD", "multiply": -0.5 },
-            { "value": "ARMOR_ACID", "multiply": -0.5 }
+            { "value": "ARMOR_ACID", "multiply": -0.5 },
+            { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+            { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
           ]
         }
       ]
@@ -526,7 +528,6 @@
     },
     "extend": {
       "flags": [
-        "CLIMATE_CONTROL",
         "LIGHT_60",
         "NO_TAKEOFF",
         "PSYSHIELD_PARTIAL",
@@ -561,7 +562,9 @@
           "values": [
             { "value": "ARMOR_HEAT", "multiply": -1.0 },
             { "value": "ARMOR_STAB", "multiply": -1.0 },
-            { "value": "ARMOR_BULLET", "multiply": -0.9 }
+            { "value": "ARMOR_BULLET", "multiply": -0.9 },
+            { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+            { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
           ]
         }
       ]
@@ -610,9 +613,7 @@
       "ammo_scale": 0
     },
     "qualities": [ [ "GLARE", 1 ] ],
-    "extend": {
-      "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "CLIMATE_CONTROL" ]
-    }
+    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE" ] }
   },
   {
     "id": "armor_wyrm_berserker",
@@ -713,7 +714,11 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "values": [ { "value": "ARMOR_HEAT", "multiply": -0.5 } ],
+          "values": [
+            { "value": "ARMOR_HEAT", "multiply": -0.5 },
+            { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+            { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
+          ],
           "ench_effects": [ { "effect": "heat_ward", "intensity": 1 } ]
         }
       ]
@@ -748,7 +753,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "CLIMATE_CONTROL", "TRADER_AVOID", "NO_TAKEOFF" ] }
+    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF" ] }
   },
   {
     "id": "meteoric_talisman",
