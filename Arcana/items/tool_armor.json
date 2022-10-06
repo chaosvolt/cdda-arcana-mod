@@ -488,7 +488,9 @@
             { "value": "ARMOR_BULLET", "add": -10 },
             { "value": "ARMOR_HEAT", "multiply": -0.5 },
             { "value": "ARMOR_COLD", "multiply": -0.5 },
-            { "value": "ARMOR_ACID", "multiply": -0.5 }
+            { "value": "ARMOR_ACID", "multiply": -0.5 },
+            { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+            { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
           ]
         }
       ]
@@ -539,15 +541,6 @@
         "ELECTRIC_IMMUNE",
         "DIMENSIONAL_ANCHOR"
       ]
-    },
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ACTIVE",
-          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
-        }
-      ]
     }
   },
   {
@@ -569,7 +562,9 @@
           "values": [
             { "value": "ARMOR_HEAT", "multiply": -1.0 },
             { "value": "ARMOR_STAB", "multiply": -1.0 },
-            { "value": "ARMOR_BULLET", "multiply": -0.9 }
+            { "value": "ARMOR_BULLET", "multiply": -0.9 },
+            { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+            { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
           ]
         }
       ]
@@ -618,18 +613,7 @@
       "ammo_scale": 0
     },
     "qualities": [ [ "GLARE", 1 ] ],
-    "extend": {
-      "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE" ]
-    },
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ACTIVE",
-          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
-        }
-      ]
-    }
+    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE" ] }
   },
   {
     "id": "armor_wyrm_berserker",
