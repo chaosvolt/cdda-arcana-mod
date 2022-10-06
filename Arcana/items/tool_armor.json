@@ -621,12 +621,15 @@
     "extend": {
       "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE" ]
     },
-    "enchantments": [
-      {
-        "condition": "ACTIVE",
-        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
-      }
-    ]
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ACTIVE",
+          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+        }
+      ]
+    }
   },
   {
     "id": "armor_wyrm_berserker",
@@ -763,12 +766,15 @@
       "ammo_scale": 0
     },
     "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF" ] },
-    "enchantments": [
-      {
-        "condition": "ACTIVE",
-        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
-      }
-    ]
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ACTIVE",
+          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+        }
+      ]
+    }
   },
   {
     "id": "meteoric_talisman",
