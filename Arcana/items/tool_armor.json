@@ -714,7 +714,11 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "values": [ { "value": "ARMOR_HEAT", "multiply": -0.5 } ],
+          "values": [
+            { "value": "ARMOR_HEAT", "multiply": -0.5 },
+            { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+            { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
+          ],
           "ench_effects": [ { "effect": "heat_ward", "intensity": 1 } ]
         }
       ]
@@ -749,16 +753,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF" ] },
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ACTIVE",
-          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
-        }
-      ]
-    }
+    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF" ] }
   },
   {
     "id": "meteoric_talisman",
