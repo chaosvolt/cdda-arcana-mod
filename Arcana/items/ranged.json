@@ -360,7 +360,7 @@
         }
       ]
     },
-    "ammo_effects": [ "ACIDBOMB", "TOXICGAS" ],
+    "ammo_effects": [ "ACIDBOMB", "TOXICGAS", "ARCANA_BANE_FUNG", "ARCANA_BANE_NUKE", "ARCANA_BANE_TEAR" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "flags": [
       "UNBREAKABLE_MELEE",

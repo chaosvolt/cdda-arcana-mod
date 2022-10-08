@@ -144,5 +144,20 @@
     "id": "ARCANA_SHRIKE_COLD_BULLET",
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_fog_arcana", "intensity_min": 1, "intensity_max": 1, "size": 1, "radius": 0, "chance": 100 }
+  },
+  {
+    "id": "ARCANA_BANE_FUNG",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_fungicidal_gas", "intensity_min": 1, "intensity_max": 3, "radius": 5, "chance": 25 }
+  },
+  {
+    "id": "ARCANA_BANE_NUKE",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_nuke_gas", "intensity_min": 1, "intensity_max": 3, "radius": 5, "chance": 25 }
+  },
+  {
+    "id": "ARCANA_BANE_TEAR",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_tear_gas", "intensity_min": 1, "intensity_max": 3, "radius": 5, "chance": 25 }
   }
 ]
