@@ -873,7 +873,7 @@
   {
     "id": "MISSION_CF_AUX_D",
     "type": "mission_definition",
-    "name": { "str": "Find a triffid queen flower" },
+    "name": { "str": "Find a scarlet flower" },
     "description": "Obtain a red flower associated with otherworldly plant monsters, and return it to the farmhand.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,

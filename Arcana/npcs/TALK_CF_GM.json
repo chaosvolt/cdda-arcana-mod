@@ -213,6 +213,7 @@
         "text": "Alright.",
         "effect": [
           { "npc_add_var": "johnathan_prelude_ended", "type": "mission", "context": "rural_church", "value": "yes" },
+          { "u_add_var": "johnathan_prelude_ended", "type": "mission", "context": "rural_church", "value": "yes" },
           {
             "mapgen_update": "cf_church_upgrade_GM_4_prelude_a",
             "om_terrain": "cf_church_1",

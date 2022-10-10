@@ -274,7 +274,7 @@
         "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
       },
       {
-        "text": "Turning in a triffid queen flower.",
+        "text": "Turning in a scarlet flower.",
         "condition": { "u_has_item": "triffid_queen_flower" },
         "effect": { "u_consume_item": "triffid_queen_flower" },
         "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_TURNIN"
