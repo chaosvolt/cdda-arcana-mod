@@ -645,7 +645,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_kreck_summoned",
+      "monster_id": "mon_kreck_summoned_glyph",
       "friendly_msg": "The kreck looks up at you expectantly, as if wondering what sort of shenanigans you're plotting.",
       "hostile_msg": "The kreck mimics your movements erratically, cavorting about to mock you!",
       "difficulty": 1,
@@ -729,7 +729,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_flesh_angel_summoned",
+      "monster_id": "mon_flesh_angel_summoned_glyph",
       "friendly_msg": "A twisted mimicry of the divine is called forth, bound to your will.",
       "hostile_msg": "The flesh angel levels a wicked gaze upon you, ignoring your commands.",
       "difficulty": 3,
@@ -813,7 +813,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_dark_wyrm_summoned",
+      "monster_id": "mon_dark_wyrm_summoned_glyph",
       "friendly_msg": "The wyrm springs forth, seeming to regard you passively, or at least ignoring your presence.",
       "hostile_msg": "The wyrm springs forth, reacting to unfamiliar sounds and scent with a malevolent screech!",
       "difficulty": 5,
@@ -896,7 +896,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_jabberwock_summoned",
+      "monster_id": "mon_jabberwock_summoned_glyph",
       "friendly_msg": "You hear a strange burbling, the creature bound to your will.",
       "hostile_msg": "Eyes of flame meet your gaze, the creature resists your attempt to control it!",
       "difficulty": 7,
@@ -1031,6 +1031,186 @@
       "is_pet": true,
       "skills": [ "magic" ]
     }
+  },
+  {
+    "id": "summon_kreck_bound",
+    "type": "TOOL",
+    "copy-from": "summon_kreck",
+    "name": { "str": "bound summoned kreck" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A kreck has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_kreck_summoned_glyph",
+      "friendly_msg": "You undo the energy binding the summoned kreck, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "summon_triffid_bound",
+    "type": "TOOL",
+    "copy-from": "summon_blank",
+    "name": { "str": "bound summoned triffid" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A triffid has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_triffid_summoned",
+      "friendly_msg": "You undo the energy binding the summoned triffid, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "summon_flesh_angel_bound",
+    "type": "TOOL",
+    "copy-from": "summon_flaming_eye",
+    "name": { "str": "bound summoned flesh angel" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A flesh angel has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_flesh_angel_summoned_glyph",
+      "friendly_msg": "You undo the energy binding the summoned flesh angel, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "summon_hunting_horror_bound",
+    "type": "TOOL",
+    "copy-from": "summon_hunting_horror",
+    "name": { "str": "bound summoned hunting horror" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A hunting horror has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_hunting_horror_summoned",
+      "friendly_msg": "You undo the energy binding the summoned hunting horror, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "summon_dark_wyrm_bound",
+    "type": "TOOL",
+    "copy-from": "summon_dark_wyrm",
+    "name": { "str": "bound summoned dark wyrm" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A dark wyrm has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_dark_wyrm_summoned_glyph",
+      "friendly_msg": "You undo the energy binding the summoned dark wyrm, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "summon_mi_go_bound",
+    "type": "TOOL",
+    "copy-from": "summon_mi_go",
+    "name": { "str": "bound summoned mi-go" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A mi-go has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mi_go_summoned",
+      "friendly_msg": "You undo the energy binding the summoned mi-go, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "summon_jabberwock_bound",
+    "type": "TOOL",
+    "copy-from": "summon_jabberwock",
+    "name": { "str": "bound summoned jabberwock" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A jabberwock has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_jabberwock_summoned_glyph",
+      "friendly_msg": "You undo the energy binding the summoned jabberwock, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "summon_flying_polyp_bound",
+    "type": "TOOL",
+    "copy-from": "summon_flying_polyp",
+    "name": { "str": "bound summoned flying polyp" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A flying polyp has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_flying_polyp_summoned",
+      "friendly_msg": "You undo the energy binding the summoned flying polyp, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "summon_yugg_bound",
+    "type": "TOOL",
+    "copy-from": "summon_yugg",
+    "name": { "str": "bound summoned yugg" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A yugg has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_yugg_summoned",
+      "friendly_msg": "You undo the energy binding the summoned yugg, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "summon_shoggoth_bound",
+    "type": "TOOL",
+    "copy-from": "summon_shoggoth",
+    "name": { "str": "bound summoned shoggoth" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A shoggoth has been bound into this after a successful summon, activate to redeploy it.",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_shoggoth_summoned",
+      "friendly_msg": "You undo the energy binding the summoned shoggoth, causing it to reappear.",
+      "moves": 60,
+      "place_randomly": true,
+      "is_pet": true
+    },
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
   },
   {
     "id": "scroll_spell_phase_shield",
