@@ -582,21 +582,6 @@
     "flags": [ "NEVER_JAMS", "TRADER_AVOID", "USES_BIONIC_POWER" ]
   },
   {
-    "id": "arcana_ench_mech_laser",
-    "type": "enchantment",
-    "has": "WIELD",
-    "condition": "ALWAYS",
-    "values": [
-      { "value": "ARMOR_BASH", "add": -25 },
-      { "value": "ARMOR_CUT", "add": -35 },
-      { "value": "ARMOR_STAB", "add": -30 },
-      { "value": "ARMOR_BULLET", "add": -40 },
-      { "value": "ARMOR_HEAT", "add": -20 },
-      { "value": "ARMOR_ACID", "add": -20 }
-    ],
-    "ench_effects": [ { "effect": "arcana_mech_laser_immunities", "intensity": 1 } ]
-  },
-  {
     "id": "arcana_mech_laser",
     "looks_like": "ar15",
     "type": "GUN",
@@ -620,7 +605,23 @@
     "loudness": 1,
     "ups_charges": 200,
     "reload": 0,
-    "relic_data": { "passive_effects": [ { "id": "arcana_ench_mech_laser" } ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "ARMOR_BASH", "add": -25 },
+            { "value": "ARMOR_CUT", "add": -35 },
+            { "value": "ARMOR_STAB", "add": -30 },
+            { "value": "ARMOR_BULLET", "add": -40 },
+            { "value": "ARMOR_HEAT", "add": -20 },
+            { "value": "ARMOR_ACID", "add": -20 }
+          ],
+          "ench_effects": [ { "effect": "arcana_mech_laser_immunities", "intensity": 1 } ]
+        }
+      ]
+    },
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_mech_flare", "no_fail": true, "level": 0, "need_wielding": true },
     "ammo_effects": [ "LASER", "PLASMA_BUBBLE", "BLINDS_EYES", "BEANBAG", "AMMO_RIFT_FOCUS_SHADOWS" ],
     "flags": [

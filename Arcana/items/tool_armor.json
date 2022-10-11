@@ -69,15 +69,6 @@
     "armor": [ { "encumbrance": 12, "coverage": 100, "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ] } ]
   },
   {
-    "id": "arcana_ench_somen_clairvoyance",
-    "type": "enchantment",
-    "has": "WORN",
-    "condition": "ACTIVE",
-    "mutations": [ "ARCANA_MASK_INSIGHT_EFFECT" ],
-    "values": [ { "value": "BONUS_DODGE", "add": 2 } ],
-    "ench_effects": [ { "effect": "mask_blind_immunity", "intensity": 1 } ]
-  },
-  {
     "id": "somen_clairvoyance",
     "type": "TOOL_ARMOR",
     "category": "armor",
@@ -95,7 +86,17 @@
     "charges_per_use": 1,
     "ammo": "essence_dull_type",
     "warmth": 10,
-    "relic_data": { "passive_effects": [ { "id": "arcana_ench_somen_clairvoyance" } ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ACTIVE",
+          "mutations": [ "ARCANA_MASK_INSIGHT_EFFECT" ],
+          "values": [ { "value": "BONUS_DODGE", "add": 2 } ],
+          "ench_effects": [ { "effect": "mask_blind_immunity", "intensity": 1 } ]
+        }
+      ]
+    },
     "use_action": {
       "target": "somen_clairvoyance_on",
       "msg": "The mask appears to contort into a fearsome visage, the eyeholes momentarily seeming to glow as a strange perception replaces your natural vision.",
@@ -148,7 +149,17 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 24 } } ],
     "charges_per_use": 1,
     "ammo": "essence_dull_type",
-    "relic_data": { "passive_effects": [ { "id": "arcana_ench_somen_clairvoyance" } ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ACTIVE",
+          "mutations": [ "ARCANA_MASK_INSIGHT_EFFECT" ],
+          "values": [ { "value": "BONUS_DODGE", "add": 2 } ],
+          "ench_effects": [ { "effect": "mask_blind_immunity", "intensity": 1 } ]
+        }
+      ]
+    },
     "use_action": {
       "target": "somen_clairvoyance_xl_on",
       "msg": "The visor's surface shifts subtly, the eyeholes momentarily seeming to glow as a strange perception replaces your natural vision.",
@@ -252,13 +263,6 @@
     "armor": [ { "coverage": 20, "covers": [ "head" ] } ]
   },
   {
-    "id": "ENCH_MANTLE_SHADOWS",
-    "type": "enchantment",
-    "has": "WORN",
-    "condition": "ACTIVE",
-    "ench_effects": [ { "effect": "arcana_invis_lesser", "intensity": 1 } ]
-  },
-  {
     "id": "robe_shadow",
     "type": "TOOL_ARMOR",
     "copy-from": "robe",
@@ -273,7 +277,9 @@
     "charges_per_use": 1,
     "ammo": "essence_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 20 } } ],
-    "relic_data": { "passive_effects": [ { "id": "ENCH_MANTLE_SHADOWS" } ] },
+    "relic_data": {
+      "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "arcana_invis_lesser", "intensity": 1 } ] } ]
+    },
     "use_action": [
       {
         "target": "robe_shadow_on",

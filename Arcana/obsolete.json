@@ -1518,5 +1518,44 @@
     "max_damage": 5,
     "min_aoe": 24,
     "max_aoe": 24
+  },
+  {
+    "id": "arcana_ench_somen_clairvoyance",
+    "type": "enchantment",
+    "has": "WORN",
+    "condition": "ACTIVE",
+    "mutations": [ "ARCANA_MASK_INSIGHT_EFFECT" ],
+    "values": [ { "value": "BONUS_DODGE", "add": 2 } ],
+    "ench_effects": [ { "effect": "mask_blind_immunity", "intensity": 1 } ]
+  },
+  {
+    "id": "ENCH_MANTLE_SHADOWS",
+    "type": "enchantment",
+    "has": "WORN",
+    "condition": "ACTIVE",
+    "ench_effects": [ { "effect": "arcana_invis_lesser", "intensity": 1 } ]
+  },
+  {
+    "id": "arcana_ench_halo_flute_effect",
+    "type": "enchantment",
+    "has": "WORN",
+    "condition": "ALWAYS",
+    "values": [ { "value": "MOVE_COST", "multiply": -0.9 }, { "value": "BONUS_DODGE", "add": 10 } ],
+    "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
+  },
+  {
+    "id": "arcana_ench_mech_laser",
+    "type": "enchantment",
+    "has": "WIELD",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "ARMOR_BASH", "add": -25 },
+      { "value": "ARMOR_CUT", "add": -35 },
+      { "value": "ARMOR_STAB", "add": -30 },
+      { "value": "ARMOR_BULLET", "add": -40 },
+      { "value": "ARMOR_HEAT", "add": -20 },
+      { "value": "ARMOR_ACID", "add": -20 }
+    ],
+    "ench_effects": [ { "effect": "arcana_mech_laser_immunities", "intensity": 1 } ]
   }
 ]

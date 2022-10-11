@@ -125,21 +125,22 @@
     "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
   },
   {
-    "id": "arcana_ench_halo_flute_effect",
-    "type": "enchantment",
-    "has": "WORN",
-    "condition": "ALWAYS",
-    "values": [ { "value": "MOVE_COST", "multiply": -0.9 }, { "value": "BONUS_DODGE", "add": 10 } ],
-    "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
-  },
-  {
     "id": "halo_flute_effect",
     "copy-from": "spell_base",
     "type": "ARMOR",
     "name": { "str": "elusive aura" },
     "description": "A strange radiance permeating your body, enhancing your movement and reflexes.",
     "color": "white",
-    "relic_data": { "passive_effects": [ { "id": "arcana_ench_halo_flute_effect" } ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MOVE_COST", "multiply": -0.9 }, { "value": "BONUS_DODGE", "add": 10 } ],
+          "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
+        }
+      ]
+    },
     "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
   },
   {
@@ -324,7 +325,7 @@
       {
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
-        "moves": 0,
+        "moves": 1,
         "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
@@ -332,7 +333,7 @@
       {
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
-        "moves": 0,
+        "moves": 1,
         "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
@@ -340,7 +341,7 @@
       {
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
-        "moves": 0,
+        "moves": 1,
         "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
@@ -348,7 +349,7 @@
       {
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
-        "moves": 0,
+        "moves": 1,
         "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
