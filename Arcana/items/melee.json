@@ -55,7 +55,7 @@
     "techniques": [ "PRECISE" ],
     "volume": "500 ml",
     "cutting": 10,
-    "flags": [ "SPEAR", "SHEATH_KNIFE" ],
+    "flags": [ "SPEAR", "SHEATH_KNIFE", "NO_SALVAGE" ],
     "price_postapoc": "5 USD"
   },
   {
@@ -195,7 +195,7 @@
     "description": "A mangled spike of woven, fused-together bones.  It might be useful, or it could be made into a trophy of some sort.",
     "to_hit": -1,
     "cutting": 8,
-    "flags": [ "SPEAR" ],
+    "flags": [ "SPEAR", "NO_SALVAGE" ],
     "material": [ "bone", "hflesh" ],
     "volume": "250 ml",
     "price_postapoc": "5 USD"
@@ -210,6 +210,7 @@
     "//": "Be glad I didn't name it gracked knucklebones for pun value.",
     "name": { "str": "cracked knucklebones", "str_pl": "cracked knucklebones" },
     "description": "A few splintered chunks of finger bones from some sort of monstrous creature, torn away and stripped of flesh from the force of its unnatural death throes.  It might be useful, or it could be made into a trophy of some sort.",
+    "flags": [ "NO_SALVAGE" ],
     "price_postapoc": "5 USD",
     "material": [ "bone" ],
     "weight": "225 g",
@@ -226,6 +227,7 @@
     "name": { "str": "acrid fragment" },
     "description": "An discolored, leathery piece of hardened tissue broken off from an otherworldly monster, like a massive shed scale.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": "5 USD",
+    "flags": [ "NO_SALVAGE" ],
     "material": [ "wyrmskin" ],
     "weight": "120 g",
     "volume": "250 ml",
@@ -247,7 +249,7 @@
     "techniques": [ "PRECISE", "RAPID" ],
     "volume": "500 ml",
     "cutting": 8,
-    "flags": [ "SPEAR", "SHEATH_KNIFE" ],
+    "flags": [ "SPEAR", "SHEATH_KNIFE", "NO_SALVAGE" ],
     "price_postapoc": "5 USD"
   },
   {
