@@ -178,7 +178,7 @@
           { "id": "overlay_worn_somen_clairvoyance", "fg": 105 },
           { "id": "somen_clairvoyance_on", "fg": 106 },
           { "id": "overlay_worn_somen_clairvoyance_on", "fg": 107 },
-          { "id": "armor_wyrm", "fg": 108 },
+          { "id": [ "armor_wyrm", "overlay_wielded_armor_wyrm" ], "fg": 108 },
           { "id": "overlay_worn_armor_wyrm", "fg": 109 },
           { "id": "revenant_crown", "fg": 110 },
           { "id": "overlay_worn_revenant_crown", "fg": 111 },
@@ -471,7 +471,7 @@
           { "id": "tr_portal_crystallized", "fg": 245 },
           { "id": [ "divine_sealing_charm", "overlay_wielded_divine_sealing_charm" ], "fg": 246 },
           { "id": "overlay_worn_divine_sealing_charm", "fg": 247 },
-          { "id": "armor_wyrm_berserker", "fg": 248 },
+          { "id": [ "armor_wyrm_berserker", "overlay_wielded_armor_wyrm_berserker" ], "fg": 248 },
           { "id": "overlay_worn_armor_wyrm_berserker", "fg": 249 },
           { "id": "overlay_worn_armor_wyrm_berserker_on", "fg": 250 }
         ],
