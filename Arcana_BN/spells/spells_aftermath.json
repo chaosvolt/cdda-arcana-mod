@@ -101,7 +101,7 @@
     "type": "SPELL",
     "name": { "str": "Confusion Wave Line" },
     "description": "This splits half the damage to a center line.",
-    "sprite": "fd_tindalos_rift",
+    "sprite": "fd_dazzling",
     "message": "",
     "effect": "line_attack",
     "valid_targets": [ "hostile", "ground" ],

@@ -58,7 +58,7 @@
     "type": "SPELL",
     "name": { "str": "Blessing: Confusion Wave" },
     "description": "Arcane Blessing\nUsing this spell will blast a cone-shaped area with psychic force, damaging and stunning hostiles caught in it.  Enemies in the center line will take double damage.",
-    "sprite": "fd_tindalos_rift",
+    "sprite": "fd_dazzling",
     "message": "A faint distortion in the air ripples out before you, and you sense an unearthly force exerting its will.",
     "effect": "cone_attack",
     "extra_effects": [ { "id": "arcana_blessing_confuse_monster_line", "hit_self": false, "max_level": 20 } ],
