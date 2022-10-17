@@ -643,11 +643,7 @@
     "name": [ "Absorption Aftereffects" ],
     "desc": [ "Rapidly recovers stamina, increases healthiness." ],
     "max_duration": "10 m",
-    "base_mods": {
-      "stamina_min": [ 200 ],
-      "health_min": [ 1 ],
-      "h_mod_min": [ 1 ]
-    }
+    "base_mods": { "stamina_min": [ 200 ], "health_min": [ 1 ], "h_mod_min": [ 1 ] }
   },
   {
     "type": "effect_type",
@@ -1234,7 +1230,7 @@
   {
     "type": "effect_type",
     "id": "sofia_motive_explained",
-    "//": "Effect for both players and NPCs, for Sofia it filters out sanguinist and Keeper players that have explained their motivation for visiting the holdout.  Also used for Johnathan to filter out some bug-proofing dialogue.",
+    "//": "Effect for both players and NPCs, for Sofia it filters out sanguinist and Keeper players that have explained their motivation for visiting the holdout.",
     "permanent": true
   },
   {

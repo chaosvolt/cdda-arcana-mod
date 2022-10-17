@@ -87,12 +87,12 @@
     "id": "cleansing_flame_gear_magic",
     "type": "item_group",
     "items": [
-      [ "sun_sword", 5 ],
-      [ "ethereal_crossbow", 5 ],
-      [ "gilded_aegis", 5 ],
-      [ "somen_clairvoyance", 5 ],
-      [ "hexenhammer", 10 ],
-      [ "thermic_essence_cutter", 1 ]
+      [ "hexenhammer", 30 ],
+      [ "sun_sword", 15 ],
+      [ "ethereal_crossbow", 25 ],
+      [ "gilded_aegis", 10 ],
+      [ "somen_clairvoyance", 15 ],
+      [ "thermic_essence_cutter", 5 ]
     ]
   },
   {

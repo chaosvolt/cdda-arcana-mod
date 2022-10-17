@@ -135,6 +135,11 @@
       { "text": "What do you do around here?", "topic": "TALK_MERCHANT_CF_AUX_DO" },
       { "text": "Got anything to trade?", "effect": "start_trade", "topic": "TALK_MERCHANT_CF_AUX" },
       {
+        "text": "I'd like to ask about turning in a bounty.",
+        "condition": { "u_has_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" },
+        "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK"
+      },
+      {
         "text": "Can I do anything to help?",
         "switch": true,
         "condition": {

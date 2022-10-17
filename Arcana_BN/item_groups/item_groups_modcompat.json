@@ -89,8 +89,6 @@
   {
     "id": "afs_weapons_rare",
     "type": "item_group",
-    "items": [
-      { "group": "lab_magitech_weaponry", "prob": 5 }
-    ]
+    "items": [ { "group": "lab_magitech_weaponry", "prob": 5 } ]
   }
 ]

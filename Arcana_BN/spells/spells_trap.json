@@ -359,8 +359,8 @@
   {
     "id": "arcana_trap_lichhook_slow",
     "type": "SPELL",
-    "name": { "str": "Sundering Flesh Slow" },
-    "description": "Trap: This adds paralytic poison.",
+    "name": { "str": "Trap: Sundering Flesh Slow" },
+    "description": "This adds paralytic poison.",
     "sprite": "fd_veil_light",
     "message": "",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],

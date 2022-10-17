@@ -753,7 +753,7 @@
       "terrain": { "|": "t_palisade", "^": "t_pit", "u": "t_pit_shallow" },
       "furniture": { "B": "f_bed", "D": "f_dresser", "e": "f_table", "h": "f_chair" },
       "place_npcs": [
-        { "class": "cleansing_flame_grandmaster", "x": 19, "y": 8, "add_trait": "FIX_CF_GM" },
+        { "class": "cleansing_flame_grandmaster", "x": 19, "y": 8 },
         { "class": "mage_hunter_guard", "x": 3, "y": 6, "add_trait": "BGSS_CF_FILTER" },
         { "class": "mage_hunter_guard", "x": 17, "y": 4, "add_trait": "BGSS_CF_FILTER" },
         { "class": "mage_hunter_guard", "x": 6, "y": 10, "add_trait": "BGSS_CF_FILTER" }

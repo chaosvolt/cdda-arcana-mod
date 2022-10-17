@@ -326,8 +326,6 @@
     "type": "MONSTER",
     "death_drops": "mon_bee_mega_death_drops"
   },
-
-
   {
     "id": "mon_wasp_small",
     "copy-from": "mon_wasp_small",
@@ -364,10 +362,6 @@
     "type": "MONSTER",
     "death_drops": "mon_wasp_mega_death_drops"
   },
-
-
-
-
   {
     "id": "mon_dermatik_larva",
     "copy-from": "mon_dermatik_larva",
@@ -386,10 +380,6 @@
     "type": "MONSTER",
     "death_drops": "mon_dermatik_midwife_death_drops"
   },
-
-
-
-
   {
     "id": "mon_dark_wyrm",
     "copy-from": "mon_dark_wyrm",

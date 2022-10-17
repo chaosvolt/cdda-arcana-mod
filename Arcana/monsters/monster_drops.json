@@ -501,9 +501,7 @@
     "id": "mon_blob_small_deathdrops",
     "copy-from": "mon_blob_small_deathdrops",
     "subtype": "collection",
-    "extend": {
-      "entries": [ { "item": "blob_gem", "prob": 5 }, { "item": "essence", "prob": 5, "count": [ 1, 3 ] } ]
-    }
+    "extend": { "entries": [ { "item": "blob_gem", "prob": 5 }, { "item": "essence", "prob": 5, "count": [ 1, 3 ] } ] }
   },
   {
     "type": "item_group",
