@@ -1133,47 +1133,5 @@
         { "u_spawn_item": "CF_golden_scale", "count": 20 }
       ]
     }
-  },
-  {
-    "id": "MISSION_CF_PURIFIER_2",
-    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
-    "type": "mission_definition",
-    "name": { "str": "Placeholder Mission" },
-    "goal": "MGOAL_KILL_MONSTER",
-    "difficulty": 4,
-    "value": 150000,
-    "origins": [ "ORIGIN_SECONDARY" ],
-    "dialogue": {
-      "describe": "…",
-      "offer": "…",
-      "accepted": "…",
-      "rejected": "…",
-      "advice": "…",
-      "inquire": "…",
-      "success": "…",
-      "success_lie": "…",
-      "failure": "…"
-    }
-  },
-  {
-    "id": "MISSION_CF_SCIENTIST_1",
-    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
-    "type": "mission_definition",
-    "name": { "str": "Placeholder Mission" },
-    "goal": "MGOAL_KILL_MONSTER",
-    "difficulty": 4,
-    "value": 150000,
-    "origins": [ "ORIGIN_SECONDARY" ],
-    "dialogue": {
-      "describe": "…",
-      "offer": "…",
-      "accepted": "…",
-      "rejected": "…",
-      "advice": "…",
-      "inquire": "…",
-      "success": "…",
-      "success_lie": "…",
-      "failure": "…"
-    }
   }
 ]

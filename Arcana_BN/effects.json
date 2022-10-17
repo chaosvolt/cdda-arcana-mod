@@ -1316,14 +1316,6 @@
   },
   {
     "type": "effect_type",
-    "id": "cf_aux_merchant_restocked",
-    "name": [ "Recently restocked" ],
-    "desc": [
-      "AI tag marking an NPC as having triggered their merchant restock effect recently.  Intended duration 1 week.  This is a bug if you have it."
-    ]
-  },
-  {
-    "type": "effect_type",
     "id": "cf_purifier_making_item",
     "name": [ "Busy Making Something Special" ],
     "desc": [

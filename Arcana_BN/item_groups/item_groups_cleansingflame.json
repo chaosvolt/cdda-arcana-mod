@@ -344,18 +344,6 @@
     "entries": [ { "item": "CF_golden_scale", "charges": [ 40, 80 ] } ]
   },
   {
-    "id": "rural_church_restock_scales",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [ { "item": "CF_golden_scale", "charges": [ 10, 20 ] } ]
-  },
-  {
-    "id": "rural_church_restock_essence",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [ { "item": "essence_dull", "charges": [ 30, 60 ] } ]
-  },
-  {
     "id": "rural_church_celine_research",
     "type": "item_group",
     "items": [

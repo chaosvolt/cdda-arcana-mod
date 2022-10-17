@@ -155,5 +155,34 @@
     "player_display": false,
     "valid": false,
     "purifiable": false
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_aux_merchant_restocked",
+    "name": [ "Recently restocked" ],
+    "desc": [
+      "AI tag marking an NPC as having triggered their merchant restock effect recently.  Intended duration 1 week.  This is a bug if you have it."
+    ]
+  },
+  {
+    "id": "MISSION_CF_PURIFIER_2",
+    "//": "This missions is here so that I can expand on the mission chain later on without old saves being stuck.",
+    "type": "mission_definition",
+    "name": { "str": "Placeholder Mission" },
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 4,
+    "value": 150000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "…",
+      "offer": "…",
+      "accepted": "…",
+      "rejected": "…",
+      "advice": "…",
+      "inquire": "…",
+      "success": "…",
+      "success_lie": "…",
+      "failure": "…"
+    }
   }
 ]
