@@ -598,7 +598,7 @@
     "copy-from": "mon_shoggoth",
     "type": "MONSTER",
     "death_drops": "mon_shoggoth_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_dementia",
