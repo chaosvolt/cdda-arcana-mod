@@ -550,7 +550,8 @@
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
     "special_when_hit": [ "ZAPBACK", 50 ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
+    "delete": { "flags": [ "ATTACKMON" ] }
   },
   {
     "id": "mon_hunting_horror_summoned",

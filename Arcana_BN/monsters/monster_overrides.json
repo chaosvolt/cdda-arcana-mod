@@ -111,15 +111,13 @@
     "id": "mon_zombie_necro",
     "copy-from": "mon_zombie_necro",
     "type": "MONSTER",
-    "death_drops": "mon_zombie_necro_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ] }
+    "death_drops": "mon_zombie_necro_death_drops"
   },
   {
     "id": "mon_zombie_master",
     "copy-from": "mon_zombie_master",
     "type": "MONSTER",
-    "death_drops": "mon_zombie_master_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ] }
+    "death_drops": "mon_zombie_master_death_drops"
   },
   {
     "id": "mon_zombie_hollow",
@@ -367,12 +365,11 @@
     "copy-from": "mon_flying_polyp",
     "type": "MONSTER",
     "death_drops": "mon_flying_polyp_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_hunting_horror",
     "copy-from": "mon_hunting_horror",
-    "melee_damage": [ { "damage_type": "cold", "amount": 4, "armor_multiplier": 0.75 } ],
     "melee_cut": 4,
     "type": "MONSTER",
     "death_drops": "mon_hunting_horror_death_drops",
@@ -543,10 +540,8 @@
     "id": "mon_flesh_angel",
     "copy-from": "mon_flesh_angel",
     "type": "MONSTER",
-    "special_attacks": [ [ "FEAR_PARALYZE", 15 ], { "type": "bite", "cooldown": 5 } ],
     "death_drops": "mon_flesh_angel_death_drops",
-    "extend": { "flags": [ "FLIES" ], "categories": [ "CLASSIC" ] },
-    "delete": { "flags": [ "ATTACKMON" ] }
+    "extend": { "flags": [ "FLIES" ], "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_player_blob",
