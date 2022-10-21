@@ -39,14 +39,14 @@
     "type": "talk_topic",
     "id": "TALK_OLD_GUARD_NEC_CPT_NICHOLAS_2",
     "dynamic_line": "I don't know how this could improve things, but I'll see what I can do.  If you can get in touch with our comms team, speak with them and they might be able to find something.",
-    "speaker_effect": [ { "effect": { "npc_add_var": "necro_comms_permission", "type": "flag", "context": "rural_church", "value": "yes" } } ],
+    "speaker_effect": [ { "effect": { "u_add_var": "necro_comms_permission", "type": "flag", "context": "rural_church", "value": "yes" } } ],
     "responses": [ { "text": "Alright, I'll see what I can do.", "topic": "TALK_OLD_GUARD_NEC_CPT" } ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_OLD_GUARD_NEC_CPT_NICHOLAS_3",
     "dynamic_line": "I have no idea what that is, but alright.  There might be something related to that in the communications records, or at least something that will help you figure it out.  If you can reach our communications team, ask them about it.",
-    "speaker_effect": [ { "effect": { "npc_add_var": "necro_comms_permission", "type": "flag", "context": "rural_church", "value": "yes" } } ],
+    "speaker_effect": [ { "effect": { "u_add_var": "necro_comms_permission", "type": "flag", "context": "rural_church", "value": "yes" } } ],
     "responses": [ { "text": "Thank you.", "topic": "TALK_OLD_GUARD_NEC_CPT" } ]
   },
   {
