@@ -343,11 +343,24 @@
       },
       {
         "id": "buff_shrike_onattack2",
-        "name": "Honed Claws",
+        "name": "Honed Claws(Unarmed)",
         "description": "Empty-handed does not always mean unarmed.\n\nCut/stab armor penetration increased by 50% of dexterity.\nLasts 2 turns.  Stacks 3 times.",
         "//": "All unarmed weapons are permitted, but using the tiger claws, bionic claws, or demon claw is recommended since the other buffs and techniques are off-limits to other unarmed weapons.",
         "unarmed_allowed": true,
+		"unarmed_weapons_allowed": true,
         "skill_requirements": [ { "name": "unarmed", "level": 3 }, { "name": "magic", "level": 4 } ],
+        "buff_duration": 2,
+        "max_stacks": 3,
+        "flat_bonuses": [ { "stat": "arpen", "type": "cut", "scaling-stat": "dex", "scale": 0.5 } ]
+      },
+	  {
+        "id": "buff_shrike_onattack3",
+        "name": "Honed Claws(Claws)",
+        "description": "Empty-handed does not always mean unarmed.\n\nCut/stab armor penetration increased by 50% of dexterity.\nLasts 2 turns.  Stacks 3 times.",
+        "//": "All unarmed weapons are permitted, but using the tiger claws, bionic claws, or demon claw is recommended since the other buffs and techniques are off-limits to other unarmed weapons.",
+		"melee_allowed": true,
+        "weapon_categories_allowed" : [ "CLAWS" ],
+        "skill_requirements": [ { "name": "melee", "level": 3 }, { "name": "magic", "level": 4 } ],
         "buff_duration": 2,
         "max_stacks": 3,
         "flat_bonuses": [ { "stat": "arpen", "type": "cut", "scaling-stat": "dex", "scale": 0.5 } ]
