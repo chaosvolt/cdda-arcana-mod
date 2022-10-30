@@ -626,7 +626,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "abyssal armor" },
     "description": "What was once a modified suit of leather armor, now radically altered with heavy steel and unnatural magic made from desecrating a holy relic.  Fully covering the body with plates that shift to accommodate the user's form, just wearing it makes the user look inhuman.  Fueling it with blood essence will suppress pain and rapidly stabilize broken limbs, along with increasing the user's attack speed and reflexes.  However, its use will tax fatigue and healthiness over time, along with attracting attention both mundane and otherworldly.",
-    "weight": "5 kg",
+    "weight": "20 kg",
     "volume": "15 L",
     "price": "900 USD",
     "price_postapoc": "60 USD",
@@ -676,13 +676,55 @@
         "ammo_scale": 0
       }
     ],
-    "armor": [
+	"armor": [
       {
-        "encumbrance": 20,
-        "coverage": 95,
-        "covers": [ "head", "eyes", "mouth", "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r" ]
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 95, "thickness": 3.0 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 2.0 }
+        ],
+        "covers": [ "torso" ],
+        "coverage": 100,
+        "encumbrance": 17
+      },
+      {
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 95, "thickness": 1.3 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 2.0 }
+        ],
+        "covers": [ "arm_l", "arm_r", "leg_l", "leg_r" ],
+        "coverage": 100,
+        "encumbrance": 12
+      },
+	  {
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 95, "thickness": 1.3 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
+        ],
+        "covers": [ "hand_l", "hand_r", "foot_l", "foot_r" ],
+        "coverage": 100,
+        "encumbrance": 8
+      },
+	  {
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 100, "thickness": 1.3 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
+        ],
+        "covers": [ "head" ],
+        "coverage": 100,
+        "encumbrance": 20
+      },
+      {
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 100, "thickness": 1.3 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "eyes", "mouth" ],
+        "coverage": 100,
+        "encumbrance": 10,
+        "layers": [ "OUTER" ],
+        "rigid_layer_only": true
       }
-    ]
+	]
   },
   {
     "id": "armor_wyrm_berserker_on",
@@ -691,7 +733,55 @@
     "name": { "str": "abyssal armor (on)", "str_pl": "abyssal armors (on)" },
     "description": "What was once a modified suit of leather armor, now radically altered with heavy armor and unnatural magic made from desecrating a holy relic.  It feels like it has a will of its own with how easy it is to move in this, currently helping to stave off pain and set broken limbs, along with increasing attack speed and reflexes.  A sickening aura wearing down on body and mind can also be felt, along with the feeling of being watched.",
     "extend": { "flags": [ "NO_TAKEOFF", "TRADER_AVOID", "SPLINT" ] },
-    "encumbrance": 10,
+    "armor": [
+      {
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 95, "thickness": 3.0 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 2.0 }
+        ],
+        "covers": [ "torso" ],
+        "coverage": 100,
+        "encumbrance": 9
+      },
+      {
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 95, "thickness": 1.3 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 2.0 }
+        ],
+        "covers": [ "arm_l", "arm_r", "leg_l", "leg_r" ],
+        "coverage": 100,
+        "encumbrance": 6
+      },
+	  {
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 95, "thickness": 1.3 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
+        ],
+        "covers": [ "hand_l", "hand_r", "foot_l", "foot_r" ],
+        "coverage": 100,
+        "encumbrance": 4
+      },
+	  {
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 100, "thickness": 1.3 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
+        ],
+        "covers": [ "head" ],
+        "coverage": 100,
+        "encumbrance": 10
+      },
+      {
+        "material": [
+          { "type": "qt_steel", "covered_by_mat": 100, "thickness": 1.3 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "eyes", "mouth" ],
+        "coverage": 100,
+        "encumbrance": 10,
+        "layers": [ "OUTER" ],
+        "rigid_layer_only": true
+      }
+	],
     "turns_per_charge": 100,
     "revert_to": "armor_wyrm_berserker",
     "use_action": { "target": "armor_wyrm_berserker", "msg": "The armor's unnatural aura fades.", "type": "transform", "ammo_scale": 0 }
