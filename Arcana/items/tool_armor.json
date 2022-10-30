@@ -676,7 +676,7 @@
         "ammo_scale": 0
       }
     ],
-	"armor": [
+    "armor": [
       {
         "material": [
           { "type": "qt_steel", "covered_by_mat": 95, "thickness": 3.0 },
@@ -695,7 +695,7 @@
         "coverage": 100,
         "encumbrance": 12
       },
-	  {
+      {
         "material": [
           { "type": "qt_steel", "covered_by_mat": 95, "thickness": 1.3 },
           { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
@@ -704,7 +704,7 @@
         "coverage": 100,
         "encumbrance": 8
       },
-	  {
+      {
         "material": [
           { "type": "qt_steel", "covered_by_mat": 100, "thickness": 1.3 },
           { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
@@ -724,7 +724,7 @@
         "layers": [ "OUTER" ],
         "rigid_layer_only": true
       }
-	]
+    ]
   },
   {
     "id": "armor_wyrm_berserker_on",
@@ -752,7 +752,7 @@
         "coverage": 100,
         "encumbrance": 6
       },
-	  {
+      {
         "material": [
           { "type": "qt_steel", "covered_by_mat": 95, "thickness": 1.3 },
           { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
@@ -761,7 +761,7 @@
         "coverage": 100,
         "encumbrance": 4
       },
-	  {
+      {
         "material": [
           { "type": "qt_steel", "covered_by_mat": 100, "thickness": 1.3 },
           { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
@@ -781,7 +781,7 @@
         "layers": [ "OUTER" ],
         "rigid_layer_only": true
       }
-	],
+    ],
     "turns_per_charge": 100,
     "revert_to": "armor_wyrm_berserker",
     "use_action": { "target": "armor_wyrm_berserker", "msg": "The armor's unnatural aura fades.", "type": "transform", "ammo_scale": 0 }
