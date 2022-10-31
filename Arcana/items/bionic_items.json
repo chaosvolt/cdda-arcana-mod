@@ -56,7 +56,7 @@
     "type": "BIONIC_ITEM",
     "name": { "str": "Life Sign Suppression CBM" },
     "looks_like": "bio_int_enhancer",
-    "description": "A bionic that creates a disruptive energy that conceals the user's life force, rendering them undetectable to the undead, at the cost of steadily sickening the body and attracting hostility from natural wildlife.",
+    "description": "A bionic that creates a disruptive energy that conceals the user's life force, rendering them invisible to the undead, at the cost of steadily sickening the body and attracting hostility from natural wildlife.  Zombies will still be able to hear you, however.",
     "price": "30000 USD",
     "price_postapoc": "125 USD",
     "difficulty": 11,

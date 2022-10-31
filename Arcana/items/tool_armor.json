@@ -21,7 +21,7 @@
     "sub": "amulet_exotic",
     "type": "TOOL_ARMOR",
     "name": { "str": "shrouded exotic amulet" },
-    "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will shroud your life force, rendering you undetectable to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
+    "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you invisible (but not inaudible) to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
     "price_postapoc": "15 USD",
     "charges_per_use": 28,
     "ammo": "primitive_magic_item_ammo_type",
