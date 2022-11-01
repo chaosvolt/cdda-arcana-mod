@@ -1365,7 +1365,7 @@
     "bashing": 15,
     "cutting": 28,
     "to_hit": -2,
-    "thrown_damage": [ { "damage_type": "cold", "amount": 18 } ],
+    "thrown_damage": [ { "damage_type": "cold", "amount": 20 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
     "looks_like": "hatchet",
@@ -1383,7 +1383,7 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "damage": 180, "radius": 3 }
+      "explosion": { "damage": 100, "radius": 3 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },

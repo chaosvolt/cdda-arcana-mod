@@ -334,7 +334,7 @@
     "using": [ [ "soldering_standard", 10 ] ],
     "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SCREW", "level": 1 } ],
     "components": [
-      [ [ "essence_surge_generator_item", 1 ] ],
+      [ [ "distortion_amp_motor_item", 1 ] ],
       [ [ "teleporter", 1 ], [ "portal", 1 ], [ "bio_teleport", 1 ], [ "bio_probability_travel", 1 ] ],
       [ [ "shadow_gem", 1 ] ],
       [ [ "gold_small", 100 ] ],

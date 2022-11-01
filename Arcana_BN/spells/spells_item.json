@@ -2152,7 +2152,6 @@
     "max_duration": 2400,
     "min_damage": 45,
     "max_damage": 90,
-    "damage_type": "electric",
     "field_id": "fd_electricity",
     "field_chance": 1,
     "min_field_intensity": 2,

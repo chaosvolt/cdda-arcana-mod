@@ -489,7 +489,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "power": 600, "distance_factor": 0.2 }
+      "explosion": { "power": 400, "distance_factor": 0.2 }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -535,7 +535,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "power": 750, "distance_factor": 0.2 }
+      "explosion": { "power": 500, "distance_factor": 0.2 }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -581,7 +581,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "power": 900, "distance_factor": 0.2 }
+      "explosion": { "power": 600, "distance_factor": 0.2 }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -627,7 +627,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "power": 1350, "distance_factor": 0.2 }
+      "explosion": { "power": 900, "distance_factor": 0.2 }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -1385,7 +1385,7 @@
     "to_hit": 1,
     "bashing": 10,
     "cutting": 7,
-    "thrown_damage": [ { "damage_type": "cold", "amount": 18 } ],
+    "thrown_damage": [ { "damage_type": "cold", "amount": 20 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
     "looks_like": "hatchet",
@@ -1403,7 +1403,7 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "power": 1350, "distance_factor": 0.45 }
+      "explosion": { "power": 500, "distance_factor": 0.45 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },

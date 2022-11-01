@@ -7,6 +7,6 @@
     "description": "Adds a host of craftable magic items and spells, centered around the use of Arcana skill to research and exploit otherworldly monsters and anomalies.",
     "version": "BN version, update 10/31/2022",
     "category": "content",
-    "dependencies": [ "dda" ]
+    "dependencies": [ "bn" ]
   }
 ]
