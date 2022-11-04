@@ -386,7 +386,7 @@
     "book_learn": [ [ "book_bloodmagic", 6 ] ],
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
-    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
     "components": [
       [ [ "khopesh", 1 ], [ "dao", 1 ] ],
       [ [ "silver_small", 60 ] ],
