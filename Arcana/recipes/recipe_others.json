@@ -663,7 +663,7 @@
     "skills_required": [ "fabrication", 6 ],
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_syncretism", 10 ] ],
+    "book_learn": [ [ "book_syncretism", 9 ], [ "book_sacrifice", 10 ], [ "book_hexenhammer", 10 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [
       [ [ "book_syncretism", -1 ] ],

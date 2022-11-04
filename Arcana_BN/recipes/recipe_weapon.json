@@ -472,7 +472,7 @@
     "difficulty": 9,
     "skills_required": [ "fabrication", 5 ],
     "time": "50 m",
-    "book_learn": [ [ "book_syncretism", 9 ] ],
+    "book_learn": [ [ "book_syncretism", 8 ], [ "book_hexenhammer", 9 ], [ "book_bloodmagic", 9 ] ],
     "using": [ [ "arcana_holy_relic_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [
@@ -540,7 +540,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "30 m",
-    "book_learn": [ [ "book_sacrifice", 8 ] ],
+    "book_learn": [ [ "book_sacrifice", 8 ], [ "book_bloodmagic", 9 ] ],
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [
