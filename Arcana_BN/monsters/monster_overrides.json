@@ -370,10 +370,9 @@
   {
     "id": "mon_hunting_horror",
     "copy-from": "mon_hunting_horror",
-    "melee_cut": 4,
     "type": "MONSTER",
     "death_drops": "mon_hunting_horror_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_mi_go",
@@ -656,13 +655,13 @@
     "//": "Only the real ones will drop essence, not afterimages.",
     "type": "MONSTER",
     "death_drops": "mon_hound_tindalos_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_hound_tindalos_afterimage",
     "copy-from": "mon_hound_tindalos_afterimage",
     "type": "MONSTER",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_devourer",
