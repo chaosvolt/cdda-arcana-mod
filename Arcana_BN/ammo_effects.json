@@ -25,21 +25,7 @@
     "id": "NAPALM_CLAW",
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 2, "radius": 2 },
-    "explosion": { "damage": 300, "radius": 2 }
-  },
-  {
-    "id": "FIRE_CORRUPTION",
-    "type": "ammo_effect",
-    "aoe": {
-      "field_type": "fd_flame_burst",
-      "intensity_min": 1,
-      "intensity_max": 3,
-      "radius": 3,
-      "chance": 1,
-      "check_passable": true,
-      "check_sees": true,
-      "check_sees_radius": 3
-    }
+    "explosion": { "damage": 100, "fragment": { "impact": { "damage_type": "heat", "amount": 200 }, "range": 2 }, "radius": 2 }
   },
   {
     "id": "AMMO_DRAGONFIRE_ARCANA",
@@ -54,7 +40,7 @@
   {
     "id": "AMMO_ARCANA_WATER_EFFECT",
     "type": "ammo_effect",
-    "aoe": { "field_type": "fd_fog", "intensity_min": 1, "intensity_max": 3, "size": 1, "radius": 0, "chance": 60 }
+    "aoe": { "field_type": "fd_fog_arcana", "intensity_min": 1, "intensity_max": 3, "size": 1, "radius": 0, "chance": 60 }
   },
   {
     "id": "AMMO_ARCANA_EARTH_EFFECT",
@@ -104,7 +90,7 @@
       "check_sees_radius": 3
     },
     "trail": { "field_type": "fd_fatigue", "intensity_min": 1, "intensity_max": 1, "chance": 5 },
-    "explosion": { "damage": 150, "radius": 12 },
+    "explosion": { "damage": 50, "fragment": { "impact": { "damage_type": "heat", "amount": 100 }, "range": 12 }, "radius": 12 },
     "do_emp_blast": true
   },
   {
@@ -119,10 +105,16 @@
     "aoe": { "field_type": "fd_fatigue", "intensity_min": 1, "intensity_max": 1, "chance": 5 }
   },
   {
+    "id": "AMMO_RIFT_FOCUS_TINDALOS",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_tindalos_rift", "intensity_min": 3, "intensity_max": 3, "chance": 1 }
+  },
+  {
     "id": "AMMO_ELECTROTHERMAL_LIGHTNING",
     "type": "ammo_effect",
     "trail": { "field_type": "fd_electricity", "intensity_min": 1, "intensity_max": 2, "chance": 10 },
-    "aoe": { "field_type": "fd_electricity", "intensity_min": 2, "intensity_max": 3, "radius": 2, "chance": 33 }
+    "aoe": { "field_type": "fd_electricity", "intensity_min": 2, "intensity_max": 3, "radius": 2, "chance": 33 },
+    "explosion": { "fragment": { "impact": { "damage_type": "electric", "amount": 10 }, "range": 2 } }
   },
   {
     "id": "AMMO_ELECTROTHERMAL_FIRE",
