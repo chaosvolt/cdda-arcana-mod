@@ -72,6 +72,42 @@
     "death_drops": "mon_zombie_brute_ninja_death_drops"
   },
   {
+    "id": "mon_zombie_pupa_decoy_shady",
+    "copy-from": "mon_zombie_pupa_decoy_shady",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_pupa_decoy_shady_death_drops"
+  },
+  {
+    "id": "mon_zombie_pupa_shady",
+    "copy-from": "mon_zombie_pupa_shady",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_pupa_shady_death_drops"
+  },
+  {
+    "id": "mon_spawn_raptor",
+    "copy-from": "mon_spawn_raptor",
+    "type": "MONSTER",
+    "death_drops": "mon_spawn_raptor_death_drops"
+  },
+  {
+    "id": "mon_spawn_raptor_shady",
+    "copy-from": "mon_spawn_raptor_shady",
+    "type": "MONSTER",
+    "death_drops": "mon_spawn_raptor_shady_death_drops"
+  },
+  {
+    "id": "mon_spawn_raptor_unstable",
+    "copy-from": "mon_spawn_raptor_unstable",
+    "type": "MONSTER",
+    "death_drops": "mon_spawn_raptor_unstable_death_drops"
+  },
+  {
+    "id": "mon_spawn_raptor_electric",
+    "copy-from": "mon_spawn_raptor_electric",
+    "type": "MONSTER",
+    "death_drops": "mon_spawn_raptor_electric_death_drops"
+  },
+  {
     "id": "mon_zombie_biter",
     "copy-from": "mon_zombie_biter",
     "type": "MONSTER",
