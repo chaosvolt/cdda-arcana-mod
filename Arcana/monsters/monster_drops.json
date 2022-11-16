@@ -112,6 +112,36 @@
   },
   {
     "type": "item_group",
+    "id": "mon_spawn_raptor_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "bone_twisted", "prob": 5 }, { "item": "essence_blood", "count": [ 2, 4 ], "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_spawn_raptor_shady_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "shadow_gem", "prob": 50 }, { "item": "bone_twisted", "prob": 50 } ], "prob": 5 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_spawn_raptor_unstable_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "bone_twisted", "prob": 5 }, { "item": "essence_blood", "count": [ 2, 4 ], "prob": 10 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_spawn_raptor_electric_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "vortex_shard", "prob": 50 }, { "item": "bone_twisted", "prob": 50 } ], "prob": 5 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "mon_zoose_thorny_death_drops",
     "subtype": "collection",
     "entries": [
