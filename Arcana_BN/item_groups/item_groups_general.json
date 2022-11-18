@@ -360,11 +360,12 @@
     "//": "Arcana-only magitech CBMs.",
     "type": "item_group",
     "items": [
-      [ "bio_electrothermal_arc_projector", 25 ],
+      [ "bio_electrothermal_arc_projector", 20 ],
       [ "bio_rift_focus_projector", 10 ],
       [ "bio_essence_surge_cell", 30 ],
-      [ "bio_temporal_stimulation", 25 ],
-      [ "bio_life_sign_suppression", 10 ]
+      [ "bio_temporal_stimulation", 20 ],
+      [ "bio_life_sign_suppression", 10 ],
+      [ "bio_kinetic_amplifier", 20 ]
     ]
   },
   {
@@ -385,10 +386,11 @@
     "id": "autodoc_installation_magitech",
     "items": [
       { "item": "AID_bio_electrothermal_arc_projector", "prob": 20 },
-      { "item": "AID_bio_rift_focus_projector", "prob": 20 },
-      { "item": "AID_bio_essence_surge_cell", "prob": 20 },
+      { "item": "AID_bio_rift_focus_projector", "prob": 10 },
+      { "item": "AID_bio_essence_surge_cell", "prob": 30 },
       { "item": "AID_bio_temporal_stimulation", "prob": 20 },
-      { "item": "AID_bio_life_sign_suppression", "prob": 20 }
+      { "item": "AID_bio_life_sign_suppression", "prob": 10 },
+      { "item": "AID_bio_kinetic_amplifier", "prob": 10 }
     ]
   },
   {

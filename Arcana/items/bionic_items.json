@@ -61,5 +61,18 @@
     "price_postapoc": "125 USD",
     "difficulty": 11,
     "installation_data": "AID_bio_life_sign_suppression"
+  },
+  {
+    "id": "bio_kinetic_amplifier",
+    "copy-from": "bionic_general_npc_usable",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Kinetic Amplifier CBM" },
+    "looks_like": "bio_claws",
+    "description": "An implant that can weaponize kinetic energy through anomalous means.  When deployed it serves as an unarmed weapon that can grant a powerful knockback effect that amplifies the user's damage and armor penetration.  As a side effect, its strikes have a chance of releasing a blinding flashbang effect on impact.",
+    "price": "9000 USD",
+    "price_postapoc": "50 USD",
+    "weight": "500 g",
+    "difficulty": 5,
+    "installation_data": "AID_bio_kinetic_amplifier"
   }
 ]

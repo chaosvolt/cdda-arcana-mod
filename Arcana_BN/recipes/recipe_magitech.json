@@ -458,6 +458,27 @@
   },
   {
     "type": "recipe",
+    "result": "bio_kinetic_amplifier",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "skills_required": [ [ "electronics", 6 ], [ "firstaid", 5 ], [ "mechanics", 4 ] ],
+    "difficulty": 4,
+    "time": "4 h",
+    "book_learn": [ [ "recipe_lab_arcana", 3 ], [ "recipe_lab_elec", 4 ], [ "recipe_mil_augs", 4 ], [ "recipe_augs", 5 ] ],
+    "using": [
+      [ "arcana_purification_standard", 1 ],
+      [ "welding_standard", 40 ],
+      [ "soldering_standard", 20 ],
+      [ "steel_tiny", 3 ],
+      [ "arcana_essence_any", 4 ]
+    ],
+    "qualities": [ { "id": "WRENCH_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+    "components": [ [ [ "bio_railgun", 1 ] ], [ [ "cable", 60 ] ], [ [ "monster_fang", 1 ] ] ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
     "result": "thermic_essence_cutter",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_MAGITECH",

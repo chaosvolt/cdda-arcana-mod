@@ -79,5 +79,15 @@
     "act_cost": "750 J",
     "react_cost": "750 J",
     "time": 1
+  },
+  {
+    "id": "bio_kinetic_amplifier",
+    "type": "bionic",
+    "name": { "str": "Kinetic Amplifier" },
+    "description": "Implanted in one arm is a device that weaponizes kinetic energy through anomalous means.  When deployed, it can give your punches a powerful knockback effect while amplifying damage and armor penetration.  It comes with the side effect of your punches sometimes giving off a blinding flashbang effect.",
+    "occupied_bodyparts": [ [ "arm_r", 2 ], [ "hand_r", 1 ] ],
+    "act_cost": "50 J",
+    "fake_item": "bio_kinetic_amplifier_weapon",
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON", "BIONIC_NPC_USABLE" ]
   }
 ]
