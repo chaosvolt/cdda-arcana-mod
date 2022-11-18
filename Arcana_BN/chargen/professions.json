@@ -343,6 +343,7 @@
       "bio_tools",
       "bio_batteries",
       "bio_watch",
+      "bio_life_sign_suppression",
       "bio_power_storage_mkII"
     ],
     "skills": [
@@ -397,14 +398,13 @@
       "bio_cqb",
       "bio_shotgun",
       "bio_blade",
-      "bio_shock",
       "bio_carbon",
-      "bio_adrenaline",
       "bio_night_vision",
       "bio_lockpick",
       "bio_fingerhack",
       "bio_ups",
       "bio_metabolics",
+      "bio_essence_surge_cell",
       "bio_power_storage_mkII"
     ],
     "skills": [

@@ -1,6 +1,18 @@
 [
   {
     "type": "scenario",
+    "id": "arcane_seeker",
+    "copy-from": "arcane_seeker",
+    "extend": { "traits": [ "MARTIAL_ARTS_SURV_COM" ] }
+  },
+  {
+    "type": "scenario",
+    "id": "arcane_urban",
+    "copy-from": "arcane_urban",
+    "extend": { "professions": [ "bionic_silencer" ], "traits": [ "MARTIAL_ARTS_SURV_COM" ] }
+  },
+  {
+    "type": "scenario",
     "id": "bio_weapon_lab",
     "copy-from": "bio_weapon_lab",
     "extend": { "professions": [ "bio_weapon_e" ] }
