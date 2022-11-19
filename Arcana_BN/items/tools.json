@@ -2438,7 +2438,7 @@
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
           "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
-          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
+          "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
           "ench_effects": [ { "effect": "arcana_evil_mimic_active", "intensity": 1 } ]
         }
       ]
@@ -2466,7 +2466,7 @@
     "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
     "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
     "max_charges": 9,
-    "turns_per_charge": 800,
+    "turns_per_charge": 200,
     "ammo": "essence_blood_type",
     "revert_to": "stormbringer",
     "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
@@ -2490,7 +2490,7 @@
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
           "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
-          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
+          "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
           "ench_effects": [ { "effect": "arcana_evil_mimic_active", "intensity": 1 } ]
         }
       ]
