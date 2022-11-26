@@ -1870,10 +1870,11 @@
     "looks_like": "candle",
     "use_action": [
       {
+        "type": "transform",
+        "active": true,
         "target": "candle_warding_active",
         "msg": "The candle gives off a faint blue flame.",
-        "menu_text": "Light candle of warding",
-        "type": "transform"
+        "menu_text": "Light candle of warding"
       },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
