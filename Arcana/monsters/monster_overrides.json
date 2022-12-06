@@ -1085,5 +1085,41 @@
     "copy-from": "mon_kraken_queen",
     "type": "MONSTER",
     "death_drops": "mon_kraken_queen_death_drops"
+  },
+  {
+    "id": "mon_archunk_weak",
+    "copy-from": "mon_archunk_weak",
+    "type": "MONSTER",
+    "death_drops": "mon_archunk_weak_death_drops"
+  },
+  {
+    "id": "mon_archunk_medium",
+    "copy-from": "mon_archunk_medium",
+    "type": "MONSTER",
+    "death_drops": "mon_archunk_medium_death_drops"
+  },
+  {
+    "id": "mon_archunk_strong",
+    "copy-from": "mon_archunk_strong",
+    "type": "MONSTER",
+    "death_drops": "mon_archunk_strong_death_drops"
+  },
+  {
+    "id": "mon_hallucinator",
+    "copy-from": "mon_hallucinator",
+    "type": "MONSTER",
+    "death_drops": "mon_hallucinator_death_drops"
+  },
+  {
+    "id": "mon_guilt",
+    "copy-from": "mon_guilt",
+    "type": "MONSTER",
+    "death_drops": "mon_guilt_death_drops"
+  },
+  {
+    "id": "mon_sloth",
+    "copy-from": "mon_sloth",
+    "type": "MONSTER",
+    "death_drops": "mon_sloth_death_drops"
   }
 ]
