@@ -63,7 +63,7 @@
     "fuel_type": "battery",
     "durability": 150,
     "power": 200000,
-    "energy_consumption": "100 kJ",
+    "energy_consumption": "100 kW",
     "breaks_into": [
       { "item": "scrap", "count": [ 1, 4 ] },
       { "item": "steel_chunk", "count": [ 1, 3 ] },
