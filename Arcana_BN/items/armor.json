@@ -97,8 +97,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ],
-          "values": [ { "value": "REGEN_HP", "multiply": -1.0 } ]
+          "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ]
         }
       ]
     },
@@ -223,7 +222,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "REGEN_MANA", "multiply": 0.025 }, { "value": "MAX_MANA", "multiply": 0.025 } ]
+          "values": [ { "value": "MANA_REGEN", "multiply": 0.025 }, { "value": "MANA_CAP", "multiply": 0.025 } ]
         }
       ]
     },

@@ -138,7 +138,7 @@
     "color": "yellow",
     "flags": [ "MAGIC_FOCUS", "USE_PLAYER_ENERGY" ],
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.25 } ] } ]
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "MANA_REGEN", "multiply": 0.25 } ] } ]
     },
     "use_action": [
       "MEDITATE",
@@ -1981,7 +1981,7 @@
           "values": [
             { "value": "INTELLIGENCE", "add": 4 },
             { "value": "PERCEPTION", "add": 2 },
-            { "value": "REGEN_MANA", "multiply": 0.25 }
+            { "value": "MANA_REGEN", "multiply": 0.25 }
           ]
         }
       ]
@@ -2384,7 +2384,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
+          "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "MANA_REGEN", "multiply": 0.5 } ]
         }
       ]
     },
