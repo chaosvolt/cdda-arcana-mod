@@ -11,7 +11,7 @@
     "max_charges": 100,
     "charges_per_use": 20,
     "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
-    "artifact_data": { "charge_type": "ARTC_TIME" },
+    "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
     "//": "Water talisman and earth talisman.  Each use has power equivalent to 200 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_triffid_garland_empowered", "no_fail": true, "level": 0 }
   },
@@ -27,7 +27,7 @@
     "max_charges": 140,
     "charges_per_use": 28,
     "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
-    "artifact_data": { "charge_type": "ARTC_TIME" },
+    "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
     "//": "Flame talisman and air talisman.  Each use has power equivalent to 280 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_amulet_exotic_empowered", "no_fail": true, "level": 0 }
   },
@@ -43,7 +43,7 @@
     "max_charges": 180,
     "charges_per_use": 36,
     "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
-    "artifact_data": { "charge_type": "ARTC_TIME" },
+    "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
     "//": "Earth talisman and air talisman.  Each use has power equivalent to 360 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_brooch_iridescent_empowered", "no_fail": true, "level": 0 }
   },
@@ -782,8 +782,13 @@
     "charges_per_use": 1,
     "ammo": "essence_pure_type",
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_divine_seal", "no_fail": true, "need_worn": true, "level": 0 } ],
-    "artifact_data": { "charge_type": "ARTC_PORTAL", "effects_worn": [ "AEP_PSYSHIELD" ] },
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD", "DIMENSIONAL_ANCHOR" ]
+    "relic_data": {
+      "recharge_scheme": [
+        { "type": "trap", "interval": "1 s", "rate": 1, "message": "The portal collapses!", "trap": "tr_portal" },
+        { "type": "field", "interval": "1 s", "rate": 0, "trap": "fd_fatigue" }
+      ]
+    },
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD", "DIMENSIONAL_ANCHOR", "PSYSHIELD_PARTIAL" ]
   },
   {
     "id": "cleric_ring",
@@ -800,7 +805,6 @@
     "color": "white",
     "max_charges": 10,
     "ammo": "essence_type",
-    "artifact_data": { "effects_worn": [ "AEP_PSYSHIELD" ] },
     "use_action": {
       "target": "cleric_ring_on",
       "msg": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
@@ -814,7 +818,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "cleric_warding", "intensity": 1 } ] } ]
     },
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "PSYSHIELD_PARTIAL" ] }
   },
   {
     "id": "cleric_ring_on",

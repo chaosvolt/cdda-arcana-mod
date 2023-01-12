@@ -101,7 +101,7 @@
     "max_charges": 80,
     "charges_per_use": 16,
     "flags": [ "MAGIC_FOCUS" ],
-    "artifact_data": { "charge_type": "ARTC_TIME" },
+    "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
     "//": "Flame talisman and earth talisman.  Each use has power equivalent to 160 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_charm_bone_empowered", "no_fail": true, "level": 0 }
   },
@@ -117,7 +117,7 @@
     "max_charges": 160,
     "charges_per_use": 32,
     "flags": [ "MAGIC_FOCUS" ],
-    "artifact_data": { "charge_type": "ARTC_TIME" },
+    "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
     "//": "Water talisman and air talisman.  Each use has power equivalent to 320 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_stinger_flute_empowered", "no_fail": true, "level": 0 }
   },
@@ -1971,12 +1971,12 @@
     "max_charges": 1,
     "charges_per_use": 1,
     "ammo": "essence_pure_type",
-    "artifact_data": { "effects_wielded": [ "AEP_SCHIZO" ] },
     "relic_data": {
       "passive_effects": [
         {
           "has": "WIELD",
           "condition": "ALWAYS",
+          "mutations": [ "SCHIZOPHRENIC" ],
           "ench_effects": [ { "effect": "arcana_clairvoyance_hidden", "intensity": 1 } ],
           "values": [
             { "value": "INTELLIGENCE", "add": 4 },
@@ -2378,7 +2378,6 @@
         "level": 0
       }
     ],
-    "artifact_data": { "charge_type": "ARTC_PORTAL" },
     "relic_data": {
       "passive_effects": [
         {
@@ -2386,10 +2385,14 @@
           "condition": "ALWAYS",
           "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "MANA_REGEN", "multiply": 0.5 } ]
         }
+      ],
+      "recharge_scheme": [
+        { "type": "trap", "interval": "1 s", "rate": 1, "message": "The portal collapses!", "trap": "tr_portal" },
+        { "type": "field", "interval": "1 s", "rate": 0, "trap": "fd_fatigue" }
       ]
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "NO_UNLOAD", "SHEATH_SWORD" ]
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "SHEATH_SWORD" ]
   },
   {
     "id": "draconic_heart_mutator",
