@@ -71,7 +71,8 @@
       [ "bio_rift_focus_projector", 1 ],
       [ "bio_essence_surge_cell", 3 ],
       [ "bio_temporal_stimulation", 2 ],
-      [ "bio_life_sign_suppression", 3 ]
+      [ "bio_life_sign_suppression", 3 ],
+      [ "bio_kinetic_amplifier", 1 ]
     ]
   },
   {
@@ -84,7 +85,7 @@
     "id": "bionics_apophis",
     "//": "Weights follow the same conventions as defined in Cata++ for this itemgroup.",
     "type": "item_group",
-    "items": [ [ "bio_temporal_stimulation", 1 ], [ "bio_life_sign_suppression", 1 ] ]
+    "items": [ [ "bio_temporal_stimulation", 1 ], [ "bio_life_sign_suppression", 1 ], [ "bio_kinetic_amplifier", 1 ] ]
   },
   {
     "id": "afs_weapons_rare",

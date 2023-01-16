@@ -5,8 +5,8 @@
     "name": "Arcana/Aftershock Patchmod",
     "authors": [ "Chaosvolt" ],
     "description": "Optional patch mod that allows content in Arcana and Aftershock to interact with each other.",
-    "version": "BN version, update 4/23/2022",
+    "version": "BN version, update 11/1/2022",
     "category": "misc_additions",
-    "dependencies": [ "dda", "Arcana", "aftershock" ]
+    "dependencies": [ "bn", "Arcana", "aftershock" ]
   }
 ]

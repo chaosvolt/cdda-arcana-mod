@@ -73,7 +73,7 @@
     "copy-from": "bionics_apophis",
     "//": "Weights follow the same conventions as defined in Cata++ for this itemgroup.",
     "type": "item_group",
-    "extend": { "items": [ [ "bio_temporal_stimulation", 1 ], [ "bio_life_sign_suppression", 1 ] ] }
+    "extend": { "items": [ [ "bio_temporal_stimulation", 1 ], [ "bio_life_sign_suppression", 1 ], [ "bio_kinetic_amplifier", 1 ] ] }
   },
   {
     "id": "lab_misc_anomalous_items",

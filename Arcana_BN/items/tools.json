@@ -138,7 +138,7 @@
     "color": "yellow",
     "flags": [ "MAGIC_FOCUS", "USE_PLAYER_ENERGY" ],
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_MANA", "multiply": 0.25 } ] } ]
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "MANA_REGEN", "multiply": 0.25 } ] } ]
     },
     "use_action": [
       "MEDITATE",
@@ -1365,7 +1365,7 @@
     "bashing": 15,
     "cutting": 28,
     "to_hit": -2,
-    "thrown_damage": [ { "damage_type": "cold", "amount": 18 } ],
+    "thrown_damage": [ { "damage_type": "cold", "amount": 20 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
     "looks_like": "hatchet",
@@ -1383,7 +1383,7 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "damage": 180, "radius": 3 }
+      "explosion": { "damage": 100, "radius": 3 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },
@@ -1981,7 +1981,7 @@
           "values": [
             { "value": "INTELLIGENCE", "add": 4 },
             { "value": "PERCEPTION", "add": 2 },
-            { "value": "REGEN_MANA", "multiply": 0.25 }
+            { "value": "MANA_REGEN", "multiply": 0.25 }
           ]
         }
       ]
@@ -2384,7 +2384,7 @@
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "REGEN_MANA", "multiply": 0.5 } ]
+          "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "MANA_REGEN", "multiply": 0.5 } ]
         }
       ]
     },
@@ -2438,7 +2438,7 @@
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
           "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
-          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
+          "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
           "ench_effects": [ { "effect": "arcana_evil_mimic_active", "intensity": 1 } ]
         }
       ]
@@ -2466,7 +2466,7 @@
     "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
     "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
     "max_charges": 9,
-    "turns_per_charge": 800,
+    "turns_per_charge": 200,
     "ammo": "essence_blood_type",
     "revert_to": "stormbringer",
     "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
@@ -2490,7 +2490,7 @@
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
           "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
-          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
+          "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
           "ench_effects": [ { "effect": "arcana_evil_mimic_active", "intensity": 1 } ]
         }
       ]

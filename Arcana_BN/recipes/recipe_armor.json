@@ -406,7 +406,7 @@
     "difficulty": 8,
     "skills_required": [ "tailor", 3 ],
     "time": "45 m",
-    "book_learn": [ [ "book_syncretism", 8 ] ],
+    "book_learn": [ [ "book_syncretism", 7 ], [ "book_bloodmagic", 8 ], [ "book_sacrifice", 8 ] ],
     "using": [ [ "filament", 24 ], [ "arcana_essence_exclude_dull", 8 ] ],
     "qualities": [
       { "id": "CUT", "level": 1 },

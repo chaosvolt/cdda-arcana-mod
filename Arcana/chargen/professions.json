@@ -343,6 +343,7 @@
       "bio_tools",
       "bio_batteries",
       "bio_watch",
+      "bio_life_sign_suppression",
       "bio_power_storage_mkII"
     ],
     "skills": [
@@ -372,8 +373,8 @@
           "book_hexenhammer"
         ],
         "entries": [
-          { "item": "ethereal_hand_crossbow", "container-item": "holster", "charges": 20 },
-          { "item": "v29", "container-item": "XL_holster" },
+          { "item": "ethereal_hand_crossbow", "container-item": "XL_holster", "charges": 20 },
+          { "item": "v29", "container-item": "holster" },
           { "item": "sun_sword", "charges": 20, "container-item": "scabbard" },
           { "item": "medium_battery_cell", "charges": 500 },
           { "group": "charged_matches" },
@@ -398,14 +399,13 @@
       "bio_cqb",
       "bio_shotgun",
       "bio_blade",
-      "bio_shock",
       "bio_carbon",
-      "bio_adrenaline",
       "bio_night_vision",
       "bio_lockpick",
       "bio_fingerhack",
       "bio_ups",
       "bio_metabolics",
+      "bio_essence_surge_cell",
       "bio_power_storage_mkII"
     ],
     "skills": [

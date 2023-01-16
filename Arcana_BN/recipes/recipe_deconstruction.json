@@ -1421,6 +1421,15 @@
     ]
   },
   {
+    "result": "bio_kinetic_amplifier",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": "30 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "burnt_out_bionic", 1 ] ], [ [ "scrap", 15 ] ], [ [ "essence_dull", 140 ] ] ]
+  },
+  {
     "result": "thermic_essence_cutter",
     "type": "uncraft",
     "skill_used": "magic",

@@ -370,10 +370,9 @@
   {
     "id": "mon_hunting_horror",
     "copy-from": "mon_hunting_horror",
-    "melee_cut": 4,
     "type": "MONSTER",
     "death_drops": "mon_hunting_horror_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_mi_go",
@@ -470,20 +469,15 @@
     "id": "mon_shadow",
     "copy-from": "mon_shadow",
     "type": "MONSTER",
-    "melee_dice_sides": 1,
-    "melee_damage": [ { "damage_type": "cold", "amount": 1, "armor_multiplier": 0.75 } ],
     "death_drops": "mon_shadow_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_darkman",
     "copy-from": "mon_darkman",
     "type": "MONSTER",
-    "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.75 } ],
-    "melee_cut": 1,
-    "special_attacks": [ [ "DARKMAN", 30 ], [ "scratch", 15 ] ],
     "death_drops": "mon_darkman_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_breather_hub",
@@ -502,11 +496,9 @@
   {
     "id": "mon_shadow_snake",
     "copy-from": "mon_shadow_snake",
-    "melee_damage": [ { "damage_type": "cold", "amount": 1, "armor_multiplier": 0.75 } ],
-    "melee_cut": 2,
     "type": "MONSTER",
     "death_drops": "mon_shadow_snake_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_shoggoth",
@@ -541,7 +533,7 @@
     "copy-from": "mon_flesh_angel",
     "type": "MONSTER",
     "death_drops": "mon_flesh_angel_death_drops",
-    "extend": { "flags": [ "FLIES" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_player_blob",
@@ -663,13 +655,13 @@
     "//": "Only the real ones will drop essence, not afterimages.",
     "type": "MONSTER",
     "death_drops": "mon_hound_tindalos_death_drops",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_hound_tindalos_afterimage",
     "copy-from": "mon_hound_tindalos_afterimage",
     "type": "MONSTER",
-    "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }
+    "extend": { "categories": [ "CLASSIC" ] }
   },
   {
     "id": "mon_devourer",
