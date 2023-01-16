@@ -319,7 +319,6 @@
     "proficiencies": [ { "proficiency": "prof_leatherworking", "required": false, "time_multiplier": 2 } ],
     "components": [
       [ [ "armor_larmor", 1 ] ],
-      [ [ "armguard_larmor", 1 ] ],
       [ [ "boots_larmor", 1 ] ],
       [ [ "leather", 4 ], [ "fur", 4 ] ],
       [
