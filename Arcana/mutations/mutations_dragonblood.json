@@ -1,6 +1,31 @@
 [
   {
     "type": "mutation",
+    "id": "LIZ_EYE",
+    "copy-from": "LIZ_EYE",
+    "extend": { "category": [ "DRAGONBLOOD" ] }
+  },
+  {
+    "type": "mutation",
+	"//": "this one just fits too well with both reptile and heat theme of this mutation tree"
+    "id": "LIZ_IR",
+    "copy-from": "LIZ_IR",
+    "extend": { "category": [ "DRAGONBLOOD" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "HISS",
+    "copy-from": "HISS",
+    "extend": { "category": [ "DRAGONBLOOD" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FORKED_TONGUE",
+    "copy-from": "FORKED_TONGUE",
+    "extend": { "category": [ "DRAGONBLOOD" ] }
+  },
+  {
+    "type": "mutation",
     "id": "THRESH_DRAGONBLOOD",
     "name": { "str": "Dragonblood" },
     "points": 1,
