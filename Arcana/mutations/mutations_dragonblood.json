@@ -409,7 +409,7 @@
     "prereqs2": [ "ARCANA_DRAGONTEETH" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
-    "types": [ "TEETH", "MUZZLE" ],
+    "types": [ "TEETH", "MUZZLE", "facial_hair" ],
     "restricts_gear": [ "mouth" ],
     "social_modifiers": { "intimidate": 20 },
     "attacks": {
