@@ -368,8 +368,7 @@
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
     "restricts_gear": [ "hand_fingers_l", "hand_fingers_r" ],
-    "destroys_gear": true,
-	"allowed_items": [ "ALLOWS_TALONS" ]
+    "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
     "cut_dmg_bonus": 7,
     "flags": [ "UNARMED_BONUS" ]
   },
