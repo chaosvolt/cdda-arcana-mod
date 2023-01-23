@@ -116,9 +116,9 @@
     "type": "mutation",
     "id": "ARCANA_SCALYPATCHES",
     "name": { "str": "Scaly Patches" },
-    "points": 2,
-    "visibility": 10,
-    "ugliness": 3,
+    "points": 1,
+    "visibility": 2,
+    "ugliness": 1,
     "description": "Part of your torso and arms have become covered in flexible scales, providing limited protection there.",
     "valid": false,
     "purifiable": false,
@@ -126,6 +126,7 @@
     "changes_to": [ "ARCANA_DRAGONSCALES" ],
     "leads_to": [ "ARCANA_SCALYWINGS", "ARCANA_SCALYTAIL" ],
     "types": [ "SKIN" ],
+    "stealth_modifier": -5,
     "wet_protection": [
       { "part": "head", "ignored": 2 },
       { "part": "leg_l", "ignored": 5 },
@@ -157,6 +158,7 @@
     "leads_to": [ "ARCANA_SCALYWINGS", "ARCANA_SCALYTAIL", "ARCANA_SCALYLEGS" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "types": [ "SKIN" ],
+    "stealth_modifier": -20,
     "wet_protection": [
       { "part": "head", "ignored": 5 },
       { "part": "leg_l", "ignored": 16 },
@@ -570,6 +572,7 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "types": [ "SKIN" ],
+    "stealth_modifier": -30,
     "wet_protection": [
       { "part": "head", "ignored": 5 },
       { "part": "leg_l", "ignored": 16 },
