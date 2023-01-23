@@ -367,7 +367,6 @@
     "butchering_quality": 9,
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
-    "restricts_gear": [ "hand_fingers_l", "hand_fingers_r" ],
     "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
     "cut_dmg_bonus": 7,
     "flags": [ "UNARMED_BONUS" ]
