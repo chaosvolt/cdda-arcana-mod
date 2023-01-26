@@ -138,7 +138,7 @@
     "points": 1,
     "visibility": 2,
     "ugliness": 1,
-    "description": "Part of your torso and arms have become covered in flexible scales, providing limited protection there.",
+    "description": "You're body have become covered in flexible scales, providing limited protection.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
@@ -168,7 +168,7 @@
     "points": 2,
     "visibility": 10,
     "ugliness": 3,
-    "description": "A set of flexible scales and armored plates now covers your body, acting as natural armor.  Somewhat reduces wet effects.",
+    "description": "A set of thick scales and armored plates now covers your body, acting as natural armor.  Somewhat reduces wet effects.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
@@ -177,7 +177,7 @@
     "leads_to": [ "ARCANA_SCALYWINGS", "ARCANA_SCALYTAIL", "ARCANA_SCALYLEGS" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "types": [ "SKIN" ],
-    "stealth_modifier": -20,
+    "stealth_modifier": -30,
     "wet_protection": [
       { "part": "head", "ignored": 5 },
       { "part": "leg_l", "ignored": 16 },
@@ -340,7 +340,6 @@
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
     "changes_to": [ "ARCANA_DRAGONWINGS" ],
     "encumbrance_always": [ [ "torso", 5 ] ],
-    "encumbrance_covered": [ [ "torso", 5 ] ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "WINGS" ],
     "cardio_multiplier": 1.1,
@@ -559,7 +558,7 @@
     "visibility": 3,
     "ugliness": 1,
     "mixed_effect": true,
-    "description": "You have a pair of relatively short horns, sweeping and pointing backwards.  They work as a natural weapon in a pinch but they prevent wearing non-fabric headwear.",
+    "description": "You have a pair of relatively short horns, sweeping and pointing backwards.  They allow you to make a strong bashing headbutt attack, but prevent wearing any headwear.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
@@ -570,7 +569,7 @@
       "attack_text_u": "You headbutt %s",
       "attack_text_npc": "%1$s headbutts %2$s",
       "chance": 20,
-      "base_damage": { "damage_type": "bash", "amount": 14 }
+      "base_damage": { "damage_type": "bash", "amount": 10 }
     }
   },
   {
@@ -581,7 +580,7 @@
     "visibility": 10,
     "ugliness": 3,
     "mixed_effect": true,
-    "description": "You have grown thick, overlapping plates like scutes over your throat and underbelly, adding yet more natural armor to your scales.  Reduces wet effects a bit.",
+	"description": "You're scales become a lot more dence yet thinner, increasing you're protection slightly and considerably reducing the bulk. Reduces wet effects a bit.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_DRAGONSCALES" ],
@@ -589,7 +588,7 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "types": [ "SKIN" ],
-    "stealth_modifier": -30,
+    "stealth_modifier": -15,
     "wet_protection": [
       { "part": "head", "ignored": 5 },
       { "part": "leg_l", "ignored": 16 },
@@ -630,7 +629,6 @@
     "anger_relations": [ [ "DRAGON", -100 ], [ "FUNGUS", 25 ], [ "MAMMAL", 15 ], [ "BIRD", 15 ], [ "REPTILE", 15 ] ],
     "weight_capacity_modifier": 1.05,
     "hp_adjustment": 25,
-    "movecost_obstacle_modifier": 1.1,
     "flags": [ "PRED4", "LARGE" ]
   }
 ]
