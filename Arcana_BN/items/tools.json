@@ -1873,6 +1873,7 @@
         "target": "candle_warding_active",
         "msg": "The candle gives off a faint blue flame.",
         "menu_text": "Light candle of warding",
+        "active": true,
         "type": "transform"
       },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
