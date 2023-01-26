@@ -14,12 +14,6 @@
   },
   {
     "type": "mutation",
-    "id": "HISS",
-    "copy-from": "HISS",
-    "extend": { "category": [ "DRAGONBLOOD" ] }
-  },
-  {
-    "type": "mutation",
     "id": "FORKED_TONGUE",
     "copy-from": "FORKED_TONGUE",
     "extend": { "category": [ "DRAGONBLOOD" ] }
