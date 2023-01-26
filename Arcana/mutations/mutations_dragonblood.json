@@ -7,7 +7,7 @@
   },
   {
     "type": "mutation",
-	"//": "this one just fits too well with both reptile and heat theme of this mutation tree"
+    "//": "this one just fits too well with both reptile and heat theme of this mutation tree",
     "id": "LIZ_IR",
     "copy-from": "LIZ_IR",
     "extend": { "category": [ "DRAGONBLOOD" ] }
@@ -191,7 +191,7 @@
       { "part": "torso", "ignored": 30 }
     ],
     "armor": [ { "part_types": [ "tail" ], "cut": 14, "bash": 10 } ],
-	"integrated_armor": [ "integrated_dragonscales" ]
+    "integrated_armor": [ "integrated_dragonscales" ]
   },
   {
     "type": "mutation",
@@ -266,7 +266,7 @@
     "mending_modifier": 1.0,
     "stamina_regen_modifier": 0.5,
     "vitamin_rates": [ [ "blood", -1 ], [ "redcells", -1 ] ],
-	"flags": [ "PRED1" ]
+    "flags": [ "PRED1" ]
   },
   {
     "type": "mutation",
@@ -293,7 +293,7 @@
     "stamina_regen_modifier": 0.666,
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
     "vitamin_rates": [ [ "blood", -3 ], [ "redcells", -3 ] ],
-	"flags": [ "PRED2" ]
+    "flags": [ "PRED2" ]
   },
   {
     "type": "mutation",
@@ -482,7 +482,7 @@
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_SCALYLEGS" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "types": [ "LEGS", "FEET" ]
+    "types": [ "LEGS", "FEET" ],
     "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
     "restricts_gear": [ "foot_l", "foot_r" ],
     "movecost_obstacle_modifier": 1.25,
@@ -580,7 +580,7 @@
     "visibility": 10,
     "ugliness": 3,
     "mixed_effect": true,
-	"description": "You're scales become a lot more dence yet thinner, increasing you're protection slightly and considerably reducing the bulk. Reduces wet effects a bit.",
+    "description": "You're scales become a lot more dence yet thinner, increasing you're protection slightly and considerably reducing the bulk. Reduces wet effects a bit.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_DRAGONSCALES" ],
@@ -602,7 +602,7 @@
       { "part": "torso", "ignored": 30 }
     ],
     "armor": [ { "part_types": [ "tail" ], "cut": 14, "bash": 10 } ],
-	"integrated_armor": [ "integrated_draconicplating" ]
+    "integrated_armor": [ "integrated_draconicplating" ]
   },
   {
     "type": "mutation",
