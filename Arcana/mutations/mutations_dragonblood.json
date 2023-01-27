@@ -407,7 +407,7 @@
       "attack_text_npc": "%1$s sinks their teeth into %2$s",
       "body_part": "mouth",
       "chance": 18,
-      "strength_damage": { "damage_type": "stab", "amount": 4 }
+      "base_damage": { "damage_type": "stab", "amount": 4 }
     }
   },
   {
@@ -433,7 +433,7 @@
       "attack_text_npc": "%1$s savagely tear into %2$s with their jaws",
       "body_part": "mouth",
       "chance": 20,
-      "strength_damage": { "damage_type": "stab", "amount": 25 }
+      "base_damage": { "damage_type": "stab", "amount": 25 }
     }
   },
   {
@@ -462,7 +462,7 @@
       {
         "attack_text_u": "You rake %s with your toe claws",
         "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "chance": 40,
+        "chance": 20,
         "strength_damage": { "damage_type": "cut", "amount": 2 }
       }
     ],
@@ -492,8 +492,8 @@
       {
         "attack_text_u": "You rake %s with your toe claws",
         "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "chance": 40,
-        "strength_damage": { "damage_type": "cut", "amount": 4 }
+        "chance": 20,
+        "strength_damage": { "damage_type": "cut", "amount": 5 }
       }
     ],
     "allowed_items": [ "ALLOWS_TALONS" ]
@@ -518,7 +518,7 @@
       "attack_text_u": "You whip %s with your tail",
       "attack_text_npc": "%1$s whips %2$s with their tail",
       "chance": 20,
-      "strength_damage": { "damage_type": "bash", "amount": 1 }
+      "base_damage": { "damage_type": "bash", "amount": 1 }
     },
     "dodge_modifier": 2,
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_TAIL" ],
