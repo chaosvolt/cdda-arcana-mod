@@ -224,7 +224,7 @@
     "changes_to": [ "ARCANA_TOXINIMMUNE_2" ],
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
-    "vitamin_rates": [ [ "mutant_toxin", 1 ] ],
+    "vitamin_rates": [ [ "mutant_toxin", 2 ] ],
     "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0.75 ] ] ] ],
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_FIRE" ]
   },
@@ -241,7 +241,7 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "enchantments": [ "ENCH_DRAGONBLOOD_TOXINIMMUNE_2" ],
-    "vitamin_rates": [ [ "mutant_toxin", 2 ] ],
+    "vitamin_rates": [ [ "mutant_toxin", 1 ] ],
     "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0.5 ] ] ] ]
   },
   {
@@ -265,7 +265,7 @@
     "healing_resting": 0.25,
     "mending_modifier": 1.0,
     "stamina_regen_modifier": 0.5,
-    "vitamin_rates": [ [ "blood", -1 ], [ "redcells", -1 ] ],
+    "vitamin_rates": [ [ "blood", -5 ], [ "redcells", -5 ] ],
     "flags": [ "PRED1" ]
   },
   {
@@ -323,7 +323,7 @@
     "cost": 500,
     "kcal": true,
     "ranged_mutation": { "type": "mut_dragonfire", "message": "You loose a tongue of flame from your mouth." },
-    "vitamin_rates": [ [ "blood", -5 ], [ "redcells", -5 ] ],
+    "vitamin_rates": [ [ "blood", -1 ], [ "redcells", -1 ] ],
     "flags": [ "ARCANE_FOG_IMMUNE", "PRED3" ]
   },
   {
