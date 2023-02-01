@@ -2389,7 +2389,9 @@
       ],
       "recharge_scheme": [
         { "type": "trap", "interval": "1 s", "rate": 1, "message": "The portal collapses!", "trap": "tr_portal" },
-        { "type": "field", "interval": "1 s", "rate": 0, "field": "fd_fatigue" }
+        { "type": "field", "interval": "1 s", "rate": 0, "field": "fd_fatigue", "int_min": 1, "int_max": 3 },
+        { "type": "field", "interval": "1 s", "rate": 0, "field": "fd_tindalos_rift", "int_min": 1, "int_max": 3 },
+        { "type": "field", "interval": "1 s", "rate": 0, "field": "fd_archon_rift", "int_min": 1, "int_max": 3 }
       ]
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
