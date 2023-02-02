@@ -102,6 +102,13 @@
     ]
   },
   {
+    "id": "arcana_potioncraft_upgrade",
+    "type": "requirement",
+    "//": "Tools and components for upgrading potions.",
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ]
+  },
+  {
     "id": "arcana_purification_standard",
     "type": "requirement",
     "//": "Certain bowls or a chalice, plus fire.",
