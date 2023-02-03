@@ -351,7 +351,10 @@
         "skill_requirements": [ { "name": "unarmed", "level": 3 }, { "name": "magic", "level": 4 } ],
         "buff_duration": 2,
         "max_stacks": 3,
-        "flat_bonuses": [ { "stat": "arpen", "type": "cut", "scaling-stat": "dex", "scale": 0.5 } ]
+        "flat_bonuses": [
+          { "stat": "arpen", "type": "cut", "scaling-stat": "dex", "scale": 0.5 },
+          { "stat": "arpen", "type": "cut", "scaling-stat": "dex", "scale": 0.5 }
+        ]
       },
       {
         "id": "buff_shrike_onattack3",
