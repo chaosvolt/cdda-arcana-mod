@@ -415,8 +415,7 @@
       { "id": "ANVIL", "level": 1 }
     ],
     "tools": [
-      [ [ "book_syncretism", -1 ] ],
-      [ [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ],
+      [ [ "book_syncretism", -1 ], [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ],
       [ [ "surface_heat", 4, "LIST" ] ]
     ],
     "components": [

@@ -476,8 +476,7 @@
     "using": [ [ "arcana_holy_relic_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [
-      [ [ "book_syncretism", -1 ] ],
-      [ [ "book_hexenhammer", -1 ], [ "book_bloodmagic", -1 ] ],
+      [ [ "book_syncretism", -1 ], [ "book_hexenhammer", -1 ], [ "book_bloodmagic", -1 ] ],
       [ [ "surface_heat", 6, "LIST" ] ]
     ],
     "components": [
