@@ -575,7 +575,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_3",
     "start": {
-      "assign_mission_target": { "om_terrain": "curious_structure", "om_special": "Curious Structure", "reveal_radius": 3, "z": 0 }
+      "assign_mission_target": { "om_terrain": "curious_structure_2", "om_special": "Curious Structure", "reveal_radius": 3, "z": 0 }
     },
     "end": {
       "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_spawn_item": "CF_golden_scale", "count": 8 } ],
