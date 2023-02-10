@@ -23,7 +23,9 @@
     "id": "Strange Grove",
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "strange_grove_north" },
-      { "point": [ 0, 0, -1 ], "overmap": "grove_ruins_north" }
+      { "point": [ 0, 1, 0 ], "overmap": "strange_grove_2_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "grove_ruins_north" },
+      { "point": [ 0, 1, -1 ], "overmap": "grove_ruins_2_north" }
     ],
     "locations": [ "forest" ],
     "city_distance": [ 0, -1 ],

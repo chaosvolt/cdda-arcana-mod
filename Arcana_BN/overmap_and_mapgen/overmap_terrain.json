@@ -67,6 +67,11 @@
     "flags": [ "RISK_HIGH" ]
   },
   {
+    "type": "overmap_terrain",
+    "id": "strange_grove_2",
+    "copy-from": "strange_grove"
+  },
+  {
     "id": "grove_ruins",
     "type": "overmap_terrain",
     "name": "underground ruin",
@@ -74,6 +79,11 @@
     "color": "i_green",
     "looks_like": "triffid_roots",
     "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "grove_ruins_2",
+    "copy-from": "grove_ruins"
   },
   {
     "id": "impact_site",
