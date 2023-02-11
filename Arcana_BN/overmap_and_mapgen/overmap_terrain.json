@@ -570,6 +570,16 @@
   },
   {
     "type": "overmap_terrain",
+    "id": "arcana_warehouse_lab",
+    "copy-from": "warehouse"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "arcana_warehouse_lab_roof",
+    "copy-from": "warehouse_roof"
+  },
+  {
+    "type": "overmap_terrain",
     "id": "arcana_cave_caravan",
     "name": "cave",
     "sym": "C",
