@@ -384,7 +384,11 @@
     "charges": 1,
     "reversible": true,
     "using": [ [ "shot_forming", 1 ], [ "ammo_shot", 1 ] ],
-    "components": [ [ [ "gunpowder", 6 ] ], [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ], [ [ "essence_dull", 5 ] ] ]
+    "components": [
+      [ [ "gunpowder", 6 ], [ "chem_black_powder", 9 ], [ "chem_match_head_powder", 9 ] ],
+      [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
+      [ [ "essence_dull", 5 ] ]
+    ]
   },
   {
     "result": "flintlock_shot_arcana",
@@ -402,7 +406,7 @@
     "book_learn": [ [ "book_hexenhammer", 2 ], [ "book_syncretism", 2 ], [ "book_magicfordummies", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
-      [ [ "chem_black_powder", 5 ] ],
+      [ [ "gunpowder", 3 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
       [ [ "essence_dull", 5 ] ],
       [ [ "paper", 1 ] ]
