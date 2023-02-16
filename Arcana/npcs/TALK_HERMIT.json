@@ -1246,7 +1246,7 @@
         "switch": true,
         "text": "We will not fail.  As is His will.",
         "topic": "TALK_HERMIT",
-        "condition": { "u_has_ant_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
       },
       {
         "text": "This power is dangerous.  Why should we trust that salvation lay with yet another interloper?",
