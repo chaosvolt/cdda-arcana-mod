@@ -148,7 +148,7 @@
   {
     "id": "arcana_magic_confuse_monster",
     "type": "SPELL",
-    "name": { "str": "Sign: Confuse Monster" },
+    "name": { "str": "Sign: Confuse Monsters" },
     "description": "Magic Sign\nUsing this spell will stun all hostiles in the area around you.",
     "message": "\"No blade may mark me, if the hand cannot strike true…\"  You cast %s!",
     "effect": "attack",
@@ -607,7 +607,7 @@
     "id": "arcana_magic_insight",
     "type": "SPELL",
     "name": { "str": "Sign: Insight" },
-    "description": "Magic Sign\nUsing this spell will grant a temporary boost to perception.  It can be used on yourself or an ally.",
+    "description": "Magic Sign\nUsing this spell will grant a temporary boost to perception, and night vision.  It can be used on yourself or an ally.",
     "message": "\"All is known to one who watches and listens with patience…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
