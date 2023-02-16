@@ -23,7 +23,9 @@
   },
   {
     "abstract": "scroll_magic_base",
-    "type": "TOOL",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "tools",
     "name": { "str": "scroll base" },
     "weight": "415 g",
     "volume": "250 ml",
@@ -31,18 +33,21 @@
     "symbol": "!",
     "looks_like": "recipe_creepy",
     "color": "white",
-    "revert_to": "scroll_blank",
-    "flags": [ "NO_SALVAGE" ]
+    "stack_size": 1,
+    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   },
   {
     "abstract": "totem_base",
-    "type": "TOOL",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "tools",
     "name": { "str": "magic seal base" },
     "material": [ "essencemat" ],
     "symbol": ",",
     "looks_like": "petrified_eye",
     "weight": "50 g",
     "volume": "50 ml",
-    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE" ]
+    "stack_size": 1,
+    "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   }
 ]

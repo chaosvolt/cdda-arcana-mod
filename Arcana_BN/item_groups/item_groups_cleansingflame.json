@@ -63,8 +63,9 @@
       [ "arming_sword", 4 ],
       [ "jian", 3 ],
       [ "crossbow", 10 ],
-      [ "hand_crossbow", 5 ],
-      [ "huge_crossbow", 5 ],
+      [ "hand_crossbow", 3 ],
+      [ "huge_crossbow", 2 ],
+      [ "shotgun_d", 5 ],
       [ "bolt_steel", 10 ],
       [ "helmet_galea", 5 ],
       [ "helmet_nasal", 5 ],
@@ -96,7 +97,8 @@
     "items": [
       [ "hexenhammer", 30 ],
       [ "sun_sword", 15 ],
-      [ "ethereal_crossbow", 25 ],
+      [ "ethereal_crossbow", 20 ],
+      [ "reloaded_shot_00_arcana", 5 ],
       [ "gilded_aegis", 10 ],
       [ "somen_clairvoyance", 15 ],
       [ "thermic_essence_cutter", 5 ]
@@ -191,6 +193,19 @@
       [ "corpse_painful", 10 ],
       [ "corpse_halved_upper", 10 ],
       [ "corpse_half_beheaded", 5 ]
+    ]
+  },
+  {
+    "id": "curious_structure_tomb_offerings",
+    "type": "item_group",
+    "items": [
+      { "group": "standing_stones_libation", "prob": 25 },
+      { "item": "candle", "prob": 10, "count": [ 1, 7 ] },
+      [ "photo_album", 15 ],
+      [ "holy_symbol", 10 ],
+      [ "silver_locket", 15 ],
+      { "item": "CF_golden_scale", "prob": 20, "count": [ 2, 5 ] },
+      [ "triffid_queen_flower", 5 ]
     ]
   },
   {
