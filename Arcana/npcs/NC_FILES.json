@@ -91,16 +91,8 @@
       [ "SKIN_LIGHT", 100 ],
       [ "hair_blond_long", 100 ],
       [ "PROF_CLEANSINGFLAME", 100 ],
-      [ "SPELL_HEAL", 100 ],
-      [ "SPELL_FLAMEARMOR", 100 ],
-      [ "SPELL_CLERIC", 100 ],
       [ "NONADDICTIVE", 100 ],
       [ "SPIRITUAL", 100 ]
-    ],
-    "spells": [
-      { "id": "arcana_magic_healing", "level": 3 },
-      { "id": "arcana_magic_heat_ward", "level": 5 },
-      { "id": "arcana_magic_ward_against_evil", "level": 6 }
     ]
   },
   {
@@ -137,17 +129,9 @@
       [ "hair_black_medium", 100 ],
       [ "PROF_CLEANSINGFLAME", 100 ],
       [ "MARTIAL_ARTS_CF", 100 ],
-      [ "SPELL_DAYLIGHT", 100 ],
-      [ "SPELL_LIGHT", 100 ],
-      [ "SPELL_CONSECRATELESSER", 100 ],
       [ "SPIRITUAL", 100 ],
       [ "TERRIFYING", 100 ],
       [ "TRUTHTELLER", 100 ]
-    ],
-    "spells": [
-      { "id": "arcana_magic_surge_adrenaline", "level": 5 },
-      { "id": "arcana_magic_light", "level": 2 },
-      { "id": "arcana_magic_consecrate", "level": 4 }
     ]
   },
   {
@@ -177,18 +161,10 @@
     "traits": [
       { "group": "Appearance_cleansingflame" },
       [ "PROF_CLEANSINGFLAME", 100 ],
-      [ "SPELL_AGILE", 100 ],
-      [ "SPELL_LOCKPICK", 100 ],
-      [ "SPELL_PLANTS", 100 ],
       [ "SPIRITUAL", 100 ],
       [ "PACIFIST", 100 ],
       [ "FASTREADER", 100 ],
       [ "GOODMEMORY", 100 ]
-    ],
-    "spells": [
-      { "id": "arcana_magic_agility", "level": 7 },
-      { "id": "arcana_magic_open_lock", "level": 5 },
-      { "id": "arcana_magic_overgrowth", "level": 3 }
     ]
   },
   {
@@ -223,8 +199,7 @@
     "worn_override": "NC_CF_PURIFIER_worn",
     "carry_override": "NC_CF_PURIFIER_misc",
     "weapon_override": "EMPTY_GROUP",
-    "traits": [ { "group": "Appearance_cleansingflame" }, { "group": "Arcanist_starting_traits" }, [ "PROF_CLEANSINGFLAME2", 100 ] ],
-    "spells": [ { "id": "arcana_magic_capacitance", "level": 3 } ]
+    "traits": [ { "group": "Appearance_cleansingflame" }, { "group": "Arcanist_starting_traits" }, [ "PROF_CLEANSINGFLAME2", 100 ] ]
   },
   {
     "type": "npc_class",
@@ -484,8 +459,7 @@
       [ "LIGHTSTEP", 100 ],
       [ "TRUTHTELLER", 100 ],
       [ "ANIMALDISCORD", 100 ]
-    ],
-    "spells": [ { "id": "arcana_magic_conjure_flame", "level": 6 }, { "id": "arcana_magic_dampening", "level": 3 } ]
+    ]
   },
   {
     "type": "npc_class",

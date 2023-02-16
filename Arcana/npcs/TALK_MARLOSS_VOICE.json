@@ -9,7 +9,9 @@
         "condition": {
           "and": [
             { "not": { "u_has_flag": "mycus" } },
-            { "u_has_any_trait": [ "THRESH_VEIL", "PROF_CHALICE", "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
+            {
+              "u_has_any_trait": [ "THRESH_VEIL", "PROF_CHALICE", "PROF_CHALICE2", "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ]
+            }
           ]
         }
       }
@@ -28,7 +30,7 @@
       {
         "text": "These things do not belong in this world.",
         "topic": "TALK_MARLOSS_VOICE_INTERLOPERS_CHALICE",
-        "condition": { "u_has_trait": "PROF_CHALICE" }
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
       },
       {
         "text": "\"Any otherworldly monster must be returned to its true domain, living or dead.\"  That is my duty.  Do not interfere.",

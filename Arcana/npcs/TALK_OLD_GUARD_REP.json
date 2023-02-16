@@ -112,7 +112,7 @@
       {
         "text": "They're hunters.  Monster hunters these days, in the past they fought with local occult groups and other small-scale threats, before it all boiled over.",
         "switch": true,
-        "condition": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE" ] },
+        "condition": { "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "PROF_CHALICE2" ] },
         "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4_ARCANIST"
       },
       {

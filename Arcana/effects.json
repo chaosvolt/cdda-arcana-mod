@@ -770,7 +770,7 @@
     "type": "effect_type",
     "id": "arcane_pulse_side_effects",
     "//": "Proper Chosen are more acclimated to channeling He From Beyond The Veil's blessings.",
-    "resist_traits": [ "PROF_CHALICE" ],
+    "resist_traits": [ "PROF_CHALICE", "PROF_CHALICE2" ],
     "name": [ "Arcane Burnout" ],
     "desc": [
       "Human minds and bodies were not made to be a conduit for such destructive energy.  Overuse won't kill you, but will make it harder to focus on spellcasting."
@@ -948,7 +948,7 @@
     "type": "effect_type",
     "id": "chalice_offering_side_effects",
     "resist_effects": [ "talisman_warding" ],
-    "resist_traits": [ "PROF_CHALICE", "THRESH_VEIL" ],
+    "resist_traits": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ],
     "name": [
       "",
       "Otherworldly Weakness",

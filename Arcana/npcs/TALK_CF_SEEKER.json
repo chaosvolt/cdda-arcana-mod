@@ -13,7 +13,7 @@
           "no": "For what purpose are you here?  Others will have what you seek."
         },
         "no": {
-          "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ],
+          "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ],
           "yes": {
             "u_has_effect": "cf_mission_1",
             "yes": "Greetings, Keeper.  How can I assist you?",

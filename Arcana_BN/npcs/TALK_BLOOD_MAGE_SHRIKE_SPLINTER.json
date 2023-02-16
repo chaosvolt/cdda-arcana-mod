@@ -130,7 +130,7 @@
       "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
       "yes": "You've heard of the Keepers of The Oath, haven't you?  The slaves to their new god from Beyond.  Our disagreements aside, it wasn't right how our order tricked them like that.  I don't know how much of the story you've heard, hunter, so ask away.",
       "no": {
-        "u_has_trait": "PROF_CHALICE",
+        "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ],
         "yes": "You must know of it, don't you?  The magi, the corruption ritual, the THING that drowned the last gasp of both our orders in a deluge of blood and madness.  I hope the magus that concocted that scheme died there with the priests and had his soul devoured by the abomination they ended up summoning.  Tell me, Keeper.  What answers do you seek?",
         "no": {
           "u_has_trait": "PROF_SANGUINE",
@@ -171,7 +171,7 @@
       "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
       "yes": "You're working with them too?  Perhaps there's hope for the lot of us after all.  I'm used to seeing you mage hunters trying to smash any relic they can't exploit with their little hammers.  I'm not familiar with the curse's functionality, but the fundamentals of it can be found in the Sanguine Codex.  If you had access to the Keeper's own consecration rituals, you could do something with that.",
       "no": {
-        "u_has_trait": "PROF_CHALICE",
+        "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ],
         "yes": "I'm aware that your holy book includes consecration rituals that could be adapted to do that.  You'll likely need information on how the curse functions to properly fix it, some of it could perhaps be puzzled out from a copy of Sanguine Codex.",
         "no": {
           "u_has_trait": "PROF_SANGUINE",
@@ -493,14 +493,19 @@
       },
       {
         "text": "We are not enemies.  We can work together, combine our knowledge to survive.",
-        "condition": { "and": [ { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] }, { "u_has_effect": "shrike_inquire_denied" } ] },
+        "condition": {
+          "and": [
+            { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
+            { "u_has_effect": "shrike_inquire_denied" }
+          ]
+        },
         "switch": true,
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CEASE",
         "opinion": { "anger": 1 }
       },
       {
         "text": "We are not enemies.  We can work together, combine our knowledge to survive.",
-        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "trial": { "type": "PERSUADE", "difficulty": 60 },
         "switch": true,
         "success": { "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_CHOSEN", "opinion": { "value": 1 } },
@@ -543,7 +548,7 @@
               "or": [
                 { "u_has_skill": { "skill": "magic", "level": 7 } },
                 {
-                  "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_CHALICE" ]
+                  "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_CHALICE", "PROF_CHALICE2" ]
                 },
                 { "u_has_intelligence": 9 },
                 { "u_has_perception": 9 }

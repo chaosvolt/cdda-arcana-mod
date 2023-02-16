@@ -284,7 +284,7 @@
         "switch": true,
         "text": "We are both bound by immortal oath.  I chose to come to their aid.",
         "topic": "TALK_HERMIT_CF_REP_MISSION_CHALICE",
-        "condition": { "u_has_trait": "PROF_CHALICE" }
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
       },
       {
         "switch": true,
@@ -741,7 +741,15 @@
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUEST_HELP_1_ILLITERATE",
     "dynamic_line": {
-      "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_CHALICE" ],
+      "u_has_any_trait": [
+        "PROF_ARCANIST",
+        "PROF_ARCANIST2",
+        "PROF_CLEANSINGFLAME",
+        "PROF_CLEANSINGFLAME2",
+        "PROF_SANGUINE",
+        "PROF_CHALICE",
+        "PROF_CHALICE2"
+      ],
       "yes": "I'm astounded that you've made it this far in your studies.  What am I going to do with you?  If this is the destined fate He has set us on, it seems I'll need to guide you through this.  Speak with me when you're ready, and I suppose I'll see what can be done.",
       "no": "He From Beyond The Veil, grant me strength …if strange fortune has set us on this path, then I suppose we must see it through.  Speak with me when you're ready, and I'll see what I can do."
     },
@@ -819,7 +827,7 @@
       {
         "text": "There were seven of them?",
         "topic": "TALK_HERMIT_DISCUSS_1_SEVEN",
-        "condition": { "not": { "u_has_trait": "PROF_CHALICE" } }
+        "condition": { "and": [ { "not": { "u_has_trait": "PROF_CHALICE" } }, { "not": { "u_has_trait": "PROF_CHALICE2" } } ] }
       },
       { "text": "Do you know what happened to the other six?", "topic": "TALK_HERMIT_DISCUSS_1_SIX" },
       { "text": "What happened to it?", "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED" },
@@ -1039,7 +1047,7 @@
         "text": "While we seek an understanding of the Beyond, do not forget our humanity…",
         "topic": "TALK_HERMIT_DISCUSS_3_FAIL_TENET",
         "opinion": { "anger": 1, "value": -1 },
-        "condition": { "u_has_trait": "PROF_CHALICE" }
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
       },
       {
         "text": "I think I understand…",
@@ -1136,7 +1144,7 @@
         "text": "It is His will, that we remain free of mutation?",
         "topic": "TALK_HERMIT_DISCUSS_3_FAIL_MUTATION",
         "switch": true,
-        "condition": { "u_has_trait": "PROF_CHALICE" }
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
       },
       {
         "text": "So your god doesn't accept mutants?",
@@ -1195,12 +1203,24 @@
       {
         "text": "Your order's work?  What was that?",
         "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK",
-        "condition": { "and": [ { "npc_has_item": "veilblade" }, { "not": { "u_has_trait": "PROF_CHALICE" } } ] }
+        "condition": {
+          "and": [
+            { "npc_has_item": "veilblade" },
+            { "not": { "u_has_trait": "PROF_CHALICE" } },
+            { "not": { "u_has_trait": "PROF_CHALICE2" } }
+          ]
+        }
       },
       {
         "text": "So there is hope for us yet.  Anything else?",
         "topic": "TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE",
-        "condition": { "and": [ { "npc_has_item": "veilblade" }, { "u_has_any_trait": [ "PROF_CHALICE" ] } ] }
+        "condition": {
+          "and": [
+            { "npc_has_item": "veilblade" },
+            { "u_has_any_trait": [ "PROF_CHALICE" ] },
+            { "not": { "u_has_trait": "PROF_CHALICE2" } }
+          ]
+        }
       },
       {
         "switch": true,
@@ -1226,7 +1246,7 @@
         "switch": true,
         "text": "We will not fail.  As is His will.",
         "topic": "TALK_HERMIT",
-        "condition": { "u_has_trait": "PROF_CHALICE" }
+        "condition": { "u_has_ant_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
       },
       {
         "text": "This power is dangerous.  Why should we trust that salvation lay with yet another interloper?",
@@ -1359,7 +1379,7 @@
         "text": "\"No matter the cost, no matter what we must do, for the strength and safety of this world.  And in turn, of worlds beyond.\"  We will persevere.",
         "switch": true,
         "topic": "TALK_HERMIT",
-        "condition": { "u_has_trait": "PROF_CHALICE" }
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
       },
       {
         "text": "I don't know what will come of this, Keeper, but it is admirable that you still hold on.  We are not extinct just yet, relic or no relic.",
@@ -1406,7 +1426,7 @@
       {
         "text": "Our oath?",
         "topic": "TALK_HERMIT_DISCUSS_3_OATH",
-        "condition": { "not": { "u_has_trait": "PROF_CHALICE" } }
+        "condition": { "and": [ { "not": { "u_has_trait": "PROF_CHALICE" } }, { "not": { "u_has_trait": "PROF_CHALICE2" } } ] }
       },
       { "text": "Why another?  Why can't you do this?", "topic": "TALK_HERMIT_DISCUSS_3_ANOTHER" },
       { "text": "Abyss?", "topic": "TALK_HERMIT_DISCUSS_3_ABYSS" },
@@ -1623,7 +1643,12 @@
       {
         "text": "Yet humanity perseveres, and there are still those of us out there to serve His will.",
         "topic": "TALK_HERMIT_VEIL_SOLIDARITY",
-        "condition": { "and": [ { "u_has_effect": "hermit_earned_trust_2" }, { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } ] }
+        "condition": {
+          "and": [
+            { "u_has_effect": "hermit_earned_trust_2" },
+            { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] }
+          ]
+        }
       },
       {
         "switch": true,
@@ -1718,7 +1743,7 @@
         "switch": true,
         "text": "Understandable.  I learned the ways of one of said new gods.",
         "topic": "TALK_HERMIT_BOOK_RELIGIOUS_CHALICE",
-        "condition": { "u_has_trait": "PROF_CHALICE" }
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
       },
       { "switch": true, "default": true, "text": "New gods?", "topic": "TALK_HERMIT_BOOK_RELIGIOUS_NEWGODS" },
       { "text": "Huh.  I see.", "topic": "TALK_HERMIT" }
@@ -1923,7 +1948,7 @@
       {
         "text": "I felt an instinctive pull.  That of the Shrouded King, perhaps.",
         "opinion": { "trust": 1, "value": 1 },
-        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "topic": "TALK_HERMIT_BOOK_OUST",
         "effect": [
           { "u_add_effect": "hermit_earned_trust_1", "duration": "PERMANENT" },
@@ -2109,7 +2134,12 @@
       {
         "text": "We will still prevail.  Do not lose hope just yet.",
         "topic": "TALK_HERMIT_PREVAIL",
-        "condition": { "and": [ { "u_has_effect": "hermit_earned_trust_2" }, { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] } ] }
+        "condition": {
+          "and": [
+            { "u_has_effect": "hermit_earned_trust_2" },
+            { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] }
+          ]
+        }
       },
       {
         "switch": true,
@@ -2268,7 +2298,7 @@
         "text": "To gaze into the Beyond is to see the potential of a thousand worlds, and learn hidden truths…",
         "topic": "TALK_HERMIT_TEACH_ACCEPT_OATH",
         "effect": { "u_add_effect": "hermit_earned_trust_2", "duration": "PERMANENT" },
-        "condition": { "u_has_trait": "PROF_CHALICE" }
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
       },
       {
         "text": "I am eager to learn, if you would have me as a student.",
@@ -2357,6 +2387,102 @@
     "id": "TALK_HERMIT_DOING_ASKED",
     "dynamic_line": "You already pried about personal matters quite recently.  Please, it's fine.",
     "responses": [ { "text": "…", "topic": "TALK_HERMIT" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_SPELL_MENU",
+    "dynamic_line": "There are many secrets that He From Beyond The Veil will reward you with, if you make proper use of His relic.  I do know a few tricks from my youth that may compliment the tools He will give you, however.  I can pass onto you the Magic Signs of Free Action, Phase Shield, or Transcendent Aura.  I ask that you bring crystallized essence in exchange, as I can use it for these rituals and for other wards I maintain here.",
+    "responses": [
+      {
+        "text": "What can you tell me about Free Action?",
+        "condition": { "not": { "u_has_trait": "SPELL_FREEACTION" } },
+        "topic": "TALK_HERMIT_SPELL_MENU_1"
+      },
+      {
+        "text": "What can you tell me about Phase Shield?",
+        "condition": { "not": { "u_has_trait": "SPELL_PHASESHIELD" } },
+        "topic": "TALK_HERMIT_SPELL_MENU_2"
+      },
+      {
+        "text": "What can you tell me about Transcendent Aura?",
+        "condition": { "and": [ { "not": { "u_has_trait": "PROF_CHALICE2" } }, { "not": { "u_has_trait": "SPELL_TRANSCENDENTAURA" } } ] },
+        "topic": "TALK_HERMIT_SPELL_MENU_3"
+      },
+      {
+        "text": "I already know all of these.  Thanks anyway.",
+        "switch": true,
+        "condition": {
+          "and": [
+            { "u_has_trait": "SPELL_FREEACTION" },
+            { "u_has_trait": "SPELL_PHASESHIELD" },
+            { "u_has_any_trait": [ "PROF_CHALICE2", "SPELL_TRANSCENDENTAURA" ] }
+          ]
+        },
+        "effect": { "u_add_var": "hermit_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" },
+        "topic": "TALK_HERMIT"
+      },
+      { "text": "Maybe another time.", "switch": true, "default": true, "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_SPELL_MENU_1",
+    "dynamic_line": "Though both it and Surging Force can halt time briefly, the main purpose of Free Action is in traversing rough terrain, slipping out of a monster's grasp, or negating other hazards that might slow you down.  I use it to traverse the woods when gathering firewood or hunting, I'm not as light on my feet as I used to be.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+    "responses": [
+      {
+        "text": "Sure, here you go.",
+        "condition": { "u_has_item": "essence_pure" },
+        "effect": [ { "u_consume_item": "essence_pure" }, { "u_add_trait": "SPELL_FREEACTION" } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I'll need to obtain one.  Maybe later.",
+        "switch": true,
+        "condition": { "not": { "u_has_item": "essence_pure" } },
+        "topic": "TALK_HERMIT"
+      },
+      { "text": "Let me think about it.", "switch": true, "default": true, "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_SPELL_MENU_2",
+    "dynamic_line": "It's a warding spell that lashes out against those who strike you, similar to the more well-known Shadowy Shield.  Rather than harming your attacker directly, it shunts them a short distance away from you.  It does the same to any other threats close enough, when it activates.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+    "responses": [
+      {
+        "text": "Sure, here you go.",
+        "condition": { "u_has_item": "essence_pure" },
+        "effect": [ { "u_consume_item": "essence_pure" }, { "u_add_trait": "SPELL_PHASESHIELD" } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I'll need to obtain one.  Maybe later.",
+        "switch": true,
+        "condition": { "not": { "u_has_item": "essence_pure" } },
+        "topic": "TALK_HERMIT"
+      },
+      { "text": "Let me think about it.", "switch": true, "default": true, "topic": "TALK_HERMIT" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_HERMIT_SPELL_MENU_3",
+    "dynamic_line": "This secret has been passed down among a few of the more learned ascetics of my order.  It shrouds your aura against monsters from Beyond, blinding them to your presence.  It doesn't hide you from the undead I've found, earthly life in general seems to spot you more easily under its effect, but it has its uses.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+    "responses": [
+      {
+        "text": "Sure, here you go.",
+        "condition": { "u_has_item": "essence_pure" },
+        "effect": [ { "u_consume_item": "essence_pure" }, { "u_add_trait": "SPELL_TRANSCENDENTAURA" } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I'll need to obtain one.  Maybe later.",
+        "switch": true,
+        "condition": { "not": { "u_has_item": "essence_pure" } },
+        "topic": "TALK_HERMIT"
+      },
+      { "text": "Let me think about it.", "switch": true, "default": true, "topic": "TALK_HERMIT" }
+    ]
   },
   {
     "type": "talk_topic",

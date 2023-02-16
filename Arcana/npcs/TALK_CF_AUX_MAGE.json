@@ -108,7 +108,9 @@
       },
       {
         "text": "I'll see what I can do to help.  We can't afford to lose such valuable information.",
-        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL", "PROF_ARCANIST", "PROF_ARCANIST2", "LOVES_BOOKS" ] },
+        "condition": {
+          "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL", "PROF_ARCANIST", "PROF_ARCANIST2", "LOVES_BOOKS" ]
+        },
         "topic": "TALK_CF_AUX_MAGE_HOARD_ASSURANCE"
       },
       { "text": "We'll have to see how things go, I guess.", "topic": "TALK_CF_AUX_MAGE" }

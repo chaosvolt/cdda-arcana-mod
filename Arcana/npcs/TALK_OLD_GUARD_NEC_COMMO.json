@@ -161,7 +161,7 @@
       },
       {
         "text": "They had their reasons for acting as they do.  They do not know the truth of what has ruined this world, but they did what they could.  This is an opportunity to gain valuable insight into how things could be set right.",
-        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_5_2"
       },
       {

@@ -98,6 +98,28 @@
   },
   {
     "type": "mutation",
+    "id": "PROF_CHALICE2",
+    "//": "This is used to track if you're the mendicant profession, and thus whether you already know the bonus spell they start with.",
+    "name": { "str": "Keeper of The Oath" },
+    "points": 0,
+    "description": "You were sworn into an order known as the Keepers of The Oath.  Whether or not He From Beyond The Veil still guides you, the oath you swore is eternal, and your past may still be useful in the future.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true,
+    "cancels": [
+      "ILLITERATE",
+      "PACIFIST",
+      "MARTIAL_ARTS_CF",
+      "MARTIAL_ARTS_SANGUINE",
+      "ARCANA_SCALYPATCHES",
+      "ARCANA_INNERHEAT",
+      "ARCANA_DRAGONCLAWS",
+      "ARCANA_DRAGONTEETH",
+      "ARCANA_DRAGONHORNS"
+    ]
+  },
+  {
+    "type": "mutation",
     "id": "PROF_ARCANIST",
     "name": { "str": "Arcanist" },
     "points": 0,

@@ -13,7 +13,7 @@
           "no": "You are not welcome here sanguinist.  State your intentions."
         },
         "no": {
-          "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ],
+          "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ],
           "yes": {
             "u_has_effect": "cf_mission_1",
             "yes": "Welcome, Keeper.  What do you require?",
@@ -84,6 +84,7 @@
             "PROF_CLEANSINGFLAME2",
             "PROF_SANGUINE",
             "PROF_CHALICE",
+            "PROF_CHALICE2",
             "THRESH_VEIL"
           ]
         },
@@ -132,7 +133,7 @@
     "type": "talk_topic",
     "id": "TALK_CF_GM_ADVICE_2",
     "dynamic_line": {
-      "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ],
+      "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ],
       "yes": "I tracked their movements for some time intermittently, along with keeping tabs on other leads.  No sign of contact with any remainder of the Keepers, but they have been involved in anomalous activity within the past month prior to the beginning of all this.  I will trust you to retrieve any intel as you see fit given your connection to their order, but do exercise caution.",
       "no": "I tracked their movements for some time intermittently, along with keeping tabs on other leads.  No sign of contact with any remainder of the Keepers, but they have been involved in anomalous activity within the past month prior to the beginning of all this.  Keep your guard up, and deal with them as needed if they seem unlikely to cooperate.  We can't afford to let this intel slip out of our grasp."
     },
@@ -330,7 +331,7 @@
     "responses": [
       {
         "text": "It could be provoked by a more subtle incident, like what broke the back of the Keepers.",
-        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1"
       },
       {
@@ -422,7 +423,7 @@
     "responses": [
       {
         "text": "This seems familiar.  The Keepers have suffered a similar fate in their foremost holy site, haven't they?",
-        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_1"
       },
       { "text": "Maybe there's a way to get a more exact location?", "topic": "TALK_CF_GM_PRELUDE_4_PROGRESSION" },

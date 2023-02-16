@@ -299,7 +299,7 @@
       },
       {
         "text": "For what purpose are they after Oaths to The Chalice?",
-        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_BOOKS_CHALICE"
       },
       {

@@ -19,7 +19,7 @@
             "no": "Welcome, Sister.  I knew we were not alone just yet."
           },
           "no": {
-            "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ],
+            "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ],
             "yes": {
               "u_has_effect": "sofia_motive_explained",
               "yes": "Greetings.  I hope that we can work together.",
@@ -63,7 +63,7 @@
         "condition": {
           "and": [
             { "not": { "u_has_effect": "sofia_deacon_message" } },
-            { "not": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL", "PROF_SANGUINE" ] } },
+            { "not": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL", "PROF_SANGUINE" ] } },
             { "u_has_mission": "MISSION_CF_DEACON_1" }
           ]
         }
@@ -193,8 +193,9 @@
           "and": [
             { "not": { "u_has_effect": "cf_mission_1" } },
             { "not": { "u_has_effect": "sofia_motive_explained" } },
-            { "not": { "u_has_trait": "THRESH_VEIL" } },
-            { "u_has_trait": "PROF_CHALICE" }
+            { "not": { "u_has_trait": "PROF_CHALICE" } },
+            { "not": { "u_has_trait": "PROF_CHALICE2" } },
+            { "u_has_trait": "THRESH_VEIL" }
           ]
         },
         "topic": "TALK_CF_REP_CHOSEN"
@@ -205,7 +206,7 @@
           "and": [
             { "not": { "u_has_effect": "cf_mission_1" } },
             { "not": { "u_has_effect": "sofia_motive_explained" } },
-            { "u_has_trait": "PROF_CHALICE" }
+            { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
           ]
         },
         "topic": "TALK_CF_REP_CHALICE_MOTIVE_1"
@@ -216,7 +217,7 @@
           "and": [
             { "not": { "u_has_effect": "cf_mission_1" } },
             { "not": { "u_has_effect": "sofia_motive_explained" } },
-            { "u_has_trait": "PROF_CHALICE" }
+            { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] }
           ]
         },
         "topic": "TALK_CF_REP_CHALICE_MOTIVE_2"
@@ -228,7 +229,7 @@
             { "not": { "u_has_effect": "cf_mission_1" } },
             { "not": { "u_has_effect": "sofia_motive_explained" } },
             { "u_has_effect": "rural_church_aware" },
-            { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL", "PROF_SANGUINE" ] }
+            { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL", "PROF_SANGUINE" ] }
           ]
         },
         "topic": "TALK_CF_REP_MERCHANT_MOTIVE"
@@ -240,10 +241,22 @@
             { "not": { "u_has_effect": "cf_mission_1" } },
             { "not": { "u_has_effect": "sofia_motive_explained" } },
             { "u_has_mission": "MISSION_CF_DEACON_1" },
-            { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL", "PROF_SANGUINE" ] }
+            { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL", "PROF_SANGUINE" ] }
           ]
         },
         "topic": "TALK_CF_REP_DEACON_MOTIVE"
+      },
+      {
+        "text": "Can you teach me any spells?",
+        "topic": "TALK_CF_REP_SPELL_MENU",
+        "condition": {
+          "and": [
+            { "u_has_effect": "cf_mission_1" },
+            {
+              "not": { "u_has_var": "sofia_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" }
+            }
+          ]
+        }
       },
       {
         "text": "Do you have anything to trade?",
@@ -380,7 +393,7 @@
       {
         "text": "So be it.  \"No matter the cost, no matter what we must do, for the strength and safety of this world…\"",
         "switch": true,
-        "condition": { "u_has_trait": "PROF_CHALICE" },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2" ] },
         "topic": "TALK_CF_REP"
       },
       { "text": "Understood.  Thank you.", "switch": true, "default": true, "topic": "TALK_CF_REP" }
@@ -594,7 +607,7 @@
     "responses": [
       {
         "text": "It's a protective spell, I'm guessing?",
-        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "switch": true,
         "topic": "TALK_CF_REP_MISSION_1_HOW_KNOWN"
       },
@@ -714,7 +727,15 @@
         "condition": {
           "or": [
             {
-              "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
+              "u_has_any_trait": [
+                "PROF_ARCANIST",
+                "PROF_ARCANIST2",
+                "PROF_SANGUINE",
+                "PROF_CHALICE",
+                "PROF_CHALICE2",
+                "THRESH_VEIL",
+                "THRESH_DRAGONBLOOD"
+              ]
             },
             { "u_has_skill": { "skill": "magic", "level": 1 } }
           ]
@@ -780,6 +801,7 @@
               "PROF_CLEANSINGFLAME2",
               "PROF_SANGUINE",
               "PROF_CHALICE",
+              "PROF_CHALICE2",
               "THRESH_VEIL",
               "THRESH_DRAGONBLOOD"
             ]
@@ -844,7 +866,15 @@
         "text": "What do you mean, arcane?",
         "condition": {
           "not": {
-            "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
+            "u_has_any_trait": [
+              "PROF_ARCANIST",
+              "PROF_ARCANIST2",
+              "PROF_SANGUINE",
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL",
+              "THRESH_DRAGONBLOOD"
+            ]
           }
         },
         "topic": "TALK_CF_REP_ARCANE"
@@ -853,14 +883,22 @@
         "text": "The Veil?",
         "condition": {
           "not": {
-            "u_has_any_trait": [ "PROF_ARCANIST", "PROF_ARCANIST2", "PROF_SANGUINE", "PROF_CHALICE", "THRESH_VEIL", "THRESH_DRAGONBLOOD" ]
+            "u_has_any_trait": [
+              "PROF_ARCANIST",
+              "PROF_ARCANIST2",
+              "PROF_SANGUINE",
+              "PROF_CHALICE",
+              "PROF_CHALICE2",
+              "THRESH_VEIL",
+              "THRESH_DRAGONBLOOD"
+            ]
           }
         },
         "topic": "TALK_CF_REP_VEIL"
       },
       {
         "text": "And who were the Sanguine Order?",
-        "condition": { "not": { "u_has_any_trait": [ "PROF_SANGUINE", "PROF_CHALICE" ] } },
+        "condition": { "not": { "u_has_any_trait": [ "PROF_SANGUINE", "PROF_CHALICE", "PROF_CHALICE2" ] } },
         "topic": "TALK_CF_REP_SANGUINE_QUERY"
       },
       { "text": "…", "topic": "TALK_CF_REP" }
@@ -893,6 +931,98 @@
     "type": "talk_topic",
     "dynamic_line": "A few others among our order, some having had contact with our fellows working closer to the cities.  Grandmaster Leone seems to be the most senior of the group, and he provided me with a lot of information I'll need to examine closely.  Might lead us to other survivors to get in touch with.  Might be a good idea to speak with him as well.",
     "responses": [ { "text": "We'll see.", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_SPELL_MENU",
+    "dynamic_line": "There are a few Magic Signs I could pass on to you.  Since you've aided us, I could teach you the use of Heat Ward, Poison Armor, or Ward Against Evil, if you don't already know them.  I will need a given amount of Golden Scales, to cover the materials and essence that go into copying these secrets into a form others can use.",
+    "responses": [
+      {
+        "text": "What can you tell me about Heat Ward?",
+        "condition": { "not": { "u_has_trait": "SPELL_FLAMEARMOR" } },
+        "topic": "TALK_CF_REP_SPELL_MENU_1"
+      },
+      {
+        "text": "What can you tell me about Poison Armor?",
+        "condition": { "not": { "u_has_trait": "SPELL_POISONARMOR" } },
+        "topic": "TALK_CF_REP_SPELL_MENU_2"
+      },
+      {
+        "text": "What can you tell me about Ward Against Evil?",
+        "condition": { "not": { "u_has_trait": "SPELL_CLERIC" } },
+        "topic": "TALK_CF_REP_SPELL_MENU_3"
+      },
+      {
+        "text": "There's nothing more I could learn from you.  Thanks anyway.",
+        "switch": true,
+        "condition": {
+          "and": [ { "u_has_trait": "SPELL_FLAMEARMOR" }, { "u_has_trait": "SPELL_POISONARMOR" }, { "u_has_trait": "SPELL_CLERIC" } ]
+        },
+        "effect": { "u_add_var": "sofia_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" },
+        "topic": "TALK_CF_REP"
+      },
+      { "text": "Maybe another time.", "switch": true, "default": true, "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_SPELL_MENU_1",
+    "dynamic_line": "It's a spell some of our hunters learn to protect against overheating and smoke inhalation.  It's not enough to negate being immersed in flame, but you won't catch alight from it.  I'll need 4 Golden Scales to cover the cost of materials and for warding the ritual preparations.",
+    "responses": [
+      {
+        "text": "[GS4] You have a deal, then.",
+        "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 4 } },
+        "effect": [ { "u_consume_item": "CF_golden_scale", "count": 4 }, { "u_add_trait": "SPELL_FLAMEARMOR" } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I'll need more Scales for that.  Maybe later.",
+        "switch": true,
+        "condition": { "not": { "u_has_items": { "item": "CF_golden_scale", "count": 4 } } },
+        "topic": "TALK_CF_REP"
+      },
+      { "text": "Not right now.", "switch": true, "default": true, "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_SPELL_MENU_2",
+    "dynamic_line": "It guards the body against toxins of nearly any sort.  Poison gas, venom from mutant beasts, I've seen it ease signs of radiation sickness as well.  I'll need 3 Golden Scales to cover the cost of materials and for warding the ritual preparations.",
+    "responses": [
+      {
+        "text": "[GS3] You have a deal, then.",
+        "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 3 } },
+        "effect": [ { "u_consume_item": "CF_golden_scale", "count": 3 }, { "u_add_trait": "SPELL_POISONARMOR" } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I'll need more Scales for that.  Maybe later.",
+        "switch": true,
+        "condition": { "not": { "u_has_items": { "item": "CF_golden_scale", "count": 3 } } },
+        "topic": "TALK_CF_REP"
+      },
+      { "text": "Not right now.", "switch": true, "default": true, "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_SPELL_MENU_3",
+    "dynamic_line": "This is a sacred protective spell against otherworldly influences.  Things that draw attention from Beyond or instability on the victim, likely the most common example.  I'll need 4 Golden Scales to cover the cost of materials and for warding the ritual preparations.",
+    "responses": [
+      {
+        "text": "[GS4] You have a deal, then.",
+        "condition": { "u_has_items": { "item": "CF_golden_scale", "count": 4 } },
+        "effect": [ { "u_consume_item": "CF_golden_scale", "count": 4 }, { "u_add_trait": "SPELL_CLERIC" } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I'll need more Scales for that.  Maybe later.",
+        "switch": true,
+        "condition": { "not": { "u_has_items": { "item": "CF_golden_scale", "count": 4 } } },
+        "topic": "TALK_CF_REP"
+      },
+      { "text": "Not right now.", "switch": true, "default": true, "topic": "TALK_CF_REP" }
+    ]
   },
   {
     "type": "talk_topic",

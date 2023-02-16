@@ -174,7 +174,7 @@
     "responses": [
       {
         "text": "I am a servant of He From Beyond The Veil.  We are not enemies.",
-        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
       },
       {
@@ -389,7 +389,7 @@
     "responses": [
       {
         "text": "I am a servant of He From Beyond The Veil.  There is no need for quarrel.",
-        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "THRESH_VEIL" ] },
+        "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
       },
       {
