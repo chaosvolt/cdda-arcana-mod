@@ -356,84 +356,6 @@
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
   },
   {
-    "id": "scroll_sun",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of light", "str_pl": "divine scrolls of light" },
-    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and slow time momentarily, along with conjuring brilliant light.",
-    "price": "120 USD",
-    "price_postapoc": "40 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of light…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_sun", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_moon",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of darkness", "str_pl": "divine scrolls of darkness" },
-    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will shroud the area in darkness, striking enemies blind temporarily.",
-    "price": "120 USD",
-    "price_postapoc": "40 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of darkness…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_moon", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_artiface",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of command", "str_pl": "divine scrolls of command" },
-    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind creatures to your will temporarily.  The sudden impact of projecting your mind outwards will painfully stun you, however.",
-    "price": "140 USD",
-    "price_postapoc": "50 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of command…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_artifice", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_nature",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of regrowth", "str_pl": "divine scrolls of regrowth" },
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will conjure a powerful healing spell, along with causing life to grow wild over the area.  However, using it risks mutating in abnormal ways.",
-    "price": "140 USD",
-    "price_postapoc": "50 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of regrowth…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_nature", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_destruction",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of sundering", "str_pl": "divine scrolls of sundering" },
-    "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a thunderous boom, toppling structures and harming creatures all around, at the cost of attracting otherworldly attention.",
-    "price": "160 USD",
-    "price_postapoc": "60 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of sundering…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_destruction", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_subversion",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "divine scroll of discord", "str_pl": "divine scrolls of discord" },
-    "description": "This is a scroll, with odd writing and peculiar swirling symbols on it, representing an otherworldly trickster god.  Using it will teleport you away, leaving unearthly hazards where you once were.  While you will always arrive at your destination safely, you might suffer other consequences.",
-    "price": "160 USD",
-    "price_postapoc": "60 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the divine scroll of discord…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_subversion", "no_fail": true, "level": 0 }
-  },
-  {
     "id": "blast_canister_arcana_flame",
     "type": "TOOL",
     "category": "weapons",
@@ -622,27 +544,6 @@
     "price": "1500 USD",
     "price_postapoc": "10 USD",
     "use_action": {
-      "target": "summon_kreck_on",
-      "msg": "The glyph of trickery gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_kreck_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of trickery (active)", "str_pl": "glyphs of trickery (active)" },
-    "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.",
-    "price": "1500 USD",
-    "price_postapoc": "10 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_kreck_summoned_glyph",
       "friendly_msg": "The kreck looks up at you expectantly, as if wondering what sort of shenanigans you're plotting.",
@@ -652,7 +553,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_blank",
@@ -664,27 +566,6 @@
     "price": "1500 USD",
     "price_postapoc": "20 USD",
     "use_action": {
-      "target": "summon_blank_on",
-      "msg": "The glyph of the root gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_blank_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of the root (active)", "str_pl": "glyphs of the root (active)" },
-    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.",
-    "price": "1500 USD",
-    "price_postapoc": "20 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_triffid_summoned",
       "friendly_msg": "The movement of the plant creature is hard to read, but you suspect it is either friendly, or doesn't regard you as a threat.",
@@ -694,7 +575,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_flaming_eye",
@@ -706,27 +588,6 @@
     "price": "1500 USD",
     "price_postapoc": "30 USD",
     "use_action": {
-      "target": "summon_flaming_eye_on",
-      "msg": "The glyph of Gehenna gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_flaming_eye_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of Gehenna (active)", "str_pl": "glyphs of Gehenna (active)" },
-    "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.",
-    "price": "1500 USD",
-    "price_postapoc": "30 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_flesh_angel_summoned_glyph",
       "friendly_msg": "A twisted mimicry of the divine is called forth, bound to your will.",
@@ -736,7 +597,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_hunting_horror",
@@ -748,27 +610,6 @@
     "price": "1500 USD",
     "price_postapoc": "40 USD",
     "use_action": {
-      "target": "summon_hunting_horror_on",
-      "msg": "The glyph of Crawling Chaos gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_hunting_horror_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of Crawling Chaos (active)", "str_pl": "glyphs of Crawling Chaos (active)" },
-    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.",
-    "price": "1500 USD",
-    "price_postapoc": "40 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_hunting_horror_summoned",
       "friendly_msg": "The hunting horror is at your beck and call.  A gift from the Stalker among the Stars?",
@@ -778,7 +619,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_dark_wyrm",
@@ -790,27 +632,6 @@
     "price": "1500 USD",
     "price_postapoc": "50 USD",
     "use_action": {
-      "target": "summon_dark_wyrm_on",
-      "msg": "The glyph of the eye gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_dark_wyrm_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of the eye (active)", "str_pl": "glyphs of the eye (active)" },
-    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  Hopefully.",
-    "price": "1500 USD",
-    "price_postapoc": "50 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_dark_wyrm_summoned_glyph",
       "friendly_msg": "The wyrm springs forth, seeming to regard you passively, or at least ignoring your presence.",
@@ -820,7 +641,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_mi_go",
@@ -832,27 +654,6 @@
     "price": "1500 USD",
     "price_postapoc": "60 USD",
     "use_action": {
-      "target": "summon_mi_go_on",
-      "msg": "The glyph of Yuggoth gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_mi_go_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of Yuggoth (active)", "str_pl": "glyphs of Yuggoth (active)" },
-    "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.",
-    "price": "1500 USD",
-    "price_postapoc": "60 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_mi_go_summoned",
       "friendly_msg": "You recite an incantation, and the mi-go's response is a quiet murmur in some unknown language.  It seems to be friendly.",
@@ -862,7 +663,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_jabberwock",
@@ -873,27 +675,6 @@
     "price": "1500 USD",
     "price_postapoc": "70 USD",
     "use_action": {
-      "target": "summon_jabberwock_on",
-      "msg": "The glyph of the golem gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_jabberwock_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of the golem (active)", "str_pl": "glyphs of the golem (active)" },
-    "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.",
-    "price": "1500 USD",
-    "price_postapoc": "70 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_jabberwock_summoned_glyph",
       "friendly_msg": "You hear a strange burbling, the creature bound to your will.",
@@ -903,7 +684,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_flying_polyp",
@@ -915,27 +697,6 @@
     "price": "1500 USD",
     "price_postapoc": "80 USD",
     "use_action": {
-      "target": "summon_flying_polyp_on",
-      "msg": "The glyph of Pnakotus gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_flying_polyp_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of Pnakotus (active)", "str_pl": "glyphs of Pnakotus (active)" },
-    "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.",
-    "price": "1500 USD",
-    "price_postapoc": "80 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_flying_polyp_summoned",
       "friendly_msg": "The flying polyp twitches for a moment, before its movement steadies.  It seems to be friendly.",
@@ -945,7 +706,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_yugg",
@@ -957,27 +719,6 @@
     "price": "1500 USD",
     "price_postapoc": "90 USD",
     "use_action": {
-      "target": "summon_yugg_on",
-      "msg": "The glyph of Plouton gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_yugg_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of Plouton (active)", "str_pl": "glyphs of Plouton (active)" },
-    "description": "A strange silver emblem, engraved with depictions of ancient, cthonian wealth.  Using it will call forth a yugg, and bind it to your will.  Hopefully.",
-    "price": "1500 USD",
-    "price_postapoc": "90 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_yugg_summoned",
       "friendly_msg": "With the riches of a dead world as an offering, you bind the yugg to serve you.  You feel like this is the opposite of how it normally works.",
@@ -987,7 +728,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_shoggoth",
@@ -999,27 +741,6 @@
     "price": "1500 USD",
     "price_postapoc": "100 USD",
     "use_action": {
-      "target": "summon_shoggoth_on",
-      "msg": "The glyph of the Elder Things gives off a faint green glow.",
-      "target_charges": 0,
-      "active": true,
-      "type": "transform"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
-    "id": "summon_shoggoth_on",
-    "type": "TOOL",
-    "copy-from": "silver_glyph",
-    "name": { "str": "glyph of the Elder Things (active)", "str_pl": "glyphs of the Elder Things (active)" },
-    "description": "A strange silver emblem, engraved with many strange eye symbols.  Using it will call forth a shoggoth, and bind it to your will.  Hopefully.  It is very difficult to control.",
-    "price": "1500 USD",
-    "price_postapoc": "100 USD",
-    "max_charges": 1,
-    "charges_per_use": 1,
-    "turns_per_charge": 1,
-    "revert_to": "silver_glyph",
-    "use_action": {
       "type": "place_monster",
       "monster_id": "mon_shoggoth_summoned",
       "friendly_msg": "You hear a voice in your mind.  \"Tekili …l-li?\"  Your mind exerts a strange influence upon the shoggoth.",
@@ -1029,7 +750,8 @@
       "place_randomly": true,
       "is_pet": true,
       "skills": [ "magic" ]
-    }
+    },
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "summon_kreck_bound",
@@ -1037,8 +759,6 @@
     "copy-from": "summon_kreck",
     "name": { "str": "bound summoned kreck" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A kreck has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_kreck_summoned_glyph",
@@ -1046,8 +766,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    }
   },
   {
     "id": "summon_triffid_bound",
@@ -1055,8 +774,6 @@
     "copy-from": "summon_blank",
     "name": { "str": "bound summoned triffid" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A triffid has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_triffid_summoned",
@@ -1064,8 +781,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    }
   },
   {
     "id": "summon_flesh_angel_bound",
@@ -1073,8 +789,6 @@
     "copy-from": "summon_flaming_eye",
     "name": { "str": "bound summoned flesh angel" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A flesh angel has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_flesh_angel_summoned_glyph",
@@ -1082,8 +796,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    }
   },
   {
     "id": "summon_hunting_horror_bound",
@@ -1091,8 +804,6 @@
     "copy-from": "summon_hunting_horror",
     "name": { "str": "bound summoned hunting horror" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A hunting horror has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_hunting_horror_summoned",
@@ -1100,8 +811,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    }
   },
   {
     "id": "summon_dark_wyrm_bound",
@@ -1109,8 +819,6 @@
     "copy-from": "summon_dark_wyrm",
     "name": { "str": "bound summoned dark wyrm" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A dark wyrm has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_dark_wyrm_summoned_glyph",
@@ -1118,8 +826,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    }
   },
   {
     "id": "summon_mi_go_bound",
@@ -1127,8 +834,6 @@
     "copy-from": "summon_mi_go",
     "name": { "str": "bound summoned mi-go" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A mi-go has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_mi_go_summoned",
@@ -1136,8 +841,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    }
   },
   {
     "id": "summon_jabberwock_bound",
@@ -1145,8 +849,6 @@
     "copy-from": "summon_jabberwock",
     "name": { "str": "bound summoned jabberwock" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A jabberwock has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_jabberwock_summoned_glyph",
@@ -1154,8 +856,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    }
   },
   {
     "id": "summon_flying_polyp_bound",
@@ -1163,8 +864,6 @@
     "copy-from": "summon_flying_polyp",
     "name": { "str": "bound summoned flying polyp" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A flying polyp has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_flying_polyp_summoned",
@@ -1172,8 +871,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    }
   },
   {
     "id": "summon_yugg_bound",
@@ -1181,8 +879,6 @@
     "copy-from": "summon_yugg",
     "name": { "str": "bound summoned yugg" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A yugg has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_yugg_summoned",
@@ -1190,8 +886,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    }
   },
   {
     "id": "summon_shoggoth_bound",
@@ -1199,8 +894,6 @@
     "copy-from": "summon_shoggoth",
     "name": { "str": "bound summoned shoggoth" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A shoggoth has been bound into this after a successful summon, activate to redeploy it.",
-    "price": "0 cent",
-    "price_postapoc": "0 cent",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_shoggoth_summoned",
@@ -1208,117 +901,7 @@
       "moves": 60,
       "place_randomly": true,
       "is_pet": true
-    },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
-  },
-  {
-    "id": "scroll_spell_phase_shield",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Phase Shield)", "str_pl": "Pattern Scrolls (Phase Shield)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
-    "price_postapoc": "100 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_phase_shield", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_earthweaving",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Earthweaving)", "str_pl": "Pattern Scrolls (Earthweaving)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
-    "price_postapoc": "100 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_earthweaving", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_dark_lance",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Dark Lance)", "str_pl": "Pattern Scrolls (Dark Lance)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path and inflicting double damage at close range.  Machines and some otherworldly creatures will be immune.\"",
-    "price_postapoc": "100 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_dark_lance", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_sun",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Consecrate)", "str_pl": "Pattern Scrolls (Consecrate)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
-    "//": "Pattern scrolls were extremely rare pre-cataclysm as spell development was in its infancy, but now they're all quite useful in various ways.  Divine pattern scrolls especially were almost non-existent.",
-    "price_postapoc": "120 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_consecrate", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_moon",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Ward Against Cold)", "str_pl": "Pattern Scrolls (Ward Against Cold)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will protect against the cold, and all its side effects.\"",
-    "price_postapoc": "90 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_frost_armor", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_artiface",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Sundering Quake)", "str_pl": "Pattern Scrolls (Sundering Quake)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring down structures and bury them in rubble, damaging creatures caught in the blast.\"",
-    "price_postapoc": "100 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_sundering_quake", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_nature",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Elemental Burst)", "str_pl": "Pattern Scrolls (Elemental Burst)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect, with double damage for enemies caught in the center.\"",
-    "price_postapoc": "100 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_elemental_burst", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_destruction",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Summon Centipedes)", "str_pl": "Pattern Scrolls (Summon Centipedes)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
-    "price_postapoc": "80 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_summon_giant_centipedes", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_subversion",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Eclipse)", "str_pl": "Pattern Scrolls (Eclipse)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring forth monsters and darkness, in exchange for a long-lasting adrenaline surge, life-draining ability, and night vision.\"",
-    "price_postapoc": "120 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_eclipse", "no_fail": true, "level": 0 }
+    }
   },
   {
     "id": "bloodaxe",
@@ -1459,400 +1042,6 @@
       { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 }
     ],
     "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ] }
-  },
-  {
-    "id": "totem_elecresist",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Amber Seal: Lightning Ward", "str_pl": "Amber Seals: Lightning Ward" },
-    "description": "A small chunk of carved otherworldly amber.  Activate it to focus your mind and create a magic sign, granting protection against lightning.  This will expend the item entirely.",
-    "//": "Magic seals are all explicitly a post-cataclysm development, as this path towards development of natural magic did not exist without more monsters to study.",
-    "price_postapoc": "45 USD",
-    "color": "light_gray",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_lightning_ward", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_cleric",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Angelic Seal: Ward Against Evil", "str_pl": "Angelic Seals: Ward Against Evil" },
-    "description": "An small winged figurine, carved from a strange iridescent stone.  Activate it to focus your mind and create a magic sign, granting protection against various anomalous effects.  This will expend the item entirely.",
-    "price_postapoc": "45 USD",
-    "color": "light_green",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_ward_against_evil", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_agile",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Bone Seal: Agility", "str_pl": "Bone Seals: Agility" },
-    "description": "A small set of dice carved from otherworldly bones.  Activate it to focus your mind and create a magic sign, granting a temporary agility effect.  This will expend the item entirely.",
-    "price_postapoc": "55 USD",
-    "color": "white",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_agility", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_confusion",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Chitinous Seal: Confuse Monsters", "str_pl": "Chitinous Seals: Confuse Monsters" },
-    "description": "A small token carved from a wicked stinger.  Activate it to focus your mind and create a magic sign, confusing monsters all around you.  This will expend the item entirely.",
-    "price_postapoc": "35 USD",
-    "color": "dark_gray",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_confuse_monster", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_strength",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Dagger Seal: Might", "str_pl": "Dagger Seals: Might" },
-    "description": "A miniature dagger carved from strange ivory.  Activate it to focus your mind and create a magic sign, granting a temporary boost to strength.  This will expend the item entirely.",
-    "price_postapoc": "55 USD",
-    "color": "white",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_might", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_clairvoyance",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Eternity Seal: Clairvoyance", "str_pl": "Eternity Seals: Clairvoyance" },
-    "description": "A small cabochon of dark, shimmering ivory.  Activate it to focus your mind and create a magic sign, granting a temporary clairvoyance effect.  This will expend the item entirely.",
-    "price_postapoc": "45 USD",
-    "color": "light_gray",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_clairvoyance", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_free_action",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Indigo Seal: Free Action", "str_pl": "Indigo Seals: Free Action" },
-    "description": "A small ornament of vibrant purple petals.  Activate it to focus your mind and create a magic sign, granting protection against paralytic effects and other hindrances.  This will expend the item entirely.",
-    "price_postapoc": "45 USD",
-    "color": "magenta",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_free_action", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_invis",
-    "copy-from": "totem_base",
-    "//": "ID retained to avoid breaking stuff.",
-    "type": "TOOL",
-    "name": { "str": "Obsidian Seal: Shadowy Shield", "str_pl": "Obsidian Seals: Shadowy Shield" },
-    "description": "A piece of unnaturally dark stone, shaped into an eccentric design.  Activate it to focus your mind and create a magic sign, granting a temporary defensive effect that will lash out at attackers with living shadows.  This will expend the item entirely.",
-    "price_postapoc": "40 USD",
-    "color": "dark_gray",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_serpentine_shield", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_plants",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Scarlet Seal: Overgrowth", "str_pl": "Scarlet Seals: Overgrowth" },
-    "description": "A small ornament of woven petals, an otherworldly vibrant red in hue.  Activate it to focus your mind and create a magic sign, and bring forth the forest.  This will expend the item entirely.",
-    "price_postapoc": "40 USD",
-    "color": "red",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_overgrowth", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_flamearmor",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Starstone Seal: Ward Against Heat", "str_pl": "Starstone Seals: Ward Against Heat" },
-    "description": "A shimmering disc carved from a seemingly meteoric material.  Activate it to focus your mind and create a magic sign, gaining temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  This will expend the item entirely.",
-    "price_postapoc": "45 USD",
-    "color": "dark_gray",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_heat_ward", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_insight",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Tear Seal: Insight", "str_pl": "Tear Seals: Insight" },
-    "description": "A curiously-refractive gem carved from an unearthly blue orb.  Activate it to focus your mind and create a magic sign, granting a temporary boost to perception.  This will expend the item entirely.",
-    "price_postapoc": "55 USD",
-    "color": "white",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_insight", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_clarity",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Thorn Seal: Clarity of Blood", "str_pl": "Thorn Seals: Clarity of Blood" },
-    "description": "A sharp needle carved from a monstrous thorn.  Activate it to focus your mind and create a magic sign, granting protection against parasites and the Mycus.  This will expend the item entirely.",
-    "price_postapoc": "45 USD",
-    "color": "magenta",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_clarity_blood", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_lightning",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Thunder Seal: Shockstorm", "str_pl": "Thunder Seals: Shockstorm" },
-    "description": "A small sliver of strange crystal, flickering as though distant storms rage within.  Activate it to focus your mind and create a magic sign, conjuring lightning all around you.  This will expend the item entirely.",
-    "price_postapoc": "50 USD",
-    "color": "pink",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_shockstorm", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_heal",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Woven Seal: Healing", "str_pl": "Woven Seals: Healing" },
-    "description": "A tangled knot of flowing, molded bone.  Activate it to focus your mind and create a magic sign, and heal the body slightly.  This will expend the item entirely.",
-    "price_postapoc": "60 USD",
-    "color": "white",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_healing", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "totem_acidspray",
-    "copy-from": "totem_base",
-    "type": "TOOL",
-    "name": { "str": "Wyrm Seal: Acid Spray", "str_pl": "Wyrm Seals: Acid Spray" },
-    "description": "A carved scale of acrid-smelling, otherworldly flesh.  Activate it to focus your mind and create a magic sign, conjuring a spray of acid.  This will expend the item entirely.",
-    "price_postapoc": "50 USD",
-    "color": "blue",
-    "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_conjure_acid", "no_fail": true, "level": 5 }
-  },
-  {
-    "id": "scroll_spell_agile",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Agility)", "str_pl": "Pattern Scrolls (Agility)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary speed and agility-enhancing effect.\"",
-    "//": "Unlike divine pattern scrolls, basic pattern scrolls were rare but at least existed pre-cataclysm.",
-    "price": "3000 USD",
-    "price_postapoc": "110 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_agility", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_clairvoyance",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Clairvoyance)", "str_pl": "Pattern Scrolls (Clairvoyance)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an ivory halo, granting you sight beyond sight.\"",
-    "price": "3000 USD",
-    "price_postapoc": "90 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clairvoyance", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_clarity",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Clarity of Blood)", "str_pl": "Pattern Scrolls (Clarity of Blood)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against parasites and the Mycus.\"",
-    "price": "3000 USD",
-    "price_postapoc": "90 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_clarity_blood", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_confusion",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Confuse Monsters)", "str_pl": "Pattern Scrolls (Confuse Monsters)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will stun all hostiles in the area around you.\"",
-    "price": "3000 USD",
-    "price_postapoc": "70 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_confuse_monster", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_acidspray",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Conjure Acid)", "str_pl": "Pattern Scrolls (Conjure Acid)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
-    "price": "3000 USD",
-    "price_postapoc": "100 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_conjure_acid", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_flame_armor",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Ward Against Heat)", "str_pl": "Pattern Scrolls (Ward Against Heat)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
-    "price": "3000 USD",
-    "price_postapoc": "90 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_flame_armor", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_free_action",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Free Action)", "str_pl": "Pattern Scrolls (Free Action)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against paralytic effects and other hindrances.\"",
-    "price": "3000 USD",
-    "price_postapoc": "90 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_free_action", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_heal",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Healing)", "str_pl": "Pattern Scrolls (Healing)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
-    "price": "3000 USD",
-    "price_postapoc": "120 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_healing", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_insight",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Insight)", "str_pl": "Pattern Scrolls (Insight)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to perception.\"",
-    "price": "3000 USD",
-    "price_postapoc": "110 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_insight", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_elecresist",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Lightning Ward)", "str_pl": "Pattern Scrolls (Lightning Ward)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
-    "price": "3000 USD",
-    "price_postapoc": "90 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_lightning_ward", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_might",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Might)", "str_pl": "Pattern Scrolls (Might)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to strength.\"",
-    "price": "3000 USD",
-    "price_postapoc": "110 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_might", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_plants",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Overgrowth)", "str_pl": "Pattern Scrolls (Overgrowth)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
-    "price": "3000 USD",
-    "price_postapoc": "80 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_overgrowth", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_invis",
-    "copy-from": "scroll_magic_base",
-    "//": "ID retained to avoid breaking stuff.",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Shadowy Shield)", "str_pl": "Pattern Scrolls (Shadowy Shield)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike your attackers blind.\"",
-    "price": "3000 USD",
-    "price_postapoc": "80 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_serpentine_shield", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_lightning",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Shockstorm)", "str_pl": "Pattern Scrolls (Shockstorm)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, with close enemies taking double damage.\"",
-    "price": "3000 USD",
-    "price_postapoc": "100 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_shockstorm", "no_fail": true, "level": 0 }
-  },
-  {
-    "id": "scroll_spell_cleric",
-    "copy-from": "scroll_magic_base",
-    "type": "TOOL",
-    "name": { "str": "Pattern Scroll (Ward Against Evil)", "str_pl": "Pattern Scrolls (Ward Against Evil)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
-    "price": "3000 USD",
-    "price_postapoc": "90 USD",
-    "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
-    "countdown_interval": 1,
-    "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_pattern_ward_against_evil", "no_fail": true, "level": 0 }
   },
   {
     "id": "candle_warding",

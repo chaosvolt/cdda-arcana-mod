@@ -2354,5 +2354,13 @@
     "id": "mon_sloth_death_drops",
     "subtype": "collection",
     "entries": [ { "item": "shadow_gem", "prob": 25 }, { "item": "essence", "prob": 50, "count": [ 1, 3 ] } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_bound_glyph_death_drops_universal",
+    "subtype": "collection",
+    "entries": [
+      { "item": "silver_glyph" }
+    ]
   }
 ]

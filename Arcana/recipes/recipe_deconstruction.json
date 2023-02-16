@@ -786,6 +786,96 @@
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 150 ] ] ]
   },
   {
+    "result": "summon_kreck_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 30 ] ] ]
+  },
+  {
+    "result": "summon_triffid_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 30 ] ] ]
+  },
+  {
+    "result": "summon_flesh_angel_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 60 ] ] ]
+  },
+  {
+    "result": "summon_hunting_horror_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 60 ] ] ]
+  },
+  {
+    "result": "summon_dark_wyrm_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 90 ] ] ]
+  },
+  {
+    "result": "summon_mi_go_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 90 ] ] ]
+  },
+  {
+    "result": "summon_jabberwock_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": "80 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 120 ] ] ]
+  },
+  {
+    "result": "summon_flying_polyp_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": "80 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 120 ] ] ]
+  },
+  {
+    "result": "summon_yugg_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": "90 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 150 ] ] ]
+  },
+  {
+    "result": "summon_shoggoth_bound",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": "90 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 150 ] ] ]
+  },
+  {
     "result": "dimensional_warp_trap",
     "type": "uncraft",
     "skill_used": "magic",
