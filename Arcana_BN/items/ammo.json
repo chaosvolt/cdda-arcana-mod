@@ -322,7 +322,7 @@
     "//": "Likely rare to non-existent before the cataclysm.",
     "price": "0 cent",
     "price_postapoc": "15 USD",
-    "damage": { "damage_type": "heat", "amount": 60, "armor_penetration": 10 },
+    "damage": { "damage_type": "heat", "amount": 65, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
@@ -333,7 +333,7 @@
     "description": "A prepared blunderbuss shot, loaded with precious metals.  The addition of consecrated essence enhances its impact and turns each pellet into a mote of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
     "price": "0 cent",
     "price_postapoc": "1 USD",
-    "damage": { "damage_type": "heat", "amount": 75, "armor_penetration": 15 },
+    "damage": { "damage_type": "heat", "amount": 55, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   }
 ]
