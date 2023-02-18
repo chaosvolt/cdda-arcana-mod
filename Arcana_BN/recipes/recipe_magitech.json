@@ -333,7 +333,13 @@
     "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SCREW", "level": 1 } ],
     "components": [
       [ [ "distortion_amp_motor_item", 1 ] ],
-      [ [ "teleporter", 1 ], [ "portal", 1 ], [ "bio_teleport", 1 ], [ "bio_probability_travel", 1 ] ],
+      [
+        [ "teleporter", 1 ],
+        [ "portal", 1 ],
+        [ "bio_teleport", 1 ],
+        [ "bio_probability_travel", 1 ],
+        [ "dimensional_warp_trap", 1 ]
+      ],
       [ [ "shadow_gem", 1 ] ],
       [ [ "gold_small", 100 ] ],
       [ [ "silver_glyph", 1 ] ],
@@ -511,7 +517,13 @@
     "using": [ [ "soldering_standard", 25 ], [ "steel_tiny", 2 ], [ "arcana_essence_any", 9 ] ],
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
     "components": [
-      [ [ "teleporter", 1 ], [ "portal", 1 ], [ "bio_teleport", 1 ], [ "bio_probability_travel", 1 ] ],
+      [
+        [ "teleporter", 1 ],
+        [ "portal", 1 ],
+        [ "bio_teleport", 1 ],
+        [ "bio_probability_travel", 1 ],
+        [ "dimensional_warp_trap", 1 ]
+      ],
       [ [ "cable", 75 ] ],
       [ [ "directional_antenna", 1 ] ],
       [ [ "processor", 2 ] ],
