@@ -2711,10 +2711,7 @@
       },
       "toilets": { "T": {  } },
       "items": {
-        "C": [
-          { "item": "supplies_reagents_lab", "chance": 50, "repeat": 3 },
-          { "item": "lab_magitech_general", "chance": 10 }
-        ],
+        "C": [ { "item": "supplies_reagents_lab", "chance": 50, "repeat": 3 }, { "item": "lab_magitech_general", "chance": 10 } ],
         "d": { "item": "office", "chance": 75, "repeat": 2 },
         "l": [
           { "item": "tools_robotics", "chance": 25, "repeat": 3 },
