@@ -1810,7 +1810,7 @@
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
     "components": [
       [ [ "rift_focus_cannon", 1 ] ],
-      [ [ "essence_surge_generator_item", 1 ] ],
+      [ [ "distortion_amp_motor_item", 1 ] ],
       [ [ "bio_temporal_stimulation", 1 ] ],
       [ [ "sensor_module", 1 ] ],
       [ [ "memory_module", 1 ] ],
