@@ -23,28 +23,28 @@
     "id": "arcana_fuel_essence",
     "copy-from": "essencemat",
     "name": "Essence",
-    "fuel_data": { "energy": "12000 kJ" }
+    "fuel_data": { "energy": "15000 kJ" }
   },
   {
     "type": "material",
     "id": "arcana_fuel_essence_blood",
     "copy-from": "essencemat",
     "name": "Blood Essence",
-    "fuel_data": { "energy": "8000 kJ" }
+    "fuel_data": { "energy": "10000 kJ" }
   },
   {
     "type": "material",
     "id": "arcana_fuel_essence_dull",
     "copy-from": "essencemat",
     "name": "Dull Essence",
-    "fuel_data": { "energy": "4000 kJ" }
+    "fuel_data": { "energy": "5000 kJ" }
   },
   {
     "type": "material",
     "id": "arcana_fuel_essence_pure",
     "copy-from": "essencemat",
     "name": "Crystallized Essence",
-    "fuel_data": { "energy": "80000 kJ" }
+    "fuel_data": { "energy": "100000 kJ" }
   },
   {
     "type": "material",

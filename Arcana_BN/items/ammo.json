@@ -14,7 +14,7 @@
     "count": 1,
     "ammo_type": "essence_type",
     "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
-    "fuel": { "energy": 120 }
+    "fuel": { "energy": 150 }
   },
   {
     "id": "essence_blood",
@@ -30,7 +30,7 @@
     "count": 1,
     "ammo_type": "essence_blood_type",
     "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
-    "fuel": { "energy": 40 }
+    "fuel": { "energy": 50 }
   },
   {
     "id": "essence_dull",
@@ -46,7 +46,7 @@
     "count": 1,
     "ammo_type": "essence_dull_type",
     "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
-    "fuel": { "energy": 4 }
+    "fuel": { "energy": 5 }
   },
   {
     "id": "essence_pure",
