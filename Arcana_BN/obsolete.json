@@ -389,5 +389,45 @@
       "is_pet": true,
       "skills": [ "magic" ]
     }
+  },
+  {
+    "id": "arcana_item_pet_buff",
+    "type": "SPELL",
+    "name": { "str": "Familiar Pact Buff Effect" },
+    "description": "Binds friendly summoned monsters to you, making it serve as a pet if it isn't already fully tamed.",
+    "sprite": "fd_veil_light",
+    "message": "",
+    "effect": "target_attack",
+    "valid_targets": [ "ally" ],
+    "//": "Glyph monsters will already count as pets if friendly, so not subject to this.",
+    "targeted_monster_ids": [
+      "mon_dark_wyrm_summoned",
+      "mon_zombie_fiend_summoned",
+      "mon_jabberwock_summoned",
+      "mon_homunculus_summoned",
+      "mon_thing_summoned",
+      "mon_dog_skeleton_summoned",
+      "mon_skeleton_summoned",
+      "mon_vortex_summoned",
+      "mon_yugg_summoned",
+      "mon_kreck_summoned",
+      "mon_triffid_summoned",
+      "mon_flesh_angel_summoned",
+      "mon_hunting_horror_summoned",
+      "mon_mi_go_summoned",
+      "mon_flying_polyp_summoned",
+      "mon_shoggoth_summoned",
+      "mon_shadow_summoned",
+      "mon_shadow_snake_summoned",
+      "mon_centipede_giant_summoned"
+    ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "effect_str": "talisman_pet_buff",
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "base_casting_time": 5,
+    "final_casting_time": 5,
+    "min_duration": 8640000,
+    "max_duration": 8640000
   }
 ]

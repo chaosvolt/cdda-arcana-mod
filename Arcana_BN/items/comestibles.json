@@ -283,7 +283,7 @@
     "comestible_type": "MED",
     "category": "other",
     "name": { "str": "air talisman" },
-    "description": "A crude paper talisman marked with strange patterns, anointed with a pure sacrifice.  Using it will imbue any nearby summoned monster with protective energies, if they aren't hostile, granting immunity to most environmental hazards save fire.  It will also heal nearby allies, and bind transient summons to function as familiars until they vanish.  The protective effect will last a day and only affects summoned monsters, while the healing affects all allies.",
+    "description": "A crude paper talisman marked with strange patterns, anointed with a pure sacrifice.  Using it will heal any nearby ally, pet, or friendly creature near you, along with enhancing them temporarily.  Friendly NPCs and monsters alike will gain increased speed as well as immunities to various debuffs such as blindness, bleeding, or stunning; while friendly monsters/pets specfically will gain increased melee damage, accuracy, and dodge.",
     "price_postapoc": "24 USD",
     "weight": "150 g",
     "volume": "100 ml",

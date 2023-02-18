@@ -654,12 +654,17 @@
   {
     "type": "effect_type",
     "id": "talisman_pet_buff",
-    "name": [ "Warded" ],
+    "name": [ "Defender's Ward" ],
+    "desc": [
+      "Immunity to debuffs such as blindness, bleeding, stunning, etc.  Monsters (but not NPCs) additionally gain increased melee damage, accuracy, and dodge."
+    ],
     "removes_effects": [
       "bleed",
+      "blind",
       "infected",
       "bite",
       "stunned",
+      "dazed",
       "downed",
       "poison",
       "badpoison",
@@ -671,9 +676,11 @@
     ],
     "blocks_effects": [
       "bleed",
+      "blind",
       "infected",
       "bite",
       "stunned",
+      "dazed",
       "downed",
       "poison",
       "badpoison",
@@ -683,7 +690,8 @@
       "taint",
       "visuals"
     ],
-    "flags": [ "ELECTRIC_IMMUNE", "ACID_IMMUNE", "COLD_IMMUNE", "BIO_IMMUNE" ]
+    "base_mods": { "hit_mod": [ 5 ], "dodge_mod": [ 5 ], "speed_mod": [ 100 ], "bash_mod": [ 25 ] },
+    "max_duration": "100 m"
   },
   {
     "type": "effect_type",
