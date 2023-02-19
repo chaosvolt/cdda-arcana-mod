@@ -1436,6 +1436,22 @@
     "max_aoe": 6
   },
   {
+    "id": "arcana_item_red_potion_healing",
+    "type": "SPELL",
+    "name": { "str": "Elixir of Life" },
+    "description": "Minor healing, and potion effects.",
+    "message": "You drink the potion and feel a pleasant warmth spread through your body.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "effect_str": "potion_healing",
+    "min_damage": -5,
+    "max_damage": -5,
+    "effect": "attack",
+    "shape": "blast",
+    "min_duration": 90000,
+    "max_duration": 90000
+  },
+  {
     "type": "SPELL",
     "id": "arcana_item_triffid_garland_empowered",
     "name": { "str": "Verdant Boost" },
