@@ -25,7 +25,7 @@
     "id": "NAPALM_CLAW",
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 2, "radius": 2 },
-    "explosion": { "damage": 100, "fragment": { "impact": { "damage_type": "heat", "amount": 200 }, "range": 2 }, "radius": 2 }
+    "explosion": { "damage": 100, "fragment": { "impact": { "damage_type": "heat", "amount": 250 }, "range": 2 }, "radius": 2 }
   },
   {
     "id": "AMMO_DRAGONFIRE_ARCANA",
