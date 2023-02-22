@@ -5,14 +5,14 @@
     "sub": "triffid_garland",
     "type": "TOOL_ARMOR",
     "name": { "str": "verdant triffid garland" },
-    "description": "A wreath of brightly-colored flowers from another world, worn around the neck.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will grant a burst of renewed stamina, recovering pain and speeding up the body's natural healing.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 20 hours to charge.",
+    "description": "A wreath of brightly-colored flowers from another world, worn around the neck.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will grant a burst of renewed stamina, recovering pain and speeding up the body's natural healing.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 25 hours to charge.",
     "price_postapoc": "12 USD",
-    "charges_per_use": 20,
+    "charges_per_use": 25,
     "ammo": "primitive_magic_item_ammo_type",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 100 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 125 } } ],
     "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
-    "//": "Water talisman and earth talisman.  Each use has power equivalent to 200 mana.",
+    "//": "Water talisman and earth talisman.  Each use has power equivalent to 250 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_triffid_garland_empowered", "no_fail": true, "level": 0 }
   },
   {
@@ -23,12 +23,12 @@
     "name": { "str": "shrouded exotic amulet" },
     "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you invisible (but not inaudible) to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
     "price_postapoc": "15 USD",
-    "charges_per_use": 28,
+    "charges_per_use": 35,
     "ammo": "primitive_magic_item_ammo_type",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 168 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 175 } } ],
     "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
-    "//": "Flame talisman and air talisman.  Each use has power equivalent to 280 mana.",
+    "//": "Flame talisman and air talisman.  Each use has power equivalent to 350 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_amulet_exotic_empowered", "no_fail": true, "level": 0 }
   },
   {
@@ -37,14 +37,14 @@
     "sub": "brooch_iridescent",
     "type": "TOOL_ARMOR",
     "name": { "str": "bolstered iridescent brooch" },
-    "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will double any armor or damage resistance you have.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 36 hours to charge.",
+    "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will double any armor or damage resistance you have.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 45 hours to charge.",
     "price_postapoc": "20 USD",
-    "charges_per_use": 36,
+    "charges_per_use": 45,
     "ammo": "primitive_magic_item_ammo_type",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 216 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 225 } } ],
     "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
-    "//": "Earth talisman and air talisman.  Each use has power equivalent to 360 mana.",
+    "//": "Earth talisman and air talisman.  Each use has power equivalent to 450 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_brooch_iridescent_empowered", "no_fail": true, "level": 0 }
   },
   {
@@ -996,7 +996,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-	"armor": [
+    "armor": [
       {
         "encumbrance": 0,
         "coverage": 0,
