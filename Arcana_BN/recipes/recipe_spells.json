@@ -11,9 +11,9 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
-    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "dermatik_sting", 1 ] ] ],
+    "components": [ [ [ "dermatik_sting", 1 ] ], [ [ "essence_blood", 1 ], [ "essence_dull", 10 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
   {
@@ -28,9 +28,9 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
-    "using": [ [ "filament", 5 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "filament", 5 ], [ "arcana_purification_standard", 1 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [ [ [ "inflorescent_root", 1 ] ] ],
+    "components": [ [ [ "inflorescent_root", 1 ] ], [ [ "essence_blood", 1 ], [ "essence_dull", 10 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
   {
@@ -45,8 +45,8 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
-    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_soaking_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "components": [ [ [ "monster_tear", 1 ] ] ],
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_soaking_standard", 1 ] ],
+    "components": [ [ [ "monster_tear", 1 ] ], [ [ "essence_blood", 1 ], [ "essence_dull", 10 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
   {
@@ -61,9 +61,9 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 1 ] ],
-    "using": [ [ "filament", 5 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "filament", 5 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [ [ [ "triffid_queen_flower", 1 ] ] ],
+    "components": [ [ [ "triffid_queen_flower", 1 ] ], [ [ "essence_blood", 1 ], [ "essence_dull", 10 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
   {
@@ -78,9 +78,9 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
-    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "wyrmskin_piece", 1 ] ] ],
+    "components": [ [ [ "wyrmskin_piece", 1 ] ], [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
   {
@@ -95,9 +95,9 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
-    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_polishing_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "gracken_knuckles", 1 ] ] ],
+    "components": [ [ [ "gracken_knuckles", 1 ] ], [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
   {
@@ -112,9 +112,9 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
-    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "iron_thorn", 1 ] ] ],
+    "components": [ [ [ "iron_thorn", 1 ] ], [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -130,9 +130,9 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ] ],
-    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "blob_gem", 1 ] ] ],
+    "components": [ [ [ "blob_gem", 1 ] ], [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -148,7 +148,7 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
-    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "iridescent_plate", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
@@ -165,7 +165,7 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
-    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "components": [ [ [ "vortex_shard", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
@@ -181,7 +181,7 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
-    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "monster_fang", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
@@ -198,7 +198,7 @@
     "time": "10 m",
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 3 ] ],
-    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "components": [ [ [ "engraved_stone", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
@@ -389,7 +389,7 @@
     "time": "20 m",
     "book_learn": [ [ "book_hexenhammer", 7 ] ],
     "autolearn": [ [ "magic", 8 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "components": [ [ [ "totem_flamearmor", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
@@ -404,7 +404,7 @@
     "time": "20 m",
     "book_learn": [ [ "book_sacrifice", 7 ] ],
     "autolearn": [ [ "magic", 8 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "components": [ [ [ "totem_lightning", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
@@ -419,7 +419,7 @@
     "time": "20 m",
     "book_learn": [ [ "book_sacrifice", 7 ] ],
     "autolearn": [ [ "magic", 8 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "components": [ [ [ "totem_strength", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
@@ -434,7 +434,7 @@
     "time": "20 m",
     "book_learn": [ [ "book_hexenhammer", 7 ] ],
     "autolearn": [ [ "magic", 8 ] ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 3 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
     "components": [ [ [ "totem_cleric", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]

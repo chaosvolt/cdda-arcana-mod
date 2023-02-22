@@ -14,7 +14,7 @@
     "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
-      [ [ "essence_dull", 25 ] ],
+      [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ],
       [ [ "salt", 5 ] ],
       [ [ "copper", 3 ] ],
       [ [ "lye_powder", 2 ] ],
@@ -32,11 +32,10 @@
     "difficulty": 4,
     "time": "1 h",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 3 ], [ "surface_heat", 6 ] ],
+    "using": [ [ "blacksmithing_standard", 3 ], [ "surface_heat", 6 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
-      [ [ "essence_dull", 75 ] ],
       [ [ "salt", 15 ] ],
       [ [ "copper", 9 ] ],
       [ [ "lye_powder", 6 ] ],
@@ -54,11 +53,10 @@
     "difficulty": 4,
     "time": "1 h 20 m",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 12 ], [ "surface_heat", 24 ] ],
+    "using": [ [ "blacksmithing_standard", 12 ], [ "surface_heat", 24 ], [ "arcana_essence_any", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
-      [ [ "essence_dull", 300 ] ],
       [ [ "salt", 60 ] ],
       [ [ "copper", 36 ] ],
       [ [ "lye_powder", 24 ] ],
@@ -80,7 +78,7 @@
     "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
-      [ [ "essence_dull", 625 ] ],
+      [ [ "essence_blood", 50 ], [ "essence_dull", 500 ] ],
       [ [ "salt", 125 ] ],
       [ [ "copper", 75 ] ],
       [ [ "lye_powder", 50 ] ],
