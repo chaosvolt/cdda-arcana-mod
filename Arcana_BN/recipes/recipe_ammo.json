@@ -63,7 +63,12 @@
         [ "wyrmskin_piece", 1 ],
         [ "monster_fang", 1 ],
         [ "iridescent_plate", 1 ],
-        [ "engraved_stone", 1 ]
+        [ "engraved_stone", 1 ],
+        [ "stinger_flute", 1 ],
+        [ "charm_bone", 1 ],
+        [ "triffid_garland", 1 ],
+        [ "amulet_exotic", 1 ],
+        [ "brooch_iridescent", 1 ]
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
