@@ -34,6 +34,42 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
+    "result": "essence_dull",
+    "type": "recipe",
+    "id_suffix": "from monsterpart",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_AMMO",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "time": "10 m",
+    "batch_time_factors": [ 95, 5 ],
+    "autolearn": true,
+    "book_learn": [ [ "book_hexenhammer", 0 ], [ "book_syncretism", 1 ], [ "book_potioncraft", 1 ] ],
+    "result_mult": 20,
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [
+      [
+        [ "iron_thorn", 1 ],
+        [ "inflorescent_root", 1 ],
+        [ "graboid_fang", 1 ],
+        [ "triffid_queen_flower", 1 ],
+        [ "dermatik_sting", 1 ],
+        [ "vortex_shard", 1 ],
+        [ "blob_gem", 1 ],
+        [ "monster_tear", 1 ],
+        [ "shadow_gem", 1 ],
+        [ "bone_twisted", 1 ],
+        [ "gracken_knuckles", 1 ],
+        [ "wyrmskin_piece", 1 ],
+        [ "monster_fang", 1 ],
+        [ "iridescent_plate", 1 ],
+        [ "engraved_stone", 1 ]
+      ]
+    ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
     "result": "essence_blood",
     "type": "recipe",
     "id_suffix": "human sacrifice",
@@ -130,22 +166,7 @@
         [ "acidchitin_piece", 100 ],
         [ "stick_fiber", 200 ],
         [ "alien_pod_resin", 1 ],
-        [ "royal_jelly", 1 ],
-        [ "iron_thorn", 1 ],
-        [ "inflorescent_root", 1 ],
-        [ "graboid_fang", 1 ],
-        [ "triffid_queen_flower", 1 ],
-        [ "dermatik_sting", 1 ],
-        [ "vortex_shard", 1 ],
-        [ "blob_gem", 1 ],
-        [ "monster_tear", 1 ],
-        [ "shadow_gem", 1 ],
-        [ "bone_twisted", 1 ],
-        [ "gracken_knuckles", 1 ],
-        [ "wyrmskin_piece", 1 ],
-        [ "monster_fang", 1 ],
-        [ "iridescent_plate", 1 ],
-        [ "engraved_stone", 1 ]
+        [ "royal_jelly", 1 ]
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],

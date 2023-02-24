@@ -873,7 +873,7 @@
     "difficulty": 1,
     "time": "10 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -883,7 +883,7 @@
     "difficulty": 1,
     "time": "10 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -893,7 +893,7 @@
     "difficulty": 1,
     "time": "10 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -903,7 +903,7 @@
     "difficulty": 1,
     "time": "10 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -913,7 +913,7 @@
     "difficulty": 2,
     "time": "20 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -923,7 +923,7 @@
     "difficulty": 2,
     "time": "20 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -933,7 +933,7 @@
     "difficulty": 2,
     "time": "20 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -943,7 +943,7 @@
     "difficulty": 2,
     "time": "20 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -953,7 +953,7 @@
     "difficulty": 3,
     "time": "30 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -963,17 +963,7 @@
     "difficulty": 3,
     "time": "30 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "totem_invis",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 3,
-    "time": "30 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -983,7 +973,7 @@
     "difficulty": 3,
     "time": "30 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -992,6 +982,16 @@
     "skill_used": "magic",
     "difficulty": 3,
     "time": "30 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_invis",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 80 ] ] ],
     "flags": [ "BLIND_EASY" ]
@@ -1024,7 +1024,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1035,7 +1035,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1046,7 +1046,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1057,7 +1057,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1068,7 +1068,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1079,7 +1079,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1090,7 +1090,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1101,7 +1101,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1112,7 +1112,7 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1123,18 +1123,7 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "scroll_spell_invis",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 6,
-    "time": "60 m",
-    "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1145,7 +1134,7 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1156,7 +1145,18 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_invis",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1167,7 +1167,7 @@
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1178,7 +1178,7 @@
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {

@@ -1025,7 +1025,7 @@
     "time": "10 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1036,7 +1036,7 @@
     "time": "10 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1047,7 +1047,7 @@
     "time": "10 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1058,7 +1058,7 @@
     "time": "10 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1069,7 +1069,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1080,7 +1080,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1091,7 +1091,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1102,7 +1102,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1113,7 +1113,7 @@
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1124,18 +1124,7 @@
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "totem_invis",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 3,
-    "time": "30 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1146,7 +1135,7 @@
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1155,6 +1144,17 @@
     "skill_used": "magic",
     "difficulty": 3,
     "time": "30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 50 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "totem_invis",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 80 ] ] ],
@@ -1191,7 +1191,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1203,7 +1203,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1215,7 +1215,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1227,7 +1227,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1239,7 +1239,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1251,7 +1251,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1263,7 +1263,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1275,7 +1275,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1287,7 +1287,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1299,19 +1299,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
-    "flags": [ "BLIND_EASY" ]
-  },
-  {
-    "result": "scroll_spell_invis",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 6,
-    "time": "60 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1323,7 +1311,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1335,7 +1323,19 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "scroll_spell_invis",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "70 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1347,7 +1347,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1359,7 +1359,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
