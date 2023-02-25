@@ -64,8 +64,8 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "halo_brooch_effect",
     "extra_effects": [ { "id": "arcana_item_brooch_iridescent_empowered_fatigue", "hit_self": true } ],
-    "min_duration": 154800,
-    "max_duration": 154800
+    "min_duration": 198000,
+    "max_duration": 198000
   },
   {
     "id": "arcana_item_brooch_iridescent_empowered_fatigue",
@@ -75,8 +75,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -15,
-    "max_damage": -15,
+    "min_damage": -18,
+    "max_damage": -18,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "FATIGUE"
@@ -163,8 +163,8 @@
     "effect": "attack",
     "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
-    "min_damage": 49,
-    "max_damage": 49,
+    "min_damage": 65,
+    "max_damage": 65,
     "damage_type": "heat",
     "min_aoe": 8,
     "max_aoe": 8
@@ -179,8 +179,8 @@
     "effect": "attack",
     "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
-    "min_damage": 49,
-    "max_damage": 49,
+    "min_damage": 65,
+    "max_damage": 65,
     "damage_type": "heat",
     "min_aoe": 2,
     "max_aoe": 2
@@ -195,8 +195,8 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect": "mod_moves",
     "shape": "blast",
-    "min_damage": -980,
-    "max_damage": -980,
+    "min_damage": -1300,
+    "max_damage": -1300,
     "min_aoe": 8,
     "max_aoe": 8
   },
@@ -208,8 +208,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -10,
-    "max_damage": -10,
+    "min_damage": -8,
+    "max_damage": -8,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "FATIGUE"
@@ -218,7 +218,7 @@
     "id": "arcana_item_coalescent_conversion",
     "type": "SPELL",
     "name": { "str": "Coalescent Conversion" },
-    "description": "This exists to make magic scrolls leave a blank scroll when used up, obsoleting the previous hack of making the item transform to exploit revert_to.",
+    "description": "This creates one crystallized essence, plus side effects.",
     "valid_targets": [ "self" ],
     "message": "The air wavers as sparks leap from the device, a thunderclap resounding as energy is pulled from the fabric of reality, solidifying into a crystalline sliver.\nGlowing white-hot for the first split-second of its existence, the thin shard of condensed essence rapidly cools down to something safe to handle.",
     "flags": [ "PERMANENT", "NO_HANDS", "NO_LEGS" ],
@@ -473,8 +473,8 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "halo_amulet_effect",
     "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_fatigue", "hit_self": true } ],
-    "min_duration": 349200,
-    "max_duration": 349200
+    "min_duration": 450000,
+    "max_duration": 450000
   },
   {
     "id": "arcana_item_amulet_exotic_empowered_fatigue",
@@ -484,8 +484,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -12,
-    "max_damage": -12,
+    "min_damage": -14,
+    "max_damage": -14,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "FATIGUE"
@@ -512,8 +512,8 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "extra_effects": [ { "id": "arcana_item_gilded_aegis_pain", "hit_self": true } ],
     "effect_str": "arcana_aegis_mending",
-    "min_damage": -8,
-    "max_damage": -12,
+    "min_damage": -10,
+    "max_damage": -20,
     "effect": "attack",
     "shape": "blast",
     "min_duration": 100,
@@ -527,8 +527,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -12,
-    "max_damage": -12,
+    "min_damage": -15,
+    "max_damage": -15,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "PAIN"
@@ -590,11 +590,11 @@
     ],
     "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "dazed",
-    "min_damage": 6,
-    "max_damage": 12,
+    "min_damage": 9,
+    "max_damage": 18,
     "min_aoe": 6,
     "max_aoe": 6,
-    "min_duration": 200,
+    "min_duration": 300,
     "max_duration": 600,
     "damage_type": "heat"
   },
@@ -610,7 +610,7 @@
     "flags": [ "RANDOM_DURATION", "NO_HANDS", "NO_LEGS", "SILENT" ],
     "min_aoe": 6,
     "max_aoe": 6,
-    "min_duration": 200,
+    "min_duration": 300,
     "max_duration": 600,
     "field_id": "fd_dazzling",
     "field_chance": 1,
@@ -649,11 +649,11 @@
     "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "dazed",
     "min_damage": 15,
-    "max_damage": 30,
+    "max_damage": 25,
     "min_aoe": 6,
     "max_aoe": 6,
-    "min_duration": 600,
-    "max_duration": 1800,
+    "min_duration": 1000,
+    "max_duration": 2000,
     "damage_type": "heat"
   },
   {
@@ -694,7 +694,7 @@
     ],
     "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS", "SILENT" ],
     "min_damage": 15,
-    "max_damage": 30,
+    "max_damage": 25,
     "min_aoe": 6,
     "max_aoe": 6,
     "damage_type": "heat"
@@ -709,8 +709,8 @@
     "shape": "blast",
     "valid_targets": [ "ally", "hostile", "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
-    "min_damage": 15,
-    "max_damage": 25,
+    "min_damage": 30,
+    "max_damage": 50,
     "damage_type": "heat",
     "min_range": 5,
     "max_range": 5,
@@ -733,8 +733,8 @@
     "shape": "blast",
     "effect_str": "STAMINA",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": 6000,
-    "max_damage": 6000
+    "min_damage": 3000,
+    "max_damage": 3000
   },
   {
     "type": "SPELL",
@@ -747,8 +747,8 @@
     "shape": "blast",
     "effect_str": "FATIGUE",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": 60,
-    "max_damage": 60
+    "min_damage": 30,
+    "max_damage": 30
   },
   {
     "id": "arcana_item_jade_hauberk_healing",
@@ -763,8 +763,8 @@
       { "id": "arcana_item_jade_hauberk_pain", "hit_self": true }
     ],
     "effect_str": "arcana_aegis_mending",
-    "min_damage": -4,
-    "max_damage": -6,
+    "min_damage": -5,
+    "max_damage": -10,
     "effect": "attack",
     "shape": "blast",
     "min_duration": 100,
@@ -778,8 +778,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -6,
-    "max_damage": -6,
+    "min_damage": -15,
+    "max_damage": -15,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "FATIGUE"
@@ -791,9 +791,9 @@
     "description": "Still stings a bit.",
     "valid_targets": [ "self" ],
     "message": "",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -6,
-    "max_damage": -6,
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "min_damage": -7,
+    "max_damage": -8,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "PAIN"
@@ -816,10 +816,10 @@
     "max_range": 3,
     "effect": "attack",
     "shape": "blast",
-    "min_duration": 800,
-    "max_duration": 1200,
-    "min_damage": 30,
-    "max_damage": 50,
+    "min_duration": 400,
+    "max_duration": 600,
+    "min_damage": 40,
+    "max_damage": 60,
     "damage_type": "biological",
     "field_id": "fd_gibs_flesh",
     "field_chance": 1,
@@ -838,8 +838,8 @@
     "max_range": 3,
     "effect": "mod_moves",
     "shape": "blast",
-    "min_damage": -300,
-    "max_damage": -500
+    "min_damage": -400,
+    "max_damage": -600
   },
   {
     "id": "arcana_item_lichhook_poison",
@@ -854,8 +854,8 @@
     "max_range": 3,
     "effect": "attack",
     "shape": "blast",
-    "min_duration": 1200,
-    "max_duration": 1200
+    "min_duration": 1500,
+    "max_duration": 1500
   },
   {
     "id": "arcana_item_lichhook_slow",
@@ -870,19 +870,19 @@
     "max_range": 3,
     "effect": "attack",
     "shape": "blast",
-    "min_duration": 1200,
-    "max_duration": 1200
+    "min_duration": 1500,
+    "max_duration": 1500
   },
   {
     "id": "arcana_item_mana_potion",
     "type": "SPELL",
     "name": { "str": "Mana Boost" },
-    "description": "Restores 600 mana.",
+    "description": "Restores 750 mana.",
     "valid_targets": [ "self" ],
     "message": "You drink the potion and feel magical energy flowing through you.",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": 600,
-    "max_damage": 600,
+    "min_damage": 750,
+    "max_damage": 750,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "MANA"
@@ -991,14 +991,14 @@
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "IGNORE_WALLS", "NO_PROJECTILE", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "blind",
-    "min_damage": 50,
-    "max_damage": 70,
+    "min_damage": 100,
+    "max_damage": 110,
     "min_aoe": 9,
     "max_aoe": 9,
     "min_range": 50,
     "max_range": 50,
-    "min_duration": 1600,
-    "max_duration": 2000,
+    "min_duration": 6000,
+    "max_duration": 6500,
     "damage_type": "electric",
     "field_id": "fd_electricity",
     "field_chance": 3,
@@ -1015,8 +1015,8 @@
     "shape": "blast",
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "IGNORE_WALLS", "NO_PROJECTILE", "RANDOM_DAMAGE", "SILENT" ],
-    "min_damage": 50,
-    "max_damage": 70,
+    "min_damage": 100,
+    "max_damage": 110,
     "damage_type": "electric",
     "min_aoe": 1,
     "max_aoe": 1,
@@ -1033,8 +1033,8 @@
     "flags": [ "SILENT", "IGNORE_WALLS", "NO_PROJECTILE", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
     "effect": "bash",
     "shape": "blast",
-    "min_damage": 50,
-    "max_damage": 70,
+    "min_damage": 100,
+    "max_damage": 110,
     "min_aoe": 9,
     "max_aoe": 9,
     "min_range": 50,
@@ -1052,8 +1052,8 @@
     "sound_id": "misc",
     "sound_variant": "shockwave",
     "flags": [ "RANDOM_DAMAGE" ],
-    "min_damage": 50,
-    "max_damage": 70,
+    "min_damage": 100,
+    "max_damage": 110,
     "min_range": 50,
     "max_range": 50,
     "valid_targets": [ "ground" ],
@@ -1105,8 +1105,8 @@
     "effect": "attack",
     "shape": "blast",
     "effect_str": "spell_revelation",
-    "min_duration": 720000,
-    "max_duration": 720000
+    "min_duration": 2160000,
+    "max_duration": 2160000
   },
   {
     "id": "arcana_item_orb_veil_attention",
@@ -1181,11 +1181,27 @@
     "message": "Wisps of enervating essence accompany the visions, seeming far more real than the hallucinations…",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
-    "effect": "attack",
+    "extra_effects": [ { "id": "arcana_item_orb_veil_wonder_citrine2" } ],
+    "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "potion_incense",
-    "min_duration": 30000,
-    "max_duration": 90000
+    "effect_str": "STAMINA",
+    "min_damage": 3000,
+    "max_damage": 9000
+  },
+  {
+    "id": "arcana_item_orb_veil_wonder_citrine2",
+    "type": "SPELL",
+    "name": { "str": "Orb: Incense 2" },
+    "description": "And this adds fatigue restoaration.",
+    "sprite": "fd_veil_light",
+    "message": "",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
+    "effect": "recover_energy",
+    "shape": "blast",
+    "effect_str": "FATIGUE",
+    "min_damage": 30,
+    "max_damage": 90
   },
   {
     "id": "arcana_item_orb_veil_wonder_hallu",
@@ -1397,8 +1413,8 @@
     "max_damage": 3,
     "min_aoe": 3,
     "max_aoe": 3,
-    "min_duration": 240000,
-    "max_duration": 240000
+    "min_duration": 540000,
+    "max_duration": 540000
   },
   {
     "id": "arcana_item_pestilence_stun",
@@ -1412,12 +1428,12 @@
     "message": "",
     "effect_str": "stunned",
     "damage_type": "cold",
-    "min_damage": 20,
-    "max_damage": 40,
+    "min_damage": 30,
+    "max_damage": 60,
     "min_aoe": 3,
     "max_aoe": 3,
-    "min_duration": 1600,
-    "max_duration": 2000
+    "min_duration": 2400,
+    "max_duration": 3000
   },
   {
     "id": "arcana_item_pestilence_aftereffect",
@@ -1445,7 +1461,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "effect_str": "potion_healing",
     "min_damage": -5,
-    "max_damage": -5,
+    "max_damage": -10,
     "effect": "attack",
     "shape": "blast",
     "min_duration": 90000,
@@ -1463,8 +1479,8 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "triffid_garland_buff",
     "extra_effects": [ { "id": "arcana_item_triffid_garland_empowered_fatigue", "hit_self": true } ],
-    "min_duration": 234000,
-    "max_duration": 234000
+    "min_duration": 306000,
+    "max_duration": 306000
   },
   {
     "id": "arcana_item_triffid_garland_empowered_fatigue",
@@ -1474,12 +1490,20 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -8,
-    "max_damage": -8,
+    "min_damage": -10,
+    "max_damage": -10,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "FATIGUE"
   },
+
+
+
+
+
+
+
+
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_artifice",

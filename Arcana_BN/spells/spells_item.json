@@ -1107,8 +1107,8 @@
     "extra_effects": [ { "id": "arcana_item_orb_veil_wonder_citrine2" } ],
     "effect": "recover_energy",
     "effect_str": "STAMINA",
-    "min_duration": 3000,
-    "max_duration": 9000
+    "min_damage": 3000,
+    "max_damage": 9000
   },
   {
     "id": "arcana_item_orb_veil_wonder_citrine2",
@@ -1121,8 +1121,8 @@
     "flags": [ "SILENT", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
     "effect": "recover_energy",
     "effect_str": "FATIGUE",
-    "min_duration": 30,
-    "max_duration": 90
+    "min_damage": 30,
+    "max_damage": 90
   },
   {
     "id": "arcana_item_orb_veil_wonder_hallu",
@@ -1353,8 +1353,8 @@
     "max_damage": 60,
     "min_aoe": 3,
     "max_aoe": 3,
-    "min_duration": 1600,
-    "max_duration": 2000
+    "min_duration": 2400,
+    "max_duration": 3000
   },
   {
     "id": "arcana_item_pestilence_aftereffect",
@@ -1388,14 +1388,6 @@
     "min_duration": 90000,
     "max_duration": 90000
   },
-
-
-
-
-
-
-
-
   {
     "type": "SPELL",
     "id": "arcana_item_triffid_garland_empowered",
@@ -1408,8 +1400,8 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "triffid_garland_buff",
     "extra_effects": [ { "id": "arcana_item_triffid_garland_empowered_fatigue", "hit_self": true } ],
-    "min_duration": 234000,
-    "max_duration": 234000
+    "min_duration": 306000,
+    "max_duration": 306000
   },
   {
     "id": "arcana_item_triffid_garland_empowered_fatigue",
@@ -1420,11 +1412,20 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -8,
-    "max_damage": -8,
+    "min_damage": -10,
+    "max_damage": -10,
     "effect": "recover_energy",
     "effect_str": "FATIGUE"
   },
+
+
+
+
+
+
+
+
+
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_artifice",
