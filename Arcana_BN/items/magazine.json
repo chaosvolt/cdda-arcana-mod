@@ -13,9 +13,9 @@
     "symbol": "=",
     "color": "light_cyan",
     "ammo_type": [ "battery" ],
-    "//": "Ten crystallized essence at 1200 kJ each, essence surge generator doubles output, distortion amp doubles output again, temporal stimulation effectively halves consumption.",
-    "count": 96000,
-    "capacity": 96000,
+    "//": "Ten crystallized essence at 1500 kJ each, essence surge generator doubles output, distortion amp doubles output again, temporal stimulation effectively halves consumption.",
+    "count": 120000,
+    "capacity": 120000,
     "looks_like": "battery",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "MECH_BAT" ]
   }

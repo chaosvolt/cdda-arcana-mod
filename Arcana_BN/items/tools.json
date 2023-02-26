@@ -96,13 +96,13 @@
     "type": "TOOL",
     "category": "tools",
     "name": { "str": "sanctified bone charm" },
-    "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any creatures within 8 tiles, including allies if you're not careful.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 16 hours to charge.",
+    "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any creatures within 8 tiles, including allies if you're not careful.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 20 hours to charge.",
     "price_postapoc": "20 USD",
-    "max_charges": 80,
-    "charges_per_use": 16,
+    "max_charges": 10,
+    "charges_per_use": 20,
     "flags": [ "MAGIC_FOCUS" ],
     "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
-    "//": "Flame talisman and earth talisman.  Each use has power equivalent to 160 mana.",
+    "//": "Flame talisman and earth talisman.  Each use has power equivalent to 200 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_charm_bone_empowered", "no_fail": true, "level": 0 }
   },
   {
@@ -112,13 +112,13 @@
     "type": "TOOL",
     "category": "tools",
     "name": { "str": "quickened stinger flute" },
-    "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will greatly reduce movecosts and enhance evasion.  Stamina and attack speed are unaffected, however.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 32 hours to charge.",
+    "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will greatly reduce movecosts and enhance evasion.  Stamina and attack speed are unaffected, however.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 40 hours to charge.",
     "price_postapoc": "25 USD",
-    "max_charges": 160,
-    "charges_per_use": 32,
+    "max_charges": 200,
+    "charges_per_use": 40,
     "flags": [ "MAGIC_FOCUS" ],
     "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
-    "//": "Water talisman and air talisman.  Each use has power equivalent to 320 mana.",
+    "//": "Water talisman and air talisman.  Each use has power equivalent to 400 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_stinger_flute_empowered", "no_fail": true, "level": 0 }
   },
   {
@@ -242,30 +242,14 @@
     "category": "weapons",
     "copy-from": "warhammer",
     "name": { "str": "hammer of the hunter", "str_pl": "hammers of the hunter" },
-    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  It can be used to channel consecrated essence into a stunning flash, or place a rune that will release its stunning effect if something steps into it.  Though using it is a double-edged sword, it will have further effects on creatures of darkness.",
+    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  It can be used to channel consecrated essence into a stunning flash.  Though using it is a double-edged sword, it will have further effects on creatures of darkness.",
     "price": "800 USD",
     "price_postapoc": "45 USD",
     "material": [ "iron", "silver", "wood" ],
     "max_charges": 3,
     "charges_per_use": 3,
     "ammo": "essence_dull_type",
-    "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_hexenhammer",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
-      },
-      {
-        "type": "cast_spell",
-        "spell_id": "arcana_item_hammerzeit",
-        "no_fail": true,
-        "need_wielding": true,
-        "level": 0
-      }
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_hammerzeit", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "relative": { "weight": "360 g", "bashing": 2 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
@@ -276,7 +260,7 @@
     "category": "weapons",
     "copy-from": "lucern_hammer",
     "name": { "str": "luminous hammer" },
-    "description": "A mighty lucerne hammer, decorated with archaic Latin engravings and silver counterbalancing to make it more usable at close range.  Many magical items can be purified with this item.  Activating it can be used to create a powerful flash, capable of searing anyone in range.  Though the user will not take damage from it, they will still be blinded if lacking protection.  It could also be used to deploy a rune with a weaker stunning effect on whatever steps on it.",
+    "description": "A mighty lucerne hammer, decorated with archaic Latin engravings and silver counterbalancing to make it more usable at close range.  Many magical items can be purified with this item.  Activating it can be used to create a powerful flash, capable of searing anyone in range.  Though the user will not take damage from it, they will still be blinded if lacking protection.",
     "price": "1200 USD",
     "price_postapoc": "120 USD",
     "material": [ "wood", "steel", "silver" ],
@@ -284,14 +268,6 @@
     "charges_per_use": 10,
     "ammo": "essence_dull_type",
     "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_hexenhammer",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
-      },
       {
         "type": "cast_spell",
         "spell_id": "arcana_item_hammerzeit_greater",
@@ -311,7 +287,7 @@
     "copy-from": "spear_steel",
     "category": "weapons",
     "name": { "str": "spear of pestilence", "str_pl": "spears of pestilence" },
-    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will blast nearby enemies with frost and temporarily summon mutant vermin to aid you, while wielding it makes movement easier.  It can also be used to place a rune focused purely on summoning vermin when something steps on it.",
+    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will blast nearby enemies with frost and temporarily summon mutant vermin to aid you, while wielding it makes movement easier.",
     "price": "1200 USD",
     "price_postapoc": "35 USD",
     "material": [ "steel", "wood", "chitin" ],
@@ -335,23 +311,7 @@
         }
       ]
     },
-    "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_spear_pestilence",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the spear's energy into a spell trap, waiting to be unleashed."
-      },
-      {
-        "type": "cast_spell",
-        "spell_id": "arcana_item_pestilence",
-        "no_fail": true,
-        "need_wielding": true,
-        "level": 0
-      }
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "relative": { "weight": 540, "bashing": 2 },
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
   },
@@ -396,7 +356,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "fragment": { "impact": { "damage_type": "heat", "amount": 80 }, "range": 1 } }
+      "explosion": { "fragment": { "impact": { "damage_type": "heat", "amount": 100 }, "range": 1 } }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -436,12 +396,12 @@
     "use_action": {
       "type": "explosion",
       "draw_explosion_radius": 1,
-      "fields_type": "fd_fog",
+      "fields_type": "fd_fog_arcana",
       "fields_radius": 1,
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "fragment": { "impact": { "damage_type": "cold", "amount": 100 }, "range": 1 } }
+      "explosion": { "fragment": { "impact": { "damage_type": "cold", "amount": 125 }, "range": 1 } }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -486,7 +446,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "fragment": { "impact": { "damage_type": "acid", "amount": 120 }, "range": 1 } }
+      "explosion": { "fragment": { "impact": { "damage_type": "acid", "amount": 150 }, "range": 1 } }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -531,7 +491,7 @@
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
-      "explosion": { "fragment": { "impact": { "damage_type": "electric", "amount": 180 }, "range": 1 } }
+      "explosion": { "fragment": { "impact": { "damage_type": "electric", "amount": 225 }, "range": 1 } }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
   },
@@ -909,12 +869,12 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "veinreaver" },
-    "description": "A hatchet with its axehead lightened a bit, stained the dull color of dried blood.  Using it will channel blood essence into a nasty explosion, with a considerable blast radius.  It will give you little time to escape, to use it wisely.",
+    "description": "A hatchet with its axehead lightened a bit, stained the dull color of dried blood.  Using it will channel blood essence into a nasty explosion, with a considerable blast radius.",
     "price": "400 USD",
     "price_postapoc": "60 USD",
     "symbol": ";",
     "color": "brown",
-    "max_charges": 3,
+    "max_charges": 5,
     "ammo": "essence_blood_type",
     "weight": "707 g",
     "volume": "750 ml",
@@ -923,8 +883,8 @@
       {
         "target": "bloodaxe_act",
         "msg": "You draw upon the axe's energy, and the axehead glows a bright red!",
-        "need_charges": 3,
-        "need_charges_msg": "The axe requires 3 blood essence to invoke this power.",
+        "need_charges": 5,
+        "need_charges_msg": "The axe requires 5 blood essence to invoke this power.",
         "active": true,
         "need_wielding": true,
         "menu_text": "Activate explosive rune",
@@ -947,12 +907,12 @@
     "bashing": 15,
     "cutting": 28,
     "to_hit": -2,
-    "thrown_damage": [ { "damage_type": "cold", "amount": 20 } ],
+    "thrown_damage": [ { "damage_type": "cold", "amount": 35 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
     "looks_like": "hatchet",
     "color": "brown",
-    "max_charges": 3,
+    "max_charges": 5,
     "turns_per_charge": 1,
     "ammo": "essence_blood_type",
     "revert_to": "bloodaxe",
@@ -965,7 +925,7 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "damage": 100, "radius": 3 }
+      "explosion": { "damage": 125, "radius": 3 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },
@@ -1021,7 +981,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "lichhook" },
-    "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.  It can also place a rune that will trigger the same effect over a small area when something steps into it.",
+    "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.",
     "price": "720 USD",
     "price_postapoc": "45 USD",
     "bashing": 9,
@@ -1030,17 +990,7 @@
     "charges_per_use": 2,
     "ammo": "essence_blood_type",
     "relative": { "weight": 230 },
-    "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_lichhook",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the lichhook's energy into a spell trap, waiting to be unleashed."
-      },
-      { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 }
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ] }
   },
   {
@@ -1259,19 +1209,17 @@
     "price": "8500 USD",
     "price_postapoc": "80 USD",
     "ammo": [ "battery" ],
-    "charges_per_use": 2400,
+    "charges_per_use": 3000,
     "magazines": [
       [
         "battery",
         [
-          "medium_atomic_battery_cell",
-          "heavy_atomic_battery_cell",
-          "heavy_disposable_cell",
-          "huge_atomic_battery_cell",
-          "battery_car",
           "medium_storage_battery",
           "storage_battery",
-          "large_storage_battery"
+          "large_storage_battery",
+          "medium_atomic_battery_cell",
+          "heavy_atomic_battery_cell",
+          "huge_atomic_battery_cell"
         ]
       ]
     ],
@@ -1375,7 +1323,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "meteoric verge" },
-    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.  It can also be used to place a rune that will blast an area with lightning if something steps on it.",
+    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.",
     "weight": "1585 g",
     "to_hit": 1,
     "volume": "2500 ml",
@@ -1407,14 +1355,6 @@
       ]
     },
     "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_lightning",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the verge's energy into a spell trap, waiting to be unleashed."
-      },
       {
         "type": "cast_spell",
         "spell_id": "arcana_item_meteoric_verge_bolt",
