@@ -242,30 +242,14 @@
     "category": "weapons",
     "copy-from": "warhammer",
     "name": { "str": "hammer of the hunter", "str_pl": "hammers of the hunter" },
-    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  It can be used to channel consecrated essence into a stunning flash, or place a rune that will release its stunning effect if something steps into it.  Though using it is a double-edged sword, it will have further effects on creatures of darkness.",
+    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  It can be used to channel consecrated essence into a stunning flash.  Though using it is a double-edged sword, it will have further effects on creatures of darkness.",
     "price": "800 USD",
     "price_postapoc": "45 USD",
     "material": [ "iron", "silver", "wood" ],
     "max_charges": 3,
     "charges_per_use": 3,
     "ammo": "essence_dull_type",
-    "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_hexenhammer",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
-      },
-      {
-        "type": "cast_spell",
-        "spell_id": "arcana_item_hammerzeit",
-        "no_fail": true,
-        "need_wielding": true,
-        "level": 0
-      }
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_hammerzeit", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "relative": { "weight": "360 g", "bashing": 2 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
@@ -276,7 +260,7 @@
     "category": "weapons",
     "copy-from": "lucern_hammer",
     "name": { "str": "luminous hammer" },
-    "description": "A mighty lucerne hammer, decorated with archaic Latin engravings and silver counterbalancing to make it more usable at close range.  Many magical items can be purified with this item.  Activating it can be used to create a powerful flash, capable of searing anyone in range.  Though the user will not take damage from it, they will still be blinded if lacking protection.  It could also be used to deploy a rune with a weaker stunning effect on whatever steps on it.",
+    "description": "A mighty lucerne hammer, decorated with archaic Latin engravings and silver counterbalancing to make it more usable at close range.  Many magical items can be purified with this item.  Activating it can be used to create a powerful flash, capable of searing anyone in range.  Though the user will not take damage from it, they will still be blinded if lacking protection.",
     "price": "1200 USD",
     "price_postapoc": "120 USD",
     "material": [ "wood", "steel", "silver" ],
@@ -284,14 +268,6 @@
     "charges_per_use": 10,
     "ammo": "essence_dull_type",
     "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_hexenhammer",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
-      },
       {
         "type": "cast_spell",
         "spell_id": "arcana_item_hammerzeit_greater",
@@ -311,7 +287,7 @@
     "copy-from": "spear_steel",
     "category": "weapons",
     "name": { "str": "spear of pestilence", "str_pl": "spears of pestilence" },
-    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will blast nearby enemies with frost and temporarily summon mutant vermin to aid you, while wielding it makes movement easier.  It can also be used to place a rune focused purely on summoning vermin when something steps on it.",
+    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will blast nearby enemies with frost and temporarily summon mutant vermin to aid you, while wielding it makes movement easier.",
     "price": "1200 USD",
     "price_postapoc": "35 USD",
     "material": [ "steel", "wood", "chitin" ],
@@ -335,23 +311,7 @@
         }
       ]
     },
-    "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_spear_pestilence",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the spear's energy into a spell trap, waiting to be unleashed."
-      },
-      {
-        "type": "cast_spell",
-        "spell_id": "arcana_item_pestilence",
-        "no_fail": true,
-        "need_wielding": true,
-        "level": 0
-      }
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "relative": { "weight": 540, "bashing": 2 },
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
   },
@@ -1021,7 +981,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "lichhook" },
-    "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.  It can also place a rune that will trigger the same effect over a small area when something steps into it.",
+    "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.",
     "price": "720 USD",
     "price_postapoc": "45 USD",
     "bashing": 9,
@@ -1030,17 +990,7 @@
     "charges_per_use": 2,
     "ammo": "essence_blood_type",
     "relative": { "weight": 230 },
-    "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_lichhook",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the lichhook's energy into a spell trap, waiting to be unleashed."
-      },
-      { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 }
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ] }
   },
   {
@@ -1373,7 +1323,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "meteoric verge" },
-    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.  It can also be used to place a rune that will blast an area with lightning if something steps on it.",
+    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.",
     "weight": "1585 g",
     "to_hit": 1,
     "volume": "2500 ml",
@@ -1405,14 +1355,6 @@
       ]
     },
     "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_lightning",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the verge's energy into a spell trap, waiting to be unleashed."
-      },
       {
         "type": "cast_spell",
         "spell_id": "arcana_item_meteoric_verge_bolt",
