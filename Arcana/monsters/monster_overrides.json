@@ -707,18 +707,6 @@
     "death_drops": "mon_player_blob_death_drops"
   },
   {
-    "id": "mon_shia",
-    "copy-from": "mon_shia",
-    "type": "MONSTER",
-    "death_drops": "mon_shia_death_drops"
-  },
-  {
-    "id": "mon_zombie_dancer",
-    "copy-from": "mon_zombie_dancer",
-    "type": "MONSTER",
-    "death_drops": "mon_zombie_dancer_death_drops"
-  },
-  {
     "id": "mon_skeleton_hulk",
     "copy-from": "mon_skeleton_hulk",
     "type": "MONSTER",

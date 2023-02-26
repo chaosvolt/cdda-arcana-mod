@@ -190,60 +190,39 @@
     "om_terrain": [ "church" ],
     "weight": 200,
     "object": {
-      "fill_ter": "t_dirt",
+      "fill_ter": "t_floor",
       "rows": [
-        "         ^^^^^^         ",
-        "     |---|--------|     ",
+        "     ^^    ss    ^^   s ",
+        "     ^^    ss    ^^   s ",
+        "         O ss O       s ",
+        "      |||||++|||||    s ",
+        "     ^|....,,.+''|^   s ",
+        "    ^^|ll|<,,y|ST|^^  s ",
+        "  ^||w|||||,,|||||w||^s ",
+        "  ^|y......,,......y|^s ",
+        "  ^|.######,,######.|^s ",
+        "  ^w.......,,.......w^s ",
+        "  ^|.######,,######.|^s ",
+        "  ^w.......,,.......w^s ",
+        "  ^|.######,,######.|^s ",
+        "  ^w.......,,.......w^s ",
+        "  ^|.######,,######.|^s ",
+        "  ^w.......,,.......w^s ",
+        "  ^|......,,,,......|^s ",
+        "  ^wp...b.,tt,.b....w^s ",
+        "  ^||yy...,,,,...yy||^s ",
+        "  ^^|||+||||||||||||^^s ",
+        "    |D...X.....htt.-sss ",
         "    ||dhy|.6ooo.tt||    ",
-        "    |W...X.....htt.|    ",
-        "  ^^|--+-|---------|^^  ",
-        "  ^||yy...rrrr...yy||^  ",
-        "   wp...b.rttr.b....w   ",
-        "   |......rrrr......|   ",
-        "  ^w.......rr.......w^  ",
-        "  ^|.######rr######.|^  ",
-        "  ^w.......rr.......w^  ",
-        "  ^|.######rr######.|^  ",
-        "   w.......rr.......w   ",
-        "   |.######rr######.|   ",
-        "  ^w.......rr.......w^  ",
-        "  ^|.######rr######.|^  ",
-        "  ^|y......rr......y|^  ",
-        "   |-w|----rr----|w-|   ",
-        "    ^^|ll|<rry|ST|^^    ",
-        "     ^|....rr.+..|^     ",
-        "      |----++-|--|      ",
-        "         O ss O         ",
-        "     ^^    ss    ^^     ",
-        "     ^^    ss    ^^     "
+        "     ||||||||||||||     ",
+        "         ^^^^^^         "
       ],
-      "terrain": {
-        "p": "t_floor",
-        "W": "t_floor",
-        "<": "t_stairs_up",
-        "y": "t_floor",
-        "r": "t_carpet_red",
-        "X": "t_door_locked_interior"
-      },
-      "furniture": { "p": "f_piano", "W": "f_wardrobe", "b": "f_brazier" },
       "palettes": [ "church" ],
-      "place_nested": [ { "chunks": [ [ "arcana_church_ne_1", 80 ], [ "arcana_church_ne_2", 20 ] ], "x": 11, "y": 2 } ],
+      "terrain": { "X": "t_door_locked_interior", "t": "t_carpet_red", ",": "t_carpet_red" },
+      "place_nested": [ { "chunks": [ [ "arcana_church_ne_1", 80 ], [ "arcana_church_ne_2", 20 ] ], "x": 15, "y": 20 } ],
       "items": {
-        "#": { "item": "church", "chance": 40 },
-        ".": { "item": "church", "chance": 5 },
-        "d": { "item": "office", "chance": 30 },
-        "l": { "item": "jackets", "chance": 60 },
-        "o": { "item": "church", "chance": 40 }
-      },
-      "computers": {
-        "6": {
-          "name": "Church Bells 1.2",
-          "options": [
-            { "name": "Gathering Toll", "action": "toll" },
-            { "name": "Wedding Toll", "action": "toll" },
-            { "name": "Funeral Toll", "action": "toll" }
-          ]
-        }
+        "d": { "item": "SUS_office_desk", "chance": 60 },
+        "o": { "item": "religious_books", "chance": 40, "repeat": [ 1, 4 ] }
       }
     }
   },
@@ -252,13 +231,13 @@
     "method": "json",
     "nested_mapgen_id": "arcana_church_ne_1",
     "object": {
-      "mapgensize": [ 8, 8 ],
+      "mapgensize": [ 3, 3 ],
       "place_loot": [
-        { "group": "cleansing_flame_books", "x": [ 6, 7 ], "y": [ 0, 1 ], "chance": 50, "repeat": 10 },
-        { "group": "cleansing_flame_gear_consumables", "x": [ 6, 7 ], "y": [ 0, 1 ], "chance": 25, "repeat": 5 },
-        { "item": "CF_golden_scale", "x": [ 6, 7 ], "y": [ 0, 1 ], "chance": 25, "repeat": 10 }
+        { "group": "cleansing_flame_books", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 50, "repeat": 10 },
+        { "group": "cleansing_flame_gear_consumables", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 25, "repeat": 5 },
+        { "item": "CF_golden_scale", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 25, "repeat": 10 }
       ],
-      "place_monster": [ { "monster": "mon_zombie_necro", "x": [ 0, 4 ], "y": 1 } ]
+      "place_monster": [ { "monster": "mon_zombie_necro", "x": 0, "y": 0 } ]
     }
   },
   {
@@ -266,12 +245,12 @@
     "method": "json",
     "nested_mapgen_id": "arcana_church_ne_2",
     "object": {
-      "mapgensize": [ 8, 8 ],
+      "mapgensize": [ 3, 3 ],
       "place_loot": [
-        { "group": "chalice_cult_books", "x": [ 6, 7 ], "y": [ 0, 1 ], "chance": 50, "repeat": 10 },
-        { "group": "chalice_cult_consumables", "x": [ 6, 7 ], "y": [ 0, 1 ], "chance": 25, "repeat": 5 }
+        { "group": "chalice_cult_books", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 50, "repeat": 10 },
+        { "group": "chalice_cult_consumables", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 25, "repeat": 5 }
       ],
-      "place_monster": [ { "monster": "mon_zombie_master", "x": [ 0, 4 ], "y": 1 } ]
+      "place_monster": [ { "monster": "mon_zombie_master", "x": 0, "y": 0 } ]
     }
   },
   {
@@ -280,79 +259,53 @@
     "om_terrain": [ "church_1" ],
     "weight": 300,
     "object": {
-      "fill_ter": "t_dirt",
+      "fill_ter": "t_rock_floor",
       "rows": [
-        " $$    W        W    $$ ",
-        " $$  WWWWGVBBVGWWWW  $$ ",
-        "     W..h.cccc.h..W     ",
-        " WWVWWR..........RWWBWW ",
-        "WW#.#.R.b..cc..b.R.#.#WW",
-        " G#.#.R..........R.#.#V ",
-        " V#.#.Rrrrr..rrrrR.#.#B ",
-        "WW#..................#WW",
-        " WW+WW#####..#####WW+WW ",
-        "ssss V............B ssss",
-        "s   WW#####..#####WW   s",
-        "s $ WW............WW $ s",
-        "s $  G#####..#####V  $ s",
-        "s $  B............G  $ s",
-        "s $ WW#####..#####WW $ s",
-        "s $ WW............WW $ s",
-        "s    V####....####B    s",
-        "s WWWWW----gg----WWWWW s",
-        "s W,SyWllly,,ylllW,,<W s",
-        "s W,,,+,,,,,,,,,,X,,,W s",
-        "s W,,,WWWWW++WWWWW,]]W s",
-        "s WT,,W$$WWssWW$$W6]]W s",
+        "ssssssssssssssssssssssss",
         "s WWWWW    ss    WWWWW s",
-        "ssssssssssssssssssssssss"
+        "s WT''W^^WWssWW^^W6]]W s",
+        "s W'''WWWWW++WWWWW.]]W s",
+        "s W'''X..........X..LW s",
+        "s WS''Wll.y..y.llW..<W s",
+        "s WWWWW----gg----WWWWW s",
+        "s    V####,,,,####B    s",
+        "s ^ WW,,,,,,,,,,,,WW ^ s",
+        "s ^ WW#####,,#####WW ^ s",
+        "s ^  B,,,,,,,,,,,,G  ^ s",
+        "s ^  G#####,,#####V  ^ s",
+        "s ^ WW,,,,,,,,,,,,WW ^ s",
+        "s   WW#####,,#####WW   s",
+        "ssss V,,,,,,,,,,,,B ssss",
+        " WW+WW#####,,#####WW+WW ",
+        "WW#,,,,,,,,,,,,,,,,,,#WW",
+        " V#,#,RRRRR,,RRRRR,#,#B ",
+        " G#,#,R,,,,,,,,,,R,#,#V ",
+        "WW#,#,R,b,,cc,,b,R,#,#WW",
+        " WWVWWR,,,,,,,,,,RWWBWW ",
+        "     W,,h,cccc,h,,W     ",
+        " ^^  WWWWGVBBVGWWWW  ^^ ",
+        " ^^    W        W    ^^ "
       ],
       "palettes": [ "church" ],
       "terrain": {
-        "]": "t_floor",
-        "#": "t_rock_floor",
-        "$": "t_shrub",
-        ".": "t_rock_floor",
+        ",": "t_rock_floor",
         "B": "t_window_stained_blue",
-        "C": "t_rock_floor",
         "G": "t_window_stained_green",
-        "R": "t_railing_v",
-        "S": "t_floor",
-        "T": "t_floor",
         "V": "t_window_stained_red",
+        "R": "t_railing",
+        "X": "t_door_locked_interior",
         "-": "t_wall_wood",
         "W": "t_rock_wall",
-        "X": "t_door_locked_interior",
-        "b": "t_rock_floor",
-        "c": "t_rock_floor",
         "g": "t_door_glass_c",
-        "h": "t_rock_floor",
         "l": "t_floor",
-        "r": "t_railing_h",
-        "<": "t_stairs_up",
-        ",": "t_floor",
+        "L": "t_floor",
         "t": "t_floor",
+        "6": "t_floor",
         "y": "t_floor"
       },
-      "furniture": { "]": "f_counter", "b": "f_brazier" },
-      "place_nested": [ { "chunks": [ [ "arcana_church_goth_1", 80 ], [ "arcana_church_goth_2", 20 ] ], "x": 18, "y": 18 } ],
-      "items": {
-        "#": { "item": "church", "chance": 40 },
-        ".": { "item": "church", "chance": 5 },
-        "L": { "item": "cleaning", "chance": 30 },
-        "c": { "item": "church", "chance": 40 },
-        "l": { "item": "jackets", "chance": 60 }
-      },
-      "computers": {
-        "6": {
-          "name": "Church Bells 1.2",
-          "options": [
-            { "name": "Gathering Toll", "action": "toll" },
-            { "name": "Wedding Toll", "action": "toll" },
-            { "name": "Funeral Toll", "action": "toll" }
-          ]
-        }
-      }
+      "furniture": { "]": "f_counter" },
+      "place_nested": [ { "chunks": [ [ "arcana_church_goth_1", 80 ], [ "arcana_church_goth_2", 20 ] ], "x": 18, "y": 2 } ],
+      "items": { "c": { "item": "church", "chance": 40 } }
     }
   },
   {
@@ -362,11 +315,11 @@
     "object": {
       "mapgensize": [ 4, 4 ],
       "place_loot": [
-        { "group": "cleansing_flame_books", "x": [ 1, 2 ], "y": [ 2, 3 ], "chance": 50, "repeat": 10 },
-        { "group": "cleansing_flame_gear_consumables", "x": [ 1, 2 ], "y": [ 2, 3 ], "chance": 25, "repeat": 5 },
-        { "item": "CF_golden_scale", "x": [ 1, 2 ], "y": [ 2, 3 ], "chance": 25, "repeat": 10 }
+        { "group": "cleansing_flame_books", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 50, "repeat": 10 },
+        { "group": "cleansing_flame_gear_consumables", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 25, "repeat": 5 },
+        { "item": "CF_golden_scale", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 25, "repeat": 10 }
       ],
-      "place_monster": [ { "monster": "mon_zombie_necro", "x": [ 0, 1 ], "y": [ 0, 1 ] } ]
+      "place_monster": [ { "monster": "mon_zombie_necro", "x": 0, "y": 1 } ]
     }
   },
   {
@@ -376,42 +329,43 @@
     "object": {
       "mapgensize": [ 4, 4 ],
       "place_loot": [
-        { "group": "chalice_cult_books", "x": [ 1, 2 ], "y": [ 2, 3 ], "chance": 50, "repeat": 10 },
-        { "group": "chalice_cult_consumables", "x": [ 1, 2 ], "y": [ 2, 3 ], "chance": 25, "repeat": 5 }
+        { "group": "chalice_cult_books", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 50, "repeat": 10 },
+        { "group": "chalice_cult_consumables", "x": [ 1, 2 ], "y": [ 0, 1 ], "chance": 25, "repeat": 5 }
       ],
-      "place_monster": [ { "monster": "mon_zombie_master", "x": [ 0, 1 ], "y": [ 0, 1 ] } ]
+      "place_monster": [ { "monster": "mon_zombie_master", "x": 0, "y": 1 } ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
     "om_terrain": "church_3rdfloor_1",
+    "weight": 300,
     "object": {
       "fill_ter": "t_floor",
       "rows": [
         "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "         xxxxxx         ",
-        "         x____x         ",
-        "         x____x         ",
-        "         x____x         ",
-        "  wwwDwwwwwDDwwwwwDwww  ",
-        "  w.....w.mttm.w.y.>.w  ",
-        "  w.....+......+....cw  ",
-        "  B.....wtsssstwth..SB  ",
-        "  w...wwwwwGGwwwwwFecw  ",
         "  wBGBw          wBGBw  ",
+        "  wjttwwwwwGGwwwwwFe1w  ",
+        "  Bj...ywtsssstwth..SB  ",
+        "  w.....+......+....6w  ",
+        "  wK.mHHw.mttm.w.y.>7w  ",
+        "  wwwDwwwwwDDwwwwwDwww  ",
+        "         x____x         ",
+        "         x____x         ",
+        "         x____x         ",
+        "         xxxxxx         ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
         "                        "
       ],
       "palettes": [ "roof_palette" ],
@@ -426,61 +380,35 @@
         ">": "t_stairs_down",
         "G": "t_window_stained_green"
       },
-      "furniture": { "m": "f_armchair", "h": "f_chair" },
-      "place_nested": [
-        { "chunks": [ [ "church_3rdfloor_1_room_1", 50 ], [ "church_3rdfloor_1_room_2", 50 ] ], "x": [ 3, 3 ], "y": [ 18, 18 ] }
-      ],
-      "items": { "e": { "item": "oven", "chance": 40, "repeat": 3 }, "F": { "item": "fridgesnacks", "chance": 60, "repeat": 3 } }
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "church_3rdfloor_1_room_1",
-    "object": {
-      "mapgensize": [ 5, 5 ],
-      "rows": [
-        "K.ytm",
-        ".....",
-        "j..HH",
-        "jt.ww",
-        "BGBw "
-      ],
-      "palettes": [ "roof_palette" ],
-      "terrain": { ".": "t_floor", "w": "t_rock_wall", "B": "t_window_stained_blue", "G": "t_window_stained_green" },
-      "furniture": { "H": "f_bookcase", "K": "f_wardrobe", "m": "f_armchair", "j": "f_bed", "h": "f_chair" },
+      "furniture": {
+        "d": "f_desk",
+        "H": "f_bookcase",
+        "K": "f_wardrobe",
+        "m": "f_armchair",
+        "j": "f_bed",
+        "h": "f_chair",
+        "f": "f_filing_cabinet",
+        "1": "f_cupboard",
+        "6": "f_cupboard",
+        "7": "f_cupboard"
+      },
       "items": {
-        "H": { "item": "novels", "chance": 30, "repeat": 3 },
-        "K": { "item": "allclothes", "chance": 40, "repeat": 3 },
-        "j": { "item": "bed", "chance": 70, "repeat": 3 }
-      }
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "church_3rdfloor_1_room_2",
-    "object": {
-      "mapgensize": [ 5, 5 ],
-      "rows": [
-        "...yK",
-        ".m.tH",
-        "j..tH",
-        "j..ww",
-        "BGBw "
-      ],
-      "palettes": [ "roof_palette" ],
-      "terrain": { ".": "t_floor", "w": "t_rock_wall", "B": "t_window_stained_blue", "G": "t_window_stained_green" },
-      "furniture": { "H": "f_bookcase", "K": "f_wardrobe", "m": "f_armchair", "j": "f_bed", "h": "f_chair" },
-      "items": {
+        "d": { "item": "SUS_office_desk", "chance": 50 },
         "H": { "item": "cleansing_flame_books", "chance": 50, "repeat": 3 },
         "K": [
-          { "item": "clothing_outdoor_torso", "chance": 40, "repeat": 2 },
-          { "item": "clothing_outdoor_pants", "chance": 40, "repeat": 2 }
+          { "item": "clothing_outdoor_torso", "chance": 50, "repeat": 2 },
+          { "item": "clothing_outdoor_pants", "chance": 50, "repeat": 2 }
         ],
-        "j": { "item": "bed", "chance": 70, "repeat": 3 },
-        "t": { "item": "arcana_hunt_random", "chance": 30, "repeat": 2 },
-        "m": { "item": "cleansing_flame_casualties", "chance": 100 }
+        "e": { "item": "SUS_oven", "chance": 100 },
+        "j": { "item": "bed", "chance": 70, "repeat": [ 2, 4 ] },
+        "f": { "item": "office_paper", "chance": 70, "repeat": [ 2, 4 ] },
+        "F": { "item": "SUS_fridge", "chance": 60, "repeat": [ 2, 4 ] },
+        "1": [ { "item": "SUS_dishes", "chance": 100 }, { "item": "SUS_silverware", "chance": 100 } ],
+        "t": { "item": "arcana_hunt_random", "chance": 50, "repeat": 2 },
+        "m": { "item": "cleansing_flame_casualties", "chance": 100 },
+        "6": { "item": "SUS_cookware", "chance": 100 },
+        "7": [ { "item": "SUS_utensils", "chance": 50 }, { "item": "SUS_knife_drawer", "chance": 50 } ],
+        "S": { "item": "SUS_kitchen_sink", "chance": 100 }
       }
     }
   },
@@ -1019,15 +947,15 @@
       "rows": [
         ".,,_____$......P.__.....",
         ".||&&&&&||.......__.....",
-        ".|______$|.......__.....",
-        ".|_______;_________.....",
-        "%|_______|%%%%...__.....",
-        "%w_______||ww|||.__.....",
-        "%w_______-b  T-||;;||||.",
-        "%|_______-b   -n     t|%",
-        ".|{_____g-   t-O      w%",
-        ".|cc____g-   S-F      w%",
-        ".|cc_____--+---S      |%",
+        ".|EEEEEE$|.......__.....",
+        ".|EEEEEEE;_________.....",
+        "%|EEEEEEE|%%%%...__.....",
+        "%wEEEEEEE||ww|||.__.....",
+        "%wEEEEEEE-b  T-||;;||||.",
+        "%|EEEEEEE-b   -n     t|%",
+        ".|{EEEEEg-   t-O      w%",
+        ".|ccEEEEg-   S-F      w%",
+        ".|ccEEEEE--+---S      |%",
         ".|---+----    -C  hh  |.",
         "%|            -  heeh |%",
         "%w            +  heeh w%",
@@ -1056,8 +984,9 @@
         ";": "t_door_locked",
         "4": "t_gutter_downspout",
         "P": "t_grass",
-        "c": "t_concrete",
-        "g": "t_concrete",
+        "E": "t_thconc_floor",
+        "c": "t_thconc_floor",
+        "g": "t_thconc_floor",
         "w": "t_window_no_curtains_taped",
         "x": "t_door_locked_interior",
         "|": "t_brick_wall"
@@ -2710,10 +2639,7 @@
       },
       "toilets": { "T": {  } },
       "items": {
-        "C": [
-          { "item": "supplies_reagents_lab", "chance": 50, "repeat": 3 },
-          { "item": "lab_magitech_general", "chance": 10 }
-        ],
+        "C": [ { "item": "supplies_reagents_lab", "chance": 50, "repeat": 3 }, { "item": "lab_magitech_general", "chance": 10 } ],
         "d": { "item": "office", "chance": 75, "repeat": 2 },
         "l": [
           { "item": "tools_robotics", "chance": 25, "repeat": 3 },
