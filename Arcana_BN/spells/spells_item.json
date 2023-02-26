@@ -1417,15 +1417,6 @@
     "effect": "recover_energy",
     "effect_str": "FATIGUE"
   },
-
-
-
-
-
-
-
-
-
   {
     "type": "SPELL",
     "id": "arcana_item_scroll_artifice",
@@ -1439,10 +1430,10 @@
       { "id": "arcana_item_scroll_artifice_paralyze", "hit_self": true },
       { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
-    "min_damage": 80,
-    "max_damage": 160,
-    "min_duration": 480000,
-    "max_duration": 960000,
+    "min_damage": 180,
+    "max_damage": 240,
+    "min_duration": 1080000,
+    "max_duration": 1440000,
     "min_aoe": 24,
     "max_aoe": 24,
     "valid_targets": [ "self", "hostile" ],
@@ -1494,12 +1485,12 @@
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
     "effect_str": "dazed",
-    "min_damage": 60,
-    "max_damage": 120,
+    "min_damage": 150,
+    "max_damage": 180,
     "min_aoe": 24,
     "max_aoe": 24,
-    "min_duration": 3600,
-    "max_duration": 7200,
+    "min_duration": 8000,
+    "max_duration": 12000,
     "damage_type": "bash",
     "field_id": "fd_toxic_gas",
     "field_chance": 10,
@@ -1516,13 +1507,13 @@
     "effect": "target_attack",
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DAMAGE" ],
-    "min_damage": 60,
-    "max_damage": 120,
+    "min_damage": 150,
+    "max_damage": 180,
     "effect_str": "downed",
-    "min_duration": 3600,
-    "max_duration": 7200,
-    "min_aoe": 8,
-    "max_aoe": 8,
+    "min_duration": 8000,
+    "max_duration": 12000,
+    "min_aoe": 6,
+    "max_aoe": 6,
     "damage_type": "bash"
   },
   {
@@ -1537,9 +1528,10 @@
     "sound_ambient": true,
     "sound_id": "misc",
     "sound_variant": "shockwave",
-    "min_damage": 120,
-    "max_damage": 120,
+    "min_damage": 150,
+    "max_damage": 180,
     "valid_targets": [ "ground" ],
+    "flags": [ "RANDOM_DAMAGE" ],
     "effect": "noise"
   },
   {
@@ -1583,8 +1575,8 @@
     "message": "",
     "flags": [ "SILENT", "IGNORE_WALLS", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
     "effect": "bash",
-    "min_damage": 60,
-    "max_damage": 120,
+    "min_damage": 150,
+    "max_damage": 180,
     "min_aoe": 24,
     "max_aoe": 24
   },
@@ -1623,8 +1615,8 @@
     "field_chance": 1,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
-    "min_duration": 240000,
-    "max_duration": 480000
+    "min_duration": 360000,
+    "max_duration": 720000
   },
   {
     "id": "arcana_item_scroll_moon_blind",
@@ -1639,8 +1631,8 @@
     "effect_str": "blind",
     "min_aoe": 24,
     "max_aoe": 24,
-    "min_duration": 1200,
-    "max_duration": 2400
+    "min_duration": 1800,
+    "max_duration": 3600
   },
   {
     "type": "SPELL",
@@ -1653,8 +1645,8 @@
     "flags": [ "NO_HANDS", "NO_LEGS" ],
     "effect": "timed_event",
     "effect_str": "dim",
-    "min_duration": 480000,
-    "max_duration": 480000
+    "min_duration": 540000,
+    "max_duration": 540000
   },
   {
     "id": "arcana_item_scroll_nature",
@@ -1671,8 +1663,8 @@
     ],
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
     "effect_str": "arcana_scroll_nature_effect",
-    "min_damage": -1,
-    "max_damage": -100,
+    "min_damage": -25,
+    "max_damage": -50,
     "effect": "target_attack",
     "min_duration": 100,
     "max_duration": 100
@@ -1716,8 +1708,8 @@
     "effect_str": "DRAGONBLOOD",
     "description": "Comparable to Artifact Mutate, except mimics effect of blood effigy.",
     "message": "",
-    "min_damage": 3333,
-    "max_damage": 3333,
+    "min_damage": 2500,
+    "max_damage": 2500,
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ]
   },
@@ -1730,8 +1722,8 @@
     "effect_str": "PLANT",
     "description": "Comparable to Artifact Mutate, except focused on Plant category.",
     "message": "",
-    "min_damage": 3333,
-    "max_damage": 3333,
+    "min_damage": 2500,
+    "max_damage": 2500,
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ]
   },
@@ -1771,12 +1763,12 @@
     "valid_targets": [ "ground" ],
     "effect": "summon",
     "effect_str": "mon_shadow_summoned",
-    "min_damage": 4,
-    "max_damage": 8,
+    "min_damage": 5,
+    "max_damage": 10,
     "min_aoe": 5,
     "max_aoe": 5,
-    "min_duration": 8640000,
-    "max_duration": 8640000,
+    "min_duration": 100,
+    "max_duration": 100,
     "flags": [ "RANDOM_DAMAGE", "HOSTILE_SUMMON", "PERMANENT", "SILENT", "NO_HANDS", "NO_LEGS" ]
   },
   {
@@ -1810,8 +1802,8 @@
     "effect": "target_attack",
     "min_aoe": 24,
     "max_aoe": 24,
-    "min_duration": 240000,
-    "max_duration": 480000,
+    "min_duration": 360000,
+    "max_duration": 720000,
     "field_id": "fd_veil_light",
     "field_chance": 1,
     "min_field_intensity": 3,
@@ -1828,8 +1820,8 @@
     "flags": [ "SILENT", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
     "effect": "target_attack",
     "effect_str": "adrenaline",
-    "min_duration": 72000,
-    "max_duration": 144000
+    "min_duration": 108000,
+    "max_duration": 216000
   },
   {
     "type": "SPELL",
@@ -1842,8 +1834,8 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "effect": "timed_event",
     "effect_str": "artifact_light",
-    "min_duration": 480000,
-    "max_duration": 480000
+    "min_duration": 540000,
+    "max_duration": 540000
   },
   {
     "id": "arcana_item_scroll_sun_timewarp",
@@ -1856,7 +1848,7 @@
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
     "effect": "mod_moves",
     "extra_effects": [ { "id": "arcana_aftermath_timestop_indicator", "hit_self": true } ],
-    "min_damage": 400,
+    "min_damage": 600,
     "max_damage": 1200
   },
   {
@@ -2038,8 +2030,8 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "halo_flute_effect",
     "extra_effects": [ { "id": "arcana_item_stinger_flute_empowered_fatigue", "hit_self": true } ],
-    "min_duration": 406800,
-    "max_duration": 406800
+    "min_duration": 522000,
+    "max_duration": 522000
   },
   {
     "id": "arcana_item_stinger_flute_empowered_fatigue",
@@ -2050,8 +2042,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -13,
-    "max_damage": -13,
+    "min_damage": -16,
+    "max_damage": -16,
     "effect": "recover_energy",
     "effect_str": "FATIGUE"
   },
@@ -2071,8 +2063,8 @@
     "max_aoe": 5,
     "base_casting_time": 5,
     "final_casting_time": 5,
-    "min_duration": 270000,
-    "max_duration": 300000
+    "min_duration": 252000,
+    "max_duration": 504000
   },
   {
     "id": "arcana_item_pet_heal",
@@ -2085,7 +2077,7 @@
     "valid_targets": [ "ally" ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
     "min_damage": -25,
-    "max_damage": -30,
+    "max_damage": -50,
     "min_aoe": 5,
     "max_aoe": 5,
     "base_casting_time": 5,
@@ -2106,10 +2098,10 @@
     "min_range": 2,
     "max_range": 2,
     "effect": "target_attack",
-    "min_duration": 1200,
-    "max_duration": 2400,
-    "min_damage": 45,
-    "max_damage": 90,
+    "min_duration": 2500,
+    "max_duration": 3000,
+    "min_damage": 80,
+    "max_damage": 100,
     "field_id": "fd_electricity",
     "field_chance": 1,
     "min_field_intensity": 2,
@@ -2125,8 +2117,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -6,
-    "max_damage": -10,
+    "min_damage": -7,
+    "max_damage": -8,
     "effect": "target_attack"
   },
   {
@@ -2141,14 +2133,14 @@
     "valid_targets": [ "ally", "hostile", "ground" ],
     "sound_description": "splash",
     "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": 30,
-    "max_damage": 50,
+    "min_damage": 40,
+    "max_damage": 60,
     "min_range": 5,
     "max_range": 5,
     "min_aoe": 45,
     "max_aoe": 45,
-    "min_duration": 300,
-    "max_duration": 500,
+    "min_duration": 400,
+    "max_duration": 600,
     "damage_type": "acid",
     "field_id": "fd_acid",
     "field_chance": 1,
