@@ -19,7 +19,7 @@
     "ammo": "essence_type",
     "skill": "magic",
     "range": 50,
-    "ranged_damage": { "damage_type": "electric", "amount": 60, "armor_penetration": 15 },
+    "ranged_damage": { "damage_type": "electric", "amount": 75, "armor_penetration": 15 },
     "dispersion": 200,
     "durability": 10,
     "loudness": 150,
@@ -74,7 +74,7 @@
     "ammo": "essence_blood_type",
     "skill": "magic",
     "range": 20,
-    "ranged_damage": { "damage_type": "heat", "amount": 20, "armor_penetration": 3 },
+    "ranged_damage": { "damage_type": "heat", "amount": 25, "armor_penetration": 3 },
     "dispersion": 250,
     "durability": 10,
     "loudness": 100,
@@ -200,7 +200,7 @@
     "ammo": "essence_dull_type",
     "skill": "rifle",
     "range": 30,
-    "ranged_damage": { "damage_type": "stab", "amount": 40, "armor_penetration": 40 },
+    "ranged_damage": { "damage_type": "stab", "amount": 50, "armor_penetration": 25 },
     "dispersion": 150,
     "durability": 6,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 20 } } ],
@@ -230,7 +230,7 @@
     "ammo": "essence_dull_type",
     "skill": "pistol",
     "range": 15,
-    "ranged_damage": { "damage_type": "stab", "amount": 40, "armor_penetration": 20 },
+    "ranged_damage": { "damage_type": "stab", "amount": 50, "armor_penetration": 20 },
     "dispersion": 300,
     "durability": 6,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 20 } } ],
@@ -261,7 +261,7 @@
     "ammo": "essence_dull_type",
     "skill": "rifle",
     "range": 60,
-    "ranged_damage": { "damage_type": "stab", "amount": 100, "armor_penetration": 80 },
+    "ranged_damage": { "damage_type": "stab", "amount": 125, "armor_penetration": 75 },
     "dispersion": 75,
     "durability": 6,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 50 } } ],
@@ -293,8 +293,8 @@
     "ammo": "essence_pure_type",
     "skill": "magic",
     "range": 50,
-    "//": "High as that amount is, remember this is equivalent to 10 essence a shot.",
-    "ranged_damage": { "damage_type": "heat", "amount": 300, "armor_penetration": 25 },
+    "//": "High as that amount is, remember this is equivalent to 10 essence a shot, with some loss of efficency compared to other magic ranged weapons.",
+    "ranged_damage": { "damage_type": "heat", "amount": 350, "armor_penetration": 25 },
     "dispersion": 200,
     "durability": 10,
     "loudness": 500,
@@ -348,7 +348,7 @@
     "ammo": "essence_blood_type",
     "skill": "magic",
     "range": 40,
-    "ranged_damage": { "damage_type": "acid", "amount": 30, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "acid", "amount": 25, "armor_penetration": 10 },
     "dispersion": 250,
     "durability": 10,
     "loudness": 75,
@@ -452,7 +452,7 @@
     "bashing": 14,
     "to_hit": -1,
     "range": 60,
-    "ranged_damage": { "damage_type": "cold", "amount": 800 },
+    "ranged_damage": { "damage_type": "cold", "amount": 750 },
     "loudness": 18,
     "dispersion": 20,
     "durability": 7,
@@ -484,7 +484,8 @@
     "range": 7,
     "dispersion": 7500,
     "sight_dispersion": 1000,
-    "ranged_damage": { "damage_type": "heat", "amount": 10, "armor_penetration": 5 }
+    "//": "Roughly half the damage of closest weapon equivalent, rounded up.",
+    "ranged_damage": { "damage_type": "heat", "amount": 13, "armor_penetration": 5 }
   },
   {
     "id": "monster_lightning_fake",
@@ -500,7 +501,7 @@
     "dispersion": 5000,
     "sight_dispersion": 1000,
     "loudness": 50,
-    "ranged_damage": { "damage_type": "electric", "amount": 20, "armor_penetration": 10 }
+    "ranged_damage": { "damage_type": "electric", "amount": 38, "armor_penetration": 10 }
   },
   {
     "id": "monster_hammer_fake",
@@ -530,7 +531,7 @@
     "range": 20,
     "dispersion": 5000,
     "sight_dispersion": 1000,
-    "ranged_damage": { "damage_type": "cold", "amount": 15 }
+    "ranged_damage": { "damage_type": "cold", "amount": 20 }
   },
   {
     "id": "mut_dragonfire",

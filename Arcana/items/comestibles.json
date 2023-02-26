@@ -101,20 +101,7 @@
     "healthy": 4,
     "fun": 4,
     "freezing_point": -150,
-    "use_action": {
-      "type": "consume_drug",
-      "activation_message": "You drink the potion and feel a pleasant warmth spread through your body.",
-      "effects": [ { "id": "potion_healing", "duration": 900 } ],
-      "vitamins": [ [ "blood", 2500 ], [ "redcells", 2500 ] ],
-      "damage_over_time": [
-        {
-          "damage_type": "true",
-          "duration": "1 s",
-          "amount": -5,
-          "bodyparts": [ "torso", "head", "arm_l", "leg_l", "arm_r", "leg_r" ]
-        }
-      ]
-    },
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_red_potion_healing", "no_fail": true, "level": 0 },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
@@ -123,7 +110,7 @@
     "comestible_type": "DRINK",
     "category": "drugs",
     "name": { "str": "silver potion", "str_pl": "silver potion" },
-    "description": "A strange liquid that looks like mercury, albeit quite a bit less dense and significantly less toxic.  Drinking it will imbue you with magical energy.  Highly useful to someone who uses mana for spells, but worthless to someone limited to fatigue-draining Magic Signs.\n\nEach dose will restore 600 mana.",
+    "description": "A strange liquid that looks like mercury, albeit quite a bit less dense and significantly less toxic.  Drinking it will imbue you with magical energy.  Highly useful to someone who uses mana for spells, but worthless to someone limited to stamina-draining Magic Signs.\n\nEach dose will restore 750 mana.",
     "weight": "150 g",
     "volume": "250 ml",
     "price": "750 USD",
@@ -158,9 +145,9 @@
     "stack_size": 9,
     "use_action": {
       "type": "heal",
-      "limb_power": 10,
-      "head_power": 10,
-      "torso_power": 10,
+      "limb_power": 20,
+      "head_power": 20,
+      "torso_power": 20,
       "limb_scaling": 2.5,
       "head_scaling": 2.5,
       "torso_scaling": 2.5,
@@ -178,7 +165,7 @@
     "category": "drugs",
     "name": { "str": "citrine incense", "str_pl": "citrine incense" },
     "//": "Citrine isn't quite white-yellow either, but jasmine incense would imply the flower rather than the color.",
-    "description": "An alchemical mixture permeating a combustible base of charcoal or resin, resulting in a peculiar sort of incense.  Using it will invigorate the user with a focused effect similar to the potions originally used to make it.  Rather than affecting strength and speed, it will directly restore a large burst of stamina and fatigue.\n\nIt will restore 60 fatigue, and 6000 stamina.",
+    "description": "An alchemical mixture permeating a combustible base of charcoal or resin, resulting in a peculiar sort of incense.  Using it will invigorate the user with a focused effect similar to the potions originally used to make it.  Rather than affecting strength and speed, it will directly restore a large burst of stamina and fatigue.\n\nEach use will restore 30 fatigue, and 3000 stamina.",
     "weight": "550 g",
     "volume": "250 ml",
     "price": "350 USD",
@@ -255,12 +242,12 @@
     "color": "cyan",
     "use_action": {
       "type": "heal",
-      "limb_power": 10,
-      "head_power": 10,
-      "torso_power": 10,
-      "limb_scaling": 1.0,
-      "head_scaling": 1.0,
-      "torso_scaling": 1.0,
+      "limb_power": 25,
+      "head_power": 25,
+      "torso_power": 25,
+      "limb_scaling": 2.5,
+      "head_scaling": 2.5,
+      "torso_scaling": 2.5,
       "bleed": 15,
       "bite": 0.5,
       "move_cost": 25,

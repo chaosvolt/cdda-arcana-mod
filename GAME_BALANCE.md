@@ -8,14 +8,14 @@ Essence types have specific values of energy associated with them, and spellcast
 
 ### Essence
 
-* 1 unit of dull essence is assumed to possess 4 kJ of energy.
-* 1 unit of blood essence is assumed to possess 40 kJ of energy, making it equivalent to 10 units of Dull Essence.
-* 1 unit of regular essence is possesses 120 kJ of energy. It's equivalent to 3 Blood Essence, or 30 Dull Essence.
-* 1 unit of crystallized essence is 1200 kJ. It equals 10 essence, 30 blood essence, or 300 Dull Essence.
+* 1 unit of dull essence is assumed to possess 5 kJ of energy.
+* 1 unit of blood essence is assumed to possess 50 kJ of energy, making it equivalent to 10 units of Dull Essence.
+* 1 unit of regular essence is possesses 150 kJ of energy. It's equivalent to 3 Blood Essence, or 30 Dull Essence.
+* 1 unit of crystallized essence is 1500 kJ. It equals 10 essence, 30 blood essence, or 300 Dull Essence.
 
 Whenever possible, any recipe or other method that converts one type of essence into another, from crafting crystallized essence to consecrating magic items for dull essence, is done on a 1:1 basis. Converting essence into other types should never cause a gain or loss of energy. Converting other forms of energy, like electricity, into essence can be less efficient, the methods present in the mod are at 50% efficiency, but any method that converts essence into electrical energy will do so at a 1:1 ratio.
 
-Power cost for crafting and fueling magic items is not exact and is generally balanced relative to how effective it should be balance-wise rather than trying to determine how many kJ of energy it should take up, but power draw of different essence types relative to comparable items is generally consistent. Many magic items, especially if they cast a spell on activation, will at least try to mimic a Magic Sign of about mid-level power based on however much energy the action consumes, but this is a recommendation for balance and not applied rigidly.
+Power cost for crafting and fueling magic items is not exact and is generally balanced relative to how effective it should be balance-wise rather than trying to determine how many kJ of energy it should take up, but power draw of different essence types relative to comparable items is generally consistent. Many magic items, especially if they cast a spell on activation, will at least try to mimic a Magic Sign of about mid-level power based on however much energy the action consumes, but this is a recommendation for balance and not applied rigidly. When balanced in this manner, 1 unit of essence counts as enough power to cast a mid-leveled spell of Spell Rank (see below) 3, 2 essence would power a spell with an SR of 7, 3 would power a mid-level spell equivalent to SR 11, etc (energy costs are multiplied by Spell Rank plus 1).
 
 Whenever multiple types of essence are allowed in a recipe however, they will always use consistent amounts of each based on how much energy they have relative to each other. Meaning, for example, if a recipe requires 2 units of essence, it will require 6 blood essence if that's allowed as an alternative, or likewise 60 dull essence.
 

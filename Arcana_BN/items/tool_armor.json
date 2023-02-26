@@ -6,13 +6,13 @@
     "type": "TOOL_ARMOR",
     "category": "tools",
     "name": { "str": "verdant triffid garland" },
-    "description": "A wreath of brightly-colored flowers from another world, worn around the neck.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will grant a burst of renewed stamina, recovering pain and speeding up the body's natural healing.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 20 hours to charge.",
+    "description": "A wreath of brightly-colored flowers from another world, worn around the neck.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will grant a burst of renewed stamina, recovering pain and speeding up the body's natural healing.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 25 hours to charge.",
     "price_postapoc": "12 USD",
-    "max_charges": 100,
-    "charges_per_use": 20,
+    "max_charges": 125,
+    "charges_per_use": 25,
     "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
-    "//": "Water talisman and earth talisman.  Each use has power equivalent to 200 mana.",
+    "//": "Water talisman and earth talisman.  Each use has power equivalent to 250 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_triffid_garland_empowered", "no_fail": true, "level": 0 }
   },
   {
@@ -22,13 +22,13 @@
     "type": "TOOL_ARMOR",
     "category": "tools",
     "name": { "str": "shrouded exotic amulet" },
-    "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you invisible (but not inaudible) to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
+    "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you invisible (but not inaudible) to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 35 hours to charge.",
     "price_postapoc": "15 USD",
-    "max_charges": 140,
-    "charges_per_use": 28,
+    "max_charges": 175,
+    "charges_per_use": 35,
     "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
-    "//": "Flame talisman and air talisman.  Each use has power equivalent to 280 mana.",
+    "//": "Flame talisman and air talisman.  Each use has power equivalent to 350 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_amulet_exotic_empowered", "no_fail": true, "level": 0 }
   },
   {
@@ -38,13 +38,13 @@
     "type": "TOOL_ARMOR",
     "category": "tools",
     "name": { "str": "bolstered iridescent brooch" },
-    "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will double any armor or damage resistance you have.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 36 hours to charge.",
+    "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will double any armor or damage resistance you have.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 45 hours to charge.",
     "price_postapoc": "20 USD",
-    "max_charges": 180,
-    "charges_per_use": 36,
+    "max_charges": 225,
+    "charges_per_use": 45,
     "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
-    "//": "Earth talisman and air talisman.  Each use has power equivalent to 360 mana.",
+    "//": "Earth talisman and air talisman.  Each use has power equivalent to 450 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_brooch_iridescent_empowered", "no_fail": true, "level": 0 }
   },
   {
@@ -193,7 +193,7 @@
     "type": "TOOL_ARMOR",
     "copy-from": "armor_blarmor",
     "name": { "str": "wyrmskin armor", "str_pl": "sets of wyrmskin armor" },
-    "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it and various adjustable straps added.  It can be used to conjure a long-lasting spray of acid, or it can place a rune that will explode with acid if something steps into it.",
+    "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it and various adjustable straps added.  It can be used to conjure a long-lasting spray of acid.",
     "material": [ "wyrmskin", "leather" ],
     "covers": [ "legs", "torso", "arms", "feet" ],
     "price": "450 USD",
@@ -206,23 +206,7 @@
     "encumbrance": 9,
     "storage": 0,
     "environmental_protection": 10,
-    "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_armor_wyrm",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the armor's energy into a spell trap, waiting to be unleashed."
-      },
-      {
-        "type": "cast_spell",
-        "spell_id": "arcana_item_wyrmskin_acid",
-        "no_fail": true,
-        "level": 0,
-        "need_worn": true
-      }
-    ],
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true } ],
     "relative": { "weight": "722 g", "volume": "1500 ml" },
     "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "FANCY" ] },
     "delete": { "flags": [ "VARSIZE" ] }
@@ -372,7 +356,7 @@
     "copy-from": "gloves_plate",
     "type": "TOOL_ARMOR",
     "name": { "str": "pair of thunder gauntlets", "str_pl": "pairs of thunder gauntlets" },
-    "description": "A heavy set of plate gauntlets, decorated with silver around the edges of each individual plate.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.  It can also be used to place a rune that will blast an area with lightning if something steps on it.",
+    "description": "A heavy set of plate gauntlets, decorated with silver around the edges of each individual plate.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.",
     "price": "600 USD",
     "price_postapoc": "50 USD",
     "material": [ "iron", "leather", "silver" ],
@@ -380,14 +364,6 @@
     "charges_per_use": 1,
     "ammo": "essence_type",
     "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_lightning",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the gauntlets' energy into a spell trap, waiting to be unleashed."
-      },
       {
         "type": "cast_spell",
         "spell_id": "arcana_item_thunder_gauntlets_taze",
@@ -406,7 +382,7 @@
     "repairs_like": "gauntlets_necro",
     "type": "TOOL_ARMOR",
     "name": { "str_sp": "thunder demi-gaunts" },
-    "description": "Heavy fingerless plate gauntlets, decorated with silver and leaving the user free to wear them even if they have claws or other mutations, or over gloves.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.  It can also be used to place a rune that will blast an area with lightning if something steps on it.",
+    "description": "Heavy fingerless plate gauntlets, decorated with silver and leaving the user free to wear them even if they have claws or other mutations, or over gloves.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.",
     "price": "600 USD",
     "price_postapoc": "50 USD",
     "material": [ "iron", "leather", "silver" ],
@@ -417,14 +393,6 @@
     "charges_per_use": 1,
     "ammo": "essence_type",
     "use_action": [
-      {
-        "type": "place_trap",
-        "allow_underwater": true,
-        "trap": "tr_arcana_item_lightning",
-        "moves": 90,
-        "practice": 0,
-        "done_message": "You focus a fragment of the gauntlets' energy into a spell trap, waiting to be unleashed."
-      },
       {
         "type": "cast_spell",
         "spell_id": "arcana_item_thunder_gauntlets_taze",
