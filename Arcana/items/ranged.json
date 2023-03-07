@@ -50,7 +50,8 @@
       "NEVER_JAMS",
       "PRIMITIVE_RANGED_WEAPON",
       "MAGIC_FOCUS",
-      "TRADER_KEEP_EQUIPPED"
+      "TRADER_KEEP_EQUIPPED",
+      "NO_TURRET"
     ],
     "use_action": "MEDITATE"
   },
@@ -109,7 +110,8 @@
       "NO_SALVAGE",
       "MAGIC_FOCUS",
       "TRADER_KEEP_EQUIPPED",
-      "SHEATH_SPEAR"
+      "SHEATH_SPEAR",
+      "NO_TURRET"
     ]
   },
   {
@@ -324,7 +326,8 @@
       "FIRE",
       "FLAMING",
       "PRIMITIVE_RANGED_WEAPON",
-      "TRADER_KEEP_EQUIPPED"
+      "TRADER_KEEP_EQUIPPED",
+      "NO_TURRET"
     ]
   },
   {
@@ -380,7 +383,8 @@
       "NO_SALVAGE",
       "MAGIC_FOCUS",
       "TRADER_KEEP_EQUIPPED",
-      "SHEATH_SPEAR"
+      "SHEATH_SPEAR",
+      "NO_TURRET"
     ]
   },
   {

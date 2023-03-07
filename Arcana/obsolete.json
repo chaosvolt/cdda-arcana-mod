@@ -751,5 +751,15 @@
     "max_duration": 24000,
     "min_aoe": 2,
     "max_aoe": 2
+  },
+  {
+    "type": "vehicle_part_migration",
+    "from": "electrothermal_arc_cannon_part",
+    "to": "turret_electrothermal_arc_cannon"
+  },
+  {
+    "type": "vehicle_part_migration",
+    "from": "rift_focus_cannon_part",
+    "to": "turret_rift_focus_cannon"
   }
 ]
