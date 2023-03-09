@@ -1657,6 +1657,7 @@
     "sprite": "fd_dazzling",
     "valid_targets": [ "self" ],
     "extra_effects": [
+      { "id": "arcana_item_scroll_nature_regrowth", "hit_self": false },
       { "id": "arcana_item_scroll_nature_plants", "hit_self": false },
       { "id": "arcana_item_scroll_nature_wonder", "hit_self": false },
       { "id": "arcana_item_scroll_leftover", "hit_self": false }
@@ -1668,6 +1669,22 @@
     "effect": "target_attack",
     "min_duration": 100,
     "max_duration": 100
+  },
+  {
+    "id": "arcana_item_scroll_nature_regrowth",
+    "type": "SPELL",
+    "name": { "str": "Divine Scroll: Nature Regrowth Effect" },
+    "description": "This adds a bonus regrowth effect to dead plants.",
+    "sprite": "fd_veil_light",
+    "message": "",
+    "valid_targets": [ "ground" ],
+    "flags": [ "IGNORE_WALLS", "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "effect": "ter_transform",
+    "effect_str": "arcana_plant_renewal",
+    "min_damage": 3,
+    "max_damage": 3,
+    "min_aoe": 12,
+    "max_aoe": 12
   },
   {
     "id": "arcana_item_scroll_nature_plants",

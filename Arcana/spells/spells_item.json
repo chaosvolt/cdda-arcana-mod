@@ -1735,6 +1735,7 @@
     "message": "\"Do not deny your instincts.\"  Life flows through your body, radiating out in a burst of chaotic energy!",
     "valid_targets": [ "self" ],
     "extra_effects": [
+      { "id": "arcana_item_scroll_nature_regrowth", "hit_self": false },
       { "id": "arcana_item_scroll_nature_plants", "hit_self": false },
       { "id": "arcana_item_scroll_nature_wonder", "hit_self": false },
       { "id": "arcana_item_scroll_leftover", "hit_self": false }
@@ -1747,6 +1748,22 @@
     "shape": "blast",
     "min_duration": 100,
     "max_duration": 100
+  },
+  {
+    "id": "arcana_item_scroll_nature_plants",
+    "type": "SPELL",
+    "name": { "str": "Divine Scroll: Nature Regrowth Effect" },
+    "description": "This adds a bonus regrowth effect to dead plants.",
+    "message": "",
+    "valid_targets": [ "ground" ],
+    "flags": [ "IGNORE_WALLS", "NO_PROJECTILE", "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "effect": "ter_transform",
+    "shape": "blast",
+    "effect_str": "arcana_plant_renewal",
+    "min_damage": 3,
+    "max_damage": 3,
+    "min_aoe": 12,
+    "max_aoe": 12
   },
   {
     "id": "arcana_item_scroll_nature_plants",
