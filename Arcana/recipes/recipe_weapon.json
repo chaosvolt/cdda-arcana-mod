@@ -12,7 +12,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_hexenhammer", 7 ], [ "book_syncretism", 7 ] ],
     "using": [ [ "steel_standard", 3 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fur", 1 ], [ "leather", 1 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
@@ -29,7 +29,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_hexenhammer", 7 ], [ "book_syncretism", 7 ] ],
     "using": [ [ "steel_standard", 3 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fur", 1 ], [ "leather", 1 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
@@ -46,7 +46,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_hexenhammer", 7 ], [ "book_syncretism", 7 ] ],
     "using": [ [ "steel_standard", 3 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "filament", 100, "LIST" ] ], [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "fur", 1 ], [ "leather", 1 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
@@ -63,7 +63,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "steel_standard", 2 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "scrap", 24 ] ], [ [ "2x4", 1 ], [ "stick", 2 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
@@ -80,7 +80,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "steel_standard", 3 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "stick_long", 1 ] ], [ [ "fur", 2 ], [ "leather", 2 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
@@ -97,7 +97,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_sacrifice", 3 ], [ "book_syncretism", 3 ] ],
     "using": [ [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "stick_long", 1 ] ],
       [ [ "filament", 100, "LIST" ] ],
@@ -118,7 +118,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_sacrifice", 6 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "filament", 100, "LIST" ] ], [ [ "stick_long", 1 ] ], [ [ "fur", 2 ], [ "leather", 2 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
@@ -135,7 +135,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 5 ], [ "book_syncretism", 5 ] ],
     "using": [ [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "2x4", 1 ], [ "stick", 2 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
@@ -152,7 +152,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 6 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [
         [ "rag", 1 ],
@@ -180,7 +180,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 6 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "fail_multiplier": 1.0 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [
         [ "rag", 1 ],
@@ -293,7 +293,7 @@
       [ "arcana_essence_exclude_dull", 5 ]
     ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "gold_small", 300 ] ], [ [ "silver_small", 100 ] ] ],
     "flags": [ "SECRET" ]
   },
@@ -311,7 +311,7 @@
     "using": [ [ "forging_standard", 2 ], [ "bronzesmithing_tools", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "silver_small", 400 ] ],
       [ [ "2x4", 1 ], [ "stick", 1 ] ],
@@ -333,7 +333,7 @@
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "qt_broadsword", 1 ], [ "qt_arming_sword", 1 ], [ "qt_jian", 1 ] ],
       [ [ "gold_small", 80 ], [ "CF_golden_scale", 16 ] ],
@@ -354,7 +354,7 @@
     "book_learn": [ [ "book_hexenhammer", 4 ], [ "book_syncretism", 5 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "warhammer", 1 ] ],
       [ [ "arcana_holy_symbol_any", 1, "LIST" ], [ "arcana_holy_relic_any", 1, "LIST" ] ],
@@ -375,7 +375,7 @@
     "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_syncretism", 5 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "lucern_hammer", 1 ] ],
       [ [ "arcana_holy_symbol_any", 1, "LIST" ], [ "arcana_holy_relic_any", 1, "LIST" ] ],
@@ -396,7 +396,7 @@
     "book_learn": [ [ "book_bloodmagic", 6 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "q_staff", 1 ] ],
       [ [ "silver_small", 475 ] ],
@@ -440,7 +440,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 7 ] ],
     "using": [ [ "blacksmithing_standard", 2 ], [ "steel_tiny", 2 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "CHISEL", "level": 3 } ],
     "tools": [ [ [ "swage", -1 ] ], [ [ "book_bloodmagic", -1 ] ] ],
     "components": [
@@ -468,7 +468,7 @@
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "khopesh", 1 ], [ "dao", 1 ] ],
       [ [ "silver_small", 60 ] ],
@@ -491,7 +491,7 @@
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 }, { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 3, "LIST" ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "crossbow", 1 ] ], [ [ "gold_small", 45 ], [ "CF_golden_scale", 9 ] ], [ [ "essence_dull", 40 ] ] ],
     "flags": [ "SECRET" ]
   },
@@ -509,7 +509,7 @@
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 }, { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 3, "LIST" ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "hand_crossbow", 1 ] ], [ [ "gold_small", 30 ], [ "CF_golden_scale", 6 ] ], [ [ "essence_dull", 40 ] ] ],
     "flags": [ "SECRET" ]
   },
@@ -527,7 +527,7 @@
     "using": [ [ "arcana_holy_symbol_any", 1 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 }, { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 3, "LIST" ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 1.5 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "huge_crossbow", 1 ] ], [ [ "gold_small", 60 ], [ "CF_golden_scale", 12 ] ], [ [ "essence_dull", 40 ] ] ],
     "flags": [ "SECRET" ]
   },
@@ -545,7 +545,7 @@
     "using": [ [ "arcana_essence_exclude_dull", 4 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_chitinworking", "required": false, "time_multiplier": 1.5 } ],
+    "proficiencies": [ { "proficiency": "prof_chitinworking" } ],
     "components": [
       [ [ "spear_steel", 1 ], [ "qiang", 1 ] ],
       [ [ "bee_sting", 1 ], [ "wasp_sting", 1 ], [ "dermatik_sting", 1 ], [ "iron_thorn", 1 ] ],
@@ -571,7 +571,7 @@
       [ [ "book_hexenhammer", -1 ], [ "book_bloodmagic", -1 ] ],
       [ [ "surface_heat", 6, "LIST" ] ]
     ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "cudgel", 1 ] ],
       [ [ "silver_small", 30 ] ],
@@ -601,7 +601,7 @@
     "book_learn": [ [ "book_sacrifice", 8 ], [ "book_syncretism", 7 ] ],
     "using": [ [ "forging_standard", 3 ], [ "bronzesmithing_tools", 1 ], [ "arcana_essence_any", 8 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "cudgel", 1 ] ], [ [ "thunder_sigil", 1 ] ], [ [ "meteoric_talisman", 1 ] ] ],
     "flags": [ "SECRET" ]
   },
@@ -623,7 +623,7 @@
       [ "arcana_essence_exclude_dull", 9 ]
     ],
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "bullwhip", 1 ] ], [ [ "blood_athame", 1 ] ], [ [ "moonstone_fang", 1 ] ] ],
     "flags": [ "SECRET" ]
   },

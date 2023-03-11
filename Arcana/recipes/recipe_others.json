@@ -230,7 +230,7 @@
     "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "forging_standard", 2 ], [ "bronzesmithing_tools", 1 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "gold_small", 625 ] ],
       [ [ "arcana_holy_relic_any", 1, "LIST" ], [ "arcana_holy_symbol_any", 1, "LIST" ] ],
@@ -250,7 +250,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 4 ], [ "book_summoning", 3 ] ],
     "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ] ]
   },
@@ -457,7 +457,7 @@
     "book_learn": [ [ "book_summoning", 10 ] ],
     "using": [ [ "blacksmithing_standard", 3 ] ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "essence_pure", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
@@ -474,7 +474,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_scrollcraft", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "proficiencies": [ { "proficiency": "prof_carving", "required": false, "time_multiplier": 2 } ],
+    "proficiencies": [ { "proficiency": "prof_carving" } ],
     "components": [ [ [ "paper", 5 ] ], [ [ "stick", 1 ], [ "2x4", 1 ] ] ]
   },
   {
