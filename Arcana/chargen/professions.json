@@ -455,7 +455,9 @@
         ],
         "entries": [
           { "item": "ethereal_crossbow", "charges": 20, "contents-item": "shoulder_strap" },
-          { "item": "v29", "container-item": "XL_holster" },
+          { "item": "holster", "contents-group": "1911_gun_arcane_purifier" },
+          { "item": "legpouch_large", "contents-group": "1911_mags_arcane_purifier" },
+          { "item": "45_acp", "charges": 9 },
           { "item": "bandolier_shotgun", "contents-group": "bandolier_shotgun_shot_00_arcana" },
           { "group": "charged_smart_phone" }
         ]
