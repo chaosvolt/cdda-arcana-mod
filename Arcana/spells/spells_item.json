@@ -1750,7 +1750,7 @@
     "max_duration": 100
   },
   {
-    "id": "arcana_item_scroll_nature_plants",
+    "id": "arcana_item_scroll_nature_regrowth",
     "type": "SPELL",
     "name": { "str": "Divine Scroll: Nature Regrowth Effect" },
     "description": "This adds a bonus regrowth effect to dead plants.",
