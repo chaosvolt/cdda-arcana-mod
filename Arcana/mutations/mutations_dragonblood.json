@@ -20,6 +20,18 @@
   },
   {
     "type": "mutation",
+    "id": "CARNIVORE_FAKE",
+    "copy-from": "CARNIVORE_FAKE",
+    "extend": { "category": [ "DRAGONBLOOD" ], "threshreq": [ "THRESH_DRAGONBLOOD" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SAPIOVORE",
+    "copy-from": "SAPIOVORE",
+    "extend": { "category": [ "DRAGONBLOOD" ], "threshreq": [ "THRESH_DRAGONBLOOD" ], "prereqs2": [ "ARCANA_DRAGONFIRE", "ARCANA_INSTINCT" ] }
+  },
+  {
+    "type": "mutation",
     "id": "THRESH_DRAGONBLOOD",
     "name": { "str": "Dragonblood" },
     "points": 1,
@@ -198,13 +210,12 @@
     "id": "ARCANA_FIREAFFINITY",
     "name": { "str": "Elemental Affinity" },
     "points": 2,
-    "bodytemp_modifiers": [ -2500, 0 ],
     "description": "Your body feels abnormally comfortable around heat and flame, letting you tolerate its heat for longer, and reducing direct damage from fire.  You also no longer suffer any loss of speed from overheating, though other symptoms of heatstroke will still affect you.  In exchange however, any form of supernatural cold will be more harmful to you, including the touch of shadowy monsters from Beyond.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
-    "enchantments": [ "ENCH_DRAGONBLOOD_ELEMENTAL_AFFINITY" ],
+    "enchantments": [ "ENCH_DRAGONBLOOD_ELEMENTAL_AFFINITY", { "condition": "ALWAYS", "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 30 } ] } ],
     "armor": [
       {
         "parts": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "mouth", "eyes" ],
@@ -224,8 +235,8 @@
     "changes_to": [ "ARCANA_TOXINIMMUNE_2" ],
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
-    "vitamin_rates": [ [ "mutant_toxin", 2 ] ],
-    "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0.75 ] ] ] ],
+    "vitamin_rates": [ [ "mutant_toxin", 900 ] ],
+    "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0.50 ] ] ] ],
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_FIRE" ]
   },
   {
@@ -241,8 +252,7 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "enchantments": [ "ENCH_DRAGONBLOOD_TOXINIMMUNE_2" ],
-    "vitamin_rates": [ [ "mutant_toxin", 1 ] ],
-    "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0.5 ] ] ] ]
+    "vitamins_absorb_multi": [ [ "all", [ [ "mutant_toxin", 0 ] ] ] ]
   },
   {
     "type": "mutation",
@@ -512,7 +522,7 @@
     "changes_to": [ "ARCANA_DRAGONTAIL" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "TAIL" ],
-    "restricts_gear": [ "leg_l", "leg_r" ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
     "allow_soft_gear": true,
     "attacks": {
       "attack_text_u": "You whip %s with your tail",
@@ -537,7 +547,7 @@
     "prereqs": [ "ARCANA_SCALYTAIL" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "TAIL" ],
-    "restricts_gear": [ "leg_l", "leg_r" ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
     "allow_soft_gear": true,
     "attacks": {
       "attack_text_u": "You lash %s with your tail",
