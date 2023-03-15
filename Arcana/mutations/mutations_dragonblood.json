@@ -20,6 +20,12 @@
   },
   {
     "type": "mutation",
+    "id": "DENSE_BONES",
+    "copy-from": "DENSE_BONES",
+    "extend": { "category": [ "DRAGONBLOOD" ] }
+  },
+  {
+    "type": "mutation",
     "id": "CARNIVORE_FAKE",
     "copy-from": "CARNIVORE_FAKE",
     "extend": { "category": [ "DRAGONBLOOD" ], "threshreq": [ "THRESH_DRAGONBLOOD" ] }
