@@ -36,11 +36,5 @@
     "id": "cathedral_basement",
     "name": { "str": "Cathedral" },
     "terrain": [ "cathedral_b_SE" ]
-  },
-  {
-    "type": "start_location",
-    "ident": "necropolis_basement",
-    "name": "Ruined City …?",
-    "terrain": [ "necropolis_b_54" ]
   }
 ]

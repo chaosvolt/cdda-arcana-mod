@@ -415,5 +415,22 @@
       [ "totem_insight", 1 ],
       [ "totem_lightning", 1 ]
     ]
+  },
+  {
+    "id": "arcana_mansion_art",
+    "type": "item_group",
+    "subtype": "collection",
+    "groups": [
+      { "group": "art", "prob": 40 },
+      { "group": "magic_books", "prob": 30 },
+      {
+        "distribution": [ { "group": "arcana_hunt_random", "prob": 80 }, { "group": "arcana_totem_random", "prob": 20 } ],
+        "prob": 20
+      },
+      {
+        "distribution": [ { "group": "magic_tools", "prob": 75 }, { "group": "magic_items", "prob": 25 } ],
+        "prob": 10
+      }
+    ]
   }
 ]

@@ -782,61 +782,6 @@
   {
     "type": "mapgen",
     "method": "json",
-    "om_terrain": [ "necropolis_b_54" ],
-    "weight": 375,
-    "object": {
-      "fill_ter": "t_floor",
-      "rows": [
-        "########################",
-        "########################",
-        "########################",
-        "#|--------|#############",
-        "#|???cc..]|#.###########",
-        "#|...Ic..]+...##########",
-        "#|.......]|#..B#########",
-        "#|D....!!!|#..D#########",
-        "#|D......<|#...C########",
-        "#|--------|#...C########",
-        "#|hee....<|#...C########",
-        "#|hee..!!!|#..d#########",
-        "#|.......]|#..h#########",
-        "#|...I...]+...##########",
-        "#|fccchh.]|#.###########",
-        "#|--------|#############",
-        "########################",
-        "########################",
-        "########################",
-        "########################",
-        "########################",
-        "########################",
-        "########################",
-        "########################"
-      ],
-      "palettes": [ "arcana_palette" ],
-      "terrain": { "?": "t_rock_floor", "!": "t_railing_h" },
-      "furniture": { "?": "f_sofa" },
-      "mapping": {
-        ".": { "item": { "item": "rock", "chance": 5 } },
-        "]": {
-          "furniture": "f_bookcase",
-          "items": [
-            { "item": "cleansing_flame_books_postapoc", "chance": 80 },
-            { "item": "cleansing_flame_books_postapoc", "chance": 60 }
-          ]
-        },
-        "d": { "item": [ { "item": "CF_golden_scale" }, { "item": "book_magicfordummies" }, { "item": "note_soa_mission" } ] },
-        "C": { "items": [ { "item": "tools_survival", "chance": 50 }, { "item": "tools_robotics", "chance": 50 } ] }
-      },
-      "place_items": [
-        { "item": "alcohol", "x": [ 2, 2 ], "y": [ 14, 14 ], "chance": 90 },
-        { "item": "cannedfood", "x": 15, "y": [ 8, 10 ], "chance": 60, "repeat": 8 }
-      ],
-      "place_monsters": [ { "monster": "GROUP_NECROPOLIS_SEWERS", "x": [ 1, 22 ], "y": [ 1, 22 ], "density": 0.1 } ]
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "cathedral_b_SE" ],
     "weight": 375,
     "object": {
