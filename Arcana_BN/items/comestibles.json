@@ -156,7 +156,7 @@
       "move_cost": 200,
       "effects": [ { "id": "potion_vulnerary", "duration": 300 } ]
     },
-    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
+    "flags": [ "NO_INGEST", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "yellow_white_incense",
@@ -176,7 +176,7 @@
     "charges": 2,
     "stack_size": 9,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_incense", "no_fail": true, "level": 0 },
-    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
+    "flags": [ "NO_INGEST", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
     "id": "dragonblood_mutagen",
