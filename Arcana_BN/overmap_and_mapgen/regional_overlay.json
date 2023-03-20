@@ -2,7 +2,7 @@
   {
     "type": "region_overlay",
     "regions": [ "all" ],
-    "city": { "houses": { "house_arcana": 75, "house_arcana_2": 50 } }
+    "city": { "houses": { "house_arcana": 120, "house_arcana_2": 80 } }
   },
   {
     "type": "city_building",
