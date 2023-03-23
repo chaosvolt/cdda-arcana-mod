@@ -210,7 +210,7 @@
     "batch_time_factors": [ 80, 4 ],
     "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 10 ], [ "waterproofing", 1 ] ],
     "components": [
-      [ [ "canister_empty", 1 ], [ "can_drink_unsealed", 1 ], [ "clay_canister", 1 ], [ "can_food_unsealed", 1 ] ],
+      [ [ "canister_empty", 1 ], [ "clay_canister", 1 ] ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "flame_talisman", 1 ] ]
     ]
@@ -230,7 +230,7 @@
     "batch_time_factors": [ 80, 4 ],
     "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 10 ], [ "waterproofing", 1 ] ],
     "components": [
-      [ [ "canister_empty", 1 ], [ "can_drink_unsealed", 1 ], [ "clay_canister", 1 ], [ "can_food_unsealed", 1 ] ],
+      [ [ "canister_empty", 1 ], [ "clay_canister", 1 ] ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "water_talisman", 1 ] ]
     ]
@@ -250,7 +250,7 @@
     "batch_time_factors": [ 80, 4 ],
     "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 25 ], [ "waterproofing", 1 ] ],
     "components": [
-      [ [ "canister_empty", 1 ], [ "can_drink_unsealed", 1 ], [ "clay_canister", 1 ], [ "can_food_unsealed", 1 ] ],
+      [ [ "canister_empty", 1 ], [ "clay_canister", 1 ] ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "earth_talisman", 1 ] ]
     ]
@@ -270,7 +270,7 @@
     "batch_time_factors": [ 80, 4 ],
     "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 25 ], [ "waterproofing", 1 ] ],
     "components": [
-      [ [ "canister_empty", 1 ], [ "can_drink_unsealed", 1 ], [ "clay_canister", 1 ], [ "can_food_unsealed", 1 ] ],
+      [ [ "canister_empty", 1 ], [ "clay_canister", 1 ] ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "air_talisman", 1 ] ]
     ]
@@ -425,7 +425,7 @@
     "book_learn": [ [ "book_bloodmagic", 5 ] ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
-    "components": [ [ [ "hatchet", 1 ] ], [ [ "fur", 2 ], [ "leather", 2 ], [ "rag_bloody", 2 ] ], [ [ "essence_blood", 5 ] ] ],
+    "components": [ [ [ "hatchet", 1 ] ], [ [ "fur", 2 ], [ "leather", 2 ] ], [ [ "essence_blood", 5 ] ] ],
     "flags": [ "SECRET" ]
   },
   {
