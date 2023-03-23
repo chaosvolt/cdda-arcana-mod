@@ -497,7 +497,7 @@
       [ "arcana_essence_any", 4 ]
     ],
     "qualities": [ { "id": "WRENCH_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
-    "components": [ [ [ "bio_railgun", 1 ] ], [ [ "cable", 60 ] ], [ [ "monster_fang", 1 ] ] ],
+    "components": [ [ [ "bio_pitch_perfect", 1 ] ], [ [ "cable", 60 ] ], [ [ "monster_fang", 1 ] ] ],
     "flags": [ "SECRET" ]
   },
   {
