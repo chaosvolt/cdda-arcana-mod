@@ -40,11 +40,12 @@
     "time": "30 m",
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 50, 2 ],
+    "charges": 3,
     "using": [ [ "forging_standard", 1 ] ],
     "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
-      [ [ "lead", 60 ], [ "bismuth", 90 ], [ "copper", 90 ], [ "tin", 60 ] ],
-      [ [ "silver_small", 10 ], [ "gold_small", 6 ], [ "platinum_small", 6 ] ],
+      [ [ "lead", 200 ], [ "bismuth", 300 ], [ "copper", 300 ], [ "tin", 300 ] ],
+      [ [ "silver_small", 20 ], [ "gold_small", 12 ], [ "platinum_small", 12 ] ],
       [ [ "healing_potion", 1 ] ]
     ]
   },
@@ -69,7 +70,7 @@
         [ "lead", 200 ],
         [ "bismuth", 300 ],
         [ "copper", 300 ],
-        [ "tin", 200 ],
+        [ "tin", 300 ],
         [ "gold_small", 120 ],
         [ "platinum_small", 120 ]
       ],
@@ -97,7 +98,7 @@
         [ "lead", 400 ],
         [ "bismuth", 500 ],
         [ "copper", 500 ],
-        [ "tin", 400 ],
+        [ "tin", 500 ],
         [ "silver_small", 400 ],
         [ "platinum_small", 200 ]
       ],
@@ -125,7 +126,7 @@
         [ "lead", 400 ],
         [ "bismuth", 500 ],
         [ "copper", 500 ],
-        [ "tin", 400 ],
+        [ "tin", 500 ],
         [ "silver_small", 400 ],
         [ "gold_small", 200 ]
       ],
