@@ -167,14 +167,15 @@
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [
-        [ "offal_raw", 6, "LIST" ],
-        [ "brain", 4 ],
+        [ "offal_raw", 5, "LIST" ],
+        [ "brain", 5 ],
         [ "stomach", 2 ],
-        [ "hstomach", 2 ],
-        [ "stomach_large", 1 ],
+        [ "hstomach", 1 ],
+        [ "stomach_large", 2 ],
         [ "hstomach_large", 1 ],
         [ "flesh_golem_heart", 2 ],
-        [ "jabberwock_heart", 1 ]
+        [ "jabberwock_heart", 1 ],
+        [ "pheromone", 5 ]
       ],
       [
         [ "arcana_essence_any", 2, "LIST" ],

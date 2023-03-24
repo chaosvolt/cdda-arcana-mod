@@ -165,10 +165,15 @@
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [
-        [ "meat_offal", 6, "LIST" ],
-        [ "brain", 4 ],
-        [ "mutant_brain", 4 ],
-        [ "meat_stomach", 1, "LIST" ],
+        [ "meat_offal", 5, "LIST" ],
+        [ "brain", 5 ],
+        [ "mutant_brain", 5 ],
+        [ "stomach", 2 ],
+        [ "demihuman_stomach", 2 ],
+        [ "hstomach", 1 ],
+        [ "stomach_large", 2 ],
+        [ "demihuman_stomach_large", 2 ],
+        [ "hstomach_large", 1 ],
         [ "flesh_golem_heart", 2 ],
         [ "jabberwock_heart", 1 ]
       ],
