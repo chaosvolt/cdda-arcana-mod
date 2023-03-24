@@ -498,7 +498,7 @@
     "volume": "250 ml",
     "weight": "300 g",
     "bashing": 24,
-    "flags": [ "UNARMED_WEAPON", "BIONIC_WEAPON", "UNBREAKABLE_MELEE", "TRADER_AVOID" ],
+    "flags": [ "BIONIC_WEAPON", "UNBREAKABLE_MELEE", "TRADER_AVOID" ],
     "qualities": [ [ "HAMMER", 1 ] ],
     "techniques": [ "WBLOCK_1", "tec_weapon_kinetic_knockback" ],
     "relic_data": {

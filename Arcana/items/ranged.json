@@ -45,7 +45,6 @@
     "ammo_effects": [ "LIGHTNING_JUDGMENT" ],
     "flags": [
       "STAB",
-      "UNARMED_WEAPON",
       "BELT_CLIP",
       "NEVER_JAMS",
       "PRIMITIVE_RANGED_WEAPON",
@@ -320,7 +319,6 @@
     "qualities": [ [ "BUTCHER", 12 ] ],
     "flags": [
       "LIGHT_45",
-      "UNARMED_WEAPON",
       "NEVER_JAMS",
       "UNBREAKABLE_MELEE",
       "FIRE",
