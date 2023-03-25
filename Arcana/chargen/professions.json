@@ -2,6 +2,73 @@
   {
     "type": "item_group",
     "subtype": "collection",
+    "//": "Arcanist professions start with a relevant essence holding the equivalent of two essence per profession point cost, minus any loaded into their primary weapon if any.",
+    "id": "starting_mana_gem_2_essence",
+    "entries": [ { "item": "essence", "charges": 2 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_4_essence",
+    "entries": [ { "item": "essence", "charges": 4 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_9_blood_essence",
+    "entries": [ { "item": "essence_blood", "charges": 9 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_237_dull_essence",
+    "entries": [ { "item": "essence_dull", "charges": 237 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_7_essence",
+    "entries": [ { "item": "essence", "charges": 7 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_14_essence",
+    "entries": [ { "item": "essence", "charges": 14 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_36_blood_essence",
+    "entries": [ { "item": "essence_blood", "charges": 36 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_45_blood_essence",
+    "entries": [ { "item": "essence_blood", "charges": 45 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_460_dull_essence",
+    "entries": [ { "item": "essence_dull", "charges": 460 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_580_dull_essence",
+    "entries": [ { "item": "essence_dull", "charges": 580 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "starting_mana_gem_11_essence",
+    "entries": [ { "item": "essence", "charges": 11 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
     "id": "bandolier_flintlock_shrike",
     "entries": [ { "item": "flintlock_ammo", "charges": 14 } ]
   },
@@ -9,9 +76,7 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "1911_gun_arcane_purifier",
-    "entries": [
-          { "item": "m1911", "ammo-item": "45_acp", "charges": 7, "contents-item": [ "arcane_accelerator_railgun" ] }
-    ]
+    "entries": [ { "item": "m1911", "ammo-item": "45_acp", "charges": 7, "contents-item": [ "arcane_accelerator_railgun" ] } ]
   },
   {
     "type": "item_group",
@@ -43,7 +108,11 @@
     "items": {
       "both": {
         "items": [ "tunic_rag", "robe", "socks", "bastsandals", "gloves_leather", "knit_scarf", "book_magicfordummies" ],
-        "entries": [ { "item": "makeshift_knife", "container-item": "sheath" }, { "group": "charged_matches" } ]
+        "entries": [
+          { "item": "mana_gem", "contents-group": "starting_mana_gem_2_essence" },
+          { "item": "makeshift_knife", "container-item": "sheath" },
+          { "group": "charged_matches" }
+        ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
@@ -72,10 +141,13 @@
           "red_black_vulnerary",
           "chem_ethanol",
           "bottle_glass",
-          "book_potioncraft",
-          "essence"
+          "book_potioncraft"
         ],
-        "entries": [ { "item": "punch_dagger", "container-item": "sheath" }, { "group": "charged_matches" } ]
+        "entries": [
+          { "item": "mana_gem", "contents-group": "starting_mana_gem_4_essence" },
+          { "item": "punch_dagger", "container-item": "sheath" },
+          { "group": "charged_matches" }
+        ]
       },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
@@ -101,15 +173,17 @@
           "mbag",
           "pockknife",
           "flask_hip",
-          "candle",
           "survival_marker",
           "scroll_blank",
           "scroll_sun",
           "book_scrollcraft",
-          "monster_tear",
-          "essence"
+          "monster_tear"
         ],
-        "entries": [ { "group": "charged_matches" } ]
+        "entries": [
+          { "item": "mana_gem", "contents-group": "starting_mana_gem_4_essence" },
+          { "group": "charged_matches" },
+          { "group": "charged_candle" }
+        ]
       },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
@@ -133,10 +207,10 @@
     ],
     "items": {
       "both": {
-        "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "waterskin", "bowl_clay", "book_bloodmagic" ],
+        "items": [ "dress_shirt", "robe", "socks", "boots", "backpack", "revenant_crown", "waterskin", "bowl_clay", "book_bloodmagic" ],
         "entries": [
           { "item": "bloodscourge", "ammo-item": "essence_blood", "charges": 15, "custom-flags": [ "auto_wield" ] },
-          { "item": "revenant_crown", "charges": 6 },
+          { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_9_blood_essence" },
           { "item": "blood_athame", "container-item": "sheath" },
           { "group": "charged_matches" }
         ]
@@ -164,10 +238,12 @@
         "items": [
           "dress_shirt",
           "pants",
+          "gilded_aegis",
           "socks",
           "boots_larmor",
           "gauntlets_larmor",
           "helmet_galea",
+          "somen_clairvoyance",
           "holy_symbol",
           "backpack",
           "waterskin",
@@ -175,8 +251,7 @@
         ],
         "entries": [
           { "item": "hexenhammer", "charges": 3, "custom-flags": [ "auto_wield" ] },
-          { "item": "somen_clairvoyance", "charges": 24 },
-          { "item": "gilded_aegis", "charges": 60 },
+          { "item": "mana_gem_dull", "contents-group": "starting_mana_gem_237_dull_essence" },
           { "item": "knife_hunting", "container-item": "sheath" },
           { "group": "charged_matches" }
         ]
@@ -196,11 +271,21 @@
     "skills": [ { "level": 5, "name": "magic" }, { "level": 2, "name": "gun" }, { "level": 2, "name": "dodge" } ],
     "items": {
       "both": {
-        "items": [ "loincloth", "tunic", "socks", "bastsandals", "backpack", "waterskin", "offering_chalice", "book_sacrifice" ],
+        "items": [
+          "loincloth",
+          "tunic",
+          "robe_shadow",
+          "socks",
+          "bastsandals",
+          "gauntlets_necro",
+          "backpack",
+          "waterskin",
+          "offering_chalice",
+          "book_sacrifice"
+        ],
         "entries": [
           { "item": "thunder_sigil", "ammo-item": "essence", "charges": 5, "custom-flags": [ "auto_wield" ] },
-          { "item": "robe_shadow", "charges": 20 },
-          { "item": "gauntlets_necro", "charges": 4 },
+          { "item": "mana_gem", "contents-group": "starting_mana_gem_7_essence" },
           { "item": "copper_knife", "container-item": "sheath" },
           { "group": "charged_matches" }
         ]
@@ -247,7 +332,7 @@
         ],
         "entries": [
           { "item": "knife_hunting", "container-item": "sheath" },
-          { "item": "essence", "count": 10 },
+          { "item": "mana_gem", "contents-group": "starting_mana_gem_14_essence" },
           { "item": "q_staff", "custom-flags": [ "auto_wield" ] },
           { "group": "charged_matches" }
         ]
@@ -283,7 +368,11 @@
           "book_potioncraft",
           "book_bloodmagic"
         ],
-        "entries": [ { "item": "blood_athame", "container-item": "sheath" }, { "group": "charged_matches" } ]
+        "entries": [
+          { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_36_blood_essence" },
+          { "item": "blood_athame", "container-item": "sheath" },
+          { "group": "charged_matches" }
+        ]
       },
       "male": [ "boxer_shorts", "dress_shirt", "pants" ],
       "female": [ "bra", "panties", "dress" ]
@@ -315,6 +404,7 @@
     "items": {
       "both": {
         "items": [
+          "armor_wyrm",
           "duster",
           "tricorne",
           "keffiyeh",
@@ -327,11 +417,11 @@
           "book_bloodmagic"
         ],
         "entries": [
-          { "item": "armor_wyrm", "ammo-item": "essence_blood", "charges": 16 },
           { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 3 },
           { "item": "shrike_misericorde", "charges": 2, "container-item": "scabbard" },
           { "item": "flintlock_pouch", "contents-group": "bandolier_flintlock_shrike" },
           { "item": "flintlock_ammo", "charges": 4 },
+          { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_45_blood_essence" },
           { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
           { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
           { "item": "vinegar", "container-item": "bottle_plastic_small" },
@@ -394,7 +484,8 @@
           { "item": "holster", "contents-group": "1911_gun_arcane_purifier" },
           { "item": "legpouch_large", "contents-group": "1911_mags_arcane_purifier" },
           { "item": "45_acp", "charges": 9 },
-          { "item": "sun_sword", "charges": 20, "container-item": "scabbard" },
+          { "item": "sun_sword", "container-item": "scabbard" },
+          { "item": "mana_gem_dull", "contents-group": "starting_mana_gem_460_dull_essence" },
           { "item": "medium_battery_cell", "charges": 500 },
           { "group": "charged_matches" },
           { "group": "charged_smart_phone" }
@@ -457,6 +548,7 @@
           { "item": "ethereal_crossbow", "charges": 20, "contents-item": "shoulder_strap" },
           { "item": "holster", "contents-group": "1911_gun_arcane_purifier" },
           { "item": "legpouch_large", "contents-group": "1911_mags_arcane_purifier" },
+          { "item": "mana_gem_dull", "contents-group": "starting_mana_gem_580_dull_essence" },
           { "item": "45_acp", "charges": 9 },
           { "item": "bandolier_shotgun", "contents-group": "bandolier_shotgun_shot_00_arcana" },
           { "group": "charged_smart_phone" }
@@ -499,6 +591,7 @@
           "gauntlets_larmor",
           "helmet_larmor",
           "patchwork_scarf",
+          "cyclopean_mirror",
           "leather_pouch",
           "charm_bone",
           "waterskin",
@@ -508,7 +601,7 @@
         ],
         "entries": [
           { "item": "spear_pestilence", "ammo-item": "essence", "charges": 9, "container-item": "spearsling" },
-          { "item": "cyclopean_mirror", "charges": 25 },
+          { "item": "mana_gem", "contents-group": "starting_mana_gem_11_essence" },
           { "item": "salt", "container-item": "bag_canvas_small", "charges": 100 },
           { "group": "charged_candle" },
           { "item": "sewing_kit", "charges": 50 },
@@ -517,7 +610,7 @@
       },
       "female": [ "chestwrap" ]
     },
-    "traits": [ "PROF_CHALICE" ],
+    "traits": [ "PROF_CHALICE2" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -542,7 +635,7 @@
           "book_syncretism",
           "pockknife"
         ],
-        "entries": [ { "group": "charged_matches" } ]
+        "entries": [ { "item": "mana_gem", "contents-group": "starting_mana_gem_4_essence" }, { "group": "charged_matches" } ]
       },
       "male": [ "boxer_briefs" ],
       "female": [ "bra", "panties" ]
