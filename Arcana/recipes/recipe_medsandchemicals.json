@@ -40,7 +40,7 @@
     "time": "30 m",
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 50, 2 ],
-    "charges": 3,
+    "result_mult": 3,
     "using": [ [ "forging_standard", 1 ] ],
     "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
