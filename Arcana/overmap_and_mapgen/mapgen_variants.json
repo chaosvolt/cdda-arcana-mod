@@ -2763,13 +2763,13 @@
         "+": "t_door_glass_frosted_lab_c",
         "&": "t_gates_mech_control",
         "3": "t_gutter_downspout",
-        "6": "t_console_broken",
         "F": "t_chainfence",
         "W": "t_reinforced_glass",
         "f": "t_chaingate_l"
       },
       "furniture": {
         "]": "f_bookcase",
+        "6": "f_console_broken",
         "C": [ "f_crate_c", "f_cardboard_box" ],
         "S": "f_sofa",
         "b": "f_bench",
