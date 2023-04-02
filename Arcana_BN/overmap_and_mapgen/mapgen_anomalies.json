@@ -149,7 +149,6 @@
       "furniture": { "%": "f_rubble", "$": "f_rubble", "!": "f_rubble" },
       "mapping": {
         "%": {
-          "item": [ { "item": "rock", "chance": 50, "repeat": 5 } ],
           "items": [
             { "item": "ceramics_workroom", "chance": 4 },
             { "item": "metal_workshop", "chance": 3 },
@@ -157,14 +156,12 @@
           ]
         },
         "$": {
-          "item": [ { "item": "rock", "chance": 50, "repeat": 5 } ],
           "items": [
             { "item": "ceramics_workroom", "chance": 4 },
             { "item": "metal_workshop", "chance": 3 },
             { "item": "foodintincan", "chance": 2 }
           ]
         },
-        "!": { "item": [ { "item": "rock", "chance": 50, "repeat": 5 } ] },
         "E": {
           "items": [
             { "item": "ceramics_workroom", "chance": 3 },

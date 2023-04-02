@@ -2313,14 +2313,7 @@
           ]
         },
         "^": { "item": [ { "item": "rock", "count": [ 1, 4 ] } ] },
-        "a": {
-          "item": [
-            { "item": "scrap", "count": [ 4, 16 ] },
-            { "item": "steel_chunk", "count": [ 1, 6 ] },
-            { "item": "plut_cell", "charges": [ 0, 3 ] },
-            { "item": "lead", "charges": [ 12, 18 ] }
-          ]
-        },
+        "a": { "item": [ { "item": "plut_cell", "charges": [ 0, 3 ] }, { "item": "lead", "charges": [ 12, 18 ] } ] },
         "r": { "item": [ { "item": "rock", "count": [ 1, 4 ] } ] }
       },
       "place_loot": [
@@ -2700,10 +2693,7 @@
         }
       },
       "place_fields": [ { "x": 20, "y": 2, "field": "fd_gas_vent", "intensity": 1 } ],
-      "mapping": {
-        "%": { "item": [ { "item": "scrap", "count": [ 5, 10 ] } ] },
-        "c": { "items": [ { "item": "tools_electronics", "chance": 50, "repeat": 2 } ] }
-      },
+      "mapping": { "c": { "items": [ { "item": "tools_electronics", "chance": 50, "repeat": 2 } ] } },
       "place_loot": [
         { "group": "file_room", "x": [ 18, 19 ], "y": [ 3, 4 ], "chance": 50, "repeat": 20 },
         { "item": "arcane_purifier_intel_2", "x": [ 18, 19 ], "y": [ 6, 7 ] }
@@ -2948,8 +2938,7 @@
         ".": {
           "item": [ { "item": "bone_human", "chance": 10 }, { "item": "rag", "chance": 5 }, { "item": "leather", "chance": 5 } ],
           "items": [ { "item": "casings", "chance": 5 } ]
-        },
-        "%": { "item": [ { "item": "rock", "repeat": [ 1, 5 ] } ] }
+        }
       },
       "place_loot": [
         { "item": "survivor_mess_kit", "x": [ 9, 10 ], "y": [ 15, 16 ] },

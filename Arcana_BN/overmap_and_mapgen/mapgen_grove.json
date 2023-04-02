@@ -120,7 +120,6 @@
       "palettes": [ "arcana_palette" ],
       "terrain": { "|": "t_concrete_wall", "%": "t_rock_floor", "R": "t_root_wall_arcana" },
       "furniture": { "%": "f_rubble_rock" },
-      "mapping": { "%": { "item": [ { "item": "rock", "repeat": [ 5, 10 ] } ] } },
       "items": {
         "{": [ { "item": "magic_crafting", "chance": 50, "repeat": 2 }, { "item": "magic_consumables", "chance": 25, "repeat": 2 } ],
         "]": [ { "item": "unaligned_arcanist_books", "chance": 50, "repeat": 3 } ]

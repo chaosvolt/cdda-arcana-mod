@@ -345,7 +345,6 @@
         "%": [ "t_rock_floor", [ "t_floor_resin", 2 ] ]
       },
       "furniture": { "%": "f_rubble_rock", "C": "f_coffin_c" },
-      "mapping": { "%": { "item": [ { "item": "rock", "repeat": [ 5, 10 ] } ] } },
       "items": {
         "C": [ { "item": "cleansing_flame_casualties_old", "chance": 100 } ],
         "a": [ { "item": "curious_structure_tomb_offerings", "chance": 90 } ]

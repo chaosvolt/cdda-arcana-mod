@@ -519,10 +519,6 @@
           "y": 45
         }
       ],
-      "mapping": {
-        "^": { "item": [ { "item": "scrap", "repeat": [ 1, 5 ] } ] },
-        "R": { "item": [ { "item": "scrap", "repeat": [ 1, 5 ] } ] }
-      },
       "items": {
         "@": { "item": "army_bed", "chance": 50, "repeat": 2 },
         "B": [ { "item": "textbooks", "chance": 50 }, { "item": "manuals", "chance": 50 } ],
@@ -768,17 +764,13 @@
       ],
       "mapping": {
         ".": { "item": [ { "item": "bone_human", "chance": 5 } ] },
-        "*": { "item": [ { "item": "scrap", "repeat": [ 1, 5 ] } ] },
-        "^": { "item": [ { "item": "scrap", "repeat": [ 1, 5 ] } ] },
         "P": {
           "item": [
             { "item": "rock", "repeat": [ 10, 22 ] },
             { "item": "scrap", "repeat": [ 4, 12 ] },
             { "item": "rebar", "repeat": [ 1, 4 ] }
           ]
-        },
-        "R": { "item": [ { "item": "scrap", "repeat": [ 1, 5 ] } ] },
-        "i": { "item": [ { "item": "rock", "repeat": [ 1, 5 ] } ] }
+        }
       },
       "items": {
         "@": { "item": "army_bed", "chance": 50, "repeat": 2 },
