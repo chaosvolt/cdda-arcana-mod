@@ -1,0 +1,23 @@
+[
+  {
+    "id": "style_cleansingflame",
+    "copy-from": "style_cleansingflame",
+    "type": "martial_art",
+    "name": { "str": "Via Gladium et Malleo" },
+    "extend": { "weapons": [ "sword_crt" ] }
+  },
+  {
+    "id": "style_shrike",
+    "copy-from": "style_shrike",
+    "type": "martial_art",
+    "name": { "str": "Shrike's Talons" },
+    "extend": { "weapons": [ "knife_crt", "crt_hatchet", "crt_hatchet_extended" ] }
+  },
+  {
+    "id": "style_veil_chosen",
+    "copy-from": "style_veil_chosen",
+    "type": "martial_art",
+    "name": { "str": "Ritual Art" },
+    "extend": { "weapons": [ "sword_crt", "blade_crt" ] }
+  }
+]
