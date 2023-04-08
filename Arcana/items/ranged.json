@@ -570,6 +570,7 @@
     "dispersion": 90,
     "durability": 10,
     "loudness": 9,
+    "energy_drain": "80 kJ",
     "ammo_effects": [ "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE_SMALL", "BOUNCE" ],
     "flags": [ "NEVER_JAMS", "TRADER_AVOID", "USES_BIONIC_POWER" ]
   },
@@ -590,6 +591,7 @@
     "dispersion": 30,
     "durability": 10,
     "loudness": 9,
+    "energy_drain": "60 kJ",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 3 ] ],
     "ammo_effects": [ "LASER", "BLINDS_EYES", "BEANBAG", "AMMO_RIFT_FOCUS_SHADOWS", "AMMO_RIFT_FOCUS_TINDALOS" ],
     "flags": [ "NEVER_JAMS", "TRADER_AVOID", "USES_BIONIC_POWER" ]

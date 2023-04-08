@@ -1019,6 +1019,8 @@
     "shape": "blast",
     "effect_str": "halo_drainlife",
     "max_level": 10,
+    "min_damage": 1,
+    "max_damage": 1,
     "min_duration": 324000,
     "max_duration": 648000,
     "duration_increment": 32400
