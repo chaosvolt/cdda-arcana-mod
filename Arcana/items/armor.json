@@ -315,10 +315,9 @@
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
-        "rigid": true,
         "spoil_multiplier": 0.9,
         "weight_multiplier": 0.25,
-        "max_contains_volume": "75 L",
+        "max_contains_volume": "50 L",
         "max_contains_weight": "150 kg",
         "moves": 80
       },
@@ -326,7 +325,6 @@
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 1,
-        "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       },
@@ -334,7 +332,6 @@
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 1,
-        "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       },
@@ -342,7 +339,6 @@
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 1,
-        "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       },
@@ -350,7 +346,6 @@
         "max_contains_volume": "5 L",
         "max_contains_weight": "25 kg",
         "moves": 1,
-        "rigid": true,
         "holster": true,
         "flag_restriction": [ "MAGIC_FOCUS" ]
       }
@@ -358,6 +353,6 @@
     "use_action": { "type": "holster", "holster_prompt": "Store what magical focus?", "holster_msg": "You store your %s" },
     "flags": [ "BELTED", "OVERSIZE", "TRADER_KEEP_EQUIPPED", "TARDIS" ],
     "material_thickness": 1,
-    "armor": [ { "encumbrance": 15, "coverage": 15, "covers": [ "torso" ], "specifically_covers": [ "torso_waist" ] } ]
+    "armor": [ { "encumbrance": [ 0, 25 ], "coverage": 15, "covers": [ "torso" ], "specifically_covers": [ "torso_waist" ] } ]
   }
 ]
