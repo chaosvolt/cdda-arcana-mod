@@ -1,0 +1,135 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "Survivor_Encampment" ],
+    "weight": 250,
+    "object": {
+      "rows": [
+        "........................",
+        ".######==========######.",
+        "##....................##",
+        "#......................#",
+        "#.||X||................#",
+        "#.|___|................#",
+        "#.|}_}|...........{{{..#",
+        "#.||X|||.......&.|||||.#",
+        "#.|____|.........$,,,|.#",
+        "#.|v___|.........-,,,|.#",
+        "#.|a_cB|.........-,HH|.#",
+        "#.||||||.........|||||.#",
+        "#............{{........#",
+        "#.||ww|||xx||ww|||ww||.#",
+        "#.|_____________|VTls|.#",
+        "#.|hh___________|Vlls|.#",
+        "#.|CCCl||||||XX||||+||.#",
+        "#.|llll|ddd_____|____|.#",
+        "#.|nlll|dh______X___D|.#",
+        "#.|nosF|___bbbb_|__BB|.#",
+        "#.||ww|||ww||ww|||ww||.#",
+        "#......................#",
+        "##mmmmmmmmmmmmmmmmmmmm##",
+        ".######################."
+      ],
+      "terrain": {
+        ".": [ [ "t_grass", 4 ], [ "t_grass_long", 2 ], [ "t_dirt", 1 ] ],
+        "#": "t_privacy_fence",
+        "=": "t_privacy_fencegate_c",
+        "|": "t_wall_wood",
+        "-": "t_splitrail_fence",
+        "$": "t_splitrail_fencegate_c",
+        ",": "t_dirtfloor",
+        "_": "t_floor",
+        "+": "t_door_c",
+        "}": "t_floor",
+        "{": "t_dirt",
+        "&": "t_water_pump",
+        "B": "t_floor",
+        "C": "t_linoleum_gray",
+        "D": "t_floor",
+        "F": "t_linoleum_gray",
+        "H": "t_dirtfloor",
+        "T": "t_linoleum_gray",
+        "V": "t_linoleum_gray",
+        "X": "t_door_boarded",
+        "a": "t_floor",
+        "b": "t_floor",
+        "c": "t_floor",
+        "d": "t_floor",
+        "h": "t_floor",
+        "l": "t_linoleum_gray",
+        "m": "t_dirtmound",
+        "n": "t_linoleum_gray",
+        "o": "t_linoleum_gray",
+        "s": "t_linoleum_gray",
+        "t": "t_floor",
+        "v": "t_floor",
+        "w": "t_curtains",
+        "x": "t_door_locked"
+      },
+      "furniture": {
+        "}": "f_locker",
+        "{": "f_rack",
+        "B": "f_bed",
+        "C": "f_counter",
+        "D": "f_dresser",
+        "F": "f_fridge",
+        "H": "f_hay",
+        "T": "f_toilet",
+        "V": "f_bathtub",
+        "a": "f_slab",
+        "b": "f_bookcase",
+        "c": "f_shackle",
+        "d": "f_desk",
+        "h": "f_chair",
+        "n": "f_cupboard",
+        "o": "f_oven",
+        "s": "f_sink",
+        "t": "f_table",
+        "v": "f_brazier"
+      },
+      "place_toilets": [ { "x": 19, "y": 19 } ],
+      "mapping": {
+        "B": { "items": { "item": "bed", "chance": 75 } },
+        "D": { "items": { "item": "dresser", "chance": 90 } },
+        "F": { "items": [ { "item": "fridge", "chance": 75 }, { "item": "fridgesnacks", "chance": 75 } ] },
+        "b": { "items": { "item": "mansion_bookcase", "chance": 100 } },
+        "o": { "items": { "item": "oven", "chance": 50 } },
+        "t": { "items": { "item": "kitchen", "chance": 25 } },
+        "n": {
+          "items": [
+            { "item": "cannedfood", "chance": 50 },
+            { "item": "cannedfood", "chance": 50 },
+            { "item": "cannedfood", "chance": 50 }
+          ]
+        },
+        "v": { "items": { "item": "cult_sacrifice", "chance": 100 } },
+        "{": { "items": [ { "item": "tools_earthworking", "chance": 75 }, { "item": "tools_carpentry", "chance": 75 } ] },
+        "}": {
+          "items": [
+            { "item": "tools_gunsmith", "chance": 90 },
+            { "item": "gunmod_common", "chance": 75 },
+            { "item": "survivor_weapons", "chance": 50 },
+            { "item": "magic_crafting", "chance": 90 },
+            { "item": "arcana_hunt_random", "chance": 75 }
+          ]
+        }
+      },
+      "place_loot": [
+        { "item": "bucket", "x": 18, "y": [ 9, 10 ], "chance": 90 },
+        { "item": "bone_human", "x": [ 8, 16 ], "y": [ 2, 12 ], "repeat": [ 10, 20 ] },
+        { "item": "recipe_surv", "x": 8, "y": 18 },
+        { "group": "reading_lights", "x": 8, "y": 18 },
+        { "group": "magic_books_postapoc", "x": [ 8, 10 ], "y": 19, "chance": 75, "repeat": 3 }
+      ],
+      "place_vehicles": [ { "vehicle": "surv_tachanka", "x": 12, "y": 8, "chance": 90, "status": -1, "rotation": 270 } ],
+      "place_monster": [
+        { "monster": "mon_dementia", "x": [ 4, 6 ], "y": [ 8, 9 ], "repeat": [ 1, 2 ] },
+        { "monster": "mon_homunculus", "x": [ 11, 15 ], "y": [ 17, 18 ] },
+        { "monster": "mon_wolf", "x": [ 9, 15 ], "y": [ 3, 11 ], "repeat": [ 5, 10 ] },
+        { "monster": "mon_horse", "x": 18, "y": 8 },
+        { "monster": "mon_horse", "x": 20, "y": 10, "chance": 50 }
+      ]
+    }
+  }
+]
