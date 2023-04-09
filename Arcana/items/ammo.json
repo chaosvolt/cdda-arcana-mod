@@ -149,7 +149,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 3,
-    "effects": [ "RECOVER_50", "IGNITE", "AMMO_ARCANA_FIRE_EFFECT", "NO_EMBED" ]
+    "effects": [ "RECOVER_50", "IGNITE", "AMMO_ARCANA_FIRE_EFFECT" ]
   },
   {
     "type": "AMMO",
@@ -172,7 +172,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 4,
-    "effects": [ "RECOVER_50", "IGNITE", "AMMO_ARCANA_FIRE_EFFECT", "NO_EMBED" ]
+    "effects": [ "RECOVER_50", "IGNITE", "AMMO_ARCANA_FIRE_EFFECT" ]
   },
   {
     "type": "AMMO",
@@ -196,7 +196,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 4,
-    "effects": [ "RECOVER_50", "BEANBAG", "AMMO_ARCANA_WATER_EFFECT", "NO_EMBED" ]
+    "effects": [ "RECOVER_50", "BEANBAG", "AMMO_ARCANA_WATER_EFFECT" ]
   },
   {
     "type": "AMMO",
@@ -219,7 +219,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 5,
-    "effects": [ "RECOVER_50", "BEANBAG", "AMMO_ARCANA_WATER_EFFECT", "NO_EMBED" ]
+    "effects": [ "RECOVER_50", "BEANBAG", "AMMO_ARCANA_WATER_EFFECT" ]
   },
   {
     "type": "AMMO",
@@ -243,7 +243,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 5,
-    "effects": [ "RECOVER_50", "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT", "NO_EMBED" ]
+    "effects": [ "RECOVER_50", "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT" ]
   },
   {
     "type": "AMMO",
@@ -266,7 +266,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 6,
-    "effects": [ "RECOVER_50", "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT", "NO_EMBED" ]
+    "effects": [ "RECOVER_50", "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT" ]
   },
   {
     "type": "AMMO",
@@ -290,7 +290,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 6,
-    "effects": [ "RECOVER_50", "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT", "NO_EMBED" ]
+    "effects": [ "RECOVER_50", "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT" ]
   },
   {
     "type": "AMMO",
@@ -313,7 +313,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 7,
-    "effects": [ "RECOVER_50", "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT", "NO_EMBED" ]
+    "effects": [ "RECOVER_50", "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT" ]
   },
   {
     "type": "AMMO",

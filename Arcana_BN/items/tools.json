@@ -348,6 +348,7 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
+    "revert_to": "canister_empty",
     "use_action": {
       "type": "explosion",
       "draw_explosion_radius": 1,
@@ -393,6 +394,7 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
+    "revert_to": "canister_empty",
     "use_action": {
       "type": "explosion",
       "draw_explosion_radius": 1,
@@ -438,6 +440,7 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
+    "revert_to": "canister_empty",
     "use_action": {
       "type": "explosion",
       "draw_explosion_radius": 1,
@@ -483,6 +486,7 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
+    "revert_to": "canister_empty",
     "use_action": {
       "type": "explosion",
       "draw_explosion_radius": 1,
