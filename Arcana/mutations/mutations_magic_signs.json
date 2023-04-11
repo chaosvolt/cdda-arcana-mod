@@ -129,7 +129,7 @@
     "player_display": false,
     "valid": false,
     "purifiable": false,
-    "max_stamina_modifier": 1.025,
+    "cardio_multiplier": 1.025,
     "fatigue_regen_modifier": 0.0125,
     "spells_learned": [ [ "arcana_magic_dark_lance", 1 ] ]
   },
@@ -142,7 +142,7 @@
     "player_display": false,
     "valid": false,
     "purifiable": false,
-    "max_stamina_modifier": 1.025,
+    "cardio_multiplier": 1.025,
     "fatigue_regen_modifier": 0.0125,
     "spells_learned": [ [ "arcana_magic_earthweaving", 1 ] ]
   },
@@ -320,7 +320,7 @@
     "player_display": false,
     "valid": false,
     "purifiable": false,
-    "max_stamina_modifier": 1.025,
+    "cardio_multiplier": 1.025,
     "fatigue_regen_modifier": 0.0125,
     "spells_learned": [ [ "arcana_magic_phase_shield", 1 ] ]
   },

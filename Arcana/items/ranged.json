@@ -409,7 +409,7 @@
     "dispersion": 60,
     "durability": 7,
     "loudness": 35,
-    "ups_charges": 120,
+    "energy_drain": "120 kJ",
     "reload": 0,
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -422,7 +422,7 @@
       [ "underbarrel", 1 ]
     ],
     "ammo_effects": [ "PLASMA", "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE", "BOUNCE" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE" ]
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE", "USE_UPS" ]
   },
   {
     "id": "rift_focus_cannon",
@@ -618,7 +618,7 @@
     "dispersion": 15,
     "durability": 8,
     "loudness": 1,
-    "ups_charges": 240,
+    "energy_drain": "240 kJ",
     "reload": 0,
     "relic_data": {
       "passive_effects": [
@@ -647,7 +647,8 @@
       "NO_REPAIR",
       "UNBREAKABLE_MELEE",
       "NON-FOULING",
-      "NEEDS_NO_LUBE"
+      "NEEDS_NO_LUBE",
+      "USE_UPS"
     ]
   }
 ]

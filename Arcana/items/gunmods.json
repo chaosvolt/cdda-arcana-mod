@@ -22,7 +22,7 @@
     "dispersion_modifier": 50,
     "loudness_modifier": 15,
     "damage_modifier": { "damage_type": "bullet", "amount": 20 },
-    "ups_charges_modifier": 25,
+    "energy_drain_modifier": 25,
     "ammo_effects": [ "AMMO_ANOMALY_RAILGUN" ],
     "min_skills": [ [ "weapon", 4 ], [ "fabrication", 6 ], [ "electronics", 4 ], [ "magic", 5 ] ],
     "flags": [ "MAGIC_FOCUS" ]
@@ -50,7 +50,7 @@
     "dispersion_modifier": 100,
     "loudness_modifier": 30,
     "damage_modifier": { "damage_type": "bullet", "amount": 40 },
-    "ups_charges_modifier": 50,
+    "energy_drain_modifier": 50,
     "ammo_effects": [ "AMMO_ANOMALY_PLASMA" ],
     "min_skills": [ [ "weapon", 4 ], [ "fabrication", 6 ], [ "electronics", 5 ], [ "magic", 7 ] ],
     "flags": [ "MAGIC_FOCUS" ]
@@ -77,7 +77,7 @@
     "dispersion_modifier": 200,
     "loudness_modifier": 60,
     "damage_modifier": { "damage_type": "bullet", "amount": 80 },
-    "ups_charges_modifier": 100,
+    "energy_drain_modifier": 100,
     "ammo_effects": [ "AMMO_ANOMALY_NUKE" ],
     "min_skills": [ [ "weapon", 4 ], [ "fabrication", 6 ], [ "electronics", 6 ], [ "magic", 9 ] ],
     "flags": [ "MAGIC_FOCUS" ]
