@@ -129,7 +129,7 @@
         { "group": "summoner_casualties", "x": [ 12, 21 ], "y": [ 9, 11 ], "repeat": [ 1, 2 ] },
         { "group": "summoner_casualties", "x": [ 2, 6 ], "y": [ 9, 11 ], "repeat": [ 1, 2 ] },
         { "group": "summoner_casualties", "x": [ 3, 6 ], "y": [ 15, 18 ], "repeat": [ 1, 2 ] },
-        { "item": "arcanemap", "x": [ 7, 8 ], "y": 4 },
+        { "item": "arcanemap", "x": [ 7, 8 ], "y": 4, "chance": 75 },
         { "group": "unaligned_arcanist_spells", "x": [ 16, 18 ], "y": 2, "chance": 10, "repeat": 3 }
       ],
       "place_monster": [

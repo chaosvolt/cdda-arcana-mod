@@ -307,8 +307,8 @@
         { "group": "chalice_cult_gear", "x": [ 11, 12 ], "y": 23, "chance": 15, "repeat": 3 },
         { "group": "chalice_cult_gear_magic", "x": [ 11, 12 ], "y": 23, "chance": 10, "repeat": 2 },
         { "group": "chalice_cult_consumables", "x": [ 11, 12 ], "y": 22, "chance": 25, "repeat": 4 },
-        { "group": "add_apprentice", "x": [ 11, 12 ], "y": 22, "chance": 50 },
-        { "item": "arcanemap", "x": [ 11, 12 ], "y": 22, "chance": 50 }
+        { "item": "book_magicfordummies", "x": [ 11, 12 ], "y": 22, "chance": 75 },
+        { "item": "arcanemap", "x": [ 11, 12 ], "y": 22, "chance": 75 }
       ],
       "place_monster": [ { "monster": "mon_archon", "x": 7, "y": [ 11, 12 ] } ]
     }

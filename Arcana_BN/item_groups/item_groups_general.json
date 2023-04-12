@@ -269,12 +269,6 @@
     ]
   },
   {
-    "id": "add_apprentice",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [ { "item": "book_magicfordummies" } ]
-  },
-  {
     "id": "arcana_hunt_random",
     "type": "item_group",
     "items": [

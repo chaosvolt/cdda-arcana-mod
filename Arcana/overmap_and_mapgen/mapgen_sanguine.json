@@ -251,6 +251,7 @@
       "terrain": { "g": "t_floor_blue" },
       "mapping": { "b": { "items": { "item": "cult_sacrifice", "chance": 100 } } },
       "place_loot": [
+        { "item": "arcanemap", "x": 15, "y": [ 6, 12 ], "chance": 75 },
         { "item": "note_sanguine_tenet", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 90 },
         { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 50, "repeat": 15 },
         { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 10, 16 ], "chance": 5 }
