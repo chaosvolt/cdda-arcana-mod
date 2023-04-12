@@ -1,5 +1,109 @@
 [
   {
+    "result": "arcanemap",
+    "type": "uncraft",
+    "time": "30 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 10 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_grove",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_sanguine",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_chalice",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_flame",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_sanguine_tenet",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_chalice_tenet",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_flame_tenet",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_sanguine_hint",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_chalice_hint",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_flame_hint",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_starry_missive",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "note_soa_mission",
+    "type": "uncraft",
+    "time": "6 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
     "result": "essence_pure",
     "type": "uncraft",
     "skill_used": "magic",
