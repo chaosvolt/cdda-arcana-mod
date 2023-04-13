@@ -21,6 +21,15 @@
         "defends your space": true,
         "knows your voice": true
       },
+      "cleansing_flame_aux": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
       "your_followers": {
         "kill on sight": false,
         "watch your back": true,
@@ -30,7 +39,55 @@
       },
       "sanguine_order_remnant": { "kill on sight": true, "knows your voice": true }
     },
+    "epilogues": [
+      { "power_min": 0, "power_max": 102, "id": "epilogue_faction_cleansing_flame_0" },
+      { "power_min": 103, "power_max": 110, "id": "epilogue_faction_cleansing_flame_103" },
+      { "power_min": 111, "power_max": 115, "id": "epilogue_faction_cleansing_flame_111" },
+      { "power_min": 116, "power_max": 127, "id": "epilogue_faction_cleansing_flame_116" },
+      { "power_min": 128, "id": "epilogue_faction_cleansing_flame_128" }
+    ],
     "description": "A local syncretic religious order, from some time before the cataclysm.  Now, remnants of them are dedicated to hunting down dangerous magic and otherworldly monsters."
+  },
+  {
+    "type": "faction",
+    "id": "cleansing_flame_aux",
+    "name": "Rural Church Survivors",
+    "likes_u": 0,
+    "respects_u": 0,
+    "known_by_u": false,
+    "size": 50,
+    "power": 50,
+    "food_supply": 100000,
+    "wealth": 2500000,
+    "currency": "CF_golden_scale",
+    "relations": {
+      "cleansing_flame_aux": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "cleansing_flame": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": {
+        "kill on sight": false,
+        "watch your back": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "knows your voice": true
+      }
+    },
+    "description": "An assortment of traders, scavengers, mercenaries, even the occasional arcanist.  These people have come to the rural church to trade and work with Sofia's group."
   },
   {
     "type": "faction",

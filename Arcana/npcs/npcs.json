@@ -171,7 +171,7 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_SHRIKE_MERCHANT",
-    "faction": "cleansing_flame"
+    "faction": "cleansing_flame_aux"
   },
   {
     "type": "npc",
@@ -193,7 +193,7 @@
     "attitude": 0,
     "mission": 7,
     "chat": "TALK_GUARD_CF_AUX",
-    "faction": "cleansing_flame"
+    "faction": "cleansing_flame_aux"
   },
   {
     "type": "npc",
@@ -204,7 +204,7 @@
     "attitude": 0,
     "mission": 7,
     "chat": "TALK_GUARD_CF_AUX",
-    "faction": "cleansing_flame"
+    "faction": "cleansing_flame_aux"
   },
   {
     "type": "npc",
@@ -215,7 +215,7 @@
     "attitude": 0,
     "mission": 7,
     "chat": "TALK_GUARD_CF_AUX",
-    "faction": "cleansing_flame"
+    "faction": "cleansing_flame_aux"
   },
   {
     "type": "npc",
@@ -226,7 +226,7 @@
     "attitude": 0,
     "mission": 7,
     "chat": "TALK_GUARD_CF_AUX",
-    "faction": "cleansing_flame"
+    "faction": "cleansing_flame_aux"
   },
   {
     "type": "npc",
@@ -237,7 +237,7 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_MERCHANT_CF_AUX",
-    "faction": "cleansing_flame",
+    "faction": "cleansing_flame_aux",
     "mission_offered": "MISSION_CF_AUX_A"
   },
   {
@@ -249,7 +249,7 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_MERCHANT_CF_AUX",
-    "faction": "cleansing_flame",
+    "faction": "cleansing_flame_aux",
     "mission_offered": "MISSION_CF_AUX_B"
   },
   {
@@ -261,7 +261,7 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_MERCHANT_CF_AUX",
-    "faction": "cleansing_flame",
+    "faction": "cleansing_flame_aux",
     "mission_offered": "MISSION_CF_AUX_C"
   },
   {
@@ -273,7 +273,7 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_MERCHANT_CF_AUX",
-    "faction": "cleansing_flame"
+    "faction": "cleansing_flame_aux"
   },
   {
     "type": "npc",
@@ -284,7 +284,7 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_MERCHANT_CF_AUX",
-    "faction": "cleansing_flame",
+    "faction": "cleansing_flame_aux",
     "mission_offered": "MISSION_CF_AUX_D"
   },
   {
@@ -296,7 +296,7 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_MERCHANT_CF_AUX",
-    "faction": "cleansing_flame",
+    "faction": "cleansing_flame_aux",
     "mission_offered": "MISSION_CF_AUX_E"
   },
   {
@@ -310,7 +310,7 @@
     "attitude": 0,
     "mission": 3,
     "chat": "TALK_CF_AUX_MAGE",
-    "faction": "cleansing_flame"
+    "faction": "cleansing_flame_aux"
   },
   {
     "type": "npc",
@@ -323,7 +323,7 @@
     "attitude": 0,
     "mission": 7,
     "chat": "TALK_CF_AUX_MERC",
-    "faction": "cleansing_flame"
+    "faction": "cleansing_flame_aux"
   },
   {
     "type": "npc",
