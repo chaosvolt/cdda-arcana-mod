@@ -97,7 +97,7 @@
     "respects_u": 0,
     "known_by_u": false,
     "size": 1,
-    "power": 100,
+    "power": 10,
     "food_supply": 20000,
     "wealth": 30000,
     "lone_wolf_faction": true,
@@ -121,6 +121,10 @@
       "cleansing_flame": { "knows your voice": true },
       "sanguine_order_remnant": { "knows your voice": true }
     },
+    "epilogues": [
+      { "power_min": 22, "power_max": 33, "id": "epilogue_faction_keeper_remnant_22" },
+      { "power_min": 34, "id": "epilogue_faction_keeper_remnant_34" }
+    ],
     "description": "A lone survivor, who seems to only be interested in living a quiet life away from the ruins of the old world.  Something seems off about him, though…"
   },
   {
