@@ -550,21 +550,6 @@
   },
   {
     "type": "item_group",
-    "id": "mon_one_eye_death_drops",
-    "subtype": "collection",
-    "entries": [
-      { "item": "monster_tear", "prob": 10 },
-      { "item": "essence_blood", "prob": 15, "count": [ 2, 4 ] },
-      { "group": "subway", "prob": 40 },
-      { "group": "sewer", "prob": 20 },
-      { "group": "trash", "prob": 5 },
-      { "group": "bedroom", "prob": 1 },
-      { "group": "dresser", "prob": 5 },
-      { "group": "ammo", "prob": 18 }
-    ]
-  },
-  {
-    "type": "item_group",
     "id": "mon_crawler_death_drops",
     "subtype": "collection",
     "//": "Still allowed to drop essence instead of blood essence because it counts as an aberration instead of a mutant.",
@@ -609,12 +594,6 @@
         { "item": "essence_blood", "prob": 50, "count": [ 2, 4 ] }
       ]
     }
-  },
-  {
-    "type": "item_group",
-    "id": "mon_rat_king_death_drops",
-    "subtype": "collection",
-    "entries": [ { "item": "bone_twisted", "prob": 50 }, { "item": "essence_blood", "prob": 75, "count": [ 2, 4 ] } ]
   },
   {
     "type": "item_group",

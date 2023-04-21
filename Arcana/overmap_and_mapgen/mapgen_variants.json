@@ -3207,7 +3207,7 @@
       "items": { "~": { "item": "magic_crafting", "chance": 25 } },
       "place_monster": [
         {
-          "monster": [ "mon_chud", "mon_one_eye", "mon_crawler", "mon_twisted_body", "mon_human_snail" ],
+          "monster": [ "mon_chud", "mon_crawler", "mon_twisted_body", "mon_human_snail" ],
           "x": [ 0, 4 ],
           "y": [ 1, 5 ],
           "repeat": [ 1, 2 ]

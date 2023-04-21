@@ -315,24 +315,10 @@
     "death_drops": "mon_blob_small_deathdrops"
   },
   {
-    "id": "mon_one_eye",
-    "copy-from": "mon_one_eye",
-    "type": "MONSTER",
-    "death_drops": "mon_one_eye_death_drops",
-    "extend": { "categories": [ "CLASSIC" ] }
-  },
-  {
     "id": "mon_crawler",
     "copy-from": "mon_crawler",
     "type": "MONSTER",
     "death_drops": "mon_crawler_death_drops",
-    "extend": { "categories": [ "CLASSIC" ] }
-  },
-  {
-    "id": "mon_rat_king",
-    "copy-from": "mon_rat_king",
-    "type": "MONSTER",
-    "death_drops": "mon_rat_king_death_drops",
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
