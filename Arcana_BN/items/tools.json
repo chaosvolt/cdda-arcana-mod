@@ -98,7 +98,7 @@
     "name": { "str": "sanctified bone charm" },
     "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any creatures within 8 tiles, including allies if you're not careful.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 20 hours to charge.",
     "price_postapoc": "20 USD",
-    "max_charges": 10,
+    "max_charges": 100,
     "charges_per_use": 20,
     "flags": [ "MAGIC_FOCUS" ],
     "relic_data": { "recharge_scheme": [ { "type": "time", "req": "none", "interval": "1 h", "rate": 1 } ] },
