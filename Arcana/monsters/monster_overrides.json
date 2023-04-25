@@ -643,9 +643,7 @@
     "melee_dice_sides": 12,
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "dodge": 6,
-    "armor_bash": 4,
-    "armor_cut": 2,
-    "armor_bullet": 2,
+    "armor": { "bash": 4, "cut": 2, "bullet": 2 },
     "harvest": "human",
     "death_drops": "mon_homunculus_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "HUMAN", "REVIVES", "CLIMBS", "FILTHY" ]

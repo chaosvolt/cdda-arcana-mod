@@ -283,7 +283,7 @@
     "price": "1000 USD",
     "price_postapoc": "100 USD",
     "to_hit": 1,
-    "bashing": 1,
+    "melee_damage": { "bash": 1 },
     "material": [ "cotton", "copper" ],
     "symbol": "[",
     "looks_like": "leather_pouch",

@@ -9,7 +9,7 @@
     "volume": "2000 ml",
     "price": "100 USD",
     "price_postapoc": "10 USD",
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "material": [ "paper" ],
     "symbol": "?",
     "color": "blue",

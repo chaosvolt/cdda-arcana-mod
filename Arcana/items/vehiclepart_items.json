@@ -10,7 +10,7 @@
     "symbol": ",",
     "material": [ "steel" ],
     "volume": "6 L",
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "category": "veh_parts",
     "price": "8000 USD",
     "price_postapoc": "70 USD"
@@ -27,7 +27,7 @@
     "material": [ "steel" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "essence_type": 1000 }, "rigid": true } ],
     "volume": "6 L",
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "category": "veh_parts",
     "price": "8000 USD",
     "price_postapoc": "70 USD",
@@ -44,7 +44,7 @@
     "symbol": ":",
     "material": [ "steel" ],
     "volume": "7 L",
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "category": "veh_parts",
     "price": "9000 USD",
     "price_postapoc": "75 USD"

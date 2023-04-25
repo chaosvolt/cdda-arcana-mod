@@ -134,7 +134,7 @@
     "price": "1600 USD",
     "price_postapoc": "30 USD",
     "to_hit": -1,
-    "bashing": 6,
+    "melee_damage": { "bash": 6 },
     "material": [ "gold" ],
     "symbol": ";",
     "looks_like": "small_relic",
@@ -167,8 +167,7 @@
     "price": "240 USD",
     "price_postapoc": "20 USD",
     "to_hit": 1,
-    "bashing": 3,
-    "cutting": 16,
+    "melee_damage": { "bash": 3, "stab": 16 },
     "material": [ "silver" ],
     "symbol": "/",
     "looks_like": "knife_butcher",
@@ -184,7 +183,7 @@
         "level": 0
       }
     ],
-    "flags": [ "STAB", "SHEATH_KNIFE" ]
+    "flags": [ "SHEATH_KNIFE" ]
   },
   {
     "id": "sun_sword",
@@ -200,8 +199,7 @@
     "price": "1500 USD",
     "price_postapoc": "75 USD",
     "to_hit": 2,
-    "bashing": 10,
-    "cutting": 35,
+    "melee_damage": { "bash": 10, "cut": 35 },
     "material": [ { "type": "qt_steel", "portion": 25 }, { "type": "gold" } ],
     "symbol": "/",
     "looks_like": "arming_sword",
@@ -245,7 +243,7 @@
         "ammo_scale": 0
       }
     ],
-    "relative": { "cutting": 5 },
+    "melee_damage": { "bash": 10, "cut": 35, "heat": 6 },
     "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
@@ -263,7 +261,7 @@
     "charges_per_use": 3,
     "ammo": "essence_dull_type",
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_hammerzeit", "no_fail": true, "need_wielding": true, "level": 0 } ],
-    "relative": { "weight": "360 g", "bashing": 2 },
+    "relative": { "weight": "360 g", "melee_damage": { "bash": 2 } },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
@@ -325,7 +323,7 @@
       ]
     },
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 } ],
-    "relative": { "weight": 540, "bashing": 2 },
+    "relative": { "weight": 540, "melee_damage": { "bash": 2 } },
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
@@ -900,7 +898,7 @@
     "weight": "707 g",
     "volume": "750 ml",
     "longest_side": "45 cm",
-    "relative": { "bashing": -2 },
+    "relative": { "melee_damage": { "bash": -2 } },
     "use_action": [
       {
         "target": "bloodaxe_act",
@@ -929,8 +927,7 @@
     "price": "400 USD",
     "price_postapoc": "60 USD",
     "to_hit": 1,
-    "bashing": 8,
-    "cutting": 20,
+    "melee_damage": { "cold": 8, "cut": 20 },
     "thrown_damage": [ { "damage_type": "cold", "amount": 23 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
@@ -966,8 +963,7 @@
     "price": "1000 USD",
     "price_postapoc": "50 USD",
     "to_hit": 2,
-    "bashing": 12,
-    "cutting": 24,
+    "melee_damage": { "cold": 12, "stab": 24 },
     "material": [ "qt_steel", "silver" ],
     "symbol": "/",
     "color": "light_gray",
@@ -975,7 +971,7 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "flintlock": 2 } } ],
     "techniques": [ "RAPID", "WBLOCK_2", "PRECISE" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
-    "flags": [ "STAB", "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE", "NO_RELOAD", "NO_UNLOAD" ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE", "NO_RELOAD", "NO_UNLOAD" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -1011,8 +1007,7 @@
     "longest_side": "70 cm",
     "price": "720 USD",
     "price_postapoc": "45 USD",
-    "bashing": 9,
-    "cutting": 29,
+    "melee_damage": { "bash": 9, "cut": 29 },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 8 } } ],
     "charges_per_use": 2,
     "ammo": "essence_blood_type",
@@ -1082,7 +1077,7 @@
     "price": "6000 USD",
     "price_postapoc": "25 USD",
     "to_hit": -2,
-    "bashing": 10,
+    "melee_damage": { "bash": 10 },
     "material": [ "stone", "essencemat" ],
     "symbol": ";",
     "color": "brown",
@@ -1106,8 +1101,6 @@
     "volume": "150 ml",
     "price": "1500 USD",
     "price_postapoc": "100 USD",
-    "to_hit": -2,
-    "cutting": 1,
     "material": [ "silver", "essencemat" ],
     "symbol": ";",
     "color": "cyan",
@@ -1130,7 +1123,7 @@
     "price": "1200 USD",
     "price_postapoc": "100 USD",
     "to_hit": -2,
-    "bashing": 6,
+    "melee_damage": { "bash": 6 },
     "material": [ "stone", "gold", "diamond" ],
     "symbol": "*",
     "looks_like": "diamond",
@@ -1165,7 +1158,7 @@
     "longest_side": "60 cm",
     "price": "800 USD",
     "price_postapoc": "90 USD",
-    "bashing": 12,
+    "melee_damage": { "bash": 12 },
     "material": [ "wood", "silver" ],
     "symbol": "/",
     "looks_like": "cudgel",
@@ -1233,7 +1226,7 @@
     "material": [ "steel" ],
     "flags": [ "ALLOWS_REMOTE_USE" ],
     "volume": "7 L",
-    "bashing": 5,
+    "melee_damage": { "bash": 5 },
     "price": "8500 USD",
     "price_postapoc": "80 USD",
     "ammo": [ "battery" ],
@@ -1270,7 +1263,7 @@
     "material": [ "gold", "steel" ],
     "flags": [ "ALLOWS_REMOTE_USE" ],
     "volume": "2 L",
-    "bashing": 3,
+    "melee_damage": { "bash": 3 },
     "price": "3200 USD",
     "price_postapoc": "35 USD",
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_coalescent_offering", "no_fail": true, "level": 0 } ]
@@ -1335,7 +1328,7 @@
     "price": "9000 USD",
     "price_postapoc": "15 USD",
     "to_hit": -1,
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "material": [ "steel" ],
     "looks_like": "teleporter",
     "symbol": ";",
@@ -1355,7 +1348,7 @@
     "weight": "7500 g",
     "price_postapoc": "75 USD",
     "to_hit": -3,
-    "bashing": 8,
+    "melee_damage": { "bash": 8 },
     "material": [ "steel" ],
     "symbol": ",",
     "color": "cyan",
@@ -1380,8 +1373,7 @@
     "longest_side": "60 cm",
     "//": "Meteoric verge and moonstone scourge require items that did not exist pre-cataclysm.",
     "price_postapoc": "150 USD",
-    "bashing": 16,
-    "cutting": 4,
+    "melee_damage": { "bash": 16, "stab": 4 },
     "material": [ "steel", "gold" ],
     "symbol": "/",
     "looks_like": "i_staff",
@@ -1414,7 +1406,7 @@
         "level": 0
       }
     ],
-    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "SHEATH_SPEAR" ]
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "SHEATH_SPEAR" ]
   },
   {
     "id": "scourge_moonstone",
@@ -1431,8 +1423,7 @@
     "material": [ "leather", "stone", "silver" ],
     "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ],
     "techniques": [ "WHIP_DISARM" ],
-    "bashing": 3,
-    "cutting": 21,
+    "melee_damage": { "bash": 3, "cut": 21 },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 24 } } ],
     "ammo": "essence_blood_type",
     "relic_data": {
@@ -1485,8 +1476,7 @@
     "//": "And the third shrine item, also post-cata only.",
     "price_postapoc": "100 USD",
     "to_hit": 2,
-    "bashing": 3,
-    "cutting": 18,
+    "melee_damage": { "bash": 3, "stab": 18 },
     "material": [ "stone" ],
     "symbol": "/",
     "looks_like": "small_relic",
@@ -1530,7 +1520,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "STAB", "SHEATH_KNIFE", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [ "SHEATH_KNIFE", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "moonstone_fang_on",
@@ -1564,8 +1554,7 @@
     "price": "90000 USD",
     "price_postapoc": "150 USD",
     "to_hit": 2,
-    "bashing": 15,
-    "cutting": 41,
+    "melee_damage": { "bash": 15, "cut": 41 },
     "material": [ "qt_steel", "essencemat" ],
     "symbol": "/",
     "color": "light_gray",
@@ -1602,7 +1591,7 @@
     "price": "80000 USD",
     "price_postapoc": "120 USD",
     "to_hit": -2,
-    "bashing": 3,
+    "melee_damage": { "bash": 3 },
     "material": [ "stone", "essencemat" ],
     "symbol": "*",
     "looks_like": "petrified_eye",
@@ -1630,8 +1619,7 @@
     "price": "45000 USD",
     "price_postapoc": "120 USD",
     "to_hit": 2,
-    "bashing": 15,
-    "cutting": 41,
+    "melee_damage": { "bash": 15, "cut": 41 },
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
     "ammo": "essence_blood_type",
@@ -1682,8 +1670,7 @@
     "price": "45000 USD",
     "price_postapoc": "120 USD",
     "to_hit": 2,
-    "bashing": 15,
-    "cutting": 51,
+    "melee_damage": { "bash": 15, "cut": 41, "cold": 10 },
     "material": [ "qt_steel", "essencemat" ],
     "symbol": "/",
     "looks_like": "stormbringer",
@@ -1707,11 +1694,11 @@
     "weapon_category": [ "MEDIEVAL_SWORDS", "GREAT_SWORDS" ]
   },
   {
-	  "id": "leather_journal",
-	  "type": "TOOL",
-	  "name": { "str": "leather journal" },
-	  "copy-from": "leather_journal",
-	  "pocket_data": [
+    "id": "leather_journal",
+    "type": "TOOL",
+    "name": { "str": "leather journal" },
+    "copy-from": "leather_journal",
+    "pocket_data": [
       {
         "//": "Binding",
         "pocket_type": "CONTAINER",
@@ -1741,13 +1728,13 @@
           "death_note",
           "note_mutant_alpha_boss",
           "evac_pamphlet",
-		      "index_potioncraft",
-		     "index_scrollcraft",
-		     "index_bloodmagic",
-		     "index_hexenhammer",
-		     "index_sacrifice",
-		     "index_syncretism",
-		     "index_summoning"
+          "index_potioncraft",
+          "index_scrollcraft",
+          "index_bloodmagic",
+          "index_hexenhammer",
+          "index_sacrifice",
+          "index_syncretism",
+          "index_summoning"
         ]
       }
     ]

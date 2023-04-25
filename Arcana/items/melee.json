@@ -17,8 +17,6 @@
     "volume": "100 ml",
     "price": "80 USD",
     "price_postapoc": "8 USD",
-    "to_hit": -3,
-    "bashing": 1,
     "material": [ "silver" ],
     "symbol": ",",
     "looks_like": "jade_brooch",
@@ -54,8 +52,8 @@
     "material": [ "bone" ],
     "techniques": [ "PRECISE" ],
     "volume": "500 ml",
-    "cutting": 10,
-    "flags": [ "SPEAR", "SHEATH_KNIFE", "NO_SALVAGE" ],
+    "melee_damage": { "stab": 10 },
+    "flags": [ "SHEATH_KNIFE", "NO_SALVAGE" ],
     "price_postapoc": "5 USD"
   },
   {
@@ -99,8 +97,7 @@
     "material": [ "iron" ],
     "techniques": [ "PRECISE", "WBLOCK_1" ],
     "volume": "250 ml",
-    "cutting": 10,
-    "flags": [ "SPEAR" ],
+    "melee_damage": { "stab": 10 },
     "price_postapoc": "5 USD"
   },
   {
@@ -118,8 +115,8 @@
     "material": [ "flesh" ],
     "techniques": [ "PRECISE", "DEF_DISARM" ],
     "volume": "250 ml",
-    "cutting": 10,
-    "flags": [ "SPEAR", "MESSY" ],
+    "melee_damage": { "stab": 10 },
+    "flags": [ "MESSY" ],
     "price_postapoc": "5 USD"
   },
   {
@@ -194,8 +191,8 @@
     "//": "Obtained from amigara horrors, twisted bodies. More rarely from crawlers, things.",
     "description": "A mangled spike of woven, fused-together bones.  It might be useful, or it could be made into a trophy of some sort.",
     "to_hit": -1,
-    "cutting": 8,
-    "flags": [ "SPEAR", "NO_SALVAGE" ],
+    "melee_damage": { "stab": 8 },
+    "flags": [ "NO_SALVAGE" ],
     "material": [ "bone", "hflesh" ],
     "volume": "250 ml",
     "price_postapoc": "5 USD"
@@ -231,7 +228,7 @@
     "material": [ "wyrmskin" ],
     "weight": "120 g",
     "volume": "250 ml",
-    "bashing": 3,
+    "melee_damage": { "bash": 3 },
     "to_hit": -2
   },
   {
@@ -248,8 +245,8 @@
     "material": [ "bone" ],
     "techniques": [ "PRECISE", "RAPID" ],
     "volume": "500 ml",
-    "cutting": 8,
-    "flags": [ "SPEAR", "SHEATH_KNIFE", "NO_SALVAGE" ],
+    "melee_damage": { "stab": 8 },
+    "flags": [ "SHEATH_KNIFE", "NO_SALVAGE" ],
     "price_postapoc": "5 USD"
   },
   {
@@ -265,7 +262,7 @@
     "material": [ "flesh" ],
     "weight": "89 g",
     "volume": "250 ml",
-    "bashing": 1,
+    "melee_damage": { "bash": 1 },
     "to_hit": -2,
     "price_postapoc": "5 USD"
   },
@@ -343,7 +340,7 @@
     "material": [ "steel" ],
     "weight": "21000 g",
     "volume": "2 L",
-    "bashing": 4,
+    "melee_damage": { "bash": 4 },
     "to_hit": 1,
     "flags": [ "TRADER_AVOID" ]
   },
@@ -358,7 +355,7 @@
     "price": "200 USD",
     "price_postapoc": "5 USD",
     "to_hit": -1,
-    "bashing": 1,
+    "melee_damage": { "bash": 1 },
     "material": [ "steel", "aluminum" ],
     "symbol": ";",
     "looks_like": "weather_reader",
@@ -405,7 +402,7 @@
     "price": "10 USD",
     "price_postapoc": "1 USD",
     "to_hit": -3,
-    "bashing": 7,
+    "melee_damage": { "bash": 7 },
     "material": [ "steel" ],
     "symbol": ";",
     "color": "cyan",
@@ -422,7 +419,7 @@
     "price": "10 USD",
     "price_postapoc": "1 USD",
     "to_hit": -3,
-    "bashing": 7,
+    "melee_damage": { "bash": 7 },
     "material": [ "steel" ],
     "symbol": ";",
     "color": "cyan",
@@ -497,7 +494,7 @@
     "material": [ "steel" ],
     "volume": "250 ml",
     "weight": "300 g",
-    "bashing": 24,
+    "melee_damage": { "bash": 24 },
     "flags": [ "BIONIC_WEAPON", "UNBREAKABLE_MELEE", "TRADER_AVOID" ],
     "qualities": [ [ "HAMMER", 1 ] ],
     "techniques": [ "WBLOCK_1", "tec_weapon_kinetic_knockback" ],
