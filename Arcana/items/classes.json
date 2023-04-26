@@ -49,5 +49,21 @@
     "volume": "50 ml",
     "stack_size": 1,
     "flags": [ "NO_SALVAGE", "UNBREAKABLE_MELEE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "type": "TOOL",
+    "abstract": "essence_surge_generator_item_abstract",
+    "looks_like": "alternator_truck",
+    "name": { "str": "essence surge part abstract" },
+    "weight": "10 kg",
+    "color": "light_cyan",
+    "symbol": ":",
+    "material": [ "steel" ],
+    "volume": "6 L",
+    "melee_damage": { "bash": 4 },
+    "category": "veh_parts",
+    "price": "8000 USD",
+    "price_postapoc": "70 USD",
+    "flags": [ "TARDIS" ]
   }
 ]

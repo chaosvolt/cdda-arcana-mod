@@ -63,7 +63,7 @@
     "count": 1,
     "ammo_type": "essence_pure_type",
     "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
-    "fuel": { "energy": 1200 }
+    "fuel": { "energy": 1500 }
   },
   {
     "id": "essence_fake",

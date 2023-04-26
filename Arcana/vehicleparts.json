@@ -46,21 +46,15 @@
     "description": "A powerful electric motor relying on spatial distortion.  Outputs more energy than it consumes, but unusable as a source of free energy.  Multiple can be installed without penalty, but alternators cannot be installed on it."
   },
   {
+    "abstract": "essence_surge_generator_abstract",
     "type": "vehicle_part",
-    "id": "essence_surge_generator_part",
-    "name": { "str": "essence surge generator" },
     "symbol": "O",
     "color": "light_blue",
     "broken_symbol": "#",
     "broken_color": "dark_gray",
     "damage_modifier": 60,
     "durability": 200,
-    "description": "An exotic reactor designed to be charged with essence, broken down in a reaction that increases its potential output.  Unnaturally efficient and reliable, though limited by how precious a fuel source such otherworldly energies are.",
-    "//": "Doubles effective energy output of each essence put into it.",
-    "power": "200 W",
-    "epower": "300 kW",
-    "fuel_type": "essence",
-    "item": "essence_surge_generator_item",
+    "description": "An abstract part that essence surge generators inherit from.",
     "location": "fuel_source",
     "requirements": {
       "install": {
@@ -87,6 +81,51 @@
       { "item": "essence_dull", "count": [ 25, 50 ] }
     ],
     "damage_reduction": { "all": 10 }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "essence_surge_generator_part",
+    "copy-from": "essence_surge_generator_abstract",
+    "name": { "str": "essence surge generator" },
+    "description": "An exotic reactor that breaks down essence, in a reaction that doubles power output.  Unnaturally efficient and reliable, though limited by how precious a fuel source such otherworldly energies are.",
+    "//": "Doubles effective energy output of each essence put into it.",
+    "power": "300 W",
+    "epower": "300 kW",
+    "fuel_type": "essence",
+    "item": "essence_surge_generator_item"
+  },
+  {
+    "type": "vehicle_part",
+    "id": "essence_blood_surge_generator_part",
+    "copy-from": "essence_surge_generator_abstract",
+    "name": { "str": "blood essence surge generator" },
+    "description": "An exotic reactor that breaks down blood essence, in a reaction that doubles power output.  Unnaturally efficient and reliable, though sustaining it with magical energy made from life force may be difficult.",
+    "power": "100 W",
+    "epower": "100 kW",
+    "fuel_type": "essence_blood",
+    "item": "essence_blood_surge_generator_item"
+  },
+  {
+    "type": "vehicle_part",
+    "id": "essence_dull_surge_generator_part",
+    "copy-from": "essence_surge_generator_abstract",
+    "name": { "str": "dull essence surge generator" },
+    "description": "An exotic reactor that breaks down dull essence, in a reaction that doubles power output.  Unnaturally efficient and reliable, though it may be prohibitive to sustain it with large amounts of consecrated energy.",
+    "power": "10 W",
+    "epower": "10 kW",
+    "fuel_type": "essence_dull",
+    "item": "essence_dull_surge_generator_item"
+  },
+  {
+    "type": "vehicle_part",
+    "id": "essence_pure_surge_generator_part",
+    "copy-from": "essence_surge_generator_abstract",
+    "name": { "str": "crystallized essence surge generator" },
+    "description": "An exotic reactor that breaks down crystallized essence, in a reaction that doubles power output.  Unnaturally efficient and reliable, though surely such enormous energy density is overkill for all but the hungriest of rolling bunkers?",
+    "power": "3 kW",
+    "epower": "3000 kW",
+    "fuel_type": "essence_pure",
+    "item": "essence_pure_surge_generator_item"
   },
   {
     "type": "vehicle_part",
