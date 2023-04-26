@@ -98,6 +98,7 @@
     "techniques": [ "PRECISE", "WBLOCK_1" ],
     "volume": "250 ml",
     "melee_damage": { "stab": 10 },
+    "flags": [ "SHEATH_KNIFE", "NO_SALVAGE" ],
     "price_postapoc": "5 USD"
   },
   {

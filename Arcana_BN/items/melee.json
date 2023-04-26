@@ -41,6 +41,7 @@
     "type": "GENERIC",
     "id": "graboid_fang",
     "category": "other",
+    "weapon_category": [ "KNIVES" ],
     "//": "Obtained from graboids, rarely from dark wyrms.",
     "name": { "str": "crystalline fang" },
     "description": "A short spike of grainy, dark ivory broken off from the maw of a massive wormlike creature.  Makes a poor melee weapon, or could be made into a trophy of some sort.",
@@ -53,8 +54,8 @@
     "techniques": [ "PRECISE" ],
     "volume": "500 ml",
     "cutting": 10,
-    "flags": [ "SPEAR", "SHEATH_KNIFE", "NO_SALVAGE" ],
-    "price_postapoc": 500
+    "flags": [ "STAB", "SHEATH_KNIFE", "NO_SALVAGE" ],
+    "price_postapoc": "5 USD"
   },
   {
     "type": "GENERIC",
@@ -88,6 +89,7 @@
     "type": "GENERIC",
     "id": "iron_thorn",
     "category": "other",
+    "weapon_category": [ "KNIVES" ],
     "name": { "str": "iron thorn" },
     "description": "A curved, seven-inch spike resembling some sort of thorn or talon, with an otherworldly metallic shimmer to it.  Makes a mediocre melee weapon, or could be made into a trophy of some sort.",
     "weight": "860 g",
@@ -98,13 +100,14 @@
     "techniques": [ "PRECISE", "WBLOCK_1" ],
     "volume": "250 ml",
     "cutting": 10,
-    "flags": [ "SPEAR" ],
-    "price_postapoc": 500
+    "flags": [ "STAB", "SHEATH_KNIFE", "NO_SALVAGE" ],
+    "price_postapoc": "5 USD"
   },
   {
     "type": "GENERIC",
     "id": "dermatik_sting",
     "category": "other",
+    "weapon_category": [ "KNIVES" ],
     "//": "ID retained for compatibility reasons",
     "name": { "str": "barbed stinger" },
     "description": "An eight-inch barbed stinger, from some manner of monstrous creature.  Makes a mediocre melee weapon, or could be made into a trophy of some sort.",
@@ -117,8 +120,8 @@
     "techniques": [ "PRECISE", "DEF_DISARM" ],
     "volume": "250 ml",
     "cutting": 10,
-    "flags": [ "SPEAR", "MESSY" ],
-    "price_postapoc": 500
+    "flags": [ "STAB", "MESSY" ],
+    "price_postapoc": "5 USD"
   },
   {
     "type": "GENERIC",
@@ -184,6 +187,7 @@
     "type": "GENERIC",
     "id": "bone_twisted",
     "category": "other",
+    "weapon_category": [ "KNIVES" ],
     "name": { "str": "twisted bones", "str_pl": "twisted bones" },
     "weight": "225 g",
     "color": "white",
@@ -193,10 +197,10 @@
     "description": "A mangled spike of woven, fused-together bones.  It might be useful, or it could be made into a trophy of some sort.",
     "to_hit": -1,
     "cutting": 8,
-    "flags": [ "SPEAR", "NO_SALVAGE" ],
+    "flags": [ "STAB", "NO_SALVAGE" ],
     "material": [ "bone", "hflesh" ],
     "volume": "250 ml",
-    "price_postapoc": 500
+    "price_postapoc": "5 USD"
   },
   {
     "type": "GENERIC",
@@ -236,6 +240,7 @@
     "type": "GENERIC",
     "id": "monster_fang",
     "category": "other",
+    "weapon_category": [ "KNIVES" ],
     "//": "Obtained from hunting horrors, flying polyps.  Rarely from krecks.",
     "name": { "str": "monstrous fang" },
     "description": "A long, curved spike of unnatural ivory, that feels lighter in the hand than it should.  Makes a poor melee weapon, or could be made into a trophy of some sort.",
@@ -247,8 +252,8 @@
     "techniques": [ "PRECISE", "RAPID" ],
     "volume": "500 ml",
     "cutting": 8,
-    "flags": [ "SPEAR", "SHEATH_KNIFE", "NO_SALVAGE" ],
-    "price_postapoc": 500
+    "flags": [ "STAB", "SHEATH_KNIFE", "NO_SALVAGE" ],
+    "price_postapoc": "5 USD"
   },
   {
     "type": "GENERIC",
@@ -265,7 +270,7 @@
     "volume": "250 ml",
     "bashing": 1,
     "to_hit": -2,
-    "price_postapoc": 500
+    "price_postapoc": "5 USD"
   },
   {
     "type": "GENERIC",
@@ -488,6 +493,7 @@
     "type": "GENERIC",
     "category": "weapons",
     "id": "bio_kinetic_amplifier_weapon",
+    "weapon_category": [ "FIST_WEAPONS" ],
     "name": { "str_sp": "kinetic amplifier" },
     "description": "A band of steel slid into place over your knuckles, etched with strange markings.  When used as an unarmed weapon, it can give your strikes the ability to send victims flying, with amplified damage and armor penetration.  Its impacts have a chance of letting loose a blinding flashbang effect, making this weapon a double-edged sword without protection.",
     "color": "light_gray",

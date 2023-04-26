@@ -926,7 +926,6 @@
     "longest_side": "45 cm",
     "price": "400 USD",
     "price_postapoc": "60 USD",
-    "to_hit": 1,
     "melee_damage": { "cold": 8, "cut": 20 },
     "thrown_damage": [ { "damage_type": "cold", "amount": 23 } ],
     "material": [ "steel", "wood" ],
