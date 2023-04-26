@@ -719,7 +719,7 @@
   {
     "type": "mapgen",
     "method": "json",
-    "om_terrain": [ "t_rock_floor" ],
+    "om_terrain": [ "necropolis_b_54" ],
     "weight": 375,
     "object": {
       "fill_ter": "t_rock_floor",
