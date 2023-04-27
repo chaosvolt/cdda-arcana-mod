@@ -2,6 +2,7 @@
   {
     "type": "GENERIC",
     "category": "weapons",
+    "weapon_category": [ "FIST_WEAPONS" ],
     "id": "unbio_kinetic_amplifier_weapon",
     "name": { "str_sp": "salvaged kinetic amplifier" },
     "description": "A band of steel worn over the knuckles, etched with strange markings.  Salvaged from a CBM.  When used as an unarmed weapon, it can give your strikes the ability to send victims flying, with amplified damage and armor penetration.  Its impacts have a chance of letting loose a blinding flashbang effect, making this weapon a double-edged sword without protection.",

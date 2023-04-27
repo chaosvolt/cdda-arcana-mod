@@ -1757,8 +1757,8 @@
     "max_damage": -50,
     "effect": "attack",
     "shape": "blast",
-    "min_duration": 100,
-    "max_duration": 100
+    "min_duration": 500,
+    "max_duration": 500
   },
   {
     "id": "arcana_item_scroll_nature_regrowth",

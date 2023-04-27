@@ -1069,13 +1069,14 @@
       "hypovolemia"
     ],
     "rating": "good",
+    "max_duration": "5 s",
     "base_mods": {
-      "rad_min": [ -25, 25 ],
-      "fatigue_min": [ 0, 50 ],
-      "health_min": [ 0, -10 ],
-      "h_mod_min": [ 0, -10 ],
-      "pain_min": [ 0, 10 ],
-      "hunger_min": [ 0, 25 ]
+      "rad_min": [ -5, 5 ],
+      "fatigue_min": [ 0, 10 ],
+      "health_min": [ 0, -2 ],
+      "h_mod_min": [ 0, -2 ],
+      "pain_min": [ 0, 2 ],
+      "hunger_min": [ 0, 5 ]
     }
   },
   {
