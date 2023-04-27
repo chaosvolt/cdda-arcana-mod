@@ -315,5 +315,50 @@
     "event_type": "crosses_mutation_threshold",
     "value_constraints": { "category": { "equals": "DRAGONBLOOD" } },
     "drop_fields": [ "category" ]
+  },
+  {
+    "id": "achievement_lvl_5_arcana",
+    "type": "achievement",
+    "name": { "str": "<color_cyan>(Arcana)</color> Insight" },
+    "description": "There are things mankind was not meant to learn.  And some things we were destined to learn.",
+    "requirements": [ { "event_statistic": "num_gains_arcana_level_5", "is": ">=", "target": 1 } ],
+    "//": "Entry-level skill achievements in BN are self-hidden, as starting with equal or higher skill in chargen skips them.",
+    "hidden_by": [ "achievement_lvl_5_arcana" ]
+  },
+  {
+    "id": "num_gains_arcana_level_5",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_gains_arcana_level_5",
+    "description": { "str_sp": "arcana skill level 5 gained" }
+  },
+  {
+    "id": "avatar_gains_arcana_level_5",
+    "type": "event_transformation",
+    "event_type": "gains_skill_level",
+    "value_constraints": { "character": { "equals_statistic": "avatar_id" }, "skill": { "equals": "magic" }, "new_level": { "equals": 5 } },
+    "drop_fields": [ "character", "skill", "new_level" ]
+  },
+  {
+    "id": "achievement_lvl_10_arcana",
+    "type": "achievement",
+    "name": { "str": "<color_cyan>(Arcana)</color> Apprehension" },
+    "description": "Seek not the things that are too high for thee.  But, it's in our nature to master the unknown.",
+    "requirements": [ { "event_statistic": "num_gains_arcana_level_10", "is": ">=", "target": 1 } ],
+    "hidden_by": [ "achievement_lvl_5_arcana" ]
+  },
+  {
+    "id": "num_gains_arcana_level_10",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_gains_arcana_level_10",
+    "description": { "str_sp": "arcana skill level 10 gained" }
+  },
+  {
+    "id": "avatar_gains_arcana_level_10",
+    "type": "event_transformation",
+    "event_type": "gains_skill_level",
+    "value_constraints": { "character": { "equals_statistic": "avatar_id" }, "skill": { "equals": "magic" }, "new_level": { "equals": 10 } },
+    "drop_fields": [ "character", "skill", "new_level" ]
   }
 ]
