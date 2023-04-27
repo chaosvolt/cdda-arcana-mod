@@ -1530,7 +1530,52 @@
     "difficulty": 5,
     "time": "50 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 35 ] ], [ [ "e_scrap", 2 ] ], [ [ "copper", 70 ] ], [ [ "lead", 100 ] ], [ [ "essence_dull", 410 ] ] ]
+    "components": [
+      [ [ "scrap", 35 ] ],
+      [ [ "e_scrap", 2 ] ],
+      [ [ "copper", 70 ] ],
+      [ [ "gold_small", 100 ] ],
+      [ [ "essence_dull", 410 ] ]
+    ]
+  },
+  {
+    "result": "essence_blood_surge_generator_item",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
+    "tools": [ [ [ "blood_athame", -1 ] ] ],
+    "components": [
+      [ [ "scrap", 35 ] ],
+      [ [ "e_scrap", 2 ] ],
+      [ [ "copper", 70 ] ],
+      [ [ "silver_small", 100 ] ],
+      [ [ "essence_blood", 41 ] ]
+    ]
+  },
+  {
+    "result": "essence_dull_surge_generator_item",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": "30 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "scrap", 35 ] ], [ [ "e_scrap", 2 ] ], [ [ "copper", 170 ] ], [ [ "essence_dull", 410 ] ] ]
+  },
+  {
+    "result": "essence_pure_surge_generator_item",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "60 m",
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [
+      [ [ "scrap", 35 ] ],
+      [ [ "e_scrap", 2 ] ],
+      [ [ "copper", 70 ] ],
+      [ [ "platinum_small", 100 ] ],
+      [ [ "essence_dull", 410 ] ]
+    ]
   },
   {
     "result": "bio_essence_surge_cell",
