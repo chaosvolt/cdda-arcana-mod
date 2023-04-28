@@ -677,17 +677,18 @@
       "Healing Overexertion"
     ],
     "desc": [
-      "Drawing upon power from Beyond to heal the body can overtax body and mind.  The effects don't feel very severe now, but it might be best to recover unless it's an emergency.",
-      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
-      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
-      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
-      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult.",
-      "Drawing upon power from Beyond to heal the body is slowing your natural healing, and making exertion more difficult."
+      "Drawing upon power from Beyond to heal the body can overtax the body.  The effects don't feel very severe now, but it might be best to recover unless it's an emergency.",
+      "Drawing upon power from Beyond to heal the body is wearing you down and slowing your natural healing.",
+      "Drawing upon power from Beyond to heal the body is wearing you down and slowing your natural healing.",
+      "Drawing upon power from Beyond to heal the body is wearing you down and slowing your natural healing.",
+      "Drawing upon power from Beyond to heal the body is wearing you down and slowing your natural healing.",
+      "Drawing upon power from Beyond to heal the body is wearing you down and slowing your natural healing."
     ],
     "max_intensity": 6,
-    "max_duration": "24 h",
-    "int_dur_factor": "2 h",
+    "max_duration": "3 d",
+    "int_dur_factor": "12 h",
     "base_mods": {
+      "str_mod": [ -0.75 ],
       "health_min": [ -1 ],
       "health_tick": [ 1800, 2000 ],
       "h_mod_min": [ -1 ],
@@ -695,7 +696,15 @@
       "stamina_min": [ -5 ],
       "stamina_tick": [ 10, 12 ]
     },
-    "scaling_mods": { "health_min": [ -1, -0.8 ], "stamina_min": [ -5 ], "stamina_tick": [ -1, -0.8 ] }
+    "scaling_mods": {
+      "str_mod": [ -0.75, -0.5 ],
+      "health_min": [ -1, -0.8 ],
+      "health_tick": [ -200, -250 ],
+      "h_mod_min": [ -1, -0.8 ],
+      "h_mod_tick": [ -200, -250 ],
+      "stamina_min": [ -5 ],
+      "stamina_tick": [ -1, -0.8 ]
+    }
   },
   {
     "type": "effect_type",
@@ -707,8 +716,8 @@
       "Human minds and bodies were not made to be a conduit for such destructive energy.  Overuse won't kill you, but will make it harder to focus on spellcasting."
     ],
     "max_intensity": 6,
-    "max_duration": "24 h",
-    "int_dur_factor": "2 h",
+    "max_duration": "6 d",
+    "int_dur_factor": "24 h",
     "base_mods": {
       "int_mod": [ -1 ],
       "stamina_min": [ -5 ],
@@ -717,10 +726,11 @@
       "vomit_tick": [ 60, 120 ]
     },
     "scaling_mods": {
-      "int_mod": [ -1.25, -1 ],
+      "int_mod": [ -1.5, -1 ],
+      "per_mod": [ -1, -0.75 ],
       "stamina_min": [ -2, -1 ],
       "pain_min": [ 1, 0.5 ],
-      "pain_chance": [ -200, 100 ],
+      "pain_chance": [ -200, -100 ],
       "vomit_chance": [ -200, -100 ]
     }
   },
@@ -907,9 +917,9 @@
       "Your very essence is nothing more than fuel for the pyre…"
     ],
     "rating": "bad",
-    "max_duration": "49 d",
+    "max_duration": "21 d",
     "max_intensity": 7,
-    "int_dur_factor": "7 d",
+    "int_dur_factor": "3 d",
     "//": "This will EVENTUALLY kill you if you max out the effects, unless you're abusing magical healing.",
     "base_mods": {
       "fatigue_min": [ 1 ],
@@ -933,7 +943,8 @@
       "int_mod": [ -0.75, -0.6 ],
       "per_mod": [ -0.75, -0.6 ],
       "sleep_chance": [ 5, 4 ],
-      "hurt_chance": [ 15, 10 ]
+      "hurt_chance": [ 15, 10 ],
+      "hurt_tick": [ -240, -180 ]
     }
   },
   {
@@ -952,9 +963,9 @@
       "Using that athame so many times was a terrible mistake, you feel like you've been drained half to death…"
     ],
     "rating": "bad",
-    "max_duration": "30 d",
+    "max_duration": "6 d",
     "max_intensity": 6,
-    "int_dur_factor": "5 d",
+    "int_dur_factor": "1 d",
     "base_mods": {
       "health_min": [ 1 ],
       "health_tick": [ 3600 ],

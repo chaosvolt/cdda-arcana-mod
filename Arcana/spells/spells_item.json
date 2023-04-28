@@ -42,15 +42,15 @@
     "id": "arcana_item_athame_sanguine_art_corruption",
     "type": "SPELL",
     "name": { "str": "Sanguine Art Corruption" },
-    "description": "This inflicts the more insidious effects of the athame.  That's 2 entire days of side-effect buildup per use, by the way.",
+    "description": "This inflicts the more insidious effects of the athame, at a rate of 50 minutes per fatigue cost.",
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "effect_str": "blood_athame_side_effects",
     "effect": "attack",
     "shape": "blast",
-    "min_duration": 17280000,
-    "max_duration": 17280000
+    "min_duration": 6000000,
+    "max_duration": 6000000
   },
   {
     "type": "SPELL",
@@ -140,15 +140,15 @@
     "id": "arcana_item_chalice_offering_corruption",
     "type": "SPELL",
     "name": { "str": "Offering Corruption" },
-    "description": "This inflicts the more insidious effects of the chalice.  That's 2 entire days of side-effect buildup per use, by the way.",
+    "description": "This inflicts the more insidious effects of the chalice, at a rate of 50 minutes per fatigue cost.",
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "effect_str": "chalice_offering_side_effects",
     "effect": "attack",
     "shape": "blast",
-    "min_duration": 17280000,
-    "max_duration": 17280000
+    "min_duration": 18000000,
+    "max_duration": 18000000
   },
   {
     "type": "SPELL",

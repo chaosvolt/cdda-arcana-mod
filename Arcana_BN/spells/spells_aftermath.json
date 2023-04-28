@@ -1498,7 +1498,7 @@
     "id": "arcana_aftermath_healing_side_effects",
     "type": "SPELL",
     "name": { "str": "Healing Side Effects" },
-    "description": "This exists to grant the long-term side effects of Healing.",
+    "description": "This exists to grant the long-term side effects of Healing, 12 seconds per stamina cost of the spell.",
     "sprite": "fd_veil_light",
     "valid_targets": [ "self", "ally" ],
     "message": "",
@@ -1509,9 +1509,9 @@
     "min_range": 1,
     "max_range": 10,
     "range_increment": 0.9,
-    "min_duration": 350000,
-    "max_duration": 175000,
-    "duration_increment": -17500
+    "min_duration": 4200000,
+    "max_duration": 2100000,
+    "duration_increment": -210000
   },
   {
     "id": "arcana_aftermath_holy_flare_spike",
@@ -2132,16 +2132,16 @@
     "id": "arcana_aftermath_wave_destruction_side_effects",
     "type": "SPELL",
     "name": { "str": "Wave of Destruction Side Effects" },
-    "description": "This exists to grant long-term side effects to Wave of Destruction.",
+    "description": "This exists to grant long-term side effects to Wave of Destruction, 2 minutes per mana cost.",
     "sprite": "fd_veil_light",
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT" ],
     "effect_str": "arcane_pulse_side_effects",
     "effect": "target_attack",
-    "min_duration": 660000,
-    "max_duration": 330000,
-    "duration_increment": -16500
+    "min_duration": 7920000,
+    "max_duration": 3960000,
+    "duration_increment": -198000
   },
   {
     "id": "arcana_aftermath_wave_destruction_spike",
