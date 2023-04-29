@@ -128,7 +128,7 @@
       }
     },
     "damage_reduction": { "all": 15 },
-    "flags": [ "ENGINE" ],
+    "flags": [ "ENGINE", "E_NO_POWER_DECAY" ],
     "description": "A powerful electric motor relying on spatial distortion.  Outputs more energy than it consumes, but unusable as a source of free energy.  Multiple can be installed without penalty, but alternators cannot be installed on it."
   },
   {
@@ -250,7 +250,7 @@
         "using": [ [ "welding_standard", 5 ] ]
       }
     },
-    "flags": [ "ENGINE", "PERPETUAL" ],
+    "flags": [ "ENGINE", "PERPETUAL", "E_NO_POWER_DECAY" ],
     "breaks_into": [
       { "item": "scrap", "count": [ 1, 4 ] },
       { "item": "steel_chunk", "count": [ 1, 3 ] },
