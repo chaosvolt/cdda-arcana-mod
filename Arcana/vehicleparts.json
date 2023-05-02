@@ -43,7 +43,7 @@
     },
     "damage_reduction": { "all": 15 },
     "flags": [ "ENGINE" ],
-    "description": "A powerful electric motor relying on spatial distortion.  Outputs more energy than it consumes, but unusable as a source of free energy.  Multiple can be installed without penalty, but alternators cannot be installed on it."
+    "description": "A powerful electric motor relying on spatial distortion.  Outputs more energy than it consumes, but unusable as a source of free energy.  Multiple can be installed with no skill penalty, but alternators cannot be installed on it."
   },
   {
     "abstract": "essence_surge_generator_abstract",
@@ -137,7 +137,7 @@
     "broken_color": "dark_gray",
     "damage_modifier": 60,
     "durability": 200,
-    "description": "An exotic motor, converted into a endless source of kinetic energy with even more anomalous technology.  It serves as a motor that never drains power, though less powerful than its original form.  Still cannot be equiped with an alternator, but multiple can be installed if needed.",
+    "description": "An exotic motor, converted into a endless source of kinetic energy with even more anomalous technology.  It serves as a motor that never drains power.  Still cannot be equipped with an alternator, but multiple can be installed without skill penalty.",
     "backfire_threshold": 0.5,
     "backfire_freq": 15,
     "damaged_power_factor": 0.5,
