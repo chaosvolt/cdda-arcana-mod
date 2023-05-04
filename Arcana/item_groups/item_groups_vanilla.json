@@ -39,6 +39,19 @@
     }
   },
   {
+    "id": "cathedral_archives",
+    "copy-from": "cathedral_archives",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [
+        { "item": "book_hexenhammer", "prob": 5 },
+        { "item": "book_scrollcraft", "prob": 5 },
+        { "item": "book_sacrifice", "prob": 5 }
+      ]
+    }
+  },
+  {
     "id": "mansion_books",
     "copy-from": "mansion_books",
     "type": "item_group",
