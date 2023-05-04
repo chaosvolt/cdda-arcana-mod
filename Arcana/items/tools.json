@@ -1553,7 +1553,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "restored ritual blade" },
-    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Linger near a portal to collapse it into a form you can harvest crystallized essence from.  It will grant great gifts, but set you down a path you can't return from.",
+    "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Linger near a portal to collapse it into a form you can harvest crystallized essence from.  Use \"consume\" to offer power to the Beyond.  It will grant great gifts, but set you down a path you can't return from.  Using \"cast spell\" instead will channel its fuel into a burst of energy, restoring 1500 mana if used on yourself …or, unravel a single nearby enemy for massive damage.",
     "weight": "2267 g",
     "volume": "3 L",
     "longest_side": "140 cm",
@@ -1568,11 +1568,20 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_pure_type": 10 } } ],
     "charges_per_use": 1,
     "ammo": "essence_pure_type",
-    "use_action": {
-      "type": "consume_drug",
-      "activation_message": "You channel a sliver of essence through the blade, as an offering to the Beyond…",
-      "effects": [ { "id": "arcana_paragon_veilblade_effect", "duration": 5 } ]
-    },
+    "use_action": [
+      {
+        "type": "consume_drug",
+        "activation_message": "You channel a sliver of essence through the blade, as an offering to the Beyond…",
+        "effects": [ { "id": "arcana_paragon_veilblade_effect", "duration": 5 } ]
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_ritual_blade_restoration",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
     "relic_data": {
       "passive_effects": [
         {
