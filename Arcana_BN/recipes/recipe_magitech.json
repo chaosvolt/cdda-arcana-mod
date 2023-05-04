@@ -198,7 +198,7 @@
     ],
     "qualities": [ { "id": "WRENCH_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
     "components": [
-      [ [ "bio_chain_lightning", 1 ] ],
+      [ [ "bio_chain_lightning", 1 ], [ "bio_emp_armgun", 1 ] ],
       [ [ "cable", 60 ] ],
       [ [ "copper", 50 ], [ "scrap_copper", 25 ] ],
       [ [ "vortex_shard", 1 ] ],
@@ -253,7 +253,7 @@
     ],
     "qualities": [ { "id": "WRENCH_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
     "components": [
-      [ [ "bio_laser", 1 ] ],
+      [ [ "bio_laser", 1 ], [ "bio_heat_absorb", 1 ] ],
       [ [ "cable", 60 ] ],
       [ [ "shadow_gem", 1 ] ],
       [ [ "gold_small", 100 ] ],
@@ -423,7 +423,7 @@
     ],
     "qualities": [ { "id": "WRENCH_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
     "components": [
-      [ [ "bio_metabolics", 1 ] ],
+      [ [ "bio_metabolics", 1 ], [ "bio_ethanol", 1 ] ],
       [ [ "cable", 60 ] ],
       [ [ "copper", 50 ], [ "scrap_copper", 25 ] ],
       [ [ "mana_gem_dull", 1 ], [ "mana_gem_blood", 1 ], [ "mana_gem", 1 ], [ "mana_gem_pure", 1 ] ],
@@ -493,7 +493,12 @@
       [ "arcana_essence_any", 4 ]
     ],
     "qualities": [ { "id": "WRENCH_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
-    "components": [ [ [ "bio_time_freeze", 1 ] ], [ [ "cable", 60 ] ], [ [ "gracken_knuckles", 1 ] ], [ [ "monster_tear", 1 ] ] ],
+    "components": [
+      [ [ "bio_time_freeze", 1 ], [ "bio_uncanny_dodge", 1 ] ],
+      [ [ "cable", 60 ] ],
+      [ [ "gracken_knuckles", 1 ] ],
+      [ [ "monster_tear", 1 ] ]
+    ],
     "flags": [ "SECRET" ]
   },
   {
@@ -514,7 +519,12 @@
       [ "arcana_essence_any", 4 ]
     ],
     "qualities": [ { "id": "WRENCH_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
-    "components": [ [ [ "bio_night", 1 ] ], [ [ "cable", 60 ] ], [ [ "engraved_stone", 1 ] ], [ [ "blood_athame", 1 ] ] ],
+    "components": [
+      [ [ "bio_adrenaline", 1 ], [ "bio_leukocyte", 1 ] ],
+      [ [ "cable", 60 ] ],
+      [ [ "engraved_stone", 1 ] ],
+      [ [ "blood_athame", 1 ] ]
+    ],
     "flags": [ "SECRET" ]
   },
   {
@@ -535,7 +545,7 @@
       [ "arcana_essence_any", 4 ]
     ],
     "qualities": [ { "id": "WRENCH_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
-    "components": [ [ [ "bio_railgun", 1 ] ], [ [ "cable", 60 ] ], [ [ "monster_fang", 1 ] ] ],
+    "components": [ [ [ "bio_railgun", 1 ], [ "bio_shockwave", 1 ] ], [ [ "cable", 60 ] ], [ [ "monster_fang", 1 ] ] ],
     "flags": [ "SECRET" ]
   },
   {
