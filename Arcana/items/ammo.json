@@ -320,9 +320,10 @@
     "copy-from": "reloaded_shot_00",
     "type": "AMMO",
     "name": { "str": "purifying 00 shot" },
-    "description": "A handloaded shotgun shell, loaded with precious metals.  The addition of consecrated essence enhances its impact and turns each pellet into a mote of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
+    "description": "A handloaded shotgun shell, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
     "price": "0 cent",
     "price_postapoc": "9 USD",
+    "range": 18,
     "damage": { "damage_type": "heat", "amount": 50, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
@@ -331,10 +332,11 @@
     "copy-from": "flintlock_shot",
     "type": "AMMO",
     "name": { "str": "purifying paper shot cartridge" },
-    "description": "A black powder paper cartridge, loaded with precious metals.  The addition of consecrated essence enhances its impact and turns each pellet into a mote of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
+    "description": "A black powder paper cartridge, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
     "//": "Likely rare to non-existent before the cataclysm.",
     "price": "0 cent",
     "price_postapoc": "15 USD",
+    "range": 6,
     "damage": { "damage_type": "heat", "amount": 65, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
@@ -343,9 +345,10 @@
     "copy-from": "blun_shot",
     "type": "AMMO",
     "name": { "str": "purifying blunderbuss shot" },
-    "description": "A prepared blunderbuss shot, loaded with precious metals.  The addition of consecrated essence enhances its impact and turns each pellet into a mote of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
+    "description": "A prepared blunderbuss shot, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
     "price": "0 cent",
     "price_postapoc": "1 USD",
+    "range": 9,
     "damage": { "damage_type": "heat", "amount": 55, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   }
