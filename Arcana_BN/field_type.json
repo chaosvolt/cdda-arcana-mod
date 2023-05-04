@@ -37,7 +37,8 @@
     ],
     "half_life": "1 seconds",
     "phase": "plasma",
-    "display_field": false
+    "display_field": true,
+    "looks_like": "fd_smoke"
   },
   {
     "id": "fd_fog_arcana",
