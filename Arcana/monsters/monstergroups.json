@@ -15,7 +15,7 @@
     "monsters": [
       { "monster": "mon_gracke", "weight": 150, "cost_multiplier": 0 },
       { "monster": "mon_homunculus", "weight": 100, "cost_multiplier": 0 },
-      { "monster": "mon_mi_go", "weight": 50, "cost_multiplier": 0 },
+      { "monster": "mon_leech_blossom", "weight": 50, "cost_multiplier": 0 },
       { "monster": "mon_flesh_angel", "weight": 25, "cost_multiplier": 0 },
       { "monster": "mon_dementia", "weight": 675 }
     ]
@@ -26,7 +26,7 @@
     "monsters": [
       { "monster": "mon_blank", "weight": 150, "cost_multiplier": 0 },
       { "monster": "mon_homunculus", "weight": 100, "cost_multiplier": 0 },
-      { "monster": "mon_mi_go", "weight": 50, "cost_multiplier": 0 },
+      { "monster": "mon_albino_penguin", "weight": 50, "cost_multiplier": 0 },
       { "monster": "mon_dementia", "weight": 700 }
     ]
   },
