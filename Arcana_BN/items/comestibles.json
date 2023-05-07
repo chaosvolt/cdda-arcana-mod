@@ -25,6 +25,7 @@
       "activation_message": "You drink the potion and feel a strange numbness spread through your body.",
       "effects": [ { "id": "potion_numbness", "duration": 900 } ]
     },
+    "drop_action": { "type": "emit_actor", "emits": [ "arcana_emit_black_potion" ], "scale_qty": true },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
@@ -52,6 +53,7 @@
       "activation_message": "You drink the potion and feel wicked power spread through your body.",
       "effects": [ { "id": "potion_strength", "duration": 900 } ]
     },
+    "drop_action": { "type": "emit_actor", "emits": [ "arcana_emit_white_potion" ], "scale_qty": true },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
@@ -79,6 +81,7 @@
       "activation_message": "You drink the potion and feel a sudden tension spread through your body.",
       "effects": [ { "id": "potion_speed", "duration": 900 } ]
     },
+    "drop_action": { "type": "emit_actor", "emits": [ "arcana_emit_yellow_potion" ], "scale_qty": true },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {
@@ -102,6 +105,7 @@
     "fun": 4,
     "freezing_point": -150,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_red_potion_healing", "no_fail": true, "level": 0 },
+    "drop_action": { "type": "emit_actor", "emits": [ "arcana_emit_red_potion" ], "scale_qty": true },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
   {

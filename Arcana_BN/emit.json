@@ -13,5 +13,33 @@
     "field": "fd_dazzling",
     "qty": 4,
     "chance": 75
+  },
+  {
+    "id": "arcana_emit_black_potion",
+    "type": "emit",
+    "field": "fd_black_potion_arcana",
+    "intensity": 1,
+    "qty": 9
+  },
+  {
+    "id": "arcana_emit_white_potion",
+    "type": "emit",
+    "field": "fd_white_potion_arcana",
+    "intensity": 1,
+    "qty": 9
+  },
+  {
+    "id": "arcana_emit_yellow_potion",
+    "type": "emit",
+    "field": "fd_yellow_potion_arcana",
+    "intensity": 1,
+    "qty": 9
+  },
+  {
+    "id": "arcana_emit_red_potion",
+    "type": "emit",
+    "field": "fd_red_potion_arcana",
+    "intensity": 1,
+    "qty": 9
   }
 ]
