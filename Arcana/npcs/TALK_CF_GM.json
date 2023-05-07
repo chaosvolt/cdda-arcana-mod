@@ -336,7 +336,7 @@
       },
       {
         "text": "They might not be physical interlopers, they could be like summoned monsters.",
-        "condition": { "or": [ { "u_has_trait": "PROF_ARCANIST2" }, { "u_has_skill": { "skill": "magic", "level": 6 } } ] },
+        "condition": { "or": [ { "u_has_trait": "PROF_ARCANIST2" }, { "math": [ "u_skill('magic')", ">=", "6" ] } ] },
         "topic": "TALK_CF_GM_PRELUDE_4_ATTACKS_2_2"
       },
       { "text": "Any way we could narrow down the location?", "topic": "TALK_CF_GM_PRELUDE_4_PROGRESSION" },

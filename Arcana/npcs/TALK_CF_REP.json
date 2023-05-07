@@ -635,7 +635,7 @@
       },
       {
         "text": "I'm not sure how it'd help protect this place.",
-        "condition": { "or": [ { "u_has_effect": "cf_sofia_notes_given" }, { "u_has_skill": { "skill": "magic", "level": 1 } } ] },
+        "condition": { "or": [ { "u_has_effect": "cf_sofia_notes_given" }, { "math": [ "u_skill('magic')", ">=", "1" ] } ] },
         "switch": true,
         "topic": "TALK_CF_REP_MISSION_1_HOW"
       },
@@ -753,7 +753,7 @@
                 "THRESH_DRAGONBLOOD"
               ]
             },
-            { "u_has_skill": { "skill": "magic", "level": 1 } }
+            { "math": [ "u_skill('magic')", ">=", "1" ] }
           ]
         },
         "switch": true,

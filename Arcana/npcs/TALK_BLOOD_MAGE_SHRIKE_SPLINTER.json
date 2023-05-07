@@ -546,7 +546,7 @@
           "and": [
             {
               "or": [
-                { "u_has_skill": { "skill": "magic", "level": 7 } },
+                { "math": [ "u_skill('magic')", ">=", "7" ] },
                 {
                   "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "PROF_SANGUINE", "PROF_CHALICE", "PROF_CHALICE2" ]
                 },
