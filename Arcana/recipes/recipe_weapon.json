@@ -210,7 +210,14 @@
     "batch_time_factors": [ 80, 4 ],
     "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 10 ], [ "waterproofing", 1 ] ],
     "components": [
-      [ [ "canister_empty", 1 ], [ "clay_canister", 1 ] ],
+      [
+        [ "canister_empty", 1 ],
+        [ "can_drink", 1 ],
+        [ "clay_canister", 1 ],
+        [ "can_food", 1 ],
+        [ "flask_glass", 1 ],
+        [ "bottle_plastic_small", 1 ]
+      ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "flame_talisman", 1 ] ]
     ]
@@ -230,7 +237,14 @@
     "batch_time_factors": [ 80, 4 ],
     "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 10 ], [ "waterproofing", 1 ] ],
     "components": [
-      [ [ "canister_empty", 1 ], [ "clay_canister", 1 ] ],
+      [
+        [ "canister_empty", 1 ],
+        [ "can_drink", 1 ],
+        [ "clay_canister", 1 ],
+        [ "can_food", 1 ],
+        [ "flask_glass", 1 ],
+        [ "bottle_plastic_small", 1 ]
+      ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "water_talisman", 1 ] ]
     ]
@@ -250,7 +264,14 @@
     "batch_time_factors": [ 80, 4 ],
     "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 25 ], [ "waterproofing", 1 ] ],
     "components": [
-      [ [ "canister_empty", 1 ], [ "clay_canister", 1 ] ],
+      [
+        [ "canister_empty", 1 ],
+        [ "can_drink", 1 ],
+        [ "clay_canister", 1 ],
+        [ "can_food", 1 ],
+        [ "flask_glass", 1 ],
+        [ "bottle_plastic_small", 1 ]
+      ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "earth_talisman", 1 ] ]
     ]
@@ -270,7 +291,14 @@
     "batch_time_factors": [ 80, 4 ],
     "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 25 ], [ "waterproofing", 1 ] ],
     "components": [
-      [ [ "canister_empty", 1 ], [ "clay_canister", 1 ] ],
+      [
+        [ "canister_empty", 1 ],
+        [ "can_drink", 1 ],
+        [ "clay_canister", 1 ],
+        [ "can_food", 1 ],
+        [ "flask_glass", 1 ],
+        [ "bottle_plastic_small", 1 ]
+      ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
       [ [ "air_talisman", 1 ] ]
     ]

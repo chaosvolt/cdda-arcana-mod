@@ -333,7 +333,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "searing blast canister" },
-    "description": "This is a small canister with elemental energy bound to it.  Activate to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area immediately around it with flames.  It will also arm on its own if thrown.",
+    "description": "This is a small canister with elemental energy bound to it.  Arm it to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area around it with flames.  You can also opt to set it up as an explosive trap.",
     "weight": "550 g",
     "volume": "250 ml",
     "price_postapoc": "5 USD",
@@ -341,7 +341,7 @@
     "symbol": "*",
     "looks_like": "acidbomb",
     "color": "brown",
-    "use_action": {
+    "use_action": [{
       "target": "blast_canister_arcana_flame_act",
       "msg": "The flame blast canister glows faintly as you arm it.",
       "target_charges": 3,
@@ -350,24 +350,32 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "BOMB", "ACT_ON_RANGED_HIT" ]
+      {
+        "type": "place_trap",
+        "trap": "tr_blast_canister_arcana_flame",
+        "moves": 100,
+        "practice": 0,
+        "done_message": "You place the canister, primed to explode if disturbed."
+      }
+],
+    "flags": [ "BOMB" ]
   },
   {
     "id": "blast_canister_arcana_flame_act",
     "copy-from": "blast_canister_arcana_flame",
     "type": "TOOL",
     "name": { "str": "active searing blast canister" },
-    "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area immediately around it with flames.",
+    "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with flames.",
     "price_postapoc": "0 cent",
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
-    "revert_to": "canister_empty",
+
     "use_action": {
       "type": "explosion",
-      "draw_explosion_radius": 1,
+      "draw_explosion_radius": 2,
       "fields_type": "fd_fire",
-      "fields_radius": 1,
+      "fields_radius": 2,
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
@@ -380,7 +388,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "wintry blast canister" },
-    "description": "This is a small canister with elemental energy bound to it.  Activate to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area immediately around it with supernatural cold.  It will also arm on its own if thrown.",
+    "description": "This is a small canister with elemental energy bound to it.  Arm it to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area around it with supernatural cold.  You can also opt to set it up as an explosive trap.",
     "weight": "550 g",
     "volume": "250 ml",
     "price_postapoc": "5 USD",
@@ -388,7 +396,7 @@
     "symbol": "*",
     "looks_like": "acidbomb",
     "color": "brown",
-    "use_action": {
+    "use_action": [{
       "target": "blast_canister_arcana_water_act",
       "msg": "The wintry blast canister glows faintly as you arm it.",
       "target_charges": 3,
@@ -397,24 +405,32 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "BOMB", "ACT_ON_RANGED_HIT" ]
+      {
+        "type": "place_trap",
+        "trap": "tr_blast_canister_arcana_water",
+        "moves": 100,
+        "practice": 0,
+        "done_message": "You place the canister, primed to explode if disturbed."
+      }
+],
+    "flags": [ "BOMB" ]
   },
   {
     "id": "blast_canister_arcana_water_act",
     "copy-from": "blast_canister_arcana_water",
     "type": "TOOL",
     "name": { "str": "active wintry blast canister" },
-    "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area immediately around it with supernatural cold.",
+    "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with supernatural cold.",
     "price_postapoc": "0 cent",
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
-    "revert_to": "canister_empty",
+
     "use_action": {
       "type": "explosion",
-      "draw_explosion_radius": 1,
+      "draw_explosion_radius": 2,
       "fields_type": "fd_fog_arcana",
-      "fields_radius": 1,
+      "fields_radius": 2,
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
@@ -427,7 +443,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "earthen blast canister" },
-    "description": "This is a small canister with elemental energy bound to it.  Activate to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area immediately around it with acid.  It will also arm on its own if thrown.",
+    "description": "This is a small canister with elemental energy bound to it.  Arm it to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area around it with acid.  You can also opt to set it up as an explosive trap.",
     "weight": "550 g",
     "volume": "250 ml",
     "price_postapoc": "5 USD",
@@ -435,7 +451,7 @@
     "symbol": "*",
     "looks_like": "acidbomb",
     "color": "brown",
-    "use_action": {
+    "use_action": [{
       "target": "blast_canister_arcana_earth_act",
       "msg": "The earthen blast canister glows faintly as you arm it.",
       "target_charges": 3,
@@ -444,24 +460,32 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "BOMB", "ACT_ON_RANGED_HIT" ]
+      {
+        "type": "place_trap",
+        "trap": "tr_blast_canister_arcana_earth",
+        "moves": 100,
+        "practice": 0,
+        "done_message": "You place the canister, primed to explode if disturbed."
+      }
+],
+    "flags": [ "BOMB" ]
   },
   {
     "id": "blast_canister_arcana_earth_act",
     "copy-from": "blast_canister_arcana_earth",
     "type": "TOOL",
     "name": { "str": "active earthen blast canister" },
-    "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area immediately around it with acid.",
+    "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with acid.",
     "price_postapoc": "0 cent",
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
-    "revert_to": "canister_empty",
+
     "use_action": {
       "type": "explosion",
-      "draw_explosion_radius": 1,
+      "draw_explosion_radius": 2,
       "fields_type": "fd_acid",
-      "fields_radius": 1,
+      "fields_radius": 2,
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",
@@ -474,7 +498,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "thunderous blast canister" },
-    "description": "This is a small canister with elemental energy bound to it.  Activate to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area immediately around it with lightning.  It will also arm on its own if thrown.",
+    "description": "This is a small canister with elemental energy bound to it.  Arm it to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area around it with lightning.  You can also opt to set it up as an explosive trap.",
     "weight": "550 g",
     "volume": "250 ml",
     "price_postapoc": "5 USD",
@@ -482,7 +506,7 @@
     "symbol": "*",
     "looks_like": "acidbomb",
     "color": "brown",
-    "use_action": {
+    "use_action": [{
       "target": "blast_canister_arcana_air_act",
       "msg": "The thunderous blast canister glows faintly as you arm it.",
       "target_charges": 3,
@@ -491,24 +515,32 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "BOMB", "ACT_ON_RANGED_HIT" ]
+      {
+        "type": "place_trap",
+        "trap": "tr_blast_canister_arcana_air",
+        "moves": 100,
+        "practice": 0,
+        "done_message": "You place the canister, primed to explode if disturbed."
+      }
+],
+    "flags": [ "BOMB" ]
   },
   {
     "id": "blast_canister_arcana_air_act",
     "copy-from": "blast_canister_arcana_air",
     "type": "TOOL",
     "name": { "str": "active thunderous blast canister" },
-    "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area immediately around it with lightning.",
+    "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with lightning.",
     "price_postapoc": "0 cent",
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
-    "revert_to": "canister_empty",
+
     "use_action": {
       "type": "explosion",
-      "draw_explosion_radius": 1,
+      "draw_explosion_radius": 2,
       "fields_type": "fd_electricity",
-      "fields_radius": 1,
+      "fields_radius": 2,
       "fields_min_intensity": 1,
       "fields_max_intensity": 2,
       "no_deactivate_msg": "It would be much smarter to throw this instead.",

@@ -412,16 +412,7 @@
           { "id": "overlay_mutation_ARCANA_DRAGONHORNS", "fg": 220 },
           { "id": "overlay_female_mutation_ARCANA_PLATES", "fg": 221 },
           { "id": "overlay_male_mutation_ARCANA_PLATES", "fg": 222 },
-          {
-            "id": [
-              "tr_arcana_item_hexenhammer",
-              "tr_arcana_item_armor_wyrm",
-              "tr_arcana_item_lightning",
-              "tr_arcana_item_spear_pestilence",
-              "tr_arcana_item_lichhook"
-            ],
-            "fg": 226
-          },
+          { "id": "fd_archon_rift", "fg": 226 },
           {
             "id": [ "somen_clairvoyance_xl", "somen_clairvoyance_xl_on", "overlay_wielded_somen_clairvoyance_xl" ],
             "fg": 227
@@ -456,7 +447,11 @@
               "blast_canister_arcana_flame_act",
               "blast_canister_arcana_water_act",
               "blast_canister_arcana_earth_act",
-              "blast_canister_arcana_air_act"
+              "blast_canister_arcana_air_act",
+              "tr_blast_canister_arcana_flame",
+              "tr_blast_canister_arcana_water",
+              "tr_blast_canister_arcana_earth",
+              "tr_blast_canister_arcana_air"
             ],
             "fg": 242
           },
@@ -483,7 +478,11 @@
           { "id": "overlay_worn_divine_sealing_charm", "fg": 247 },
           { "id": [ "armor_wyrm_berserker", "overlay_wielded_armor_wyrm_berserker" ], "fg": 248 },
           { "id": "overlay_worn_armor_wyrm_berserker", "fg": 249 },
-          { "id": "overlay_worn_armor_wyrm_berserker_on", "fg": 250 }
+          { "id": "overlay_worn_armor_wyrm_berserker_on", "fg": 250 },
+          { "id": "fd_black_potion_arcana", "fg": 251 },
+          { "id": "fd_white_potion_arcana", "fg": 252 },
+          { "id": "fd_yellow_potion_arcana", "fg": 253 },
+          { "id": "fd_red_potion_arcana", "fg": 254 }
         ],
         "sprite_width": 32,
         "sprite_height": 32

@@ -134,5 +134,57 @@
     "action": "none",
     "drops": [ { "item": "essence_pure", "quantity": 1 } ],
     "benign": true
+  },
+  {
+    "type": "trap",
+    "id": "tr_blast_canister_arcana_flame",
+    "name": "placed searing blast canister",
+    "color": "brown",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 99,
+    "difficulty": 0,
+    "drops": [ { "item": "blast_canister_arcana_flame", "quantity": 1 } ],
+    "spell_data": { "id": "arcana_trap_canister_flame" }
+  },
+  {
+    "type": "trap",
+    "id": "tr_blast_canister_arcana_water",
+    "name": "placed wintry blast canister",
+    "color": "brown",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 99,
+    "difficulty": 0,
+    "drops": [ { "item": "blast_canister_arcana_water", "quantity": 1 } ],
+    "spell_data": { "id": "arcana_trap_canister_water" }
+  },
+  {
+    "type": "trap",
+    "id": "tr_blast_canister_arcana_earth",
+    "name": "placed earthen blast canister",
+    "color": "brown",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 99,
+    "difficulty": 0,
+    "drops": [ { "item": "blast_canister_arcana_earth", "quantity": 1 } ],
+    "spell_data": { "id": "arcana_trap_canister_earth" }
+  },
+  {
+    "type": "trap",
+    "id": "tr_blast_canister_arcana_air",
+    "name": "placed thunderous blast canister",
+    "color": "brown",
+    "symbol": "^",
+    "action": "spell",
+    "visibility": -1,
+    "avoidance": 99,
+    "difficulty": 0,
+    "drops": [ { "item": "blast_canister_arcana_air", "quantity": 1 } ],
+    "spell_data": { "id": "arcana_trap_canister_air" }
   }
 ]
