@@ -279,7 +279,7 @@
   },
   {
     "type": "SPELL",
-    "id": "arcana_trap_canister__sound",
+    "id": "arcana_trap_canister_air_sound",
     "name": { "str": "Blast Canister Noise" },
     "sprite": "fd_veil_light",
     "description": "Less spammy sound",
