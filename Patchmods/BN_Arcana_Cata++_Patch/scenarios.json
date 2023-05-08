@@ -37,5 +37,23 @@
     "id": "experiment_soldier_start",
     "copy-from": "experiment_soldier_start",
     "extend": { "professions": [ "arcanist_purifier", "arcanist_operator" ] }
+  },
+  {
+    "copy-from": "summer_advanced_start",
+    "type": "scenario",
+    "id": "summer_advanced_start",
+    "extend": { "professions": [ "bio_weapon_e" ] }
+  },
+  {
+    "copy-from": "ambushed",
+    "type": "scenario",
+    "id": "ambushed",
+    "extend": { "professions": [ "bio_weapon_e" ] }
+  },
+  {
+    "copy-from": "mutant",
+    "type": "scenario",
+    "id": "mutant",
+    "extend": { "professions": [ "bio_weapon_e" ] }
   }
 ]
