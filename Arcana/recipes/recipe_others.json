@@ -695,11 +695,11 @@
     "book_learn": [ [ "book_bloodmagic", 6 ] ],
     "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 3 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 } ],
-    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "book_summoning", -1 ] ], [ [ "cleric_ring", 8 ] ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "book_summoning", -1 ] ], [ [ "cleric_ring", 10 ] ] ],
     "components": [
       [ [ "draconic_heart", 1 ] ],
       [ [ "silver_glyph", 1 ] ],
-      [ [ "graboid_fang", 1 ], [ "monster_fang", 3 ], [ "wyrmskin_piece", 1 ], [ "iridescent_plate", 3 ] ]
+      [ [ "graboid_fang", 1 ], [ "monster_fang", 1 ], [ "wyrmskin_piece", 1 ], [ "iridescent_plate", 1 ] ]
     ],
     "flags": [ "SECRET" ]
   },
