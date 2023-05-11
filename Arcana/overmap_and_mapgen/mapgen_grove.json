@@ -38,10 +38,7 @@
         ".": "t_rock_floor_no_roof"
       },
       "furniture": { ".": [ "f_boulder_small", "f_boulder_medium", "f_boulder_large" ] },
-      "place_monster": [
-        { "group": "GROUP_TRIFFID", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 2, 4 ] },
-        { "group": "GROUP_NETHER_FATIGUE_FIELD", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 1, 2 ] }
-      ]
+      "place_monster": [ { "group": "GROUP_GROVESURFACE", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 3, 6 ] } ]
     }
   },
   {
@@ -79,10 +76,7 @@
       "palettes": [ "arcana_palette" ],
       "set": [ { "point": "trap", "id": "tr_portal", "x": 7, "y": 4 }, { "point": "trap", "id": "tr_portal", "x": 16, "y": 19 } ],
       "terrain": { ">": "t_slope_down", "#": "t_rock" },
-      "place_monster": [
-        { "group": "GROUP_TRIFFID", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 2, 4 ] },
-        { "group": "GROUP_NETHER_FATIGUE_FIELD", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 1, 2 ] }
-      ]
+      "place_monster": [ { "group": "GROUP_GROVESURFACE", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 3, 6 ] } ]
     }
   },
   {

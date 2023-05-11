@@ -1038,7 +1038,7 @@
     "path_settings": { "max_dist": 30 },
     "diff": 1,
     "special_attacks": [
-      [ "PARROT", 5 ],
+      [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "spell",
         "spell_data": { "id": "arcana_monster_summoner" },
@@ -1068,7 +1068,7 @@
     "dodge": 2,
     "diff": 2,
     "special_attacks": [
-      [ "PARROT", 5 ],
+      [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "gun",
         "cooldown": 5,
@@ -1112,7 +1112,7 @@
     "dodge": 3,
     "diff": 3,
     "special_attacks": [
-      [ "PARROT", 5 ],
+      [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "gun",
         "cooldown": 5,
@@ -1132,7 +1132,8 @@
         "targeting_sound": "\"May He forge your chains!\"  The maddened keeper raises its symbol of judgment!",
         "targeting_volume": 30,
         "description": "Lightning arcs from the maddened keeper's symbol of judgment!",
-        "no_ammo_sound": "a cry of anger!"
+        "no_ammo_sound": "a cry of anger!",
+        "no_crits": true
       }
     ],
     "death_drops": "mon_feral_keeper_death_drops",
@@ -1154,7 +1155,7 @@
     "dodge": 2,
     "diff": 3,
     "special_attacks": [
-      [ "PARROT", 5 ],
+      [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "gun",
         "cooldown": 5,
@@ -1174,7 +1175,8 @@
         "targeting_sound": "\"Burn!\"  The maddened sanguinist levels its hellfire staff!",
         "targeting_volume": 30,
         "description": "Flames erupt from the maddened sanguinist's hellfire staff!",
-        "no_ammo_sound": "a cry of anger!"
+        "no_ammo_sound": "a cry of anger!",
+        "no_crits": true
       }
     ],
     "death_drops": "mon_feral_sanguinist_death_drops",

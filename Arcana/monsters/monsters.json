@@ -967,7 +967,7 @@
     "path_settings": { "max_dist": 30, "allow_open_doors": true, "avoid_traps": true, "avoid_sharp": true },
     "diff": 1,
     "special_attacks": [
-      [ "PARROT", 5 ],
+      [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "spell",
         "spell_data": { "id": "arcana_monster_summoner" },
@@ -995,7 +995,7 @@
     "dodge": 2,
     "diff": 2,
     "special_attacks": [
-      [ "PARROT", 5 ],
+      [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "gun",
         "cooldown": 5,
@@ -1034,7 +1034,7 @@
     "dodge": 3,
     "diff": 3,
     "special_attacks": [
-      [ "PARROT", 5 ],
+      [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "gun",
         "cooldown": 5,
@@ -1071,7 +1071,7 @@
     "dodge": 2,
     "diff": 3,
     "special_attacks": [
-      [ "PARROT", 5 ],
+      [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "gun",
         "cooldown": 5,
