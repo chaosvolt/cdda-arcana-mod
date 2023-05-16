@@ -2316,6 +2316,7 @@
         "a": { "item": [ { "item": "plut_cell", "charges": [ 0, 3 ] }, { "item": "lead", "charges": [ 12, 18 ] } ] },
         "r": { "item": [ { "item": "rock", "count": [ 1, 4 ] } ] }
       },
+      "place_nested": [ { "chunks": [ "lab_finale_loot" ], "x": 2, "y": 17 } ],
       "place_loot": [
         { "group": "toxic_dump_equipment", "x": 19, "y": 3, "chance": 100 },
         { "group": "toxic_dump_equipment", "x": 19, "y": 4, "chance": 100 },
