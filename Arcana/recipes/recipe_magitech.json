@@ -686,6 +686,7 @@
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
     "components": [
       [ [ "arcana_mech_shem_copy", 1 ] ],
+      [ [ "arcana_mech_power_cell", 1 ] ],
       [ [ "rift_focus_cannon", 1 ] ],
       [ [ "distortion_amp_motor_item", 1 ] ],
       [ [ "bio_temporal_stimulation", 1 ] ],
@@ -700,6 +701,6 @@
       [ [ "frame", 2 ] ],
       [ [ "steel_plate", 15 ] ]
     ],
-    "flags": [ "SECRET" ]
+    "flags": [ "SECRET", "NEED_FULL_MAGAZINE" ]
   }
 ]
