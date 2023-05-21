@@ -1721,7 +1721,7 @@
   {
     "method": "json",
     "object": {
-      "fill_ter": "t_floor",
+      "fill_ter": "t_metal_floor",
       "rows": [
         ".......|//////5|........",
         ".......|-=====-|........",
@@ -1751,6 +1751,7 @@
       "palettes": [ "necropolis_b2" ],
       "terrain": { "]": "t_metal_floor" },
       "furniture": { "]": "f_displaycase" },
+      "set": [ { "square": "radiation", "amount": [ 1, 5 ], "x": 0, "x2": 23, "y": 0, "y2": 23 } ],
       "place_loot": [
         { "item": "recipe_lab_arcana", "x": [ 12, 12 ], "y": 22, "chance": 90 },
         { "group": "tools_science", "x": 8, "y": [ 16, 19 ], "chance": 40, "repeat": 10 },
