@@ -230,11 +230,11 @@
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_AMMO",
     "skill_used": "magic",
-    "skills_required": [ [ "fabrication", 4 ], [ "archery", 3 ], [ "survival", 1 ] ],
+    "skills_required": [ [ "fabrication", 4 ], [ "survival", 1 ] ],
     "difficulty": 1,
     "time": "20 m",
     "autolearn": true,
-    "book_learn": [ [ "recipe_arrows", 2 ], [ "pocket_survival", 2 ], [ "book_magicfordummies", 0 ] ],
+    "book_learn": [ [ "recipe_arrows", 0 ], [ "pocket_survival", 0 ], [ "book_magicfordummies", 0 ] ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
     "components": [
       [ [ "adhesive", 1, "LIST" ], [ "filament", 10, "LIST" ] ],
@@ -264,7 +264,7 @@
     "difficulty": 1,
     "time": "20 m",
     "autolearn": true,
-    "book_learn": [ [ "recipe_arrows", 2 ], [ "pocket_survival", 2 ], [ "book_magicfordummies", 0 ] ],
+    "book_learn": [ [ "recipe_arrows", 0 ], [ "pocket_survival", 0 ], [ "book_magicfordummies", 0 ] ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
     "components": [
       [ [ "adhesive", 1, "LIST" ], [ "filament", 20, "LIST" ] ],

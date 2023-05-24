@@ -279,7 +279,7 @@
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_AMMO",
     "skill_used": "magic",
-    "skills_required": [ [ "fabrication", 4 ], [ "archery", 3 ], [ "survival", 1 ] ],
+    "skills_required": [ [ "fabrication", 4 ], [ "archery", 1 ], [ "survival", 1 ] ],
     "difficulty": 1,
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
