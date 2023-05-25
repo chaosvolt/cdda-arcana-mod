@@ -221,7 +221,8 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.5
+    "field_intensity_variance": 0.5,
+    "spell_class": "SPELL_ACID"
   },
   {
     "id": "arcana_magic_conjure_flame",
@@ -511,7 +512,8 @@
     "energy_increment": -100,
     "min_duration": 36000,
     "max_duration": 72000,
-    "duration_increment": 3600
+    "duration_increment": 3600,
+    "spell_class": "SPELL_FREEACTION"
   },
   {
     "id": "arcana_magic_harden_senses",
@@ -604,7 +606,8 @@
     "energy_increment": -150,
     "min_duration": 60000,
     "max_duration": 120000,
-    "duration_increment": 6000
+    "duration_increment": 6000,
+    "spell_class": "SPELL_FLAMEARMOR"
   },
   {
     "id": "arcana_magic_insight",
@@ -699,7 +702,8 @@
     "energy_increment": -125,
     "min_duration": 48000,
     "max_duration": 96000,
-    "duration_increment": 4800
+    "duration_increment": 4800,
+    "spell_class": "SPELL_ELECRESIST"
   },
   {
     "id": "arcana_magic_might",
@@ -797,7 +801,8 @@
     "casting_time_increment": -8,
     "base_energy_cost": 2000,
     "final_energy_cost": 1000,
-    "energy_increment": -100
+    "energy_increment": -100,
+    "spell_class": "SPELL_PLANTS"
   },
   {
     "id": "arcana_magic_phase_shield",
@@ -930,7 +935,8 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.5
+    "field_intensity_variance": 0.5,
+    "spell_class": "SPELL_LIGHTNING"
   },
   {
     "id": "arcana_magic_sundering_quake",

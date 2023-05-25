@@ -30,6 +30,7 @@
     "cancels": [
       "ILLITERATE",
       "PACIFIST",
+      "SPELL_CLARITY",
       "SPELL_SHADOWSNAKES",
       "SPELL_SUMMONDOG",
       "MARTIAL_ARTS_SANGUINE",
@@ -54,6 +55,8 @@
       "ILLITERATE",
       "PACIFIST",
       "SPELL_CLARITY",
+      "SPELL_SHADOWSNAKES",
+      "SPELL_SUMMONDOG",
       "MARTIAL_ARTS_SANGUINE",
       "ARCANA_SCALYPATCHES",
       "ARCANA_INNERHEAT",
@@ -72,7 +75,7 @@
     "purifiable": false,
     "profession": true,
     "//": "This prevents blood mages from picking spells considered potentially too altruistic in nature, or from choosing a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
-    "cancels": [ "ILLITERATE", "SPIRITUAL", "PACIFIST", "SPELL_HEAL", "SPELL_CLERIC", "MARTIAL_ARTS_CF" ]
+    "cancels": [ "ILLITERATE", "SPIRITUAL", "PACIFIST", "SPELL_HEAL", "SPELL_PLANTS", "SPELL_CLERIC", "MARTIAL_ARTS_CF" ]
   },
   {
     "type": "mutation",
