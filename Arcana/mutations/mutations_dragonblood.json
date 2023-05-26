@@ -654,6 +654,6 @@
     "weight_capacity_modifier": 1.05,
     "passive_mods": { "str_mod": 2 },
     "hp_adjustment": 25,
-    "flags": [ "PRED4", "LARGE" ]
+    "flags": [ "PRED4", "LARGE", "PSYCHOPATH" ]
   }
 ]

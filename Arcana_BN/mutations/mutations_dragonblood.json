@@ -590,7 +590,7 @@
     "weight_capacity_modifier": 1.05,
     "hp_adjustment": 25,
     "movecost_obstacle_modifier": 1.1,
-    "flags": [ "PRED4" ],
+    "flags": [ "PRED4", "PSYCHOPATH" ],
     "body_size": "LARGE"
   }
 ]
