@@ -11,7 +11,7 @@
             { "not": { "u_has_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } },
             { "u_has_var": "necro_comms_permission", "type": "flag", "context": "rural_church", "value": "yes" },
             { "u_has_mission": "MISSION_CF_PURIFIER_1_2" },
-            { "u_is_wearing": "badge_marshal" }
+            { "u_has_var": "npc_necro_gave_clearance", "value": "yes", "type": "dialogue", "context": "necropolis" }
           ]
         }
       }
