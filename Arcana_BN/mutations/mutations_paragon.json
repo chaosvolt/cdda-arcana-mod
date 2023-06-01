@@ -20,6 +20,7 @@
       [ "LEECH_PLANT", 10 ],
       [ "MUTANT", 5 ]
     ],
+    "cancels": [ "PROF_FERAL" ],
     "allowed_category": [ "VEIL" ]
   },
   {
