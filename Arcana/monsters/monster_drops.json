@@ -80,15 +80,15 @@
     "subtype": "collection",
     "entries": [
       { "group": "default_zombie_death_drops" },
-      { "item": "shadow_gem", "prob": 10 },
-      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 }
+      { "item": "shadow_gem", "prob": 25 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 }
     ]
   },
   {
     "type": "item_group",
     "id": "mon_zougar_shady_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "shadow_gem", "prob": 10 }, { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 } ]
+    "entries": [ { "item": "shadow_gem", "prob": 25 }, { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 } ]
   },
   {
     "type": "item_group",
@@ -96,8 +96,8 @@
     "subtype": "collection",
     "entries": [
       { "group": "default_zombie_death_drops" },
-      { "item": "shadow_gem", "prob": 15 },
-      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 30 }
+      { "item": "shadow_gem", "prob": 25 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 }
     ]
   },
   {
@@ -106,8 +106,8 @@
     "subtype": "collection",
     "entries": [
       { "group": "default_zombie_death_drops" },
-      { "item": "shadow_gem", "prob": 15 },
-      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 30 }
+      { "item": "shadow_gem", "prob": 25 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 }
     ]
   },
   {
@@ -181,7 +181,7 @@
     "subtype": "collection",
     "entries": [
       { "group": "default_zombie_death_drops" },
-      { "item": "shadow_gem", "prob": 25 },
+      { "item": "shadow_gem", "prob": 50 },
       { "item": "essence_blood", "count": [ 2, 4 ] }
     ]
   },
@@ -2002,8 +2002,8 @@
     "subtype": "collection",
     "entries": [
       { "group": "mon_zombie_soldier_death_drops" },
-      { "item": "shadow_gem", "prob": 10 },
-      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 }
+      { "item": "shadow_gem", "prob": 25 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 }
     ]
   },
   {
@@ -2012,7 +2012,7 @@
     "subtype": "collection",
     "entries": [
       { "group": "mon_zombie_soldier_death_drops" },
-      { "item": "shadow_gem", "prob": 25 },
+      { "item": "shadow_gem", "prob": 50 },
       { "item": "essence_blood", "count": [ 2, 4 ] }
     ]
   },
@@ -2022,8 +2022,8 @@
     "subtype": "collection",
     "entries": [
       { "group": "mon_zombie_soldier_death_drops" },
-      { "item": "wyrmskin_piece", "prob": 10 },
-      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 }
+      { "item": "wyrmskin_piece", "prob": 25 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 }
     ]
   },
   {
@@ -2032,7 +2032,7 @@
     "subtype": "collection",
     "entries": [
       { "group": "mon_zombie_soldier_death_drops" },
-      { "item": "wyrmskin_piece", "prob": 25 },
+      { "item": "wyrmskin_piece", "prob": 50 },
       { "item": "essence_blood", "count": [ 2, 4 ] }
     ]
   },
