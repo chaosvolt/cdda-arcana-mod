@@ -283,5 +283,11 @@
         "MARTIAL_ARTS_CF"
       ]
     }
+  },
+  {
+    "type": "scenario",
+    "id": "assassination",
+    "copy-from": "assassination",
+    "extend": { "professions": [ "arcanist_shrike", "arcanist_operator" ] }
   }
 ]
