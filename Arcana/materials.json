@@ -11,7 +11,8 @@
     "dmg_adj": [ "lightly damaged", "damaged", "very damaged", "thoroughly damaged" ],
     "bash_dmg_verb": "damaged",
     "cut_dmg_verb": "damaged",
-    "fuel_data": { "energy": "1000 kJ" }
+    "fuel_data": { "energy": "1000 kJ" },
+    "repair_difficulty": 3
   },
   {
     "type": "material",
