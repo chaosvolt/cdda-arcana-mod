@@ -1276,7 +1276,7 @@
     "looks_like": "offering_chalice",
     "symbol": ":",
     "material": [ "gold", "steel" ],
-    "flags": [ "ALLOWS_REMOTE_USE", "USE_PLAYER_ENERGY" ],
+    "flags": [ "ALLOWS_REMOTE_USE", "MAGIC_FOCUS", "USE_PLAYER_ENERGY" ],
     "volume": "2 L",
     "bashing": 3,
     "price": "3200 USD",
