@@ -111,15 +111,23 @@
   {
     "id": "arcana_purification_standard",
     "type": "requirement",
-    "//": "Certain bowls or a chalice, plus fire.",
+    "//": "Certain bowls or a select number of other containers, plus fire.  General criteria is something that would have both boiling and containing quality combined in one, neither too large nor too shallow, and would either have a large enough opening to do fine work with contents while they're inside it, or involves glass containers small enough to finely manipulate.",
     "tools": [
       [
         [ "bowl_clay", -1 ],
         [ "ceramic_bowl", -1 ],
         [ "bowl_pewter", -1 ],
         [ "glass_bowl", -1 ],
+        [ "flask_glass", -1 ],
+        [ "test_tube", -1 ],
         [ "chemistry_set", -1 ],
         [ "chemistry_set_basic", -1 ],
+        [ "crucible", -1 ],
+        [ "crucible_clay", -1 ],
+        [ "pot", -1 ],
+        [ "iron_pot", -1 ],
+        [ "clay_pot", -1 ],
+        [ "pot_copper", -1 ],
         [ "offering_chalice", -1 ]
       ],
       [
