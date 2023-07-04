@@ -470,7 +470,7 @@
     "using": [ [ "blacksmithing_standard", 2 ], [ "steel_tiny", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "CHISEL", "level": 3 } ],
-    "tools": [ [ [ "swage", -1 ] ], [ [ "book_bloodmagic", -1 ] ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
     "components": [
       [ [ "silver_small", 500 ] ],
       [ [ "2x4", 1 ], [ "stick", 1 ] ],
