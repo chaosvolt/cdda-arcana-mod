@@ -31,22 +31,27 @@
     "terrain": [
       {
         "result": [
-          [ "t_grass", 20 ],
-          [ "t_grass_long", 10 ],
-          [ "t_grass_tall", 5 ],
-          [ "t_underbrush", 10 ],
-          [ "t_shrub_rose", 5 ],
-          [ "t_marloss", 1 ],
-          [ "t_shrub", 4 ],
-          [ "t_tree_young", 10 ],
-          [ "t_tree", 10 ],
-          [ "t_tree_pine", 5 ],
-          [ "t_tree_blackjack", 5 ],
-          [ "t_tree_willow", 5 ],
-          [ "t_tree_birch", 5 ],
+          [ "t_tree", 50 ],
+          [ "t_tree_pine", 15 ],
+          [ "t_tree_blackjack", 10 ],
+          [ "t_tree_willow", 10 ],
+          [ "t_tree_birch", 10 ],
           [ "t_tree_cherry", 5 ]
         ],
-        "valid_flags": [ "DIGGABLE", "TREE", "YOUNG", "FUNGUS", "SHRUB" ],
+        "valid_flags": [ "YOUNG" ],
+        "message": "Saplings bloom vibrantly."
+      },
+      {
+        "result": [
+          [ "t_grass", 50 ],
+          [ "t_grass_long", 20 ],
+          [ "t_grass_tall", 5 ],
+          [ "t_shrub", 10 ],
+          [ "t_underbrush", 5 ],
+          [ "t_shrub_rose", 5 ],
+          [ "t_tree_young", 5 ]
+        ],
+        "valid_flags": [ "DIGGABLE", "FUNGUS", "SHRUB" ],
         "message": "Plant life grows wild over the ground."
       },
       {
