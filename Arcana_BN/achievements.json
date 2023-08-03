@@ -175,7 +175,8 @@
     "name": { "str": "<color_cyan>(Arcana)</color> Never Too Deep" },
     "description": "Purge the land of a demon lurking beneath sacred ground.",
     "hidden_by": [ "achievement_arcana_monkill_spirit_of_fire" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_spirit_of_fire", "is": ">=", "target": 1 } ]
+    "kill_requirements": [ { "monster": "mon_spirit_of_fire", "is": ">=", "count": "1" } ],
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_spirit_of_fire", "is": "anything" } ]
   },
   {
     "id": "num_avatar_arcana_monkill_spirit_of_fire",
@@ -196,7 +197,8 @@
     "name": { "str": "<color_cyan>(Arcana)</color> Wild Rose" },
     "description": "Slay the beast that stalks an abandoned grove.",
     "hidden_by": [ "achievement_arcana_monkill_moruboru" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_moruboru", "is": ">=", "target": 1 } ]
+    "kill_requirements": [ { "monster": "mon_moruboru", "is": ">=", "count": "1" } ],
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_moruboru", "is": "anything" } ]
   },
   {
     "id": "num_avatar_arcana_monkill_moruboru",
@@ -217,7 +219,8 @@
     "name": { "str": "<color_cyan>(Arcana)</color> May He Forge Your Chains" },
     "description": "Kill a possessed priest, hidden away in a temple on floating stone.",
     "hidden_by": [ "achievement_arcana_monkill_archon" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_archon", "is": ">=", "target": 1 } ]
+    "kill_requirements": [ { "monster": "mon_archon", "is": ">=", "count": "1" } ],
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_archon", "is": "anything" } ]
   },
   {
     "id": "num_avatar_arcana_monkill_archon",
@@ -238,7 +241,8 @@
     "name": { "str": "<color_cyan>(Arcana)</color> Dragon Re-Slayer" },
     "description": "Put down an infested creature, dragged from the Beyond to a lost temple.",
     "hidden_by": [ "achievement_arcana_monkill_dracolich" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_dracolich", "is": ">=", "target": 1 } ]
+    "kill_requirements": [ { "monster": "mon_dracolich", "is": ">=", "count": "1" } ],
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_dracolich", "is": "anything" } ]
   },
   {
     "id": "num_avatar_arcana_monkill_dracolich",
@@ -259,7 +263,8 @@
     "name": { "str": "<color_cyan>(Arcana)</color> So Long As The Sun Shines" },
     "description": "Complete Johnathan's Missions, hunting the enemies of humanity.",
     "hidden_by": [ "achievement_arcana_npc_matthew" ],
-    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_seraphic_shade", "is": ">=", "target": 1 } ]
+    "kill_requirements": [ { "monster": "mon_seraphic_shade", "is": ">=", "count": "1" } ],
+    "requirements": [ { "event_statistic": "num_avatar_arcana_monkill_seraphic_shade", "is": "anything" } ]
   },
   {
     "id": "num_avatar_arcana_monkill_seraphic_shade",
