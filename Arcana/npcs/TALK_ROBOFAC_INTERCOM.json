@@ -60,7 +60,7 @@
         "default": true,
         "topic": "TALK_DONE"
       },
-      { "text": "Never mind.", "topic": "TALK_SCIENCE_REP" }
+      { "text": "Never mind.", "topic": "TALK_ROBOFAC_INTERCOM" }
     ]
   },
   {
@@ -79,7 +79,7 @@
         "text": "What can you tell me about this \"research directive\" you mentioned?",
         "topic": "TALK_ROBOFAC_INTERCOM_NICHOLAS_5"
       },
-      { "text": "Nevermind, I'll find someone else to help with this.", "topic": "TALK_SCIENCE_REP" }
+      { "text": "Nevermind, I'll find someone else to help with this.", "topic": "TALK_ROBOFAC_INTERCOM" }
     ]
   },
   {
@@ -93,6 +93,15 @@
         "effect": { "add_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_3" }
       },
       { "text": "Not interested.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_ROBOFAC_INTERCOM_NICHOLAS_5",
+    "type": "talk_topic",
+    "dynamic_line": "Very little intel worth talking about.  Some of them had minor connections to superportal research and advanced materials departments, but for the most part all we've ever heard from them involved dead-end projects bumbling about with xenomaterials.",
+    "responses": [
+      { "text": "Right.  You mentioned having a deal in mind?", "topic": "TALK_ROBOFAC_INTERCOM_NICHOLAS_4" },
+      { "text": "I'll ask around and see if anyone else can help.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -119,6 +128,6 @@
     "id": "TALK_ROBOFAC_INTERCOM_MISSION_4",
     "type": "talk_topic",
     "dynamic_line": "Does it look like we have the means to go gallivanting about across the surface meddling with whatever communities are out there?  If any of our other contacts are loitering around outside, try bothering them.  Just don't waste too much of their time either, we have a lot that needs doing.",
-    "responses": [ { "text": "…", "topic": "TALK_SCIENCE_REP" } ]
+    "responses": [ { "text": "…", "topic": "TALK_ROBOFAC_INTERCOM" } ]
   }
 ]
