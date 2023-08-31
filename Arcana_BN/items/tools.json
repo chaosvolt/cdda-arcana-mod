@@ -1403,7 +1403,7 @@
         "level": 0
       }
     ],
-    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS", "SHEATH_SPEAR" ]
+    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS", "SHEATH_SPEAR", "DURABLE_MELEE" ]
   },
   {
     "id": "scourge_moonstone",
@@ -1419,7 +1419,7 @@
     "volume": "2 L",
     "price_postapoc": "150 USD",
     "material": [ "leather", "stone", "silver" ],
-    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE" ],
+    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "DURABLE_MELEE" ],
     "techniques": [ "WHIP_DISARM" ],
     "bashing": 3,
     "cutting": 21,
@@ -1511,7 +1511,7 @@
       "menu_text": "Activate ward against cold",
       "type": "transform"
     },
-    "flags": [ "STAB", "SHEATH_KNIFE" ]
+    "flags": [ "STAB", "SHEATH_KNIFE", "DURABLE_MELEE" ]
   },
   {
     "id": "moonstone_fang_on",

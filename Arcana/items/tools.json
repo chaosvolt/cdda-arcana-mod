@@ -371,7 +371,11 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
-    "use_action": { "type": "message", "message": "You've already activated the %s, it would be smarter to throw this instead.", "name": "Arm" },
+    "use_action": {
+      "type": "message",
+      "message": "You've already activated the %s, it would be smarter to throw this instead.",
+      "name": "Arm"
+    },
     "countdown_action": {
       "type": "explosion",
       "draw_explosion_radius": 2,
@@ -426,7 +430,11 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
-    "use_action": { "type": "message", "message": "You've already activated the %s, it would be smarter to throw this instead.", "name": "Arm" },
+    "use_action": {
+      "type": "message",
+      "message": "You've already activated the %s, it would be smarter to throw this instead.",
+      "name": "Arm"
+    },
     "countdown_action": {
       "type": "explosion",
       "draw_explosion_radius": 2,
@@ -481,7 +489,11 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
-    "use_action": { "type": "message", "message": "You've already activated the %s, it would be smarter to throw this instead.", "name": "Arm" },
+    "use_action": {
+      "type": "message",
+      "message": "You've already activated the %s, it would be smarter to throw this instead.",
+      "name": "Arm"
+    },
     "countdown_action": {
       "type": "explosion",
       "draw_explosion_radius": 2,
@@ -536,7 +548,11 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
-    "use_action": { "type": "message", "message": "You've already activated the %s, it would be smarter to throw this instead.", "name": "Arm" },
+    "use_action": {
+      "type": "message",
+      "message": "You've already activated the %s, it would be smarter to throw this instead.",
+      "name": "Arm"
+    },
     "countdown_action": {
       "type": "explosion",
       "draw_explosion_radius": 2,
@@ -972,7 +988,11 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 5 } } ],
     "ammo": "essence_blood_type",
     "revert_to": "bloodaxe",
-    "use_action": { "type": "message", "message": "You can't dispel the effect.  Might want to try throwing it instead.", "name": "Activate explosive rune" },
+    "use_action": {
+      "type": "message",
+      "message": "You can't dispel the effect.  Might want to try throwing it instead.",
+      "name": "Activate explosive rune"
+    },
     "countdown_action": {
       "type": "explosion",
       "fields_type": "fd_blood",
@@ -1442,7 +1462,7 @@
         "level": 0
       }
     ],
-    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "SHEATH_SPEAR" ]
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "SHEATH_SPEAR", "DURABLE_MELEE" ]
   },
   {
     "id": "scourge_moonstone",
@@ -1457,7 +1477,7 @@
     "volume": "2 L",
     "price_postapoc": "150 USD",
     "material": [ "leather", "stone", "silver" ],
-    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ],
+    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "DURABLE_MELEE" ],
     "techniques": [ "WHIP_DISARM" ],
     "melee_damage": { "bash": 3, "cut": 21 },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 24 } } ],
@@ -1557,7 +1577,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "SHEATH_KNIFE", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [ "SHEATH_KNIFE", "TRADER_KEEP_EQUIPPED", "DURABLE_MELEE" ]
   },
   {
     "id": "moonstone_fang_on",
