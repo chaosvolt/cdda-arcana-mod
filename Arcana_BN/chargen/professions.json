@@ -45,8 +45,8 @@
   {
     "type": "item_group",
     "subtype": "collection",
-    "id": "starting_mana_gem_45_blood_essence",
-    "entries": [ { "item": "essence_blood", "charges": 45 } ]
+    "id": "starting_mana_gem_43_blood_essence",
+    "entries": [ { "item": "essence_blood", "charges": 43 } ]
   },
   {
     "type": "item_group",
@@ -410,20 +410,16 @@
           "flask_hip",
           "backpack_leather",
           "ref_lighter",
-          "pipe_cleaner",
-          "screwdriver",
           "bowl_clay",
           "book_bloodmagic"
         ],
         "entries": [
-          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 3 },
+          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 5 },
           { "item": "shrike_misericorde", "charges": 2, "container-item": "scabbard" },
           { "item": "flintlock_pouch", "contents-group": "bandolier_flintlock_shrike" },
-          { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_45_blood_essence" },
+          { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_43_blood_essence" },
           { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "vinegar", "container-item": "bottle_plastic_small" },
-          { "item": "lamp_oil", "container-item": "bottle_plastic_small" }
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] }
         ]
       },
       "male": [ "boxer_shorts" ],

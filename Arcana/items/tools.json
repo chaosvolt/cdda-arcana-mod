@@ -1024,7 +1024,7 @@
     "ammo": [ "flintlock" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "flintlock": 2 } } ],
     "techniques": [ "RAPID", "WBLOCK_2", "PRECISE" ],
-    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 9 ] ],
     "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE", "NO_RELOAD", "NO_UNLOAD" ],
     "relic_data": {
       "passive_effects": [
