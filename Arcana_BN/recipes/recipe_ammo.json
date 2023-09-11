@@ -413,7 +413,7 @@
     "components": [
       [ [ "gunpowder", 6 ], [ "chem_black_powder", 9 ], [ "chem_match_head_powder", 9 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
-      [ [ "essence_dull", 5 ] ]
+      [ [ "essence_dull", 10 ] ]
     ]
   },
   {
@@ -434,7 +434,7 @@
     "components": [
       [ [ "gunpowder", 3 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
-      [ [ "essence_dull", 5 ] ],
+      [ [ "essence_dull", 10 ] ],
       [ [ "paper", 1 ] ]
     ]
   },
@@ -459,7 +459,7 @@
     "components": [
       [ [ "gunpowder", 16 ], [ "chem_black_powder", 24 ], [ "chem_match_head_powder", 24 ] ],
       [ [ "silver_small", 16 ], [ "platinum_small", 10 ] ],
-      [ [ "essence_dull", 6 ] ],
+      [ [ "essence_dull", 16 ] ],
       [ [ "paper", 1 ], [ "aluminum_foil", 1 ] ]
     ]
   }
