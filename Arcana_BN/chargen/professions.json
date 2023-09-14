@@ -70,7 +70,7 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_flintlock_shrike",
-    "entries": [ { "item": "flintlock_ammo", "charges": 18 } ]
+    "entries": [ { "item": "flintlock_ammo", "charges": 20 } ]
   },
   {
     "type": "item_group",
@@ -417,6 +417,7 @@
           { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 5 },
           { "item": "shrike_misericorde", "charges": 2, "container-item": "scabbard" },
           { "item": "flintlock_pouch", "contents-group": "bandolier_flintlock_shrike" },
+          { "item": "flintlock_ammo", "charges": 8 },
           { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_43_blood_essence" },
           { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
           { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] }
