@@ -122,7 +122,7 @@
     "material": [ "iron", "silver" ],
     "symbol": "(",
     "color": "light_gray",
-    "ammo": [ "flintlock" ],
+    "ammo": [ "flintlock", "flintlockshot" ],
     "skill": "pistol",
     "range": 2,
     "ranged_damage": { "damage_type": "cold", "amount": 10 },

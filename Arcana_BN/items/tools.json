@@ -985,7 +985,7 @@
     "material": [ "iron", "silver" ],
     "symbol": "/",
     "color": "light_gray",
-    "ammo": [ "flintlock" ],
+    "ammo": [ "flintlock", "flintlockshot" ],
     "max_charges": 2,
     "techniques": [ "RAPID", "WBLOCK_2", "PRECISE" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 9 ] ],
