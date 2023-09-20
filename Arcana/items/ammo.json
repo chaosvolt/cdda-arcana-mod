@@ -334,7 +334,7 @@
     "price": "0 cent",
     "price_postapoc": "9 USD",
     "range": 27,
-    "damage": { "damage_type": "heat", "amount": 50, "armor_penetration": 10 },
+    "damage": { "damage_type": "heat", "amount": 60, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
   {

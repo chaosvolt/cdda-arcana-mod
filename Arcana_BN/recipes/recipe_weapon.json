@@ -197,7 +197,7 @@
         [ "flask_glass", 1 ],
         [ "bottle_plastic_small", 1 ]
       ],
-      [ [ "material_limestone", 1 ], [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
+      [ [ "material_limestone", 1 ], [ "material_quicklime", 1 ], [ "chem_lye", 1, "LIST" ] ],
       [ [ "flame_talisman", 1 ] ]
     ]
   },
@@ -223,7 +223,7 @@
         [ "flask_glass", 1 ],
         [ "bottle_plastic_small", 1 ]
       ],
-      [ [ "material_limestone", 1 ], [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
+      [ [ "material_limestone", 1 ], [ "material_quicklime", 1 ], [ "chem_lye", 1, "LIST" ] ],
       [ [ "water_talisman", 1 ] ]
     ]
   },
@@ -249,7 +249,7 @@
         [ "flask_glass", 1 ],
         [ "bottle_plastic_small", 1 ]
       ],
-      [ [ "material_limestone", 1 ], [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
+      [ [ "material_limestone", 1 ], [ "material_quicklime", 1 ], [ "chem_lye", 1, "LIST" ] ],
       [ [ "earth_talisman", 1 ] ]
     ]
   },
@@ -275,7 +275,7 @@
         [ "flask_glass", 1 ],
         [ "bottle_plastic_small", 1 ]
       ],
-      [ [ "material_limestone", 1 ], [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
+      [ [ "material_limestone", 1 ], [ "material_quicklime", 1 ], [ "chem_lye", 1, "LIST" ] ],
       [ [ "air_talisman", 1 ] ]
     ]
   },

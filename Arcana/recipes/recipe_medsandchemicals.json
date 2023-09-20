@@ -226,7 +226,7 @@
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "components": [
       [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ],
-      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
+      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 30 ] ],
       [ [ "lead", 20 ], [ "bismuth", 25 ], [ "copper", 25 ], [ "tin", 20 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
@@ -266,7 +266,7 @@
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "components": [
       [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ],
-      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 35 ] ],
+      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 30 ] ],
       [ [ "gold_small", 10 ], [ "silver_small", 20 ] ],
       [ [ "arcana_blood_standard", 1, "LIST" ], [ "arcana_flesh_standard", 5, "LIST" ] ]
     ],
