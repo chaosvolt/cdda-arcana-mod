@@ -329,22 +329,20 @@
     "price": "0 cent",
     "price_postapoc": "9 USD",
     "range": 30,
-    "damage": { "damage_type": "heat", "amount": 50, "armor_penetration": 10 },
+    "damage": { "damage_type": "heat", "amount": 60, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "SHOT", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
     "id": "flintlock_shot_arcana",
-    "copy-from": "flintlock_ammo",
+    "copy-from": "flintlock_shot",
     "type": "AMMO",
     "name": { "str": "purifying paper shot cartridge" },
     "description": "A black powder paper cartridge, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
     "price": "0 cent",
     "price_postapoc": "15 USD",
-    "range": 18,
+    "range": 12,
     "damage": { "damage_type": "heat", "amount": 50, "armor_penetration": 10 },
-    "dispersion": 20,
-    "loudness": 90,
-    "extend": { "effects": [ "IGNITE", "SHOT", "ARCANA_DAZZLE_SHOT" ] }
+    "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
     "id": "blun_shot_arcana",

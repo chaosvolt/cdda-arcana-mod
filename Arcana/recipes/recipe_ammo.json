@@ -130,7 +130,11 @@
     "book_learn": [ [ "book_potioncraft", 5 ], [ "book_bloodmagic", 4 ], [ "recipe_lab_arcana", 4 ] ],
     "qualities": [ { "id": "CHEM", "level": 3 }, { "id": "DISTILL", "level": 1 } ],
     "tools": [ [ [ "electrolysis_kit", 100 ] ] ],
-    "components": [ [ [ "arcana_blood_standard", 1, "LIST" ] ], [ [ "salt", 10 ] ], [ [ "material_quicklime", 5 ] ] ],
+    "components": [
+      [ [ "arcana_blood_standard", 1, "LIST" ] ],
+      [ [ "salt", 5 ] ],
+      [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 30 ] ]
+    ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "SECRET" ]
   },
@@ -474,7 +478,7 @@
     "components": [
       [ [ "gunpowder", 6 ], [ "gunpowder_pistol", 6 ], [ "gunpowder_shotgun", 6 ], [ "chem_black_powder", 9 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
-      [ [ "essence_dull", 10 ] ]
+      [ [ "essence_dull", 12 ] ]
     ]
   },
   {
