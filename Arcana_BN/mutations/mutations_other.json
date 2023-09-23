@@ -77,7 +77,7 @@
     "//": "This prevents blood mages from picking spells considered potentially too altruistic in nature, or from choosing a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
     "cancels": [ "ILLITERATE", "SPIRITUAL", "PACIFIST", "SPELL_HEAL", "SPELL_PLANTS", "SPELL_CLERIC", "MARTIAL_ARTS_CF" ],
     "//2": "This allows you to be able to butcher human corpses for blood essences regardless of other traits.",
-    "flags": [ "PSYHCOPATH" ]
+    "flags": [ "PSYCHOPATH" ]
   },
   {
     "type": "mutation",
