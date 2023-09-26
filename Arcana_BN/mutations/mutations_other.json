@@ -1,5 +1,9 @@
 [
   {
+    "id": "explorer_of_the_veil",
+    "type": "mutation_flag"
+  },
+  {
     "type": "mutation",
     "id": "MARTIAL_ARTS_CF",
     "name": { "str": "Path of Sword and Hammer" },
