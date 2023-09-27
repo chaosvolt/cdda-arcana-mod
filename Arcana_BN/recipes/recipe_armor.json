@@ -343,7 +343,7 @@
     "time": "30 m",
     "book_learn": [ [ "book_hexenhammer", 5 ] ],
     "using": [ [ "filament", 18 ], [ "steel_standard", 2 ] ],
-    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 1 } ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
     "components": [ [ [ "cloak_leather", 1 ] ], [ [ "gold_small", 200 ], [ "CF_golden_scale", 40 ] ], [ [ "essence_dull", 40 ] ] ],
     "flags": [ "SECRET" ]
@@ -360,7 +360,7 @@
     "book_learn": [ [ "book_hexenhammer", 6 ] ],
     "using": [ [ "filament", 10 ] ],
     "qualities": [
-      { "id": "HAMMER", "level": 3 },
+      { "id": "HAMMER", "level": 2 },
       { "id": "CUT", "level": 1 },
       { "id": "SEW", "level": 1 },
       { "id": "ANVIL", "level": 1 }
@@ -386,7 +386,7 @@
     "book_learn": [ [ "book_hexenhammer", 8 ], [ "book_syncretism", 7 ] ],
     "using": [ [ "filament", 5 ] ],
     "qualities": [
-      { "id": "HAMMER", "level": 3 },
+      { "id": "HAMMER", "level": 2 },
       { "id": "CUT", "level": 1 },
       { "id": "SEW", "level": 1 },
       { "id": "ANVIL", "level": 1 }

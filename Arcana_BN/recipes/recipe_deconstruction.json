@@ -132,7 +132,7 @@
     "difficulty": 1,
     "time": "10 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 20 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -142,7 +142,7 @@
     "difficulty": 2,
     "time": "20 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -152,7 +152,7 @@
     "difficulty": 4,
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -162,7 +162,7 @@
     "difficulty": 6,
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 90 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -172,7 +172,7 @@
     "difficulty": 7,
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 90 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -182,7 +182,7 @@
     "difficulty": 8,
     "time": "80 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 90 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -192,7 +192,7 @@
     "difficulty": 8,
     "time": "80 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 120 ] ], [ [ "ash", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -202,7 +202,7 @@
     "difficulty": 9,
     "time": "90 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 120 ] ] ],
+    "components": [ [ [ "essence_dull", 120 ] ], [ [ "ash", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -212,7 +212,7 @@
     "difficulty": 2,
     "time": "20 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -222,7 +222,7 @@
     "difficulty": 4,
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -232,7 +232,7 @@
     "difficulty": 6,
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -242,7 +242,7 @@
     "difficulty": 7,
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -252,7 +252,7 @@
     "difficulty": 8,
     "time": "80 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -262,7 +262,7 @@
     "difficulty": 8,
     "time": "80 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -272,7 +272,7 @@
     "difficulty": 9,
     "time": "90 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -354,7 +354,7 @@
     "difficulty": 0,
     "time": "5 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 10 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -364,7 +364,7 @@
     "difficulty": 1,
     "time": "10 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 20 ] ] ],
+    "components": [ [ [ "essence_dull", 20 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -374,7 +374,7 @@
     "difficulty": 2,
     "time": "20 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -384,7 +384,7 @@
     "difficulty": 3,
     "time": "30 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -899,7 +899,7 @@
     "time": "20 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -910,7 +910,7 @@
     "time": "20 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 30 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -921,7 +921,7 @@
     "time": "30 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -932,7 +932,7 @@
     "time": "30 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -943,7 +943,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 90 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -954,7 +954,7 @@
     "time": "30 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 90 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1115,7 +1115,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1126,7 +1126,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1137,7 +1137,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1148,7 +1148,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1159,7 +1159,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 100 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1170,7 +1170,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 100 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1181,7 +1181,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 100 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1192,7 +1192,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 100 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1203,7 +1203,7 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 110 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1214,7 +1214,7 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 110 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1225,7 +1225,7 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 110 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1236,7 +1236,7 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 110 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1247,7 +1247,7 @@
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 170 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1258,7 +1258,7 @@
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 170 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1269,7 +1269,7 @@
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 170 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1280,7 +1280,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 140 ] ] ],
+    "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1291,7 +1291,7 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 140 ] ] ],
+    "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1302,7 +1302,7 @@
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 170 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1313,7 +1313,7 @@
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 140 ] ] ],
+    "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1324,7 +1324,7 @@
     "time": "80 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 170 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1335,7 +1335,7 @@
     "time": "90 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 200 ] ] ],
+    "components": [ [ [ "essence_dull", 200 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1346,7 +1346,7 @@
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 150 ] ] ],
+    "components": [ [ [ "essence_dull", 150 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1357,7 +1357,7 @@
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 210 ] ] ],
+    "components": [ [ [ "essence_dull", 210 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -1368,7 +1368,7 @@
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 90 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {

@@ -85,9 +85,9 @@
     "ammo": "essence_dull_type",
     "covers": [ "eyes", "mouth" ],
     "coverage": 100,
-    "encumbrance": 8,
+    "encumbrance": 12,
     "warmth": 10,
-    "material_thickness": 3,
+    "material_thickness": 4,
     "environmental_protection": 1,
     "relic_data": {
       "passive_effects": [
@@ -147,8 +147,8 @@
     "ammo": "essence_dull_type",
     "covers": [ "eyes" ],
     "coverage": 100,
-    "encumbrance": 8,
-    "material_thickness": 3,
+    "encumbrance": 12,
+    "material_thickness": 4,
     "environmental_protection": 1,
     "relic_data": {
       "passive_effects": [
@@ -284,12 +284,13 @@
     "price": "900 USD",
     "price_postapoc": "70 USD",
     "coverage": 85,
-    "encumbrance": 8,
-    "max_encumbrance": 8,
+    "encumbrance": 7,
+    "max_encumbrance": 7,
     "color": "dark_gray",
     "max_charges": 20,
     "charges_per_use": 1,
     "ammo": "essence_type",
+    "material_thickness": 6,
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "arcana_invis_lesser", "intensity": 1 } ] } ]
     },
@@ -305,7 +306,7 @@
         "type": "transform"
       }
     ],
-    "relative": { "weight": 616, "volume": -1, "material_thickness": 2 },
+    "relative": { "weight": 616, "volume": -1 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
@@ -344,9 +345,9 @@
     "color": "dark_gray",
     "covers": [ "torso" ],
     "coverage": 85,
-    "encumbrance": 8,
+    "encumbrance": 7,
     "warmth": 20,
-    "material_thickness": 4,
+    "material_thickness": 6,
     "max_charges": 20,
     "charges_per_use": 1,
     "ammo": "essence_type",
@@ -391,13 +392,14 @@
     "copy-from": "gloves_plate",
     "type": "TOOL_ARMOR",
     "name": { "str": "pair of thunder gauntlets", "str_pl": "pairs of thunder gauntlets" },
-    "description": "A heavy set of plate gauntlets, decorated with silver around the edges of each individual plate.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.",
+    "description": "A set of modified plate gauntlets, decorated with silver around the edges of each individual plate.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.",
     "price": "600 USD",
     "price_postapoc": "50 USD",
-    "material": [ "iron", "leather", "silver" ],
+    "material": [ "steel", "leather", "silver" ],
     "max_charges": 4,
     "charges_per_use": 1,
     "ammo": "essence_type",
+    "encumbrance": 16,
     "use_action": [
       {
         "type": "cast_spell",
@@ -407,7 +409,7 @@
         "need_worn": true
       }
     ],
-    "relative": { "weight": 210, "material_thickness": 1 },
+    "relative": { "weight": 210 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
@@ -417,12 +419,12 @@
     "repairs_like": "gauntlets_necro",
     "type": "TOOL_ARMOR",
     "name": { "str_sp": "thunder demi-gaunts" },
-    "description": "Heavy fingerless plate gauntlets, decorated with silver and leaving the user free to wear them even if they have claws or other mutations, or over gloves.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.",
+    "description": "Fingerless plate gauntlets, decorated with silver and leaving the user free to wear them even if they have claws or other mutations, or over gloves.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.",
     "price": "600 USD",
     "price_postapoc": "50 USD",
     "material": [ "iron", "leather", "silver" ],
     "coverage": 75,
-    "encumbrance": 10,
+    "encumbrance": 12,
     "warmth": 15,
     "max_charges": 4,
     "charges_per_use": 1,
@@ -436,7 +438,7 @@
         "need_worn": true
       }
     ],
-    "relative": { "weight": 120, "material_thickness": 1 },
+    "relative": { "weight": 120 },
     "extend": { "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "OUTER" ] }
   },
   {

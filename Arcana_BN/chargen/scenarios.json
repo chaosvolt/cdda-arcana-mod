@@ -260,5 +260,34 @@
       ],
       "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
     }
+  },
+  {
+    "type": "scenario",
+    "id": "player_feral",
+    "copy-from": "player_feral",
+    "extend": {
+      "professions": [ "prof_feral_magehunter", "prof_feral_bloodmage", "prof_feral_dark_priest", "prof_feral_summoner" ],
+      "traits": [
+        "ARCANA_SCALYPATCHES",
+        "ARCANA_INNERHEAT",
+        "ARCANA_DRAGONCLAWS",
+        "ARCANA_DRAGONTEETH",
+        "ARCANA_DRAGONHORNS",
+        "SPELL_SHADOWSNAKES",
+        "SPELL_DAMPENING",
+        "SPELL_SUMMONDOG",
+        "SPELL_CLARITY",
+        "SPELL_DAYLIGHT",
+        "SPELL_LOCKPICK",
+        "MARTIAL_ARTS_SANGUINE",
+        "MARTIAL_ARTS_CF"
+      ]
+    }
+  },
+  {
+    "type": "scenario",
+    "id": "assassination",
+    "copy-from": "assassination",
+    "extend": { "professions": [ "arcanist_shrike", "arcanist_operator" ] }
   }
 ]

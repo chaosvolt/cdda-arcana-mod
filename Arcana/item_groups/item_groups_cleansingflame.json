@@ -307,8 +307,8 @@
       [ "strength_potion", 15 ],
       [ "speed_potion", 10 ],
       [ "healing_potion", 10 ],
-      [ "red_black_vulnerary", 5 ],
-      [ "yellow_white_incense", 5 ]
+      { "item": "red_black_vulnerary", "prob": 5, "charges": 2 },
+      { "item": "yellow_white_incense", "prob": 5, "charges": 2 }
     ]
   },
   {

@@ -45,8 +45,8 @@
   {
     "type": "item_group",
     "subtype": "collection",
-    "id": "starting_mana_gem_45_blood_essence",
-    "entries": [ { "item": "essence_blood", "charges": 45 } ]
+    "id": "starting_mana_gem_43_blood_essence",
+    "entries": [ { "item": "essence_blood", "charges": 43 } ]
   },
   {
     "type": "item_group",
@@ -70,7 +70,7 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "bandolier_flintlock_shrike",
-    "entries": [ { "item": "flintlock_ammo", "charges": 18 } ]
+    "entries": [ { "item": "flintlock_ammo", "charges": 20 } ]
   },
   {
     "type": "item_group",
@@ -410,20 +410,17 @@
           "flask_hip",
           "backpack_leather",
           "ref_lighter",
-          "pipe_cleaner",
-          "screwdriver",
           "bowl_clay",
           "book_bloodmagic"
         ],
         "entries": [
-          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 3 },
+          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 5 },
           { "item": "shrike_misericorde", "charges": 2, "container-item": "scabbard" },
           { "item": "flintlock_pouch", "contents-group": "bandolier_flintlock_shrike" },
-          { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_45_blood_essence" },
+          { "item": "flintlock_ammo", "charges": 8 },
+          { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_43_blood_essence" },
           { "item": "blindfold", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
-          { "item": "vinegar", "container-item": "bottle_plastic_small" },
-          { "item": "lamp_oil", "container-item": "bottle_plastic_small" }
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] }
         ]
       },
       "male": [ "boxer_shorts" ],
@@ -636,5 +633,165 @@
       "female": [ "bra", "panties" ]
     },
     "traits": [ "PROF_ARCANIST" ]
+  },
+  {
+    "type": "profession",
+    "id": "prof_feral_magehunter",
+    "copy-from": "prof_feral_unemployed",
+    "name": "Feral Mage Hunter",
+    "description": "You were a member of The Cleansing Flame, a religious order.  The end of all has come.  You'll continue your order's work, purging every last heretic and consecrating every artifact, until there is nothing left.",
+    "points": 4,
+    "traits": [ "PROF_CLEANSINGFLAME", "PROF_FERAL" ],
+    "skills": [
+      { "level": 4, "name": "magic" },
+      { "level": 2, "name": "melee" },
+      { "level": 2, "name": "bashing" },
+      { "level": 1, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "items": [ "waterskin", "book_hexenhammer" ],
+        "entries": [
+          { "item": "dress_shirt", "damage": [ 0, 3 ] },
+          { "item": "gilded_aegis", "damage": [ 0, 3 ] },
+          { "item": "pants", "damage": [ 0, 3 ] },
+          { "item": "socks", "damage": [ 0, 3 ] },
+          { "item": "boots_larmor", "damage": [ 0, 3 ] },
+          { "item": "gauntlets_larmor", "damage": [ 0, 3 ] },
+          { "item": "helmet_galea", "damage": [ 0, 3 ] },
+          { "item": "somen_clairvoyance_xl", "damage": [ 0, 3 ] },
+          { "item": "backpack", "damage": [ 0, 3 ] },
+          { "item": "mana_gem_dull", "contents-group": "starting_mana_gem_237_dull_essence" },
+          { "item": "knife_hunting", "container-item": "sheath" },
+          { "item": "lucern_hexenhammer", "charges": [ 1, 10 ], "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": { "entries": [ { "item": "boxer_shorts", "damage": [ 0, 3 ] } ] },
+      "female": { "entries": [ { "item": "sports_bra", "damage": [ 0, 3 ] }, { "item": "boy_shorts", "damage": [ 0, 3 ] } ] }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "prof_feral_bloodmage",
+    "copy-from": "prof_feral_unemployed",
+    "name": "Feral Sanguinist",
+    "description": "You have beheld true power, as a member of the Sanguine Order.  No matter how many have bled for you, it just isn't enough.  You need more, to become stronger, to walk The Path.",
+    "points": 4,
+    "traits": [ "PROF_SANGUINE", "PROF_FERAL" ],
+    "skills": [
+      { "level": 3, "name": "magic" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "items": [ "waterskin", "bowl_clay", "book_bloodmagic" ],
+        "entries": [
+          { "item": "dress_shirt", "damage": [ 0, 3 ] },
+          { "item": "socks", "damage": [ 0, 3 ] },
+          { "item": "armor_wyrm", "damage": [ 0, 3 ] },
+          { "item": "revenant_crown", "damage": [ 0, 3 ] },
+          { "item": "backpack", "damage": [ 0, 3 ] },
+          { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_9_blood_essence" },
+          { "item": "blood_athame", "container-item": "sheath" },
+          {
+            "item": "bloodscourge",
+            "ammo-item": "essence_blood",
+            "charges": [ 1, 15 ],
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "male": { "entries": [ { "item": "boxer_shorts", "damage": [ 0, 3 ] }, { "item": "pants", "damage": [ 0, 3 ] } ] },
+      "female": {
+        "entries": [
+          { "item": "bra", "damage": [ 0, 3 ] },
+          { "item": "panties", "damage": [ 0, 3 ] },
+          { "item": "skirt", "damage": [ 0, 3 ] }
+        ]
+      }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "prof_feral_dark_priest",
+    "copy-from": "prof_feral_unemployed",
+    "name": "Feral Keeper",
+    "description": "He From Beyond The Veil calls to you.  But is it His call you heed, or that of an Interloper?  Maybe another sacrifice, another burnt offering, will clear the clouds from your mind.",
+    "points": 6,
+    "traits": [ "PROF_CHALICE", "PROF_FERAL" ],
+    "skills": [ { "level": 5, "name": "magic" }, { "level": 2, "name": "gun" }, { "level": 2, "name": "dodge" } ],
+    "items": {
+      "both": {
+        "items": [ "waterskin", "offering_chalice", "book_sacrifice" ],
+        "entries": [
+          { "item": "loincloth", "damage": [ 0, 3 ] },
+          { "item": "tunic", "damage": [ 0, 3 ] },
+          { "item": "robe_shadow_xl", "damage": [ 0, 3 ] },
+          { "item": "socks", "damage": [ 0, 3 ] },
+          { "item": "bastsandals", "damage": [ 0, 3 ] },
+          { "item": "gauntlets_necro_xl", "damage": [ 0, 3 ] },
+          { "item": "backpack", "damage": [ 0, 3 ] },
+          { "item": "cyclopean_mirror", "damage": [ 0, 3 ] },
+          { "item": "thunder_sigil", "container-item": "leather_belt" },
+          { "item": "mana_gem", "contents-group": "starting_mana_gem_7_essence" },
+          { "item": "copper_knife", "container-item": "sheath" },
+          {
+            "item": "spear_pestilence",
+            "ammo-item": "essence",
+            "charges": [ 1, 9 ],
+            "custom-flags": [ "auto_wield" ]
+          }
+        ]
+      },
+      "female": { "entries": [ { "item": "chestwrap", "damage": [ 0, 3 ] } ] }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "prof_feral_summoner",
+    "copy-from": "prof_feral_unemployed",
+    "name": "Feral Summoner",
+    "description": "You were a student of a master arcanist, taught to draw power from beyond in living form, and bind it to your will.  You feel lost in a daze, urged on as though you were the puppet and not the master.",
+    "spells": [ { "id": "arcana_magic_summon_shadow", "level": 1 }, { "id": "arcana_magic_summon_shadow_snake", "level": 1 } ],
+    "points": 7,
+    "traits": [ "PROF_ARCANIST2", "PROF_FERAL" ],
+    "skills": [
+      { "level": 6, "name": "magic" },
+      { "level": 5, "name": "fabrication" },
+      { "level": 3, "name": "survival" },
+      { "level": 2, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "waterskin",
+          "triffid_garland_empowered",
+          "bowl_pewter",
+          "summon_kreck_bound",
+          "summon_triffid_bound",
+          "monster_fang",
+          "wyrmskin_piece",
+          "book_summoning"
+        ],
+        "entries": [
+          { "item": "tunic", "damage": [ 0, 3 ] },
+          { "item": "cloak", "damage": [ 0, 3 ] },
+          { "item": "socks", "damage": [ 0, 3 ] },
+          { "item": "boots", "damage": [ 0, 3 ] },
+          { "item": "gloves_leather", "damage": [ 0, 3 ] },
+          { "item": "knit_scarf", "damage": [ 0, 3 ] },
+          { "item": "backpack", "damage": [ 0, 3 ] },
+          { "item": "knife_hunting", "container-item": "sheath" },
+          { "item": "mana_gem", "contents-group": "starting_mana_gem_14_essence" },
+          { "item": "i_staff", "custom-flags": [ "auto_wield" ] }
+        ]
+      },
+      "male": { "entries": [ { "item": "boxer_shorts", "damage": [ 0, 3 ] } ] },
+      "female": { "entries": [ { "item": "bra", "damage": [ 0, 3 ] }, { "item": "panties", "damage": [ 0, 3 ] } ] }
+    }
   }
 ]

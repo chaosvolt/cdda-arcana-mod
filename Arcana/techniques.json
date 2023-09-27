@@ -146,7 +146,8 @@
     "unarmed_allowed": true,
     "unarmed_weapons_allowed": false,
     "required_buffs_all": [ "buff_shrike_oncrit" ],
-    "stunned_target": true,
+    "condition": { "npc_has_effect": "stunned" },
+    "condition_desc": "Requires a stunned target",
     "crit_ok": true,
     "weighting": 3,
     "flat_bonuses": [

@@ -122,7 +122,7 @@
     "material": [ "iron", "silver" ],
     "symbol": "(",
     "color": "light_gray",
-    "ammo": [ "flintlock" ],
+    "ammo": [ "flintlock", "flintlockshot" ],
     "skill": "pistol",
     "range": 2,
     "ranged_damage": { "damage_type": "cold", "amount": 10 },
@@ -133,7 +133,7 @@
     "reload": 700,
     "modes": [ [ "DEFAULT", "single", 1 ], [ "DOUBLE", "double", 2 ] ],
     "techniques": [ "WBLOCK_1" ],
-    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 9 ] ],
     "//": "Non-fouling because transforming it to blade mode already resets fouling.",
     "flags": [
       "STAB",

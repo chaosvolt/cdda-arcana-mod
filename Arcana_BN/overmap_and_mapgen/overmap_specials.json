@@ -15,7 +15,7 @@
     "locations": [ "field", "forest" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 50, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE", "ELECTRIC_GRID" ]
   },
   {
@@ -30,7 +30,7 @@
     "locations": [ "forest" ],
     "city_distance": [ 0, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 50, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
   },
   {
@@ -51,7 +51,7 @@
     "locations": [ "field", "forest", "swamp" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 50, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ],
     "spawns": { "group": "GROUP_ARCHON", "population": [ 150, 300 ], "radius": [ 20, 40 ] }
   },
@@ -75,7 +75,7 @@
     "locations": [ "forest", "swamp" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 50, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE", "ELECTRIC_GRID" ]
   },
   {
@@ -84,8 +84,8 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 0, 1 ],
-    "flags": [ "CLASSIC", "WILDERNESS" ]
+    "occurrences": [ 50, 100 ],
+    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -93,8 +93,8 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_2_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 0, 1 ],
-    "flags": [ "CLASSIC", "WILDERNESS" ]
+    "occurrences": [ 50, 100 ],
+    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -102,8 +102,8 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_3_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 0, 1 ],
-    "flags": [ "CLASSIC", "WILDERNESS" ]
+    "occurrences": [ 50, 100 ],
+    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
   },
   {
     "type": "overmap_special",
