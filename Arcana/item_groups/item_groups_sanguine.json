@@ -118,7 +118,7 @@
       [ "pearl", 3 ],
       [ "diamond", 2 ],
       { "item": "scrap", "prob": 5, "count": [ 1, 10 ] },
-      { "item": "leather", "prob": 15, "charges": [ 10, 20 ] },
+      { "item": "leather", "prob": 15, "count": [ 10, 20 ] },
       [ "chem_nitric_acid", 10 ],
       { "item": "bone_human", "prob": 15, "count": [ 1, 5 ] },
       [ "chem_ethanol", 5 ],

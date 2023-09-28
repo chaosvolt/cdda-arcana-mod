@@ -108,7 +108,7 @@
       { "item": "gold_small", "prob": 40, "charges": [ 25, 100 ] },
       { "item": "scrap", "prob": 15, "count": [ 1, 10 ] },
       { "item": "feather", "prob": 5, "charges": [ 10, 20 ] },
-      { "item": "chitin_piece", "prob": 5, "charges": [ 1, 5 ] },
+      { "item": "chitin_piece", "prob": 5, "count": [ 1, 5 ] },
       { "item": "fur", "prob": 10, "count": [ 1, 5 ] },
       { "item": "paper", "prob": 5, "charges": [ 20, 50 ] },
       [ "bee_sting", 10 ],

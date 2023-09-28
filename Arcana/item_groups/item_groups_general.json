@@ -118,8 +118,8 @@
       [ "strength_potion", 40 ],
       [ "speed_potion", 35 ],
       [ "healing_potion", 30 ],
-      { "item": "red_black_vulnerary", "prob": 25, "charges": 2 },
-      { "item": "yellow_white_incense", "prob": 20, "charges": 2 },
+      { "item": "red_black_vulnerary", "prob": 25, "count": 2 },
+      { "item": "yellow_white_incense", "prob": 20, "count": 2 },
       [ "scroll_sun", 25 ],
       [ "scroll_moon", 25 ],
       [ "scroll_artiface", 20 ],
@@ -317,11 +317,11 @@
     "//": "A smattering of non-magitech tools and materials of anomalous origin.",
     "type": "item_group",
     "items": [
-      { "item": "meat_frond", "prob": 10, "charges": 2, "container-item": "jar_glass_sealed" },
-      { "item": "leech_flower", "prob": 5, "charges": 2, "container-item": "jar_glass_sealed" },
-      { "item": "meat_bark", "prob": 5, "charges": 2, "container-item": "jar_glass_sealed" },
-      { "item": "veggy_tainted", "prob": 15, "charges": 2, "container-item": "jar_glass_sealed" },
-      { "item": "veggy", "prob": 15, "charges": 2, "container-item": "jar_glass_sealed" },
+      { "item": "meat_frond", "prob": 10, "count": 2, "container-item": "jar_glass_sealed" },
+      { "item": "leech_flower", "prob": 5, "count": 2, "container-item": "jar_glass_sealed" },
+      { "item": "meat_bark", "prob": 5, "count": 2, "container-item": "jar_glass_sealed" },
+      { "item": "veggy_tainted", "prob": 15, "count": 2, "container-item": "jar_glass_sealed" },
+      { "item": "veggy", "prob": 15, "count": 2, "container-item": "jar_glass_sealed" },
       [ "stick_fiber", 4 ],
       [ "fighter_sting", 3 ],
       [ "biollante_bud", 3 ],
@@ -425,6 +425,45 @@
         "distribution": [ { "group": "magic_tools", "prob": 75 }, { "group": "magic_items", "prob": 25 } ],
         "prob": 10
       }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mine_storage",
+    "items": [
+      [ "shovel", 10 ],
+      [ "pickaxe", 2 ],
+      [ "bucket", 20 ],
+      [ "rock", 40 ],
+      [ "rock_large", 10 ],
+      { "group": "tools_toolbox", "prob": 5 },
+      [ "coal_lump", 20 ],
+      [ "material_shrd_limestone", 40 ],
+      [ "material_niter", 5 ],
+      [ "chem_rdx", 5 ],
+      [ "chem_hmtd", 10 ]
+    ]
+  },
+  {
+    "id": "sewing_room",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [
+      { "group": "suits", "prob": 50, "damage": [ 0, 2 ] },
+      [ "scissors", 50 ],
+      [ "thread", 50 ],
+      { "group": "pants", "prob": 40, "damage": [ 0, 2 ] },
+      { "group": "shirts", "prob": 40, "damage": [ 0, 2 ] },
+      [ "knitting_needles", 40 ],
+      [ "string_36", 40 ],
+      [ "yarn", 40 ],
+      { "group": "bed", "prob": 30, "damage": [ 0, 2 ] },
+      { "item": "sewing_kit", "prob": 30, "charges": [ 0, 25 ] },
+      [ "cotton_patchwork", 30 ],
+      [ "lycra_patch", 15 ],
+      [ "nylon", 10 ],
+      { "item": "tailors_kit", "prob": 20, "charges": [ 0, 100 ] },
+      [ "kevlar_shears", 5 ]
     ]
   }
 ]

@@ -598,7 +598,7 @@
         "entries": [
           { "item": "spear_pestilence", "ammo-item": "essence", "charges": 9, "container-item": "spearsling" },
           { "item": "mana_gem", "contents-group": "starting_mana_gem_11_essence" },
-          { "item": "salt", "container-item": "bag_canvas_small", "charges": 100 },
+          { "item": "salt", "container-item": "bag_canvas_small", "count": 100 },
           { "group": "charged_candle" },
           { "item": "sewing_kit", "charges": 50 },
           { "item": "copper_knife", "container-item": "sheath" }

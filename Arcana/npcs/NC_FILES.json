@@ -1158,7 +1158,7 @@
       { "item": "kevlar" },
       { "item": "jersey" },
       { "item": "jacket_leather_mod" },
-      { "item": "bandolier_shotgun", "charges": 25, "contents-item": "reloaded_shot_00_arcana" },
+      { "item": "reloaded_shot_00_arcana", "charges": 25, "container-item": "bandolier_shotgun" },
       { "item": "boxer_shorts" },
       { "item": "jeans" },
       { "item": "gloves_fingerless_mod" },
