@@ -18,7 +18,8 @@
     "max_level": 2,
     "intelligence": 8,
     "time": "10 m",
-    "fun": -1
+    "fun": -1,
+    "flags": [ "MORBID" ]
   },
   {
     "id": "book_potioncraft",
@@ -60,7 +61,7 @@
     "intelligence": 11,
     "time": "40 m",
     "fun": -2,
-    "flags": [ "INSPIRATIONAL" ]
+    "flags": [ "INSPIRATIONAL", "MORBID" ]
   },
   {
     "id": "book_bloodmagic",
@@ -80,7 +81,8 @@
     "max_level": 7,
     "intelligence": 10,
     "time": "20 m",
-    "fun": -3
+    "fun": -3,
+    "flags": [ "BOOK_CANNIBAL" ]
   },
   {
     "id": "book_hexenhammer",
@@ -101,7 +103,7 @@
     "intelligence": 9,
     "time": "20 m",
     "fun": -1,
-    "flags": [ "INSPIRATIONAL" ]
+    "flags": [ "INSPIRATIONAL", "MORBID" ]
   },
   {
     "id": "book_sacrifice",
@@ -122,7 +124,7 @@
     "intelligence": 10,
     "time": "30 m",
     "fun": -3,
-    "flags": [ "INSPIRATIONAL" ]
+    "flags": [ "INSPIRATIONAL", "MORBID" ]
   },
   {
     "id": "book_syncretism",
@@ -142,7 +144,8 @@
     "max_level": 9,
     "intelligence": 10,
     "time": "45 m",
-    "fun": -2
+    "fun": -2,
+    "flags": [ "MORBID" ]
   },
   {
     "id": "book_summoning",
@@ -162,7 +165,8 @@
     "max_level": 10,
     "intelligence": 11,
     "time": "45 m",
-    "fun": -3
+    "fun": -3,
+    "flags": [ "MORBID" ]
   },
   {
     "id": "recipe_lab_arcana",
@@ -460,7 +464,7 @@
     "intelligence": 12,
     "time": "30 m",
     "fun": -1,
-    "flags": [ "TRADER_AVOID" ]
+    "flags": [ "TRADER_AVOID", "MORBID" ]
   },
   {
     "id": "sanguine_mission_notes",
@@ -476,7 +480,7 @@
     "intelligence": 14,
     "time": "45 m",
     "fun": -2,
-    "flags": [ "TRADER_AVOID" ]
+    "flags": [ "TRADER_AVOID", "MORBID" ]
   },
   {
     "id": "note_arcane_lab_surface",
