@@ -18,8 +18,7 @@
     "max_level": 2,
     "intelligence": 8,
     "time": "10 m",
-    "fun": -1,
-    "flags": [ "MORBID" ]
+    "fun": -1
   },
   {
     "id": "book_potioncraft",
@@ -61,7 +60,7 @@
     "intelligence": 11,
     "time": "40 m",
     "fun": -2,
-    "flags": [ "INSPIRATIONAL", "MORBID" ]
+    "flags": [ "INSPIRATIONAL" ]
   },
   {
     "id": "book_bloodmagic",
@@ -103,7 +102,7 @@
     "intelligence": 9,
     "time": "20 m",
     "fun": -1,
-    "flags": [ "INSPIRATIONAL", "MORBID" ]
+    "flags": [ "INSPIRATIONAL" ]
   },
   {
     "id": "book_sacrifice",
@@ -144,8 +143,7 @@
     "max_level": 9,
     "intelligence": 10,
     "time": "45 m",
-    "fun": -2,
-    "flags": [ "MORBID" ]
+    "fun": -2
   },
   {
     "id": "book_summoning",
