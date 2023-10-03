@@ -208,7 +208,6 @@
       { "stat": "arpen", "type": "bash", "scaling-stat": "str", "scale": 0.5 }
     ],
     "knockback_dist": 3,
-    "powerful_knockback": true,
     "down_dur": 1,
     "crit_tec": true,
     "weighting": 2,
