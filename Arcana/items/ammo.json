@@ -14,7 +14,7 @@
     "color": "blue",
     "count": 1,
     "ammo_type": "essence_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING" ],
     "flags": [ "ZERO_WEIGHT" ]
   },
   {
@@ -31,7 +31,7 @@
     "color": "red",
     "count": 1,
     "ammo_type": "essence_blood_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING" ],
     "flags": [ "ZERO_WEIGHT" ]
   },
   {
@@ -48,7 +48,7 @@
     "color": "dark_gray",
     "count": 1,
     "ammo_type": "essence_dull_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING" ],
     "flags": [ "ZERO_WEIGHT" ]
   },
   {
@@ -66,7 +66,7 @@
     "color": "cyan",
     "count": 1,
     "ammo_type": "essence_pure_type",
-    "effects": [ "NEVER_MISFIRES", "NON-FOULING" ],
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING" ],
     "flags": [ "ZERO_WEIGHT" ]
   },
   {

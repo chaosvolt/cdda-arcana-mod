@@ -135,8 +135,8 @@
     "modes": [ [ "DEFAULT", "single", 1 ], [ "DOUBLE", "double", 2 ] ],
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 9 ] ],
-    "//": "Non-fouling because transforming it to blade mode already resets fouling.",
-    "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "NO_SALVAGE", "PRIMITIVE_RANGED_WEAPON", "RELOAD_ONE", "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "//": "NON_FOULING because transforming it to blade mode already resets fouling.",
+    "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "NO_SALVAGE", "PRIMITIVE_RANGED_WEAPON", "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ammo_effects": [ "ARCANA_SHRIKE_COLD_BULLET" ],
     "relic_data": {
       "passive_effects": [
@@ -404,7 +404,7 @@
       [ "underbarrel", 1 ]
     ],
     "ammo_effects": [ "PLASMA", "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE", "BOUNCE" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE", "USE_UPS" ]
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "USE_UPS" ]
   },
   {
     "id": "rift_focus_cannon",
@@ -418,7 +418,7 @@
     "price": "1800 USD",
     "price_postapoc": "80 USD",
     "material": [ "steel", "plastic" ],
-    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ammo_effects": [
       "LASER",
       "PLASMA_BUBBLE",
@@ -628,7 +628,7 @@
       "NO_SALVAGE",
       "NO_REPAIR",
       "UNBREAKABLE_MELEE",
-      "NON-FOULING",
+      "NON_FOULING",
       "NEEDS_NO_LUBE",
       "USE_UPS"
     ]
