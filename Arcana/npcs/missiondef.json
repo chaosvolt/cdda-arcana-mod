@@ -403,8 +403,8 @@
   {
     "id": "MISSION_CF_REP_5",
     "type": "mission_definition",
-    "name": { "str": "Bring back research from the Keepers of The Oath" },
-    "description": "Find a suspected remnant of the Keepers, who may have research and intel to bring back to Sofia.  Sofia advised that the information being sought might be preserved on something more durable than a book.",
+    "name": { "str": "Bring back research from the Keepers" },
+    "description": "Find a suspected remnant of the Keepers of The Oath, who may have research and intel to bring back to Sofia.  Sofia advised that the information being sought might be preserved on something more durable than a book.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 4,
     "value": 7500,
@@ -439,7 +439,7 @@
   {
     "id": "MISSION_CF_REP_6",
     "type": "mission_definition",
-    "name": { "str": "Secure Research From The Renegade Shrikes" },
+    "name": { "str": "Secure Research From Renegade Shrikes" },
     "description": "Find a suspected splinter faction of the Sanguine Order, who may have research and intel to bring back to Sofia.  Bring back any unique research they have.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 4,
@@ -1103,7 +1103,7 @@
   {
     "id": "MISSION_CF_PURIFIER_1_INTERLUDE_3",
     "type": "mission_definition",
-    "name": { "str": "Investigate Research Material Transport Site" },
+    "name": { "str": "Investigate Material Transport Site" },
     "description": "Investigate the location known to be used for organizing the transportation of items from local science labs, which may have the documents Nicholas is looking for.  Additionally, bring a t-substrate sample back to Hub 01.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 5,
@@ -1138,7 +1138,7 @@
   {
     "id": "MISSION_CF_PURIFIER_1_3",
     "type": "mission_definition",
-    "name": { "str": "Retrieve dimensional focus lens from Project Kairos facility" },
+    "name": { "str": "Retrieve Dimensional Focus Lens" },
     "description": "Investigate the research facility now suspected to be the location of Project Kairos, and retrieve a vital component known as a dimensional focus lens from it.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 8,
