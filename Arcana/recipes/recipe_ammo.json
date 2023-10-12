@@ -466,7 +466,7 @@
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_AMMO",
     "skill_used": "magic",
-    "difficulty": 3,
+    "difficulty": 4,
     "skills_required": [ [ "fabrication", 2 ], [ "gun", 1 ] ],
     "time": "2 m",
     "batch_time_factors": [ 60, 5 ],

@@ -406,7 +406,7 @@
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_AMMO",
     "skill_used": "magic",
-    "difficulty": 3,
+    "difficulty": 4,
     "skills_required": [ [ "fabrication", 2 ], [ "gun", 1 ] ],
     "time": "2 m",
     "batch_time_factors": [ 60, 5 ],
@@ -415,9 +415,31 @@
     "reversible": true,
     "using": [ [ "shot_forming", 1 ], [ "ammo_shot", 1 ] ],
     "components": [
-      [ [ "gunpowder", 6 ], [ "chem_black_powder", 9 ], [ "chem_match_head_powder", 9 ] ],
+      [ [ "gunpowder", 6 ], [ "chem_black_powder", 8 ], [ "chem_match_head_powder", 8 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
-      [ [ "essence_dull", 12 ] ]
+      [ [ "essence_dull", 16 ] ]
+    ]
+  },
+  {
+    "result": "20ga_shot_arcana",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_AMMO",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ [ "fabrication", 2 ], [ "gun", 1 ] ],
+    "time": "1 m",
+    "batch_time_factors": [ 60, 5 ],
+    "book_learn": [ [ "manual_shotgun", 3 ], [ "recipe_bullets", 2 ], [ "book_hexenhammer", 2 ], [ "book_syncretism", 2 ] ],
+    "charges": 1,
+    "reversible": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "gunpowder", 4 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
+      [ [ "silver_small", 8 ], [ "platinum_small", 5 ] ],
+      [ [ "shotgun_primer", 1 ] ],
+      [ [ "essence_dull", 13 ] ],
+      [ [ "paper", 1 ], [ "aluminum_foil", 1 ] ]
     ]
   },
   {
@@ -436,9 +458,9 @@
     "book_learn": [ [ "book_hexenhammer", 2 ], [ "book_syncretism", 2 ], [ "book_magicfordummies", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
-      [ [ "gunpowder", 3 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
+      [ [ "gunpowder", 4 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
-      [ [ "essence_dull", 10 ] ],
+      [ [ "essence_dull", 12 ] ],
       [ [ "paper", 1 ] ]
     ]
   },
@@ -461,9 +483,9 @@
     ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
     "components": [
-      [ [ "gunpowder", 16 ], [ "chem_black_powder", 24 ], [ "chem_match_head_powder", 24 ] ],
+      [ [ "gunpowder", 8 ], [ "chem_black_powder", 10 ], [ "chem_match_head_powder", 10 ] ],
       [ [ "silver_small", 16 ], [ "platinum_small", 10 ] ],
-      [ [ "essence_dull", 16 ] ],
+      [ [ "essence_dull", 11 ] ],
       [ [ "paper", 1 ], [ "aluminum_foil", 1 ] ]
     ]
   }
