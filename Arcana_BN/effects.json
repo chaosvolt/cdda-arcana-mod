@@ -967,9 +967,9 @@
     "max_intensity": 6,
     "int_dur_factor": "1 d",
     "base_mods": {
-      "health_min": [ 1 ],
+      "health_min": [ -1 ],
       "health_tick": [ 3600 ],
-      "h_mod_min": [ 1 ],
+      "h_mod_min": [ -1 ],
       "h_mod_tick": [ 3600 ],
       "hunger_min": [ 1 ],
       "hunger_chance": [ -20 ],
