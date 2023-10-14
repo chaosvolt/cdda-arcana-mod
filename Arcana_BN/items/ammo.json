@@ -148,7 +148,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
-    "effects": [ "IGNITE", "AMMO_ARCANA_FIRE_EFFECT" ]
+    "effects": [ "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT" ]
   },
   {
     "type": "AMMO",
@@ -173,7 +173,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
-    "effects": [ "IGNITE", "AMMO_ARCANA_FIRE_EFFECT" ]
+    "effects": [ "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT" ]
   },
   {
     "type": "AMMO",
