@@ -110,7 +110,18 @@
       }
     ],
     "death_drops": "mon_moruboru_death_drops",
-    "flags": [ "SEES", "SMELLS", "NOHEAD", "POISON", "NO_BREATHE", "PARALYZEVENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "NOHEAD",
+      "ACIDPROOF",
+      "BIOLOGICALPROOF",
+      "POISON",
+      "NO_BREATHE",
+      "PARALYZEVENOM",
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS"
+    ],
     "//": "Boss-level essence and an item"
   },
   {
@@ -256,6 +267,7 @@
       "KEENNOSE",
       "HEARS",
       "WARM",
+      "BIOLOGICALPROOF",
       "FIREPROOF",
       "FLIES",
       "POISON",
@@ -770,6 +782,7 @@
       "SEES",
       "FLIES",
       "HARDTOSHOOT",
+      "BIOLOGICALPROOF",
       "STUN_IMMUNE",
       "STUMBLES",
       "PUSH_MON",
@@ -859,6 +872,7 @@
       "PUSH_MON",
       "ELECTRONIC",
       "COLDPROOF",
+      "BIOLOGICALPROOF",
       "FLIES",
       "NOHEAD",
       "NO_BREATHE",
@@ -930,6 +944,7 @@
       "BASHES",
       "PUSH_MON",
       "COLDPROOF",
+      "BIOLOGICALPROOF",
       "FLIES",
       "NOHEAD",
       "NO_BREATHE",
