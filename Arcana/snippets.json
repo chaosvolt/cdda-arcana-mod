@@ -95,9 +95,13 @@
       },
       {
         "id": "note_grove_arcana_6",
+        "text": "\"They've been here, recently.  Didn't think there was anything left for the sanguinists to pilfer.\""
+      },
+      {
+        "id": "note_grove_arcana_7",
         "text": "\"Some sort of upheaval where the old ritual grounds used to be.  Can't tell if this happened during Zero Day or before.\""
       },
-      { "id": "note_grove_arcana_7", "text": "\"Did they predict this?  Is that why they left?\"" }
+      { "id": "note_grove_arcana_8", "text": "\"Did they predict this?  Is that why they left?\"" }
     ]
   },
   {
@@ -115,10 +119,14 @@
       { "id": "note_sanguine_arcana_3", "text": "\"The summoning is almost complete.  We shall behold true power!\"" },
       {
         "id": "note_sanguine_arcana_4",
-        "text": "\"Gods above and below, what did those maniacs bring forth?  What have they DONE?\""
+        "text": "\"The elder magi disagree on what to do after the ritual's completion.  They should save the bickering for after we've cut the heart out from our prize.\""
       },
       {
         "id": "note_sanguine_arcana_5",
+        "text": "\"Gods above and below, what did those maniacs bring forth?  What have they DONE?\""
+      },
+      {
+        "id": "note_sanguine_arcana_6",
         "text": "\"The other magi were right, to complete the Sacrament for this purpose was foolish.  This place is lost to us.\""
       }
     ]
@@ -137,10 +145,14 @@
       },
       {
         "id": "note_chalice_arcana_3",
-        "text": "\"The ritual blade was tainted by dark magic, it drew forth something else.  Not our master, not He From Beyond The Veil.\""
+        "text": "\"Take heart, those faithful to the Shrouded King.  As a sign of truce, the Sanguine Order has brought to us one of the relics we once thought lost.  At last, our communion with Him shall be restored.\""
       },
       {
         "id": "note_chalice_arcana_4",
+        "text": "\"The ritual blade was tainted by dark magic, it drew forth something else.  Not our master, not He From Beyond The Veil.\""
+      },
+      {
+        "id": "note_chalice_arcana_5",
         "text": "\"That THING is not our master.  Traitorous servant of the gods, six-winged spirit from the Beyond!  It's laughing at me in the back of my mind, mocking me for hiding here while the others fought and died…\""
       }
     ]
@@ -275,10 +287,14 @@
       },
       {
         "id": "note_sanguine_hint_arcana_3",
-        "text": "\"Blood of monsters, life of the eternal.  A sign of silver, a call to the Beyond.  A holy relic laid low, bent to serve our needs.  Among the waters, the blood shall flow and the worthy shall be tested.\""
+        "text": "\"Where the waters run red with blood, our order prepares for mastery over itself.  Some of our magi seek to master the mind and soul, while others seek mastery of the body.  The Sanguine Shrikes shall provide the tiebreaking vote.\""
       },
       {
         "id": "note_sanguine_hint_arcana_4",
+        "text": "\"Blood of monsters, life of the eternal.  A sign of silver, a call to the Beyond.  A holy relic laid low, bent to serve our needs.  Among the waters, the blood shall flow and the worthy shall be tested.\""
+      },
+      {
+        "id": "note_sanguine_hint_arcana_5",
         "text": "\"We lost our main base of operations thanks to the magi of the Secta Per Aspera.  Whatever they called up for their little transhumanist experiment, it tore most of them asunder.  Should've just bled the damn thing dry like the others suggested.\""
       }
     ]
@@ -499,7 +515,7 @@
       },
       {
         "id": "arcane_lab_note_sector_three_5",
-        "text": "\"Project Kairos Update: Further testing has lent credence to the hypothesis that spatial manipulation science may produce a sort of ripple effect affecting the surrounding area, though we lack the data to construct a model for what the long-term consequences may be.  We have also discovered that a strong electromagnetic field can interact with these \"ripples\" while they are developing, reducing their propagation. if the origin point is contained in an electromagnetic bubble.\""
+        "text": "\"Project Kairos Update: Further testing has lent credence to the hypothesis that spatial manipulation science may produce a sort of ripple effect affecting the surrounding area, though we lack the data to construct a model for what the long-term consequences may be.  We have also discovered that a strong electromagnetic field can interact with these \"ripples\" while they are developing, reducing their propagation if the origin point is contained in an electromagnetic bubble.\""
       },
       {
         "id": "arcane_lab_note_sector_three_6",
