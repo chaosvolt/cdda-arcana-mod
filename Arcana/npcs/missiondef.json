@@ -541,6 +541,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_2",
     "start": {
+      "effect": [ { "npc_add_var": "johnathan_first_mission_start", "type": "mission", "context": "rural_church", "value": "yes" } ],
       "assign_mission_target": { "om_terrain": "strange_grove", "om_special": "Strange Grove", "reveal_radius": 3, "search_range": 360, "z": 0 }
     },
     "end": {
