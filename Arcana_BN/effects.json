@@ -995,9 +995,9 @@
     "id": "sanguine_staff_buff",
     "name": [ "Enduring Blood" ],
     "desc": [
-      "Reduces the impact of Strange Anemia and counteracts its effects, along with preventing wounds from bleeding.  Allows one to use the silver athame's sanguine rituals more freely."
+      "Reduces the impact of Strange Anemia and mitigates its effects, outright preventing it if one uses the athame while under this effect, along with preventing wounds from bleeding.  Allows one to use the silver athame's sanguine rituals more freely."
     ],
-    "blocks_effects": [ "bleed" ],
+    "blocks_effects": [ "bleed", "blood_athame_side_effects" ],
     "apply_message": "Something stirs in your veins as the staff's protective effect washes over you.",
     "decay_messages": [ [ "The effect of the staff's strange magic is waning.", "bad" ] ],
     "remove_message": "Your heart skips a beat briefly as your feel the staff's influence fade.",
@@ -1027,7 +1027,7 @@
     "removes_effects": [ "bleed", "winded" ],
     "rating": "good",
     "max_duration": "15 s",
-    "base_mods": { "pain_min": [ -20 ], "stamina_min": [ 200 ] }
+    "base_mods": { "pain_min": [ -20 ], "stamina_min": [ 200 ], "fatigue_min": [ 100 ] }
   },
   {
     "type": "effect_type",
