@@ -1436,7 +1436,7 @@
     "description": "Strikes anything in a line with a life-draining blast.",
     "sprite": "fd_laser",
     "message": "The stony heart of the staff pulses with malevolent energy, arcing out in a deadly ray!",
-    "effect": "target_attack",
+    "effect": "line_attack",
     "extra_effects": [
       { "id": "arcana_item_sanguine_staff_beam_corruption", "hit_self": false },
       { "id": "arcana_item_sanguine_staff_beam_lifedrain", "hit_self": true }
