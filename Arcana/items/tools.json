@@ -1672,6 +1672,49 @@
     }
   },
   {
+    "id": "sanguine_staff_lifesbane",
+    "type": "TOOL",
+    "category": "weapons",
+    "weapon_category": [ "QUARTERSTAVES" ],
+    "name": { "str": "horned staff of life's bane", "str_pl": "horned staves of life's bane" },
+    "description": "A wooden staff topped with a golden cage, enveloping a mass of petrified flesh from which sharp horns have grown.  The counter-argument to the Dragonblood Sacrament.  It draws energy from whatever you strike with it, fueling a protective effect that synergizes with the rituals of the silver athame.  Activating it channels a powerful life-draining beam of energy that blights the land around you.",
+    "weight": "2800 g",
+    "volume": "3 L",
+    "longest_side": "150 cm",
+    "to_hit": 2,
+    "//": "Conceived of before the cataclysm but only put together post-cata.",
+    "price_postapoc": "150 USD",
+    "bashing": 22,
+    "cutting": 18,
+    "material": [ "wood", "bone", "essencemat" ],
+    "symbol": "/",
+    "looks_like": "scourge_staff",
+    "color": "red",
+    "max_charges": 30,
+    "charges_per_use": 5,
+    "ammo": "essence_blood_type",
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "mutations": [ "ARCANA_STAFF_EFFECT" ],
+          "hit_you_effect": [ { "id": "arcana_react_sanguine_staff_drain" } ]
+        }
+      ]
+    },
+    "use_action": [
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_sanguine_staff_beam",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
+    "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS", "SHEATH_SPEAR", "UNBREAKABLE_MELEE" ]
+  },
+  {
     "id": "stormbringer",
     "type": "TOOL",
     "copy-from": "zweihander",
