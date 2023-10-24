@@ -532,10 +532,11 @@
     "id": "MISSION_CF_GM_1",
     "type": "mission_definition",
     "name": { "str": "Retrieve Bane Staff" },
-    "description": "Retrieve the bane staff from the strange grove, and bring it to Johnathan.",
-    "goal": "MGOAL_FIND_ITEM",
+    "description": "Retrieve the bane staff from the strange grove, and show it to Johnathan.  Should it be altered in some way, he will likely still recognize it's the right item.",
+    "goal": "MGOAL_CONDITION",
+    "//": "Johnathan doesn't actually know what the staff was supposed to look like, and even the version the player first finds stinks of evil magic, so he won't know that the lifesbane staff is actually player-crafted.",
+    "goal_condition": { "or": [ { "u_has_item": "scourge_staff" }, { "u_has_item": "sanguine_staff_lifesbane" } ] },
     "difficulty": 5,
-    "item": "scourge_staff",
     "value": 7500,
     "has_generic_rewards": false,
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -555,11 +556,11 @@
     "dialogue": {
       "describe": "Grant us strength…",
       "offer": "During our journey we've seen scattered evidence of some hazards still afflicting certain areas, former hotspots of anomalous activity now made even more dangerous, ever since holes in reality began opening up.  With the rest of us focused on rebuilding and securing the area, I would like to ask your assistance with investigating one such location, and retrieving an artifact of historical importance believed to be lost there.",
-      "accepted": "Thank you.  I will direct you to the location, if you've not seen it for yourself.  Decades ago the place was inhabited, but now the place seems to be overgrown and infested with monsters.  Do what you must to cleanse the place, and retrieve what the texts called a bane staff.  Dii vult.",
+      "accepted": "Thank you.  I will direct you to the location, if you've not seen it for yourself.  Decades ago the place was inhabited, but now the place seems to be overgrown and infested with monsters.  Do what you must to cleanse the place, and retrieve what the texts called a bane staff.  I'll trust you to take care of it, along with any other treasures you find there.  Dii vult.",
       "rejected": "When you believe you are ready, talk to me again.  The longer these old places linger without being dealt with, the more of a threat they may become.",
       "advice": "The extent to which the place has overgrown is unnatural.  I would expect monsters comfortable among greenery to be the most common threat, and we have reason to believe something large has taken root there.  Beyond that, I can tell you little of the history behind that place, Sofia might know more.",
       "inquire": "How goes the hunt?",
-      "success": "Thank you.  That staff was associated with those who once inhabited that place, but it seems whatever anomalies caused all this corrupted it to some extent.  I will care for it, anything else you found down there you may deal with as you see fit.  The rest of us will try to discern just what to make of these anomalies.",
+      "success": "Thank you.  That staff was associated with those who once inhabited that place.  It seems whatever anomalies caused all this corrupted it to some extent, but I'm willing to leave this in your care.  Anything else you found down there you may deal with as you see fit.  The rest of us will try to discern just what to make of these anomalies.",
       "success_lie": "What idiocy is this?",
       "failure": "But how?"
     }
@@ -597,11 +598,11 @@
     "dialogue": {
       "describe": "Grant us strength…",
       "offer": "I believe I can now trust you with a more dangerous, yet also more vital, task.  In the past we had few dedicated safehouses, most of us were hosted in the rural homes and churches of our brethren and those they could trust.  Only one place was truly built by our hand, and it suffered the same strange occurrences so many other places suffered during zero hour.  The handful of survivors to flee brought with them tales of living fire and otherworldly horror, warping the very stones underneath the sanctum.  If you believe yourself ready, I would like you to lead a hunt to cleanse it, and take the demon's claws as proof of the hunt.",
-      "accepted": "By Thor and The God In Three Persons both, may you be victorious.  The evil lurking there was described as wielding a clawed weapon that warped The Veil itself with hellfire, until it was struck from its fiery grasp by a lucky strike.  They were able to seal it behind a barrier with one of our swords as the keystone, and you will need to undo the seal to confront it.  If you can retrieve that infernal weapon in your hunt, we will be able to destroy it safely.  I would commit a full hunting party if only we could spare anyone.  Dii vult!",
+      "accepted": "By Thor and The God In Three Persons both, may you be victorious.  The evil lurking there was described as wielding a clawed weapon that warped The Veil itself with hellfire, until it was struck from its fiery grasp by a lucky strike.  They were able to seal it behind a barrier with one of our swords as the keystone, and you will need to undo the seal to confront it.  This artifact is dangerous enough I will require you to entrust it to our care, this time.  We should be able to destroy it safely.  I would commit a full hunting party if only we could spare anyone.  Dii vult!",
       "rejected": "Understood.  This task is dangerous, and the seal they set up shouldn't be undone unless you're prepared to see it through to the end.  Speak with me when you see fit.",
       "advice": "Bring any assistance you can, and expect all manner of abominations to have followed that thing through the wounds in The Veil.  Be prepared for infernal fire, any magic or equipment that would safeguard against flame would help.  Do as best as you can to assemble a proper hunting party, but sadly we are stretched thin as it is.",
       "inquire": "How goes the hunt?",
-      "success": "Gods above and below, to think this thing caused one of our holiest places to fall to ruin.  I doubt it will be safe to reclaim that place anytime soon.  Anything you found down there is yours to use as you see fit.  I hope that those who fell holding that thing back are at peace.  Speak with me when you see fit.",
+      "success": "Gods above and below, to think this thing caused one of our holiest places to fall to ruin.  I doubt it will be safe to reclaim that place anytime soon.  Anything else you found down there is yours to use as you see fit.  I hope that those who fell holding that thing back are at peace.  Speak with me when you see fit.",
       "success_lie": "What idiocy is this?",
       "failure": "But how?"
     }

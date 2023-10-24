@@ -950,7 +950,7 @@
   {
     "type": "effect_type",
     "id": "blood_athame_side_effects",
-    "resist_effects": [ "talisman_warding" ],
+    "resist_effects": [ "talisman_warding", "sanguine_staff_buff" ],
     "resist_traits": [ "PROF_SANGUINE", "THRESH_DRAGONBLOOD" ],
     "//": "This won't kill you, but the health and stat penalties will make you wish it did later on down the line.",
     "name": [ "", "Strange Anemia", "Strange Anemia", "Strange Anemia", "Strange Anemia", "Severe Strange Anemia" ],
@@ -989,6 +989,45 @@
       "dex_mod": [ -0.75, -0.6 ],
       "thirst_chance": [ 40, 35 ]
     }
+  },
+  {
+    "type": "effect_type",
+    "id": "sanguine_staff_buff",
+    "name": [ "Enduring Blood" ],
+    "desc": [
+      "Reduces the impact of Strange Anemia and mitigates its effects, outright preventing it if one uses the athame while under this effect, along with preventing wounds from bleeding.  Allows one to use the silver athame's sanguine rituals more freely."
+    ],
+    "blocks_effects": [ "bleed", "blood_athame_side_effects" ],
+    "apply_message": "Something stirs in your veins as the staff's protective effect washes over you.",
+    "decay_messages": [ [ "The effect of the staff's strange magic is waning.", "bad" ] ],
+    "remove_message": "Your heart skips a beat briefly as your feel the staff's influence fade.",
+    "rating": "good",
+    "max_duration": "200 m",
+    "max_intensity": 200,
+    "int_dur_factor": "1 m",
+    "base_mods": {
+      "health_min": [ 1 ],
+      "health_tick": [ 1800 ],
+      "h_mod_min": [ 1 ],
+      "h_mod_tick": [ 1800 ],
+      "hunger_min": [ -1 ],
+      "hunger_chance": [ 80 ],
+      "hunger_chance_bot": [ 100 ],
+      "hunger_tick": [ 300 ],
+      "thirst_min": [ -1 ],
+      "thirst_chance": [ 80 ],
+      "thirst_chance_bot": [ 100 ],
+      "thirst_tick": [ 600 ]
+    },
+    "scaling_mods": { "str_mod": [ 0.02 ], "dex_mod": [ 0.02 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "sanguine_staff_mending",
+    "removes_effects": [ "bleed", "winded" ],
+    "rating": "good",
+    "max_duration": "15 s",
+    "base_mods": { "pain_min": [ -20 ], "stamina_min": [ 200 ], "fatigue_min": [ 100 ] }
   },
   {
     "type": "effect_type",

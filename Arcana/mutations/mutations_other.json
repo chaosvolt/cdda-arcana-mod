@@ -361,6 +361,17 @@
   },
   {
     "type": "mutation",
+    "id": "ARCANA_STAFF_EFFECT",
+    "name": { "str": "Life's Bane" },
+    "points": 99,
+    "valid": false,
+    "description": "The staff's influence lingers in your mind while you wield it, allowing you to better tolerate violence and the harvesting of flesh.",
+    "player_display": false,
+    "purifiable": false,
+    "flags": [ "PSYCHOPATH", "PRED4" ]
+  },
+  {
+    "type": "mutation",
     "id": "ARCANA_BERSERK_EFFECT",
     "name": { "str": "Surge of Bloodlust" },
     "points": 99,

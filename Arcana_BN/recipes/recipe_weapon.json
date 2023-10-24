@@ -621,5 +621,26 @@
     ],
     "components": [ [ [ "stormbringer", 1 ] ], [ [ "salt", 100 ] ], [ [ "essence_blood", 12 ] ] ],
     "flags": [ "SECRET" ]
+  },
+  {
+    "result": "sanguine_staff_lifesbane",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_WEAPON",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "80 m",
+    "book_learn": [ [ "book_bloodmagic", 8 ], [ "book_syncretism", 7 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 3 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 } ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "book_summoning", -1 ] ], [ [ "cleric_ring", 10 ] ] ],
+    "components": [
+      [ [ "draconic_heart", 1 ] ],
+      [ [ "scourge_staff", 1 ] ],
+      [ [ "bone_twisted", 1 ], [ "iron_thorn", 1 ] ],
+      [ [ "material_quicklime", 1 ], [ "chem_lye", 1, "LIST" ] ]
+    ],
+    "flags": [ "SECRET" ]
   }
 ]
