@@ -51,14 +51,14 @@
   {
     "type": "item_group",
     "subtype": "collection",
-    "id": "starting_mana_gem_460_dull_essence",
-    "entries": [ { "item": "essence_dull", "charges": 460 } ]
+    "id": "starting_mana_gem_440_dull_essence",
+    "entries": [ { "item": "essence_dull", "charges": 440 } ]
   },
   {
     "type": "item_group",
     "subtype": "collection",
-    "id": "starting_mana_gem_580_dull_essence",
-    "entries": [ { "item": "essence_dull", "charges": 580 } ]
+    "id": "starting_mana_gem_520_dull_essence",
+    "entries": [ { "item": "essence_dull", "charges": 520 } ]
   },
   {
     "type": "item_group",
@@ -476,12 +476,12 @@
           "book_hexenhammer"
         ],
         "entries": [
-          { "item": "ethereal_hand_crossbow", "container-item": "XL_holster", "charges": 20 },
+          { "item": "ethereal_hand_crossbow", "container-item": "XL_holster", "charges": 40 },
           { "item": "holster", "contents-group": "1911_gun_arcane_purifier" },
           { "item": "legpouch_large", "contents-group": "1911_mags_arcane_purifier" },
           { "item": "45_acp", "charges": 9 },
           { "item": "sun_sword", "container-item": "scabbard" },
-          { "item": "mana_gem_dull", "contents-group": "starting_mana_gem_460_dull_essence" },
+          { "item": "mana_gem_dull", "contents-group": "starting_mana_gem_440_dull_essence" },
           { "item": "medium_battery_cell", "charges": 500 },
           { "group": "charged_matches" },
           { "group": "charged_smart_phone" }
@@ -541,10 +541,10 @@
           "book_hexenhammer"
         ],
         "entries": [
-          { "item": "ethereal_crossbow", "charges": 20, "contents-item": "shoulder_strap" },
+          { "item": "ethereal_crossbow", "charges": 80, "contents-item": "shoulder_strap" },
           { "item": "holster", "contents-group": "1911_gun_arcane_purifier" },
           { "item": "legpouch_large", "contents-group": "1911_mags_arcane_purifier" },
-          { "item": "mana_gem_dull", "contents-group": "starting_mana_gem_580_dull_essence" },
+          { "item": "mana_gem_dull", "contents-group": "starting_mana_gem_520_dull_essence" },
           { "item": "45_acp", "charges": 9 },
           { "item": "bandolier_shotgun", "contents-group": "bandolier_shotgun_shot_00_arcana" },
           { "group": "charged_smart_phone" }

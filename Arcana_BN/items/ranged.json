@@ -193,8 +193,8 @@
     "ranged_damage": { "damage_type": "stab", "amount": 50, "armor_penetration": 25 },
     "dispersion": 150,
     "durability": 6,
-    "clip_size": 20,
-    "reload": 3,
+    "clip_size": 80,
+    "reload": 2,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
     "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "CROSSBOW" ],
     "valid_mod_locations": [ [ "sling", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ] ]
@@ -221,8 +221,8 @@
     "ranged_damage": { "damage_type": "stab", "amount": 50, "armor_penetration": 20 },
     "dispersion": 300,
     "durability": 6,
-    "clip_size": 20,
-    "reload": 3,
+    "clip_size": 40,
+    "reload": 2,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
     "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "CROSSBOW" ],
     "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ] ]
@@ -250,8 +250,8 @@
     "ranged_damage": { "damage_type": "stab", "amount": 125, "armor_penetration": 75 },
     "dispersion": 75,
     "durability": 6,
-    "clip_size": 50,
-    "reload": 6,
+    "clip_size": 200,
+    "reload": 3,
     "ammo_effects": [ "WIDE", "LASER", "LARGE_BEANBAG", "BLINDS_EYES" ],
     "flags": [ "FIRE_50", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "CROSSBOW" ],
     "valid_mod_locations": [ [ "sling", 1 ] ]
