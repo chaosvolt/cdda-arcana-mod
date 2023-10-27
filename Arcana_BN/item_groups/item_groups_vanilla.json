@@ -365,5 +365,11 @@
     "id": "dissection",
     "subtype": "distribution",
     "entries": [ { "group": "autodoc_installation_magitech", "prob": 5 } ]
+  },
+  {
+    "id": "survivor_currency",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "CF_golden_scale", "prob": 20, "count": [ 1, 4 ] } ]
   }
 ]
