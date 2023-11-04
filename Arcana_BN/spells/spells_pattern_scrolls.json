@@ -10,7 +10,7 @@
     "message": "You gaze deep into the strange patterns, endless spirals weaving through each other…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -25,7 +25,7 @@
     "message": "You gaze deep into the strange patterns, an overlapping web of exotic eye motifs…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -40,7 +40,7 @@
     "message": "You gaze deep into the strange patterns, an alchemical circle with seemingly impossible geometries…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -55,7 +55,7 @@
     "message": "You gaze deep into the strange patterns, a ring of unearthly calligraphy giving way to inhuman imagery…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -70,7 +70,7 @@
     "message": "You gaze deep into the strange patterns, dizzying orbital diagrams almost resembling a model of some complex chemical compound…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -85,7 +85,7 @@
     "message": "You gaze deep into the strange patterns, resembling rays of light shrouded in wings…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -100,7 +100,7 @@
     "message": "You gaze deep into the strange patterns, the text seeming to frost over…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -115,7 +115,7 @@
     "message": "You gaze deep into the strange patterns, shifting intertwinned thorns and stony motifs…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -130,7 +130,7 @@
     "message": "You gaze deep into the strange patterns, symbols fading into incomprehensible motifs…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -145,7 +145,7 @@
     "message": "You gaze deep into the strange patterns, stirring strange instinctive responses in the back of your mind…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -160,7 +160,7 @@
     "message": "You gaze deep into the strange patterns, strange designs that waver like dancing flames…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -175,7 +175,7 @@
     "message": "You gaze deep into the strange patterns, intricate lines giving a three-dimensional impression…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -190,7 +190,7 @@
     "message": "You gaze deep into the strange patterns, constellations of alien skies…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -205,7 +205,7 @@
     "message": "You gaze deep into the strange patterns, complex anatomical imagery mingled with unearthly diagrams…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -220,7 +220,7 @@
     "message": "You gaze deep into the strange patterns, peculiar symbols blending in with scenery of surreal perspectives…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -235,7 +235,7 @@
     "message": "You gaze deep into the strange patterns,  endless linear paths intersecting and bending in ways defying the laws of geometry…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -250,7 +250,7 @@
     "message": "You gaze deep into the strange patterns, a maze of patterns bleeding into vague impressions of otherworldly animals…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -265,7 +265,7 @@
     "message": "You gaze deep into the strange patterns, weaving in and all throughout itself like ever-shifting ivy…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -280,7 +280,7 @@
     "message": "You gaze deep into the strange patterns, radiant designs seemingly bursting out from the paper…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -295,7 +295,7 @@
     "message": "You gaze deep into the strange patterns, coiled serpentine lines winding into endless ouroboros motifs…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -310,7 +310,7 @@
     "message": "You gaze deep into the strange patterns, irregular jagged artwork folding in on itself…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -325,7 +325,7 @@
     "message": "You gaze deep into the strange patterns, strange linear patterns giving way to more organic motifs…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -340,7 +340,7 @@
     "message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   },
@@ -355,7 +355,7 @@
     "message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
     "min_damage": 10000,
     "max_damage": 10000,
-    "flags": [ "SILENT", "MUTATE_TRAIT" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "MUTATE_TRAIT" ],
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "arcana_item_scroll_leftover", "hit_self": false } ]
   }
