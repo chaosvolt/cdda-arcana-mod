@@ -1027,7 +1027,7 @@
     "removes_effects": [ "bleed", "winded" ],
     "rating": "good",
     "max_duration": "15 s",
-    "base_mods": { "pain_min": [ -20 ], "stamina_min": [ 200 ], "fatigue_min": [ 100 ] }
+    "base_mods": { "pain_min": [ -20 ], "stamina_min": [ 200 ], "fatigue_min": [ -100 ] }
   },
   {
     "type": "effect_type",
