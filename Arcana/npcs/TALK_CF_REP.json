@@ -30,6 +30,10 @@
         }
       }
     },
+    "speaker_effect": {
+      "condition": { "not": { "u_has_effect": "sofia_deacon_message" } },
+      "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" }
+    },
     "responses": [
       {
         "text": "[MISSION] I need another copy of the trade arrangements, please.",
@@ -62,7 +66,7 @@
         "topic": "TALK_CF_REP_DEACON_MISSION",
         "condition": {
           "and": [
-            { "not": { "u_has_effect": "sofia_deacon_message" } },
+            { "not": { "u_has_var": "sofia_deacon_message", "type": "mission", "context": "rural_church", "value": "yes" } },
             { "not": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL", "PROF_SANGUINE" ] } },
             { "u_has_mission": "MISSION_CF_DEACON_1" }
           ]
@@ -267,11 +271,7 @@
       },
       { "text": "Do you have anything to trade?", "switch": true, "default": true, "topic": "TALK_CF_REP_TRADE" },
       { "text": "Anything I can do to help?", "topic": "TALK_MISSION_LIST" },
-      {
-        "text": "Well, bye.",
-        "topic": "TALK_DONE",
-        "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" }
-      }
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -288,7 +288,7 @@
       {
         "text": "Alright.",
         "topic": "TALK_CF_REP",
-        "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" }
+        "effect": { "u_add_var": "sofia_deacon_message", "type": "mission", "context": "rural_church", "value": "yes" }
       }
     ]
   },
@@ -442,11 +442,7 @@
     ],
     "responses": [
       { "text": "Thank you.  One more thing before I go.", "topic": "TALK_CF_REP" },
-      {
-        "text": "Thank you.  Bye for now.",
-        "topic": "TALK_DONE",
-        "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" }
-      }
+      { "text": "Thank you.  Bye for now.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -469,11 +465,7 @@
     ],
     "responses": [
       { "text": "Thank you.  One more thing before I go.", "topic": "TALK_CF_REP" },
-      {
-        "text": "Thank you.  Bye for now.",
-        "topic": "TALK_DONE",
-        "effect": { "u_add_effect": "sofia_deacon_message", "duration": "PERMANENT" }
-      }
+      { "text": "Thank you.  Bye for now.", "topic": "TALK_DONE" }
     ]
   },
   {

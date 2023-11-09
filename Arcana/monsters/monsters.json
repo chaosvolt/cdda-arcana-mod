@@ -985,9 +985,9 @@
       [ "PARROT_AT_DANGER", 5 ],
       {
         "type": "spell",
-        "spell_data": { "id": "arcana_monster_summoner" },
+        "spell_data": { "id": "arcana_monster_summoner", "hit_self": true },
         "cooldown": 15,
-        "monster_message": "The air chills as the maddened wanderer raises its talisman!"
+        "monster_message": "The air wavers as the maddened wanderer raises its talisman!"
       }
     ],
     "death_drops": "mon_feral_summoner_death_drops",

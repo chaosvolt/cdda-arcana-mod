@@ -309,7 +309,7 @@
     "difficulty": 4,
     "time": "5 m",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "material_limestone", 15 ] ], [ [ "essence_dull", 60 ] ] ]
+    "components": [ [ [ "material_limestone", 15 ] ], [ [ "essence_dull", 15 ] ] ]
   },
   {
     "result": "portal",

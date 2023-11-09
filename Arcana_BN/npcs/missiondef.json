@@ -207,7 +207,7 @@
     "value": 10000,
     "has_generic_rewards": false,
     "start": {
-      "effect": [ { "u_add_effect": "already_asked_deacon" } ],
+      "effect": [ { "npc_add_effect": "rural_church_aware" }, { "u_add_effect": "already_asked_deacon" } ],
       "assign_mission_target": {
         "om_terrain": "cf_church_4",
         "om_special": "cf_rural_church",
@@ -230,7 +230,7 @@
       "success_lie": "What are you trying to pull?",
       "failure": "How in God's name did you fail at this?"
     },
-    "end": { "effect": [ { "npc_add_effect": "rural_church_aware" }, { "u_buy_item": "FMCNote", "count": 5 } ] }
+    "end": { "effect": [ { "u_buy_item": "FMCNote", "count": 5 } ] }
   },
   {
     "id": "MISSION_CF_REP_1",

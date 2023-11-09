@@ -573,10 +573,10 @@
     "skills_required": [ "fabrication", 4 ],
     "time": "50 m",
     "book_learn": [ [ "book_syncretism", 6 ] ],
-    "using": [ [ "arcana_essence_any", 5 ], [ "arcana_polishing_standard", 1 ] ],
+    "using": [ [ "arcana_essence_any", 3 ], [ "arcana_polishing_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_syncretism", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
-    "components": [ [ [ "engraved_stone", 1 ] ], [ [ "monster_tear", 4 ] ] ]
+    "components": [ [ [ "engraved_stone", 1 ] ], [ [ "monster_tear", 2 ] ] ]
   },
   {
     "result": "vortex_stone",
@@ -589,9 +589,13 @@
     "skills_required": [ "fabrication", 5 ],
     "time": "50 m",
     "book_learn": [ [ "book_syncretism", 7 ] ],
-    "using": [ [ "arcana_essence_any", 5 ], [ "arcana_polishing_standard", 1 ] ],
+    "using": [ [ "arcana_polishing_standard", 1 ] ],
     "tools": [ [ [ "book_syncretism", -1 ] ] ],
-    "components": [ [ [ "vortex_shard", 1 ] ], [ [ "spiral_stone", 1 ], [ "rock", 6 ] ] ]
+    "components": [
+      [ [ "vortex_shard", 1 ] ],
+      [ [ "spiral_stone", 1 ], [ "rock", 6 ] ],
+      [ [ "essence_blood", 1 ], [ "essence_dull", 10 ] ]
+    ]
   },
   {
     "result": "candle_warding",

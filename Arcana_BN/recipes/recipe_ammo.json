@@ -165,6 +165,7 @@
     "components": [
       [
         [ "vortex_stone", 1 ],
+        [ "spiral_stone", 2 ],
         [ "mycus_fruit", 5 ],
         [ "marloss_seed", 10 ],
         [ "marloss_gel", 1 ],
@@ -198,7 +199,6 @@
     "components": [
       [
         [ "essence_pure", 1 ],
-        [ "spiral_stone", 5 ],
         [ "teleporter", 1 ],
         [ "portal", 1 ],
         [ "petrified_eye", 2 ],
