@@ -54,12 +54,6 @@
     "death_drops": "mon_worm_small_death_drops"
   },
   {
-    "id": "mon_cockatrice",
-    "copy-from": "mon_cockatrice",
-    "type": "MONSTER",
-    "death_drops": "mon_cockatrice_death_drops"
-  },
-  {
     "id": "mon_sludge_crawler",
     "copy-from": "mon_sludge_crawler",
     "type": "MONSTER",

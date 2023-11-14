@@ -58,12 +58,6 @@
   },
   {
     "type": "item_group",
-    "id": "mon_cockatrice_death_drops",
-    "subtype": "collection",
-    "entries": [ { "item": "monster_tear", "prob": 5 }, { "item": "essence_blood", "count": [ 2, 4 ], "prob": 5 } ]
-  },
-  {
-    "type": "item_group",
     "id": "mon_sludge_crawler_death_drops",
     "subtype": "collection",
     "entries": [
