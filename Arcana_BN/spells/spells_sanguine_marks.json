@@ -210,7 +210,7 @@
     "//": "ID retained for save compatibility reasons.",
     "type": "SPELL",
     "name": { "str": "Mark: Manifestation of Strength" },
-    "description": "Sanguine Mark\nUsing this spell will imbue your body with an unnatural aura, greatly increasing your strength and damage resistance.  It can only be used on yourself.",
+    "description": "Sanguine Mark\nUsing this spell will imbue your body with an unnatural aura, greatly increasing your strength and damage resistance, and allowing you to use heavy weapons unsupported if otherwise unable to.  It can only be used on yourself.",
     "message": "A lust for battle surges through you as you complete the ritual gesture.  %s!",
     "valid_targets": [ "self" ],
     "flags": [ "NO_EXPLOSION_VFX", "SOMATIC", "NO_HANDS", "NO_FAIL" ],

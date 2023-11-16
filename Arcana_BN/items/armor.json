@@ -4,7 +4,7 @@
     "copy-from": "spell_base",
     "type": "ARMOR",
     "name": { "str": "aura of dragon's blood", "str_pl": "auras of dragon's blood" },
-    "description": "A strange radiance permeating your body, increasing your strength and reducing physical damage.",
+    "description": "A strange radiance permeating your body, increasing your strength and reducing physical damage, and allowing you to use heavy weapons unsupported if otherwise unable to.",
     "color": "dark_gray",
     "relic_data": {
       "passive_effects": [
@@ -21,7 +21,7 @@
         }
       ]
     },
-    "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF" ] }
+    "extend": { "flags": [ "ONLY_ONE", "NO_TAKEOFF", "HEAVY_WEAPON_SUPPORT" ] }
   },
   {
     "id": "halo_phase_shield",

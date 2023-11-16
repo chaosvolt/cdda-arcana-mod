@@ -661,7 +661,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "abyssal armor (on)", "str_pl": "abyssal armors (on)" },
     "description": "What was once a modified suit of leather armor, now radically altered with heavy armor and unnatural magic made from desecrating a holy relic.  It feels like it has a will of its own with how easy it is to move in this, currently helping to stave off pain and set broken limbs, along with increasing attack speed and reflexes, and allowing them to fire heavy weapons unsupported.  A sickening aura wearing down on body and mind can also be felt, along with the feeling of being watched.",
-    "extend": { "flags": [ "NO_TAKEOFF", "TRADER_AVOID", "SPLINT", "FIRE_SUPPORT" ] },
+    "extend": { "flags": [ "NO_TAKEOFF", "TRADER_AVOID", "SPLINT", "HEAVY_WEAPON_SUPPORT" ] },
     "encumbrance": 10,
     "turns_per_charge": 100,
     "revert_to": "armor_wyrm_berserker",
