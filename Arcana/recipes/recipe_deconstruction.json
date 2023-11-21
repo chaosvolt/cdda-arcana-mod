@@ -895,6 +895,7 @@
     "skill_used": "magic",
     "difficulty": 5,
     "time": "50 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 30 ] ] ]
   },
@@ -904,6 +905,7 @@
     "skill_used": "magic",
     "difficulty": 5,
     "time": "50 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 30 ] ] ]
   },
@@ -913,6 +915,7 @@
     "skill_used": "magic",
     "difficulty": 6,
     "time": "60 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 60 ] ] ]
   },
@@ -922,6 +925,7 @@
     "skill_used": "magic",
     "difficulty": 6,
     "time": "60 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 60 ] ] ]
   },
@@ -931,6 +935,7 @@
     "skill_used": "magic",
     "difficulty": 7,
     "time": "70 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 90 ] ] ]
   },
@@ -940,6 +945,7 @@
     "skill_used": "magic",
     "difficulty": 7,
     "time": "70 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 90 ] ] ]
   },
@@ -949,6 +955,7 @@
     "skill_used": "magic",
     "difficulty": 8,
     "time": "80 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 120 ] ] ]
   },
@@ -958,6 +965,7 @@
     "skill_used": "magic",
     "difficulty": 8,
     "time": "80 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 120 ] ] ]
   },
@@ -967,6 +975,7 @@
     "skill_used": "magic",
     "difficulty": 9,
     "time": "90 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 150 ] ] ]
   },
@@ -976,6 +985,7 @@
     "skill_used": "magic",
     "difficulty": 9,
     "time": "90 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 150 ] ] ]
   },
