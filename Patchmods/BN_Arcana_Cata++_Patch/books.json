@@ -2,6 +2,7 @@
   {
     "id": "encyclopedia_arcana",
     "type": "BOOK",
+    "category": "manuals",
     "looks_like": "textbook_chemistry",
     "name": { "str_sp": "Rebuilding Civilization: Arcana" },
     "description": "The clear work of a lunatic, the arcana volume of the Rebuilding Civilization encyclopedia.  Evidently not intended for mass distribution, instead printed in limited numbers for reference purposes.  This book contains everything from fundamental anomalous materials to the properties of dimensional fatigue in extremely fine detail.  Literally any other book on the subject would be a more efficient way to learn, but this may be a good substitute until you find something better.",
