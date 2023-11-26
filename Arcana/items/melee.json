@@ -486,8 +486,8 @@
     "id": "AID_bio_kinetic_amplifier",
     "type": "GENERIC",
     "copy-from": "AID_abstract",
-    "name": { "str_sp": "Kinetic Amplifier CBM CBM installation data" },
-    "description": "Precise step-by-step instructions and other required data for installation of Kinetic Amplifier CBM CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  Integrated security subroutine renders it unusable after installation."
+    "name": { "str_sp": "Kinetic Amplifier CBM installation data" },
+    "description": "Precise step-by-step instructions and other required data for installation of Kinetic Amplifier CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  Integrated security subroutine renders it unusable after installation."
   },
   {
     "type": "GENERIC",
