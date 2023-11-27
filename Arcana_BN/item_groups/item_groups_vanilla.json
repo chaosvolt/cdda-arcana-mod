@@ -285,6 +285,16 @@
     ]
   },
   {
+    "id": "bionics_mil",
+    "type": "item_group",
+    "items": [ { "group": "lab_magitech_bionics", "prob": 5 } ]
+  },
+  {
+    "id": "bionics_heavy_mil",
+    "type": "item_group",
+    "items": [ [ "bio_essence_surge_cell", 1 ], [ "bio_temporal_stimulation", 1 ] ]
+  },
+  {
     "id": "bionics_op",
     "type": "item_group",
     "items": [ [ "bio_electrothermal_arc_projector", 1 ], [ "bio_rift_focus_projector", 1 ], [ "bio_temporal_stimulation", 2 ] ]
