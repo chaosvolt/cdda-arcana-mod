@@ -5,6 +5,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "5 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "scrap", 20 ] ], [ [ "essence_dull", 300 ] ] ]
   },
@@ -14,6 +15,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "5 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "resin_chunk", 6 ] ], [ [ "essence_dull", 150 ] ] ]
   },
@@ -23,6 +25,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "5 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "alloy_sheet", 1 ] ], [ [ "essence_dull", 50 ] ] ]
   },
@@ -32,6 +35,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "5 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "alloy_sheet", 1 ] ], [ [ "essence_dull", 50 ] ] ]
   },
@@ -41,6 +45,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "5 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "alloy_sheet", 1 ] ], [ [ "essence_dull", 50 ] ] ]
   },
@@ -50,6 +55,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "5 m",
+    "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "alloy_sheet", 1 ] ], [ [ "essence_dull", 50 ] ] ]
   }
