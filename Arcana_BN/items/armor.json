@@ -310,6 +310,6 @@
       "draw_cost": 0,
       "flags": [ "MAGIC_FOCUS" ]
     },
-    "flags": [ "WAIST", "OVERSIZE" ]
+    "flags": [ "WAIST", "COMPACT", "OVERSIZE" ]
   }
 ]
