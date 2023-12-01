@@ -19,7 +19,7 @@
     "material": [ "essencemat" ],
     "symbol": ",",
     "drop_action": { "type": "emit_actor" },
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE" ]
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE", "POWERARMOR_COMPATIBLE" ]
   },
   {
     "abstract": "scroll_magic_base",
