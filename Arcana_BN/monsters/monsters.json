@@ -1082,6 +1082,8 @@
     "armor_bullet": 9,
     "dodge": 2,
     "diff": 2,
+    "//": "Some of them may be feral arcane purifiers/operatives instead of conventional mage hunters.",
+    "harvest": "human_maybe_survivalist_bionics",
     "special_attacks": [
       [ "PARROT_AT_DANGER", 5 ],
       {
