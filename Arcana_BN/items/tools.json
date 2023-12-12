@@ -1257,6 +1257,7 @@
           "storage_battery",
           "large_storage_battery",
           "medium_atomic_battery_cell",
+          "heavy_disposable_cell",
           "heavy_atomic_battery_cell",
           "huge_atomic_battery_cell"
         ]
