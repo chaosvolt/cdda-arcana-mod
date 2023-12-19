@@ -69,6 +69,7 @@
     "visibility": 10,
     "avoidance": 99,
     "difficulty": 20,
+    "remove_on_trigger": true,
     "drops": [ { "item": "essence", "quantity": 1 } ],
     "spell_data": { "id": "arcana_trap_archon_shadows" }
   },
@@ -82,6 +83,7 @@
     "visibility": 10,
     "avoidance": 99,
     "difficulty": 20,
+    "remove_on_trigger": true,
     "drops": [ { "item": "essence", "quantity": 1 } ],
     "spell_data": { "id": "arcana_trap_archon_hallu" }
   },
@@ -95,6 +97,7 @@
     "visibility": 10,
     "avoidance": 99,
     "difficulty": 20,
+    "remove_on_trigger": true,
     "drops": [ { "item": "essence", "quantity": 1 } ],
     "spell_data": { "id": "arcana_trap_archon_chill" }
   },
@@ -132,6 +135,7 @@
     "visibility": -1,
     "avoidance": 99,
     "difficulty": 0,
+    "remove_on_trigger": true,
     "drops": [ { "item": "blast_canister_arcana_flame", "quantity": 1 } ],
     "spell_data": { "id": "arcana_trap_canister_flame" }
   },
@@ -145,6 +149,7 @@
     "visibility": -1,
     "avoidance": 99,
     "difficulty": 0,
+    "remove_on_trigger": true,
     "drops": [ { "item": "blast_canister_arcana_water", "quantity": 1 } ],
     "spell_data": { "id": "arcana_trap_canister_water" }
   },
@@ -158,6 +163,7 @@
     "visibility": -1,
     "avoidance": 99,
     "difficulty": 0,
+    "remove_on_trigger": true,
     "drops": [ { "item": "blast_canister_arcana_earth", "quantity": 1 } ],
     "spell_data": { "id": "arcana_trap_canister_earth" }
   },
@@ -171,6 +177,7 @@
     "visibility": -1,
     "avoidance": 99,
     "difficulty": 0,
+    "remove_on_trigger": true,
     "drops": [ { "item": "blast_canister_arcana_air", "quantity": 1 } ],
     "spell_data": { "id": "arcana_trap_canister_air" }
   }
