@@ -19,7 +19,6 @@
     "charges": 2,
     "healthy": -4,
     "fun": -4,
-    "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a strange numbness spread through your body.",
@@ -47,7 +46,6 @@
     "charges": 2,
     "healthy": -2,
     "fun": -2,
-    "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel wicked power spread through your body.",
@@ -75,7 +73,6 @@
     "charges": 2,
     "healthy": 2,
     "fun": 2,
-    "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a sudden tension spread through your body.",
@@ -103,7 +100,6 @@
     "charges": 2,
     "healthy": 4,
     "fun": 4,
-    "freezing_point": -150,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_red_potion_healing", "no_fail": true, "level": 0 },
     "drop_action": { "type": "emit_actor", "emits": [ "arcana_emit_red_potion" ], "scale_qty": true },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
@@ -126,7 +122,6 @@
     "color": "blue",
     "charges": 2,
     "healthy": 2,
-    "freezing_point": -150,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_mana_potion", "no_fail": true, "level": 0 },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
@@ -200,7 +195,6 @@
     "color": "red",
     "healthy": -6,
     "fun": -8,
-    "freezing_point": -10,
     "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOOD", "is_strong": true },
     "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
