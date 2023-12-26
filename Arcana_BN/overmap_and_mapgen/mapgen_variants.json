@@ -2765,6 +2765,7 @@
       "terrain": {
         " ": "t_thconc_floor",
         ",": "t_region_groundcover",
+        "_": "t_sidewalk",
         "-": "t_concrete_wall",
         "|": "t_concrete_wall",
         "=": "t_door_metal_locked",
@@ -2773,7 +2774,6 @@
         "3": "t_gutter_downspout",
         "6": "t_console_broken",
         "F": "t_chainfence",
-        "S": "t_sidewalk",
         "W": "t_reinforced_glass",
         "f": "t_chaingate_l"
       },
