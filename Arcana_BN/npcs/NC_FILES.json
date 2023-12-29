@@ -31,6 +31,7 @@
     "traits": [
       [ "SKIN_MEDIUM", 100 ],
       [ "hair_white_short", 100 ],
+      [ "eye_brown", 100 ],
       [ "PROF_CHALICE", 100 ],
       [ "NIGHTVISION", 100 ],
       [ "MYOPIC", 100 ],
@@ -92,6 +93,7 @@
     "traits": [
       [ "SKIN_LIGHT", 100 ],
       [ "hair_blond_long", 100 ],
+      [ "eye_green", 100 ],
       [ "PROF_CLEANSINGFLAME", 100 ],
       [ "NONADDICTIVE", 100 ],
       [ "SPIRITUAL", 100 ]
@@ -128,6 +130,7 @@
     "traits": [
       [ "SKIN_MEDIUM", 100 ],
       [ "hair_black_medium", 100 ],
+      [ "eye_hazel", 100 ],
       [ "PROF_CLEANSINGFLAME", 100 ],
       [ "MARTIAL_ARTS_CF", 100 ],
       [ "SPIRITUAL", 100 ],
@@ -349,9 +352,9 @@
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_misc",
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_HUNTMASTER_weapon",
     "traits": [
-      { "group": "Appearance_demographics" },
       { "group": "Arcanist_starting_traits" },
       [ "hair_black_long", 100 ],
+      [ "eye_brown", 100 ],
       [ "SKIN_MEDIUM", 100 ],
       [ "PROF_SANGUINE", 100 ]
     ]
@@ -380,9 +383,9 @@
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_misc",
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_weapon",
     "traits": [
-      { "group": "Appearance_demographics" },
       { "group": "Arcanist_starting_traits" },
       [ "hair_black_short", 100 ],
+      [ "eye_amber", 100 ],
       [ "SKIN_LIGHT", 100 ],
       [ "PROF_SANGUINE", 100 ],
       [ "PSYCHOPATH", 100 ],
@@ -498,6 +501,7 @@
     "traits": [
       [ "SKIN_MEDIUM", 100 ],
       [ "hair_gray_medium", 100 ],
+      [ "eye_gray", 100 ],
       [ "BGSS_Gung_Ho_1", 100 ],
       [ "OUTDOORSMAN", 100 ],
       [ "PSYCHOPATH", 75 ],

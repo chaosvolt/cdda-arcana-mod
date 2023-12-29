@@ -30,7 +30,8 @@
     "weapon_override": "NC_HERMIT_weapon",
     "traits": [
       [ "SKIN_MEDIUM", 100 ],
-      [ "hair_white_short", 100 ],
+      { "trait": "hair_short", "variant": "white" },
+      { "trait": "eye_color", "variant": "brown" },
       [ "PROF_CHALICE", 100 ],
       [ "NIGHTVISION", 100 ],
       [ "MYOPIC", 100 ],
@@ -89,7 +90,8 @@
     "weapon_override": "NC_CF_REP_weapon",
     "traits": [
       [ "SKIN_LIGHT", 100 ],
-      [ "hair_blond_long", 100 ],
+      { "trait": "hair_long", "variant": "blond" },
+      { "trait": "eye_color", "variant": "green" },
       [ "PROF_CLEANSINGFLAME", 100 ],
       [ "NONADDICTIVE", 100 ],
       [ "SPIRITUAL", 100 ]
@@ -126,7 +128,8 @@
     "weapon_override": "NC_CF_GM_weapon",
     "traits": [
       [ "SKIN_MEDIUM", 100 ],
-      [ "hair_black_medium", 100 ],
+      { "trait": "hair_medium", "variant": "black" },
+      { "trait": "eye_color", "variant": "hazel" },
       [ "PROF_CLEANSINGFLAME", 100 ],
       [ "MARTIAL_ARTS_CF", 100 ],
       [ "SPIRITUAL", 100 ],
@@ -348,9 +351,9 @@
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_misc",
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_HUNTMASTER_weapon",
     "traits": [
-      { "group": "Appearance_demographics" },
       { "group": "Arcanist_starting_traits" },
-      [ "hair_black_long", 100 ],
+      { "trait": "hair_long", "variant": "black" },
+      { "trait": "eye_color", "variant": "brown" },
       [ "SKIN_MEDIUM", 100 ],
       [ "PROF_SANGUINE", 100 ]
     ]
@@ -379,9 +382,9 @@
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_misc",
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_weapon",
     "traits": [
-      { "group": "Appearance_demographics" },
       { "group": "Arcanist_starting_traits" },
-      [ "hair_black_short", 100 ],
+      { "trait": "hair_short", "variant": "black" },
+      { "trait": "eye_color", "variant": "amber" },
       [ "SKIN_LIGHT", 100 ],
       [ "PROF_SANGUINE", 100 ],
       [ "PSYCHOPATH", 100 ],
@@ -494,7 +497,8 @@
     "weapon_override": "NC_CF_AUX_MERC_weapon",
     "traits": [
       [ "SKIN_MEDIUM", 100 ],
-      [ "hair_gray_medium", 100 ],
+      { "trait": "hair_medium", "variant": "gray" },
+      { "trait": "eye_color", "variant": "gray" },
       [ "BGSS_Gung_Ho_1", 100 ],
       [ "OUTDOORSMAN", 100 ],
       [ "PSYCHOPATH", 75 ],
