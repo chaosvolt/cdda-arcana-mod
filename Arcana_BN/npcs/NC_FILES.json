@@ -199,6 +199,7 @@
       { "id": "bio_metabolics", "chance": 25 },
       { "id": "bio_power_storage_mkII", "chance": 100 },
       { "id": "bio_targeting", "chance": 50 },
+      { "id": "bio_infolink", "chance": 50 },
       { "id": "bio_tools", "chance": 75 }
     ],
     "worn_override": "NC_CF_PURIFIER_worn",
