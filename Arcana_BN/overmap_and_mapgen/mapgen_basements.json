@@ -298,12 +298,9 @@
         { "item": "towel", "x": 20, "y": 21, "chance": 80 },
         { "item": "towel", "x": 3, "y": 13, "chance": 60 },
         { "item": "stereo", "x": 2, "y": 13, "chance": 50 },
-        { "group": "tools_science", "x": [ 4, 5 ], "y": 9, "chance": 50, "repeat": 3 },
-        { "group": "supplies_electronics", "x": [ 4, 5 ], "y": 9, "chance": 50, "repeat": 3 },
-        { "group": "magic_crafting", "x": 3, "y": 9, "chance": 50, "repeat": 3 },
-        { "group": "lab_magitech_other", "x": 3, "y": 9, "chance": 10 },
-        { "group": "lab_magitech_bionics", "x": 3, "y": 9, "chance": 5 },
-        { "item": "recipe_lab_arcana", "x": 3, "y": 9, "chance": 5 }
+        { "group": "lab_magitech_general", "x": [ 4, 5 ], "y": 9, "chance": 50, "repeat": 3 },
+        { "group": "lab_magitech_bionics", "x": 3, "y": 9, "chance": 10 },
+        { "item": "recipe_lab_arcana", "x": 3, "y": 9, "chance": 10 }
       ],
       "place_monster": [
         { "monster": "mon_broken_cyborg", "x": 14, "y": 3, "chance": 100 },
