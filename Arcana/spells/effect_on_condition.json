@@ -11,8 +11,8 @@
       ]
     },
     "effect": [
-      { "arithmetic": [ { "global_val": "var", "var_name": "ps_min_length" }, "=", { "time": "2 hours" } ] },
-      { "arithmetic": [ { "global_val": "var", "var_name": "ps_max_length" }, "=", { "time": "4 hours" } ] },
+      { "math": [ "ps_min_length", "=", "time('2 hours')" ] },
+      { "math": [ "ps_max_length", "=", "time('4 hours')" ] },
       { "arithmetic": [ { "global_val": "var", "var_name": "ps_base_str" }, "=", { "const": 1 } ] },
       { "arithmetic": [ { "global_val": "var", "var_name": "cause_portal_storm" }, "=", { "const": 1 } ] },
       { "arithmetic": [ { "global_val": "var", "var_name": "cause_early_portal_storm" }, "=", { "const": 0 } ] },
