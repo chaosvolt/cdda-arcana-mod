@@ -7,7 +7,11 @@ Focused principally on magical items as the name implies (the mod predating the 
 
 If you are using Dark Days Ahead, place the included Arcana folder in your data/mods folder. If you are using the Bright Nights fork, use the Arcana_BN folder instead. In either case it is recommended that, if updating the mod, to delete the older version of the folder rather than just dumping the new one onto the old one.
 
-__OPTIONAL:__ If you are using Arcana with Cataclysm++ or Magiclysm, the Patchmods folder has optional mods that allow the content of different mods to interact in more ways. These are NOT necessary for actual functionality even if you use both mods, and just add a few extra improvements. To use, copy the correct version (for DDA or BN, folder names will be marked as such) of the patchmod desired from the Patchmods folder into your data/mods folder. Then just include it during world generation, it will automatically be loaded after the two mods to be combined, due to requiring the relevant mods as prerequisites.
+__OPTIONAL:__ If you are using Arcana with Cataclysm++, Magiclysm, or a few ither mids, the Patchmods folder has optional mods that allow the content of different mods to interact in more ways. These are NOT necessary for actual functionality even if you use both mods, and just add a few extra improvements. To use, copy the correct version (for DDA or BN, folder names will be marked as such) of the patchmod desired from the Patchmods folder into your data/mods folder. Then just include it during world generation, it will automatically be loaded after the two mods to be combined, due to requiring the relevant mods as prerequisites.
+
+Links to Third-Party Mod Repos That Have Patchmods Available:
+* Cataclysm++, the scifi and innawoods content megamod by Noctifer-de-Mortem: https://github.com/Noctifer-de-Mortem/nocts_cata_mod
+* Magical Nights, the remastered update to Magiclysm specific to Bright Nights by RobbieNeko: https://github.com/RobbieNeko/Magical-Nights
 
 Stuff the BN version has that the DDA version lacks:
 * Mod interactions involving itemgroups work right in BN version due to retaining old itemgroup behavior.
