@@ -1683,7 +1683,7 @@
     "dynamic_line": {
       "u_has_effect": "hermit_earned_trust_1",
       "yes": "A few old arcane texts certainly, but much of what I have is still nothing more than trivial texts, holy books and novels.",
-      "no": "Old religious texts, novels, other such trivial things.  Was a bit of collector, in my youth."
+      "no": "Old religious texts, novels, other such trivial things.  Was a bit of a collector, in my youth."
     },
     "responses": [
       {
@@ -1725,7 +1725,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_BOOK_RELIGIOUS",
-    "dynamic_line": "Various faiths of the old world.  I've always been more a scholar then a theologian, but some insights can be glimpsed in such writings.  Of both the old gods, and the new gods.",
+    "dynamic_line": "Various faiths of the old world.  I've always been more a scholar than a theologian, but some insights can be glimpsed in such writings.  Of both the old gods, and the new gods.",
     "responses": [
       {
         "switch": true,
