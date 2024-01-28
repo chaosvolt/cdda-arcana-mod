@@ -13,9 +13,9 @@
     "effect": [
       { "math": [ "ps_min_length", "=", "time('2 hours')" ] },
       { "math": [ "ps_max_length", "=", "time('4 hours')" ] },
-      { "arithmetic": [ { "global_val": "var", "var_name": "ps_base_str" }, "=", { "const": 1 } ] },
-      { "arithmetic": [ { "global_val": "var", "var_name": "cause_portal_storm" }, "=", { "const": 1 } ] },
-      { "arithmetic": [ { "global_val": "var", "var_name": "cause_early_portal_storm" }, "=", { "const": 0 } ] },
+      { "math": [ "ps_base_str", "=", "1" ] },
+      { "math": [ "cause_portal_storm", "=", "1" ] },
+      { "math": [ "cause_early_portal_storm", "=", "0" ] },
       "next_weather",
       {
         "u_message": "Your blade resonates with the decaying fabric of reality, the air growing still.  The eye of the storm has formed around you.",
@@ -32,15 +32,10 @@
   {
     "type": "effect_on_condition",
     "id": "arcana_veilblade_cancel_portal_storm",
-    "condition": {
-      "or": [
-        { "is_weather": "portal_storm" },
-        { "compare_int": [ { "global_val": "var", "var_name": "cause_portal_storm" }, "=", { "const": 1 } ] }
-      ]
-    },
+    "condition": { "or": [ { "is_weather": "portal_storm" }, { "math": [ "cause_portal_storm == 1" ] } ] },
     "effect": [
-      { "arithmetic": [ { "global_val": "var", "var_name": "cause_portal_storm" }, "=", { "const": 0 } ] },
-      { "arithmetic": [ { "global_val": "var", "var_name": "cause_early_portal_storm" }, "=", { "const": 0 } ] },
+      { "math": [ "cause_portal_storm", "=", "0" ] },
+      { "math": [ "cause_early_portal_storm", "=", "0" ] },
       "next_weather",
       {
         "u_message": "Reality re-asserts itself as the storm fades.  The worst has passed, as is the will of He From Beyond The Veil…",
