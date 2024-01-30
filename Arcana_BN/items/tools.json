@@ -552,7 +552,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_blank",
@@ -574,7 +574,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_flaming_eye",
@@ -596,7 +596,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_hunting_horror",
@@ -618,7 +618,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_dark_wyrm",
@@ -640,7 +640,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_mi_go",
@@ -662,7 +662,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_jabberwock",
@@ -683,7 +683,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_flying_polyp",
@@ -705,7 +705,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_yugg",
@@ -727,7 +727,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_shoggoth",
@@ -749,7 +749,7 @@
       "is_pet": true,
       "skills": [ "magic" ]
     },
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "ACT_ON_RANGED_HIT" ]
   },
   {
     "id": "summon_kreck_bound",
