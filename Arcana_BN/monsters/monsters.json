@@ -490,7 +490,7 @@
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_yugg_bound",
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
-    "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
+    "delete": { "flags": [ "BASHES", "CAN_DIG" ] }
   },
   {
     "id": "mon_kreck_summoned",

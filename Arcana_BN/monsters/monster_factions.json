@@ -12,7 +12,8 @@
   {
     "type": "MONSTER_FACTION",
     "name": "nether",
-    "friendly": [ "slime", "cult", "moruboru", "archon" ]
+    "friendly": [ "slime", "cult", "moruboru", "archon" ],
+    "neutral": [ "zombie", "zombie_aquatic", "science" ]
   },
   {
     "type": "MONSTER_FACTION",
