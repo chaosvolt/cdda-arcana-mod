@@ -2948,7 +2948,7 @@
       "furniture": { "%": "f_rubble_rock", "b": "f_boulder_small", "c": "f_camp_chair", "t": "f_tourist_table" },
       "mapping": {
         ".": {
-          "item": [ { "item": "bone_human", "chance": 10 }, { "item": "rag", "chance": 5 }, { "item": "leather", "chance": 5 } ],
+          "item": [ { "item": "bone_human", "chance": 10 }, { "item": "sheet_cotton", "chance": 5 }, { "item": "leather", "chance": 5 } ],
           "items": [ { "item": "casings", "chance": 5 } ]
         },
         "%": { "item": [ { "item": "rock", "repeat": [ 1, 5 ] } ] }
