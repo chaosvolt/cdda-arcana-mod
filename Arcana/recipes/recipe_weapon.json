@@ -101,7 +101,7 @@
     "components": [
       [ [ "stick_long", 1 ] ],
       [ [ "filament", 100, "LIST" ] ],
-      [ [ "rag", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ]
+      [ [ "cotton_patchwork", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ]
     ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
@@ -155,7 +155,7 @@
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [
-        [ "rag", 1 ],
+        [ "cotton_patchwork", 1 ],
         [ "felt_patch", 1 ],
         [ "leather", 1 ],
         [ "fur", 1 ],
@@ -183,7 +183,7 @@
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [
-        [ "rag", 1 ],
+        [ "cotton_patchwork", 1 ],
         [ "felt_patch", 1 ],
         [ "leather", 1 ],
         [ "fur", 1 ],

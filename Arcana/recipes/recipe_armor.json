@@ -139,7 +139,7 @@
     "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
-    "components": [ [ [ "rag", 4 ] ] ],
+    "components": [ [ [ "cotton_patchwork", 4 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
@@ -156,7 +156,7 @@
     "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
-    "components": [ [ [ "rag", 4 ] ] ],
+    "components": [ [ [ "cotton_patchwork", 4 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
@@ -173,7 +173,7 @@
     "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
-    "components": [ [ [ "rag", 4 ] ] ],
+    "components": [ [ [ "cotton_patchwork", 4 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
@@ -586,7 +586,7 @@
     "type": "recipe",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_ARMOR",
-    "byproducts": [ [ "rag", 5 ] ],
+    "byproducts": [ [ "cotton_patchwork", 5 ] ],
     "skill_used": "magic",
     "difficulty": 8,
     "skills_required": [ "tailor", 6 ],
@@ -646,7 +646,7 @@
     "components": [
       [ [ "ragpouch", 1 ] ],
       [ [ "copper", 50 ], [ "scrap_copper", 2 ] ],
-      [ [ "rag", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ],
+      [ [ "cotton_patchwork", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ],
       [ [ "water_talisman", 1 ], [ "vortex_stone", 1 ], [ "vortex_shard", 1 ] ]
     ],
     "flags": [ "SECRET" ]

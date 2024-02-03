@@ -328,7 +328,7 @@
     "components": [
       [ [ "healing_potion", 1 ] ],
       [ [ "numbness_potion", 1 ] ],
-      [ [ "rag", 2 ], [ "medical_gauze", 1 ] ],
+      [ [ "cotton_patchwork", 2 ], [ "medical_gauze", 1 ] ],
       [ [ "arcana_flora_flowers", 1, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
