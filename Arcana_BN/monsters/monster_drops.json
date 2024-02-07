@@ -656,6 +656,7 @@
     "type": "item_group",
     "id": "mon_gozu_death_drops",
     "subtype": "collection",
+    "//": "Adds to existing group",
     "entries": [ { "item": "gracken_knuckles", "prob": 45 }, { "item": "essence", "prob": 50, "count": [ 1, 3 ] } ]
   },
   {
@@ -1492,8 +1493,12 @@
     "type": "item_group",
     "id": "mon_bound_glyph_death_drops_universal",
     "subtype": "collection",
-    "entries": [
-      { "item": "silver_glyph" }
-    ]
+    "entries": [ { "item": "silver_glyph" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_mothman_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "shadow_gem" }, { "item": "essence", "count": [ 1, 3 ] } ]
   }
 ]

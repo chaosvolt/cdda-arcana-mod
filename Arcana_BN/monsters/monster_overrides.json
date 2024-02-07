@@ -462,7 +462,6 @@
     "id": "mon_gozu",
     "copy-from": "mon_gozu",
     "type": "MONSTER",
-    "death_drops": "mon_gozu_death_drops",
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
@@ -764,5 +763,12 @@
     "copy-from": "mon_zombie_soldier_acid_2",
     "type": "MONSTER",
     "death_drops": "mon_zombie_soldier_acid_2_death_drops"
+  },
+  {
+    "id": "mon_mothman",
+    "copy-from": "mon_mothman",
+    "type": "MONSTER",
+    "death_drops": "mon_mothman_death_drops",
+    "extend": { "categories": [ "CLASSIC" ] }
   }
 ]
