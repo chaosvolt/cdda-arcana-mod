@@ -8,7 +8,7 @@
     "known_by_u": false,
     "size": 50,
     "power": 100,
-    "food_supply": 115200,
+    "fac_food_supply": { "calories": 115200, "vitamins": { "iron": 800, "calcium": 800, "vitC": 600 } },
     "wealth": 25000000,
     "currency": "CF_golden_scale",
     "relations": {
@@ -57,7 +57,7 @@
     "known_by_u": false,
     "size": 50,
     "power": 50,
-    "food_supply": 100000,
+    "fac_food_supply": { "calories": 100000, "vitamins": { "iron": 800, "calcium": 800, "vitC": 600 } },
     "wealth": 2500000,
     "currency": "CF_golden_scale",
     "relations": {
@@ -98,7 +98,7 @@
     "known_by_u": false,
     "size": 1,
     "power": 10,
-    "food_supply": 20000,
+    "fac_food_supply": { "calories": 20000, "vitamins": { "iron": 800, "calcium": 800, "vitC": 600 } },
     "wealth": 30000,
     "lone_wolf_faction": true,
     "relations": {
@@ -136,7 +136,7 @@
     "known_by_u": false,
     "size": 7,
     "power": 100,
-    "food_supply": 85000,
+    "fac_food_supply": { "calories": 85000, "vitamins": { "iron": 800, "calcium": 800, "vitC": 600 } },
     "wealth": 300000,
     "relations": {
       "sanguine_order_remnant": {
@@ -162,7 +162,7 @@
     "known_by_u": false,
     "size": 5,
     "power": 100,
-    "food_supply": 20000,
+    "fac_food_supply": { "calories": 20000, "vitamins": { "iron": 800, "calcium": 800, "vitC": 600 } },
     "wealth": 30000,
     "relations": {
       "sanguine_shrike_splinter": {
