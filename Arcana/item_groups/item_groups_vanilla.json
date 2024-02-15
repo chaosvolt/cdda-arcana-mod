@@ -431,13 +431,6 @@
   },
   {
     "type": "item_group",
-    "id": "autodoc_installation_programs",
-    "copy-from": "autodoc_installation_programs",
-    "subtype": "distribution",
-    "extend": { "entries": [ { "group": "autodoc_installation_magitech" } ] }
-  },
-  {
-    "type": "item_group",
     "id": "dissection",
     "copy-from": "dissection",
     "subtype": "distribution",
