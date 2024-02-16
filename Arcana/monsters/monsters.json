@@ -153,7 +153,7 @@
     "harvest": "human",
     "starting_ammo": { "bot_vortex": 6 },
     "special_attacks": [
-      [ "STARE", 50 ],
+      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 50 },
       { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 40 },
       [ "GRENADIER_ELITE", 15 ],
       [ "PARROT", 25 ],
@@ -749,7 +749,7 @@
     "regenerates_in_dark": true,
     "regen_morale": true,
     "special_attacks": [
-      [ "STARE", 75 ],
+      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 75 },
       { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 50 },
       [ "GRENADIER_ELITE", 20 ],
       [ "PARROT", 40 ],
@@ -816,7 +816,7 @@
     "vision_night": 50,
     "luminance": 1,
     "harvest": "exempt",
-    "special_attacks": [ [ "STARE", 250 ], { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 100 }, [ "PARROT", 80 ] ],
+    "special_attacks": [ { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 250 }, { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 100 }, [ "PARROT", 80 ] ],
     "death_function": { "message": "The %s's wavers and vanishes, dispelling the illusion.", "corpse_type": "NO_CORPSE" },
     "flags": [
       "PACIFIST",
@@ -915,7 +915,7 @@
     "path_settings": { "max_dist": 10 },
     "revert_to_itype": "broken_mech_arcana_boss",
     "special_attacks": [
-      [ "STARE", 100 ],
+      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 100 },
       {
         "type": "gun",
         "cooldown": 5,
