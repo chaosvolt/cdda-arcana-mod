@@ -448,6 +448,19 @@
     "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
   },
   {
+    "abstract": "AID_abstract",
+    "type": "GENERIC",
+    "name": { "str": "abstract Autodoc installation data" },
+    "material": [ "plastic" ],
+    "symbol": "#",
+    "weight": "35 g",
+    "volume": "50 ml",
+    "price": "200 USD",
+    "price_postapoc": "50 USD",
+    "looks_like": "data_card",
+    "flags": [ "BIONIC_INSTALLATION_DATA" ]
+  },
+  {
     "id": "AID_bio_electrothermal_arc_projector",
     "type": "GENERIC",
     "copy-from": "AID_abstract",
