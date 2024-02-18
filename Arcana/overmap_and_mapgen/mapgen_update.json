@@ -1180,7 +1180,6 @@
         { "item": "splinter", "x": [ 17, 19 ], "y": 14, "chance": 50, "repeat": 10 },
         { "item": "45_casing", "x": [ 20, 21 ], "y": [ 12, 14 ], "chance": 90, "repeat": 4 },
         { "group": "arcane_purifier_radio_casualty", "x": 21, "y": 13 },
-        { "item": "broken_eyebot", "x": 10, "y": 5 },
         { "item": "arcana_radio_relay_beacon", "x": 18, "y": 12 }
       ],
       "place_fields": [
