@@ -228,7 +228,7 @@
   {
     "type": "mapgen",
     "method": "json",
-    "om_terrain": "house_05ab_basement",
+    "om_terrain": "house_05_basement",
     "weight": 300,
     "//": "mostly empty basement, but hidden hint of some weirdness going on.",
     "object": {
