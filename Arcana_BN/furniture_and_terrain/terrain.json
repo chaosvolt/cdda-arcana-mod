@@ -85,7 +85,8 @@
       "sound_fail": "whump!",
       "ter_set": "t_dirt",
       "ter_set_bashed_from_above": "t_dirt",
-      "items": [ { "group": "digging_soil_loam_50L", "count": 20 }, { "item": "splinter", "count": [ 2, 5 ] } ]
+      "items": [ { "group": "digging_soil_loam_50L", "count": 20 }, { "item": "splinter", "count": [ 2, 5 ] } ],
+      "ranged": { "reduction": [ 50, 100 ], "destroy_threshold": 400 }
     }
   },
   {
@@ -106,7 +107,8 @@
       "sound": "crash!",
       "sound_fail": "bash!",
       "ter_set": "t_null",
-      "items": [ { "item": "rock", "count": [ 8, 15 ] }, { "item": "brick", "count": [ 2, 6 ] } ]
+      "items": [ { "item": "rock", "count": [ 8, 15 ] }, { "item": "brick", "count": [ 2, 6 ] } ],
+      "ranged": { "reduction": [ 60, 120 ], "destroy_threshold": 120 }
     }
   }
 ]

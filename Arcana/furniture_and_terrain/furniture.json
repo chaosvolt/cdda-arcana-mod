@@ -78,7 +78,7 @@
       "MINEABLE",
       "FLAT_SURF"
     ],
-    "bash": { "str_min": 20, "str_max": 40, "sound": "smash!", "sound_fail": "thump." },
+    "bash": { "str_min": 20, "str_max": 60, "sound": "smash!", "sound_fail": "thump." },
     "examine_action": "fireplace"
   },
   {
@@ -94,7 +94,7 @@
     "move_cost_mod": 0,
     "required_str": -1,
     "flags": [ "FLAMMABLE_HARD", "TRANSPARENT", "INDOORS", "SUN_ROOF_ABOVE", "NOCOLLIDE" ],
-    "bash": { "str_min": 15, "str_max": 30, "sound": "smash!", "sound_fail": "whump." }
+    "bash": { "str_min": 15, "str_max": 45, "sound": "smash!", "sound_fail": "whump." }
   },
   {
     "type": "furniture",
@@ -107,7 +107,7 @@
     "move_cost_mod": -1,
     "required_str": -1,
     "flags": [ "NOITEM", "BLOCK_WIND", "SUN_ROOF_ABOVE" ],
-    "bash": { "str_min": 30, "str_max": 60, "sound": "crash!", "sound_fail": "thump!" }
+    "bash": { "str_min": 30, "str_max": 90, "sound": "crash!", "sound_fail": "thump!" }
   },
   {
     "type": "furniture",
@@ -121,7 +121,7 @@
     "required_str": -1,
     "flags": [ "DOOR", "FLAMMABLE_HARD", "NOITEM", "BLOCK_WIND", "SUN_ROOF_ABOVE" ],
     "open": "f_door_arcana_o",
-    "bash": { "str_min": 20, "str_max": 40, "sound": "smash!", "sound_fail": "whump!" }
+    "bash": { "str_min": 15, "str_max": 45, "sound": "smash!", "sound_fail": "whump!" }
   },
   {
     "type": "furniture",
@@ -135,7 +135,7 @@
     "required_str": -1,
     "flags": [ "FLAMMABLE_HARD", "TRANSPARENT", "INDOORS", "SUN_ROOF_ABOVE" ],
     "close": "f_door_arcana_c",
-    "bash": { "str_min": 20, "str_max": 40, "sound": "smash!", "sound_fail": "whump!" }
+    "bash": { "str_min": 15, "str_max": 45, "sound": "smash!", "sound_fail": "whump!" }
   },
   {
     "type": "furniture",
@@ -225,7 +225,7 @@
     "deployed_item": "transmutation_crucible",
     "bash": {
       "str_min": 20,
-      "str_max": 40,
+      "str_max": 60,
       "sound": "smash!",
       "sound_fail": "thump.",
       "items": [ { "item": "transmutation_crucible", "prob": 75 }, { "item": "rock", "count": [ 2, 7 ] } ]
