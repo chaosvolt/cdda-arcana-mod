@@ -426,7 +426,6 @@
     "player_display": false,
     "purifiable": false,
     "attackcost_modifier": 0.8,
-    "dodge_modifier": 3,
     "mending_modifier": 2500.0,
     "anger_relations": [
       [ "NETHER", 10 ],
@@ -440,6 +439,7 @@
       [ "BIRD", 15 ],
       [ "REPTILE", 15 ]
     ],
+    "enchantments": [ { "values": [ { "value": "BONUS_DODGE", "add": 3 } ] } ],
     "social_modifiers": { "persuade": -25, "intimidate": 25 }
   },
   {

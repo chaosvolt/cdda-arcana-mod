@@ -369,8 +369,11 @@
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
     "allowed_items": [ "BELTED" ],
-    "dodge_modifier": -1,
-    "passive_mods": { "str_mod": 2, "dex_mod": -1 },
+    "enchantments": [
+      {
+        "values": [ { "value": "BONUS_DODGE", "add": -1 }, { "value": "DEXTERITY", "add": -1 }, { "value": "STRENGTH", "add": 2 } ]
+      }
+    ],
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_WINGS" ]
   },
   {
@@ -389,12 +392,14 @@
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "WINGS" ],
-    "enchantments": [ "ENCH_DRAGONBLOOD_DRACONIC_WINGS" ],
     "cardio_multiplier": 1.2,
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
     "allowed_items": [ "BELTED" ],
-    "passive_mods": { "str_mod": 5, "dex_mod": -2 }
+    "enchantments": [
+      "ENCH_DRAGONBLOOD_DRACONIC_WINGS",
+      { "values": [ { "value": "STRENGTH", "add": 5 }, { "value": "DEXTERITY", "add": -2 } ] }
+    ]
   },
   {
     "type": "mutation",
@@ -410,8 +415,8 @@
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
     "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
-    "cut_dmg_bonus": 7,
-    "flags": [ "UNARMED_BONUS" ]
+    "flags": [ "UNARMED_BONUS" ],
+    "enchantments": [ { "condition": { "not": "u_has_weapon" }, "values": [ { "value": "ITEM_DAMAGE_CUT", "add": 7 } ] } ]
   },
   {
     "type": "mutation",
@@ -479,8 +484,6 @@
     "encumbrance_always": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "foot_l", 5 ], [ "foot_r", 5 ] ],
     "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
     "restricts_gear": [ "foot_l", "foot_r" ],
-    "movecost_obstacle_modifier": 1.375,
-    "movecost_flatground_modifier": 0.875,
     "noise_modifier": 2.0,
     "attacks": [
       {
@@ -490,7 +493,12 @@
         "strength_damage": { "damage_type": "cut", "amount": 2 }
       }
     ],
-    "allowed_items": [ "ALLOWS_TALONS" ]
+    "allowed_items": [ "ALLOWS_TALONS" ],
+    "enchantments": [
+      {
+        "values": [ { "value": "MOVECOST_FLATGROUND_MOD", "multiply": -0.125 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 0.375 } ]
+      }
+    ]
   },
   {
     "type": "mutation",
@@ -509,8 +517,6 @@
     "types": [ "LEGS", "FEET" ],
     "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
     "restricts_gear": [ "foot_l", "foot_r" ],
-    "movecost_obstacle_modifier": 1.25,
-    "movecost_flatground_modifier": 0.75,
     "noise_modifier": 1.5,
     "attacks": [
       {
@@ -520,7 +526,12 @@
         "strength_damage": { "damage_type": "cut", "amount": 4 }
       }
     ],
-    "allowed_items": [ "ALLOWS_TALONS" ]
+    "allowed_items": [ "ALLOWS_TALONS" ],
+    "enchantments": [
+      {
+        "values": [ { "value": "MOVECOST_FLATGROUND_MOD", "multiply": -0.25 }, { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 0.25 } ]
+      }
+    ]
   },
   {
     "type": "mutation",
@@ -544,7 +555,7 @@
       "chance": 20,
       "base_damage": { "damage_type": "bash", "amount": 1 }
     },
-    "dodge_modifier": 2,
+    "enchantments": [ { "values": [ { "value": "BONUS_DODGE", "add": 2 } ] } ],
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_TAIL" ],
     "allowed_items": [ "ALLOWS_TAIL" ]
   },
@@ -570,7 +581,7 @@
       "base_damage": { "damage_type": "bash", "amount": 8 }
     },
     "//": "Becoming less effective at balancing is intentional, spikes aren't as substantial as Spiked Tail but still impedes dodge bonus.",
-    "dodge_modifier": 1,
+    "enchantments": [ { "values": [ { "value": "BONUS_DODGE", "add": 1 } ] } ],
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_TAIL" ],
     "allowed_items": [ "ALLOWS_TAIL" ]
   },
@@ -649,11 +660,9 @@
     "reading_speed_multiplier": 1.25,
     "scent_intensity": 1200,
     "scent_type": "sc_dragonblood",
-    "enchantments": [ "ENCH_DRAGONBLOOD_KNOCKDOWN" ],
     "anger_relations": [ [ "DRAGON", -100 ], [ "FUNGUS", 25 ], [ "MAMMAL", 15 ], [ "BIRD", 15 ], [ "REPTILE", 15 ] ],
     "weight_capacity_modifier": 1.05,
-    "passive_mods": { "str_mod": 2 },
-    "hp_adjustment": 25,
+    "enchantments": [ "ENCH_DRAGONBLOOD_KNOCKDOWN", { "values": [ { "value": "STRENGTH", "add": 2 }, { "value": "MAX_HP", "add": 25 } ] } ],
     "flags": [ "PRED4", "LARGE", "PSYCHOPATH" ]
   }
 ]
