@@ -1164,7 +1164,8 @@
       "moves": 50,
       "practice": 0,
       "done_message": "A thin beam of light emits from the crystal, essence and silver burning away into nothingness as the fabric of reality decays!"
-    }
+    },
+    "flags": [ "SINGLE_USE" ]
   },
   {
     "id": "orb_veil",
