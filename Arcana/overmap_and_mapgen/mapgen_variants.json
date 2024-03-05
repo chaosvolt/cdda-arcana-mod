@@ -2310,7 +2310,7 @@
         ".....4..................",
         "........................"
       ],
-      "palettes": [ "standard_building_palette", "library_palette" ],
+      "palettes": [ "standard_building_shared_palette", "library_palette" ],
       "terrain": { "x": "t_door_locked_interior" },
       "place_loot": [
         { "item": "matches", "x": 3, "y": 12, "chance": 50 },
@@ -2369,7 +2369,7 @@
         ".5.....5..#[[[y: | [#...",
         "..........######o####..."
       ],
-      "palettes": [ "standard_building_palette", "library_palette" ],
+      "palettes": [ "standard_building_shared_palette", "library_palette" ],
       "terrain": { "x": "t_door_locked_interior" },
       "place_loot": [
         { "item": "matches", "x": 11, "y": 18, "chance": 50 },
@@ -2429,7 +2429,7 @@
         "...........#X |C  + t#..",
         "...........###########.."
       ],
-      "palettes": [ "standard_building_palette", "library_palette" ],
+      "palettes": [ "standard_building_shared_palette", "library_palette" ],
       "nested": { "G": { "chunks": [ "roof_6x6_garden_1" ] } },
       "terrain": { "G": "t_grass", "x": "t_door_locked_interior" },
       "furniture": { "X": "f_safe_l" },
