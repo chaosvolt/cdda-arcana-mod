@@ -124,7 +124,7 @@
       "repair": {
         "skills": [ [ "mechanics", 3 ], [ "electronics", 4 ], [ "magic", 6 ] ],
         "time": "30 m",
-        "using": [ [ "welding_standard", 5 ] ]
+        "using": [ [ "welding_standard", 5 ], [ "vehicle_repair_electronics", 2 ] ]
       }
     },
     "damage_reduction": { "all": 15 },
@@ -156,7 +156,7 @@
       "repair": {
         "skills": [ [ "mechanics", 6 ], [ "electronics", 5 ], [ "magic", 7 ] ],
         "time": "60 m",
-        "using": [ [ "welding_standard", 5 ] ]
+        "using": [ [ "welding_standard", 5 ], [ "vehicle_repair_electronics", 2 ] ]
       }
     },
     "flags": [ "REACTOR" ],
@@ -247,7 +247,7 @@
       "repair": {
         "skills": [ [ "mechanics", 8 ], [ "electronics", 7 ], [ "magic", 9 ] ],
         "time": "60 m",
-        "using": [ [ "welding_standard", 5 ] ]
+        "using": [ [ "welding_standard", 5 ], [ "vehicle_repair_electronics", 2 ] ]
       }
     },
     "flags": [ "ENGINE", "PERPETUAL", "E_NO_POWER_DECAY" ],
