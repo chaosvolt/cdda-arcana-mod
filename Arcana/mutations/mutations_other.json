@@ -414,7 +414,7 @@
       [ "ABERRATION", -95 ],
       [ "UNKNOWN", -95 ]
     ],
-    "stealth_modifier": -45
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "STEALTH_MODIFIER", "add": -45 } ] } ]
   },
   {
     "type": "mutation",
@@ -425,7 +425,7 @@
     "description": "The armor's effects seem to greatly aid in swift strikes and a speedy recovery.",
     "player_display": false,
     "purifiable": false,
-    "attackcost_modifier": 0.8,
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "ATTACK_SPEED", "multiply": -0.2 } ] } ],
     "mending_modifier": 2500.0,
     "anger_relations": [
       [ "NETHER", 10 ],
