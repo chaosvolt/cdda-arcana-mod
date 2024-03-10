@@ -425,7 +425,15 @@
     "description": "The armor's effects seem to greatly aid in swift strikes and a speedy recovery.",
     "player_display": false,
     "purifiable": false,
-    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "ATTACK_SPEED", "multiply": -0.2 } ] } ],
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          { "value": "ATTACK_SPEED", "multiply": -0.2 },
+          { "value": "BONUS_DODGE", "add": 3}
+        ]
+      }
+    ],
     "mending_modifier": 2500.0,
     "anger_relations": [
       [ "NETHER", 10 ],
@@ -439,7 +447,6 @@
       [ "BIRD", 15 ],
       [ "REPTILE", 15 ]
     ],
-    "enchantments": [ { "values": [ { "value": "BONUS_DODGE", "add": 3 } ] } ],
     "social_modifiers": { "persuade": -25, "intimidate": 25 }
   },
   {
