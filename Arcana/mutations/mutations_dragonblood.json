@@ -274,7 +274,6 @@
     "points": 1,
     "mixed_effect": true,
     "bodytemp_modifiers": [ 125, 500 ],
-    "bodytemp_sleep": 125,
     "description": "A strange heat permeates your body, warming you up in exchange for a more active metabolism.  While you need to eat and drink more, you also find it easier to recover from physical exertion and mend wounds.",
     "valid": false,
     "purifiable": false,
@@ -287,13 +286,14 @@
           { "value": "METABOLISM", "multiply": 0.25 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.5 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.125 },
-          { "value": "STAMINA_REGEN_MOD", "add": 0.5 }
+          { "value": "STAMINA_REGEN_MOD", "add": 0.5 },
+          { "value": "BODYTEMP_SLEEP", "add": 0.25 },
+          { "value": "REGEN_HP_AWAKE", "multiply": 0.5 },
+          { "value": "REGEN_HP", "multiply": 0.25 },
+          { "value": "MENDING_MODIFIER", "multiply": -0.5 }
         ]
       }
     ],
-    "healing_awake": 0.5,
-    "healing_multiplier": 1.25,
-    "mending_modifier": 0.5,
     "vitamin_rates": [ [ "blood", -5 ], [ "redcells", -5 ] ],
     "flags": [ "PRED1" ]
   },
@@ -304,7 +304,6 @@
     "points": 2,
     "mixed_effect": true,
     "bodytemp_modifiers": [ 250, 1000 ],
-    "bodytemp_sleep": 250,
     "description": "That strange warmth deep within your body has grown more intense, and its effects have become more pronounced.  While you still need to eat and drink more, your stamina and healing have adapted in turn.  A strange glow can also be faintly seen in the back of your throat, lending an unnatural aura of menace to your every word.",
     "valid": false,
     "purifiable": false,
@@ -319,13 +318,14 @@
           { "value": "METABOLISM", "multiply": 0.5 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 1.0 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.25 },
-          { "value": "STAMINA_REGEN_MOD", "add": 0.666 }
+          { "value": "STAMINA_REGEN_MOD", "add": 0.666 },
+          { "value": "BODYTEMP_SLEEP", "add": 0.5 },
+          { "value": "REGEN_HP_AWAKE", "multiply": 1.0 },
+          { "value": "REGEN_HP", "multiply": 0.5 },
+          { "value": "MENDING_MODIFIER", "multiply": 0.0 }
         ]
       }
     ],
-    "healing_awake": 1.0,
-    "healing_multiplier": 1.5,
-    "mending_modifier": 1.0,
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
     "vitamin_rates": [ [ "blood", -3 ], [ "redcells", -3 ] ],
     "flags": [ "PRED2" ]
@@ -337,7 +337,6 @@
     "points": 3,
     "mixed_effect": true,
     "bodytemp_modifiers": [ 0, 1500 ],
-    "bodytemp_sleep": 750,
     "description": "Your body has adapted further, exploiting the strange power that fuels your body.  You still need more food and water than normal, but the benefits are more pronounced relative to the drawbacks.  Activate to breathe short-ranged bursts of flame.",
     "valid": false,
     "purifiable": false,
@@ -352,13 +351,14 @@
           { "value": "METABOLISM", "multiply": 0.75 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 1.25 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.375 },
-          { "value": "STAMINA_REGEN_MOD", "add": 0.75 }
+          { "value": "STAMINA_REGEN_MOD", "add": 0.75 },
+          { "value": "BODYTEMP_SLEEP", "add": 1.5 },
+          { "value": "REGEN_HP_AWAKE", "multiply": 2.5 },
+          { "value": "REGEN_HP", "multiply": 1.25 },
+          { "value": "MENDING_MODIFIER", "multiply": 1.5 }
         ]
       }
     ],
-    "healing_awake": 2.5,
-    "healing_multiplier": 2.25,
-    "mending_modifier": 2.5,
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
     "active": true,
     "cost": 500,

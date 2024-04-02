@@ -180,7 +180,7 @@
     "monsters": [ { "monster": "mon_fleshy_shambler", "weight": 25, "cost_multiplier": 10 } ]
   },
   {
-    "name": "GROUP_MANSION",
+    "name": "GROUP_MANSION_START",
     "type": "monstergroup",
     "override": false,
     "auto_total": true,
