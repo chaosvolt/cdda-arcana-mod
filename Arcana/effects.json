@@ -37,7 +37,7 @@
     "max_duration": "200 m",
     "max_intensity": 200,
     "int_dur_factor": "1 m",
-    "base_mods": { "fatigue_min": [ 1 ], "fatigue_tick": [ 25 ] }
+    "base_mods": { "sleepiness_min": [ 1 ], "sleepiness_tick": [ 25 ] }
   },
   {
     "type": "effect_type",
@@ -98,8 +98,8 @@
       "hunger_tick": [ 75 ],
       "thirst_min": [ 1 ],
       "thirst_tick": [ 75 ],
-      "fatigue_min": [ 1 ],
-      "fatigue_tick": [ 75 ]
+      "sleepiness_min": [ 1 ],
+      "sleepiness_tick": [ 75 ]
     }
   },
   {
@@ -137,9 +137,9 @@
       "speed_mod": [ 5 ],
       "stamina_min": [ 50 ],
       "stamina_chance": [ 6 ],
-      "fatigue_min": [ 1 ],
-      "fatigue_tick": [ 300 ],
-      "fatigue_chance": [ 6, 12 ]
+      "sleepiness_min": [ 1 ],
+      "sleepiness_tick": [ 300 ],
+      "sleepiness_chance": [ 6, 12 ]
     }
   },
   {
@@ -164,8 +164,8 @@
       "stamina_min": [ -25 ],
       "stamina_tick": [ 30 ],
       "stamina_chance": [ 6, 12 ],
-      "fatigue_min": [ -1 ],
-      "fatigue_chance": [ 12 ]
+      "sleepiness_min": [ -1 ],
+      "sleepiness_chance": [ 12 ]
     }
   },
   {
@@ -242,8 +242,8 @@
       "dex_mod": [ 1 ],
       "int_mod": [ -1, 0 ],
       "per_mod": [ -1, 0 ],
-      "fatigue_min": [ -1 ],
-      "fatigue_tick": [ 6 ]
+      "sleepiness_min": [ -1 ],
+      "sleepiness_tick": [ 6 ]
     }
   },
   {
@@ -254,7 +254,7 @@
     "resist_effects": [ "talisman_warding" ],
     "blocks_effects": [ "foodpoison", "bloodworms", "paincysts", "brainworms", "tapeworm" ],
     "removes_effects": [ "hunger_full", "hunger_engorged" ],
-    "base_mods": { "hunger_min": [ 1 ], "hunger_chance": [ 18, 36 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 36, 72 ] }
+    "base_mods": { "hunger_min": [ 1 ], "hunger_chance": [ 18, 36 ], "sleepiness_min": [ 1 ], "sleepiness_chance": [ 36, 72 ] }
   },
   {
     "type": "effect_type",
@@ -627,8 +627,8 @@
       "per_mod": [ 4 ],
       "speed_mod": [ 30 ],
       "stamina_min": [ 20 ],
-      "fatigue_min": [ 1 ],
-      "fatigue_tick": [ 300 ]
+      "sleepiness_min": [ 1 ],
+      "sleepiness_tick": [ 300 ]
     }
   },
   {
@@ -838,8 +838,8 @@
       "health_tick": [ 125 ],
       "h_mod_min": [ -1 ],
       "h_mod_tick": [ 125 ],
-      "fatigue_min": [ 1 ],
-      "fatigue_tick": [ 125 ]
+      "sleepiness_min": [ 1 ],
+      "sleepiness_tick": [ 125 ]
     }
   },
   {
@@ -991,10 +991,10 @@
     "int_dur_factor": "3 d",
     "//": "This will EVENTUALLY kill you if you max out the effects, unless you're abusing magical healing.",
     "base_mods": {
-      "fatigue_min": [ 1 ],
-      "fatigue_chance": [ 30 ],
-      "fatigue_chance_bot": [ 100 ],
-      "fatigue_tick": [ 1000 ],
+      "sleepiness_min": [ 1 ],
+      "sleepiness_chance": [ 30 ],
+      "sleepiness_chance_bot": [ 100 ],
+      "sleepiness_tick": [ 1000 ],
       "int_mod": [ -0.25 ],
       "sleep_min": [ 10 ],
       "sleep_max": [ 30 ],
@@ -1007,8 +1007,8 @@
       "hurt_tick": [ 3600 ]
     },
     "scaling_mods": {
-      "fatigue_chance": [ 10, 8 ],
-      "fatigue_tick": [ -100, -80 ],
+      "sleepiness_chance": [ 10, 8 ],
+      "sleepiness_tick": [ -100, -80 ],
       "int_mod": [ -0.75, -0.6 ],
       "per_mod": [ -0.75, -0.6 ],
       "sleep_chance": [ 5, 4 ],
@@ -1096,7 +1096,7 @@
     "removes_effects": [ "bleed", "winded" ],
     "rating": "good",
     "max_duration": "15 s",
-    "base_mods": { "pain_min": [ -20 ], "stamina_min": [ 200 ], "fatigue_min": [ -100 ] }
+    "base_mods": { "pain_min": [ -20 ], "stamina_min": [ 200 ], "sleepiness_min": [ -100 ] }
   },
   {
     "type": "effect_type",
@@ -1120,7 +1120,7 @@
     "max_duration": "5 s",
     "base_mods": {
       "rad_min": [ -5, 5 ],
-      "fatigue_min": [ 0, 10 ],
+      "sleepiness_min": [ 0, 10 ],
       "health_min": [ 0, -2 ],
       "h_mod_min": [ 0, -2 ],
       "pain_min": [ 0, 2 ],
@@ -1141,8 +1141,8 @@
       "dex_mod": [ 1 ],
       "int_mod": [ -1 ],
       "per_mod": [ -1 ],
-      "fatigue_tick": [ 1800 ],
-      "fatigue_chance": [ 6, 12 ]
+      "sleepiness_tick": [ 1800 ],
+      "sleepiness_chance": [ 6, 12 ]
     },
     "scaling_mods": {
       "str_mod": [ -0.24, 0.12 ],
@@ -1150,7 +1150,7 @@
       "int_mod": [ -0.24 ],
       "per_mod": [ -0.2 ],
       "stamina_min": [ 2.5 ],
-      "fatigue_min": [ 0.25 ]
+      "sleepiness_min": [ 0.25 ]
     }
   },
   {

@@ -11,10 +11,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_agility", 1 ] ]
@@ -42,10 +39,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_clairvoyance", 1 ] ]
@@ -61,10 +55,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_clarity_blood", 1 ] ]
@@ -81,10 +72,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_confuse_monster", 1 ] ]
@@ -100,10 +88,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_conjure_acid", 1 ] ]
@@ -119,10 +104,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_consecrate", 1 ] ]
@@ -140,10 +122,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_dampening", 1 ] ]
@@ -159,10 +138,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_conjure_flame", 1 ] ]
@@ -179,10 +155,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_dark_lance", 1 ] ]
@@ -198,10 +171,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_earthweaving", 1 ] ]
@@ -218,10 +188,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_eclipse", 1 ] ]
@@ -238,10 +205,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_elemental_burst", 1 ] ]
@@ -258,10 +222,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_heat_ward", 1 ] ]
@@ -278,10 +239,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_cold_ward", 1 ] ]
@@ -298,10 +256,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_free_action", 1 ] ]
@@ -317,10 +272,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_healing", 1 ] ]
@@ -337,10 +289,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_insight", 1 ] ]
@@ -356,10 +305,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_light", 1 ] ]
@@ -375,10 +321,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_lightning_ward", 1 ] ]
@@ -395,10 +338,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_might", 1 ] ]
@@ -414,10 +354,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_open_lock", 1 ] ]
@@ -434,10 +371,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_overgrowth", 1 ] ]
@@ -454,10 +388,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_phase_shield", 1 ] ]
@@ -474,10 +405,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_poison_armor", 1 ] ]
@@ -494,10 +422,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_serpentine_shield", 1 ] ]
@@ -514,10 +439,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_shockstorm", 1 ] ]
@@ -533,10 +455,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_summon_giant_centipedes", 1 ] ]
@@ -553,10 +472,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
@@ -572,10 +488,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_sundering_quake", 1 ] ]
@@ -592,10 +505,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_surge_adrenaline", 1 ] ]
@@ -623,10 +533,7 @@
     "purifiable": false,
     "enchantments": [
       {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 },
-          { "value": "FATIGUE_REGEN", "multiply": 0.0125 }
-        ]
+        "values": [ { "value": "CARDIO_MULTIPLIER", "multiply": 0.025 }, { "value": "SLEEPINESS_REGEN", "multiply": 0.0125 } ]
       }
     ],
     "spells_learned": [ [ "arcana_magic_ward_against_evil", 1 ] ]

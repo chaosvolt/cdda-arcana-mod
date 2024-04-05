@@ -8,7 +8,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
     "valid_targets": [ "self" ],
     "extra_effects": [
-      { "id": "arcana_item_athame_sanguine_art_fatigue", "hit_self": true },
+      { "id": "arcana_item_athame_sanguine_art_sleepiness", "hit_self": true },
       { "id": "arcana_item_athame_sanguine_art_corruption", "hit_self": true },
       { "id": "arcana_item_generate_blood_essence", "hit_self": true }
     ],
@@ -25,7 +25,7 @@
     "max_duration": 30000
   },
   {
-    "id": "arcana_item_athame_sanguine_art_fatigue",
+    "id": "arcana_item_athame_sanguine_art_sleepiness",
     "type": "SPELL",
     "name": { "str": "Sanguine Art Fatigue" },
     "description": "Dirty hack caused by DDA-specific fuckery.",
@@ -36,7 +36,7 @@
     "max_damage": -20,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "id": "arcana_item_athame_sanguine_art_corruption",
@@ -63,14 +63,14 @@
     "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "halo_brooch_effect",
-    "extra_effects": [ { "id": "arcana_item_brooch_iridescent_empowered_fatigue", "hit_self": true } ],
+    "extra_effects": [ { "id": "arcana_item_brooch_iridescent_empowered_sleepiness", "hit_self": true } ],
     "min_damage": 1,
     "max_damage": 1,
     "min_duration": 198000,
     "max_duration": 198000
   },
   {
-    "id": "arcana_item_brooch_iridescent_empowered_fatigue",
+    "id": "arcana_item_brooch_iridescent_empowered_sleepiness",
     "type": "SPELL",
     "name": { "str": "Guard And Guide Fatigue" },
     "description": "And this makes it cost about 20% of its implied energy in fatigue.",
@@ -81,7 +81,7 @@
     "max_damage": -18,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "id": "arcana_item_chalice_offering",
@@ -92,7 +92,7 @@
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
     "extra_effects": [
-      { "id": "arcana_item_chalice_offering_fatigue", "hit_self": true },
+      { "id": "arcana_item_chalice_offering_sleepiness", "hit_self": true },
       { "id": "arcana_item_chalice_offering_winding", "hit_self": true },
       { "id": "arcana_item_chalice_offering_corruption", "hit_self": true },
       { "id": "arcana_item_generate_blood_essence", "hit_self": true },
@@ -109,7 +109,7 @@
     "final_casting_time": 90000
   },
   {
-    "id": "arcana_item_chalice_offering_fatigue",
+    "id": "arcana_item_chalice_offering_sleepiness",
     "type": "SPELL",
     "name": { "str": "Offering Fatigue" },
     "description": "Dirty hack caused by DDA-specific fuckery.",
@@ -120,7 +120,7 @@
     "max_damage": -60,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "id": "arcana_item_chalice_offering_winding",
@@ -160,7 +160,7 @@
     "extra_effects": [
       { "id": "arcana_item_charm_bone_empowered_spike", "hit_self": false },
       { "id": "arcana_item_charm_bone_empowered_paralyze", "hit_self": false },
-      { "id": "arcana_item_charm_bone_empowered_fatigue", "hit_self": true }
+      { "id": "arcana_item_charm_bone_empowered_sleepiness", "hit_self": true }
     ],
     "effect": "attack",
     "shape": "blast",
@@ -203,7 +203,7 @@
     "max_aoe": 8
   },
   {
-    "id": "arcana_item_charm_bone_empowered_fatigue",
+    "id": "arcana_item_charm_bone_empowered_sleepiness",
     "type": "SPELL",
     "name": { "str": "Stunning Blast Fatigue" },
     "description": "And this makes it cost about about 20% of its implied energy in fatigue.",
@@ -214,7 +214,7 @@
     "max_damage": -8,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "id": "arcana_item_coalescent_conversion",
@@ -367,7 +367,7 @@
     "valid_targets": [ "self" ],
     "flags": [ "PERMANENT", "NO_HANDS", "NO_LEGS" ],
     "extra_effects": [
-      { "id": "arcana_item_coalescent_offering_fatigue", "hit_self": true },
+      { "id": "arcana_item_coalescent_offering_sleepiness", "hit_self": true },
       { "id": "arcana_item_coalescent_conversion_sound", "hit_self": false },
       { "id": "arcana_item_coalescent_conversion_side_effects", "hit_self": false },
       { "id": "arcana_item_chalice_offering_winding", "hit_self": true },
@@ -383,7 +383,7 @@
     "final_casting_time": 90000
   },
   {
-    "id": "arcana_item_coalescent_offering_fatigue",
+    "id": "arcana_item_coalescent_offering_sleepiness",
     "type": "SPELL",
     "name": { "str": "Offering Fatigue" },
     "description": "Dirty hack caused by DDA-specific fuckery.",
@@ -394,7 +394,7 @@
     "max_damage": -300,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "type": "SPELL",
@@ -478,14 +478,14 @@
     "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "halo_amulet_effect",
-    "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_fatigue", "hit_self": true } ],
+    "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_sleepiness", "hit_self": true } ],
     "min_damage": 1,
     "max_damage": 1,
     "min_duration": 450000,
     "max_duration": 450000
   },
   {
-    "id": "arcana_item_amulet_exotic_empowered_fatigue",
+    "id": "arcana_item_amulet_exotic_empowered_sleepiness",
     "type": "SPELL",
     "name": { "str": "Hidden Aura Fatigue" },
     "description": "And this makes it cost about about 20% of its implied energy in fatigue.",
@@ -496,7 +496,7 @@
     "max_damage": -14,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "id": "arcana_item_generate_blood_essence",
@@ -737,7 +737,7 @@
     "name": { "str": "Citrine Incense" },
     "description": "Restores a large chunk of stamina and fatigue.",
     "valid_targets": [ "self" ],
-    "extra_effects": [ { "id": "arcana_item_incense_fatigue", "hit_self": true } ],
+    "extra_effects": [ { "id": "arcana_item_incense_sleepiness", "hit_self": true } ],
     "message": "Wisps of smoke rapidly fade away as the incense suddenly evaporates, filling you with energy.",
     "effect": "recover_energy",
     "shape": "blast",
@@ -748,14 +748,14 @@
   },
   {
     "type": "SPELL",
-    "id": "arcana_item_incense_fatigue",
+    "id": "arcana_item_incense_sleepiness",
     "name": { "str": "Citrine Incense Fatigue" },
     "description": "And the fatigue effect.",
     "valid_targets": [ "self" ],
     "message": "",
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE",
+    "effect_str": "SLEEPINESS",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "min_damage": 30,
     "max_damage": 30
@@ -769,7 +769,7 @@
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "extra_effects": [
-      { "id": "arcana_item_jade_hauberk_healing_fatigue", "hit_self": true },
+      { "id": "arcana_item_jade_hauberk_healing_sleepiness", "hit_self": true },
       { "id": "arcana_item_jade_hauberk_pain", "hit_self": true }
     ],
     "effect_str": "arcana_aegis_mending",
@@ -781,7 +781,7 @@
     "max_duration": 100
   },
   {
-    "id": "arcana_item_jade_hauberk_healing_fatigue",
+    "id": "arcana_item_jade_hauberk_healing_sleepiness",
     "type": "SPELL",
     "name": { "str": "Hauberk Mending Fatigue" },
     "description": "Dirty hack caused by DDA-specific fuckery.",
@@ -792,7 +792,7 @@
     "max_damage": -15,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "id": "arcana_item_jade_hauberk_pain",
@@ -906,7 +906,7 @@
     "effect": "attack",
     "shape": "blast",
     "extra_effects": [
-      { "id": "arcana_item_mech_flare_fatigue" },
+      { "id": "arcana_item_mech_flare_sleepiness" },
       { "id": "arcana_item_mech_flare_spike" },
       { "id": "arcana_item_mech_flare_dazzle" }
     ],
@@ -927,7 +927,7 @@
     "max_field_intensity": 1
   },
   {
-    "id": "arcana_item_mech_flare_fatigue",
+    "id": "arcana_item_mech_flare_sleepiness",
     "type": "SPELL",
     "name": { "str": "Ghostly Flare Fatigue" },
     "description": "Dirty hack for DDA version.",
@@ -938,7 +938,7 @@
     "max_damage": -40,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "id": "arcana_item_mech_flare_spike",
@@ -1208,7 +1208,7 @@
     "flags": [ "SILENT", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE",
+    "effect_str": "SLEEPINESS",
     "min_damage": 30,
     "max_damage": 90
   },
@@ -1586,12 +1586,12 @@
     "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "triffid_garland_buff",
-    "extra_effects": [ { "id": "arcana_item_triffid_garland_empowered_fatigue", "hit_self": true } ],
+    "extra_effects": [ { "id": "arcana_item_triffid_garland_empowered_sleepiness", "hit_self": true } ],
     "min_duration": 306000,
     "max_duration": 306000
   },
   {
-    "id": "arcana_item_triffid_garland_empowered_fatigue",
+    "id": "arcana_item_triffid_garland_empowered_sleepiness",
     "type": "SPELL",
     "name": { "str": "Verdant Boost" },
     "description": "And this makes it cost 20% of its implied energy in fatigue.",
@@ -1602,7 +1602,7 @@
     "max_damage": -10,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "type": "SPELL",
@@ -1943,7 +1943,7 @@
     "shape": "blast",
     "extra_effects": [
       { "id": "arcana_item_scroll_subversion_shadows", "hit_self": false },
-      { "id": "AEA_FATIGUE", "hit_self": false },
+      { "id": "AEA_SLEEPINESS", "hit_self": false },
       { "id": "arcana_item_scroll_subversion_teleport", "hit_self": false },
       { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
@@ -2210,7 +2210,7 @@
     "message": "Embers fly from your fingertips, stoking magical flames as they fall to the ground.",
     "effect": "attack",
     "shape": "blast",
-    "extra_effects": [ { "id": "arcana_item_sparks_fatigue", "hit_self": false } ],
+    "extra_effects": [ { "id": "arcana_item_sparks_sleepiness", "hit_self": false } ],
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "min_range": 2,
@@ -2223,7 +2223,7 @@
     "max_field_intensity": 1
   },
   {
-    "id": "arcana_item_sparks_fatigue",
+    "id": "arcana_item_sparks_sleepiness",
     "type": "SPELL",
     "name": { "str": "Spark Flame Fatigue" },
     "description": "Dirty hack caused by DDA-specific fuckery.",
@@ -2234,7 +2234,7 @@
     "max_damage": -12,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "type": "SPELL",
@@ -2247,14 +2247,14 @@
     "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "halo_flute_effect",
-    "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_fatigue", "hit_self": true } ],
+    "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_sleepiness", "hit_self": true } ],
     "min_damage": 1,
     "max_damage": 1,
     "min_duration": 522000,
     "max_duration": 522000
   },
   {
-    "id": "arcana_item_stinger_flute_empowered_fatigue",
+    "id": "arcana_item_stinger_flute_empowered_sleepiness",
     "type": "SPELL",
     "name": { "str": "Elusive Enhancement Fatigue" },
     "description": "And this makes it cost 20% of its implied energy in fatigue.",
@@ -2265,7 +2265,7 @@
     "max_damage": -16,
     "effect": "recover_energy",
     "shape": "blast",
-    "effect_str": "FATIGUE"
+    "effect_str": "SLEEPINESS"
   },
   {
     "id": "arcana_item_pet",
