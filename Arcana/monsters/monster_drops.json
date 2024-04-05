@@ -1385,8 +1385,30 @@
     }
   },
   {
-    "id": "mon_feral_prepper_death_drops",
-    "copy-from": "mon_feral_prepper_death_drops",
+    "id": "mon_feral_prepper_mace_death_drops",
+    "copy-from": "mon_feral_prepper_mace_death_drops",
+    "type": "item_group",
+    "//": "Only need to add items since we're referencing an existing itemgroup.",
+    "subtype": "collection",
+    "extend": {
+      "entries": [
+        { "item": "essence_blood", "prob": 50, "count": [ 2, 4 ] },
+        { "group": "arcana_hunt_random", "prob": 10 },
+        {
+          "distribution": [
+            { "group": "magic_tools", "prob": 50, "damage": [ 1, 4 ] },
+            { "group": "magic_items", "prob": 50, "damage": [ 1, 4 ] }
+          ],
+          "prob": 3
+        },
+        { "group": "magic_consumables", "prob": 5 },
+        { "group": "magic_books_postapoc", "prob": 15 }
+      ]
+    }
+  },
+  {
+    "id": "mon_feral_prepper_knife_death_drops",
+    "copy-from": "mon_feral_prepper_knife_death_drops",
     "type": "item_group",
     "//": "Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
@@ -2313,8 +2335,6 @@
     "type": "item_group",
     "id": "mon_bound_glyph_death_drops_universal",
     "subtype": "collection",
-    "entries": [
-      { "item": "silver_glyph" }
-    ]
+    "entries": [ { "item": "silver_glyph" } ]
   }
 ]
