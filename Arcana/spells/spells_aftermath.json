@@ -959,7 +959,7 @@
     "duration_increment": 600
   },
   {
-    "id": "arcana_aftermath_drain_life_fatigue",
+    "id": "arcana_aftermath_drain_life_sleepiness",
     "type": "SPELL",
     "name": { "str": "Drain Life Fatigue" },
     "description": "This exists to potentially give Dragonblood's version of Drain Life a corruptive side effect on the area.",
@@ -970,7 +970,7 @@
     "valid_targets": [ "ground" ],
     "min_aoe": 4,
     "max_aoe": 4,
-    "field_id": "fd_fatigue",
+    "field_id": "fd_reality_tear",
     "field_chance": 100,
     "min_field_intensity": 1,
     "max_field_intensity": 1
@@ -992,14 +992,14 @@
   },
   {
     "type": "SPELL",
-    "id": "arcana_aftermath_eclipse_fatigue",
+    "id": "arcana_aftermath_eclipse_sleepiness",
     "name": { "str": "Eclipse Fatigue" },
     "description": "Basically the artifact effect, except it will show up just about anywhere in the reality bubble.  Expect anything…",
     "valid_targets": [ "ground", "self", "ally", "hostile" ],
     "effect": "attack",
     "shape": "blast",
     "message": "",
-    "field_id": "fd_fatigue",
+    "field_id": "fd_reality_tear",
     "field_chance": 2,
     "min_field_intensity": 2,
     "max_field_intensity": 2,

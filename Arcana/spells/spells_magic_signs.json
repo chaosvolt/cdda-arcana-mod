@@ -434,7 +434,7 @@
       { "id": "arcana_aftermath_eclipse_darkness", "hit_self": false, "max_level": 10 },
       { "id": "arcana_aftermath_eclipse_halo", "hit_self": false, "max_level": 10 },
       { "id": "arcana_aftermath_eclipse_wonder", "hit_self": false },
-      { "id": "arcana_aftermath_eclipse_fatigue", "hit_self": false },
+      { "id": "arcana_aftermath_eclipse_sleepiness", "hit_self": false },
       { "id": "arcana_aftermath_magic_sign_exertion_9", "hit_self": true, "max_level": 10 }
     ],
     "energy_source": "STAMINA",
