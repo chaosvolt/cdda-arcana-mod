@@ -167,7 +167,7 @@
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [
-        [ "offal_raw", 5, "LIST" ],
+        [ "offals_raw", 5, "LIST" ],
         [ "brain", 5 ],
         [ "stomach", 2 ],
         [ "hstomach", 1 ],
