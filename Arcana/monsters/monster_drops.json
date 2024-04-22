@@ -339,24 +339,6 @@
     "entries": [ { "group": "arcana_hunt_random" }, { "item": "essence_blood", "count": [ 2, 4 ] } ]
   },
   {
-    "id": "mon_charred_nightmare_death_drops",
-    "type": "item_group",
-    "subtype": "collection",
-    "entries": [
-      { "group": "vault_wanderer" },
-      { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] },
-      {
-        "distribution": [
-          { "group": "magic_tools", "prob": 1, "damage": [ 1, 4 ] },
-          { "group": "magic_items", "prob": 2, "damage": [ 1, 4 ] },
-          { "group": "magic_consumables", "prob": 3 },
-          { "group": "magic_books_postapoc", "prob": 4 }
-        ],
-        "prob": 1
-      }
-    ]
-  },
-  {
     "type": "item_group",
     "id": "mon_triffid_death_drops",
     "subtype": "collection",
