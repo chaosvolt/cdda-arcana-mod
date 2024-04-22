@@ -195,12 +195,6 @@
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
-    "id": "mon_charred_nightmare",
-    "copy-from": "mon_charred_nightmare",
-    "type": "MONSTER",
-    "death_drops": "mon_charred_nightmare_death_drops"
-  },
-  {
     "id": "mon_triffid",
     "copy-from": "mon_triffid",
     "type": "MONSTER",
@@ -674,7 +668,10 @@
     "melee_dice_sides": 4,
     "dodge": 2,
     "harvest": "zombie",
-    "special_attacks": [ { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "" }, { "type": "bite", "cooldown": 5 } ],
+    "special_attacks": [
+      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "" },
+      { "type": "bite", "cooldown": 5 }
+    ],
     "death_drops": "mon_flesh_angel_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "HARDTOSHOOT", "ATTACKMON", "FLIES", "HUMAN", "POISON", "REVIVES", "FILTHY" ]
   },
