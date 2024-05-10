@@ -14,7 +14,7 @@
           ]
         },
         "topic": "TALK_MISSION_FAILURE",
-        "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
+        "effect": [ { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" }, "mission_failure" ],
         "opinion": { "trust": -1, "value": -1, "anger": 1 }
       },
       {
@@ -28,7 +28,7 @@
           ]
         },
         "topic": "TALK_MISSION_FAILURE",
-        "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
+        "effect": [ { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" }, "mission_failure" ],
         "opinion": { "trust": -1, "value": -1, "anger": 1 }
       }
     ]
@@ -174,6 +174,20 @@
         "text": "[MISSION] How will you know what \"signs\" reveal the favor of He From Beyond The Veil?",
         "topic": "TALK_HERMIT_QUEST_HELP_2_SIGNS",
         "condition": { "u_has_mission": "MISSION_HERMIT_AWAKEN_POWER" }
+      },
+      {
+        "switch": true,
+        "text": "You mentioned more to talk about, along with this mission?",
+        "topic": "TALK_HERMIT_DISCUSS_3_FAIL",
+        "effect": { "npc_add_effect": "hermit_stage_failure" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_trait": "THRESH_VEIL" } },
+            { "u_has_trait_flag": "MUTATION_THRESHOLD" },
+            { "npc_has_effect": "hermit_stage_2" },
+            { "u_has_effect": "hermit_earned_trust_2" }
+          ]
+        }
       },
       {
         "switch": true,
@@ -1095,7 +1109,7 @@
     "dynamic_line": {
       "npc_has_item": "veilblade",
       "yes": "Seek another, foster the survival of humanity wherever you see a chance to help others.  In time, another will come to take up the sword.  Fate has led one to me, I will await another chance to correct our mistakes until my final breath.  Gives me something to keep these old bones from giving out another moment longer, I suppose…",
-      "no": "You have still proven yourself trustworthy to come this far, and even to seek my advice even after being led astray.  The sword can still serve its purpose, and I suspect He will still reward you for it.  Every channeling will be a sin offering, penance for faltering.  You will still be fit to gain some benefit from it, but there are other options as well."
+      "no": "You have still proven yourself trustworthy to come this far, and even to seek my advice even after being led astray.  The sword can still serve its purpose, and I suspect He may still reward you for it.  Every channeling will be a sin offering, penance for faltering.  You may still be fit to gain some benefit from it, but there are other options as well."
     },
     "responses": [
       {
