@@ -64,8 +64,8 @@
     "description": "This exists only to trigger on-self effects from an on-hit action.",
     "valid_targets": [ "hostile" ],
     "message": "",
-    "min_range": 1,
-    "max_range": 1,
+    "min_range": 3,
+    "max_range": 3,
     "effect": "target_attack",
     "flags": [ "NO_EXPLOSION_VFX", "SILENT" ],
     "extra_effects": [ { "id": "arcana_react_drain_life_2", "hit_self": true } ]
@@ -269,8 +269,8 @@
     "flags": [ "NO_EXPLOSION_VFX", "RANDOM_DURATION" ],
     "valid_targets": [ "hostile" ],
     "effect_str": "paralyzepoison",
-    "min_range": 1,
-    "max_range": 1,
+    "min_range": 2,
+    "max_range": 2,
     "effect": "target_attack",
     "min_duration": 1000,
     "max_duration": 2000
