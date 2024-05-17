@@ -183,7 +183,7 @@
         "condition": {
           "and": [
             { "not": { "u_has_trait": "THRESH_VEIL" } },
-            { "u_has_trait_flag": "MUTATION_THRESHOLD" },
+            { "u_has_flag": "MUTATION_THRESHOLD" },
             { "npc_has_effect": "hermit_stage_2" },
             { "u_has_effect": "hermit_earned_trust_2" }
           ]
