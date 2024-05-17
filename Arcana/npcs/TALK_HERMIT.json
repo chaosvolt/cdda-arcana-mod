@@ -179,7 +179,7 @@
         "switch": true,
         "text": "You mentioned more to talk about, along with this mission?",
         "topic": "TALK_HERMIT_DISCUSS_3_FAIL",
-        "effect": { "npc_add_effect": "hermit_stage_failure" },
+        "effect": { "npc_add_effect": "hermit_stage_failure", "duration": "PERMANENT" },
         "condition": {
           "and": [
             { "not": { "u_has_trait": "THRESH_VEIL" } },
