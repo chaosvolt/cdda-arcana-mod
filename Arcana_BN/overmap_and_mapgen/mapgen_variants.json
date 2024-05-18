@@ -1400,7 +1400,7 @@
       "place_monster": [
         { "monster": "mon_dementia", "x": 4, "y": 6, "repeat": [ 1, 2 ] },
         { "monster": "mon_dementia", "x": 5, "y": 19, "repeat": [ 1, 2 ] },
-        { "monster": "mon_flesh_angel", "x": 17, "y": 19 }
+        { "monster": "mon_flesh_angel_summoned", "x": 17, "y": 19 }
       ]
     }
   },
