@@ -970,7 +970,7 @@
     "valid_targets": [ "ground" ],
     "min_aoe": 4,
     "max_aoe": 4,
-    "field_id": "fd_reality_tear",
+    "field_id": "fd_fatigue",
     "field_chance": 100,
     "min_field_intensity": 1,
     "max_field_intensity": 1
@@ -999,7 +999,7 @@
     "effect": "attack",
     "shape": "blast",
     "message": "",
-    "field_id": "fd_reality_tear",
+    "field_id": "fd_fatigue",
     "field_chance": 2,
     "min_field_intensity": 2,
     "max_field_intensity": 2,
