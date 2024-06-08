@@ -16,7 +16,7 @@
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 50, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -31,7 +31,7 @@
     "city_distance": [ 0, -1 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 50, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -52,7 +52,7 @@
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 50, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ],
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ],
     "spawns": { "group": "GROUP_ARCHON", "population": [ 150, 300 ], "radius": [ 20, 40 ] }
   },
   {
@@ -76,7 +76,7 @@
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 50, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -85,7 +85,7 @@
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
     "occurrences": [ 50, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -94,7 +94,7 @@
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
     "occurrences": [ 50, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -103,7 +103,7 @@
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
     "occurrences": [ 50, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -118,7 +118,7 @@
     "city_distance": [ 16, -1 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 50, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -186,7 +186,7 @@
     "city_sizes": [ 1, 20 ],
     "//": "Has to be spawned in by a mission, to avoid bugs.",
     "occurrences": [ 0, 0 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "UNIQUE" ],
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ],
     "rotate": false
   },
   {
