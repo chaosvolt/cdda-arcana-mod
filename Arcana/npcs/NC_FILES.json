@@ -904,7 +904,7 @@
       [ "surv_hand_cannon", 10 ],
       [ "2_shot_special", 10 ],
       [ "ruger_mini", 5 ],
-      [ "knife_butcher", 10 ],
+      { "item": "knife_huge", "variant": "knife_butcher", "prob": 15 },
       [ "machete", 10 ],
       [ "blood_athame", 5 ],
       [ "ax", 10 ],

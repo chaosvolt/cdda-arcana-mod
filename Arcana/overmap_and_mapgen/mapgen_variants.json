@@ -1315,7 +1315,7 @@
         { "group": "unaligned_arcanist_books_postapoc", "x": [ 9, 13 ], "y": 15, "chance": 30, "repeat": 5 },
         { "group": "arcana_hunt_random", "x": [ 9, 13 ], "y": 15, "chance": 30, "repeat": 3 },
         { "item": "bowl_pewter", "x": [ 16, 17 ], "y": [ 19, 20 ] },
-        { "item": "knife_butcher", "x": [ 16, 17 ], "y": [ 19, 20 ] },
+        { "item": "knife_huge", "variant": "knife_butcher", "x": [ 16, 17 ], "y": [ 19, 20 ] },
         { "item": "lighter", "x": [ 16, 17 ], "y": [ 19, 20 ] },
         { "group": "summoner_casualties_fresh", "x": [ 16, 17 ], "y": [ 19, 20 ] }
       ],
