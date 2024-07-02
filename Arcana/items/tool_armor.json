@@ -170,7 +170,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "NO_SALVAGE", "OVERSIZE", "OUTER" ],
+    "flags": [ "NO_SALVAGE", "OVERSIZE", "OUTER", "POWERARMOR_COMPATIBLE" ],
     "material_thickness": 4,
     "environmental_protection": 1,
     "armor": [ { "encumbrance": 12, "coverage": 100, "covers": [ "eyes" ] } ]
@@ -280,7 +280,7 @@
         "ammo_scale": 0
       }
     ],
-    "flags": [ "BELTED", "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED" ],
+    "flags": [ "BELTED", "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "POWERARMOR_COMPATIBLE" ],
     "material_thickness": 1,
     "armor": [ { "coverage": 20, "covers": [ "head" ] } ]
   },
@@ -878,7 +878,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED" ],
+    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "POWERARMOR_COMPATIBLE" ],
     "material_thickness": 1,
     "armor": [ { "encumbrance": 10, "coverage": 20, "covers": [ "head" ] } ]
   },
