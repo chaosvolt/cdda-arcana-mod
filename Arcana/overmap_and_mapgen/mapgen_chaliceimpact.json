@@ -71,20 +71,7 @@
         " ____________           "
       ],
       "palettes": [ "arcana_palette" ],
-      "set": [
-        { "point": "trap", "id": "tr_archon_shadow_trap", "x": 13, "y": [ 20, 21 ] },
-        { "point": "trap", "id": "tr_archon_hallu_trap", "x": 19, "y": [ 20, 21 ] },
-        { "point": "trap", "id": "tr_archon_shadow_trap", "x": [ 21, 22 ], "y": 13 },
-        { "point": "trap", "id": "tr_archon_chill_trap", "x": [ 21, 22 ], "y": 18 },
-        { "point": "trap", "id": "tr_archon_shadow_trap", "x": 4, "y": [ 2, 3 ] },
-        { "point": "trap", "id": "tr_archon_hallu_trap", "x": 10, "y": [ 2, 3 ] },
-        { "point": "trap", "id": "tr_archon_shadow_trap", "x": [ 1, 2 ], "y": 5 },
-        { "point": "trap", "id": "tr_archon_chill_trap", "x": [ 1, 2 ], "y": 10 },
-        { "point": "trap", "id": "tr_glow", "x": [ 14, 18 ], "y": [ 20, 21 ], "repeat": [ 5, 8 ] },
-        { "point": "trap", "id": "tr_drain", "x": [ 21, 22 ], "y": [ 14, 17 ], "repeat": [ 4, 6 ] },
-        { "point": "trap", "id": "tr_drain", "x": [ 5, 9 ], "y": [ 2, 3 ], "repeat": [ 5, 8 ] },
-        { "point": "trap", "id": "tr_glow", "x": [ 1, 2 ], "y": [ 6, 9 ], "repeat": [ 4, 6 ] }
-      ],
+      "traps": { "?": [ [ "tr_null", 5 ], "tr_archon_shadow_trap", "tr_archon_hallu_trap", "tr_archon_chill_trap", "tr_glow", "tr_drain" ] },
       "terrain": { "?": "t_floor_blue", "_": "t_rock_floor_no_roof" },
       "place_monster": [ { "group": "GROUP_ARCHON_TEMPLE", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 2, 4 ] } ]
     }
