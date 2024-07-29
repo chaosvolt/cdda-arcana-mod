@@ -474,6 +474,7 @@
     "skills_required": [ [ "fabrication", 3 ], [ "gun", 1 ] ],
     "time": "50 s",
     "autolearn": true,
+    "reversible": true,
     "book_learn": [
       [ "recipe_bullets", 3 ],
       [ "manual_shotgun", 3 ],

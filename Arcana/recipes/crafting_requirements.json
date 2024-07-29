@@ -4,7 +4,7 @@
     "type": "requirement",
     "//": "Any available sort of blood, ideally human blood.",
     "components": [
-      [ [ "blood", 1 ], [ "demihuman_blood", 3 ], [ "mutant_human_blood", 3 ], [ "animal_blood", 5 ], [ "mutant_blood", 5 ] ]
+      [ [ "blood", 1 ], [ "demihuman_blood", 2 ], [ "mutant_human_blood", 2 ], [ "animal_blood", 3 ], [ "mutant_blood", 4 ] ]
     ]
   },
   {
