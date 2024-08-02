@@ -178,6 +178,8 @@
     "removes_effects": [
       "poison",
       "badpoison",
+      "venom_dmg",
+      "venom_weaken",
       "infected",
       "fungus",
       "bleed",
@@ -470,21 +472,9 @@
     "type": "effect_type",
     "id": "poison_ward",
     "name": [ "Ward Against Poison" ],
-    "desc": [
-      "Protection against toxic gas and venom, suppresses the effect of radiation sickness while reducing accumulated radiation steadily."
-    ],
+    "desc": [ "Protection against toxic gas and venom, steadily reduces accumulated radiation." ],
     "remove_message": "You feel a momentary weakness as the protective magic fades.",
-    "removes_effects": [
-      "stung",
-      "poison",
-      "badpoison",
-      "paralyzepoison",
-      "teargas",
-      "migo_atmosphere",
-      "venom_dmg",
-      "venom_weaken",
-      "irradiated"
-    ],
+    "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas", "migo_atmosphere", "venom_dmg", "venom_weaken" ],
     "max_duration": "120 m",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
@@ -493,17 +483,7 @@
   {
     "type": "effect_type",
     "id": "poison_ward_hidden",
-    "removes_effects": [
-      "stung",
-      "poison",
-      "badpoison",
-      "paralyzepoison",
-      "teargas",
-      "migo_atmosphere",
-      "venom_dmg",
-      "venom_weaken",
-      "irradiated"
-    ],
+    "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas", "migo_atmosphere", "venom_dmg", "venom_weaken" ],
     "max_duration": "5 s"
   },
   {
@@ -660,6 +640,8 @@
       "downed",
       "poison",
       "badpoison",
+      "venom_dmg",
+      "venom_weaken",
       "smoke",
       "boomered",
       "glowing",
@@ -676,6 +658,8 @@
       "downed",
       "poison",
       "badpoison",
+      "venom_dmg",
+      "venom_weaken",
       "smoke",
       "boomered",
       "glowing",
@@ -689,7 +673,7 @@
     "type": "effect_type",
     "id": "dragonblood_clarity",
     "name": [ "Revenant Blood" ],
-    "desc": [ "Immunity to poisons, radiation, and fungus." ],
+    "desc": [ "Immunity to poisons, parasites, and fungus of all kinds; steadily reduces accumulated radiation." ],
     "remove_message": "The protective effect of your sanguine mark fades, leaving a momentary itch in your veins.",
     "//": "Food poisoning and food parasites are already covered by Metabolic Adaptability.",
     "removes_effects": [
@@ -701,7 +685,6 @@
       "migo_atmosphere",
       "venom_dmg",
       "venom_weaken",
-      "irradiated",
       "spores",
       "fungus",
       "dermatik",
@@ -1111,6 +1094,8 @@
       "bleed",
       "poison",
       "badpoison",
+      "venom_dmg",
+      "venom_weaken",
       "spores",
       "fungus",
       "redcells_anemia",
@@ -1221,7 +1206,19 @@
     "max_duration": "30 m",
     "max_intensity": 30,
     "int_dur_factor": "1 m",
-    "removes_effects": [ "poison", "badpoison", "bite", "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
+    "removes_effects": [
+      "poison",
+      "badpoison",
+      "venom_dmg",
+      "venom_weaken",
+      "bite",
+      "infected",
+      "fungus",
+      "bleed",
+      "common_cold",
+      "flu",
+      "tetanus"
+    ],
     "base_mods": {
       "stamina_min": [ 25 ],
       "pain_min": [ -1 ],

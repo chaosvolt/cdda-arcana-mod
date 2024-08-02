@@ -99,7 +99,6 @@
       { "id": "arcana_aftermath_brief_poison_ward", "hit_self": true },
       { "id": "arcana_aftermath_conjure_miasma_spike", "hit_self": false, "max_level": 20 },
       { "id": "arcana_aftermath_conjure_miasma_tear", "hit_self": false, "max_level": 20 },
-      { "id": "arcana_aftermath_conjure_miasma_nuke", "hit_self": false, "max_level": 20 },
       { "id": "arcana_aftermath_conjure_miasma_fungicide", "hit_self": false, "max_level": 20 },
       { "id": "arcana_aftermath_conjure_miasma_noise", "hit_self": false, "max_level": 20 }
     ],
