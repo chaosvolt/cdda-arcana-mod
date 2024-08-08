@@ -154,8 +154,20 @@
     "harvest": "human",
     "starting_ammo": { "bot_vortex": 6 },
     "special_attacks": [
-      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 50 },
-      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 40 },
+      {
+        "type": "spell",
+        "id": "arcana_monster_archon_stare_1",
+        "spell_data": { "id": "stare" },
+        "monster_message": "",
+        "cooldown": 50
+      },
+      {
+        "type": "spell",
+        "id": "arcana_monster_archon_stare_2",
+        "spell_data": { "id": "fear_paralyze" },
+        "monster_message": "",
+        "cooldown": 40
+      },
       [ "GRENADIER_ELITE", 15 ],
       [ "PARROT", 25 ],
       {
@@ -173,6 +185,7 @@
       },
       {
         "type": "spell",
+        "id": "arcana_monster_archon_stare_3",
         "spell_data": { "id": "arcana_monster_archon_gaze" },
         "cooldown": 10,
         "monster_message": "You briefly sense the otherworldly presence controlling the host, as it glares at %3$s."
@@ -752,8 +765,20 @@
     "regenerates_in_dark": true,
     "regen_morale": true,
     "special_attacks": [
-      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 75 },
-      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 50 },
+      {
+        "type": "spell",
+        "id": "arcana_monster_seraph_stare_1",
+        "spell_data": { "id": "stare" },
+        "monster_message": "",
+        "cooldown": 75
+      },
+      {
+        "type": "spell",
+        "id": "arcana_monster_seraph_stare_2",
+        "spell_data": { "id": "fear_paralyze" },
+        "monster_message": "",
+        "cooldown": 50
+      },
       [ "GRENADIER_ELITE", 20 ],
       [ "PARROT", 40 ],
       {
@@ -771,6 +796,7 @@
       },
       {
         "type": "spell",
+        "id": "arcana_monster_seraph_stare_3",
         "spell_data": { "id": "arcana_monster_archon_gaze_improved" },
         "cooldown": 25,
         "monster_message": "You briefly sense the seraphic shade's otherworldly presence, as it glares at %3$s."
@@ -820,7 +846,23 @@
     "vision_night": 50,
     "luminance": 1,
     "harvest": "exempt",
-    "special_attacks": [ { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 250 }, { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "", "cooldown": 100 }, [ "PARROT", 80 ] ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "id": "arcana_monster_seraph_stare_1",
+        "spell_data": { "id": "stare" },
+        "monster_message": "",
+        "cooldown": 250
+      },
+      {
+        "type": "spell",
+        "id": "arcana_monster_seraph_stare_2",
+        "spell_data": { "id": "fear_paralyze" },
+        "monster_message": "",
+        "cooldown": 100
+      },
+      [ "PARROT", 80 ]
+    ],
     "death_function": { "message": "The %s's wavers and vanishes, dispelling the illusion.", "corpse_type": "NO_CORPSE" },
     "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
     "flags": [
@@ -921,7 +963,13 @@
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
     "revert_to_itype": "broken_mech_arcana_boss",
     "special_attacks": [
-      { "type": "spell", "spell_data": { "id": "stare" }, "monster_message": "", "cooldown": 100 },
+      {
+        "type": "spell",
+        "id": "arcana_monster_mech_stare_1",
+        "spell_data": { "id": "stare" },
+        "monster_message": "",
+        "cooldown": 100
+      },
       {
         "type": "gun",
         "cooldown": 5,
@@ -937,6 +985,7 @@
       },
       {
         "type": "spell",
+        "id": "arcana_monster_mech_flare",
         "spell_data": { "id": "arcana_monster_mech_flare" },
         "cooldown": 50,
         "monster_message": "The Autonomous Anomaly Recon Mech launches a ghostly blue flare, illuminating %3$s with ethereal light!"

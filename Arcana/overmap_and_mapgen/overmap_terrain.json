@@ -6,7 +6,7 @@
     "sym": "C",
     "color": "i_light_red",
     "looks_like": "church",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -21,7 +21,7 @@
     "sym": "C",
     "color": "i_light_red",
     "looks_like": "church_roof",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -35,7 +35,7 @@
     "sym": "C",
     "color": "dark_gray",
     "looks_like": "basement",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -49,7 +49,7 @@
     "sym": "C",
     "color": "red",
     "looks_like": "cave_underground",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -63,7 +63,7 @@
     "sym": "C",
     "color": "i_light_green",
     "looks_like": "cabin_strange",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -81,7 +81,7 @@
     "sym": "T",
     "color": "i_green",
     "looks_like": "triffid_roots",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -96,7 +96,7 @@
     "sym": "O",
     "color": "i_light_red",
     "looks_like": "crater",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -106,7 +106,7 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "impact_platforms_center",
@@ -115,7 +115,7 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "impact_platforms_right",
@@ -124,7 +124,7 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "impact_temple_left",
@@ -133,7 +133,7 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "impact_temple_center",
@@ -142,7 +142,7 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "impact_temple_right",
@@ -151,7 +151,7 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "impact_roof_left",
@@ -160,7 +160,7 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "impact_roof_center",
@@ -169,7 +169,7 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "impact_roof_right",
@@ -178,7 +178,7 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "island_temple_roof",
@@ -187,7 +187,7 @@
     "sym": "T",
     "color": "i_blue",
     "looks_like": "temple",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "island_temple_1",
@@ -196,7 +196,7 @@
     "sym": "T",
     "color": "i_blue",
     "looks_like": "temple",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -206,7 +206,7 @@
     "sym": "T",
     "color": "dark_gray",
     "looks_like": "temple_finale",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "island_temple_b_2",
@@ -215,7 +215,7 @@
     "sym": "T",
     "color": "dark_gray",
     "looks_like": "temple_finale",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "island_temple_b_3",
@@ -224,7 +224,7 @@
     "sym": "T",
     "color": "dark_gray",
     "looks_like": "temple_finale",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "island_temple_b_4",
@@ -233,7 +233,7 @@
     "sym": "T",
     "color": "dark_gray",
     "looks_like": "temple_finale",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "shrine_anomaly",
@@ -242,7 +242,7 @@
     "sym": "S",
     "color": "i_light_gray",
     "looks_like": "standing_stones",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -252,7 +252,7 @@
     "sym": "F",
     "color": "i_light_gray",
     "looks_like": "standing_stones",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -262,7 +262,7 @@
     "sym": "@",
     "color": "i_light_gray",
     "looks_like": "standing_stones",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -282,7 +282,7 @@
     "sym": ".",
     "color": "brown_magenta",
     "looks_like": "rift",
-    "see_cost": 2,
+    "see_cost": "low",
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
   {
@@ -292,7 +292,7 @@
     "sym": ".",
     "color": "brown_magenta",
     "looks_like": "rift",
-    "see_cost": 2,
+    "see_cost": "low",
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
   {
@@ -302,7 +302,7 @@
     "sym": ".",
     "color": "blue",
     "looks_like": "pond_field",
-    "see_cost": 2,
+    "see_cost": "low",
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
   {
@@ -312,7 +312,7 @@
     "sym": ".",
     "color": "light_gray",
     "looks_like": "standing_stones",
-    "see_cost": 2,
+    "see_cost": "low",
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
   {
@@ -322,7 +322,7 @@
     "sym": "v",
     "color": "i_light_green",
     "looks_like": "rural_house1",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -331,7 +331,7 @@
     "sym": "^",
     "color": "i_light_green",
     "looks_like": "rural_house1",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -340,7 +340,7 @@
     "sym": "^",
     "color": "i_light_green",
     "looks_like": "rural_house1_roof",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -349,7 +349,7 @@
     "sym": "O",
     "color": "brown",
     "looks_like": "farm_lot_M",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -359,7 +359,7 @@
     "sym": "O",
     "color": "brown",
     "looks_like": "farm_lot_M",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -369,7 +369,7 @@
     "sym": "O",
     "color": "brown",
     "looks_like": "farm_lot_M",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -379,7 +379,7 @@
     "sym": "C",
     "color": "light_red",
     "looks_like": "church",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -389,6 +389,7 @@
     "sym": ".",
     "color": "blue",
     "looks_like": "open_air",
+    "see_cost": "none",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -398,6 +399,7 @@
     "sym": ".",
     "color": "blue",
     "looks_like": "open_air",
+    "see_cost": "none",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -407,6 +409,7 @@
     "sym": ".",
     "color": "blue",
     "looks_like": "open_air",
+    "see_cost": "none",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -416,7 +419,7 @@
     "sym": "C",
     "color": "light_red",
     "looks_like": "church_roof",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -426,7 +429,7 @@
     "sym": "C",
     "color": "i_green",
     "looks_like": "cabin_strange_roof",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -435,7 +438,7 @@
     "sym": "C",
     "color": "i_green",
     "looks_like": "cabin_strange",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -444,7 +447,7 @@
     "sym": "C",
     "color": "i_green",
     "looks_like": "cabin_strange",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -453,7 +456,7 @@
     "sym": "C",
     "color": "i_green",
     "looks_like": "cabin_strange_b",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "type": "overmap_terrain",
@@ -462,7 +465,7 @@
     "copy-from": "generic_city_building",
     "color": "light_green",
     "looks_like": "house_01",
-    "see_cost": 2,
+    "see_cost": "low",
     "flags": [ "SIDEWALK", "RISK_HIGH" ]
   },
   {
@@ -472,7 +475,7 @@
     "copy-from": "generic_city_building",
     "color": "light_green",
     "looks_like": "house_roof",
-    "see_cost": 2
+    "see_cost": "low"
   },
   {
     "type": "overmap_terrain",
@@ -493,7 +496,7 @@
     "sym": ".",
     "color": "brown",
     "looks_like": "field",
-    "see_cost": 2,
+    "see_cost": "low",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -503,7 +506,7 @@
     "sym": "T",
     "looks_like": "open_air",
     "color": "i_light_gray",
-    "see_cost": 5
+    "see_cost": "high"
   },
   {
     "id": "arcana_structure_anomalous_surface",
@@ -512,7 +515,7 @@
     "sym": "T",
     "color": "i_light_gray",
     "looks_like": "standing_stones",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -522,7 +525,7 @@
     "sym": "T",
     "color": "i_light_gray",
     "looks_like": "standing_stones",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -532,7 +535,7 @@
     "sym": "T",
     "color": "i_light_gray",
     "looks_like": "cave_underground",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -542,7 +545,7 @@
     "sym": "T",
     "color": "i_light_gray",
     "looks_like": "cave_underground",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -579,7 +582,7 @@
     "sym": "S",
     "color": "light_blue",
     "looks_like": "microlab_generic",
-    "see_cost": 5,
+    "see_cost": "high",
     "flags": [ "NO_ROTATE", "RISK_HIGH" ]
   },
   {
@@ -599,7 +602,7 @@
     "sym": "C",
     "color": "brown",
     "looks_like": "cave",
-    "see_cost": 2,
+    "see_cost": "low",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -609,7 +612,7 @@
     "sym": "C",
     "color": "brown",
     "looks_like": "cave_underground",
-    "see_cost": 2,
+    "see_cost": "low",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -619,7 +622,7 @@
     "sym": "O",
     "color": "dark_gray",
     "looks_like": "s_lot",
-    "see_cost": 1,
+    "see_cost": "low",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -644,7 +647,7 @@
     "sym": "L",
     "color": "white",
     "looks_like": "lab",
-    "see_cost": 5,
+    "see_cost": "high",
     "mondensity": 2,
     "flags": [ "RISK_HIGH" ]
   },
