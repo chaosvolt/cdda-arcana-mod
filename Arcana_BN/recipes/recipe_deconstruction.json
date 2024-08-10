@@ -898,7 +898,6 @@
     "difficulty": 2,
     "time": "20 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -909,7 +908,6 @@
     "difficulty": 2,
     "time": "20 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -920,7 +918,6 @@
     "difficulty": 3,
     "time": "30 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -931,7 +928,6 @@
     "difficulty": 3,
     "time": "30 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -942,7 +938,6 @@
     "difficulty": 4,
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -953,7 +948,6 @@
     "difficulty": 4,
     "time": "30 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -963,7 +957,7 @@
     "skill_used": "magic",
     "difficulty": 1,
     "time": "10 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -973,7 +967,7 @@
     "skill_used": "magic",
     "difficulty": 1,
     "time": "10 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -983,7 +977,7 @@
     "skill_used": "magic",
     "difficulty": 1,
     "time": "10 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -993,7 +987,7 @@
     "skill_used": "magic",
     "difficulty": 1,
     "time": "10 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1003,7 +997,7 @@
     "skill_used": "magic",
     "difficulty": 2,
     "time": "20 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1013,7 +1007,7 @@
     "skill_used": "magic",
     "difficulty": 2,
     "time": "20 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1023,7 +1017,7 @@
     "skill_used": "magic",
     "difficulty": 2,
     "time": "20 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1033,7 +1027,7 @@
     "skill_used": "magic",
     "difficulty": 2,
     "time": "20 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 40 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1043,7 +1037,7 @@
     "skill_used": "magic",
     "difficulty": 3,
     "time": "30 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1053,7 +1047,7 @@
     "skill_used": "magic",
     "difficulty": 3,
     "time": "30 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1063,7 +1057,7 @@
     "skill_used": "magic",
     "difficulty": 3,
     "time": "30 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1073,7 +1067,7 @@
     "skill_used": "magic",
     "difficulty": 3,
     "time": "30 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 50 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1083,7 +1077,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "40 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 80 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1093,7 +1087,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "40 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 80 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1103,7 +1097,7 @@
     "skill_used": "magic",
     "difficulty": 4,
     "time": "40 m",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 80 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1114,7 +1108,6 @@
     "difficulty": 4,
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1125,7 +1118,6 @@
     "difficulty": 4,
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1136,7 +1128,6 @@
     "difficulty": 4,
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1147,7 +1138,6 @@
     "difficulty": 4,
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1158,7 +1148,6 @@
     "difficulty": 5,
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1169,7 +1158,6 @@
     "difficulty": 5,
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1180,7 +1168,6 @@
     "difficulty": 5,
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1191,7 +1178,6 @@
     "difficulty": 5,
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1202,7 +1188,6 @@
     "difficulty": 6,
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1213,7 +1198,6 @@
     "difficulty": 6,
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1224,7 +1208,6 @@
     "difficulty": 6,
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1235,7 +1218,6 @@
     "difficulty": 6,
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1246,7 +1228,6 @@
     "difficulty": 7,
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1257,7 +1238,6 @@
     "difficulty": 7,
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1268,7 +1248,6 @@
     "difficulty": 7,
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1279,7 +1258,6 @@
     "difficulty": 5,
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1290,7 +1268,6 @@
     "difficulty": 6,
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1301,7 +1278,6 @@
     "difficulty": 6,
     "time": "60 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1312,7 +1288,6 @@
     "difficulty": 7,
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1323,7 +1298,6 @@
     "difficulty": 8,
     "time": "80 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1334,7 +1308,6 @@
     "difficulty": 9,
     "time": "90 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 200 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1345,7 +1318,6 @@
     "difficulty": 4,
     "time": "40 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 150 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1356,7 +1328,6 @@
     "difficulty": 5,
     "time": "50 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 210 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
@@ -1367,7 +1338,6 @@
     "difficulty": 7,
     "time": "70 m",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
