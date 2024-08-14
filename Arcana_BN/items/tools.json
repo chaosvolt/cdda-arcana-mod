@@ -1098,7 +1098,7 @@
     "symbol": ";",
     "color": "brown",
     "looks_like": "crucible",
-    "flags": [ "ALLOWS_REMOTE_USE" ]
+    "flags": [ "ALLOWS_REMOTE_USE" ],
     "use_action": { "type": "deploy_furn", "furn_type": "f_transmutation_crucible_deployed" }
   },
   {
@@ -1350,7 +1350,7 @@
     "symbol": ",",
     "color": "cyan",
     "looks_like": "broken_mech_recon",
-    "flags": [ "ALLOWS_REMOTE_USE" ]
+    "flags": [ "ALLOWS_REMOTE_USE" ],
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_mech_arcana",
