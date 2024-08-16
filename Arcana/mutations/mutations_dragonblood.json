@@ -48,8 +48,7 @@
     "description": "Power by any means.  The Sanguine Order believed the Dragonblood Sacrament would make them powerful enough to survive the cataclysm, to rule over man and monster alike.  That you have survived this long just might prove them right.",
     "valid": false,
     "purifiable": false,
-    "threshold": true,
-    "allowed_category": [ "DRAGONBLOOD" ]
+    "threshold": true
   },
   {
     "type": "mutation",
@@ -162,7 +161,6 @@
     "ugliness": 1,
     "description": "Your body has become covered in flexible scales, providing limited protection.",
     "valid": false,
-    "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_DRAGONSCALES" ],
     "leads_to": [ "ARCANA_SCALYWINGS", "ARCANA_SCALYTAIL" ],
@@ -222,7 +220,6 @@
     "points": 2,
     "description": "Your body feels abnormally comfortable around heat and flame, letting you tolerate its heat for longer, and reducing direct damage from fire.  You also no longer suffer any loss of speed from overheating, though other symptoms of heatstroke will still affect you.  In exchange however, any form of supernatural cold will be more harmful to you, including the touch of shadowy monsters from Beyond.",
     "valid": false,
-    "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
     "enchantments": [
@@ -244,7 +241,6 @@
     "points": 1,
     "description": "Your body has adapted to prey upon the new life that infests this world.  It's not powerful enough to deal with undead flesh, but mutated meat is more tolerable to your system.  Albeit, not to your palate.",
     "valid": false,
-    "purifiable": false,
     "changes_to": [ "ARCANA_TOXINIMMUNE_2" ],
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
@@ -276,7 +272,6 @@
     "bodytemp_modifiers": [ 125, 500 ],
     "description": "A strange heat permeates your body, warming you up in exchange for a more active metabolism.  While you need to eat and drink more, you also find it easier to recover from physical exertion and mend wounds.",
     "valid": false,
-    "purifiable": false,
     "changes_to": [ "ARCANA_INNERFIRE" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "METABOLISM" ],
@@ -306,7 +301,6 @@
     "bodytemp_modifiers": [ 250, 1000 ],
     "description": "That strange warmth deep within your body has grown more intense, and its effects have become more pronounced.  While you still need to eat and drink more, your stamina and healing have adapted in turn.  A strange glow can also be faintly seen in the back of your throat, lending an unnatural aura of menace to your every word.",
     "valid": false,
-    "purifiable": false,
     "prereqs": [ "ARCANA_INNERHEAT" ],
     "changes_to": [ "ARCANA_DRAGONFIRE" ],
     "leads_to": [ "ARCANA_FIREAFFINITY", "ARCANA_TOXINIMMUNE" ],
@@ -377,7 +371,6 @@
     "ugliness": 2,
     "description": "You have a pair of large, scale-covered wings.  Your body is too heavy to be able to fly, they mostly just get in the way, preventing you from wearing any torso gear not made of fabric.  Your back muscles are however improved by this growth, increasing strength and stamina a bit at the expense of dexterity.",
     "valid": false,
-    "purifiable": false,
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
     "changes_to": [ "ARCANA_DRAGONWINGS" ],
     "encumbrance_always": [ [ "torso", 5 ] ],
@@ -437,7 +430,6 @@
     "ugliness": 2,
     "description": "You have sharply curved claws on the ends of your fingers, making your unarmed attacks more dangerous.  However, they do get in the way a bit if you are wearing gloves.",
     "valid": false,
-    "purifiable": false,
     "butchering_quality": 9,
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
@@ -454,7 +446,6 @@
     "ugliness": 2,
     "description": "Your teeth have changed into an assortment of pointed mimicries of human teeth, allowing you to make an extra attack when conditions favor it.",
     "valid": false,
-    "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_DRAGONMUZZLE" ],
     "types": [ "TEETH" ],
@@ -575,7 +566,6 @@
     "ugliness": 2,
     "description": "You have a long, thin, lizardlike tail.  It's flexible enough to help with balance a bit, and makes a serviceable whip.  Prevents wearing non-fabric pants.",
     "valid": false,
-    "purifiable": false,
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES", "ARCANA_PLATES" ],
     "changes_to": [ "ARCANA_DRAGONTAIL" ],
     "category": [ "DRAGONBLOOD" ],
@@ -601,7 +591,6 @@
     "ugliness": 2,
     "description": "You have a long, thin, lizardlike tail, with a few nasty-looking spikes on the end of it.  It doesn't help as much with balance anymore, but still makes a serviceable whip.  Prevents wearing non-fabric pants.",
     "valid": false,
-    "purifiable": false,
     "prereqs": [ "ARCANA_SCALYTAIL" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "TAIL" ],
@@ -628,7 +617,6 @@
     "mixed_effect": true,
     "description": "You have a pair of relatively short horns, sweeping and pointing backwards.  They allow you to make a strong bashing headbutt attack, but prevent wearing any headwear.",
     "valid": false,
-    "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "types": [ "HORNS" ],
     "restricts_gear": [ "head_crown" ],
@@ -701,7 +689,9 @@
           { "value": "MAX_HP", "add": 25 },
           { "value": "CARRY_WEIGHT", "multiply": 0.05 },
           { "value": "READING_SPEED_MULTIPLIER", "multiply": 0.25 }
-          ] } ],
+        ]
+      }
+    ],
     "flags": [ "PRED4", "LARGE", "PSYCHOPATH" ]
   }
 ]
