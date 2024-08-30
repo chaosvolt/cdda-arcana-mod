@@ -435,5 +435,11 @@
     "copy-from": "dissection",
     "subtype": "distribution",
     "extend": { "entries": [ { "group": "autodoc_installation_magitech", "prob": 5 } ] }
+  },
+  {
+    "id": "survivorzed_extra",
+    "copy-from": "survivorzed_extra",
+    "type": "item_group",
+    "extend": { "items": [ [ "triffid_garland", 1 ], [ "amulet_exotic", 1 ], [ "brooch_iridescent", 1 ] ] }
   }
 ]

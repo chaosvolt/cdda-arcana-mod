@@ -381,5 +381,10 @@
     "type": "item_group",
     "subtype": "distribution",
     "entries": [ { "item": "CF_golden_scale", "prob": 20, "count": [ 1, 4 ] } ]
+  },
+  {
+    "id": "survivorzed_extra",
+    "type": "item_group",
+    "items": [ [ "triffid_garland", 1 ], [ "amulet_exotic", 1 ], [ "brooch_iridescent", 1 ] ]
   }
 ]

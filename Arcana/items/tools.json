@@ -1297,10 +1297,7 @@
         "item_restriction": [
           "medium_storage_battery",
           "storage_battery",
-          "large_storage_battery",
-          "medium_atomic_battery_cell",
-          "heavy_atomic_battery_cell",
-          "huge_atomic_battery_cell"
+          "large_storage_battery"
         ]
       }
     ],
