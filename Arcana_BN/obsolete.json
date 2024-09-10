@@ -716,5 +716,38 @@
     "max_duration": 24000,
     "min_aoe": 2,
     "max_aoe": 2
+  },
+  {
+    "id": "arcana_item_spatial_displacement_summon",
+    "type": "SPELL",
+    "name": { "str": "Spatial Summon" },
+    "description": "This summons a critter afterward, enabling SWAP_POS hijinks.",
+    "message": "",
+    "effect": "summon",
+    "extra_effects": [ { "id": "arcana_item_spatial_displacement_swap", "hit_self": false } ],
+    "valid_targets": [ "ground" ],
+    "flags": [ "NO_EXPLOSION_VFX", "IGNORE_WALLS", "NO_HANDS", "NO_LEGS", "SILENT", "RANDOM_DURATION" ],
+    "effect_str": "mon_shadow_summoned_fake",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 50,
+    "max_range": 50,
+    "min_duration": 500,
+    "max_duration": 1500
+  },
+  {
+    "id": "arcana_item_spatial_displacement_swap",
+    "type": "SPELL",
+    "name": { "str": "Spatial Swap" },
+    "description": "And this does the actual switching.",
+    "message": "",
+    "effect": "target_attack",
+    "valid_targets": [ "ground" ],
+    "flags": [ "NO_EXPLOSION_VFX", "SWAP_POS", "IGNORE_WALLS", "NO_HANDS", "NO_LEGS", "SILENT" ],
+    "effect_str": "stunned",
+    "min_range": 50,
+    "max_range": 50,
+    "min_duration": 500,
+    "max_duration": 1000
   }
 ]

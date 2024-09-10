@@ -43,10 +43,7 @@
     "terrain": [
       { "result": "t_root_wall", "valid_flags": [ "DIGGABLE" ] },
       { "result": "t_dirt", "valid_flags": [ "WALL" ] },
-      {
-        "result": "t_rock_floor_no_roof",
-        "valid_flags": [ "MINEABLE" ]
-      },
+      { "result": "t_rock_floor_no_roof", "valid_flags": [ "MINEABLE" ] },
       { "result": "t_rock", "valid_flags": [ "FLAT" ] }
     ]
   },
@@ -103,7 +100,12 @@
           "f_alien_zapper",
           "f_alien_zapper_altered",
           "f_alien_scar",
-          "f_alien_table"
+          "f_alien_scar_small",
+          "f_alien_table",
+          "f_alien_nerve",
+          "f_glowingbulb",
+          "f_brambles",
+          "f_midden"
         ],
         "message": "The unnatural outgrowths are cauterized bare, in a spray of green sparks!"
       }
@@ -220,6 +222,11 @@
     ],
     "furniture": [
       {
+        "result": "f_displaycase_o",
+        "valid_furniture": [ "f_displaycase" ],
+        "message": "The display case's lock evaporates."
+      },
+      {
         "result": "f_coffin_o",
         "valid_furniture": [ "f_coffin_c" ],
         "message": "Nails and wood decay until the crate is left unsealed."
@@ -245,19 +252,6 @@
   },
   {
     "type": "ter_furn_transform",
-    "id": "arcana_pulse",
-    "fail_message": "The ground weathers the blast unscathed.",
-    "terrain": [
-      { "result": [ [ "t_dirt", 50 ], [ "t_pit_shallow", 25 ], [ "t_dirtmound", 25 ] ], "valid_flags": [ "TREE" ] },
-      {
-        "result": [ [ "t_rock_floor_no_roof", 25 ], [ "t_railroad_rubble", 75 ] ],
-        "valid_flags": [ "DOOR", "BLOCK_WIND", "WALL", "ROAD" ]
-      }
-    ],
-    "furniture": [ { "result": "f_null", "valid_flags": [ "PERMEABLE", "MINEABLE", "BLOCK_WIND" ] } ]
-  },
-  {
-    "type": "ter_furn_transform",
     "id": "arcana_barrier",
     "fail_message": "The barrier flickers out of existence.",
     "furniture": [ { "result": "f_force_barrier", "valid_furniture": [ "f_null" ] } ]
@@ -267,9 +261,23 @@
     "id": "arcana_consecrate",
     "fail_message": "Reality fails to impose itself on this place.",
     "terrain": [
+      { "result": "t_slope_down", "valid_terrain": [ "t_triffid_slope_down" ] },
+      { "result": "t_slope_up", "valid_terrain": [ "t_triffid_slope_up" ] },
       {
         "result": "t_rock_smooth",
-        "valid_terrain": [ "t_wall_resin", "t_fault", "t_pedestal_wyrm", "t_pedestal_temple", "t_paper", "t_root_wall", "t_wax" ]
+        "valid_terrain": [
+          "t_wall_resin",
+          "t_fault",
+          "t_pedestal_wyrm",
+          "t_pedestal_temple",
+          "t_paper",
+          "t_root_wall",
+          "t_wax",
+          "t_triffid_bark_wall",
+          "t_bark_wall_chipped",
+          "t_bark_wall_broken",
+          "t_triffid_wood_wall"
+        ]
       },
       {
         "result": "t_rock_floor_no_roof",
@@ -293,7 +301,12 @@
           "t_switch_even",
           "t_lava",
           "t_vat",
-          "t_slime"
+          "t_slime",
+          "t_barkfloor",
+          "t_triffid_leaves",
+          "t_root_floor",
+          "t_bramble_door_c",
+          "t_bramble_door_o"
         ]
       },
       { "result": "t_rock_floor_no_roof", "valid_flags": [ "FUNGUS" ] }
@@ -309,10 +322,15 @@
           "f_alien_zapper",
           "f_alien_zapper_altered",
           "f_alien_scar",
+          "f_alien_scar_small",
           "f_alien_pod",
           "f_alien_pod_organ",
           "f_alien_pod_resin",
           "f_alien_table",
+          "f_alien_nerve",
+          "f_glowingbulb",
+          "f_brambles",
+          "f_midden",
           "f_mutpoppy",
           "f_egg_sackbw",
           "f_egg_sackcs",

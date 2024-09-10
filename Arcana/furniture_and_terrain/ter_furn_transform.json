@@ -68,10 +68,7 @@
     "terrain": [
       { "result": "t_root_wall", "valid_flags": [ "DIGGABLE" ] },
       { "result": "t_dirt", "valid_flags": [ "WALL" ] },
-      {
-        "result": "t_rock_floor_no_roof",
-        "valid_flags": [ "MINEABLE" ]
-      },
+      { "result": "t_rock_floor_no_roof", "valid_flags": [ "MINEABLE" ] },
       { "result": "t_rock", "valid_flags": [ "FLAT" ] }
     ]
   },
@@ -242,6 +239,11 @@
       { "result": "t_dirt", "valid_flags": [ "LOCKED" ], "message": "The obstacle crumbles to dust." }
     ],
     "furniture": [
+      {
+        "result": "f_displaycase_o",
+        "valid_furniture": [ "f_displaycase" ],
+        "message": "The display case's lock evaporates."
+      },
       {
         "result": "f_coffin_o",
         "valid_furniture": [ "f_coffin_c" ],
