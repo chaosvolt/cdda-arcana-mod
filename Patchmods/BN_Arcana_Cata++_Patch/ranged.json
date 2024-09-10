@@ -21,6 +21,7 @@
     "range": 30,
     "dispersion": 90,
     "loudness": 9,
+    "gun_sound_type": "LIGHTNING",
     "durability": 9,
     "reload": 500
   },
@@ -46,6 +47,7 @@
     "range": 40,
     "dispersion": 30,
     "loudness": 9,
+    "gun_sound_type": "ENERGY_WEAPON",
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 3 ] ],
     "durability": 9,
     "reload": 500
