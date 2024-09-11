@@ -41,7 +41,7 @@
         }
       ]
     },
-    "ammo_effects": [ "LIGHTNING_JUDGMENT" ],
+    "ammo_effects": [ "LIGHTNING", "LIGHTNING_JUDGMENT" ],
     "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "NO_TURRET" ],
     "use_action": "MEDITATE"
   },
@@ -437,7 +437,7 @@
     "to_hit": -1,
     "range": 60,
     "ranged_damage": { "damage_type": "cold", "amount": 750 },
-    "loudness": 18,
+    "loudness": 50,
     "dispersion": 20,
     "durability": 7,
     "clip_size": 1,
@@ -477,7 +477,7 @@
     "copy-from": "fake_item",
     "name": { "str": "monster lightning weapon" },
     "description": "Used to give the Host of the Archon a specific degree of inaccuracy.  If you encounter one of these in the wild, it's a bug.",
-    "ammo_effects": [ "NEVER_MISFIRES", "LIGHTNING_JUDGMENT_LESSER" ],
+    "ammo_effects": [ "NEVER_MISFIRES", "LIGHTNING" ],
     "flags": [ "NEVER_JAMS" ],
     "skill": "pistol",
     "durability": 10,
@@ -599,7 +599,7 @@
     "ranged_damage": { "damage_type": "cold", "amount": 160 },
     "dispersion": 15,
     "durability": 8,
-    "loudness": 1,
+    "loudness": 50,
     "energy_drain": "240 kJ",
     "reload": 0,
     "relic_data": {
