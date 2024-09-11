@@ -437,7 +437,7 @@
     "to_hit": -1,
     "range": 60,
     "ranged_damage": { "damage_type": "cold", "amount": 750 },
-    "loudness": 18,
+    "loudness": 50,
     "dispersion": 20,
     "durability": 7,
     "clip_size": 1,
@@ -603,7 +603,7 @@
     "ranged_damage": { "damage_type": "cold", "amount": 160 },
     "dispersion": 15,
     "durability": 8,
-    "loudness": 1,
+    "loudness": 50,
     "ups_charges": 240,
     "reload": 0,
     "relic_data": {
