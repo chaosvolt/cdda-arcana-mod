@@ -39,7 +39,7 @@
   {
     "id": "arcana_mark_displacing_slash",
     "type": "SPELL",
-    "name": { "str": "Sign: Displacing Slash" },
+    "name": { "str": "Mark: Displacing Slash" },
     "description": "Magic Sign\nUsing this spell will swap your position with a hostile target of your choosing.  While it won't directly damage your chosen target, anything caught in the bloody swath around where you emerge will be severely injured.",
     "message": "You lunge forward, arm outstretched toward your target.  %s!",
     "valid_targets": [ "hostile" ],
