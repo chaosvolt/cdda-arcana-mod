@@ -85,7 +85,7 @@
       "sound_fail": "whump!",
       "ter_set": "t_dirt",
       "ter_set_bashed_from_above": "t_dirt",
-      "items": [ { "group": "digging_soil_loam_50L", "count": 20 }, { "item": "splinter", "count": [ 2, 5 ] } ],
+      "items": [ { "group": "digging_soil_loam_200L", "count": 20 }, { "item": "splinter", "count": [ 2, 5 ] } ],
       "ranged": { "reduction": [ 50, 100 ], "destroy_threshold": 400 }
     }
   },
