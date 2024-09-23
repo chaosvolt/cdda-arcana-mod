@@ -46,6 +46,15 @@
     "description": "A heavy-duty experimental rifle, that exploits otherworldly energy to create highly-destructive beams of supernatural energy.  Powerful, but robots and some anomalous monsters are immune to its effects.  Requires crystallized essence to fire, and may tear holes in The Veil with each shot."
   },
   {
+    "id": "rift_focus_cannon_part_manual",
+    "//": "In general, only allow this with weapons that don't require a UPS cost and don't draw from vehicle tanks.  Rift focus cannon just uses crystallized essence so we're good.",
+    "copy-from": "rift_focus_cannon_part",
+    "type": "vehicle_part",
+    "name": { "str": "rift focus cannon (manual)" },
+    "looks_like": "rift_focus_cannon_part",
+    "flags": [ "TURRET_MANUAL" ]
+  },
+  {
     "id": "ethereal_crossbow_part",
     "copy-from": "turret",
     "type": "vehicle_part",
@@ -66,6 +75,14 @@
     "description": "A crossbow decorated with golden symbols, seemingly lacking a bowstring.  Instead it propels bright green bolts of energy with high armor penetration."
   },
   {
+    "id": "ethereal_crossbow_part_manual",
+    "copy-from": "ethereal_crossbow_part",
+    "type": "vehicle_part",
+    "name": { "str": "wraithslayer (manual)" },
+    "looks_like": "ethereal_crossbow_part",
+    "flags": [ "TURRET_MANUAL" ]
+  },
+  {
     "id": "ethereal_huge_crossbow_part",
     "copy-from": "turret",
     "type": "vehicle_part",
@@ -84,6 +101,14 @@
       "removal": { "skills": [ [ "mechanics", 1 ], [ "magic", 2 ] ] }
     },
     "description": "A massive medieval crossbow converted to an arcane weapon, removing its winch and bowstring and richly decorated with esoteric religious iconography.  It uses a large amount of dull essence to fire extremely powerful piercing bolts of energy."
+  },
+  {
+    "id": "ethereal_huge_crossbow_part_manual",
+    "copy-from": "ethereal_huge_crossbow_part",
+    "type": "vehicle_part",
+    "name": { "str": "grand wraithslayer (manual)" },
+    "looks_like": "ethereal_huge_crossbow_part",
+    "flags": [ "TURRET_MANUAL" ]
   },
   {
     "id": "distorion_amp_motor_part",
