@@ -5,6 +5,7 @@
     "type": "vehicle_part",
     "name": { "str": "mounted electrothermal arc cannon" },
     "item": "electrothermal_arc_cannon",
+    "folded_volume": "3500 ml",
     "color": "yellow",
     "broken_color": "yellow",
     "breaks_into": [
@@ -28,6 +29,7 @@
     "type": "vehicle_part",
     "name": { "str": "mounted rift focus cannon" },
     "item": "rift_focus_cannon",
+    "folded_volume": "4 L",
     "color": "light_blue",
     "broken_color": "light_blue",
     "breaks_into": [
@@ -51,6 +53,7 @@
     "type": "vehicle_part",
     "name": { "str": "mounted wraithslayer" },
     "item": "ethereal_crossbow",
+    "folded_volume": "1500 ml",
     "color": "green",
     "broken_color": "green",
     "breaks_into": [
@@ -71,6 +74,7 @@
     "type": "vehicle_part",
     "name": { "str": "mounted grand wraithslayer" },
     "item": "ethereal_huge_crossbow",
+    "folded_volume": "4 L",
     "color": "green",
     "broken_color": "green",
     "breaks_into": [
