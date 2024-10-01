@@ -218,7 +218,7 @@
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
     "tools": [ [ [ "surface_heat", 10, "LIST" ] ] ],
     "components": [
-      [ [ "bone", 1 ], [ "bone_human", 1 ] ],
+      [ [ "bone", 1 ], [ "bone_human", 1 ], [ "bone_heavy", 1 ] ],
       [ [ "copper", 10 ], [ "silver_small", 10 ], [ "gold_small", 10 ] ],
       [ [ "iridescent_plate", 1 ], [ "wyrmskin_piece", 1 ], [ "engraved_stone", 1 ] ]
     ]
