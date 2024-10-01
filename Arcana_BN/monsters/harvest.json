@@ -6,9 +6,9 @@
     "entries": [
       { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.1 },
       { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.05 },
-      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.25 },
+      { "drop": "bone_heavy", "type": "bone", "mass_ratio": 0.25 },
       { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
-      { "drop": "raw_tainted_leather", "type": "skin", "mass_ratio": 0.05 }
+      { "drop": "scute_piece", "type": "skin", "mass_ratio": 0.05 }
     ]
   },
   {
