@@ -84,7 +84,7 @@
       "str_max": 60,
       "sound": "smash!",
       "sound_fail": "thump.",
-      "ranged": { "reduction": [ 20, 40 ], "destroy_threshold": 40, "block_unaimed_chance": "50%" }
+      "ranged": { "reduction": [ 40, 40 ], "destroy_threshold": 40, "block_unaimed_chance": "50%" }
     },
     "examine_action": "fireplace"
   },
@@ -119,7 +119,7 @@
       "str_max": 90,
       "sound": "crash!",
       "sound_fail": "thump!",
-      "ranged": { "reduction": [ 30, 60 ], "destroy_threshold": 60 }
+      "ranged": { "reduction": [ 60, 60 ], "destroy_threshold": 60 }
     }
   },
   {
@@ -139,7 +139,7 @@
       "str_max": 45,
       "sound": "smash!",
       "sound_fail": "whump!",
-      "ranged": { "reduction": [ 15, 30 ], "destroy_threshold": 30 }
+      "ranged": { "reduction": [ 30, 30 ], "destroy_threshold": 30 }
     }
   },
   {
@@ -174,7 +174,7 @@
       "sound": "crash!",
       "sound_fail": "whump!",
       "items": [ { "item": "rock", "count": [ 2, 5 ] } ],
-      "ranged": { "reduction": [ 100, 200 ], "destroy_threshold": 200, "block_unaimed_chance": "50%" }
+      "ranged": { "reduction": [ 200, 200 ], "destroy_threshold": 200, "block_unaimed_chance": "50%" }
     }
   },
   {
@@ -196,7 +196,7 @@
       "sound": "crash!",
       "sound_fail": "whump!",
       "items": [ { "item": "rock", "count": [ 2, 5 ] } ],
-      "ranged": { "reduction": [ 100, 200 ], "destroy_threshold": 200, "block_unaimed_chance": "50%" }
+      "ranged": { "reduction": [ 200, 200 ], "destroy_threshold": 200, "block_unaimed_chance": "50%" }
     }
   },
   {
@@ -250,7 +250,7 @@
       "sound": "smash!",
       "sound_fail": "thump.",
       "items": [ { "item": "transmutation_crucible", "prob": 75 }, { "item": "rock", "count": [ 2, 7 ] } ],
-      "ranged": { "reduction": [ 20, 40 ], "destroy_threshold": 40, "block_unaimed_chance": "50%" }
+      "ranged": { "reduction": [ 40, 40 ], "destroy_threshold": 40, "block_unaimed_chance": "50%" }
     },
     "examine_action": "workbench",
     "workbench": { "multiplier": 1.05, "mass": 500000, "volume": "500L" }
