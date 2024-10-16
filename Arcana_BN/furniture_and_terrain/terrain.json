@@ -86,7 +86,8 @@
       "ter_set": "t_dirt",
       "ter_set_bashed_from_above": "t_dirt",
       "items": [ { "group": "digging_soil_loam_200L", "count": 20 }, { "item": "splinter", "count": [ 2, 5 ] } ],
-      "ranged": { "reduction": [ 50, 100 ], "destroy_threshold": 400 }
+      "//": "Variable reduction, maximum strength comparable to dirt walls",
+      "ranged": { "reduction": [ 100, 200 ], "destroy_threshold": 200 }
     }
   },
   {
@@ -108,7 +109,7 @@
       "sound_fail": "bash!",
       "ter_set": "t_null",
       "items": [ { "item": "rock", "count": [ 8, 15 ] }, { "item": "brick", "count": [ 2, 6 ] } ],
-      "ranged": { "reduction": [ 60, 120 ], "destroy_threshold": 120 }
+      "ranged": { "reduction": [ 120, 120 ], "destroy_threshold": 120 }
     }
   }
 ]
