@@ -56,7 +56,7 @@
       [ "dao", 35 ],
       [ "khopesh", 10 ],
       [ "q_staff", 5 ],
-      { "collection": [ { "group": "guns_pistol_improvised" }, { "group": "ammo_pistol_reloaded" } ], "prob": 10 },
+      { "collection": [ { "group": "ammo_pistol_reloaded" } ], "prob": 10 },
       [ "pistol_flintlock", 5 ],
       [ "flintlock_ammo", 10 ],
       [ "robe", 10 ],
