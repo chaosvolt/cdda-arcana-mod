@@ -1,0 +1,62 @@
+[
+  {
+    "id": "real_knives",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "blood_athame", -1 ], [ "moonstone_fang", -1 ], [ "moonstone_fang_on", -1 ] ] ] }
+  },
+  {
+    "id": "real_medium_swords",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "sun_sword", -1 ], [ "sun_sword_on", -1 ] ] ] }
+  },
+  {
+    "id": "real_great_hammers",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "hexenhammer", -1 ], [ "lucern_hexenhammer", -1 ] ] ] }
+  },
+  {
+    "id": "real_hooks",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "hexenhammer", -1 ], [ "lucern_hexenhammer", -1 ] ] ] }
+  },
+  {
+    "id": "real_polearms",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "lucern_hexenhammer", -1 ] ] ] }
+  },
+  {
+    "id": "real_spears",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "spear_pestilence", -1 ] ] ] }
+  },
+  {
+    "id": "real_axes",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "bloodaxe", -1 ], [ "bloodaxe_act", -1 ] ] ] }
+  },
+  {
+    "id": "real_thrusting_swords",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "shrike_misericorde", -1 ] ] ] }
+  },
+  {
+    "id": "real_short_swords",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "lichhook", -1 ] ] ] }
+  },
+  {
+    "id": "basic_batons",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "staff_druidic", -1 ], [ "verge_meteoric", -1 ] ] ] }
+  },
+  {
+    "id": "real_great_swords",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "veilblade", -1 ], [ "stormbringer", -1 ], [ "stormbringer_on", -1 ] ] ] }
+  },
+  {
+    "id": "real_quarterstaves",
+    "type": "requirement",
+    "extend": { "tools": [ [ [ "sanguine_staff_lifesbane", -1 ] ] ] }
+  }
+]

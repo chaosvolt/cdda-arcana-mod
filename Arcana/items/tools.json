@@ -191,7 +191,7 @@
     "type": "TOOL",
     "category": "weapons",
     "copy-from": "qt_arming_sword",
-    "weapon_category": [ "MEDIEVAL_SWORDS", "MEDIUM_SWORDS", "FENCING_WEAPONRY" ],
+    "weapon_category": [ "MEDIUM_SWORDS"],
     "name": { "str": "incorruptible sword" },
     "//": "Stats are a blend of the available swords you can use to make it, same deal as the mantle of shadows.",
     "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  When powered by consecrated magical essence, it has the power to cut through darkness itself.",
@@ -1206,7 +1206,7 @@
   {
     "id": "staff_druidic",
     "type": "TOOL",
-    "weapon_category": [ "BATONS", "FENCING_WEAPONRY" ],
+    "weapon_category": [ "BATONS"],
     "name": { "str": "druidic staff", "str_pl": "druidic staves" },
     "description": "A short wooden staff decorated with engraved silver, depicting a mixture of exotic natural scenes and various holy symbols.  It is said to represent the instincts deep within the heart, tempered by restraint and reason.  Using it can repair and fortify items made of various plant or animal products and stone, but not more refined materials like metal or glass.",
     "weight": "1310 g",
@@ -1418,7 +1418,7 @@
     "id": "verge_meteoric",
     "type": "TOOL",
     "category": "weapons",
-    "weapon_category": [ "BATONS", "FENCING_WEAPONRY" ],
+    "weapon_category": [ "BATONS"],
     "name": { "str": "meteoric verge" },
     "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.",
     "weight": "1585 g",
@@ -1797,7 +1797,7 @@
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "tec_weapon_stormbringer_slash" ],
     "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD", "TRADER_KEEP_EQUIPPED" ],
-    "weapon_category": [ "MEDIEVAL_SWORDS", "GREAT_SWORDS" ]
+    "weapon_category": [ "GREAT_SWORDS" ]
   },
   {
     "id": "leather_journal",
