@@ -280,7 +280,7 @@
     "mixed_effect": true,
     "visibility": 4,
     "ugliness": 2,
-    "description": "You have a pair of large, scale-covered wings.  Your body is too heavy to be able to fly, they mostly just get in the way, preventing you from wearing any torso gear not made of fabric.  Your back muscles are however improved by this growth, increasing strength and stamina a bit at the expense of dexterity.",
+    "description": "You have a pair of large, scale-covered wings.  Your body is too heavy to be able to fly, they mostly just get in the way aside from reducing falling damage some, preventing you from wearing any torso gear not made of fabric.  Your back muscles are however improved by this growth, increasing strength and stamina a bit at the expense of dexterity.",
     "valid": false,
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
     "changes_to": [ "ARCANA_DRAGONWINGS" ],
@@ -291,6 +291,7 @@
     "max_stamina_modifier": 1.1,
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
+    "falling_damage_multiplier": 0.75,
     "dodge_modifier": -1,
     "passive_mods": { "str_mod": 2, "dex_mod": -1 }
   },
@@ -314,6 +315,8 @@
     "max_stamina_modifier": 1.2,
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
+    "//": "Enchantment handles falling damage, this multiplier covers being tossed by a hulk for consistency with other wing traits.",
+    "falling_damage_multiplier": 0.75,
     "passive_mods": { "str_mod": 5, "dex_mod": -2 }
   },
   {
