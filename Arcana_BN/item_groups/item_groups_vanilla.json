@@ -216,6 +216,7 @@
   {
     "id": "drugdealer",
     "type": "item_group",
+    "subtype": "collection",
     "items": [ { "group": "magic_books_postapoc", "prob": 5 } ]
   },
   {
