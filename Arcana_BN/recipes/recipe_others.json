@@ -315,7 +315,13 @@
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "cured_pelt", 4 ], [ "cured_hide", 4 ], [ "wyrmskin_piece", 1 ], [ "iridescent_plate", 1 ] ],
+      [
+        [ "cured_pelt", 4 ],
+        [ "cured_hide", 4 ],
+        [ "scute_piece", 4 ],
+        [ "wyrmskin_piece", 1 ],
+        [ "iridescent_plate", 1 ]
+      ],
       [ [ "essence", 2 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
@@ -561,7 +567,16 @@
     "book_learn": [ [ "book_scrollcraft", 5 ] ],
     "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 3 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "vortex_shard", 1 ], [ "cured_hide", 20 ], [ "cured_pelt", 20 ], [ "chitin_piece", 40 ], [ "feather", 80 ] ] ],
+    "components": [
+      [
+        [ "vortex_shard", 1 ],
+        [ "cured_hide", 20 ],
+        [ "cured_pelt", 20 ],
+        [ "scute_piece", 20 ],
+        [ "chitin_piece", 40 ],
+        [ "feather", 80 ]
+      ]
+    ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
   },
