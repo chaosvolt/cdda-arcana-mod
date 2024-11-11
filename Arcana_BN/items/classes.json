@@ -10,7 +10,7 @@
     "symbol": ",",
     "looks_like": "survnote",
     "color": "white",
-    "flags": [ "NO_SALVAGE" ]
+    "flags": [ "NO_SALVAGE", "SNIPPET_NEEDS_LITERACY" ]
   },
   {
     "abstract": "spell_base",
