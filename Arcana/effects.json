@@ -139,8 +139,12 @@
       "stamina_chance": [ 6 ],
       "sleepiness_min": [ 1 ],
       "sleepiness_tick": [ 300 ],
-      "sleepiness_chance": [ 6, 12 ]
-    }
+      "sleepiness_chance": [ 6, 12 ],
+      "hit_mod": [ -1, 0 ],
+      "dodge_mod": [ -1, 0 ],
+      "bash_mod": [ 5 ]
+    },
+    "show_in_info": true
   },
   {
     "type": "effect_type",
@@ -165,8 +169,13 @@
       "stamina_tick": [ 30 ],
       "stamina_chance": [ 6, 12 ],
       "sleepiness_min": [ -1 ],
-      "sleepiness_chance": [ 12 ]
-    }
+      "sleepiness_chance": [ 12 ],
+      "hit_mod": [ 2 ],
+      "dodge_mod": [ 2 ],
+      "bash_mod": [ -2, -1 ],
+      "cut_mod": [ -2, -1 ]
+    },
+    "show_in_info": true
   },
   {
     "type": "effect_type",
@@ -273,9 +282,10 @@
       "dex_mod": [ -1, 0 ],
       "hurt_min": [ 2, 1 ],
       "hurt_chance": [ 2, 3 ],
-      "hit_mod": [ -2 ],
-      "dodge_mod": [ -3 ]
-    }
+      "hit_mod": [ -1, 0 ],
+      "dodge_mod": [ -1, 0 ]
+    },
+    "show_in_info": true
   },
   {
     "type": "effect_type",
@@ -538,8 +548,9 @@
     "max_duration": "120 m",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
-    "base_mods": { "str_mod": [ 1 ] },
-    "scaling_mods": { "str_mod": [ 0.0825 ] }
+    "base_mods": { "str_mod": [ 1 ], "bash_mod": [ 1 ] },
+    "scaling_mods": { "str_mod": [ 0.0825 ], "bash_mod": [ 0.0825 ] },
+    "show_in_info": true
   },
   {
     "type": "effect_type",
@@ -552,8 +563,15 @@
     "max_duration": "120 m",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
-    "base_mods": { "dex_mod": [ 1 ], "speed_mod": [ 3 ], "stamina_min": [ 1 ] },
-    "scaling_mods": { "dex_mod": [ 0.0825 ], "speed_mod": [ 0.38 ], "stamina_min": [ 0.08 ] }
+    "base_mods": { "dex_mod": [ 1 ], "speed_mod": [ 5 ], "stamina_min": [ 1 ], "hit_mod": [ 1 ], "dodge_mod": [ 1 ] },
+    "scaling_mods": {
+      "dex_mod": [ 0.0825 ],
+      "speed_mod": [ 0.38 ],
+      "stamina_min": [ 0.08 ],
+      "hit_mod": [ 0.0825 ],
+      "dodge_mod": [ 0.0825 ]
+    },
+    "show_in_info": true
   },
   {
     "type": "effect_type",
