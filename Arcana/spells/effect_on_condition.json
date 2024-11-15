@@ -21,7 +21,7 @@
         "u_message": "Your blade resonates with the decaying fabric of reality, the air growing still.  The eye of the storm has formed around you.",
         "type": "good"
       },
-      { "queue_eocs": "arcana_veilblade_cancel_portal_storm", "time_in_future": [ "21 minutes", "25 minutes" ] }
+      { "run_eocs": "arcana_veilblade_cancel_portal_storm", "time_in_future": [ "21 minutes", "25 minutes" ] }
     ]
   },
   {
