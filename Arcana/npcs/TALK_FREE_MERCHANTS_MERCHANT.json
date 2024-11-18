@@ -7,23 +7,16 @@
         "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
         "topic": "TALK_FREE_MERCHANTS_MERCHANT_Talk_NICHOLAS_1",
         "condition": {
-          "and": [
-            { "not": { "u_has_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } },
-            { "u_has_mission": "MISSION_CF_PURIFIER_1_2" }
-          ]
+          "and": [ { "not": { "u_has_var": "nicholas_mission_2_mid", "value": "yes" } }, { "u_has_mission": "MISSION_CF_PURIFIER_1_2" } ]
         }
       },
       {
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            }
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
           ]
         },
         "topic": "TALK_FREE_MERCHANTS_MERCHANT_Talk_GM_PRELUDE"
@@ -77,10 +70,7 @@
         "text": "[MISSION] Sofia asked me to recruit traders or other assistance.  Do you know of anyone looking for work?",
         "topic": "TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_REP_MISSION_4",
         "condition": {
-          "and": [
-            { "not": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" } },
-            { "u_has_mission": "MISSION_CF_REP_4" }
-          ]
+          "and": [ { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
         }
       }
     ]
@@ -156,9 +146,7 @@
     "id": "TALK_FREE_MERCHANTS_MERCHANT_Talk_GM_PRELUDE",
     "type": "talk_topic",
     "dynamic_line": {
-      "u_has_var": "tacoma_started",
-      "type": "knowledge",
-      "context": "flag",
+      "u_has_var": "knowledge_flag_tacoma_started",
       "value": "yes",
       "yes": "So you're investigating the recent rash of attacks we've had.  This is more scattered and a lot weirder than the last rash of bandits I heard your boys went after.  Most recent assault was on a caravan running supplies to the commune.  It was in the daytime so they had no trouble, got a good look.  Bunch of strange living shadows or something.  Might be worth checking with the people in the ranch, too.",
       "no": "So you're investigating the recent rash of attacks we've had.  This is more scattered and a lot weirder than the last rash of bandits I heard your boys went after.  Most recent assault was on a scavenger party sent out to bring supplies back for us.  It was almost dawn, they lost a couple boys before losing the attacks once thesun was high enough.  Give them hell, if you can get to the bottom of this."
@@ -315,9 +303,7 @@
     "id": "TALK_FREE_MERCHANTS_MERCHANT_Talk_CF_REP_MISSION_4",
     "type": "talk_topic",
     "dynamic_line": {
-      "u_has_var": "tacoma_started",
-      "type": "knowledge",
-      "context": "flag",
+      "u_has_var": "knowledge_flag_tacoma_started",
       "value": "yes",
       "yes": "Well, guess they're doing rather well for themselves if our arrangement isn't enough anymore.  The Old Guard representative might know a bit, anyone else dealing in trade here could too.  You can also try the ranch, with people heading there looking for work, they might be willing to try their fortunes some place with more security.  My caravan runners have told me plenty enough to suspect Ms. McKinnon's group can hold their own.",
       "no": "Well, guess they're doing rather well for themselves if our arrangement isn't enough anymore.  The Old Guard representative might know a bit, anyone else dealing in trade here could too.  People aren't very eager to go out and risk getting killed, but they might be convinced if they saw that it was safe.  I've heard enough from my caravans to suggest that Ms. McKinnon's group can take care of themselves, at least."

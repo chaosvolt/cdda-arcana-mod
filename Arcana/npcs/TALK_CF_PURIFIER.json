@@ -50,9 +50,7 @@
           "and": [
             { "u_has_effect": "cf_mission_1" },
             { "npc_has_trait": "FIX_CF_GM" },
-            {
-              "not": { "u_has_var": "nicholas_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" }
-            }
+            { "not": { "u_has_var": "nicholas_all_spells_known", "value": "yes" } }
           ]
         }
       },
@@ -66,56 +64,54 @@
         "text": "[MISSION] The people who helped me find that information were hoping for us to help them in return.",
         "condition": {
           "and": [
-            { "npc_has_var": "nicholas_mission_2_end", "type": "mission", "context": "rural_church", "value": "yes" },
+            { "npc_has_var": "nicholas_mission_2_end", "value": "yes" },
             {
               "or": [ { "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_1" }, { "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_2" } ]
             },
-            {
-              "not": { "u_has_var": "nicholas_info_sent", "type": "mission", "context": "rural_church", "value": "yes" }
-            }
+            { "not": { "u_has_var": "nicholas_info_sent", "value": "yes" } }
           ]
         },
         "topic": "TALK_CF_PURIFIER_INTERLUDE_MISSION"
       },
       {
         "text": "How's your research going?",
-        "condition": { "npc_has_var": "nicholas_final_completed", "type": "mission", "context": "rural_church", "value": "yes" },
+        "condition": { "npc_has_var": "nicholas_final_completed", "value": "yes" },
         "switch": true,
         "topic": "TALK_CF_PURIFIER_MISSION_FINAL"
       },
       {
         "text": "So now what?",
-        "condition": { "npc_has_var": "nicholas_mission_3_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        "condition": { "npc_has_var": "nicholas_mission_3_end", "value": "yes" },
         "switch": true,
         "topic": "TALK_CF_PURIFIER_MISSION_END_3"
       },
       {
         "text": "What's next?",
-        "condition": { "npc_has_var": "nicholas_mission_3_ready", "type": "mission", "context": "rural_church", "value": "yes" },
+        "condition": { "npc_has_var": "nicholas_mission_3_ready", "value": "yes" },
         "switch": true,
         "topic": "TALK_MISSION_LIST"
       },
       {
         "text": "So, you wanted to talk about what we found?",
-        "condition": { "npc_has_var": "nicholas_mission_2_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        "condition": { "npc_has_var": "nicholas_mission_2_end", "value": "yes" },
         "switch": true,
         "topic": "TALK_CF_PURIFIER_MISSION_END_2"
       },
       {
         "text": "I'm ready, what do you need?",
-        "condition": { "npc_has_var": "nicholas_mission_2_ready", "type": "mission", "context": "rural_church", "value": "yes" },
+        "condition": { "npc_has_var": "nicholas_mission_2_ready", "value": "yes" },
         "switch": true,
         "topic": "TALK_MISSION_LIST"
       },
       {
         "text": "So, what's next?",
-        "condition": { "npc_has_var": "nicholas_mission_1_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        "condition": { "npc_has_var": "nicholas_mission_1_end", "value": "yes" },
         "switch": true,
         "topic": "TALK_CF_PURIFIER_MISSION_END_1"
       },
       {
         "text": "So, what's next?",
-        "condition": { "npc_has_var": "nicholas_mission_1_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        "condition": { "npc_has_var": "nicholas_mission_1_end", "value": "yes" },
         "switch": true,
         "topic": "TALK_MISSION_LIST"
       },
@@ -210,7 +206,7 @@
             { "u_has_trait": "SPELL_LOCKPICK" }
           ]
         },
-        "effect": { "u_add_var": "nicholas_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "nicholas_all_spells_known", "value": "yes" },
         "topic": "TALK_CF_PURIFIER"
       },
       { "text": "Maybe another time.", "switch": true, "default": true, "topic": "TALK_CF_PURIFIER" }
@@ -298,7 +294,7 @@
     "id": "TALK_CF_PURIFIER_INTERLUDE_MISSION_1",
     "type": "talk_topic",
     "dynamic_line": "Seems reasonable, then.  I'll get in touch with them and work out what information I can get out of this.  Check up on them sometime later and they will probably be glad to hear back from you.",
-    "speaker_effect": { "effect": [ { "u_add_var": "nicholas_info_sent", "type": "mission", "context": "rural_church", "value": "yes" } ] },
+    "speaker_effect": { "effect": [ { "u_add_var": "nicholas_info_sent", "value": "yes" } ] },
     "responses": [
       { "text": "Thanks!  Before I go…", "topic": "TALK_CF_PURIFIER" },
       { "text": "Thanks, I'll be back later!", "topic": "TALK_DONE" }
@@ -308,7 +304,7 @@
     "id": "TALK_CF_PURIFIER_INTERLUDE_MISSION_2",
     "type": "talk_topic",
     "dynamic_line": "I suppose it wouldn't hurt, though I'd prefer to advise them to give most of the old labs a wide berth, just to be safe.  I'll get in touch and work out what they need to know.  You should probably check on them later.",
-    "speaker_effect": { "effect": [ { "u_add_var": "nicholas_info_sent", "type": "mission", "context": "rural_church", "value": "yes" } ] },
+    "speaker_effect": { "effect": [ { "u_add_var": "nicholas_info_sent", "value": "yes" } ] },
     "responses": [
       { "text": "Thanks!  Before I go…", "topic": "TALK_CF_PURIFIER" },
       { "text": "Thanks, I'll be back later!", "topic": "TALK_DONE" }
@@ -342,7 +338,7 @@
         "text": "I'll give it a try then.",
         "effect": [
           { "u_add_effect": "cf_purifier_kairos", "duration": "PERMANENT" },
-          { "npc_add_var": "nicholas_final_completed", "type": "mission", "context": "rural_church", "value": "yes" },
+          { "npc_add_var": "nicholas_final_completed", "value": "yes" },
           { "u_spawn_item": "essence_pure", "count": 0, "container": "divine_sealing_charm" }
         ],
         "topic": "TALK_CF_PURIFIER_MISSION_END_3_ACCEPT"
@@ -432,11 +428,7 @@
     "id": "TALK_CF_PURIFIER_MISSION_END_2_3",
     "type": "talk_topic",
     "dynamic_line": "There's a whole web of shipments concerning the sort of technologies that would be useful for this sort of project, and over ninety percent of the relevant anomalous materials on this manifest end up in a single research facility.  This is exactly what I was hoping to find, a buildup of materials that briefly continued even into the last few shipments that made it out when this all boiled over.  When you're ready, I'll have a briefing prepared for you.",
-    "speaker_effect": [
-      {
-        "effect": [ { "npc_add_var": "nicholas_mission_3_ready", "type": "mission", "context": "rural_church", "value": "yes" } ]
-      }
-    ],
+    "speaker_effect": [ { "effect": [ { "npc_add_var": "nicholas_mission_3_ready", "value": "yes" } ] } ],
     "responses": [ { "text": "Alright.", "topic": "TALK_CF_PURIFIER" } ]
   },
   {
@@ -483,11 +475,7 @@
     "id": "TALK_CF_PURIFIER_MISSION_END_1_3",
     "type": "talk_topic",
     "dynamic_line": "I'm just about done getting a summary of the project, known locations of supply shipments, and what little else we know copied.  Talk to me when you're ready and I just might have an idea for how we can get what we need.",
-    "speaker_effect": [
-      {
-        "effect": [ { "npc_add_var": "nicholas_mission_2_ready", "type": "mission", "context": "rural_church", "value": "yes" } ]
-      }
-    ],
+    "speaker_effect": [ { "effect": [ { "npc_add_var": "nicholas_mission_2_ready", "value": "yes" } ] } ],
     "responses": [ { "text": "We'll see then.", "topic": "TALK_CF_PURIFIER" } ]
   },
   {

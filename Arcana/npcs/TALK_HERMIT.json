@@ -56,13 +56,9 @@
         "condition": {
           "and": [
             { "u_has_effect": "hermit_earned_trust_2" },
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            }
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
           ]
         },
         "topic": "TALK_HERMIT_GM_PRELUDE"
@@ -70,9 +66,9 @@
       {
         "text": "I would like for you to go ahead and attempt to send allies to the rural church.",
         "topic": "TALK_HERMIT_UNDEFER",
-        "condition": { "u_has_var": "spawned_tablet_fallback", "type": "flag", "context": "hermit", "value": "yes" },
+        "condition": { "u_has_var": "spawned_tablet_fallback", "value": "yes" },
         "effect": [
-          { "u_lose_var": "spawned_tablet_fallback", "type": "flag", "context": "hermit" },
+          { "u_lose_var": "spawned_tablet_fallback" },
           {
             "mapgen_update": "arcana_hermit_spawn_npcs",
             "om_terrain": "cf_church_1",
@@ -86,10 +82,7 @@
         "text": "[MISSION] I was sent here on behalf of the Cleansing Flame.  I was informed that you know of the Keepers?",
         "topic": "TALK_HERMIT_CF_REP_MISSION",
         "condition": {
-          "and": [
-            { "not": { "u_has_var": "sofia_mission_5_ready", "type": "flag", "context": "hermit", "value": "yes" } },
-            { "u_has_mission": "MISSION_CF_REP_5" }
-          ]
+          "and": [ { "not": { "u_has_var": "sofia_mission_5_ready", "value": "yes" } }, { "u_has_mission": "MISSION_CF_REP_5" } ]
         }
       },
       {
@@ -258,8 +251,8 @@
       {
         "text": "Thank you.  I'll report back to them, then.",
         "effect": [
-          { "u_add_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" },
-          { "npc_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+          { "u_add_var": "johnathan_prelude_data_5", "value": "yes" },
+          { "npc_add_var": "johnathan_prelude_mid", "value": "yes" }
         ],
         "topic": "TALK_DONE"
       }
@@ -454,7 +447,7 @@
       },
       {
         "text": "That won't be needed for now, our main concern is the information.",
-        "effect": { "u_add_var": "hermit_allies_deferred", "type": "flag", "context": "hermit", "value": "yes" },
+        "effect": { "u_add_var": "hermit_allies_deferred", "value": "yes" },
         "topic": "TALK_HERMIT_CF_REP_MISSION_ALLIES_DEFERRED"
       }
     ]
@@ -474,7 +467,7 @@
       },
       {
         "effect": [
-          { "u_add_var": "sofia_mission_5_ready", "type": "flag", "context": "hermit", "value": "yes" },
+          { "u_add_var": "sofia_mission_5_ready", "value": "yes" },
           {
             "mapgen_update": "arcana_hermit_tablet_unlock",
             "om_terrain": "arcana_hermitage_2",
@@ -505,7 +498,7 @@
       },
       {
         "effect": [
-          { "u_add_var": "sofia_mission_5_ready", "type": "flag", "context": "hermit", "value": "yes" },
+          { "u_add_var": "sofia_mission_5_ready", "value": "yes" },
           {
             "mapgen_update": "arcana_hermit_tablet_unlock",
             "om_terrain": "arcana_hermitage_2",
@@ -536,7 +529,7 @@
       },
       {
         "effect": [
-          { "u_add_var": "sofia_mission_5_ready", "type": "flag", "context": "hermit", "value": "yes" },
+          { "u_add_var": "sofia_mission_5_ready", "value": "yes" },
           {
             "mapgen_update": "arcana_hermit_tablet_unlock",
             "om_terrain": "arcana_hermitage_2",
@@ -574,7 +567,7 @@
       },
       {
         "effect": [
-          { "u_add_var": "sofia_mission_5_ready", "type": "flag", "context": "hermit", "value": "yes" },
+          { "u_add_var": "sofia_mission_5_ready", "value": "yes" },
           {
             "mapgen_update": "arcana_hermit_tablet_unlock",
             "om_terrain": "arcana_hermitage_2",
@@ -2432,7 +2425,7 @@
             { "u_has_any_trait": [ "PROF_CHALICE2", "SPELL_TRANSCENDENTAURA" ] }
           ]
         },
-        "effect": { "u_add_var": "hermit_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "hermit_all_spells_known", "value": "yes" },
         "topic": "TALK_HERMIT"
       },
       { "text": "Maybe another time.", "switch": true, "default": true, "topic": "TALK_HERMIT" }

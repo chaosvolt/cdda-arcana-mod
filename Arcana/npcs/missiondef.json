@@ -363,12 +363,12 @@
     "name": { "str": "Secure Allies For Sofia" },
     "description": "Arrange for additional allies to join Sofia's group at the rural church.  Most merchants at the refugee center, and possibly other places, might be worth talking to for assistance.",
     "goal": "MGOAL_CONDITION",
-    "goal_condition": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
+    "goal_condition": { "u_has_var": "sofia_allies_secured", "value": "yes" },
     "difficulty": 3,
     "value": 7500,
     "has_generic_rewards": false,
     "start": {
-      "effect": [ { "u_add_var": "sofia_mission_4", "type": "mission", "context": "rural_church", "value": "yes" } ],
+      "effect": [ { "u_add_var": "sofia_mission_4", "value": "yes" } ],
       "update_mapgen": [
         { "om_terrain": "cf_church_1", "place_nested": [ { "chunks": [ "cf_church_upgrade_4_a" ], "x": 3, "y": 16 } ] },
         { "om_terrain": "cf_church_3", "place_nested": [ { "chunks": [ "cf_church_upgrade_4_b" ], "x": 3, "y": 0 } ] }
@@ -389,8 +389,8 @@
     },
     "end": {
       "effect": [
-        { "u_add_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "npc_add_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "u_add_var": "sofia_mission_4_end", "value": "yes" },
+        { "npc_add_var": "sofia_mission_4_end", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "u_spawn_item": "CF_golden_scale", "count": 8 }
       ],
@@ -430,7 +430,7 @@
     },
     "end": {
       "effect": [
-        { "npc_add_var": "sofia_mission_5_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "npc_add_var": "sofia_mission_5_end", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "u_spawn_item": "CF_golden_scale", "count": 10 }
       ],
@@ -673,7 +673,7 @@
     "value": 7500,
     "has_generic_rewards": false,
     "start": {
-      "effect": [ { "u_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" } ],
+      "effect": [ { "u_add_var": "johnathan_prelude_mid", "value": "yes" } ],
       "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 3, "random": true, "search_range": 50, "min_distance": 20 },
       "update_mapgen": {
         "set": [
@@ -735,7 +735,7 @@
     },
     "end": {
       "effect": [
-        { "u_add_var": "johnathan_prelude_penultimate", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "u_add_var": "johnathan_prelude_penultimate", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }
       ]
     }
@@ -784,7 +784,7 @@
     },
     "end": {
       "effect": [
-        { "npc_add_var": "johnathan_mission_finale", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "npc_add_var": "johnathan_mission_finale", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "u_spawn_item": "CF_golden_scale", "count": 20 }
       ],
@@ -994,7 +994,7 @@
     },
     "end": {
       "effect": [
-        { "npc_add_var": "nicholas_mission_1_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "npc_add_var": "nicholas_mission_1_end", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "u_spawn_item": "CF_golden_scale", "count": 10 }
       ]
@@ -1026,7 +1026,7 @@
     },
     "end": {
       "effect": [
-        { "npc_add_var": "nicholas_mission_2_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "npc_add_var": "nicholas_mission_2_end", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "u_spawn_item": "CF_golden_scale", "count": 15 }
       ]
@@ -1038,7 +1038,7 @@
     "name": { "str": "Investigate Laboratory Server Room" },
     "description": "Investigate a science lab and retrieve the intel Nicholas is looking for from their server room.  After bringing the shipping manifest back to Nicholas, you may return to the refugee center later to check on the Old Guard's doctor.",
     "goal": "MGOAL_CONDITION",
-    "goal_condition": { "u_has_var": "nicholas_info_sent", "type": "mission", "context": "rural_church", "value": "yes" },
+    "goal_condition": { "u_has_var": "nicholas_info_sent", "value": "yes" },
     "difficulty": 5,
     "has_generic_rewards": false,
     "value": 10000,
@@ -1052,7 +1052,7 @@
         "search_range": 180,
         "z": 0
       },
-      "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } ]
+      "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "value": "yes" } ]
     },
     "dialogue": {
       "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
@@ -1073,7 +1073,7 @@
     "name": { "str": "Investigate Lost Scavenger Team" },
     "description": "Investigate the last known location of a group of survivors, suspected to have found documents of the information Nicholas is looking for.  After bringing the information back to Nicholas, you may return to bring back news of what happened to the scavengers.",
     "goal": "MGOAL_CONDITION",
-    "goal_condition": { "u_has_var": "nicholas_info_sent", "type": "mission", "context": "rural_church", "value": "yes" },
+    "goal_condition": { "u_has_var": "nicholas_info_sent", "value": "yes" },
     "difficulty": 5,
     "has_generic_rewards": false,
     "value": 10000,
@@ -1087,7 +1087,7 @@
         "search_range": 180,
         "z": 0
       },
-      "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } ]
+      "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "value": "yes" } ]
     },
     "dialogue": {
       "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
@@ -1122,7 +1122,7 @@
         "search_range": 180,
         "z": 0
       },
-      "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } ]
+      "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "value": "yes" } ]
     },
     "dialogue": {
       "describe": "Seeing this is probably a bug, as this mission is actually started via add_mission in dialogue.",
@@ -1172,7 +1172,7 @@
     },
     "end": {
       "effect": [
-        { "npc_add_var": "nicholas_mission_3_end", "type": "mission", "context": "rural_church", "value": "yes" },
+        { "npc_add_var": "nicholas_mission_3_end", "value": "yes" },
         { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" },
         { "npc_add_effect": "cf_purifier_making_item", "duration": 259200 },
         { "u_spawn_item": "CF_golden_scale", "count": 20 }

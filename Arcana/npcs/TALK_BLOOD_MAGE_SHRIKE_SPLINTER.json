@@ -6,14 +6,10 @@
       "npc_has_trait": "SHRIKE_MISSION_MARKER",
       "yes": {
         "npc_has_var": "elena_convinced",
-        "type": "flag",
-        "context": "shrike",
         "value": "yes",
         "yes": "Welcome.  Try not to cause any trouble.",
         "no": {
           "npc_has_var": "elena_failed",
-          "type": "flag",
-          "context": "shrike",
           "value": "yes",
           "yes": "We've nothing more to discuss.  Leave.",
           "no": {
@@ -50,8 +46,8 @@
           "and": [
             { "or": [ { "u_has_mission": "MISSION_HERMIT_RESTORE_SWORD" }, { "u_has_effect": "hermit_quest_backdoor" } ] },
             { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
-            { "npc_has_var": "elena_convinced", "type": "flag", "context": "shrike", "value": "yes" },
-            { "not": { "npc_has_var": "elena_blade_help", "type": "flag", "context": "shrike", "value": "yes" } }
+            { "npc_has_var": "elena_convinced", "value": "yes" },
+            { "not": { "npc_has_var": "elena_blade_help", "value": "yes" } }
           ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE"
@@ -62,8 +58,8 @@
           "and": [
             { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
             { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
-            { "not": { "npc_has_var": "elena_convinced", "type": "flag", "context": "shrike", "value": "yes" } },
-            { "not": { "npc_has_var": "elena_failed", "type": "flag", "context": "shrike", "value": "yes" } }
+            { "not": { "npc_has_var": "elena_convinced", "value": "yes" } },
+            { "not": { "npc_has_var": "elena_failed", "value": "yes" } }
           ]
         },
         "switch": true,
@@ -74,8 +70,8 @@
         "condition": {
           "and": [
             { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
-            { "not": { "npc_has_var": "elena_convinced", "type": "flag", "context": "shrike", "value": "yes" } },
-            { "not": { "npc_has_var": "elena_failed", "type": "flag", "context": "shrike", "value": "yes" } }
+            { "not": { "npc_has_var": "elena_convinced", "value": "yes" } },
+            { "not": { "npc_has_var": "elena_failed", "value": "yes" } }
           ]
         },
         "switch": true,
@@ -84,20 +80,14 @@
       {
         "text": "Who are you?",
         "condition": {
-          "and": [
-            { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
-            { "not": { "npc_has_var": "elena_failed", "type": "flag", "context": "shrike", "value": "yes" } }
-          ]
+          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "npc_has_var": "elena_failed", "value": "yes" } } ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHO"
       },
       {
         "text": "What can you tell me about this place?",
         "condition": {
-          "and": [
-            { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
-            { "not": { "npc_has_var": "elena_failed", "type": "flag", "context": "shrike", "value": "yes" } }
-          ]
+          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "npc_has_var": "elena_failed", "value": "yes" } } ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE"
       },
@@ -107,8 +97,8 @@
         "condition": {
           "and": [
             { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
-            { "u_has_var": "elena_trade", "type": "flag", "context": "shrike", "value": "yes" },
-            { "not": { "npc_has_var": "elena_failed", "type": "flag", "context": "shrike", "value": "yes" } }
+            { "u_has_var": "elena_trade", "value": "yes" },
+            { "not": { "npc_has_var": "elena_failed", "value": "yes" } }
           ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
@@ -231,7 +221,7 @@
     "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE_CF_3",
     "type": "talk_topic",
     "dynamic_line": "You're full of surprises, it seems.  I'll overlook the question of where you got it.  Do try not to end up burning it, and hopefully that old sword will prove useful.",
-    "speaker_effect": { "effect": { "npc_add_var": "elena_blade_help", "type": "flag", "context": "shrike", "value": "yes" } },
+    "speaker_effect": { "effect": { "npc_add_var": "elena_blade_help", "value": "yes" } },
     "responses": [ { "text": "…", "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER" } ]
   },
   {
@@ -262,12 +252,7 @@
       "yes": "So be it.  I will trust you with a copy, but consider it on loan.  That means, first and foremost, take good care of it.  Someday when humanity can look forward to a moment's peace and the hope of rebuilding on the ruins, I expect you to survive to see it through.  Then we'll see about returning that book.",
       "no": "Very well then.  Here you go.  Take good care of it, and be careful in applying the lessons you will find within.  The Path To Power, as we called it back in the day, is not an easy one to walk."
     },
-    "speaker_effect": {
-      "effect": [
-        { "npc_add_var": "elena_blade_help", "type": "flag", "context": "shrike", "value": "yes" },
-        { "u_spawn_item": "book_bloodmagic" }
-      ]
-    },
+    "speaker_effect": { "effect": [ { "npc_add_var": "elena_blade_help", "value": "yes" }, { "u_spawn_item": "book_bloodmagic" } ] },
     "responses": [
       {
         "text": "We'll see how this goes, then.",
@@ -380,7 +365,7 @@
     "dynamic_line": "So be it, then.  I will trust you on this.  Safe's in the back room, I'll let them know to have it open for you.  Take what you need, then be on your way.",
     "speaker_effect": {
       "effect": [
-        { "npc_add_var": "elena_convinced", "type": "flag", "context": "shrike", "value": "yes" },
+        { "npc_add_var": "elena_convinced", "value": "yes" },
         {
           "mapgen_update": "arcana_shrikes_unlock_safe",
           "om_terrain": "sanguine_holdout_2",
@@ -399,7 +384,7 @@
     "dynamic_line": "Fine then.  Don't disappoint me.  Safe's in the back, I'll have it opened up, get what you need.  I suppose I can also send someone to check things out at the place you're from.  We'll see if this cooperation actually pans out.",
     "speaker_effect": {
       "effect": [
-        { "npc_add_var": "elena_convinced", "type": "flag", "context": "shrike", "value": "yes" },
+        { "npc_add_var": "elena_convinced", "value": "yes" },
         {
           "mapgen_update": "arcana_shrikes_unlock_safe",
           "om_terrain": "sanguine_holdout_2",
@@ -424,7 +409,7 @@
     "dynamic_line": "Perhaps you're right.  I don't know if we can all truly work together, but we'll see.  I'll send someone to check things out.  In the meantime, I'll have them open the safe that has a copy of our research, it's in the back room there.",
     "speaker_effect": {
       "effect": [
-        { "npc_add_var": "elena_convinced", "type": "flag", "context": "shrike", "value": "yes" },
+        { "npc_add_var": "elena_convinced", "value": "yes" },
         {
           "mapgen_update": "arcana_shrikes_unlock_safe",
           "om_terrain": "sanguine_holdout_2",
@@ -448,7 +433,7 @@
     "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BRASH",
     "type": "talk_topic",
     "dynamic_line": "I'm not foolish enough to believe you.  We have our ways.  We will not prey upon others as the Order has before, but we will not concede anything to you.  Leave in peace, while that is still an option.",
-    "speaker_effect": { "effect": { "npc_add_var": "elena_failed", "type": "flag", "context": "shrike", "value": "yes" } },
+    "speaker_effect": { "effect": { "npc_add_var": "elena_failed", "value": "yes" } },
     "responses": [ { "text": "…", "topic": "TALK_DONE" } ]
   },
   {
@@ -554,7 +539,7 @@
                 { "u_has_perception": 9 }
               ]
             },
-            { "not": { "u_has_var": "elena_mentioned_mantle", "type": "flag", "context": "shrike", "value": "yes" } }
+            { "not": { "u_has_var": "elena_mentioned_mantle", "value": "yes" } }
           ]
         },
         "opinion": { "value": 4, "anger": -2 },
@@ -572,7 +557,7 @@
     "id": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_MANTLE",
     "type": "talk_topic",
     "dynamic_line": "You're observant, I'll give you that.  It was a gift, from one of their priests I suspect is probably dead by now.  A reminder of the days before the Order drove itself into ruin, before they betrayed the Keepers.  That's all I'm willing to speak of such times.  The future is more important now.",
-    "speaker_effect": { "effect": { "u_add_var": "elena_mentioned_mantle", "type": "flag", "context": "shrike", "value": "yes" } },
+    "speaker_effect": { "effect": { "u_add_var": "elena_mentioned_mantle", "value": "yes" } },
     "responses": [ { "text": "…", "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER" } ]
   },
   {
@@ -602,8 +587,8 @@
     "responses": [
       {
         "text": "Perhaps we could trade, then?",
-        "effect": [ { "u_add_var": "elena_trade", "type": "flag", "context": "shrike", "value": "yes" }, "start_trade" ],
-        "condition": { "not": { "u_has_var": "elena_trade", "type": "flag", "context": "shrike", "value": "yes" } },
+        "effect": [ { "u_add_var": "elena_trade", "value": "yes" }, "start_trade" ],
+        "condition": { "not": { "u_has_var": "elena_trade", "value": "yes" } },
         "opinion": { "value": 2, "anger": -1, "fear": -1 },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
       },

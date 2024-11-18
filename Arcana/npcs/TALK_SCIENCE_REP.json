@@ -7,23 +7,16 @@
         "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
         "topic": "TALK_SCIENCE_REP_NICHOLAS_1",
         "condition": {
-          "and": [
-            { "not": { "u_has_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } },
-            { "u_has_mission": "MISSION_CF_PURIFIER_1_2" }
-          ]
+          "and": [ { "not": { "u_has_var": "nicholas_mission_2_mid", "value": "yes" } }, { "u_has_mission": "MISSION_CF_PURIFIER_1_2" } ]
         }
       },
       {
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            }
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
           ]
         },
         "topic": "TALK_SCIENCE_REP_GM_PRELUDE"
@@ -32,10 +25,7 @@
         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know of anyone who could help with that?",
         "topic": "TALK_SCIENCE_REP_MISSION_4",
         "condition": {
-          "and": [
-            { "not": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" } },
-            { "u_has_mission": "MISSION_CF_REP_4" }
-          ]
+          "and": [ { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
         }
       }
     ]

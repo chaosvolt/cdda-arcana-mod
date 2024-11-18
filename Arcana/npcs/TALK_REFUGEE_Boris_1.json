@@ -8,10 +8,8 @@
         "topic": "TALK_REFUGEE_Boris_CF_REP_MISSION_4",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" } },
-            {
-              "not": { "npc_has_var": "sofia_refugee_convinced", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
+            { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } },
+            { "not": { "npc_has_var": "sofia_refugee_convinced", "value": "yes" } },
             { "u_has_mission": "MISSION_CF_REP_4" }
           ]
         }
@@ -22,9 +20,7 @@
     "type": "talk_topic",
     "id": "TALK_REFUGEE_Boris_CF_REP_MISSION_4",
     "dynamic_line": {
-      "u_has_var": "tacoma_started",
-      "type": "knowledge",
-      "context": "flag",
+      "u_has_var": "knowledge_flag_tacoma_started",
       "value": "yes",
       "yes": "If you mean the commune they're started up, I appreciate the suggestion.  But I don't think I would be cut out for another long trip, with all those things out there.  Plus, there are people who need me already, and I wouldn't be able to live with myself if they got hurt or killed trying to move with me.",
       "no": "I'll work something out.  Anything is better than braving the ungodly horrors out there, and I have people here who I don't want to risk losing if we ventured out to some unknown settlement."
@@ -33,7 +29,7 @@
       {
         "text": "It's a different community actually.  Smaller, but fortified and starting to become self-sufficient.",
         "topic": "TALK_REFUGEE_Boris_CF_REP_MISSION_4_UNKNOWN",
-        "condition": { "u_has_var": "tacoma_started", "type": "knowledge", "context": "flag", "value": "yes" }
+        "condition": { "u_has_var": "knowledge_flag_tacoma_started", "value": "yes" }
       },
       {
         "text": "Understandable.  Know anyone else who might be able to make the trip?",
@@ -83,7 +79,7 @@
       {
         "text": "I've asked a couple others already, hopefully that should help.  I should probably check on the outpost.",
         "effect": [
-          { "u_add_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
+          { "u_add_var": "sofia_allies_secured", "value": "yes" },
           {
             "mapgen_update": "arcana_cf_4_wasteland_scavengers_1",
             "om_terrain": "cf_church_1",
@@ -97,25 +93,25 @@
           { "mapgen_update": "arcana_cf_4_roof_1", "om_terrain": "cf_church_1_roof", "om_special": "cf_rural_church" },
           { "mapgen_update": "arcana_cf_4_roof_2", "om_terrain": "cf_church_3_roof", "om_special": "cf_rural_church" }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_2", "type": "mission", "context": "flag", "value": "yes" },
+        "condition": { "u_has_var": "sofia_ally_seeking_2", "value": "yes" },
         "switch": true,
         "topic": "TALK_DONE"
       },
       {
         "text": "Thank you.  I'll keep at it for now.",
         "effect": [
-          { "u_add_var": "sofia_ally_seeking_2", "type": "mission", "context": "flag", "value": "yes" },
-          { "npc_add_var": "sofia_refugee_convinced", "type": "mission", "context": "rural_church", "value": "yes" }
+          { "u_add_var": "sofia_ally_seeking_2", "value": "yes" },
+          { "npc_add_var": "sofia_refugee_convinced", "value": "yes" }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_1", "type": "mission", "context": "flag", "value": "yes" },
+        "condition": { "u_has_var": "sofia_ally_seeking_1", "value": "yes" },
         "switch": true,
         "topic": "TALK_DONE"
       },
       {
         "text": "Thank you.  I'll keep asking around to see where this goes.",
         "effect": [
-          { "u_add_var": "sofia_ally_seeking_1", "type": "mission", "context": "flag", "value": "yes" },
-          { "npc_add_var": "sofia_refugee_convinced", "type": "mission", "context": "rural_church", "value": "yes" }
+          { "u_add_var": "sofia_ally_seeking_1", "value": "yes" },
+          { "npc_add_var": "sofia_refugee_convinced", "value": "yes" }
         ],
         "switch": true,
         "default": true,

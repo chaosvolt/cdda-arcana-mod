@@ -20,13 +20,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            }
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
           ]
         },
         "topic": "TALK_MERCHANT_CF_AUX_GM_PRELUDE"
@@ -35,8 +31,8 @@
         "text": "So, how are you getting along with the others here?",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "cf_aux_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" } },
-            { "u_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" }
+            { "not": { "u_has_var": "cf_aux_opinion_given", "value": "yes" } },
+            { "u_has_var": "sofia_mission_4_end", "value": "yes" }
           ]
         },
         "topic": "TALK_MERCHANT_CF_AUX_SITUATION"
@@ -46,7 +42,7 @@
       { "text": "Got anything to trade?", "effect": "start_trade", "topic": "TALK_MERCHANT_CF_AUX" },
       {
         "text": "I'd like to ask about turning in a bounty.",
-        "condition": { "u_has_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" },
+        "condition": { "u_has_var": "cf_aux_bounty_learned", "value": "yes" },
         "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK"
       },
       {
@@ -54,11 +50,11 @@
         "switch": true,
         "condition": {
           "and": [
-            { "not": { "u_has_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" } },
+            { "not": { "u_has_var": "cf_aux_bounty_learned", "value": "yes" } },
             { "npc_has_any_trait": [ "CF_AUX_MARKER_2", "CF_AUX_MARKER_7" ] }
           ]
         },
-        "effect": { "u_add_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "cf_aux_bounty_learned", "value": "yes" },
         "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_INTRO"
       },
       { "text": "Can I do anything to help?", "switch": true, "default": true, "topic": "TALK_MISSION_LIST" },
@@ -103,14 +99,14 @@
         "text": "Alright…",
         "condition": { "npc_has_trait": "CF_AUX_MARKER_3" },
         "switch": true,
-        "effect": { "u_add_var": "cf_aux_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "cf_aux_opinion_given", "value": "yes" },
         "topic": "TALK_MERCHANT_CF_AUX"
       },
       {
         "text": "Good to hear, I guess.",
         "switch": true,
         "default": true,
-        "effect": { "u_add_var": "cf_aux_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "cf_aux_opinion_given", "value": "yes" },
         "topic": "TALK_MERCHANT_CF_AUX"
       }
     ]
@@ -158,7 +154,7 @@
     "id": "TALK_MERCHANT_CF_AUX_BOUNTY_INTRO",
     "type": "talk_topic",
     "dynamic_line": "Far as steady jobs go, not much.  I got bounties on behalf of the people running this place, however.  Not like shooting people in the face kinda bounties, more monster-hunting and other stuff like that.  Interested?",
-    "speaker_effect": { "effect": { "u_add_var": "cf_aux_bounty_learned", "type": "flag", "context": "knowledge", "value": "yes" } },
+    "speaker_effect": { "effect": { "u_add_var": "cf_aux_bounty_learned", "value": "yes" } },
     "responses": [
       { "text": "What sort of bounties are on offer?", "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK" },
       { "text": "Perhaps another time.", "topic": "TALK_MERCHANT_CF_AUX" }

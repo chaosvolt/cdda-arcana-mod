@@ -66,7 +66,7 @@
         "topic": "TALK_CF_REP_DEACON_MISSION",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_deacon_message", "type": "mission", "context": "rural_church", "value": "yes" } },
+            { "not": { "u_has_var": "sofia_deacon_message", "value": "yes" } },
             { "not": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL", "PROF_SANGUINE" ] } },
             { "u_has_mission": "MISSION_CF_DEACON_1" }
           ]
@@ -78,15 +78,8 @@
         "condition": {
           "and": [
             { "u_has_item": "arcana_dream_journal" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "u_has_var": "johnathan_prelude_penultimate",
-              "type": "mission",
-              "context": "rural_church",
-              "value": "yes"
-            }
+            { "not": { "npc_has_var": "johnathan_prelude_data_5", "value": "yes" } },
+            { "u_has_var": "johnathan_prelude_penultimate", "value": "yes" }
           ]
         },
         "effect": [ { "u_consume_item": "arcana_dream_journal" } ]
@@ -97,15 +90,8 @@
         "condition": {
           "and": [
             { "u_has_item": "arcana_strange_crystal" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "u_has_var": "johnathan_prelude_penultimate",
-              "type": "mission",
-              "context": "rural_church",
-              "value": "yes"
-            }
+            { "not": { "npc_has_var": "johnathan_prelude_data_5", "value": "yes" } },
+            { "u_has_var": "johnathan_prelude_penultimate", "value": "yes" }
           ]
         },
         "effect": [ { "u_consume_item": "arcana_strange_crystal" } ]
@@ -121,13 +107,9 @@
         "condition": {
           "and": [
             { "not": { "u_has_mission": "MISSION_CF_GM_4_PRELUDE" } },
-            {
-              "not": { "u_has_var": "johnathan_prelude_penultimate", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_ended", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+            { "not": { "u_has_var": "johnathan_prelude_penultimate", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_ended", "value": "yes" } },
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" }
           ]
         }
       },
@@ -146,8 +128,8 @@
         "topic": "TALK_CF_REP_MISSION_4_OPINION",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" } },
-            { "u_has_var": "sofia_mission_4_end", "type": "mission", "context": "rural_church", "value": "yes" }
+            { "not": { "u_has_var": "sofia_opinion_given", "value": "yes" } },
+            { "u_has_var": "sofia_mission_4_end", "value": "yes" }
           ]
         }
       },
@@ -253,14 +235,7 @@
       {
         "text": "Can you teach me any spells?",
         "topic": "TALK_CF_REP_SPELL_MENU",
-        "condition": {
-          "and": [
-            { "u_has_effect": "cf_mission_1" },
-            {
-              "not": { "u_has_var": "sofia_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" }
-            }
-          ]
-        }
+        "condition": { "and": [ { "u_has_effect": "cf_mission_1" }, { "not": { "u_has_var": "sofia_all_spells_known", "value": "yes" } } ] }
       },
       {
         "text": "Do you have anything to trade?",
@@ -284,13 +259,7 @@
     "type": "talk_topic",
     "id": "TALK_CF_REP_DEACON_MISSION",
     "dynamic_line": "I see.  I'm glad that he's doing alright over there.  If you get the chance to stop by, be sure to tell him we're doing okay.  Should put his mind at ease, as I'm sure he's needed over there.",
-    "responses": [
-      {
-        "text": "Alright.",
-        "topic": "TALK_CF_REP",
-        "effect": { "u_add_var": "sofia_deacon_message", "type": "mission", "context": "rural_church", "value": "yes" }
-      }
-    ]
+    "responses": [ { "text": "Alright.", "topic": "TALK_CF_REP", "effect": { "u_add_var": "sofia_deacon_message", "value": "yes" } } ]
   },
   {
     "type": "talk_topic",
@@ -414,8 +383,6 @@
     "id": "TALK_CF_REP_JOHNATHAN_PRELUDE",
     "dynamic_line": {
       "u_has_var": "sofia_opinion_given",
-      "type": "flag",
-      "context": "knowledge",
       "value": "yes",
       "yes": "Ask the merchant contacts here before you leave, you might be able to get a bit out information out of them first.  Then check with the refugee center.  We've tracked area anomalies like this before, just get more info on where these attacks have taken place and we should be able to figure things out from here.",
       "no": "I'd primarily suggest the refugee center, as they may be able to help provide more information.  What we need is simply confirming specific locations of where attacks have taken place.  We can handle it from there, afterward."
@@ -435,8 +402,8 @@
     "speaker_effect": [
       {
         "effect": [
-          { "u_add_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" },
-          { "npc_add_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+          { "u_add_var": "johnathan_prelude_data_5", "value": "yes" },
+          { "npc_add_var": "johnathan_prelude_data_5", "value": "yes" }
         ]
       }
     ],
@@ -458,8 +425,8 @@
     "speaker_effect": [
       {
         "effect": [
-          { "u_add_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" },
-          { "npc_add_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
+          { "u_add_var": "johnathan_prelude_data_5", "value": "yes" },
+          { "npc_add_var": "johnathan_prelude_data_5", "value": "yes" }
         ]
       }
     ],
@@ -706,7 +673,7 @@
     "responses": [
       {
         "text": "That's good to hear.",
-        "effect": { "u_add_var": "sofia_opinion_given", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "sofia_opinion_given", "value": "yes" },
         "topic": "TALK_CF_REP"
       }
     ]
@@ -966,7 +933,7 @@
         "condition": {
           "and": [ { "u_has_trait": "SPELL_FLAMEARMOR" }, { "u_has_trait": "SPELL_POISONARMOR" }, { "u_has_trait": "SPELL_CLERIC" } ]
         },
-        "effect": { "u_add_var": "sofia_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "sofia_all_spells_known", "value": "yes" },
         "topic": "TALK_CF_REP"
       },
       { "text": "Maybe another time.", "switch": true, "default": true, "topic": "TALK_CF_REP" }

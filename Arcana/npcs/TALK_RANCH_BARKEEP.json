@@ -7,13 +7,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            }
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
           ]
         },
         "topic": "TALK_RANCH_BARKEEP_GM_PRELUDE"

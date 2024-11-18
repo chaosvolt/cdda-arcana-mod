@@ -12,13 +12,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            }
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
           ]
         },
         "topic": "TALK_SHRIKE_MERCHANT_GM_PRELUDE"
@@ -34,7 +30,7 @@
       {
         "text": "Do you have anything to trade?",
         "effect": "start_trade",
-        "condition": { "u_has_var": "cf_horace_traded", "type": "flag", "context": "knowledge", "value": "yes" },
+        "condition": { "u_has_var": "cf_horace_traded", "value": "yes" },
         "topic": "TALK_SHRIKE_MERCHANT"
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
@@ -72,7 +68,7 @@
     "id": "TALK_SHRIKE_MERCHANT_GM_3_SECT",
     "type": "talk_topic",
     "dynamic_line": "Good, that narrows it down.  They're a division of the Order responsible for this nonsense about what they called the Dragonnblood Sacrament.  Dragged half the other magi into that tangle and cost us our best-defended safehouse.  Not many sects dabbling in mutation survived this long.  Try the phrase, \"The moonlit sky anoints the worthy, who seek The Path home.\"  It's an old pass phrase, but to my knowledge it was still in use up until they lost the hideout. That might give them pause long enough to catch them off guard.",
-    "speaker_effect": { "effect": { "u_add_var": "horace_password_known", "type": "flag", "context": "shrike", "value": "yes" } },
+    "speaker_effect": { "effect": { "u_add_var": "horace_password_known", "value": "yes" } },
     "responses": [
       { "text": "Thanks.  One more thing before I go.", "topic": "TALK_SHRIKE_MERCHANT" },
       { "text": "Worth a shot  I'll be on my way.", "topic": "TALK_DONE" }
@@ -103,7 +99,7 @@
       { "text": "What kind of trouble?", "topic": "TALK_SHRIKE_MERCHANT_TROUBLE" },
       {
         "text": "Can I do anything for you?",
-        "condition": { "not": { "u_has_var": "cf_horace_mission", "type": "flag", "context": "knowledge", "value": "yes" } },
+        "condition": { "not": { "u_has_var": "cf_horace_mission", "value": "yes" } },
         "topic": "TALK_SHRIKE_MERCHANT_HELP"
       },
       { "text": "I see.", "topic": "TALK_SHRIKE_MERCHANT" }
@@ -116,7 +112,7 @@
     "responses": [
       {
         "text": "I could help with that, if you'd like.",
-        "condition": { "not": { "u_has_var": "cf_horace_mission", "type": "flag", "context": "knowledge", "value": "yes" } },
+        "condition": { "not": { "u_has_var": "cf_horace_mission", "value": "yes" } },
         "topic": "TALK_SHRIKE_MERCHANT_HELP"
       },
       { "text": "Oh, okay.", "topic": "TALK_SHRIKE_MERCHANT" }
@@ -130,7 +126,7 @@
       "yes": "Hah.  That is your job, isn't it?  Hunting the wicked and otherworldly.  No offense, but I prefer to deal with such matters myself.  It's a rare chance to put my talents to good use, without harming the innocent.  Feels like it brings purpose to what we called The Path.",
       "no": "For now, I'd rather have this task all to myself.  There are few joys in this new world to be had, and these hunts of mine are a rare chance to cut loose in a way that lets me do some good for once."
     },
-    "speaker_effect": { "effect": { "u_add_var": "cf_horace_mission", "type": "flag", "context": "knowledge", "value": "yes" } },
+    "speaker_effect": { "effect": { "u_add_var": "cf_horace_mission", "value": "yes" } },
     "responses": [ { "text": "…", "topic": "TALK_SHRIKE_MERCHANT" } ]
   },
   {
@@ -153,8 +149,8 @@
     "type": "talk_topic",
     "dynamic_line": "Hunting, mainly.  Monsters instead of people now, usually.  More productive these days.  I also have a few items I could trade around if you want.",
     "speaker_effect": {
-      "condition": { "not": { "u_has_var": "cf_horace_traded", "type": "flag", "context": "knowledge", "value": "yes" } },
-      "effect": { "u_add_var": "cf_horace_traded", "type": "flag", "context": "knowledge", "value": "yes" }
+      "condition": { "not": { "u_has_var": "cf_horace_traded", "value": "yes" } },
+      "effect": { "u_add_var": "cf_horace_traded", "value": "yes" }
     },
     "responses": [
       { "text": "Sure, let's see what you have.", "effect": "start_trade", "topic": "TALK_SHRIKE_MERCHANT" },

@@ -41,7 +41,7 @@
         "u_message": "Reality re-asserts itself as the storm fades.  The worst has passed, as is the will of He From Beyond The Veil…",
         "type": "good"
       },
-      { "u_add_var": "u_witnessed_portal_storm", "type": "global", "context": "portal_storms", "value": "yes" }
+      { "u_add_var": "global_portal_storms_u_witnessed_portal_storm", "value": "yes" }
     ]
   }
 ]

@@ -14,7 +14,7 @@
     "responses": [
       {
         "text": "\"The moonlit sky anoints the worthy, who seek The Path home.\"",
-        "condition": { "u_has_var": "horace_password_known", "type": "flag", "context": "shrike", "value": "yes" },
+        "condition": { "u_has_var": "horace_password_known", "value": "yes" },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_PASSWORD"
       },
       {
@@ -82,10 +82,7 @@
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_LANIUS"
       },
-      {
-        "text": "One of Elena's shrikes said to tell you that.",
-        "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_ELENA"
-      },
+      { "text": "One of Elena's shrikes said to tell you that.", "topic": "TALK_BLOOD_MAGE_SHRIKE_ROGUE_ELENA" },
       { "text": "[ATTACK] …", "topic": "TALK_DONE", "effect": "insult_combat" }
     ]
   },

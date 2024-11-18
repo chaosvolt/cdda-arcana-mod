@@ -12,13 +12,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            }
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
           ]
         },
         "topic": "TALK_CF_AUX_MAGE_GM_PRELUDE"
@@ -29,12 +25,12 @@
       {
         "text": "Can you teach me any spells?",
         "topic": "TALK_CF_AUX_MAGE_SPELL_MENU",
-        "condition": { "not": { "u_has_var": "celine_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" } }
+        "condition": { "not": { "u_has_var": "celine_all_spells_known", "value": "yes" } }
       },
       {
         "text": "Do you have anything to trade?",
         "effect": "start_trade",
-        "condition": { "u_has_var": "cf_celine_traded", "type": "flag", "context": "knowledge", "value": "yes" },
+        "condition": { "u_has_var": "cf_celine_traded", "value": "yes" },
         "topic": "TALK_CF_AUX_MAGE"
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
@@ -48,13 +44,8 @@
       {
         "text": "We'll see, then.",
         "effect": [
-          { "npc_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-          {
-            "u_add_var": "johnathan_prelude_hermit_idea",
-            "type": "mission",
-            "context": "rural_church",
-            "value": "yes"
-          }
+          { "npc_add_var": "johnathan_prelude_mid", "value": "yes" },
+          { "u_add_var": "johnathan_prelude_hermit_idea", "value": "yes" }
         ],
         "topic": "TALK_CF_AUX_MAGE"
       }
@@ -81,7 +72,7 @@
       {
         "text": "Can you teach me any spells?",
         "topic": "TALK_CF_AUX_MAGE_SPELL_MENU",
-        "condition": { "not": { "u_has_var": "celine_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" } }
+        "condition": { "not": { "u_has_var": "celine_all_spells_known", "value": "yes" } }
       },
       { "text": "I see.", "topic": "TALK_CF_AUX_MAGE" }
     ]
@@ -156,8 +147,8 @@
     "type": "talk_topic",
     "dynamic_line": "Aside from study and any other work I can get, I also have supplies I trade around, helps supplement my efforts to gather new materials and books to ready.  Anything you'd like?",
     "speaker_effect": {
-      "condition": { "not": { "u_has_var": "cf_celine_traded", "type": "flag", "context": "knowledge", "value": "yes" } },
-      "effect": { "u_add_var": "cf_celine_traded", "type": "flag", "context": "knowledge", "value": "yes" }
+      "condition": { "not": { "u_has_var": "cf_celine_traded", "value": "yes" } },
+      "effect": { "u_add_var": "cf_celine_traded", "value": "yes" }
     },
     "responses": [
       { "text": "Sure, let's see what you have.", "effect": "start_trade", "topic": "TALK_CF_AUX_MAGE" },
@@ -188,7 +179,7 @@
         "text": "I already know all of those, thanks anyway.",
         "switch": true,
         "condition": { "and": [ { "u_has_trait": "SPELL_AGILE" }, { "u_has_trait": "SPELL_FIRE" }, { "u_has_trait": "SPELL_DAMPENING" } ] },
-        "effect": { "u_add_var": "celine_all_spells_known", "type": "flag", "context": "knowledge", "value": "yes" },
+        "effect": { "u_add_var": "celine_all_spells_known", "value": "yes" },
         "topic": "TALK_CF_AUX_MAGE"
       },
       { "text": "Maybe another time.", "switch": true, "default": true, "topic": "TALK_CF_AUX_MAGE" }

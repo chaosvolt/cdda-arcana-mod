@@ -8,8 +8,8 @@
         "topic": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_1",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" } },
-            { "u_has_var": "necro_comms_permission", "type": "flag", "context": "rural_church", "value": "yes" },
+            { "not": { "u_has_var": "nicholas_mission_2_mid", "value": "yes" } },
+            { "u_has_var": "necro_comms_permission", "value": "yes" },
             { "u_has_mission": "MISSION_CF_PURIFIER_1_2" },
             { "u_is_wearing": "badge_marshal" }
           ]
@@ -63,10 +63,7 @@
     "id": "TALK_OLD_GUARD_NEC_COMMO_NICHOLAS_ACCEPT",
     "dynamic_line": "Alright, here you go.  Be careful with this, though.  This is a lot of sensitive information, not to mention dangerous.  These Priority Sites will only get more hazardous as time goes on and more things break down.  I'll trust you to use your discretion.",
     "speaker_effect": {
-      "effect": [
-        { "u_add_var": "nicholas_mission_2_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-        { "u_spawn_item": "arcane_purifier_intel_2" }
-      ]
+      "effect": [ { "u_add_var": "nicholas_mission_2_mid", "value": "yes" }, { "u_spawn_item": "arcane_purifier_intel_2" } ]
     },
     "responses": [
       { "text": "Thanks!  Before I go…", "topic": "TALK_OLD_GUARD_NEC_COMMO" },

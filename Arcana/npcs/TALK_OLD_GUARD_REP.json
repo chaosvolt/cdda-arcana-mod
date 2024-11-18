@@ -7,10 +7,8 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } },
             { "u_has_trait": "PROF_FED" }
           ]
         },
@@ -20,13 +18,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } },
             { "not": { "u_has_trait": "PROF_FED" } }
           ]
         },
@@ -35,10 +29,7 @@
       {
         "text": "[MISSION] Would the Old Guard be willing to establish a presence in another community?",
         "condition": {
-          "and": [
-            { "not": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" } },
-            { "u_has_mission": "MISSION_CF_REP_4" }
-          ]
+          "and": [ { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
         },
         "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4"
       }
@@ -54,8 +45,6 @@
     "type": "talk_topic",
     "dynamic_line": {
       "npc_has_var": "old_guard_presence",
-      "type": "knowledge",
-      "context": "rural_church",
       "value": "yes",
       "yes": "We've received a lot of chatter indeed, Marshal.  I'm aware of a more localized series of bandit raids with unusual patterns, and evidence that you spearheaded an assault on their hideout, on behalf of the group you've vouched for previously.  And now this, dispersed over a wider area and inconsistent with any human or undead attackers.  I will relay all the information we've gathered to your allies, and trust you to care care of this.  Make haste, Marshal.",
       "no": "We've received a lot of chatter about recent attacks, Marshal.  I'm aware of a more localized series of bandit raids with unusual patterns, and evidence that you spearheaded an assault on their hideout, on behalf of another group of survivors.  And now this, dispersed over a wider area and inconsistent with any human or undead attackers.  I will relay all the information we've gathered to the people you're working with, and trust you to care care of this.  Make haste, Marshal."
@@ -64,8 +53,8 @@
       {
         "text": "Okay.  I guess I'll report back to them, then.",
         "effect": [
-          { "u_add_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" },
-          { "npc_add_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
+          { "u_add_var": "johnathan_prelude_data_5", "value": "yes" },
+          { "npc_add_var": "johnathan_prelude_mid", "value": "yes" }
         ],
         "topic": "TALK_DONE"
       }
@@ -146,9 +135,9 @@
       {
         "text": "Thank you.  There's something else I wanted to talk about, before I leave.",
         "effect": [
-          { "u_add_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
-          { "u_add_var": "old_guard_presence", "type": "knowledge", "context": "rural_church", "value": "yes" },
-          { "npc_add_var": "old_guard_presence", "type": "knowledge", "context": "rural_church", "value": "yes" },
+          { "u_add_var": "sofia_allies_secured", "value": "yes" },
+          { "u_add_var": "old_guard_presence", "value": "yes" },
+          { "npc_add_var": "old_guard_presence", "value": "yes" },
           {
             "mapgen_update": "arcana_cf_4_old_guard_1",
             "om_terrain": "cf_church_1",
@@ -183,9 +172,9 @@
       {
         "text": "Thank you.  I should go check on them, goodbye for now.",
         "effect": [
-          { "u_add_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
-          { "u_add_var": "old_guard_presence", "type": "knowledge", "context": "rural_church", "value": "yes" },
-          { "npc_add_var": "old_guard_presence", "type": "knowledge", "context": "rural_church", "value": "yes" },
+          { "u_add_var": "sofia_allies_secured", "value": "yes" },
+          { "u_add_var": "old_guard_presence", "value": "yes" },
+          { "npc_add_var": "old_guard_presence", "value": "yes" },
           {
             "mapgen_update": "arcana_cf_4_old_guard_1",
             "om_terrain": "cf_church_1",

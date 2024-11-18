@@ -8,13 +8,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" },
-            {
-              "not": { "npc_has_var": "johnathan_prelude_mid", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
-            {
-              "not": { "u_has_var": "johnathan_prelude_data_5", "type": "mission", "context": "rural_church", "value": "yes" }
-            }
+            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
+            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
           ]
         },
         "topic": "TALK_CF_DEACON_GM_PRELUDE"
@@ -35,10 +31,8 @@
         "topic": "TALK_CF_DEACON_MISSION_CF_4",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" } },
-            {
-              "not": { "npc_has_var": "sofia_refugee_convinced", "type": "mission", "context": "rural_church", "value": "yes" }
-            },
+            { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } },
+            { "not": { "npc_has_var": "sofia_refugee_convinced", "value": "yes" } },
             { "u_has_mission": "MISSION_CF_REP_4" }
           ]
         }
@@ -109,7 +103,7 @@
       {
         "text": "Thank you.  I've already convinced a couple others to help, I should go check with Sofia for now.",
         "effect": [
-          { "u_add_var": "sofia_allies_secured", "type": "mission", "context": "rural_church", "value": "yes" },
+          { "u_add_var": "sofia_allies_secured", "value": "yes" },
           {
             "mapgen_update": "arcana_cf_4_wasteland_scavengers_1",
             "om_terrain": "cf_church_1",
@@ -139,25 +133,25 @@
             "search_range": 256
           }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_2", "type": "mission", "context": "flag", "value": "yes" },
+        "condition": { "u_has_var": "sofia_ally_seeking_2", "value": "yes" },
         "switch": true,
         "topic": "TALK_DONE"
       },
       {
         "text": "Thanks, I'll look around a bit more and see if anyone else can help with this.",
         "effect": [
-          { "u_add_var": "sofia_ally_seeking_2", "type": "mission", "context": "flag", "value": "yes" },
-          { "npc_add_var": "sofia_refugee_convinced", "type": "mission", "context": "rural_church", "value": "yes" }
+          { "u_add_var": "sofia_ally_seeking_2", "value": "yes" },
+          { "npc_add_var": "sofia_refugee_convinced", "value": "yes" }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_1", "type": "mission", "context": "flag", "value": "yes" },
+        "condition": { "u_has_var": "sofia_ally_seeking_1", "value": "yes" },
         "switch": true,
         "topic": "TALK_DONE"
       },
       {
         "text": "I'll keep asking around, then.  Thanks.",
         "effect": [
-          { "u_add_var": "sofia_ally_seeking_1", "type": "mission", "context": "flag", "value": "yes" },
-          { "npc_add_var": "sofia_refugee_convinced", "type": "mission", "context": "rural_church", "value": "yes" }
+          { "u_add_var": "sofia_ally_seeking_1", "value": "yes" },
+          { "npc_add_var": "sofia_refugee_convinced", "value": "yes" }
         ],
         "switch": true,
         "default": true,

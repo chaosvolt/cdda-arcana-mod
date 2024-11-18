@@ -22,7 +22,7 @@
                 "THRESH_DRAGONBLOOD"
               ]
             },
-            { "not": { "u_has_var": "gave_monsterpart", "type": "dialogue", "context": "beyond", "value": "yes" } }
+            { "not": { "u_has_var": "gave_monsterpart", "value": "yes" } }
           ]
         }
       }
@@ -182,10 +182,7 @@
     "responses": [
       {
         "text": "Go ahead.  It's yours.",
-        "effect": [
-          { "u_consume_item": "graboid_fang" },
-          { "u_add_var": "gave_monsterpart", "type": "dialogue", "context": "beyond", "value": "yes" }
-        ],
+        "effect": [ { "u_consume_item": "graboid_fang" }, { "u_add_var": "gave_monsterpart", "value": "yes" } ],
         "topic": "TALK_BONE_SEER_POWER_STUDY"
       },
       { "text": "I can't part with it just yet.  I'm sorry.", "topic": "TALK_BONE_SEER_POWER_REFUSAL" }
@@ -213,10 +210,7 @@
     "responses": [
       {
         "text": "Go ahead.  It's yours.",
-        "effect": [
-          { "u_consume_item": "monster_fang" },
-          { "u_add_var": "gave_monsterpart", "type": "dialogue", "context": "beyond", "value": "yes" }
-        ],
+        "effect": [ { "u_consume_item": "monster_fang" }, { "u_add_var": "gave_monsterpart", "value": "yes" } ],
         "topic": "TALK_BONE_SEER_POWER_STUDY"
       },
       { "text": "I can't part with it just yet.  I'm sorry.", "topic": "TALK_BONE_SEER_POWER_REFUSAL" }
@@ -229,10 +223,7 @@
     "responses": [
       {
         "text": "Go ahead.  It's yours.",
-        "effect": [
-          { "u_consume_item": "bone_twisted" },
-          { "u_add_var": "gave_monsterpart", "type": "dialogue", "context": "beyond", "value": "yes" }
-        ],
+        "effect": [ { "u_consume_item": "bone_twisted" }, { "u_add_var": "gave_monsterpart", "value": "yes" } ],
         "topic": "TALK_BONE_SEER_POWER_STUDY"
       },
       { "text": "I can't part with it just yet.  I'm sorry.", "topic": "TALK_BONE_SEER_POWER_REFUSAL" }
@@ -245,10 +236,7 @@
     "responses": [
       {
         "text": "Go ahead.  It's yours.",
-        "effect": [
-          { "u_consume_item": "gracken_knuckles" },
-          { "u_add_var": "gave_monsterpart", "type": "dialogue", "context": "beyond", "value": "yes" }
-        ],
+        "effect": [ { "u_consume_item": "gracken_knuckles" }, { "u_add_var": "gave_monsterpart", "value": "yes" } ],
         "topic": "TALK_BONE_SEER_POWER_STUDY"
       },
       { "text": "I can't part with it just yet.  I'm sorry.", "topic": "TALK_BONE_SEER_POWER_REFUSAL" }
@@ -383,8 +371,6 @@
     "id": "TALK_BONE_SEER_CYCLE_PARAGON_MARKED",
     "dynamic_line": {
       "u_has_var": "gave_monsterpart",
-      "type": "dialogue",
-      "context": "beyond",
       "value": "yes",
       "no": "One day, in this flesh or in another cycle, we shall see.  Now, there is work I must tend to.",
       "yes": "You have shown me fascinating verses within those peculiar bones, so we shall see.  I will listen to the Song that your present has offered me, and we'll see where it leads.  If your patron, whoever he may be, truly has the means to break the cycle, then perhaps this is his way of bringing this cycle to greater heights, to bring us closer to amassing the Song…"
@@ -422,9 +408,7 @@
         "condition": {
           "and": [
             { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
-            {
-              "not": { "u_has_var": "blood_magic_query", "type": "dialogue", "context": "blood_magic", "value": "yes" }
-            }
+            { "not": { "u_has_var": "blood_magic_query", "value": "yes" } }
           ]
         },
         "topic": "TALK_MISSION_SEER_BLOOD_MAGIC"
@@ -440,7 +424,7 @@
       {
         "text": "If you insist, we'll see.  Explain again what you're asking of me.",
         "topic": "TALK_MISSION_OFFER_SEER",
-        "effect": { "u_add_var": "blood_magic_query", "type": "dialogue", "context": "blood_magic", "value": "yes" }
+        "effect": { "u_add_var": "blood_magic_query", "value": "yes" }
       },
       { "text": "I need time to consider this.", "topic": "TALK_DONE" },
       {
