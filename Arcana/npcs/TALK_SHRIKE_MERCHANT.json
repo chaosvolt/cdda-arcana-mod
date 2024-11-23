@@ -30,7 +30,7 @@
       {
         "text": "Do you have anything to trade?",
         "effect": "start_trade",
-        "condition": { "u_has_var": "cf_horace_traded", "value": "yes" },
+        "compare_string": [ "yes", { "u_val": "cf_horace_traded" } ],
         "topic": "TALK_SHRIKE_MERCHANT"
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }

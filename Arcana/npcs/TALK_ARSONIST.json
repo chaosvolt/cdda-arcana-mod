@@ -52,7 +52,7 @@
         "text": "It's a group operating out of a rural church along the roadside, I was asked to see if I could find another trading partner for them.",
         "switch": true,
         "topic": "TALK_ARSONIST_CF_REP_MISSION_4_DESCRIBE",
-        "condition": { "u_has_var": "knowledge_flag_tacoma_started", "value": "yes" }
+        "compare_string": [ "yes", { "u_val": "knowledge_flag_tacoma_started" } ]
       },
       {
         "text": "There's a decent-sized holdout I was asked to help find another trading partner for.",
@@ -109,7 +109,7 @@
             "search_range": 256
           }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_2", "value": "yes" },
+        "compare_string": [ "yes", { "u_val": "sofia_ally_seeking_2" } ],
         "switch": true,
         "topic": "TALK_DONE"
       },
@@ -119,7 +119,7 @@
           { "u_add_var": "sofia_ally_seeking_2", "value": "yes" },
           { "npc_add_var": "sofia_refugee_convinced", "value": "yes" }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_1", "value": "yes" },
+        "compare_string": [ "yes", { "u_val": "sofia_ally_seeking_1" } ],
         "switch": true,
         "topic": "TALK_DONE"
       },

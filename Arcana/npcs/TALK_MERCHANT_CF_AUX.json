@@ -42,7 +42,7 @@
       { "text": "Got anything to trade?", "effect": "start_trade", "topic": "TALK_MERCHANT_CF_AUX" },
       {
         "text": "I'd like to ask about turning in a bounty.",
-        "condition": { "u_has_var": "cf_aux_bounty_learned", "value": "yes" },
+        "compare_string": [ "yes", { "u_val": "cf_aux_bounty_learned" } ],
         "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK"
       },
       {

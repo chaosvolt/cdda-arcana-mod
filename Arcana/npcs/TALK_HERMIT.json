@@ -66,7 +66,7 @@
       {
         "text": "I would like for you to go ahead and attempt to send allies to the rural church.",
         "topic": "TALK_HERMIT_UNDEFER",
-        "condition": { "u_has_var": "spawned_tablet_fallback", "value": "yes" },
+        "compare_string": [ "yes", { "u_val": "spawned_tablet_fallback" } ],
         "effect": [
           { "u_lose_var": "spawned_tablet_fallback" },
           {

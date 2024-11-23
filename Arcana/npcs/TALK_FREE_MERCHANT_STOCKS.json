@@ -24,13 +24,13 @@
     "responses": [
       {
         "text": "It's a small community building up a rural church, that's starting to become self-sufficient.",
-        "condition": { "u_has_var": "knowledge_flag_tacoma_started", "value": "yes" },
+        "compare_string": [ "yes", { "u_val": "knowledge_flag_tacoma_started" } ],
         "topic": "TALK_FREE_MERCHANT_STOCKS_CF_REP_MISSION_4_EXPLAIN"
       },
       {
         "text": "I'll figure something else out.  Thank you, though.",
         "switch": true,
-        "condition": { "u_has_var": "knowledge_flag_tacoma_started", "value": "yes" },
+        "compare_string": [ "yes", { "u_val": "knowledge_flag_tacoma_started" } ],
         "topic": "TALK_DONE"
       },
       { "text": "Oh, okay.", "switch": true, "default": true, "topic": "TALK_DONE" }

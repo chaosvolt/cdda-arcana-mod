@@ -100,13 +100,13 @@
       },
       {
         "text": "Alright, I think that's everything we need to track this anomaly down.",
-        "condition": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" },
+        "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ],
         "switch": true,
         "topic": "TALK_CF_GM_PRELUDE_4_READY"
       },
       {
         "text": "Any advice for this mission?",
-        "condition": { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
+        "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ],
         "switch": true,
         "topic": "TALK_CF_GM_PRELUDE_4_MID_ADVICE"
       },
