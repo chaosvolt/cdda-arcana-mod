@@ -7,8 +7,8 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
-            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } },
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ] } },
             { "u_has_trait": "PROF_FED" }
           ]
         },
@@ -18,9 +18,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
-            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
-            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } },
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_mid" } ] } },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ] } },
             { "not": { "u_has_trait": "PROF_FED" } }
           ]
         },
@@ -29,7 +29,7 @@
       {
         "text": "[MISSION] Would the Old Guard be willing to establish a presence in another community?",
         "condition": {
-          "and": [ { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
+          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
         },
         "topic": "TALK_OLD_GUARD_REP_CF_MISSION_4"
       }
@@ -44,8 +44,7 @@
     "id": "TALK_OLD_GUARD_REP_GM_PRELUDE_SPECIAL",
     "type": "talk_topic",
     "dynamic_line": {
-      "npc_has_var": "old_guard_presence",
-      "value": "yes",
+      "compare_string": [ "yes", { "npc_val": "old_guard_presence" } ],
       "yes": "We've received a lot of chatter indeed, Marshal.  I'm aware of a more localized series of bandit raids with unusual patterns, and evidence that you spearheaded an assault on their hideout, on behalf of the group you've vouched for previously.  And now this, dispersed over a wider area and inconsistent with any human or undead attackers.  I will relay all the information we've gathered to your allies, and trust you to care care of this.  Make haste, Marshal.",
       "no": "We've received a lot of chatter about recent attacks, Marshal.  I'm aware of a more localized series of bandit raids with unusual patterns, and evidence that you spearheaded an assault on their hideout, on behalf of another group of survivors.  And now this, dispersed over a wider area and inconsistent with any human or undead attackers.  I will relay all the information we've gathered to the people you're working with, and trust you to care care of this.  Make haste, Marshal."
     },

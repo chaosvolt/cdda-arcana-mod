@@ -6,7 +6,7 @@
     "responses": [
       {
         "text": "\"The moonlit sky anoints the worthy, who seek The Path home.\"",
-        "condition": { "u_has_var": "horace_password_known", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "horace_password_known" } ] },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_PASSWORD"
       },
       {

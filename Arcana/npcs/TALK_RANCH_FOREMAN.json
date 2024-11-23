@@ -7,16 +7,16 @@
         "text": "[MISSION] I've been asked to find information on shipments between laboratories that may have been handling anomalies.  Can you help me with that?",
         "topic": "TALK_RANCH_FOREMAN_NICHOLAS_1",
         "condition": {
-          "and": [ { "not": { "u_has_var": "nicholas_mission_2_mid", "value": "yes" } }, { "u_has_mission": "MISSION_CF_PURIFIER_1_2" } ]
+          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } }, { "u_has_mission": "MISSION_CF_PURIFIER_1_2" } ]
         }
       },
       {
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
-            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
-            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_mid" } ] } },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ] } }
           ]
         },
         "topic": "TALK_RANCH_FOREMAN_GM_PRELUDE"
@@ -25,7 +25,7 @@
         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know anyone who could help?",
         "topic": "TALK_RANCH_CROP_OVERSEER_CF_REP_MISSION_4",
         "condition": {
-          "and": [ { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
+          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
         }
       }
     ]

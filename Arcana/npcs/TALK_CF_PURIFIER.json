@@ -50,7 +50,7 @@
           "and": [
             { "u_has_effect": "cf_mission_1" },
             { "npc_has_trait": "FIX_CF_GM" },
-            { "not": { "u_has_var": "nicholas_all_spells_known", "value": "yes" } }
+            { "not": { "compare_string": [ "yes", { "u_val": "nicholas_all_spells_known" } ] } }
           ]
         }
       },
@@ -64,54 +64,54 @@
         "text": "[MISSION] The people who helped me find that information were hoping for us to help them in return.",
         "condition": {
           "and": [
-            { "npc_has_var": "nicholas_mission_2_end", "value": "yes" },
+            { "compare_string": [ "yes", { "npc_val": "nicholas_mission_2_end" } ] },
             {
               "or": [ { "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_1" }, { "u_has_mission": "MISSION_CF_PURIFIER_1_INTERLUDE_2" } ]
             },
-            { "not": { "u_has_var": "nicholas_info_sent", "value": "yes" } }
+            { "not": { "compare_string": [ "yes", { "u_val": "nicholas_info_sent" } ] } }
           ]
         },
         "topic": "TALK_CF_PURIFIER_INTERLUDE_MISSION"
       },
       {
         "text": "How's your research going?",
-        "condition": { "npc_has_var": "nicholas_final_completed", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "npc_val": "nicholas_final_completed" } ] },
         "switch": true,
         "topic": "TALK_CF_PURIFIER_MISSION_FINAL"
       },
       {
         "text": "So now what?",
-        "condition": { "npc_has_var": "nicholas_mission_3_end", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "npc_val": "nicholas_mission_3_end" } ] },
         "switch": true,
         "topic": "TALK_CF_PURIFIER_MISSION_END_3"
       },
       {
         "text": "What's next?",
-        "condition": { "npc_has_var": "nicholas_mission_3_ready", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "npc_val": "nicholas_mission_3_ready" } ] },
         "switch": true,
         "topic": "TALK_MISSION_LIST"
       },
       {
         "text": "So, you wanted to talk about what we found?",
-        "condition": { "npc_has_var": "nicholas_mission_2_end", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "npc_val": "nicholas_mission_2_end" } ] },
         "switch": true,
         "topic": "TALK_CF_PURIFIER_MISSION_END_2"
       },
       {
         "text": "I'm ready, what do you need?",
-        "condition": { "npc_has_var": "nicholas_mission_2_ready", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "npc_val": "nicholas_mission_2_ready" } ] },
         "switch": true,
         "topic": "TALK_MISSION_LIST"
       },
       {
         "text": "So, what's next?",
-        "condition": { "npc_has_var": "nicholas_mission_1_end", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "npc_val": "nicholas_mission_1_end" } ] },
         "switch": true,
         "topic": "TALK_CF_PURIFIER_MISSION_END_1"
       },
       {
         "text": "So, what's next?",
-        "condition": { "npc_has_var": "nicholas_mission_1_end", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "npc_val": "nicholas_mission_1_end" } ] },
         "switch": true,
         "topic": "TALK_MISSION_LIST"
       },

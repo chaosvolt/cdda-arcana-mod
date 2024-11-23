@@ -20,9 +20,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
-            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
-            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_mid" } ] } },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ] } }
           ]
         },
         "topic": "TALK_MERCHANT_CF_AUX_GM_PRELUDE"
@@ -31,8 +31,8 @@
         "text": "So, how are you getting along with the others here?",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "cf_aux_opinion_given", "value": "yes" } },
-            { "u_has_var": "sofia_mission_4_end", "value": "yes" }
+            { "not": { "compare_string": [ "yes", { "u_val": "cf_aux_opinion_given" } ] } },
+            { "compare_string": [ "yes", { "u_val": "sofia_mission_4_end" } ] }
           ]
         },
         "topic": "TALK_MERCHANT_CF_AUX_SITUATION"
@@ -42,7 +42,7 @@
       { "text": "Got anything to trade?", "effect": "start_trade", "topic": "TALK_MERCHANT_CF_AUX" },
       {
         "text": "I'd like to ask about turning in a bounty.",
-        "condition": { "u_has_var": "cf_aux_bounty_learned", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "cf_aux_bounty_learned" } ] },
         "topic": "TALK_MERCHANT_CF_AUX_BOUNTY_ASK"
       },
       {
@@ -50,7 +50,7 @@
         "switch": true,
         "condition": {
           "and": [
-            { "not": { "u_has_var": "cf_aux_bounty_learned", "value": "yes" } },
+            { "not": { "compare_string": [ "yes", { "u_val": "cf_aux_bounty_learned" } ] } },
             { "npc_has_any_trait": [ "CF_AUX_MARKER_2", "CF_AUX_MARKER_7" ] }
           ]
         },

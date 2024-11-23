@@ -28,7 +28,7 @@
           { "u_add_var": "johnathan_prelude_data_5", "value": "yes" },
           { "npc_add_var": "johnathan_prelude_mid", "value": "yes" }
         ],
-        "condition": { "u_has_var": "johnathan_prelude_data_4", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_4" } ] },
         "switch": true,
         "topic": "TALK_DONE"
       },
@@ -38,7 +38,7 @@
           { "u_add_var": "johnathan_prelude_data_4", "value": "yes" },
           { "npc_add_var": "johnathan_prelude_mid", "value": "yes" }
         ],
-        "condition": { "u_has_var": "johnathan_prelude_data_3", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_3" } ] },
         "switch": true,
         "topic": "TALK_DONE"
       },
@@ -48,7 +48,7 @@
           { "u_add_var": "johnathan_prelude_data_3", "value": "yes" },
           { "npc_add_var": "johnathan_prelude_mid", "value": "yes" }
         ],
-        "condition": { "u_has_var": "johnathan_prelude_data_2", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_2" } ] },
         "switch": true,
         "topic": "TALK_DONE"
       },
@@ -58,7 +58,7 @@
           { "u_add_var": "johnathan_prelude_data_2", "value": "yes" },
           { "npc_add_var": "johnathan_prelude_mid", "value": "yes" }
         ],
-        "condition": { "u_has_var": "johnathan_prelude_data_1", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_1" } ] },
         "switch": true,
         "topic": "TALK_DONE"
       },

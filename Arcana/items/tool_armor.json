@@ -94,7 +94,8 @@
           "mutations": [ "ARCANA_MASK_INSIGHT_EFFECT" ],
           "values": [ { "value": "BONUS_DODGE", "add": 2 } ],
           "ench_effects": [ { "effect": "mask_blind_immunity", "intensity": 1 } ]
-        }
+        },
+        { "id": "THERMAL_VISION_GOOD" }
       ]
     },
     "use_action": {
@@ -129,7 +130,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF" ] }
+    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF" ] }
   },
   {
     "id": "somen_clairvoyance_xl",
@@ -157,7 +158,8 @@
           "mutations": [ "ARCANA_MASK_INSIGHT_EFFECT" ],
           "values": [ { "value": "BONUS_DODGE", "add": 2 } ],
           "ench_effects": [ { "effect": "mask_blind_immunity", "intensity": 1 } ]
-        }
+        },
+        { "id": "THERMAL_VISION_GOOD" }
       ]
     },
     "use_action": {
@@ -191,7 +193,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF" ] }
+    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF" ] }
   },
   {
     "id": "armor_wyrm",

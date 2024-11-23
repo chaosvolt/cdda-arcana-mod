@@ -66,7 +66,7 @@
         "topic": "TALK_CF_REP_DEACON_MISSION",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_deacon_message", "value": "yes" } },
+            { "not": { "compare_string": [ "yes", { "u_val": "sofia_deacon_message" } ] } },
             { "not": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL", "PROF_SANGUINE" ] } },
             { "u_has_mission": "MISSION_CF_DEACON_1" }
           ]
@@ -78,8 +78,8 @@
         "condition": {
           "and": [
             { "u_has_item": "arcana_dream_journal" },
-            { "not": { "npc_has_var": "johnathan_prelude_data_5", "value": "yes" } },
-            { "u_has_var": "johnathan_prelude_penultimate", "value": "yes" }
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_data_5" } ] } },
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_penultimate" } ] }
           ]
         },
         "effect": [ { "u_consume_item": "arcana_dream_journal" } ]
@@ -90,8 +90,8 @@
         "condition": {
           "and": [
             { "u_has_item": "arcana_strange_crystal" },
-            { "not": { "npc_has_var": "johnathan_prelude_data_5", "value": "yes" } },
-            { "u_has_var": "johnathan_prelude_penultimate", "value": "yes" }
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_data_5" } ] } },
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_penultimate" } ] }
           ]
         },
         "effect": [ { "u_consume_item": "arcana_strange_crystal" } ]
@@ -107,9 +107,9 @@
         "condition": {
           "and": [
             { "not": { "u_has_mission": "MISSION_CF_GM_4_PRELUDE" } },
-            { "not": { "u_has_var": "johnathan_prelude_penultimate", "value": "yes" } },
-            { "not": { "u_has_var": "johnathan_prelude_ended", "value": "yes" } },
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" }
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_penultimate" } ] } },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_ended" } ] } },
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] }
           ]
         }
       },
@@ -128,8 +128,8 @@
         "topic": "TALK_CF_REP_MISSION_4_OPINION",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_opinion_given", "value": "yes" } },
-            { "u_has_var": "sofia_mission_4_end", "value": "yes" }
+            { "not": { "compare_string": [ "yes", { "u_val": "sofia_opinion_given" } ] } },
+            { "compare_string": [ "yes", { "u_val": "sofia_mission_4_end" } ] }
           ]
         }
       },
@@ -235,7 +235,7 @@
       {
         "text": "Can you teach me any spells?",
         "topic": "TALK_CF_REP_SPELL_MENU",
-        "condition": { "and": [ { "u_has_effect": "cf_mission_1" }, { "not": { "u_has_var": "sofia_all_spells_known", "value": "yes" } } ] }
+        "condition": { "and": [ { "u_has_effect": "cf_mission_1" }, { "not": { "compare_string": [ "yes", { "u_val": "sofia_all_spells_known" } ] } } ] }
       },
       {
         "text": "Do you have anything to trade?",
@@ -382,8 +382,7 @@
     "type": "talk_topic",
     "id": "TALK_CF_REP_JOHNATHAN_PRELUDE",
     "dynamic_line": {
-      "u_has_var": "sofia_opinion_given",
-      "value": "yes",
+      "compare_string": [ "yes", { "u_val": "sofia_opinion_given" } ],
       "yes": "Ask the merchant contacts here before you leave, you might be able to get a bit out information out of them first.  Then check with the refugee center.  We've tracked area anomalies like this before, just get more info on where these attacks have taken place and we should be able to figure things out from here.",
       "no": "I'd primarily suggest the refugee center, as they may be able to help provide more information.  What we need is simply confirming specific locations of where attacks have taken place.  We can handle it from there, afterward."
     },

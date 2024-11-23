@@ -8,9 +8,9 @@
         "topic": "TALK_ROBOFAC_INTERCOM_NICHOLAS_1",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "nicholas_mission_2_mid", "value": "yes" } },
+            { "not": { "compare_string": [ "yes", { "u_val": "nicholas_mission_2_mid" } ] } },
             { "u_has_mission": "MISSION_CF_PURIFIER_1_2" },
-            { "u_has_var": "completed_robofac_intercom_1", "value": "yes" }
+            { "compare_string": [ "yes", { "u_val": "dialogue_intercom_completed_robofac_intercom_1" } ] }
           ]
         }
       },
@@ -18,10 +18,10 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
-            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
-            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } },
-            { "u_has_var": "completed_robofac_intercom_1", "value": "yes" }
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_mid" } ] } },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ] } },
+            { "compare_string": [ "yes", { "u_val": "dialogue_intercom_completed_robofac_intercom_1" } ] }
           ]
         },
         "topic": "TALK_ROBOFAC_INTERCOM_GM_PRELUDE"
@@ -31,9 +31,9 @@
         "topic": "TALK_ROBOFAC_INTERCOM_MISSION_4",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } },
+            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
             { "u_has_mission": "MISSION_CF_REP_4" },
-            { "u_has_var": "completed_robofac_intercom_1", "value": "yes" }
+            { "compare_string": [ "yes", { "u_val": "dialogue_intercom_completed_robofac_intercom_1" } ] }
           ]
         }
       }

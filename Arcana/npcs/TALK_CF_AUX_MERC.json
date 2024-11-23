@@ -12,9 +12,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
-            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
-            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_mid" } ] } },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ] } }
           ]
         },
         "topic": "TALK_CF_AUX_MERC_GM_PRELUDE"

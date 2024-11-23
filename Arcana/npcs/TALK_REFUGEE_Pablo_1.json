@@ -8,8 +8,8 @@
         "topic": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } },
-            { "not": { "npc_has_var": "sofia_refugee_convinced", "value": "yes" } },
+            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
+            { "not": { "compare_string": [ "yes", { "npc_val": "sofia_refugee_convinced" } ] } },
             { "u_has_mission": "MISSION_CF_REP_4" }
           ]
         }
@@ -20,8 +20,7 @@
     "type": "talk_topic",
     "id": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4",
     "dynamic_line": {
-      "u_has_var": "knowledge_flag_tacoma_started",
-      "value": "yes",
+      "compare_string": [ "yes", { "u_val": "knowledge_flag_tacoma_started" } ],
       "yes": "I'm guessing you don't mean the commune.  As much as I want out of this place, I don't think my wife and I can afford to gamble on a complete unknown, even if they are looking for work.  There are probably others that can handle the dangers out there that might be interested, I guess.",
       "no": "I'm glad we aren't all that's left, but I don't really know much about any other places out there.  Too much risk in it, much as I'd love to get out of this hellhole.  I know there are other people who come along that can handle the risk, though."
     },
@@ -41,8 +40,7 @@
     "type": "talk_topic",
     "id": "TALK_REFUGEE_Pablo_CF_REP_MISSION_4_ADVICE",
     "dynamic_line": {
-      "u_has_var": "knowledge_flag_tacoma_started",
-      "value": "yes",
+      "compare_string": [ "yes", { "u_val": "knowledge_flag_tacoma_started" } ],
       "yes": "If you haven't already checked with the merchant up front, I know some of the regular visitors here might know who to talk to.  There's some military guy, a local scavenger, few others here and there.  The broker over in that room over there also gets a fair bit of unfamiliar visitors.",
       "no": "If you haven't already checked with the merchant up front, I know some of the regular visitors here might know who to talk to.  There's some military guy, a local scavenger, few others here and there.  Other than that, dunno."
     },
@@ -107,7 +105,7 @@
             "search_range": 256
           }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_2", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "sofia_ally_seeking_2" } ] },
         "switch": true,
         "topic": "TALK_DONE"
       },
@@ -117,7 +115,7 @@
           { "u_add_var": "sofia_ally_seeking_2", "value": "yes" },
           { "npc_add_var": "sofia_refugee_convinced", "value": "yes" }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_1", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "sofia_ally_seeking_1" } ] },
         "switch": true,
         "topic": "TALK_DONE"
       },

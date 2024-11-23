@@ -5,12 +5,10 @@
     "dynamic_line": {
       "npc_has_trait": "SHRIKE_MISSION_MARKER",
       "yes": {
-        "npc_has_var": "elena_convinced",
-        "value": "yes",
+        "compare_string": [ "yes", { "npc_val": "elena_convinced" } ],
         "yes": "Welcome.  Try not to cause any trouble.",
         "no": {
-          "npc_has_var": "elena_failed",
-          "value": "yes",
+          "compare_string": [ "yes", { "npc_val": "elena_failed" } ],
           "yes": "We've nothing more to discuss.  Leave.",
           "no": {
             "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
@@ -46,8 +44,8 @@
           "and": [
             { "or": [ { "u_has_mission": "MISSION_HERMIT_RESTORE_SWORD" }, { "u_has_effect": "hermit_quest_backdoor" } ] },
             { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
-            { "npc_has_var": "elena_convinced", "value": "yes" },
-            { "not": { "npc_has_var": "elena_blade_help", "value": "yes" } }
+            { "compare_string": [ "yes", { "npc_val": "elena_convinced" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "elena_blade_help" } ] } }
           ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_BLADE"
@@ -58,8 +56,8 @@
           "and": [
             { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
             { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
-            { "not": { "npc_has_var": "elena_convinced", "value": "yes" } },
-            { "not": { "npc_has_var": "elena_failed", "value": "yes" } }
+            { "not": { "compare_string": [ "yes", { "npc_val": "elena_convinced" } ] } },
+            { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } }
           ]
         },
         "switch": true,
@@ -70,8 +68,8 @@
         "condition": {
           "and": [
             { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
-            { "not": { "npc_has_var": "elena_convinced", "value": "yes" } },
-            { "not": { "npc_has_var": "elena_failed", "value": "yes" } }
+            { "not": { "compare_string": [ "yes", { "npc_val": "elena_convinced" } ] } },
+            { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } }
           ]
         },
         "switch": true,
@@ -80,14 +78,14 @@
       {
         "text": "Who are you?",
         "condition": {
-          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "npc_has_var": "elena_failed", "value": "yes" } } ]
+          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } } ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHO"
       },
       {
         "text": "What can you tell me about this place?",
         "condition": {
-          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "npc_has_var": "elena_failed", "value": "yes" } } ]
+          "and": [ { "npc_has_trait": "SHRIKE_MISSION_MARKER" }, { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } } ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER_WHERE"
       },
@@ -97,8 +95,8 @@
         "condition": {
           "and": [
             { "npc_has_trait": "SHRIKE_MISSION_MARKER" },
-            { "u_has_var": "elena_trade", "value": "yes" },
-            { "not": { "npc_has_var": "elena_failed", "value": "yes" } }
+            { "compare_string": [ "yes", { "u_val": "elena_trade" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "elena_failed" } ] } }
           ]
         },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
@@ -539,7 +537,7 @@
                 { "u_has_perception": 9 }
               ]
             },
-            { "not": { "u_has_var": "elena_mentioned_mantle", "value": "yes" } }
+            { "not": { "compare_string": [ "yes", { "u_val": "elena_mentioned_mantle" } ] } }
           ]
         },
         "opinion": { "value": 4, "anger": -2 },
@@ -588,7 +586,7 @@
       {
         "text": "Perhaps we could trade, then?",
         "effect": [ { "u_add_var": "elena_trade", "value": "yes" }, "start_trade" ],
-        "condition": { "not": { "u_has_var": "elena_trade", "value": "yes" } },
+        "condition": { "not": { "compare_string": [ "yes", { "u_val": "elena_trade" } ] } },
         "opinion": { "value": 2, "anger": -1, "fear": -1 },
         "topic": "TALK_BLOOD_MAGE_SHRIKE_SPLINTER"
       },

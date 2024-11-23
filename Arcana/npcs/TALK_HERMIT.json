@@ -56,9 +56,9 @@
         "condition": {
           "and": [
             { "u_has_effect": "hermit_earned_trust_2" },
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
-            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
-            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_mid" } ] } },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ] } }
           ]
         },
         "topic": "TALK_HERMIT_GM_PRELUDE"
@@ -66,7 +66,7 @@
       {
         "text": "I would like for you to go ahead and attempt to send allies to the rural church.",
         "topic": "TALK_HERMIT_UNDEFER",
-        "condition": { "u_has_var": "spawned_tablet_fallback", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "spawned_tablet_fallback" } ] },
         "effect": [
           { "u_lose_var": "spawned_tablet_fallback" },
           {
@@ -82,7 +82,7 @@
         "text": "[MISSION] I was sent here on behalf of the Cleansing Flame.  I was informed that you know of the Keepers?",
         "topic": "TALK_HERMIT_CF_REP_MISSION",
         "condition": {
-          "and": [ { "not": { "u_has_var": "sofia_mission_5_ready", "value": "yes" } }, { "u_has_mission": "MISSION_CF_REP_5" } ]
+          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_mission_5_ready" } ] } }, { "u_has_mission": "MISSION_CF_REP_5" } ]
         }
       },
       {

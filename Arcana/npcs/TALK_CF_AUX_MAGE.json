@@ -12,9 +12,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
-            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
-            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_mid" } ] } },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ] } }
           ]
         },
         "topic": "TALK_CF_AUX_MAGE_GM_PRELUDE"
@@ -25,12 +25,12 @@
       {
         "text": "Can you teach me any spells?",
         "topic": "TALK_CF_AUX_MAGE_SPELL_MENU",
-        "condition": { "not": { "u_has_var": "celine_all_spells_known", "value": "yes" } }
+        "condition": { "not": { "compare_string": [ "yes", { "u_val": "celine_all_spells_known" } ] } }
       },
       {
         "text": "Do you have anything to trade?",
         "effect": "start_trade",
-        "condition": { "u_has_var": "cf_celine_traded", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "cf_celine_traded" } ] },
         "topic": "TALK_CF_AUX_MAGE"
       },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
@@ -72,7 +72,7 @@
       {
         "text": "Can you teach me any spells?",
         "topic": "TALK_CF_AUX_MAGE_SPELL_MENU",
-        "condition": { "not": { "u_has_var": "celine_all_spells_known", "value": "yes" } }
+        "condition": { "not": { "compare_string": [ "yes", { "u_val": "celine_all_spells_known" } ] } }
       },
       { "text": "I see.", "topic": "TALK_CF_AUX_MAGE" }
     ]
@@ -147,7 +147,7 @@
     "type": "talk_topic",
     "dynamic_line": "Aside from study and any other work I can get, I also have supplies I trade around, helps supplement my efforts to gather new materials and books to ready.  Anything you'd like?",
     "speaker_effect": {
-      "condition": { "not": { "u_has_var": "cf_celine_traded", "value": "yes" } },
+      "condition": { "not": { "compare_string": [ "yes", { "u_val": "cf_celine_traded" } ] } },
       "effect": { "u_add_var": "cf_celine_traded", "value": "yes" }
     },
     "responses": [

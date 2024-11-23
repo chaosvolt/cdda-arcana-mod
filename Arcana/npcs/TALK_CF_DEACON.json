@@ -8,9 +8,9 @@
         "text": "I've been sent to ask about recent attacks on survivors by anomalous creatures.  Know anything about that?",
         "condition": {
           "and": [
-            { "u_has_var": "johnathan_prelude_mid", "value": "yes" },
-            { "not": { "npc_has_var": "johnathan_prelude_mid", "value": "yes" } },
-            { "not": { "u_has_var": "johnathan_prelude_data_5", "value": "yes" } }
+            { "compare_string": [ "yes", { "u_val": "johnathan_prelude_mid" } ] },
+            { "not": { "compare_string": [ "yes", { "npc_val": "johnathan_prelude_mid" } ] } },
+            { "not": { "compare_string": [ "yes", { "u_val": "johnathan_prelude_data_5" } ] } }
           ]
         },
         "topic": "TALK_CF_DEACON_GM_PRELUDE"
@@ -31,8 +31,8 @@
         "topic": "TALK_CF_DEACON_MISSION_CF_4",
         "condition": {
           "and": [
-            { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } },
-            { "not": { "npc_has_var": "sofia_refugee_convinced", "value": "yes" } },
+            { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } },
+            { "not": { "compare_string": [ "yes", { "npc_val": "sofia_refugee_convinced" } ] } },
             { "u_has_mission": "MISSION_CF_REP_4" }
           ]
         }
@@ -133,7 +133,7 @@
             "search_range": 256
           }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_2", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "sofia_ally_seeking_2" } ] },
         "switch": true,
         "topic": "TALK_DONE"
       },
@@ -143,7 +143,7 @@
           { "u_add_var": "sofia_ally_seeking_2", "value": "yes" },
           { "npc_add_var": "sofia_refugee_convinced", "value": "yes" }
         ],
-        "condition": { "u_has_var": "sofia_ally_seeking_1", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "sofia_ally_seeking_1" } ] },
         "switch": true,
         "topic": "TALK_DONE"
       },

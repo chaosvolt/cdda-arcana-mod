@@ -7,7 +7,7 @@
         "text": "[MISSION] I've been asked to help attract work for another community of survivors.  Know of anyone who could help with that?",
         "topic": "TALK_FREE_MERCHANT_STOCKS_CF_REP_MISSION_4",
         "condition": {
-          "and": [ { "not": { "u_has_var": "sofia_allies_secured", "value": "yes" } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
+          "and": [ { "not": { "compare_string": [ "yes", { "u_val": "sofia_allies_secured" } ] } }, { "u_has_mission": "MISSION_CF_REP_4" } ]
         }
       }
     ]
@@ -16,21 +16,20 @@
     "id": "TALK_FREE_MERCHANT_STOCKS_CF_REP_MISSION_4",
     "type": "talk_topic",
     "dynamic_line": {
-      "u_has_var": "knowledge_flag_tacoma_started",
-      "value": "yes",
+      "compare_string": [ "yes", { "u_val": "knowledge_flag_tacoma_started" } ],
       "yes": "I wouldn't mind sending a few spare mouths to feed somewhere else.  With the commune out there, at least supplies are a little less of a concern, and people are getting a bit braver about venturing out in search of work.  It's still risky sending potential labor somewhere else instead of our new lifeline though.  What can you tell me about this community?",
       "no": "While I'd love to send you a few spare mouths to feed and make logistics a bit less worrisome here, I'm not sure if we can afford whatever kind of deal you're looking for.  We need both labor and supplies, it's just that we're shorter on the latter than the former.  Speak with someone else and maybe things will work out."
     },
     "responses": [
       {
         "text": "It's a small community building up a rural church, that's starting to become self-sufficient.",
-        "condition": { "u_has_var": "knowledge_flag_tacoma_started", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "knowledge_flag_tacoma_started" } ] },
         "topic": "TALK_FREE_MERCHANT_STOCKS_CF_REP_MISSION_4_EXPLAIN"
       },
       {
         "text": "I'll figure something else out.  Thank you, though.",
         "switch": true,
-        "condition": { "u_has_var": "knowledge_flag_tacoma_started", "value": "yes" },
+        "condition": { "compare_string": [ "yes", { "u_val": "knowledge_flag_tacoma_started" } ] },
         "topic": "TALK_DONE"
       },
       { "text": "Oh, okay.", "switch": true, "default": true, "topic": "TALK_DONE" }
