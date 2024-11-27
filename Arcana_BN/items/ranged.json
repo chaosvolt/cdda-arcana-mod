@@ -24,7 +24,7 @@
     "durability": 10,
     "loudness": 150,
     "clip_size": 5,
-    "reload": 80,
+    "reload": 400,
     "relic_data": {
       "passive_effects": [
         {
@@ -70,7 +70,7 @@
     "durability": 10,
     "loudness": 100,
     "clip_size": 15,
-    "reload": 20,
+    "reload": 300,
     "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "triple", 3 ] ],
     "ammo_effects": [ "FLAME", "STREAM", "IGNITE" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
@@ -195,7 +195,7 @@
     "dispersion": 150,
     "durability": 6,
     "clip_size": 80,
-    "reload": 2,
+    "reload": 160,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
     "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "CROSSBOW" ],
     "valid_mod_locations": [ [ "sling", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "underbarrel", 1 ] ]
@@ -224,7 +224,7 @@
     "dispersion": 300,
     "durability": 6,
     "clip_size": 40,
-    "reload": 2,
+    "reload": 80,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
     "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "CROSSBOW" ],
     "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ] ]
@@ -254,7 +254,7 @@
     "dispersion": 75,
     "durability": 6,
     "clip_size": 200,
-    "reload": 3,
+    "reload": 600,
     "ammo_effects": [ "WIDE", "LASER", "LARGE_BEANBAG", "BLINDS_EYES" ],
     "flags": [ "FIRE_50", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "CROSSBOW" ],
     "valid_mod_locations": [ [ "sling", 1 ] ]
@@ -340,7 +340,7 @@
     "durability": 10,
     "loudness": 75,
     "clip_size": 4,
-    "reload": 50,
+    "reload": 200,
     "relic_data": {
       "passive_effects": [
         {
