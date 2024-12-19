@@ -16,7 +16,7 @@
     "type": "enchantment",
     "id": "ENCH_DRAGONBLOOD_ELEMENTAL_AFFINITY",
     "condition": "ALWAYS",
-    "values": [ { "value": "ARMOR_COLD", "multiply": 0.5 } ],
+    "incoming_damage_mod": [ { "type": "cold", "multiply": -0.5 } ],
     "ench_effects": [ { "effect": "heat_ward_dragonblood", "intensity": 1 } ]
   },
   {

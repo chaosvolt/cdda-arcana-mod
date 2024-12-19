@@ -126,13 +126,13 @@
     "type": "enchantment",
     "has": "WIELD",
     "condition": "ALWAYS",
-    "values": [
-      { "value": "ARMOR_BASH", "add": -25 },
-      { "value": "ARMOR_CUT", "add": -35 },
-      { "value": "ARMOR_STAB", "add": -30 },
-      { "value": "ARMOR_BULLET", "add": -40 },
-      { "value": "ARMOR_HEAT", "add": -20 },
-      { "value": "ARMOR_ACID", "add": -20 }
+    "incoming_damage_mod": [
+      { "type": "bash", "add": -25 },
+      { "type": "cut", "add": -35 },
+      { "type": "stab", "add": -30 },
+      { "type": "bullet", "add": -40 },
+      { "type": "heat", "add": -20 },
+      { "type": "acid", "add": -20 }
     ],
     "ench_effects": [ { "effect": "arcana_mech_laser_immunities", "intensity": 1 } ]
   },

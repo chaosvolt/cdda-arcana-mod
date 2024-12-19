@@ -191,7 +191,7 @@
     "type": "TOOL",
     "category": "weapons",
     "copy-from": "qt_arming_sword",
-    "weapon_category": [ "MEDIUM_SWORDS"],
+    "weapon_category": [ "MEDIUM_SWORDS" ],
     "name": { "str": "incorruptible sword" },
     "//": "Stats are a blend of the available swords you can use to make it, same deal as the mantle of shadows.",
     "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  When powered by consecrated magical essence, it has the power to cut through darkness itself.",
@@ -1206,7 +1206,7 @@
   {
     "id": "staff_druidic",
     "type": "TOOL",
-    "weapon_category": [ "BATONS"],
+    "weapon_category": [ "BATONS" ],
     "name": { "str": "druidic staff", "str_pl": "druidic staves" },
     "description": "A short wooden staff decorated with engraved silver, depicting a mixture of exotic natural scenes and various holy symbols.  It is said to represent the instincts deep within the heart, tempered by restraint and reason.  Using it can repair and fortify items made of various plant or animal products and stone, but not more refined materials like metal or glass.",
     "weight": "1310 g",
@@ -1294,11 +1294,7 @@
         "magazine_well": "5 L",
         "max_contains_volume": "50 L",
         "max_contains_weight": "400 kg",
-        "item_restriction": [
-          "medium_storage_battery",
-          "storage_battery",
-          "large_storage_battery"
-        ]
+        "item_restriction": [ "medium_storage_battery", "storage_battery", "large_storage_battery" ]
       }
     ],
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_coalescent_conversion", "no_fail": true, "level": 0 } ]
@@ -1418,7 +1414,7 @@
     "id": "verge_meteoric",
     "type": "TOOL",
     "category": "weapons",
-    "weapon_category": [ "BATONS"],
+    "weapon_category": [ "BATONS" ],
     "name": { "str": "meteoric verge" },
     "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.",
     "weight": "1585 g",
@@ -1559,7 +1555,7 @@
         {
           "has": "WIELD",
           "condition": "ACTIVE",
-          "values": [ { "value": "ARMOR_COLD", "multiply": -0.5 } ],
+          "incoming_damage_mod": [ { "type": "cold", "multiply": -0.5 } ],
           "ench_effects": [ { "effect": "cold_ward", "intensity": 1 } ]
         }
       ]

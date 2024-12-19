@@ -537,17 +537,16 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "values": [
-            { "value": "ARMOR_BASH", "add": -10 },
-            { "value": "ARMOR_CUT", "add": -10 },
-            { "value": "ARMOR_STAB", "add": -10 },
-            { "value": "ARMOR_BULLET", "add": -10 },
-            { "value": "ARMOR_HEAT", "multiply": -0.5 },
-            { "value": "ARMOR_COLD", "multiply": -0.5 },
-            { "value": "ARMOR_ACID", "multiply": -0.5 },
-            { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
-            { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
-          ]
+          "incoming_damage_mod": [
+            { "type": "bash", "add": -10 },
+            { "type": "cut", "add": -10 },
+            { "type": "stab", "add": -10 },
+            { "type": "bullet", "add": -10 },
+            { "type": "heat", "multiply": -0.5 },
+            { "type": "cold", "multiply": -0.5 },
+            { "type": "acid", "multiply": -0.5 }
+          ],
+          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
         }
       ]
     },
@@ -615,13 +614,8 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "values": [
-            { "value": "ARMOR_HEAT", "multiply": -1.0 },
-            { "value": "ARMOR_STAB", "multiply": -1.0 },
-            { "value": "ARMOR_BULLET", "multiply": -0.9 },
-            { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
-            { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
-          ]
+          "incoming_damage_mod": [ { "type": "heat", "multiply": -1.0 }, { "type": "stab", "multiply": -1.0 }, { "type": "bullet", "multiply": -0.9 } ],
+          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
         }
       ]
     },
@@ -860,11 +854,8 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "values": [
-            { "value": "ARMOR_HEAT", "multiply": -0.5 },
-            { "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
-            { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
-          ],
+          "incoming_damage_mod": [ { "type": "heat", "multiply": -0.5 } ],
+          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ],
           "ench_effects": [ { "effect": "heat_ward", "intensity": 1 } ]
         }
       ]

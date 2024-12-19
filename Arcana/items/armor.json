@@ -11,13 +11,13 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [
-            { "value": "STRENGTH", "add": 5 },
-            { "value": "ARMOR_BASH", "add": -10 },
-            { "value": "ARMOR_CUT", "add": -20 },
-            { "value": "ARMOR_STAB", "add": -15 },
-            { "value": "ARMOR_BULLET", "add": -15 }
-          ]
+          "incoming_damage_mod": [
+            { "type": "bash", "add": -10 },
+            { "type": "cut", "add": -20 },
+            { "type": "stab", "add": -15 },
+            { "type": "bullet", "add": -15 }
+          ],
+          "values": [ { "value": "STRENGTH", "add": 5 } ]
         }
       ]
     },
@@ -155,16 +155,16 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [
-            { "value": "ARMOR_ACID", "multiply": -0.5 },
-            { "value": "ARMOR_BASH", "multiply": -0.5 },
-            { "value": "ARMOR_BIO", "multiply": -0.5 },
-            { "value": "ARMOR_COLD", "multiply": -0.5 },
-            { "value": "ARMOR_CUT", "multiply": -0.5 },
-            { "value": "ARMOR_ELEC", "multiply": -0.5 },
-            { "value": "ARMOR_HEAT", "multiply": -0.5 },
-            { "value": "ARMOR_STAB", "multiply": -0.5 },
-            { "value": "ARMOR_BULLET", "multiply": -0.5 }
+          "incoming_damage_mod": [
+            { "type": "acid", "multiply": -0.5 },
+            { "type": "bash", "multiply": -0.5 },
+            { "type": "biological", "multiply": -0.5 },
+            { "type": "cold", "multiply": -0.5 },
+            { "type": "cut", "multiply": -0.5 },
+            { "type": "electric", "multiply": -0.5 },
+            { "type": "heat", "multiply": -0.5 },
+            { "type": "stab", "multiply": -0.5 },
+            { "type": "bullet", "multiply": -0.5 }
           ]
         }
       ]
