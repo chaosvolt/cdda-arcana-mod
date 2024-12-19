@@ -966,12 +966,6 @@
     "death_drops": "mon_zombie_soldier_acid_2_death_drops"
   },
   {
-    "id": "mon_zpider_mass",
-    "copy-from": "mon_zpider_mass",
-    "type": "MONSTER",
-    "death_drops": "mon_zpider_mass_death_drops"
-  },
-  {
     "id": "mon_unseen_hunter",
     "copy-from": "mon_unseen_hunter",
     "type": "MONSTER",
