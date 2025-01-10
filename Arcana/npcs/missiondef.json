@@ -12,7 +12,7 @@
     "destination": "standing_stones",
     "start": {
       "effect": "follow",
-      "assign_mission_target": { "om_terrain": "standing_stones", "om_special": "Standing stones", "reveal_radius": 3, "search_range": 180, "z": 0 }
+      "assign_mission_target": { "om_terrain": "standing_stones", "om_special": "Standing stones", "reveal_radius": 3, "z": 0 }
     },
     "dialogue": {
       "describe": "If you see this, it's a bug!",
@@ -38,7 +38,7 @@
     "followup": "MISSION_FIND_HERMIT_3",
     "destination": "shrine_anomaly",
     "start": {
-      "assign_mission_target": { "om_terrain": "shrine_anomaly", "om_special": "Ruined Shrine", "reveal_radius": 3, "search_range": 180, "z": 0 }
+      "assign_mission_target": { "om_terrain": "shrine_anomaly", "om_special": "Ruined Shrine", "reveal_radius": 3, "z": 0 }
     },
     "dialogue": {
       "describe": "If you see this, it's a bug!",
@@ -64,7 +64,7 @@
     "destination": "arcana_hermitage_1",
     "start": {
       "effect": { "u_add_effect": "sent_to_hermit", "duration": "PERMANENT" },
-      "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "om_special": "Hermit Cabin", "reveal_radius": 3, "search_range": 360, "z": 0 }
+      "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "om_special": "Hermit Cabin", "reveal_radius": 3, "z": 0 }
     },
     "dialogue": {
       "describe": "If you see this, it's a bug!",
@@ -88,7 +88,7 @@
     "difficulty": 5,
     "value": 250000,
     "start": {
-      "assign_mission_target": { "om_terrain": "impact_site", "om_special": "Floating Temple", "reveal_radius": 3, "search_range": 360, "z": 0 }
+      "assign_mission_target": { "om_terrain": "impact_site", "om_special": "Floating Temple", "reveal_radius": 3, "z": 0 }
     },
     "end": { "effect": [ { "npc_add_effect": "hermit_stage_1", "duration": "PERMANENT" } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
@@ -414,7 +414,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_REP_6",
     "start": {
-      "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "om_special": "Hermit Cabin", "reveal_radius": 1, "search_range": 360 },
+      "assign_mission_target": { "om_terrain": "arcana_hermitage_1", "om_special": "Hermit Cabin", "reveal_radius": 1 },
       "update_mapgen": [ { "om_terrain": "cf_church_2", "place_nested": [ { "chunks": [ "cf_church_upgrade_5" ], "x": 2, "y": 3 } ] } ]
     },
     "dialogue": {
@@ -499,7 +499,7 @@
     "item": "arcana_radio_relay_beacon",
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
-      "assign_mission_target": { "om_terrain": "station_radio_1", "search_range": 360, "reveal_radius": 3 },
+      "assign_mission_target": { "om_terrain": "station_radio_1", "reveal_radius": 3 },
       "update_mapgen": [
         { "mapgen_update_id": "arcana_radio_station" },
         { "om_terrain": "cf_church_1", "mapgen_update_id": "cf_church_upgrade_9_a" },
@@ -543,7 +543,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_2",
     "start": {
-      "assign_mission_target": { "om_terrain": "strange_grove", "om_special": "Strange Grove", "reveal_radius": 3, "search_range": 360, "z": 0 }
+      "assign_mission_target": { "om_terrain": "strange_grove", "om_special": "Strange Grove", "reveal_radius": 3, "z": 0 }
     },
     "end": {
       "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_spawn_item": "CF_golden_scale", "count": 6 } ],
@@ -583,7 +583,6 @@
         "om_terrain": "curious_structure_2",
         "om_special": "Curious Structure",
         "reveal_radius": 3,
-        "search_range": 360,
         "z": 0
       }
     },
@@ -1049,7 +1048,9 @@
         "om_special": "4x4_microlab_arcana",
         "om_terrain_replace": "field",
         "reveal_radius": 3,
+        "random": true,
         "search_range": 180,
+        "min_distance": 15,
         "z": 0
       },
       "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "value": "yes" } ]
@@ -1084,7 +1085,9 @@
         "om_special": "Cave_arcana_caravan",
         "om_terrain_replace": "field",
         "reveal_radius": 3,
+        "random": true,
         "search_range": 180,
+        "min_distance": 15,
         "z": 0
       },
       "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "value": "yes" } ]
@@ -1119,7 +1122,9 @@
         "om_special": "Lab_arcana_warehouse",
         "om_terrain_replace": "field",
         "reveal_radius": 3,
+        "random": true,
         "search_range": 180,
+        "min_distance": 15,
         "z": 0
       },
       "effect": [ { "npc_add_var": "nicholas_mission_2_mid", "value": "yes" } ]
