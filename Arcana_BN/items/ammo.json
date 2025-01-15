@@ -348,15 +348,18 @@
   },
   {
     "id": "flintlock_shot_arcana",
-    "copy-from": "flintlock_shot",
+    "copy-from": "flintlock_ammo",
     "type": "AMMO",
     "name": { "str": "purifying paper shot cartridge" },
     "description": "A black powder paper cartridge, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
     "price": "0 cent",
     "price_postapoc": "15 USD",
-    "range": 12,
+    "ammo_type": "flintlockshot",
+    "range": 18,
+    "dispersion": 20,
+    "loudness": 90,
     "damage": { "damage_type": "heat", "amount": 60, "armor_penetration": 10 },
-    "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
+    "extend": { "effects": [ "SHOT", "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
     "id": "blun_shot_arcana",
