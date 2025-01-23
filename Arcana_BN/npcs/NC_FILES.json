@@ -1123,7 +1123,7 @@
       { "item": "leather_pouch" },
       { "item": "bandana" },
       { "item": "sheath", "contents-item": "knife_hunting" },
-      { "item": "colt_saa", "ammo-item": "reloaded_45colt_jhp", "charges": 6, "container-item": "holster" },
+      { "item": "colt_saa", "ammo-item": "45colt_jhp", "charges": 6, "container-item": "holster" },
       { "item": "duster" },
       { "item": "cowboy_hat" },
       { "item": "boots" }
@@ -1133,7 +1133,7 @@
     "type": "item_group",
     "id": "NC_CF_AUX_MERC_weapon",
     "subtype": "collection",
-    "entries": [ { "item": "1895sbl", "ammo-item": "reloaded_4570_pen", "charges": 7, "contents-item": "shoulder_strap" } ]
+    "entries": [ { "item": "1895sbl", "ammo-item": "4570_pen", "charges": 7, "contents-item": "shoulder_strap" } ]
   },
   {
     "id": "NC_CF_AUX_MERC_misc",
@@ -1143,8 +1143,8 @@
       { "item": "water_clean" },
       { "item": "matches" },
       { "item": "bandages" },
-      { "item": "reloaded_45colt_jhp", "charges": [ 40, 60 ] },
-      { "item": "reloaded_4570_pen", "charges": [ 30, 50 ] }
+      { "item": "45colt_jhp", "charges": [ 40, 60 ] },
+      { "item": "4570_pen", "charges": [ 30, 50 ] }
     ]
   },
   {
