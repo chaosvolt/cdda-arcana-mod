@@ -3,7 +3,7 @@
     "id": "arcana_blood_standard",
     "type": "requirement",
     "//": "Any available sort of blood, ideally human blood.",
-    "components": [ [ [ "blood", 1 ], [ "dragon_blood", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ], [ "dragon_blood", 1 ], [ "animal_blood", 3 ], [ "mutant_blood", 4 ] ] ]
   },
   {
     "id": "arcana_flesh_standard",
