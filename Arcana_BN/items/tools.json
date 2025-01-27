@@ -936,7 +936,7 @@
     "//": "Can't use copy-from because qualities refuse to be deleted, causing it to try and chop wood instead of exploding.",
     "type": "TOOL",
     "category": "weapons",
-    "weapon_category": [ "HAND_AXES" ],
+    "weapon_category": [ "1H_AXES" ],
     "name": { "str": "glowing veinreaver" },
     "description": "A modified hatchet, the axehead giving off a wicked red glow.  Throwing it might be a smart idea, as you'll have little time to evade its blast.",
     "weight": "707 g",
