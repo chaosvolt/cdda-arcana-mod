@@ -66,7 +66,7 @@
     "relative": { "weight": 3020 },
     "extend": { "flags": [ "NO_SALVAGE", "FANCY", "TRADER_KEEP_EQUIPPED" ] },
     "material_thickness": 5,
-    "armor": [ { "encumbrance": 12, "coverage": 100, "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ] } ]
+    "armor": [ { "encumbrance": 12, "coverage": 90, "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ] } ]
   },
   {
     "id": "somen_clairvoyance",
@@ -339,7 +339,7 @@
     "relative": { "weight": 616, "volume": -1 },
     "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
     "material_thickness": 6,
-    "armor": [ { "covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r" ], "coverage": 85, "encumbrance": [ 7, 7 ] } ]
+    "armor": [ { "covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 7, 7 ] } ]
   },
   {
     "id": "robe_shadow_on",
@@ -400,7 +400,7 @@
     ],
     "flags": [ "OVERSIZE", "OUTER", "NO_SALVAGE" ],
     "material_thickness": 6,
-    "armor": [ { "encumbrance": 7, "coverage": 85, "covers": [ "torso" ] } ]
+    "armor": [ { "encumbrance": 7, "coverage": 100, "covers": [ "torso" ] } ]
   },
   {
     "id": "robe_shadow_xl_on",
