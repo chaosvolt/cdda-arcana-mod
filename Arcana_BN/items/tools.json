@@ -347,7 +347,7 @@
         "done_message": "You place the canister, primed to explode if disturbed."
       }
     ],
-    "flags": [ "BOMB" ]
+    "flags": [ "BOMB", "DESTROY_ON_DECHARGE" ]
   },
   {
     "id": "blast_canister_arcana_flame_act",
@@ -401,7 +401,7 @@
         "done_message": "You place the canister, primed to explode if disturbed."
       }
     ],
-    "flags": [ "BOMB" ]
+    "flags": [ "BOMB", "DESTROY_ON_DECHARGE" ]
   },
   {
     "id": "blast_canister_arcana_water_act",
@@ -455,7 +455,7 @@
         "done_message": "You place the canister, primed to explode if disturbed."
       }
     ],
-    "flags": [ "BOMB" ]
+    "flags": [ "BOMB", "DESTROY_ON_DECHARGE" ]
   },
   {
     "id": "blast_canister_arcana_earth_act",
@@ -509,7 +509,7 @@
         "done_message": "You place the canister, primed to explode if disturbed."
       }
     ],
-    "flags": [ "BOMB" ]
+    "flags": [ "BOMB", "DESTROY_ON_DECHARGE" ]
   },
   {
     "id": "blast_canister_arcana_air_act",
@@ -1055,7 +1055,7 @@
       },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
-    "flags": [ "NO_SALVAGE", "ALLOWS_REMOTE_USE" ]
+    "flags": [ "NO_SALVAGE", "ALLOWS_REMOTE_USE", "DESTROY_ON_DECHARGE" ]
   },
   {
     "id": "candle_warding_active",
@@ -1081,7 +1081,7 @@
       { "type": "firestarter", "moves": 100 },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
-    "flags": [ "NO_SALVAGE", "LIGHT_12", "FIRESTARTER", "ALLOWS_REMOTE_USE" ]
+    "flags": [ "NO_SALVAGE", "LIGHT_12", "FIRESTARTER", "ALLOWS_REMOTE_USE", "DESTROY_ON_DECHARGE" ]
   },
   {
     "id": "transmutation_crucible",
@@ -1098,7 +1098,7 @@
     "symbol": ";",
     "color": "brown",
     "looks_like": "crucible",
-    "flags": [ "ALLOWS_REMOTE_USE" ],
+    "flags": [ "ALLOWS_REMOTE_USE", "DESTROY_ON_DECHARGE" ],
     "use_action": { "type": "deploy_furn", "furn_type": "f_transmutation_crucible_deployed" }
   },
   {
@@ -1121,6 +1121,7 @@
     "material": [ "silver", "essencemat" ],
     "symbol": ";",
     "color": "cyan",
+    "flags": [ "DESTROY_ON_DECHARGE" ],
     "use_action": {
       "type": "place_trap",
       "trap": "tr_portal",

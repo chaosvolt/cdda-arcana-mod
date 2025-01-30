@@ -329,7 +329,8 @@
     "//": "Likely rare to non-existent before the cataclysm.",
     "price": "0 cent",
     "price_postapoc": "9 USD",
-    "range": 30,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 4, "length": 30 } ],
     "damage": { "damage_type": "heat", "amount": 80, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "SHOT", "ARCANA_DAZZLE_SHOT" ] }
   },
@@ -342,7 +343,8 @@
     "description": "A paper cartridge containing a premeasured amount of black powder, loaded with precious metals.  The addition of consecrated essence enhances its impact and focuses it into a burst of white-hot light when fired.  Immolates targets on impact and bypasses mundane armor, while leaving behind a dazzling glow.",
     "price": "0 cent",
     "price_postapoc": "15 USD",
-    "range": 30,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 4, "length": 30 } ],
     "damage": { "damage_type": "heat", "amount": 65, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
@@ -355,9 +357,10 @@
     "price": "0 cent",
     "price_postapoc": "15 USD",
     "ammo_type": "flintlockshot",
-    "range": 18,
     "dispersion": 20,
     "loudness": 90,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 5, "length": 18 } ],
     "damage": { "damage_type": "heat", "amount": 60, "armor_penetration": 10 },
     "extend": { "effects": [ "SHOT", "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
@@ -370,9 +373,10 @@
     "price": "0 cent",
     "price_postapoc": "1 USD",
     "weight": "2 g",
-    "range": 9,
     "dispersion": 30,
     "recoil": 780,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 9, "length": 15 } ],
     "damage": { "damage_type": "heat", "amount": 55, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "SHOT", "ARCANA_DAZZLE_SHOT" ] }
   }
