@@ -171,11 +171,11 @@
         [ "marloss_gel", 1 ],
         [ "marloss_berry", 15 ],
         [ "slime_scrap", 25 ],
-        [ "bone_tainted", 50 ],
-        [ "chitin_piece", 100 ],
-        [ "acidchitin_piece", 100 ],
-        [ "scute_piece", 100 ],
-        [ "stick_fiber", 200 ],
+        [ "arcana_bone_standard", 5, "LIST" ],
+        [ "chitin_piece", 50 ],
+        [ "acidchitin_piece", 25 ],
+        [ "scute_piece", 50 ],
+        [ "stick_fiber", 100 ],
         [ "alien_pod_resin", 1 ],
         [ "royal_jelly", 1 ]
       ]
@@ -415,10 +415,11 @@
     "charges": 1,
     "reversible": true,
     "using": [ [ "shot_forming", 1 ], [ "ammo_shot", 1 ] ],
+    "//": "1 dull essence per 10 damage, greater efficiency than magic ranged weapons or even elemental arrows because you're also getting damage from the gunpowder and projectile.",
     "components": [
       [ [ "gunpowder", 6 ], [ "chem_black_powder", 8 ], [ "chem_match_head_powder", 8 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
-      [ [ "essence_dull", 16 ] ]
+      [ [ "essence_dull", 8 ] ]
     ]
   },
   {
@@ -439,7 +440,7 @@
       [ [ "gunpowder", 4 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
       [ [ "silver_small", 8 ], [ "platinum_small", 5 ] ],
       [ [ "shotgun_primer", 1 ] ],
-      [ [ "essence_dull", 13 ] ],
+      [ [ "essence_dull", 7 ] ],
       [ [ "paper", 1 ], [ "aluminum_foil", 1 ] ]
     ]
   },
@@ -461,7 +462,7 @@
     "components": [
       [ [ "gunpowder", 4 ], [ "chem_black_powder", 5 ], [ "chem_match_head_powder", 5 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
-      [ [ "essence_dull", 12 ] ],
+      [ [ "essence_dull", 6 ] ],
       [ [ "paper", 1 ] ]
     ]
   },
@@ -487,7 +488,7 @@
     "components": [
       [ [ "gunpowder", 8 ], [ "chem_black_powder", 10 ], [ "chem_match_head_powder", 10 ] ],
       [ [ "silver_small", 16 ], [ "platinum_small", 10 ] ],
-      [ [ "essence_dull", 11 ] ],
+      [ [ "essence_dull", 6 ] ],
       [ [ "paper", 1 ], [ "aluminum_foil", 1 ] ]
     ]
   }

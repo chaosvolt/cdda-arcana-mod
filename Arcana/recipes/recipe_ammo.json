@@ -179,10 +179,10 @@
         [ "marloss_gel", 1 ],
         [ "marloss_berry", 15 ],
         [ "slime_scrap", 25 ],
-        [ "bone_tainted", 50 ],
-        [ "chitin_piece", 100 ],
-        [ "acidchitin_piece", 100 ],
-        [ "stick_fiber", 200 ],
+        [ "arcana_bone_standard", 5, "LIST" ],
+        [ "chitin_piece", 50 ],
+        [ "acidchitin_piece", 25 ],
+        [ "stick_fiber", 100 ],
         [ "alien_pod_resin", 1 ],
         [ "royal_jelly", 1 ]
       ]
@@ -475,10 +475,11 @@
     "reversible": true,
     "using": [ [ "shot_forming", 1 ], [ "ammo_shot", 1 ] ],
     "tools": [ [ [ "press", -1 ], [ "press_dowel", -1 ] ] ],
+    "//": "1 dull essence per 10 damage, greater efficiency than magic ranged weapons or even elemental arrows because you're also getting damage from the gunpowder and projectile.",
     "components": [
       [ [ "gunpowder", 6 ], [ "gunpowder_pistol", 6 ], [ "gunpowder_shotgun", 6 ], [ "chem_black_powder", 9 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
-      [ [ "essence_dull", 12 ] ]
+      [ [ "essence_dull", 6 ] ]
     ]
   },
   {
@@ -500,7 +501,7 @@
     "components": [
       [ [ "gunpowder", 3 ], [ "gunpowder_pistol", 3 ], [ "gunpowder_shotgun", 3 ], [ "chem_black_powder", 5 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],
-      [ [ "essence_dull", 10 ] ],
+      [ [ "essence_dull", 5 ] ],
       [ [ "paper", 1 ] ]
     ]
   },
@@ -527,7 +528,7 @@
     "components": [
       [ [ "gunpowder", 16 ], [ "chem_black_powder", 24 ] ],
       [ [ "silver_small", 16 ], [ "platinum_small", 10 ] ],
-      [ [ "essence_dull", 16 ] ],
+      [ [ "essence_dull", 8 ] ],
       [ [ "paper", 1 ], [ "aluminum_foil", 1 ] ]
     ]
   }
