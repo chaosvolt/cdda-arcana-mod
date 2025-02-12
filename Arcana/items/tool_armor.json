@@ -558,9 +558,9 @@
       "BLOCK_WHILE_WORN",
       "NO_SALVAGE",
       "AURA",
-      "ONLY_ONE",
       "POWERARMOR_COMPATIBLE"
     ],
+    "max_worn": 1,
     "sided": true,
     "material_thickness": 4,
     "armor": [ { "encumbrance": 10, "coverage": 80, "covers": [ "arm_l", "arm_r", "hand_l", "hand_r" ] } ]

@@ -1,6 +1,6 @@
 [
   {
-    "name": "GROUP_NETHER_LAVA",
+    "id": "GROUP_NETHER_LAVA",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_hunting_horror", "weight": 250, "cost_multiplier": 0 },
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "name": "GROUP_IMPACT",
+    "id": "GROUP_IMPACT",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_gracke", "weight": 150, "cost_multiplier": 0 },
@@ -21,7 +21,7 @@
     ]
   },
   {
-    "name": "GROUP_SANGUINE_BASEMENT",
+    "id": "GROUP_SANGUINE_BASEMENT",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_blank", "weight": 150, "cost_multiplier": 0 },
@@ -33,7 +33,7 @@
     ]
   },
   {
-    "name": "GROUP_GROVESURFACE",
+    "id": "GROUP_GROVESURFACE",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_triffid", "weight": 300 },
@@ -43,7 +43,7 @@
     ]
   },
   {
-    "name": "GROUP_GROVEBASEMENT",
+    "id": "GROUP_GROVEBASEMENT",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_kreck", "weight": 525, "cost_multiplier": 0 },
@@ -55,7 +55,7 @@
     ]
   },
   {
-    "name": "GROUP_CF_BASEMENT",
+    "id": "GROUP_CF_BASEMENT",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_shadow_summoned", "weight": 150, "cost_multiplier": 0 },
@@ -72,7 +72,7 @@
   },
   {
     "type": "monstergroup",
-    "name": "GROUP_ARCHON",
+    "id": "GROUP_ARCHON",
     "monsters": [
       { "monster": "mon_shadow_snake_summoned", "weight": 400, "cost_multiplier": 0, "starts": 72 },
       { "monster": "mon_shadow_summoned", "weight": 250, "cost_multiplier": 0, "starts": 120 },
@@ -84,7 +84,7 @@
   },
   {
     "type": "monstergroup",
-    "name": "GROUP_ARCHON_TEMPLE",
+    "id": "GROUP_ARCHON_TEMPLE",
     "monsters": [
       { "monster": "mon_shadow_snake_summoned", "weight": 400, "cost_multiplier": 0, "starts": 72 },
       { "monster": "mon_shadow_summoned", "weight": 250, "cost_multiplier": 0, "starts": 120 },
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "name": "GROUP_SHRINE_FLAME",
+    "id": "GROUP_SHRINE_FLAME",
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
@@ -109,7 +109,7 @@
     ]
   },
   {
-    "name": "GROUP_SHRINE_SANGUINE",
+    "id": "GROUP_SHRINE_SANGUINE",
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
@@ -122,7 +122,7 @@
     ]
   },
   {
-    "name": "GROUP_SHRINE_CHALICE",
+    "id": "GROUP_SHRINE_CHALICE",
     "type": "monstergroup",
     "default": "mon_dementia",
     "monsters": [
@@ -137,7 +137,7 @@
   },
   {
     "type": "monstergroup",
-    "name": "GROUP_ARCHON_RESURGENCE",
+    "id": "GROUP_ARCHON_RESURGENCE",
     "monsters": [
       { "monster": "mon_shadow_snake_summoned", "weight": 400, "cost_multiplier": 0 },
       { "monster": "mon_hunting_horror_summoned", "weight": 100, "cost_multiplier": 0 },
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "name": "GROUP_STANDING_STONES",
+    "id": "GROUP_STANDING_STONES",
     "type": "monstergroup",
     "override": false,
     "auto_total": true,
@@ -172,7 +172,7 @@
     ]
   },
   {
-    "name": "GROUP_CAVE",
+    "id": "GROUP_CAVE",
     "type": "monstergroup",
     "override": false,
     "auto_total": true,
@@ -180,7 +180,7 @@
     "monsters": [ { "monster": "mon_fleshy_shambler", "weight": 25, "cost_multiplier": 10 } ]
   },
   {
-    "name": "GROUP_MANSION_START",
+    "id": "GROUP_MANSION_START",
     "type": "monstergroup",
     "override": false,
     "auto_total": true,
@@ -192,14 +192,14 @@
     ]
   },
   {
-    "name": "GROUP_CHURCH_ZOMBIE",
+    "id": "GROUP_CHURCH_ZOMBIE",
     "type": "monstergroup",
     "override": false,
     "auto_total": true,
     "monsters": [ { "monster": "mon_feral_magehunter", "freq": 10, "cost_multiplier": 10, "starts": 500 } ]
   },
   {
-    "name": "GROUP_CHURCH_BLANK",
+    "id": "GROUP_CHURCH_BLANK",
     "type": "monstergroup",
     "override": false,
     "auto_total": true,
