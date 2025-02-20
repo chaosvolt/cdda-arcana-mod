@@ -10,7 +10,7 @@
     "charges_per_use": 25,
     "ammo": "primitive_magic_item_ammo_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 125 } } ],
-    "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
+    "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
     "//": "Water talisman and earth talisman.  Each use has power equivalent to 250 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_triffid_garland_empowered", "no_fail": true, "level": 0 }
@@ -26,7 +26,7 @@
     "charges_per_use": 35,
     "ammo": "primitive_magic_item_ammo_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 175 } } ],
-    "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
+    "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
     "//": "Flame talisman and air talisman.  Each use has power equivalent to 350 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_amulet_exotic_empowered", "no_fail": true, "level": 0 }
@@ -42,7 +42,7 @@
     "charges_per_use": 45,
     "ammo": "primitive_magic_item_ammo_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 225 } } ],
-    "flags": [ "FANCY", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
+    "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
     "//": "Earth talisman and air talisman.  Each use has power equivalent to 450 mana.",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_brooch_iridescent_empowered", "no_fail": true, "level": 0 }
@@ -64,7 +64,7 @@
     "ammo": "essence_dull_type",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_gilded_aegis_healing", "no_fail": true, "level": 0, "need_worn": true },
     "relative": { "weight": 3020 },
-    "extend": { "flags": [ "NO_SALVAGE", "FANCY", "TRADER_KEEP_EQUIPPED" ] },
+    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
     "material_thickness": 5,
     "armor": [ { "encumbrance": 12, "coverage": 90, "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ] } ]
   },
@@ -239,7 +239,7 @@
     "ammo": "essence_blood_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 16 } } ],
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true } ],
-    "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "FANCY", "TRADER_KEEP_EQUIPPED", "POCKETS", "STURDY" ]
+    "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "POCKETS", "STURDY" ]
   },
   {
     "id": "revenant_crown",
@@ -922,7 +922,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "lightning_ward", "intensity": 1 } ] } ]
     },
-    "flags": [ "FANCY", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ]
   },
   {
     "id": "meteoric_talisman_on",
