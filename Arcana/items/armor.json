@@ -143,7 +143,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "MOVE_COST", "multiply": -0.9 }, { "value": "BONUS_DODGE", "add": 10 } ],
+          "values": [ { "value": "MOVE_COST", "multiply": -0.5 }, { "value": "BONUS_DODGE", "add": 5 } ],
           "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
         }
       ]
@@ -164,15 +164,15 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "incoming_damage_mod": [
-            { "type": "acid", "multiply": -0.5 },
-            { "type": "bash", "multiply": -0.5 },
-            { "type": "biological", "multiply": -0.5 },
-            { "type": "cold", "multiply": -0.5 },
-            { "type": "cut", "multiply": -0.5 },
-            { "type": "electric", "multiply": -0.5 },
-            { "type": "heat", "multiply": -0.5 },
-            { "type": "stab", "multiply": -0.5 },
-            { "type": "bullet", "multiply": -0.5 }
+            { "type": "acid", "multiply": -0.25 },
+            { "type": "bash", "multiply": -0.25 },
+            { "type": "biological", "multiply": -0.25 },
+            { "type": "cold", "multiply": -0.25 },
+            { "type": "cut", "multiply": -0.25 },
+            { "type": "electric", "multiply": -0.25 },
+            { "type": "heat", "multiply": -0.25 },
+            { "type": "stab", "multiply": -0.25 },
+            { "type": "bullet", "multiply": -0.25 }
           ]
         }
       ]

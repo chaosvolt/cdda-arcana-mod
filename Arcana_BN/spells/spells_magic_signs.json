@@ -388,7 +388,7 @@
     "id": "arcana_magic_earthweaving",
     "type": "SPELL",
     "name": { "str": "Sign: Earthweaving" },
-    "description": "Magic Sign\nUsing this spell will alter terrain at a single targeted point, raising and lowering earthen barriers from any diggable terrain, or raising and lowering solid rock from natural stone.",
+    "description": "Magic Sign\nUsing this spell will alter terrain at a single targeted point, raising and lowering earthen barriers from any diggable terrain, or raising and lowering solid rock from other walls or floors.",
     "message": "\"May we rebuild this world, one stone at a time…\"  You cast %s!",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_EXPLOSION_VFX", "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL", "IGNORE_WALLS" ],

@@ -117,7 +117,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "MOVE_COST", "multiply": -0.9 }, { "value": "BONUS_DODGE", "add": 10 } ],
+          "values": [ { "value": "MOVE_COST", "multiply": -0.5 }, { "value": "BONUS_DODGE", "add": 5 } ],
           "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
         }
       ]
@@ -137,15 +137,15 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "values": [
-            { "value": "ARMOR_ACID", "multiply": -0.5 },
-            { "value": "ARMOR_BASH", "multiply": -0.5 },
-            { "value": "ARMOR_BIO", "multiply": -0.5 },
-            { "value": "ARMOR_COLD", "multiply": -0.5 },
-            { "value": "ARMOR_CUT", "multiply": -0.5 },
-            { "value": "ARMOR_ELEC", "multiply": -0.5 },
-            { "value": "ARMOR_HEAT", "multiply": -0.5 },
-            { "value": "ARMOR_STAB", "multiply": -0.5 },
-            { "value": "ARMOR_BULLET", "multiply": -0.5 }
+            { "value": "ARMOR_ACID", "multiply": -0.25 },
+            { "value": "ARMOR_BASH", "multiply": -0.25 },
+            { "value": "ARMOR_BIO", "multiply": -0.25 },
+            { "value": "ARMOR_COLD", "multiply": -0.25 },
+            { "value": "ARMOR_CUT", "multiply": -0.25 },
+            { "value": "ARMOR_ELEC", "multiply": -0.25 },
+            { "value": "ARMOR_HEAT", "multiply": -0.25 },
+            { "value": "ARMOR_STAB", "multiply": -0.25 },
+            { "value": "ARMOR_BULLET", "multiply": -0.25 }
           ]
         }
       ]
