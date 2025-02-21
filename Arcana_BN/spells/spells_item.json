@@ -121,7 +121,7 @@
     "name": { "str": "Stunning Blast" },
     "description": "Blasts nearby targets for heavy damage.",
     "sprite": "fd_dazzling",
-    "valid_targets": [ "ally", "hostile" ],
+    "valid_targets": [ "hostile" ],
     "message": "A powerful blast of energy radiates from the charm!",
     "extra_effects": [
       { "id": "arcana_item_charm_bone_empowered_spike", "hit_self": false },
@@ -133,8 +133,8 @@
     "min_damage": 65,
     "max_damage": 65,
     "damage_type": "fire",
-    "min_aoe": 8,
-    "max_aoe": 8
+    "min_aoe": 4,
+    "max_aoe": 4
   },
   {
     "type": "SPELL",
@@ -142,29 +142,29 @@
     "name": { "str": "Stunning Blast Spike" },
     "description": "Doubles the damage for enemies that are close enough.",
     "sprite": "fd_dazzling",
-    "valid_targets": [ "ally", "hostile" ],
+    "valid_targets": [ "hostile" ],
     "message": "",
     "effect": "target_attack",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "min_damage": 65,
     "max_damage": 65,
     "damage_type": "fire",
-    "min_aoe": 2,
-    "max_aoe": 2
+    "min_aoe": 1,
+    "max_aoe": 1
   },
   {
     "id": "arcana_item_charm_bone_empowered_paralyze",
     "type": "SPELL",
     "name": { "str": "Stunning Blast Paralysis" },
     "description": "This makes the enemies brain-zapped for once!",
-    "valid_targets": [ "ally", "hostile" ],
+    "valid_targets": [ "hostile" ],
     "message": "",
     "flags": [ "NO_EXPLOSION_VFX", "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect": "mod_moves",
     "min_damage": -1300,
     "max_damage": -1300,
-    "min_aoe": 8,
-    "max_aoe": 8
+    "min_aoe": 4,
+    "max_aoe": 4
   },
   {
     "id": "arcana_item_charm_bone_empowered_fatigue",

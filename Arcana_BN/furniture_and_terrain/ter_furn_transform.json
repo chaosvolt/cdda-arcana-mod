@@ -45,7 +45,8 @@
       { "result": "t_dirt", "valid_flags": [ "WALL" ] },
       { "result": "t_rock_floor_no_roof", "valid_flags": [ "MINEABLE" ] },
       { "result": "t_rock", "valid_flags": [ "FLAT" ] }
-    ]
+    ],
+    "furniture": [ { "result": "f_null", "valid_flags": [ "MOUNTABLE", "BLOCK_WIND", "ORGANIC", "BLOCKSDOOR", "NOITEM", "MINEABLE" ] } ]
   },
   {
     "type": "ter_furn_transform",
