@@ -414,7 +414,7 @@
           "book_bloodmagic"
         ],
         "entries": [
-          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 5 },
+          { "item": "bloodaxe", "ammo-item": "essence_blood", "charges": 5, "container-item": "axe_ring" },
           { "item": "shrike_misericorde", "charges": 2, "container-item": "scabbard" },
           { "item": "flintlock_pouch", "contents-group": "bandolier_flintlock_shrike" },
           { "item": "flintlock_ammo", "charges": 8 },
