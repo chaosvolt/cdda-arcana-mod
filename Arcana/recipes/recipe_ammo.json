@@ -28,7 +28,7 @@
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 95, 5 ],
     "autolearn": true,
-    "book_learn": [ [ "book_hexenhammer", 0 ], [ "book_syncretism", 1 ], [ "book_potioncraft", 1 ] ],
+    "book_learn": [ [ "book_hexenhammer", 0 ], [ "book_syncretism", 0 ], [ "book_potioncraft", 0 ] ],
     "result_mult": 30,
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence", 1 ] ] ],
@@ -47,7 +47,7 @@
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 95, 5 ],
     "autolearn": true,
-    "book_learn": [ [ "book_hexenhammer", 0 ], [ "book_syncretism", 1 ], [ "book_potioncraft", 1 ] ],
+    "book_learn": [ [ "book_hexenhammer", 0 ], [ "book_syncretism", 0 ], [ "book_potioncraft", 0 ] ],
     "result_mult": 20,
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [
