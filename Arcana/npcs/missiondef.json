@@ -222,7 +222,6 @@
         "om_terrain_replace": "field",
         "reveal_radius": 3,
         "random": true,
-        "search_range": 180,
         "min_distance": 10
       }
     },
@@ -684,7 +683,7 @@
           { "point": "trap", "id": "tr_rollmat", "x": 12, "y": 13 }
         ],
         "place_loot": [
-          { "group": "trash_forest", "x": [ 1, 22 ], "y": [ 1, 2 ], "repeat": 2, "chance": 75 },
+          { "group": "SUS_trash_forest_manmade", "x": [ 1, 22 ], "y": [ 1, 2 ], "repeat": 2, "chance": 75 },
           { "group": "cannedfood", "x": 14, "y": 10, "repeat": 5, "chance": 50 },
           { "group": "drugs_heal_simple", "x": 14, "y": 10, "repeat": 5, "chance": 50 },
           { "group": "weapons", "x": 14, "y": 12, "repeat": 2, "chance": 25 },

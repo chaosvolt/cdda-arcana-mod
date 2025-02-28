@@ -40,7 +40,7 @@
         { "type": "NPC_NO_INVESTIGATE", "faction": "wasteland_scavengers", "x": [ 0, 23 ], "y": [ 3, 20 ] }
       ],
       "items": {
-        "D": { "item": "trash", "chance": 60, "repeat": [ 1, 3 ] },
+        "D": { "item": "SUS_trash_floor_light", "chance": 60 },
         "L": { "item": "cleaning", "chance": 80, "repeat": [ 2, 6 ] },
         "S": [ { "item": "dishes_dining", "chance": 80, "repeat": [ 1, 3 ] }, { "item": "dishes_utility", "chance": 10 } ],
         "T": { "item": "dishes_dining", "chance": 5 },
@@ -791,7 +791,7 @@
       },
       "furniture": { "B": "f_rack", "R": "f_dumpster", "l": "f_locker", "b": "f_bench", "c": "f_counter" },
       "place_nested": [ { "chunks": [ [ "null", 50 ], [ "abstorefront_1_spawns", 50 ] ], "x": 0, "y": 0 } ],
-      "items": { ".": { "item": "trash", "chance": 15 } },
+      "items": { ".": { "item": "SUS_trash_floor_light", "chance": 15 } },
       "vehicles": { ".": { "vehicle": "shopping_cart", "chance": 1, "status": 1 } }
     }
   },
@@ -914,7 +914,7 @@
         "W": { "item": "allclothes", "chance": 75, "repeat": 5 },
         "c": { "item": "supplies_hardware", "chance": 50, "repeat": 10 },
         "n": { "item": "cannedfood", "chance": 50, "repeat": 5 },
-        "t": { "item": "trash", "chance": 50, "repeat": 3 }
+        "t": { "item": "SUS_trash_floor_light", "chance": 50, "repeat": 3 }
       }
     }
   },
@@ -1151,7 +1151,7 @@
         "d": [ { "item": "clothing_outdoor_torso", "chance": 75 }, { "item": "clothing_outdoor_pants", "chance": 75 } ],
         "n": { "item": "cannedfood", "chance": 50, "repeat": 5 },
         "r": { "item": "magic_crafting", "chance": 100, "repeat": [ 2, 4 ] },
-        "t": { "item": "trash", "chance": 50, "repeat": 3 }
+        "t": { "item": "SUS_trash_floor_light", "chance": 50, "repeat": 3 }
       },
       "place_monsters": [ { "monster": "GROUP_ZOMBIE", "x": [ 2, 21 ], "y": [ 7, 18 ], "chance": 2 } ]
     }
@@ -1806,8 +1806,8 @@
         { "item": "snacks", "x": 16, "y": 9, "chance": 85 },
         { "item": "magazines", "x": 16, "y": 9, "chance": 60, "repeat": 4 },
         { "item": "electronics", "x": 21, "y": [ 12, 13 ], "chance": 85, "repeat": 2 },
-        { "item": "trash", "x": 17, "y": 15, "chance": 65 },
-        { "item": "trash", "x": [ 15, 17 ], "y": [ 20, 21 ], "chance": 80 },
+        { "item": "SUS_trash_floor_light", "x": 17, "y": 15, "chance": 65 },
+        { "item": "SUS_trash_floor_light", "x": [ 15, 17 ], "y": [ 20, 21 ], "chance": 80 },
         { "item": "tools_science", "x": 17, "y": 15, "chance": 50, "repeat": 2 },
         { "item": "supplies_electronics", "x": 17, "y": 15, "chance": 50, "repeat": 2 },
         { "item": "magic_crafting", "x": 17, "y": 15, "chance": 50, "repeat": 2 },
@@ -2461,7 +2461,7 @@
           { "item": "robots", "chance": 10, "repeat": 2 },
           { "item": "supplies_electronics", "chance": 50, "repeat": 3 }
         ],
-        "t": { "item": "trash", "chance": 75, "repeat": 3 }
+        "t": { "item": "SUS_trash_floor_light", "chance": 75, "repeat": 3 }
       },
       "place_loot": [
         { "group": "magazines", "x": 4, "y": 13, "chance": 50, "repeat": 3 },

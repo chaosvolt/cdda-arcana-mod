@@ -274,7 +274,7 @@
         "v": "t_thconc_floor"
       },
       "items": {
-        " ": { "item": "trash", "chance": 2 },
+        " ": { "item": "SUS_trash_floor_light", "chance": 1 },
         "R": { "item": "unaligned_arcanist_books_postapoc", "chance": 25, "repeat": 3 },
         "h": { "item": "summoner_casualties_fresh", "chance": 100 },
         "s": { "item": "magic_consumables", "chance": 25, "repeat": 2 },
@@ -317,7 +317,7 @@
         "      ||||||||||||||||| ",
         "                        "
       ],
-      "palettes": [ "basement_empty" ],
+      "palettes": [ "standard_domestic_basement_palette" ],
       "terrain": { "h": "t_thconc_floor", "r": "t_thconc_floor", "s": "t_thconc_floor" },
       "furniture": { "e": "f_table", "h": "f_chair", "r": "f_rack", "s": "f_safe_l" },
       "mapping": {
@@ -397,7 +397,7 @@
         "           |||||||||||| ",
         "                        "
       ],
-      "palettes": [ "basement_empty" ],
+      "palettes": [ "standard_domestic_basement_palette" ],
       "terrain": { "h": "t_thconc_floor", "r": "t_thconc_floor", "s": "t_thconc_floor" },
       "furniture": { "e": "f_table", "h": "f_chair", "r": "f_rack", "s": "f_safe_l" },
       "mapping": {
@@ -607,7 +607,7 @@
         "                        ",
         "                        "
       ],
-      "palettes": [ "basement_empty" ],
+      "palettes": [ "standard_domestic_basement_palette" ],
       "terrain": {
         ":": "t_dirtfloor",
         "B": "t_dirtfloor",

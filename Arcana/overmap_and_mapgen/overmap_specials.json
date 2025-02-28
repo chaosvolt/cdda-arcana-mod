@@ -183,10 +183,9 @@
     "connections": [ { "point": [ 0, 2, 0 ], "terrain": "road" } ],
     "locations": [ "land" ],
     "city_distance": [ 10, -1 ],
-    "city_sizes": [ 1, 20 ],
-    "//": "Has to be spawned in by a mission, to avoid bugs.",
-    "occurrences": [ 0, 0 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ],
+    "city_sizes": [ 1, -1 ],
+    "occurrences": [ 75, 100 ],
+    "flags": [ "CLASSIC", "WILDERNESS", "GLOBALLY_UNIQUE" ],
     "rotate": false
   },
   {

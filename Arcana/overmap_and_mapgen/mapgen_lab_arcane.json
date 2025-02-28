@@ -136,7 +136,7 @@
         "d": { "item": "office_supplies", "chance": 70, "repeat": 3 },
         "e": { "item": "book_mag_tech", "chance": 25, "repeat": 2 },
         "l": { "item": "cop_armory", "chance": 25, "repeat": 4 },
-        "t": { "item": "floor_trash", "chance": 50, "repeat": 3 },
+        "t": { "item": "SUS_trash_floor_light" },
         "r": { "item": "mechanics", "chance": 25, "repeat": 5 },
         "s": { "item": "cleaning", "chance": 50, "repeat": 5 }
       },
@@ -327,7 +327,7 @@
         ],
         "d": { "item": "office_supplies", "chance": 70, "repeat": 3 },
         "o": { "item": "oven", "chance": 50, "repeat": 2 },
-        "t": { "item": "floor_trash", "chance": 50, "repeat": 3 },
+        "t": { "item": "SUS_trash_floor_light" },
         "s": { "item": "cleaning", "chance": 50, "repeat": 5 }
       },
       "place_loot": [
@@ -549,7 +549,7 @@
         "d": { "item": "office_supplies", "chance": 70, "repeat": 3 },
         "f": [ { "item": "supplies_reagents_lab", "chance": 25, "repeat": 3 }, { "item": "lab_misc_anomalous_items", "chance": 10 } ],
         "o": { "item": "oven", "chance": 50, "repeat": 2 },
-        "t": { "item": "floor_trash", "chance": 50, "repeat": 3 },
+        "t": { "item": "SUS_trash_floor_light" },
         "s": { "item": "cleaning", "chance": 50, "repeat": 5 }
       },
       "place_loot": [
@@ -801,7 +801,7 @@
         "O": { "item": "lab_magitech_general", "chance": 50, "repeat": 3 },
         "d": { "item": "office_supplies", "chance": 70, "repeat": 3 },
         "o": { "item": "oven", "chance": 50, "repeat": 2 },
-        "t": { "item": "floor_trash", "chance": 50, "repeat": 3 },
+        "t": { "item": "SUS_trash_floor_light"},
         "s": { "item": "cleaning", "chance": 50, "repeat": 5 }
       },
       "place_loot": [

@@ -488,7 +488,7 @@
     "subtype": "collection",
     "entries": [
       { "group": "wreckage", "prob": 5 },
-      { "group": "trash_forest", "prob": 5 },
+      { "group": "SUS_trash_forest_no_manmade", "prob": 5 },
       {
         "distribution": [ { "item": "inflorescent_root", "prob": 50 }, { "item": "iron_thorn", "prob": 50 } ],
         "prob": 10
@@ -518,7 +518,7 @@
       { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] },
       { "group": "subway", "prob": 40 },
       { "group": "sewer", "prob": 20 },
-      { "group": "trash", "prob": 5 },
+      { "group": "SUS_trash_trashcan", "prob": 5 },
       { "group": "bedroom", "prob": 5 },
       { "group": "dresser", "prob": 10 },
       { "group": "ammo", "prob": 18 }
