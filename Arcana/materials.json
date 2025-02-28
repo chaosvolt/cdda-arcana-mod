@@ -11,6 +11,7 @@
     "dmg_adj": [ "lightly damaged", "damaged", "very damaged", "thoroughly damaged" ],
     "bash_dmg_verb": "damaged",
     "cut_dmg_verb": "damaged",
+    "acid_dmg_verb": "damaged",
     "fuel_data": { "energy": "1000 kJ" },
     "repair_difficulty": 3
   },
@@ -78,6 +79,7 @@
     "wind_resist": 90,
     "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
     "bash_dmg_verb": "cracked",
-    "cut_dmg_verb": "chipped"
+    "cut_dmg_verb": "chipped",
+    "acid_dmg_verb": "damaged"
   }
 ]

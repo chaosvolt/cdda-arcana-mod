@@ -7,6 +7,6 @@
     "description": "Adds a host of craftable magic items and spells, centered around the use of Arcana skill to research and exploit otherworldly monsters and anomalies.",
     "version": "DDA version, update 2/21/2025",
     "category": "content",
-    "dependencies": [ "dda" ]
+    "dependencies": [ "tlg" ]
   }
 ]
