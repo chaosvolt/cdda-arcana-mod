@@ -1543,6 +1543,7 @@
           "has": "WIELD",
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 }, { "id": "arcana_react_moonstone_touch", "once_in": 10 } ],
+          "ench_effects": [ { "effect": "cold_ward", "intensity": 1 } ],
           "hit_me_effect": [
             {
               "id": "arcana_react_shadowy_shield",
@@ -1555,9 +1556,10 @@
         {
           "has": "WIELD",
           "condition": "ACTIVE",
-          "incoming_damage_mod": [ { "type": "cold", "multiply": -0.5 } ],
-          "ench_effects": [ { "effect": "cold_ward", "intensity": 1 } ]
-        }
+		  "values": [ 
+		  { "value": "ARMOR_COLD", "multiply": -0.5 } 
+		  ]
+		}
       ]
     },
     "use_action": {
