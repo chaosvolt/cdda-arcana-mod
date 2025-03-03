@@ -136,7 +136,7 @@
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 9 ] ],
     "//": "NON_FOULING because transforming it to blade mode already resets fouling.",
-    "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "NO_SALVAGE", "PRIMITIVE_RANGED_WEAPON", "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "NO_SALVAGE", "RELOAD_ONE", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "ammo_effects": [ "ARCANA_SHRIKE_COLD_BULLET" ],
     "relic_data": {
       "passive_effects": [

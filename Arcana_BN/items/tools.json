@@ -968,6 +968,53 @@
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },
   {
+    "id": "shrike_misericorde",
+    "looks_like": "rapier",
+    "type": "TOOL",
+    "category": "weapons",
+    "weapon_category": [ "DUELING_SWORDS" ],
+    "name": { "str": "shrike's misericorde" },
+    "description": "An ornate silver weapon featuring a thin blade and two flintlock barrels built into the guard.  Its strikes inflict victims with a deathly chill.  Activating it will transform it into a more compact form, allowing its user to load and fire it.  Its pistol form will impart a freezing effect on shots fired from it, including otherworldly damage that can bypass mundane armor, though robots and certain supernatural monsters will only suffer the bullet's normal damage.",
+    "weight": "2 kg",
+    "volume": "1500 ml",
+    "price": "1000 USD",
+    "price_postapoc": "50 USD",
+    "to_hit": 2,
+    "bashing": 12,
+    "cutting": 24,
+    "material": [ "iron", "silver" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "ammo": [ "flintlock", "flintlockshot" ],
+    "max_charges": 2,
+    "techniques": [ "RAPID", "WBLOCK_2", "PRECISE" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 9 ] ],
+    "flags": [ "STAB", "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE", "NO_RELOAD", "NO_UNLOAD" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "arcana_react_shrike_misericorde_chill",
+              "once_in": 5,
+              "message": "An unearthly chill radiates from your weapon.",
+              "npc_message": "An unearthly chill radiates from %1$s's weapon."
+            }
+          ]
+        }
+      ]
+    },
+    "use_action": {
+      "menu_text": "Fold into pistol mode",
+      "type": "transform",
+      "target": "shrike_misericorde_folded",
+      "msg": "The weapon splinters and compacts, reforming into its pistol form.",
+      "need_wielding": true
+    }
+  },
+  {
     "id": "lichhook",
     "copy-from": "khopesh",
     "type": "TOOL",
