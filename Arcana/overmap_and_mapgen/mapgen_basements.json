@@ -335,7 +335,7 @@
             { "item": "magic_crafting", "chance": 10 },
             { "item": "magic_crafting", "chance": 10 },
             { "item": "ammo_common", "chance": 50 },
-            { "item": "ammo_reloaded", "chance": 75 },
+            { "item": "ammo_common_boxed", "chance": 75 },
             { "item": "guns_common", "chance": 25 },
             { "item": "guns_improvised", "chance": 50 }
           ]
@@ -415,7 +415,7 @@
             { "item": "magic_crafting", "chance": 10 },
             { "item": "magic_crafting", "chance": 10 },
             { "item": "ammo_common", "chance": 50 },
-            { "item": "ammo_reloaded", "chance": 75 },
+            { "item": "ammo_common_boxed", "chance": 75 },
             { "item": "guns_common", "chance": 25 },
             { "item": "guns_improvised", "chance": 50 }
           ]
@@ -558,7 +558,7 @@
           "ammo": 75,
           "magazine": 100
         },
-        { "group": "ammo_reloaded", "x": 19, "y": 5, "chance": 100, "repeat": [ 1, 3 ], "magazine": 100 },
+        { "group": "ammo_common_boxed", "x": 19, "y": 5, "chance": 100, "repeat": [ 1, 3 ], "magazine": 100 },
         { "group": "guns_pistol_common", "x": 15, "y": 10, "chance": 30, "ammo": 75, "magazine": 100 },
         { "group": "guns_pistol_common", "x": 21, "y": 10, "chance": 30, "ammo": 75, "magazine": 100 },
         { "group": "clothing_outdoor_set", "x": 15, "y": 10, "chance": 30 },

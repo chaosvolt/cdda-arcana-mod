@@ -107,7 +107,7 @@
         { "item": "bone_human", "x": [ 18, 19 ], "y": 18, "chance": 50, "repeat": 10 },
         { "group": "kitchen_counters", "x": [ 18, 19 ], "y": 18, "chance": 50, "repeat": 4 },
         { "item": "cookbook_human", "x": [ 18, 19 ], "y": 18 },
-        { "group": "ammo_reloaded", "x": [ 21, 22 ], "y": 18, "chance": 50, "repeat": 8 },
+        { "group": "ammo_common_boxed", "x": [ 21, 22 ], "y": 18, "chance": 50, "repeat": 8 },
         { "group": "behindcounter", "x": [ 4, 6 ], "y": 21, "chance": 75, "repeat": 3 },
         { "group": "meth_ingredients", "x": [ 9, 13 ], "y": 21, "chance": 80, "repeat": 7 },
         { "group": "stash_drugs", "x": 21, "y": 21, "chance": 50, "repeat": 5 },

@@ -352,7 +352,7 @@
       ],
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ],
       "place_loot": [
-        { "group": "ammo_reloaded", "x": [ 4, 6 ], "y": 17, "chance": 75, "repeat": 7 },
+        { "group": "ammo_common_boxed", "x": [ 4, 6 ], "y": 17, "chance": 75, "repeat": 7 },
         { "group": "arcana_purifying_shot_group", "x": [ 4, 6 ], "y": 17, "chance": 75, "repeat": 3 },
         { "group": "guns_milspec", "x": 4, "y": [ 19, 20 ], "chance": 75, "repeat": 5 },
         { "group": "rural_church_start_scales", "x": 4, "y": 19 }
@@ -424,7 +424,7 @@
       "place_loot": [
         { "group": "preserved_food", "x": [ 4, 6 ], "y": 20, "chance": 50, "repeat": 10 },
         { "group": "tools_hunting", "x": [ 4, 5 ], "y": 17, "chance": 50, "repeat": 5 },
-        { "group": "ammo_reloaded", "x": [ 4, 5 ], "y": 17, "chance": 75, "repeat": 5 },
+        { "group": "ammo_common_boxed", "x": [ 4, 5 ], "y": 17, "chance": 75, "repeat": 5 },
         { "group": "rural_church_start_scales", "x": 5, "y": 17 }
       ],
       "faction_owner": [ { "id": "cleansing_flame_aux", "x": [ 4, 6 ], "y": [ 17, 20 ] } ],
@@ -460,7 +460,7 @@
         { "group": "wood_workshop", "x": [ 4, 5 ], "y": 20, "chance": 50, "repeat": 10 },
         { "group": "preserved_food", "x": 6, "y": 20, "chance": 50, "repeat": 10 },
         { "group": "tools_hunting", "x": [ 4, 5 ], "y": 17, "chance": 50, "repeat": 5 },
-        { "group": "ammo_reloaded", "x": [ 4, 5 ], "y": 17, "chance": 75, "repeat": 5 },
+        { "group": "ammo_common_boxed", "x": [ 4, 5 ], "y": 17, "chance": 75, "repeat": 5 },
         { "group": "arcana_purifying_shot_group", "x": [ 4, 5 ], "y": 17, "chance": 50, "repeat": 5 },
         { "group": "rural_church_start_scales", "x": 5, "y": 17 }
       ],
@@ -506,7 +506,7 @@
       ],
       "place_nested": [ { "chunks": [ "cf_church_upgrade_4_d" ], "x": 4, "y": 17 } ],
       "place_loot": [
-        { "group": "ammo_reloaded", "x": [ 4, 5 ], "y": 17, "chance": 75, "repeat": 7 },
+        { "group": "ammo_common_boxed", "x": [ 4, 5 ], "y": 17, "chance": 75, "repeat": 7 },
         { "group": "arcana_purifying_shot_group", "x": [ 4, 5 ], "y": 17, "chance": 75, "repeat": 5 },
         { "group": "drugs_soldier", "x": 6, "y": 17, "chance": 75, "repeat": 10 },
         { "group": "rural_church_medical_items", "x": 6, "y": 17, "chance": 75, "repeat": 5 },
