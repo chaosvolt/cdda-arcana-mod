@@ -688,7 +688,7 @@
           { "group": "drugs_heal_simple", "x": 14, "y": 10, "repeat": 5, "chance": 50 },
           { "group": "weapons", "x": 14, "y": 12, "repeat": 2, "chance": 25 },
           { "group": "guns_survival", "x": 14, "y": 12, "repeat": 2, "chance": 25 },
-          { "group": "ammo_reloaded", "x": 14, "y": 12, "repeat": 5, "chance": 50 },
+          { "group": "ammo_common_boxed", "x": 14, "y": 12, "repeat": 5, "chance": 50 },
           { "item": "shovel", "x": 14, "y": 12, "chance": 80 },
           { "group": "remains_soldier", "x": 10, "y": 16, "chance": 100 },
           { "item": "223_casing", "x": [ 10, 15 ], "y": [ 13, 15 ], "repeat": 10, "chance": 50 },

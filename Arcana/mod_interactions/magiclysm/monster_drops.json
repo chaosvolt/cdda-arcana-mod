@@ -189,7 +189,7 @@
       { "group": "forge_life", "prob": 40 },
       { "group": "bedroom", "prob": 1 },
       { "group": "dresser", "prob": 5 },
-      { "group": "ammo", "prob": 18 }
+      { "group": "ammo_common_loose", "prob": 18 }
     ]
   },
   {
