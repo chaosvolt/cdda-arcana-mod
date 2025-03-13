@@ -75,7 +75,6 @@
         "D": "f_dresser",
         "F": "f_fridge",
         "H": "f_hay",
-        "T": "f_toilet",
         "V": "f_bathtub",
         "a": "f_slab",
         "b": "f_bookcase",
@@ -88,7 +87,7 @@
         "t": "f_table",
         "v": "f_brazier"
       },
-      "place_toilets": [ { "x": 19, "y": 19 } ],
+      "toilets": { "T": {  } },
       "mapping": {
         "B": { "items": { "item": "bed", "chance": 75 } },
         "D": { "items": { "item": "dresser", "chance": 90 } },
@@ -120,7 +119,7 @@
         { "item": "bone_human", "x": [ 8, 16 ], "y": [ 2, 12 ], "repeat": [ 10, 20 ] },
         { "item": "recipe_surv", "x": 8, "y": 18 },
         { "group": "reading_lights", "x": 8, "y": 18 },
-        { "group": "magic_books_postapoc", "x": [ 8, 10 ], "y": 19, "chance": 75, "repeat": 3 }
+        { "group": "magic_books_postapoc", "x": [ 11, 14 ], "y": 19, "chance": 75, "repeat": 3 }
       ],
       "place_vehicles": [ { "vehicle": "surv_tachanka", "x": 12, "y": 8, "chance": 90, "status": -1, "rotation": 270 } ],
       "place_monster": [
