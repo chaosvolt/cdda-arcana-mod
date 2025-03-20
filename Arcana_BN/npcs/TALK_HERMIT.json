@@ -717,13 +717,27 @@
       {
         "text": "Do you have a copy of Oaths to The Chalice?",
         "topic": "TALK_HERMIT_QUEST_HELP_1_CHALICE",
-        "effect": { "u_buy_item": "book_sacrifice" },
-        "condition": { "not": { "u_has_item": "book_sacrifice" } }
+        "effect": [
+          { "u_buy_item": "book_sacrifice" },
+          { "u_add_var": "arcana_alex_gave_book", "type": "mission", "context": "hermit", "value": "yes" }
+        ],
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "arcana_alex_gave_book", "type": "mission", "context": "hermit", "value": "yes" } },
+            { "not": { "u_has_item": "book_sacrifice" } }
+          ]
+        }
       },
       {
         "text": "Do you have a copy of Sanguine Codex?",
         "topic": "TALK_HERMIT_QUEST_HELP_1_SANGUINE",
-        "condition": { "not": { "u_has_item": "book_bloodmagic" } }
+        "effect": { "u_add_var": "arcana_alex_asked_for_codex", "type": "mission", "context": "hermit", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "arcana_alex_asked_for_codex", "type": "mission", "context": "hermit", "value": "yes" } },
+            { "not": { "u_has_item": "book_bloodmagic" } }
+          ]
+        }
       },
       { "text": "What else will I need to do to restore the sword?", "topic": "TALK_HERMIT_QUEST_HELP_1_GENERAL" },
       { "text": "Never mind.", "topic": "TALK_HERMIT" }
@@ -768,7 +782,7 @@
     "dynamic_line": {
       "u_has_trait": "THRESH_DRAGONBLOOD",
       "yes": "And yet you seem to have the mark of their order's work upon you.  This will hinder using the blade for its proper purpose, but I'm willing to trust you to help restore it at least.  However you ended up this way, it would've required one of their books.  If you don't have it in your possession, seek out their hideouts, far from civilization.",
-      "no": "I'm afraid I don't have a copy of that book on hand.  I can offer you what advise I can in finding one though.  If you encounter any of their hideouts, whether hidden away in the city or far from civilization, be extremely cautious.  The text also sometimes has a habit of finding its way into the hands of wealthy collectors, and undead of unusual nature may hint at long-dead arcanists still cling to their tomes."
+      "no": "I'm afraid I don't have a copy of that book on hand.  I can offer you what advice I can in finding one though.  If you encounter any of their hideouts, whether hidden away in the city or far from civilization, be extremely cautious.  The text also sometimes has a habit of finding its way into the hands of wealthy collectors, and undead of unusual nature may hint at long-dead arcanists still cling to their tomes."
     },
     "responses": [ { "text": "I see.", "topic": "TALK_HERMIT" } ]
   },
@@ -776,6 +790,20 @@
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUEST_HELP_1_GENERAL",
     "dynamic_line": "You will require fire to burn the corruption from the blade, a holy symbol to restore its sanctity.  Even those of this world's faiths will suffice, even the sacred tools of the Cleansing Flame if nothing else, or the chalice we use for our rituals.  Salt for the ritual circle, and blood essence to fuel the counter-spell contained within the Sanguine Codex.  It would be best if you seek these items on your own, to better understand the gravity of your task.",
+    "speaker_effect": [
+      {
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "arcana_learned_blade_recipe", "type": "flag", "context": "hermit", "value": "yes" } },
+            { "not": { "u_know_recipe": "veilblade" } }
+          ]
+        },
+        "effect": [
+          { "u_learn_recipe": "veilblade" },
+          { "u_add_var": "arcana_learned_blade_recipe", "type": "flag", "context": "hermit", "value": "yes" }
+        ]
+      }
+    ],
     "responses": [ { "text": "…", "topic": "TALK_HERMIT" } ]
   },
   {
