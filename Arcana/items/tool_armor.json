@@ -537,16 +537,16 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "incoming_damage_mod": [
-            { "type": "bash", "add": -10 },
-            { "type": "cut", "add": -10 },
-            { "type": "stab", "add": -10 },
-            { "type": "bullet", "add": -10 },
-            { "type": "heat", "multiply": -0.5 },
-            { "type": "cold", "multiply": -0.5 },
-            { "type": "acid", "multiply": -0.5 }
-          ],
-          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+		  "values": [ 
+			  { "value": "ARMOR_ACID", "multiply": -0.5 }, 
+			  { "value": "ARMOR_BASH", "add": -10 },
+			  { "value": "ARMOR_COLD", "multiply": -0.5 }, 
+			  { "value": "ARMOR_CUT", "add": -10 }, 
+			  { "value": "ARMOR_HEAT", "multiply": -0.5 }, 		  
+			  { "value": "ARMOR_STAB", "add": -10 }, 
+			  { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, 
+			  { "value": "CLIMATE_CONTROL_CHILL", "add": 50 },
+			  { "value": "ARMOR_BULLET", "add": -10 } ]
         }
       ]
     },
@@ -558,9 +558,9 @@
       "BLOCK_WHILE_WORN",
       "NO_SALVAGE",
       "AURA",
-      "POWERARMOR_COMPATIBLE"
+      "POWERARMOR_COMPATIBLE",
+	  "ONLY_ONE"
     ],
-    "max_worn": 1,
     "sided": true,
     "material_thickness": 4,
     "armor": [ { "encumbrance": 10, "coverage": 80, "covers": [ "arm_l", "arm_r", "hand_l", "hand_r" ] } ]
@@ -614,8 +614,13 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "incoming_damage_mod": [ { "type": "heat", "multiply": -1.0 }, { "type": "stab", "multiply": -1.0 }, { "type": "bullet", "multiply": -0.9 } ],
-          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+          "values": [ 
+		  { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, 
+		  { "value": "CLIMATE_CONTROL_CHILL", "add": 50 },
+		  { "value": "ARMOR_HEAT", "multiply": -1 },
+		  { "value": "ARMOR_STAB", "multiply": -1 },
+		  { "value": "ARMOR_BULLET", "multiply": -0.9 }
+		  ]
         }
       ]
     },
@@ -854,8 +859,11 @@
         {
           "has": "WORN",
           "condition": "ACTIVE",
-          "incoming_damage_mod": [ { "type": "heat", "multiply": -0.5 } ],
-          "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ],
+          "values": [ 
+		  { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, 
+		  { "value": "CLIMATE_CONTROL_CHILL", "add": 50 },
+		  { "value": "ARMOR_HEAT", "multiply": -0.5 } 
+		  ],
           "ench_effects": [ { "effect": "heat_ward", "intensity": 1 } ]
         }
       ]
