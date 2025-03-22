@@ -53,11 +53,12 @@
   {
     "type": "mapgen",
     "method": "json",
-    "update_mapgen_id": "cf_church_upgrade_1_b",
+    "update_mapgen_id": "cf_church_upgrade_1_c",
     "object": {
       "set": [
         { "line": "terrain", "id": "t_rdoor_c", "x": 22, "x2": 22, "y": 9, "y2": 10 },
-        { "point": "terrain", "id": "t_pit", "x": 20, "y": 3 }
+        { "point": "terrain", "id": "t_pit", "x": 20, "y": 3 },
+        { "point": "furniture", "id": "f_arcana_dimension_doorway", "x": 20, "y": 16 }
       ]
     }
   },

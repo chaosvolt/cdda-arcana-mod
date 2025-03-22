@@ -169,12 +169,12 @@
         "        =3??3=          ",
         "       ==CCCC3          ",
         "      ==.....?  ====   =",
-        "      3{..Zb.3 ==..== ==",
-        "      ?{.....===....===.",
+        "      3{.S.Z.3 ==..== ==",
+        "      ?{.!.b.===....===.",
         "      .{......+..>>..+i.",
         "      .{......+..>>..+i.",
-        "      ?{.....===....===.",
-        "      3{..AF.3 ==..== ==",
+        "      ?{...F.===....===.",
+        "      3{.P.A.3 ==..== ==",
         "      ==.....?  ====   =",
         "       ==CCCC3          ",
         "        =3??3=          ",
@@ -186,9 +186,9 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
-      "set": [ { "point": "trap", "id": "tr_portal", "x": [ 9, 11 ], "y": [ 9, 14 ], "repeat": [ 1, 2 ] } ],
       "mapping": { "{": { "item": [ { "item": "glass_shard", "chance": 75 } ] } },
-      "terrain": { "?": [ "t_window_stained_blue", "t_rock_floor" ] },
+      "terrain": { "?": [ "t_window_stained_blue", "t_rock_floor" ], "!": "t_rock_floor" },
+      "traps": { "!": "tr_portal" },
       "place_loot": [
         { "group": "chalice_cult_gear", "x": [ 9, 12 ], "y": 7, "chance": 40, "repeat": 3 },
         { "group": "chalice_cult_gear_magic", "x": [ 9, 12 ], "y": 7, "chance": 25, "repeat": 3 },
@@ -218,7 +218,7 @@
         "=   ====  ?.]]..==      ",
         "== ==..== 3.]].hd3      ",
         ".===....===.]].hd?      ",
-        ".i+..>>..+.....hd.      ",
+        ".i+..>>..+..!..hd.      ",
         ".i+..>>..+.....hd.      ",
         ".===....===.]].hd?      ",
         "== ==..== 3.]].hd3      ",
@@ -233,12 +233,12 @@
         "                        "
       ],
       "palettes": [ "arcana_palette" ],
-      "set": [ { "point": "trap", "id": "tr_portal", "x": [ 12, 13 ], "y": [ 11, 12 ] } ],
       "mapping": {
         "d": { "item": [ { "item": "glass_shard", "chance": 50 } ] },
         "h": { "item": [ { "item": "glass_shard", "chance": 25 } ] }
       },
-      "terrain": { "?": [ "t_window_stained_blue", "t_rock_floor" ] },
+      "terrain": { "?": [ "t_window_stained_blue", "t_rock_floor" ], "!": "t_rock_floor" },
+      "traps": { "!": "tr_portal" },
       "place_loot": [
         { "group": "chalice_cult_books", "x": [ 12, 13 ], "y": [ 8, 10 ], "chance": 50, "repeat": 10 },
         { "group": "chalice_cult_books", "x": [ 12, 13 ], "y": [ 13, 15 ], "chance": 50, "repeat": 10 },
