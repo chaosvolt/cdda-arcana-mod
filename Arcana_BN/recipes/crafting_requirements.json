@@ -3,13 +3,13 @@
     "id": "arcana_bone_standard",
     "type": "requirement",
     "//": "Bones used for sacrificial recipes, favoring human bones.",
-    "components": [ [ [ "bone_human", 2 ], [ "bone_heavy", 3 ], [ "bone", 4 ], [ "bone_tainted", 5 ] ] ]
+    "components": [ [ [ "bone_human", 3 ], [ "bone_heavy", 4 ], [ "bone", 4 ], [ "bone_tainted", 5 ] ] ]
   },
   {
     "id": "arcana_blood_standard",
     "type": "requirement",
     "//": "Any available sort of blood, ideally human blood.",
-    "components": [ [ [ "blood", 1 ], [ "animal_blood", 3 ], [ "mutant_blood", 4 ] ] ]
+    "components": [ [ [ "blood", 1 ], [ "animal_blood", 2 ], [ "mutant_blood", 3 ] ] ]
   },
   {
     "id": "arcana_forging_tools_standard",
@@ -41,7 +41,7 @@
     "id": "arcana_flesh_standard",
     "type": "requirement",
     "//": "Flesh suitable for blood sacrifice, human meat is preferable.",
-    "components": [ [ [ "human_flesh", 1 ], [ "mutant_human_flesh", 2 ], [ "meat", 3 ], [ "mutant_meat", 4 ] ] ]
+    "components": [ [ [ "human_flesh", 1 ], [ "mutant_human_flesh", 2 ], [ "meat", 2 ], [ "mutant_meat", 3 ] ] ]
   },
   {
     "id": "arcana_flora_forage",
