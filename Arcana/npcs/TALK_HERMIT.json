@@ -726,11 +726,11 @@
         "topic": "TALK_HERMIT_QUEST_HELP_1_CHALICE",
         "effect": [
           { "u_buy_item": "book_sacrifice" },
-          { "u_add_var": "arcana_alex_gave_book", "type": "mission", "context": "hermit", "value": "yes" }
+          { "u_add_var": "arcana_alex_gave_book", "value": "yes" }
         ],
         "condition": {
           "and": [
-            { "not": { "compare_string": [ "yes", { "npc_val": "arcana_alex_asked_for_codex" } ] } },
+            { "not": { "compare_string": [ "yes", { "npc_val": "arcana_alex_gave_book" } ] } },
             { "not": { "u_has_item": "book_sacrifice" } }
           ]
         }
@@ -738,7 +738,7 @@
       {
         "text": "Do you have a copy of Sanguine Codex?",
         "topic": "TALK_HERMIT_QUEST_HELP_1_SANGUINE",
-        "effect": { "u_add_var": "arcana_alex_asked_for_codex", "type": "mission", "context": "hermit", "value": "yes" },
+        "effect": { "u_add_var": "arcana_alex_asked_for_codex", "value": "yes" },
         "condition": {
           "and": [
             { "not": { "compare_string": [ "yes", { "npc_val": "arcana_alex_asked_for_codex" } ] } },
