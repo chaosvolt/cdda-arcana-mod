@@ -550,16 +550,7 @@
         }
       ]
     },
-    "flags": [
-      "ALLOWS_NATURAL_ATTACKS",
-      "OVERSIZE",
-      "STURDY",
-      "UNBREAKABLE_MELEE",
-      "BLOCK_WHILE_WORN",
-      "NO_SALVAGE",
-      "AURA",
-      "POWERARMOR_COMPATIBLE"
-    ],
+    "flags": [ "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "STURDY", "BLOCK_WHILE_WORN", "NO_SALVAGE", "AURA", "POWERARMOR_COMPATIBLE" ],
     "max_worn": 1,
     "sided": true,
     "material_thickness": 4,
@@ -594,7 +585,8 @@
         "WATERPROOF",
         "ZERO_WEIGHT",
         "ELECTRIC_IMMUNE",
-        "DIMENSIONAL_ANCHOR"
+        "DIMENSIONAL_ANCHOR",
+        "UNBREAKABLE"
       ]
     }
   },
@@ -663,7 +655,7 @@
       "ammo_scale": 0
     },
     "qualities": [ [ "GLARE", 1 ] ],
-    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE" ] }
+    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "UNBREAKABLE" ] }
   },
   {
     "id": "armor_wyrm_berserker",

@@ -496,7 +496,6 @@
       "ALLOWS_NATURAL_ATTACKS",
       "OVERSIZE",
       "STURDY",
-      "UNBREAKABLE_MELEE",
       "BLOCK_WHILE_WORN",
       "NO_SALVAGE",
       "AURA",
@@ -531,7 +530,8 @@
         "TRADER_AVOID",
         "WATERPROOF",
         "ELECTRIC_IMMUNE",
-        "DIMENSIONAL_ANCHOR"
+        "DIMENSIONAL_ANCHOR",
+        "UNBREAKABLE"
       ]
     }
   },
@@ -596,7 +596,18 @@
     "revert_to": "hauberk_jade",
     "use_action": { "target": "hauberk_jade", "msg": "The glow emanating from your jade hauberk fades.", "type": "transform" },
     "qualities": [ [ "GLARE", 1 ] ],
-    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "CUT_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "CLIMATE_CONTROL" ] }
+    "extend": {
+      "flags": [
+        "GAS_PROOF",
+        "RAD_PROOF",
+        "SUN_GLASSES",
+        "CUT_IMMUNE",
+        "STAB_IMMUNE",
+        "HEAT_IMMUNE",
+        "CLIMATE_CONTROL",
+        "UNBREAKABLE"
+      ]
+    }
   },
   {
     "id": "armor_wyrm_berserker",
