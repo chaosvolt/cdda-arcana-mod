@@ -58,6 +58,7 @@
         "W": "t_window_boarded",
         "w": "t_window_domestic"
       },
+      "terrain": { "P": "f_null" },
       "place_loot": [ { "item": "candle_warding_active", "x": 17, "y": 15 } ],
       "place_zones": [
         { "type": "NPC_NO_INVESTIGATE", "faction": "sanguine_order_remnant", "x": [ 0, 23 ], "y": [ 0, 10 ] },
@@ -220,6 +221,7 @@
         "W": "t_window_boarded",
         "w": "t_window_domestic"
       },
+      "terrain": { "P": "f_null" },
       "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "sanguine_order_remnant", "x": [ 3, 21 ], "y": [ 5, 20 ] } ],
       "place_npcs": [
         { "class": "sanguine_order_shrike_huntmaster", "x": 5, "y": 14, "add_trait": "SHRIKE_MISSION_MARKER" },
