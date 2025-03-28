@@ -244,7 +244,7 @@
     "move_cost_mod": 0,
     "light_emitted": 5,
     "required_str": -1,
-    "flags": [ "PLACE_ITEM", "TRANSPARENT", "FLAT", "TRANSLOCATOR", "TRANSLOCATOR_GREATER" ],
+    "flags": [ "PLACE_ITEM", "TRANSPARENT", "FLAT", "TRANSLOCATOR", "TRANSLOCATOR_GREATER", "FREE_TO_EXAMINE" ],
     "examine_action": "translocator"
   }
 ]
