@@ -1150,7 +1150,7 @@
     "id": "dimensional_warp_trap",
     "type": "TOOL",
     "name": { "str": "sliver of unreality", "str_pl": "slivers of unreality" },
-    "description": "A talisman of 16-pointed silver, twisted to ensnare a sharply-pointed piece of crystallized essence.  Focusing its energy like a lens, using it will rip open a gap in the Veil itself, creating a portal.  Designed for now-lost rituals, the resulting rift now serves only to let in things that do not belong in this world, for whatever mad purpose one can devise for such a function.",
+    "description": "A talisman of 16-pointed silver, twisted to ensnare a sharply-pointed piece of crystallized essence.  Focusing its energy like a lens, using it will rip open a gap in the Veil itself, before stablizing it into a dimensional gateway.  Examining the gate will allow you to teleport to any other such gates you come across.",
     "weight": "285 g",
     "volume": "150 ml",
     "price": "1500 USD",
@@ -1158,13 +1158,7 @@
     "material": [ "silver", "essencemat" ],
     "symbol": ";",
     "color": "cyan",
-    "use_action": {
-      "type": "place_trap",
-      "trap": "tr_portal",
-      "moves": 50,
-      "practice": 0,
-      "done_message": "A thin beam of light emits from the crystal, essence and silver burning away into nothingness as the fabric of reality decays!"
-    },
+    "use_action": { "type": "deploy_furn", "furn_type": "f_arcana_dimension_doorway" },
     "flags": [ "SINGLE_USE" ]
   },
   {

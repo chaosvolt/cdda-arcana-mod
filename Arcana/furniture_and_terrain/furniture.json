@@ -232,5 +232,19 @@
     },
     "examine_action": "workbench",
     "workbench": { "multiplier": 1.05, "mass": 500000, "volume": "500L" }
+  },
+  {
+    "id": "f_arcana_dimension_doorway",
+    "type": "furniture",
+    "name": "dimensional gateway",
+    "description": "What appears to be a hole in reality has since settled into a more stable form, bound by faint glowing runes.  It should be safe to travel through, if you've encountered any other gateways.",
+    "symbol": "#",
+    "looks_like": "tr_portal",
+    "bgcolor": [ "blue" ],
+    "move_cost_mod": 0,
+    "light_emitted": 5,
+    "required_str": -1,
+    "flags": [ "PLACE_ITEM", "TRANSPARENT", "FLAT", "TRANSLOCATOR", "TRANSLOCATOR_GREATER", "FREE_TO_EXAMINE" ],
+    "examine_action": "translocator"
   }
 ]
