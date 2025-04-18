@@ -8,7 +8,7 @@
     "description": "A wreath of brightly-colored flowers from another world, worn around the neck.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will grant a burst of renewed stamina, recovering pain and speeding up the body's natural healing.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 25 hours to charge.",
     "price_postapoc": "12 USD",
     "charges_per_use": 25,
-    "ammo": "primitive_magic_item_ammo_type",
+    "tool_ammo": "primitive_magic_item_ammo_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 125 } } ],
     "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
@@ -24,7 +24,7 @@
     "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you invisible (but not inaudible) to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
     "price_postapoc": "15 USD",
     "charges_per_use": 35,
-    "ammo": "primitive_magic_item_ammo_type",
+    "tool_ammo": "primitive_magic_item_ammo_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 175 } } ],
     "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
@@ -40,7 +40,7 @@
     "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will reduce all incoming damage by 25%.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 45 hours to charge.",
     "price_postapoc": "20 USD",
     "charges_per_use": 45,
-    "ammo": "primitive_magic_item_ammo_type",
+    "tool_ammo": "primitive_magic_item_ammo_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 225 } } ],
     "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
@@ -61,9 +61,9 @@
     "color": "yellow",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 60 } } ],
     "charges_per_use": 60,
-    "ammo": "essence_dull_type",
+    "tool_ammo": "essence_dull_type",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_gilded_aegis_healing", "no_fail": true, "level": 0, "need_worn": true },
-    "relative": { "weight": 3020 },
+    "relative": { "weight": "3020g" },
     "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
     "material_thickness": 5,
     "armor": [ { "encumbrance": 12, "coverage": 90, "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ] } ]
@@ -84,7 +84,7 @@
     "color": "light_red",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 24 } } ],
     "charges_per_use": 1,
-    "ammo": "essence_dull_type",
+    "tool_ammo": "essence_dull_type",
     "warmth": 10,
     "relic_data": {
       "passive_effects": [
@@ -149,7 +149,7 @@
     "color": "light_red",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 24 } } ],
     "charges_per_use": 1,
-    "ammo": "essence_dull_type",
+    "tool_ammo": "essence_dull_type",
     "relic_data": {
       "passive_effects": [
         {
@@ -236,7 +236,7 @@
     ],
     "warmth": 20,
     "charges_per_use": 2,
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 16 } } ],
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true } ],
     "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "POCKETS", "STURDY" ]
@@ -258,7 +258,7 @@
     "color": "yellow",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 6 } } ],
     "charges_per_use": 2,
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "relic_data": {
       "passive_effects": [
         {
@@ -318,7 +318,7 @@
     "material": [ "cotton" ],
     "color": "dark_gray",
     "charges_per_use": 1,
-    "ammo": "essence_type",
+    "tool_ammo": "essence_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 20 } } ],
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "arcana_invis_lesser", "intensity": 1 } ] } ]
@@ -336,7 +336,7 @@
         "ammo_scale": 0
       }
     ],
-    "relative": { "weight": 616, "volume": -1 },
+    "relative": { "weight": "616g", "volume": "-1ml" },
     "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
     "material_thickness": 6,
     "armor": [ { "covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 7, 7 ] } ]
@@ -381,7 +381,7 @@
     "warmth": 20,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 20 } } ],
     "charges_per_use": 1,
-    "ammo": "essence_type",
+    "tool_ammo": "essence_type",
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "arcana_invis_lesser", "intensity": 1 } ] } ]
     },
@@ -434,7 +434,7 @@
     "material": [ "qt_steel", "qt_steel_chain", "silver" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 4 } } ],
     "charges_per_use": 1,
-    "ammo": "essence_type",
+    "tool_ammo": "essence_type",
     "use_action": [
       {
         "type": "cast_spell",
@@ -457,7 +457,7 @@
         "encumbrance": 16
       }
     ],
-    "relative": { "weight": 210 },
+    "relative": { "weight": "210g" },
     "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
@@ -474,7 +474,7 @@
     "warmth": 15,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 4 } } ],
     "charges_per_use": 1,
-    "ammo": "essence_type",
+    "tool_ammo": "essence_type",
     "use_action": [
       {
         "type": "cast_spell",
@@ -497,7 +497,7 @@
         "encumbrance": 12
       }
     ],
-    "relative": { "weight": 120 },
+    "relative": { "weight": "120g" },
     "extend": { "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "OUTER" ] }
   },
   {
@@ -517,7 +517,7 @@
     "looks_like": "shield_round",
     "color": "light_gray",
     "charges_per_use": 1,
-    "ammo": "essence_type",
+    "tool_ammo": "essence_type",
     "use_action": [
       {
         "target": "cyclopean_mirror_on",
@@ -611,7 +611,7 @@
         }
       ]
     },
-    "ammo": "essence_dull_type",
+    "tool_ammo": "essence_dull_type",
     "use_action": [
       {
         "target": "hauberk_jade_on",
@@ -673,7 +673,7 @@
     "looks_like": "armor_wyrm",
     "color": "light_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 30 } } ],
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "warmth": 20,
     "//": "Increased to be more on par with BN version's armor values.",
     "material_thickness": 5,
@@ -840,7 +840,7 @@
     "repairs_like": "revenant_crown",
     "color": "green",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 30 } } ],
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "relic_data": {
       "passive_effects": [
         {
@@ -899,7 +899,7 @@
     "repairs_like": "mana_gem",
     "color": "light_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 300 } } ],
-    "ammo": "essence_dull_type",
+    "tool_ammo": "essence_dull_type",
     "use_action": {
       "target": "meteoric_talisman_on",
       "msg": "As you activate the talisman, you feel insulated in a strange manner.",
@@ -948,7 +948,7 @@
     "color": "yellow",
     "charges_per_use": 1,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 10 } } ],
-    "ammo": "essence_pure_type",
+    "tool_ammo": "essence_pure_type",
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_divine_seal", "no_fail": true, "need_worn": true, "level": 0 } ],
     "relic_data": {
       "passive_effects": [
@@ -974,7 +974,7 @@
     "material": [ "silver", "essencemat" ],
     "color": "white",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 10 } } ],
-    "ammo": "essence_type",
+    "tool_ammo": "essence_type",
     "use_action": {
       "target": "cleric_ring_on",
       "msg": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
