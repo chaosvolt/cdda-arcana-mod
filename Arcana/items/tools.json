@@ -101,7 +101,7 @@
     "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any hostiles within 4 tiles.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 20 hours to charge.",
     "price_postapoc": "20 USD",
     "charges_per_use": 20,
-    "ammo": "primitive_magic_item_ammo_type",
+    "tool_ammo": "primitive_magic_item_ammo_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 100 } } ],
     "flags": [ "MAGIC_FOCUS", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
@@ -117,7 +117,7 @@
     "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will greatly reduce movecosts and enhance evasion.  Stamina and attack speed are unaffected, however.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 6 uses, each use takes 40 hours to charge.",
     "price_postapoc": "25 USD",
     "charges_per_use": 40,
-    "ammo": "primitive_magic_item_ammo_type",
+    "tool_ammo": "primitive_magic_item_ammo_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 200 } } ],
     "flags": [ "MAGIC_FOCUS", "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "relic_data": { "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true } },
@@ -207,7 +207,7 @@
     "looks_like": "arming_sword",
     "color": "yellow",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 20 } } ],
-    "ammo": "essence_dull_type",
+    "tool_ammo": "essence_dull_type",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 10 ] ],
     "techniques": [ "WBLOCK_2" ],
     "use_action": [
@@ -261,7 +261,7 @@
     "material": [ { "type": "steel", "portion": 25 }, { "type": "wood", "portion": 25 }, { "type": "silver", "portion": 2 } ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 3 } } ],
     "charges_per_use": 3,
-    "ammo": "essence_dull_type",
+    "tool_ammo": "essence_dull_type",
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_hammerzeit", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "relative": { "weight": "360 g", "melee_damage": { "bash": 2 } },
     "extend": { "flags": [ "NO_SALVAGE" ] }
@@ -279,7 +279,7 @@
     "material": [ { "type": "steel", "portion": 25 }, { "type": "wood", "portion": 25 }, { "type": "silver", "portion": 2 } ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 10 } } ],
     "charges_per_use": 10,
-    "ammo": "essence_dull_type",
+    "tool_ammo": "essence_dull_type",
     "use_action": [
       {
         "type": "cast_spell",
@@ -306,7 +306,7 @@
     "material": [ "steel", "wood", "chitin" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 9 } } ],
     "charges_per_use": 1,
-    "ammo": "essence_type",
+    "tool_ammo": "essence_type",
     "relic_data": {
       "passive_effects": [
         {
@@ -325,7 +325,7 @@
       ]
     },
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 } ],
-    "relative": { "weight": 540, "melee_damage": { "bash": 2 } },
+    "relative": { "weight": "540g", "melee_damage": { "bash": 2 } },
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ] }
   },
   {
@@ -945,7 +945,7 @@
     "symbol": ";",
     "color": "brown",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 5 } } ],
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "weight": "707 g",
     "volume": "750 ml",
     "longest_side": "45 cm",
@@ -986,7 +986,7 @@
     "color": "brown",
     "turns_per_charge": 1,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 5 } } ],
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "revert_to": "bloodaxe",
     "use_action": {
       "type": "message",
@@ -1021,7 +1021,7 @@
     "material": [ "qt_steel", "silver" ],
     "symbol": "/",
     "color": "light_gray",
-    "ammo": [ "flintlock" ],
+    "tool_ammo": [ "flintlock" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "flintlock": 2 } } ],
     "techniques": [ "RAPID", "WBLOCK_2", "PRECISE" ],
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 9 ] ],
@@ -1064,8 +1064,8 @@
     "melee_damage": { "bash": 9, "cut": 29 },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 8 } } ],
     "charges_per_use": 2,
-    "ammo": "essence_blood_type",
-    "relative": { "weight": 230 },
+    "tool_ammo": "essence_blood_type",
+    "relative": { "weight": "230g" },
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ] }
   },
@@ -1179,7 +1179,7 @@
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_pure_type": 1 } } ],
     "charges_per_use": 1,
-    "ammo": "essence_pure_type",
+    "tool_ammo": "essence_pure_type",
     "relic_data": {
       "passive_effects": [
         {
@@ -1215,7 +1215,7 @@
     "color": "light_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 300 } } ],
     "charges_per_use": 1,
-    "ammo": "essence_dull_type",
+    "tool_ammo": "essence_dull_type",
     "use_action": [
       {
         "type": "repair_item",
@@ -1279,7 +1279,7 @@
     "melee_damage": { "bash": 5 },
     "price": "8500 USD",
     "price_postapoc": "80 USD",
-    "ammo": [ "battery" ],
+    "tool_ammo": [ "battery" ],
     "charges_per_use": 3000,
     "pocket_data": [
       {
@@ -1325,7 +1325,7 @@
     "looks_like": "copper_knife",
     "symbol": ";",
     "color": "red",
-    "ammo": [ "essence_dull_type" ],
+    "tool_ammo": [ "essence_dull_type" ],
     "charges_per_use": 2,
     "use_action": [
       "OXYTORCH",
@@ -1376,7 +1376,7 @@
     "looks_like": "teleporter",
     "symbol": ";",
     "color": "magenta",
-    "ammo": [ "essence_type" ],
+    "tool_ammo": [ "essence_type" ],
     "charges_per_use": 1,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "essence_type": 20 }, "rigid": true } ],
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_spatial_displacement", "no_fail": true, "level": 0 } ]
@@ -1424,7 +1424,7 @@
     "color": "yellow",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 10 } } ],
     "charges_per_use": 2,
-    "ammo": "essence_type",
+    "tool_ammo": "essence_type",
     "relic_data": {
       "passive_effects": [
         {
@@ -1469,7 +1469,7 @@
     "techniques": [ "WHIP_DISARM" ],
     "melee_damage": { "bash": 3, "cut": 21 },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 24 } } ],
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ACTIVE", "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ] } ]
     },
@@ -1528,7 +1528,7 @@
     "repairs_like": "blood_athame",
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 10 } } ],
-    "ammo": "essence_type",
+    "tool_ammo": "essence_type",
     "techniques": [ "RAPID", "DEF_DISARM" ],
     "qualities": [ [ "BUTCHER", 6 ] ],
     "relic_data": {
@@ -1605,7 +1605,7 @@
     "color": "light_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_pure_type": 10 } } ],
     "charges_per_use": 1,
-    "ammo": "essence_pure_type",
+    "tool_ammo": "essence_pure_type",
     "use_action": [
       {
         "type": "consume_drug",
@@ -1652,7 +1652,7 @@
     "color": "red",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 10 } } ],
     "charges_per_use": 10,
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You fuel the heart with blood essence, and feel its power resonate through you…",
@@ -1679,7 +1679,7 @@
     "color": "red",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 30 } } ],
     "charges_per_use": 5,
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "relic_data": {
       "passive_effects": [
         {
@@ -1718,7 +1718,7 @@
     "melee_damage": { "bash": 15, "cut": 41 },
     "color": "dark_gray",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "relic_data": {
       "passive_effects": [
         {
@@ -1757,7 +1757,7 @@
     "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
     "turns_per_charge": 200,
-    "ammo": "essence_blood_type",
+    "tool_ammo": "essence_blood_type",
     "revert_to": "stormbringer",
     "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",
     "weight": "2267 g",
