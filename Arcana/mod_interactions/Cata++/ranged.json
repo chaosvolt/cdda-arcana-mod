@@ -1,7 +1,8 @@
 [
   {
     "id": "unbio_electrothermal_arc_projector",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "symbol": "(",
     "looks_like": "v29",
     "color": "magenta",
@@ -25,7 +26,8 @@
   },
   {
     "id": "unbio_rift_focus_projector",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
     "symbol": "(",
     "looks_like": "v29",
     "color": "magenta",

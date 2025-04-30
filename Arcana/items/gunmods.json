@@ -1,7 +1,8 @@
 [
   {
     "id": "arcane_accelerator_railgun",
-    "type": "GUNMOD",
+    "type": "ITEM",
+    "subtypes": [ "GUNMOD" ],
     "name": { "str": "diamagnetic anomaly inlay" },
     "description": "Several strips of silver inlaid along the length of a firearm's barrel, and a peculiar device wired to each inlay.  When catalyzed by charge from a UPS, the anomalous energies conducted through the inlay imbue bullets with abnormal effects.  Can't be installed on a sawed-down barrel.\nThis device manipulates diamagnetic effects to exert force on the non-ferrous materials present in each bullet, accelerating it at greater speeds much like a railgun, generating a cascade of electric sparks due to the electromagnetic anomaly created.  Increases damage and range, at the expense of accuracy and recoil.",
     "weight": "540 g",
@@ -29,7 +30,8 @@
   },
   {
     "id": "arcane_accelerator_plasma",
-    "type": "GUNMOD",
+    "type": "ITEM",
+    "subtypes": [ "GUNMOD" ],
     "name": { "str": "thermal anomaly inlay" },
     "description": "Several strips of silver inlaid along the length of a firearm's barrel, and a peculiar device wired to each inlay.  When catalyzed by charge from a UPS, the anomalous energies conducted through the inlay imbue bullets with abnormal effects.  Can't be installed on a sawed-down barrel.\nThis device amplifies and shapes the thermal energy given off by the burning powder of each shot, channeled into the bullet to create a plume of plasma.  While this adds a boost to lethality, it comes at the cost of accuracy and range, potentially rendering the weapon unusable.",
     "weight": "540 g",
@@ -57,7 +59,8 @@
   },
   {
     "id": "arcane_accelerator_nuke",
-    "type": "GUNMOD",
+    "type": "ITEM",
+    "subtypes": [ "GUNMOD" ],
     "name": { "str": "fission anomaly inlay" },
     "description": "Several strips of silver inlaid along the length of a firearm's barrel, and a peculiar device wired to each inlay.  When catalyzed by charge from a UPS, the anomalous energies conducted through the inlay imbue bullets with abnormal effects.  Can't be installed on a sawed-down barrel.\nThis device creates a powerful spatial anomaly, forcing a tiny sliver of each projectile to undergo nuclear fission, at a penalty to accuracy and recoil.  While it's a far cry from a mininuke, the explosive force generated is complete overkill, and each spatial distortion risks tearing the fabric of reality.",
     "weight": "540 g",
