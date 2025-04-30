@@ -32,7 +32,7 @@
   },
   {
     "id": "internal_essence_tank",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "container",
     "name": { "str": "internal essence tank" },
     "description": "Internal tank for Surge Cell - Essence bionic.",
@@ -68,7 +68,7 @@
   },
   {
     "id": "internal_essence_blood_tank",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "container",
     "name": { "str": "internal blood essence tank" },
     "description": "Internal tank for Surge Cell - Blood Essence bionic.",
@@ -104,7 +104,7 @@
   },
   {
     "id": "internal_essence_dull_tank",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "container",
     "name": { "str": "internal dull essence tank" },
     "description": "Internal tank for Surge Cell - Dull Essence bionic.",
@@ -140,7 +140,7 @@
   },
   {
     "id": "internal_essence_pure_tank",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "container",
     "name": { "str": "internal crystallized essence tank" },
     "description": "Internal tank for Surge Cell - Crystallized Essence bionic.",

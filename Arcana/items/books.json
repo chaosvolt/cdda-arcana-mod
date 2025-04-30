@@ -1,7 +1,8 @@
 [
   {
     "id": "book_magicfordummies",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "Apprentice's Notes", "str_pl": "copies of Apprentice's Notes" },
     "description": "A series of handwritten notes by a student of some esoteric order.  At first the subject seems to be simple religious rituals, but it soon delves into more …anomalous practices.\n\"In time, my eyes will be opened.  They called it The Gift, but all who draw breath can partake of it.  There is no innate talent, no quirk of bloodline, only discipline and patience…\"",
@@ -23,7 +24,8 @@
   },
   {
     "id": "book_potioncraft",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "History of Alchemy", "str_pl": "copies of History of Alchemy" },
     "description": "A series of translated, annotated excerpts from several ancient books on the concept of alchemy.  This book presents an unconventional interpretation of the works discussed, haphazardly segueing into the author's own failed attempt to create the \"lapis philosophorum\" and \"alkahest\".  Some of the unconventional chemistry discussed might still be useful.\n\"Through all the cycles of putrefaction and purification, we have fallen short of refinement into the Rubedo stage.  We are missing a catalyst, something even purer than gold, energy embodied in matter…\"",
@@ -44,7 +46,8 @@
   },
   {
     "id": "book_scrollcraft",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "The Six Pillars", "str_pl": "copies of The Six Pillars" },
     "//": "Implies that interpreting the coded verses are the most difficult part, the magic itself is low-mid level in complexity.",
@@ -67,7 +70,8 @@
   },
   {
     "id": "book_bloodmagic",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "Sanguine Codex", "str_pl": "copies of Sanguine Codex" },
     "description": "A book written in dark, brown ink that almost resembles dried blood.  It illustrates several painful-looking rituals for drawing powerful energy from the blood of living creatures, the practices of an order of blood mages.\n\"There is power in life itself.  There is a struggle, turmoil and chaos in it as well.  To follow The Path requires making proper use of said disharmony, even as one draws power from life…\"",
@@ -88,7 +92,8 @@
   },
   {
     "id": "book_hexenhammer",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "The Cleansing Flame", "str_pl": "copies of The Cleansing Flame" },
     "description": "A book written by some esoteric religious order, dedicated to destroying the otherworldly things intruding upon this realm.  The tools of their trade rely on a sanctioned form of magic, using \"consecrated\" essence they deemed safe to use.\n\"To bring justice to those who would endanger humanity, if we must.  To mend the growing wound In The Veil Between Worlds, if we can.  To guard and guide, so that a dangerous path may be avoided, so we shall.  So long as the Sun shines upon the Earth.\"",
@@ -110,7 +115,8 @@
   },
   {
     "id": "book_sacrifice",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "Oaths to the Chalice", "str_pl": "copies of Oaths to the Chalice" },
     "description": "A strange book with a trident motif on the cover, describing the morbid rituals of some otherworldly cult, preaching of He From Beyond The Veil.  The level of detail these rituals go into is disturbing, yet informative.\n\"Through my visions, I saw rolling fog sweep across the valleys of a thousand worlds.  I witnessed the decay of countless cities, built by endless unnamed things.  And there, shadows coalesced into form, a presence to guide me…\"",
@@ -132,7 +138,8 @@
   },
   {
     "id": "book_syncretism",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "A Story in Shadow", "str_pl": "copies of A Story in Shadow" },
     "description": "A book discussing the histories of a few peculiar cults and religious orders, and their conflicts during the years up until shortly before the cataclysm.  It describes a number of peculiar rituals and concepts based on the philosophies of the major groups mentioned, along with musing on their respective strengths and flaws.\n\"Athame, hammer, and chalice.  Stalking and warring over trifling powers, as the Blind World pursued the End of All.  All things are, and shall be, as was written…\"",
@@ -153,7 +160,8 @@
   },
   {
     "id": "book_summoning",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "To Master the Unknown", "str_pl": "copies of To Master the Unknown" },
     "description": "A book describing several otherworldly creatures and their origins, or at least conjecture on those origins.  Stranger still, it describes experiments in summoning and  …controlling them?\n\"In the absence of an adequate catalyst, those who dwell Beyond are not easily called into service.  What slips through the cracks most readily is a mere shadow, a reflection of shadows even, given form that can be tamed…\"",
@@ -174,7 +182,8 @@
   },
   {
     "id": "recipe_lab_arcana",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "lab journal-Quinn", "str_pl": "lab journals-Quinn" },
     "description": "This hefty binder contains numerous reports concerning Anomalous Materials research, and experiment logs involving various otherworldly phenomena.  Some effort was made to hypothesize on the physics involved behind the events that occurred, though the writing's tone conveys a growing frustration with the increasingly supernatural nature of each discovery…",
@@ -196,7 +205,7 @@
   {
     "id": "note_grove",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "tattered note" },
     "description": "An old, worn scrap of paper with writing scrawled on it.",
     "snippet_category": "note_grove"
@@ -204,7 +213,7 @@
   {
     "id": "note_sanguine",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "blood-stained note" },
     "description": "An scrap of paper marred by old, dried blood.",
     "snippet_category": "note_sanguine"
@@ -212,7 +221,7 @@
   {
     "id": "note_chalice",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "strange note" },
     "description": "A sheet of paper, with peculiar writing on it.",
     "snippet_category": "note_chalice"
@@ -220,7 +229,7 @@
   {
     "id": "note_flame",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "singed note" },
     "description": "A piece of paper with writing on it, edges scorched as if it was hastily rescued from the fireplace.",
     "snippet_category": "note_flame"
@@ -228,7 +237,7 @@
   {
     "id": "note_sanguine_tenet",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "blood-stained note" },
     "description": "An scrap of paper marred by old, dried blood.",
     "snippet_category": "note_sanguine_tenet"
@@ -236,7 +245,7 @@
   {
     "id": "note_chalice_tenet",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "strange note" },
     "description": "A sheet of paper, with peculiar writing on it.",
     "snippet_category": "note_chalice_tenet"
@@ -244,7 +253,7 @@
   {
     "id": "note_flame_tenet",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "singed note" },
     "description": "A piece of paper with writing on it, edges scorched as if it was hastily rescued from the fireplace.",
     "snippet_category": "note_flame_tenet"
@@ -252,7 +261,7 @@
   {
     "id": "note_sanguine_hint",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "blood-stained note" },
     "description": "An scrap of paper marred by old, dried blood.",
     "snippet_category": "note_sanguine_hint"
@@ -260,7 +269,7 @@
   {
     "id": "note_chalice_hint",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "strange note" },
     "description": "A sheet of paper, with peculiar writing on it.",
     "snippet_category": "note_chalice_hint"
@@ -268,7 +277,7 @@
   {
     "id": "note_flame_hint",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "singed note" },
     "description": "A piece of paper with writing on it, edges scorched as if it was hastily rescued from the fireplace.",
     "snippet_category": "note_flame_hint"
@@ -276,7 +285,7 @@
   {
     "id": "note_starry_missive",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "old letter" },
     "description": "A weathered old piece of paper.",
     "snippet_category": "note_starry_correspondence"
@@ -284,14 +293,14 @@
   {
     "id": "note_soa_mission",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "folded note" },
     "description": "A neatly-folded note.",
     "snippet_category": "note_soa_journal"
   },
   {
     "id": "arcanemap",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "maps",
     "name": { "str": "strange map" },
     "description": "This is a hand-drawn map of the local area.  Whoever created this has marked several places seemingly in the middle of nowhere.  Using it will mark these strange locations on your map.",
@@ -330,8 +339,8 @@
     "id": "index_potioncraft",
     "copy-from": "arcana_note_base",
     "sub": "book_potioncraft",
-    "type": "TOOL",
-    "name": { "str": "alchemical reference notes", "str_pl": "sets of alchemical reference notes" },
+    "type": "ITEM",
+    
     "weight": "60 g",
     "volume": "100 ml",
     "//": "All reference notes are post-cataclysm, and only useful to people already intimately familiar with the base book.",
@@ -342,8 +351,8 @@
     "id": "index_scrollcraft",
     "copy-from": "arcana_note_base",
     "sub": "book_scrollcraft",
-    "type": "TOOL",
-    "name": { "str": "scribe's reference notes", "str_pl": "sets of scribe's reference notes" },
+    "type": "ITEM",
+    
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "2 USD",
@@ -353,8 +362,8 @@
     "id": "index_bloodmagic",
     "copy-from": "arcana_note_base",
     "sub": "book_bloodmagic",
-    "type": "TOOL",
-    "name": { "str": "sanguinist's reference notes", "str_pl": "sets of sanguinist's reference notes" },
+    "type": "ITEM",
+    
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "210 cent",
@@ -364,8 +373,8 @@
     "id": "index_hexenhammer",
     "copy-from": "arcana_note_base",
     "sub": "book_hexenhammer",
-    "type": "TOOL",
-    "name": { "str": "Cleansing Flame reference notes", "str_pl": "sets of Cleansing Flame reference notes" },
+    "type": "ITEM",
+    
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "210 cent",
@@ -375,8 +384,8 @@
     "id": "index_sacrifice",
     "copy-from": "arcana_note_base",
     "sub": "book_sacrifice",
-    "type": "TOOL",
-    "name": { "str": "occult reference notes", "str_pl": "sets of occult reference notes" },
+    "type": "ITEM",
+    
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "2 USD",
@@ -386,8 +395,8 @@
     "id": "index_syncretism",
     "copy-from": "arcana_note_base",
     "sub": "book_syncretism",
-    "type": "TOOL",
-    "name": { "str": "arcane reference notes", "str_pl": "sets of arcane reference notes" },
+    "type": "ITEM",
+    
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "270 cent",
@@ -397,8 +406,8 @@
     "id": "index_summoning",
     "copy-from": "arcana_note_base",
     "sub": "book_summoning",
-    "type": "TOOL",
-    "name": { "str": "summoner's reference notes", "str_pl": "sets of summoner's reference notes" },
+    "type": "ITEM",
+    
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "2 USD",
@@ -407,21 +416,22 @@
   {
     "id": "cf_rep_trade_arrangement",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "trade arrangements", "str_pl": "sets of trade arrangements" },
     "description": "A hand-written inventory of essential tools and supplies, alongside a list of various surplus items, written by Sofia."
   },
   {
     "id": "cf_rep_trade_receipt",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "receipt of trade agreement", "str_pl": "receipts of trade agreement" },
     "description": "A hastily-typed printout confirming the arrangements set up between the Free Merchants and the survivors in the rural church."
   },
   {
     "id": "manual_cleansingflame",
     "copy-from": "book_martial",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "The Path of Sword and Hammer", "str_pl": "copies of The Path of Sword and Hammer" },
     "description": "A handwritten copy of a codex detailing the methods of fighting used by an eccentric order, hunters of the wicked and otherworldly.",
     "price": "2000 USD",
@@ -432,7 +442,8 @@
   {
     "id": "manual_shrike",
     "copy-from": "book_martial",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "The Path of Scourging Claws", "str_pl": "copies of The Scourging Claws" },
     "description": "A handwritten copy of a codex detailing the methods of fighting used by the hunters of hunters, elite assassins from an order of blood mages.",
     "price": "2000 USD",
@@ -443,7 +454,7 @@
   {
     "id": "offering_mission_notes",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "weight": "2000 g",
     "volume": "1500 ml",
     "material": [ "clay" ],
@@ -457,7 +468,8 @@
   },
   {
     "id": "arcana_dream_journal",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "rambling journal" },
     "description": "A small paperback notebook, filled with journal entries from some unfortunate former survivor.  Most of the entries form a dream journal instead of recounting whatever actually happened that day, and several entries are dated such that they aren't even in order.  Most of it seems like rambling nonsense, but maybe someone can interpret it.",
     "weight": "340 g",
@@ -473,7 +485,8 @@
   },
   {
     "id": "sanguine_mission_notes",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "name": { "str": "Compendium Sacramenti Sanguinei" },
     "description": "A leather-bound notebook, its contents containing notes and sketches both hand-written, seemingly by at least two different people, and what seems to be woodblock-print copies from some other work of literature.  Morbid as its subject matter is, various fragments of events and rituals summarized and expounded upon, to actually glean anything useful out of its pages would require extensive research from someone well-versed in the anomalous activities detailed within.",
     "weight": "454 g",
@@ -490,7 +503,7 @@
   {
     "id": "note_arcane_lab_surface",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "laboratory note" },
     "description": "A hastily-scribbled note.",
     "snippet_category": "arcane_lab_note_surface"
@@ -498,7 +511,7 @@
   {
     "id": "note_arcane_lab_sector_one",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "laboratory note" },
     "description": "A hastily-scribbled note.",
     "snippet_category": "arcane_lab_note_sector_one"
@@ -506,7 +519,7 @@
   {
     "id": "note_arcane_lab_sector_two",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "laboratory note" },
     "description": "A hastily-scribbled note.",
     "snippet_category": "arcane_lab_note_sector_two"
@@ -514,7 +527,7 @@
   {
     "id": "note_arcane_lab_sector_three",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "laboratory note" },
     "description": "A hastily-scribbled note.",
     "snippet_category": "arcane_lab_note_sector_three"
@@ -522,14 +535,15 @@
   {
     "id": "note_arcane_lab_finale",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "laboratory note" },
     "description": "A hastily-scribbled note.",
     "snippet_category": "arcane_lab_note_finale"
   },
   {
     "id": "arcana_mech_shem",
-    "type": "BOOK",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "Z-07 Engraved Plate" },
     "description": "A warped sheet of exotic metal, covered in esoteric engravings.  The patterns depicted on it resemble astrological imagery and alchemical formulas, with fragments of legible writing encircling the outer edge of the design.  On closer inspection, parts of the engraving appear to resemble technical drawings and schematics for the very machine it was torn from, either for some ritual purpose that helped give it life, or for some unknown research purpose.  Someone skilled in otherworldly knowledge might be able to glean something useful from this.",

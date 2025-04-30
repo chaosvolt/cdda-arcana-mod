@@ -2,14 +2,14 @@
   {
     "id": "candle_barrier_aftermath",
     "copy-from": "spell_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "candle barrier aftermath" },
     "description": "Workaround so candle barriers do not leave anything behind.  If you find one of these, it's a bug,",
     "color": "green"
   },
   {
     "id": "silver_glyph",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "other",
     "name": { "str": "silver glyph" },
     "description": "A silver emblem resembling a 16-pointed star in a circle.  You feel as though it could be a powerful arcane device, but there is no magic in it.  Yet.",
@@ -24,7 +24,7 @@
   },
   {
     "id": "scroll_blank",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "other",
     "name": { "str": "blank scroll" },
     "description": "A simple sheet of paper, with wooden rollers to support it.  You feel as if it was meant to have ancient, eldritch text written on it.  But sadly, it's blank.",
@@ -38,7 +38,7 @@
     "color": "light_gray"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "graboid_fang",
     "category": "other",
     "weapon_category": [ "KNIVES" ],
@@ -58,7 +58,7 @@
     "price_postapoc": "5 USD"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "inflorescent_root",
     "category": "other",
     "symbol": ",",
@@ -72,7 +72,7 @@
     "volume": "250 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "triffid_queen_flower",
     "category": "other",
     "symbol": ",",
@@ -86,7 +86,7 @@
     "volume": "250 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "iron_thorn",
     "category": "other",
     "weapon_category": [ "KNIVES" ],
@@ -104,7 +104,7 @@
     "price_postapoc": "5 USD"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "dermatik_sting",
     "category": "other",
     "weapon_category": [ "KNIVES" ],
@@ -124,7 +124,7 @@
     "price_postapoc": "5 USD"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "vortex_shard",
     "category": "other",
     "symbol": "*",
@@ -139,7 +139,7 @@
     "flags": [ "ZERO_WEIGHT" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "blob_gem",
     "category": "other",
     "symbol": "*",
@@ -154,7 +154,7 @@
     "volume": "250 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "monster_tear",
     "category": "other",
     "symbol": "*",
@@ -169,7 +169,7 @@
     "volume": "250 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "shadow_gem",
     "category": "other",
     "symbol": "*",
@@ -184,7 +184,7 @@
     "volume": "250 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "bone_twisted",
     "category": "other",
     "weapon_category": [ "KNIVES" ],
@@ -203,7 +203,7 @@
     "price_postapoc": "5 USD"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "gracken_knuckles",
     "category": "other",
     "symbol": "*",
@@ -219,7 +219,7 @@
     "volume": "250 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "wyrmskin_piece",
     "//": "ID retained for compatibility reasons.",
     "category": "other",
@@ -237,7 +237,7 @@
     "to_hit": -2
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "monster_fang",
     "category": "other",
     "weapon_category": [ "KNIVES" ],
@@ -256,7 +256,7 @@
     "price_postapoc": "5 USD"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "iridescent_plate",
     "category": "other",
     "//": "Obtained from yuggs.  Rarely from mi-gos, human snails.",
@@ -273,7 +273,7 @@
     "price_postapoc": "5 USD"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "engraved_stone",
     "category": "other",
     "//": "Obtained from shoggoths.  More rarely from amigara horrors, flesh angels, homunculi.",
@@ -288,7 +288,7 @@
     "volume": "250 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "draconic_heart",
     "category": "other",
     "symbol": "*",
@@ -304,7 +304,7 @@
     "volume": "1 L"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "CF_golden_scale",
     "name": { "str": "Golden Scale" },
     "description": "This is a small piece of soft gold, shaped like an elongated scale or feather.  Markings have been stamped on it, attesting to its weight and purity.  The only other mark of identity is a symbol resembling a cross, its lower half transitioning into the hammer Mjölnir.  Little more than scrap to most people, albeit scrap of a consistent quality.",
@@ -321,7 +321,7 @@
     "volume": "2 ml"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "arcana_strange_crystal",
     "category": "other",
     "symbol": "*",
@@ -335,7 +335,7 @@
     "flags": [ "TRADER_AVOID" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "arcana_radio_relay_beacon",
     "symbol": ",",
     "looks_like": "radio_repeater_mod",
@@ -352,7 +352,7 @@
   },
   {
     "id": "arcane_purifier_intel",
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "tools",
     "name": { "str": "reconnaissance case" },
     "description": "A heavy-duty, ruggedized briefcase with an outdated laptop built into it, powered by an integral plutonium cell.  A concealed camera is also built into the case, and there's an old model of satellite phone inside too.  The phone seems to be out of minutes and the camera lens is broken, but the laptop contains all sorts of cryptic notes, photos of various strange landmarks, and maps of locations across the tri-county area.  Someone might be able to make use of the intel that could be gleaned from this device.",
@@ -371,19 +371,19 @@
   {
     "id": "cf_purifier_project_data",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "Project Kairos intel printout" },
     "description": "A printed list of local research facilities, also listing various shipments of goods that had been sent to and from the locations on the list.  Someone more familiar with classified military or laboratory projects might be able to use this information, to figure out which location is which."
   },
   {
     "id": "arcane_purifier_intel_2",
     "copy-from": "arcana_note_base",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "Priority Site Shipping Manifest - CLASSIFIED" },
     "description": "A detailed list of shipments to various scientific and military installations in the area, concerning equipment being sent to and from various locations and what was being shipped.  Quite a lot of the items listed involve strange terminology and esoteric codenames.  Should be perfect for figuring out what places were being sent anomalous materials, in the right hands."
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "dimensional_focus_lens",
     "looks_like": "portal",
     "name": { "str": "dimensional focus lens", "str_pl": "dimensional focus lenses" },
@@ -399,7 +399,7 @@
     "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_mech_arcana",
     "name": { "str": "broken anomaly recon mech" },
     "description": "This is a prototype recon mech, once more a ruined mess of machinery.  Salvaging it for parts might enable remaking it once again.",
@@ -416,7 +416,7 @@
     "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "broken_mech_arcana_boss",
     "name": { "str": "broken autonomous anomaly recon mech" },
     "description": "This is a prototype recon mech, now a ruined mess of machinery.  It could be salvaged for rare and valuable parts, some anomalous in nature.",
@@ -434,7 +434,7 @@
   },
   {
     "id": "arcana_mech_shem_copy",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "engraved metal plate" },
     "description": "A steel plate, exotic patterns etched into its surface by otherworldly means.  Containing a crude facsimile of esoteric schematics, it can be used as the keystone to animate a recreation of the anomaly-driven machine it describes.",
     "weight": "12880 g",
@@ -449,7 +449,7 @@
   },
   {
     "abstract": "AID_abstract",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "abstract Autodoc installation data" },
     "material": [ "plastic" ],
     "symbol": "#",
@@ -462,48 +462,48 @@
   },
   {
     "id": "AID_bio_electrothermal_arc_projector",
-    "type": "GENERIC",
+    "type": "ITEM",
     "copy-from": "AID_abstract",
     "name": { "str_sp": "Electrothermal Arc Projector CBM installation data" },
     "description": "Precise step-by-step instructions and other required data for installation of Electrothermal Arc Projector CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  Integrated security subroutine renders it unusable after installation."
   },
   {
     "id": "AID_bio_rift_focus_projector",
-    "type": "GENERIC",
+    "type": "ITEM",
     "copy-from": "AID_abstract",
     "name": { "str_sp": "Rift Focus Projector CBM installation data" },
     "description": "Precise step-by-step instructions and other required data for installation of Rift Focus Projector CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  Integrated security subroutine renders it unusable after installation."
   },
   {
     "id": "AID_bio_essence_surge_cell",
-    "type": "GENERIC",
+    "type": "ITEM",
     "copy-from": "AID_abstract",
     "name": { "str_sp": "Essence Surge Cell CBM installation data" },
     "description": "Precise step-by-step instructions and other required data for installation of Essence Surge Cell CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  Integrated security subroutine renders it unusable after installation."
   },
   {
     "id": "AID_bio_temporal_stimulation",
-    "type": "GENERIC",
+    "type": "ITEM",
     "copy-from": "AID_abstract",
     "name": { "str_sp": "Temporal Stimulation CBM installation data" },
     "description": "Precise step-by-step instructions and other required data for installation of Temporal Stimulation CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  Integrated security subroutine renders it unusable after installation."
   },
   {
     "id": "AID_bio_life_sign_suppression",
-    "type": "GENERIC",
+    "type": "ITEM",
     "copy-from": "AID_abstract",
     "name": { "str_sp": "Life Sign Suppression CBM installation data" },
     "description": "Precise step-by-step instructions and other required data for installation of Life Sign Suppression CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  Integrated security subroutine renders it unusable after installation."
   },
   {
     "id": "AID_bio_kinetic_amplifier",
-    "type": "GENERIC",
+    "type": "ITEM",
     "copy-from": "AID_abstract",
     "name": { "str_sp": "Kinetic Amplifier CBM installation data" },
     "description": "Precise step-by-step instructions and other required data for installation of Kinetic Amplifier CBM, stored on a data card of proprietary form-factor, designed to be used extensively by an Autodoc, and allowing bionic installation with minimal failure chance.  Integrated security subroutine renders it unusable after installation."
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "category": "weapons",
     "id": "bio_kinetic_amplifier_weapon",
     "name": { "str_sp": "kinetic amplifier" },

@@ -2,7 +2,8 @@
   {
     "id": "tindalos_whistle",
     "copy-from": "tindalos_whistle",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "Whistle of Tindalos", "str_pl": "Whistles of Tindalos" },
     "description": "This is a small whistle, resembling a dog whistle if not for the unusual markings and exotic material it's made out of.  The strange sound it makes is clearly not meant to call canines, or anything native to this dimension for that matter.",
     "initial_charges": 1,
@@ -12,7 +13,8 @@
   {
     "id": "portal",
     "copy-from": "portal",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "portal generator" },
     "initial_charges": 2,
     "max_charges": 2,
@@ -21,7 +23,8 @@
   {
     "id": "bot_vortex",
     "//": "ID retained to avoid any weirdness.",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "Archon magic" },
     "description": "Spawns a shadow, used by the Host of the Archon.  This is a bug if you find one of these.",
     "material": [ "essencemat" ],
@@ -33,7 +36,8 @@
   {
     "id": "bot_shadows_fake",
     "//": "ID retained to avoid any weirdness.",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "Archon magic" },
     "description": "Spawns a fake shadow, used by the Seraphic Shade.  This is a bug if you find one of these.",
     "material": [ "essencemat" ],
@@ -44,7 +48,8 @@
   },
   {
     "id": "bot_seraphic_mimic",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "Archon mimic" },
     "description": "Spawns a copy of the seraphic shade.  This is a bug if you find one of these.",
     "material": [ "essencemat" ],
@@ -55,7 +60,8 @@
   },
   {
     "id": "stinger_flute",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "bone_flute",
     "name": { "str": "stinger flute", "str_pl": "stinger flutes" },
     "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Should be safe to put up to your mouth, probably.",
@@ -80,7 +86,8 @@
   },
   {
     "id": "charm_bone",
-    "type": "GENERIC",
+    "type": "ITEM",
+    "subtypes": [ "GENERIC" ],
     "name": { "str": "bone charm" },
     "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.",
     "weight": "38 g",
@@ -96,7 +103,8 @@
     "id": "charm_bone_empowered",
     "copy-from": "charm_bone",
     "sub": "charm_bone",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "sanctified bone charm" },
     "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any hostiles within 4 tiles.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 20 hours to charge.",
     "price_postapoc": "20 USD",
@@ -112,7 +120,8 @@
     "id": "stinger_flute_empowered",
     "copy-from": "stinger_flute",
     "sub": "stinger_flute",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "quickened stinger flute" },
     "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will greatly reduce movecosts and enhance evasion.  Stamina and attack speed are unaffected, however.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 6 uses, each use takes 40 hours to charge.",
     "price_postapoc": "25 USD",
@@ -126,7 +135,8 @@
   },
   {
     "id": "offering_chalice",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "offering chalice" },
     "description": "This is a strange chalice made of gold, engraved all over with some unfamiliar text.  It is filled with a thick black liquid that you seem unable to pour out.  Using it will allow you to perform a ritual that can convert your own life force into blood essence.  Doing so will take 15 minutes, inflicting harm upon your body at the end, as well as dire consequences if overused…",
     "weight": "2500 g",
@@ -156,7 +166,8 @@
   },
   {
     "id": "blood_athame",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "//": "By necessity can't yet define this to use copy-from, as qualities will break it.",
     "category": "weapons",
     "weapon_category": [ "KNIVES" ],
@@ -188,7 +199,8 @@
   },
   {
     "id": "sun_sword",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "copy-from": "qt_arming_sword",
     "weapon_category": [ "MEDIUM_SWORDS" ],
@@ -226,7 +238,8 @@
   },
   {
     "id": "sun_sword_on",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "sun_sword",
     "repairs_like": "sun_sword",
     "category": "weapons",
@@ -251,7 +264,8 @@
   },
   {
     "id": "hexenhammer",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "copy-from": "warhammer",
     "name": { "str": "hammer of the hunter", "str_pl": "hammers of the hunter" },
@@ -269,7 +283,8 @@
   {
     "id": "lucern_hexenhammer",
     "sub": "hexenhammer",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "copy-from": "lucern_hammer",
     "name": { "str": "luminous hammer" },
@@ -296,7 +311,8 @@
   },
   {
     "id": "spear_pestilence",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "spear_steel",
     "category": "weapons",
     "name": { "str": "spear of pestilence", "str_pl": "spears of pestilence" },
@@ -330,7 +346,8 @@
   },
   {
     "id": "blast_canister_arcana_flame",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "searing blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  Arm it to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area around it with flames.  You can also opt to set it up as an explosive trap.",
@@ -364,7 +381,8 @@
   {
     "id": "blast_canister_arcana_flame_act",
     "copy-from": "blast_canister_arcana_flame",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "active searing blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with flames.",
     "price_postapoc": "0 cent",
@@ -389,7 +407,8 @@
   },
   {
     "id": "blast_canister_arcana_water",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "wintry blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  Arm it to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area around it with supernatural cold.  You can also opt to set it up as an explosive trap.",
@@ -423,7 +442,8 @@
   {
     "id": "blast_canister_arcana_water_act",
     "copy-from": "blast_canister_arcana_water",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "active wintry blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with supernatural cold.",
     "price_postapoc": "0 cent",
@@ -448,7 +468,8 @@
   },
   {
     "id": "blast_canister_arcana_earth",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "earthen blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  Arm it to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area around it with acid.  You can also opt to set it up as an explosive trap.",
@@ -482,7 +503,8 @@
   {
     "id": "blast_canister_arcana_earth_act",
     "copy-from": "blast_canister_arcana_earth",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "active earthen blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with acid.",
     "price_postapoc": "0 cent",
@@ -507,7 +529,8 @@
   },
   {
     "id": "blast_canister_arcana_air",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "thunderous blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  Arm it to ready it for use, after which it will explode in a few seconds.  Its effect will blast the area around it with lightning.  You can also opt to set it up as an explosive trap.",
@@ -541,7 +564,8 @@
   {
     "id": "blast_canister_arcana_air_act",
     "copy-from": "blast_canister_arcana_air",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "active thunderous blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with lightning.",
     "price_postapoc": "0 cent",
@@ -566,7 +590,8 @@
   },
   {
     "id": "summon_kreck",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of trickery", "str_pl": "glyphs of trickery" },
     "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.  It is easy to control.",
@@ -587,7 +612,8 @@
   },
   {
     "id": "summon_blank",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of the root", "str_pl": "glyphs of the root" },
     "//": "ID retained to prevent tileset breakage, monster summoned was changed due to blank bodies being outright useless.",
@@ -609,7 +635,8 @@
   },
   {
     "id": "summon_flaming_eye",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of Gehenna", "str_pl": "glyphs of Gehenna" },
     "//": "ID retained to prevent tileset breakage, monster summoned was changed due to flaming eyes being useless if friendly.",
@@ -631,7 +658,8 @@
   },
   {
     "id": "summon_hunting_horror",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of Crawling Chaos", "str_pl": "glyphs of Crawling Chaos" },
     "//": "Explanation: In Lovecraft's work, The Crawling Chaos is one of Nyarlathotep's names, and hunting horrors are associated with him.  The success and failure messages below spell it out rather plainly.",
@@ -653,7 +681,8 @@
   },
   {
     "id": "summon_dark_wyrm",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of the eye", "str_pl": "glyphs of the eye" },
     "//": "Explanation: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
@@ -675,7 +704,8 @@
   },
   {
     "id": "summon_mi_go",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of Yuggoth", "str_pl": "glyphs of Yuggoth" },
     "//": "Explanation: Yuggoth is a fictional planet from Lovecraft's work, stated to have been colonized by the mi-go.",
@@ -697,7 +727,8 @@
   },
   {
     "id": "summon_jabberwock",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of the golem", "str_pl": "glyphs of the golem" },
     "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.  It is difficult to control.",
@@ -718,7 +749,8 @@
   },
   {
     "id": "summon_flying_polyp",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of Pnakotus", "str_pl": "glyphs of Pnakotus" },
     "//": "Explanation: In Lovecraft's works, the Pnakotic Manuscripts were associated with the city of this name, which was overrun by flying polyps in their conflict with the species that built the city.",
@@ -740,7 +772,8 @@
   },
   {
     "id": "summon_yugg",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of Plouton", "str_pl": "glyphs of Plouton" },
     "//": "Plouton, Latinized as Pluto, is another name for Hades, and reflects the association with wealth the god had by the time the name was in common use.",
@@ -762,7 +795,8 @@
   },
   {
     "id": "summon_shoggoth",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of the Elder Things", "str_pl": "glyphs of the Elder Things" },
     "//": "Explanation: The Elder Things in Lovecraft's work were the creators of shoggoths.",
@@ -784,7 +818,8 @@
   },
   {
     "id": "summon_kreck_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_kreck",
     "name": { "str": "bound summoned kreck" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A kreck has been bound into this after a successful summon, activate to redeploy it.",
@@ -799,7 +834,8 @@
   },
   {
     "id": "summon_triffid_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_blank",
     "name": { "str": "bound summoned triffid" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A triffid has been bound into this after a successful summon, activate to redeploy it.",
@@ -814,7 +850,8 @@
   },
   {
     "id": "summon_flesh_angel_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_flaming_eye",
     "name": { "str": "bound summoned flesh angel" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A flesh angel has been bound into this after a successful summon, activate to redeploy it.",
@@ -829,7 +866,8 @@
   },
   {
     "id": "summon_hunting_horror_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_hunting_horror",
     "name": { "str": "bound summoned hunting horror" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A hunting horror has been bound into this after a successful summon, activate to redeploy it.",
@@ -844,7 +882,8 @@
   },
   {
     "id": "summon_dark_wyrm_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_dark_wyrm",
     "name": { "str": "bound summoned dark wyrm" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A dark wyrm has been bound into this after a successful summon, activate to redeploy it.",
@@ -859,7 +898,8 @@
   },
   {
     "id": "summon_mi_go_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_mi_go",
     "name": { "str": "bound summoned mi-go" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A mi-go has been bound into this after a successful summon, activate to redeploy it.",
@@ -874,7 +914,8 @@
   },
   {
     "id": "summon_jabberwock_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_jabberwock",
     "name": { "str": "bound summoned jabberwock" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A jabberwock has been bound into this after a successful summon, activate to redeploy it.",
@@ -889,7 +930,8 @@
   },
   {
     "id": "summon_flying_polyp_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_flying_polyp",
     "name": { "str": "bound summoned flying polyp" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A flying polyp has been bound into this after a successful summon, activate to redeploy it.",
@@ -904,7 +946,8 @@
   },
   {
     "id": "summon_yugg_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_yugg",
     "name": { "str": "bound summoned yugg" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A yugg has been bound into this after a successful summon, activate to redeploy it.",
@@ -919,7 +962,8 @@
   },
   {
     "id": "summon_shoggoth_bound",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "summon_shoggoth",
     "name": { "str": "bound summoned shoggoth" },
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A shoggoth has been bound into this after a successful summon, activate to redeploy it.",
@@ -935,7 +979,8 @@
   {
     "id": "bloodaxe",
     "copy-from": "hatchet",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "weapon_category": [ "HAND_AXES" ],
     "name": { "str": "veinreaver" },
@@ -968,7 +1013,8 @@
   {
     "id": "bloodaxe_act",
     "//": "Can't use copy-from because qualities refuse to be deleted, causing it to try and chop wood instead of exploding.",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "weapon_category": [ "HAND_AXES" ],
     "name": { "str": "glowing veinreaver" },
@@ -1006,7 +1052,8 @@
   {
     "id": "shrike_misericorde",
     "looks_like": "rapier",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "weapon_category": [ "FENCING_WEAPONRY" ],
     "name": { "str": "shrike's misericorde" },
@@ -1054,7 +1101,8 @@
   {
     "id": "lichhook",
     "copy-from": "khopesh",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "lichhook" },
     "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Robots and other creatures immune to biological damage will not suffer damage from it.",
@@ -1071,7 +1119,8 @@
   },
   {
     "id": "candle_warding",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "candle of warding", "str_pl": "candles of warding" },
     "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  It can be used to place a magical barrier, or used to project a faint light.  The barrier this item creates is tough and provides a source of fire.  Examining the barrier will let you retrieve the candle.",
     "weight": "100 g",
@@ -1096,7 +1145,8 @@
   },
   {
     "id": "candle_warding_active",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "candle of warding (on)", "str_pl": "candles of warding (on)" },
     "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Its wick is lit with a ghostly blue flame, projecting light without heat.  It can also be used to place a tough magical barrier, also providing a source of fire.  Examining the barrier will let you retrieve the candle.",
     "weight": "100 g",
@@ -1123,7 +1173,8 @@
   },
   {
     "id": "transmutation_crucible",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "transmutation crucible" },
     "description": "A small container made out of a polished, glassy material resembling stone.  A shimmer of precious metal occasionally appears within the surface, as though its internal structure flowed like liquid.  Deploying it will create a temporary workspace of shifting earth, providing a hard surface usable as an anvil as well as shifting stones that can assist in metalworking and alchemy.  It can be examined afterward to reclaim it.\n\nWhen deployed it provides the following:\n* Level 3 anvil quality.\n* Level 2 boiling quality.\n* Level 2 chemical making quality.\n* Level 1 containing quality.\n* Level 1 food cooking quality.\n* Level 2 clean surface quality.\n* Additionally serves as a crucible.",
     "weight": "1700 g",
@@ -1141,14 +1192,16 @@
   {
     "id": "transmutation_crucible_deployed_fake",
     "sub": "crucible_clay",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "fake_item",
     "name": { "str": "deployed transmutation crucible" },
     "qualities": [ [ "ANVIL", 3 ], [ "COOK", 1 ], [ "CHEM", 2 ], [ "BOIL", 2 ], [ "CONTAIN", 1 ], [ "SURFACE", 2 ] ]
   },
   {
     "id": "dimensional_warp_trap",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "sliver of unreality", "str_pl": "slivers of unreality" },
     "description": "A talisman of 16-pointed silver, twisted to ensnare a sharply-pointed piece of crystallized essence.  Focusing its energy like a lens, using it will rip open a gap in the Veil itself, before stablizing it into a dimensional gateway.  Examining the gate will allow you to teleport to any other such gates you come across.",
     "weight": "285 g",
@@ -1163,7 +1216,8 @@
   },
   {
     "id": "orb_veil",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "tools",
     "name": { "str": "orb of the veil", "str_pl": "orbs of the veil" },
     "description": "A mysterious orb made of a dark, almost glassy stone.  An eye pattern is worked into it, using gold for the irises and a diamond pupil.  It is said to represent a desire to protect the old knowledge and old ways, strengthened by a yearning for further enlightenment.  Using it will show you a vision of the surrounding area, along with other random side effects, along with attracting unwanted attention from Beyond…",
@@ -1199,7 +1253,8 @@
   },
   {
     "id": "staff_druidic",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "weapon_category": [ "BATONS" ],
     "name": { "str": "druidic staff", "str_pl": "druidic staves" },
     "description": "A short wooden staff decorated with engraved silver, depicting a mixture of exotic natural scenes and various holy symbols.  It is said to represent the instincts deep within the heart, tempered by restraint and reason.  Using it can repair and fortify items made of various plant or animal products and stone, but not more refined materials like metal or glass.",
@@ -1265,7 +1320,8 @@
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "SHEATH_SPEAR" ]
   },
   {
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "id": "coalescent_converter",
     "name": { "str": "coalescent converter" },
     "description": "A device modified from an exotic compact reactor, inverting its original function entirely.  Using a large surge of power from any battery able to hold enough charge, it can generate crystallized essence.  The process is rather inefficient, and poses a high risk of damaging the fabric of reality.",
@@ -1294,7 +1350,8 @@
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_coalescent_conversion", "no_fail": true, "level": 0 } ]
   },
   {
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "id": "offering_chalice_coalescent",
     "sub": "offering_chalice",
     "name": { "str": "coalescent chalice" },
@@ -1314,7 +1371,8 @@
   {
     "id": "thermic_essence_cutter",
     "sub": "oxy_torch",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "thermic essence cutter" },
     "description": "A small copper device that channels magical flame, focusing it into a white-hot pinprick of searing heat.  Too narrow in focus and short-ranged to be useful as a weapon, instead designed for metalworking and repairing items.  With a source of eye protection it can be used to destroy metal barriers.",
     "weight": "2400 g",
@@ -1363,7 +1421,8 @@
   },
   {
     "id": "spatial_displacer",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "spatial displacer" },
     "description": "A cutting-edge piece of dimensional science, heavily modified to incorporate refinements from Beyond.  Using it will teleport you to a targeted location, a vast improvement over the uncertainty of previous devices, even destroying any obstacles that would make emergence unsafe.  However, using it might attract unwanted attention from things that do not belong in this world…",
     "weight": "1360 g",
@@ -1383,7 +1442,8 @@
   },
   {
     "id": "bot_mech_arcana",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "inactive anomaly recon mech" },
     "description": "A hulking, yet unnaturally light, mass of parts running off anomalous technology, with an exotic laser weapon and advanced defensive tools.  With a completely bespoke power cell fueled by magical essence installed, use it to deploy and set up the mech for piloting, consuming a random amount of charges from its power cell to restore it to life.",
     "volume": "500 L",
@@ -1406,7 +1466,8 @@
   },
   {
     "id": "verge_meteoric",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "weapon_category": [ "BATONS" ],
     "name": { "str": "meteoric verge" },
@@ -1454,7 +1515,8 @@
   },
   {
     "id": "scourge_moonstone",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "symbol": "/",
     "looks_like": "bullwhip_razor",
@@ -1490,7 +1552,8 @@
     "id": "scourge_moonstone_on",
     "copy-from": "scourge_moonstone",
     "repairs_like": "scourge_moonstone",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "moonstone scourge (on)", "str_pl": "moonstone scourges (on)" },
     "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  The stone blades reflect with an eerie red luster, and it seems far more nimble in the hand.",
     "//": "Turns out that modifying attack speed via relic data doesn't work right for transforming items, so weight-based hacks it is!",
@@ -1510,7 +1573,8 @@
   },
   {
     "id": "moonstone_fang",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "weapon_category": [ "KNIVES" ],
     "name": { "str": "moonstone fang" },
@@ -1569,7 +1633,8 @@
   },
   {
     "id": "moonstone_fang_on",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "moonstone_fang",
     "repairs_like": "moonstone_fang",
     "name": { "str": "moonstone fang (on)", "str_pl": "moonstone fangs (on)" },
@@ -1588,7 +1653,8 @@
     "id": "veilblade",
     "looks_like": "zweihander",
     "copy-from": "zweihander",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "restored ritual blade" },
     "description": "A two-handed sword richly engraved with exotic runes, all in scripts not of this world.  Once corrupted and now restored, it can only serve a fragment of its original purpose.  Linger near a portal to collapse it into a form you can harvest crystallized essence from.  Use \"consume\" to offer power to the Beyond.  It will grant great gifts, but set you down a path you can't return from.  Using \"cast spell\" instead will channel its fuel into a burst of energy, restoring 1500 mana if used on yourself …or, unravel a single nearby enemy for massive damage.",
@@ -1636,7 +1702,8 @@
   },
   {
     "id": "draconic_heart_mutator",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "sacramental heart" },
     "description": "A vibrant red chunk of petrified flesh, purified and set in an ornamental mounting like a morbid brooch.  It resonates with unnatural power, as though imbued with the essence of the creature it was cut away from.  Channeling blood essence through it will start you down the path to becoming something …else.  A path you can't return from.",
     "weight": "2500 g",
@@ -1661,7 +1728,8 @@
   },
   {
     "id": "sanguine_staff_lifesbane",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "weapon_category": [ "QUARTERSTAVES" ],
     "name": { "str": "horned staff of life's bane", "str_pl": "horned staves of life's bane" },
@@ -1703,7 +1771,8 @@
   },
   {
     "id": "stormbringer",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "copy-from": "zweihander",
     "name": { "str": "cursed blade" },
     "description": "A two-handed sword made of a dark metal.  It is engraved with unfamiliar symbols, and a single phrase in a script you can actually read: \"neherit asheiri\"  Activating it will grant the wielder a burst of powerful, corruptive, addictive life-draining magic, but you'll be unable to let go of it until the effect wears off.",
@@ -1750,7 +1819,8 @@
   },
   {
     "id": "stormbringer_on",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "category": "weapons",
     "name": { "str": "cursed blade (on)", "str_pl": "cursed blades (on)" },
     "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
@@ -1791,7 +1861,8 @@
   },
   {
     "id": "leather_journal",
-    "type": "TOOL",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
     "name": { "str": "leather journal" },
     "copy-from": "leather_journal",
     "pocket_data": [

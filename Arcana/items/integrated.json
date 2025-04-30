@@ -1,7 +1,8 @@
 [
   {
     "id": "integrated_scalypatches",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "category": "armor",
     "name": { "str_sp": "Scaly Patches" },
     "description": "Your dermis has toughened and started to grow scales in places.",
@@ -29,7 +30,8 @@
   },
   {
     "id": "integrated_dragonscales",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "category": "armor",
     "name": { "str_sp": "Draconic Scales" },
     "description": "Leathery and heavily armored, your lamellar skin has been toughened for the fierce battles ahead.",
@@ -71,7 +73,8 @@
   },
   {
     "id": "integrated_draconicplating",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
     "category": "armor",
     "name": { "str_sp": "Draconic Plating" },
     "description": "Сovered in majestic dragon scales, you'll thrive where others struggle to survive.",
