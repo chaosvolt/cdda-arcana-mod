@@ -1305,7 +1305,7 @@
       "terrain": { "_": "t_rock_floor" },
       "items": {
         "l": [ { "item": "guns_milspec", "chance": 10 }, { "item": "ammo_milspec", "chance": 70 } ],
-        "_": { "item": "wreckage", "chance": 15 }
+        "_": { "item": "SUS_trash_metal", "chance": 15 }
       },
       "place_loot": [
         { "group": "remains_human_generic", "x": [ 18, 19 ], "y": [ 7, 9 ] },

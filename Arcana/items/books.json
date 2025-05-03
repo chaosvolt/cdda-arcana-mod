@@ -340,7 +340,7 @@
     "copy-from": "arcana_note_base",
     "sub": "book_potioncraft",
     "type": "ITEM",
-    
+    "subtypes": [ "TOOL" ],
     "weight": "60 g",
     "volume": "100 ml",
     "//": "All reference notes are post-cataclysm, and only useful to people already intimately familiar with the base book.",
@@ -352,7 +352,7 @@
     "copy-from": "arcana_note_base",
     "sub": "book_scrollcraft",
     "type": "ITEM",
-    
+    "subtypes": [ "TOOL" ],
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "2 USD",
@@ -363,7 +363,7 @@
     "copy-from": "arcana_note_base",
     "sub": "book_bloodmagic",
     "type": "ITEM",
-    
+    "subtypes": [ "TOOL" ],
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "210 cent",
@@ -374,7 +374,7 @@
     "copy-from": "arcana_note_base",
     "sub": "book_hexenhammer",
     "type": "ITEM",
-    
+    "subtypes": [ "TOOL" ],
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "210 cent",
@@ -385,7 +385,7 @@
     "copy-from": "arcana_note_base",
     "sub": "book_sacrifice",
     "type": "ITEM",
-    
+    "subtypes": [ "TOOL" ],
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "2 USD",
@@ -396,7 +396,7 @@
     "copy-from": "arcana_note_base",
     "sub": "book_syncretism",
     "type": "ITEM",
-    
+    "subtypes": [ "TOOL" ],
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "270 cent",
@@ -407,7 +407,7 @@
     "copy-from": "arcana_note_base",
     "sub": "book_summoning",
     "type": "ITEM",
-    
+    "subtypes": [ "TOOL" ],
     "weight": "60 g",
     "volume": "100 ml",
     "price_postapoc": "2 USD",
