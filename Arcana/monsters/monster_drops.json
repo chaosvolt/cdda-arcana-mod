@@ -487,7 +487,7 @@
     "id": "mon_fungaloid_shambler_death_drops",
     "subtype": "collection",
     "entries": [
-      { "group": "wreckage", "prob": 5 },
+      { "group": "SUS_trash_metal", "prob": 5 },
       { "group": "SUS_trash_forest_no_manmade", "prob": 5 },
       {
         "distribution": [ { "item": "inflorescent_root", "prob": 50 }, { "item": "iron_thorn", "prob": 50 } ],
