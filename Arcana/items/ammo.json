@@ -109,7 +109,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 6,
-    "effects": [ "RECOVER_50" ]
+    "recovery_chance": 98
   },
   {
     "type": "ITEM",
@@ -134,7 +134,7 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 6,
-    "effects": [ "RECOVER_50" ]
+    "recovery_chance": 98
   },
   {
     "type": "ITEM",
@@ -161,7 +161,8 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 3,
-    "effects": [ "RECOVER_50", "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT" ]
+    "recovery_chance": 98,
+    "effects": [ "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT" ]
   },
   {
     "type": "ITEM",
@@ -187,7 +188,8 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 4,
-    "effects": [ "RECOVER_50", "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT" ]
+    "recovery_chance": 98,
+    "effects": [ "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT" ]
   },
   {
     "type": "ITEM",
@@ -212,7 +214,8 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 4,
-    "effects": [ "RECOVER_50", "BEANBAG", "AMMO_ARCANA_WATER_EFFECT" ]
+    "recovery_chance": 98,
+    "effects": [ "BEANBAG", "AMMO_ARCANA_WATER_EFFECT" ]
   },
   {
     "type": "ITEM",
@@ -237,7 +240,8 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 5,
-    "effects": [ "RECOVER_50", "BEANBAG", "AMMO_ARCANA_WATER_EFFECT" ]
+    "recovery_chance": 98,
+    "effects": [ "BEANBAG", "AMMO_ARCANA_WATER_EFFECT" ]
   },
   {
     "type": "ITEM",
@@ -262,7 +266,8 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 5,
-    "effects": [ "RECOVER_50", "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT" ]
+    "recovery_chance": 98,
+    "effects": [ "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT" ]
   },
   {
     "type": "ITEM",
@@ -287,7 +292,8 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 6,
-    "effects": [ "RECOVER_50", "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT" ]
+    "recovery_chance": 98,
+    "effects": [ "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT" ]
   },
   {
     "type": "ITEM",
@@ -312,7 +318,8 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 6,
-    "effects": [ "RECOVER_50", "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT" ]
+    "recovery_chance": 98,
+    "effects": [ "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT" ]
   },
   {
     "type": "ITEM",
@@ -337,7 +344,8 @@
     "count": 10,
     "show_stats": true,
     "critical_multiplier": 7,
-    "effects": [ "RECOVER_50", "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT" ]
+    "recovery_chance": 98,
+    "effects": [ "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT" ]
   },
   {
     "type": "ITEM",
