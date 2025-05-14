@@ -533,7 +533,8 @@
         "DIMENSIONAL_ANCHOR",
         "UNBREAKABLE"
       ]
-    }
+    },
+    "qualities": [ [ "HV_INSULATION", 1 ] ]
   },
   {
     "id": "hauberk_jade",
@@ -582,7 +583,8 @@
       }
     ],
     "relative": { "weight": 3020, "price": "550 USD", "material_thickness": 1 },
-    "extend": { "flags": [ "NO_SALVAGE", "USE_PLAYER_ENERGY", "ELECTRIC_IMMUNE", "RAINPROOF" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "USE_PLAYER_ENERGY", "ELECTRIC_IMMUNE", "RAINPROOF" ] },
+    "qualities": [ [ "HV_INSULATION", 1 ] ]
   },
   {
     "id": "hauberk_jade_on",
