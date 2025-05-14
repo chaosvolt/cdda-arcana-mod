@@ -398,7 +398,10 @@
     "message": "\"May we rebuild this world, one stone at a time…\"  You cast %s!",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL", "IGNORE_WALLS", "NO_PROJECTILE" ],
-    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 } ],
+    "extra_effects": [
+      { "id": "arcana_magic_earthweaving_damage", "hit_self": false, "max_level": 10 },
+      { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 }
+    ],
     "effect": "ter_transform",
     "shape": "blast",
     "effect_str": "arcana_earthweaving",
