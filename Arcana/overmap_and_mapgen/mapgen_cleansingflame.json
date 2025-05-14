@@ -160,7 +160,7 @@
       "furniture": { "E": "f_table", "F": "f_fireplace", "H": "f_chair", "P": "f_bench", "R": "f_rack_coat" },
       "items": {
         "]": [ { "item": "homebooks", "chance": 50, "repeat": 2 }, { "item": "cleansing_flame_books", "chance": 25 } ],
-        "d": [ { "item": "office_mess", "chance": 50, "repeat": 2 } ]
+        "d": [ { "item": "SUS_office_mess", "chance": 50, "repeat": 2 } ]
       },
       "place_loot": [
         { "item": "CF_golden_scale", "x": 19, "y": 16, "chance": 50, "repeat": 3 },
@@ -210,8 +210,8 @@
         { "item": "arcanemap", "x": [ 16, 18 ], "y": 7, "chance": 75 },
         { "item": "book_magicfordummies", "x": [ 16, 18 ], "y": 7, "chance": 75 },
         { "group": "cleansing_flame_spells", "x": 17, "y": [ 9, 13 ], "chance": 10, "repeat": 2 },
-        { "group": "office_mess", "x": 9, "y": 15, "chance": 50, "repeat": 5 },
-        { "group": "office_mess", "x": 15, "y": 15, "chance": 50, "repeat": 5 },
+        { "group": "SUS_office_mess", "x": 9, "y": 15, "chance": 50, "repeat": 5 },
+        { "group": "SUS_office_mess", "x": 15, "y": 15, "chance": 50, "repeat": 5 },
         { "group": "cleansing_flame_crafting", "x": 9, "y": [ 17, 19 ], "chance": 75, "repeat": 5 },
         { "item": "CF_golden_scale", "x": 9, "y": [ 17, 19 ], "chance": 30, "repeat": 3 },
         { "group": "cleansing_flame_crafting", "x": 15, "y": [ 17, 19 ], "chance": 75, "repeat": 5 },
