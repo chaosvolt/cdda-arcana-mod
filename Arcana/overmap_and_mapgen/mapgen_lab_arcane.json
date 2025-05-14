@@ -114,7 +114,7 @@
       },
       "toilets": { "T": {  } },
       "items": {
-        "^": { "item": "file_room", "chance": 70, "repeat": 5 },
+        "^": { "item": "SUS_office_filing_cabinet", "chance": 70, "repeat": 5 },
         "B": [ { "item": "textbooks", "chance": 50 }, { "item": "manuals", "chance": 50 } ],
         "C": [
           { "item": "chem_lab", "chance": 10 },
@@ -316,7 +316,7 @@
       ],
       "items": {
         "@": { "item": "bed", "chance": 50, "repeat": 2 },
-        "^": { "item": "file_room", "chance": 70, "repeat": 5 },
+        "^": { "item": "SUS_office_filing_cabinet", "chance": 70, "repeat": 5 },
         "B": [ { "item": "textbooks", "chance": 50 }, { "item": "manuals", "chance": 50 } ],
         "D": { "item": "lab_dorm", "chance": 50, "repeat": 5 },
         "F": { "item": "fridgesnacks", "chance": 25, "repeat": 5 },

@@ -2383,7 +2383,7 @@
         "c": { "items": [ { "item": "tools_electronics", "chance": 50, "repeat": 2 } ] }
       },
       "place_loot": [
-        { "group": "file_room", "x": [ 18, 19 ], "y": [ 3, 4 ], "chance": 50, "repeat": 20 },
+        { "group": "SUS_office_filing_cabinet", "x": [ 18, 19 ], "y": [ 3, 4 ], "chance": 50, "repeat": 20 },
         { "item": "arcane_purifier_intel_2", "x": [ 18, 19 ], "y": [ 6, 7 ] }
       ],
       "place_monster": [
