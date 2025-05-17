@@ -57,7 +57,7 @@
         { "group": "forage_spring", "x": 16, "y": 4, "chance": 75, "repeat": 6 },
         { "group": "stash_food", "x": 17, "y": 4, "chance": 90, "repeat": 5 },
         { "group": "tools_common", "x": 19, "y": [ 10, 11 ], "chance": 50, "repeat": 4 },
-        { "group": "oven", "x": 19, "y": 6, "chance": 50, "repeat": 3 },
+        { "group": "SUS_oven", "x": 19, "y": 6, "chance": 50, "repeat": 3 },
         { "item": "matches", "x": 6, "y": 16 },
         { "group": "reading_lights", "x": 6, "y": 16 },
         { "item": "ax", "x": 8, "y": 16 },

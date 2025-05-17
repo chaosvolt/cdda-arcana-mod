@@ -34,7 +34,7 @@
       "palettes": [ "arcana_palette" ],
       "mapping": {
         "]": { "items": { "item": "mansion_bookcase" } },
-        "f": { "items": [ { "item": "fridgesnacks", "chance": 30 }, { "item": "fridge", "chance": 50 } ] },
+        "f": { "items": [ { "item": "SUS_fridge_snacks", "chance": 30 }, { "item": "SUS_fridge", "chance": 50 } ] },
         "n": { "items": [ { "item": "cannedfood", "chance": 50 }, { "item": "cannedfood", "chance": 25 } ] },
         "{": { "items": [ { "item": "butcher_tools", "chance": 50 }, { "item": "butcher_tools", "chance": 50 } ] }
       },
@@ -191,7 +191,7 @@
             { "item": "antique_rare", "chance": 50 }
           ]
         },
-        "f": { "items": [ { "item": "fridgesnacks", "chance": 30 }, { "item": "fridge", "chance": 50 } ] },
+        "f": { "items": [ { "item": "SUS_fridge_snacks", "chance": 30 }, { "item": "SUS_fridge", "chance": 50 } ] },
         "n": { "items": [ { "item": "cannedfood", "chance": 50 }, { "item": "cannedfood", "chance": 25 } ] }
       },
       "place_loot": [

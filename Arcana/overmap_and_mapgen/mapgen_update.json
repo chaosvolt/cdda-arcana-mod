@@ -731,7 +731,7 @@
       },
       "mapping": {
         "B": { "items": [ { "item": "bed", "chance": 50 } ] },
-        "C": { "items": [ { "item": "oven", "chance": 50 }, { "item": "oven", "chance": 25 } ] },
+        "C": { "items": [ { "item": "SUS_oven", "chance": 50 }, { "item": "SUS_oven", "chance": 25 } ] },
         "D": { "items": [ { "item": "clothing_outdoor_torso", "chance": 50 }, { "item": "clothing_outdoor_pants", "chance": 50 } ] },
         "n": {
           "items": [

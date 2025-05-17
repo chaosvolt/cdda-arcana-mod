@@ -179,7 +179,7 @@
         { "group": "cleansing_flame_books", "x": 18, "y": [ 9, 10 ], "chance": 50, "repeat": 5 },
         { "group": "standing_stones_libation", "x": 15, "y": [ 9, 10 ], "chance": 100 },
         { "item": "note_flame_tenet", "x": 15, "y": [ 9, 10 ], "chance": 100 },
-        { "group": "oven", "x": [ 1, 2 ], "y": 17, "chance": 40, "repeat": 2 }
+        { "group": "SUS_oven", "x": [ 1, 2 ], "y": 17, "chance": 40, "repeat": 2 }
       ],
       "place_npcs": [
         { "class": "cleansing_flame_representative", "x": 9, "y": 9 },
