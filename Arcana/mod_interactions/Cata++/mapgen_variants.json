@@ -92,9 +92,9 @@
       "mapping": {
         "B": { "items": { "item": "bed", "chance": 75 } },
         "D": { "items": { "item": "dresser", "chance": 90 } },
-        "F": { "items": [ { "item": "fridge", "chance": 75 }, { "item": "fridgesnacks", "chance": 75 } ] },
+        "F": { "items": [ { "item": "SUS_fridge", "chance": 75 }, { "item": "SUS_fridge_snacks", "chance": 75 } ] },
         "b": { "items": { "item": "mansion_bookcase", "chance": 100 } },
-        "o": { "items": { "item": "oven", "chance": 50 } },
+        "o": { "items": { "item": "SUS_oven", "chance": 50 } },
         "t": { "items": { "item": "kitchen", "chance": 25 } },
         "n": {
           "items": [
