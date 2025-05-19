@@ -14,11 +14,11 @@
     "material": [ "paper" ],
     "symbol": "?",
     "color": "blue",
-    "skill": "magic",
+    "read_skill": "magic",
     "required_level": 0,
     "max_level": 10,
     "intelligence": 12,
     "time": "180 m",
-    "fun": -5
+    "read_fun": -5
   }
 ]

@@ -1,6 +1,7 @@
 [
   {
     "type": "ITEM",
+	"subtypes": [ "ARTIFACT" ],
     "category": "weapons",
     "id": "unbio_kinetic_amplifier_weapon",
     "name": { "str_sp": "salvaged kinetic amplifier" },
@@ -17,21 +18,19 @@
     "flags": [ "UNBREAKABLE_MELEE", "TRADER_AVOID" ],
     "qualities": [ [ "HAMMER", 1 ] ],
     "techniques": [ "WBLOCK_1", "tec_weapon_kinetic_knockback" ],
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "arcana_react_kinetic_amplifier_flashbang",
-              "once_in": 10,
-              "message": "Your kinetic resonates with a blinding flash and thunderous sound!",
-              "npc_message": "%1$s suddenly gives off a blinding flash and thunderous sound!"
-            }
-          ]
-        }
-      ]
-    }
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_kinetic_amplifier_flashbang",
+            "once_in": 10,
+            "message": "Your kinetic resonates with a blinding flash and thunderous sound!",
+            "npc_message": "%1$s suddenly gives off a blinding flash and thunderous sound!"
+          }
+        ]
+      }
+    ]
   }
 ]
