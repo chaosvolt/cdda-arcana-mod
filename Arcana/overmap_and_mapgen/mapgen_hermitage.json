@@ -1,7 +1,7 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "arcana_hermitage_1" ],
     "weight": 300,
     "object": {
@@ -69,7 +69,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "arcana_hermitage_2" ],
     "weight": 300,
     "object": {
@@ -148,7 +148,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "arcana_hermitage_roof" ],
     "weight": 300,
     "object": {

@@ -1,7 +1,7 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "arcanist_basement" ],
     "weight": 75,
     "object": {
@@ -58,7 +58,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "arcanist_basement_2" ],
     "weight": 100,
     "object": {
@@ -110,7 +110,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "arcanist_basement_2" ],
     "weight": 50,
     "object": {
@@ -173,7 +173,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "arcanist_basement" ],
     "weight": 125,
     "object": {
@@ -227,7 +227,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": "house_05_basement",
     "weight": 300,
     "//": "mostly empty basement, but hidden hint of some weirdness going on.",
@@ -286,7 +286,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": "house_prepper2_basement",
     "weight": 500,
     "object": {
@@ -366,7 +366,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": "house_fortified_basement",
     "weight": 500,
     "object": {
@@ -447,7 +447,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "basement_survival" ],
     "weight": 500,
     "object": {
@@ -575,7 +575,7 @@
     }
   },
   {
-    "method": "json",
+    
     "om_terrain": "urban_18_1",
     "type": "mapgen",
     "weight": 500,
@@ -639,7 +639,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "cabin_strange_b" ],
     "weight": 450,
     "object": {
@@ -693,7 +693,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "cathedral_b_SE" ],
     "weight": 375,
     "object": {

@@ -1,7 +1,7 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_site" ],
     "weight": 100,
     "object": {
@@ -39,7 +39,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_platforms_center" ],
     "weight": 100,
     "object": {
@@ -78,7 +78,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_platforms_left" ],
     "weight": 100,
     "object": {
@@ -116,7 +116,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_platforms_right" ],
     "weight": 100,
     "object": {
@@ -154,7 +154,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_temple_left" ],
     "weight": 100,
     "object": {
@@ -201,7 +201,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_temple_right" ],
     "weight": 100,
     "object": {
@@ -249,7 +249,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_temple_center" ],
     "weight": 100,
     "object": {
@@ -302,7 +302,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_roof_left" ],
     "weight": 100,
     "//": "Only way to give temple a roof without changing layout",
@@ -339,7 +339,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_roof_right" ],
     "weight": 100,
     "object": {
@@ -375,7 +375,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ "impact_roof_center" ],
     "weight": 100,
     "object": {
