@@ -1906,13 +1906,13 @@
             { "item": "autodoc_installation_magitech", "chance": 25 }
           ]
         },
-        "^": { "item": [ { "item": "rock", "count": [ 1, 4 ] } ] },
+        "^": { "item": [ { "item": "rock", "repeat": [ 1, 4 ] } ] },
         "a": {
           "item": [
-            { "item": "scrap", "count": [ 4, 16 ] },
-            { "item": "steel_chunk", "count": [ 1, 6 ] },
-            { "item": "plutonium", "count": [ 0, 3 ] },
-            { "item": "lead", "charges": [ 12, 18 ] }
+            { "item": "scrap", "repeat": [ 4, 16 ] },
+            { "item": "steel_chunk", "repeat": [ 1, 6 ] },
+            { "item": "plutonium", "repeat": [ 0, 3 ] },
+            { "item": "lead", "repeat": [ 12, 18 ] }
           ]
         }
       },
@@ -2379,7 +2379,7 @@
       },
       "place_fields": [ { "x": 20, "y": 2, "field": "fd_gas_vent", "intensity": 1 } ],
       "mapping": {
-        "%": { "item": [ { "item": "scrap", "count": [ 5, 10 ] } ] },
+        "%": { "item": [ { "item": "scrap", "repeat": [ 5, 10 ] } ] },
         "c": { "items": [ { "item": "tools_electronics", "chance": 50, "repeat": 2 } ] }
       },
       "place_loot": [
