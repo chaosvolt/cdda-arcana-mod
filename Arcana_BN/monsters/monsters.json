@@ -157,7 +157,7 @@
     "melee_skill": 9,
     "melee_dice": 2,
     "melee_dice_sides": 2,
-    "melee_damage": [ { "damage_type": "cold", "amount": 5, "armor_multiplier": 0.1 } ],
+    "melee_damage": [ { "damage_type": "dark", "amount": 5, "armor_multiplier": 0.1 } ],
     "melee_cut": 2,
     "dodge": 3,
     "armor_bash": 5,
@@ -837,7 +837,7 @@
       "PUSH_MON",
       "NO_BREATHE",
       "NOHEAD",
-      "COLDPROOF",
+      "DARKPROOF",
       "QUEEN"
     ]
   },
@@ -932,7 +932,7 @@
       "BLEED",
       "PUSH_MON",
       "ELECTRONIC",
-      "COLDPROOF",
+      "DARKPROOF",
       "BIOPROOF",
       "FLIES",
       "NOHEAD",

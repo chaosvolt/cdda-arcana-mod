@@ -62,7 +62,7 @@
       {
         "id": "buff_cleansingflame_onattack2",
         "name": "Battle Ward",
-        "description": "Against the inhuman, the only defense is vigilance.\n+1 heat/cold/electric armor.\nLasts 2 turns.  Stacks 3 times.",
+        "description": "Against the inhuman, the only defense is vigilance.\n+1 heat/cold/dark/electric armor.\nLasts 2 turns.  Stacks 3 times.",
         "unarmed_allowed": true,
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 2 }, { "name": "magic", "level": 5 } ],
@@ -71,6 +71,7 @@
         "flat_bonuses": [
           { "stat": "armor", "type": "heat", "scale": 1 },
           { "stat": "armor", "type": "cold", "scale": 1 },
+          { "stat": "armor", "type": "dark", "scale": 1 },
           { "stat": "armor", "type": "electric", "scale": 1 }
         ]
       }
