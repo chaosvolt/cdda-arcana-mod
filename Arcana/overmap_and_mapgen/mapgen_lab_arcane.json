@@ -1,7 +1,7 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ [ "lab_arcane_1_1", "lab_arcane_1_2", "lab_arcane_1_3" ], [ "lab_arcane_1_4", "lab_arcane_1_5", "lab_arcane_1_6" ] ],
     "weight": 1000,
     "object": {
@@ -176,7 +176,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ [ "lab_arcane_2_1", "lab_arcane_2_2", "lab_arcane_2_3" ], [ "lab_arcane_2_4", "lab_arcane_2_5", "lab_arcane_2_6" ] ],
     "weight": 1000,
     "object": {
@@ -379,7 +379,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ [ "lab_arcane_3_1", "lab_arcane_3_2", "lab_arcane_3_3" ], [ "lab_arcane_3_4", "lab_arcane_3_5", "lab_arcane_3_6" ] ],
     "weight": 1000,
     "object": {
@@ -612,7 +612,7 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "om_terrain": [ [ "lab_arcane_4_1", "lab_arcane_4_2", "lab_arcane_4_3" ], [ "lab_arcane_4_4", "lab_arcane_4_5", "lab_arcane_4_6" ] ],
     "weight": 1000,
     "object": {
@@ -886,13 +886,13 @@
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "nested_mapgen_id": "lab_arcane_4_4_rads",
     "object": { "mapgensize": [ 12, 12 ], "set": [ { "square": "radiation", "amount": 50, "x": 0, "y": 0, "x2": 0, "y2": 11 } ] }
   },
   {
     "type": "mapgen",
-    "method": "json",
+    
     "nested_mapgen_id": "lab_arcane_4_5_rads",
     "object": {
       "mapgensize": [ 12, 12 ],
