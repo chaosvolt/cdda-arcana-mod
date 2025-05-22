@@ -945,7 +945,7 @@
     "price_postapoc": "60 USD",
     "bashing": 15,
     "cutting": 28,
-    "thrown_damage": [ { "damage_type": "cold", "amount": 35 } ],
+    "thrown_damage": [ { "damage_type": "dark", "amount": 35 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
     "looks_like": "hatchet",

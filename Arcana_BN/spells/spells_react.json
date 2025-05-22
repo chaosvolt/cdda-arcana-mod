@@ -235,7 +235,7 @@
     "valid_targets": [ "hostile", "ground" ],
     "effect": "target_attack",
     "effect_str": "blind",
-    "damage_type": "cold",
+    "damage_type": "dark",
     "min_damage": 1,
     "max_damage": 3,
     "flags": [ "NO_EXPLOSION_VFX", "RANDOM_DURATION", "RANDOM_DAMAGE" ],
