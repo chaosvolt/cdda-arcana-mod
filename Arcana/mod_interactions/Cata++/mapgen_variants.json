@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    "method": "json",
     "om_terrain": [ "Survivor_Encampment" ],
     "weight": 250,
     "object": {
