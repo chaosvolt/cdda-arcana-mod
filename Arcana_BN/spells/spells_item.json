@@ -132,7 +132,7 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "min_damage": 65,
     "max_damage": 65,
-    "damage_type": "fire",
+    "damage_type": "light",
     "min_aoe": 4,
     "max_aoe": 4
   },
@@ -148,7 +148,7 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "min_damage": 65,
     "max_damage": 65,
-    "damage_type": "fire",
+    "damage_type": "light",
     "min_aoe": 1,
     "max_aoe": 1
   },
@@ -529,7 +529,7 @@
     "max_aoe": 6,
     "min_duration": 300,
     "max_duration": 600,
-    "damage_type": "fire"
+    "damage_type": "light"
   },
   {
     "id": "arcana_item_hammerzeit_dazzle",
@@ -584,7 +584,7 @@
     "max_aoe": 6,
     "min_duration": 1000,
     "max_duration": 2000,
-    "damage_type": "fire"
+    "damage_type": "light"
   },
   {
     "id": "arcana_item_hammerzeit_greater_attack_2",
@@ -622,7 +622,7 @@
     "max_damage": 25,
     "min_aoe": 6,
     "max_aoe": 6,
-    "damage_type": "fire"
+    "damage_type": "light"
   },
   {
     "id": "arcana_item_immolate",
@@ -804,7 +804,7 @@
     "flags": [ "RANDOM_DURATION", "SILENT" ],
     "min_damage": 40,
     "max_damage": 60,
-    "damage_type": "cold",
+    "damage_type": "light",
     "energy_source": "FATIGUE",
     "base_energy_cost": 40,
     "final_energy_cost": 40,
@@ -831,7 +831,7 @@
     "flags": [ "RANDOM_DURATION", "SILENT" ],
     "min_damage": 40,
     "max_damage": 60,
-    "damage_type": "cold",
+    "damage_type": "light",
     "min_range": 45,
     "max_range": 45,
     "effect_str": "haslight",
@@ -1292,7 +1292,7 @@
     "effect": "target_attack",
     "message": "",
     "effect_str": "stunned",
-    "damage_type": "cold",
+    "damage_type": "dark",
     "min_damage": 30,
     "max_damage": 60,
     "min_aoe": 3,

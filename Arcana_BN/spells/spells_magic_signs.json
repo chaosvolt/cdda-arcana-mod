@@ -338,7 +338,7 @@
     "min_duration": 3000,
     "max_duration": 6000,
     "duration_increment": 300,
-    "damage_type": "cold",
+    "damage_type": "dark",
     "field_id": "fd_fog",
     "field_chance": 3,
     "min_field_intensity": 1,
