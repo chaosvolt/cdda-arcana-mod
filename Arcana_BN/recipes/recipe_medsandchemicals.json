@@ -19,6 +19,7 @@
         [ "lead", 150 ],
         [ "bismuth", 200 ],
         [ "tin", 200 ],
+        [ "cartridgebrass", 400 ],
         [ "silver_small", 150 ],
         [ "gold_small", 80 ],
         [ "platinum_small", 80 ]
@@ -42,7 +43,7 @@
     "using": [ [ "forging_standard", 1 ] ],
     "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
-      [ [ "lead", 200 ], [ "bismuth", 300 ], [ "copper", 300 ], [ "tin", 300 ] ],
+      [ [ "lead", 200 ], [ "bismuth", 300 ], [ "copper", 300 ], [ "cartridgebrass", 600 ], [ "tin", 300 ] ],
       [ [ "silver_small", 20 ], [ "gold_small", 12 ], [ "platinum_small", 12 ] ],
       [ [ "healing_potion", 1 ] ]
     ]
@@ -67,6 +68,7 @@
         [ "lead", 200 ],
         [ "bismuth", 300 ],
         [ "copper", 300 ],
+        [ "cartridgebrass", 600 ],
         [ "tin", 300 ],
         [ "gold_small", 120 ],
         [ "platinum_small", 120 ]
@@ -94,6 +96,7 @@
         [ "lead", 400 ],
         [ "bismuth", 500 ],
         [ "copper", 500 ],
+        [ "cartridgebrass", 1000 ],
         [ "tin", 500 ],
         [ "silver_small", 400 ],
         [ "platinum_small", 200 ]
@@ -216,7 +219,7 @@
     "components": [
       [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ],
       [ [ "material_quicklime", 1 ], [ "chem_lye", 1, "LIST" ] ],
-      [ [ "lead", 20 ], [ "bismuth", 25 ], [ "copper", 25 ], [ "tin", 20 ] ]
+      [ [ "lead", 20 ], [ "bismuth", 25 ], [ "copper", 25 ], [ "cartridgebrass", 50 ], [ "tin", 20 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
@@ -234,7 +237,7 @@
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "book_potioncraft", 2 ] ],
     "using": [ [ "arcana_potioncraft_upgrade", 1 ], [ "surface_heat", 10 ] ],
-    "components": [ [ [ "strength_potion", 2 ] ], [ [ "lead", 20 ], [ "bismuth", 25 ], [ "copper", 25 ], [ "tin", 20 ] ] ],
+    "components": [ [ [ "strength_potion", 2 ] ], [ [ "lead", 20 ], [ "bismuth", 25 ], [ "copper", 25 ], [ "cartridgebrass", 50 ], [ "tin", 20 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },

@@ -70,7 +70,7 @@
     "components": [
       [ [ "essence_blood", 50 ], [ "essence_dull", 500 ] ],
       [ [ "salt", 125 ] ],
-      [ [ "copper", 75 ] ],
+      [ [ "copper_scrap_equivalent", 3, "LIST" ] ],
       [ [ "lye_powder", 50 ] ],
       [ [ "steel_chunk", 25 ], [ "scrap", 50 ] ]
     ]
@@ -172,7 +172,7 @@
       [ [ "e_scrap", 10 ] ],
       [ [ "element", 6 ] ],
       [ [ "plastic_chunk", 6 ] ],
-      [ [ "copper", 50 ], [ "scrap_copper", 25 ] ],
+      [ [ "copper_scrap_equivalent", 2, "LIST" ] ],
       [ [ "vortex_shard", 1 ] ],
       [ [ "iridescent_plate", 1 ] ],
       [ [ "arcana_essence_any", 5, "LIST" ] ]
@@ -200,7 +200,7 @@
     "components": [
       [ [ "bio_chain_lightning", 1 ], [ "bio_emp_armgun", 1 ] ],
       [ [ "cable", 60 ] ],
-      [ [ "copper", 50 ], [ "scrap_copper", 25 ] ],
+      [ [ "copper_scrap_equivalent", 2, "LIST" ] ],
       [ [ "vortex_shard", 1 ] ],
       [ [ "iridescent_plate", 1 ] ]
     ],
@@ -425,7 +425,7 @@
     "components": [
       [ [ "bio_metabolics", 1 ], [ "bio_ethanol", 1 ] ],
       [ [ "cable", 60 ] ],
-      [ [ "copper", 50 ], [ "scrap_copper", 25 ] ],
+      [ [ "copper_scrap_equivalent", 2, "LIST" ] ],
       [ [ "mana_gem_dull", 1 ], [ "mana_gem_blood", 1 ], [ "mana_gem", 1 ], [ "mana_gem_pure", 1 ] ],
       [ [ "iron_thorn", 1 ] ]
     ],
@@ -563,7 +563,7 @@
       [ [ "power_supply", 4 ] ],
       [ [ "cable", 80 ] ],
       [ [ "plastic_chunk", 1 ] ],
-      [ [ "copper", 100 ], [ "scrap_copper", 4 ] ],
+      [ [ "copper_scrap_equivalent", 4, "LIST" ] ],
       [ [ "lens", 1 ], [ "lens_small", 2 ], [ "monster_tear", 1 ] ],
       [ [ "flame_talisman", 1 ] ],
       [ [ "essence_blood", 3 ], [ "essence_dull", 30 ] ]
@@ -614,7 +614,7 @@
     "components": [
       [ [ "essence_pure", 10 ], [ "arcana_essence_any", 100, "LIST" ] ],
       [ [ "salt", 300 ] ],
-      [ [ "copper", 180 ] ],
+      [ [ "copper_scrap_equivalent", 6, "LIST" ] ],
       [ [ "lye_powder", 120 ] ],
       [ [ "essence_surge_generator_item", 1 ] ],
       [ [ "wire", 2 ] ],

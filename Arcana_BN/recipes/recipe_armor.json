@@ -285,7 +285,7 @@
     "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
     "components": [
       [ [ "monster_tear", 1 ], [ "sapphire", 1 ], [ "aquamarine", 1 ], [ "blue_topaz", 1 ] ],
-      [ [ "copper", 100 ], [ "scrap_copper", 4 ] ]
+      [ [ "copper_scrap_equivalent", 4, "LIST" ] ]
     ]
   },
   {
@@ -571,7 +571,7 @@
     ],
     "components": [
       [ [ "ragpouch", 1 ] ],
-      [ [ "copper", 50 ], [ "scrap_copper", 2 ] ],
+      [ [ "copper_scrap_equivalent", 2, "LIST" ] ],
       [ [ "rag", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ],
       [ [ "water_talisman", 1 ], [ "vortex_stone", 1 ], [ "vortex_shard", 1 ] ]
     ],
@@ -592,7 +592,7 @@
     "components": [
       [ [ "chainmail_hauberk", 1 ] ],
       [ [ "gilded_aegis", 1 ] ],
-      [ [ "copper", 300 ], [ "scrap_copper", 12 ] ],
+      [ [ "copper_scrap_equivalent", 12, "LIST" ] ],
       [ [ "jade_wreath", 1 ] ],
       [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_blood", 10, "LIST" ] ]
     ],
