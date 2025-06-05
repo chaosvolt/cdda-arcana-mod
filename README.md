@@ -1,5 +1,3 @@
-Personal copy for my current game on CDDA Experimental 2025-05-27-0430.
-
 # Arcana and Magic Items mod for Cataclysm: Dark Days Ahead and Cataclysm: Bright Nights
 Arcana and Magic Items mod, formerly an in-repo mod during 0.C Experimental, and now maintained as a third-party repository by its author. Continually updating and expanding on its mechanics, expect regular updates.
 
