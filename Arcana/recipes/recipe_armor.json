@@ -437,7 +437,7 @@
     "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
-      [ [ "steel_chunk", 2 ], [ "scrap", 10 ], [ "scrap_bronze", 2 ] ],
+      [ [ "steel_chunk_any", 2, "LIST" ], [ "scrap", 10 ], [ "scrap_bronze", 2 ] ],
       [ [ "leather", 2 ], [ "fur", 2 ] ],
       [ [ "copper", 30 ], [ "silver_small", 30 ], [ "gold_small", 30 ], [ "CF_golden_scale", 6 ] ],
       [ [ "essence_dull", 30 ] ]
@@ -465,7 +465,7 @@
     "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 2, "LIST" ] ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
-      [ [ "steel_chunk", 1 ], [ "scrap", 5 ], [ "scrap_bronze", 1 ] ],
+      [ [ "steel_chunk_any", 1, "LIST" ], [ "scrap", 5 ], [ "scrap_bronze", 1 ] ],
       [ [ "leather", 1 ], [ "fur", 1 ] ],
       [ [ "copper", 15 ], [ "silver_small", 15 ], [ "gold_small", 15 ], [ "CF_golden_scale", 3 ] ],
       [ [ "essence_dull", 30 ] ]

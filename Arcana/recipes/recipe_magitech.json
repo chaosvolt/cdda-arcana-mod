@@ -19,7 +19,7 @@
       [ [ "salt", 5 ] ],
       [ [ "copper", 3 ] ],
       [ [ "lye_powder", 2 ] ],
-      [ [ "steel_chunk", 1 ], [ "scrap", 2 ] ]
+      [ [ "steel_chunk_any", 1, "LIST" ], [ "scrap", 2 ] ]
     ]
   },
   {
@@ -37,7 +37,7 @@
     "using": [ [ "blacksmithing_standard", 3 ], [ "surface_heat", 6 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
-    "components": [ [ [ "salt", 15 ] ], [ [ "copper", 9 ] ], [ [ "lye_powder", 6 ] ], [ [ "steel_chunk", 3 ], [ "scrap", 6 ] ] ]
+    "components": [ [ [ "salt", 15 ] ], [ [ "copper", 9 ] ], [ [ "lye_powder", 6 ] ], [ [ "steel_chunk_any", 3, "LIST" ], [ "scrap", 6 ] ] ]
   },
   {
     "type": "recipe",
@@ -59,7 +59,7 @@
       [ [ "salt", 60 ] ],
       [ [ "copper", 36 ] ],
       [ [ "lye_powder", 24 ] ],
-      [ [ "steel_chunk", 12 ], [ "scrap", 24 ] ]
+      [ [ "steel_chunk_any", 12, "LIST" ], [ "scrap", 24 ] ]
     ]
   },
   {
@@ -82,7 +82,7 @@
       [ [ "salt", 125 ] ],
       [ [ "copper", 75 ] ],
       [ [ "lye_powder", 50 ] ],
-      [ [ "steel_chunk", 25 ], [ "scrap", 50 ] ]
+      [ [ "steel_chunk_any", 25, "LIST" ], [ "scrap", 50 ] ]
     ]
   },
   {
