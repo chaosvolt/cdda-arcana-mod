@@ -1910,7 +1910,7 @@
         "a": {
           "item": [
             { "item": "scrap", "repeat": [ 4, 16 ] },
-            { "item": "steel_chunk", "repeat": [ 1, 6 ] },
+            { "item": "lc_steel_lump", "repeat": [ 1, 6 ] },
             { "item": "plutonium", "repeat": [ 0, 3 ] },
             { "item": "lead", "repeat": [ 12, 18 ] }
           ]

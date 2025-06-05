@@ -41,7 +41,13 @@
       "bio_power_storage_mkII",
       "bio_power_storage_mkII"
     ],
-    "items": { "both": [ "badge_bio_weapon", "subsuit_xl", "footrags" ], "male": [ "briefs" ], "female": [ "bra", "panties" ] },
+    "items": {
+       "both": {
+        "entries": [ { "item": "badge_bio_weapon" }, { "item": "jumpsuit_pocketless", "variant": "orange" }, { "item": "footrags" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    },
     "flags": [ "SCEN_ONLY" ]
   }
 ]
