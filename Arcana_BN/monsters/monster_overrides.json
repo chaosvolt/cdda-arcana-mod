@@ -553,6 +553,12 @@
     "death_drops": "mon_zombie_dancer_death_drops"
   },
   {
+    "id": "mon_skeleton",
+    "copy-from": "mon_skeleton",
+    "type": "MONSTER",
+    "death_drops": "mon_skeleton_death_drops"
+  },
+  {
     "id": "mon_skeleton_hulk",
     "copy-from": "mon_skeleton_hulk",
     "type": "MONSTER",
@@ -770,5 +776,89 @@
     "type": "MONSTER",
     "death_drops": "mon_mothman_death_drops",
     "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_zhark",
+    "copy-from": "mon_zhark",
+    "type": "MONSTER",
+    "death_drops": "mon_zhark_death_drops"
+  },
+  {
+    "id": "mon_dog_skeleton",
+    "copy-from": "mon_dog_skeleton",
+    "type": "MONSTER",
+    "death_drops": "mon_dog_skeleton_death_drops"
+  },
+  {
+    "id": "mon_dog_zombie_rot",
+    "copy-from": "mon_dog_zombie_rot",
+    "type": "MONSTER",
+    "death_drops": "mon_dog_zombie_rot_death_drops"
+  },
+  {
+    "id": "mon_zolf",
+    "copy-from": "mon_zolf",
+    "type": "MONSTER",
+    "death_drops": "mon_zolf_death_drops"
+  },
+  {
+    "id": "mon_zombear",
+    "copy-from": "mon_zombear",
+    "type": "MONSTER",
+    "death_drops": "mon_zombear_death_drops"
+  },
+  {
+    "id": "mon_zougar",
+    "copy-from": "mon_zougar",
+    "type": "MONSTER",
+    "death_drops": "mon_zougar_death_drops"
+  },
+  {
+    "id": "mon_cat_mutant_prism",
+    "copy-from": "mon_cat_mutant_prism",
+    "type": "MONSTER",
+    "death_drops": "mon_cat_mutant_prism_death_drops"
+  },
+  {
+    "id": "mon_cat_void",
+    "copy-from": "mon_cat_void",
+    "type": "MONSTER",
+    "death_drops": "mon_cat_void_death_drops"
+  },
+  {
+    "id": "mon_bear_armored",
+    "copy-from": "mon_bear_armored",
+    "type": "MONSTER",
+    "death_drops": "mon_bear_armored_death_drops"
+  },
+  {
+    "id": "mon_bear_mutant_3headed",
+    "copy-from": "mon_bear_mutant_3headed",
+    "type": "MONSTER",
+    "death_drops": "mon_bear_mutant_3headed_death_drops"
+  },
+  {
+    "id": "mon_coyote_mutant_shark",
+    "copy-from": "mon_coyote_mutant_shark",
+    "type": "MONSTER",
+    "death_drops": "mon_coyote_mutant_shark_death_drops"
+  },
+  {
+    "id": "mon_coyote_mutant_venom",
+    "copy-from": "mon_coyote_mutant_venom",
+    "type": "MONSTER",
+    "death_drops": "mon_coyote_mutant_venom_death_drops"
+  },
+  {
+    "id": "mon_wolf_mutant_huge",
+    "copy-from": "mon_wolf_mutant_huge",
+    "type": "MONSTER",
+    "death_drops": "mon_wolf_mutant_huge_death_drops"
+  },
+  {
+    "id": "mon_dog_mutant_mongrel",
+    "copy-from": "mon_dog_mutant_mongrel",
+    "type": "MONSTER",
+    "death_drops": "mon_dog_mutant_mongrel_death_drops"
   }
 ]

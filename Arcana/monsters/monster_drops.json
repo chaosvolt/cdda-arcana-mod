@@ -989,6 +989,23 @@
   },
   {
     "type": "item_group",
+    "id": "mon_skeleton_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_clothes" },
+      {
+        "distribution": [
+          { "item": "gracken_knuckles", "prob": 50 },
+          { "item": "bone_twisted", "prob": 40 },
+          { "item": "iridescent_plate", "prob": 10 }
+        ],
+        "prob": 10
+      },
+      { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "mon_skeleton_brute_death_drops",
     "subtype": "collection",
     "entries": [
@@ -2312,5 +2329,139 @@
     "id": "mon_bound_glyph_death_drops_universal",
     "subtype": "collection",
     "entries": [ { "item": "silver_glyph" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zhark_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "monster_fang", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ], "prob": 10 },
+      { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_dog_zombie_rot_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "monster_fang", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ], "prob": 5 },
+      { "item": "essence_blood", "prob": 5, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_dog_skeleton_death_drops",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "monster_fang", "prob": 25 },
+          { "item": "graboid_fang", "prob": 25 },
+          { "item": "gracken_knuckles", "prob": 25 },
+          { "item": "bone_twisted", "prob": 25 }
+        ],
+        "prob": 5
+      },
+      { "item": "essence_blood", "prob": 5, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zolf_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "monster_fang", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ], "prob": 5 },
+      { "item": "essence_blood", "prob": 5, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombear_death_drops",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "monster_fang", "prob": 50 },
+          { "item": "graboid_fang", "prob": 50 }
+        ],
+        "prob": 10
+      },
+      { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zougar_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "monster_fang", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ], "prob": 5 },
+      { "item": "essence_blood", "prob": 5, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_cat_mutant_prism_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "iridescent_plate", "prob": 50 }, { "item": "monster_tear", "prob": 50 } ], "prob": 10 },
+      { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_cat_void_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "shadow_gem", "prob": 10 }, { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_bear_mutant_3headed_death_drops",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "monster_fang", "prob": 25 },
+          { "item": "graboid_fang", "prob": 25 },
+          { "item": "bone_twisted", "prob": 50 }
+        ],
+        "prob": 10
+      },
+      { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_coyote_mutant_shark_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "monster_fang", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ], "prob": 5 },
+      { "item": "essence_blood", "prob": 5, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_coyote_mutant_venom_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "monster_fang", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ], "prob": 5 },
+      { "item": "essence_blood", "prob": 5, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_dog_mutant_mongrel_death_drops",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "monster_fang", "prob": 25 },
+          { "item": "graboid_fang", "prob": 25 },
+          { "item": "iridescent_plate", "prob": 25 },
+          { "item": "wyrmskin_piece", "prob": 25 }
+        ],
+        "prob": 5
+      },
+      { "item": "essence_blood", "prob": 5, "count": [ 2, 4 ] }
+    ]
   }
 ]
