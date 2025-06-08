@@ -103,7 +103,8 @@
     "loudness": 0,
     "count": 10,
     "show_stats": true,
-    "dont_recover_one_in": 50
+    "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "type": "AMMO",
@@ -126,7 +127,8 @@
     "loudness": 0,
     "count": 10,
     "show_stats": true,
-    "dont_recover_one_in": 50
+    "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "type": "AMMO",
@@ -152,6 +154,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ],
     "effects": [ "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT" ]
   },
   {
@@ -177,6 +180,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ],
     "effects": [ "INCENDIARY", "AMMO_ARCANA_FIRE_EFFECT" ]
   },
   {
@@ -201,6 +205,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ],
     "effects": [ "BEANBAG", "AMMO_ARCANA_WATER_EFFECT" ]
   },
   {
@@ -225,6 +230,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ],
     "effects": [ "BEANBAG", "AMMO_ARCANA_WATER_EFFECT" ]
   },
   {
@@ -249,6 +255,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ],
     "effects": [ "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT" ]
   },
   {
@@ -273,6 +280,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ],
     "effects": [ "PARALYZEPOISON", "AMMO_ARCANA_EARTH_EFFECT" ]
   },
   {
@@ -297,6 +305,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ],
     "effects": [ "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT" ]
   },
   {
@@ -321,6 +330,7 @@
     "count": 10,
     "show_stats": true,
     "dont_recover_one_in": 50,
+    "flags": [ "NO_SALVAGE" ],
     "effects": [ "BLINDS_EYES", "WIDE", "AMMO_ARCANA_AIR_EFFECT" ]
   },
   {

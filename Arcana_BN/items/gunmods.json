@@ -34,7 +34,7 @@
     "ups_charges_modifier": 25,
     "ammo_effects": [ "AMMO_ANOMALY_RAILGUN" ],
     "min_skills": [ [ "weapon", 4 ], [ "fabrication", 6 ], [ "electronics", 4 ], [ "magic", 5 ] ],
-    "flags": [ "MAGIC_FOCUS" ]
+    "flags": [ "MAGIC_FOCUS", "NO_SALVAGE" ]
   },
   {
     "id": "arcane_accelerator_plasma",
@@ -71,7 +71,7 @@
     "ups_charges_modifier": 50,
     "ammo_effects": [ "AMMO_ANOMALY_PLASMA" ],
     "min_skills": [ [ "weapon", 4 ], [ "fabrication", 6 ], [ "electronics", 5 ], [ "magic", 7 ] ],
-    "flags": [ "MAGIC_FOCUS", "PYROMANIAC_WEAPON" ]
+    "flags": [ "MAGIC_FOCUS", "PYROMANIAC_WEAPON", "NO_SALVAGE" ]
   },
   {
     "id": "arcane_accelerator_nuke",
@@ -107,6 +107,6 @@
     "ups_charges_modifier": 100,
     "ammo_effects": [ "AMMO_ANOMALY_NUKE" ],
     "min_skills": [ [ "weapon", 4 ], [ "fabrication", 6 ], [ "electronics", 6 ], [ "magic", 9 ] ],
-    "flags": [ "MAGIC_FOCUS" ]
+    "flags": [ "MAGIC_FOCUS", "NO_SALVAGE" ]
   }
 ]

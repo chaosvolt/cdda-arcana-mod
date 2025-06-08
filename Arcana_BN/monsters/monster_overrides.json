@@ -619,6 +619,12 @@
     "death_drops": "mon_zombie_wretched_death_drops"
   },
   {
+    "id": "mon_zombie_acidic",
+    "copy-from": "mon_zombie_acidic",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_acidic_death_drops"
+  },
+  {
     "id": "mon_zombie_spitter",
     "copy-from": "mon_zombie_spitter",
     "type": "MONSTER",

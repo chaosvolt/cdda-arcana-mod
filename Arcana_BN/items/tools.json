@@ -136,7 +136,7 @@
     "symbol": ";",
     "looks_like": "small_relic",
     "color": "yellow",
-    "flags": [ "MAGIC_FOCUS", "USE_PLAYER_ENERGY" ],
+    "flags": [ "MAGIC_FOCUS", "USE_PLAYER_ENERGY", "NO_SALVAGE" ],
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "MANA_REGEN", "multiply": 0.25 } ] } ]
     },
@@ -181,7 +181,7 @@
         "level": 0
       }
     ],
-    "flags": [ "STAB", "SHEATH_KNIFE", "USE_PLAYER_ENERGY" ]
+    "flags": [ "STAB", "SHEATH_KNIFE", "USE_PLAYER_ENERGY", "NO_SALVAGE" ]
   },
   {
     "id": "sun_sword",
@@ -1121,7 +1121,7 @@
     "material": [ "silver", "essencemat" ],
     "symbol": ";",
     "color": "cyan",
-    "flags": [ "DESTROY_ON_DECHARGE" ],
+    "flags": [ "DESTROY_ON_DECHARGE", "NO_SALVAGE" ],
     "use_action": { "type": "deploy_furn", "furn_type": "f_arcana_dimension_doorway" }
   },
   {
@@ -1242,7 +1242,7 @@
     "looks_like": "portal",
     "symbol": ":",
     "material": [ "steel" ],
-    "flags": [ "ALLOWS_REMOTE_USE" ],
+    "flags": [ "ALLOWS_REMOTE_USE", "NO_SALVAGE" ],
     "volume": "7 L",
     "bashing": 5,
     "price": "8500 USD",
@@ -1277,7 +1277,7 @@
     "looks_like": "offering_chalice",
     "symbol": ":",
     "material": [ "gold", "steel" ],
-    "flags": [ "ALLOWS_REMOTE_USE", "MAGIC_FOCUS", "USE_PLAYER_ENERGY" ],
+    "flags": [ "ALLOWS_REMOTE_USE", "MAGIC_FOCUS", "USE_PLAYER_ENERGY", "NO_SALVAGE" ],
     "volume": "2 L",
     "bashing": 3,
     "price": "3200 USD",
@@ -1326,7 +1326,7 @@
         "move_cost": 1000
       }
     ],
-    "flags": [ "ALLOWS_REMOTE_USE" ]
+    "flags": [ "ALLOWS_REMOTE_USE", "NO_SALVAGE" ]
   },
   {
     "id": "spatial_displacer",
@@ -1346,7 +1346,8 @@
     "ammo": [ "essence_type" ],
     "max_charges": 20,
     "charges_per_use": 1,
-    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_spatial_displacement", "no_fail": true, "level": 0 } ]
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_spatial_displacement", "no_fail": true, "level": 0 } ],
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "bot_mech_arcana",
@@ -1362,7 +1363,7 @@
     "symbol": ",",
     "color": "cyan",
     "looks_like": "broken_mech_recon",
-    "flags": [ "ALLOWS_REMOTE_USE" ],
+    "flags": [ "ALLOWS_REMOTE_USE", "NO_SALVAGE" ],
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_mech_arcana",

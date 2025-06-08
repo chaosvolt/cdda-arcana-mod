@@ -794,6 +794,16 @@
   },
   {
     "type": "item_group",
+    "id": "mon_zombie_acidic_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
+      { "item": "wyrmskin_piece", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "mon_zombie_spitter_death_drops",
     "subtype": "collection",
     "entries": [

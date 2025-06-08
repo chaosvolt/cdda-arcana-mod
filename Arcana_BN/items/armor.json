@@ -212,6 +212,7 @@
     "symbol": "[",
     "looks_like": "gold_locket",
     "color": "yellow",
+    "flags": [ "NO_SALVAGE" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -313,6 +314,6 @@
       "draw_cost": 0,
       "flags": [ "MAGIC_FOCUS" ]
     },
-    "flags": [ "WAIST", "COMPACT", "OVERSIZE" ]
+    "flags": [ "WAIST", "COMPACT", "OVERSIZE", "NO_SALVAGE" ]
   }
 ]

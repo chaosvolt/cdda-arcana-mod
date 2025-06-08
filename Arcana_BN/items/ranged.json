@@ -42,7 +42,16 @@
       ]
     },
     "ammo_effects": [ "LIGHTNING", "LIGHTNING_JUDGMENT" ],
-    "flags": [ "STAB", "UNARMED_WEAPON", "DURABLE_MELEE", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
+    "flags": [
+      "STAB",
+      "UNARMED_WEAPON",
+      "DURABLE_MELEE",
+      "BELT_CLIP",
+      "NEVER_JAMS",
+      "PRIMITIVE_RANGED_WEAPON",
+      "MAGIC_FOCUS",
+      "NO_SALVAGE"
+    ],
     "use_action": "MEDITATE"
   },
   {
@@ -305,7 +314,8 @@
       "FLAMING",
       "PRIMITIVE_RANGED_WEAPON",
       "USE_PLAYER_ENERGY",
-      "PYROMANIAC_WEAPON"
+      "PYROMANIAC_WEAPON",
+      "NO_SALVAGE"
     ]
   },
   {
@@ -399,7 +409,7 @@
       [ "underbarrel", 1 ]
     ],
     "ammo_effects": [ "PLASMA", "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE", "BOUNCE" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "PYROMANIAC_WEAPON" ]
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "PYROMANIAC_WEAPON", "NO_SALVAGE" ]
   },
   {
     "id": "rift_focus_cannon",
@@ -414,7 +424,7 @@
     "price": "1800 USD",
     "price_postapoc": "80 USD",
     "material": [ "steel", "plastic" ],
-    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "NO_SALVAGE" ],
     "ammo_effects": [
       "LASER",
       "PLASMA_BUBBLE",

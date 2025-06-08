@@ -20,7 +20,8 @@
     "material": [ "silver" ],
     "symbol": ",",
     "looks_like": "jade_brooch",
-    "color": "light_gray"
+    "color": "light_gray",
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "scroll_blank",
@@ -35,7 +36,8 @@
     "material": [ "paper" ],
     "symbol": "!",
     "looks_like": "recipe_creepy",
-    "color": "light_gray"
+    "color": "light_gray",
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "type": "GENERIC",
@@ -319,7 +321,8 @@
     "looks_like": "RobofacCoin",
     "symbol": "$",
     "material": [ "gold" ],
-    "volume": "2 ml"
+    "volume": "2 ml",
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "type": "GENERIC",
@@ -349,7 +352,7 @@
     "volume": "2 L",
     "bashing": 4,
     "to_hit": 1,
-    "flags": [ "TRADER_AVOID" ]
+    "flags": [ "TRADER_AVOID", "NO_SALVAGE" ]
   },
   {
     "id": "arcane_purifier_intel",
@@ -414,7 +417,7 @@
     "symbol": ";",
     "color": "cyan",
     "looks_like": "broken_mech_recon",
-    "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
+    "flags": [ "TRADER_AVOID", "NO_REPAIR", "NO_SALVAGE" ]
   },
   {
     "type": "GENERIC",
@@ -431,7 +434,7 @@
     "symbol": ";",
     "color": "cyan",
     "looks_like": "broken_mech_recon",
-    "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
+    "flags": [ "TRADER_AVOID", "NO_REPAIR", "NO_SALVAGE" ]
   },
   {
     "id": "arcana_mech_shem_copy",
@@ -503,7 +506,7 @@
     "volume": "250 ml",
     "weight": "300 g",
     "bashing": 24,
-    "flags": [ "UNARMED_WEAPON", "NO_DROP", "NO_UNWIELD", "UNBREAKABLE_MELEE", "TRADER_AVOID" ],
+    "flags": [ "UNARMED_WEAPON", "NO_DROP", "NO_UNWIELD", "UNBREAKABLE_MELEE", "TRADER_AVOID", "NO_SALVAGE" ],
     "qualities": [ [ "HAMMER", 1 ] ],
     "techniques": [ "WBLOCK_1", "tec_weapon_kinetic_knockback" ],
     "relic_data": {
