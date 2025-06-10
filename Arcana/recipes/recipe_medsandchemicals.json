@@ -399,5 +399,23 @@
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN", "SECRET" ]
+  },
+  {
+    "result": "dragonblood_mutagen_solid",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "skills_required": [ "chemistry", 5 ],
+    "time": "20 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_bloodmagic", 7 ], [ "book_syncretism", 6 ] ],
+    "qualities": [ { "id": "BOIL", "level": 1 } ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "water_boiling_heat", 6, "LIST" ] ], [ [ "draconic_heart_mutator", 2 ] ] ],
+    "components": [ [ [ "dragonblood_mutagen", 2 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "SECRET" ]
   }
 ]
