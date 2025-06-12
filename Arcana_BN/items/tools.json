@@ -1611,7 +1611,7 @@
     "looks_like": "petrified_eye",
     "color": "red",
     "max_charges": 10,
-    "charges_per_use": 10,
+    "charges_per_use": 5,
     "ammo": "essence_blood_type",
     "use_action": { "type": "mutagen_iv", "mutation_category": "DRAGONBLOOD" }
   },
