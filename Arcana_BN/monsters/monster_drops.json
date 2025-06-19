@@ -278,7 +278,7 @@
     "type": "item_group",
     "id": "mon_fungal_fighter_death_drops",
     "subtype": "collection",
-    "entries": [ { "group": "fungal_sting", "prob": 85 }, { "item": "iron_thorn" }, { "item": "essence", "prob": 50 } ]
+    "entries": [ { "item": "iron_thorn" }, { "item": "essence", "prob": 50 } ]
   },
   {
     "type": "item_group",
@@ -302,7 +302,7 @@
     "type": "item_group",
     "id": "mon_biollante_death_drops",
     "subtype": "collection",
-    "entries": [ { "item": "inflorescent_root" }, { "group": "biollante", "prob": 80 }, { "item": "essence", "prob": 15 } ]
+    "entries": [ { "item": "inflorescent_root" }, { "item": "essence", "prob": 15 } ]
   },
   {
     "type": "item_group",
