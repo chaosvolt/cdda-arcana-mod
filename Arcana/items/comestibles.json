@@ -215,9 +215,10 @@
   },
   {
     "id": "dragonblood_mutagen_solid",
-    "type": "COMESTIBLE",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
     "comestible_type": "MED",
-    "category": "mutagen",
+    "category": "drugs",
     "name": { "str": "refined blood offering" },
     "looks_like": "ruby",
     "description": "A dark red mass of otherworldly lifeblood, compacted into a form resembling an opaque gem.  A mimicry of sanguine research augmented by the complete work of their Order's transhumanist sect, it can rapidly inflict permanent changes on whoever consumes it.  It could be used to use essence more efficiently in exchange for consuming other ingredients, but its more valuable application would be for sharing the gift of dragon's blood with a companion.",
@@ -292,7 +293,6 @@
   {
     "id": "earth_talisman",
     "type": "ITEM",
-    
     "name": { "str": "earth talisman" },
     "description": "A crude paper talisman marked with strange patterns, and anointed with a peculiar sacrifice.  Using it will conjure and transmutate a structure of strange earth and stone, to serve as a meager shelter in times of desperation.",
     "price_postapoc": "12 USD",

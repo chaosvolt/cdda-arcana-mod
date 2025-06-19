@@ -288,6 +288,36 @@
     "death_drops": "mon_wasp_death_drops"
   },
   {
+    "id": "mon_wasp_small",
+    "copy-from": "mon_wasp_small",
+    "type": "MONSTER",
+    "death_drops": "mon_wasp_small_death_drops"
+  },
+  {
+    "id": "mon_wasp_small_guard",
+    "copy-from": "mon_wasp_small_guard",
+    "type": "MONSTER",
+    "death_drops": "mon_wasp_small_guard_death_drops"
+  },
+  {
+    "id": "mon_wasp_queen",
+    "copy-from": "mon_wasp_queen",
+    "type": "MONSTER",
+    "death_drops": "mon_wasp_queen_death_drops"
+  },
+  {
+    "id": "mon_wasp_guard",
+    "copy-from": "mon_wasp_guard",
+    "type": "MONSTER",
+    "death_drops": "mon_wasp_guard_death_drops"
+  },
+  {
+    "id": "mon_wasp_mega",
+    "copy-from": "mon_wasp_mega",
+    "type": "MONSTER",
+    "death_drops": "mon_wasp_mega_death_drops"
+  },
+  {
     "id": "mon_dermatik_larva",
     "copy-from": "mon_dermatik_larva",
     "type": "MONSTER",

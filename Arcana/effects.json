@@ -484,7 +484,17 @@
     "name": [ "Ward Against Poison" ],
     "desc": [ "Protection against toxic gas and venom, steadily reduces accumulated radiation." ],
     "remove_message": "You feel a momentary weakness as the protective magic fades.",
-    "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas", "migo_atmosphere", "venom_dmg", "venom_weaken" ],
+    "removes_effects": [
+      "stung",
+      "poison",
+      "badpoison",
+      "paralyzepoison",
+      "teargas",
+      "migo_atmosphere",
+      "tpollen",
+      "venom_dmg",
+      "venom_weaken"
+    ],
     "max_duration": "120 m",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
@@ -493,7 +503,17 @@
   {
     "type": "effect_type",
     "id": "poison_ward_hidden",
-    "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas", "migo_atmosphere", "venom_dmg", "venom_weaken" ],
+    "removes_effects": [
+      "stung",
+      "poison",
+      "badpoison",
+      "paralyzepoison",
+      "teargas",
+      "migo_atmosphere",
+      "tpollen",
+      "venom_dmg",
+      "venom_weaken"
+    ],
     "max_duration": "5 s"
   },
   {
@@ -701,6 +721,7 @@
       "paralyzepoison",
       "teargas",
       "migo_atmosphere",
+      "tpollen",
       "venom_dmg",
       "venom_weaken",
       "spores",
@@ -1190,7 +1211,8 @@
       "poison",
       "badpoison",
       "teargas",
-      "migo_atmosphere"
+      "migo_atmosphere",
+      "tpollen"
     ],
     "flags": [ "FEATHER_FALL", "COLD_IMMUNE" ]
   },
