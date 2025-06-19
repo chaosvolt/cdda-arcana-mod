@@ -406,7 +406,7 @@
     "prereqs2": [ "DENSE_BONES" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
-    "flags": [ "WINGS_2", "WING_GLIDE" ]
+    "flags": [ "WINGS_2", "WING_GLIDE" ],
     "types": [ "WINGS" ],
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
