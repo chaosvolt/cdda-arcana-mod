@@ -1172,15 +1172,7 @@
         "distribution": [ { "item": "shadow_gem", "prob": 25 }, { "group": "arcana_hunt_random", "prob": 75 } ],
         "prob": 25
       },
-      {
-        "distribution": [
-          { "group": "magic_tools", "prob": 50, "damage": [ 1, 4 ] },
-          { "group": "magic_items", "prob": 50, "damage": [ 1, 4 ] }
-        ],
-        "prob": 10
-      },
-      { "group": "magic_consumables", "prob": 20 },
-      { "group": "magic_books_postapoc", "prob": 80 }
+      { "group": "magic_consumables", "prob": 20 }
     ]
   },
   {
@@ -1190,11 +1182,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 3 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 5 } ]
     }
   },
   {
@@ -1204,11 +1192,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 3 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 5 } ]
     }
   },
   {
@@ -1218,11 +1202,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 3 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 5 } ]
     }
   },
   {
@@ -1232,11 +1212,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 3 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 5 } ]
     }
   },
   {
@@ -1246,11 +1222,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 10 },
-        { "group": "magic_books_postapoc", "prob": 5 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 10 } ]
     }
   },
   {
@@ -1260,11 +1232,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 10 },
-        { "group": "magic_books_postapoc", "prob": 5 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 10 } ]
     }
   },
   {
@@ -1274,11 +1242,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 10 },
-        { "group": "magic_books_postapoc", "prob": 5 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 10 } ]
     }
   },
   {
@@ -1288,11 +1252,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 10 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 5 } ]
     }
   },
   {
@@ -1302,11 +1262,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 10 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 5 } ]
     }
   },
   {
@@ -1316,11 +1272,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 10 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 5 } ]
     }
   },
   {
@@ -1351,9 +1303,8 @@
   },
   {
     "id": "feral_fancy_death_drops_crossbow",
-    "copy-from": "feral_fancy_death_drops_crossbow",
     "type": "item_group",
-    "//": "Adds items since we're referencing an existing itemgroup.",
+    "//": "Orphaned Item group",
     "subtype": "collection",
     "extend": {
       "entries": [
@@ -1370,11 +1321,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 10 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 5 } ]
     }
   },
   {
@@ -1384,11 +1331,7 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 10 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 5 } ]
     }
   },
   {
@@ -1408,8 +1351,7 @@
           ],
           "prob": 3
         },
-        { "group": "magic_consumables", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 15 }
+        { "group": "magic_consumables", "prob": 5 }
       ]
     }
   },
@@ -1430,8 +1372,7 @@
           ],
           "prob": 3
         },
-        { "group": "magic_consumables", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 15 }
+        { "group": "magic_consumables", "prob": 5 }
       ]
     }
   },
@@ -1452,8 +1393,7 @@
           ],
           "prob": 3
         },
-        { "group": "magic_consumables", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 15 }
+        { "group": "magic_consumables", "prob": 5 }
       ]
     }
   },
@@ -1474,8 +1414,7 @@
           ],
           "prob": 3
         },
-        { "group": "magic_consumables", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 15 }
+        { "group": "magic_consumables", "prob": 5 }
       ]
     }
   },
@@ -1496,8 +1435,7 @@
           ],
           "prob": 3
         },
-        { "group": "magic_consumables", "prob": 5 },
-        { "group": "magic_books_postapoc", "prob": 15 }
+        { "group": "magic_consumables", "prob": 5 }
       ]
     }
   },
@@ -1530,25 +1468,16 @@
     "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 10 },
-        { "group": "magic_books_postapoc", "prob": 5 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 10 } ]
     }
   },
   {
     "id": "feral_diver_death_drops_knife",
-    "copy-from": "feral_diver_death_drops_knife",
     "type": "item_group",
-    "//": "Adds items since we're referencing an existing itemgroup.",
+    "//": "Orphaned Item group",
     "subtype": "collection",
     "extend": {
-      "entries": [
-        { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-        { "group": "arcana_hunt_random", "prob": 10 },
-        { "group": "magic_books_postapoc", "prob": 5 }
-      ]
+      "entries": [ { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] }, { "group": "arcana_hunt_random", "prob": 10 } ]
     }
   },
   {
@@ -1558,8 +1487,7 @@
     "entries": [
       { "group": "default_zombie_death_drops" },
       { "item": "essence_blood", "prob": 25, "count": [ 2, 4 ] },
-      { "group": "arcana_hunt_random", "prob": 10 },
-      { "group": "magic_books_postapoc", "prob": 5 }
+      { "group": "arcana_hunt_random", "prob": 10 }
     ]
   },
   {
