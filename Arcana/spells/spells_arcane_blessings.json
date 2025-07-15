@@ -2,7 +2,7 @@
   {
     "id": "arcana_blessing_agility",
     "type": "SPELL",
-    "name": { "str": "Blessing: Agility" },
+    "name": { "str": "Blessing: Zéphuros's Grace" },
     "description": "Arcane Blessing\nUsing this spell will grant a temporary speed and agility-enhancing effect.  It can be used on yourself or an ally.",
     "message": "Time seems to slow for a moment, as you channel a rush of energy.",
     "valid_targets": [ "self", "ally" ],
@@ -30,7 +30,7 @@
   {
     "id": "arcana_blessing_clairvoyance",
     "type": "SPELL",
-    "name": { "str": "Blessing: Clairvoyance" },
+    "name": { "str": "Blessing: Sight Beyond Sight" },
     "description": "Arcane Blessing\nUsing this spell will anoint you with an ivory halo, granting you sight beyond sight.",
     "message": "A shimmering aura permeates you, opening your eyes to hidden truths.",
     "valid_targets": [ "self" ],
@@ -58,7 +58,7 @@
     "id": "arcana_blessing_confuse_monster",
     "//": "ID retained for save compatibility reasons.",
     "type": "SPELL",
-    "name": { "str": "Blessing: Confusion Wave" },
+    "name": { "str": "Blessing: Anointment of Lunacy" },
     "description": "Arcane Blessing\nUsing this spell will blast a cone-shaped area with psychic force, damaging and stunning hostiles caught in it.  Enemies in the center line will take double damage.",
     "message": "A faint distortion in the air ripples out before you, and you sense an unearthly force exerting its will.",
     "effect": "attack",
@@ -94,7 +94,7 @@
   {
     "id": "arcana_blessing_conjure_miasma",
     "type": "SPELL",
-    "name": { "str": "Blessing: Conjure Miasma" },
+    "name": { "str": "Blessing: Billowing Miasma" },
     "description": "Arcane Blessing\nUsing this spell will engulf the targeted area in a swirling miasma of various poisonous vapors, afflicting many forms of harm.  Enemies in the epicenter will take double damage.",
     "message": "A rush of unnatural wind swirls at your command, bringing forth myriad poisonous gales with it.",
     "effect": "attack",
@@ -142,7 +142,7 @@
   {
     "id": "arcana_blessing_conjure_lightburst",
     "type": "SPELL",
-    "name": { "str": "Blessing: Conjure Lightburst" },
+    "name": { "str": "Blessing: Bathe in Holy Light" },
     "description": "Arcane Blessing\nUsing this spell will conjure a flood of magical illumination at the targeted area, and scorch that which shuns the light.",
     "message": "Flickering candle-flames of light scatter across the ground at your guidance, before a lingering glow permeates that area.",
     "effect": "attack",
@@ -177,7 +177,7 @@
   {
     "id": "arcana_blessing_conjure_shadow_field",
     "type": "SPELL",
-    "name": { "str": "Blessing: Conjure Shadows" },
+    "name": { "str": "Blessing: Molding of Shadows" },
     "description": "Arcane Blessing\nUsing this spell will envelop the targeted area in lingering darkness, in addition to inflicting blindness on enemies caught in the initial effect.",
     "message": "Wisps of inky, living shadow emerge from the ground, engulfing the area as you will it.",
     "effect": "attack",
@@ -214,7 +214,7 @@
   {
     "id": "arcana_blessing_consecrate",
     "type": "SPELL",
-    "name": { "str": "Blessing: Consecrate" },
+    "name": { "str": "Blessing: Banish the Beyond" },
     "description": "Arcane Blessing\nUsing this spell will alter the terrain, driving off various signs of otherworldly corruption afflicting the land, along with disrupting most intruders from Beyond, with hostile summoned creatures taking double damage.",
     "message": "You channel the will of He From Beyond The Veil, to bring order to this unearthly intrusion.",
     "valid_targets": [ "ground" ],
@@ -249,7 +249,7 @@
   {
     "id": "arcana_blessing_divine_storm",
     "type": "SPELL",
-    "name": { "str": "Blessing: Divine Storm" },
+    "name": { "str": "Blessing: Thunder Upon the Heights" },
     "description": "Arcane Blessing\nUsing this spell will call forth a storm of unearthly lightning all around you, smiting and striking foes blind.  Enemies close to you will take double damage.",
     "message": "A ring of strange blue light encircles you, before pale bolts of lightning surge out in every direction.",
     "effect": "attack",
@@ -295,7 +295,7 @@
   {
     "id": "arcana_blessing_drain_life",
     "type": "SPELL",
-    "name": { "str": "Blessing: Drain Life" },
+    "name": { "str": "Blessing: Enervation" },
     "description": "Arcane Blessing\nUsing this spell will anoint you with a horned halo, granting you a life-draining effect.",
     "message": "A shimmering aura permeates you, sparking a yearning for battle and the death of your enemies.",
     "valid_targets": [ "self" ],
@@ -424,7 +424,7 @@
   {
     "id": "arcana_blessing_might",
     "type": "SPELL",
-    "name": { "str": "Blessing: Might" },
+    "name": { "str": "Blessing: Otherworldly Potence" },
     "description": "Arcane Blessing\nUsing this spell will grant a temporary boost to strength.  It can be used on yourself or an ally.",
     "message": "You feel raw strength channeled through you, surging forth at your command.",
     "valid_targets": [ "self", "ally" ],
@@ -452,7 +452,7 @@
   {
     "id": "arcana_blessing_open_lock",
     "type": "SPELL",
-    "name": { "str": "Blessing: Opening" },
+    "name": { "str": "Blessing: Cleaving of Portals" },
     "description": "Arcane Blessing\nUsing this spell will unbind locks, unseal barricades, and otherwise open the way forward in the targeted area.",
     "message": "You focus, strange influence on the land exerted by your will.",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
@@ -482,7 +482,7 @@
   {
     "id": "arcana_blessing_pacify_monsters",
     "type": "SPELL",
-    "name": { "str": "Blessing: Pacify Monsters" },
+    "name": { "str": "Blessing: In Eden's Embrace" },
     "description": "Arcane Blessing\nUsing this spell will momentarily sway monsters to your side.  It only works on monsters that have been sufficiently weakened, but the effectiveness increases with spell level.",
     "message": "You focus, channeling a soothing aura through your hands.",
     "valid_targets": [ "self" ],
@@ -562,7 +562,7 @@
   {
     "id": "arcana_blessing_summon_giant_centipedes",
     "type": "SPELL",
-    "name": { "str": "Blessing: Summon Centipedes" },
+    "name": { "str": "Blessing: SCall Forth the Crawling Ones" },
     "description": "Arcane Blessing\nUsing this spell will summon mutated vermin, which will be loyal but not permanent.",
     "message": "You focus, imagery of false omens being averted lingering in your mind, as unnatural vermin slither into existence.",
     "valid_targets": [ "ground" ],
@@ -625,7 +625,7 @@
   {
     "id": "arcana_blessing_summon_skeletal_dog",
     "type": "SPELL",
-    "name": { "str": "Blessing: Summon Skeletal Dogs" },
+    "name": { "str": "Blessing: Call Forth the Hound of Bone" },
     "description": "Arcane Blessing\nUsing this spell will summon a number of animalistic revenants, which will be loyal but not permanent.",
     "message": "You focus, imagery of a dead world lingering in your mind as an undead hunting pack surges forth.",
     "valid_targets": [ "ground" ],
@@ -658,7 +658,7 @@
   {
     "id": "arcana_blessing_summon_skeleton",
     "type": "SPELL",
-    "name": { "str": "Blessing: Summon Skeleton" },
+    "name": { "str": "Blessing: Call Forth the Grave-Walker" },
     "description": "Arcane Blessing\nUsing this spell will summon a humanoid revenant, which will be loyal but not permanent.",
     "message": "You focus, imagery of humanity's extinction lingering in your mind as an undead servant appears before you.",
     "valid_targets": [ "ground" ],
@@ -688,7 +688,7 @@
   {
     "id": "arcana_blessing_summon_thing",
     "type": "SPELL",
-    "name": { "str": "Blessing: Summon Thing" },
+    "name": { "str": "Blessing: Call Forth That From Beyond the Stars" },
     "description": "Arcane Blessing\nUsing this spell will summon a tentacled abomination, which will be loyal but not permanent.",
     "message": "You focus, imagery of the horrors your enemies embody lingering in your mind, as a writhing mass of tendrils wavers into existence.",
     "valid_targets": [ "ground" ],
@@ -718,7 +718,7 @@
   {
     "id": "arcana_blessing_summon_vortices",
     "type": "SPELL",
-    "name": { "str": "Blessing: Summon Vortices" },
+    "name": { "str": "Blessing: Call Forth the Living Vortex" },
     "description": "Arcane Blessing\nUsing this spell will summon swirling beings from Beyond, which will be loyal but not permanent.",
     "message": "You focus, imagery of uncertain, distant futures lingering in your mind, as the living wind heeds your call.",
     "valid_targets": [ "ground" ],
@@ -751,7 +751,7 @@
   {
     "id": "arcana_blessing_surge_adrenaline",
     "type": "SPELL",
-    "name": { "str": "Blessing: Surging Force" },
+    "name": { "str": "Blessing: Outpouring of Prowess" },
     "description": "Arcane Blessing\nUsing this spell will provoke a rush of otherworldly adrenaline and warp time for urgent situations, with none of the usual drawbacks.  It can be used on yourself or an ally.",
     "message": "You channel an uplifting rush of energy, time seeming to slow momentarily.",
     "valid_targets": [ "self", "ally" ],
