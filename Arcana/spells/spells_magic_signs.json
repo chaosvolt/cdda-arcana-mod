@@ -1,8 +1,15 @@
 [
   {
+    "id": "arcana_pattern_sorcery",
+    "type": "magic_type",
+    "energy_source": "NONE",
+    "cannot_cast_flags": [ "NO_ARCANA_MAGIC" ],
+    "cannot_cast_message": "You cannot use your sorcery now!"
+  },
+  {
     "id": "arcana_magic_agility",
     "type": "SPELL",
-    "name": { "str": "Sign: Agility" },
+    "name": { "str": "Sign: Zéphuros's Grace" },
     "description": "Magic Sign\nUsing this spell will grant a temporary speed and agility-enhancing effect.  It can be used on yourself or an ally.",
     "message": "\"Ethereal winds, guide my passage…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -27,12 +34,13 @@
     "min_duration": 144000,
     "max_duration": 288000,
     "duration_increment": 14400,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_capacitance",
     "type": "SPELL",
-    "name": { "str": "Sign: Capacitance" },
+    "name": { "str": "Sign: Blood of Lightning" },
     "description": "Magic Sign\nUsing this spell will channel your energy into artifice within the body, restoring bionic energy at the cost of stamina.  Doing so will stun yourself briefly, however.",
     "message": "\"Dōnēs nobis virtus…\"  You cast %s!",
     "valid_targets": [ "self" ],
@@ -58,13 +66,14 @@
     "base_casting_time": 240,
     "final_casting_time": 120,
     "casting_time_increment": -12,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_clairvoyance",
     "type": "SPELL",
-    "name": { "str": "Sign: Clairvoyance" },
-    "description": "Magic Sign\nUsing this spell will anoint you with an ivory halo, granting you sight beyond sight.",
+    "name": { "str": "Sign: Sight Beyond Sight" },
+    "description": "Magic Sign\nUsing this spell will anoint you with an ivory halo, forcing open your inner eye and allowing you to see beyond.",
     "message": "\"Show me what eyes could never glimpse…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
@@ -87,7 +96,8 @@
     "min_duration": 216000,
     "max_duration": 432000,
     "duration_increment": 21600,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_clarity_blood",
@@ -117,12 +127,13 @@
     "min_duration": 48000,
     "max_duration": 96000,
     "duration_increment": 4800,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_cold_ward",
     "type": "SPELL",
-    "name": { "str": "Sign: Cold Ward" },
+    "name": { "str": "Sign: Hyperborean Mantle" },
     "description": "Magic Sign\nUsing this spell will protect against the cold, and all its side effects.  It can be used on yourself or an ally.",
     "message": "\"I am that which protects, offering mercy in troubled times…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -147,12 +158,13 @@
     "min_duration": 60000,
     "max_duration": 120000,
     "duration_increment": 6000,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_confuse_monster",
     "type": "SPELL",
-    "name": { "str": "Sign: Confuse Monsters" },
+    "name": { "str": "Sign: Anointment of Lunacy" },
     "description": "Magic Sign\nUsing this spell will stun all hostiles in the area around you.",
     "message": "\"No blade may mark me, if the hand cannot strike true…\"  You cast %s!",
     "effect": "attack",
@@ -178,12 +190,13 @@
     "min_duration": 1800,
     "max_duration": 3600,
     "duration_increment": 180,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_conjure_acid",
     "type": "SPELL",
-    "name": { "str": "Sign: Conjure Acid" },
+    "name": { "str": "Sign: Caustic Eruption" },
     "description": "Magic Sign\nUsing this spell will conjure a splash of acid at the point targeted, and strike the very center for double damage.  Potentially dangerous to allies as well.",
     "message": "\"Let it be as time itself, eroding all in its path…\"  You cast %s!",
     "effect": "attack",
@@ -226,12 +239,13 @@
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.5,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_conjure_flame",
     "type": "SPELL",
-    "name": { "str": "Sign: Conjure Flame" },
+    "name": { "str": "Sign: Incandescent Conflagration" },
     "description": "Magic Sign\nUsing this spell will conjure a fiery explosion at the location targeted, starting fires and damaging terrain.  Anything caught in the center will take double damage, and it can be dangerous to nearby allies.",
     "message": "\"Let this be your pyre…\"  You cast %s!",
     "extra_effects": [
@@ -274,12 +288,13 @@
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.5,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_consecrate",
     "type": "SPELL",
-    "name": { "str": "Sign: Consecrate" },
+    "name": { "str": "Sign: Banish the Beyond" },
     "description": "Magic Sign\nUsing this spell will alter the terrain around you, driving off various signs of otherworldly corruption afflicting the land.  It will also harm a limited selection of otherworldly monsters.",
     "message": "\"I am that which reveals the wicked, and scourges them with flame…\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -310,12 +325,13 @@
     "base_energy_cost": 3500,
     "final_energy_cost": 1750,
     "energy_increment": -175,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_dark_lance",
     "type": "SPELL",
-    "name": { "str": "Sign: Dark Lance" },
+    "name": { "str": "Sign: Tenebrous Lance" },
     "description": "Magic Sign\nUsing this spell will loose a beam of otherworldly energy, blinding all in its path.  Machines and some otherworldly creatures will be immune, and its use will attract otherworldly attention.",
     "message": "\"Anything that lives can be unmade…\"  You cast %s!",
     "effect": "attack",
@@ -348,13 +364,14 @@
     "field_chance": 3,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_dampening",
     "//": "ID retained for save compatibility.",
     "type": "SPELL",
-    "name": { "str": "Sign: Displacement" },
+    "name": { "str": "Sign: Ethereal Translocation" },
     "description": "Magic Sign\nUsing this spell will swap your position with a hostile target of your choosing, leaving your victim dazed and creating a blast of fog ahead of the area you emerge from.",
     "message": "\"If it is known, it can be attained…\"  You cast %s!",
     "valid_targets": [ "hostile" ],
@@ -388,20 +405,18 @@
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.5,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_earthweaving",
     "type": "SPELL",
     "name": { "str": "Sign: Earthweaving" },
-    "description": "Magic Sign\nUsing this spell will alter terrain at a single targeted point, raising and lowering earthen barriers from any diggable terrain, or raising and lowering solid rock from other walls or floors.",
+    "description": "Magic Sign\nUsing this spell will alter terrain at a single targeted point, raising and lowering earthen barriers from any diggable terrain, or raising and lowering solid rock from natural stone.",
     "message": "\"May we rebuild this world, one stone at a time…\"  You cast %s!",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL", "IGNORE_WALLS", "NO_PROJECTILE" ],
-    "extra_effects": [
-      { "id": "arcana_magic_earthweaving_damage", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 }
-    ],
+    "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_4", "hit_self": true, "max_level": 10 } ],
     "effect": "ter_transform",
     "shape": "blast",
     "effect_str": "arcana_earthweaving",
@@ -420,7 +435,8 @@
     "base_energy_cost": 2500,
     "final_energy_cost": 1250,
     "energy_increment": -125,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_eclipse",
@@ -453,12 +469,13 @@
     "min_duration": 324000,
     "max_duration": 648000,
     "duration_increment": 32400,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_elemental_burst",
     "type": "SPELL",
-    "name": { "str": "Sign: Elemental Burst" },
+    "name": { "str": "Sign: Wrath of the Elements" },
     "description": "Magic Sign\nUsing this spell will blast a cone-shaped area with elemental force, leaving random side effects in its wake.  Creatures caught in the center line will take double damage.  Beware the risk of friendly fire!",
     "message": "\"I am that which resides in all living things, the order hidden within chaos…\"  You cast %s!",
     "effect": "attack",
@@ -489,12 +506,13 @@
     "base_energy_cost": 4000,
     "final_energy_cost": 2000,
     "energy_increment": -200,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_free_action",
     "type": "SPELL",
-    "name": { "str": "Sign: Free Action" },
+    "name": { "str": "Sign: The Unbound Heart" },
     "description": "Magic Sign\nUsing this spell will grant protection against paralytic effects, grabs, and other hindrances, along with freezing time briefly to allow an escape.  It can be used on yourself or an ally.",
     "message": "\"Let there be no fetter that can bind me…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -522,12 +540,13 @@
     "min_duration": 36000,
     "max_duration": 72000,
     "duration_increment": 3600,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_harden_senses",
     "type": "SPELL",
-    "name": { "str": "Sign: Harden Senses" },
+    "name": { "str": "Sign: Clarity Above All" },
     "description": "Magic Sign\nUsing this spell guard your senses against blinding flashes and a limited selection of other stunning effects.  It can be used on yourself or an ally.",
     "message": "\"With clear vision, the hunted becomes the hunter…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -552,12 +571,13 @@
     "min_duration": 24000,
     "max_duration": 48000,
     "duration_increment": 2400,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_healing",
     "type": "SPELL",
-    "name": { "str": "Sign: Healing" },
+    "name": { "str": "Sign: Corporeal Restoration" },
     "description": "Magic Sign\nUsing this spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.  It can be used on yourself or an ally.",
     "message": "\"We shall not yet fall into extinction…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -587,12 +607,13 @@
     "min_duration": 100,
     "max_duration": 100,
     "energy_source": "STAMINA",
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_heat_ward",
     "type": "SPELL",
-    "name": { "str": "Sign: Heat Ward" },
+    "name": { "str": "Sign: Forge-Hardened Flesh" },
     "description": "Magic Sign\nUsing this spell will grant temporary resistance to heat and smoke.  Direct contact with flame will still cause harm, however.  It can be used on yourself or an ally.",
     "message": "\"The steel does not fear the flame that tempers it…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -617,12 +638,13 @@
     "min_duration": 60000,
     "max_duration": 120000,
     "duration_increment": 6000,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_insight",
     "type": "SPELL",
-    "name": { "str": "Sign: Insight" },
+    "name": { "str": "Sign: Opening the Inner Eye" },
     "description": "Magic Sign\nUsing this spell will grant a temporary boost to perception, and night vision.  It can be used on yourself or an ally.",
     "message": "\"All is known to one who watches and listens with patience…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -647,12 +669,13 @@
     "min_duration": 108000,
     "max_duration": 216000,
     "duration_increment": 10800,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_light",
     "type": "SPELL",
-    "name": { "str": "Sign: Light" },
+    "name": { "str": "Sign: Lambent Glow" },
     "description": "Magic Sign\nUsing this spell will conjure a field of magical light, lingering in the area around you.  It will also deal minor damage to creatures that shun the light.",
     "message": "\"The smallest candle flame brings hope until the dawn…\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -683,12 +706,13 @@
     "field_chance": 2,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_lightning_ward",
     "type": "SPELL",
-    "name": { "str": "Sign: Lightning Ward" },
+    "name": { "str": "Sign: The Eye of the Storm" },
     "description": "Magic Sign\nUsing this spell will grant a blessing that completely protects against lightning, at the expense of slowing you down a bit.  It can be cast on yourself or an ally.",
     "message": "\"One foot after the other, always grounded…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -713,12 +737,13 @@
     "min_duration": 48000,
     "max_duration": 96000,
     "duration_increment": 4800,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_might",
     "type": "SPELL",
-    "name": { "str": "Sign: Might" },
+    "name": { "str": "Sign: Otherworldly Potence" },
     "description": "Magic Sign\nUsing this spell will grant a temporary boost to strength.  It can be used on yourself or an ally.",
     "message": "\"Let it be a glorious battle…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -743,12 +768,13 @@
     "min_duration": 180000,
     "max_duration": 360000,
     "duration_increment": 18000,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_open_lock",
     "type": "SPELL",
-    "name": { "str": "Sign: Opening" },
+    "name": { "str": "Sign: Unbar the Portal" },
     "description": "Magic Sign\nUsing this spell has a chance of unbinding locks, unsealing barricades, or otherwise opening the way forward in the targeted area.",
     "message": "\"That which is made by man can always be undone by human hands…\"  You cast %s!",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
@@ -779,12 +805,13 @@
     "base_energy_cost": 2500,
     "final_energy_cost": 1250,
     "energy_increment": -125,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_overgrowth",
     "type": "SPELL",
-    "name": { "str": "Sign: Overgrowth" },
+    "name": { "str": "Sign: A Spread of Rampant Green" },
     "description": "Magic Sign\nUsing this spell will conjure an eruption of the living forest, at the location you target.  It will destroy most furniture in the affected area and disrupt terrain.",
     "message": "\"We shall prosper, no matter how barren the ground…\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -812,20 +839,21 @@
     "base_energy_cost": 2000,
     "final_energy_cost": 1000,
     "energy_increment": -100,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_phase_shield",
     "type": "SPELL",
-    "name": { "str": "Sign: Phase Shield" },
+    "name": { "str": "Sign: Halo of the Sun" },
     "description": "Magic Sign\nUsing this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.",
     "message": "\"Turn aside not the blade, but the hand that wields it…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "VERBAL", "NO_FAIL" ],
     "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_7", "hit_self": true, "max_level": 10 } ],
-    "effect": "spawn_item",
+    "effect": "attack",
     "shape": "blast",
-    "effect_str": "halo_phase_shield",
+    "effect_str": "effect_halo_phase_shield",
     "energy_source": "STAMINA",
     "difficulty": 70,
     "skill": "magic",
@@ -841,12 +869,13 @@
     "min_duration": 84000,
     "max_duration": 168000,
     "duration_increment": 8400,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_poison_armor",
     "type": "SPELL",
-    "name": { "str": "Sign: Poison Armor" },
+    "name": { "str": "Sign: Toxic Ward" },
     "description": "Magic Sign\nUsing this spell will grant a blessing that protects against toxic gas and other forms of poison.  It can be used on yourself or an ally.",
     "message": "\"I fear no venom, whether it be by word or blade…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -871,13 +900,14 @@
     "min_duration": 36000,
     "max_duration": 72000,
     "duration_increment": 3600,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_serpentine_shield",
     "//": "ID retained to avoid breaking saves.",
     "type": "SPELL",
-    "name": { "str": "Sign: Shadowy Shield" },
+    "name": { "str": "Sign: Obsidian Mantle of Shadows" },
     "description": "Magic Sign\nUsing this spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike attackers blind with otherworldly darkness.",
     "message": "\"Fear not the darkness, but those who lure you into it…\"  You cast %s!",
     "valid_targets": [ "self" ],
@@ -901,12 +931,13 @@
     "min_duration": 72000,
     "max_duration": 144000,
     "duration_increment": 7200,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_shockstorm",
     "type": "SPELL",
-    "name": { "str": "Sign: Shockstorm" },
+    "name": { "str": "Sign: Fulminating Wave" },
     "description": "Magic Sign\nUsing this spell will call forth lightning all around you.  Anything close to you will take double damage.  Beware using it around allies.",
     "message": "\"Let it be a thunder to split the heavens and earth…\"  You cast %s!",
     "effect": "attack",
@@ -950,12 +981,13 @@
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.5,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_sundering_quake",
     "type": "SPELL",
-    "name": { "str": "Sign: Sundering Quake" },
+    "name": { "str": "Sign: Cleaving the Living Earth" },
     "description": "Magic Sign\nUsing this spell will bring down structures and leave broken stones in your wake, damaging any foes (or allies) caught in the blast.  Enemies in the epicenter will take double damage.",
     "message": "\"I am that which lies beneath, splitting continents with but a word…\"  You cast %s!",
     "effect": "attack",
@@ -976,9 +1008,9 @@
     "min_range": 10,
     "max_range": 20,
     "range_increment": 1,
-    "min_aoe": 4,
+    "min_aoe": 3,
     "max_aoe": 8,
-    "aoe_increment": 0.4,
+    "aoe_increment": 0.5,
     "max_level": 10,
     "difficulty": 80,
     "skill": "magic",
@@ -989,12 +1021,13 @@
     "base_energy_cost": 4500,
     "final_energy_cost": 2250,
     "energy_increment": -225,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_summon_giant_centipedes",
     "type": "SPELL",
-    "name": { "str": "Sign: Summon Centipedes" },
+    "name": { "str": "Sign: Call Forth the Crawling Ones" },
     "description": "Magic Sign\nUsing this spell will summon mutated vermin, which will be loyal but not permanent.",
     "message": "\"I am that which is grim yet necessary, for there is no life without death…\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -1024,12 +1057,13 @@
     "min_duration": 720000,
     "max_duration": 1440000,
     "duration_increment": 72000,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_summon_skeletal_dog",
     "type": "SPELL",
-    "name": { "str": "Sign: Summon Skeletal Dog" },
+    "name": { "str": "Sign: Call Forth the Hound of Bone" },
     "description": "Magic Sign\nUsing this spell will summon an animalistic revenant, which will be loyal but not permanent.",
     "message": "\"Loyal unto death, and even beyond…\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -1056,12 +1090,13 @@
     "min_duration": 360000,
     "max_duration": 720000,
     "duration_increment": 36000,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_summon_shadow",
     "type": "SPELL",
-    "name": { "str": "Sign: Summon Shadow" },
+    "name": { "str": "Sign: Call Forth the Dark One" },
     "description": "Magic Sign\nUsing this spell will summon a living shadow that prowls the night, which will be loyal but not permanent.",
     "message": "\"Neherit, otira atvess…\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -1088,13 +1123,14 @@
     "min_duration": 600000,
     "max_duration": 1200000,
     "duration_increment": 60000,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_summon_shadow_snake",
     "//": "ID retained for compatibility.",
     "type": "SPELL",
-    "name": { "str": "Sign: Summon Vortex" },
+    "name": { "str": "Sign: Call Forth the Living Vortex" },
     "description": "Magic Sign\nUsing this spell will summon a spirit of living wind that glows with ethereal light, which will be loyal but not permanent.",
     "message": "\"Tvakaros, ievona karoh…\"  You cast %s!",
     "valid_targets": [ "ground" ],
@@ -1121,12 +1157,13 @@
     "min_duration": 720000,
     "max_duration": 1440000,
     "duration_increment": 72000,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_surge_adrenaline",
     "type": "SPELL",
-    "name": { "str": "Sign: Surge of Adrenaline" },
+    "name": { "str": "Sign: Outpouring of Prowess" },
     "description": "Magic Sign\nUsing this spell will provoke a rush of adrenaline for urgent situations, albeit with the same drawbacks afterward.  It can be used on yourself or an ally.",
     "message": "\"The battle is not over yet…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1151,13 +1188,14 @@
     "max_duration": 144000,
     "duration_increment": 7200,
     "energy_source": "STAMINA",
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_temporal_aura",
     "//": "ID retained for save compatibility",
     "type": "SPELL",
-    "name": { "str": "Sign: Transcendent Aura" },
+    "name": { "str": "Sign: Donning the Otherworldly Guise" },
     "description": "Magic Sign\nUsing this spell will shroud you with a faded halo, which will make you undetectable to otherworldly creatures (Nether creatures, fungus, triffids, etc), in exchange for being easier to spot by any other creatures.",
     "message": "\"Guard and guide me, out of the clutches of the wicked…\"  You cast %s!",
     "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_8", "hit_self": true, "max_level": 10 } ],
@@ -1181,12 +1219,13 @@
     "base_energy_cost": 4500,
     "final_energy_cost": 2250,
     "energy_increment": -225,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   },
   {
     "id": "arcana_magic_ward_against_evil",
     "type": "SPELL",
-    "name": { "str": "Sign: Ward Against Evil" },
+    "name": { "str": "Sign: Abjuration of the Darkness" },
     "description": "Magic Sign\nUsing this spell will grant a blessing that protects against certain anomalous threats.  It can be used on yourself or an ally.",
     "message": "\"The wicked falter before the vigilant…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
@@ -1211,6 +1250,7 @@
     "min_duration": 60000,
     "max_duration": 120000,
     "duration_increment": 6000,
-    "spell_class": "NONE"
+    "spell_class": "PATTERN_SORCERY",
+    "magic_type": "arcana_pattern_sorcery"
   }
 ]
