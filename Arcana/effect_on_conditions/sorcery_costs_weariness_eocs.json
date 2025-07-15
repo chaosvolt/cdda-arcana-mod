@@ -1,0 +1,52 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_WEARINESS_ADD_WEARINESS_COST",
+    "eoc_type": "EVENT",
+    "required_event": "spellcasting_finish",
+    "condition": {
+      "and": [
+        { "u_has_any_trait": [ "PATTERN_SORCERY" ] },
+        { "or": [ { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] } ] }
+      ]
+    },
+    "effect": [
+      {
+        "math": [ "u_spell_weariness_cost", "=", "(15 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+      },
+      {
+        "if": { "math": [ "_success != false" ] },
+        "then": [
+          { "math": [ "u_calories()", "-=", "u_spell_weariness_cost" ] },
+          { "math": [ "u_calories('dont_affect_weariness': true)", "+=", "u_spell_weariness_cost" ] }
+        ],
+        "else": [
+          { "math": [ "u_calories()", "-=", "u_spell_weariness_cost / 5" ] },
+          { "math": [ "u_calories('dont_affect_weariness': true)", "+=", "u_spell_weariness_cost / 5" ] }
+        ]
+      },
+      {
+        "if": { "x_in_y_chance": { "x": { "math": [ "_difficulty" ] }, "y": 40 } },
+        "then": { "math": [ "u_val('sleepiness')", "+=", "rand(3)" ] }
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_WEARINESS_CANT_CAST_SPELLS_WHILE_TIRED",
+    "eoc_type": "EVENT",
+    "required_event": "opens_spellbook",
+    "condition": {
+      "or": [
+        { "u_has_effect": "weary_5" },
+        { "u_has_effect": "weary_6" },
+        { "u_has_effect": "weary_7" },
+        { "u_has_effect": "weary_8" }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_no_arcana_casting", "duration": 0 },
+      { "u_message": "You are much too weary to cast anything!", "type": "bad" }
+    ]
+  }
+]
