@@ -548,7 +548,7 @@
     "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Halo of the Sun)", "str_pl": "Pattern Scrolls (Halo of the Sun)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
-    "//": "Barter value is 50 baseline, plus 10 times the Spell Rank of the spell it teaches you.  Magic Seals have a value half that of its related pattern scroll.",
+    "//2": "Barter value is 50 baseline, plus 10 times the Spell Rank of the spell it teaches you.  Magic Seals have a value half that of its related pattern scroll.",
     "price_postapoc": "120 USD",
     "use_action": {
       "type": "effect_on_conditions",

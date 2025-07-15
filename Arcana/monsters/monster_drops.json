@@ -1325,9 +1325,8 @@
   },
   {
     "id": "feral_fancy_death_drops_rapier",
-    "copy-from": "feral_fancy_death_drops_rapier",
+    "//": "Orphaned Item group",
     "type": "item_group",
-    "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
       "entries": [
@@ -1339,9 +1338,8 @@
   },
   {
     "id": "feral_fancy_death_drops_rapier_fake",
-    "copy-from": "feral_fancy_death_drops_rapier_fake",
+    "//": "Orphaned Item group",
     "type": "item_group",
-    "//": "Adds items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
       "entries": [
@@ -1593,22 +1591,6 @@
     "//": "Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": { "entries": [ { "group": "strange_zombie_death_drops", "prob": 90 } ] }
-  },
-  {
-    "id": "jackson_drops",
-    "copy-from": "jackson_drops",
-    "type": "item_group",
-    "//": "The only being without the queen flag to drop boss-level essence, also gives high odds of magical gear.  Only need to add items since we're referencing an existing itemgroup.",
-    "subtype": "collection",
-    "extend": {
-      "entries": [
-        { "group": "magic_items", "prob": 25, "damage": [ 1, 4 ] },
-        { "group": "magic_consumables", "prob": 50 },
-        { "group": "magic_books_postapoc", "prob": 75 },
-        { "group": "magic_tools", "prob": 25, "damage": [ 1, 4 ] },
-        { "item": "essence_blood", "count": [ 7, 14 ] }
-      ]
-    }
   },
   {
     "id": "marloss_yellow_drops",
@@ -2389,13 +2371,7 @@
     "id": "mon_zombear_death_drops",
     "subtype": "collection",
     "entries": [
-      {
-        "distribution": [
-          { "item": "monster_fang", "prob": 50 },
-          { "item": "graboid_fang", "prob": 50 }
-        ],
-        "prob": 10
-      },
+      { "distribution": [ { "item": "monster_fang", "prob": 50 }, { "item": "graboid_fang", "prob": 50 } ], "prob": 10 },
       { "item": "essence_blood", "prob": 10, "count": [ 2, 4 ] }
     ]
   },

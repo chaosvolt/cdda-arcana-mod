@@ -11,48 +11,5 @@
     },
     "deactivate_condition": { "u_has_trait": "PATTERN_SORCERY" },
     "effect": [ { "u_add_trait": "PATTERN_SORCERY" } ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "arcana_dragonblood_blood_effigy_eoc",
-    "eoc_type": "EVENT",
-    "required_event": "character_gains_effect",
-    "condition": { "compare_string": [ "arcana_dragonblood_blood_effigy_effect", { "context_val": "effect" } ] },
-    "effect": [
-      { "u_message": "You feel unearthly life flow through your body.", "type": "mixed" },
-      { "u_mutate_category": "DRAGONBLOOD", "use_vitamins": false },
-      { "u_lose_effect": "arcana_dragonblood_blood_effigy_effect" }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "arcana_dragonblood_sacramental_heart_eoc",
-    "eoc_type": "EVENT",
-    "required_event": "character_gains_effect",
-    "condition": { "compare_string": [ "arcana_dragonblood_sacramental_heart_effect", { "context_val": "effect" } ] },
-    "effect": [
-      {
-        "u_message": "You feel a powerful resonance throughout your body, another irreversible step down the Path to Power.",
-        "type": "mixed"
-      },
-      { "run_eocs": [ "arcana_dragonblood_sacramental_heart_eoc_thresh_test" ] },
-      { "u_mutate_category": "DRAGONBLOOD", "use_vitamins": false },
-      { "run_eocs": [ "arcana_dragonblood_sacramental_heart_eoc_trigger_bonus" ] },
-      { "u_lose_effect": "arcana_dragonblood_sacramental_heart_effect" }
-    ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "arcana_paragon_veilblade_eoc",
-    "eoc_type": "EVENT",
-    "required_event": "character_gains_effect",
-    "condition": { "compare_string": [ "arcana_paragon_veilblade_effect", { "context_val": "effect" } ] },
-    "effect": [
-      { "u_message": "You feel an otherworldly presence reaching out to you.", "type": "mixed" },
-      { "run_eocs": [ "arcana_paragon_veilblade_eoc_thresh_test" ] },
-      { "u_mutate_category": "VEIL", "use_vitamins": false },
-      { "run_eocs": [ "arcana_paragon_veilblade_eoc_trigger_bonus" ] },
-      { "u_lose_effect": "arcana_paragon_veilblade_effect" }
-    ]
   }
 ]
