@@ -1,6 +1,21 @@
 [
   {
     "type": "effect_type",
+    "id": "effect_dragonblood_wing_levitation",
+    "//": "Hidden effect, used to make sure dragonblood can fly.",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "LEVITATION", "CLIMB_FLYING" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_no_arcana_casting",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "NO_ARCANA_MAGIC" ]
+  },
+  {
+    "type": "effect_type",
     "id": "arcana_dragonblood_blood_effigy_effect",
     "max_duration": "10 s",
     "name": [ "Blood Effigy" ],
@@ -62,7 +77,21 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "pain_min": [ -1 ], "stamina_min": [ 20 ], "health_min": [ 1 ], "h_mod_min": [ 1 ], "rad_min": [ -1 ] }
+    "base_mods": {
+      "pain_min": [ -1 ],
+      "pain_tick": [ 30 ],
+      "pain_chance": [ 3 ],
+      "stamina_min": [ 20 ],
+      "stamina_tick": [ 30 ],
+      "stamina_chance": [ 3 ],
+      "health_min": [ 1 ],
+      "health_tick": [ 30 ],
+      "health_chance": [ 3 ],
+      "h_mod_min": [ 1 ],
+      "rad_min": [ -1 ],
+      "rad_tick": [ 30 ],
+      "rad_chance": [ 3 ]
+    }
   },
   {
     "type": "effect_type",
@@ -90,9 +119,8 @@
     "type": "effect_type",
     "id": "temporal_stimulation_effect",
     "name": [ "Temporal Stimulation" ],
-    "//": "This adds the stamina and fatigue effects to TS.  And the speed boost, because speed enchantments can't be trusted to work.",
+    "//": "This adds the stamina and fatigue effects to TS.",
     "base_mods": {
-      "speed_mod": [ 100 ],
       "stamina_min": [ 20 ],
       "hunger_min": [ 1 ],
       "hunger_tick": [ 75 ],
@@ -100,7 +128,8 @@
       "thirst_tick": [ 75 ],
       "sleepiness_min": [ 1 ],
       "sleepiness_tick": [ 75 ]
-    }
+    },
+    "enchantments": [ { "values": [ { "value": "SPEED", "multiply": 0.75 } ] } ]
   },
   {
     "type": "effect_type",
@@ -115,7 +144,7 @@
     "max_duration": "30 m",
     "max_intensity": 30,
     "int_dur_factor": "1 m",
-    "base_mods": { "pain_tick": [ 25 ], "pain_min": [ -15 ], "speed_mod": [ -25, -15 ] }
+    "base_mods": { "pain_tick": [ 25 ], "pain_min": [ -2 ], "speed_mod": [ -25, -15 ] }
   },
   {
     "type": "effect_type",
@@ -228,11 +257,11 @@
     "int_dur_factor": "1 m",
     "base_mods": {
       "health_min": [ 1 ],
-      "health_chance": [ 15 ],
+      "health_chance": [ 30 ],
       "h_mod_min": [ 1 ],
-      "h_mod_chance": [ 15 ],
+      "h_mod_chance": [ 30 ],
       "pain_tick": [ 50 ],
-      "pain_min": [ -10 ],
+      "pain_min": [ -1 ],
       "speed_mod": [ -15, -10 ]
     }
   },
@@ -796,6 +825,24 @@
       "stamina_min": [ -5 ],
       "stamina_tick": [ -1, -0.8 ]
     }
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_halo_phase_shield",
+    "name": [ "sunstone halo" ],
+    "desc": [ "A strange radiance permeating your body, repelling nearby attackers away from you." ],
+    "enchantments": [
+      {
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_phase_shield",
+            "once_in": 10,
+            "message": "%2$s is suddenly forced back!",
+            "npc_message": "%2$s is suddenly forced away from %1$s!"
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_type",

@@ -81,7 +81,7 @@
           }
         ]
       }
-      ],
+    ],
     "max_worn": 1,
     "extend": { "flags": [ "NO_TAKEOFF" ] }
   },
@@ -106,13 +106,13 @@
     "description": "A strange radiance permeating your body, obscuring your life force from the undead.  You will be invisible to them, but not to other creatures, and they will still be able to hear and smell you.",
     "color": "white",
     "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ],
-          "values": [ { "value": "REGEN_HP", "multiply": -1.0 } ]
-        }
-      ],
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ],
+        "values": [ { "value": "REGEN_HP", "multiply": -1.0 } ]
+      }
+    ],
     "max_worn": 1,
     "extend": { "flags": [ "NO_TAKEOFF" ] }
   },
@@ -137,13 +137,13 @@
     "description": "A strange radiance permeating your body, enhancing your movement and reflexes.",
     "color": "white",
     "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "values": [ { "value": "MOVE_COST", "multiply": -0.5 }, { "value": "BONUS_DODGE", "add": 5 } ],
-          "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
-        }
-      ],
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [ { "value": "MOVE_COST", "multiply": -0.5 }, { "value": "BONUS_DODGE", "add": 5 } ],
+        "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
+      }
+    ],
     "max_worn": 1,
     "extend": { "flags": [ "NO_TAKEOFF" ] }
   },
@@ -155,23 +155,7 @@
     "name": { "str": "guardian aura" },
     "description": "A strange radiance permeating your body, adding to your defenses.",
     "color": "white",
-    "passive_effects": [
-      {
-        "has": "WORN",
-        "condition": "ALWAYS",
-        "incoming_damage_mod": [
-          { "type": "acid", "multiply": -0.25 },
-          { "type": "bash", "multiply": -0.25 },
-          { "type": "biological", "multiply": -0.25 },
-          { "type": "cold", "multiply": -0.25 },
-          { "type": "cut", "multiply": -0.25 },
-          { "type": "electric", "multiply": -0.25 },
-          { "type": "heat", "multiply": -0.25 },
-          { "type": "stab", "multiply": -0.25 },
-          { "type": "bullet", "multiply": -0.25 }
-        ]
-      }
-    ],
+    "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ALL", "multiply": -0.2 } ] } ],
     "max_worn": 1,
     "extend": { "flags": [ "NO_TAKEOFF" ] }
   },
@@ -301,18 +285,18 @@
         "condition": "ALWAYS",
         "hit_me_effect": [
           {
-              "id": "arcana_react_satchel_attention",
-              "hit_self": true,
-              "once_in": 50,
-              "message": "You feel like something is watching you…",
-              "npc_message": "A strange aura of malice seems to briefly surround %1$s."
+            "id": "arcana_react_satchel_attention",
+            "hit_self": true,
+            "once_in": 50,
+            "message": "You feel like something is watching you…",
+            "npc_message": "A strange aura of malice seems to briefly surround %1$s."
           },
           {
-              "id": "arcana_react_satchel_teleport",
-              "hit_self": true,
-              "once_in": 50,
-              "message": "You feel yanked in a non-existent direction!",
-              "npc_message": "%1$s suddenly warps away!"
+            "id": "arcana_react_satchel_teleport",
+            "hit_self": true,
+            "once_in": 50,
+            "message": "You feel yanked in a non-existent direction!",
+            "npc_message": "%1$s suddenly warps away!"
           }
         ]
       }
