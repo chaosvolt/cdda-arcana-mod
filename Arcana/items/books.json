@@ -65,8 +65,7 @@
     "max_level": 5,
     "intelligence": 11,
     "time": "40 m",
-    "read_fun": -2,
-    "flags": [ "INSPIRATIONAL" ]
+    "read_fun": -2
   },
   {
     "id": "book_bloodmagic",
@@ -110,8 +109,7 @@
     "max_level": 7,
     "intelligence": 9,
     "time": "20 m",
-    "read_fun": -1,
-    "flags": [ "INSPIRATIONAL" ]
+    "read_fun": -1
   },
   {
     "id": "book_sacrifice",
@@ -133,8 +131,7 @@
     "max_level": 8,
     "intelligence": 10,
     "time": "30 m",
-    "read_fun": -3,
-    "flags": [ "INSPIRATIONAL" ]
+    "read_fun": -3
   },
   {
     "id": "book_syncretism",
