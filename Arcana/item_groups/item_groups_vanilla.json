@@ -1,18 +1,5 @@
 [
   {
-    "id": "homebooks",
-    "copy-from": "homebooks",
-    "type": "item_group",
-    "subtype": "distribution",
-    "extend": {
-      "entries": [
-        { "item": "book_magicfordummies", "prob": 1 },
-        { "item": "book_potioncraft", "prob": 1 },
-        { "item": "book_scrollcraft", "prob": 1 }
-      ]
-    }
-  },
-  {
     "id": "church",
     "copy-from": "church",
     "type": "item_group",
@@ -22,24 +9,6 @@
         { "item": "book_hexenhammer", "prob": 1 },
         { "item": "book_scrollcraft", "prob": 1 },
         { "item": "manual_cleansingflame", "prob": 1 }
-      ]
-    }
-  },
-  {
-    "id": "religious_books",
-    "copy-from": "religious_books",
-    "type": "item_group",
-    "subtype": "distribution",
-    "extend": {
-      "entries": [
-        {
-          "distribution": [
-            { "item": "book_hexenhammer", "prob": 1 },
-            { "item": "book_scrollcraft", "prob": 1 },
-            { "item": "book_sacrifice", "prob": 1 }
-          ],
-          "prob": 1
-        }
       ]
     }
   },
@@ -66,21 +35,21 @@
     "copy-from": "mansion_books",
     "type": "item_group",
     "subtype": "distribution",
-    "extend": { "entries": [ { "group": "magic_books", "prob": 15 } ] }
+    "extend": { "entries": [ { "group": "magic_books", "prob": 5 } ] }
   },
   {
     "id": "mansion_bookcase",
     "copy-from": "mansion_bookcase",
     "type": "item_group",
     "subtype": "collection",
-    "extend": { "groups": [ [ "magic_books", 15 ] ] }
+    "extend": { "groups": [ [ "magic_books", 5 ] ] }
   },
   {
     "id": "exotic_books",
     "copy-from": "exotic_books",
     "type": "item_group",
     "subtype": "distribution",
-    "extend": { "entries": [ { "group": "magic_books", "prob": 15 } ] }
+    "extend": { "entries": [ { "group": "magic_books", "prob": 5 } ] }
   },
   {
     "id": "book_martial_rare",
@@ -88,13 +57,6 @@
     "type": "item_group",
     "subtype": "distribution",
     "extend": { "entries": [ { "item": "manual_cleansingflame", "prob": 1 }, { "item": "manual_shrike", "prob": 1 } ] }
-  },
-  {
-    "id": "SUS_chemistry_bookcase",
-    "copy-from": "SUS_chemistry_bookcase",
-    "type": "item_group",
-    "subtype": "collection",
-    "extend": { "entries": [ { "item": "book_potioncraft", "prob": 5 } ] }
   },
   {
     "id": "SUS_book_nonf_hard_spirit",
@@ -123,10 +85,10 @@
     "subtype": "collection",
     "extend": {
       "items": [
-        { "group": "magic_consumables", "prob": 45 },
-        { "group": "magic_items", "prob": 30 },
-        { "group": "magic_tools", "prob": 15 },
-        [ "arcanemap", 20 ]
+        { "group": "magic_consumables", "prob": 15 },
+        { "group": "magic_items", "prob": 10 },
+        { "group": "magic_tools", "prob": 5 },
+        [ "arcanemap", 7 ]
       ]
     }
   },
@@ -149,9 +111,9 @@
     "type": "item_group",
     "extend": {
       "items": [
-        { "group": "magic_books", "prob": 25 },
-        { "group": "autodoc_installation_magitech", "prob": 10 },
-        { "group": "vault_magic_item_stash", "prob": 10 }
+        { "group": "magic_books", "prob": 5 },
+        { "group": "autodoc_installation_magitech", "prob": 2 },
+        { "group": "vault_magic_item_stash", "prob": 2 }
       ]
     }
   },
@@ -208,7 +170,7 @@
     "id": "jewelry_back",
     "copy-from": "jewelry_back",
     "type": "item_group",
-    "extend": { "items": [ [ "amulet_exotic", 15 ], [ "brooch_iridescent", 10 ] ] }
+    "extend": { "items": [ [ "amulet_exotic", 5 ], [ "brooch_iridescent", 3 ] ] }
   },
   {
     "id": "jewelry_safe",
@@ -216,22 +178,14 @@
     "type": "item_group",
     "extend": {
       "items": [
-        [ "mana_gem", 10 ],
-        [ "mana_gem_blood", 10 ],
-        [ "mana_gem_dull", 5 ],
-        [ "totem_elecresist", 10 ],
-        [ "totem_clairvoyance", 10 ],
-        [ "totem_insight", 10 ],
-        [ "totem_lightning", 10 ]
+        [ "mana_gem", 5 ],
+        [ "mana_gem_blood", 5 ],
+        [ "mana_gem_dull", 2 ],
+        [ "totem_elecresist", 5 ],
+        [ "totem_clairvoyance", 5 ],
+        [ "totem_insight", 5 ],
+        [ "totem_lightning", 5 ]
       ]
-    }
-  },
-  {
-    "id": "pawn",
-    "copy-from": "pawn",
-    "type": "item_group",
-    "extend": {
-      "items": [ [ "mana_gem", 1 ], [ "mana_gem_blood", 1 ], [ "mana_gem_dull", 1 ], [ "offering_chalice", 1 ], [ "blood_athame", 1 ] ]
     }
   },
   {
@@ -266,7 +220,7 @@
     "id": "drugdealer",
     "copy-from": "drugdealer",
     "type": "item_group",
-    "extend": { "items": [ { "group": "magic_books_postapoc", "prob": 5 } ] }
+    "extend": { "items": [ { "group": "magic_books_postapoc", "prob": 1 } ] }
   },
   {
     "id": "science",
@@ -286,7 +240,7 @@
     "id": "esoteric_books",
     "copy-from": "esoteric_books",
     "type": "item_group",
-    "extend": { "items": [ { "group": "magic_books_postapoc", "prob": 1 } ] }
+    "extend": { "items": [ { "group": "magic_books", "prob": 1 } ] }
   },
   {
     "id": "teleport",
