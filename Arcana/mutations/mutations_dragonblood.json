@@ -404,6 +404,7 @@
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYWINGS" ],
     "prereqs2": [ "DENSE_BONES" ],
+    "changes_to": [ "ARCANA_DRAGONWINGS_FLIGHT" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "WINGS" ],
@@ -420,6 +421,41 @@
         ]
       }
     ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGONWINGS_FLIGHT",
+    "name": { "str": "Draconic Wings" },
+    "points": 6,
+    "mixed_effect": true,
+    "visibility": 4,
+    "ugliness": 2,
+    "description": "You have a pair of large, scale-covered wings.  You are immune to falling damage, and with the expenditure of mana, you can use them to fly.  Your muscles have adapted to support their movements, improving your strength and stamina further.  Still prevents wearing non-fabric gear on the torso, and a bit more taxing on your dexterity, but they're now less encumbering and don't hinder dodging.",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [ "ARCANA_DRAGONWINGS" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD" ],
+    "types": [ "WINGS" ],
+    "restricts_gear": [ "torso" ],
+    "allow_soft_gear": true,
+    "allowed_items": [ "BELTED" ],
+    "active": true,
+    "cost": 5,
+    "time": 1,
+    "mana": true,
+    "enchantments": [
+      "ENCH_DRAGONBLOOD_DRACONIC_WINGS",
+      {
+        "values": [
+          { "value": "STRENGTH", "add": 5 },
+          { "value": "DEXTERITY", "add": -2 },
+          { "value": "CARDIO_MULTIPLIER", "multiply": 0.2 }
+        ]
+      }
+    ],
+    "activated_eocs": [ "EOC_ARCANA_DRAGONWINGS_FLIGHT_activated" ],
+    "deactivated_eocs": [ "EOC_ARCANA_DRAGONWINGS_FLIGHT_deactivated" ]
   },
   {
     "type": "mutation",
