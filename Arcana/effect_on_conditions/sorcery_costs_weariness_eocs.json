@@ -3,16 +3,28 @@
     "type": "effect_on_condition",
     "id": "EOC_ARCANA_WEARINESS_ADD_WEARINESS_COST",
     "eoc_type": "EVENT",
+    "//": "All magic costs weariness.  Arcana Blessings cost less.",
     "required_event": "spellcasting_finish",
     "condition": {
       "and": [
-        { "u_has_any_trait": [ "PATTERN_SORCERY" ] },
-        { "or": [ { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] } ] }
+        { "u_has_any_trait": [ "VEIL_PARAGON_SORCERY", "PATTERN_SORCERY" ] },
+        {
+          "or": [
+            { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
+            { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] }
+          ]
+        }
       ]
     },
     "effect": [
       {
-        "math": [ "u_spell_weariness_cost", "=", "(15 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+        "if": { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
+        "then": {
+          "math": [ "u_spell_weariness_cost", "=", "(15 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+        },
+        "else": {
+          "math": [ "u_spell_weariness_cost", "=", "(12 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+        }
       },
       {
         "if": { "math": [ "_success != false" ] },
@@ -26,7 +38,12 @@
         ]
       },
       {
-        "if": { "x_in_y_chance": { "x": { "math": [ "_difficulty" ] }, "y": 40 } },
+        "if": {
+          "and": [
+            { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
+            { "x_in_y_chance": { "x": { "math": [ "_difficulty" ] }, "y": 40 } }
+          ]
+        },
         "then": { "math": [ "u_val('sleepiness')", "+=", "rand(3)" ] }
       }
     ]

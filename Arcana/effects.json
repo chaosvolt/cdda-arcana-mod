@@ -43,6 +43,13 @@
   },
   {
     "type": "effect_type",
+    "id": "effect_arcana_wielding_veilblade",
+    "//": "Hidden effect, makes your Arcane Blessings automatically succeed if wielding the Veilblade",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
     "id": "magic_sign_exertion",
     "name": [ "Magic Sign Exertion" ],
     "desc": [ "Overuse of Magic Signs increases fatigue gain." ],
