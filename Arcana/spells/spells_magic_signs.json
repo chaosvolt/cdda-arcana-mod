@@ -853,7 +853,7 @@
     "extra_effects": [ { "id": "arcana_aftermath_magic_sign_exertion_7", "hit_self": true, "max_level": 10 } ],
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "effect_halo_phase_shield",
+    "effect_str": "arcana_halo_phase_shield",
     "energy_source": "STAMINA",
     "difficulty": 70,
     "skill": "magic",
