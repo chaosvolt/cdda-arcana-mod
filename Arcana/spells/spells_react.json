@@ -347,35 +347,39 @@
     "type": "SPELL",
     "name": { "str": "Phase Shield Effect" },
     "description": "This pushes your attackers away.",
-    "message": "",
-    "valid_targets": [ "hostile" ],
-    "effect": "area_push",
+    "valid_targets": [ "ally", "hostile" ],
+    "flags": [ "SILENT" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_ARCANA_REACT_PHASE",
     "shape": "blast",
-    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ],
-    "extra_effects": [
-      { "id": "arcana_react_phase_shield_2", "hit_self": false },
-      { "id": "arcana_react_phase_shield_2", "hit_self": false },
-      { "id": "arcana_react_phase_shield_2", "hit_self": false },
-      { "id": "arcana_react_phase_shield_2", "hit_self": false }
-    ],
-    "min_range": 5,
-    "max_range": 5,
-    "min_aoe": 10,
-    "max_aoe": 10
+    "min_aoe": 1
   },
   {
-    "id": "arcana_react_phase_shield_2",
-    "type": "SPELL",
-    "name": { "str": "Phase Shield Effect 2" },
-    "description": "More pushing!",
-    "message": "",
-    "valid_targets": [ "hostile" ],
-    "effect": "area_push",
-    "shape": "blast",
-    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ],
-    "min_range": 5,
-    "max_range": 5,
-    "min_aoe": 10,
-    "max_aoe": 10
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_REACT_PHASE",
+    "condition": "has_alpha",
+    "effect": [
+      { "npc_location_variable": { "context_val": "player_position" } },
+      { "math": [ "_push_nearby_enemies_power_level = n_spell_level('magus_push_nearby_enemies_back')" ] },
+      { "math": [ "_telekinesis_weight_ratio = 55" ] },
+      {
+        "math": [
+          "_weight_ratio",
+          "=",
+          "( (_push_nearby_enemies_power_level * _telekinesis_weight_ratio) + (_telekinesis_weight_ratio / 2) ) / (u_weight() / 1000000)"
+        ]
+      },
+      { "math": [ "_telekinesis_shove_spell_level = clamp( ( (_weight_ratio - 1) * 1.5), 0, 20)" ] },
+      {
+        "if": { "x_in_y_chance": { "x": { "math": [ "_weight_ratio * 1000" ] }, "y": 1000 } },
+        "then": [ { "u_add_effect": "downed", "duration": 2 } ]
+      },
+      {
+        "u_knockback": { "math": [ "_telekinesis_shove_spell_level" ] },
+        "stun": 2,
+        "dam_mult": { "math": [ "1 + (_telekinesis_shove_spell_level * 0.4)" ] },
+        "direction_var": { "context_val": "player_position" }
+      }
+    ]
   }
 ]
