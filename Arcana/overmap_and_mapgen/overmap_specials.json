@@ -15,7 +15,7 @@
     "locations": [ "field", "forest" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 25, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "GLOBALLY_UNIQUE" ]
   },
   {
@@ -30,7 +30,7 @@
     "locations": [ "forest" ],
     "city_distance": [ 0, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 25, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "GLOBALLY_UNIQUE" ]
   },
   {
@@ -51,7 +51,7 @@
     "locations": [ "field", "forest", "swamp" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 25, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "GLOBALLY_UNIQUE" ],
     "spawns": { "group": "GROUP_ARCHON", "population": [ 150, 300 ], "radius": [ 20, 40 ] }
   },
@@ -75,7 +75,7 @@
     "locations": [ "forest", "swamp" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 25, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "GLOBALLY_UNIQUE" ]
   },
   {
@@ -84,7 +84,7 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 50, 100 ],
+    "occurrences": [ 25, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
@@ -93,7 +93,7 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_2_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 50, 100 ],
+    "occurrences": [ 25, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
@@ -102,7 +102,7 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_3_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 50, 100 ],
+    "occurrences": [ 25, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
@@ -117,7 +117,7 @@
     "locations": [ "wilderness" ],
     "city_distance": [ 16, -1 ],
     "city_sizes": [ 0, 12 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 25, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "GLOBALLY_UNIQUE" ]
   },
   {
@@ -184,7 +184,7 @@
     "locations": [ "land" ],
     "city_distance": [ 10, -1 ],
     "city_sizes": [ 1, -1 ],
-    "occurrences": [ 75, 100 ],
+    "occurrences": [ 25, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "GLOBALLY_UNIQUE" ],
     "rotate": false
   },
