@@ -1184,13 +1184,13 @@
   },
   {
     "id": "NC_ARSONIST_random",
-    "copy-from": "NC_ARSONIST_random",
+    "copy-from": "NC_ARSONIST_bashing",
     "type": "item_group",
     "extend": { "items": [ [ "bloodscourge", 1 ] ] }
   },
   {
     "id": "NC_ARSONIST_misc",
-    "copy-from": "NC_ARSONIST_misc",
+    "copy-from": "NC_ARSONIST_cutting",
     "type": "item_group",
     "extend": { "items": [ [ "bloodaxe", 1 ] ] }
   },

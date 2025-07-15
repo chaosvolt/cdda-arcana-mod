@@ -83,8 +83,8 @@
     "extend": { "entries": [ { "group": "magic_books", "prob": 15 } ] }
   },
   {
-    "id": "rare_martial_arts_books",
-    "copy-from": "rare_martial_arts_books",
+    "id": "book_martial_rare",
+    "copy-from": "book_martial_rare",
     "type": "item_group",
     "subtype": "distribution",
     "extend": { "entries": [ { "item": "manual_cleansingflame", "prob": 1 }, { "item": "manual_shrike", "prob": 1 } ] }
@@ -200,7 +200,7 @@
   },
   {
     "id": "hive_center",
-    "copy-from": "hive_center",
+    "//": "ORPHANED item group",
     "type": "item_group",
     "extend": { "items": [ [ "dermatik_sting", 1 ] ] }
   },
@@ -249,7 +249,7 @@
   },
   {
     "id": "spider",
-    "copy-from": "spider",
+    "//": "ORPHANED item group",
     "type": "item_group",
     "subtype": "distribution",
     "extend": {
@@ -283,6 +283,12 @@
     }
   },
   {
+    "id": "esoteric_books",
+    "copy-from": "esoteric_books",
+    "type": "item_group",
+    "extend": { "items": [ { "group": "magic_books_postapoc", "prob": 1 } ] }
+  },
+  {
     "id": "teleport",
     "copy-from": "teleport",
     "type": "item_group",
@@ -290,7 +296,7 @@
   },
   {
     "id": "rare",
-    "copy-from": "rare",
+    "//": "ORPHANED item group",
     "type": "item_group",
     "subtype": "distribution",
     "extend": {
@@ -352,32 +358,6 @@
     }
   },
   {
-    "id": "bionics_op",
-    "copy-from": "bionics_op",
-    "type": "item_group",
-    "extend": {
-      "items": [ [ "bio_electrothermal_arc_projector", 1 ], [ "bio_rift_focus_projector", 1 ], [ "bio_temporal_stimulation", 2 ] ]
-    }
-  },
-  {
-    "id": "bionics_op2_off",
-    "copy-from": "bionics_op2_off",
-    "type": "item_group",
-    "extend": { "items": [ [ "bio_electrothermal_arc_projector", 3 ], [ "bio_rift_focus_projector", 2 ] ] }
-  },
-  {
-    "id": "bionics_op2_def",
-    "copy-from": "bionics_op2_def",
-    "type": "item_group",
-    "extend": { "items": [ [ "bio_life_sign_suppression", 5 ] ] }
-  },
-  {
-    "id": "bionics_op2_utl",
-    "copy-from": "bionics_op2_utl",
-    "type": "item_group",
-    "extend": { "items": [ [ "bio_temporal_stimulation", 4 ], [ "bio_essence_surge_cell", 1 ] ] }
-  },
-  {
     "type": "item_group",
     "id": "roof_holdout",
     "copy-from": "roof_holdout",
@@ -385,14 +365,8 @@
   },
   {
     "type": "item_group",
-    "id": "flt_loot_rare",
-    "copy-from": "flt_loot_rare",
-    "extend": { "items": [ { "group": "magic_books_postapoc", "prob": 5 }, { "group": "arcana_hunt_random", "prob": 10 } ] }
-  },
-  {
-    "type": "item_group",
-    "id": "oa_ig_sb_rare",
-    "copy-from": "oa_ig_sb_rare",
+    "id": "bunker_basement_books",
+    "copy-from": "bunker_basement_books",
     "extend": { "items": [ { "group": "magic_books_postapoc", "prob": 10 }, { "group": "arcana_hunt_random", "prob": 15 } ] }
   },
   {
