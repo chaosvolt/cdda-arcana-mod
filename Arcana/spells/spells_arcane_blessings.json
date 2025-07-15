@@ -396,7 +396,7 @@
   {
     "id": "arcana_blessing_illusion_cloak",
     "type": "SPELL",
-    "name": { "str": "Blessing: Illusion Cloak" },
+    "name": { "str": "Blessing: Obfuscating Cloak" },
     "description": "Arcane Blessing\nUsing this spell will cloak one in illusions, hiding them from sight and protecting against certain optical effects.",
     "message": "You channel a shimmering aura, that fades into swirling illusory shadows.",
     "valid_targets": [ "self", "ally" ],
@@ -452,7 +452,7 @@
   {
     "id": "arcana_blessing_open_lock",
     "type": "SPELL",
-    "name": { "str": "Blessing: Cleaving of Portals" },
+    "name": { "str": "Blessing: Cleaving of the Barred Portals" },
     "description": "Arcane Blessing\nUsing this spell will unbind locks, unseal barricades, and otherwise open the way forward in the targeted area.",
     "message": "You focus, strange influence on the land exerted by your will.",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
@@ -516,7 +516,7 @@
   {
     "id": "arcana_blessing_radiant_burst",
     "type": "SPELL",
-    "name": { "str": "Blessing: Radiant Burst" },
+    "name": { "str": "Blessing: Coruscation of Radiance" },
     "description": "Arcane Blessing\nUsing this spell will blast a cone-shaped area with a crackling burst of energy, striking enemies blind with divine lightning.  Anything in the center line will take double damage.",
     "message": "Unearthly trails of lightning arc outward, bathing a swath ahead of you in an eerie glow.",
     "effect": "attack",
@@ -595,7 +595,7 @@
   {
     "id": "arcana_blessing_summon_homunculus",
     "type": "SPELL",
-    "name": { "str": "Blessing: Summon Homunculus" },
+    "name": { "str": "Blessing: Call Forth the Homunculus" },
     "description": "Arcane Blessing\nUsing this spell will summon a mimicry of the human form, which will be loyal but not permanent.",
     "message": "You focus, imagery of false omens lingering in your mind as a living construct is called to serve you.",
     "valid_targets": [ "ground" ],
@@ -780,7 +780,7 @@
   {
     "id": "arcana_blessing_wall_force",
     "type": "SPELL",
-    "name": { "str": "Blessing: Wall of Force" },
+    "name": { "str": "Blessing: Impenentrable Barrier" },
     "description": "Arcane Blessing\nUsing this spell will conjure a magical barrier where you target it, which can be used to trap enemies if placed carefully.",
     "message": "A flickering flame marks the ground for a moment, before an impenetrable barrier envelops it.  Examine it to dismiss the barrier.",
     "valid_targets": [ "ground" ],
@@ -810,7 +810,7 @@
   {
     "id": "arcana_blessing_ward_acid",
     "type": "SPELL",
-    "name": { "str": "Blessing: Ward (Acid)" },
+    "name": { "str": "Blessing: Mantle of the Universal Solvent" },
     "description": "Arcane Blessing\nUsing this spell will grant a blessing that completely protects against acid, even direct contact.  It can be used on yourself or an ally.",
     "message": "You channel a shimmering aura, and the air passing through carries a faintly bitter scent to it.",
     "valid_targets": [ "self", "ally" ],
@@ -838,7 +838,7 @@
   {
     "id": "arcana_blessing_ward_cold",
     "type": "SPELL",
-    "name": { "str": "Blessing: Ward (Cold)" },
+    "name": { "str": "Blessing: Mantle of the Frozen North" },
     "description": "Arcane Blessing\nUsing this spell will protect against the cold, and certain forms of supernatural harm.  It can be used on yourself or an ally.",
     "message": "You channel a protective aura, the air gaining a soothing warmth to it.",
     "valid_targets": [ "self", "ally" ],
@@ -866,7 +866,7 @@
   {
     "id": "arcana_blessing_ward_flame",
     "type": "SPELL",
-    "name": { "str": "Blessing: Ward (Flame)" },
+    "name": { "str": "Blessing: Mantle of the Holocaust" },
     "description": "Arcane Blessing\nUsing this spell will completely protect against fire, as well as the side effects caused by heat and smoke.  It can be used on yourself or an ally.",
     "message": "You channel a protective aura, the air seeming chilled by your actions.",
     "valid_targets": [ "self", "ally" ],
@@ -894,7 +894,7 @@
   {
     "id": "arcana_blessing_ward_lightning",
     "type": "SPELL",
-    "name": { "str": "Blessing: Ward (Lightning)" },
+    "name": { "str": "Blessing: Mantle of Thunderheads" },
     "description": "Arcane Blessing\nUsing this spell will grant a blessing that completely protects against lightning.  It can be used on yourself or on an ally.",
     "message": "You channel a soothing, insulating aura.",
     "valid_targets": [ "self", "ally" ],
@@ -922,7 +922,7 @@
   {
     "id": "arcana_blessing_ward_poison",
     "type": "SPELL",
-    "name": { "str": "Blessing: Ward (Poison)" },
+    "name": { "str": "Blessing: Mantle of Poison" },
     "description": "Arcane Blessing\nUsing this spell will grant a blessing that protects against toxic gas and other forms of poison.  It can be used on yourself or an ally.",
     "message": "You channel energy, spreading a revitalizing glow by your will.",
     "valid_targets": [ "self", "ally" ],
