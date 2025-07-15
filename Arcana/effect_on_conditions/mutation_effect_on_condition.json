@@ -60,6 +60,7 @@
       { "u_message": "You feel an otherworldly presence reaching out to you.", "type": "mixed" },
       { "run_eocs": [ "arcana_paragon_veilblade_eoc_thresh_test" ] },
       { "u_mutate_category": "VEIL", "use_vitamins": false },
+      { "u_add_trait": "VEIL_PARAGON_SORCERY" },
       { "run_eocs": [ "arcana_paragon_veilblade_eoc_trigger_bonus" ] },
       { "u_lose_effect": "arcana_paragon_veilblade_effect" }
     ]

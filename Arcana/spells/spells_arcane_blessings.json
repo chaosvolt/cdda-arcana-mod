@@ -1,5 +1,12 @@
 [
   {
+    "id": "arcana_magic_blessings",
+    "type": "magic_type",
+    "energy_source": "MANA",
+    "cannot_cast_flags": [ "NO_ARCANA_MAGIC" ],
+    "cannot_cast_message": "You cannot use your blessings now!"
+  },
+  {
     "id": "arcana_blessing_agility",
     "type": "SPELL",
     "name": { "str": "Blessing: Zéphuros's Grace" },
@@ -25,7 +32,9 @@
     "energy_increment": -7.5,
     "min_duration": 72000,
     "max_duration": 360000,
-    "duration_increment": 14400
+    "duration_increment": 14400,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_clairvoyance",
@@ -52,7 +61,9 @@
     "energy_increment": -10.5,
     "min_duration": 108000,
     "max_duration": 540000,
-    "duration_increment": 21600
+    "duration_increment": 21600,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_confuse_monster",
@@ -89,7 +100,9 @@
     "energy_increment": -7.5,
     "min_duration": 1200,
     "max_duration": 6000,
-    "duration_increment": 240
+    "duration_increment": 240,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_conjure_miasma",
@@ -137,7 +150,9 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.5
+    "field_intensity_variance": 0.5,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_conjure_lightburst",
@@ -172,7 +187,9 @@
     "field_id": "fd_veil_light",
     "field_chance": 1,
     "min_field_intensity": 1,
-    "max_field_intensity": 1
+    "max_field_intensity": 1,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_conjure_shadow_field",
@@ -209,7 +226,9 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.1,
-    "field_intensity_variance": 0.5
+    "field_intensity_variance": 0.5,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_consecrate",
@@ -244,7 +263,9 @@
     "casting_time_increment": -11.25,
     "base_energy_cost": 540,
     "final_energy_cost": 270,
-    "energy_increment": -13.5
+    "energy_increment": -13.5,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_divine_storm",
@@ -290,7 +311,9 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.5
+    "field_intensity_variance": 0.5,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_drain_life",
@@ -317,7 +340,9 @@
     "energy_increment": -10.5,
     "min_duration": 108000,
     "max_duration": 540000,
-    "duration_increment": 21600
+    "duration_increment": 21600,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_holy_flare",
@@ -363,7 +388,9 @@
     "field_intensity_variance": 0.5,
     "min_duration": 1800,
     "max_duration": 9000,
-    "duration_increment": 360
+    "duration_increment": 360,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_holy_ward",
@@ -391,7 +418,9 @@
     "energy_increment": -16.5,
     "min_duration": 60000,
     "max_duration": 300000,
-    "duration_increment": 12000
+    "duration_increment": 12000,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_illusion_cloak",
@@ -419,7 +448,9 @@
     "energy_increment": -12,
     "min_duration": 42000,
     "max_duration": 210000,
-    "duration_increment": 8400
+    "duration_increment": 8400,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_might",
@@ -447,7 +478,9 @@
     "energy_increment": -9,
     "min_duration": 90000,
     "max_duration": 450000,
-    "duration_increment": 18000
+    "duration_increment": 18000,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_open_lock",
@@ -477,7 +510,9 @@
     "casting_time_increment": -6.25,
     "base_energy_cost": 300,
     "final_energy_cost": 150,
-    "energy_increment": -7.5
+    "energy_increment": -7.5,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_pacify_monsters",
@@ -511,7 +546,9 @@
     "casting_time_increment": -10,
     "base_energy_cost": 480,
     "final_energy_cost": 240,
-    "energy_increment": -12
+    "energy_increment": -12,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_radiant_burst",
@@ -557,7 +594,9 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.1,
-    "field_intensity_variance": 0.5
+    "field_intensity_variance": 0.5,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_summon_giant_centipedes",
@@ -590,7 +629,9 @@
     "energy_increment": -10.5,
     "min_duration": 360000,
     "max_duration": 1800000,
-    "duration_increment": 72000
+    "duration_increment": 72000,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_summon_homunculus",
@@ -620,7 +661,9 @@
     "energy_increment": -9,
     "min_duration": 300000,
     "max_duration": 1500000,
-    "duration_increment": 60000
+    "duration_increment": 60000,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_summon_skeletal_dog",
@@ -653,7 +696,9 @@
     "energy_increment": -7.5,
     "min_duration": 240000,
     "max_duration": 1200000,
-    "duration_increment": 48000
+    "duration_increment": 48000,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_summon_skeleton",
@@ -683,7 +728,9 @@
     "energy_increment": -7.5,
     "min_duration": 240000,
     "max_duration": 1200000,
-    "duration_increment": 48000
+    "duration_increment": 48000,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_summon_thing",
@@ -713,7 +760,9 @@
     "energy_increment": -9,
     "min_duration": 300000,
     "max_duration": 1500000,
-    "duration_increment": 60000
+    "duration_increment": 60000,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_summon_vortices",
@@ -746,7 +795,9 @@
     "energy_increment": -10.5,
     "min_duration": 360000,
     "max_duration": 1800000,
-    "duration_increment": 72000
+    "duration_increment": 72000,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_surge_adrenaline",
@@ -775,7 +826,9 @@
     "min_duration": 72000,
     "max_duration": 360000,
     "duration_increment": 14400,
-    "energy_source": "MANA"
+    "energy_source": "MANA",
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_wall_force",
@@ -805,7 +858,9 @@
     "casting_time_increment": -6.25,
     "base_energy_cost": 300,
     "final_energy_cost": 150,
-    "energy_increment": -7.5
+    "energy_increment": -7.5,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_ward_acid",
@@ -833,7 +888,9 @@
     "energy_increment": -6,
     "min_duration": 18000,
     "max_duration": 90000,
-    "duration_increment": 3600
+    "duration_increment": 3600,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_ward_cold",
@@ -861,7 +918,9 @@
     "energy_increment": -10.5,
     "min_duration": 36000,
     "max_duration": 180000,
-    "duration_increment": 7200
+    "duration_increment": 7200,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_ward_flame",
@@ -889,7 +948,9 @@
     "energy_increment": -10.5,
     "min_duration": 36000,
     "max_duration": 180000,
-    "duration_increment": 7200
+    "duration_increment": 7200,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_ward_lightning",
@@ -917,7 +978,9 @@
     "energy_increment": -7.5,
     "min_duration": 24000,
     "max_duration": 120000,
-    "duration_increment": 4800
+    "duration_increment": 4800,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_ward_poison",
@@ -945,7 +1008,9 @@
     "energy_increment": -6,
     "min_duration": 18000,
     "max_duration": 90000,
-    "duration_increment": 3600
+    "duration_increment": 3600,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   },
   {
     "id": "arcana_blessing_wave_destruction",
@@ -990,6 +1055,8 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.5
+    "field_intensity_variance": 0.5,
+    "magic_type": "arcana_magic_blessings",
+    "spell_class": "VEIL_PARAGON_SORCERY"
   }
 ]

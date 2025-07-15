@@ -4,7 +4,7 @@
     "id": "PATTERN_SORCERY",
     "name": { "str": "Pattern Sorcerer" },
     "points": 0,
-    "description": "Through long struggle you have mastered the art of sorcery",
+    "description": "Through long struggle you have mastered the art of sorcery.",
     "valid": false,
     "enchantments": [
       {
@@ -17,6 +17,14 @@
         ]
       }
     ],
+    "flags": [ "ATTUNEMENT" ]
+  },
+  {
+    "type": "mutation",
+    "id": "VEIL_PARAGON_SORCERY",
+    "name": { "str": "Arcane Blessing" },
+    "points": 0,
+    "description": "He From Beyond the Veil has given you his blessings, allowing you to wield unfathomable powers.",
     "flags": [ "ATTUNEMENT" ]
   }
 ]
