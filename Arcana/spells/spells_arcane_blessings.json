@@ -562,7 +562,7 @@
   {
     "id": "arcana_blessing_summon_giant_centipedes",
     "type": "SPELL",
-    "name": { "str": "Blessing: SCall Forth the Crawling Ones" },
+    "name": { "str": "Blessing: Call Forth the Crawling Ones" },
     "description": "Arcane Blessing\nUsing this spell will summon mutated vermin, which will be loyal but not permanent.",
     "message": "You focus, imagery of false omens being averted lingering in your mind, as unnatural vermin slither into existence.",
     "valid_targets": [ "ground" ],
