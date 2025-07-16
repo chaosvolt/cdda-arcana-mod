@@ -500,7 +500,7 @@
     "copy-from": "totem_base",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Magic Seal (Overgrowth)", "str_pl": "Magic Seals (Overgrowth)" },
+    "name": { "str": "Magic Seal (A Spread of Rampant Green)", "str_pl": "Magic Seals (A Spread of Rampant Green)" },
     "description": "A small ornament of woven petals, an otherworldly vibrant red in hue.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
     "price_postapoc": "40 USD",
     "color": "red",
