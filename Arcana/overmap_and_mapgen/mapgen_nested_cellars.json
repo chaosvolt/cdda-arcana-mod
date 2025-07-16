@@ -1,0 +1,34 @@
+[
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "cabin_6x6_cellar_nested",
+    "//": "A cellar with a setup for sorcery",
+    "weight": 175,
+    "object": {
+      "mapgensize": [ 6, 6 ],
+      "rotation": [ 0, 0 ],
+      "rows": [
+        "BB  tt",
+        "     t",
+        "  OOO ",
+        "  O O ",
+        "  OOO ",
+        "      "
+      ],
+      "palettes": [ "cabin_cellar" ],
+      "furniture": { "O": "f_candle_barrier", "B": "f_bookcase" },
+      "items": {
+        "B": [
+          { "item": "esoteric_books", "chance": 80, "repeat": [ 1, 2 ] },
+          { "item": "magic_books", "chance": 50, "repeat": [ 1, 2 ] }
+        ],
+        "t": [
+          { "item": "magic_crafting", "chance": 85, "repeat": [ 2, 5 ] },
+          { "item": "magic_consumables", "chance": 50, "repeat": [ 1, 3 ] }
+        ]
+      },
+      "place_fields": [ { "field": "fd_dust", "x": [ 0, 5 ], "y": [ 0, 5 ], "repeat": [ 10, 20 ] } ],
+      "place_monster": [ { "monster": "mon_homunculus", "x": 3, "y": 3, "chance": 100 } ]
+    }
+  }
+]
