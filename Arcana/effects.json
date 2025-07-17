@@ -644,7 +644,7 @@
     "int_dur_factor": "1 m",
     "base_mods": { "per_mod": [ 1 ] },
     "scaling_mods": { "per_mod": [ 0.0825 ] },
-    "enchantments": [ { "values": [ { "value": "NIGHT_VIS", "add": { "math": "6 + (u_spell_level('arcana_magic_insight') / 2)" } } ] } ]
+    "enchantments": [ { "values": [ { "value": "NIGHT_VIS", "add": { "math": [ "6 + (u_spell_level('arcana_magic_insight') / 2)" ] } } ] } ]
   },
   {
     "type": "effect_type",

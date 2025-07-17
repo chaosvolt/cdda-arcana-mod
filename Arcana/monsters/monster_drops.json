@@ -2204,6 +2204,24 @@
     ]
   },
   {
+    "id": "mon_feral_hermit_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "shirts_unisex", "damage": [ 1, 4 ] },
+      { "group": "clothing_outdoor_pants", "damage": [ 1, 4 ] },
+      { "group": "clothing_outdoor_shoes", "damage": [ 1, 4 ] },
+      { "group": "underwear", "damage": [ 1, 4 ] },
+      { "group": "socks_unisex", "damage": [ 1, 4 ] },
+      { "group": "bags", "damage": [ 1, 4 ] },
+      {
+        "distribution": [ { "item": "essence", "prob": 25 }, { "item": "essence_dull", "prob": 75, "count": [ 10, 20 ] } ],
+        "prob": 50
+      },
+      { "group": "arcana_totem_random", "prob": 15, "count": [ 1, 2 ] }
+    ]
+  },
+  {
     "id": "mon_archunk_weak_death_drops",
     "type": "item_group",
     "subtype": "collection",

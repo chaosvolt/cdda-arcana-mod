@@ -292,7 +292,7 @@
         "condition": "ALWAYS",
         "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 3 } ],
         "intermittent_activation": { "effects": [ { "frequency": "25 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
-      "ench_effects": [ { "effect": "arcana_evil_mimic_active", "intensity": 1 } ]
+        "ench_effects": [ { "effect": "arcana_evil_mimic_active", "intensity": 1 } ]
       }
     ],
     "techniques": [ "WBLOCK_1" ],
@@ -480,7 +480,7 @@
     "copy-from": "fake_item",
     "name": { "str": "monster lightning weapon" },
     "description": "Used to give the Host of the Archon a specific degree of inaccuracy.  If you encounter one of these in the wild, it's a bug.",
-    "ammo_effects": [ "NEVER_MISFIRES", "LIGHTNING" ],
+    "ammo_effects": [ "NEVER_MISFIRES", "LIGHTNING", "LIGHTNING_TRAIL" ],
     "flags": [ "NEVER_JAMS" ],
     "skill": "pistol",
     "durability": 10,
@@ -489,6 +489,23 @@
     "sight_dispersion": 1000,
     "loudness": 50,
     "ranged_damage": { "damage_type": "electric", "amount": 38, "armor_penetration": 10 }
+  },
+  {
+    "id": "monster_lightning_spell_fake",
+    "type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "copy-from": "fake_item",
+    "name": { "str": "monster lightning spell" },
+    "description": "Used to let the maddened hermit shoot lightning bolts at you.  If you are somehow wielding this, it's a bug.",
+    "ammo_effects": [ "NEVER_MISFIRES", "LIGHTNING", "LIGHTNING_TRAIL" ],
+    "flags": [ "NEVER_JAMS" ],
+    "skill": "pistol",
+    "durability": 10,
+    "range": 25,
+    "dispersion": 5000,
+    "sight_dispersion": 1000,
+    "loudness": 50,
+    "ranged_damage": { "damage_type": "electric", "amount": 5, "armor_penetration": 10 }
   },
   {
     "id": "monster_hammer_fake",

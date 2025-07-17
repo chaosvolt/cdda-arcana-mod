@@ -1,5 +1,38 @@
 [
   {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "feral_weapon_monster_knife",
+    "cooldown": 2,
+    "move_cost": 75,
+    "accuracy": 3,
+    "damage_max_instance": [ { "damage_type": "stab", "amount": 21 } ],
+    "condition": { "test_eoc": "is_disarmed" },
+    "hit_dmg_u": "%1$s stabs your %2$s with a knife!",
+    "hit_dmg_npc": "%1$s stabs <npcname>'s %2$s with a knife!",
+    "miss_msg_u": "%1$s tries to stab you, but you dodge!",
+    "miss_msg_npc": "%1$s tries to stab <npcname>, but they dodge!",
+    "no_dmg_msg_u": "%1$s stabs your %2$s without penetrating your armor.",
+    "no_dmg_msg_npc": "%1$s stabs <npcname>'s %2$s without penetrating their armor."
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "feral_weapon_monster_warhammer",
+    "cooldown": 2,
+    "move_cost": 105,
+    "accuracy": 5,
+    "damage_max_instance": [ { "damage_type": "stab", "amount": 23 }, { "damage_type": "bash", "amount": 22 } ],
+    "effects": [ { "id": "stunned", "duration": 2, "chance": 5 }, { "id": "downed", "duration": 2, "chance": 5 } ],
+    "condition": { "test_eoc": "is_disarmed" },
+    "hit_dmg_u": "%1$s hammers your %2$s with a warhammer!",
+    "hit_dmg_npc": "%1$s hammers <npcname>'s %2$s with a warhammer!",
+    "miss_msg_u": "%1$s tries to hammers you, but you dodge!",
+    "miss_msg_npc": "%1$s tries to hammers <npcname>, but they dodge!",
+    "no_dmg_msg_u": "%1$s hammers your %2$s without penetrating your armor.",
+    "no_dmg_msg_npc": "%1$s hammers <npcname>'s %2$s without penetrating their armor."
+  },
+  {
     "id": "arcana_monster_archon_gaze_improved",
     "type": "SPELL",
     "name": { "str": "Greater Archon's Gaze" },
