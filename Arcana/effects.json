@@ -326,11 +326,11 @@
   {
     "type": "effect_type",
     "id": "cold_ward",
-    "name": [ "Ward Against Cold" ],
+    "name": [ "Hyperborean Mantle" ],
     "desc": [ "Protection against the effects of cold." ],
     "remove_message": "For a moment you feel a terrible chill in the air, as the ward against cold fades.",
     "removes_effects": [ "cold", "frostbite", "frostbite_recovery", "arcana_lingering_chill" ],
-    "decay_messages": [ [ "Your ward against cold is waning.", "bad" ] ],
+    "decay_messages": [ [ "Your mantle against cold is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,
@@ -339,11 +339,11 @@
   {
     "type": "effect_type",
     "id": "cold_ward_true",
-    "name": [ "Greater Ward Against Cold" ],
+    "name": [ "Mantle of the Frozen North" ],
     "desc": [ "Protection against the effects of cold, and any sources of direct damage." ],
     "remove_message": "For a moment you feel a terrible chill in the air, as the greater ward against cold fades.",
     "removes_effects": [ "cold", "frostbite", "frostbite_recovery", "arcana_lingering_chill" ],
-    "decay_messages": [ [ "Your greater ward against cold is waning.", "bad" ] ],
+    "decay_messages": [ [ "Your mantle against cold is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,
@@ -359,7 +359,7 @@
   {
     "type": "effect_type",
     "id": "free_action",
-    "name": [ "Free Action" ],
+    "name": [ "The Unbound Heart" ],
     "desc": [ "Protection against paralytic and other hindering effects." ],
     "remove_message": "You feel the otherworldly tension in your muscles leave your body, as the ward against paralytic effects fades.",
     "removes_effects": [
@@ -376,7 +376,7 @@
       "relax_gas",
       "grabbed"
     ],
-    "decay_messages": [ [ "Your spell of free action is waning.", "bad" ] ],
+    "decay_messages": [ [ "The Unbound Heart is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,
@@ -385,7 +385,7 @@
   {
     "type": "effect_type",
     "id": "hardened_senses",
-    "name": [ "Hardened Senses" ],
+    "name": [ "Clarity Above All" ],
     "desc": [ "Protection against blindness, deafness, stuns, and dazing." ],
     "remove_message": "You feel the wards guarding your vision and hearing fade.",
     "removes_effects": [ "blind", "deaf", "stunned", "dazed" ],
@@ -398,11 +398,11 @@
   {
     "type": "effect_type",
     "id": "heat_ward",
-    "name": [ "Ward Against Heat" ],
+    "name": [ "Forge-Hardened Flesh" ],
     "desc": [ "Protection against most effects of heat." ],
     "remove_message": "You feel a strange tingling sensation, as the ward against heat fades.",
     "removes_effects": [ "onfire", "smoke", "hot", "blisters", "hot_speed" ],
-    "decay_messages": [ [ "The ward against heat is waning.", "bad" ] ],
+    "decay_messages": [ [ "The charm against heat is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,
@@ -411,7 +411,7 @@
   {
     "type": "effect_type",
     "id": "heat_ward_true",
-    "name": [ "Ward Against Flame" ],
+    "name": [ "Mantle of the Holocaust" ],
     "desc": [ "Complete immunity to fire, and to related side effects." ],
     "remove_message": "You feel a strange tingling sensation, as the ward against flame fades.",
     "removes_effects": [ "onfire", "smoke", "hot", "blisters", "hot_speed" ],
@@ -496,7 +496,7 @@
   {
     "type": "effect_type",
     "id": "acid_ward_true",
-    "name": [ "Ward Against Acid" ],
+    "name": [ "Mantle of the Universal Solvent" ],
     "desc": [ "Complete immunity to acid damage, in addition to its aftereffects." ],
     "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
     "removes_effects": [ "corroding" ],
@@ -517,7 +517,7 @@
   {
     "type": "effect_type",
     "id": "poison_ward",
-    "name": [ "Ward Against Poison" ],
+    "name": [ "Mantle of Poison" ],
     "desc": [ "Protection against toxic gas and venom, steadily reduces accumulated radiation." ],
     "remove_message": "You feel a momentary weakness as the protective magic fades.",
     "removes_effects": [
@@ -596,7 +596,7 @@
   {
     "type": "effect_type",
     "id": "spell_might",
-    "name": [ "Might" ],
+    "name": [ "Otherworldly Potence" ],
     "desc": [ "The fabric of The Veil is woven into your frame.  Your strength is augmented by magic." ],
     "remove_message": "You feel weakened as your magically-induced strength leaves you.",
     "decay_messages": [ [ "Your spell of might is waning.", "bad" ] ],
@@ -611,7 +611,7 @@
   {
     "type": "effect_type",
     "id": "spell_agility",
-    "name": [ "Agility" ],
+    "name": [ "Zéphuros's Grace" ],
     "desc": [ "The winds of distant realms are at your back.  Your dexterity and speed are augmented by magic." ],
     "remove_message": "You feel sluggish as your magically-induced agility leaves you.",
     "decay_messages": [ [ "Your spell of agility is waning.", "bad" ] ],
@@ -632,7 +632,7 @@
   {
     "type": "effect_type",
     "id": "spell_insight",
-    "name": [ "Insight" ],
+    "name": [ "Opening the Inner Eye" ],
     "desc": [
       "The eyes of The Beyond shall guide you.  Your perception is augmented by magic, and you can see clearly in darkness."
     ],
@@ -644,7 +644,7 @@
     "int_dur_factor": "1 m",
     "base_mods": { "per_mod": [ 1 ] },
     "scaling_mods": { "per_mod": [ 0.0825 ] },
-    "flags": [ "NIGHT_VISION" ]
+    "enchantments": [ { "values": [ { "value": "NIGHT_VIS", "add": { "math": "6 + (u_spell_level('arcana_magic_insight') / 2)" } } ] } ]
   },
   {
     "type": "effect_type",
@@ -684,6 +684,66 @@
       "sleepiness_min": [ 1 ],
       "sleepiness_tick": [ 300 ]
     }
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_lesser_clairvoyance",
+    "name": [ "Sight Beyond Sight" ],
+    "desc": [ "You are surrounded by an ivory halo, allowing you to see without eyes." ],
+    "remove_message": "Your inner eye finally closes.",
+    "decay_messages": [ [ "Your inner eye is beginning to close.", "bad" ] ],
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "enchantments": [ { "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER" ] } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_serpentine_shield",
+    "name": [ "Obsidian Mantle of Shadows" ],
+    "desc": [ "You are surrounded by roiling shadows that lash out at your enemies." ],
+    "remove_message": "The roiling shadows around you vanish.",
+    "decay_messages": [ [ "The roiling shadows around you are dissipating.", "bad" ] ],
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "enchantments": [
+      {
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_shadowy_shield",
+            "message": "Wisps of shadow lash out at %2$s",
+            "npc_message": "Wisps of shadow jump from %1$s to %2$s."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_temporal_aura",
+    "name": [ "The Otherworldly Guise" ],
+    "desc": [
+      "You are hidden from the sight of the Beyond and other creatures from Outside, but are more visible to mundane creatures."
+    ],
+    "remove_message": "Your otherworldly guise drops.",
+    "decay_messages": [ [ "Your otherworldly guise is beginning to fade.", "bad" ] ],
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "enchantments": [ { "mutations": [ "ARCANA_TRANSCENDANT_AURA" ] } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_blessing_drain_life",
+    "name": [ "Enervation" ],
+    "desc": [ "You melee attacks drain the very life from your targets." ],
+    "remove_message": "Your enervating aura has faded.",
+    "decay_messages": [ [ "The enervation around your attacks is fading away.", "bad" ] ],
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "enchantments": [ { "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ]
   },
   {
     "type": "effect_type",
@@ -838,6 +898,12 @@
     "id": "arcana_halo_phase_shield",
     "name": [ "sunstone halo" ],
     "desc": [ "A strange radiance permeating your body, repelling nearby attackers away from you." ],
+    "remove_message": "The radiance around you finally dies.",
+    "decay_messages": [ [ "The radiance surrounding you is beginning to dim.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
     "enchantments": [
       {
         "hit_me_effect": [
@@ -962,7 +1028,7 @@
   {
     "type": "effect_type",
     "id": "lightning_ward",
-    "name": [ "Lightning Ward" ],
+    "name": [ "The Eye of the Storm" ],
     "desc": [ "Complete immunity to lightning, reduced speed." ],
     "remove_message": "You feel an electric tingle as your protective magic fades.",
     "removes_effects": [ "zapped" ],
@@ -977,11 +1043,11 @@
   {
     "type": "effect_type",
     "id": "lightning_ward_true",
-    "name": [ "Greater Lightning Ward" ],
+    "name": [ "Mantle of Thunderheads" ],
     "desc": [ "Complete immunity to lightning." ],
     "remove_message": "You feel an electric tingle as your protective magic fades.",
     "removes_effects": [ "zapped" ],
-    "decay_messages": [ [ "The greater ward against lightning is waning.", "bad" ] ],
+    "decay_messages": [ [ "The mantle against lightning is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,

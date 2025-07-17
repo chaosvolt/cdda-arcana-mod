@@ -430,7 +430,7 @@
         "condition": "ALWAYS",
         "values": [
           { "value": "ATTACK_SPEED", "multiply": -0.2 },
-          { "value": "BONUS_DODGE", "add": 3},
+          { "value": "BONUS_DODGE", "add": 3 },
           { "value": "MENDING_MODIFIER", "multiply": 2499 }
         ]
       }

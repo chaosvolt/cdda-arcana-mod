@@ -24,18 +24,6 @@
     "extend": { "flags": [ "NO_TAKEOFF" ] }
   },
   {
-    "id": "halo_clairvoyance",
-    "copy-from": "spell_base",
-    "type": "ITEM",
-    "subtypes": [ "ARMOR", "ARTIFACT" ],
-    "name": { "str": "ivory halo" },
-    "description": "A strange radiance permeating your body, granting you sight beyond sight.",
-    "color": "magenta",
-    "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER" ] } ],
-    "max_worn": 1,
-    "extend": { "flags": [ "NO_TAKEOFF" ] }
-  },
-  {
     "id": "halo_phase_shield",
     "copy-from": "spell_base",
     "type": "ITEM",
