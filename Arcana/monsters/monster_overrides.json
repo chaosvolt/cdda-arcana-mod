@@ -648,7 +648,7 @@
     "//": "Formerly a vanilla monster that never actually spawned anywhere, they got the axe instead of ever actually getting a place to spawn in.",
     "type": "MONSTER",
     "name": { "str": "flesh angel" },
-    "description": "A tall and slender man lacking skin and any normalcy of countenance.  Wings of muscle curl forth from its back and a third eye dominates the forehead.",
+    "description": "A tall and slender humanoid lacking skin and any normalcy of countenance.  Wings of muscle curl forth from its back and a third eye dominates the forehead.",
     "default_faction": "cult",
     "bodytype": "angel",
     "species": [ "ZOMBIE" ],
