@@ -1,5 +1,14 @@
 [
   {
+    "id": "arcana_blood_magic",
+    "type": "magic_type",
+    "energy_source": "HP",
+    "cannot_cast_flags": [ "NO_ARCANA_MAGIC", "NO_SPELLCASTING" ],
+    "failure_cost_percent": 1,
+    "cannot_cast_message": "You cannot use your blood magic now!",
+    "failure_chance_formula_id": "arcana_blood_magic_failure_chance"
+  },
+  {
     "id": "arcana_mark_destructive_absorption",
     "type": "SPELL",
     "name": { "str": "Mark: Destructive Absorption" },
@@ -34,7 +43,9 @@
     "field_id": "fd_fatigue",
     "field_chance": 100,
     "min_field_intensity": 1,
-    "max_field_intensity": 1
+    "max_field_intensity": 1,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_displacing_slash",
@@ -72,7 +83,9 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.2,
-    "field_intensity_variance": 0.5
+    "field_intensity_variance": 0.5,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_drain_life",
@@ -100,7 +113,9 @@
     "energy_increment": -2.8,
     "min_duration": 216000,
     "max_duration": 540000,
-    "duration_increment": 64800
+    "duration_increment": 64800,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_elemental_sign",
@@ -131,7 +146,9 @@
     "energy_increment": -2.4,
     "min_duration": 30000,
     "max_duration": 150000,
-    "duration_increment": 24000
+    "duration_increment": 24000,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_infernal_flame",
@@ -177,7 +194,9 @@
     "min_field_intensity": 1,
     "max_field_intensity": 3,
     "field_intensity_increment": 0.4,
-    "field_intensity_variance": 0.5
+    "field_intensity_variance": 0.5,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_malevolent_gaze",
@@ -208,7 +227,9 @@
     "energy_source": "HP",
     "base_energy_cost": 24,
     "final_energy_cost": 12,
-    "energy_increment": -2.4
+    "energy_increment": -2.4,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_might",
@@ -236,7 +257,9 @@
     "energy_increment": -2.4,
     "min_duration": 60000,
     "max_duration": 150000,
-    "duration_increment": 18000
+    "duration_increment": 18000,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_revenant_blood",
@@ -262,7 +285,9 @@
     "energy_increment": -2,
     "min_duration": 48000,
     "max_duration": 120000,
-    "duration_increment": 14400
+    "duration_increment": 14400,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_summon_dark_wyrm",
@@ -293,7 +318,9 @@
     "energy_increment": -2.4,
     "min_duration": 600000,
     "max_duration": 1500000,
-    "duration_increment": 180000
+    "duration_increment": 180000,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_summon_fiend",
@@ -324,7 +351,9 @@
     "energy_increment": -2,
     "min_duration": 480000,
     "max_duration": 1200000,
-    "duration_increment": 144000
+    "duration_increment": 144000,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_summon_jabberwock",
@@ -355,7 +384,9 @@
     "energy_increment": -2.8,
     "min_duration": 720000,
     "max_duration": 1800000,
-    "duration_increment": 216000
+    "duration_increment": 216000,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_mark_surge_adrenaline",
@@ -381,6 +412,8 @@
     "min_duration": 36000,
     "max_duration": 180000,
     "duration_increment": 28800,
-    "energy_source": "HP"
+    "energy_source": "HP",
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   }
 ]

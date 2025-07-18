@@ -2,7 +2,7 @@
   {
     "type": "overlay_order",
     "overlay_ordering": [
-      { "id": [ "ARCANA_SCALYWINGS", "ARCANA_DRAGONWINGS" ], "order": 500 },
+      { "id": [ "ARCANA_SCALYWINGS", "ARCANA_DRAGONWINGS", "ARCANA_DRAGONWINGS_FLIGHT" ], "order": 500 },
       { "id": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ], "order": 1500 },
       { "id": [ "ARCANA_PLATES" ], "order": 2000 },
       { "id": [ "ARCANA_DRAGONCLAWS" ], "order": 3000 },

@@ -10,5 +10,11 @@
     "type": "jmath_function",
     "num_args": 0,
     "return": "clamp( (u_pain('type': 'perceived') / 200 + ( ( u_spell_difficulty(_spell_id) / 60 ) - ( u_spell_level(_spell_id) / 50 ) ) - ( u_skill('magic') / 20 ) - (u_effect_intensity('effect_arcana_wielding_veilblade') > -1 ? -1 : 0 ) ), 0, 1)"
+  },
+  {
+    "id": "arcana_blood_magic_failure_chance",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
   }
 ]

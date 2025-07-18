@@ -1,0 +1,28 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_PATTERN_SORCERY_GRANT_BONUSES",
+    "recurrence": [ "10 m", "10 m" ],
+    "condition": {
+      "and": [
+        { "not": { "u_has_trait": "PATTERN_SORCERY" } },
+        { "math": [ "u_spell_count('school': 'PATTERN_SORCERY')", ">=", "1" ] }
+      ]
+    },
+    "deactivate_condition": { "u_has_trait": "PATTERN_SORCERY" },
+    "effect": [ { "u_add_trait": "PATTERN_SORCERY" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_ARCANA_BLOOD_MAGIC_GRANT_BONUSES",
+    "recurrence": [ "10 m", "10 m" ],
+    "condition": {
+      "and": [
+        { "not": { "u_has_trait": "ARCANA_BLOOD_MAGIC" } },
+        { "math": [ "u_spell_count('school': 'ARCANA_BLOOD_MAGIC')", ">=", "1" ] }
+      ]
+    },
+    "deactivate_condition": { "u_has_trait": "ARCANA_BLOOD_MAGIC" },
+    "effect": [ { "u_add_trait": "ARCANA_BLOOD_MAGIC" } ]
+  }
+]

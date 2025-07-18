@@ -3,15 +3,16 @@
     "type": "effect_on_condition",
     "id": "EOC_ARCANA_WEARINESS_ADD_WEARINESS_COST",
     "eoc_type": "EVENT",
-    "//": "All magic costs weariness.  Arcana Blessings cost less.",
+    "//": "All magic costs weariness.  Arcane Blessings cost less, and blood magic costs even less.",
     "required_event": "spellcasting_finish",
     "condition": {
       "and": [
-        { "u_has_any_trait": [ "VEIL_PARAGON_SORCERY", "PATTERN_SORCERY" ] },
+        { "u_has_any_trait": [ "VEIL_PARAGON_SORCERY", "PATTERN_SORCERY", "ARCANA_BLOOD_MAGIC" ] },
         {
           "or": [
             { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
-            { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] }
+            { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
+            { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] }
           ]
         }
       ]
@@ -23,7 +24,13 @@
           "math": [ "u_spell_weariness_cost", "=", "(15 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
         },
         "else": {
-          "math": [ "u_spell_weariness_cost", "=", "(12 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+          "if": { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
+          "then": {
+            "math": [ "u_spell_weariness_cost", "=", "(12 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+          },
+          "else": {
+            "math": [ "u_spell_weariness_cost", "=", "(9 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+          }
         }
       },
       {

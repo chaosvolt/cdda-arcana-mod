@@ -441,7 +441,8 @@
     "allow_soft_gear": true,
     "allowed_items": [ "BELTED" ],
     "active": true,
-    "cost": 5,
+    "activated_is_setup": true,
+    "cost": 3,
     "time": 1,
     "mana": true,
     "enchantments": [

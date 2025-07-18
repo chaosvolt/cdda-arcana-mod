@@ -26,5 +26,13 @@
     "points": 0,
     "description": "He From Beyond the Veil has given you his blessings, allowing you to wield unfathomable powers.",
     "flags": [ "ATTUNEMENT" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_BLOOD_MAGIC",
+    "name": { "str": "Blood Magic" },
+    "points": 0,
+    "description": "You have learned of the power inherent in blood and can draw it out to wield magic.",
+    "flags": [ "ATTUNEMENT" ]
   }
 ]
