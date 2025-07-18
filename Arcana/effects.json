@@ -52,14 +52,14 @@
     "type": "effect_type",
     "id": "magic_sign_exertion",
     "name": [ "Magic Sign Exertion" ],
-    "desc": [ "Overuse of Magic Signs increases fatigue gain." ],
+    "desc": [ "Use of pattern sorcery increases sleepiness gain." ],
     "apply_message": "You feel a slight sense of exertion from casting the spell.",
     "remove_message": "The exertion of spellcasting fades from your mind.",
     "rating": "bad",
     "max_duration": "200 m",
     "max_intensity": 200,
     "int_dur_factor": "1 m",
-    "base_mods": { "sleepiness_min": [ 1 ], "sleepiness_tick": [ 25 ] }
+    "base_mods": { "sleepiness_min": [ 1 ], "sleepiness_tick": [ 25 ], "sleepiness_chance": [ 5 ] }
   },
   {
     "type": "effect_type",

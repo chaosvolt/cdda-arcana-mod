@@ -72,5 +72,30 @@
       { "u_add_effect": "effect_no_arcana_casting", "duration": 0 },
       { "u_message": "You are much too weary to cast anything!", "type": "bad" }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_PATTERN_SORCERY_SLEEPINESS_COST",
+    "eoc_type": "EVENT",
+    "required_event": "spellcasting_finish",
+    "condition": {
+      "and": [
+        { "u_has_any_trait": [ "PATTERN_SORCERY" ] },
+        { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
+        { "math": [ "_success != false" ] }
+      ]
+    },
+    "effect": [
+      { "math": [ "_level = clamp( (u_spell_level(_spell) ), 0, 10)" ] },
+      { "u_message": "Spell level is <context_val:level>.", "type": "debug" },
+      { "math": [ "_calc_difficulty = ( _difficulty / 10)" ] },
+      { "u_message": "Spell Difficulty divided by 10 is <context_val:calc_difficulty>.", "type": "debug" },
+      { "math": [ "_reducer = ( ( (50 * _calc_difficulty) + 50 ) / 20)" ] },
+      { "u_message": "Reducer value is <context_val:reducer>.", "type": "debug" },
+      {
+        "u_add_effect": "magic_sign_exertion",
+        "duration": { "math": [ "(50 + (50 * _calc_difficulty) ) - (_reducer * _level)" ] }
+      }
+    ]
   }
 ]
