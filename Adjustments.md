@@ -7,3 +7,4 @@
 - Similarly, chance for spells to fail when used.  This is primarily based on Difficulty vs spell level and on perceived pain, modified by your Arcana skill.  Arcane Blessings are harder to use than Magic Signs (unless you're wielding the Veilblade, in which case Arcane Blessings always succeed)
 - Reduced drop rates for magic books. Ferals generally don't have them now, you'll have to search more esoteric places
 - New locations making use of weights and nests--rare variants of existing places might have housed an occultist or researcher into the Beyond. Peer into those nooks and crannies!
+- Summoned centipedes are (mostly) gone. Now you can summon a "crawling thing", which is tough and good at grappling but is not good at scything though entire hordes of zombies by themselves.

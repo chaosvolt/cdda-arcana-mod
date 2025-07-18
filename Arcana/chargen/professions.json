@@ -218,7 +218,7 @@
       "male": [ "boxer_briefs", "pants" ],
       "female": [ "bra", "panties", "skirt" ]
     },
-    "traits": [ "PROF_SANGUINE" ],
+    "traits": [ "PROF_SANGUINE", "ARCANA_BLOOD_MAGIC" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -377,7 +377,15 @@
       "male": [ "boxer_shorts", "dress_shirt", "pants" ],
       "female": [ "bra", "panties", "dress" ]
     },
-    "traits": [ "PROF_SANGUINE", "ARCANA_SCALYPATCHES", "ARCANA_SCALYWINGS", "ARCANA_SCALYTAIL", "ARCANA_DRAGONCLAWS", "ARCANA_INNERHEAT" ],
+    "traits": [
+      "PROF_SANGUINE",
+      "ARCANA_BLOOD_MAGIC",
+      "ARCANA_SCALYPATCHES",
+      "ARCANA_SCALYWINGS",
+      "ARCANA_SCALYTAIL",
+      "ARCANA_DRAGONCLAWS",
+      "ARCANA_INNERHEAT"
+    ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
