@@ -13,5 +13,15 @@
     "id": "arcana_willowbark_weave",
     "type": "json_flag",
     "info": "This gear has been altered by druidic magic, reducing its <good>encumbrance</good>."
+  },
+  {
+    "id": "NO_ARCANA_MAGIC",
+    "type": "json_flag",
+    "info": "Prevents you from using any Arcana magic."
+  },
+  {
+    "id": "NO_ARCANA_BLOOD_MAGIC",
+    "type": "json_flag",
+    "info": "Prevents you from using any blood magic."
   }
 ]

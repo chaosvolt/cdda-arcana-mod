@@ -3,7 +3,7 @@
     "id": "arcana_blood_magic",
     "type": "magic_type",
     "energy_source": "HP",
-    "cannot_cast_flags": [ "NO_ARCANA_MAGIC", "NO_SPELLCASTING" ],
+    "cannot_cast_flags": [ "NO_ARCANA_MAGIC", "NO_ARCANA_BLOOD_MAGIC", "NO_SPELLCASTING" ],
     "failure_cost_percent": 1,
     "cannot_cast_message": "You cannot use your blood magic now!",
     "failure_chance_formula_id": "arcana_blood_magic_failure_chance"
