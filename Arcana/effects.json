@@ -334,7 +334,15 @@
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,
-    "int_dur_factor": "1 m"
+    "int_dur_factor": "1 m",
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          { "value": "CLIMATE_CONTROL_HEAT", "add": { "math": [ "15 + clamp( (u_effect_intensity('cold_ward') / 2), 0, 50)" ] } }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_type",
@@ -406,7 +414,15 @@
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,
-    "int_dur_factor": "1 m"
+    "int_dur_factor": "1 m",
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "values": [
+          { "value": "CLIMATE_CONTROL_CHILL", "add": { "math": [ "15 + clamp( (u_effect_intensity('heat_ward') / 2), 0, 50)" ] } }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_type",
@@ -491,7 +507,13 @@
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,
-    "int_dur_factor": "1 m"
+    "int_dur_factor": "1 m",
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "incoming_damage_mod": [ { "type": "acid", "multiply": { "math": [ "-0.15 + clamp( (u_effect_intensity('acid_ward') / -180), -0.5, 0 )" ] } } ]
+      }
+    ]
   },
   {
     "type": "effect_type",
@@ -555,7 +577,7 @@
   {
     "type": "effect_type",
     "id": "cleric_warding",
-    "name": [ "Ward Against Evil" ],
+    "name": [ "Abjuration of the Darkness" ],
     "desc": [ "Protects against various anomalous effects." ],
     "remove_message": "The magical protection fades.",
     "removes_effects": [ "darkness", "rat", "evil", "arcana_evil_mimic", "attention", "teleglow", "amigara", "taint", "tindrift" ],
@@ -569,7 +591,7 @@
     "type": "effect_type",
     "id": "cleric_warding_true",
     "name": [ "Holy Ward" ],
-    "desc": [ "Immunity to blade and bullet, protection from anomalous effects and cold-type damage." ],
+    "desc": [ "Resistance to blade and bullet, protection from anomalous effects and cold-type damage." ],
     "remove_message": "The magical protection enveloping your body flickers and fades.",
     "removes_effects": [
       "darkness",
@@ -590,8 +612,29 @@
     "max_duration": "120 m",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
-    "//": "Replace with resistances when implemented, physical immunities are way more OP than elemental immunities.",
-    "flags": [ "CUT_IMMUNE", "STAB_IMMUNE", "BULLET_IMMUNE", "COLD_IMMUNE" ]
+    "enchantments": [
+      {
+        "condition": "ALWAYS",
+        "incoming_damage_mod": [
+          {
+            "type": "cold",
+            "multiply": { "math": [ "-0.15 + clamp( (u_effect_intensity('cleric_warding_true') / -180), -0.5, 0 )" ] }
+          },
+          {
+            "type": "stab",
+            "multiply": { "math": [ "-0.15 + clamp( (u_effect_intensity('cleric_warding_true') / -180), -0.5, 0 )" ] }
+          },
+          {
+            "type": "cut",
+            "multiply": { "math": [ "-0.15 + clamp( (u_effect_intensity('cleric_warding_true') / -180), -0.5, 0 )" ] }
+          },
+          {
+            "type": "bullet",
+            "multiply": { "math": [ "-0.15 + clamp( (u_effect_intensity('cleric_warding_true') / -180), -0.5, 0 )" ] }
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_type",
