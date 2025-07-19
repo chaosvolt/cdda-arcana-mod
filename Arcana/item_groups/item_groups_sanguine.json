@@ -42,11 +42,40 @@
     "id": "sanguine_cult_spells",
     "type": "item_group",
     "items": [
-      [ "scroll_spell_confusion", 1 ],
-      [ "scroll_spell_agile", 1 ],
-      [ "scroll_spell_elecresist", 1 ],
-      [ "scroll_spell_clarity", 1 ],
-      [ "scroll_spell_acidspray", 1 ]
+      {
+        "distribution": [
+          { "item": "blood_magic_spell_scroll_arcana_mark_surge_adrenaline", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_revenant_blood", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_elemental_sign", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_might", "prob": 1 }
+        ],
+        "prob": 50
+      },
+      {
+        "distribution": [
+          { "item": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_drain_energy", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_summon_fiend", "prob": 1 }
+        ],
+        "prob": 30
+      },
+      {
+        "distribution": [
+          { "item": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_drain_energy", "prob": 1 }
+        ],
+        "prob": 10
+      },
+      {
+        "distribution": [
+          { "item": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_drain_energy", "prob": 1 }
+        ],
+        "prob": 3
+      }
     ]
   },
   {
@@ -57,6 +86,7 @@
       [ "khopesh", 10 ],
       [ "q_staff", 5 ],
       { "collection": [ { "group": "ammo_common_boxed" } ], "prob": 10 },
+      { "group": "sanguine_cult_spells", "prob": 5 },
       [ "pistol_flintlock", 5 ],
       [ "flintlock_ammo", 10 ],
       [ "robe", 10 ],
@@ -137,6 +167,7 @@
       { "group": "sanguine_cult_gear_magic", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "sanguine_cult_consumables", "prob": 25 },
       { "group": "sanguine_cult_crafting", "prob": 25 },
+      { "group": "sanguine_cult_spells", "prob": 3 },
       { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
   },
@@ -150,6 +181,7 @@
       { "group": "sanguine_cult_gear_magic", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "sanguine_cult_consumables", "prob": 25 },
       { "group": "sanguine_cult_crafting", "prob": 25 },
+      { "group": "sanguine_cult_spells", "prob": 3 },
       { "group": "arcanist_corpses_adult_random", "damage": 4 }
     ]
   },

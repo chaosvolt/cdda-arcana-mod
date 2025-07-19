@@ -2,7 +2,7 @@
   {
     "type": "mutation",
     "id": "PATTERN_SORCERY",
-    "name": { "str": "Pattern Sorcerer" },
+    "name": { "str": "Pattern Sorcery" },
     "points": 0,
     "description": "Through long struggle you have mastered the art of sorcery.",
     "valid": false,
@@ -34,5 +34,14 @@
     "points": 0,
     "description": "You have learned of the power inherent in blood and can draw it out to wield magic.",
     "flags": [ "ATTUNEMENT" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_NO_BLOOD_MAGIC",
+    "name": { "str": "No Blood Magic" },
+    "points": 0,
+    "description": "You have DEFINITELY NOT learned of the power inherent in blood and CANNOT draw it out to wield magic. Should not be visible.",
+    "player_display": false,
+    "cancels": [ "ARCANA_BLOOD_MAGIC" ]
   }
 ]

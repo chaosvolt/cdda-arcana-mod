@@ -16,6 +16,20 @@
   },
   {
     "type": "effect_type",
+    "id": "effect_arcana_blood_magic_killed_human",
+    "//": "Hidden effect, lets you cast blood magic with huge benefits",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_blood_magic_killed",
+    "//": "Hidden effect, lets you cast blood magic with benefits",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
     "id": "arcana_dragonblood_blood_effigy_effect",
     "max_duration": "10 s",
     "name": [ "Blood Effigy" ],
@@ -440,6 +454,20 @@
   },
   {
     "type": "effect_type",
+    "id": "heat_ward_true_blood_magic",
+    "name": [ "Sign of the Inferno" ],
+    "desc": [ "Complete immunity to fire, and to related side effects." ],
+    "remove_message": "You feel a strange tingling sensation, as the ward against flame fades.",
+    "removes_effects": [ "onfire", "smoke", "hot", "blisters", "hot_speed" ],
+    "decay_messages": [ [ "The ward against flame is waning.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "1200 m",
+    "max_intensity": 1200,
+    "int_dur_factor": "1 m",
+    "flags": [ "HEAT_IMMUNE", "HEATPROOF" ]
+  },
+  {
+    "type": "effect_type",
     "id": "heat_ward_hidden",
     "removes_effects": [ "onfire", "smoke", "hot", "blisters", "hot_speed" ],
     "max_duration": "5 s",
@@ -465,6 +493,42 @@
     "name": [ "Draconic Wings" ],
     "desc": [ "Immunity to fall damage." ],
     "flags": [ "FEATHER_FALL" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_manifestation_of_strength",
+    "name": [ "Manifestation of Strength" ],
+    "desc": [ "The strength and resilience of the legendary dragon." ],
+    "remove_message": "Your dragonic strength finally leaves you.",
+    "decay_messages": [ [ "The strength of the dragon is fading.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "1200 m",
+    "max_intensity": 1200,
+    "int_dur_factor": "1 m",
+    "enchantments": [
+      {
+        "incoming_damage_mod": [
+          { "type": "bash", "add": -10 },
+          { "type": "cut", "add": -20 },
+          { "type": "stab", "add": -15 },
+          { "type": "bullet", "add": -15 }
+        ],
+        "values": [ { "value": "STRENGTH", "add": 5 } ]
+      },
+      {
+        "condition": { "math": [ "u_sum_traits_of_category_char_has('DRAGONBLOOD') <= 0" ] },
+        "values": [ { "value": "HUNGER", "multiply": 0.5 } ]
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_malevolent_gaze",
+    "name": [ "Malevolent Gaze" ],
+    "desc": [ "You are frozen in fear." ],
+    "rating": "bad",
+    "show_in_info": true,
+    "flags": [ "CANNOT_MOVE", "CANNOT_ATTACK" ]
   },
   {
     "type": "effect_type",
@@ -779,14 +843,37 @@
   {
     "type": "effect_type",
     "id": "effect_arcana_blessing_drain_life",
-    "name": [ "Enervation" ],
+    "name": [ "Aura of Stolen Vitality" ],
     "desc": [ "You melee attacks drain the very life from your targets." ],
     "remove_message": "Your enervating aura has faded.",
-    "decay_messages": [ [ "The enervation around your attacks is fading away.", "bad" ] ],
+    "decay_messages": [ [ "The aura around your attacks is fading away.", "bad" ] ],
     "max_duration": "120 m",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "enchantments": [ { "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_blessing_drain_life_blood_magic",
+    "//": "Needs a higher max duration",
+    "name": [ "Aura of Stolen Vitality" ],
+    "desc": [ "You melee attacks drain the very life from your targets." ],
+    "remove_message": "Your enervating aura has faded.",
+    "decay_messages": [ [ "The aura around your attacks is fading away.", "bad" ] ],
+    "max_duration": "1200 m",
+    "max_intensity": 1200,
+    "int_dur_factor": "1 m",
+    "enchantments": [ { "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_mark_drain_energy",
+    "name": [ "Enervated" ],
+    "desc": [ "Your energy was drained by blood magic." ],
+    "rating": "bad",
+    "show_in_info": true,
+    "base_mods": { "hit_mod": [ -1 ], "dodge_mod": [ -1 ] },
+    "enchantments": [ { "values": [ { "value": "SPEED", "multiply": -0.15 } ] } ]
   },
   {
     "type": "effect_type",
@@ -874,8 +961,8 @@
     ],
     "decay_messages": [ [ "The protective magic flowing through your blood is starting to wane.", "bad" ] ],
     "rating": "good",
-    "max_duration": "120 m",
-    "max_intensity": 120,
+    "max_duration": "1200 m",
+    "max_intensity": 1200,
     "int_dur_factor": "1 m",
     "base_mods": { "rad_min": [ -1 ] }
   },
@@ -1392,6 +1479,22 @@
     "int_dur_factor": "1 m",
     "removes_effects": [ "winded" ],
     "base_mods": { "speed_mod": [ 25 ], "str_mod": [ 2 ], "dex_mod": [ 2 ], "per_mod": [ 1 ], "stamina_min": [ 5 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "adrenaline_arcana_blood_magic",
+    "name": [ "Killing Surge" ],
+    "desc": [ "You feel a rush of otherworldly adrenaline and a killing lust in your heart." ],
+    "remove_message": "The otherworldly adrenaline running through you fades.",
+    "decay_messages": [ [ "You can feel the unnatural surge of adrenaline waning.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "1200 m",
+    "max_intensity": 1200,
+    "int_dur_factor": "1 m",
+    "removes_effects": [ "winded" ],
+    "base_mods": { "speed_mod": [ 25 ], "str_mod": [ 2 ], "dex_mod": [ 2 ], "per_mod": [ 1 ], "stamina_min": [ 5 ] },
+    "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "add": -20 } ] } ],
+    "flags": [ "PSYCHOPATH", "PRED3" ]
   },
   {
     "type": "effect_type",

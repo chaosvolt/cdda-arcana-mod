@@ -323,7 +323,7 @@
     "id": "mon_zombie_fiend_summoned",
     "copy-from": "mon_zombie_fiend",
     "type": "MONSTER",
-    "name": { "str": "summoned fiend" },
+    "name": { "str": "summoned ashen revenant" },
     "categories": [ "CLASSIC" ],
     "species": [ "ARCANA_SUMMONED" ],
     "mountable_weight_ratio": 0.9,

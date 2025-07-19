@@ -1,0 +1,123 @@
+[
+  {
+    "type": "recipe",
+    "result": "item_blood_magic_research_animal_blood",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_RESEARCH",
+    "skill_used": "magic",
+    "skills_required": [ [ "firstaid", 3 ] ],
+    "difficulty": 2,
+    "time": "8 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 2 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 2 } ],
+    "components": [ [ [ "animal_blood", 25 ], [ "mutant_blood", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "item_blood_magic_research_human_blood",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_RESEARCH",
+    "skill_used": "magic",
+    "skills_required": [ [ "firstaid", 3 ] ],
+    "difficulty": 2,
+    "time": "8 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 2 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 2 } ],
+    "components": [ [ [ "blood", 25 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "item_blood_magic_research_meat",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_RESEARCH",
+    "skill_used": "magic",
+    "skills_required": [ [ "firstaid", 3 ] ],
+    "difficulty": 2,
+    "time": "8 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 2 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ], [ "arcana_flesh_standard", 25 ] ],
+    "qualities": [ { "id": "CUT", "level": 2 } ]
+  },
+  {
+    "type": "recipe",
+    "result": "item_blood_magic_research_materials",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_RESEARCH",
+    "skill_used": "magic",
+    "skills_required": [ [ "firstaid", 3 ] ],
+    "difficulty": 2,
+    "time": "8 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 2 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 2 } ],
+    "components": [
+      [
+        [ "blob_gem", 1 ],
+        [ "vortex_shard", 1 ],
+        [ "graboid_fang", 1 ],
+        [ "monster_tear", 1 ],
+        [ "shadow_gem", 1 ],
+        [ "bone_twisted", 1 ],
+        [ "gracken_knuckles", 1 ],
+        [ "monster_fang", 1 ],
+        [ "wyrmskin_piece", 1 ],
+        [ "iridescent_plate", 1 ],
+        [ "engraved_stone", 1 ]
+      ],
+      [
+        [ "blob_gem", 1 ],
+        [ "vortex_shard", 1 ],
+        [ "graboid_fang", 1 ],
+        [ "monster_tear", 1 ],
+        [ "shadow_gem", 1 ],
+        [ "bone_twisted", 1 ],
+        [ "gracken_knuckles", 1 ],
+        [ "monster_fang", 1 ],
+        [ "wyrmskin_piece", 1 ],
+        [ "iridescent_plate", 1 ],
+        [ "engraved_stone", 1 ]
+      ]
+    ]
+  },
+  {
+    "id": "arcana_learn_blood_magic_recipe",
+    "name": "collate blood magic research",
+    "description": "Combine various different elements of blood magic research and unlock the secret of blood magic.",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_RESEARCH",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": "48 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 3 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "components": [
+      [ [ "item_blood_magic_research_animal_blood", 2 ] ],
+      [ [ "item_blood_magic_research_human_blood", 1 ] ],
+      [ [ "item_blood_magic_research_meat", 1 ] ],
+      [ [ "item_blood_magic_research_materials", 6 ] ]
+    ],
+    "flags": [ "SECRET", "NO_BENCH", "NO_ENCHANTMENT" ],
+    "result_eocs": [
+      {
+        "id": "EOC_ARCANA_LEARN_BLOOD_MAGIC_FINALIZATION",
+        "effect": [
+          { "u_lose_trait": "ARCANA_NO_BLOOD_MAGIC" },
+          { "u_add_trait": "ARCANA_BLOOD_MAGIC" },
+          {
+            "u_message": "You've done it.  In the diagrams and the patterns you've drawn, in the research you've conducted, you see the truth.  There is no inborn gift necessary, no quirk of genetics, no lofty heritage.  Just power and those willing to reach out and take it.  The power of blood.",
+            "type": "good"
+          }
+        ]
+      }
+    ]
+  }
+]

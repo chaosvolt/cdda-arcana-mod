@@ -4,7 +4,9 @@
 - Rebalancing of some effects (mostly to make them weaker)
 - Added magic_type and class traits for Arcane Blessings and Magic Signs, so they'll be categorized properly in the powers menu.
 - Learning sorcery is hard! Using a pattern scroll has a chance to fail, affected by your Arcana skill, so the choice is to keep the Magic Seals (which always work) or process them into a Pattern Scroll, which might teach you the magic but you could fail to learn it.
-- Similarly, chance for spells to fail when used.  This is primarily based on Difficulty vs spell level and on perceived pain, modified by your Arcana skill.  Arcane Blessings are harder to use than Magic Signs (unless you're wielding the Veilblade, in which case Arcane Blessings always succeed)
+- Blood magic is now learnable by anyone! If you complete the recipes and unlock understanding of blood magic, then you can learn the spells from spellbooks. This has no chance to fail. 
+- You can pay the cost of Blood mage with sacrifice. Kill a chicken or a cow, use the blood to cast your spells without an HP cost. What's more, this makes your spells last even longer. And if you sacrifice a human...well, well, well...
+- Similarly, chance for spells to fail when used.  This is primarily based on Difficulty vs spell level and on perceived pain, modified by your Arcana skill.  Arcane Blessings are harder to use than Magic Signs (unless you're wielding the Veilblade, in which case Arcane Blessings always succeed). Blood magic has no chance to fail--the HP cost is enough.
 - Reduced drop rates for magic books. Ferals generally don't have them now, you'll have to search more esoteric places
 - New locations making use of weights and nests--rare variants of existing places might have housed an occultist or researcher into the Beyond. Peer into those nooks and crannies!
 - Summoned centipedes are (mostly) gone. Now you can summon a "crawling thing", which is tough and good at grappling but is not good at scything though entire hordes of zombies by themselves.

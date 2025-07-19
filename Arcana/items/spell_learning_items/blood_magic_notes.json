@@ -1,0 +1,94 @@
+[
+  {
+    "abstract": "blood_magic_spell_scroll",
+    "looks_like": "spell_scroll",
+    "name": { "str": "Blood Magic Spell Scroll" },
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "weight": "1500 g",
+    "volume": "1250 ml",
+    "price": "40 USD",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "white"
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_surge_adrenaline",
+    "name": { "str": "Sanguine Grimoire: Surge of Fury", "str_pl": "Sanguine Grimoires: Surge of Fury" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual causes a surge of bloodlust that enhances your combat prowess but makes it hard to concentrate on anything but violence.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_surge_adrenaline" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_revenant_blood",
+    "name": { "str": "Sanguine Grimoire: Revenant Blood", "str_pl": "Sanguine Grimoires: Revenant Blood" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual infuses your blood with the energies of death, killing off parasites and fungal infection and protecting you against poison.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_revenant_blood" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_elemental_sign",
+    "name": { "str": "Sanguine Grimoire: Sign of the Inferno", "str_pl": "Sanguine Grimoires: Sign of the Inferno" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual provides immunity against heat and flames.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_elemental_sign" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_might",
+    "name": { "str": "Sanguine Grimoire: Manifestation of Strength", "str_pl": "Sanguine Grimoires: Manifestation of Strength" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual provides supernatural strength and resilience akin to that of the legendary dragon, though with a correspondingly increased appetite.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_might" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm",
+    "name": {
+      "str": "Sanguine Grimoire: Calling the Worms of the Earth",
+      "str_pl": "Sanguine Grimoires: Calling the Worms of the Earth"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual summons subterranean wyrms who will answer the call of the blood--though whether as friend or foe, who can say.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_summon_dark_wyrm" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze",
+    "name": { "str": "Sanguine Grimoire: Malevolent Gaze", "str_pl": "Sanguine Grimoires: Malevolent Gaze" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual concentrates all of your hatred and anger into a single searing glare, freezing your target in place as though they were a rabbit and you are a snake..",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_malevolent_gaze" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_drain_energy",
+    "name": { "str": "Sanguine Grimoire: Enervation", "str_pl": "Sanguine Grimoires: Enervation" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual drains your target's life, restoring your own stamina and sleepiness in the process.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_drain_energy" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_summon_fiend",
+    "name": {
+      "str": "Sanguine Grimoire: Calling the Denizens of Below",
+      "str_pl": "Sanguine Grimoires: Calling the Denizens of Below"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual an ashen revenant, a denizen of the Beyond with a hunger for flesh--though whether yours or your enemies', who can say.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_summon_fiend" ] }
+  }
+]
