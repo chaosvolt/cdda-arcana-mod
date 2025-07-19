@@ -662,7 +662,11 @@
         " |||||||||||||||||||||||  |||||||||||||||||||||  |RRRRR..R..+.<<|       ",
         "                                                 ||||||||||||||||       "
       ],
-      "place_nested": [ { "chunks": [ "lab_arcane_4_4_rads" ], "x": 23, "y": 35 }, { "chunks": [ "lab_arcane_4_5_rads" ], "x": 24, "y": 35 } ],
+      "place_nested": [
+        { "chunks": [ "lab_arcane_4_4_rads" ], "x": 23, "y": 35 },
+        { "chunks": [ "lab_arcane_4_5_rads" ], "x": 24, "y": 35 },
+        { "chunks": [ "lab_arcane_4_5_doc" ], "x": 34, "y": 6 }
+      ],
       "terrain": {
         " ": "t_rock",
         "_": "t_floor",
@@ -893,6 +897,21 @@
         { "square": "radiation", "amount": 1000, "x": 2, "y": 0, "x2": 9, "y2": 7 },
         { "square": "radiation", "amount": 500, "x": 2, "y": 8, "x2": 9, "y2": 11 }
       ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "lab_arcane_4_5_doc",
+    "object": {
+      "mapgensize": [ 4, 4 ],
+      "rows": [
+        ",,,,",
+        ",87,",
+        ",,,,",
+        ",,,,"
+      ],
+      "terrain": { ",": "t_strconc_floor", "8": "t_strconc_floor", "7": "t_strconc_floor" },
+      "furniture": { "8": "f_MRI", "7": "f_console_broken_table" }
     }
   }
 ]
