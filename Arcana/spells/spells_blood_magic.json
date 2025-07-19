@@ -327,7 +327,7 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_ARCANA_BLOOD_MAGIC_DRAIN_ENERGY",
+    "id": "EOC_ARCANA_BLOOD_MAGIC_INCREASED_HEALING",
     "effect": [
       { "u_lose_effect": "effect_arcana_blood_magic_increased_healing" },
       {

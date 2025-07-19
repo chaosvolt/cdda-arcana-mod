@@ -82,5 +82,103 @@
         ]
       }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_BLOOD_MAGIC_RECORD_LIMBS_FOR_BLEEDING",
+    "eoc_type": "EVENT",
+    "required_event": "opens_spellbook",
+    "condition": { "u_has_trait": "ARCANA_BLOOD_MAGIC" },
+    "effect": [
+      { "math": [ "u_hp_arm_l_pre_casting = u_hp('arm_l')" ] },
+      { "math": [ "u_hp_arm_r_pre_casting = u_hp('arm_r')" ] },
+      { "math": [ "u_hp_leg_l_pre_casting = u_hp('leg_l')" ] },
+      { "math": [ "u_hp_leg_r_pre_casting = u_hp('leg_r')" ] },
+      { "math": [ "u_hp_torso_pre_casting = u_hp('torso')" ] },
+      { "math": [ "u_hp_head_pre_casting = u_hp('head')" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_BLOOD_MAGIC_APPLY_BLEEDING_ON_SUCCESSFUL_BLOOD_MAGIC",
+    "eoc_type": "EVENT",
+    "//": "The dragonblood mutation healing traits prevent this from occurring",
+    "required_event": "spellcasting_finish",
+    "condition": {
+      "and": [
+        { "u_has_trait": "ARCANA_BLOOD_MAGIC" },
+        {
+          "not": { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
+        },
+        { "not": { "u_has_any_trait": [ "ARCANA_INNERHEAT", "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ] } },
+        {
+          "or": [
+            { "math": [ "u_hp('arm_l') < u_hp_arm_l_pre_casting" ] },
+            { "math": [ "u_hp('arm_r') < u_hp_arm_r_pre_casting" ] },
+            { "math": [ "u_hp('leg_l') < u_hp_leg_l_pre_casting" ] },
+            { "math": [ "u_hp('leg_r') < u_hp_leg_r_pre_casting" ] },
+            { "math": [ "u_hp('torso') < u_hp_torso_pre_casting" ] },
+            { "math": [ "u_hp('head') < u_hp_head_pre_casting" ] }
+          ]
+        }
+      ]
+    },
+    "effect": [
+      { "u_message": "The Bleeding EoC is triggering properly", "type": "debug" },
+      {
+        "if": { "math": [ "u_hp('arm_l') < u_hp_arm_l_pre_casting" ] },
+        "then": {
+          "u_add_effect": "bleed",
+          "target_part": "arm_l",
+          "intensity": { "math": [ "_difficulty / 10" ] },
+          "duration": { "math": [ "(_difficulty / 10) * 120" ] }
+        }
+      },
+      {
+        "if": { "math": [ "u_hp('arm_r') < u_hp_arm_r_pre_casting" ] },
+        "then": {
+          "u_add_effect": "bleed",
+          "target_part": "arm_r",
+          "intensity": { "math": [ "_difficulty / 10" ] },
+          "duration": { "math": [ "(_difficulty / 10) * 120" ] }
+        }
+      },
+      {
+        "if": { "math": [ "u_hp('leg_l') < u_hp_leg_l_pre_casting" ] },
+        "then": {
+          "u_add_effect": "bleed",
+          "target_part": "leg_l",
+          "intensity": { "math": [ "_difficulty / 10" ] },
+          "duration": { "math": [ "(_difficulty / 10) * 120" ] }
+        }
+      },
+      {
+        "if": { "math": [ "u_hp('leg_r') < u_hp_leg_r_pre_casting" ] },
+        "then": {
+          "u_add_effect": "bleed",
+          "target_part": "leg_r",
+          "intensity": { "math": [ "_difficulty / 10" ] },
+          "duration": { "math": [ "(_difficulty / 10) * 120" ] }
+        }
+      },
+      {
+        "if": { "math": [ "u_hp('torso') < u_hp_torso_pre_casting" ] },
+        "then": {
+          "u_add_effect": "bleed",
+          "target_part": "torso",
+          "intensity": { "math": [ "_difficulty / 10" ] },
+          "duration": { "math": [ "(_difficulty / 10) * 120" ] }
+        }
+      },
+      {
+        "if": { "math": [ "u_hp('head') < u_hp_head_pre_casting" ] },
+        "then": {
+          "u_add_effect": "bleed",
+          "target_part": "head",
+          "intensity": { "math": [ "_difficulty / 10" ] },
+          "duration": { "math": [ "(_difficulty / 10) * 120" ] }
+        }
+      }
+    ]
   }
 ]

@@ -11,7 +11,7 @@
     "valid_targets": [ "ally", "hostile" ],
     "flags": [ "SILENT", "SOMATIC", "NO_HANDS" ],
     "extra_effects": [ { "id": "arcana_aftermath_destructive_absorption_side_effects", "hit_self": true, "max_level": 5 } ],
-    "//": "Full damage with no spike effect, for single-target and line spells.",
+    "//2": "Full damage with no spike effect, for single-target and line spells.",
     "min_damage": 200,
     "max_damage": 500,
     "damage_increment": 60,

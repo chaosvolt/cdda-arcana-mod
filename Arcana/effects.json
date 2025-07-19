@@ -867,10 +867,9 @@
   },
   {
     "type": "effect_type",
-    "id": "arcana_blood_magic_increased_healing",
+    "id": "effect_arcana_blood_magic_increased_healing",
     "name": [ "Carmine Vitality" ],
     "desc": [ "You are healing extremely quickly." ],
-    "remove_message": "Your enhanced healing rate fades away.",
     "rating": "good",
     "max_intensity": 5,
     "enchantments": [
@@ -928,10 +927,10 @@
     "enchantments": [
       {
         "condition": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') >= 3" ] },
-        "values": { "value": "DODGE_CHANCE", "add": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') / -3" ] } }
+        "values": [ { "value": "DODGE_CHANCE", "add": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') / -3" ] } } ]
       },
       {
-        "values": { "value": "METABOLISM", "multiply": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') * 0.1" ] } }
+        "values": [ { "value": "METABOLISM", "multiply": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') * 0.1" ] } } ]
       }
     ]
   },
