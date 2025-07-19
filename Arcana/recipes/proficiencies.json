@@ -1,0 +1,55 @@
+[
+  {
+    "type": "proficiency_category",
+    "id": "prof_arcana",
+    "name": "Arcana",
+    "description": "Proficiencies related to the Beyond and the manipulation of its energies."
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_arcana_purification",
+    "name": { "str": "Esoteric Purification" },
+    "category": "prof_arcana",
+    "description": "You have learned the proper ways to purify and prepare materials for use in occult research or ritual.",
+    "can_learn": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 0.25,
+    "time_to_learn": "8 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_arcana_thaumatology",
+    "name": { "str": "Principles of the Occult" },
+    "//": "This is the basic gatway Arcana proficiency--nearly everything at all mystical takes it",
+    "category": "prof_arcana",
+    "description": "You have an understanding of how the hidden forces of the world interact and possible ways to manipulate them yourself.",
+    "can_learn": true,
+    "default_time_multiplier": 2,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "20 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_arcana_alchemy",
+    "name": { "str": "Principles of Alchemy" },
+    "category": "prof_arcana",
+    "description": "You have an understanding of what the Great Work entails and just how difficult it is to achieve.",
+    "can_learn": true,
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.25,
+    "time_to_learn": "16 h",
+    "required_proficiencies": [ "prof_thaumatology" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_arcana_spellwriting",
+    "name": { "str": "Principles of Spellcrafting" },
+    "category": "prof_arcana",
+    "description": "You have learned the necessary ways and methods to write down occult formulae so they can be learned and mastered.",
+    "can_learn": true,
+    "default_time_multiplier": 2,
+    "default_skill_penalty": 0.25,
+    "time_to_learn": "30 h",
+    "required_proficiencies": [ "prof_thaumatology" ]
+  }
+]

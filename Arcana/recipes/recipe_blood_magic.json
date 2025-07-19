@@ -11,6 +11,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 2 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "qualities": [ { "id": "CUT", "level": 2 } ],
     "components": [ [ [ "animal_blood", 25 ], [ "mutant_blood", 25 ] ] ]
   },
@@ -26,6 +27,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 2 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "qualities": [ { "id": "CUT", "level": 2 } ],
     "components": [ [ [ "blood", 25 ] ] ]
   },
@@ -41,6 +43,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 2 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ], [ "arcana_flesh_standard", 25 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "qualities": [ { "id": "CUT", "level": 2 } ]
   },
   {
@@ -55,6 +58,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 2 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "qualities": [ { "id": "CUT", "level": 2 } ],
     "components": [
       [
@@ -94,11 +98,12 @@
     "subcategory": "CSC_ARCANA_RESEARCH",
     "skill_used": "magic",
     "difficulty": 3,
-    "time": "48 h",
+    "time": "24 h",
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 3 ] ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "item_blood_magic_research_animal_blood", 2 ] ],
       [ [ "item_blood_magic_research_human_blood", 1 ] ],
