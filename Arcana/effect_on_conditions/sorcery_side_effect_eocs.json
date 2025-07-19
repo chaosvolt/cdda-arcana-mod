@@ -97,5 +97,32 @@
         "duration": { "math": [ "(50 + (50 * _calc_difficulty) ) - (_reducer * _level)" ] }
       }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_BLOOD_MAGIC_DRAGONBLOODED_HUNGER_COST",
+    "eoc_type": "EVENT",
+    "//": "This only applies to dragonblooded since they can ignore many of the other blood magic disadvantages",
+    "required_event": "spellcasting_finish",
+    "condition": {
+      "and": [
+        { "u_has_any_trait": [ "ARCANA_BLOOD_MAGIC" ] },
+        { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
+        { "math": [ "u_sum_traits_of_category_char_has('DRAGONBLOOD') >= 1" ] },
+        { "math": [ "_success != false" ] }
+      ]
+    },
+    "effect": [
+      { "math": [ "_level = clamp( (u_spell_level(_spell) ), 0, 5)" ] },
+      { "u_message": "Spell level is <context_val:level>.", "type": "debug" },
+      { "math": [ "_calc_difficulty = ( _difficulty / 10)" ] },
+      { "u_message": "Spell Difficulty divided by 10 is <context_val:calc_difficulty>.", "type": "debug" },
+      { "math": [ "_reducer = ( ( (40 * _calc_difficulty) + 40 ) / 10)" ] },
+      { "u_message": "Reducer value is <context_val:reducer>.", "type": "debug" },
+      {
+        "u_add_effect": "sanguine_mark_burnout",
+        "duration": { "math": [ "(40 + (40 * _calc_difficulty) ) - (_reducer * _level)" ] }
+      }
+    ]
   }
 ]
