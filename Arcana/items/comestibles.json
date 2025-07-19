@@ -242,7 +242,7 @@
     "comestible_type": "MED",
     "category": "other",
     "name": { "str": "water talisman" },
-    "description": "A crude paper talisman marked with strange patterns, and anointed with a hunter's sacrifice.  It can be used to mend minor wounds, along with providing limited resistance to certain alchemical effects.",
+    "description": "A crude paper talisman marked with strange patterns, and anointed with a hunter's sacrifice.  It can be used to mend minor wounds, along with providing limited resistance to certain alchemical effects, though repeated usage in a short period of time will have detremental side effects.",
     "price_postapoc": "6 USD",
     "weight": "150 g",
     "volume": "100 ml",
@@ -252,13 +252,13 @@
     "color": "cyan",
     "use_action": {
       "type": "heal",
-      "limb_power": 20,
-      "head_power": 20,
-      "torso_power": 20,
+      "limb_power": 10,
+      "head_power": 10,
+      "torso_power": 10,
       "bleed": 15,
       "bite": 0.5,
       "move_cost": 25,
-      "effects": [ { "id": "talisman_warding", "duration": 600 } ]
+      "effects": [ { "id": "talisman_warding", "duration": 600 }, { "id": "effect_water_talisman_aftermath", "duration": 3600 } ]
     },
     "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
   },
