@@ -53,27 +53,22 @@
       },
       {
         "distribution": [
-          { "item": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_mark_drain_energy", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_mark_summon_fiend", "prob": 1 }
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_drain_energy", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_increased_healing", "prob": 1 }
         ],
         "prob": 30
       },
       {
         "distribution": [
-          { "item": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_mark_drain_energy", "prob": 1 }
+          { "item": "blood_magic_spell_scroll_arcana_mark_summon_jabberwock", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_summon_fiend", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm", "prob": 1 }
         ],
         "prob": 10
       },
       {
-        "distribution": [
-          { "item": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_mark_drain_energy", "prob": 1 }
-        ],
+        "distribution": [ { "item": "blood_magic_spell_scroll_arcana_mark_summon_jabberwock", "prob": 1 } ],
         "prob": 3
       }
     ]

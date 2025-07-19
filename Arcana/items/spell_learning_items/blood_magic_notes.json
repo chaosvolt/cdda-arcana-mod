@@ -74,10 +74,19 @@
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
-    "id": "blood_magic_spell_scroll_arcana_mark_drain_energy",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_drain_energy",
     "name": { "str": "Sanguine Grimoire: Enervation", "str_pl": "Sanguine Grimoires: Enervation" },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual drains your target's life, restoring your own stamina and sleepiness in the process.",
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_drain_energy" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_drain_energy" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_increased_healing",
+    "name": { "str": "Sanguine Grimoire: Carmine Vitality", "str_pl": "Sanguine Grimoires: Carmine Vitality" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual drains your target's life, restoring your own stamina and sleepiness in the process.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_increased_healing" ] }
   },
   {
     "type": "ITEM",
@@ -88,7 +97,19 @@
       "str": "Sanguine Grimoire: Calling the Denizens of Below",
       "str_pl": "Sanguine Grimoires: Calling the Denizens of Below"
     },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual an ashen revenant, a denizen of the Beyond with a hunger for flesh--though whether yours or your enemies', who can say.",
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual summons an ashen revenant, a denizen of the Beyond with a hunger for flesh--though whether yours or your enemies', who can say.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_summon_fiend" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_summon_jabberwock",
+    "name": {
+      "str": "Sanguine Grimoire: Calling the Flesh-woven Titan",
+      "str_pl": "Sanguine Grimoires: Calling the Flesh-woven Titan"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual weaves blood and flesh together into a titan that will crush those before it--though whether yours or your enemies, who can say.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_summon_jabberwock" ] }
   }
 ]
