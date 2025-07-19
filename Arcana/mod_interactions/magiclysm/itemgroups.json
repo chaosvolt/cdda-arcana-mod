@@ -1,0 +1,119 @@
+[
+  {
+    "id": "bionics",
+    "copy-from": "bionics",
+    "type": "item_group",
+    "extend": {
+      "items": [
+        [ "bio_electrothermal_arc_projector", 1 ],
+        [ "bio_rift_focus_projector", 1 ],
+        [ "bio_essence_surge_cell", 1 ],
+        [ "bio_temporal_stimulation", 1 ],
+        [ "bio_life_sign_suppression", 1 ],
+        [ "bio_kinetic_amplifier", 1 ]
+      ]
+    }
+  },
+  {
+    "id": "lab_magitech_general",
+    "//": "Mishmash of tools, books, and supplies that might be used for anomalous research, including some finished products.",
+    "type": "item_group",
+    "extend": {
+      "items": [
+        [ "recipe_lab_arcana", 5 ],
+        [ "recipe_lab_elec", 3 ],
+        [ "recipe_mil_augs", 2 ],
+        { "group": "lab_magitech_bionics", "prob": 3 },
+        { "group": "lab_magitech_other", "prob": 5 }
+      ]
+    }
+  },
+  {
+    "id": "lab_magitech_weaponry",
+    "copy-from": "lab_magitech_weaponry",
+    "type": "item_group",
+    "extend": {
+      "items": [
+        [ "electrothermal_arc_cannon", 50 ],
+        [ "bio_electrothermal_arc_projector", 25 ],
+        [ "arcane_accelerator_railgun", 10 ],
+        [ "arcane_accelerator_plasma", 10 ],
+        [ "arcane_accelerator_nuke", 5 ]
+      ]
+    }
+  },
+  {
+    "id": "lab_magitech_bionics",
+    "copy-from": "lab_magitech_bionics",
+    "//": "Arcana-only magitech CBMs.",
+    "type": "item_group",
+    "extend": {
+      "items": [
+        [ "bio_electrothermal_arc_projector", 20 ],
+        [ "bio_rift_focus_projector", 10 ],
+        [ "bio_essence_surge_cell", 30 ],
+        [ "bio_temporal_stimulation", 20 ],
+        [ "bio_life_sign_suppression", 10 ],
+        [ "bio_kinetic_amplifier", 20 ]
+      ]
+    }
+  },
+  {
+    "id": "lab_magitech_other",
+    "copy-from": "lab_magitech_other",
+    "//": "Misc tools and vehiclepart items involving magitech.",
+    "type": "item_group",
+    "extend": {
+      "items": [
+        [ "distortion_amp_motor_item", 20 ],
+        [ "essence_surge_generator_item", 35 ],
+        [ "coalescent_converter", 5 ],
+        [ "thermic_essence_cutter", 35 ],
+        [ "spatial_displacer", 5 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "copy-from": "autodoc_installation_magitech",
+    "id": "autodoc_installation_magitech",
+    "extend": {
+      "items": [
+        { "item": "AID_bio_electrothermal_arc_projector", "prob": 20 },
+        { "item": "AID_bio_rift_focus_projector", "prob": 10 },
+        { "item": "AID_bio_essence_surge_cell", "prob": 30 },
+        { "item": "AID_bio_temporal_stimulation", "prob": 20 },
+        { "item": "AID_bio_life_sign_suppression", "prob": 10 },
+        { "item": "AID_bio_kinetic_amplifier", "prob": 10 }
+      ]
+    }
+  },
+  {
+    "id": "gunmod_energy",
+    "copy-from": "gunmod_energy",
+    "type": "item_group",
+    "extend": {
+      "items": [ [ "arcane_accelerator_railgun", 5 ], [ "arcane_accelerator_plasma", 3 ], [ "arcane_accelerator_nuke", 2 ] ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "cyborg_harvest",
+    "copy-from": "cyborg_harvest",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "group": "lab_magitech_bionics", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "magitech_recipes_collection",
+    "copy-from": "magitech_recipes_collection",
+    "subtype": "collection",
+    "extend": {
+      "entries": [
+        { "item": "recipe_lab_arcana", "prob": 50 },
+        { "item": "recipe_lab_elec", "prob": 50 },
+        { "item": "recipe_mil_augs", "prob": 50 }
+      ]
+    }
+  }
+]

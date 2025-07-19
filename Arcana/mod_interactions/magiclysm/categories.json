@@ -1,0 +1,8 @@
+[
+  {
+    "type": "recipe_category",
+    "id": "CC_ARCANA",
+    "copy-from": "CC_ARCANA",
+    "extend": { "recipe_subcategories": [ "CSC_ARCANA_MAGITECH" ] }
+  }
+]

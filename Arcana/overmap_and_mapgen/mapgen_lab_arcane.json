@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    
     "om_terrain": [ [ "lab_arcane_1_1", "lab_arcane_1_2", "lab_arcane_1_3" ], [ "lab_arcane_1_4", "lab_arcane_1_5", "lab_arcane_1_6" ] ],
     "weight": 1000,
     "object": {
@@ -176,7 +175,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ [ "lab_arcane_2_1", "lab_arcane_2_2", "lab_arcane_2_3" ], [ "lab_arcane_2_4", "lab_arcane_2_5", "lab_arcane_2_6" ] ],
     "weight": 1000,
     "object": {
@@ -379,7 +377,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ [ "lab_arcane_3_1", "lab_arcane_3_2", "lab_arcane_3_3" ], [ "lab_arcane_3_4", "lab_arcane_3_5", "lab_arcane_3_6" ] ],
     "weight": 1000,
     "object": {
@@ -612,7 +609,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ [ "lab_arcane_4_1", "lab_arcane_4_2", "lab_arcane_4_3" ], [ "lab_arcane_4_4", "lab_arcane_4_5", "lab_arcane_4_6" ] ],
     "weight": 1000,
     "object": {
@@ -801,7 +797,7 @@
         "O": { "item": "lab_magitech_general", "chance": 50, "repeat": 3 },
         "d": { "item": "SUS_office_supplies", "chance": 70, "repeat": 3 },
         "o": { "item": "SUS_oven", "chance": 50, "repeat": 2 },
-        "t": { "item": "SUS_trash_floor_light"},
+        "t": { "item": "SUS_trash_floor_light" },
         "s": { "item": "cleaning", "chance": 50, "repeat": 5 }
       },
       "place_loot": [
@@ -812,9 +808,7 @@
         { "group": "bionics_mil", "x": [ 40, 42 ], "y": 6, "chance": 50, "repeat": 3 },
         { "group": "lab_magitech_bionics", "x": [ 40, 42 ], "y": 9, "chance": 30, "repeat": 5 },
         { "group": "magic_books_postapoc", "x": [ 38, 40 ], "y": 20, "chance": 30, "repeat": 3 },
-        { "item": "recipe_lab_arcana", "x": [ 38, 40 ], "y": 20, "chance": 50 },
-        { "item": "recipe_lab_elec", "x": [ 38, 40 ], "y": 20, "chance": 50 },
-        { "item": "recipe_mil_augs", "x": [ 38, 40 ], "y": 20, "chance": 50 },
+        { "group": "magitech_recipes_collection", "x": [ 38, 40 ], "y": 20, "chance": 100 },
         { "group": "lab_magitech_weaponry", "x": [ 41, 43 ], "y": 20, "chance": 30, "repeat": 2 },
         { "group": "lab_magitech_other", "x": [ 41, 43 ], "y": 20, "chance": 30, "repeat": 3 },
         { "group": "magic_tools", "x": [ 41, 43 ], "y": 20, "chance": 30, "repeat": 2 },
@@ -886,13 +880,11 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "lab_arcane_4_4_rads",
     "object": { "mapgensize": [ 12, 12 ], "set": [ { "square": "radiation", "amount": 50, "x": 0, "y": 0, "x2": 0, "y2": 11 } ] }
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "lab_arcane_4_5_rads",
     "object": {
       "mapgensize": [ 12, 12 ],

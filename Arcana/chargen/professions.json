@@ -126,7 +126,7 @@
     "description": "You studied under a well-learned scholar, a seeker of the fabled elixir of life.  Despite the tutelage of a master alchemist, you never got any closer to finishing the great work.",
     "points": 2,
     "skills": [ { "level": 5, "name": "chemistry" }, { "level": 2, "name": "cooking" }, { "level": 1, "name": "firstaid" } ],
-    "proficiencies": [ "prof_intro_chemistry", "prof_distilling" ],
+    "proficiencies": [ "prof_intro_chemistry", "prof_distilling", "prof_arcana_alchemy" ],
     "items": {
       "both": {
         "items": [
@@ -196,6 +196,7 @@
     "id": "arcanist_bloodmage",
     "name": "Blood Mage",
     "description": "You have beheld true power, as a member of the Sanguine Order.  Power from within, as well as power from beyond.  But at what cost?",
+    "proficiencies": [ "prof_arcana_thaumatology" ],
     "points": 4,
     "skills": [
       { "level": 3, "name": "magic" },
@@ -269,6 +270,7 @@
     "description": "He From Beyond The Veil calls to you, to your brothers and sisters.  And the faithful, those who remain at least, shall bring him into this world.",
     "points": 6,
     "skills": [ { "level": 5, "name": "magic" }, { "level": 2, "name": "gun" }, { "level": 2, "name": "dodge" } ],
+    "proficiencies": [ "prof_arcana_thaumatology" ],
     "items": {
       "both": {
         "items": [
@@ -308,7 +310,14 @@
       { "level": 3, "name": "survival" },
       { "level": 2, "name": "dodge" }
     ],
-    "proficiencies": [ "prof_fibers", "prof_fibers_rope", "prof_leatherworking_basic", "prof_metalworking", "prof_carving" ],
+    "proficiencies": [
+      "prof_fibers",
+      "prof_fibers_rope",
+      "prof_leatherworking_basic",
+      "prof_metalworking",
+      "prof_carving",
+      "prof_arcana_thaumatology"
+    ],
     "items": {
       "both": {
         "items": [
@@ -355,6 +364,7 @@
       { "level": 1, "name": "firstaid" },
       { "level": 1, "name": "survival" }
     ],
+    "proficiencies": [ "prof_arcana_thaumatology" ],
     "items": {
       "both": {
         "items": [
@@ -582,7 +592,14 @@
       { "level": 3, "name": "dodge" },
       { "level": 3, "name": "survival" }
     ],
-    "proficiencies": [ "prof_fibers", "prof_fibers_rope", "prof_leatherworking_basic", "prof_metalworking", "prof_carving" ],
+    "proficiencies": [
+      "prof_fibers",
+      "prof_fibers_rope",
+      "prof_leatherworking_basic",
+      "prof_metalworking",
+      "prof_carving",
+      "prof_arcana_thaumatology"
+    ],
     "items": {
       "both": {
         "items": [

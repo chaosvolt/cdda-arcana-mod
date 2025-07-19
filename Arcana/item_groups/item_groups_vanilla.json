@@ -288,29 +288,6 @@
     "extend": { "items": [ [ "electrothermal_arc_cannon", 3 ], [ "rift_focus_cannon", 2 ] ] }
   },
   {
-    "id": "gunmod_energy",
-    "copy-from": "gunmod_energy",
-    "type": "item_group",
-    "extend": {
-      "items": [ [ "arcane_accelerator_railgun", 5 ], [ "arcane_accelerator_plasma", 3 ], [ "arcane_accelerator_nuke", 2 ] ]
-    }
-  },
-  {
-    "id": "bionics",
-    "copy-from": "bionics",
-    "type": "item_group",
-    "extend": {
-      "items": [
-        [ "bio_electrothermal_arc_projector", 1 ],
-        [ "bio_rift_focus_projector", 1 ],
-        [ "bio_essence_surge_cell", 1 ],
-        [ "bio_temporal_stimulation", 1 ],
-        [ "bio_life_sign_suppression", 1 ],
-        [ "bio_kinetic_amplifier", 1 ]
-      ]
-    }
-  },
-  {
     "type": "item_group",
     "id": "roof_holdout",
     "copy-from": "roof_holdout",
@@ -341,13 +318,6 @@
     "copy-from": "monparts",
     "subtype": "distribution",
     "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 5 } ] }
-  },
-  {
-    "type": "item_group",
-    "id": "cyborg_harvest",
-    "copy-from": "cyborg_harvest",
-    "subtype": "distribution",
-    "extend": { "entries": [ { "group": "lab_magitech_bionics", "prob": 1 } ] }
   },
   {
     "type": "item_group",

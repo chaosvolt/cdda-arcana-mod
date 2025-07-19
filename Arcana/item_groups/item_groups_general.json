@@ -290,28 +290,6 @@
     ]
   },
   {
-    "id": "lab_magitech_general",
-    "//": "Mishmash of tools, books, and supplies that might be used for anomalous research, including some finished products.",
-    "type": "item_group",
-    "items": [
-      [ "recipe_lab_arcana", 5 ],
-      [ "recipe_lab_elec", 3 ],
-      [ "recipe_mil_augs", 2 ],
-      { "group": "tools_science", "prob": 15 },
-      { "group": "tools_gunsmith", "prob": 5 },
-      { "group": "magic_crafting", "prob": 10 },
-      { "group": "supplies_electronics", "prob": 15 },
-      { "group": "tools_mechanic", "prob": 5 },
-      { "group": "lab_misc_anomalous_items", "prob": 2 },
-      { "group": "lab_magitech_bionics", "prob": 3 },
-      { "group": "lab_magitech_other", "prob": 5 },
-      { "group": "magic_books_postapoc", "prob": 5 },
-      { "group": "supplies_mechanics", "prob": 10 },
-      { "group": "arcana_hunt_random", "prob": 10 },
-      { "group": "magic_tools", "prob": 5 }
-    ]
-  },
-  {
     "id": "lab_misc_anomalous_items",
     "//": "A smattering of non-magitech tools and materials of anomalous origin.",
     "type": "item_group",
@@ -343,54 +321,51 @@
     ]
   },
   {
-    "id": "lab_magitech_weaponry",
-    "//": "Weapons and gunmods that rely on magitech.",
+    "id": "lab_magitech_general",
+    "//": "Mishmash of tools, books, and supplies that might be used for anomalous research, including some finished products.",
     "type": "item_group",
     "items": [
-      [ "electrothermal_arc_cannon", 50 ],
-      [ "bio_electrothermal_arc_projector", 25 ],
-      [ "arcane_accelerator_railgun", 10 ],
-      [ "arcane_accelerator_plasma", 10 ],
-      [ "arcane_accelerator_nuke", 5 ]
+      { "group": "tools_science", "prob": 15 },
+      { "group": "tools_gunsmith", "prob": 5 },
+      { "group": "magic_crafting", "prob": 10 },
+      { "group": "supplies_electronics", "prob": 15 },
+      { "group": "tools_mechanic", "prob": 5 },
+      { "group": "lab_misc_anomalous_items", "prob": 2 },
+      { "group": "magic_books_postapoc", "prob": 5 },
+      { "group": "supplies_mechanics", "prob": 10 },
+      { "group": "arcana_hunt_random", "prob": 10 },
+      { "group": "magic_tools", "prob": 5 }
     ]
+  },
+  {
+    "id": "lab_magitech_weaponry",
+    "//": "These itemgroups require the Bionic Professions mod to spawn magitech.",
+    "type": "item_group",
+    "items": [ { "group": "tools_science", "prob": 1 } ]
   },
   {
     "id": "lab_magitech_bionics",
     "//": "Arcana-only magitech CBMs.",
     "type": "item_group",
-    "items": [
-      [ "bio_electrothermal_arc_projector", 20 ],
-      [ "bio_rift_focus_projector", 10 ],
-      [ "bio_essence_surge_cell", 30 ],
-      [ "bio_temporal_stimulation", 20 ],
-      [ "bio_life_sign_suppression", 10 ],
-      [ "bio_kinetic_amplifier", 20 ]
-    ]
+    "items": [ { "group": "tools_science", "prob": 1 } ]
   },
   {
     "id": "lab_magitech_other",
     "//": "Misc tools and vehiclepart items involving magitech.",
     "type": "item_group",
-    "items": [
-      [ "distortion_amp_motor_item", 20 ],
-      [ "essence_surge_generator_item", 35 ],
-      [ "coalescent_converter", 5 ],
-      [ "thermic_essence_cutter", 35 ],
-      [ "spatial_displacer", 5 ]
-    ]
+    "items": [ { "group": "tools_science", "prob": 1 } ]
   },
   {
     "type": "item_group",
     "subtype": "distribution",
     "id": "autodoc_installation_magitech",
-    "items": [
-      { "item": "AID_bio_electrothermal_arc_projector", "prob": 20 },
-      { "item": "AID_bio_rift_focus_projector", "prob": 10 },
-      { "item": "AID_bio_essence_surge_cell", "prob": 30 },
-      { "item": "AID_bio_temporal_stimulation", "prob": 20 },
-      { "item": "AID_bio_life_sign_suppression", "prob": 10 },
-      { "item": "AID_bio_kinetic_amplifier", "prob": 10 }
-    ]
+    "items": [ { "group": "tools_medical", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "magitech_recipes_collection",
+    "subtype": "collection",
+    "entries": [ { "group": "tools_science", "prob": 1 } ]
   },
   {
     "id": "vault_magic_item_stash",
