@@ -1,0 +1,14 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus" ],
+    "tiles-new": [
+      {
+        "file": "mod_tileset/arcana_expan_dp_normal.png",
+        "tiles": [ { "id": "mon_homunculus", "fg": 196 } ],
+        "sprite_width": 32,
+        "sprite_height": 32
+      }
+    ]
+  }
+]
