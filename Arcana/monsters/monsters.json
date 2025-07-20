@@ -499,29 +499,26 @@
     "delete": { "flags": [ "BASHES" ] }
   },
   {
-    "id": "mon_triffid_summoned",
-    "copy-from": "mon_triffid",
+    "id": "mon_vinebeast_summoned",
+    "copy-from": "mon_vinebeast",
+    "looks_like": "mon_vinebeast",
     "type": "MONSTER",
-    "name": { "str": "summoned triffid" },
+    "name": { "str": "summoned vinebeast" },
     "categories": [ "CLASSIC" ],
-    "mountable_weight_ratio": 0.9,
-    "speed": 125,
-    "vision_day": 20,
-    "vision_night": 10,
     "species": [ "ARCANA_SUMMONED" ],
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
     "regenerates": 1,
     "regeneration_modifiers": [ [ "dazed", -1 ] ],
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "death_drops": "mon_bound_glyph_death_drops_universal",
-    "revert_to_itype": "summon_triffid_bound",
+    "revert_to_itype": "summon_vinebeast_bound",
     "special_attacks": [
       { "type": "bite", "cooldown": 10 },
       {
         "type": "spell",
         "spell_data": { "id": "arcana_monster_dart_triffid" },
         "cooldown": 5,
-        "monster_message": "The summoned triffid fires a dart at %3$s!"
+        "monster_message": "The summoned vinebeast fires a dart at %3$s!"
       }
     ],
     "attack_effs": [ { "id": "venom_dmg", "duration": 500, "affect_hit_bp": true } ],

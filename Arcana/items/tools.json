@@ -607,18 +607,18 @@
     "flags": [ "NO_SALVAGE", "SINGLE_USE" ]
   },
   {
-    "id": "summon_blank",
+    "id": "summon_vinebeast",
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
     "name": { "str": "glyph of the root", "str_pl": "glyphs of the root" },
     "//": "ID retained to prevent tileset breakage, monster summoned was changed due to blank bodies being outright useless.",
-    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.  It is easy to control.",
+    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a vinebeast, and bind it to your will.  Hopefully.  It is easy to control.",
     "price": "1500 USD",
     "price_postapoc": "20 USD",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_triffid_summoned",
+      "monster_id": "mon_vinebeast_summoned",
       "friendly_msg": "The movement of the plant creature is hard to read, but you suspect it is either friendly, or doesn't regard you as a threat.",
       "hostile_msg": "Even without words or recognizable body language, it quickly becomes apparent that the plant monster is hostile.",
       "difficulty": 2,
@@ -829,15 +829,15 @@
     }
   },
   {
-    "id": "summon_triffid_bound",
+    "id": "summon_vinebeast_bound",
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
-    "copy-from": "summon_blank",
+    "copy-from": "summon_vinebeast",
     "name": { "str": "bound summoned triffid" },
-    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A triffid has been bound into this after a successful summon, activate to redeploy it.",
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A vinebeast has been bound into this after a successful summon, activate to redeploy it.",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_triffid_summoned",
+      "monster_id": "mon_vinebeast_summoned",
       "friendly_msg": "You undo the energy binding the summoned triffid, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
