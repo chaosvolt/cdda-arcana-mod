@@ -1,5 +1,12 @@
 [
   {
+    "id": "arcana_emit_blood_sacrifice",
+    "type": "emit",
+    "field": "fd_blood",
+    "intensity": 1,
+    "qty": 6
+  },
+  {
     "id": "emit_shock_burst_altered",
     "type": "emit",
     "field": "fd_electricity",

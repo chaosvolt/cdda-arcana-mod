@@ -362,19 +362,20 @@
     "effect": [
       {
         "if": { "u_has_species": "BIRD" },
-        "then": { "math": [ "n_sacrifice_essence_amount = clamp( ( u_weight() / 25000000 ), 1, 3)" ] }
+        "then": { "math": [ "_sacrifice_essence_amount = clamp( ( u_weight() / 25000000 ), 1, 3)" ] }
       },
       {
         "if": { "u_has_species": "MAMMAL" },
-        "then": { "math": [ "n_sacrifice_essence_amount = clamp( ( u_weight() / 20000000 ), 1, 10)" ] }
+        "then": { "math": [ "_sacrifice_essence_amount = clamp( ( u_weight() / 20000000 ), 1, 10)" ] }
       },
-      "u_die",
-      { "run_eocs": "EOC_ARCANA_BLOOD_MAGIC_RITE_OF_SACRIFICE_SPAWN", "alpha_talker": "npc" }
+      { "u_location_variable": { "context_val": "loc" } },
+      { "u_emit": "arcana_emit_blood_sacrifice" },
+      {
+        "map_spawn_item": "essence_blood",
+        "loc": { "context_val": "loc" },
+        "count": { "math": [ "_sacrifice_essence_amount" ] }
+      },
+      "u_die"
     ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_ARCANA_BLOOD_MAGIC_RITE_OF_SACRIFICE_SPAWN",
-    "effect": [ { "u_spawn_item": "essence_blood", "count": { "math": [ "u_sacrifice_essence_amount" ] }, "suppress_message": true } ]
   }
 ]
