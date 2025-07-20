@@ -1,14 +1,6 @@
 [
   {
     "type": "scenario",
-    "id": "lost_faith",
-    "copy-from": "lost_faith",
-    "extend": {
-      "professions": [ "arcanist_magehunter", "arcanist_dark_priest", "arcanist_purifier", "arcanist_operator", "arcanist_mendicant" ]
-    }
-  },
-  {
-    "type": "scenario",
     "id": "arcane_seeker",
     "copy-from": "arcane_seeker",
     "extend": { "professions": [ "arcanist_operator" ] }
