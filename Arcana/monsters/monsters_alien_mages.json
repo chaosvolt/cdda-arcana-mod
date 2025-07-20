@@ -1,0 +1,185 @@
+[
+  {
+    "id": "mon_mi_go_fleshwarper",
+    "copy-from": "mon_mi_go",
+    "type": "MONSTER",
+    "name": { "str": "mi-go fleshwarper" },
+    "description": "An alien creature of uncertain origin.  Its shapeless pink body bears numerous sets of paired appendages of unknown function, and a pair of ribbed, membranous wings which seem to be quite useless.  Its odd, vaguely pyramid-shaped head bristles with numerous wavering antennae, and it moves with an uncanny fluidity on its many legs.  Its flesh occasionally ripples, as though something inside was squirming and trying to get free.",
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 240,
+    "speed": 135,
+    "diff": 25,
+    "//": "Speed (and armor values and regeneration) assume additional protective spells",
+    "morale": 35,
+    "melee_skill": 6,
+    "regenerates": 2,
+    "bleed_rate": 50,
+    "extend": {
+      "flags": [ "MAGIC_USER" ],
+      "special_attacks": [
+        [ "PARROT", 100 ],
+        {
+          "id": "migo_fleshwarper_blood_spell",
+          "type": "spell",
+          "spell_data": { "id": "migo_fleshwarper_blood_poison_spell", "min_level": 5 },
+          "cooldown": 20,
+          "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+          "monster_message": "%1$s's numerous antennae move rhythmically for a moment."
+        },
+        {
+          "id": "migo_fleshwarper_cure_spell",
+          "type": "spell",
+          "spell_data": { "id": "monster_heal_spell", "hit_self": true, "min_level": 15 },
+          "cooldown": 30,
+          "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+          "monster_message": "%1$s's numerous antennae twitch in all directions for a moment."
+        },
+        {
+          "id": "migo_fleshwarper_mutate_spell",
+          "type": "spell",
+          "spell_data": { "id": "migo_fleshwarper_mutate", "min_level": 1 },
+          "cooldown": 50,
+          "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+          "monster_message": "As %1$s touches %3$s, the flesh warps and twists!"
+        }
+      ]
+    },
+    "armor": { "bash": 15, "cut": 20, "stab": 10, "bullet": 10, "electric": 3, "acid": 40 }
+  },
+  {
+    "id": "mon_mi_go_nethermancer",
+    "copy-from": "mon_mi_go",
+    "type": "MONSTER",
+    "name": { "str": "mi-go nethermancer" },
+    "description": "An alien creature of uncertain origin.  Its shapeless pink body bears numerous sets of paired appendages of unknown function, and a pair of ribbed, membranous wings which seem to be quite useless.  Its odd, vaguely pyramid-shaped head bristles with numerous wavering antennae, and it moves with an uncanny fluidity on its many legs.  Its carapace is covered in regular patterns which occasionally shift as you look at them before settling into a new configuration.",
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 160,
+    "speed": 120,
+    "diff": 25,
+    "//": "Speed (and armor values and regeneration) assume additional protective spells",
+    "morale": 35,
+    "melee_skill": 7,
+    "extend": {
+      "flags": [ "MAGIC_USER" ],
+      "special_attacks": [
+        [ "PARROT", 100 ],
+        {
+          "id": "migo_nethermancer_grab",
+          "type": "spell",
+          "spell_data": { "id": "sorcerer_hand_monster", "min_level": 2 },
+          "cooldown": 15,
+          "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+          "monster_message": "%1$s twitches its antennae at %3$s and %3$s is lifted up and pulled towards them!"
+        },
+        {
+          "id": "migo_nethermancer_no_escape",
+          "type": "spell",
+          "spell_data": { "id": "teleport_anchor_monster", "min_level": 4 },
+          "cooldown": 30,
+          "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+          "monster_message": "%1$s's numerous antennae sync their movements for a brief moment."
+        },
+        {
+          "id": "migo_nethermancer_summon",
+          "type": "spell",
+          "spell_data": { "id": "migo_nethermancer_summon_nether", "min_level": 0 },
+          "cooldown": 40,
+          "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+          "monster_message": "%1$s's numerous antennae weave in a complicated pattern."
+        }
+      ]
+    },
+    "//2": "Armor value assumes some kind of space-warping protective spell to defend against bullets (no way to single out arrows from spears etc or I'd add those too)",
+    "armor": { "bash": 5, "cut": 13, "bullet": 80, "electric": 3 }
+  },
+  {
+    "id": "mon_triffid_vineweaver",
+    "copy-from": "mon_triffid",
+    "type": "MONSTER",
+    "looks_like": "mon_triffid",
+    "name": { "str": "triffid vineweaver" },
+    "description": "A particularly large mobile plant, taller than a moose.  It has a single bark-covered stalk supporting a flowery head with a paralyzing sting concealed within.  Some of its fronds move in particular patterns, an eldritch light trailing after them.  Nature will be healed.",
+    "volume": "77500 ml",
+    "weight": "100 kg",
+    "hp": 180,
+    "special_attacks": [
+      {
+        "id": "triffid_vineweaver_brambles",
+        "type": "spell",
+        "spell_data": { "id": "triffid_brambles_arc", "min_level": 5 },
+        "cooldown": 25,
+        "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+        "monster_message": "%1$s waves its fronds in a deliberate pattern."
+      },
+      {
+        "id": "triffid_vineweaver_tanglevine",
+        "type": "spell",
+        "spell_data": { "id": "triffid_summon_tanglevine", "min_level": 6 },
+        "cooldown": 50,
+        "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+        "monster_message": "%1$s waves its fronds toward the ground."
+      },
+      {
+        "id": "triffid_vineweaver_druid_veggrasp",
+        "type": "spell",
+        "spell_data": { "id": "druid_veggrasp_monster", "min_level": 2 },
+        "cooldown": 30,
+        "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+        "monster_message": "%1$s twitches its base and roots burst from the ground around %3$s."
+      }
+    ],
+    "death_drops": { "subtype": "collection", "items": [ { "item": "triffid_spellbook", "prob": 25 } ] },
+    "extend": { "flags": [ "MAGIC_USER" ] }
+  },
+  {
+    "id": "mon_triffid_seedshaper",
+    "copy-from": "mon_triffid",
+    "type": "MONSTER",
+    "name": { "str": "triffid seedshaper" },
+    "looks_like": "mon_triffid",
+    "description": "A creeping mobile plant, as tall as a moose.  It has a single bark-covered stalk supporting a flowery head with a paralyzing sting concealed within.  A hazy cloud of pollen hangs around it.",
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 120,
+    "diff": 25,
+    "special_attacks": [
+      {
+        "id": "triffid_seedshaper_pollen",
+        "type": "spell",
+        "spell_data": { "id": "triffid_pollen_cone", "min_level": 3 },
+        "cooldown": 15,
+        "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+        "monster_message": "%1$s waves its fronds and pollen erupts out in a cone!"
+      },
+      {
+        "id": "triffid_seedshaper_heal",
+        "type": "spell",
+        "spell_data": { "id": "triffid_pollen_heal", "min_level": 4 },
+        "cooldown": 30,
+        "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+        "monster_message": "%1$s waves its fronds and a glow surrounds %3$s."
+      },
+      {
+        "id": "triffid_seedshaper_speed",
+        "type": "spell",
+        "spell_data": { "id": "triffid_pollen_speed", "min_level": 6 },
+        "cooldown": 25,
+        "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+        "monster_message": "%1$s waves its fronds and nearby triffids start moving faster!"
+      },
+      {
+        "id": "triffid_seedshaper_blind",
+        "type": "spell",
+        "spell_data": { "id": "triffid_pollen_blind", "min_level": 6 },
+        "cooldown": 35,
+        "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+        "monster_message": "%1$s waves its fronds and golden pollen cascades down over %3$s!"
+      }
+    ],
+    "emit_fields": [ { "emit_id": "emit_pollen_stream", "delay": "3 s" } ],
+    "death_drops": { "subtype": "collection", "items": [ { "item": "triffid_spellbook", "prob": 25 } ] },
+    "extend": { "flags": [ "MAGIC_USER" ] }
+  }
+]

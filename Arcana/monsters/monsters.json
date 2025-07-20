@@ -871,7 +871,8 @@
       "NO_BREATHE",
       "NOHEAD",
       "COLDPROOF",
-      "QUEEN"
+      "QUEEN",
+      "MAGIC_USER"
     ]
   },
   {
@@ -926,7 +927,8 @@
       "HARDTOSHOOT",
       "STUMBLES",
       "NO_BREATHE",
-      "NOHEAD"
+      "NOHEAD",
+      "MAGIC_USER"
     ]
   },
   {
@@ -1101,7 +1103,18 @@
     "zombify_into": "mon_zombie_shady",
     "anger_triggers": [ "FRIEND_DIED", "PLAYER_CLOSE" ],
     "fear_triggers": [ "HURT" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "HUMAN", "CAN_OPEN_DOORS", "PATH_AVOID_DANGER" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS",
+      "PATH_AVOID_DANGER",
+      "MAGIC_USER"
+    ]
   },
   {
     "id": "mon_feral_magehunter",
@@ -1140,7 +1153,8 @@
     "death_drops": "mon_feral_magehunter_death_drops",
     "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "FIRE", "HURT" ],
     "fear_triggers": [  ],
-    "extend": { "flags": [ "STUN_IMMUNE" ] }
+    "extend": { "flags": [ "STUN_IMMUNE" ] },
+    "delete": { "flags": [ "MAGIC_USER" ] }
   },
   {
     "id": "mon_feral_keeper",
