@@ -22,25 +22,7 @@
       "arcanist_operator",
       "arcanist_mendicant"
     ],
-    "traits": [
-      "ARCANA_SCALYPATCHES",
-      "ARCANA_INNERHEAT",
-      "ARCANA_DRAGONCLAWS",
-      "ARCANA_DRAGONTEETH",
-      "ARCANA_DRAGONHORNS",
-      "SPELL_HEAL",
-      "SPELL_SHADOWSNAKES",
-      "SPELL_CLERIC",
-      "SPELL_STRENGTH",
-      "SPELL_AGILE",
-      "SPELL_INSIGHT",
-      "SPELL_LIGHT",
-      "SPELL_FIRE",
-      "SPELL_DAMPENING",
-      "SPELL_SUMMONDOG",
-      "MARTIAL_ARTS_SANGUINE",
-      "MARTIAL_ARTS_CF"
-    ]
+    "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
   },
   {
     "type": "scenario",
@@ -71,20 +53,7 @@
       "arcanist_operator",
       "arcanist_mendicant"
     ],
-    "traits": [
-      "SPELL_CLAIRVOYANCE",
-      "SPELL_CLARITY",
-      "SPELL_CONFUSE",
-      "SPELL_STRENGTH",
-      "SPELL_AGILE",
-      "SPELL_INSIGHT",
-      "SPELL_LIGHT",
-      "SPELL_DAYLIGHT",
-      "SPELL_LOCKPICK",
-      "SPELL_POISONARMOR",
-      "MARTIAL_ARTS_SANGUINE",
-      "MARTIAL_ARTS_CF"
-    ],
+    "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ],
     "flags": [ "CITY_START", "LONE_START" ]
   },
   {
@@ -152,25 +121,7 @@
         "arcanist_operator",
         "arcanist_mendicant"
       ],
-      "traits": [
-        "SPELL_ACID",
-        "SPELL_AGILE",
-        "SPELL_CLAIRVOYANCE",
-        "SPELL_CLARITY",
-        "SPELL_CLERIC",
-        "SPELL_CONFUSE",
-        "SPELL_ELECRESIST",
-        "SPELL_FLAMEARMOR",
-        "SPELL_FREEACTION",
-        "SPELL_HEAL",
-        "SPELL_INSIGHT",
-        "SPELL_LIGHTNING",
-        "SPELL_PLANTS",
-        "SPELL_SHADOWSNAKES",
-        "SPELL_STRENGTH",
-        "MARTIAL_ARTS_SANGUINE",
-        "MARTIAL_ARTS_CF"
-      ]
+      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
     }
   },
   {
@@ -188,25 +139,7 @@
         "arcanist_operator",
         "arcanist_mendicant"
       ],
-      "traits": [
-        "SPELL_ACID",
-        "SPELL_AGILE",
-        "SPELL_CLAIRVOYANCE",
-        "SPELL_CLARITY",
-        "SPELL_CLERIC",
-        "SPELL_CONFUSE",
-        "SPELL_ELECRESIST",
-        "SPELL_FLAMEARMOR",
-        "SPELL_FREEACTION",
-        "SPELL_HEAL",
-        "SPELL_INSIGHT",
-        "SPELL_LIGHTNING",
-        "SPELL_PLANTS",
-        "SPELL_SHADOWSNAKES",
-        "SPELL_STRENGTH",
-        "MARTIAL_ARTS_SANGUINE",
-        "MARTIAL_ARTS_CF"
-      ]
+      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
     }
   },
   {
