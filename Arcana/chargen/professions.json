@@ -195,7 +195,7 @@
   {
     "type": "profession",
     "id": "arcanist_bloodmage_apprentice",
-    "name": "Blood Mage Apprentic",
+    "name": "Blood Mage Apprentice",
     "description": "You have beheld true power, as a member of the Sanguine Order.  Power from within, as well as power from beyond.  But at what cost?",
     "proficiencies": [ "prof_arcana_thaumatology" ],
     "spells": [ { "id": "arcana_blood_magic_rite_of_sacrifice", "level": 3 } ],
@@ -428,7 +428,7 @@
       { "level": 5, "name": "fabrication" },
       { "level": 3, "name": "survival" },
       { "level": 2, "name": "dodge" },
-      { "level": 4, "name": "social" }
+      { "level": 4, "name": "speech" }
     ],
     "proficiencies": [
       "prof_fibers",
