@@ -12,7 +12,7 @@
   {
     "id": "arcana_mark_elemental_sign",
     "type": "SPELL",
-    "name": { "str": "Mark: Sign of the Inferno" },
+    "name": { "str": "Sign of the Inferno" },
     "description": "Using this spell will grant complete immunity to fire, spreading a deathly chill and driving away flames from your immediate area.",
     "message": "With a gesture, your inner fire flares up.  %s!",
     "valid_targets": [ "self" ],
@@ -25,7 +25,6 @@
     "effect": "attack",
     "shape": "blast",
     "effect_str": "heat_ward_true_blood_magic",
-    "energy_source": "HP",
     "difficulty": 50,
     "skill": "magic",
     "max_level": 5,
@@ -44,7 +43,7 @@
   {
     "id": "arcana_mark_malevolent_gaze",
     "type": "SPELL",
-    "name": { "str": "Mark: Malevolent Gaze" },
+    "name": { "str": "Malevolent Gaze" },
     "description": "Using this spell will strike a single target with a powerful temporal effect.  It won't deal any damage, but it will freeze your prey in place momentarily, leaving them slowed for a while afterward.",
     "message": "Your pupils briefly narrow into thin slits as you focus your hatred.  %s!",
     "effect": "attack",
@@ -65,7 +64,6 @@
     "base_casting_time": 180,
     "final_casting_time": 90,
     "casting_time_increment": -18,
-    "energy_source": "HP",
     "base_energy_cost": 24,
     "final_energy_cost": 12,
     "energy_increment": -2.4,
@@ -77,14 +75,13 @@
     "id": "arcana_mark_might",
     "//": "ID retained for save compatibility reasons.",
     "type": "SPELL",
-    "name": { "str": "Mark: Manifestation of Strength" },
+    "name": { "str": "Manifestation of Strength" },
     "description": "Using this spell will imbue your body with an unnatural aura, greatly increasing your strength and damage resistance, though with a correspondingly increased appetite.  It can only be used on yourself.",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC", "NO_HANDS" ],
     "effect": "attack",
     "shape": "blast",
     "effect_str": "effect_arcana_manifestation_of_strength",
-    "energy_source": "HP",
     "difficulty": 50,
     "skill": "magic",
     "max_level": 5,
@@ -105,7 +102,7 @@
   {
     "id": "arcana_mark_revenant_blood",
     "type": "SPELL",
-    "name": { "str": "Mark: Revenant Blood" },
+    "name": { "str": "Revenant Blood" },
     "description": "Using this spell will guard against poison, protect against pestilence in food and water, and burn out fungal influences or other parasites.",
     "message": "With a sign, you feel your blood burning with magical power.  %s!",
     "valid_targets": [ "self" ],
@@ -113,7 +110,6 @@
     "effect": "attack",
     "shape": "blast",
     "effect_str": "dragonblood_clarity",
-    "energy_source": "HP",
     "difficulty": 40,
     "skill": "magic",
     "max_level": 5,
@@ -132,7 +128,7 @@
   {
     "id": "arcana_mark_summon_dark_wyrm",
     "type": "SPELL",
-    "name": { "str": "Mark: Calling the Worms of the Earth" },
+    "name": { "str": "Calling the Worms of the Earth" },
     "description": "Using this spell will summon a dark wyrm.  Whether it will obey you is completely up to chance.",
     "message": "Your gesture causes the ground to shift and flow, a pitch-black form slithering out of the earth itself.  %s!",
     "valid_targets": [ "ground" ],
@@ -140,7 +136,6 @@
     "effect": "summon",
     "shape": "blast",
     "effect_str": "mon_dark_wyrm_summoned",
-    "energy_source": "HP",
     "difficulty": 50,
     "skill": "magic",
     "max_level": 5,
@@ -164,7 +159,7 @@
   {
     "id": "arcana_mark_summon_fiend",
     "type": "SPELL",
-    "name": { "str": "Mark: Calling the Denizens of Below" },
+    "name": { "str": "Calling the Denizens of Below" },
     "description": "Using this spell will summon an ashen revenant.  Whether it will obey you is completely up to chance.",
     "message": "With a hand sign, a plume of living flame erupts from the ground, solidifying into a scorched humanoid form.  %s!",
     "valid_targets": [ "ground" ],
@@ -172,7 +167,6 @@
     "effect": "summon",
     "shape": "blast",
     "effect_str": "mon_zombie_fiend_summoned",
-    "energy_source": "HP",
     "difficulty": 40,
     "skill": "magic",
     "max_level": 5,
@@ -196,7 +190,7 @@
   {
     "id": "arcana_mark_summon_jabberwock",
     "type": "SPELL",
-    "name": { "str": "Mark: Calling the Flesh-woven Titan" },
+    "name": { "str": "Calling the Flesh-woven Titan" },
     "description": "Using this spell will summon a golem woven of flesh.  Whether it will obey you is completely up to chance.",
     "message": "The ground warps at your command, a host of rotting bodies emerging from the disturbance, forms fusing together into an abomination.  %s!",
     "valid_targets": [ "ground" ],
@@ -204,7 +198,6 @@
     "effect": "summon",
     "shape": "blast",
     "effect_str": "mon_jabberwock_summoned",
-    "energy_source": "HP",
     "difficulty": 60,
     "skill": "magic",
     "max_level": 5,
@@ -228,7 +221,7 @@
   {
     "id": "arcana_mark_surge_adrenaline",
     "type": "SPELL",
-    "name": { "str": "Mark: Surge of Fury" },
+    "name": { "str": "Surge of Fury" },
     "description": "Using this spell will provoke a rush of adrenaline for urgent situations, with none of the normal drawbacks.  That is not to say it has no drawbacks, as your mind will be filled with thoughts of violence.  It can only be used on yourself.",
     "message": "Your gestures provokes a rush of instinct, urging you to kill.  %s!",
     "valid_targets": [ "self" ],
@@ -248,7 +241,6 @@
     "min_duration": 36000,
     "max_duration": 180000,
     "duration_increment": 28800,
-    "energy_source": "HP",
     "spell_class": "ARCANA_BLOOD_MAGIC",
     "magic_type": "arcana_blood_magic"
   },
@@ -256,7 +248,7 @@
     "//": "New blood magic spells begin here",
     "id": "arcana_blood_magic_drain_energy",
     "type": "SPELL",
-    "name": { "str": "Mark: Enervation" },
+    "name": { "str": "Enervation" },
     "description": "Using this spell will drain the energy from your target, slowing them slightly and restoring your own sleepiness and stamina.  Using it more than once on the same target in a short period of time has no effect.",
     "valid_targets": [ "ally", "hostile" ],
     "message": "You gesture, and the air between you and your target turns faintly crimson.  %s!",
@@ -265,7 +257,6 @@
     "effect": "effect_on_condition",
     "shape": "blast",
     "effect_str": "EOC_ARCANA_BLOOD_MAGIC_DRAIN_ENERGY",
-    "energy_source": "HP",
     "difficulty": 50,
     "skill": "magic",
     "max_level": 5,
@@ -298,7 +289,7 @@
   {
     "id": "arcana_blood_magic_increased_healing",
     "type": "SPELL",
-    "name": { "str": "Mark: Carmine Vitality" },
+    "name": { "str": "Carmine Vitality" },
     "description": "Using this spell will increase your natural healing rate and overall health, though taking any further damage will disrupt the effect.  It may be used on yourself or an ally.",
     "valid_targets": [ "self", "ally" ],
     "message": "The blood on your hands sinks into your flesh as the spell takes effect.  %s!",
@@ -306,7 +297,6 @@
     "effect": "effect_on_condition",
     "shape": "blast",
     "effect_str": "EOC_ARCANA_BLOOD_MAGIC_INCREASED_HEALING",
-    "energy_source": "HP",
     "difficulty": 40,
     "skill": "magic",
     "max_level": 5,
@@ -338,6 +328,50 @@
           ]
         },
         "intensity": { "math": [ "n_spell_level('arcana_blood_magic_increased_healing')" ] }
+      }
+    ]
+  },
+  {
+    "id": "arcana_blood_magic_rite_of_sacrifice",
+    "type": "SPELL",
+    "name": { "str": "The Rite of Sacrifice" },
+    "description": "The most basic of the blood mage's arts, this spell sacrifices an animal and condenses the power inherit in its blood into blood essence.  It is very lengthy and the animal will have to be restrained, sleep, or unconscious during the entirety of the ritual.  Only higher animals such as birds and mammals provide enough power to be worthwhile.",
+    "valid_targets": [ "hostile", "ally" ],
+    "message": "As the blood pools on the ground you condense its power into blood essence.  %s!",
+    "flags": [ "SOMATIC", "NO_HANDS" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_ARCANA_BLOOD_MAGIC_RITE_OF_SACRIFICE",
+    "shape": "blast",
+    "difficulty": 20,
+    "skill": "magic",
+    "max_level": 5,
+    "base_casting_time": 720000,
+    "final_casting_time": 180000,
+    "casting_time_increment": -108000,
+    "base_energy_cost": 0,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic",
+    "targeted_monster_species": [ "BIRD", "MAMMAL" ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_BLOOD_MAGIC_RITE_OF_SACRIFICE",
+    "effect": [
+      {
+        "if": { "u_has_species": "BIRD" },
+        "then": {
+          "npc_spawn_item": "essence_blood",
+          "count": { "math": [ "clamp( ( u_weight() / 25000000 ), 1, 3)" ] },
+          "suppress_message": true
+        }
+      },
+      {
+        "if": { "u_has_species": "MAMMAL" },
+        "then": {
+          "npc_spawn_item": "essence_blood",
+          "count": { "math": [ "clamp( ( u_weight() / 20000000 ), 1, 10)" ] },
+          "suppress_message": true
+        }
       }
     ]
   }

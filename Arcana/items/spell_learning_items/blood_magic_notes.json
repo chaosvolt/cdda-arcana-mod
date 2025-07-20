@@ -17,6 +17,15 @@
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_rite_of_sacrifice",
+    "name": { "str": "Sanguine Grimoire: The Rite of Sacrifice", "str_pl": "Sanguine Grimoires: The Rite of Sacrifice" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual creates blood essence through the sacrifice of an animal.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_rite_of_sacrifice" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
     "id": "blood_magic_spell_scroll_arcana_mark_surge_adrenaline",
     "name": { "str": "Sanguine Grimoire: Surge of Fury", "str_pl": "Sanguine Grimoires: Surge of Fury" },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual causes a surge of bloodlust that enhances your combat prowess but makes it hard to concentrate on anything but violence.",

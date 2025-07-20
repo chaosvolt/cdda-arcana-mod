@@ -44,6 +44,7 @@
     "items": [
       {
         "distribution": [
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_rite_of_sacrifice", "prob": 2 },
           { "item": "blood_magic_spell_scroll_arcana_mark_surge_adrenaline", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_mark_revenant_blood", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_mark_elemental_sign", "prob": 1 },
