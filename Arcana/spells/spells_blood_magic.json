@@ -344,7 +344,10 @@
     "shape": "blast",
     "difficulty": 20,
     "skill": "magic",
+    "energy_source": "NONE",
     "max_level": 5,
+    "min_range": 1,
+    "max_range": 1,
     "base_casting_time": 720000,
     "final_casting_time": 180000,
     "casting_time_increment": -108000,
@@ -359,20 +362,19 @@
     "effect": [
       {
         "if": { "u_has_species": "BIRD" },
-        "then": {
-          "npc_spawn_item": "essence_blood",
-          "count": { "math": [ "clamp( ( u_weight() / 25000000 ), 1, 3)" ] },
-          "suppress_message": true
-        }
+        "then": { "math": [ "n_sacrifice_essence_amount = clamp( ( u_weight() / 25000000 ), 1, 3)" ] }
       },
       {
         "if": { "u_has_species": "MAMMAL" },
-        "then": {
-          "npc_spawn_item": "essence_blood",
-          "count": { "math": [ "clamp( ( u_weight() / 20000000 ), 1, 10)" ] },
-          "suppress_message": true
-        }
-      }
+        "then": { "math": [ "n_sacrifice_essence_amount = clamp( ( u_weight() / 20000000 ), 1, 10)" ] }
+      },
+      "u_die",
+      { "run_eocs": "EOC_ARCANA_BLOOD_MAGIC_RITE_OF_SACRIFICE_SPAWN", "alpha_talker": "npc" }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_BLOOD_MAGIC_RITE_OF_SACRIFICE_SPAWN",
+    "effect": [ { "u_spawn_item": "essence_blood", "count": { "math": [ "u_sacrifice_essence_amount" ] }, "suppress_message": true } ]
   }
 ]
