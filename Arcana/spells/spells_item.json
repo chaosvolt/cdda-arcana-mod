@@ -2211,7 +2211,7 @@
     "effect": "attack",
     "shape": "blast",
     "extra_effects": [ { "id": "arcana_item_sparks_sleepiness", "hit_self": false } ],
-    "valid_targets": [ "ground" ],
+    "valid_targets": [ "ground", "hostile" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "min_range": 2,
     "max_range": 2,
