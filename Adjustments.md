@@ -7,6 +7,7 @@
 - Blood magic is now learnable by anyone! If you complete the recipes and unlock understanding of blood magic, then you can learn the spells from spellbooks. This has no chance to fail. 
 - You can pay the cost of Blood mage with sacrifice. Kill a chicken or a cow, use the blood to cast your spells without an HP cost. What's more, this makes your spells last even longer. And if you sacrifice a human...well, well, well...
 - Similarly, chance for spells to fail when used.  This is primarily based on Difficulty vs spell level and on perceived pain, modified by your Arcana skill.  Arcane Blessings are harder to use than Magic Signs (unless you're wielding the Veilblade, in which case Arcane Blessings always succeed). Blood magic has no chance to fail--the HP cost is enough.
+- Healing is harder to come by, and magical healing can often have undesirable side effects if used too freely.
 - Reduced drop rates for magic books. Ferals generally don't have them now, you'll have to search more esoteric places
 - New locations making use of weights and nests--rare variants of existing places might have housed an occultist or researcher into the Beyond. Peer into those nooks and crannies!
 - Many more recipes make use of proficiencies, and some now require them. Lack of Arcana proficiencies generally does not increase the time taken to create a recipe, but it does increase the odds of failure.  Pattern sorcery requires mastery of the occult to learn, but blood magic is much quicker and easier...

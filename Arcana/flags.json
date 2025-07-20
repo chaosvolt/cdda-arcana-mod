@@ -23,5 +23,10 @@
     "id": "NO_ARCANA_BLOOD_MAGIC",
     "type": "json_flag",
     "info": "Prevents you from using any blood magic."
+  },
+  {
+    "id": "MAGIC_USER",
+    "type": "monster_flag",
+    "//": "A monster that uses a lot of magic, for detection magic purposes."
   }
 ]

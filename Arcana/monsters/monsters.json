@@ -207,7 +207,8 @@
       "PRIORITIZE_TARGETS",
       "HARDTOSHOOT",
       "QUEEN",
-      "NIGHT_INVISIBILITY"
+      "NIGHT_INVISIBILITY",
+      "MAGIC_USER"
     ]
   },
   {
@@ -289,7 +290,8 @@
       "POISON",
       "REVIVES",
       "NO_BREATHE",
-      "PRIORITIZE_TARGETS"
+      "PRIORITIZE_TARGETS",
+      "MAGIC_USER"
     ]
   },
   {
@@ -568,21 +570,18 @@
     "delete": { "flags": [ "SUNDEATH", "HIT_AND_RUN" ] }
   },
   {
-    "id": "mon_mi_go_summoned",
-    "copy-from": "mon_mi_go",
+    "id": "mon_nether_huntsman_summoned",
+    "copy-from": "mon_nether_huntsman",
     "type": "MONSTER",
-    "name": { "str": "summoned mi-go" },
+    "name": { "str": "summoned nether huntsman" },
     "categories": [ "CLASSIC" ],
     "species": [ "ARCANA_SUMMONED" ],
-    "mountable_weight_ratio": 0.9,
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
     "regenerates": 1,
     "regeneration_modifiers": [ [ "dazed", -1 ] ],
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
-    "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": "mon_bound_glyph_death_drops_universal",
-    "revert_to_itype": "summon_mi_go_bound",
-    "extend": { "flags": [ "PET_HARNESSABLE" ] },
+    "revert_to_itype": "summon_nether_huntsman_bound",
     "delete": { "flags": [ "BASHES" ] }
   },
   {

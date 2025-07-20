@@ -333,7 +333,7 @@
     "revert_to": "silver_glyph",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_mi_go_summoned",
+      "monster_id": "mon_nether_huntsman_summoned",
       "friendly_msg": "You recite an incantation, and the mi-go's response is a quiet murmur in some unknown language.  It seems to be friendly.",
       "hostile_msg": "You begin to recite an incantation, only for the mi-go to parrot your words, mocking your effort to control it!",
       "difficulty": 6,
@@ -475,7 +475,7 @@
       "mon_vinebeast_summoned",
       "mon_flesh_angel_summoned",
       "mon_hunting_horror_summoned",
-      "mon_mi_go_summoned",
+      "mon_nether_huntsman_summoned",
       "mon_flying_polyp_summoned",
       "mon_shoggoth_summoned",
       "mon_shadow_summoned",

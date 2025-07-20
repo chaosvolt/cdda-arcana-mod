@@ -699,18 +699,17 @@
     "flags": [ "NO_SALVAGE", "SINGLE_USE" ]
   },
   {
-    "id": "summon_mi_go",
+    "id": "summon_nether_huntsman",
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
     "copy-from": "silver_glyph",
-    "name": { "str": "glyph of Yuggoth", "str_pl": "glyphs of Yuggoth" },
-    "//": "Explanation: Yuggoth is a fictional planet from Lovecraft's work, stated to have been colonized by the mi-go.",
+    "name": { "str": "glyph of the Hunt", "str_pl": "glyphs of the Hunt" },
     "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
     "price": "1500 USD",
     "price_postapoc": "60 USD",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_mi_go_summoned",
+      "monster_id": "mon_nether_huntsman_summoned",
       "friendly_msg": "You recite an incantation, and the mi-go's response is a quiet murmur in some unknown language.  It seems to be friendly.",
       "hostile_msg": "You begin to recite an incantation, only for the mi-go to parrot your words, mocking your effort to control it!",
       "difficulty": 6,
@@ -893,16 +892,16 @@
     }
   },
   {
-    "id": "summon_mi_go_bound",
+    "id": "summon_nether_huntsman_bound",
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
-    "copy-from": "summon_mi_go",
-    "name": { "str": "bound summoned mi-go" },
-    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A mi-go has been bound into this after a successful summon, activate to redeploy it.",
+    "copy-from": "summon_nether_huntsman",
+    "name": { "str": "bound summoned nether huntsman" },
+    "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A nether huntsman has been bound into this after a successful summon, activate to redeploy it.",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_mi_go_summoned",
-      "friendly_msg": "You undo the energy binding the summoned mi-go, causing it to reappear.",
+      "monster_id": "mon_nether_huntsman_summoned",
+      "friendly_msg": "You undo the energy binding the summoned nether huntsman, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
       "is_pet": true

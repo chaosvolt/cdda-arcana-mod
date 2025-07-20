@@ -840,7 +840,7 @@
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 90 ] ] ]
   },
   {
-    "result": "summon_mi_go",
+    "result": "summon_nether_huntsman",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 7,
@@ -940,7 +940,7 @@
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 90 ] ] ]
   },
   {
-    "result": "summon_mi_go_bound",
+    "result": "summon_nether_huntsman_bound",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 7,
