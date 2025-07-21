@@ -340,7 +340,7 @@
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "divine scroll of regrowth", "str_pl": "divine scrolls of regrowth" },
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will conjure a powerful healing spell, along with causing life to grow wild over the area.  However, using it risks mutating in abnormal ways.",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity.  Using it will conjure a powerful healing spell, along with causing life to grow wild over the area.  However, using it risks mutating in abnormal ways.",
     "price": "140 USD",
     "price_postapoc": "50 USD",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_nature", "no_fail": true, "level": 0 }

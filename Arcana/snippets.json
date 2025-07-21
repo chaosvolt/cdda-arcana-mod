@@ -82,26 +82,30 @@
     "type": "snippet",
     "category": "note_grove",
     "text": [
-      { "id": "note_grove_arcana_1", "text": "\"We have seen the other side.  We must master the potential it affords us.\"" },
+      { "id": "note_grove_arcana_1", "text": "\"We have seen the other side.  The Green will cleanse the world.\"" },
       { "id": "note_grove_arcana_2", "text": "\"They are not yet ready.  But their time will come.\"" },
       {
         "id": "note_grove_arcana_3",
-        "text": "\"Blood, oath, and flame.  They will not see the truth until it is too late.\""
+        "text": "\"Blood and claw.  They will not see the truth until it is too late.\""
       },
-      { "id": "note_grove_arcana_4", "text": "\"The ritual went awry.  It won't be safe to stay here.\"" },
+      { "id": "note_grove_arcana_4", "text": "\"The hour is at hand.  Soon the world will be renewed.\"" },
       {
         "id": "note_grove_arcana_5",
-        "text": "\"No sign of them.  Must've abandoned the place and left it to rot.  But why?\""
+        "text": "\"We were not worthy.  We are corrupt and the Green will purge us as well.\""
       },
       {
         "id": "note_grove_arcana_6",
-        "text": "\"They've been here, recently.  Didn't think there was anything left for the sanguinists to pilfer.\""
+        "text": "\"No sign of them.  Must've abandoned the place and left it to rot.  But why?\""
       },
       {
         "id": "note_grove_arcana_7",
+        "text": "\"They've been here, recently.  Didn't think there was anything left for the others to pilfer.\""
+      },
+      {
+        "id": "note_grove_arcana_8",
         "text": "\"Some sort of upheaval where the old ritual grounds used to be.  Can't tell if this happened during Zero Day or before.\""
       },
-      { "id": "note_grove_arcana_8", "text": "\"Did they predict this?  Is that why they left?\"" }
+      { "id": "note_grove_arcana_9", "text": "\"Did they predict this?  Is that why they left?\"" }
     ]
   },
   {
