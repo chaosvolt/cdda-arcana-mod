@@ -197,6 +197,7 @@
       [ "book_hexenhammer", 15 ],
       [ "book_bloodmagic", 15 ],
       [ "book_sacrifice", 10 ],
+      [ "book_naturemagic", 10 ],
       { "group": "magic_books_rare", "prob": 5 }
     ]
   },
@@ -213,6 +214,7 @@
       [ "book_potioncraft", 15 ],
       [ "book_scrollcraft", 10 ],
       [ "book_summoning", 5 ],
+      [ "book_naturemagic", 10 ],
       [ "book_hexenhammer", 15 ],
       [ "book_bloodmagic", 15 ],
       [ "book_sacrifice", 15 ],

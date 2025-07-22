@@ -178,6 +178,28 @@
     "read_fun": -3
   },
   {
+    "id": "book_naturemagic",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "name": { "str": "Words of the Green", "str_pl": "copies of Words of the Green" },
+    "description": "A religious text filled with paeans to the beauty of nature and the benevolence of a deity or force repeatedly referred to only as \"The Green.\"  Mixed in with that are several rituals, though you can't help but notice the book takes an extremely dim view of human civilization.\n\"Blessed be the Green, that gives life to the crops.  Blessed be the Green, that brings forth animals after their kinds.  And cursed be the humans, who seek to supplant the Green.  They shall surely receive their reward…\"",
+    "weight": "454 g",
+    "volume": "1 L",
+    "price": "250 USD",
+    "price_postapoc": "20 USD",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "looks_like": "holybook_wicca",
+    "color": "green",
+    "read_skill": "magic",
+    "required_level": 3,
+    "max_level": 6,
+    "intelligence": 11,
+    "time": "40 m",
+    "read_fun": -1
+  },
+  {
     "id": "recipe_lab_arcana",
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
