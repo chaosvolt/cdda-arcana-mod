@@ -319,7 +319,7 @@
         "F": { "item": "fridgesnacks", "chance": 25, "repeat": 5 },
         "O": [
           { "item": "cannedfood", "chance": 50, "repeat": 2 },
-          { "item": "pasta", "chance": 25, "repeat": 3 },
+          { "item": "pasta_ingredients", "chance": 25, "repeat": 3 },
           { "item": "dry_goods", "chance": 25, "repeat": 3 }
         ],
         "d": { "item": "office_supplies", "chance": 70, "repeat": 3 },
@@ -524,7 +524,7 @@
         "B": [ { "item": "textbooks", "chance": 50 }, { "item": "manuals", "chance": 50 } ],
         "C": [
           { "item": "cannedfood", "chance": 25, "repeat": 3 },
-          { "item": "pasta", "chance": 10, "repeat": 3 },
+          { "item": "pasta_ingredients", "chance": 10, "repeat": 3 },
           { "item": "dry_goods", "chance": 10, "repeat": 3 }
         ],
         "F": { "item": "fridgesnacks", "chance": 25, "repeat": 5 },

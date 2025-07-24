@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    
     "om_terrain": "evac_center_13",
     "weight": 1000000,
     "object": {
@@ -48,7 +47,10 @@
         "d": { "item": "dishes_dining", "chance": 80, "repeat": [ 2, 5 ] },
         "k": { "item": "cubical_office", "chance": 20, "repeat": [ 1, 2 ] },
         "r": { "item": "shower", "chance": 80, "repeat": [ 1, 3 ] },
-        "u": [ { "item": "cannedfood", "chance": 80, "repeat": [ 1, 8 ] }, { "item": "pasta", "chance": 70, "repeat": [ 1, 8 ] } ],
+        "u": [
+          { "item": "cannedfood", "chance": 80, "repeat": [ 1, 8 ] },
+          { "item": "pasta_ingredients", "chance": 70, "repeat": [ 1, 8 ] }
+        ],
         "v": { "item": "shelter", "repeat": [ 1, 12 ] }
       },
       "place_npcs": [
@@ -65,7 +67,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "church" ],
     "weight": 200,
     "object": {
@@ -107,7 +108,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "arcana_church_ne_1",
     "object": {
       "mapgensize": [ 3, 3 ],
@@ -121,7 +121,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "arcana_church_ne_2",
     "object": {
       "mapgensize": [ 3, 3 ],
@@ -134,7 +133,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "church_1" ],
     "weight": 300,
     "object": {
@@ -189,7 +187,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "arcana_church_goth_1",
     "object": {
       "mapgensize": [ 4, 4 ],
@@ -203,7 +200,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "arcana_church_goth_2",
     "object": {
       "mapgensize": [ 4, 4 ],
@@ -216,7 +212,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": "church_3rdfloor_1",
     "weight": 300,
     "object": {
@@ -293,7 +288,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "s_bookstore" ],
     "weight": 250,
     "object": {
@@ -404,7 +398,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "s_bookstore_1" ],
     "weight": 250,
     "object": {
@@ -499,7 +492,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "s_bookstore_2" ],
     "weight": 1500,
     "object": {
@@ -623,7 +615,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "mortuary" ],
     "weight": 80,
     "object": {
@@ -723,7 +714,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "abstorefront_1" ],
     "object": {
       "fill_ter": "t_floor",
@@ -797,7 +787,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "abstorefront_1_spawns",
     "object": {
       "mapgensize": [ 24, 24 ],
@@ -818,7 +807,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "house_arcana" ],
     "weight": 300,
     "object": {
@@ -920,7 +908,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "house_arcana_roof" ],
     "weight": 300,
     "object": {
@@ -957,7 +944,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "house_arcana_encounter_1",
     "//": "Formerly inhabited by a non-faction arcanist, one way or another they never came back...",
     "object": {
@@ -998,7 +984,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "house_arcana_encounter_3",
     "//": "Raid!  Similar layout as encounter number 2, but the Cleansing Flame got here first.  They didn't have time to clean up and finish looting, though.",
     "object": {
@@ -1054,7 +1039,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "house_arcana_2" ],
     "weight": 300,
     "object": {
@@ -1157,7 +1141,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "house_arcana_roof_2" ],
     "weight": 300,
     "object": {
@@ -1194,7 +1177,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "house_arcana_encounter_4",
     "//": "A mage hunter trapped themselves after being followed by ...something.",
     "object": {
@@ -1224,7 +1206,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "microlab_sub_station" ],
     "weight": 125,
     "object": {
@@ -1271,7 +1252,6 @@
   {
     "type": "mapgen",
     "nested_mapgen_id": "microlab_generic_tile",
-    
     "object": {
       "mapgensize": [ 24, 24 ],
       "rows": [
@@ -1322,7 +1302,6 @@
   {
     "//": "7x7 workstation with chance of magitech-related materials.",
     "type": "mapgen",
-    
     "nested_mapgen_id": "lab_room_7x7_rare",
     "object": {
       "mapgensize": [ 7, 7 ],
@@ -1364,7 +1343,6 @@
   {
     "//": "9x9 workstation with sealed storage for magic stuff.",
     "type": "mapgen",
-    
     "nested_mapgen_id": "lab_room_9x9_rare",
     "object": {
       "mapgensize": [ 9, 9 ],
@@ -1421,7 +1399,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "roof_4x4_survivor",
     "object": {
       "mapgensize": [ 4, 4 ],
@@ -1449,7 +1426,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "roof_6x6_survivor",
     "object": {
       "mapgensize": [ 6, 6 ],
@@ -1492,7 +1468,6 @@
     }
   },
   {
-    
     "om_terrain": "urban_18_8",
     "type": "mapgen",
     "weight": 500,
@@ -1540,7 +1515,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "s_antique" ],
     "weight": 250,
     "object": {
@@ -1613,7 +1587,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "museum" ],
     "weight": 500,
     "object": {
@@ -1712,7 +1685,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "s_electronics" ],
     "weight": 75,
     "object": {
@@ -1824,7 +1796,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "lab_finale_1level" ],
     "weight": 100,
     "object": {
@@ -1949,7 +1920,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "s_library" ],
     "weight": 125,
     "object": {
@@ -2008,7 +1978,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "s_library_1" ],
     "weight": 125,
     "object": {
@@ -2068,7 +2037,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "s_library_2" ],
     "weight": 250,
     "object": {
@@ -2130,7 +2098,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "house_library" ],
     "weight": 100,
     "object": {
@@ -2205,7 +2172,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ [ "microlab_arcana_surface" ] ],
-    
     "object": {
       "fill_ter": "t_concrete",
       "rows": [
@@ -2256,7 +2222,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "microlab_arcana_rock_connector" ],
     "weight": 1000,
     "object": {
@@ -2293,7 +2258,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "microlab_arcana_surface_connector" ],
-    
     "object": {
       "fill_ter": "t_strconc_floor",
       "rows": [
@@ -2339,7 +2303,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ [ "microlab_arcana_server_room" ] ],
-    
     "object": {
       "fill_ter": "t_strconc_floor",
       "rows": [
@@ -2393,7 +2356,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_warehouse_lab" ],
     "weight": 500,
     "object": {
@@ -2478,7 +2440,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": "arcana_warehouse_lab_roof",
     "object": {
       "fill_ter": "t_tar_flat_roof",
@@ -2514,7 +2475,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_cave_caravan" ],
     "weight": 1000,
     "object": {
@@ -2575,7 +2535,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_cave_caravan_underground" ],
     "weight": 1000,
     "object": {
@@ -2635,7 +2594,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "pawn" ],
     "weight": 100,
     "object": {
@@ -2720,7 +2678,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "pawn_1" ],
     "weight": 100,
     "object": {
@@ -2811,7 +2768,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "cave_underground" ],
     "weight": 250,
     "object": {
@@ -2861,7 +2817,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "arcana_cave_underground_1",
     "object": {
       "mapgensize": [ 7, 7 ],
@@ -2888,7 +2843,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "arcana_cave_underground_2",
     "object": {
       "mapgensize": [ 7, 7 ],
@@ -2911,7 +2865,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "arcana_cave_underground_3",
     "object": {
       "mapgensize": [ 7, 7 ],
@@ -2939,7 +2892,6 @@
   },
   {
     "type": "mapgen",
-    
     "nested_mapgen_id": "arcana_cave_underground_4",
     "object": {
       "mapgensize": [ 7, 7 ],
@@ -2966,7 +2918,6 @@
     }
   },
   {
-    
     "om_terrain": "desolatebarn",
     "type": "mapgen",
     "weight": 100,
@@ -3031,7 +2982,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "cabin" ],
     "weight": 200,
     "object": {
@@ -3079,7 +3029,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "cabin_1" ],
     "weight": 200,
     "object": {
@@ -3141,7 +3090,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "cabin_2" ],
     "weight": 125,
     "object": {
@@ -3190,7 +3138,6 @@
     }
   },
   {
-    
     "om_terrain": "cabin_3",
     "type": "mapgen",
     "weight": 150,
@@ -3251,7 +3198,6 @@
     }
   },
   {
-    
     "om_terrain": "cabin_4",
     "type": "mapgen",
     "weight": 150,
@@ -3315,7 +3261,6 @@
     }
   },
   {
-    
     "om_terrain": "cabin_5",
     "type": "mapgen",
     "weight": 150,
@@ -3377,7 +3322,6 @@
     }
   },
   {
-    
     "om_terrain": "cabin_6",
     "type": "mapgen",
     "weight": 150,
@@ -3436,7 +3380,6 @@
     }
   },
   {
-    
     "om_terrain": "cabin_7",
     "type": "mapgen",
     "weight": 150,
@@ -3503,7 +3446,6 @@
   {
     "type": "mapgen",
     "om_terrain": "riverside_dwelling",
-    
     "weight": 100,
     "object": {
       "rows": [
@@ -3565,7 +3507,6 @@
   {
     "type": "mapgen",
     "om_terrain": "riverside_dwelling",
-    
     "weight": 75,
     "object": {
       "rows": [
