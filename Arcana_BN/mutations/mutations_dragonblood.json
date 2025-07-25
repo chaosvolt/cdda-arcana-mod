@@ -293,7 +293,7 @@
     "allow_soft_gear": true,
     "falling_damage_multiplier": 0.75,
     "dodge_modifier": -1,
-    "passive_mods": { "str_mod": 2, "dex_mod": -1 }
+    "enchantments": [ "ENCH_DRAGONBLOOD_SCALY_WINGS" ]
   },
   {
     "type": "mutation",
@@ -320,8 +320,7 @@
     "restricts_gear": [ "torso" ],
     "allow_soft_gear": true,
     "//": "Enchantment handles falling damage, this multiplier covers being tossed by a hulk for consistency with other wing traits.",
-    "falling_damage_multiplier": 0.75,
-    "passive_mods": { "str_mod": 5, "dex_mod": -2 }
+    "falling_damage_multiplier": 0.75
   },
   {
     "type": "mutation",
