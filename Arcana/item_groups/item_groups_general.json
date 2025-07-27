@@ -203,14 +203,15 @@
     "id": "magic_books",
     "type": "item_group",
     "items": [
-      [ "book_magicfordummies", 15 ],
+      [ "book_magicfordummies", 20 ],
       [ "book_potioncraft", 15 ],
       [ "book_scrollcraft", 15 ],
       [ "book_summoning", 10 ],
+      [ "book_naturemagic", 10 ],
+      [ "book_elementalism", 15 ],
       [ "book_hexenhammer", 15 ],
       [ "book_bloodmagic", 15 ],
       [ "book_sacrifice", 10 ],
-      [ "book_naturemagic", 10 ],
       { "group": "magic_books_rare", "prob": 5 }
     ]
   },
@@ -223,11 +224,12 @@
     "id": "magic_books_postapoc",
     "type": "item_group",
     "items": [
-      [ "book_magicfordummies", 15 ],
-      [ "book_potioncraft", 15 ],
-      [ "book_scrollcraft", 10 ],
+      [ "book_magicfordummies", 20 ],
+      [ "book_potioncraft", 10 ],
+      [ "book_scrollcraft", 5 ],
       [ "book_summoning", 5 ],
       [ "book_naturemagic", 10 ],
+      [ "book_elementalism", 10 ],
       [ "book_hexenhammer", 15 ],
       [ "book_bloodmagic", 15 ],
       [ "book_sacrifice", 15 ],
@@ -248,9 +250,10 @@
       [ "philosophy_book", 15 ],
       [ "poetry_book", 10 ],
       [ "book_potioncraft", 25 ],
+      [ "book_elementalism", 20 ],
       [ "book_scrollcraft", 20 ],
       [ "book_summoning", 10 ],
-      [ "book_magicfordummies", 10 ]
+      [ "book_magicfordummies", 15 ]
     ]
   },
   {
@@ -262,9 +265,10 @@
       [ "philosophy_book", 15 ],
       [ "poetry_book", 10 ],
       [ "book_potioncraft", 25 ],
+      [ "book_elementalism", 25 ],
       [ "book_scrollcraft", 15 ],
       [ "book_summoning", 10 ],
-      [ "book_magicfordummies", 5 ],
+      [ "book_magicfordummies", 15 ],
       [ "book_syncretism", 10 ]
     ]
   },

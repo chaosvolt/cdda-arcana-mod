@@ -82,7 +82,7 @@
     "difficulty": 2,
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_bloodmagic", 0 ] ],
+    "book_learn": [ [ "book_bloodmagic", 0 ], [ "book_elementalism", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
@@ -101,7 +101,7 @@
     "difficulty": 2,
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_hexenhammer", 1 ], [ "book_naturemagic", 1 ] ],
+    "book_learn": [ [ "book_hexenhammer", 1 ], [ "book_elementalism", 1 ], [ "book_naturemagic", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
@@ -121,7 +121,7 @@
     "difficulty": 2,
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
+    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_elementalism", 2 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
@@ -140,7 +140,7 @@
     "difficulty": 3,
     "time": "90 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
+    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_elementalism", 2 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
@@ -179,6 +179,26 @@
   },
   {
     "type": "recipe",
+    "result": "lightning_talisman",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_OTHER",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": "60 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_hexenhammer", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "material_sand", 50 ], [ "copper", 3 ] ],
+      [ [ "glass_shard", 10 ] ],
+      [ [ "essence_dull", 20 ] ]
+    ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+  },
+  {
+    "type": "recipe",
     "result": "spirit_talisman",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_OTHER",
@@ -186,7 +206,7 @@
     "difficulty": 4,
     "time": "2 h",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_hexenhammer", 3 ] ],
+    "book_learn": [ [ "book_hexenhammer", 3 ], [ "book_elementalism", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
       [ [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],

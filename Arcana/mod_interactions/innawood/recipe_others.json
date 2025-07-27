@@ -184,6 +184,27 @@
   },
   {
     "type": "recipe",
+    "result": "lightning_talisman",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_OTHER",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": "60 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "autolearn": true,
+    "book_learn": [ [ "book_hexenhammer", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "material_sand", 50 ], [ "copper", 3 ] ],
+      [ [ "glass_shard", 10 ] ],
+      [ [ "essence_dull", 20 ] ]
+    ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+  },
+  {
+    "type": "recipe",
     "result": "spirit_talisman",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_OTHER",

@@ -1,0 +1,78 @@
+[
+  {
+    "//": "This is necesssary due to bug 82080. Remove if that is ever fixed",
+    "id": "air_talisman_self_destruct",
+    "type": "SPELL",
+    "shape": "blast",
+    "name": { "str": "Air Talisman Self destruct", "//~": "NO_I18N" },
+    "description": { "str": "Removes air talisman.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_AIR_TALISMAN"
+  },
+  {
+    "id": "EOC_REMOVE_AIR_TALISMAN",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "air_talisman", "count": 1 } ]
+  },
+  {
+    "id": "flame_talisman_self_destruct",
+    "type": "SPELL",
+    "shape": "blast",
+    "name": { "str": "Flame Talisman Self destruct", "//~": "NO_I18N" },
+    "description": { "str": "Removes flame talisman.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_FLAME_TALISMAN"
+  },
+  {
+    "id": "EOC_REMOVE_FLAME_TALISMAN",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "flame_talisman", "count": 1 } ]
+  },
+  {
+    "id": "water_talisman_self_destruct",
+    "type": "SPELL",
+    "shape": "blast",
+    "name": { "str": "Water Talisman Self destruct", "//~": "NO_I18N" },
+    "description": { "str": "Removes water talisman.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_WATER_TALISMAN"
+  },
+  {
+    "id": "EOC_REMOVE_WATER_TALISMAN",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "water_talisman", "count": 1 } ]
+  },
+  {
+    "id": "lightning_talisman_self_destruct",
+    "type": "SPELL",
+    "shape": "blast",
+    "name": { "str": "Water Talisman Self destruct", "//~": "NO_I18N" },
+    "description": { "str": "Removes water talisman.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_LIGHTNING_TALISMAN"
+  },
+  {
+    "id": "EOC_REMOVE_LIGHTNING_TALISMAN",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "lightning_talisman", "count": 1 } ]
+  },
+  {
+    "id": "spirit_talisman_self_destruct",
+    "type": "SPELL",
+    "shape": "blast",
+    "name": { "str": "Spirit Talisman Self destruct", "//~": "NO_I18N" },
+    "description": { "str": "Removes spirit talisman.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_SPIRIT_TALISMAN"
+  },
+  {
+    "id": "EOC_REMOVE_SPIRIT_TALISMAN",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "spirit_talisman", "count": 1 } ]
+  }
+]

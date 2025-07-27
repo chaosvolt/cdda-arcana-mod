@@ -128,6 +128,7 @@
           "not": { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
         },
         { "not": { "u_has_any_trait": [ "ARCANA_INNERHEAT", "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ] } },
+        { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
         {
           "or": [
             { "math": [ "u_hp('arm_l') < u_hp_arm_l_pre_casting" ] },

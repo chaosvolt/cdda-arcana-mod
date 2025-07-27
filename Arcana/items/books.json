@@ -200,6 +200,28 @@
     "read_fun": -1
   },
   {
+    "id": "book_elementalism",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "name": { "str": "The Riddle of the Elements", "str_pl": "copies of The Riddle of the Elements" },
+    "description": "A thick tome on the esoteric uses of the classical elements and the ways that a practitioner of the Art might use them to aid in their studies.\n\"The ancients were correct about the influence of the elements, not over the base material world, but over the subtle one.  Earth, air, fire, water, and the combinations and admixtures can be called and controlled to produce effects both wondrous and strange…\"",
+    "weight": "1887 g",
+    "volume": "1250 ml",
+    "price": "250 USD",
+    "price_postapoc": "20 USD",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "looks_like": "holybook_zara",
+    "color": "green",
+    "read_skill": "magic",
+    "required_level": 2,
+    "max_level": 4,
+    "intelligence": 10,
+    "time": "30 m",
+    "read_fun": -1
+  },
+  {
     "id": "recipe_lab_arcana",
     "type": "ITEM",
     "subtypes": [ "BOOK" ],

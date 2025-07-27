@@ -502,10 +502,21 @@
     "flags": [ "BLIND_EASY" ]
   },
   {
-    "result": "forest_talisman",
+    "result": "lightning_talisman",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 2,
+    "time": "20 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "essence_dull", 20 ] ], [ [ "ash", 4 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "forest_talisman",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
@@ -516,7 +527,7 @@
     "result": "spirit_talisman",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 2,
+    "difficulty": 3,
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
