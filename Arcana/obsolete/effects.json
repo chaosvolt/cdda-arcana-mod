@@ -1,0 +1,23 @@
+[
+  {
+    "type": "effect_type",
+    "id": "effect_water_talisman_aftermath",
+    "name": [ "Talismanic Enervation" ],
+    "desc": [ "You are feeling fatigued as part of the aftermath of using the water talisman." ],
+    "remove_message": "The aftereffects of using the water talisman fades away.",
+    "rating": "bad",
+    "max_intensity": 24,
+    "int_add_val": 1,
+    "base_mods": { "sleepiness_min": [ 1 ], "sleepiness_tick": [ 125 ] },
+    "scaling_mods": { "sleepiness_tick": [ -2 ] },
+    "enchantments": [
+      {
+        "condition": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') >= 3" ] },
+        "values": [ { "value": "DODGE_CHANCE", "add": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') / -3" ] } } ]
+      },
+      {
+        "values": [ { "value": "METABOLISM", "multiply": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') * 0.1" ] } } ]
+      }
+    ]
+  }
+]

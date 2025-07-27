@@ -65,7 +65,7 @@
   {
     "type": "effect_type",
     "id": "magic_sign_exertion",
-    "name": [ "Magic Sign Exertion" ],
+    "name": [ "Pattern Sorcery Exertion" ],
     "desc": [ "Use of pattern sorcery increases sleepiness gain." ],
     "apply_message": "You feel a slight sense of exertion from casting the spell.",
     "remove_message": "The exertion of spellcasting fades from your mind.",
@@ -915,9 +915,9 @@
   },
   {
     "type": "effect_type",
-    "id": "effect_water_talisman_aftermath",
+    "id": "effect_forest_talisman_aftermath",
     "name": [ "Talismanic Enervation" ],
-    "desc": [ "You are feeling fatigued as part of the aftermath of using the water talisman." ],
+    "desc": [ "You are feeling fatigued as part of the aftermath of using the forest talisman." ],
     "remove_message": "The aftereffects of using the water talisman fades away.",
     "rating": "bad",
     "max_intensity": 24,
@@ -939,7 +939,7 @@
     "id": "talisman_pet_buff",
     "name": [ "Defender's Ward" ],
     "desc": [
-      "Immunity to debuffs such as blindness, bleeding, stunning, etc.  Monsters (but not NPCs) additionally gain increased melee damage, accuracy, and dodge."
+      "Immunity to debuffs such as blindness, bleeding, stunning, etc.  Targets additionally gain increased melee damage, accuracy, and dodge."
     ],
     "removes_effects": [
       "bleed",
@@ -977,7 +977,17 @@
       "taint",
       "visuals"
     ],
-    "base_mods": { "hit_mod": [ 5 ], "dodge_mod": [ 5 ], "speed_mod": [ 100 ], "bash_mod": [ 25 ] },
+    "base_mods": { "hit_mod": [ 1 ], "dodge_mod": [ 2 ], "bash_mod": [ 5 ] },
+    "enchantments": [
+      {
+        "values": [
+          { "value": "MELEE_TO_HIT", "add": 1 },
+          { "value": "DODGE_CHANCE", "add": 2 },
+          { "value": "MELEE_DAMAGE", "multiply": 0.15 },
+          { "value": "SPEED", "multiply": 0.1 }
+        ]
+      }
+    ],
     "max_duration": "100 m"
   },
   {
@@ -1633,5 +1643,44 @@
       }
     ],
     "flags": [ "EFFECT_IMPEDING" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_talisman_lighten",
+    "name": [ "Lightened" ],
+    "desc": [ "You feel much, much lighter." ],
+    "remove_message": "The magic buoying you up fades away.",
+    "decay_messages": [ [ "You are starting to feel heavier.", "bad" ] ],
+    "max_duration": "30 m",
+    "max_intensity": 30,
+    "int_dur_factor": "1 m",
+    "rating": "good",
+    "enchantments": [
+      {
+        "encumbrance_modifier": [
+          { "part": "head", "multiply": -0.25 },
+          { "part": "torso", "multiply": -0.25 },
+          { "part": "arm_r", "multiply": -0.25 },
+          { "part": "arm_l", "multiply": -0.25 },
+          { "part": "leg_r", "multiply": -0.25 },
+          { "part": "leg_l", "multiply": -0.25 }
+        ],
+        "values": [ { "value": "TOTAL_WEIGHT", "multiply": -0.25 } ]
+      }
+    ],
+    "flags": [ "GLIDE", "FEATHER_FALL" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_talisman_waterwalking",
+    "name": [ "Waterwalking" ],
+    "desc": [ "You feel much, much lighter." ],
+    "remove_message": "You touch the ground once more.",
+    "decay_messages": [ [ "Your feet slowly begin sinking.", "bad" ] ],
+    "max_duration": "30 m",
+    "max_intensity": 30,
+    "int_dur_factor": "1 m",
+    "rating": "good",
+    "flags": [ "WATERWALKING", "ITEM_WATERPROOFING" ]
   }
 ]

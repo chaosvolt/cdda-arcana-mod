@@ -494,7 +494,29 @@
     "result": "air_talisman",
     "type": "uncraft",
     "skill_used": "magic",
-    "difficulty": 3,
+    "difficulty": 2,
+    "time": "20 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "forest_talisman",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": "30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 4 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "spirit_talisman",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 2,
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
@@ -810,7 +832,7 @@
     "components": [ [ [ "silver_small", 95 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
-    "result": "summon_flaming_eye",
+    "result": "summon_flesh_angel",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 6,

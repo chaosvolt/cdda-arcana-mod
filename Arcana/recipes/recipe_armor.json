@@ -286,11 +286,10 @@
     "skills_required": [ "survival", 3 ],
     "time": "25 m",
     "activity_level": "NO_EXERCISE",
-    "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
-    "components": [ [ [ "triffid_garland", 1 ] ], [ [ "water_talisman", 1 ] ], [ [ "earth_talisman", 1 ] ] ],
+    "components": [ [ [ "triffid_garland", 1 ] ], [ [ "forest_talisman", 1 ] ], [ [ "earth_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
@@ -322,7 +321,6 @@
     "skills_required": [ "survival", 3 ],
     "time": "25 m",
     "activity_level": "NO_EXERCISE",
-    "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
@@ -359,7 +357,6 @@
     "skills_required": [ "fabrication", 3 ],
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
-    "autolearn": true,
     "book_learn": [ [ "book_bloodmagic", 3 ], [ "book_sacrifice", 3 ], [ "book_syncretism", 2 ] ],
     "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
@@ -394,7 +391,6 @@
     "skills_required": [ "fabrication", 3 ],
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
-    "autolearn": true,
     "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 4 ] ],
     "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
@@ -651,7 +647,7 @@
       [ [ "ragpouch", 1 ] ],
       [ [ "copper", 50 ], [ "scrap_copper", 2 ] ],
       [ [ "cotton_patchwork", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ],
-      [ [ "water_talisman", 1 ], [ "vortex_stone", 1 ], [ "vortex_shard", 1 ] ]
+      [ [ "air_talisman", 1 ], [ "vortex_stone", 1 ], [ "vortex_shard", 1 ] ]
     ],
     "flags": [ "SECRET" ]
   },

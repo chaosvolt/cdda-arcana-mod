@@ -1,0 +1,17 @@
+[
+  {
+    "id": "prac_arcana_skill_begin",
+    "type": "practice",
+    "activity_level": "NO_EXERCISE",
+    "category": "CC_PRACTICE",
+    "subcategory": "CSC_PRACTICE_ARCANA",
+    "name": "occult experimentation",
+    "description": "Practice experimenting with varieties of essence and drawing on their esoteric properties.",
+    "skill_used": "magic",
+    "time": "1 h",
+    "practice_data": { "min_difficulty": 0, "max_difficulty": 1, "skill_limit": 2 },
+    "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 10 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  }
+]

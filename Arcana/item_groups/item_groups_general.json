@@ -18,6 +18,17 @@
     ]
   },
   {
+    "id": "briarwitch_casualties",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
+      { "group": "briarwitch_consumables", "prob": 25 },
+      { "group": "magic_crafting", "prob": 25 },
+      { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
+    ]
+  },
+  {
     "id": "summoner_casualties_fresh",
     "type": "item_group",
     "subtype": "collection",
@@ -127,7 +138,7 @@
       [ "scroll_subversion", 10 ],
       [ "summon_kreck", 8 ],
       [ "summon_vinebeast", 8 ],
-      [ "summon_flaming_eye", 7 ],
+      [ "summon_flesh_angel", 7 ],
       [ "summon_hunting_horror", 7 ],
       [ "summon_flying_polyp", 6 ],
       [ "summon_nether_huntsman", 6 ],
@@ -142,6 +153,7 @@
       [ "totem_elecresist", 3 ],
       [ "totem_clarity", 3 ],
       [ "totem_heal", 3 ],
+      [ "totem_translocation", 2 ],
       [ "totem_flamearmor", 3 ],
       [ "totem_clairvoyance", 3 ],
       [ "totem_invis", 3 ],
@@ -169,7 +181,8 @@
       [ "totem_invis", 3 ],
       [ "totem_cleric", 2 ],
       [ "totem_free_action", 2 ],
-      [ "totem_acidspray", 2 ]
+      [ "totem_acidspray", 2 ],
+      [ "totem_translocation", 2 ]
     ]
   },
   {

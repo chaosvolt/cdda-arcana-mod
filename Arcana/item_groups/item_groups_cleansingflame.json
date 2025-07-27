@@ -317,11 +317,10 @@
     "items": [
       { "group": "cleansing_flame_gear_consumables", "prob": 15 },
       [ "scroll_blank", 5 ],
-      [ "flame_talisman", 5 ],
       [ "water_talisman", 10 ],
       [ "earth_talisman", 10 ],
       [ "air_talisman", 5 ],
-      [ "totem_plants", 1 ]
+      [ "totem_cleric", 1 ]
     ]
   },
   {
@@ -353,7 +352,7 @@
       { "item": "tea_bark", "prob": 5, "charges": 3, "container-item": "bottle_glass" },
       [ "bandages_makeshift", 30 ],
       [ "bandages_makeshift_boiled", 15 ],
-      [ "water_talisman", 5 ],
+      [ "spirit_talisman", 5 ],
       [ "poppy_pain", 5 ]
     ]
   },
@@ -370,10 +369,10 @@
       [ "scroll_blank", 10 ],
       [ "mana_gem_dull", 5 ],
       { "group": "arcana_totem_random", "prob": 5 },
-      [ "flame_talisman", 10 ],
       [ "water_talisman", 10 ],
       [ "earth_talisman", 5 ],
-      [ "air_talisman", 5 ]
+      [ "air_talisman", 5 ],
+      [ "spirit_talisman", 5 ]
     ]
   },
   {

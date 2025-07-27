@@ -3081,7 +3081,7 @@
         { "group": "homeguns", "x": 7, "y": 9, "chance": 30, "ammo": 90, "magazine": 100 },
         { "item": "note_flame_hint", "x": 15, "y": 10 },
         { "item": "holy_symbol", "x": 15, "y": 10, "chance": 75 },
-        { "item": "water_talisman", "x": 15, "y": 10, "chance": 75 },
+        { "item": "spirit_talisman", "x": 15, "y": 10, "chance": 75 },
         { "item": "book_magicfordummies", "x": 16, "y": 10 },
         { "item": "arcanemap", "x": 16, "y": 10 }
       ],
@@ -3253,7 +3253,7 @@
       "items": { "[": { "item": "cleansing_flame_books_postapoc", "chance": 60, "repeat": 3 } },
       "place_loot": [
         { "item": "holy_symbol", "x": 15, "y": 6, "chance": 75 },
-        { "item": "water_talisman", "x": 15, "y": 6, "chance": 75 },
+        { "item": "spirit_talisman", "x": 15, "y": 6, "chance": 75 },
         { "item": "book_magicfordummies", "x": 15, "y": 6 },
         { "item": "note_flame_hint", "x": 15, "y": 6 },
         { "item": "arcanemap", "x": 15, "y": 6 }
@@ -3436,7 +3436,7 @@
       "items": { "[": { "item": "cleansing_flame_books_postapoc", "chance": 60, "repeat": 3 } },
       "place_loot": [
         { "item": "holy_symbol", "x": 21, "y": 13, "chance": 75 },
-        { "item": "water_talisman", "x": 21, "y": 13, "chance": 75 },
+        { "item": "spirit_talisman", "x": 21, "y": 13, "chance": 75 },
         { "item": "book_magicfordummies", "x": 21, "y": 13 },
         { "item": "note_flame_hint", "x": 21, "y": 13 },
         { "item": "arcanemap", "x": 21, "y": 13 }

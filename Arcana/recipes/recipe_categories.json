@@ -12,5 +12,11 @@
       "CSC_ARCANA_RESEARCH",
       "CSC_ARCANA_OTHER"
     ]
+  },
+  {
+    "type": "recipe_category",
+    "id": "CC_PRACTICE",
+    "copy-from": "CC_PRACTICE",
+    "extend": { "recipe_subcategories": [ "CSC_PRACTICE_ARCANA" ] }
   }
 ]

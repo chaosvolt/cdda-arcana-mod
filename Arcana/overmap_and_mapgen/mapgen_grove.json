@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    
     "om_terrain": [ "strange_grove" ],
     "weight": 300,
     "object": {
@@ -43,7 +42,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "strange_grove_2" ],
     "weight": 300,
     "object": {
@@ -81,7 +79,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "grove_ruins" ],
     "weight": 300,
     "object": {
@@ -102,7 +99,7 @@
         "#|{RR~R..{|RRR.~~~R|..|#",
         "#|{.RRR..{|P....~~~|..|#",
         "#R{.....~{R........+..|#",
-        "#RR....RR~RRKAF.RR.|..|#",
+        "#RR....RR~RRK.F.RR.|..|#",
         "#|].......~RR|||||||..|#",
         "#|]...................|#",
         "#|RR.|...............R|#",
@@ -112,7 +109,13 @@
         "###########R..#~...#R###"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": { "|": "t_concrete_wall", "%": "t_rock_floor", "R": "t_root_wall_arcana", "=": "t_rock" },
+      "terrain": {
+        ".": [ [ "t_rock_floor", 10 ], [ "t_dirt_underground", 1 ] ],
+        "|": "t_concrete_wall",
+        "%": "t_rock_floor",
+        "R": "t_root_wall_arcana",
+        "=": "t_rock"
+      },
       "furniture": { "%": "f_rubble_rock" },
       "mapping": { "%": { "item": [ { "item": "rock", "repeat": [ 5, 10 ] } ] } },
       "items": {
@@ -120,6 +123,7 @@
         "]": [ { "item": "unaligned_arcanist_books", "chance": 50, "repeat": 3 } ]
       },
       "place_loot": [
+        { "group": "briarwitch_casualties", "x": [ 12, 21 ], "y": [ 9, 11 ], "repeat": [ 1, 4 ] },
         { "group": "summoner_casualties", "x": [ 12, 21 ], "y": [ 9, 11 ], "repeat": [ 1, 2 ] },
         { "group": "summoner_casualties", "x": [ 2, 6 ], "y": [ 9, 11 ], "repeat": [ 1, 2 ] },
         { "group": "summoner_casualties", "x": [ 3, 6 ], "y": [ 15, 18 ], "repeat": [ 1, 2 ] },
@@ -127,14 +131,13 @@
         { "group": "unaligned_arcanist_spells", "x": [ 16, 18 ], "y": 2, "chance": 10, "repeat": 3 }
       ],
       "place_monster": [
-        { "group": "GROUP_GROVEBASEMENT", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 5, 10 ] },
+        { "group": "GROUP_GROVEBASEMENT_NATURAL", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 5, 10 ] },
         { "monster": "mon_moruboru", "x": 3, "y": 4 }
       ]
     }
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "grove_ruins_2" ],
     "weight": 300,
     "object": {
@@ -165,12 +168,13 @@
         "########################"
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": { "<": "t_slope_up", "R": "t_root_wall_arcana" },
+      "terrain": { ".": [ [ "t_rock_floor", 20 ], [ "t_dirt_underground", 1 ] ], "<": "t_slope_up", "R": "t_root_wall_arcana" },
       "place_loot": [
         { "group": "summoner_casualties_fresh", "x": [ 8, 15 ], "y": [ 10, 13 ], "repeat": [ 1, 3 ] },
+        { "group": "briarwitch_casualties", "x": [ 8, 15 ], "y": [ 10, 13 ], "repeat": [ 1, 2 ] },
         { "item": "note_grove", "x": [ 11, 14 ], "y": 16 }
       ],
-      "place_monster": [ { "group": "GROUP_GROVEBASEMENT", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 5, 10 ] } ]
+      "place_monster": [ { "group": "GROUP_GROVEBASEMENT_NATURAL", "x": [ 2, 22 ], "y": [ 2, 22 ], "repeat": [ 5, 10 ] } ]
     }
   }
 ]

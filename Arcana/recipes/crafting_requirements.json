@@ -48,7 +48,7 @@
   {
     "id": "arcana_flora_forage",
     "type": "requirement",
-    "//": "Used for flame talismans to equal one blood essence.",
+    "//": "Used for forest talismans to equal one blood essence.",
     "components": [
       [
         [ "veggy_wild", 10 ],

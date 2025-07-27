@@ -795,7 +795,7 @@
     "duration_increment": -1500
   },
   {
-    "id": "arcana_magic_dampening_aoe",
+    "id": "arcana_magic_translocation_aoe",
     "type": "SPELL",
     "name": { "str": "Aftermath: Displacement AoE" },
     "description": "This adds the extra fog around your surroundings.",

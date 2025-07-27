@@ -6,17 +6,6 @@
     "points": 0,
     "description": "Through long struggle you have mastered the art of sorcery.",
     "valid": false,
-    "enchantments": [
-      {
-        "values": [
-          { "value": "CARDIO_MULTIPLIER", "multiply": { "math": [ "u_spell_count('school': 'PATTERN_SORCERY') * 0.025" ] } },
-          {
-            "value": "SLEEPINESS_REGEN",
-            "multiply": { "math": [ "u_spell_count('school': 'PATTERN_SORCERY') * 0.0125" ] }
-          }
-        ]
-      }
-    ],
     "flags": [ "ATTUNEMENT" ]
   },
   {

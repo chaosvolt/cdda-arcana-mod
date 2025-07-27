@@ -58,13 +58,14 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_ARCANA_BLOOD_MAGIC_SACRIFICE_BONUSES",
+    "id": "EOC_ARCANA_BLOOD_MAGIC_SACRIFICE_BONUSES_REMOVED_AFTER_CASTING",
     "eoc_type": "EVENT",
     "required_event": "opens_spellbook",
     "condition": {
       "and": [
         { "u_has_trait": "ARCANA_BLOOD_MAGIC" },
-        { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
+        { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] },
+        { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] }
       ]
     },
     "effect": [
@@ -81,6 +82,22 @@
           { "math": [ "u_spellcasting_adjustment('duration ', 'school': 'ARCANA_BLOOD_MAGIC' ) = 4" ] }
         ]
       }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_BLOOD_MAGIC_SACRIFICE_BONUSES",
+    "eoc_type": "EVENT",
+    "required_event": "spellcasting_finish",
+    "condition": {
+      "and": [
+        { "u_has_trait": "ARCANA_BLOOD_MAGIC" },
+        { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
+      ]
+    },
+    "effect": [
+      { "u_lose_effect": "effect_arcana_blood_magic_killed_human" },
+      { "u_lose_effect": "effect_arcana_blood_magic_killed" }
     ]
   },
   {

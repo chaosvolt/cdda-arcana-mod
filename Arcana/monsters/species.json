@@ -11,5 +11,10 @@
     "//": "This is for a touch of compatibility with Magiclysm.",
     "id": "DRAGON",
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ]
+  },
+  {
+    "type": "SPECIES",
+    "//": "This is for a touch of compatibility with Magiclysm.",
+    "id": "FOREST_ELEMENTAL"
   }
 ]

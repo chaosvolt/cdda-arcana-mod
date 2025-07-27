@@ -118,7 +118,16 @@
       "str": "Sanguine Grimoire: Calling the Flesh-woven Titan",
       "str_pl": "Sanguine Grimoires: Calling the Flesh-woven Titan"
     },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual weaves blood and flesh together into a titan that will crush those before it--though whether yours or your enemies, who can say.",
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual weaves blood and flesh together into a titan that will crush those before it--though whether you or your enemies, who can say.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_summon_jabberwock" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_blood_teleport",
+    "name": { "str": "Sanguine Grimoire: Traveling the Sanguine Road", "str_pl": "Sanguine Grimoires: Traveling the Sanguine Road" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to sink into a bloodstain on the ground and emerge from any other nearby bloodstain.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_blood_teleport" ] }
   }
 ]

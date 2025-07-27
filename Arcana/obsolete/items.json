@@ -108,5 +108,13 @@
     ],
     "max_worn": 1,
     "extend": { "flags": [ "NO_TAKEOFF" ] }
+  },
+  {
+    "id": "summon_flaming_eye",
+    "type": "ITEM",
+    "copy-from": "leaves",
+    "name": { "str": "obsolete item" },
+    "description": "This item is obsolete and does nothing.",
+    "color": "magenta"
   }
 ]

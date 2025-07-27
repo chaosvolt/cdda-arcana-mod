@@ -69,13 +69,16 @@
           },
           { "id": "red_black_vulnerary", "fg": 9 },
           { "id": "yellow_white_incense", "fg": 10 },
-          { "id": [ "flame_talisman", "water_talisman", "earth_talisman", "air_talisman" ], "fg": 11 },
+          {
+            "id": [ "flame_talisman", "water_talisman", "earth_talisman", "air_talisman", "forest_talisman", "spirit_talisman" ],
+            "fg": 11
+          },
           {
             "id": [
               "silver_glyph",
               "summon_kreck",
               "summon_vinebeast",
-              "summon_flaming_eye",
+              "summon_flesh_angel",
               "summon_hunting_horror",
               "summon_dark_wyrm",
               "summon_mi_go",

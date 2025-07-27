@@ -274,6 +274,22 @@
   },
   {
     "type": "ITEM",
+    "id": "living_bramble",
+    "category": "other",
+    "//": "Obtained from thorn creatures.",
+    "symbol": ",",
+    "looks_like": "withered",
+    "color": "green",
+    "name": { "str": "living bramble" },
+    "description": "A piece of bramble with long, sharp thorns, seemingly still fresh and supple despite being detached from any plants.  It might be useful, or it could be made into a trophy of some sort.",
+    "material": [ "veggy" ],
+    "weight": "20 g",
+    "volume": "250 ml",
+    "melee_damage": { "bash": 1 },
+    "price_postapoc": "5 USD"
+  },
+  {
+    "type": "ITEM",
     "id": "engraved_stone",
     "category": "other",
     "//": "Obtained from shoggoths.  More rarely from amigara horrors, flesh angels, homunculi.",

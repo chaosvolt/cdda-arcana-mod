@@ -82,6 +82,7 @@
     "difficulty": 2,
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
+    "autolearn": true,
     "book_learn": [ [ "book_bloodmagic", 0 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
@@ -101,6 +102,7 @@
     "difficulty": 2,
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
+    "autolearn": true,
     "book_learn": [ [ "book_hexenhammer", 1 ], [ "book_naturemagic", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
@@ -121,6 +123,7 @@
     "difficulty": 2,
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
+    "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
@@ -140,6 +143,7 @@
     "difficulty": 3,
     "time": "90 m",
     "activity_level": "LIGHT_EXERCISE",
+    "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
@@ -160,6 +164,7 @@
     "difficulty": 4,
     "time": "2 h",
     "activity_level": "LIGHT_EXERCISE",
+    "autolearn": true,
     "book_learn": [ [ "book_naturemagic", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
@@ -186,6 +191,7 @@
     "difficulty": 4,
     "time": "2 h",
     "activity_level": "LIGHT_EXERCISE",
+    "autolearn": true,
     "book_learn": [ [ "book_hexenhammer", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
@@ -206,6 +212,7 @@
     "skills_required": [ "survival", 3 ],
     "time": "2 h 30m",
     "activity_level": "NO_EXERCISE",
+    "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "components": [ [ [ "charm_bone", 1 ] ], [ [ "flame_talisman", 1 ] ], [ [ "earth_talisman", 1 ] ] ],
@@ -222,6 +229,7 @@
     "skills_required": [ "survival", 3 ],
     "time": "2 h 30m",
     "activity_level": "NO_EXERCISE",
+    "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "components": [ [ [ "stinger_flute", 1 ] ], [ [ "water_talisman", 1 ] ], [ [ "air_talisman", 1 ] ] ],
@@ -258,6 +266,7 @@
     "skills_required": [ "fabrication", 5 ],
     "time": "6 h",
     "activity_level": "LIGHT_EXERCISE",
+    "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 4 ], [ "book_summoning", 3 ] ],
     "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
@@ -481,7 +490,8 @@
     "skills_required": [ "fabrication", 2 ],
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_scrollcraft", 1 ] ],
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_scrollcraft", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_carving" } ],
     "components": [ [ [ "paper", 5 ] ], [ [ "stick", 1 ], [ "2x4", 1 ] ] ]

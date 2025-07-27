@@ -732,6 +732,34 @@
     "max_field_intensity": 1
   },
   {
+    "id": "arcana_item_lighten",
+    "type": "SPELL",
+    "name": { "str": "Lighten" },
+    "description": "Blast a nearby target with fire.",
+    "message": "The talisman crumbles into ash, and you feel lighter!",
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "effect_arcana_talisman_lighten",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "RANDOM_DURATION" ],
+    "min_duration": 60000,
+    "max_duration": 180000
+  },
+  {
+    "id": "arcana_item_waterwalking",
+    "type": "SPELL",
+    "name": { "str": "Waterwalking" },
+    "description": "Walk on water.",
+    "message": "The talisman seems to melt, and you feel lighter!",
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "effect_arcana_talisman_lighten",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "RANDOM_DURATION" ],
+    "min_duration": 60000,
+    "max_duration": 180000
+  },
+  {
     "type": "SPELL",
     "id": "arcana_item_incense",
     "name": { "str": "Citrine Incense" },

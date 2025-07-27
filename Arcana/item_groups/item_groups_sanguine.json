@@ -64,7 +64,8 @@
         "distribution": [
           { "item": "blood_magic_spell_scroll_arcana_mark_summon_jabberwock", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_mark_summon_fiend", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm", "prob": 1 }
+          { "item": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_blood_teleport", "prob": 1 }
         ],
         "prob": 10
       },
@@ -119,7 +120,7 @@
       [ "healing_potion", 1 ],
       [ "summon_kreck", 2 ],
       [ "summon_vinebeast", 2 ],
-      [ "summon_flaming_eye", 2 ],
+      [ "summon_flesh_angel", 2 ],
       [ "summon_hunting_horror", 2 ],
       [ "summon_flying_polyp", 1 ],
       [ "summon_nether_huntsman", 1 ],

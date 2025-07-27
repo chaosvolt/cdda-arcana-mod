@@ -1,0 +1,15 @@
+[
+  {
+    "result": "summon_flaming_eye",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_OTHER",
+    "skill_used": "magic",
+    "difficulty": 10,
+    "time": "1 s",
+    "activity_level": "NO_EXERCISE",
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "paper", 1 ] ] ],
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "SECRET" ]
+  }
+]

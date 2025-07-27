@@ -1,2 +1,0 @@
-#
-DDA Supports dynamic mod compatibility, and thus does not require adding "sub" mods.  The DDA version of Arcana will automatically support Aftershock, Cataclysm++, Magiclysm, and Dinomod if those mods are loaded.  Load order of these mods does not matter.

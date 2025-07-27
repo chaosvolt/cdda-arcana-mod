@@ -1062,5 +1062,95 @@
         }
       ]
     }
+  },
+  {
+    "id": "scroll_spell_incandescent_conflagration",
+    "copy-from": "scroll_magic_base",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Pattern Scroll (Incandescent Conflagration)", "str_pl": "Pattern Scrolls (Incandescent Conflagration)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will summon a roar of flame in the target area, searing your enemies to the bone.\"",
+    "price": "3000 USD",
+    "price_postapoc": "100 USD",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Study the scroll",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_scroll_spell_incandescent_conflagration",
+          "condition": { "math": [ "u_spell_level('arcana_magic_conjure_flame')", "<=", "0" ] },
+          "effect": [
+            {
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_conjure_flame')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "scroll_spell_ethereal_translocation",
+    "copy-from": "scroll_magic_base",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Pattern Scroll (Ethereal Translocation)", "str_pl": "Pattern Scrolls (Ethereal Translocation)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will entangle you with your target, swapping both of your locations.\"",
+    "price": "3000 USD",
+    "price_postapoc": "100 USD",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Study the scroll",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_scroll_spell_ethereal_translocation",
+          "condition": { "math": [ "u_spell_level('arcana_magic_translocation')", "<=", "0" ] },
+          "effect": [
+            {
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_translocation')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
+                  "type": "good"
+                },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
 ]

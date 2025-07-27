@@ -1,0 +1,29 @@
+[
+  {
+    "id": "briarwitch_consumables",
+    "type": "item_group",
+    "items": [
+      [ "numbness_potion", 45 ],
+      [ "strength_potion", 40 ],
+      [ "speed_potion", 35 ],
+      [ "healing_potion", 30 ],
+      { "item": "forest_talisman", "prob": 30 },
+      { "item": "red_black_vulnerary", "prob": 25, "count": 2 },
+      { "item": "yellow_white_incense", "prob": 20, "count": 2 },
+      [ "scroll_sun", 25 ],
+      [ "scroll_moon", 25 ],
+      [ "scroll_artiface", 20 ],
+      [ "scroll_nature", 20 ],
+      [ "scroll_subversion", 10 ],
+      [ "summon_vinebeast", 8 ],
+      [ "totem_insight", 4 ],
+      [ "totem_plants", 4 ],
+      [ "totem_confusion", 4 ],
+      [ "totem_agile", 4 ],
+      [ "totem_lightning", 4 ],
+      [ "totem_strength", 4 ],
+      [ "totem_elecresist", 3 ],
+      [ "totem_heal", 3 ]
+    ]
+  }
+]
