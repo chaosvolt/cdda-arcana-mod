@@ -115,5 +115,17 @@
         { "item": "recipe_mil_augs", "prob": 50 }
       ]
     }
+  },
+  {
+    "type": "item_group",
+    "id": "cleansing_flame_gear_magic",
+    "copy-from": "cleansing_flame_gear_magic",
+    "extend": { "entries": [ { "item": "thermic_essence_cutter", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "magic_items",
+    "copy-from": "magic_items",
+    "extend": { "entries": [ { "item": "thermic_essence_cutter", "prob": 5 } ] }
   }
 ]
