@@ -494,5 +494,10 @@
         "message": "The ground churns as thick, tangled brambles burst forth and grow in moments."
       }
     ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "ter_arcana_clean_up_blood",
+    "field": [ { "result": [ "fd_null" ], "valid_field": [ "fd_blood" ], "message": "" } ]
   }
 ]

@@ -494,7 +494,8 @@
           { "id": "fd_white_potion_arcana", "fg": 252 },
           { "id": "fd_yellow_potion_arcana", "fg": 253 },
           { "id": "fd_red_potion_arcana", "fg": 254 },
-          { "id": "f_arcana_dimension_doorway", "fg": 255 }
+          { "id": "f_arcana_dimension_doorway", "fg": 255 },
+          { "id": "mon_sanguine_blood_golem", "fg": 256 }
         ],
         "sprite_width": 32,
         "sprite_height": 32

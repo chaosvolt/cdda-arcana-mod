@@ -48,5 +48,12 @@
     "field": "fd_red_potion_arcana",
     "intensity": 1,
     "qty": 9
+  },
+  {
+    "id": "emit_blood_golem_blood_death",
+    "type": "emit",
+    "field": "fd_blood",
+    "intensity": 3,
+    "qty": 6
   }
 ]

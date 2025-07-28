@@ -273,5 +273,34 @@
     "max_dot": 0.3,
     "dot_increment": 0.01,
     "damage_type": "stab"
+  },
+  {
+    "id": "monster_blood_heal_spell",
+    "type": "SPELL",
+    "name": { "str": "Heal Blood Self Monster ", "//~": "NO_I18N" },
+    "description": { "str": "A spell for a monster to heal themselves.  How DARE they!", "//~": "NO_I18N" },
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "RANDOM_DAMAGE" ],
+    "effect": "attack",
+    "effect_str": "effect_arcana_blood_golem_stood_on_blood",
+    "extra_effects": [ { "id": "monster_blood_heal_spell_remove_blood", "hit_self": true } ],
+    "shape": "blast",
+    "max_level": 50,
+    "min_duration": 100,
+    "max_duration": 6000,
+    "duration_increment": 100
+  },
+  {
+    "id": "monster_blood_heal_spell_remove_blood",
+    "type": "SPELL",
+    "name": { "str": "Clean up blood", "//~": "NO_I18N" },
+    "description": { "str": "Removes blood from the gound", "//~": "NO_I18N" },
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "shape": "blast",
+    "effect_str": "ter_arcana_clean_up_blood",
+    "min_aoe": 4,
+    "max_aoe": 4,
+    "flags": [ "SILENT" ]
   }
 ]

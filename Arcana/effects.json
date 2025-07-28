@@ -1704,5 +1704,13 @@
       }
     ],
     "flags": [ "BLEED_IMMUNE" ]
+  },
+  {
+    "id": "effect_arcana_blood_golem_stood_on_blood",
+    "type": "effect_type",
+    "name": [ "Blood-suffused" ],
+    "desc": [ "The bloodwalker has absorbed blood and is regenerating." ],
+    "rating": "good",
+    "show_in_info": true
   }
 ]

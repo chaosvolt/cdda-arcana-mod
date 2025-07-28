@@ -1,0 +1,10 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_BLOOD_GOLEM_DEATH",
+    "effect": [
+      { "npc_location_variable": { "context_val": "death_loc" } },
+      { "npc_emit": "emit_blood_golem_blood_death", "target_var": { "context_val": "death_loc" } }
+    ]
+  }
+]
