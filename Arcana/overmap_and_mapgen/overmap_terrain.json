@@ -5,8 +5,10 @@
     "name": "curious structure",
     "sym": "C",
     "color": "i_light_red",
+    "vision_levels": "isolated_building",
     "looks_like": "church",
     "see_cost": "high",
+    "travel_cost_type": "structure",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -20,7 +22,9 @@
     "name": "curious structure roof",
     "sym": "C",
     "color": "i_light_red",
+    "vision_levels": "roof_or_air",
     "looks_like": "church_roof",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -34,7 +38,9 @@
     "name": "curious underground structure",
     "sym": "C",
     "color": "dark_gray",
+    "vision_levels": "underground_dirt",
     "looks_like": "basement",
+    "travel_cost_type": "basement",
     "see_cost": "high"
   },
   {
@@ -48,7 +54,9 @@
     "name": "eerie cavern",
     "sym": "C",
     "color": "red",
+    "vision_levels": "underground_stone",
     "looks_like": "cave_underground",
+    "travel_cost_type": "basement",
     "see_cost": "high"
   },
   {
@@ -63,6 +71,7 @@
     "sym": "C",
     "color": "i_light_green",
     "looks_like": "cabin_strange",
+    "vision_levels": "blends_till_details",
     "see_cost": "high",
     "flags": [ "RISK_HIGH" ]
   },
@@ -72,6 +81,7 @@
     "copy-from": "strange_grove",
     "name": "strange grove",
     "sym": "T",
+    "vision_levels": "blends_till_details",
     "looks_like": "triffid_grove"
   },
   {
@@ -80,7 +90,9 @@
     "name": "underground ruin",
     "sym": "T",
     "color": "i_green",
+    "vision_levels": "underground_dirt",
     "looks_like": "triffid_roots",
+    "travel_cost_type": "basement",
     "see_cost": "high"
   },
   {
@@ -95,8 +107,10 @@
     "name": "impact site",
     "sym": "O",
     "color": "i_light_red",
+    "vision_levels": "unusual_structure",
     "looks_like": "crater",
     "see_cost": "high",
+    "travel_cost_type": "structure",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -105,7 +119,9 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
+    "vision_levels": "unusual_structure",
     "looks_like": "temple",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -114,7 +130,9 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
+    "vision_levels": "unusual_structure",
     "looks_like": "temple",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -123,7 +141,9 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
+    "vision_levels": "unusual_structure",
     "looks_like": "temple",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -132,7 +152,9 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
+    "vision_levels": "unusual_structure",
     "looks_like": "temple",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -141,7 +163,9 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
+    "vision_levels": "unusual_structure",
     "looks_like": "temple",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -150,7 +174,9 @@
     "name": "floating temple",
     "sym": "T",
     "color": "i_light_blue",
+    "vision_levels": "unusual_structure",
     "looks_like": "temple",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -160,6 +186,8 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
+    "vision_levels": "roof_or_air",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -169,6 +197,8 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
+    "vision_levels": "roof_or_air",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -178,6 +208,8 @@
     "sym": "T",
     "color": "i_light_blue",
     "looks_like": "temple",
+    "vision_levels": "roof_or_air",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -187,6 +219,8 @@
     "sym": "T",
     "color": "i_blue",
     "looks_like": "temple",
+    "vision_levels": "roof_or_air",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -197,6 +231,8 @@
     "color": "i_blue",
     "looks_like": "temple",
     "see_cost": "high",
+    "vision_levels": "unusual_structure",
+    "travel_cost_type": "structure",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -204,8 +240,10 @@
     "type": "overmap_terrain",
     "name": "underground ruin",
     "sym": "T",
+    "vision_levels": "underground_dirt",
     "color": "dark_gray",
     "looks_like": "temple_finale",
+    "travel_cost_type": "basement",
     "see_cost": "high"
   },
   {
@@ -213,8 +251,10 @@
     "type": "overmap_terrain",
     "name": "underground ruin",
     "sym": "T",
+    "vision_levels": "underground_dirt",
     "color": "dark_gray",
     "looks_like": "temple_finale",
+    "travel_cost_type": "basement",
     "see_cost": "high"
   },
   {
@@ -222,8 +262,10 @@
     "type": "overmap_terrain",
     "name": "underground ruin",
     "sym": "T",
+    "vision_levels": "underground_dirt",
     "color": "dark_gray",
     "looks_like": "temple_finale",
+    "travel_cost_type": "basement",
     "see_cost": "high"
   },
   {
@@ -231,8 +273,10 @@
     "type": "overmap_terrain",
     "name": "underground ruin",
     "sym": "T",
+    "vision_levels": "underground_dirt",
     "color": "dark_gray",
     "looks_like": "temple_finale",
+    "travel_cost_type": "basement",
     "see_cost": "high"
   },
   {
@@ -242,7 +286,9 @@
     "sym": "S",
     "color": "i_light_gray",
     "looks_like": "standing_stones",
+    "vision_levels": "isolated_building",
     "see_cost": "high",
+    "travel_cost_type": "structure",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -252,7 +298,9 @@
     "sym": "F",
     "color": "i_light_gray",
     "looks_like": "standing_stones",
+    "vision_levels": "isolated_building",
     "see_cost": "high",
+    "travel_cost_type": "structure",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -262,7 +310,9 @@
     "sym": "@",
     "color": "i_light_gray",
     "looks_like": "standing_stones",
+    "vision_levels": "isolated_building",
     "see_cost": "high",
+    "travel_cost_type": "structure",
     "flags": [ "RISK_HIGH" ]
   },
   {
@@ -340,6 +390,7 @@
     "sym": "^",
     "color": "i_light_green",
     "looks_like": "rural_house1_roof",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -380,6 +431,7 @@
     "color": "light_red",
     "looks_like": "church",
     "see_cost": "high",
+    "travel_cost_type": "structure",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -388,8 +440,10 @@
     "name": "open air",
     "sym": ".",
     "color": "blue",
+    "vision_levels": "roof_or_air",
     "looks_like": "open_air",
     "see_cost": "none",
+    "travel_cost_type": "roof",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -398,8 +452,10 @@
     "name": "open air",
     "sym": ".",
     "color": "blue",
+    "vision_levels": "roof_or_air",
     "looks_like": "open_air",
     "see_cost": "none",
+    "travel_cost_type": "roof",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -408,8 +464,10 @@
     "name": "open air",
     "sym": ".",
     "color": "blue",
+    "vision_levels": "roof_or_air",
     "looks_like": "open_air",
     "see_cost": "none",
+    "travel_cost_type": "roof",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -418,8 +476,10 @@
     "name": "rural church roof",
     "sym": "C",
     "color": "light_red",
+    "vision_levels": "roof_or_air",
     "looks_like": "church_roof",
     "see_cost": "high",
+    "travel_cost_type": "roof",
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -428,7 +488,9 @@
     "name": "cabin roof",
     "sym": "C",
     "color": "i_green",
+    "vision_levels": "roof_or_air",
     "looks_like": "cabin_strange_roof",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
@@ -437,7 +499,9 @@
     "name": "cabin",
     "sym": "C",
     "color": "i_green",
+    "vision_levels": "blends_till_details",
     "looks_like": "cabin_strange",
+    "travel_cost_type": "structure",
     "see_cost": "high"
   },
   {
@@ -446,7 +510,9 @@
     "name": "cabin",
     "sym": "C",
     "color": "i_green",
+    "vision_levels": "blends_till_details",
     "looks_like": "cabin_strange",
+    "travel_cost_type": "structure",
     "see_cost": "high"
   },
   {
@@ -455,7 +521,9 @@
     "name": "cabin basement",
     "sym": "C",
     "color": "i_green",
+    "vision_levels": "underground_dirt",
     "looks_like": "cabin_strange_b",
+    "travel_cost_type": "basement",
     "see_cost": "high"
   },
   {
@@ -474,7 +542,9 @@
     "name": "house roof",
     "copy-from": "generic_city_building",
     "color": "light_green",
+    "vision_levels": "roof_or_air",
     "looks_like": "house_roof",
+    "travel_cost_type": "roof",
     "see_cost": "low"
   },
   {
@@ -504,8 +574,10 @@
     "type": "overmap_terrain",
     "name": "unidentified anomalous structure roof",
     "sym": "T",
+    "vision_levels": "roof_or_air",
     "looks_like": "open_air",
     "color": "i_light_gray",
+    "travel_cost_type": "roof",
     "see_cost": "high"
   },
   {
