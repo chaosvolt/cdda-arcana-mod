@@ -30,13 +30,13 @@
   {
     "id": "arcana_essence_exclude_dull",
     "type": "requirement",
-    "//": "Essence or vitae only",
+    "//": "Essentia or vitae only",
     "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ] ] ]
   },
   {
     "id": "arcana_essence_exclude_blood",
     "type": "requirement",
-    "//": "Normal or dull essence only, for things the local sanguinists would turn their noses at.",
+    "//": "Essentia or residuum only, for things the local sanguinists would turn their noses at.",
     "components": [ [ [ "essence", 1 ], [ "essence_dull", 30 ] ] ]
   },
   {

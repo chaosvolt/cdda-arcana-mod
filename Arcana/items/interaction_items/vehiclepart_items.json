@@ -41,8 +41,8 @@
     "subtypes": [ "TOOL" ],
     "id": "essence_dull_surge_generator_item",
     "copy-from": "essence_surge_generator_item_abstract",
-    "name": { "str": "dull essence surge generator" },
-    "description": "A compact device built using otherworldly mechanisms to turn dull essence into a reliable source of power, if integrated into a vehicle.  Unnaturally efficient yet safe to use, assuming one can obtain large quantities of consecrated essence.",
+    "name": { "str": "residuum surge generator" },
+    "description": "A compact device built using otherworldly mechanisms to turn residuum into a reliable source of power, if integrated into a vehicle.  Unnaturally efficient yet safe to use, assuming one can obtain large quantities of consecrated essence.",
     "tool_ammo": [ "essence_dull_type" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "essence_dull_type": 30000 }, "rigid": true } ]
   },

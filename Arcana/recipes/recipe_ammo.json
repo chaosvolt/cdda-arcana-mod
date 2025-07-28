@@ -250,7 +250,7 @@
     "reversible": true,
     "using": [ [ "shot_forming", 1 ], [ "ammo_shot", 1 ] ],
     "tools": [ [ [ "press", -1 ], [ "press_dowel", -1 ] ] ],
-    "//": "1 dull essence per 10 damage, greater efficiency than magic ranged weapons or even elemental arrows because you're also getting damage from the gunpowder and projectile.",
+    "//": "1 residuum per 10 damage, greater efficiency than magic ranged weapons or even elemental arrows because you're also getting damage from the gunpowder and projectile.",
     "components": [
       [ [ "gunpowder", 6 ], [ "gunpowder_pistol", 6 ], [ "gunpowder_shotgun", 6 ], [ "chem_black_powder", 9 ] ],
       [ [ "silver_small", 10 ], [ "platinum_small", 6 ] ],

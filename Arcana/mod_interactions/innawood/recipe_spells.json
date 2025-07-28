@@ -6,7 +6,7 @@
     "subcategory": "CSC_ARCANA_SPELLS",
     "skill_used": "magic",
     "difficulty": 2,
-    "//": "Requires purification and carving.  Each magic seal requires enough energy to cast its associated spell at spell level 5, keeping in mind that a monster part provides 20 dull essence worth of energy.",
+    "//": "Requires purification and carving.  Each magic seal requires enough energy to cast its associated spell at spell level 5, keeping in mind that a monster part provides 20 residuum worth of energy.",
     "skills_required": [ [ "fabrication", 3 ] ],
     "time": "1 h",
     "activity_level": "LIGHT_EXERCISE",

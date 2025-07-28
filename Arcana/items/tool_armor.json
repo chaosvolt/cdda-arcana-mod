@@ -606,7 +606,7 @@
         "active": true,
         "need_worn": true,
         "need_charges": 1,
-        "need_charges_msg": "This requires dull essence to invoke.",
+        "need_charges_msg": "This requires residuum to invoke.",
         "menu_text": "Project barrier",
         "type": "transform",
         "ammo_scale": 0
@@ -878,7 +878,7 @@
     "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
     "name": { "str": "meteoric talisman" },
     "category": "armor",
-    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  Activating it will ward against electricity at the expense of slowing you down slightly, consuming dull essence while active.",
+    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  Activating it will ward against electricity at the expense of slowing you down slightly, consuming residuum while active.",
     "weight": "60 g",
     "volume": "250 ml",
     "price_postapoc": "100 USD",
@@ -895,7 +895,7 @@
       "active": true,
       "need_worn": true,
       "need_charges": 1,
-      "need_charges_msg": "The talisman requires dull essence.",
+      "need_charges_msg": "The talisman requires residuum.",
       "menu_text": "Activate lightning ward",
       "type": "transform",
       "ammo_scale": 0

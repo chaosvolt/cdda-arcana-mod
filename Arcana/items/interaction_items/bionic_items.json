@@ -34,7 +34,7 @@
     "subtypes": [ "BIONIC_ITEM" ],
     "name": { "str": "Essence Surge Cell CBM" },
     "looks_like": "bio_int_enhancer",
-    "description": "A small generator that converts essence into bionic power, with four separate chambers for different essence types.  Able to hold 5 motes of crystallized essence, 50 motes of standard essence, 150 motes of vitae, and 1500 motes of dull essence.",
+    "description": "A small generator that converts essence into bionic power, with four separate chambers for different essence types.  Able to hold 5 motes of crystallized essence, 50 motes of essentia, 150 motes of vitae, and 1500 motes of residuum.",
     "price": "9000 USD",
     "price_postapoc": "90 USD",
     "weight": "600 g",
