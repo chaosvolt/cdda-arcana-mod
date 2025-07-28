@@ -48,7 +48,7 @@
     "prereqs": [ "SPELL_SMOKE" ],
     "changes_to": [ "SPELL_LOCKPICK2" ],
     "category": [ "VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [ [ "arcana_blessing_conjure_shadow_field", 1 ], [ "arcana_blessing_conjure_lightburst", 1 ] ],
     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_ALTERATION" ]
   },
@@ -64,7 +64,7 @@
     "changes_to": [ "SPELL_TELEPORT" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_conjure_shadow_field", 1 ],
       [ "arcana_blessing_conjure_lightburst", 1 ],
@@ -85,7 +85,7 @@
     "changes_to": [ "SPELL_PACIFY" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_conjure_shadow_field", 1 ],
       [ "arcana_blessing_conjure_lightburst", 1 ],
@@ -106,7 +106,7 @@
     "changes_to": [ "SPELL_CONSECRATE" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_conjure_shadow_field", 1 ],
       [ "arcana_blessing_conjure_lightburst", 1 ],
@@ -127,7 +127,7 @@
     "prereqs": [ "SPELL_PACIFY" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_conjure_shadow_field", 1 ],
       [ "arcana_blessing_conjure_lightburst", 1 ],
@@ -163,7 +163,7 @@
     "prereqs": [ "SPELL_STRENGTH2" ],
     "changes_to": [ "SPELL_AGILE2" ],
     "category": [ "VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ] ],
     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_AUGMENTATION" ]
   },
@@ -179,7 +179,7 @@
     "changes_to": [ "SPELL_DAYLIGHT2" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ], [ "arcana_blessing_clairvoyance", 1 ], [ "arcana_blessing_agility", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
   },
@@ -195,7 +195,7 @@
     "changes_to": [ "SPELL_DRAINLIFE" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_might", 1 ],
       [ "arcana_blessing_clairvoyance", 1 ],
@@ -216,7 +216,7 @@
     "changes_to": [ "SPELL_INVIS" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_might", 1 ],
       [ "arcana_blessing_clairvoyance", 1 ],
@@ -237,7 +237,7 @@
     "prereqs": [ "SPELL_DRAINLIFE" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_might", 1 ],
       [ "arcana_blessing_clairvoyance", 1 ],
@@ -273,7 +273,7 @@
     "prereqs": [ "SPELL_CONFUSE2" ],
     "changes_to": [ "SPELL_LIGHTNING2" ],
     "category": [ "VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [ [ "arcana_blessing_confuse_monster", 1 ], [ "arcana_blessing_conjure_miasma", 1 ] ],
     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_DESTRUCTION" ]
   },
@@ -289,7 +289,7 @@
     "changes_to": [ "SPELL_FIRE2" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_confuse_monster", 1 ],
       [ "arcana_blessing_conjure_miasma", 1 ],
@@ -309,7 +309,7 @@
     "changes_to": [ "SPELL_LIGHTNINGFIELD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_confuse_monster", 1 ],
       [ "arcana_blessing_conjure_miasma", 1 ],
@@ -330,7 +330,7 @@
     "changes_to": [ "SPELL_PULSE" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_confuse_monster", 1 ],
       [ "arcana_blessing_conjure_miasma", 1 ],
@@ -351,7 +351,7 @@
     "category": [ "VEIL" ],
     "prereqs": [ "SPELL_LIGHTNINGFIELD" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_confuse_monster", 1 ],
       [ "arcana_blessing_conjure_miasma", 1 ],
@@ -387,7 +387,7 @@
     "prereqs": [ "SPELL_ACIDARMOR" ],
     "changes_to": [ "SPELL_ELECRESIST2" ],
     "category": [ "VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ] ],
     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_PROTECTION" ]
   },
@@ -403,7 +403,7 @@
     "changes_to": [ "SPELL_FLAMEARMOR2" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ], [ "arcana_blessing_ward_poison", 1 ], [ "arcana_blessing_ward_lightning", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
   },
@@ -419,7 +419,7 @@
     "changes_to": [ "SPELL_FROSTARMOR" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_ward_acid", 1 ],
       [ "arcana_blessing_ward_poison", 1 ],
@@ -440,7 +440,7 @@
     "changes_to": [ "SPELL_PSYSHIELD" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_ward_acid", 1 ],
       [ "arcana_blessing_ward_poison", 1 ],
@@ -461,7 +461,7 @@
     "prereqs": [ "SPELL_FROSTARMOR" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_ward_acid", 1 ],
       [ "arcana_blessing_ward_poison", 1 ],
@@ -497,7 +497,7 @@
     "prereqs": [ "SPELL_SUMMONDOG2" ],
     "changes_to": [ "SPELL_SUMMONCULUS" ],
     "category": [ "VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 200 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [ [ "arcana_blessing_summon_skeletal_dog", 1 ], [ "arcana_blessing_summon_skeleton", 1 ] ],
     "flags": [ "explorer_of_the_veil", "ARCANA_VEIL_MARKER_SUMMONING" ]
   },
@@ -513,7 +513,7 @@
     "changes_to": [ "SPELL_SUMMONTHING" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 300 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_summon_skeletal_dog", 1 ],
       [ "arcana_blessing_summon_skeleton", 1 ],
@@ -533,7 +533,7 @@
     "changes_to": [ "SPELL_BUGS" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 400 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_summon_skeletal_dog", 1 ],
       [ "arcana_blessing_summon_skeleton", 1 ],
@@ -554,7 +554,7 @@
     "changes_to": [ "SPELL_SUMMONVORTEX" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 500 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_summon_skeletal_dog", 1 ],
       [ "arcana_blessing_summon_skeleton", 1 ],
@@ -575,7 +575,7 @@
     "prereqs": [ "SPELL_BUGS" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
-    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 600 } ] } ],
+    "enchantments": [ { "values": [ { "value": "BIONIC_MANA_PENALTY", "multiply": -1.0 }, { "value": "MAX_MANA", "add": 100 } ] } ],
     "spells_learned": [
       [ "arcana_blessing_summon_skeletal_dog", 1 ],
       [ "arcana_blessing_summon_skeleton", 1 ],

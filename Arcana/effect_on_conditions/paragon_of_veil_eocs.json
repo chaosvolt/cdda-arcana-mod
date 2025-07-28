@@ -1,0 +1,24 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_VEIL_PARAGON_GETS_MANA_FOR_KILLING_INTERLOPERS",
+    "eoc_type": "EVENT",
+    "required_event": "character_kills_monster",
+    "condition": {
+      "and": [
+        { "u_has_trait": "VEIL_PARAGON_SORCERY" },
+        {
+          "or": [
+            { "npc_has_species": "NETHER" },
+            { "npc_has_species": "NETHER_BURROWING" },
+            { "npc_has_species": "NETHER_EMANATION" },
+            { "npc_has_species": "FUNGUS" },
+            { "npc_has_species": "LEECH_PLANT" },
+            { "npc_has_species": "ABERRATION" }
+          ]
+        }
+      ]
+    },
+    "effect": [ { "math": [ "u_val('mana') += 100" ] } ]
+  }
+]
