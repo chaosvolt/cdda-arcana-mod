@@ -189,7 +189,7 @@
     "reload": 160,
     "ammo_effects": [ "WIDE", "LASER", "WRAITHSLAYER_CROSSBOW" ],
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ],
-    "ammo_to_fire": 15,
+    "ammo_to_fire": 10,
     "valid_mod_locations": [ [ "sling", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ] ]
   },
   {
@@ -220,7 +220,7 @@
     "reload": 50,
     "ammo_effects": [ "WIDE", "LASER", "WRAITHSLAYER_CROSSBOW_HAND" ],
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
-    "ammo_to_fire": 10,
+    "ammo_to_fire": 4,
     "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ] ]
   },
   {
@@ -252,7 +252,7 @@
     "reload": 600,
     "ammo_effects": [ "WIDE", "LASER", "WRAITHSLAYER_CROSSBOW_GIANT" ],
     "flags": [ "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
-    "ammo_to_fire": 50,
+    "ammo_to_fire": 40,
     "valid_mod_locations": [ [ "sling", 1 ] ]
   },
   {
