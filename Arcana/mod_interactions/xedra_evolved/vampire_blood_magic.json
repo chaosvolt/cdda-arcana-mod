@@ -16,7 +16,7 @@
     "id": "arcana_xe_vampire_blood_magic_charger",
     "type": "SPELL",
     "name": { "str": "Sanguine Empowerment" },
-    "description": "Blood magic is easy when you are full of stolen blood.  You may expend a portion of your stolen blood and gain the benefits of having done a blood sacrifice when using blood magic.\n\n<color_light_red>Blood Cost:</color> 250 ml (<u_val:blood_amount_for_graph> ml current).",
+    "description": "Blood magic is easy when you are full of stolen blood.  You may expend a portion of your stolen blood and gain the benefits of having performed a blood sacrifice when using blood magic.\n\n<color_light_red>Blood Cost:</color> 250 ml (<u_val:blood_amount_for_graph> ml current).",
     "message": "",
     "teachable": false,
     "magic_type": "xe_vampire_blood_powers",
@@ -41,6 +41,6 @@
       },
       { "u_add_effect": "effect_arcana_blood_magic_killed", "duration": 60 }
     ],
-    "false_effect": [ { "u_message": "You don't have enough blood to fuel your blood magic.", "type": "bad" } ]
+    "false_effect": [ { "u_message": "You don't have enough blood to empower your blood magic.", "type": "bad" } ]
   }
 ]
