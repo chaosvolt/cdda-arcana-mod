@@ -22,7 +22,7 @@
     "id": "essence_blood",
     "type": "ITEM",
     "subtypes": [ "AMMO" ],
-    "name": { "str": "blood essence", "str_pl": "blood essence" },
+    "name": { "str_sp": "vitae" },
     "description": "A strange glowing mote of wispy vapor, drained from a living creature.",
     "volume": "5 ml",
     "weight": "1 mg",

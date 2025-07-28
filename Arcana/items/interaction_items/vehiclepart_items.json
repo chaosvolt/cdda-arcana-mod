@@ -18,7 +18,7 @@
   },
   {
     "type": "ITEM",
-    "subtypes": [ "TOOL"],
+    "subtypes": [ "TOOL" ],
     "id": "essence_surge_generator_item",
     "copy-from": "essence_surge_generator_item_abstract",
     "name": { "str": "essence surge generator" },
@@ -31,8 +31,8 @@
     "subtypes": [ "TOOL" ],
     "id": "essence_blood_surge_generator_item",
     "copy-from": "essence_surge_generator_item_abstract",
-    "name": { "str": "blood essence surge generator" },
-    "description": "A compact device built using otherworldly mechanisms to convert blood essence into electricity, providing a good source of power if integrated into a vehicle.  Safe to use despite its nature and unnaturally efficient, assuming one can afford the cost of obtaining essence fron life force in such quantities.",
+    "name": { "str": "vital surge generator" },
+    "description": "A compact device built using otherworldly mechanisms to convert vitae into electricity, providing a good source of power if integrated into a vehicle.  Safe to use despite its nature and unnaturally efficient, assuming one can afford the cost of obtaining essence fron life force in such quantities.",
     "tool_ammo": [ "essence_blood_type" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "essence_blood_type": 3000 }, "rigid": true } ]
   },

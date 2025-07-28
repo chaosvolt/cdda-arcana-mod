@@ -501,8 +501,8 @@
   {
     "id": "arcana_item_generate_blood_essence",
     "type": "SPELL",
-    "name": { "str": "Generate Blood Essence" },
-    "description": "This is used by blood magic items to produce blood essence.",
+    "name": { "str": "Generate Vitae" },
+    "description": "This is used by blood magic items to produce vitae.",
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "PERMANENT", "NO_HANDS", "NO_LEGS" ],

@@ -46,7 +46,7 @@
   {
     "type": "effect_type",
     "id": "hermit_has_blood_essence",
-    "name": [ "Has Blood Essence" ],
+    "name": [ "Has Vitae" ],
     "desc": [ "AI tag marking The Hermit's progress through the ritual.  Intended to be permanent.  This is a bug if you have it." ]
   },
   {

@@ -19,7 +19,7 @@
     "copy-from": "blood_magic_spell_scroll",
     "id": "blood_magic_spell_scroll_arcana_blood_magic_rite_of_sacrifice",
     "name": { "str": "Sanguine Grimoire: The Rite of Sacrifice", "str_pl": "Sanguine Grimoires: The Rite of Sacrifice" },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual creates blood essence through the sacrifice of an animal.",
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual creates vitae through the sacrifice of an animal.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_rite_of_sacrifice" ] }
   },
   {

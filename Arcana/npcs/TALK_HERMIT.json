@@ -607,7 +607,7 @@
         "yes": "Lastly, I require a copy of Sanguine Codex.  As I said before, without it we can't reference the rites the blood mages used to subvert this weapon.  You will not need to know and recite their wretched rituals to break the seal, only have the patterns they transcribed on hand.",
         "no": {
           "npc_has_effect": "hermit_has_salt",
-          "yes": "Now then, with the circle prepared and the foundation laid for the ritual, we will need essence to fuel it.  It must, specifically, be blood essence.  The sanguinists designed their corruptive ritual to rely on that drawn from the life of others, and only power of similar nature can break this curse.  Twelve motes of blood shall fuel the ritual.",
+          "yes": "Now then, with the circle prepared and the foundation laid for the ritual, we will need vitae to fuel it.  It must, specifically, be vitae.  The sanguinists designed their corruptive ritual to rely on that drawn from the life of others, and only power of similar nature can break this curse.  Twelve motes of vitae shall fuel the ritual.",
           "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to anoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond The Veil, the words of power that elude your grasp. We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
         }
       }
@@ -640,7 +640,7 @@
         "condition": { "npc_has_effect": "hermit_has_blood_essence" }
       },
       {
-        "text": "Here's the twelve blood essence you asked for.",
+        "text": "Here's the twelve vitae you asked for.",
         "switch": true,
         "topic": "TALK_HERMIT_QUEST_HELP_1_BACKDOOR",
         "condition": { "and": [ { "npc_has_effect": "hermit_has_salt" }, { "u_has_items": { "item": "essence_blood", "count": 12 } } ] },
@@ -724,10 +724,7 @@
       {
         "text": "Do you have a copy of Oaths to The Chalice?",
         "topic": "TALK_HERMIT_QUEST_HELP_1_CHALICE",
-        "effect": [
-          { "u_buy_item": "book_sacrifice" },
-          { "u_add_var": "arcana_alex_gave_book", "value": "yes" }
-        ],
+        "effect": [ { "u_buy_item": "book_sacrifice" }, { "u_add_var": "arcana_alex_gave_book", "value": "yes" } ],
         "condition": {
           "and": [
             { "not": { "compare_string": [ "yes", { "npc_val": "arcana_alex_gave_book" } ] } },
@@ -802,7 +799,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUEST_HELP_1_GENERAL",
-    "dynamic_line": "You will require fire to burn the corruption from the blade, a holy symbol to restore its sanctity.  Even those of this world's faiths will suffice, even the sacred tools of the Cleansing Flame if nothing else, or the chalice we use for our rituals.  Salt for the ritual circle, and blood essence to fuel the counter-spell contained within the Sanguine Codex.  It would be best if you seek these items on your own, to better understand the gravity of your task.",
+    "dynamic_line": "You will require fire to burn the corruption from the blade, a holy symbol to restore its sanctity.  Even those of this world's faiths will suffice, even the sacred tools of the Cleansing Flame if nothing else, or the chalice we use for our rituals.  Salt for the ritual circle, and vitae to fuel the counter-spell contained within the Sanguine Codex.  It would be best if you seek these items on your own, to better understand the gravity of your task.",
     "speaker_effect": [
       {
         "condition": {

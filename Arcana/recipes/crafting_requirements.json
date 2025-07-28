@@ -30,7 +30,7 @@
   {
     "id": "arcana_essence_exclude_dull",
     "type": "requirement",
-    "//": "Normal or blood essence only.  Silly mage hunters!",
+    "//": "Essence or vitae only",
     "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ] ] ]
   },
   {
@@ -48,7 +48,7 @@
   {
     "id": "arcana_flora_forage",
     "type": "requirement",
-    "//": "Used for forest talismans to equal one blood essence.",
+    "//": "Used for forest talismans to equal one bitae.",
     "components": [
       [
         [ "veggy_wild", 10 ],
