@@ -40,7 +40,7 @@
         ]
       }
     ],
-    "ammo_effects": [ "LIGHTNING", "LIGHTNING_JUDGMENT" ],
+    "ammo_effects": [ "LIGHTNING", "LIGHTNING_JUDGMENT", "ARCANA_LIGHTNING_TRAIL" ],
     "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "NO_TURRET" ],
     "use_action": "MEDITATE"
   },
