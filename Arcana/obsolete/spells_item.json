@@ -1,0 +1,33 @@
+[
+  {
+    "id": "arcana_item_gilded_aegis_healing",
+    "type": "SPELL",
+    "name": { "str": "Aegis Mending" },
+    "description": "Forces the body to heal itself, but also hurts quite a bit.",
+    "message": "Your cloak shimmers with odd light, and a painful jolt of healing power surges through you!",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "extra_effects": [ { "id": "arcana_item_gilded_aegis_pain", "hit_self": true } ],
+    "effect_str": "arcana_aegis_mending",
+    "min_damage": -10,
+    "max_damage": -20,
+    "effect": "attack",
+    "shape": "blast",
+    "min_duration": 100,
+    "max_duration": 100
+  },
+  {
+    "id": "arcana_item_gilded_aegis_pain",
+    "type": "SPELL",
+    "name": { "str": "Aegis Pain Side Effect" },
+    "description": "Take your medicine, Hunter.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "min_damage": -15,
+    "max_damage": -15,
+    "effect": "recover_energy",
+    "shape": "blast",
+    "effect_str": "PAIN"
+  }
+]

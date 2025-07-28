@@ -116,5 +116,82 @@
     "name": { "str": "obsolete item" },
     "description": "This item is obsolete and does nothing.",
     "color": "magenta"
+  },
+  {
+    "id": "somen_clairvoyance_xl",
+    "repairs_like": "somen_clairvoyance",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "category": "armor",
+    "name": { "str": "hunter's visor" },
+    "description": "A half-mask covering the top half of the face, made of iron decorated with other metal.  Loose-fitting and designed with mutant anatomy in mind, and to be worn over other items.  Fueling it with consecrated essence will grant the wearer clairvoyance within a limited range and protection from bright flashes, but blind you to anything beyond its effect.",
+    "weight": "500 g",
+    "volume": "750 ml",
+    "price": "210 USD",
+    "price_postapoc": "40 USD",
+    "material": [ "iron", "copper", "leather" ],
+    "symbol": "[",
+    "looks_like": "mask_bal",
+    "color": "light_red",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_dull_type": 24 } } ],
+    "charges_per_use": 1,
+    "tool_ammo": "essence_dull_type",
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "special_vision": [
+          {
+            "condition": {
+              "or": [
+                { "npc_has_species": "NETHER" },
+                { "npc_has_species": "NETHER_BURROWING" },
+                { "npc_has_species": "NETHER_EMANATION" },
+                { "npc_has_species": "FOREST_ELEMENTAL" },
+                { "npc_has_species": "PLANT" },
+                { "npc_has_species": "FUNGUS" }
+              ]
+            },
+            "distance": 25,
+            "ignores_aiming_cone": true,
+            "descriptions": [ { "id": "nether_creature_sense", "symbol": "N", "text": "You sense an otherworldly interloper here." } ]
+          }
+        ],
+        "ench_effects": [ { "effect": "mask_blind_immunity", "intensity": 1 } ]
+      }
+    ],
+    "use_action": {
+      "target": "somen_clairvoyance_xl_on",
+      "msg": "The visor's surface shifts subtly, the eyeholes momentarily seeming to glow as a strange perception replaces your natural vision.",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "Fuel the visor with consecrated essence, to open your eyes.",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    "flags": [ "NO_SALVAGE", "OVERSIZE", "OUTER", "POWERARMOR_COMPATIBLE" ],
+    "material_thickness": 4,
+    "environmental_protection": 1,
+    "armor": [ { "encumbrance": 12, "coverage": 100, "covers": [ "eyes" ] } ]
+  },
+  {
+    "id": "somen_clairvoyance_xl_on",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
+    "copy-from": "somen_clairvoyance_xl",
+    "name": { "str": "hunter's visor (on)", "str_pl": "hunter's visors (on)" },
+    "description": "A half-mask covering the top half of the face, made of iron decorated with other metal.  It vaguely gives the appearance of a hateful glare.",
+    "turns_per_charge": 100,
+    "revert_to": "somen_clairvoyance_xl",
+    "qualities": [ [ "GLARE", 1 ] ],
+    "use_action": {
+      "target": "somen_clairvoyance_xl",
+      "msg": "The visor shifts back to its normal appearance.",
+      "menu_text": "Turn off",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF" ] }
   }
 ]

@@ -1,0 +1,50 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_WRAITHSLAYER_CROSSBOW_AMMO",
+    "condition": "has_beta",
+    "effect": [
+      {
+        "if": { "or": [ { "npc_has_species": "NETHER" }, { "npc_has_species": "NETHER_BURROWING" } ] },
+        "then": [
+          { "npc_deal_damage": "heat", "amount": { "math": [ "rng(15,30)" ] }, "arpen": 10 },
+          { "if": { "math": [ "rand(15) >= 13" ] }, "then": { "npc_add_effect": "onfire", "duration": 30 } },
+          { "u_message": "The otherworldly horror is seared by holy light!", "type": "neutral" }
+        ]
+      },
+      { "if": { "npc_has_flag": "SUNDEATH" }, "then": [ { "npc_add_effect": "onfire", "duration": 30 } ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_WRAITHSLAYER_CROSSBOW_HAND_AMMO",
+    "condition": "has_beta",
+    "effect": [
+      {
+        "if": { "or": [ { "npc_has_species": "NETHER" }, { "npc_has_species": "NETHER_BURROWING" } ] },
+        "then": [
+          { "npc_deal_damage": "heat", "amount": { "math": [ "rng(8,16)" ] }, "arpen": 5 },
+          { "if": { "math": [ "rand(25) >= 23" ] }, "then": { "npc_add_effect": "onfire", "duration": 30 } },
+          { "u_message": "The otherworldly horror is seared by holy light!", "type": "neutral" }
+        ]
+      },
+      { "if": { "npc_has_flag": "SUNDEATH" }, "then": [ { "npc_add_effect": "onfire", "duration": 30 } ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_WRAITHSLAYER_CROSSBOW_GIANT_AMMO",
+    "condition": "has_beta",
+    "effect": [
+      {
+        "if": { "or": [ { "npc_has_species": "NETHER" }, { "npc_has_species": "NETHER_BURROWING" } ] },
+        "then": [
+          { "npc_deal_damage": "heat", "amount": { "math": [ "rng(25,50)" ] }, "arpen": 20 },
+          { "if": { "math": [ "rand(8) >= 7" ] }, "then": { "npc_add_effect": "onfire", "duration": 30 } },
+          { "u_message": "The otherworldly horror is seared by holy light!", "type": "neutral" }
+        ]
+      },
+      { "if": { "npc_has_flag": "SUNDEATH" }, "then": [ { "npc_add_effect": "onfire", "duration": 30 } ] }
+    ]
+  }
+]

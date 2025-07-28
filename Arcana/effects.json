@@ -476,7 +476,9 @@
   {
     "type": "effect_type",
     "id": "mask_blind_immunity",
-    "blocks_effects": [ "blind" ]
+    "blocks_effects": [ "blind" ],
+    "limb_score_mods": [ { "limb_score": "vision", "modifier": 0.3 }, { "limb_score": "night_vis", "modifier": 0.5 } ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD", "MYOPIC_IN_LIGHT" ]
   },
   {
     "type": "effect_type",
@@ -1658,12 +1660,12 @@
     "enchantments": [
       {
         "encumbrance_modifier": [
-          { "part": "head", "multiply": -0.25 },
-          { "part": "torso", "multiply": -0.25 },
-          { "part": "arm_r", "multiply": -0.25 },
-          { "part": "arm_l", "multiply": -0.25 },
-          { "part": "leg_r", "multiply": -0.25 },
-          { "part": "leg_l", "multiply": -0.25 }
+          { "part": "head", "multiply": -0.2 },
+          { "part": "torso", "multiply": -0.2 },
+          { "part": "arm_r", "multiply": -0.2 },
+          { "part": "arm_l", "multiply": -0.2 },
+          { "part": "leg_r", "multiply": -0.2 },
+          { "part": "leg_l", "multiply": -0.2 }
         ],
         "values": [ { "value": "TOTAL_WEIGHT", "multiply": -0.25 } ]
       }
@@ -1682,5 +1684,25 @@
     "int_dur_factor": "1 m",
     "rating": "good",
     "flags": [ "WATERWALKING", "ITEM_WATERPROOFING" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_gilded_aegis_active",
+    "//": "You gain more pain but the pain affects you much less.  Turning it off is going to HURT",
+    "rating": "good",
+    "enchantments": [
+      {
+        "values": [
+          { "value": "PAIN_PENALTY_MOD_STR", "multiply": -0.7 },
+          { "value": "PAIN_PENALTY_MOD_DEX", "multiply": -0.6 },
+          { "value": "PAIN_PENALTY_MOD_PER", "multiply": -0.5 },
+          { "value": "PAIN_PENALTY_MOD_INT", "multiply": -0.4 },
+          { "value": "PAIN_PENALTY_MOD_SPEED", "multiply": -0.8 },
+          { "value": "PAIN", "multiply": 0.33 },
+          { "value": "EXTRA_ELEC_PAIN", "multiply": 0.1 }
+        ]
+      }
+    ],
+    "flags": [ "BLEED_IMMUNE" ]
   }
 ]

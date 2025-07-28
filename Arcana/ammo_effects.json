@@ -146,5 +146,23 @@
     "//": "Creates a trail of lightning plasma",
     "aoe": { "field_type": "fd_electricity", "intensity_min": 3, "intensity_max": 6, "chance": 35 },
     "trail": { "field_type": "fd_electricity", "intensity_min": 1, "intensity_max": 2, "chance": 65 }
+  },
+  {
+    "id": "WRAITHSLAYER_CROSSBOW",
+    "type": "ammo_effect",
+    "//": "Extra damage to Nether creatures, sets SUNDEATH on fire",
+    "eoc": [ "EOC_WRAITHSLAYER_CROSSBOW_AMMO" ]
+  },
+  {
+    "id": "WRAITHSLAYER_CROSSBOW_HAND",
+    "type": "ammo_effect",
+    "//": "Extra damage to Nether creatures, sets SUNDEATH on fire",
+    "eoc": [ "EOC_WRAITHSLAYER_CROSSBOW_HAND_AMMO" ]
+  },
+  {
+    "id": "WRAITHSLAYER_CROSSBOW_GIANT",
+    "type": "ammo_effect",
+    "//": "Extra damage to Nether creatures, sets SUNDEATH on fire",
+    "eoc": [ "EOC_WRAITHSLAYER_CROSSBOW_GIANT_AMMO" ]
   }
 ]

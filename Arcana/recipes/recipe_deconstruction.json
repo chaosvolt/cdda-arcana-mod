@@ -2014,16 +2014,6 @@
     "components": [ [ [ "leather", 2 ] ], [ [ "scrap", 10 ] ], [ [ "copper", 30 ] ], [ [ "essence_blood", 3 ] ] ]
   },
   {
-    "result": "somen_clairvoyance_xl",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 6,
-    "time": "60 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "blood_athame", -1 ] ] ],
-    "components": [ [ [ "leather", 1 ] ], [ [ "scrap", 5 ] ], [ [ "copper", 15 ] ], [ [ "essence_blood", 3 ] ] ]
-  },
-  {
     "result": "sun_sword",
     "type": "uncraft",
     "skill_used": "magic",
