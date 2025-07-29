@@ -32,5 +32,13 @@
     "description": "You have DEFINITELY NOT learned of the power inherent in blood and CANNOT draw it out to wield magic. Should not be visible.",
     "player_display": false,
     "cancels": [ "ARCANA_BLOOD_MAGIC" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_SANGUINE_MARKS",
+    "name": { "str": "Sanguine Marks" },
+    "points": 0,
+    "description": "You a greater power in your blood, no longer fueled by pain or death but rather by the blood itself.",
+    "flags": [ "ATTUNEMENT" ]
   }
 ]
