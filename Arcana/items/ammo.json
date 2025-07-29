@@ -3,7 +3,7 @@
     "id": "essence",
     "type": "ITEM",
     "subtypes": [ "AMMO" ],
-    "name": { "str": "essence", "str_pl": "essence" },
+    "name": { "str_sp": "essentia" },
     "description": "A strange glowing mote of wispy vapor.  It gives off a soothing warmth and feels surprisingly solid, almost alive even.",
     "//": "Essence in general was fairly rare pre-cataclysm, though arcanists didn't really trade it around much.  Books were the most important focus of external contacts.",
     "volume": "10 ml",

@@ -4,12 +4,14 @@
     "type": "recipe",
     "id_suffix": "from_monsters",
     "category": "CC_ARCANA",
-    "subcategory": "CSC_ARCANA_AMMO",
+    "subcategory": "CSC_ARCANA_ESSENTIA",
     "skill_used": "magic",
     "difficulty": 3,
-    "time": "60 m",
-    "activity_level": "NO_EXERCISE",
+    "time": "8 h",
+    "//": "Yes, it's intended the generic 'rend down monsters into essentia' recipes take absolutely forever.  That way it's an improvement later on when you have better ways to do it.",
+    "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_purification" }, { "proficiency": "prof_arcana_thaumatology" } ],
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [
       [
