@@ -65,7 +65,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_blood", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
     "result": "essence_dull",
@@ -83,7 +83,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
     "result": "essence_dull",
@@ -124,7 +124,7 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
     "result": "essence_blood",
@@ -141,7 +141,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "arcana_flesh_standard", 5, "LIST" ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "SECRET" ]
   },
   {
     "result": "essence_blood",
@@ -160,7 +160,7 @@
     "tools": [ [ [ "blood_athame", -1 ] ] ],
     "components": [ [ [ "essence", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
     "result": "essence_blood",
@@ -200,7 +200,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_blood", 3 ], [ "essence_dull", 30 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "SECRET" ]
   },
   {
     "result": "essence",
@@ -233,7 +233,7 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "SECRET" ]
   },
   {
     "result": "essence",
@@ -264,6 +264,6 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_EASY", "SECRET" ]
   }
 ]
