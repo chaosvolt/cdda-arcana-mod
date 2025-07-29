@@ -87,7 +87,7 @@
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "ash", 25 ], [ "corpse_ash", 25 ] ],
-      [ [ "iron_thorn", 1 ], [ "monster_tear", 1 ], [ "wyrmskin_piece", 1 ] ]
+      [ [ "iron_thorn", 1 ], [ "monster_tear", 1 ], [ "wyrmskin_piece", 1 ], [ "gracken_knuckles", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
@@ -107,7 +107,7 @@
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "water", 30 ], [ "water_clean", 30 ] ],
       [ [ "splinter", 5 ] ],
-      [ [ "gracken_knuckles", 1 ], [ "vortex_shard", 1 ], [ "blob_gem", 1 ] ]
+      [ [ "gracken_knuckles", 1 ], [ "vortex_shard", 1 ], [ "blob_gem", 1 ], [ "engraved_stone", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY" ]
@@ -126,7 +126,7 @@
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "feather", 20 ] ],
-      [ [ "dermatik_sting", 1 ], [ "vortex_shard", 1 ], [ "monster_fang", 1 ] ]
+      [ [ "dermatik_sting", 1 ], [ "vortex_shard", 1 ], [ "monster_fang", 1 ], [ "shadow_gem", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
@@ -146,7 +146,7 @@
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "material_sand", 50 ], [ "clay_lump", 5 ], [ "rock", 5 ] ],
       [ [ "ash", 25 ], [ "withered", 5 ] ],
-      [ [ "inflorescent_root", 1 ], [ "graboid_fang", 1 ], [ "blob_gem", 1 ] ]
+      [ [ "inflorescent_root", 1 ], [ "graboid_fang", 1 ], [ "blob_gem", 1 ], [ "triffid_queen_flower", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
@@ -186,7 +186,7 @@
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "material_sand", 50 ], [ "copper", 3 ] ],
       [ [ "glass_shard", 10 ] ],
-      [ [ "iridescent_plate", 1 ], [ "engraved_stone", 1 ], [ "vortex_shard", 1 ] ]
+      [ [ "iridescent_plate", 1 ], [ "engraved_stone", 1 ], [ "vortex_shard", 1 ], [ "bone_twisted", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
@@ -205,7 +205,7 @@
     "components": [
       [ [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "arcana_blood_standard", 5, "LIST" ] ],
-      [ [ "blob_gem", 1 ], [ "monster_tear", 1 ], [ "bone_twisted", 1 ] ]
+      [ [ "blob_gem", 1 ], [ "monster_tear", 1 ], [ "bone_twisted", 1 ], [ "shadow_gem", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
