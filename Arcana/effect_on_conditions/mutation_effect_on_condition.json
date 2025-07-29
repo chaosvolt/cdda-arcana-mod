@@ -8,6 +8,7 @@
     "effect": [
       { "u_message": "You feel unearthly life flow through your body.", "type": "mixed" },
       { "u_mutate_category": "DRAGONBLOOD", "use_vitamins": false },
+      { "u_add_trait": "ARCANA_SANGUINE_MARKS" },
       { "u_lose_effect": "arcana_dragonblood_blood_effigy_effect" }
     ]
   },
@@ -24,6 +25,7 @@
       },
       { "run_eocs": [ "arcana_dragonblood_sacramental_heart_eoc_thresh_test" ] },
       { "u_mutate_category": "DRAGONBLOOD", "use_vitamins": false },
+      { "u_add_trait": "ARCANA_SANGUINE_MARKS" },
       { "run_eocs": [ "arcana_dragonblood_sacramental_heart_eoc_trigger_bonus" ] },
       { "u_lose_effect": "arcana_dragonblood_sacramental_heart_effect" }
     ]
