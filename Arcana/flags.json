@@ -25,6 +25,11 @@
     "info": "Prevents you from using any blood magic."
   },
   {
+    "id": "NO_ARCANA_SANGUINE_MARKS",
+    "type": "json_flag",
+    "info": "Prevents you from using any sanguine marks."
+  },
+  {
     "id": "MAGIC_USER",
     "type": "monster_flag",
     "//": "A monster that uses a lot of magic, for detection magic purposes."

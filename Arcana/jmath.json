@@ -16,5 +16,11 @@
     "type": "jmath_function",
     "num_args": 0,
     "return": "0"
+  },
+  {
+    "id": "arcana_sanguine_mark_failure_chance",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
   }
 ]

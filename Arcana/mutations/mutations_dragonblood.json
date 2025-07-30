@@ -289,7 +289,7 @@
         ]
       }
     ],
-    "vitamin_rates": [ [ "blood", -5 ], [ "redcells", -5 ] ],
+    "vitamin_rates": [ [ "blood", -20 ], [ "redcells", -20 ] ],
     "flags": [ "PRED1" ]
   },
   {
@@ -321,8 +321,8 @@
       }
     ],
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
-    "vitamin_rates": [ [ "blood", -3 ], [ "redcells", -3 ] ],
-    "flags": [ "PRED2" ]
+    "vitamin_rates": [ [ "blood", -20 ], [ "redcells", -20 ] ],
+    "flags": [ "PRED2", "BLEEDSLOW1" ]
   },
   {
     "type": "mutation",
@@ -358,8 +358,8 @@
     "cost": 500,
     "kcal": true,
     "ranged_mutation": { "type": "mut_dragonfire", "message": "You loose a tongue of flame from your mouth." },
-    "vitamin_rates": [ [ "blood", -1 ], [ "redcells", -1 ] ],
-    "flags": [ "ARCANE_FOG_IMMUNE", "PRED3" ]
+    "vitamin_rates": [ [ "blood", -20 ], [ "redcells", -20 ] ],
+    "flags": [ "ARCANE_FOG_IMMUNE", "PRED3", "BLEEDSLOW2" ]
   },
   {
     "type": "mutation",

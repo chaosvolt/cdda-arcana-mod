@@ -7,7 +7,7 @@
     "deactivate_condition": {
       "or": [
         { "not": { "u_has_trait": "MAGICFORBLOOD" } },
-        { "math": [ "u_spell_level('arcana_xe_vampire_blood_magic_charger') == 1" ] }
+        { "math": [ "u_spell_level('arcana_xe_vampire_blood_magic_charger') >= 1" ] }
       ]
     },
     "effect": [ { "math": [ "u_spell_level('arcana_xe_vampire_blood_magic_charger') = 1" ] } ]

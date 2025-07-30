@@ -7,12 +7,13 @@
     "required_event": "spellcasting_finish",
     "condition": {
       "and": [
-        { "u_has_any_trait": [ "VEIL_PARAGON_SORCERY", "PATTERN_SORCERY", "ARCANA_BLOOD_MAGIC" ] },
+        { "u_has_any_trait": [ "VEIL_PARAGON_SORCERY", "PATTERN_SORCERY", "ARCANA_BLOOD_MAGIC", "ARCANA_SANGUINE_MARKS" ] },
         {
           "or": [
             { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
             { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
-            { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] }
+            { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
+            { "compare_string": [ "ARCANA_SANGUINE_MARKS", { "context_val": "school" } ] }
           ]
         }
       ]

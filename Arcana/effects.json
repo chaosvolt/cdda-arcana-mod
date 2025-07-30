@@ -30,6 +30,14 @@
   },
   {
     "type": "effect_type",
+    "id": "effect_arcana_sanguine_mark_not_enough_blood",
+    "//": "Hidden effect, stops you from killing yourself with sanguine marks",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "NO_ARCANA_SANGUINE_MARKS" ]
+  },
+  {
+    "type": "effect_type",
     "id": "arcana_dragonblood_blood_effigy_effect",
     "max_duration": "10 s",
     "name": [ "Blood Effigy" ],
