@@ -896,5 +896,41 @@
     "copy-from": "mon_dog_mutant_mongrel",
     "type": "MONSTER",
     "death_drops": "mon_dog_mutant_mongrel_death_drops"
+  },
+  {
+    "id": "mon_zombie_stormbringer",
+    "copy-from": "mon_zombie_stormbringer",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_stormbringer_death_drops"
+  },
+  {
+    "id": "mon_zombie_conjoiner",
+    "copy-from": "mon_zombie_conjoiner",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_conjoiner_death_drops"
+  },
+  {
+    "id": "mon_zombie_darkfield",
+    "copy-from": "mon_zombie_darkfield",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_darkfield_death_drops"
+  },
+  {
+    "id": "mon_banshee",
+    "copy-from": "mon_banshee",
+    "type": "MONSTER",
+    "death_drops": "mon_banshee_death_drops"
+  },
+  {
+    "id": "mon_skeleton_master",
+    "copy-from": "mon_skeleton_master",
+    "type": "MONSTER",
+    "death_drops": "mon_skeleton_master_death_drops"
+  },
+  {
+    "id": "mon_skeleton_necro",
+    "copy-from": "mon_skeleton_necro",
+    "type": "MONSTER",
+    "death_drops": "mon_skeleton_necro_death_drops"
   }
 ]

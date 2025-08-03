@@ -1711,5 +1711,72 @@
       },
       { "item": "essence_blood", "prob": 5, "count": [ 2, 4 ] }
     ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_stormbringer_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      { "item": "vortex_shard", "prob": 50 },
+      { "item": "blob_gem", "prob": 25 },
+      { "item": "essence_blood", "prob": 75, "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_conjoiner_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_zombie_medical_death_drops" },
+      { "distribution": [ { "item": "iron_thorn", "prob": 25 }, { "item": "bone_twisted", "prob": 75 } ], "prob": 25 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_darkfield_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      { "item": "shadow_gem", "prob": 50 },
+      { "item": "essence_blood", "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_banshee_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      { "item": "vortex_shard", "prob": 50 },
+      { "item": "essence_blood", "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_skeleton_master_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      {
+        "distribution": [ { "item": "gracken_knuckles", "prob": 50 }, { "item": "bone_twisted", "prob": 40 } ],
+        "prob": 50
+      },
+      { "group": "strange_zombie_death_drops" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_skeleton_necro_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      {
+        "distribution": [ { "item": "gracken_knuckles", "prob": 50 }, { "item": "bone_twisted", "prob": 40 } ],
+        "prob": 50
+      },
+      { "group": "strange_zombie_death_drops" }
+    ]
   }
 ]
