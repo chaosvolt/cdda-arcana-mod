@@ -105,7 +105,7 @@
     "loudness_modifier": 60,
     "damage_modifier": { "damage_type": "bullet", "amount": 80 },
     "ups_charges_modifier": 100,
-    "ammo_effects": [ "AMMO_ANOMALY_NUKE" ],
+    "ammo_effects": [ "AMMO_ANOMALY_NUKE", "NO_PENETRATE_OBSTACLES" ],
     "min_skills": [ [ "weapon", 4 ], [ "fabrication", 6 ], [ "electronics", 6 ], [ "magic", 9 ] ],
     "flags": [ "MAGIC_FOCUS", "NO_SALVAGE" ]
   }

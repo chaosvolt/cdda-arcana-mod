@@ -291,7 +291,7 @@
     "clip_size": 1,
     "reload": 200,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
-    "ammo_effects": [ "NAPALM_CLAW" ],
+    "ammo_effects": [ "NAPALM_CLAW", "NO_PENETRATE_OBSTACLES" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -408,7 +408,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "ammo_effects": [ "PLASMA", "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE", "BOUNCE" ],
+    "ammo_effects": [ "PLASMA", "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE", "BOUNCE", "NO_PENETRATE_OBSTACLES" ],
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "PYROMANIAC_WEAPON", "NO_SALVAGE" ]
   },
   {
@@ -561,7 +561,7 @@
     "dispersion": 90,
     "durability": 10,
     "loudness": 9,
-    "ammo_effects": [ "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE_SMALL", "BOUNCE" ],
+    "ammo_effects": [ "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE_SMALL", "BOUNCE", "NO_PENETRATE_OBSTACLES" ],
     "flags": [ "NEVER_JAMS", "TRADER_AVOID", "USES_BIONIC_POWER", "PYROMANIAC_WEAPON" ]
   },
   {
