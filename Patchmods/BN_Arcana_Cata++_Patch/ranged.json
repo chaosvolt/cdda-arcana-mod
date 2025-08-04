@@ -13,7 +13,7 @@
     "material": [ "steel", "plastic" ],
     "skill": "pistol",
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "PYROMANIAC_WEAPON" ],
-    "ammo_effects": [ "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE_SMALL", "BOUNCE" ],
+    "ammo_effects": [ "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE_SMALL", "BOUNCE", "NO_PENETRATE_OBSTACLES" ],
     "ups_charges": 80,
     "weight": "500 g",
     "volume": "3 L",
