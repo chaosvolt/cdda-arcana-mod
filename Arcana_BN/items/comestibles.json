@@ -543,7 +543,7 @@
     "type": "COMESTIBLE",
     "category": "spellbooks",
     "name": { "str": "Pattern Scroll (Earthweaving)", "str_pl": "Pattern Scrolls (Earthweaving)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path.  Machines and some otherworldly creatures will be immune, and its use will attract otherworldly attention.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will alter terrain at a single targeted point, raising and lowering earthen barriers from any diggable terrain, or raising and lowering solid rock from other walls or floors.  Creatures standing in the way will also take damage.\"",
     "price_postapoc": "90 USD",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_earthweaving", "no_fail": true, "level": 0 }
   },
@@ -553,7 +553,7 @@
     "type": "COMESTIBLE",
     "category": "spellbooks",
     "name": { "str": "Pattern Scroll (Dark Lance)", "str_pl": "Pattern Scrolls (Dark Lance)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path and inflicting double damage at close range.  Machines and some otherworldly creatures will be immune.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path.  Machines and some otherworldly creatures will be immune, and its use will attract otherworldly attention.\"",
     "price_postapoc": "100 USD",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_dark_lance", "no_fail": true, "level": 0 }
   },
