@@ -206,6 +206,11 @@
     "ammo": "essence_dull_type",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
     "techniques": [ "WBLOCK_2" ],
+    "relic_data": {
+      "passive_effects": [
+        { "has": "WIELD", "condition": "ACTIVE", "hit_you_effect": [ { "id": "arcana_react_sun_sword_burn", "once_in": 5 } ] }
+      ]
+    },
     "use_action": [
       {
         "target": "sun_sword_on",
@@ -247,7 +252,7 @@
         }
       }
     ],
-    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
+    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "NONCONDUCTIVE" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
   {
