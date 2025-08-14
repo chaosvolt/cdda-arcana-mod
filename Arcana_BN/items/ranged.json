@@ -126,8 +126,19 @@
     "price": "1000 USD",
     "price_postapoc": "50 USD",
     "to_hit": -1,
-    "bashing": 12,
-    "cutting": 10,
+    "attacks": [
+      {
+        "id": "STAB",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 12 },
+            { "damage_type": "stab", "amount": 8 },
+            { "damage_type": "cold", "amount": 4 }
+          ]
+        }
+      }
+    ],
     "material": [ "iron", "silver" ],
     "symbol": "(",
     "color": "light_gray",
