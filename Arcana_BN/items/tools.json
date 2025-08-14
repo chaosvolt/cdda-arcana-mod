@@ -242,7 +242,7 @@
     "attacks": [
       {
         "id": "SLASH",
-        "to_hit": 1,
+        "to_hit": 2,
         "damage": {
           "values": [
             { "damage_type": "bash", "amount": 10 },
@@ -1000,7 +1000,7 @@
     "attacks": [
       {
         "id": "STAB",
-        "to_hit": 1,
+        "to_hit": 2,
         "damage": {
           "values": [
             { "damage_type": "bash", "amount": 12 },
@@ -1771,7 +1771,7 @@
     "attacks": [
       {
         "id": "SLASH",
-        "to_hit": 1,
+        "to_hit": 2,
         "damage": {
           "values": [
             { "damage_type": "bash", "amount": 16 },
