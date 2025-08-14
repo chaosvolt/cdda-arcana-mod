@@ -206,6 +206,11 @@
     "ammo": "essence_dull_type",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
     "techniques": [ "WBLOCK_2" ],
+    "relic_data": {
+      "passive_effects": [
+        { "has": "WIELD", "condition": "ACTIVE", "hit_you_effect": [ { "id": "arcana_react_sun_sword_burn", "once_in": 5 } ] }
+      ]
+    },
     "use_action": [
       {
         "target": "sun_sword_on",
@@ -234,8 +239,20 @@
       { "type": "firestarter", "moves": 30 },
       { "menu_text": "Turn off", "type": "transform", "msg": "The sword's radiance fades.", "target": "sun_sword" }
     ],
-    "cutting": 40,
-    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
+    "attacks": [
+      {
+        "id": "SLASH",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 10 },
+            { "damage_type": "cut", "amount": 32 },
+            { "damage_type": "light", "amount": 8 }
+          ]
+        }
+      }
+    ],
+    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "NONCONDUCTIVE" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
   {
@@ -980,8 +997,19 @@
     "price": "1000 USD",
     "price_postapoc": "50 USD",
     "to_hit": 2,
-    "bashing": 12,
-    "cutting": 30,
+    "attacks": [
+      {
+        "id": "STAB",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 12 },
+            { "damage_type": "stab", "amount": 20 },
+            { "damage_type": "cold", "amount": 10 }
+          ]
+        }
+      }
+    ],
     "material": [ "iron", "silver" ],
     "symbol": "/",
     "color": "light_gray",
@@ -1740,8 +1768,19 @@
     "price": "45000 USD",
     "price_postapoc": "120 USD",
     "to_hit": 2,
-    "bashing": 16,
-    "cutting": 50,
+    "attacks": [
+      {
+        "id": "SLASH",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 16 },
+            { "damage_type": "cut", "amount": 37 },
+            { "damage_type": "dark", "amount": 13 }
+          ]
+        }
+      }
+    ],
     "material": [ "steel", "essencemat" ],
     "symbol": "/",
     "looks_like": "stormbringer",
