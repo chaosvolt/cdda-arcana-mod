@@ -404,7 +404,7 @@
     ],
     "flags": [ "OVERSIZE", "OUTER", "NO_SALVAGE" ],
     "material_thickness": 6,
-    "armor": [ { "encumbrance": 7, "coverage": 100, "covers": [ "torso" ] } ]
+    "armor": [ { "encumbrance": 3, "coverage": 100, "covers": [ "torso" ] } ]
   },
   {
     "id": "robe_shadow_xl_on",
