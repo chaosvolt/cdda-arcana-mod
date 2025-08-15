@@ -10,8 +10,19 @@
     "volume": "750 ml",
     "price": "1500 USD",
     "price_postapoc": "100 USD",
-    "bashing": 8,
-    "cutting": 10,
+    "attacks": [
+      {
+        "id": "JAB",
+        "to_hit": 0,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 8 },
+            { "damage_type": "stab", "amount": 10 },
+            { "damage_type": "electric", "amount": 5 }
+          ]
+        }
+      }
+    ],
     "material": [ "gold", "silver" ],
     "symbol": ",",
     "looks_like": "gold_bracelet",
@@ -25,22 +36,6 @@
     "loudness": 150,
     "clip_size": 5,
     "reload": 400,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "arcana_react_symbol_judgment_zap",
-              "once_in": 5,
-              "message": "Sparks leap from your weapon.",
-              "npc_message": "Sparks leap from %1$s's weapon."
-            }
-          ]
-        }
-      ]
-    },
     "ammo_effects": [ "LIGHTNING", "LIGHTNING_JUDGMENT" ],
     "flags": [
       "STAB",
@@ -134,7 +129,7 @@
           "values": [
             { "damage_type": "bash", "amount": 12 },
             { "damage_type": "stab", "amount": 8 },
-            { "damage_type": "cold", "amount": 4 }
+            { "damage_type": "cold", "amount": 5 }
           ]
         }
       }
@@ -283,9 +278,19 @@
     "weight": "360 g",
     "volume": "750 ml",
     "price_postapoc": "120 USD",
-    "to_hit": 3,
-    "bashing": 8,
-    "cutting": 16,
+    "attacks": [
+      {
+        "id": "SLASH",
+        "to_hit": 3,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 8 },
+            { "damage_type": "cut", "amount": 16 },
+            { "damage_type": "heat", "amount": 6 }
+          ]
+        }
+      }
+    ],
     "material": [ "steel", "essencemat" ],
     "symbol": "/",
     "looks_like": "bagh_nakha",
@@ -322,7 +327,6 @@
       "NEVER_JAMS",
       "UNBREAKABLE_MELEE",
       "FIRE",
-      "FLAMING",
       "PRIMITIVE_RANGED_WEAPON",
       "USE_PLAYER_ENERGY",
       "PYROMANIAC_WEAPON",
@@ -340,8 +344,13 @@
     "volume": "1750 ml",
     "//": "An out-of-context artifact, if it ever existed as a relic the Silver Enclave left behind it's become effectively unrecognizable, but more likely it was stuck in the creature that brought it here.",
     "price_postapoc": "100 USD",
-    "to_hit": 3,
-    "bashing": 22,
+    "attacks": [
+      {
+        "id": "BASH",
+        "to_hit": 2,
+        "damage": { "values": [ { "damage_type": "bash", "amount": 22 }, { "damage_type": "acid", "amount": 6 } ] }
+      }
+    ],
     "material": [ "wood", "gold", "essencemat" ],
     "symbol": "/",
     "looks_like": "q_staff",

@@ -208,7 +208,24 @@
     "techniques": [ "WBLOCK_2" ],
     "relic_data": {
       "passive_effects": [
-        { "has": "WIELD", "condition": "ACTIVE", "hit_you_effect": [ { "id": "arcana_react_sun_sword_burn", "once_in": 5 } ] }
+        {
+          "has": "WIELD",
+          "condition": "ACTIVE",
+          "hit_you_effect": [
+            {
+              "id": "arcana_react_sun_sword_daze",
+              "once_in": 3,
+              "message": "Your swords lets off a dazzling flare!",
+              "npc_message": "%1$s's sword flashes with holy light."
+            },
+            {
+              "id": "arcana_react_sun_sword_burn",
+              "once_in": 5,
+              "message": "Your sword's radiance burns your foe!",
+              "npc_message": "%1$s's sword gives off a wave of burning heat."
+            }
+          ]
+        }
       ]
     },
     "use_action": [
@@ -247,7 +264,7 @@
           "values": [
             { "damage_type": "bash", "amount": 10 },
             { "damage_type": "cut", "amount": 32 },
-            { "damage_type": "light", "amount": 8 }
+            { "damage_type": "light", "amount": 11 }
           ]
         }
       }
@@ -313,6 +330,19 @@
     "max_charges": 9,
     "charges_per_use": 1,
     "ammo": "essence_type",
+    "attacks": [
+      {
+        "id": "STAB",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 8 },
+            { "damage_type": "stab", "amount": 30 },
+            { "damage_type": "biological", "amount": 10 }
+          ]
+        }
+      }
+    ],
     "relic_data": {
       "passive_effects": [
         {
@@ -331,7 +361,7 @@
       ]
     },
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 } ],
-    "relative": { "weight": 540, "bashing": 2 },
+    "relative": { "weight": 540 },
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
   },
   {
@@ -960,8 +990,20 @@
     "volume": "750 ml",
     "price": "400 USD",
     "price_postapoc": "60 USD",
-    "bashing": 15,
-    "cutting": 28,
+    "//2": "You really wanna hit something with this instead of throw it?",
+    "attacks": [
+      {
+        "id": "SLASH",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 10 },
+            { "damage_type": "cut", "amount": 18 },
+            { "damage_type": "dark", "amount": 7 }
+          ]
+        }
+      }
+    ],
     "thrown_damage": [ { "damage_type": "dark", "amount": 35 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
@@ -1004,8 +1046,8 @@
         "damage": {
           "values": [
             { "damage_type": "bash", "amount": 12 },
-            { "damage_type": "stab", "amount": 20 },
-            { "damage_type": "cold", "amount": 10 }
+            { "damage_type": "stab", "amount": 24 },
+            { "damage_type": "cold", "amount": 9 }
           ]
         }
       }
@@ -1051,8 +1093,35 @@
     "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Robots and other creatures immune to biological damage will not suffer damage from it.",
     "price": "720 USD",
     "price_postapoc": "45 USD",
-    "bashing": 9,
-    "cutting": 29,
+    "attacks": [
+      {
+        "id": "SLASH",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 9 },
+            { "damage_type": "cut", "amount": 29 },
+            { "damage_type": "biological", "amount": 10 }
+          ]
+        }
+      }
+    ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [
+            {
+              "id": "arcana_react_bane_staff_venom",
+              "once_in": 2,
+              "message": "Your blade oozes venom as you strike.",
+              "npc_message": "%1$s's blade oozes venom as they strike."
+            }
+          ]
+        }
+      ]
+    },
     "max_charges": 8,
     "charges_per_use": 2,
     "ammo": "essence_blood_type",
@@ -1414,6 +1483,19 @@
     "price_postapoc": "150 USD",
     "bashing": 16,
     "cutting": 4,
+    "attacks": [
+      {
+        "id": "BASH",
+        "to_hit": 1,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 16 },
+            { "damage_type": "stab", "amount": 8 },
+            { "damage_type": "electric", "amount": 6 }
+          ]
+        }
+      }
+    ],
     "material": [ "hardsteel", "gold" ],
     "symbol": "/",
     "looks_like": "i_staff",
@@ -1421,22 +1503,6 @@
     "max_charges": 10,
     "charges_per_use": 2,
     "ammo": "essence_type",
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "arcana_react_symbol_judgment_zap",
-              "once_in": 3,
-              "message": "Sparks leap from your weapon.",
-              "npc_message": "Sparks leap from %1$s's weapon."
-            }
-          ]
-        }
-      ]
-    },
     "use_action": [
       {
         "type": "cast_spell",
@@ -1652,11 +1718,21 @@
     "description": "A wooden staff topped with a golden cage, enveloping a mass of petrified flesh from which sharp horns have grown.  The counter-argument to the Dragonblood Sacrament.  It draws energy from whatever you strike with it, fueling a protective effect that synergizes with the rituals of the silver athame.  The staff itself can absorb smaller tears in reality, and activating it channels a powerful life-draining beam of energy that blights the land around you.",
     "weight": "2050 g",
     "volume": "1750 ml",
-    "to_hit": 2,
     "//": "Conceived of before the cataclysm but only put together post-cata.",
     "price_postapoc": "150 USD",
-    "bashing": 22,
-    "cutting": 18,
+    "attacks": [
+      {
+        "id": "BASH",
+        "to_hit": 2,
+        "damage": {
+          "values": [
+            { "damage_type": "bash", "amount": 22 },
+            { "damage_type": "stab", "amount": 18 },
+            { "damage_type": "dark", "amount": 10 }
+          ]
+        }
+      }
+    ],
     "material": [ "wood", "bone", "essencemat" ],
     "symbol": "/",
     "looks_like": "scourge_staff",
@@ -1776,7 +1852,7 @@
           "values": [
             { "damage_type": "bash", "amount": 16 },
             { "damage_type": "cut", "amount": 37 },
-            { "damage_type": "dark", "amount": 13 }
+            { "damage_type": "dark", "amount": 14 }
           ]
         }
       }
