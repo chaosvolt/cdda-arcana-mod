@@ -1367,7 +1367,7 @@
     "subtype": "collection",
     "entries": [
       { "item": "essence_blood", "count": [ 2, 4 ], "prob": 10 },
-      { "group": "lab_magitech_general", "count": [ 1, 3 ], "prob": 10 }
+      { "group": "lab_magitech_general", "count": [ 1, 3 ], "prob": 5 }
     ]
   },
   {
@@ -1777,6 +1777,55 @@
         "prob": 50
       },
       { "group": "strange_zombie_death_drops" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_scientist_evolved_emp_death_drops",
+    "subtype": "collection",
+    "//": "No blood essence because mon_zombie_scientist_death_drops already includes a chance to spawn that.",
+    "entries": [
+      { "group": "mon_zombie_scientist_death_drops" },
+      { "distribution": [ { "item": "vortex_shard", "prob": 50 }, { "item": "blob_gem", "prob": 50 } ], "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_scientist_evolved_possessed_death_drops",
+    "subtype": "collection",
+    "//": "No blood essence because mon_zombie_scientist_death_drops already includes a chance to spawn that.",
+    "entries": [ { "group": "mon_zombie_scientist_death_drops" }, { "item": "shadow_gem", "prob": 25 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_smoker_evolved_grappler_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "iridescent_plate", "prob": 25 }, { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_smoker_evolved_toxic_death_drops",
+    "subtype": "collection",
+    "entries": [ { "item": "iridescent_plate", "prob": 25 }, { "item": "essence_blood", "count": [ 2, 4 ], "prob": 50 } ]
+  },
+  {
+    "id": "mon_zombie_seaweed_death_drops",
+    "//": "Adds to existing group.",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "inflorescent_root", "prob": 50 }, { "item": "iron_thorn", "prob": 50 } ], "prob": 10 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_zombie_miner_evolved_shady_death_drops",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_zombie_miner_death_drops" },
+      { "item": "iridescent_plate", "prob": 10 },
+      { "item": "essence_blood", "count": [ 2, 4 ], "prob": 25 }
     ]
   }
 ]
