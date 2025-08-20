@@ -932,5 +932,35 @@
     "copy-from": "mon_skeleton_necro",
     "type": "MONSTER",
     "death_drops": "mon_skeleton_necro_death_drops"
+  },
+  {
+    "id": "mon_zombie_scientist_evolved_emp",
+    "copy-from": "mon_zombie_scientist_evolved_emp",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_scientist_evolved_emp_death_drops"
+  },
+  {
+    "id": "mon_zombie_scientist_evolved_possessed",
+    "copy-from": "mon_zombie_scientist_evolved_possessed",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_scientist_evolved_possessed_death_drops"
+  },
+  {
+    "id": "mon_zombie_smoker_evolved_grappler",
+    "copy-from": "mon_zombie_smoker_evolved_grappler",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_smoker_evolved_grappler_death_drops"
+  },
+  {
+    "id": "mon_zombie_smoker_evolved_toxic",
+    "copy-from": "mon_zombie_smoker_evolved_toxic",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_smoker_evolved_toxic_death_drops"
+  },
+  {
+    "id": "mon_zombie_miner_evolved_shady",
+    "copy-from": "mon_zombie_miner_evolved_shady",
+    "type": "MONSTER",
+    "death_drops": "mon_zombie_miner_evolved_shady_death_drops"
   }
 ]
