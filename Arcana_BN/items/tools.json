@@ -269,7 +269,7 @@
         }
       }
     ],
-    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "NONCONDUCTIVE" ] },
+    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "NONCONDUCTIVE", "COMBAT_NPC_ON " ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
   {
@@ -1562,6 +1562,7 @@
     "turns_per_charge": 25,
     "revert_to": "scourge_moonstone",
     "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
+    "extend": { "flags": [ "COMBAT_NPC_ON " ] },
     "use_action": [ { "target": "scourge_moonstone", "msg": "The wicked energy flowing through the whip fades.", "type": "transform" } ]
   },
   {
@@ -1636,7 +1637,7 @@
       "msg": "The fang's unnatural glow fades, its protective magic with it.",
       "type": "transform"
     },
-    "extend": { "flags": [ "TRADER_AVOID", "NO_UNWIELD" ] }
+    "extend": { "flags": [ "TRADER_AVOID", "NO_UNWIELD", "COMBAT_NPC_ON" ] }
   },
   {
     "id": "veilblade",
@@ -1823,7 +1824,7 @@
         "type": "transform"
       }
     ],
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "SNIPPET_NEEDS_LITERACY", "COMBAT_NPC_USE" ] },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "SNIPPET_NEEDS_LITERACY" ] },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
   },
   {
