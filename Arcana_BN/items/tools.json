@@ -269,7 +269,7 @@
         }
       }
     ],
-    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "NONCONDUCTIVE", "COMBAT_NPC_ON " ] },
+    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "NONCONDUCTIVE", "COMBAT_NPC_ON" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
   {
@@ -1562,7 +1562,7 @@
     "turns_per_charge": 25,
     "revert_to": "scourge_moonstone",
     "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
-    "extend": { "flags": [ "COMBAT_NPC_ON " ] },
+    "extend": { "flags": [ "COMBAT_NPC_ON" ] },
     "use_action": [ { "target": "scourge_moonstone", "msg": "The wicked energy flowing through the whip fades.", "type": "transform" } ]
   },
   {
