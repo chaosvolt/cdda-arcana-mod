@@ -239,7 +239,7 @@
         "type": "transform"
       }
     ],
-    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE", "COMBAT_NPC_USE" ]
   },
   {
     "id": "sun_sword_on",
@@ -269,7 +269,7 @@
         }
       }
     ],
-    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "NONCONDUCTIVE" ] },
+    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "NONCONDUCTIVE", "COMBAT_NPC_ON" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
   {
@@ -976,7 +976,7 @@
         "type": "transform"
       }
     ],
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "BOMB" ] }
   },
   {
     "id": "bloodaxe_act",
@@ -1528,7 +1528,7 @@
     "volume": "2 L",
     "price_postapoc": "150 USD",
     "material": [ "leather", "stone", "silver" ],
-    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "DURABLE_MELEE" ],
+    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "DURABLE_MELEE", "COMBAT_NPC_USE" ],
     "techniques": [ "WHIP_DISARM" ],
     "bashing": 3,
     "cutting": 21,
@@ -1562,6 +1562,7 @@
     "turns_per_charge": 25,
     "revert_to": "scourge_moonstone",
     "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
+    "extend": { "flags": [ "COMBAT_NPC_ON" ] },
     "use_action": [ { "target": "scourge_moonstone", "msg": "The wicked energy flowing through the whip fades.", "type": "transform" } ]
   },
   {
@@ -1620,7 +1621,7 @@
       "menu_text": "Activate ward against cold",
       "type": "transform"
     },
-    "flags": [ "STAB", "SHEATH_KNIFE", "DURABLE_MELEE" ]
+    "flags": [ "STAB", "SHEATH_KNIFE", "DURABLE_MELEE", "COMBAT_NPC_USE" ]
   },
   {
     "id": "moonstone_fang_on",
@@ -1636,7 +1637,7 @@
       "msg": "The fang's unnatural glow fades, its protective magic with it.",
       "type": "transform"
     },
-    "extend": { "flags": [ "TRADER_AVOID", "NO_UNWIELD" ] }
+    "extend": { "flags": [ "TRADER_AVOID", "NO_UNWIELD", "COMBAT_NPC_ON" ] }
   },
   {
     "id": "veilblade",
