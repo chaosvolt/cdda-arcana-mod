@@ -239,7 +239,7 @@
         "type": "transform"
       }
     ],
-    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE", "COMBAT_NPC_USE" ]
   },
   {
     "id": "sun_sword_on",
@@ -976,7 +976,7 @@
         "type": "transform"
       }
     ],
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "BOMB" ] }
   },
   {
     "id": "bloodaxe_act",
@@ -1528,7 +1528,7 @@
     "volume": "2 L",
     "price_postapoc": "150 USD",
     "material": [ "leather", "stone", "silver" ],
-    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "DURABLE_MELEE" ],
+    "flags": [ "REACH_ATTACK", "REACH3", "NO_SALVAGE", "DURABLE_MELEE", "COMBAT_NPC_USE" ],
     "techniques": [ "WHIP_DISARM" ],
     "bashing": 3,
     "cutting": 21,
@@ -1620,7 +1620,7 @@
       "menu_text": "Activate ward against cold",
       "type": "transform"
     },
-    "flags": [ "STAB", "SHEATH_KNIFE", "DURABLE_MELEE" ]
+    "flags": [ "STAB", "SHEATH_KNIFE", "DURABLE_MELEE", "COMBAT_NPC_USE" ]
   },
   {
     "id": "moonstone_fang_on",
@@ -1823,7 +1823,7 @@
         "type": "transform"
       }
     ],
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "SNIPPET_NEEDS_LITERACY" ] },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "SNIPPET_NEEDS_LITERACY", "COMBAT_NPC_USE" ] },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
   },
   {
