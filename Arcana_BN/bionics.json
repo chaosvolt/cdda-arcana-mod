@@ -75,7 +75,7 @@
     "description": "A network of emitters that distort time to a limited extent when activated, increasing your speed and stamina in exchange for greatly increased hunger, thirst, and fatigue.",
     "occupied_bodyparts": [ [ "torso", 8 ], [ "arm_l", 3 ], [ "arm_r", 3 ], [ "leg_l", 4 ], [ "leg_r", 4 ] ],
     "enchantments": [ "ENCH_CBM_TEMPORAL_STIMULATION" ],
-    "flags": [ "BIONIC_TOGGLED" ],
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_NPC_USABLE", "COMBAT_NPC_USE" ],
     "act_cost": "1 kJ",
     "react_cost": "1 kJ",
     "time": 1
@@ -87,7 +87,7 @@
     "description": "An exotic device that radiates disruptive energies when active, creating a shroud that blinds the undead to your presence.  In exchange it sickens the body steadily, plus wildlife will sense that something is off…",
     "occupied_bodyparts": [ [ "torso", 5 ] ],
     "enchantments": [ "ENCH_CBM_LIFE_SIGN_SUPPRESSION" ],
-    "flags": [ "BIONIC_TOGGLED" ],
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_NPC_USABLE", "COMBAT_NPC_USE" ],
     "act_cost": "750 J",
     "react_cost": "750 J",
     "time": 1

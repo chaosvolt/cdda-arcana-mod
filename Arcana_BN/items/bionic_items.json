@@ -27,7 +27,7 @@
   },
   {
     "id": "bio_essence_surge_cell",
-    "copy-from": "bionic_general",
+    "copy-from": "bionic_general_npc_usable",
     "type": "BIONIC_ITEM",
     "name": { "str": "Essence Surge Cell CBM" },
     "looks_like": "bio_int_enhancer",
@@ -40,7 +40,7 @@
   },
   {
     "id": "bio_temporal_stimulation",
-    "copy-from": "bionic_general",
+    "copy-from": "bionic_general_npc_usable",
     "type": "BIONIC_ITEM",
     "name": { "str": "Temporal Stimulation CBM" },
     "looks_like": "bio_int_enhancer",
@@ -52,7 +52,7 @@
   },
   {
     "id": "bio_life_sign_suppression",
-    "copy-from": "bionic_general",
+    "copy-from": "bionic_general_npc_usable",
     "type": "BIONIC_ITEM",
     "name": { "str": "Life Sign Suppression CBM" },
     "looks_like": "bio_int_enhancer",
