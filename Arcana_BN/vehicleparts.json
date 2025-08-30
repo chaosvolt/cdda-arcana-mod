@@ -135,7 +135,6 @@
     "flags": [ "ENGINE", "E_NO_POWER_DECAY" ],
     "description": "A powerful electric motor relying on spatial distortion.  Outputs more energy than it consumes, but unusable as a source of free energy.  Multiple can be installed without skill penalty or loss of power, but alternators cannot be installed on it."
   },
-
   {
     "id": "distorion_flow_rotor_part",
     "copy-from": "distorion_amp_motor_part",
@@ -155,7 +154,6 @@
     "rotor_diameter": 20,
     "description": "A powerful combination electric drive and VTOL rotor, combining multiple anomalous properties.  Outputs more energy than it consumes.  Multiple can be installed without skill penalty or loss of power, but alternators cannot be installed on it."
   },
-
   {
     "abstract": "essence_surge_generator_abstract",
     "type": "vehicle_part",
