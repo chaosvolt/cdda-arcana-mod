@@ -17,6 +17,18 @@
     "flags": [ "NO_SALVAGE" ]
   },
   {
+    "type": "GENERIC",
+    "id": "distortion_flow_rotor_item",
+    "copy-from": "distortion_amp_motor_item",
+    "looks_like": "distortion_amp_motor_item",
+    "name": { "str": "distortion flow rotor" },
+    "description": "A powerful electric motor that combines a spatial distortion with a temporal anomaly, and directs it into a compact VTOL rotor system.  Installing it on a vehicle will provide both motive power and flight, with unnatural efficiency.",
+    "weight": "15 kg",
+    "bashing": 6,
+    "price": "9000 USD",
+    "price_postapoc": "75 USD"
+  },
+  {
     "type": "TOOL",
     "abstract": "essence_surge_generator_item_abstract",
     "looks_like": "alternator_truck",

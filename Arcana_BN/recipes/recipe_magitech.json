@@ -303,7 +303,7 @@
       [ [ "cable", 30 ] ],
       [ [ "mana_gem", 1 ] ],
       [ [ "iron_thorn", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
+      [ [ "arcana_essence_any", 4, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -326,7 +326,7 @@
       [ [ "cable", 30 ] ],
       [ [ "mana_gem_blood", 1 ] ],
       [ [ "iron_thorn", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
+      [ [ "arcana_essence_any", 4, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -349,7 +349,7 @@
       [ [ "cable", 30 ] ],
       [ [ "mana_gem_dull", 1 ] ],
       [ [ "iron_thorn", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
+      [ [ "arcana_essence_any", 4, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -372,7 +372,26 @@
       [ [ "cable", 30 ] ],
       [ [ "mana_gem_pure", 1 ] ],
       [ [ "iron_thorn", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
+      [ [ "arcana_essence_any", 4, "LIST" ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "distortion_flow_rotor_item",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "skills_required": [ [ "electronics", 5 ], [ "fabrication", 4 ] ],
+    "difficulty": 6,
+    "time": "45 m",
+    "book_learn": [ [ "recipe_lab_arcana", 6 ], [ "recipe_lab_elec", 7 ] ],
+    "using": [ [ "welding_standard", 5 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "distortion_amp_motor_item", 1 ] ],
+      [ [ "sheet_metal_small", 8 ] ],
+      [ [ "inflorescent_root", 1 ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -399,8 +418,30 @@
       ],
       [ [ "shadow_gem", 1 ] ],
       [ [ "gold_small", 100 ] ],
-      [ [ "silver_glyph", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
+      [ [ "silver_glyph", 1 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "dull_essence_UPS",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "skills_required": [ [ "electronics", 6 ], [ "fabrication", 4 ] ],
+    "difficulty": 5,
+    "time": "45 m",
+    "book_learn": [ [ "recipe_lab_arcana", 5 ], [ "recipe_lab_elec", 6 ], [ "textbook_atomic_lab", 6 ] ],
+    "using": [ [ "soldering_standard", 5 ], [ "steel_tiny", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "canister_empty", 1 ] ],
+      [ [ "copper_scrap_equivalent", 2, "LIST" ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "cable", 15 ] ],
+      [ [ "mana_gem_dull", 1 ] ],
+      [ [ "iron_thorn", 1 ] ],
+      [ [ "arcana_essence_any", 4, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },

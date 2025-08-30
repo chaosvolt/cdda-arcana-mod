@@ -1426,6 +1426,26 @@
     "flags": [ "ALLOWS_REMOTE_USE", "NO_SALVAGE" ]
   },
   {
+    "id": "dull_essence_UPS",
+    "type": "TOOL",
+    "name": { "str": "essence focus cell" },
+    "description": "A small copper chamber designed to convert essence into a steady supply of electrical current.  Can store a large concentration of dull essence and power items that run off a Unified Power Supply with it, such as energy weapons or power armor.",
+    "weight": "1 kg",
+    "volume": "2 L",
+    "price": "6000 USD",
+    "price_postapoc": "30 USD",
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [ "copper", "steel" ],
+    "symbol": ";",
+    "color": "light_red",
+    "looks_like": "medium_atomic_battery_cell",
+    "ammo": "essence_dull_type",
+    "max_charges": 6000,
+    "ups_eff_mult": 5,
+    "flags": [ "IS_UPS", "NO_SALVAGE" ]
+  },
+  {
     "id": "spatial_displacer",
     "type": "TOOL",
     "name": { "str": "spatial displacer" },
