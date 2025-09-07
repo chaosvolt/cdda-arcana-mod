@@ -1638,41 +1638,52 @@
     "object": {
       "fill_ter": "t_concrete",
       "rows": [
-        "##|                  |X#",
-        "##|^                 |_#",
-        "##|^ hhhh  YY   hhhh |_#",
-        "##|^                 |_#",
-        "##|^ hhhh       hhhh |_#",
-        "##|^                 |_#",
-        "##|^          |^^^^^^|_#",
-        "##||(((((|    ||||||||_#",
-        "###|l h  ( YY |######__#",
-        "###|l    ( YY |###_____#",
-        "###|l    (    |##_____##",
-        "###||2||||    |#_____###",
-        "###|     |    |##___####",
-        "###|   hd|G55||#########",
-        "###|  ddd|   ^|#########",
-        "###||5(((|   ^|||||||###",
+        "___gTgggTg____gTgggTg___",
+        "___IXIIIXI____IXIIIXI___",
+        "___gTgggTg____gTgggTg___",
+        "___gTgggTg____gTgggTg___",
+        "___IXIIIXI____IXIIIXI___",
+        "#__gTgggTg____gTgggTg__#",
+        "##_gTgggTg____gTgggTg__#",
+        "##|gpgggpg____gpgggpg|,#",
+        "##|                  |,#",
+        "##|^ hhhh  YY  hhhh ^|,#",
+        "##|^                ^|,#",
+        "##|^ hhhh      hhhh ^|,#",
+        "##|^                ^|,#",
+        "##||(((((|    ||||||||,#",
+        "###|l ddd( YY |###,,,,,#",
+        "###|l  hd( YY |##,,,,,##",
+        "###|l    (    |###,,,###",
+        "###||5(((||55G|||||||###",
         "###|B          VV ^^|###",
         "###|B      YY      ?|###",
         "###|B dddd YY    t ?|###",
         "###|B d hd         ?|###",
         "###|B          t? ^^|###",
-        "###||||||||  ||||||||###",
-        "##########|22|##########",
-        "##########|  |##########"
+        "###||||||||22||||||||###"
       ],
       "palettes": [ "microlab" ],
-      "terrain": { "G": "t_card_science", "X": "t_secretdoor_metal_c", "_": "t_rock_floor" },
+      "terrain": {
+        "_": [ [ "t_rock_floor", 9 ], "t_moss_underground" ],
+        ",": "t_rock_floor",
+        "G": "t_card_science",
+        "g": "t_railroad_rubble",
+        "I": "t_railroad_tie",
+        "p": "t_buffer_stop",
+        "T": "t_railroad_track",
+        "X": "t_railroad_track_on_tie"
+      },
       "items": {
         "l": [ { "item": "guns_milspec", "chance": 10 }, { "item": "ammo_milspec", "chance": 70 } ],
-        "t": { "item": "magazines", "chance": 90 },
-        "_": { "item": "mine_storage", "chance": 10 }
+        "t": { "item": "magazines", "chance": 90 }
       },
       "place_loot": [
-        { "group": "arcane_purifier_generic_casualty", "x": [ 17, 18 ], "y": [ 11, 12 ] },
-        { "group": "arcane_purifier_generic_casualty", "x": [ 20, 21 ], "y": [ 9, 10 ] }
+        { "group": "arcane_purifier_generic_casualty", "x": [ 18, 20 ], "y": [ 14, 16 ], "repeat": [ 1, 2 ] }
+      ],
+      "place_vehicles": [
+        { "vehicle": "trains_lab_entrance", "x": 7, "y": 5, "chance": 25, "rotation": 90 },
+        { "vehicle": "trains_lab_entrance", "x": 16, "y": 1, "chance": 25, "rotation": 270 }
       ]
     }
   },
