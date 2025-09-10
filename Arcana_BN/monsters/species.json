@@ -4,7 +4,7 @@
     "id": "ARCANA_SUMMONED",
     "name": { "str": "summoned monster" },
     "description": "a summoned monster",
-    "footsteps": "faint whispers.",
+    "footsteps": [ "faint whispers" ],
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "STALK", "PLAYER_CLOSE" ]
   },
   {
