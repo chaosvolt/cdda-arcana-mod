@@ -234,7 +234,7 @@
     "type": "furniture",
     "id": "f_transmutation_crucible_deployed",
     "name": "deployed transmutation crucible",
-    "description": "Shifting, flowing stones slithering around a strange stone crucible.  Serves as an anvil and crucible for metalworking, along with serving as a workbench and assisting with alchemy.  Can be reclaimed by examining it.\n\nProvides the following:\n* Level 3 anvil quality.\n* Level 2 boiling quality.\n* Level 2 chemical making quality.\n* Level 1 containing quality.\n* Level 1 food cooking quality.\n* Additionally serves as a crucible.",
+    "description": "Shifting, flowing stones slithering around a strange stone crucible.  Serves as an anvil and crucible for metalworking, along with serving as a workbench and assisting with alchemy.  Can be reclaimed by examining it.\n\nProvides the following:\n* Level 3 anvil quality.\n* Level 2 boiling quality.\n* Level 2 chemical making quality.\n* Level 1 containing quality.\n* Level 1 hot containing quality.\n* Level 1 food cooking quality.",
     "symbol": "n",
     "color": "dark_gray",
     "looks_like": "f_slab",

@@ -13,7 +13,7 @@
     "batch_time_factors": [ 50, 2 ],
     "charges": 200,
     "using": [ [ "forging_standard", 1 ] ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
     "components": [
       [
         [ "lead", 150 ],
@@ -41,7 +41,7 @@
     "batch_time_factors": [ 50, 2 ],
     "charges": 3,
     "using": [ [ "forging_standard", 1 ] ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
     "components": [
       [ [ "lead", 200 ], [ "bismuth", 300 ], [ "copper", 300 ], [ "cartridgebrass", 600 ], [ "tin", 300 ] ],
       [ [ "silver_small", 20 ], [ "gold_small", 12 ], [ "platinum_small", 12 ] ],
@@ -62,7 +62,7 @@
     "batch_time_factors": [ 50, 2 ],
     "charges": 200,
     "using": [ [ "forging_standard", 1 ] ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
     "components": [
       [
         [ "lead", 200 ],
@@ -90,7 +90,7 @@
     "batch_time_factors": [ 50, 2 ],
     "charges": 200,
     "using": [ [ "forging_standard", 1 ] ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
     "components": [
       [
         [ "lead", 400 ],
@@ -118,7 +118,7 @@
     "batch_time_factors": [ 50, 2 ],
     "charges": 200,
     "using": [ [ "forging_standard", 1 ] ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
     "components": [
       [
         [ "lead", 400 ],
@@ -145,7 +145,7 @@
     "batch_time_factors": [ 50, 2 ],
     "charges": 200,
     "using": [ [ "forging_standard", 1 ] ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
     "components": [
       [ [ "salt", 75 ] ],
       [ [ "ash", 50 ] ],

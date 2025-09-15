@@ -12,7 +12,6 @@
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
     "using": [ [ "blacksmithing_intermediate", 1 ], [ "surface_heat", 2 ] ],
     "qualities": [ { "id": "CHEM", "level": 2 } ],
-    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ],
       [ [ "salt", 5 ] ],
@@ -34,7 +33,6 @@
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
     "using": [ [ "blacksmithing_intermediate", 3 ], [ "surface_heat", 6 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CHEM", "level": 2 } ],
-    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [ [ [ "salt", 15 ] ], [ [ "copper", 9 ] ], [ [ "lye_powder", 6 ] ], [ [ "steel_chunk", 3 ], [ "scrap", 6 ] ] ]
   },
   {
@@ -48,9 +46,8 @@
     "difficulty": 4,
     "time": "1 h 20 m",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "surface_heat", 24 ], [ "arcana_essence_any", 8 ] ],
+    "using": [ [ "blacksmithing_intermediate", 6 ], [ "surface_heat", 24 ], [ "arcana_essence_any", 8 ] ],
     "qualities": [ { "id": "CHEM", "level": 2 } ],
-    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [ [ [ "salt", 60 ] ], [ [ "copper", 36 ] ], [ [ "lye_powder", 24 ] ], [ [ "steel_chunk", 12 ], [ "scrap", 24 ] ] ]
   },
   {
@@ -66,7 +63,6 @@
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
     "using": [ [ "blacksmithing_intermediate", 25 ], [ "surface_heat", 50 ] ],
     "qualities": [ { "id": "CHEM", "level": 2 } ],
-    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_blood", 50 ], [ "essence_dull", 500 ] ],
       [ [ "salt", 125 ] ],
@@ -501,7 +497,6 @@
     "time": "25 m",
     "book_learn": [ [ "recipe_lab_arcana", 8 ], [ "book_sacrifice", 9 ], [ "book_syncretism", 9 ] ],
     "using": [ [ "blacksmithing_intermediate", 25 ], [ "steel_tiny", 5 ] ],
-    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "offering_chalice", 1 ] ],
       [ [ "amplifier", 2 ] ],
