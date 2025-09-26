@@ -879,7 +879,7 @@
     "id": "TALK_HERMIT_DISCUSS_1_SEVEN",
     "dynamic_line": "Indeed there were.  Seven sacrifices, seven gifts from He From Beyond The Veil… left in the care of seven high priests.  They were to use these to serve His will, to prevent the wounds in The Veil from worsening.  We failed in that.",
     "responses": [
-      { "text": "What happened to the other six", "topic": "TALK_HERMIT_DISCUSS_1_SIX" },
+      { "text": "What happened to the other six?", "topic": "TALK_HERMIT_DISCUSS_1_SIX" },
       { "text": "What happened to this one?", "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED" },
       { "text": "What if I would prefer to destroy this relic?", "topic": "TALK_HERMIT_DISCUSS_1_DESTROY" },
       {
