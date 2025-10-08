@@ -35,7 +35,7 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "pain_min": [ -1 ], "stamina_min": [ 20 ], "health_min": [ 1 ], "h_mod_min": [ 1 ], "rad_min": [ -1 ] }
+    "base_mods": { "pain_min": [ -1 ], "stamina_min": [ 20 ], "health_min": [ 1 ] }
   },
   {
     "type": "effect_type",
@@ -47,7 +47,7 @@
     "type": "effect_type",
     "id": "life_sign_suppression_debuff",
     "//": "This makes you health go down slowly while LSS is in use.",
-    "base_mods": { "health_min": [ -1 ], "health_tick": [ 60 ], "h_mod_min": [ -1 ], "h_mod_tick": [ 60 ] }
+    "base_mods": { "health_min": [ -1 ], "health_tick": [ 60 ] }
   },
   {
     "type": "effect_type",
@@ -162,15 +162,7 @@
     "max_duration": "30 m",
     "max_intensity": 30,
     "int_dur_factor": "1 m",
-    "base_mods": {
-      "health_min": [ 1 ],
-      "health_chance": [ 5 ],
-      "h_mod_min": [ 1 ],
-      "h_mod_chance": [ 5 ],
-      "pain_tick": [ 25 ],
-      "pain_min": [ -5 ],
-      "speed_mod": [ -10, -5 ]
-    }
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 5 ], "pain_tick": [ 25 ], "pain_min": [ -5 ], "speed_mod": [ -10, -5 ] }
   },
   {
     "type": "effect_type",
@@ -185,15 +177,7 @@
     "max_duration": "20 m",
     "max_intensity": 20,
     "int_dur_factor": "1 m",
-    "base_mods": {
-      "health_min": [ 1 ],
-      "health_chance": [ 15 ],
-      "h_mod_min": [ 1 ],
-      "h_mod_chance": [ 15 ],
-      "pain_tick": [ 50 ],
-      "pain_min": [ -10 ],
-      "speed_mod": [ -15, -10 ]
-    }
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 15 ], "pain_tick": [ 50 ], "pain_min": [ -10 ], "speed_mod": [ -15, -10 ] }
   },
   {
     "type": "effect_type",
@@ -397,8 +381,6 @@
       "stamina_min": [ 0, -150 ],
       "health_min": [ 0, -10 ],
       "health_tick": [ 0, 30 ],
-      "h_mod_min": [ 0, -10 ],
-      "h_mod_tick": [ 0, 30 ],
       "pain_min": [ 0, 1 ],
       "pain_tick": [ 0, 5 ]
     }
@@ -696,7 +678,7 @@
     "name": [ "Absorption Aftereffects" ],
     "desc": [ "Rapidly recovers stamina, increases healthiness." ],
     "max_duration": "10 m",
-    "base_mods": { "stamina_min": [ 200 ], "health_min": [ 1 ], "h_mod_min": [ 1 ] }
+    "base_mods": { "stamina_min": [ 200 ], "health_min": [ 1 ] }
   },
   {
     "type": "effect_type",
@@ -732,8 +714,6 @@
       "str_mod": [ -0.75 ],
       "health_min": [ -1 ],
       "health_tick": [ 1800, 2000 ],
-      "h_mod_min": [ -1 ],
-      "h_mod_tick": [ 1800, 2000 ],
       "stamina_min": [ -5 ],
       "stamina_tick": [ 10, 12 ]
     },
@@ -741,8 +721,6 @@
       "str_mod": [ -0.75, -0.5 ],
       "health_min": [ -1, -0.8 ],
       "health_tick": [ -200, -250 ],
-      "h_mod_min": [ -1, -0.8 ],
-      "h_mod_tick": [ -200, -250 ],
       "stamina_min": [ -5 ],
       "stamina_tick": [ -1, -0.8 ]
     }
@@ -808,8 +786,6 @@
       "stamina_min": [ 30 ],
       "health_min": [ -1 ],
       "health_tick": [ 125 ],
-      "h_mod_min": [ -1 ],
-      "h_mod_tick": [ 125 ],
       "fatigue_min": [ 1 ],
       "fatigue_tick": [ 125 ]
     }
@@ -910,8 +886,6 @@
       "vomit_chance": [ 800 ],
       "health_min": [ -6, -5 ],
       "health_chance": [ 400 ],
-      "h_mod_min": [ -6, -5 ],
-      "h_mod_chance": [ 400 ],
       "rad_min": [ 5, 4 ],
       "rad_chance": [ 1000 ]
     },
@@ -921,7 +895,6 @@
       "speed_mod": [ -4, -3 ],
       "vomit_chance": [ -120, -115 ],
       "health_chance": [ -40, -35 ],
-      "h_mod_chance": [ -40, -35 ],
       "rad_chance": [ -100, -95 ]
     }
   },
@@ -1010,8 +983,6 @@
     "base_mods": {
       "health_min": [ -1 ],
       "health_tick": [ 3600 ],
-      "h_mod_min": [ -1 ],
-      "h_mod_tick": [ 3600 ],
       "hunger_min": [ 1 ],
       "hunger_chance": [ -20 ],
       "hunger_chance_bot": [ 100 ],
@@ -1024,7 +995,6 @@
     },
     "scaling_mods": {
       "health_tick": [ -360, -300 ],
-      "h_mod_tick": [ -360, -300 ],
       "str_mod": [ -0.75, -0.6 ],
       "hunger_chance": [ 20, 15 ],
       "dex_mod": [ -0.75, -0.6 ],
@@ -1049,8 +1019,6 @@
     "base_mods": {
       "health_min": [ 1 ],
       "health_tick": [ 1800 ],
-      "h_mod_min": [ 1 ],
-      "h_mod_tick": [ 1800 ],
       "hunger_min": [ -1 ],
       "hunger_chance": [ 80 ],
       "hunger_chance_bot": [ 100 ],
@@ -1082,7 +1050,6 @@
       "rad_min": [ -5, 5 ],
       "fatigue_min": [ 0, 10 ],
       "health_min": [ 0, -2 ],
-      "h_mod_min": [ 0, -2 ],
       "pain_min": [ 0, 2 ],
       "hunger_min": [ 0, 5 ]
     }
@@ -1147,7 +1114,7 @@
     "type": "effect_type",
     "id": "arcana_moonstone_touch",
     "max_duration": "4 s",
-    "base_mods": { "health_min": [ 1 ], "h_mod_min": [ 1 ] }
+    "base_mods": { "health_min": [ 1 ] }
   },
   {
     "type": "effect_type",
@@ -1219,9 +1186,7 @@
       "rad_min": [ -1 ],
       "rad_tick": [ 25 ],
       "health_min": [ 1 ],
-      "health_tick": [ 25 ],
-      "h_mod_min": [ 1 ],
-      "h_mod_tick": [ 25 ]
+      "health_tick": [ 25 ]
     }
   }
 ]
