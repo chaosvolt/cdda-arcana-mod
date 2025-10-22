@@ -134,7 +134,7 @@
       "So long as the Sun shines upon the Earth.  I am prepared to do my duty.",
       "So be it.  When you're ready.",
       "Dii vult.  Let's go.",
-      "We'll manage, but thank you.  Speak with Sofia, she might have something for you to do.",
+      "Then we hunt.  Lead the way.",
       {
         "u_has_trait": "PROF_CLEANSINGFLAME",
         "yes": { "u_male": "As you see fit, Brother.", "no": "As you see fit, Sister." },
