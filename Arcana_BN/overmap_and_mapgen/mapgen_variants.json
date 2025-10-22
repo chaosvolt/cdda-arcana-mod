@@ -364,9 +364,10 @@
       ],
       "palettes": [ "evac_center" ],
       "place_zones": [
-        { "type": "NPC_INVESTIGATE_ONLY", "faction": "free_merchants", "x": [ 0, 23 ], "y": [ 0, 23 ] },
-        { "type": "NPC_INVESTIGATE_ONLY", "faction": "wasteland_scavengers", "x": [ 0, 23 ], "y": [ 0, 23 ] },
-        { "type": "NPC_NO_INVESTIGATE", "faction": "wasteland_scavengers", "x": [ 0, 23 ], "y": [ 3, 20 ] }
+        { "type": "NPC_NO_INVESTIGATE", "faction": "free_merchants", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "type": "NPC_NO_INVESTIGATE", "faction": "wasteland_scavengers", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "type": "NPC_NO_INVESTIGATE", "faction": "old_guard", "x": [ 0, 23 ], "y": [ 0, 23 ] },
+        { "type": "NPC_NO_INVESTIGATE", "faction": "lobby_beggars", "x": [ 0, 23 ], "y": [ 0, 23 ] }
       ],
       "items": {
         "D": { "item": "trash", "chance": 60, "repeat": [ 1, 3 ] },
