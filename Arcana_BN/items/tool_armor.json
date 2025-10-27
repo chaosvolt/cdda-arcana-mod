@@ -108,7 +108,7 @@
       "need_charges_msg": "Fuel the mask with consecrated essence, to open your eyes.",
       "type": "transform"
     },
-    "flags": [ "NO_SALVAGE", "COMBAT_NPC_USE" ]
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "id": "somen_clairvoyance_on",
@@ -126,7 +126,7 @@
       "menu_text": "Turn off",
       "type": "transform"
     },
-    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF", "COMBAT_NPC_ON" ] }
+    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF" ] }
   },
   {
     "id": "somen_clairvoyance_xl",
@@ -169,7 +169,7 @@
       "need_charges_msg": "Fuel the visor with consecrated essence, to open your eyes.",
       "type": "transform"
     },
-    "flags": [ "NO_SALVAGE", "OVERSIZE", "OUTER", "POWERARMOR_COMPATIBLE", "COMBAT_NPC_USE" ]
+    "flags": [ "NO_SALVAGE", "OVERSIZE", "OUTER", "POWERARMOR_COMPATIBLE" ]
   },
   {
     "id": "somen_clairvoyance_xl_on",
@@ -186,7 +186,7 @@
       "menu_text": "Turn off",
       "type": "transform"
     },
-    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF", "COMBAT_NPC_ON" ] }
+    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "IR_EFFECT", "PARTIAL_DEAF" ] }
   },
   {
     "id": "armor_wyrm",
