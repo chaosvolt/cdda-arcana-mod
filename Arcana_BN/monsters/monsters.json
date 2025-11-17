@@ -73,7 +73,8 @@
       "SEES",
       "PATH_AVOID_DANGER_1",
       "STUN_IMMUNE",
-      "PRIORITIZE_TARGETS"
+      "PRIORITIZE_TARGETS",
+      "CANT_CLONE"
     ]
   },
   {
@@ -131,7 +132,8 @@
       "NO_BREATHE",
       "PARALYZEVENOM",
       "PATH_AVOID_DANGER_2",
-      "PRIORITIZE_TARGETS"
+      "PRIORITIZE_TARGETS",
+      "CANT_CLONE"
     ],
     "//": "Boss-level essence and an item"
   },
@@ -211,7 +213,8 @@
       "PRIORITIZE_TARGETS",
       "HARDTOSHOOT",
       "QUEEN",
-      "NIGHT_INVISIBILITY"
+      "NIGHT_INVISIBILITY",
+      "CANT_CLONE"
     ]
   },
   {
@@ -300,7 +303,8 @@
       "POISON",
       "REVIVES",
       "NO_BREATHE",
-      "PRIORITIZE_TARGETS"
+      "PRIORITIZE_TARGETS",
+      "CANT_CLONE"
     ]
   },
   {
@@ -327,7 +331,7 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE", "CANT_CLONE" ] },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
   },
   {
@@ -346,7 +350,7 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CANT_CLONE" ] },
     "delete": { "upgrades": { "half_life": 8, "into": "mon_zombie_brute" } }
   },
   {
@@ -365,7 +369,7 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE", "CANT_CLONE" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
   },
   {
@@ -383,7 +387,7 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CANT_CLONE" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -403,7 +407,7 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_drops": {  },
     "special_attacks": [ [ "RANGED_PULL", 20 ], [ "LUNGE", 10 ] ],
-    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE", "CANT_CLONE" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
   },
   {
@@ -421,7 +425,7 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE", "CANT_CLONE" ] }
   },
   {
     "id": "mon_skeleton_summoned",
@@ -440,7 +444,7 @@
     "attack_effs": [ { "id": "stunned", "duration": 5, "chance": 30 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CANT_CLONE" ] },
     "delete": { "upgrades": { "half_life": 15, "into": "mon_skeleton_hulk" } }
   },
   {
@@ -461,7 +465,7 @@
     "melee_damage": [ { "damage_type": "electric", "amount": 10 } ],
     "regenerates": 10,
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "CANT_CLONE" ] },
     "delete": { "flags": [ "STUMBLES" ] }
   },
   {
@@ -489,7 +493,7 @@
     "death_function": [ "MELT" ],
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_yugg_bound",
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE", "CAN_BE_ORDERED" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE", "CAN_BE_ORDERED", "CANT_CLONE" ] },
     "delete": { "flags": [ "BASHES", "CAN_DIG" ] }
   },
   {
@@ -507,7 +511,7 @@
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
     "regenerates": 1,
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE", "CANT_CLONE" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -536,7 +540,7 @@
         "monster_message": "The summoned triffid fires a dart at %3$s!"
       }
     ],
-    "extend": { "flags": [ "VENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CAN_BE_ORDERED" ] },
+    "extend": { "flags": [ "VENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CAN_BE_ORDERED", "CANT_CLONE" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -560,7 +564,7 @@
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
     "special_when_hit": [ "ZAPBACK", 50 ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CANT_CLONE" ] },
     "delete": { "flags": [ "ATTACKMON" ] }
   },
   {
@@ -583,7 +587,9 @@
     "armor_bullet": 10,
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_hunting_horror_bound",
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "ELECTRIC", "PET_HARNESSABLE", "CAN_BE_ORDERED" ] },
+    "extend": {
+      "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "ELECTRIC", "PET_HARNESSABLE", "CAN_BE_ORDERED", "CANT_CLONE" ]
+    },
     "delete": { "flags": [ "SUNDEATH", "HIT_AND_RUN" ] }
   },
   {
@@ -601,7 +607,7 @@
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_mi_go_bound",
-    "extend": { "flags": [ "PET_HARNESSABLE", "CAN_BE_ORDERED" ] },
+    "extend": { "flags": [ "PET_HARNESSABLE", "CAN_BE_ORDERED", "CANT_CLONE" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -620,7 +626,7 @@
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_flying_polyp_bound",
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
-    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CAN_BE_ORDERED" ] },
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CAN_BE_ORDERED", "CANT_CLONE" ] },
     "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
   },
   {
@@ -638,7 +644,7 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_shoggoth_bound",
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CAN_BE_ORDERED" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CAN_BE_ORDERED", "CANT_CLONE" ] },
     "delete": { "flags": [ "ABSORBS_SPLITS" ] },
     "special_attacks": [ { "id": "slam", "cooldown": 25, "damage_max_instance": [ { "damage_type": "acid", "amount": 35 } ] } ]
   },
@@ -662,7 +668,7 @@
     "death_drops": {  },
     "death_function": [ "MELT" ],
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "CANT_CLONE" ] },
     "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN", "ELECTRIC" ] }
   },
   {
@@ -688,7 +694,19 @@
     "harvest": "exempt",
     "special_attacks": [ [ "DISAPPEAR", 200 ] ],
     "death_function": [ "DISAPPEAR" ],
-    "flags": [ "PACIFIST", "SEES", "NOHEAD", "HARDTOSHOOT", "WEBWALK", "FLIES", "PLASTIC", "ACIDPROOF", "NO_BREATHE", "NOGIB" ]
+    "flags": [
+      "PACIFIST",
+      "SEES",
+      "NOHEAD",
+      "HARDTOSHOOT",
+      "WEBWALK",
+      "FLIES",
+      "PLASTIC",
+      "ACIDPROOF",
+      "NO_BREATHE",
+      "NOGIB",
+      "CANT_CLONE"
+    ]
   },
   {
     "id": "mon_shadow_snake_summoned",
@@ -710,7 +728,7 @@
     "path_settings": { "max_dist": 10 },
     "regenerates_in_dark": true,
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
+    "extend": { "flags": [ "FLIES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY", "CANT_CLONE" ] },
     "delete": { "flags": [ "SUNDEATH", "SMELLS" ] }
   },
   {
@@ -735,7 +753,7 @@
     "harvest": "exempt",
     "special_attacks": [ [ "DISAPPEAR", 200 ] ],
     "death_function": [ "DISAPPEAR" ],
-    "flags": [ "PACIFIST", "FLIES", "SEES", "WARM", "SWIMS", "PLASTIC", "NOGIB" ]
+    "flags": [ "PACIFIST", "FLIES", "SEES", "WARM", "SWIMS", "PLASTIC", "NOGIB", "CANT_CLONE" ]
   },
   {
     "id": "mon_centipede_giant_summoned",
@@ -752,7 +770,7 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_drops": {  },
     "death_function": [ "MELT" ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CANT_CLONE" ] }
   },
   {
     "id": "mon_seraphic_shade",
@@ -1064,7 +1082,18 @@
     "death_drops": "mon_feral_summoner_death_drops",
     "anger_triggers": [ "FRIEND_DIED", "PLAYER_CLOSE" ],
     "fear_triggers": [ "HURT" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "HUMAN", "CAN_OPEN_DOORS", "PATH_AVOID_DANGER_2" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "HUMAN",
+      "CAN_OPEN_DOORS",
+      "PATH_AVOID_DANGER_2",
+      "CANT_CLONE"
+    ]
   },
   {
     "id": "mon_feral_magehunter",
