@@ -1183,8 +1183,8 @@
     ]
   },
   {
-    "id": "NC_ARSONIST_random",
-    "copy-from": "NC_ARSONIST_random",
+    "id": "NC_ARSONIST_weapon_random",
+    "copy-from": "NC_ARSONIST_weapon_random",
     "type": "item_group",
     "extend": { "items": [ [ "bloodscourge", 1 ] ] }
   },

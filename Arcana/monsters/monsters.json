@@ -604,7 +604,7 @@
     "revert_to_itype": "summon_flying_polyp_bound",
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
     "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
-    "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
+    "delete": { "flags": [ "BASHES" ] }
   },
   {
     "id": "mon_shoggoth_summoned",
@@ -643,7 +643,7 @@
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "special_attacks": [ [ "PARROT", 900 ] ],
     "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "CANPLAY" ] },
-    "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN", "ELECTRIC" ] }
+    "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN" ] }
   },
   {
     "id": "mon_shadow_summoned_fake",
