@@ -669,7 +669,7 @@
     "dodge": 2,
     "harvest": "zombie_humanoid",
     "special_attacks": [
-      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "" },
+      { "type": "spell", "spell_data": { "id": "fear_paralyze" }, "monster_message": "",  "cooldown": 20 },
       { "type": "bite", "cooldown": 5 }
     ],
     "death_drops": "mon_flesh_angel_death_drops",

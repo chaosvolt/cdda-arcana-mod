@@ -104,7 +104,6 @@
     "use_action": {
       "target": "somen_clairvoyance_on",
       "msg": "The mask appears to contort into a fearsome visage, the eyeholes momentarily seeming to glow as a strange perception replaces your natural vision.",
-      "active": true,
       "need_worn": true,
       "need_charges": 1,
       "need_charges_msg": "Fuel the mask with consecrated essence, to open your eyes.",
@@ -134,7 +133,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF" ] }
+    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF", "SPAWN_ACTIVE" ] }
   },
   {
     "id": "somen_clairvoyance_xl",
@@ -168,7 +167,6 @@
     "use_action": {
       "target": "somen_clairvoyance_xl_on",
       "msg": "The visor's surface shifts subtly, the eyeholes momentarily seeming to glow as a strange perception replaces your natural vision.",
-      "active": true,
       "need_worn": true,
       "need_charges": 1,
       "need_charges_msg": "Fuel the visor with consecrated essence, to open your eyes.",
@@ -197,7 +195,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF" ] }
+    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF", "SPAWN_ACTIVE" ] }
   },
   {
     "id": "armor_wyrm",
@@ -277,7 +275,6 @@
       {
         "target": "revenant_crown_on",
         "msg": "The gem shimmers with malevolent red light as you feel a strange hunger, a craving for rotting meat and stagnant water…",
-        "active": true,
         "need_worn": true,
         "need_charges": 1,
         "need_charges_msg": "Feed the crown with blood essence.",
@@ -308,7 +305,8 @@
         "menu_text": "Turn off",
         "type": "transform"
       }
-    ]
+    ],
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] }
   },
   {
     "id": "robe_shadow",
@@ -331,7 +329,6 @@
       {
         "target": "robe_shadow_on",
         "msg": "The robe's fabric darkens to a rich shade of black, cloaking your surroundings in a flickering illusion.",
-        "active": true,
         "need_worn": true,
         "need_charges": 1,
         "need_charges_msg": "The mantle requires essence to bring forth the night.",
@@ -365,7 +362,8 @@
         "type": "transform",
         "ammo_scale": 0
       }
-    ]
+    ],
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] }
   },
   {
     "id": "robe_shadow_xl",
@@ -393,7 +391,6 @@
       {
         "target": "robe_shadow_xl_on",
         "msg": "The cape's fabric darkens to a rich shade of black, cloaking your surroundings in a flickering illusion.",
-        "active": true,
         "need_worn": true,
         "need_charges": 1,
         "need_charges_msg": "The mantle requires essence to bring forth the night.",
@@ -426,7 +423,8 @@
         "type": "transform",
         "ammo_scale": 0
       }
-    ]
+    ],
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] }
   },
   {
     "id": "gauntlets_necro",
@@ -530,7 +528,6 @@
       {
         "target": "cyclopean_mirror_on",
         "msg": "The mirror glows and reveals its otherworldly reflection, as a faint protective aura envelops you.",
-        "active": true,
         "need_worn": true,
         "need_charges": 1,
         "need_charges_msg": "The mirror needs essence to function.",
@@ -579,9 +576,9 @@
       "type": "transform",
       "ammo_scale": 0
     },
+    "light": 60,
     "extend": {
       "flags": [
-        "LIGHT_60",
         "NO_TAKEOFF",
         "PSYSHIELD_PARTIAL",
         "RAD_PROOF",
@@ -593,7 +590,8 @@
         "ZERO_WEIGHT",
         "ELECTRIC_IMMUNE",
         "DIMENSIONAL_ANCHOR",
-        "UNBREAKABLE"
+        "UNBREAKABLE",
+        "SPAWN_ACTIVE"
       ]
     }
   },
@@ -622,7 +620,6 @@
       {
         "target": "hauberk_jade_on",
         "msg": "A brilliant radiance pierces through the mantle from the gorget, until your body is shrouded in a strange glow.",
-        "active": true,
         "need_worn": true,
         "need_charges": 1,
         "need_charges_msg": "This requires dull essence to invoke.",
@@ -662,7 +659,7 @@
       "ammo_scale": 0
     },
     "qualities": [ [ "GLARE", 1 ] ],
-    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "UNBREAKABLE" ] }
+    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "UNBREAKABLE", "SPAWN_ACTIVE" ] }
   },
   {
     "id": "armor_wyrm_berserker",
@@ -709,7 +706,6 @@
       {
         "target": "armor_wyrm_berserker_on",
         "msg": "The plates of your armor shift and contort into an even more bestial form, a strange sense of power flowing through you!",
-        "active": true,
         "need_worn": true,
         "need_charges": 1,
         "need_charges_msg": "Blood essence shall awaken the beast.",
@@ -775,7 +771,7 @@
     "subtypes": [ "TOOL", "ARMOR" ],
     "name": { "str": "abyssal armor (on)", "str_pl": "abyssal armors (on)" },
     "description": "What was once a modified suit of leather armor, now radically altered with heavy armor and unnatural magic made from desecrating a holy relic.  It feels like it has a will of its own with how easy it is to move in this, currently helping to stave off pain and set broken limbs, along with increasing attack speed and reflexes.  A sickening aura wearing down on body and mind can also be felt, along with the feeling of being watched.",
-    "extend": { "flags": [ "NO_TAKEOFF", "TRADER_AVOID", "SPLINT" ] },
+    "extend": { "flags": [ "NO_TAKEOFF", "TRADER_AVOID", "SPLINT", "SPAWN_ACTIVE" ] },
     "armor": [
       {
         "material": [
@@ -861,7 +857,6 @@
     "use_action": {
       "target": "jade_wreath_on",
       "msg": "The carvings in the stone glow red for a brief moment, and a chill passes through your spine.",
-      "active": true,
       "need_worn": true,
       "need_charges": 1,
       "need_charges_msg": "Fuel the wreath with essence of blood.",
@@ -889,7 +884,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF" ] }
+    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF", "SPAWN_ACTIVE" ] }
   },
   {
     "id": "meteoric_talisman",
@@ -911,7 +906,6 @@
     "use_action": {
       "target": "meteoric_talisman_on",
       "msg": "As you activate the talisman, you feel insulated in a strange manner.",
-      "active": true,
       "need_worn": true,
       "need_charges": 1,
       "need_charges_msg": "The talisman requires dull essence.",
@@ -938,7 +932,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF" ] }
+    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF", "SPAWN_ACTIVE" ] }
   },
   {
     "id": "divine_sealing_charm",
@@ -985,7 +979,6 @@
     "use_action": {
       "target": "cleric_ring_on",
       "msg": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
-      "active": true,
       "need_worn": true,
       "need_charges": 1,
       "need_charges_msg": "Provide essence, and the fallen angel shall spread its wings.",
@@ -1021,6 +1014,6 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF", "DIMENSIONAL_ANCHOR", "PORTAL_PROOF" ] }
+    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF", "DIMENSIONAL_ANCHOR", "PORTAL_PROOF", "SPAWN_ACTIVE" ] }
   }
 ]

@@ -224,7 +224,6 @@
       {
         "target": "sun_sword_on",
         "msg": "The blade gives off a brilliant glow as you invoke its power!",
-        "active": true,
         "need_charges": 1,
         "need_charges_msg": "The sword needs energy to serve its purpose.",
         "menu_text": "Awaken the holy blade",
@@ -257,7 +256,8 @@
       }
     ],
     "melee_damage": { "bash": 10, "cut": 35, "heat": 6 },
-    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
+    "light": 240,
+    "extend": { "flags": [ "FIRE", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE", "SPAWN_ACTIVE" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
   {
@@ -359,7 +359,6 @@
         "target": "blast_canister_arcana_flame_act",
         "msg": "The flame blast canister glows faintly as you arm it.",
         "target_charges": 3,
-        "active": true,
         "menu_text": "Arm",
         "type": "transform",
         "ammo_scale": 0
@@ -399,7 +398,8 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 500, "distance_factor": 0.2 }
     },
-    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
+    "light": 50,
+    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "SPAWN_ACTIVE" ]
   },
   {
     "id": "blast_canister_arcana_water",
@@ -420,7 +420,6 @@
         "target": "blast_canister_arcana_water_act",
         "msg": "The wintry blast canister glows faintly as you arm it.",
         "target_charges": 3,
-        "active": true,
         "menu_text": "Arm",
         "type": "transform",
         "ammo_scale": 0
@@ -460,7 +459,8 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 625, "distance_factor": 0.2 }
     },
-    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
+    "light": 50,
+    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "SPAWN_ACTIVE" ]
   },
   {
     "id": "blast_canister_arcana_earth",
@@ -481,7 +481,6 @@
         "target": "blast_canister_arcana_earth_act",
         "msg": "The earthen blast canister glows faintly as you arm it.",
         "target_charges": 3,
-        "active": true,
         "menu_text": "Arm",
         "type": "transform",
         "ammo_scale": 0
@@ -521,7 +520,8 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 750, "distance_factor": 0.2 }
     },
-    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
+    "light": 50,
+    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "SPAWN_ACTIVE" ]
   },
   {
     "id": "blast_canister_arcana_air",
@@ -542,7 +542,6 @@
         "target": "blast_canister_arcana_air_act",
         "msg": "The thunderous blast canister glows faintly as you arm it.",
         "target_charges": 3,
-        "active": true,
         "menu_text": "Arm",
         "type": "transform",
         "ammo_scale": 0
@@ -582,7 +581,8 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 1125, "distance_factor": 0.2 }
     },
-    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
+    "light": 50,
+    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "SPAWN_ACTIVE" ]
   },
   {
     "id": "summon_kreck",
@@ -997,7 +997,6 @@
         "msg": "You draw upon the axe's energy, and the axehead glows a bright red!",
         "need_charges": 5,
         "need_charges_msg": "The axe requires 5 blood essence to invoke this power.",
-        "active": true,
         "need_wielding": true,
         "menu_text": "Activate explosive rune",
         "type": "transform",
@@ -1043,7 +1042,8 @@
       "fields_max_intensity": 3,
       "explosion": { "power": 625, "distance_factor": 0.45 }
     },
-    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
+    "light": 8,
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "SPAWN_ACTIVE" ]
   },
   {
     "id": "shrike_misericorde",
@@ -1163,7 +1163,8 @@
       { "type": "firestarter", "moves": 100 },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
-    "flags": [ "NO_SALVAGE", "LIGHT_12", "FIRESTARTER" ]
+    "light": 12,
+    "flags": [ "NO_SALVAGE", "FIRESTARTER" ]
   },
   {
     "id": "transmutation_crucible",
@@ -1527,7 +1528,6 @@
       {
         "target": "scourge_moonstone_on",
         "msg": "A wicked resonance flows through the whip, and the spikes of moonstone gain a blood-red luster.",
-        "active": true,
         "need_wielding": true,
         "need_charges": 1,
         "need_charges_msg": "The lash hungers for blood.",
@@ -1549,6 +1549,7 @@
     "to_hit": 2,
     "turns_per_charge": 25,
     "revert_to": "scourge_moonstone",
+    "extend": { "flags": [ "SPAWN_ACTIVE"]},
     "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
     "use_action": [
       {
@@ -1607,7 +1608,6 @@
     "use_action": {
       "target": "moonstone_fang_on",
       "msg": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
-      "active": true,
       "need_wielding": true,
       "need_charges": 1,
       "need_charges_msg": "Essence shall draw out the fang's protective magic.",
@@ -1633,7 +1633,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "TRADER_AVOID", "NO_UNWIELD" ] }
+    "extend": { "flags": [ "TRADER_AVOID", "NO_UNWIELD", "SPAWN_ACTIVE" ] }
   },
   {
     "id": "veilblade",
@@ -1785,7 +1785,6 @@
       {
         "target": "stormbringer_on",
         "msg": "The runes on the blade glow for a moment, the leather wrap of the hilt contorting into winding tendrils that envelop your hand!  You feel a strange bloodlust overtake you!",
-        "active": true,
         "need_wielding": true,
         "need_charges": 9,
         "need_charges_msg": "Nine motes of blood shall awaken the blade.",
@@ -1794,7 +1793,7 @@
         "ammo_scale": 0
       }
     ],
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "SPAWN_ACTIVE" ] },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
   },
   {

@@ -629,7 +629,7 @@
     "qualities": [ { "id": "CONTAIN", "level": 1 } ],
     "tools": [ [ [ "book_syncretism", -1 ], [ "book_hexenhammer", -1 ], [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ] ],
     "components": [
-      [ [ "wax", 1 ], [ "any_tallow", 4, "LIST" ], [ "edible_lard", 1, "LIST" ] ],
+      [ [ "wax", 1 ], [ "any_tallow", 4, "LIST" ], [ "edible_tallow", 1, "LIST" ] ],
       [ [ "cordage_short", 1, "LIST" ] ],
       [ [ "flame_talisman", 1 ] ],
       [ [ "salt", 20 ] ],

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "jackson_drops",
+        "copy-from": "jackson_drops",
+        "type": "item_group",
+        "//": "The only being without the queen flag to drop boss-level essence, also gives high odds of magical gear.  Only need to add items since we're referencing an existing itemgroup.",
+        "subtype": "collection",
+        "extend": {
+        "entries": [
+            { "group": "magic_items", "prob": 25, "damage": [ 1, 4 ] },
+            { "group": "magic_consumables", "prob": 50 },
+            { "group": "magic_books_postapoc", "prob": 75 },
+            { "group": "magic_tools", "prob": 25, "damage": [ 1, 4 ] },
+            { "item": "essence_blood", "count": [ 7, 14 ] }
+        ]
+        }
+    },
+    {
+        "type": "item_group",
+        "id": "skeltal_drops_override",
+        "copy-from": "skeltal_drops_override",
+        "subtype": "collection",
+        "extend": {
+        "entries": [
+            { "distribution": [ { "item": "milk", "prob": 9 }, { "item": "trumpet", "prob": 1 } ] },
+            {
+            "distribution": [
+                { "item": "gracken_knuckles", "prob": 50 },
+                { "item": "bone_twisted", "prob": 25 },
+                { "item": "monster_fang", "prob": 15 },
+                { "item": "graboid_fang", "prob": 10 }
+            ]
+            },
+            { "item": "essence_blood", "count": [ 6, 15 ] }
+        ]
+        }
+    }
+]

@@ -297,8 +297,8 @@
     ],
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "BUTCHER", 12 ] ],
+    "light": 45,
     "flags": [
-      "LIGHT_45",
       "NEVER_JAMS",
       "UNBREAKABLE_MELEE",
       "FIRE",

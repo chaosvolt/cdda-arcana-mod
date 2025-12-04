@@ -231,7 +231,7 @@
       "items": [ { "item": "transmutation_crucible", "prob": 75 }, { "item": "rock", "count": [ 2, 7 ] } ]
     },
     "examine_action": "workbench",
-    "workbench": { "multiplier": 1.05, "mass": 500000, "volume": "500L" }
+    "workbench": { "multiplier": 1.05, "mass": "500kg", "volume": "500L" }
   },
   {
     "id": "f_arcana_dimension_doorway",
