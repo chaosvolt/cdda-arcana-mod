@@ -22,6 +22,8 @@
       "arcanist_operator",
       "arcanist_mendicant"
     ],
+    "//": "Define a surround group so that DDA doesn't annihilate the boss monster because it's 'too close'. Monster point weight is 0 so nothing actually spawns.",
+    "surround_groups": [ [ "GROUP_ARCHON", 0 ] ],
     "traits": [
       "ARCANA_SCALYPATCHES",
       "ARCANA_INNERHEAT",
