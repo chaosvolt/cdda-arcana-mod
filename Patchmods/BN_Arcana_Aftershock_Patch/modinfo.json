@@ -5,6 +5,7 @@
     "name": "<color_cyan>Arcana</color>/Aftershock Patchmod",
     "authors": [ "Chaosvolt" ],
     "description": "Optional patch mod that allows content in Arcana and Aftershock to interact with each other.",
+    "license": "CC-BY-SA-3.0",
     "version": "BN version, update 10/9/2024",
     "category": "misc_additions",
     "dependencies": [ "bn", "Arcana", "aftershock" ]

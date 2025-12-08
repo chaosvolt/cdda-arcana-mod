@@ -5,6 +5,7 @@
     "name": "<color_cyan>Arcana</color>/DinoMod Patchmod",
     "authors": [ "Chaosvolt" ],
     "description": "Optional patch mod that allows content in Arcana and DinoMod to interact with each other.",
+    "license": "CC-BY-SA-3.0",
     "version": "BN version, update 11/1/2022",
     "category": "misc_additions",
     "dependencies": [ "bn", "Arcana", "DinoMod" ]
