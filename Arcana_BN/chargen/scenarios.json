@@ -85,7 +85,15 @@
       "MARTIAL_ARTS_SANGUINE",
       "MARTIAL_ARTS_CF"
     ],
-    "flags": [ "CITY_START", "LONE_START" ]
+    "flags": [ "CITY_START", "LONE_START" ],
+    "bionics": [
+      "bio_electrothermal_arc_projector",
+      "bio_rift_focus_projector",
+      "bio_essence_surge_cell",
+      "bio_temporal_stimulation",
+      "bio_life_sign_suppression",
+      "bio_kinetic_amplifier"
+    ]
   },
   {
     "type": "scenario",
@@ -127,7 +135,30 @@
     "id": "lab_chal",
     "copy-from": "lab_chal",
     "extend": {
-      "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "ARCANA_DRAGONCLAWS", "ARCANA_DRAGONTEETH", "ARCANA_DRAGONHORNS" ]
+      "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "ARCANA_DRAGONCLAWS", "ARCANA_DRAGONTEETH", "ARCANA_DRAGONHORNS" ],
+      "bionics": [
+        "bio_electrothermal_arc_projector",
+        "bio_rift_focus_projector",
+        "bio_essence_surge_cell",
+        "bio_temporal_stimulation",
+        "bio_life_sign_suppression",
+        "bio_kinetic_amplifier"
+      ]
+    }
+  },
+  {
+    "type": "scenario",
+    "id": "lab_staff",
+    "copy-from": "lab_staff",
+    "extend": {
+      "bionics": [
+        "bio_electrothermal_arc_projector",
+        "bio_rift_focus_projector",
+        "bio_essence_surge_cell",
+        "bio_temporal_stimulation",
+        "bio_life_sign_suppression",
+        "bio_kinetic_amplifier"
+      ]
     }
   },
   {
@@ -234,7 +265,8 @@
     "copy-from": "cyberpunk",
     "extend": {
       "professions": [ "arcanist_purifier", "arcanist_operator" ],
-      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ]
+      "traits": [ "MARTIAL_ARTS_SANGUINE", "MARTIAL_ARTS_CF" ],
+      "bionics": [ "bio_essence_surge_cell", "bio_temporal_stimulation", "bio_kinetic_amplifier" ]
     }
   },
   {
