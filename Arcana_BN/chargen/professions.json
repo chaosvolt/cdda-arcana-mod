@@ -284,6 +284,7 @@
       "female": [ "sports_bra", "boy_shorts" ]
     },
     "traits": [ "PROF_CLEANSINGFLAME" ],
+    "forbidden_bionics": [ "bio_rift_focus_projector", "bio_life_sign_suppression" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -520,6 +521,7 @@
       "female": [ "sports_bra", "boy_shorts" ]
     },
     "traits": [ "PROF_CLEANSINGFLAME2" ],
+    "forbidden_bionics": [ "bio_rift_focus_projector", "bio_life_sign_suppression" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -582,6 +584,7 @@
       "female": [ "bra", "panties" ]
     },
     "traits": [ "PROF_CLEANSINGFLAME2" ],
+    "forbidden_bionics": [ "bio_rift_focus_projector", "bio_life_sign_suppression" ],
     "flags": [ "SCEN_ONLY" ]
   },
   {

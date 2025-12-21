@@ -15,7 +15,17 @@
     "type": "scenario",
     "id": "bio_weapon_lab",
     "copy-from": "bio_weapon_lab",
-    "extend": { "professions": [ "bio_weapon_e" ] }
+    "extend": {
+      "professions": [ "bio_weapon_e" ],
+      "bionics": [
+        "bio_electrothermal_arc_projector",
+        "bio_rift_focus_projector",
+        "bio_essence_surge_cell",
+        "bio_temporal_stimulation",
+        "bio_life_sign_suppression",
+        "bio_kinetic_amplifier"
+      ]
+    }
   },
   {
     "type": "scenario",
@@ -30,7 +40,10 @@
     "type": "scenario",
     "id": "house_fight_scenario",
     "copy-from": "house_fight_scenario",
-    "extend": { "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "SPELL_SHADOWSNAKES", "SPELL_AGILE", "SPELL_DAYLIGHT" ] }
+    "extend": {
+      "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "SPELL_SHADOWSNAKES", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
+      "bionics": [ "bio_temporal_stimulation", "bio_kinetic_amplifier" ]
+    }
   },
   {
     "type": "scenario",

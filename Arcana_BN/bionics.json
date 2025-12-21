@@ -7,7 +7,8 @@
     "occupied_bodyparts": [ [ "arm_l", 4 ] ],
     "act_cost": "80 kJ",
     "fake_item": "bio_electrothermal_arc_projector_gun",
-    "flags": [ "BIONIC_GUN", "BIONIC_NPC_USABLE" ]
+    "flags": [ "BIONIC_GUN", "BIONIC_NPC_USABLE" ],
+    "points": 3
   },
   {
     "id": "bio_rift_focus_projector",
@@ -17,7 +18,8 @@
     "occupied_bodyparts": [ [ "hand_r", 1 ] ],
     "act_cost": "60 kJ",
     "fake_item": "bio_rift_focus_projector_gun",
-    "flags": [ "BIONIC_GUN", "BIONIC_NPC_USABLE" ]
+    "flags": [ "BIONIC_GUN", "BIONIC_NPC_USABLE" ],
+    "points": 3
   },
   {
     "id": "bio_essence_surge_cell",
@@ -30,7 +32,8 @@
     "fuel_efficiency": 1.0,
     "time": 1,
     "flags": [ "BIONIC_TOGGLED", "BIONIC_POWER_SOURCE", "BIONIC_NPC_USABLE" ],
-    "included_bionics": [ "bio_essence_blood_surge_cell", "bio_essence_dull_surge_cell", "bio_essence_pure_surge_cell" ]
+    "included_bionics": [ "bio_essence_blood_surge_cell", "bio_essence_dull_surge_cell", "bio_essence_pure_surge_cell" ],
+    "points": 2
   },
   {
     "id": "bio_essence_blood_surge_cell",
@@ -78,7 +81,8 @@
     "flags": [ "BIONIC_TOGGLED", "BIONIC_NPC_USABLE", "COMBAT_NPC_USE" ],
     "act_cost": "1 kJ",
     "react_cost": "1 kJ",
-    "time": 1
+    "time": 1,
+    "points": 3
   },
   {
     "id": "bio_life_sign_suppression",
@@ -90,7 +94,8 @@
     "flags": [ "BIONIC_TOGGLED", "BIONIC_NPC_USABLE", "COMBAT_NPC_USE" ],
     "act_cost": "750 J",
     "react_cost": "750 J",
-    "time": 1
+    "time": 1,
+    "points": 4
   },
   {
     "id": "bio_kinetic_amplifier",
@@ -100,6 +105,7 @@
     "occupied_bodyparts": [ [ "arm_r", 2 ], [ "hand_r", 1 ] ],
     "act_cost": "50 J",
     "fake_item": "bio_kinetic_amplifier_weapon",
-    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON", "BIONIC_NPC_USABLE" ]
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON", "BIONIC_NPC_USABLE" ],
+    "points": 3
   }
 ]
