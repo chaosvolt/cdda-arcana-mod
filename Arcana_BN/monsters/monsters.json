@@ -331,7 +331,17 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE", "CANT_CLONE" ] },
+    "extend": {
+      "flags": [
+        "SEES",
+        "PATH_AVOID_DANGER_2",
+        "PRIORITIZE_TARGETS",
+        "PET_MOUNTABLE",
+        "MOUNTABLE_STAIRS",
+        "MOUNTABLE_OBSTACLES",
+        "CANT_CLONE"
+      ]
+    },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
   },
   {
@@ -369,7 +379,16 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE", "CANT_CLONE" ] },
+    "extend": {
+      "flags": [
+        "PATH_AVOID_DANGER_2",
+        "PRIORITIZE_TARGETS",
+        "PET_MOUNTABLE",
+        "MOUNTABLE_STAIRS",
+        "MOUNTABLE_OBSTACLES",
+        "CANT_CLONE"
+      ]
+    },
     "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
   },
   {
@@ -407,7 +426,17 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_drops": {  },
     "special_attacks": [ [ "RANGED_PULL", 20 ], [ "LUNGE", 10 ] ],
-    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE", "CANT_CLONE" ] },
+    "extend": {
+      "flags": [
+        "SEES",
+        "PATH_AVOID_DANGER_2",
+        "PRIORITIZE_TARGETS",
+        "PET_MOUNTABLE",
+        "MOUNTABLE_STAIRS",
+        "MOUNTABLE_OBSTACLES",
+        "CANT_CLONE"
+      ]
+    },
     "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
   },
   {
@@ -493,7 +522,17 @@
     "death_function": [ "MELT" ],
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_yugg_bound",
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE", "CAN_BE_ORDERED", "CANT_CLONE" ] },
+    "extend": {
+      "flags": [
+        "PATH_AVOID_DANGER_2",
+        "PRIORITIZE_TARGETS",
+        "PET_MOUNTABLE",
+        "MOUNTABLE_STAIRS",
+        "MOUNTABLE_OBSTACLES",
+        "CAN_BE_ORDERED",
+        "CANT_CLONE"
+      ]
+    },
     "delete": { "flags": [ "BASHES", "CAN_DIG" ] }
   },
   {
@@ -626,7 +665,18 @@
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_flying_polyp_bound",
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
-    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CAN_BE_ORDERED", "CANT_CLONE" ] },
+    "extend": {
+      "flags": [
+        "SEES",
+        "PATH_AVOID_DANGER_2",
+        "PRIORITIZE_TARGETS",
+        "PET_MOUNTABLE",
+        "MOUNTABLE_STAIRS",
+        "MOUNTABLE_OBSTACLES",
+        "CAN_BE_ORDERED",
+        "CANT_CLONE"
+      ]
+    },
     "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
   },
   {
@@ -770,7 +820,16 @@
     "regeneration_modifiers": [ { "effect": "dazed", "base_mod": -1.0 } ],
     "death_drops": {  },
     "death_function": [ "MELT" ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_HARNESSABLE", "CANT_CLONE" ] }
+    "extend": {
+      "flags": [
+        "PATH_AVOID_DANGER_2",
+        "PRIORITIZE_TARGETS",
+        "PET_MOUNTABLE",
+        "MOUNTABLE_STAIRS",
+        "MOUNTABLE_OBSTACLES",
+        "CANT_CLONE"
+      ]
+    }
   },
   {
     "id": "mon_seraphic_shade",
@@ -956,6 +1015,8 @@
       "NOHEAD",
       "NO_BREATHE",
       "RIDEABLE_MECH",
+      "MOUNTABLE_STAIRS",
+      "MOUNTABLE_OBSTACLES",
       "HARDTOSHOOT",
       "PRIORITIZE_TARGETS",
       "PATH_AVOID_DANGER_2"
