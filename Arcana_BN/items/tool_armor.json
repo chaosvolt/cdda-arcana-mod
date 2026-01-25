@@ -76,7 +76,7 @@
     "volume": "1 L",
     "price": "210 USD",
     "price_postapoc": "40 USD",
-    "material": [ "iron", "copper", "leather" ],
+    "material": [ "iron", "copper" ],
     "symbol": "[",
     "looks_like": "mask_bal",
     "color": "light_red",
@@ -138,7 +138,7 @@
     "volume": "750 ml",
     "price": "210 USD",
     "price_postapoc": "40 USD",
-    "material": [ "iron", "copper", "leather" ],
+    "material": [ "iron", "copper" ],
     "symbol": "[",
     "looks_like": "mask_bal",
     "color": "light_red",
@@ -411,7 +411,7 @@
         "need_worn": true
       }
     ],
-    "relative": { "weight": 210 },
+    "relative": { "weight": 210, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
   {
@@ -440,7 +440,7 @@
         "need_worn": true
       }
     ],
-    "relative": { "weight": 120 },
+    "relative": { "weight": 120, "material_thickness": 1 },
     "extend": { "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "OUTER" ] }
   },
   {
@@ -463,7 +463,7 @@
     "max_charges": 25,
     "charges_per_use": 1,
     "ammo": "essence_type",
-    "material_thickness": 4,
+    "material_thickness": 5,
     "use_action": [
       {
         "target": "cyclopean_mirror_on",
@@ -551,7 +551,7 @@
     "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  The copper conducts electric shocks around you, providing passive immunity to lightning.  Activating it will grant immunity to fire and blade, reduce ballistic damage to one-tenth what you would normally take, and give resistance to other environmental hazards.",
     "//": "Requires an item that did not exist pre-cataclysm to make.",
     "price_postapoc": "150 USD",
-    "material": [ "iron", "copper", "leather", "cotton" ],
+    "material": [ "steel", "copper", "cotton" ],
     "color": "light_red",
     "coverage": 100,
     "environmental_protection": 1,
