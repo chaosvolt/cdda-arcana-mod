@@ -26,7 +26,7 @@
           [ "t_shrub_rose", 5 ],
           [ "t_tree_young", 5 ]
         ],
-        "valid_flags": [ "DIGGABLE", "FUNGUS", "SHRUB" ],
+        "valid_flags": [ "PLOWABLE" ],
         "message": "Plant life grows wild over the ground."
       },
       {
