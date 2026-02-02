@@ -791,5 +791,28 @@
     "type": "vehicle_part_migration",
     "from": "rift_focus_cannon_part",
     "to": "turret_rift_focus_cannon"
+  },
+  {
+    "id": "arcana_aftermath_wave_destruction_spike",
+    "type": "SPELL",
+    "name": { "str": "Wave of Destruction Spike" },
+    "description": "This splits of the AoE into beefy and stupid beefy depending on distance.",
+    "message": "",
+    "effect": "attack",
+    "shape": "blast",
+    "valid_targets": [ "hostile", "ground" ],
+    "flags": [ "NO_EXPLOSION_SFX", "SILENT", "IGNORE_WALLS", "NO_PROJECTILE" ],
+    "effect_str": "blind",
+    "min_damage": 50,
+    "max_damage": 250,
+    "damage_increment": 10,
+    "damage_type": "pure",
+    "min_aoe": 2,
+    "max_aoe": 6,
+    "aoe_increment": 0.2,
+    "max_level": 20,
+    "min_duration": 3000,
+    "max_duration": 15000,
+    "duration_increment": 600
   }
 ]

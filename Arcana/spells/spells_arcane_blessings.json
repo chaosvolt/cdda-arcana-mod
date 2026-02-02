@@ -957,7 +957,6 @@
     "shape": "blast",
     "extra_effects": [
       { "id": "arcana_aftermath_brief_lightning_ward", "hit_self": true },
-      { "id": "arcana_aftermath_wave_destruction_spike", "hit_self": false, "max_level": 20 },
       { "id": "arcana_aftermath_wave_destruction_pulse", "hit_self": false, "max_level": 20 },
       { "id": "arcana_aftermath_wave_destruction_side_effects", "hit_self": true, "max_level": 20 },
       { "id": "arcana_aftermath_wave_destruction_noise", "hit_self": false, "max_level": 20 }
@@ -965,8 +964,9 @@
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "CONCENTRATE", "NO_HANDS", "NO_LEGS", "IGNORE_WALLS", "NO_PROJECTILE", "SILENT", "NO_FAIL" ],
     "effect_str": "stunned",
-    "min_damage": 50,
-    "max_damage": 250,
+    "//": "Deliberately allowed to deal full damage to its entire AoE in exchange for being more taxing to cast.",
+    "min_damage": 100,
+    "max_damage": 500,
     "damage_increment": 10,
     "damage_type": "pure",
     "min_aoe": 8,
