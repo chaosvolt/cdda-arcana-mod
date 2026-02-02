@@ -13,7 +13,6 @@
       { "id": "arcana_aftermath_destructive_absorption_side_effects", "hit_self": true, "max_level": 5 },
       { "id": "arcana_aftermath_sanguine_mark_burnout_10", "hit_self": true, "max_level": 5 }
     ],
-    "//": "Full damage with no spike effect, for single-target and line spells.",
     "min_damage": 200,
     "max_damage": 500,
     "damage_increment": 60,
@@ -55,8 +54,8 @@
     "skill": "magic",
     "max_level": 5,
     "damage_type": "cut",
-    "min_damage": 40,
-    "max_damage": 100,
+    "min_damage": 80,
+    "max_damage": 200,
     "damage_increment": 12,
     "min_range": 24,
     "max_range": 32,
@@ -117,7 +116,7 @@
       { "id": "arcana_aftermath_sanguine_mark_burnout_5", "hit_self": true, "max_level": 5 }
     ],
     "effect": "target_attack",
-    "effect_str": "heat_ward_true",
+    "effect_str": "heat_ward",
     "energy_source": "HP",
     "difficulty": 50,
     "skill": "magic",
@@ -141,7 +140,7 @@
     "message": "A bolt of flame leaps from your mouth, shaped into unholy fire with a wave of the hand.  %s!",
     "effect": "line_attack",
     "valid_targets": [ "ally", "hostile", "ground" ],
-    "flags": [ "SILENT", "SOMATIC", "NO_HANDS", "NO_FAIL" ],
+    "flags": [ "SILENT", "SOMATIC", "NO_HANDS", "NO_FAIL", "DIVIDE_DAMAGE" ],
     "extra_effects": [
       { "id": "arcana_aftermath_brief_fire_ward", "hit_self": true },
       { "id": "arcana_aftermath_infernal_flame_corruption", "hit_self": false, "max_level": 5 },
@@ -149,7 +148,6 @@
       { "id": "arcana_aftermath_infernal_flame_noise", "hit_self": false, "max_level": 5 },
       { "id": "arcana_aftermath_sanguine_mark_burnout_7", "hit_self": true, "max_level": 5 }
     ],
-    "//": "Full damage with no spike effect, for single-target and line spells.",
     "min_damage": 140,
     "max_damage": 350,
     "damage_increment": 42,

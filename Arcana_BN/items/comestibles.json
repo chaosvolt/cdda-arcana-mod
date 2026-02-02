@@ -420,7 +420,7 @@
     "copy-from": "totem_base",
     "type": "COMESTIBLE",
     "name": { "str": "Magic Seal (Conjure Acid)", "str_pl": "Magic Seals (Conjure Acid)" },
-    "description": "A carved scale of acrid-smelling, otherworldly flesh.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
+    "description": "A carved scale of acrid-smelling, otherworldly flesh.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will conjure a splash of acid at the point targeted.\"",
     "price_postapoc": "45 USD",
     "color": "blue",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_seal_conjure_acid", "no_fail": true, "level": 5 }
@@ -449,8 +449,8 @@
     "id": "totem_flamearmor",
     "copy-from": "totem_base",
     "type": "COMESTIBLE",
-    "name": { "str": "Magic Seal (Heat Ward)", "str_pl": "Magic Seals (Heat Ward)" },
-    "description": "A shimmering disc carved from a seemingly meteoric material.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
+    "name": { "str": "Magic Seal (Flame Ward)", "str_pl": "Magic Seals (Flame Ward)" },
+    "description": "A shimmering disc carved from a seemingly meteoric material.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will grant temporary immunity to fire, as well as negating the effects of heat and smoke.\"",
     "price_postapoc": "50 USD",
     "color": "dark_gray",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_seal_heat_ward", "no_fail": true, "level": 5 }
@@ -470,7 +470,7 @@
     "copy-from": "totem_base",
     "type": "COMESTIBLE",
     "name": { "str": "Magic Seal (Lightning Ward)", "str_pl": "Magic Seals (Lightning Ward)" },
-    "description": "A small chunk of carved otherworldly amber.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
+    "description": "A small chunk of carved otherworldly amber.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"Using this spell will grant a blessing that completely protects against electric damage.\"",
     "price_postapoc": "45 USD",
     "color": "light_gray",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_seal_lightning_ward", "no_fail": true, "level": 5 }
@@ -511,7 +511,7 @@
     "copy-from": "totem_base",
     "type": "COMESTIBLE",
     "name": { "str": "Magic Seal (Shockstorm)", "str_pl": "Magic Seals (Shockstorm)" },
-    "description": "A small sliver of strange crystal, flickering as though distant storms rage within.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will call forth lightning all around you, with close enemies taking double damage.\"",
+    "description": "A small sliver of strange crystal, flickering as though distant storms rage within.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will call forth lightning all around you.\"",
     "price_postapoc": "50 USD",
     "color": "pink",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_seal_shockstorm", "no_fail": true, "level": 5 }
@@ -594,7 +594,7 @@
     "type": "COMESTIBLE",
     "category": "spellbooks",
     "name": { "str": "Pattern Scroll (Elemental Burst)", "str_pl": "Pattern Scrolls (Elemental Burst)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect, with double damage for enemies caught in the center.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect.\"",
     "price_postapoc": "120 USD",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_elemental_burst", "no_fail": true, "level": 0 }
   },
@@ -669,7 +669,7 @@
     "type": "COMESTIBLE",
     "category": "spellbooks",
     "name": { "str": "Pattern Scroll (Conjure Acid)", "str_pl": "Pattern Scrolls (Conjure Acid)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted.\"",
     "price": "3000 USD",
     "price_postapoc": "90 USD",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_conjure_acid", "no_fail": true, "level": 0 }
@@ -724,7 +724,7 @@
     "type": "COMESTIBLE",
     "category": "spellbooks",
     "name": { "str": "Pattern Scroll (Lightning Ward)", "str_pl": "Pattern Scrolls (Lightning Ward)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"Using this spell will grant a blessing that completely protects against electric damage.\"",
     "price": "3000 USD",
     "price_postapoc": "90 USD",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_lightning_ward", "no_fail": true, "level": 0 }
@@ -769,7 +769,7 @@
     "type": "COMESTIBLE",
     "category": "spellbooks",
     "name": { "str": "Pattern Scroll (Shockstorm)", "str_pl": "Pattern Scrolls (Shockstorm)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, with close enemies taking double damage.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you.\"",
     "price": "3000 USD",
     "price_postapoc": "100 USD",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_shockstorm", "no_fail": true, "level": 0 }
@@ -780,7 +780,7 @@
     "type": "COMESTIBLE",
     "category": "spellbooks",
     "name": { "str": "Pattern Scroll (Ward Against Evil)", "str_pl": "Pattern Scrolls (Ward Against Evil)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a blessing that protects against anomalous effects and shadow damage.\"",
     "price": "3000 USD",
     "price_postapoc": "100 USD",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_pattern_ward_against_evil", "no_fail": true, "level": 0 }

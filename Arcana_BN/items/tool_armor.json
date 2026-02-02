@@ -194,7 +194,7 @@
     "copy-from": "armor_blarmor",
     "name": { "str": "wyrmskin armor", "str_pl": "sets of wyrmskin armor" },
     "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it and various adjustable straps added.  It can be used to conjure a long-lasting spray of acid.",
-    "material": [ "wyrmskin", "leather" ],
+    "material": [ "leather" ],
     "covers": [ "legs", "torso", "arms", "feet" ],
     "price": "450 USD",
     "price_postapoc": "30 USD",
@@ -208,6 +208,7 @@
     "environmental_protection": 10,
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true } ],
     "relative": { "weight": "722 g", "volume": "1500 ml" },
+    "resistance": { "acid": 50 },
     "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "FANCY", "ALLOWS_HOOVES" ] },
     "delete": { "flags": [ "VARSIZE" ] }
   },
@@ -630,7 +631,7 @@
     "price_postapoc": "60 USD",
     "to_hit": -5,
     "bashing": 8,
-    "material": [ "hardsteel", "wyrmskin" ],
+    "material": [ "hardsteel", "leather" ],
     "symbol": "[",
     "looks_like": "armor_wyrm",
     "color": "light_gray",
@@ -642,6 +643,7 @@
     "warmth": 20,
     "material_thickness": 8,
     "environmental_protection": 8,
+    "resistance": { "acid": 25 },
     "flags": [ "OUTER", "STURDY", "NO_SALVAGE", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "COMBAT_NPC_USE", "ALLOWS_HOOVES" ],
     "relic_data": {
       "passive_effects": [
@@ -693,7 +695,7 @@
     "type": "TOOL_ARMOR",
     "category": "clothing",
     "name": { "str": "jade wreath" },
-    "description": "A crown of dark green stone with strange geometric patterns carved into it.  Activating it will harden the body against heat and smoke, consuming blood essence while it's in effect.",
+    "description": "A crown of dark green stone with strange geometric patterns carved into it.  Activating it will harden the body against fire, consuming blood essence while it's in effect.",
     "//": "The shrine lesser artifacts are all post-cataclysm items.",
     "price_postapoc": "100 USD",
     "weight": "600 g",
@@ -728,7 +730,7 @@
       "need_worn": true,
       "need_charges": 1,
       "need_charges_msg": "Fuel the wreath with essence of blood.",
-      "menu_text": "Activate ward against heat",
+      "menu_text": "Activate ward against fire",
       "type": "transform"
     },
     "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "POWERARMOR_COMPATIBLE", "COMBAT_NPC_USE" ]
@@ -749,7 +751,7 @@
     "id": "meteoric_talisman",
     "type": "TOOL_ARMOR",
     "name": { "str": "meteoric talisman" },
-    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  Activating it will ward against electricity at the expense of slowing you down slightly, consuming dull essence while active.",
+    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  Activating it will ward against electricity, consuming dull essence while active.",
     "weight": "60 g",
     "volume": "250 ml",
     "price_postapoc": "100 USD",
@@ -781,7 +783,7 @@
     "copy-from": "meteoric_talisman",
     "repairs_like": "meteoric_talisman",
     "name": { "str": "meteoric talisman (on)", "str_pl": "meteoric talismans (on)" },
-    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  It is currently activate, insulating you against electrical attacks but also slowing you down a bit.",
+    "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  It is currently activate, insulating you against electrical attacks.",
     "turns_per_charge": 15,
     "revert_to": "meteoric_talisman",
     "use_action": {

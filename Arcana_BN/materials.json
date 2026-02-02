@@ -17,13 +17,6 @@
   },
   {
     "type": "material",
-    "id": "wyrmskin",
-    "copy-from": "leather",
-    "name": "Wyrmskin",
-    "acid_resist": 99
-  },
-  {
-    "type": "material",
     "id": "clay",
     "copy-from": "clay",
     "name": "Clay",

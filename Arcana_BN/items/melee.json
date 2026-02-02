@@ -232,7 +232,7 @@
     "description": "An discolored, leathery piece of hardened tissue broken off from an otherworldly monster, like a massive shed scale.  It might be useful, or it could be made into a trophy of some sort.",
     "price_postapoc": "5 USD",
     "flags": [ "NO_SALVAGE" ],
-    "material": [ "wyrmskin" ],
+    "material": [ "acidchitin" ],
     "weight": "120 g",
     "volume": "250 ml",
     "bashing": 3,

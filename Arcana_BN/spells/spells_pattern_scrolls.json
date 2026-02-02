@@ -152,7 +152,7 @@
   {
     "type": "SPELL",
     "id": "arcana_pattern_flame_armor",
-    "name": { "str": "Pattern: Heat Ward" },
+    "name": { "str": "Pattern: Flame Ward" },
     "effect": "mutate",
     "effect_str": "SPELL_FLAMEARMOR",
     "description": "This grants a specific spell mutation.",

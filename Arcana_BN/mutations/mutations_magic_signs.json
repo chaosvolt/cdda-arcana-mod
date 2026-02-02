@@ -177,10 +177,10 @@
   {
     "type": "mutation",
     "id": "SPELL_FLAMEARMOR",
-    "name": { "str": "Magic Sign: Heat Ward" },
+    "name": { "str": "Magic Sign: Flame Ward" },
     "//": "Rounded up, Spell Rank 5.",
     "points": 3,
-    "description": "Study of the beyond has granted you power, that can grant temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "Study of the beyond has granted you power, that can grant temporary resistance to flame and smoke.  (( Remember to bind the \"spellcasting\" key! ))",
     "player_display": false,
     "valid": false,
     "purifiable": false,
