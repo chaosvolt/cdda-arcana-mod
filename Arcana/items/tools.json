@@ -358,7 +358,7 @@
       {
         "target": "blast_canister_arcana_flame_act",
         "msg": "The flame blast canister glows faintly as you arm it.",
-        "target_charges": 3,
+        "target_timer": "3 seconds",
         "menu_text": "Arm",
         "type": "transform",
         "ammo_scale": 0
@@ -371,7 +371,7 @@
         "done_message": "You place the canister, primed to explode if disturbed."
       }
     ],
-    "flags": [ "BOMB" ]
+    "flags": [ "BOMB", "SINGLE_USE" ]
   },
   {
     "id": "blast_canister_arcana_flame_act",
@@ -381,9 +381,6 @@
     "name": { "str": "active searing blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with flames.",
     "price_postapoc": "0 cent",
-    "initial_charges": 3,
-    "max_charges": 3,
-    "turns_per_charge": 1,
     "use_action": {
       "type": "message",
       "message": "You've already activated the %s, it would be smarter to throw this instead.",
@@ -419,7 +416,7 @@
       {
         "target": "blast_canister_arcana_water_act",
         "msg": "The wintry blast canister glows faintly as you arm it.",
-        "target_charges": 3,
+        "target_timer": "3 seconds",
         "menu_text": "Arm",
         "type": "transform",
         "ammo_scale": 0
@@ -432,7 +429,7 @@
         "done_message": "You place the canister, primed to explode if disturbed."
       }
     ],
-    "flags": [ "BOMB" ]
+    "flags": [ "BOMB", "SINGLE_USE" ]
   },
   {
     "id": "blast_canister_arcana_water_act",
@@ -442,9 +439,6 @@
     "name": { "str": "active wintry blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with supernatural cold.",
     "price_postapoc": "0 cent",
-    "initial_charges": 3,
-    "max_charges": 3,
-    "turns_per_charge": 1,
     "use_action": {
       "type": "message",
       "message": "You've already activated the %s, it would be smarter to throw this instead.",
@@ -480,7 +474,7 @@
       {
         "target": "blast_canister_arcana_earth_act",
         "msg": "The earthen blast canister glows faintly as you arm it.",
-        "target_charges": 3,
+        "target_timer": "3 seconds",
         "menu_text": "Arm",
         "type": "transform",
         "ammo_scale": 0
@@ -493,7 +487,7 @@
         "done_message": "You place the canister, primed to explode if disturbed."
       }
     ],
-    "flags": [ "BOMB" ]
+    "flags": [ "BOMB", "SINGLE_USE" ]
   },
   {
     "id": "blast_canister_arcana_earth_act",
@@ -503,9 +497,6 @@
     "name": { "str": "active earthen blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with acid.",
     "price_postapoc": "0 cent",
-    "initial_charges": 3,
-    "max_charges": 3,
-    "turns_per_charge": 1,
     "use_action": {
       "type": "message",
       "message": "You've already activated the %s, it would be smarter to throw this instead.",
@@ -541,7 +532,7 @@
       {
         "target": "blast_canister_arcana_air_act",
         "msg": "The thunderous blast canister glows faintly as you arm it.",
-        "target_charges": 3,
+        "target_timer": "3 seconds",
         "menu_text": "Arm",
         "type": "transform",
         "ammo_scale": 0
@@ -554,7 +545,7 @@
         "done_message": "You place the canister, primed to explode if disturbed."
       }
     ],
-    "flags": [ "BOMB" ]
+    "flags": [ "BOMB", "SINGLE_USE" ]
   },
   {
     "id": "blast_canister_arcana_air_act",
@@ -564,9 +555,6 @@
     "name": { "str": "active thunderous blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with lightning.",
     "price_postapoc": "0 cent",
-    "initial_charges": 3,
-    "max_charges": 3,
-    "turns_per_charge": 1,
     "use_action": {
       "type": "message",
       "message": "You've already activated the %s, it would be smarter to throw this instead.",
@@ -998,6 +986,7 @@
         "need_charges": 5,
         "need_charges_msg": "The axe requires 5 blood essence to invoke this power.",
         "need_wielding": true,
+		"target_timer": "5 seconds",
         "menu_text": "Activate explosive rune",
         "type": "transform",
         "ammo_scale": 0
