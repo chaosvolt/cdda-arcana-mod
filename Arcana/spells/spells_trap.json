@@ -163,7 +163,7 @@
     "max_damage": 100,
     "min_aoe": 2,
     "max_aoe": 2,
-    "damage_type": "fire",
+    "damage_type": "heat",
     "field_id": "fd_fire",
     "field_chance": 1,
     "min_field_intensity": 1,
