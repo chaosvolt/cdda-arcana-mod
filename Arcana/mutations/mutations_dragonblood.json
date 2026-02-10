@@ -431,7 +431,7 @@
     "ugliness": 2,
     "description": "You have sharply curved claws on the ends of your fingers, making your unarmed attacks more dangerous.  However, they do get in the way a bit if you are wearing gloves.",
     "valid": false,
-    "butchering_quality": 9,
+    "provided_qualities": { "BUTCHER": 9 },
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
     "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
