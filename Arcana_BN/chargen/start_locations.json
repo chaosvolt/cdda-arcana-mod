@@ -42,5 +42,11 @@
     "ident": "necropolis_basement",
     "name": "Ruined City …?",
     "terrain": [ "necropolis_b_54" ]
+  },
+  {
+    "type": "start_location",
+    "ident": "hermit_house",
+    "name": "Odd House",
+    "terrain": [ "arcana_hermitage_1" ]
   }
 ]
