@@ -471,7 +471,7 @@
     "price_postapoc": "0 cent",
     "name": { "str": "inscribed clay tablet" },
     "description": "A small clay tablet, inscribed with discourses on otherworldly matters in eccentric writing.  Much of it is near-illegible and pertains more to philosophy than any practical matters, but the right person might be able to gleam something useful out of it.",
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "TRADER_KEEP", "MAGIC_FOCUS" ]
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "TRADER_KEEP", "MAGIC_FOCUS", "MISSION_ITEM" ]
   },
   {
     "id": "arcana_dream_journal",
@@ -488,7 +488,7 @@
     "intelligence": 12,
     "time": "30 m",
     "read_fun": -1,
-    "flags": [ "TRADER_AVOID" ]
+    "flags": [ "TRADER_AVOID", "MISSION_ITEM" ]
   },
   {
     "id": "sanguine_mission_notes",
@@ -505,7 +505,7 @@
     "intelligence": 14,
     "time": "45 m",
     "read_fun": -2,
-    "flags": [ "TRADER_AVOID" ]
+    "flags": [ "TRADER_AVOID", "MISSION_ITEM" ]
   },
   {
     "id": "note_arcane_lab_surface",
@@ -568,6 +568,6 @@
     "intelligence": 16,
     "time": "45 m",
     "read_fun": -2,
-    "flags": [ "NO_SALVAGE", "TRADER_AVOID" ]
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "MISSION_ITEM" ]
   }
 ]

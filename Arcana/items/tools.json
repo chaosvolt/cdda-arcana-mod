@@ -986,7 +986,7 @@
         "need_charges": 5,
         "need_charges_msg": "The axe requires 5 blood essence to invoke this power.",
         "need_wielding": true,
-		"target_timer": "5 seconds",
+        "target_timer": "5 seconds",
         "menu_text": "Activate explosive rune",
         "type": "transform",
         "ammo_scale": 0
@@ -1059,19 +1059,19 @@
     "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 9 ] ],
     "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_SALVAGE", "NO_RELOAD", "NO_UNLOAD" ],
     "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "hit_you_effect": [
-            {
-              "id": "arcana_react_shrike_misericorde_chill",
-              "once_in": 5,
-              "message": "An unearthly chill radiates from your weapon.",
-              "npc_message": "An unearthly chill radiates from %1$s's weapon."
-            }
-          ]
-        }
-      ],
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_you_effect": [
+          {
+            "id": "arcana_react_shrike_misericorde_chill",
+            "once_in": 5,
+            "message": "An unearthly chill radiates from your weapon.",
+            "npc_message": "An unearthly chill radiates from %1$s's weapon."
+          }
+        ]
+      }
+    ],
     "use_action": {
       "menu_text": "Fold into pistol mode",
       "type": "transform",
@@ -1219,17 +1219,17 @@
     "charges_per_use": 1,
     "tool_ammo": "essence_pure_type",
     "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ALWAYS",
-          "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER", "SCHIZOPHRENIC" ],
-          "values": [
-            { "value": "INTELLIGENCE", "add": 4 },
-            { "value": "PERCEPTION", "add": 2 },
-            { "value": "REGEN_MANA", "multiply": 0.25 }
-          ]
-        }
-      ],
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "mutations": [ "ARCANA_CLAIRVOYANCE_LESSER", "SCHIZOPHRENIC" ],
+        "values": [
+          { "value": "INTELLIGENCE", "add": 4 },
+          { "value": "PERCEPTION", "add": 2 },
+          { "value": "REGEN_MANA", "multiply": 0.25 }
+        ]
+      }
+    ],
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_orb_veil_mapping", "no_fail": true, "level": 0 } ],
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ]
   },
@@ -1538,7 +1538,7 @@
     "to_hit": 2,
     "turns_per_charge": 25,
     "revert_to": "scourge_moonstone",
-    "extend": { "flags": [ "SPAWN_ACTIVE"]},
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
     "techniques": [ "RAPID", "SWEEP", "WHIP_DISARM", "SPIN", "WIDE" ],
     "use_action": [
       {
@@ -1604,7 +1604,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "SHEATH_KNIFE", "TRADER_KEEP_EQUIPPED", "DURABLE_MELEE" ]
+    "flags": [ "SHEATH_KNIFE", "TRADER_KEEP_EQUIPPED", "DURABLE_MELEE", "MISSION_ITEM" ]
   },
   {
     "id": "moonstone_fang_on",
@@ -1782,7 +1782,7 @@
         "ammo_scale": 0
       }
     ],
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "MISSION_ITEM" ] },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
   },
   {

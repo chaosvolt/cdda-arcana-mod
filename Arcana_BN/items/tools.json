@@ -1637,7 +1637,7 @@
       "menu_text": "Activate ward against cold",
       "type": "transform"
     },
-    "flags": [ "STAB", "SHEATH_KNIFE", "DURABLE_MELEE", "COMBAT_NPC_USE" ]
+    "flags": [ "STAB", "SHEATH_KNIFE", "DURABLE_MELEE", "COMBAT_NPC_USE", "MISSION_ITEM" ]
   },
   {
     "id": "moonstone_fang_on",
@@ -1840,7 +1840,7 @@
         "type": "transform"
       }
     ],
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "SNIPPET_NEEDS_LITERACY" ] },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "SNIPPET_NEEDS_LITERACY", "MISSION_ITEM" ] },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
   },
   {

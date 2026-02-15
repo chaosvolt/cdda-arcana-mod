@@ -733,7 +733,7 @@
       "menu_text": "Activate ward against fire",
       "type": "transform"
     },
-    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "POWERARMOR_COMPATIBLE", "COMBAT_NPC_USE" ]
+    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "POWERARMOR_COMPATIBLE", "COMBAT_NPC_USE", "MISSION_ITEM" ]
   },
   {
     "id": "jade_wreath_on",
@@ -775,7 +775,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "lightning_ward", "intensity": 1 } ] } ]
     },
-    "flags": [ "FANCY", "NO_SALVAGE", "COMBAT_NPC_USE" ]
+    "flags": [ "FANCY", "NO_SALVAGE", "COMBAT_NPC_USE", "MISSION_ITEM" ]
   },
   {
     "id": "meteoric_talisman_on",
@@ -848,7 +848,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "cleric_warding", "intensity": 1 } ] } ]
     },
-    "extend": { "flags": [ "NO_SALVAGE", "PSYSHIELD_PARTIAL", "COMBAT_NPC_USE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "PSYSHIELD_PARTIAL", "COMBAT_NPC_USE", "MISSION_ITEM" ] }
   },
   {
     "id": "cleric_ring_on",

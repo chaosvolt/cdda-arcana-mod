@@ -292,21 +292,13 @@
         "condition": "ALWAYS",
         "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 3 } ],
         "intermittent_activation": { "effects": [ { "frequency": "25 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] },
-      "ench_effects": [ { "effect": "arcana_evil_mimic_active", "intensity": 1 } ]
+        "ench_effects": [ { "effect": "arcana_evil_mimic_active", "intensity": 1 } ]
       }
     ],
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "BUTCHER", 12 ] ],
     "light": 45,
-    "flags": [
-      "NEVER_JAMS",
-      "UNBREAKABLE_MELEE",
-      "FIRE",
-      "FLAMING",
-      "PRIMITIVE_RANGED_WEAPON",
-      "TRADER_KEEP_EQUIPPED",
-      "NO_TURRET"
-    ]
+    "flags": [ "NEVER_JAMS", "UNBREAKABLE_MELEE", "FIRE", "FLAMING", "PRIMITIVE_RANGED_WEAPON", "TRADER_KEEP_EQUIPPED", "NO_TURRET" ]
   },
   {
     "id": "scourge_staff",
@@ -363,7 +355,8 @@
       "MAGIC_FOCUS",
       "TRADER_KEEP_EQUIPPED",
       "SHEATH_SPEAR",
-      "NO_TURRET"
+      "NO_TURRET",
+      "MISSION_ITEM"
     ]
   },
   {

@@ -659,7 +659,18 @@
       "ammo_scale": 0
     },
     "qualities": [ [ "GLARE", 1 ] ],
-    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "UNBREAKABLE", "SPAWN_ACTIVE" ] }
+    "extend": {
+      "flags": [
+        "GAS_PROOF",
+        "RAD_PROOF",
+        "SUN_GLASSES",
+        "BULLET_IMMUNE",
+        "STAB_IMMUNE",
+        "HEAT_IMMUNE",
+        "UNBREAKABLE",
+        "SPAWN_ACTIVE"
+      ]
+    }
   },
   {
     "id": "armor_wyrm_berserker",
@@ -864,7 +875,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "POWERARMOR_COMPATIBLE" ],
+    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "POWERARMOR_COMPATIBLE", "MISSION_ITEM" ],
     "material_thickness": 1,
     "armor": [ { "encumbrance": 10, "coverage": 20, "covers": [ "head" ] } ]
   },
@@ -914,7 +925,7 @@
       "ammo_scale": 0
     },
     "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "lightning_ward", "intensity": 1 } ] } ],
-    "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "MISSION_ITEM" ]
   },
   {
     "id": "meteoric_talisman_on",
@@ -996,7 +1007,7 @@
       }
     ],
     "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "cleric_warding", "intensity": 1 } ] } ],
-    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "PSYSHIELD_PARTIAL" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "PSYSHIELD_PARTIAL", "MISSION_ITEM" ] }
   },
   {
     "id": "cleric_ring_on",
