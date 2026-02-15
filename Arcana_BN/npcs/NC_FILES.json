@@ -30,7 +30,8 @@
     "weapon_override": "NC_HERMIT_weapon",
     "traits": [
       [ "SKIN_MEDIUM", 100 ],
-      [ "hair_white_short", 100 ],
+      [ "hair_white", 100 ],
+      [ "hair_short", 100 ],
       [ "eye_brown", 100 ],
       [ "PROF_CHALICE", 100 ],
       [ "NIGHTVISION", 100 ],
@@ -92,7 +93,8 @@
     "weapon_override": "NC_CF_REP_weapon",
     "traits": [
       [ "SKIN_LIGHT", 100 ],
-      [ "hair_blond_long", 100 ],
+      [ "hair_blond", 100 ],
+      [ "hair_long", 100 ],
       [ "eye_green", 100 ],
       [ "PROF_CLEANSINGFLAME", 100 ],
       [ "NONADDICTIVE", 100 ],
@@ -129,7 +131,8 @@
     "weapon_override": "NC_CF_GM_weapon",
     "traits": [
       [ "SKIN_MEDIUM", 100 ],
-      [ "hair_black_medium", 100 ],
+      [ "hair_black", 100 ],
+      [ "hair_medium", 100 ],
       [ "eye_hazel", 100 ],
       [ "PROF_CLEANSINGFLAME", 100 ],
       [ "MARTIAL_ARTS_CF", 100 ],
@@ -354,7 +357,8 @@
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_HUNTMASTER_weapon",
     "traits": [
       { "group": "Arcanist_starting_traits" },
-      [ "hair_black_long", 100 ],
+      [ "hair_black", 100 ],
+      [ "hair_long", 100 ],
       [ "eye_brown", 100 ],
       [ "SKIN_MEDIUM", 100 ],
       [ "PROF_SANGUINE", 100 ]
@@ -385,7 +389,8 @@
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_weapon",
     "traits": [
       { "group": "Arcanist_starting_traits" },
-      [ "hair_black_short", 100 ],
+      [ "hair_black", 100 ],
+      [ "hair_short", 100 ],
       [ "eye_amber", 100 ],
       [ "SKIN_LIGHT", 100 ],
       [ "PROF_SANGUINE", 100 ],
@@ -501,7 +506,8 @@
     "weapon_override": "NC_CF_AUX_MERC_weapon",
     "traits": [
       [ "SKIN_MEDIUM", 100 ],
-      [ "hair_gray_medium", 100 ],
+      [ "hair_gray", 100 ],
+      [ "hair_medium", 100 ],
       [ "eye_gray", 100 ],
       [ "BGSS_Gung_Ho_1", 100 ],
       [ "OUTDOORSMAN", 100 ],
