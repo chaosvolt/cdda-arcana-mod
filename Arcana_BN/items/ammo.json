@@ -344,8 +344,7 @@
     "price": "0 cent",
     "price_postapoc": "9 USD",
     "range": 30,
-    "damage": { "damage_type": "heat", "amount": 16, "armor_penetration": 10 },
-    "shot": { "count": 5, "half_angle": 5 },
+    "damage": { "damage_type": "heat", "amount": 80, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "SHOT", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
@@ -358,8 +357,7 @@
     "price": "0 cent",
     "price_postapoc": "15 USD",
     "range": 30,
-    "damage": { "damage_type": "heat", "amount": 13, "armor_penetration": 10 },
-    "shot": { "count": 5, "half_angle": 5 },
+    "damage": { "damage_type": "heat", "amount": 65, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
@@ -374,8 +372,7 @@
     "range": 18,
     "dispersion": 20,
     "loudness": 90,
-    "damage": { "damage_type": "heat", "amount": 12, "armor_penetration": 10 },
-    "shot": { "count": 5, "half_angle": 5 },
+    "damage": { "damage_type": "heat", "amount": 60, "armor_penetration": 10 },
     "extend": { "effects": [ "SHOT", "IGNITE", "ARCANA_DAZZLE_SHOT" ] }
   },
   {
@@ -390,8 +387,7 @@
     "range": 9,
     "dispersion": 30,
     "recoil": 780,
-    "damage": { "damage_type": "heat", "amount": 11, "armor_penetration": 10 },
-    "shot": { "count": 6, "half_angle": 5 },
+    "damage": { "damage_type": "heat", "amount": 55, "armor_penetration": 10 },
     "extend": { "effects": [ "IGNITE", "SHOT", "ARCANA_DAZZLE_SHOT" ] }
   }
 ]
